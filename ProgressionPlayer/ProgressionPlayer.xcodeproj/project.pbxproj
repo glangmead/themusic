@@ -1,0 +1,726 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9B1864642E772E37006147D8 /* Overture in Frameworks */ = {isa = PBXBuildFile; productRef = 9B1864632E772E37006147D8 /* Overture */; };
+		9BC0FCD62E7055FE00472A5A /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 9BC0FCD52E7055FE00472A5A /* ComposableArchitecture */; };
+		9BC0FCD82E70562D00472A5A /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9BC0FCD72E70562D00472A5A /* AudioKit */; };
+		9BC0FCDB2E70570300472A5A /* SoundpipeAudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9BC0FCDA2E70570300472A5A /* SoundpipeAudioKit */; };
+		9BC0FCDE2E70573300472A5A /* AudioKitEX in Frameworks */ = {isa = PBXBuildFile; productRef = 9BC0FCDD2E70573300472A5A /* AudioKitEX */; };
+		9BC0FCE12E70578700472A5A /* Tonic in Frameworks */ = {isa = PBXBuildFile; productRef = 9BC0FCE02E70578700472A5A /* Tonic */; };
+		9BC0FCE42E7057BE00472A5A /* AudioKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9BC0FCE32E7057BE00472A5A /* AudioKitUI */; };
+		9BC0FCEA2E70583800472A5A /* Keyboard in Frameworks */ = {isa = PBXBuildFile; productRef = 9BC0FCE92E70583800472A5A /* Keyboard */; };
+		9BFFD97F2E7DA94B00E7CB55 /* beat.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 9BFFD97E2E7DA94B00E7CB55 /* beat.aiff */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9BC0FCB52E704EAA00472A5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BC0FC9F2E704EA900472A5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9BC0FCA62E704EA900472A5A;
+			remoteInfo = ProgressionPlayer;
+		};
+		9BC0FCBF2E704EAA00472A5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BC0FC9F2E704EA900472A5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9BC0FCA62E704EA900472A5A;
+			remoteInfo = ProgressionPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9BC0FCA72E704EA900472A5A /* ProgressionPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProgressionPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BC0FCB42E704EAA00472A5A /* ProgressionPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProgressionPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BC0FCBE2E704EAA00472A5A /* ProgressionPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProgressionPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BFFD97E2E7DA94B00E7CB55 /* beat.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = beat.aiff; sourceTree = "<group>"; };
+		9BFFD9802E7DABD200E7CB55 /* ProgressionPlayer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProgressionPlayer.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		9BC0FCA92E704EA900472A5A /* Sources */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		9BC0FCB72E704EAA00472A5A /* ProgressionPlayerTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ProgressionPlayerTests;
+			sourceTree = "<group>";
+		};
+		9BC0FCC12E704EAA00472A5A /* ProgressionPlayerUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ProgressionPlayerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9BC0FCA42E704EA900472A5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BC0FCD82E70562D00472A5A /* AudioKit in Frameworks */,
+				9BC0FCDE2E70573300472A5A /* AudioKitEX in Frameworks */,
+				9BC0FCD62E7055FE00472A5A /* ComposableArchitecture in Frameworks */,
+				9BC0FCE12E70578700472A5A /* Tonic in Frameworks */,
+				9B1864642E772E37006147D8 /* Overture in Frameworks */,
+				9BC0FCE42E7057BE00472A5A /* AudioKitUI in Frameworks */,
+				9BC0FCEA2E70583800472A5A /* Keyboard in Frameworks */,
+				9BC0FCDB2E70570300472A5A /* SoundpipeAudioKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BC0FCB12E704EAA00472A5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BC0FCBB2E704EAA00472A5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9BC0FC9E2E704EA900472A5A = {
+			isa = PBXGroup;
+			children = (
+				9BFFD9802E7DABD200E7CB55 /* ProgressionPlayer.entitlements */,
+				9BC0FCA92E704EA900472A5A /* Sources */,
+				9BC0FCB72E704EAA00472A5A /* ProgressionPlayerTests */,
+				9BC0FCC12E704EAA00472A5A /* ProgressionPlayerUITests */,
+				9BC0FCD42E7055FE00472A5A /* Frameworks */,
+				9BC0FCA82E704EA900472A5A /* Products */,
+				9BFFD97E2E7DA94B00E7CB55 /* beat.aiff */,
+			);
+			sourceTree = "<group>";
+		};
+		9BC0FCA82E704EA900472A5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9BC0FCA72E704EA900472A5A /* ProgressionPlayer.app */,
+				9BC0FCB42E704EAA00472A5A /* ProgressionPlayerTests.xctest */,
+				9BC0FCBE2E704EAA00472A5A /* ProgressionPlayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9BC0FCD42E7055FE00472A5A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9BC0FCA62E704EA900472A5A /* ProgressionPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BC0FCC82E704EAA00472A5A /* Build configuration list for PBXNativeTarget "ProgressionPlayer" */;
+			buildPhases = (
+				9BC0FCA32E704EA900472A5A /* Sources */,
+				9BC0FCA42E704EA900472A5A /* Frameworks */,
+				9BC0FCA52E704EA900472A5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				9BC0FCA92E704EA900472A5A /* Sources */,
+			);
+			name = ProgressionPlayer;
+			packageProductDependencies = (
+				9BC0FCD52E7055FE00472A5A /* ComposableArchitecture */,
+				9BC0FCD72E70562D00472A5A /* AudioKit */,
+				9BC0FCDA2E70570300472A5A /* SoundpipeAudioKit */,
+				9BC0FCDD2E70573300472A5A /* AudioKitEX */,
+				9BC0FCE02E70578700472A5A /* Tonic */,
+				9BC0FCE32E7057BE00472A5A /* AudioKitUI */,
+				9BC0FCE92E70583800472A5A /* Keyboard */,
+				9B1864632E772E37006147D8 /* Overture */,
+			);
+			productName = ProgressionPlayer;
+			productReference = 9BC0FCA72E704EA900472A5A /* ProgressionPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9BC0FCB32E704EAA00472A5A /* ProgressionPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BC0FCCB2E704EAA00472A5A /* Build configuration list for PBXNativeTarget "ProgressionPlayerTests" */;
+			buildPhases = (
+				9BC0FCB02E704EAA00472A5A /* Sources */,
+				9BC0FCB12E704EAA00472A5A /* Frameworks */,
+				9BC0FCB22E704EAA00472A5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9BC0FCB62E704EAA00472A5A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9BC0FCB72E704EAA00472A5A /* ProgressionPlayerTests */,
+			);
+			name = ProgressionPlayerTests;
+			packageProductDependencies = (
+			);
+			productName = ProgressionPlayerTests;
+			productReference = 9BC0FCB42E704EAA00472A5A /* ProgressionPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9BC0FCBD2E704EAA00472A5A /* ProgressionPlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BC0FCCE2E704EAA00472A5A /* Build configuration list for PBXNativeTarget "ProgressionPlayerUITests" */;
+			buildPhases = (
+				9BC0FCBA2E704EAA00472A5A /* Sources */,
+				9BC0FCBB2E704EAA00472A5A /* Frameworks */,
+				9BC0FCBC2E704EAA00472A5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9BC0FCC02E704EAA00472A5A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9BC0FCC12E704EAA00472A5A /* ProgressionPlayerUITests */,
+			);
+			name = ProgressionPlayerUITests;
+			packageProductDependencies = (
+			);
+			productName = ProgressionPlayerUITests;
+			productReference = 9BC0FCBE2E704EAA00472A5A /* ProgressionPlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9BC0FC9F2E704EA900472A5A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					9BC0FCA62E704EA900472A5A = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					9BC0FCB32E704EAA00472A5A = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 9BC0FCA62E704EA900472A5A;
+					};
+					9BC0FCBD2E704EAA00472A5A = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 9BC0FCA62E704EA900472A5A;
+					};
+				};
+			};
+			buildConfigurationList = 9BC0FCA22E704EA900472A5A /* Build configuration list for PBXProject "ProgressionPlayer" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9BC0FC9E2E704EA900472A5A;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				9BC0FCD12E704EDE00472A5A /* XCRemoteSwiftPackageReference "AudioKit" */,
+				9BC0FCD32E70501900472A5A /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				9BC0FCD92E7056FA00472A5A /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */,
+				9BC0FCDC2E70572900472A5A /* XCRemoteSwiftPackageReference "AudioKitEX" */,
+				9BC0FCDF2E70578000472A5A /* XCRemoteSwiftPackageReference "Tonic" */,
+				9BC0FCE22E7057B600472A5A /* XCRemoteSwiftPackageReference "AudioKitUI" */,
+				9BC0FCE82E70582C00472A5A /* XCRemoteSwiftPackageReference "Keyboard" */,
+				9B1864622E772E37006147D8 /* XCRemoteSwiftPackageReference "swift-overture" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 9BC0FCA82E704EA900472A5A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9BC0FCA62E704EA900472A5A /* ProgressionPlayer */,
+				9BC0FCB32E704EAA00472A5A /* ProgressionPlayerTests */,
+				9BC0FCBD2E704EAA00472A5A /* ProgressionPlayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9BC0FCA52E704EA900472A5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BFFD97F2E7DA94B00E7CB55 /* beat.aiff in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BC0FCB22E704EAA00472A5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BC0FCBC2E704EAA00472A5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9BC0FCA32E704EA900472A5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BC0FCB02E704EAA00472A5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BC0FCBA2E704EAA00472A5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9BC0FCB62E704EAA00472A5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9BC0FCA62E704EA900472A5A /* ProgressionPlayer */;
+			targetProxy = 9BC0FCB52E704EAA00472A5A /* PBXContainerItemProxy */;
+		};
+		9BC0FCC02E704EAA00472A5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9BC0FCA62E704EA900472A5A /* ProgressionPlayer */;
+			targetProxy = 9BC0FCBF2E704EAA00472A5A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9BC0FCC62E704EAA00472A5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 5Y5NG75847;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9BC0FCC72E704EAA00472A5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 5Y5NG75847;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9BC0FCC92E704EAA00472A5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ProgressionPlayer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5Y5NG75847;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.langmead.ProgressionPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9BC0FCCA2E704EAA00472A5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ProgressionPlayer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5Y5NG75847;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.langmead.ProgressionPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9BC0FCCC2E704EAA00472A5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5Y5NG75847;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.langmead.ProgressionPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProgressionPlayer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ProgressionPlayer";
+			};
+			name = Debug;
+		};
+		9BC0FCCD2E704EAA00472A5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5Y5NG75847;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.langmead.ProgressionPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProgressionPlayer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ProgressionPlayer";
+			};
+			name = Release;
+		};
+		9BC0FCCF2E704EAA00472A5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5Y5NG75847;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.langmead.ProgressionPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ProgressionPlayer;
+			};
+			name = Debug;
+		};
+		9BC0FCD02E704EAA00472A5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5Y5NG75847;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.langmead.ProgressionPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ProgressionPlayer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9BC0FCA22E704EA900472A5A /* Build configuration list for PBXProject "ProgressionPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BC0FCC62E704EAA00472A5A /* Debug */,
+				9BC0FCC72E704EAA00472A5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BC0FCC82E704EAA00472A5A /* Build configuration list for PBXNativeTarget "ProgressionPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BC0FCC92E704EAA00472A5A /* Debug */,
+				9BC0FCCA2E704EAA00472A5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BC0FCCB2E704EAA00472A5A /* Build configuration list for PBXNativeTarget "ProgressionPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BC0FCCC2E704EAA00472A5A /* Debug */,
+				9BC0FCCD2E704EAA00472A5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BC0FCCE2E704EAA00472A5A /* Build configuration list for PBXNativeTarget "ProgressionPlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BC0FCCF2E704EAA00472A5A /* Debug */,
+				9BC0FCD02E704EAA00472A5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9B1864622E772E37006147D8 /* XCRemoteSwiftPackageReference "swift-overture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-overture.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.0;
+			};
+		};
+		9BC0FCD12E704EDE00472A5A /* XCRemoteSwiftPackageReference "AudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.5;
+			};
+		};
+		9BC0FCD32E70501900472A5A /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.22.2;
+			};
+		};
+		9BC0FCD92E7056FA00472A5A /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/SoundpipeAudioKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.3;
+			};
+		};
+		9BC0FCDC2E70572900472A5A /* XCRemoteSwiftPackageReference "AudioKitEX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKitEX.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.2;
+			};
+		};
+		9BC0FCDF2E70578000472A5A /* XCRemoteSwiftPackageReference "Tonic" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/Tonic.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.0;
+			};
+		};
+		9BC0FCE22E7057B600472A5A /* XCRemoteSwiftPackageReference "AudioKitUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKitUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.7;
+			};
+		};
+		9BC0FCE82E70582C00472A5A /* XCRemoteSwiftPackageReference "Keyboard" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/Keyboard.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9B1864632E772E37006147D8 /* Overture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B1864622E772E37006147D8 /* XCRemoteSwiftPackageReference "swift-overture" */;
+			productName = Overture;
+		};
+		9BC0FCD52E7055FE00472A5A /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9BC0FCD32E70501900472A5A /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		9BC0FCD72E70562D00472A5A /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9BC0FCD12E704EDE00472A5A /* XCRemoteSwiftPackageReference "AudioKit" */;
+			productName = AudioKit;
+		};
+		9BC0FCDA2E70570300472A5A /* SoundpipeAudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9BC0FCD92E7056FA00472A5A /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */;
+			productName = SoundpipeAudioKit;
+		};
+		9BC0FCDD2E70573300472A5A /* AudioKitEX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9BC0FCDC2E70572900472A5A /* XCRemoteSwiftPackageReference "AudioKitEX" */;
+			productName = AudioKitEX;
+		};
+		9BC0FCE02E70578700472A5A /* Tonic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9BC0FCDF2E70578000472A5A /* XCRemoteSwiftPackageReference "Tonic" */;
+			productName = Tonic;
+		};
+		9BC0FCE32E7057BE00472A5A /* AudioKitUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9BC0FCE22E7057B600472A5A /* XCRemoteSwiftPackageReference "AudioKitUI" */;
+			productName = AudioKitUI;
+		};
+		9BC0FCE92E70583800472A5A /* Keyboard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9BC0FCE82E70582C00472A5A /* XCRemoteSwiftPackageReference "Keyboard" */;
+			productName = Keyboard;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 9BC0FC9F2E704EA900472A5A /* Project object */;
+}
