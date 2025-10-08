@@ -1,12 +1,5 @@
 //
 //  AmplitudeEnvelope.swift
-//  ProgressionPlayer
-//
-//  Created by Greg Langmead on 9/13/25.
-//
-
-//
-//  AmplitudeEnvelope.swift
 //  HiSynth
 //
 //  Created by Bill Chen on 2023/4/6.
@@ -16,15 +9,6 @@ import Foundation
 import AVFoundation
 import SpriteKit
 import AudioKit
-
-/// To allow nodes to be gated
-public protocol Gated {
-  /// Start the gate
-  func openGate()
-  /// Stop the gate
-  func closeGate()
-}
-
 
 public class AmplitudeEnvelope: Node, Gated {
   

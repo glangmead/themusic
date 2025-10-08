@@ -1,15 +1,5 @@
 {
-  "originHash" : "7b25980d46f155b3ba6da96765ab0b9ce21b78727c83c6686e6b7a419e213e3d",
   "pins" : [
-    {
-      "identity" : "audiokit",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/AudioKit/AudioKit",
-      "state" : {
-        "revision" : "5b3fd238ef8ee95c9842ca4ea83ca58ee151e630",
-        "version" : "5.6.5"
-      }
-    },
     {
       "identity" : "audiokitex",
       "kind" : "remoteSourceControl",
@@ -17,15 +7,6 @@
       "state" : {
         "revision" : "23e8e3bffd9fbc1dffa72f1d47c7f714dd777288",
         "version" : "5.6.2"
-      }
-    },
-    {
-      "identity" : "audiokitui",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/AudioKit/AudioKitUI.git",
-      "state" : {
-        "revision" : "1a61e8a96c7ee24c3e5abe06dc3334a31fd7571d",
-        "version" : "0.3.7"
       }
     },
     {
@@ -38,21 +19,12 @@
       }
     },
     {
-      "identity" : "controls",
+      "identity" : "dunneaudiokit",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/AudioKit/Controls.git",
+      "location" : "https://github.com/AudioKit/DunneAudioKit.git",
       "state" : {
-        "revision" : "4dd10370125af7f1e26d7a71b2c5929bb3c95087",
-        "version" : "1.1.4"
-      }
-    },
-    {
-      "identity" : "keyboard",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/AudioKit/Keyboard.git",
-      "state" : {
-        "revision" : "c0752677c602eec2f97ec50825581608bc56dac6",
-        "version" : "1.4.1"
+        "revision" : "dd0a417239ba345e03ca8ffe936d052d6a8239ea",
+        "version" : "5.6.1"
       }
     },
     {
@@ -193,7 +165,7 @@
     {
       "identity" : "tonic",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/AudioKit/Tonic",
+      "location" : "https://github.com/AudioKit/Tonic.git",
       "state" : {
         "revision" : "227c89ea047f928787bec571e487239547f21fe6",
         "version" : "2.1.0"
@@ -209,5 +181,5 @@
       }
     }
   ],
-  "version" : 3
+  "version" : 2
 }

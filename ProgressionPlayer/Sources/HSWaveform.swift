@@ -1,18 +1,39 @@
 //
-//  Waveform.swift
-//  ProgressionPlayer
+//  HSWaveform.swift
+//  HiSynth
 //
-//  Created by Greg Langmead on 9/13/25.
+//  Created by Bill Chen on 2023/4/7.
 //
 
+import Foundation
 import AudioKit
+import Tonic
+
+protocol HasKeyHandler {
+  func noteOn(_ pitch: Pitch)
+  func noteOff(_ pitch: Pitch)
+}
+
+protocol HasNode {
+  var node: Node { get }
+}
 
 protocol HSEnum {
   var rawValue: Int8 { get }
   func getReadableName() -> String
 }
 
-enum Waveform: Int8, HSEnum {
+/// To allow nodes to be gated
+public protocol Gated {
+  /// Start the gate
+  func openGate()
+  /// Stop the gate
+  func closeGate()
+}
+
+
+/// Waveforms used in HSOscillator (for generating sound) and LowFreqOscillator (for modulating parameters).
+enum HSWaveform: Int8, HSEnum {
   case sine = 0
   case square = 1
   case saw = 2
@@ -46,7 +67,7 @@ enum Waveform: Int8, HSEnum {
   }
   
   func getSymbolImageName() -> String {
-    let names: [Waveform: String] = [
+    let names: [HSWaveform: String] = [
       .sine: "wave-sine",
       .square: "wave-square",
       .saw: "wave-saw",
@@ -58,7 +79,7 @@ enum Waveform: Int8, HSEnum {
   }
   
   func getReadableName() -> String {
-    let names: [Waveform: String] = [
+    let names: [HSWaveform: String] = [
       .sine: "Sine",
       .square: "Square",
       .saw: "Saw",

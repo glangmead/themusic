@@ -1,12 +1,5 @@
 //
 //  PolyOscillator.swift
-//  ProgressionPlayer
-//
-//  Created by Greg Langmead on 9/13/25.
-//
-
-//
-//  PolyOscillator.swift
 //
 //
 //  Created by Bill Chen on 2023/4/4.
@@ -18,13 +11,13 @@ import AudioKit
 import Tonic
 
 /// Wraps multiple oscillators and envelopes for polyphonic synthesis.
-class PolyOscillator {
+class PolyOscillator: HasKeyHandler {
   
-  static let oscCount: Int = 8
+  static let oscCount: Int = 32
   
   var outputNode: Mixer = Mixer()
   
-  var waveform = Waveform.sine {
+  var waveform = HSWaveform.sine {
     didSet {
       oscPool.forEach { $0.setWaveform(waveform.getTable()) }
     }
@@ -58,7 +51,7 @@ class PolyOscillator {
     }
   }
   
-  var oscPool: [Oscillator] = []
+  var oscPool: [HSOscillator] = []
   var envPool: [AmplitudeEnvelope] = []
   
   /// Base frequency before Pitch modulation
@@ -80,7 +73,7 @@ class PolyOscillator {
   
   init() {
     for _ in 0..<PolyOscillator.oscCount {
-      let osc = Oscillator()
+      let osc = HSOscillator()
       osc.setWaveform(waveform.getTable())
       osc.amplitude = level
       let env = AmplitudeEnvelope(osc)

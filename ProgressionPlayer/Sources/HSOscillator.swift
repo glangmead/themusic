@@ -1,11 +1,4 @@
 //
-//  Oscillator.swift
-//  ProgressionPlayer
-//
-//  Created by Greg Langmead on 9/13/25.
-//
-
-//
 //  HSOscillator.swift
 //  HiSynth
 //
@@ -28,7 +21,7 @@ let twoPi = 2 * Float.pi
 ///     1. Added the ability to update waveforms.
 ///     2. Fixed bugs that will cause the oscillator to freeze when running on Mac `Catalyst`.
 ///     3. Guard the frequency to be within 10Hz to 22kHz.
-public class Oscillator: Node {
+public class HSOscillator: Node {
   fileprivate lazy var sourceNode = AVAudioSourceNode { [self] _, _, frameCount, audioBufferList in
     let ablPointer = UnsafeMutableAudioBufferListPointer(audioBufferList)
     

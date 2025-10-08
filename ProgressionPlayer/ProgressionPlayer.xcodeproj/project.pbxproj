@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B0738E92E96DD130003D251 /* D_Loop_01.mid in Resources */ = {isa = PBXBuildFile; fileRef = 9B0738E82E96DD130003D251 /* D_Loop_01.mid */; };
 		9B1864642E772E37006147D8 /* Overture in Frameworks */ = {isa = PBXBuildFile; productRef = 9B1864632E772E37006147D8 /* Overture */; };
 		9BC0FCD62E7055FE00472A5A /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 9BC0FCD52E7055FE00472A5A /* ComposableArchitecture */; };
-		9BC0FCD82E70562D00472A5A /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9BC0FCD72E70562D00472A5A /* AudioKit */; };
-		9BC0FCDB2E70570300472A5A /* SoundpipeAudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9BC0FCDA2E70570300472A5A /* SoundpipeAudioKit */; };
-		9BC0FCDE2E70573300472A5A /* AudioKitEX in Frameworks */ = {isa = PBXBuildFile; productRef = 9BC0FCDD2E70573300472A5A /* AudioKitEX */; };
-		9BC0FCE12E70578700472A5A /* Tonic in Frameworks */ = {isa = PBXBuildFile; productRef = 9BC0FCE02E70578700472A5A /* Tonic */; };
-		9BC0FCE42E7057BE00472A5A /* AudioKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9BC0FCE32E7057BE00472A5A /* AudioKitUI */; };
-		9BC0FCEA2E70583800472A5A /* Keyboard in Frameworks */ = {isa = PBXBuildFile; productRef = 9BC0FCE92E70583800472A5A /* Keyboard */; };
+		9BD1B7002E8B08D000C718F1 /* Tonic in Frameworks */ = {isa = PBXBuildFile; productRef = 9BD1B6FF2E8B08D000C718F1 /* Tonic */; };
+		9BD1B7052E8B0B9500C718F1 /* DunneAudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9BD1B7042E8B0B9500C718F1 /* DunneAudioKit */; };
+		9BD1B7082E8B0CF900C718F1 /* SoundpipeAudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9BD1B7072E8B0CF900C718F1 /* SoundpipeAudioKit */; };
+		9BD4B1032E87165C002B6925 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9BD4B1022E87165C002B6925 /* AudioKit */; };
 		9BFFD97F2E7DA94B00E7CB55 /* beat.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 9BFFD97E2E7DA94B00E7CB55 /* beat.aiff */; };
 /* End PBXBuildFile section */
 
@@ -36,9 +35,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B0738E82E96DD130003D251 /* D_Loop_01.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = D_Loop_01.mid; sourceTree = "<group>"; };
 		9BC0FCA72E704EA900472A5A /* ProgressionPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProgressionPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC0FCB42E704EAA00472A5A /* ProgressionPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProgressionPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC0FCBE2E704EAA00472A5A /* ProgressionPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProgressionPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BD4B1042E871699002B6925 /* AudioKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = AudioKit; path = /Users/glangmead/proj/AudioKit/AudioKit; sourceTree = "<absolute>"; };
 		9BFFD97E2E7DA94B00E7CB55 /* beat.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = beat.aiff; sourceTree = "<group>"; };
 		9BFFD9802E7DABD200E7CB55 /* ProgressionPlayer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProgressionPlayer.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,14 +67,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BC0FCD82E70562D00472A5A /* AudioKit in Frameworks */,
-				9BC0FCDE2E70573300472A5A /* AudioKitEX in Frameworks */,
+				9BD4B1032E87165C002B6925 /* AudioKit in Frameworks */,
+				9BD1B7052E8B0B9500C718F1 /* DunneAudioKit in Frameworks */,
+				9BD1B7082E8B0CF900C718F1 /* SoundpipeAudioKit in Frameworks */,
 				9BC0FCD62E7055FE00472A5A /* ComposableArchitecture in Frameworks */,
-				9BC0FCE12E70578700472A5A /* Tonic in Frameworks */,
+				9BD1B7002E8B08D000C718F1 /* Tonic in Frameworks */,
 				9B1864642E772E37006147D8 /* Overture in Frameworks */,
-				9BC0FCE42E7057BE00472A5A /* AudioKitUI in Frameworks */,
-				9BC0FCEA2E70583800472A5A /* Keyboard in Frameworks */,
-				9BC0FCDB2E70570300472A5A /* SoundpipeAudioKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,9 +93,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B0738E72E96DD000003D251 /* MIDI files */ = {
+			isa = PBXGroup;
+			children = (
+				9B0738E82E96DD130003D251 /* D_Loop_01.mid */,
+			);
+			path = "MIDI files";
+			sourceTree = "<group>";
+		};
 		9BC0FC9E2E704EA900472A5A = {
 			isa = PBXGroup;
 			children = (
+				9B0738E72E96DD000003D251 /* MIDI files */,
+				9BD4B1042E871699002B6925 /* AudioKit */,
 				9BFFD9802E7DABD200E7CB55 /* ProgressionPlayer.entitlements */,
 				9BC0FCA92E704EA900472A5A /* Sources */,
 				9BC0FCB72E704EAA00472A5A /* ProgressionPlayerTests */,
@@ -145,13 +154,11 @@
 			name = ProgressionPlayer;
 			packageProductDependencies = (
 				9BC0FCD52E7055FE00472A5A /* ComposableArchitecture */,
-				9BC0FCD72E70562D00472A5A /* AudioKit */,
-				9BC0FCDA2E70570300472A5A /* SoundpipeAudioKit */,
-				9BC0FCDD2E70573300472A5A /* AudioKitEX */,
-				9BC0FCE02E70578700472A5A /* Tonic */,
-				9BC0FCE32E7057BE00472A5A /* AudioKitUI */,
-				9BC0FCE92E70583800472A5A /* Keyboard */,
 				9B1864632E772E37006147D8 /* Overture */,
+				9BD4B1022E87165C002B6925 /* AudioKit */,
+				9BD1B6FF2E8B08D000C718F1 /* Tonic */,
+				9BD1B7042E8B0B9500C718F1 /* DunneAudioKit */,
+				9BD1B7072E8B0CF900C718F1 /* SoundpipeAudioKit */,
 			);
 			productName = ProgressionPlayer;
 			productReference = 9BC0FCA72E704EA900472A5A /* ProgressionPlayer.app */;
@@ -236,14 +243,12 @@
 			mainGroup = 9BC0FC9E2E704EA900472A5A;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				9BC0FCD12E704EDE00472A5A /* XCRemoteSwiftPackageReference "AudioKit" */,
 				9BC0FCD32E70501900472A5A /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
-				9BC0FCD92E7056FA00472A5A /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */,
-				9BC0FCDC2E70572900472A5A /* XCRemoteSwiftPackageReference "AudioKitEX" */,
-				9BC0FCDF2E70578000472A5A /* XCRemoteSwiftPackageReference "Tonic" */,
-				9BC0FCE22E7057B600472A5A /* XCRemoteSwiftPackageReference "AudioKitUI" */,
-				9BC0FCE82E70582C00472A5A /* XCRemoteSwiftPackageReference "Keyboard" */,
 				9B1864622E772E37006147D8 /* XCRemoteSwiftPackageReference "swift-overture" */,
+				9BD4B1012E87165C002B6925 /* XCRemoteSwiftPackageReference "AudioKit" */,
+				9BD1B6FE2E8B08D000C718F1 /* XCRemoteSwiftPackageReference "Tonic" */,
+				9BD1B7032E8B0B9500C718F1 /* XCRemoteSwiftPackageReference "DunneAudioKit" */,
+				9BD1B7062E8B0CF900C718F1 /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9BC0FCA82E704EA900472A5A /* Products */;
@@ -263,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BFFD97F2E7DA94B00E7CB55 /* beat.aiff in Resources */,
+				9B0738E92E96DD130003D251 /* D_Loop_01.mid in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,14 +627,6 @@
 				minimumVersion = 0.5.0;
 			};
 		};
-		9BC0FCD12E704EDE00472A5A /* XCRemoteSwiftPackageReference "AudioKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/AudioKit/AudioKit";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.6.5;
-			};
-		};
 		9BC0FCD32E70501900472A5A /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
@@ -637,23 +635,7 @@
 				minimumVersion = 1.22.2;
 			};
 		};
-		9BC0FCD92E7056FA00472A5A /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/AudioKit/SoundpipeAudioKit.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.7.3;
-			};
-		};
-		9BC0FCDC2E70572900472A5A /* XCRemoteSwiftPackageReference "AudioKitEX" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/AudioKit/AudioKitEX.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.6.2;
-			};
-		};
-		9BC0FCDF2E70578000472A5A /* XCRemoteSwiftPackageReference "Tonic" */ = {
+		9BD1B6FE2E8B08D000C718F1 /* XCRemoteSwiftPackageReference "Tonic" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/AudioKit/Tonic.git";
 			requirement = {
@@ -661,20 +643,28 @@
 				minimumVersion = 2.1.0;
 			};
 		};
-		9BC0FCE22E7057B600472A5A /* XCRemoteSwiftPackageReference "AudioKitUI" */ = {
+		9BD1B7032E8B0B9500C718F1 /* XCRemoteSwiftPackageReference "DunneAudioKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/AudioKit/AudioKitUI.git";
+			repositoryURL = "https://github.com/AudioKit/DunneAudioKit.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.3.7;
+				minimumVersion = 5.6.1;
 			};
 		};
-		9BC0FCE82E70582C00472A5A /* XCRemoteSwiftPackageReference "Keyboard" */ = {
+		9BD1B7062E8B0CF900C718F1 /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/AudioKit/Keyboard.git";
+			repositoryURL = "https://github.com/AudioKit/SoundpipeAudioKit.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.4.1;
+				minimumVersion = 5.7.3;
+			};
+		};
+		9BD4B1012E87165C002B6925 /* XCRemoteSwiftPackageReference "AudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.5;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -690,35 +680,25 @@
 			package = 9BC0FCD32E70501900472A5A /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
 		};
-		9BC0FCD72E70562D00472A5A /* AudioKit */ = {
+		9BD1B6FF2E8B08D000C718F1 /* Tonic */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9BC0FCD12E704EDE00472A5A /* XCRemoteSwiftPackageReference "AudioKit" */;
-			productName = AudioKit;
-		};
-		9BC0FCDA2E70570300472A5A /* SoundpipeAudioKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 9BC0FCD92E7056FA00472A5A /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */;
-			productName = SoundpipeAudioKit;
-		};
-		9BC0FCDD2E70573300472A5A /* AudioKitEX */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 9BC0FCDC2E70572900472A5A /* XCRemoteSwiftPackageReference "AudioKitEX" */;
-			productName = AudioKitEX;
-		};
-		9BC0FCE02E70578700472A5A /* Tonic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 9BC0FCDF2E70578000472A5A /* XCRemoteSwiftPackageReference "Tonic" */;
+			package = 9BD1B6FE2E8B08D000C718F1 /* XCRemoteSwiftPackageReference "Tonic" */;
 			productName = Tonic;
 		};
-		9BC0FCE32E7057BE00472A5A /* AudioKitUI */ = {
+		9BD1B7042E8B0B9500C718F1 /* DunneAudioKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9BC0FCE22E7057B600472A5A /* XCRemoteSwiftPackageReference "AudioKitUI" */;
-			productName = AudioKitUI;
+			package = 9BD1B7032E8B0B9500C718F1 /* XCRemoteSwiftPackageReference "DunneAudioKit" */;
+			productName = DunneAudioKit;
 		};
-		9BC0FCE92E70583800472A5A /* Keyboard */ = {
+		9BD1B7072E8B0CF900C718F1 /* SoundpipeAudioKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9BC0FCE82E70582C00472A5A /* XCRemoteSwiftPackageReference "Keyboard" */;
-			productName = Keyboard;
+			package = 9BD1B7062E8B0CF900C718F1 /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */;
+			productName = SoundpipeAudioKit;
+		};
+		9BD4B1022E87165C002B6925 /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9BD4B1012E87165C002B6925 /* XCRemoteSwiftPackageReference "AudioKit" */;
+			productName = AudioKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
