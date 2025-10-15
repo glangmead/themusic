@@ -51,7 +51,7 @@ struct TheoryView: View {
   }
   
   private mutating func initInstrument() {
-    let instrument = MIDICallbackInstrument { [self] status, note, velocity in
+    let instrument = MIDICallbackInstrument(midiInputName: "Greg's Instrument", callback: { [self] status, note, velocity in
       guard let midiStatus = MIDIStatusType.from(byte: status) else {
         return
       }
@@ -67,7 +67,7 @@ struct TheoryView: View {
           self.synth.noteOff(pitch)
         //}
       }
-    }
+    })
     self.instrument = instrument
   }
   
@@ -92,8 +92,8 @@ struct TheoryView: View {
             Button(chord.description) {
               seq.stop()
               seqTrack?.clear()
-              seqTrack?.setLength(Duration(beats: 1))
-              seq.setLength(Duration(beats: 1))
+              seqTrack?.setLength(Duration(beats: 4))
+              seq.setLength(Duration(beats: 4))
               chord.pitches(octave: 3).forEach {
                 seqTrack?.add(midiNoteData:
                   MIDINoteData(
@@ -101,7 +101,7 @@ struct TheoryView: View {
                     velocity: 128,
                     channel: 1,
                     duration: Duration(beats: 1),
-                    position: Duration(beats: 0))
+                    position: Duration(beats: 3))
                 )}
               seq.rewind()
               seq.play()
