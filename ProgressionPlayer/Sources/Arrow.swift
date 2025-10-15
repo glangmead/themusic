@@ -58,7 +58,8 @@ struct TriangleWaveForm: WaveForm {
     ),
   ])
   func value(_ x: Double) -> Double {
-    triangle.val(fmod(x, 2.0 * .pi))
+    //triangle.val(fmod(x, 2.0 * .pi))
+    abs((fmod(x, 2 * .pi) / .pi) - 1.0)
   }
 }
 
@@ -160,7 +161,7 @@ class MyAudioEngine {
     // and our SineWaveForm.
     let source = source
     
-    let sourceNode: AVAudioSourceNode = .withSource(source: source, sampleRate: sampleRate)
+    let sourceNode: AVAudioSourceNode = AVAudioSourceNode.withSource(source: source, sampleRate: sampleRate)
     audioEngine.attach(sourceNode)
     audioEngine.connect(sourceNode, to: audioEngine.outputNode, format: nil)
   }
@@ -178,53 +179,6 @@ class MyAudioEngine {
   }
 }
 
-extension AVAudioSourceNode {
-  static func withSource(source: SampleSource, sampleRate: Double) -> AVAudioSourceNode {
-
-    // The AVAudioSourceNode initializer takes a 'render block' – a closure
-    // that the audio engine calls repeatedly to request audio samples.
-    AVAudioSourceNode { (isSilence, timestamp, frameCount, audioBufferList) -> OSStatus in
-      // isSilence: A pointer to a Boolean indicating if the buffer contains silence.
-      //            We'll set this to 'false' as we are generating sound.
-      // timestamp: The audio timestamp at which the rendering is happening.
-      // frameCount: The number of audio frames (samples) the engine is requesting.
-      //             We need to fill this many samples into the buffer.
-      // audioBufferList: A pointer to the AudioBufferList structure where we write our samples.
-      
-      // Create a mutable pointer to the AudioBufferList for easier access.
-      let ablPointer = UnsafeMutableAudioBufferListPointer(audioBufferList)
-
-      // the absolute time, as counted by frames
-      let framePos = timestamp.pointee.mSampleTime
-      
-      // Loop through each frame (sample) that the audio engine is requesting.
-      for frameDelta in 0..<Int(frameCount) {
-        // Get the next amplitude sample from our custom WaveOscillator.
-        // Our oscillator produces Double values between -1.0 and 1.0.
-        //let sample = source.nextSample()
-        let sample = source.sample(at: (framePos + Double(frameDelta))/sampleRate)
-        
-        // For a stereo sound, there would be two buffers (left and right channels).
-        // For a mono sound, typically one buffer.
-        for buffer in ablPointer {
-          guard let pointer = buffer.mData?.assumingMemoryBound(to: Float.self) else {
-            continue // Skip to the next buffer if pointer is invalid
-          }
-          
-          // Write the sample to the current frame in the buffer.
-          // We cast the Double sample from our oscillator to Float,
-          // as Float is the expected sample type for Core Audio.
-          pointer[frameDelta] = Float(sample)
-        }
-      }
-      
-      // Inform the audio engine that we have generated sound, not silence.
-      isSilence.pointee = false
-      return noErr
-    }
-  }
-}
-
 struct ArrowView: View {
   let engine = MyAudioEngine()
   var sampleRate: Double
@@ -233,7 +187,7 @@ struct ArrowView: View {
   init() {
     self.sampleRate = engine.sampleRate
     voice = SimpleVoice(
-      oscillator: WaveOscillator(waveForm: SineWaveForm()),
+      oscillator: WaveOscillator(waveForm: SawtoothWaveForm()),
       //filter: ADSRFilter(sampleRate: sampleRate, envelope: EnvelopeData())
       filter: ADSR(envelope: EnvelopeData())
     )

@@ -11,9 +11,6 @@
 		9B1864642E772E37006147D8 /* Overture in Frameworks */ = {isa = PBXBuildFile; productRef = 9B1864632E772E37006147D8 /* Overture */; };
 		9BC0FCD62E7055FE00472A5A /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 9BC0FCD52E7055FE00472A5A /* ComposableArchitecture */; };
 		9BD1B7002E8B08D000C718F1 /* Tonic in Frameworks */ = {isa = PBXBuildFile; productRef = 9BD1B6FF2E8B08D000C718F1 /* Tonic */; };
-		9BD1B7052E8B0B9500C718F1 /* DunneAudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9BD1B7042E8B0B9500C718F1 /* DunneAudioKit */; };
-		9BD1B7082E8B0CF900C718F1 /* SoundpipeAudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9BD1B7072E8B0CF900C718F1 /* SoundpipeAudioKit */; };
-		9BD4B1032E87165C002B6925 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9BD4B1022E87165C002B6925 /* AudioKit */; };
 		9BFFD97F2E7DA94B00E7CB55 /* beat.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 9BFFD97E2E7DA94B00E7CB55 /* beat.aiff */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +36,6 @@
 		9BC0FCA72E704EA900472A5A /* ProgressionPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProgressionPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC0FCB42E704EAA00472A5A /* ProgressionPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProgressionPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC0FCBE2E704EAA00472A5A /* ProgressionPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProgressionPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9BD4B1042E871699002B6925 /* AudioKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = AudioKit; path = /Users/glangmead/proj/AudioKit/AudioKit; sourceTree = "<absolute>"; };
 		9BFFD97E2E7DA94B00E7CB55 /* beat.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = beat.aiff; sourceTree = "<group>"; };
 		9BFFD9802E7DABD200E7CB55 /* ProgressionPlayer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProgressionPlayer.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,9 +63,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BD4B1032E87165C002B6925 /* AudioKit in Frameworks */,
-				9BD1B7052E8B0B9500C718F1 /* DunneAudioKit in Frameworks */,
-				9BD1B7082E8B0CF900C718F1 /* SoundpipeAudioKit in Frameworks */,
 				9BC0FCD62E7055FE00472A5A /* ComposableArchitecture in Frameworks */,
 				9BD1B7002E8B08D000C718F1 /* Tonic in Frameworks */,
 				9B1864642E772E37006147D8 /* Overture in Frameworks */,
@@ -105,7 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				9B0738E72E96DD000003D251 /* MIDI files */,
-				9BD4B1042E871699002B6925 /* AudioKit */,
 				9BFFD9802E7DABD200E7CB55 /* ProgressionPlayer.entitlements */,
 				9BC0FCA92E704EA900472A5A /* Sources */,
 				9BC0FCB72E704EAA00472A5A /* ProgressionPlayerTests */,
@@ -155,10 +147,7 @@
 			packageProductDependencies = (
 				9BC0FCD52E7055FE00472A5A /* ComposableArchitecture */,
 				9B1864632E772E37006147D8 /* Overture */,
-				9BD4B1022E87165C002B6925 /* AudioKit */,
 				9BD1B6FF2E8B08D000C718F1 /* Tonic */,
-				9BD1B7042E8B0B9500C718F1 /* DunneAudioKit */,
-				9BD1B7072E8B0CF900C718F1 /* SoundpipeAudioKit */,
 			);
 			productName = ProgressionPlayer;
 			productReference = 9BC0FCA72E704EA900472A5A /* ProgressionPlayer.app */;
@@ -245,10 +234,7 @@
 			packageReferences = (
 				9BC0FCD32E70501900472A5A /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 				9B1864622E772E37006147D8 /* XCRemoteSwiftPackageReference "swift-overture" */,
-				9BD4B1012E87165C002B6925 /* XCRemoteSwiftPackageReference "AudioKit" */,
 				9BD1B6FE2E8B08D000C718F1 /* XCRemoteSwiftPackageReference "Tonic" */,
-				9BD1B7032E8B0B9500C718F1 /* XCRemoteSwiftPackageReference "DunneAudioKit" */,
-				9BD1B7062E8B0CF900C718F1 /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9BC0FCA82E704EA900472A5A /* Products */;
@@ -643,30 +629,6 @@
 				minimumVersion = 2.1.0;
 			};
 		};
-		9BD1B7032E8B0B9500C718F1 /* XCRemoteSwiftPackageReference "DunneAudioKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/AudioKit/DunneAudioKit.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.6.1;
-			};
-		};
-		9BD1B7062E8B0CF900C718F1 /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/AudioKit/SoundpipeAudioKit.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.7.3;
-			};
-		};
-		9BD4B1012E87165C002B6925 /* XCRemoteSwiftPackageReference "AudioKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/AudioKit/AudioKit.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.6.5;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -684,21 +646,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9BD1B6FE2E8B08D000C718F1 /* XCRemoteSwiftPackageReference "Tonic" */;
 			productName = Tonic;
-		};
-		9BD1B7042E8B0B9500C718F1 /* DunneAudioKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 9BD1B7032E8B0B9500C718F1 /* XCRemoteSwiftPackageReference "DunneAudioKit" */;
-			productName = DunneAudioKit;
-		};
-		9BD1B7072E8B0CF900C718F1 /* SoundpipeAudioKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 9BD1B7062E8B0CF900C718F1 /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */;
-			productName = SoundpipeAudioKit;
-		};
-		9BD4B1022E87165C002B6925 /* AudioKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 9BD4B1012E87165C002B6925 /* XCRemoteSwiftPackageReference "AudioKit" */;
-			productName = AudioKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -1,14 +1,6 @@
 {
+  "originHash" : "512430765e7ac098249742facb9eb76329d17a50e6a8cf66ce518a1a19b9ce6e",
   "pins" : [
-    {
-      "identity" : "audiokitex",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/AudioKit/AudioKitEX",
-      "state" : {
-        "revision" : "23e8e3bffd9fbc1dffa72f1d47c7f714dd777288",
-        "version" : "5.6.2"
-      }
-    },
     {
       "identity" : "combine-schedulers",
       "kind" : "remoteSourceControl",
@@ -16,33 +8,6 @@
       "state" : {
         "revision" : "5928286acce13def418ec36d05a001a9641086f2",
         "version" : "1.0.3"
-      }
-    },
-    {
-      "identity" : "dunneaudiokit",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/AudioKit/DunneAudioKit.git",
-      "state" : {
-        "revision" : "dd0a417239ba345e03ca8ffe936d052d6a8239ea",
-        "version" : "5.6.1"
-      }
-    },
-    {
-      "identity" : "kissfft",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/AudioKit/KissFFT",
-      "state" : {
-        "revision" : "dd0636e151724b8ba2e0908eba4d99a6ff24d00c",
-        "version" : "1.0.0"
-      }
-    },
-    {
-      "identity" : "soundpipeaudiokit",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/AudioKit/SoundpipeAudioKit.git",
-      "state" : {
-        "revision" : "efc0d67d3e19578b84d47cac4df72c497fb2173e",
-        "version" : "5.7.3"
       }
     },
     {
@@ -181,5 +146,5 @@
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }
