@@ -36,6 +36,21 @@ protocol WaveForm {
   func value(_ phase: Double) -> Double
 }
 
+protocol SampleSource {
+  func sample(at time: Double) -> Double
+}
+
+protocol SampleProcessor {
+  func process(_ sample: Double, time: Double) -> Double
+}
+
+protocol NoteHandler {
+  func noteOn(_ note: MidiNote)
+  func noteOff(_ note: MidiNote)
+}
+
+protocol Voice: SampleSource, NoteHandler {}
+
 struct SineWaveForm: WaveForm {
   func value(_ x: Double) -> Double {
     sin(x)
@@ -74,20 +89,16 @@ struct MidiNote {
   let velocity: MidiValue
 }
 
-protocol SampleSource {
-  func sample(at time: Double) -> Double
-}
-
-protocol SampleProcessor {
-  func process(_ sample: Double, time: Double) -> Double
-}
-
-protocol NoteHandler {
-  func noteOn(_ note: MidiNote)
-  func noteOff(_ note: MidiNote)
-}
-
-protocol Voice: SampleSource, NoteHandler {
+class SumSource: SampleSource {
+  private let sources: [SampleSource]
+  init(sources: [SampleSource]) {
+    self.sources = sources
+  }
+  func sample(at time: Double) -> Double {
+    let vals = sources.map({$0.sample(at: time)})
+    let val = vals.reduce(0.0, +)
+    return val
+  }
 }
 
 class WaveOscillator: SampleSource {
@@ -149,6 +160,8 @@ class SimpleVoice: Voice {
 
 class MyAudioEngine {
   private let audioEngine = AVAudioEngine()
+  private let envNode = AVAudioEnvironmentNode()
+  private let mixerNode = AVAudioMixerNode()
   
   // We grab the system's sample rate directly from the output node
   // to ensure our oscillator runs at the correct speed for the hardware.
@@ -162,8 +175,15 @@ class MyAudioEngine {
     let source = source
     
     let sourceNode: AVAudioSourceNode = AVAudioSourceNode.withSource(source: source, sampleRate: sampleRate)
+
+    let mono = AVAudioFormat(standardFormatWithSampleRate: sampleRate, channels: 1)
+
     audioEngine.attach(sourceNode)
-    audioEngine.connect(sourceNode, to: audioEngine.outputNode, format: nil)
+    audioEngine.attach(envNode)
+    audioEngine.attach(mixerNode)
+    audioEngine.connect(sourceNode, to: mixerNode, format: nil)
+    audioEngine.connect(mixerNode, to: envNode, format: mono)
+    audioEngine.connect(envNode, to: audioEngine.outputNode, format: nil)
   }
   
   func start() throws {
@@ -172,41 +192,62 @@ class MyAudioEngine {
     
     // And then, start the engine! This is the moment the sound begins to play.
     try audioEngine.start()
+    envNode.renderingAlgorithm = .HRTFHQ
+    envNode.isListenerHeadTrackingEnabled = true
+    envNode.position = AVAudio3DPoint(x: 0, y: 1, z: 1)
   }
   
   func stop() {
     audioEngine.stop()
+  }
+  
+  func moveIt() {
+    mixerNode.position.x += 0.1
+    mixerNode.position.y -= 0.1
   }
 }
 
 struct ArrowView: View {
   let engine = MyAudioEngine()
   var sampleRate: Double
-  let voice: Voice
+  let voices: [Voice]
+  let sumSource: SumSource
+  let midiChord: [MidiValue] = [60, 64, 67, 48, 72]
   
   init() {
     self.sampleRate = engine.sampleRate
-    voice = SimpleVoice(
-      oscillator: WaveOscillator(waveForm: SawtoothWaveForm()),
-      //filter: ADSRFilter(sampleRate: sampleRate, envelope: EnvelopeData())
-      filter: ADSR(envelope: EnvelopeData())
-    )
-    engine.setup(voice)
+    voices = midiChord.map { _ in
+      SimpleVoice(
+        oscillator: WaveOscillator(waveForm: SawtoothWaveForm()),
+        filter: ADSR(envelope: EnvelopeData(
+          attackTime: 0.1,
+          decayTime: 0.0,
+          sustainLevel: 1.0,
+          releaseTime: 0.1))
+      )
+    }
+    sumSource = SumSource(sources: voices)
+    engine.setup(sumSource)
   }
   
   var body: some View {
     Button("Stop") {
-      voice.noteOff(MidiNote(note: 60, velocity: 100))
+      for (voice, note) in zip(voices, midiChord) {
+        voice.noteOff(MidiNote(note: note, velocity: 100))
+      }
     }
     Button("Start") {
       do {
         try engine.start()
-        voice.noteOn(MidiNote(note: 60, velocity: 100))
+        for (voice, note) in zip(voices, midiChord) {
+          voice.noteOn(MidiNote(note: note, velocity: 100))
+        }
       } catch {
           print("engine failed")
       }
     }
     Button("Move it") {
+      engine.moveIt()
     }
   }
 }

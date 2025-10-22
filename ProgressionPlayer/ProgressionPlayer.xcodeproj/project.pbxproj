@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		9B0738E92E96DD130003D251 /* D_Loop_01.mid in Resources */ = {isa = PBXBuildFile; fileRef = 9B0738E82E96DD130003D251 /* D_Loop_01.mid */; };
 		9B1864642E772E37006147D8 /* Overture in Frameworks */ = {isa = PBXBuildFile; productRef = 9B1864632E772E37006147D8 /* Overture */; };
-		9BC0FCD62E7055FE00472A5A /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 9BC0FCD52E7055FE00472A5A /* ComposableArchitecture */; };
 		9BD1B7002E8B08D000C718F1 /* Tonic in Frameworks */ = {isa = PBXBuildFile; productRef = 9BD1B6FF2E8B08D000C718F1 /* Tonic */; };
 		9BFFD97F2E7DA94B00E7CB55 /* beat.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 9BFFD97E2E7DA94B00E7CB55 /* beat.aiff */; };
 /* End PBXBuildFile section */
@@ -63,7 +62,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BC0FCD62E7055FE00472A5A /* ComposableArchitecture in Frameworks */,
 				9BD1B7002E8B08D000C718F1 /* Tonic in Frameworks */,
 				9B1864642E772E37006147D8 /* Overture in Frameworks */,
 			);
@@ -145,7 +143,6 @@
 			);
 			name = ProgressionPlayer;
 			packageProductDependencies = (
-				9BC0FCD52E7055FE00472A5A /* ComposableArchitecture */,
 				9B1864632E772E37006147D8 /* Overture */,
 				9BD1B6FF2E8B08D000C718F1 /* Tonic */,
 			);
@@ -232,7 +229,6 @@
 			mainGroup = 9BC0FC9E2E704EA900472A5A;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				9BC0FCD32E70501900472A5A /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 				9B1864622E772E37006147D8 /* XCRemoteSwiftPackageReference "swift-overture" */,
 				9BD1B6FE2E8B08D000C718F1 /* XCRemoteSwiftPackageReference "Tonic" */,
 			);
@@ -613,14 +609,6 @@
 				minimumVersion = 0.5.0;
 			};
 		};
-		9BC0FCD32E70501900472A5A /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.22.2;
-			};
-		};
 		9BD1B6FE2E8B08D000C718F1 /* XCRemoteSwiftPackageReference "Tonic" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/AudioKit/Tonic.git";
@@ -636,11 +624,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9B1864622E772E37006147D8 /* XCRemoteSwiftPackageReference "swift-overture" */;
 			productName = Overture;
-		};
-		9BC0FCD52E7055FE00472A5A /* ComposableArchitecture */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 9BC0FCD32E70501900472A5A /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
-			productName = ComposableArchitecture;
 		};
 		9BD1B6FF2E8B08D000C718F1 /* Tonic */ = {
 			isa = XCSwiftPackageProductDependency;
