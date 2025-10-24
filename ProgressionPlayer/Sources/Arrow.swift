@@ -93,17 +93,15 @@ struct MidiNote {
   let velocity: MidiValue
 }
 
-let TwoPi = arrowConst(2 * .pi)
-
 class VariableMult: Arrow11 {
   var factor: Double
-  var arrow: Arrow11
+  let arrow: Arrow11
   init(factor: Double, arrow: Arrow11) {
     self.factor = factor
     self.arrow = arrow
     weak var futureSelf: VariableMult? = nil
     super.init(of: { x in
-      print("\(futureSelf!.factor) \(x)")
+      //print("\(futureSelf!.factor) \(x)")
       return futureSelf!.arrow.of(futureSelf!.factor * x)
     })
     futureSelf = self
@@ -167,7 +165,7 @@ class MyAudioEngine {
     // and our SineWaveForm.
     let source = source
     
-    print("\(sampleRate)")
+    //print("\(sampleRate)")
     let sourceNode: AVAudioSourceNode = AVAudioSourceNode.withSource(source: source, sampleRate: sampleRate)
 
     let mono = AVAudioFormat(standardFormatWithSampleRate: sampleRate, channels: 1)
@@ -212,7 +210,7 @@ struct ArrowView: View {
     self.sampleRate = engine.sampleRate
     voices = midiChord.map { _ in
       SimpleVoice(
-        oscillator: VariableMult(factor: 1.0, arrow: Sine),
+        oscillator: VariableMult(factor: 440.0, arrow: Sawtooth),
         filter: ADSR(envelope: EnvelopeData(
           attackTime: 0.2,
           decayTime: 0.0,
