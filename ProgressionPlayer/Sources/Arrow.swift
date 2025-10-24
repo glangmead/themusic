@@ -60,32 +60,12 @@ let Sine = Arrow11(of: {
   sin(2 * .pi * $0)
 })
 
-class Triangle: Arrow11 {
-//  let triangle = PiecewiseFunc<Double>(ifuncs: [
-//    IntervalFunc<Double>(
-//      interval: Interval<Double>(start: 0.0, end: .pi/2),
-//      f: { x in x * (2.0 / .pi) }
-//    ),
-//    IntervalFunc<Double>(
-//      interval: Interval<Double>(start: .pi/2, end: 3 * .pi/2),
-//      f: { x in (2.0 / .pi) * (.pi - x) }
-//    ),
-//    IntervalFunc<Double>(
-//      interval: Interval<Double>(start: 3 * .pi/2, end: 2 * .pi),
-//      f: { x in (2.0 / .pi) * (x - 2 * .pi) }
-//    ),
-//  ])
-  init() {
-    super.init(of: { x in
-      //triangle.val(fmod(x, 2.0 * .pi))
-      abs((fmod(x, 2 * .pi) / .pi) - 1.0)
-    })
-  }
-}
+let Triangle = Arrow11(of: { x in
+  2 * (abs((2 * fmod(x, 1.0)) - 1.0) - 0.5)
+})
 
 let Sawtooth = Arrow11(of: { x in
-  let ret = (fmod(x, 2 * .pi) / .pi) - 1.0
-  return ret
+  (2 * fmod(x, 1.0)) - 1.0
 })
 
 struct MidiNote {
@@ -138,6 +118,7 @@ class SimpleVoice: Arrow11, NoteHandler {
     let freq = 440.0 * pow(2.0, (Double(note.note) - 69.0) / 12.0)
     
     // Set the oscillator's frequency to produce the correct pitch
+    print("\(freq)")
     oscillator.factor = freq
     filter.noteOn(note)
   }
@@ -149,68 +130,18 @@ class SimpleVoice: Arrow11, NoteHandler {
   }
 }
 
-class MyAudioEngine {
-  private let audioEngine = AVAudioEngine()
-  private let envNode = AVAudioEnvironmentNode()
-  private let mixerNode = AVAudioMixerNode()
-  
-  // We grab the system's sample rate directly from the output node
-  // to ensure our oscillator runs at the correct speed for the hardware.
-  var sampleRate: Double {
-    audioEngine.outputNode.inputFormat(forBus: 0).sampleRate
-  }
-  
-  func setup(_ source: Arrow11) {
-    // Initialize WaveOscillator with the system's sample rate
-    // and our SineWaveForm.
-    let source = source
-    
-    //print("\(sampleRate)")
-    let sourceNode: AVAudioSourceNode = AVAudioSourceNode.withSource(source: source, sampleRate: sampleRate)
-
-    let mono = AVAudioFormat(standardFormatWithSampleRate: sampleRate, channels: 1)
-
-    audioEngine.attach(sourceNode)
-    audioEngine.attach(envNode)
-    audioEngine.attach(mixerNode)
-    audioEngine.connect(sourceNode, to: mixerNode, format: nil)
-    audioEngine.connect(mixerNode, to: envNode, format: mono)
-    audioEngine.connect(envNode, to: audioEngine.outputNode, format: nil)
-  }
-  
-  func start() throws {
-    // Prepare the engine, getting all resources ready.
-    audioEngine.prepare()
-    
-    // And then, start the engine! This is the moment the sound begins to play.
-    try audioEngine.start()
-    envNode.renderingAlgorithm = .HRTFHQ
-    envNode.isListenerHeadTrackingEnabled = true
-    envNode.position = AVAudio3DPoint(x: 0, y: 1, z: 1)
-  }
-  
-  func stop() {
-    audioEngine.stop()
-  }
-  
-  func moveIt() {
-    mixerNode.position.x += 0.1
-    mixerNode.position.y -= 0.1
-  }
-}
-
 struct ArrowView: View {
   let engine = MyAudioEngine()
   var sampleRate: Double
   let voices: [SimpleVoice]
   let sumSource: Arrow11
-  let midiChord: [MidiValue] = [60, 64, 67, 48, 72]
+  let midiChord: [MidiValue] = [60, 64, 67]
   
   init() {
     self.sampleRate = engine.sampleRate
     voices = midiChord.map { _ in
       SimpleVoice(
-        oscillator: VariableMult(factor: 440.0, arrow: Sawtooth),
+        oscillator: VariableMult(factor: 440.0, arrow: Triangle),
         filter: ADSR(envelope: EnvelopeData(
           attackTime: 0.2,
           decayTime: 0.0,
@@ -247,6 +178,57 @@ struct ArrowView: View {
     }
   }
 }
+
+class MyAudioEngine {
+  private let audioEngine = AVAudioEngine()
+  private let envNode = AVAudioEnvironmentNode()
+  private let mixerNode = AVAudioMixerNode()
+  
+  // We grab the system's sample rate directly from the output node
+  // to ensure our oscillator runs at the correct speed for the hardware.
+  var sampleRate: Double {
+    audioEngine.outputNode.inputFormat(forBus: 0).sampleRate
+  }
+  
+  func setup(_ source: Arrow11) {
+    // Initialize WaveOscillator with the system's sample rate
+    // and our SineWaveForm.
+    let source = source
+    
+    //print("\(sampleRate)")
+    let sourceNode: AVAudioSourceNode = AVAudioSourceNode.withSource(source: source, sampleRate: sampleRate)
+    
+    let mono = AVAudioFormat(standardFormatWithSampleRate: sampleRate, channels: 1)
+    
+    audioEngine.attach(sourceNode)
+    audioEngine.attach(envNode)
+    audioEngine.attach(mixerNode)
+    audioEngine.connect(sourceNode, to: mixerNode, format: nil)
+    audioEngine.connect(mixerNode, to: envNode, format: mono)
+    audioEngine.connect(envNode, to: audioEngine.outputNode, format: nil)
+  }
+  
+  func start() throws {
+    // Prepare the engine, getting all resources ready.
+    audioEngine.prepare()
+    
+    // And then, start the engine! This is the moment the sound begins to play.
+    try audioEngine.start()
+    envNode.renderingAlgorithm = .HRTFHQ
+    envNode.isListenerHeadTrackingEnabled = true
+    envNode.position = AVAudio3DPoint(x: 0, y: 1, z: 1)
+  }
+  
+  func stop() {
+    audioEngine.stop()
+  }
+  
+  func moveIt() {
+    mixerNode.position.x += 0.1
+    mixerNode.position.y -= 0.1
+  }
+}
+
 
 #Preview {
   ArrowView()
