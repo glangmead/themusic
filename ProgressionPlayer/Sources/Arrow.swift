@@ -9,39 +9,46 @@ import AVFAudio
 import Overture
 import SwiftUI
 
-// a source is () -> Float
-//   - underlying it is a Float -> Float with a state for the input
-//   - frequency is a parameter (or wavelength, the size of the fundamental domain)
-// the source can be composed with
-//   - multiplication (amplitude)
-//   - sum (multiple voices)
-// ADSR is a source as well, but with more state: it is a piecewise function
-//   - some pieces are transitioned automatically, some need outside input
-
-// we have functions x -> y and a stream of domain points [x]
-// () -> time: add 1 / sampleRate to the previous value
-
-// (time) -> time could also maybe subtract, so as to let functions eat their previous values??
-
-// FAUST implements linear functions by adding to itself, but it could just be f(x) as well, instead of knowing about f(x-delta) and the slope.
-
-// Now we can curry anything like (time) -> z to () -> z
-
-// an AVAudioSourceNode has to populate a frame of stuff by calling a source N times
-//
-
 typealias MidiValue = UInt8
 
-protocol WaveForm {
-  func value(_ phase: Double) -> Double
+class Arrow11 {
+  var of: (Double) -> Double
+  init(of: @escaping (Double) -> Double) {
+    self.of = of
+  }
 }
 
-protocol SampleSource {
-  func sample(at time: Double) -> Double
+//protocol SampleSource {
+//  func sample(at time: Double) -> Double
+//}
+
+class Arrow21 {
+  var of: (Double, Double) -> Double
+  init(of: @escaping (Double, Double) -> Double) {
+    self.of = of
+  }
 }
 
-protocol SampleProcessor {
-  func process(_ sample: Double, time: Double) -> Double
+func arrowPlus(a: Arrow11, b: Arrow11) -> Arrow11 {
+  return Arrow11(of: { a.of($0) + b.of($0) })
+}
+
+func arrowSum(_ arrows: [Arrow11]) -> Arrow11 {
+  return Arrow11(of: { x in
+    arrows.map({$0.of(x)}).reduce(0, +)
+  } )
+}
+
+func arrowTimes(a: Arrow11, b: Arrow11) -> Arrow11 {
+  return Arrow11(of: { a.of($0) * b.of($0) })
+}
+
+func arrowCompose(outer: Arrow11, inner: Arrow11) -> Arrow11 {
+  return Arrow11(of: { outer.of(inner.of($0)) })
+}
+
+func arrowConst(_ val: Double) -> Arrow11 {
+  return Arrow11(of: { _ in return val })
 }
 
 protocol NoteHandler {
@@ -49,83 +56,80 @@ protocol NoteHandler {
   func noteOff(_ note: MidiNote)
 }
 
-protocol Voice: SampleSource, NoteHandler {}
+let Sine = Arrow11(of: {
+  sin(2 * .pi * $0)
+})
 
-struct SineWaveForm: WaveForm {
-  func value(_ x: Double) -> Double {
-    sin(x)
+class Triangle: Arrow11 {
+//  let triangle = PiecewiseFunc<Double>(ifuncs: [
+//    IntervalFunc<Double>(
+//      interval: Interval<Double>(start: 0.0, end: .pi/2),
+//      f: { x in x * (2.0 / .pi) }
+//    ),
+//    IntervalFunc<Double>(
+//      interval: Interval<Double>(start: .pi/2, end: 3 * .pi/2),
+//      f: { x in (2.0 / .pi) * (.pi - x) }
+//    ),
+//    IntervalFunc<Double>(
+//      interval: Interval<Double>(start: 3 * .pi/2, end: 2 * .pi),
+//      f: { x in (2.0 / .pi) * (x - 2 * .pi) }
+//    ),
+//  ])
+  init() {
+    super.init(of: { x in
+      //triangle.val(fmod(x, 2.0 * .pi))
+      abs((fmod(x, 2 * .pi) / .pi) - 1.0)
+    })
   }
 }
 
-struct TriangleWaveForm: WaveForm {
-  let triangle = PiecewiseFunc<Double>(ifuncs: [
-    IntervalFunc<Double>(
-      interval: Interval<Double>(start: 0.0, end: .pi/2),
-      f: { x in x * (2.0 / .pi) }
-    ),
-    IntervalFunc<Double>(
-      interval: Interval<Double>(start: .pi/2, end: 3 * .pi/2),
-      f: { x in (2.0 / .pi) * (.pi - x) }
-    ),
-    IntervalFunc<Double>(
-      interval: Interval<Double>(start: 3 * .pi/2, end: 2 * .pi),
-      f: { x in (2.0 / .pi) * (x - 2 * .pi) }
-    ),
-  ])
-  func value(_ x: Double) -> Double {
-    //triangle.val(fmod(x, 2.0 * .pi))
-    abs((fmod(x, 2 * .pi) / .pi) - 1.0)
-  }
-}
-
-struct SawtoothWaveForm: WaveForm {
-  func value(_ x: Double) -> Double {
-    (fmod(x, 2 * .pi) / .pi) - 1.0
-  }
-}
+let Sawtooth = Arrow11(of: { x in
+  let ret = (fmod(x, 2 * .pi) / .pi) - 1.0
+  return ret
+})
 
 struct MidiNote {
   let note: MidiValue
   let velocity: MidiValue
 }
 
-class SumSource: SampleSource {
-  private let sources: [SampleSource]
-  init(sources: [SampleSource]) {
-    self.sources = sources
-  }
-  func sample(at time: Double) -> Double {
-    let vals = sources.map({$0.sample(at: time)})
-    let val = vals.reduce(0.0, +)
-    return val
+let TwoPi = arrowConst(2 * .pi)
+
+class VariableMult: Arrow11 {
+  var factor: Double
+  var arrow: Arrow11
+  init(factor: Double, arrow: Arrow11) {
+    self.factor = factor
+    self.arrow = arrow
+    weak var futureSelf: VariableMult? = nil
+    super.init(of: { x in
+      print("\(futureSelf!.factor) \(x)")
+      return futureSelf!.arrow.of(futureSelf!.factor * x)
+    })
+    futureSelf = self
   }
 }
 
-class WaveOscillator: SampleSource {
-  private let waveForm: WaveForm
-  private var frequency: Double = 1.0
-  
-  init(waveForm: WaveForm) {
-    self.waveForm = waveForm
-  }
-  
-  func setFrequency(_ frequency: Double) {
-    self.frequency = frequency
-  }
-  
-  func sample(at time: Double) -> Double {
-    return waveForm.value(frequency * time * 2 * .pi)
-  }
-}
-
-class SimpleVoice: Voice {
-  private let oscillator: WaveOscillator
-  private let filter: NoteHandler & SampleProcessor
+class SimpleVoice: Arrow11, NoteHandler {
+  private let oscillator: VariableMult
+  private let filter: NoteHandler & Arrow21
   private var amplitude: Double = 0.0 // Controls the current loudness of the voice
   
-  init(oscillator: WaveOscillator, filter: NoteHandler & SampleProcessor) {
+  init(oscillator: VariableMult, filter: NoteHandler & Arrow21) {
     self.oscillator = oscillator
     self.filter = filter
+    weak var futureSelf: SimpleVoice? = nil
+    super.init(of: { time in
+      // If the amplitude is zero, the voice is effectively off, so we return silence.
+      guard futureSelf!.amplitude > 0.0 else {
+        return 0.0
+      }
+      let rawOscillatorSample = oscillator.of(time)
+      let envelopedSample = filter.of(rawOscillatorSample, time)
+      return futureSelf!.amplitude * envelopedSample
+    })
+    futureSelf = self
+
   }
   
   func noteOn(_ note: MidiNote) {
@@ -136,7 +140,7 @@ class SimpleVoice: Voice {
     let freq = 440.0 * pow(2.0, (Double(note.note) - 69.0) / 12.0)
     
     // Set the oscillator's frequency to produce the correct pitch
-    oscillator.setFrequency(freq)
+    oscillator.factor = freq
     filter.noteOn(note)
   }
   
@@ -145,17 +149,6 @@ class SimpleVoice: Voice {
     // effectively silencing the sound instantly.
     filter.noteOff(note)
   }
-  
-  func sample(at time: Double) -> Double {
-    // If the amplitude is zero, the voice is effectively off, so we return silence.
-    guard self.amplitude > 0.0 else {
-      return 0.0
-    }
-    let rawOscillatorSample = oscillator.sample(at: time)
-    let envelopedSample = filter.process(rawOscillatorSample, time: time)
-    return self.amplitude * envelopedSample
-  }
-
 }
 
 class MyAudioEngine {
@@ -169,11 +162,12 @@ class MyAudioEngine {
     audioEngine.outputNode.inputFormat(forBus: 0).sampleRate
   }
   
-  func setup(_ source: SampleSource) {
+  func setup(_ source: Arrow11) {
     // Initialize WaveOscillator with the system's sample rate
     // and our SineWaveForm.
     let source = source
     
+    print("\(sampleRate)")
     let sourceNode: AVAudioSourceNode = AVAudioSourceNode.withSource(source: source, sampleRate: sampleRate)
 
     let mono = AVAudioFormat(standardFormatWithSampleRate: sampleRate, channels: 1)
@@ -210,23 +204,27 @@ class MyAudioEngine {
 struct ArrowView: View {
   let engine = MyAudioEngine()
   var sampleRate: Double
-  let voices: [Voice]
-  let sumSource: SumSource
+  let voices: [SimpleVoice]
+  let sumSource: Arrow11
   let midiChord: [MidiValue] = [60, 64, 67, 48, 72]
   
   init() {
     self.sampleRate = engine.sampleRate
     voices = midiChord.map { _ in
       SimpleVoice(
-        oscillator: WaveOscillator(waveForm: SawtoothWaveForm()),
+        oscillator: VariableMult(factor: 1.0, arrow: Sine),
         filter: ADSR(envelope: EnvelopeData(
-          attackTime: 0.1,
+          attackTime: 0.2,
           decayTime: 0.0,
           sustainLevel: 1.0,
-          releaseTime: 0.1))
+          releaseTime: 0.2))
       )
     }
-    sumSource = SumSource(sources: voices)
+    sumSource = arrowSum(voices)
+//    let lfoSource = WaveOscillator(waveForm: SineWaveForm())
+//    lfoSource.setFrequency(1.0)
+//    let vibratoSource = ComposeSource(outer: sumSource, inner: lfoSource)
+    
     engine.setup(sumSource)
   }
   

@@ -8,7 +8,7 @@
 import AVFAudio
 
 extension AVAudioSourceNode {
-  static func withSource(source: SampleSource, sampleRate: Double) -> AVAudioSourceNode {
+  static func withSource(source: Arrow11, sampleRate: Double) -> AVAudioSourceNode {
     
     // The AVAudioSourceNode initializer takes a 'render block' – a closure
     // that the audio engine calls repeatedly to request audio samples.
@@ -31,8 +31,8 @@ extension AVAudioSourceNode {
         // Get the next amplitude sample from our custom WaveOscillator.
         // Our oscillator produces Double values between -1.0 and 1.0.
         //let sample = source.nextSample()
-        let sample = source.sample(at: (framePos + Double(frameDelta))/sampleRate)
-        
+        let sample = source.of((framePos + Double(frameDelta))/sampleRate)
+        //print("\(sample)")
         // For a stereo sound, there would be two buffers (left and right channels).
         // For a mono sound, typically one buffer.
         for buffer in ablPointer {

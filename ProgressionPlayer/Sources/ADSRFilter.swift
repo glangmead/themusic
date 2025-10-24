@@ -24,10 +24,10 @@ struct EnvelopeData {
   var releaseTime: CoreFloat = 1.0
 }
 
-class ADSR: NoteHandler, SampleProcessor {
+class ADSR: Arrow21, NoteHandler {
   var timeOrigin: CoreFloat = 0
-  var attackEnv = PiecewiseFunc<CoreFloat>(ifuncs: [IntervalFunc<CoreFloat>(interval: Interval<CoreFloat>(start: nil, end: nil), f: {_ in 1})])
-  var decayEnv = PiecewiseFunc<CoreFloat>(ifuncs: [IntervalFunc<CoreFloat>(interval: Interval<CoreFloat>(start: nil, end: nil), f: {_ in 1})])
+  var attackEnv: PiecewiseFunc<CoreFloat>
+  var decayEnv: PiecewiseFunc<CoreFloat>
   var attack = true
   
   init(envelope e: EnvelopeData) {
@@ -47,10 +47,11 @@ class ADSR: NoteHandler, SampleProcessor {
         interval: Interval<CoreFloat>(start: 0, end: e.releaseTime),
         f: {$0 * -1.0 * (e.sustainLevel / e.releaseTime) + e.sustainLevel})
     ])
-  }
-  
-  func process(_ sample: CoreFloat, time: Double) -> CoreFloat {
-    return sample * (attack ? attackEnv.val(Date.now.timeIntervalSince1970 - timeOrigin) : decayEnv.val(Date.now.timeIntervalSince1970 - timeOrigin))
+    weak var futureSelf: ADSR? = nil
+    super.init(of: { sample, time in
+      return sample * (futureSelf!.attack ? futureSelf!.attackEnv.val(Date.now.timeIntervalSince1970 - futureSelf!.timeOrigin) : futureSelf!.decayEnv.val(Date.now.timeIntervalSince1970 - futureSelf!.timeOrigin))
+    })
+    futureSelf = self
   }
   
   func noteOn(_ note: MidiNote) {
