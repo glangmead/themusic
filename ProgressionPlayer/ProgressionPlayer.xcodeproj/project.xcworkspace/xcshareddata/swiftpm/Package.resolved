@@ -1,6 +1,15 @@
 {
-  "originHash" : "045e08ad37552a333f577ae65fb43dd12c82c562d1b106a45a3efca81c08d560",
+  "originHash" : "5488f413f1004f331efc1702dbd604853b89a1d45521daba2f0f4748928a8ca2",
   "pins" : [
+    {
+      "identity" : "audiokit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AudioKit/AudioKit.git",
+      "state" : {
+        "revision" : "5b3fd238ef8ee95c9842ca4ea83ca58ee151e630",
+        "version" : "5.6.5"
+      }
+    },
     {
       "identity" : "swift-overture",
       "kind" : "remoteSourceControl",

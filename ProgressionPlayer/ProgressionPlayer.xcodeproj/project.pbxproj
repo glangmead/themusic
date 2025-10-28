@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9B0738E92E96DD130003D251 /* D_Loop_01.mid in Resources */ = {isa = PBXBuildFile; fileRef = 9B0738E82E96DD130003D251 /* D_Loop_01.mid */; };
 		9B1864642E772E37006147D8 /* Overture in Frameworks */ = {isa = PBXBuildFile; productRef = 9B1864632E772E37006147D8 /* Overture */; };
+		9BA522562EB0FE8F00ECF215 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9BA522552EB0FE8F00ECF215 /* AudioKit */; };
 		9BD1B7002E8B08D000C718F1 /* Tonic in Frameworks */ = {isa = PBXBuildFile; productRef = 9BD1B6FF2E8B08D000C718F1 /* Tonic */; };
 		9BFFD97F2E7DA94B00E7CB55 /* beat.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 9BFFD97E2E7DA94B00E7CB55 /* beat.aiff */; };
 /* End PBXBuildFile section */
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		9B0738E82E96DD130003D251 /* D_Loop_01.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = D_Loop_01.mid; sourceTree = "<group>"; };
+		9BA522572EB10D1C00ECF215 /* ProgressionPlayer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ProgressionPlayer-Info.plist"; sourceTree = "<group>"; };
 		9BC0FCA72E704EA900472A5A /* ProgressionPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProgressionPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC0FCB42E704EAA00472A5A /* ProgressionPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProgressionPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC0FCBE2E704EAA00472A5A /* ProgressionPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProgressionPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BA522562EB0FE8F00ECF215 /* AudioKit in Frameworks */,
 				9BD1B7002E8B08D000C718F1 /* Tonic in Frameworks */,
 				9B1864642E772E37006147D8 /* Overture in Frameworks */,
 			);
@@ -95,6 +98,7 @@
 		9BC0FC9E2E704EA900472A5A = {
 			isa = PBXGroup;
 			children = (
+				9BA522572EB10D1C00ECF215 /* ProgressionPlayer-Info.plist */,
 				9B0738E72E96DD000003D251 /* MIDI files */,
 				9BFFD9802E7DABD200E7CB55 /* ProgressionPlayer.entitlements */,
 				9BC0FCA92E704EA900472A5A /* Sources */,
@@ -145,6 +149,7 @@
 			packageProductDependencies = (
 				9B1864632E772E37006147D8 /* Overture */,
 				9BD1B6FF2E8B08D000C718F1 /* Tonic */,
+				9BA522552EB0FE8F00ECF215 /* AudioKit */,
 			);
 			productName = ProgressionPlayer;
 			productReference = 9BC0FCA72E704EA900472A5A /* ProgressionPlayer.app */;
@@ -231,6 +236,7 @@
 			packageReferences = (
 				9B1864622E772E37006147D8 /* XCRemoteSwiftPackageReference "swift-overture" */,
 				9BD1B6FE2E8B08D000C718F1 /* XCRemoteSwiftPackageReference "Tonic" */,
+				9BA522542EB0FE8400ECF215 /* XCRemoteSwiftPackageReference "AudioKit" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9BC0FCA82E704EA900472A5A /* Products */;
@@ -440,6 +446,7 @@
 				DEVELOPMENT_TEAM = 5Y5NG75847;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ProgressionPlayer-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -469,6 +476,7 @@
 				DEVELOPMENT_TEAM = 5Y5NG75847;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ProgressionPlayer-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -609,6 +617,14 @@
 				minimumVersion = 0.5.0;
 			};
 		};
+		9BA522542EB0FE8400ECF215 /* XCRemoteSwiftPackageReference "AudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.5;
+			};
+		};
 		9BD1B6FE2E8B08D000C718F1 /* XCRemoteSwiftPackageReference "Tonic" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/AudioKit/Tonic.git";
@@ -624,6 +640,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9B1864622E772E37006147D8 /* XCRemoteSwiftPackageReference "swift-overture" */;
 			productName = Overture;
+		};
+		9BA522552EB0FE8F00ECF215 /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9BA522542EB0FE8400ECF215 /* XCRemoteSwiftPackageReference "AudioKit" */;
+			productName = AudioKit;
 		};
 		9BD1B6FF2E8B08D000C718F1 /* Tonic */ = {
 			isa = XCSwiftPackageProductDependency;

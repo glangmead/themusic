@@ -9,6 +9,19 @@ import AVFAudio
 import Overture
 import SwiftUI
 
+func loadAudioSignal(audioURL: URL) -> (signal: [Float], rate: Double, frameCount: Int) {
+  // also:
+  // from scipy.io import wavfile
+  // d = wavfile.read("dx117.wav")
+  // list(d[1]) <-- python list of floats
+  let file = try! AVAudioFile(forReading: audioURL)
+  let format = AVAudioFormat(commonFormat: .pcmFormatFloat32, sampleRate: file.fileFormat.sampleRate, channels: file.fileFormat.channelCount, interleaved: false)!
+  let buf = AVAudioPCMBuffer(pcmFormat: format, frameCapacity: UInt32(file.length))
+  try! file.read(into: buf!) // You probably want better error handling
+  let floatArray = Array(UnsafeBufferPointer(start: buf?.floatChannelData![0], count:Int(buf!.frameLength)))
+  return (signal: floatArray, rate: file.fileFormat.sampleRate, frameCount: Int(file.length))
+}
+
 typealias MidiValue = UInt8
 
 class Arrow11 {
@@ -118,7 +131,7 @@ class SimpleVoice: Arrow11, NoteHandler {
     let freq = 440.0 * pow(2.0, (Double(note.note) - 69.0) / 12.0)
     
     // Set the oscillator's frequency to produce the correct pitch
-    print("\(freq)")
+    //print("\(freq)")
     oscillator.factor = freq
     filter.noteOn(note)
   }
@@ -131,17 +144,17 @@ class SimpleVoice: Arrow11, NoteHandler {
 }
 
 struct ArrowView: View {
-  let engine = MyAudioEngine()
+  let engine: MyAudioEngine
   var sampleRate: Double
   let voices: [SimpleVoice]
   let sumSource: Arrow11
   let midiChord: [MidiValue] = [60, 64, 67]
+  let seq: Sequencer
   
   init() {
-    self.sampleRate = engine.sampleRate
     voices = midiChord.map { _ in
       SimpleVoice(
-        oscillator: VariableMult(factor: 440.0, arrow: Triangle),
+        oscillator: VariableMult(factor: 440.0, arrow: Sawtooth),
         filter: ADSR(envelope: EnvelopeData(
           attackTime: 0.2,
           decayTime: 0.0,
@@ -154,7 +167,9 @@ struct ArrowView: View {
 //    lfoSource.setFrequency(1.0)
 //    let vibratoSource = ComposeSource(outer: sumSource, inner: lfoSource)
     
-    engine.setup(sumSource)
+    engine = MyAudioEngine(sumSource)
+    sampleRate = engine.sampleRate
+    seq = Sequencer(engine: engine.audioEngine, numTracks: 1, sourceNode: voices[0])
   }
   
   var body: some View {
@@ -173,6 +188,14 @@ struct ArrowView: View {
           print("engine failed")
       }
     }
+    Button("Sequencer") {
+      do {
+        try engine.start()
+        seq.testListener(chord: midiChord)
+      } catch {
+        print("engine failed")
+      }
+    }
     Button("Move it") {
       engine.moveIt()
     }
@@ -180,9 +203,10 @@ struct ArrowView: View {
 }
 
 class MyAudioEngine {
-  private let audioEngine = AVAudioEngine()
+  let audioEngine = AVAudioEngine()
   private let envNode = AVAudioEnvironmentNode()
   private let mixerNode = AVAudioMixerNode()
+  let sourceNode: AVAudioSourceNode
   
   // We grab the system's sample rate directly from the output node
   // to ensure our oscillator runs at the correct speed for the hardware.
@@ -190,14 +214,14 @@ class MyAudioEngine {
     audioEngine.outputNode.inputFormat(forBus: 0).sampleRate
   }
   
-  func setup(_ source: Arrow11) {
+  init(_ source: Arrow11) {
     // Initialize WaveOscillator with the system's sample rate
     // and our SineWaveForm.
     let source = source
     
-    //print("\(sampleRate)")
-    let sourceNode: AVAudioSourceNode = AVAudioSourceNode.withSource(source: source, sampleRate: sampleRate)
     
+    //print("\(sampleRate)")
+    sourceNode = AVAudioSourceNode.withSource(source: source, sampleRate: audioEngine.outputNode.inputFormat(forBus: 0).sampleRate)
     let mono = AVAudioFormat(standardFormatWithSampleRate: sampleRate, channels: 1)
     
     audioEngine.attach(sourceNode)
@@ -224,6 +248,9 @@ class MyAudioEngine {
   }
   
   func moveIt() {
+    if sourceNode is AVAudioUnit {
+      print("alas my node doesn't turn out to helpfully just be an AVAudioUnit")
+    }
     mixerNode.position.x += 0.1
     mixerNode.position.y -= 0.1
   }
