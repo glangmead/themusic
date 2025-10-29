@@ -45,6 +45,20 @@ import SwiftUI
 ///     distanceAttenuationParameters, reverbParameters, outputVolume, outputType, applicableRenderingAlgorithms,
 ///     isListenerHeadTrackingEnabled, nextAvailableInputBus
 ///
+/// An LFO is a coupling of two arrows.
+///   - arrow1 is a target to be modulated, e.g. a sin wave whose frequency we shall modulate
+///   - arrow2 is an LFO without knowledge of where it's being plugged in
+///   - in real time we can do a few things
+///       * couple and uncouple (a binary change -- maybe the wire is there statically and we just set the coupling constant to 0)
+///       * change arrow1's variables
+///       * change arrow2's variables
+///
+/// What is an arrow?
+///   - A collection of sub-arrows composed together statically
+///   - A single arrow has exposed parameters that can be changed in real time
+///   - So in fullness, and arrow is a wiring diagram (the static part) with a few knobs attached (the real-time part)
+///   - Compile-time wires and runtime wires?
+///
 
 typealias MidiValue = UInt8
 
