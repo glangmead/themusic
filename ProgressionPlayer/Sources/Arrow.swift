@@ -9,18 +9,42 @@ import AVFAudio
 import Overture
 import SwiftUI
 
-func loadAudioSignal(audioURL: URL) -> (signal: [Float], rate: Double, frameCount: Int) {
-  // also:
-  // from scipy.io import wavfile
-  // d = wavfile.read("dx117.wav")
-  // list(d[1]) <-- python list of floats
-  let file = try! AVAudioFile(forReading: audioURL)
-  let format = AVAudioFormat(commonFormat: .pcmFormatFloat32, sampleRate: file.fileFormat.sampleRate, channels: file.fileFormat.channelCount, interleaved: false)!
-  let buf = AVAudioPCMBuffer(pcmFormat: format, frameCapacity: UInt32(file.length))
-  try! file.read(into: buf!) // You probably want better error handling
-  let floatArray = Array(UnsafeBufferPointer(start: buf?.floatChannelData![0], count:Int(buf!.frameLength)))
-  return (signal: floatArray, rate: file.fileFormat.sampleRate, frameCount: Int(file.length))
-}
+/// High-level architecture: [Instrument -> AVAudioUnitEffect_1 -> ... -> AVAudioUnitEffect_n -> AVAudioEnvironmentNode] => AVAudioEngine
+///                               ^                 ^                             ^                         ^
+///                             [LFO]             [LFO]                         [LFO]                     [LFO]
+///
+/// AVAudioSourceNode per _instrument_
+///   - the render block callback for this obtains all the outputs of all oscillators of that instrument
+///   - polyphony in this instrument
+///   - envelopes
+///   - tremolo
+///   - filter envelopes
+///   - chain of AVAudioUnitEffects
+///   - AVAudioEnvironmentNode (the famous spatializer)
+///   - The output node is the AVAudioEngine outputNode
+///
+/// The Instrument is an Arrow and is a static formula of
+///   - the oscillator
+///   - amplitude envelope
+///   - frequency
+///   - modulation of frequency
+///
+/// AVAudioUnitEffect nodes need some way to be modulated by an LFO, or so I am saying.
+///   - AVAudioUnitDelay
+///       * delayTime, feedback, lowPassCutoff, wetDryMix
+///   - AVAudioUnitDistortion
+///       * loadFactoryPreset, preGain, wetDryMix
+///   - AVAudioUnitEQ
+///       * AVAudioUnitEQFilterParameters, bands, globalGain
+///   - AVAudioUnitReverb
+///       * loadFactoryPreset, wetDryMix
+///   - AU plugins!
+///
+/// AVAudioEnvironmentNode
+///   - position, listenerPosition, listenerAngularOrientation, listenerVectorOrientation,
+///     distanceAttenuationParameters, reverbParameters, outputVolume, outputType, applicableRenderingAlgorithms,
+///     isListenerHeadTrackingEnabled, nextAvailableInputBus
+///
 
 typealias MidiValue = UInt8
 
@@ -206,6 +230,7 @@ class MyAudioEngine {
   let audioEngine = AVAudioEngine()
   private let envNode = AVAudioEnvironmentNode()
   private let mixerNode = AVAudioMixerNode()
+  private var reverbNode = AVAudioUnitReverb()
   let sourceNode: AVAudioSourceNode
   
   // We grab the system's sample rate directly from the output node
@@ -227,7 +252,9 @@ class MyAudioEngine {
     audioEngine.attach(sourceNode)
     audioEngine.attach(envNode)
     audioEngine.attach(mixerNode)
-    audioEngine.connect(sourceNode, to: mixerNode, format: nil)
+    audioEngine.attach(reverbNode)
+    audioEngine.connect(sourceNode, to: reverbNode, format: nil)
+    audioEngine.connect(reverbNode, to: mixerNode, format: nil)
     audioEngine.connect(mixerNode, to: envNode, format: mono)
     audioEngine.connect(envNode, to: audioEngine.outputNode, format: nil)
   }
