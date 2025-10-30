@@ -5,10 +5,74 @@
 //  Created by Greg Langmead on 9/29/25.
 //
 
-import AVFoundation
-import CoreMIDI
+import AVFAudio
 import SwiftUI
 import Tonic
+
+
+
+struct ArrowView: View {
+  let engine: MyAudioEngine
+  var sampleRate: Double
+  let voices: [SimpleVoice]
+  let sumSource: Arrow11
+  let midiChord: [MidiValue] = [60, 64, 67]
+  let seq: Sequencer
+  
+  init() {
+    voices = midiChord.map { _ in
+      SimpleVoice(
+        oscillator: VariableMult(factor: 440.0, arrow: Sawtooth),
+        filter: ADSR(envelope: EnvelopeData(
+          attackTime: 0.2,
+          decayTime: 0.0,
+          sustainLevel: 1.0,
+          releaseTime: 0.2))
+      )
+    }
+    sumSource = arrowSum(voices)
+    //    let lfoSource = WaveOscillator(waveForm: SineWaveForm())
+    //    lfoSource.setFrequency(1.0)
+    //    let vibratoSource = ComposeSource(outer: sumSource, inner: lfoSource)
+    
+    engine = MyAudioEngine(sumSource)
+    sampleRate = engine.sampleRate
+    seq = Sequencer(engine: engine.audioEngine, numTracks: 1, sourceNode: voices[0])
+  }
+  
+  var body: some View {
+    Button("Stop") {
+      for (voice, note) in zip(voices, midiChord) {
+        voice.noteOff(MidiNote(note: note, velocity: 100))
+      }
+    }
+    Button("Start") {
+      do {
+        try engine.start()
+        for (voice, note) in zip(voices, midiChord) {
+          voice.noteOn(MidiNote(note: note, velocity: 100))
+        }
+      } catch {
+        print("engine failed")
+      }
+    }
+    Button("Sequencer") {
+      do {
+        try engine.start()
+        seq.testListener(chord: midiChord)
+      } catch {
+        print("engine failed")
+      }
+    }
+    Button("Move it") {
+      engine.moveIt()
+    }
+  }
+}
+
+#Preview {
+  ArrowView()
+}
 
 //struct TheoryView: View {
 //  var engine = AudioEngine()

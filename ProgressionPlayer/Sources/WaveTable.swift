@@ -5,6 +5,7 @@
 //  Created by Greg Langmead on 10/29/25.
 //
 
+import AVFAudio
 import Foundation
 
 func loadAudioSignal(audioURL: URL) -> (signal: [Float], rate: Double, frameCount: Int) {
