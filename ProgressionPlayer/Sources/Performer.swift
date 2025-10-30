@@ -5,7 +5,6 @@
 //  Created by Greg Langmead on 10/30/25.
 //
 
-
 import Foundation
 
 /// Taking data such as a MIDI note and driving a Preset to emit something in particular.
@@ -20,6 +19,61 @@ struct MidiNote {
 protocol NoteHandler {
   func noteOn(_ note: MidiNote)
   func noteOff(_ note: MidiNote)
+}
+
+// Have a collection of note-handling arrows, which we sum as our output.
+// Allocate noteOn among the voices somehow.
+class PolyVoice: Arrow11, NoteHandler {
+  // the voices, their count, and their sum arrow
+  private let voices: [Arrow11 & NoteHandler]
+  private let voiceCount: Int
+  private let sumSource: Arrow11
+  
+  // treating voices as a pool of resources
+  private var noteOnnedVoiceIdxs: Set<Int>
+  private var availableVoiceIdxs: Set<Int>
+  var noteToVoiceIdx: [MidiValue: Int]
+  
+  init(voices: [Arrow11 & NoteHandler]) {
+    self.voices = voices
+    self.voiceCount = voices.count
+    self.sumSource = arrowSum(voices)
+    
+    // mark all voices as available
+    availableVoiceIdxs = Set(0..<voices.count)
+    noteOnnedVoiceIdxs = Set<Int>()
+    noteToVoiceIdx = [:]
+    
+    weak var futureSelf: PolyVoice? = nil
+    super.init(of: { time in
+      futureSelf!.sumSource.of(time)
+    })
+    futureSelf = self
+  }
+  
+  private func takeAvailableVoice(_ note: MidiValue) -> NoteHandler? {
+    if let availableIdx = (0..<voiceCount).first(where: {
+      availableVoiceIdxs.contains($0)
+    }) {
+      availableVoiceIdxs.remove(availableIdx)
+      noteOnnedVoiceIdxs.insert(availableIdx)
+      noteToVoiceIdx[note] = availableIdx
+      return voices[availableIdx]
+    }
+    return nil
+  }
+  
+  func noteOn(_ noteVel: MidiNote) {
+    takeAvailableVoice(noteVel.note)?.noteOn(noteVel)
+  }
+  
+  func noteOff(_ noteVel: MidiNote) {
+    if let voiceIdx = noteToVoiceIdx[noteVel.note] {
+      voices[voiceIdx].noteOff(noteVel)
+      noteOnnedVoiceIdxs.remove(voiceIdx)
+      availableVoiceIdxs.insert(voiceIdx)
+    }
+  }
 }
 
 class SimpleVoice: Arrow11, NoteHandler {

@@ -17,14 +17,6 @@ struct Sequencer {
   
   private var taskQueue = DispatchQueue(label: "scape.midi")
   
-  // Meed to assign a MIDIEndpointRef or an AVAudioUnit to each track.
-  // AVAudioUnit is not the easily-available type AUAudioUnit available at AVAudioNode.auAudioUnit.
-  // MIDIEndpointRef seems to be for connected hardware, it's just an Int identifier.
-  // Maybe create an AVAudioUnitGenerator for my sound source and use that?
-  // Spotted in AudioKit: avAudioNode as? AVAudioUnit. But this cast fails for me.
-  //
-  // can i wrap my oscillators in an AVAudioUnitMIDIInstrument?
-  
   init(engine: AVAudioEngine, numTracks: Int, sourceNode: NoteHandler) {
     avSeq = AVAudioSequencer(audioEngine: engine)
     if loadExternalMidi {
@@ -34,6 +26,7 @@ struct Sequencer {
         avTracks.append(avSeq.createAndAppendTrack())
       }
     }
+    // borrowing AudioKit's MIDICallbackInstrument, which has some pretty tough incantations to allocate a midi endpoint and its MIDIEndpointRef
     seqListener = MIDICallbackInstrument(midiInputName: "Scape Virtual MIDI Listener", callback: { [self] status, note, velocity in
       print("Callback instrument was pinged with \(status) \(note) \(velocity)")
       /// We are supposed to make this very performant, hence launching things on the main thread
@@ -66,7 +59,7 @@ struct Sequencer {
     avSeq.stop()
   }
   
-  func testListener(chord: [MidiValue]) {
+  func sendChord(chord: [MidiValue]) {
     avSeq.stop()
     avSeq.currentPositionInBeats = 0
     if !loadExternalMidi {

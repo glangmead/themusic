@@ -28,6 +28,7 @@ import SwiftUI
 ///   - amplitude envelope
 ///   - frequency
 ///   - modulation of frequency
+///   - no nontrivial mixing, we just sum these to obtain polyphony
 ///
 /// AVAudioUnitEffect nodes need some way to be modulated by an LFO, or so I am saying.
 ///   - AVAudioUnitDelay
@@ -60,6 +61,13 @@ import SwiftUI
 ///   - Compile-time wires and runtime wires?
 ///
 /// Something should be called a Patch aka Preset. This would be a complete polyphonic instrument including all effects and spatialization?
+///
+/// Possible next steps:
+///   - Polyphony from the sequencer with a single arrow
+///   - make a few Patches
+///   - get two Presets to move spatially differently
+///   - stand up a Wavetable
+///   - get the list of chords going again
 
 class Arrow11 {
   var of: (Double) -> Double

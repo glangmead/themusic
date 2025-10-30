@@ -15,6 +15,7 @@ struct ArrowView: View {
   let engine: MyAudioEngine
   var sampleRate: Double
   let voices: [SimpleVoice]
+  let polyVoice: PolyVoice
   let sumSource: Arrow11
   let midiChord: [MidiValue] = [60, 64, 67]
   let seq: Sequencer
@@ -34,10 +35,10 @@ struct ArrowView: View {
     //    let lfoSource = WaveOscillator(waveForm: SineWaveForm())
     //    lfoSource.setFrequency(1.0)
     //    let vibratoSource = ComposeSource(outer: sumSource, inner: lfoSource)
-    
+    polyVoice = PolyVoice(voices: voices)
     engine = MyAudioEngine(sumSource)
     sampleRate = engine.sampleRate
-    seq = Sequencer(engine: engine.audioEngine, numTracks: 1, sourceNode: voices[0])
+    seq = Sequencer(engine: engine.audioEngine, numTracks: 1, sourceNode: polyVoice)
   }
   
   var body: some View {
@@ -59,7 +60,7 @@ struct ArrowView: View {
     Button("Sequencer") {
       do {
         try engine.start()
-        seq.testListener(chord: midiChord)
+        seq.sendChord(chord: midiChord)
       } catch {
         print("engine failed")
       }
