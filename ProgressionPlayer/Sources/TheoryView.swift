@@ -15,15 +15,21 @@ struct ArrowView: View {
   let engine: MyAudioEngine
   var sampleRate: Double
   let voices: [SimpleVoice]
+  let presets: [Preset]
+  let voiceMixerNodes: [AVAudioMixerNode]
   let polyVoice: PolyVoice
   let sumSource: Arrow11
-  let midiChord: [MidiValue] = [60, 64, 67]
+  let midiChord: [MidiValue] = [60, 64, 67, 71]
   let seq: Sequencer
   
   init() {
     voices = midiChord.map { _ in
       SimpleVoice(
-        oscillator: VariableMult(factor: 440.0, arrow: Sawtooth),
+        oscillator: ModulatedPreMult(
+          factor: 440.0,
+          arrow: Square,
+          modulation: Sine
+        ),
         filter: ADSR(envelope: EnvelopeData(
           attackTime: 0.2,
           decayTime: 0.0,
@@ -31,14 +37,22 @@ struct ArrowView: View {
           releaseTime: 0.2))
       )
     }
-    sumSource = arrowSum(voices)
-    //    let lfoSource = WaveOscillator(waveForm: SineWaveForm())
-    //    lfoSource.setFrequency(1.0)
-    //    let vibratoSource = ComposeSource(outer: sumSource, inner: lfoSource)
     polyVoice = PolyVoice(voices: voices)
-    engine = MyAudioEngine(sumSource)
+    sumSource = arrowSum(voices) // unused now
+    presets = voices.map { Preset(sound: $0) }
+    let engine = MyAudioEngine() // local var so as not to reference self
     sampleRate = engine.sampleRate
+    voiceMixerNodes = presets.map { $0.buildChainAndGiveOutputNode(forEngine: engine.audioEngine) }
+    let envNode = AVAudioEnvironmentNode()
+    engine.audioEngine.attach(envNode)
+    let mono = AVAudioFormat(standardFormatWithSampleRate: sampleRate, channels: 1)
+    for voiceMixerNode in voiceMixerNodes {
+      engine.audioEngine.connect(voiceMixerNode, to: envNode, format: mono)
+    }
+    engine.audioEngine.connect(envNode, to: engine.audioEngine.outputNode, format: nil)
+    // the sequencer will pluck on the arrows
     seq = Sequencer(engine: engine.audioEngine, numTracks: 1, sourceNode: polyVoice)
+    self.engine = engine
   }
   
   var body: some View {
@@ -66,7 +80,17 @@ struct ArrowView: View {
       }
     }
     Button("Move it") {
-      engine.moveIt()
+      let deltas = [
+        ( 0.1,  0.1, 0),
+        (-0.1, -0.1, 0),
+        ( 0.1, -0.1, 0),
+        (-0.1,  0.1, 0)
+      ]
+      for (mixerNode, delta) in zip(voiceMixerNodes, deltas) {
+        mixerNode.position.x += Float(delta.0)
+        mixerNode.position.y += Float(delta.1)
+        mixerNode.position.z += Float(delta.2)
+      }
     }
   }
 }

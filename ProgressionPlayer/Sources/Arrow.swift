@@ -63,7 +63,7 @@ import SwiftUI
 /// Something should be called a Patch aka Preset. This would be a complete polyphonic instrument including all effects and spatialization?
 ///
 /// Possible next steps:
-///   - Polyphony from the sequencer with a single arrow
+///   ✓ Polyphony from the sequencer with a single arrow
 ///   - make a few Patches
 ///   - get two Presets to move spatially differently
 ///   - stand up a Wavetable

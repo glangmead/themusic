@@ -77,11 +77,11 @@ class PolyVoice: Arrow11, NoteHandler {
 }
 
 class SimpleVoice: Arrow11, NoteHandler {
-  private let oscillator: VariableMult
+  private var oscillator: HasFactor & Arrow11
   private let filter: NoteHandler & Arrow21
   private var amplitude: Double = 0.0 // Controls the current loudness of the voice
   
-  init(oscillator: VariableMult, filter: NoteHandler & Arrow21) {
+  init(oscillator: HasFactor & Arrow11, filter: NoteHandler & Arrow21) {
     self.oscillator = oscillator
     self.filter = filter
     weak var futureSelf: SimpleVoice? = nil
