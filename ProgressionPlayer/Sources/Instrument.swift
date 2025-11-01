@@ -24,8 +24,16 @@ let Sawtooth = Arrow11(of: { x in
 })
 
 let Square = Arrow11(of: { x in
-  fmod(x, 1) <= 0.5 ? 10 : -1.0
+  fmod(x, 1) <= 0.5 ? 1.0 : -1.0
 })
+
+// see https://en.wikipedia.org/wiki/Rose_(mathematics)
+func Rose(leafFactor k: Double, frequency freq: Double, startingPhase sp: Double) -> Arrow13 {
+  Arrow13(of: { x in
+    let domain = (freq * x) + sp
+    return ( cos(k * domain) * cos(domain), cos(k * domain) * sin(domain), sin(domain) )
+  })
+}
 
 protocol HasFactor {
   var factor: Double { get set }

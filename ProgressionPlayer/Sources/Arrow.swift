@@ -69,6 +69,13 @@ import SwiftUI
 ///   - stand up a Wavetable
 ///   - get the list of chords going again
 
+class Arrow10 {
+  var of: (Double) -> ()
+  init(of: @escaping (Double) -> ()) {
+    self.of = of
+  }
+}
+
 class Arrow11 {
   var of: (Double) -> Double
   init(of: @escaping (Double) -> Double) {
@@ -83,6 +90,20 @@ class Arrow11 {
 class Arrow21 {
   var of: (Double, Double) -> Double
   init(of: @escaping (Double, Double) -> Double) {
+    self.of = of
+  }
+}
+
+class Arrow13 {
+  var of: (Double) -> (Double, Double, Double)
+  init(of: @escaping (Double) -> (Double, Double, Double)) {
+    self.of = of
+  }
+}
+
+class Arrow12 {
+  var of: (Double) -> (Double, Double)
+  init(of: @escaping (Double) -> (Double, Double)) {
     self.of = of
   }
 }
@@ -109,3 +130,11 @@ func arrowConst(_ val: Double) -> Arrow11 {
   return Arrow11(of: { _ in return val })
 }
 
+func arrowWithSidecars(arr: Arrow11, sidecars: [Arrow10]) -> Arrow11 {
+  return Arrow11(of: { x in
+    for sidecar in sidecars {
+      sidecar.of(x)
+    }
+    return arr.of(x)
+  })
+}

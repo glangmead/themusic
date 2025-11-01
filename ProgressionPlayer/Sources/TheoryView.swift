@@ -19,16 +19,28 @@ struct ArrowView: View {
   let voiceMixerNodes: [AVAudioMixerNode]
   let polyVoice: PolyVoice
   let sumSource: Arrow11
-  let midiChord: [MidiValue] = [60, 64, 67, 71]
+  let midiChord: [MidiValue] = [60, 57]//, 67, 71]
   let seq: Sequencer
   
   init() {
-    voices = midiChord.map { _ in
+    voices = [
       SimpleVoice(
         oscillator: ModulatedPreMult(
           factor: 440.0,
-          arrow: Square,
-          modulation: Sine
+          arrow: Sawtooth,
+          modulation: arrowConst(1.0)
+        ),
+        filter: ADSR(envelope: EnvelopeData(
+          attackTime: 0.2,
+          decayTime: 0.0,
+          sustainLevel: 1.0,
+          releaseTime: 0.2))
+      ),
+      SimpleVoice(
+        oscillator: ModulatedPreMult(
+          factor: 440.0,
+          arrow: Sawtooth,
+          modulation: arrowConst(1.0)
         ),
         filter: ADSR(envelope: EnvelopeData(
           attackTime: 0.2,
@@ -36,10 +48,15 @@ struct ArrowView: View {
           sustainLevel: 1.0,
           releaseTime: 0.2))
       )
-    }
+    ]
     polyVoice = PolyVoice(voices: voices)
     sumSource = arrowSum(voices) // unused now
     presets = voices.map { Preset(sound: $0) }
+    var roseAmount = 1.0
+    for preset in presets {
+      preset.positionLFO = Rose(leafFactor: roseAmount + 1, frequency: 0.5, startingPhase: roseAmount * 2 * .pi / Double(presets.count))
+      roseAmount += 1.0
+    }
     let engine = MyAudioEngine() // local var so as not to reference self
     sampleRate = engine.sampleRate
     voiceMixerNodes = presets.map { $0.buildChainAndGiveOutputNode(forEngine: engine.audioEngine) }
