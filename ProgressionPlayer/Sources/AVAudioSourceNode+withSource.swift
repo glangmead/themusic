@@ -28,11 +28,9 @@ extension AVAudioSourceNode {
       
       // Loop through each frame (sample) that the audio engine is requesting.
       for frameDelta in 0..<Int(frameCount) {
-        // Get the next amplitude sample from our custom WaveOscillator.
-        // Our oscillator produces Double values between -1.0 and 1.0.
-        //let sample = source.nextSample()
         let sample = source.of((framePos + Double(frameDelta))/sampleRate)
         //print("\(sample)")
+
         // For a stereo sound, there would be two buffers (left and right channels).
         // For a mono sound, typically one buffer.
         for buffer in ablPointer {

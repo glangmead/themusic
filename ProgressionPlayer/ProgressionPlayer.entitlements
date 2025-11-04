@@ -4,5 +4,7 @@
 <dict>
 	<key>com.apple.developer.coremotion.head-pose</key>
 	<true/>
+	<key>com.apple.developer.spatial-audio.profile-access</key>
+	<true/>
 </dict>
 </plist>

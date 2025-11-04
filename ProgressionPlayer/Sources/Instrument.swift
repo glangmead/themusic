@@ -31,7 +31,7 @@ let Square = Arrow11(id: "Square", of: { x in
 func Rose(leafFactor k: Double, frequency freq: Double, startingPhase sp: Double) -> Arrow13 {
   Arrow13(id: "Rose_\(k)_\(freq)_\(sp)", of: { x in
     let domain = (freq * x) + sp
-    return ( cos(k * domain) * cos(domain), cos(k * domain) * sin(domain), sin(domain) )
+    return ( 0/*cos(k * domain) * cos(domain)*/, 3 * cos(k * domain)/* * sin(domain)*/, sin(domain) )
   })
 }
 

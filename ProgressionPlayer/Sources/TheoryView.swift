@@ -14,9 +14,10 @@ struct TheoryView: View {
   var sampleRate: Double
   let voices: [SimpleVoice]
   let presets: [Preset]
-  let voiceMixerNodes: [AVAudioMixerNode]
+  let voiceMixerNodes: [AVAudioNode]
   let polyVoice: PolyVoice
   let seq: Sequencer
+  let envNode = AVAudioEnvironmentNode()
   
   @State private var key = Key.C
   @State private var instrument = Sawtooth
@@ -77,26 +78,27 @@ struct TheoryView: View {
     polyVoice = PolyVoice(voices: voices)
     
     presets = voices.map { Preset(sound: $0) }
+    
+    // animate the voices with various Roses
     var roseAmount = 1.0
     for preset in presets {
-      preset.positionLFO = Rose(leafFactor: roseAmount + 1, frequency: 0.5, startingPhase: roseAmount * 2 * .pi / Double(presets.count))
-      roseAmount += 1.0
+      preset.positionLFO = Rose(leafFactor: roseAmount + 1, frequency: 2, startingPhase: roseAmount * 2 * .pi / Double(presets.count))
+      //roseAmount += 1.0 
     }
     
     let engine = MyAudioEngine() // local var so as not to reference self
     sampleRate = engine.sampleRate
-    let envNode = AVAudioEnvironmentNode()
-    engine.audioEngine.attach(envNode)
     let mono = AVAudioFormat(standardFormatWithSampleRate: sampleRate, channels: 1)
-    //let stereo = AVAudioFormat(standardFormatWithSampleRate: sampleRate, channels: 2)
+    let stereo = AVAudioFormat(standardFormatWithSampleRate: sampleRate, channels: 2)
 
     voiceMixerNodes = presets.map { $0.buildChainAndGiveOutputNode(forEngine: engine.audioEngine) }
+    engine.audioEngine.attach(envNode)
     for voiceMixerNode in voiceMixerNodes {
       engine.audioEngine.connect(voiceMixerNode, to: envNode, format: mono)
+      //voiceMixerNode.pointSourceInHeadMode = .mono
     }
-    engine.audioEngine.connect(envNode, to: engine.audioEngine.outputNode, format: nil)
+    engine.audioEngine.connect(envNode, to: engine.audioEngine.mainMixerNode, format: mono)
     do {
-      engine.audioEngine.prepare()
       try engine.start()
     } catch {
       print("engine failed")
@@ -104,10 +106,10 @@ struct TheoryView: View {
     self.engine = engine
 
     envNode.renderingAlgorithm = .HRTFHQ
-    envNode.isListenerHeadTrackingEnabled = true
+    envNode.outputType = .auto
+    envNode.isListenerHeadTrackingEnabled = false
     envNode.listenerPosition = AVAudio3DPoint(x: 0, y: 0, z: 0)
-    envNode.listenerAngularOrientation = AVAudio3DAngularOrientation(yaw: 0, pitch: 0, roll: 0)
-    envNode.reverbParameters.loadFactoryReverbPreset(.largeChamber)
+    envNode.listenerVectorOrientation = AVAudio3DVectorOrientation(forward: AVAudio3DVector(x: 0.0, y: -1.0, z: 1.0), up: AVAudio3DVector(x: 0.0, y: 0.0, z: 1.0))
 
     // the sequencer will pluck on the arrows
     self.seq = Sequencer(engine: engine.audioEngine, numTracks: 1, sourceNode: polyVoice)
@@ -151,13 +153,6 @@ struct TheoryView: View {
       seq.stop()
     }
   }
-  
-//  static func demoTrackFor(chord: Chord, inTrack: AVMusicTrack) {
-//    inTrack.lengthInBeats = 4
-//    chord.pitches(octave: 3).forEach { pitch in
-//      inTrack.addEvent(AVMIDINoteEvent(channel: 0, key: UInt32(pitch.midiNoteNumber), velocity: 128, duration: 2), at: 0)
-//    }
-//  }
 }
 
 #Preview {

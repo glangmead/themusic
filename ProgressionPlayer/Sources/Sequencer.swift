@@ -82,14 +82,14 @@ struct Sequencer {
       // AVMusicTimeStamp: a fractional number of beats
       var i = 0
       for note in chord {
-        seqTrack.addEvent(AVMIDINoteEvent(channel: 0, key: UInt32(note), velocity: 100, duration: 2), at: AVMusicTimeStamp(i))
-        seqTrack.addEvent(AVMIDINoteEvent(channel: 0, key: UInt32(note), velocity: 100, duration: 2), at: AVMusicTimeStamp(i + 4))
-        seqTrack.addEvent(AVMIDINoteEvent(channel: 0, key: UInt32(note), velocity: 100, duration: 2), at: AVMusicTimeStamp(i + 8))
-        seqTrack.addEvent(AVMIDINoteEvent(channel: 0, key: UInt32(note), velocity: 100, duration: 2), at: AVMusicTimeStamp(i + 12))
-        seqTrack.addEvent(AVMIDINoteEvent(channel: 0, key: UInt32(note), velocity: 100, duration: 2), at: AVMusicTimeStamp(i + 16))
-        seqTrack.addEvent(AVMIDINoteEvent(channel: 0, key: UInt32(note), velocity: 100, duration: 2), at: AVMusicTimeStamp(i + 20))
-        seqTrack.addEvent(AVMIDINoteEvent(channel: 0, key: UInt32(note), velocity: 100, duration: 2), at: AVMusicTimeStamp(i + 24))
-        seqTrack.addEvent(AVMIDINoteEvent(channel: 0, key: UInt32(note), velocity: 100, duration: 2), at: AVMusicTimeStamp(i + 28))
+        seqTrack.addEvent(AVMIDINoteEvent(channel: 0, key: UInt32(note), velocity: 100, duration: 3), at: AVMusicTimeStamp(i))
+        seqTrack.addEvent(AVMIDINoteEvent(channel: 0, key: UInt32(note), velocity: 100, duration: 3), at: AVMusicTimeStamp(i + 4))
+        seqTrack.addEvent(AVMIDINoteEvent(channel: 0, key: UInt32(note), velocity: 100, duration: 3), at: AVMusicTimeStamp(i + 8))
+        seqTrack.addEvent(AVMIDINoteEvent(channel: 0, key: UInt32(note), velocity: 100, duration: 3), at: AVMusicTimeStamp(i + 12))
+        seqTrack.addEvent(AVMIDINoteEvent(channel: 0, key: UInt32(note), velocity: 100, duration: 3), at: AVMusicTimeStamp(i + 16))
+        seqTrack.addEvent(AVMIDINoteEvent(channel: 0, key: UInt32(note), velocity: 100, duration: 3), at: AVMusicTimeStamp(i + 20))
+        seqTrack.addEvent(AVMIDINoteEvent(channel: 0, key: UInt32(note), velocity: 100, duration: 3), at: AVMusicTimeStamp(i + 24))
+        seqTrack.addEvent(AVMIDINoteEvent(channel: 0, key: UInt32(note), velocity: 100, duration: 3), at: AVMusicTimeStamp(i + 28))
 //        seqTrack.addEvent(AVMIDINoteEvent(channel: 0, key: UInt32(note), velocity: 100, duration: 2), at: AVMusicTimeStamp(i + 32))
 //        seqTrack.addEvent(AVMIDINoteEvent(channel: 0, key: UInt32(note), velocity: 100, duration: 2), at: AVMusicTimeStamp(i + 36))
 //        seqTrack.addEvent(AVMIDINoteEvent(channel: 0, key: UInt32(note), velocity: 100, duration: 2), at: AVMusicTimeStamp(i + 40))

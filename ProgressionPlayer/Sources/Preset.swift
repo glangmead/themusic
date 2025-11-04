@@ -18,9 +18,9 @@ class InstrumentWithAVAudioUnitEffects {
   var sourceNode: AVAudioSourceNode? = nil
   var reverbNode = AVAudioUnitReverb()
   var mixerNode = AVAudioMixerNode()
-  var delayNode = AVAudioUnitDelay()
-  var distortionNode = AVAudioUnitDistortion()
-  var eqNode = AVAudioUnitEQ()
+//  var delayNode = AVAudioUnitDelay()
+//  var distortionNode = AVAudioUnitDistortion()
+//  var eqNode = AVAudioUnitEQ()
   var lastTimeWeSetPosition = 0.0
   let setPositionMinWaitTime = 10.0 / 44100.0 // every 10 frames is often enough
   
@@ -42,13 +42,15 @@ class InstrumentWithAVAudioUnitEffects {
     }
   }
   
-  func buildChainAndGiveOutputNode(forEngine engine: AVAudioEngine) -> AVAudioMixerNode {
+  func buildChainAndGiveOutputNode(forEngine engine: AVAudioEngine) -> AVAudioNode {
     let sampleRate = engine.outputNode.inputFormat(forBus: 0).sampleRate
+    let mono = AVAudioFormat(standardFormatWithSampleRate: sampleRate, channels: 1)
     let setPositionArrow = Arrow10(id: "SetPosition", of: { x in self.setPosition(x) })
     sourceNode = AVAudioSourceNode.withSource(
       source: arrowWithSidecars(arr: sound, sidecars: [setPositionArrow]),
       sampleRate: sampleRate)
     reverbNode.loadFactoryPreset(.largeChamber)
+    reverbNode.wetDryMix = 50
     engine.attach(sourceNode!)
     engine.attach(reverbNode)
     engine.attach(mixerNode)
@@ -66,36 +68,11 @@ typealias Preset = InstrumentWithAVAudioUnitEffects
 
 class MyAudioEngine {
   let audioEngine = AVAudioEngine()
-  private let envNode = AVAudioEnvironmentNode() // deprecated
-  private let mixerNode = AVAudioMixerNode() // deprecated
-  private var reverbNode = AVAudioUnitReverb() // deprecated
-  var sourceNode: AVAudioSourceNode? = nil // deprecated
   
   // We grab the system's sample rate directly from the output node
   // to ensure our oscillator runs at the correct speed for the hardware.
   var sampleRate: Double {
     audioEngine.outputNode.inputFormat(forBus: 0).sampleRate
-  }
-  
-  init() {} // version that doesn't wrap a fixed Arrow, which was an early testing paradigm
-  
-  // deprecated
-  init(_ source: Arrow11) {
-    // Initialize WaveOscillator with the system's sample rate
-    // and our SineWaveForm.
-    let source = source
-    
-    sourceNode = AVAudioSourceNode.withSource(source: source, sampleRate: audioEngine.outputNode.inputFormat(forBus: 0).sampleRate)
-    let mono = AVAudioFormat(standardFormatWithSampleRate: sampleRate, channels: 1)
-    
-    audioEngine.attach(sourceNode!)
-    audioEngine.attach(envNode)
-    audioEngine.attach(mixerNode)
-    audioEngine.attach(reverbNode)
-    audioEngine.connect(sourceNode!, to: reverbNode, format: nil)
-    audioEngine.connect(reverbNode, to: mixerNode, format: nil)
-    audioEngine.connect(mixerNode, to: envNode, format: mono)
-    audioEngine.connect(envNode, to: audioEngine.outputNode, format: nil)
   }
   
   func start() throws {
@@ -104,18 +81,9 @@ class MyAudioEngine {
     
     // And then, start the engine! This is the moment the sound begins to play.
     try audioEngine.start()
-    envNode.renderingAlgorithm = .HRTFHQ // deprecated
-    envNode.isListenerHeadTrackingEnabled = true // deprecated
-    envNode.position = AVAudio3DPoint(x: 0, y: 1, z: 1) // deprecated
   }
   
   func stop() {
     audioEngine.stop()
-  }
-  
-  // deprecated
-  func moveIt() {
-    mixerNode.position.x += 0.1
-    mixerNode.position.y -= 0.1
   }
 }
