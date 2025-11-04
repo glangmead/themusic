@@ -44,10 +44,11 @@ class InstrumentWithAVAudioUnitEffects {
   
   func buildChainAndGiveOutputNode(forEngine engine: AVAudioEngine) -> AVAudioMixerNode {
     let sampleRate = engine.outputNode.inputFormat(forBus: 0).sampleRate
-    let setPositionArrow = Arrow10(of: { x in self.setPosition(x) })
+    let setPositionArrow = Arrow10(id: "SetPosition", of: { x in self.setPosition(x) })
     sourceNode = AVAudioSourceNode.withSource(
       source: arrowWithSidecars(arr: sound, sidecars: [setPositionArrow]),
       sampleRate: sampleRate)
+    reverbNode.loadFactoryPreset(.largeChamber)
     engine.attach(sourceNode!)
     engine.attach(reverbNode)
     engine.attach(mixerNode)

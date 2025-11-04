@@ -45,7 +45,7 @@ class PolyVoice: Arrow11, NoteHandler {
     noteToVoiceIdx = [:]
     
     weak var futureSelf: PolyVoice? = nil
-    super.init(of: { time in
+    super.init(id: "PolyVoice", of: { time in
       futureSelf!.sumSource.of(time)
     })
     futureSelf = self
@@ -77,15 +77,15 @@ class PolyVoice: Arrow11, NoteHandler {
 }
 
 class SimpleVoice: Arrow11, NoteHandler {
-  private var oscillator: HasFactor & Arrow11
-  private let filter: NoteHandler & Arrow21
-  private var amplitude: Double = 0.0 // Controls the current loudness of the voice
+  var oscillator: HasFactor & Arrow11
+  let filter: NoteHandler & Arrow21
+  var amplitude: Double = 0.0 // Controls the current loudness of the voice
   
   init(oscillator: HasFactor & Arrow11, filter: NoteHandler & Arrow21) {
     self.oscillator = oscillator
     self.filter = filter
     weak var futureSelf: SimpleVoice? = nil
-    super.init(of: { time in
+    super.init(id: "SimpleVoice", of: { time in
       // If the amplitude is zero, the voice is effectively off, so we return silence.
       guard futureSelf!.amplitude > 0.0 else {
         return 0.0

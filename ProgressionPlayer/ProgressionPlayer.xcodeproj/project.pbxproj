@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9B0738E92E96DD130003D251 /* D_Loop_01.mid in Resources */ = {isa = PBXBuildFile; fileRef = 9B0738E82E96DD130003D251 /* D_Loop_01.mid */; };
 		9B1864642E772E37006147D8 /* Overture in Frameworks */ = {isa = PBXBuildFile; productRef = 9B1864632E772E37006147D8 /* Overture */; };
+		9B1F01702EB95F0A00C5110F /* Note.icon in Resources */ = {isa = PBXBuildFile; fileRef = 9B1F016F2EB95F0A00C5110F /* Note.icon */; };
 		9B6563CE2EB3D56400338E85 /* IdentifiedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 9B6563CD2EB3D56400338E85 /* IdentifiedCollections */; };
 		9BA522562EB0FE8F00ECF215 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9BA522552EB0FE8F00ECF215 /* AudioKit */; };
 		9BD1B7002E8B08D000C718F1 /* Tonic in Frameworks */ = {isa = PBXBuildFile; productRef = 9BD1B6FF2E8B08D000C718F1 /* Tonic */; };
@@ -34,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		9B0738E82E96DD130003D251 /* D_Loop_01.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = D_Loop_01.mid; sourceTree = "<group>"; };
+		9B1F016F2EB95F0A00C5110F /* Note.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = Note.icon; sourceTree = "<group>"; };
 		9BA522572EB10D1C00ECF215 /* ProgressionPlayer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ProgressionPlayer-Info.plist"; sourceTree = "<group>"; };
 		9BC0FCA72E704EA900472A5A /* ProgressionPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProgressionPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC0FCB42E704EAA00472A5A /* ProgressionPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProgressionPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +111,7 @@
 				9BC0FCD42E7055FE00472A5A /* Frameworks */,
 				9BC0FCA82E704EA900472A5A /* Products */,
 				9BFFD97E2E7DA94B00E7CB55 /* beat.aiff */,
+				9B1F016F2EB95F0A00C5110F /* Note.icon */,
 			);
 			sourceTree = "<group>";
 		};
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BFFD97F2E7DA94B00E7CB55 /* beat.aiff in Resources */,
+				9B1F01702EB95F0A00C5110F /* Note.icon in Resources */,
 				9B0738E92E96DD130003D251 /* D_Loop_01.mid in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,8 +446,9 @@
 		9BC0FCC92E704EAA00472A5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = Note;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = ProgressionPlayer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -472,8 +477,9 @@
 		9BC0FCCA2E704EAA00472A5A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = Note;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = ProgressionPlayer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

@@ -14,6 +14,7 @@ class EngineerPlayer {
   let engine = AVAudioEngine()
   let player = AVAudioPlayerNode()
   let mixer = AVAudioMixerNode()
+  let reverb = AVAudioUnitReverb()
   let environmentalNode = AVAudioEnvironmentNode()
   
   init(_ inUrl: URL?) throws {
@@ -21,18 +22,20 @@ class EngineerPlayer {
       let audioFile = try AVAudioFile(forReading: url)
       let mono = AVAudioFormat(standardFormatWithSampleRate: audioFile.processingFormat.sampleRate, channels: 1)
       let stereo = AVAudioFormat(standardFormatWithSampleRate: audioFile.processingFormat.sampleRate, channels: 2)
-      
+      reverb.loadFactoryPreset(.largeHall2)
       engine.attach(player)
       engine.attach(mixer)
       engine.attach(environmentalNode)
-      engine.connect(player, to: mixer, format: mono)
+      engine.attach(reverb)
+      engine.connect(player, to: reverb, format: nil)
+      engine.connect(reverb, to: mixer, format: nil)
       engine.connect(mixer, to: environmentalNode, format: mono)
       engine.connect(environmentalNode, to: engine.mainMixerNode, format: stereo)
       engine.prepare()
       try engine.start()
       print(engine)
       
-      environmentalNode.renderingAlgorithm = .HRTFHQ
+      environmentalNode.renderingAlgorithm = .auto
       environmentalNode.isListenerHeadTrackingEnabled = true
       
       mixer.pointSourceInHeadMode = .mono
@@ -63,7 +66,7 @@ struct SpatialView: View {
     
   var body: some View {
     Button("Stop") {
-      music2.player.stop()
+      music2.player.pause()
     }
     Button("Start") {
       music2.player.play()

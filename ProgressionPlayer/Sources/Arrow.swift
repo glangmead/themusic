@@ -69,17 +69,32 @@ import SwiftUI
 ///   - stand up a Wavetable
 ///   - get the list of chords going again
 
-class Arrow10 {
-  var of: (Double) -> ()
-  init(of: @escaping (Double) -> ()) {
-    self.of = of
+class UniqueName: Hashable, Equatable, Identifiable {
+  var id: String
+  init(id: String) {
+    self.id = id
+  }
+  func hash(into: inout Hasher) {
+    return id.hash(into: &into)
+  }
+  static func ==(_ lhs: UniqueName, _ rhs: UniqueName) -> Bool {
+    return lhs.id == rhs.id
   }
 }
 
-class Arrow11 {
-  var of: (Double) -> Double
-  init(of: @escaping (Double) -> Double) {
+class Arrow10: UniqueName {
+  var of: (Double) -> ()
+  init(id: String, of: @escaping (Double) -> ()) {
     self.of = of
+    super.init(id: id)
+  }
+}
+
+class Arrow11: UniqueName {
+  var of: (Double) -> Double
+  init(id: String, of: @escaping (Double) -> Double) {
+    self.of = of
+    super.init(id: id)
   }
 }
 
@@ -87,51 +102,56 @@ class Arrow11 {
 //  func sample(at time: Double) -> Double
 //}
 
-class Arrow21 {
+class Arrow21: UniqueName {
   var of: (Double, Double) -> Double
-  init(of: @escaping (Double, Double) -> Double) {
+  init(id: String, of: @escaping (Double, Double) -> Double) {
     self.of = of
+    super.init(id: id)
   }
 }
 
-class Arrow13 {
+class Arrow13: UniqueName {
   var of: (Double) -> (Double, Double, Double)
-  init(of: @escaping (Double) -> (Double, Double, Double)) {
+  init(id: String, of: @escaping (Double) -> (Double, Double, Double)) {
     self.of = of
+    super.init(id: id)
   }
 }
 
-class Arrow12 {
+class Arrow12: UniqueName {
   var of: (Double) -> (Double, Double)
-  init(of: @escaping (Double) -> (Double, Double)) {
+  init(id: String, of: @escaping (Double) -> (Double, Double)) {
     self.of = of
+    super.init(id: id)
   }
 }
 
 func arrowPlus(a: Arrow11, b: Arrow11) -> Arrow11 {
-  return Arrow11(of: { a.of($0) + b.of($0) })
+  return Arrow11(id: "\(a.id) + \(b.id)", of: { a.of($0) + b.of($0) })
 }
 
 func arrowSum(_ arrows: [Arrow11]) -> Arrow11 {
-  return Arrow11(of: { x in
+  let id = arrows.map({$0.id}).joined(separator: " + ")
+  return Arrow11(id: id, of: { x in
     arrows.map({$0.of(x)}).reduce(0, +)
   } )
 }
 
 func arrowTimes(a: Arrow11, b: Arrow11) -> Arrow11 {
-  return Arrow11(of: { a.of($0) * b.of($0) })
+  return Arrow11(id: "\(a.id) x \(b.id)", of: { a.of($0) * b.of($0) })
 }
 
 func arrowCompose(outer: Arrow11, inner: Arrow11) -> Arrow11 {
-  return Arrow11(of: { outer.of(inner.of($0)) })
+  return Arrow11(id: "(\(outer.id) o \(inner.id))", of: { outer.of(inner.of($0)) })
 }
 
 func arrowConst(_ val: Double) -> Arrow11 {
-  return Arrow11(of: { _ in return val })
+  return Arrow11(id: "const(\(val))", of: { _ in return val })
 }
 
 func arrowWithSidecars(arr: Arrow11, sidecars: [Arrow10]) -> Arrow11 {
-  return Arrow11(of: { x in
+  let id = "arr(" + sidecars.map({$0.id}).joined(separator: ",") + ")"
+  return Arrow11(id: id, of: { x in
     for sidecar in sidecars {
       sidecar.of(x)
     }
