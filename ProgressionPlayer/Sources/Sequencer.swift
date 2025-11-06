@@ -81,7 +81,6 @@ struct Sequencer {
       seqTrack.lengthInBeats = 32
       // AVMusicTimeStamp: a fractional number of beats
       for note in chord {
-        print("\(note)")
         seqTrack.addEvent(AVMIDINoteEvent(channel: 0, key: UInt32(note), velocity: 100, duration: 12), at: AVMusicTimeStamp(0))
       }
     }

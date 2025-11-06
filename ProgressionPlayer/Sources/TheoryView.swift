@@ -53,15 +53,15 @@ struct TheoryView: View {
 
     voices = [
       SimpleVoice(
-        oscillator: ModulatedPreMult(factor: 440.0, arrow: Sawtooth, modulation: ControlArrow(of: PostMult(factor: 0.3/sampleRate, arrow: Sine))),
+        oscillator: ModulatedPreMult(factor: 440.0, arrow: Sawtooth, modulation: ControlArrow(of: PostMult(factor: 1.0, arrow: PreMult(factor: 5.0, arrow: Sine)))),
         filter: ADSR(envelope: EnvelopeData(attackTime: 0.2, decayTime: 0.0, sustainLevel: 1.0, releaseTime: 0.2))
       ),
       SimpleVoice(
-        oscillator: ModulatedPreMult(factor: 440.0, arrow: Sawtooth, modulation: ControlArrow(of: PostMult(factor: 0.3/sampleRate, arrow: Sine))),
+        oscillator: ModulatedPreMult(factor: 440.0, arrow: Sawtooth, modulation: ControlArrow(of: PostMult(factor: 1.0, arrow: PreMult(factor: 5.0, arrow: Sine)))),
         filter: ADSR(envelope: EnvelopeData(attackTime: 0.2, decayTime: 0.0, sustainLevel: 1.0, releaseTime: 0.2))
       ),
       SimpleVoice(
-        oscillator: ModulatedPreMult(factor: 440.0, arrow: Sawtooth, modulation: ControlArrow(of: PostMult(factor: 0.3/sampleRate, arrow: Sine))),
+        oscillator: ModulatedPreMult(factor: 440.0, arrow: Sawtooth, modulation: ControlArrow(of: PostMult(factor: 1.0, arrow: PreMult(factor: 5.0, arrow: Sine)))),
         filter: ADSR(envelope: EnvelopeData(attackTime: 0.2, decayTime: 0.0, sustainLevel: 1.0, releaseTime: 0.2))
       )
     ]

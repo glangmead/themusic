@@ -86,23 +86,17 @@ class PostMult: Arrow11, HasFactor {
 }
 
 class ModulatedPreMult: Arrow11, HasFactor {
-  var factor: Double {
-    didSet {
-      integratedFactor = factor
-    }
-  }
+  var factor: Double
   var arrow: Arrow11
   var modulation: Arrow11
-  var integratedFactor: Double
   init(factor: Double, arrow: Arrow11, modulation: Arrow11) {
     self.factor = factor
-    self.integratedFactor = factor
     self.arrow = arrow
     self.modulation = modulation
     weak var fself: ModulatedPreMult? = nil // future self
     super.init(of: { x in
-      fself!.integratedFactor += fself!.modulation.of(x)
-      return fself!.arrow.of( fself!.integratedFactor * x)
+      let result = fself!.arrow.of( (fself!.factor * x) + fself!.modulation.of(x))
+      return result
     })
     fself = self
   }
