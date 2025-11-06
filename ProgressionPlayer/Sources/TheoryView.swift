@@ -19,7 +19,8 @@ import Tonic
 struct TheoryView: View {
   let engine: MyAudioEngine
   var sampleRate: Double
-  let voices: [SimpleVoice]
+  var voices: [SimpleVoice]
+  let numVoices = 4
   let presets: [Preset]
   let voiceMixerNodes: [AVAudioNode]
   let polyVoice: PolyVoice
@@ -51,20 +52,14 @@ struct TheoryView: View {
     let engine = MyAudioEngine() // local var so as not to reference self
     sampleRate = engine.sampleRate
 
-    voices = [
-      SimpleVoice(
-        oscillator: ModulatedPreMult(factor: 440.0, arrow: Sawtooth, modulation: ControlArrow(of: PostMult(factor: 1.0, arrow: PreMult(factor: 5.0, arrow: Sine)))),
+    voices = []
+    for _ in 0..<numVoices {
+      voices.append(SimpleVoice(
+        oscillator: ModulatedPreMult(factor: 440.0, arrow: Sawtooth, modulation: ControlArrow(of: PostMult(factor: 0.0, arrow: PreMult(factor: 5.0, arrow: Sine)))) ,
         filter: ADSR(envelope: EnvelopeData(attackTime: 0.2, decayTime: 0.0, sustainLevel: 1.0, releaseTime: 0.2))
-      ),
-      SimpleVoice(
-        oscillator: ModulatedPreMult(factor: 440.0, arrow: Sawtooth, modulation: ControlArrow(of: PostMult(factor: 1.0, arrow: PreMult(factor: 5.0, arrow: Sine)))),
-        filter: ADSR(envelope: EnvelopeData(attackTime: 0.2, decayTime: 0.0, sustainLevel: 1.0, releaseTime: 0.2))
-      ),
-      SimpleVoice(
-        oscillator: ModulatedPreMult(factor: 440.0, arrow: Sawtooth, modulation: ControlArrow(of: PostMult(factor: 1.0, arrow: PreMult(factor: 5.0, arrow: Sine)))),
-        filter: ADSR(envelope: EnvelopeData(attackTime: 0.2, decayTime: 0.0, sustainLevel: 1.0, releaseTime: 0.2))
-      )
-    ]
+      ))
+    }
+
     // here we wrap the triple of voices into a PolyVoice, and we wrap each voice in a preset
     // so the preset attachment is breaking through the PolyVoice attachment
     // the PV is just combining the noteOn/noteOff inputs, whereas the Preset is pulling the voice into the Apple world
@@ -137,8 +132,6 @@ struct TheoryView: View {
       ScrollView {
         ForEach(keyChords, id: \.self) { chord in
           Button(chord.description) {
-            seq.stop()
-            seq.clear()
             seq.sendTonicChord(chord: chord)
           }
           .frame(maxWidth: .infinity)

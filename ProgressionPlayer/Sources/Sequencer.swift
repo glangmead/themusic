@@ -78,6 +78,7 @@ struct Sequencer {
     avSeq.currentPositionInBeats = 0
     if !loadExternalMidi {
       let seqTrack = avTracks[0]
+      avTracks[0].clear()
       seqTrack.lengthInBeats = 32
       // AVMusicTimeStamp: a fractional number of beats
       for note in chord {
