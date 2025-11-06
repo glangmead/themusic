@@ -48,7 +48,7 @@ class ADSR: Arrow21, NoteHandler {
         f: {$0 * -1.0 * (e.sustainLevel / e.releaseTime) + e.sustainLevel})
     ])
     weak var futureSelf: ADSR? = nil
-    super.init(id: "ADSR", of: { sample, time in
+    super.init(of: { sample, time in
       return sample * (futureSelf!.attack ? futureSelf!.attackEnv.val(Date.now.timeIntervalSince1970 - futureSelf!.timeOrigin) : futureSelf!.decayEnv.val(Date.now.timeIntervalSince1970 - futureSelf!.timeOrigin))
     })
     futureSelf = self

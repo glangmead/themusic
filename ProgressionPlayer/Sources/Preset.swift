@@ -30,7 +30,7 @@ class InstrumentWithAVAudioUnitEffects {
   
   func setPosition(_ t: Double) {
     if t > 1 { // fixes some race on startup
-      if positionLFO != nil && (mixerNode.engine?.isRunning != nil) && (mixerNode.engine!.isRunning) {
+      if positionLFO != nil {
         if (t - lastTimeWeSetPosition) > setPositionMinWaitTime {
           lastTimeWeSetPosition = t
           let (x, y, z) = positionLFO!.of(t - 1)
@@ -45,7 +45,7 @@ class InstrumentWithAVAudioUnitEffects {
   func buildChainAndGiveOutputNode(forEngine engine: AVAudioEngine) -> AVAudioNode {
     let sampleRate = engine.outputNode.inputFormat(forBus: 0).sampleRate
     let mono = AVAudioFormat(standardFormatWithSampleRate: sampleRate, channels: 1)
-    let setPositionArrow = Arrow10(id: "SetPosition", of: { x in self.setPosition(x) })
+    let setPositionArrow = Arrow10(of: { x in self.setPosition(x) })
     sourceNode = AVAudioSourceNode.withSource(
       source: arrowWithSidecars(arr: sound, sidecars: [setPositionArrow]),
       sampleRate: sampleRate)
@@ -58,7 +58,7 @@ class InstrumentWithAVAudioUnitEffects {
     //engine.attach(delayNode)
     //engine.attach(distortionNode)
     //engine.attach(eqNode)
-    engine.connect(sourceNode!, to: reverbNode, format: nil)
+    engine.connect(sourceNode!, to: reverbNode, format: mono)
     engine.connect(reverbNode, to: mixerNode, format: nil)
     return mixerNode
   }

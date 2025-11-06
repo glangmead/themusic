@@ -19,6 +19,8 @@ class EngineerPlayer {
   
   init(_ inUrl: URL?) throws {
     if let url = inUrl {
+      let audioSession = AVAudioSession.sharedInstance()
+      try! audioSession.setActive(true)
       let audioFile = try AVAudioFile(forReading: url)
       let mono = AVAudioFormat(standardFormatWithSampleRate: audioFile.processingFormat.sampleRate, channels: 1)
       let stereo = AVAudioFormat(standardFormatWithSampleRate: audioFile.processingFormat.sampleRate, channels: 2)
@@ -31,17 +33,16 @@ class EngineerPlayer {
 //      engine.connect(player, to: reverb, format: mono)
 //      engine.connect(reverb, to: mixer, format: mono)
 //      engine.connect(mixer, to: environmentalNode, format: mono)
-      engine.connect(environmentalNode, to: engine.mainMixerNode, format: mono)
+      engine.connect(environmentalNode, to: engine.mainMixerNode, format: nil)
+      engine.connect(engine.mainMixerNode, to: engine.outputNode, format: nil)
       engine.prepare()
       try engine.start()
-      print(engine)
       
-      environmentalNode.renderingAlgorithm = .HRTFHQ
+      environmentalNode.renderingAlgorithm = .soundField
       //environmentalNode.isListenerHeadTrackingEnabled = true
       
       player.pointSourceInHeadMode = .mono
-      player.position = AVAudio3DPoint(x: 0, y: 2, z: 1)
-      //player.position = AVAudio3DPoint(x: 0, y: 1, z: 1)
+      player.position = AVAudio3DPoint(x: 0, y: 10, z: 1)
       //environmentalNode.position = AVAudio3DPoint(x: 0, y: 1, z: 1)
       player.scheduleFile(audioFile, at: nil, completionHandler: nil)
     }
@@ -74,7 +75,7 @@ struct SpatialView: View {
     }
     Button("Move it") {
       //music2.player.position.x += 0.1
-      music2.player.position.y -= 0.2
+      music2.player.position.y -= 0.5
     }
     Button("Move it back") {
       //music2.player.position.x += 0.1 

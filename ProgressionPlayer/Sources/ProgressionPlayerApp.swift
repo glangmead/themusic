@@ -11,7 +11,7 @@ import SwiftUI
 struct ProgressionPlayerApp: App {
   var body: some Scene {
     WindowGroup {
-      SpatialView()
+      TheoryView()
     }
   }
 }

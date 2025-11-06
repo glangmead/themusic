@@ -9,6 +9,13 @@ import AVFAudio
 import SwiftUI
 import Tonic
 
+// the knobs i want visible here:
+// - oscillator
+// - vibrato
+// - envelope
+// - filter envelope
+// - reverb
+// -
 struct TheoryView: View {
   let engine: MyAudioEngine
   var sampleRate: Double
@@ -19,13 +26,20 @@ struct TheoryView: View {
   let seq: Sequencer
   let envNode = AVAudioEnvironmentNode()
   
+  enum Instrument: CaseIterable, Equatable, Hashable {
+    case Sawtooth
+    case Sine
+    case Square
+    case Triangle
+  }
+  
   @State private var key = Key.C
-  @State private var instrument = Sawtooth
+  @State private var instrument: Instrument = .Sawtooth
   
   var keyChords: [Chord] {
     get {
       key.chords.filter { chord in
-        chord.type == .major || chord.type == .minor || chord.type == .dim
+        chord.type == .major || chord.type == .minor || chord.type == .dim || chord.type == .dom7
       }
       .sorted {
         $0.pitches(octave: 4)[0] < $1.pitches(octave: 4)[0]
@@ -34,42 +48,21 @@ struct TheoryView: View {
   }
 
   init() {
+    let engine = MyAudioEngine() // local var so as not to reference self
+    sampleRate = engine.sampleRate
+
     voices = [
       SimpleVoice(
-        oscillator: ModulatedPreMult(
-          factor: 440.0,
-          arrow: Sawtooth,
-          modulation: arrowConst(1.0)
-        ),
-        filter: ADSR(envelope: EnvelopeData(
-          attackTime: 0.2,
-          decayTime: 0.0,
-          sustainLevel: 1.0,
-          releaseTime: 0.2))
+        oscillator: ModulatedPreMult(factor: 440.0, arrow: Sawtooth, modulation: ControlArrow(of: PostMult(factor: 0.3/sampleRate, arrow: Sine))),
+        filter: ADSR(envelope: EnvelopeData(attackTime: 0.2, decayTime: 0.0, sustainLevel: 1.0, releaseTime: 0.2))
       ),
       SimpleVoice(
-        oscillator: ModulatedPreMult(
-          factor: 440.0,
-          arrow: Sawtooth,
-          modulation: arrowConst(1.0)
-        ),
-        filter: ADSR(envelope: EnvelopeData(
-          attackTime: 0.2,
-          decayTime: 0.0,
-          sustainLevel: 1.0,
-          releaseTime: 0.2))
+        oscillator: ModulatedPreMult(factor: 440.0, arrow: Sawtooth, modulation: ControlArrow(of: PostMult(factor: 0.3/sampleRate, arrow: Sine))),
+        filter: ADSR(envelope: EnvelopeData(attackTime: 0.2, decayTime: 0.0, sustainLevel: 1.0, releaseTime: 0.2))
       ),
       SimpleVoice(
-        oscillator: ModulatedPreMult(
-          factor: 440.0,
-          arrow: Sawtooth,
-          modulation: arrowConst(1.0)
-        ),
-        filter: ADSR(envelope: EnvelopeData(
-          attackTime: 0.2,
-          decayTime: 0.0,
-          sustainLevel: 1.0,
-          releaseTime: 0.2))
+        oscillator: ModulatedPreMult(factor: 440.0, arrow: Sawtooth, modulation: ControlArrow(of: PostMult(factor: 0.3/sampleRate, arrow: Sine))),
+        filter: ADSR(envelope: EnvelopeData(attackTime: 0.2, decayTime: 0.0, sustainLevel: 1.0, releaseTime: 0.2))
       )
     ]
     // here we wrap the triple of voices into a PolyVoice, and we wrap each voice in a preset
@@ -80,24 +73,22 @@ struct TheoryView: View {
     presets = voices.map { Preset(sound: $0) }
     
     // animate the voices with various Roses
-    var roseAmount = 1.0
+    var roseAmount = 0.0
     for preset in presets {
-      preset.positionLFO = Rose(leafFactor: roseAmount + 1, frequency: 2, startingPhase: roseAmount * 2 * .pi / Double(presets.count))
-      //roseAmount += 1.0 
+      preset.positionLFO = Rose(leafFactor: roseAmount, frequency: 6, startingPhase: roseAmount * 2 * .pi / Double(presets.count))
+      roseAmount += 1.0
     }
     
-    let engine = MyAudioEngine() // local var so as not to reference self
-    sampleRate = engine.sampleRate
     let mono = AVAudioFormat(standardFormatWithSampleRate: sampleRate, channels: 1)
-    let stereo = AVAudioFormat(standardFormatWithSampleRate: sampleRate, channels: 2)
+    //let stereo = AVAudioFormat(standardFormatWithSampleRate: sampleRate, channels: 2)
 
-    voiceMixerNodes = presets.map { $0.buildChainAndGiveOutputNode(forEngine: engine.audioEngine) }
+    voiceMixerNodes = presets.map {  $0.buildChainAndGiveOutputNode(forEngine: engine.audioEngine) }
     engine.audioEngine.attach(envNode)
     for voiceMixerNode in voiceMixerNodes {
       engine.audioEngine.connect(voiceMixerNode, to: envNode, format: mono)
       //voiceMixerNode.pointSourceInHeadMode = .mono
     }
-    engine.audioEngine.connect(envNode, to: engine.audioEngine.mainMixerNode, format: mono)
+    engine.audioEngine.connect(envNode, to: engine.audioEngine.mainMixerNode, format: nil)
     do {
       try engine.start()
     } catch {
@@ -109,11 +100,10 @@ struct TheoryView: View {
     envNode.outputType = .auto
     envNode.isListenerHeadTrackingEnabled = false
     envNode.listenerPosition = AVAudio3DPoint(x: 0, y: 0, z: 0)
-    envNode.listenerVectorOrientation = AVAudio3DVectorOrientation(forward: AVAudio3DVector(x: 0.0, y: -1.0, z: 1.0), up: AVAudio3DVector(x: 0.0, y: 0.0, z: 1.0))
+    //envNode.listenerVectorOrientation = AVAudio3DVectorOrientation(forward: AVAudio3DVector(x: 0.0, y: -1.0, z: 1.0), up: AVAudio3DVector(x: 0.0, y: 0.0, z: 1.0))
 
     // the sequencer will pluck on the arrows
     self.seq = Sequencer(engine: engine.audioEngine, numTracks: 1, sourceNode: polyVoice)
-
   }
   
   var body: some View {
@@ -126,14 +116,22 @@ struct TheoryView: View {
         Text("E").tag(Key.E)
       }.pickerStyle(.segmented)
       Picker("Instrument", selection: $instrument) {
-        Text("Sine").tag(Sine)
-        Text("Square").tag(Square)
-        Text("Saw").tag(Sawtooth)
-        Text("Triangle").tag(Triangle)
+        ForEach(Instrument.allCases, id: \.self) { option in
+          Text(String(describing: option))
+        }
       }.pickerStyle(.segmented)
         .onChange(of: instrument, initial: true) {
           for voice in voices {
-            voice.oscillator.arrow = instrument
+            voice.oscillator.arrow = switch instrument {
+            case .Sawtooth:
+              Sawtooth
+            case .Sine:
+              Sine
+            case .Square:
+              Square
+            case .Triangle:
+              Triangle
+            }
           }
         }
       ScrollView {
