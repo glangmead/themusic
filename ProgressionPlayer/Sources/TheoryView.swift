@@ -20,10 +20,10 @@ struct TheoryView: View {
   let engine: MyAudioEngine
   var sampleRate: Double
   var voices: [SimpleVoice]
-  let numVoices = 4
+  let numVoices = 8
   let presets: [Preset]
   let voiceMixerNodes: [AVAudioNode]
-  let polyVoice: PolyVoice
+  let voicePool: NoteHandler
   let seq: Sequencer
   let envNode = AVAudioEnvironmentNode()
   
@@ -60,10 +60,10 @@ struct TheoryView: View {
       ))
     }
 
-    // here we wrap the triple of voices into a PolyVoice, and we wrap each voice in a preset
-    // so the preset attachment is breaking through the PolyVoice attachment
+    // here we wrap the triple of voices into a PoolVoice, and we wrap each voice in a preset
+    // so the preset attachment is breaking through the PoolVoice attachment
     // the PV is just combining the noteOn/noteOff inputs, whereas the Preset is pulling the voice into the Apple world
-    polyVoice = PolyVoice(voices: voices)
+    voicePool = PoolVoice(voices: voices)
     
     presets = voices.map { Preset(sound: $0) }
     
@@ -98,12 +98,12 @@ struct TheoryView: View {
     //envNode.listenerVectorOrientation = AVAudio3DVectorOrientation(forward: AVAudio3DVector(x: 0.0, y: -1.0, z: 1.0), up: AVAudio3DVector(x: 0.0, y: 0.0, z: 1.0))
 
     // the sequencer will pluck on the arrows
-    self.seq = Sequencer(engine: engine.audioEngine, numTracks: 1, sourceNode: polyVoice)
+    self.seq = Sequencer(engine: engine.audioEngine, numTracks: 1,  sourceNode: voicePool)
   }
   
   var body: some View {
     VStack {
-      Picker("Key", selection: $key) {
+      Picker("Key", selection: $key) { 
         Text("C").tag(Key.C)
         Text("G").tag(Key.G)
         Text("D").tag(Key.D)

@@ -21,9 +21,32 @@ protocol NoteHandler {
   func noteOff(_ note: MidiNote)
 }
 
+// A polyphonic handler that assumes it is passed UInt8's worth of arrows
+class PolyVoice: Arrow11, NoteHandler {
+  private let voices: [Arrow11 & NoteHandler]
+  private let sumSource: Arrow11
+  init(voices: [Arrow11 & NoteHandler]) {
+    self.voices = voices
+    self.sumSource = arrowSum(voices)
+    weak var fself: PolyVoice? = nil
+    super.init(of: { time in
+      fself!.sumSource.of(time)
+    })
+    fself = self
+  }
+  
+  func noteOn(_ noteVel: MidiNote) {
+    voices[Int(noteVel.note)].noteOn(noteVel)
+  }
+  
+  func noteOff(_ noteVel: MidiNote) {
+    voices[Int(noteVel.note)].noteOff(noteVel)
+  }
+}
+
 // Have a collection of note-handling arrows, which we sum as our output.
 // Allocate noteOn among the voices somehow.
-class PolyVoice: Arrow11, NoteHandler {
+class PoolVoice: Arrow11, NoteHandler {
   // the voices, their count, and their sum arrow
   private let voices: [Arrow11 & NoteHandler]
   private let voiceCount: Int
@@ -44,7 +67,7 @@ class PolyVoice: Arrow11, NoteHandler {
     noteOnnedVoiceIdxs = Set<Int>()
     noteToVoiceIdx = [:]
     
-    weak var futureSelf: PolyVoice? = nil
+    weak var futureSelf: PoolVoice? = nil
     super.init(of: { time in
       futureSelf!.sumSource.of(time)
     })
@@ -58,6 +81,7 @@ class PolyVoice: Arrow11, NoteHandler {
       availableVoiceIdxs.remove(availableIdx)
       noteOnnedVoiceIdxs.insert(availableIdx)
       noteToVoiceIdx[note] = availableIdx
+      print("ON : using voice \(availableIdx) from pool")
       return voices[availableIdx]
     }
     return nil
@@ -69,6 +93,7 @@ class PolyVoice: Arrow11, NoteHandler {
   
   func noteOff(_ noteVel: MidiNote) {
     if let voiceIdx = noteToVoiceIdx[noteVel.note] {
+      print("OFF: releasing voice \(voiceIdx)")
       voices[voiceIdx].noteOff(noteVel)
       noteOnnedVoiceIdxs.remove(voiceIdx)
       availableVoiceIdxs.insert(voiceIdx)

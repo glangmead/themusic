@@ -74,15 +74,11 @@ struct Sequencer {
   }
   
   func sendChord(chord: [MidiValue]) {
-    avSeq.stop()
-    avSeq.currentPositionInBeats = 0
     if !loadExternalMidi {
       let seqTrack = avTracks[0]
-      avTracks[0].clear()
-      seqTrack.lengthInBeats = 32
       // AVMusicTimeStamp: a fractional number of beats
       for note in chord {
-        seqTrack.addEvent(AVMIDINoteEvent(channel: 0, key: UInt32(note), velocity: 100, duration: 12), at: AVMusicTimeStamp(0))
+        seqTrack.addEvent(AVMIDINoteEvent(channel: 0, key: UInt32(note), velocity: 100, duration: 12), at: avSeq.currentPositionInBeats + 1)
       }
     }
     play()
