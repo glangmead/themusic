@@ -67,7 +67,7 @@ import SwiftUI
 ///   - make a few Patches
 ///   - get two Presets to move spatially differently
 ///   - stand up a Wavetable
-///   - get the list of chords going again
+///   ✓ get the list of chords going again
 
 class Arrow10 {
   var of: (Double) -> ()

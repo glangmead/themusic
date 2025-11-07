@@ -22,7 +22,7 @@ class InstrumentWithAVAudioUnitEffects {
 //  var distortionNode = AVAudioUnitDistortion()
 //  var eqNode = AVAudioUnitEQ()
   var lastTimeWeSetPosition = 0.0
-  let setPositionMinWaitTime = 10.0 / 44100.0 // every 10 frames is often enough
+  let setPositionMinWaitTime = 441.0 / 44100.0 // setting position is expensive, so limit how often
   
   init(sound: Arrow11) {
     self.sound = sound

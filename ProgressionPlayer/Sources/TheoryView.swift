@@ -16,6 +16,7 @@ import Tonic
 // - filter envelope
 // - reverb
 // -
+
 struct TheoryView: View {
   let engine: MyAudioEngine
   var sampleRate: Double
@@ -74,7 +75,7 @@ struct TheoryView: View {
       roseAmount += 1.0
     }
     
-    let mono = AVAudioFormat(standardFormatWithSampleRate: sampleRate, channels: 1)
+    let mono = AVAudioFormat(standardFormatWithSampleRate:  sampleRate, channels: 1)
     //let stereo = AVAudioFormat(standardFormatWithSampleRate: sampleRate, channels: 2)
 
     voiceMixerNodes = presets.map {  $0.buildChainAndGiveOutputNode(forEngine: engine.audioEngine) }
@@ -102,8 +103,8 @@ struct TheoryView: View {
   }
   
   var body: some View {
-    VStack {
-      Picker("Key", selection: $key) { 
+    NavigationStack {
+      Picker("Key", selection: $key) {
         Text("C").tag(Key.C)
         Text("G").tag(Key.G)
         Text("D").tag(Key.D)
@@ -130,15 +131,22 @@ struct TheoryView: View {
           }
         }
       ScrollView {
-        ForEach(keyChords, id: \.self) { chord in
-          Button(chord.description) {
-            seq.sendTonicChord(chord: chord)
+        LazyVGrid(
+          columns: [
+            GridItem(.adaptive(minimum: 100, maximum: .infinity))
+          ],
+          content: {
+            ForEach(keyChords, id: \.self) { chord in
+              Button(chord.description) {
+                seq.sendTonicChord(chord: chord)
+              }
+              .frame(maxWidth: .infinity)
+              .font(.largeTitle).bold()
+            }
           }
-          .frame(maxWidth: .infinity)
-          .font(.largeTitle)
-        }
+        )
       }
-      .navigationTitle("Chordata")
+      .navigationTitle("Scape")
     }
     Button("Stop") {
       seq.stop()

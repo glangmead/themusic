@@ -21,29 +21,6 @@ protocol NoteHandler {
   func noteOff(_ note: MidiNote)
 }
 
-// A polyphonic handler that assumes it is passed UInt8's worth of arrows
-class PolyVoice: Arrow11, NoteHandler {
-  private let voices: [Arrow11 & NoteHandler]
-  private let sumSource: Arrow11
-  init(voices: [Arrow11 & NoteHandler]) {
-    self.voices = voices
-    self.sumSource = arrowSum(voices)
-    weak var fself: PolyVoice? = nil
-    super.init(of: { time in
-      fself!.sumSource.of(time)
-    })
-    fself = self
-  }
-  
-  func noteOn(_ noteVel: MidiNote) {
-    voices[Int(noteVel.note)].noteOn(noteVel)
-  }
-  
-  func noteOff(_ noteVel: MidiNote) {
-    voices[Int(noteVel.note)].noteOff(noteVel)
-  }
-}
-
 // Have a collection of note-handling arrows, which we sum as our output.
 // Allocate noteOn among the voices somehow.
 class PoolVoice: Arrow11, NoteHandler {
@@ -81,19 +58,28 @@ class PoolVoice: Arrow11, NoteHandler {
       availableVoiceIdxs.remove(availableIdx)
       noteOnnedVoiceIdxs.insert(availableIdx)
       noteToVoiceIdx[note] = availableIdx
-      print("ON : using voice \(availableIdx) from pool")
+      //print(" ON: note \(note) using voice \(availableIdx) from pool")
       return voices[availableIdx]
     }
     return nil
   }
   
   func noteOn(_ noteVel: MidiNote) {
-    takeAvailableVoice(noteVel.note)?.noteOn(noteVel)
+    //print(" ON: trying \(noteVel.note)")
+    // case 1: this note is being played by a voice already: send noteOff then noteOn to re-up it
+    if let voiceIdx = noteToVoiceIdx[noteVel.note] {
+      voices[voiceIdx].noteOff(noteVel)
+      voices[voiceIdx].noteOn(noteVel)
+    // case 2: assign a fresh voice to the note
+    } else if let handler = takeAvailableVoice(noteVel.note) {
+      handler.noteOn(noteVel)
+    }
   }
   
   func noteOff(_ noteVel: MidiNote) {
+    //print("OFF: trying \(noteVel.note)")
     if let voiceIdx = noteToVoiceIdx[noteVel.note] {
-      print("OFF: releasing voice \(voiceIdx)")
+      //print("OFF: note \(noteVel.note) releasing voice \(voiceIdx)")
       voices[voiceIdx].noteOff(noteVel)
       noteOnnedVoiceIdxs.remove(voiceIdx)
       availableVoiceIdxs.insert(voiceIdx)
