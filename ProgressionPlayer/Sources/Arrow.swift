@@ -74,12 +74,28 @@ class Arrow10 {
   init(of: @escaping (Double) -> ()) {
     self.of = of
   }
+
+  func asControl() -> Arrow10 {
+    return ControlArrow10(of: self)
+  }
 }
 
 class Arrow11 {
   var of: (Double) -> Double
   init(of: @escaping (Double) -> Double) {
     self.of = of
+  }
+  
+  func withSidecars(_ sidecars: [Arrow10]) -> Arrow11 {
+    return arrowWithSidecars(arr: self, sidecars: sidecars)
+  }
+
+  func withSidecar(_ sidecar: Arrow10) -> Arrow11 {
+    return withSidecars([sidecar])
+  }
+
+  func asControl() -> Arrow11 {
+    return ControlArrow11(of: self)
   }
 }
 
@@ -105,6 +121,50 @@ class Arrow12 {
   var of: (Double) -> (Double, Double)
   init(of: @escaping (Double) -> (Double, Double)) {
     self.of = of
+  }
+}
+
+// An arrow that wraps an arrow and limits how often the arrow gets called with a new time
+// The name comes from the paradigm that control signals like LFOs don't need to fire as often
+// as audio data.
+class ControlArrow11: Arrow11 {
+  var lastTimeEmitted = 0.0
+  var lastEmission = 0.0
+  let timeBetweenEmissions = 44100.0 / 44100.0
+  init(of arrow: Arrow11) {
+    weak var fself: ControlArrow11? = nil
+    super.init(of: { t in
+      if t - fself!.lastTimeEmitted >= fself!.timeBetweenEmissions {
+        fself!.lastEmission = arrow.of(t)
+        fself!.lastTimeEmitted = t
+      }
+      return fself!.lastEmission
+    })
+    fself = self
+  }
+}
+
+class ControlArrow10: Arrow10 {
+  var lastTimeEmitted = 0.0
+  let timeBetweenEmissions = 4410.0 / 44100.0
+  init(of arrow: Arrow10) {
+    weak var fself: ControlArrow10? = nil
+    super.init(of: { t in
+      if t - fself!.lastTimeEmitted >= fself!.timeBetweenEmissions {
+        arrow.of(t)
+        fself!.lastTimeEmitted = t
+      }
+    })
+    fself = self
+  }
+}
+
+// given an arrow that converts time into some Double, use that output to set a key path on some object
+class KeyPathModulationArrow<T>: Arrow10 {
+  init(using: Arrow11, for object: T, keyPath: ReferenceWritableKeyPath<T, Double>) {
+    super.init(of: { t in
+      object[keyPath: keyPath] = using.of(t)
+    })
   }
 }
 
@@ -138,3 +198,4 @@ func arrowWithSidecars(arr: Arrow11, sidecars: [Arrow10]) -> Arrow11 {
     return arr.of(x)
   })
 }
+

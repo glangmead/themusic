@@ -15,22 +15,6 @@ let Sine = Arrow11(of: {
   sin(2 * .pi * fmod($0, 1.0))
 })
 
-class ControlArrow: Arrow11 {
-  var lastTimeEmitted = 0.0
-  var lastEmission = 0.0
-  let timeBetweenEmissions = 1000.0 / 44100.0
-  init(of arrow: Arrow11) {
-    weak var fself: ControlArrow? = nil
-    super.init(of: { t in
-      if t - fself!.lastTimeEmitted >= fself!.timeBetweenEmissions {
-        fself!.lastEmission = arrow.of(t)
-      }
-      return fself!.lastEmission
-    })
-    fself = self
-  }
-}
-
 let Triangle = Arrow11(of: { x in
   2 * (abs((2 * fmod(x, 1.0)) - 1.0) - 0.5)
 })
@@ -97,6 +81,28 @@ class ModulatedPreMult: Arrow11, HasFactor {
     super.init(of: { x in
       let result = fself!.arrow.of( (fself!.factor * x) + fself!.modulation.of(x))
       return result
+    })
+    fself = self
+  }
+}
+
+// from https://en.wikipedia.org/wiki/Low-pass_filter#Simple_infinite_impulse_response_filter
+class LowPassFilter: Arrow11 {
+  var previousOutput: Double = 0.0
+  var previousTime: Double = 0.0
+  var cutoff: Double
+  init(of input: Arrow11, cutoff: Double, resonance: Double) {
+    self.cutoff = cutoff
+
+    weak var fself: LowPassFilter? = nil
+    super.init(of: { t in
+      let rc = 1.0 / (2 * .pi * cutoff)
+      let dt = t - fself!.previousTime
+      let alpha = dt / (rc + dt)
+      let output = (alpha * input.of(t)) + (1 - alpha) * fself!.previousOutput
+      fself!.previousOutput = output
+      fself!.previousTime = t
+      return output
     })
     fself = self
   }

@@ -18,15 +18,16 @@ import Tonic
 // -
 
 struct TheoryView: View {
-  let engine: MyAudioEngine
+  let engine: SpatialAudioEngine
   var sampleRate: Double
   var voices: [SimpleVoice]
   let numVoices = 8
   let presets: [Preset]
   let voiceMixerNodes: [AVAudioNode]
+  let envNode = AVAudioEnvironmentNode()
+  
   let voicePool: NoteHandler
   let seq: Sequencer
-  let envNode = AVAudioEnvironmentNode()
   
   enum Instrument: CaseIterable, Equatable, Hashable {
     case Sawtooth
@@ -41,7 +42,7 @@ struct TheoryView: View {
   var keyChords: [Chord] {
     get {
       key.chords.filter { chord in
-        chord.type == .major || chord.type == .minor || chord.type == .dim || chord.type == .dom7
+        [.major, .minor, .dim, .dom7, .maj7, .min7].contains(chord.type)
       }
       .sorted {
         $0.pitches(octave: 4)[0] < $1.pitches(octave: 4)[0]
@@ -50,14 +51,35 @@ struct TheoryView: View {
   }
 
   init() {
-    let engine = MyAudioEngine() // local var so as not to reference self
+    let engine = SpatialAudioEngine()
     sampleRate = engine.sampleRate
 
     voices = []
     for _ in 0..<numVoices {
       voices.append(SimpleVoice(
-        oscillator: ModulatedPreMult(factor: 440.0, arrow: Sawtooth, modulation: ControlArrow(of: PostMult(factor: 0.0, arrow: PreMult(factor: 5.0, arrow: Sine)))) ,
-        filter: ADSR(envelope: EnvelopeData(attackTime: 0.2, decayTime: 0.0, sustainLevel: 1.0, releaseTime: 0.2))
+        oscillator:
+            ModulatedPreMult(
+              factor: 440.0,
+              arrow: Sawtooth,
+              modulation:
+                PostMult(
+                  factor: 0.2,
+                  arrow:
+                    PreMult(
+                      factor: 5.0,
+                      arrow: Sine)
+                ).asControl()
+              ),
+        filter:
+          ADSR(
+            envelope:
+              EnvelopeData(
+                attackTime: 0.2,
+                decayTime: 0.0,
+                sustainLevel: 1.0,
+                releaseTime: 0.2
+              )
+          )
       ))
     }
 
@@ -71,32 +93,19 @@ struct TheoryView: View {
     // animate the voices with various Roses
     var roseAmount = 0.0
     for preset in presets {
-      preset.positionLFO = Rose(leafFactor: roseAmount, frequency: 6, startingPhase: roseAmount * 2 * .pi / Double(presets.count))
+      preset.positionLFO = Rose(leafFactor: roseAmount,  frequency: 1, startingPhase: roseAmount * 2 * .pi / Double(presets.count))
       roseAmount += 1.0
     }
+  
+    voiceMixerNodes = presets.map {  $0.buildChainAndGiveOutputNode(forEngine: engine) }
+    engine.connectToEnvNode(voiceMixerNodes)
     
-    let mono = AVAudioFormat(standardFormatWithSampleRate:  sampleRate, channels: 1)
-    //let stereo = AVAudioFormat(standardFormatWithSampleRate: sampleRate, channels: 2)
-
-    voiceMixerNodes = presets.map {  $0.buildChainAndGiveOutputNode(forEngine: engine.audioEngine) }
-    engine.audioEngine.attach(envNode)
-    for voiceMixerNode in voiceMixerNodes {
-      engine.audioEngine.connect(voiceMixerNode, to: envNode, format: mono)
-      //voiceMixerNode.pointSourceInHeadMode = .mono
-    }
-    engine.audioEngine.connect(envNode, to: engine.audioEngine.mainMixerNode, format: nil)
     do {
       try engine.start()
     } catch {
       print("engine failed")
     }
     self.engine = engine
-
-    envNode.renderingAlgorithm = .HRTFHQ
-    envNode.outputType = .auto
-    envNode.isListenerHeadTrackingEnabled = false
-    envNode.listenerPosition = AVAudio3DPoint(x: 0, y: 0, z: 0)
-    //envNode.listenerVectorOrientation = AVAudio3DVectorOrientation(forward: AVAudio3DVector(x: 0.0, y: -1.0, z: 1.0), up: AVAudio3DVector(x: 0.0, y: 0.0, z: 1.0))
 
     // the sequencer will pluck on the arrows
     self.seq = Sequencer(engine: engine.audioEngine, numTracks: 1,  sourceNode: voicePool)
@@ -111,25 +120,28 @@ struct TheoryView: View {
         Text("A").tag(Key.A)
         Text("E").tag(Key.E)
       }.pickerStyle(.segmented)
+      
       Picker("Instrument", selection: $instrument) {
         ForEach(Instrument.allCases, id: \.self) { option in
           Text(String(describing: option))
         }
-      }.pickerStyle(.segmented)
-        .onChange(of: instrument, initial: true) {
-          for voice in voices {
-            voice.oscillator.arrow = switch instrument {
-            case .Sawtooth:
-              Sawtooth
-            case .Sine:
-              Sine
-            case .Square:
-              Square
-            case .Triangle:
-              Triangle
-            }
+      }
+      .pickerStyle(.segmented)
+      .onChange(of: instrument, initial: true) {
+        for voice in voices {
+          let rawOsc = switch instrument {
+          case .Sawtooth:
+            Sawtooth
+          case .Sine:
+            Sine
+          case .Square:
+            Square
+          case .Triangle:
+            Triangle
           }
+          voice.oscillator.arrow = rawOsc
         }
+      }
       ScrollView {
         LazyVGrid(
           columns: [
@@ -141,15 +153,16 @@ struct TheoryView: View {
                 seq.sendTonicChord(chord: chord)
               }
               .frame(maxWidth: .infinity)
-              .font(.largeTitle).bold()
+              //.font(.largeTitle)
+              .buttonStyle(.borderedProminent)
             }
           }
         )
       }
       .navigationTitle("Scape")
-    }
-    Button("Stop") {
-      seq.stop()
+      Button("Stop") {
+        seq.stop()
+      }
     }
   }
 }
