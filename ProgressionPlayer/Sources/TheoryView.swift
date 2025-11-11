@@ -20,24 +20,35 @@ import Tonic
 struct TheoryView: View {
   let engine: SpatialAudioEngine
   var sampleRate: Double
-  var voices: [SimpleVoice]
-  let numVoices = 8
-  let presets: [Preset]
-  let voiceMixerNodes: [AVAudioNode]
-  let envNode = AVAudioEnvironmentNode()
   
+  let numVoices = 8
+  // the layer cake of tone generation: oscillator, wrapped in filter, then voice, then preset
+  var oscillators: [BasicOscillator]
+  var filters: [HasFactor]
+  var voices: [SimpleVoice]
+  let presets: [Preset]
+  
+  let voiceMixerNodes: [AVAudioNode]
   let voicePool: NoteHandler
+
   let seq: Sequencer
   
-  enum Instrument: CaseIterable, Equatable, Hashable {
-    case Sawtooth
-    case Sine
-    case Square
-    case Triangle
-  }
-  
+  // Bindings for properties of the oscillator and filter
+  let oscillatorShapeBinding: Binding<BasicOscillator.OscShape>
+  let lowPassFilterBinding: Binding<Double>
+  // Bindings for the effects
+  let reverbWetDryMixBinding: Binding<Double>
+  let spatialPositionBinding: Binding<(Double, Double, Double)>
+  let delayTimeBinding: Binding<Double>
+  let delayFeedbackBinding: Binding<Double>
+  let delayLowPassCutoffBinding: Binding<Double>
+  let delayWetDryMixBinding: Binding<Double>
+  let distortionPreGainBinding: Binding<Double>
+  let distortionWetDryMixBinding: Binding<Double>
+  let reverbPresetBinding: Binding<AVAudioUnitReverbPreset>
+  let distortionPresetBinding: Binding<AVAudioUnitDistortionPreset>
+
   @State private var key = Key.C
-  @State private var instrument: Instrument = .Sawtooth
   
   var keyChords: [Chord] {
     get {
@@ -45,7 +56,7 @@ struct TheoryView: View {
         [.major, .minor, .dim, .dom7, .maj7, .min7].contains(chord.type)
       }
       .sorted {
-        $0.pitches(octave: 4)[0] < $1.pitches(octave: 4)[0]
+        $0.description < $1.description
       }
     }
   }
@@ -53,23 +64,27 @@ struct TheoryView: View {
   init() {
     let engine = SpatialAudioEngine()
     sampleRate = engine.sampleRate
-
-    voices = []
+    
+    var oscillators: [BasicOscillator] = []
+    var filters: [LowPassFilter] = []
+    var voices: [SimpleVoice] = []
     for _ in 0..<numVoices {
+      let osc = BasicOscillator(shape: .square)
+      oscillators.append(osc)
+      let filteredOsc = LowPassFilter(of: osc, cutoff: 100000, resonance: 0)
+      filters.append(filteredOsc)
+      
       voices.append(SimpleVoice(
         oscillator:
-            ModulatedPreMult(
-              factor: 440.0,
-              arrow: Sawtooth,
-              modulation:
-                PostMult(
-                  factor: 0.2,
-                  arrow:
-                    PreMult(
-                      factor: 5.0,
-                      arrow: Sine)
-                ).asControl()
-              ),
+          ModulatedPreMult(
+            factor: 440.0,
+            arrow: filteredOsc,
+            modulation:
+              PostMult(
+                factor: 0.2,
+                arrow:  PreMult(factor: 5.0, arrow: Sine)
+              ).asControl()
+          ),
         filter:
           ADSR(
             envelope:
@@ -82,13 +97,10 @@ struct TheoryView: View {
           )
       ))
     }
-
-    // here we wrap the triple of voices into a PoolVoice, and we wrap each voice in a preset
-    // so the preset attachment is breaking through the PoolVoice attachment
-    // the PV is just combining the noteOn/noteOff inputs, whereas the Preset is pulling the voice into the Apple world
+    
     voicePool = PoolVoice(voices: voices)
     
-    presets = voices.map { Preset(sound: $0) }
+    let presets = voices.map { Preset(sound: $0) }
     
     // animate the voices with various Roses
     var roseAmount = 0.0
@@ -96,7 +108,7 @@ struct TheoryView: View {
       preset.positionLFO = Rose(leafFactor: roseAmount,  frequency: 1, startingPhase: roseAmount * 2 * .pi / Double(presets.count))
       roseAmount += 1.0
     }
-  
+    
     voiceMixerNodes = presets.map {  $0.buildChainAndGiveOutputNode(forEngine: engine) }
     engine.connectToEnvNode(voiceMixerNodes)
     
@@ -106,9 +118,62 @@ struct TheoryView: View {
       print("engine failed")
     }
     self.engine = engine
-
+    
     // the sequencer will pluck on the arrows
     self.seq = Sequencer(engine: engine.audioEngine, numTracks: 1,  sourceNode: voicePool)
+    
+    reverbWetDryMixBinding = Binding<Double>(
+      get: { presets[0].getReverbWetDryMix() },
+      set: { for preset in presets { preset.setReverbWetDryMix($0) } }
+    )
+    spatialPositionBinding = Binding<(Double, Double, Double)>(
+      get: { presets[0].getSpatialPosition() },
+      set: { for preset in presets { preset.setSpatialPosition($0) } }
+    )
+    delayTimeBinding = Binding<Double>(
+      get: { presets[0].getDelayTime() },
+      set: { for preset in presets { preset.setDelayTime($0) } }
+    )
+    delayFeedbackBinding = Binding<Double>(
+      get: { presets[0].getDelayFeedback() },
+      set: { for preset in presets { preset.setDelayFeedback($0) } }
+    )
+    delayLowPassCutoffBinding = Binding<Double>(
+      get: { presets[0].getDelayFeedback() },
+      set: { for preset in presets { preset.setDelayLowPassCutoff($0) } }
+    )
+    delayWetDryMixBinding = Binding<Double>(
+      get: { presets[0].getDelayFeedback() },
+      set: { for preset in presets { preset.setDelayWetDryMix($0) } }
+    )
+    distortionPreGainBinding = Binding<Double>(
+      get: { presets[0].getDelayFeedback() },
+      set: { for preset in presets { preset.setDistortionPreGain($0) } }
+    )
+    distortionWetDryMixBinding = Binding<Double>(
+      get: { presets[0].getDelayFeedback() },
+      set: { for preset in presets { preset.setDistortionWetDryMix($0) } }
+    )
+    reverbPresetBinding = Binding<AVAudioUnitReverbPreset>(
+      get: { presets[0].getReverbPreset() },
+      set: { for preset in presets { preset.setReverbPreset($0) } }
+    )
+    distortionPresetBinding = Binding<AVAudioUnitDistortionPreset>(
+      get: { presets[0].getDistortionPreset() },
+      set: { for preset in presets { preset.setDistortionPreset($0) } }
+    )
+    oscillatorShapeBinding = Binding<BasicOscillator.OscShape>(
+      get: { oscillators[0].shape },
+      set: { for osc in oscillators { osc.shape = $0 }}
+    )
+    lowPassFilterBinding = Binding<Double>(
+      get: { filters[0].factor },
+      set: { for f in filters { f.factor = $0 } }
+    )
+    self.presets = presets
+    self.oscillators = oscillators
+    self.filters = filters
+    self.voices = voices
   }
   
   var body: some View {
@@ -121,26 +186,32 @@ struct TheoryView: View {
         Text("E").tag(Key.E)
       }.pickerStyle(.segmented)
       
-      Picker("Instrument", selection: $instrument) {
-        ForEach(Instrument.allCases, id: \.self) { option in
+      Picker("Instrument", selection: oscillatorShapeBinding) {
+        ForEach(BasicOscillator.OscShape.allCases, id: \.self) { option in
           Text(String(describing: option))
         }
       }
       .pickerStyle(.segmented)
-      .onChange(of: instrument, initial: true) {
-        for voice in voices {
-          let rawOsc = switch instrument {
-          case .Sawtooth:
-            Sawtooth
-          case .Sine:
-            Sine
-          case .Square:
-            Square
-          case .Triangle:
-            Triangle
+
+      HStack {
+        Text("Reverb preset")
+        Picker("Reverb preset", selection: reverbPresetBinding) {
+          ForEach(AVAudioUnitReverbPreset.allCases, id: \.self) {
+            Text($0.name)
           }
-          voice.oscillator.arrow = rawOsc
         }
+      }
+      HStack {
+        Text("Reverb wet/dry mix")
+        Slider(value: reverbWetDryMixBinding, in: 0...100)
+      }
+      HStack {
+        Text("Delay time")
+        Slider(value: delayTimeBinding, in: 0...5)
+      }
+      HStack {
+        Text("Low-pass filter cutoff")
+        Slider(value: lowPassFilterBinding, in: 0...800)
       }
       ScrollView {
         LazyVGrid(

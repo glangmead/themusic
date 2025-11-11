@@ -27,6 +27,43 @@ let Square = Arrow11(of: { x in
   fmod(x, 1) <= 0.5 ? 1.0 : -1.0
 })
 
+let Noise = Arrow11(of: { x in
+  0.0 // TODO: noise
+})
+
+class BasicOscillator: Arrow11 {
+  enum OscShape: CaseIterable, Equatable, Hashable {
+    case sine
+    case triangle
+    case sawtooth
+    case square
+    case noise
+  }
+  var shape: OscShape = .sine
+  var arrow: Arrow11 {
+    switch shape {
+    case .sine:
+      Sine
+    case .triangle:
+      Triangle
+    case .sawtooth:
+      Sawtooth
+    case .square:
+      Square
+    case .noise:
+      Noise
+    }
+  }
+  init(shape: OscShape) {
+    self.shape = shape
+    var fself: BasicOscillator? = nil
+    super.init(of: { t in
+      fself!.arrow.of(t)
+    })
+    fself = self
+  }
+}
+
 // see https://en.wikipedia.org/wiki/Rose_(mathematics)
 func Rose(leafFactor k: Double, frequency freq: Double, startingPhase sp: Double) -> Arrow13 {
   Arrow13(of: { x in
@@ -87,19 +124,22 @@ class ModulatedPreMult: Arrow11, HasFactor {
 }
 
 // from https://en.wikipedia.org/wiki/Low-pass_filter#Simple_infinite_impulse_response_filter
-class LowPassFilter: Arrow11 {
+// TODO: resonance, see perhaps https://www.martin-finke.de/articles/audio-plugins-013-filter
+class LowPassFilter: Arrow11, HasFactor {
   var previousOutput: Double = 0.0
   var previousTime: Double = 0.0
-  var cutoff: Double
+  var factor: Double
+  var arrow: Arrow11
   init(of input: Arrow11, cutoff: Double, resonance: Double) {
-    self.cutoff = cutoff
+    self.factor = cutoff
+    self.arrow = input
 
     weak var fself: LowPassFilter? = nil
     super.init(of: { t in
-      let rc = 1.0 / (2 * .pi * cutoff)
+      let rc = 1.0 / (2 * .pi * fself!.factor)
       let dt = t - fself!.previousTime
       let alpha = dt / (rc + dt)
-      let output = (alpha * input.of(t)) + (1 - alpha) * fself!.previousOutput
+      let output = (alpha * fself!.arrow.of(t)) + (1 - alpha) * fself!.previousOutput
       fself!.previousOutput = output
       fself!.previousTime = t
       return output

@@ -24,49 +24,90 @@ class InstrumentWithAVAudioUnitEffects {
   var mixerNode = AVAudioMixerNode()
   var delayNode = AVAudioUnitDelay()
   var distortionNode = AVAudioUnitDistortion()
+  var reverbPreset: AVAudioUnitReverbPreset
+  var distortionPreset: AVAudioUnitDistortionPreset
   
-  func set(reverbWetDryMix: Double) {
-    reverbNode.wetDryMix = Float(reverbWetDryMix)
+  func getReverbWetDryMix() -> Double {
+    Double(reverbNode.wetDryMix)
+  }
+  func setReverbWetDryMix(_ val: Double) {
+    reverbNode.wetDryMix = Float(val)
+  }
+  func getReverbPreset() -> AVAudioUnitReverbPreset {
+    self.reverbPreset
   }
   // .smallRoom, .mediumRoom, .largeRoom, .mediumHall, .largeHall, .plate, .mediumChamber, .largeChamber, .cathedral, .largeRoom2, .mediumHall2, .mediumHall3, .largeHall2
-  func set(reverbPreset: AVAudioUnitReverbPreset) {
-    reverbNode.loadFactoryPreset(reverbPreset)
+  func setReverbPreset(_ val: AVAudioUnitReverbPreset) {
+    reverbNode.loadFactoryPreset(val)
+    self.reverbPreset = val
   }
-  func set(spatialPosition: (Double, Double, Double)) {
-    mixerNode.position.x = Float(spatialPosition.0)
-    mixerNode.position.y = Float(spatialPosition.1)
-    mixerNode.position.z = Float(spatialPosition.2)
+  
+  func getSpatialPosition() -> (Double, Double, Double) {
+    (
+      Double(mixerNode.position.x),
+      Double(mixerNode.position.y),
+      Double(mixerNode.position.z)
+    )
   }
-  func set(delayTime: Double) {
-    delayNode.delayTime = delayTime
+  func setSpatialPosition(_ pos: (Double, Double, Double)) {
+    mixerNode.position.x = Float(pos.0)
+    mixerNode.position.y = Float(pos.1)
+    mixerNode.position.z = Float(pos.2)
   }
-  func set(delayFeedback: Double) {
-    delayNode.feedback = Float(delayFeedback)
+  
+  func getDelayTime() -> Double {
+    Double(delayNode.delayTime)
   }
-  func set(delayLowPassCutoff: Double) {
-    delayNode.lowPassCutoff = Float(delayLowPassCutoff)
+  func setDelayTime(_ val: Double) {
+    delayNode.delayTime = val
   }
-  func set(delayWetDryMix: Double) {
-    delayNode.wetDryMix = Float(delayWetDryMix)
+  func getDelayFeedback() -> Double {
+    Double(delayNode.feedback)
+  }
+  func setDelayFeedback(_ val : Double) {
+    delayNode.feedback = Float(val)
+  }
+  func getDelayLowPassCutoff() -> Double {
+    Double(delayNode.lowPassCutoff)
+  }
+  func setDelayLowPassCutoff(_ val: Double) {
+    delayNode.lowPassCutoff = Float(val)
+  }
+  func getDelayWetDryMix() -> Double {
+    Double(delayNode.wetDryMix)
+  }
+  func setDelayWetDryMix(_ val: Double) {
+    delayNode.wetDryMix = Float(val)
   }
   // .drumsBitBrush, .drumsBufferBeats, .drumsLoFi, .multiBrokenSpeaker, .multiCellphoneConcert, .multiDecimated1, .multiDecimated2, .multiDecimated3, .multiDecimated4, .multiDistortedFunk, .multiDistortedCubed, .multiDistortedSquared, .multiEcho1, .multiEcho2, .multiEchoTight1, .multiEchoTight2, .multiEverythingIsBroken, .speechAlienChatter, .speechCosmicInterference, .speechGoldenPi, .speechRadioTower, .speechWaves
-  func set(distortionPreset: AVAudioUnitDistortionPreset) {
-    distortionNode.loadFactoryPreset(distortionPreset)
+  func getDistortionPreset() -> AVAudioUnitDistortionPreset {
+    distortionPreset
   }
-  func set(distortionPreGain: Double) {
-    distortionNode.preGain = Float(distortionPreGain)
+  func setDistortionPreset(_ val: AVAudioUnitDistortionPreset) {
+    distortionNode.loadFactoryPreset(val)
+    self.distortionPreset = val
   }
-  func set(distortionWetDryMix: Double) {
-    distortionNode.wetDryMix = Float(distortionWetDryMix)
+  func getDistortionPreGain() -> Double {
+    Double(distortionNode.preGain)
   }
-
-
+  func setDistortionPreGain(_ val: Double) {
+    distortionNode.preGain = Float(val)
+  }
+  func getDistortionWetDryMix() -> Double {
+    Double(distortionNode.wetDryMix)
+  }
+  func setDistortionWetDryMix(_ val: Double) {
+    distortionNode.wetDryMix = Float(val)
+  }
   
   private var lastTimeWeSetPosition = 0.0
   private let setPositionMinWaitTime = 441.0 / 44100.0 // setting position is expensive, so limit how often
   
   init(sound: Arrow11) {
     self.sound = sound
+    self.distortionPreset = .defaultValue
+    self.reverbPreset = .defaultValue
+    self.setDelayTime(0)
   }
   
   func setPosition(_ t: Double) {
