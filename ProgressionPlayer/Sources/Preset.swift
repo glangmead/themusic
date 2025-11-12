@@ -24,7 +24,11 @@ class InstrumentWithAVAudioUnitEffects {
   var mixerNode = AVAudioMixerNode()
   var delayNode = AVAudioUnitDelay()
   var distortionNode = AVAudioUnitDistortion()
-  var reverbPreset: AVAudioUnitReverbPreset
+  var reverbPreset: AVAudioUnitReverbPreset {
+    didSet {
+      reverbNode.loadFactoryPreset(reverbPreset)
+    }
+  }
   var distortionPreset: AVAudioUnitDistortionPreset
   
   func getReverbWetDryMix() -> Double {
@@ -33,15 +37,7 @@ class InstrumentWithAVAudioUnitEffects {
   func setReverbWetDryMix(_ val: Double) {
     reverbNode.wetDryMix = Float(val)
   }
-  func getReverbPreset() -> AVAudioUnitReverbPreset {
-    self.reverbPreset
-  }
-  // .smallRoom, .mediumRoom, .largeRoom, .mediumHall, .largeHall, .plate, .mediumChamber, .largeChamber, .cathedral, .largeRoom2, .mediumHall2, .mediumHall3, .largeHall2
-  func setReverbPreset(_ val: AVAudioUnitReverbPreset) {
-    reverbNode.loadFactoryPreset(val)
-    self.reverbPreset = val
-  }
-  
+
   func getSpatialPosition() -> (Double, Double, Double) {
     (
       Double(mixerNode.position.x),
@@ -106,7 +102,9 @@ class InstrumentWithAVAudioUnitEffects {
   init(sound: Arrow11) {
     self.sound = sound
     self.distortionPreset = .defaultValue
-    self.reverbPreset = .defaultValue
+    self.distortionNode.wetDryMix = 0
+    self.reverbPreset = .cathedral
+    self.reverbNode.wetDryMix = 0
     self.setDelayTime(0)
   }
   
@@ -131,8 +129,6 @@ class InstrumentWithAVAudioUnitEffects {
     sourceNode = AVAudioSourceNode.withSource(
       source: sound.withSidecar(setPositionArrow),
       sampleRate: sampleRate)
-    reverbNode.loadFactoryPreset(.largeChamber)
-    reverbNode.wetDryMix = 50
     
     let nodes = [sourceNode!, distortionNode, delayNode, reverbNode, mixerNode]
     engine.attach(nodes)

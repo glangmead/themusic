@@ -143,7 +143,7 @@ struct TheoryView: View {
       set: { for preset in presets { preset.setDelayLowPassCutoff($0) } }
     )
     delayWetDryMixBinding = Binding<Double>(
-      get: { presets[0].getDelayFeedback() },
+      get: { presets[0].getDelayWetDryMix() },
       set: { for preset in presets { preset.setDelayWetDryMix($0) } }
     )
     distortionPreGainBinding = Binding<Double>(
@@ -155,8 +155,11 @@ struct TheoryView: View {
       set: { for preset in presets { preset.setDistortionWetDryMix($0) } }
     )
     reverbPresetBinding = Binding<AVAudioUnitReverbPreset>(
-      get: { presets[0].getReverbPreset() },
-      set: { for preset in presets { preset.setReverbPreset($0) } }
+      get: {
+        print("reverb preset \(presets[0].reverbPreset)")
+        return presets[0].reverbPreset
+      },
+      set: { for preset in presets { preset.reverbPreset = $0 } }
     )
     distortionPresetBinding = Binding<AVAudioUnitDistortionPreset>(
       get: { presets[0].getDistortionPreset() },
@@ -199,7 +202,7 @@ struct TheoryView: View {
           ForEach(AVAudioUnitReverbPreset.allCases, id: \.self) {
             Text($0.name)
           }
-        }
+        }.pickerStyle(.menu)
       }
       HStack {
         Text("Reverb wet/dry mix")
@@ -211,7 +214,7 @@ struct TheoryView: View {
       }
       HStack {
         Text("Low-pass filter cutoff")
-        Slider(value: lowPassFilterBinding, in: 0...800)
+        Slider(value: lowPassFilterBinding, in: 0...50)
       }
       ScrollView {
         LazyVGrid(

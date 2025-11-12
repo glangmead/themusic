@@ -28,7 +28,7 @@ let Square = Arrow11(of: { x in
 })
 
 let Noise = Arrow11(of: { x in
-  0.0 // TODO: noise
+  Double.random(in: 0.0...1.0)
 })
 
 class BasicOscillator: Arrow11 {
@@ -129,10 +129,12 @@ class LowPassFilter: Arrow11, HasFactor {
   var previousOutput: Double = 0.0
   var previousTime: Double = 0.0
   var factor: Double
+  var resonance: Double
   var arrow: Arrow11
   init(of input: Arrow11, cutoff: Double, resonance: Double) {
     self.factor = cutoff
     self.arrow = input
+    self.resonance = resonance
 
     weak var fself: LowPassFilter? = nil
     super.init(of: { t in
