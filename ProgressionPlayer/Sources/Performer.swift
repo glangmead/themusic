@@ -7,7 +7,7 @@
 
 import Foundation
 
-/// Taking data such as a MIDI note and driving a Preset to emit something in particular.
+/// Taking data such as a MIDI note and driving an oscillator, filter, and amp envelope to emit something in particular.
 
 typealias MidiValue = UInt8
 
@@ -89,21 +89,29 @@ class PoolVoice: Arrow11, NoteHandler {
 
 class SimpleVoice: Arrow11, NoteHandler {
   var oscillator: HasFactor & Arrow11
-  let filter: NoteHandler & Arrow21
+  var filteredOsc: LowPassFilter
+  let ampMod: NoteHandler & Arrow11
+  let filterMod: NoteHandler & Arrow11
   var amplitude: Double = 0.0 // Controls the current loudness of the voice
   
-  init(oscillator: HasFactor & Arrow11, filter: NoteHandler & Arrow21) {
+  init(oscillator: HasFactor & Arrow11, ampMod: NoteHandler & Arrow11, filterMod: NoteHandler & Arrow11) {
     self.oscillator = oscillator
-    self.filter = filter
+    self.ampMod = ampMod
+    self.filterMod = filterMod
+    self.filteredOsc = LowPassFilter(of: oscillator, cutoff: filterMod.of(0), resonance: 0)
     weak var futureSelf: SimpleVoice? = nil
     super.init(of: { time in
       // If the amplitude is zero, the voice is effectively off, so we return silence.
       guard futureSelf!.amplitude > 0.0 else {
         return 0.0
       }
-      let rawOscillatorSample = oscillator.of(time)
-      let envelopedSample = filter.of(rawOscillatorSample, time)
-      return futureSelf!.amplitude * envelopedSample
+      // update the filter with the filterMod envelope's current value
+      futureSelf!.filteredOsc.factor = futureSelf!.filterMod.of(time)
+      // get the tone
+      let rawOscillatorSample = futureSelf!.filteredOsc.of(time)
+      // get the amplitude
+      let ampEnv = ampMod.of(time)
+      return futureSelf!.amplitude * ampEnv * rawOscillatorSample
     })
     futureSelf = self
     
@@ -119,13 +127,15 @@ class SimpleVoice: Arrow11, NoteHandler {
     // Set the oscillator's frequency to produce the correct pitch
     //print("\(freq)")
     oscillator.factor = freq
-    filter.noteOn(note)
+    ampMod.noteOn(note)
+    filterMod.noteOn(note)
   }
   
   func noteOff(_ note: MidiNote) {
     // For this simple voice, turning the note off means setting amplitude to zero,
     // effectively silencing the sound instantly.
-    filter.noteOff(note)
+    ampMod.noteOff(note)
+    filterMod.noteOff(note)
   }
 }
 

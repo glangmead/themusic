@@ -85,14 +85,25 @@ struct TheoryView: View {
                 arrow:  PreMult(factor: 5.0, arrow: Sine)
               ).asControl()
           ),
-        filter:
+        ampMod:
           ADSR(
             envelope:
               EnvelopeData(
                 attackTime: 0.2,
-                decayTime: 0.0,
+                decayTime: 0.3,
                 sustainLevel: 1.0,
-                releaseTime: 0.2
+                releaseTime: 0.2 
+              )
+          ),
+        filterMod:
+          ADSR(
+            envelope:
+              EnvelopeData(
+                attackTime: 0.1,
+                decayTime: 1, 
+                sustainLevel: 0.02,
+                releaseTime: 0.2,
+                scale: 10000
               )
           )
       ))
@@ -181,14 +192,6 @@ struct TheoryView: View {
   
   var body: some View {
     NavigationStack {
-      Picker("Key", selection: $key) {
-        Text("C").tag(Key.C)
-        Text("G").tag(Key.G)
-        Text("D").tag(Key.D)
-        Text("A").tag(Key.A)
-        Text("E").tag(Key.E)
-      }.pickerStyle(.segmented)
-      
       Picker("Instrument", selection: oscillatorShapeBinding) {
         ForEach(BasicOscillator.OscShape.allCases, id: \.self) { option in
           Text(String(describing: option))
@@ -216,6 +219,15 @@ struct TheoryView: View {
         Text("Low-pass filter cutoff")
         Slider(value: lowPassFilterBinding, in: 0...50)
       }
+      Spacer()
+      Picker("Key", selection: $key) {
+        Text("C").tag(Key.C)
+        Text("G").tag(Key.G)
+        Text("D").tag(Key.D)
+        Text("A").tag(Key.A)
+        Text("E").tag(Key.E)
+      }.pickerStyle(.segmented)
+      
       ScrollView {
         LazyVGrid(
           columns: [
@@ -223,7 +235,7 @@ struct TheoryView: View {
           ],
           content: {
             ForEach(keyChords, id: \.self) { chord in
-              Button(chord.description) {
+              Button(chord.romanNumeralNotation(in: key) ?? chord.description) {
                 seq.sendTonicChord(chord: chord)
               }
               .frame(maxWidth: .infinity)

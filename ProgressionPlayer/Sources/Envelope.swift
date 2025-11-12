@@ -5,15 +5,7 @@
 //  Created by Greg Langmead on 10/14/25.
 //
 
-//
-//  ADSRFilter.swift
-//  Harmonicity
-//
-//  Created by Sergey on 29.05.2025.
-//
-
 import Foundation
-import Overture
 
 typealias CoreFloat = Double
 
@@ -22,9 +14,13 @@ struct EnvelopeData {
   var decayTime: CoreFloat = 0.5
   var sustainLevel: CoreFloat = 0.3
   var releaseTime: CoreFloat = 1.0
+  var scale: CoreFloat = 1.0
 }
 
-class ADSR: Arrow21, NoteHandler {
+/// An envelope is an arrow with more of a sense of absolute time. It has a beginning, evolution, and ending.
+/// Hence it is also a NoteHandler, so we can tell it when to begin to attack, and when to begin to decay.
+/// Within that concept, ADSR is a specific family of functions. This is a linear one.
+class ADSR: Arrow11, NoteHandler {
   var timeOrigin: CoreFloat = 0
   var attackEnv: PiecewiseFunc<CoreFloat>
   var decayEnv: PiecewiseFunc<CoreFloat>
@@ -34,22 +30,25 @@ class ADSR: Arrow21, NoteHandler {
     attackEnv = PiecewiseFunc<CoreFloat>(ifuncs: [
       IntervalFunc<CoreFloat>(
         interval: Interval<CoreFloat>(start: 0, end: e.attackTime),
-        f: { $0 / e.attackTime }),
+        f: { e.scale * $0 / e.attackTime }
+      ),
       IntervalFunc<CoreFloat>(
         interval: Interval<CoreFloat>(start: e.attackTime, end: e.attackTime + e.decayTime),
-        f: { ($0 * ((e.sustainLevel - 1.0)/(e.decayTime))) + (1.0 + (e.attackTime) * ((1.0 - e.sustainLevel)/(e.decayTime)))}),
+        f: { e.scale * ( ((e.sustainLevel - 1.0)/e.decayTime) * ($0 - e.attackTime) + 1.0) }
+      ),
       IntervalFunc<CoreFloat>(
         interval: Interval<CoreFloat>(start: e.attackTime + e.decayTime, end: nil),
-        f: {_ in e.sustainLevel})
+        f: {_ in e.scale * e.sustainLevel}
+      )
     ])
     decayEnv = PiecewiseFunc<CoreFloat>(ifuncs: [
       IntervalFunc<CoreFloat>(
         interval: Interval<CoreFloat>(start: 0, end: e.releaseTime),
-        f: {$0 * -1.0 * (e.sustainLevel / e.releaseTime) + e.sustainLevel})
+        f: {e.scale * ($0 * -1.0 * (e.sustainLevel / e.releaseTime) + e.sustainLevel)})
     ])
     weak var futureSelf: ADSR? = nil
-    super.init(of: { sample, time in
-      return sample * (futureSelf!.attack ? futureSelf!.attackEnv.val(Date.now.timeIntervalSince1970 - futureSelf!.timeOrigin) : futureSelf!.decayEnv.val(Date.now.timeIntervalSince1970 - futureSelf!.timeOrigin))
+    super.init(of: { time in
+      return (futureSelf!.attack ? futureSelf!.attackEnv.val(Date.now.timeIntervalSince1970 - futureSelf!.timeOrigin) : futureSelf!.decayEnv.val(Date.now.timeIntervalSince1970 - futureSelf!.timeOrigin))
     })
     futureSelf = self
   }
