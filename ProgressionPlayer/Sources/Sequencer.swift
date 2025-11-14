@@ -14,8 +14,6 @@ struct Sequencer {
   var avTracks = [AVMusicTrack]()
   var seqListener: MIDICallbackInstrument?
   
-  //private var taskQueue = DispatchQueue(label: "scape.midi")
-  
   init(engine: AVAudioEngine, numTracks: Int, sourceNode: NoteHandler) {
     avSeq = AVAudioSequencer(audioEngine: engine)
     for _ in 0..<numTracks {
@@ -24,18 +22,13 @@ struct Sequencer {
     // borrowing AudioKit's MIDICallbackInstrument, which has some pretty tough incantations to allocate a midi endpoint and its MIDIEndpointRef
     seqListener = MIDICallbackInstrument(midiInputName: "Scape Virtual MIDI Listener", callback: { /*[self]*/ status, note, velocity in
       //print("Callback instrument was pinged with \(status) \(note) \(velocity)")
-      /// We are supposed to make this very performant, hence launching things on the main thread
       guard let midiStatus = MIDIStatusType.from(byte: status) else {
         return
       }
       if midiStatus == .noteOn {
-        //self.taskQueue.async {
-          sourceNode.noteOn(MidiNote(note: note, velocity: velocity))
-        //}
+        sourceNode.noteOn(MidiNote(note: note, velocity: velocity))
       } else if midiStatus == .noteOff {
-        //self.taskQueue.async {
-          sourceNode.noteOff(MidiNote(note: note, velocity: velocity))
-        //}
+        sourceNode.noteOff(MidiNote(note: note, velocity: velocity))
       }
       
     })
@@ -64,8 +57,8 @@ struct Sequencer {
     }
   }
   
-  func sendTonicChord(chord: Chord) {
-    sendChord(chord: chord.notes(octave: 3).map {MidiValue($0.pitch.midiNoteNumber)} )
+  func sendTonicChord(chord: Chord, octave: Int) {
+    sendChord(chord: chord.notes(octave: octave).map {MidiValue($0.pitch.midiNoteNumber)} )
   }
   
   func sendChord(chord: [MidiValue]) {
@@ -74,7 +67,6 @@ struct Sequencer {
     for note in chord {
       seqTrack.addEvent(AVMIDINoteEvent(channel: 0, key: UInt32(note), velocity: 100, duration: 12), at: avSeq.currentPositionInBeats + 1)
     }
-    play()
   }
 }
 

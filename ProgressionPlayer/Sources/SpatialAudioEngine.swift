@@ -10,9 +10,13 @@ import AVFAudio
 class SpatialAudioEngine {
   let audioEngine = AVAudioEngine()
   let envNode = AVAudioEnvironmentNode()
-  
+  let stereo: AVAudioFormat
+  let mono: AVAudioFormat
+
   init() {
     audioEngine.attach(envNode)
+    stereo = AVAudioFormat(standardFormatWithSampleRate: audioEngine.outputNode.inputFormat(forBus: 0).sampleRate, channels: 2)!
+    mono = AVAudioFormat(standardFormatWithSampleRate: audioEngine.outputNode.inputFormat(forBus: 0).sampleRate, channels: 1)!
   }
   
   // We grab the system's sample rate directly from the output node
@@ -31,19 +35,25 @@ class SpatialAudioEngine {
     audioEngine.connect(node1, to: node2, format: format)
   }
   
-  func connectToEnvNode(_ nodes: [AVAudioNode]) {
-    let stereo = AVAudioFormat(standardFormatWithSampleRate: sampleRate, channels: 2)
+  func connectToEnvNode(_ nodes: [AVAudioMixerNode]) {
     for node in nodes {
-      audioEngine.connect(node, to: envNode, format: stereo)
+      node.pointSourceInHeadMode = .mono
+      node.sourceMode = .spatializeIfMono
+      audioEngine.connect(node, to: envNode, format: mono)
     }
-    audioEngine.connect(envNode, to: audioEngine.mainMixerNode, format: stereo)
+    audioEngine.connect(envNode, to: audioEngine.outputNode, format: stereo)
   }
   
   func start() throws {
     envNode.renderingAlgorithm = .HRTFHQ
     envNode.outputType = .auto
-    envNode.isListenerHeadTrackingEnabled = false
+    envNode.isListenerHeadTrackingEnabled = true
     envNode.listenerPosition = AVAudio3DPoint(x: 0, y: 0, z: 0)
+    envNode.distanceAttenuationParameters.referenceDistance = 1.0
+    envNode.distanceAttenuationParameters.maximumDistance = 50.0
+    envNode.distanceAttenuationParameters.rolloffFactor = 2.0
+    envNode.reverbParameters.enable = true
+    
     //envNode.listenerVectorOrientation = AVAudio3DVectorOrientation(forward: AVAudio3DVector(x: 0.0, y: -1.0, z: 1.0), up: AVAudio3DVector(x: 0.0, y: 0.0, z: 1.0))
     
     // Prepare the engine, getting all resources ready.

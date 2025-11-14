@@ -39,7 +39,7 @@ class EngineerPlayer {
       try engine.start()
       
       environmentalNode.renderingAlgorithm = .soundField
-      //environmentalNode.isListenerHeadTrackingEnabled = true
+      environmentalNode.isListenerHeadTrackingEnabled = true
       
       player.pointSourceInHeadMode = .mono
       player.position = AVAudio3DPoint(x: 0, y: 10, z: 1)

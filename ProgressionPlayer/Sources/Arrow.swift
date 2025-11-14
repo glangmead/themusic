@@ -130,7 +130,7 @@ class Arrow12 {
 class ControlArrow11: Arrow11 {
   var lastTimeEmitted = 0.0
   var lastEmission = 0.0
-  let timeBetweenEmissions = 44100.0 / 44100.0
+  let timeBetweenEmissions = 441.0 / 44100.0
   init(of arrow: Arrow11) {
     weak var fself: ControlArrow11? = nil
     super.init(of: { t in

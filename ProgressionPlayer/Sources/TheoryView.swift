@@ -28,14 +28,13 @@ struct TheoryView: View {
   var voices: [SimpleVoice]
   let presets: [Preset]
   
-  let voiceMixerNodes: [AVAudioNode]
+  let voiceMixerNodes: [AVAudioMixerNode]
   let voicePool: NoteHandler
 
   let seq: Sequencer
   
   // Bindings for properties of the oscillator and filter
   let oscillatorShapeBinding: Binding<BasicOscillator.OscShape>
-  let lowPassFilterBinding: Binding<Double>
   // Bindings for the effects
   let reverbWetDryMixBinding: Binding<Double>
   let spatialPositionBinding: Binding<(Double, Double, Double)>
@@ -49,6 +48,7 @@ struct TheoryView: View {
   let distortionPresetBinding: Binding<AVAudioUnitDistortionPreset>
 
   @State private var key = Key.C
+  @State private var octave: Int
   
   var keyChords: [Chord] {
     get {
@@ -80,17 +80,18 @@ struct TheoryView: View {
             factor: 440.0,
             arrow: filteredOsc,
             modulation:
-              PostMult(
+              PostMult( 
                 factor: 0.2,
-                arrow:  PreMult(factor: 5.0, arrow: Sine)
-              ).asControl()
+                arrow:  PreMult(factor: 5.0, arrow: Triangle)
+              )
+              .asControl()
           ),
         ampMod:
           ADSR(
             envelope:
               EnvelopeData(
-                attackTime: 0.2,
-                decayTime: 0.3,
+                attackTime: 0.3,
+                decayTime: 0,
                 sustainLevel: 1.0,
                 releaseTime: 0.2 
               )
@@ -99,10 +100,10 @@ struct TheoryView: View {
           ADSR(
             envelope:
               EnvelopeData(
-                attackTime: 0.1,
-                decayTime: 1, 
-                sustainLevel: 0.02,
-                releaseTime: 0.2,
+                attackTime: 0,
+                decayTime: 0,
+                sustainLevel: 1,
+                releaseTime: 0,
                 scale: 10000
               )
           )
@@ -114,10 +115,10 @@ struct TheoryView: View {
     let presets = voices.map { Preset(sound: $0) }
     
     // animate the voices with various Roses
-    var roseAmount = 0.0
+    var roseAmount = 3.0
     for preset in presets {
-      preset.positionLFO = Rose(leafFactor: roseAmount,  frequency: 1, startingPhase: roseAmount * 2 * .pi / Double(presets.count))
-      roseAmount += 1.0
+      preset.positionLFO = Rose(amplitude: 10, leafFactor: 2,  frequency: 1, startingPhase: roseAmount * 2 * .pi / Double(presets.count))
+      roseAmount += 2.0
     }
     
     voiceMixerNodes = presets.map {  $0.buildChainAndGiveOutputNode(forEngine: engine) }
@@ -132,6 +133,7 @@ struct TheoryView: View {
     
     // the sequencer will pluck on the arrows
     self.seq = Sequencer(engine: engine.audioEngine, numTracks: 1,  sourceNode: voicePool)
+    seq.play()
     
     reverbWetDryMixBinding = Binding<Double>(
       get: { presets[0].getReverbWetDryMix() },
@@ -166,10 +168,7 @@ struct TheoryView: View {
       set: { for preset in presets { preset.setDistortionWetDryMix($0) } }
     )
     reverbPresetBinding = Binding<AVAudioUnitReverbPreset>(
-      get: {
-        print("reverb preset \(presets[0].reverbPreset)")
-        return presets[0].reverbPreset
-      },
+      get: { return presets[0].reverbPreset },
       set: { for preset in presets { preset.reverbPreset = $0 } }
     )
     distortionPresetBinding = Binding<AVAudioUnitDistortionPreset>(
@@ -180,14 +179,11 @@ struct TheoryView: View {
       get: { oscillators[0].shape },
       set: { for osc in oscillators { osc.shape = $0 }}
     )
-    lowPassFilterBinding = Binding<Double>(
-      get: { filters[0].factor },
-      set: { for f in filters { f.factor = $0 } }
-    )
     self.presets = presets
     self.oscillators = oscillators
     self.filters = filters
     self.voices = voices
+    self.octave = 3
   }
   
   var body: some View {
@@ -215,10 +211,6 @@ struct TheoryView: View {
         Text("Delay time")
         Slider(value: delayTimeBinding, in: 0...5)
       }
-      HStack {
-        Text("Low-pass filter cutoff")
-        Slider(value: lowPassFilterBinding, in: 0...50)
-      }
       Spacer()
       Picker("Key", selection: $key) {
         Text("C").tag(Key.C)
@@ -226,6 +218,11 @@ struct TheoryView: View {
         Text("D").tag(Key.D)
         Text("A").tag(Key.A)
         Text("E").tag(Key.E)
+      }.pickerStyle(.segmented)
+      Picker("Octave", selection: $octave) {
+        ForEach(1..<7) { octave in
+          Text("\(octave)")
+        }
       }.pickerStyle(.segmented)
       
       ScrollView {
@@ -236,7 +233,7 @@ struct TheoryView: View {
           content: {
             ForEach(keyChords, id: \.self) { chord in
               Button(chord.romanNumeralNotation(in: key) ?? chord.description) {
-                seq.sendTonicChord(chord: chord)
+                seq.sendTonicChord(chord: chord, octave: octave)
               }
               .frame(maxWidth: .infinity)
               //.font(.largeTitle)
@@ -248,6 +245,7 @@ struct TheoryView: View {
       .navigationTitle("Scape")
       Button("Stop") {
         seq.stop()
+        seq.play()
       }
     }
   }
