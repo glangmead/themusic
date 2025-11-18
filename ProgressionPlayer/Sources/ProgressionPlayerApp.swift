@@ -25,9 +25,6 @@ struct ProgressionPlayerApp: App {
         Tab("Theory", systemImage: "play.circle.fill") {
           TheoryView()
         }
-        Tab("Tests", systemImage: "arrow.trianglehead.2.clockwise") {
-          SpatialView()
-        }
       }
     }
   }

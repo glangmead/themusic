@@ -31,7 +31,7 @@ struct TheoryView: View {
   let voiceMixerNodes: [AVAudioMixerNode]
   let voicePool: NoteHandler
 
-  let seq: Sequencer
+  let seq: Sequencer?
   
   // Bindings for properties of the oscillator and filter
   let oscillatorShapeBinding: Binding<BasicOscillator.OscShape>
@@ -46,6 +46,7 @@ struct TheoryView: View {
   let distortionWetDryMixBinding: Binding<Double>
   let reverbPresetBinding: Binding<AVAudioUnitReverbPreset>
   let distortionPresetBinding: Binding<AVAudioUnitDistortionPreset>
+  let filterCutoffBinding: Binding<Double>
 
   @State private var key = Key.C
   @State private var octave: Int
@@ -100,11 +101,11 @@ struct TheoryView: View {
           ADSR(
             envelope:
               EnvelopeData(
-                attackTime: 0,
+                attackTime: 0.3,
                 decayTime: 0,
                 sustainLevel: 1,
                 releaseTime: 0,
-                scale: 10000
+                scale: 1000
               )
           )
       ))
@@ -117,7 +118,12 @@ struct TheoryView: View {
     // animate the voices with various Roses
     var roseAmount = 3.0
     for preset in presets {
-      preset.positionLFO = Rose(amplitude: 10, leafFactor: 2,  frequency: 1, startingPhase: roseAmount * 2 * .pi / Double(presets.count))
+      preset.positionLFO = Rose(
+        amplitude: 10,
+        leafFactor: 2,
+        frequency: 0.2,
+        startingPhase: roseAmount * 2 * .pi / Double(presets.count)
+      )
       roseAmount += 2.0
     }
     
@@ -133,7 +139,7 @@ struct TheoryView: View {
     
     // the sequencer will pluck on the arrows
     self.seq = Sequencer(engine: engine.audioEngine, numTracks: 1,  sourceNode: voicePool)
-    seq.play()
+    seq?.play()
     
     reverbWetDryMixBinding = Binding<Double>(
       get: { presets[0].getReverbWetDryMix() },
@@ -178,6 +184,10 @@ struct TheoryView: View {
     oscillatorShapeBinding = Binding<BasicOscillator.OscShape>(
       get: { oscillators[0].shape },
       set: { for osc in oscillators { osc.shape = $0 }}
+    )
+    filterCutoffBinding = Binding<Double>(
+      get: { return 0 },
+      set: { _ in () }
     )
     self.presets = presets
     self.oscillators = oscillators
@@ -233,7 +243,8 @@ struct TheoryView: View {
           content: {
             ForEach(keyChords, id: \.self) { chord in
               Button(chord.romanNumeralNotation(in: key) ?? chord.description) {
-                seq.sendTonicChord(chord: chord, octave: octave)
+                seq?.sendTonicChord(chord: chord, octave: octave)
+                seq?.play()
               }
               .frame(maxWidth: .infinity)
               //.font(.largeTitle)
@@ -244,8 +255,7 @@ struct TheoryView: View {
       }
       .navigationTitle("Scape")
       Button("Stop") {
-        seq.stop()
-        seq.play()
+        seq?.stop()
       }
     }
   }

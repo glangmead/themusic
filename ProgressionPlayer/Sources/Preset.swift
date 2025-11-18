@@ -20,22 +20,22 @@ class InstrumentWithAVAudioUnitEffects {
   var sourceNode: AVAudioSourceNode? = nil
   
   // members whose params we can expose
-  var reverbNode = AVAudioUnitReverb()
+  var reverbNode: AVAudioUnitReverb?
   var mixerNode = AVAudioMixerNode()
-  var delayNode = AVAudioUnitDelay()
-  var distortionNode = AVAudioUnitDistortion()
+  var delayNode: AVAudioUnitDelay?
+  var distortionNode: AVAudioUnitDistortion?
   var reverbPreset: AVAudioUnitReverbPreset {
     didSet {
-      reverbNode.loadFactoryPreset(reverbPreset)
+      reverbNode?.loadFactoryPreset(reverbPreset)
     }
   }
   var distortionPreset: AVAudioUnitDistortionPreset
   
   func getReverbWetDryMix() -> Double {
-    Double(reverbNode.wetDryMix)
+    Double(reverbNode?.wetDryMix ?? 0)
   }
   func setReverbWetDryMix(_ val: Double) {
-    reverbNode.wetDryMix = Float(val)
+    reverbNode?.wetDryMix = Float(val)
   }
 
   func getSpatialPosition() -> (Double, Double, Double) {
@@ -52,48 +52,48 @@ class InstrumentWithAVAudioUnitEffects {
   }
   
   func getDelayTime() -> Double {
-    Double(delayNode.delayTime)
+    Double(delayNode?.delayTime ?? 0)
   }
   func setDelayTime(_ val: Double) {
-    delayNode.delayTime = val
+    delayNode?.delayTime = val
   }
   func getDelayFeedback() -> Double {
-    Double(delayNode.feedback)
+    Double(delayNode?.feedback ?? 0)
   }
   func setDelayFeedback(_ val : Double) {
-    delayNode.feedback = Float(val)
+    delayNode?.feedback = Float(val)
   }
   func getDelayLowPassCutoff() -> Double {
-    Double(delayNode.lowPassCutoff)
+    Double(delayNode?.lowPassCutoff ?? 0)
   }
   func setDelayLowPassCutoff(_ val: Double) {
-    delayNode.lowPassCutoff = Float(val)
+    delayNode?.lowPassCutoff = Float(val)
   }
   func getDelayWetDryMix() -> Double {
-    Double(delayNode.wetDryMix)
+    Double(delayNode?.wetDryMix ?? 0)
   }
   func setDelayWetDryMix(_ val: Double) {
-    delayNode.wetDryMix = Float(val)
+    delayNode?.wetDryMix = Float(val)
   }
   // .drumsBitBrush, .drumsBufferBeats, .drumsLoFi, .multiBrokenSpeaker, .multiCellphoneConcert, .multiDecimated1, .multiDecimated2, .multiDecimated3, .multiDecimated4, .multiDistortedFunk, .multiDistortedCubed, .multiDistortedSquared, .multiEcho1, .multiEcho2, .multiEchoTight1, .multiEchoTight2, .multiEverythingIsBroken, .speechAlienChatter, .speechCosmicInterference, .speechGoldenPi, .speechRadioTower, .speechWaves
   func getDistortionPreset() -> AVAudioUnitDistortionPreset {
     distortionPreset
   }
   func setDistortionPreset(_ val: AVAudioUnitDistortionPreset) {
-    distortionNode.loadFactoryPreset(val)
+    distortionNode?.loadFactoryPreset(val)
     self.distortionPreset = val
   }
   func getDistortionPreGain() -> Double {
-    Double(distortionNode.preGain)
+    Double(distortionNode?.preGain ?? 0)
   }
   func setDistortionPreGain(_ val: Double) {
-    distortionNode.preGain = Float(val)
+    distortionNode?.preGain = Float(val)
   }
   func getDistortionWetDryMix() -> Double {
-    Double(distortionNode.wetDryMix)
+    Double(distortionNode?.wetDryMix ?? 0)
   }
   func setDistortionWetDryMix(_ val: Double) {
-    distortionNode.wetDryMix = Float(val)
+    distortionNode?.wetDryMix = Float(val)
   }
   
   private var lastTimeWeSetPosition = 0.0
@@ -101,10 +101,13 @@ class InstrumentWithAVAudioUnitEffects {
   
   init(sound: Arrow11) {
     self.sound = sound
+    self.reverbNode = AVAudioUnitReverb()
+    self.delayNode = AVAudioUnitDelay()
+    self.distortionNode = AVAudioUnitDistortion()
     self.distortionPreset = .defaultValue
-    self.distortionNode.wetDryMix = 0
+    self.distortionNode?.wetDryMix = 0
     self.reverbPreset = .cathedral
-    self.reverbNode.wetDryMix = 0
+    self.reverbNode?.wetDryMix = 0
     self.setDelayTime(0)
   }
   
@@ -130,7 +133,7 @@ class InstrumentWithAVAudioUnitEffects {
       source: sound.withSidecar(setPositionArrow),
       sampleRate: sampleRate)
     
-    let nodes = [sourceNode!, distortionNode, delayNode, reverbNode, mixerNode]
+    let nodes = [sourceNode!, distortionNode, delayNode, reverbNode, mixerNode].compactMap { $0 }
     engine.attach(nodes)
     for i in 0..<nodes.count-1 {
       engine.connect(nodes[i], to: nodes[i+1], format: nil) // having mono when the "to:" is reverb failed on my iPhone

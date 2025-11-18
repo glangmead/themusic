@@ -16,6 +16,7 @@ struct Sequencer {
   
   init(engine: AVAudioEngine, numTracks: Int, sourceNode: NoteHandler) {
     avSeq = AVAudioSequencer(audioEngine: engine)
+    avSeq.rate = 0.5
     for _ in 0..<numTracks {
       avTracks.append(avSeq.createAndAppendTrack())
     }
@@ -65,7 +66,7 @@ struct Sequencer {
     let seqTrack = avTracks[0]
     // AVMusicTimeStamp: a fractional number of beats
     for note in chord {
-      seqTrack.addEvent(AVMIDINoteEvent(channel: 0, key: UInt32(note), velocity: 100, duration: 12), at: avSeq.currentPositionInBeats + 1)
+      seqTrack.addEvent(AVMIDINoteEvent(channel: 0, key: UInt32(note), velocity: 100, duration: 24), at: avSeq.currentPositionInBeats + 1)
     }
   }
 }
