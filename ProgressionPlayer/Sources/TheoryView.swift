@@ -10,37 +10,36 @@ import SwiftUI
 import Tonic
 
 class KnobbySynth {
-  let engine: SpatialAudioEngine
+  let engine = SpatialAudioEngine()
   
   let numVoices = 8
   // the layer cake of tone generation: oscillator, wrapped in filter, then voice, then preset
-  var oscillators: [BasicOscillator]
-  var filters: [HasFactor]
-  var voices: [SimpleVoice]
-  let presets: [Preset]
+  var oscillators: [BasicOscillator] = []
+  var filters: [HasFactor] = []
+  var voices: [SimpleVoice] = []
+  var presets: [Preset] = []
   
-  let voiceMixerNodes: [AVAudioMixerNode]
+  var voiceMixerNodes: [AVAudioMixerNode] = []
   let voicePool: NoteHandler
   
-  let seq: Sequencer?
+  var seq: Sequencer? = nil
   
-  // Bindings for properties of the oscillator and filter
-  let oscillatorShapeBinding: Binding<BasicOscillator.OscShape>
-  // Bindings for the effects
-  let reverbWetDryMixBinding: Binding<Double>
-  let spatialPositionBinding: Binding<(Double, Double, Double)>
-  let delayTimeBinding: Binding<Double>
-  let delayFeedbackBinding: Binding<Double>
-  let delayLowPassCutoffBinding: Binding<Double>
-  let delayWetDryMixBinding: Binding<Double>
-  let distortionPreGainBinding: Binding<Double>
-  let distortionWetDryMixBinding: Binding<Double>
-  let reverbPresetBinding: Binding<AVAudioUnitReverbPreset>
-  let distortionPresetBinding: Binding<AVAudioUnitDistortionPreset>
-  let filterCutoffBinding: Binding<Double>
+  // Bindings
+  var oscillatorShapeBinding: Binding<BasicOscillator.OscShape>? = nil
+  var reverbWetDryMixBinding: Binding<Double>? = nil
+  var spatialPositionBinding: Binding<(Double, Double, Double)>? = nil
+  var delayTimeBinding: Binding<Double>? = nil
+  var delayFeedbackBinding: Binding<Double>? = nil
+  var delayLowPassCutoffBinding: Binding<Double>? = nil
+  var delayWetDryMixBinding: Binding<Double>? = nil
+  var distortionPreGainBinding: Binding<Double>? = nil
+  var distortionWetDryMixBinding: Binding<Double>? = nil
+  var reverbPresetBinding: Binding<AVAudioUnitReverbPreset>? = nil
+  var distortionPresetBinding: Binding<AVAudioUnitDistortionPreset>? = nil
+  var filterCutoffBinding: Binding<Double>? = nil
   
   var key = Key.C
-  var octave: Int
+  var octave: Int = 2
   
   var keyChords: [Chord] {
     get {
@@ -54,18 +53,14 @@ class KnobbySynth {
   }
   
   init() {
-    let engine = SpatialAudioEngine()
-    
-    var oscillators: [BasicOscillator] = []
-    var filters: [LowPassFilter] = []
-    var voices: [SimpleVoice] = []
     for _ in 0..<numVoices {
       let osc = BasicOscillator(shape: .sawtooth)
       oscillators.append(osc)
       let filteredOsc = LowPassFilter(of: osc, cutoff: 100000, resonance: 0)
       filters.append(filteredOsc)
       
-      voices.append(SimpleVoice(
+      var roseAmount = 3.0
+      let voice = SimpleVoice(
         oscillator:
           ModulatedPreMult(
             factor: 440.0,
@@ -98,16 +93,9 @@ class KnobbySynth {
                 scale: 1000
               )
           )
-      ))
-    }
-    
-    voicePool = PoolVoice(voices: voices)
-    
-    let presets = voices.map { Preset(sound: $0) }
-    
-    // animate the voices with various Roses
-    var roseAmount = 3.0
-    for preset in presets {
+      )
+      voices.append(voice)
+      let preset = Preset(sound: voice)
       preset.positionLFO = Rose(
         amplitude: 2,
         leafFactor: roseAmount,
@@ -115,9 +103,60 @@ class KnobbySynth {
         startingPhase: roseAmount * 2 * .pi / Double(presets.count)
       )
       roseAmount += 2.0
+      presets.append(preset)
     }
     
-    voiceMixerNodes = presets.map {  $0.buildChainAndGiveOutputNode(forEngine: engine) }
+    voicePool = PoolVoice(voices: voices)
+        
+    reverbWetDryMixBinding = Binding<Double>(
+      get: { self.presets[0].getReverbWetDryMix() },
+      set: { for preset in self.presets { preset.setReverbWetDryMix($0) } }
+    )
+    spatialPositionBinding = Binding<(Double, Double, Double)>(
+      get: { self.presets[0].getSpatialPosition() },
+      set: { for preset in self.presets { preset.setSpatialPosition($0) } }
+    )
+    delayTimeBinding = Binding<Double>(
+      get: { self.presets[0].getDelayTime() },
+      set: { for preset in self.presets { preset.setDelayTime($0) } }
+    )
+    delayFeedbackBinding = Binding<Double>(
+      get: { self.presets[0].getDelayFeedback() },
+      set: { for preset in self.presets { preset.setDelayFeedback($0) } }
+    )
+    delayLowPassCutoffBinding = Binding<Double>(
+      get: { self.presets[0].getDelayFeedback() },
+      set: { for preset in self.presets { preset.setDelayLowPassCutoff($0) } }
+    )
+    delayWetDryMixBinding = Binding<Double>(
+      get: { self.presets[0].getDelayWetDryMix() },
+      set: { for preset in self.presets { preset.setDelayWetDryMix($0) } }
+    )
+    distortionPreGainBinding = Binding<Double>(
+      get: { self.presets[0].getDelayFeedback() },
+      set: { for preset in self.presets { preset.setDistortionPreGain($0) } }
+    )
+    distortionWetDryMixBinding = Binding<Double>(
+      get: { self.presets[0].getDelayFeedback() },
+      set: { for preset in self.presets { preset.setDistortionWetDryMix($0) } }
+    )
+    reverbPresetBinding = Binding<AVAudioUnitReverbPreset>(
+      get: { return self.presets[0].reverbPreset },
+      set: { for preset in self.presets { preset.reverbPreset = $0 } }
+    )
+    distortionPresetBinding = Binding<AVAudioUnitDistortionPreset>(
+      get: { self.presets[0].getDistortionPreset() },
+      set: { for preset in self.presets { preset.setDistortionPreset($0) } }
+    )
+    oscillatorShapeBinding = Binding<BasicOscillator.OscShape>(
+      get: { self.oscillators[0].shape },
+      set: { for osc in self.oscillators { osc.shape = $0 }}
+    )
+    filterCutoffBinding = Binding<Double>(
+      get: { return 0 },
+      set: { _ in () }
+    )
+    voiceMixerNodes = presets.map {  $0.buildChainAndGiveOutputNode(forEngine: self.engine) }
     engine.connectToEnvNode(voiceMixerNodes)
     
     do {
@@ -125,64 +164,10 @@ class KnobbySynth {
     } catch {
       print("engine failed")
     }
-    self.engine = engine
     
     // the sequencer will pluck on the arrows
     self.seq = Sequencer(engine: engine.audioEngine, numTracks: 2,  sourceNode: voicePool)
     
-    reverbWetDryMixBinding = Binding<Double>(
-      get: { presets[0].getReverbWetDryMix() },
-      set: { for preset in presets { preset.setReverbWetDryMix($0) } }
-    )
-    spatialPositionBinding = Binding<(Double, Double, Double)>(
-      get: { presets[0].getSpatialPosition() },
-      set: { for preset in presets { preset.setSpatialPosition($0) } }
-    )
-    delayTimeBinding = Binding<Double>(
-      get: { presets[0].getDelayTime() },
-      set: { for preset in presets { preset.setDelayTime($0) } }
-    )
-    delayFeedbackBinding = Binding<Double>(
-      get: { presets[0].getDelayFeedback() },
-      set: { for preset in presets { preset.setDelayFeedback($0) } }
-    )
-    delayLowPassCutoffBinding = Binding<Double>(
-      get: { presets[0].getDelayFeedback() },
-      set: { for preset in presets { preset.setDelayLowPassCutoff($0) } }
-    )
-    delayWetDryMixBinding = Binding<Double>(
-      get: { presets[0].getDelayWetDryMix() },
-      set: { for preset in presets { preset.setDelayWetDryMix($0) } }
-    )
-    distortionPreGainBinding = Binding<Double>(
-      get: { presets[0].getDelayFeedback() },
-      set: { for preset in presets { preset.setDistortionPreGain($0) } }
-    )
-    distortionWetDryMixBinding = Binding<Double>(
-      get: { presets[0].getDelayFeedback() },
-      set: { for preset in presets { preset.setDistortionWetDryMix($0) } }
-    )
-    reverbPresetBinding = Binding<AVAudioUnitReverbPreset>(
-      get: { return presets[0].reverbPreset },
-      set: { for preset in presets { preset.reverbPreset = $0 } }
-    )
-    distortionPresetBinding = Binding<AVAudioUnitDistortionPreset>(
-      get: { presets[0].getDistortionPreset() },
-      set: { for preset in presets { preset.setDistortionPreset($0) } }
-    )
-    oscillatorShapeBinding = Binding<BasicOscillator.OscShape>(
-      get: { oscillators[0].shape },
-      set: { for osc in oscillators { osc.shape = $0 }}
-    )
-    filterCutoffBinding = Binding<Double>(
-      get: { return 0 },
-      set: { _ in () }
-    )
-    self.presets = presets
-    self.oscillators = oscillators
-    self.filters = filters
-    self.voices = voices
-    self.octave = 2
   }
 }
 
@@ -197,7 +182,7 @@ struct TheoryView: View {
   
   var body: some View {
     NavigationStack {
-      Picker("Instrument", selection: synth.oscillatorShapeBinding) {
+      Picker("Instrument", selection: synth.oscillatorShapeBinding!) {
         ForEach(BasicOscillator.OscShape.allCases, id: \.self) { option in
           Text(String(describing: option))
         }
@@ -206,7 +191,7 @@ struct TheoryView: View {
 
       HStack {
         Text("Reverb preset")
-        Picker("Reverb preset", selection: synth.reverbPresetBinding) {
+        Picker("Reverb preset", selection: synth.reverbPresetBinding!) {
           ForEach(AVAudioUnitReverbPreset.allCases, id: \.self) {
             Text($0.name)
           }
@@ -214,11 +199,11 @@ struct TheoryView: View {
       }
       HStack {
         Text("Reverb wet/dry mix")
-        Slider(value: synth.reverbWetDryMixBinding, in: 0...100)
+        Slider(value: synth.reverbWetDryMixBinding!, in: 0...100)
       }
       HStack {
         Text("Delay time")
-        Slider(value: synth.delayTimeBinding, in: 0...5)
+        Slider(value: synth.delayTimeBinding!, in: 0...5)
       }
       Spacer()
       Picker("Key", selection: $synth.key) {
