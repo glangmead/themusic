@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9B1864642E772E37006147D8 /* Overture in Frameworks */ = {isa = PBXBuildFile; productRef = 9B1864632E772E37006147D8 /* Overture */; };
 		9B1F01702EB95F0A00C5110F /* Note.icon in Resources */ = {isa = PBXBuildFile; fileRef = 9B1F016F2EB95F0A00C5110F /* Note.icon */; };
+		9B7430A02ECFA5640017DE7D /* Assets 2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B7430922ECFA5640017DE7D /* Assets 2.xcassets */; };
 		9BA522562EB0FE8F00ECF215 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9BA522552EB0FE8F00ECF215 /* AudioKit */; };
 		9BD1B7002E8B08D000C718F1 /* Tonic in Frameworks */ = {isa = PBXBuildFile; productRef = 9BD1B6FF2E8B08D000C718F1 /* Tonic */; };
 		9BFFD97F2E7DA94B00E7CB55 /* beat.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 9BFFD97E2E7DA94B00E7CB55 /* beat.aiff */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		9B1F016F2EB95F0A00C5110F /* Note.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = Note.icon; sourceTree = "<group>"; };
+		9B7430922ECFA5640017DE7D /* Assets 2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Assets 2.xcassets"; sourceTree = "<group>"; };
 		9BA522572EB10D1C00ECF215 /* ProgressionPlayer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ProgressionPlayer-Info.plist"; sourceTree = "<group>"; };
 		9BC0FCA72E704EA900472A5A /* ProgressionPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProgressionPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC0FCB42E704EAA00472A5A /* ProgressionPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProgressionPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +99,7 @@
 				9BC0FCC12E704EAA00472A5A /* ProgressionPlayerUITests */,
 				9BC0FCD42E7055FE00472A5A /* Frameworks */,
 				9BC0FCA82E704EA900472A5A /* Products */,
+				9B7430922ECFA5640017DE7D /* Assets 2.xcassets */,
 				9BFFD97E2E7DA94B00E7CB55 /* beat.aiff */,
 				9B1F016F2EB95F0A00C5110F /* Note.icon */,
 			);
@@ -248,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BFFD97F2E7DA94B00E7CB55 /* beat.aiff in Resources */,
+				9B7430A02ECFA5640017DE7D /* Assets 2.xcassets in Resources */,
 				9B1F01702EB95F0A00C5110F /* Note.icon in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
