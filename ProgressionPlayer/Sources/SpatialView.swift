@@ -13,15 +13,23 @@ class EngineerPlayer {
   let audioEngine = AVAudioEngine()
   let playerNode = AVAudioPlayerNode()
   let environmentNode = AVAudioEnvironmentNode()
+  let effectNode = AVAudioUnitReverb()
+  let mixerNode = AVAudioMixerNode()
   
   init(_ url: URL) throws {
     let audioFile = try AVAudioFile(forReading: url)
     let mono = AVAudioFormat(standardFormatWithSampleRate: audioFile.processingFormat.sampleRate, channels: 1)
     let stereo = AVAudioFormat(standardFormatWithSampleRate: audioFile.processingFormat.sampleRate, channels: 2)
     
+    effectNode.loadFactoryPreset(.largeHall)
+    effectNode.wetDryMix = 50
     audioEngine.attach(playerNode)
     audioEngine.attach(environmentNode)
-    audioEngine.connect(playerNode, to: environmentNode, format: mono)
+    audioEngine.attach(effectNode)
+    audioEngine.attach(mixerNode)
+    audioEngine.connect(playerNode, to: effectNode, format: mono)
+    audioEngine.connect(effectNode, to: mixerNode, format: stereo)
+    audioEngine.connect(mixerNode, to: environmentNode, format: mono)
     audioEngine.connect(environmentNode, to: audioEngine.mainMixerNode, format: stereo)
     audioEngine.prepare()
     try audioEngine.start()

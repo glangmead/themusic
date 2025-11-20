@@ -7,8 +7,6 @@
 
 import Foundation
 
-typealias CoreFloat = Double
-
 struct EnvelopeData {
   var attackTime: CoreFloat = 0.2
   var decayTime: CoreFloat = 0.5
@@ -48,18 +46,18 @@ class ADSR: ControlArrow11, NoteHandler {
     ])
     weak var futureSelf: ADSR? = nil
     super.init(of: Arrow11(of: { time in
-      return (futureSelf!.attack ? futureSelf!.attackEnv.val(Date.now.timeIntervalSince1970 - futureSelf!.timeOrigin) : futureSelf!.decayEnv.val(Date.now.timeIntervalSince1970 - futureSelf!.timeOrigin))
+      return (futureSelf!.attack ? futureSelf!.attackEnv.val(CoreFloat(Date.now.timeIntervalSince1970) - futureSelf!.timeOrigin) : futureSelf!.decayEnv.val(CoreFloat(Date.now.timeIntervalSince1970) - futureSelf!.timeOrigin))
     }))
     futureSelf = self
   }
   
   func noteOn(_ note: MidiNote) {
-    timeOrigin = Date.now.timeIntervalSince1970
+    timeOrigin = CoreFloat(Date.now.timeIntervalSince1970)
     attack = true
   }
   
   func noteOff(_ note: MidiNote) {
-    timeOrigin = Date.now.timeIntervalSince1970
+    timeOrigin = CoreFloat(Date.now.timeIntervalSince1970)
     attack = false
   }
 }

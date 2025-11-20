@@ -50,11 +50,11 @@ class SpatialAudioEngine {
     envNode.isListenerHeadTrackingEnabled = true
     envNode.listenerPosition = AVAudio3DPoint(x: 0, y: 0, z: 0)
     envNode.distanceAttenuationParameters.referenceDistance = 2.0
-    envNode.distanceAttenuationParameters.maximumDistance = 500.0
+    envNode.distanceAttenuationParameters.maximumDistance = 50.0
     //envNode.distanceAttenuationParameters.rolloffFactor = 2.0
     envNode.reverbParameters.enable = true
     envNode.reverbParameters.loadFactoryReverbPreset(.largeHall)
-    envNode.reverbBlend = 0.2
+    envNode.reverbBlend = 0.5
     
     //envNode.listenerVectorOrientation = AVAudio3DVectorOrientation(forward: AVAudio3DVector(x: 0.0, y: -1.0, z: 1.0), up: AVAudio3DVector(x: 0.0, y: 0.0, z: 1.0))
     

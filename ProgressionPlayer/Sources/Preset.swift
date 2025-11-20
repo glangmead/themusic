@@ -18,12 +18,13 @@ class InstrumentWithAVAudioUnitEffects {
   var positionLFO: Arrow13? = nil
   
   var sourceNode: AVAudioSourceNode? = nil
+  var playerNode: AVAudioPlayerNode? = nil//AVAudioPlayerNode()
   
   // members whose params we can expose
   var reverbNode: AVAudioUnitReverb?
   var mixerNode = AVAudioMixerNode()
-  var delayNode: AVAudioUnitDelay?
-  var distortionNode: AVAudioUnitDistortion?
+  var delayNode: AVAudioUnitDelay? = nil
+  var distortionNode: AVAudioUnitDistortion? = nil
   var reverbPreset: AVAudioUnitReverbPreset {
     didSet {
       reverbNode?.loadFactoryPreset(reverbPreset)
@@ -31,48 +32,48 @@ class InstrumentWithAVAudioUnitEffects {
   }
   var distortionPreset: AVAudioUnitDistortionPreset
   
-  func getReverbWetDryMix() -> Double {
-    Double(reverbNode?.wetDryMix ?? 0)
+  func getReverbWetDryMix() -> CoreFloat {
+    CoreFloat(reverbNode?.wetDryMix ?? 0)
   }
-  func setReverbWetDryMix(_ val: Double) {
+  func setReverbWetDryMix(_ val: CoreFloat) {
     reverbNode?.wetDryMix = Float(val)
   }
 
-  func getSpatialPosition() -> (Double, Double, Double) {
+  func getSpatialPosition() -> (CoreFloat, CoreFloat, CoreFloat) {
     (
-      Double(mixerNode.position.x),
-      Double(mixerNode.position.y),
-      Double(mixerNode.position.z)
+      CoreFloat(mixerNode.position.x),
+      CoreFloat(mixerNode.position.y),
+      CoreFloat(mixerNode.position.z)
     )
   }
-  func setSpatialPosition(_ pos: (Double, Double, Double)) {
+  func setSpatialPosition(_ pos: (CoreFloat, CoreFloat, CoreFloat)) {
     mixerNode.position.x = Float(pos.0)
     mixerNode.position.y = Float(pos.1)
     mixerNode.position.z = Float(pos.2)
   }
   
-  func getDelayTime() -> Double {
-    Double(delayNode?.delayTime ?? 0)
+  func getDelayTime() -> CoreFloat {
+    CoreFloat(delayNode?.delayTime ?? 0)
   }
-  func setDelayTime(_ val: Double) {
+  func setDelayTime(_ val: CoreFloat) {
     delayNode?.delayTime = val
   }
-  func getDelayFeedback() -> Double {
-    Double(delayNode?.feedback ?? 0)
+  func getDelayFeedback() -> CoreFloat {
+    CoreFloat(delayNode?.feedback ?? 0)
   }
-  func setDelayFeedback(_ val : Double) {
+  func setDelayFeedback(_ val : CoreFloat) {
     delayNode?.feedback = Float(val)
   }
-  func getDelayLowPassCutoff() -> Double {
-    Double(delayNode?.lowPassCutoff ?? 0)
+  func getDelayLowPassCutoff() -> CoreFloat {
+    CoreFloat(delayNode?.lowPassCutoff ?? 0)
   }
-  func setDelayLowPassCutoff(_ val: Double) {
+  func setDelayLowPassCutoff(_ val: CoreFloat) {
     delayNode?.lowPassCutoff = Float(val)
   }
-  func getDelayWetDryMix() -> Double {
-    Double(delayNode?.wetDryMix ?? 0)
+  func getDelayWetDryMix() -> CoreFloat {
+    CoreFloat(delayNode?.wetDryMix ?? 0)
   }
-  func setDelayWetDryMix(_ val: Double) {
+  func setDelayWetDryMix(_ val: CoreFloat) {
     delayNode?.wetDryMix = Float(val)
   }
   // .drumsBitBrush, .drumsBufferBeats, .drumsLoFi, .multiBrokenSpeaker, .multiCellphoneConcert, .multiDecimated1, .multiDecimated2, .multiDecimated3, .multiDecimated4, .multiDistortedFunk, .multiDistortedCubed, .multiDistortedSquared, .multiEcho1, .multiEcho2, .multiEchoTight1, .multiEchoTight2, .multiEverythingIsBroken, .speechAlienChatter, .speechCosmicInterference, .speechGoldenPi, .speechRadioTower, .speechWaves
@@ -83,16 +84,16 @@ class InstrumentWithAVAudioUnitEffects {
     distortionNode?.loadFactoryPreset(val)
     self.distortionPreset = val
   }
-  func getDistortionPreGain() -> Double {
-    Double(distortionNode?.preGain ?? 0)
+  func getDistortionPreGain() -> CoreFloat {
+    CoreFloat(distortionNode?.preGain ?? 0)
   }
-  func setDistortionPreGain(_ val: Double) {
+  func setDistortionPreGain(_ val: CoreFloat) {
     distortionNode?.preGain = Float(val)
   }
-  func getDistortionWetDryMix() -> Double {
-    Double(distortionNode?.wetDryMix ?? 0)
+  func getDistortionWetDryMix() -> CoreFloat {
+    CoreFloat(distortionNode?.wetDryMix ?? 0)
   }
-  func setDistortionWetDryMix(_ val: Double) {
+  func setDistortionWetDryMix(_ val: CoreFloat) {
     distortionNode?.wetDryMix = Float(val)
   }
   
@@ -102,16 +103,16 @@ class InstrumentWithAVAudioUnitEffects {
   init(sound: Arrow11) {
     self.sound = sound
     self.reverbNode = AVAudioUnitReverb()
-    self.delayNode = AVAudioUnitDelay()
-    self.distortionNode = AVAudioUnitDistortion()
+    //self.delayNode = AVAudioUnitDelay()
+    //self.distortionNode = AVAudioUnitDistortion()
+    //self.distortionNode?.wetDryMix = 0
+    //self.setDelayTime(0)
     self.distortionPreset = .defaultValue
-    self.distortionNode?.wetDryMix = 0
     self.reverbPreset = .cathedral
     self.reverbNode?.wetDryMix = 0
-    self.setDelayTime(0)
   }
   
-  func setPosition(_ t: Double) {
+  func setPosition(_ t: CoreFloat) {
     if t > 1 { // fixes some race on startup
       if positionLFO != nil {
         if (t - lastTimeWeSetPosition) > setPositionMinWaitTime {
@@ -131,9 +132,19 @@ class InstrumentWithAVAudioUnitEffects {
     let setPositionArrow = Arrow10(of: { x in self.setPosition(x) })
     sourceNode = AVAudioSourceNode.withSource(
       source: sound.withSidecar(setPositionArrow),
-      sampleRate: sampleRate)
+      sampleRate: sampleRate
+    )
+    if playerNode != nil {
+      do {
+        let audioFile = try AVAudioFile(forReading: Bundle.main.url(forResource: "beat", withExtension: "aiff")!)
+        engine.attach([playerNode!])
+        playerNode!.scheduleFile(audioFile, at: nil, completionHandler: nil)
+      } catch {
+        print("\(error.localizedDescription)")
+      }
+    }
     
-    let nodes = [sourceNode!, distortionNode, delayNode, reverbNode, mixerNode].compactMap { $0 }
+    let nodes = [sourceNode, playerNode, distortionNode, delayNode, reverbNode, mixerNode].compactMap { $0 }
     engine.attach(nodes)
     for i in 0..<nodes.count-1 {
       engine.connect(nodes[i], to: nodes[i+1], format: nil) // having mono when the "to:" is reverb failed on my iPhone

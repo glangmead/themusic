@@ -11,14 +11,16 @@ import Tonic
 
 struct Sequencer {
   var avSeq: AVAudioSequencer
-  var avTracks = [AVMusicTrack]()
+  var avTracks: [AVMusicTrack] {
+    avSeq.tracks
+  }
   var seqListener: MIDICallbackInstrument?
   
   init(engine: AVAudioEngine, numTracks: Int, sourceNode: NoteHandler) {
     avSeq = AVAudioSequencer(audioEngine: engine)
     avSeq.rate = 0.5
     for _ in 0..<numTracks {
-      avTracks.append(avSeq.createAndAppendTrack())
+      avSeq.createAndAppendTrack()
     }
     // borrowing AudioKit's MIDICallbackInstrument, which has some pretty tough incantations to allocate a midi endpoint and its MIDIEndpointRef
     seqListener = MIDICallbackInstrument(midiInputName: "Scape Virtual MIDI Listener", callback: { /*[self]*/ status, note, velocity in
@@ -27,20 +29,37 @@ struct Sequencer {
         return
       }
       if midiStatus == .noteOn {
-        sourceNode.noteOn(MidiNote(note: note, velocity: velocity))
+        if velocity == 0 {
+          sourceNode.noteOff(MidiNote(note: note, velocity: velocity))
+        } else {
+          sourceNode.noteOn(MidiNote(note: note, velocity: velocity))
+        }
       } else if midiStatus == .noteOff {
         sourceNode.noteOff(MidiNote(note: note, velocity: velocity))
       }
       
     })
-    for track in avSeq.tracks {
-      track.destinationMIDIEndpoint = seqListener!.midiIn
-    }
   }
   
+  // e.g. Bundle.main.path(forResource: "MSLFSanctus", ofType: "mid")!
+  func playURL(url: URL) {
+    do {
+      stop()
+      rewind()
+      try avSeq.load(from: url, options: [])
+      play()
+    } catch {
+      print("\(error.localizedDescription)")
+    }
+  }
+
   func play() {
-    avSeq.prepareToPlay()
+    for track in avSeq.tracks {
+      // kAudioToolboxErr_InvalidPlayerState -10852
+      track.destinationMIDIEndpoint = seqListener!.midiIn
+    }
     // kAudioToolboxError_NoTrackDestination -66720
+    avSeq.prepareToPlay()
     try! avSeq.start()
   }
   

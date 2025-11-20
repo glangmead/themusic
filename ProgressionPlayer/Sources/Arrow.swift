@@ -69,9 +69,12 @@ import SwiftUI
 ///   - stand up a Wavetable
 ///   ✓ get the list of chords going again
 
+// This is Double because an AVAudioSourceNodeRenderBlock sends the input (time) as a Float64
+typealias CoreFloat = Double
+
 class Arrow10 {
-  var of: (Double) -> ()
-  init(of: @escaping (Double) -> ()) {
+  var of: (CoreFloat) -> ()
+  init(of: @escaping (CoreFloat) -> ()) {
     self.of = of
   }
 
@@ -81,8 +84,8 @@ class Arrow10 {
 }
 
 class Arrow11 {
-  var of: (Double) -> Double
-  init(of: @escaping (Double) -> Double) {
+  var of: (CoreFloat) -> CoreFloat
+  init(of: @escaping (CoreFloat) -> CoreFloat) {
     self.of = of
   }
   
@@ -100,26 +103,26 @@ class Arrow11 {
 }
 
 //protocol SampleSource {
-//  func sample(at time: Double) -> Double
+//  func sample(at time: CoreFloat) -> CoreFloat
 //}
 
 class Arrow21 {
-  var of: (Double, Double) -> Double
-  init(of: @escaping (Double, Double) -> Double) {
+  var of: (CoreFloat, CoreFloat) -> CoreFloat
+  init(of: @escaping (CoreFloat, CoreFloat) -> CoreFloat) {
     self.of = of
   }
 }
 
 class Arrow13 {
-  var of: (Double) -> (Double, Double, Double)
-  init(of: @escaping (Double) -> (Double, Double, Double)) {
+  var of: (CoreFloat) -> (CoreFloat, CoreFloat, CoreFloat)
+  init(of: @escaping (CoreFloat) -> (CoreFloat, CoreFloat, CoreFloat)) {
     self.of = of
   }
 }
 
 class Arrow12 {
-  var of: (Double) -> (Double, Double)
-  init(of: @escaping (Double) -> (Double, Double)) {
+  var of: (CoreFloat) -> (CoreFloat, CoreFloat)
+  init(of: @escaping (CoreFloat) -> (CoreFloat, CoreFloat)) {
     self.of = of
   }
 }
@@ -159,9 +162,9 @@ class ControlArrow10: Arrow10 {
   }
 }
 
-// given an arrow that converts time into some Double, use that output to set a key path on some object
+// given an arrow that converts time into some CoreFloat, use that output to set a key path on some object
 class KeyPathModulationArrow<T>: Arrow10 {
-  init(using: Arrow11, for object: T, keyPath: ReferenceWritableKeyPath<T, Double>) {
+  init(using: Arrow11, for object: T, keyPath: ReferenceWritableKeyPath<T, CoreFloat>) {
     super.init(of: { t in
       object[keyPath: keyPath] = using.of(t)
     })
@@ -186,7 +189,7 @@ func arrowCompose(outer: Arrow11, inner: Arrow11) -> Arrow11 {
   return Arrow11(of: { outer.of(inner.of($0)) })
 }
 
-func arrowConst(_ val: Double) -> Arrow11 {
+func arrowConst(_ val: CoreFloat) -> Arrow11 {
   return Arrow11(of: { _ in return val })
 }
 

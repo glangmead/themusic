@@ -28,7 +28,7 @@ let Square = Arrow11(of: { x in
 })
 
 let Noise = Arrow11(of: { x in
-  Double.random(in: 0.0...1.0)
+  CoreFloat.random(in: 0.0...1.0)
 })
 
 class BasicOscillator: Arrow11 {
@@ -65,7 +65,7 @@ class BasicOscillator: Arrow11 {
 }
 
 // see https://en.wikipedia.org/wiki/Rose_(mathematics)
-func Rose(amplitude: Double, leafFactor k: Double, frequency freq: Double, startingPhase sp: Double) -> Arrow13 {
+func Rose(amplitude: CoreFloat, leafFactor k: CoreFloat, frequency freq: CoreFloat, startingPhase sp: CoreFloat) -> Arrow13 {
   Arrow13(of: { x in
     let domain = (freq * x) + sp
     return ( amplitude * sin(k * domain) * cos(domain), amplitude * sin(k * domain) * sin(domain), amplitude * sin(domain) )
@@ -73,14 +73,14 @@ func Rose(amplitude: Double, leafFactor k: Double, frequency freq: Double, start
 }
 
 protocol HasFactor {
-  var factor: Double { get set }
+  var factor: CoreFloat { get set }
   var arrow: Arrow11 { get set }
 }
 
 class PreMult: Arrow11, HasFactor {
-  var factor: Double
+  var factor: CoreFloat
   var arrow: Arrow11
-  init(factor: Double, arrow: Arrow11) {
+  init(factor: CoreFloat, arrow: Arrow11) {
     self.factor = factor
     self.arrow = arrow
     weak var futureSelf: PreMult? = nil
@@ -93,9 +93,9 @@ class PreMult: Arrow11, HasFactor {
 }
 
 class PostMult: Arrow11, HasFactor {
-  var factor: Double
+  var factor: CoreFloat
   var arrow: Arrow11
-  init(factor: Double, arrow: Arrow11) {
+  init(factor: CoreFloat, arrow: Arrow11) {
     self.factor = factor
     self.arrow = arrow
     weak var fself: PostMult? = nil
@@ -107,10 +107,10 @@ class PostMult: Arrow11, HasFactor {
 }
 
 class ModulatedPreMult: Arrow11, HasFactor {
-  var factor: Double
+  var factor: CoreFloat
   var arrow: Arrow11
   var modulation: Arrow11
-  init(factor: Double, arrow: Arrow11, modulation: Arrow11) {
+  init(factor: CoreFloat, arrow: Arrow11, modulation: Arrow11) {
     self.factor = factor
     self.arrow = arrow
     self.modulation = modulation
@@ -126,12 +126,12 @@ class ModulatedPreMult: Arrow11, HasFactor {
 // from https://en.wikipedia.org/wiki/Low-pass_filter#Simple_infinite_impulse_response_filter
 // TODO: resonance, see perhaps https://www.martin-finke.de/articles/audio-plugins-013-filter
 class LowPassFilter: Arrow11, HasFactor {
-  var previousOutput: Double = 0.0
-  var previousTime: Double = 0.0
-  var factor: Double
-  var resonance: Double
+  var previousOutput: CoreFloat = 0.0
+  var previousTime: CoreFloat = 0.0
+  var factor: CoreFloat
+  var resonance: CoreFloat
   var arrow: Arrow11
-  init(of input: Arrow11, cutoff: Double, resonance: Double) {
+  init(of input: Arrow11, cutoff: CoreFloat, resonance: CoreFloat) {
     self.factor = cutoff
     self.arrow = input
     self.resonance = resonance

@@ -25,6 +25,9 @@ struct ProgressionPlayerApp: App {
         Tab("Theory", systemImage: "play.circle.fill") {
           TheoryView()
         }
+//        Tab("Engineer", systemImage: "play.circle") {
+//          SpatialView()
+//        }
       }
     }
   }

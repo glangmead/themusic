@@ -50,6 +50,8 @@ struct TheoryView: View {
 
   @State private var key = Key.C
   @State private var octave: Int
+  @State private var error: Error?
+  @State private var isImporting = false
   
   var keyChords: [Chord] {
     get {
@@ -70,7 +72,7 @@ struct TheoryView: View {
     var filters: [LowPassFilter] = []
     var voices: [SimpleVoice] = []
     for _ in 0..<numVoices {
-      let osc = BasicOscillator(shape: .square)
+      let osc = BasicOscillator(shape: .sawtooth)
       oscillators.append(osc)
       let filteredOsc = LowPassFilter(of: osc, cutoff: 100000, resonance: 0)
       filters.append(filteredOsc)
@@ -82,7 +84,7 @@ struct TheoryView: View {
             arrow: filteredOsc,
             modulation:
               PostMult( 
-                factor: 0.2,
+                factor: 0,
                 arrow:  PreMult(factor: 5.0, arrow: Triangle)
               )
               .asControl()
@@ -104,7 +106,7 @@ struct TheoryView: View {
                 attackTime: 0.3,
                 decayTime: 0,
                 sustainLevel: 1,
-                releaseTime: 0,
+                releaseTime: 0.2,
                 scale: 1000
               )
           )
@@ -119,9 +121,9 @@ struct TheoryView: View {
     var roseAmount = 3.0
     for preset in presets {
       preset.positionLFO = Rose(
-        amplitude: 10,
-        leafFactor: 2,
-        frequency: 0.2,
+        amplitude: 2,
+        leafFactor: roseAmount,
+        frequency: 0.5,
         startingPhase: roseAmount * 2 * .pi / Double(presets.count)
       )
       roseAmount += 2.0
@@ -138,8 +140,7 @@ struct TheoryView: View {
     self.engine = engine
     
     // the sequencer will pluck on the arrows
-    self.seq = Sequencer(engine: engine.audioEngine, numTracks: 1,  sourceNode: voicePool)
-    seq?.play()
+    self.seq = Sequencer(engine: engine.audioEngine, numTracks: 2,  sourceNode: voicePool)
     
     reverbWetDryMixBinding = Binding<Double>(
       get: { presets[0].getReverbWetDryMix() },
@@ -193,7 +194,7 @@ struct TheoryView: View {
     self.oscillators = oscillators
     self.filters = filters
     self.voices = voices
-    self.octave = 3
+    self.octave = 2
   }
   
   var body: some View {
@@ -254,10 +255,37 @@ struct TheoryView: View {
         )
       }
       .navigationTitle("Scape")
+      Button("Play beat.aiff") {
+        presets[0].playerNode?.play()
+      }
       Button("Stop") {
         seq?.stop()
+        seq?.rewind()
+      }
+      .toolbar {
+        ToolbarItem() {
+          Button {
+            isImporting = true
+          } label: {
+            Label("Import file",
+                  systemImage: "square.and.arrow.down")
+          }
+        }
+      }
+      .fileImporter(
+        isPresented: $isImporting,
+        allowedContentTypes: [.midi],
+        allowsMultipleSelection: false
+      ) { result in
+        switch result {
+        case .success(let urls):
+          seq?.playURL(url: urls[0])
+        case .failure(let error):
+          print("\(error.localizedDescription)")
+        }
       }
     }
+    
   }
 }
 
