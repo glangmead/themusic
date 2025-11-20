@@ -9,15 +9,7 @@ import AVFAudio
 import SwiftUI
 import Tonic
 
-// the knobs i want visible here:
-// - oscillator
-// - vibrato
-// - envelope
-// - filter envelope
-// - reverb
-// -
-
-struct TheoryView: View {
+class KnobbySynth {
   let engine: SpatialAudioEngine
   
   let numVoices = 8
@@ -29,7 +21,7 @@ struct TheoryView: View {
   
   let voiceMixerNodes: [AVAudioMixerNode]
   let voicePool: NoteHandler
-
+  
   let seq: Sequencer?
   
   // Bindings for properties of the oscillator and filter
@@ -46,11 +38,9 @@ struct TheoryView: View {
   let reverbPresetBinding: Binding<AVAudioUnitReverbPreset>
   let distortionPresetBinding: Binding<AVAudioUnitDistortionPreset>
   let filterCutoffBinding: Binding<Double>
-
-  @State private var key = Key.C
-  @State private var octave: Int
-  @State private var error: Error?
-  @State private var isImporting = false
+  
+  var key = Key.C
+  var octave: Int
   
   var keyChords: [Chord] {
     get {
@@ -62,7 +52,7 @@ struct TheoryView: View {
       }
     }
   }
-
+  
   init() {
     let engine = SpatialAudioEngine()
     
@@ -81,7 +71,7 @@ struct TheoryView: View {
             factor: 440.0,
             arrow: filteredOsc,
             modulation:
-              PostMult( 
+              PostMult(
                 factor: 0,
                 arrow:  PreMult(factor: 5.0, arrow: Triangle)
               )
@@ -94,7 +84,7 @@ struct TheoryView: View {
                 attackTime: 0.3,
                 decayTime: 0,
                 sustainLevel: 1.0,
-                releaseTime: 0.2 
+                releaseTime: 0.2
               )
           ),
         filterMod:
@@ -194,10 +184,20 @@ struct TheoryView: View {
     self.voices = voices
     self.octave = 2
   }
+}
+
+struct TheoryView: View {
+  @State private var synth: KnobbySynth
+  @State private var error: Error?
+  @State private var isImporting = false
+
+  init(synth: KnobbySynth) {
+    self.synth = synth
+  }
   
   var body: some View {
     NavigationStack {
-      Picker("Instrument", selection: oscillatorShapeBinding) {
+      Picker("Instrument", selection: synth.oscillatorShapeBinding) {
         ForEach(BasicOscillator.OscShape.allCases, id: \.self) { option in
           Text(String(describing: option))
         }
@@ -206,7 +206,7 @@ struct TheoryView: View {
 
       HStack {
         Text("Reverb preset")
-        Picker("Reverb preset", selection: reverbPresetBinding) {
+        Picker("Reverb preset", selection: synth.reverbPresetBinding) {
           ForEach(AVAudioUnitReverbPreset.allCases, id: \.self) {
             Text($0.name)
           }
@@ -214,21 +214,21 @@ struct TheoryView: View {
       }
       HStack {
         Text("Reverb wet/dry mix")
-        Slider(value: reverbWetDryMixBinding, in: 0...100)
+        Slider(value: synth.reverbWetDryMixBinding, in: 0...100)
       }
       HStack {
         Text("Delay time")
-        Slider(value: delayTimeBinding, in: 0...5)
+        Slider(value: synth.delayTimeBinding, in: 0...5)
       }
       Spacer()
-      Picker("Key", selection: $key) {
+      Picker("Key", selection: $synth.key) {
         Text("C").tag(Key.C)
         Text("G").tag(Key.G)
         Text("D").tag(Key.D)
         Text("A").tag(Key.A)
         Text("E").tag(Key.E)
       }.pickerStyle(.segmented)
-      Picker("Octave", selection: $octave) {
+      Picker("Octave", selection: $synth.octave) {
         ForEach(1..<7) { octave in
           Text("\(octave)")
         }
@@ -240,10 +240,10 @@ struct TheoryView: View {
             GridItem(.adaptive(minimum: 100, maximum: .infinity))
           ],
           content: {
-            ForEach(keyChords, id: \.self) { chord in
-              Button(chord.romanNumeralNotation(in: key) ?? chord.description) {
-                seq?.sendTonicChord(chord: chord, octave: octave)
-                seq?.play()
+            ForEach(synth.keyChords, id: \.self) { chord in
+              Button(chord.romanNumeralNotation(in: synth.key) ?? chord.description) {
+                synth.seq?.sendTonicChord(chord: chord, octave: synth.octave)
+                synth.seq?.play()
               }
               .frame(maxWidth: .infinity)
               //.font(.largeTitle)
@@ -253,12 +253,9 @@ struct TheoryView: View {
         )
       }
       .navigationTitle("Scape")
-      Button("Play beat.aiff") {
-        presets[0].playerNode?.play()
-      }
       Button("Stop") {
-        seq?.stop()
-        seq?.rewind()
+        synth.seq?.stop()
+        synth.seq?.rewind()
       }
       .toolbar {
         ToolbarItem() {
@@ -277,7 +274,7 @@ struct TheoryView: View {
       ) { result in
         switch result {
         case .success(let urls):
-          seq?.playURL(url: urls[0])
+          synth.seq?.playURL(url: urls[0])
         case .failure(let error):
           print("\(error.localizedDescription)")
         }
@@ -288,5 +285,5 @@ struct TheoryView: View {
 }
 
 #Preview {
-  TheoryView()
+  TheoryView(synth: KnobbySynth())
 }

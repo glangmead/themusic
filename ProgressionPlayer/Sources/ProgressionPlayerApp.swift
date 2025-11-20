@@ -23,7 +23,7 @@ struct ProgressionPlayerApp: App {
     WindowGroup {
       TabView {
         Tab("Theory", systemImage: "play.circle.fill") {
-          TheoryView()
+          TheoryView(synth: KnobbySynth())
         }
 //        Tab("Engineer", systemImage: "play.circle") {
 //          SpatialView()
