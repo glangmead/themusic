@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		9B1864642E772E37006147D8 /* Overture in Frameworks */ = {isa = PBXBuildFile; productRef = 9B1864632E772E37006147D8 /* Overture */; };
 		9B1F01702EB95F0A00C5110F /* Note.icon in Resources */ = {isa = PBXBuildFile; fileRef = 9B1F016F2EB95F0A00C5110F /* Note.icon */; };
-		9B6563CE2EB3D56400338E85 /* IdentifiedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 9B6563CD2EB3D56400338E85 /* IdentifiedCollections */; };
 		9BA522562EB0FE8F00ECF215 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9BA522552EB0FE8F00ECF215 /* AudioKit */; };
 		9BD1B7002E8B08D000C718F1 /* Tonic in Frameworks */ = {isa = PBXBuildFile; productRef = 9BD1B6FF2E8B08D000C718F1 /* Tonic */; };
 		9BFFD97F2E7DA94B00E7CB55 /* beat.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 9BFFD97E2E7DA94B00E7CB55 /* beat.aiff */; };
@@ -66,7 +65,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BA522562EB0FE8F00ECF215 /* AudioKit in Frameworks */,
-				9B6563CE2EB3D56400338E85 /* IdentifiedCollections in Frameworks */,
 				9BD1B7002E8B08D000C718F1 /* Tonic in Frameworks */,
 				9B1864642E772E37006147D8 /* Overture in Frameworks */,
 			);
@@ -144,7 +142,6 @@
 				9B1864632E772E37006147D8 /* Overture */,
 				9BD1B6FF2E8B08D000C718F1 /* Tonic */,
 				9BA522552EB0FE8F00ECF215 /* AudioKit */,
-				9B6563CD2EB3D56400338E85 /* IdentifiedCollections */,
 			);
 			productName = ProgressionPlayer;
 			productReference = 9BC0FCA72E704EA900472A5A /* ProgressionPlayer.app */;
@@ -232,7 +229,6 @@
 				9B1864622E772E37006147D8 /* XCRemoteSwiftPackageReference "swift-overture" */,
 				9BD1B6FE2E8B08D000C718F1 /* XCRemoteSwiftPackageReference "Tonic" */,
 				9BA522542EB0FE8400ECF215 /* XCRemoteSwiftPackageReference "AudioKit" */,
-				9B6563CC2EB3D56400338E85 /* XCRemoteSwiftPackageReference "swift-identified-collections" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9BC0FCA82E704EA900472A5A /* Products */;
@@ -621,14 +617,6 @@
 				minimumVersion = 0.5.0;
 			};
 		};
-		9B6563CC2EB3D56400338E85 /* XCRemoteSwiftPackageReference "swift-identified-collections" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/pointfreeco/swift-identified-collections";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.1.1;
-			};
-		};
 		9BA522542EB0FE8400ECF215 /* XCRemoteSwiftPackageReference "AudioKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/AudioKit/AudioKit.git";
@@ -652,11 +640,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9B1864622E772E37006147D8 /* XCRemoteSwiftPackageReference "swift-overture" */;
 			productName = Overture;
-		};
-		9B6563CD2EB3D56400338E85 /* IdentifiedCollections */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 9B6563CC2EB3D56400338E85 /* XCRemoteSwiftPackageReference "swift-identified-collections" */;
-			productName = IdentifiedCollections;
 		};
 		9BA522552EB0FE8F00ECF215 /* AudioKit */ = {
 			isa = XCSwiftPackageProductDependency;

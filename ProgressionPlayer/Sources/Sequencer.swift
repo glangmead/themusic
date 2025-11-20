@@ -54,13 +54,15 @@ struct Sequencer {
   }
 
   func play() {
-    for track in avSeq.tracks {
-      // kAudioToolboxErr_InvalidPlayerState -10852
-      track.destinationMIDIEndpoint = seqListener!.midiIn
+    if !avSeq.isPlaying {
+      for track in avSeq.tracks {
+        // kAudioToolboxErr_InvalidPlayerState -10852
+        track.destinationMIDIEndpoint = seqListener!.midiIn
+      }
+      // kAudioToolboxError_NoTrackDestination -66720
+      avSeq.prepareToPlay()
+      try! avSeq.start()
     }
-    // kAudioToolboxError_NoTrackDestination -66720
-    avSeq.prepareToPlay()
-    try! avSeq.start()
   }
   
   func stop() {

@@ -19,7 +19,6 @@ import Tonic
 
 struct TheoryView: View {
   let engine: SpatialAudioEngine
-  var sampleRate: Double
   
   let numVoices = 8
   // the layer cake of tone generation: oscillator, wrapped in filter, then voice, then preset
@@ -66,7 +65,6 @@ struct TheoryView: View {
 
   init() {
     let engine = SpatialAudioEngine()
-    sampleRate = engine.sampleRate
     
     var oscillators: [BasicOscillator] = []
     var filters: [LowPassFilter] = []
