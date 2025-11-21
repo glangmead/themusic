@@ -196,13 +196,23 @@ struct TheoryView: View {
         Spacer()
         VStack {
           Text("Reverb (%)").font(.headline)
-          SmallKnob(value: $synth.reverbMix, range: 0...100).frame(maxHeight: 80)
-          Text(String(format: "%.1f", synth.reverbMix))
+          KnobbyKnob(value: $synth.reverbMix,
+                 range: 0...100,
+                 size: 80,
+                 stepSize: 1,
+                 allowPoweroff: false,
+                 ifShowValue: true,
+                 valueFormatter: { String(format: "%.0f", $0)})
         }
         VStack {
           Text("Delay (s)").font(.headline)
-          SmallKnob(value: $synth.delayTime, range: 0...5).frame(maxHeight: 80)
-          Text(String(format: "%.1f", synth.delayTime))
+          KnobbyKnob(value: $synth.delayTime,
+                 range: 0...10,
+                 size: 80,
+                 stepSize: 0.1,
+                 allowPoweroff: false,
+                 ifShowValue: true,
+                 valueFormatter: { String(format: "%.1f", $0)})
         }
         Spacer()
       }
@@ -210,18 +220,33 @@ struct TheoryView: View {
         Spacer()
         VStack {
           Text("⌘ Loops").font(.headline)
-          SmallKnob(value: $synth.roseAmount.val, range: 0...10).frame(maxHeight: 80)
-          Text(String(format: "%.1f", synth.roseAmount.val))
+          KnobbyKnob(value: $synth.roseAmount.val,
+                 range: 0...10,
+                 size: 80,
+                 stepSize: 1,
+                 allowPoweroff: false,
+                 ifShowValue: true,
+                 valueFormatter: { String(format: "%.0f", $0)})
         }
         VStack {
           Text("⌘ Speed").font(.headline)
-          SmallKnob(value: $synth.roseFrequency.val, range: 0...10).frame(maxHeight: 80)
-          Text(String(format: "%.1f", synth.roseFrequency.val))
+          KnobbyKnob(value: $synth.roseFrequency.val,
+                 range: 0...10,
+                 size: 80,
+                 stepSize: 0.1,
+                 allowPoweroff: false,
+                 ifShowValue: true,
+                 valueFormatter: { String(format: "%.1f", $0)})
         }
         VStack {
           Text("⌘ Distance").font(.headline)
-          SmallKnob(value: $synth.roseAmplitude.val, range: 0...10).frame(maxHeight: 80)
-          Text(String(format: "%.1f", synth.roseAmplitude.val))
+          KnobbyKnob(value: $synth.roseAmplitude.val,
+                 range: 0...10,
+                 size: 80,
+                 stepSize: 0.1,
+                 allowPoweroff: false,
+                 ifShowValue: true,
+                 valueFormatter: { String(format: "%.1f", $0)})
         }
         Spacer()
       }
@@ -256,7 +281,7 @@ struct TheoryView: View {
             }
           }
         )
-        .navigationTitle("Scape")
+        .navigationTitle("⌘Scape")
         Button("Stop") {
           synth.seq?.stop()
           synth.seq?.rewind()
