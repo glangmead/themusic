@@ -49,7 +49,7 @@ class SpatialAudioEngine {
     envNode.outputType = .auto
     envNode.isListenerHeadTrackingEnabled = true
     envNode.listenerPosition = AVAudio3DPoint(x: 0, y: 0, z: 0)
-    envNode.distanceAttenuationParameters.referenceDistance = 2.0
+    envNode.distanceAttenuationParameters.referenceDistance = 5.0
     envNode.distanceAttenuationParameters.maximumDistance = 50.0
     //envNode.distanceAttenuationParameters.rolloffFactor = 2.0
     envNode.reverbParameters.enable = true

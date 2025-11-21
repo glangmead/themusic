@@ -18,9 +18,9 @@ class KnobbySynth {
   let numVoices = 8
   var oscillator: BasicOscillator? = nil
   var filteredOsc: LowPassFilter? = nil
-  var roseAmount: ArrowConstF = ArrowConstF(3)
-  var roseAmplitude: ArrowConstF = ArrowConstF(2)
-  var roseFrequency: ArrowConstF = ArrowConstF(0.5)
+  var roseAmount: ArrowConstF = ArrowConstF(1)
+  var roseAmplitude: ArrowConstF = ArrowConstF(5)
+  var roseFrequency: ArrowConstF = ArrowConstF(2)
   var voices: [SimpleVoice] = []
   var presets: [Preset] = []
   var reverbMix: Float = 0 {
