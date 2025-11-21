@@ -23,7 +23,7 @@ class InstrumentWithAVAudioUnitEffects {
   // members whose params we can expose
   var reverbNode: AVAudioUnitReverb?
   var mixerNode = AVAudioMixerNode()
-  var delayNode: AVAudioUnitDelay? = nil
+  var delayNode: AVAudioUnitDelay? = AVAudioUnitDelay()
   var distortionNode: AVAudioUnitDistortion? = nil
   var reverbPreset: AVAudioUnitReverbPreset {
     didSet {
@@ -106,7 +106,7 @@ class InstrumentWithAVAudioUnitEffects {
     //self.delayNode = AVAudioUnitDelay()
     //self.distortionNode = AVAudioUnitDistortion()
     //self.distortionNode?.wetDryMix = 0
-    //self.setDelayTime(0)
+    self.delayNode?.delayTime = 0
     self.distortionPreset = .defaultValue
     self.reverbPreset = .cathedral
     self.reverbNode?.wetDryMix = 0

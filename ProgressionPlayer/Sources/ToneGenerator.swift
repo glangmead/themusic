@@ -65,10 +65,10 @@ class BasicOscillator: Arrow11 {
 }
 
 // see https://en.wikipedia.org/wiki/Rose_(mathematics)
-func Rose(amplitude: CoreFloat, leafFactor k: CoreFloat, frequency freq: CoreFloat, startingPhase sp: CoreFloat) -> Arrow13 {
+func Rose(amplitude: Arrow11, leafFactor k: Arrow11, frequency freq: Arrow11, startingPhase sp: CoreFloat) -> Arrow13 {
   Arrow13(of: { x in
-    let domain = (freq * x) + sp
-    return ( amplitude * sin(k * domain) * cos(domain), amplitude * sin(k * domain) * sin(domain), amplitude * sin(domain) )
+    let domain = (freq.of(x) * x) + sp
+    return ( amplitude.of(x) * sin(k.of(x) * domain) * cos(domain), amplitude.of(x) * sin(k.of(x) * domain) * sin(domain), amplitude.of(x) * sin(domain) )
   })
 }
 

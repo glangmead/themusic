@@ -189,8 +189,30 @@ func arrowCompose(outer: Arrow11, inner: Arrow11) -> Arrow11 {
   return Arrow11(of: { outer.of(inner.of($0)) })
 }
 
-func arrowConst(_ val: CoreFloat) -> Arrow11 {
-  return Arrow11(of: { _ in return val })
+@Observable
+class ArrowConst: Arrow11 {
+  var val: CoreFloat
+  init(_ val: CoreFloat) {
+    self.val = val
+    weak var fself: ArrowConst? = nil
+    super.init(of: { _ in
+      fself!.val
+    })
+    fself = self
+  }
+}
+
+@Observable
+class ArrowConstF: Arrow11 {
+  var val: Float
+  init(_ val: Float) {
+    self.val = val
+    weak var fself: ArrowConstF? = nil
+    super.init(of: { _ in
+      Double(fself!.val)
+    })
+    fself = self
+  }
 }
 
 func arrowWithSidecars(arr: Arrow11, sidecars: [Arrow10]) -> Arrow11 {

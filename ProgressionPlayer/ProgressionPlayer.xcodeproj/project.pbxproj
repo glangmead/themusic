@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B0F28872ED00401004C0884 /* AudioKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9B0F28862ED00401004C0884 /* AudioKitUI */; };
 		9B1864642E772E37006147D8 /* Overture in Frameworks */ = {isa = PBXBuildFile; productRef = 9B1864632E772E37006147D8 /* Overture */; };
 		9B1F01702EB95F0A00C5110F /* Note.icon in Resources */ = {isa = PBXBuildFile; fileRef = 9B1F016F2EB95F0A00C5110F /* Note.icon */; };
 		9B7430A02ECFA5640017DE7D /* Assets 2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B7430922ECFA5640017DE7D /* Assets 2.xcassets */; };
@@ -68,6 +69,7 @@
 			files = (
 				9BA522562EB0FE8F00ECF215 /* AudioKit in Frameworks */,
 				9BD1B7002E8B08D000C718F1 /* Tonic in Frameworks */,
+				9B0F28872ED00401004C0884 /* AudioKitUI in Frameworks */,
 				9B1864642E772E37006147D8 /* Overture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,6 +147,7 @@
 				9B1864632E772E37006147D8 /* Overture */,
 				9BD1B6FF2E8B08D000C718F1 /* Tonic */,
 				9BA522552EB0FE8F00ECF215 /* AudioKit */,
+				9B0F28862ED00401004C0884 /* AudioKitUI */,
 			);
 			productName = ProgressionPlayer;
 			productReference = 9BC0FCA72E704EA900472A5A /* ProgressionPlayer.app */;
@@ -232,6 +235,7 @@
 				9B1864622E772E37006147D8 /* XCRemoteSwiftPackageReference "swift-overture" */,
 				9BD1B6FE2E8B08D000C718F1 /* XCRemoteSwiftPackageReference "Tonic" */,
 				9BA522542EB0FE8400ECF215 /* XCRemoteSwiftPackageReference "AudioKit" */,
+				9B0F28852ED00401004C0884 /* XCRemoteSwiftPackageReference "AudioKitUI" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9BC0FCA82E704EA900472A5A /* Products */;
@@ -613,6 +617,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		9B0F28852ED00401004C0884 /* XCRemoteSwiftPackageReference "AudioKitUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKitUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.7;
+			};
+		};
 		9B1864622E772E37006147D8 /* XCRemoteSwiftPackageReference "swift-overture" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pointfreeco/swift-overture.git";
@@ -640,6 +652,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		9B0F28862ED00401004C0884 /* AudioKitUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B0F28852ED00401004C0884 /* XCRemoteSwiftPackageReference "AudioKitUI" */;
+			productName = AudioKitUI;
+		};
 		9B1864632E772E37006147D8 /* Overture */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 9B1864622E772E37006147D8 /* XCRemoteSwiftPackageReference "swift-overture" */;

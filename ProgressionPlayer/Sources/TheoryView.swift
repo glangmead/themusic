@@ -5,36 +5,57 @@
 //  Created by Greg Langmead on 9/29/25.
 //
 
+import AudioKitUI
 import AVFAudio
+import Controls
 import SwiftUI
 import Tonic
 
+@Observable
 class KnobbySynth {
   let engine = SpatialAudioEngine()
   
   let numVoices = 8
-  // the layer cake of tone generation: oscillator, wrapped in filter, then voice, then preset
-  var oscillators: [BasicOscillator] = []
-  var filters: [HasFactor] = []
+  var oscillator: BasicOscillator? = nil
+  var filteredOsc: LowPassFilter? = nil
+  var roseAmount: ArrowConstF = ArrowConstF(3)
+  var roseAmplitude: ArrowConstF = ArrowConstF(2)
+  var roseFrequency: ArrowConstF = ArrowConstF(0.5)
   var voices: [SimpleVoice] = []
   var presets: [Preset] = []
+  var reverbMix: Float = 0 {
+    didSet {
+      for preset in self.presets { preset.setReverbWetDryMix(Double(reverbMix))
+      }
+    }
+  }
+  var reverbPreset: AVAudioUnitReverbPreset = .largeRoom {
+    didSet {
+      for preset in self.presets {
+        preset.reverbPreset = reverbPreset
+      }
+    }
+  }
+  var delayTime: Float = 0 {
+    didSet {
+      for preset in self.presets {
+        preset.setDelayTime(Double(delayTime))
+      }
+    }
+  }
   
   var voiceMixerNodes: [AVAudioMixerNode] = []
-  let voicePool: NoteHandler
+  var voicePool: NoteHandler? = nil
   
   var seq: Sequencer? = nil
   
-  // Bindings
-  var oscillatorShapeBinding: Binding<BasicOscillator.OscShape>? = nil
-  var reverbWetDryMixBinding: Binding<Double>? = nil
+  // Bindings: for values we update by changing them from this class
   var spatialPositionBinding: Binding<(Double, Double, Double)>? = nil
-  var delayTimeBinding: Binding<Double>? = nil
   var delayFeedbackBinding: Binding<Double>? = nil
   var delayLowPassCutoffBinding: Binding<Double>? = nil
   var delayWetDryMixBinding: Binding<Double>? = nil
   var distortionPreGainBinding: Binding<Double>? = nil
   var distortionWetDryMixBinding: Binding<Double>? = nil
-  var reverbPresetBinding: Binding<AVAudioUnitReverbPreset>? = nil
   var distortionPresetBinding: Binding<AVAudioUnitDistortionPreset>? = nil
   var filterCutoffBinding: Binding<Double>? = nil
   
@@ -53,18 +74,14 @@ class KnobbySynth {
   }
   
   init() {
+    oscillator = BasicOscillator(shape: .sawtooth)
+    filteredOsc = LowPassFilter(of: oscillator!, cutoff: 100000, resonance: 0)
     for _ in 0..<numVoices {
-      let osc = BasicOscillator(shape: .sawtooth)
-      oscillators.append(osc)
-      let filteredOsc = LowPassFilter(of: osc, cutoff: 100000, resonance: 0)
-      filters.append(filteredOsc)
-      
-      var roseAmount = 3.0
       let voice = SimpleVoice(
         oscillator:
           ModulatedPreMult(
             factor: 440.0,
-            arrow: filteredOsc,
+            arrow: filteredOsc!,
             modulation:
               PostMult(
                 factor: 0,
@@ -97,28 +114,21 @@ class KnobbySynth {
       voices.append(voice)
       let preset = Preset(sound: voice)
       preset.positionLFO = Rose(
-        amplitude: 2,
+        amplitude: roseAmplitude,
         leafFactor: roseAmount,
-        frequency: 0.5,
-        startingPhase: roseAmount * 2 * .pi / Double(presets.count)
+        frequency: roseFrequency,
+        startingPhase: CoreFloat.random(in: 0.0...(2 * .pi))
       )
-      roseAmount += 2.0
       presets.append(preset)
+      voiceMixerNodes.append(preset.buildChainAndGiveOutputNode(forEngine: self.engine))
     }
-    
+    engine.connectToEnvNode(voiceMixerNodes)
+
     voicePool = PoolVoice(voices: voices)
         
-    reverbWetDryMixBinding = Binding<Double>(
-      get: { self.presets[0].getReverbWetDryMix() },
-      set: { for preset in self.presets { preset.setReverbWetDryMix($0) } }
-    )
     spatialPositionBinding = Binding<(Double, Double, Double)>(
       get: { self.presets[0].getSpatialPosition() },
       set: { for preset in self.presets { preset.setSpatialPosition($0) } }
-    )
-    delayTimeBinding = Binding<Double>(
-      get: { self.presets[0].getDelayTime() },
-      set: { for preset in self.presets { preset.setDelayTime($0) } }
     )
     delayFeedbackBinding = Binding<Double>(
       get: { self.presets[0].getDelayFeedback() },
@@ -140,24 +150,14 @@ class KnobbySynth {
       get: { self.presets[0].getDelayFeedback() },
       set: { for preset in self.presets { preset.setDistortionWetDryMix($0) } }
     )
-    reverbPresetBinding = Binding<AVAudioUnitReverbPreset>(
-      get: { return self.presets[0].reverbPreset },
-      set: { for preset in self.presets { preset.reverbPreset = $0 } }
-    )
     distortionPresetBinding = Binding<AVAudioUnitDistortionPreset>(
       get: { self.presets[0].getDistortionPreset() },
       set: { for preset in self.presets { preset.setDistortionPreset($0) } }
-    )
-    oscillatorShapeBinding = Binding<BasicOscillator.OscShape>(
-      get: { self.oscillators[0].shape },
-      set: { for osc in self.oscillators { osc.shape = $0 }}
     )
     filterCutoffBinding = Binding<Double>(
       get: { return 0 },
       set: { _ in () }
     )
-    voiceMixerNodes = presets.map {  $0.buildChainAndGiveOutputNode(forEngine: self.engine) }
-    engine.connectToEnvNode(voiceMixerNodes)
     
     do {
       try engine.start()
@@ -166,7 +166,7 @@ class KnobbySynth {
     }
     
     // the sequencer will pluck on the arrows
-    self.seq = Sequencer(engine: engine.audioEngine, numTracks: 2,  sourceNode: voicePool)
+    self.seq = Sequencer(engine: engine.audioEngine, numTracks: 2,  sourceNode: voicePool!)
     
   }
 }
@@ -175,6 +175,7 @@ struct TheoryView: View {
   @State private var synth: KnobbySynth
   @State private var error: Error?
   @State private var isImporting = false
+  @State private var dummy: Float = 0
 
   init(synth: KnobbySynth) {
     self.synth = synth
@@ -182,44 +183,63 @@ struct TheoryView: View {
   
   var body: some View {
     NavigationStack {
-      Picker("Instrument", selection: synth.oscillatorShapeBinding!) {
+      Picker("Instrument", selection: Binding($synth.oscillator)!.shape) {
         ForEach(BasicOscillator.OscShape.allCases, id: \.self) { option in
           Text(String(describing: option))
         }
       }
       .pickerStyle(.segmented)
-
+      
+      ReverbPresetStepper(preset: $synth.reverbPreset)
+        .frame(maxHeight: 60)
       HStack {
-        Text("Reverb preset")
-        Picker("Reverb preset", selection: synth.reverbPresetBinding!) {
-          ForEach(AVAudioUnitReverbPreset.allCases, id: \.self) {
-            Text($0.name)
-          }
-        }.pickerStyle(.menu)
+        Spacer()
+        VStack {
+          Text("Reverb (%)").font(.headline)
+          SmallKnob(value: $synth.reverbMix, range: 0...100).frame(maxHeight: 80)
+          Text(String(format: "%.1f", synth.reverbMix))
+        }
+        VStack {
+          Text("Delay (s)").font(.headline)
+          SmallKnob(value: $synth.delayTime, range: 0...5).frame(maxHeight: 80)
+          Text(String(format: "%.1f", synth.delayTime))
+        }
+        Spacer()
       }
       HStack {
-        Text("Reverb wet/dry mix")
-        Slider(value: synth.reverbWetDryMixBinding!, in: 0...100)
-      }
-      HStack {
-        Text("Delay time")
-        Slider(value: synth.delayTimeBinding!, in: 0...5)
+        Spacer()
+        VStack {
+          Text("⌘ Loops").font(.headline)
+          SmallKnob(value: $synth.roseAmount.val, range: 0...10).frame(maxHeight: 80)
+          Text(String(format: "%.1f", synth.roseAmount.val))
+        }
+        VStack {
+          Text("⌘ Speed").font(.headline)
+          SmallKnob(value: $synth.roseFrequency.val, range: 0...10).frame(maxHeight: 80)
+          Text(String(format: "%.1f", synth.roseFrequency.val))
+        }
+        VStack {
+          Text("⌘ Distance").font(.headline)
+          SmallKnob(value: $synth.roseAmplitude.val, range: 0...10).frame(maxHeight: 80)
+          Text(String(format: "%.1f", synth.roseAmplitude.val))
+        }
+        Spacer()
       }
       Spacer()
-      Picker("Key", selection: $synth.key) {
-        Text("C").tag(Key.C)
-        Text("G").tag(Key.G)
-        Text("D").tag(Key.D)
-        Text("A").tag(Key.A)
-        Text("E").tag(Key.E)
-      }.pickerStyle(.segmented)
-      Picker("Octave", selection: $synth.octave) {
-        ForEach(1..<7) { octave in
-          Text("\(octave)")
-        }
-      }.pickerStyle(.segmented)
-      
       ScrollView {
+        Picker("Key", selection: $synth.key) {
+          Text("C").tag(Key.C)
+          Text("G").tag(Key.G)
+          Text("D").tag(Key.D)
+          Text("A").tag(Key.A)
+          Text("E").tag(Key.E)
+        }.pickerStyle(.segmented)
+        Picker("Octave", selection: $synth.octave) {
+          ForEach(1..<7) { octave in
+            Text("\(octave)")
+          }
+        }.pickerStyle(.segmented)
+        
         LazyVGrid(
           columns: [
             GridItem(.adaptive(minimum: 100, maximum: .infinity))
@@ -236,36 +256,38 @@ struct TheoryView: View {
             }
           }
         )
-      }
-      .navigationTitle("Scape")
-      Button("Stop") {
-        synth.seq?.stop()
-        synth.seq?.rewind()
-      }
-      .toolbar {
-        ToolbarItem() {
-          Button {
-            isImporting = true
-          } label: {
-            Label("Import file",
-                  systemImage: "square.and.arrow.down")
+        .navigationTitle("Scape")
+        Button("Stop") {
+          synth.seq?.stop()
+          synth.seq?.rewind()
+        }
+        .font(.largeTitle)
+        .buttonStyle(.borderedProminent)
+        .toolbar {
+          ToolbarItem() {
+            Button {
+              isImporting = true
+            } label: {
+              Label("Import file",
+                    systemImage: "square.and.arrow.down")
+            }
           }
         }
-      }
-      .fileImporter(
-        isPresented: $isImporting,
-        allowedContentTypes: [.midi],
-        allowsMultipleSelection: false
-      ) { result in
-        switch result {
-        case .success(let urls):
-          synth.seq?.playURL(url: urls[0])
-        case .failure(let error):
-          print("\(error.localizedDescription)")
+        .fileImporter(
+          isPresented: $isImporting,
+          allowedContentTypes: [.midi],
+          allowsMultipleSelection: false
+        ) { result in
+          switch result {
+          case .success(let urls):
+            synth.seq?.playURL(url: urls[0])
+          case .failure(let error):
+            print("\(error.localizedDescription)")
+          }
         }
+        Spacer()
       }
     }
-    
   }
 }
 
