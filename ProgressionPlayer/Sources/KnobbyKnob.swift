@@ -9,16 +9,16 @@
 import Foundation
 import SwiftUI
 
-struct KnobbyKnob: View {
-  @Binding var value: Float
+struct KnobbyKnob<T: BinaryFloatingPoint>: View {
+  @Binding var value: T
   @State private var isDragging = false
-  @State private var oldValue: Float = 0
+  @State private var oldValue: T = 0
   
-  var range: ClosedRange<Float> = 0...1
+  var range: ClosedRange<T> = 0...1
   var size: CGFloat = 80.0
   
   /// Set how many steps should the knob have.
-  var stepSize: Float = 0.01
+  var stepSize: T = 0.01
   
   /// Set if when value = 0, the signal light will be turned gray.
   var allowPoweroff = true
@@ -27,16 +27,16 @@ struct KnobbyKnob: View {
   var ifShowValue = false
   
   /// Set the sensitivity of the dragging gesture.
-  var sensitivity: Float = 0.3
+  var sensitivity: T = 0.3
   
-  var valueFormatter: ((Float) -> String) = { String(format: "%.2f", $0) }
+  var valueFormatter: ((T) -> String) = { String(format: "%.2f", $0 as! CVarArg) }
   
-  var onChanged: ((Float) -> Void)?
+  var onChanged: ((T) -> Void)?
   
   let startingAngle: Angle = .radians(.pi / 6)
   
-  var normalizedValue: Float {
-    Float((value - range.lowerBound) / (range.upperBound - range.lowerBound))
+  var normalizedValue: T {
+    T((value - range.lowerBound) / (range.upperBound - range.lowerBound))
   }
   
   var body: some View {
@@ -94,9 +94,9 @@ struct KnobbyKnob: View {
     }
     let x = value.translation.width
     let y = -value.translation.height
-    var offset: Float = 0.0
-    offset += Float(x / size) * (range.upperBound - range.lowerBound) * sensitivity
-    offset += Float(y / size) * (range.upperBound - range.lowerBound) * sensitivity
+    var offset: T = 0.0
+    offset += T(x / size) * (range.upperBound - range.lowerBound) * sensitivity
+    offset += T(y / size) * (range.upperBound - range.lowerBound) * sensitivity
     let clippedValue = max(range.lowerBound, min(range.upperBound, self.oldValue + offset))
     let steppedValue = (clippedValue / stepSize).rounded() * stepSize
     self.value = steppedValue
@@ -107,15 +107,15 @@ struct KnobbyKnob: View {
 }
 
 
-struct KnobbyKnob_Container: View {
-  @State var value: Float = 0.5
+struct KnobbyKnob_Container<T: BinaryFloatingPoint>: View {
+  @State var value: T = 0.5
   var body: some View {
-    KnobbyKnob(value: $value)
+    KnobbyKnob<T>(value: $value)
   }
 }
 
-struct KnobbyKnob_Previews: PreviewProvider {
+struct KnobbyKnob_Previews<T: BinaryFloatingPoint>: PreviewProvider {
   static var previews: some View {
-    KnobbyKnob_Container()
+    KnobbyKnob_Container<T>()
   }
 }
