@@ -8,19 +8,27 @@
 import AudioKit
 import AVFoundation
 import Tonic
+import SwiftUI
 
-struct Sequencer {
-  var avSeq: AVAudioSequencer
+@Observable
+class Sequencer {
+  var avSeq: AVAudioSequencer!
+  var avEngine: AVAudioEngine!
   var avTracks: [AVMusicTrack] {
     avSeq.tracks
   }
   var seqListener: MIDICallbackInstrument?
+  var sequencerTime: TimeInterval {
+    avSeq.currentPositionInSeconds
+  }
   
   init(engine: AVAudioEngine, numTracks: Int, sourceNode: NoteHandler) {
+    avEngine = engine
     avSeq = AVAudioSequencer(audioEngine: engine)
+    
     avSeq.rate = 0.5
     for _ in 0..<numTracks {
-      avSeq.createAndAppendTrack()
+      avSeq?.createAndAppendTrack()
     }
     // borrowing AudioKit's MIDICallbackInstrument, which has some pretty tough incantations to allocate a midi endpoint and its MIDIEndpointRef
     seqListener = MIDICallbackInstrument(midiInputName: "Scape Virtual MIDI Listener", callback: { /*[self]*/ status, note, velocity in
@@ -39,6 +47,18 @@ struct Sequencer {
       }
       
     })
+    
+//    sequencerTimeBinding = Binding(
+//      get: {
+//        self.avSeq.currentPositionInSeconds
+//      },
+//      set: {
+//        self.avSeq.currentPositionInSeconds = $0
+//      })
+  }
+  
+  convenience init(synth: KnobbySynth, numTracks: Int) {
+    self.init(engine: synth.engine.audioEngine, numTracks: numTracks, sourceNode: synth.voicePool!)
   }
   
   // e.g. Bundle.main.path(forResource: "MSLFSanctus", ofType: "mid")!
@@ -46,7 +66,7 @@ struct Sequencer {
     do {
       stop()
       rewind()
-      try avSeq.load(from: url, options: [])
+      try avSeq?.load(from: url, options: [])
       play()
     } catch {
       print("\(error.localizedDescription)")
@@ -54,6 +74,7 @@ struct Sequencer {
   }
 
   func play() {
+    // avSeq.rate = 2.0 // The default playback rate is 1.0, and must be greater than 0.0.
     if !avSeq.isPlaying {
       for track in avSeq.tracks {
         // kAudioToolboxErr_InvalidPlayerState -10852
@@ -77,6 +98,10 @@ struct Sequencer {
     for track in avTracks {
       track.clear()
     }
+  }
+  
+  func lengthinSeconds() -> Double {
+    avTracks.map({$0.lengthInSeconds}).max() ?? 0
   }
   
   func sendTonicChord(chord: Chord, octave: Int) {

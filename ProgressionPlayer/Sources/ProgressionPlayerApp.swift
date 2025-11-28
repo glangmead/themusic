@@ -25,9 +25,9 @@ struct ProgressionPlayerApp: App {
         Tab("Theory", systemImage: "play.circle.fill") {
           TheoryView(synth: KnobbySynth())
         }
-//        Tab("Engineer", systemImage: "play.circle") {
-//          SpatialView()
-//        }
+        Tab("Song", systemImage: "play.circle") {
+          SongView()
+        }
       }
     }
   }

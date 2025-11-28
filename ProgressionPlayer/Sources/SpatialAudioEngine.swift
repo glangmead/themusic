@@ -68,4 +68,8 @@ class SpatialAudioEngine {
   func stop() {
     audioEngine.stop()
   }
+  
+  func pause() {
+    audioEngine.pause()
+  }
 }
