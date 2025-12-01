@@ -8,21 +8,30 @@
 import SwiftUI
 
 struct SongView: View {
+  @Environment(KnobbySynth.self) private var synth
   @State private var error: Error? = nil
   @State private var isImporting = false
-  @State private var seq: Sequencer
+  @State private var seq: Sequencer?
+  @State private var songURL: URL?
+  @State private var playbackRate: Float = 1.0
+  @State private var isShowingSynth = false
 
-  init() {
-    seq = Sequencer(synth: KnobbySynth(), numTracks: 2)
-  }
-  
   var body: some View {
     NavigationStack {
-      Text("Playback speed: \(seq.avSeq.rate)")
-      Slider(value: $seq.avSeq.rate, in: 0...20)
-      Text("\(seq.sequencerTime) (\(seq.lengthinSeconds()))")
+      Text("Song: \(songURL?.lastPathComponent ?? "none")")
+      Text("Playback speed: \(seq?.avSeq.rate ?? 0)")
+      Slider(value: $playbackRate, in: 0...20)
+        .onChange(of: playbackRate, initial: true) {
+          seq?.avSeq.rate = playbackRate
+        }
+      Text("\(seq?.sequencerTime ?? 0.0) (\(seq?.lengthinSeconds() ?? 0.0))")
         .navigationTitle("⌘Scape")
         .toolbar {
+          ToolbarItem() {
+            Button("Synth") {
+              isShowingSynth = true
+            }
+          }
           ToolbarItem() {
             Button {
               isImporting = true
@@ -39,15 +48,38 @@ struct SongView: View {
         ) { result in
           switch result {
           case .success(let urls):
-            seq.playURL(url: urls[0])
+            seq?.playURL(url: urls[0])
+            songURL = urls[0]
           case .failure(let error):
             print("\(error.localizedDescription)")
           }
         }
+      ForEach(["D_Loop_01", "MSLFSanctus"], id: \.self) { song in
+        Button("Play \(song)") {
+          songURL = Bundle.main.url(forResource: song, withExtension: "mid")
+          seq?.playURL(url: songURL!)
+        }
+      }
+      Button("Stop") {
+        seq?.stop()
+      }
+      Button("Rewind") {
+        seq?.stop()
+        seq?.rewind()
+      }
+    }
+    .onAppear {
+      if seq == nil {
+        seq = Sequencer(synth: synth, numTracks: 2)
+      }
+    }
+    .sheet(isPresented: $isShowingSynth) {
+      KnobbySynthView(synth: synth)
     }
   }
 }
 
 #Preview {
   SongView()
+    .environment(KnobbySynth())
 }

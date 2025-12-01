@@ -9,17 +9,17 @@ import SwiftUI
 import Tonic
 
 struct TheoryView: View {
-  @State private var synth: KnobbySynth
+  @Environment(KnobbySynth.self) private var synth
   @State private var fxExpanded = true
   @State private var ampADSRExpanded = true
   @State private var roseParamsExpanded = true
-  @State private var synthExpanded = true
+  @State private var isShowingSynth = false
 
   @State private var key = Key.C
   @State private var octave: Int = 2
-  @State private var seq: Sequencer
+  @State private var seq: Sequencer?
   
-  @State private var engineOn: Bool
+  @State private var engineOn: Bool = true
   
   var keyChords: [Chord] {
     get {
@@ -32,18 +32,8 @@ struct TheoryView: View {
     }
   }
   
-  init(synth: KnobbySynth) {
-    self.synth = synth
-    // the sequencer will pluck on the arrows
-    self.seq = Sequencer(synth: synth, numTracks: 2)
-    self.engineOn = true
-  }
-  
   var body: some View {
     NavigationStack {
-      Section {
-        KnobbySynthView(synth: synth)
-      }
       Section {
         Picker("Key", selection: $key) {
           Text("C").tag(Key.C)
@@ -51,12 +41,15 @@ struct TheoryView: View {
           Text("D").tag(Key.D)
           Text("A").tag(Key.A)
           Text("E").tag(Key.E)
-        }.pickerStyle(.segmented)
+        }
+        .pickerStyle(.segmented)
+        
         Picker("Octave", selection: $octave) {
           ForEach(1..<7) { octave in
             Text("\(octave)")
           }
-        }.pickerStyle(.segmented)
+        }
+        .pickerStyle(.segmented)
         
         LazyVGrid(
           columns: [
@@ -65,8 +58,8 @@ struct TheoryView: View {
           content: {
             ForEach(keyChords, id: \.self) { chord in
               Button(chord.romanNumeralNotation(in: key) ?? chord.description) {
-                seq.sendTonicChord(chord: chord, octave: octave)
-                seq.play()
+                seq?.sendTonicChord(chord: chord, octave: octave)
+                seq?.play()
               }
               .frame(maxWidth: .infinity)
               //.font(.largeTitle)
@@ -74,6 +67,7 @@ struct TheoryView: View {
             }
           }
         )
+        
         HStack {
           Text("Engine")
           Toggle(isOn: $engineOn) {}
@@ -90,18 +84,32 @@ struct TheoryView: View {
             }
           Spacer()
           Button("Stop") {
-            seq.stop() 
-            seq.rewind()
+            seq?.stop()
+            seq?.rewind()
           }
           .font(.largeTitle)
           .buttonStyle(.borderedProminent)
         }
+        .toolbar {
+          Button("Synth") {
+            isShowingSynth = true
+          }
+        }
+        .navigationTitle("⌘Scape")
       }
-      .navigationTitle("⌘Scape")
+    }
+    .onAppear {
+      if seq == nil {
+        seq = Sequencer(synth: synth, numTracks: 2)
+      }
+    }
+    .sheet(isPresented: $isShowingSynth) {
+      KnobbySynthView(synth: synth)
     }
   }
 }
 
 #Preview {
-  TheoryView(synth: KnobbySynth())
+  TheoryView()
+    .environment(KnobbySynth())
 }

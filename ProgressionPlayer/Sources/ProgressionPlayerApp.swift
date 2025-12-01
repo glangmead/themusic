@@ -10,7 +10,7 @@ import SwiftUI
 
 @main
 struct ProgressionPlayerApp: App {
-  
+  @State private var synth = KnobbySynth()
   init() {
     do {
       try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
@@ -22,11 +22,13 @@ struct ProgressionPlayerApp: App {
   var body: some Scene {
     WindowGroup {
       TabView {
-        Tab("Theory", systemImage: "play.circle.fill") {
-          TheoryView(synth: KnobbySynth())
+        Tab("Theory", systemImage: "atom") {
+          TheoryView()
+            .environment(synth)
         }
-        Tab("Song", systemImage: "play.circle") {
+        Tab("Song", systemImage: "document") {
           SongView()
+            .environment(synth)
         }
       }
     }
