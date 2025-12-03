@@ -21,16 +21,8 @@ struct ProgressionPlayerApp: App {
   }
   var body: some Scene {
     WindowGroup {
-      TabView {
-        Tab("Theory", systemImage: "atom") {
-          TheoryView()
-            .environment(synth)
-        }
-        Tab("Song", systemImage: "document") {
-          SongView()
-            .environment(synth)
-        }
-      }
+      AppView()
+        .environment(synth)
     }
   }
 }

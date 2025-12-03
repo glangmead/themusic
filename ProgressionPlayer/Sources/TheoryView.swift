@@ -85,7 +85,6 @@ struct TheoryView: View {
           Spacer()
           Button("Stop") {
             seq?.stop()
-            seq?.rewind()
           }
           .font(.largeTitle)
           .buttonStyle(.borderedProminent)

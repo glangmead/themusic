@@ -60,7 +60,7 @@ struct KnobbySynthView: View {
             }
             VStack {
               Text("Filter (Hz)").font(.headline)
-              KnobbyKnob(value: Binding($synth.filterEnv)!.env.scale,
+              KnobbyKnob(value: $synth.filterScale,
                          range: 20...10000,
                          size: 80,
                          stepSize: 1,
@@ -81,7 +81,7 @@ struct KnobbySynthView: View {
             Spacer()
             VStack {
               Text("Attack (s)").font(.headline)
-              KnobbyKnob(value: Binding($synth.ampEnv)!.env.attackTime,
+              KnobbyKnob(value: $synth.ampAttack,
                          range: 0...2,
                          size: 80,
                          stepSize: 0.05,
@@ -91,7 +91,7 @@ struct KnobbySynthView: View {
             }
             VStack {
               Text("Decay (s)").font(.headline)
-              KnobbyKnob(value: Binding($synth.ampEnv)!.env.decayTime,
+              KnobbyKnob(value: $synth.ampDecay,
                          range: 0...2,
                          size: 80,
                          stepSize: 0.05,
@@ -101,7 +101,7 @@ struct KnobbySynthView: View {
             }
             VStack {
               Text("Sus").font(.headline)
-              KnobbyKnob(value: Binding($synth.ampEnv)!.env.sustainLevel,
+              KnobbyKnob(value: $synth.ampSustain,
                          range: 0...1,
                          size: 80,
                          stepSize: 0.01,
@@ -111,7 +111,7 @@ struct KnobbySynthView: View {
             }
             VStack {
               Text("Rel (s)").font(.headline)
-              KnobbyKnob(value: Binding($synth.ampEnv)!.env.releaseTime,
+              KnobbyKnob(value: $synth.ampRelease,
                          range: 0...2,
                          size: 80,
                          stepSize: 0.05,

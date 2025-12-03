@@ -16,16 +16,62 @@ class KnobbySynth {
   // one oscillator and filtered oscillator is shared among all voices
   var oscillator: BasicOscillator? = nil
   var filteredOsc: LowPassFilter? = nil
-  var ampEnv: ADSR? = nil
-  var filterEnv: ADSR? = nil
   
   var roseAmount: ArrowConstF = ArrowConstF(1)
   var roseAmplitude: ArrowConstF = ArrowConstF(5)
   var roseFrequency: ArrowConstF = ArrowConstF(2)
   
+  var ampEnvs: [ADSR] = []
+  var filterEnvs: [ADSR] = []
   var voices: [SimpleVoice] = []
   var presets: [Preset] = []
   
+  var ampAttack: CoreFloat = 0.01 {
+    didSet {
+      for adsr in ampEnvs { adsr.env.attackTime = ampAttack }
+    }
+  }
+  var ampDecay: CoreFloat = 0 {
+    didSet {
+      for adsr in ampEnvs { adsr.env.decayTime = ampDecay }
+    }
+  }
+  var ampSustain: CoreFloat = 1.0 {
+    didSet {
+      print("amp Sustain now \(ampSustain)")
+      for adsr in ampEnvs { adsr.env.sustainLevel = ampSustain }
+    }
+  }
+  var ampRelease: CoreFloat = 0.01 {
+    didSet {
+      for adsr in ampEnvs { adsr.env.releaseTime = ampRelease }
+    }
+  }
+  var filterAttack: CoreFloat = 0 {
+    didSet {
+      for adsr in filterEnvs { adsr.env.attackTime = filterAttack }
+    }
+  }
+  var filterDecay: CoreFloat = 0 {
+    didSet {
+      for adsr in filterEnvs { adsr.env.decayTime = filterDecay }
+    }
+  }
+  var filterSustain: CoreFloat = 1.0 {
+    didSet {
+      for adsr in filterEnvs { adsr.env.sustainLevel = filterSustain }
+    }
+  }
+  var filterRelease: CoreFloat = 0 {
+    didSet {
+      for adsr in filterEnvs { adsr.env.releaseTime = filterRelease }
+    }
+  }
+  var filterScale: CoreFloat = 1000 {
+    didSet {
+      for adsr in filterEnvs { adsr.env.scale = filterScale }
+    }
+  }
   var reverbMix: CoreFloat = 0 {
     didSet {
       for preset in self.presets { preset.setReverbWetDryMix(reverbMix) }
@@ -79,20 +125,24 @@ class KnobbySynth {
   init() {
     oscillator = BasicOscillator(shape: .sawtooth)
     filteredOsc = LowPassFilter(of: oscillator!, cutoff: 1000, resonance: 0)
-    ampEnv = ADSR(envelope: EnvelopeData(
-      attackTime: 0.3,
-      decayTime: 0,
-      sustainLevel: 1.0,
-      releaseTime: 0.2
-    ))
-    filterEnv = ADSR(envelope: EnvelopeData(
-      attackTime: 0.3,
-      decayTime: 0,
-      sustainLevel: 1,
-      releaseTime: 0.2,
-      scale: 1000
-    ))
+    
+    
     for _ in 0..<numVoices {
+      let ampEnv = ADSR(envelope: EnvelopeData(
+        attackTime: ampAttack,
+        decayTime: ampDecay,
+        sustainLevel: ampSustain,
+        releaseTime: ampRelease
+      ))
+      let filterEnv = ADSR(envelope: EnvelopeData(
+        attackTime: filterAttack,
+        decayTime: filterDecay,
+        sustainLevel: filterSustain,
+        releaseTime: filterRelease,
+        scale: filterScale
+      ))
+      ampEnvs.append(ampEnv)
+      filterEnvs.append(filterEnv)
       let voice = SimpleVoice(
         oscillator:
           ModulatedPreMult(
@@ -105,8 +155,8 @@ class KnobbySynth {
               )
               .asControl()
           ),
-        ampMod: ampEnv!,
-        filterMod: filterEnv!
+        ampMod: ampEnv,
+        filterMod: filterEnv
       )
       voices.append(voice)
       let preset = Preset(sound: voice)
