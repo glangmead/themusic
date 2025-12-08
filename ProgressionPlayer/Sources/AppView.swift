@@ -18,6 +18,9 @@ struct AppView: View {
       Tab("Song", systemImage: "document") {
         SongView()
       }
+      Tab("Syntax", systemImage: "gear") {
+        SyntacticSynthView()
+      }
     }
 
   }

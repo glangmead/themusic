@@ -47,17 +47,9 @@ class Sequencer {
       }
       
     })
-    
-//    sequencerTimeBinding = Binding(
-//      get: {
-//        self.avSeq.currentPositionInSeconds
-//      },
-//      set: {
-//        self.avSeq.currentPositionInSeconds = $0
-//      })
   }
   
-  convenience init(synth: KnobbySynth, numTracks: Int) {
+  convenience init(synth: EngineAndVoicePool, numTracks: Int) {
     self.init(engine: synth.engine.audioEngine, numTracks: numTracks, sourceNode: synth.voicePool!)
   }
   

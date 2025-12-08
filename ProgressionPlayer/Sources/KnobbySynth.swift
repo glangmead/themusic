@@ -7,8 +7,25 @@
 
 import AVFAudio
 
+/// What is this type?
+/// How does it contrast with Preset?
+/// The Sequencer is the object that plays this object's sounds. It needs the AVAudioEngine and the voicePool: NoteHandler.
+/// The engine is a runtime-only thing, but the voicePool should be capable of being serialized and deserialized.
+/// The voicePool is just numVoices * SimpleVoice
+/// But that's just the Performer -- it's a sound ToneGenerator that listens to noteOn/noteOff.
+/// The effects chain lives in the Preset, and also the position LFO.
+/// Maybe I should rename Preset to AppleNodeChain, which has a bunch of params we can serialize.
+/// Then try to pass the engine into KnobbySynth.
+/// Rename KnobbySynth to Preset, as it houses the ToneGenerator and the AppleNodeChain params both.
+/// Have some new class create an Engine, then create a Sequencer and a Preset and provide them the Engine.
+///
+/// Now, ponder what it would mean to have a ToneGenerator that is a sum of several, so that we can have that concept of adding noise and a bass note.
+/// ToneGenerator classes (LowPassFilter, HasFactor, ModulatedPreMult, PostMule, PreMult, Rose, BasicOscillator) are all Arrows.
+/// So we invent a little Arrow JSON format to build our Arrow chains AND the position LFO.
+/// We invent a little Node JSON format to build the Apple Effects chain.
+/// We invent a JSON that incorporates all the above.
 @Observable
-class KnobbySynth {
+class KnobbySynth: EngineAndVoicePool, Codable {
   let engine = SpatialAudioEngine()
   
   let numVoices = 8
@@ -122,6 +139,14 @@ class KnobbySynth {
   var voiceMixerNodes: [AVAudioMixerNode] = []
   var voicePool: NoteHandler? = nil
   
+  required init(from decoder: any Decoder) throws {
+    fatalError("Haven't implemented")
+  }
+  
+  func encode(to encoder: any Encoder) throws {
+    fatalError("Haven't implemented")
+  }
+  
   init() {
     oscillator = BasicOscillator(shape: .sawtooth)
     filteredOsc = LowPassFilter(of: oscillator!, cutoff: 1000, resonance: 0)
@@ -161,10 +186,10 @@ class KnobbySynth {
       voices.append(voice)
       let preset = Preset(sound: voice)
       preset.positionLFO = Rose(
-        amplitude: roseAmplitude,
+        amp: roseAmplitude,
         leafFactor: roseAmount,
-        frequency: roseFrequency,
-        startingPhase: CoreFloat.random(in: 0.0...(2 * .pi * roseAmount.of(0)))
+        freq: roseFrequency,
+        phase: CoreFloat.random(in: 0.0...(2 * .pi * roseAmount.of(0)))
       )
       presets.append(preset)
       voiceMixerNodes.append(preset.buildChainAndGiveOutputNode(forEngine: self.engine))

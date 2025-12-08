@@ -19,6 +19,11 @@ struct EnvelopeData {
 /// Hence it is also a NoteHandler, so we can tell it when to begin to attack, and when to begin to decay.
 /// Within that concept, ADSR is a specific family of functions. This is a linear one.
 class ADSR: ControlArrow11, NoteHandler {
+  enum EnvelopeState {
+    case closed
+    case attack
+    case decay
+  }
   var env: EnvelopeData {
     didSet {
       setFunctionsFromEnvelopeSpecs()
@@ -27,13 +32,26 @@ class ADSR: ControlArrow11, NoteHandler {
   var timeOrigin: CoreFloat = 0
   var attackEnv: PiecewiseFunc<CoreFloat> = PiecewiseFunc<CoreFloat>(ifuncs: [])
   var decayEnv: PiecewiseFunc<CoreFloat> = PiecewiseFunc<CoreFloat>(ifuncs: [])
-  var attack = true
+  var state: EnvelopeState = .closed
   
   init(envelope e: EnvelopeData) {
     self.env = e
     weak var futureSelf: ADSR? = nil
     super.init(of: Arrow11(of: { time in
-      return (futureSelf!.attack ? futureSelf!.attackEnv.val(CoreFloat(Date.now.timeIntervalSince1970) - futureSelf!.timeOrigin) : futureSelf!.decayEnv.val(CoreFloat(Date.now.timeIntervalSince1970) - futureSelf!.timeOrigin))
+      switch futureSelf!.state {
+      case .closed:
+        return 0
+      case .attack:
+        return futureSelf!.attackEnv.val(CoreFloat(Date.now.timeIntervalSince1970) - futureSelf!.timeOrigin)
+      case .decay:
+        let time = CoreFloat(Date.now.timeIntervalSince1970) - futureSelf!.timeOrigin
+        if time > futureSelf!.env.decayTime {
+          futureSelf!.state = .closed
+          return 0
+        } else {
+          return futureSelf!.decayEnv.val(time)
+        }
+      }
     }))
     futureSelf = self
     setFunctionsFromEnvelopeSpecs()
@@ -63,12 +81,12 @@ class ADSR: ControlArrow11, NoteHandler {
   
   func noteOn(_ note: MidiNote) {
     timeOrigin = CoreFloat(Date.now.timeIntervalSince1970)
-    attack = true
+    state = .attack
   }
   
   func noteOff(_ note: MidiNote) {
     timeOrigin = CoreFloat(Date.now.timeIntervalSince1970)
-    attack = false
+    state = .decay
   }
 }
 

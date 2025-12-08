@@ -9,9 +9,9 @@ import SwiftUI
 
 struct SongView: View {
   @Environment(KnobbySynth.self) private var synth
+  @State private var seq: Sequencer?
   @State private var error: Error? = nil
   @State private var isImporting = false
-  @State private var seq: Sequencer?
   @State private var songURL: URL?
   @State private var playbackRate: Float = 1.0
   @State private var isShowingSynth = false
@@ -71,6 +71,7 @@ struct SongView: View {
     .onAppear {
       if seq == nil {
         seq = Sequencer(synth: synth, numTracks: 2)
+        try! synth.engine.start()
       }
     }
     .sheet(isPresented: $isShowingSynth) {

@@ -9,66 +9,6 @@ import AVFAudio
 import Overture
 import SwiftUI
 
-/// High-level architecture: [Instrument -> AVAudioUnitEffect_1 -> ... -> AVAudioUnitEffect_n -> AVAudioEnvironmentNode] => AVAudioEngine
-///                               ^                 ^                             ^                         ^
-///                             [LFO]             [LFO]                         [LFO]                     [LFO]
-///
-/// AVAudioSourceNode per _instrument_
-///   - the render block callback for this obtains all the outputs of all oscillators of that instrument
-///   - polyphony in this instrument
-///   - envelopes
-///   - tremolo
-///   - filter envelopes
-///   - chain of AVAudioUnitEffects
-///   - AVAudioEnvironmentNode (the famous spatializer)
-///   - The output node is the AVAudioEngine outputNode
-///
-/// The Instrument is an Arrow and is a static formula of
-///   - the oscillator
-///   - amplitude envelope
-///   - frequency
-///   - modulation of frequency
-///   - no nontrivial mixing, we just sum these to obtain polyphony
-///
-/// AVAudioUnitEffect nodes need some way to be modulated by an LFO, or so I am saying.
-///   - AVAudioUnitDelay
-///       * delayTime, feedback, lowPassCutoff, wetDryMix
-///   - AVAudioUnitDistortion
-///       * loadFactoryPreset, preGain, wetDryMix
-///   - AVAudioUnitEQ
-///       * AVAudioUnitEQFilterParameters, bands, globalGain
-///   - AVAudioUnitReverb
-///       * loadFactoryPreset, wetDryMix
-///   - AU plugins!
-///
-/// AVAudioEnvironmentNode
-///   - position, listenerPosition, listenerAngularOrientation, listenerVectorOrientation,
-///     distanceAttenuationParameters, reverbParameters, outputVolume, outputType, applicableRenderingAlgorithms,
-///     isListenerHeadTrackingEnabled, nextAvailableInputBus
-///
-/// An LFO is a coupling of two arrows.
-///   - arrow1 is a target to be modulated, e.g. a sin wave whose frequency we shall modulate
-///   - arrow2 is an LFO without knowledge of where it's being plugged in
-///   - in real time we can do a few things
-///       * couple and uncouple (a binary change -- maybe the wire is there statically and we just set the coupling constant to 0)
-///       * change arrow1's variables
-///       * change arrow2's variables
-///
-/// What is an arrow?
-///   - A collection of sub-arrows composed together statically
-///   - A single arrow has exposed parameters that can be changed in real time
-///   - So in fullness, and arrow is a wiring diagram (the static part) with a few knobs attached (the real-time part)
-///   - Compile-time wires and runtime wires?
-///
-/// Something should be called a Patch aka Preset. This would be a complete polyphonic instrument including all effects and spatialization?
-///
-/// Possible next steps:
-///   ✓ Polyphony from the sequencer with a single arrow
-///   - make a few Patches
-///   - get two Presets to move spatially differently
-///   - stand up a Wavetable
-///   ✓ get the list of chords going again
-
 // This is Double because an AVAudioSourceNodeRenderBlock sends the input (time) as a Float64
 typealias CoreFloat = Double
 
@@ -90,7 +30,7 @@ class Arrow11 {
   }
   
   func withSidecars(_ sidecars: [Arrow10]) -> Arrow11 {
-    return arrowWithSidecars(arr: self, sidecars: sidecars)
+    return Arrow11WithSidecars(arr: self, sidecars: sidecars)
   }
 
   func withSidecar(_ sidecar: Arrow10) -> Arrow11 {
@@ -101,10 +41,6 @@ class Arrow11 {
     return ControlArrow11(of: self)
   }
 }
-
-//protocol SampleSource {
-//  func sample(at time: CoreFloat) -> CoreFloat
-//}
 
 class Arrow21 {
   var of: (CoreFloat, CoreFloat) -> CoreFloat
@@ -162,38 +98,52 @@ class ControlArrow10: Arrow10 {
   }
 }
 
-// given an arrow that converts time into some CoreFloat, use that output to set a key path on some object
-class KeyPathModulationArrow<T>: Arrow10 {
-  init(using: Arrow11, for object: T, keyPath: ReferenceWritableKeyPath<T, CoreFloat>) {
-    super.init(of: { t in
-      object[keyPath: keyPath] = using.of(t)
+class ArrowSum: Arrow11 {
+  init(_ arrows: [Arrow11]) {
+    super.init(of: {x in
+      arrows.map({$0.of(x)}).reduce(0, +)
     })
   }
 }
 
-func arrowPlus(a: Arrow11, b: Arrow11) -> Arrow11 {
-  return Arrow11(of: { a.of($0) + b.of($0) })
+class ArrowProd: Arrow11 {
+  init(_ arrows: [Arrow11]) {
+    super.init(of: {x in
+      arrows.map({$0.of(x)}).reduce(1, *)
+    })
+  }
 }
 
-func arrowSum(_ arrows: [Arrow11]) -> Arrow11 {
-  return Arrow11(of: { x in
-    arrows.map({$0.of(x)}).reduce(0, +)
-  } )
+class ArrowIdentity: Arrow11 {
+  init() {
+    super.init(of: { $0 })
+  }
 }
 
-func arrowTimes(a: Arrow11, b: Arrow11) -> Arrow11 {
-  return Arrow11(of: { a.of($0) * b.of($0) })
+class ArrowCompose: Arrow11 {
+  init(outer: Arrow11, inner: Arrow11) {
+    super.init(of: { t in
+      outer.of(inner.of(t))
+    })
+  }
 }
 
-func arrowCompose(outer: Arrow11, inner: Arrow11) -> Arrow11 {
-  return Arrow11(of: { outer.of(inner.of($0)) })
+class ArrowSin: Arrow11 {
+  init() {
+    super.init(of: {Foundation.sin($0)})
+  }
 }
 
-@Observable
+class ArrowCos: Arrow11 {
+  init() {
+    super.init(of: {Foundation.cos($0)})
+  }
+}
+
 class ArrowConst: Arrow11 {
   var val: CoreFloat
-  init(_ val: CoreFloat) {
-    self.val = val
+  init(_ value: CoreFloat) {
+    self.val = value
     weak var fself: ArrowConst? = nil
     super.init(of: { _ in
       fself!.val
@@ -202,7 +152,6 @@ class ArrowConst: Arrow11 {
   }
 }
 
-@Observable
 class ArrowConstF: Arrow11 {
   var val: Float
   init(_ val: Float) {
@@ -215,12 +164,14 @@ class ArrowConstF: Arrow11 {
   }
 }
 
-func arrowWithSidecars(arr: Arrow11, sidecars: [Arrow10]) -> Arrow11 {
-  return Arrow11(of: { x in
-    for sidecar in sidecars {
-      sidecar.of(x)
-    }
-    return arr.of(x)
-  })
+class Arrow11WithSidecars: Arrow11 {
+  init(arr: Arrow11, sidecars: [Arrow10]) {
+    super.init(of: {x in
+      for sidecar in sidecars {
+        sidecar.of(x)
+      }
+      return arr.of(x)
+    })
+  }
 }
 

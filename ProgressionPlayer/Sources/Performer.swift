@@ -14,6 +14,33 @@ typealias MidiValue = UInt8
 struct MidiNote {
   let note: MidiValue
   let velocity: MidiValue
+  var freq: CoreFloat {
+    440.0 * pow(2.0, (CoreFloat(note) - 69.0) / 12.0)
+  }
+}
+
+class EnvelopeHandlePlayer: Arrow11, NoteHandler {
+  var arrow: ArrowWithHandles
+  init(arrow: ArrowWithHandles) {
+    self.arrow = arrow
+    super.init(of: {t in
+      arrow.of(t)
+    })
+  }
+  func noteOn(_ note: MidiNote) {
+    for key in arrow.namedADSREnvelopes.keys {
+      arrow.namedADSREnvelopes[key]!.noteOn(note)
+    }
+    arrow.namedConsts["freq"]?.val = note.freq
+  }
+  
+  func noteOff(_ note: MidiNote) {
+    for key in arrow.namedADSREnvelopes.keys {
+      arrow.namedADSREnvelopes[key]!.noteOff(note)
+    }
+  }
+  
+  
 }
 
 protocol NoteHandler {
@@ -37,7 +64,7 @@ class PoolVoice: Arrow11, NoteHandler {
   init(voices: [Arrow11 & NoteHandler]) {
     self.voices = voices
     self.voiceCount = voices.count
-    self.sumSource = arrowSum(voices)
+    self.sumSource = ArrowSum(voices)
     
     // mark all voices as available
     availableVoiceIdxs = Set(0..<voices.count)
@@ -65,7 +92,7 @@ class PoolVoice: Arrow11, NoteHandler {
   }
   
   func noteOn(_ noteVel: MidiNote) {
-    print(" ON: trying \(noteVel.note)")
+    //print(" ON: trying \(noteVel.note)")
     // case 1: this note is being played by a voice already: send noteOff then noteOn to re-up it
     if let voiceIdx = noteToVoiceIdx[noteVel.note] {
       voices[voiceIdx].noteOff(noteVel)
@@ -77,7 +104,7 @@ class PoolVoice: Arrow11, NoteHandler {
   }
   
   func noteOff(_ noteVel: MidiNote) {
-    print("OFF: trying \(noteVel.note)")
+    //print("OFF: trying \(noteVel.note)")
     if let voiceIdx = noteToVoiceIdx[noteVel.note] {
       //print("OFF: note \(noteVel.note) releasing voice \(voiceIdx)")
       voices[voiceIdx].noteOff(noteVel)
@@ -120,13 +147,7 @@ class SimpleVoice: Arrow11, NoteHandler {
   func noteOn(_ note: MidiNote) {
     // Map the MIDI velocity (0-127) to an amplitude (0.0-1.0)
     self.amplitude = CoreFloat(note.velocity) / 127.0
-    
-    // Calculate the frequency for the given MIDI note number
-    let freq = 440.0 * pow(2.0, (CoreFloat(note.note) - 69.0) / 12.0)
-    
-    // Set the oscillator's frequency to produce the correct pitch
-    //print("\(freq)")
-    oscillator.factor = freq
+    oscillator.factor = note.freq
     ampMod.noteOn(note)
     filterMod.noteOn(note)
   }
