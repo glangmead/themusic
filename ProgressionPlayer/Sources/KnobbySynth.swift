@@ -36,7 +36,7 @@ class KnobbySynth: EngineAndVoicePool, Codable {
   
   var roseAmount: ArrowConstF = ArrowConstF(1)
   var roseAmplitude: ArrowConstF = ArrowConstF(5)
-  var roseFrequency: ArrowConstF = ArrowConstF(2)
+  var roseFrequency: ArrowConstF = ArrowConstF(1)
   
   var ampEnvs: [ADSR] = []
   var filterEnvs: [ADSR] = []

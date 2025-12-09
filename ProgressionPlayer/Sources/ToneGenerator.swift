@@ -282,7 +282,7 @@ enum ArrowSyntax: Decodable {
         releaseTime: adsr.release,
         scale: adsr.scale
       ))
-      let handleArr = ArrowWithHandles(env)
+      let handleArr = ArrowWithHandles(env.asControl())
       handleArr.namedADSREnvelopes[adsr.name] = env
       return handleArr
     

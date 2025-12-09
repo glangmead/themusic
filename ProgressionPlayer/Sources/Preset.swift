@@ -17,6 +17,8 @@ class InstrumentWithAVAudioUnitEffects {
   var sound: Arrow11
   var positionLFO: Arrow13? = nil
   
+  var positionTask: Task<(), Error>?
+  
   var sourceNode: AVAudioSourceNode? = nil
   var playerNode: AVAudioPlayerNode? = nil//AVAudioPlayerNode()
   
@@ -98,7 +100,10 @@ class InstrumentWithAVAudioUnitEffects {
   }
   
   private var lastTimeWeSetPosition = 0.0
-  private let setPositionMinWaitTime = 441.0 / 44100.0 // setting position is expensive, so limit how often
+  
+  // setting position is expensive, so limit how often
+  // at 0.1 this makes my phone hot
+  private let setPositionMinWaitTimeSecs = 0.01
   
   init(sound: Arrow11) {
     self.sound = sound
@@ -110,12 +115,23 @@ class InstrumentWithAVAudioUnitEffects {
     self.distortionPreset = .defaultValue
     self.reverbPreset = .cathedral
     self.reverbNode?.wetDryMix = 0
+    positionTask = Task.detached(priority: .medium) {
+      repeat {
+        do {
+          try await Task.sleep(for: .seconds(0.01))
+          self.setPosition(Date.now.timeIntervalSince1970)
+        } catch {
+          break
+        }
+      } while !Task.isCancelled
+    }
+
   }
   
   func setPosition(_ t: CoreFloat) {
     if t > 1 { // fixes some race on startup
       if positionLFO != nil {
-        if (t - lastTimeWeSetPosition) > setPositionMinWaitTime {
+        if (t - lastTimeWeSetPosition) > setPositionMinWaitTimeSecs {
           lastTimeWeSetPosition = t
           let (x, y, z) = positionLFO!.of(t - 1)
           mixerNode.position.x = Float(x)
@@ -131,7 +147,7 @@ class InstrumentWithAVAudioUnitEffects {
     //let mono = AVAudioFormat(standardFormatWithSampleRate: sampleRate, channels: 1)
     let setPositionArrow = Arrow10(of: { x in self.setPosition(x) })
     sourceNode = AVAudioSourceNode.withSource(
-      source: sound.withSidecar(setPositionArrow),
+      source: sound,//.withSidecar(setPositionArrow),
       sampleRate: sampleRate
     )
     if playerNode != nil {

@@ -54,7 +54,7 @@ struct SongView: View {
             print("\(error.localizedDescription)")
           }
         }
-      ForEach(["D_Loop_01", "MSLFSanctus"], id: \.self) { song in
+      ForEach(["D_Loop_01", "MSLFSanctus", "All-My-Loving"], id: \.self) { song in
         Button("Play \(song)") {
           songURL = Bundle.main.url(forResource: song, withExtension: "mid")
           seq?.playURL(url: songURL!)

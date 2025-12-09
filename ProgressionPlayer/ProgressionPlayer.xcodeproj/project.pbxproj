@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9B0F28872ED00401004C0884 /* AudioKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9B0F28862ED00401004C0884 /* AudioKitUI */; };
+		9B137E812EE8CA6D00DE0E15 /* All-My-Loving.mid in Resources */ = {isa = PBXBuildFile; fileRef = 9B137E802EE8CA6D00DE0E15 /* All-My-Loving.mid */; };
 		9B1864642E772E37006147D8 /* Overture in Frameworks */ = {isa = PBXBuildFile; productRef = 9B1864632E772E37006147D8 /* Overture */; };
 		9B1F01702EB95F0A00C5110F /* Note.icon in Resources */ = {isa = PBXBuildFile; fileRef = 9B1F016F2EB95F0A00C5110F /* Note.icon */; };
 		9B7430A02ECFA5640017DE7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B7430922ECFA5640017DE7D /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B137E802EE8CA6D00DE0E15 /* All-My-Loving.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = "All-My-Loving.mid"; sourceTree = "<group>"; };
 		9B1F016F2EB95F0A00C5110F /* Note.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = Note.icon; sourceTree = "<group>"; };
 		9B7430922ECFA5640017DE7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B935B942EDE0F1800600E63 /* D_Loop_01.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = D_Loop_01.mid; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				9B1F016F2EB95F0A00C5110F /* Note.icon */,
 				9B935B942EDE0F1800600E63 /* D_Loop_01.mid */,
 				9B935B952EDE0F1800600E63 /* MSLFSanctus.mid */,
+				9B137E802EE8CA6D00DE0E15 /* All-My-Loving.mid */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B935B962EDE0F1800600E63 /* D_Loop_01.mid in Resources */,
+				9B137E812EE8CA6D00DE0E15 /* All-My-Loving.mid in Resources */,
 				9B935B972EDE0F1800600E63 /* MSLFSanctus.mid in Resources */,
 				9BFFD97F2E7DA94B00E7CB55 /* beat.aiff in Resources */,
 				9B7430A02ECFA5640017DE7D /* Assets.xcassets in Resources */,
