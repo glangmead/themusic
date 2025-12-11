@@ -176,7 +176,7 @@ class KnobbySynth: EngineAndVoicePool, Codable {
             modulation:
               PostMult(
                 factor: 0,
-                arrow:  PreMult(factor: 5.0, arrow: Triangle)
+                arrow:  PreMult(factor: 5.0, arrow: Triangle())
               )
               .asControl()
           ),

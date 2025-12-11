@@ -18,7 +18,7 @@ struct EnvelopeData {
 /// An envelope is an arrow with more of a sense of absolute time. It has a beginning, evolution, and ending.
 /// Hence it is also a NoteHandler, so we can tell it when to begin to attack, and when to begin to decay.
 /// Within that concept, ADSR is a specific family of functions. This is a linear one.
-class ADSR: ControlArrow11, NoteHandler {
+class ADSR: Arrow11, NoteHandler {
   enum EnvelopeState {
     case closed
     case attack
@@ -36,25 +36,25 @@ class ADSR: ControlArrow11, NoteHandler {
   
   init(envelope e: EnvelopeData) {
     self.env = e
-    weak var futureSelf: ADSR? = nil
-    super.init(of: Arrow11(of: { time in
-      switch futureSelf!.state {
-      case .closed:
+    super.init()
+    self.setFunctionsFromEnvelopeSpecs()
+  }
+  
+  override func of(_ ime: CoreFloat) -> CoreFloat {
+    switch state {
+    case .closed:
+      return 0
+    case .attack:
+      return attackEnv.val(CoreFloat(Date.now.timeIntervalSince1970) - timeOrigin)
+    case .decay:
+      let time = CoreFloat(Date.now.timeIntervalSince1970) - timeOrigin
+      if time > env.decayTime {
+        state = .closed
         return 0
-      case .attack:
-        return futureSelf!.attackEnv.val(CoreFloat(Date.now.timeIntervalSince1970) - futureSelf!.timeOrigin)
-      case .decay:
-        let time = CoreFloat(Date.now.timeIntervalSince1970) - futureSelf!.timeOrigin
-        if time > futureSelf!.env.decayTime {
-          futureSelf!.state = .closed
-          return 0
-        } else {
-          return futureSelf!.decayEnv.val(time)
-        }
+      } else {
+        return decayEnv.val(time)
       }
-    }))
-    futureSelf = self
-    setFunctionsFromEnvelopeSpecs()
+    }
   }
   
   func setFunctionsFromEnvelopeSpecs() {

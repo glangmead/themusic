@@ -143,10 +143,8 @@ class InstrumentWithAVAudioUnitEffects {
   
   func buildChainAndGiveOutputNode(forEngine engine: SpatialAudioEngine) -> AVAudioMixerNode {
     let sampleRate = engine.sampleRate
-    //let mono = AVAudioFormat(standardFormatWithSampleRate: sampleRate, channels: 1)
-    let setPositionArrow = Arrow10(of: { x in self.setPosition(x) })
     sourceNode = AVAudioSourceNode.withSource(
-      source: sound,//.withSidecar(setPositionArrow),
+      source: sound,
       sampleRate: sampleRate
     )
     if playerNode != nil {

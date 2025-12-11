@@ -8,25 +8,35 @@
 import Foundation
 import SwiftUI
 
-let Sine = Arrow11(of: {
-  sin(2 * .pi * fmod($0, 1.0))
-})
+class Sine: Arrow11 {
+  override func of(_ t: CoreFloat) -> CoreFloat {
+    sin(2 * .pi * fmod(t, 1.0))
+  }
+}
 
-let Triangle = Arrow11(of: { x in
-  2 * (abs((2 * fmod(x, 1.0)) - 1.0) - 0.5)
-})
+class Triangle: Arrow11 {
+  override func of(_ t: CoreFloat) -> CoreFloat {
+    2 * (abs((2 * fmod(t, 1.0)) - 1.0) - 0.5)
+  }
+}
 
-let Sawtooth = Arrow11(of: { x in
-  (2 * fmod(x, 1.0)) - 1.0
-})
+class Sawtooth: Arrow11 {
+  override func of(_ t: CoreFloat) -> CoreFloat {
+    (2 * fmod(t, 1.0)) - 1.0
+  }
+}
 
-let Square = Arrow11(of: { x in
-  fmod(x, 1) <= 0.5 ? 1.0 : -1.0
-})
+class Square: Arrow11 {
+  override func of(_ t: CoreFloat) -> CoreFloat {
+    fmod(t, 1) <= 0.5 ? 1.0 : -1.0
+  }
+}
 
-let Noise = Arrow11(of: { x in
-  CoreFloat.random(in: 0.0...1.0)
-})
+class Noise: Arrow11 {
+  override func of(_ t: CoreFloat) -> CoreFloat {
+    CoreFloat.random(in: 0.0...1.0)
+  }
+}
 
 class BasicOscillator: Arrow11 {
   enum OscShape: String, CaseIterable, Equatable, Hashable, Decodable {
@@ -37,28 +47,25 @@ class BasicOscillator: Arrow11 {
     case noise = "noiseOsc"
   }
   var shape: OscShape
-  var oscShapeBindings = [String: Binding<OscShape>]()
   var arrow: Arrow11 {
     switch shape {
     case .sine:
-      Sine
+      Sine()
     case .triangle:
-      Triangle
+      Triangle()
     case .sawtooth:
-      Sawtooth
+      Sawtooth()
     case .square:
-      Square
+      Square()
     case .noise:
-      Noise
+      Noise()
     }
   }
   init(shape: OscShape) {
     self.shape = shape
-    var fself: BasicOscillator? = nil
-    super.init(of: { t in
-      fself!.arrow.of(t)
-    })
-    fself = self
+  }
+  override func of(_ t: CoreFloat) -> CoreFloat {
+    arrow.of(t)
   }
 }
 
@@ -73,12 +80,11 @@ class Rose: Arrow13 {
     self.leafFactor = leafFactor
     self.freq = freq
     self.phase = phase
-    super.init(of: { x in
-      let domain = (freq.of(x) * x) + phase
-      return ( amp.of(x) * sin(leafFactor.of(x) * domain) * cos(domain), amp.of(x) * sin(leafFactor.of(x) * domain) * sin(domain), amp.of(x) * sin(domain) )
-    })
   }
-  
+  override func of(_ t: CoreFloat) -> (CoreFloat, CoreFloat, CoreFloat) {
+    let domain = (freq.of(t) * t) + phase
+    return ( amp.of(t) * sin(leafFactor.of(t) * domain) * cos(domain), amp.of(t) * sin(leafFactor.of(t) * domain) * sin(domain), amp.of(t) * sin(domain) )
+  }
 }
 
 protocol HasFactor {
@@ -92,11 +98,9 @@ class PreMult: Arrow11, HasFactor {
   init(factor: CoreFloat, arrow: Arrow11) {
     self.factor = factor
     self.arrow = arrow
-    weak var futureSelf: PreMult? = nil
-    super.init(of: { x in
-      return futureSelf!.arrow.of(futureSelf!.factor * x)
-    })
-    futureSelf = self
+  }
+  override func of(_ t: CoreFloat) -> CoreFloat {
+    arrow.of(factor * t)
   }
 }
 
@@ -107,11 +111,9 @@ class PostMult: Arrow11, HasFactor {
   init(factor: CoreFloat, arrow: Arrow11) {
     self.factor = factor
     self.arrow = arrow
-    weak var fself: PostMult? = nil
-    super.init(of: { x in
-      return fself!.factor * fself!.arrow.of(x)
-    })
-    fself = self
+  }
+  override func of(_ t: CoreFloat) -> CoreFloat {
+    factor * arrow.of(t)
   }
 }
 
@@ -123,12 +125,10 @@ class ModulatedPreMult: Arrow11, HasFactor {
     self.factor = factor
     self.arrow = arrow
     self.modulation = modulation
-    weak var fself: ModulatedPreMult? = nil // future self
-    super.init(of: { x in
-      let result = fself!.arrow.of( (fself!.factor * x) + fself!.modulation.of(x))
-      return result
-    })
-    fself = self
+  }
+  override func of(_ t: CoreFloat) -> CoreFloat {
+    let result = arrow.of( (factor * t) + modulation.of(t))
+    return result
   }
 }
 
@@ -139,13 +139,11 @@ class Delay: Arrow11 {
   var arrow: Arrow11
   init(_ arr: Arrow11, lookback: Int = 1) {
     self.arrow = arr
-    weak var fself: Delay? = nil
-    super.init(of: { t in
-      let prevVal = fself!.previousOutput
-      fself!.previousOutput = fself!.arrow.of(t)
-      return prevVal
-    })
-    fself = self
+  }
+  override func of(_ t: CoreFloat) -> CoreFloat {
+    let prevVal = previousOutput
+    previousOutput = arrow.of(t)
+    return prevVal
   }
 }
 
@@ -164,18 +162,16 @@ class LowPassFilter: Arrow11, HasFactor {
     self.resonance = resonance
     self.previousTime = 0
     self.previousOutput = 0
+  }
 
-    weak var fself: LowPassFilter? = nil
-    super.init(of: { t in
-      let rc = 1.0 / (2 * .pi * fself!.factor)
-      let dt = t - fself!.previousTime
-      let alpha = dt / (rc + dt)
-      let output = (alpha * fself!.arrow.of(t)) + (1 - alpha) * fself!.previousOutput
-      fself!.previousOutput = output
-      fself!.previousTime = t
-      return output
-    })
-    fself = self
+  override func of(_ t: CoreFloat) -> CoreFloat {
+    let rc = 1.0 / (2 * .pi * factor)
+    let dt = t - previousTime
+    let alpha = dt / (rc + dt)
+    let output = (alpha * arrow.of(t)) + (1 - alpha) * previousOutput
+    previousOutput = output
+    previousTime = t
+    return output
   }
 }
 
@@ -191,18 +187,15 @@ class LowPassFilter2: Arrow11 {
     self.resonance = resonance
     self.previousTime = 0
     self.previousOutput = 0
-    
-    weak var fself: LowPassFilter2? = nil
-    super.init(of: { t in
-      let rc = 1.0 / (2 * .pi * fself!.cutoff.of(t))
-      let dt = t - fself!.previousTime
-      let alpha = dt / (rc + dt)
-      let output = (alpha * fself!.arrow.of(t)) + (1 - alpha) * fself!.previousOutput
-      fself!.previousOutput = output
-      fself!.previousTime = t
-      return output
-    })
-    fself = self
+  }
+  override func of(_ t: CoreFloat) -> CoreFloat {
+    let rc = 1.0 / (2 * .pi * cutoff.of(t))
+    let dt = t - previousTime
+    let alpha = dt / (rc + dt)
+    let output = (alpha * arrow.of(t)) + (1 - alpha) * previousOutput
+    previousOutput = output
+    previousTime = t
+    return output
   }
 }
 
@@ -216,9 +209,9 @@ class ArrowWithHandles: Arrow11 {
   
   init(_ arrow: Arrow11) {
     self.arrow = arrow
-    weak var fself: ArrowWithHandles? = nil
-    super.init(of: { t in fself!.arrow.of(t) })
-    fself = self
+  }
+  override func of(_ t: CoreFloat) -> CoreFloat {
+    arrow.of(t)
   }
   
   func withMergeDictsFromArrow(_ arr2: ArrowWithHandles) -> ArrowWithHandles {
@@ -292,7 +285,7 @@ enum ArrowSyntax: Decodable {
         let arr = Delay(lowerArr)
         return ArrowWithHandles(arr).withMergeDictsFromArrow(lowerArr)
       } else if namedArrow.name == "control" {
-        let arr = ControlArrow11(of: lowerArr)
+        let arr = ControlArrow11(lowerArr)
         return ArrowWithHandles(arr).withMergeDictsFromArrow(lowerArr)
       } else if namedArrow.name == "sin" {
         let arr = ArrowCompose(outer: ArrowSin(), inner: lowerArr)

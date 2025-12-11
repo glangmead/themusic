@@ -23,9 +23,9 @@ class EnvelopeHandlePlayer: Arrow11, NoteHandler {
   var arrow: ArrowWithHandles
   init(arrow: ArrowWithHandles) {
     self.arrow = arrow
-    super.init(of: {t in
-      arrow.of(t)
-    })
+  }
+  override func of(_ t: CoreFloat) -> CoreFloat {
+    arrow.of(t)
   }
   func noteOn(_ note: MidiNote) {
     for key in arrow.namedADSREnvelopes.keys {
@@ -68,12 +68,10 @@ class PoolVoice: Arrow11, NoteHandler {
     availableVoiceIdxs = Set(0..<voices.count)
     noteOnnedVoiceIdxs = Set<Int>()
     noteToVoiceIdx = [:]
-    
-    weak var futureSelf: PoolVoice? = nil
-    super.init(of: { time in
-      futureSelf!.sumSource.of(time)
-    })
-    futureSelf = self
+  }
+  
+  override func of(_ t: CoreFloat) -> CoreFloat {
+    sumSource.of(t)
   }
   
   private func takeAvailableVoice(_ note: MidiValue) -> NoteHandler? {
@@ -124,22 +122,19 @@ class SimpleVoice: Arrow11, NoteHandler {
     self.ampMod = ampMod
     self.filterMod = filterMod
     self.filteredOsc = LowPassFilter(of: oscillator, cutoff: filterMod.of(0), resonance: 0)
-    weak var futureSelf: SimpleVoice? = nil
-    super.init(of: { time in
-      // If the amplitude is zero, the voice is effectively off, so we return silence.
-      guard futureSelf!.amplitude > 0.0 else {
-        return 0.0
-      }
-      // update the filter with the filterMod envelope's current value
-      futureSelf!.filteredOsc.factor = futureSelf!.filterMod.of(time)
-      // get the tone
-      let rawOscillatorSample = futureSelf!.filteredOsc.of(time)
-      // get the amplitude
-      let ampEnv = ampMod.of(time)
-      return futureSelf!.amplitude * ampEnv * rawOscillatorSample
-    })
-    futureSelf = self
-    
+  }
+  override func of(_ t: CoreFloat) -> CoreFloat {
+    // If the amplitude is zero, the voice is effectively off, so we return silence.
+    guard amplitude > 0.0 else {
+      return 0.0
+    }
+    // update the filter with the filterMod envelope's current value
+    filteredOsc.factor = filterMod.of(t)
+    // get the tone
+    let rawOscillatorSample = filteredOsc.of(t)
+    // get the amplitude
+    let ampEnv = ampMod.of(t)
+    return amplitude * ampEnv * rawOscillatorSample
   }
   
   func noteOn(_ note: MidiNote) {
