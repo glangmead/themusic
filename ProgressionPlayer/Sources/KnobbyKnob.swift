@@ -56,7 +56,7 @@ struct KnobbyKnob<T: BinaryFloatingPoint>: View {
         }
       
       if ifShowValue {
-        KnobbyBox(isOn: false, blankStyle: true, width: 25, height: 16) {
+        KnobbyBox(isOn: false, blankStyle: false, width: size*0.9, height: 16) {
           Text(valueFormatter(value)).foregroundColor(Theme.colorBodyText)
         }
       }

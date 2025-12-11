@@ -207,12 +207,12 @@ class LowPassFilter2: Arrow11 {
 }
 
 class ArrowWithHandles: Arrow11 {
+  var arrow: Arrow11
   // the handles are dictionaries with values that give access to arrows within the arrow
   var namedBasicOscs     = [String: BasicOscillator]()
   var namedLowPassFilter = [String: LowPassFilter2]()
   var namedConsts        = [String: ArrowConst]()
   var namedADSREnvelopes = [String: ADSR]()
-  var arrow: Arrow11
   
   init(_ arrow: Arrow11) {
     self.arrow = arrow

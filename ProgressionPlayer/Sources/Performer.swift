@@ -39,8 +39,6 @@ class EnvelopeHandlePlayer: Arrow11, NoteHandler {
       arrow.namedADSREnvelopes[key]!.noteOff(note)
     }
   }
-  
-  
 }
 
 protocol NoteHandler {

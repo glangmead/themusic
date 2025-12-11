@@ -115,7 +115,7 @@ class InstrumentWithAVAudioUnitEffects {
     self.distortionPreset = .defaultValue
     self.reverbPreset = .cathedral
     self.reverbNode?.wetDryMix = 0
-    positionTask = Task.detached(priority: .medium) {
+    self.positionTask = Task.detached(priority: .medium) {
       repeat {
         do {
           try await Task.sleep(for: .seconds(0.01))
@@ -125,7 +125,6 @@ class InstrumentWithAVAudioUnitEffects {
         }
       } while !Task.isCancelled
     }
-
   }
   
   func setPosition(_ t: CoreFloat) {

@@ -140,8 +140,9 @@ class ArrowCos: Arrow11 {
   }
 }
 
-class ArrowConst: Arrow11 {
+class ArrowConst: Arrow11, Equatable {
   var val: CoreFloat
+
   init(_ value: CoreFloat) {
     self.val = value
     weak var fself: ArrowConst? = nil
@@ -150,10 +151,15 @@ class ArrowConst: Arrow11 {
     })
     fself = self
   }
+  
+  static func == (lhs: ArrowConst, rhs: ArrowConst) -> Bool {
+    lhs.val == rhs.val
+  }
 }
 
-class ArrowConstF: Arrow11 {
+class ArrowConstF: Arrow11, Equatable {
   var val: Float
+
   init(_ val: Float) {
     self.val = val
     weak var fself: ArrowConstF? = nil
@@ -161,6 +167,10 @@ class ArrowConstF: Arrow11 {
       Double(fself!.val)
     })
     fself = self
+  }
+
+  static func == (lhs: ArrowConstF, rhs: ArrowConstF) -> Bool {
+    lhs.val == rhs.val
   }
 }
 
