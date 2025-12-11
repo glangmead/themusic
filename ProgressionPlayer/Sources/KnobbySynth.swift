@@ -184,7 +184,7 @@ class KnobbySynth: EngineAndVoicePool, Codable {
         filterMod: filterEnv
       )
       voices.append(voice)
-      let preset = Preset(sound: voice)
+      let preset = Preset(sound: ArrowWithHandles(voice))
       preset.positionLFO = Rose(
         amp: roseAmplitude,
         leafFactor: roseAmount,

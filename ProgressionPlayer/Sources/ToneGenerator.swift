@@ -39,7 +39,7 @@ class Noise: Arrow11 {
 }
 
 class BasicOscillator: Arrow11 {
-  enum OscShape: String, CaseIterable, Equatable, Hashable, Decodable {
+  enum OscShape: String, CaseIterable, Equatable, Hashable, Codable {
     case sine = "sineOsc"
     case triangle = "triangleOsc"
     case sawtooth = "sawtoothOsc"
@@ -230,13 +230,13 @@ class ArrowWithHandles: Arrow11 {
   }
 }
 
-enum ArrowSyntax: Decodable {
-  case const(NamedFloat)
+enum ArrowSyntax: Codable {
+  case const(val: NamedFloat)
   case identity
-  indirect case lowPassFilter(LowPassArrowSyntax)
-  indirect case unary(NamedArrowSyntax)
-  indirect case nary(NamedArrowSyntaxList)
-  indirect case envelope(ADSRSyntax)
+  indirect case lowPassFilter(specs: LowPassArrowSyntax)
+  indirect case unary(of: NamedArrowSyntax)
+  indirect case nary(of: NamedArrowSyntaxList)
+  indirect case envelope(specs: ADSRSyntax)
   // NOTE: cases need to each be tied to a different associated type, given the Decoding logic
   
   // see https://www.compilenrun.com/docs/language/swift/swift-enumerations/swift-recursive-enumerations/
@@ -295,7 +295,7 @@ enum ArrowSyntax: Decodable {
         return ArrowWithHandles(arr).withMergeDictsFromArrow(lowerArr)
       } else if BasicOscillator.OscShape.allCases.map({$0.rawValue}).contains(namedArrow.name) {
         let osc = BasicOscillator(shape: BasicOscillator.OscShape(rawValue: namedArrow.name)!)
-        var arr = ArrowCompose(outer: osc, inner: lowerArr)
+        let arr = ArrowCompose(outer: osc, inner: lowerArr)
         let handleArr = ArrowWithHandles(arr)
         handleArr.namedBasicOscs[namedArrow.name] = osc
         return handleArr.withMergeDictsFromArrow(lowerArr)
@@ -314,34 +314,16 @@ enum ArrowSyntax: Decodable {
       }
     }
   }
-  
-  // see https://github.com/rogerluan/JSEN/blob/main/Sources/JSEN%2BCodable.swift
-  public init(from decoder: Decoder) throws {
-    let container = try decoder.singleValueContainer()
-    if let float = try? container.decode(NamedFloat.self) {
-      self = .const(float)
-    } else if let adsrData = try? container.decode(ADSRSyntax.self) {
-      self = .envelope(adsrData)
-    } else if let innerArrow = try? container.decode(NamedArrowSyntax.self) {
-      self = .unary(innerArrow)
-    } else if let lowPassFilter = try? container.decode(LowPassArrowSyntax.self) {
-      self = .lowPassFilter(lowPassFilter)
-    } else if let innerArrows = try? container.decode(NamedArrowSyntaxList.self) {
-      self = .nary(innerArrows)
-    } else {
-      self = .identity
-    }
-  }
 }
 
-struct LowPassArrowSyntax: Decodable {
+struct LowPassArrowSyntax: Codable {
   let name: String
   let cutoff: ArrowSyntax
   let resonance: ArrowSyntax
   let arrow: ArrowSyntax
 }
 
-struct ADSRSyntax: Decodable {
+struct ADSRSyntax: Codable {
   let name: String
   let attack: CoreFloat
   let decay: CoreFloat
@@ -350,22 +332,22 @@ struct ADSRSyntax: Decodable {
   let scale: CoreFloat
 }
 
-struct NamedArrowSyntax: Decodable {
+struct NamedArrowSyntax: Codable {
   let name: String
   let arrow: ArrowSyntax
 }
 
-struct NamedArrowSyntaxList: Decodable {
+struct NamedArrowSyntaxList: Codable {
   let name: String
   let arrows: [ArrowSyntax]
 }
 
-struct NamedFloat: Decodable {
+struct NamedFloat: Codable {
   let name: String
   let val: CoreFloat
 }
 
-struct NamedBasicOscillatorShape: Decodable {
+struct NamedBasicOscillatorShape: Codable {
   let name: String
   let osc: BasicOscillator.OscShape
 }

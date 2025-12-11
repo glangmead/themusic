@@ -12,9 +12,45 @@ import Overture
 
 // TODO: ModulatedReverbNode which has an AVAudioUnitReverb and an arrow for each exposed parameter of said node
 
+struct RoseSyntax: Codable {
+  let amp: CoreFloat
+  let leafFactor: CoreFloat
+  let freq: CoreFloat
+  let phase: CoreFloat
+}
+
+struct EffectsSyntax: Codable {
+  let reverbPreset: CoreFloat
+  let reverbWetDryMix: CoreFloat
+  let delayTime: CoreFloat
+  let delayFeedback: CoreFloat
+  let delayLowPassCutoff: CoreFloat
+  let delayWetDryMix: CoreFloat
+}
+
+struct PresetSyntax: Codable {
+  let name: String
+  let arrow: ArrowSyntax
+  let rose: RoseSyntax
+  let effects: EffectsSyntax
+  
+  func compile() -> Preset {
+    let sound = arrow.compile()
+    let preset = Preset(sound: sound)
+    preset.reverbPreset = AVAudioUnitReverbPreset(rawValue: Int(effects.reverbPreset)) ?? .mediumRoom
+    preset.setReverbWetDryMix(effects.reverbWetDryMix)
+    preset.setDelayTime(effects.delayTime)
+    preset.setDelayFeedback(effects.delayFeedback)
+    preset.setDelayLowPassCutoff(effects.delayLowPassCutoff)
+    preset.setDelayWetDryMix(effects.delayWetDryMix)
+    preset.positionLFO = Rose(amp: ArrowConst(rose.amp), leafFactor: ArrowConst(rose.leafFactor), freq: ArrowConst(rose.freq), phase: rose.phase)
+    return preset
+  }
+}
+
 class InstrumentWithAVAudioUnitEffects {
   // members that would have their own external params
-  var sound: Arrow11
+  var sound: ArrowWithHandles
   var positionLFO: Arrow13? = nil
   
   var positionTask: Task<(), Error>?
@@ -105,7 +141,7 @@ class InstrumentWithAVAudioUnitEffects {
   // at 0.1 this makes my phone hot
   private let setPositionMinWaitTimeSecs = 0.01
   
-  init(sound: Arrow11) {
+  init(sound: ArrowWithHandles) {
     self.sound = sound
     self.reverbNode = AVAudioUnitReverb()
     //self.delayNode = AVAudioUnitDelay()

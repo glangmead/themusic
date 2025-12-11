@@ -1,0 +1,169 @@
+{
+  "arrow": {
+    "lowPassFilter": {
+      "specs": {
+        "cutoff": {
+          "nary": {
+            "of": {
+              "name": "prod",
+              "arrows": [
+                {
+                  "const": {
+                    "val": {
+                      "name": "cutoff",
+                      "val": 1000
+                    }
+                  }
+                },
+                {
+                  "envelope": {
+                    "specs": {
+                      "release": 0.1,
+                      "scale": 1,
+                      "name": "filterEnv",
+                      "attack": 0.3,
+                      "decay": 0.1,
+                      "sustain": 1
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "arrow": {
+          "nary": {
+            "of": {
+              "name": "prod",
+              "arrows": [
+                {
+                  "unary": {
+                    "of": {
+                      "arrow": {
+                        "nary": {
+                          "of": {
+                            "arrows": [
+                              {
+                                "nary": {
+                                  "of": {
+                                    "name": "prod",
+                                    "arrows": [
+                                      {
+                                        "const": {
+                                          "val": {
+                                            "name": "freq",
+                                            "val": 300
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "identity": {}
+                                      }
+                                    ]
+                                  }
+                                }
+                              },
+                              {
+                                "unary": {
+                                  "of": {
+                                    "arrow": {
+                                      "nary": {
+                                        "of": {
+                                          "arrows": [
+                                            {
+                                              "const": {
+                                                "val": {
+                                                  "name": "vibratoAmp",
+                                                  "val": 0
+                                                }
+                                              }
+                                            },
+                                            {
+                                              "unary": {
+                                                "of": {
+                                                  "arrow": {
+                                                    "nary": {
+                                                      "of": {
+                                                        "arrows": [
+                                                          {
+                                                            "const": {
+                                                              "val": {
+                                                                "val": 3,
+                                                                "name": "vibratoFreq"
+                                                              }
+                                                            }
+                                                          },
+                                                          {
+                                                            "identity": {}
+                                                          }
+                                                        ],
+                                                        "name": "prod"
+                                                      }
+                                                    }
+                                                  },
+                                                  "name": "sineOsc"
+                                                }
+                                              }
+                                            }
+                                          ],
+                                          "name": "prod"
+                                        }
+                                      }
+                                    },
+                                    "name": "control"
+                                  }
+                                }
+                              }
+                            ],
+                            "name": "sum"
+                          }
+                        }
+                      },
+                      "name": "sawtoothOsc"
+                    }
+                  }
+                },
+                {
+                  "envelope": {
+                    "specs": {
+                      "decay": 0.1,
+                      "sustain": 1,
+                      "attack": 0.01,
+                      "name": "ampEnv",
+                      "release": 0.1,
+                      "scale": 1
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "resonance": {
+          "const": {
+            "val": {
+              "name": "resonance",
+              "val": 1000
+            }
+          }
+        },
+        "name": "filter"
+      }
+    }
+  },
+  "name": "saw1",
+  "rose": {
+    "freq": 0.1,
+    "leafFactor": 3,
+    "phase": 3.141592653589793,
+    "amp": 4
+  },
+  "effects": {
+    "reverbPreset": 1,
+    "delayTime": 0,
+    "delayLowPassCutoff": 100000,
+    "delayFeedback": 0,
+    "reverbWetDryMix": 50,
+    "delayWetDryMix": 0
+  }
+}
