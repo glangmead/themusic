@@ -10,7 +10,7 @@ import SwiftUI
 
 @main
 struct ProgressionPlayerApp: App {
-  @State private var synth = KnobbySynth()
+  @State private var synth = SyntacticSynth()
   init() {
     do {
       try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)

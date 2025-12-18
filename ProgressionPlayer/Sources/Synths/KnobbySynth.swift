@@ -34,9 +34,9 @@ class KnobbySynth: EngineAndVoicePool, Codable {
   var oscillator: BasicOscillator? = nil
   var filteredOsc: LowPassFilter? = nil
   
-  var roseAmount: ArrowConstF = ArrowConstF(1)
-  var roseAmplitude: ArrowConstF = ArrowConstF(5)
-  var roseFrequency: ArrowConstF = ArrowConstF(1)
+  var roseAmount: ArrowConst = ArrowConst(1)
+  var roseAmplitude: ArrowConst = ArrowConst(5)
+  var roseFrequency: ArrowConst = ArrowConst(1)
   
   var ampEnvs: [ADSR] = []
   var filterEnvs: [ADSR] = []

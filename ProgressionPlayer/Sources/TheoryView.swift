@@ -9,7 +9,7 @@ import SwiftUI
 import Tonic
 
 struct TheoryView: View {
-  @Environment(KnobbySynth.self) private var synth
+  @Environment(SyntacticSynth.self) private var synth
   @State private var fxExpanded = true
   @State private var ampADSRExpanded = true
   @State private var roseParamsExpanded = true
@@ -36,6 +36,7 @@ struct TheoryView: View {
     NavigationStack {
       Section {
         Picker("Key", selection: $key) {
+          Text("F").tag(Key.F)
           Text("C").tag(Key.C)
           Text("G").tag(Key.G)
           Text("D").tag(Key.D)
@@ -103,12 +104,12 @@ struct TheoryView: View {
       }
     }
     .sheet(isPresented: $isShowingSynth) {
-      KnobbySynthView(synth: synth)
+      SyntacticSynthView(synth: synth)
     }
   }
 }
 
 #Preview {
   TheoryView()
-    .environment(KnobbySynth())
+    .environment(SyntacticSynth())
 }

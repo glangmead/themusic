@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SongView: View {
-  @Environment(KnobbySynth.self) private var synth
+  @Environment(SyntacticSynth.self) private var synth
   @State private var seq: Sequencer?
   @State private var error: Error? = nil
   @State private var isImporting = false
@@ -75,12 +75,12 @@ struct SongView: View {
       }
     }
     .sheet(isPresented: $isShowingSynth) {
-      KnobbySynthView(synth: synth)
+      SyntacticSynthView(synth: synth)
     }
   }
 }
 
 #Preview {
   SongView()
-    .environment(KnobbySynth())
+    .environment(SyntacticSynth())
 }

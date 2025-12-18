@@ -48,48 +48,55 @@ struct PresetSyntax: Codable {
   }
 }
 
+@Observable
 class InstrumentWithAVAudioUnitEffects {
-  // members that would have their own external params
   var sound: ArrowWithHandles
-  var positionLFO: Arrow13? = nil
+  var positionLFO: Rose? = nil
   
-  var positionTask: Task<(), Error>?
+  private var positionTask: Task<(), Error>?
   
-  var sourceNode: AVAudioSourceNode? = nil
-  var playerNode: AVAudioPlayerNode? = nil//AVAudioPlayerNode()
+  private var sourceNode: AVAudioSourceNode? = nil
+  private var playerNode: AVAudioPlayerNode? = nil//AVAudioPlayerNode()
   
   // members whose params we can expose
-  var reverbNode: AVAudioUnitReverb?
-  var mixerNode = AVAudioMixerNode()
-  var delayNode: AVAudioUnitDelay? = AVAudioUnitDelay()
-  var distortionNode: AVAudioUnitDistortion? = nil
+  private var reverbNode: AVAudioUnitReverb?
+  private var mixerNode = AVAudioMixerNode()
+  private var delayNode: AVAudioUnitDelay? = AVAudioUnitDelay()
+  private var distortionNode: AVAudioUnitDistortion? = nil
+  
+  var distortionAvailable: Bool {
+    distortionNode != nil
+  }
+  
+  var delayAvailable: Bool {
+    delayNode != nil
+  }
+  
+  // the parameters of the effects and the position arrow
+  
+  // effect enums
   var reverbPreset: AVAudioUnitReverbPreset {
     didSet {
       reverbNode?.loadFactoryPreset(reverbPreset)
     }
   }
   var distortionPreset: AVAudioUnitDistortionPreset
-  
+  // .drumsBitBrush, .drumsBufferBeats, .drumsLoFi, .multiBrokenSpeaker, .multiCellphoneConcert, .multiDecimated1, .multiDecimated2, .multiDecimated3, .multiDecimated4, .multiDistortedFunk, .multiDistortedCubed, .multiDistortedSquared, .multiEcho1, .multiEcho2, .multiEchoTight1, .multiEchoTight2, .multiEverythingIsBroken, .speechAlienChatter, .speechCosmicInterference, .speechGoldenPi, .speechRadioTower, .speechWaves
+  func getDistortionPreset() -> AVAudioUnitDistortionPreset {
+    distortionPreset
+  }
+  func setDistortionPreset(_ val: AVAudioUnitDistortionPreset) {
+    distortionNode?.loadFactoryPreset(val)
+    self.distortionPreset = val
+  }
+
+  // effect float values
   func getReverbWetDryMix() -> CoreFloat {
     CoreFloat(reverbNode?.wetDryMix ?? 0)
   }
   func setReverbWetDryMix(_ val: CoreFloat) {
     reverbNode?.wetDryMix = Float(val)
   }
-
-  func getSpatialPosition() -> (CoreFloat, CoreFloat, CoreFloat) {
-    (
-      CoreFloat(mixerNode.position.x),
-      CoreFloat(mixerNode.position.y),
-      CoreFloat(mixerNode.position.z)
-    )
-  }
-  func setSpatialPosition(_ pos: (CoreFloat, CoreFloat, CoreFloat)) {
-    mixerNode.position.x = Float(pos.0)
-    mixerNode.position.y = Float(pos.1)
-    mixerNode.position.z = Float(pos.2)
-  }
-  
   func getDelayTime() -> CoreFloat {
     CoreFloat(delayNode?.delayTime ?? 0)
   }
@@ -113,14 +120,6 @@ class InstrumentWithAVAudioUnitEffects {
   }
   func setDelayWetDryMix(_ val: CoreFloat) {
     delayNode?.wetDryMix = Float(val)
-  }
-  // .drumsBitBrush, .drumsBufferBeats, .drumsLoFi, .multiBrokenSpeaker, .multiCellphoneConcert, .multiDecimated1, .multiDecimated2, .multiDecimated3, .multiDecimated4, .multiDistortedFunk, .multiDistortedCubed, .multiDistortedSquared, .multiEcho1, .multiEcho2, .multiEchoTight1, .multiEchoTight2, .multiEverythingIsBroken, .speechAlienChatter, .speechCosmicInterference, .speechGoldenPi, .speechRadioTower, .speechWaves
-  func getDistortionPreset() -> AVAudioUnitDistortionPreset {
-    distortionPreset
-  }
-  func setDistortionPreset(_ val: AVAudioUnitDistortionPreset) {
-    distortionNode?.loadFactoryPreset(val)
-    self.distortionPreset = val
   }
   func getDistortionPreGain() -> CoreFloat {
     CoreFloat(distortionNode?.preGain ?? 0)
@@ -147,9 +146,9 @@ class InstrumentWithAVAudioUnitEffects {
     //self.delayNode = AVAudioUnitDelay()
     //self.distortionNode = AVAudioUnitDistortion()
     //self.distortionNode?.wetDryMix = 0
-    self.delayNode?.delayTime = 0
     self.distortionPreset = .defaultValue
     self.reverbPreset = .cathedral
+    self.delayNode?.delayTime = 0
     self.reverbNode?.wetDryMix = 0
     self.positionTask = Task.detached(priority: .medium) {
       repeat {

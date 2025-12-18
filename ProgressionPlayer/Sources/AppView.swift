@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AppView: View {
-  @Environment(KnobbySynth.self) private var synth
+  @Environment(SyntacticSynth.self) private var synth
 
   var body: some View {
     TabView {
@@ -18,9 +18,6 @@ struct AppView: View {
       Tab("Song", systemImage: "document") {
         SongView()
       }
-      Tab("Syntax", systemImage: "gear") {
-        SyntacticSynthView()
-      }
     }
 
   }
@@ -28,5 +25,5 @@ struct AppView: View {
 
 #Preview {
   AppView()
-    .environment(KnobbySynth())
+    .environment(SyntacticSynth())
 }

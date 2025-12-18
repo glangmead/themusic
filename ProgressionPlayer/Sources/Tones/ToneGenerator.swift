@@ -71,11 +71,11 @@ class BasicOscillator: Arrow11 {
 
 // see https://en.wikipedia.org/wiki/Rose_(mathematics)
 class Rose: Arrow13 {
-  var amp: Arrow11
-  var leafFactor: Arrow11
-  var freq: Arrow11
+  var amp: ArrowConst
+  var leafFactor: ArrowConst
+  var freq: ArrowConst
   var phase: CoreFloat
-  init(amp: Arrow11, leafFactor: Arrow11, freq: Arrow11, phase: CoreFloat) {
+  init(amp: ArrowConst, leafFactor: ArrowConst, freq: ArrowConst, phase: CoreFloat) {
     self.amp = amp
     self.leafFactor = leafFactor
     self.freq = freq
@@ -210,6 +210,7 @@ class ArrowWithHandles: Arrow11 {
   init(_ arrow: Arrow11) {
     self.arrow = arrow
   }
+  
   override func of(_ t: CoreFloat) -> CoreFloat {
     arrow.of(t)
   }
