@@ -99,7 +99,7 @@ class SyntacticSynth: EngineAndVoicePool {
     for tone in tones { tone.namedConsts["vibratoFreq"]!.val = vibratoFreq } }
   }
   var oscShape: BasicOscillator.OscShape = .noise { didSet {
-    for tone in tones { tone.namedBasicOscs["sawtoothOsc"]!.shape = oscShape } }
+    for tone in tones { tone.namedBasicOscs["osc1"]!.shape = oscShape } }
   }
   var roseFreq: CoreFloat = 0 { didSet {
     for preset in presets { preset.positionLFO?.freq.val = roseFreq } }
@@ -201,7 +201,7 @@ class SyntacticSynth: EngineAndVoicePool {
     vibratoAmp = tones[0].namedConsts["vibratoAmp"]!.val
     vibratoFreq = tones[0].namedConsts["vibratoFreq"]!.val
     
-    oscShape = tones[0].namedBasicOscs["sawtoothOsc"]!.shape
+    oscShape = tones[0].namedBasicOscs["osc1"]!.shape
     
     roseAmp = presets[0].positionLFO!.amp.val
     roseFreq = presets[0].positionLFO!.freq.val

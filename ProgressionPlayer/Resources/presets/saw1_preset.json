@@ -101,7 +101,8 @@
                                                       }
                                                     }
                                                   },
-                                                  "name": "sineOsc"
+                                                  "kind": "sineOsc",
+                                                  "name": "vibratoOsc"
                                                 }
                                               }
                                             }
@@ -110,7 +111,8 @@
                                         }
                                       }
                                     },
-                                    "name": "control"
+                                    "kind": "control",
+                                    "name": ""
                                   }
                                 }
                               }
@@ -119,7 +121,8 @@
                           }
                         }
                       },
-                      "name": "sawtoothOsc"
+                      "kind": "sawtoothOsc",
+                      "name": "osc1"
                     }
                   }
                 },

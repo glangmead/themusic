@@ -104,7 +104,7 @@ class Sequencer {
     let seqTrack = avTracks[0]
     // AVMusicTimeStamp: a fractional number of beats
     for note in chord {
-      seqTrack.addEvent(AVMIDINoteEvent(channel: 0, key: UInt32(note), velocity: 100, duration: 4), at: avSeq.currentPositionInBeats + 1)
+      seqTrack.addEvent(AVMIDINoteEvent(channel: 0, key: UInt32(note), velocity: 100, duration: 8), at: avSeq.currentPositionInBeats + 1)
     }
   }
 }

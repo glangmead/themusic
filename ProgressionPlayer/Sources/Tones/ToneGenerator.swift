@@ -282,20 +282,20 @@ enum ArrowSyntax: Codable {
     
     case .unary(let namedArrow):
       let lowerArr = namedArrow.arrow.compile()
-      if namedArrow.name == "delay" {
+      if namedArrow.kind == "delay" {
         let arr = Delay(lowerArr)
         return ArrowWithHandles(arr).withMergeDictsFromArrow(lowerArr)
-      } else if namedArrow.name == "control" {
+      } else if namedArrow.kind == "control" {
         let arr = ControlArrow11(lowerArr)
         return ArrowWithHandles(arr).withMergeDictsFromArrow(lowerArr)
-      } else if namedArrow.name == "sin" {
+      } else if namedArrow.kind == "sin" {
         let arr = ArrowCompose(outer: ArrowSin(), inner: lowerArr)
         return ArrowWithHandles(arr).withMergeDictsFromArrow(lowerArr)
-      } else if namedArrow.name == "cos" {
+      } else if namedArrow.kind == "cos" {
         let arr = ArrowCompose(outer: ArrowCos(), inner: lowerArr)
         return ArrowWithHandles(arr).withMergeDictsFromArrow(lowerArr)
-      } else if BasicOscillator.OscShape.allCases.map({$0.rawValue}).contains(namedArrow.name) {
-        let osc = BasicOscillator(shape: BasicOscillator.OscShape(rawValue: namedArrow.name)!)
+      } else if BasicOscillator.OscShape.allCases.map({$0.rawValue}).contains(namedArrow.kind) {
+        let osc = BasicOscillator(shape: BasicOscillator.OscShape(rawValue: namedArrow.kind)!)
         let arr = ArrowCompose(outer: osc, inner: lowerArr)
         let handleArr = ArrowWithHandles(arr)
         handleArr.namedBasicOscs[namedArrow.name] = osc
@@ -335,6 +335,7 @@ struct ADSRSyntax: Codable {
 
 struct NamedArrowSyntax: Codable {
   let name: String
+  let kind: String
   let arrow: ArrowSyntax
 }
 
