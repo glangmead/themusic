@@ -53,7 +53,7 @@ class SyntacticSynth: EngineAndVoicePool {
   let engine = SpatialAudioEngine()
   var voicePool: NoteHandler? = nil
   
-  private let numVoices = 8
+  private let numVoices = 4
   private var tones = [ArrowWithHandles]()
   private var presets = [Preset]()
   private var basicOscHandles = [String]()
@@ -98,8 +98,23 @@ class SyntacticSynth: EngineAndVoicePool {
   var vibratoFreq: CoreFloat = 0 { didSet {
     for tone in tones { tone.namedConsts["vibratoFreq"]!.val = vibratoFreq } }
   }
-  var oscShape: BasicOscillator.OscShape = .noise { didSet {
-    for tone in tones { tone.namedBasicOscs["osc1"]!.shape = oscShape } }
+  var osc1Mix: CoreFloat = 0 { didSet {
+    for tone in tones { tone.namedConsts["osc1Mix"]!.val = osc1Mix } }
+  }
+  var osc2Mix: CoreFloat = 0 { didSet {
+    for tone in tones { tone.namedConsts["osc2Mix"]!.val = osc2Mix } }
+  }
+  var osc3Mix: CoreFloat = 0 { didSet {
+    for tone in tones { tone.namedConsts["osc3Mix"]!.val = osc3Mix } }
+  }
+  var oscShape1: BasicOscillator.OscShape = .noise { didSet {
+    for tone in tones { tone.namedBasicOscs["osc1"]!.shape = oscShape1 } }
+  }
+  var oscShape2: BasicOscillator.OscShape = .noise { didSet {
+    for tone in tones { tone.namedBasicOscs["osc2"]!.shape = oscShape2 } }
+  }
+  var oscShape3: BasicOscillator.OscShape = .noise { didSet {
+    for tone in tones { tone.namedBasicOscs["osc3"]!.shape = oscShape3 } }
   }
   var roseFreq: CoreFloat = 0 { didSet {
     for preset in presets { preset.positionLFO?.freq.val = roseFreq } }
@@ -201,8 +216,14 @@ class SyntacticSynth: EngineAndVoicePool {
     vibratoAmp = tones[0].namedConsts["vibratoAmp"]!.val
     vibratoFreq = tones[0].namedConsts["vibratoFreq"]!.val
     
-    oscShape = tones[0].namedBasicOscs["osc1"]!.shape
-    
+    osc1Mix = tones[0].namedConsts["osc1Mix"]!.val
+    osc2Mix = tones[0].namedConsts["osc2Mix"]!.val
+    osc3Mix = tones[0].namedConsts["osc3Mix"]!.val
+
+    oscShape1 = tones[0].namedBasicOscs["osc1"]!.shape
+    oscShape2 = tones[0].namedBasicOscs["osc2"]!.shape
+    oscShape3 = tones[0].namedBasicOscs["osc3"]!.shape
+
     roseAmp = presets[0].positionLFO!.amp.val
     roseFreq = presets[0].positionLFO!.freq.val
     roseLeaves = presets[0].positionLFO!.leafFactor.val
@@ -253,12 +274,29 @@ struct SyntacticSynthView: View {
     }
 
     ScrollView {
-      Picker("Instrument", selection: $synth.oscShape) {
+      Picker("Instrument 1", selection: $synth.oscShape1) {
         ForEach(BasicOscillator.OscShape.allCases, id: \.self) { option in
           Text(String(describing: option))
         }
       }
       .pickerStyle(.segmented)
+      Picker("Instrument 2", selection: $synth.oscShape2) {
+        ForEach(BasicOscillator.OscShape.allCases, id: \.self) { option in
+          Text(String(describing: option))
+        }
+      }
+      .pickerStyle(.segmented)
+      Picker("Instrument 3", selection: $synth.oscShape3) {
+        ForEach(BasicOscillator.OscShape.allCases, id: \.self) { option in
+          Text(String(describing: option))
+        }
+      }
+      .pickerStyle(.segmented)
+      HStack {
+        KnobbyKnob(value: $synth.osc1Mix, label: "Osc1", range: 0...1)
+        KnobbyKnob(value: $synth.osc2Mix, label: "Osc2", range: 0...1)
+        KnobbyKnob(value: $synth.osc3Mix, label: "Osc3", range: 0...1)
+      }
       HStack {
         KnobbyKnob(value: $synth.ampAttack, label: "Amp env", range: 0...2)
         KnobbyKnob(value: $synth.ampDecay, label: "Amp dec", range: 0...2)

@@ -37,92 +37,323 @@
               "name": "prod",
               "arrows": [
                 {
-                  "unary": {
+                  "nary": {
                     "of": {
-                      "arrow": {
-                        "nary": {
-                          "of": {
-                            "arrows": [
-                              {
-                                "nary": {
-                                  "of": {
-                                    "name": "prod",
-                                    "arrows": [
-                                      {
-                                        "const": {
-                                          "val": {
-                                            "name": "freq",
-                                            "val": 300
+                      "name": "sum",
+                      "arrows": [
+                        {
+                          "nary": {
+                            "of": {
+                              "name": "prod",
+                              "arrows": [
+                                {
+                                  "const": {
+                                    "val": { "val": 1.0, "name": "osc1Mix" }
+                                  }
+                                },
+                                {
+                                  "unary": {
+                                    "of": {
+                                      "arrow": {
+                                        "nary": {
+                                          "of": {
+                                            "arrows": [
+                                              {
+                                                "nary": {
+                                                  "of": {
+                                                    "name": "prod",
+                                                    "arrows": [
+                                                      {
+                                                        "const": {
+                                                          "val": {
+                                                            "name": "freq",
+                                                            "val": 300
+                                                          }
+                                                        }
+                                                      },
+                                                      {
+                                                        "identity": {}
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              },
+                                              {
+                                                "unary": {
+                                                  "of": {
+                                                    "arrow": {
+                                                      "nary": {
+                                                        "of": {
+                                                          "arrows": [
+                                                            {
+                                                              "const": {
+                                                                "val": {
+                                                                  "name": "vibratoAmp",
+                                                                  "val": 0
+                                                                }
+                                                              }
+                                                            },
+                                                            {
+                                                              "unary": {
+                                                                "of": {
+                                                                  "arrow": {
+                                                                    "nary": {
+                                                                      "of": {
+                                                                        "arrows": [
+                                                                          {
+                                                                            "const": {
+                                                                              "val": {
+                                                                                "val": 3,
+                                                                                "name": "vibratoFreq"
+                                                                              }
+                                                                            }
+                                                                          },
+                                                                          {
+                                                                            "identity": {}
+                                                                          }
+                                                                        ],
+                                                                        "name": "prod"
+                                                                      }
+                                                                    }
+                                                                  },
+                                                                  "kind": "sineOsc",
+                                                                  "name": "vibratoOsc"
+                                                                }
+                                                              }
+                                                            }
+                                                          ],
+                                                          "name": "prod"
+                                                        }
+                                                      }
+                                                    },
+                                                    "kind": "control",
+                                                    "name": ""
+                                                  }
+                                                }
+                                              }
+                                            ],
+                                            "name": "sum"
                                           }
                                         }
                                       },
-                                      {
-                                        "identity": {}
-                                      }
-                                    ]
+                                      "kind": "sawtoothOsc",
+                                      "name": "osc1"
+                                    }
                                   }
                                 }
-                              },
-                              {
-                                "unary": {
-                                  "of": {
-                                    "arrow": {
-                                      "nary": {
-                                        "of": {
-                                          "arrows": [
-                                            {
-                                              "const": {
-                                                "val": {
-                                                  "name": "vibratoAmp",
-                                                  "val": 0
+                              ]
+                            }
+                          }
+                        },
+                        {
+                          "nary": {
+                            "of": {
+                              "name": "prod",
+                              "arrows": [
+                                {
+                                  "const": {
+                                    "val": { "val": 1.0, "name": "osc2Mix" }
+                                  }
+                                },
+                                {
+                                  "unary": {
+                                    "of": {
+                                      "arrow": {
+                                        "nary": {
+                                          "of": {
+                                            "arrows": [
+                                              {
+                                                "nary": {
+                                                  "of": {
+                                                    "name": "prod",
+                                                    "arrows": [
+                                                      {
+                                                        "const": {
+                                                          "val": {
+                                                            "name": "freq",
+                                                            "val": 300
+                                                          }
+                                                        }
+                                                      },
+                                                      {
+                                                        "identity": {}
+                                                      }
+                                                    ]
+                                                  }
                                                 }
-                                              }
-                                            },
-                                            {
-                                              "unary": {
-                                                "of": {
-                                                  "arrow": {
-                                                    "nary": {
-                                                      "of": {
-                                                        "arrows": [
-                                                          {
-                                                            "const": {
-                                                              "val": {
-                                                                "val": 3,
-                                                                "name": "vibratoFreq"
+                                              },
+                                              {
+                                                "unary": {
+                                                  "of": {
+                                                    "arrow": {
+                                                      "nary": {
+                                                        "of": {
+                                                          "arrows": [
+                                                            {
+                                                              "const": {
+                                                                "val": {
+                                                                  "name": "vibratoAmp",
+                                                                  "val": 0
+                                                                }
+                                                              }
+                                                            },
+                                                            {
+                                                              "unary": {
+                                                                "of": {
+                                                                  "arrow": {
+                                                                    "nary": {
+                                                                      "of": {
+                                                                        "arrows": [
+                                                                          {
+                                                                            "const": {
+                                                                              "val": {
+                                                                                "val": 3,
+                                                                                "name": "vibratoFreq"
+                                                                              }
+                                                                            }
+                                                                          },
+                                                                          {
+                                                                            "identity": {}
+                                                                          }
+                                                                        ],
+                                                                        "name": "prod"
+                                                                      }
+                                                                    }
+                                                                  },
+                                                                  "kind": "sineOsc",
+                                                                  "name": "vibratoOsc"
+                                                                }
                                                               }
                                                             }
-                                                          },
-                                                          {
-                                                            "identity": {}
-                                                          }
-                                                        ],
-                                                        "name": "prod"
+                                                          ],
+                                                          "name": "prod"
+                                                        }
                                                       }
-                                                    }
-                                                  },
-                                                  "kind": "sineOsc",
-                                                  "name": "vibratoOsc"
+                                                    },
+                                                    "kind": "control",
+                                                    "name": ""
+                                                  }
                                                 }
                                               }
-                                            }
-                                          ],
-                                          "name": "prod"
+                                            ],
+                                            "name": "sum"
+                                          }
                                         }
-                                      }
-                                    },
-                                    "kind": "control",
-                                    "name": ""
+                                      },
+                                      "kind": "sineOsc",
+                                      "name": "osc2"
+                                    }
                                   }
                                 }
-                              }
-                            ],
-                            "name": "sum"
+                              ]
+                            }
+                          }
+                        },
+                        {
+                          "nary": {
+                            "of": {
+                              "name": "prod",
+                              "arrows": [
+                                {
+                                  "const": {
+                                    "val": { "val": 1.0, "name": "osc3Mix" }
+                                  }
+                                },
+                                {
+                                  "unary": {
+                                    "of": {
+                                      "arrow": {
+                                        "nary": {
+                                          "of": {
+                                            "arrows": [
+                                              {
+                                                "nary": {
+                                                  "of": {
+                                                    "name": "prod",
+                                                    "arrows": [
+                                                      {
+                                                        "const": {
+                                                          "val": {
+                                                            "name": "freq",
+                                                            "val": 300
+                                                          }
+                                                        }
+                                                      },
+                                                      {
+                                                        "identity": {}
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              },
+                                              {
+                                                "unary": {
+                                                  "of": {
+                                                    "arrow": {
+                                                      "nary": {
+                                                        "of": {
+                                                          "arrows": [
+                                                            {
+                                                              "const": {
+                                                                "val": {
+                                                                  "name": "vibratoAmp",
+                                                                  "val": 0
+                                                                }
+                                                              }
+                                                            },
+                                                            {
+                                                              "unary": {
+                                                                "of": {
+                                                                  "arrow": {
+                                                                    "nary": {
+                                                                      "of": {
+                                                                        "arrows": [
+                                                                          {
+                                                                            "const": {
+                                                                              "val": {
+                                                                                "val": 3,
+                                                                                "name": "vibratoFreq"
+                                                                              }
+                                                                            }
+                                                                          },
+                                                                          {
+                                                                            "identity": {}
+                                                                          }
+                                                                        ],
+                                                                        "name": "prod"
+                                                                      }
+                                                                    }
+                                                                  },
+                                                                  "kind": "sineOsc",
+                                                                  "name": "vibratoOsc"
+                                                                }
+                                                              }
+                                                            }
+                                                          ],
+                                                          "name": "prod"
+                                                        }
+                                                      }
+                                                    },
+                                                    "kind": "control",
+                                                    "name": ""
+                                                  }
+                                                }
+                                              }
+                                            ],
+                                            "name": "sum"
+                                          }
+                                        }
+                                      },
+                                      "kind": "noiseOsc",
+                                      "name": "osc3"
+                                    }
+                                  }
+                                }
+                              ]
+                            }
                           }
                         }
-                      },
-                      "kind": "sawtoothOsc",
-                      "name": "osc1"
+                      ]
                     }
                   }
                 },
