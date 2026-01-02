@@ -8,37 +8,37 @@
 import Foundation
 import SwiftUI
 
-class Sine: Arrow11 {
+final class Sine: Arrow11 {
   override func of(_ t: CoreFloat) -> CoreFloat {
     sin(2 * .pi * fmod(t, 1.0))
   }
 }
 
-class Triangle: Arrow11 {
+final class Triangle: Arrow11 {
   override func of(_ t: CoreFloat) -> CoreFloat {
     2 * (abs((2 * fmod(t, 1.0)) - 1.0) - 0.5)
   }
 }
 
-class Sawtooth: Arrow11 {
+final class Sawtooth: Arrow11 {
   override func of(_ t: CoreFloat) -> CoreFloat {
     (2 * fmod(t, 1.0)) - 1.0
   }
 }
 
-class Square: Arrow11 {
+final class Square: Arrow11 {
   override func of(_ t: CoreFloat) -> CoreFloat {
     fmod(t, 1) <= 0.5 ? 1.0 : -1.0
   }
 }
 
-class Noise: Arrow11 {
+final class Noise: Arrow11 {
   override func of(_ t: CoreFloat) -> CoreFloat {
     CoreFloat.random(in: 0.0...1.0)
   }
 }
 
-class BasicOscillator: Arrow11 {
+final class BasicOscillator: Arrow11 {
   enum OscShape: String, CaseIterable, Equatable, Hashable, Codable {
     case sine = "sineOsc"
     case triangle = "triangleOsc"
@@ -70,7 +70,7 @@ class BasicOscillator: Arrow11 {
 }
 
 // see https://en.wikipedia.org/wiki/Rose_(mathematics)
-class Rose: Arrow13 {
+final class Rose: Arrow13 {
   var amp: ArrowConst
   var leafFactor: ArrowConst
   var freq: ArrowConst
@@ -92,7 +92,7 @@ protocol HasFactor {
   var arrow: Arrow11 { get set }
 }
 
-class PreMult: Arrow11, HasFactor {
+final class PreMult: Arrow11, HasFactor {
   var factor: CoreFloat
   var arrow: Arrow11
   init(factor: CoreFloat, arrow: Arrow11) {
@@ -105,7 +105,7 @@ class PreMult: Arrow11, HasFactor {
 }
 
 // also could be given by mult(ArrowConst(factor), Arrow11)
-class PostMult: Arrow11, HasFactor {
+final class PostMult: Arrow11, HasFactor {
   var factor: CoreFloat
   var arrow: Arrow11
   init(factor: CoreFloat, arrow: Arrow11) {
@@ -117,7 +117,7 @@ class PostMult: Arrow11, HasFactor {
   }
 }
 
-class ModulatedPreMult: Arrow11, HasFactor {
+final class ModulatedPreMult: Arrow11, HasFactor {
   var factor: CoreFloat
   var arrow: Arrow11
   var modulation: Arrow11
@@ -134,7 +134,7 @@ class ModulatedPreMult: Arrow11, HasFactor {
 
 // TODO: use a circular buffer or finite stack to respect the lookback value
 // TODO: consider removing LowPassFilter and writing it in ArrowSyntaxes w/ help of Delay
-class Delay: Arrow11 {
+final class Delay: Arrow11 {
   var previousOutput: CoreFloat = 0.0
   var arrow: Arrow11
   init(_ arr: Arrow11, lookback: Int = 1) {
@@ -150,7 +150,7 @@ class Delay: Arrow11 {
 // from https://en.wikipedia.org/wiki/Low-pass_filter#Simple_infinite_impulse_response_filter
 // TODO: resonance, see perhaps https://www.martin-finke.de/articles/audio-plugins-013-filter
 
-class LowPassFilter: Arrow11, HasFactor {
+final class LowPassFilter: Arrow11, HasFactor {
   var previousOutput: CoreFloat
   var previousTime: CoreFloat
   var factor: CoreFloat
@@ -175,7 +175,7 @@ class LowPassFilter: Arrow11, HasFactor {
   }
 }
 
-class LowPassFilter2: Arrow11 {
+final class LowPassFilter2: Arrow11 {
   private var previousOutput: CoreFloat
   private var previousTime: CoreFloat
   var cutoff: Arrow11
@@ -199,7 +199,7 @@ class LowPassFilter2: Arrow11 {
   }
 }
 
-class ArrowWithHandles: Arrow11 {
+final class ArrowWithHandles: Arrow11 {
   var arrow: Arrow11
   // the handles are dictionaries with values that give access to arrows within the arrow
   var namedBasicOscs     = [String: BasicOscillator]()

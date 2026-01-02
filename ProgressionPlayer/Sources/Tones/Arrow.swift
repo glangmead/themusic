@@ -35,7 +35,7 @@ class Arrow13 {
 // An arrow that wraps an arrow and limits how often the arrow gets called with a new time
 // The name comes from the paradigm that control signals like LFOs don't need to fire as often
 // as audio data.
-class ControlArrow11: Arrow11 {
+final class ControlArrow11: Arrow11 {
   var wrapped: Arrow11
   var lastTimeEmittedSecs = 0.0
   var lastEmission = 0.0
@@ -53,7 +53,7 @@ class ControlArrow11: Arrow11 {
   }
 }
 
-class ControlArrow10: Arrow10 {
+final class ControlArrow10: Arrow10 {
   var wrapped: Arrow10
   var lastTimeEmitted = 0.0
   let timeBetweenEmissions = 4410.0 / 44100.0
@@ -68,31 +68,39 @@ class ControlArrow10: Arrow10 {
   }
 }
 
-class ArrowSum: Arrow11 {
+final class ArrowSum: Arrow11 {
   var arrows: [Arrow11]
   init(_ arrows: [Arrow11]) {
     self.arrows = arrows
   }
   override func of(_ t: CoreFloat) -> CoreFloat {
-      arrows.map({$0.of(t)}).reduce(0, +)
+    var total: CoreFloat = 0
+    for arrow in arrows {
+      total += arrow.of(t)
+    }
+    return total
   }
 }
 
-class ArrowProd: Arrow11 {
+final class ArrowProd: Arrow11 {
   var arrows: [Arrow11]
   init(_ arrows: [Arrow11]) {
     self.arrows = arrows
   }
   override func of(_ t: CoreFloat) -> CoreFloat {
-    arrows.map({$0.of(t)}).reduce(1, *)
+    var result: CoreFloat = 1
+    for arrow in arrows {
+      result *= arrow.of(t)
+    }
+    return result
   }
 }
 
-class ArrowIdentity: Arrow11 {
+final class ArrowIdentity: Arrow11 {
   override func of(_ t: CoreFloat) -> CoreFloat { t }
 }
 
-class ArrowCompose: Arrow11 {
+final class ArrowCompose: Arrow11 {
   var outer: Arrow11
   var inner: Arrow11
   init(outer: Arrow11, inner: Arrow11) {
@@ -104,19 +112,19 @@ class ArrowCompose: Arrow11 {
   }
 }
 
-class ArrowSin: Arrow11 {
+final class ArrowSin: Arrow11 {
   override func of(_ t: CoreFloat) -> CoreFloat {
     Foundation.sin(t)
   }
 }
 
-class ArrowCos: Arrow11 {
+final class ArrowCos: Arrow11 {
   override func of(_ t: CoreFloat) -> CoreFloat {
     Foundation.cos(t)
   }
 }
 
-class ArrowConst: Arrow11, Equatable {
+final class ArrowConst: Arrow11, Equatable {
   var val: CoreFloat
   init(_ value: CoreFloat) {
     self.val = value
@@ -129,7 +137,7 @@ class ArrowConst: Arrow11, Equatable {
   }
 }
 
-class ArrowConstF: Arrow11, Equatable {
+final class ArrowConstF: Arrow11, Equatable {
   var val: Float
   init(_ value: Float) {
     self.val = value
