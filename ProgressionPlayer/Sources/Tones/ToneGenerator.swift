@@ -87,7 +87,7 @@ final class Rose: Arrow13 {
   }
 }
 
-protocol HasFactor {
+protocol HasFactor: AnyObject {
   var factor: CoreFloat { get set }
   var arrow: Arrow11 { get set }
 }

@@ -69,28 +69,32 @@ final class ControlArrow10: Arrow10 {
 }
 
 final class ArrowSum: Arrow11 {
-  var arrows: [Arrow11]
+  var arrows: ContiguousArray<Arrow11>
+  var numArrows: Int
   init(_ arrows: [Arrow11]) {
-    self.arrows = arrows
+    self.arrows = ContiguousArray<Arrow11>(arrows)
+    self.numArrows = arrows.count
   }
   override func of(_ t: CoreFloat) -> CoreFloat {
     var total: CoreFloat = 0
-    for arrow in arrows {
-      total += arrow.of(t)
+    for i in 0..<numArrows {
+      total += arrows[i].of(t)
     }
     return total
   }
 }
 
 final class ArrowProd: Arrow11 {
-  var arrows: [Arrow11]
+  var arrows: ContiguousArray<Arrow11>
+  var numArrows: Int
   init(_ arrows: [Arrow11]) {
-    self.arrows = arrows
+    self.arrows = ContiguousArray<Arrow11>(arrows)
+    self.numArrows = arrows.count
   }
   override func of(_ t: CoreFloat) -> CoreFloat {
     var result: CoreFloat = 1
-    for arrow in arrows {
-      result *= arrow.of(t)
+    for i in 0..<numArrows {
+      result *= arrows[i].of(t)
     }
     return result
   }

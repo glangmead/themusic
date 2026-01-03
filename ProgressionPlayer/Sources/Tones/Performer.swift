@@ -45,7 +45,7 @@ class EnvelopeHandlePlayer: Arrow11, NoteHandler {
   }
 }
 
-protocol NoteHandler {
+protocol NoteHandler: AnyObject {
   func noteOn(_ note: MidiNote)
   func noteOff(_ note: MidiNote)
 }

@@ -15,7 +15,7 @@ import SwiftUI
 /// A button to save the current synth as a preset
 /// Move on to assigning different presets to different seq tracks
 /// Build a library of presets
-protocol EngineAndVoicePool {
+protocol EngineAndVoicePool: AnyObject {
   var engine: SpatialAudioEngine { get }
   var voicePool: NoteHandler? { get }
 }
@@ -57,7 +57,7 @@ class SyntacticSynth: EngineAndVoicePool {
   let engine = SpatialAudioEngine()
   var voicePool: NoteHandler? = nil
   
-  private let numVoices = 4
+  private let numVoices = 8
   private var tones = [ArrowWithHandles]()
   private var presets = [Preset]()
   private var basicOscHandles = [String]()
