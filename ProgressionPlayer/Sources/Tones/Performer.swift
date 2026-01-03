@@ -31,7 +31,11 @@ class EnvelopeHandlePlayer: Arrow11, NoteHandler {
     for key in arrow.namedADSREnvelopes.keys {
       arrow.namedADSREnvelopes[key]!.noteOn(note)
     }
-    arrow.namedConsts["freq"]?.val = note.freq
+    if arrow.namedConsts["freq"] != nil {
+      for const in arrow.namedConsts["freq"]! {
+        const.val = note.freq
+      }
+    }
   }
   
   func noteOff(_ note: MidiNote) {

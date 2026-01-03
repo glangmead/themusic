@@ -31,7 +31,11 @@ class PlayableArrowWithHandles: NoteHandler {
   func noteOn(_ note: MidiNote) {
     // play the designated note
     for noteHandleKey in noteHandleKeys {
-      arrow.namedConsts[noteHandleKey]?.val = note.freq
+      if arrow.namedConsts[noteHandleKey] != nil {
+        for const in arrow.namedConsts[noteHandleKey]! {
+          const.val = note.freq
+        }
+      }
     }
     // play all the envelopes
     for env in arrow.namedADSREnvelopes.values {
@@ -87,25 +91,25 @@ class SyntacticSynth: EngineAndVoicePool {
     for tone in tones { tone.namedADSREnvelopes["filterEnv"]!.env.releaseTime = filterRelease } }
   }
   var filterCutoff: CoreFloat = 0 { didSet {
-    for tone in tones { tone.namedConsts["cutoff"]!.val = filterCutoff } }
+    for tone in tones { for const in tone.namedConsts["cutoff"]! { const.val = filterCutoff } } }
   }
   var filterResonance: CoreFloat = 0 { didSet {
-    for tone in tones { tone.namedConsts["resonance"]!.val = filterCutoff } }
+    for tone in tones { for const in tone.namedConsts["resonance"]! { const.val = filterResonance } } }
   }
   var vibratoAmp: CoreFloat = 0 { didSet {
-    for tone in tones { tone.namedConsts["vibratoAmp"]!.val = vibratoAmp } }
+    for tone in tones { for const in tone.namedConsts["vibratoAmp"]! { const.val = vibratoAmp } } }
   }
   var vibratoFreq: CoreFloat = 0 { didSet {
-    for tone in tones { tone.namedConsts["vibratoFreq"]!.val = vibratoFreq } }
+    for tone in tones { for const in tone.namedConsts["vibratoFreq"]! { const.val = vibratoFreq } } }
   }
   var osc1Mix: CoreFloat = 0 { didSet {
-    for tone in tones { tone.namedConsts["osc1Mix"]!.val = osc1Mix } }
+    for tone in tones { for const in tone.namedConsts["osc1Mix"]! { const.val = osc1Mix } } }
   }
   var osc2Mix: CoreFloat = 0 { didSet {
-    for tone in tones { tone.namedConsts["osc2Mix"]!.val = osc2Mix } }
+    for tone in tones { for const in tone.namedConsts["osc2Mix"]! { const.val = osc2Mix } } }
   }
   var osc3Mix: CoreFloat = 0 { didSet {
-    for tone in tones { tone.namedConsts["osc3Mix"]!.val = osc3Mix } }
+    for tone in tones { for const in tone.namedConsts["osc3Mix"]! { const.val = osc3Mix } } }
   }
   var oscShape1: BasicOscillator.OscShape = .noise { didSet {
     for tone in tones { tone.namedBasicOscs["osc1"]!.shape = oscShape1 } }
@@ -210,15 +214,15 @@ class SyntacticSynth: EngineAndVoicePool {
     filterSustain = tones[0].namedADSREnvelopes["filterEnv"]!.env.sustainLevel
     filterRelease = tones[0].namedADSREnvelopes["filterEnv"]!.env.releaseTime
     
-    filterCutoff = tones[0].namedConsts["cutoff"]!.val
-    filterResonance = tones[0].namedConsts["resonance"]!.val
+    filterCutoff = tones[0].namedConsts["cutoff"]!.first!.val
+    filterResonance = tones[0].namedConsts["resonance"]!.first!.val
     
-    vibratoAmp = tones[0].namedConsts["vibratoAmp"]!.val
-    vibratoFreq = tones[0].namedConsts["vibratoFreq"]!.val
+    vibratoAmp = tones[0].namedConsts["vibratoAmp"]!.first!.val
+    vibratoFreq = tones[0].namedConsts["vibratoFreq"]!.first!.val
     
-    osc1Mix = tones[0].namedConsts["osc1Mix"]!.val
-    osc2Mix = tones[0].namedConsts["osc2Mix"]!.val
-    osc3Mix = tones[0].namedConsts["osc3Mix"]!.val
+    osc1Mix = tones[0].namedConsts["osc1Mix"]!.first!.val
+    osc2Mix = tones[0].namedConsts["osc2Mix"]!.first!.val
+    osc3Mix = tones[0].namedConsts["osc3Mix"]!.first!.val
 
     oscShape1 = tones[0].namedBasicOscs["osc1"]!.shape
     oscShape2 = tones[0].namedBasicOscs["osc2"]!.shape

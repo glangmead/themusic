@@ -204,7 +204,7 @@ final class ArrowWithHandles: Arrow11 {
   // the handles are dictionaries with values that give access to arrows within the arrow
   var namedBasicOscs     = [String: BasicOscillator]()
   var namedLowPassFilter = [String: LowPassFilter2]()
-  var namedConsts        = [String: ArrowConst]()
+  var namedConsts        = [String: [ArrowConst]]()
   var namedADSREnvelopes = [String: ADSR]()
   
   init(_ arrow: Arrow11) {
@@ -217,7 +217,9 @@ final class ArrowWithHandles: Arrow11 {
   
   func withMergeDictsFromArrow(_ arr2: ArrowWithHandles) -> ArrowWithHandles {
     namedADSREnvelopes.merge(arr2.namedADSREnvelopes) { (a, b) in return a }
-    namedConsts.merge(arr2.namedConsts) { (a, b) in return a }
+    namedConsts.merge(arr2.namedConsts) { (a, b) in
+      return a + b
+    }
     namedBasicOscs.merge(arr2.namedBasicOscs) { (a, b) in return a }
     namedLowPassFilter.merge(arr2.namedLowPassFilter) { (a, b) in return a }
     return self
@@ -247,9 +249,9 @@ enum ArrowSyntax: Codable {
       return ArrowWithHandles(ArrowIdentity())
     
     case .const(let namedVal):
-      let arr = ArrowConst(namedVal.val)
+      let arr = ArrowConst(namedVal.val) // separate copy, even if same name as a node elsewhere
       let handleArr = ArrowWithHandles(arr)
-      handleArr.namedConsts[namedVal.name] = arr
+      handleArr.namedConsts[namedVal.name] = [arr]
       return handleArr
     
     case .lowPassFilter(let lpArrow):
