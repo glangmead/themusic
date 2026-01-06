@@ -51,7 +51,7 @@
                                     "val": { "val": 1.0, "name": "osc1Mix" }
                                   }
                                 },
-                                {"choruser": {"specs": {"name": "osc1Choruser", "valueToChorus": "freq", "chorusCentRadius": 15, "chorusNumVoices": 3, "arrowToChorus": {
+                                {"choruser": {"specs": {"name": "osc1Choruser", "valueToChorus": "freq", "chorusCentRadius": 0, "chorusNumVoices": 1, "arrowToChorus": {
                                   "unary": {
                                     "of": {
                                       "arrow": {
@@ -156,7 +156,7 @@
                                     "val": { "val": 1.0, "name": "osc2Mix" }
                                   }
                                 },
-                                {"choruser": {"specs": {"name": "osc2Choruser", "valueToChorus": "freq", "chorusCentRadius": 15, "chorusNumVoices": 3, "arrowToChorus": {
+                                {"choruser": {"specs": {"name": "osc2Choruser", "valueToChorus": "freq", "chorusCentRadius": 0, "chorusNumVoices": 1, "arrowToChorus": {
                                   "unary": {
                                     "of": {
                                       "arrow": {
@@ -265,10 +265,10 @@
                               "arrows": [
                                 {
                                   "const": {
-                                    "val": { "val": 1.0, "name": "osc3Mix" }
+                                    "val": { "val": 0.0, "name": "osc3Mix" }
                                   }
                                 },
-                                {"choruser": {"specs": {"name": "osc3Choruser", "valueToChorus": "freq", "chorusCentRadius": 15, "chorusNumVoices": 3, "arrowToChorus": {
+                                {"choruser": {"specs": {"name": "osc3Choruser", "valueToChorus": "freq", "chorusCentRadius": 0, "chorusNumVoices": 1, "arrowToChorus": {
                                   "unary": {
                                     "of": {
                                       "arrow": {

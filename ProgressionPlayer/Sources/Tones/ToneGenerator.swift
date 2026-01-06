@@ -8,33 +8,58 @@
 import Foundation
 import SwiftUI
 
-final class Sine: Arrow11 {
+protocol WithWidth {
+  var width: CoreFloat { get set }
+}
+
+final class Sine: Arrow11, WithWidth {
+  var width: CoreFloat = 1.0
   override func of(_ t: CoreFloat) -> CoreFloat {
-    sin(2 * .pi * fmod(t, 1.0))
+    (fmod(t, 1) < width) ? sin(2 * .pi * t / width) : 0
+  }
+  init(width: CoreFloat = 1) {
+    self.width = width
   }
 }
 
-final class Triangle: Arrow11 {
+final class Triangle: Arrow11, WithWidth {
+  var width: CoreFloat = 1
   override func of(_ t: CoreFloat) -> CoreFloat {
-    2 * (abs((2 * fmod(t, 1.0)) - 1.0) - 0.5)
+    (fmod(t, 1) < width/2) ? (2 * fmod(t, 1) / width) :
+      (fmod(t, 1) < width) ? (-2 * fmod(t, 1) / width) + 2 : 0
+  }
+  init(width: CoreFloat = 1) {
+    self.width = width
   }
 }
 
-final class Sawtooth: Arrow11 {
+final class Sawtooth: Arrow11, WithWidth {
+  var width: CoreFloat = 1
   override func of(_ t: CoreFloat) -> CoreFloat {
-    (2 * fmod(t, 1.0)) - 1.0
+    (fmod(t, 1) < width) ? (fmod(t, 1) / width) : 0
+  }
+  init(width: CoreFloat = 1) {
+    self.width = width
   }
 }
 
-final class Square: Arrow11 {
+final class Square: Arrow11, WithWidth {
+  var width: CoreFloat = 1 // for square, a width of 1 means half the time it's 1 and half is 0
   override func of(_ t: CoreFloat) -> CoreFloat {
-    fmod(t, 1) <= 0.5 ? 1.0 : -1.0
+    fmod(t, 1) <= width/2 ? 1.0 : -1.0
+  }
+  init(width: CoreFloat = 0.5) {
+    self.width = width
   }
 }
 
-final class Noise: Arrow11 {
+final class Noise: Arrow11, WithWidth {
+  var width: CoreFloat = 1
   override func of(_ t: CoreFloat) -> CoreFloat {
     CoreFloat.random(in: 0.0...1.0)
+  }
+  init(width: CoreFloat = 1) {
+    self.width = width
   }
 }
 
@@ -47,22 +72,24 @@ final class BasicOscillator: Arrow11 {
     case noise = "noiseOsc"
   }
   var shape: OscShape
-  var arrow: Arrow11 {
+  var width: CoreFloat
+  var arrow: Arrow11 & WithWidth {
     switch shape {
     case .sine:
-      Sine()
+      Sine(width: width)
     case .triangle:
-      Triangle()
+      Triangle(width: width)
     case .sawtooth:
-      Sawtooth()
+      Sawtooth(width: width)
     case .square:
-      Square()
+      Square(width: width)
     case .noise:
-      Noise()
+      Noise(width: width)
     }
   }
-  init(shape: OscShape) {
+  init(shape: OscShape, width: CoreFloat = 1) {
     self.shape = shape
+    self.width = width
   }
   override func of(_ t: CoreFloat) -> CoreFloat {
     arrow.of(t)

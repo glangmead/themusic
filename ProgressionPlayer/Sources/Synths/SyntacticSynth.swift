@@ -11,10 +11,12 @@ import SwiftUI
 
 
 /// TODO
-/// Knobs
 /// A button to save the current synth as a preset
 /// Move on to assigning different presets to different seq tracks
+/// Pulse oscillator? Or a param for the square?
 /// Build a library of presets
+///   - Minifreak V presets that use basic oscillators
+///     - 5th Clue
 protocol EngineAndVoicePool: AnyObject {
   var engine: SpatialAudioEngine { get }
   var voicePool: NoteHandler? { get }
@@ -67,6 +69,7 @@ class SyntacticSynth: EngineAndVoicePool {
   private var lowPassFilterHandles = [String]()
   private var constsHandles = [String]()
   private var envelopesHandles = [String]()
+  let cent: CoreFloat = 1.0005777895065548 // '2 ** (1/1200)' in python
   
   // Tone params
   var ampAttack: CoreFloat = 0 { didSet {
@@ -99,12 +102,6 @@ class SyntacticSynth: EngineAndVoicePool {
   var filterResonance: CoreFloat = 0 { didSet {
     for tone in tones { for const in tone.namedConsts["resonance"]! { const.val = filterResonance } } }
   }
-  var osc1ChorusCentRadius: CoreFloat = 0 { didSet {
-    for tone in tones { tone.namedChorusers["osc1Choruser"]!.chorusCentRadius = Int(osc1ChorusCentRadius) } }
-  }
-  var osc1ChorusNumVoices: CoreFloat = 0 { didSet {
-    for tone in tones { tone.namedChorusers["osc1Choruser"]!.chorusNumVoices = Int(osc1ChorusNumVoices) } }
-  }
   var vibratoAmp: CoreFloat = 0 { didSet {
     for tone in tones { for const in tone.namedConsts["vibratoAmp"]! { const.val = vibratoAmp } } }
   }
@@ -128,6 +125,39 @@ class SyntacticSynth: EngineAndVoicePool {
   }
   var oscShape3: BasicOscillator.OscShape = .noise { didSet {
     for tone in tones { tone.namedBasicOscs["osc3"]!.shape = oscShape3 } }
+  }
+  var osc1Width: CoreFloat = 0 { didSet {
+    for tone in tones { tone.namedBasicOscs["osc1"]!.width = osc1Width }
+  }}
+  var osc1ChorusCentRadius: CoreFloat = 0 { didSet {
+    for tone in tones { tone.namedChorusers["osc1Choruser"]!.chorusCentRadius = Int(osc1ChorusCentRadius) } }
+  }
+  var osc1ChorusNumVoices: CoreFloat = 0 { didSet {
+    for tone in tones { tone.namedChorusers["osc1Choruser"]!.chorusNumVoices = Int(osc1ChorusNumVoices) } }
+  }
+  var osc2Detune: CoreFloat = 0 { didSet {
+    for tone in tones { for const in tone.namedConsts["osc2FreqMult"]! { const.val = pow(2, osc2Octave) * pow(cent, osc2Detune) } } }
+  }
+  var osc2Octave: CoreFloat = 0 { didSet {
+    for tone in tones { for const in tone.namedConsts["osc2FreqMult"]! { const.val = pow(2, osc2Octave) * pow(cent, osc2Detune) } } }
+  }
+  var osc2Width: CoreFloat = 0 { didSet {
+    for tone in tones { tone.namedBasicOscs["osc2"]!.width = osc2Width }
+  }}
+  var osc2ChorusCentRadius: CoreFloat = 0 { didSet {
+    for tone in tones { tone.namedChorusers["osc2Choruser"]!.chorusCentRadius = Int(osc2ChorusCentRadius) } }
+  }
+  var osc2ChorusNumVoices: CoreFloat = 0 { didSet {
+    for tone in tones { tone.namedChorusers["osc2Choruser"]!.chorusNumVoices = Int(osc2ChorusNumVoices) } }
+  }
+  var osc3Width: CoreFloat = 0 { didSet {
+    for tone in tones { tone.namedBasicOscs["osc3"]!.width = osc3Width }
+  }}
+  var osc3ChorusCentRadius: CoreFloat = 0 { didSet {
+    for tone in tones { tone.namedChorusers["osc3Choruser"]!.chorusCentRadius = Int(osc3ChorusCentRadius) } }
+  }
+  var osc3ChorusNumVoices: CoreFloat = 0 { didSet {
+    for tone in tones { tone.namedChorusers["osc3Choruser"]!.chorusNumVoices = Int(osc3ChorusNumVoices) } }
   }
   var roseFreq: CoreFloat = 0 { didSet {
     for preset in presets { preset.positionLFO?.freq.val = roseFreq } }
@@ -235,11 +265,19 @@ class SyntacticSynth: EngineAndVoicePool {
     osc3Mix = tones[0].namedConsts["osc3Mix"]!.first!.val
     
     osc1ChorusCentRadius = CoreFloat(tones[0].namedChorusers["osc1Choruser"]!.chorusCentRadius)
-    osc1ChorusNumVoices = CoreFloat(tones[0].namedChorusers["osc1Choruser"]!.chorusNumVoices)
+    osc1ChorusNumVoices  = CoreFloat(tones[0].namedChorusers["osc1Choruser"]!.chorusNumVoices)
+    osc2ChorusCentRadius = CoreFloat(tones[0].namedChorusers["osc2Choruser"]!.chorusCentRadius)
+    osc2ChorusNumVoices  = CoreFloat(tones[0].namedChorusers["osc2Choruser"]!.chorusNumVoices)
+    osc3ChorusCentRadius = CoreFloat(tones[0].namedChorusers["osc3Choruser"]!.chorusCentRadius)
+    osc3ChorusNumVoices  = CoreFloat(tones[0].namedChorusers["osc3Choruser"]!.chorusNumVoices)
 
     oscShape1 = tones[0].namedBasicOscs["osc1"]!.shape
     oscShape2 = tones[0].namedBasicOscs["osc2"]!.shape
     oscShape3 = tones[0].namedBasicOscs["osc3"]!.shape
+
+    osc1Width = tones[0].namedBasicOscs["osc1"]!.width
+    osc2Width = tones[0].namedBasicOscs["osc2"]!.width
+    osc3Width = tones[0].namedBasicOscs["osc3"]!.width
 
     roseAmp = presets[0].positionLFO!.amp.val
     roseFreq = presets[0].positionLFO!.freq.val
@@ -310,8 +348,21 @@ struct SyntacticSynthView: View {
       }
       .pickerStyle(.segmented)
       HStack {
-        KnobbyKnob(value: $synth.osc1ChorusCentRadius, label: "Chorus1", range: 0...30, stepSize: 1)
-        KnobbyKnob(value: $synth.osc1ChorusNumVoices, label: "Chorus1", range: 0...12, stepSize: 1)
+        KnobbyKnob(value: $synth.osc1ChorusCentRadius, label: "Cents1", range: 0...30, stepSize: 1)
+        KnobbyKnob(value: $synth.osc1ChorusNumVoices, label: "Voices1", range: 1...12, stepSize: 1)
+        KnobbyKnob(value: $synth.osc1Width, label: "PulseW1", range: 0...1)
+      }
+      HStack {
+        KnobbyKnob(value: $synth.osc2Detune, label: "Detune2", range: -100...100, stepSize: 1)
+        KnobbyKnob(value: $synth.osc2Octave, label: "Oct2", range: -5...5, stepSize: 1)
+        KnobbyKnob(value: $synth.osc2ChorusCentRadius, label: "Cents2", range: 0...30, stepSize: 1)
+        KnobbyKnob(value: $synth.osc2ChorusNumVoices, label: "Voices2", range: 1...12, stepSize: 1)
+        KnobbyKnob(value: $synth.osc2Width, label: "PulseW2", range: 0...1)
+      }
+      HStack {
+        KnobbyKnob(value: $synth.osc3ChorusCentRadius, label: "Cents3", range: 0...30, stepSize: 1)
+        KnobbyKnob(value: $synth.osc3ChorusNumVoices, label: "Voices3", range: 1...12, stepSize: 1)
+        KnobbyKnob(value: $synth.osc3Width, label: "PulseW3", range: 0...1)
       }
       HStack {
         KnobbyKnob(value: $synth.osc1Mix, label: "Osc1", range: 0...1)
