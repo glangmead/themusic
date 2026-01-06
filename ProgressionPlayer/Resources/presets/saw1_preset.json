@@ -31,7 +31,7 @@
             }
           }
         },
-        "arrow": {
+        "arrowToFilter": {
           "nary": {
             "of": {
               "name": "prod",
@@ -51,7 +51,7 @@
                                     "val": { "val": 1.0, "name": "osc1Mix" }
                                   }
                                 },
-                                {
+                                {"choruser": {"specs": {"name": "osc1Choruser", "valueToChorus": "freq", "chorusCentRadius": 15, "chorusNumVoices": 3, "arrowToChorus": {
                                   "unary": {
                                     "of": {
                                       "arrow": {
@@ -140,7 +140,8 @@
                                       "name": "osc1"
                                     }
                                   }
-                                }
+                                }}}}
+                                
                               ]
                             }
                           }

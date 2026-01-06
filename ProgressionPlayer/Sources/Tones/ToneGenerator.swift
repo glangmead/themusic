@@ -175,6 +175,57 @@ final class LowPassFilter: Arrow11, HasFactor {
   }
 }
 
+final class Choruser: Arrow11 {
+  var chorusCentRadius: Int
+  var chorusNumVoices: Int
+  var arrow: ArrowWithHandles
+  var valueToChorus: String
+  
+  init(chorusCentRadius: Int, chorusNumVoices: Int, arrow: ArrowWithHandles, valueToChorus: String) {
+    self.chorusCentRadius = chorusCentRadius
+    self.chorusNumVoices = chorusNumVoices
+    self.arrow = arrow
+    self.valueToChorus = valueToChorus
+  }
+  
+  override func of(_ t: CoreFloat) -> CoreFloat {
+    // set the freq and call arrow.of() repeatedly, and sum the results
+    if chorusNumVoices > 1 {
+      var chorusedResults: CoreFloat = 0
+      if let freqArrows = arrow.namedConsts[valueToChorus] {
+        let baseFreq = freqArrows.first!.val
+        let spreadFreqs = chorusedFreqs(freq: baseFreq)
+        for freqArrow in freqArrows {
+          for freq in spreadFreqs {
+            freqArrow.val = freq
+            chorusedResults += arrow.of(t)
+          }
+          // restore
+          freqArrow.val = baseFreq
+        }
+      }
+      return chorusedResults
+    } else {
+      return arrow.of(t)
+    }
+  }
+  
+  // return chorusNumVoices frequencies, centered on the requested freq but spanning an interval
+  // from freq - delta to freq + delta (where delta depends on freq and chorusCentRadius)
+  func chorusedFreqs(freq: CoreFloat) -> [CoreFloat] {
+    let cent: CoreFloat = 1.0005777895065548 // '2 ** (1/1200)' in python
+    let freqRadius = freq * pow(cent, CoreFloat(chorusCentRadius)) - freq
+    let freqSliver = 2 * freqRadius / CoreFloat(chorusNumVoices)
+    if chorusNumVoices > 1 {
+      return (0..<chorusNumVoices).map { i in
+        freq - freqRadius + (CoreFloat(i) * freqSliver)
+      }
+    } else {
+      return [freq]
+    }
+  }
+}
+
 final class LowPassFilter2: Arrow11 {
   private var previousOutput: CoreFloat
   private var previousTime: CoreFloat
@@ -206,6 +257,7 @@ final class ArrowWithHandles: Arrow11 {
   var namedLowPassFilter = [String: LowPassFilter2]()
   var namedConsts        = [String: [ArrowConst]]()
   var namedADSREnvelopes = [String: ADSR]()
+  var namedChorusers     = [String: Choruser]()
   
   init(_ arrow: Arrow11) {
     self.arrow = arrow
@@ -222,6 +274,7 @@ final class ArrowWithHandles: Arrow11 {
     }
     namedBasicOscs.merge(arr2.namedBasicOscs) { (a, b) in return a }
     namedLowPassFilter.merge(arr2.namedLowPassFilter) { (a, b) in return a }
+    namedChorusers.merge(arr2.namedChorusers) { (a, b) in return a }
     return self
   }
   
@@ -234,13 +287,14 @@ final class ArrowWithHandles: Arrow11 {
 }
 
 enum ArrowSyntax: Codable {
+  // NOTE: cases must each have a *different associated type*, as it's branched on in the Decoding logic
   case const(val: NamedFloat)
   case identity
   indirect case lowPassFilter(specs: LowPassArrowSyntax)
   indirect case unary(of: NamedArrowSyntax)
   indirect case nary(of: NamedArrowSyntaxList)
   indirect case envelope(specs: ADSRSyntax)
-  // NOTE: cases need to each be tied to a different associated type, given the Decoding logic
+  indirect case choruser(specs: NamedChoruser)
   
   // see https://www.compilenrun.com/docs/language/swift/swift-enumerations/swift-recursive-enumerations/
   func compile() -> ArrowWithHandles {
@@ -255,7 +309,7 @@ enum ArrowSyntax: Codable {
       return handleArr
     
     case .lowPassFilter(let lpArrow):
-      let lowerArrow = lpArrow.arrow.compile()
+      let lowerArrow = lpArrow.arrowToFilter.compile()
       let cutoffArrow = lpArrow.cutoff.compile()
       let resonanceArrow = lpArrow.resonance.compile()
       let arr = LowPassFilter2(
@@ -268,6 +322,19 @@ enum ArrowSyntax: Codable {
         .withMergeDictsFromArrow(cutoffArrow)
         .withMergeDictsFromArrow(resonanceArrow)
       handleArr.namedLowPassFilter[lpArrow.name] = arr
+      return handleArr
+      
+    case .choruser(let choruserSpecs):
+      let lowerArr = choruserSpecs.arrowToChorus.compile()
+      let choruser = Choruser(
+        chorusCentRadius: choruserSpecs.chorusCentRadius,
+        chorusNumVoices: choruserSpecs.chorusNumVoices,
+        arrow: lowerArr,
+        valueToChorus: choruserSpecs.valueToChorus
+      )
+      let handleArr = ArrowWithHandles(choruser)
+        .withMergeDictsFromArrow(lowerArr)
+      handleArr.namedChorusers[choruserSpecs.name] = choruser
       return handleArr
     
     case .envelope(let adsr):
@@ -323,7 +390,7 @@ struct LowPassArrowSyntax: Codable {
   let name: String
   let cutoff: ArrowSyntax
   let resonance: ArrowSyntax
-  let arrow: ArrowSyntax
+  let arrowToFilter: ArrowSyntax
 }
 
 struct ADSRSyntax: Codable {
@@ -354,4 +421,12 @@ struct NamedFloat: Codable {
 struct NamedBasicOscillatorShape: Codable {
   let name: String
   let osc: BasicOscillator.OscShape
+}
+
+struct NamedChoruser: Codable {
+  let name: String
+  let valueToChorus: String
+  let chorusCentRadius: Int
+  let chorusNumVoices: Int
+  let arrowToChorus: ArrowSyntax
 }

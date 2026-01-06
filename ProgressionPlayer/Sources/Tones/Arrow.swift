@@ -21,9 +21,12 @@ class Arrow10 {
 }
 
 class Arrow11 {
-  func of(_ t: CoreFloat) -> CoreFloat { t }
-  
-  func asControl() -> Arrow11 {
+  func of (_ t: CoreFloat ) -> CoreFloat { t }
+  final func repeatingof (_ t: CoreFloat, count: Int) -> [CoreFloat] { Array(repeating: of(t), count: count) }
+  final func ofs   (_ ts: [CoreFloat]) -> [CoreFloat] { ts.map{of($0)} }
+  final func sumof (_ ts: [CoreFloat]) ->  CoreFloat  { ts.map{of($0)}.reduce(0,+) }
+  final func prodof(_ ts: [CoreFloat]) ->  CoreFloat  { ts.map{of($0)}.reduce(1,*) }
+  final func asControl() -> Arrow11 {
     return ControlArrow11(self)
   }
 }

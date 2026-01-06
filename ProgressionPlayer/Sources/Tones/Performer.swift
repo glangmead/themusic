@@ -19,14 +19,15 @@ struct MidiNote {
   }
 }
 
-class EnvelopeHandlePlayer: Arrow11, NoteHandler {
+final class EnvelopeHandlePlayer: Arrow11, NoteHandler {
   var arrow: ArrowWithHandles
   init(arrow: ArrowWithHandles) {
     self.arrow = arrow
   }
   override func of(_ t: CoreFloat) -> CoreFloat {
-    arrow.of(t)
+    return arrow.of(t)
   }
+  
   func noteOn(_ note: MidiNote) {
     for key in arrow.namedADSREnvelopes.keys {
       arrow.namedADSREnvelopes[key]!.noteOn(note)
@@ -52,7 +53,7 @@ protocol NoteHandler: AnyObject {
 
 // Have a collection of note-handling arrows, which we sum as our output.
 // Allocate noteOn among the voices somehow.
-class PoolVoice: Arrow11, NoteHandler {
+final class PoolVoice: Arrow11, NoteHandler {
   // the voices, their count, and their sum arrow
   private let voices: [Arrow11 & NoteHandler]
   private let voiceCount: Int
@@ -114,7 +115,7 @@ class PoolVoice: Arrow11, NoteHandler {
   }
 }
 
-class SimpleVoice: Arrow11, NoteHandler {
+final class SimpleVoice: Arrow11, NoteHandler {
   var oscillator: HasFactor & Arrow11
   var filteredOsc: LowPassFilter
   let ampMod: NoteHandler & Arrow11
@@ -127,6 +128,7 @@ class SimpleVoice: Arrow11, NoteHandler {
     self.filterMod = filterMod
     self.filteredOsc = LowPassFilter(of: oscillator, cutoff: filterMod.of(0), resonance: 0)
   }
+  
   override func of(_ t: CoreFloat) -> CoreFloat {
     // If the amplitude is zero, the voice is effectively off, so we return silence.
     guard amplitude > 0.0 else {

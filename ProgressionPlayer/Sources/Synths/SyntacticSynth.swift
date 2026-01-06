@@ -56,8 +56,11 @@ class PlayableArrowWithHandles: NoteHandler {
 class SyntacticSynth: EngineAndVoicePool {
   let engine = SpatialAudioEngine()
   var voicePool: NoteHandler? = nil
-  
-  private let numVoices = 8
+  #if DEBUG
+  private let numVoices = 3
+  #else
+  private let numVoices = 12
+  #endif
   private var tones = [ArrowWithHandles]()
   private var presets = [Preset]()
   private var basicOscHandles = [String]()
@@ -95,6 +98,12 @@ class SyntacticSynth: EngineAndVoicePool {
   }
   var filterResonance: CoreFloat = 0 { didSet {
     for tone in tones { for const in tone.namedConsts["resonance"]! { const.val = filterResonance } } }
+  }
+  var osc1ChorusCentRadius: CoreFloat = 0 { didSet {
+    for tone in tones { tone.namedChorusers["osc1Choruser"]!.chorusCentRadius = Int(osc1ChorusCentRadius) } }
+  }
+  var osc1ChorusNumVoices: CoreFloat = 0 { didSet {
+    for tone in tones { tone.namedChorusers["osc1Choruser"]!.chorusNumVoices = Int(osc1ChorusNumVoices) } }
   }
   var vibratoAmp: CoreFloat = 0 { didSet {
     for tone in tones { for const in tone.namedConsts["vibratoAmp"]! { const.val = vibratoAmp } } }
@@ -201,6 +210,7 @@ class SyntacticSynth: EngineAndVoicePool {
       avNodes.append(node)
     }
     engine.connectToEnvNode(avNodes)
+    // voicePool is the object that the sequencer plays
     voicePool = PoolVoice(voices: tones.map { EnvelopeHandlePlayer(arrow: $0) })
     
     // read from tones[0] to see what keys we must support getting/setting
@@ -223,6 +233,9 @@ class SyntacticSynth: EngineAndVoicePool {
     osc1Mix = tones[0].namedConsts["osc1Mix"]!.first!.val
     osc2Mix = tones[0].namedConsts["osc2Mix"]!.first!.val
     osc3Mix = tones[0].namedConsts["osc3Mix"]!.first!.val
+    
+    osc1ChorusCentRadius = CoreFloat(tones[0].namedChorusers["osc1Choruser"]!.chorusCentRadius)
+    osc1ChorusNumVoices = CoreFloat(tones[0].namedChorusers["osc1Choruser"]!.chorusNumVoices)
 
     oscShape1 = tones[0].namedBasicOscs["osc1"]!.shape
     oscShape2 = tones[0].namedBasicOscs["osc2"]!.shape
@@ -296,6 +309,10 @@ struct SyntacticSynthView: View {
         }
       }
       .pickerStyle(.segmented)
+      HStack {
+        KnobbyKnob(value: $synth.osc1ChorusCentRadius, label: "Chorus1", range: 0...30, stepSize: 1)
+        KnobbyKnob(value: $synth.osc1ChorusNumVoices, label: "Chorus1", range: 0...12, stepSize: 1)
+      }
       HStack {
         KnobbyKnob(value: $synth.osc1Mix, label: "Osc1", range: 0...1)
         KnobbyKnob(value: $synth.osc2Mix, label: "Osc2", range: 0...1)
