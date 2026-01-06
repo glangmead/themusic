@@ -77,6 +77,10 @@ struct SongView: View {
     .sheet(isPresented: $isShowingSynth) {
       SyntacticSynthView(synth: synth)
     }
+    if songURL != nil {
+      MidiInspectorView(midiURL: songURL!)
+    }
+
   }
 }
 
