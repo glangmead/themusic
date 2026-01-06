@@ -192,6 +192,7 @@ final class Choruser: Arrow11 {
     // set the freq and call arrow.of() repeatedly, and sum the results
     if chorusNumVoices > 1 {
       var chorusedResults: CoreFloat = 0
+      // get the constants of the given name (it is an array, as we have some duplication in the json)
       if let freqArrows = arrow.namedConsts[valueToChorus] {
         let baseFreq = freqArrows.first!.val
         let spreadFreqs = chorusedFreqs(freq: baseFreq)

@@ -156,7 +156,7 @@
                                     "val": { "val": 1.0, "name": "osc2Mix" }
                                   }
                                 },
-                                {
+                                {"choruser": {"specs": {"name": "osc2Choruser", "valueToChorus": "freq", "chorusCentRadius": 15, "chorusNumVoices": 3, "arrowToChorus": {
                                   "unary": {
                                     "of": {
                                       "arrow": {
@@ -180,9 +180,12 @@
                                                         "const": {
                                                           "val": {
                                                             "name": "osc2FreqMult",
-                                                            "val": 0.5
+                                                            "val": 1.0
                                                           }
                                                         }
+                                                      },
+                                                      {
+                                                        "identity": {}
                                                       }
                                                     ]
                                                   }
@@ -250,7 +253,7 @@
                                       "name": "osc2"
                                     }
                                   }
-                                }
+                                }}}}
                               ]
                             }
                           }
@@ -265,7 +268,7 @@
                                     "val": { "val": 1.0, "name": "osc3Mix" }
                                   }
                                 },
-                                {
+                                {"choruser": {"specs": {"name": "osc3Choruser", "valueToChorus": "freq", "chorusCentRadius": 15, "chorusNumVoices": 3, "arrowToChorus": {
                                   "unary": {
                                     "of": {
                                       "arrow": {
@@ -354,7 +357,7 @@
                                       "name": "osc3"
                                     }
                                   }
-                                }
+                                }}}}
                               ]
                             }
                           }
