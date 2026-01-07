@@ -29,11 +29,6 @@ struct KnobbyBox<Content: View>: View {
   
   var body: some View {
     ZStack {
-      Rectangle()
-        .fill(isOn ? Theme.gradientLightScreen(max(width, height)) :
-                (blankStyle ? Theme.gradientBlankScreen(): Theme.gradientDarkScreen(max(width, height))))
-        .border(.black, width: 1.0)
-        .frame(width: width, height: height)
       content()
     }.frame(width: width, height: height)
     

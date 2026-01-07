@@ -29,13 +29,13 @@ struct KnobbyKnob<T: BinaryFloatingPoint>: View {
   /// Set if when value = 0, the signal light will be turned gray.
   var allowPoweroff = false
   
-  /// If show value on the know
-  var ifShowValue = true
+  /// If show value on the knob
+  var ifShowValue = false
   
   /// Set the sensitivity of the dragging gesture.
   var sensitivity: T = 0.3
   
-  var valueFormatter: ((T) -> String) = { isInt($0) ? String(format: "%.0f", $0 as! CVarArg) : String(format: "%.2f", $0 as! CVarArg) }
+  var valueString: ((T) -> String) = { isInt($0) ? String(format: "%.0f", $0 as! CVarArg) : String(format: "%.2f", $0 as! CVarArg) }
   
   var onChanged: ((T) -> Void)?
   
@@ -44,6 +44,12 @@ struct KnobbyKnob<T: BinaryFloatingPoint>: View {
   var normalizedValue: T {
     T((value - range.lowerBound) / (range.upperBound - range.lowerBound))
   }
+  
+  let numberFormatter: NumberFormatter = {
+    let formatter = NumberFormatter()
+    formatter.numberStyle = .decimal
+    return formatter
+  }()
   
   var body: some View {
     VStack {
@@ -62,10 +68,9 @@ struct KnobbyKnob<T: BinaryFloatingPoint>: View {
               .mask(Circle().frame(width: size, height: size))
           }
         
-        if ifShowValue {
-          KnobbyBox(isOn: false, blankStyle: false, width: size*0.9, height: 16) {
-            Text(valueFormatter(value)).foregroundColor(Theme.colorBodyText)
-          }
+        KnobbyBox(isOn: false, blankStyle: false, width: size*0.9, height: 16) {
+          Text(ifShowValue ? valueString(value) : label)
+            .foregroundColor(Theme.colorBodyText)
         }
         if allowPoweroff && normalizedValue == 0.0 {
           Circle()
@@ -92,8 +97,10 @@ struct KnobbyKnob<T: BinaryFloatingPoint>: View {
           isDragging = false
         }
       )
-      
-      Text(label)
+      TextField("", value: $value, formatter: numberFormatter)
+        .border(.secondary)
+        .frame(width: 0.8 * size)
+        .multilineTextAlignment(.center)
     }
   }
   

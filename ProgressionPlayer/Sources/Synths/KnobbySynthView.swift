@@ -46,7 +46,7 @@ struct KnobbySynthView: View {
                          stepSize: 1,
                          allowPoweroff: false,
                          ifShowValue: true,
-                         valueFormatter: { String(format: "%.0f", $0)})
+                         valueString: { String(format: "%.0f", $0)})
             }
             VStack {
               Text("Delay (s)").font(.headline)
@@ -56,7 +56,7 @@ struct KnobbySynthView: View {
                          stepSize: 0.1,
                          allowPoweroff: false,
                          ifShowValue: true,
-                         valueFormatter: { String(format: "%.1f", $0)})
+                         valueString: { String(format: "%.1f", $0)})
             }
             VStack {
               Text("Filter (Hz)").font(.headline)
@@ -66,7 +66,7 @@ struct KnobbySynthView: View {
                          stepSize: 1,
                          allowPoweroff: false,
                          ifShowValue: true,
-                         valueFormatter: { String(format: "%.1f", $0)})
+                         valueString: { String(format: "%.1f", $0)})
             }
             Spacer()
           }
@@ -87,7 +87,7 @@ struct KnobbySynthView: View {
                          stepSize: 0.05,
                          allowPoweroff: false,
                          ifShowValue: true,
-                         valueFormatter: { String(format: "%.2f", $0)})
+                         valueString: { String(format: "%.2f", $0)})
             }
             VStack {
               Text("Decay (s)").font(.headline)
@@ -97,7 +97,7 @@ struct KnobbySynthView: View {
                          stepSize: 0.05,
                          allowPoweroff: false,
                          ifShowValue: true,
-                         valueFormatter: { String(format: "%.2f", $0)})
+                         valueString: { String(format: "%.2f", $0)})
             }
             VStack {
               Text("Sus").font(.headline)
@@ -107,7 +107,7 @@ struct KnobbySynthView: View {
                          stepSize: 0.01,
                          allowPoweroff: false,
                          ifShowValue: true,
-                         valueFormatter: { String(format: "%.2f", $0)})
+                         valueString: { String(format: "%.2f", $0)})
             }
             VStack {
               Text("Rel (s)").font(.headline)
@@ -117,7 +117,7 @@ struct KnobbySynthView: View {
                          stepSize: 0.05,
                          allowPoweroff: false,
                          ifShowValue: true,
-                         valueFormatter: { String(format: "%.2f", $0)})
+                         valueString: { String(format: "%.2f", $0)})
             }
             Spacer()
           }
@@ -137,7 +137,7 @@ struct KnobbySynthView: View {
                          stepSize: 1,
                          allowPoweroff: false,
                          ifShowValue: true,
-                         valueFormatter: { String(format: "%.0f", $0)})
+                         valueString: { String(format: "%.0f", $0)})
             }
             VStack {
               Text("⌘ Speed").font(.headline)
@@ -147,7 +147,7 @@ struct KnobbySynthView: View {
                          stepSize: 0.1,
                          allowPoweroff: false,
                          ifShowValue: true,
-                         valueFormatter: { String(format: "%.1f", $0)})
+                         valueString: { String(format: "%.1f", $0)})
             }
             VStack {
               Text("⌘ Distance").font(.headline)
@@ -157,7 +157,7 @@ struct KnobbySynthView: View {
                          stepSize: 0.1,
                          allowPoweroff: false,
                          ifShowValue: true,
-                         valueFormatter: { String(format: "%.1f", $0)})
+                         valueString: { String(format: "%.1f", $0)})
             }
             Spacer()
           }

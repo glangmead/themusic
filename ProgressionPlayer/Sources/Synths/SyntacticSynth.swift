@@ -306,27 +306,6 @@ struct SyntacticSynthView: View {
   }
   
   var body: some View {
-    ForEach(["D_Loop_01", "MSLFSanctus"], id: \.self) { song in
-      Button("Play \(song)") {
-        let songURL = Bundle.main.url(forResource: song, withExtension: "mid")
-        seq?.playURL(url: songURL!)
-      }
-    }
-    Button("Stop") {
-      seq?.stop()
-    }
-    Button("Rewind") {
-      seq?.stop()
-      seq?.rewind()
-    }
-    .onAppear {
-      if seq == nil {
-        do {
-          try! synth.engine.start()
-        }
-        seq = Sequencer(synth: synth, numTracks: 2) 
-      }
-    }
 
     ScrollView {
       Picker("Instrument 1", selection: $synth.oscShape1) {
@@ -428,6 +407,14 @@ struct SyntacticSynthView: View {
           KnobbyKnob(value: $synth.distortionPreGain, label: "Pregain", range: 0...30)
           KnobbyKnob(value: $synth.distortionWetDryMix, label: "Dry/wet", range: 0...100)
         }
+      }
+    }
+    .onAppear {
+      if seq == nil {
+        do {
+          try! synth.engine.start()
+        }
+        seq = Sequencer(synth: synth, numTracks: 2)
       }
     }
   }
