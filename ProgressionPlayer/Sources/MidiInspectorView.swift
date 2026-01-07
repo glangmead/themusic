@@ -21,7 +21,7 @@ struct MidiInspectorView: View {
       // Global Metadata Header
       VStack(alignment: .leading, spacing: 4) {
         Text(midiURL.lastPathComponent)
-          .font(.headline)
+          .font(.largeTitle)
         HStack {
           if let timeSig = globalMetadata.timeSignature {
             Text("Time Sig: \(timeSig)")
@@ -31,7 +31,7 @@ struct MidiInspectorView: View {
           }
           Text("Duration: \(String(format: "%.2f", globalMetadata.duration))s")
         }
-        .font(.caption)
+        .font(.headline)
         .foregroundStyle(.secondary)
       }
       .padding()
@@ -49,17 +49,16 @@ struct MidiInspectorView: View {
                 .bold()
               Spacer()
               Text("\(track.notes.count) notes")
-                .font(.caption2)
+                .font(.caption)
                 .foregroundStyle(.secondary)
             }
             
             // Graphical Display
             MidiTrackVisualizer(notes: track.notes, totalDuration: globalMetadata.duration)
-              .frame(height: 40)
-              .background(Color(UIColor.tertiarySystemBackground))
+              .frame(height: 50)
+              .background(.orange.opacity(0.3))
               .clipShape(RoundedRectangle(cornerRadius: 4))
           }
-          .padding(.vertical, 4)
         }
       }
     }
@@ -102,7 +101,7 @@ struct MidiTrackVisualizer: View {
       // Normalize pitch to fit height
       let minPitch = notes.map(\.pitch).min() ?? 0
       let maxPitch = notes.map(\.pitch).max() ?? 127
-      let pitchRange = CGFloat(max(1, maxPitch - minPitch))
+      let pitchRange = CGFloat(max(1, maxPitch - minPitch + 1))
       
       ForEach(notes) { note in
         let x = (note.startBeat / totalDuration) * width
@@ -277,5 +276,13 @@ class MidiParser {
       tracks.append(trackData)
     }
     globalMetadata.duration = max(1.0, maxTime)
+  }
+}
+
+#Preview {
+  if let url = Bundle.main.url(forResource: "D_Loop_01", withExtension: "mid") {
+    MidiInspectorView(midiURL: url)
+  } else {
+    Text("D_Loop_01.mid not found")
   }
 }
