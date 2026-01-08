@@ -115,47 +115,4 @@ final class PoolVoice: Arrow11, NoteHandler {
   }
 }
 
-final class SimpleVoice: Arrow11, NoteHandler {
-  var oscillator: HasFactor & Arrow11
-  var filteredOsc: LowPassFilter
-  let ampMod: NoteHandler & Arrow11
-  let filterMod: NoteHandler & Arrow11
-  var amplitude: CoreFloat = 0.0 // Controls the current loudness of the voice
-  
-  init(oscillator: HasFactor & Arrow11, ampMod: NoteHandler & Arrow11, filterMod: NoteHandler & Arrow11) {
-    self.oscillator = oscillator
-    self.ampMod = ampMod
-    self.filterMod = filterMod
-    self.filteredOsc = LowPassFilter(of: oscillator, cutoff: filterMod.of(0), resonance: 0)
-  }
-  
-  override func of(_ t: CoreFloat) -> CoreFloat {
-    // If the amplitude is zero, the voice is effectively off, so we return silence.
-    guard amplitude > 0.0 else {
-      return 0.0
-    }
-    // update the filter with the filterMod envelope's current value
-    filteredOsc.factor = filterMod.of(t)
-    // get the tone
-    let rawOscillatorSample = filteredOsc.of(t)
-    // get the amplitude
-    let ampEnv = ampMod.of(t)
-    return amplitude * ampEnv * rawOscillatorSample
-  }
-  
-  func noteOn(_ note: MidiNote) {
-    // Map the MIDI velocity (0-127) to an amplitude (0.0-1.0)
-    self.amplitude = CoreFloat(note.velocity) / 127.0
-    oscillator.factor = note.freq
-    ampMod.noteOn(note)
-    filterMod.noteOn(note)
-  }
-  
-  func noteOff(_ note: MidiNote) {
-    // For this simple voice, turning the note off means setting amplitude to zero,
-    // effectively silencing the sound instantly.
-    ampMod.noteOff(note)
-    filterMod.noteOff(note)
-  }
-}
 

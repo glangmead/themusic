@@ -81,7 +81,7 @@ struct MidiInspectorView: View {
     
     // 2. Parse for Display using AudioToolbox
     if let parser = MidiParser(url: midiURL) {
-      self.parsedTracks = parser.tracks
+      self.parsedTracks = parser.tracks.filter { $0.notes.isNotEmpty }
       self.globalMetadata = parser.globalMetadata
     }
   }
@@ -280,9 +280,9 @@ class MidiParser {
 }
 
 #Preview {
-  if let url = Bundle.main.url(forResource: "D_Loop_01", withExtension: "mid") {
+  if let url = Bundle.main.url(forResource: "MSLFSanctus", withExtension: "mid") {
     MidiInspectorView(midiURL: url)
   } else {
-    Text("D_Loop_01.mid not found")
+    Text("MSLFSanctus.mid not found")
   }
 }
