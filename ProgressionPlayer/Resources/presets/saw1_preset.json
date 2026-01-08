@@ -47,9 +47,10 @@
                                   }
                                 },
                                 {"choruser": {"specs": {"name": "osc1Choruser", "valueToChorus": "freq", "chorusCentRadius": 0, "chorusNumVoices": 1, "arrowToChorus": {
-                                  "unary": {
-                                    "of": {
-                                      "arrow": {
+                                  "compose": {
+                                    "arrows": [
+                                      { "identity": {} },
+                                      {
                                         "sum": {
                                           "of":
                                             [
@@ -120,9 +121,8 @@
                                             ],
                                         }
                                       },
-                                      "kind": "sawtoothOsc",
-                                      "name": "osc1"
-                                    }
+                                      {"osc": {"name": "osc1", "shape": "sawtoothOsc"}}
+                                    ]
                                   }
                                 }}}}
                                 

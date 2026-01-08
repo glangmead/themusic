@@ -29,7 +29,11 @@ class Arrow11 {
     self.innerArrs = ContiguousArray<Arrow11>(innerArrs)
   }
   
-  func of (_ t: CoreFloat ) -> CoreFloat { innerArr?.of(t) ?? t }
+  func inner(_ t: CoreFloat) -> CoreFloat {
+    innerArr?.of(t) ?? t
+  }
+  
+  func of (_ t: CoreFloat) -> CoreFloat { inner(t) }
   final func asControl() -> Arrow11 {
     return ControlArrow11(innerArr: self)
   }
@@ -49,7 +53,7 @@ final class ControlArrow11: Arrow11 {
   
   override func of(_ t: CoreFloat) -> CoreFloat {
     if t - lastTimeEmittedSecs >= timeBetweenEmissionsSecs {
-      lastEmission = innerArr?.of(t) ?? t
+      lastEmission = inner(t)
       lastTimeEmittedSecs = t
     }
     return lastEmission

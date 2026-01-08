@@ -8,36 +8,43 @@
 import Foundation
 import SwiftUI
 
-final class Sine: Arrow11 {
+protocol WidthHaver {
+  var width: CoreFloat { get set }
+}
+
+final class Sine: Arrow11, WidthHaver {
   var width: CoreFloat = 1.0
   override func of(_ t: CoreFloat) -> CoreFloat {
-    (fmod(t, 1) < width) ? sin(2 * .pi * t / width) : 0
+    let innerResult = inner(t)
+    return (fmod(innerResult, 1) < width) ? sin(2 * .pi * innerResult / width) : 0
   }
 }
 
-final class Triangle: Arrow11 {
+final class Triangle: Arrow11, WidthHaver {
   var width: CoreFloat = 1
   override func of(_ t: CoreFloat) -> CoreFloat {
-    (fmod(t, 1) < width/2) ? (2 * fmod(t, 1) / width) :
-      (fmod(t, 1) < width) ? (-2 * fmod(t, 1) / width) + 2 : 0
+    let innerResult = inner(t)
+    return (fmod(innerResult, 1) < width/2) ? (2 * fmod(innerResult, 1) / width) :
+      (fmod(innerResult, 1) < width) ? (-2 * fmod(innerResult, 1) / width) + 2 : 0
   }
 }
 
-final class Sawtooth: Arrow11 {
+final class Sawtooth: Arrow11, WidthHaver {
   var width: CoreFloat = 1
   override func of(_ t: CoreFloat) -> CoreFloat {
-    (fmod(t, 1) < width) ? (fmod(t, 1) / width) : 0
+    let innerResult = inner(t)
+    return (fmod(innerResult, 1) < width) ? (fmod(innerResult, 1) / width) : 0
   }
 }
 
-final class Square: Arrow11 {
+final class Square: Arrow11, WidthHaver {
   var width: CoreFloat = 1 // for square, a width of 1 means half the time it's 1 and half is 0
   override func of(_ t: CoreFloat) -> CoreFloat {
-    fmod(t, 1) <= width/2 ? 1.0 : -1.0
+    fmod(inner(t), 1) <= width/2 ? 1.0 : -1.0
   }
 }
 
-final class Noise: Arrow11 {
+final class Noise: Arrow11, WidthHaver {
   var width: CoreFloat = 1
   override func of(_ t: CoreFloat) -> CoreFloat {
     CoreFloat.random(in: 0.0...1.0)
@@ -52,39 +59,42 @@ final class BasicOscillator: Arrow11 {
     case square = "squareOsc"
     case noise = "noiseOsc"
   }
-  var shape: OscShape
-  var width: CoreFloat
-  var arrow: Arrow11 {
-    switch shape {
-    case .sine:
-      let result = Sine()
-      result.width = width
-      return result
-    case .triangle:
-      let result = Triangle()
-      result.width = width
-      return result
-    case .sawtooth:
-      let result = Sawtooth()
-      result.width = width
-      return result
-    case .square:
-      let result = Square()
-      result.width = width
-      return result
-    case .noise:
-      let result = Noise()
-      result.width = width
-      return result
+  var shape: OscShape {
+    didSet {
+      arrow = Self.arrForShape(shape: shape)
     }
   }
+  var width: CoreFloat {
+    didSet {
+      arrow.width = width
+    }
+  }
+  var arrow: Arrow11 & WidthHaver
+  
   init(shape: OscShape, width: CoreFloat = 1) {
     self.shape = shape
+    self.arrow = Self.arrForShape(shape: shape)
     self.width = width
     super.init()
   }
+  
   override func of(_ t: CoreFloat) -> CoreFloat {
-    arrow.of(innerArr?.of(t) ?? t)
+    arrow.of(inner(t))
+  }
+  
+  static func arrForShape(shape: OscShape) -> Arrow11 & WidthHaver {
+    switch shape {
+    case .sine:
+       Sine()
+    case .triangle:
+      Triangle()
+    case .sawtooth:
+      Sawtooth()
+    case .square:
+      Square()
+    case .noise:
+      Noise()
+    }
   }
 }
 
@@ -177,7 +187,7 @@ final class LowPassFilter2: Arrow11 {
     let rc = 1.0 / (2 * .pi * cutoff.of(t))
     let dt = t - previousTime
     let alpha = dt / (rc + dt)
-    let output = (alpha * (innerArr?.of(t) ?? t)) + (1 - alpha) * previousOutput
+    let output = (alpha * (inner(t))) + (1 - alpha) * previousOutput
     previousOutput = output
     previousTime = t
     return output
@@ -191,9 +201,15 @@ final class ArrowWithHandles: Arrow11 {
   var namedConsts        = [String: [ArrowConst]]()
   var namedADSREnvelopes = [String: ADSR]()
   var namedChorusers     = [String: Choruser]()
+  var arrow: Arrow11
+  
+  init(_ arrow: Arrow11) {
+    self.arrow = arrow
+    super.init()
+  }
   
   override func of(_ t: CoreFloat) -> CoreFloat {
-    innerArr?.of(t) ?? t
+    arrow.of(inner(t))
   }
   
   func withMergeDictsFromArrow(_ arr2: ArrowWithHandles) -> ArrowWithHandles {
@@ -223,51 +239,64 @@ enum ArrowSyntax: Codable {
   indirect case unary(of: NamedArrowSyntax)
   indirect case control(of: ArrowSyntax)
   indirect case prod(of: [ArrowSyntax])
+  indirect case compose(arrows: [ArrowSyntax])
   indirect case sum(of: [ArrowSyntax])
   indirect case envelope(specs: ADSRSyntax)
   indirect case choruser(specs: NamedChoruser)
+  indirect case osc(name: String, shape: BasicOscillator.OscShape)
   
   // see https://www.compilenrun.com/docs/language/swift/swift-enumerations/swift-recursive-enumerations/
   func compile() -> ArrowWithHandles {
     switch self {
+    case .compose(let arrows):
+      // it seems natural to me for the chain to be listed from innermost to outermost (first-to-last)
+      let lowerArrs = arrows.map({$0.compile()})
+      var composition: Arrow11? = nil
+      for lowerArr in lowerArrs {
+        lowerArr.innerArr = composition
+        composition = lowerArr
+      }
+      return ArrowWithHandles(composition!).withMergeDictsFromArrows(lowerArrs)
+    case .osc(let oscName, let oscShape):
+      let osc = BasicOscillator(shape: oscShape)
+      let arr = ArrowWithHandles(osc)
+      arr.namedBasicOscs[oscName] = osc
+      return arr
     case .control(let arrow):
       let lowerArr = arrow.compile()
       let arr = ControlArrow11(innerArr: lowerArr)
-      return ArrowWithHandles(innerArr: arr).withMergeDictsFromArrow(lowerArr)
+      return ArrowWithHandles(arr).withMergeDictsFromArrow(lowerArr)
 
     case .unary(let namedArrow):
       let lowerArr = namedArrow.arrow.compile()
-      if namedArrow.kind == "control" {
-        let arr = ControlArrow11(innerArr: lowerArr)
-        return ArrowWithHandles(innerArr: arr).withMergeDictsFromArrow(lowerArr)
-      } else if BasicOscillator.OscShape.allCases.map({$0.rawValue}).contains(namedArrow.kind) {
+      if BasicOscillator.OscShape.allCases.map({$0.rawValue}).contains(namedArrow.kind) {
         let osc = BasicOscillator(shape: BasicOscillator.OscShape(rawValue: namedArrow.kind)!)
         osc.innerArr = lowerArr
-        let handleArr = ArrowWithHandles(innerArr: osc)
+        let handleArr = ArrowWithHandles(osc)
         handleArr.namedBasicOscs[namedArrow.name] = osc
         return handleArr.withMergeDictsFromArrow(lowerArr)
       } else {
         return namedArrow.arrow.compile()
       }
     case .identity:
-      return ArrowWithHandles(innerArr: ArrowIdentity())
+      return ArrowWithHandles(ArrowIdentity())
     case .prod(let arrows):
       let lowerArrs = arrows.map({$0.compile()})
       return ArrowWithHandles(
-        innerArr: ArrowProd(
+        ArrowProd(
           innerArrs: ContiguousArray<Arrow11>(lowerArrs)
         )).withMergeDictsFromArrows(lowerArrs)
     case .sum(let arrows):
       let lowerArrs = arrows.map({$0.compile()})
       return ArrowWithHandles(
-        innerArr: ArrowSum(
+        ArrowSum(
           innerArrs: lowerArrs
         )
       ).withMergeDictsFromArrows(lowerArrs)
 
     case .const(let namedVal):
       let arr = ArrowConst(value: namedVal.val) // separate copy, even if same name as a node elsewhere
-      let handleArr = ArrowWithHandles(innerArr: arr)
+      let handleArr = ArrowWithHandles(arr)
       handleArr.namedConsts[namedVal.name] = [arr]
       return handleArr
     
@@ -280,7 +309,7 @@ enum ArrowSyntax: Codable {
         cutoff: cutoffArrow,
         resonance: resonanceArrow
       )
-      let handleArr = ArrowWithHandles(innerArr: arr)
+      let handleArr = ArrowWithHandles(arr)
         .withMergeDictsFromArrow(lowerArrow)
         .withMergeDictsFromArrow(cutoffArrow)
         .withMergeDictsFromArrow(resonanceArrow)
@@ -295,7 +324,7 @@ enum ArrowSyntax: Codable {
         arrow: lowerArr,
         valueToChorus: choruserSpecs.valueToChorus
       )
-      let handleArr = ArrowWithHandles(innerArr: choruser)
+      let handleArr = ArrowWithHandles(choruser)
         .withMergeDictsFromArrow(lowerArr)
       handleArr.namedChorusers[choruserSpecs.name] = choruser
       return handleArr
@@ -308,7 +337,7 @@ enum ArrowSyntax: Codable {
         releaseTime: adsr.release,
         scale: adsr.scale
       ))
-      let handleArr = ArrowWithHandles(innerArr: env.asControl())
+      let handleArr = ArrowWithHandles(env.asControl())
       handleArr.namedADSREnvelopes[adsr.name] = env
       return handleArr
     
