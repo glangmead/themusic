@@ -12,22 +12,26 @@ import SwiftUI
 // This is Double because an AVAudioSourceNodeRenderBlock sends the input (time) as a Float64
 typealias CoreFloat = Double
 
-class Arrow10 {
-  func of(_ t: CoreFloat) {  }
-
-  func asControl() -> Arrow10 {
-    return ControlArrow10(self)
-  }
-}
-
 class Arrow11 {
-  func of (_ t: CoreFloat ) -> CoreFloat { t }
-  final func repeatingof (_ t: CoreFloat, count: Int) -> [CoreFloat] { Array(repeating: of(t), count: count) }
-  final func ofs   (_ ts: [CoreFloat]) -> [CoreFloat] { ts.map{of($0)} }
-  final func sumof (_ ts: [CoreFloat]) ->  CoreFloat  { ts.map{of($0)}.reduce(0,+) }
-  final func prodof(_ ts: [CoreFloat]) ->  CoreFloat  { ts.map{of($0)}.reduce(1,*) }
+  // these are arrows with which we can compose (arr/arrs run first, then this arrow)
+  var innerArr: Arrow11? = nil
+  var innerArrs = ContiguousArray<Arrow11>()
+  
+  init(innerArr: Arrow11? = nil) {
+    self.innerArr = innerArr
+  }
+  
+  init(innerArrs: ContiguousArray<Arrow11>) {
+    self.innerArrs = innerArrs
+  }
+  
+  init(innerArrs: [Arrow11]) {
+    self.innerArrs = ContiguousArray<Arrow11>(innerArrs)
+  }
+  
+  func of (_ t: CoreFloat ) -> CoreFloat { innerArr?.of(t) ?? t }
   final func asControl() -> Arrow11 {
-    return ControlArrow11(self)
+    return ControlArrow11(innerArr: self)
   }
 }
 
@@ -39,65 +43,34 @@ class Arrow13 {
 // The name comes from the paradigm that control signals like LFOs don't need to fire as often
 // as audio data.
 final class ControlArrow11: Arrow11 {
-  var wrapped: Arrow11
   var lastTimeEmittedSecs = 0.0
   var lastEmission = 0.0
   let timeBetweenEmissionsSecs = 441.0 / 44100.0
   
-  init(_ wrapped: Arrow11) {
-    self.wrapped = wrapped
-  }
   override func of(_ t: CoreFloat) -> CoreFloat {
     if t - lastTimeEmittedSecs >= timeBetweenEmissionsSecs {
-      lastEmission = wrapped.of(t)
+      lastEmission = innerArr?.of(t) ?? t
       lastTimeEmittedSecs = t
     }
     return lastEmission
   }
 }
 
-final class ControlArrow10: Arrow10 {
-  var wrapped: Arrow10
-  var lastTimeEmitted = 0.0
-  let timeBetweenEmissions = 4410.0 / 44100.0
-  init(_ wrapped: Arrow10) {
-    self.wrapped = wrapped
-  }
-  override func of(_ t: CoreFloat) {
-    if t - lastTimeEmitted >= timeBetweenEmissions {
-      wrapped.of(t)
-      lastTimeEmitted = t
-    }
-  }
-}
-
 final class ArrowSum: Arrow11 {
-  var arrows: ContiguousArray<Arrow11>
-  var numArrows: Int
-  init(_ arrows: [Arrow11]) {
-    self.arrows = ContiguousArray<Arrow11>(arrows)
-    self.numArrows = arrows.count
-  }
   override func of(_ t: CoreFloat) -> CoreFloat {
     var total: CoreFloat = 0
-    for i in 0..<numArrows {
-      total += arrows[i].of(t)
+    for i in 0..<innerArrs.count {
+      total += innerArrs[i].of(t)
     }
     return total
   }
 }
 
 final class ArrowProd: Arrow11 {
-  var arrows: ContiguousArray<Arrow11>
-  var numArrows: Int
-  init(_ arrows: [Arrow11]) {
-    self.arrows = ContiguousArray<Arrow11>(arrows)
-    self.numArrows = arrows.count
-  }
   override func of(_ t: CoreFloat) -> CoreFloat {
     var result: CoreFloat = 1
-    for i in 0..<numArrows {
-      result *= arrows[i].of(t)
+    for i in 0..<innerArrs.count {
+      result *= innerArrs[i].of(t)
     }
     return result
   }
@@ -105,36 +78,16 @@ final class ArrowProd: Arrow11 {
 
 final class ArrowIdentity: Arrow11 {
   override func of(_ t: CoreFloat) -> CoreFloat { t }
-}
-
-final class ArrowCompose: Arrow11 {
-  var outer: Arrow11
-  var inner: Arrow11
-  init(outer: Arrow11, inner: Arrow11) {
-    self.outer = outer
-    self.inner = inner
-  }
-  override func of(_ t: CoreFloat) -> CoreFloat {
-    outer.of(inner.of(t))
-  }
-}
-
-final class ArrowSin: Arrow11 {
-  override func of(_ t: CoreFloat) -> CoreFloat {
-    Foundation.sin(t)
-  }
-}
-
-final class ArrowCos: Arrow11 {
-  override func of(_ t: CoreFloat) -> CoreFloat {
-    Foundation.cos(t)
+  init() {
+    super.init()
   }
 }
 
 final class ArrowConst: Arrow11, Equatable {
   var val: CoreFloat
-  init(_ value: CoreFloat) {
+  init(value: CoreFloat) {
     self.val = value
+    super.init()
   }
   override func of(_ t: CoreFloat) -> CoreFloat {
     val
@@ -146,8 +99,9 @@ final class ArrowConst: Arrow11, Equatable {
 
 final class ArrowConstF: Arrow11, Equatable {
   var val: Float
-  init(_ value: Float) {
+  init(value: Float) {
     self.val = value
+    super.init()
   }
   override func of(_ t: CoreFloat) -> CoreFloat {
     CoreFloat(val)

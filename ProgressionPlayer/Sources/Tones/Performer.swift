@@ -23,9 +23,7 @@ final class EnvelopeHandlePlayer: Arrow11, NoteHandler {
   var arrow: ArrowWithHandles
   init(arrow: ArrowWithHandles) {
     self.arrow = arrow
-  }
-  override func of(_ t: CoreFloat) -> CoreFloat {
-    return arrow.of(t)
+    super.init(innerArr: arrow)
   }
   
   func noteOn(_ note: MidiNote) {
@@ -57,7 +55,6 @@ final class PoolVoice: Arrow11, NoteHandler {
   // the voices, their count, and their sum arrow
   private let voices: [Arrow11 & NoteHandler]
   private let voiceCount: Int
-  private let sumSource: Arrow11
   
   // treating voices as a pool of resources
   private var noteOnnedVoiceIdxs: Set<Int>
@@ -67,16 +64,12 @@ final class PoolVoice: Arrow11, NoteHandler {
   init(voices: [Arrow11 & NoteHandler]) {
     self.voices = voices
     self.voiceCount = voices.count
-    self.sumSource = ArrowSum(voices)
     
     // mark all voices as available
     availableVoiceIdxs = Set(0..<voices.count)
     noteOnnedVoiceIdxs = Set<Int>()
     noteToVoiceIdx = [:]
-  }
-  
-  override func of(_ t: CoreFloat) -> CoreFloat {
-    sumSource.of(t)
+    super.init(innerArr: ArrowSum(innerArrs: voices))
   }
   
   private func takeAvailableVoice(_ note: MidiValue) -> NoteHandler? {

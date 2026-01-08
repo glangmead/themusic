@@ -3,10 +3,9 @@
     "lowPassFilter": {
       "specs": {
         "cutoff": {
-          "nary": {
-            "of": {
-              "name": "prod",
-              "arrows": [
+          "prod": {
+            "of":
+              [
                 {
                   "const": {
                     "val": {
@@ -28,24 +27,20 @@
                   }
                 }
               ]
-            }
           }
         },
         "arrowToFilter": {
-          "nary": {
-            "of": {
-              "name": "prod",
-              "arrows": [
+          "prod": {
+            "of":
+              [
                 {
-                  "nary": {
-                    "of": {
-                      "name": "sum",
-                      "arrows": [
+                  "sum": {
+                    "of":
+                      [
                         {
-                          "nary": {
-                            "of": {
-                              "name": "prod",
-                              "arrows": [
+                          "prod": {
+                            "of":
+                              [
                                 {
                                   "const": {
                                     "val": { "val": 1.0, "name": "osc1Mix" }
@@ -55,14 +50,13 @@
                                   "unary": {
                                     "of": {
                                       "arrow": {
-                                        "nary": {
-                                          "of": {
-                                            "arrows": [
+                                        "sum": {
+                                          "of":
+                                            [
                                               {
-                                                "nary": {
-                                                  "of": {
-                                                    "name": "prod",
-                                                    "arrows": [
+                                                "prod": {
+                                                  "of":
+                                                    [
                                                       {
                                                         "const": {
                                                           "val": {
@@ -75,16 +69,15 @@
                                                         "identity": {}
                                                       }
                                                     ]
-                                                  }
                                                 }
                                               },
                                               {
-                                                "unary": {
-                                                  "of": {
-                                                    "arrow": {
-                                                      "nary": {
-                                                        "of": {
-                                                          "arrows": [
+                                                "control": {
+                                                  "of":
+                                                    {
+                                                      "prod": {
+                                                        "of":
+                                                          [
                                                             {
                                                               "const": {
                                                                 "val": {
@@ -97,9 +90,9 @@
                                                               "unary": {
                                                                 "of": {
                                                                   "arrow": {
-                                                                    "nary": {
-                                                                      "of": {
-                                                                        "arrows": [
+                                                                    "prod": {
+                                                                      "of":
+                                                                        [
                                                                           {
                                                                             "const": {
                                                                               "val": {
@@ -112,8 +105,6 @@
                                                                             "identity": {}
                                                                           }
                                                                         ],
-                                                                        "name": "prod"
-                                                                      }
                                                                     }
                                                                   },
                                                                   "kind": "sineOsc",
@@ -122,18 +113,11 @@
                                                               }
                                                             }
                                                           ],
-                                                          "name": "prod"
-                                                        }
                                                       }
                                                     },
-                                                    "kind": "control",
-                                                    "name": ""
-                                                  }
                                                 }
                                               }
                                             ],
-                                            "name": "sum"
-                                          }
                                         }
                                       },
                                       "kind": "sawtoothOsc",
@@ -143,14 +127,12 @@
                                 }}}}
                                 
                               ]
-                            }
                           }
                         },
                         {
-                          "nary": {
-                            "of": {
-                              "name": "prod",
-                              "arrows": [
+                          "prod": {
+                            "of":
+                              [
                                 {
                                   "const": {
                                     "val": { "val": 1.0, "name": "osc2Mix" }
@@ -160,14 +142,13 @@
                                   "unary": {
                                     "of": {
                                       "arrow": {
-                                        "nary": {
-                                          "of": {
-                                            "arrows": [
+                                        "sum": {
+                                          "of":
+                                            [
                                               {
-                                                "nary": {
-                                                  "of": {
-                                                    "name": "prod",
-                                                    "arrows": [
+                                                "prod": {
+                                                  "of":
+                                                    [
                                                       {
                                                         "const": {
                                                           "val": {
@@ -188,16 +169,15 @@
                                                         "identity": {}
                                                       }
                                                     ]
-                                                  }
                                                 }
                                               },
                                               {
-                                                "unary": {
-                                                  "of": {
-                                                    "arrow": {
-                                                      "nary": {
-                                                        "of": {
-                                                          "arrows": [
+                                                "control": {
+                                                  "of":
+                                                    {
+                                                      "prod": {
+                                                        "of":
+                                                          [
                                                             {
                                                               "const": {
                                                                 "val": {
@@ -210,9 +190,9 @@
                                                               "unary": {
                                                                 "of": {
                                                                   "arrow": {
-                                                                    "nary": {
-                                                                      "of": {
-                                                                        "arrows": [
+                                                                    "prod": {
+                                                                      "of":
+                                                                        [
                                                                           {
                                                                             "const": {
                                                                               "val": {
@@ -225,8 +205,6 @@
                                                                             "identity": {}
                                                                           }
                                                                         ],
-                                                                        "name": "prod"
-                                                                      }
                                                                     }
                                                                   },
                                                                   "kind": "sineOsc",
@@ -235,18 +213,11 @@
                                                               }
                                                             }
                                                           ],
-                                                          "name": "prod"
-                                                        }
                                                       }
                                                     },
-                                                    "kind": "control",
-                                                    "name": ""
-                                                  }
                                                 }
                                               }
                                             ],
-                                            "name": "sum"
-                                          }
                                         }
                                       },
                                       "kind": "sineOsc",
@@ -255,14 +226,12 @@
                                   }
                                 }}}}
                               ]
-                            }
                           }
                         },
                         {
-                          "nary": {
-                            "of": {
-                              "name": "prod",
-                              "arrows": [
+                          "prod": {
+                            "of":
+                              [
                                 {
                                   "const": {
                                     "val": { "val": 0.0, "name": "osc3Mix" }
@@ -272,14 +241,13 @@
                                   "unary": {
                                     "of": {
                                       "arrow": {
-                                        "nary": {
-                                          "of": {
-                                            "arrows": [
+                                        "sum": {
+                                          "of":
+                                            [
                                               {
-                                                "nary": {
-                                                  "of": {
-                                                    "name": "prod",
-                                                    "arrows": [
+                                                "prod": {
+                                                  "of":
+                                                    [
                                                       {
                                                         "const": {
                                                           "val": {
@@ -292,16 +260,15 @@
                                                         "identity": {}
                                                       }
                                                     ]
-                                                  }
                                                 }
                                               },
                                               {
-                                                "unary": {
-                                                  "of": {
-                                                    "arrow": {
-                                                      "nary": {
-                                                        "of": {
-                                                          "arrows": [
+                                                "control": {
+                                                  "of":
+                                                    {
+                                                      "prod": {
+                                                        "of":
+                                                          [
                                                             {
                                                               "const": {
                                                                 "val": {
@@ -314,9 +281,9 @@
                                                               "unary": {
                                                                 "of": {
                                                                   "arrow": {
-                                                                    "nary": {
-                                                                      "of": {
-                                                                        "arrows": [
+                                                                    "prod": {
+                                                                      "of":
+                                                                        [
                                                                           {
                                                                             "const": {
                                                                               "val": {
@@ -329,8 +296,6 @@
                                                                             "identity": {}
                                                                           }
                                                                         ],
-                                                                        "name": "prod"
-                                                                      }
                                                                     }
                                                                   },
                                                                   "kind": "sineOsc",
@@ -339,18 +304,11 @@
                                                               }
                                                             }
                                                           ],
-                                                          "name": "prod"
-                                                        }
                                                       }
                                                     },
-                                                    "kind": "control",
-                                                    "name": ""
-                                                  }
                                                 }
                                               }
                                             ],
-                                            "name": "sum"
-                                          }
                                         }
                                       },
                                       "kind": "noiseOsc",
@@ -359,11 +317,9 @@
                                   }
                                 }}}}
                               ]
-                            }
                           }
                         }
                       ]
-                    }
                   }
                 },
                 {
@@ -379,7 +335,6 @@
                   }
                 }
               ]
-            }
           }
         },
         "resonance": {

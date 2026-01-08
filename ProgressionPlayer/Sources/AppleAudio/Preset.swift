@@ -43,7 +43,12 @@ struct PresetSyntax: Codable {
     preset.setDelayFeedback(effects.delayFeedback)
     preset.setDelayLowPassCutoff(effects.delayLowPassCutoff)
     preset.setDelayWetDryMix(effects.delayWetDryMix)
-    preset.positionLFO = Rose(amp: ArrowConst(rose.amp), leafFactor: ArrowConst(rose.leafFactor), freq: ArrowConst(rose.freq), phase: rose.phase)
+    preset.positionLFO = Rose(
+      amp: ArrowConst(value: rose.amp),
+      leafFactor: ArrowConst(value: rose.leafFactor),
+      freq: ArrowConst(value: rose.freq),
+      phase: rose.phase
+    )
     return preset
   }
 }
