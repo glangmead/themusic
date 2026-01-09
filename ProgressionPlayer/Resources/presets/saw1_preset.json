@@ -1,35 +1,8 @@
 {
   "arrow": {
-    "lowPassFilter": {
-      "specs": {
-        "cutoff": {
-          "prod": {
-            "of":
-              [
-                {
-                  "const": {
-                    "val": {
-                      "name": "cutoff",
-                      "val": 1000
-                    }
-                  }
-                },
-                {
-                  "envelope": {
-                    "specs": {
-                      "release": 0.1,
-                      "scale": 1,
-                      "name": "filterEnv",
-                      "attack": 0.3,
-                      "decay": 0.1,
-                      "sustain": 1
-                    }
-                  }
-                }
-              ]
-          }
-        },
-        "arrowToFilter": {
+    "compose": {
+      "arrows": [
+        {
           "prod": {
             "of":
               [
@@ -331,16 +304,49 @@
               ]
           }
         },
-        "resonance": {
-          "const": {
-            "val": {
-              "name": "resonance",
-              "val": 1000
+        {    
+          "lowPassFilter": {
+            "specs": {
+              "cutoff": {
+                "prod": {
+                  "of":
+                    [
+                      {
+                        "const": {
+                          "val": {
+                            "name": "cutoff",
+                            "val": 1000
+                          }
+                        }
+                      },
+                      {
+                        "envelope": {
+                          "specs": {
+                            "release": 0.1,
+                            "scale": 1,
+                            "name": "filterEnv",
+                            "attack": 0.3,
+                            "decay": 0.1,
+                            "sustain": 1
+                          }
+                        }
+                      }
+                    ]
+                }
+              },
+              "resonance": {
+                "const": {
+                  "val": {
+                    "name": "resonance",
+                    "val": 1000
+                  }
+                }
+              },
+              "name": "filter"
             }
           }
-        },
-        "name": "filter"
-      }
+        }
+      ]
     }
   },
   "name": "saw1",

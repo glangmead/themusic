@@ -176,12 +176,12 @@ final class LowPassFilter2: Arrow11 {
   private var previousTime: CoreFloat
   var cutoff: Arrow11
   var resonance: Arrow11
-  init(of input: Arrow11, cutoff: Arrow11, resonance: Arrow11) {
+  init(cutoff: Arrow11, resonance: Arrow11) {
     self.cutoff = cutoff
     self.resonance = resonance
     self.previousTime = 0
     self.previousOutput = 0
-    super.init(innerArr: input)
+    super.init()
   }
   override func of(_ t: CoreFloat) -> CoreFloat {
     let rc = 1.0 / (2 * .pi * cutoff.of(t))
@@ -252,7 +252,7 @@ enum ArrowSyntax: Codable {
       let lowerArrs = arrows.map({$0.compile()})
       var composition: Arrow11? = nil
       for lowerArr in lowerArrs {
-        lowerArr.innerArr = composition
+        lowerArr.arrow.innerArr = composition
         composition = lowerArr
       }
       return ArrowWithHandles(composition!).withMergeDictsFromArrows(lowerArrs)
@@ -288,16 +288,13 @@ enum ArrowSyntax: Codable {
       return handleArr
     
     case .lowPassFilter(let lpArrow):
-      let lowerArrow = lpArrow.arrowToFilter.compile()
       let cutoffArrow = lpArrow.cutoff.compile()
       let resonanceArrow = lpArrow.resonance.compile()
       let arr = LowPassFilter2(
-        of: lowerArrow,
         cutoff: cutoffArrow,
         resonance: resonanceArrow
       )
       let handleArr = ArrowWithHandles(arr)
-        .withMergeDictsFromArrow(lowerArrow)
         .withMergeDictsFromArrow(cutoffArrow)
         .withMergeDictsFromArrow(resonanceArrow)
       handleArr.namedLowPassFilter[lpArrow.name] = arr
@@ -336,7 +333,6 @@ struct LowPassArrowSyntax: Codable {
   let name: String
   let cutoff: ArrowSyntax
   let resonance: ArrowSyntax
-  let arrowToFilter: ArrowSyntax
 }
 
 struct ADSRSyntax: Codable {
