@@ -118,8 +118,8 @@
                   "specs": {
                    "name": "osc1Choruser",
                    "valueToChorus": "freq",
-                   "chorusCentRadius": 0,
-                   "chorusNumVoices": 1
+                   "chorusCentRadius": 5,
+                   "chorusNumVoices": 5
                   }
                  }
                 }
@@ -135,7 +135,7 @@
              {
               "const": {
                "val": {
-                "val": 1.0,
+                "val": 0.0,
                 "name": "osc2Mix"
                }
               }

@@ -203,6 +203,19 @@ final class ArrowWithHandles: Arrow11 {
   var namedConsts        = [String: [ArrowConst]]()
   var namedADSREnvelopes = [String: ADSR]()
   var namedChorusers     = [String: Choruser]()
+  var wrappedArrow: Arrow11
+  
+  init(_ wrappedArrow: Arrow11) {
+    // has an arrow
+    self.wrappedArrow = wrappedArrow
+    // does not participate in its superclass arrowness
+    super.init()
+  }
+  
+  // delegates to wrapped arrow
+  override func of(_ t: CoreFloat) -> CoreFloat {
+    wrappedArrow.of(t)
+  }
 
   func withMergeDictsFromArrow(_ arr2: ArrowWithHandles) -> ArrowWithHandles {
     namedADSREnvelopes.merge(arr2.namedADSREnvelopes) { (a, b) in return a }
@@ -239,44 +252,43 @@ enum ArrowSyntax: Codable {
   // see https://www.compilenrun.com/docs/language/swift/swift-enumerations/swift-recursive-enumerations/
   func compile() -> ArrowWithHandles {
     switch self {
-    case .compose(let arrows):
+    case .compose(let specs):
       // it seems natural to me for the chain to be listed from innermost to outermost (first-to-last)
-      let lowerArrs = arrows.map({$0.compile()})
+      let arrows = specs.map({$0.compile()})
       var composition: ArrowWithHandles? = nil
-      for lowerArr in lowerArrs {
-        lowerArr.innerArr = composition
-        // do something more with the innerArr, which is a whole-ass ArrowWithHandles
-        composition = lowerArr
+      for (i, arrow) in arrows.enumerated() {
+        arrow.wrappedArrow.innerArr = composition
+        composition = arrow
       }
-      return composition!.withMergeDictsFromArrows(lowerArrs)
+      return composition!.withMergeDictsFromArrows(arrows)
     case .osc(let oscName, let oscShape):
       let osc = BasicOscillator(shape: oscShape)
-      let arr = ArrowWithHandles(innerArr: osc)
+      let arr = ArrowWithHandles(osc)
       arr.namedBasicOscs[oscName] = osc
       return arr
     case .control(let arrow):
       let lowerArr = arrow.compile()
       let arr = ControlArrow11(innerArr: lowerArr)
-      return ArrowWithHandles(innerArr: arr).withMergeDictsFromArrow(lowerArr)
+      return ArrowWithHandles(arr).withMergeDictsFromArrow(lowerArr)
     case .identity:
-      return ArrowWithHandles(innerArr: ArrowIdentity())
+      return ArrowWithHandles(ArrowIdentity())
     case .prod(let arrows):
       let lowerArrs = arrows.map({$0.compile()})
       return ArrowWithHandles(
-        innerArr: ArrowProd(
+        ArrowProd(
           innerArrs: ContiguousArray<Arrow11>(lowerArrs)
         )).withMergeDictsFromArrows(lowerArrs)
     case .sum(let arrows):
       let lowerArrs = arrows.map({$0.compile()})
       return ArrowWithHandles(
-        innerArr: ArrowSum(
+        ArrowSum(
           innerArrs: lowerArrs
         )
       ).withMergeDictsFromArrows(lowerArrs)
 
     case .const(let namedVal):
       let arr = ArrowConst(value: namedVal.val) // separate copy, even if same name as a node elsewhere
-      let handleArr = ArrowWithHandles(innerArr: arr)
+      let handleArr = ArrowWithHandles(arr)
       handleArr.namedConsts[namedVal.name] = [arr]
       return handleArr
     
@@ -287,7 +299,7 @@ enum ArrowSyntax: Codable {
         cutoff: cutoffArrow,
         resonance: resonanceArrow
       )
-      let handleArr = ArrowWithHandles(innerArr: arr)
+      let handleArr = ArrowWithHandles(arr)
         .withMergeDictsFromArrow(cutoffArrow)
         .withMergeDictsFromArrow(resonanceArrow)
       handleArr.namedLowPassFilter[lpArrow.name] = arr
@@ -299,7 +311,7 @@ enum ArrowSyntax: Codable {
         chorusNumVoices: choruserSpecs.chorusNumVoices,
         valueToChorus: choruserSpecs.valueToChorus
       )
-      let handleArr = ArrowWithHandles(innerArr: choruser)
+      let handleArr = ArrowWithHandles(choruser)
       handleArr.namedChorusers[choruserSpecs.name] = choruser
       return handleArr
     
@@ -311,7 +323,7 @@ enum ArrowSyntax: Codable {
         releaseTime: adsr.release,
         scale: adsr.scale
       ))
-      let handleArr = ArrowWithHandles(innerArr: env.asControl())
+      let handleArr = ArrowWithHandles(env.asControl())
       handleArr.namedADSREnvelopes[adsr.name] = env
       return handleArr
     
