@@ -49,7 +49,6 @@
                                 {"choruser": {"specs": {"name": "osc1Choruser", "valueToChorus": "freq", "chorusCentRadius": 0, "chorusNumVoices": 1, "arrowToChorus": {
                                   "compose": {
                                     "arrows": [
-                                      { "identity": {} },
                                       {
                                         "sum": {
                                           "of":
@@ -139,9 +138,9 @@
                                   }
                                 },
                                 {"choruser": {"specs": {"name": "osc2Choruser", "valueToChorus": "freq", "chorusCentRadius": 0, "chorusNumVoices": 1, "arrowToChorus": {
-                                  "unary": {
-                                    "of": {
-                                      "arrow": {
+                                  "compose": {
+                                    "arrows": [
+                                      {
                                         "sum": {
                                           "of":
                                             [
@@ -220,9 +219,8 @@
                                             ],
                                         }
                                       },
-                                      "kind": "sineOsc",
-                                      "name": "osc2"
-                                    }
+                                      {"osc": {"name": "osc2", "shape": "sineOsc"}}
+                                    ]
                                   }
                                 }}}}
                               ]
