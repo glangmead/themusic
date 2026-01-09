@@ -238,7 +238,7 @@ final class ArrowWithHandles: Arrow11 {
 
 enum ArrowSyntax: Codable {
   // NOTE: cases must each have a *different associated type*, as it's branched on in the Decoding logic
-  case const(val: NamedFloat)
+  case const(name: String, val: CoreFloat)
   case identity
   indirect case lowPassFilter(specs: LowPassArrowSyntax)
   indirect case control(of: ArrowSyntax)
@@ -289,10 +289,10 @@ enum ArrowSyntax: Codable {
         )
       ).withMergeDictsFromArrows(lowerArrs)
 
-    case .const(let namedVal):
-      let arr = ArrowConst(value: namedVal.val) // separate copy, even if same name as a node elsewhere
+    case .const(let name, let val):
+      let arr = ArrowConst(value: val) // separate copy, even if same name as a node elsewhere
       let handleArr = ArrowWithHandles(arr)
-      handleArr.namedConsts[namedVal.name] = [arr]
+      handleArr.namedConsts[name] = [arr]
       return handleArr
     
     case .lowPassFilter(let lpArrow):
@@ -347,11 +347,6 @@ struct ADSRSyntax: Codable {
   let sustain: CoreFloat
   let release: CoreFloat
   let scale: CoreFloat
-}
-
-struct NamedFloat: Codable {
-  let name: String
-  let val: CoreFloat
 }
 
 struct NamedChoruser: Codable {

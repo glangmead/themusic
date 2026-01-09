@@ -28,10 +28,8 @@
             "of": [
              {
               "const": {
-               "val": {
-                "val": 1.0,
-                "name": "osc1Mix"
-               }
+               "val": 1.0,
+               "name": "osc1Mix"
               }
              },
              {
@@ -45,10 +43,8 @@
                      "of": [
                       {
                        "const": {
-                        "val": {
-                         "name": "freq",
-                         "val": 300
-                        }
+                        "name": "freq",
+                        "val": 300
                        }
                       },
                       {
@@ -64,10 +60,8 @@
                        "of": [
                         {
                          "const": {
-                          "val": {
-                           "name": "vibratoAmp",
-                           "val": 0
-                          }
+                          "name": "vibratoAmp",
+                          "val": 0
                          }
                         },
                         {
@@ -78,10 +72,8 @@
                              "of": [
                               {
                                "const": {
-                                "val": {
-                                 "val": 3,
-                                 "name": "vibratoFreq"
-                                }
+                                "val": 3,
+                                "name": "vibratoFreq"
                                }
                               },
                               {
@@ -134,10 +126,8 @@
             "of": [
              {
               "const": {
-               "val": {
-                "val": 0.0,
-                "name": "osc2Mix"
-               }
+               "val": 0.0,
+               "name": "osc2Mix"
               }
              },
              {
@@ -151,18 +141,14 @@
                      "of": [
                       {
                        "const": {
-                        "val": {
-                         "name": "freq",
-                         "val": 300
-                        }
+                        "name": "freq",
+                        "val": 300
                        }
                       },
                       {
                        "const": {
-                        "val": {
-                         "name": "osc2FreqMult",
-                         "val": 1.0
-                        }
+                        "name": "osc2FreqMult",
+                        "val": 1.0
                        }
                       },
                       {
@@ -178,10 +164,8 @@
                        "of": [
                         {
                          "const": {
-                          "val": {
-                           "name": "vibratoAmp",
-                           "val": 0
-                          }
+                          "name": "vibratoAmp",
+                          "val": 0
                          }
                         },
                         {
@@ -192,10 +176,8 @@
                              "of": [
                               {
                                "const": {
-                                "val": {
-                                 "val": 3,
-                                 "name": "vibratoFreq"
-                                }
+                                "val": 3,
+                                "name": "vibratoFreq"
                                }
                               },
                               {
@@ -248,10 +230,8 @@
             "of": [
              {
               "const": {
-               "val": {
-                "val": 0.0,
-                "name": "osc3Mix"
-               }
+               "val": 0.0,
+               "name": "osc3Mix"
               }
              },
              {
@@ -265,10 +245,8 @@
                      "of": [
                       {
                        "const": {
-                        "val": {
-                         "name": "freq",
-                         "val": 300
-                        }
+                        "name": "freq",
+                        "val": 300
                        }
                       },
                       {
@@ -284,10 +262,8 @@
                        "of": [
                         {
                          "const": {
-                          "val": {
-                           "name": "vibratoAmp",
-                           "val": 0
-                          }
+                          "name": "vibratoAmp",
+                          "val": 0
                          }
                         },
                         {
@@ -298,10 +274,8 @@
                              "of": [
                               {
                                "const": {
-                                "val": {
-                                 "val": 3,
-                                 "name": "vibratoFreq"
-                                }
+                                "val": 3,
+                                "name": "vibratoFreq"
                                }
                               },
                               {
@@ -375,10 +349,8 @@
          "of": [
           {
            "const": {
-            "val": {
-             "name": "cutoff",
-             "val": 1000
-            }
+            "name": "cutoff",
+            "val": 1000
            }
           },
           {
@@ -398,10 +370,8 @@
        },
        "resonance": {
         "const": {
-         "val": {
-          "name": "resonance",
-          "val": 1000
-         }
+         "name": "resonance",
+         "val": 1000
         }
        },
        "name": "filter"
