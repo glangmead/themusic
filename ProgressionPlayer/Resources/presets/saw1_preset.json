@@ -236,9 +236,9 @@
                                   }
                                 },
                                 {"choruser": {"specs": {"name": "osc3Choruser", "valueToChorus": "freq", "chorusCentRadius": 0, "chorusNumVoices": 1, "arrowToChorus": {
-                                  "unary": {
-                                    "of": {
-                                      "arrow": {
+                                  "compose": {
+                                    "arrows": [
+                                      {
                                         "sum": {
                                           "of":
                                             [
@@ -309,9 +309,8 @@
                                             ],
                                         }
                                       },
-                                      "kind": "noiseOsc",
-                                      "name": "osc3"
-                                    }
+                                      {"osc": {"name": "osc3", "shape": "noiseOsc"}}
+                                    ]
                                   }
                                 }}}}
                               ]
