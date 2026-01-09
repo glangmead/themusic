@@ -119,15 +119,13 @@ final class Rose: Arrow13 {
 final class Choruser: Arrow11 {
   var chorusCentRadius: Int
   var chorusNumVoices: Int
-  var arrow: ArrowWithHandles
   var valueToChorus: String
   
-  init(chorusCentRadius: Int, chorusNumVoices: Int, arrow: ArrowWithHandles, valueToChorus: String) {
+  init(chorusCentRadius: Int, chorusNumVoices: Int, valueToChorus: String) {
     self.chorusCentRadius = chorusCentRadius
     self.chorusNumVoices = chorusNumVoices
-    self.arrow = arrow
     self.valueToChorus = valueToChorus
-    super.init(innerArr: arrow)
+    super.init()
   }
   
   override func of(_ t: CoreFloat) -> CoreFloat {
@@ -135,21 +133,25 @@ final class Choruser: Arrow11 {
     if chorusNumVoices > 1 {
       var chorusedResults: CoreFloat = 0
       // get the constants of the given name (it is an array, as we have some duplication in the json)
-      if let freqArrows = arrow.namedConsts[valueToChorus] {
-        let baseFreq = freqArrows.first!.val
-        let spreadFreqs = chorusedFreqs(freq: baseFreq)
-        for freqArrow in freqArrows {
-          for freq in spreadFreqs {
-            freqArrow.val = freq
-            chorusedResults += arrow.of(t)
+      if let innerArrowWithHandles = innerArr as? ArrowWithHandles {
+        if let freqArrows = innerArrowWithHandles.namedConsts[valueToChorus] {
+          let baseFreq = freqArrows.first!.val
+          let spreadFreqs = chorusedFreqs(freq: baseFreq)
+          for freqArrow in freqArrows {
+            for freq in spreadFreqs {
+              freqArrow.val = freq
+              chorusedResults += inner(t)
+            }
+            // restore
+            freqArrow.val = baseFreq
           }
-          // restore
-          freqArrow.val = baseFreq
         }
+        return chorusedResults
+      } else {
+        return inner(t)
       }
-      return chorusedResults
     } else {
-      return arrow.of(t)
+      return inner(t)
     }
   }
   
@@ -201,17 +203,7 @@ final class ArrowWithHandles: Arrow11 {
   var namedConsts        = [String: [ArrowConst]]()
   var namedADSREnvelopes = [String: ADSR]()
   var namedChorusers     = [String: Choruser]()
-  var arrow: Arrow11
-  
-  init(_ arrow: Arrow11) {
-    self.arrow = arrow
-    super.init()
-  }
-  
-  override func of(_ t: CoreFloat) -> CoreFloat {
-    arrow.of(inner(t))
-  }
-  
+
   func withMergeDictsFromArrow(_ arr2: ArrowWithHandles) -> ArrowWithHandles {
     namedADSREnvelopes.merge(arr2.namedADSREnvelopes) { (a, b) in return a }
     namedConsts.merge(arr2.namedConsts) { (a, b) in
@@ -250,40 +242,41 @@ enum ArrowSyntax: Codable {
     case .compose(let arrows):
       // it seems natural to me for the chain to be listed from innermost to outermost (first-to-last)
       let lowerArrs = arrows.map({$0.compile()})
-      var composition: Arrow11? = nil
+      var composition: ArrowWithHandles? = nil
       for lowerArr in lowerArrs {
-        lowerArr.arrow.innerArr = composition
+        lowerArr.innerArr = composition
+        // do something more with the innerArr, which is a whole-ass ArrowWithHandles
         composition = lowerArr
       }
-      return ArrowWithHandles(composition!).withMergeDictsFromArrows(lowerArrs)
+      return composition!.withMergeDictsFromArrows(lowerArrs)
     case .osc(let oscName, let oscShape):
       let osc = BasicOscillator(shape: oscShape)
-      let arr = ArrowWithHandles(osc)
+      let arr = ArrowWithHandles(innerArr: osc)
       arr.namedBasicOscs[oscName] = osc
       return arr
     case .control(let arrow):
       let lowerArr = arrow.compile()
       let arr = ControlArrow11(innerArr: lowerArr)
-      return ArrowWithHandles(arr).withMergeDictsFromArrow(lowerArr)
+      return ArrowWithHandles(innerArr: arr).withMergeDictsFromArrow(lowerArr)
     case .identity:
-      return ArrowWithHandles(ArrowIdentity())
+      return ArrowWithHandles(innerArr: ArrowIdentity())
     case .prod(let arrows):
       let lowerArrs = arrows.map({$0.compile()})
       return ArrowWithHandles(
-        ArrowProd(
+        innerArr: ArrowProd(
           innerArrs: ContiguousArray<Arrow11>(lowerArrs)
         )).withMergeDictsFromArrows(lowerArrs)
     case .sum(let arrows):
       let lowerArrs = arrows.map({$0.compile()})
       return ArrowWithHandles(
-        ArrowSum(
+        innerArr: ArrowSum(
           innerArrs: lowerArrs
         )
       ).withMergeDictsFromArrows(lowerArrs)
 
     case .const(let namedVal):
       let arr = ArrowConst(value: namedVal.val) // separate copy, even if same name as a node elsewhere
-      let handleArr = ArrowWithHandles(arr)
+      let handleArr = ArrowWithHandles(innerArr: arr)
       handleArr.namedConsts[namedVal.name] = [arr]
       return handleArr
     
@@ -294,22 +287,19 @@ enum ArrowSyntax: Codable {
         cutoff: cutoffArrow,
         resonance: resonanceArrow
       )
-      let handleArr = ArrowWithHandles(arr)
+      let handleArr = ArrowWithHandles(innerArr: arr)
         .withMergeDictsFromArrow(cutoffArrow)
         .withMergeDictsFromArrow(resonanceArrow)
       handleArr.namedLowPassFilter[lpArrow.name] = arr
       return handleArr
       
     case .choruser(let choruserSpecs):
-      let lowerArr = choruserSpecs.arrowToChorus.compile()
       let choruser = Choruser(
         chorusCentRadius: choruserSpecs.chorusCentRadius,
         chorusNumVoices: choruserSpecs.chorusNumVoices,
-        arrow: lowerArr,
         valueToChorus: choruserSpecs.valueToChorus
       )
-      let handleArr = ArrowWithHandles(choruser)
-        .withMergeDictsFromArrow(lowerArr)
+      let handleArr = ArrowWithHandles(innerArr: choruser)
       handleArr.namedChorusers[choruserSpecs.name] = choruser
       return handleArr
     
@@ -321,7 +311,7 @@ enum ArrowSyntax: Codable {
         releaseTime: adsr.release,
         scale: adsr.scale
       ))
-      let handleArr = ArrowWithHandles(env.asControl())
+      let handleArr = ArrowWithHandles(innerArr: env.asControl())
       handleArr.namedADSREnvelopes[adsr.name] = env
       return handleArr
     
@@ -354,5 +344,4 @@ struct NamedChoruser: Codable {
   let valueToChorus: String
   let chorusCentRadius: Int
   let chorusNumVoices: Int
-  let arrowToChorus: ArrowSyntax
 }
