@@ -256,8 +256,11 @@ enum ArrowSyntax: Codable {
       // it seems natural to me for the chain to be listed from innermost to outermost (first-to-last)
       let arrows = specs.map({$0.compile()})
       var composition: ArrowWithHandles? = nil
-      for (i, arrow) in arrows.enumerated() {
+      for arrow in arrows {
         arrow.wrappedArrow.innerArr = composition
+        if composition != nil {
+          let _ = arrow.withMergeDictsFromArrow(composition!) // provide each step of composition with all the handles
+        }
         composition = arrow
       }
       return composition!.withMergeDictsFromArrows(arrows)
