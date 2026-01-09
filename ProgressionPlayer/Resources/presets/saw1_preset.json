@@ -54,46 +54,51 @@
                     }
                    },
                    {
-                    "control": {
-                     "of": {
-                      "prod": {
-                       "of": [
-                        {
-                         "const": {
-                          "name": "vibratoAmp",
-                          "val": 0
-                         }
-                        },
-                        {
-                         "compose": {
-                          "arrows": [
-                           {
-                            "prod": {
-                             "of": [
-                              {
-                               "const": {
-                                "val": 3,
-                                "name": "vibratoFreq"
+                    "compose": {
+                     "arrows": [
+                      {
+                       "prod": {
+                        "of": [
+                         {
+                          "const": {
+                           "name": "vibratoAmp",
+                           "val": 0
+                          }
+                         },
+                         {
+                          "compose": {
+                           "arrows": [
+                            {
+                             "prod": {
+                              "of": [
+                               {
+                                "const": {
+                                 "val": 3,
+                                 "name": "vibratoFreq"
+                                }
+                               },
+                               {
+                                "identity": {}
                                }
-                              },
-                              {
-                               "identity": {}
-                              }
-                             ]
+                              ]
+                             }
+                            },
+                            {
+                             "osc": {
+                              "name": "vibratoOsc",
+                              "shape": "sineOsc"
+                             }
                             }
-                           },
-                           {
-                            "osc": {
-                             "name": "vibratoOsc",
-                             "shape": "sineOsc"
-                            }
-                           }
-                          ]
+                           ]
+                          }
                          }
-                        }
-                       ]
+                        ]
+                       }
+                      },
+                      {
+                       "control": {}
                       }
-                     }
+                     ]
                     }
                    }
                   ]
@@ -158,46 +163,51 @@
                     }
                    },
                    {
-                    "control": {
-                     "of": {
-                      "prod": {
-                       "of": [
-                        {
-                         "const": {
-                          "name": "vibratoAmp",
-                          "val": 0
-                         }
-                        },
-                        {
-                         "compose": {
-                          "arrows": [
-                           {
-                            "prod": {
-                             "of": [
-                              {
-                               "const": {
-                                "val": 3,
-                                "name": "vibratoFreq"
+                    "compose": {
+                     "arrows": [
+                      {
+                       "prod": {
+                        "of": [
+                         {
+                          "const": {
+                           "name": "vibratoAmp",
+                           "val": 0
+                          }
+                         },
+                         {
+                          "compose": {
+                           "arrows": [
+                            {
+                             "prod": {
+                              "of": [
+                               {
+                                "const": {
+                                 "val": 3,
+                                 "name": "vibratoFreq"
+                                }
+                               },
+                               {
+                                "identity": {}
                                }
-                              },
-                              {
-                               "identity": {}
-                              }
-                             ]
+                              ]
+                             }
+                            },
+                            {
+                             "osc": {
+                              "name": "vibratoOsc",
+                              "shape": "sineOsc"
+                             }
                             }
-                           },
-                           {
-                            "osc": {
-                             "name": "vibratoOsc",
-                             "shape": "sineOsc"
-                            }
-                           }
-                          ]
+                           ]
+                          }
                          }
-                        }
-                       ]
+                        ]
+                       }
+                      },
+                      {
+                       "control": {}
                       }
-                     }
+                     ]
                     }
                    }
                   ]
@@ -256,46 +266,51 @@
                     }
                    },
                    {
-                    "control": {
-                     "of": {
-                      "prod": {
-                       "of": [
-                        {
-                         "const": {
-                          "name": "vibratoAmp",
-                          "val": 0
-                         }
-                        },
-                        {
-                         "compose": {
-                          "arrows": [
-                           {
-                            "prod": {
-                             "of": [
-                              {
-                               "const": {
-                                "val": 3,
-                                "name": "vibratoFreq"
+                    "compose": {
+                     "arrows": [
+                      {
+                       "prod": {
+                        "of": [
+                         {
+                          "const": {
+                           "name": "vibratoAmp",
+                           "val": 0
+                          }
+                         },
+                         {
+                          "compose": {
+                           "arrows": [
+                            {
+                             "prod": {
+                              "of": [
+                               {
+                                "const": {
+                                 "val": 3,
+                                 "name": "vibratoFreq"
+                                }
+                               },
+                               {
+                                "identity": {}
                                }
-                              },
-                              {
-                               "identity": {}
-                              }
-                             ]
+                              ]
+                             }
+                            },
+                            {
+                             "osc": {
+                              "name": "vibratoOsc",
+                              "shape": "sineOsc"
+                             }
                             }
-                           },
-                           {
-                            "osc": {
-                             "name": "vibratoOsc",
-                             "shape": "sineOsc"
-                            }
-                           }
-                          ]
+                           ]
+                          }
                          }
-                        }
-                       ]
+                        ]
+                       }
+                      },
+                      {
+                       "control": {}
                       }
-                     }
+                     ]
                     }
                    }
                   ]

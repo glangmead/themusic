@@ -240,14 +240,14 @@ enum ArrowSyntax: Codable {
   // NOTE: cases must each have a *different associated type*, as it's branched on in the Decoding logic
   case const(name: String, val: CoreFloat)
   case identity
+  case control
   indirect case lowPassFilter(specs: LowPassArrowSyntax)
-  indirect case control(of: ArrowSyntax)
   indirect case prod(of: [ArrowSyntax])
   indirect case compose(arrows: [ArrowSyntax])
   indirect case sum(of: [ArrowSyntax])
   indirect case envelope(specs: ADSRSyntax)
-  indirect case choruser(specs: NamedChoruser)
-  indirect case osc(name: String, shape: BasicOscillator.OscShape)
+  case choruser(specs: NamedChoruser)
+  case osc(name: String, shape: BasicOscillator.OscShape)
   
   // see https://www.compilenrun.com/docs/language/swift/swift-enumerations/swift-recursive-enumerations/
   func compile() -> ArrowWithHandles {
@@ -269,10 +269,8 @@ enum ArrowSyntax: Codable {
       let arr = ArrowWithHandles(osc)
       arr.namedBasicOscs[oscName] = osc
       return arr
-    case .control(let arrow):
-      let lowerArr = arrow.compile()
-      let arr = ControlArrow11(innerArr: lowerArr)
-      return ArrowWithHandles(arr).withMergeDictsFromArrow(lowerArr)
+    case .control:
+      return ArrowWithHandles(ControlArrow11())
     case .identity:
       return ArrowWithHandles(ArrowIdentity())
     case .prod(let arrows):
@@ -329,7 +327,7 @@ enum ArrowSyntax: Codable {
       let handleArr = ArrowWithHandles(env.asControl())
       handleArr.namedADSREnvelopes[adsr.name] = env
       return handleArr
-    
+
     }
   }
 }
