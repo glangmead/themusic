@@ -87,9 +87,9 @@
                                                               }
                                                             },
                                                             {
-                                                              "unary": {
-                                                                "of": {
-                                                                  "arrow": {
+                                                              "compose": {
+                                                                "arrows": [
+                                                                  {
                                                                     "prod": {
                                                                       "of":
                                                                         [
@@ -107,9 +107,8 @@
                                                                         ],
                                                                     }
                                                                   },
-                                                                  "kind": "sineOsc",
-                                                                  "name": "vibratoOsc"
-                                                                }
+                                                                  {"osc": {"name": "vibratoOsc", "shape": "sineOsc"}}
+                                                                ]
                                                               }
                                                             }
                                                           ],
@@ -186,9 +185,9 @@
                                                               }
                                                             },
                                                             {
-                                                              "unary": {
-                                                                "of": {
-                                                                  "arrow": {
+                                                              "compose": {
+                                                                "arrows": [
+                                                                  {
                                                                     "prod": {
                                                                       "of":
                                                                         [
@@ -206,9 +205,8 @@
                                                                         ],
                                                                     }
                                                                   },
-                                                                  "kind": "sineOsc",
-                                                                  "name": "vibratoOsc"
-                                                                }
+                                                                  {"osc": {"name": "vibratoOsc", "shape": "sineOsc"}}
+                                                                ]
                                                               }
                                                             }
                                                           ],
@@ -276,9 +274,9 @@
                                                               }
                                                             },
                                                             {
-                                                              "unary": {
-                                                                "of": {
-                                                                  "arrow": {
+                                                              "compose": {
+                                                                "arrows": [
+                                                                  {
                                                                     "prod": {
                                                                       "of":
                                                                         [
@@ -296,9 +294,8 @@
                                                                         ],
                                                                     }
                                                                   },
-                                                                  "kind": "sineOsc",
-                                                                  "name": "vibratoOsc"
-                                                                }
+                                                                  {"osc": {"name": "vibratoOsc", "shape": "sineOsc"}}
+                                                                ]
                                                               }
                                                             }
                                                           ],

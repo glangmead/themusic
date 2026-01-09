@@ -236,7 +236,6 @@ enum ArrowSyntax: Codable {
   case const(val: NamedFloat)
   case identity
   indirect case lowPassFilter(specs: LowPassArrowSyntax)
-  indirect case unary(of: NamedArrowSyntax)
   indirect case control(of: ArrowSyntax)
   indirect case prod(of: [ArrowSyntax])
   indirect case compose(arrows: [ArrowSyntax])
@@ -266,18 +265,6 @@ enum ArrowSyntax: Codable {
       let lowerArr = arrow.compile()
       let arr = ControlArrow11(innerArr: lowerArr)
       return ArrowWithHandles(arr).withMergeDictsFromArrow(lowerArr)
-
-    case .unary(let namedArrow):
-      let lowerArr = namedArrow.arrow.compile()
-      if BasicOscillator.OscShape.allCases.map({$0.rawValue}).contains(namedArrow.kind) {
-        let osc = BasicOscillator(shape: BasicOscillator.OscShape(rawValue: namedArrow.kind)!)
-        osc.innerArr = lowerArr
-        let handleArr = ArrowWithHandles(osc)
-        handleArr.namedBasicOscs[namedArrow.name] = osc
-        return handleArr.withMergeDictsFromArrow(lowerArr)
-      } else {
-        return namedArrow.arrow.compile()
-      }
     case .identity:
       return ArrowWithHandles(ArrowIdentity())
     case .prod(let arrows):
@@ -361,20 +348,9 @@ struct ADSRSyntax: Codable {
   let scale: CoreFloat
 }
 
-struct NamedArrowSyntax: Codable {
-  let name: String
-  let kind: String
-  let arrow: ArrowSyntax
-}
-
 struct NamedFloat: Codable {
   let name: String
   let val: CoreFloat
-}
-
-struct NamedBasicOscillatorShape: Codable {
-  let name: String
-  let osc: BasicOscillator.OscShape
 }
 
 struct NamedChoruser: Codable {
