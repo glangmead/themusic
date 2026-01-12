@@ -33,6 +33,7 @@ class ADSR: Arrow11, NoteHandler {
   var attackEnv: PiecewiseFunc<CoreFloat> = PiecewiseFunc<CoreFloat>(ifuncs: [])
   var decayEnv: PiecewiseFunc<CoreFloat> = PiecewiseFunc<CoreFloat>(ifuncs: [])
   var state: EnvelopeState = .closed
+  var previousValue: CoreFloat = 0
   
   init(envelope e: EnvelopeData) {
     self.env = e
@@ -41,27 +42,30 @@ class ADSR: Arrow11, NoteHandler {
   }
   
   override func of(_ ime: CoreFloat) -> CoreFloat {
+    var val: CoreFloat = 0
     switch state {
     case .closed:
-      return 0
+      val = 0
     case .attack:
-      return attackEnv.val(CoreFloat(Date.now.timeIntervalSince1970) - timeOrigin)
+      val = attackEnv.val(CoreFloat(Date.now.timeIntervalSince1970) - timeOrigin)
     case .decay:
       let time = CoreFloat(Date.now.timeIntervalSince1970) - timeOrigin
       if time > env.decayTime {
         state = .closed
-        return 0
+        val = 0
       } else {
-        return decayEnv.val(time)
+        val = decayEnv.val(time)
       }
     }
+    previousValue = val
+    return val
   }
   
   func setFunctionsFromEnvelopeSpecs() {
     attackEnv = PiecewiseFunc<CoreFloat>(ifuncs: [
       IntervalFunc<CoreFloat>(
         interval: Interval<CoreFloat>(start: 0, end: self.env.attackTime),
-        f: { self.env.scale * $0 / self.env.attackTime }
+        f: { self.previousValue + ((self.env.scale - self.previousValue) * $0 / self.env.attackTime) }
       ),
       IntervalFunc<CoreFloat>(
         interval: Interval<CoreFloat>(start: self.env.attackTime, end: self.env.attackTime + self.env.decayTime),
@@ -75,7 +79,7 @@ class ADSR: Arrow11, NoteHandler {
     decayEnv = PiecewiseFunc<CoreFloat>(ifuncs: [
       IntervalFunc<CoreFloat>(
         interval: Interval<CoreFloat>(start: 0, end: self.env.releaseTime),
-        f: {self.env.scale * ($0 * -1.0 * (self.env.sustainLevel / self.env.releaseTime) + self.env.sustainLevel)})
+        f: {self.previousValue * ($0 * -1.0 * (self.env.sustainLevel / self.env.releaseTime) + self.env.sustainLevel)})
     ])
   }
   

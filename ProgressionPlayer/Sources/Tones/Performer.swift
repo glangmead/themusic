@@ -86,10 +86,10 @@ final class PoolVoice: Arrow11, NoteHandler {
   }
   
   func noteOn(_ noteVel: MidiNote) {
-    print(" ON: trying \(noteVel.note)")
+    //print(" ON: trying \(noteVel.note)")
     // case 1: this note is being played by a voice already: send noteOff then noteOn to re-up it
     if let voiceIdx = noteToVoiceIdx[noteVel.note] {
-      print(" ON: restarting \(noteVel.note)")
+      //print(" ON: restarting \(noteVel.note)")
       //voices[voiceIdx].noteOff(noteVel)
       voices[voiceIdx].noteOn(noteVel)
     // case 2: assign a fresh voice to the note
@@ -101,7 +101,7 @@ final class PoolVoice: Arrow11, NoteHandler {
   func noteOff(_ noteVel: MidiNote) {
     //print("OFF: trying \(noteVel.note)")
     if let voiceIdx = noteToVoiceIdx[noteVel.note] {
-      print("OFF: note \(noteVel.note) releasing voice \(voiceIdx)")
+      //print("OFF: note \(noteVel.note) releasing voice \(voiceIdx)")
       voices[voiceIdx].noteOff(noteVel)
       noteOnnedVoiceIdxs.remove(voiceIdx)
       availableVoiceIdxs.insert(voiceIdx)

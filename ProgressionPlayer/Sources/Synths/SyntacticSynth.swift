@@ -244,15 +244,19 @@ class SyntacticSynth: EngineAndVoicePool {
     voicePool = PoolVoice(voices: tones.map { EnvelopeHandlePlayer(arrow: $0) })
     
     // read from tones[0] to see what keys we must support getting/setting
-    ampAttack = tones[0].namedADSREnvelopes["ampEnv"]!.env.attackTime
-    ampDecay = tones[0].namedADSREnvelopes["ampEnv"]!.env.decayTime
-    ampSustain = tones[0].namedADSREnvelopes["ampEnv"]!.env.sustainLevel
-    ampRelease = tones[0].namedADSREnvelopes["ampEnv"]!.env.releaseTime
+    if tones[0].namedADSREnvelopes["ampEnv"] != nil {
+      ampAttack = tones[0].namedADSREnvelopes["ampEnv"]!.env.attackTime
+      ampDecay = tones[0].namedADSREnvelopes["ampEnv"]!.env.decayTime
+      ampSustain = tones[0].namedADSREnvelopes["ampEnv"]!.env.sustainLevel
+      ampRelease = tones[0].namedADSREnvelopes["ampEnv"]!.env.releaseTime
+    }
 
-    filterAttack = tones[0].namedADSREnvelopes["filterEnv"]!.env.attackTime
-    filterDecay = tones[0].namedADSREnvelopes["filterEnv"]!.env.decayTime
-    filterSustain = tones[0].namedADSREnvelopes["filterEnv"]!.env.sustainLevel
-    filterRelease = tones[0].namedADSREnvelopes["filterEnv"]!.env.releaseTime
+    if tones[0].namedADSREnvelopes["filterEnv"] != nil {
+      filterAttack = tones[0].namedADSREnvelopes["filterEnv"]!.env.attackTime
+      filterDecay = tones[0].namedADSREnvelopes["filterEnv"]!.env.decayTime
+      filterSustain = tones[0].namedADSREnvelopes["filterEnv"]!.env.sustainLevel
+      filterRelease = tones[0].namedADSREnvelopes["filterEnv"]!.env.releaseTime
+    }
     
     filterCutoff = tones[0].namedConsts["cutoff"]!.first!.val
     filterResonance = tones[0].namedConsts["resonance"]!.first!.val

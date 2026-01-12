@@ -104,6 +104,7 @@ struct TheoryView: View {
       .onAppear(perform: {isFocused = true})
       .onKeyPress(phases: [.up, .down], action: playKey)
     }
+    .onChange(of: isShowingSynth, { isFocused = !isShowingSynth})
     .onAppear {
       if seq == nil {
         seq = Sequencer(synth: synth, numTracks: 2)
@@ -118,13 +119,13 @@ struct TheoryView: View {
     let charToMidiNote = [
       "a": 57, "w": 58, "s": 59, "d": 60, "r": 61, "f": 62, "t": 63, "g": 64, "h": 65, "u": 66, "j": 67, "i": 68, "k": 69, "o": 70, "l": 71, ";": 72
     ]
-    print("""
-      New key event:
-      Key: \(keyPress.characters)
-      Modifiers: \(keyPress.modifiers)
-      Phase: \(keyPress.phase)
-      Debug description: \(keyPress.debugDescription)
-  """)
+    //print("""
+    //  New key event:
+    //  Key: \(keyPress.characters)
+    //  Modifiers: \(keyPress.modifiers)
+    //  Phase: \(keyPress.phase)
+    //  Debug description: \(keyPress.debugDescription)
+    //""")
     if let noteValue = charToMidiNote[keyPress.characters], keyPress.modifiers.rawValue == 0 {
       switch keyPress.phase {
       case .down:
