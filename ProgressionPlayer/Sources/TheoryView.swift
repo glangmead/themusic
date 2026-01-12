@@ -21,6 +21,8 @@ struct TheoryView: View {
   
   @State private var engineOn: Bool = true
   
+  @FocusState private var isFocused: Bool
+  
   var keyChords: [Chord] {
     get {
       key.chords.filter { chord in
@@ -97,6 +99,10 @@ struct TheoryView: View {
         }
         .navigationTitle("⌘Scape")
       }
+      .focusable()
+      .focused($isFocused)
+      .onAppear(perform: {isFocused = true})
+      .onKeyPress(phases: [.up, .down], action: playKey)
     }
     .onAppear {
       if seq == nil {
@@ -107,6 +113,32 @@ struct TheoryView: View {
       SyntacticSynthView(synth: synth)
     }
   }
+
+  func playKey(keyPress: KeyPress) -> KeyPress.Result {
+    let charToMidiNote = [
+      "a": 57, "w": 58, "s": 59, "d": 60, "r": 61, "f": 62, "t": 63, "g": 64, "h": 65, "u": 66, "j": 67, "i": 68, "k": 69, "o": 70, "l": 71, ";": 72
+    ]
+    print("""
+      New key event:
+      Key: \(keyPress.characters)
+      Modifiers: \(keyPress.modifiers)
+      Phase: \(keyPress.phase)
+      Debug description: \(keyPress.debugDescription)
+  """)
+    if let noteValue = charToMidiNote[keyPress.characters], keyPress.modifiers.rawValue == 0 {
+      switch keyPress.phase {
+      case .down:
+        synth.voicePool?.noteOn(MidiNote(note: UInt8(noteValue), velocity: 100))
+      case .up:
+        synth.voicePool?.noteOff(MidiNote(note: UInt8(noteValue), velocity: 100))
+      default:
+        ()
+      }
+      return .handled
+    }
+    return .ignored
+  }
+  
 }
 
 #Preview {
