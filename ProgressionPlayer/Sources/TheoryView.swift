@@ -103,6 +103,7 @@ struct TheoryView: View {
       .focused($isFocused)
       .onAppear(perform: {isFocused = true})
       .onKeyPress(phases: [.up, .down], action: playKey)
+      Spacer()
     }
     .onChange(of: isShowingSynth, { isFocused = !isShowingSynth})
     .onAppear {
@@ -116,7 +117,7 @@ struct TheoryView: View {
   }
 
   func playKey(keyPress: KeyPress) -> KeyPress.Result {
-    let charToMidiNote = [
+    let charToMidiNote:[String:Int] = [
       "a": 57, "w": 58, "s": 59, "d": 60, "r": 61, "f": 62, "t": 63, "g": 64, "h": 65, "u": 66, "j": 67, "i": 68, "k": 69, "o": 70, "l": 71, ";": 72
     ]
     //print("""

@@ -104,33 +104,33 @@ class Sequencer {
     let seqTrack = avTracks[0]
     // AVMusicTimeStamp: a fractional number of beats
     for (i, note) in chord.enumerated() {
+      seqTrack.addEvent(
+        AVMIDINoteEvent(
+          channel: 0,
+          key: UInt32(note),
+          velocity: 100,
+          duration: 8
+        ),
+        at: avSeq.currentPositionInBeats + 1
+      )
 //      seqTrack.addEvent(
 //        AVMIDINoteEvent(
 //          channel: 0,
 //          key: UInt32(note),
 //          velocity: 100,
-//          duration: 8
+//          duration: 4
 //        ),
-//        at: avSeq.currentPositionInBeats + 1
+//        at: avSeq.currentPositionInBeats + 1 + Double(i)
 //      )
-      seqTrack.addEvent(
-        AVMIDINoteEvent(
-          channel: 0,
-          key: UInt32(note),
-          velocity: 100,
-          duration: 4
-        ),
-        at: avSeq.currentPositionInBeats + 1 + Double(i)
-      )
-      seqTrack.addEvent(
-        AVMIDINoteEvent(
-          channel: 0,
-          key: UInt32(note),
-          velocity: 100,
-          duration: 4
-        ),
-        at: avSeq.currentPositionInBeats + 1 + Double(i + chord.count)
-      )
+//      seqTrack.addEvent(
+//        AVMIDINoteEvent(
+//          channel: 0,
+//          key: UInt32(note),
+//          velocity: 100,
+//          duration: 4
+//        ),
+//        at: avSeq.currentPositionInBeats + 1 + Double(i + chord.count)
+//      )
     }
   }
 }
