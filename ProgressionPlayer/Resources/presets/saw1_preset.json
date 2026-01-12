@@ -1,399 +1,131 @@
 {
- "name": "saw1",
- "rose": {
-  "freq": 0.5,
-  "leafFactor": 3,
-  "phase": 3.14,
-  "amp": 4
- },
- "effects": {
-  "reverbPreset": 1,
-  "delayTime": 0,
-  "delayLowPassCutoff": 100000,
-  "delayFeedback": 0,
-  "reverbWetDryMix": 50,
-  "delayWetDryMix": 0
- },
- "arrow": {
-  "compose": {
-   "arrows": [
+ "name"   : "saw1",
+ "rose"   : {"freq": 0.5, "leafFactor": 3, "phase": 3.14, "amp": 4},
+ "effects": {"reverbPreset": 1, "delayTime": 0, "delayLowPassCutoff": 100000, "delayFeedback": 0, "reverbWetDryMix": 50, "delayWetDryMix": 0},
+ "arrow"  : {
+  "compose": { "arrows": [
     {
-     "prod": {
-      "of": [
+     "prod": { "of": [
        {
-        "sum": {
-         "of": [
+        "sum": { "of": [
           {
-           "prod": {
-            "of": [
-             {
-              "const": {
-               "val": 1.0,
-               "name": "osc1Mix"
-              }
-             },
-             {
-              "compose": {
-               "arrows": [
+           "prod": { "of": [
+             { "const": {"val": 1.0, "name": "osc1Mix"} },
+             { 
+              "compose": { "arrows": [
                 {
-                 "sum": {
-                  "of": [
+                 "sum": { "of": [
+                   { "prod": { "of": [ { "const": {"name": "freq", "val": 300} }, {"identity": {}} ] } },
                    {
-                    "prod": {
-                     "of": [
+                    "compose": { "arrows": [
                       {
-                       "const": {
-                        "name": "freq",
-                        "val": 300
-                       }
+                       "prod": { "of": [
+                         { "const": {"name": "vibratoAmp", "val": 0} },
+                         { "compose": { "arrows": [
+                            { "prod": { "of": [ { "const": {"val": 3, "name": "vibratoFreq"} }, {"identity": {}} ] } },
+                            { "osc": {"name": "vibratoOsc", "shape": "sineOsc"} }
+                         ]}}
+                       ]}
                       },
-                      {
-                       "identity": {}
-                      }
-                     ]
-                    }
-                   },
-                   {
-                    "compose": {
-                     "arrows": [
-                      {
-                       "prod": {
-                        "of": [
-                         {
-                          "const": {
-                           "name": "vibratoAmp",
-                           "val": 0
-                          }
-                         },
-                         {
-                          "compose": {
-                           "arrows": [
-                            {
-                             "prod": {
-                              "of": [
-                               {
-                                "const": {
-                                 "val": 3,
-                                 "name": "vibratoFreq"
-                                }
-                               },
-                               {
-                                "identity": {}
-                               }
-                              ]
-                             }
-                            },
-                            {
-                             "osc": {
-                              "name": "vibratoOsc",
-                              "shape": "sineOsc"
-                             }
-                            }
-                           ]
-                          }
-                         }
-                        ]
-                       }
-                      },
-                      {
-                       "control": {}
-                      }
-                     ]
-                    }
+                      {"control": {}}
+                    ]}
                    }
-                  ]
-                 }
+                 ]}
                 },
-                {
-                 "osc": {
-                  "name": "osc1",
-                  "shape": "sawtoothOsc"
-                 }
-                },
-                {
-                 "choruser": {
-                  "specs": {
-                   "name": "osc1Choruser",
-                   "valueToChorus": "freq",
-                   "chorusCentRadius": 5,
-                   "chorusNumVoices": 5
-                  }
-                 }
-                }
-               ]
-              }
-             }
-            ]
-           }
+                { "osc": {"name": "osc1", "shape": "sawtoothOsc"} },
+                { "choruser": { "specs": {"name": "osc1Choruser", "valueToChorus": "freq", "chorusCentRadius": 5, "chorusNumVoices": 5} } }
+              ]}}
+           ]}
           },
           {
-           "prod": {
-            "of": [
+           "prod": { "of": [
+             { "const": {"val": 0.0, "name": "osc2Mix"} },
              {
-              "const": {
-               "val": 0.0,
-               "name": "osc2Mix"
-              }
-             },
-             {
-              "compose": {
-               "arrows": [
+              "compose": { "arrows": [
                 {
-                 "sum": {
-                  "of": [
-                   {
-                    "prod": {
-                     "of": [
-                      {
-                       "const": {
-                        "name": "freq",
-                        "val": 300
-                       }
-                      },
-                      {
-                       "const": {
-                        "name": "osc2FreqMult",
-                        "val": 1.0
-                       }
-                      },
-                      {
-                       "identity": {}
-                      }
-                     ]
-                    }
+                 "sum": { "of": [
+                   { 
+                    "prod": { "of": [ 
+                     { "const": {"name": "freq", "val": 300} }, 
+                     { "const": {"name": "osc2FreqMult", "val": 1.0} }, {"identity": {}} 
+                    ]}
                    },
                    {
-                    "compose": {
-                     "arrows": [
+                    "compose": { "arrows": [
                       {
-                       "prod": {
-                        "of": [
+                       "prod": { "of": [
+                         { "const": {"name": "vibratoAmp", "val": 0} },
                          {
-                          "const": {
-                           "name": "vibratoAmp",
-                           "val": 0
-                          }
-                         },
-                         {
-                          "compose": {
-                           "arrows": [
-                            {
-                             "prod": {
-                              "of": [
-                               {
-                                "const": {
-                                 "val": 3,
-                                 "name": "vibratoFreq"
-                                }
-                               },
-                               {
-                                "identity": {}
-                               }
-                              ]
-                             }
-                            },
-                            {
-                             "osc": {
-                              "name": "vibratoOsc",
-                              "shape": "sineOsc"
-                             }
-                            }
-                           ]
-                          }
-                         }
-                        ]
+                          "compose": { "arrows": [
+                            { "prod": { "of": [ { "const": {"val": 3, "name": "vibratoFreq"} }, {"identity": {}} ] } },
+                            { "osc": {"name": "vibratoOsc", "shape": "sineOsc"} }
+                          ]}
+                        }]
                        }
                       },
-                      {
-                       "control": {}
-                      }
-                     ]
-                    }
+                      {"control": {}}
+                    ]}
                    }
-                  ]
-                 }
+                 ]}
                 },
-                {
-                 "osc": {
-                  "name": "osc2",
-                  "shape": "sineOsc"
-                 }
-                },
-                {
-                 "choruser": {
-                  "specs": {
-                   "name": "osc2Choruser",
-                   "valueToChorus": "freq",
-                   "chorusCentRadius": 0,
-                   "chorusNumVoices": 1
-                  }
-                 }
-                }
-               ]
-              }
+                { "osc": {"name": "osc2", "shape": "sineOsc"} },
+                { "choruser": { "specs": {"name": "osc2Choruser", "valueToChorus": "freq", "chorusCentRadius": 0, "chorusNumVoices": 1} } }
+              ]}
              }
-            ]
-           }
+           ]}
           },
           {
-           "prod": {
-            "of": [
+           "prod": { "of": [
+             { "const": {"val": 0.0, "name": "osc3Mix"} },
              {
-              "const": {
-               "val": 0.0,
-               "name": "osc3Mix"
-              }
-             },
-             {
-              "compose": {
-               "arrows": [
+              "compose": { "arrows": [
                 {
-                 "sum": {
-                  "of": [
+                 "sum": { "of": [
+                   { "prod": { "of": [ { "const": {"name": "freq", "val": 300} }, {"identity": {}} ] } },
                    {
-                    "prod": {
-                     "of": [
+                    "compose": { "arrows": [
                       {
-                       "const": {
-                        "name": "freq",
-                        "val": 300
-                       }
-                      },
-                      {
-                       "identity": {}
-                      }
-                     ]
-                    }
-                   },
-                   {
-                    "compose": {
-                     "arrows": [
-                      {
-                       "prod": {
-                        "of": [
+                       "prod": { "of": [
+                         { "const": {"name": "vibratoAmp", "val": 0} },
                          {
-                          "const": {
-                           "name": "vibratoAmp",
-                           "val": 0
-                          }
-                         },
-                         {
-                          "compose": {
-                           "arrows": [
-                            {
-                             "prod": {
-                              "of": [
-                               {
-                                "const": {
-                                 "val": 3,
-                                 "name": "vibratoFreq"
-                                }
-                               },
-                               {
-                                "identity": {}
-                               }
-                              ]
-                             }
-                            },
-                            {
-                             "osc": {
-                              "name": "vibratoOsc",
-                              "shape": "sineOsc"
-                             }
-                            }
-                           ]
-                          }
+                          "compose": { "arrows": [
+                            { "prod": { "of": [ { "const": {"val": 3, "name": "vibratoFreq"} }, {"identity": {}} ] } },
+                            { "osc": {"name": "vibratoOsc", "shape": "sineOsc"} }
+                          ]}
                          }
-                        ]
-                       }
+                       ]}
                       },
-                      {
-                       "control": {}
-                      }
-                     ]
-                    }
+                      {"control": {}}
+                    ]}
                    }
-                  ]
-                 }
+                 ]}
                 },
-                {
-                 "osc": {
-                  "name": "osc3",
-                  "shape": "noiseOsc"
-                 }
-                },
-                {
-                 "choruser": {
-                  "specs": {
-                   "name": "osc3Choruser",
-                   "valueToChorus": "freq",
-                   "chorusCentRadius": 0,
-                   "chorusNumVoices": 1
-                  }
-                 }
-                }
+                { "osc": {"name": "osc3", "shape": "noiseOsc"} },
+                { "choruser": { "specs": {"name": "osc3Choruser", "valueToChorus": "freq", "chorusCentRadius": 0, "chorusNumVoices": 1} } }
                ]
               }
              }
-            ]
-           }
+           ]}
           }
-         ]
-        }
+        ]}
        },
-       {
-        "envelope": {
-         "specs": {
-          "decay": 0.1,
-          "sustain": 1,
-          "attack": 0.01,
-          "name": "ampEnv",
-          "release": 0.1,
-          "scale": 1
-         }
-        }
-       }
-      ]
-     }
+       { "envelope": { "specs": {"decay": 0.1, "sustain": 1, "attack": 0.01, "name": "ampEnv", "release": 0.1, "scale": 1} } }
+      ]}
     },
     {
      "lowPassFilter": {
       "specs": {
-       "cutoff": {
-        "prod": {
-         "of": [
-          {
-           "const": {
-            "name": "cutoff",
-            "val": 1000
-           }
-          },
-          {
-           "envelope": {
-            "specs": {
-             "release": 0.1,
-             "scale": 1,
-             "name": "filterEnv",
-             "attack": 0.3,
-             "decay": 0.1,
-             "sustain": 1
-            }
-           }
-          }
-         ]
-        }
+       "cutoff"   : {
+        "prod": { "of": [
+          { "const": {"name": "cutoff", "val": 1000} },
+          { "envelope": { "specs": {"release": 0.1, "scale": 1, "name": "filterEnv", "attack": 0.3, "decay": 0.1, "sustain": 1} } }
+         ]}
        },
-       "resonance": {
-        "const": {
-         "name": "resonance",
-         "val": 1000
-        }
-       },
-       "name": "filter"
+       "resonance": { "const": {"name": "resonance", "val": 1000} },
+       "name"     : "filter"
       }
      }
-    }
-   ]
+   }]
   }
  }
 }
