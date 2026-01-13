@@ -55,6 +55,7 @@ final class PoolVoice: Arrow11, NoteHandler {
   // the voices, their count, and their sum arrow
   private let voices: [Arrow11 & NoteHandler]
   private let voiceCount: Int
+  var globalOffset: Int = 0
   
   // treating voices as a pool of resources
   private var noteOnnedVoiceIdxs: Set<Int>
@@ -85,29 +86,44 @@ final class PoolVoice: Arrow11, NoteHandler {
     return nil
   }
   
-  func noteOn(_ noteVel: MidiNote) {
+  // we use noteVelIn for the bookkeeping, but we apply the offset when we call noteOn/noteOff on the voice inside
+  func noteOn(_ noteVelIn: MidiNote) {
     //print(" ON: trying \(noteVel.note)")
+    let noteVel = MidiNote(note: applyOffset(note: noteVelIn.note), velocity: noteVelIn.velocity)
     // case 1: this note is being played by a voice already: send noteOff then noteOn to re-up it
-    if let voiceIdx = noteToVoiceIdx[noteVel.note] {
+    if let voiceIdx = noteToVoiceIdx[noteVelIn.note] {
       //print(" ON: restarting \(noteVel.note)")
       //voices[voiceIdx].noteOff(noteVel)
       voices[voiceIdx].noteOn(noteVel)
     // case 2: assign a fresh voice to the note
-    } else if let handler = takeAvailableVoice(noteVel.note) {
+    } else if let handler = takeAvailableVoice(noteVelIn.note) {
       handler.noteOn(noteVel)
     }
   }
   
-  func noteOff(_ noteVel: MidiNote) {
+  // we use noteVelIn for the bookkeeping, but we apply the offset when we call noteOn/noteOff on the voice inside
+  func noteOff(_ noteVelIn: MidiNote) {
     //print("OFF: trying \(noteVel.note)")
-    if let voiceIdx = noteToVoiceIdx[noteVel.note] {
+    let noteVel = MidiNote(note: applyOffset(note: noteVelIn.note), velocity: noteVelIn.velocity)
+    if let voiceIdx = noteToVoiceIdx[noteVelIn.note] {
       //print("OFF: note \(noteVel.note) releasing voice \(voiceIdx)")
       voices[voiceIdx].noteOff(noteVel)
       noteOnnedVoiceIdxs.remove(voiceIdx)
       availableVoiceIdxs.insert(voiceIdx)
-      noteToVoiceIdx.removeValue(forKey: noteVel.note)
+      noteToVoiceIdx.removeValue(forKey: noteVelIn.note)
     }
   }
+  
+  func applyOffset(note: UInt8) -> UInt8 {
+    var result = note
+    if globalOffset < 0 {
+      result -= UInt8(-1 * globalOffset)
+    } else {
+      result += UInt8(globalOffset)
+    }
+    return result
+  }
+
 }
 
 

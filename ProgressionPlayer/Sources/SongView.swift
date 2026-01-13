@@ -15,14 +15,21 @@ struct SongView: View {
   @State private var songURL: URL?
   @State private var playbackRate: Float = 1.0
   @State private var isShowingSynth = false
+  @State private var noteOffset: Float = 0
 
   var body: some View {
     NavigationStack {
-      Text("Song: \(songURL?.lastPathComponent ?? "none")")
+      if songURL != nil {
+        MidiInspectorView(midiURL: songURL!)
+      }
       Text("Playback speed: \(seq?.avSeq.rate ?? 0)")
       Slider(value: $playbackRate, in: 0...20)
         .onChange(of: playbackRate, initial: true) {
           seq?.avSeq.rate = playbackRate
+        }
+      KnobbyKnob(value: $noteOffset, range: -100...100, stepSize: 1)
+        .onChange(of: noteOffset, initial: true) {
+          synth.poolVoice?.globalOffset = Int(noteOffset)
         }
       Text("\(seq?.sequencerTime ?? 0.0) (\(seq?.lengthinSeconds() ?? 0.0))")
         .navigationTitle("⌘Scape")
@@ -60,6 +67,9 @@ struct SongView: View {
           seq?.playURL(url: songURL!)
         }
       }
+      Button("Play") {
+        seq?.play()
+      }
       Button("Stop") {
         seq?.stop()
       }
@@ -76,9 +86,6 @@ struct SongView: View {
     }
     .sheet(isPresented: $isShowingSynth) {
       SyntacticSynthView(synth: synth)
-    }
-    if songURL != nil {
-      MidiInspectorView(midiURL: songURL!)
     }
 
   }

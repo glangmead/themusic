@@ -58,6 +58,7 @@ class PlayableArrowWithHandles: NoteHandler {
 class SyntacticSynth: EngineAndVoicePool {
   let engine = SpatialAudioEngine()
   var voicePool: NoteHandler? = nil
+  var poolVoice: PoolVoice? = nil
   #if DEBUG
   private let numVoices = 3
   #else
@@ -241,7 +242,8 @@ class SyntacticSynth: EngineAndVoicePool {
     }
     engine.connectToEnvNode(avNodes)
     // voicePool is the object that the sequencer plays
-    voicePool = PoolVoice(voices: tones.map { EnvelopeHandlePlayer(arrow: $0) })
+    poolVoice = PoolVoice(voices: tones.map { EnvelopeHandlePlayer(arrow: $0) })
+    voicePool = poolVoice   
     
     // read from tones[0] to see what keys we must support getting/setting
     if tones[0].namedADSREnvelopes["ampEnv"] != nil {
