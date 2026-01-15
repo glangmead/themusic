@@ -171,27 +171,65 @@ final class Choruser: Arrow11 {
   }
 }
 
-// from https://en.wikipedia.org/wiki/Low-pass_filter#Simple_infinite_impulse_response_filter
-// TODO: resonance, see perhaps https://www.martin-finke.de/articles/audio-plugins-013-filter
+// from https://www.w3.org/TR/audio-eq-cookbook/
 final class LowPassFilter2: Arrow11 {
-  private var previousOutput: CoreFloat
   private var previousTime: CoreFloat
+  private var previousInner1: CoreFloat
+  private var previousInner2: CoreFloat
+  private var previousOutput1: CoreFloat
+  private var previousOutput2: CoreFloat
+
   var cutoff: Arrow11
   var resonance: Arrow11
+  
   init(cutoff: Arrow11, resonance: Arrow11) {
     self.cutoff = cutoff
     self.resonance = resonance
+    
     self.previousTime = 0
-    self.previousOutput = 0
+    self.previousInner1 = 0
+    self.previousInner2 = 0
+    self.previousOutput1 = 0
+    self.previousOutput2 = 0
     super.init()
   }
   override func of(_ t: CoreFloat) -> CoreFloat {
-    let rc = 1.0 / (2 * .pi * cutoff.of(t))
+    let inner = inner(t)
+
     let dt = t - previousTime
-    let alpha = dt / (rc + dt)
-    let output = (alpha * (inner(t))) + (1 - alpha) * previousOutput
-    previousOutput = output
+    if (dt <= 1.0e-9) {
+      return self.previousOutput1; // Return last output
+    }
+    
+    var w0 = 2 * .pi * cutoff.of(t) * dt // cutoff freq over sample freq
+    if w0 > .pi - 0.01 { // if dt is very large relative to frequency
+      w0 = .pi - 0.01
+    }
+    let cosw0 = cos(w0)
+    let sinw0 = sin(w0)
+    // resonance (Q factor). 0.707 is maximally flat (Butterworth). > 0.707 adds a peak.
+    let alpha = sinw0 / (2.0 * max(0.001, resonance.of(t)))
+    
+    let a0 = 1.0 + alpha
+    let a1 = (-2.0 * cosw0) / a0
+    let a2 = (1 - alpha) / a0
+    let b0 = ((1.0 - cosw0) / 2.0) / a0
+    let b1 = (1.0 - cosw0) / a0
+    let b2 = b0
+    
+    let output =
+        (b0 * inner)
+      + (b1 * previousInner1)
+      + (b2 * previousInner2)
+      - (a1 * previousOutput1)
+      - (a2 * previousOutput2)
+
+    // shift the data
     previousTime = t
+    previousInner2 = previousInner1
+    previousInner1 = inner
+    previousOutput2 = previousOutput1
+    previousOutput1 = output
     return output
   }
 }

@@ -22,7 +22,7 @@ class ADSR: Arrow11, NoteHandler {
   enum EnvelopeState {
     case closed
     case attack
-    case decay
+    case release
   }
   var env: EnvelopeData {
     didSet {
@@ -31,10 +31,12 @@ class ADSR: Arrow11, NoteHandler {
   }
   var timeOrigin: CoreFloat = 0
   var attackEnv: PiecewiseFunc<CoreFloat> = PiecewiseFunc<CoreFloat>(ifuncs: [])
-  var decayEnv: PiecewiseFunc<CoreFloat> = PiecewiseFunc<CoreFloat>(ifuncs: [])
+  var releaseEnv: PiecewiseFunc<CoreFloat> = PiecewiseFunc<CoreFloat>(ifuncs: [])
   var state: EnvelopeState = .closed
   var previousValue: CoreFloat = 0
-  
+  var valueAtRelease: CoreFloat = 0
+  var valueAtAttack: CoreFloat = 0
+
   init(envelope e: EnvelopeData) {
     self.env = e
     super.init()
@@ -48,13 +50,13 @@ class ADSR: Arrow11, NoteHandler {
       val = 0
     case .attack:
       val = attackEnv.val(CoreFloat(Date.now.timeIntervalSince1970) - timeOrigin)
-    case .decay:
+    case .release:
       let time = CoreFloat(Date.now.timeIntervalSince1970) - timeOrigin
-      if time > env.decayTime {
+      if time > env.releaseTime {
         state = .closed
         val = 0
       } else {
-        val = decayEnv.val(time)
+        val = releaseEnv.val(time)
       }
     }
     previousValue = val
@@ -65,7 +67,7 @@ class ADSR: Arrow11, NoteHandler {
     attackEnv = PiecewiseFunc<CoreFloat>(ifuncs: [
       IntervalFunc<CoreFloat>(
         interval: Interval<CoreFloat>(start: 0, end: self.env.attackTime),
-        f: { self.previousValue + ((self.env.scale - self.previousValue) * $0 / self.env.attackTime) }
+        f: { self.valueAtAttack + ((self.env.scale - self.valueAtAttack) * $0 / self.env.attackTime) }
       ),
       IntervalFunc<CoreFloat>(
         interval: Interval<CoreFloat>(start: self.env.attackTime, end: self.env.attackTime + self.env.decayTime),
@@ -76,21 +78,25 @@ class ADSR: Arrow11, NoteHandler {
         f: {_ in self.env.scale * self.env.sustainLevel}
       )
     ])
-    decayEnv = PiecewiseFunc<CoreFloat>(ifuncs: [
+    releaseEnv = PiecewiseFunc<CoreFloat>(ifuncs: [
       IntervalFunc<CoreFloat>(
         interval: Interval<CoreFloat>(start: 0, end: self.env.releaseTime),
-        f: {self.previousValue * ($0 * -1.0 * (self.env.sustainLevel / self.env.releaseTime) + self.env.sustainLevel)})
+        f: {
+          self.valueAtRelease + ($0 * -1.0 * (self.valueAtRelease / self.env.releaseTime))
+        })
     ])
   }
   
   func noteOn(_ note: MidiNote) {
     timeOrigin = CoreFloat(Date.now.timeIntervalSince1970)
+    valueAtAttack = previousValue
     state = .attack
   }
   
   func noteOff(_ note: MidiNote) {
     timeOrigin = CoreFloat(Date.now.timeIntervalSince1970)
-    state = .decay
+    valueAtRelease = previousValue
+    state = .release
   }
 }
 

@@ -368,7 +368,7 @@ struct SyntacticSynthView: View {
       }
       HStack {
         KnobbyKnob(value: $synth.filterCutoff, label:  "Filter cut", range: 0...10000, stepSize: 1)
-        KnobbyKnob(value: $synth.filterRelease, label: "Filter res", range: 0...2)
+        KnobbyKnob(value: $synth.filterResonance, label: "Filter res", range: 0.1...15, stepSize: 0.01)
       }
       HStack {
         KnobbyKnob(value: $synth.vibratoAmp, label:  "Vib amp", range: 0...20)

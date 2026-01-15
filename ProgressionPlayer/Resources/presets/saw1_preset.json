@@ -33,13 +33,13 @@
                  ]}
                 },
                 { "osc": {"name": "osc1", "shape": "sawtoothOsc"} },
-                { "choruser": { "specs": {"name": "osc1Choruser", "valueToChorus": "freq", "chorusCentRadius": 5, "chorusNumVoices": 5} } }
+                { "choruser": { "specs": {"name": "osc1Choruser", "valueToChorus": "freq", "chorusCentRadius": 0, "chorusNumVoices": 1} } }
               ]}}
            ]}
           },
           {
            "prod": { "of": [
-             { "const": {"val": 0.0, "name": "osc2Mix"} },
+             { "const": {"val": 1.0, "name": "osc2Mix"} },
              {
               "compose": { "arrows": [
                 {
@@ -47,7 +47,7 @@
                    { 
                     "prod": { "of": [ 
                      { "const": {"name": "freq", "val": 300} }, 
-                     { "const": {"name": "osc2FreqMult", "val": 1.0} }, {"identity": {}} 
+                     { "const": {"name": "osc2FreqMult", "val": 0.5} }, {"identity": {}} 
                     ]}
                    },
                    {
@@ -68,7 +68,7 @@
                    }
                  ]}
                 },
-                { "osc": {"name": "osc2", "shape": "sineOsc"} },
+                { "osc": {"name": "osc2", "shape": "squareOsc"} },
                 { "choruser": { "specs": {"name": "osc2Choruser", "valueToChorus": "freq", "chorusCentRadius": 0, "chorusNumVoices": 1} } }
               ]}
              }
@@ -115,13 +115,16 @@
     {
      "lowPassFilter": {
       "specs": {
-       "cutoff"   : {
-        "prod": { "of": [
-          { "const": {"name": "cutoff", "val": 1000} },
-          { "envelope": { "specs": {"release": 0.1, "scale": 1, "name": "filterEnv", "attack": 0.3, "decay": 0.1, "sustain": 1} } }
-         ]}
-       },
-       "resonance": { "const": {"name": "resonance", "val": 1000} },
+       "cutoff"   : 
+        {"sum": { "of": [
+          { "const": {"name": "cutoffLow", "val": 50} },
+          { "prod": { "of": [
+            { "const": {"name": "cutoff", "val": 10000} },
+            { "envelope": { "specs": {"release": 1, "scale": 1, "name": "filterEnv", "attack": 1, "decay": 0, "sustain": 1 } } }
+          ]}}
+       ]
+       }},
+       "resonance": { "const": {"name": "resonance", "val": 1.2} },
        "name"     : "filter"
       }
      }
