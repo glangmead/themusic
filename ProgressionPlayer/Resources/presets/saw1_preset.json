@@ -15,7 +15,12 @@
               "compose": { "arrows": [
                 {
                  "sum": { "of": [
-                   { "prod": { "of": [ { "const": {"name": "freq", "val": 300} }, {"identity": {}} ] } },
+                   { "prod": { "of": [ 
+                     { "const": {"name": "freq", "val": 300} }, 
+                     { "constOctave": {"name": "osc1Octave", "val": 0} },
+                     { "constCent": {"name": "osc1CentDetune", "val": -500} },
+                     {"identity": {}} 
+                   ]}},
                    {
                     "compose": { "arrows": [
                       {
@@ -23,7 +28,7 @@
                          { "const": {"name": "vibratoAmp", "val": 0} },
                          { "compose": { "arrows": [
                             { "prod": { "of": [ { "const": {"val": 3, "name": "vibratoFreq"} }, {"identity": {}} ] } },
-                            { "osc": {"name": "vibratoOsc", "shape": "sineOsc"} }
+                            { "osc": {"name": "vibratoOsc", "shape": "sineOsc", "width": 1.0} }
                          ]}}
                        ]}
                       },
@@ -32,8 +37,8 @@
                    }
                  ]}
                 },
-                { "osc": {"name": "osc1", "shape": "sawtoothOsc"} },
-                { "choruser": { "specs": {"name": "osc1Choruser", "valueToChorus": "freq", "chorusCentRadius": 0, "chorusNumVoices": 1} } }
+                { "osc": {"name": "osc1", "shape": "sawtoothOsc", "width": 1.0} },
+                { "choruser": { "specs": {"name": "osc1Choruser", "valueToChorus": "freq", "chorusCentRadius": 15, "chorusNumVoices": 2} } }
               ]}}
            ]}
           },
@@ -47,7 +52,9 @@
                    { 
                     "prod": { "of": [ 
                      { "const": {"name": "freq", "val": 300} }, 
-                     { "const": {"name": "osc2FreqMult", "val": 0.5} }, {"identity": {}} 
+                     { "constOctave": {"name": "osc2Octave", "val": -1} },
+                     { "constCent": {"name": "osc2CentDetune", "val": 0} },
+                     {"identity": {}}
                     ]}
                    },
                    {
@@ -58,7 +65,7 @@
                          {
                           "compose": { "arrows": [
                             { "prod": { "of": [ { "const": {"val": 3, "name": "vibratoFreq"} }, {"identity": {}} ] } },
-                            { "osc": {"name": "vibratoOsc", "shape": "sineOsc"} }
+                            { "osc": {"name": "vibratoOsc", "shape": "sineOsc", "width": 1.0} }
                           ]}
                         }]
                        }
@@ -68,8 +75,8 @@
                    }
                  ]}
                 },
-                { "osc": {"name": "osc2", "shape": "squareOsc"} },
-                { "choruser": { "specs": {"name": "osc2Choruser", "valueToChorus": "freq", "chorusCentRadius": 0, "chorusNumVoices": 1} } }
+                { "osc": {"name": "osc2", "shape": "squareOsc", "width": 0.5} },
+                { "choruser": { "specs": {"name": "osc2Choruser", "valueToChorus": "freq", "chorusCentRadius": 15, "chorusNumVoices": 2} } }
               ]}
              }
            ]}
@@ -81,7 +88,12 @@
               "compose": { "arrows": [
                 {
                  "sum": { "of": [
-                   { "prod": { "of": [ { "const": {"name": "freq", "val": 300} }, {"identity": {}} ] } },
+                   { "prod": { "of": [ 
+                     { "const": {"name": "freq", "val": 300} }, 
+                     { "constOctave": {"name": "osc3Octave", "val": 0} },
+                     { "constCent": {"name": "osc3CentDetune", "val": 0} },
+                     {"identity": {}} 
+                   ]}},
                    {
                     "compose": { "arrows": [
                       {
@@ -90,7 +102,7 @@
                          {
                           "compose": { "arrows": [
                             { "prod": { "of": [ { "const": {"val": 3, "name": "vibratoFreq"} }, {"identity": {}} ] } },
-                            { "osc": {"name": "vibratoOsc", "shape": "sineOsc"} }
+                            { "osc": {"name": "vibratoOsc", "shape": "sineOsc", "width": 1.0} }
                           ]}
                          }
                        ]}
@@ -100,7 +112,7 @@
                    }
                  ]}
                 },
-                { "osc": {"name": "osc3", "shape": "noiseOsc"} },
+                { "osc": {"name": "osc3", "shape": "noiseOsc", "width": 1.0} },
                 { "choruser": { "specs": {"name": "osc3Choruser", "valueToChorus": "freq", "chorusCentRadius": 0, "chorusNumVoices": 1} } }
                ]
               }
@@ -109,7 +121,7 @@
           }
         ]}
        },
-       { "envelope": { "specs": {"decay": 0.1, "sustain": 1, "attack": 0.01, "name": "ampEnv", "release": 0.1, "scale": 1} } }
+       { "envelope": { "specs": {"decay": 1, "sustain": 0, "attack": 0, "name": "ampEnv", "release": 0, "scale": 1} } }
       ]}
     },
     {
@@ -119,12 +131,11 @@
         {"sum": { "of": [
           { "const": {"name": "cutoffLow", "val": 50} },
           { "prod": { "of": [
-            { "const": {"name": "cutoff", "val": 10000} },
-            { "envelope": { "specs": {"release": 1, "scale": 1, "name": "filterEnv", "attack": 1, "decay": 0, "sustain": 1 } } }
+            { "const": {"name": "cutoff", "val": 5000} },
+            { "envelope": { "specs": {"release": 0, "scale": 1, "name": "filterEnv", "attack": 0, "decay": 0.3, "sustain": 0 } } }
           ]}}
-       ]
-       }},
-       "resonance": { "const": {"name": "resonance", "val": 1.2} },
+       ]}},
+       "resonance": { "const": {"name": "resonance", "val": 1.6} },
        "name"     : "filter"
       }
      }

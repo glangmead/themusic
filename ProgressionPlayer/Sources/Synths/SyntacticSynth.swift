@@ -136,11 +136,23 @@ class SyntacticSynth: EngineAndVoicePool {
   var osc1ChorusNumVoices: CoreFloat = 0 { didSet {
     for tone in tones { tone.namedChorusers["osc1Choruser"]!.chorusNumVoices = Int(osc1ChorusNumVoices) } }
   }
-  var osc2Detune: CoreFloat = 0 { didSet {
-    for tone in tones { for const in tone.namedConsts["osc2FreqMult"]! { const.val = pow(2, osc2Octave) * pow(cent, osc2Detune) } } }
+  var osc1CentDetune: CoreFloat = 0 { didSet {
+    for tone in tones { for const in tone.namedConsts["osc1CentDetune"]! { const.val = osc1CentDetune } } }
+  }
+  var osc1Octave: CoreFloat = 0 { didSet {
+    for tone in tones { for const in tone.namedConsts["osc1Octave"]! { const.val = osc1Octave } } }
+  }
+  var osc2CentDetune: CoreFloat = 0 { didSet {
+    for tone in tones { for const in tone.namedConsts["osc2CentDetune"]! { const.val = osc2CentDetune } } }
   }
   var osc2Octave: CoreFloat = 0 { didSet {
-    for tone in tones { for const in tone.namedConsts["osc2FreqMult"]! { const.val = pow(2, osc2Octave) * pow(cent, osc2Detune) } } }
+    for tone in tones { for const in tone.namedConsts["osc2Octave"]! { const.val = osc2Octave } } }
+  }
+  var osc3CentDetune: CoreFloat = 0 { didSet {
+    for tone in tones { for const in tone.namedConsts["osc3CentDetune"]! { const.val = osc3CentDetune } } }
+  }
+  var osc3Octave: CoreFloat = 0 { didSet {
+    for tone in tones { for const in tone.namedConsts["osc3Octave"]! { const.val = osc3Octave } } }
   }
   var osc2Width: CoreFloat = 0 { didSet {
     for tone in tones { tone.namedBasicOscs["osc2"]!.width = osc2Width }
@@ -285,6 +297,14 @@ class SyntacticSynth: EngineAndVoicePool {
     osc2Width = tones[0].namedBasicOscs["osc2"]!.width
     osc3Width = tones[0].namedBasicOscs["osc3"]!.width
 
+    osc1Octave = tones[0].namedConsts["osc1Octave"]!.first!.val
+    osc2Octave = tones[0].namedConsts["osc2Octave"]!.first!.val
+    osc3Octave = tones[0].namedConsts["osc3Octave"]!.first!.val
+
+    osc1CentDetune = tones[0].namedConsts["osc1CentDetune"]!.first!.val
+    osc2CentDetune = tones[0].namedConsts["osc2CentDetune"]!.first!.val
+    osc3CentDetune = tones[0].namedConsts["osc3CentDetune"]!.first!.val
+    
     roseAmp = presets[0].positionLFO!.amp.val
     roseFreq = presets[0].positionLFO!.freq.val
     roseLeaves = presets[0].positionLFO!.leafFactor.val
@@ -333,18 +353,22 @@ struct SyntacticSynthView: View {
       }
       .pickerStyle(.segmented)
       HStack {
+        KnobbyKnob(value: $synth.osc1CentDetune, label: "Detune1", range: -500...500, stepSize: 1)
+        KnobbyKnob(value: $synth.osc1Octave, label: "Oct1", range: -5...5, stepSize: 1)
         KnobbyKnob(value: $synth.osc1ChorusCentRadius, label: "Cents1", range: 0...30, stepSize: 1)
         KnobbyKnob(value: $synth.osc1ChorusNumVoices, label: "Voices1", range: 1...12, stepSize: 1)
         KnobbyKnob(value: $synth.osc1Width, label: "PulseW1", range: 0...1)
       }
       HStack {
-        KnobbyKnob(value: $synth.osc2Detune, label: "Detune2", range: -100...100, stepSize: 1)
+        KnobbyKnob(value: $synth.osc2CentDetune, label: "Detune2", range: -500...500, stepSize: 1)
         KnobbyKnob(value: $synth.osc2Octave, label: "Oct2", range: -5...5, stepSize: 1)
         KnobbyKnob(value: $synth.osc2ChorusCentRadius, label: "Cents2", range: 0...30, stepSize: 1)
         KnobbyKnob(value: $synth.osc2ChorusNumVoices, label: "Voices2", range: 1...12, stepSize: 1)
         KnobbyKnob(value: $synth.osc2Width, label: "PulseW2", range: 0...1)
       }
       HStack {
+        KnobbyKnob(value: $synth.osc3CentDetune, label: "Detune3", range: -500...500, stepSize: 1)
+        KnobbyKnob(value: $synth.osc3Octave, label: "Oct3", range: -5...5, stepSize: 1)
         KnobbyKnob(value: $synth.osc3ChorusCentRadius, label: "Cents3", range: 0...30, stepSize: 1)
         KnobbyKnob(value: $synth.osc3ChorusNumVoices, label: "Voices3", range: 1...12, stepSize: 1)
         KnobbyKnob(value: $synth.osc3Width, label: "PulseW3", range: 0...1)

@@ -18,7 +18,8 @@ struct TheoryView: View {
   @State private var key = Key.C
   @State private var octave: Int = 2
   @State private var seq: Sequencer?
-  
+  @State private var noteOffset: Float = 0
+
   @State private var engineOn: Bool = true
   
   @FocusState private var isFocused: Bool
@@ -71,6 +72,11 @@ struct TheoryView: View {
           }
         )
         
+        KnobbyKnob(value: $noteOffset, range: -100...100, stepSize: 1)
+          .onChange(of: noteOffset, initial: true) {
+            synth.poolVoice?.globalOffset = Int(noteOffset)
+          }
+
         HStack {
           Text("Engine")
           Toggle(isOn: $engineOn) {}
@@ -118,7 +124,7 @@ struct TheoryView: View {
 
   func playKey(keyPress: KeyPress) -> KeyPress.Result {
     let charToMidiNote:[String:Int] = [
-      "a": 57, "w": 58, "s": 59, "d": 60, "r": 61, "f": 62, "t": 63, "g": 64, "h": 65, "u": 66, "j": 67, "i": 68, "k": 69, "o": 70, "l": 71, ";": 72
+      "a": 60, "w": 61, "s": 62, "d": 63, "r": 64, "f": 65, "t": 66, "g": 67, "h": 68, "u": 69, "j": 70, "i": 71, "k": 72, "o": 73, "l": 74, ";": 75
     ]
     //print("""
     //  New key event:

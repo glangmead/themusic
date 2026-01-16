@@ -238,7 +238,7 @@ final class ArrowWithHandles: Arrow11 {
   // the handles are dictionaries with values that give access to arrows within the arrow
   var namedBasicOscs     = [String: BasicOscillator]()
   var namedLowPassFilter = [String: LowPassFilter2]()
-  var namedConsts        = [String: [ArrowConst]]()
+  var namedConsts        = [String: [ValHaver]]()
   var namedADSREnvelopes = [String: ADSR]()
   var namedChorusers     = [String: Choruser]()
   var wrappedArrow: Arrow11
@@ -277,6 +277,8 @@ final class ArrowWithHandles: Arrow11 {
 enum ArrowSyntax: Codable {
   // NOTE: cases must each have a *different associated type*, as it's branched on in the Decoding logic
   case const(name: String, val: CoreFloat)
+  case constOctave(name: String, val: CoreFloat)
+  case constCent(name: String, val: CoreFloat)
   case identity
   case control
   indirect case lowPassFilter(specs: LowPassArrowSyntax)
@@ -285,7 +287,7 @@ enum ArrowSyntax: Codable {
   indirect case sum(of: [ArrowSyntax])
   indirect case envelope(specs: ADSRSyntax)
   case choruser(specs: NamedChoruser)
-  case osc(name: String, shape: BasicOscillator.OscShape)
+  case osc(name: String, shape: BasicOscillator.OscShape, width: CoreFloat)
   
   // see https://www.compilenrun.com/docs/language/swift/swift-enumerations/swift-recursive-enumerations/
   func compile() -> ArrowWithHandles {
@@ -302,8 +304,8 @@ enum ArrowSyntax: Codable {
         composition = arrow
       }
       return composition!.withMergeDictsFromArrows(arrows)
-    case .osc(let oscName, let oscShape):
-      let osc = BasicOscillator(shape: oscShape)
+    case .osc(let oscName, let oscShape, let width):
+      let osc = BasicOscillator(shape: oscShape, width: width)
       let arr = ArrowWithHandles(osc)
       arr.namedBasicOscs[oscName] = osc
       return arr
@@ -324,13 +326,21 @@ enum ArrowSyntax: Codable {
           innerArrs: lowerArrs
         )
       ).withMergeDictsFromArrows(lowerArrs)
-
     case .const(let name, let val):
       let arr = ArrowConst(value: val) // separate copy, even if same name as a node elsewhere
       let handleArr = ArrowWithHandles(arr)
       handleArr.namedConsts[name] = [arr]
       return handleArr
-    
+    case .constOctave(let name, let val):
+      let arr = ArrowConstOctave(value: val) // separate copy, even if same name as a node elsewhere
+      let handleArr = ArrowWithHandles(arr)
+      handleArr.namedConsts[name] = [arr]
+      return handleArr
+    case .constCent(let name, let val):
+      let arr = ArrowConstCent(value: val) // separate copy, even if same name as a node elsewhere
+      let handleArr = ArrowWithHandles(arr)
+      handleArr.namedConsts[name] = [arr]
+      return handleArr
     case .lowPassFilter(let lpArrow):
       let cutoffArrow = lpArrow.cutoff.compile()
       let resonanceArrow = lpArrow.resonance.compile()
