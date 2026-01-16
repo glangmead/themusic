@@ -124,7 +124,7 @@ struct TheoryView: View {
 
   func playKey(keyPress: KeyPress) -> KeyPress.Result {
     let charToMidiNote:[String:Int] = [
-      "a": 60, "w": 61, "s": 62, "d": 63, "r": 64, "f": 65, "t": 66, "g": 67, "h": 68, "u": 69, "j": 70, "i": 71, "k": 72, "o": 73, "l": 74, ";": 75
+      "a": 60, "w": 61, "s": 62, "e": 63, "d": 64, "f": 65, "t": 66, "g": 67, "y": 68, "h": 69, "u": 70, "j": 71, "k": 72, "o": 73, "l": 74, "p": 75
     ]
     //print("""
     //  New key event:
