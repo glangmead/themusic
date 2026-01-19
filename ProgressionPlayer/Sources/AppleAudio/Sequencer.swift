@@ -103,7 +103,7 @@ class Sequencer {
   func sendChord(chord: [MidiValue]) {
     let seqTrack = avTracks[0]
     // AVMusicTimeStamp: a fractional number of beats
-    for (i, note) in chord.enumerated() {
+    for (_, note) in chord.enumerated() {
       seqTrack.addEvent(
         AVMIDINoteEvent(
           channel: 0,

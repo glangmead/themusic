@@ -14,23 +14,50 @@ typealias CoreFloat = Double
 
 class Arrow11 {
   // these are arrows with which we can compose (arr/arrs run first, then this arrow)
-  var innerArr: Arrow11? = nil
-  var innerArrs = ContiguousArray<Arrow11>()
-  
+  var innerArr: Arrow11? = nil {
+    didSet {
+      if let inner = innerArr {
+        self.innerArrUnmanaged = Unmanaged.passUnretained(inner)
+      }
+    }
+  }
+  private var innerArrUnmanaged: Unmanaged<Arrow11>? = nil
+  var innerArrs = ContiguousArray<Arrow11>() {
+    didSet {
+      for arrow in innerArrs {
+        innerArrsUnmanaged.append(Unmanaged.passUnretained(arrow))
+      }
+    }
+  }
+  internal var innerArrsUnmanaged = ContiguousArray<Unmanaged<Arrow11>>()
+
   init(innerArr: Arrow11? = nil) {
     self.innerArr = innerArr
+    if let inner = innerArr {
+      self.innerArrUnmanaged = Unmanaged.passUnretained(inner)
+    }
   }
   
   init(innerArrs: ContiguousArray<Arrow11>) {
     self.innerArrs = innerArrs
+    for arrow in innerArrs {
+      innerArrsUnmanaged.append(Unmanaged.passUnretained(arrow))
+    }
   }
   
   init(innerArrs: [Arrow11]) {
     self.innerArrs = ContiguousArray<Arrow11>(innerArrs)
+    for arrow in innerArrs {
+      innerArrsUnmanaged.append(Unmanaged.passUnretained(arrow))
+    }
   }
-  
+
   func inner(_ t: CoreFloat) -> CoreFloat {
     innerArr?.of(t) ?? t
+  }
+  
+  func unmanagedInner(_ t: CoreFloat) -> CoreFloat {
+    innerArrUnmanaged?._withUnsafeGuaranteedRef { $0.of(t) } ?? 0
   }
   
   func of (_ t: CoreFloat) -> CoreFloat { inner(t) }
@@ -64,7 +91,7 @@ final class ArrowSum: Arrow11 {
   override func of(_ t: CoreFloat) -> CoreFloat {
     var total: CoreFloat = 0
     for i in 0..<innerArrs.count {
-      total += innerArrs[i].of(t)
+      total += innerArrsUnmanaged[i]._withUnsafeGuaranteedRef { $0.of(t) }
     }
     return total
   }
@@ -73,8 +100,8 @@ final class ArrowSum: Arrow11 {
 final class ArrowProd: Arrow11 {
   override func of(_ t: CoreFloat) -> CoreFloat {
     var result: CoreFloat = 1
-    for i in 0..<innerArrs.count {
-      result *= innerArrs[i].of(t)
+    for i in 0..<innerArrsUnmanaged.count {
+      result *= innerArrsUnmanaged[i]._withUnsafeGuaranteedRef { $0.of(t) }
     }
     return result
   }

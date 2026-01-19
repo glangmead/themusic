@@ -62,6 +62,7 @@ final class BasicOscillator: Arrow11 {
   var shape: OscShape {
     didSet {
       arrow = Self.arrForShape(shape: shape)
+      arrUnmanaged = Unmanaged.passUnretained(arrow)
     }
   }
   var width: CoreFloat {
@@ -70,7 +71,8 @@ final class BasicOscillator: Arrow11 {
     }
   }
   var arrow: Arrow11 & WidthHaver
-  
+  private var arrUnmanaged: Unmanaged<Arrow11>? = nil
+
   init(shape: OscShape, width: CoreFloat = 1) {
     self.shape = shape
     self.arrow = Self.arrForShape(shape: shape)
@@ -79,7 +81,7 @@ final class BasicOscillator: Arrow11 {
   }
   
   override func of(_ t: CoreFloat) -> CoreFloat {
-    arrow.of(inner(t))
+    arrUnmanaged?._withUnsafeGuaranteedRef { $0.of(unmanagedInner(t)) } ?? 0
   }
   
   static func arrForShape(shape: OscShape) -> Arrow11 & WidthHaver {
@@ -140,7 +142,7 @@ final class Choruser: Arrow11 {
           for freqArrow in freqArrows {
             for freq in spreadFreqs {
               freqArrow.val = freq
-              chorusedResults += inner(t)
+              chorusedResults += unmanagedInner(t)
             }
             // restore
             freqArrow.val = baseFreq
@@ -148,10 +150,10 @@ final class Choruser: Arrow11 {
         }
         return chorusedResults
       } else {
-        return inner(t)
+        return unmanagedInner(t)
       }
     } else {
-      return inner(t)
+      return unmanagedInner(t)
     }
   }
   
@@ -243,16 +245,19 @@ final class ArrowWithHandles: Arrow11 {
   var namedChorusers     = [String: Choruser]()
   var wrappedArrow: Arrow11
   
+  private var wrappedArrowUnsafe: Unmanaged<Arrow11>
+  
   init(_ wrappedArrow: Arrow11) {
     // has an arrow
     self.wrappedArrow = wrappedArrow
+    self.wrappedArrowUnsafe = Unmanaged.passUnretained(wrappedArrow)
     // does not participate in its superclass arrowness
     super.init()
   }
   
   // delegates to wrapped arrow
   override func of(_ t: CoreFloat) -> CoreFloat {
-    wrappedArrow.of(t)
+    wrappedArrowUnsafe._withUnsafeGuaranteedRef { $0.of(t) }
   }
 
   func withMergeDictsFromArrow(_ arr2: ArrowWithHandles) -> ArrowWithHandles {
