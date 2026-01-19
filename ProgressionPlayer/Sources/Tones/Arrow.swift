@@ -133,13 +133,19 @@ final class ArrowConst: Arrow11, ValHaver, Equatable {
 }
 
 final class ArrowConstOctave: Arrow11, ValHaver, Equatable {
-  var val: CoreFloat
+  var val: CoreFloat {
+    didSet {
+      twoToTheVal = pow(2, val)
+    }
+  }
+  var twoToTheVal: CoreFloat
   init(value: CoreFloat) {
     self.val = value
+    self.twoToTheVal = pow(2, val)
     super.init()
   }
   override func of(_ t: CoreFloat) -> CoreFloat {
-    pow(2, val)
+    twoToTheVal
   }
   static func == (lhs: ArrowConstOctave, rhs: ArrowConstOctave) -> Bool {
     lhs.val == rhs.val
@@ -148,13 +154,20 @@ final class ArrowConstOctave: Arrow11, ValHaver, Equatable {
 
 final class ArrowConstCent: Arrow11, ValHaver, Equatable {
   let cent: CoreFloat = 1.0005777895065548 // '2 ** (1/1200)' in python
-  var val: CoreFloat
+  var val: CoreFloat {
+    didSet {
+      self.centToTheVal = pow(cent, val)
+    }
+  }
+  var centToTheVal: CoreFloat
+  
   init(value: CoreFloat) {
     self.val = value
+    self.centToTheVal = pow(cent, val)
     super.init()
   }
   override func of(_ t: CoreFloat) -> CoreFloat {
-    pow(cent, val)
+    centToTheVal
   }
   static func == (lhs: ArrowConstCent, rhs: ArrowConstCent) -> Bool {
     lhs.val == rhs.val

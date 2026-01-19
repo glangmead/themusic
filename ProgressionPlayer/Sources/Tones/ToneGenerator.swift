@@ -122,11 +122,16 @@ final class Choruser: Arrow11 {
   var chorusCentRadius: Int
   var chorusNumVoices: Int
   var valueToChorus: String
-  
+  var centPowers = ContiguousArray<CoreFloat>()
+  let cent: CoreFloat = 1.0005777895065548 // '2 ** (1/1200)' in python
+
   init(chorusCentRadius: Int, chorusNumVoices: Int, valueToChorus: String) {
     self.chorusCentRadius = chorusCentRadius
     self.chorusNumVoices = chorusNumVoices
     self.valueToChorus = valueToChorus
+    for power in -500...500 {
+      centPowers.append(pow(cent, CoreFloat(power)))
+    }
     super.init()
   }
   
@@ -140,8 +145,8 @@ final class Choruser: Arrow11 {
           let baseFreq = freqArrows.first!.val
           let spreadFreqs = chorusedFreqs(freq: baseFreq)
           for freqArrow in freqArrows {
-            for freq in spreadFreqs {
-              freqArrow.val = freq
+            for i in spreadFreqs.indices {
+              freqArrow.val = spreadFreqs[i]
               chorusedResults += unmanagedInner(t)
             }
             // restore
@@ -160,8 +165,7 @@ final class Choruser: Arrow11 {
   // return chorusNumVoices frequencies, centered on the requested freq but spanning an interval
   // from freq - delta to freq + delta (where delta depends on freq and chorusCentRadius)
   func chorusedFreqs(freq: CoreFloat) -> [CoreFloat] {
-    let cent: CoreFloat = 1.0005777895065548 // '2 ** (1/1200)' in python
-    let freqRadius = freq * pow(cent, CoreFloat(chorusCentRadius)) - freq
+    let freqRadius = freq * centPowers[chorusCentRadius + 500] - freq
     let freqSliver = 2 * freqRadius / CoreFloat(chorusNumVoices)
     if chorusNumVoices > 1 {
       return (0..<chorusNumVoices).map { i in
