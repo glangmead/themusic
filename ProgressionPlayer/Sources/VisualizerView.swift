@@ -113,27 +113,15 @@ struct VisualizerView: UIViewRepresentable {
       synth.engine.installTap { [weak self] samples in
         guard let self = self else { return }
         
-                // Append to buffer
-                // Boost gain slightly for visualizer visibility
-                // Data is Interleaved Stereo [L, R, L, R...]
-                let boostedSamples = samples//.map { $0 * 5.0 }
-                self.pendingSamples.append(contentsOf: boostedSamples)
-                
-                // Only send if we have enough data to make the bridge call worth it
-                // Threshold 2048 floats = 1024 stereo frames
-                if self.pendingSamples.count >= self.sendThreshold {
+        // Append to buffer
+        // Data is Interleaved Stereo [L, R, L, R...]
+        self.pendingSamples.append(contentsOf: samples)
+        
+        // Only send if we have enough data to make the bridge call worth it
+        // Threshold 2048 floats = 1024 stereo frames
+        if self.pendingSamples.count >= self.sendThreshold {
           let samplesToSend = self.pendingSamples
           self.pendingSamples.removeAll(keepingCapacity: true)
-          
-          // Debug: Calculate amplitude of what we are sending
-          var total: Float = 0
-          for sample in samplesToSend {
-            total += abs(sample)
-          }
-          // let avg = total / Float(samplesToSend.count)
-          // if avg > 0.001 {
-          //   print("Visualizer sending \(samplesToSend.count) samples. Avg Amp: \(avg)")
-          // }
           
           // Convert array to JSON string
           let jsonString = samplesToSend.description
