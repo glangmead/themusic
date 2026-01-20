@@ -18,6 +18,10 @@ struct VisualizerView: UIViewRepresentable {
     config.mediaTypesRequiringUserActionForPlayback = []
     config.allowsInlineMediaPlayback = true
     
+    let userContentController = WKUserContentController()
+    userContentController.add(context.coordinator, name: "keyHandler")
+    config.userContentController = userContentController
+    
     let webView = WKWebView(frame: .zero, configuration: config)
     webView.isOpaque = false
     webView.isInspectable = true
@@ -57,15 +61,42 @@ struct VisualizerView: UIViewRepresentable {
     Coordinator(synth: synth)
   }
   
-  class Coordinator: NSObject, WKNavigationDelegate {
+  class Coordinator: NSObject, WKNavigationDelegate, WKScriptMessageHandler {
     let synth: SyntacticSynth
     weak var webView: WKWebView?
     
     var pendingSamples: [Float] = []
-    let sendThreshold = 2048 // Accumulate about 2 tap buffers before sending
+    let sendThreshold = 1024 // Accumulate about 2 tap buffers before sending
     
     init(synth: SyntacticSynth) {
       self.synth = synth
+    }
+    
+    func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+      if message.name == "keyHandler", let dict = message.body as? [String: String],
+         let key = dict["key"], let type = dict["type"] {
+        playKey(key: key, type: type)
+      }
+    }
+    
+    func playKey(key: String, type: String) {
+      let charToMidiNote: [String: Int] = [
+        "a": 60, "w": 61, "s": 62, "e": 63, "d": 64, "f": 65, "t": 66, "g": 67, "y": 68, "h": 69, "u": 70, "j": 71, "k": 72, "o": 73, "l": 74, "p": 75
+      ]
+      
+      if let noteValue = charToMidiNote[key] {
+        // Handle repeated keydowns (auto-repeat) by ignoring them if we wanted,
+        // but for now let's just re-trigger or rely on synth logic.
+        // Actually, SwiftUI's onKeyPress handles phases nicely. JS gives us repeated "keydowns".
+        // We should track state or just let noteOn fire repeatedly (might re-trigger envelope).
+        // Ideally we only fire noteOn if it wasn't already pressed.
+        
+        if type == "keydown" {
+          synth.voicePool?.noteOn(MidiNote(note: UInt8(noteValue), velocity: 100))
+        } else if type == "keyup" {
+          synth.voicePool?.noteOff(MidiNote(note: UInt8(noteValue), velocity: 100))
+        }
+      }
     }
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
@@ -99,10 +130,10 @@ struct VisualizerView: UIViewRepresentable {
           for sample in samplesToSend {
             total += abs(sample)
           }
-          let avg = total / Float(samplesToSend.count)
-          if avg > 0.001 {
-            print("Visualizer sending \(samplesToSend.count) samples. Avg Amp: \(avg)")
-          }
+          // let avg = total / Float(samplesToSend.count)
+          // if avg > 0.001 {
+          //   print("Visualizer sending \(samplesToSend.count) samples. Avg Amp: \(avg)")
+          // }
           
           // Convert array to JSON string
           let jsonString = samplesToSend.description

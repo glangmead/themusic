@@ -429,14 +429,6 @@
         audioContext = new (window.AudioContext || window.webkitAudioContext)();
         debugLog("AudioContext created. State: " + audioContext.state);
         
-        // Warm-up / Unlock routine for Safari/iOS
-        const warmUpBuffer = audioContext.createBuffer(1, 1, 22050);
-        const warmUpSource = audioContext.createBufferSource();
-        warmUpSource.buffer = warmUpBuffer;
-        warmUpSource.connect(audioContext.destination);
-        warmUpSource.start(0);
-        debugLog("Warm-up buffer played");
-        
         // Resume if suspended (iOS requirement)
         if (audioContext.state === 'suspended') {
           debugLog("Resuming AudioContext...");
@@ -451,34 +443,23 @@
         }
         
         // Create ScriptProcessor
-        // 1 input (for dummy osc), 2 outputs (Stereo for visualizer)
-        processor = audioContext.createScriptProcessor(BUFFER_SIZE, 1, 2);
-        
-        // DUMMY OSCILLATOR: This is the fix for Safari/WebKit audio suspension
-        const dummyOsc = audioContext.createOscillator();
-        dummyOsc.type = 'square';
-        dummyOsc.frequency.value = 440;
-        dummyOsc.connect(processor);
-        dummyOsc.start();
-        debugLog("Dummy oscillator started.");
+        // 0 inputs, 2 outputs (Stereo for visualizer)
+        processor = audioContext.createScriptProcessor(BUFFER_SIZE, 0, 2);
         
         let processCount = 0;
         let firstProcess = true;
         processor.onaudioprocess = (e) => {
             if (firstProcess) {
-                console.log("onaudioprocess STARTED! Queue size: " + audioQueue.length);
-                debugLog("Audio processing started!");
+                console.log("onaudioprocess STARTED!");
+                debugLog("Audio pump is active.");
                 firstProcess = false;
             }
             processCount++;
-            if (processCount % 100 === 0) {
-                console.log("onaudioprocess running. Queue: " + audioQueue.length + " State: " + audioContext.state);
-            }
             
             const outputL = e.outputBuffer.getChannelData(0);
             const outputR = e.outputBuffer.getChannelData(1);
             
-            // We need BUFFER_SIZE frames. Since data is interleaved, we need BUFFER_SIZE * 2 items from queue.
+            // We need BUFFER_SIZE frames. Stereo data = BUFFER_SIZE * 2 items.
             const needed = BUFFER_SIZE * 2;
             
             if (audioQueue.length >= needed) {
@@ -488,15 +469,18 @@
                     outputR[i] = chunk[i * 2 + 1];
                 }
             } else {
-                // Underrun: fill with silence
+                // Partial buffer or underrun
                 outputL.fill(0);
                 outputR.fill(0);
                 
-                // Optional: Drain what's left to avoid stuck queue? 
-                // Or just leave it for next time.
-                // Let's drain to keep latency low if we are drifting.
                 if (audioQueue.length > 0) {
-                    audioQueue.length = 0; // Clear it
+                    const available = audioQueue.length;
+                    const chunk = audioQueue.splice(0, available);
+                    const frames = Math.floor(available / 2);
+                    for (let i = 0; i < frames; i++) {
+                        outputL[i] = chunk[i * 2];
+                        outputR[i] = chunk[i * 2 + 1];
+                    }
                 }
             }
         };
@@ -561,6 +545,24 @@
     hideBtn.addEventListener('click', toggleControls);
     window.addEventListener('resize', resize);
     
+    // Keyboard forwarding to Swift
+    const keysToForward = new Set(['a', 'w', 's', 'e', 'd', 'f', 't', 'g', 'y', 'h', 'u', 'j', 'k', 'o', 'l', 'p']);
+    
+    function forwardKey(e) {
+      if (keysToForward.has(e.key.toLowerCase())) {
+        // e.preventDefault(); // Optional: prevent scrolling/etc if needed
+        if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.keyHandler) {
+          window.webkit.messageHandlers.keyHandler.postMessage({
+            key: e.key.toLowerCase(),
+            type: e.type
+          });
+        }
+      }
+    }
+    
+    document.addEventListener('keydown', forwardKey);
+    document.addEventListener('keyup', forwardKey);
+
     // Keyboard shortcuts
     document.addEventListener('keydown', (e) => {
       if (e.key === 'f') toggleFullscreen();
