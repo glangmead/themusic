@@ -214,7 +214,7 @@
     <h1>Butterchurn</h1>
     <p>WebGL music visualizer powered by Milkdrop. Tap to start visualizing.</p>
     <button class="start-btn" id="startBtn">
-      <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></svg>
       <span>Start</span>
     </button>
     <div class="error-msg" id="errorMsg"></div>
@@ -226,19 +226,19 @@
     </div>
     <div class="controls-row">
       <button id="randomBtn" title="Random Preset">
-        <svg viewBox="0 0 24 24"><path d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z"></svg>
         <span>Random</span>
       </button>
       <button id="cycleBtn" title="Auto-cycle Presets">
-        <svg viewBox="0 0 24 24"><path d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46C19.54 15.03 20 13.57 20 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74C4.46 8.97 4 10.43 4 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46C19.54 15.03 20 13.57 20 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74C4.46 8.97 4 10.43 4 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3z"></svg>
         <span>Cycle</span>
       </button>
       <button id="fullscreenBtn" title="Fullscreen">
-        <svg viewBox="0 0 24 24"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"></svg>
         <span>Fullscreen</span>
       </button>
       <button id="hideBtn" title="Hide Controls">
-        <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></svg>
         <span>Hide</span>
       </button>
     </div>
@@ -247,8 +247,6 @@
   <script type="module">
     import butterchurn from './butterchurn.js';
     import butterchurnPresets from './butterchurn-presets.js';
-    
-    console.log("Modules imported");
     
     const canvas = document.getElementById('canvas');
     const startOverlay = document.getElementById('startOverlay');
@@ -263,7 +261,7 @@
     
     let audioContext;
     let visualizer;
-    let processor; // Global to prevent GC
+    let audioWorkletNode; // The modern background audio pump
     let presets;
     let presetKeys;
     let currentPreset;
@@ -271,33 +269,65 @@
     let cycleInterval;
     let isCycling = false;
     let controlsHidden = false;
-    
-    // Audio Queue
-    const audioQueue = [];
-    const BUFFER_SIZE = 1024; // Lower buffer size = lower latency
-    let pushCount = 0;
-    
-    // Receive samples from Swift
-    // Samples are Interleaved Stereo [L, R, L, R...]
-    window.pushSamples = (samples) => {
-        pushCount++;
-        if (pushCount % 60 === 0) {
-            console.log("Received samples. Queue size:", audioQueue.length);
+
+    // Define the AudioWorklet code as a string to avoid needing a separate file
+    const workletCode = `
+      class AudioPumpProcessor extends AudioWorkletProcessor {
+        constructor() {
+          super();
+          this.buffer = [];
+          this.port.onmessage = (e) => {
+            // Received samples from Main Thread [L, R, L, R...]
+            this.buffer.push(...e.data);
+            
+            // AGGRESSIVE SYNC: If we have more than 70ms of audio, drop the oldest.
+            // 44100Hz * 0.07s * 2 channels = ~6174 items
+            const maxBufferSize = 6144;
+            if (this.buffer.length > maxBufferSize) {
+                const dropCount = this.buffer.length - maxBufferSize;
+                const alignDrop = dropCount + (dropCount % 2);
+                this.buffer.splice(0, alignDrop);
+            }
+          };
         }
-        // samples is Array of numbers
-        audioQueue.push(...samples);
-        
-        // AGGRESSIVE PRUNING for Real-Time Sync
-        // If we have more than 3 buffers worth of data, we are lagging.
-        // Drop the oldest data to catch up.
-        // BUFFER_SIZE frames * 2 channels * 3 buffers
-        const maxQueueSize = BUFFER_SIZE * 2 * 3;
-        if (audioQueue.length > maxQueueSize) {
-            const dropCount = audioQueue.length - maxQueueSize;
-            // Ensure we drop an even number to keep stereo alignment
-            const alignDrop = dropCount + (dropCount % 2);
-            audioQueue.splice(0, alignDrop);
-            // console.log("Dropped " + alignDrop + " samples to sync.");
+
+        process(inputs, outputs, parameters) {
+          const outputL = outputs[0][0];
+          const outputR = outputs[0][1];
+          const frameCount = outputL.length;
+          const itemsNeeded = frameCount * 2;
+
+          if (this.buffer.length >= itemsNeeded) {
+            const chunk = this.buffer.splice(0, itemsNeeded);
+            for (let i = 0; i < frameCount; i++) {
+              outputL[i] = chunk[i * 2];
+              outputR[i] = chunk[i * 2 + 1];
+            }
+          } else {
+            // Underrun: fill with silence or partial buffer
+            outputL.fill(0);
+            outputR.fill(0);
+            if (this.buffer.length > 0) {
+                const available = this.buffer.length;
+                const chunk = this.buffer.splice(0, available);
+                const frames = Math.floor(available / 2);
+                for (let i = 0; i < frames; i++) {
+                    outputL[i] = chunk[i * 2];
+                    outputR[i] = chunk[i * 2 + 1];
+                }
+            }
+          }
+          return true; // Keep the worklet alive
+        }
+      }
+      registerProcessor('audio-pump', AudioPumpProcessor);
+    `;
+
+    // Receive samples from Swift
+    window.pushSamples = (samples) => {
+        if (audioWorkletNode) {
+            // Forward directly to the background thread
+            audioWorkletNode.port.postMessage(samples);
         }
     };
     
@@ -305,7 +335,7 @@
     function debugLog(msg) {
         console.log(msg);
         errorMsg.style.display = 'block';
-        errorMsg.style.color = '#aaa'; // Grey text for info
+        errorMsg.style.color = '#aaa';
         errorMsg.innerHTML += msg + '<br>';
     }
 
@@ -340,7 +370,7 @@
     // Random preset
     function randomPreset() {
       if (!presetKeys || presetKeys.length === 0) return;
-      const idx = Math.floor(Math.random() * presetKeys.length);
+      const idx = 0//Math.floor(Math.random() * presetKeys.length);
       loadPreset(presetKeys[idx]);
     }
     
@@ -419,109 +449,66 @@
       
       try {
         if (typeof butterchurn === 'undefined') {
-            throw new Error("Butterchurn library not loaded (undefined).");
-        }
-        if (typeof butterchurnPresets === 'undefined') {
-            throw new Error("Butterchurn Presets not loaded (undefined).");
+            throw new Error("Butterchurn library not loaded.");
         }
 
-        // Create audio context
         audioContext = new (window.AudioContext || window.webkitAudioContext)();
-        debugLog("AudioContext created. State: " + audioContext.state);
+        debugLog("AudioContext created.");
         
-        // Resume if suspended (iOS requirement)
+        // Warm-up / Unlock routine for Safari/iOS
+        const warmUpBuffer = audioContext.createBuffer(1, 1, 22050);
+        const warmUpSource = audioContext.createBufferSource();
+        warmUpSource.buffer = warmUpBuffer;
+        warmUpSource.connect(audioContext.destination);
+        warmUpSource.start(0);
+        debugLog("Warm-up played.");
+        
+        // Load the AudioWorklet
+        const blob = new Blob([workletCode], { type: 'application/javascript' });
+        const url = URL.createObjectURL(blob);
+        await audioContext.audioWorklet.addModule(url);
+        debugLog("AudioWorklet loaded.");
+
         if (audioContext.state === 'suspended') {
-          debugLog("Resuming AudioContext...");
-          const resumePromise = audioContext.resume();
-          const timeoutPromise = new Promise((resolve) => setTimeout(() => resolve('timeout'), 2000));
-          const result = await Promise.race([resumePromise, timeoutPromise]);
-          if (result === 'timeout') {
-              debugLog("WARNING: AudioContext resume timed out.");
-          } else {
-              debugLog("AudioContext resumed. State: " + audioContext.state);
-          }
+          await audioContext.resume();
+          debugLog("AudioContext resumed.");
         }
-        
-        // Create ScriptProcessor
-        // 0 inputs, 2 outputs (Stereo for visualizer)
-        processor = audioContext.createScriptProcessor(BUFFER_SIZE, 0, 2);
-        
-        let processCount = 0;
-        let firstProcess = true;
-        processor.onaudioprocess = (e) => {
-            if (firstProcess) {
-                console.log("onaudioprocess STARTED!");
-                debugLog("Audio pump is active.");
-                firstProcess = false;
-            }
-            processCount++;
-            
-            const outputL = e.outputBuffer.getChannelData(0);
-            const outputR = e.outputBuffer.getChannelData(1);
-            
-            // We need BUFFER_SIZE frames. Stereo data = BUFFER_SIZE * 2 items.
-            const needed = BUFFER_SIZE * 2;
-            
-            if (audioQueue.length >= needed) {
-                const chunk = audioQueue.splice(0, needed);
-                for (let i = 0; i < BUFFER_SIZE; i++) {
-                    outputL[i] = chunk[i * 2];
-                    outputR[i] = chunk[i * 2 + 1];
-                }
-            } else {
-                // Partial buffer or underrun
-                outputL.fill(0);
-                outputR.fill(0);
-                
-                if (audioQueue.length > 0) {
-                    const available = audioQueue.length;
-                    const chunk = audioQueue.splice(0, available);
-                    const frames = Math.floor(available / 2);
-                    for (let i = 0; i < frames; i++) {
-                        outputL[i] = chunk[i * 2];
-                        outputR[i] = chunk[i * 2 + 1];
-                    }
-                }
-            }
-        };
+
+        // Create the background audio node
+        audioWorkletNode = new AudioWorkletNode(audioContext, 'audio-pump', {
+            numberOfInputs: 0,
+            numberOfOutputs: 1,
+            outputChannelCount: [2]
+        });
         
         const silentGain = audioContext.createGain();
         silentGain.gain.value = 0;
-        processor.connect(silentGain);
+        audioWorkletNode.connect(silentGain);
         silentGain.connect(audioContext.destination);
-        debugLog("Audio graph connected");
+        debugLog("Audio pump active.");
         
         // Initialize visualizer
         resize();
-        debugLog("Creating visualizer...");
         visualizer = butterchurn.createVisualizer(audioContext, canvas, {
           width: canvas.width,
           height: canvas.height,
           pixelRatio: 1,
           textureRatio: 1
         });
-        debugLog("Visualizer instance ready");
         
-        // Connect our processor
-        visualizer.connectAudio(processor);
+        // Connect our background pump to visualizer
+        visualizer.connectAudio(audioWorkletNode);
         
-        // Load presets
-        debugLog("Loading presets...");
         initPresets();
         randomPreset();
-        debugLog("Presets loaded");
         
-        // Hide overlay, start rendering
-        debugLog("Starting render loop...");
-        setTimeout(() => {
-            startOverlay.classList.add('hidden');
-            render();
-        }, 500);
+        startOverlay.classList.add('hidden');
+        render();
+        debugLog("Visualizer running.");
         
-        // Watchdog: Check if context is running
+        // Watchdog
         setInterval(() => {
             if (audioContext && audioContext.state !== 'running') {
-                console.warn("Watchdog: AudioContext is " + audioContext.state + ". Attempting resume...");
                 audioContext.resume();
             }
         }, 2000);
@@ -529,8 +516,7 @@
       } catch (err) {
         console.error('CRITICAL ERROR:', err);
         startBtn.disabled = false;
-        startBtn.textContent = "Retry Start";
-        errorMsg.style.color = '#ff6b6b'; // Red for error
+        errorMsg.style.color = '#ff6b6b';
         errorMsg.textContent = 'Error: ' + err.message;
         errorMsg.classList.add('visible');
       }
@@ -550,7 +536,6 @@
     
     function forwardKey(e) {
       if (keysToForward.has(e.key.toLowerCase())) {
-        // e.preventDefault(); // Optional: prevent scrolling/etc if needed
         if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.keyHandler) {
           window.webkit.messageHandlers.keyHandler.postMessage({
             key: e.key.toLowerCase(),
