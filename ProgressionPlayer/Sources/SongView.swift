@@ -15,6 +15,7 @@ struct SongView: View {
   @State private var songURL: URL?
   @State private var playbackRate: Float = 1.0
   @State private var isShowingSynth = false
+  @State private var isShowingVisualizer = false
   @State private var noteOffset: Float = 0
 
   var body: some View {
@@ -37,6 +38,13 @@ struct SongView: View {
           ToolbarItem() {
             Button("Synth") {
               isShowingSynth = true
+            }
+          }
+          ToolbarItem() {
+            Button {
+              isShowingVisualizer = true
+            } label: {
+              Label("Visualizer", systemImage: "sparkles.tv")
             }
           }
           ToolbarItem() {
@@ -86,6 +94,20 @@ struct SongView: View {
     }
     .sheet(isPresented: $isShowingSynth) {
       SyntacticSynthView(synth: synth)
+    }
+    .fullScreenCover(isPresented: $isShowingVisualizer) {
+      ZStack(alignment: .topTrailing) {
+        VisualizerView(synth: synth)
+          .edgesIgnoringSafeArea(.all)
+        Button {
+          isShowingVisualizer = false
+        } label: {
+          Image(systemName: "xmark.circle.fill")
+            .font(.system(size: 30))
+            .foregroundColor(.white)
+            .padding()
+        }
+      }
     }
 
   }

@@ -65,6 +65,41 @@ class SpatialAudioEngine {
     try audioEngine.start()
   }
   
+  func installTap(tapBlock: @escaping ([Float]) -> Void) {
+    let node = envNode
+    let format = node.outputFormat(forBus: 0)
+    node.removeTap(onBus: 0)
+    
+    node.installTap(onBus: 0, bufferSize: 1024, format: format) { buffer, time in
+      guard let channelData = buffer.floatChannelData else { return }
+      let frameLength = Int(buffer.frameLength)
+      let channels = Int(format.channelCount)
+      
+      var samples = [Float](repeating: 0, count: frameLength)
+      // Unsafe pointer access is fast, but let's stick to simple indexing for safety first
+      // Assuming channelData is valid for 'channels'
+      if channels > 0 {
+        let ptr = channelData[0]
+        for i in 0..<frameLength {
+          samples[i] = ptr[i]
+        }
+      }
+      // If stereo, average with second channel?
+      if channels > 1 {
+         let ptr2 = channelData[1]
+         for i in 0..<frameLength {
+           samples[i] = (samples[i] + ptr2[i]) / 2.0
+         }
+      }
+      
+      tapBlock(samples)
+    }
+  }
+  
+  func removeTap() {
+    envNode.removeTap(onBus: 0)
+  }
+  
   func stop() {
     audioEngine.stop()
   }
