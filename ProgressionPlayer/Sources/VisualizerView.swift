@@ -8,8 +8,21 @@
 import SwiftUI
 import WebKit
 
+class VisualizerWebView: WKWebView {
+  // Hide the input accessory view (the bar above the keyboard)
+  override var inputAccessoryView: UIView? {
+    return nil
+  }
+  
+  // Also try to prevent it from becoming first responder if that's the issue
+  override var canBecomeFirstResponder: Bool {
+    return true // Needs to be true to receive key events, but we want to suppress the UI
+  }
+}
+
 struct VisualizerView: UIViewRepresentable {
   var synth: SyntacticSynth
+  @AppStorage("lastVisualizerPreset") private var lastPreset: String = ""
   
   func makeUIView(context: Context) -> WKWebView {
     let config = WKWebViewConfiguration()
@@ -20,9 +33,10 @@ struct VisualizerView: UIViewRepresentable {
     
     let userContentController = WKUserContentController()
     userContentController.add(context.coordinator, name: "keyHandler")
+    userContentController.add(context.coordinator, name: "presetHandler")
     config.userContentController = userContentController
     
-    let webView = WKWebView(frame: .zero, configuration: config)
+    let webView = VisualizerWebView(frame: .zero, configuration: config)
     webView.isOpaque = false
     webView.isInspectable = true
     webView.backgroundColor = .black
@@ -45,7 +59,9 @@ struct VisualizerView: UIViewRepresentable {
       
       webView.loadFileURL(indexURL, allowingReadAccessTo: indexURL.deletingLastPathComponent())
     }
+    
     context.coordinator.setupAudioTap(webView: webView)
+    context.coordinator.parent = self // Link back to update AppStorage
     
     return webView
   }
@@ -58,24 +74,32 @@ struct VisualizerView: UIViewRepresentable {
   }
   
   func makeCoordinator() -> Coordinator {
-    Coordinator(synth: synth)
+    Coordinator(synth: synth, initialPreset: lastPreset)
   }
   
   class Coordinator: NSObject, WKNavigationDelegate, WKScriptMessageHandler {
     let synth: SyntacticSynth
     weak var webView: WKWebView?
+    var parent: VisualizerView?
+    var initialPreset: String
     
     var pendingSamples: [Float] = []
     let sendThreshold = 1024 // Accumulate about 2 tap buffers before sending
     
-    init(synth: SyntacticSynth) {
+    init(synth: SyntacticSynth, initialPreset: String) {
       self.synth = synth
+      self.initialPreset = initialPreset
     }
     
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
       if message.name == "keyHandler", let dict = message.body as? [String: String],
          let key = dict["key"], let type = dict["type"] {
         playKey(key: key, type: type)
+      } else if message.name == "presetHandler", let presetName = message.body as? String {
+        // Save preset to AppStorage via parent
+        DispatchQueue.main.async {
+          self.parent?.lastPreset = presetName
+        }
       }
     }
     
@@ -85,12 +109,6 @@ struct VisualizerView: UIViewRepresentable {
       ]
       
       if let noteValue = charToMidiNote[key] {
-        // Handle repeated keydowns (auto-repeat) by ignoring them if we wanted,
-        // but for now let's just re-trigger or rely on synth logic.
-        // Actually, SwiftUI's onKeyPress handles phases nicely. JS gives us repeated "keydowns".
-        // We should track state or just let noteOn fire repeatedly (might re-trigger envelope).
-        // Ideally we only fire noteOn if it wasn't already pressed.
-        
         if type == "keydown" {
           synth.voicePool?.noteOn(MidiNote(note: UInt8(noteValue), velocity: 100))
         } else if type == "keyup" {
@@ -101,8 +119,18 @@ struct VisualizerView: UIViewRepresentable {
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
       print("Visualizer webview finished loading index.html")
+      // Inject the initial preset name safely using Base64
+      if !initialPreset.isEmpty {
+        if let data = initialPreset.data(using: .utf8) {
+          let b64 = data.base64EncodedString()
+          let script = "window.initialPresetNameB64 = '\(b64)';"
+          webView.evaluateJavaScript(script, completionHandler: nil)
+        }
+      }
+      
+      // Auto-start the visualizer
+      webView.evaluateJavaScript("if(window.startVisualizer) window.startVisualizer();", completionHandler: nil)
     }
-    
     func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
       print("Visualizer webview failed loading: \(error.localizedDescription)")
     }
@@ -114,14 +142,28 @@ struct VisualizerView: UIViewRepresentable {
         guard let self = self else { return }
         
         // Append to buffer
+        // Boost gain slightly for visualizer visibility
         // Data is Interleaved Stereo [L, R, L, R...]
-        self.pendingSamples.append(contentsOf: samples)
+        let boostedSamples = samples.map { $0 * 5.0 }
+        self.pendingSamples.append(contentsOf: boostedSamples)
         
         // Only send if we have enough data to make the bridge call worth it
-        // Threshold 2048 floats = 1024 stereo frames
+        // Threshold 1024 floats = 512 stereo frames
         if self.pendingSamples.count >= self.sendThreshold {
           let samplesToSend = self.pendingSamples
           self.pendingSamples.removeAll(keepingCapacity: true)
+          
+          // Debug: Calculate amplitude of what we are sending
+          /*
+           var total: Float = 0
+           for sample in samplesToSend {
+           total += abs(sample)
+           }
+           let avg = total / Float(samplesToSend.count)
+           if avg > 0.001 {
+           print("Visualizer sending \(samplesToSend.count) samples. Avg Amp: \(avg)")
+           }
+           */
           
           // Convert array to JSON string
           let jsonString = samplesToSend.description
