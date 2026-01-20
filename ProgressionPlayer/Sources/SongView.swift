@@ -99,14 +99,6 @@ struct SongView: View {
       ZStack(alignment: .topTrailing) {
         VisualizerView(synth: synth)
           .edgesIgnoringSafeArea(.all)
-        Button {
-          isShowingVisualizer = false
-        } label: {
-          Image(systemName: "xmark.circle.fill")
-            .font(.system(size: 30))
-            .foregroundColor(.white)
-            .padding()
-        }
       }
     }
 

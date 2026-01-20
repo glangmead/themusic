@@ -23,6 +23,7 @@ class VisualizerWebView: WKWebView {
 struct VisualizerView: UIViewRepresentable {
   var synth: SyntacticSynth
   @AppStorage("lastVisualizerPreset") private var lastPreset: String = ""
+  @Environment(\.dismiss) var dismiss
   
   func makeUIView(context: Context) -> WKWebView {
     let config = WKWebViewConfiguration()
@@ -34,6 +35,7 @@ struct VisualizerView: UIViewRepresentable {
     let userContentController = WKUserContentController()
     userContentController.add(context.coordinator, name: "keyHandler")
     userContentController.add(context.coordinator, name: "presetHandler")
+    userContentController.add(context.coordinator, name: "closeViz")
     config.userContentController = userContentController
     
     let webView = VisualizerWebView(frame: .zero, configuration: config)
@@ -100,6 +102,8 @@ struct VisualizerView: UIViewRepresentable {
         DispatchQueue.main.async {
           self.parent?.lastPreset = presetName
         }
+      } else if message.name == "closeViz" {
+        self.parent?.dismiss()
       }
     }
     
@@ -127,9 +131,6 @@ struct VisualizerView: UIViewRepresentable {
           webView.evaluateJavaScript(script, completionHandler: nil)
         }
       }
-      
-      // Auto-start the visualizer
-      webView.evaluateJavaScript("if(window.startVisualizer) window.startVisualizer();", completionHandler: nil)
     }
     func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
       print("Visualizer webview failed loading: \(error.localizedDescription)")
