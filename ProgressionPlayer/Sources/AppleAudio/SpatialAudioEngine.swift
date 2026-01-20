@@ -75,21 +75,23 @@ class SpatialAudioEngine {
       let frameLength = Int(buffer.frameLength)
       let channels = Int(format.channelCount)
       
-      var samples = [Float](repeating: 0, count: frameLength)
-      // Unsafe pointer access is fast, but let's stick to simple indexing for safety first
-      // Assuming channelData is valid for 'channels'
-      if channels > 0 {
-        let ptr = channelData[0]
-        for i in 0..<frameLength {
-          samples[i] = ptr[i]
-        }
-      }
-      // If stereo, average with second channel?
-      if channels > 1 {
-         let ptr2 = channelData[1]
-         for i in 0..<frameLength {
-           samples[i] = (samples[i] + ptr2[i]) / 2.0
-         }
+      // Prepare interleaved buffer
+      // If mono, size = frameLength. If stereo, size = frameLength * 2.
+      let outputChannels = min(channels, 2)
+      var samples = [Float](repeating: 0, count: frameLength * outputChannels)
+      
+      if outputChannels == 2 {
+          let ptrL = channelData[0]
+          let ptrR = channelData[1]
+          for i in 0..<frameLength {
+              samples[i*2] = ptrL[i]
+              samples[i*2+1] = ptrR[i]
+          }
+      } else if outputChannels == 1 {
+          let ptr = channelData[0]
+          for i in 0..<frameLength {
+              samples[i] = ptr[i]
+          }
       }
       
       tapBlock(samples)

@@ -9,83 +9,113 @@ import SwiftUI
 import WebKit
 
 struct VisualizerView: UIViewRepresentable {
-    var synth: SyntacticSynth
+  var synth: SyntacticSynth
+  
+  func makeUIView(context: Context) -> WKWebView {
+    let config = WKWebViewConfiguration()
+    config.preferences.setValue(true, forKey: "allowFileAccessFromFileURLs")
+    config.setValue(true, forKey: "allowUniversalAccessFromFileURLs")
+    config.mediaTypesRequiringUserActionForPlayback = []
+    config.allowsInlineMediaPlayback = true
     
-    func makeUIView(context: Context) -> WKWebView {
-        let config = WKWebViewConfiguration()
-        config.preferences.setValue(true, forKey: "allowFileAccessFromFileURLs")
-        
-        let webView = WKWebView(frame: .zero, configuration: config)
-        webView.isOpaque = false
-        webView.backgroundColor = .black
-        
-        if let indexURL = Bundle.main.url(forResource: "index", withExtension: "html") {
-            webView.loadFileURL(indexURL, allowingReadAccessTo: indexURL.deletingLastPathComponent())
-        }
-        
-        context.coordinator.setupAudioTap(webView: webView)
-        
-        return webView
+    let webView = WKWebView(frame: .zero, configuration: config)
+    webView.isOpaque = false
+    webView.isInspectable = true
+    webView.backgroundColor = .black
+    webView.navigationDelegate = context.coordinator
+    
+    if let indexURL = Bundle.main.url(forResource: "index", withExtension: "html") {
+      print("Visualizer loading index.html from \(indexURL)")
+      
+      // Debug: Check for JS files
+      if let jsURL = Bundle.main.url(forResource: "butterchurn", withExtension: "js") {
+        print("Found butterchurn.js at \(jsURL)")
+      } else {
+        print("ERROR: butterchurn.js NOT found in bundle")
+      }
+      if let presetsURL = Bundle.main.url(forResource: "butterchurn-presets", withExtension: "js") {
+        print("Found butterchurn-presets.js at \(presetsURL)")
+      } else {
+        print("ERROR: butterchurn-presets.js NOT found in bundle")
+      }
+      
+      webView.loadFileURL(indexURL, allowingReadAccessTo: indexURL.deletingLastPathComponent())
+    }
+    context.coordinator.setupAudioTap(webView: webView)
+    
+    return webView
+  }
+  
+  func updateUIView(_ uiView: WKWebView, context: Context) {
+  }
+  
+  static func dismantleUIView(_ uiView: WKWebView, coordinator: Coordinator) {
+    coordinator.stopAudioTap()
+  }
+  
+  func makeCoordinator() -> Coordinator {
+    Coordinator(synth: synth)
+  }
+  
+  class Coordinator: NSObject, WKNavigationDelegate {
+    let synth: SyntacticSynth
+    weak var webView: WKWebView?
+    
+    var pendingSamples: [Float] = []
+    let sendThreshold = 2048 // Accumulate about 2 tap buffers before sending
+    
+    init(synth: SyntacticSynth) {
+      self.synth = synth
     }
     
-    func updateUIView(_ uiView: WKWebView, context: Context) {
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+      print("Visualizer webview finished loading index.html")
     }
     
-    static func dismantleUIView(_ uiView: WKWebView, coordinator: Coordinator) {
-        coordinator.stopAudioTap()
+    func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
+      print("Visualizer webview failed loading: \(error.localizedDescription)")
     }
     
-    func makeCoordinator() -> Coordinator {
-        Coordinator(synth: synth)
-    }
-    
-    class Coordinator {
-        let synth: SyntacticSynth
-        weak var webView: WKWebView?
+    func setupAudioTap(webView: WKWebView) {
+      self.webView = webView
+      
+      synth.engine.installTap { [weak self] samples in
+        guard let self = self else { return }
         
-        var pendingSamples: [Float] = []
-        let sendThreshold = 2048 // Accumulate about 2 tap buffers before sending
-        
-        init(synth: SyntacticSynth) {
-            self.synth = synth
-        }
-        
-        func setupAudioTap(webView: WKWebView) {
-            self.webView = webView
-            
-            synth.engine.installTap { [weak self] samples in
-                guard let self = self else { return }
-                
                 // Append to buffer
-                self.pendingSamples.append(contentsOf: samples)
+                // Boost gain slightly for visualizer visibility
+                // Data is Interleaved Stereo [L, R, L, R...]
+                let boostedSamples = samples//.map { $0 * 5.0 }
+                self.pendingSamples.append(contentsOf: boostedSamples)
                 
                 // Only send if we have enough data to make the bridge call worth it
+                // Threshold 2048 floats = 1024 stereo frames
                 if self.pendingSamples.count >= self.sendThreshold {
-                    let samplesToSend = self.pendingSamples
-                    self.pendingSamples.removeAll(keepingCapacity: true)
-                    
-                    // Debug: Calculate amplitude of what we are sending
-                    var total: Float = 0
-                    for sample in samplesToSend {
-                        total += abs(sample)
-                    }
-                    let avg = total / Float(samplesToSend.count)
-                    if avg > 0.001 {
-                        // print("Visualizer sending \(samplesToSend.count) samples. Avg Amp: \(avg)")
-                    }
-                    
-                    // Convert array to JSON string
-                    let jsonString = samplesToSend.description
-                    
-                    DispatchQueue.main.async {
-                        self.webView?.evaluateJavaScript("if(window.pushSamples) window.pushSamples(\(jsonString))", completionHandler: nil)
-                    }
-                }
-            }
+          let samplesToSend = self.pendingSamples
+          self.pendingSamples.removeAll(keepingCapacity: true)
+          
+          // Debug: Calculate amplitude of what we are sending
+          var total: Float = 0
+          for sample in samplesToSend {
+            total += abs(sample)
+          }
+          let avg = total / Float(samplesToSend.count)
+          if avg > 0.001 {
+            print("Visualizer sending \(samplesToSend.count) samples. Avg Amp: \(avg)")
+          }
+          
+          // Convert array to JSON string
+          let jsonString = samplesToSend.description
+          
+          DispatchQueue.main.async {
+            self.webView?.evaluateJavaScript("if(window.pushSamples) window.pushSamples(\(jsonString))", completionHandler: nil)
+          }
         }
-        
-        func stopAudioTap() {
-            synth.engine.removeTap()
-        }
+      }
     }
+    
+    func stopAudioTap() {
+      synth.engine.removeTap()
+    }
+  }
 }
