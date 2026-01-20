@@ -7,8 +7,6 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <title>Butterchurn Visualizer</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
-    
     * {
       margin: 0;
       padding: 0;
@@ -211,7 +209,7 @@
     <h1>Butterchurn</h1>
     <p>WebGL music visualizer powered by Milkdrop. Tap to start visualizing.</p>
     <button class="start-btn" id="startBtn">
-      <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></svg>
       <span>Start</span>
     </button>
     <div class="error-msg" id="errorMsg"></div>
@@ -223,19 +221,19 @@
     </div>
     <div class="controls-row">
       <button id="randomBtn" title="Random Preset">
-        <svg viewBox="0 0 24 24"><path d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z"></svg>
         <span>Random</span>
       </button>
       <button id="cycleBtn" title="Auto-cycle Presets">
-        <svg viewBox="0 0 24 24"><path d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46C19.54 15.03 20 13.57 20 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74C4.46 8.97 4 10.43 4 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46C19.54 15.03 20 13.57 20 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74C4.46 8.97 4 10.43 4 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3z"></svg>
         <span>Cycle</span>
       </button>
       <button id="fullscreenBtn" title="Fullscreen">
-        <svg viewBox="0 0 24 24"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"></svg>
         <span>Fullscreen</span>
       </button>
       <button id="hideBtn" title="Hide Controls">
-        <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></svg>
         <span>Hide</span>
       </button>
     </div>
@@ -244,6 +242,8 @@
   <script type="module">
     import butterchurn from 'https://esm.sh/butterchurn@2.6.7';
     import butterchurnPresets from 'https://esm.sh/butterchurn-presets@2.4.7';
+    
+    console.log("Modules imported");
     
     const canvas = document.getElementById('canvas');
     const startOverlay = document.getElementById('startOverlay');
@@ -269,9 +269,14 @@
     // Audio Queue
     const audioQueue = [];
     const BUFFER_SIZE = 2048;
+    let pushCount = 0;
     
     // Receive samples from Swift
     window.pushSamples = (samples) => {
+        pushCount++;
+        if (pushCount % 60 === 0) {
+            console.log("Received samples. Queue size:", audioQueue.length, "Latest sample:", samples[0]);
+        }
         // samples is Array of numbers
         audioQueue.push(...samples);
         // Limit queue size to prevent memory explosion if not consumed
@@ -282,6 +287,10 @@
     
     // Initialize presets dropdown
     function initPresets() {
+      if (!butterchurnPresets) {
+          console.error("Butterchurn Presets not loaded");
+          return;
+      }
       presets = butterchurnPresets.getPresets();
       presetKeys = Object.keys(presets).sort((a, b) => 
         a.toLowerCase().localeCompare(b.toLowerCase())
@@ -306,6 +315,7 @@
     
     // Random preset
     function randomPreset() {
+      if (!presetKeys || presetKeys.length === 0) return;
       const idx = Math.floor(Math.random() * presetKeys.length);
       loadPreset(presetKeys[idx]);
     }
@@ -379,9 +389,15 @@
     
     // Main start function
     async function start() {
+      console.log("Start clicked");
       try {
+        if (!butterchurn) {
+            throw new Error("Butterchurn library not loaded.");
+        }
+
         // Create audio context (must be after user gesture for iOS)
         audioContext = new (window.AudioContext || window.webkitAudioContext)();
+        console.log("AudioContext created", audioContext.state);
         
         // Resume if suspended (iOS requirement)
         if (audioContext.state === 'suspended') {
@@ -428,6 +444,7 @@
           pixelRatio: 1,
           textureRatio: 1
         });
+        console.log("Visualizer created");
         
         // Connect our processor to visualizer
         visualizer.connectAudio(processor);
@@ -439,9 +456,10 @@
         // Hide overlay, start rendering
         startOverlay.classList.add('hidden');
         render();
+        console.log("Render loop started");
         
       } catch (err) {
-        console.error('Error:', err);
+        console.error('Error in start:', err);
         let msg = 'Error starting visualizer: ' + err.message;
         errorMsg.textContent = msg;
         errorMsg.classList.add('visible');
@@ -472,6 +490,17 @@
         loadPreset(presetKeys[idx]);
       }
     });
+
+    window.onerror = function(msg, url, line, col, error) {
+       console.error("Window Error: " + msg + "\nurl: " + url + "\nline: " + line);
+       const div = document.createElement("div");
+       div.style.color = "red";
+       div.style.position = "absolute";
+       div.style.top = "0";
+       div.style.zIndex = "1000";
+       div.innerText = "Error: " + msg;
+       document.body.appendChild(div);
+    };
   </script>
 </body>
 </html>
