@@ -65,6 +65,45 @@ class SpatialAudioEngine {
     try audioEngine.start()
   }
   
+  func installTap(tapBlock: @escaping ([Float]) -> Void) {
+    let node = envNode
+    let format = node.outputFormat(forBus: 0)
+    node.removeTap(onBus: 0)
+    
+    // public typealias AVAudioNodeTapBlock = (AVAudioPCMBuffer, AVAudioTime) -> Void
+    node.installTap(onBus: 0, bufferSize: 1024, format: format) { buffer, time in
+      guard let channelData = buffer.floatChannelData else { return }
+      let frameLength = Int(buffer.frameLength)
+      let channels = Int(format.channelCount)
+      
+      // Prepare interleaved buffer, to be re-interleaved by JavaScript
+      // If mono, size = frameLength. If stereo, size = frameLength * 2.
+      let outputChannels = min(channels, 2)
+      var samples = [Float](repeating: 0, count: frameLength * outputChannels)
+      
+      if outputChannels == 2 {
+          let ptrL = channelData[0]
+          let ptrR = channelData[1]
+          for i in 0..<frameLength {
+              samples[i*2] = ptrL[i]
+              samples[i*2+1] = ptrR[i]
+          }
+      } else if outputChannels == 1 {
+          let ptr = channelData[0]
+          for i in 0..<frameLength {
+              samples[i] = ptr[i]
+          }
+      }
+      
+      // call the provided closure
+      tapBlock(samples)
+    }
+  }
+  
+  func removeTap() {
+    envNode.removeTap(onBus: 0)
+  }
+  
   func stop() {
     audioEngine.stop()
   }

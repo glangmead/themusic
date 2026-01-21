@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Butterchurn Visualizer</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    :root {
+      --bg: #0a0a0c;
+      --surface: rgba(255, 255, 255, 0.05);
+      --surface-hover: rgba(255, 255, 255, 0.1);
+      --text: #e0e0e0;
+      --text-dim: #666;
+      --accent: #00ff88;
+      --accent-dim: rgba(0, 255, 136, 0.2);
+    }
+    
+    body {
+      font-family: 'JetBrains Mono', monospace;
+      background: var(--bg);
+      color: var(--text);
+      overflow: hidden;
+      height: 100vh;
+      height: 100dvh;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+    
+    #canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+    
+    .controls {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 20px;
+      background: linear-gradient(transparent, rgba(0,0,0,0.8) 30%);
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      transition: opacity 0.3s, transform 0.3s;
+    }
+    
+    .controls.hidden {
+      opacity: 0;
+      transform: translateY(20px);
+      pointer-events: none;
+    }
+    
+    .controls-row {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+    
+    button {
+      font-family: inherit;
+      font-size: 13px;
+      padding: 12px 20px;
+      border: 1px solid var(--surface-hover);
+      border-radius: 8px;
+      background: var(--surface);
+      color: var(--text);
+      cursor: pointer;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      white-space: nowrap;
+    }
+    
+    button:hover {
+      background: var(--surface-hover);
+      border-color: var(--accent-dim);
+    }
+    
+    button:active {
+      transform: scale(0.97);
+    }
+    
+    button.active {
+      background: var(--accent-dim);
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+    
+    button svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+    }
+    
+    /* Custom Preset Menu Styles */
+    .preset-overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 300px;
+      max-width: 80%;
+      background: rgba(10, 10, 12, 0.95);
+      border-left: 1px solid var(--surface-hover);
+      z-index: 20;
+      display: flex;
+      flex-direction: column;
+      transform: translateX(100%);
+      transition: transform 0.3s ease;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+    
+    .preset-overlay.visible {
+      transform: translateX(0);
+    }
+    
+    .preset-header {
+      padding: 20px;
+      border-bottom: 1px solid var(--surface-hover);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0,0,0,0.3);
+    }
+    
+    .preset-header h2 {
+      font-size: 16px;
+      color: var(--accent);
+    }
+    
+    .close-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-dim);
+      padding: 8px;
+      cursor: pointer;
+    }
+    
+    .close-btn:hover {
+      color: var(--text);
+      background: var(--surface-hover);
+    }
+    
+    .preset-list {
+      flex: 1;
+      overflow-y: auto;
+      padding: 10px 0;
+      -webkit-overflow-scrolling: touch;
+    }
+    
+    .preset-item {
+      padding: 12px 20px;
+      cursor: pointer;
+      color: var(--text-dim);
+      font-size: 13px;
+      border-bottom: 1px solid rgba(255,255,255,0.02);
+      transition: all 0.2s;
+    }
+    
+    .preset-item:hover {
+      background: var(--surface-hover);
+      color: var(--text);
+    }
+    
+    .preset-item.active {
+      color: var(--accent);
+      background: var(--accent-dim);
+      border-left: 3px solid var(--accent);
+    }
+    
+    .start-overlay {
+      position: fixed;
+      inset: 0;
+      background: var(--bg);
+      z-index: 100;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      padding: 40px;
+      text-align: center;
+    }
+    
+    .start-overlay.hidden {
+      display: none;
+    }
+    
+    .start-overlay h1 {
+      font-size: clamp(24px, 6vw, 48px);
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--accent), #00ccff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .start-overlay p {
+      color: var(--text-dim);
+      max-width: 400px;
+      line-height: 1.6;
+    }
+    
+    .start-btn {
+      font-size: 16px;
+      padding: 16px 40px;
+      background: var(--accent);
+      color: var(--bg);
+      border: none;
+      font-weight: 700;
+    }
+    
+    .start-btn:hover {
+      background: #00ffaa;
+    }
+    
+    .error-msg {
+      color: #ff6b6b;
+      font-size: 12px;
+      padding: 12px;
+      background: rgba(255, 107, 107, 0.1);
+      border-radius: 8px;
+      display: none;
+      text-align: left;
+      max-height: 50vh;
+      overflow-y: auto;
+    }
+    
+    .error-msg.visible {
+      display: block;
+    }
+    
+    @media (max-width: 600px) {
+      .controls {
+        padding: 16px;
+      }
+      
+      .preset-overlay {
+        width: 100%;
+        max-width: 100%;
+      }
+      
+      button {
+        padding: 14px 16px;
+      }
+      
+      button span {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  
+  <div class="preset-overlay" id="presetOverlay">
+    <div class="preset-header">
+      <h2>Presets</h2>
+      <button class="close-btn" id="closePresetsBtn">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" fill="currentColor"/></svg>
+      </button>
+    </div>
+    <div class="preset-list" id="presetListContainer"></div>
+  </div>
+  
+  <!-- Discrete Error/Status Log -->
+  <div id="errorMsg" style="position:fixed; bottom:10px; left:10px; color:#aaa; font-size:10px; z-index:100; pointer-events:none; max-width:50%;"></div>
+  
+  <div class="controls" id="controls">
+    <div class="controls-row">
+      <!-- Replaced Select with Button -->
+      <button id="presetMenuBtn" style="flex: 1; justify-content: space-between;">
+        <span id="currentPresetLabel">Select Preset...</span>
+        <svg viewBox="0 0 24 24"><path d="M3 18h6v-2H3v2zM3 6v2h18V6H3zm0 7h12v-2H3v2z" fill="currentColor"/></svg>
+      </button>
+    </div>
+    <div class="controls-row">
+      <button id="randomBtn" title="Random Preset">
+        <svg viewBox="0 0 24 24"><path d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z"/></svg>
+        <span>Random Preset</span>
+      </button>
+      <button id="cycleBtn" title="Auto-cycle Presets">
+        <svg viewBox="0 0 24 24"><path d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46C19.54 15.03 20 13.57 20 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74C4.46 8.97 4 10.43 4 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3z"/></svg>
+        <span>Cycle Presets</span>
+      </button>
+      <button id="hideBtn" title="Hide Controls">
+        <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+        <span>Hide Controls</span>
+      </button>
+      <button id="closeBtn" title="Close">
+        ❌<span>Close Visualizer</span>
+      </button>
+    </div>
+  </div>
+
+  <script type="module">
+    import butterchurn from './butterchurn.js';
+    import butterchurnPresets from './butterchurn-presets.js';
+    
+    console.log("Modules imported");
+    
+    const canvas = document.getElementById('canvas');
+    const errorMsg = document.getElementById('errorMsg');
+    const controls = document.getElementById('controls');
+    
+    // New Elements
+    const presetMenuBtn = document.getElementById('presetMenuBtn');
+    const presetOverlay = document.getElementById('presetOverlay');
+    const closePresetsBtn = document.getElementById('closePresetsBtn');
+    const presetListContainer = document.getElementById('presetListContainer');
+    const currentPresetLabel = document.getElementById('currentPresetLabel');
+    
+    const randomBtn = document.getElementById('randomBtn');
+    const cycleBtn = document.getElementById('cycleBtn');
+    const hideBtn = document.getElementById('hideBtn');
+    const closeBtn = document.getElementById('closeBtn');
+    
+    let audioContext;
+    let visualizer;
+    let audioWorkletNode; // The modern background audio pump
+    let presets;
+    let presetKeys;
+    let currentPreset;
+    let animationId;
+    let cycleInterval;
+    let isCycling = false;
+    let controlsHidden = false;
+    let pendingPresetName = null; // New: Defer preset loading to render loop
+
+    // Define the AudioWorklet code as a string to avoid needing a separate file
+    const workletCode = `
+      class AudioPumpProcessor extends AudioWorkletProcessor {
+        constructor() {
+          super();
+          this.buffer = [];
+          this.port.onmessage = (e) => {
+            // Received samples from Main Thread [L, R, L, R...]
+            this.buffer.push(...e.data);
+            
+            // AGGRESSIVE SYNC: If we have more than 70ms of audio, drop the oldest.
+            // 44100Hz * 0.07s * 2 channels = ~6174 items
+            const maxBufferSize = 6144;
+            if (this.buffer.length > maxBufferSize) {
+                const dropCount = this.buffer.length - maxBufferSize;
+                const alignDrop = dropCount + (dropCount % 2);
+                this.buffer.splice(0, alignDrop);
+            }
+          };
+        }
+
+        process(inputs, outputs, parameters) {
+          const outputL = outputs[0][0];
+          const outputR = outputs[0][1];
+          const frameCount = outputL.length;
+          const itemsNeeded = frameCount * 2;
+
+          if (this.buffer.length >= itemsNeeded) {
+            const chunk = this.buffer.splice(0, itemsNeeded);
+            for (let i = 0; i < frameCount; i++) {
+              outputL[i] = chunk[i * 2];
+              outputR[i] = chunk[i * 2 + 1];
+            }
+          } else {
+            // Underrun: fill with silence or partial buffer
+            outputL.fill(0);
+            outputR.fill(0);
+            if (this.buffer.length > 0) {
+                const available = this.buffer.length;
+                const chunk = this.buffer.splice(0, available);
+                const frames = Math.floor(available / 2);
+                for (let i = 0; i < frames; i++) {
+                    outputL[i] = chunk[i * 2];
+                    outputR[i] = chunk[i * 2 + 1];
+                }
+            }
+          }
+          return true; // Keep the worklet alive
+        }
+      }
+      registerProcessor('audio-pump', AudioPumpProcessor);
+    `;
+
+    // Receive samples from Swift
+    window.pushSamples = (samples) => {
+        if (audioWorkletNode) {
+            // Forward directly to the background thread
+            audioWorkletNode.port.postMessage(samples);
+        }
+    };
+    
+    // Debug logger
+    function debugLog(msg) {
+        console.log(msg);
+        // errorMsg.style.display = 'block';
+        // errorMsg.style.color = '#aaa';
+        // errorMsg.innerHTML += msg + '<br>';
+    }
+
+    // Initialize presets (Custom UI)
+    function initPresets() {
+      try {
+          if (!butterchurnPresets) {
+              debugLog("ERROR: butterchurnPresets is undefined");
+              return;
+          }
+          
+          debugLog("Initializing presets...");
+          const allPresets = butterchurnPresets.getPresets();
+          presetKeys = Object.keys(allPresets).sort((a, b) => 
+            a.toLowerCase().localeCompare(b.toLowerCase())
+          );
+          
+          debugLog("Found " + presetKeys.length + " presets.");
+          presets = allPresets;
+          
+          // Clear container
+          presetListContainer.innerHTML = '';
+          
+          // Build list items
+          const fragment = document.createDocumentFragment();
+          presetKeys.forEach(name => {
+            const item = document.createElement('div');
+            item.className = 'preset-item';
+            item.textContent = name;
+            item.dataset.name = name;
+            item.onclick = () => {
+                loadPreset(name);
+                togglePresetMenu(false); // Close menu on select
+            };
+            fragment.appendChild(item);
+          });
+          presetListContainer.appendChild(fragment);
+          debugLog("Preset list built.");
+          
+      } catch (e) {
+          console.error(e);
+          debugLog("CRASH in initPresets: " + e.message);
+      }
+    }
+    
+    // Toggle Preset Menu
+    function togglePresetMenu(show) {
+        if (show === undefined) {
+            presetOverlay.classList.toggle('visible');
+        } else {
+            if (show) presetOverlay.classList.add('visible');
+            else presetOverlay.classList.remove('visible');
+        }
+    }
+    
+    // Load a preset
+    function loadPreset(name, blendTime = 1.0) {
+      if (!visualizer || !presets[name]) return;
+      
+      visualizer.loadPreset(presets[name], blendTime);
+      currentPreset = name;
+      currentPresetLabel.textContent = name; // Update button text
+      
+      // Notify Swift about the preset change
+      if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.presetHandler) {
+          window.webkit.messageHandlers.presetHandler.postMessage(name);
+      }
+      
+      // Update Active State in List
+      if (presetOverlay.classList.contains('visible')) {
+          const prevActive = presetListContainer.querySelector('.active');
+          if (prevActive) prevActive.classList.remove('active');
+          
+          // Find new active (simple search)
+          const newActive = Array.from(presetListContainer.children).find(div => div.dataset.name === name);
+          if (newActive) {
+              newActive.classList.add('active');
+              newActive.scrollIntoView({ block: 'center', behavior: 'smooth' });
+          }
+      }
+    }
+    
+    // Event listeners
+    // startBtn.addEventListener('click', start);
+    // presetSelect.addEventListener('change', () => loadPreset(presetSelect.value));
+    
+    presetMenuBtn.addEventListener('click', () => {
+        togglePresetMenu(true);
+        // Highlight current when opening
+        if (currentPreset) {
+             const active = Array.from(presetListContainer.children).find(div => div.dataset.name === currentPreset);
+             if (active) {
+                 active.classList.add('active');
+                 setTimeout(() => active.scrollIntoView({ block: 'center' }), 100);
+             }
+        }
+    });
+    closePresetsBtn.addEventListener('click', () => togglePresetMenu(false));
+    
+    // Random preset
+    function randomPreset() {
+      if (!presetKeys || presetKeys.length === 0) return;
+      const idx = Math.floor(Math.random() * presetKeys.length);
+      loadPreset(presetKeys[idx]);
+    }
+    
+    // Toggle cycling
+    function toggleCycle() {
+      isCycling = !isCycling;
+      cycleBtn.classList.toggle('active', isCycling);
+      
+      if (isCycling) {
+        cycleInterval = setInterval(randomPreset, 15000);
+      } else {
+        clearInterval(cycleInterval);
+      }
+    }
+    
+    // Resize handler
+    function resize() {
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+      
+      canvas.width = width * dpr;
+      canvas.height = height * dpr;
+      canvas.style.width = width + 'px';
+      canvas.style.height = height + 'px';
+      
+      if (visualizer) {
+        visualizer.setRendererSize(width * dpr, height * dpr);
+      }
+    }
+    
+    // Render loop
+    function render() {
+      // Lazy load preset on first frame to ensure GL context is ready
+      if (pendingPresetName) {
+          debugLog("Render loop loading preset: " + pendingPresetName);
+          try {
+              loadPreset(pendingPresetName, 0);
+              debugLog("Preset loaded successfully.");
+          } catch (e) {
+              console.error(e);
+              debugLog("ERROR loading preset: " + e.message);
+              // Fallback to random if specific load failed
+              randomPreset();
+          }
+          pendingPresetName = null;
+      }
+      
+      if (visualizer) {
+        visualizer.render();
+      }
+      animationId = requestAnimationFrame(render);
+    }
+    
+    // Toggle controls visibility
+    function toggleControls() {
+      controlsHidden = !controlsHidden;
+      controls.classList.toggle('hidden', controlsHidden);
+    }
+    
+    function closeViz() {
+      if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.closeViz) {
+        debugLog("closeViz")
+        window.webkit.messageHandlers.closeViz.postMessage("closeViz");
+      }
+    }
+    
+    // Show controls on tap (when hidden)
+    canvas.addEventListener('click', () => {
+      if (controlsHidden) {
+        controlsHidden = false;
+        controls.classList.remove('hidden');
+      }
+    });
+    
+    // Main start function
+    async function start() {
+      debugLog("Start button clicked");
+      //startBtn.disabled = true;
+      //startBtn.textContent = "Loading...";
+      
+      try {
+        if (typeof butterchurn === 'undefined') {
+            throw new Error("Butterchurn library not loaded.");
+        }
+
+        audioContext = new (window.AudioContext || window.webkitAudioContext)();
+        debugLog("AudioContext created.");
+        
+        // Warm-up / Unlock routine for Safari/iOS
+        const warmUpBuffer = audioContext.createBuffer(1, 1, 22050);
+        const warmUpSource = audioContext.createBufferSource();
+        warmUpSource.buffer = warmUpBuffer;
+        warmUpSource.connect(audioContext.destination);
+        warmUpSource.start(0);
+        debugLog("Warm-up played.");
+        
+        // Load the AudioWorklet
+        const blob = new Blob([workletCode], { type: 'application/javascript' });
+        const url = URL.createObjectURL(blob);
+        await audioContext.audioWorklet.addModule(url);
+        debugLog("AudioWorklet loaded.");
+
+        if (audioContext.state === 'suspended') {
+          await audioContext.resume();
+          debugLog("AudioContext resumed.");
+        }
+
+        // Create the background audio node
+        audioWorkletNode = new AudioWorkletNode(audioContext, 'audio-pump', {
+            numberOfInputs: 0,
+            numberOfOutputs: 1,
+            outputChannelCount: [2]
+        });
+        
+        const silentGain = audioContext.createGain();
+        silentGain.gain.value = 0;
+        audioWorkletNode.connect(silentGain);
+        silentGain.connect(audioContext.destination);
+        debugLog("Audio pump active.");
+        
+        // Initialize visualizer
+        resize();
+        debugLog("Creating visualizer...");
+        visualizer = butterchurn.createVisualizer(audioContext, canvas, {
+          width: canvas.width,
+          height: canvas.height,
+          pixelRatio: 1,
+          textureRatio: 1
+        });
+        
+        // Connect our background pump to visualizer
+        visualizer.connectAudio(audioWorkletNode);
+        
+        // startOverlay.classList.add('hidden'); // Removed
+        render();
+        debugLog("Visualizer running.");
+        
+        // Watchdog
+        setInterval(() => {
+            if (audioContext && audioContext.state !== 'running') {
+                audioContext.resume();
+            }
+        }, 2000);
+        
+      } catch (err) {
+        console.error('CRITICAL ERROR:', err);
+        // startBtn.disabled = false; // Removed
+        errorMsg.style.color = '#ff6b6b';
+        errorMsg.textContent = 'Error: ' + err.message;
+        errorMsg.classList.add('visible');
+      }
+    }
+    
+    start();
+    initPresets();
+    // Load initial or random preset
+    // We defer actual loading to the render loop to ensure GL context is 100% ready
+    // This fixes issues with heavy presets like "Zylot" loading as black screens
+    if (window.initialPresetNameB64) {
+      try {
+        const decoded = atob(window.initialPresetNameB64);
+        if (presets[decoded]) {
+          pendingPresetName = decoded;
+          debugLog("Queued saved preset: " + decoded);
+        } else {
+          debugLog("Saved preset not found, queuing random.");
+          pendingPresetName = presetKeys[Math.floor(Math.random() * presetKeys.length)];
+        }
+      } catch (e) {
+        console.error("Failed to decode preset", e);
+        pendingPresetName = presetKeys[Math.floor(Math.random() * presetKeys.length)];
+      }
+    } else {
+      pendingPresetName = presetKeys[Math.floor(Math.random() * presetKeys.length)];
+    }
+    
+    // Event listeners
+    // startBtn.addEventListener('click', start); // Removed
+    presetMenuBtn.addEventListener('click', () => {
+        togglePresetMenu(true);
+        // Highlight current when opening
+        if (currentPreset) {
+             const active = Array.from(presetListContainer.children).find(div => div.dataset.name === currentPreset);
+             if (active) {
+                 active.classList.add('active');
+                 setTimeout(() => active.scrollIntoView({ block: 'center' }), 100);
+             }
+        }
+    });
+    
+    closePresetsBtn.addEventListener('click', () => togglePresetMenu(false));
+    
+    randomBtn.addEventListener('click', randomPreset);
+    cycleBtn.addEventListener('click', toggleCycle);
+    hideBtn.addEventListener('click', toggleControls);
+    closeBtn.addEventListener('click', closeViz)
+    
+    window.addEventListener('resize', resize);
+    
+    // Keyboard forwarding to Swift
+    const keysToForward = new Set(['a', 'w', 's', 'e', 'd', 'f', 't', 'g', 'y', 'h', 'u', 'j', 'k', 'o', 'l', 'p']);
+    
+    function forwardKey(e) {
+      if (keysToForward.has(e.key.toLowerCase())) {
+        e.preventDefault(); // Stop native behavior (scrolling, typing bars, etc)
+        if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.keyHandler) {
+          window.webkit.messageHandlers.keyHandler.postMessage({
+            key: e.key.toLowerCase(),
+            type: e.type
+          });
+        }
+      }
+    }
+    
+    document.addEventListener('keydown', forwardKey);
+    document.addEventListener('keyup', forwardKey);
+
+    // Keyboard shortcuts
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'r') randomPreset();
+      if (e.key === 'c') toggleCycle();
+      if (e.key === 'h' || e.key === 'Escape') toggleControls();
+      if (e.key === 'ArrowRight') {
+        const idx = (presetKeys.indexOf(currentPreset) + 1) % presetKeys.length;
+        loadPreset(presetKeys[idx]);
+      }
+      if (e.key === 'ArrowLeft') {
+        const idx = (presetKeys.indexOf(currentPreset) - 1 + presetKeys.length) % presetKeys.length;
+        loadPreset(presetKeys[idx]);
+      }
+    });
+
+    window.onerror = function(msg, url, line, col, error) {
+       console.error("Window Error: " + msg + "\nurl: " + url + "\nline: " + line);
+       const div = document.createElement("div");
+       div.style.color = "red";
+       div.style.position = "absolute";
+       div.style.top = "0";
+       div.style.zIndex = "1000";
+       div.innerText = "Error: " + msg;
+       document.body.appendChild(div);
+    };
+  </script>
+</body>
+</html>
