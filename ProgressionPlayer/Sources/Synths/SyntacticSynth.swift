@@ -379,16 +379,16 @@ struct SyntacticSynthView: View {
         KnobbyKnob(value: $synth.osc3Mix, label: "Osc3", range: 0...1)
       }
       HStack {
-        KnobbyKnob(value: $synth.ampAttack, label: "Amp env", range: 0...2)
+        KnobbyKnob(value: $synth.ampAttack, label: "Amp attk", range: 0...2)
         KnobbyKnob(value: $synth.ampDecay, label: "Amp dec", range: 0...2)
         KnobbyKnob(value: $synth.ampSustain, label: "Amp sus")
         KnobbyKnob(value: $synth.ampRelease, label: "Amp rel", range: 0...2)
       }
       HStack {
-        KnobbyKnob(value: $synth.filterAttack, label:  "Filter env", range: 0...2)
+        KnobbyKnob(value: $synth.filterAttack, label:  "Filter attk", range: 0...2)
         KnobbyKnob(value: $synth.filterDecay, label:   "Filter dec", range: 0...2)
         KnobbyKnob(value: $synth.filterSustain, label: "Filter sus")
-        KnobbyKnob(value: $synth.filterRelease, label: "Filter rel", range: 0...2)
+        KnobbyKnob(value: $synth.filterRelease, label: "Filter rel", range: 0.03...2)
       }
       HStack {
         KnobbyKnob(value: $synth.filterCutoff, label:  "Filter cut", range: 0...10000, stepSize: 1)

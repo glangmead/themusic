@@ -132,7 +132,7 @@
           { "const": {"name": "cutoffLow", "val": 50} },
           { "prod": { "of": [
             { "const": {"name": "cutoff", "val": 5000} },
-            { "envelope": { "specs": {"release": 0, "scale": 1, "name": "filterEnv", "attack": 0, "decay": 0.3, "sustain": 0 } } }
+            { "envelope": { "specs": {"release": 0.03, "scale": 1, "name": "filterEnv", "attack": 0, "decay": 0.3, "sustain": 0 } } }
           ]}}
        ]}},
        "resonance": { "const": {"name": "resonance", "val": 1.6} },
