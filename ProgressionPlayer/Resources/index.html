@@ -312,7 +312,7 @@
 
   <script type="module">
     import butterchurn from './butterchurn.js';
-    import butterchurnPresets from './butterchurn-presets.js';
+    import './butterchurn-presets.js';
     
     console.log("Modules imported");
     
@@ -416,13 +416,16 @@
     // Initialize presets (Custom UI)
     function initPresets() {
       try {
-          if (!butterchurnPresets) {
-              debugLog("ERROR: butterchurnPresets is undefined");
+          // In butterchurn-presets v3 (base.min.js), it sets window.base instead of exporting
+          const allPresets = window.base;
+
+          if (!allPresets) {
+              debugLog("ERROR: presets (window.base) is undefined");
               return;
           }
           
           debugLog("Initializing presets...");
-          const allPresets = butterchurnPresets.getPresets();
+          // const allPresets = butterchurnPresets.getPresets();
           presetKeys = Object.keys(allPresets).sort((a, b) => 
             a.toLowerCase().localeCompare(b.toLowerCase())
           );
