@@ -416,11 +416,16 @@
     // Initialize presets (Custom UI)
     function initPresets() {
       try {
-          // In butterchurn-presets v3 (base.min.js), it sets window.base instead of exporting
-          const allPresets = window.base;
+          // In butterchurn-presets v3, it sets window.base, window.all, etc.
+          let allPresets = window.base || window.all;
+          
+          // Check if presets are nested under 'default' (common in webpack/rollup bundles)
+          if (allPresets && allPresets.default) {
+              allPresets = allPresets.default;
+          }
 
           if (!allPresets) {
-              debugLog("ERROR: presets (window.base) is undefined");
+              debugLog("ERROR: presets (window.base/all) is undefined");
               return;
           }
           
