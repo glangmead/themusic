@@ -413,14 +413,57 @@
         // errorMsg.innerHTML += msg + '<br>';
     }
 
+    // Cleanup on page unload/hide
+    window.addEventListener('pagehide', () => {
+        debugLog("Page hiding/unloading, cleaning up...");
+        
+        // Explicitly lose WebGL context to free resources
+        if (canvas) {
+            try {
+                // Try to get the context we created (webgl2 or webgl)
+                // Note: We can't easily get the specific context handle butterchurn uses, 
+                // but we can try to get it from the canvas if it exposes it, or just create a temp one to trigger cleanup?
+                // Actually, butterchurn attaches the context to the canvas.
+                // We'll try to get the extension from a context on the canvas.
+                const gl = canvas.getContext('webgl2') || canvas.getContext('webgl');
+                if (gl) {
+                    const ext = gl.getExtension('WEBGL_lose_context');
+                    if (ext) {
+                        debugLog("Forcing WebGL context loss");
+                        ext.loseContext();
+                    }
+                }
+            } catch(e) {
+                console.error("Error losing context:", e);
+            }
+        }
+
+        if (audioContext) {
+            audioContext.close().then(() => {
+                debugLog("AudioContext closed.");
+            });
+        }
+        // Force garbage collection of heavy objects if possible
+        if (visualizer) visualizer = null;
+        presets = null;
+        audioWorkletNode = null;
+    });
+
     // Initialize presets (Custom UI)
     function initPresets() {
       try {
+          // Check what variables are available
+          debugLog("Checking preset sources...");
+          if (window.base) debugLog("window.base found with " + Object.keys(window.base).length + " keys (before unwrapping)");
+          if (window.all) debugLog("window.all found with " + Object.keys(window.all).length + " keys (before unwrapping)");
+
           // In butterchurn-presets v3, it sets window.base, window.all, etc.
-          let allPresets = window.base || window.all;
+          // Prefer window.all if available
+          let allPresets = window.all || window.base;
           
           // Check if presets are nested under 'default' (common in webpack/rollup bundles)
           if (allPresets && allPresets.default) {
+              debugLog("Unwrapping default export...");
               allPresets = allPresets.default;
           }
 
@@ -429,11 +472,14 @@
               return;
           }
           
-          debugLog("Initializing presets...");
-          // const allPresets = butterchurnPresets.getPresets();
           presetKeys = Object.keys(allPresets).sort((a, b) => 
             a.toLowerCase().localeCompare(b.toLowerCase())
           );
+          
+          debugLog("Initializing presets... Found " + presetKeys.length + " presets.");
+          presets = allPresets;
+          
+          // Clear container
           
           debugLog("Found " + presetKeys.length + " presets.");
           presets = allPresets;

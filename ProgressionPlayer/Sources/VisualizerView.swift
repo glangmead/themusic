@@ -34,6 +34,7 @@ struct VisualizerView: UIViewRepresentable {
     config.setValue(true, forKey: "allowUniversalAccessFromFileURLs")
     config.mediaTypesRequiringUserActionForPlayback = []
     config.allowsInlineMediaPlayback = true
+    config.processPool = WKProcessPool() // Ensure fresh process environment
     
     let userContentController = WKUserContentController()
     userContentController.add(context.coordinator, name: "keyHandler")
