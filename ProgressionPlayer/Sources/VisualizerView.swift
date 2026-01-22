@@ -10,7 +10,10 @@ import WebKit
 
 // Host a web view that displays the Butterchurn-ios visualizer.
 // The visualizer index.html is modified from https://github.com/pxl-pshr/butterchurn-ios
-// The two .js files it imported were copied from the CDN into the app bundle.
+// The two .js files it imported were copied from the CDN into the app bundle:
+// https://cdn.jsdelivr.net/npm/butterchurn@3.0.0-beta.5/dist/butterchurn.min.js
+// https://cdn.jsdelivr.net/npm/butterchurn-presets@3.0.0-beta.4/dist/all.min.js
+// (which are the 3.0 versions, whereas butterchurn-ios was made with v2 in mind)
 class VisualizerWebView: WKWebView {
   // Hide the input accessory view (the bar above the keyboard)
   override var inputAccessoryView: UIView? {
@@ -34,7 +37,6 @@ struct VisualizerView: UIViewRepresentable {
     config.setValue(true, forKey: "allowUniversalAccessFromFileURLs")
     config.mediaTypesRequiringUserActionForPlayback = []
     config.allowsInlineMediaPlayback = true
-    config.processPool = WKProcessPool() // Ensure fresh process environment
     
     let userContentController = WKUserContentController()
     userContentController.add(context.coordinator, name: "keyHandler")
