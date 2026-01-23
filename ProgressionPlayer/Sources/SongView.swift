@@ -18,6 +18,7 @@ struct SongView: View {
   @State private var isShowingVisualizer = false
   @State private var noteOffset: Float = 0
   @State private var musicPattern: MusicPattern? = nil
+  @State private var patternPlaybackHandle: Task<Void, Error>? = nil
 
   var body: some View {
     NavigationStack {
@@ -89,7 +90,7 @@ struct SongView: View {
           ].makeIterator(),
           durations: [10, 10, 10, 10].makeIterator()
         )
-        Task.detached {
+        patternPlaybackHandle = Task.detached {
           await musicPattern?.play()
         }
       }
@@ -98,6 +99,7 @@ struct SongView: View {
       }
       Button("Stop") {
         seq?.stop()
+        patternPlaybackHandle?.cancel()
       }
       Button("Rewind") {
         seq?.stop()

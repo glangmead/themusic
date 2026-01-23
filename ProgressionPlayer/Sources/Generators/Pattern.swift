@@ -17,9 +17,17 @@ struct MusicEvent {
   let notes: [MidiNote]
   let duration: CoreFloat // time between noteOn and noteOff in seconds
   
-  func play() {
+  func play() async throws {
     notes.forEach { synth.poolVoice?.noteOn($0) }
-    Thread.sleep(forTimeInterval: duration)
+    do {
+      try await Task.sleep(for: .seconds(duration))
+    } catch {
+      
+    }
+    notes.forEach { synth.poolVoice?.noteOff($0) }
+  }
+  
+  func cancel() {
     notes.forEach { synth.poolVoice?.noteOff($0) }
   }
 }
@@ -50,8 +58,12 @@ actor MusicPattern {
   }
   
   func play() async {
-    while let event = next() {
-      event.play()
+    while let event = next(), !Task.isCancelled {
+      do {
+        try await event.play()
+      } catch {
+        
+      }
     }
   }
   
