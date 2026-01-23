@@ -22,8 +22,10 @@ class Arrow11 {
     }
   }
   private var innerArrUnmanaged: Unmanaged<Arrow11>? = nil
+
   var innerArrs = ContiguousArray<Arrow11>() {
     didSet {
+      innerArrsUnmanaged = []
       for arrow in innerArrs {
         innerArrsUnmanaged.append(Unmanaged.passUnretained(arrow))
       }
@@ -40,6 +42,7 @@ class Arrow11 {
   
   init(innerArrs: ContiguousArray<Arrow11>) {
     self.innerArrs = innerArrs
+    innerArrsUnmanaged = []
     for arrow in innerArrs {
       innerArrsUnmanaged.append(Unmanaged.passUnretained(arrow))
     }
@@ -47,6 +50,7 @@ class Arrow11 {
   
   init(innerArrs: [Arrow11]) {
     self.innerArrs = ContiguousArray<Arrow11>(innerArrs)
+    innerArrsUnmanaged = []
     for arrow in innerArrs {
       innerArrsUnmanaged.append(Unmanaged.passUnretained(arrow))
     }
@@ -57,7 +61,7 @@ class Arrow11 {
   }
   
   func unmanagedInner(_ t: CoreFloat) -> CoreFloat {
-    innerArrUnmanaged?._withUnsafeGuaranteedRef { $0.of(t) } ?? 0
+    innerArrUnmanaged?._withUnsafeGuaranteedRef { $0.of(t) } ?? t
   }
   
   func of (_ t: CoreFloat) -> CoreFloat { inner(t) }
@@ -89,11 +93,11 @@ final class ControlArrow11: Arrow11 {
 
 final class ArrowSum: Arrow11 {
   override func of(_ t: CoreFloat) -> CoreFloat {
-    var total: CoreFloat = 0
-    for i in 0..<innerArrs.count {
-      total += innerArrsUnmanaged[i]._withUnsafeGuaranteedRef { $0.of(t) }
+    var result: CoreFloat = 0
+    for i in 0..<innerArrsUnmanaged.count {
+      result += innerArrsUnmanaged[i]._withUnsafeGuaranteedRef { $0.of(t) }
     }
-    return total
+    return result
   }
 }
 

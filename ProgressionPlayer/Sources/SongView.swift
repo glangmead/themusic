@@ -17,12 +17,8 @@ struct SongView: View {
   @State private var isShowingSynth = false
   @State private var isShowingVisualizer = false
   @State private var noteOffset: Float = 0
-//  @State private var musicPattern: MusicPattern
+  @State private var musicPattern: MusicPattern? = nil
 
-  init() {
-//    musicPattern = MusicPattern(preset: synth., modulators: <#T##[String : Arrow11]#>, notes: <#T##any IteratorProtocol<[MidiNote]>#>, durations: <#T##any IteratorProtocol<Float>#>)
-  }
-  
   var body: some View {
     NavigationStack {
       if songURL != nil {
@@ -80,6 +76,23 @@ struct SongView: View {
           seq?.playURL(url: songURL!)
         }
       }
+      Button("Play Pattern") {
+        // a test song
+        musicPattern = MusicPattern(
+          synth: synth,
+          modulators: [:],
+          notes: [
+            [MidiNote(note: 60, velocity: 100), MidiNote(note: 64, velocity: 100), MidiNote(note: 67, velocity: 100)],
+            [MidiNote(note: 60, velocity: 100), MidiNote(note: 65, velocity: 100), MidiNote(note: 69, velocity: 100)],
+            [MidiNote(note: 62, velocity: 100), MidiNote(note: 67, velocity: 100), MidiNote(note: 71, velocity: 100)],
+            [MidiNote(note: 60, velocity: 100), MidiNote(note: 64, velocity: 100), MidiNote(note: 67, velocity: 100)]
+          ].makeIterator(),
+          durations: [10, 10, 10, 10].makeIterator()
+        )
+        Task.detached {
+          await musicPattern?.play()
+        }
+      }
       Button("Play") {
         seq?.play()
       }
@@ -112,5 +125,5 @@ struct SongView: View {
 
 #Preview {
   SongView()
-    .environment(SyntacticSynth())
+    .environment(SyntacticSynth(engine: SpatialAudioEngine()))
 }

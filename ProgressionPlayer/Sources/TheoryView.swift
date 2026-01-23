@@ -151,5 +151,5 @@ struct TheoryView: View {
 
 #Preview {
   TheoryView()
-    .environment(SyntacticSynth())
+    .environment(SyntacticSynth(engine: SpatialAudioEngine()))
 }

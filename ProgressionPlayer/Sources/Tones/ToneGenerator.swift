@@ -59,43 +59,64 @@ final class BasicOscillator: Arrow11 {
     case square = "squareOsc"
     case noise = "noiseOsc"
   }
+  private let sine = Sine()
+  private let triangle = Triangle()
+  private let sawtooth = Sawtooth()
+  private let square = Square()
+  private let noise = Noise()
+  private let sineUnmanaged: Unmanaged<Arrow11>?
+  private let triangleUnmanaged: Unmanaged<Arrow11>?
+  private let sawtoothUnmanaged: Unmanaged<Arrow11>?
+  private let squareUnmanaged: Unmanaged<Arrow11>?
+  private let noiseUnmanaged: Unmanaged<Arrow11>?
+
+  var arrow: (Arrow11 & WidthHaver)? = nil
+  private var arrUnmanaged: Unmanaged<Arrow11>? = nil
+
   var shape: OscShape {
     didSet {
-      arrow = Self.arrForShape(shape: shape)
-      arrUnmanaged = Unmanaged.passUnretained(arrow)
+      updateShape()
     }
   }
   var width: CoreFloat {
     didSet {
-      arrow.width = width
+      arrow?.width = width
     }
   }
-  var arrow: Arrow11 & WidthHaver
-  private var arrUnmanaged: Unmanaged<Arrow11>? = nil
 
   init(shape: OscShape, width: CoreFloat = 1) {
-    self.shape = shape
-    self.arrow = Self.arrForShape(shape: shape)
+    self.sineUnmanaged = Unmanaged.passUnretained(sine)
+    self.triangleUnmanaged = Unmanaged.passUnretained(triangle)
+    self.sawtoothUnmanaged = Unmanaged.passUnretained(sawtooth)
+    self.squareUnmanaged = Unmanaged.passUnretained(square)
+    self.noiseUnmanaged = Unmanaged.passUnretained(noise)
     self.width = width
+    self.shape = shape
     super.init()
+    self.updateShape()
   }
   
   override func of(_ t: CoreFloat) -> CoreFloat {
     arrUnmanaged?._withUnsafeGuaranteedRef { $0.of(unmanagedInner(t)) } ?? 0
   }
   
-  static func arrForShape(shape: OscShape) -> Arrow11 & WidthHaver {
+  func updateShape() {
     switch shape {
     case .sine:
-       Sine()
+      arrow = sine
+      arrUnmanaged = sineUnmanaged
     case .triangle:
-      Triangle()
+      arrow = triangle
+      arrUnmanaged = triangleUnmanaged
     case .sawtooth:
-      Sawtooth()
+      arrow = sawtooth
+      arrUnmanaged = sawtoothUnmanaged
     case .square:
-      Square()
+      arrow = square
+      arrUnmanaged = squareUnmanaged
     case .noise:
-      Noise()
+      arrow = noise
+      arrUnmanaged = noiseUnmanaged
     }
   }
 }
@@ -242,11 +263,11 @@ final class LowPassFilter2: Arrow11 {
 
 class ArrowWithHandles: Arrow11 {
   // the handles are dictionaries with values that give access to arrows within the arrow
-  var namedBasicOscs     = [String: BasicOscillator]()
-  var namedLowPassFilter = [String: LowPassFilter2]()
+  var namedBasicOscs     = [String: [BasicOscillator]]()
+  var namedLowPassFilter = [String: [LowPassFilter2]]()
   var namedConsts        = [String: [ValHaver]]()
-  var namedADSREnvelopes = [String: ADSR]()
-  var namedChorusers     = [String: Choruser]()
+  var namedADSREnvelopes = [String: [ADSR]]()
+  var namedChorusers     = [String: [Choruser]]()
   var wrappedArrow: Arrow11
   
   private var wrappedArrowUnsafe: Unmanaged<Arrow11>
@@ -265,13 +286,13 @@ class ArrowWithHandles: Arrow11 {
   }
 
   func withMergeDictsFromArrow(_ arr2: ArrowWithHandles) -> ArrowWithHandles {
-    namedADSREnvelopes.merge(arr2.namedADSREnvelopes) { (a, b) in return a }
+    namedADSREnvelopes.merge(arr2.namedADSREnvelopes) { (a, b) in return a + b }
     namedConsts.merge(arr2.namedConsts) { (a, b) in
       return a + b
     }
-    namedBasicOscs.merge(arr2.namedBasicOscs) { (a, b) in return a }
-    namedLowPassFilter.merge(arr2.namedLowPassFilter) { (a, b) in return a }
-    namedChorusers.merge(arr2.namedChorusers) { (a, b) in return a }
+    namedBasicOscs.merge(arr2.namedBasicOscs) { (a, b) in return a + b }
+    namedLowPassFilter.merge(arr2.namedLowPassFilter) { (a, b) in return a + b }
+    namedChorusers.merge(arr2.namedChorusers) { (a, b) in return a + b }
     return self
   }
   
@@ -316,7 +337,7 @@ enum ArrowSyntax: Codable {
     case .osc(let oscName, let oscShape, let width):
       let osc = BasicOscillator(shape: oscShape, width: width)
       let arr = ArrowWithHandles(osc)
-      arr.namedBasicOscs[oscName] = osc
+      arr.namedBasicOscs[oscName] = [osc]
       return arr
     case .control:
       return ArrowWithHandles(ControlArrow11())
@@ -360,7 +381,11 @@ enum ArrowSyntax: Codable {
       let handleArr = ArrowWithHandles(arr)
         .withMergeDictsFromArrow(cutoffArrow)
         .withMergeDictsFromArrow(resonanceArrow)
-      handleArr.namedLowPassFilter[lpArrow.name] = arr
+      if var filters = handleArr.namedLowPassFilter[lpArrow.name] {
+        filters.append(arr)
+      } else {
+        handleArr.namedLowPassFilter[lpArrow.name] = [arr]
+      }
       return handleArr
       
     case .choruser(let choruserSpecs):
@@ -370,7 +395,11 @@ enum ArrowSyntax: Codable {
         valueToChorus: choruserSpecs.valueToChorus
       )
       let handleArr = ArrowWithHandles(choruser)
-      handleArr.namedChorusers[choruserSpecs.name] = choruser
+      if var chorusers = handleArr.namedChorusers[choruserSpecs.name] {
+        chorusers.append(choruser)
+      } else {
+        handleArr.namedChorusers[choruserSpecs.name] = [choruser]
+      }
       return handleArr
     
     case .envelope(let adsr):
@@ -382,7 +411,11 @@ enum ArrowSyntax: Codable {
         scale: adsr.scale
       ))
       let handleArr = ArrowWithHandles(env.asControl())
-      handleArr.namedADSREnvelopes[adsr.name] = env
+      if var envs = handleArr.namedADSREnvelopes[adsr.name] {
+        envs.append(env)
+      } else {
+        handleArr.namedADSREnvelopes[adsr.name] = [env]
+      }
       return handleArr
 
     }

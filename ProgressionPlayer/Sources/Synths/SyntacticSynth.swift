@@ -26,7 +26,7 @@ protocol EngineAndVoicePool: AnyObject {
 // in the same way, the Synth must do that copying.
 @Observable
 class SyntacticSynth: EngineAndVoicePool {
-  let engine = SpatialAudioEngine()
+  let engine: SpatialAudioEngine
   var voicePool: NoteHandler? = nil
   var poolVoice: PoolVoice? = nil
   #if DEBUG
@@ -44,112 +44,112 @@ class SyntacticSynth: EngineAndVoicePool {
   
   // Tone params
   var ampAttack: CoreFloat = 0 { didSet {
-    for tone in tones { tone.namedADSREnvelopes["ampEnv"]!.env.attackTime = ampAttack } }
+    poolVoice?.namedADSREnvelopes["ampEnv"]!.forEach { $0.env.attackTime = ampAttack } }
   }
   var ampDecay: CoreFloat = 0 { didSet {
-    for tone in tones { tone.namedADSREnvelopes["ampEnv"]!.env.decayTime = ampDecay } }
+    poolVoice?.namedADSREnvelopes["ampEnv"]!.forEach { $0.env.decayTime = ampDecay } }
   }
   var ampSustain: CoreFloat = 0 { didSet {
-    for tone in tones { tone.namedADSREnvelopes["ampEnv"]!.env.sustainLevel = ampSustain } }
+    poolVoice?.namedADSREnvelopes["ampEnv"]!.forEach { $0.env.sustainLevel = ampSustain } }
   }
   var ampRelease: CoreFloat = 0 { didSet {
-    for tone in tones { tone.namedADSREnvelopes["ampEnv"]!.env.releaseTime = ampRelease } }
+    poolVoice?.namedADSREnvelopes["ampEnv"]!.forEach { $0.env.releaseTime = ampRelease } }
   }
   var filterAttack: CoreFloat = 0 { didSet {
-    for tone in tones { tone.namedADSREnvelopes["filterEnv"]!.env.attackTime = filterAttack } }
+    poolVoice?.namedADSREnvelopes["filterEnv"]!.forEach { $0.env.attackTime = filterAttack } }
   }
   var filterDecay: CoreFloat = 0 { didSet {
-    for tone in tones { tone.namedADSREnvelopes["filterEnv"]!.env.decayTime = filterDecay } }
+    poolVoice?.namedADSREnvelopes["filterEnv"]!.forEach { $0.env.decayTime = filterDecay } }
   }
   var filterSustain: CoreFloat = 0 { didSet {
-    for tone in tones { tone.namedADSREnvelopes["filterEnv"]!.env.sustainLevel = filterSustain } }
+    poolVoice?.namedADSREnvelopes["filterEnv"]!.forEach { $0.env.sustainLevel = filterSustain } }
   }
   var filterRelease: CoreFloat = 0 { didSet {
-    for tone in tones { tone.namedADSREnvelopes["filterEnv"]!.env.releaseTime = filterRelease } }
+    poolVoice?.namedADSREnvelopes["filterEnv"]!.forEach { $0.env.releaseTime = filterRelease } }
   }
   var filterCutoff: CoreFloat = 0 { didSet {
-    for tone in tones { for const in tone.namedConsts["cutoff"]! { const.val = filterCutoff } } }
+    poolVoice?.namedConsts["cutoff"]!.forEach { $0.val = filterCutoff } }
   }
   var filterResonance: CoreFloat = 0 { didSet {
-    for tone in tones { for const in tone.namedConsts["resonance"]! { const.val = filterResonance } } }
+    poolVoice?.namedConsts["resonance"]!.forEach { $0.val = filterResonance } }
   }
   var vibratoAmp: CoreFloat = 0 { didSet {
-    for tone in tones { for const in tone.namedConsts["vibratoAmp"]! { const.val = vibratoAmp } } }
+    poolVoice?.namedConsts["vibratoAmp"]!.forEach { $0.val = vibratoAmp } }
   }
   var vibratoFreq: CoreFloat = 0 { didSet {
-    for tone in tones { for const in tone.namedConsts["vibratoFreq"]! { const.val = vibratoFreq } } }
+    poolVoice?.namedConsts["vibratoFreq"]!.forEach { $0.val = vibratoFreq } }
   }
   var osc1Mix: CoreFloat = 0 { didSet {
-    for tone in tones { for const in tone.namedConsts["osc1Mix"]! { const.val = osc1Mix } } }
+    poolVoice?.namedConsts["osc1Mix"]!.forEach { $0.val = osc1Mix } }
   }
   var osc2Mix: CoreFloat = 0 { didSet {
-    for tone in tones { for const in tone.namedConsts["osc2Mix"]! { const.val = osc2Mix } } }
+    poolVoice?.namedConsts["osc2Mix"]!.forEach { $0.val = osc2Mix } }
   }
   var osc3Mix: CoreFloat = 0 { didSet {
-    for tone in tones { for const in tone.namedConsts["osc3Mix"]! { const.val = osc3Mix } } }
+    poolVoice?.namedConsts["osc3Mix"]!.forEach { $0.val = osc3Mix } }
   }
   var oscShape1: BasicOscillator.OscShape = .noise { didSet {
-    for tone in tones { tone.namedBasicOscs["osc1"]!.shape = oscShape1 } }
+    poolVoice?.namedBasicOscs["osc1"]!.forEach { $0.shape = oscShape1 } }
   }
   var oscShape2: BasicOscillator.OscShape = .noise { didSet {
-    for tone in tones { tone.namedBasicOscs["osc2"]!.shape = oscShape2 } }
+    poolVoice?.namedBasicOscs["osc2"]!.forEach { $0.shape = oscShape2 } }
   }
   var oscShape3: BasicOscillator.OscShape = .noise { didSet {
-    for tone in tones { tone.namedBasicOscs["osc3"]!.shape = oscShape3 } }
+    poolVoice?.namedBasicOscs["osc3"]!.forEach { $0.shape = oscShape3 } }
   }
   var osc1Width: CoreFloat = 0 { didSet {
-    for tone in tones { tone.namedBasicOscs["osc1"]!.width = osc1Width }
-  }}
+    poolVoice?.namedBasicOscs["osc1"]!.forEach { $0.width = osc1Width } }
+  }
   var osc1ChorusCentRadius: CoreFloat = 0 { didSet {
-    for tone in tones { tone.namedChorusers["osc1Choruser"]!.chorusCentRadius = Int(osc1ChorusCentRadius) } }
+    poolVoice?.namedChorusers["osc1Choruser"]!.forEach { $0.chorusCentRadius = Int(osc1ChorusCentRadius) } }
   }
   var osc1ChorusNumVoices: CoreFloat = 0 { didSet {
-    for tone in tones { tone.namedChorusers["osc1Choruser"]!.chorusNumVoices = Int(osc1ChorusNumVoices) } }
+    poolVoice?.namedChorusers["osc1Choruser"]!.forEach { $0.chorusNumVoices = Int(osc1ChorusNumVoices) } }
   }
   var osc1CentDetune: CoreFloat = 0 { didSet {
-    for tone in tones { for const in tone.namedConsts["osc1CentDetune"]! { const.val = osc1CentDetune } } }
+    poolVoice?.namedConsts["osc1CentDetune"]!.forEach { $0.val = osc1CentDetune } }
   }
   var osc1Octave: CoreFloat = 0 { didSet {
-    for tone in tones { for const in tone.namedConsts["osc1Octave"]! { const.val = osc1Octave } } }
+    poolVoice?.namedConsts["osc1Octave"]!.forEach { $0.val = osc1Octave } }
   }
   var osc2CentDetune: CoreFloat = 0 { didSet {
-    for tone in tones { for const in tone.namedConsts["osc2CentDetune"]! { const.val = osc2CentDetune } } }
+    poolVoice?.namedConsts["osc2CentDetune"]!.forEach { $0.val = osc2CentDetune } }
   }
   var osc2Octave: CoreFloat = 0 { didSet {
-    for tone in tones { for const in tone.namedConsts["osc2Octave"]! { const.val = osc2Octave } } }
+    poolVoice?.namedConsts["osc2Octave"]!.forEach { $0.val = osc2Octave } }
   }
   var osc3CentDetune: CoreFloat = 0 { didSet {
-    for tone in tones { for const in tone.namedConsts["osc3CentDetune"]! { const.val = osc3CentDetune } } }
+    poolVoice?.namedConsts["osc3CentDetune"]!.forEach { $0.val = osc3CentDetune } }
   }
   var osc3Octave: CoreFloat = 0 { didSet {
-    for tone in tones { for const in tone.namedConsts["osc3Octave"]! { const.val = osc3Octave } } }
+    poolVoice?.namedConsts["osc3Octave"]!.forEach { $0.val = osc3Octave } }
   }
   var osc2Width: CoreFloat = 0 { didSet {
-    for tone in tones { tone.namedBasicOscs["osc2"]!.width = osc2Width }
-  }}
+    poolVoice?.namedBasicOscs["osc2"]!.forEach { $0.width = osc2Width } }
+  }
   var osc2ChorusCentRadius: CoreFloat = 0 { didSet {
-    for tone in tones { tone.namedChorusers["osc2Choruser"]!.chorusCentRadius = Int(osc2ChorusCentRadius) } }
+    poolVoice?.namedChorusers["osc2Choruser"]!.forEach { $0.chorusCentRadius = Int(osc2ChorusCentRadius) } }
   }
   var osc2ChorusNumVoices: CoreFloat = 0 { didSet {
-    for tone in tones { tone.namedChorusers["osc2Choruser"]!.chorusNumVoices = Int(osc2ChorusNumVoices) } }
+    poolVoice?.namedChorusers["osc1Choruser"]!.forEach { $0.chorusNumVoices = Int(osc2ChorusNumVoices) } }
   }
   var osc3Width: CoreFloat = 0 { didSet {
-    for tone in tones { tone.namedBasicOscs["osc3"]!.width = osc3Width }
-  }}
+    poolVoice?.namedBasicOscs["osc3"]!.forEach { $0.width = osc3Width } }
+  }
   var osc3ChorusCentRadius: CoreFloat = 0 { didSet {
-    for tone in tones { tone.namedChorusers["osc3Choruser"]!.chorusCentRadius = Int(osc3ChorusCentRadius) } }
+    poolVoice?.namedChorusers["osc3Choruser"]!.forEach { $0.chorusCentRadius = Int(osc3ChorusCentRadius) } }
   }
   var osc3ChorusNumVoices: CoreFloat = 0 { didSet {
-    for tone in tones { tone.namedChorusers["osc3Choruser"]!.chorusNumVoices = Int(osc3ChorusNumVoices) } }
+    poolVoice?.namedChorusers["osc3Choruser"]!.forEach { $0.chorusNumVoices = Int(osc3ChorusNumVoices) } }
   }
   var roseFreq: CoreFloat = 0 { didSet {
-    for preset in presets { preset.positionLFO?.freq.val = roseFreq } }
+    presets.forEach { $0.positionLFO?.freq.val = roseFreq } }
   }
   var roseAmp: CoreFloat = 0 { didSet {
-    for preset in presets { preset.positionLFO?.amp.val = roseAmp } }
+    presets.forEach { $0.positionLFO?.amp.val = roseAmp } }
   }
   var roseLeaves: CoreFloat = 0 { didSet {
-    for preset in presets { preset.positionLFO?.leafFactor.val = roseLeaves } }
+    presets.forEach { $0.positionLFO?.leafFactor.val = roseLeaves } }
   }
 
   // FX params
@@ -209,7 +209,8 @@ class SyntacticSynth: EngineAndVoicePool {
     }
   }
 
-  init() {
+  init(engine: SpatialAudioEngine) {
+    self.engine = engine
     var avNodes = [AVAudioMixerNode]()
     let presetSpec = Bundle.main.decode(PresetSyntax.self, from: "saw1_preset.json")
     for _ in 1...numVoices {
@@ -223,56 +224,57 @@ class SyntacticSynth: EngineAndVoicePool {
     }
     engine.connectToEnvNode(avNodes)
     // voicePool is the object that the sequencer plays
-    poolVoice = PoolVoice(voices: tones.map { EnvelopeHandlePlayer(arrow: $0) })
+    let poolVoice = PoolVoice(voices: tones.map { EnvelopeHandlePlayer(arrow: $0) })
+    self.poolVoice = poolVoice
     voicePool = poolVoice
     
-    // read from tones[0] to see what keys we must support getting/setting
-    if tones[0].namedADSREnvelopes["ampEnv"] != nil {
-      ampAttack = tones[0].namedADSREnvelopes["ampEnv"]!.env.attackTime
-      ampDecay = tones[0].namedADSREnvelopes["ampEnv"]!.env.decayTime
-      ampSustain = tones[0].namedADSREnvelopes["ampEnv"]!.env.sustainLevel
-      ampRelease = tones[0].namedADSREnvelopes["ampEnv"]!.env.releaseTime
+    // read from poolVoice to see what keys we must support getting/setting
+    if poolVoice.namedADSREnvelopes["ampEnv"] != nil {
+      ampAttack  = poolVoice.namedADSREnvelopes["ampEnv"]!.first!.env.attackTime
+      ampDecay   = poolVoice.namedADSREnvelopes["ampEnv"]!.first!.env.decayTime
+      ampSustain = poolVoice.namedADSREnvelopes["ampEnv"]!.first!.env.sustainLevel
+      ampRelease = poolVoice.namedADSREnvelopes["ampEnv"]!.first!.env.releaseTime
     }
 
-    if tones[0].namedADSREnvelopes["filterEnv"] != nil {
-      filterAttack = tones[0].namedADSREnvelopes["filterEnv"]!.env.attackTime
-      filterDecay = tones[0].namedADSREnvelopes["filterEnv"]!.env.decayTime
-      filterSustain = tones[0].namedADSREnvelopes["filterEnv"]!.env.sustainLevel
-      filterRelease = tones[0].namedADSREnvelopes["filterEnv"]!.env.releaseTime
+    if poolVoice.namedADSREnvelopes["filterEnv"] != nil {
+      filterAttack  = poolVoice.namedADSREnvelopes["filterEnv"]!.first!.env.attackTime
+      filterDecay   = poolVoice.namedADSREnvelopes["filterEnv"]!.first!.env.decayTime
+      filterSustain = poolVoice.namedADSREnvelopes["filterEnv"]!.first!.env.sustainLevel
+      filterRelease = poolVoice.namedADSREnvelopes["filterEnv"]!.first!.env.releaseTime
     }
     
-    filterCutoff = tones[0].namedConsts["cutoff"]!.first!.val
-    filterResonance = tones[0].namedConsts["resonance"]!.first!.val
+    filterCutoff = poolVoice.namedConsts["cutoff"]!.first!.val
+    filterResonance = poolVoice.namedConsts["resonance"]!.first!.val
     
-    vibratoAmp = tones[0].namedConsts["vibratoAmp"]!.first!.val
-    vibratoFreq = tones[0].namedConsts["vibratoFreq"]!.first!.val
+    vibratoAmp = poolVoice.namedConsts["vibratoAmp"]!.first!.val
+    vibratoFreq = poolVoice.namedConsts["vibratoFreq"]!.first!.val
     
-    osc1Mix = tones[0].namedConsts["osc1Mix"]!.first!.val
-    osc2Mix = tones[0].namedConsts["osc2Mix"]!.first!.val
-    osc3Mix = tones[0].namedConsts["osc3Mix"]!.first!.val
+    osc1Mix = poolVoice.namedConsts["osc1Mix"]!.first!.val
+    osc2Mix = poolVoice.namedConsts["osc2Mix"]!.first!.val
+    osc3Mix = poolVoice.namedConsts["osc3Mix"]!.first!.val
     
-    osc1ChorusCentRadius = CoreFloat(tones[0].namedChorusers["osc1Choruser"]!.chorusCentRadius)
-    osc1ChorusNumVoices  = CoreFloat(tones[0].namedChorusers["osc1Choruser"]!.chorusNumVoices)
-    osc2ChorusCentRadius = CoreFloat(tones[0].namedChorusers["osc2Choruser"]!.chorusCentRadius)
-    osc2ChorusNumVoices  = CoreFloat(tones[0].namedChorusers["osc2Choruser"]!.chorusNumVoices)
-    osc3ChorusCentRadius = CoreFloat(tones[0].namedChorusers["osc3Choruser"]!.chorusCentRadius)
-    osc3ChorusNumVoices  = CoreFloat(tones[0].namedChorusers["osc3Choruser"]!.chorusNumVoices)
+    osc1ChorusCentRadius = CoreFloat(poolVoice.namedChorusers["osc1Choruser"]!.first!.chorusCentRadius)
+    osc1ChorusNumVoices  = CoreFloat(poolVoice.namedChorusers["osc1Choruser"]!.first!.chorusNumVoices)
+    osc2ChorusCentRadius = CoreFloat(poolVoice.namedChorusers["osc2Choruser"]!.first!.chorusCentRadius)
+    osc2ChorusNumVoices  = CoreFloat(poolVoice.namedChorusers["osc2Choruser"]!.first!.chorusNumVoices)
+    osc3ChorusCentRadius = CoreFloat(poolVoice.namedChorusers["osc3Choruser"]!.first!.chorusCentRadius)
+    osc3ChorusNumVoices  = CoreFloat(poolVoice.namedChorusers["osc3Choruser"]!.first!.chorusNumVoices)
 
-    oscShape1 = tones[0].namedBasicOscs["osc1"]!.shape
-    oscShape2 = tones[0].namedBasicOscs["osc2"]!.shape
-    oscShape3 = tones[0].namedBasicOscs["osc3"]!.shape
+    oscShape1 = poolVoice.namedBasicOscs["osc1"]!.first!.shape
+    oscShape2 = poolVoice.namedBasicOscs["osc2"]!.first!.shape
+    oscShape3 = poolVoice.namedBasicOscs["osc3"]!.first!.shape
 
-    osc1Width = tones[0].namedBasicOscs["osc1"]!.width
-    osc2Width = tones[0].namedBasicOscs["osc2"]!.width
-    osc3Width = tones[0].namedBasicOscs["osc3"]!.width
+    osc1Width = poolVoice.namedBasicOscs["osc1"]!.first!.width
+    osc2Width = poolVoice.namedBasicOscs["osc2"]!.first!.width
+    osc3Width = poolVoice.namedBasicOscs["osc3"]!.first!.width
 
-    osc1Octave = tones[0].namedConsts["osc1Octave"]!.first!.val
-    osc2Octave = tones[0].namedConsts["osc2Octave"]!.first!.val
-    osc3Octave = tones[0].namedConsts["osc3Octave"]!.first!.val
+    osc1Octave = poolVoice.namedConsts["osc1Octave"]!.first!.val
+    osc2Octave = poolVoice.namedConsts["osc2Octave"]!.first!.val
+    osc3Octave = poolVoice.namedConsts["osc3Octave"]!.first!.val
 
-    osc1CentDetune = tones[0].namedConsts["osc1CentDetune"]!.first!.val
-    osc2CentDetune = tones[0].namedConsts["osc2CentDetune"]!.first!.val
-    osc3CentDetune = tones[0].namedConsts["osc3CentDetune"]!.first!.val
+    osc1CentDetune = poolVoice.namedConsts["osc1CentDetune"]!.first!.val
+    osc2CentDetune = poolVoice.namedConsts["osc2CentDetune"]!.first!.val
+    osc3CentDetune = poolVoice.namedConsts["osc3CentDetune"]!.first!.val
     
     roseAmp = presets[0].positionLFO!.amp.val
     roseFreq = presets[0].positionLFO!.freq.val
@@ -420,5 +422,5 @@ struct SyntacticSynthView: View {
 }
 
 #Preview {
-  SyntacticSynthView(synth: SyntacticSynth())
+  SyntacticSynthView(synth: SyntacticSynth(engine: SpatialAudioEngine()))
 }

@@ -24,11 +24,14 @@ final class EnvelopeHandlePlayer: ArrowWithHandles, NoteHandler {
   init(arrow: ArrowWithHandles) {
     self.arrow = arrow
     super.init(arrow)
+    let _ = withMergeDictsFromArrow(arrow)
   }
   
   func noteOn(_ note: MidiNote) {
     for key in arrow.namedADSREnvelopes.keys {
-      arrow.namedADSREnvelopes[key]!.noteOn(note)
+      for env in arrow.namedADSREnvelopes[key]! {
+        env.noteOn(note)
+      }
     }
     if arrow.namedConsts["freq"] != nil {
       for const in arrow.namedConsts["freq"]! {
@@ -39,7 +42,9 @@ final class EnvelopeHandlePlayer: ArrowWithHandles, NoteHandler {
   
   func noteOff(_ note: MidiNote) {
     for key in arrow.namedADSREnvelopes.keys {
-      arrow.namedADSREnvelopes[key]!.noteOff(note)
+      for env in arrow.namedADSREnvelopes[key]! {
+        env.noteOff(note)
+      }
     }
   }
 }

@@ -25,5 +25,5 @@ struct AppView: View {
 
 #Preview {
   AppView()
-    .environment(SyntacticSynth())
+    .environment(SyntacticSynth(engine: SpatialAudioEngine()))
 }

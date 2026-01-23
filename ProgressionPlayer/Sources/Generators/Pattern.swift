@@ -13,35 +13,55 @@ import Foundation
 
 // a fully specified musical utterance to play at one point in time, a set of simultaneous noteOns
 struct MusicEvent {
-  let preset: Preset
+  let synth: SyntacticSynth
   let notes: [MidiNote]
-  let duration: Float
+  let duration: CoreFloat // time between noteOn and noteOff in seconds
+  
+  func play() {
+    notes.forEach { synth.poolVoice?.noteOn($0) }
+    Thread.sleep(forTimeInterval: duration)
+    notes.forEach { synth.poolVoice?.noteOff($0) }
+  }
 }
 
 // the ingredients for generating music events
-struct MusicPattern: Sequence, IteratorProtocol {
-  var preset: Preset // a base preset sound, what Supercollider calls a SynthDef
+actor MusicPattern {
+  var synth: SyntacticSynth
   var modulators: [String: Arrow11] // modulates constants in the preset
   var notes: any IteratorProtocol<[MidiNote]> // a sequence of chords
-  var durations: any IteratorProtocol<Float> // a sequence of durations
+  var durations: any IteratorProtocol<CoreFloat> // a sequence of durations
   
-  mutating func next() -> MusicEvent? {
+  init(synth: SyntacticSynth, modulators: [String : Arrow11], notes: any IteratorProtocol<[MidiNote]>, durations: any IteratorProtocol<CoreFloat>) {
+    self.synth = synth
+    self.modulators = modulators
+    self.notes = notes
+    self.durations = durations
+  }
+  
+  func next() -> MusicEvent? {
     guard let note = notes.next() else { return nil }
     guard let duration = durations.next() else { return nil }
     modulateSound()
     return MusicEvent(
-      preset: preset,
+      synth: synth,
       notes: note,
       duration: duration
     )
   }
   
+  func play() async {
+    while let event = next() {
+      event.play()
+    }
+  }
+  
   func modulateSound() {
-    var tone = preset.sound
+    let tone = synth.poolVoice
+    let now = Date.now.timeIntervalSince1970
     for (key, modulatingArrow) in modulators {
-      if tone.namedConsts.keys.contains(key) {
-        for arrowConst in tone.namedConsts[key]! {
-          arrowConst.val = modulatingArrow.of(Date.now.timeIntervalSince1970)
+      if tone?.namedConsts[key] != nil {
+        for arrowConst in tone!.namedConsts[key]! {
+          arrowConst.val = modulatingArrow.of(now)
         }
       }
     }
