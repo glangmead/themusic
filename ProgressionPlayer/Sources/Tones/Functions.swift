@@ -38,3 +38,40 @@ struct PiecewiseFunc<F: Numeric & Comparable> {
     return 0
   }
 }
+
+struct CycleSequence<C: Collection>: Sequence {
+  let cycledElements: C
+  
+  init(_ cycledElements: C) {
+    self.cycledElements = cycledElements
+  }
+  
+  public func makeIterator() -> CycleIterator<C> {
+    return CycleIterator(cycling: cycledElements)
+  }
+}
+
+struct CycleIterator<C: Collection>: IteratorProtocol {
+  let cycledElements: C
+  var cycledElementIterator: C.Iterator
+  
+  init(cycling cycledElements: C) {
+    self.cycledElements = cycledElements
+    self.cycledElementIterator = cycledElements.makeIterator()
+  }
+  
+  public mutating func next() -> C.Iterator.Element? {
+    if let next = cycledElementIterator.next() {
+      return next
+    } else {
+      self.cycledElementIterator = cycledElements.makeIterator() // Cycle back again
+      return cycledElementIterator.next()
+    }
+  }
+}
+
+extension Collection {
+  func cycle() -> CycleSequence<Self> {
+    CycleSequence(self)
+  }
+}
