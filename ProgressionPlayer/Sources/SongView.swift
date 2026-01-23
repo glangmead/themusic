@@ -17,7 +17,12 @@ struct SongView: View {
   @State private var isShowingSynth = false
   @State private var isShowingVisualizer = false
   @State private var noteOffset: Float = 0
+//  @State private var musicPattern: MusicPattern
 
+  init() {
+//    musicPattern = MusicPattern(preset: synth., modulators: <#T##[String : Arrow11]#>, notes: <#T##any IteratorProtocol<[MidiNote]>#>, durations: <#T##any IteratorProtocol<Float>#>)
+  }
+  
   var body: some View {
     NavigationStack {
       if songURL != nil {

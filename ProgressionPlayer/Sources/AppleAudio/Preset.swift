@@ -181,7 +181,7 @@ class InstrumentWithAVAudioUnitEffects {
     }
   }
   
-  func buildChainAndGiveOutputNode(forEngine engine: SpatialAudioEngine) -> AVAudioMixerNode {
+  func wrapInAppleNodes(forEngine engine: SpatialAudioEngine) -> AVAudioMixerNode {
     let sampleRate = engine.sampleRate
     sourceNode = AVAudioSourceNode.withSource(
       source: sound,

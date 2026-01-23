@@ -19,11 +19,11 @@ struct MidiNote {
   }
 }
 
-final class EnvelopeHandlePlayer: Arrow11, NoteHandler {
+final class EnvelopeHandlePlayer: ArrowWithHandles, NoteHandler {
   var arrow: ArrowWithHandles
   init(arrow: ArrowWithHandles) {
     self.arrow = arrow
-    super.init(innerArr: arrow)
+    super.init(arrow)
   }
   
   func noteOn(_ note: MidiNote) {
@@ -51,9 +51,9 @@ protocol NoteHandler: AnyObject {
 
 // Have a collection of note-handling arrows, which we sum as our output.
 // Allocate noteOn among the voices somehow.
-final class PoolVoice: Arrow11, NoteHandler {
+final class PoolVoice: ArrowWithHandles, NoteHandler {
   // the voices, their count, and their sum arrow
-  private let voices: [Arrow11 & NoteHandler]
+  private let voices: [ArrowWithHandles & NoteHandler]
   private let voiceCount: Int
   var globalOffset: Int = 0
   
@@ -62,7 +62,7 @@ final class PoolVoice: Arrow11, NoteHandler {
   private var availableVoiceIdxs: Set<Int>
   var noteToVoiceIdx: [MidiValue: Int]
   
-  init(voices: [Arrow11 & NoteHandler]) {
+  init(voices: [ArrowWithHandles & NoteHandler]) {
     self.voices = voices
     self.voiceCount = voices.count
     
@@ -70,7 +70,8 @@ final class PoolVoice: Arrow11, NoteHandler {
     availableVoiceIdxs = Set(0..<voices.count)
     noteOnnedVoiceIdxs = Set<Int>()
     noteToVoiceIdx = [:]
-    super.init(innerArr: ArrowSum(innerArrs: voices))
+    super.init(ArrowSum(innerArrs: voices))
+    let _ = withMergeDictsFromArrows(voices)
   }
   
   private func takeAvailableVoice(_ note: MidiValue) -> NoteHandler? {

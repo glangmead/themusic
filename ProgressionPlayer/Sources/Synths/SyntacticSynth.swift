@@ -22,36 +22,6 @@ protocol EngineAndVoicePool: AnyObject {
   var voicePool: NoteHandler? { get }
 }
 
-class PlayableArrowWithHandles: NoteHandler {
-  var arrow: ArrowWithHandles
-  var noteHandleKeys: [String]
-  init(arrow: ArrowWithHandles, noteHandleKeys: [String]) {
-    self.arrow = arrow
-    self.noteHandleKeys = noteHandleKeys
-  }
-  
-  func noteOn(_ note: MidiNote) {
-    // play the designated note
-    for noteHandleKey in noteHandleKeys {
-      if arrow.namedConsts[noteHandleKey] != nil {
-        for const in arrow.namedConsts[noteHandleKey]! {
-          const.val = note.freq
-        }
-      }
-    }
-    // play all the envelopes
-    for env in arrow.namedADSREnvelopes.values {
-      env.noteOn(note)
-    }
-  }
-  
-  func noteOff(_ note: MidiNote) {
-    for env in arrow.namedADSREnvelopes.values {
-      env.noteOff(note)
-    }
-  }
-}
-
 // The Synth is the object that contains a pool of voices. So for params that are meant to influence all voices
 // in the same way, the Synth must do that copying.
 @Observable
@@ -239,7 +209,6 @@ class SyntacticSynth: EngineAndVoicePool {
     }
   }
 
-
   init() {
     var avNodes = [AVAudioMixerNode]()
     let presetSpec = Bundle.main.decode(PresetSyntax.self, from: "saw1_preset.json")
@@ -249,13 +218,13 @@ class SyntacticSynth: EngineAndVoicePool {
       let sound = preset.sound
       tones.append(sound)
       
-      let node = preset.buildChainAndGiveOutputNode(forEngine: self.engine)
+      let node = preset.wrapInAppleNodes(forEngine: self.engine)
       avNodes.append(node)
     }
     engine.connectToEnvNode(avNodes)
     // voicePool is the object that the sequencer plays
     poolVoice = PoolVoice(voices: tones.map { EnvelopeHandlePlayer(arrow: $0) })
-    voicePool = poolVoice   
+    voicePool = poolVoice
     
     // read from tones[0] to see what keys we must support getting/setting
     if tones[0].namedADSREnvelopes["ampEnv"] != nil {
