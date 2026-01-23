@@ -79,16 +79,18 @@ struct SongView: View {
         }
       }
       Button("Play Pattern") {
-        // a test song
-        musicPattern = MusicPattern(
-          synth: synth,
-          modulators: [:],
-          notes: ScaleSampler().makeIterator(),
-          sustains: FloatSampler(min: 4, max: 5),
-          gaps: FloatSampler(min: 1, max: 2)
-        )
-        patternPlaybackHandle = Task.detached {
-          await musicPattern?.play()
+        if patternPlaybackHandle == nil {
+          // a test song
+          musicPattern = MusicPattern(
+            synth: synth,
+            modulators: [:],
+            notes: ScaleSampler().makeIterator(),
+            sustains: FloatSampler(min: 4, max: 5),
+            gaps: FloatSampler(min: 1, max: 2)
+          )
+          patternPlaybackHandle = Task.detached {
+            await musicPattern?.play()
+          }
         }
       }
       Button("Play") {
@@ -97,6 +99,7 @@ struct SongView: View {
       Button("Stop") {
         seq?.stop()
         patternPlaybackHandle?.cancel()
+        patternPlaybackHandle = nil
       }
       Button("Rewind") {
         seq?.stop()

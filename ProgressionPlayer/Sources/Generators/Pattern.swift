@@ -107,17 +107,17 @@ actor MusicPattern {
   }
   
   func play() async {
-    while let event = next(), !Task.isCancelled {
-      do {
-        Task {
-          try await event.play()
+    await withTaskGroup(of: Void.self) { group in
+      while !Task.isCancelled {
+        guard let event = next() else { return }
+        group.addTask {
+          try? await event.play()
         }
-        if Task.isCancelled {
-          event.cancel()
+        do {
+          try await Task.sleep(for: .seconds(event.gap))
+        } catch {
+          return
         }
-        try await Task.sleep(for: .seconds(event.gap))
-      } catch {
-        event.cancel()
       }
     }
   }
