@@ -15,12 +15,13 @@ import Foundation
 struct MusicEvent {
   let synth: SyntacticSynth
   let notes: [MidiNote]
-  let duration: CoreFloat // time between noteOn and noteOff in seconds
+  let sustain: CoreFloat // time between noteOn and noteOff in seconds
+  let gap: CoreFloat // time reserved for this event, before next event is played
   
   func play() async throws {
     notes.forEach { synth.poolVoice?.noteOn($0) }
     do {
-      try await Task.sleep(for: .seconds(duration))
+      try await Task.sleep(for: .seconds(sustain))
     } catch {
       
     }
@@ -37,23 +38,33 @@ actor MusicPattern {
   var synth: SyntacticSynth
   var modulators: [String: Arrow11] // modulates constants in the preset
   var notes: any IteratorProtocol<[MidiNote]> // a sequence of chords
-  var durations: any IteratorProtocol<CoreFloat> // a sequence of durations
-  
-  init(synth: SyntacticSynth, modulators: [String : Arrow11], notes: any IteratorProtocol<[MidiNote]>, durations: any IteratorProtocol<CoreFloat>) {
+  var sustains: any IteratorProtocol<CoreFloat> // a sequence of sustain lengths
+  var gaps: any IteratorProtocol<CoreFloat> // a sequence of sustain lengths
+
+  init(
+    synth: SyntacticSynth,
+    modulators: [String : Arrow11],
+    notes: any IteratorProtocol<[MidiNote]>,
+    sustains: any IteratorProtocol<CoreFloat>,
+    gaps: any IteratorProtocol<CoreFloat>
+  ){
     self.synth = synth
     self.modulators = modulators
     self.notes = notes
-    self.durations = durations
+    self.sustains = sustains
+    self.gaps = gaps
   }
   
   func next() -> MusicEvent? {
     guard let note = notes.next() else { return nil }
-    guard let duration = durations.next() else { return nil }
+    guard let sustain = sustains.next() else { return nil }
+    guard let gap = gaps.next() else { return nil }
     modulateSound()
     return MusicEvent(
       synth: synth,
       notes: note,
-      duration: duration
+      sustain: sustain,
+      gap: gap
     )
   }
   
@@ -61,9 +72,8 @@ actor MusicPattern {
     while let event = next(), !Task.isCancelled {
       do {
         try await event.play()
-      } catch {
-        
-      }
+        try await Task.sleep(for: .seconds(event.gap))
+      } catch { }
     }
   }
   

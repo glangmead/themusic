@@ -88,7 +88,8 @@ struct SongView: View {
             [MidiNote(note: 62, velocity: 100), MidiNote(note: 67, velocity: 100), MidiNote(note: 71, velocity: 100)],
             [MidiNote(note: 60, velocity: 100), MidiNote(note: 64, velocity: 100), MidiNote(note: 67, velocity: 100)]
           ].cycle().makeIterator(),
-          durations: [1].cycle().makeIterator()
+          sustains: [1].cycle().makeIterator(),
+          gaps: [2].cycle().makeIterator()
         )
         patternPlaybackHandle = Task.detached {
           await musicPattern?.play()
