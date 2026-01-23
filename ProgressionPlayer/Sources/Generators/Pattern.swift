@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Tonic
 
 // This layer doesn't know about synths or sequencers, only the Sequence protocol and Arrow* classes.
 // The client of MusicPattern would own concepts like beats and absolute time.
@@ -30,6 +31,43 @@ struct MusicEvent {
   
   func cancel() {
     notes.forEach { synth.poolVoice?.noteOff($0) }
+  }
+}
+
+struct ScaleSampler: Sequence, IteratorProtocol {
+  typealias Element = [MidiNote]
+  var scale: Scale
+
+  init(scale: Scale = Scale.aeolian) {
+    self.scale = scale
+  }
+
+  func next() -> [MidiNote]? {
+    return [MidiNote(
+      note: MidiValue(Note.A.shiftUp(scale.intervals.randomElement()!)!.noteNumber),
+      velocity: (50...127).randomElement()!
+    )]
+  }
+}
+
+enum ProbabilityDistribution {
+  case uniform
+  case gaussian(avg: CoreFloat, stdev: CoreFloat)
+}
+
+struct FloatSampler: Sequence, IteratorProtocol {
+  typealias Element = CoreFloat
+  let distribution: ProbabilityDistribution
+  let min: CoreFloat
+  let max: CoreFloat
+  init(min: CoreFloat, max: CoreFloat, dist: ProbabilityDistribution = .uniform) {
+    self.distribution = dist
+    self.min = min
+    self.max = max
+  }
+
+  func next() -> CoreFloat? {
+    CoreFloat.random(in: min...max)
   }
 }
 
@@ -71,9 +109,16 @@ actor MusicPattern {
   func play() async {
     while let event = next(), !Task.isCancelled {
       do {
-        try await event.play()
+        Task {
+          try await event.play()
+        }
+        if Task.isCancelled {
+          event.cancel()
+        }
         try await Task.sleep(for: .seconds(event.gap))
-      } catch { }
+      } catch {
+        event.cancel()
+      }
     }
   }
   

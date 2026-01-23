@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Tonic
 
 struct SongView: View {
   @Environment(SyntacticSynth.self) private var synth
@@ -82,14 +83,9 @@ struct SongView: View {
         musicPattern = MusicPattern(
           synth: synth,
           modulators: [:],
-          notes: [
-            [MidiNote(note: 60, velocity: 100), MidiNote(note: 64, velocity: 100), MidiNote(note: 67, velocity: 100)],
-            [MidiNote(note: 60, velocity: 100), MidiNote(note: 65, velocity: 100), MidiNote(note: 69, velocity: 100)],
-            [MidiNote(note: 62, velocity: 100), MidiNote(note: 67, velocity: 100), MidiNote(note: 71, velocity: 100)],
-            [MidiNote(note: 60, velocity: 100), MidiNote(note: 64, velocity: 100), MidiNote(note: 67, velocity: 100)]
-          ].cycle().makeIterator(),
-          sustains: [1].cycle().makeIterator(),
-          gaps: [2].cycle().makeIterator()
+          notes: ScaleSampler().makeIterator(),
+          sustains: FloatSampler(min: 4, max: 5),
+          gaps: FloatSampler(min: 1, max: 2)
         )
         patternPlaybackHandle = Task.detached {
           await musicPattern?.play()
