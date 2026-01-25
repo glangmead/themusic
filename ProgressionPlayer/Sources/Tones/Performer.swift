@@ -56,7 +56,6 @@ protocol NoteHandler: AnyObject {
 
 // Have a collection of note-handling arrows, which we sum as our output.
 // Allocate noteOn among the voices somehow.
-@Observable
 final class PoolVoice: ArrowWithHandles, NoteHandler {
   // the voices, their count, and their sum arrow
   private let voices: [ArrowWithHandles & NoteHandler]

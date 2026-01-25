@@ -304,6 +304,7 @@ struct SyntacticSynthView: View {
       Spacer()
       
       ArrowChart(arrow: (synth.poolVoice!.namedBasicOscs["osc1"]!.first)!)
+        .id(synth.oscShape1.hashValue ^ synth.osc1Width.hashValue)
       
       Picker("Instrument 1", selection: $synth.oscShape1) {
         ForEach(BasicOscillator.OscShape.allCases, id: \.self) { option in
