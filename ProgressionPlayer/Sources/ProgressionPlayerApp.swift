@@ -28,5 +28,9 @@ struct ProgressionPlayerApp: App {
       AppView()
         .environment(synth)
     }
+
+    WindowGroup(id: "synth-window") {
+      SyntacticSynthView(synth: synth)
+    }
   }
 }

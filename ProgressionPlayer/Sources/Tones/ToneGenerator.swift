@@ -24,8 +24,9 @@ final class Triangle: Arrow11, WidthHaver {
   var width: CoreFloat = 1
   override func of(_ t: CoreFloat) -> CoreFloat {
     let innerResult = inner(t)
-    return (fmod(innerResult, 1) < width/2) ? (2 * fmod(innerResult, 1) / width) :
-      (fmod(innerResult, 1) < width) ? (-2 * fmod(innerResult, 1) / width) + 2 : 0
+    let modResult = fmod(innerResult, 1)
+    return (modResult < width/2) ? (4 * modResult / width) - 1:
+      (modResult < width) ? (-4 * modResult / width) + 3 : 0
   }
 }
 
@@ -33,7 +34,8 @@ final class Sawtooth: Arrow11, WidthHaver {
   var width: CoreFloat = 1
   override func of(_ t: CoreFloat) -> CoreFloat {
     let innerResult = inner(t)
-    return (fmod(innerResult, 1) < width) ? (fmod(innerResult, 1) / width) : 0
+    let modResult = fmod(innerResult, 1)
+    return (modResult < width) ? (2 * modResult / width) - 1 : 0
   }
 }
 
@@ -63,7 +65,7 @@ final class BasicOscillator: Arrow11 {
   private let triangle = Triangle()
   private let sawtooth = Sawtooth()
   private let square = Square()
-  private let noise = ArrowSmoothStep(sampleFreq: 20)
+  private let noise = ArrowSmoothStep(sampleFreq: 5)
   private let sineUnmanaged: Unmanaged<Arrow11>?
   private let triangleUnmanaged: Unmanaged<Arrow11>?
   private let sawtoothUnmanaged: Unmanaged<Arrow11>?

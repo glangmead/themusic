@@ -9,6 +9,7 @@ import SwiftUI
 import Tonic
 
 struct TheoryView: View {
+  @Environment(\.openWindow) private var openWindow
   @Environment(SyntacticSynth.self) private var synth
   @State private var fxExpanded = true
   @State private var ampADSRExpanded = true
@@ -100,7 +101,11 @@ struct TheoryView: View {
         }
         .toolbar {
           Button("Synth") {
+            #if targetEnvironment(macCatalyst)
+            openWindow(id: "synth-window")
+            #else
             isShowingSynth = true
+            #endif
           }
         }
         .navigationTitle("⌘Scape")

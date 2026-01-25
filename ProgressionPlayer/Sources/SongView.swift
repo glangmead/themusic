@@ -9,6 +9,7 @@ import SwiftUI
 import Tonic
 
 struct SongView: View {
+  @Environment(\.openWindow) private var openWindow
   @Environment(SyntacticSynth.self) private var synth
   @State private var seq: Sequencer?
   @State private var error: Error? = nil
@@ -27,10 +28,11 @@ struct SongView: View {
         MidiInspectorView(midiURL: songURL!)
       }
       Text("Playback speed: \(seq?.avSeq.rate ?? 0)")
-      Slider(value: $playbackRate, in: 0...20)
+      Slider(value: $playbackRate, in: 0.001...20)
         .onChange(of: playbackRate, initial: true) {
           seq?.avSeq.rate = playbackRate
         }
+        .padding()
       KnobbyKnob(value: $noteOffset, range: -100...100, stepSize: 1)
         .onChange(of: noteOffset, initial: true) {
           synth.poolVoice?.globalOffset = Int(noteOffset)
@@ -40,7 +42,11 @@ struct SongView: View {
         .toolbar {
           ToolbarItem() {
             Button("Synth") {
+              #if targetEnvironment(macCatalyst)
+              openWindow(id: "synth-window")
+              #else
               isShowingSynth = true
+              #endif
             }
           }
           ToolbarItem() {

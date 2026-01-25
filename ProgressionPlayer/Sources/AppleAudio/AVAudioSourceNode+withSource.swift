@@ -6,6 +6,7 @@
 //
 
 import AVFAudio
+import CoreAudio
 
 extension AVAudioSourceNode {
   static func withSource(source: Arrow11, sampleRate: Double) -> AVAudioSourceNode {

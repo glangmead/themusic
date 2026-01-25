@@ -182,8 +182,8 @@ final class ArrowConstCent: Arrow11, ValHaver, Equatable {
 final class ArrowSmoothStep: Arrow11, WidthHaver {
   var width: CoreFloat = 1
   var sampleFreq: CoreFloat = 1
-  private var lastSampleTime: CoreFloat = 0
-  private var nextSampleTime: CoreFloat = 0
+  private var lastSampleTime: CoreFloat
+  private var nextSampleTime: CoreFloat
   private var lastSample: CoreFloat
   private var nextSample: CoreFloat
   private var sampleDeltaTime: CoreFloat {
@@ -192,15 +192,35 @@ final class ArrowSmoothStep: Arrow11, WidthHaver {
   
   init(sampleFreq: CoreFloat) {
     self.sampleFreq = sampleFreq
-    self.lastSample = CoreFloat.random(in: 0.0...1.0)
-    self.nextSample = CoreFloat.random(in: 0.0...1.0)
+    self.lastSample = CoreFloat.random(in: -1.0...1.0)
+    self.nextSample = CoreFloat.random(in: -1.0...1.0)
+    lastSampleTime = Date.now.timeIntervalSince1970
+    nextSampleTime = lastSampleTime + (1.0 / sampleFreq)
     super.init()
   }
   
   override func of(_ t: CoreFloat) -> CoreFloat {
-    let betweenTime = fmod(t, sampleDeltaTime) / sampleDeltaTime
+    let modT = fmod(t, sampleDeltaTime)
+    if t >= nextSampleTime && (t - nextSampleTime) > sampleDeltaTime {
+      lastSampleTime = t - modT
+      nextSampleTime = t - modT + sampleDeltaTime
+    }
+    if t >= nextSampleTime && (t - nextSampleTime < sampleDeltaTime) {
+      lastSample = nextSample
+      nextSample = CoreFloat.random(in: -1.0...1.0)
+      lastSampleTime = nextSampleTime
+      nextSampleTime += sampleDeltaTime
+    }
     // generate smoothstep for x between 0 and 1, y between 0 and 1
+    let betweenTime = modT / sampleDeltaTime
     let zeroOneSmooth = betweenTime * betweenTime * (3 - 2 * betweenTime)
-    return lastSample + (zeroOneSmooth * (nextSample - lastSample))
+    let result = lastSample + (zeroOneSmooth * (nextSample - lastSample))
+    return result
   }
+}
+
+#Preview {
+  let osc = ArrowSmoothStep(sampleFreq: 500)
+  osc.innerArr = ArrowProd(innerArrs: [ArrowConst(value: 440), ArrowIdentity()])
+  return ArrowChart(arrow: osc)
 }
