@@ -36,10 +36,6 @@ class SyntacticSynth: EngineAndVoicePool {
   #endif
   private var tones = [ArrowWithHandles]()
   private var presets = [Preset]()
-  private var basicOscHandles = [String]()
-  private var lowPassFilterHandles = [String]()
-  private var constsHandles = [String]()
-  private var envelopesHandles = [String]()
   let cent: CoreFloat = 1.0005777895065548 // '2 ** (1/1200)' in python
   
   // Tone params
@@ -305,6 +301,10 @@ struct SyntacticSynthView: View {
   var body: some View {
 
     ScrollView {
+      Spacer()
+      
+      ArrowChart(arrow: (synth.poolVoice!.namedBasicOscs["osc1"]!.first)!)
+      
       Picker("Instrument 1", selection: $synth.oscShape1) {
         ForEach(BasicOscillator.OscShape.allCases, id: \.self) { option in
           Text(String(describing: option))

@@ -10,7 +10,6 @@
 		9B0F28872ED00401004C0884 /* AudioKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9B0F28862ED00401004C0884 /* AudioKitUI */; };
 		9B137E812EE8CA6D00DE0E15 /* All-My-Loving.mid in Resources */ = {isa = PBXBuildFile; fileRef = 9B137E802EE8CA6D00DE0E15 /* All-My-Loving.mid */; };
 		9B1864642E772E37006147D8 /* Overture in Frameworks */ = {isa = PBXBuildFile; productRef = 9B1864632E772E37006147D8 /* Overture */; };
-		9B1F01702EB95F0A00C5110F /* Note.icon in Resources */ = {isa = PBXBuildFile; fileRef = 9B1F016F2EB95F0A00C5110F /* Note.icon */; };
 		9B51A5072EEB54E40007D695 /* saw1_preset.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B51A5062EEB54E40007D695 /* saw1_preset.json */; };
 		9B7430A02ECFA5640017DE7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B7430922ECFA5640017DE7D /* Assets.xcassets */; };
 		9B935B962EDE0F1800600E63 /* D_Loop_01.mid in Resources */ = {isa = PBXBuildFile; fileRef = 9B935B942EDE0F1800600E63 /* D_Loop_01.mid */; };
@@ -20,6 +19,7 @@
 		9BCED9112F1FD0A30029ED1B /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 9BCED9102F1FD0A30029ED1B /* index.html */; };
 		9BCED9142F1FD2E30029ED1B /* butterchurn-presets.js in Resources */ = {isa = PBXBuildFile; fileRef = 9BCED9132F1FD2E30029ED1B /* butterchurn-presets.js */; };
 		9BCED9152F1FD2E30029ED1B /* butterchurn.js in Resources */ = {isa = PBXBuildFile; fileRef = 9BCED9122F1FD2E30029ED1B /* butterchurn.js */; };
+		9BCED9902F246B150029ED1B /* Orbital.icon in Resources */ = {isa = PBXBuildFile; fileRef = 9BCED98F2F246B150029ED1B /* Orbital.icon */; };
 		9BD1B7002E8B08D000C718F1 /* Tonic in Frameworks */ = {isa = PBXBuildFile; productRef = 9BD1B6FF2E8B08D000C718F1 /* Tonic */; };
 		9BFFD97F2E7DA94B00E7CB55 /* beat.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 9BFFD97E2E7DA94B00E7CB55 /* beat.aiff */; };
 /* End PBXBuildFile section */
@@ -56,6 +56,7 @@
 		9BCED9102F1FD0A30029ED1B /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		9BCED9122F1FD2E30029ED1B /* butterchurn.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = butterchurn.js; sourceTree = "<group>"; };
 		9BCED9132F1FD2E30029ED1B /* butterchurn-presets.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "butterchurn-presets.js"; sourceTree = "<group>"; };
+		9BCED98F2F246B150029ED1B /* Orbital.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = Orbital.icon; sourceTree = "<group>"; };
 		9BFFD97E2E7DA94B00E7CB55 /* beat.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = beat.aiff; sourceTree = "<group>"; };
 		9BFFD9802E7DABD200E7CB55 /* ProgressionPlayer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProgressionPlayer.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -129,6 +130,7 @@
 				9BCED9102F1FD0A30029ED1B /* index.html */,
 				9BCED9122F1FD2E30029ED1B /* butterchurn.js */,
 				9BCED9132F1FD2E30029ED1B /* butterchurn-presets.js */,
+				9BCED98F2F246B150029ED1B /* Orbital.icon */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -298,13 +300,13 @@
 				9BCED9142F1FD2E30029ED1B /* butterchurn-presets.js in Resources */,
 				9BCED9152F1FD2E30029ED1B /* butterchurn.js in Resources */,
 				9B137E812EE8CA6D00DE0E15 /* All-My-Loving.mid in Resources */,
+				9BCED9902F246B150029ED1B /* Orbital.icon in Resources */,
 				9B935B972EDE0F1800600E63 /* MSLFSanctus.mid in Resources */,
 				9BCED9112F1FD0A30029ED1B /* index.html in Resources */,
 				9BA5B1D42F14636B00857520 /* BachInvention1.mid in Resources */,
 				9BFFD97F2E7DA94B00E7CB55 /* beat.aiff in Resources */,
 				9B7430A02ECFA5640017DE7D /* Assets.xcassets in Resources */,
 				9B51A5072EEB54E40007D695 /* saw1_preset.json in Resources */,
-				9B1F01702EB95F0A00C5110F /* Note.icon in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,9 +489,9 @@
 		9BC0FCC92E704EAA00472A5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = Note;
+				ASSETCATALOG_COMPILER_APPICON_NAME = Orbital;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = ProgressionPlayer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -497,7 +499,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ProgressionPlayer-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = Scape;
+				INFOPLIST_KEY_CFBundleDisplayName = Orbital;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music-games";
 				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -523,9 +525,9 @@
 		9BC0FCCA2E704EAA00472A5A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = Note;
+				ASSETCATALOG_COMPILER_APPICON_NAME = Orbital;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = ProgressionPlayer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -533,7 +535,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ProgressionPlayer-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = Scape;
+				INFOPLIST_KEY_CFBundleDisplayName = Orbital;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music-games";
 				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

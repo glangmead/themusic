@@ -51,7 +51,7 @@ final class Noise: Arrow11, WidthHaver {
   }
 }
 
-final class BasicOscillator: Arrow11 {
+final class BasicOscillator: Arrow11, Equatable {
   enum OscShape: String, CaseIterable, Equatable, Hashable, Codable {
     case sine = "sineOsc"
     case triangle = "triangleOsc"
@@ -63,7 +63,7 @@ final class BasicOscillator: Arrow11 {
   private let triangle = Triangle()
   private let sawtooth = Sawtooth()
   private let square = Square()
-  private let noise = Noise()
+  private let noise = ArrowSmoothStep(sampleFreq: 20)
   private let sineUnmanaged: Unmanaged<Arrow11>?
   private let triangleUnmanaged: Unmanaged<Arrow11>?
   private let sawtoothUnmanaged: Unmanaged<Arrow11>?
@@ -118,6 +118,9 @@ final class BasicOscillator: Arrow11 {
       arrow = noise
       arrUnmanaged = noiseUnmanaged
     }
+  }
+  static func == (lhs: BasicOscillator, rhs: BasicOscillator) -> Bool {
+    lhs.shape == rhs.shape && lhs.width == rhs.width
   }
 }
 
@@ -261,6 +264,7 @@ final class LowPassFilter2: Arrow11 {
   }
 }
 
+@Observable
 class ArrowWithHandles: Arrow11 {
   // the handles are dictionaries with values that give access to arrows within the arrow
   var namedBasicOscs     = [String: [BasicOscillator]]()

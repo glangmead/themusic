@@ -177,3 +177,30 @@ final class ArrowConstCent: Arrow11, ValHaver, Equatable {
     lhs.val == rhs.val
   }
 }
+
+// Takes on random values every 1/sampleFreq seconds, and smoothly interpolates between
+final class ArrowSmoothStep: Arrow11, WidthHaver {
+  var width: CoreFloat = 1
+  var sampleFreq: CoreFloat = 1
+  private var lastSampleTime: CoreFloat = 0
+  private var nextSampleTime: CoreFloat = 0
+  private var lastSample: CoreFloat
+  private var nextSample: CoreFloat
+  private var sampleDeltaTime: CoreFloat {
+    1.0 / sampleFreq
+  }
+  
+  init(sampleFreq: CoreFloat) {
+    self.sampleFreq = sampleFreq
+    self.lastSample = CoreFloat.random(in: 0.0...1.0)
+    self.nextSample = CoreFloat.random(in: 0.0...1.0)
+    super.init()
+  }
+  
+  override func of(_ t: CoreFloat) -> CoreFloat {
+    let betweenTime = fmod(t, sampleDeltaTime) / sampleDeltaTime
+    // generate smoothstep for x between 0 and 1, y between 0 and 1
+    let zeroOneSmooth = betweenTime * betweenTime * (3 - 2 * betweenTime)
+    return lastSample + (zeroOneSmooth * (nextSample - lastSample))
+  }
+}

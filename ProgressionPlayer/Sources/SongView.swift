@@ -83,7 +83,7 @@ struct SongView: View {
           // a test song
           musicPattern = MusicPattern(
             synth: synth,
-            modulators: [:],
+            modulators: [:],//["vibratoAmp": ArrowLine(0, 1, 7)],
             notes: ScaleSampler().makeIterator(),
             sustains: FloatSampler(min: 4, max: 5),
             gaps: FloatSampler(min: 1, max: 2)
