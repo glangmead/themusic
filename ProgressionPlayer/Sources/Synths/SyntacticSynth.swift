@@ -22,8 +22,8 @@ protocol EngineAndVoicePool: AnyObject {
   var voicePool: NoteHandler? { get }
 }
 
-// The Synth is the object that contains a pool of voices. So for params that are meant to influence all voices
-// in the same way, the Synth must do that copying.
+// A Synth is an object that wraps a single PresetSyntax and offers mutators for all its settings, and offers a
+// pool of voices for playing the Preset.
 @Observable
 class SyntacticSynth: EngineAndVoicePool {
   let presetSpec: PresetSyntax

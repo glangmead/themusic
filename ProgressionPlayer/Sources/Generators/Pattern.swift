@@ -7,6 +7,7 @@
 
 import Foundation
 import Tonic
+import AVFAudio
 
 // This layer doesn't know about synths or sequencers, only the Sequence protocol and Arrow* classes.
 // The client of MusicPattern would own concepts like beats and absolute time.
@@ -14,28 +15,51 @@ import Tonic
 
 // a fully specified musical utterance to play at one point in time, a set of simultaneous noteOns
 struct MusicEvent {
-  var synth: SyntacticSynth?
+  var presets: [Preset]
   let notes: [MidiNote]
   let sustain: CoreFloat // time between noteOn and noteOff in seconds
   let gap: CoreFloat // time reserved for this event, before next event is played
+  let modulators: [String: Arrow11]
+  let timeOrigin: Double
+  var cleanup: (() async -> Void)? = nil
+  
+  private(set) var voice: PoolVoice? = nil
   
   mutating func play() async throws {
-    notes.forEach { synth?.poolVoice?.noteOn($0) }
+    let noteHandlers = presets.map { EnvelopeHandlePlayer(arrow: $0.sound) }
+    self.voice = PoolVoice(voices: noteHandlers)
+    
+    // Apply modulation
+    let now = CoreFloat(Date.now.timeIntervalSince1970 - timeOrigin)
+    for (key, modulatingArrow) in modulators {
+      if voice!.namedConsts[key] != nil {
+        for arrowConst in voice!.namedConsts[key]! {
+          arrowConst.val = modulatingArrow.of(now)
+        }
+      }
+    }
+
+    notes.forEach { voice?.noteOn($0) }
     do {
       try await Task.sleep(for: .seconds(TimeInterval(sustain)))
     } catch {
       
     }
-    notes.forEach { synth?.poolVoice?.noteOff($0) }
-    synth = nil
+    notes.forEach { voice?.noteOff($0) }
+    if let cleanup = cleanup {
+      await cleanup()
+    }
+    self.voice = nil
   }
   
-  mutating func cancel() {
-    notes.forEach { synth?.poolVoice?.noteOff($0) }
-    synth = nil
+  mutating func cancel() async {
+    notes.forEach { voice?.noteOff($0) }
+    if let cleanup = cleanup {
+      await cleanup()
+    }
+    self.voice = nil
   }
 }
-
 struct ScaleSampler: Sequence, IteratorProtocol {
   typealias Element = [MidiNote]
   var scale: Scale
@@ -82,6 +106,10 @@ actor MusicPattern {
   var sustains: any IteratorProtocol<CoreFloat> // a sequence of sustain lengths
   var gaps: any IteratorProtocol<CoreFloat> // a sequence of sustain lengths
   var timeOrigin: Double
+  
+  private var presetPool = [Preset]()
+  private let voicesPerEvent = 3
+  private let poolSize = 20
 
   init(
     presetSpec: PresetSyntax,
@@ -98,26 +126,60 @@ actor MusicPattern {
     self.sustains = sustains
     self.gaps = gaps
     self.timeOrigin = Date.now.timeIntervalSince1970
+    
+    // Initialize pool
+    var avNodes = [AVAudioMixerNode]()
+    for _ in 0..<poolSize {
+      let preset = presetSpec.compile()
+      presetPool.append(preset)
+      let node = preset.wrapInAppleNodes(forEngine: engine)
+      avNodes.append(node)
+    }
+    engine.connectToEnvNode(avNodes)
   }
   
-  func next() -> MusicEvent? {
+  func leasePresets(count: Int) -> [Preset] {
+    var leased = [Preset]()
+    let toTake = min(count, presetPool.count)
+    if toTake > 0 {
+      leased.append(contentsOf: presetPool.suffix(toTake))
+      presetPool.removeLast(toTake)
+    }
+    return leased
+  }
+  
+  func returnPresets(_ presets: [Preset]) {
+    presetPool.append(contentsOf: presets)
+  }
+  
+  func next() async -> MusicEvent? {
     guard let note = notes.next() else { return nil }
     guard let sustain = sustains.next() else { return nil }
     guard let gap = gaps.next() else { return nil }
-    let synth = SyntacticSynth(engine: engine, presetSpec: presetSpec, numVoices: 3)
-    modulateSound(synth: synth)
+    
+    let presets = leasePresets(count: voicesPerEvent)
+    if presets.isEmpty {
+      print("Warning: MusicPattern starved for voices")
+      return nil 
+    }
+    
     return MusicEvent(
-      synth: synth,
+      presets: presets,
       notes: note,
       sustain: sustain,
-      gap: gap
+      gap: gap,
+      modulators: modulators,
+      timeOrigin: timeOrigin,
+      cleanup: { [weak self] in
+        await self?.returnPresets(presets)
+      }
     )
   }
   
   func play() async {
     await withTaskGroup(of: Void.self) { group in
       while !Task.isCancelled {
-        guard var event = next() else { return }
+        guard var event = await next() else { return }
         group.addTask {
           try? await event.play()
         }
@@ -129,18 +191,4 @@ actor MusicPattern {
       }
     }
   }
-  
-  func modulateSound(synth: SyntacticSynth) {
-    let tone = synth.poolVoice
-    let now = CoreFloat(Date.now.timeIntervalSince1970 - timeOrigin)
-    for (key, modulatingArrow) in modulators {
-      if tone?.namedConsts[key] != nil {
-        for arrowConst in tone!.namedConsts[key]! {
-          arrowConst.val = modulatingArrow.of(now)
-        }
-      }
-    }
-  }
 }
-
-// then we need a builder and JSON format for a MusicPattern
