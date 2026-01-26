@@ -123,13 +123,16 @@ final class PoolVoice: ArrowWithHandles, NoteHandler {
   func applyOffset(note: UInt8) -> UInt8 {
     var result = note
     if globalOffset < 0 {
-      result -= UInt8(-1 * globalOffset)
+      if -1 * globalOffset < result {
+        result -= UInt8(-1 * globalOffset)
+      } else {
+        result = 0
+      }
     } else {
       result += UInt8(globalOffset)
     }
     return result
   }
-
 }
 
 

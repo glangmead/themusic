@@ -15,7 +15,7 @@ struct ArrowChart: View {
   }
   
   var arrow: Arrow11
-  @State private var numSamplesToPlot = 600
+  @State private var numSamplesToPlot = 4410
   let sampleRate = 44100
   var data: [Sample] {
     let now = Date.now.timeIntervalSince1970

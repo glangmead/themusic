@@ -181,46 +181,55 @@ final class ArrowConstCent: Arrow11, ValHaver, Equatable {
 // Takes on random values every 1/sampleFreq seconds, and smoothly interpolates between
 final class ArrowSmoothStep: Arrow11, WidthHaver {
   var width: CoreFloat = 1
-  var sampleFreq: CoreFloat = 1
-  private var lastSampleTime: CoreFloat
-  private var nextSampleTime: CoreFloat
+  var noiseFreq: CoreFloat = 1
+  private var previousTime: CoreFloat = 0
+  private var deltaTime: CoreFloat = 0
+  private var lastNoiseTime: CoreFloat
+  private var nextNoiseTime: CoreFloat
   private var lastSample: CoreFloat
   private var nextSample: CoreFloat
-  private var sampleDeltaTime: CoreFloat {
-    1.0 / sampleFreq
+  private var epsilon: CoreFloat = 1e-7
+  private var noiseDeltaTime: CoreFloat {
+    1.0 / noiseFreq
   }
   
   init(sampleFreq: CoreFloat) {
-    self.sampleFreq = sampleFreq
+    self.noiseFreq = sampleFreq
     self.lastSample = CoreFloat.random(in: -1.0...1.0)
     self.nextSample = CoreFloat.random(in: -1.0...1.0)
-    lastSampleTime = Date.now.timeIntervalSince1970
-    nextSampleTime = lastSampleTime + (1.0 / sampleFreq)
+    lastNoiseTime = Date.now.timeIntervalSince1970
+    nextNoiseTime = lastNoiseTime + (1.0 / sampleFreq)
     super.init()
   }
   
   override func of(_ t: CoreFloat) -> CoreFloat {
-    let modT = fmod(t, sampleDeltaTime)
-    if t >= nextSampleTime && (t - nextSampleTime) > sampleDeltaTime {
-      lastSampleTime = t - modT
-      nextSampleTime = t - modT + sampleDeltaTime
+    // compute the actual time between samples
+    if previousTime == 0 {
+      previousTime = t
+      return 0
+    } else if deltaTime == 0 {
+      deltaTime = t - previousTime
+      return 0
     }
-    if t >= nextSampleTime && (t - nextSampleTime < sampleDeltaTime) {
-      lastSample = nextSample
-      nextSample = CoreFloat.random(in: -1.0...1.0)
-      lastSampleTime = nextSampleTime
-      nextSampleTime += sampleDeltaTime
-    }
+    
+    let modT = fmod(t, noiseDeltaTime)
     // generate smoothstep for x between 0 and 1, y between 0 and 1
-    let betweenTime = modT / sampleDeltaTime
+    let betweenTime = modT / noiseDeltaTime
     let zeroOneSmooth = betweenTime * betweenTime * (3 - 2 * betweenTime)
     let result = lastSample + (zeroOneSmooth * (nextSample - lastSample))
+    
+    if abs(modT - noiseDeltaTime) <= deltaTime {
+      lastSample = nextSample
+      nextSample = CoreFloat.random(in: -1.0...1.0)
+      lastNoiseTime = nextNoiseTime
+      nextNoiseTime += noiseDeltaTime
+    }
     return result
   }
 }
 
 #Preview {
-  let osc = ArrowSmoothStep(sampleFreq: 500)
-  osc.innerArr = ArrowProd(innerArrs: [ArrowConst(value: 440), ArrowIdentity()])
+  let osc = ArrowSmoothStep(sampleFreq: 50)
+  osc.innerArr = ArrowProd(innerArrs: [ArrowConst(value: 1), ArrowIdentity()])
   return ArrowChart(arrow: osc)
 }

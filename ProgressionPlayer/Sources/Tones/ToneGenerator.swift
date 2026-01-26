@@ -65,7 +65,7 @@ final class BasicOscillator: Arrow11 {
   private let triangle = Triangle()
   private let sawtooth = Sawtooth()
   private let square = Square()
-  private let noise = ArrowSmoothStep(sampleFreq: 5)
+  private let noise = ArrowSmoothStep(sampleFreq: 4000)
   private let sineUnmanaged: Unmanaged<Arrow11>?
   private let triangleUnmanaged: Unmanaged<Arrow11>?
   private let sawtoothUnmanaged: Unmanaged<Arrow11>?
@@ -99,7 +99,12 @@ final class BasicOscillator: Arrow11 {
   }
   
   override func of(_ t: CoreFloat) -> CoreFloat {
-    arrUnmanaged?._withUnsafeGuaranteedRef { $0.of(unmanagedInner(t)) } ?? 0
+    switch shape {
+    case .noise:
+      arrUnmanaged?._withUnsafeGuaranteedRef { $0.of(t) } ?? 0
+    default:
+      arrUnmanaged?._withUnsafeGuaranteedRef { $0.of(unmanagedInner(t)) } ?? 0
+    }
   }
   
   func updateShape() {

@@ -73,7 +73,7 @@ struct TheoryView: View {
           }
         )
         
-        KnobbyKnob(value: $noteOffset, range: -100...100, stepSize: 1)
+        KnobbyKnob(value: $noteOffset, range: -50...50, stepSize: 1)
           .onChange(of: noteOffset, initial: true) {
             synth.poolVoice?.globalOffset = Int(noteOffset)
           }
