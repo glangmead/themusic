@@ -14,23 +14,25 @@ import Tonic
 
 // a fully specified musical utterance to play at one point in time, a set of simultaneous noteOns
 struct MusicEvent {
-  let synth: SyntacticSynth
+  var synth: SyntacticSynth?
   let notes: [MidiNote]
   let sustain: CoreFloat // time between noteOn and noteOff in seconds
   let gap: CoreFloat // time reserved for this event, before next event is played
   
-  func play() async throws {
-    notes.forEach { synth.poolVoice?.noteOn($0) }
+  mutating func play() async throws {
+    notes.forEach { synth?.poolVoice?.noteOn($0) }
     do {
       try await Task.sleep(for: .seconds(TimeInterval(sustain)))
     } catch {
       
     }
-    notes.forEach { synth.poolVoice?.noteOff($0) }
+    notes.forEach { synth?.poolVoice?.noteOff($0) }
+    synth = nil
   }
   
-  func cancel() {
-    notes.forEach { synth.poolVoice?.noteOff($0) }
+  mutating func cancel() {
+    notes.forEach { synth?.poolVoice?.noteOff($0) }
+    synth = nil
   }
 }
 
@@ -73,7 +75,8 @@ struct FloatSampler: Sequence, IteratorProtocol {
 
 // the ingredients for generating music events
 actor MusicPattern {
-  var synth: SyntacticSynth
+  var presetSpec: PresetSyntax
+  var engine: SpatialAudioEngine
   var modulators: [String: Arrow11] // modulates constants in the preset
   var notes: any IteratorProtocol<[MidiNote]> // a sequence of chords
   var sustains: any IteratorProtocol<CoreFloat> // a sequence of sustain lengths
@@ -81,13 +84,15 @@ actor MusicPattern {
   var timeOrigin: Double
 
   init(
-    synth: SyntacticSynth,
+    presetSpec: PresetSyntax,
+    engine: SpatialAudioEngine,
     modulators: [String : Arrow11],
     notes: any IteratorProtocol<[MidiNote]>,
     sustains: any IteratorProtocol<CoreFloat>,
     gaps: any IteratorProtocol<CoreFloat>
   ){
-    self.synth = synth
+    self.presetSpec = presetSpec
+    self.engine = engine
     self.modulators = modulators
     self.notes = notes
     self.sustains = sustains
@@ -99,7 +104,8 @@ actor MusicPattern {
     guard let note = notes.next() else { return nil }
     guard let sustain = sustains.next() else { return nil }
     guard let gap = gaps.next() else { return nil }
-    modulateSound()
+    let synth = SyntacticSynth(engine: engine, presetSpec: presetSpec, numVoices: 3)
+    modulateSound(synth: synth)
     return MusicEvent(
       synth: synth,
       notes: note,
@@ -111,7 +117,7 @@ actor MusicPattern {
   func play() async {
     await withTaskGroup(of: Void.self) { group in
       while !Task.isCancelled {
-        guard let event = next() else { return }
+        guard var event = next() else { return }
         group.addTask {
           try? await event.play()
         }
@@ -124,7 +130,7 @@ actor MusicPattern {
     }
   }
   
-  func modulateSound() {
+  func modulateSound(synth: SyntacticSynth) {
     let tone = synth.poolVoice
     let now = CoreFloat(Date.now.timeIntervalSince1970 - timeOrigin)
     for (key, modulatingArrow) in modulators {

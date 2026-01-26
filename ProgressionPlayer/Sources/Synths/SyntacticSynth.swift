@@ -26,14 +26,11 @@ protocol EngineAndVoicePool: AnyObject {
 // in the same way, the Synth must do that copying.
 @Observable
 class SyntacticSynth: EngineAndVoicePool {
+  let presetSpec: PresetSyntax
   let engine: SpatialAudioEngine
   var voicePool: NoteHandler? = nil
   var poolVoice: PoolVoice? = nil
-  #if DEBUG
-  private let numVoices = 3
-  #else
-  private let numVoices = 12
-  #endif
+  let numVoices = 12
   private var tones = [ArrowWithHandles]()
   private var presets = [Preset]()
   let cent: CoreFloat = 1.0005777895065548 // '2 ** (1/1200)' in python
@@ -205,10 +202,10 @@ class SyntacticSynth: EngineAndVoicePool {
     }
   }
 
-  init(engine: SpatialAudioEngine) {
+  init(engine: SpatialAudioEngine, presetSpec: PresetSyntax, numVoices: Int = 12) {
     self.engine = engine
+    self.presetSpec = presetSpec
     var avNodes = [AVAudioMixerNode]()
-    let presetSpec = Bundle.main.decode(PresetSyntax.self, from: "saw1_preset.json")
     for _ in 1...numVoices {
       let preset = presetSpec.compile()
       presets.append(preset)
@@ -423,5 +420,6 @@ struct SyntacticSynthView: View {
 }
 
 #Preview {
-  SyntacticSynthView(synth: SyntacticSynth(engine: SpatialAudioEngine()))
+  let presetSpec = Bundle.main.decode(PresetSyntax.self, from: "saw1_preset.json")
+  SyntacticSynthView(synth: SyntacticSynth(engine: SpatialAudioEngine(), presetSpec: presetSpec))
 }

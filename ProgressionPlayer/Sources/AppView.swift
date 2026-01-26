@@ -24,6 +24,7 @@ struct AppView: View {
 }
 
 #Preview {
+  let presetSpec = Bundle.main.decode(PresetSyntax.self, from: "saw1_preset.json")
   AppView()
-    .environment(SyntacticSynth(engine: SpatialAudioEngine()))
+    .environment(SyntacticSynth(engine: SpatialAudioEngine(), presetSpec: presetSpec))
 }

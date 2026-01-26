@@ -88,8 +88,13 @@ struct SongView: View {
         if patternPlaybackHandle == nil {
           // a test song
           musicPattern = MusicPattern(
-            synth: synth,
-            modulators: [:],//["vibratoAmp": ArrowLine(0, 1, 7)],
+            presetSpec: synth.presetSpec,
+            engine: synth.engine,
+            modulators: [
+              "vibratoAmp": ArrowLine(start: 0, end: 1, duration: 7),
+              "osc2Mix": ArrowConst(value: 0),
+              "osc3Mix": ArrowConst(value: 0),
+            ],
             notes: ScaleSampler().makeIterator(),
             sustains: FloatSampler(min: 4, max: 5),
             gaps: FloatSampler(min: 1, max: 2)
@@ -132,6 +137,7 @@ struct SongView: View {
 }
 
 #Preview {
+  let presetSpec = Bundle.main.decode(PresetSyntax.self, from: "saw1_preset.json")
   SongView()
-    .environment(SyntacticSynth(engine: SpatialAudioEngine()))
+    .environment(SyntacticSynth(engine: SpatialAudioEngine(), presetSpec: presetSpec))
 }

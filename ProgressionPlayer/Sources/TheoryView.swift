@@ -155,6 +155,7 @@ struct TheoryView: View {
 }
 
 #Preview {
+  let presetSpec = Bundle.main.decode(PresetSyntax.self, from: "saw1_preset.json")
   TheoryView()
-    .environment(SyntacticSynth(engine: SpatialAudioEngine()))
+    .environment(SyntacticSynth(engine: SpatialAudioEngine(), presetSpec: presetSpec))
 }

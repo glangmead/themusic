@@ -110,6 +110,78 @@ final class ArrowProd: Arrow11 {
   }
 }
 
+func clamp(_ val: CoreFloat, min: CoreFloat, max: CoreFloat) -> CoreFloat {
+  if val < min { return min }
+  if val > max { return max }
+  return val
+}
+
+// Mix two of the arrows in a list, viewing the mixPoint as a point somewhere between two of the arrows
+// Compare to Supercollider's `Select`
+final class ArrowCrossfade: Arrow11 {
+  var mixPoint: CoreFloat = 0
+  init(mixPoint: CoreFloat) {
+    self.mixPoint = mixPoint
+    super.init()
+  }
+  override func of(_ t: CoreFloat) -> CoreFloat {
+    // ensure mixPoint is between 0 and the number of arrows
+    let mixPointLocal = clamp(mixPoint, min: 0, max: CoreFloat(innerArrsUnmanaged.count))
+    let arrow1 = innerArrsUnmanaged[Int(floor(mixPointLocal))]
+    let arrow2 = innerArrsUnmanaged[Int(ceil(mixPointLocal))]
+    let arrow1Weight = mixPointLocal - floor(mixPointLocal)
+    
+    return (arrow1Weight * arrow1._withUnsafeGuaranteedRef { $0.of(t) }) +
+      ((1.0 - arrow1Weight) * arrow2._withUnsafeGuaranteedRef { $0.of(t) })
+  }
+}
+
+// Mix two of the arrows in a list, viewing the mixPoint as a point somewhere between two of the arrows
+// Use sqrt to maintain equal power and avoid a dip in perceived volume at the center point.
+// Compare to Supercollider's `SelectX`
+final class ArrowEqualPowerCrossfade: Arrow11 {
+  var mixPoint: CoreFloat = 0
+  init(mixPoint: CoreFloat) {
+    self.mixPoint = mixPoint
+    super.init()
+  }
+  override func of(_ t: CoreFloat) -> CoreFloat {
+    // ensure mixPoint is between 0 and the number of arrows
+    let mixPointLocal = clamp(mixPoint, min: 0, max: CoreFloat(innerArrsUnmanaged.count))
+    let arrow1 = innerArrsUnmanaged[Int(floor(mixPointLocal))]
+    let arrow2 = innerArrsUnmanaged[Int(ceil(mixPointLocal))]
+    let arrow1Weight = mixPointLocal - floor(mixPointLocal)
+    
+    return sqrt(arrow1Weight * arrow1._withUnsafeGuaranteedRef { $0.of(t) }) +
+      sqrt((1.0 - arrow1Weight) * arrow2._withUnsafeGuaranteedRef { $0.of(t) })
+  }
+}
+
+final class ArrowLine: Arrow11 {
+  var start: CoreFloat = 0
+  var end: CoreFloat = 1
+  var duration: CoreFloat = 1
+  private var firstCall = true
+  private var startTime: CoreFloat = 0
+  init(start: CoreFloat, end: CoreFloat, duration: CoreFloat) {
+    self.start = start
+    self.end = end
+    self.duration = duration
+    super.init()
+  }
+  override func of(_ t: CoreFloat) -> CoreFloat {
+    if firstCall {
+      startTime = t
+      firstCall = false
+      return start
+    }
+    if t > startTime + duration {
+      return 0
+    }
+    return start + ((t - startTime) / duration) * (end - start)
+  }
+}
+
 final class ArrowIdentity: Arrow11 {
   override func of(_ t: CoreFloat) -> CoreFloat { t }
   init() {
@@ -179,8 +251,10 @@ final class ArrowConstCent: Arrow11, ValHaver, Equatable {
 
 // Takes on random values every 1/sampleFreq seconds, and smoothly interpolates between
 final class ArrowSmoothStep: Arrow11, WidthHaver {
-  var width: CoreFloat = 1
+  var width: CoreFloat = 1 // so that it can be a BasicOscillator
   var noiseFreq: CoreFloat = 1
+  var min: CoreFloat = -1
+  var max: CoreFloat = 1
   private var previousTime: CoreFloat = 0
   private var deltaTime: CoreFloat = 0
   private var lastNoiseTime: CoreFloat
@@ -192,10 +266,12 @@ final class ArrowSmoothStep: Arrow11, WidthHaver {
     1.0 / noiseFreq
   }
   
-  init(sampleFreq: CoreFloat) {
+  init(sampleFreq: CoreFloat, min: CoreFloat = -1, max: CoreFloat = 1) {
     self.noiseFreq = sampleFreq
-    self.lastSample = CoreFloat.random(in: -1.0...1.0)
-    self.nextSample = CoreFloat.random(in: -1.0...1.0)
+    self.min = min
+    self.max = max
+    self.lastSample = CoreFloat.random(in: min...max)
+    self.nextSample = CoreFloat.random(in: min...max)
     lastNoiseTime = 0
     nextNoiseTime = lastNoiseTime + (1.0 / sampleFreq)
     super.init()
@@ -219,7 +295,7 @@ final class ArrowSmoothStep: Arrow11, WidthHaver {
     
     if abs(modT - noiseDeltaTime) <= deltaTime {
       lastSample = nextSample
-      nextSample = CoreFloat.random(in: -1.0...1.0)
+      nextSample = CoreFloat.random(in: min...max)
       lastNoiseTime = nextNoiseTime
       nextNoiseTime += noiseDeltaTime
     }
