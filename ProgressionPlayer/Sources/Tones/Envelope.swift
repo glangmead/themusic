@@ -29,6 +29,8 @@ class ADSR: Arrow11, NoteHandler {
       setFunctionsFromEnvelopeSpecs()
     }
   }
+  var newAttack = false
+  var newRelease = false
   var timeOrigin: CoreFloat = 0
   var attackEnv: PiecewiseFunc<CoreFloat> = PiecewiseFunc<CoreFloat>(ifuncs: [])
   var releaseEnv: PiecewiseFunc<CoreFloat> = PiecewiseFunc<CoreFloat>(ifuncs: [])
@@ -43,15 +45,20 @@ class ADSR: Arrow11, NoteHandler {
     self.setFunctionsFromEnvelopeSpecs()
   }
   
-  override func of(_ ime: CoreFloat) -> CoreFloat {
+  override func of(_ time: CoreFloat) -> CoreFloat {
+    if newAttack || newRelease {
+      timeOrigin = time
+      newAttack = false
+      newRelease = false
+    }
     var val: CoreFloat = 0
     switch state {
     case .closed:
       val = 0
     case .attack:
-      val = attackEnv.val(CoreFloat(Date.now.timeIntervalSince1970) - timeOrigin)
+      val = attackEnv.val(time - timeOrigin)
     case .release:
-      let time = CoreFloat(Date.now.timeIntervalSince1970) - timeOrigin
+      let time = time - timeOrigin
       if time > env.releaseTime {
         state = .closed
         val = 0
@@ -88,13 +95,13 @@ class ADSR: Arrow11, NoteHandler {
   }
   
   func noteOn(_ note: MidiNote) {
-    timeOrigin = CoreFloat(Date.now.timeIntervalSince1970)
+    newAttack = true
     valueAtAttack = previousValue
     state = .attack
   }
   
   func noteOff(_ note: MidiNote) {
-    timeOrigin = CoreFloat(Date.now.timeIntervalSince1970)
+    newRelease = true
     valueAtRelease = previousValue
     state = .release
   }

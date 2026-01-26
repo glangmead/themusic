@@ -171,7 +171,7 @@ class SyntacticSynth: EngineAndVoicePool {
   }
   var delayTime: CoreFloat = 0 {
     didSet {
-      for preset in self.presets { preset.setDelayTime(delayTime) }
+      for preset in self.presets { preset.setDelayTime(TimeInterval(delayTime)) }
     }
   }
   var delayFeedback: CoreFloat = 0 {

@@ -18,7 +18,7 @@ struct ArrowChart: View {
   @State private var numSamplesToPlot = 4410
   let sampleRate = 44100
   var data: [Sample] {
-    let now = Date.now.timeIntervalSince1970
+    let now: CoreFloat = 0
     return (0...numSamplesToPlot).map { i in
       let t = CoreFloat(i) / CoreFloat(sampleRate)
       return Sample(time: t, amp: arrow.of(now + t))

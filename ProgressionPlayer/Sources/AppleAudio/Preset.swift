@@ -22,7 +22,7 @@ struct RoseSyntax: Codable {
 struct EffectsSyntax: Codable {
   let reverbPreset: CoreFloat
   let reverbWetDryMix: CoreFloat
-  let delayTime: CoreFloat
+  let delayTime: TimeInterval
   let delayFeedback: CoreFloat
   let delayLowPassCutoff: CoreFloat
   let delayWetDryMix: CoreFloat
@@ -57,6 +57,7 @@ struct PresetSyntax: Codable {
 class InstrumentWithAVAudioUnitEffects {
   var sound: ArrowWithHandles
   var positionLFO: Rose? = nil
+  var timeOrigin: Double = 0
   
   private var positionTask: Task<(), Error>?
   
@@ -105,7 +106,7 @@ class InstrumentWithAVAudioUnitEffects {
   func getDelayTime() -> CoreFloat {
     CoreFloat(delayNode?.delayTime ?? 0)
   }
-  func setDelayTime(_ val: CoreFloat) {
+  func setDelayTime(_ val: TimeInterval) {
     delayNode?.delayTime = val
   }
   func getDelayFeedback() -> CoreFloat {
@@ -139,11 +140,11 @@ class InstrumentWithAVAudioUnitEffects {
     distortionNode?.wetDryMix = Float(val)
   }
   
-  private var lastTimeWeSetPosition = 0.0
+  private var lastTimeWeSetPosition: CoreFloat = 0.0
   
   // setting position is expensive, so limit how often
   // at 0.1 this makes my phone hot
-  private let setPositionMinWaitTimeSecs = 0.01
+  private let setPositionMinWaitTimeSecs: CoreFloat = 0.01
   
   init(sound: ArrowWithHandles) {
     self.sound = sound
@@ -155,11 +156,12 @@ class InstrumentWithAVAudioUnitEffects {
     self.reverbPreset = .cathedral
     self.delayNode?.delayTime = 0
     self.reverbNode?.wetDryMix = 0
+    self.timeOrigin = Date.now.timeIntervalSince1970
     self.positionTask = Task.detached(priority: .medium) {
       repeat {
         do {
           try await Task.sleep(for: .seconds(0.01))
-          self.setPosition(Date.now.timeIntervalSince1970)
+          self.setPosition(CoreFloat(Date.now.timeIntervalSince1970 - self.timeOrigin))
         } catch {
           break
         }

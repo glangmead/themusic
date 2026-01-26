@@ -9,8 +9,7 @@ import AVFAudio
 import Overture
 import SwiftUI
 
-// This is Double because an AVAudioSourceNodeRenderBlock sends the input (time) as a Float64
-typealias CoreFloat = Double
+typealias CoreFloat = Float
 
 class Arrow11 {
   // these are arrows with which we can compose (arr/arrs run first, then this arrow)
@@ -78,9 +77,9 @@ class Arrow13 {
 // The name comes from the paradigm that control signals like LFOs don't need to fire as often
 // as audio data.
 final class ControlArrow11: Arrow11 {
-  var lastTimeEmittedSecs = 0.0
-  var lastEmission = 0.0
-  let timeBetweenEmissionsSecs = 441.0 / 44100.0
+  var lastTimeEmittedSecs: CoreFloat = 0.0
+  var lastEmission: CoreFloat = 0.0
+  let timeBetweenEmissionsSecs: CoreFloat = 441.0 / 44100.0
   
   override func of(_ t: CoreFloat) -> CoreFloat {
     if t - lastTimeEmittedSecs >= timeBetweenEmissionsSecs {
@@ -197,7 +196,7 @@ final class ArrowSmoothStep: Arrow11, WidthHaver {
     self.noiseFreq = sampleFreq
     self.lastSample = CoreFloat.random(in: -1.0...1.0)
     self.nextSample = CoreFloat.random(in: -1.0...1.0)
-    lastNoiseTime = Date.now.timeIntervalSince1970
+    lastNoiseTime = 0
     nextNoiseTime = lastNoiseTime + (1.0 / sampleFreq)
     super.init()
   }

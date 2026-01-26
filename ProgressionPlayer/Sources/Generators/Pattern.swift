@@ -22,7 +22,7 @@ struct MusicEvent {
   func play() async throws {
     notes.forEach { synth.poolVoice?.noteOn($0) }
     do {
-      try await Task.sleep(for: .seconds(sustain))
+      try await Task.sleep(for: .seconds(TimeInterval(sustain)))
     } catch {
       
     }
@@ -78,6 +78,7 @@ actor MusicPattern {
   var notes: any IteratorProtocol<[MidiNote]> // a sequence of chords
   var sustains: any IteratorProtocol<CoreFloat> // a sequence of sustain lengths
   var gaps: any IteratorProtocol<CoreFloat> // a sequence of sustain lengths
+  var timeOrigin: Double
 
   init(
     synth: SyntacticSynth,
@@ -91,6 +92,7 @@ actor MusicPattern {
     self.notes = notes
     self.sustains = sustains
     self.gaps = gaps
+    self.timeOrigin = Date.now.timeIntervalSince1970
   }
   
   func next() -> MusicEvent? {
@@ -114,7 +116,7 @@ actor MusicPattern {
           try? await event.play()
         }
         do {
-          try await Task.sleep(for: .seconds(event.gap))
+          try await Task.sleep(for: .seconds(TimeInterval(event.gap)))
         } catch {
           return
         }
@@ -124,7 +126,7 @@ actor MusicPattern {
   
   func modulateSound() {
     let tone = synth.poolVoice
-    let now = Date.now.timeIntervalSince1970
+    let now = CoreFloat(Date.now.timeIntervalSince1970 - timeOrigin)
     for (key, modulatingArrow) in modulators {
       if tone?.namedConsts[key] != nil {
         for arrowConst in tone!.namedConsts[key]! {

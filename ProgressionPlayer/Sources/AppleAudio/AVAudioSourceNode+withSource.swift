@@ -29,8 +29,11 @@ extension AVAudioSourceNode {
       
       // Loop through each frame (sample) that the audio engine is requesting.
       for frameDelta in 0..<Int(frameCount) {
-        let sample = source.of((framePos + Double(frameDelta))/sampleRate)
-        //print("\(sample)")
+        let time = (CoreFloat(framePos) + CoreFloat(frameDelta)) / CoreFloat(sampleRate)
+        let sample = Double(
+          source.of(time)
+        )
+        //print("\(time): \(sample)")
 
         // For a stereo sound, there would be two buffers (left and right channels).
         // For a mono sound, typically one buffer.
