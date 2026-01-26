@@ -7,6 +7,7 @@
 
 import AVFAudio
 import CoreAudio
+import Accelerate
 
 extension AVAudioSourceNode {
   static func withSource(source: Arrow11, sampleRate: Double) -> AVAudioSourceNode {
@@ -40,11 +41,10 @@ extension AVAudioSourceNode {
       let startFrame = CoreFloat(framePos)
       let sr = CoreFloat(sampleRate)
       
-      // 1. Fill time buffer
-      // Future Optimization: vDSP_vramp (vector ramp) could do this faster.
-      for i in 0..<count {
-        timeBuffer[i] = (startFrame + CoreFloat(i)) / sr
-      }
+      // 1. Fill time buffer using vectorized ramp generation
+      var start = startFrame / sr
+      var step: Float = 1.0 / sr
+      vDSP_vramp(&start, &step, &timeBuffer, 1, vDSP_Length(count))
       
       // 2. Process block
       // We assume mono or identical stereo. If stereo, we copy channel 0 to channel 1 later.
