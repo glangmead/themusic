@@ -31,6 +31,12 @@ class SpatialAudioEngine {
     }
   }
   
+  func detach(_ nodes: [AVAudioNode]) {
+    for node in nodes {
+      audioEngine.detach(node)
+    }
+  }
+  
   func connect(_ node1: AVAudioNode, to node2: AVAudioNode, format: AVAudioFormat?) {
     audioEngine.connect(node1, to: node2, format: format)
   }

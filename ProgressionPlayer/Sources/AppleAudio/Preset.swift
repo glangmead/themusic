@@ -206,6 +206,12 @@ class InstrumentWithAVAudioUnitEffects {
     }
     return mixerNode
   }
+  
+  func detachAppleNodes(from engine: SpatialAudioEngine) {
+    positionTask?.cancel()
+    let nodes = [sourceNode, playerNode, distortionNode, delayNode, reverbNode, mixerNode].compactMap { $0 }
+    engine.detach(nodes)
+  }
 }
 
 typealias Preset = InstrumentWithAVAudioUnitEffects

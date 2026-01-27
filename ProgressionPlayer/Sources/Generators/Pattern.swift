@@ -111,6 +111,12 @@ actor MusicPattern {
   private let voicesPerEvent = 3
   private let poolSize = 20
 
+  deinit {
+    for preset in presetPool {
+      preset.detachAppleNodes(from: engine)
+    }
+  }
+
   init(
     presetSpec: PresetSyntax,
     engine: SpatialAudioEngine,
