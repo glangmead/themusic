@@ -291,10 +291,6 @@ class ArrowWithHandles: Arrow11 {
   override func of(_ t: CoreFloat) -> CoreFloat {
     wrappedArrowUnsafe._withUnsafeGuaranteedRef { $0.of(t) }
   }
-  
-  override func process(inputs: UnsafeBufferPointer<CoreFloat>, outputs: UnsafeMutableBufferPointer<CoreFloat>) {
-    wrappedArrowUnsafe._withUnsafeGuaranteedRef { $0.process(inputs: inputs, outputs: outputs) }
-  }
 
   func withMergeDictsFromArrow(_ arr2: ArrowWithHandles) -> ArrowWithHandles {
     namedADSREnvelopes.merge(arr2.namedADSREnvelopes) { (a, b) in return a + b }

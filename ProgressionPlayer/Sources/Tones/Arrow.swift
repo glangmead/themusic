@@ -8,7 +8,6 @@
 import AVFAudio
 import Overture
 import SwiftUI
-import Accelerate
 
 typealias CoreFloat = Float
 
@@ -65,14 +64,6 @@ class Arrow11 {
   }
   
   func of (_ t: CoreFloat) -> CoreFloat { inner(t) }
-  
-  func process(inputs: UnsafeBufferPointer<CoreFloat>, outputs: UnsafeMutableBufferPointer<CoreFloat>) {
-    // Default implementation: loop
-    for i in 0..<inputs.count {
-      outputs[i] = self.of(inputs[i])
-    }
-  }
-  
   final func asControl() -> Arrow11 {
     return ControlArrow11(innerArr: self)
   }
@@ -97,20 +88,9 @@ final class ControlArrow11: Arrow11 {
     }
     return lastEmission
   }
-  
-  override func process(inputs: UnsafeBufferPointer<CoreFloat>, outputs: UnsafeMutableBufferPointer<CoreFloat>) {
-    // Control arrows have state dependent on sequential access, looping is safest and correct
-    for i in 0..<inputs.count {
-      outputs[i] = self.of(inputs[i])
-    }
-  }
 }
 
 final class ArrowSum: Arrow11 {
-  // Allocate scratch space for mixing. 1024 frames @ 44.1k is ~23ms, standard buffer size.
-  // Using 4096 to be safe for larger buffer requests.
-  private var scratchBuffer = [CoreFloat](repeating: 0, count: 4096)
-
   override func of(_ t: CoreFloat) -> CoreFloat {
     var result: CoreFloat = 0
     for i in 0..<innerArrsUnmanaged.count {
@@ -118,84 +98,15 @@ final class ArrowSum: Arrow11 {
     }
     return result
   }
-  
-  override func process(inputs: UnsafeBufferPointer<CoreFloat>, outputs: UnsafeMutableBufferPointer<CoreFloat>) {
-    let count = inputs.count
-    if innerArrsUnmanaged.isEmpty {
-      vDSP_vclr(outputs.baseAddress!, 1, vDSP_Length(count))
-      return
-    }
-    
-    // Process first child directly to output
-    innerArrsUnmanaged[0]._withUnsafeGuaranteedRef {
-      $0.process(inputs: inputs, outputs: outputs)
-    }
-    
-    // Process remaining children via scratch
-    if innerArrsUnmanaged.count > 1 {
-      scratchBuffer.withUnsafeMutableBufferPointer { scratchPtr in
-        let scratchSlice = UnsafeMutableBufferPointer(start: scratchPtr.baseAddress, count: count)
-        
-        for i in 1..<innerArrsUnmanaged.count {
-          innerArrsUnmanaged[i]._withUnsafeGuaranteedRef {
-            $0.process(inputs: inputs, outputs: scratchSlice)
-          }
-          // output = output + scratch
-          vDSP_vadd(
-            outputs.baseAddress!, 1,
-            scratchSlice.baseAddress!, 1,
-            outputs.baseAddress!, 1,
-            vDSP_Length(count)
-          )
-        }
-      }
-    }
-  }
 }
 
 final class ArrowProd: Arrow11 {
-  private var scratchBuffer = [CoreFloat](repeating: 0, count: 4096)
-
   override func of(_ t: CoreFloat) -> CoreFloat {
     var result: CoreFloat = 1
     for i in 0..<innerArrsUnmanaged.count {
       result *= innerArrsUnmanaged[i]._withUnsafeGuaranteedRef { $0.of(t) }
     }
     return result
-  }
-  
-  override func process(inputs: UnsafeBufferPointer<CoreFloat>, outputs: UnsafeMutableBufferPointer<CoreFloat>) {
-    let count = inputs.count
-    if innerArrsUnmanaged.isEmpty {
-      var one: CoreFloat = 1.0
-      vDSP_vfill(&one, outputs.baseAddress!, 1, vDSP_Length(count))
-      return
-    }
-    
-    // Process first child directly to output
-    innerArrsUnmanaged[0]._withUnsafeGuaranteedRef {
-      $0.process(inputs: inputs, outputs: outputs)
-    }
-    
-    // Process remaining children via scratch
-    if innerArrsUnmanaged.count > 1 {
-      scratchBuffer.withUnsafeMutableBufferPointer { scratchPtr in
-        let scratchSlice = UnsafeMutableBufferPointer(start: scratchPtr.baseAddress, count: count)
-        
-        for i in 1..<innerArrsUnmanaged.count {
-          innerArrsUnmanaged[i]._withUnsafeGuaranteedRef {
-            $0.process(inputs: inputs, outputs: scratchSlice)
-          }
-          // output = output * scratch
-          vDSP_vmul(
-            outputs.baseAddress!, 1,
-            scratchSlice.baseAddress!, 1,
-            outputs.baseAddress!, 1,
-            vDSP_Length(count)
-          )
-        }
-      }
-    }
   }
 }
 
@@ -276,11 +187,6 @@ final class ArrowIdentity: Arrow11 {
   init() {
     super.init()
   }
-  
-  override func process(inputs: UnsafeBufferPointer<CoreFloat>, outputs: UnsafeMutableBufferPointer<CoreFloat>) {
-    // Identity: copy inputs to outputs
-    outputs.baseAddress!.update(from: inputs.baseAddress!, count: inputs.count)
-  }
 }
 
 protocol ValHaver: AnyObject {
@@ -296,11 +202,6 @@ final class ArrowConst: Arrow11, ValHaver, Equatable {
   override func of(_ t: CoreFloat) -> CoreFloat {
     val
   }
-  
-  override func process(inputs: UnsafeBufferPointer<CoreFloat>, outputs: UnsafeMutableBufferPointer<CoreFloat>) {
-    vDSP_vfill(&val, outputs.baseAddress!, 1, vDSP_Length(inputs.count))
-  }
-  
   static func == (lhs: ArrowConst, rhs: ArrowConst) -> Bool {
     lhs.val == rhs.val
   }
@@ -321,11 +222,6 @@ final class ArrowConstOctave: Arrow11, ValHaver, Equatable {
   override func of(_ t: CoreFloat) -> CoreFloat {
     twoToTheVal
   }
-  
-  override func process(inputs: UnsafeBufferPointer<CoreFloat>, outputs: UnsafeMutableBufferPointer<CoreFloat>) {
-    vDSP_vfill(&twoToTheVal, outputs.baseAddress!, 1, vDSP_Length(inputs.count))
-  }
-  
   static func == (lhs: ArrowConstOctave, rhs: ArrowConstOctave) -> Bool {
     lhs.val == rhs.val
   }
@@ -348,11 +244,6 @@ final class ArrowConstCent: Arrow11, ValHaver, Equatable {
   override func of(_ t: CoreFloat) -> CoreFloat {
     centToTheVal
   }
-  
-  override func process(inputs: UnsafeBufferPointer<CoreFloat>, outputs: UnsafeMutableBufferPointer<CoreFloat>) {
-    vDSP_vfill(&centToTheVal, outputs.baseAddress!, 1, vDSP_Length(inputs.count))
-  }
-  
   static func == (lhs: ArrowConstCent, rhs: ArrowConstCent) -> Bool {
     lhs.val == rhs.val
   }
