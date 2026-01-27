@@ -119,14 +119,14 @@ func clamp(_ val: CoreFloat, min: CoreFloat, max: CoreFloat) -> CoreFloat {
 // Mix two of the arrows in a list, viewing the mixPoint as a point somewhere between two of the arrows
 // Compare to Supercollider's `Select`
 final class ArrowCrossfade: Arrow11 {
-  var mixPoint: CoreFloat = 0
-  init(mixPoint: CoreFloat) {
-    self.mixPoint = mixPoint
-    super.init()
+  var mixPointArr: Arrow11
+  init(innerArrs: [Arrow11], mixPointArr: Arrow11 = ArrowConst(value: 0)) {
+    self.mixPointArr = mixPointArr
+    super.init(innerArrs: innerArrs)
   }
   override func of(_ t: CoreFloat) -> CoreFloat {
     // ensure mixPoint is between 0 and the number of arrows
-    let mixPointLocal = clamp(mixPoint, min: 0, max: CoreFloat(innerArrsUnmanaged.count))
+    let mixPointLocal = clamp(mixPointArr.of(t), min: 0, max: CoreFloat(innerArrsUnmanaged.count))
     let arrow1 = innerArrsUnmanaged[Int(floor(mixPointLocal))]
     let arrow2 = innerArrsUnmanaged[Int(ceil(mixPointLocal))]
     let arrow1Weight = mixPointLocal - floor(mixPointLocal)
@@ -140,14 +140,14 @@ final class ArrowCrossfade: Arrow11 {
 // Use sqrt to maintain equal power and avoid a dip in perceived volume at the center point.
 // Compare to Supercollider's `SelectX`
 final class ArrowEqualPowerCrossfade: Arrow11 {
-  var mixPoint: CoreFloat = 0
-  init(mixPoint: CoreFloat) {
-    self.mixPoint = mixPoint
-    super.init()
+  var mixPointArr: Arrow11
+  init(innerArrs: [Arrow11], mixPointArr: Arrow11 = ArrowConst(value: 0)) {
+    self.mixPointArr = mixPointArr
+    super.init(innerArrs: innerArrs)
   }
   override func of(_ t: CoreFloat) -> CoreFloat {
     // ensure mixPoint is between 0 and the number of arrows
-    let mixPointLocal = clamp(mixPoint, min: 0, max: CoreFloat(innerArrsUnmanaged.count))
+    let mixPointLocal = clamp(mixPointArr.of(t), min: 0, max: CoreFloat(innerArrsUnmanaged.count))
     let arrow1 = innerArrsUnmanaged[Int(floor(mixPointLocal))]
     let arrow2 = innerArrsUnmanaged[Int(ceil(mixPointLocal))]
     let arrow1Weight = mixPointLocal - floor(mixPointLocal)
@@ -251,7 +251,7 @@ final class ArrowConstCent: Arrow11, ValHaver, Equatable {
 
 // Takes on random values every 1/sampleFreq seconds, and smoothly interpolates between
 final class ArrowSmoothStep: Arrow11, WidthHaver {
-  var width: CoreFloat = 1 // so that it can be a BasicOscillator
+  var widthArr: Arrow11 = ArrowConst(value: 1) // so that it can be a BasicOscillator
   var noiseFreq: CoreFloat = 1
   var min: CoreFloat = -1
   var max: CoreFloat = 1

@@ -5,26 +5,26 @@
  "arrow"  : {
   "compose": { "arrows": [
     {
-     "prod": { "of": [
+     "prod": { "name": "prodWithAmpEnv", "of": [
        {
-        "sum": { "of": [
+        "sum": { "name": "sumOfOscs", "of": [
           {
-           "prod": { "of": [
+           "prod": { "name": "prodOfOsc1Mix", "of": [
              { "const": {"val": 1.0, "name": "osc1Mix"} },
              { 
               "compose": { "arrows": [
                 {
-                 "sum": { "of": [
-                   { "prod": { "of": [ 
+                 "sum": { "name": "sumOfOsc1Vibrato", "of": [
+                   { "prod": { "name": "prodOfOsc1FreqMods", "of": [ 
                     { "const": {"name": "freq", "val": 300} }, 
                     { "constOctave": {"name": "osc1Octave", "val": 0} },
                     { "constCent": {"name": "osc1CentDetune", "val": -500} },
                     { "identity": {}}  
                    ]}},
-                   { "prod": { "of": [
+                   { "prod": { "name": "prodOfVibratoAmp", "of": [
                       { "const": {"name": "vibratoAmp", "val": 0} },
                       { "compose": { "arrows": [
-                         { "prod": { "of": [
+                         { "prod": { "name": "prodOfVibratoFreq", "of": [
                            { "const": {"val": 1, "name": "vibratoFreq"} },
                            { "identity": {} }
                          ]}},
@@ -40,24 +40,24 @@
            ]}
           },
           {
-           "prod": { "of": [
+           "prod": { "name": "prodOfOsc2Mix", "of": [
              { "const": {"val": 1.0, "name": "osc2Mix"} },
              {
               "compose": { "arrows": [
                 {
-                 "sum": { "of": [
+                 "sum": { "name": "sumOfOsc2Vibrato", "of": [
                    { 
-                    "prod": { "of": [ 
+                    "prod": { "name": "prodOfOsc2FreqMods", "of": [ 
                      { "const": {"name": "freq", "val": 300} }, 
                      { "constOctave": {"name": "osc2Octave", "val": -1} },
                      { "constCent": {"name": "osc2CentDetune", "val": 0} },
-                     {"identity": {}}
+                     { "identity": {} }
                     ]}
                    },
-                   { "prod": { "of": [
+                   { "prod": { "name": "prodOfVibratoAmp", "of": [
                        { "const": {"name": "vibratoAmp", "val": 0} },
                        { "compose": { "arrows": [
-                          { "prod": { "of": [
+                          { "prod": { "name": "prodOfVibratoFreq", "of": [
                             { "const": {"val": 1, "name": "vibratoFreq"} },
                             { "identity": {} }
                           ]}},
@@ -74,22 +74,22 @@
            ]}
           },
           {
-           "prod": { "of": [
+           "prod": { "name": "prodOfOsc3Mix", "of": [
              { "const": {"val": 0.0, "name": "osc3Mix"} },
              {
               "compose": { "arrows": [
                 {
-                 "sum": { "of": [
-                   { "prod": { "of": [ 
+                 "sum": { "name": "sumOfOsc3Vibrato", "of": [
+                   { "prod": { "name": "prodOfOsc3FreqMods", "of": [ 
                      { "const": {"name": "freq", "val": 300} }, 
                      { "constOctave": {"name": "osc3Octave", "val": 0} },
                      { "constCent": {"name": "osc3CentDetune", "val": 0} },
                      {"identity": {}} 
                    ]}},
-                   { "prod": { "of": [
+                   { "prod": { "name": "prodOfVibratoAmp", "of": [
                        { "const": {"name": "vibratoAmp", "val": 0} },
                        { "compose": { "arrows": [
-                          { "prod": { "of": [
+                          { "prod": { "name": "prodOfVibratoFreq", "of": [
                             { "const": {"val": 1, "name": "vibratoFreq"} },
                             { "identity": {} }
                           ]}},
@@ -116,9 +116,9 @@
      "lowPassFilter": {
       "specs": {
        "cutoff"   : 
-        {"sum": { "of": [
+        {"sum": { "name": "sumCutoffLow", "of": [
           { "const": {"name": "cutoffLow", "val": 50} },
-          { "prod": { "of": [
+          { "prod": { "name": "prodFreqCutoff", "of": [
             { "const": {"name": "cutoff", "val": 5000} },
             { "envelope": { "specs": {"release": 0.1, "scale": 1, "name": "filterEnv", "attack": 0.1, "decay": 0.3, "sustain": 1 } } }
           ]}}

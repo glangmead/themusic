@@ -9,20 +9,22 @@ import Foundation
 import SwiftUI
 
 protocol WidthHaver {
-  var width: CoreFloat { get set }
+  var widthArr: Arrow11 { get set }
 }
 
 final class Sine: Arrow11, WidthHaver {
-  var width: CoreFloat = 1.0
+  var widthArr: Arrow11 = ArrowConst(value: 1.0)
   override func of(_ t: CoreFloat) -> CoreFloat {
+    let width = widthArr.of(t)
     let innerResult = inner(t)
     return (fmod(innerResult, 1) < width) ? sin(2 * .pi * innerResult / width) : 0
   }
 }
 
 final class Triangle: Arrow11, WidthHaver {
-  var width: CoreFloat = 1
+  var widthArr: Arrow11 = ArrowConst(value: 1.0)
   override func of(_ t: CoreFloat) -> CoreFloat {
+    let width = widthArr.of(t)
     let innerResult = inner(t)
     let modResult = fmod(innerResult, 1)
     return (modResult < width/2) ? (4 * modResult / width) - 1:
@@ -31,8 +33,9 @@ final class Triangle: Arrow11, WidthHaver {
 }
 
 final class Sawtooth: Arrow11, WidthHaver {
-  var width: CoreFloat = 1
+  var widthArr: Arrow11 = ArrowConst(value: 1.0)
   override func of(_ t: CoreFloat) -> CoreFloat {
+    let width = widthArr.of(t)
     let innerResult = inner(t)
     let modResult = fmod(innerResult, 1)
     return (modResult < width) ? (2 * modResult / width) - 1 : 0
@@ -40,14 +43,15 @@ final class Sawtooth: Arrow11, WidthHaver {
 }
 
 final class Square: Arrow11, WidthHaver {
-  var width: CoreFloat = 1 // for square, a width of 1 means half the time it's 1 and half is 0
+  var widthArr: Arrow11 = ArrowConst(value: 1.0)
   override func of(_ t: CoreFloat) -> CoreFloat {
-    fmod(inner(t), 1) <= width/2 ? 1.0 : -1.0
+    let width = widthArr.of(t)
+    return fmod(inner(t), 1) <= width/2 ? 1.0 : -1.0
   }
 }
 
 final class Noise: Arrow11, WidthHaver {
-  var width: CoreFloat = 1
+  var widthArr: Arrow11 = ArrowConst(value: 1.0)
   override func of(_ t: CoreFloat) -> CoreFloat {
     CoreFloat.random(in: 0.0...1.0)
   }
@@ -80,19 +84,19 @@ final class BasicOscillator: Arrow11 {
       updateShape()
     }
   }
-  var width: CoreFloat {
+  var widthArr: Arrow11 {
     didSet {
-      arrow?.width = width
+      arrow?.widthArr = widthArr
     }
   }
 
-  init(shape: OscShape, width: CoreFloat = 1) {
+  init(shape: OscShape, widthArr: Arrow11 = ArrowConst(value: 1)) {
     self.sineUnmanaged = Unmanaged.passUnretained(sine)
     self.triangleUnmanaged = Unmanaged.passUnretained(triangle)
     self.sawtoothUnmanaged = Unmanaged.passUnretained(sawtooth)
     self.squareUnmanaged = Unmanaged.passUnretained(square)
     self.noiseUnmanaged = Unmanaged.passUnretained(noise)
-    self.width = width
+    self.widthArr = widthArr
     self.shape = shape
     super.init()
     self.updateShape()
@@ -275,6 +279,7 @@ class ArrowWithHandles: Arrow11 {
   var namedConsts        = [String: [ValHaver]]()
   var namedADSREnvelopes = [String: [ADSR]]()
   var namedChorusers     = [String: [Choruser]]()
+  var namedArrows        = [String: [Arrow11]]()
   var wrappedArrow: Arrow11
   
   private var wrappedArrowUnsafe: Unmanaged<Arrow11>
@@ -300,6 +305,7 @@ class ArrowWithHandles: Arrow11 {
     namedBasicOscs.merge(arr2.namedBasicOscs) { (a, b) in return a + b }
     namedLowPassFilter.merge(arr2.namedLowPassFilter) { (a, b) in return a + b }
     namedChorusers.merge(arr2.namedChorusers) { (a, b) in return a + b }
+    namedArrows.merge(arr2.namedArrows) { (a, b) in return a + b }
     return self
   }
   
@@ -319,9 +325,11 @@ enum ArrowSyntax: Codable {
   case identity
   case control
   indirect case lowPassFilter(specs: LowPassArrowSyntax)
-  indirect case prod(of: [ArrowSyntax])
+  indirect case prod(of: [ArrowSyntax], name: String)
   indirect case compose(arrows: [ArrowSyntax])
-  indirect case sum(of: [ArrowSyntax])
+  indirect case sum(of: [ArrowSyntax], name: String)
+  indirect case crossfade(of: [ArrowSyntax], name: String)
+  indirect case crossfadeSqrt(of: [ArrowSyntax], name: String)
   indirect case envelope(specs: ADSRSyntax)
   case choruser(specs: NamedChoruser)
   case osc(name: String, shape: BasicOscillator.OscShape, width: CoreFloat)
@@ -342,27 +350,62 @@ enum ArrowSyntax: Codable {
       }
       return composition!.withMergeDictsFromArrows(arrows)
     case .osc(let oscName, let oscShape, let width):
-      let osc = BasicOscillator(shape: oscShape, width: width)
+      let osc = BasicOscillator(shape: oscShape, widthArr: ArrowConst(value: width))
       let arr = ArrowWithHandles(osc)
       arr.namedBasicOscs[oscName] = [osc]
+      arr.namedArrows[oscName] = [osc]
       return arr
     case .control:
       return ArrowWithHandles(ControlArrow11())
     case .identity:
       return ArrowWithHandles(ArrowIdentity())
-    case .prod(let arrows):
+    case .prod(let arrows, let name):
       let lowerArrs = arrows.map({$0.compile()})
-      return ArrowWithHandles(
-        ArrowProd(
-          innerArrs: ContiguousArray<Arrow11>(lowerArrs)
-        )).withMergeDictsFromArrows(lowerArrs)
-    case .sum(let arrows):
+      let arr = ArrowProd(
+        innerArrs: ContiguousArray<Arrow11>(lowerArrs)
+      )
+      let arrH = ArrowWithHandles(arr).withMergeDictsFromArrows(lowerArrs)
+      if var namedArrs = arrH.namedArrows[name] {
+        namedArrs.append(arr)
+      } else {
+        arrH.namedArrows[name] = [arr]
+      }
+      return arrH
+    case .sum(let arrows, let name):
       let lowerArrs = arrows.map({$0.compile()})
-      return ArrowWithHandles(
-        ArrowSum(
-          innerArrs: lowerArrs
-        )
-      ).withMergeDictsFromArrows(lowerArrs)
+      let arr = ArrowSum(innerArrs: lowerArrs)
+      let arrH = ArrowWithHandles(arr)
+        .withMergeDictsFromArrows(lowerArrs)
+      if var namedArrs = arrH.namedArrows[name] {
+        namedArrs.append(arr)
+      } else {
+        arrH.namedArrows[name] = [arr]
+      }
+      return arrH
+    case .crossfade(let arrows, let name):
+      let lowerArrs = arrows.map({$0.compile()})
+      let arr = ArrowCrossfade(
+        innerArrs: lowerArrs
+      )
+      let arrH = ArrowWithHandles(arr).withMergeDictsFromArrows(lowerArrs)
+      if var namedArrs = arrH.namedArrows[name] {
+        namedArrs.append(arr)
+      } else {
+        arrH.namedArrows[name] = [arr]
+      }
+      return arrH
+    case .crossfadeSqrt(let arrows, let name):
+      let lowerArrs = arrows.map({$0.compile()})
+      let arr = ArrowEqualPowerCrossfade(
+        innerArrs: lowerArrs
+      )
+      let arrH = ArrowWithHandles(arr).withMergeDictsFromArrows(lowerArrs)
+      if var namedArrs = arrH.namedArrows[name] {
+        namedArrs.append(arr)
+      } else {
+        arrH.namedArrows[name] = [arr]
+      }
+      return arrH
     case .const(let name, let val):
       let arr = ArrowConst(value: val) // separate copy, even if same name as a node elsewhere
       let handleArr = ArrowWithHandles(arr)
@@ -393,8 +436,12 @@ enum ArrowSyntax: Codable {
       } else {
         handleArr.namedLowPassFilter[lpArrow.name] = [arr]
       }
+      if var namedArrs = handleArr.namedArrows[lpArrow.name] {
+        namedArrs.append(arr)
+      } else {
+        handleArr.namedArrows[lpArrow.name] = [arr]
+      }
       return handleArr
-      
     case .choruser(let choruserSpecs):
       let choruser = Choruser(
         chorusCentRadius: choruserSpecs.chorusCentRadius,
@@ -402,11 +449,8 @@ enum ArrowSyntax: Codable {
         valueToChorus: choruserSpecs.valueToChorus
       )
       let handleArr = ArrowWithHandles(choruser)
-      if var chorusers = handleArr.namedChorusers[choruserSpecs.name] {
-        chorusers.append(choruser)
-      } else {
-        handleArr.namedChorusers[choruserSpecs.name] = [choruser]
-      }
+      handleArr.namedChorusers[choruserSpecs.name] = [choruser]
+      handleArr.namedArrows[choruserSpecs.name] = [choruser]
       return handleArr
     
     case .envelope(let adsr):
@@ -418,11 +462,8 @@ enum ArrowSyntax: Codable {
         scale: adsr.scale
       ))
       let handleArr = ArrowWithHandles(env.asControl())
-      if var envs = handleArr.namedADSREnvelopes[adsr.name] {
-        envs.append(env)
-      } else {
-        handleArr.namedADSREnvelopes[adsr.name] = [env]
-      }
+      handleArr.namedADSREnvelopes[adsr.name] = [env]
+      handleArr.namedArrows[adsr.name] = [env]
       return handleArr
 
     }
