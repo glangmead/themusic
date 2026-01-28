@@ -15,12 +15,15 @@ struct ArrowChart: View {
   }
   
   var arrow: Arrow11
-  @State private var numSamplesToPlot = 4410
+  @State private var numSamplesToPlot = 44100
   let sampleRate = 44100
+  var ymin: Int = -1
+  var ymax: Int = 1
   var data: [Sample] {
     let now: CoreFloat = 0
+    let dt: CoreFloat = 1.0 / CoreFloat(sampleRate)
     return (0...numSamplesToPlot).map { i in
-      let t = CoreFloat(i) / CoreFloat(sampleRate)
+      let t = now + (CoreFloat(i) * dt)
       return Sample(time: t, amp: arrow.of(now + t))
     }
   }
@@ -34,7 +37,7 @@ struct ArrowChart: View {
         )
       }
       .chartXScale(domain: 0...Double(numSamplesToPlot)/Double(sampleRate))
-      .chartYScale(domain: -1...1)
+      .chartYScale(domain: ymin...ymax)
       
       TextField("Samples", value: $numSamplesToPlot, format: .number)
         .textFieldStyle(.roundedBorder)
@@ -44,7 +47,7 @@ struct ArrowChart: View {
 }
 
 #Preview {
-  let osc = NoiseSmoothStep(sampleFreq: 200)
-  osc.innerArr = ArrowProd(innerArrs: [ArrowConst(value: 440), ArrowIdentity()])
-  return ArrowChart(arrow: osc)
+  let osc = NoiseSmoothStep(noiseFreq: 20, min: 0, max: 2)
+  osc.innerArr = ArrowProd(innerArr: ArrowIdentity())
+  return ArrowChart(arrow: osc, ymin: 0, ymax: 2)
 }

@@ -57,30 +57,35 @@ final class Noise: Arrow11, WidthHaver {
   }
 }
 
-// Takes on random values every 1/sampleFreq seconds, and smoothly interpolates between
+// Takes on random values every 1/noiseFreq seconds, and smoothly interpolates between
 final class NoiseSmoothStep: Arrow11 {
-  var noiseFreq: CoreFloat = 1
-  var min: CoreFloat = -1
-  var max: CoreFloat = 1
+  var noiseFreq: CoreFloat
+  var min: CoreFloat
+  var max: CoreFloat
+  
+  // for measuring the sample rate, which we need to interpret noiseFreq
   private var previousTime: CoreFloat = 0
-  private var deltaTime: CoreFloat = 0
+  private var audioDeltaTime: CoreFloat = 0
+  // for emitting new noise samples
   private var lastNoiseTime: CoreFloat
   private var nextNoiseTime: CoreFloat
+  // the noise samples we're interpolating at any given moment
   private var lastSample: CoreFloat
   private var nextSample: CoreFloat
-  private var epsilon: CoreFloat = 1e-7
-  private var noiseDeltaTime: CoreFloat {
-    1.0 / noiseFreq
-  }
+  // for detecting when we're nearing a sample and need a new one
+  private var noiseDeltaTime: CoreFloat
+  private var numAudioSamplesPerNoise: Int = 0
+  private var numAudioSamplesThisSegment = 0
   
-  init(sampleFreq: CoreFloat, min: CoreFloat = -1, max: CoreFloat = 1) {
-    self.noiseFreq = sampleFreq
+  init(noiseFreq: CoreFloat, min: CoreFloat = -1, max: CoreFloat = 1) {
+    self.noiseFreq = noiseFreq
     self.min = min
     self.max = max
     self.lastSample = CoreFloat.random(in: min...max)
     self.nextSample = CoreFloat.random(in: min...max)
     lastNoiseTime = 0
-    nextNoiseTime = lastNoiseTime + (1.0 / sampleFreq)
+    noiseDeltaTime = 1.0 / noiseFreq
+    nextNoiseTime = noiseDeltaTime
     super.init()
   }
   
@@ -88,24 +93,32 @@ final class NoiseSmoothStep: Arrow11 {
     // compute the actual time between samples
     if previousTime == 0 {
       previousTime = t
-      return 0
-    } else if deltaTime == 0 {
-      deltaTime = t - previousTime
-      return 0
+      return lastSample
+    } else if audioDeltaTime == 0 {
+      audioDeltaTime = t - previousTime
+      // update noiseDeltaTime so that it is an integer multiple of audioDeltaTime
+      noiseDeltaTime -= fmod(noiseDeltaTime, audioDeltaTime)
+      numAudioSamplesPerNoise = Int(noiseDeltaTime/audioDeltaTime)
+      return lastSample
     }
     
-    let modT = fmod(t, noiseDeltaTime)
-    // generate smoothstep for x between 0 and 1, y between 0 and 1
-    let betweenTime = modT / noiseDeltaTime
-    let zeroOneSmooth = betweenTime * betweenTime * (3 - 2 * betweenTime)
-    let result = lastSample + (zeroOneSmooth * (nextSample - lastSample))
-    
-    if abs(modT - noiseDeltaTime) <= deltaTime {
+    // we roll to the next sample by counting audio samples
+    // we chose an integer that's close to achieving the requested noiseFreq
+    if numAudioSamplesThisSegment == numAudioSamplesPerNoise - 1 {
+      numAudioSamplesThisSegment = 0
       lastSample = nextSample
       nextSample = CoreFloat.random(in: min...max)
       lastNoiseTime = nextNoiseTime
       nextNoiseTime += noiseDeltaTime
     }
+
+    // generate smoothstep for x between 0 and 1, y between 0 and 1
+    let betweenTime = (t - lastNoiseTime) / noiseDeltaTime
+    let zeroOneSmooth = betweenTime * betweenTime * (3 - 2 * betweenTime)
+    let result = lastSample + (zeroOneSmooth * (nextSample - lastSample))
+    
+    numAudioSamplesThisSegment += 1
+    
     return result
   }
 }
@@ -387,7 +400,7 @@ enum ArrowSyntax: Codable {
   indirect case crossfadeEqPow(of: [ArrowSyntax], name: String, mixPoint: ArrowSyntax)
   indirect case envelope(name: String, attack: CoreFloat, decay: CoreFloat, sustain: CoreFloat, release: CoreFloat, scale: CoreFloat)
   case choruser(name: String, valueToChorus: String, chorusCentRadius: Int, chorusNumVoices: Int)
-  case noiseSmoothStep(sampleFreq: CoreFloat, min: CoreFloat, max: CoreFloat)
+  case noiseSmoothStep(noiseFreq: CoreFloat, min: CoreFloat, max: CoreFloat)
   case line(duration: CoreFloat, min: CoreFloat, max: CoreFloat)
   
   indirect case osc(name: String, shape: BasicOscillator.OscShape, width: ArrowSyntax)
@@ -395,8 +408,8 @@ enum ArrowSyntax: Codable {
   // see https://www.compilenrun.com/docs/language/swift/swift-enumerations/swift-recursive-enumerations/
   func compile() -> ArrowWithHandles {
     switch self {
-    case .noiseSmoothStep(let sampleFreq, let min, let max):
-      let noise = NoiseSmoothStep(sampleFreq: sampleFreq, min: min, max: max)
+    case .noiseSmoothStep(let noiseFreq, let min, let max):
+      let noise = NoiseSmoothStep(noiseFreq: noiseFreq, min: min, max: max)
       return ArrowWithHandles(noise)
     case .line(let duration, let min, let max):
       let line = ArrowLine(start: min, end: max, duration: duration)
@@ -525,4 +538,10 @@ enum ArrowSyntax: Codable {
 
     }
   }
+}
+
+#Preview {
+  let osc = NoiseSmoothStep(noiseFreq: 10, min: 0, max: 2)
+  osc.innerArr = ArrowProd(innerArr: ArrowIdentity())
+  return ArrowChart(arrow: osc, ymin: 0, ymax: 2)
 }

@@ -8,7 +8,7 @@
      "prod": { "of": [
        {
         "crossfadeEqPow": { "name": "oscCrossfade", 
-          "mixPoint": { "compose": {"arrows": [{"identity": {}}, {"noiseSmoothStep": {"sampleFreq": 2, "min": 0, "max": 2}}]}}, 
+          "mixPoint": { "compose": {"arrows": [{"identity": {}}, {"noiseSmoothStep": {"noiseFreq": 2, "min": 0, "max": 2}}]}}, 
           "of": [
           {
            "prod": { "of": [
@@ -36,7 +36,7 @@
                    }
                  ]}
                 },
-                { "osc": {"name": "osc1", "shape": "squareOsc", "width": { "noiseSmoothStep": {"sampleFreq": 1, "min": 0.2, "max": 0.8} }} },
+                { "osc": {"name": "osc1", "shape": "squareOsc", "width": { "noiseSmoothStep": {"noiseFreq": 1, "min": 0.2, "max": 0.8} }} },
                 { "choruser": { "name": "osc1Choruser", "valueToChorus": "freq", "chorusCentRadius": 0, "chorusNumVoices": 1 } }
               ]}}
            ]}
