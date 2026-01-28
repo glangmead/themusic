@@ -51,13 +51,13 @@
                    { 
                     "prod": { "of": [ 
                      { "const": {"name": "freq", "val": 300} }, 
-                     { "constOctave": {"name": "osc2Octave", "val": -1} },
+                     { "constOctave": {"name": "osc2Octave", "val": 0} },
                      { "constCent": {"name": "osc2CentDetune", "val": 0} },
                      {"identity": {}}
                     ]}
                    },
                    { "prod": { "of": [
-                       { "const": {"name": "vibratoAmp", "val": 0} },
+                      { "line": {"duration": 7, "min": 0, "max": 1} },
                        { "compose": { "arrows": [
                           { "prod": { "of": [
                             { "const": {"val": 1, "name": "vibratoFreq"} },
@@ -89,7 +89,7 @@
                      {"identity": {}} 
                    ]}},
                    { "prod": { "of": [
-                       { "const": {"name": "vibratoAmp", "val": 0} },
+                      { "line": {"duration": 7, "min": 0, "max": 1} },
                        { "compose": { "arrows": [
                           { "prod": { "of": [
                             { "const": {"val": 1, "name": "vibratoFreq"} },
@@ -121,10 +121,10 @@
           { "const": {"name": "cutoffLow", "val": 50} },
           { "prod": { "of": [
             { "const": {"name": "cutoff", "val": 5000} },
-            { "envelope": { "release": 0.1, "scale": 1, "name": "filterEnv", "attack": 0.1, "decay": 0, "sustain": 1 } }
+            { "envelope": { "release": 0.1, "scale": 1, "name": "filterEnv", "attack": 0.1, "decay": 0.1, "sustain": 1 } }
           ]}}
        ]}},
-       "resonance": { "const": {"name": "resonance", "val": 0.1} },
+       "resonance": { "const": {"name": "resonance", "val": 1.1} },
        "name"     : "filter"
      }
    }]

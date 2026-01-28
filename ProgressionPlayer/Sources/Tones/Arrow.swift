@@ -137,6 +137,10 @@ final class ArrowCrossfade: Arrow11 {
   }
 }
 
+func sqrtPosNeg(_ val: CoreFloat) -> CoreFloat {
+  val >= 0 ? sqrt(val) : -sqrt(-val)
+}
+
 // Mix two of the arrows in a list, viewing the mixPoint as a point somewhere between two of the arrows
 // Use sqrt to maintain equal power and avoid a dip in perceived volume at the center point.
 // Compare to Supercollider's `SelectX`
@@ -154,8 +158,8 @@ final class ArrowEqualPowerCrossfade: Arrow11 {
     let arrow2 = innerArrsUnmanaged[Int(ceil(mixPointLocal))]
     let arrow1Weight = mixPointLocal - floor(mixPointLocal)
     
-    return sqrt(arrow1Weight * arrow1._withUnsafeGuaranteedRef { $0.of(t) }) +
-      sqrt((1.0 - arrow1Weight) * arrow2._withUnsafeGuaranteedRef { $0.of(t) })
+    return sqrtPosNeg(arrow1Weight * arrow1._withUnsafeGuaranteedRef { $0.of(t) }) +
+    sqrtPosNeg((1.0 - arrow1Weight) * arrow2._withUnsafeGuaranteedRef { $0.of(t) })
   }
 }
 
