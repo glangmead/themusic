@@ -90,6 +90,9 @@ class SyntacticSynth: EngineAndVoicePool {
   var oscShape3: BasicOscillator.OscShape = .noise { didSet {
     poolVoice?.namedBasicOscs["osc3"]!.forEach { $0.shape = oscShape3 } }
   }
+  var osc1Width: CoreFloat = 0 { didSet {
+    poolVoice?.namedBasicOscs["osc1"]!.forEach { $0.width = osc1Width } }
+  }
   var osc1ChorusCentRadius: CoreFloat = 0 { didSet {
     poolVoice?.namedChorusers["osc1Choruser"]!.forEach { $0.chorusCentRadius = Int(osc1ChorusCentRadius) } }
   }
@@ -114,11 +117,17 @@ class SyntacticSynth: EngineAndVoicePool {
   var osc3Octave: CoreFloat = 0 { didSet {
     poolVoice?.namedConsts["osc3Octave"]!.forEach { $0.val = osc3Octave } }
   }
+  var osc2Width: CoreFloat = 0 { didSet {
+    poolVoice?.namedBasicOscs["osc2"]!.forEach { $0.width = osc2Width } }
+  }
   var osc2ChorusCentRadius: CoreFloat = 0 { didSet {
     poolVoice?.namedChorusers["osc2Choruser"]!.forEach { $0.chorusCentRadius = Int(osc2ChorusCentRadius) } }
   }
   var osc2ChorusNumVoices: CoreFloat = 0 { didSet {
     poolVoice?.namedChorusers["osc1Choruser"]!.forEach { $0.chorusNumVoices = Int(osc2ChorusNumVoices) } }
+  }
+  var osc3Width: CoreFloat = 0 { didSet {
+    poolVoice?.namedBasicOscs["osc3"]!.forEach { $0.width = osc3Width } }
   }
   var osc3ChorusCentRadius: CoreFloat = 0 { didSet {
     poolVoice?.namedChorusers["osc3Choruser"]!.forEach { $0.chorusCentRadius = Int(osc3ChorusCentRadius) } }
@@ -248,6 +257,10 @@ class SyntacticSynth: EngineAndVoicePool {
     oscShape2 = poolVoice.namedBasicOscs["osc2"]!.first!.shape
     oscShape3 = poolVoice.namedBasicOscs["osc3"]!.first!.shape
 
+    osc1Width = poolVoice.namedBasicOscs["osc1"]!.first!.width
+    osc2Width = poolVoice.namedBasicOscs["osc2"]!.first!.width
+    osc3Width = poolVoice.namedBasicOscs["osc3"]!.first!.width
+
     osc1Octave = poolVoice.namedConsts["osc1Octave"]!.first!.val
     osc2Octave = poolVoice.namedConsts["osc2Octave"]!.first!.val
     osc3Octave = poolVoice.namedConsts["osc3Octave"]!.first!.val
@@ -288,7 +301,7 @@ struct SyntacticSynthView: View {
       Spacer()
       
       ArrowChart(arrow: (synth.poolVoice!.namedBasicOscs["osc1"]!.first)!)
-        .id(synth.oscShape1.hashValue)// ^ synth.osc1Width.hashValue)
+        .id(synth.oscShape1.hashValue ^ synth.osc1Width.hashValue)
       
       Picker("Instrument 1", selection: $synth.oscShape1) {
         ForEach(BasicOscillator.OscShape.allCases, id: \.self) { option in
@@ -313,18 +326,21 @@ struct SyntacticSynthView: View {
         KnobbyKnob(value: $synth.osc1Octave, label: "Oct1", range: -5...5, stepSize: 1)
         KnobbyKnob(value: $synth.osc1ChorusCentRadius, label: "Cents1", range: 0...30, stepSize: 1)
         KnobbyKnob(value: $synth.osc1ChorusNumVoices, label: "Voices1", range: 1...12, stepSize: 1)
+        KnobbyKnob(value: $synth.osc1Width, label: "PulseW1", range: 0...1)
       }
       HStack {
         KnobbyKnob(value: $synth.osc2CentDetune, label: "Detune2", range: -500...500, stepSize: 1)
         KnobbyKnob(value: $synth.osc2Octave, label: "Oct2", range: -5...5, stepSize: 1)
         KnobbyKnob(value: $synth.osc2ChorusCentRadius, label: "Cents2", range: 0...30, stepSize: 1)
         KnobbyKnob(value: $synth.osc2ChorusNumVoices, label: "Voices2", range: 1...12, stepSize: 1)
+        KnobbyKnob(value: $synth.osc2Width, label: "PulseW2", range: 0...1)
       }
       HStack {
         KnobbyKnob(value: $synth.osc3CentDetune, label: "Detune3", range: -500...500, stepSize: 1)
         KnobbyKnob(value: $synth.osc3Octave, label: "Oct3", range: -5...5, stepSize: 1)
         KnobbyKnob(value: $synth.osc3ChorusCentRadius, label: "Cents3", range: 0...30, stepSize: 1)
         KnobbyKnob(value: $synth.osc3ChorusNumVoices, label: "Voices3", range: 1...12, stepSize: 1)
+        KnobbyKnob(value: $synth.osc3Width, label: "PulseW3", range: 0...1)
       }
       HStack {
         KnobbyKnob(value: $synth.osc1Mix, label: "Osc1", range: 0...1)

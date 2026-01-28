@@ -90,25 +90,10 @@ struct SongView: View {
           musicPattern = MusicPattern(
             presetSpec: synth.presetSpec,
             engine: synth.engine,
-            constModulators: [
+            modulators: [
               "vibratoAmp": ArrowLine(start: 0, end: 1, duration: 7),
-              "osc1Mix": ArrowConst(value: 0.25),
               "osc2Mix": ArrowConst(value: 0),
               "osc3Mix": ArrowConst(value: 0),
-            ],
-            envModulators: [
-              "ampEnv": ADSR(envelope: EnvelopeData(attackTime: 2.5, decayTime: 2.5, sustainLevel: 0, releaseTime: 0 ))
-            ],
-            oscModulators: [:],
-            pulseWidthModulators: [
-              "osc1": ArrowSmoothStep(sampleFreq: 1, min: 0.2, max: 0.8)
-            ],
-            arrowModulators: [
-              "sumOfOscs": ArrowEqualPowerCrossfade(innerArrs: [
-                BasicOscillator(shape: .square),
-                BasicOscillator(shape: .sawtooth),
-                BasicOscillator(shape: .noise)
-              ], mixPointArr: ArrowSmoothStep(sampleFreq: 2, min: 0, max: 2))
             ],
             notes: ScaleSampler().makeIterator(),
             sustains: FloatSampler(min: 4, max: 5),

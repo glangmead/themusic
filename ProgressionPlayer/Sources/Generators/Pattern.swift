@@ -19,11 +19,7 @@ struct MusicEvent {
   let notes: [MidiNote]
   let sustain: CoreFloat // time between noteOn and noteOff in seconds
   let gap: CoreFloat // time reserved for this event, before next event is played
-  let constModulators: [String: Arrow11]
-  let envModulators: [String: ADSR]
-  let oscModulators: [String: BasicOscillator]
-  let pulseWidthModulators: [String: Arrow11]
-  let arrowModulators: [String: Arrow11]
+  let modulators: [String: Arrow11]
   let timeOrigin: Double
   var cleanup: (() async -> Void)? = nil
   
@@ -35,37 +31,11 @@ struct MusicEvent {
     
     // Apply modulation
     let now = CoreFloat(Date.now.timeIntervalSince1970 - timeOrigin)
-    for (key, modulatingArrow) in constModulators {
+    for (key, modulatingArrow) in modulators {
       if voice!.namedConsts[key] != nil {
         for arrowConst in voice!.namedConsts[key]! {
           arrowConst.val = modulatingArrow.of(now)
         }
-      }
-    }
-    for (key, adsr) in envModulators {
-      if voice!.namedADSREnvelopes[key] != nil {
-        for env in voice!.namedADSREnvelopes[key]! {
-          env.env = adsr.env
-        }
-      }
-    }
-    for (key, oscMod) in oscModulators {
-      if voice!.namedBasicOscs[key] != nil {
-        for osc in voice!.namedBasicOscs[key]! {
-          osc.shape = oscMod.shape
-        }
-      }
-    }
-    for (key, widthMod) in pulseWidthModulators {
-      if voice!.namedBasicOscs[key] != nil {
-        for osc in voice!.namedBasicOscs[key]! {
-          osc.widthArr = widthMod
-        }
-      }
-    }
-    for (key, newArrow) in arrowModulators {
-      if voice!.namedArrows[key] != nil {
-        voice!.namedArrows[key] = [newArrow]
       }
     }
 
@@ -127,21 +97,11 @@ struct FloatSampler: Sequence, IteratorProtocol {
   }
 }
 
-//var namedBasicOscs     = [String: [BasicOscillator]]()
-//var namedLowPassFilter = [String: [LowPassFilter2]]()
-//var namedConsts        = [String: [ValHaver]]()
-//var namedADSREnvelopes = [String: [ADSR]]()
-//var namedChorusers     = [String: [Choruser]]()
-
 // the ingredients for generating music events
 actor MusicPattern {
   var presetSpec: PresetSyntax
   var engine: SpatialAudioEngine
-  var constModulators: [String: Arrow11] // modulates constants in the preset
-  var envModulators: [String: ADSR]
-  var oscModulators: [String: BasicOscillator]
-  var pulseWidthModulators: [String: Arrow11]
-  var arrowModulators: [String: Arrow11]
+  var modulators: [String: Arrow11] // modulates constants in the preset
   var notes: any IteratorProtocol<[MidiNote]> // a sequence of chords
   var sustains: any IteratorProtocol<CoreFloat> // a sequence of sustain lengths
   var gaps: any IteratorProtocol<CoreFloat> // a sequence of sustain lengths
@@ -160,22 +120,14 @@ actor MusicPattern {
   init(
     presetSpec: PresetSyntax,
     engine: SpatialAudioEngine,
-    constModulators: [String : Arrow11],
-    envModulators: [String: ADSR],
-    oscModulators: [String: BasicOscillator],
-    pulseWidthModulators: [String: Arrow11],
-    arrowModulators: [String: Arrow11],
+    modulators: [String : Arrow11],
     notes: any IteratorProtocol<[MidiNote]>,
     sustains: any IteratorProtocol<CoreFloat>,
     gaps: any IteratorProtocol<CoreFloat>
   ){
     self.presetSpec = presetSpec
     self.engine = engine
-    self.constModulators = constModulators
-    self.envModulators = envModulators
-    self.oscModulators = oscModulators
-    self.pulseWidthModulators = pulseWidthModulators
-    self.arrowModulators = arrowModulators
+    self.modulators = modulators
     self.notes = notes
     self.sustains = sustains
     self.gaps = gaps
@@ -222,11 +174,7 @@ actor MusicPattern {
       notes: note,
       sustain: sustain,
       gap: gap,
-      constModulators: constModulators,
-      envModulators: envModulators,
-      oscModulators: oscModulators,
-      pulseWidthModulators: pulseWidthModulators,
-      arrowModulators: arrowModulators,
+      modulators: modulators,
       timeOrigin: timeOrigin,
       cleanup: { [weak self] in
         await self?.returnPresets(presets)
