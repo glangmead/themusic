@@ -21,6 +21,7 @@ struct SongView: View {
   @State private var noteOffset: Float = 0
   @State private var musicPattern: MusicPattern? = nil
   @State private var patternPlaybackHandle: Task<Void, Error>? = nil
+  @State private var isShowingPresetList = false
 
   var body: some View {
     NavigationStack {
@@ -47,6 +48,11 @@ struct SongView: View {
               #else
               isShowingSynth = true
               #endif
+            }
+          }
+          ToolbarItem() {
+            Button("Presets") {
+              isShowingPresetList = true
             }
           }
           ToolbarItem() {
@@ -123,8 +129,15 @@ struct SongView: View {
         try! synth.engine.start()
       }
     }
+    .onChange(of: synth.reloadCount) {
+      seq?.stop()
+      seq = Sequencer(synth: synth, numTracks: 2)
+    }
     .sheet(isPresented: $isShowingSynth) {
       SyntacticSynthView(synth: synth)
+    }
+    .popover(isPresented: $isShowingPresetList) {
+      PresetListView(isPresented: $isShowingPresetList)
     }
     .fullScreenCover(isPresented: $isShowingVisualizer) {
       ZStack(alignment: .topTrailing) {

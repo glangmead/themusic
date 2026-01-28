@@ -15,6 +15,7 @@ struct TheoryView: View {
   @State private var ampADSRExpanded = true
   @State private var roseParamsExpanded = true
   @State private var isShowingSynth = false
+  @State private var isShowingPresetList = false
 
   @State private var key = Key.C
   @State private var octave: Int = 2
@@ -107,6 +108,9 @@ struct TheoryView: View {
             isShowingSynth = true
             #endif
           }
+          Button("Presets") {
+            isShowingPresetList = true
+          }
         }
         .navigationTitle("⌘Scape")
       }
@@ -122,8 +126,15 @@ struct TheoryView: View {
         seq = Sequencer(synth: synth, numTracks: 2)
       }
     }
+    .onChange(of: synth.reloadCount) {
+      seq?.stop()
+      seq = Sequencer(synth: synth, numTracks: 2)
+    }
     .sheet(isPresented: $isShowingSynth) {
       SyntacticSynthView(synth: synth)
+    }
+    .popover(isPresented: $isShowingPresetList) {
+      PresetListView(isPresented: $isShowingPresetList)
     }
   }
 

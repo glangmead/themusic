@@ -17,7 +17,6 @@
 		9B935B972EDE0F1800600E63 /* MSLFSanctus.mid in Resources */ = {isa = PBXBuildFile; fileRef = 9B935B952EDE0F1800600E63 /* MSLFSanctus.mid */; };
 		9BA522562EB0FE8F00ECF215 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9BA522552EB0FE8F00ECF215 /* AudioKit */; };
 		9BA5B1D42F14636B00857520 /* BachInvention1.mid in Resources */ = {isa = PBXBuildFile; fileRef = 9BA5B1D32F14636B00857520 /* BachInvention1.mid */; };
-		9BB5A59A2F27019500B89656 /* smoothNoise.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BB5A5992F27019500B89656 /* smoothNoise.json */; };
 		9BCED9112F1FD0A30029ED1B /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 9BCED9102F1FD0A30029ED1B /* index.html */; };
 		9BCED9142F1FD2E30029ED1B /* butterchurn-presets.js in Resources */ = {isa = PBXBuildFile; fileRef = 9BCED9132F1FD2E30029ED1B /* butterchurn-presets.js */; };
 		9BCED9152F1FD2E30029ED1B /* butterchurn.js in Resources */ = {isa = PBXBuildFile; fileRef = 9BCED9122F1FD2E30029ED1B /* butterchurn.js */; };
@@ -53,7 +52,6 @@
 		9B935B952EDE0F1800600E63 /* MSLFSanctus.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = MSLFSanctus.mid; sourceTree = "<group>"; };
 		9BA522572EB10D1C00ECF215 /* ProgressionPlayer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ProgressionPlayer-Info.plist"; sourceTree = "<group>"; };
 		9BA5B1D32F14636B00857520 /* BachInvention1.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = BachInvention1.mid; sourceTree = "<group>"; };
-		9BB5A5992F27019500B89656 /* smoothNoise.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = smoothNoise.json; sourceTree = "<group>"; };
 		9BC0FCA72E704EA900472A5A /* ProgressionPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProgressionPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC0FCB42E704EAA00472A5A /* ProgressionPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProgressionPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC0FCBE2E704EAA00472A5A /* ProgressionPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProgressionPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,7 +114,6 @@
 			isa = PBXGroup;
 			children = (
 				9B51A5062EEB54E40007D695 /* saw1_preset.json */,
-				9BB5A5992F27019500B89656 /* smoothNoise.json */,
 				9B7924052F2A66E100A51087 /* auroraBorealis.json */,
 			);
 			path = presets;
@@ -306,7 +303,6 @@
 				9BCED9142F1FD2E30029ED1B /* butterchurn-presets.js in Resources */,
 				9BCED9152F1FD2E30029ED1B /* butterchurn.js in Resources */,
 				9B137E812EE8CA6D00DE0E15 /* All-My-Loving.mid in Resources */,
-				9BB5A59A2F27019500B89656 /* smoothNoise.json in Resources */,
 				9BCED9902F246B150029ED1B /* Orbital.icon in Resources */,
 				9B935B972EDE0F1800600E63 /* MSLFSanctus.mid in Resources */,
 				9BCED9112F1FD0A30029ED1B /* index.html in Resources */,
