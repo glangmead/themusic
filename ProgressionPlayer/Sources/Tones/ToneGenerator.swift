@@ -9,20 +9,22 @@ import Foundation
 import SwiftUI
 
 protocol WidthHaver {
-  var width: CoreFloat { get set }
+  var widthArr: Arrow11 { get set }
 }
 
 final class Sine: Arrow11, WidthHaver {
-  var width: CoreFloat = 1.0
+  var widthArr: Arrow11 = ArrowConst(value: 1.0)
   override func of(_ t: CoreFloat) -> CoreFloat {
+    let width = widthArr.of(t)
     let innerResult = inner(t)
     return (fmod(innerResult, 1) < width) ? sin(2 * .pi * innerResult / width) : 0
   }
 }
 
 final class Triangle: Arrow11, WidthHaver {
-  var width: CoreFloat = 1
+  var widthArr: Arrow11 = ArrowConst(value: 1.0)
   override func of(_ t: CoreFloat) -> CoreFloat {
+    let width = widthArr.of(t)
     let innerResult = inner(t)
     let modResult = fmod(innerResult, 1)
     return (modResult < width/2) ? (4 * modResult / width) - 1:
@@ -31,8 +33,9 @@ final class Triangle: Arrow11, WidthHaver {
 }
 
 final class Sawtooth: Arrow11, WidthHaver {
-  var width: CoreFloat = 1
+  var widthArr: Arrow11 = ArrowConst(value: 1.0)
   override func of(_ t: CoreFloat) -> CoreFloat {
+    let width = widthArr.of(t)
     let innerResult = inner(t)
     let modResult = fmod(innerResult, 1)
     return (modResult < width) ? (2 * modResult / width) - 1 : 0
@@ -40,16 +43,70 @@ final class Sawtooth: Arrow11, WidthHaver {
 }
 
 final class Square: Arrow11, WidthHaver {
-  var width: CoreFloat = 1 // for square, a width of 1 means half the time it's 1 and half is 0
+  var widthArr: Arrow11 = ArrowConst(value: 1.0)
   override func of(_ t: CoreFloat) -> CoreFloat {
-    fmod(inner(t), 1) <= width/2 ? 1.0 : -1.0
+    let width = widthArr.of(t)
+    return fmod(inner(t), 1) <= width/2 ? 1.0 : -1.0
   }
 }
 
 final class Noise: Arrow11, WidthHaver {
-  var width: CoreFloat = 1
+  var widthArr: Arrow11 = ArrowConst(value: 1.0)
   override func of(_ t: CoreFloat) -> CoreFloat {
     CoreFloat.random(in: 0.0...1.0)
+  }
+}
+
+// Takes on random values every 1/sampleFreq seconds, and smoothly interpolates between
+final class NoiseSmoothStep: Arrow11 {
+  var noiseFreq: CoreFloat = 1
+  var min: CoreFloat = -1
+  var max: CoreFloat = 1
+  private var previousTime: CoreFloat = 0
+  private var deltaTime: CoreFloat = 0
+  private var lastNoiseTime: CoreFloat
+  private var nextNoiseTime: CoreFloat
+  private var lastSample: CoreFloat
+  private var nextSample: CoreFloat
+  private var epsilon: CoreFloat = 1e-7
+  private var noiseDeltaTime: CoreFloat {
+    1.0 / noiseFreq
+  }
+  
+  init(sampleFreq: CoreFloat, min: CoreFloat = -1, max: CoreFloat = 1) {
+    self.noiseFreq = sampleFreq
+    self.min = min
+    self.max = max
+    self.lastSample = CoreFloat.random(in: min...max)
+    self.nextSample = CoreFloat.random(in: min...max)
+    lastNoiseTime = 0
+    nextNoiseTime = lastNoiseTime + (1.0 / sampleFreq)
+    super.init()
+  }
+  
+  override func of(_ t: CoreFloat) -> CoreFloat {
+    // compute the actual time between samples
+    if previousTime == 0 {
+      previousTime = t
+      return 0
+    } else if deltaTime == 0 {
+      deltaTime = t - previousTime
+      return 0
+    }
+    
+    let modT = fmod(t, noiseDeltaTime)
+    // generate smoothstep for x between 0 and 1, y between 0 and 1
+    let betweenTime = modT / noiseDeltaTime
+    let zeroOneSmooth = betweenTime * betweenTime * (3 - 2 * betweenTime)
+    let result = lastSample + (zeroOneSmooth * (nextSample - lastSample))
+    
+    if abs(modT - noiseDeltaTime) <= deltaTime {
+      lastSample = nextSample
+      nextSample = CoreFloat.random(in: min...max)
+      lastNoiseTime = nextNoiseTime
+      nextNoiseTime += noiseDeltaTime
+    }
+    return result
   }
 }
 
@@ -65,7 +122,7 @@ final class BasicOscillator: Arrow11 {
   private let triangle = Triangle()
   private let sawtooth = Sawtooth()
   private let square = Square()
-  private let noise = ArrowSmoothStep(sampleFreq: 4000)
+  private let noise = Noise()
   private let sineUnmanaged: Unmanaged<Arrow11>?
   private let triangleUnmanaged: Unmanaged<Arrow11>?
   private let sawtoothUnmanaged: Unmanaged<Arrow11>?
@@ -80,19 +137,19 @@ final class BasicOscillator: Arrow11 {
       updateShape()
     }
   }
-  var width: CoreFloat {
+  var widthArr: Arrow11 {
     didSet {
-      arrow?.width = width
+      arrow?.widthArr = widthArr
     }
   }
 
-  init(shape: OscShape, width: CoreFloat = 1) {
+  init(shape: OscShape, widthArr: Arrow11 = ArrowConst(value: 1)) {
     self.sineUnmanaged = Unmanaged.passUnretained(sine)
     self.triangleUnmanaged = Unmanaged.passUnretained(triangle)
     self.sawtoothUnmanaged = Unmanaged.passUnretained(sawtooth)
     self.squareUnmanaged = Unmanaged.passUnretained(square)
     self.noiseUnmanaged = Unmanaged.passUnretained(noise)
-    self.width = width
+    self.widthArr = widthArr
     self.shape = shape
     super.init()
     self.updateShape()
@@ -275,6 +332,8 @@ class ArrowWithHandles: Arrow11 {
   var namedConsts        = [String: [ValHaver]]()
   var namedADSREnvelopes = [String: [ADSR]]()
   var namedChorusers     = [String: [Choruser]]()
+  var namedCrossfaders   = [String: [ArrowCrossfade]]()
+  var namedCrossfadersEqPow = [String: [ArrowEqualPowerCrossfade]]()
   var wrappedArrow: Arrow11
   
   private var wrappedArrowUnsafe: Unmanaged<Arrow11>
@@ -300,6 +359,8 @@ class ArrowWithHandles: Arrow11 {
     namedBasicOscs.merge(arr2.namedBasicOscs) { (a, b) in return a + b }
     namedLowPassFilter.merge(arr2.namedLowPassFilter) { (a, b) in return a + b }
     namedChorusers.merge(arr2.namedChorusers) { (a, b) in return a + b }
+    namedCrossfaders.merge(arr2.namedCrossfaders) { (a, b) in return a + b }
+    namedCrossfadersEqPow.merge(arr2.namedCrossfadersEqPow) { (a, b) in return a + b }
     return self
   }
   
@@ -318,17 +379,28 @@ enum ArrowSyntax: Codable {
   case constCent(name: String, val: CoreFloat)
   case identity
   case control
-  indirect case lowPassFilter(specs: LowPassArrowSyntax)
+  indirect case lowPassFilter(name: String, cutoff: ArrowSyntax, resonance: ArrowSyntax)
   indirect case prod(of: [ArrowSyntax])
   indirect case compose(arrows: [ArrowSyntax])
   indirect case sum(of: [ArrowSyntax])
-  indirect case envelope(specs: ADSRSyntax)
-  case choruser(specs: NamedChoruser)
-  case osc(name: String, shape: BasicOscillator.OscShape, width: CoreFloat)
+  indirect case crossfade(of: [ArrowSyntax], name: String, mixPoint: ArrowSyntax)
+  indirect case crossfadeEqPow(of: [ArrowSyntax], name: String, mixPoint: ArrowSyntax)
+  indirect case envelope(name: String, attack: CoreFloat, decay: CoreFloat, sustain: CoreFloat, release: CoreFloat, scale: CoreFloat)
+  case choruser(name: String, valueToChorus: String, chorusCentRadius: Int, chorusNumVoices: Int)
+  case noiseSmoothStep(sampleFreq: CoreFloat, min: CoreFloat, max: CoreFloat)
+  case line(duration: CoreFloat, min: CoreFloat, max: CoreFloat)
+  
+  indirect case osc(name: String, shape: BasicOscillator.OscShape, width: ArrowSyntax)
   
   // see https://www.compilenrun.com/docs/language/swift/swift-enumerations/swift-recursive-enumerations/
   func compile() -> ArrowWithHandles {
     switch self {
+    case .noiseSmoothStep(let sampleFreq, let min, let max):
+      let noise = NoiseSmoothStep(sampleFreq: sampleFreq, min: min, max: max)
+      return ArrowWithHandles(noise)
+    case .line(let duration, let min, let max):
+      let line = ArrowLine(start: min, end: max, duration: duration)
+      return ArrowWithHandles(line)
     case .compose(let specs):
       // it seems natural to me for the chain to be listed from innermost to outermost (first-to-last)
       let arrows = specs.map({$0.compile()})
@@ -341,8 +413,8 @@ enum ArrowSyntax: Codable {
         composition = arrow
       }
       return composition!.withMergeDictsFromArrows(arrows)
-    case .osc(let oscName, let oscShape, let width):
-      let osc = BasicOscillator(shape: oscShape, width: width)
+    case .osc(let oscName, let oscShape, let widthArr):
+      let osc = BasicOscillator(shape: oscShape, widthArr: widthArr.compile())
       let arr = ArrowWithHandles(osc)
       arr.namedBasicOscs[oscName] = [osc]
       return arr
@@ -363,6 +435,32 @@ enum ArrowSyntax: Codable {
           innerArrs: lowerArrs
         )
       ).withMergeDictsFromArrows(lowerArrs)
+    case .crossfade(let arrows, let name, let mixPointArr):
+      let lowerArrs = arrows.map({$0.compile()})
+      let arr = ArrowCrossfade(
+        innerArrs: lowerArrs,
+        mixPointArr: mixPointArr.compile()
+      )
+      let arrH = ArrowWithHandles(arr).withMergeDictsFromArrows(lowerArrs)
+      if var crossfaders = arrH.namedCrossfaders[name] {
+        crossfaders.append(arr)
+      } else {
+        arrH.namedCrossfaders[name] = [arr]
+      }
+      return arrH
+    case .crossfadeEqPow(let arrows, let name, let mixPointArr):
+      let lowerArrs = arrows.map({$0.compile()})
+      let arr = ArrowEqualPowerCrossfade(
+        innerArrs: lowerArrs,
+        mixPointArr: mixPointArr.compile()
+      )
+      let arrH = ArrowWithHandles(arr).withMergeDictsFromArrows(lowerArrs)
+      if var crossfaders = arrH.namedCrossfadersEqPow[name] {
+        crossfaders.append(arr)
+      } else {
+        arrH.namedCrossfadersEqPow[name] = [arr]
+      }
+      return arrH
     case .const(let name, let val):
       let arr = ArrowConst(value: val) // separate copy, even if same name as a node elsewhere
       let handleArr = ArrowWithHandles(arr)
@@ -378,9 +476,9 @@ enum ArrowSyntax: Codable {
       let handleArr = ArrowWithHandles(arr)
       handleArr.namedConsts[name] = [arr]
       return handleArr
-    case .lowPassFilter(let lpArrow):
-      let cutoffArrow = lpArrow.cutoff.compile()
-      let resonanceArrow = lpArrow.resonance.compile()
+    case .lowPassFilter(let name, let cutoff, let resonance):
+      let cutoffArrow = cutoff.compile()
+      let resonanceArrow = resonance.compile()
       let arr = LowPassFilter2(
         cutoff: cutoffArrow,
         resonance: resonanceArrow
@@ -388,65 +486,43 @@ enum ArrowSyntax: Codable {
       let handleArr = ArrowWithHandles(arr)
         .withMergeDictsFromArrow(cutoffArrow)
         .withMergeDictsFromArrow(resonanceArrow)
-      if var filters = handleArr.namedLowPassFilter[lpArrow.name] {
+      if var filters = handleArr.namedLowPassFilter[name] {
         filters.append(arr)
       } else {
-        handleArr.namedLowPassFilter[lpArrow.name] = [arr]
+        handleArr.namedLowPassFilter[name] = [arr]
       }
       return handleArr
       
-    case .choruser(let choruserSpecs):
+    case .choruser(let name, let valueToChorus, let chorusCentRadius, let chorusNumVoices):
       let choruser = Choruser(
-        chorusCentRadius: choruserSpecs.chorusCentRadius,
-        chorusNumVoices: choruserSpecs.chorusNumVoices,
-        valueToChorus: choruserSpecs.valueToChorus
+        chorusCentRadius: chorusCentRadius,
+        chorusNumVoices: chorusNumVoices,
+        valueToChorus: valueToChorus
       )
       let handleArr = ArrowWithHandles(choruser)
-      if var chorusers = handleArr.namedChorusers[choruserSpecs.name] {
+      if var chorusers = handleArr.namedChorusers[name] {
         chorusers.append(choruser)
       } else {
-        handleArr.namedChorusers[choruserSpecs.name] = [choruser]
+        handleArr.namedChorusers[name] = [choruser]
       }
       return handleArr
     
-    case .envelope(let adsr):
+    case .envelope(let name, let attack, let decay, let sustain, let release, let scale):
       let env = ADSR(envelope: EnvelopeData(
-        attackTime: adsr.attack,
-        decayTime: adsr.decay,
-        sustainLevel: adsr.sustain,
-        releaseTime: adsr.release,
-        scale: adsr.scale
+        attackTime: attack,
+        decayTime: decay,
+        sustainLevel: sustain,
+        releaseTime: release,
+        scale: scale
       ))
       let handleArr = ArrowWithHandles(env.asControl())
-      if var envs = handleArr.namedADSREnvelopes[adsr.name] {
+      if var envs = handleArr.namedADSREnvelopes[name] {
         envs.append(env)
       } else {
-        handleArr.namedADSREnvelopes[adsr.name] = [env]
+        handleArr.namedADSREnvelopes[name] = [env]
       }
       return handleArr
 
     }
   }
-}
-
-struct LowPassArrowSyntax: Codable {
-  let name: String
-  let cutoff: ArrowSyntax
-  let resonance: ArrowSyntax
-}
-
-struct ADSRSyntax: Codable {
-  let name: String
-  let attack: CoreFloat
-  let decay: CoreFloat
-  let sustain: CoreFloat
-  let release: CoreFloat
-  let scale: CoreFloat
-}
-
-struct NamedChoruser: Codable {
-  let name: String
-  let valueToChorus: String
-  let chorusCentRadius: Int
-  let chorusNumVoices: Int
 }

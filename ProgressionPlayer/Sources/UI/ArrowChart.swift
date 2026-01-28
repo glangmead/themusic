@@ -44,7 +44,7 @@ struct ArrowChart: View {
 }
 
 #Preview {
-  let osc = ArrowSmoothStep(sampleFreq: 200)
+  let osc = NoiseSmoothStep(sampleFreq: 200)
   osc.innerArr = ArrowProd(innerArrs: [ArrowConst(value: 440), ArrowIdentity()])
   return ArrowChart(arrow: osc)
 }

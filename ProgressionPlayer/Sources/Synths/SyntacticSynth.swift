@@ -91,7 +91,7 @@ class SyntacticSynth: EngineAndVoicePool {
     poolVoice?.namedBasicOscs["osc3"]!.forEach { $0.shape = oscShape3 } }
   }
   var osc1Width: CoreFloat = 0 { didSet {
-    poolVoice?.namedBasicOscs["osc1"]!.forEach { $0.width = osc1Width } }
+    poolVoice?.namedBasicOscs["osc1"]!.forEach { $0.widthArr = ArrowConst(value: osc1Width) } }
   }
   var osc1ChorusCentRadius: CoreFloat = 0 { didSet {
     poolVoice?.namedChorusers["osc1Choruser"]!.forEach { $0.chorusCentRadius = Int(osc1ChorusCentRadius) } }
@@ -118,7 +118,7 @@ class SyntacticSynth: EngineAndVoicePool {
     poolVoice?.namedConsts["osc3Octave"]!.forEach { $0.val = osc3Octave } }
   }
   var osc2Width: CoreFloat = 0 { didSet {
-    poolVoice?.namedBasicOscs["osc2"]!.forEach { $0.width = osc2Width } }
+    poolVoice?.namedBasicOscs["osc2"]!.forEach { $0.widthArr = ArrowConst(value: osc2Width) } }
   }
   var osc2ChorusCentRadius: CoreFloat = 0 { didSet {
     poolVoice?.namedChorusers["osc2Choruser"]!.forEach { $0.chorusCentRadius = Int(osc2ChorusCentRadius) } }
@@ -127,7 +127,7 @@ class SyntacticSynth: EngineAndVoicePool {
     poolVoice?.namedChorusers["osc1Choruser"]!.forEach { $0.chorusNumVoices = Int(osc2ChorusNumVoices) } }
   }
   var osc3Width: CoreFloat = 0 { didSet {
-    poolVoice?.namedBasicOscs["osc3"]!.forEach { $0.width = osc3Width } }
+    poolVoice?.namedBasicOscs["osc3"]!.forEach { $0.widthArr = ArrowConst(value: osc3Width) } }
   }
   var osc3ChorusCentRadius: CoreFloat = 0 { didSet {
     poolVoice?.namedChorusers["osc3Choruser"]!.forEach { $0.chorusCentRadius = Int(osc3ChorusCentRadius) } }
@@ -257,9 +257,10 @@ class SyntacticSynth: EngineAndVoicePool {
     oscShape2 = poolVoice.namedBasicOscs["osc2"]!.first!.shape
     oscShape3 = poolVoice.namedBasicOscs["osc3"]!.first!.shape
 
-    osc1Width = poolVoice.namedBasicOscs["osc1"]!.first!.width
-    osc2Width = poolVoice.namedBasicOscs["osc2"]!.first!.width
-    osc3Width = poolVoice.namedBasicOscs["osc3"]!.first!.width
+    // dodgy now that pulse width is an arrow, but it seems polite to let the user edit it, in which case it will become constant
+    osc1Width = poolVoice.namedBasicOscs["osc1"]!.first!.widthArr.of(0)
+    osc2Width = poolVoice.namedBasicOscs["osc2"]!.first!.widthArr.of(0)
+    osc3Width = poolVoice.namedBasicOscs["osc3"]!.first!.widthArr.of(0)
 
     osc1Octave = poolVoice.namedConsts["osc1Octave"]!.first!.val
     osc2Octave = poolVoice.namedConsts["osc2Octave"]!.first!.val

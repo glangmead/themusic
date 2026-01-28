@@ -13,8 +13,9 @@ import AVFAudio
 // The client of MusicPattern would own concepts like beats and absolute time.
 // Our job here is to own an arrow that has generators in some of its slots, and then instantiate those.
 
-// a fully specified musical utterance to play at one point in time, a set of simultaneous noteOns
+// a musical utterance to play at one point in time, a set of simultaneous noteOns
 struct MusicEvent {
+  // could the PoolVoice wrapping these presets be sent in, and with modulation already provided?
   var presets: [Preset]
   let notes: [MidiNote]
   let sustain: CoreFloat // time between noteOn and noteOff in seconds
@@ -26,6 +27,7 @@ struct MusicEvent {
   private(set) var voice: PoolVoice? = nil
   
   mutating func play() async throws {
+    // wrap my designated presets (sound+FX generators) in a PoolVoice
     let noteHandlers = presets.map { EnvelopeHandlePlayer(arrow: $0.sound) }
     self.voice = PoolVoice(voices: noteHandlers)
     
