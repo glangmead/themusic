@@ -32,6 +32,9 @@ class SyntacticSynth: EngineAndVoicePool {
   var poolVoice: PoolVoice? = nil
   var reloadCount = 0
   let numVoices = 12
+  var name: String {
+    presets[0].name
+  }
   private var tones = [ArrowWithHandles]()
   private var presets = [Preset]()
   let cent: CoreFloat = 1.0005777895065548 // '2 ** (1/1200)' in python

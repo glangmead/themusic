@@ -37,6 +37,7 @@ struct PresetSyntax: Codable {
   func compile() -> Preset {
     let sound = arrow.compile()
     let preset = Preset(sound: sound)
+    preset.name = name
     preset.reverbPreset = AVAudioUnitReverbPreset(rawValue: Int(effects.reverbPreset)) ?? .mediumRoom
     preset.setReverbWetDryMix(effects.reverbWetDryMix)
     preset.setDelayTime(effects.delayTime)
@@ -55,6 +56,7 @@ struct PresetSyntax: Codable {
 
 @Observable
 class InstrumentWithAVAudioUnitEffects {
+  var name: String = ""
   var sound: ArrowWithHandles
   var positionLFO: Rose? = nil
   var timeOrigin: Double = 0
@@ -171,7 +173,7 @@ class InstrumentWithAVAudioUnitEffects {
   
   func setPosition(_ t: CoreFloat) {
     if t > 1 { // fixes some race on startup
-      if positionLFO != nil {
+      if positionLFO != nil && (mixerNode.engine?.isRunning ?? false) {
         if (t - lastTimeWeSetPosition) > setPositionMinWaitTimeSecs {
           lastTimeWeSetPosition = t
           let (x, y, z) = positionLFO!.of(t - 1)

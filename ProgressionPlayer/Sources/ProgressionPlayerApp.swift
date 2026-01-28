@@ -20,7 +20,7 @@ struct ProgressionPlayerApp: App {
       print("AppDelegate Debug - Error setting AVAudioSession category. Because of this, there may be no sound. \(error)")
     }
     let engine = SpatialAudioEngine()
-    let presetSpec = Bundle.main.decode(PresetSyntax.self, from: "saw1_preset.json")
+    let presetSpec = Bundle.main.decode(PresetSyntax.self, from: "saw1_preset.json", subdirectory: "presets")
     self.synth = SyntacticSynth(engine: engine, presetSpec: presetSpec)
     self.engine = engine
   }

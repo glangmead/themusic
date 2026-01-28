@@ -101,7 +101,7 @@ struct TheoryView: View {
           .buttonStyle(.borderedProminent)
         }
         .toolbar {
-          Button("Synth") {
+          Button("Edit") {
             #if targetEnvironment(macCatalyst)
             openWindow(id: "synth-window")
             #else
@@ -111,8 +111,12 @@ struct TheoryView: View {
           Button("Presets") {
             isShowingPresetList = true
           }
+          .popover(isPresented: $isShowingPresetList) {
+            PresetListView(isPresented: $isShowingPresetList)
+              .frame(minWidth: 300, minHeight: 400)
+          }
         }
-        .navigationTitle("⌘Scape")
+        .navigationTitle("\(synth.name)")
       }
       .focusable()
       .focused($isFocused)
@@ -132,9 +136,6 @@ struct TheoryView: View {
     }
     .sheet(isPresented: $isShowingSynth) {
       SyntacticSynthView(synth: synth)
-    }
-    .popover(isPresented: $isShowingPresetList) {
-      PresetListView(isPresented: $isShowingPresetList)
     }
   }
 

@@ -39,10 +39,10 @@ struct SongView: View {
           synth.poolVoice?.globalOffset = Int(noteOffset)
         }
       Text("\(seq?.sequencerTime ?? 0.0) (\(seq?.lengthinSeconds() ?? 0.0))")
-        .navigationTitle("⌘Scape")
+        .navigationTitle("\(synth.name)")
         .toolbar {
           ToolbarItem() {
-            Button("Synth") {
+            Button("Edit") {
               #if targetEnvironment(macCatalyst)
               openWindow(id: "synth-window")
               #else
@@ -53,6 +53,10 @@ struct SongView: View {
           ToolbarItem() {
             Button("Presets") {
               isShowingPresetList = true
+            }
+            .popover(isPresented: $isShowingPresetList) {
+              PresetListView(isPresented: $isShowingPresetList)
+                .frame(minWidth: 300, minHeight: 400)
             }
           }
           ToolbarItem() {
@@ -135,9 +139,6 @@ struct SongView: View {
     }
     .sheet(isPresented: $isShowingSynth) {
       SyntacticSynthView(synth: synth)
-    }
-    .popover(isPresented: $isShowingPresetList) {
-      PresetListView(isPresented: $isShowingPresetList)
     }
     .fullScreenCover(isPresented: $isShowingVisualizer) {
       ZStack(alignment: .topTrailing) {
