@@ -155,11 +155,11 @@ final class ArrowEqualPowerCrossfade: Arrow11 {
     // ensure mixPoint is between 0 and the number of arrows
     let mixPointLocal = clamp(mixPoint, min: 0, max: CoreFloat(innerArrsUnmanaged.count - 1))
     let arrow1 = innerArrsUnmanaged[Int(floor(mixPointLocal))]
-    let arrow2 = innerArrsUnmanaged[Int(ceil(mixPointLocal))]
+    let arrow2 = innerArrsUnmanaged[Int(floor(mixPointLocal) + 1)]
     let arrow1Weight = mixPointLocal - floor(mixPointLocal)
     
-    return sqrtPosNeg(arrow1Weight * arrow1._withUnsafeGuaranteedRef { $0.of(t) }) +
-    sqrtPosNeg((1.0 - arrow1Weight) * arrow2._withUnsafeGuaranteedRef { $0.of(t) })
+    return sqrtPosNeg((1.0 - arrow1Weight) * arrow1._withUnsafeGuaranteedRef { $0.of(t) }) +
+    sqrtPosNeg(arrow1Weight * arrow2._withUnsafeGuaranteedRef { $0.of(t) })
   }
 }
 

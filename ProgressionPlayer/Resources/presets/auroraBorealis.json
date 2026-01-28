@@ -36,7 +36,7 @@
                    }
                  ]}
                 },
-                { "osc": {"name": "osc1", "shape": "squareOsc", "width": { "noiseSmoothStep": {"noiseFreq": 1, "min": 0.2, "max": 0.8} }} },
+                { "osc": {"name": "osc1", "shape": "squareOsc", "width": { "noiseSmoothStep": {"noiseFreq": 1, "min": 0.4, "max": 1.6} }} },
                 { "choruser": { "name": "osc1Choruser", "valueToChorus": "freq", "chorusCentRadius": 0, "chorusNumVoices": 1 } }
               ]}}
            ]}
@@ -77,7 +77,7 @@
           },
           {
            "prod": { "of": [
-             { "const": {"val": 1.0, "name": "osc3Mix"} },
+             { "const": {"val": 0.125, "name": "osc3Mix"} },
              {
               "compose": { "arrows": [
                 {
