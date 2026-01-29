@@ -46,12 +46,16 @@ struct CycleSequence<C: Collection>: Sequence {
     self.cycledElements = cycledElements
   }
   
-  public func makeIterator() -> CycleIterator<C> {
-    return CycleIterator(cycling: cycledElements)
+  public func makeIterator() -> WraparoundIterator<C> {
+    return WraparoundIterator(cycling: cycledElements)
+  }
+  
+  public func makeShuffledIterator() -> CyclicShuffledIterator<C> {
+    return CyclicShuffledIterator(cycling: cycledElements)
   }
 }
 
-struct CycleIterator<C: Collection>: IteratorProtocol {
+struct WraparoundIterator<C: Collection>: IteratorProtocol {
   let cycledElements: C
   var cycledElementIterator: C.Iterator
   
@@ -70,8 +74,34 @@ struct CycleIterator<C: Collection>: IteratorProtocol {
   }
 }
 
+struct CyclicShuffledIterator<C: Collection>: IteratorProtocol {
+  var cycledElements: [C.Element]
+  var cycledElementIterator: [C.Element].Iterator
+  
+  init(cycling cycledElements: C) {
+    self.cycledElements = [C.Element](cycledElements)
+    self.cycledElementIterator = self.cycledElements.makeIterator()
+  }
+  
+  public mutating func next() -> C.Iterator.Element? {
+    if let next = cycledElementIterator.next() {
+      return next
+    } else {
+      self.cycledElements = cycledElements.shuffled()
+      self.cycledElementIterator = cycledElements.makeIterator()
+      return cycledElementIterator.next()
+    }
+  }
+}
+
 extension Collection {
   func cycle() -> CycleSequence<Self> {
     CycleSequence(self)
+  }
+  func cyclicIterator() -> WraparoundIterator<Self> {
+    cycle().makeIterator()
+  }
+  func shuffledIterator() -> CyclicShuffledIterator<Self> {
+    cycle().makeShuffledIterator()
   }
 }

@@ -106,7 +106,15 @@ struct SongView: View {
 //              "vibratoAmp": ArrowExponentialRandom(min: 2, max: 20),
 //              "vibratoFreq": ArrowProd(innerArrs: [ArrowConst(value: 25), Noise()])
             ],
-            notes: ScaleSampler().makeIterator(),
+            // a pitch consists of: root (NoteClass), Scale, octave, degree (element of Scale)
+            notes: MidiPitchAsChordGenerator(
+              pitchGenerator: MidiPitchGenerator(
+                scaleGenerator: [Scale.lydian].cyclicIterator(),
+                degreeGenerator: Array(0...6).shuffledIterator(),
+                rootNoteGenerator: [NoteClass.A].cyclicIterator(),
+                octaveGenerator: [2, 3, 4, 5].shuffledIterator()
+              )
+            ),
             sustains: FloatSampler(min: 5, max: 5),
             gaps: FloatSampler(min: 0.1, max: 0.5)
           )

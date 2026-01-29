@@ -81,6 +81,39 @@ struct ListSampler<Element>: Sequence, IteratorProtocol {
   }
 }
 
+// generate an exact MidiValue
+struct MidiPitchGenerator: Sequence, IteratorProtocol {
+  var scaleGenerator: any IteratorProtocol<Scale>
+  var degreeGenerator: any IteratorProtocol<Int>
+  var rootNoteGenerator: any IteratorProtocol<NoteClass>
+  var octaveGenerator: any IteratorProtocol<Int>
+  
+  mutating func next() -> MidiValue? {
+    // a scale is a collection of intervals
+    let scale = scaleGenerator.next()!
+    // a degree is a position within the scale
+    let degree = degreeGenerator.next()!
+    // from these two we can get a specific interval
+    let interval = scale.intervals[degree]
+
+    let root = rootNoteGenerator.next()!
+    let octave = octaveGenerator.next()!
+    // knowing the root class and octave gives us the root note of this scale
+    let note = Note(root.letter, accidental: root.accidental, octave: octave)
+    return MidiValue(note.shiftUp(interval)!.noteNumber)
+  }
+}
+
+// when velocity is not meaningful
+struct MidiPitchAsChordGenerator: Sequence, IteratorProtocol {
+  var pitchGenerator: MidiPitchGenerator
+  mutating func next() -> [MidiNote]? {
+    guard let pitch = pitchGenerator.next() else { return nil }
+    return [MidiNote(note: pitch, velocity: 127)]
+  }
+}
+
+// sample notes from a scale
 struct ScaleSampler: Sequence, IteratorProtocol {
   typealias Element = [MidiNote]
   var scale: Scale
