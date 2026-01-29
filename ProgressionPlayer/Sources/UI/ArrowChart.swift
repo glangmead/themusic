@@ -15,7 +15,7 @@ struct ArrowChart: View {
   }
   
   var arrow: Arrow11
-  @State private var numSamplesToPlot = 44100
+  @State private var numSamplesToPlot = 4410
   let sampleRate = 44100
   var ymin: Int = -1
   var ymax: Int = 1
@@ -47,7 +47,7 @@ struct ArrowChart: View {
 }
 
 #Preview {
-  let osc = NoiseSmoothStep(noiseFreq: 20, min: 0, max: 2)
+  let osc = NoiseSmoothStep(noiseFreq: 5, min: 0, max: 2)
   osc.innerArr = ArrowProd(innerArr: ArrowIdentity())
   return ArrowChart(arrow: osc, ymin: 0, ymax: 2)
 }

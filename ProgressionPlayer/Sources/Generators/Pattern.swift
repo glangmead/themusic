@@ -41,13 +41,18 @@ struct MusicEvent {
       }
     }
 
-    notes.forEach { voice?.noteOn($0) }
+    notes.forEach {
+      //print("pattern note on, ostensibly for \(sustain) seconds")
+      voice?.noteOn($0) }
     do {
       try await Task.sleep(for: .seconds(TimeInterval(sustain)))
     } catch {
       
     }
-    notes.forEach { voice?.noteOff($0) }
+    notes.forEach {
+      //print("pattern note off")
+      voice?.noteOff($0)
+    }
     if let cleanup = cleanup {
       await cleanup()
     }
@@ -62,6 +67,17 @@ struct MusicEvent {
     self.voice = nil
   }
 }
+
+struct ListSampler<Element>: Sequence, IteratorProtocol {
+  let items: [Element]
+  init(_ items: [Element]) {
+    self.items = items
+  }
+  func next() -> Element? {
+    items.randomElement()
+  }
+}
+
 struct ScaleSampler: Sequence, IteratorProtocol {
   typealias Element = [MidiNote]
   var scale: Scale
@@ -110,7 +126,6 @@ actor MusicPattern {
   var timeOrigin: Double
   
   private var presetPool = [Preset]()
-  private let voicesPerEvent = 3
   private let poolSize = 20
 
   deinit {
@@ -161,11 +176,11 @@ actor MusicPattern {
   }
   
   func next() async -> MusicEvent? {
-    guard let note = notes.next() else { return nil }
+    guard let notes = notes.next() else { return nil }
     guard let sustain = sustains.next() else { return nil }
     guard let gap = gaps.next() else { return nil }
     
-    let presets = leasePresets(count: voicesPerEvent)
+    let presets = leasePresets(count: notes.count)
     if presets.isEmpty {
       print("Warning: MusicPattern starved for voices")
       return nil 
@@ -173,7 +188,7 @@ actor MusicPattern {
     
     return MusicEvent(
       presets: presets,
-      notes: note,
+      notes: notes,
       sustain: sustain,
       gap: gap,
       modulators: modulators,

@@ -1,14 +1,15 @@
 {
  "name"   : "Aurora Borealis",
  "rose"   : {"freq": 0.25, "leafFactor": 2, "phase": 3.14, "amp": 4},
- "effects": {"reverbPreset": 1, "delayTime": 0, "delayLowPassCutoff": 100000, "delayFeedback": 0, "reverbWetDryMix": 100, "delayWetDryMix": 0},
+ "effects": {"reverbPreset": 1, "delayTime": 0, "delayLowPassCutoff": 100000, "delayFeedback": 0, "reverbWetDryMix": 0, "delayWetDryMix": 100},
  "arrow"  : {
   "compose": { "arrows": [
     {
      "prod": { "of": [
+       { "const": {"val": 1.0, "name": "overallAmp"}},
        {
         "crossfadeEqPow": { "name": "oscCrossfade", 
-          "mixPoint": { "compose": {"arrows": [{"identity": {}}, {"noiseSmoothStep": {"noiseFreq": 2, "min": 0, "max": 2}}]}}, 
+          "mixPoint": { "compose": {"arrows": [{"identity": {}}, {"noiseSmoothStep": {"noiseFreq": 0.5, "min": 0, "max": 2}}]}}, 
           "of": [
           {
            "prod": { "of": [
@@ -24,19 +25,21 @@
                     { "identity": {}}  
                    ]}},
                    { "prod": { "of": [
+                      { "const": {"name": "vibratoAmp", "val": 0}},
                       { "line": {"duration": 7, "min": 0, "max": 1} },
                       { "compose": { "arrows": [
                          { "prod": { "of": [
-                           { "const": {"val": 1, "name": "vibratoFreq"} },
+                           { "const": {"val": 2, "name": "vibratoFreq"} },
                            { "identity": {} }
                          ]}},
-                         { "osc": {"name": "vibratoOsc", "shape": "sineOsc", "width": { "const": {"name": "osc1VibWidth", "val": 1 } } } }
+                         { "osc": {"name": "vibratoOsc", "shape": "sineOsc", "width": { "const": {"name": "osc1VibWidth", "val": 1 } } } },
+                         {"control": {}}
                       ]}}
                     ]}
                    }
                  ]}
                 },
-                { "osc": {"name": "osc1", "shape": "squareOsc", "width": { "noiseSmoothStep": {"noiseFreq": 1, "min": 0.4, "max": 1.6} }} },
+                { "osc": {"name": "osc1", "shape": "squareOsc", "width": { "const": {"val": 1, "name": "osc1Width"} }} },
                 { "choruser": { "name": "osc1Choruser", "valueToChorus": "freq", "chorusCentRadius": 0, "chorusNumVoices": 1 } }
               ]}}
            ]}
@@ -57,13 +60,15 @@
                     ]}
                    },
                    { "prod": { "of": [
+                      { "const": {"name": "vibratoAmp", "val": 0}},
                       { "line": {"duration": 7, "min": 0, "max": 1} },
                        { "compose": { "arrows": [
                           { "prod": { "of": [
-                            { "const": {"val": 1, "name": "vibratoFreq"} },
+                            { "const": {"val": 2, "name": "vibratoFreq"} },
                             { "identity": {} }
                           ]}},
-                          { "osc": {"name": "vibratoOsc", "shape": "sineOsc", "width": { "const": {"name": "osc2VibWidth", "val": 1} }} }
+                          { "osc": {"name": "vibratoOsc", "shape": "sineOsc", "width": { "const": {"name": "osc2VibWidth", "val": 1} }} },
+                         {"control": {}}
                        ]}}
                      ]}
                     }
@@ -89,13 +94,15 @@
                      {"identity": {}} 
                    ]}},
                    { "prod": { "of": [
+                      { "const": {"name": "vibratoAmp", "val": 0}},
                       { "line": {"duration": 7, "min": 0, "max": 1} },
                        { "compose": { "arrows": [
                           { "prod": { "of": [
-                            { "const": {"val": 1, "name": "vibratoFreq"} },
+                            { "const": {"val": 2, "name": "vibratoFreq"} },
                             { "identity": {} }
                           ]}},
-                          { "osc": {"name": "vibratoOsc", "shape": "sineOsc", "width": { "const": {"name": "osc3VibWidth", "val": 1} }} }
+                          { "osc": {"name": "vibratoOsc", "shape": "sineOsc", "width": { "const": {"name": "osc3VibWidth", "val": 1} }} },
+                         {"control": {}}
                        ]}}
                      ]}
                     }
@@ -111,7 +118,7 @@
           }
         ]}
        },
-       { "envelope": { "decay": 2.5, "sustain": 0, "attack": 2.5, "name": "ampEnv", "release": 0.1, "scale": 1} }
+       { "envelope": { "decay": 2.5, "sustain": 0, "attack": 2.5, "name": "ampEnv", "release": 2.5, "scale": 1} }
       ]}
     },
     {
@@ -120,7 +127,7 @@
         {"sum": { "of": [
           { "const": {"name": "cutoffLow", "val": 50} },
           { "prod": { "of": [
-            { "const": {"name": "cutoff", "val": 5000} },
+            { "const": {"name": "cutoff", "val": 1200} },
             { "envelope": { "release": 0.1, "scale": 1, "name": "filterEnv", "attack": 0.1, "decay": 0.1, "sustain": 1 } }
           ]}}
        ]}},

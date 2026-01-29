@@ -6,8 +6,6 @@
 //
 
 import AVFAudio
-import Overture
-import SwiftUI
 
 typealias CoreFloat = Float
 
@@ -116,6 +114,24 @@ func clamp(_ val: CoreFloat, min: CoreFloat, max: CoreFloat) -> CoreFloat {
   return val
 }
 
+final class ArrowExponentialRandom: Arrow11 {
+  var min: CoreFloat
+  var max: CoreFloat
+  init(min: CoreFloat, max: CoreFloat) {
+    let neg = min < 0 || max < 0
+    self.min = neg ? clamp(min, min: min, max: -0.001) : clamp(min, min: 0.001, max: min)
+    self.max = neg ? clamp(max, min: max, max: -0.001) : clamp(max, min: 0.001, max: max)
+    super.init()
+  }
+  override func of(_ t: CoreFloat) -> CoreFloat {
+    min * exp(log(max / min) * CoreFloat.random(in: 0...1))
+  }
+}
+
+func sqrtPosNeg(_ val: CoreFloat) -> CoreFloat {
+  val >= 0 ? sqrt(val) : -sqrt(-val)
+}
+
 // Mix two of the arrows in a list, viewing the mixPoint as a point somewhere between two of the arrows
 // Compare to Supercollider's `Select`
 final class ArrowCrossfade: Arrow11 {
@@ -129,16 +145,12 @@ final class ArrowCrossfade: Arrow11 {
     // ensure mixPoint is between 0 and the number of arrows
     let mixPointLocal = clamp(mixPoint, min: 0, max: CoreFloat(innerArrsUnmanaged.count - 1))
     let arrow1 = innerArrsUnmanaged[Int(floor(mixPointLocal))]
-    let arrow2 = innerArrsUnmanaged[Int(ceil(mixPointLocal))]
+    let arrow2 = innerArrsUnmanaged[min(innerArrsUnmanaged.count - 1, Int(floor(mixPointLocal) + 1))]
     let arrow1Weight = mixPointLocal - floor(mixPointLocal)
     
-    return (arrow1Weight * arrow1._withUnsafeGuaranteedRef { $0.of(t) }) +
-      ((1.0 - arrow1Weight) * arrow2._withUnsafeGuaranteedRef { $0.of(t) })
+    return ((1.0 - arrow1Weight) * arrow1._withUnsafeGuaranteedRef { $0.of(t) }) +
+      (arrow1Weight * arrow2._withUnsafeGuaranteedRef { $0.of(t) })
   }
-}
-
-func sqrtPosNeg(_ val: CoreFloat) -> CoreFloat {
-  val >= 0 ? sqrt(val) : -sqrt(-val)
 }
 
 // Mix two of the arrows in a list, viewing the mixPoint as a point somewhere between two of the arrows
@@ -155,11 +167,24 @@ final class ArrowEqualPowerCrossfade: Arrow11 {
     // ensure mixPoint is between 0 and the number of arrows
     let mixPointLocal = clamp(mixPoint, min: 0, max: CoreFloat(innerArrsUnmanaged.count - 1))
     let arrow1 = innerArrsUnmanaged[Int(floor(mixPointLocal))]
-    let arrow2 = innerArrsUnmanaged[Int(floor(mixPointLocal) + 1)]
+    let arrow2 = innerArrsUnmanaged[min(innerArrsUnmanaged.count - 1, Int(floor(mixPointLocal) + 1))]
     let arrow1Weight = mixPointLocal - floor(mixPointLocal)
     
     return sqrtPosNeg((1.0 - arrow1Weight) * arrow1._withUnsafeGuaranteedRef { $0.of(t) }) +
     sqrtPosNeg(arrow1Weight * arrow2._withUnsafeGuaranteedRef { $0.of(t) })
+  }
+}
+
+final class ArrowRandom: Arrow11 {
+  var min: CoreFloat
+  var max: CoreFloat
+  init(min: CoreFloat, max: CoreFloat) {
+    self.min = min
+    self.max = max
+    super.init()
+  }
+  override func of(_ t: CoreFloat) -> CoreFloat {
+    CoreFloat.random(in: min...max)
   }
 }
 

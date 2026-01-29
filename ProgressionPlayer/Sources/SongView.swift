@@ -22,7 +22,7 @@ struct SongView: View {
   @State private var musicPattern: MusicPattern? = nil
   @State private var patternPlaybackHandle: Task<Void, Error>? = nil
   @State private var isShowingPresetList = false
-
+  
   var body: some View {
     NavigationStack {
       if songURL != nil {
@@ -101,13 +101,13 @@ struct SongView: View {
             presetSpec: synth.presetSpec,
             engine: synth.engine,
             modulators: [
-              "vibratoAmp": ArrowLine(start: 0, end: 1, duration: 7),
-              "osc2Mix": ArrowConst(value: 0),
-              "osc3Mix": ArrowConst(value: 0),
+              "overallAmp": ArrowExponentialRandom(min: 0.0011, max: 0.77),
+//              "vibratoAmp": ArrowExponentialRandom(min: 2, max: 20),
+//              "vibratoFreq": ArrowProd(innerArrs: [ArrowConst(value: 25), Noise()])
             ],
             notes: ScaleSampler().makeIterator(),
-            sustains: FloatSampler(min: 4, max: 5),
-            gaps: FloatSampler(min: 1, max: 2)
+            sustains: FloatSampler(min: 5, max: 5),
+            gaps: FloatSampler(min: 0.1, max: 0.5)
           )
           patternPlaybackHandle = Task.detached {
             await musicPattern?.play()

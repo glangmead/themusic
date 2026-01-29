@@ -62,10 +62,9 @@ final class NoiseSmoothStep: Arrow11 {
   var noiseFreq: CoreFloat
   var min: CoreFloat
   var max: CoreFloat
-  
-  // for measuring the sample rate, which we need to interpret noiseFreq
-  private var previousTime: CoreFloat = 0
-  private var audioDeltaTime: CoreFloat = 0
+
+  // TODO: we need to know the sample rate here, and that should not be hardcoded
+  private var audioDeltaTime: CoreFloat = 1.0 / 44100.0
   // for emitting new noise samples
   private var lastNoiseTime: CoreFloat
   private var nextNoiseTime: CoreFloat
@@ -86,25 +85,24 @@ final class NoiseSmoothStep: Arrow11 {
     lastNoiseTime = 0
     noiseDeltaTime = 1.0 / noiseFreq
     nextNoiseTime = noiseDeltaTime
+    noiseDeltaTime -= fmod(noiseDeltaTime, audioDeltaTime)
+    numAudioSamplesPerNoise = Int(noiseDeltaTime/audioDeltaTime)
     super.init()
   }
   
   override func of(_ t: CoreFloat) -> CoreFloat {
-    // compute the actual time between samples
-    if previousTime == 0 {
-      previousTime = t
-      return lastSample
-    } else if audioDeltaTime == 0 {
-      audioDeltaTime = t - previousTime
-      // update noiseDeltaTime so that it is an integer multiple of audioDeltaTime
-      noiseDeltaTime -= fmod(noiseDeltaTime, audioDeltaTime)
-      numAudioSamplesPerNoise = Int(noiseDeltaTime/audioDeltaTime)
-      return lastSample
+    // catch up if there has been a time gap
+    if t > nextNoiseTime + audioDeltaTime {
+      lastNoiseTime = t
+      nextNoiseTime = lastNoiseTime + noiseDeltaTime
+      lastSample = CoreFloat.random(in: min...max)
+      nextSample = CoreFloat.random(in: min...max)
+      numAudioSamplesThisSegment = 0
     }
     
     // we roll to the next sample by counting audio samples
     // we chose an integer that's close to achieving the requested noiseFreq
-    if numAudioSamplesThisSegment == numAudioSamplesPerNoise - 1 {
+    if numAudioSamplesThisSegment >= numAudioSamplesPerNoise - 1 {
       numAudioSamplesThisSegment = 0
       lastSample = nextSample
       nextSample = CoreFloat.random(in: min...max)
@@ -113,7 +111,7 @@ final class NoiseSmoothStep: Arrow11 {
     }
 
     // generate smoothstep for x between 0 and 1, y between 0 and 1
-    let betweenTime = (t - lastNoiseTime) / noiseDeltaTime
+    let betweenTime = 1.0 - ((nextNoiseTime - t) / noiseDeltaTime)
     let zeroOneSmooth = betweenTime * betweenTime * (3 - 2 * betweenTime)
     let result = lastSample + (zeroOneSmooth * (nextSample - lastSample))
     
@@ -401,6 +399,8 @@ enum ArrowSyntax: Codable {
   indirect case envelope(name: String, attack: CoreFloat, decay: CoreFloat, sustain: CoreFloat, release: CoreFloat, scale: CoreFloat)
   case choruser(name: String, valueToChorus: String, chorusCentRadius: Int, chorusNumVoices: Int)
   case noiseSmoothStep(noiseFreq: CoreFloat, min: CoreFloat, max: CoreFloat)
+  case rand(min: CoreFloat, max: CoreFloat)
+  case exponentialRand(min: CoreFloat, max: CoreFloat)
   case line(duration: CoreFloat, min: CoreFloat, max: CoreFloat)
   
   indirect case osc(name: String, shape: BasicOscillator.OscShape, width: ArrowSyntax)
@@ -408,6 +408,12 @@ enum ArrowSyntax: Codable {
   // see https://www.compilenrun.com/docs/language/swift/swift-enumerations/swift-recursive-enumerations/
   func compile() -> ArrowWithHandles {
     switch self {
+    case .rand(let min, let max):
+      let rand = ArrowRandom(min: min, max: max)
+      return ArrowWithHandles(rand)
+    case .exponentialRand(let min, let max):
+      let expRand = ArrowExponentialRandom(min: min, max: max)
+      return ArrowWithHandles(expRand)
     case .noiseSmoothStep(let noiseFreq, let min, let max):
       let noise = NoiseSmoothStep(noiseFreq: noiseFreq, min: min, max: max)
       return ArrowWithHandles(noise)
@@ -541,7 +547,7 @@ enum ArrowSyntax: Codable {
 }
 
 #Preview {
-  let osc = NoiseSmoothStep(noiseFreq: 10, min: 0, max: 2)
-  osc.innerArr = ArrowProd(innerArr: ArrowIdentity())
+  let osc = NoiseSmoothStep(noiseFreq: 2, min: 0, max: 2)
+  osc.innerArr = ArrowIdentity()
   return ArrowChart(arrow: osc, ymin: 0, ymax: 2)
 }
