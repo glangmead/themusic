@@ -102,6 +102,7 @@ struct SongView: View {
             engine: synth.engine,
             modulators: [
               "overallAmp": ArrowExponentialRandom(min: 0.0011, max: 0.77),
+              "overallCentDetune": ArrowRandom(min: -5, max: 5),
 //              "vibratoAmp": ArrowExponentialRandom(min: 2, max: 20),
 //              "vibratoFreq": ArrowProd(innerArrs: [ArrowConst(value: 25), Noise()])
             ],

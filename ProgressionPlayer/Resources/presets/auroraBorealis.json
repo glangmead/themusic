@@ -22,6 +22,7 @@
                     { "const": {"name": "freq", "val": 300} }, 
                     { "constOctave": {"name": "osc1Octave", "val": 0} },
                     { "constCent": {"name": "osc1CentDetune", "val": 0} },
+                    { "constCent": {"name": "overallCentDetune", "val": 0} },
                     { "identity": {}}  
                    ]}},
                    { "prod": { "of": [
@@ -56,6 +57,7 @@
                      { "const": {"name": "freq", "val": 300} }, 
                      { "constOctave": {"name": "osc2Octave", "val": 0} },
                      { "constCent": {"name": "osc2CentDetune", "val": 0} },
+                    { "constCent": {"name": "overallCentDetune", "val": 0} },
                      {"identity": {}}
                     ]}
                    },
@@ -91,6 +93,7 @@
                      { "const": {"name": "freq", "val": 300} }, 
                      { "constOctave": {"name": "osc3Octave", "val": 0} },
                      { "constCent": {"name": "osc3CentDetune", "val": 0} },
+                    { "constCent": {"name": "overallCentDetune", "val": 0} },
                      {"identity": {}} 
                    ]}},
                    { "prod": { "of": [

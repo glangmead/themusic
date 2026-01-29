@@ -64,7 +64,7 @@ class InstrumentWithAVAudioUnitEffects {
   private var positionTask: Task<(), Error>?
   
   private var sourceNode: AVAudioSourceNode? = nil
-  private var playerNode: AVAudioPlayerNode? = nil//AVAudioPlayerNode()
+  private var playerNode: AVAudioPlayerNode? = nil
   
   // members whose params we can expose
   private var reverbNode: AVAudioUnitReverb?

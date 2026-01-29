@@ -39,6 +39,9 @@ struct MusicEvent {
           arrowConst.val = modulatingArrow.of(now)
         }
       }
+      for preset in presets {
+        preset.positionLFO?.phase = CoreFloat.random(in: 0...(2.0 * .pi))
+      }
     }
 
     notes.forEach {
@@ -126,7 +129,7 @@ actor MusicPattern {
   var timeOrigin: Double
   
   private var presetPool = [Preset]()
-  private let poolSize = 20
+  private let poolSize = 40
 
   deinit {
     for preset in presetPool {
