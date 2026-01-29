@@ -159,21 +159,15 @@ class InstrumentWithAVAudioUnitEffects {
     self.delayNode?.delayTime = 0
     self.reverbNode?.wetDryMix = 0
     self.timeOrigin = Date.now.timeIntervalSince1970
-    self.positionTask = Task.detached(priority: .medium) {
-      repeat {
-        do {
-          try await Task.sleep(for: .seconds(0.01))
-          self.setPosition(CoreFloat(Date.now.timeIntervalSince1970 - self.timeOrigin))
-        } catch {
-          break
-        }
-      } while !Task.isCancelled
-    }
+  }
+
+  deinit {
+    positionTask?.cancel()
   }
   
   func setPosition(_ t: CoreFloat) {
     if t > 1 { // fixes some race on startup
-      if positionLFO != nil && (mixerNode.engine?.isRunning ?? false) {
+      if positionLFO != nil {
         if (t - lastTimeWeSetPosition) > setPositionMinWaitTimeSecs {
           lastTimeWeSetPosition = t
           let (x, y, z) = positionLFO!.of(t - 1)
@@ -206,6 +200,29 @@ class InstrumentWithAVAudioUnitEffects {
     for i in 0..<nodes.count-1 {
       engine.connect(nodes[i], to: nodes[i+1], format: nil) // having mono when the "to:" is reverb failed on my iPhone
     }
+
+    positionTask?.cancel()
+    positionTask = Task.detached(priority: .medium) { [weak self] in
+      while let self = self, !Task.isCancelled {
+        // If we are detached, kill the task
+        guard let engine = self.mixerNode.engine else {
+          break
+        }
+
+        if engine.isRunning {
+          do {
+            try await Task.sleep(for: .seconds(0.01))
+            self.setPosition(CoreFloat(Date.now.timeIntervalSince1970 - self.timeOrigin))
+          } catch {
+            break
+          }
+        } else {
+          // Engine attached but not running (starting up or paused).
+          try? await Task.sleep(for: .seconds(0.2))
+        }
+      }
+    }
+
     return mixerNode
   }
   
