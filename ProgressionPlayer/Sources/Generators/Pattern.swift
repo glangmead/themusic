@@ -9,9 +9,22 @@ import Foundation
 import Tonic
 import AVFAudio
 
-// This layer doesn't know about synths or sequencers, only the Sequence protocol and Arrow* classes.
-// The client of MusicPattern would own concepts like beats and absolute time.
-// Our job here is to own an arrow that has generators in some of its slots, and then instantiate those.
+// an arrow that has an additional value and a closure that can make use of it when called with a time
+final class EventUsingArrow: Arrow11 {
+  var event: MusicEvent? = nil
+  var ofEvent: (_ event: MusicEvent, _ t: CoreFloat) -> CoreFloat
+  
+  init(ofEvent: @escaping (_: MusicEvent, _: CoreFloat) -> CoreFloat) {
+    self.ofEvent = ofEvent
+    super.init()
+  }
+  
+  override func of(_ t: CoreFloat) -> CoreFloat {
+    ofEvent(event!, inner(t))
+  }
+}
+
+// (MusicEvent) -> CoreFloat given by 1.0 / (1.0 + CoreFloat($0.notes[0].noteValue))
 
 // a musical utterance to play at one point in time, a set of simultaneous noteOns
 struct MusicEvent {
@@ -36,6 +49,9 @@ struct MusicEvent {
     for (key, modulatingArrow) in modulators {
       if voice!.namedConsts[key] != nil {
         for arrowConst in voice!.namedConsts[key]! {
+          if let eventUsingArrow = modulatingArrow as? EventUsingArrow {
+            eventUsingArrow.event = self
+          }
           arrowConst.val = modulatingArrow.of(now)
         }
       }
@@ -78,6 +94,38 @@ struct ListSampler<Element>: Sequence, IteratorProtocol {
   }
   func next() -> Element? {
     items.randomElement()
+  }
+}
+
+// A class that uses an arrow to tell it how long to wait before calling next() on an iterator
+// While waiting to call next() on the internal iterator, it returns the most recent value repeatedly.
+class WaitingIterator<Element>: Sequence, IteratorProtocol {
+  // state
+  var savedTime: TimeInterval
+  var timeBetweenChanges: Arrow11
+  var mostRecentElement: Element?
+  var neverCalled = true
+  // underlying iterator
+  var timeIndependentIterator: any IteratorProtocol<Element>
+  
+  init(iterator: any IteratorProtocol<Element>, timeBetweenChanges: Arrow11) {
+    self.timeIndependentIterator = iterator
+    self.timeBetweenChanges = timeBetweenChanges
+    self.savedTime = Date.now.timeIntervalSince1970
+    mostRecentElement = nil
+  }
+  
+  func next() -> Element? {
+    let now = Date.now.timeIntervalSince1970
+    let timeElapsed = CoreFloat(now - savedTime)
+    // yeah the arrow tells us how long to wait, given what time it is
+    if timeElapsed > timeBetweenChanges.of(timeElapsed) || neverCalled {
+      mostRecentElement = timeIndependentIterator.next()
+      savedTime = now
+      neverCalled = false
+      print("WaitingIterator emitting next(): \(String(describing: mostRecentElement))")
+    }
+    return mostRecentElement
   }
 }
 

@@ -74,6 +74,17 @@ struct WraparoundIterator<C: Collection>: IteratorProtocol {
   }
 }
 
+struct RandomIterator<C: Collection>: IteratorProtocol {
+  typealias Element = C.Element
+  let collection: C
+  init(of collection: C) {
+    self.collection = collection
+  }
+  mutating func next() -> C.Element? {
+    collection.randomElement()
+  }
+}
+
 struct CyclicShuffledIterator<C: Collection>: IteratorProtocol {
   var cycledElements: [C.Element]
   var cycledElementIterator: [C.Element].Iterator
@@ -103,5 +114,8 @@ extension Collection {
   }
   func shuffledIterator() -> CyclicShuffledIterator<Self> {
     cycle().makeShuffledIterator()
+  }
+  func randomIterator() -> RandomIterator<Self> {
+    RandomIterator(of: self)
   }
 }

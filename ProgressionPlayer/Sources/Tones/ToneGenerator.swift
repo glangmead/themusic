@@ -116,7 +116,6 @@ final class NoiseSmoothStep: Arrow11 {
     let result = lastSample + (zeroOneSmooth * (nextSample - lastSample))
     
     numAudioSamplesThisSegment += 1
-    
     return result
   }
 }
@@ -325,7 +324,20 @@ final class LowPassFilter2: Arrow11 {
       + (b2 * previousInner2)
       - (a1 * previousOutput1)
       - (a2 * previousOutput2)
+    
+    if output > (Float.greatestFiniteMagnitude / 2.0) || output < (-Float.greatestFiniteMagnitude / 2.0) {
+      self.previousTime = 0
+      self.previousInner1 = 0
+      self.previousInner2 = 0
+      self.previousOutput1 = 0
+      self.previousOutput2 = 0
+      return 0
+    }
 
+    if output.isNaN || output.isInfinite {
+      print("nan baby: \(a0), \(a1), \(a2), \(b0), \(b1), \(b2)")
+      print("nan baby: \(inner), \(previousOutput1), \(previousOutput2), \(previousInner1), \(previousInner2)")
+    }
     // shift the data
     previousTime = t
     previousInner2 = previousInner1

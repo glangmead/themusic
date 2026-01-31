@@ -170,8 +170,9 @@ final class ArrowEqualPowerCrossfade: Arrow11 {
     let arrow2 = innerArrsUnmanaged[min(innerArrsUnmanaged.count - 1, Int(floor(mixPointLocal) + 1))]
     let arrow1Weight = mixPointLocal - floor(mixPointLocal)
     
-    return sqrtPosNeg((1.0 - arrow1Weight) * arrow1._withUnsafeGuaranteedRef { $0.of(t) }) +
+    let sample = sqrtPosNeg((1.0 - arrow1Weight) * arrow1._withUnsafeGuaranteedRef { $0.of(t) }) +
     sqrtPosNeg(arrow1Weight * arrow2._withUnsafeGuaranteedRef { $0.of(t) })
+    return sample
   }
 }
 
@@ -279,3 +280,4 @@ final class ArrowConstCent: Arrow11, ValHaver, Equatable {
     lhs.val == rhs.val
   }
 }
+
