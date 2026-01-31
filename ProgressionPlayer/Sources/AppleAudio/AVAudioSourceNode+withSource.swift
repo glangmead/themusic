@@ -31,7 +31,7 @@ extension AVAudioSourceNode {
       for frameDelta in 0..<Int(frameCount) {
         let time = (CoreFloat(framePos) + CoreFloat(frameDelta)) / CoreFloat(sampleRate)
         let sample = Double(
-          source.of(time + 60000)
+          source.of(time)
         )
         //print("\(time): \(sample)")
 

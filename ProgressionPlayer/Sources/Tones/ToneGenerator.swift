@@ -295,6 +295,10 @@ final class LowPassFilter2: Arrow11 {
     super.init()
   }
   override func of(_ t: CoreFloat) -> CoreFloat {
+    if self.previousTime == 0 {
+      self.previousTime = t
+      return 0
+    }
     let inner = inner(t)
 
     let dt = t - previousTime
