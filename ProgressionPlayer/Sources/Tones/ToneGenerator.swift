@@ -301,15 +301,16 @@ final class LowPassFilter2: Arrow11 {
     if (dt <= 1.0e-9) {
       return self.previousOutput1; // Return last output
     }
-    
-    var w0 = 2 * .pi * cutoff.of(t) * dt // cutoff freq over sample freq
+    let cutoff = min(0.5 / dt, cutoff.of(t))
+    var w0 = 2 * .pi * cutoff * dt // cutoff freq over sample freq
     if w0 > .pi - 0.01 { // if dt is very large relative to frequency
       w0 = .pi - 0.01
     }
     let cosw0 = cos(w0)
     let sinw0 = sin(w0)
     // resonance (Q factor). 0.707 is maximally flat (Butterworth). > 0.707 adds a peak.
-    let alpha = sinw0 / (2.0 * max(0.001, resonance.of(t)))
+    let resonance = resonance.of(t)
+    let alpha = sinw0 / (2.0 * max(0.001, resonance))
     
     let a0 = 1.0 + alpha
     let a1 = (-2.0 * cosw0) / a0
@@ -325,25 +326,13 @@ final class LowPassFilter2: Arrow11 {
       - (a1 * previousOutput1)
       - (a2 * previousOutput2)
     
-    if output > (Float.greatestFiniteMagnitude / 2.0) || output < (-Float.greatestFiniteMagnitude / 2.0) {
-      self.previousTime = 0
-      self.previousInner1 = 0
-      self.previousInner2 = 0
-      self.previousOutput1 = 0
-      self.previousOutput2 = 0
-      return 0
-    }
-
-    if output.isNaN || output.isInfinite {
-      print("nan baby: \(a0), \(a1), \(a2), \(b0), \(b1), \(b2)")
-      print("nan baby: \(inner), \(previousOutput1), \(previousOutput2), \(previousInner1), \(previousInner2)")
-    }
     // shift the data
     previousTime = t
     previousInner2 = previousInner1
     previousInner1 = inner
     previousOutput2 = previousOutput1
     previousOutput1 = output
+    //print("\(output)")
     return output
   }
 }

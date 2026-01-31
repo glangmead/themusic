@@ -189,6 +189,22 @@ final class ArrowRandom: Arrow11 {
   }
 }
 
+final class ArrowImpulse: Arrow11 {
+  var fireTime: CoreFloat
+  var hasFired = false
+  init(fireTime: CoreFloat) {
+    self.fireTime = fireTime
+    super.init()
+  }
+  override func of(_ t: CoreFloat) -> CoreFloat {
+    if !hasFired && t >= fireTime {
+      hasFired = true
+      return 1.0
+    }
+    return 0.0
+  }
+}
+
 final class ArrowLine: Arrow11 {
   var start: CoreFloat = 0
   var end: CoreFloat = 1
