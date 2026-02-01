@@ -15,29 +15,31 @@ protocol WidthHaver {
 
 final class Sine: Arrow11, WidthHaver {
   private var scratch = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
+  private var widthOutputs = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
   var widthArr: Arrow11 = ArrowConst(value: 1.0)
 
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
-    //widthArr.process(inputs: inputs, outputs: &widthOutputs)
+    widthArr.process(inputs: inputs, outputs: &widthOutputs)
     (innerArr ?? ArrowIdentity()).process(inputs: inputs, outputs: &scratch)
     
     vDSP.multiply(2 * .pi, scratch[0..<inputs.count], result: &scratch[0..<inputs.count])
     
-    //vDSP.divide(outputs, widthOutputs, result: &outputs)
+    vDSP.divide(outputs[0..<inputs.count], widthOutputs[0..<inputs.count], result: &outputs[0..<inputs.count])
     // zero out some of the inners, to the right of the width cutoff
-    //for i in 0..<inputs.count {
-    //  if fmod(outputs[i], 1) > widthOutputs[i] {
-    //    outputs[i] = 0
-    //  }
-    //}
+    for i in 0..<inputs.count {
+      if fmod(outputs[i], 1) > widthOutputs[i] {
+        outputs[i] = 0
+      }
+    }
     
     // Slice scratch for vForce.sin to match outputs size
-    vForce.sin(scratch[0..<inputs.count], result: &outputs)
+    vForce.sin(scratch[0..<inputs.count], result: &outputs[0..<inputs.count])
   }
 }
 
 final class Triangle: Arrow11, WidthHaver {
   private var widthOutputs = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
+  private var scratch = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
   var widthArr: Arrow11 = ArrowConst(value: 1.0)
 //  func of(_ t: CoreFloat) -> CoreFloat {
 //    let width = widthArr.of(t)
@@ -49,17 +51,39 @@ final class Triangle: Arrow11, WidthHaver {
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
     widthArr.process(inputs: inputs, outputs: &widthOutputs)
     (innerArr ?? ArrowIdentity()).process(inputs: inputs, outputs: &outputs)
+    
+    let count = vDSP_Length(inputs.count)
+    outputs.withUnsafeMutableBufferPointer { outputsPtr in
+      widthOutputs.withUnsafeBufferPointer { widthPtr in
+        scratch.withUnsafeMutableBufferPointer { scratchPtr in
+          guard let outBase = outputsPtr.baseAddress,
+                let widthBase = widthPtr.baseAddress,
+                let scratchBase = scratchPtr.baseAddress else { return }
+          
+          // outputs = frac(outputs)
+          vDSP_vfracD(outBase, 1, outBase, 1, count)
+          
+          // scratch = outputs / width (normalized phase)
+          vDSP_vdivD(widthBase, 1, outBase, 1, scratchBase, 1, count)
+        }
+      }
+    }
+    
     for i in 0..<inputs.count {
-      let modResult = fmod(outputs[i], 1)
-      let width = widthOutputs[i]
-      outputs[i] = (modResult < width/2) ? (4 * modResult / width) - 1:
-      (modResult < width) ? (-4 * modResult / width) + 3 : 0
+      let normalized = scratch[i]
+      if normalized < 1.0 {
+        // Triangle wave: 1 - 4 * abs(normalized - 0.5)
+        outputs[i] = 1.0 - 4.0 * abs(normalized - 0.5)
+      } else {
+        outputs[i] = 0
+      }
     }
   }
 }
 
 final class Sawtooth: Arrow11, WidthHaver {
   private var widthOutputs = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
+  private var scratch = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
   var widthArr: Arrow11 = ArrowConst(value: 1.0)
 //  func of(_ t: CoreFloat) -> CoreFloat {
 //    let width = widthArr.of(t)
@@ -70,10 +94,38 @@ final class Sawtooth: Arrow11, WidthHaver {
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
     widthArr.process(inputs: inputs, outputs: &widthOutputs)
     (innerArr ?? ArrowIdentity()).process(inputs: inputs, outputs: &outputs)
+    
+    let count = vDSP_Length(inputs.count)
+    outputs.withUnsafeMutableBufferPointer { outputsPtr in
+      widthOutputs.withUnsafeBufferPointer { widthPtr in
+        scratch.withUnsafeMutableBufferPointer { scratchPtr in
+          guard let outBase = outputsPtr.baseAddress,
+                let widthBase = widthPtr.baseAddress,
+                let scratchBase = scratchPtr.baseAddress else { return }
+          
+          // outputs = frac(outputs)
+          vDSP_vfracD(outBase, 1, outBase, 1, count)
+          
+          // scratch = 2 * outputs
+          var two: Double = 2.0
+          vDSP_vsmulD(outBase, 1, &two, scratchBase, 1, count)
+          
+          // scratch = scratch / width
+          vDSP_vdivD(widthBase, 1, scratchBase, 1, scratchBase, 1, count)
+          
+          // scratch = scratch - 1
+          var minusOne: Double = -1.0
+          vDSP_vsaddD(scratchBase, 1, &minusOne, scratchBase, 1, count)
+        }
+      }
+    }
+    
     for i in 0..<inputs.count {
-      let modResult = fmod(outputs[i], 1)
-      let width = widthOutputs[i]
-      outputs[i] = (modResult < width) ? (2 * modResult / width) - 1 : 0
+      if outputs[i] < widthOutputs[i] {
+        outputs[i] = scratch[i]
+      } else {
+        outputs[i] = 0
+      }
     }
   }
 }
@@ -88,10 +140,24 @@ final class Square: Arrow11, WidthHaver {
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
     widthArr.process(inputs: inputs, outputs: &widthOutputs)
     (innerArr ?? ArrowIdentity()).process(inputs: inputs, outputs: &outputs)
+    
+    let count = vDSP_Length(inputs.count)
+    outputs.withUnsafeMutableBufferPointer { outputsPtr in
+      widthOutputs.withUnsafeMutableBufferPointer { widthPtr in
+        guard let outBase = outputsPtr.baseAddress,
+              let widthBase = widthPtr.baseAddress else { return }
+        
+        // outputs = frac(outputs)
+        vDSP_vfracD(outBase, 1, outBase, 1, count)
+        
+        // width = width * 0.5
+        var half: Double = 0.5
+        vDSP_vsmulD(widthBase, 1, &half, widthBase, 1, count)
+      }
+    }
+    
     for i in 0..<inputs.count {
-      let modResult = fmod(outputs[i], 1)
-      let width = widthOutputs[i]
-      outputs[i] = modResult <= width/2 ? 1.0 : -1.0
+      outputs[i] = outputs[i] <= widthOutputs[i] ? 1.0 : -1.0
     }
   }
 }
