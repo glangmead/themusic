@@ -55,9 +55,11 @@ class Arrow11 {
   }
 
   // old single-time behavior, wrapping the vector version
-  func of (_ t: CoreFloat) -> CoreFloat {
-    var result: [CoreFloat] = [0]
-    process(inputs: [t], outputs: &result)
+  func of(_ t: CoreFloat) -> CoreFloat {
+    var input = [CoreFloat](repeating: 0, count: 512)
+    input[0] = t
+    var result = [CoreFloat](repeating: 0, count: 512)
+    process(inputs: input, outputs: &result)
     return result[0]
   }
 
@@ -198,17 +200,7 @@ final class ArrowCrossfade: Arrow11 {
     arrowOuts = [[CoreFloat]](repeating: [CoreFloat](repeating: 0, count: 512), count: innerArrs.count)
     super.init(innerArrs: innerArrs)
   }
-//  func of(_ t: CoreFloat) -> CoreFloat {
-//    let mixPoint = mixPointArr.of(t)
-//    // ensure mixPoint is between 0 and the number of arrows
-//    let mixPointLocal = clamp(mixPoint, min: 0, max: CoreFloat(innerArrsUnmanaged.count - 1))
-//    let arrow1 = innerArrsUnmanaged[Int(floor(mixPointLocal))]
-//    let arrow2 = innerArrsUnmanaged[min(innerArrsUnmanaged.count - 1, Int(floor(mixPointLocal) + 1))]
-//    let arrow1Weight = mixPointLocal - floor(mixPointLocal)
-//    
-//    return ((1.0 - arrow1Weight) * arrow1._withUnsafeGuaranteedRef { $0.of(t) }) +
-//      (arrow1Weight * arrow2._withUnsafeGuaranteedRef { $0.of(t) })
-//  }
+
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
     mixPointArr.process(inputs: inputs, outputs: &mixPoints)
     // run all the arrows
@@ -240,18 +232,7 @@ final class ArrowEqualPowerCrossfade: Arrow11 {
     arrowOuts = [[CoreFloat]](repeating: [CoreFloat](repeating: 0, count: 512), count: innerArrs.count)
     super.init(innerArrs: innerArrs)
   }
-//  func of(_ t: CoreFloat) -> CoreFloat {
-//    let mixPoint = mixPointArr.of(t)
-//    // ensure mixPoint is between 0 and the number of arrows
-//    let mixPointLocal = clamp(mixPoint, min: 0, max: CoreFloat(innerArrsUnmanaged.count - 1))
-//    let arrow1 = innerArrsUnmanaged[Int(floor(mixPointLocal))]
-//    let arrow2 = innerArrsUnmanaged[min(innerArrsUnmanaged.count - 1, Int(floor(mixPointLocal) + 1))]
-//    let arrow1Weight = mixPointLocal - floor(mixPointLocal)
-//    
-//    let sample = sqrtPosNeg((1.0 - arrow1Weight) * arrow1._withUnsafeGuaranteedRef { $0.of(t) }) +
-//    sqrtPosNeg(arrow1Weight * arrow2._withUnsafeGuaranteedRef { $0.of(t) })
-//    return sample
-//  }
+
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
     mixPointArr.process(inputs: inputs, outputs: &mixPoints)
     // run all the arrows
