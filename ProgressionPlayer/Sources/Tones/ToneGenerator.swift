@@ -98,14 +98,37 @@ final class Square: Arrow11, WidthHaver {
 
 final class Noise: Arrow11, WidthHaver {
   var widthArr: Arrow11 = ArrowConst(value: 1.0)
-//  func of(_ t: CoreFloat) -> CoreFloat {
-//    CoreFloat.random(in: 0.0...1.0)
-//  }
+  
+  private var randomInts = [UInt32](repeating: 0, count: 512)
+  private let scale: CoreFloat = 1.0 / CoreFloat(UInt32.max)
+
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
-    // Default implementation: loop
-    for i in 0..<inputs.count {
-      outputs[i] = CoreFloat.random(in: 0.0...1.0)
+    let count = inputs.count
+    if randomInts.count < count {
+      randomInts = [UInt32](repeating: 0, count: count)
     }
+    
+    randomInts.withUnsafeMutableBytes { buffer in
+      if let base = buffer.baseAddress {
+        arc4random_buf(base, count * MemoryLayout<UInt32>.size)
+      }
+    }
+    
+    outputs.withUnsafeMutableBufferPointer { outputPtr in
+      randomInts.withUnsafeBufferPointer { randomPtr in
+        guard let inputBase = randomPtr.baseAddress,
+              let outputBase = outputPtr.baseAddress else { return }
+        
+        // Convert UInt32 to Float
+        vDSP_vfltu32(inputBase, 1, outputBase, 1, vDSP_Length(count))
+        
+        // Normalize to 0.0...1.0
+        var s = scale
+        vDSP_vsmul(outputBase, 1, &s, outputBase, 1, vDSP_Length(count))
+      }
+    }
+    // let avg = vDSP.mean(outputs)
+    // print("avg noise: \(avg)")
   }
 }
 
