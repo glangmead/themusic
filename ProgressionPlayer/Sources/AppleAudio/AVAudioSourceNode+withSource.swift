@@ -32,7 +32,7 @@ extension AVAudioSourceNode {
       // Safety check for buffer size
       if count > timeBuffer.count {
         // For now, this is a failure state
-        fatalError("OS requested a buffer larger than 4096, please report to the developer.")
+        fatalError("OS requested a buffer larger than \(timeBuffer.count), please report to the developer.")
       }
       
       // Create a mutable pointer to the AudioBufferList for easier access.
@@ -50,11 +50,11 @@ extension AVAudioSourceNode {
       
       // 2. Process block
       // We assume mono or identical stereo. If stereo, we copy channel 0 to channel 1 later.
-      //if let firstBuffer = audioBufferListPointer.first, let data = firstBuffer.mData {
-        //let outputPtr = data.assumingMemoryBound(to: CoreFloat.self)
-        //let outputBuffer = UnsafeMutableBufferPointer(start: outputPtr, count: count)
-        //var outputArray = Array(outputBuffer) // https://stackoverflow.com/questions/41574498/how-to-use-unsafemutablerawpointer-to-fill-an-array
-        var outputArray = [CoreFloat](repeating: 0, count: timeBuffer.count)
+      if let firstBuffer = audioBufferListPointer.first, let data = firstBuffer.mData {
+        let outputPtr = data.assumingMemoryBound(to: CoreFloat.self)
+        let outputBuffer = UnsafeMutableBufferPointer(start: outputPtr, count: count)
+        var outputArray = Array(outputBuffer) // https://stackoverflow.com/questions/41574498/how-to-use-unsafemutablerawpointer-to-fill-an-array
+        //var outputArray = [CoreFloat](repeating: 0, count: timeBuffer.count)
         source.process(inputs: timeBuffer, outputs: &outputArray)
         
         //let mean = vDSP.mean(outputArray)
@@ -62,13 +62,13 @@ extension AVAudioSourceNode {
         //print("\(meanTime): mean \(mean)")
         
         // Handle other channels if they exist (copy from first)
-        for i in 0..<audioBufferListPointer.count {
+        for i in 1..<audioBufferListPointer.count {
           if let channelBuffer = audioBufferListPointer[i].mData {
             let channelPtr = channelBuffer.assumingMemoryBound(to: CoreFloat.self)
             channelPtr.update(from: outputArray, count: count)
           }
         }
-      //}
+      }
       
       // Inform the audio engine that we have generated sound, not silence.
       isSilence.pointee = false

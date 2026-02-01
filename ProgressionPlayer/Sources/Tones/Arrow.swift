@@ -260,6 +260,10 @@ final class ArrowRandom: Arrow11 {
     self.max = max
     super.init()
   }
+  override func of(_ t: CoreFloat) -> CoreFloat {
+    CoreFloat.random(in: min...max)
+  }
+  
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
     // Default implementation: loop
     for i in 0..<inputs.count {

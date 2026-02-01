@@ -202,26 +202,26 @@ class InstrumentWithAVAudioUnitEffects {
     }
 
     positionTask?.cancel()
-    positionTask = Task.detached(priority: .medium) { [weak self] in
-      while let self = self, !Task.isCancelled {
-        // If we are detached, kill the task
-        guard let engine = self.mixerNode.engine else {
-          break
-        }
-
-        if engine.isRunning {
-          do {
-            try await Task.sleep(for: .seconds(0.01))
-            self.setPosition(CoreFloat(Date.now.timeIntervalSince1970 - self.timeOrigin))
-          } catch {
-            break
-          }
-        } else {
-          // Engine attached but not running (starting up or paused).
-          try? await Task.sleep(for: .seconds(0.2))
-        }
-      }
-    }
+//    positionTask = Task.detached(priority: .medium) { [weak self] in
+//      while let self = self, !Task.isCancelled {
+//        // If we are detached, kill the task
+//        guard let engine = self.mixerNode.engine else {
+//          break
+//        }
+//
+//        if engine.isRunning {
+//          do {
+//            try await Task.sleep(for: .seconds(0.01))
+//            self.setPosition(CoreFloat(Date.now.timeIntervalSince1970 - self.timeOrigin))
+//          } catch {
+//            break
+//          }
+//        } else {
+//          // Engine attached but not running (starting up or paused).
+//          try? await Task.sleep(for: .seconds(0.2))
+//        }
+//      }
+//    }
 
     return mixerNode
   }

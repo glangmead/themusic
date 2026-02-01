@@ -36,7 +36,9 @@ struct MusicEvent {
   let modulators: [String: Arrow11]
   let timeOrigin: Double
   var cleanup: (() async -> Void)? = nil
-  
+  var timeBuffer = [CoreFloat](repeating: 0, count: 512)
+  var arrowBuffer = [CoreFloat](repeating: 0, count: 512)
+
   private(set) var voice: PoolVoice? = nil
   
   mutating func play() async throws {
@@ -46,13 +48,15 @@ struct MusicEvent {
     
     // Apply modulation
     let now = CoreFloat(Date.now.timeIntervalSince1970 - timeOrigin)
+    timeBuffer[0] = now
     for (key, modulatingArrow) in modulators {
       if voice!.namedConsts[key] != nil {
         for arrowConst in voice!.namedConsts[key]! {
           if let eventUsingArrow = modulatingArrow as? EventUsingArrow {
             eventUsingArrow.event = self
           }
-          arrowConst.val = modulatingArrow.of(now)
+          modulatingArrow.process(inputs: timeBuffer, outputs: &arrowBuffer)
+          arrowConst.val = arrowBuffer[0]
         }
       }
       for preset in presets {
