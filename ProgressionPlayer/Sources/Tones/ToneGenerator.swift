@@ -118,13 +118,16 @@ final class Noise: Arrow11, WidthHaver {
       randomInts.withUnsafeBufferPointer { randomPtr in
         guard let inputBase = randomPtr.baseAddress,
               let outputBase = outputPtr.baseAddress else { return }
-        
+
         // Convert UInt32 to Float
-        vDSP_vfltu32(inputBase, 1, outputBase, 1, vDSP_Length(count))
+        //vDSP_vfltu32(inputBase, 1, outputBase, 1, vDSP_Length(count))
+        // Convert UInt32 to Double
+        vDSP_vfltu32D(inputBase, 1, outputBase, 1, vDSP_Length(count))
         
         // Normalize to 0.0...1.0
         var s = scale
-        vDSP_vsmul(outputBase, 1, &s, outputBase, 1, vDSP_Length(count))
+        //vDSP_vsmul(outputBase, 1, &s, outputBase, 1, vDSP_Length(count))
+        vDSP_vsmulD(outputBase, 1, &s, outputBase, 1, vDSP_Length(count))
       }
     }
     // let avg = vDSP.mean(outputs)

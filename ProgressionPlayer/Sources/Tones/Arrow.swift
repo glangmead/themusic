@@ -8,7 +8,7 @@
 import Accelerate
 import AVFAudio
 
-typealias CoreFloat = Float
+typealias CoreFloat = Double
 
 class Arrow11 {
   // these are arrows with which we can compose (arr/arrs run first, then this arrow)

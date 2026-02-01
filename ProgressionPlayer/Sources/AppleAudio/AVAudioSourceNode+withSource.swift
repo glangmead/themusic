@@ -16,6 +16,7 @@ extension AVAudioSourceNode {
     // and I'm observing 512 so far.
     // TODO: But it represents a hard-coded value I will need to move away from.
     var timeBuffer = [CoreFloat](repeating: 0, count: 512)
+    var valBuffer = [CoreFloat](repeating: 0, count: 512)
     
     // The AVAudioSourceNode initializer takes a 'render block' – a closure
     // that the audio engine calls repeatedly to request audio samples.
@@ -51,21 +52,29 @@ extension AVAudioSourceNode {
       // 2. Process block
       // We assume mono or identical stereo. If stereo, we copy channel 0 to channel 1 later.
       if let firstBuffer = audioBufferListPointer.first, let data = firstBuffer.mData {
-        let outputPtr = data.assumingMemoryBound(to: CoreFloat.self)
-        let outputBuffer = UnsafeMutableBufferPointer(start: outputPtr, count: count)
-        var outputArray = Array(outputBuffer) // https://stackoverflow.com/questions/41574498/how-to-use-unsafemutablerawpointer-to-fill-an-array
-        //var outputArray = [CoreFloat](repeating: 0, count: timeBuffer.count)
-        source.process(inputs: timeBuffer, outputs: &outputArray)
+        source.process(inputs: timeBuffer, outputs: &valBuffer)
         
-        //let mean = vDSP.mean(outputArray)
-        //let meanTime = vDSP.mean(timeBuffer)
-        //print("\(meanTime): mean \(mean)")
+        let outputPtr = data.assumingMemoryBound(to: Float.self)
+        var outputBuffer = UnsafeMutableBufferPointer(start: outputPtr, count: count)
+        
+        // Convert/Copy our internal Doubles to the output Floats
+        //if let doubleVals = valBuffer as? [Double] {
+        // Convert Double -> Float
+        vDSP.convertElements(of: valBuffer[0..<count], to: &outputBuffer)
+        //} else if let floatVals = valBuffer as? [Float] {
+        //    // Copy Float -> Float (if CoreFloat is reverted to Float someday)
+        //    _ = outputBuffer.update(from: floatVals[0..<count])
+        //}
+        
+        // let mean = vDSP.mean(valBuffer[0..<count])
+        // let meanTime = vDSP.mean(timeBuffer[0..<count])
+        // print("\(meanTime): mean \(mean)")
         
         // Handle other channels if they exist (copy from first)
         for i in 1..<audioBufferListPointer.count {
           if let channelBuffer = audioBufferListPointer[i].mData {
-            let channelPtr = channelBuffer.assumingMemoryBound(to: CoreFloat.self)
-            channelPtr.update(from: outputArray, count: count)
+            let channelPtr = channelBuffer.assumingMemoryBound(to: Float.self)
+            channelPtr.update(from: outputPtr, count: count)
           }
         }
       }
