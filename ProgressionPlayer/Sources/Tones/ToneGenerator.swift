@@ -5,6 +5,7 @@
 //  Created by Greg Langmead on 10/30/25.
 //
 
+import Accelerate
 import Foundation
 import SwiftUI
 
@@ -13,47 +14,99 @@ protocol WidthHaver {
 }
 
 final class Sine: Arrow11, WidthHaver {
+  private var scratch = [CoreFloat](repeating: 0, count: 512)
   var widthArr: Arrow11 = ArrowConst(value: 1.0)
-  override func of(_ t: CoreFloat) -> CoreFloat {
-    let width = widthArr.of(t)
-    let innerResult = inner(t)
-    return (fmod(innerResult, 1) < width) ? sin(2 * .pi * innerResult / width) : 0
+//  func of(_ t: CoreFloat) -> CoreFloat {
+//    let width = widthArr.of(t)
+//    let innerResult = inner(t)
+//    return (fmod(innerResult, 1) < width) ? sin(2 * .pi * innerResult / width) : 0
+//  }
+  override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
+    //widthArr.process(inputs: inputs, outputs: &widthOutputs)
+    (innerArr ?? ArrowIdentity()).process(inputs: inputs, outputs: &scratch)
+    vDSP.multiply(2 * .pi, scratch, result: &scratch)
+    //vDSP.divide(outputs, widthOutputs, result: &outputs)
+    // zero out some of the inners, to the right of the width cutoff
+    //for i in 0..<inputs.count {
+    //  if fmod(outputs[i], 1) > widthOutputs[i] {
+    //    outputs[i] = 0
+    //  }
+    //}
+    vForce.sin(scratch, result: &outputs)
   }
 }
 
 final class Triangle: Arrow11, WidthHaver {
+  private var widthOutputs = [CoreFloat](repeating: 0, count: 512)
   var widthArr: Arrow11 = ArrowConst(value: 1.0)
-  override func of(_ t: CoreFloat) -> CoreFloat {
-    let width = widthArr.of(t)
-    let innerResult = inner(t)
-    let modResult = fmod(innerResult, 1)
-    return (modResult < width/2) ? (4 * modResult / width) - 1:
+//  func of(_ t: CoreFloat) -> CoreFloat {
+//    let width = widthArr.of(t)
+//    let innerResult = inner(t)
+//    let modResult = fmod(innerResult, 1)
+//    return (modResult < width/2) ? (4 * modResult / width) - 1:
+//      (modResult < width) ? (-4 * modResult / width) + 3 : 0
+//  }
+  override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
+    widthArr.process(inputs: inputs, outputs: &widthOutputs)
+    (innerArr ?? ArrowIdentity()).process(inputs: inputs, outputs: &outputs)
+    for i in 0..<inputs.count {
+      let modResult = fmod(outputs[i], 1)
+      let width = widthOutputs[i]
+      outputs[i] = (modResult < width/2) ? (4 * modResult / width) - 1:
       (modResult < width) ? (-4 * modResult / width) + 3 : 0
+    }
   }
 }
 
 final class Sawtooth: Arrow11, WidthHaver {
+  private var widthOutputs = [CoreFloat](repeating: 0, count: 512)
   var widthArr: Arrow11 = ArrowConst(value: 1.0)
-  override func of(_ t: CoreFloat) -> CoreFloat {
-    let width = widthArr.of(t)
-    let innerResult = inner(t)
-    let modResult = fmod(innerResult, 1)
-    return (modResult < width) ? (2 * modResult / width) - 1 : 0
+//  func of(_ t: CoreFloat) -> CoreFloat {
+//    let width = widthArr.of(t)
+//    let innerResult = inner(t)
+//    let modResult = fmod(innerResult, 1)
+//    return (modResult < width) ? (2 * modResult / width) - 1 : 0
+//  }
+  override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
+    widthArr.process(inputs: inputs, outputs: &widthOutputs)
+    (innerArr ?? ArrowIdentity()).process(inputs: inputs, outputs: &outputs)
+    for i in 0..<inputs.count {
+      let modResult = fmod(outputs[i], 1)
+      let width = widthOutputs[i]
+      outputs[i] = (modResult < width) ? (2 * modResult / width) - 1 : 0
+    }
+    let avg = vDSP.mean(outputs)
   }
 }
 
 final class Square: Arrow11, WidthHaver {
+  private var widthOutputs = [CoreFloat](repeating: 0, count: 512)
   var widthArr: Arrow11 = ArrowConst(value: 1.0)
-  override func of(_ t: CoreFloat) -> CoreFloat {
-    let width = widthArr.of(t)
-    return fmod(inner(t), 1) <= width/2 ? 1.0 : -1.0
+//  func of(_ t: CoreFloat) -> CoreFloat {
+//    let width = widthArr.of(t)
+//    return fmod(inner(t), 1) <= width/2 ? 1.0 : -1.0
+//  }
+  override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
+    widthArr.process(inputs: inputs, outputs: &widthOutputs)
+    (innerArr ?? ArrowIdentity()).process(inputs: inputs, outputs: &outputs)
+    for i in 0..<inputs.count {
+      let modResult = fmod(outputs[i], 1)
+      let width = widthOutputs[i]
+      outputs[i] = modResult <= width/2 ? 1.0 : -1.0
+    }
   }
 }
 
 final class Noise: Arrow11, WidthHaver {
   var widthArr: Arrow11 = ArrowConst(value: 1.0)
-  override func of(_ t: CoreFloat) -> CoreFloat {
-    CoreFloat.random(in: 0.0...1.0)
+//  func of(_ t: CoreFloat) -> CoreFloat {
+//    CoreFloat.random(in: 0.0...1.0)
+//  }
+  override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
+    // Default implementation: loop
+    for i in 0..<inputs.count {
+      outputs[i] = CoreFloat.random(in: 0.0...1.0)
+    }
   }
 }
 
@@ -90,7 +143,7 @@ final class NoiseSmoothStep: Arrow11 {
     super.init()
   }
   
-  override func of(_ t: CoreFloat) -> CoreFloat {
+  func noise(_ t: CoreFloat) -> CoreFloat {
     // catch up if there has been a time gap
     if t > nextNoiseTime + audioDeltaTime {
       lastNoiseTime = t
@@ -118,6 +171,12 @@ final class NoiseSmoothStep: Arrow11 {
     numAudioSamplesThisSegment += 1
     return result
   }
+  override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
+    // Default implementation: loop
+    for i in 0..<inputs.count {
+      outputs[i] = self.noise(inputs[i])
+    }
+  }
 }
 
 final class BasicOscillator: Arrow11 {
@@ -138,6 +197,7 @@ final class BasicOscillator: Arrow11 {
   private let sawtoothUnmanaged: Unmanaged<Arrow11>?
   private let squareUnmanaged: Unmanaged<Arrow11>?
   private let noiseUnmanaged: Unmanaged<Arrow11>?
+  private var innerVals = [CoreFloat](repeating: 0, count: 512)
 
   var arrow: (Arrow11 & WidthHaver)? = nil
   private var arrUnmanaged: Unmanaged<Arrow11>? = nil
@@ -165,15 +225,11 @@ final class BasicOscillator: Arrow11 {
     self.updateShape()
   }
   
-  override func of(_ t: CoreFloat) -> CoreFloat {
-    switch shape {
-    case .noise:
-      arrUnmanaged?._withUnsafeGuaranteedRef { $0.of(t) } ?? 0
-    default:
-      arrUnmanaged?._withUnsafeGuaranteedRef { $0.of(unmanagedInner(t)) } ?? 0
-    }
+  override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
+    (innerArr ?? ArrowIdentity()).process(inputs: inputs, outputs: &innerVals)
+    arrUnmanaged?._withUnsafeGuaranteedRef { $0.process(inputs: innerVals, outputs: &outputs) }
   }
-  
+
   func updateShape() {
     switch shape {
     case .sine:
@@ -219,6 +275,7 @@ final class Choruser: Arrow11 {
   var valueToChorus: String
   var centPowers = ContiguousArray<CoreFloat>()
   let cent: CoreFloat = 1.0005777895065548 // '2 ** (1/1200)' in python
+  private var innerVals = [CoreFloat](repeating: 0, count: 512)
 
   init(chorusCentRadius: Int, chorusNumVoices: Int, valueToChorus: String) {
     self.chorusCentRadius = chorusCentRadius
@@ -230,10 +287,10 @@ final class Choruser: Arrow11 {
     super.init()
   }
   
-  override func of(_ t: CoreFloat) -> CoreFloat {
+  override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
+    vDSP.clear(&outputs)
     // set the freq and call arrow.of() repeatedly, and sum the results
     if chorusNumVoices > 1 {
-      var chorusedResults: CoreFloat = 0
       // get the constants of the given name (it is an array, as we have some duplication in the json)
       if let innerArrowWithHandles = innerArr as? ArrowWithHandles {
         if let freqArrows = innerArrowWithHandles.namedConsts[valueToChorus] {
@@ -242,18 +299,18 @@ final class Choruser: Arrow11 {
           for freqArrow in freqArrows {
             for i in spreadFreqs.indices {
               freqArrow.val = spreadFreqs[i]
-              chorusedResults += unmanagedInner(t)
+              (innerArr ?? ArrowIdentity()).process(inputs: inputs, outputs: &innerVals)
+              vDSP.add(outputs, innerVals, result: &outputs)
             }
             // restore
             freqArrow.val = baseFreq
           }
         }
-        return chorusedResults
       } else {
-        return unmanagedInner(t)
+        (innerArr ?? ArrowIdentity()).process(inputs: inputs, outputs: &outputs)
       }
     } else {
-      return unmanagedInner(t)
+      (innerArr ?? ArrowIdentity()).process(inputs: inputs, outputs: &outputs)
     }
   }
   
@@ -274,6 +331,9 @@ final class Choruser: Arrow11 {
 
 // from https://www.w3.org/TR/audio-eq-cookbook/
 final class LowPassFilter2: Arrow11 {
+  private var innerVals = [CoreFloat](repeating: 0, count: 512)
+  private var cutoffs = [CoreFloat](repeating: 0, count: 512)
+  private var resonances = [CoreFloat](repeating: 0, count: 512)
   private var previousTime: CoreFloat
   private var previousInner1: CoreFloat
   private var previousInner2: CoreFloat
@@ -294,18 +354,17 @@ final class LowPassFilter2: Arrow11 {
     self.previousOutput2 = 0
     super.init()
   }
-  override func of(_ t: CoreFloat) -> CoreFloat {
+  func filter(_ t: CoreFloat, inner: CoreFloat, cutoff: CoreFloat, resonance: CoreFloat) -> CoreFloat {
     if self.previousTime == 0 {
       self.previousTime = t
       return 0
     }
-    let inner = inner(t)
 
     let dt = t - previousTime
     if (dt <= 1.0e-9) {
       return self.previousOutput1; // Return last output
     }
-    let cutoff = min(0.5 / dt, cutoff.of(t))
+    let cutoff = min(0.5 / dt, cutoff)
     var w0 = 2 * .pi * cutoff * dt // cutoff freq over sample freq
     if w0 > .pi - 0.01 { // if dt is very large relative to frequency
       w0 = .pi - 0.01
@@ -313,7 +372,7 @@ final class LowPassFilter2: Arrow11 {
     let cosw0 = cos(w0)
     let sinw0 = sin(w0)
     // resonance (Q factor). 0.707 is maximally flat (Butterworth). > 0.707 adds a peak.
-    let resonance = resonance.of(t)
+    let resonance = resonance
     let alpha = sinw0 / (2.0 * max(0.001, resonance))
     
     let a0 = 1.0 + alpha
@@ -339,6 +398,16 @@ final class LowPassFilter2: Arrow11 {
     //print("\(output)")
     return output
   }
+  
+  override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
+    (innerArr ?? ArrowIdentity()).process(inputs: inputs, outputs: &innerVals)
+    cutoff.process(inputs: inputs, outputs: &cutoffs)
+    resonance.process(inputs: inputs, outputs: &resonances)
+    // Default implementation: loop
+    for i in 0..<inputs.count {
+      outputs[i] = self.filter(inputs[i], inner: innerVals[i], cutoff: cutoffs[i], resonance: resonances[i])
+    }
+  }
 }
 
 class ArrowWithHandles: Arrow11 {
@@ -362,9 +431,8 @@ class ArrowWithHandles: Arrow11 {
     super.init()
   }
   
-  // delegates to wrapped arrow
-  override func of(_ t: CoreFloat) -> CoreFloat {
-    wrappedArrowUnsafe._withUnsafeGuaranteedRef { $0.of(t) }
+  override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
+    wrappedArrowUnsafe._withUnsafeGuaranteedRef { $0.process(inputs: inputs, outputs: &outputs) }
   }
 
   func withMergeDictsFromArrow(_ arr2: ArrowWithHandles) -> ArrowWithHandles {

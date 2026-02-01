@@ -45,7 +45,7 @@ class ADSR: Arrow11, NoteHandler {
     self.setFunctionsFromEnvelopeSpecs()
   }
   
-  override func of(_ time: CoreFloat) -> CoreFloat {
+  func env(_ time: CoreFloat) -> CoreFloat {
     if newAttack || newRelease {
       timeOrigin = time
       newAttack = false
@@ -70,6 +70,13 @@ class ADSR: Arrow11, NoteHandler {
     return val
   }
   
+  override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
+    // Default implementation: loop
+    for i in 0..<inputs.count {
+      outputs[i] = self.env(inputs[i])
+    }
+  }
+
   func setFunctionsFromEnvelopeSpecs() {
     attackEnv = PiecewiseFunc<CoreFloat>(ifuncs: [
       IntervalFunc<CoreFloat>(

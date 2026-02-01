@@ -20,7 +20,7 @@ final class EventUsingArrow: Arrow11 {
   }
   
   override func of(_ t: CoreFloat) -> CoreFloat {
-    ofEvent(event!, inner(t))
+    ofEvent(event!, innerArr?.of(t) ?? 0)
   }
 }
 

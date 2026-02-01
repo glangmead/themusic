@@ -5,9 +5,10 @@
 //  Created by Greg Langmead on 10/14/25.
 //
 
+import Accelerate
 import AVFAudio
 
-typealias CoreFloat = Double
+typealias CoreFloat = Float
 
 class Arrow11 {
   // these are arrows with which we can compose (arr/arrs run first, then this arrow)
@@ -53,15 +54,17 @@ class Arrow11 {
     }
   }
 
-  func inner(_ t: CoreFloat) -> CoreFloat {
-    innerArr?.of(t) ?? t
+  // old single-time behavior, wrapping the vector version
+  func of (_ t: CoreFloat) -> CoreFloat {
+    var result: [CoreFloat] = [0]
+    process(inputs: [t], outputs: &result)
+    return result[0]
+  }
+
+  func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
+    (innerArr ?? ArrowIdentity()).process(inputs: inputs, outputs: &outputs)
   }
   
-  func unmanagedInner(_ t: CoreFloat) -> CoreFloat {
-    innerArrUnmanaged?._withUnsafeGuaranteedRef { $0.of(t) } ?? t
-  }
-  
-  func of (_ t: CoreFloat) -> CoreFloat { inner(t) }
   final func asControl() -> Arrow11 {
     return ControlArrow11(innerArr: self)
   }
@@ -78,33 +81,82 @@ final class ControlArrow11: Arrow11 {
   var lastTimeEmittedSecs: CoreFloat = 0.0
   var lastEmission: CoreFloat = 0.0
   let timeBetweenEmissionsSecs: CoreFloat = 441.0 / 44100.0
-  
-  override func of(_ t: CoreFloat) -> CoreFloat {
-    if t - lastTimeEmittedSecs >= timeBetweenEmissionsSecs {
-      lastEmission = inner(t)
-      lastTimeEmittedSecs = t
+  private var scratchBuffer = [CoreFloat](repeating: 0, count: 512)
+
+  override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
+    (innerArr ?? ArrowIdentity()).process(inputs: inputs, outputs: &scratchBuffer)
+    for i in 0..<inputs.count {
+      let t = inputs[i]
+      if t - lastTimeEmittedSecs >= timeBetweenEmissionsSecs {
+        lastEmission = scratchBuffer[i]
+        lastTimeEmittedSecs = t
+      }
+      outputs[i] = lastEmission
     }
-    return lastEmission
+    let mean = vDSP.mean(outputs)
   }
 }
 
 final class ArrowSum: Arrow11 {
-  override func of(_ t: CoreFloat) -> CoreFloat {
-    var result: CoreFloat = 0
-    for i in 0..<innerArrsUnmanaged.count {
-      result += innerArrsUnmanaged[i]._withUnsafeGuaranteedRef { $0.of(t) }
+  private var scratchBuffer = [CoreFloat](repeating: 0, count: 512)
+  
+  override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
+    if innerArrsUnmanaged.isEmpty {
+      vDSP.clear(&outputs)
+      return
     }
-    return result
+    
+    // Process first child directly to output
+    innerArrsUnmanaged[0]._withUnsafeGuaranteedRef {
+      $0.process(inputs: inputs, outputs: &outputs)
+    }
+    
+    // Process remaining children via scratch
+    if innerArrsUnmanaged.count > 1 {
+      for i in 1..<innerArrsUnmanaged.count {
+        innerArrsUnmanaged[i]._withUnsafeGuaranteedRef {
+          $0.process(inputs: inputs, outputs: &scratchBuffer)
+        }
+        // output = output + scratch
+        vDSP.add(scratchBuffer, outputs, result: &outputs)
+      }
+    }
   }
 }
 
 final class ArrowProd: Arrow11 {
-  override func of(_ t: CoreFloat) -> CoreFloat {
-    var result: CoreFloat = 1
-    for i in 0..<innerArrsUnmanaged.count {
-      result *= innerArrsUnmanaged[i]._withUnsafeGuaranteedRef { $0.of(t) }
+  private var scratchBuffer = [CoreFloat](repeating: 0, count: 512)
+  private var scratchBuffer2 = [CoreFloat](repeating: 0, count: 512)
+  override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
+    if innerArrsUnmanaged.isEmpty {
+      vDSP.fill(&outputs, with: 1)
+      return
     }
-    return result
+    
+    for i in innerArrs.indices {
+      if let arrowConst = innerArrs[i] as? ArrowConst {
+        if arrowConst.val == 300 {
+          print("got a 300 here")
+        }
+      }
+    }
+    
+    // Process first child directly to output
+    innerArrsUnmanaged[0]._withUnsafeGuaranteedRef {
+      $0.process(inputs: inputs, outputs: &outputs)
+    }
+    
+    // Process remaining children via scratch
+    if innerArrsUnmanaged.count > 1 {
+      for i in 1..<innerArrsUnmanaged.count {
+        innerArrsUnmanaged[i]._withUnsafeGuaranteedRef {
+          $0.process(inputs: inputs, outputs: &scratchBuffer)
+        }
+        // output = output * scratch
+        vDSP.multiply(scratchBuffer, outputs, result: &scratchBuffer2)
+        outputs = scratchBuffer2
+      }
+    }
   }
 }
 
@@ -123,8 +175,11 @@ final class ArrowExponentialRandom: Arrow11 {
     self.max = neg ? clamp(max, min: max, max: -0.001) : clamp(max, min: 0.001, max: max)
     super.init()
   }
-  override func of(_ t: CoreFloat) -> CoreFloat {
-    min * exp(log(max / min) * CoreFloat.random(in: 0...1))
+  override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
+    // Default implementation: loop
+    for i in 0..<inputs.count {
+      outputs[i] = min * exp(log(max / min) * CoreFloat.random(in: 0...1))
+    }
   }
 }
 
@@ -135,21 +190,41 @@ func sqrtPosNeg(_ val: CoreFloat) -> CoreFloat {
 // Mix two of the arrows in a list, viewing the mixPoint as a point somewhere between two of the arrows
 // Compare to Supercollider's `Select`
 final class ArrowCrossfade: Arrow11 {
+  private var mixPoints = [CoreFloat](repeating: 0, count: 512)
+  private var arrowOuts = [[CoreFloat]]()
   var mixPointArr: Arrow11
   init(innerArrs: [Arrow11], mixPointArr: Arrow11) {
     self.mixPointArr = mixPointArr
+    arrowOuts = [[CoreFloat]](repeating: [CoreFloat](repeating: 0, count: 512), count: innerArrs.count)
     super.init(innerArrs: innerArrs)
   }
-  override func of(_ t: CoreFloat) -> CoreFloat {
-    let mixPoint = mixPointArr.of(t)
-    // ensure mixPoint is between 0 and the number of arrows
-    let mixPointLocal = clamp(mixPoint, min: 0, max: CoreFloat(innerArrsUnmanaged.count - 1))
-    let arrow1 = innerArrsUnmanaged[Int(floor(mixPointLocal))]
-    let arrow2 = innerArrsUnmanaged[min(innerArrsUnmanaged.count - 1, Int(floor(mixPointLocal) + 1))]
-    let arrow1Weight = mixPointLocal - floor(mixPointLocal)
-    
-    return ((1.0 - arrow1Weight) * arrow1._withUnsafeGuaranteedRef { $0.of(t) }) +
-      (arrow1Weight * arrow2._withUnsafeGuaranteedRef { $0.of(t) })
+//  func of(_ t: CoreFloat) -> CoreFloat {
+//    let mixPoint = mixPointArr.of(t)
+//    // ensure mixPoint is between 0 and the number of arrows
+//    let mixPointLocal = clamp(mixPoint, min: 0, max: CoreFloat(innerArrsUnmanaged.count - 1))
+//    let arrow1 = innerArrsUnmanaged[Int(floor(mixPointLocal))]
+//    let arrow2 = innerArrsUnmanaged[min(innerArrsUnmanaged.count - 1, Int(floor(mixPointLocal) + 1))]
+//    let arrow1Weight = mixPointLocal - floor(mixPointLocal)
+//    
+//    return ((1.0 - arrow1Weight) * arrow1._withUnsafeGuaranteedRef { $0.of(t) }) +
+//      (arrow1Weight * arrow2._withUnsafeGuaranteedRef { $0.of(t) })
+//  }
+  override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
+    mixPointArr.process(inputs: inputs, outputs: &mixPoints)
+    // run all the arrows
+    for arri in innerArrsUnmanaged.indices {
+      innerArrsUnmanaged[arri]._withUnsafeGuaranteedRef { $0.process(inputs: inputs, outputs: &arrowOuts[arri]) }
+    }
+    // post-process to combine the correct two
+    for i in inputs.indices {
+      let mixPointLocal = clamp(mixPoints[i], min: 0, max: CoreFloat(innerArrsUnmanaged.count - 1))
+      let arrow2Weight = mixPointLocal - floor(mixPointLocal)
+      let arrow1Index = Int(floor(mixPointLocal))
+      let arrow2Index = min(innerArrsUnmanaged.count - 1, Int(floor(mixPointLocal) + 1))
+      outputs[i] =
+        arrow2Weight * arrowOuts[arrow2Index][i] +
+        (1.0 - arrow2Weight) * arrowOuts[arrow1Index][i]
+    }
   }
 }
 
@@ -157,22 +232,42 @@ final class ArrowCrossfade: Arrow11 {
 // Use sqrt to maintain equal power and avoid a dip in perceived volume at the center point.
 // Compare to Supercollider's `SelectX`
 final class ArrowEqualPowerCrossfade: Arrow11 {
+  private var mixPoints = [CoreFloat](repeating: 0, count: 512)
+  private var arrowOuts = [[CoreFloat]]()
   var mixPointArr: Arrow11
   init(innerArrs: [Arrow11], mixPointArr: Arrow11) {
     self.mixPointArr = mixPointArr
+    arrowOuts = [[CoreFloat]](repeating: [CoreFloat](repeating: 0, count: 512), count: innerArrs.count)
     super.init(innerArrs: innerArrs)
   }
-  override func of(_ t: CoreFloat) -> CoreFloat {
-    let mixPoint = mixPointArr.of(t)
-    // ensure mixPoint is between 0 and the number of arrows
-    let mixPointLocal = clamp(mixPoint, min: 0, max: CoreFloat(innerArrsUnmanaged.count - 1))
-    let arrow1 = innerArrsUnmanaged[Int(floor(mixPointLocal))]
-    let arrow2 = innerArrsUnmanaged[min(innerArrsUnmanaged.count - 1, Int(floor(mixPointLocal) + 1))]
-    let arrow1Weight = mixPointLocal - floor(mixPointLocal)
-    
-    let sample = sqrtPosNeg((1.0 - arrow1Weight) * arrow1._withUnsafeGuaranteedRef { $0.of(t) }) +
-    sqrtPosNeg(arrow1Weight * arrow2._withUnsafeGuaranteedRef { $0.of(t) })
-    return sample
+//  func of(_ t: CoreFloat) -> CoreFloat {
+//    let mixPoint = mixPointArr.of(t)
+//    // ensure mixPoint is between 0 and the number of arrows
+//    let mixPointLocal = clamp(mixPoint, min: 0, max: CoreFloat(innerArrsUnmanaged.count - 1))
+//    let arrow1 = innerArrsUnmanaged[Int(floor(mixPointLocal))]
+//    let arrow2 = innerArrsUnmanaged[min(innerArrsUnmanaged.count - 1, Int(floor(mixPointLocal) + 1))]
+//    let arrow1Weight = mixPointLocal - floor(mixPointLocal)
+//    
+//    let sample = sqrtPosNeg((1.0 - arrow1Weight) * arrow1._withUnsafeGuaranteedRef { $0.of(t) }) +
+//    sqrtPosNeg(arrow1Weight * arrow2._withUnsafeGuaranteedRef { $0.of(t) })
+//    return sample
+//  }
+  override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
+    mixPointArr.process(inputs: inputs, outputs: &mixPoints)
+    // run all the arrows
+    for arri in innerArrsUnmanaged.indices {
+      innerArrsUnmanaged[arri]._withUnsafeGuaranteedRef { $0.process(inputs: inputs, outputs: &arrowOuts[arri]) }
+    }
+    // post-process to combine the correct two
+    for i in inputs.indices {
+      let mixPointLocal = clamp(mixPoints[i], min: 0, max: CoreFloat(innerArrsUnmanaged.count - 1))
+      let arrow2Weight = mixPointLocal - floor(mixPointLocal)
+      let arrow1Index = Int(floor(mixPointLocal))
+      let arrow2Index = min(innerArrsUnmanaged.count - 1, Int(floor(mixPointLocal) + 1))
+      outputs[i] =
+        sqrtPosNeg(arrow2Weight * arrowOuts[arrow2Index][i]) +
+        sqrtPosNeg((1.0 - arrow2Weight) * arrowOuts[arrow1Index][i])
+    }
   }
 }
 
@@ -184,8 +279,11 @@ final class ArrowRandom: Arrow11 {
     self.max = max
     super.init()
   }
-  override func of(_ t: CoreFloat) -> CoreFloat {
-    CoreFloat.random(in: min...max)
+  override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
+    // Default implementation: loop
+    for i in 0..<inputs.count {
+      outputs[i] = CoreFloat.random(in: min...max)
+    }
   }
 }
 
@@ -196,12 +294,15 @@ final class ArrowImpulse: Arrow11 {
     self.fireTime = fireTime
     super.init()
   }
-  override func of(_ t: CoreFloat) -> CoreFloat {
-    if !hasFired && t >= fireTime {
-      hasFired = true
-      return 1.0
+  override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
+    // Default implementation: loop
+    for i in 0..<inputs.count {
+      if !hasFired && inputs[i] >= fireTime {
+        hasFired = true
+        outputs[i] = 1.0
+      }
+      outputs[i] = 0.0
     }
-    return 0.0
   }
 }
 
@@ -217,7 +318,7 @@ final class ArrowLine: Arrow11 {
     self.duration = duration
     super.init()
   }
-  override func of(_ t: CoreFloat) -> CoreFloat {
+  func line(_ t: CoreFloat) -> CoreFloat {
     if firstCall {
       startTime = t
       firstCall = false
@@ -228,12 +329,21 @@ final class ArrowLine: Arrow11 {
     }
     return start + ((t - startTime) / duration) * (end - start)
   }
+  override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
+    // Default implementation: loop
+    for i in 0..<inputs.count {
+      outputs[i] = self.line(inputs[i])
+    }
+  }
 }
 
 final class ArrowIdentity: Arrow11 {
-  override func of(_ t: CoreFloat) -> CoreFloat { t }
   init() {
     super.init()
+  }
+  override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
+    // Identity: copy inputs to outputs
+    outputs = inputs
   }
 }
 
@@ -247,9 +357,11 @@ final class ArrowConst: Arrow11, ValHaver, Equatable {
     self.val = value
     super.init()
   }
-  override func of(_ t: CoreFloat) -> CoreFloat {
-    val
+  override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
+    vDSP.fill(&outputs, with: val)
+    //vDSP_vfill(&val, outputs.baseAddress!, 1, vDSP_Length(inputs.count))
   }
+
   static func == (lhs: ArrowConst, rhs: ArrowConst) -> Bool {
     lhs.val == rhs.val
   }
@@ -267,8 +379,9 @@ final class ArrowConstOctave: Arrow11, ValHaver, Equatable {
     self.twoToTheVal = pow(2, val)
     super.init()
   }
-  override func of(_ t: CoreFloat) -> CoreFloat {
-    twoToTheVal
+  override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
+    vDSP.fill(&outputs, with: twoToTheVal)
+    //vDSP_vfill(&twoToTheVal, outputs.baseAddress!, 1, vDSP_Length(inputs.count))
   }
   static func == (lhs: ArrowConstOctave, rhs: ArrowConstOctave) -> Bool {
     lhs.val == rhs.val
@@ -289,8 +402,9 @@ final class ArrowConstCent: Arrow11, ValHaver, Equatable {
     self.centToTheVal = pow(cent, val)
     super.init()
   }
-  override func of(_ t: CoreFloat) -> CoreFloat {
-    centToTheVal
+  override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
+    vDSP.fill(&outputs, with: centToTheVal)
+    //vDSP_vfill(&centToTheVal, outputs.baseAddress!, 1, vDSP_Length(inputs.count))
   }
   static func == (lhs: ArrowConstCent, rhs: ArrowConstCent) -> Bool {
     lhs.val == rhs.val

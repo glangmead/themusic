@@ -1,10 +1,11 @@
 //
-//  OscillatorChart.swift
+//  ArrowChart.swift
 //  ProgressionPlayer
 //
 //  Created by Greg Langmead on 1/25/26.
 //
 
+import Accelerate
 import Charts
 import SwiftUI
 
@@ -15,16 +16,19 @@ struct ArrowChart: View {
   }
   
   var arrow: Arrow11
-  @State private var numSamplesToPlot = 200
+  @State private var numSamplesToPlot = 512
   let sampleRate = 44100
   var ymin: Int = -1
   var ymax: Int = 1
   var data: [Sample] {
     let now: CoreFloat = 0
     let dt: CoreFloat = 1.0 / CoreFloat(sampleRate)
-    return (0...numSamplesToPlot).map { i in
-      let t = now + (CoreFloat(i) * dt)
-      return Sample(time: t, amp: arrow.of(now + t))
+    var times = [CoreFloat](repeating: 0, count: 512)
+    var amps = [CoreFloat](repeating: 0, count: 512)
+    vDSP.formRamp(withInitialValue: now, increment: dt, result: &times)
+    arrow.process(inputs: times, outputs: &amps)
+    return (0..<numSamplesToPlot).map { i in
+      return Sample(time: times[i], amp: amps[i])
     }
   }
   
@@ -47,7 +51,7 @@ struct ArrowChart: View {
 }
 
 #Preview {
-  let arr = LowPassFilter2(cutoff: ArrowConst(value: 70000.0), resonance: ArrowConst(value: 1.1))
-  arr.innerArr = ArrowImpulse(fireTime: 2.0/44100.0)
-  return ArrowChart(arrow: arr, ymin: -1, ymax: 1)
+//  let arr = LowPassFilter2(cutoff: ArrowConst(value: 70000.0), resonance: ArrowConst(value: 1.1))
+//  arr.innerArr = ArrowImpulse(fireTime: 2.0/44100.0)
+  return ArrowChart(arrow: ArrowConst(value: 1), ymin: -1, ymax: 1)
 }
