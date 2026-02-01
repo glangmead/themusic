@@ -95,7 +95,6 @@ final class ControlArrow11: Arrow11 {
       }
       outputs[i] = lastEmission
     }
-    let mean = vDSP.mean(outputs)
   }
 }
 
@@ -171,6 +170,7 @@ func clamp(_ val: CoreFloat, min: CoreFloat, max: CoreFloat) -> CoreFloat {
 final class ArrowExponentialRandom: Arrow11 {
   var min: CoreFloat
   var max: CoreFloat
+  var scratch = [CoreFloat](repeating: 1, count: 512)
   init(min: CoreFloat, max: CoreFloat) {
     let neg = min < 0 || max < 0
     self.min = neg ? clamp(min, min: min, max: -0.001) : clamp(min, min: 0.001, max: min)
@@ -178,10 +178,12 @@ final class ArrowExponentialRandom: Arrow11 {
     super.init()
   }
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
+    vDSP.fill(&scratch, with: min * exp(log(max / min)))
     // Default implementation: loop
     for i in 0..<inputs.count {
-      outputs[i] = min * exp(log(max / min) * CoreFloat.random(in: 0...1))
+      outputs[i] = CoreFloat.random(in: 0...1)
     }
+    vDSP.multiply(scratch, outputs, result: &outputs)
   }
 }
 
@@ -344,7 +346,6 @@ final class ArrowConst: Arrow11, ValHaver, Equatable {
   }
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
     vDSP.fill(&outputs, with: val)
-    //vDSP_vfill(&val, outputs.baseAddress!, 1, vDSP_Length(inputs.count))
   }
 
   static func == (lhs: ArrowConst, rhs: ArrowConst) -> Bool {

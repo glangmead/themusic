@@ -75,7 +75,6 @@ final class Sawtooth: Arrow11, WidthHaver {
       let width = widthOutputs[i]
       outputs[i] = (modResult < width) ? (2 * modResult / width) - 1 : 0
     }
-    let avg = vDSP.mean(outputs)
   }
 }
 
