@@ -26,8 +26,11 @@ struct ArrowChart: View {
     var times = [CoreFloat](repeating: 0, count: 512)
     var amps = [CoreFloat](repeating: 0, count: 512)
     vDSP.formRamp(withInitialValue: now, increment: dt, result: &times)
+    // process will use times.count which is MAX_BUFFER_SIZE
     arrow.process(inputs: times, outputs: &amps)
-    return (0..<numSamplesToPlot).map { i in
+    
+    let plotCount = min(numSamplesToPlot, MAX_BUFFER_SIZE)
+    return (0..<plotCount).map { i in
       return Sample(time: times[i], amp: amps[i])
     }
   }

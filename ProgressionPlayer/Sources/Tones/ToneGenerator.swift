@@ -14,17 +14,15 @@ protocol WidthHaver {
 }
 
 final class Sine: Arrow11, WidthHaver {
-  private var scratch = [CoreFloat](repeating: 0, count: 512)
+  private var scratch = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
   var widthArr: Arrow11 = ArrowConst(value: 1.0)
-//  func of(_ t: CoreFloat) -> CoreFloat {
-//    let width = widthArr.of(t)
-//    let innerResult = inner(t)
-//    return (fmod(innerResult, 1) < width) ? sin(2 * .pi * innerResult / width) : 0
-//  }
+
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
     //widthArr.process(inputs: inputs, outputs: &widthOutputs)
     (innerArr ?? ArrowIdentity()).process(inputs: inputs, outputs: &scratch)
-    vDSP.multiply(2 * .pi, scratch, result: &scratch)
+    
+    vDSP.multiply(2 * .pi, scratch[0..<inputs.count], result: &scratch[0..<inputs.count])
+    
     //vDSP.divide(outputs, widthOutputs, result: &outputs)
     // zero out some of the inners, to the right of the width cutoff
     //for i in 0..<inputs.count {
@@ -32,12 +30,14 @@ final class Sine: Arrow11, WidthHaver {
     //    outputs[i] = 0
     //  }
     //}
-    vForce.sin(scratch, result: &outputs)
+    
+    // Slice scratch for vForce.sin to match outputs size
+    vForce.sin(scratch[0..<inputs.count], result: &outputs)
   }
 }
 
 final class Triangle: Arrow11, WidthHaver {
-  private var widthOutputs = [CoreFloat](repeating: 0, count: 512)
+  private var widthOutputs = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
   var widthArr: Arrow11 = ArrowConst(value: 1.0)
 //  func of(_ t: CoreFloat) -> CoreFloat {
 //    let width = widthArr.of(t)
@@ -59,7 +59,7 @@ final class Triangle: Arrow11, WidthHaver {
 }
 
 final class Sawtooth: Arrow11, WidthHaver {
-  private var widthOutputs = [CoreFloat](repeating: 0, count: 512)
+  private var widthOutputs = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
   var widthArr: Arrow11 = ArrowConst(value: 1.0)
 //  func of(_ t: CoreFloat) -> CoreFloat {
 //    let width = widthArr.of(t)
@@ -79,7 +79,7 @@ final class Sawtooth: Arrow11, WidthHaver {
 }
 
 final class Square: Arrow11, WidthHaver {
-  private var widthOutputs = [CoreFloat](repeating: 0, count: 512)
+  private var widthOutputs = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
   var widthArr: Arrow11 = ArrowConst(value: 1.0)
 //  func of(_ t: CoreFloat) -> CoreFloat {
 //    let width = widthArr.of(t)
@@ -99,7 +99,7 @@ final class Square: Arrow11, WidthHaver {
 final class Noise: Arrow11, WidthHaver {
   var widthArr: Arrow11 = ArrowConst(value: 1.0)
   
-  private var randomInts = [UInt32](repeating: 0, count: 512)
+  private var randomInts = [UInt32](repeating: 0, count: MAX_BUFFER_SIZE)
   private let scale: CoreFloat = 1.0 / CoreFloat(UInt32.max)
 
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
@@ -222,7 +222,7 @@ final class BasicOscillator: Arrow11 {
   private let sawtoothUnmanaged: Unmanaged<Arrow11>?
   private let squareUnmanaged: Unmanaged<Arrow11>?
   private let noiseUnmanaged: Unmanaged<Arrow11>?
-  private var innerVals = [CoreFloat](repeating: 0, count: 512)
+  private var innerVals = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
 
   var arrow: (Arrow11 & WidthHaver)? = nil
   private var arrUnmanaged: Unmanaged<Arrow11>? = nil
@@ -300,7 +300,7 @@ final class Choruser: Arrow11 {
   var valueToChorus: String
   var centPowers = ContiguousArray<CoreFloat>()
   let cent: CoreFloat = 1.0005777895065548 // '2 ** (1/1200)' in python
-  private var innerVals = [CoreFloat](repeating: 0, count: 512)
+  private var innerVals = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
 
   init(chorusCentRadius: Int, chorusNumVoices: Int, valueToChorus: String) {
     self.chorusCentRadius = chorusCentRadius
@@ -325,7 +325,8 @@ final class Choruser: Arrow11 {
             for i in spreadFreqs.indices {
               freqArrow.val = spreadFreqs[i]
               (innerArr ?? ArrowIdentity()).process(inputs: inputs, outputs: &innerVals)
-              vDSP.add(outputs, innerVals, result: &outputs)
+              // safe slicing for vDSP.add
+              vDSP.add(outputs[0..<inputs.count], innerVals[0..<inputs.count], result: &outputs[0..<inputs.count])
             }
             // restore
             freqArrow.val = baseFreq
@@ -356,9 +357,9 @@ final class Choruser: Arrow11 {
 
 // from https://www.w3.org/TR/audio-eq-cookbook/
 final class LowPassFilter2: Arrow11 {
-  private var innerVals = [CoreFloat](repeating: 0, count: 512)
-  private var cutoffs = [CoreFloat](repeating: 0, count: 512)
-  private var resonances = [CoreFloat](repeating: 0, count: 512)
+  private var innerVals = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
+  private var cutoffs = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
+  private var resonances = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
   private var previousTime: CoreFloat
   private var previousInner1: CoreFloat
   private var previousInner2: CoreFloat

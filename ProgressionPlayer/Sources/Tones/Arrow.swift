@@ -9,6 +9,7 @@ import Accelerate
 import AVFAudio
 
 typealias CoreFloat = Double
+let MAX_BUFFER_SIZE = 4096
 
 class Arrow11 {
   // these are arrows with which we can compose (arr/arrs run first, then this arrow)
@@ -56,9 +57,9 @@ class Arrow11 {
 
   // old single-time behavior, wrapping the vector version
   func of(_ t: CoreFloat) -> CoreFloat {
-    var input = [CoreFloat](repeating: 0, count: 512)
+    var input = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
     input[0] = t
-    var result = [CoreFloat](repeating: 0, count: 512)
+    var result = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
     process(inputs: input, outputs: &result)
     return result[0]
   }
@@ -83,7 +84,7 @@ final class ControlArrow11: Arrow11 {
   var lastTimeEmittedSecs: CoreFloat = 0.0
   var lastEmission: CoreFloat = 0.0
   let timeBetweenEmissionsSecs: CoreFloat = 441.0 / 44100.0
-  private var scratchBuffer = [CoreFloat](repeating: 0, count: 512)
+  private var scratchBuffer = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
 
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
     (innerArr ?? ArrowIdentity()).process(inputs: inputs, outputs: &scratchBuffer)
@@ -99,7 +100,7 @@ final class ControlArrow11: Arrow11 {
 }
 
 final class ArrowSum: Arrow11 {
-  private var scratchBuffer = [CoreFloat](repeating: 0, count: 512)
+  private var scratchBuffer = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
   
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
     if innerArrsUnmanaged.isEmpty {
@@ -119,15 +120,16 @@ final class ArrowSum: Arrow11 {
           $0.process(inputs: inputs, outputs: &scratchBuffer)
         }
         // output = output + scratch
-        vDSP.add(scratchBuffer, outputs, result: &outputs)
+        // slice both scratch and outputs to ensure matching sizes
+        vDSP.add(scratchBuffer[0..<inputs.count], outputs[0..<inputs.count], result: &outputs[0..<inputs.count])
       }
     }
   }
 }
 
 final class ArrowProd: Arrow11 {
-  private var scratchBuffer = [CoreFloat](repeating: 0, count: 512)
-  private var scratchBuffer2 = [CoreFloat](repeating: 0, count: 512)
+  private var scratchBuffer = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
+
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
     if innerArrsUnmanaged.isEmpty {
       vDSP.fill(&outputs, with: 1)
@@ -153,9 +155,9 @@ final class ArrowProd: Arrow11 {
         innerArrsUnmanaged[i]._withUnsafeGuaranteedRef {
           $0.process(inputs: inputs, outputs: &scratchBuffer)
         }
-        // output = output * scratch
-        vDSP.multiply(scratchBuffer, outputs, result: &scratchBuffer2)
-        outputs = scratchBuffer2
+        // output = output * scratch (in-place)
+        // slice both scratch and outputs to ensure matching sizes
+        vDSP.multiply(scratchBuffer[0..<inputs.count], outputs[0..<inputs.count], result: &outputs[0..<inputs.count])
       }
     }
   }
@@ -170,7 +172,7 @@ func clamp(_ val: CoreFloat, min: CoreFloat, max: CoreFloat) -> CoreFloat {
 final class ArrowExponentialRandom: Arrow11 {
   var min: CoreFloat
   var max: CoreFloat
-  var scratch = [CoreFloat](repeating: 1, count: 512)
+  var scratch = [CoreFloat](repeating: 1, count: MAX_BUFFER_SIZE)
   init(min: CoreFloat, max: CoreFloat) {
     let neg = min < 0 || max < 0
     self.min = neg ? clamp(min, min: min, max: -0.001) : clamp(min, min: 0.001, max: min)
@@ -178,12 +180,18 @@ final class ArrowExponentialRandom: Arrow11 {
     super.init()
   }
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
+    // Fill scratch with the constant factor
     vDSP.fill(&scratch, with: min * exp(log(max / min)))
+    
+    // Generate random values in outputs
     // Default implementation: loop
     for i in 0..<inputs.count {
       outputs[i] = CoreFloat.random(in: 0...1)
     }
-    vDSP.multiply(scratch, outputs, result: &outputs)
+    
+    // Multiply scratch (sliced) with outputs
+    // slice both scratch and outputs to ensure matching sizes
+    vDSP.multiply(scratch[0..<inputs.count], outputs[0..<inputs.count], result: &outputs[0..<inputs.count])
   }
 }
 
@@ -194,12 +202,12 @@ func sqrtPosNeg(_ val: CoreFloat) -> CoreFloat {
 // Mix two of the arrows in a list, viewing the mixPoint as a point somewhere between two of the arrows
 // Compare to Supercollider's `Select`
 final class ArrowCrossfade: Arrow11 {
-  private var mixPoints = [CoreFloat](repeating: 0, count: 512)
+  private var mixPoints = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
   private var arrowOuts = [[CoreFloat]]()
   var mixPointArr: Arrow11
   init(innerArrs: [Arrow11], mixPointArr: Arrow11) {
     self.mixPointArr = mixPointArr
-    arrowOuts = [[CoreFloat]](repeating: [CoreFloat](repeating: 0, count: 512), count: innerArrs.count)
+    arrowOuts = [[CoreFloat]](repeating: [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE), count: innerArrs.count)
     super.init(innerArrs: innerArrs)
   }
 
@@ -226,12 +234,12 @@ final class ArrowCrossfade: Arrow11 {
 // Use sqrt to maintain equal power and avoid a dip in perceived volume at the center point.
 // Compare to Supercollider's `SelectX`
 final class ArrowEqualPowerCrossfade: Arrow11 {
-  private var mixPoints = [CoreFloat](repeating: 0, count: 512)
+  private var mixPoints = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
   private var arrowOuts = [[CoreFloat]]()
   var mixPointArr: Arrow11
   init(innerArrs: [Arrow11], mixPointArr: Arrow11) {
     self.mixPointArr = mixPointArr
-    arrowOuts = [[CoreFloat]](repeating: [CoreFloat](repeating: 0, count: 512), count: innerArrs.count)
+    arrowOuts = [[CoreFloat]](repeating: [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE), count: innerArrs.count)
     super.init(innerArrs: innerArrs)
   }
 

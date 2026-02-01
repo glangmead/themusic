@@ -36,8 +36,8 @@ struct MusicEvent {
   let modulators: [String: Arrow11]
   let timeOrigin: Double
   var cleanup: (() async -> Void)? = nil
-  var timeBuffer = [CoreFloat](repeating: 0, count: 512)
-  var arrowBuffer = [CoreFloat](repeating: 0, count: 512)
+  var timeBuffer = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
+  var arrowBuffer = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
 
   private(set) var voice: PoolVoice? = nil
   
@@ -59,9 +59,10 @@ struct MusicEvent {
           arrowConst.val = arrowBuffer[0]
         }
       }
-      for preset in presets {
-        preset.positionLFO?.phase = CoreFloat.random(in: 0...(2.0 * .pi))
-      }
+    }
+    
+    for preset in presets {
+      preset.positionLFO?.phase = CoreFloat.random(in: 0...(2.0 * .pi))
     }
 
     notes.forEach {
