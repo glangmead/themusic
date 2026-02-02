@@ -19,21 +19,22 @@ final class Sine: Arrow11, WidthHaver {
   var widthArr: Arrow11 = ArrowConst(value: 1.0)
 
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
+    let minBufferCount = min(inputs.count, outputs.count)
     widthArr.process(inputs: inputs, outputs: &widthOutputs)
     (innerArr ?? ArrowIdentity()).process(inputs: inputs, outputs: &scratch)
     
-    vDSP.multiply(2 * .pi, scratch[0..<inputs.count], result: &scratch[0..<inputs.count])
+    vDSP.multiply(2 * .pi, scratch[0..<minBufferCount], result: &scratch[0..<minBufferCount])
     
-    vDSP.divide(outputs[0..<inputs.count], widthOutputs[0..<inputs.count], result: &outputs[0..<inputs.count])
+    vDSP.divide(outputs[0..<minBufferCount], widthOutputs[0..<minBufferCount], result: &outputs[0..<minBufferCount])
     // zero out some of the inners, to the right of the width cutoff
-    for i in 0..<inputs.count {
+    for i in 0..<minBufferCount {
       if fmod(outputs[i], 1) > widthOutputs[i] {
         outputs[i] = 0
       }
     }
     
     // Slice scratch for vForce.sin to match outputs size
-    vForce.sin(scratch[0..<inputs.count], result: &outputs[0..<inputs.count])
+    vForce.sin(scratch[0..<minBufferCount], result: &outputs[0..<minBufferCount])
   }
 }
 
