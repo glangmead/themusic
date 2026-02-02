@@ -19,6 +19,9 @@ struct AppView: View {
         SongView()
       }
     }
+    .onAppear {
+      VisualizerWarmer.shared.warmup()
+    }
 
   }
 }

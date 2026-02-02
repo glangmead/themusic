@@ -8,6 +8,34 @@
 import SwiftUI
 import WebKit
 
+// Pre-loads the visualizer resources to avoid a hitch on first open
+class VisualizerWarmer {
+  static let shared = VisualizerWarmer()
+  private var webView: WKWebView?
+  
+  func warmup() {
+    print("VisualizerWarmer: Warming up...")
+    let config = WKWebViewConfiguration()
+    config.preferences.setValue(true, forKey: "allowFileAccessFromFileURLs")
+    config.setValue(true, forKey: "allowUniversalAccessFromFileURLs")
+    
+    // Create a hidden webview to trigger the process creation and file loading
+    let webView = VisualizerWebView(frame: .zero, configuration: config)
+    self.webView = webView
+    
+    if let indexURL = Bundle.main.url(forResource: "index", withExtension: "html") {
+      webView.loadFileURL(indexURL, allowingReadAccessTo: indexURL.deletingLastPathComponent())
+    }
+    
+    // Keep it alive for a moment to ensure loading starts.
+    // We'll keep it for 10 seconds which should be plenty for the "first time" initialization to happen.
+    DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
+      print("VisualizerWarmer: Warmup complete, releasing temporary webview.")
+      self.webView = nil
+    }
+  }
+}
+
 // Host a web view that displays the Butterchurn-ios visualizer.
 // The visualizer index.html is modified from https://github.com/pxl-pshr/butterchurn-ios
 // The two .js files it imported were copied from the CDN into the app bundle:
