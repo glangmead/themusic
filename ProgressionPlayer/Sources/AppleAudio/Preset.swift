@@ -289,11 +289,17 @@ class InstrumentWithAVAudioUnitEffects {
   private func loadSamplerInstrument(_ node: AVAudioUnitSampler, fileName: String) {
     if let url = Bundle.main.url(forResource: fileName, withExtension: "wav") ??
                  Bundle.main.url(forResource: fileName, withExtension: "aiff") ??
-                 Bundle.main.url(forResource: fileName, withExtension: "aif") {
+        Bundle.main.url(forResource: fileName, withExtension: "aif") {
       do {
         try node.loadAudioFiles(at: [url])
       } catch {
         print("Error loading sampler instrument \(fileName): \(error.localizedDescription)")
+      }
+    } else if let url = Bundle.main.url(forResource: fileName, withExtension: "sf2") {
+      do {
+        try node.loadSoundBankInstrument(at: url, program: 1, bankMSB: 0x79, bankLSB: 0)
+      } catch {
+        print("Error loading sound bank instrument \(fileName): \(error.localizedDescription)")
       }
     } else {
       print("Could not find sampler file: \(fileName)")
