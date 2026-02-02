@@ -11,7 +11,7 @@ import AVFAudio
 typealias CoreFloat = Float
 let MAX_BUFFER_SIZE = 4096
 
-class Arrow11 {
+class Arrow11 { 
   // these are arrows with which we can compose (arr/arrs run first, then this arrow)
   var innerArr: Arrow11? = nil {
     didSet {
