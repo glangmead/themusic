@@ -8,7 +8,7 @@
 import Accelerate
 import AVFAudio
 
-typealias CoreFloat = Double
+typealias CoreFloat = Float
 let MAX_BUFFER_SIZE = 4096
 
 class Arrow11 {
@@ -184,6 +184,12 @@ final class ArrowExponentialRandom: Arrow11 {
     self.max = neg ? clamp(max, min: max, max: -0.001) : clamp(max, min: 0.001, max: max)
     super.init()
   }
+  override func of(_ t: CoreFloat) -> CoreFloat {
+    let rando = CoreFloat.random(in: 0...1) * min * exp(log(max / min))
+    //print("exponential random \(min)-\(max): \(rando)")
+    return rando
+  }
+  
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
     // Fill scratch with the constant factor
     vDSP.fill(&scratch, with: min * exp(log(max / min)))

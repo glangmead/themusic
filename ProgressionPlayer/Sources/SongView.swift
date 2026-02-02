@@ -107,7 +107,7 @@ struct SongView: View {
               ]),
               "overallAmp2": EventUsingArrow(ofEvent: { event, _ in 1.0 / (CoreFloat(event.notes[0].note % 12) + 1.0)  }),
               "overallCentDetune": ArrowRandom(min: -5, max: 5),
-              "vibratoAmp": ArrowExponentialRandom(min: 0.01, max: 0.05),
+              "vibratoAmp": ArrowExponentialRandom(min: 2, max: 20),
               "vibratoFreq": ArrowRandom(min: 1, max: 25)
             ],
             // a pitch consists of: root (NoteClass), Scale, octave, degree (element of Scale)

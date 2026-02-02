@@ -14,7 +14,7 @@ struct ProgressionPlayerApp: App {
   @State private var synth: SyntacticSynth
   init() {
     do {
-      try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+      try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default, options: [.mixWithOthers, .allowBluetoothHFP, .allowAirPlay])
       try AVAudioSession.sharedInstance().setActive(true)
     } catch {
       print("AppDelegate Debug - Error setting AVAudioSession category. Because of this, there may be no sound. \(error)")
