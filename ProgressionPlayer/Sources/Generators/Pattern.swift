@@ -24,8 +24,6 @@ final class EventUsingArrow: Arrow11 {
   }
 }
 
-// (MusicEvent) -> CoreFloat given by 1.0 / (1.0 + CoreFloat($0.notes[0].noteValue))
-
 // a musical utterance to play at one point in time, a set of simultaneous noteOns
 struct MusicEvent {
   // could the PoolVoice wrapping these presets be sent in, and with modulation already provided?
@@ -39,25 +37,34 @@ struct MusicEvent {
   var timeBuffer = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
   var arrowBuffer = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
 
-  private(set) var voice: PoolVoice? = nil
+  private(set) var voice: NoteHandler? = nil
   
   mutating func play() async throws {
-    // wrap my designated presets (sound+FX generators) in a PoolVoice
-    let noteHandlers = presets.map { EnvelopeHandlePlayer(arrow: $0.sound) }
-    self.voice = PoolVoice(voices: noteHandlers)
+    if presets.isEmpty { return }
     
-    // Apply modulation
-    let now = CoreFloat(Date.now.timeIntervalSince1970 - timeOrigin)
-    timeBuffer[0] = now
-    for (key, modulatingArrow) in modulators {
-      if voice!.namedConsts[key] != nil {
-        if let arrowConst = voice!.namedConsts[key]!.first {
-          if let eventUsingArrow = modulatingArrow as? EventUsingArrow {
-            eventUsingArrow.event = self
+    // Check if we are using arrows or samplers (assuming all presets are of the same type)
+    if presets[0].sound != nil {
+      // wrap my designated presets (sound+FX generators) in a PoolVoice
+      let noteHandlers = presets.map { EnvelopeHandlePlayer(arrow: $0.sound!) }
+      let poolVoice = PoolVoice(voices: noteHandlers)
+      self.voice = poolVoice
+      
+      // Apply modulation (only supported for Arrow-based presets)
+      let now = CoreFloat(Date.now.timeIntervalSince1970 - timeOrigin)
+      timeBuffer[0] = now
+      for (key, modulatingArrow) in modulators {
+        if poolVoice.namedConsts[key] != nil {
+          if let arrowConst = poolVoice.namedConsts[key]!.first {
+            if let eventUsingArrow = modulatingArrow as? EventUsingArrow {
+              eventUsingArrow.event = self
+            }
+            arrowConst.val = modulatingArrow.of(now)
           }
-          arrowConst.val = modulatingArrow.of(now)
         }
       }
+    } else if let _ = presets[0].samplerNode {
+      let noteHandlers = presets.compactMap { $0.samplerNode }.map { SamplerVoice(node: $0) }
+      self.voice = PolyphonicVoiceGroup(voices: noteHandlers)
     }
     
     for preset in presets {

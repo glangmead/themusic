@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import AVFAudio
 
 /// Taking data such as a MIDI note and driving an oscillator, filter, and amp envelope to emit something in particular.
 
@@ -21,6 +22,7 @@ struct MidiNote {
 
 final class EnvelopeHandlePlayer: ArrowWithHandles, NoteHandler {
   var arrow: ArrowWithHandles
+  var globalOffset: Int  = 0
   init(arrow: ArrowWithHandles) {
     self.arrow = arrow
     super.init(arrow)
@@ -52,6 +54,25 @@ final class EnvelopeHandlePlayer: ArrowWithHandles, NoteHandler {
 protocol NoteHandler: AnyObject {
   func noteOn(_ note: MidiNote)
   func noteOff(_ note: MidiNote)
+  var globalOffset: Int { get set }
+  func applyOffset(note: UInt8) -> UInt8
+}
+
+extension NoteHandler {
+  func applyOffset(note: UInt8) -> UInt8 {
+    var result = note
+    if globalOffset < 0 {
+      if -1 * globalOffset < Int(result) {
+        result -= UInt8(-1 * globalOffset)
+      } else {
+        result = 0
+      }
+    } else {
+      let offsetResult = Int(result) + globalOffset
+      result = UInt8(clamping: offsetResult)
+    }
+    return result
+  }
 }
 
 // Have a collection of note-handling arrows, which we sum as our output.
@@ -119,20 +140,77 @@ final class PoolVoice: ArrowWithHandles, NoteHandler {
       noteToVoiceIdx.removeValue(forKey: noteVelIn.note)
     }
   }
+}
+
+final class SamplerVoice: NoteHandler {
+  var globalOffset: Int = 0
+  let samplerNode: AVAudioUnitSampler
   
-  func applyOffset(note: UInt8) -> UInt8 {
-    var result = note
-    if globalOffset < 0 {
-      if -1 * globalOffset < result {
-        result -= UInt8(-1 * globalOffset)
-      } else {
-        result = 0
-      }
-    } else {
-      result += UInt8(globalOffset)
-    }
-    return result
+  init(node: AVAudioUnitSampler) {
+    self.samplerNode = node
+  }
+  
+  func noteOn(_ note: MidiNote) {
+    let offsetNote = applyOffset(note: note.note)
+    samplerNode.startNote(offsetNote, withVelocity: note.velocity, onChannel: 0)
+  }
+  
+  func noteOff(_ note: MidiNote) {
+    let offsetNote = applyOffset(note: note.note)
+    samplerNode.stopNote(offsetNote, onChannel: 0)
   }
 }
 
-
+final class PolyphonicVoiceGroup: NoteHandler {
+  var globalOffset: Int = 0
+  private let voices: [NoteHandler]
+  private let voiceCount: Int
+  
+  // treating voices as a pool of resources
+  private var noteOnnedVoiceIdxs: Set<Int>
+  private var availableVoiceIdxs: Set<Int>
+  var noteToVoiceIdx: [MidiValue: Int]
+  
+  init(voices: [NoteHandler]) {
+    self.voices = voices
+    self.voiceCount = voices.count
+    
+    // mark all voices as available
+    availableVoiceIdxs = Set(0..<voices.count)
+    noteOnnedVoiceIdxs = Set<Int>()
+    noteToVoiceIdx = [:]
+  }
+  
+  private func takeAvailableVoice(_ note: MidiValue) -> NoteHandler? {
+    if let availableIdx = (0..<voiceCount).first(where: {
+      availableVoiceIdxs.contains($0)
+    }) {
+      availableVoiceIdxs.remove(availableIdx)
+      noteOnnedVoiceIdxs.insert(availableIdx)
+      noteToVoiceIdx[note] = availableIdx
+      return voices[availableIdx]
+    }
+    return nil
+  }
+  
+  func noteOn(_ noteVelIn: MidiNote) {
+    let noteVel = MidiNote(note: applyOffset(note: noteVelIn.note), velocity: noteVelIn.velocity)
+    // case 1: this note is being played by a voice already: send noteOff then noteOn to re-up it
+    if let voiceIdx = noteToVoiceIdx[noteVelIn.note] {
+      voices[voiceIdx].noteOn(noteVel)
+    // case 2: assign a fresh voice to the note
+    } else if let handler = takeAvailableVoice(noteVelIn.note) {
+      handler.noteOn(noteVel)
+    }
+  }
+  
+  func noteOff(_ noteVelIn: MidiNote) {
+    let noteVel = MidiNote(note: applyOffset(note: noteVelIn.note), velocity: noteVelIn.velocity)
+    if let voiceIdx = noteToVoiceIdx[noteVelIn.note] {
+      voices[voiceIdx].noteOff(noteVel)
+      noteOnnedVoiceIdxs.remove(voiceIdx)
+      availableVoiceIdxs.insert(voiceIdx)
+      noteToVoiceIdx.removeValue(forKey: noteVelIn.note)
+    }
+  }
+}

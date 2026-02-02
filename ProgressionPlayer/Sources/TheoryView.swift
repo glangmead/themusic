@@ -76,7 +76,7 @@ struct TheoryView: View {
         
         KnobbyKnob(value: $noteOffset, range: -50...50, stepSize: 1)
           .onChange(of: noteOffset, initial: true) {
-            synth.poolVoice?.globalOffset = Int(noteOffset)
+            synth.voicePool?.globalOffset = Int(noteOffset)
           }
 
         HStack {
@@ -108,6 +108,7 @@ struct TheoryView: View {
             isShowingSynth = true
             #endif
           }
+          .disabled(synth.poolVoice == nil)
           Button("Presets") {
             isShowingPresetList = true
           }

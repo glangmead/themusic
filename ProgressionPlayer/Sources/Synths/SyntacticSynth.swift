@@ -229,103 +229,118 @@ class SyntacticSynth: EngineAndVoicePool {
 
   private func setup(presetSpec: PresetSyntax) {
     var avNodes = [AVAudioMixerNode]()
-    for _ in 1...numVoices {
+    
+    if presetSpec.arrow != nil {
+      for _ in 1...numVoices {
+        let preset = presetSpec.compile()
+        presets.append(preset)
+        if let sound = preset.sound {
+          tones.append(sound)
+        }
+        
+        let node = preset.wrapInAppleNodes(forEngine: self.engine)
+        avNodes.append(node)
+      }
+      engine.connectToEnvNode(avNodes)
+      // voicePool is the object that the sequencer plays
+      let poolVoice = PoolVoice(voices: tones.map { EnvelopeHandlePlayer(arrow: $0) })
+      self.poolVoice = poolVoice
+      voicePool = poolVoice
+    } else if presetSpec.samplerFilename != nil {
       let preset = presetSpec.compile()
       presets.append(preset)
-      let sound = preset.sound
-      tones.append(sound)
-      
       let node = preset.wrapInAppleNodes(forEngine: self.engine)
       avNodes.append(node)
+      engine.connectToEnvNode(avNodes)
+      
+      if let samplerNode = preset.samplerNode {
+        voicePool = SamplerVoice(node: samplerNode)
+        self.poolVoice = nil
+      }
     }
-    engine.connectToEnvNode(avNodes)
-    // voicePool is the object that the sequencer plays
-    let poolVoice = PoolVoice(voices: tones.map { EnvelopeHandlePlayer(arrow: $0) })
-    self.poolVoice = poolVoice
-    voicePool = poolVoice
     
     // read from poolVoice to see what keys we must support getting/setting
-    if let ampEnv = poolVoice.namedADSREnvelopes["ampEnv"]?.first {
+    if let ampEnv = poolVoice?.namedADSREnvelopes["ampEnv"]?.first {
       ampAttack  = ampEnv.env.attackTime
       ampDecay   = ampEnv.env.decayTime
       ampSustain = ampEnv.env.sustainLevel
       ampRelease = ampEnv.env.releaseTime
     }
 
-    if let filterEnv = poolVoice.namedADSREnvelopes["filterEnv"]?.first {
+    if let filterEnv = poolVoice?.namedADSREnvelopes["filterEnv"]?.first {
       filterAttack  = filterEnv.env.attackTime
       filterDecay   = filterEnv.env.decayTime
       filterSustain = filterEnv.env.sustainLevel
       filterRelease = filterEnv.env.releaseTime
     }
     
-    if let cutoff = poolVoice.namedConsts["cutoff"]?.first {
+    if let cutoff = poolVoice?.namedConsts["cutoff"]?.first {
       filterCutoff = cutoff.val
     }
-    if let res = poolVoice.namedConsts["resonance"]?.first {
+    if let res = poolVoice?.namedConsts["resonance"]?.first {
       filterResonance = res.val
     }
     
-    if let vibAmp = poolVoice.namedConsts["vibratoAmp"]?.first {
+    if let vibAmp = poolVoice?.namedConsts["vibratoAmp"]?.first {
       vibratoAmp = vibAmp.val
     }
-    if let vibFreq = poolVoice.namedConsts["vibratoFreq"]?.first {
+    if let vibFreq = poolVoice?.namedConsts["vibratoFreq"]?.first {
       vibratoFreq = vibFreq.val
     }
     
-    if let o1Mix = poolVoice.namedConsts["osc1Mix"]?.first {
+    if let o1Mix = poolVoice?.namedConsts["osc1Mix"]?.first {
       osc1Mix = o1Mix.val
     }
-    if let o2Mix = poolVoice.namedConsts["osc2Mix"]?.first {
+    if let o2Mix = poolVoice?.namedConsts["osc2Mix"]?.first {
       osc2Mix = o2Mix.val
     }
-    if let o3Mix = poolVoice.namedConsts["osc3Mix"]?.first {
+    if let o3Mix = poolVoice?.namedConsts["osc3Mix"]?.first {
       osc3Mix = o3Mix.val
     }
     
-    if let o1Choruser = poolVoice.namedChorusers["osc1Choruser"]?.first {
+    if let o1Choruser = poolVoice?.namedChorusers["osc1Choruser"]?.first {
       osc1ChorusCentRadius = CoreFloat(o1Choruser.chorusCentRadius)
       osc1ChorusNumVoices  = CoreFloat(o1Choruser.chorusNumVoices)
     }
-    if let o2Choruser = poolVoice.namedChorusers["osc2Choruser"]?.first {
+    if let o2Choruser = poolVoice?.namedChorusers["osc2Choruser"]?.first {
       osc2ChorusCentRadius = CoreFloat(o2Choruser.chorusCentRadius)
       osc2ChorusNumVoices  = CoreFloat(o2Choruser.chorusNumVoices)
     }
-    if let o3Choruser = poolVoice.namedChorusers["osc3Choruser"]?.first {
+    if let o3Choruser = poolVoice?.namedChorusers["osc3Choruser"]?.first {
       osc3ChorusCentRadius = CoreFloat(o3Choruser.chorusCentRadius)
       osc3ChorusNumVoices  = CoreFloat(o3Choruser.chorusNumVoices)
     }
 
-    if let o1 = poolVoice.namedBasicOscs["osc1"]?.first {
+    if let o1 = poolVoice?.namedBasicOscs["osc1"]?.first {
       oscShape1 = o1.shape
       osc1Width = o1.widthArr.of(0)
     }
-    if let o2 = poolVoice.namedBasicOscs["osc2"]?.first {
+    if let o2 = poolVoice?.namedBasicOscs["osc2"]?.first {
       oscShape2 = o2.shape
       osc2Width = o2.widthArr.of(0)
     }
-    if let o3 = poolVoice.namedBasicOscs["osc3"]?.first {
+    if let o3 = poolVoice?.namedBasicOscs["osc3"]?.first {
       oscShape3 = o3.shape
       osc3Width = o3.widthArr.of(0)
     }
 
-    if let o1Oct = poolVoice.namedConsts["osc1Octave"]?.first {
+    if let o1Oct = poolVoice?.namedConsts["osc1Octave"]?.first {
       osc1Octave = o1Oct.val
     }
-    if let o2Oct = poolVoice.namedConsts["osc2Octave"]?.first {
+    if let o2Oct = poolVoice?.namedConsts["osc2Octave"]?.first {
       osc2Octave = o2Oct.val
     }
-    if let o3Oct = poolVoice.namedConsts["osc3Octave"]?.first {
+    if let o3Oct = poolVoice?.namedConsts["osc3Octave"]?.first {
       osc3Octave = o3Oct.val
     }
 
-    if let o1Det = poolVoice.namedConsts["osc1CentDetune"]?.first {
+    if let o1Det = poolVoice?.namedConsts["osc1CentDetune"]?.first {
       osc1CentDetune = o1Det.val
     }
-    if let o2Det = poolVoice.namedConsts["osc2CentDetune"]?.first {
+    if let o2Det = poolVoice?.namedConsts["osc2CentDetune"]?.first {
       osc2CentDetune = o2Det.val
     }
-    if let o3Det = poolVoice.namedConsts["osc3CentDetune"]?.first {
+    if let o3Det = poolVoice?.namedConsts["osc3CentDetune"]?.first {
       osc3CentDetune = o3Det.val
     }
     

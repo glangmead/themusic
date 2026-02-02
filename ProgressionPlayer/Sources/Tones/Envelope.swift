@@ -19,6 +19,7 @@ struct EnvelopeData {
 /// Hence it is also a NoteHandler, so we can tell it when to begin to attack, and when to begin to decay.
 /// Within that concept, ADSR is a specific family of functions. This is a linear one.
 class ADSR: Arrow11, NoteHandler {
+  var globalOffset: Int = 0
   enum EnvelopeState {
     case closed
     case attack

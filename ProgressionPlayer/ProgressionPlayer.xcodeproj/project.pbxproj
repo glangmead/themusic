@@ -96,6 +96,11 @@
 			path = ProgressionPlayerUITests;
 			sourceTree = "<group>";
 		};
+		9BDE46DF2F31351900BD36C5 /* samples */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = samples;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +147,7 @@
 				9BCED9132F1FD2E30029ED1B /* butterchurn-presets.js */,
 				9BCED98F2F246B150029ED1B /* Orbital.icon */,
 				9B7924162F2A895000A51087 /* presets */,
+				9BDE46DF2F31351900BD36C5 /* samples */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -196,6 +202,7 @@
 			fileSystemSynchronizedGroups = (
 				9B7924162F2A895000A51087 /* presets */,
 				9BC0FCA92E704EA900472A5A /* Sources */,
+				9BDE46DF2F31351900BD36C5 /* samples */,
 			);
 			name = ProgressionPlayer;
 			packageProductDependencies = (

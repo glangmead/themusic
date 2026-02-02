@@ -30,13 +30,23 @@ struct EffectsSyntax: Codable {
 
 struct PresetSyntax: Codable {
   let name: String
-  let arrow: ArrowSyntax
+  let arrow: ArrowSyntax? // a sound synthesized in code, to be attached to an AVAudioSourceNode; mutually exclusive with a sample
+  let samplerFilename: String? // a sound from an audio file in our bundle; mutually exclusive with an arrow
   let rose: RoseSyntax
   let effects: EffectsSyntax
   
   func compile() -> Preset {
-    let sound = arrow.compile()
-    let preset = Preset(sound: sound)
+    let preset: Preset
+    if let arrowSyntax = arrow {
+      let sound = arrowSyntax.compile()
+      preset = Preset(sound: sound)
+    } else if let samplerName = samplerFilename {
+      preset = Preset(samplerFileName: samplerName)
+    } else {
+       preset = Preset(sound: ArrowWithHandles(ArrowConst(value: 0)))
+       fatalError("PresetSyntax must have either arrow or sampler")
+    }
+    
     preset.name = name
     preset.reverbPreset = AVAudioUnitReverbPreset(rawValue: Int(effects.reverbPreset)) ?? .mediumRoom
     preset.setReverbWetDryMix(effects.reverbWetDryMix)
@@ -56,19 +66,24 @@ struct PresetSyntax: Codable {
 
 @Observable
 class InstrumentWithAVAudioUnitEffects {
-  var name: String = ""
-  var sound: ArrowWithHandles
-  var audioGate: AudioGate
+  var name: String = "Noname"
+  
+  // sound synthesized in our code, and an audioGate to help control its perf
+  var sound: ArrowWithHandles? = nil
+  var audioGate: AudioGate? = nil
+  private var sourceNode: AVAudioSourceNode? = nil
+
+  // sound from an audio sample
+  var samplerNode: AVAudioUnitSampler? = nil
+  var samplerFileName: String? = nil
+  
+  // movement of the mixerNode in the environment node (see SpatialAudioEngine)
   var positionLFO: Rose? = nil
   var timeOrigin: Double = 0
-  
   private var positionTask: Task<(), Error>?
   
-  private var sourceNode: AVAudioSourceNode? = nil
-  private var playerNode: AVAudioPlayerNode? = nil
-  
-  // members whose params we can expose
-  private var reverbNode: AVAudioUnitReverb?
+  // FX nodes: members whose params we can expose
+  private var reverbNode: AVAudioUnitReverb? = nil
   private var mixerNode = AVAudioMixerNode()
   private var delayNode: AVAudioUnitDelay? = AVAudioUnitDelay()
   private var distortionNode: AVAudioUnitDistortion? = nil
@@ -82,15 +97,15 @@ class InstrumentWithAVAudioUnitEffects {
   }
   
   func activate() {
-    audioGate.isOpen = true
+    audioGate?.isOpen = true
   }
 
   func deactivate() {
-    audioGate.isOpen = false
+    audioGate?.isOpen = false
   }
 
   private func setupLifecycleCallbacks() {
-    if let ampEnvs = sound.namedADSREnvelopes["ampEnv"] {
+    if let sound = sound, let ampEnvs = sound.namedADSREnvelopes["ampEnv"] {
       for env in ampEnvs {
         env.startCallback = { [weak self] in
           self?.activate()
@@ -110,12 +125,12 @@ class InstrumentWithAVAudioUnitEffects {
   // the parameters of the effects and the position arrow
   
   // effect enums
-  var reverbPreset: AVAudioUnitReverbPreset {
+  var reverbPreset: AVAudioUnitReverbPreset = .smallRoom {
     didSet {
       reverbNode?.loadFactoryPreset(reverbPreset)
     }
   }
-  var distortionPreset: AVAudioUnitDistortionPreset
+  var distortionPreset: AVAudioUnitDistortionPreset = .defaultValue
   // .drumsBitBrush, .drumsBufferBeats, .drumsLoFi, .multiBrokenSpeaker, .multiCellphoneConcert, .multiDecimated1, .multiDecimated2, .multiDecimated3, .multiDecimated4, .multiDistortedFunk, .multiDistortedCubed, .multiDistortedSquared, .multiEcho1, .multiEcho2, .multiEchoTight1, .multiEchoTight2, .multiEverythingIsBroken, .speechAlienChatter, .speechCosmicInterference, .speechGoldenPi, .speechRadioTower, .speechWaves
   func getDistortionPreset() -> AVAudioUnitDistortionPreset {
     distortionPreset
@@ -178,17 +193,23 @@ class InstrumentWithAVAudioUnitEffects {
   init(sound: ArrowWithHandles) {
     self.sound = sound
     self.audioGate = AudioGate(innerArr: sound)
+    self.audioGate?.isOpen = false
+    initEffects()
+    setupLifecycleCallbacks()
+  }
+  
+  init(samplerFileName: String) {
+    self.samplerFileName = samplerFileName
+    initEffects()
+  }
+  
+  func initEffects() {
     self.reverbNode = AVAudioUnitReverb()
-    //self.delayNode = AVAudioUnitDelay()
-    //self.distortionNode = AVAudioUnitDistortion()
-    //self.distortionNode?.wetDryMix = 0
     self.distortionPreset = .defaultValue
     self.reverbPreset = .cathedral
     self.delayNode?.delayTime = 0
     self.reverbNode?.wetDryMix = 0
     self.timeOrigin = Date.now.timeIntervalSince1970
-    self.audioGate.isOpen = false
-    setupLifecycleCallbacks()
   }
 
   deinit {
@@ -197,7 +218,7 @@ class InstrumentWithAVAudioUnitEffects {
   
   func setPosition(_ t: CoreFloat) {
     if t > 1 { // fixes some race on startup
-      if positionLFO != nil && audioGate.isOpen {
+      if positionLFO != nil && (audioGate?.isOpen ?? true) { // Always open for sampler
         if (t - lastTimeWeSetPosition) > setPositionMinWaitTimeSecs {
           lastTimeWeSetPosition = t
           let (x, y, z) = positionLFO!.of(t - 1)
@@ -211,22 +232,25 @@ class InstrumentWithAVAudioUnitEffects {
   
   func wrapInAppleNodes(forEngine engine: SpatialAudioEngine) -> AVAudioMixerNode {
     let sampleRate = engine.sampleRate
-    sourceNode = AVAudioSourceNode.withSource(
-      source: audioGate,
-      sampleRate: sampleRate
-    )
-    if playerNode != nil {
-      do {
-        let audioFile = try AVAudioFile(forReading: Bundle.main.url(forResource: "beat", withExtension: "aiff")!)
-        engine.attach([playerNode!])
-        playerNode!.scheduleFile(audioFile, at: nil, completionHandler: nil)
-      } catch {
-        print("\(error.localizedDescription)")
-      }
-    }
     
-    let nodes = [sourceNode, playerNode, distortionNode, delayNode, reverbNode, mixerNode].compactMap { $0 }
+    // connect our synthesis engine to an AVAudioSourceNode as the initial node in the chain,
+    // else create an AVAudioUnitSampler to fill that role
+    var initialNode: AVAudioNode?
+    if let audioGate = audioGate {
+      sourceNode = AVAudioSourceNode.withSource(
+        source: audioGate,
+        sampleRate: sampleRate
+      )
+      initialNode = sourceNode
+    } else if let samplerFileName = samplerFileName {
+      samplerNode = AVAudioUnitSampler()
+      loadSamplerInstrument(samplerNode!, fileName: samplerFileName)
+      initialNode = samplerNode
+    }
+
+    let nodes = [initialNode, distortionNode, delayNode, reverbNode, mixerNode].compactMap { $0 }
     engine.attach(nodes)
+    
     for i in 0..<nodes.count-1 {
       engine.connect(nodes[i], to: nodes[i+1], format: nil) // having mono when the "to:" is reverb failed on my iPhone
     }
@@ -258,8 +282,22 @@ class InstrumentWithAVAudioUnitEffects {
   
   func detachAppleNodes(from engine: SpatialAudioEngine) {
     positionTask?.cancel()
-    let nodes = [sourceNode, playerNode, distortionNode, delayNode, reverbNode, mixerNode].compactMap { $0 }
+    let nodes = [sourceNode, samplerNode, distortionNode, delayNode, reverbNode, mixerNode].compactMap { $0 }
     engine.detach(nodes)
+  }
+  
+  private func loadSamplerInstrument(_ node: AVAudioUnitSampler, fileName: String) {
+    if let url = Bundle.main.url(forResource: fileName, withExtension: "wav") ??
+                 Bundle.main.url(forResource: fileName, withExtension: "aiff") ??
+                 Bundle.main.url(forResource: fileName, withExtension: "aif") {
+      do {
+        try node.loadAudioFiles(at: [url])
+      } catch {
+        print("Error loading sampler instrument \(fileName): \(error.localizedDescription)")
+      }
+    } else {
+      print("Could not find sampler file: \(fileName)")
+    }
   }
 }
 
