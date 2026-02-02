@@ -20,6 +20,7 @@ struct MidiNote {
   }
 }
 
+// player of a single synthesized voice, via its envelope
 final class EnvelopeHandlePlayer: ArrowWithHandles, NoteHandler {
   var arrow: ArrowWithHandles
   var globalOffset: Int  = 0
@@ -75,73 +76,49 @@ extension NoteHandler {
   }
 }
 
-// Have a collection of note-handling arrows, which we sum as our output.
-// Allocate noteOn among the voices somehow.
-final class PoolVoice: ArrowWithHandles, NoteHandler {
-  // the voices, their count, and their sum arrow
-  private let voices: [ArrowWithHandles & NoteHandler]
+final class VoiceLedger {
   private let voiceCount: Int
-  var globalOffset: Int = 0
-  
-  // treating voices as a pool of resources
   private var noteOnnedVoiceIdxs: Set<Int>
   private var availableVoiceIdxs: Set<Int>
   var noteToVoiceIdx: [MidiValue: Int]
-  
-  init(voices: [ArrowWithHandles & NoteHandler]) {
-    self.voices = voices
-    self.voiceCount = voices.count
-    
+
+  init(voiceCount: Int) {
+    self.voiceCount = voiceCount
     // mark all voices as available
-    availableVoiceIdxs = Set(0..<voices.count)
+    availableVoiceIdxs = Set(0..<voiceCount)
     noteOnnedVoiceIdxs = Set<Int>()
     noteToVoiceIdx = [:]
-    super.init(ArrowSum(innerArrs: voices))
-    let _ = withMergeDictsFromArrows(voices)
   }
-  
-  private func takeAvailableVoice(_ note: MidiValue) -> NoteHandler? {
+
+  func takeAvailableVoice(_ note: MidiValue) -> Int? {
+    // using first(where:) on a Range ensures we pick the lowest index available
     if let availableIdx = (0..<voiceCount).first(where: {
       availableVoiceIdxs.contains($0)
     }) {
       availableVoiceIdxs.remove(availableIdx)
       noteOnnedVoiceIdxs.insert(availableIdx)
       noteToVoiceIdx[note] = availableIdx
-      //print(" ON: note \(note) using voice \(availableIdx) from pool")
-      return voices[availableIdx]
+      return availableIdx
     }
     return nil
   }
   
-  // we use noteVelIn for the bookkeeping, but we apply the offset when we call noteOn/noteOff on the voice inside
-  func noteOn(_ noteVelIn: MidiNote) {
-    //print(" ON: trying \(noteVel.note)")
-    let noteVel = MidiNote(note: applyOffset(note: noteVelIn.note), velocity: noteVelIn.velocity)
-    // case 1: this note is being played by a voice already: send noteOff then noteOn to re-up it
-    if let voiceIdx = noteToVoiceIdx[noteVelIn.note] {
-      //print(" ON: restarting \(noteVel.note)")
-      //voices[voiceIdx].noteOff(noteVel)
-      voices[voiceIdx].noteOn(noteVel)
-    // case 2: assign a fresh voice to the note
-    } else if let handler = takeAvailableVoice(noteVelIn.note) {
-      handler.noteOn(noteVel)
-    }
+  func voiceIndex(for note: MidiValue) -> Int? {
+    return noteToVoiceIdx[note]
   }
-  
-  // we use noteVelIn for the bookkeeping, but we apply the offset when we call noteOn/noteOff on the voice inside
-  func noteOff(_ noteVelIn: MidiNote) {
-    //print("OFF: trying \(noteVel.note)")
-    let noteVel = MidiNote(note: applyOffset(note: noteVelIn.note), velocity: noteVelIn.velocity)
-    if let voiceIdx = noteToVoiceIdx[noteVelIn.note] {
-      //print("OFF: note \(noteVel.note) releasing voice \(voiceIdx)")
-      voices[voiceIdx].noteOff(noteVel)
+
+  func releaseVoice(_ note: MidiValue) -> Int? {
+    if let voiceIdx = noteToVoiceIdx[note] {
       noteOnnedVoiceIdxs.remove(voiceIdx)
       availableVoiceIdxs.insert(voiceIdx)
-      noteToVoiceIdx.removeValue(forKey: noteVelIn.note)
+      noteToVoiceIdx.removeValue(forKey: note)
+      return voiceIdx
     }
+    return nil
   }
 }
 
+// player of a single sampler voice, via Apple's startNote/stopNote
 final class SamplerVoice: NoteHandler {
   var globalOffset: Int = 0
   let samplerNode: AVAudioUnitSampler
@@ -161,56 +138,65 @@ final class SamplerVoice: NoteHandler {
   }
 }
 
-final class PolyphonicVoiceGroup: NoteHandler {
+// Have a collection of note-handling arrows, which we sum as our output.
+final class PolyphonicVoiceGroup: ArrowWithHandles, NoteHandler {
   var globalOffset: Int = 0
   private let voices: [NoteHandler]
-  private let voiceCount: Int
+  private let ledger: VoiceLedger
   
-  // treating voices as a pool of resources
-  private var noteOnnedVoiceIdxs: Set<Int>
-  private var availableVoiceIdxs: Set<Int>
-  var noteToVoiceIdx: [MidiValue: Int]
-  
-  init(voices: [NoteHandler]) {
-    self.voices = voices
-    self.voiceCount = voices.count
-    
-    // mark all voices as available
-    availableVoiceIdxs = Set(0..<voices.count)
-    noteOnnedVoiceIdxs = Set<Int>()
-    noteToVoiceIdx = [:]
-  }
-  
-  private func takeAvailableVoice(_ note: MidiValue) -> NoteHandler? {
-    if let availableIdx = (0..<voiceCount).first(where: {
-      availableVoiceIdxs.contains($0)
-    }) {
-      availableVoiceIdxs.remove(availableIdx)
-      noteOnnedVoiceIdxs.insert(availableIdx)
-      noteToVoiceIdx[note] = availableIdx
-      return voices[availableIdx]
+  init(presets: [Preset]) {
+    if presets.isEmpty {
+      self.voices = []
+      self.ledger = VoiceLedger(voiceCount: 0)
+      super.init(ArrowIdentity())
+      return
     }
-    return nil
+    
+    if presets[0].sound != nil {
+      // Arrow/Synth path
+      let handles = presets.compactMap { $0.sound }.map { EnvelopeHandlePlayer(arrow: $0) }
+      self.voices = handles
+      self.ledger = VoiceLedger(voiceCount: handles.count)
+      
+      super.init(ArrowSum(innerArrs: handles))
+      let _ = withMergeDictsFromArrows(handles)
+    } else if let node = presets[0].samplerNode {
+      // Sampler path
+      let count = presets.count
+      if presets.count == 1 && count > 1 {
+        // Replicate the single sampler
+        let handlers = (0..<count).map { _ in SamplerVoice(node: node) }
+        self.voices = handlers
+      } else {
+        let handlers = presets.compactMap { $0.samplerNode }.map { SamplerVoice(node: $0) }
+        self.voices = handlers
+      }
+      self.ledger = VoiceLedger(voiceCount: self.voices.count)
+      // Samplers don't participate in the Arrow graph for audio signal.
+      super.init(ArrowIdentity())
+    } else {
+      self.voices = []
+      self.ledger = VoiceLedger(voiceCount: 0)
+      super.init(ArrowIdentity())
+    }
   }
+
   
   func noteOn(_ noteVelIn: MidiNote) {
     let noteVel = MidiNote(note: applyOffset(note: noteVelIn.note), velocity: noteVelIn.velocity)
     // case 1: this note is being played by a voice already: send noteOff then noteOn to re-up it
-    if let voiceIdx = noteToVoiceIdx[noteVelIn.note] {
+    if let voiceIdx = ledger.voiceIndex(for: noteVelIn.note) {
       voices[voiceIdx].noteOn(noteVel)
     // case 2: assign a fresh voice to the note
-    } else if let handler = takeAvailableVoice(noteVelIn.note) {
-      handler.noteOn(noteVel)
+    } else if let voiceIdx = ledger.takeAvailableVoice(noteVelIn.note) {
+      voices[voiceIdx].noteOn(noteVel)
     }
   }
   
   func noteOff(_ noteVelIn: MidiNote) {
     let noteVel = MidiNote(note: applyOffset(note: noteVelIn.note), velocity: noteVelIn.velocity)
-    if let voiceIdx = noteToVoiceIdx[noteVelIn.note] {
+    if let voiceIdx = ledger.releaseVoice(noteVelIn.note) {
       voices[voiceIdx].noteOff(noteVel)
-      noteOnnedVoiceIdxs.remove(voiceIdx)
-      availableVoiceIdxs.insert(voiceIdx)
-      noteToVoiceIdx.removeValue(forKey: noteVelIn.note)
     }
   }
 }

@@ -76,7 +76,7 @@ struct TheoryView: View {
         
         KnobbyKnob(value: $noteOffset, range: -50...50, stepSize: 1)
           .onChange(of: noteOffset, initial: true) {
-            synth.voicePool?.globalOffset = Int(noteOffset)
+            synth.noteHandler?.globalOffset = Int(noteOffset)
           }
 
         HStack {
@@ -154,9 +154,9 @@ struct TheoryView: View {
     if let noteValue = charToMidiNote[keyPress.characters], keyPress.modifiers.rawValue == 0 {
       switch keyPress.phase {
       case .down:
-        synth.voicePool?.noteOn(MidiNote(note: UInt8(noteValue), velocity: 100))
+        synth.noteHandler?.noteOn(MidiNote(note: UInt8(noteValue), velocity: 100))
       case .up:
-        synth.voicePool?.noteOff(MidiNote(note: UInt8(noteValue), velocity: 100))
+        synth.noteHandler?.noteOff(MidiNote(note: UInt8(noteValue), velocity: 100))
       default:
         ()
       }

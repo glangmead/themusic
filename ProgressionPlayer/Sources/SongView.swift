@@ -39,7 +39,7 @@ struct SongView: View {
           .padding()
         KnobbyKnob(value: $noteOffset, range: -100...100, stepSize: 1)
           .onChange(of: noteOffset, initial: true) {
-            synth.voicePool?.globalOffset = Int(noteOffset)
+            synth.noteHandler?.globalOffset = Int(noteOffset)
           }
         Text("\(seq?.sequencerTime ?? 0.0) (\(seq?.lengthinSeconds() ?? 0.0))")
           .navigationTitle("\(synth.name)")

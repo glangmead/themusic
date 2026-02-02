@@ -19,7 +19,7 @@ import SwiftUI
 ///     - 5th Clue
 protocol EngineAndVoicePool: AnyObject {
   var engine: SpatialAudioEngine { get }
-  var voicePool: NoteHandler? { get }
+  var noteHandler: NoteHandler? { get }
 }
 
 // A Synth is an object that wraps a single PresetSyntax and offers mutators for all its settings, and offers a
@@ -28,8 +28,8 @@ protocol EngineAndVoicePool: AnyObject {
 class SyntacticSynth: EngineAndVoicePool {
   var presetSpec: PresetSyntax
   let engine: SpatialAudioEngine
-  var voicePool: NoteHandler? = nil
-  var poolVoice: PoolVoice? = nil
+  var noteHandler: NoteHandler? { poolVoice }
+  var poolVoice: PolyphonicVoiceGroup? = nil
   var reloadCount = 0
   let numVoices = 12
   var name: String {
@@ -243,20 +243,19 @@ class SyntacticSynth: EngineAndVoicePool {
       }
       engine.connectToEnvNode(avNodes)
       // voicePool is the object that the sequencer plays
-      let poolVoice = PoolVoice(voices: tones.map { EnvelopeHandlePlayer(arrow: $0) })
-      self.poolVoice = poolVoice
-      voicePool = poolVoice
+      let voiceGroup = PolyphonicVoiceGroup(presets: presets)
+      self.poolVoice = voiceGroup
     } else if presetSpec.samplerFilename != nil {
-      let preset = presetSpec.compile()
-      presets.append(preset)
-      let node = preset.wrapInAppleNodes(forEngine: self.engine)
-      avNodes.append(node)
+      for _ in 1...numVoices {
+        let preset = presetSpec.compile()
+        presets.append(preset)
+        let node = preset.wrapInAppleNodes(forEngine: self.engine)
+        avNodes.append(node)
+      }
       engine.connectToEnvNode(avNodes)
       
-      if let samplerNode = preset.samplerNode {
-        voicePool = SamplerVoice(node: samplerNode)
-        self.poolVoice = nil
-      }
+      let voiceGroup = PolyphonicVoiceGroup(presets: presets)
+      self.poolVoice = voiceGroup
     }
     
     // read from poolVoice to see what keys we must support getting/setting

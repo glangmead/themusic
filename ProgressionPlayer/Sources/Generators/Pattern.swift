@@ -44,17 +44,16 @@ struct MusicEvent {
     
     // Check if we are using arrows or samplers (assuming all presets are of the same type)
     if presets[0].sound != nil {
-      // wrap my designated presets (sound+FX generators) in a PoolVoice
-      let noteHandlers = presets.map { EnvelopeHandlePlayer(arrow: $0.sound!) }
-      let poolVoice = PoolVoice(voices: noteHandlers)
-      self.voice = poolVoice
+      // wrap my designated presets (sound+FX generators) in a PolyphonicVoiceGroup
+      let voiceGroup = PolyphonicVoiceGroup(presets: presets)
+      self.voice = voiceGroup
       
       // Apply modulation (only supported for Arrow-based presets)
       let now = CoreFloat(Date.now.timeIntervalSince1970 - timeOrigin)
       timeBuffer[0] = now
       for (key, modulatingArrow) in modulators {
-        if poolVoice.namedConsts[key] != nil {
-          if let arrowConst = poolVoice.namedConsts[key]!.first {
+        if voiceGroup.namedConsts[key] != nil {
+          if let arrowConst = voiceGroup.namedConsts[key]!.first {
             if let eventUsingArrow = modulatingArrow as? EventUsingArrow {
               eventUsingArrow.event = self
             }
@@ -63,8 +62,7 @@ struct MusicEvent {
         }
       }
     } else if let _ = presets[0].samplerNode {
-      let noteHandlers = presets.compactMap { $0.samplerNode }.map { SamplerVoice(node: $0) }
-      self.voice = PolyphonicVoiceGroup(voices: noteHandlers)
+      self.voice = PolyphonicVoiceGroup(presets: presets)
     }
     
     for preset in presets {

@@ -190,9 +190,9 @@ struct VisualizerView: UIViewRepresentable {
       
       if let noteValue = charToMidiNote[key] {
         if type == "keydown" {
-          synth.voicePool?.noteOn(MidiNote(note: UInt8(noteValue), velocity: 100))
+          synth.noteHandler?.noteOn(MidiNote(note: UInt8(noteValue), velocity: 100))
         } else if type == "keyup" {
-          synth.voicePool?.noteOff(MidiNote(note: UInt8(noteValue), velocity: 100))
+          synth.noteHandler?.noteOff(MidiNote(note: UInt8(noteValue), velocity: 100))
         }
       }
     }

@@ -50,7 +50,7 @@ class Sequencer {
   }
   
   convenience init(synth: EngineAndVoicePool, numTracks: Int) {
-    self.init(engine: synth.engine.audioEngine, numTracks: numTracks, sourceNode: synth.voicePool!)
+    self.init(engine: synth.engine.audioEngine, numTracks: numTracks, sourceNode: synth.noteHandler!)
   }
   
   // e.g. Bundle.main.path(forResource: "MSLFSanctus", ofType: "mid")!
