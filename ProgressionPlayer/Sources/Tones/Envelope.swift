@@ -38,6 +38,8 @@ class ADSR: Arrow11, NoteHandler {
   var previousValue: CoreFloat = 0
   var valueAtRelease: CoreFloat = 0
   var valueAtAttack: CoreFloat = 0
+  var startCallback: (() -> Void)? = nil
+  var finishCallback: (() -> Void)? = nil
 
   init(envelope e: EnvelopeData) {
     self.env = e
@@ -62,6 +64,7 @@ class ADSR: Arrow11, NoteHandler {
       if time > env.releaseTime {
         state = .closed
         val = 0
+        finishCallback?()
       } else {
         val = releaseEnv.val(time)
       }
@@ -105,6 +108,7 @@ class ADSR: Arrow11, NoteHandler {
     newAttack = true
     valueAtAttack = previousValue
     state = .attack
+    startCallback?()
   }
   
   func noteOff(_ note: MidiNote) {

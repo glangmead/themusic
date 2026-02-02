@@ -99,6 +99,18 @@ final class ControlArrow11: Arrow11 {
   }
 }
 
+final class AudioGate: Arrow11 {
+  var isOpen: Bool = true
+
+  override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
+    if !isOpen {
+      vDSP.clear(&outputs)
+      return
+    }
+    super.process(inputs: inputs, outputs: &outputs)
+  }
+}
+
 final class ArrowSum: Arrow11 {
   private var scratchBuffer = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
   
@@ -131,22 +143,15 @@ final class ArrowProd: Arrow11 {
   private var scratchBuffer = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
 
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
-    if innerArrsUnmanaged.isEmpty {
-      vDSP.fill(&outputs, with: 1)
-      return
-    }
-    
-    for i in innerArrs.indices {
-      if let arrowConst = innerArrs[i] as? ArrowConst {
-        if arrowConst.val == 300 {
-          print("got a 300 here")
-        }
-      }
-    }
-    
     // Process first child directly to output
     innerArrsUnmanaged[0]._withUnsafeGuaranteedRef {
       $0.process(inputs: inputs, outputs: &outputs)
+    }
+    
+    // Optimization: if the first factor is zero, the product is zero.
+    // This allows envelopes to gate oscillators, saving CPU.
+    if vDSP.maximumMagnitude(outputs) == 0 {
+      return
     }
     
     // Process remaining children via scratch

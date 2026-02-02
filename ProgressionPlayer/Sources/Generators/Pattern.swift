@@ -55,8 +55,7 @@ struct MusicEvent {
           if let eventUsingArrow = modulatingArrow as? EventUsingArrow {
             eventUsingArrow.event = self
           }
-          modulatingArrow.process(inputs: timeBuffer, outputs: &arrowBuffer)
-          arrowConst.val = arrowBuffer[0]
+          arrowConst.val = modulatingArrow.of(now)
         }
       }
     }
@@ -77,6 +76,7 @@ struct MusicEvent {
       //print("pattern note off")
       voice?.noteOff($0)
     }
+    
     if let cleanup = cleanup {
       await cleanup()
     }

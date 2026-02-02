@@ -58,6 +58,7 @@ struct PresetSyntax: Codable {
 class InstrumentWithAVAudioUnitEffects {
   var name: String = ""
   var sound: ArrowWithHandles
+  var audioGate: AudioGate
   var positionLFO: Rose? = nil
   var timeOrigin: Double = 0
   
@@ -80,6 +81,32 @@ class InstrumentWithAVAudioUnitEffects {
     delayNode != nil
   }
   
+  func activate() {
+    audioGate.isOpen = true
+  }
+
+  func deactivate() {
+    audioGate.isOpen = false
+  }
+
+  private func setupLifecycleCallbacks() {
+    if let ampEnvs = sound.namedADSREnvelopes["ampEnv"] {
+      for env in ampEnvs {
+        env.startCallback = { [weak self] in
+          self?.activate()
+        }
+        env.finishCallback = { [weak self] in
+          if let self = self {
+             let allClosed = ampEnvs.allSatisfy { $0.state == .closed }
+             if allClosed {
+               self.deactivate()
+             }
+          }
+        }
+      }
+    }
+  }
+
   // the parameters of the effects and the position arrow
   
   // effect enums
@@ -150,6 +177,7 @@ class InstrumentWithAVAudioUnitEffects {
   
   init(sound: ArrowWithHandles) {
     self.sound = sound
+    self.audioGate = AudioGate(innerArr: sound)
     self.reverbNode = AVAudioUnitReverb()
     //self.delayNode = AVAudioUnitDelay()
     //self.distortionNode = AVAudioUnitDistortion()
@@ -159,6 +187,8 @@ class InstrumentWithAVAudioUnitEffects {
     self.delayNode?.delayTime = 0
     self.reverbNode?.wetDryMix = 0
     self.timeOrigin = Date.now.timeIntervalSince1970
+    self.audioGate.isOpen = false
+    setupLifecycleCallbacks()
   }
 
   deinit {
@@ -182,7 +212,7 @@ class InstrumentWithAVAudioUnitEffects {
   func wrapInAppleNodes(forEngine engine: SpatialAudioEngine) -> AVAudioMixerNode {
     let sampleRate = engine.sampleRate
     sourceNode = AVAudioSourceNode.withSource(
-      source: sound,
+      source: audioGate,
       sampleRate: sampleRate
     )
     if playerNode != nil {
