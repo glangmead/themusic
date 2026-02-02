@@ -56,5 +56,5 @@ struct ArrowChart: View {
 #Preview {
 //  let arr = LowPassFilter2(cutoff: ArrowConst(value: 70000.0), resonance: ArrowConst(value: 1.1))
 //  arr.innerArr = ArrowImpulse(fireTime: 2.0/44100.0)
-  return ArrowChart(arrow: ArrowConst(value: 1), ymin: -1, ymax: 1)
+  return ArrowChart(arrow: NoiseSmoothStep(noiseFreq: 1500), ymin: -1, ymax: 1)
 }
