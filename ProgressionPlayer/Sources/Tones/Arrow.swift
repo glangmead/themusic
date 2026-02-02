@@ -8,7 +8,7 @@
 import Accelerate
 import AVFAudio
 
-typealias CoreFloat = Float
+typealias CoreFloat = Double
 let MAX_BUFFER_SIZE = 4096
 
 class Arrow11 { 

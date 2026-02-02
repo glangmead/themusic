@@ -62,10 +62,10 @@ final class Triangle: Arrow11, WidthHaver {
                 let scratchBase = scratchPtr.baseAddress else { return }
           
           // outputs = frac(outputs)
-          vDSP_vfrac(outBase, 1, outBase, 1, count)
+          vDSP_vfracD(outBase, 1, outBase, 1, count)
           
           // scratch = outputs / width (normalized phase)
-          vDSP_vdiv(widthBase, 1, outBase, 1, scratchBase, 1, count)
+          vDSP_vdivD(widthBase, 1, outBase, 1, scratchBase, 1, count)
         }
       }
     }
@@ -105,18 +105,18 @@ final class Sawtooth: Arrow11, WidthHaver {
                 let scratchBase = scratchPtr.baseAddress else { return }
           
           // outputs = frac(outputs)
-          vDSP_vfrac(outBase, 1, outBase, 1, count)
+          vDSP_vfracD(outBase, 1, outBase, 1, count)
           
           // scratch = 2 * outputs
           var two: CoreFloat = 2.0
-          vDSP_vsmul(outBase, 1, &two, scratchBase, 1, count)
+          vDSP_vsmulD(outBase, 1, &two, scratchBase, 1, count)
           
           // scratch = scratch / width
-          vDSP_vdiv(widthBase, 1, scratchBase, 1, scratchBase, 1, count)
+          vDSP_vdivD(widthBase, 1, scratchBase, 1, scratchBase, 1, count)
           
           // scratch = scratch - 1
           var minusOne: CoreFloat = -1.0
-          vDSP_vsadd(scratchBase, 1, &minusOne, scratchBase, 1, count)
+          vDSP_vsaddD(scratchBase, 1, &minusOne, scratchBase, 1, count)
         }
       }
     }
@@ -149,11 +149,11 @@ final class Square: Arrow11, WidthHaver {
               let widthBase = widthPtr.baseAddress else { return }
         
         // outputs = frac(outputs)
-        vDSP_vfrac(outBase, 1, outBase, 1, count)
+        vDSP_vfracD(outBase, 1, outBase, 1, count)
         
         // width = width * 0.5
         var half: CoreFloat = 0.5
-        vDSP_vsmul(widthBase, 1, &half, widthBase, 1, count)
+        vDSP_vsmulD(widthBase, 1, &half, widthBase, 1, count)
       }
     }
     
@@ -189,12 +189,12 @@ final class Noise: Arrow11, WidthHaver {
         // Convert UInt32 to Float
         //vDSP_vfltu32(inputBase, 1, outputBase, 1, vDSP_Length(count))
         // Convert UInt32 to Double
-        vDSP_vfltu32(inputBase, 1, outputBase, 1, vDSP_Length(count))
+        vDSP_vfltu32D(inputBase, 1, outputBase, 1, vDSP_Length(count))
         
         // Normalize to 0.0...1.0
         var s = scale
         //vDSP_vsmul(outputBase, 1, &s, outputBase, 1, vDSP_Length(count))
-        vDSP_vsmul(outputBase, 1, &s, outputBase, 1, vDSP_Length(count))
+        vDSP_vsmulD(outputBase, 1, &s, outputBase, 1, vDSP_Length(count))
       }
     }
     // let avg = vDSP.mean(outputs)

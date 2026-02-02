@@ -66,15 +66,7 @@ extension AVAudioSourceNode {
         var outputBuffer = UnsafeMutableBufferPointer(start: outputPtr, count: count)
         
         // Convert our internal Doubles to the output Floats
-        //vDSP.convertElements(of: valBuffer, to: &outputBuffer)
-        
-        //if let doubleVals = valBuffer as? [Double] {
-        //  // Convert Double -> Float
-        //  vDSP.convertElements(of: doubleVals, to: &outputBuffer)
-        //} else if let floatVals = valBuffer as? [Float] {
-          // Copy Float -> Float (if CoreFloat is reverted to Float someday)
-          _ = outputBuffer.update(from: valBuffer)
-        //}
+        vDSP.convertElements(of: valBuffer, to: &outputBuffer)
         
         // Handle other channels if they exist (copy from first)
         for i in 1..<audioBufferListPointer.count {
