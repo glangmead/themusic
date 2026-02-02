@@ -7,6 +7,7 @@
 
 import SwiftUI
 import WebKit
+import UIKit
 
 // Pre-loads the visualizer resources to avoid a hitch on first open
 class VisualizerWarmer {
@@ -43,6 +44,8 @@ class VisualizerWarmer {
 // https://cdn.jsdelivr.net/npm/butterchurn-presets@3.0.0-beta.4/dist/all.min.js
 // (which are the 3.0 versions, whereas butterchurn-ios was made with v2 in mind)
 class VisualizerWebView: WKWebView {
+  var onEscape: (() -> Void)?
+
   // Hide the input accessory view (the bar above the keyboard)
   override var inputAccessoryView: UIView? {
     return nil
@@ -52,14 +55,36 @@ class VisualizerWebView: WKWebView {
   override var canBecomeFirstResponder: Bool {
     return true // Needs to be true to receive key events, but we want to suppress the UI
   }
+  
+  override var keyCommands: [UIKeyCommand]? {
+    return [
+      UIKeyCommand(input: UIKeyCommand.inputEscape, modifierFlags: [], action: #selector(escapePressed))
+    ]
+  }
+  
+  @objc func escapePressed() {
+    onEscape?()
+  }
+  
+  override func didMoveToWindow() {
+    super.didMoveToWindow()
+    if window != nil {
+      let success = becomeFirstResponder()
+      if !success {
+        print("VisualizerWebView: Could not become first responder")
+      }
+    }
+  }
 }
 
 struct VisualizerView: UIViewRepresentable {
-  var synth: SyntacticSynth
-  @AppStorage("lastVisualizerPreset") private var lastPreset: String = ""
-  @Environment(\.dismiss) var dismiss
+  typealias UIViewType = VisualizerWebView
   
-  func makeUIView(context: Context) -> WKWebView {
+  var synth: SyntacticSynth
+  @Binding var isPresented: Bool
+  @AppStorage("lastVisualizerPreset") private var lastPreset: String = ""
+  
+  func makeUIView(context: Context) -> VisualizerWebView {
     let config = WKWebViewConfiguration()
     config.preferences.setValue(true, forKey: "allowFileAccessFromFileURLs")
     config.setValue(true, forKey: "allowUniversalAccessFromFileURLs")
@@ -74,9 +99,17 @@ struct VisualizerView: UIViewRepresentable {
     
     let webView = VisualizerWebView(frame: .zero, configuration: config)
     webView.isOpaque = false
-    webView.isInspectable = true // allows watching its console.log messages from Safari
+    if #available(iOS 16.4, macOS 13.3, *) {
+      webView.isInspectable = true
+    }
     webView.backgroundColor = .black
     webView.navigationDelegate = context.coordinator
+    
+    // Wire up the Escape key handler for iPad/Catalyst
+    let coordinator = context.coordinator
+    webView.onEscape = { [weak coordinator] in
+      coordinator?.handleEscape()
+    }
     
     if let indexURL = Bundle.main.url(forResource: "index", withExtension: "html") {
       print("Visualizer: loading index.html from \(indexURL)")
@@ -103,11 +136,12 @@ struct VisualizerView: UIViewRepresentable {
   }
   
   // UIViewRepresentable
-  func updateUIView(_ uiView: WKWebView, context: Context) {
+  func updateUIView(_ uiView: VisualizerWebView, context: Context) {
+    context.coordinator.parent = self
   }
   
   // UIViewRepresentable
-  static func dismantleUIView(_ uiView: WKWebView, coordinator: Coordinator) {
+  static func dismantleUIView(_ uiView: VisualizerWebView, coordinator: Coordinator) {
     coordinator.stopAudioTap()
   }
   
@@ -141,7 +175,11 @@ struct VisualizerView: UIViewRepresentable {
           self.parent?.lastPreset = presetName
         }
       } else if message.name == "closeViz" {
-        self.parent?.dismiss()
+        DispatchQueue.main.async {
+          withAnimation(.easeInOut(duration: 0.4)) {
+            self.parent?.isPresented = false
+          }
+        }
       }
     }
     
@@ -203,6 +241,14 @@ struct VisualizerView: UIViewRepresentable {
     
     func stopAudioTap() {
       synth.engine.removeTap()
+    }
+    
+    func handleEscape() {
+      DispatchQueue.main.async {
+        withAnimation(.easeInOut(duration: 0.4)) {
+          self.parent?.isPresented = false
+        }
+      }
     }
   }
 }

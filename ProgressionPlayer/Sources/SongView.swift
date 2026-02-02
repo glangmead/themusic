@@ -24,123 +24,140 @@ struct SongView: View {
   @State private var isShowingPresetList = false
   
   var body: some View {
-    NavigationStack {
-      if songURL != nil {
-        MidiInspectorView(midiURL: songURL!)
-      }
-      Text("Playback speed: \(seq?.avSeq.rate ?? 0)")
-      Slider(value: $playbackRate, in: 0.001...20)
-        .onChange(of: playbackRate, initial: true) {
-          seq?.avSeq.rate = playbackRate
+    ZStack {
+      Color.black.ignoresSafeArea()
+      
+      NavigationStack {
+        if songURL != nil {
+          MidiInspectorView(midiURL: songURL!)
         }
-        .padding()
-      KnobbyKnob(value: $noteOffset, range: -100...100, stepSize: 1)
-        .onChange(of: noteOffset, initial: true) {
-          synth.poolVoice?.globalOffset = Int(noteOffset)
-        }
-      Text("\(seq?.sequencerTime ?? 0.0) (\(seq?.lengthinSeconds() ?? 0.0))")
-        .navigationTitle("\(synth.name)")
-        .toolbar {
-          ToolbarItem() {
-            Button("Edit") {
-              #if targetEnvironment(macCatalyst)
-              openWindow(id: "synth-window")
-              #else
-              isShowingSynth = true
-              #endif
+        Text("Playback speed: \(seq?.avSeq.rate ?? 0)")
+        Slider(value: $playbackRate, in: 0.001...20)
+          .onChange(of: playbackRate, initial: true) {
+            seq?.avSeq.rate = playbackRate
+          }
+          .padding()
+        KnobbyKnob(value: $noteOffset, range: -100...100, stepSize: 1)
+          .onChange(of: noteOffset, initial: true) {
+            synth.poolVoice?.globalOffset = Int(noteOffset)
+          }
+        Text("\(seq?.sequencerTime ?? 0.0) (\(seq?.lengthinSeconds() ?? 0.0))")
+          .navigationTitle("\(synth.name)")
+          .toolbar {
+            ToolbarItem() {
+              Button("Edit") {
+                #if targetEnvironment(macCatalyst)
+                openWindow(id: "synth-window")
+                #else
+                isShowingSynth = true
+                #endif
+              }
+            }
+            ToolbarItem() {
+              Button("Presets") {
+                isShowingPresetList = true
+              }
+              .popover(isPresented: $isShowingPresetList) {
+                PresetListView(isPresented: $isShowingPresetList)
+                  .frame(minWidth: 300, minHeight: 400)
+              }
+            }
+            ToolbarItem() {
+              Button {
+                withAnimation(.easeInOut(duration: 0.4)) {
+                  isShowingVisualizer = true
+                }
+              } label: {
+                Label("Visualizer", systemImage: "sparkles.tv")
+              }
+            }
+            ToolbarItem() {
+              Button {
+                isImporting = true
+              } label: {
+                Label("Import file",
+                      systemImage: "document")
+              }
             }
           }
-          ToolbarItem() {
-            Button("Presets") {
-              isShowingPresetList = true
-            }
-            .popover(isPresented: $isShowingPresetList) {
-              PresetListView(isPresented: $isShowingPresetList)
-                .frame(minWidth: 300, minHeight: 400)
-            }
-          }
-          ToolbarItem() {
-            Button {
-              isShowingVisualizer = true
-            } label: {
-              Label("Visualizer", systemImage: "sparkles.tv")
+          .fileImporter(
+            isPresented: $isImporting,
+            allowedContentTypes: [.midi],
+            allowsMultipleSelection: false
+          ) { result in
+            switch result {
+            case .success(let urls):
+              seq?.playURL(url: urls[0])
+              songURL = urls[0]
+            case .failure(let error):
+              print("\(error.localizedDescription)")
             }
           }
-          ToolbarItem() {
-            Button {
-              isImporting = true
-            } label: {
-              Label("Import file",
-                    systemImage: "document")
+        ForEach(["D_Loop_01", "MSLFSanctus", "All-My-Loving", "BachInvention1"], id: \.self) { song in
+          Button("Play \(song)") {
+            songURL = Bundle.main.url(forResource: song, withExtension: "mid")
+            seq?.playURL(url: songURL!)
+          }
+        }
+        Button("Play Pattern") {
+          if patternPlaybackHandle == nil {
+            // a test song
+            musicPattern = MusicPattern(
+              presetSpec: synth.presetSpec,
+              engine: synth.engine,
+              modulators: [
+                "overallAmp": ArrowProd(innerArrs: [
+                  ArrowExponentialRandom(min: 0.0011, max: 0.77),
+                  ArrowConst(value: 1.1),
+                ]),
+                "overallAmp2": EventUsingArrow(ofEvent: { event, _ in 1.0 / (CoreFloat(event.notes[0].note % 12) + 1.0)  }),
+                "overallCentDetune": ArrowRandom(min: -5, max: 5),
+                "vibratoAmp": ArrowExponentialRandom(min: 2, max: 20),
+                "vibratoFreq": ArrowRandom(min: 1, max: 25)
+              ],
+              // a pitch consists of: root (NoteClass), Scale, octave, degree (element of Scale)
+              notes: MidiPitchAsChordGenerator(
+                pitchGenerator: MidiPitchGenerator(
+                  scaleGenerator: [Scale.lydian].cyclicIterator(),
+                  degreeGenerator: Array(0...6).shuffledIterator(),
+                  rootNoteGenerator: WaitingIterator(
+                    iterator: [NoteClass.C, NoteClass.E, NoteClass.G].cyclicIterator(),
+                    timeBetweenChanges: ArrowRandom(min: 10, max: 25)
+                  ),
+                  octaveGenerator: [2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 5].randomIterator()
+                )
+              ),
+              sustains: FloatSampler(min: 5, max: 5),
+              gaps: FloatSampler(min: 0.1, max: 0.5)
+            )
+            patternPlaybackHandle = Task.detached {
+              await musicPattern?.play()
             }
           }
         }
-        .fileImporter(
-          isPresented: $isImporting,
-          allowedContentTypes: [.midi],
-          allowsMultipleSelection: false
-        ) { result in
-          switch result {
-          case .success(let urls):
-            seq?.playURL(url: urls[0])
-            songURL = urls[0]
-          case .failure(let error):
-            print("\(error.localizedDescription)")
-          }
+        Button("Play") {
+          seq?.play()
         }
-      ForEach(["D_Loop_01", "MSLFSanctus", "All-My-Loving", "BachInvention1"], id: \.self) { song in
-        Button("Play \(song)") {
-          songURL = Bundle.main.url(forResource: song, withExtension: "mid")
-          seq?.playURL(url: songURL!)
+        Button("Stop") {
+          seq?.stop()
+          patternPlaybackHandle?.cancel()
+          patternPlaybackHandle = nil
+        }
+        Button("Rewind") {
+          seq?.stop()
+          seq?.rewind()
         }
       }
-      Button("Play Pattern") {
-        if patternPlaybackHandle == nil {
-          // a test song
-          musicPattern = MusicPattern(
-            presetSpec: synth.presetSpec,
-            engine: synth.engine,
-            modulators: [
-              "overallAmp": ArrowProd(innerArrs: [
-                ArrowExponentialRandom(min: 0.0011, max: 0.77),
-                ArrowConst(value: 1.1),
-              ]),
-              "overallAmp2": EventUsingArrow(ofEvent: { event, _ in 1.0 / (CoreFloat(event.notes[0].note % 12) + 1.0)  }),
-              "overallCentDetune": ArrowRandom(min: -5, max: 5),
-              "vibratoAmp": ArrowExponentialRandom(min: 2, max: 20),
-              "vibratoFreq": ArrowRandom(min: 1, max: 25)
-            ],
-            // a pitch consists of: root (NoteClass), Scale, octave, degree (element of Scale)
-            notes: MidiPitchAsChordGenerator(
-              pitchGenerator: MidiPitchGenerator(
-                scaleGenerator: [Scale.lydian].cyclicIterator(),
-                degreeGenerator: Array(0...6).shuffledIterator(),
-                rootNoteGenerator: WaitingIterator(
-                  iterator: [NoteClass.C, NoteClass.E, NoteClass.G].cyclicIterator(),
-                  timeBetweenChanges: ArrowRandom(min: 10, max: 25)
-                ),
-                octaveGenerator: [2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 5].randomIterator()
-              )
-            ),
-            sustains: FloatSampler(min: 5, max: 5),
-            gaps: FloatSampler(min: 0.1, max: 0.5)
-          )
-          patternPlaybackHandle = Task.detached {
-            await musicPattern?.play()
-          }
-        }
-      }
-      Button("Play") {
-        seq?.play()
-      }
-      Button("Stop") {
-        seq?.stop()
-        patternPlaybackHandle?.cancel()
-        patternPlaybackHandle = nil
-      }
-      Button("Rewind") {
-        seq?.stop()
-        seq?.rewind()
+      .scaleEffect(isShowingVisualizer ? 0.85 : 1.0)
+      .opacity(isShowingVisualizer ? 0.0 : 1.0)
+      .toolbar(isShowingVisualizer ? .hidden : .visible, for: .tabBar)
+      .toolbar(isShowingVisualizer ? .hidden : .visible, for: .navigationBar)
+      
+      if isShowingVisualizer {
+        VisualizerView(synth: synth, isPresented: $isShowingVisualizer)
+          .edgesIgnoringSafeArea(.all)
+          .transition(.opacity.animation(.easeInOut(duration: 0.5)))
+          .zIndex(1)
       }
     }
     .onAppear {
@@ -156,13 +173,6 @@ struct SongView: View {
     .sheet(isPresented: $isShowingSynth) {
       SyntacticSynthView(synth: synth)
     }
-    .fullScreenCover(isPresented: $isShowingVisualizer) {
-      ZStack(alignment: .topTrailing) {
-        VisualizerView(synth: synth)
-          .edgesIgnoringSafeArea(.all)
-      }
-    }
-
   }
 }
 
