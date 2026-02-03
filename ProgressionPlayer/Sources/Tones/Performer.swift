@@ -23,6 +23,7 @@ struct MidiNote {
 // player of a single synthesized voice, via its envelope
 final class EnvelopeHandlePlayer: ArrowWithHandles, NoteHandler {
   var arrow: ArrowWithHandles
+  weak var preset: Preset?
   var globalOffset: Int  = 0
   init(arrow: ArrowWithHandles) {
     self.arrow = arrow
@@ -31,6 +32,7 @@ final class EnvelopeHandlePlayer: ArrowWithHandles, NoteHandler {
   }
   
   func noteOn(_ note: MidiNote) {
+    preset?.noteOn()
     for key in arrow.namedADSREnvelopes.keys {
       for env in arrow.namedADSREnvelopes[key]! {
         env.noteOn(note)
@@ -44,6 +46,7 @@ final class EnvelopeHandlePlayer: ArrowWithHandles, NoteHandler {
   }
   
   func noteOff(_ note: MidiNote) {
+    preset?.noteOff()
     for key in arrow.namedADSREnvelopes.keys {
       for env in arrow.namedADSREnvelopes[key]! {
         env.noteOff(note)
@@ -81,7 +84,7 @@ final class VoiceLedger {
   private var noteOnnedVoiceIdxs: Set<Int>
   private var availableVoiceIdxs: Set<Int>
   var noteToVoiceIdx: [MidiValue: Int]
-
+  
   init(voiceCount: Int) {
     self.voiceCount = voiceCount
     // mark all voices as available
@@ -89,7 +92,7 @@ final class VoiceLedger {
     noteOnnedVoiceIdxs = Set<Int>()
     noteToVoiceIdx = [:]
   }
-
+  
   func takeAvailableVoice(_ note: MidiValue) -> Int? {
     // using first(where:) on a Range ensures we pick the lowest index available
     if let availableIdx = (0..<voiceCount).first(where: {
@@ -106,7 +109,7 @@ final class VoiceLedger {
   func voiceIndex(for note: MidiValue) -> Int? {
     return noteToVoiceIdx[note]
   }
-
+  
   func releaseVoice(_ note: MidiValue) -> Int? {
     if let voiceIdx = noteToVoiceIdx[note] {
       noteOnnedVoiceIdxs.remove(voiceIdx)
@@ -121,6 +124,7 @@ final class VoiceLedger {
 // player of a single sampler voice, via Apple's startNote/stopNote
 final class SamplerVoice: NoteHandler {
   var globalOffset: Int = 0
+  weak var preset: Preset?
   let samplerNode: AVAudioUnitSampler
   
   init(node: AVAudioUnitSampler) {
@@ -128,12 +132,14 @@ final class SamplerVoice: NoteHandler {
   }
   
   func noteOn(_ note: MidiNote) {
+    preset?.noteOn()
     let offsetNote = applyOffset(note: note.note)
     //print("samplerNode.startNote(\(offsetNote), withVelocity: \(note.velocity)")
     samplerNode.startNote(offsetNote, withVelocity: note.velocity, onChannel: 0)
   }
   
   func noteOff(_ note: MidiNote) {
+    preset?.noteOff()
     let offsetNote = applyOffset(note: note.note)
     samplerNode.stopNote(offsetNote, onChannel: 0)
   }
@@ -155,7 +161,12 @@ final class PolyphonicVoiceGroup: ArrowWithHandles, NoteHandler {
     
     if presets[0].sound != nil {
       // Arrow/Synth path
-      let handles = presets.compactMap { $0.sound }.map { EnvelopeHandlePlayer(arrow: $0) }
+      let handles = presets.compactMap { preset -> EnvelopeHandlePlayer? in
+        guard let sound = preset.sound else { return nil }
+        let player = EnvelopeHandlePlayer(arrow: sound)
+        player.preset = preset
+        return player
+      }
       self.voices = handles
       self.ledger = VoiceLedger(voiceCount: handles.count)
       
@@ -164,14 +175,13 @@ final class PolyphonicVoiceGroup: ArrowWithHandles, NoteHandler {
     } else if let node = presets[0].samplerNode {
       // Sampler path
       let count = presets.count
-      if presets.count == 1 && count > 1 {
-        // Replicate the single sampler
-        let handlers = (0..<count).map { _ in SamplerVoice(node: node) }
-        self.voices = handlers
-      } else {
-        let handlers = presets.compactMap { $0.samplerNode }.map { SamplerVoice(node: $0) }
-        self.voices = handlers
+      let handlers = presets.compactMap { preset -> SamplerVoice? in
+        guard let node = preset.samplerNode else { return nil }
+        let voice = SamplerVoice(node: node)
+        voice.preset = preset
+        return voice
       }
+      self.voices = handlers
       self.ledger = VoiceLedger(voiceCount: self.voices.count)
       // Samplers don't participate in the Arrow graph for audio signal.
       super.init(ArrowIdentity())
@@ -181,14 +191,14 @@ final class PolyphonicVoiceGroup: ArrowWithHandles, NoteHandler {
       super.init(ArrowIdentity())
     }
   }
-
+  
   
   func noteOn(_ noteVelIn: MidiNote) {
     let noteVel = MidiNote(note: applyOffset(note: noteVelIn.note), velocity: noteVelIn.velocity)
     // case 1: this note is being played by a voice already: send noteOff then noteOn to re-up it
     if let voiceIdx = ledger.voiceIndex(for: noteVelIn.note) {
       voices[voiceIdx].noteOn(noteVel)
-    // case 2: assign a fresh voice to the note
+      // case 2: assign a fresh voice to the note
     } else if let voiceIdx = ledger.takeAvailableVoice(noteVelIn.note) {
       voices[voiceIdx].noteOn(noteVel)
     }

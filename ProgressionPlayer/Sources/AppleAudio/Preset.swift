@@ -96,6 +96,16 @@ class InstrumentWithAVAudioUnitEffects {
     delayNode != nil
   }
   
+  var activeNoteCount = 0
+  
+  func noteOn() {
+    activeNoteCount += 1
+  }
+  
+  func noteOff() {
+    activeNoteCount -= 1
+  }
+  
   func activate() {
     audioGate?.isOpen = true
   }
@@ -218,7 +228,7 @@ class InstrumentWithAVAudioUnitEffects {
   
   func setPosition(_ t: CoreFloat) {
     if t > 1 { // fixes some race on startup
-      if positionLFO != nil && (audioGate?.isOpen ?? true) { // Always open for sampler
+      if positionLFO != nil && (audioGate?.isOpen ?? (activeNoteCount > 0)) { // Always open for sampler
         if (t - lastTimeWeSetPosition) > setPositionMinWaitTimeSecs {
           lastTimeWeSetPosition = t
           let (x, y, z) = positionLFO!.of(t - 1)
