@@ -26,6 +26,7 @@ extension AVAudioSourceNode {
       // audioBufferList: A pointer to the AudioBufferList structure where we write our samples.
       
       let count = Int(frameCount)
+      //print("frame count \(count)")
       
       // Safety check for buffer size
       if count > MAX_BUFFER_SIZE {

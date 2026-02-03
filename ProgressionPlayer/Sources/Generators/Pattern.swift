@@ -222,7 +222,7 @@ actor MusicPattern {
   var timeOrigin: Double
   
   private var presetPool = [Preset]()
-  private let poolSize = 40
+  private let poolSize = 20
 
   deinit {
     for preset in presetPool {
@@ -279,7 +279,6 @@ actor MusicPattern {
     let presets = leasePresets(count: notes.count)
     if presets.isEmpty {
       print("Warning: MusicPattern starved for voices")
-      return nil 
     }
     
     return MusicEvent(

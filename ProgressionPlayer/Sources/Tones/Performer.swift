@@ -83,6 +83,7 @@ final class VoiceLedger {
   private let voiceCount: Int
   private var noteOnnedVoiceIdxs: Set<Int>
   private var availableVoiceIdxs: Set<Int>
+  private var indexQueue: [Int] // lets us control the order we reuse voices
   var noteToVoiceIdx: [MidiValue: Int]
   
   init(voiceCount: Int) {
@@ -91,16 +92,19 @@ final class VoiceLedger {
     availableVoiceIdxs = Set(0..<voiceCount)
     noteOnnedVoiceIdxs = Set<Int>()
     noteToVoiceIdx = [:]
+    indexQueue = Array(0..<voiceCount)
   }
   
   func takeAvailableVoice(_ note: MidiValue) -> Int? {
     // using first(where:) on a Range ensures we pick the lowest index available
-    if let availableIdx = (0..<voiceCount).first(where: {
+    if let availableIdx = indexQueue.first(where: {
       availableVoiceIdxs.contains($0)
     }) {
       availableVoiceIdxs.remove(availableIdx)
       noteOnnedVoiceIdxs.insert(availableIdx)
       noteToVoiceIdx[note] = availableIdx
+      // we'll re-insert this index at the end of the array when returned
+      indexQueue.removeAll(where: {$0 == availableIdx})
       return availableIdx
     }
     return nil
@@ -115,6 +119,7 @@ final class VoiceLedger {
       noteOnnedVoiceIdxs.remove(voiceIdx)
       availableVoiceIdxs.insert(voiceIdx)
       noteToVoiceIdx.removeValue(forKey: note)
+      indexQueue.append(voiceIdx)
       return voiceIdx
     }
     return nil

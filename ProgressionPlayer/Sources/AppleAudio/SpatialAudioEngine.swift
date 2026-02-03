@@ -64,7 +64,7 @@ class SpatialAudioEngine {
   }
   
   func start() throws {
-    envNode.renderingAlgorithm = .HRTFHQ
+    envNode.renderingAlgorithm = .HRTF
     envNode.outputType = .auto
     envNode.isListenerHeadTrackingEnabled = true
     envNode.listenerPosition = AVAudio3DPoint(x: 0, y: 0, z: 0)

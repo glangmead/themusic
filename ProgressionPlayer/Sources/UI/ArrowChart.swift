@@ -16,23 +16,32 @@ struct ArrowChart: View {
   }
   
   var arrow: Arrow11
-  @State private var numSamplesToPlot = 512
-  let sampleRate = 44100
+  @State private var numSamplesToPlot = 48000
+  let sampleRate = 48000
+  let now: CoreFloat = 600
   var ymin: Int = -1
   var ymax: Int = 1
   var data: [Sample] {
-    let now: CoreFloat = 0
+    var result = [Sample]()
     let dt: CoreFloat = 1.0 / CoreFloat(sampleRate)
-    var times = [CoreFloat](repeating: 0, count: 512)
-    var amps = [CoreFloat](repeating: 0, count: 512)
+    var times = [CoreFloat](repeating: 0, count: numSamplesToPlot)
     vDSP.formRamp(withInitialValue: now, increment: dt, result: &times)
-    // process will use times.count which is MAX_BUFFER_SIZE
-    arrow.process(inputs: times, outputs: &amps)
-    
-    let plotCount = min(numSamplesToPlot, MAX_BUFFER_SIZE)
-    return (0..<plotCount).map { i in
-      return Sample(time: times[i], amp: amps[i])
+    var numSamplesProcessedByArrow = 0
+    while numSamplesProcessedByArrow < numSamplesToPlot {
+      let start: Int = numSamplesProcessedByArrow
+      let endPlusOne: Int = min(numSamplesToPlot, numSamplesProcessedByArrow + 512)
+      let windowTimes = Array(times[start..<endPlusOne])
+      var windowAmps = [CoreFloat](repeating: 0, count: 512)
+      arrow.process(inputs: windowTimes, outputs: &windowAmps)
+      for i in 0..<windowTimes.count {
+        //if i % 100 == 0 {
+        //  print("sample at time \(windowTimes[i]) is \(windowAmps[i])")
+        //}
+        result.append(Sample(time: windowTimes[i], amp: windowAmps[i]))
+      }
+      numSamplesProcessedByArrow += 512
     }
+    return result
   }
   
   var body: some View {
@@ -43,7 +52,7 @@ struct ArrowChart: View {
           y: .value("Amplitude", sample.amp)
         )
       }
-      .chartXScale(domain: 0...Double(numSamplesToPlot)/Double(sampleRate))
+      .chartXScale(domain: now...now+Double(numSamplesToPlot)/Double(sampleRate))
       .chartYScale(domain: ymin...ymax)
       
       TextField("Samples", value: $numSamplesToPlot, format: .number)
@@ -54,7 +63,8 @@ struct ArrowChart: View {
 }
 
 #Preview {
-  let arr = Sawtooth()
-  arr.innerArr = ArrowProd(innerArrs: [ArrowConst(value: 300), ArrowIdentity()])
+  let arr = NoiseSmoothStep(noiseFreq: 5, min: 0, max: 1)
+  arr.sampleRate = 44000
+  //arr.innerArr = ArrowProd(innerArrs: [ArrowConst(value: 300), ArrowIdentity()])
   return ArrowChart(arrow: arr, ymin: -1, ymax: 1)
 }

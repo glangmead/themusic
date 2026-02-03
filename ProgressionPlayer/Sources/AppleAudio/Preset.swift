@@ -65,7 +65,7 @@ struct PresetSyntax: Codable {
 }
 
 @Observable
-class InstrumentWithAVAudioUnitEffects {
+class Preset {
   var name: String = "Noname"
   
   // sound synthesized in our code, and an audioGate to help control its perf
@@ -243,6 +243,9 @@ class InstrumentWithAVAudioUnitEffects {
   func wrapInAppleNodes(forEngine engine: SpatialAudioEngine) -> AVAudioMixerNode {
     let sampleRate = engine.sampleRate
     
+    // recursively tell all arrows their sample rate
+    sound?.setSampleRateRecursive(rate: sampleRate)
+    
     // connect our synthesis engine to an AVAudioSourceNode as the initial node in the chain,
     // else create an AVAudioUnitSampler to fill that role
     var initialNode: AVAudioNode?
@@ -316,7 +319,3 @@ class InstrumentWithAVAudioUnitEffects {
     }
   }
 }
-
-typealias Preset = InstrumentWithAVAudioUnitEffects
-
-

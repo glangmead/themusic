@@ -208,8 +208,6 @@ final class NoiseSmoothStep: Arrow11 {
   var min: CoreFloat
   var max: CoreFloat
 
-  // TODO: we need to know the sample rate here, and that should not be hardcoded
-  private var audioDeltaTime: CoreFloat = 1.0 / 44100.0
   // for emitting new noise samples
   private var lastNoiseTime: CoreFloat
   private var nextNoiseTime: CoreFloat
@@ -221,6 +219,10 @@ final class NoiseSmoothStep: Arrow11 {
   private var numAudioSamplesPerNoise: Int = 0
   private var numAudioSamplesThisSegment = 0
   
+  var audioDeltaTime: CoreFloat {
+    1.0 / sampleRate
+  }
+  
   init(noiseFreq: CoreFloat, min: CoreFloat = -1, max: CoreFloat = 1) {
     self.noiseFreq = noiseFreq
     self.min = min
@@ -230,12 +232,13 @@ final class NoiseSmoothStep: Arrow11 {
     lastNoiseTime = 0
     noiseDeltaTime = 1.0 / noiseFreq
     nextNoiseTime = noiseDeltaTime
-    noiseDeltaTime -= fmod(noiseDeltaTime, audioDeltaTime)
-    numAudioSamplesPerNoise = Int(noiseDeltaTime/audioDeltaTime)
     super.init()
   }
   
   func noise(_ t: CoreFloat) -> CoreFloat {
+    noiseDeltaTime -= fmod(noiseDeltaTime, audioDeltaTime)
+    numAudioSamplesPerNoise = Int(noiseDeltaTime/audioDeltaTime)
+    
     // catch up if there has been a time gap
     if t > nextNoiseTime + audioDeltaTime {
       lastNoiseTime = t
@@ -524,6 +527,11 @@ class ArrowWithHandles: Arrow11 {
     super.init()
   }
   
+  override func setSampleRateRecursive(rate: CoreFloat) {
+    wrappedArrow.setSampleRateRecursive(rate: rate)
+    super.setSampleRateRecursive(rate: rate)
+  }
+
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
     wrappedArrowUnsafe._withUnsafeGuaranteedRef { $0.process(inputs: inputs, outputs: &outputs) }
   }

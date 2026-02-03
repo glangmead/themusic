@@ -11,7 +11,13 @@ import AVFAudio
 typealias CoreFloat = Double
 let MAX_BUFFER_SIZE = 4096
 
-class Arrow11 { 
+class Arrow11 {
+  var sampleRate: CoreFloat = 44100 // to be updated from outside if different, but this is a good guess
+  func setSampleRateRecursive(rate: CoreFloat) {
+    sampleRate = rate
+    innerArr?.setSampleRateRecursive(rate: rate)
+    innerArrs.forEach({$0.setSampleRateRecursive(rate: rate)})
+  }
   // these are arrows with which we can compose (arr/arrs run first, then this arrow)
   var innerArr: Arrow11? = nil {
     didSet {
@@ -83,7 +89,6 @@ class Arrow13 {
 final class ControlArrow11: Arrow11 {
   var lastTimeEmittedSecs: CoreFloat = 0.0
   var lastEmission: CoreFloat = 0.0
-  let timeBetweenEmissionsSecs: CoreFloat = 441.0 / 44100.0
   let infrequency = 10
   private var scratchBuffer = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
 
@@ -252,6 +257,11 @@ final class ArrowEqualPowerCrossfade: Arrow11 {
     self.mixPointArr = mixPointArr
     arrowOuts = [[CoreFloat]](repeating: [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE), count: innerArrs.count)
     super.init(innerArrs: innerArrs)
+  }
+  
+  override func setSampleRateRecursive(rate: CoreFloat) {
+    mixPointArr.setSampleRateRecursive(rate: rate)
+    super.setSampleRateRecursive(rate: rate)
   }
 
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
