@@ -129,6 +129,7 @@ final class SamplerVoice: NoteHandler {
   
   func noteOn(_ note: MidiNote) {
     let offsetNote = applyOffset(note: note.note)
+    //print("samplerNode.startNote(\(offsetNote), withVelocity: \(note.velocity)")
     samplerNode.startNote(offsetNote, withVelocity: note.velocity, onChannel: 0)
   }
   

@@ -297,7 +297,7 @@ class InstrumentWithAVAudioUnitEffects {
       }
     } else if let url = Bundle.main.url(forResource: fileName, withExtension: "sf2") {
       do {
-        try node.loadSoundBankInstrument(at: url, program: 1, bankMSB: 0x79, bankLSB: 0)
+        try node.loadSoundBankInstrument(at: url, program: 4, bankMSB: 0x79, bankLSB: 0)
       } catch {
         print("Error loading sound bank instrument \(fileName): \(error.localizedDescription)")
       }
