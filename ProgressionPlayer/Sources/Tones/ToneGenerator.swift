@@ -117,6 +117,9 @@ final class Sawtooth: Arrow11, WidthHaver {
           // scratch = scratch - 1
           var minusOne: CoreFloat = -1.0
           vDSP_vsaddD(scratchBase, 1, &minusOne, scratchBase, 1, count)
+
+          // test: inverted
+          vDSP_vsmulD(scratchBase, 1, &minusOne, scratchBase, 1, count)
         }
       }
     }

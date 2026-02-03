@@ -53,11 +53,13 @@ struct MusicEvent {
       timeBuffer[0] = now
       for (key, modulatingArrow) in modulators {
         if voiceGroup.namedConsts[key] != nil {
-          if let arrowConst = voiceGroup.namedConsts[key]!.first {
-            if let eventUsingArrow = modulatingArrow as? EventUsingArrow {
-              eventUsingArrow.event = self
+          if let arrowConsts = voiceGroup.namedConsts[key] {
+            for arrowConst in arrowConsts {
+              if let eventUsingArrow = modulatingArrow as? EventUsingArrow {
+                eventUsingArrow.event = self
+              }
+              arrowConst.val = modulatingArrow.of(now)
             }
-            arrowConst.val = modulatingArrow.of(now)
           }
         }
       }

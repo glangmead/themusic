@@ -108,12 +108,11 @@ struct SongView: View {
               engine: synth.engine,
               modulators: [
                 "overallAmp": ArrowProd(innerArrs: [
-                  ArrowExponentialRandom(min: 0.0011, max: 0.77),
-                  ArrowConst(value: 1.1),
+                  ArrowExponentialRandom(min: 0.0011, max: 0.77)
                 ]),
                 "overallAmp2": EventUsingArrow(ofEvent: { event, _ in 1.0 / (CoreFloat(event.notes[0].note % 12) + 1.0)  }),
                 "overallCentDetune": ArrowRandom(min: -5, max: 5),
-                "vibratoAmp": ArrowExponentialRandom(min: 2, max: 20),
+                "vibratoAmp": ArrowExponentialRandom(min: 0.002, max: 0.1),
                 "vibratoFreq": ArrowRandom(min: 1, max: 25)
               ],
               // a pitch consists of: root (NoteClass), Scale, octave, degree (element of Scale)
@@ -129,7 +128,7 @@ struct SongView: View {
                 )
               ),
               sustains: FloatSampler(min: 5, max: 5),
-              gaps: FloatSampler(min: 0.1, max: 0.5)
+              gaps: FloatSampler(min: 0.3, max: 0.8)
             )
             patternPlaybackHandle = Task.detached {
               await musicPattern?.play()

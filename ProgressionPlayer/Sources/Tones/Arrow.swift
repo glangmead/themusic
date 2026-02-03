@@ -84,17 +84,17 @@ final class ControlArrow11: Arrow11 {
   var lastTimeEmittedSecs: CoreFloat = 0.0
   var lastEmission: CoreFloat = 0.0
   let timeBetweenEmissionsSecs: CoreFloat = 441.0 / 44100.0
+  let infrequency = 10
   private var scratchBuffer = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
 
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
     (innerArr ?? ArrowIdentity()).process(inputs: inputs, outputs: &scratchBuffer)
-    for i in 0..<inputs.count {
-      let t = inputs[i]
-      if t - lastTimeEmittedSecs >= timeBetweenEmissionsSecs {
-        lastEmission = scratchBuffer[i]
-        lastTimeEmittedSecs = t
-      }
-      outputs[i] = lastEmission
+    var i = 0
+    while i < inputs.count {
+      let val = scratchBuffer[i]
+      let spanEnd = min(i+infrequency, inputs.count)
+      vDSP.fill(&outputs[i..<spanEnd], with: val)
+      i += infrequency
     }
   }
 }

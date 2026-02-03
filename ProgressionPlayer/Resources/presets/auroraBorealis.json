@@ -20,27 +20,31 @@
                 {
                  "sum": { "of": [
                    { "prod": { "of": [ 
-                    { "const": {"name": "freq", "val": 300} }, 
-                    { "identity": {}}  
+                     {"const": {"name": "freq", "val": 300} }, 
+                     {"identity": {}}  
                    ]}},
+                   {"compose": {"arrows": [
                    { "prod": { "of": [
-                      { "const": {"name": "vibratoAmp", "val": 1}},
-                      { "envelope": { "release": 0.1, "scale": 1, "name": "vibratoEnv", "attack": 7, "decay": 0.1, "sustain": 1 } },
-                      { "sum": { "of": [
-                        { "const": {"name": "vibratoOscShift", "val": 0.5}}, 
-                        { "prod": { "of": [
-                          { "const": {"name": "vibratoOscScale", "val": 0.5}},
-                          { "compose": { "arrows": [
-                            { "prod": { "of": [
-                              { "const": {"val": 2, "name": "vibratoFreq"} },
-                              { "identity": {} }
-                            ]}},
-                            { "osc": {"name": "vibratoOsc", "shape": "sineOsc", "width": { "const": {"name": "osc1VibWidth", "val": 1 } } } },
-                            {"control": {}}
-                          ]}}
-                        ]}}
-                      ]}}
-                    ]}}]}},
+                       { "const": {"name": "vibratoAmp", "val": 1}},
+                       { "envelope": { "release": 0.1, "scale": 1, "name": "vibratoEnv", "attack": 7, "decay": 0.1, "sustain": 1 } },
+                       { "sum": { "of": [
+                         { "const": {"name": "vibratoOscShift", "val": 0.5}}, 
+                         { "prod": { "of": [
+                           { "const": {"name": "vibratoOscScale", "val": 0.5}},
+                           { "compose": { "arrows": [
+                             { "prod": { "of": [
+                               { "const": {"val": 2, "name": "vibratoFreq"} },
+                               { "identity": {} }
+                             ]}},
+                             { "osc": {"name": "vibratoOsc", "shape": "sineOsc", "width": { "const": {"name": "osc1VibWidth", "val": 1 } } } }
+                           ]}}
+                         ]}}
+                       ]}}
+                     ]}
+                   }, 
+                   {"control": {}}
+                   ]}}
+                  ]}},
                 { "osc": {"name": "osc1", "shape": "squareOsc", "width": { "const": {"val": 1, "name": "osc1Width"} }} },
                 { "choruser": { "name": "osc1Choruser", "valueToChorus": "freq", "chorusCentRadius": 0, "chorusNumVoices": 1 } }
               ]}}
@@ -53,31 +57,31 @@
               "compose": { "arrows": [
                 {
                  "sum": { "of": [
-                   { 
-                    "prod": { "of": [ 
-                     { "const": {"name": "freq", "val": 300} }, 
+                   { "prod": { "of": [ 
+                     {"const": {"name": "freq", "val": 300} }, 
                      {"identity": {}}
-                    ]}
-                   },
+                   ]}},
+                   {"compose": {"arrows": [
                    { "prod": { "of": [
-                      { "const": {"name": "vibratoAmp", "val": 1}},
-                      { "envelope": { "release": 0.1, "scale": 1, "name": "vibratoEnv", "attack": 7, "decay": 0.1, "sustain": 1 } },
-                      { "sum": { "of": [
-                        { "const": {"name": "vibratoOscShift", "val": 0.5}}, 
-                        { "prod": { "of": [
-                          { "const": {"name": "vibratoOscScale", "val": 0.5}},
-                          { "compose": { "arrows": [
-                            { "prod": { "of": [
-                              { "const": {"val": 2, "name": "vibratoFreq"} },
-                              { "identity": {} }
-                            ]}},
-                            { "osc": {"name": "vibratoOsc", "shape": "sineOsc", "width": { "const": {"name": "osc1VibWidth", "val": 1 } } } },
-                            {"control": {}}
-                          ]}}
-                        ]}}
-                      ]}}
+                       { "const": {"name": "vibratoAmp", "val": 1}},
+                       { "envelope": { "release": 0.1, "scale": 1, "name": "vibratoEnv", "attack": 7, "decay": 0.1, "sustain": 1 } },
+                       { "sum": { "of": [
+                         { "const": {"name": "vibratoOscShift", "val": 0.5}}, 
+                         { "prod": { "of": [
+                           { "const": {"name": "vibratoOscScale", "val": 0.5}},
+                           { "compose": { "arrows": [
+                             { "prod": { "of": [
+                               { "const": {"val": 2, "name": "vibratoFreq"} },
+                               { "identity": {} }
+                             ]}},
+                             { "osc": {"name": "vibratoOsc", "shape": "sineOsc", "width": { "const": {"name": "osc1VibWidth", "val": 1 } } } }
+                           ]}}
+                         ]}}
+                       ]}}
                      ]}
-                    }
+                   }, 
+                   {"control": {}}
+                   ]}}
                  ]}
                 },
                 { "osc": {"name": "osc2", "shape": "sawtoothOsc", "width": { "const": {"name": "osc2Width", "val": 1} }} },
@@ -94,29 +98,30 @@
                 {
                  "sum": { "of": [
                    { "prod": { "of": [ 
-                     { "const": {"name": "freq", "val": 300} }, 
+                     {"const": {"name": "freq", "val": 300} }, 
                      {"identity": {}} 
                    ]}},
-                   { "prod": { "of": [
-                      { "const": {"name": "vibratoAmp", "val": 1}},
-                      { "envelope": { "release": 0.1, "scale": 1, "name": "vibratoEnv", "attack": 7, "decay": 0.1, "sustain": 1 } },
-                      { "sum": { "of": [
-                        { "const": {"name": "vibratoOscShift", "val": 0.5}}, 
-                        { "prod": { "of": [
-                          { "const": {"name": "vibratoOscScale", "val": 0.5}},
-                          { "compose": { "arrows": [
-                            { "prod": { "of": [
-                              { "const": {"val": 2, "name": "vibratoFreq"} },
-                              { "identity": {} }
-                            ]}},
-                            { "osc": {"name": "vibratoOsc", "shape": "sineOsc", "width": { "const": {"name": "osc1VibWidth", "val": 1 } } } },
-                            {"control": {}}
+                   {"compose": {"arrows": [
+                    { "prod": { "of": [
+                        { "const": {"name": "vibratoAmp", "val": 1}},
+                        { "envelope": { "release": 0.1, "scale": 1, "name": "vibratoEnv", "attack": 7, "decay": 0.1, "sustain": 1 } },
+                        { "sum": { "of": [
+                          { "const": {"name": "vibratoOscShift", "val": 0.5}}, 
+                          { "prod": { "of": [
+                            { "const": {"name": "vibratoOscScale", "val": 0.5}},
+                            { "compose": { "arrows": [
+                              { "prod": { "of": [
+                                { "const": {"val": 2, "name": "vibratoFreq"} },
+                                { "identity": {} }
+                              ]}},
+                              { "osc": {"name": "vibratoOsc", "shape": "sineOsc", "width": { "const": {"name": "osc1VibWidth", "val": 1 } } } }
+                            ]}}
                           ]}}
                         ]}}
-                      ]}}
-                     ]}
-                    }
-
+                      ]}
+                    }, 
+                    {"control": {}}
+                    ]}}
                  ]}
                 },
                 { "osc": {"name": "osc3", "shape": "noiseOsc", "width": { "const": {"name": "osc3Width", "val": 1} }} },
@@ -134,17 +139,11 @@
     {
      "lowPassFilter": {
        "cutoff"   : 
-        {"sum": { "of": [
           { "prod": { "of": [
             { "const": {"name": "freq", "val": 300} },
             { "const": {"name": "cutoffMultiplier", "val": 4} }
           ]}},
-          { "prod": { "of": [
-            { "const": {"name": "cutoff", "val": 1200} },
-            { "envelope": { "release": 0.1, "scale": 1, "name": "filterEnv", "attack": 0.1, "decay": 0.1, "sustain": 1 } }
-          ]}}
-       ]}},
-       "resonance": { "const": {"name": "resonance", "val": 1.1} },
+       "resonance": { "const": {"name": "resonance", "val": 0.7} },
        "name"     : "filter"
      }
    }]
