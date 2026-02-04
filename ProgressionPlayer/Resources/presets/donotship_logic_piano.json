@@ -1,6 +1,6 @@
 {
- "name"   : "GeneralUser",
+ "name"   : "80sepiano",
  "rose"   : {"freq": 0.5, "leafFactor": 3, "phase": 3.14, "amp": 4},
  "effects": {"reverbPreset": 1, "delayTime": 0, "delayLowPassCutoff": 100000, "delayFeedback": 0, "reverbWetDryMix": 50, "delayWetDryMix": 0},
- "samplerFilename": "GeneralUser-GS"
+ "samplerFilename": "timbresofheaven4.0", "samplerProgram": 99, "samplerBank": 121
 }

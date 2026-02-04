@@ -32,6 +32,8 @@ struct PresetSyntax: Codable {
   let name: String
   let arrow: ArrowSyntax? // a sound synthesized in code, to be attached to an AVAudioSourceNode; mutually exclusive with a sample
   let samplerFilename: String? // a sound from an audio file in our bundle; mutually exclusive with an arrow
+  let samplerProgram: UInt8? // a soundfont idiom: the instrument/preset index
+  let samplerBank: UInt8? // a soundfont idiom: the grouping of instruments, e.g. usually 121 for sounds and 120 for percussion
   let rose: RoseSyntax
   let effects: EffectsSyntax
   
@@ -40,8 +42,8 @@ struct PresetSyntax: Codable {
     if let arrowSyntax = arrow {
       let sound = arrowSyntax.compile()
       preset = Preset(sound: sound)
-    } else if let samplerName = samplerFilename {
-      preset = Preset(samplerFileName: samplerName)
+    } else if let samplerName = samplerFilename, let samplerBank = samplerBank, let samplerProgram = samplerProgram {
+      preset = Preset(samplerFileName: samplerName, samplerBank: samplerBank, samplerProgram: samplerProgram)
     } else {
        preset = Preset(sound: ArrowWithHandles(ArrowConst(value: 0)))
        fatalError("PresetSyntax must have either arrow or sampler")
@@ -76,7 +78,9 @@ class Preset {
   // sound from an audio sample
   var samplerNode: AVAudioUnitSampler? = nil
   var samplerFileName: String? = nil
-  
+  var samplerProgram: UInt8 = 0
+  var samplerBank: UInt8 = 121
+
   // movement of the mixerNode in the environment node (see SpatialAudioEngine)
   var positionLFO: Rose? = nil
   var timeOrigin: Double = 0
@@ -208,8 +212,10 @@ class Preset {
     setupLifecycleCallbacks()
   }
   
-  init(samplerFileName: String) {
+  init(samplerFileName: String, samplerBank: UInt8, samplerProgram: UInt8) {
     self.samplerFileName = samplerFileName
+    self.samplerBank = samplerBank
+    self.samplerProgram = samplerProgram
     initEffects()
   }
   
@@ -257,7 +263,7 @@ class Preset {
       initialNode = sourceNode
     } else if let samplerFileName = samplerFileName {
       samplerNode = AVAudioUnitSampler()
-      loadSamplerInstrument(samplerNode!, fileName: samplerFileName)
+      loadSamplerInstrument(samplerNode!, fileName: samplerFileName, bank: samplerBank, program: samplerProgram)
       initialNode = samplerNode
     }
 
@@ -299,7 +305,7 @@ class Preset {
     engine.detach(nodes)
   }
   
-  private func loadSamplerInstrument(_ node: AVAudioUnitSampler, fileName: String) {
+  private func loadSamplerInstrument(_ node: AVAudioUnitSampler, fileName: String, bank: UInt8, program: UInt8) {
     if let url = Bundle.main.url(forResource: fileName, withExtension: "wav") ??
                  Bundle.main.url(forResource: fileName, withExtension: "aiff") ??
         Bundle.main.url(forResource: fileName, withExtension: "aif") {
@@ -310,7 +316,8 @@ class Preset {
       }
     } else if let url = Bundle.main.url(forResource: fileName, withExtension: "sf2") {
       do {
-        try node.loadSoundBankInstrument(at: url, program: 4, bankMSB: 0x79, bankLSB: 0)
+        try node.loadSoundBankInstrument(at: url, program: program, bankMSB: bank, bankLSB: 0)
+        print("loaded program \(program) bankMSB \(bank) bankLSB 0")
       } catch {
         print("Error loading sound bank instrument \(fileName): \(error.localizedDescription)")
       }
