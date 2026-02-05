@@ -141,6 +141,109 @@ class WaitingIterator<Element>: Sequence, IteratorProtocol {
   }
 }
 
+struct MidiChordGenerator: Sequence, IteratorProtocol {
+  // two pieces of data for the "key", e.g. "E minor"
+  var scaleGenerator: any IteratorProtocol<Scale>
+  var rootNoteGenerator: any IteratorProtocol<NoteClass>
+  var currentChord: TymoczkoChords713 = .I
+  
+  enum TymoczkoChords713 {
+    case I6
+    case IV6
+    case ii6
+    case viio6
+    case V6
+    case I
+    case vi
+    case IV
+    case ii
+    case I64
+    case V
+    case iii
+    case iii6
+    case vi6
+  }
+  
+  func scaleDegrees(chord: TymoczkoChords713) -> [Int] {
+    switch chord {
+    case .I6:    [3, 5, 1]
+    case .IV6:   [6, 1, 4]
+    case .ii6:   [4, 6, 2]
+    case .viio6: [2, 4, 7]
+    case .V6:    [7, 2, 5]
+    case .I:     [1, 3, 5]
+    case .vi:    [6, 1, 3]
+    case .IV:    [4, 6, 1]
+    case .ii:    [2, 4, 6]
+    case .I64:   [5, 1, 3]
+    case .V:     [5, 7, 2]
+    case .iii:   [3, 5, 7]
+    case .iii6:  [5, 7, 3]
+    case .vi6:   [1, 3, 6]
+    }
+  }
+  
+  // probabilistic state transitions according to Tymoczko diagram 7.1.3 of Tonality
+  var stateTransitionsBaroqueClassicalMajor: (TymoczkoChords713) -> [(TymoczkoChords713, CoreFloat)] = { start in
+    switch start {
+    case .I:
+      return [            (.vi, 0.07),  (.IV, 0.21),  (.ii, 0.14), (.viio6, 0.05),  (.V, 0.50), (.I64, 0.05)]
+    case .vi:
+      return [                          (.IV, 0.13),  (.ii, 0.41), (.viio6, 0.06),  (.V, 0.28), (.I6, 0.12) ]
+    case .IV:
+      return [(.I, 0.35),                             (.ii, 0.16), (.viio6, 0.10),  (.V, 0.40), (.IV6, 0.10)]
+    case .ii:
+      return [            (.vi, 0.05),                             (.viio6, 0.20),  (.V, 0.70), (.I64, 0.05)]
+    case .viio6:
+      return [(.I, 0.85), (.vi, 0.02),  (.IV, 0.03),                                (.V, 0.10)]
+    case .V:
+      return [(.I, 0.88), (.vi, 0.05),  (.IV6, 0.05), (.ii, 0.01)]
+    case .V6:
+      return [                                                                      (.V, 0.8),  (.I6, 0.2)  ]
+    case .I6:
+      return [(.I, 0.50), (.vi,0.07/2), (.IV, 0.11),  (.ii, 0.07), (.viio6, 0.025), (.V, 0.25)              ]
+    case .IV6:
+      return [(.I, 0.17),               (.IV, 0.65),  (.ii, 0.08), (.viio6, 0.05),  (.V, 0.4/2)             ]
+    case .ii6:
+      return [                                        (.ii, 0.10), (.viio6, 0.10),  (.V6, 0.8)              ]
+    case .I64:
+      return [                                                                      (.V, 1.0)               ]
+    case .iii:
+      return [                                                                      (.V, 0.5),  (.I6, 0.5)  ]
+    case .iii6:
+      return [                                                                      (.V, 0.5),  (.I64, 0.5) ]
+    case .vi6:
+      return [                                                                      (.V, 0.5),  (.I64, 0.5) ]
+    }
+  }
+  var chordWithInversionGenerator: any IteratorProtocol<Chord>
+  var octaveGenerator: any IteratorProtocol<Int>
+  
+  func minBy2<A, B: Comparable>(_ items: [(A, B)]) -> A? {
+    items.min(by: {t1, t2 in t1.1 < t2.1})?.0
+  }
+  
+  func exp2<A>(_ item: (A, CoreFloat)) -> (A, CoreFloat) {
+    (item.0, -1.0 * log(CoreFloat.random(in: 0...1)) / item.1)
+  }
+  
+  func weightedDraw<A>(items: [(A, CoreFloat)]) -> A? {
+    minBy2(items.map({exp2($0)}))
+  }
+
+  mutating func next() -> [MidiNote]? {
+    let candidates = stateTransitionsBaroqueClassicalMajor(currentChord)
+    let nextChord = weightedDraw(items: candidates)!
+    let chordDegrees = scaleDegrees(chord: nextChord)
+    // TODO: choose notes for this chord
+    
+    // I have the root note and the scale, and now I have several degrees
+    
+    self.currentChord = nextChord
+    return []
+  }
+}
+
 // generate an exact MidiValue
 struct MidiPitchGenerator: Sequence, IteratorProtocol {
   var scaleGenerator: any IteratorProtocol<Scale>
