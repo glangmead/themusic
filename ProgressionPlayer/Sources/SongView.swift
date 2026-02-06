@@ -132,7 +132,7 @@ struct SongView: View {
               //     octaveGenerator: [2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 5].randomIterator()
               //   )
               // ),
-              sustains: FloatSampler(min: 5, max: 5),
+              sustains: FloatSampler(min: 5, max: 10),
               gaps: FloatSampler(min: 5, max: 10 )
             )
             patternPlaybackHandle = Task.detached {

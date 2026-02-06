@@ -36,7 +36,7 @@ struct MusicEvent {
   var cleanup: (() async -> Void)? = nil
   var timeBuffer = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
   var arrowBuffer = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
-
+  
   private(set) var voice: NoteHandler? = nil
   
   mutating func play() async throws {
@@ -70,7 +70,7 @@ struct MusicEvent {
     for preset in presets {
       preset.positionLFO?.phase = CoreFloat.random(in: 0...(2.0 * .pi))
     }
-
+    
     notes.forEach {
       //print("pattern note on, ostensibly for \(sustain) seconds")
       voice?.noteOn($0) }
@@ -147,7 +147,7 @@ struct Midi1700sChordGenerator: Sequence, IteratorProtocol {
   var rootNoteGenerator: any IteratorProtocol<NoteClass>
   var currentChord: TymoczkoChords713 = .I
   var neverCalled = true
-
+  
   enum TymoczkoChords713 {
     case I6
     case IV6
@@ -229,7 +229,7 @@ struct Midi1700sChordGenerator: Sequence, IteratorProtocol {
   func weightedDraw<A>(items: [(A, CoreFloat)]) -> A? {
     minBy2(items.map({exp2($0)}))
   }
-
+  
   mutating func next() -> [MidiNote]? {
     // the key
     let scaleRootNote = rootNoteGenerator.next()
@@ -243,22 +243,25 @@ struct Midi1700sChordGenerator: Sequence, IteratorProtocol {
     let chordDegrees = scaleDegrees(chord: nextChord)
     
     print("Gonna play \(nextChord)")
-
+    
     // notes
     var midiNotes = [MidiNote]()
-    for chordDegree in chordDegrees {
+    for i in chordDegrees.indices {
+      let chordDegree = chordDegrees[i]
       //print("adding chord degree \(chordDegree)")
       for octave in 0..<6 {
-        let scaleRootNote = Note(scaleRootNote!.letter, accidental: scaleRootNote!.accidental, octave: octave)
-        //print("scale root note in octave \(octave): \(scaleRootNote.noteNumber)")
-        let chordDegreeAboveRoot = scale?.intervals[chordDegree-1]
-        //print("shifting scale root note by \(chordDegreeAboveRoot!)")
-        midiNotes.append(
-          MidiNote(
-            note: MidiValue(scaleRootNote.shiftUp(chordDegreeAboveRoot!)!.noteNumber),
-            velocity: 127
+        if CoreFloat.random(in: 0...2) > 1 || (i == 0 && octave < 2) {
+          let scaleRootNote = Note(scaleRootNote!.letter, accidental: scaleRootNote!.accidental, octave: octave)
+          //print("scale root note in octave \(octave): \(scaleRootNote.noteNumber)")
+          let chordDegreeAboveRoot = scale?.intervals[chordDegree-1]
+          //print("shifting scale root note by \(chordDegreeAboveRoot!)")
+          midiNotes.append(
+            MidiNote(
+              note: MidiValue(scaleRootNote.shiftUp(chordDegreeAboveRoot!)!.noteNumber),
+              velocity: 127
+            )
           )
-        )
+        }
       }
     }
     
@@ -282,7 +285,7 @@ struct MidiPitchGenerator: Sequence, IteratorProtocol {
     let degree = degreeGenerator.next()!
     // from these two we can get a specific interval
     let interval = scale.intervals[degree]
-
+    
     let root = rootNoteGenerator.next()!
     let octave = octaveGenerator.next()!
     // knowing the root class and octave gives us the root note of this scale
@@ -304,11 +307,11 @@ struct MidiPitchAsChordGenerator: Sequence, IteratorProtocol {
 struct ScaleSampler: Sequence, IteratorProtocol {
   typealias Element = [MidiNote]
   var scale: Scale
-
+  
   init(scale: Scale = Scale.aeolian) {
     self.scale = scale
   }
-
+  
   func next() -> [MidiNote]? {
     return [MidiNote(
       note: MidiValue(Note.A.shiftUp(scale.intervals.randomElement()!)!.noteNumber),
@@ -332,7 +335,7 @@ struct FloatSampler: Sequence, IteratorProtocol {
     self.min = min
     self.max = max
   }
-
+  
   func next() -> CoreFloat? {
     CoreFloat.random(in: min...max)
   }
@@ -350,13 +353,13 @@ actor MusicPattern {
   
   private var presetPool = [Preset]()
   private let poolSize = 20
-
+  
   deinit {
     for preset in presetPool {
       preset.detachAppleNodes(from: engine)
     }
   }
-
+  
   init(
     presetSpec: PresetSyntax,
     engine: SpatialAudioEngine,

@@ -133,7 +133,7 @@
           }
         ]}
        },
-       { "envelope": { "decay": 2.5, "sustain": 0, "attack": 2.5, "name": "ampEnv", "release": 2.5, "scale": 1} }
+       { "envelope": { "decay": 2.5, "sustain": 1, "attack": 2.5, "name": "ampEnv", "release": 2.5, "scale": 1} }
       ]}
     },
     {
