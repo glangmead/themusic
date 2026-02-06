@@ -108,27 +108,32 @@ struct SongView: View {
               engine: synth.engine,
               modulators: [
                 "overallAmp": ArrowProd(innerArrs: [
-                  ArrowExponentialRandom(min: 0.0011, max: 0.77)
+                  ArrowExponentialRandom(min: 0.3, max: 0.6)
                 ]),
                 "overallAmp2": EventUsingArrow(ofEvent: { event, _ in 1.0 / (CoreFloat(event.notes[0].note % 12) + 1.0)  }),
                 "overallCentDetune": ArrowRandom(min: -5, max: 5),
                 "vibratoAmp": ArrowExponentialRandom(min: 0.002, max: 0.1),
                 "vibratoFreq": ArrowRandom(min: 1, max: 25)
               ],
-              // a pitch consists of: root (NoteClass), Scale, octave, degree (element of Scale)
-              notes: MidiPitchAsChordGenerator(
-                pitchGenerator: MidiPitchGenerator(
-                  scaleGenerator: [Scale.lydian].cyclicIterator(),
-                  degreeGenerator: Array(0...6).shuffledIterator(),
-                  rootNoteGenerator: WaitingIterator(
-                    iterator: [NoteClass.C, NoteClass.E, NoteClass.G].cyclicIterator(),
-                    timeBetweenChanges: ArrowRandom(min: 10, max: 25)
-                  ),
-                  octaveGenerator: [2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 5].randomIterator()
-                )
+              // sequences of chords according to a Mozart/Bach corpus according to Tymoczko
+              notes: Midi1700sChordGenerator(
+                scaleGenerator: [Scale.major].cyclicIterator(),
+                rootNoteGenerator: [NoteClass.A].cyclicIterator()
               ),
+              // Aurora Borealis
+              // notes: MidiPitchAsChordGenerator(
+              //   pitchGenerator: MidiPitchGenerator(
+              //     scaleGenerator: [Scale.lydian].cyclicIterator(),
+              //     degreeGenerator: Array(0...6).shuffledIterator(),
+              //     rootNoteGenerator: WaitingIterator(
+              //       iterator: [NoteClass.C, NoteClass.E, NoteClass.G].cyclicIterator(),
+              //       timeBetweenChanges: ArrowRandom(min: 10, max: 25)
+              //     ),
+              //     octaveGenerator: [2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 5].randomIterator()
+              //   )
+              // ),
               sustains: FloatSampler(min: 5, max: 5),
-              gaps: FloatSampler(min: 0.3, max: 0.8)
+              gaps: FloatSampler(min: 5, max: 10 )
             )
             patternPlaybackHandle = Task.detached {
               await musicPattern?.play()

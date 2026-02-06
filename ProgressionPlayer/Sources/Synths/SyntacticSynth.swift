@@ -245,7 +245,7 @@ class SyntacticSynth: EngineAndVoicePool {
       // voicePool is the object that the sequencer plays
       let voiceGroup = PolyphonicVoiceGroup(presets: presets)
       self.poolVoice = voiceGroup
-    } else if presetSpec.samplerFilename != nil {
+    } else if presetSpec.samplerFilenames != nil {
       for _ in 1...numVoices {
         let preset = presetSpec.compile()
         presets.append(preset)

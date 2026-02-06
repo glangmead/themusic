@@ -141,12 +141,13 @@ class WaitingIterator<Element>: Sequence, IteratorProtocol {
   }
 }
 
-struct MidiChordGenerator: Sequence, IteratorProtocol {
+struct Midi1700sChordGenerator: Sequence, IteratorProtocol {
   // two pieces of data for the "key", e.g. "E minor"
   var scaleGenerator: any IteratorProtocol<Scale>
   var rootNoteGenerator: any IteratorProtocol<NoteClass>
   var currentChord: TymoczkoChords713 = .I
-  
+  var neverCalled = true
+
   enum TymoczkoChords713 {
     case I6
     case IV6
@@ -216,8 +217,6 @@ struct MidiChordGenerator: Sequence, IteratorProtocol {
       return [                                                                      (.V, 0.5),  (.I64, 0.5) ]
     }
   }
-  var chordWithInversionGenerator: any IteratorProtocol<Chord>
-  var octaveGenerator: any IteratorProtocol<Int>
   
   func minBy2<A, B: Comparable>(_ items: [(A, B)]) -> A? {
     items.min(by: {t1, t2 in t1.1 < t2.1})?.0
@@ -232,15 +231,40 @@ struct MidiChordGenerator: Sequence, IteratorProtocol {
   }
 
   mutating func next() -> [MidiNote]? {
+    // the key
+    let scaleRootNote = rootNoteGenerator.next()
+    let scale = scaleGenerator.next()
     let candidates = stateTransitionsBaroqueClassicalMajor(currentChord)
-    let nextChord = weightedDraw(items: candidates)!
+    var nextChord = weightedDraw(items: candidates)!
+    if neverCalled {
+      neverCalled = false
+      nextChord = .I
+    }
     let chordDegrees = scaleDegrees(chord: nextChord)
-    // TODO: choose notes for this chord
     
-    // I have the root note and the scale, and now I have several degrees
+    print("Gonna play \(nextChord)")
+
+    // notes
+    var midiNotes = [MidiNote]()
+    for chordDegree in chordDegrees {
+      //print("adding chord degree \(chordDegree)")
+      for octave in 0..<6 {
+        let scaleRootNote = Note(scaleRootNote!.letter, accidental: scaleRootNote!.accidental, octave: octave)
+        //print("scale root note in octave \(octave): \(scaleRootNote.noteNumber)")
+        let chordDegreeAboveRoot = scale?.intervals[chordDegree-1]
+        //print("shifting scale root note by \(chordDegreeAboveRoot!)")
+        midiNotes.append(
+          MidiNote(
+            note: MidiValue(scaleRootNote.shiftUp(chordDegreeAboveRoot!)!.noteNumber),
+            velocity: 127
+          )
+        )
+      }
+    }
     
     self.currentChord = nextChord
-    return []
+    print("with notes: \(midiNotes)")
+    return midiNotes
   }
 }
 
