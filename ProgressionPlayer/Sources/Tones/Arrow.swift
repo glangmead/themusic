@@ -132,13 +132,17 @@ final class ArrowSum: Arrow11 {
     
     // Process remaining children via scratch
     if innerArrsUnmanaged.count > 1 {
+      let count = vDSP_Length(inputs.count)
       for i in 1..<innerArrsUnmanaged.count {
         innerArrsUnmanaged[i]._withUnsafeGuaranteedRef {
           $0.process(inputs: inputs, outputs: &scratchBuffer)
         }
-        // output = output + scratch
-        // slice both scratch and outputs to ensure matching sizes
-        vDSP.add(scratchBuffer[0..<inputs.count], outputs[0..<inputs.count], result: &outputs[0..<inputs.count])
+        // output = output + scratch (no slicing - use C API with explicit count)
+        scratchBuffer.withUnsafeBufferPointer { scratchBuf in
+          outputs.withUnsafeMutableBufferPointer { outBuf in
+            vDSP_vaddD(scratchBuf.baseAddress!, 1, outBuf.baseAddress!, 1, outBuf.baseAddress!, 1, count)
+          }
+        }
       }
     }
   }
@@ -153,21 +157,19 @@ final class ArrowProd: Arrow11 {
       $0.process(inputs: inputs, outputs: &outputs)
     }
     
-    // Optimization: if the first factor is zero, the product is zero.
-    // This allows envelopes to gate oscillators, saving CPU.
-    if vDSP.maximumMagnitude(outputs) == 0 {
-      return
-    }
-    
     // Process remaining children via scratch
     if innerArrsUnmanaged.count > 1 {
+      let count = vDSP_Length(inputs.count)
       for i in 1..<innerArrsUnmanaged.count {
         innerArrsUnmanaged[i]._withUnsafeGuaranteedRef {
           $0.process(inputs: inputs, outputs: &scratchBuffer)
         }
-        // output = output * scratch (in-place)
-        // slice both scratch and outputs to ensure matching sizes
-        vDSP.multiply(scratchBuffer[0..<inputs.count], outputs[0..<inputs.count], result: &outputs[0..<inputs.count])
+        // output = output * scratch (no slicing - use C API with explicit count)
+        scratchBuffer.withUnsafeBufferPointer { scratchBuf in
+          outputs.withUnsafeMutableBufferPointer { outBuf in
+            vDSP_vmulD(scratchBuf.baseAddress!, 1, outBuf.baseAddress!, 1, outBuf.baseAddress!, 1, count)
+          }
+        }
       }
     }
   }
@@ -196,18 +198,19 @@ final class ArrowExponentialRandom: Arrow11 {
   }
   
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
-    // Fill scratch with the constant factor
-    vDSP.fill(&scratch, with: min * exp(log(max / min)))
+    let count = vDSP_Length(inputs.count)
+    let factor = min * exp(log(max / min))
     
     // Generate random values in outputs
-    // Default implementation: loop
     for i in 0..<inputs.count {
       outputs[i] = CoreFloat.random(in: 0...1)
     }
     
-    // Multiply scratch (sliced) with outputs
-    // slice both scratch and outputs to ensure matching sizes
-    vDSP.multiply(scratch[0..<inputs.count], outputs[0..<inputs.count], result: &outputs[0..<inputs.count])
+    // Multiply by constant factor (no slicing - use C API)
+    outputs.withUnsafeMutableBufferPointer { outBuf in
+      var f = factor
+      vDSP_vsmulD(outBuf.baseAddress!, 1, &f, outBuf.baseAddress!, 1, count)
+    }
   }
 }
 
@@ -358,8 +361,13 @@ final class ArrowIdentity: Arrow11 {
     super.init()
   }
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
-    // Identity: copy inputs to outputs
-    outputs = inputs
+    // Identity: copy inputs to outputs without allocation
+    let count = vDSP_Length(inputs.count)
+    inputs.withUnsafeBufferPointer { inBuf in
+      outputs.withUnsafeMutableBufferPointer { outBuf in
+        vDSP_mmovD(inBuf.baseAddress!, outBuf.baseAddress!, count, 1, count, count)
+      }
+    }
   }
 }
 

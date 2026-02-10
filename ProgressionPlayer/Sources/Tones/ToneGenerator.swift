@@ -391,12 +391,17 @@ final class Choruser: Arrow11 {
         if let freqArrows = innerArrowWithHandles.namedConsts[valueToChorus] {
           let baseFreq = freqArrows.first!.val
           let spreadFreqs = chorusedFreqs(freq: baseFreq)
+          let count = vDSP_Length(inputs.count)
           for freqArrow in freqArrows {
             for i in spreadFreqs.indices {
               freqArrow.val = spreadFreqs[i]
               (innerArr ?? ArrowIdentity()).process(inputs: inputs, outputs: &innerVals)
-              // safe slicing for vDSP.add
-              vDSP.add(outputs[0..<inputs.count], innerVals[0..<inputs.count], result: &outputs[0..<inputs.count])
+              // no slicing - use C API with explicit count
+              innerVals.withUnsafeBufferPointer { innerBuf in
+                outputs.withUnsafeMutableBufferPointer { outBuf in
+                  vDSP_vaddD(outBuf.baseAddress!, 1, innerBuf.baseAddress!, 1, outBuf.baseAddress!, 1, count)
+                }
+              }
             }
             // restore
             freqArrow.val = baseFreq
