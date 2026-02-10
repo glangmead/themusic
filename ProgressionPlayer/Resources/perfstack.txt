@@ -1,163 +1,149 @@
-11.81 G  100.0%	-	 ProgressionPlayer (57377)
-1.34 G  11.4%	-	  static ProgressionPlayerApp.$main()
-591.39 M   5.0%	-	  Sine.process(inputs:outputs:)
-469.10 M   4.0%	-	  closure #1 in closure #1 in static vForce.sin<A, B>(_:result:)
-423.45 M   3.6%	-	  closure #1 in static vDSP.fill<A>(_:with:)
-392.98 M   3.3%	-	  NoiseSmoothStep.noise(_:)
-379.89 M   3.2%	379.89 M	  0xc
-375.06 M   3.2%	-	  closure #1 in static vDSP.maximumMagnitude<A>(_:)
-353.06 M   3.0%	353.06 M	  <Unknown Address>
-320.82 M   2.7%	-	  specialized _ContiguousArrayBuffer.init(_uninitializedCount:minimumCapacity:)
-284.33 M   2.4%	-	  ControlArrow11.process(inputs:outputs:)
-283.42 M   2.4%	-	  specialized UnsafeMutablePointer.initialize(from:count:)
-277.18 M   2.3%	-	  specialized Array._checkSubscript(_:wasNativeTypeChecked:)
-257.01 M   2.2%	-	  specialized Array._endMutation()
-201.45 M   1.7%	-	  closure #1 in closure #1 in closure #1 in static vDSP.divide<A, B, C>(_:_:result:)
-186.15 M   1.6%	186.15 M	  <Call stack limit reached>
-183.02 M   1.6%	-	  closure #1 in Noise.process(inputs:outputs:)
-177.95 M   1.5%	-	  specialized Array._getElement(_:wasNativeTypeChecked:matchingSubscriptCheck:)
-173.01 M   1.5%	-	  specialized _ArrayBufferProtocol.replaceSubrange<A>(_:with:elementsOf:)
-171.54 M   1.5%	171.54 M	  0x3
-170.74 M   1.4%	-	  ADSR.process(inputs:outputs:)
-170.23 M   1.4%	-	  specialized _ArrayBuffer._consumeAndCreateNew(bufferIsUnique:minimumCapacity:growForAppend:)
-168.79 M   1.4%	-	  specialized _SliceBuffer.init(_buffer:shiftedToStartIndex:)
-165.68 M   1.4%	165.68 M	  0xb
-157.32 M   1.3%	157.32 M	  <Allocated Prior To Attach>
-151.81 M   1.3%	-	  protocol witness for static Equatable.== infix(_:_:) in conformance Int
-146.81 M   1.2%	-	  DYLD-STUB$$fmod
-143.68 M   1.2%	-	  closure #1 in closure #1 in closure #1 in Sawtooth.process(inputs:outputs:)
-143.13 M   1.2%	143.13 M	  0x8
-132.73 M   1.1%	132.73 M	  0x5
-131.23 M   1.1%	-	  LowPassFilter2.filter(_:inner:cutoff:resonance:)
-126.34 M   1.1%	126.34 M	  0x4
-121.07 M   1.0%	121.07 M	  0xa
-112.72 M   1.0%	112.72 M	  0x9
-111.06 M   0.9%	111.06 M	  0x6
-100.55 M   0.9%	100.55 M	  0x7
-93.98 M   0.8%	-	  specialized _ArrayBuffer._checkValidSubscriptMutating(_:)
-88.44 M   0.7%	-	  specialized _ArrayBuffer.beginCOWMutation()
-85.42 M   0.7%	-	  ADSR.env(_:)
-79.32 M   0.7%	-	  DYLD-STUB$$swift_isUniquelyReferenced_nonNull_native
-77.78 M   0.7%	-	  ArrowIdentity.process(inputs:outputs:)
-74.90 M   0.6%	-	  closure #1 in closure #1 in closure #1 in static vDSP.multiply<A, B, C>(_:_:result:)
-72.48 M   0.6%	-	  closure #1 in closure #1 in Square.process(inputs:outputs:)
-61.93 M   0.5%	-	  ArrowProd.process(inputs:outputs:)
-60.14 M   0.5%	-	  Preset.setPosition(_:)
-54.87 M   0.5%	54.87 M	  0xd
-54.25 M   0.5%	-	  specialized Array._makeMutableAndUnique()
-46.73 M   0.4%	-	  Square.process(inputs:outputs:)
-44.45 M   0.4%	-	  closure #1 in closure #1 in static vDSP.multiply<A, B>(_:_:result:)
-35.84 M   0.3%	-	  closure #1 in closure #2 in Noise.process(inputs:outputs:)
-33.35 M   0.3%	40.26 k	  closure #2 in Preset.wrapInAppleNodes(forEngine:)
-29.32 M   0.2%	-	  specialized _SliceBuffer.beginCOWMutation()
-28.86 M   0.2%	-	  ArrowEqualPowerCrossfade.process(inputs:outputs:)
-28.15 M   0.2%	-	  ArrowSum.process(inputs:outputs:)
-26.64 M   0.2%	-	  sqrtPosNeg(_:)
-26.53 M   0.2%	-	  specialized _ArrayBufferProtocol.init(copying:)
-26.01 M   0.2%	-	  __swift_instantiateConcreteTypeFromMangledNameV2
-25.91 M   0.2%	-	  closure #1 in static vDSP.clear<A>(_:)
-25.75 M   0.2%	-	  specialized Interval.contains(_:)
-24.52 M   0.2%	-	  Sawtooth.process(inputs:outputs:)
-24.37 M   0.2%	-	  specialized _ArrayBuffer.immutableCount.getter
-18.00 M   0.2%	-	  specialized PiecewiseFunc.val(_:)
-17.42 M   0.1%	-	  specialized _ArrayBufferProtocol.replaceSubrange<A>(_:with:elementsOf:)
-16.33 M   0.1%	-	  Rose.of(_:)
-14.56 M   0.1%	-	  Arrow11.of(_:)
-14.52 M   0.1%	-	  closure #1 in closure #1 in closure #1 in static vDSP.add<A, B, C>(_:_:result:)
-13.72 M   0.1%	-	  DYLD-STUB$$swift_bridgeObjectRetain
-13.64 M   0.1%	-	  closure #4 in ADSR.setFunctionsFromEnvelopeSpecs()
-13.00 M   0.1%	-	  ADSR.env.getter
-12.74 M   0.1%	-	  specialized _ArrayBufferProtocol.replaceSubrange<A>(_:with:elementsOf:)
-12.28 M   0.1%	-	  specialized Array._getElement(_:wasNativeTypeChecked:matchingSubscriptCheck:)
-12.17 M   0.1%	-	  BasicOscillator.process(inputs:outputs:)
-10.19 M   0.1%	-	  DYLD-STUB$$swift_release
-10.00 M   0.1%	-	  clamp(_:min:max:)
-10.00 M   0.1%	-	  specialized ArraySlice._endMutation()
-9.91 M   0.1%	-	  ArrowWithHandles.process(inputs:outputs:)
-9.56 M   0.1%	-	  specialized _ContiguousArrayBuffer.firstElementAddress.getter
-9.08 M   0.1%	-	  closure #1 in static AVAudioSourceNode.withSource(source:sampleRate:)
-9.00 M   0.1%	-	  specialized IndexingIterator.next()
-9.00 M   0.1%	-	  Choruser.process(inputs:outputs:)
-8.77 M   0.1%	-	  specialized Array._checkSubscript(_:wasNativeTypeChecked:)
-8.46 M   0.1%	-	  NoiseSmoothStep.process(inputs:outputs:)
-8.00 M   0.1%	-	  specialized _SliceBuffer.count.getter
-7.73 M   0.1%	-	  specialized IndexingIterator.next()
-7.53 M   0.1%	-	  specialized _SliceBuffer.init(owner:subscriptBaseAddress:indices:hasNativeBuffer:)
-7.23 M   0.1%	-	  DYLD-STUB$$swift_retain
-7.19 M   0.1%	-	  closure #1 in closure #1 in closure #1 in static vDSP.formRamp<A>(withInitialValue:increment:result:)
-7.00 M   0.1%	-	  specialized _ArrayBuffer.immutableCount.getter
-6.88 M   0.1%	-	  specialized min<A>(_:_:)
-6.78 M   0.1%	-	  DYLD-STUB$$swift_bridgeObjectRelease
-6.76 M   0.1%	-	  specialized Array.init(_uninitializedCount:)
-6.71 M   0.1%	-	  DYLD-STUB$$memcpy
-6.31 M   0.1%	-	  specialized Array.replaceSubrange<A>(_:with:)
-6.30 M   0.1%	-	  ArrowConst.process(inputs:outputs:)
-6.00 M   0.1%	-	  specialized Array._checkSubscript(_:wasNativeTypeChecked:)
-6.00 M   0.1%	-	  DYLD-STUB$$swift_unknownObjectRelease
-5.74 M   0.0%	-	  DYLD-STUB$$sqrt
-5.60 M   0.0%	-	  ArrowIdentity.__allocating_init()
-5.57 M   0.0%	-	  closure #1 in ArrowWithHandles.process(inputs:outputs:)
-5.35 M   0.0%	-	  Noise.process(inputs:outputs:)
-5.00 M   0.0%	-	  DYLD-STUB$$swift_isUniquelyReferenced_nonNull
-4.94 M   0.0%	-	  NoiseSmoothStep.audioDeltaTime.getter
-4.77 M   0.0%	-	  DYLD-STUB$$__sincos_stret
-4.67 M   0.0%	-	  DYLD-STUB$$malloc_size
-4.21 M   0.0%	-	  specialized Array._checkSubscript(_:wasNativeTypeChecked:)
-4.00 M   0.0%	-	  DYLD-STUB$$vDSP_vfillD
-4.00 M   0.0%	-	  DYLD-STUB$$swift_allocObject
-3.86 M   0.0%	-	  specialized UnsafeMutablePointer.assign(from:count:)
-3.48 M   0.0%	-	  closure #2 in Preset.wrapInAppleNodes(forEngine:)
-3.00 M   0.0%	-	  specialized _ContiguousArrayBuffer.count.getter
-2.80 M   0.0%	2.80 M	  thunk for @escaping @callee_guaranteed (@unowned UnsafeMutablePointer<ObjCBool>, @unowned UnsafePointer<AudioTimeStamp>, @unowned UInt32, @unowned UnsafeMutablePointer<AudioBufferList>) -> (@unowned Int32)
-2.71 M   0.0%	-	  specialized _SliceBuffer.endIndex.getter
-2.50 M   0.0%	-	  generatorForTuple(_:)
-2.00 M   0.0%	-	  specialized ContiguousArray._getCount()
-2.00 M   0.0%	-	  specialized _ArrayBuffer.mutableCapacity.getter
-2.00 M   0.0%	-	  specialized _ArrayBuffer._checkValidSubscriptMutating(_:)
-1.93 M   0.0%	-	  protocol witness for Strideable.advanced(by:) in conformance Int
-1.92 M   0.0%	-	  specialized Clock.sleep(for:tolerance:)
-1.80 M   0.0%	1.80 M	  0x10002b0f5 (ProgressionPlayer +0xf0f5) <361B0B57-2508-3B12-A16F-1C0FF2CC4581>
-1.70 M   0.0%	-	  closure #1 in ADSR.setFunctionsFromEnvelopeSpecs()
-1.59 M   0.0%	-	  specialized ArraySlice._makeMutableAndUnique()
-1.00 M   0.0%	-	  specialized _ArrayBuffer._consumeAndCreateNew()
-1.00 M   0.0%	-	  specialized static vDSP.divide<A, B, C>(_:_:result:)
-1.00 M   0.0%	-	  closure #2 in closure #1 in MidiInspectorView.body.getter
-1.00 M   0.0%	-	  specialized ContiguousArray.subscript.getter
-1.00 M   0.0%	-	  MidiInspectorView.loadAndParseMidi()
-1.00 M   0.0%	-	  closure #1 in closure #1 in SongView.body.getter
-1.00 M   0.0%	-	  specialized Array._checkIndex(_:)
-1.00 M   0.0%	-	  MidiParser.parseTracks(from:)
-1.00 M   0.0%	-	  Arrow11.deinit
-1.00 M   0.0%	-	  specialized RandomAccessCollection<>.indices.getter
-1.00 M   0.0%	-	  closure #1 in ADSR.setFunctionsFromEnvelopeSpecs()
-1.00 M   0.0%	-	  DYLD-STUB$$vDSP_vmulD
-1.00 M   0.0%	-	  specialized IndexingIterator.next()
-1.00 M   0.0%	-	  specialized _SliceBuffer.firstElementAddress.getter
-1.00 M   0.0%	-	  specialized _ContiguousArrayBuffer.firstElementAddress.getter
-1.00 M   0.0%	-	  outlined init with copy of MidiNoteEvent
-1.00 M   0.0%	-	  DYLD-STUB$$vDSP_vdivD
+13.65 G  100.0%	-	 ProgressionPlayer (58478)
+1.34 G   9.8%	-	  static ProgressionPlayerApp.$main()
+1.09 G   8.0%	-	  Sine.process(inputs:outputs:)
+707.10 M   5.2%	-	  closure #1 in closure #2 in Sine.process(inputs:outputs:)
+683.74 M   5.0%	-	  NoiseSmoothStep.noise(_:)
+519.55 M   3.8%	-	  closure #1 in ArrowConst.process(inputs:outputs:)
+500.38 M   3.7%	500.38 M	  0xc
+373.08 M   2.7%	-	  closure #1 in closure #1 in closure #1 in Sine.process(inputs:outputs:)
+367.01 M   2.7%	367.01 M	  <Unknown Address>
+341.46 M   2.5%	341.46 M	  <Call stack limit reached>
+340.95 M   2.5%	-	  specialized Array._checkSubscript(_:wasNativeTypeChecked:)
+315.75 M   2.3%	-	  closure #1 in closure #1 in ArrowIdentity.process(inputs:outputs:)
+292.11 M   2.1%	-	  ADSR.process(inputs:outputs:)
+253.09 M   1.9%	-	  closure #1 in Noise.process(inputs:outputs:)
+218.56 M   1.6%	218.56 M	  0xa
+216.66 M   1.6%	-	  DYLD-STUB$$fmod
+209.32 M   1.5%	-	  closure #1 in closure #1 in closure #1 in Sawtooth.process(inputs:outputs:)
+201.15 M   1.5%	201.15 M	  <Allocated Prior To Attach>
+196.24 M   1.4%	-	  LowPassFilter2.filter(_:inner:cutoff:resonance:)
+190.07 M   1.4%	-	  specialized _ArrayBuffer._checkValidSubscriptMutating(_:)
+180.89 M   1.3%	-	  specialized Array._getElement(_:wasNativeTypeChecked:matchingSubscriptCheck:)
+180.19 M   1.3%	180.19 M	  0xb
+176.28 M   1.3%	176.28 M	  0x9
+173.95 M   1.3%	173.95 M	  0x3
+173.50 M   1.3%	-	  protocol witness for static Equatable.== infix(_:_:) in conformance Int
+172.96 M   1.3%	172.96 M	  0x6
+163.83 M   1.2%	163.83 M	  0x8
+149.02 M   1.1%	149.02 M	  0x4
+146.01 M   1.1%	146.01 M	  0x7
+145.34 M   1.1%	145.34 M	  0x5
+141.81 M   1.0%	-	  DYLD-STUB$$swift_isUniquelyReferenced_nonNull_native
+121.95 M   0.9%	-	  specialized _ArrayBuffer.beginCOWMutation()
+106.53 M   0.8%	-	  closure #1 in closure #3 in ArrowProd.process(inputs:outputs:)
+96.59 M   0.7%	-	  ADSR.env(_:)
+93.59 M   0.7%	-	  closure #1 in closure #1 in Square.process(inputs:outputs:)
+92.63 M   0.7%	92.63 M	  0xd
+84.54 M   0.6%	-	  closure #1 in ControlArrow11.process(inputs:outputs:)
+78.64 M   0.6%	-	  Preset.setPosition(_:)
+74.77 M   0.5%	-	  Square.process(inputs:outputs:)
+71.27 M   0.5%	-	  specialized Array._endMutation()
+65.56 M   0.5%	-	  specialized Array._makeMutableAndUnique()
+62.91 M   0.5%	-	  ArrowEqualPowerCrossfade.process(inputs:outputs:)
+49.43 M   0.4%	-	  specialized Interval.contains(_:)
+48.42 M   0.4%	-	  sqrtPosNeg(_:)
+47.53 M   0.3%	44.00 k	  closure #2 in Preset.wrapInAppleNodes(forEngine:)
+37.82 M   0.3%	-	  closure #1 in closure #4 in ArrowSum.process(inputs:outputs:)
+37.69 M   0.3%	-	  closure #1 in closure #2 in Noise.process(inputs:outputs:)
+32.35 M   0.2%	-	  closure #1 in closure #1 in closure #1 in static vDSP.formRamp<A>(withInitialValue:increment:result:)
+29.30 M   0.2%	-	  Sawtooth.process(inputs:outputs:)
+28.59 M   0.2%	-	  ArrowProd.process(inputs:outputs:)
+26.25 M   0.2%	-	  specialized _ContiguousArrayBuffer.firstElementAddress.getter
+26.10 M   0.2%	-	  specialized PiecewiseFunc.val(_:)
+24.89 M   0.2%	-	  Rose.of(_:)
+23.02 M   0.2%	-	  DYLD-STUB$$swift_release
+21.28 M   0.2%	-	  Arrow11.of(_:)
+21.05 M   0.2%	-	  DYLD-STUB$$sqrt
+17.31 M   0.1%	-	  ArrowWithHandles.process(inputs:outputs:)
+16.64 M   0.1%	-	  Choruser.process(inputs:outputs:)
+16.64 M   0.1%	-	  NoiseSmoothStep.process(inputs:outputs:)
+16.52 M   0.1%	-	  ADSR.env.getter
+15.67 M   0.1%	-	  closure #1 in ArrowWithHandles.process(inputs:outputs:)
+15.04 M   0.1%	-	  DYLD-STUB$$swift_bridgeObjectRetain
+14.44 M   0.1%	-	  Noise.process(inputs:outputs:)
+14.15 M   0.1%	-	  DYLD-STUB$$swift_retain
+14.00 M   0.1%	-	  specialized Array._checkSubscript(_:wasNativeTypeChecked:)
+14.00 M   0.1%	-	  specialized Array._getElement(_:wasNativeTypeChecked:matchingSubscriptCheck:)
+13.91 M   0.1%	-	  specialized _ArrayBuffer.immutableCount.getter
+13.68 M   0.1%	-	  ControlArrow11.process(inputs:outputs:)
+12.91 M   0.1%	-	  ArrowIdentity.process(inputs:outputs:)
+11.09 M   0.1%	-	  specialized Array._checkSubscript(_:wasNativeTypeChecked:)
+10.90 M   0.1%	-	  DYLD-STUB$$vDSP_vfillD
+10.55 M   0.1%	-	  closure #4 in ADSR.setFunctionsFromEnvelopeSpecs()
+10.48 M   0.1%	-	  specialized Array.init(_uninitializedCount:)
+10.42 M   0.1%	-	  LowPassFilter2.process(inputs:outputs:)
+10.33 M   0.1%	-	  BasicOscillator.process(inputs:outputs:)
+10.25 M   0.1%	-	  closure #1 in static AVAudioSourceNode.withSource(source:sampleRate:)
+10.05 M   0.1%	-	  DYLD-STUB$$swift_bridgeObjectRelease
+10.00 M   0.1%	-	  specialized Array._checkSubscript(_:wasNativeTypeChecked:)
+8.61 M   0.1%	-	  DYLD-STUB$$__sincos_stret
+8.50 M   0.1%	-	  specialized IndexingIterator.next()
+8.01 M   0.1%	-	  NoiseSmoothStep.audioDeltaTime.getter
+7.52 M   0.1%	-	  closure #1 in Choruser.process(inputs:outputs:)
+7.42 M   0.1%	-	  specialized min<A>(_:_:)
+7.07 M   0.1%	-	  clamp(_:min:max:)
+7.00 M   0.1%	-	  specialized _ArrayBuffer._checkValidSubscriptMutating(_:)
+6.64 M   0.0%	-	  ArrowSum.process(inputs:outputs:)
+6.48 M   0.0%	-	  specialized IndexingIterator.next()
+5.58 M   0.0%	-	  closure #1 in closure #1 in static vDSP.convertElements<A, B>(of:to:)
+5.10 M   0.0%	-	  ArrowIdentity.__allocating_init()
+5.00 M   0.0%	-	  closure #1 in AudioGate.process(inputs:outputs:)
+5.00 M   0.0%	-	  specialized ContiguousArray.subscript.getter
+4.27 M   0.0%	-	  ArrowConst.process(inputs:outputs:)
+4.00 M   0.0%	-	  closure #1 in ADSR.setFunctionsFromEnvelopeSpecs()
+3.75 M   0.0%	-	  specialized UnsafeMutablePointer.assign(from:count:)
+3.39 M   0.0%	-	  specialized Array._getElement(_:wasNativeTypeChecked:matchingSubscriptCheck:)
+3.30 M   0.0%	-	  DYLD-STUB$$vDSP_mmovD
+3.23 M   0.0%	-	  closure #2 in Preset.wrapInAppleNodes(forEngine:)
+3.17 M   0.0%	3.17 M	  0x1041c70f5 (ProgressionPlayer +0xf0f5) <4CDA8CBE-02CB-35E3-A5CD-B128C274127F>
+3.00 M   0.0%	-	  specialized _ArrayBuffer.immutableCount.getter
+3.00 M   0.0%	-	  closure #1 in closure #1 in SongView.body.getter
+2.93 M   0.0%	2.93 M	  thunk for @escaping @callee_guaranteed (@unowned UnsafeMutablePointer<ObjCBool>, @unowned UnsafePointer<AudioTimeStamp>, @unowned UInt32, @unowned UnsafeMutablePointer<AudioBufferList>) -> (@unowned Int32)
+2.21 M   0.0%	-	  specialized Collection.first.getter
+2.11 M   0.0%	-	  protocol witness for Strideable.advanced(by:) in conformance Int
+2.00 M   0.0%	-	  specialized _ContiguousArrayBuffer.mutableFirstElementAddress.getter
+2.00 M   0.0%	-	  Arrow11.deinit
+2.00 M   0.0%	-	  closure #1 in ArrowProd.process(inputs:outputs:)
+2.00 M   0.0%	-	  specialized IndexingIterator.next()
+2.00 M   0.0%	-	  <deduplicated_symbol>
+2.00 M   0.0%	-	  RadialGradient.init(colors:center:startRadius:endRadius:)
+1.49 M   0.0%	-	  generatorForTuple(_:)
+1.48 M   0.0%	-	  closure #1 in closure #1 in MIDIInstrument.enableMIDI(_:name:)
+1.46 M   0.0%	-	  specialized Clock.sleep(for:tolerance:)
+1.04 M   0.0%	-	  specialized Preset.withMutation<A, B>(keyPath:_:)
+1.00 M   0.0%	-	  closure #1 in BasicOscillator.process(inputs:outputs:)
+1.00 M   0.0%	-	  DYLD-STUB$$arc4random_buf
+1.00 M   0.0%	-	  specialized ContiguousArray._getCount()
+1.00 M   0.0%	-	  initializeWithCopy for MidiInspectorView
+1.00 M   0.0%	-	  type metadata accessor for ArrowIdentity
+1.00 M   0.0%	-	  specialized _ArrayBuffer.immutableCount.getter
+1.00 M   0.0%	-	  closure #4 in ADSR.setFunctionsFromEnvelopeSpecs()
+1.00 M   0.0%	-	  __swift_instantiateConcreteTypeFromMangledNameAbstractV2
+1.00 M   0.0%	-	  __swift_instantiateConcreteTypeFromMangledNameV2
 1.00 M   0.0%	-	  MidiParser.init(url:)
-1.00 M   0.0%	-	  closure #1 in SongView.body.getter
-637.87 k   0.0%	-	  <deduplicated_symbol>
-632.02 k   0.0%	-	  specialized Preset.withMutation<A, B>(keyPath:_:)
-486.44 k   0.0%	-	  specialized Collection.first.getter
-345.59 k   0.0%	-	  Sequencer.play()
-160.88 k   0.0%	-	  partial apply for closure #1 in Preset.lastTimeWeSetPosition.setter
-136.80 k   0.0%	-	  DYLD-STUB$$objc_retain_x8
-124.35 k   0.0%	-	  <deduplicated_symbol>
-108.08 k   0.0%	-	  EnvelopeHandlePlayer.noteOn(_:)
-100.11 k   0.0%	-	  specialized AnyIterator.next()
-93.85 k   0.0%	-	  DYLD-STUB$$swift_task_dealloc
-91.02 k   0.0%	-	  DYLD-STUB$$swift_getKeyPath
-90.00 k   0.0%	-	  DYLD-STUB$$type metadata accessor for UnsafeMutableAudioBufferListPointer
-79.85 k   0.0%	-	  specialized AnyIterator.next()
-68.28 k   0.0%	-	  closure #1 in closure #1 in MIDIInstrument.enableMIDI(_:name:)
-60.84 k   0.0%	-	  specialized Preset.access<A>(keyPath:)
-58.88 k   0.0%	-	  DYLD-STUB$$objc_msgSend
-52.33 k   0.0%	-	  DYLD-STUB$$dispatch thunk of Collection.startIndex.getter
-47.59 k   0.0%	-	  specialized Preset.access<A>(keyPath:)
-36.66 k   0.0%	-	  Preset.lastTimeWeSetPosition.getter
-33.98 k   0.0%	-	  DYLD-STUB$$static Clock<>.continuous.getter
-18.84 k   0.0%	-	  specialized NoteHandler.applyOffset(note:)
-15.62 k   0.0%	-	  Preset.audioGate.getter
-14.71 k   0.0%	14.71 k	  DYLD-STUB$$swift_task_switch
+1.00 M   0.0%	-	  specialized _ArrayBuffer._consumeAndCreateNew(bufferIsUnique:minimumCapacity:growForAppend:)
+1.00 M   0.0%	-	  closure #1 in closure #1 in MidiInspectorView.body.getter
+1.00 M   0.0%	-	  MidiInspectorView.loadAndParseMidi()
+810.98 k   0.0%	-	  0x104222b83 (ProgressionPlayer +0x6ab83) <4CDA8CBE-02CB-35E3-A5CD-B128C274127F>
+565.72 k   0.0%	-	  partial apply for closure #4 in ADSR.setFunctionsFromEnvelopeSpecs()
+356.96 k   0.0%	-	  partial apply for closure #1 in static AVAudioSourceNode.withSource(source:sampleRate:)
+270.40 k   0.0%	-	  specialized AnyIterator.next()
+203.12 k   0.0%	-	  SpatialAudioEngine.start()
+143.40 k   0.0%	-	  DYLD-STUB$$static Array._allocateBufferUninitialized(minimumCapacity:)
+138.28 k   0.0%	-	  specialized Preset.access<A>(keyPath:)
+136.54 k   0.0%	-	  DYLD-STUB$$dispatch thunk of InstantProtocol.advanced(by:)
+117.93 k   0.0%	-	  DYLD-STUB$$vDSP_vrampD
+112.06 k   0.0%	-	  DYLD-STUB$$type metadata accessor for UnsafeMutableAudioBufferListPointer
+97.62 k   0.0%	-	  closure #1 in Preset.setupLifecycleCallbacks()
+69.60 k   0.0%	-	  Preset.positionLFO.getter
+63.17 k   0.0%	-	  specialized Preset.access<A>(keyPath:)
+61.72 k   0.0%	-	  <deduplicated_symbol>
+50.57 k   0.0%	-	  DYLD-STUB$$ObservationRegistrar.access<A, B>(_:keyPath:)
+34.06 k   0.0%	-	  DYLD-STUB$$bzero
+31.89 k   0.0%	-	  specialized AnyCollection.makeIterator()
+27.81 k   0.0%	-	  DYLD-STUB$$objc_msgSend
+23.63 k   0.0%	-	  partial apply for closure #1 in Preset.lastTimeWeSetPosition.setter
+21.65 k   0.0%	-	  DYLD-STUB$$static Date.now.getter
+19.99 k   0.0%	-	  specialized EnvelopeHandlePlayer.noteOff(_:)
+16.34 k   0.0%	-	  DYLD-STUB$$static Clock<>.continuous.getter
+4.59 k   0.0%	-	  specialized Preset.access<A>(keyPath:)

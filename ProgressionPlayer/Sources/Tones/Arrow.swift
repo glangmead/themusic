@@ -95,11 +95,14 @@ final class ControlArrow11: Arrow11 {
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
     (innerArr ?? ArrowIdentity()).process(inputs: inputs, outputs: &scratchBuffer)
     var i = 0
-    while i < inputs.count {
-      let val = scratchBuffer[i]
-      let spanEnd = min(i+infrequency, inputs.count)
-      vDSP.fill(&outputs[i..<spanEnd], with: val)
-      i += infrequency
+    outputs.withUnsafeMutableBufferPointer { outBuf in
+      while i < inputs.count {
+        var val = scratchBuffer[i]
+        let spanEnd = min(i + infrequency, inputs.count)
+        let spanCount = vDSP_Length(spanEnd - i)
+        vDSP_vfillD(&val, outBuf.baseAddress! + i, 1, spanCount)
+        i += infrequency
+      }
     }
   }
 }
@@ -109,7 +112,9 @@ final class AudioGate: Arrow11 {
 
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
     if !isOpen {
-      vDSP.clear(&outputs)
+      outputs.withUnsafeMutableBufferPointer { outBuf in
+        vDSP_vclrD(outBuf.baseAddress!, 1, vDSP_Length(inputs.count))
+      }
       return
     }
     super.process(inputs: inputs, outputs: &outputs)
@@ -121,7 +126,9 @@ final class ArrowSum: Arrow11 {
   
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
     if innerArrsUnmanaged.isEmpty {
-      vDSP.clear(&outputs)
+      outputs.withUnsafeMutableBufferPointer { outBuf in
+        vDSP_vclrD(outBuf.baseAddress!, 1, vDSP_Length(inputs.count))
+      }
       return
     }
     
@@ -382,7 +389,10 @@ final class ArrowConst: Arrow11, ValHaver, Equatable {
     super.init()
   }
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
-    vDSP.fill(&outputs, with: val)
+    outputs.withUnsafeMutableBufferPointer { outBuf in
+      var v = val
+      vDSP_vfillD(&v, outBuf.baseAddress!, 1, vDSP_Length(inputs.count))
+    }
   }
 
   static func == (lhs: ArrowConst, rhs: ArrowConst) -> Bool {
@@ -403,8 +413,10 @@ final class ArrowConstOctave: Arrow11, ValHaver, Equatable {
     super.init()
   }
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
-    vDSP.fill(&outputs, with: twoToTheVal)
-    //vDSP_vfill(&twoToTheVal, outputs.baseAddress!, 1, vDSP_Length(inputs.count))
+    outputs.withUnsafeMutableBufferPointer { outBuf in
+      var v = twoToTheVal
+      vDSP_vfillD(&v, outBuf.baseAddress!, 1, vDSP_Length(inputs.count))
+    }
   }
   static func == (lhs: ArrowConstOctave, rhs: ArrowConstOctave) -> Bool {
     lhs.val == rhs.val
@@ -426,8 +438,10 @@ final class ArrowConstCent: Arrow11, ValHaver, Equatable {
     super.init()
   }
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
-    vDSP.fill(&outputs, with: centToTheVal)
-    //vDSP_vfill(&centToTheVal, outputs.baseAddress!, 1, vDSP_Length(inputs.count))
+    outputs.withUnsafeMutableBufferPointer { outBuf in
+      var v = centToTheVal
+      vDSP_vfillD(&v, outBuf.baseAddress!, 1, vDSP_Length(inputs.count))
+    }
   }
   static func == (lhs: ArrowConstCent, rhs: ArrowConstCent) -> Bool {
     lhs.val == rhs.val

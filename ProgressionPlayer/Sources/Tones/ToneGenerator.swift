@@ -20,12 +20,24 @@ final class Sine: Arrow11, WidthHaver {
 
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
     let minBufferCount = min(inputs.count, outputs.count)
+    let count = vDSP_Length(minBufferCount)
+    var intCount = Int32(minBufferCount)
     widthArr.process(inputs: inputs, outputs: &widthOutputs)
     (innerArr ?? ArrowIdentity()).process(inputs: inputs, outputs: &scratch)
     
-    vDSP.multiply(2 * .pi, scratch[0..<minBufferCount], result: &scratch[0..<minBufferCount])
+    scratch.withUnsafeMutableBufferPointer { scratchBuf in
+      outputs.withUnsafeMutableBufferPointer { outBuf in
+        widthOutputs.withUnsafeBufferPointer { widthBuf in
+          // scratch = scratch * 2 * pi
+          var twoPi = 2.0 * CoreFloat.pi
+          vDSP_vsmulD(scratchBuf.baseAddress!, 1, &twoPi, scratchBuf.baseAddress!, 1, count)
+          
+          // outputs = outputs / widthOutputs
+          vDSP_vdivD(widthBuf.baseAddress!, 1, outBuf.baseAddress!, 1, outBuf.baseAddress!, 1, count)
+        }
+      }
+    }
     
-    vDSP.divide(outputs[0..<minBufferCount], widthOutputs[0..<minBufferCount], result: &outputs[0..<minBufferCount])
     // zero out some of the inners, to the right of the width cutoff
     for i in 0..<minBufferCount {
       if fmod(outputs[i], 1) > widthOutputs[i] {
@@ -33,8 +45,12 @@ final class Sine: Arrow11, WidthHaver {
       }
     }
     
-    // Slice scratch for vForce.sin to match outputs size
-    vForce.sin(scratch[0..<minBufferCount], result: &outputs[0..<minBufferCount])
+    // sin(scratch) -> outputs (no slicing - use C API)
+    scratch.withUnsafeBufferPointer { scratchBuf in
+      outputs.withUnsafeMutableBufferPointer { outBuf in
+        vvsin(outBuf.baseAddress!, scratchBuf.baseAddress!, &intCount)
+      }
+    }
   }
 }
 
@@ -383,7 +399,9 @@ final class Choruser: Arrow11 {
   }
   
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
-    vDSP.clear(&outputs)
+    outputs.withUnsafeMutableBufferPointer { outBuf in
+      vDSP_vclrD(outBuf.baseAddress!, 1, vDSP_Length(inputs.count))
+    }
     // set the freq and call arrow.of() repeatedly, and sum the results
     if chorusNumVoices > 1 {
       // get the constants of the given name (it is an array, as we have some duplication in the json)
