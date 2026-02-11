@@ -10,7 +10,7 @@ import CoreAudio
 import Accelerate
 
 extension AVAudioSourceNode {
-  static func withSource(source: Arrow11, sampleRate: Double) -> AVAudioSourceNode {
+  static func withSource(source: AudioGate, sampleRate: Double) -> AVAudioSourceNode {
     
     var timeBuffer = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
     var valBuffer = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
@@ -19,11 +19,17 @@ extension AVAudioSourceNode {
     // that the audio engine calls repeatedly to request audio samples.
     return AVAudioSourceNode { (isSilence, timestamp, frameCount, audioBufferList) -> OSStatus in
       // isSilence: A pointer to a Boolean indicating if the buffer contains silence.
-      //            We'll set this to 'false' as we are generating sound.
       // timestamp: The audio timestamp at which the rendering is happening.
       // frameCount: The number of audio frames (samples) the engine is requesting.
       //             We need to fill this many samples into the buffer.
       // audioBufferList: A pointer to the AudioBufferList structure where we write our samples.
+      
+      // Fast path: if the gate is closed, signal silence and return immediately
+      // This allows the audio engine to optimize downstream processing
+      if !source.isOpen {
+        isSilence.pointee = true
+        return noErr
+      }
       
       let count = Int(frameCount)
       //print("frame count \(count)")

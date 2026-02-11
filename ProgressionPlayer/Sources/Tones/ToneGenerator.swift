@@ -19,7 +19,7 @@ final class Sine: Arrow11, WidthHaver {
   var widthArr: Arrow11 = ArrowConst(value: 1.0)
 
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
-    let minBufferCount = min(inputs.count, outputs.count)
+    let minBufferCount = inputs.count
     let count = vDSP_Length(minBufferCount)
     var intCount = Int32(minBufferCount)
     widthArr.process(inputs: inputs, outputs: &widthOutputs)
@@ -27,28 +27,30 @@ final class Sine: Arrow11, WidthHaver {
     
     scratch.withUnsafeMutableBufferPointer { scratchBuf in
       outputs.withUnsafeMutableBufferPointer { outBuf in
-        widthOutputs.withUnsafeBufferPointer { widthBuf in
+        widthOutputs.withUnsafeMutableBufferPointer { widthBuf in
+          guard let scratchBase = scratchBuf.baseAddress,
+                let outBase = outBuf.baseAddress,
+                let widthBase = widthBuf.baseAddress else { return }
+          
           // scratch = scratch * 2 * pi
           var twoPi = 2.0 * CoreFloat.pi
-          vDSP_vsmulD(scratchBuf.baseAddress!, 1, &twoPi, scratchBuf.baseAddress!, 1, count)
+          vDSP_vsmulD(scratchBase, 1, &twoPi, scratchBase, 1, count)
           
           // outputs = outputs / widthOutputs
-          vDSP_vdivD(widthBuf.baseAddress!, 1, outBuf.baseAddress!, 1, outBuf.baseAddress!, 1, count)
+          vDSP_vdivD(widthBase, 1, outBase, 1, outBase, 1, count)
+          
+          // zero out samples where fmod(outputs[i], 1) > widthOutputs[i]
+          // This implements pulse-width modulation gating
+          for i in 0..<minBufferCount {
+            let modVal = outBase[i] - floor(outBase[i])  // faster than fmod for positive values
+            if modVal > widthBase[i] {
+              outBase[i] = 0
+            }
+          }
+          
+          // sin(scratch) -> outputs
+          vvsin(outBase, scratchBase, &intCount)
         }
-      }
-    }
-    
-    // zero out some of the inners, to the right of the width cutoff
-    for i in 0..<minBufferCount {
-      if fmod(outputs[i], 1) > widthOutputs[i] {
-        outputs[i] = 0
-      }
-    }
-    
-    // sin(scratch) -> outputs (no slicing - use C API)
-    scratch.withUnsafeBufferPointer { scratchBuf in
-      outputs.withUnsafeMutableBufferPointer { outBuf in
-        vvsin(outBuf.baseAddress!, scratchBuf.baseAddress!, &intCount)
       }
     }
   }
@@ -69,7 +71,8 @@ final class Triangle: Arrow11, WidthHaver {
     widthArr.process(inputs: inputs, outputs: &widthOutputs)
     (innerArr ?? ArrowIdentity()).process(inputs: inputs, outputs: &outputs)
     
-    let count = vDSP_Length(inputs.count)
+    let n = inputs.count
+    let count = vDSP_Length(n)
     outputs.withUnsafeMutableBufferPointer { outputsPtr in
       widthOutputs.withUnsafeBufferPointer { widthPtr in
         scratch.withUnsafeMutableBufferPointer { scratchPtr in
@@ -82,17 +85,18 @@ final class Triangle: Arrow11, WidthHaver {
           
           // scratch = outputs / width (normalized phase)
           vDSP_vdivD(widthBase, 1, outBase, 1, scratchBase, 1, count)
+          
+          // Triangle wave with width gating
+          for i in 0..<n {
+            let normalized = scratchBase[i]
+            if normalized < 1.0 {
+              // Triangle wave: 1 - 4 * abs(normalized - 0.5)
+              outBase[i] = 1.0 - 4.0 * abs(normalized - 0.5)
+            } else {
+              outBase[i] = 0
+            }
+          }
         }
-      }
-    }
-    
-    for i in 0..<inputs.count {
-      let normalized = scratch[i]
-      if normalized < 1.0 {
-        // Triangle wave: 1 - 4 * abs(normalized - 0.5)
-        outputs[i] = 1.0 - 4.0 * abs(normalized - 0.5)
-      } else {
-        outputs[i] = 0
       }
     }
   }
@@ -102,17 +106,13 @@ final class Sawtooth: Arrow11, WidthHaver {
   private var widthOutputs = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
   private var scratch = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
   var widthArr: Arrow11 = ArrowConst(value: 1.0)
-//  func of(_ t: CoreFloat) -> CoreFloat {
-//    let width = widthArr.of(t)
-//    let innerResult = inner(t)
-//    let modResult = fmod(innerResult, 1)
-//    return (modResult < width) ? (2 * modResult / width) - 1 : 0
-//  }
+
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
     widthArr.process(inputs: inputs, outputs: &widthOutputs)
     (innerArr ?? ArrowIdentity()).process(inputs: inputs, outputs: &outputs)
     
-    let count = vDSP_Length(inputs.count)
+    let n = inputs.count
+    let count = vDSP_Length(n)
     outputs.withUnsafeMutableBufferPointer { outputsPtr in
       widthOutputs.withUnsafeBufferPointer { widthPtr in
         scratch.withUnsafeMutableBufferPointer { scratchPtr in
@@ -133,15 +133,16 @@ final class Sawtooth: Arrow11, WidthHaver {
           // scratch = scratch - 1
           var minusOne: CoreFloat = -1.0
           vDSP_vsaddD(scratchBase, 1, &minusOne, scratchBase, 1, count)
+          
+          // Sawtooth with width gating
+          for i in 0..<n {
+            if outBase[i] < widthBase[i] {
+              outBase[i] = scratchBase[i]
+            } else {
+              outBase[i] = 0
+            }
+          }
         }
-      }
-    }
-    
-    for i in 0..<inputs.count {
-      if outputs[i] < widthOutputs[i] {
-        outputs[i] = scratch[i]
-      } else {
-        outputs[i] = 0
       }
     }
   }
@@ -150,15 +151,13 @@ final class Sawtooth: Arrow11, WidthHaver {
 final class Square: Arrow11, WidthHaver {
   private var widthOutputs = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
   var widthArr: Arrow11 = ArrowConst(value: 1.0)
-//  func of(_ t: CoreFloat) -> CoreFloat {
-//    let width = widthArr.of(t)
-//    return fmod(inner(t), 1) <= width/2 ? 1.0 : -1.0
-//  }
+
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
     widthArr.process(inputs: inputs, outputs: &widthOutputs)
     (innerArr ?? ArrowIdentity()).process(inputs: inputs, outputs: &outputs)
     
-    let count = vDSP_Length(inputs.count)
+    let n = inputs.count
+    let count = vDSP_Length(n)
     outputs.withUnsafeMutableBufferPointer { outputsPtr in
       widthOutputs.withUnsafeMutableBufferPointer { widthPtr in
         guard let outBase = outputsPtr.baseAddress,
@@ -170,11 +169,12 @@ final class Square: Arrow11, WidthHaver {
         // width = width * 0.5
         var half: CoreFloat = 0.5
         vDSP_vsmulD(widthBase, 1, &half, widthBase, 1, count)
+        
+        // Square wave
+        for i in 0..<n {
+          outBase[i] = outBase[i] <= widthBase[i] ? 1.0 : -1.0
+        }
       }
-    }
-    
-    for i in 0..<inputs.count {
-      outputs[i] = outputs[i] <= widthOutputs[i] ? 1.0 : -1.0
     }
   }
 }
@@ -218,25 +218,57 @@ final class Noise: Arrow11, WidthHaver {
   }
 }
 
-// Takes on random values every 1/noiseFreq seconds, and smoothly interpolates between
+/// Takes on random values every 1/noiseFreq seconds, and smoothly interpolates between.
+/// Uses smoothstep function (3x² - 2x³) to interpolate from 0 to 1, scaled to the desired speed and range.
+/// 
+/// This implementation uses sample counting rather than time tracking, which is simpler and more robust
+/// across different sample rates. The smoothstep values are pre-computed in a lookup table when the
+/// sample rate is set, eliminating per-sample division and fmod operations.
+///
+/// - Parameters:
+///   - noiseFreq: the number of random numbers generated per second
+///   - min: the minimum range of the random numbers (uniformly distributed)
+///   - max: the maximum range of the random numbers (uniformly distributed)
 final class NoiseSmoothStep: Arrow11 {
-  var noiseFreq: CoreFloat
+  var noiseFreq: CoreFloat {
+    didSet {
+      rebuildLUT()
+    }
+  }
   var min: CoreFloat
   var max: CoreFloat
-
-  // for emitting new noise samples
-  private var lastNoiseTime: CoreFloat
-  private var nextNoiseTime: CoreFloat
-  // the noise samples we're interpolating at any given moment
+  
+  // The two random samples we're currently interpolating between
   private var lastSample: CoreFloat
   private var nextSample: CoreFloat
-  // for detecting when we're nearing a sample and need a new one
-  private var noiseDeltaTime: CoreFloat
-  private var numAudioSamplesPerNoise: Int = 0
-  private var numAudioSamplesThisSegment = 0
   
-  var audioDeltaTime: CoreFloat {
-    1.0 / sampleRate
+  // Sample counting for segment transitions
+  private var sampleCounter: Int = 0
+  private var samplesPerSegment: Int = 1
+  
+  // Pre-computed smoothstep lookup table for one full segment
+  private var smoothstepLUT: [CoreFloat] = []
+  
+  override func setSampleRateRecursive(rate: CoreFloat) {
+    super.setSampleRateRecursive(rate: rate)
+    rebuildLUT()
+  }
+  
+  private func rebuildLUT() {
+    // Compute how many audio samples per noise segment
+    samplesPerSegment = Swift.max(1, Int(sampleRate / noiseFreq))
+    
+    // Pre-compute smoothstep values for one full segment
+    // smoothstep(x) = x² * (3 - 2x) (aka 3x³ - 2x²)for x in [0, 1]
+    smoothstepLUT = [CoreFloat](repeating: 0, count: samplesPerSegment)
+    let invSegment = 1.0 / CoreFloat(samplesPerSegment)
+    for i in 0..<samplesPerSegment {
+      let x = CoreFloat(i) * invSegment
+      smoothstepLUT[i] = x * x * (3.0 - 2.0 * x)
+    }
+    
+    // Reset counter to avoid out-of-bounds after sample rate change
+    sampleCounter = 0
   }
   
   init(noiseFreq: CoreFloat, min: CoreFloat = -1, max: CoreFloat = 1) {
@@ -245,47 +277,41 @@ final class NoiseSmoothStep: Arrow11 {
     self.max = max
     self.lastSample = CoreFloat.random(in: min...max)
     self.nextSample = CoreFloat.random(in: min...max)
-    lastNoiseTime = 0
-    noiseDeltaTime = 1.0 / noiseFreq
-    nextNoiseTime = noiseDeltaTime
     super.init()
+    rebuildLUT()
   }
   
-  func noise(_ t: CoreFloat) -> CoreFloat {
-    noiseDeltaTime -= fmod(noiseDeltaTime, audioDeltaTime)
-    numAudioSamplesPerNoise = Int(noiseDeltaTime/audioDeltaTime)
-    
-    // catch up if there has been a time gap
-    if t > nextNoiseTime + audioDeltaTime {
-      lastNoiseTime = t
-      nextNoiseTime = lastNoiseTime + noiseDeltaTime
-      lastSample = CoreFloat.random(in: min...max)
-      nextSample = CoreFloat.random(in: min...max)
-      numAudioSamplesThisSegment = 0
-    }
-    
-    // we roll to the next sample by counting audio samples
-    // we chose an integer that's close to achieving the requested noiseFreq
-    if numAudioSamplesThisSegment >= numAudioSamplesPerNoise - 1 {
-      numAudioSamplesThisSegment = 0
-      lastSample = nextSample
-      nextSample = CoreFloat.random(in: min...max)
-      lastNoiseTime = nextNoiseTime
-      nextNoiseTime += noiseDeltaTime
-    }
-
-    // generate smoothstep for x between 0 and 1, y between 0 and 1
-    let betweenTime = 1.0 - ((nextNoiseTime - t) / noiseDeltaTime)
-    let zeroOneSmooth = betweenTime * betweenTime * (3 - 2 * betweenTime)
-    let result = lastSample + (zeroOneSmooth * (nextSample - lastSample))
-    
-    numAudioSamplesThisSegment += 1
-    return result
-  }
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
-    // Default implementation: loop
-    for i in 0..<inputs.count {
-      outputs[i] = self.noise(inputs[i])
+    let count = inputs.count
+    guard samplesPerSegment > 0, !smoothstepLUT.isEmpty else { return }
+    
+    outputs.withUnsafeMutableBufferPointer { outBuf in
+      smoothstepLUT.withUnsafeBufferPointer { lutBuf in
+        guard let outBase = outBuf.baseAddress,
+              let lutBase = lutBuf.baseAddress else { return }
+        
+        var last = lastSample
+        var next = nextSample
+        var counter = sampleCounter
+        let segmentSize = samplesPerSegment
+        
+        for i in 0..<count {
+          let t = lutBase[counter]
+          outBase[i] = last + t * (next - last)
+          
+          counter += 1
+          if counter >= segmentSize {
+            counter = 0
+            last = next
+            next = CoreFloat.random(in: min...max)
+          }
+        }
+        
+        // Write back state
+        lastSample = last
+        nextSample = next
+        sampleCounter = counter
+      }
     }
   }
 }
@@ -522,9 +548,26 @@ final class LowPassFilter2: Arrow11 {
     (innerArr ?? ArrowIdentity()).process(inputs: inputs, outputs: &innerVals)
     cutoff.process(inputs: inputs, outputs: &cutoffs)
     resonance.process(inputs: inputs, outputs: &resonances)
-    // Default implementation: loop
-    for i in 0..<inputs.count {
-      outputs[i] = self.filter(inputs[i], inner: innerVals[i], cutoff: cutoffs[i], resonance: resonances[i])
+    
+    let count = inputs.count
+    inputs.withUnsafeBufferPointer { inBuf in
+      outputs.withUnsafeMutableBufferPointer { outBuf in
+        innerVals.withUnsafeBufferPointer { innerBuf in
+          cutoffs.withUnsafeBufferPointer { cutoffBuf in
+            resonances.withUnsafeBufferPointer { resBuf in
+              guard let inBase = inBuf.baseAddress,
+                    let outBase = outBuf.baseAddress,
+                    let innerBase = innerBuf.baseAddress,
+                    let cutoffBase = cutoffBuf.baseAddress,
+                    let resBase = resBuf.baseAddress else { return }
+              
+              for i in 0..<count {
+                outBase[i] = self.filter(inBase[i], inner: innerBase[i], cutoff: cutoffBase[i], resonance: resBase[i])
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

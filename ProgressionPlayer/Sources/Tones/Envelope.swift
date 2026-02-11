@@ -75,9 +75,14 @@ class ADSR: Arrow11, NoteHandler {
   }
   
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
-    // Default implementation: loop
-    for i in 0..<inputs.count {
-      outputs[i] = self.env(inputs[i])
+    inputs.withUnsafeBufferPointer { inBuf in
+      outputs.withUnsafeMutableBufferPointer { outBuf in
+        guard let inBase = inBuf.baseAddress,
+              let outBase = outBuf.baseAddress else { return }
+        for i in 0..<inputs.count {
+          outBase[i] = self.env(inBase[i])
+        }
+      }
     }
   }
 
