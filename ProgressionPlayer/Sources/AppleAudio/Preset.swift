@@ -43,10 +43,10 @@ struct PresetSyntax: Codable {
       let sound = arrowSyntax.compile()
       preset = Preset(sound: sound)
     } else if let samplerFilenames = samplerFilenames, let samplerBank = samplerBank, let samplerProgram = samplerProgram {
-      preset = Preset(samplerFilenames: samplerFilenames, samplerBank: samplerBank, samplerProgram: samplerProgram)
+      preset = Preset(sampler: Sampler(fileNames: samplerFilenames, bank: samplerBank, program: samplerProgram))
     } else {
-       preset = Preset(sound: ArrowWithHandles(ArrowConst(value: 0)))
-       fatalError("PresetSyntax must have either arrow or sampler")
+      preset = Preset(sound: ArrowWithHandles(ArrowConst(value: 0)))
+      fatalError("PresetSyntax must have either arrow or sampler")
     }
     
     preset.name = name
@@ -74,13 +74,11 @@ class Preset {
   var sound: ArrowWithHandles? = nil
   var audioGate: AudioGate? = nil
   private var sourceNode: AVAudioSourceNode? = nil
-
+  
   // sound from an audio sample
-  var samplerNode: AVAudioUnitSampler? = nil
-  var samplerFilenames = [String]()
-  var samplerProgram: UInt8 = 0
-  var samplerBank: UInt8 = 121
-
+  var sampler: Sampler? = nil
+  var samplerNode: AVAudioUnitSampler? { sampler?.node }
+  
   // movement of the mixerNode in the environment node (see SpatialAudioEngine)
   var positionLFO: Rose? = nil
   var timeOrigin: Double = 0
@@ -113,11 +111,11 @@ class Preset {
   func activate() {
     audioGate?.isOpen = true
   }
-
+  
   func deactivate() {
     audioGate?.isOpen = false
   }
-
+  
   private func setupLifecycleCallbacks() {
     if let sound = sound, let ampEnvs = sound.namedADSREnvelopes["ampEnv"] {
       for env in ampEnvs {
@@ -126,16 +124,16 @@ class Preset {
         }
         env.finishCallback = { [weak self] in
           if let self = self {
-             let allClosed = ampEnvs.allSatisfy { $0.state == .closed }
-             if allClosed {
-               self.deactivate()
-             }
+            let allClosed = ampEnvs.allSatisfy { $0.state == .closed }
+            if allClosed {
+              self.deactivate()
+            }
           }
         }
       }
     }
   }
-
+  
   // the parameters of the effects and the position arrow
   
   // effect enums
@@ -153,7 +151,7 @@ class Preset {
     distortionNode?.loadFactoryPreset(val)
     self.distortionPreset = val
   }
-
+  
   // effect float values
   func getReverbWetDryMix() -> CoreFloat {
     CoreFloat(reverbNode?.wetDryMix ?? 0)
@@ -212,10 +210,8 @@ class Preset {
     setupLifecycleCallbacks()
   }
   
-  init(samplerFilenames: [String], samplerBank: UInt8, samplerProgram: UInt8) {
-    self.samplerFilenames = samplerFilenames
-    self.samplerBank = samplerBank
-    self.samplerProgram = samplerProgram
+  init(sampler: Sampler) {
+    self.sampler = sampler
     initEffects()
   }
   
@@ -227,7 +223,7 @@ class Preset {
     self.reverbNode?.wetDryMix = 0
     self.timeOrigin = Date.now.timeIntervalSince1970
   }
-
+  
   deinit {
     positionTask?.cancel()
   }
@@ -261,20 +257,19 @@ class Preset {
         sampleRate: sampleRate
       )
       initialNode = sourceNode
-    } else if !samplerFilenames.isEmpty {
-      samplerNode = AVAudioUnitSampler()
-      engine.attach([samplerNode!])
-      loadSamplerInstrument(samplerNode!, fileNames: samplerFilenames, bank: samplerBank, program: samplerProgram)
-      initialNode = samplerNode
+    } else if let sampler = sampler {
+      engine.attach([sampler.node])
+      sampler.loadInstrument()
+      initialNode = sampler.node
     }
-
+    
     let nodes = [initialNode, distortionNode, delayNode, reverbNode, mixerNode].compactMap { $0 }
     engine.attach(nodes)
     
     for i in 0..<nodes.count-1 {
       engine.connect(nodes[i], to: nodes[i+1], format: nil) // having mono when the "to:" is reverb failed on my iPhone
     }
-
+    
     positionTask?.cancel()
     positionTask = Task.detached(priority: .medium) { [weak self] in
       while let self = self, !Task.isCancelled {
@@ -282,7 +277,7 @@ class Preset {
         guard let engine = self.mixerNode.engine else {
           break
         }
-
+        
         if engine.isRunning {
           do {
             try await Task.sleep(for: .seconds(0.01))
@@ -296,44 +291,15 @@ class Preset {
         }
       }
     }
-
+    
     return mixerNode
   }
   
   func detachAppleNodes(from engine: SpatialAudioEngine) {
     positionTask?.cancel()
-    let nodes = [sourceNode, samplerNode, distortionNode, delayNode, reverbNode, mixerNode].compactMap { $0 }
+    let allNodes: [AVAudioNode?] = [sourceNode, sampler?.node, distortionNode, delayNode, reverbNode, mixerNode]
+    let nodes = allNodes.compactMap { $0 }
     engine.detach(nodes)
   }
   
-  private func loadSamplerInstrument(_ node: AVAudioUnitSampler, fileNames: [String], bank: UInt8, program: UInt8) {
-    let urls = fileNames.compactMap { fileName in
-      Bundle.main.url(forResource: fileName, withExtension: "wav") ??
-      Bundle.main.url(forResource: fileName, withExtension: "aiff") ??
-      Bundle.main.url(forResource: fileName, withExtension: "aif")
-    }
-    
-    if !urls.isEmpty {
-      do {
-        try node.loadAudioFiles(at: urls)
-      } catch {
-        print("Error loading audio file \(urls): \(error.localizedDescription)")
-      }
-    } else if let fileName = fileNames.first, let url = Bundle.main.url(forResource: fileName, withExtension: "exs") {
-      do {
-        try node.loadInstrument(at: url)
-      } catch {
-        print("Error loading exs instrument \(fileName): \(error.localizedDescription)")
-      }
-    } else if let fileName = fileNames.first, let url = Bundle.main.url(forResource: fileName, withExtension: "sf2") {
-      do {
-        try node.loadSoundBankInstrument(at: url, program: program, bankMSB: bank, bankLSB: 0)
-        print("loaded program \(program) bankMSB \(bank) bankLSB 0")
-      } catch {
-        print("Error loading sound bank instrument \(fileName): \(error.localizedDescription)")
-      }
-    } else {
-      print("Could not find sampler file(s): \(fileNames)")
-    }
-  }
 }

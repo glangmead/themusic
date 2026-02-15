@@ -11,6 +11,7 @@
 		9B137E812EE8CA6D00DE0E15 /* All-My-Loving.mid in Resources */ = {isa = PBXBuildFile; fileRef = 9B137E802EE8CA6D00DE0E15 /* All-My-Loving.mid */; };
 		9B1864642E772E37006147D8 /* Overture in Frameworks */ = {isa = PBXBuildFile; productRef = 9B1864632E772E37006147D8 /* Overture */; };
 		9B2E13C52F3BE940006CD5E6 /* perfstack.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9B2E13C42F3BE933006CD5E6 /* perfstack.txt */; };
+		9B53DACD2F410FCC00081929 /* plan.md in Resources */ = {isa = PBXBuildFile; fileRef = 9B53DACC2F410FCC00081929 /* plan.md */; };
 		9B7430A02ECFA5640017DE7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B7430922ECFA5640017DE7D /* Assets.xcassets */; };
 		9B79241C2F2A8A6000A51087 /* presets in Resources */ = {isa = PBXBuildFile; fileRef = 9B79241B2F2A8A6000A51087 /* presets */; };
 		9B935B962EDE0F1800600E63 /* D_Loop_01.mid in Resources */ = {isa = PBXBuildFile; fileRef = 9B935B942EDE0F1800600E63 /* D_Loop_01.mid */; };
@@ -46,6 +47,7 @@
 		9B137E802EE8CA6D00DE0E15 /* All-My-Loving.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = "All-My-Loving.mid"; sourceTree = "<group>"; };
 		9B1F016F2EB95F0A00C5110F /* Note.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = Note.icon; sourceTree = "<group>"; };
 		9B2E13C42F3BE933006CD5E6 /* perfstack.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = perfstack.txt; sourceTree = "<group>"; };
+		9B53DACC2F410FCC00081929 /* plan.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = plan.md; sourceTree = "<group>"; };
 		9B7430922ECFA5640017DE7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B79241B2F2A8A6000A51087 /* presets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = presets; path = Resources/presets; sourceTree = "<group>"; };
 		9B935B942EDE0F1800600E63 /* D_Loop_01.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = D_Loop_01.mid; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				9BC0FCC12E704EAA00472A5A /* ProgressionPlayerUITests */,
 				9BC0FCD42E7055FE00472A5A /* Frameworks */,
 				9BC0FCA82E704EA900472A5A /* Products */,
+				9B53DACC2F410FCC00081929 /* plan.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -331,6 +334,7 @@
 				9BA5B1D42F14636B00857520 /* BachInvention1.mid in Resources */,
 				9BFFD97F2E7DA94B00E7CB55 /* beat.aiff in Resources */,
 				9B7430A02ECFA5640017DE7D /* Assets.xcassets in Resources */,
+				9B53DACD2F410FCC00081929 /* plan.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

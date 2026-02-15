@@ -26,76 +26,40 @@ final class EventUsingArrow: Arrow11 {
 
 // a musical utterance to play at one point in time, a set of simultaneous noteOns
 struct MusicEvent {
-  // could the PoolVoice wrapping these presets be sent in, and with modulation already provided?
-  var presets: [Preset]
+  let noteHandler: NoteHandler
   let notes: [MidiNote]
   let sustain: CoreFloat // time between noteOn and noteOff in seconds
   let gap: CoreFloat // time reserved for this event, before next event is played
   let modulators: [String: Arrow11]
   let timeOrigin: Double
-  var cleanup: (() async -> Void)? = nil
-  var timeBuffer = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
-  var arrowBuffer = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
-  
-  private(set) var voice: NoteHandler? = nil
   
   mutating func play() async throws {
-    if presets.isEmpty { return }
-    
-    // Check if we are using arrows or samplers (assuming all presets are of the same type)
-    if presets[0].sound != nil {
-      // wrap my designated presets (sound+FX generators) in a PolyphonicVoiceGroup
-      let voiceGroup = PolyphonicVoiceGroup(presets: presets)
-      self.voice = voiceGroup
-      
-      // Apply modulation (only supported for Arrow-based presets)
+    // Apply modulation (only supported for Arrow-based presets)
+    if let arrowPool = noteHandler as? PolyphonicArrowPool {
       let now = CoreFloat(Date.now.timeIntervalSince1970 - timeOrigin)
-      timeBuffer[0] = now
       for (key, modulatingArrow) in modulators {
-        if voiceGroup.namedConsts[key] != nil {
-          if let arrowConsts = voiceGroup.namedConsts[key] {
-            for arrowConst in arrowConsts {
-              if let eventUsingArrow = modulatingArrow as? EventUsingArrow {
-                eventUsingArrow.event = self
-              }
-              arrowConst.val = modulatingArrow.of(now)
+        if let arrowConsts = arrowPool.namedConsts[key] {
+          for arrowConst in arrowConsts {
+            if let eventUsingArrow = modulatingArrow as? EventUsingArrow {
+              eventUsingArrow.event = self
             }
+            arrowConst.val = modulatingArrow.of(now)
           }
         }
       }
-    } else if let _ = presets[0].samplerNode {
-      self.voice = PolyphonicVoiceGroup(presets: presets)
     }
     
-    for preset in presets {
-      preset.positionLFO?.phase = CoreFloat.random(in: 0...(2.0 * .pi))
-    }
-    
-    notes.forEach {
-      //print("pattern note on, ostensibly for \(sustain) seconds")
-      voice?.noteOn($0) }
+    noteHandler.notesOn(notes)
     do {
       try await Task.sleep(for: .seconds(TimeInterval(sustain)))
     } catch {
       
     }
-    notes.forEach {
-      //print("pattern note off")
-      voice?.noteOff($0)
-    }
-    
-    if let cleanup = cleanup {
-      await cleanup()
-    }
-    self.voice = nil
+    noteHandler.notesOff(notes)
   }
   
-  mutating func cancel() async {
-    notes.forEach { voice?.noteOff($0) }
-    if let cleanup = cleanup {
-      await cleanup()
-    }
-    self.voice = nil
+  func cancel() {
+    noteHandler.notesOff(notes)
   }
 }
 
@@ -343,84 +307,46 @@ struct FloatSampler: Sequence, IteratorProtocol {
 
 // the ingredients for generating music events
 actor MusicPattern {
-  var presetSpec: PresetSyntax
-  var engine: SpatialAudioEngine
+  let spatialPreset: SpatialPreset
   var modulators: [String: Arrow11] // modulates constants in the preset
   var notes: any IteratorProtocol<[MidiNote]> // a sequence of chords
   var sustains: any IteratorProtocol<CoreFloat> // a sequence of sustain lengths
   var gaps: any IteratorProtocol<CoreFloat> // a sequence of sustain lengths
   var timeOrigin: Double
   
-  private var presetPool = [Preset]()
-  private let poolSize = 20
-  
-  deinit {
-    for preset in presetPool {
-      preset.detachAppleNodes(from: engine)
-    }
-  }
-  
   init(
-    presetSpec: PresetSyntax,
-    engine: SpatialAudioEngine,
+    spatialPreset: SpatialPreset,
     modulators: [String : Arrow11],
     notes: any IteratorProtocol<[MidiNote]>,
     sustains: any IteratorProtocol<CoreFloat>,
     gaps: any IteratorProtocol<CoreFloat>
   ){
-    self.presetSpec = presetSpec
-    self.engine = engine
+    self.spatialPreset = spatialPreset
     self.modulators = modulators
     self.notes = notes
     self.sustains = sustains
     self.gaps = gaps
     self.timeOrigin = Date.now.timeIntervalSince1970
-    
-    // Initialize pool
-    var avNodes = [AVAudioMixerNode]()
-    for _ in 0..<poolSize {
-      let preset = presetSpec.compile()
-      presetPool.append(preset)
-      let node = preset.wrapInAppleNodes(forEngine: engine)
-      avNodes.append(node)
-    }
-    engine.connectToEnvNode(avNodes)
-  }
-  
-  func leasePresets(count: Int) -> [Preset] {
-    var leased = [Preset]()
-    let toTake = min(count, presetPool.count)
-    if toTake > 0 {
-      leased.append(contentsOf: presetPool.suffix(toTake))
-      presetPool.removeLast(toTake)
-    }
-    return leased
-  }
-  
-  func returnPresets(_ presets: [Preset]) {
-    presetPool.append(contentsOf: presets)
   }
   
   func next() async -> MusicEvent? {
+    guard let noteHandler = spatialPreset.noteHandler else { return nil }
     guard let notes = notes.next() else { return nil }
     guard let sustain = sustains.next() else { return nil }
     guard let gap = gaps.next() else { return nil }
     
-    let presets = leasePresets(count: notes.count)
-    if presets.isEmpty {
-      print("Warning: MusicPattern starved for voices")
+    // Randomize spatial position phases for each event
+    spatialPreset.forEachPreset { preset in
+      preset.positionLFO?.phase = CoreFloat.random(in: 0...(2.0 * .pi))
     }
     
     return MusicEvent(
-      presets: presets,
+      noteHandler: noteHandler,
       notes: notes,
       sustain: sustain,
       gap: gap,
       modulators: modulators,
-      timeOrigin: timeOrigin,
-      cleanup: { [weak self] in
-        await self?.returnPresets(presets)
-      }
+      timeOrigin: timeOrigin
     )
   }
   
@@ -440,3 +366,38 @@ actor MusicPattern {
     }
   }
 }
+/// Container for multiple MusicPatterns, each with its own SpatialPreset.
+/// Supports multi-track generative playback.
+actor MusicPatterns {
+  private var patterns: [(MusicPattern, SpatialPreset)] = []
+  private var playbackTasks: [Task<Void, Never>] = []
+  
+  func addPattern(_ pattern: MusicPattern, spatialPreset: SpatialPreset) {
+    patterns.append((pattern, spatialPreset))
+  }
+  
+  func playAll() async {
+    for (pattern, _) in patterns {
+      let task = Task {
+        await pattern.play()
+      }
+      playbackTasks.append(task)
+    }
+  }
+  
+  func stopAll() {
+    for task in playbackTasks {
+      task.cancel()
+    }
+    playbackTasks.removeAll()
+  }
+  
+  func cleanup() {
+    stopAll()
+    for (_, spatialPreset) in patterns {
+      spatialPreset.cleanup()
+    }
+    patterns.removeAll()
+  }
+}
+

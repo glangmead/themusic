@@ -21,7 +21,7 @@ struct MidiNote {
 }
 
 // player of a single synthesized voice, via its envelope
-final class EnvelopeHandlePlayer: ArrowWithHandles, NoteHandler {
+final class PlayableArrow: ArrowWithHandles, NoteHandler {
   var arrow: ArrowWithHandles
   weak var preset: Preset?
   var globalOffset: Int  = 0
@@ -58,11 +58,19 @@ final class EnvelopeHandlePlayer: ArrowWithHandles, NoteHandler {
 protocol NoteHandler: AnyObject {
   func noteOn(_ note: MidiNote)
   func noteOff(_ note: MidiNote)
+  func notesOn(_ notes: [MidiNote])
+  func notesOff(_ notes: [MidiNote])
   var globalOffset: Int { get set }
   func applyOffset(note: UInt8) -> UInt8
 }
 
 extension NoteHandler {
+  func notesOn(_ notes: [MidiNote]) {
+    for note in notes { noteOn(note) }
+  }
+  func notesOff(_ notes: [MidiNote]) {
+    for note in notes { noteOff(note) }
+  }
   func applyOffset(note: UInt8) -> UInt8 {
     var result = note
     if globalOffset < 0 {
@@ -126,81 +134,58 @@ final class VoiceLedger {
   }
 }
 
-// player of a single sampler voice, via Apple's startNote/stopNote
-final class SamplerVoice: NoteHandler {
+// player of a sampler voice, via Apple's startNote/stopNote
+// Inherently polyphonic since AVAudioUnitSampler handles multiple simultaneous notes.
+final class PlayableSampler: NoteHandler {
   var globalOffset: Int = 0
   weak var preset: Preset?
-  let samplerNode: AVAudioUnitSampler
+  let sampler: Sampler
   
-  init(node: AVAudioUnitSampler) {
-    self.samplerNode = node
+  init(sampler: Sampler) {
+    self.sampler = sampler
   }
   
   func noteOn(_ note: MidiNote) {
     preset?.noteOn()
     let offsetNote = applyOffset(note: note.note)
-    //print("samplerNode.startNote(\(offsetNote), withVelocity: \(note.velocity)")
-    samplerNode.startNote(offsetNote, withVelocity: note.velocity, onChannel: 0)
+    sampler.node.startNote(offsetNote, withVelocity: note.velocity, onChannel: 0)
   }
   
   func noteOff(_ note: MidiNote) {
     preset?.noteOff()
     let offsetNote = applyOffset(note: note.note)
-    samplerNode.stopNote(offsetNote, onChannel: 0)
+    sampler.node.stopNote(offsetNote, onChannel: 0)
   }
 }
 
-// Have a collection of note-handling arrows, which we sum as our output.
-final class PolyphonicVoiceGroup: ArrowWithHandles, NoteHandler {
+// A pool of PlayableArrow voices for polyphonic Arrow-based synthesis.
+// Uses VoiceLedger for note-to-voice allocation.
+final class PolyphonicArrowPool: ArrowWithHandles, NoteHandler {
   var globalOffset: Int = 0
-  private let voices: [NoteHandler]
+  private let voices: [PlayableArrow]
   private let ledger: VoiceLedger
   
   init(presets: [Preset]) {
-    if presets.isEmpty {
-      self.voices = []
-      self.ledger = VoiceLedger(voiceCount: 0)
-      super.init(ArrowIdentity())
-      return
+    let handles = presets.compactMap { preset -> PlayableArrow? in
+      guard let sound = preset.sound else { return nil }
+      let player = PlayableArrow(arrow: sound)
+      player.preset = preset
+      return player
     }
+    self.voices = handles
+    self.ledger = VoiceLedger(voiceCount: handles.count)
     
-    if presets[0].sound != nil {
-      // Arrow/Synth path
-      let handles = presets.compactMap { preset -> EnvelopeHandlePlayer? in
-        guard let sound = preset.sound else { return nil }
-        let player = EnvelopeHandlePlayer(arrow: sound)
-        player.preset = preset
-        return player
-      }
-      self.voices = handles
-      self.ledger = VoiceLedger(voiceCount: handles.count)
-      
-      super.init(ArrowSum(innerArrs: handles))
-      let _ = withMergeDictsFromArrows(handles)
-    } else if let node = presets[0].samplerNode {
-      // Sampler path
-      let count = presets.count
-      let handlers = presets.compactMap { preset -> SamplerVoice? in
-        guard let node = preset.samplerNode else { return nil }
-        let voice = SamplerVoice(node: node)
-        voice.preset = preset
-        return voice
-      }
-      self.voices = handlers
-      self.ledger = VoiceLedger(voiceCount: self.voices.count)
-      // Samplers don't participate in the Arrow graph for audio signal.
+    if handles.isEmpty {
       super.init(ArrowIdentity())
     } else {
-      self.voices = []
-      self.ledger = VoiceLedger(voiceCount: 0)
-      super.init(ArrowIdentity())
+      super.init(ArrowSum(innerArrs: handles))
+      let _ = withMergeDictsFromArrows(handles)
     }
   }
   
-  
   func noteOn(_ noteVelIn: MidiNote) {
     let noteVel = MidiNote(note: applyOffset(note: noteVelIn.note), velocity: noteVelIn.velocity)
-    // case 1: this note is being played by a voice already: send noteOff then noteOn to re-up it
+    // case 1: this note is being played by a voice already: re-trigger it
     if let voiceIdx = ledger.voiceIndex(for: noteVelIn.note) {
       voices[voiceIdx].noteOn(noteVel)
       // case 2: assign a fresh voice to the note
@@ -216,3 +201,6 @@ final class PolyphonicVoiceGroup: ArrowWithHandles, NoteHandler {
     }
   }
 }
+// Sampler is inherently polyphonic, so the "pool" is just the PlayableSampler itself.
+typealias PolyphonicSamplerPool = PlayableSampler
+

@@ -16,12 +16,12 @@ struct TheoryView: View {
   @State private var roseParamsExpanded = true
   @State private var isShowingSynth = false
   @State private var isShowingPresetList = false
-
+  
   @State private var key = Key.C
   @State private var octave: Int = 2
   @State private var seq: Sequencer?
   @State private var noteOffset: Float = 0
-
+  
   @State private var engineOn: Bool = true
   
   @FocusState private var isFocused: Bool
@@ -78,7 +78,7 @@ struct TheoryView: View {
           .onChange(of: noteOffset, initial: true) {
             synth.noteHandler?.globalOffset = Int(noteOffset)
           }
-
+        
         HStack {
           Text("Engine")
           Toggle(isOn: $engineOn) {}
@@ -102,13 +102,13 @@ struct TheoryView: View {
         }
         .toolbar {
           Button("Edit") {
-            #if targetEnvironment(macCatalyst)
+#if targetEnvironment(macCatalyst)
             openWindow(id: "synth-window")
-            #else
+#else
             isShowingSynth = true
-            #endif
+#endif
           }
-          .disabled(synth.poolVoice == nil)
+          .disabled(synth.noteHandler == nil)
           Button("Presets") {
             isShowingPresetList = true
           }
@@ -139,7 +139,7 @@ struct TheoryView: View {
       SyntacticSynthView(synth: synth)
     }
   }
-
+  
   func playKey(keyPress: KeyPress) -> KeyPress.Result {
     let charToMidiNote:[String:Int] = [
       "a": 60, "w": 61, "s": 62, "e": 63, "d": 64, "f": 65, "t": 66, "g": 67, "y": 68, "h": 69, "u": 70, "j": 71, "k": 72, "o": 73, "l": 74, "p": 75

@@ -20,6 +20,7 @@ struct SongView: View {
   @State private var isShowingVisualizer = false
   @State private var noteOffset: Float = 0
   @State private var musicPattern: MusicPattern? = nil
+  @State private var patternSpatialPreset: SpatialPreset? = nil
   @State private var patternPlaybackHandle: Task<Void, Error>? = nil
   @State private var isShowingPresetList = false
   
@@ -46,13 +47,13 @@ struct SongView: View {
           .toolbar {
             ToolbarItem() {
               Button("Edit") {
-                #if targetEnvironment(macCatalyst)
+#if targetEnvironment(macCatalyst)
                 openWindow(id: "synth-window")
-                #else
+#else
                 isShowingSynth = true
-                #endif
+#endif
               }
-              .disabled(synth.poolVoice == nil)
+              .disabled(synth.noteHandler == nil)
             }
             ToolbarItem() {
               Button("Presets") {
@@ -102,10 +103,12 @@ struct SongView: View {
         }
         Button("Play Pattern") {
           if patternPlaybackHandle == nil {
+            // Create a dedicated SpatialPreset for the pattern
+            let sp = SpatialPreset(presetSpec: synth.presetSpec, engine: synth.engine, numVoices: 20)
+            patternSpatialPreset = sp
             // a test song
             musicPattern = MusicPattern(
-              presetSpec: synth.presetSpec,
-              engine: synth.engine,
+              spatialPreset: sp,
               modulators: [
                 "overallAmp": ArrowProd(innerArrs: [
                   ArrowExponentialRandom(min: 0.3, max: 0.6)
@@ -147,6 +150,8 @@ struct SongView: View {
           seq?.stop()
           patternPlaybackHandle?.cancel()
           patternPlaybackHandle = nil
+          patternSpatialPreset?.cleanup()
+          patternSpatialPreset = nil
         }
         Button("Rewind") {
           seq?.stop()
