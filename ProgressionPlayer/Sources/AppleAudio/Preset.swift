@@ -90,8 +90,8 @@ class Preset: NoteHandler {
   
   // FX nodes: members whose params we can expose
   private var reverbNode: AVAudioUnitReverb? = nil
-  private var mixerNode = AVAudioMixerNode()
-  private var delayNode: AVAudioUnitDelay? = AVAudioUnitDelay()
+  private var mixerNode: AVAudioMixerNode? = nil
+  private var delayNode: AVAudioUnitDelay? = nil
   private var distortionNode: AVAudioUnitDistortion? = nil
   
   var distortionAvailable: Bool {
@@ -202,7 +202,7 @@ class Preset: NoteHandler {
   private let setPositionMinWaitTimeSecs: CoreFloat = 0.01
   
   /// Create a polyphonic Arrow-based Preset with N independent voice copies.
-  init(arrowSyntax: ArrowSyntax, numVoices: Int = 12) {
+  init(arrowSyntax: ArrowSyntax, numVoices: Int = 12, initEffects: Bool = true) {
     self.numVoices = numVoices
     
     // Compile N independent voice arrow trees
@@ -226,15 +226,15 @@ class Preset: NoteHandler {
     self.audioGate?.isOpen = false
     self.voiceLedger = VoiceLedger(voiceCount: numVoices)
     
-    initEffects()
+    if initEffects { self.initEffects() }
     setupLifecycleCallbacks()
   }
   
-  init(sampler: Sampler) {
+  init(sampler: Sampler, initEffects: Bool = true) {
     self.numVoices = 1
     self.sampler = sampler
     self.voiceLedger = VoiceLedger(voiceCount: 1)
-    initEffects()
+    if initEffects { self.initEffects() }
   }
   
   // MARK: - NoteHandler
@@ -312,6 +312,8 @@ class Preset: NoteHandler {
   
   func initEffects() {
     self.reverbNode = AVAudioUnitReverb()
+    self.delayNode = AVAudioUnitDelay()
+    self.mixerNode = AVAudioMixerNode()
     self.distortionPreset = .defaultValue
     self.reverbPreset = .cathedral
     self.delayNode?.delayTime = 0
@@ -329,15 +331,19 @@ class Preset: NoteHandler {
         if (t - lastTimeWeSetPosition) > setPositionMinWaitTimeSecs {
           lastTimeWeSetPosition = t
           let (x, y, z) = positionLFO!.of(t - 1)
-          mixerNode.position.x = Float(x)
-          mixerNode.position.y = Float(y)
-          mixerNode.position.z = Float(z)
+          mixerNode?.position.x = Float(x)
+          mixerNode?.position.y = Float(y)
+          mixerNode?.position.z = Float(z)
         }
       }
     }
   }
   
   func wrapInAppleNodes(forEngine engine: SpatialAudioEngine) -> AVAudioMixerNode {
+    guard let mixerNode = self.mixerNode else {
+      fatalError()
+    }
+    
     let sampleRate = engine.sampleRate
     
     // recursively tell all arrows their sample rate
@@ -369,7 +375,7 @@ class Preset: NoteHandler {
     positionTask = Task.detached(priority: .medium) { [weak self] in
       while let self = self, !Task.isCancelled {
         // If we are detached, kill the task
-        guard let engine = self.mixerNode.engine else {
+        guard let engine = self.mixerNode!.engine else {
           break
         }
         
