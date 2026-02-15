@@ -70,7 +70,6 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				auroraBorealis.json,
-				saw1_preset.json,
 			);
 			target = 9BC0FCA62E704EA900472A5A /* ProgressionPlayer */;
 		};
