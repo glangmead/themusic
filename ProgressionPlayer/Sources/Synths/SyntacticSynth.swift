@@ -27,7 +27,7 @@ class SyntacticSynth {
   var reloadCount = 0
   let numVoices = 12
   
-  var noteHandler: NoteHandler? { spatialPreset?.noteHandler }
+  var noteHandler: NoteHandler? { spatialPreset }
   private var presets: [Preset] { spatialPreset?.presets ?? [] }
   var name: String {
     presets.first?.name ?? "Noname"

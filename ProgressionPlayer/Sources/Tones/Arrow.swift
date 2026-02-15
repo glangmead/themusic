@@ -9,7 +9,7 @@ import Accelerate
 import AVFAudio
 
 typealias CoreFloat = Double
-let MAX_BUFFER_SIZE = 4096
+let MAX_BUFFER_SIZE = 1024
 
 class Arrow11 {
   var sampleRate: CoreFloat = 44100 // to be updated from outside if different, but this is a good guess

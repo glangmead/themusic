@@ -35,10 +35,10 @@ struct MusicEvent {
   
   mutating func play() async throws {
     // Apply modulation (only supported for Arrow-based presets)
-    if let arrowPool = noteHandler as? PolyphonicArrowPool {
+    if let handles = noteHandler.handles {
       let now = CoreFloat(Date.now.timeIntervalSince1970 - timeOrigin)
       for (key, modulatingArrow) in modulators {
-        if let arrowConsts = arrowPool.namedConsts[key] {
+        if let arrowConsts = handles.namedConsts[key] {
           for arrowConst in arrowConsts {
             if let eventUsingArrow = modulatingArrow as? EventUsingArrow {
               eventUsingArrow.event = self
@@ -330,7 +330,7 @@ actor MusicPattern {
   }
   
   func next() async -> MusicEvent? {
-    guard let noteHandler = spatialPreset.noteHandler else { return nil }
+    let noteHandler: NoteHandler = spatialPreset
     guard let notes = notes.next() else { return nil }
     guard let sustain = sustains.next() else { return nil }
     guard let gap = gaps.next() else { return nil }

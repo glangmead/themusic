@@ -7,28 +7,48 @@
 
 import AVFAudio
 
-/// A polyphonic pool of Presets that manages voice allocation, spatial positioning,
-/// and chord-level note playback. Each Preset in the pool has its own effects chain
-/// and spatial position, allowing notes to fly around independently.
+/// A spatial pool of Presets that manages spatial positioning and chord-level note playback.
+/// Each Preset in the pool has its own effects chain and spatial position, allowing notes
+/// to fly around independently.
 ///
 /// SpatialPreset is the "top-level playable thing" that Sequencer and MusicPattern
-/// assign notes to.
+/// assign notes to. It conforms to NoteHandler and routes notes to individual Presets
+/// via a spatial VoiceLedger.
+///
+/// For Arrow-based presets: each Preset has 1 internal voice. The SpatialPreset-level
+/// ledger assigns each note to a different Preset (different spatial position).
+/// For Sampler-based presets: each Preset wraps an AVAudioUnitSampler which is
+/// inherently polyphonic.
 @Observable
-class SpatialPreset {
+class SpatialPreset: NoteHandler {
   let presetSpec: PresetSyntax
   let engine: SpatialAudioEngine
   let numVoices: Int
   private(set) var presets: [Preset] = []
   
-  // Voice management: one of these will be populated depending on preset type
-  var arrowPool: PolyphonicArrowPool?
-  var samplerHandler: PlayableSampler?
+  // Spatial voice management: routes notes to different Presets
+  private var spatialLedger: VoiceLedger?
+  private var _cachedHandles: ArrowWithHandles?
   
-  /// The NoteHandler for this SpatialPreset (arrow pool or sampler handler)
-  var noteHandler: NoteHandler? { arrowPool ?? samplerHandler }
+  var globalOffset: Int = 0 {
+    didSet {
+      for preset in presets { preset.globalOffset = globalOffset }
+    }
+  }
   
-  /// Access to the ArrowWithHandles dictionaries for parameter editing (Arrow-based only)
-  var handles: ArrowWithHandles? { arrowPool }
+  /// Aggregated handles from all Presets for parameter editing (UI knobs, modulation)
+  var handles: ArrowWithHandles? {
+    if let cached = _cachedHandles { return cached }
+    guard !presets.isEmpty else { return nil }
+    let holder = ArrowWithHandles(ArrowIdentity())
+    for preset in presets {
+      if let h = preset.handles {
+        let _ = holder.withMergeDictsFromArrow(h)
+      }
+    }
+    _cachedHandles = holder
+    return holder
+  }
   
   init(presetSpec: PresetSyntax, engine: SpatialAudioEngine, numVoices: Int = 12) {
     self.presetSpec = presetSpec
@@ -39,29 +59,29 @@ class SpatialPreset {
   
   private func setup() {
     var avNodes = [AVAudioMixerNode]()
+    _cachedHandles = nil
     
     if presetSpec.arrow != nil {
-      for _ in 1...numVoices {
-        let preset = presetSpec.compile()
+      // Independent spatial: N Presets x 1 voice each
+      // Each note goes to a different Preset (different spatial position)
+      for _ in 0..<numVoices {
+        let preset = presetSpec.compile(numVoices: 1)
         presets.append(preset)
         let node = preset.wrapInAppleNodes(forEngine: engine)
         avNodes.append(node)
       }
-      engine.connectToEnvNode(avNodes)
-      arrowPool = PolyphonicArrowPool(presets: presets)
     } else if presetSpec.samplerFilenames != nil {
-      for _ in 1...numVoices {
-        let preset = presetSpec.compile()
+      // Sampler: 1 sampler per spatial slot, same as Arrow
+      for _ in 0..<numVoices {
+        let preset = presetSpec.compile(numVoices: 1)
         presets.append(preset)
         let node = preset.wrapInAppleNodes(forEngine: engine)
         avNodes.append(node)
       }
-      engine.connectToEnvNode(avNodes)
-      
-      let handler = PlayableSampler(sampler: presets[0].sampler!)
-      handler.preset = presets[0]
-      samplerHandler = handler
     }
+    
+    spatialLedger = VoiceLedger(voiceCount: numVoices)
+    engine.connectToEnvNode(avNodes)
   }
   
   func cleanup() {
@@ -69,25 +89,36 @@ class SpatialPreset {
       preset.detachAppleNodes(from: engine)
     }
     presets.removeAll()
-    arrowPool = nil
-    samplerHandler = nil
+    spatialLedger = nil
+    _cachedHandles = nil
   }
   
   func reload(presetSpec: PresetSyntax) {
     cleanup()
-    // presetSpec is let, so we create a new SpatialPreset for reloading.
-    // This method is here for future use if presetSpec becomes var.
     setup()
   }
   
-  // MARK: - Single-note API
+  // MARK: - NoteHandler
   
-  func noteOn(_ note: MidiNote) {
-    noteHandler?.noteOn(note)
+  func noteOn(_ noteVelIn: MidiNote) {
+    guard let ledger = spatialLedger else { return }
+    
+    // Re-trigger if note already playing on a Preset
+    if let idx = ledger.voiceIndex(for: noteVelIn.note) {
+      presets[idx].noteOn(noteVelIn)
+    }
+    // Allocate a new Preset for this note
+    else if let idx = ledger.takeAvailableVoice(noteVelIn.note) {
+      presets[idx].noteOn(noteVelIn)
+    }
   }
   
-  func noteOff(_ note: MidiNote) {
-    noteHandler?.noteOff(note)
+  func noteOff(_ noteVelIn: MidiNote) {
+    guard let ledger = spatialLedger else { return }
+    
+    if let idx = ledger.releaseVoice(noteVelIn.note) {
+      presets[idx].noteOff(noteVelIn)
+    }
   }
   
   // MARK: - Chord API
@@ -96,23 +127,16 @@ class SpatialPreset {
   /// - Parameters:
   ///   - notes: The notes to play.
   ///   - independentSpatial: If true, each note gets its own Preset (own FX chain + spatial position).
-  ///     If false, notes share a Preset (move as a unit). In both cases, the VoiceLedger in
-  ///     PolyphonicArrowPool handles voice assignment, so each noteOn is tracked individually.
+  ///     If false, notes share a Preset (move as a unit). Currently only independent mode is implemented.
   func notesOn(_ notes: [MidiNote], independentSpatial: Bool = true) {
-    // The independentSpatial parameter is naturally handled by the pool:
-    // - For Arrow pools: each noteOn assigns a different voice (= different Preset)
-    //   via VoiceLedger, so notes are already independent.
-    // - For Sampler: AVAudioUnitSampler is inherently polyphonic.
-    // When independentSpatial is false, a future optimization could route multiple
-    // notes to the same voice/Preset, but for now each note is independent.
     for note in notes {
-      noteHandler?.noteOn(note)
+      noteOn(note)
     }
   }
   
   func notesOff(_ notes: [MidiNote]) {
     for note in notes {
-      noteHandler?.noteOff(note)
+      noteOff(note)
     }
   }
   

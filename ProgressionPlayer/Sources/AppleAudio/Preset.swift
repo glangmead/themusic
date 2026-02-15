@@ -37,15 +37,13 @@ struct PresetSyntax: Codable {
   let rose: RoseSyntax
   let effects: EffectsSyntax
   
-  func compile() -> Preset {
+  func compile(numVoices: Int = 12) -> Preset {
     let preset: Preset
     if let arrowSyntax = arrow {
-      let sound = arrowSyntax.compile()
-      preset = Preset(sound: sound)
+      preset = Preset(arrowSyntax: arrowSyntax, numVoices: numVoices)
     } else if let samplerFilenames = samplerFilenames, let samplerBank = samplerBank, let samplerProgram = samplerProgram {
       preset = Preset(sampler: Sampler(fileNames: samplerFilenames, bank: samplerBank, program: samplerProgram))
     } else {
-      preset = Preset(sound: ArrowWithHandles(ArrowConst(value: 0)))
       fatalError("PresetSyntax must have either arrow or sampler")
     }
     
@@ -67,10 +65,16 @@ struct PresetSyntax: Codable {
 }
 
 @Observable
-class Preset {
+class Preset: NoteHandler {
   var name: String = "Noname"
+  let numVoices: Int
   
-  // sound synthesized in our code, and an audioGate to help control its perf
+  // Arrow voices (polyphonic): each is an independently compiled ArrowWithHandles
+  private(set) var voices: [ArrowWithHandles] = []
+  private var voiceLedger: VoiceLedger?
+  private(set) var mergedHandles: ArrowWithHandles? = nil
+  
+  // The ArrowSum of all voices, wrapped as ArrowWithHandles
   var sound: ArrowWithHandles? = nil
   var audioGate: AudioGate? = nil
   private var sourceNode: AVAudioSourceNode? = nil
@@ -98,15 +102,10 @@ class Preset {
     delayNode != nil
   }
   
+  // NoteHandler conformance
+  var globalOffset: Int = 0
   var activeNoteCount = 0
-  
-  func noteOn() {
-    activeNoteCount += 1
-  }
-  
-  func noteOff() {
-    activeNoteCount -= 1
-  }
+  var handles: ArrowWithHandles? { mergedHandles }
   
   func activate() {
     audioGate?.isOpen = true
@@ -202,17 +201,113 @@ class Preset {
   // at 0.1 this makes my phone hot
   private let setPositionMinWaitTimeSecs: CoreFloat = 0.01
   
-  init(sound: ArrowWithHandles) {
-    self.sound = sound
-    self.audioGate = AudioGate(innerArr: sound)
+  /// Create a polyphonic Arrow-based Preset with N independent voice copies.
+  init(arrowSyntax: ArrowSyntax, numVoices: Int = 12) {
+    self.numVoices = numVoices
+    
+    // Compile N independent voice arrow trees
+    for _ in 0..<numVoices {
+      voices.append(arrowSyntax.compile())
+    }
+    
+    // Sum all voices into one signal
+    let sum = ArrowSum(innerArrs: voices)
+    let combined = ArrowWithHandles(sum)
+    let _ = combined.withMergeDictsFromArrows(voices)
+    self.sound = combined
+    
+    // Merged handles for external access (UI knobs, modulation)
+    let handleHolder = ArrowWithHandles(ArrowIdentity())
+    let _ = handleHolder.withMergeDictsFromArrows(voices)
+    self.mergedHandles = handleHolder
+    
+    // Gate + voice ledger
+    self.audioGate = AudioGate(innerArr: combined)
     self.audioGate?.isOpen = false
+    self.voiceLedger = VoiceLedger(voiceCount: numVoices)
+    
     initEffects()
     setupLifecycleCallbacks()
   }
   
   init(sampler: Sampler) {
+    self.numVoices = 1
     self.sampler = sampler
+    self.voiceLedger = VoiceLedger(voiceCount: 1)
     initEffects()
+  }
+  
+  // MARK: - NoteHandler
+  
+  func noteOn(_ noteVelIn: MidiNote) {
+    let noteVel = MidiNote(note: applyOffset(note: noteVelIn.note), velocity: noteVelIn.velocity)
+    
+    if let sampler = sampler {
+      guard let ledger = voiceLedger else { return }
+      // Re-trigger: stop then start so the note restarts cleanly
+      if ledger.voiceIndex(for: noteVelIn.note) != nil {
+        sampler.node.stopNote(noteVel.note, onChannel: 0)
+      } else {
+        activeNoteCount += 1
+        let _ = ledger.takeAvailableVoice(noteVelIn.note)
+      }
+      sampler.node.startNote(noteVel.note, withVelocity: noteVel.velocity, onChannel: 0)
+      return
+    }
+    
+    guard let ledger = voiceLedger else { return }
+    
+    // Re-trigger if this note is already playing on a voice
+    if let voiceIdx = ledger.voiceIndex(for: noteVelIn.note) {
+      triggerVoice(voiceIdx, note: noteVel)
+    }
+    // Otherwise allocate a fresh voice
+    else if let voiceIdx = ledger.takeAvailableVoice(noteVelIn.note) {
+      triggerVoice(voiceIdx, note: noteVel)
+    }
+  }
+  
+  func noteOff(_ noteVelIn: MidiNote) {
+    let noteVel = MidiNote(note: applyOffset(note: noteVelIn.note), velocity: noteVelIn.velocity)
+    
+    if let sampler = sampler {
+      guard let ledger = voiceLedger else { return }
+      if ledger.releaseVoice(noteVelIn.note) != nil {
+        activeNoteCount -= 1
+      }
+      sampler.node.stopNote(noteVel.note, onChannel: 0)
+      return
+    }
+    
+    guard let ledger = voiceLedger else { return }
+    if let voiceIdx = ledger.releaseVoice(noteVelIn.note) {
+      releaseVoice(voiceIdx, note: noteVel)
+    }
+  }
+  
+  private func triggerVoice(_ voiceIdx: Int, note: MidiNote) {
+    activeNoteCount += 1
+    let voice = voices[voiceIdx]
+    for key in voice.namedADSREnvelopes.keys {
+      for env in voice.namedADSREnvelopes[key]! {
+        env.noteOn(note)
+      }
+    }
+    if let freqConsts = voice.namedConsts["freq"] {
+      for const in freqConsts {
+        const.val = note.freq
+      }
+    }
+  }
+  
+  private func releaseVoice(_ voiceIdx: Int, note: MidiNote) {
+    activeNoteCount -= 1
+    let voice = voices[voiceIdx]
+    for key in voice.namedADSREnvelopes.keys {
+      for env in voice.namedADSREnvelopes[key]! {
+        env.noteOff(note)
+      }
+    }
   }
   
   func initEffects() {

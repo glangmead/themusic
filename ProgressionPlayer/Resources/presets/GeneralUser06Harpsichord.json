@@ -1,6 +1,6 @@
 {
- "name"   : "80s_bells",
+ "name"   : "Harpsichord",
  "rose"   : {"freq": 0.5, "leafFactor": 3, "phase": 3.14, "amp": 4},
  "effects": {"reverbPreset": 1, "delayTime": 0, "delayLowPassCutoff": 100000, "delayFeedback": 0, "reverbWetDryMix": 50, "delayWetDryMix": 0},
- "samplerFilenames": ["80s Bell C6", "80s Bell E3", "80s Bell G4", "80s Bell G5"], "samplerProgram": 0, "samplerBank": 121
+ "samplerFilenames": ["generaluser"], "samplerProgram": 6, "samplerBank": 121
 }
