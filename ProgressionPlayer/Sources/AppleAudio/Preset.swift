@@ -123,6 +123,7 @@ class Preset: NoteHandler {
         }
         env.finishCallback = { [weak self] in
           if let self = self {
+            let states = ampEnvs.map { "\($0.state)" }
             let allClosed = ampEnvs.allSatisfy { $0.state == .closed }
             if allClosed {
               self.deactivate()
@@ -259,11 +260,12 @@ class Preset: NoteHandler {
     
     // Re-trigger if this note is already playing on a voice
     if let voiceIdx = ledger.voiceIndex(for: noteVelIn.note) {
-      triggerVoice(voiceIdx, note: noteVel)
+      triggerVoice(voiceIdx, note: noteVel, isRetrigger: true)
     }
     // Otherwise allocate a fresh voice
     else if let voiceIdx = ledger.takeAvailableVoice(noteVelIn.note) {
-      triggerVoice(voiceIdx, note: noteVel)
+      triggerVoice(voiceIdx, note: noteVel, isRetrigger: false)
+    } else {
     }
   }
   
@@ -285,8 +287,10 @@ class Preset: NoteHandler {
     }
   }
   
-  private func triggerVoice(_ voiceIdx: Int, note: MidiNote) {
-    activeNoteCount += 1
+  private func triggerVoice(_ voiceIdx: Int, note: MidiNote, isRetrigger: Bool = false) {
+    if !isRetrigger {
+      activeNoteCount += 1
+    }
     let voice = voices[voiceIdx]
     for key in voice.namedADSREnvelopes.keys {
       for env in voice.namedADSREnvelopes[key]! {

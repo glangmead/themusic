@@ -671,7 +671,7 @@ enum ArrowSyntax: Codable {
         }
         composition = arrow
       }
-      return composition!.withMergeDictsFromArrows(arrows)
+      return composition!
     case .osc(let oscName, let oscShape, let widthArr):
       let osc = BasicOscillator(shape: oscShape, widthArr: widthArr.compile())
       let arr = ArrowWithHandles(osc)

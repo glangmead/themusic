@@ -262,6 +262,64 @@ struct PresetNoteOnOffTests {
             "Voice 1 should still have default freq, got \(voice1Freq)")
   }
 
+  @Test("Retrigger does not inflate activeNoteCount")
+  func retriggerDoesNotInflateCount() {
+    let preset = makeTestPreset(numVoices: 4)
+    let note60 = MidiNote(note: 60, velocity: 127)
+    preset.noteOn(note60)
+    #expect(preset.activeNoteCount == 1)
+
+    // Retrigger same note without noteOff
+    preset.noteOn(MidiNote(note: 60, velocity: 80))
+    #expect(preset.activeNoteCount == 1,
+            "Retrigger should not increment count; got \(preset.activeNoteCount)")
+
+    // Multiple retriggers
+    preset.noteOn(MidiNote(note: 60, velocity: 90))
+    preset.noteOn(MidiNote(note: 60, velocity: 100))
+    #expect(preset.activeNoteCount == 1,
+            "Multiple retriggers should keep count at 1; got \(preset.activeNoteCount)")
+
+    // Release should bring count to 0
+    preset.noteOff(MidiNote(note: 60, velocity: 0))
+    #expect(preset.activeNoteCount == 0,
+            "After release, count should be 0; got \(preset.activeNoteCount)")
+  }
+
+  @Test("Rapid retrigger-then-release cycle leaves count at zero")
+  func rapidRetriggerReleaseCycle() {
+    let preset = makeTestPreset(numVoices: 4)
+    // Simulate rapid key presses: noteOn, retrigger, release, repeated
+    for _ in 0..<10 {
+      preset.noteOn(MidiNote(note: 60, velocity: 127))
+      preset.noteOn(MidiNote(note: 60, velocity: 80))  // retrigger
+      preset.noteOff(MidiNote(note: 60, velocity: 0))
+    }
+    #expect(preset.activeNoteCount == 0,
+            "After 10 retrigger+release cycles, count should be 0; got \(preset.activeNoteCount)")
+  }
+
+  @Test("Retrigger then release leaves all ADSRs in release state")
+  func retriggerThenReleaseADSRState() {
+    let preset = makeTestPreset(numVoices: 4)
+    preset.noteOn(MidiNote(note: 60, velocity: 127))
+
+    // Retrigger several times
+    preset.noteOn(MidiNote(note: 60, velocity: 80))
+    preset.noteOn(MidiNote(note: 60, velocity: 90))
+
+    // Release
+    preset.noteOff(MidiNote(note: 60, velocity: 0))
+
+    // Voice 0 should be in release, not stuck in attack
+    let voice0 = preset.voices[0]
+    let ampEnvs = voice0.namedADSREnvelopes["ampEnv"]!
+    for env in ampEnvs {
+      #expect(env.state == .release,
+              "After retrigger+release, ADSR should be in release, got \(env.state)")
+    }
+  }
+
   @Test("Voice exhaustion drops extra notes gracefully")
   func voiceExhaustion() {
     let preset = makeTestPreset(numVoices: 2)
@@ -335,5 +393,75 @@ struct PresetNoteOnOffTests {
     preset.audioGate!.process(inputs: times, outputs: &loudBuf)
     let loudRMS = sqrt(loudBuf.reduce(0) { $0 + $1 * $1 } / CoreFloat(loudBuf.count))
     #expect(loudRMS > 0.01, "Should produce sound after noteOn, got RMS \(loudRMS)")
+  }
+}
+
+// MARK: - Handle Duplication Diagnostic
+
+@Suite("Handle duplication in compose", .serialized)
+struct HandleDuplicationTests {
+
+  @Test("Single compile of compose should not duplicate ADSR handles")
+  func singleCompileNoDuplicateADSR() {
+    // Mimics 5th Cluedo structure: compose([ prod(ampEnv, osc), lowPassFilter(filterEnv) ])
+    let syntax: ArrowSyntax = .compose(arrows: [
+      .prod(of: [
+        .envelope(name: "ampEnv", attack: 0.01, decay: 0.01, sustain: 1.0, release: 0.1, scale: 1.0),
+        .compose(arrows: [
+          .prod(of: [.const(name: "freq", val: 440), .identity]),
+          .osc(name: "osc", shape: .sine, width: .const(name: "w", val: 1))
+        ])
+      ]),
+      .lowPassFilter(
+        name: "filter",
+        cutoff: .sum(of: [
+          .const(name: "cutoffLow", val: 50),
+          .prod(of: [
+            .const(name: "cutoff", val: 5000),
+            .envelope(name: "filterEnv", attack: 0.1, decay: 0.3, sustain: 1.0, release: 0.1, scale: 1.0)
+          ])
+        ]),
+        resonance: .const(name: "resonance", val: 1.6)
+      )
+    ])
+
+    let compiled = syntax.compile()
+    let ampEnvCount = compiled.namedADSREnvelopes["ampEnv"]?.count ?? 0
+    let filterEnvCount = compiled.namedADSREnvelopes["filterEnv"]?.count ?? 0
+    print("ampEnv count: \(ampEnvCount), filterEnv count: \(filterEnvCount)")
+
+    // Check for unique object references
+    if let ampEnvs = compiled.namedADSREnvelopes["ampEnv"] {
+      let uniqueAmpEnvs = Set(ampEnvs.map { ObjectIdentifier($0) })
+      print("ampEnv: \(ampEnvs.count) total, \(uniqueAmpEnvs.count) unique")
+      #expect(ampEnvs.count == 1,
+              "Should have exactly 1 ampEnv entry, got \(ampEnvs.count) (compose is duplicating handles)")
+    }
+    if let filterEnvs = compiled.namedADSREnvelopes["filterEnv"] {
+      let uniqueFilterEnvs = Set(filterEnvs.map { ObjectIdentifier($0) })
+      print("filterEnv: \(filterEnvs.count) total, \(uniqueFilterEnvs.count) unique")
+      #expect(filterEnvs.count == 1,
+              "Should have exactly 1 filterEnv entry, got \(filterEnvs.count) (compose is duplicating handles)")
+    }
+  }
+
+  @Test("5th Cluedo preset compile should not duplicate ADSR handles")
+  func cluedoPresetNoDuplicateADSR() throws {
+    let presetSpec = try loadPresetSyntax("5th_cluedo.json")
+    guard let arrowSyntax = presetSpec.arrow else {
+      Issue.record("5th Cluedo should have an arrow")
+      return
+    }
+    let compiled = arrowSyntax.compile()
+    let ampEnvCount = compiled.namedADSREnvelopes["ampEnv"]?.count ?? 0
+    let filterEnvCount = compiled.namedADSREnvelopes["filterEnv"]?.count ?? 0
+    print("5th Cluedo - ampEnv count: \(ampEnvCount), filterEnv count: \(filterEnvCount)")
+
+    if let ampEnvs = compiled.namedADSREnvelopes["ampEnv"] {
+      let unique = Set(ampEnvs.map { ObjectIdentifier($0) })
+      print("5th Cluedo - ampEnv unique: \(unique.count) out of \(ampEnvs.count)")
+      #expect(unique.count == 1,
+              "5th Cluedo should have 1 unique ampEnv, got \(unique.count) unique out of \(ampEnvs.count)")
+    }
   }
 }

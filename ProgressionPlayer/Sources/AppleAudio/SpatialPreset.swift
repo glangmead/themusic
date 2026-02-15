@@ -64,8 +64,9 @@ class SpatialPreset: NoteHandler {
     if presetSpec.arrow != nil {
       // Independent spatial: N Presets x 1 voice each
       // Each note goes to a different Preset (different spatial position)
-      for _ in 0..<numVoices {
+      for i in 0..<numVoices {
         let preset = presetSpec.compile(numVoices: 1)
+        preset.name = "\(preset.name)[\(i)]"
         presets.append(preset)
         let node = preset.wrapInAppleNodes(forEngine: engine)
         avNodes.append(node)

@@ -117,12 +117,7 @@ The project has a strict layered architecture. Lower layers must not reference o
 
 ## Tests
 
-The project has 100 unit tests across 4 test files in `ProgressionPlayerTests/`, using the Swift Testing framework (`@Suite`, `@Test`, `#expect`). All suites use `.serialized` because Arrow objects have mutable scratch buffers.
-
-- `ArrowDSPPipelineTests.swift` — Arrow combinators, oscillator waveforms, ADSR envelopes, preset JSON compilation, sound fingerprints (RMS, zero-crossing)
-- `NoteHandlingTests.swift` — `VoiceLedger` allocation/release/reuse, `Preset` noteOn/noteOff/retrigger/exhaustion/globalOffset
-- `UIKnobPropagationTests.swift` — Handle propagation (ADSR params, consts, osc shapes, chorusers) across all voices and presets, knob-to-sound verification (filter cutoff, amp sustain, osc shape, chorus)
-- `PatternGenerationTests.swift` — Iterator types (cyclic, shuffled, random, FloatSampler, ListSampler), `MusicEvent` modulation and lifecycle, `EventUsingArrow`, chord generators, event assembly
+The project has over 100 unit tests across files in `ProgressionPlayerTests/`, using the Swift Testing framework (`@Suite`, `@Test`, `#expect`). All suites use `.serialized` because Arrow objects have mutable scratch buffers.
 
 Tests avoid AVFoundation by using `Preset(arrowSyntax:numVoices:initEffects: false)` and working directly with `ArrowSyntax.compile()`. The `initEffects` parameter (defaults to `true`) skips creation of `AVAudioUnitReverb`/`AVAudioUnitDelay`/`AVAudioMixerNode`. Shared test utilities (`renderArrow`, `rms`, `zeroCrossings`, `loadPresetSyntax`, `makeOscArrow`) live in `ArrowDSPPipelineTests.swift`.
 

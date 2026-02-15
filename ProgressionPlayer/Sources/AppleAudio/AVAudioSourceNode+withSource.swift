@@ -24,9 +24,14 @@ extension AVAudioSourceNode {
       //             We need to fill this many samples into the buffer.
       // audioBufferList: A pointer to the AudioBufferList structure where we write our samples.
       
-      // Fast path: if the gate is closed, signal silence and return immediately
-      // This allows the audio engine to optimize downstream processing
+      // Fast path: if the gate is closed, zero the buffer and signal silence
       if !source.isOpen {
+        let audioBufferListPointer = UnsafeMutableAudioBufferListPointer(audioBufferList)
+        for buf in audioBufferListPointer {
+          if let data = buf.mData {
+            memset(data, 0, Int(buf.mDataByteSize))
+          }
+        }
         isSilence.pointee = true
         return noErr
       }
