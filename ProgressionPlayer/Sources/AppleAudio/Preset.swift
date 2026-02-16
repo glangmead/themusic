@@ -123,10 +123,17 @@ class Preset: NoteHandler {
         }
         env.finishCallback = { [weak self] in
           if let self = self {
-            let states = ampEnvs.map { "\($0.state)" }
             let allClosed = ampEnvs.allSatisfy { $0.state == .closed }
             if allClosed {
-              self.deactivate()
+              // Delay gate close to avoid race with incoming noteOn during fast trills.
+              // If a new noteOn arrives within 50ms, envelopes won't be .closed anymore.
+              DispatchQueue.main.asyncAfter(deadline: .now() + 0.05) { [weak self] in
+                guard let self = self else { return }
+                let stillAllClosed = ampEnvs.allSatisfy { $0.state == .closed }
+                if stillAllClosed {
+                  self.deactivate()
+                }
+              }
             }
           }
         }
