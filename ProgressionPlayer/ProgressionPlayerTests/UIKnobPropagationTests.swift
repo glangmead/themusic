@@ -280,21 +280,31 @@ struct KnobToSoundVerificationTests {
 
   @Test("Changing filter cutoff changes the rendered output")
   func filterCutoffChangesSound() throws {
-    let syntax = try loadPresetSyntax("5th_cluedo.json")
-    guard let arrowSyntax = syntax.arrow else {
-      Issue.record("No arrow in 5th_cluedo.json")
-      return
-    }
+    // Build a simple sawtooth-through-filter arrow inline so we control the const names.
+    let sawArrow: ArrowSyntax = .compose(arrows: [
+      .prod(of: [
+        .compose(arrows: [
+          .prod(of: [.const(name: "freq", val: 300), .identity]),
+          .osc(name: "osc1", shape: .sawtooth, width: .const(name: "osc1Width", val: 1))
+        ]),
+        .envelope(name: "ampEnv", attack: 0.01, decay: 0.1, sustain: 1.0, release: 0.1, scale: 1)
+      ]),
+      .lowPassFilter(
+        name: "filter",
+        cutoff: .const(name: "cutoffLow", val: 5000),
+        resonance: .const(name: "resonance", val: 0.7)
+      )
+    ])
 
     // Build two presets with different cutoff values
-    let presetHigh = Preset(arrowSyntax: arrowSyntax, numVoices: 1, initEffects: false)
-    let presetLow = Preset(arrowSyntax: arrowSyntax, numVoices: 1, initEffects: false)
+    let presetHigh = Preset(arrowSyntax: sawArrow, numVoices: 1, initEffects: false)
+    let presetLow = Preset(arrowSyntax: sawArrow, numVoices: 1, initEffects: false)
 
-    // Set cutoffs
-    if let consts = presetHigh.handles?.namedConsts["cutoff"] {
+    // Set cutoffs via the named const
+    if let consts = presetHigh.handles?.namedConsts["cutoffLow"] {
       consts.forEach { $0.val = 15000.0 }
     }
-    if let consts = presetLow.handles?.namedConsts["cutoff"] {
+    if let consts = presetLow.handles?.namedConsts["cutoffLow"] {
       consts.forEach { $0.val = 200.0 }
     }
 
