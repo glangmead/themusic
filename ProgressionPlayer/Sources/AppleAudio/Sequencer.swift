@@ -10,7 +10,7 @@ import AVFoundation
 import Tonic
 import SwiftUI
 
-@Observable
+@MainActor @Observable
 class Sequencer {
   var avSeq: AVAudioSequencer!
   var avEngine: AVAudioEngine!

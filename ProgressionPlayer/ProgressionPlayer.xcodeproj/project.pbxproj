@@ -23,6 +23,9 @@
 		9BCED9152F1FD2E30029ED1B /* butterchurn.js in Resources */ = {isa = PBXBuildFile; fileRef = 9BCED9122F1FD2E30029ED1B /* butterchurn.js */; };
 		9BCED9902F246B150029ED1B /* Orbital.icon in Resources */ = {isa = PBXBuildFile; fileRef = 9BCED98F2F246B150029ED1B /* Orbital.icon */; };
 		9BD1B7002E8B08D000C718F1 /* Tonic in Frameworks */ = {isa = PBXBuildFile; productRef = 9BD1B6FF2E8B08D000C718F1 /* Tonic */; };
+		9BD1D93B2F42C37F0054692B /* baroque_chords.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BD1D93A2F42C37F0054692B /* baroque_chords.json */; };
+		9BD1D93D2F42C37F0054692B /* aurora_arpeggio.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BD1D93C2F42C37F0054692B /* aurora_arpeggio.json */; };
+		9BD1D93F2F42C37F0054692B /* minimal_pulse.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BD1D93E2F42C37F0054692B /* minimal_pulse.json */; };
 		9BFFD97F2E7DA94B00E7CB55 /* beat.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 9BFFD97E2E7DA94B00E7CB55 /* beat.aiff */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +64,9 @@
 		9BCED9122F1FD2E30029ED1B /* butterchurn.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = butterchurn.js; sourceTree = "<group>"; };
 		9BCED9132F1FD2E30029ED1B /* butterchurn-presets.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "butterchurn-presets.js"; sourceTree = "<group>"; };
 		9BCED98F2F246B150029ED1B /* Orbital.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = Orbital.icon; sourceTree = "<group>"; };
+		9BD1D93A2F42C37F0054692B /* baroque_chords.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = baroque_chords.json; sourceTree = "<group>"; };
+		9BD1D93C2F42C37F0054692B /* aurora_arpeggio.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = aurora_arpeggio.json; sourceTree = "<group>"; };
+		9BD1D93E2F42C37F0054692B /* minimal_pulse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = minimal_pulse.json; sourceTree = "<group>"; };
 		9BFFD97E2E7DA94B00E7CB55 /* beat.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = beat.aiff; sourceTree = "<group>"; };
 		9BFFD9802E7DABD200E7CB55 /* ProgressionPlayer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProgressionPlayer.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -152,6 +158,7 @@
 				9BCED98F2F246B150029ED1B /* Orbital.icon */,
 				9B7924162F2A895000A51087 /* presets */,
 				9BDE46DF2F31351900BD36C5 /* samples */,
+				9BD1D9392F42C3730054692B /* patterns */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -187,6 +194,16 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9BD1D9392F42C3730054692B /* patterns */ = {
+			isa = PBXGroup;
+			children = (
+				9BD1D93A2F42C37F0054692B /* baroque_chords.json */,
+				9BD1D93C2F42C37F0054692B /* aurora_arpeggio.json */,
+				9BD1D93E2F42C37F0054692B /* minimal_pulse.json */,
+			);
+			path = patterns;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,6 +338,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BD1D93D2F42C37F0054692B /* aurora_arpeggio.json in Resources */,
+				9BD1D93B2F42C37F0054692B /* baroque_chords.json in Resources */,
 				9B79241C2F2A8A6000A51087 /* presets in Resources */,
 				9B00F9D92F42402E0008058E /* AGENTS.md in Resources */,
 				9B935B962EDE0F1800600E63 /* D_Loop_01.mid in Resources */,
@@ -331,6 +350,7 @@
 				9BCED9902F246B150029ED1B /* Orbital.icon in Resources */,
 				9B935B972EDE0F1800600E63 /* MSLFSanctus.mid in Resources */,
 				9BCED9112F1FD0A30029ED1B /* index.html in Resources */,
+				9BD1D93F2F42C37F0054692B /* minimal_pulse.json in Resources */,
 				9BA5B1D42F14636B00857520 /* BachInvention1.mid in Resources */,
 				9BFFD97F2E7DA94B00E7CB55 /* beat.aiff in Resources */,
 				9B7430A02ECFA5640017DE7D /* Assets.xcassets in Resources */,

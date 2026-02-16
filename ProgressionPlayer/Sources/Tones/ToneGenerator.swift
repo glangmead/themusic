@@ -329,11 +329,11 @@ final class BasicOscillator: Arrow11 {
   private let sawtooth = Sawtooth()
   private let square = Square()
   private let noise = Noise()
-  private let sineUnmanaged: Unmanaged<Arrow11>?
-  private let triangleUnmanaged: Unmanaged<Arrow11>?
-  private let sawtoothUnmanaged: Unmanaged<Arrow11>?
-  private let squareUnmanaged: Unmanaged<Arrow11>?
-  private let noiseUnmanaged: Unmanaged<Arrow11>?
+  private let sineUnmanaged: Unmanaged<Arrow11>
+  private let triangleUnmanaged: Unmanaged<Arrow11>
+  private let sawtoothUnmanaged: Unmanaged<Arrow11>
+  private let squareUnmanaged: Unmanaged<Arrow11>
+  private let noiseUnmanaged: Unmanaged<Arrow11>
   private var innerVals = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
 
   var arrow: (Arrow11 & WidthHaver)? = nil
@@ -363,6 +363,11 @@ final class BasicOscillator: Arrow11 {
   }
   
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
+    // Ensure innerVals matches outputs size so downstream vDSP calls
+    // (which use inputs.count) don't overrun the outputs buffer.
+    if innerVals.count != outputs.count {
+      innerVals = [CoreFloat](repeating: 0, count: outputs.count)
+    }
     (innerArr ?? ArrowIdentity()).process(inputs: inputs, outputs: &innerVals)
     arrUnmanaged?._withUnsafeGuaranteedRef { $0.process(inputs: innerVals, outputs: &outputs) }
   }
@@ -582,7 +587,6 @@ class ArrowWithHandles: Arrow11 {
   var namedCrossfaders   = [String: [ArrowCrossfade]]()
   var namedCrossfadersEqPow = [String: [ArrowEqualPowerCrossfade]]()
   var wrappedArrow: Arrow11
-  
   private var wrappedArrowUnsafe: Unmanaged<Arrow11>
   
   init(_ wrappedArrow: Arrow11) {

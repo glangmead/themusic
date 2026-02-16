@@ -1,0 +1,23 @@
+{
+  "name": "Baroque Chords",
+  "presetName": "5th_cluedo",
+  "noteGenerator": {
+    "chordProgression": {
+      "scale": "major",
+      "root": "C",
+      "style": "baroque"
+    }
+  },
+  "sustain": { "random": { "min": 3.0, "max": 8.0 } },
+  "gap":     { "random": { "min": 4.0, "max": 10.0 } },
+  "modulators": [
+    {
+      "target": "overallAmp",
+      "arrow": { "exponentialRand": { "min": 0.3, "max": 0.6 } }
+    },
+    {
+      "target": "overallCentDetune",
+      "arrow": { "rand": { "min": -5.0, "max": 5.0 } }
+    }
+  ]
+}

@@ -7,6 +7,7 @@
 
 import Foundation
 import AVFAudio
+import os
 
 /// Taking data such as a MIDI note and driving an oscillator, filter, and amp envelope to emit something in particular.
 
@@ -54,51 +55,66 @@ extension NoteHandler {
   }
 }
 
-final class VoiceLedger {
-  private let voiceCount: Int
-  private var noteOnnedVoiceIdxs: Set<Int>
-  private var availableVoiceIdxs: Set<Int>
-  private var indexQueue: [Int] // lets us control the order we reuse voices
-  var noteToVoiceIdx: [MidiValue: Int]
+/// Thread-safe voice allocator. All mutable state is protected by an
+/// OSAllocatedUnfairLock so callers can use it synchronously from any
+/// thread (MIDI callbacks, audio render thread, main thread).
+final class VoiceLedger: @unchecked Sendable {
+  private struct State {
+    var noteOnnedVoiceIdxs: Set<Int>
+    var availableVoiceIdxs: Set<Int>
+    var indexQueue: [Int]
+    var noteToVoiceIdx: [MidiValue: Int]
+  }
+  
+  private let lock: OSAllocatedUnfairLock<State>
   
   init(voiceCount: Int) {
-    self.voiceCount = voiceCount
-    // mark all voices as available
-    availableVoiceIdxs = Set(0..<voiceCount)
-    noteOnnedVoiceIdxs = Set<Int>()
-    noteToVoiceIdx = [:]
-    indexQueue = Array(0..<voiceCount)
+    let initialState = State(
+      noteOnnedVoiceIdxs: Set<Int>(),
+      availableVoiceIdxs: Set(0..<voiceCount),
+      indexQueue: Array(0..<voiceCount),
+      noteToVoiceIdx: [:]
+    )
+    self.lock = OSAllocatedUnfairLock(initialState: initialState)
+  }
+  
+  /// Read the current note-to-voice mapping (for tests/diagnostics).
+  var noteToVoiceIdx: [MidiValue: Int] {
+    lock.withLock { $0.noteToVoiceIdx }
   }
   
   func takeAvailableVoice(_ note: MidiValue) -> Int? {
-    // using first(where:) on a Range ensures we pick the lowest index available
-    if let availableIdx = indexQueue.first(where: {
-      availableVoiceIdxs.contains($0)
-    }) {
-      availableVoiceIdxs.remove(availableIdx)
-      noteOnnedVoiceIdxs.insert(availableIdx)
-      noteToVoiceIdx[note] = availableIdx
-      // we'll re-insert this index at the end of the array when returned
-      indexQueue.removeAll(where: {$0 == availableIdx})
-      return availableIdx
+    lock.withLock { state in
+      if let availableIdx = state.indexQueue.first(where: {
+        state.availableVoiceIdxs.contains($0)
+      }) {
+        state.availableVoiceIdxs.remove(availableIdx)
+        state.noteOnnedVoiceIdxs.insert(availableIdx)
+        state.noteToVoiceIdx[note] = availableIdx
+        state.indexQueue.removeAll(where: { $0 == availableIdx })
+        return availableIdx
+      }
+      return nil
     }
-    print("No voice available in this ledger")
-    return nil
   }
   
   func voiceIndex(for note: MidiValue) -> Int? {
-    return noteToVoiceIdx[note]
+    lock.withLock { state in
+      state.noteToVoiceIdx[note]
+    }
   }
   
   func releaseVoice(_ note: MidiValue) -> Int? {
-    if let voiceIdx = noteToVoiceIdx[note] {
-      noteOnnedVoiceIdxs.remove(voiceIdx)
-      availableVoiceIdxs.insert(voiceIdx)
-      noteToVoiceIdx.removeValue(forKey: note)
-      indexQueue.append(voiceIdx)
-      return voiceIdx
+    lock.withLock { state in
+      if let voiceIdx = state.noteToVoiceIdx[note] {
+        state.noteOnnedVoiceIdxs.remove(voiceIdx)
+        state.availableVoiceIdxs.insert(voiceIdx)
+        state.noteToVoiceIdx.removeValue(forKey: note)
+        state.indexQueue.append(voiceIdx)
+        return voiceIdx
+      }
+      return nil
     }
-    return nil
   }
 }
 

@@ -32,6 +32,25 @@ struct MusicEvent {
   let gap: CoreFloat // time reserved for this event, before next event is played
   let modulators: [String: Arrow11]
   let timeOrigin: Double
+  let clock: any Clock<Duration>
+  
+  init(
+    noteHandler: NoteHandler,
+    notes: [MidiNote],
+    sustain: CoreFloat,
+    gap: CoreFloat,
+    modulators: [String: Arrow11],
+    timeOrigin: Double,
+    clock: any Clock<Duration> = ContinuousClock()
+  ) {
+    self.noteHandler = noteHandler
+    self.notes = notes
+    self.sustain = sustain
+    self.gap = gap
+    self.modulators = modulators
+    self.timeOrigin = timeOrigin
+    self.clock = clock
+  }
   
   mutating func play() async throws {
     // Apply modulation (only supported for Arrow-based presets)
@@ -51,7 +70,7 @@ struct MusicEvent {
     
     noteHandler.notesOn(notes)
     do {
-      try await Task.sleep(for: .seconds(TimeInterval(sustain)))
+      try await clock.sleep(for: .seconds(TimeInterval(sustain)))
     } catch {
       
     }
@@ -313,13 +332,15 @@ actor MusicPattern {
   var sustains: any IteratorProtocol<CoreFloat> // a sequence of sustain lengths
   var gaps: any IteratorProtocol<CoreFloat> // a sequence of sustain lengths
   var timeOrigin: Double
+  let clock: any Clock<Duration>
   
   init(
     spatialPreset: SpatialPreset,
     modulators: [String : Arrow11],
     notes: any IteratorProtocol<[MidiNote]>,
     sustains: any IteratorProtocol<CoreFloat>,
-    gaps: any IteratorProtocol<CoreFloat>
+    gaps: any IteratorProtocol<CoreFloat>,
+    clock: any Clock<Duration> = ContinuousClock()
   ){
     self.spatialPreset = spatialPreset
     self.modulators = modulators
@@ -327,6 +348,7 @@ actor MusicPattern {
     self.sustains = sustains
     self.gaps = gaps
     self.timeOrigin = Date.now.timeIntervalSince1970
+    self.clock = clock
   }
   
   func next() async -> MusicEvent? {
@@ -346,7 +368,8 @@ actor MusicPattern {
       sustain: sustain,
       gap: gap,
       modulators: modulators,
-      timeOrigin: timeOrigin
+      timeOrigin: timeOrigin,
+      clock: clock
     )
   }
   
@@ -358,7 +381,7 @@ actor MusicPattern {
           try? await event.play()
         }
         do {
-          try await Task.sleep(for: .seconds(TimeInterval(event.gap)))
+          try await clock.sleep(for: .seconds(TimeInterval(event.gap)))
         } catch {
           return
         }

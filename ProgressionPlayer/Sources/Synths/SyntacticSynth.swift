@@ -19,7 +19,7 @@ import SwiftUI
 ///     - 5th Clue
 // A Synth is an object that wraps a single PresetSyntax and offers mutators for all its settings, and offers a
 // pool of voices for playing the Preset via a SpatialPreset.
-@Observable
+@MainActor @Observable
 class SyntacticSynth {
   var presetSpec: PresetSyntax
   let engine: SpatialAudioEngine

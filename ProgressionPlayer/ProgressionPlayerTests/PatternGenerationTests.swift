@@ -204,7 +204,8 @@ struct MusicEventModulationTests {
       sustain: 0.01, // very short
       gap: 0.01,
       modulators: ["overallAmp": fixedAmpArrow],
-      timeOrigin: Date.now.timeIntervalSince1970
+      timeOrigin: Date.now.timeIntervalSince1970,
+      clock: ImmediateClock()
     )
 
     // Check initial value
@@ -231,7 +232,8 @@ struct MusicEventModulationTests {
       sustain: 0.01,
       gap: 0.01,
       modulators: [:],
-      timeOrigin: Date.now.timeIntervalSince1970
+      timeOrigin: Date.now.timeIntervalSince1970,
+      clock: ImmediateClock()
     )
 
     #expect(preset.activeNoteCount == 0)
@@ -261,7 +263,8 @@ struct MusicEventModulationTests {
       sustain: 0.01,
       gap: 0.01,
       modulators: [:],
-      timeOrigin: Date.now.timeIntervalSince1970
+      timeOrigin: Date.now.timeIntervalSince1970,
+      clock: ImmediateClock()
     )
 
     try await event.play()
@@ -292,7 +295,8 @@ struct MusicEventModulationTests {
       sustain: 0.01,
       gap: 0.01,
       modulators: ["overallAmp": eventArrow],
-      timeOrigin: Date.now.timeIntervalSince1970
+      timeOrigin: Date.now.timeIntervalSince1970,
+      clock: ImmediateClock()
     )
 
     try await event.play()
@@ -429,7 +433,8 @@ struct MusicPatternEventGenerationTests {
         "overallAmp": ArrowConst(value: 0.33),
         "overallCentDetune": ArrowConst(value: 7.0),
       ],
-      timeOrigin: Date.now.timeIntervalSince1970
+      timeOrigin: Date.now.timeIntervalSince1970,
+      clock: ImmediateClock()
     )
 
     try await event.play()

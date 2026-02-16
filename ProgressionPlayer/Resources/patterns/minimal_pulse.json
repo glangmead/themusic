@@ -1,0 +1,16 @@
+{
+  "name": "Minimal Pulse",
+  "presetName": "sine",
+  "noteGenerator": {
+    "fixed": {
+      "events": [
+        { "notes": [{ "midi": 60, "velocity": 100 }] },
+        { "notes": [{ "midi": 64, "velocity": 90 }] },
+        { "notes": [{ "midi": 67, "velocity": 80 }] },
+        { "notes": [{ "midi": 60, "velocity": 100 }, { "midi": 64, "velocity": 90 }, { "midi": 67, "velocity": 80 }] }
+      ]
+    }
+  },
+  "sustain": { "fixed": { "value": 0.8 } },
+  "gap":     { "list": { "values": [1.0, 1.0, 1.0, 2.0] } }
+}
