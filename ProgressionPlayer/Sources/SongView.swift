@@ -165,7 +165,7 @@ struct SongView: View {
       
       if isShowingVisualizer {
         VisualizerView(synth: synth, isPresented: $isShowingVisualizer)
-          .edgesIgnoringSafeArea(.all)
+          .ignoresSafeArea()
           .transition(.opacity.animation(.easeInOut(duration: 0.5)))
           .zIndex(1)
       }

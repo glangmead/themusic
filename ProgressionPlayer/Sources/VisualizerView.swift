@@ -8,34 +8,7 @@
 import SwiftUI
 import WebKit
 import UIKit
-
-// Pre-loads the visualizer resources to avoid a hitch on first open
-class VisualizerWarmer {
-  static let shared = VisualizerWarmer()
-  private var webView: WKWebView?
-  
-  func warmup() {
-    print("VisualizerWarmer: Warming up...")
-    let config = WKWebViewConfiguration()
-    config.preferences.setValue(true, forKey: "allowFileAccessFromFileURLs")
-    config.setValue(true, forKey: "allowUniversalAccessFromFileURLs")
-    
-    // Create a hidden webview to trigger the process creation and file loading
-    let webView = VisualizerWebView(frame: .zero, configuration: config)
-    self.webView = webView
-    
-    if let indexURL = Bundle.main.url(forResource: "index", withExtension: "html") {
-      webView.loadFileURL(indexURL, allowingReadAccessTo: indexURL.deletingLastPathComponent())
-    }
-    
-    // Keep it alive for a moment to ensure loading starts.
-    // We'll keep it for 10 seconds which should be plenty for the "first time" initialization to happen.
-    DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
-      print("VisualizerWarmer: Warmup complete, releasing temporary webview.")
-      self.webView = nil
-    }
-  }
-}
+import os
 
 // Host a web view that displays the Butterchurn-ios visualizer.
 // The visualizer index.html is modified from https://github.com/pxl-pshr/butterchurn-ios
@@ -70,9 +43,11 @@ class VisualizerWebView: WKWebView {
     super.didMoveToWindow()
     if window != nil {
       let success = becomeFirstResponder()
+      #if DEBUG
       if !success {
         print("VisualizerWebView: Could not become first responder")
       }
+      #endif
     }
   }
 }
@@ -86,8 +61,6 @@ struct VisualizerView: UIViewRepresentable {
   
   func makeUIView(context: Context) -> VisualizerWebView {
     let config = WKWebViewConfiguration()
-    config.preferences.setValue(true, forKey: "allowFileAccessFromFileURLs")
-    config.setValue(true, forKey: "allowUniversalAccessFromFileURLs")
     config.mediaTypesRequiringUserActionForPlayback = []
     config.allowsInlineMediaPlayback = true
     
@@ -95,9 +68,23 @@ struct VisualizerView: UIViewRepresentable {
     userContentController.add(context.coordinator, name: "keyHandler")
     userContentController.add(context.coordinator, name: "presetHandler")
     userContentController.add(context.coordinator, name: "closeViz")
+    
+    // Inject saved preset name before any scripts run to avoid race condition
+    if !lastPreset.isEmpty, let data = lastPreset.data(using: .utf8) {
+      let b64 = data.base64EncodedString()
+      let script = WKUserScript(
+        source: "window.initialPresetNameB64 = '\(b64)';",
+        injectionTime: .atDocumentStart,
+        forMainFrameOnly: true
+      )
+      userContentController.addUserScript(script)
+    }
+    
     config.userContentController = userContentController
     
     let webView = VisualizerWebView(frame: .zero, configuration: config)
+    webView.scrollView.contentInsetAdjustmentBehavior = .never
+    webView.scrollView.isScrollEnabled = false
     webView.isOpaque = false
     if #available(iOS 16.4, macOS 13.3, *) {
       webView.isInspectable = true
@@ -112,20 +99,9 @@ struct VisualizerView: UIViewRepresentable {
     }
     
     if let indexURL = Bundle.main.url(forResource: "index", withExtension: "html") {
+      #if DEBUG
       print("Visualizer: loading index.html from \(indexURL)")
-      
-      // Debug: Check for JS files
-      if let jsURL = Bundle.main.url(forResource: "butterchurn", withExtension: "js") {
-        print("Visualizer: Found butterchurn.js at \(jsURL)")
-      } else {
-        print("ERROR: butterchurn.js NOT found in bundle")
-      }
-      if let presetsURL = Bundle.main.url(forResource: "butterchurn-presets", withExtension: "js") {
-        print("Visualizer: Found butterchurn-presets.js at \(presetsURL)")
-      } else {
-        print("ERROR: butterchurn-presets.js NOT found in bundle")
-      }
-      
+      #endif
       webView.loadFileURL(indexURL, allowingReadAccessTo: indexURL.deletingLastPathComponent())
     }
     
@@ -143,11 +119,12 @@ struct VisualizerView: UIViewRepresentable {
   // UIViewRepresentable
   static func dismantleUIView(_ uiView: VisualizerWebView, coordinator: Coordinator) {
     coordinator.stopAudioTap()
+    uiView.configuration.userContentController.removeAllScriptMessageHandlers()
   }
   
   // UIViewRepresentable
   func makeCoordinator() -> Coordinator {
-    Coordinator(synth: synth, initialPreset: lastPreset)
+    Coordinator(synth: synth)
   }
   
   // UIViewRepresentable associated type
@@ -155,14 +132,13 @@ struct VisualizerView: UIViewRepresentable {
     let synth: SyntacticSynth
     weak var webView: WKWebView?
     var parent: VisualizerView?
-    var initialPreset: String
     
     var pendingSamples: [Float] = []
     let sendThreshold = 1024 // Accumulate about 2 tap buffers before sending
+    private let samplesLock = OSAllocatedUnfairLock()
     
-    init(synth: SyntacticSynth, initialPreset: String) {
+    init(synth: SyntacticSynth) {
       self.synth = synth
-      self.initialPreset = initialPreset
     }
     
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
@@ -198,18 +174,14 @@ struct VisualizerView: UIViewRepresentable {
     }
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+      #if DEBUG
       print("Visualizer webview finished loading index.html")
-      // Inject the initial preset name safely using Base64
-      if !initialPreset.isEmpty {
-        if let data = initialPreset.data(using: .utf8) {
-          let b64 = data.base64EncodedString()
-          let script = "window.initialPresetNameB64 = '\(b64)';"
-          webView.evaluateJavaScript(script, completionHandler: nil)
-        }
-      }
+      #endif
     }
     func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
+      #if DEBUG
       print("Visualizer webview failed loading: \(error.localizedDescription)")
+      #endif
     }
     
     func setupAudioTap(webView: WKWebView) {
@@ -219,19 +191,16 @@ struct VisualizerView: UIViewRepresentable {
       synth.engine.installTap { [weak self] samples in
         guard let self = self else { return }
         
-        // Append to buffer
-        // Data is Interleaved Stereo [L, R, L, R...]
-        self.pendingSamples.append(contentsOf: samples)
-        
-        // Only send if we have enough data to make the bridge call worth it
-        // Threshold 1024 floats = 512 stereo frames
-        if self.pendingSamples.count >= self.sendThreshold {
-          let samplesToSend = self.pendingSamples
+        let samplesToSend: [Float]? = self.samplesLock.withLock {
+          self.pendingSamples.append(contentsOf: samples)
+          guard self.pendingSamples.count >= self.sendThreshold else { return nil }
+          let batch = self.pendingSamples
           self.pendingSamples.removeAll(keepingCapacity: true)
-          
-          // Convert array to JSON string
+          return batch
+        }
+        
+        if let samplesToSend {
           let jsonString = samplesToSend.description
-          
           DispatchQueue.main.async {
             self.webView?.evaluateJavaScript("if(window.pushSamples) window.pushSamples(\(jsonString))", completionHandler: nil)
           }

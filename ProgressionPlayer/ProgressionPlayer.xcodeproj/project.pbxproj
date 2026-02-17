@@ -11,7 +11,6 @@
 		9B0F28872ED00401004C0884 /* AudioKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9B0F28862ED00401004C0884 /* AudioKitUI */; };
 		9B137E812EE8CA6D00DE0E15 /* All-My-Loving.mid in Resources */ = {isa = PBXBuildFile; fileRef = 9B137E802EE8CA6D00DE0E15 /* All-My-Loving.mid */; };
 		9B1864642E772E37006147D8 /* Overture in Frameworks */ = {isa = PBXBuildFile; productRef = 9B1864632E772E37006147D8 /* Overture */; };
-		9B2E13C52F3BE940006CD5E6 /* perfstack.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9B2E13C42F3BE933006CD5E6 /* perfstack.txt */; };
 		9B7430A02ECFA5640017DE7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B7430922ECFA5640017DE7D /* Assets.xcassets */; };
 		9B79241C2F2A8A6000A51087 /* presets in Resources */ = {isa = PBXBuildFile; fileRef = 9B79241B2F2A8A6000A51087 /* presets */; };
 		9B935B962EDE0F1800600E63 /* D_Loop_01.mid in Resources */ = {isa = PBXBuildFile; fileRef = 9B935B942EDE0F1800600E63 /* D_Loop_01.mid */; };
@@ -19,8 +18,6 @@
 		9BA522562EB0FE8F00ECF215 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9BA522552EB0FE8F00ECF215 /* AudioKit */; };
 		9BA5B1D42F14636B00857520 /* BachInvention1.mid in Resources */ = {isa = PBXBuildFile; fileRef = 9BA5B1D32F14636B00857520 /* BachInvention1.mid */; };
 		9BCED9112F1FD0A30029ED1B /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 9BCED9102F1FD0A30029ED1B /* index.html */; };
-		9BCED9142F1FD2E30029ED1B /* butterchurn-presets.js in Resources */ = {isa = PBXBuildFile; fileRef = 9BCED9132F1FD2E30029ED1B /* butterchurn-presets.js */; };
-		9BCED9152F1FD2E30029ED1B /* butterchurn.js in Resources */ = {isa = PBXBuildFile; fileRef = 9BCED9122F1FD2E30029ED1B /* butterchurn.js */; };
 		9BCED9902F246B150029ED1B /* Orbital.icon in Resources */ = {isa = PBXBuildFile; fileRef = 9BCED98F2F246B150029ED1B /* Orbital.icon */; };
 		9BD1B7002E8B08D000C718F1 /* Tonic in Frameworks */ = {isa = PBXBuildFile; productRef = 9BD1B6FF2E8B08D000C718F1 /* Tonic */; };
 		9BD1D93B2F42C37F0054692B /* baroque_chords.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BD1D93A2F42C37F0054692B /* baroque_chords.json */; };
@@ -50,7 +47,6 @@
 		9B00F9D82F42402E0008058E /* AGENTS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = AGENTS.md; path = ../AGENTS.md; sourceTree = SOURCE_ROOT; };
 		9B137E802EE8CA6D00DE0E15 /* All-My-Loving.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = "All-My-Loving.mid"; sourceTree = "<group>"; };
 		9B1F016F2EB95F0A00C5110F /* Note.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = Note.icon; sourceTree = "<group>"; };
-		9B2E13C42F3BE933006CD5E6 /* perfstack.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = perfstack.txt; sourceTree = "<group>"; };
 		9B7430922ECFA5640017DE7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B79241B2F2A8A6000A51087 /* presets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = presets; path = Resources/presets; sourceTree = "<group>"; };
 		9B935B942EDE0F1800600E63 /* D_Loop_01.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = D_Loop_01.mid; sourceTree = "<group>"; };
@@ -61,8 +57,6 @@
 		9BC0FCB42E704EAA00472A5A /* ProgressionPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProgressionPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC0FCBE2E704EAA00472A5A /* ProgressionPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProgressionPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BCED9102F1FD0A30029ED1B /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
-		9BCED9122F1FD2E30029ED1B /* butterchurn.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = butterchurn.js; sourceTree = "<group>"; };
-		9BCED9132F1FD2E30029ED1B /* butterchurn-presets.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "butterchurn-presets.js"; sourceTree = "<group>"; };
 		9BCED98F2F246B150029ED1B /* Orbital.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = Orbital.icon; sourceTree = "<group>"; };
 		9BD1D93A2F42C37F0054692B /* baroque_chords.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = baroque_chords.json; sourceTree = "<group>"; };
 		9BD1D93C2F42C37F0054692B /* aurora_arpeggio.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = aurora_arpeggio.json; sourceTree = "<group>"; };
@@ -144,7 +138,6 @@
 		9B935B932EDE0F0600600E63 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				9B2E13C42F3BE933006CD5E6 /* perfstack.txt */,
 				9B7430922ECFA5640017DE7D /* Assets.xcassets */,
 				9BFFD97E2E7DA94B00E7CB55 /* beat.aiff */,
 				9B1F016F2EB95F0A00C5110F /* Note.icon */,
@@ -153,8 +146,6 @@
 				9B137E802EE8CA6D00DE0E15 /* All-My-Loving.mid */,
 				9BA5B1D32F14636B00857520 /* BachInvention1.mid */,
 				9BCED9102F1FD0A30029ED1B /* index.html */,
-				9BCED9122F1FD2E30029ED1B /* butterchurn.js */,
-				9BCED9132F1FD2E30029ED1B /* butterchurn-presets.js */,
 				9BCED98F2F246B150029ED1B /* Orbital.icon */,
 				9B7924162F2A895000A51087 /* presets */,
 				9BDE46DF2F31351900BD36C5 /* samples */,
@@ -343,9 +334,6 @@
 				9B79241C2F2A8A6000A51087 /* presets in Resources */,
 				9B00F9D92F42402E0008058E /* AGENTS.md in Resources */,
 				9B935B962EDE0F1800600E63 /* D_Loop_01.mid in Resources */,
-				9B2E13C52F3BE940006CD5E6 /* perfstack.txt in Resources */,
-				9BCED9142F1FD2E30029ED1B /* butterchurn-presets.js in Resources */,
-				9BCED9152F1FD2E30029ED1B /* butterchurn.js in Resources */,
 				9B137E812EE8CA6D00DE0E15 /* All-My-Loving.mid in Resources */,
 				9BCED9902F246B150029ED1B /* Orbital.icon in Resources */,
 				9B935B972EDE0F1800600E63 /* MSLFSanctus.mid in Resources */,
