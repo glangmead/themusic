@@ -23,13 +23,19 @@
       --accent-dim: rgba(0, 255, 136, 0.2);
     }
     
+    html {
+      background: var(--bg);
+      height: 100%;
+    }
+
     body {
       font-family: monospace;
       background: var(--bg);
       color: var(--text);
       overflow: hidden;
-      height: 100vh;
-      height: 100dvh;
+      height: 100%;
+      min-height: 100vh;
+      min-height: 100dvh;
       user-select: none;
       -webkit-user-select: none;
     }
@@ -1849,12 +1855,30 @@
       registerProcessor('audio-pump', AudioPumpProcessor);
     `;
 
-    // Receive samples from Swift
+    // Receive samples from Swift — store waveform for direct render injection
+    // This bypasses the Web Audio graph entirely, avoiding AudioContext suspension issues.
+    let latestWaveform = null;
     window.pushSamples = (samples) => {
-        if (audioWorkletNode) {
-            // Forward directly to the background thread
-            audioWorkletNode.port.postMessage(samples);
+        // Convert interleaved float samples to Uint8Array waveform for Butterchurn
+        // Butterchurn expects unsigned bytes (0-255, 128 = zero crossing)
+        const len = Math.min(Math.floor(samples.length / 2), 1024);
+        const mono = new Uint8Array(len);
+        const left = new Uint8Array(len);
+        const right = new Uint8Array(len);
+        for (let i = 0; i < len; i++) {
+            const l = samples[i * 2];
+            const r = samples[i * 2 + 1];
+            left[i] = Math.max(0, Math.min(255, Math.round((l + 1.0) * 127.5)));
+            right[i] = Math.max(0, Math.min(255, Math.round((r + 1.0) * 127.5)));
+            mono[i] = Math.max(0, Math.min(255, Math.round(((l + r) * 0.5 + 1.0) * 127.5)));
         }
+        latestWaveform = { timeByteArray: mono, timeByteArrayL: left, timeByteArrayR: right };
+    };
+
+    // Called from Swift when the view reappears
+    window.resumeAudio = () => {
+        // Clear stale waveform so visualizer doesn't render old data
+        latestWaveform = null;
     };
     
     // Debug logger
@@ -1865,41 +1889,8 @@
         // errorMsg.innerHTML += msg + '<br>';
     }
 
-    // Cleanup on page unload/hide
-    window.addEventListener('pagehide', () => {
-        debugLog("Page hiding/unloading, cleaning up...");
-        
-        // Explicitly lose WebGL context to free resources
-        if (canvas) {
-            try {
-                // Try to get the context we created (webgl2 or webgl)
-                // Note: We can't easily get the specific context handle butterchurn uses, 
-                // but we can try to get it from the canvas if it exposes it, or just create a temp one to trigger cleanup?
-                // Actually, butterchurn attaches the context to the canvas.
-                // We'll try to get the extension from a context on the canvas.
-                const gl = canvas.getContext('webgl2') || canvas.getContext('webgl');
-                if (gl) {
-                    const ext = gl.getExtension('WEBGL_lose_context');
-                    if (ext) {
-                        debugLog("Forcing WebGL context loss");
-                        ext.loseContext();
-                    }
-                }
-            } catch(e) {
-                console.error("Error losing context:", e);
-            }
-        }
-
-        if (audioContext) {
-            audioContext.close().then(() => {
-                debugLog("AudioContext closed.");
-            });
-        }
-        // Force garbage collection of heavy objects if possible
-        if (visualizer) visualizer = null;
-        presets = null;
-        audioWorkletNode = null;
-    });
+    // Note: No pagehide cleanup — the WKWebView is kept alive persistently
+    // across show/hide cycles to preserve the WebGL context and AudioWorklet.
 
     // Initialize presets (Custom UI)
     function initPresets() {
@@ -2068,7 +2059,11 @@
       }
       
       if (visualizer) {
-        visualizer.render();
+        if (latestWaveform) {
+          visualizer.render({ audioLevels: latestWaveform });
+        } else {
+          visualizer.render();
+        }
       }
       animationId = requestAnimationFrame(render);
     }

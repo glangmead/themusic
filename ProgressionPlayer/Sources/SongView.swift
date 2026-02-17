@@ -158,17 +158,13 @@ struct SongView: View {
           seq?.rewind()
         }
       }
-      .scaleEffect(isShowingVisualizer ? 0.85 : 1.0)
-      .opacity(isShowingVisualizer ? 0.0 : 1.0)
       .toolbar(isShowingVisualizer ? .hidden : .visible, for: .tabBar)
       .toolbar(isShowingVisualizer ? .hidden : .visible, for: .navigationBar)
       
-      if isShowingVisualizer {
-        VisualizerView(synth: synth, isPresented: $isShowingVisualizer)
-          .ignoresSafeArea()
-          .transition(.opacity.animation(.easeInOut(duration: 0.5)))
-          .zIndex(1)
-      }
+    }
+    .fullScreenCover(isPresented: $isShowingVisualizer) {
+      VisualizerView(synth: synth, isPresented: $isShowingVisualizer)
+        .ignoresSafeArea()
     }
     .onAppear {
       if seq == nil {
