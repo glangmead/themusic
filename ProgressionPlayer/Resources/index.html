@@ -42,11 +42,13 @@
     
     #canvas {
       position: fixed;
-      top: 0;
-      left: 0;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       width: 100%;
       height: 100%;
       z-index: 0;
+      object-fit: cover;
     }
     
     .controls {
@@ -2026,18 +2028,22 @@
     }
     
     // Resize handler
+    // Render at square resolution using the larger dimension so that
+    // Milkdrop presets (designed for landscape) keep circles as circles.
+    // The canvas CSS uses object-fit:cover to crop the excess.
     function resize() {
       const dpr = Math.min(window.devicePixelRatio || 1, 2);
       const width = window.innerWidth;
       const height = window.innerHeight;
+      const maxDim = Math.max(width, height);
       
-      canvas.width = width * dpr;
-      canvas.height = height * dpr;
+      canvas.width = maxDim * dpr;
+      canvas.height = maxDim * dpr;
       canvas.style.width = width + 'px';
       canvas.style.height = height + 'px';
       
       if (visualizer) {
-        visualizer.setRendererSize(width * dpr, height * dpr);
+        visualizer.setRendererSize(maxDim * dpr, maxDim * dpr);
       }
     }
     
