@@ -15,6 +15,7 @@ import os
 // The JS files are inlined into index.html to avoid cross-origin issues in WKWebView.
 class VisualizerWebView: WKWebView {
   var onEscape: (() -> Void)?
+  var onDidMoveToWindow: (() -> Void)?
 
   // Force the web view to ignore safe area insets so it fills the entire screen
   override var safeAreaInsets: UIEdgeInsets { .zero }
@@ -47,6 +48,7 @@ class VisualizerWebView: WKWebView {
         print("VisualizerWebView: Could not become first responder")
       }
       #endif
+      onDidMoveToWindow?()
     }
   }
 }
@@ -98,6 +100,7 @@ class VisualizerHolder: NSObject, WKNavigationDelegate, WKScriptMessageHandler {
     wv.backgroundColor = .black
     wv.navigationDelegate = self
     wv.onEscape = { [weak self] in self?.onCloseRequested?() }
+    wv.onDidMoveToWindow = { [weak self] in self?.injectSafeAreaTop() }
     
     self.webView = wv
     loadPage()
@@ -134,9 +137,28 @@ class VisualizerHolder: NSObject, WKNavigationDelegate, WKScriptMessageHandler {
     webView.evaluateJavaScript("if(window.setSpeed) window.setSpeed(\(speed))", completionHandler: nil)
   }
   
+  /// Inject the real safe-area-inset-top so the preset overlay can avoid the status bar.
+  /// (Our WKWebView subclass returns .zero for safeAreaInsets so the canvas fills the screen,
+  /// which means env(safe-area-inset-top) is always 0 in CSS.)
+  func injectSafeAreaTop() {
+    let window = webView.window ?? UIApplication.shared.connectedScenes
+            .compactMap({ $0 as? UIWindowScene }).first?.windows.first
+    let top = window?.safeAreaInsets.top ?? 0
+    
+    let js = """
+    (function() {
+      var el = document.getElementById('presetOverlay');
+      if (el) { el.style.top = '\(Int(top))px'; }
+      window._safeAreaTop = \(Int(top));
+    })()
+    """
+    webView.evaluateJavaScript(js, completionHandler: nil)
+  }
+  
   func installTapIfNeeded() {
     webView.evaluateJavaScript("if(window.resumeAudio) window.resumeAudio()", completionHandler: nil)
     sendingEnabled.withLock { $0 = true }
+    injectSafeAreaTop()
     
     guard !tapInstalled else { return }
     tapInstalled = true
@@ -171,6 +193,7 @@ class VisualizerHolder: NSObject, WKNavigationDelegate, WKScriptMessageHandler {
   
   func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
     isLoaded = true
+    injectSafeAreaTop()
     #if DEBUG
     print("Visualizer webview finished loading index.html")
     #endif
