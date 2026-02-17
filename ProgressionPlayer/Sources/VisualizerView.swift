@@ -68,6 +68,7 @@ class VisualizerHolder: NSObject, WKNavigationDelegate, WKScriptMessageHandler {
   
   // Callbacks wired by the SwiftUI layer
   var onPresetChange: ((String) -> Void)?
+  var onSpeedChange: ((Double) -> Void)?
   var onCloseRequested: (() -> Void)?
   
   init(synth: SyntacticSynth) {
@@ -82,6 +83,7 @@ class VisualizerHolder: NSObject, WKNavigationDelegate, WKScriptMessageHandler {
     ucc.add(self, name: "keyHandler")
     ucc.add(self, name: "presetHandler")
     ucc.add(self, name: "closeViz")
+    ucc.add(self, name: "speedHandler")
     config.userContentController = ucc
     
     let wv = VisualizerWebView(frame: .zero, configuration: config)
@@ -101,19 +103,23 @@ class VisualizerHolder: NSObject, WKNavigationDelegate, WKScriptMessageHandler {
     loadPage()
   }
   
-  /// Inject the saved preset and load index.html (only done once).
-  func loadPage(presetName: String = "") {
+  /// Inject the saved preset/speed and load index.html (only done once).
+  func loadPage(presetName: String = "", speed: Double = 1.0) {
     guard !isLoaded else { return }
     
+    var initJS = ""
     if !presetName.isEmpty, let data = presetName.data(using: .utf8) {
       let b64 = data.base64EncodedString()
-      let script = WKUserScript(
-        source: "window.initialPresetNameB64 = '\(b64)';",
-        injectionTime: .atDocumentStart,
-        forMainFrameOnly: true
-      )
-      webView.configuration.userContentController.addUserScript(script)
+      initJS += "window.initialPresetNameB64 = '\(b64)';\n"
     }
+    initJS += "window.initialSpeed = \(speed);"
+    
+    let script = WKUserScript(
+      source: initJS,
+      injectionTime: .atDocumentStart,
+      forMainFrameOnly: true
+    )
+    webView.configuration.userContentController.addUserScript(script)
     
     if let indexURL = Bundle.main.url(forResource: "index", withExtension: "html") {
       #if DEBUG
@@ -121,6 +127,11 @@ class VisualizerHolder: NSObject, WKNavigationDelegate, WKScriptMessageHandler {
       #endif
       webView.loadFileURL(indexURL, allowingReadAccessTo: indexURL.deletingLastPathComponent())
     }
+  }
+  
+  /// Update speed on an already-loaded page.
+  func setSpeed(_ speed: Double) {
+    webView.evaluateJavaScript("if(window.setSpeed) window.setSpeed(\(speed))", completionHandler: nil)
   }
   
   func installTapIfNeeded() {
@@ -183,6 +194,8 @@ class VisualizerHolder: NSObject, WKNavigationDelegate, WKScriptMessageHandler {
       playKey(key: key, type: type)
     } else if message.name == "presetHandler", let presetName = message.body as? String {
       onPresetChange?(presetName)
+    } else if message.name == "speedHandler", let speed = message.body as? Double {
+      onSpeedChange?(speed)
     } else if message.name == "closeViz" {
       DispatchQueue.main.async { self.onCloseRequested?() }
     }
@@ -208,6 +221,7 @@ struct VisualizerView: UIViewRepresentable {
   var synth: SyntacticSynth
   @Binding var isPresented: Bool
   @AppStorage("lastVisualizerPreset") private var lastPreset: String = ""
+  @AppStorage("lastVisualizerSpeed") private var lastSpeed: Double = 1.0
   
   /// Single persistent holder — survives fullScreenCover dismiss/re-present cycles.
   private static var persistentHolder: VisualizerHolder?
@@ -218,7 +232,7 @@ struct VisualizerView: UIViewRepresentable {
     }
     // Synth changed or first use — create fresh holder
     let h = VisualizerHolder(synth: synth)
-    h.loadPage(presetName: lastPreset)
+    h.loadPage(presetName: lastPreset, speed: lastSpeed)
     Self.persistentHolder = h
     return h
   }
@@ -230,6 +244,9 @@ struct VisualizerView: UIViewRepresentable {
     h.onPresetChange = { [self] name in
       DispatchQueue.main.async { self.lastPreset = name }
     }
+    h.onSpeedChange = { [self] speed in
+      DispatchQueue.main.async { self.lastSpeed = speed }
+    }
     h.onCloseRequested = { [self] in
       DispatchQueue.main.async {
         withAnimation(.easeInOut(duration: 0.4)) {
@@ -239,6 +256,8 @@ struct VisualizerView: UIViewRepresentable {
     }
     
     h.installTapIfNeeded()
+    // Restore saved speed on reopen (page already loaded for persistent holder)
+    h.setSpeed(lastSpeed)
     return h.webView
   }
   
@@ -246,6 +265,9 @@ struct VisualizerView: UIViewRepresentable {
     let h = context.coordinator.holder
     h?.onPresetChange = { [self] name in
       DispatchQueue.main.async { self.lastPreset = name }
+    }
+    h?.onSpeedChange = { [self] speed in
+      DispatchQueue.main.async { self.lastSpeed = speed }
     }
     h?.onCloseRequested = { [self] in
       DispatchQueue.main.async {
