@@ -31,7 +31,7 @@ struct SongCell: View {
 
         // Song name
         Text(song.name)
-          .font(.headline)
+          .font(.largeTitle).fontWeight(.bold)
 
         Spacer()
       }
@@ -42,7 +42,7 @@ struct SongCell: View {
           // TODO: Pattern editor
         } label: {
           Label("Pattern", systemImage: "waveform")
-            .font(.caption)
+            .font(.subheadline)
         }
         .buttonStyle(.bordered)
         .disabled(true)
@@ -54,7 +54,7 @@ struct SongCell: View {
               .environment(playbackState)
           } label: {
             Label("Presets", systemImage: "slider.horizontal.3")
-              .font(.caption)
+              .font(.subheadline)
           }
           .buttonStyle(.bordered)
         }
@@ -64,13 +64,17 @@ struct SongCell: View {
           // TODO: Spatial editor
         } label: {
           Label("Spatial", systemImage: "globe")
-            .font(.caption)
+            .font(.subheadline)
         }
         .buttonStyle(.bordered)
         .disabled(true)
       }
     }
     .padding()
+    .contentShape(Rectangle())
+    .onTapGesture {
+      playbackState?.togglePlayback()
+    }
     .background(Color(.secondarySystemBackground))
     .clipShape(RoundedRectangle(cornerRadius: 12))
     .onAppear {

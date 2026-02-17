@@ -108,8 +108,13 @@ private struct PresetFormContent: View {
           Button {
             playbackState.togglePlayback()
           } label: {
-            Image(systemName: playbackState.isPlaying ? "pause.fill" : "play.fill")
+            Image(systemName: playbackState.isPlaying ? "stop.fill" : "play.fill")
+              .foregroundStyle(.white)
+              .frame(width: 32, height: 32)
+              .background(playbackState.isPlaying ? Color.red : Color.green)
+              .clipShape(RoundedRectangle(cornerRadius: 6))
           }
+          .buttonStyle(.plain)
         }
       }
       ToolbarItem {
