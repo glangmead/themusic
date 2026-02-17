@@ -64,11 +64,6 @@
 			path = ProgressionPlayerTests;
 			sourceTree = "<group>";
 		};
-		9BC0FCC12E704EAA00472A5A /* ProgressionPlayerUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ProgressionPlayerUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +118,6 @@
 				9BFFD9802E7DABD200E7CB55 /* ProgressionPlayer.entitlements */,
 				9BC0FCA92E704EA900472A5A /* Sources */,
 				9BC0FCB72E704EAA00472A5A /* ProgressionPlayerTests */,
-				9BC0FCC12E704EAA00472A5A /* ProgressionPlayerUITests */,
 				9BC0FCD42E7055FE00472A5A /* Frameworks */,
 				9BC0FCA82E704EA900472A5A /* Products */,
 			);
@@ -210,9 +204,6 @@
 			);
 			dependencies = (
 				9BC0FCC02E704EAA00472A5A /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				9BC0FCC12E704EAA00472A5A /* ProgressionPlayerUITests */,
 			);
 			name = ProgressionPlayerUITests;
 			packageProductDependencies = (
