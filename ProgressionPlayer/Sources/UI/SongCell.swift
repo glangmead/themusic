@@ -11,27 +11,20 @@ struct SongCell: View {
     @Environment(SyntacticSynth.self) private var synth
     let song: Song
 
-    @State private var isPlaying = false
-    @State private var playbackTask: Task<Void, Error>? = nil
-    @State private var musicPattern: MusicPattern? = nil
-    @State private var patternSpatialPreset: SpatialPreset? = nil
+    @State private var playbackState: SongPlaybackState? = nil
 
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
             HStack(spacing: 12) {
                 // Play/Stop button
                 Button {
-                    if isPlaying {
-                        stopPlayback()
-                    } else {
-                        startPlayback()
-                    }
+                    ensurePlaybackState().togglePlayback()
                 } label: {
-                    Image(systemName: isPlaying ? "stop.fill" : "play.fill")
+                    Image(systemName: playbackState?.isPlaying == true ? "stop.fill" : "play.fill")
                         .font(.title2)
                         .foregroundStyle(.white)
                         .frame(width: 48, height: 48)
-                        .background(isPlaying ? Color.red : Color.green)
+                        .background(playbackState?.isPlaying == true ? Color.red : Color.green)
                         .clipShape(RoundedRectangle(cornerRadius: 8))
                 }
                 .buttonStyle(.plain)
@@ -56,7 +49,7 @@ struct SongCell: View {
 
                 // Presets button
                 NavigationLink {
-                    SongPresetListView(song: song)
+                    SongPresetListView(song: song, playbackState: ensurePlaybackState())
                 } label: {
                     Label("Presets", systemImage: "slider.horizontal.3")
                         .font(.caption)
@@ -79,36 +72,11 @@ struct SongCell: View {
         .clipShape(RoundedRectangle(cornerRadius: 12))
     }
 
-    private func startPlayback() {
-        let patternSpec = Bundle.main.decode(
-            PatternSyntax.self,
-            from: song.patternFileName,
-            subdirectory: "patterns"
-        )
-        let presetFileName = patternSpec.presetName + ".json"
-        let presetSpec = Bundle.main.decode(
-            PresetSyntax.self,
-            from: presetFileName,
-            subdirectory: "presets"
-        )
-        let (pattern, sp) = patternSpec.compile(
-            presetSpec: presetSpec,
-            engine: synth.engine
-        )
-        musicPattern = pattern
-        patternSpatialPreset = sp
-        isPlaying = true
-        playbackTask = Task.detached {
-            await pattern.play()
-        }
-    }
-
-    private func stopPlayback() {
-        playbackTask?.cancel()
-        playbackTask = nil
-        patternSpatialPreset?.cleanup()
-        patternSpatialPreset = nil
-        musicPattern = nil
-        isPlaying = false
+    @discardableResult
+    private func ensurePlaybackState() -> SongPlaybackState {
+        if let state = playbackState { return state }
+        let state = SongPlaybackState(song: song, engine: synth.engine)
+        playbackState = state
+        return state
     }
 }

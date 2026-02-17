@@ -104,7 +104,7 @@ struct SongView: View {
           }
         ForEach(["D_Loop_01", "MSLFSanctus", "All-My-Loving", "BachInvention1"], id: \.self) { song in
           Button("Play \(song)") {
-            songURL = Bundle.main.url(forResource: song, withExtension: "mid")
+            songURL = Bundle.main.url(forResource: song, withExtension: "mid", subdirectory: "patterns")
             seq?.playURL(url: songURL!)
           }
         }

@@ -12,14 +12,14 @@ struct AppView: View {
 
   var body: some View {
     TabView {
+      Tab("Orbital", systemImage: "circle.grid.3x3") {
+        OrbitalView()
+      }
       Tab("Theory", systemImage: "atom") {
         TheoryView()
       }
       Tab("Song", systemImage: "document") {
         SongView()
-      }
-      Tab("Orbital", systemImage: "circle.grid.3x3") {
-        OrbitalView()
       }
     }
     

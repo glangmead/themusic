@@ -11,6 +11,8 @@ import SwiftUI
 struct PresetFormView: View {
     @Environment(SyntacticSynth.self) private var synth
     let presetSpec: PresetSyntax
+    @Bindable var playbackState: SongPlaybackState
+    @State private var isShowingVisualizer = false
 
     var body: some View {
         @Bindable var synth = synth
@@ -110,6 +112,28 @@ struct PresetFormView: View {
             }
         }
         .navigationTitle(presetSpec.name)
+        .toolbar {
+            ToolbarItem {
+                Button {
+                    playbackState.togglePlayback()
+                } label: {
+                    Image(systemName: playbackState.isPlaying ? "pause.fill" : "play.fill")
+                }
+            }
+            ToolbarItem {
+                Button {
+                    withAnimation(.easeInOut(duration: 0.4)) {
+                        isShowingVisualizer = true
+                    }
+                } label: {
+                    Label("Visualizer", systemImage: "sparkles.tv")
+                }
+            }
+        }
+        .fullScreenCover(isPresented: $isShowingVisualizer) {
+            VisualizerView(synth: synth, isPresented: $isShowingVisualizer)
+                .ignoresSafeArea()
+        }
         .onAppear {
             synth.loadPreset(presetSpec)
         }

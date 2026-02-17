@@ -10,6 +10,7 @@ import SwiftUI
 struct OrbitalView: View {
     @Environment(SyntacticSynth.self) private var synth
     @Environment(SongLibrary.self) private var library
+    @State private var isShowingVisualizer = false
 
     var body: some View {
         NavigationStack {
@@ -22,6 +23,21 @@ struct OrbitalView: View {
                 .padding()
             }
             .navigationTitle("Orbital")
+            .toolbar {
+                ToolbarItem {
+                    Button {
+                        withAnimation(.easeInOut(duration: 0.4)) {
+                            isShowingVisualizer = true
+                        }
+                    } label: {
+                        Label("Visualizer", systemImage: "sparkles.tv")
+                    }
+                }
+            }
+        }
+        .fullScreenCover(isPresented: $isShowingVisualizer) {
+            VisualizerView(synth: synth, isPresented: $isShowingVisualizer)
+                .ignoresSafeArea()
         }
     }
 }
