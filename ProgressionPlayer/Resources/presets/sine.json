@@ -22,7 +22,8 @@
                     { "identity": {}}  
                    ]}},
                    { "prod": { "of": [
-                      { "const": {"name": "vibratoAmp", "val": 0} },
+                     { "const": {"name": "freq", "val": 300} },
+                    { "const": {"name": "vibratoAmp", "val": 0} },
                       { "compose": { "arrows": [
                          { "prod": { "of": [
                            { "const": {"val": 1, "name": "vibratoFreq"} },
@@ -55,7 +56,8 @@
                     ]}
                    },
                    { "prod": { "of": [
-                       { "const": {"name": "vibratoAmp", "val": 0} },
+                      { "const": {"name": "freq", "val": 300} },
+                      { "const": {"name": "vibratoAmp", "val": 0} },
                        { "compose": { "arrows": [
                           { "prod": { "of": [
                             { "const": {"val": 1, "name": "vibratoFreq"} },
@@ -87,7 +89,8 @@
                      {"identity": {}} 
                    ]}},
                    { "prod": { "of": [
-                       { "const": {"name": "vibratoAmp", "val": 0} },
+                     { "const": {"name": "freq", "val": 300} },
+                    { "const": {"name": "vibratoAmp", "val": 0} },
                        { "compose": { "arrows": [
                           { "prod": { "of": [
                             { "const": {"val": 1, "name": "vibratoFreq"} },

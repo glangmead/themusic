@@ -1,0 +1,151 @@
+{
+ "name"   : "Warm Analog Pad",
+ "rose"   : {"freq": 0.15, "leafFactor": 3, "phase": 1.57, "amp": 5},
+ "effects": {"reverbPreset": 8, "delayTime": 0.4, "delayLowPassCutoff": 2000, "delayFeedback": 20, "reverbWetDryMix": 70, "delayWetDryMix": 25},
+ "arrow"  : {
+  "compose": { "arrows": [
+    {
+     "prod": { "of": [
+       {
+        "sum": { "of": [
+          {
+           "prod": { "of": [
+             { "const": {"val": 0.4, "name": "osc1Mix"} },
+             {
+              "compose": { "arrows": [
+                {
+                 "sum": { "of": [
+                   { "prod": { "of": [
+                    { "const": {"name": "freq", "val": 300} },
+                    { "constOctave": {"name": "osc1Octave", "val": 0} },
+                    { "constCent": {"name": "osc1CentDetune", "val": -7} },
+                    { "identity": {}}
+                   ]}},
+                   {"compose": {"arrows": [
+                   { "prod": { "of": [
+                       { "const": {"name": "freq", "val": 300} },
+                       { "const": {"name": "vibratoAmp", "val": 0.00015} },
+                       { "envelope": { "release": 0.1, "scale": 1, "name": "vibratoEnv", "attack": 5, "decay": 0.1, "sustain": 1 } },
+                       { "sum": { "of": [
+                         { "const": {"name": "vibratoOscShift", "val": 0.5}},
+                         { "prod": { "of": [
+                           { "const": {"name": "vibratoOscScale", "val": 0.5}},
+                           { "compose": { "arrows": [
+                             { "prod": { "of": [
+                               { "const": {"val": 4.5, "name": "vibratoFreq"} },
+                               { "identity": {} }
+                             ]}},
+                             { "osc": {"name": "vibratoOsc", "shape": "sineOsc", "width": { "const": {"name": "osc1VibWidth", "val": 1 } } } }
+                           ]}}
+                         ]}}
+                       ]}}
+                     ]}
+                   },
+                   {"control": {}}
+                   ]}}
+                 ]}},
+                { "osc": {"name": "osc1", "shape": "sawtoothOsc", "width": { "const": {"val": 1, "name": "osc1Width"} }} },
+                { "choruser": {"name": "osc1Choruser", "valueToChorus": "freq", "chorusCentRadius": 15, "chorusNumVoices": 5 } }
+              ]}}
+           ]}
+          },
+          {
+           "prod": { "of": [
+             { "const": {"val": 0.4, "name": "osc2Mix"} },
+             {
+              "compose": { "arrows": [
+                {
+                 "sum": { "of": [
+                   { "prod": { "of": [
+                     {"const": {"name": "freq", "val": 300} },
+                     {"constOctave": {"name": "osc2Octave", "val": 0} },
+                     {"constCent": {"name": "osc2CentDetune", "val": 7} },
+                     {"identity": {}}
+                   ]}},
+                   {"compose": {"arrows": [
+                   { "prod": { "of": [
+                       { "const": {"name": "freq", "val": 300} },
+                       { "const": {"name": "vibratoAmp", "val": 0.00015} },
+                       { "envelope": { "release": 0.1, "scale": 1, "name": "vibratoEnv", "attack": 5, "decay": 0.1, "sustain": 1 } },
+                       { "sum": { "of": [
+                         { "const": {"name": "vibratoOscShift", "val": 0.5}},
+                         { "prod": { "of": [
+                           { "const": {"name": "vibratoOscScale", "val": 0.5}},
+                           { "compose": { "arrows": [
+                             { "prod": { "of": [
+                               { "const": {"val": 4.5, "name": "vibratoFreq"} },
+                               { "identity": {} }
+                             ]}},
+                             { "osc": {"name": "vibratoOsc", "shape": "sineOsc", "width": { "const": {"name": "osc2VibWidth", "val": 1 } } } }
+                           ]}}
+                         ]}}
+                       ]}}
+                     ]}
+                   },
+                   {"control": {}}
+                   ]}}
+                 ]}
+                },
+                { "osc": {"name": "osc2", "shape": "sawtoothOsc", "width": { "const": {"name": "osc2Width", "val": 1} }} },
+                { "choruser": { "name": "osc2Choruser", "valueToChorus": "freq", "chorusCentRadius": 10, "chorusNumVoices": 3 } }
+              ]}
+             }
+           ]}
+          },
+          {
+           "prod": { "of": [
+             { "const": {"val": 0.2, "name": "osc3Mix"} },
+             {
+              "compose": { "arrows": [
+                {
+                 "sum": { "of": [
+                   { "prod": { "of": [
+                     { "const": {"name": "freq", "val": 300} },
+                     { "constOctave": {"name": "osc3Octave", "val": -1} },
+                     { "constCent": {"name": "osc3CentDetune", "val": 0} },
+                     { "identity": {}}
+                   ]}},
+                   { "prod": { "of": [
+                       { "const": {"name": "freq", "val": 300} },
+                       { "const": {"name": "vibratoAmp", "val": 0.00015} },
+                       { "compose": { "arrows": [
+                          { "prod": { "of": [
+                            { "const": {"val": 4.5, "name": "vibratoFreq"} },
+                            { "identity": {} }
+                          ]}},
+                          { "osc": {"name": "vibratoOsc", "shape": "sineOsc", "width": { "const": {"name": "osc3VibWidth", "val": 1} }} }
+                       ]}}
+                     ]}
+                    }
+                 ]}
+                },
+                { "osc": {"name": "osc3", "shape": "triangleOsc", "width": { "const": {"name": "osc3Width", "val": 1} }} },
+                { "choruser": { "name": "osc3Choruser", "valueToChorus": "freq", "chorusCentRadius": 0, "chorusNumVoices": 1} }
+               ]
+              }
+             }
+           ]}
+          }
+        ]}
+       },
+       { "envelope": { "decay": 1.0, "sustain": 0.85, "attack": 1.5, "name": "ampEnv", "release": 2.5, "scale": 1 } }
+      ]}
+    },
+    {
+     "lowPassFilter": {
+       "cutoff"   :
+        {"sum": { "of": [
+          { "const": {"name": "cutoffLow", "val": 80} },
+          { "prod": { "of": [
+            { "const": {"name": "freq", "val": 300} },
+            { "const": {"name": "cutoffMultiplier", "val": 3} },
+            { "envelope": { "release": 2.0, "scale": 1, "name": "filterEnv", "attack": 2.0, "decay": 1.0, "sustain": 0.8 } }
+          ]}}
+       ]}},
+       "resonance": { "const": {"name": "resonance", "val": 0.6} },
+       "name"     : "filter"
+     }
+   }]
+  }
+ }
+}
