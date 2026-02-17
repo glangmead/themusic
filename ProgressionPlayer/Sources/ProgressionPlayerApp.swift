@@ -12,6 +12,7 @@ import SwiftUI
 struct ProgressionPlayerApp: App {
   @State private var engine: SpatialAudioEngine
   @State private var synth: SyntacticSynth
+  @State private var songLibrary = SongLibrary()
   init() {
     do {
       try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default, options: [.mixWithOthers, .allowBluetoothHFP, .allowAirPlay])
@@ -28,6 +29,7 @@ struct ProgressionPlayerApp: App {
     WindowGroup {
       AppView()
         .environment(synth)
+        .environment(songLibrary)
     }
 
     WindowGroup(id: "synth-window") {

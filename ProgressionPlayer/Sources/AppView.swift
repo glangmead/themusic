@@ -18,6 +18,9 @@ struct AppView: View {
       Tab("Song", systemImage: "document") {
         SongView()
       }
+      Tab("Orbital", systemImage: "circle.grid.3x3") {
+        OrbitalView()
+      }
     }
     
 
@@ -28,4 +31,5 @@ struct AppView: View {
   let presetSpec = Bundle.main.decode(PresetSyntax.self, from: "saw1_preset.json")
   AppView()
     .environment(SyntacticSynth(engine: SpatialAudioEngine(), presetSpec: presetSpec))
+    .environment(SongLibrary())
 }

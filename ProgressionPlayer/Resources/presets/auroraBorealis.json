@@ -1,5 +1,5 @@
 {
- "name"   : "Aurora Borealis",
+ "name"   : "Keening",
  "rose"   : {"freq": 0.25, "leafFactor": 2, "phase": 3.14, "amp": 4},
  "effects": {"reverbPreset": 1, "delayTime": 0, "delayLowPassCutoff": 100000, "delayFeedback": 0, "reverbWetDryMix": 100, "delayWetDryMix": 100},
  "arrow"  : {
