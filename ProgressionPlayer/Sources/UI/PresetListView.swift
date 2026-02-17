@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PresetListView: View {
-  @Environment(SyntacticSynth.self) private var synth
+  var synth: SyntacticSynth
   @Binding var isPresented: Bool
   
   struct PresetOption: Identifiable {
@@ -43,6 +43,8 @@ struct PresetListView: View {
 }
 
 #Preview {
-  PresetListView(isPresented: .constant(true))
-    .environment(SyntacticSynth(engine: SpatialAudioEngine(), presetSpec: Bundle.main.decode(PresetSyntax.self, from: "saw1_preset.json")))
+  PresetListView(
+    synth: SyntacticSynth(engine: SpatialAudioEngine(), presetSpec: Bundle.main.decode(PresetSyntax.self, from: "auroraBorealis.json", subdirectory: "presets")),
+    isPresented: .constant(true)
+  )
 }

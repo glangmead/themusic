@@ -10,7 +10,8 @@ import Tonic
 
 struct SongView: View {
   @Environment(\.openWindow) private var openWindow
-  @Environment(SyntacticSynth.self) private var synth
+  @Environment(SpatialAudioEngine.self) private var engine
+  @State private var synth: SyntacticSynth?
   @State private var seq: Sequencer?
   @State private var error: Error? = nil
   @State private var isImporting = false
@@ -24,6 +25,51 @@ struct SongView: View {
   @State private var patternPlaybackHandle: Task<Void, Error>? = nil
   @State private var isShowingPresetList = false
   
+  var body: some View {
+    if let synth {
+      SongViewContent(
+        engine: engine,
+        synth: synth,
+        seq: $seq,
+        error: $error,
+        isImporting: $isImporting,
+        songURL: $songURL,
+        playbackRate: $playbackRate,
+        isShowingSynth: $isShowingSynth,
+        isShowingVisualizer: $isShowingVisualizer,
+        noteOffset: $noteOffset,
+        musicPattern: $musicPattern,
+        patternSpatialPreset: $patternSpatialPreset,
+        patternPlaybackHandle: $patternPlaybackHandle,
+        isShowingPresetList: $isShowingPresetList
+      )
+    } else {
+      ProgressView()
+        .onAppear {
+          let presetSpec = Bundle.main.decode(PresetSyntax.self, from: "auroraBorealis.json", subdirectory: "presets")
+          synth = SyntacticSynth(engine: engine, presetSpec: presetSpec)
+        }
+    }
+  }
+}
+
+private struct SongViewContent: View {
+  @Environment(\.openWindow) private var openWindow
+  let engine: SpatialAudioEngine
+  @Bindable var synth: SyntacticSynth
+  @Binding var seq: Sequencer?
+  @Binding var error: Error?
+  @Binding var isImporting: Bool
+  @Binding var songURL: URL?
+  @Binding var playbackRate: Float
+  @Binding var isShowingSynth: Bool
+  @Binding var isShowingVisualizer: Bool
+  @Binding var noteOffset: Float
+  @Binding var musicPattern: MusicPattern?
+  @Binding var patternSpatialPreset: SpatialPreset?
+  @Binding var patternPlaybackHandle: Task<Void, Error>?
+  @Binding var isShowingPresetList: Bool
+
   var body: some View {
     ZStack {
       Color.black.ignoresSafeArea()
@@ -61,12 +107,12 @@ struct SongView: View {
               }
 #if targetEnvironment(macCatalyst)
               .sheet(isPresented: $isShowingPresetList) {
-                PresetListView(isPresented: $isShowingPresetList)
+                PresetListView(synth: synth, isPresented: $isShowingPresetList)
                   .frame(minWidth: 300, minHeight: 400)
               }
 #else
               .popover(isPresented: $isShowingPresetList) {
-                PresetListView(isPresented: $isShowingPresetList)
+                PresetListView(synth: synth, isPresented: $isShowingPresetList)
                   .frame(minWidth: 300, minHeight: 400)
               }
 #endif
@@ -111,7 +157,7 @@ struct SongView: View {
         Button("Play Pattern") {
           if patternPlaybackHandle == nil {
             // Create a dedicated SpatialPreset for the pattern
-            let sp = SpatialPreset(presetSpec: synth.presetSpec, engine: synth.engine, numVoices: 20)
+            let sp = SpatialPreset(presetSpec: synth.presetSpec, engine: engine, numVoices: 20)
             patternSpatialPreset = sp
             // a test song
             musicPattern = MusicPattern(
@@ -130,18 +176,6 @@ struct SongView: View {
                 scaleGenerator: [Scale.major].cyclicIterator(),
                 rootNoteGenerator: [NoteClass.A].cyclicIterator()
               ),
-              // Aurora Borealis
-              // notes: MidiPitchAsChordGenerator(
-              //   pitchGenerator: MidiPitchGenerator(
-              //     scaleGenerator: [Scale.lydian].cyclicIterator(),
-              //     degreeGenerator: Array(0...6).shuffledIterator(),
-              //     rootNoteGenerator: WaitingIterator(
-              //       iterator: [NoteClass.C, NoteClass.E, NoteClass.G].cyclicIterator(),
-              //       timeBetweenChanges: ArrowRandom(min: 10, max: 25)
-              //     ),
-              //     octaveGenerator: [2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 5].randomIterator()
-              //   )
-              // ),
               sustains: FloatSampler(min: 5, max: 10),
               gaps: FloatSampler(min: 5, max: 10 )
             )
@@ -170,18 +204,18 @@ struct SongView: View {
       
     }
     .fullScreenCover(isPresented: $isShowingVisualizer) {
-      VisualizerView(synth: synth, isPresented: $isShowingVisualizer)
+      VisualizerView(engine: engine, noteHandler: synth.noteHandler, isPresented: $isShowingVisualizer)
         .ignoresSafeArea()
     }
     .onAppear {
       if seq == nil {
-        seq = Sequencer(synth: synth, numTracks: 2)
-        try! synth.engine.start()
+        seq = Sequencer(engine: engine.audioEngine, numTracks: 2, defaultHandler: synth.noteHandler!)
+        try! engine.start()
       }
     }
     .onChange(of: synth.reloadCount) {
       seq?.stop()
-      seq = Sequencer(synth: synth, numTracks: 2)
+      seq = Sequencer(engine: engine.audioEngine, numTracks: 2, defaultHandler: synth.noteHandler!)
     }
     .sheet(isPresented: $isShowingSynth) {
       SyntacticSynthView(synth: synth)
@@ -190,7 +224,6 @@ struct SongView: View {
 }
 
 #Preview {
-  let presetSpec = Bundle.main.decode(PresetSyntax.self, from: "saw1_preset.json")
   SongView()
-    .environment(SyntacticSynth(engine: SpatialAudioEngine(), presetSpec: presetSpec))
+    .environment(SpatialAudioEngine())
 }

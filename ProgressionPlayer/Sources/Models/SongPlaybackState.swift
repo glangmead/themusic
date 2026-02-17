@@ -17,7 +17,10 @@ class SongPlaybackState {
     private(set) var isPlaying = false
     private var playbackTask: Task<Void, Error>? = nil
     private var musicPattern: MusicPattern? = nil
-    private var patternSpatialPreset: SpatialPreset? = nil
+    private(set) var patternSpatialPreset: SpatialPreset? = nil
+
+    /// The active note handler for this song's playback, if playing.
+    var noteHandler: NoteHandler? { patternSpatialPreset }
 
     init(song: Song, engine: SpatialAudioEngine) {
         self.song = song

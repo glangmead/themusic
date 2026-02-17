@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct SongPresetListView: View {
-    @Environment(SyntacticSynth.self) private var synth
+    @Environment(SpatialAudioEngine.self) private var engine
+    @Environment(SongPlaybackState.self) private var playbackState
     let song: Song
-    @Bindable var playbackState: SongPlaybackState
     @State private var isShowingVisualizer = false
 
     struct PresetOption: Identifiable {
@@ -33,7 +33,7 @@ struct SongPresetListView: View {
     var body: some View {
         List(presets) { preset in
             NavigationLink {
-                PresetFormView(presetSpec: preset.spec, playbackState: playbackState)
+                PresetFormView(presetSpec: preset.spec)
             } label: {
                 Text(preset.spec.name)
             }
@@ -58,7 +58,7 @@ struct SongPresetListView: View {
             }
         }
         .fullScreenCover(isPresented: $isShowingVisualizer) {
-            VisualizerView(synth: synth, isPresented: $isShowingVisualizer)
+            VisualizerView(engine: engine, noteHandler: playbackState.noteHandler, isPresented: $isShowingVisualizer)
                 .ignoresSafeArea()
         }
     }

@@ -10,8 +10,7 @@ import SwiftUI
 
 @main
 struct ProgressionPlayerApp: App {
-  @State private var engine: SpatialAudioEngine
-  @State private var synth: SyntacticSynth
+  @State private var engine = SpatialAudioEngine()
   @State private var songLibrary = SongLibrary()
   init() {
     do {
@@ -20,20 +19,12 @@ struct ProgressionPlayerApp: App {
     } catch {
       print("AppDelegate Debug - Error setting AVAudioSession category. Because of this, there may be no sound. \(error)")
     }
-    let engine = SpatialAudioEngine()
-    let presetSpec = Bundle.main.decode(PresetSyntax.self, from: "auroraBorealis.json", subdirectory: "presets")
-    self.synth = SyntacticSynth(engine: engine, presetSpec: presetSpec)
-    self.engine = engine
   }
   var body: some Scene {
     WindowGroup {
       AppView()
-        .environment(synth)
+        .environment(engine)
         .environment(songLibrary)
-    }
-
-    WindowGroup(id: "synth-window") {
-      SyntacticSynthView(synth: synth)
     }
   }
 }

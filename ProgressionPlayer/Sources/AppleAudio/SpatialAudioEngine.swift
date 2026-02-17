@@ -6,7 +6,9 @@
 //
 
 import AVFAudio
+import Observation
 
+@Observable
 class SpatialAudioEngine {
   let audioEngine = AVAudioEngine()
   let envNode = AVAudioEnvironmentNode()

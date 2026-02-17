@@ -9,8 +9,26 @@ import SwiftUI
 import Tonic
 
 struct TheoryView: View {
+  @Environment(SpatialAudioEngine.self) private var engine
+  @State private var synth: SyntacticSynth?
+
+  var body: some View {
+    if let synth {
+      TheoryViewContent(engine: engine, synth: synth)
+    } else {
+      ProgressView()
+        .onAppear {
+          let presetSpec = Bundle.main.decode(PresetSyntax.self, from: "auroraBorealis.json", subdirectory: "presets")
+          synth = SyntacticSynth(engine: engine, presetSpec: presetSpec)
+        }
+    }
+  }
+}
+
+private struct TheoryViewContent: View {
   @Environment(\.openWindow) private var openWindow
-  @Environment(SyntacticSynth.self) private var synth
+  let engine: SpatialAudioEngine
+  @Bindable var synth: SyntacticSynth
   @State private var fxExpanded = true
   @State private var ampADSRExpanded = true
   @State private var roseParamsExpanded = true
@@ -85,11 +103,11 @@ struct TheoryView: View {
             .onChange(of: engineOn, initial: true) {
               if engineOn {
                 Task {
-                  try! synth.engine.start()
+                  try! engine.start()
                 }
               } else {
                 Task {
-                  synth.engine.pause()
+                  engine.pause()
                 }
               }
             }
@@ -113,7 +131,7 @@ struct TheoryView: View {
             isShowingPresetList = true
           }
           .popover(isPresented: $isShowingPresetList) {
-            PresetListView(isPresented: $isShowingPresetList)
+            PresetListView(synth: synth, isPresented: $isShowingPresetList)
               .frame(minWidth: 300, minHeight: 400)
           }
         }
@@ -128,12 +146,12 @@ struct TheoryView: View {
     .onChange(of: isShowingSynth, { isFocused = !isShowingSynth})
     .onAppear {
       if seq == nil {
-        seq = Sequencer(synth: synth, numTracks: 2)
+        seq = Sequencer(engine: engine.audioEngine, numTracks: 2, defaultHandler: synth.noteHandler!)
       }
     }
     .onChange(of: synth.reloadCount) {
       seq?.stop()
-      seq = Sequencer(synth: synth, numTracks: 2)
+      seq = Sequencer(engine: engine.audioEngine, numTracks: 2, defaultHandler: synth.noteHandler!)
     }
     .sheet(isPresented: $isShowingSynth) {
       SyntacticSynthView(synth: synth)
@@ -144,13 +162,6 @@ struct TheoryView: View {
     let charToMidiNote:[String:Int] = [
       "a": 60, "w": 61, "s": 62, "e": 63, "d": 64, "f": 65, "t": 66, "g": 67, "y": 68, "h": 69, "u": 70, "j": 71, "k": 72, "o": 73, "l": 74, "p": 75
     ]
-    //print("""
-    //  New key event:
-    //  Key: \(keyPress.characters)
-    //  Modifiers: \(keyPress.modifiers)
-    //  Phase: \(keyPress.phase)
-    //  Debug description: \(keyPress.debugDescription)
-    //""")
     if let noteValue = charToMidiNote[keyPress.characters], keyPress.modifiers.rawValue == 0 {
       switch keyPress.phase {
       case .down:
@@ -168,7 +179,6 @@ struct TheoryView: View {
 }
 
 #Preview {
-  let presetSpec = Bundle.main.decode(PresetSyntax.self, from: "saw1_preset.json")
   TheoryView()
-    .environment(SyntacticSynth(engine: SpatialAudioEngine(), presetSpec: presetSpec))
+    .environment(SpatialAudioEngine())
 }

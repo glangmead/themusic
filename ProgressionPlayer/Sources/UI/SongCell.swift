@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct SongCell: View {
-    @Environment(SyntacticSynth.self) private var synth
+    @Environment(SpatialAudioEngine.self) private var engine
     let song: Song
 
-    @State private var playbackState: SongPlaybackState? = nil
+    @State private var playbackState: SongPlaybackState?
 
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
@@ -49,7 +49,8 @@ struct SongCell: View {
 
                 // Presets button
                 NavigationLink {
-                    SongPresetListView(song: song, playbackState: ensurePlaybackState())
+                    SongPresetListView(song: song)
+                        .environment(ensurePlaybackState())
                 } label: {
                     Label("Presets", systemImage: "slider.horizontal.3")
                         .font(.caption)
@@ -75,7 +76,7 @@ struct SongCell: View {
     @discardableResult
     private func ensurePlaybackState() -> SongPlaybackState {
         if let state = playbackState { return state }
-        let state = SongPlaybackState(song: song, engine: synth.engine)
+        let state = SongPlaybackState(song: song, engine: engine)
         playbackState = state
         return state
     }

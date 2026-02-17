@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct OrbitalView: View {
-    @Environment(SyntacticSynth.self) private var synth
+    @Environment(SpatialAudioEngine.self) private var engine
     @Environment(SongLibrary.self) private var library
     @State private var isShowingVisualizer = false
 
@@ -36,7 +36,7 @@ struct OrbitalView: View {
             }
         }
         .fullScreenCover(isPresented: $isShowingVisualizer) {
-            VisualizerView(synth: synth, isPresented: $isShowingVisualizer)
+            VisualizerView(engine: engine, isPresented: $isShowingVisualizer)
                 .ignoresSafeArea()
         }
     }

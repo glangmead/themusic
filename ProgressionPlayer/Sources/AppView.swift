@@ -8,8 +8,6 @@
 import SwiftUI
 
 struct AppView: View {
-  @Environment(SyntacticSynth.self) private var synth
-
   var body: some View {
     TabView {
       Tab("Orbital", systemImage: "circle.grid.3x3") {
@@ -22,14 +20,11 @@ struct AppView: View {
         SongView()
       }
     }
-    
-
   }
 }
 
 #Preview {
-  let presetSpec = Bundle.main.decode(PresetSyntax.self, from: "saw1_preset.json")
   AppView()
-    .environment(SyntacticSynth(engine: SpatialAudioEngine(), presetSpec: presetSpec))
+    .environment(SpatialAudioEngine())
     .environment(SongLibrary())
 }

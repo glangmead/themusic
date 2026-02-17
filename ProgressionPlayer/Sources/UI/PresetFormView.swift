@@ -9,14 +9,45 @@ import AVFAudio
 import SwiftUI
 
 struct PresetFormView: View {
-    @Environment(SyntacticSynth.self) private var synth
+    @Environment(SpatialAudioEngine.self) private var engine
+    @Environment(SongPlaybackState.self) private var playbackState
     let presetSpec: PresetSyntax
-    @Bindable var playbackState: SongPlaybackState
     @State private var isShowingVisualizer = false
+    @State private var synth: SyntacticSynth?
 
     var body: some View {
-        @Bindable var synth = synth
+        if let synth {
+            PresetFormContent(
+                synth: synth,
+                presetSpec: presetSpec,
+                playbackState: playbackState,
+                engine: engine,
+                isShowingVisualizer: $isShowingVisualizer
+            )
+            .fullScreenCover(isPresented: $isShowingVisualizer) {
+                VisualizerView(engine: engine, noteHandler: playbackState.noteHandler, isPresented: $isShowingVisualizer)
+                    .ignoresSafeArea()
+            }
+        } else {
+            ProgressView()
+                .onAppear {
+                    let s = SyntacticSynth(engine: engine, presetSpec: presetSpec)
+                    s.loadPreset(presetSpec)
+                    synth = s
+                }
+        }
+    }
+}
 
+/// Extracted so that `synth` is guaranteed non-nil and we can use `@Bindable`.
+private struct PresetFormContent: View {
+    @Bindable var synth: SyntacticSynth
+    let presetSpec: PresetSyntax
+    @Bindable var playbackState: SongPlaybackState
+    let engine: SpatialAudioEngine
+    @Binding var isShowingVisualizer: Bool
+
+    var body: some View {
         Form {
             Section("Rose (Spatial Movement)") {
                 LabeledSlider(value: $synth.roseAmp, label: "Amplitude", range: 0...20)
@@ -129,13 +160,6 @@ struct PresetFormView: View {
                     Label("Visualizer", systemImage: "sparkles.tv")
                 }
             }
-        }
-        .fullScreenCover(isPresented: $isShowingVisualizer) {
-            VisualizerView(synth: synth, isPresented: $isShowingVisualizer)
-                .ignoresSafeArea()
-        }
-        .onAppear {
-            synth.loadPreset(presetSpec)
         }
     }
 }

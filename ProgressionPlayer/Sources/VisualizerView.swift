@@ -57,7 +57,8 @@ class VisualizerWebView: WKWebView {
 /// visualizer survive across show/hide cycles. Recreating WKWebView each time causes
 /// WebGL context exhaustion on iOS.
 class VisualizerHolder: NSObject, WKNavigationDelegate, WKScriptMessageHandler {
-  let synth: SyntacticSynth
+  let engine: SpatialAudioEngine
+  var noteHandler: NoteHandler?
   private(set) var webView: VisualizerWebView!
   private var isLoaded = false
   
@@ -73,8 +74,9 @@ class VisualizerHolder: NSObject, WKNavigationDelegate, WKScriptMessageHandler {
   var onSpeedChange: ((Double) -> Void)?
   var onCloseRequested: (() -> Void)?
   
-  init(synth: SyntacticSynth) {
-    self.synth = synth
+  init(engine: SpatialAudioEngine, noteHandler: NoteHandler? = nil) {
+    self.engine = engine
+    self.noteHandler = noteHandler
     super.init()
     
     let config = WKWebViewConfiguration()
@@ -165,7 +167,7 @@ class VisualizerHolder: NSObject, WKNavigationDelegate, WKScriptMessageHandler {
     
     // Install the tap once and keep it for the lifetime of the holder.
     // We gate JS calls with sendingEnabled so we don't waste CPU while hidden.
-    synth.engine.installTap { [weak self] samples in
+    engine.installTap { [weak self] samples in
       guard let self = self, self.sendingEnabled.withLock({ $0 }) else { return }
       
       let samplesToSend: [Float]? = self.samplesLock.withLock {
@@ -230,9 +232,9 @@ class VisualizerHolder: NSObject, WKNavigationDelegate, WKScriptMessageHandler {
     ]
     if let noteValue = charToMidiNote[key] {
       if type == "keydown" {
-        synth.noteHandler?.noteOn(MidiNote(note: UInt8(noteValue), velocity: 100))
+        noteHandler?.noteOn(MidiNote(note: UInt8(noteValue), velocity: 100))
       } else if type == "keyup" {
-        synth.noteHandler?.noteOff(MidiNote(note: UInt8(noteValue), velocity: 100))
+        noteHandler?.noteOff(MidiNote(note: UInt8(noteValue), velocity: 100))
       }
     }
   }
@@ -241,20 +243,22 @@ class VisualizerHolder: NSObject, WKNavigationDelegate, WKScriptMessageHandler {
 struct VisualizerView: UIViewRepresentable {
   typealias UIViewType = VisualizerWebView
   
-  var synth: SyntacticSynth
+  var engine: SpatialAudioEngine
+  var noteHandler: NoteHandler?
   @Binding var isPresented: Bool
   @AppStorage("lastVisualizerPreset") private var lastPreset: String = ""
   @AppStorage("lastVisualizerSpeed") private var lastSpeed: Double = 1.0
   
-  /// Single persistent holder — survives fullScreenCover dismiss/re-present cycles.
+  /// Single persistent holder - survives fullScreenCover dismiss/re-present cycles.
   private static var persistentHolder: VisualizerHolder?
   
   private func getOrCreateHolder() -> VisualizerHolder {
-    if let existing = Self.persistentHolder, existing.synth === synth {
+    if let existing = Self.persistentHolder, existing.engine === engine {
+      existing.noteHandler = noteHandler
       return existing
     }
-    // Synth changed or first use — create fresh holder
-    let h = VisualizerHolder(synth: synth)
+    // Engine changed or first use — create fresh holder
+    let h = VisualizerHolder(engine: engine, noteHandler: noteHandler)
     h.loadPage(presetName: lastPreset, speed: lastSpeed)
     Self.persistentHolder = h
     return h
