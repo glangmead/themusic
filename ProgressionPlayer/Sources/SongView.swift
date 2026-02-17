@@ -59,10 +59,17 @@ struct SongView: View {
               Button("Presets") {
                 isShowingPresetList = true
               }
+#if targetEnvironment(macCatalyst)
+              .sheet(isPresented: $isShowingPresetList) {
+                PresetListView(isPresented: $isShowingPresetList)
+                  .frame(minWidth: 300, minHeight: 400)
+              }
+#else
               .popover(isPresented: $isShowingPresetList) {
                 PresetListView(isPresented: $isShowingPresetList)
                   .frame(minWidth: 300, minHeight: 400)
               }
+#endif
             }
             ToolbarItem() {
               Button {

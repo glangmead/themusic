@@ -205,6 +205,7 @@
     .preset-list {
       flex: 1;
       overflow-y: auto;
+      overflow-x: hidden;
       padding: 10px 0;
       -webkit-overflow-scrolling: touch;
     }
@@ -216,6 +217,9 @@
       font-size: 13px;
       border-bottom: 1px solid rgba(255,255,255,0.02);
       transition: all 0.2s;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
     
     .preset-item:hover {
@@ -330,10 +334,15 @@
   <div class="controls" id="controls">
     <div class="controls-row">
       <!-- Replaced Select with Button -->
-      <button id="presetMenuBtn" style="flex: 1; justify-content: space-between;">
-        <span id="currentPresetLabel">Select Preset...</span>
-        <svg viewBox="0 0 24 24"><path d="M3 18h6v-2H3v2zM3 6v2h18V6H3zm0 7h12v-2H3v2z" fill="currentColor"/></svg>
-      </button>
+      <div id="presetMenuBtn" role="button" tabindex="0" style="flex: 1; min-width: 0; display: flex; align-items: center; gap: 8px; overflow: hidden; cursor: pointer; font-family: inherit; font-size: 13px; padding: 12px 20px; border: 1px solid var(--surface-hover); border-radius: 8px; background: var(--surface); color: var(--text); transition: all 0.2s;">
+        <svg viewBox="0 0 24 24" style="flex-shrink: 0; width: 18px; height: 18px;"><path d="M3 18h6v-2H3v2zM3 6v2h18V6H3zm0 7h12v-2H3v2z" fill="currentColor"/></svg>
+        <span id="currentPresetLabel" style="flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Select Preset...</span>
+      </div>
+    </div>
+    <div class="controls-row speed-control">
+      <label>Speed</label>
+      <input type="range" id="speedSlider" min="0.1" max="1.0" step="0.05" value="1.0">
+      <span id="speedValue">1.00</span>
     </div>
     <div class="controls-row">
       <button id="randomBtn" title="Random Preset">
@@ -351,11 +360,6 @@
       <button id="closeBtn" title="Close">
         ❌<span>Close Visualizer</span>
       </button>
-    </div>
-    <div class="controls-row speed-control">
-      <label>Speed</label>
-      <input type="range" id="speedSlider" min="0.1" max="3.0" step="0.05" value="1.0">
-      <span id="speedValue">1.00</span>
     </div>
   </div>
 
@@ -1838,7 +1842,7 @@
     let visualizer;
     let audioWorkletNode; // The modern background audio pump
     let speedFactor = 1.0;
-    let lastRenderTime = 0;
+    let renderBudget = 0;
     let presets;
     let presetKeys;
     let currentPreset;
@@ -2006,6 +2010,15 @@
             if (show) presetOverlay.classList.add('visible');
             else presetOverlay.classList.remove('visible');
         }
+        // Scroll to active preset when opening
+        if (presetOverlay.classList.contains('visible')) {
+            const active = presetListContainer.querySelector('.active');
+            if (active) {
+                requestAnimationFrame(() => {
+                    active.scrollIntoView({ block: 'center', behavior: 'instant' });
+                });
+            }
+        }
     }
     
     // Load a preset
@@ -2021,17 +2034,12 @@
           window.webkit.messageHandlers.presetHandler.postMessage(name);
       }
       
-      // Update Active State in List
-      if (presetOverlay.classList.contains('visible')) {
-          const prevActive = presetListContainer.querySelector('.active');
-          if (prevActive) prevActive.classList.remove('active');
-          
-          // Find new active (simple search)
-          const newActive = Array.from(presetListContainer.children).find(div => div.dataset.name === name);
-          if (newActive) {
-              newActive.classList.add('active');
-              newActive.scrollIntoView({ block: 'center', behavior: 'smooth' });
-          }
+      // Update Active State in List (always, even when menu is closed)
+      const prevActive = presetListContainer.querySelector('.active');
+      if (prevActive) prevActive.classList.remove('active');
+      const newActive = Array.from(presetListContainer.children).find(div => div.dataset.name === name);
+      if (newActive) {
+          newActive.classList.add('active');
       }
     }
     
@@ -2109,14 +2117,17 @@
       }
       
       if (visualizer) {
-        const now = performance.now();
-        const realDelta = lastRenderTime > 0 ? (now - lastRenderTime) / 1000 : 1/60;
-        lastRenderTime = now;
-        const scaledDelta = realDelta * speedFactor;
-        if (latestWaveform) {
-          visualizer.render({ audioLevels: latestWaveform, elapsedTime: scaledDelta });
-        } else {
-          visualizer.render({ elapsedTime: scaledDelta });
+        // Speed control: accumulate real frames and only render when enough
+        // have elapsed. At speedFactor 0.5, we render every other frame.
+        // At speedFactor 2.0, we render twice per rAF (double-stepping).
+        renderBudget += speedFactor;
+        while (renderBudget >= 1.0) {
+          if (latestWaveform) {
+            visualizer.render({ audioLevels: latestWaveform });
+          } else {
+            visualizer.render();
+          }
+          renderBudget -= 1.0;
         }
       }
       animationId = requestAnimationFrame(render);
@@ -2235,6 +2246,7 @@
 
     // Called from Swift to restore saved speed
     window.setSpeed = (val) => {
+      val = Math.max(0.1, Math.min(1.0, val));
       speedFactor = val;
       speedSlider.value = val;
       speedValue.textContent = val.toFixed(2);
@@ -2255,6 +2267,7 @@
         const decoded = atob(window.initialPresetNameB64);
         if (presets[decoded]) {
           pendingPresetName = decoded;
+          currentPresetLabel.textContent = decoded;
           debugLog("Queued saved preset: " + decoded);
         } else {
           debugLog("Saved preset not found, queuing random.");
