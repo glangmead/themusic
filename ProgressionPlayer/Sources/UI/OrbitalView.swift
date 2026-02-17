@@ -41,3 +41,22 @@ struct OrbitalView: View {
     }
   }
 }
+#Preview {
+  let library = SongLibrary()
+  library.songs = [
+    Song(
+      name: "Aurora Borealis",
+      patternFileName: "aurora_arpeggio.json",
+      presetFileNames: ["auroraBorealis.json"]
+    ),
+    Song(
+      name: "Baroque Chords",
+      patternFileName: "baroque_chords.json",
+      presetFileNames: ["5th_cluedo.json"]
+    ),
+  ]
+  return OrbitalView()
+    .environment(SpatialAudioEngine())
+    .environment(library)
+}
+

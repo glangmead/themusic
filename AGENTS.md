@@ -103,7 +103,8 @@ The project has a strict layered architecture. Lower layers must not reference o
 - `AppleAudio/SpatialAudioEngine.swift` — Audio engine with `AVAudioEnvironmentNode` for HRTF spatial audio
 - `AppleAudio/Sequencer.swift` — MIDI file playback via `AVAudioSequencer`
 - `Generators/Pattern.swift` — `MusicEvent`, `MusicPattern`, `MusicPatterns` (generative playback)
-- `Synths/SyntacticSynth.swift` — Main synth class with `@Observable` properties and UI bindings, owns a `SpatialPreset`
+- `Synths/ArrowHandler.swift` — `ArrowHandler` (`@Observable`): dynamic parameter binding from `ArrowSyntax` descriptors to `ArrowWithHandles` write-through. `ArrowParamKind`, `ArrowParamDescriptor`, `ArrowSyntax.parameterDescriptors()`
+- `Synths/SyntacticSynth.swift` — Lifecycle wrapper owning a `SpatialPreset` and `ArrowHandler`, plus rose\/effects properties
 
 ## Domain knowledge
 

@@ -10,23 +10,38 @@ import SwiftUI
 
 struct PresetFormView: View {
   @Environment(SpatialAudioEngine.self) private var engine
-  @Environment(SongPlaybackState.self) private var playbackState
+  @Environment(SongPlaybackState.self) private var playbackState: SongPlaybackState?
   let presetSpec: PresetSyntax
   @State private var isShowingVisualizer = false
   @State private var synth: SyntacticSynth?
+  private let externalSynth: SyntacticSynth?
+
+  /// Create a PresetFormView that builds its own SyntacticSynth.
+  init(presetSpec: PresetSyntax) {
+    self.presetSpec = presetSpec
+    self.externalSynth = nil
+  }
+
+  /// Create a PresetFormView that uses an existing SyntacticSynth.
+  init(synth: SyntacticSynth) {
+    self.presetSpec = synth.presetSpec
+    self.externalSynth = synth
+  }
 
   var body: some View {
-    if let synth {
+    if let resolved = externalSynth ?? synth {
       PresetFormContent(
-        synth: synth,
+        synth: resolved,
         presetSpec: presetSpec,
         playbackState: playbackState,
         engine: engine,
         isShowingVisualizer: $isShowingVisualizer
       )
       .fullScreenCover(isPresented: $isShowingVisualizer) {
-        VisualizerView(engine: engine, noteHandler: playbackState.noteHandler, isPresented: $isShowingVisualizer)
-          .ignoresSafeArea()
+        if let playbackState {
+          VisualizerView(engine: engine, noteHandler: playbackState.noteHandler, isPresented: $isShowingVisualizer)
+            .ignoresSafeArea()
+        }
       }
     } else {
       ProgressView()
@@ -43,7 +58,7 @@ struct PresetFormView: View {
 private struct PresetFormContent: View {
   @Bindable var synth: SyntacticSynth
   let presetSpec: PresetSyntax
-  @Bindable var playbackState: SongPlaybackState
+  var playbackState: SongPlaybackState?
   let engine: SpatialAudioEngine
   @Binding var isShowingVisualizer: Bool
 
@@ -70,85 +85,31 @@ private struct PresetFormContent: View {
         }
       }
 
-      Section("Oscillator 1") {
-        Picker("Shape", selection: $synth.oscShape1) {
-          ForEach(BasicOscillator.OscShape.allCases, id: \.self) { option in
-            Text(String(describing: option))
+      if let handler = synth.arrowHandler {
+        ForEach(handler.groupedDescriptors(), id: \.0) { title, descs in
+          Section(title) {
+            ForEach(descs) { desc in
+              ArrowParamRow(descriptor: desc, handler: handler)
+            }
           }
         }
-        LabeledSlider(value: $synth.osc1Mix, label: "Mix", range: 0...1)
-        LabeledSlider(value: $synth.osc1Octave, label: "Octave", range: -5...5, step: 1)
-        LabeledSlider(value: $synth.osc1CentDetune, label: "Cent Detune", range: -500...500, step: 1)
-        LabeledSlider(value: $synth.osc1Width, label: "Pulse Width", range: 0...1)
-        LabeledSlider(value: $synth.osc1ChorusCentRadius, label: "Chorus Cents", range: 0...30, step: 1)
-        LabeledSlider(value: $synth.osc1ChorusNumVoices, label: "Chorus Voices", range: 1...12, step: 1)
       }
 
-      Section("Oscillator 2") {
-        Picker("Shape", selection: $synth.oscShape2) {
-          ForEach(BasicOscillator.OscShape.allCases, id: \.self) { option in
-            Text(String(describing: option))
-          }
-        }
-        LabeledSlider(value: $synth.osc2Mix, label: "Mix", range: 0...1)
-        LabeledSlider(value: $synth.osc2Octave, label: "Octave", range: -5...5, step: 1)
-        LabeledSlider(value: $synth.osc2CentDetune, label: "Cent Detune", range: -500...500, step: 1)
-        LabeledSlider(value: $synth.osc2Width, label: "Pulse Width", range: 0...1)
-        LabeledSlider(value: $synth.osc2ChorusCentRadius, label: "Chorus Cents", range: 0...30, step: 1)
-        LabeledSlider(value: $synth.osc2ChorusNumVoices, label: "Chorus Voices", range: 1...12, step: 1)
-      }
-
-      Section("Oscillator 3") {
-        Picker("Shape", selection: $synth.oscShape3) {
-          ForEach(BasicOscillator.OscShape.allCases, id: \.self) { option in
-            Text(String(describing: option))
-          }
-        }
-        LabeledSlider(value: $synth.osc3Mix, label: "Mix", range: 0...1)
-        LabeledSlider(value: $synth.osc3Octave, label: "Octave", range: -5...5, step: 1)
-        LabeledSlider(value: $synth.osc3CentDetune, label: "Cent Detune", range: -500...500, step: 1)
-        LabeledSlider(value: $synth.osc3Width, label: "Pulse Width", range: 0...1)
-        LabeledSlider(value: $synth.osc3ChorusCentRadius, label: "Chorus Cents", range: 0...30, step: 1)
-        LabeledSlider(value: $synth.osc3ChorusNumVoices, label: "Chorus Voices", range: 1...12, step: 1)
-      }
-
-      Section("Amp Envelope") {
-        LabeledSlider(value: $synth.ampAttack, label: "Attack", range: 0...2)
-        LabeledSlider(value: $synth.ampDecay, label: "Decay", range: 0...2)
-        LabeledSlider(value: $synth.ampSustain, label: "Sustain", range: 0...1)
-        LabeledSlider(value: $synth.ampRelease, label: "Release", range: 0...2)
-      }
-
-      Section("Filter") {
-        LabeledSlider(value: $synth.filterCutoff, label: "Cutoff", range: 1...20000, step: 1)
-        LabeledSlider(value: $synth.filterResonance, label: "Resonance", range: 0.1...15, step: 0.01)
-      }
-
-      Section("Filter Envelope") {
-        LabeledSlider(value: $synth.filterAttack, label: "Attack", range: 0...2)
-        LabeledSlider(value: $synth.filterDecay, label: "Decay", range: 0...2)
-        LabeledSlider(value: $synth.filterSustain, label: "Sustain", range: 0...1)
-        LabeledSlider(value: $synth.filterRelease, label: "Release", range: 0.03...2)
-      }
-
-      Section("Vibrato") {
-        LabeledSlider(value: $synth.vibratoAmp, label: "Amplitude", range: 0...20)
-        LabeledSlider(value: $synth.vibratoFreq, label: "Frequency", range: 0...30)
-      }
-
-      if let arrow = presetSpec.arrow {
+      if let arrow = presetSpec.arrow, let handler = synth.arrowHandler {
         DisclosureGroup("Advanced") {
-          ArrowSyntaxEditorView(syntax: arrow, synth: synth)
+          ArrowSyntaxEditorView(syntax: arrow, handler: handler)
         }
       }
     }
     .navigationTitle(presetSpec.name)
     .toolbar {
-      ToolbarItem {
-        Button {
-          playbackState.togglePlayback()
-        } label: {
-          Image(systemName: playbackState.isPlaying ? "pause.fill" : "play.fill")
+      if let playbackState {
+        ToolbarItem {
+          Button {
+            playbackState.togglePlayback()
+          } label: {
+            Image(systemName: playbackState.isPlaying ? "pause.fill" : "play.fill")
+          }
         }
       }
       ToolbarItem {
@@ -197,3 +158,42 @@ struct LabeledSlider: View {
     return String(format: "%.3f", value)
   }
 }
+// MARK: - ArrowParamRow
+
+#Preview {
+  let presetSpec = Bundle.main.decode(
+    PresetSyntax.self,
+    from: "auroraBorealis.json",
+    subdirectory: "presets"
+  )
+  NavigationStack {
+    PresetFormView(presetSpec: presetSpec)
+  }
+  .environment(SpatialAudioEngine())
+}
+
+/// A single row in the dynamic arrow parameter form. Renders a Picker for osc
+/// shapes and a LabeledSlider for everything else.
+private struct ArrowParamRow: View {
+  let descriptor: ArrowParamDescriptor
+  let handler: ArrowHandler
+
+  var body: some View {
+    switch descriptor.kind {
+    case .oscShape:
+      Picker(descriptor.displayName, selection: handler.shapeBinding(for: descriptor.id)) {
+        ForEach(BasicOscillator.OscShape.allCases, id: \.self) { option in
+          Text(String(describing: option))
+        }
+      }
+    default:
+      LabeledSlider(
+        value: handler.floatBinding(for: descriptor.id),
+        label: descriptor.displayName,
+        range: descriptor.suggestedRange,
+        step: descriptor.stepSize
+      )
+    }
+  }
+}
+

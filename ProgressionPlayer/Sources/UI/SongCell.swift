@@ -18,7 +18,7 @@ struct SongCell: View {
       HStack(spacing: 12) {
         // Play/Stop button
         Button {
-          ensurePlaybackState().togglePlayback()
+          playbackState?.togglePlayback()
         } label: {
           Image(systemName: playbackState?.isPlaying == true ? "stop.fill" : "play.fill")
             .font(.title2)
@@ -48,14 +48,16 @@ struct SongCell: View {
         .disabled(true)
 
         // Presets button
-        NavigationLink {
-          SongPresetListView(song: song)
-            .environment(ensurePlaybackState())
-        } label: {
-          Label("Presets", systemImage: "slider.horizontal.3")
-            .font(.caption)
+        if let playbackState {
+          NavigationLink {
+            SongPresetListView(song: song)
+              .environment(playbackState)
+          } label: {
+            Label("Presets", systemImage: "slider.horizontal.3")
+              .font(.caption)
+          }
+          .buttonStyle(.bordered)
         }
-        .buttonStyle(.bordered)
 
         // Spatial button (placeholder)
         Button {
@@ -71,13 +73,22 @@ struct SongCell: View {
     .padding()
     .background(Color(.secondarySystemBackground))
     .clipShape(RoundedRectangle(cornerRadius: 12))
-  }
-
-  @discardableResult
-  private func ensurePlaybackState() -> SongPlaybackState {
-    if let state = playbackState { return state }
-    let state = SongPlaybackState(song: song, engine: engine)
-    playbackState = state
-    return state
+    .onAppear {
+      if playbackState == nil {
+        playbackState = SongPlaybackState(song: song, engine: engine)
+      }
+    }
   }
 }
+#Preview {
+  NavigationStack {
+    SongCell(song: Song(
+      name: "Aurora Borealis",
+      patternFileName: "aurora_arpeggio.json",
+      presetFileNames: ["auroraBorealis.json"]
+    ))
+    .padding()
+    .environment(SpatialAudioEngine())
+  }
+}
+

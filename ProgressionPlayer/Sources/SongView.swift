@@ -218,7 +218,9 @@ private struct SongViewContent: View {
       seq = Sequencer(engine: engine.audioEngine, numTracks: 2, defaultHandler: synth.noteHandler!)
     }
     .sheet(isPresented: $isShowingSynth) {
-      SyntacticSynthView(synth: synth)
+      NavigationStack {
+        PresetFormView(synth: synth)
+      }
     }
   }
 }

@@ -5,7 +5,6 @@
 //  Created by Greg Langmead on 12/5/25.
 //
 
-import AudioKitUI
 import AVFAudio
 import SwiftUI
 
@@ -24,6 +23,7 @@ class SyntacticSynth {
   var presetSpec: PresetSyntax
   let engine: SpatialAudioEngine
   private(set) var spatialPreset: SpatialPreset? = nil
+  var arrowHandler: ArrowHandler?
   var reloadCount = 0
   let numVoices = 12
   
@@ -34,106 +34,7 @@ class SyntacticSynth {
   }
   let cent: CoreFloat = 1.0005777895065548 // '2 ** (1/1200)' in python
   
-  // Tone params
-  var ampAttack: CoreFloat = 0 { didSet {
-    spatialPreset?.handles?.namedADSREnvelopes["ampEnv"]!.forEach { $0.env.attackTime = ampAttack } }
-  }
-  var ampDecay: CoreFloat = 0 { didSet {
-    spatialPreset?.handles?.namedADSREnvelopes["ampEnv"]!.forEach { $0.env.decayTime = ampDecay } }
-  }
-  var ampSustain: CoreFloat = 0 { didSet {
-    spatialPreset?.handles?.namedADSREnvelopes["ampEnv"]!.forEach { $0.env.sustainLevel = ampSustain } }
-  }
-  var ampRelease: CoreFloat = 0 { didSet {
-    spatialPreset?.handles?.namedADSREnvelopes["ampEnv"]!.forEach { $0.env.releaseTime = ampRelease } }
-  }
-  var filterAttack: CoreFloat = 0 { didSet {
-    spatialPreset?.handles?.namedADSREnvelopes["filterEnv"]!.forEach { $0.env.attackTime = filterAttack } }
-  }
-  var filterDecay: CoreFloat = 0 { didSet {
-    spatialPreset?.handles?.namedADSREnvelopes["filterEnv"]!.forEach { $0.env.decayTime = filterDecay } }
-  }
-  var filterSustain: CoreFloat = 0 { didSet {
-    spatialPreset?.handles?.namedADSREnvelopes["filterEnv"]!.forEach { $0.env.sustainLevel = filterSustain } }
-  }
-  var filterRelease: CoreFloat = 0 { didSet {
-    spatialPreset?.handles?.namedADSREnvelopes["filterEnv"]!.forEach { $0.env.releaseTime = filterRelease } }
-  }
-  var filterCutoff: CoreFloat = 0 { didSet {
-    spatialPreset?.handles?.namedConsts["cutoff"]!.forEach { $0.val = filterCutoff } }
-  }
-  var filterResonance: CoreFloat = 0 { didSet {
-    spatialPreset?.handles?.namedConsts["resonance"]!.forEach { $0.val = filterResonance } }
-  }
-  var vibratoAmp: CoreFloat = 0 { didSet {
-    spatialPreset?.handles?.namedConsts["vibratoAmp"]!.forEach { $0.val = vibratoAmp } }
-  }
-  var vibratoFreq: CoreFloat = 0 { didSet {
-    spatialPreset?.handles?.namedConsts["vibratoFreq"]!.forEach { $0.val = vibratoFreq } }
-  }
-  var osc1Mix: CoreFloat = 0 { didSet {
-    spatialPreset?.handles?.namedConsts["osc1Mix"]!.forEach { $0.val = osc1Mix } }
-  }
-  var osc2Mix: CoreFloat = 0 { didSet {
-    spatialPreset?.handles?.namedConsts["osc2Mix"]!.forEach { $0.val = osc2Mix } }
-  }
-  var osc3Mix: CoreFloat = 0 { didSet {
-    spatialPreset?.handles?.namedConsts["osc3Mix"]!.forEach { $0.val = osc3Mix } }
-  }
-  var oscShape1: BasicOscillator.OscShape = .noise { didSet {
-    spatialPreset?.handles?.namedBasicOscs["osc1"]!.forEach { $0.shape = oscShape1 } }
-  }
-  var oscShape2: BasicOscillator.OscShape = .noise { didSet {
-    spatialPreset?.handles?.namedBasicOscs["osc2"]!.forEach { $0.shape = oscShape2 } }
-  }
-  var oscShape3: BasicOscillator.OscShape = .noise { didSet {
-    spatialPreset?.handles?.namedBasicOscs["osc3"]!.forEach { $0.shape = oscShape3 } }
-  }
-  var osc1Width: CoreFloat = 0 { didSet {
-    spatialPreset?.handles?.namedBasicOscs["osc1"]!.forEach { $0.widthArr = ArrowConst(value: osc1Width) } }
-  }
-  var osc1ChorusCentRadius: CoreFloat = 0 { didSet {
-    spatialPreset?.handles?.namedChorusers["osc1Choruser"]!.forEach { $0.chorusCentRadius = Int(osc1ChorusCentRadius) } }
-  }
-  var osc1ChorusNumVoices: CoreFloat = 0 { didSet {
-    spatialPreset?.handles?.namedChorusers["osc1Choruser"]!.forEach { $0.chorusNumVoices = Int(osc1ChorusNumVoices) } }
-  }
-  var osc1CentDetune: CoreFloat = 0 { didSet {
-    spatialPreset?.handles?.namedConsts["osc1CentDetune"]!.forEach { $0.val = osc1CentDetune } }
-  }
-  var osc1Octave: CoreFloat = 0 { didSet {
-    spatialPreset?.handles?.namedConsts["osc1Octave"]!.forEach { $0.val = osc1Octave } }
-  }
-  var osc2CentDetune: CoreFloat = 0 { didSet {
-    spatialPreset?.handles?.namedConsts["osc2CentDetune"]!.forEach { $0.val = osc2CentDetune } }
-  }
-  var osc2Octave: CoreFloat = 0 { didSet {
-    spatialPreset?.handles?.namedConsts["osc2Octave"]!.forEach { $0.val = osc2Octave } }
-  }
-  var osc3CentDetune: CoreFloat = 0 { didSet {
-    spatialPreset?.handles?.namedConsts["osc3CentDetune"]!.forEach { $0.val = osc3CentDetune } }
-  }
-  var osc3Octave: CoreFloat = 0 { didSet {
-    spatialPreset?.handles?.namedConsts["osc3Octave"]!.forEach { $0.val = osc3Octave } }
-  }
-  var osc2Width: CoreFloat = 0 { didSet {
-    spatialPreset?.handles?.namedBasicOscs["osc2"]!.forEach { $0.widthArr = ArrowConst(value: osc2Width) } }
-  }
-  var osc2ChorusCentRadius: CoreFloat = 0 { didSet {
-    spatialPreset?.handles?.namedChorusers["osc2Choruser"]!.forEach { $0.chorusCentRadius = Int(osc2ChorusCentRadius) } }
-  }
-  var osc2ChorusNumVoices: CoreFloat = 0 { didSet {
-    spatialPreset?.handles?.namedChorusers["osc1Choruser"]!.forEach { $0.chorusNumVoices = Int(osc2ChorusNumVoices) } }
-  }
-  var osc3Width: CoreFloat = 0 { didSet {
-    spatialPreset?.handles?.namedBasicOscs["osc3"]!.forEach { $0.widthArr = ArrowConst(value: osc3Width) } }
-  }
-  var osc3ChorusCentRadius: CoreFloat = 0 { didSet {
-    spatialPreset?.handles?.namedChorusers["osc3Choruser"]!.forEach { $0.chorusCentRadius = Int(osc3ChorusCentRadius) } }
-  }
-  var osc3ChorusNumVoices: CoreFloat = 0 { didSet {
-    spatialPreset?.handles?.namedChorusers["osc3Choruser"]!.forEach { $0.chorusNumVoices = Int(osc3ChorusNumVoices) } }
-  }
+  // Rose params
   var roseFreq: CoreFloat = 0 { didSet {
     presets.forEach { $0.positionLFO?.freq.val = roseFreq } }
   }
@@ -217,96 +118,24 @@ class SyntacticSynth {
   private func cleanup() {
     spatialPreset?.cleanup()
     spatialPreset = nil
+    arrowHandler = nil
   }
   
   private func setup(presetSpec: PresetSyntax) {
     spatialPreset = SpatialPreset(presetSpec: presetSpec, engine: engine, numVoices: numVoices)
     
-    // read from spatialPreset to populate local UI-bound properties
-    if let ampEnv = spatialPreset?.handles?.namedADSREnvelopes["ampEnv"]?.first {
-      ampAttack  = ampEnv.env.attackTime
-      ampDecay   = ampEnv.env.decayTime
-      ampSustain = ampEnv.env.sustainLevel
-      ampRelease = ampEnv.env.releaseTime
+    // Build ArrowHandler from the syntax tree + aggregated handles
+    if let arrowSyntax = presetSpec.arrow {
+      let handler = ArrowHandler(syntax: arrowSyntax)
+      if let handles = spatialPreset?.handles {
+        handler.attachHandles(handles)
+      }
+      arrowHandler = handler
+    } else {
+      arrowHandler = nil
     }
     
-    if let filterEnv = spatialPreset?.handles?.namedADSREnvelopes["filterEnv"]?.first {
-      filterAttack  = filterEnv.env.attackTime
-      filterDecay   = filterEnv.env.decayTime
-      filterSustain = filterEnv.env.sustainLevel
-      filterRelease = filterEnv.env.releaseTime
-    }
-    
-    if let cutoff = spatialPreset?.handles?.namedConsts["cutoff"]?.first {
-      filterCutoff = cutoff.val
-    }
-    if let res = spatialPreset?.handles?.namedConsts["resonance"]?.first {
-      filterResonance = res.val
-    }
-    
-    if let vibAmp = spatialPreset?.handles?.namedConsts["vibratoAmp"]?.first {
-      vibratoAmp = vibAmp.val
-    }
-    if let vibFreq = spatialPreset?.handles?.namedConsts["vibratoFreq"]?.first {
-      vibratoFreq = vibFreq.val
-    }
-    
-    if let o1Mix = spatialPreset?.handles?.namedConsts["osc1Mix"]?.first {
-      osc1Mix = o1Mix.val
-    }
-    if let o2Mix = spatialPreset?.handles?.namedConsts["osc2Mix"]?.first {
-      osc2Mix = o2Mix.val
-    }
-    if let o3Mix = spatialPreset?.handles?.namedConsts["osc3Mix"]?.first {
-      osc3Mix = o3Mix.val
-    }
-    
-    if let o1Choruser = spatialPreset?.handles?.namedChorusers["osc1Choruser"]?.first {
-      osc1ChorusCentRadius = CoreFloat(o1Choruser.chorusCentRadius)
-      osc1ChorusNumVoices  = CoreFloat(o1Choruser.chorusNumVoices)
-    }
-    if let o2Choruser = spatialPreset?.handles?.namedChorusers["osc2Choruser"]?.first {
-      osc2ChorusCentRadius = CoreFloat(o2Choruser.chorusCentRadius)
-      osc2ChorusNumVoices  = CoreFloat(o2Choruser.chorusNumVoices)
-    }
-    if let o3Choruser = spatialPreset?.handles?.namedChorusers["osc3Choruser"]?.first {
-      osc3ChorusCentRadius = CoreFloat(o3Choruser.chorusCentRadius)
-      osc3ChorusNumVoices  = CoreFloat(o3Choruser.chorusNumVoices)
-    }
-    
-    if let o1 = spatialPreset?.handles?.namedBasicOscs["osc1"]?.first {
-      oscShape1 = o1.shape
-      osc1Width = o1.widthArr.of(0)
-    }
-    if let o2 = spatialPreset?.handles?.namedBasicOscs["osc2"]?.first {
-      oscShape2 = o2.shape
-      osc2Width = o2.widthArr.of(0)
-    }
-    if let o3 = spatialPreset?.handles?.namedBasicOscs["osc3"]?.first {
-      oscShape3 = o3.shape
-      osc3Width = o3.widthArr.of(0)
-    }
-    
-    if let o1Oct = spatialPreset?.handles?.namedConsts["osc1Octave"]?.first {
-      osc1Octave = o1Oct.val
-    }
-    if let o2Oct = spatialPreset?.handles?.namedConsts["osc2Octave"]?.first {
-      osc2Octave = o2Oct.val
-    }
-    if let o3Oct = spatialPreset?.handles?.namedConsts["osc3Octave"]?.first {
-      osc3Octave = o3Oct.val
-    }
-    
-    if let o1Det = spatialPreset?.handles?.namedConsts["osc1CentDetune"]?.first {
-      osc1CentDetune = o1Det.val
-    }
-    if let o2Det = spatialPreset?.handles?.namedConsts["osc2CentDetune"]?.first {
-      osc2CentDetune = o2Det.val
-    }
-    if let o3Det = spatialPreset?.handles?.namedConsts["osc3CentDetune"]?.first {
-      osc3CentDetune = o3Det.val
-    }
-    
+    // Read rose, effects, and delay values from the first preset
     if let posLFO = presets[0].positionLFO {
       roseAmp = posLFO.amp.val
       roseFreq = posLFO.freq.val
@@ -325,138 +154,4 @@ class SyntacticSynth {
     distortionPreGain = presets[0].getDistortionPreGain()
     distortionWetDryMix = presets[0].getDistortionWetDryMix()
   }
-}
-
-struct SyntacticSynthView: View {
-  @State private var synth: SyntacticSynth
-  @State private var seq: Sequencer? = nil
-  
-  init(synth: SyntacticSynth) {
-    self.synth = synth
-  }
-  
-  var body: some View {
-    
-    ScrollView {
-      Spacer()
-      
-      Picker("Instrument 1", selection: $synth.oscShape1) {
-        ForEach(BasicOscillator.OscShape.allCases, id: \.self) { option in
-          Text(String(describing: option))
-        }
-      }
-      .pickerStyle(.segmented)
-      Picker("Instrument 2", selection: $synth.oscShape2) {
-        ForEach(BasicOscillator.OscShape.allCases, id: \.self) { option in
-          Text(String(describing: option))
-        }
-      }
-      .pickerStyle(.segmented)
-      Picker("Instrument 3", selection: $synth.oscShape3) {
-        ForEach(BasicOscillator.OscShape.allCases, id: \.self) { option in
-          Text(String(describing: option))
-        }
-      }
-      .pickerStyle(.segmented)
-      HStack {
-        KnobbyKnob(value: $synth.osc1CentDetune, label: "Detune1", range: -500...500, stepSize: 1)
-        KnobbyKnob(value: $synth.osc1Octave, label: "Oct1", range: -5...5, stepSize: 1)
-        KnobbyKnob(value: $synth.osc1ChorusCentRadius, label: "Cents1", range: 0...30, stepSize: 1)
-        KnobbyKnob(value: $synth.osc1ChorusNumVoices, label: "Voices1", range: 1...12, stepSize: 1)
-        KnobbyKnob(value: $synth.osc1Width, label: "PulseW1", range: 0...1)
-      }
-      HStack {
-        KnobbyKnob(value: $synth.osc2CentDetune, label: "Detune2", range: -500...500, stepSize: 1)
-        KnobbyKnob(value: $synth.osc2Octave, label: "Oct2", range: -5...5, stepSize: 1)
-        KnobbyKnob(value: $synth.osc2ChorusCentRadius, label: "Cents2", range: 0...30, stepSize: 1)
-        KnobbyKnob(value: $synth.osc2ChorusNumVoices, label: "Voices2", range: 1...12, stepSize: 1)
-        KnobbyKnob(value: $synth.osc2Width, label: "PulseW2", range: 0...1)
-      }
-      HStack {
-        KnobbyKnob(value: $synth.osc3CentDetune, label: "Detune3", range: -500...500, stepSize: 1)
-        KnobbyKnob(value: $synth.osc3Octave, label: "Oct3", range: -5...5, stepSize: 1)
-        KnobbyKnob(value: $synth.osc3ChorusCentRadius, label: "Cents3", range: 0...30, stepSize: 1)
-        KnobbyKnob(value: $synth.osc3ChorusNumVoices, label: "Voices3", range: 1...12, stepSize: 1)
-        KnobbyKnob(value: $synth.osc3Width, label: "PulseW3", range: 0...1)
-      }
-      HStack {
-        KnobbyKnob(value: $synth.osc1Mix, label: "Osc1", range: 0...1)
-        KnobbyKnob(value: $synth.osc2Mix, label: "Osc2", range: 0...1)
-        KnobbyKnob(value: $synth.osc3Mix, label: "Osc3", range: 0...1)
-      }
-      HStack {
-        KnobbyKnob(value: $synth.ampAttack, label: "Amp atk", range: 0...2)
-        KnobbyKnob(value: $synth.ampDecay, label: "Amp dec", range: 0...2)
-        KnobbyKnob(value: $synth.ampSustain, label: "Amp sus")
-        KnobbyKnob(value: $synth.ampRelease, label: "Amp rel", range: 0...2)
-      }
-      HStack {
-        KnobbyKnob(value: $synth.filterAttack, label:  "Filter atk", range: 0...2)
-        KnobbyKnob(value: $synth.filterDecay, label:   "Filter dec", range: 0...2)
-        KnobbyKnob(value: $synth.filterSustain, label: "Filter sus")
-        KnobbyKnob(value: $synth.filterRelease, label: "Filter rel", range: 0.03...2)
-      }
-      HStack {
-        KnobbyKnob(value: $synth.filterCutoff, label:  "Filter cut", range: 1...20000, stepSize: 1)
-        KnobbyKnob(value: $synth.filterResonance, label: "Filter res", range: 0.1...15, stepSize: 0.01)
-      }
-      HStack {
-        KnobbyKnob(value: $synth.vibratoAmp, label:  "Vib amp", range: 0...20)
-        KnobbyKnob(value: $synth.vibratoFreq, label: "Vib freq", range: 0...30)
-      }
-      HStack {
-        KnobbyKnob(value: $synth.roseAmp, label:  "Rose amp", range: 0...20)
-        KnobbyKnob(value: $synth.roseFreq, label: "Rose freq", range: 0...30)
-        KnobbyKnob(value: $synth.roseLeaves, label: "Rose leaves", range: 0...30)
-      }
-      HStack {
-        VStack {
-          Picker("Preset", selection: $synth.reverbPreset) {
-            ForEach(AVAudioUnitReverbPreset.allCases, id: \.self) { option in
-              Text(option.name)
-            }
-          }
-          .pickerStyle(.menu)
-          Text("Reverb")
-        }
-        KnobbyKnob(value: $synth.reverbMix, label:  "Dry/Wet", range: 0...100)
-      }
-      if synth.delayAvailable {
-        HStack {
-          KnobbyKnob(value: $synth.delayTime, label: "Delay", range: 0...30)
-          KnobbyKnob(value: $synth.delayFeedback, label: "Dly fdbk", range: 0...30)
-          KnobbyKnob(value: $synth.delayWetDryMix, label: "Dly mix", range: 0...100)
-          KnobbyKnob(value: $synth.delayLowPassCutoff, label: "Dly flt", range: 0...1000)
-        }
-      }
-      if synth.distortionAvailable {
-        HStack {
-          VStack {
-            Picker("Preset", selection: $synth.distortionPreset) {
-              ForEach(AVAudioUnitDistortionPreset.allCases, id: \.self) { option in
-                Text(option.name)
-              }
-            }
-            .pickerStyle(.menu)
-            Text("Distortion")
-          }
-          KnobbyKnob(value: $synth.distortionPreGain, label: "Pregain", range: 0...30)
-          KnobbyKnob(value: $synth.distortionWetDryMix, label: "Dry/wet", range: 0...100)
-        }
-      }
-    }
-    .onAppear {
-      if seq == nil {
-        do {
-          try! synth.engine.start()
-        }
-        seq = Sequencer(synth: synth, numTracks: 2)
-      }
-    }
-  }
-}
-
-#Preview {
-  let presetSpec = Bundle.main.decode(PresetSyntax.self, from: "saw1_preset.json")
-  SyntacticSynthView(synth: SyntacticSynth(engine: SpatialAudioEngine(), presetSpec: presetSpec))
 }
