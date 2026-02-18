@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9BC0FCA62E704EA900472A5A"
-               BuildableName = "ProgressionPlayer.app"
-               BlueprintName = "ProgressionPlayer"
-               ReferencedContainer = "container:ProgressionPlayer.xcodeproj">
+               BuildableName = "Orbital.app"
+               BlueprintName = "Orbital"
+               ReferencedContainer = "container:Orbital.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -36,9 +36,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9BC0FCB32E704EAA00472A5A"
-               BuildableName = "ProgressionPlayerTests.xctest"
-               BlueprintName = "ProgressionPlayerTests"
-               ReferencedContainer = "container:ProgressionPlayer.xcodeproj">
+               BuildableName = "OrbitalTests.xctest"
+               BlueprintName = "OrbitalTests"
+               ReferencedContainer = "container:Orbital.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9BC0FCBD2E704EAA00472A5A"
-               BuildableName = "ProgressionPlayerUITests.xctest"
-               BlueprintName = "ProgressionPlayerUITests"
-               ReferencedContainer = "container:ProgressionPlayer.xcodeproj">
+               BuildableName = "OrbitalUITests.xctest"
+               BlueprintName = "OrbitalUITests"
+               ReferencedContainer = "container:Orbital.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -70,9 +70,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9BC0FCA62E704EA900472A5A"
-            BuildableName = "ProgressionPlayer.app"
-            BlueprintName = "ProgressionPlayer"
-            ReferencedContainer = "container:ProgressionPlayer.xcodeproj">
+            BuildableName = "Orbital.app"
+            BlueprintName = "Orbital"
+            ReferencedContainer = "container:Orbital.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -87,9 +87,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9BC0FCA62E704EA900472A5A"
-            BuildableName = "ProgressionPlayer.app"
-            BlueprintName = "ProgressionPlayer"
-            ReferencedContainer = "container:ProgressionPlayer.xcodeproj">
+            BuildableName = "Orbital.app"
+            BlueprintName = "Orbital"
+            ReferencedContainer = "container:Orbital.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
