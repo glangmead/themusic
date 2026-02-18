@@ -65,13 +65,111 @@ struct ModulatorSyntax: Codable {
   }
 }
 
-// MARK: - RootProgressionSyntax
+// MARK: - IteratorSyntax
 
-/// A time-varying sequence of root notes, cycled with a random wait between changes.
-struct RootProgressionSyntax: Codable {
-  let roots: [String]
-  let waitMin: CoreFloat
-  let waitMax: CoreFloat
+/// Compositional specification for how to iterate over a list of values.
+/// Decodes from JSON as either a bare string ("cyclic", "shuffled", "random")
+/// or a nested object for composed iterators like "waiting".
+///
+/// Examples:
+///   "cyclic"
+///   "shuffled"
+///   "random"
+///   { "waiting": { "iterator": "cyclic", "timeBetweenChanges": { "exponentialRand": { "min": 10, "max": 25 } } } }
+///   { "waiting": { "iterator": "shuffled", "timeBetweenChanges": { "rand": { "min": 5, "max": 15 } } } }
+enum IteratorSyntax: Codable {
+  case cyclic
+  case shuffled
+  case random
+  indirect case waiting(iterator: IteratorSyntax, timeBetweenChanges: ArrowSyntax)
+
+  /// Compile this syntax into a live iterator over the given items.
+  func compile<T>(_ items: [T]) -> any IteratorProtocol<T> {
+    switch self {
+    case .cyclic:
+      return items.cyclicIterator()
+    case .shuffled:
+      return items.shuffledIterator()
+    case .random:
+      return items.randomIterator()
+    case .waiting(let innerSyntax, let arrowSyntax):
+      let inner = innerSyntax.compile(items)
+      let arrow = arrowSyntax.compile().wrappedArrow
+      return WaitingIterator(iterator: inner, timeBetweenChanges: arrow)
+    }
+  }
+
+  // MARK: - Custom Codable
+
+  private struct WaitingPayload: Codable {
+    let iterator: IteratorSyntax
+    let timeBetweenChanges: ArrowSyntax
+  }
+
+  init(from decoder: Decoder) throws {
+    // Try bare string first: "cyclic", "shuffled", "random"
+    if let container = try? decoder.singleValueContainer(),
+       let str = try? container.decode(String.self) {
+      switch str.lowercased() {
+      case "cyclic":   self = .cyclic
+      case "shuffled": self = .shuffled
+      case "random":   self = .random
+      default:         self = .cyclic
+      }
+      return
+    }
+
+    // Try keyed container for composed iterators: { "waiting": { ... } }
+    let container = try decoder.container(keyedBy: CodingKeys.self)
+    if let payload = try container.decodeIfPresent(WaitingPayload.self, forKey: .waiting) {
+      self = .waiting(iterator: payload.iterator, timeBetweenChanges: payload.timeBetweenChanges)
+      return
+    }
+
+    self = .cyclic
+  }
+
+  func encode(to encoder: Encoder) throws {
+    switch self {
+    case .cyclic:
+      var container = encoder.singleValueContainer()
+      try container.encode("cyclic")
+    case .shuffled:
+      var container = encoder.singleValueContainer()
+      try container.encode("shuffled")
+    case .random:
+      var container = encoder.singleValueContainer()
+      try container.encode("random")
+    case .waiting(let inner, let arrow):
+      var container = encoder.container(keyedBy: CodingKeys.self)
+      try container.encode(WaitingPayload(iterator: inner, timeBetweenChanges: arrow), forKey: .waiting)
+    }
+  }
+
+  private enum CodingKeys: String, CodingKey {
+    case waiting
+  }
+}
+
+// MARK: - IteratedListSyntax
+
+/// A list of candidate values paired with an emission strategy.
+/// JSON: { "candidates": [...], "emission": <IteratorSyntax> }
+/// The emission defaults to "cyclic" if omitted.
+struct IteratedListSyntax<T: Codable>: Codable {
+  let candidates: [T]
+  let emission: IteratorSyntax?
+
+  /// Compile into a live iterator, applying `transform` to resolve each candidate.
+  func compile<U>(default defaultEmission: IteratorSyntax, transform: (T) -> U) -> any IteratorProtocol<U> {
+    let resolved = candidates.map(transform)
+    return (emission ?? defaultEmission).compile(resolved)
+  }
+
+  /// Compile directly when no transformation is needed (T == U).
+  func compile(default defaultEmission: IteratorSyntax) -> any IteratorProtocol<T> {
+    (emission ?? defaultEmission).compile(candidates)
+  }
 }
 
 // MARK: - NoteGeneratorSyntax
@@ -87,16 +185,15 @@ enum NoteGeneratorSyntax: Codable {
   /// Chord progressions from a Markov model (e.g., Tymoczko baroque style).
   case chordProgression(scale: String, root: String, style: String?)
 
-  /// Single-note melody from scale degrees with configurable traversal order.
-  /// When `rootProgression` is provided, the root cycles through the list
-  /// with a random wait (in seconds) between changes.
+  /// Single-note melody from scale degrees with compositional iterator control.
+  /// Each parameter is an `IteratedListSyntax` bundling candidates + emission strategy.
+  /// The `ordering` field sets the default emission for any field that omits its own.
   case melodic(
-    scale: String,
-    root: String,
-    octaves: [Int],
-    degrees: [Int],
-    ordering: String?,
-    rootProgression: RootProgressionSyntax?
+    scales: IteratedListSyntax<String>,
+    roots: IteratedListSyntax<String>,
+    octaves: IteratedListSyntax<Int>,
+    degrees: IteratedListSyntax<Int>,
+    ordering: IteratorSyntax?
   )
 
   func compile() -> any IteratorProtocol<[MidiNote]> {
@@ -117,28 +214,17 @@ enum NoteGeneratorSyntax: Codable {
         rootNoteGenerator: [root].cyclicIterator()
       )
 
-    case .melodic(let scaleName, let rootName, let octaves, let degrees, let ordering, let rootProgression):
-      let scale = Self.resolveScale(scaleName)
-      let order = ordering ?? "shuffled"
+    case .melodic(let scales, let roots, let octaves, let degrees, let ordering):
+      let defaultOrder: IteratorSyntax = ordering ?? .shuffled
 
-      let degreeIter: any IteratorProtocol<Int> = Self.makeOrdering(degrees, order: order)
-      let octaveIter: any IteratorProtocol<Int> = Self.makeOrdering(octaves, order: "random")
-
-      let rootIter: any IteratorProtocol<NoteClass>
-      if let prog = rootProgression {
-        let roots = prog.roots.map { Self.resolveNoteClass($0) }
-        rootIter = WaitingIterator(
-          iterator: roots.cyclicIterator(),
-          timeBetweenChanges: ArrowRandom(min: prog.waitMin, max: prog.waitMax)
-        )
-      } else {
-        let root = Self.resolveNoteClass(rootName)
-        rootIter = [root].cyclicIterator()
-      }
+      let scaleIter = scales.compile(default: defaultOrder, transform: Self.resolveScale)
+      let rootIter = roots.compile(default: defaultOrder, transform: Self.resolveNoteClass)
+      let octaveIter = octaves.compile(default: defaultOrder)
+      let degreeIter = degrees.compile(default: defaultOrder)
 
       return MidiPitchAsChordGenerator(
         pitchGenerator: MidiPitchGenerator(
-          scaleGenerator: [scale].cyclicIterator(),
+          scaleGenerator: scaleIter,
           degreeGenerator: degreeIter,
           rootNoteGenerator: rootIter,
           octaveGenerator: octaveIter
@@ -190,14 +276,7 @@ enum NoteGeneratorSyntax: Codable {
     }
   }
 
-  private static func makeOrdering<T>(_ items: [T], order: String) -> any IteratorProtocol<T> {
-    switch order.lowercased() {
-    case "cyclic":   return items.cyclicIterator()
-    case "random":   return items.randomIterator()
-    case "shuffled": return items.shuffledIterator()
-    default:         return items.cyclicIterator()
-    }
-  }
+
 }
 
 // MARK: - PatternSyntax

@@ -199,24 +199,35 @@ final class ArrowExponentialRandom: Arrow11 {
     super.init()
   }
   override func of(_ t: CoreFloat) -> CoreFloat {
-    let rando = CoreFloat.random(in: 0...1) * min * exp(log(max / min))
-    //print("exponential random \(min)-\(max): \(rando)")
-    return rando
+    // Log-uniform distribution: min * exp(U * log(max/min)), U in [0,1]
+    let result = min * exp(CoreFloat.random(in: 0...1) * log(max / min))
+    return result
   }
   
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
     let count = vDSP_Length(inputs.count)
-    let factor = min * exp(log(max / min))
+    let logRatio = log(max / min)
     
-    // Generate random values in outputs
+    // Generate random values in [0, 1]
     for i in 0..<inputs.count {
       outputs[i] = CoreFloat.random(in: 0...1)
     }
     
-    // Multiply by constant factor (no slicing - use C API)
+    // outputs = outputs * log(max/min)
     outputs.withUnsafeMutableBufferPointer { outBuf in
-      var f = factor
-      vDSP_vsmulD(outBuf.baseAddress!, 1, &f, outBuf.baseAddress!, 1, count)
+      var lr = logRatio
+      vDSP_vsmulD(outBuf.baseAddress!, 1, &lr, outBuf.baseAddress!, 1, count)
+    }
+    
+    // outputs = exp(outputs)  — no vectorized exp for Double, do scalar
+    for i in 0..<inputs.count {
+      outputs[i] = exp(outputs[i])
+    }
+    
+    // outputs = outputs * min
+    outputs.withUnsafeMutableBufferPointer { outBuf in
+      var m = min
+      vDSP_vsmulD(outBuf.baseAddress!, 1, &m, outBuf.baseAddress!, 1, count)
     }
   }
 }

@@ -4,15 +4,26 @@
   "numVoices": 20,
   "noteGenerator": {
     "melodic": {
-      "scale": "lydian",
-      "root": "C",
-      "octaves": [2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 5],
-      "degrees": [0, 1, 2, 3, 4, 5, 6],
-      "ordering": "shuffled",
-      "rootProgression": {
-        "roots": ["C", "E", "G"],
-        "waitMin": 10,
-        "waitMax": 25
+      "scales": {
+        "candidates": ["lydian"],
+        "emission": "cyclic"
+      },
+      "roots": {
+        "candidates": ["C", "E", "G"],
+        "emission": {
+          "waiting": {
+            "iterator": "cyclic",
+            "timeBetweenChanges": { "rand": { "min": 10, "max": 25 } }
+          }
+        }
+      },
+      "octaves": {
+        "candidates": [2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 5],
+        "emission": "random"
+      },
+      "degrees": {
+        "candidates": [0, 1, 2, 3, 4, 5, 6],
+        "emission": "shuffled"
       }
     }
   },
