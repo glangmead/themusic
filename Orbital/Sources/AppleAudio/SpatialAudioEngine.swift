@@ -125,6 +125,27 @@ class SpatialAudioEngine {
     }
   }
   
+  /// Rapidly fade output to silence to avoid a click/pop when the engine stops.
+  func fadeOutAndStop(duration: TimeInterval = 0.05) {
+    guard audioEngine.isRunning else { return }
+    
+    let startVolume = envNode.outputVolume
+    let steps = 10
+    let interval = duration / Double(steps)
+    
+    for i in 1...steps {
+      let volume = startVolume * Float(1.0 - Double(i) / Double(steps))
+      DispatchQueue.main.asyncAfter(deadline: .now() + interval * Double(i)) { [weak self] in
+        self?.envNode.outputVolume = volume
+      }
+    }
+    
+    // Stop the engine after the fade completes.
+    DispatchQueue.main.asyncAfter(deadline: .now() + duration + 0.01) { [weak self] in
+      self?.audioEngine.stop()
+    }
+  }
+  
   func stop() {
     audioEngine.stop()
   }

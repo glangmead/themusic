@@ -12,6 +12,8 @@ import SwiftUI
 struct ProgressionPlayerApp: App {
   @State private var engine = SpatialAudioEngine()
   @State private var songLibrary = SongLibrary()
+  @Environment(\.scenePhase) private var scenePhase
+  
   init() {
     do {
       try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default, options: [.mixWithOthers, .allowBluetoothHFP, .allowAirPlay])
@@ -29,6 +31,9 @@ struct ProgressionPlayerApp: App {
       AppView()
         .environment(engine)
         .environment(songLibrary)
+        .onReceive(NotificationCenter.default.publisher(for: UIApplication.willTerminateNotification)) { _ in
+          engine.fadeOutAndStop()
+        }
     }
   }
 }
