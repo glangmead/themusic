@@ -35,9 +35,12 @@ struct OrbitalView: View {
         }
       }
     }
-    .fullScreenCover(isPresented: $isShowingVisualizer) {
+    .overlay {
       VisualizerView(engine: engine, isPresented: $isShowingVisualizer)
         .ignoresSafeArea()
+        .opacity(isShowingVisualizer ? 1 : 0)
+        .allowsHitTesting(isShowingVisualizer)
+        .animation(.easeInOut(duration: 0.4), value: isShowingVisualizer)
     }
   }
 }

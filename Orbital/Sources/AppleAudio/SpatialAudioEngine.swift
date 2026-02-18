@@ -7,6 +7,7 @@
 
 import AVFAudio
 import Observation
+import os
 
 @Observable
 class SpatialAudioEngine {
@@ -71,45 +72,57 @@ class SpatialAudioEngine {
     
     // And then, start the engine! This is the moment the sound begins to play.
     try audioEngine.start()
+
+    // Install the audio tap once up-front so that opening the visualizer
+    // later doesn't cause a glitch by reconfiguring the live audio graph.
+    installTapOnce()
   }
   
-  func installTap(tapBlock: @escaping ([Float]) -> Void) {
+  /// Client-provided callback; set before calling `start()` or at any time.
+  /// Called on the audio-render thread with interleaved samples.
+  /// The tap is installed once at engine start to avoid audio glitches.
+  private let tapCallback = OSAllocatedUnfairLock<(([Float]) -> Void)?>(initialState: nil)
+  private var tapInstalled = false
+
+  func setTapCallback(_ block: (([Float]) -> Void)?) {
+    tapCallback.withLock { $0 = block }
+  }
+
+  /// Install the tap on the envNode. Called once during `start()`.
+  private func installTapOnce() {
+    guard !tapInstalled else { return }
+    tapInstalled = true
+
     let node = envNode
     let format = node.outputFormat(forBus: 0)
-    node.removeTap(onBus: 0)
-    
-    // public typealias AVAudioNodeTapBlock = (AVAudioPCMBuffer, AVAudioTime) -> Void
-    node.installTap(onBus: 0, bufferSize: 1024, format: format) { buffer, time in
+
+    node.installTap(onBus: 0, bufferSize: 1024, format: format) { [weak self] buffer, time in
+      guard let self else { return }
+      guard let callback = self.tapCallback.withLock({ $0 }) else { return }
       guard let channelData = buffer.floatChannelData else { return }
       let frameLength = Int(buffer.frameLength)
       let channels = Int(format.channelCount)
-      
+
       // Prepare interleaved buffer, to be re-interleaved by JavaScript
-      // If mono, size = frameLength. If stereo, size = frameLength * 2.
       let outputChannels = min(channels, 2)
       var samples = [Float](repeating: 0, count: frameLength * outputChannels)
-      
+
       if outputChannels == 2 {
-          let ptrL = channelData[0]
-          let ptrR = channelData[1]
-          for i in 0..<frameLength {
-              samples[i*2] = ptrL[i]
-              samples[i*2+1] = ptrR[i]
-          }
+        let ptrL = channelData[0]
+        let ptrR = channelData[1]
+        for i in 0..<frameLength {
+          samples[i*2] = ptrL[i]
+          samples[i*2+1] = ptrR[i]
+        }
       } else if outputChannels == 1 {
-          let ptr = channelData[0]
-          for i in 0..<frameLength {
-              samples[i] = ptr[i]
-          }
+        let ptr = channelData[0]
+        for i in 0..<frameLength {
+          samples[i] = ptr[i]
+        }
       }
-      
-      // call the provided closure
-      tapBlock(samples)
+
+      callback(samples)
     }
-  }
-  
-  func removeTap() {
-    envNode.removeTap(onBus: 0)
   }
   
   func stop() {

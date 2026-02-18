@@ -66,7 +66,7 @@ class VisualizerHolder: NSObject, WKNavigationDelegate, WKScriptMessageHandler {
   private var pendingSamples: [Float] = []
   private let sendThreshold = 1024
   private let samplesLock = OSAllocatedUnfairLock()
-  private var tapInstalled = false
+  private var callbackInstalled = false
   private let sendingEnabled = OSAllocatedUnfairLock(initialState: false)
   
   // Callbacks wired by the SwiftUI layer
@@ -162,12 +162,14 @@ class VisualizerHolder: NSObject, WKNavigationDelegate, WKScriptMessageHandler {
     sendingEnabled.withLock { $0 = true }
     injectSafeAreaTop()
     
-    guard !tapInstalled else { return }
-    tapInstalled = true
+    guard !callbackInstalled else { return }
+    callbackInstalled = true
     
-    // Install the tap once and keep it for the lifetime of the holder.
-    // We gate JS calls with sendingEnabled so we don't waste CPU while hidden.
-    engine.installTap { [weak self] samples in
+    // Set the tap callback on the engine. The actual audio tap was already
+    // installed during engine.start(), so this won't reconfigure the audio
+    // graph and won't cause a glitch. We gate JS calls with sendingEnabled
+    // so we don't waste CPU while hidden.
+    engine.setTapCallback { [weak self] samples in
       guard let self = self, self.sendingEnabled.withLock({ $0 }) else { return }
       
       let samplesToSend: [Float]? = self.samplesLock.withLock {
@@ -196,6 +198,21 @@ class VisualizerHolder: NSObject, WKNavigationDelegate, WKScriptMessageHandler {
   func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
     isLoaded = true
     injectSafeAreaTop()
+    
+    // Suspend the Web AudioContext that Butterchurn creates and disable the
+    // watchdog that would resume it. The visualizer doesn't need Web Audio —
+    // waveform data is injected directly via pushSamples(). This saves
+    // resources and avoids any audio session interference.
+    let suspendJS = """
+    (function() {
+      if (window.audioContext) {
+        window.audioContext.suspend();
+        window.audioContext.resume = function() { return Promise.resolve(); };
+      }
+    })()
+    """
+    webView.evaluateJavaScript(suspendJS, completionHandler: nil)
+    
     #if DEBUG
     print("Visualizer webview finished loading index.html")
     #endif
@@ -282,9 +299,8 @@ struct VisualizerView: UIViewRepresentable {
       }
     }
     
-    h.installTapIfNeeded()
-    // Restore saved speed on reopen (page already loaded for persistent holder)
-    h.setSpeed(lastSpeed)
+    // Don't install the tap here — updateUIView will handle it when
+    // isPresented becomes true. This avoids doing work at app startup.
     return h.webView
   }
   
@@ -303,12 +319,14 @@ struct VisualizerView: UIViewRepresentable {
         }
       }
     }
-  }
-  
-  static func dismantleUIView(_ uiView: VisualizerWebView, coordinator: Coordinator) {
-    // Don't destroy the web view — it persists in the static holder.
-    // Just remove the audio tap to save CPU while hidden.
-    coordinator.holder?.removeTap()
+    
+    // Toggle the audio tap based on visibility.
+    if isPresented {
+      h?.installTapIfNeeded()
+      h?.setSpeed(lastSpeed)
+    } else {
+      h?.removeTap()
+    }
   }
   
   func makeCoordinator() -> Coordinator {
