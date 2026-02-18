@@ -1,6 +1,7 @@
 {
   "name": "Baroque Chords",
-  "presetName": "5th_cluedo",
+  "presetFilename": "prophet_brass",
+  "numVoices": 20,
   "noteGenerator": {
     "chordProgression": {
       "scale": "major",

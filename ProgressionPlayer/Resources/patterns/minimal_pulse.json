@@ -1,6 +1,6 @@
 {
   "name": "Minimal Pulse",
-  "presetName": "sine",
+  "presetFilename": "sine",
   "noteGenerator": {
     "fixed": {
       "events": [

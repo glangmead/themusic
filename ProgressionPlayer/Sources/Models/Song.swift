@@ -21,6 +21,11 @@ class SongLibrary {
       name: "Aurora Borealis",
       patternFileName: "aurora_arpeggio.json",
       presetFileNames: ["auroraBorealis.json"]
-    )
+    ),
+    Song(
+      name: "Baroque Chords",
+      patternFileName: "baroque_chords.json",
+      presetFileNames: ["prophet_brass.json"]
+    ),
   ]
 }

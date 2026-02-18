@@ -42,7 +42,7 @@ class SongPlaybackState {
       from: song.patternFileName,
       subdirectory: "patterns"
     )
-    let presetFileName = patternSpec.presetName + ".json"
+    let presetFileName = patternSpec.presetFilename + ".json"
     let presetSpec = Bundle.main.decode(
       PresetSyntax.self,
       from: presetFileName,

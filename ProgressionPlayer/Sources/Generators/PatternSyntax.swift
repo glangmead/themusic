@@ -285,7 +285,7 @@ enum NoteGeneratorSyntax: Codable {
 /// Parallels PresetSyntax: decode from JSON, then compile() to get a runtime MusicPattern.
 struct PatternSyntax: Codable {
   let name: String
-  let presetName: String
+  let presetFilename: String
   let numVoices: Int?
   let noteGenerator: NoteGeneratorSyntax
   let sustain: TimingSyntax
@@ -293,7 +293,7 @@ struct PatternSyntax: Codable {
   let modulators: [ModulatorSyntax]?
 
   /// Compile into a MusicPattern using an already-constructed SpatialPreset.
-  /// The caller is responsible for resolving the presetName and creating
+  /// The caller is responsible for resolving the presetFilename and creating
   /// the SpatialPreset with the appropriate engine.
   func compile(spatialPreset: SpatialPreset, clock: any Clock<Duration> = ContinuousClock()) -> MusicPattern {
     let modulatorDict: [String: Arrow11]

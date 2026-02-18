@@ -1,6 +1,6 @@
 {
   "name": "Aurora Arpeggio",
-  "presetName": "auroraBorealis",
+  "presetFilename": "auroraBorealis",
   "numVoices": 20,
   "noteGenerator": {
     "melodic": {
