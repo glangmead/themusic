@@ -45,7 +45,6 @@ class Sampler {
     } else if let fileName = fileNames.first, let url = Bundle.main.url(forResource: fileName, withExtension: "sf2") {
       do {
         try node.loadSoundBankInstrument(at: url, program: program, bankMSB: bank, bankLSB: 0)
-        print("loaded program \(program) bankMSB \(bank) bankLSB 0")
       } catch {
         print("Error loading sound bank instrument \(fileName): \(error.localizedDescription)")
       }

@@ -104,17 +104,18 @@ private struct PresetFormContent: View {
     .navigationTitle(presetSpec.name)
     .toolbar {
       if let playbackState {
-        ToolbarItem {
+        ToolbarItemGroup {
           Button {
             playbackState.togglePlayback()
           } label: {
-            Image(systemName: playbackState.isPlaying ? "stop.fill" : "play.fill")
-              .foregroundStyle(.white)
-              .frame(width: 32, height: 32)
-              .background(playbackState.isPlaying ? Color.red : Color.green)
-              .clipShape(RoundedRectangle(cornerRadius: 6))
+            Image(systemName: playbackState.isPlaying && !playbackState.isPaused ? "pause.fill" : "play.fill")
           }
-          .buttonStyle(.plain)
+          Button {
+            playbackState.stop()
+          } label: {
+            Image(systemName: "stop.fill")
+          }
+          .disabled(!playbackState.isPlaying)
         }
       }
       ToolbarItem {

@@ -50,7 +50,7 @@ class SongPlaybackState {
   /// Called automatically by `play()`, but can also be called early so the
   /// preset list is populated before the user hits play.
   func loadTracks() {
-    guard tracks.isEmpty else { return }
+    guard compiledPatterns.isEmpty else { return }
 
     var compiled: [(MusicPattern, SpatialPreset)] = []
     var trackInfos: [TrackInfo] = []
@@ -152,7 +152,6 @@ class SongPlaybackState {
     playbackTask = nil
     musicPatterns = nil
     Task { await mp?.cleanup() }
-    tracks = []
     compiledPatterns = []
     isPlaying = false
     isPaused = false

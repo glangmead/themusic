@@ -19,35 +19,23 @@ struct SongCell: View {
   var body: some View {
     VStack(alignment: .leading, spacing: 12) {
       HStack(spacing: 12) {
-        // Play/Pause button
         Button {
           playbackState?.togglePlayback()
         } label: {
           Image(systemName: isPlaying && !isPaused ? "pause.fill" : "play.fill")
             .font(.title2)
-            .foregroundStyle(.white)
-            .frame(width: 48, height: 48)
-            .background(isPlaying && !isPaused ? Color.gray : Color.green)
-            .clipShape(RoundedRectangle(cornerRadius: 8))
         }
         .buttonStyle(.plain)
 
-        // Stop button — visible when playing or paused
-        if isPlaying {
-          Button {
-            playbackState?.stop()
-          } label: {
-            Image(systemName: "stop.fill")
-              .font(.title3)
-              .foregroundStyle(.white)
-              .frame(width: 36, height: 36)
-              .background(Color.red)
-              .clipShape(RoundedRectangle(cornerRadius: 6))
-          }
-          .buttonStyle(.plain)
+        Button {
+          playbackState?.stop()
+        } label: {
+          Image(systemName: "stop.fill")
+            .font(.title2)
         }
+        .buttonStyle(.plain)
+        .disabled(!isPlaying)
 
-        // Song name
         Text(song.name)
           .font(.title).fontWeight(.bold)
 
@@ -89,6 +77,10 @@ struct SongCell: View {
       }
     }
     .padding()
+    .contentShape(Rectangle())
+    .onTapGesture {
+      playbackState?.togglePlayback()
+    }
     .background(Color(.secondarySystemBackground))
     .clipShape(RoundedRectangle(cornerRadius: 12))
     .onAppear {

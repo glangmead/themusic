@@ -63,9 +63,8 @@ class VisualizerHolder: NSObject, WKNavigationDelegate, WKScriptMessageHandler {
   private var isLoaded = false
   
   // Audio tap state
-  private var pendingSamples: [Float] = []
+  private let pendingSamples = OSAllocatedUnfairLock(initialState: [Float]())
   private let sendThreshold = 1024
-  private let samplesLock = OSAllocatedUnfairLock()
   private var callbackInstalled = false
   private let sendingEnabled = OSAllocatedUnfairLock(initialState: false)
   
@@ -172,11 +171,11 @@ class VisualizerHolder: NSObject, WKNavigationDelegate, WKScriptMessageHandler {
     engine.setTapCallback { [weak self] samples in
       guard let self = self, self.sendingEnabled.withLock({ $0 }) else { return }
       
-      let samplesToSend: [Float]? = self.samplesLock.withLock {
-        self.pendingSamples.append(contentsOf: samples)
-        guard self.pendingSamples.count >= self.sendThreshold else { return nil }
-        let batch = self.pendingSamples
-        self.pendingSamples.removeAll(keepingCapacity: true)
+      let samplesToSend: [Float]? = self.pendingSamples.withLock { pending in
+        pending.append(contentsOf: samples)
+        guard pending.count >= self.sendThreshold else { return nil }
+        let batch = pending
+        pending.removeAll(keepingCapacity: true)
         return batch
       }
       
