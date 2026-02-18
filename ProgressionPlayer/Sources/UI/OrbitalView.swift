@@ -46,13 +46,11 @@ struct OrbitalView: View {
   library.songs = [
     Song(
       name: "Aurora Borealis",
-      patternFileName: "aurora_arpeggio.json",
-      presetFileNames: ["auroraBorealis.json"]
+      patternFileNames: ["aurora_arpeggio.json"]
     ),
     Song(
       name: "Baroque Chords",
-      patternFileName: "baroque_chords.json",
-      presetFileNames: ["5th_cluedo.json"]
+      patternFileNames: ["baroque_chords.json"]
     ),
   ]
   return OrbitalView()

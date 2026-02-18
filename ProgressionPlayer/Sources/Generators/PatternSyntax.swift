@@ -248,13 +248,19 @@ enum NoteGeneratorSyntax: Codable {
     return Self.parseMidiFile(filename: filename, track: track, loop: loop ?? true)
   }
 
-  private static func parseMidiFile(filename: String, track: Int?, loop: Bool) -> MidiEventSequence? {
+  /// Resolve a MIDI filename to a bundle URL.
+  static func midiFileURL(filename: String) -> URL? {
     let name = (filename as NSString).deletingPathExtension
     let ext = (filename as NSString).pathExtension
     guard let url = Bundle.main.url(forResource: name, withExtension: ext) else {
       print("MidiFile not found in bundle: \(filename)")
       return nil
     }
+    return url
+  }
+
+  private static func parseMidiFile(filename: String, track: Int?, loop: Bool) -> MidiEventSequence? {
+    guard let url = midiFileURL(filename: filename) else { return nil }
     return MidiEventSequence.from(url: url, trackIndex: track, loop: loop)
   }
 
@@ -316,6 +322,9 @@ struct PatternSyntax: Codable {
   let sustain: TimingSyntax?
   let gap: TimingSyntax?
   let modulators: [ModulatorSyntax]?
+  /// Optional per-track preset overrides for multi-track MIDI files.
+  /// Track N uses trackPresetFilenames[N] if available, otherwise presetFilename.
+  let trackPresetFilenames: [String]?
 
   /// Compile into a MusicPattern using an already-constructed SpatialPreset.
   /// The caller is responsible for resolving the presetFilename and creating
@@ -368,5 +377,51 @@ struct PatternSyntax: Codable {
     let sp = SpatialPreset(presetSpec: presetSpec, engine: engine, numVoices: voices)
     let pattern = compile(spatialPreset: sp, clock: clock)
     return (pattern, sp)
+  }
+
+  /// For MIDI files with no track specified, compile ALL nonempty tracks into separate
+  /// MusicPatterns, each with its own SpatialPreset. Returns an array of (pattern, spatialPreset, trackName).
+  /// Returns nil if this isn't a multi-track MIDI pattern (i.e. noteGenerator is not .midiFile or has a specific track).
+  func compileMultiTrack(presetSpec: PresetSyntax, engine: SpatialAudioEngine, clock: any Clock<Duration> = ContinuousClock()) -> [(pattern: MusicPattern, spatialPreset: SpatialPreset, trackName: String)]? {
+    guard case .midiFile(let filename, let track, let loop) = noteGenerator else { return nil }
+    // Only expand when track is nil (no specific track requested)
+    guard track == nil else { return nil }
+    guard let url = NoteGeneratorSyntax.midiFileURL(filename: filename) else { return nil }
+
+    let loopVal = loop ?? true
+    let allSeqs = MidiEventSequence.allTracks(url: url, loop: loopVal)
+    guard allSeqs.count > 0 else { return nil }
+
+    let modulatorDict: [String: Arrow11]
+    if let mods = modulators {
+      modulatorDict = Dictionary(mods.map { $0.compile() }, uniquingKeysWith: { first, _ in first })
+    } else {
+      modulatorDict = [:]
+    }
+
+    let voices = numVoices ?? 12
+
+    return allSeqs.enumerated().map { (i, entry) in
+      // Use per-track preset if specified, otherwise the shared one
+      let trackPresetSpec: PresetSyntax
+      if let trackPresets = trackPresetFilenames, i < trackPresets.count {
+        let trackPresetFileName = trackPresets[i] + ".json"
+        trackPresetSpec = Bundle.main.decode(PresetSyntax.self, from: trackPresetFileName, subdirectory: "presets")
+      } else {
+        trackPresetSpec = presetSpec
+      }
+      let sp = SpatialPreset(presetSpec: trackPresetSpec, engine: engine, numVoices: voices)
+      let iters = entry.sequence.makeIterators(loop: loopVal)
+      let pattern = MusicPattern(
+        spatialPreset: sp,
+        modulators: modulatorDict,
+        notes: iters.notes,
+        sustains: iters.sustains,
+        gaps: iters.gaps,
+        clock: clock
+      )
+      let name = entry.trackName.isEmpty ? "Track \(entry.trackIndex)" : entry.trackName
+      return (pattern: pattern, spatialPreset: sp, trackName: name)
+    }
   }
 }

@@ -172,6 +172,15 @@ class SpatialPreset: NoteHandler {
       noteOff(note)
     }
   }
+
+  /// Immediately silence all currently sounding notes.
+  func allNotesOff() {
+    guard let ledger = spatialLedger else { return }
+    let activeNotes = ledger.noteToVoiceIdx.keys
+    for note in activeNotes {
+      noteOff(MidiNote(note: note, velocity: 0))
+    }
+  }
   
   // MARK: - Preset access
   

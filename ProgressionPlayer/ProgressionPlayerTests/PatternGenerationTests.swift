@@ -468,3 +468,113 @@ struct MusicPatternEventGenerationTests {
             "50 chord transitions should visit more than 3 chord types, visited \(uniqueChords)")
   }
 }
+
+// MARK: - Multi-track MIDI Parsing Tests
+
+@Suite("Multi-track MIDI Parsing", .serialized)
+struct MultiTrackMidiParsingTests {
+
+  /// Locate the BachInvention1.mid file in the app bundle.
+  private func bachURL() throws -> URL {
+    guard let url = Bundle.main.url(forResource: "BachInvention1", withExtension: "mid", subdirectory: "patterns") else {
+      throw MidiTestError.fileNotFound
+    }
+    return url
+  }
+
+  private enum MidiTestError: Error { case fileNotFound }
+
+  @Test("allTracks returns two nonempty tracks for Bach Invention")
+  func allTracksReturnsTwoTracks() throws {
+    let url = try bachURL()
+    let tracks = MidiEventSequence.allTracks(url: url, loop: false)
+    #expect(tracks.count == 2,
+            "Bach Invention 1 has two voices, got \(tracks.count) tracks")
+  }
+
+  @Test("Track 1 has a different first note than Track 0")
+  func tracksHaveDifferentContent() throws {
+    let url = try bachURL()
+    let tracks = MidiEventSequence.allTracks(url: url, loop: false)
+    #expect(tracks.count == 2)
+
+    // Skip any leading empty rest chords to get the first real note
+    let firstNote0 = tracks[0].sequence.chords.first(where: { !$0.isEmpty })
+    let firstNote1 = tracks[1].sequence.chords.first(where: { !$0.isEmpty })
+    #expect(firstNote0 != nil && firstNote1 != nil,
+            "Both tracks should have at least one non-empty chord")
+
+    // Right hand starts around C4 (60), left hand around C3 (48)
+    let pitch0 = Int(firstNote0![0].note)
+    let pitch1 = Int(firstNote1![0].note)
+    #expect(pitch0 != pitch1,
+            "First notes should differ between tracks: track0=\(pitch0), track1=\(pitch1)")
+    // Right hand is higher than left hand
+    #expect(pitch0 > pitch1,
+            "Track 0 (right hand, \(pitch0)) should be higher than track 1 (left hand, \(pitch1))")
+  }
+
+  @Test("Track 1 has an initial rest gap preserving its late entry")
+  func track1HasInitialRest() throws {
+    let url = try bachURL()
+    let tracks = MidiEventSequence.allTracks(url: url, loop: false)
+    #expect(tracks.count == 2)
+
+    let seq1 = tracks[1].sequence
+
+    // The left hand enters at beat 2.25 in the MIDI file.
+    // The first chord should be empty (the initial rest) and its gap should
+    // correspond to 2.25 beats converted to seconds at the file's tempo (~59.3 BPM).
+    #expect(seq1.chords[0].isEmpty,
+            "Track 1 should start with an empty rest chord")
+    #expect(seq1.sustains[0] == 0,
+            "Rest chord sustain should be 0")
+
+    // At ~59.3 BPM, secondsPerBeat ≈ 1.012. 2.25 beats ≈ 2.276 seconds.
+    // Allow a generous tolerance for tempo rounding.
+    let initialGap = seq1.gaps[0]
+    #expect(initialGap > 1.5 && initialGap < 3.5,
+            "Track 1 initial rest gap should be ~2.3s (2.25 beats at ~59 BPM), got \(initialGap)")
+  }
+
+  @Test("Track 0 has a shorter initial rest than Track 1")
+  func track0HasShorterInitialRest() throws {
+    let url = try bachURL()
+    let tracks = MidiEventSequence.allTracks(url: url, loop: false)
+    #expect(tracks.count == 2)
+
+    let seq0 = tracks[0].sequence
+    let seq1 = tracks[1].sequence
+
+    // Track 0 starts at beat 0.25; track 1 starts at beat 2.25.
+    // If track 0 has an initial rest it should be much shorter than track 1's.
+    let gap0: CoreFloat
+    if seq0.chords[0].isEmpty {
+      gap0 = seq0.gaps[0]
+    } else {
+      gap0 = 0 // no initial rest means it starts immediately
+    }
+
+    // Track 1 definitely has an initial rest
+    #expect(seq1.chords[0].isEmpty)
+    let gap1 = seq1.gaps[0]
+
+    #expect(gap1 > gap0 + 1.0,
+            "Track 1 initial rest (\(gap1)s) should be > 1s longer than track 0's (\(gap0)s)")
+  }
+
+  @Test("Both tracks have many note events")
+  func bothTracksHaveManyNotes() throws {
+    let url = try bachURL()
+    let tracks = MidiEventSequence.allTracks(url: url, loop: false)
+    #expect(tracks.count == 2)
+
+    // Bach Invention 1 has hundreds of notes per voice
+    let noteCount0 = tracks[0].sequence.chords.filter({ !$0.isEmpty }).count
+    let noteCount1 = tracks[1].sequence.chords.filter({ !$0.isEmpty }).count
+    #expect(noteCount0 > 50,
+            "Track 0 should have many note events, got \(noteCount0)")
+    #expect(noteCount1 > 50,
+            "Track 1 should have many note events, got \(noteCount1)")
+  }
+}

@@ -13,30 +13,18 @@ struct SongPresetListView: View {
   let song: Song
   @State private var isShowingVisualizer = false
 
-  struct PresetOption: Identifiable {
-    var id: String { fileName }
-    let fileName: String
-    let spec: PresetSyntax
-  }
-
-  var presets: [PresetOption] {
-    song.presetFileNames.map { fileName in
-      let spec = Bundle.main.decode(
-        PresetSyntax.self,
-        from: fileName,
-        subdirectory: "presets"
-      )
-      return PresetOption(fileName: fileName, spec: spec)
-    }
-  }
-
   var body: some View {
-    List(presets) { preset in
+    List(playbackState.tracks) { track in
       NavigationLink {
-        PresetFormView(presetSpec: preset.spec)
+        PresetFormView(presetSpec: track.presetSpec)
           .environment(playbackState)
       } label: {
-        Text(preset.spec.name)
+        VStack(alignment: .leading) {
+          Text(track.presetSpec.name)
+          Text(track.patternName)
+            .font(.caption)
+            .foregroundStyle(.secondary)
+        }
       }
     }
     .navigationTitle(song.name)
@@ -74,8 +62,7 @@ struct SongPresetListView: View {
   let engine = SpatialAudioEngine()
   let song = Song(
     name: "Aurora Borealis",
-    patternFileName: "aurora_arpeggio.json",
-    presetFileNames: ["auroraBorealis.json", "5th_cluedo.json"]
+    patternFileNames: ["aurora_arpeggio.json"]
   )
   let playbackState = SongPlaybackState(song: song, engine: engine)
   NavigationStack {

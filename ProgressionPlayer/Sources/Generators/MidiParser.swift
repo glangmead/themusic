@@ -37,12 +37,15 @@ class MidiParser {
   var tracks: [MidiTrackData] = []
   var globalMetadata = GlobalMidiMetadata()
   
-  init?(url: URL) {
+  let loadFlags: MusicSequenceLoadFlags
+
+  init?(url: URL, preserveTracks: Bool = false) {
+    self.loadFlags = preserveTracks ? .smf_PreserveTracks : .smf_ChannelsToTracks
     var sequence: MusicSequence?
     var status = NewMusicSequence(&sequence)
     guard status == noErr, let seq = sequence else { return nil }
     
-    status = MusicSequenceFileLoad(seq, url as CFURL, .midiType, .smf_ChannelsToTracks)
+    status = MusicSequenceFileLoad(seq, url as CFURL, .midiType, loadFlags)
     guard status == noErr else { return nil }
     
     parseGlobalMetadata(from: seq)
@@ -165,35 +168,62 @@ struct MidiEventSequence {
   ///   - url: URL to the .mid file
   ///   - trackIndex: Which track to extract (nil = first track with notes)
   ///   - loop: If true, the iterators cycle; if false, they terminate after one pass
+  /// Parse a MIDI file and extract a single track as a sequence of chord events.
+  /// - Parameters:
+  ///   - url: URL to the .mid file
+  ///   - trackIndex: Which track to extract (nil = first track with notes)
+  ///   - loop: If true, the iterators cycle; if false, they terminate after one pass
   static func from(url: URL, trackIndex: Int?, loop: Bool) -> MidiEventSequence? {
     guard let parser = MidiParser(url: url) else { return nil }
-    
-    // Find the requested track
+
     let tracksWithNotes = parser.tracks.filter { !$0.notes.isEmpty }
     guard !tracksWithNotes.isEmpty else { return nil }
-    
+
     let track: MidiTrackData
     if let idx = trackIndex {
-      // trackIndex refers to index among tracks-with-notes
       guard idx < tracksWithNotes.count else { return nil }
       track = tracksWithNotes[idx]
     } else {
       track = tracksWithNotes[0]
     }
-    
-    guard !track.notes.isEmpty else { return nil }
-    
-    // Tempo: beats per minute -> seconds per beat
+
     let bpm = parser.globalMetadata.tempo ?? 120.0
     let secondsPerBeat = 60.0 / bpm
-    
-    // Sort notes by start time
+    return buildSequence(from: track, secondsPerBeat: secondsPerBeat)
+  }
+  
+  /// Parse all nonempty tracks from a MIDI file, returning one MidiEventSequence per track.
+  /// Each element includes the track index (among all tracks), the track name, and the sequence.
+  static func allTracks(url: URL, loop: Bool) -> [(trackIndex: Int, trackName: String, sequence: MidiEventSequence)] {
+    guard let parser = MidiParser(url: url, preserveTracks: true) else { return [] }
+
+    let bpm = parser.globalMetadata.tempo ?? 120.0
+    let secondsPerBeat = 60.0 / bpm
+
+    var results: [(trackIndex: Int, trackName: String, sequence: MidiEventSequence)] = []
+    for track in parser.tracks {
+      guard !track.notes.isEmpty else { continue }
+      // Preserve the initial rest so multi-track playback stays aligned
+      let firstBeat = track.notes.map(\.startBeat).min() ?? 0
+      guard let seq = buildSequence(from: track, secondsPerBeat: secondsPerBeat, initialRestBeats: firstBeat) else { continue }
+      results.append((trackIndex: track.id, trackName: track.name, sequence: seq))
+    }
+    return results
+  }
+
+  /// Shared logic: convert a MidiTrackData into a MidiEventSequence.
+  /// - Parameters:
+  ///   - track: The parsed MIDI track data
+  ///   - secondsPerBeat: Tempo conversion factor
+  ///   - initialRestBeats: Beats of silence before the first note (used for multi-track
+  ///     alignment so each track preserves its original start time relative to beat 0)
+  private static func buildSequence(from track: MidiTrackData, secondsPerBeat: Double, initialRestBeats: Double = 0) -> MidiEventSequence? {
+    guard !track.notes.isEmpty else { return nil }
+
     let sorted = track.notes.sorted { $0.startBeat < $1.startBeat }
-    
-    // Group into chords: notes within a small epsilon of each other are simultaneous
-    let epsilon = 0.01 // beats
+    let epsilon = 0.01
     var chordGroups: [(beat: Double, notes: [MidiNoteEvent])] = []
-    
+
     for note in sorted {
       if let last = chordGroups.last, abs(note.startBeat - last.beat) < epsilon {
         chordGroups[chordGroups.count - 1].notes.append(note)
@@ -201,35 +231,39 @@ struct MidiEventSequence {
         chordGroups.append((beat: note.startBeat, notes: [note]))
       }
     }
-    
-    // Convert to MidiNote chords, sustains (max duration in chord), and gaps (time to next chord)
+
     var chords: [[MidiNote]] = []
     var sustains: [CoreFloat] = []
     var gaps: [CoreFloat] = []
-    
+
+    // If there's an initial rest, prepend a silent event so multi-track
+    // patterns preserve their original timing offset from beat 0
+    if initialRestBeats > epsilon {
+      chords.append([])          // empty chord = silence
+      sustains.append(0)         // no sound to sustain
+      gaps.append(CoreFloat(initialRestBeats * secondsPerBeat))
+    }
+
     for (i, group) in chordGroups.enumerated() {
       let chord = group.notes.map {
         MidiNote(note: MidiValue($0.pitch), velocity: MidiValue($0.velocity))
       }
       chords.append(chord)
-      
-      // Sustain: max duration among notes in this chord (in seconds)
+
       let maxDuration = group.notes.map(\.duration).max() ?? 1.0
       sustains.append(CoreFloat(maxDuration * secondsPerBeat))
-      
-      // Gap: time from this chord's onset to the next chord's onset (in seconds)
+
       if i + 1 < chordGroups.count {
         let beatDelta = chordGroups[i + 1].beat - group.beat
         gaps.append(CoreFloat(beatDelta * secondsPerBeat))
       } else {
-        // Last chord: gap is the sustain (so play() finishes after the last note rings out)
         gaps.append(CoreFloat(maxDuration * secondsPerBeat))
       }
     }
-    
+
     return MidiEventSequence(chords: chords, sustains: sustains, gaps: gaps)
   }
-  
+
   /// Create iterators suitable for MusicPattern.
   func makeIterators(loop: Bool) -> (
     notes: any IteratorProtocol<[MidiNote]>,

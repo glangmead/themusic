@@ -1,11 +1,11 @@
 {
   "name": "Bach Invention 1",
   "presetFilename": "GeneralUser00Piano",
+  "trackPresetFilenames": ["GeneralUser00Piano", "GeneralUser06Harpsichord"],
   "numVoices": 8,
   "noteGenerator": {
     "midiFile": {
       "filename": "patterns/BachInvention1.mid",
-      "track": 0,
       "loop": true
     }
   }

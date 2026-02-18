@@ -343,6 +343,7 @@ actor MusicPattern {
   var gaps: any IteratorProtocol<CoreFloat> // a sequence of sustain lengths
   var timeOrigin: Double
   let clock: any Clock<Duration>
+  var isPaused: Bool = false
   
   init(
     spatialPreset: SpatialPreset,
@@ -359,6 +360,13 @@ actor MusicPattern {
     self.gaps = gaps
     self.timeOrigin = Date.now.timeIntervalSince1970
     self.clock = clock
+  }
+  
+  func setPaused(_ paused: Bool) {
+    self.isPaused = paused
+    if paused {
+      spatialPreset.allNotesOff()
+    }
   }
   
   func next() async -> MusicEvent? {
@@ -381,6 +389,16 @@ actor MusicPattern {
   func play() async {
     await withTaskGroup(of: Void.self) { group in
       while !Task.isCancelled {
+        // Wait while paused, checking cancellation periodically
+        while isPaused {
+          guard !Task.isCancelled else { return }
+          do {
+            try await clock.sleep(for: .milliseconds(50))
+          } catch {
+            return
+          }
+        }
+        guard !Task.isCancelled else { return }
         guard var event = await next() else { return }
         group.addTask {
           try? await event.play()
@@ -395,33 +413,43 @@ actor MusicPattern {
   }
 }
 /// Container for multiple MusicPatterns, each with its own SpatialPreset.
-/// Supports multi-track generative playback.
+/// Supports multi-track generative playback with pause/resume.
 actor MusicPatterns {
   private var patterns: [(MusicPattern, SpatialPreset)] = []
-  private var playbackTasks: [Task<Void, Never>] = []
-  
+
   func addPattern(_ pattern: MusicPattern, spatialPreset: SpatialPreset) {
     patterns.append((pattern, spatialPreset))
   }
-  
+
+  func addPatterns(_ newPatterns: [(MusicPattern, SpatialPreset)]) {
+    patterns.append(contentsOf: newPatterns)
+  }
+
+  /// Play all patterns concurrently using structured concurrency.
+  /// Cancelling the calling task propagates to all pattern tasks.
   func playAll() async {
-    for (pattern, _) in patterns {
-      let task = Task {
-        await pattern.play()
+    await withTaskGroup(of: Void.self) { group in
+      for (pattern, _) in patterns {
+        group.addTask {
+          await pattern.play()
+        }
       }
-      playbackTasks.append(task)
     }
   }
-  
-  func stopAll() {
-    for task in playbackTasks {
-      task.cancel()
+
+  func pause() async {
+    for (pattern, _) in patterns {
+      await pattern.setPaused(true)
     }
-    playbackTasks.removeAll()
+  }
+
+  func resume() async {
+    for (pattern, _) in patterns {
+      await pattern.setPaused(false)
+    }
   }
   
   func cleanup() {
-    stopAll()
     for (_, spatialPreset) in patterns {
       spatialPreset.cleanup()
     }
