@@ -196,6 +196,10 @@ enum NoteGeneratorSyntax: Codable {
     ordering: IteratorSyntax?
   )
 
+  /// Notes from a MIDI file track. Timing (sustain/gap) is derived from the file.
+  /// JSON: { "midiFile": { "filename": "BachInvention1.mid", "track": 0, "loop": true } }
+  case midiFile(filename: String, track: Int?, loop: Bool?)
+
   func compile() -> any IteratorProtocol<[MidiNote]> {
     switch self {
     case .fixed(let events):
@@ -230,7 +234,28 @@ enum NoteGeneratorSyntax: Codable {
           octaveGenerator: octaveIter
         )
       )
+
+    case .midiFile(let filename, let track, let loop):
+      let seq = Self.parseMidiFile(filename: filename, track: track, loop: loop ?? true)
+      return seq?.makeIterators(loop: loop ?? true).notes ?? [[MidiNote]]().makeIterator()
     }
+  }
+
+  /// For MIDI files, compile all three iterators (notes + timing) from the file.
+  /// Returns nil for non-MIDI generators.
+  func compileMidiSequence() -> MidiEventSequence? {
+    guard case .midiFile(let filename, let track, let loop) = self else { return nil }
+    return Self.parseMidiFile(filename: filename, track: track, loop: loop ?? true)
+  }
+
+  private static func parseMidiFile(filename: String, track: Int?, loop: Bool) -> MidiEventSequence? {
+    let name = (filename as NSString).deletingPathExtension
+    let ext = (filename as NSString).pathExtension
+    guard let url = Bundle.main.url(forResource: name, withExtension: ext) else {
+      print("MidiFile not found in bundle: \(filename)")
+      return nil
+    }
+    return MidiEventSequence.from(url: url, trackIndex: track, loop: loop)
   }
 
   // MARK: - Name Resolution
@@ -288,8 +313,8 @@ struct PatternSyntax: Codable {
   let presetFilename: String
   let numVoices: Int?
   let noteGenerator: NoteGeneratorSyntax
-  let sustain: TimingSyntax
-  let gap: TimingSyntax
+  let sustain: TimingSyntax?
+  let gap: TimingSyntax?
   let modulators: [ModulatorSyntax]?
 
   /// Compile into a MusicPattern using an already-constructed SpatialPreset.
@@ -306,12 +331,31 @@ struct PatternSyntax: Codable {
       modulatorDict = [:]
     }
 
+    // For MIDI files, timing comes from the file itself
+    if let midiSeq = noteGenerator.compileMidiSequence() {
+      let loop: Bool
+      if case .midiFile(_, _, let l) = noteGenerator { loop = l ?? true } else { loop = true }
+      let iters = midiSeq.makeIterators(loop: loop)
+      return MusicPattern(
+        spatialPreset: spatialPreset,
+        modulators: modulatorDict,
+        notes: iters.notes,
+        sustains: iters.sustains,
+        gaps: iters.gaps,
+        clock: clock
+      )
+    }
+
+    // For generative patterns, use the sustain/gap fields (default to 1s fixed if missing)
+    let sustainIter = (sustain ?? .fixed(value: 1.0)).compile()
+    let gapIter = (gap ?? .fixed(value: 1.0)).compile()
+
     return MusicPattern(
       spatialPreset: spatialPreset,
       modulators: modulatorDict,
       notes: noteGenerator.compile(),
-      sustains: sustain.compile(),
-      gaps: gap.compile(),
+      sustains: sustainIter,
+      gaps: gapIter,
       clock: clock
     )
   }

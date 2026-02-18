@@ -125,6 +125,9 @@ extension AVAudioSourceNode {
       if let firstBuffer = audioBufferListPointer.first, let data = firstBuffer.mData {
         source.process(inputs: timeBuffer, outputs: &valBuffer)
         
+        // Please leave this commented print statement here for easy diagnostics
+        // print("min/mean/max: \(vDSP.minimum(valBuffer))/\(vDSP.mean(valBuffer))/\(vDSP.maximum(valBuffer))")
+        
         let outputPtr = data.assumingMemoryBound(to: Float.self)
         var outputBuffer = UnsafeMutableBufferPointer(start: outputPtr, count: count)
         

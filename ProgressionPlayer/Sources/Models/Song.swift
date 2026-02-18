@@ -27,5 +27,10 @@ class SongLibrary {
       patternFileName: "baroque_chords.json",
       presetFileNames: ["prophet_brass.json"]
     ),
+    Song(
+      name: "Bach Invention 1",
+      patternFileName: "bach_invention.json",
+      presetFileNames: ["prophet_brass.json"]
+    ),
   ]
 }
