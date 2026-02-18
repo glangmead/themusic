@@ -467,7 +467,7 @@
 				DEVELOPMENT_TEAM = 5Y5NG75847;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "ProgressionPlayer-Info.plist";
+				INFOPLIST_FILE = "Orbital-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Orbital;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music-games";
 				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
@@ -505,7 +505,7 @@
 				DEVELOPMENT_TEAM = 5Y5NG75847;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "ProgressionPlayer-Info.plist";
+				INFOPLIST_FILE = "Orbital-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Orbital;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music-games";
 				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
