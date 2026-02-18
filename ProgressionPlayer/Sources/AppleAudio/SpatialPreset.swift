@@ -21,7 +21,7 @@ import AVFAudio
 /// inherently polyphonic.
 @Observable
 class SpatialPreset: NoteHandler {
-  let presetSpec: PresetSyntax
+  private(set) var presetSpec: PresetSyntax
   let engine: SpatialAudioEngine
   let numVoices: Int
   private(set) var presets: [Preset] = []
@@ -100,8 +100,9 @@ class SpatialPreset: NoteHandler {
     _cachedHandles = nil
   }
   
-  func reload(presetSpec: PresetSyntax) {
+  func reload(presetSpec: PresetSyntax? = nil) {
     cleanup()
+    if let presetSpec { self.presetSpec = presetSpec }
     setup()
   }
   

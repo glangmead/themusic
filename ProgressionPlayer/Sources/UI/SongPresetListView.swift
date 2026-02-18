@@ -12,11 +12,12 @@ struct SongPresetListView: View {
   @Environment(SongPlaybackState.self) private var playbackState
   let song: Song
   @State private var isShowingVisualizer = false
+  @State private var editingTrackId: Int?
 
   var body: some View {
     List(playbackState.tracks) { track in
       NavigationLink {
-        PresetFormView(presetSpec: track.presetSpec)
+        PresetPickerView(trackId: track.id, currentPresetName: track.presetSpec.name)
           .environment(playbackState)
       } label: {
         VStack(alignment: .leading) {
@@ -25,6 +26,24 @@ struct SongPresetListView: View {
             .font(.caption)
             .foregroundStyle(.secondary)
         }
+      }
+      .overlay(alignment: .trailing) {
+        if track.presetSpec.arrow != nil {
+          Button {
+            editingTrackId = track.id
+          } label: {
+            Image(systemName: "slider.horizontal.3")
+              .font(.title3)
+              .padding(.trailing, 28) // clear the chevron
+          }
+          .buttonStyle(.plain)
+        }
+      }
+    }
+    .navigationDestination(item: $editingTrackId) { trackId in
+      if let track = playbackState.tracks.first(where: { $0.id == trackId }) {
+        PresetFormView(presetSpec: track.presetSpec)
+          .environment(playbackState)
       }
     }
     .navigationTitle(song.name)
@@ -50,6 +69,9 @@ struct SongPresetListView: View {
           Label("Visualizer", systemImage: "sparkles.tv")
         }
       }
+    }
+    .onAppear {
+      playbackState.loadTracks()
     }
     .fullScreenCover(isPresented: $isShowingVisualizer) {
       VisualizerView(engine: engine, noteHandler: playbackState.noteHandler, isPresented: $isShowingVisualizer)

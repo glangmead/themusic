@@ -11,7 +11,7 @@ import Foundation
 struct TrackInfo: Identifiable {
   let id: Int
   let patternName: String
-  let presetSpec: PresetSyntax
+  var presetSpec: PresetSyntax
   let spatialPreset: SpatialPreset
 }
 
@@ -46,10 +46,12 @@ class SongPlaybackState {
     }
   }
 
-  func play() {
-    guard !isPlaying else { return }
+  /// Build track info and compiled patterns without starting playback.
+  /// Called automatically by `play()`, but can also be called early so the
+  /// preset list is populated before the user hits play.
+  func loadTracks() {
+    guard tracks.isEmpty else { return }
 
-    let mp = MusicPatterns()
     var compiled: [(MusicPattern, SpatialPreset)] = []
     var trackInfos: [TrackInfo] = []
     var nextTrackId = 0
@@ -96,8 +98,22 @@ class SongPlaybackState {
       }
     }
 
-    musicPatterns = mp
     tracks = trackInfos
+    compiledPatterns = compiled
+  }
+
+  /// Patterns compiled by loadTracks(), consumed by play().
+  private var compiledPatterns: [(MusicPattern, SpatialPreset)] = []
+
+  func play() {
+    guard !isPlaying else { return }
+
+    loadTracks()
+
+    let mp = MusicPatterns()
+    musicPatterns = mp
+
+    let compiled = compiledPatterns
 
     if !engine.audioEngine.isRunning {
       try! engine.start()
@@ -123,6 +139,13 @@ class SongPlaybackState {
     isPaused = false
   }
 
+  /// Replace the preset for a given track, reloading its audio nodes in place.
+  func replacePreset(trackId: Int, newPresetSpec: PresetSyntax) {
+    guard let idx = tracks.firstIndex(where: { $0.id == trackId }) else { return }
+    tracks[idx].presetSpec = newPresetSpec
+    tracks[idx].spatialPreset.reload(presetSpec: newPresetSpec)
+  }
+
   func stop() {
     let mp = musicPatterns
     playbackTask?.cancel()
@@ -130,6 +153,7 @@ class SongPlaybackState {
     musicPatterns = nil
     Task { await mp?.cleanup() }
     tracks = []
+    compiledPatterns = []
     isPlaying = false
     isPaused = false
   }
