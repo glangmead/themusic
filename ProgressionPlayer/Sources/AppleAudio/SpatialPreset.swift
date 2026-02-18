@@ -64,17 +64,23 @@ class SpatialPreset: NoteHandler {
     if presetSpec.arrow != nil {
       // Independent spatial: N Presets x 1 voice each
       // Each note goes to a different Preset (different spatial position)
+      let phaseStep = CoreFloat(2 * Double.pi) / CoreFloat(numVoices)
       for i in 0..<numVoices {
         let preset = presetSpec.compile(numVoices: 1)
         preset.name = "\(preset.name)[\(i)]"
+        // Spread voices evenly around the rose curve
+        preset.positionLFO?.phase += phaseStep * CoreFloat(i)
         presets.append(preset)
         let node = preset.wrapInAppleNodes(forEngine: engine)
         avNodes.append(node)
       }
     } else if presetSpec.samplerFilenames != nil {
       // Sampler: 1 sampler per spatial slot, same as Arrow
-      for _ in 0..<numVoices {
+      let phaseStep = CoreFloat(2 * Double.pi) / CoreFloat(numVoices)
+      for i in 0..<numVoices {
         let preset = presetSpec.compile(numVoices: 1)
+        // Spread voices evenly around the rose curve
+        preset.positionLFO?.phase += phaseStep * CoreFloat(i)
         presets.append(preset)
         let node = preset.wrapInAppleNodes(forEngine: engine)
         avNodes.append(node)
@@ -132,6 +138,32 @@ class SpatialPreset: NoteHandler {
   func notesOn(_ notes: [MidiNote], independentSpatial: Bool = true) {
     for note in notes {
       noteOn(note)
+    }
+  }
+
+  /// Play notes and apply modulators only to the allocated voice for each note.
+  func notesOnWithModulators(_ notes: [MidiNote], modulators: [String: Arrow11], now: CoreFloat) {
+    guard let ledger = spatialLedger else { return }
+    for note in notes {
+      let idx: Int?
+      if let existing = ledger.voiceIndex(for: note.note) {
+        idx = existing
+      } else {
+        idx = ledger.takeAvailableVoice(note.note)
+      }
+      guard let voiceIdx = idx else { continue }
+      // Apply modulators to just this voice's handles
+      if let voiceHandles = presets[voiceIdx].handles {
+        for (key, modulatingArrow) in modulators {
+          if let arrowConsts = voiceHandles.namedConsts[key] {
+            let value = modulatingArrow.of(now)
+            for arrowConst in arrowConsts {
+              arrowConst.val = value
+            }
+          }
+        }
+      }
+      presets[voiceIdx].noteOn(note)
     }
   }
   

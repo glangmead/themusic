@@ -31,7 +31,7 @@ struct SongCell: View {
 
         // Song name
         Text(song.name)
-          .font(.largeTitle).fontWeight(.bold)
+          .font(.title).fontWeight(.bold)
 
         Spacer()
       }

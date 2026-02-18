@@ -37,9 +37,6 @@ class SongPlaybackState {
 
   func play() {
     guard !isPlaying else { return }
-    if !engine.audioEngine.isRunning {
-      try! engine.start()
-    }
     let patternSpec = Bundle.main.decode(
       PatternSyntax.self,
       from: song.patternFileName,
@@ -57,6 +54,9 @@ class SongPlaybackState {
     )
     musicPattern = pattern
     patternSpatialPreset = sp
+    if !engine.audioEngine.isRunning {
+      try! engine.start()
+    }
     isPlaying = true
     playbackTask = Task.detached {
       await pattern.play()

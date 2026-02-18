@@ -12,7 +12,6 @@ import Observation
 class SpatialAudioEngine {
   let audioEngine = AVAudioEngine()
   let envNode = AVAudioEnvironmentNode()
-  //let limiter: AVAudioUnitEffect
   let stereo: AVAudioFormat
   let mono: AVAudioFormat
 
@@ -20,16 +19,6 @@ class SpatialAudioEngine {
     audioEngine.attach(envNode)
     stereo = AVAudioFormat(standardFormatWithSampleRate: audioEngine.outputNode.inputFormat(forBus: 0).sampleRate, channels: 2)!
     mono = AVAudioFormat(standardFormatWithSampleRate: audioEngine.outputNode.inputFormat(forBus: 0).sampleRate, channels: 1)!
-    //limiter = AVAudioUnitEffect(
-    //  audioComponentDescription: AudioComponentDescription(
-    //    componentType: kAudioUnitType_Effect,
-    //    componentSubType: kAudioUnitSubType_PeakLimiter,
-    //    componentManufacturer: kAudioUnitManufacturer_Apple,
-    //    componentFlags: 0,
-    //    componentFlagsMask: 0
-    //  )
-    //)
-    //audioEngine.attach(limiter)
   }
   
   // We grab the system's sample rate directly from the output node
@@ -60,8 +49,6 @@ class SpatialAudioEngine {
       node.sourceMode = .spatializeIfMono
       audioEngine.connect(node, to: envNode, format: mono)
     }
-    //audioEngine.connect(envNode, to: limiter, format: stereo)
-    //audioEngine.connect(limiter, to: audioEngine.outputNode, format: stereo)
     audioEngine.connect(envNode, to: audioEngine.outputNode, format: stereo)
   }
   

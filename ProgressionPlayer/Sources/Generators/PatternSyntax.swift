@@ -65,6 +65,15 @@ struct ModulatorSyntax: Codable {
   }
 }
 
+// MARK: - RootProgressionSyntax
+
+/// A time-varying sequence of root notes, cycled with a random wait between changes.
+struct RootProgressionSyntax: Codable {
+  let roots: [String]
+  let waitMin: CoreFloat
+  let waitMax: CoreFloat
+}
+
 // MARK: - NoteGeneratorSyntax
 
 /// Different strategies for generating sequences of [MidiNote].
@@ -79,12 +88,15 @@ enum NoteGeneratorSyntax: Codable {
   case chordProgression(scale: String, root: String, style: String?)
 
   /// Single-note melody from scale degrees with configurable traversal order.
+  /// When `rootProgression` is provided, the root cycles through the list
+  /// with a random wait (in seconds) between changes.
   case melodic(
     scale: String,
     root: String,
     octaves: [Int],
     degrees: [Int],
-    ordering: String?
+    ordering: String?,
+    rootProgression: RootProgressionSyntax?
   )
 
   func compile() -> any IteratorProtocol<[MidiNote]> {
@@ -105,19 +117,30 @@ enum NoteGeneratorSyntax: Codable {
         rootNoteGenerator: [root].cyclicIterator()
       )
 
-    case .melodic(let scaleName, let rootName, let octaves, let degrees, let ordering):
+    case .melodic(let scaleName, let rootName, let octaves, let degrees, let ordering, let rootProgression):
       let scale = Self.resolveScale(scaleName)
-      let root = Self.resolveNoteClass(rootName)
       let order = ordering ?? "shuffled"
 
       let degreeIter: any IteratorProtocol<Int> = Self.makeOrdering(degrees, order: order)
       let octaveIter: any IteratorProtocol<Int> = Self.makeOrdering(octaves, order: "random")
 
+      let rootIter: any IteratorProtocol<NoteClass>
+      if let prog = rootProgression {
+        let roots = prog.roots.map { Self.resolveNoteClass($0) }
+        rootIter = WaitingIterator(
+          iterator: roots.cyclicIterator(),
+          timeBetweenChanges: ArrowRandom(min: prog.waitMin, max: prog.waitMax)
+        )
+      } else {
+        let root = Self.resolveNoteClass(rootName)
+        rootIter = [root].cyclicIterator()
+      }
+
       return MidiPitchAsChordGenerator(
         pitchGenerator: MidiPitchGenerator(
           scaleGenerator: [scale].cyclicIterator(),
           degreeGenerator: degreeIter,
-          rootNoteGenerator: [root].cyclicIterator(),
+          rootNoteGenerator: rootIter,
           octaveGenerator: octaveIter
         )
       )

@@ -53,22 +53,32 @@ struct MusicEvent {
   }
   
   mutating func play() async throws {
-    // Apply modulation (only supported for Arrow-based presets)
-    if let handles = noteHandler.handles {
-      let now = CoreFloat(Date.now.timeIntervalSince1970 - timeOrigin)
-      for (key, modulatingArrow) in modulators {
-        if let arrowConsts = handles.namedConsts[key] {
-          for arrowConst in arrowConsts {
-            if let eventUsingArrow = modulatingArrow as? EventUsingArrow {
-              eventUsingArrow.event = self
+    let now = CoreFloat(Date.now.timeIntervalSince1970 - timeOrigin)
+
+    // Set up EventUsingArrow references
+    for (_, modulatingArrow) in modulators {
+      if let eventUsingArrow = modulatingArrow as? EventUsingArrow {
+        eventUsingArrow.event = self
+      }
+    }
+
+    // Apply modulators per-voice when possible, otherwise globally
+    if let spatialPreset = noteHandler as? SpatialPreset, !modulators.isEmpty {
+      spatialPreset.notesOnWithModulators(notes, modulators: modulators, now: now)
+    } else {
+      // Global modulation fallback (single-voice presets)
+      if let handles = noteHandler.handles {
+        for (key, modulatingArrow) in modulators {
+          if let arrowConsts = handles.namedConsts[key] {
+            let value = modulatingArrow.of(now)
+            for arrowConst in arrowConsts {
+              arrowConst.val = value
             }
-            arrowConst.val = modulatingArrow.of(now)
           }
         }
       }
+      noteHandler.notesOn(notes)
     }
-    
-    noteHandler.notesOn(notes)
     do {
       try await clock.sleep(for: .seconds(TimeInterval(sustain)))
     } catch {
@@ -356,11 +366,6 @@ actor MusicPattern {
     guard let notes = notes.next() else { return nil }
     guard let sustain = sustains.next() else { return nil }
     guard let gap = gaps.next() else { return nil }
-    
-    // Randomize spatial position phases for each event
-    spatialPreset.forEachPreset { preset in
-      preset.positionLFO?.phase = CoreFloat.random(in: 0...(2.0 * .pi))
-    }
     
     return MusicEvent(
       noteHandler: noteHandler,

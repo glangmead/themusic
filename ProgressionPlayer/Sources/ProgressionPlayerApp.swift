@@ -15,6 +15,10 @@ struct ProgressionPlayerApp: App {
   init() {
     do {
       try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default, options: [.mixWithOthers, .allowBluetoothHFP, .allowAirPlay])
+      // Request a larger I/O buffer to reduce the chance of audio glitches.
+      // Default is ~5ms; 20ms gives the render thread more headroom at the
+      // cost of slightly higher latency (inaudible for non-interactive playback).
+      try AVAudioSession.sharedInstance().setPreferredIOBufferDuration(0.02)
       try AVAudioSession.sharedInstance().setActive(true)
     } catch {
       print("AppDelegate Debug - Error setting AVAudioSession category. Because of this, there may be no sound. \(error)")

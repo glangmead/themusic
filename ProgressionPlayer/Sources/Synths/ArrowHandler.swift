@@ -419,26 +419,20 @@ final class ArrowHandler {
 
   // MARK: - Grouping for UI
 
-  /// Group descriptors into sections for Form display, preserving discovery order.
+  /// Group descriptors into sections for Form display, merging all descriptors
+  /// with the same group name and preserving first-seen order of groups.
   func groupedDescriptors() -> [(String, [ArrowParamDescriptor])] {
-    var groups: [(String, [ArrowParamDescriptor])] = []
-    var currentGroup: String? = nil
-    var currentDescs: [ArrowParamDescriptor] = []
+    var order: [String] = []
+    var map: [String: [ArrowParamDescriptor]] = [:]
 
     for desc in descriptors {
-      if desc.group != currentGroup {
-        if let group = currentGroup, !currentDescs.isEmpty {
-          groups.append((group, currentDescs))
-        }
-        currentGroup = desc.group
-        currentDescs = [desc]
+      if map[desc.group] == nil {
+        order.append(desc.group)
+        map[desc.group] = [desc]
       } else {
-        currentDescs.append(desc)
+        map[desc.group]!.append(desc)
       }
     }
-    if let group = currentGroup, !currentDescs.isEmpty {
-      groups.append((group, currentDescs))
-    }
-    return groups
+    return order.map { ($0, map[$0]!) }
   }
 }
