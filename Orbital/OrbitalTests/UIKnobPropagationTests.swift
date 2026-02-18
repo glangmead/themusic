@@ -1,13 +1,13 @@
 //
 //  UIKnobPropagationTests.swift
-//  ProgressionPlayerTests
+//  OrbitalTests
 //
 //  Phase 3: UI knob propagation tests — knob-to-handle propagation, knob-to-sound verification
 //
 
 import Testing
 import Foundation
-@testable import ProgressionPlayer
+@testable import Orbital
 
 // MARK: - Test Helpers
 

@@ -1,6 +1,6 @@
 //
 //  Sequencer.swift
-//  ProgressionPlayer
+//  Orbital
 //
 //  Created by Greg Langmead on 10/27/25.
 //

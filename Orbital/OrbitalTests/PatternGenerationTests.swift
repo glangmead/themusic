@@ -1,6 +1,6 @@
 //
 //  PatternGenerationTests.swift
-//  ProgressionPlayerTests
+//  OrbitalTests
 //
 //  Phase 4: Pattern generation tests — iterator unit tests, MusicEvent modulation,
 //  MusicPattern event generation
@@ -9,7 +9,7 @@
 import Testing
 import Foundation
 import Tonic
-@testable import ProgressionPlayer
+@testable import Orbital
 
 // MARK: - Iterator Unit Tests
 

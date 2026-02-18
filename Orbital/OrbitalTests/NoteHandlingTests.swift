@@ -1,13 +1,13 @@
 //
 //  NoteHandlingTests.swift
-//  ProgressionPlayerTests
+//  OrbitalTests
 //
 //  Phase 2: Note handling tests — VoiceLedger unit tests, Preset noteOn/noteOff logic tests
 //
 
 import Testing
 import Foundation
-@testable import ProgressionPlayer
+@testable import Orbital
 
 // MARK: - VoiceLedger Tests
 

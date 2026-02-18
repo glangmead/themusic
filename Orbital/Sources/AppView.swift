@@ -1,6 +1,6 @@
 //
 //  AppView.swift
-//  ProgressionPlayer
+//  Orbital
 //
 //  Created by Greg Langmead on 12/1/25.
 //

@@ -1,6 +1,6 @@
 //
 //  WaveTable.swift
-//  ProgressionPlayer
+//  Orbital
 //
 //  Created by Greg Langmead on 10/29/25.
 //

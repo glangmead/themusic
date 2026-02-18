@@ -1,6 +1,6 @@
 //
 //  MidiParser.swift
-//  ProgressionPlayer
+//  Orbital
 //
 //  MIDI file parsing: loads a .mid file into structured note data
 //  using AudioToolbox's MusicSequence API.

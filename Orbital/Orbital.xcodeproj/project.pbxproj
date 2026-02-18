@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9B00F9D92F42402E0008058E /* AGENTS.md in Resources */ = {isa = PBXBuildFile; fileRef = 9B00F9D82F42402E0008058E /* AGENTS.md */; };
-		9B0327722F46678900E12D2C /* Orbital-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B0327712F46678900E12D2C /* Orbital-Info.plist */; };
 		9B0F28872ED00401004C0884 /* AudioKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9B0F28862ED00401004C0884 /* AudioKitUI */; };
 		9B1864642E772E37006147D8 /* Overture in Frameworks */ = {isa = PBXBuildFile; productRef = 9B1864632E772E37006147D8 /* Overture */; };
 		9B7430A02ECFA5640017DE7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B7430922ECFA5640017DE7D /* Assets.xcassets */; };
@@ -60,9 +59,9 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		9BC0FCB72E704EAA00472A5A /* ProgressionPlayerTests */ = {
+		9BC0FCB72E704EAA00472A5A /* OrbitalTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ProgressionPlayerTests;
+			path = OrbitalTests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -118,7 +117,7 @@
 				9BFFD9802E7DABD200E7CB55 /* Orbital.entitlements */,
 				9B0327712F46678900E12D2C /* Orbital-Info.plist */,
 				9BC0FCA92E704EA900472A5A /* Sources */,
-				9BC0FCB72E704EAA00472A5A /* ProgressionPlayerTests */,
+				9BC0FCB72E704EAA00472A5A /* OrbitalTests */,
 				9BC0FCD42E7055FE00472A5A /* Frameworks */,
 				9BC0FCA82E704EA900472A5A /* Products */,
 			);
@@ -184,7 +183,7 @@
 				9BC0FCB62E704EAA00472A5A /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				9BC0FCB72E704EAA00472A5A /* ProgressionPlayerTests */,
+				9BC0FCB72E704EAA00472A5A /* OrbitalTests */,
 			);
 			name = OrbitalTests;
 			packageProductDependencies = (
@@ -270,7 +269,6 @@
 			files = (
 				9B00F9D92F42402E0008058E /* AGENTS.md in Resources */,
 				9BCED9902F246B150029ED1B /* Orbital.icon in Resources */,
-				9B0327722F46678900E12D2C /* Orbital-Info.plist in Resources */,
 				9BB2CD382F44E1D00019A2D4 /* patterns in Resources */,
 				9BB2CD342F44E1C00019A2D4 /* samples in Resources */,
 				9BB2CD362F44E1CA0019A2D4 /* presets in Resources */,

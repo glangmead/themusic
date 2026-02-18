@@ -1,6 +1,6 @@
 //
-//  ProgressionPlayerApp.swift
-//  ProgressionPlayer
+//  OrbitalApp.swift
+//  Orbital
 //
 //  Created by Greg Langmead on 9/9/25.
 //
@@ -9,7 +9,7 @@ import AVFoundation
 import SwiftUI
 
 @main
-struct ProgressionPlayerApp: App {
+struct OrbitalApp: App {
   @State private var engine = SpatialAudioEngine()
   @State private var songLibrary = SongLibrary()
   @Environment(\.scenePhase) private var scenePhase

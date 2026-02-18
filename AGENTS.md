@@ -118,7 +118,7 @@ The project has a strict layered architecture. Lower layers must not reference o
 
 ## Tests
 
-The project has over 100 unit tests across files in `ProgressionPlayerTests/`, using the Swift Testing framework (`@Suite`, `@Test`, `#expect`). All suites use `.serialized` because Arrow objects have mutable scratch buffers.
+The project has over 100 unit tests across files in `OrbitalTests/`, using the Swift Testing framework (`@Suite`, `@Test`, `#expect`). All suites use `.serialized` because Arrow objects have mutable scratch buffers.
 
 Tests avoid AVFoundation by using `Preset(arrowSyntax:numVoices:initEffects: false)` and working directly with `ArrowSyntax.compile()`. The `initEffects` parameter (defaults to `true`) skips creation of `AVAudioUnitReverb`/`AVAudioUnitDelay`/`AVAudioMixerNode`. Shared test utilities (`renderArrow`, `rms`, `zeroCrossings`, `loadPresetSyntax`, `makeOscArrow`) live in `ArrowDSPPipelineTests.swift`.
 

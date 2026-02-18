@@ -1,6 +1,6 @@
 //
 //  SpatialAudioEngine.swift
-//  ProgressionPlayer
+//  Orbital
 //
 //  Created by Greg Langmead on 11/8/25.
 //

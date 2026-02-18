@@ -1,13 +1,13 @@
 //
-//  ProgressionPlayerTests.swift
-//  ProgressionPlayerTests
+//  OrbitalTests.swift
+//  OrbitalTests
 //
 //  Created by Greg Langmead on 9/9/25.
 //
 
 import Testing
 import Foundation
-@testable import ProgressionPlayer
+@testable import Orbital
 
 // MARK: - Test Utilities
 

@@ -1,13 +1,13 @@
 //
 //  ArrowHandlerTests.swift
-//  ProgressionPlayerTests
+//  OrbitalTests
 //
 //  Tests for ArrowHandler: parameter descriptors, write-through, readFromHandles.
 //
 
 import Testing
 import Foundation
-@testable import ProgressionPlayer
+@testable import Orbital
 
 // MARK: - Helpers
 

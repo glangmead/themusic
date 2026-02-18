@@ -1,6 +1,6 @@
 //
 //  ADSREnvelope.swift
-//  ProgressionPlayer
+//  Orbital
 //
 //  Created by Greg Langmead on 10/14/25.
 //

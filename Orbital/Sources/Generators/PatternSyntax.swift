@@ -1,6 +1,6 @@
 //
 //  PatternSyntax.swift
-//  ProgressionPlayer
+//  Orbital
 //
 //  Codable serialization layer for MusicPattern.
 //  PatternSyntax -> compile() -> MusicPattern

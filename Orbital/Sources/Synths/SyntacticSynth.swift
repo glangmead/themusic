@@ -1,6 +1,6 @@
 //
 //  SyntacticSynth.swift
-//  ProgressionPlayer
+//  Orbital
 //
 //  Created by Greg Langmead on 12/5/25.
 //

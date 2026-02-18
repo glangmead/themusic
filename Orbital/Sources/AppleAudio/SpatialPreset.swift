@@ -1,6 +1,6 @@
 //
 //  SpatialPreset.swift
-//  ProgressionPlayer
+//  Orbital
 //
 //  Created by Greg Langmead on 2/14/26.
 //

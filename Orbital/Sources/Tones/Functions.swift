@@ -1,6 +1,6 @@
 //
 //  Functions.swift
-//  ProgressionPlayer
+//  Orbital
 //
 //  Created by Greg Langmead on 10/15/25.
 //
