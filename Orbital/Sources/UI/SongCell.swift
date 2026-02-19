@@ -51,6 +51,7 @@ struct SongCell: View {
           } label: {
             Label("Pattern", systemImage: "waveform")
               .font(.subheadline)
+              .foregroundStyle(.primary)
           }
           .buttonStyle(.bordered)
         }
@@ -63,6 +64,7 @@ struct SongCell: View {
           } label: {
             Label("Presets", systemImage: "slider.horizontal.3")
               .font(.subheadline)
+              .foregroundStyle(.primary)
           }
           .buttonStyle(.bordered)
         }
@@ -75,6 +77,7 @@ struct SongCell: View {
           } label: {
             Label("Spatial", systemImage: "globe")
               .font(.subheadline)
+              .foregroundStyle(.primary)
           }
           .buttonStyle(.bordered)
         }

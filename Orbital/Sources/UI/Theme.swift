@@ -26,7 +26,7 @@ struct Theme {
     /// Main texts.
     static let colorBodyText = Color(hex: 0xcccccc)
 
-    static let colorTitleText = Color.white
+    static let colorTitleText = Color.primary
 
     static let gradientKnob = LinearGradient(gradient: Gradient(
         colors: [Color(hex: 0x151515), Color(hex: 0x131313)]), startPoint: .top, endPoint: .bottom)

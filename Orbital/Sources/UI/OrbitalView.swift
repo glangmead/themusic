@@ -23,13 +23,6 @@ struct OrbitalView: View {
         .padding()
       }
       .navigationTitle("Orbital")
-      .onAppear {
-        let appearance = UINavigationBarAppearance()
-        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
-        appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
-        UINavigationBar.appearance().standardAppearance = appearance
-        UINavigationBar.appearance().scrollEdgeAppearance = appearance
-      }
       .toolbar {
         ToolbarItem {
           Button {
