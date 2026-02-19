@@ -15,6 +15,7 @@ struct SpatialFormView: View {
   @State private var isShowingVisualizer = false
 
   var body: some View {
+    Text("Change how sounds move in space. Sounds in the same preset use the same path but with staggered positions.")
     Form {
       let roseTracks = playbackState.tracks.filter {
         $0.spatialPreset.presets.first?.positionLFO != nil
