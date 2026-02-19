@@ -33,4 +33,43 @@ class SongLibrary {
       patternFileNames: ["duet_arpeggios.json"]
     ),
   ]
+
+  /// Playback states keyed by Song.id, created lazily by SongCells.
+  var playbackStates: [UUID: SongPlaybackState] = [:]
+
+  func playbackState(for song: Song, engine: SpatialAudioEngine) -> SongPlaybackState {
+    if let existing = playbackStates[song.id] { return existing }
+    let state = SongPlaybackState(song: song, engine: engine)
+    playbackStates[song.id] = state
+    return state
+  }
+
+  /// True when any song is currently playing (includes paused).
+  var anySongPlaying: Bool {
+    playbackStates.values.contains { $0.isPlaying }
+  }
+
+  func pauseAll() {
+    for state in playbackStates.values where state.isPlaying && !state.isPaused {
+      state.pause()
+    }
+  }
+
+  func resumeAll() {
+    for state in playbackStates.values where state.isPlaying && state.isPaused {
+      state.resume()
+    }
+  }
+
+  func stopAll() {
+    for state in playbackStates.values where state.isPlaying {
+      state.stop()
+    }
+  }
+
+  /// True when all playing songs are paused.
+  var allPaused: Bool {
+    let playing = playbackStates.values.filter { $0.isPlaying }
+    return !playing.isEmpty && playing.allSatisfy { $0.isPaused }
+  }
 }

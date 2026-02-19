@@ -22,9 +22,48 @@ struct OrbitalView: View {
         }
         .padding()
       }
+      .background {
+        // A gradient behind the Liquid Glass cards gives the material
+        // something to blur and reflect, improving contrast in light mode.
+        LinearGradient(
+          colors: [
+            Color(UIColor { traits in
+              traits.userInterfaceStyle == .dark
+                ? UIColor(white: 0.10, alpha: 1)
+                : UIColor(white: 0.88, alpha: 1)
+            }),
+            Color(UIColor { traits in
+              traits.userInterfaceStyle == .dark
+                ? UIColor(white: 0.05, alpha: 1)
+                : UIColor(white: 0.80, alpha: 1)
+            })
+          ],
+          startPoint: .top,
+          endPoint: .bottom
+        )
+        .ignoresSafeArea()
+      }
       .navigationTitle("Orbital")
       .toolbar {
-        ToolbarItem {
+        ToolbarItemGroup {
+          Button {
+            if library.allPaused {
+              library.resumeAll()
+            } else {
+              library.pauseAll()
+            }
+          } label: {
+            Image(systemName: library.allPaused ? "play.fill" : "pause.fill")
+          }
+          .disabled(!library.anySongPlaying)
+
+          Button {
+            library.stopAll()
+          } label: {
+            Image(systemName: "stop.fill")
+          }
+          .disabled(!library.anySongPlaying)
+
           Button {
             withAnimation(.easeInOut(duration: 0.4)) {
               isShowingVisualizer = true
