@@ -65,15 +65,17 @@ struct SongCell: View {
           .buttonStyle(.bordered)
         }
 
-        // Spatial button (placeholder)
-        Button {
-          // TODO: Spatial editor
-        } label: {
-          Label("Spatial", systemImage: "globe")
-            .font(.subheadline)
+        // Spatial button
+        if let playbackState {
+          NavigationLink {
+            SpatialFormView()
+              .environment(playbackState)
+          } label: {
+            Label("Spatial", systemImage: "globe")
+              .font(.subheadline)
+          }
+          .buttonStyle(.bordered)
         }
-        .buttonStyle(.bordered)
-        .disabled(true)
       }
     }
     .padding()

@@ -449,6 +449,15 @@ actor MusicPatterns {
     }
   }
   
+  /// Detach audio nodes but keep Preset objects alive for UI access.
+  func detachNodes() {
+    for (_, spatialPreset) in patterns {
+      spatialPreset.detachNodes()
+    }
+    patterns.removeAll()
+  }
+
+  /// Full teardown: detach nodes and destroy Preset objects.
   func cleanup() {
     for (_, spatialPreset) in patterns {
       spatialPreset.cleanup()

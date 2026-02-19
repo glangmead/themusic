@@ -64,12 +64,6 @@ private struct PresetFormContent: View {
 
   var body: some View {
     Form {
-      Section("Rose (Spatial Movement)") {
-        LabeledSlider(value: $synth.roseAmp, label: "Amplitude", range: 0...20)
-        LabeledSlider(value: $synth.roseFreq, label: "Frequency", range: 0...30)
-        LabeledSlider(value: $synth.roseLeaves, label: "Leaves", range: 0...30)
-      }
-
       Section("Effects") {
         Picker("Reverb Preset", selection: $synth.reverbPreset) {
           ForEach(AVAudioUnitReverbPreset.allCases, id: \.self) { option in

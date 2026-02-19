@@ -151,7 +151,7 @@ class SongPlaybackState {
     playbackTask?.cancel()
     playbackTask = nil
     musicPatterns = nil
-    Task { await mp?.cleanup() }
+    Task { await mp?.detachNodes() }
     compiledPatterns = []
     isPlaying = false
     isPaused = false

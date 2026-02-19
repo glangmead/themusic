@@ -91,12 +91,18 @@ class SpatialPreset: NoteHandler {
     engine.connectToEnvNode(avNodes)
   }
   
-  func cleanup() {
+  /// Detach audio nodes from the engine but keep the Preset objects
+  /// (and their positionLFO values) alive for UI access.
+  func detachNodes() {
     for preset in presets {
       preset.detachAppleNodes(from: engine)
     }
-    presets.removeAll()
     spatialLedger = nil
+  }
+
+  func cleanup() {
+    detachNodes()
+    presets.removeAll()
     _cachedHandles = nil
   }
   
