@@ -7,10 +7,11 @@
 
 import Foundation
 
-/// Per-track info exposed to the UI: the pattern name and its compiled preset.
+/// Per-track info exposed to the UI: the pattern name, its spec, and its compiled preset.
 struct TrackInfo: Identifiable {
   let id: Int
   let patternName: String
+  let patternSpec: PatternSyntax
   var presetSpec: PresetSyntax
   let spatialPreset: SpatialPreset
 }
@@ -57,44 +58,49 @@ class SongPlaybackState {
     var nextTrackId = 0
 
     for patternFileName in song.patternFileNames {
-      let patternSpec = Bundle.main.decode(
-        PatternSyntax.self,
+      let patternFile = Bundle.main.decode(
+        PatternFile.self,
         from: patternFileName,
         subdirectory: "patterns"
       )
-      let presetFileName = patternSpec.presetFilename + ".json"
-      let presetSpec = Bundle.main.decode(
-        PresetSyntax.self,
-        from: presetFileName,
-        subdirectory: "presets"
-      )
 
-      // Try multi-track MIDI expansion first
-      if let multiTracks = patternSpec.compileMultiTrack(presetSpec: presetSpec, engine: engine) {
-        for entry in multiTracks {
-          compiled.append((entry.pattern, entry.spatialPreset))
+      for patternSpec in patternFile.patterns {
+        let presetFileName = patternSpec.presetFilename + ".json"
+        let presetSpec = Bundle.main.decode(
+          PresetSyntax.self,
+          from: presetFileName,
+          subdirectory: "presets"
+        )
+
+        // Try multi-track MIDI expansion first
+        if let multiTracks = patternSpec.compileMultiTrack(presetSpec: presetSpec, engine: engine) {
+          for entry in multiTracks {
+            compiled.append((entry.pattern, entry.spatialPreset))
+            trackInfos.append(TrackInfo(
+              id: nextTrackId,
+              patternName: entry.trackName,
+              patternSpec: patternSpec,
+              presetSpec: entry.spatialPreset.presetSpec,
+              spatialPreset: entry.spatialPreset
+            ))
+            nextTrackId += 1
+          }
+        } else {
+          // Single-track pattern (generative or MIDI with specific track)
+          let (pattern, sp) = patternSpec.compile(
+            presetSpec: presetSpec,
+            engine: engine
+          )
+          compiled.append((pattern, sp))
           trackInfos.append(TrackInfo(
             id: nextTrackId,
-            patternName: entry.trackName,
-            presetSpec: entry.spatialPreset.presetSpec,
-            spatialPreset: entry.spatialPreset
+            patternName: patternSpec.name,
+            patternSpec: patternSpec,
+            presetSpec: presetSpec,
+            spatialPreset: sp
           ))
           nextTrackId += 1
         }
-      } else {
-        // Single-track pattern (generative or MIDI with specific track)
-        let (pattern, sp) = patternSpec.compile(
-          presetSpec: presetSpec,
-          engine: engine
-        )
-        compiled.append((pattern, sp))
-        trackInfos.append(TrackInfo(
-          id: nextTrackId,
-          patternName: patternSpec.name,
-          presetSpec: presetSpec,
-          spatialPreset: sp
-        ))
-        nextTrackId += 1
       }
     }
 

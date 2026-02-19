@@ -28,5 +28,9 @@ class SongLibrary {
       name: "Bach Invention 1",
       patternFileNames: ["bach_invention.json"]
     ),
+    Song(
+      name: "Duet Arpeggios",
+      patternFileNames: ["duet_arpeggios.json"]
+    ),
   ]
 }

@@ -266,45 +266,178 @@ enum NoteGeneratorSyntax: Codable {
 
   // MARK: - Name Resolution
 
-  static func resolveScale(_ name: String) -> Scale {
-    switch name.lowercased() {
-    case "major":          return .major
-    case "minor", "aeolian": return .aeolian
-    case "lydian":         return .lydian
-    case "dorian":         return .dorian
-    case "mixolydian":     return .mixolydian
-    case "phrygian":       return .phrygian
-    case "locrian":        return .locrian
-    case "harmonicminor":  return .harmonicMinor
-    case "melodicminor":   return .melodicMinor
-    case "pentatonicmajor": return .pentatonicMajor
-    case "pentatonicminor": return .pentatonicMinor
-    case "chromatic":      return .chromatic
-    default:               return .major
+  /// All Tonic scales with display names, ordered for UI pickers.
+  static let allScales: [(name: String, scale: Scale)] = [
+    // Common modes
+    ("Major", .major),
+    ("Minor", .minor),
+    ("Natural Minor", .naturalMinor),
+    ("Harmonic Minor", .harmonicMinor),
+    ("Melodic Minor", .melodicMinor),
+    // Church modes
+    ("Ionian", .ionian),
+    ("Dorian", .dorian),
+    ("Phrygian", .phrygian),
+    ("Lydian", .lydian),
+    ("Mixolydian", .mixolydian),
+    ("Aeolian", .aeolian),
+    ("Locrian", .locrian),
+    // Pentatonic & Blues
+    ("Pentatonic Major", .pentatonicMajor),
+    ("Pentatonic Minor", .pentatonicMinor),
+    ("Pentatonic Neutral", .pentatonicNeutral),
+    ("Blues", .blues),
+    ("Major Blues Hexatonic", .majorBluesHexatonic),
+    ("Minor Blues Hexatonic", .minorBluesHexatonic),
+    // Bebop
+    ("Major Bebop", .majorBebop),
+    ("Minor Bebop", .minorBebop),
+    ("Bebop Dominant", .bebopDominant),
+    // Jazz
+    ("Jazz Melodic Minor", .jazzMelodicMinor),
+    ("Altered", .altered),
+    ("Dominant 7th", .dominant7th),
+    // Diminished & Augmented
+    ("Half Diminished", .halfDiminished),
+    ("Whole Diminished", .wholeDiminished),
+    ("Diminished Whole Tone", .diminishedWholeTone),
+    ("Augmented", .augmented),
+    ("Auxiliary Diminished", .auxiliaryDiminished),
+    ("Auxiliary Augmented", .auxiliaryAugmented),
+    ("Auxiliary Diminished Blues", .auxiliaryDimBlues),
+    // Whole & Chromatic
+    ("Whole", .whole),
+    ("Chromatic", .chromatic),
+    ("Diatonic", .diatonic),
+    // Extended modes
+    ("Dorian \u{266F}4", .dorianSharp4),
+    ("Dorian \u{266D}2", .dorianFlat2),
+    ("Dorian \u{266D}5", .dorianFlat5),
+    ("Phrygian Dominant", .phrygianDominant),
+    ("Phrygian \u{266D}4", .phrygianFlat4),
+    ("Lydian Minor", .lydianMinor),
+    ("Lydian Diminished", .lydianDiminished),
+    ("Lydian \u{266F}2", .lydianSharp2),
+    ("Lydian \u{266F}6", .lydianSharp6),
+    ("Lydian \u{266F}2 \u{266F}6", .lydianSharp2Sharp6),
+    ("Lydian \u{266D}3", .lydianFlat3),
+    ("Lydian \u{266D}6", .lydianFlat6),
+    ("Lydian \u{266D}7", .lydianFlat7),
+    ("Lydian Augmented", .lydianAugmented),
+    ("Lydian Augmented \u{266F}2", .lydianAugmentedSharp2),
+    ("Lydian Augmented \u{266F}6", .lydianAugmentedSharp6),
+    ("Mixolydian \u{266D}2", .mixolydianFlat2),
+    ("Mixolydian \u{266D}6", .mixolydianFlat6),
+    ("Mixolydian Augmented", .mixolydianAugmented),
+    ("Locrian 2", .locrian2),
+    ("Locrian 3", .locrian3),
+    ("Locrian 6", .locrian6),
+    ("Major Locrian", .majorLocrian),
+    ("Locrian Diminished", .locrianDiminished),
+    ("Locrian Diminished \u{266D}\u{266D}3", .locrianDiminishedFlatFlat3),
+    ("Super Locrian", .superLocrian),
+    ("Super Locrian Diminished \u{266D}\u{266D}3", .superLocrianDiminshedFlatFlat3),
+    ("Ionian \u{266F}2", .ionianSharp2),
+    ("Ionian Augmented", .ionianAugmented),
+    ("Ionian Augmented \u{266F}2", .ionianAugmentedSharp2),
+    ("Ultraphrygian", .ultraphrygian),
+    // World scales
+    ("Spanish Gypsy", .spanishGypsy),
+    ("Gypsy", .gypsy),
+    ("Flamenco", .flamenco),
+    ("Romanian Minor", .romanianMinor),
+    ("Hungarian Major", .hungarianMajor),
+    ("Hungarian Minor", .hungarianMinor),
+    ("Double Harmonic", .doubleHarmonic),
+    ("Byzantine", .byzantine),
+    ("Arabian", .arabian),
+    ("Persian", .persian),
+    ("Maqam", .maqam),
+    ("Algerian", .algerian),
+    ("Balinese", .balinese),
+    ("Chinese", .chinese),
+    ("Hirajoshi", .hirajoshi),
+    ("Kumoi", .kumoi),
+    ("Yo", .yo),
+    ("Iwato", .iwato),
+    ("Insen", .insen),
+    ("Mongolian", .mongolian),
+    ("Hindu", .hindu),
+    ("Mohammedan", .mohammedan),
+    ("Oriental", .oriental),
+    ("Hawaiian", .hawaiian),
+    ("Pelog", .pelog),
+    // Other
+    ("Eight Tone Spanish", .eightToneSpanish),
+    ("Enigmatic", .enigmatic),
+    ("Leading Whole Tone", .leadingWholeTone),
+    ("Neopolitan", .neopolitan),
+    ("Neopolitan Major", .neopolitanMajor),
+    ("Neopolitan Minor", .neopolitanMinor),
+    ("Nine Tone", .nineTone),
+    ("Overtone", .overtone),
+    ("Prometheus", .prometheus),
+    ("Prometheus Neopolitan", .prometheusNeopolitan),
+    ("Purvi Theta", .purviTheta),
+    ("Todi Theta", .todiTheta),
+    ("Six Tone Symmetrical", .sixToneSymmetrical),
+    ("Tritone", .tritone),
+    ("Istrian", .istrian),
+    ("Pfluke", .pfluke),
+    ("Ukrainian Dorian", .ukrainianDorian),
+    ("Man Gong", .manGong),
+    ("Ritsusen", .ritsusen),
+  ]
+
+  /// Lookup table built from `allScales`. Maps lowercased names (with and without spaces) to Scale.
+  private static let scaleTable: [String: Scale] = {
+    var table: [String: Scale] = [:]
+    for (name, scale) in allScales {
+      let lower = name.lowercased()
+      table[lower] = scale
+      // Also add the no-spaces form for backward compat with JSON like "harmonicminor"
+      let noSpaces = lower.replacingOccurrences(of: " ", with: "")
+      table[noSpaces] = scale
     }
+    // Extra aliases
+    table["minor"] = .minor
+    table["aeolian"] = .aeolian
+    return table
+  }()
+
+  static func resolveScale(_ name: String) -> Scale {
+    scaleTable[name.lowercased()] ?? .major
   }
 
+  /// All Tonic note classes with display names, ordered chromatically for UI pickers.
+  static let allNoteClasses: [(name: String, noteClass: NoteClass)] = [
+    ("C", .C),
+    ("C\u{266F} / D\u{266D}", .Cs),
+    ("D", .D),
+    ("D\u{266F} / E\u{266D}", .Ds),
+    ("E", .E),
+    ("F", .F),
+    ("F\u{266F} / G\u{266D}", .Fs),
+    ("G", .G),
+    ("G\u{266F} / A\u{266D}", .Gs),
+    ("A", .A),
+    ("A\u{266F} / B\u{266D}", .As),
+    ("B", .B),
+  ]
+
+  /// Lookup table for note class resolution from JSON strings.
+  private static let noteClassTable: [String: NoteClass] = [
+    "c": .C, "cb": .Cb, "cs": .Cs, "c#": .Cs,
+    "d": .D, "db": .Db, "ds": .Ds, "d#": .Ds,
+    "e": .E, "eb": .Eb, "es": .Es, "e#": .Es,
+    "f": .F, "fb": .Fb, "fs": .Fs, "f#": .Fs,
+    "g": .G, "gb": .Gb, "gs": .Gs, "g#": .Gs,
+    "a": .A, "ab": .Ab, "as": .As, "a#": .As,
+    "b": .B, "bb": .Bb, "bs": .Bs, "b#": .Bs,
+  ]
+
   static func resolveNoteClass(_ name: String) -> NoteClass {
-    switch name {
-    case "C":        return .C
-    case "Cs", "C#": return .Cs
-    case "Db":       return .Db
-    case "D":        return .D
-    case "Ds", "D#": return .Ds
-    case "Eb":       return .Eb
-    case "E":        return .E
-    case "F":        return .F
-    case "Fs", "F#": return .Fs
-    case "Gb":       return .Gb
-    case "G":        return .G
-    case "Gs", "G#": return .Gs
-    case "Ab":       return .Ab
-    case "A":        return .A
-    case "As", "A#": return .As
-    case "Bb":       return .Bb
-    case "B":        return .B
-    default:         return .C
-    }
+    noteClassTable[name.lowercased()] ?? .C
   }
 
 
@@ -425,3 +558,60 @@ struct PatternSyntax: Codable {
     }
   }
 }
+// MARK: - PatternFile
+
+/// Decodes a pattern JSON file that is either a single PatternSyntax object
+/// or an array of PatternSyntax objects (multi-track generative patterns).
+enum PatternFile: Decodable {
+  case single(PatternSyntax)
+  case multi([PatternSyntax])
+
+  var patterns: [PatternSyntax] {
+    switch self {
+    case .single(let p): return [p]
+    case .multi(let ps): return ps
+    }
+  }
+
+  init(from decoder: Decoder) throws {
+    if let array = try? [PatternSyntax](from: decoder) {
+      self = .multi(array)
+    } else {
+      self = .single(try PatternSyntax(from: decoder))
+    }
+  }
+}
+
+// MARK: - NoteGeneratorSyntax Display Helpers
+
+extension NoteGeneratorSyntax {
+  /// Human-readable type name for display in the pattern list.
+  var displayTypeName: String {
+    switch self {
+    case .fixed:            return "Fixed"
+    case .scaleSampler:     return "Scale Sampler"
+    case .chordProgression: return "Chord Progression"
+    case .melodic:          return "Melodic"
+    case .midiFile:         return "MIDI File"
+    }
+  }
+
+  /// Short summary of the key musical parameters.
+  var displaySummary: String {
+    switch self {
+    case .fixed(let events):
+      return "\(events.count) chord\(events.count == 1 ? "" : "s")"
+    case .scaleSampler(let scale, let root, _):
+      return "\(root) \(scale)"
+    case .chordProgression(let scale, let root, let style):
+      return "\(root) \(scale)" + (style.map { " (\($0))" } ?? "")
+    case .melodic(let scales, let roots, _, _, _):
+      let scaleStr = scales.candidates.first ?? "?"
+      let rootStr = roots.candidates.first ?? "?"
+      return "\(rootStr) \(scaleStr)" + (scales.candidates.count > 1 ? " +\(scales.candidates.count - 1)" : "")
+    case .midiFile(let filename, _, _):
+      return (filename as NSString).lastPathComponent
+    }
+  }
+}
+

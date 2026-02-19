@@ -43,15 +43,17 @@ struct SongCell: View {
       }
 
       HStack(spacing: 12) {
-        // Pattern button (placeholder)
-        Button {
-          // TODO: Pattern editor
-        } label: {
-          Label("Pattern", systemImage: "waveform")
-            .font(.subheadline)
+        // Pattern button
+        if let playbackState {
+          NavigationLink {
+            PatternListView(song: song)
+              .environment(playbackState)
+          } label: {
+            Label("Pattern", systemImage: "waveform")
+              .font(.subheadline)
+          }
+          .buttonStyle(.bordered)
         }
-        .buttonStyle(.bordered)
-        .disabled(true)
 
         // Presets button
         if let playbackState {
