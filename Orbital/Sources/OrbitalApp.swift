@@ -31,6 +31,7 @@ struct OrbitalApp: App {
       AppView()
         .environment(engine)
         .environment(songLibrary)
+        .tint(.white)
         .onReceive(NotificationCenter.default.publisher(for: UIApplication.willTerminateNotification)) { _ in
           engine.fadeOutAndStop()
         }

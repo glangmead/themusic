@@ -19,11 +19,16 @@ struct SongCell: View {
   var body: some View {
     VStack(alignment: .leading, spacing: 12) {
       HStack(spacing: 12) {
+        Text(song.name)
+          .font(.title)
+
+        Spacer()
+
         Button {
           playbackState?.togglePlayback()
         } label: {
           Image(systemName: isPlaying && !isPaused ? "pause.fill" : "play.fill")
-            .font(.title2)
+            .font(.largeTitle)
         }
         .buttonStyle(.plain)
 
@@ -31,15 +36,10 @@ struct SongCell: View {
           playbackState?.stop()
         } label: {
           Image(systemName: "stop.fill")
-            .font(.title2)
+            .font(.largeTitle)
         }
         .buttonStyle(.plain)
         .disabled(!isPlaying)
-
-        Text(song.name)
-          .font(.title).fontWeight(.bold)
-
-        Spacer()
       }
 
       HStack(spacing: 12) {
@@ -81,8 +81,8 @@ struct SongCell: View {
     .onTapGesture {
       playbackState?.togglePlayback()
     }
-    .background(Color(.secondarySystemBackground))
-    .clipShape(RoundedRectangle(cornerRadius: 12))
+    .modifier(GlassCardModifier(isActive: isPlaying))
+    .animation(.easeInOut(duration: 0.3), value: isPlaying)
     .onAppear {
       if playbackState == nil {
         playbackState = SongPlaybackState(song: song, engine: engine)
@@ -90,6 +90,63 @@ struct SongCell: View {
     }
   }
 }
+private struct GlassCardModifier: ViewModifier {
+  let isActive: Bool
+
+  func body(content: Content) -> some View {
+    if #available(iOS 26.0, *) {
+      content
+        .glassEffect(
+          isActive
+            ? .regular.interactive().tint(.white.opacity(0.15))
+            : .regular.interactive(),
+          in: .rect(cornerRadius: 16)
+        )
+        .overlay {
+          if isActive {
+            ShimmerBorder()
+          }
+        }
+    } else {
+      content
+        .background {
+          RoundedRectangle(cornerRadius: 16)
+            .fill(.ultraThinMaterial)
+        }
+        .clipShape(RoundedRectangle(cornerRadius: 16))
+        .shadow(color: .black.opacity(0.15), radius: 8, y: 4)
+    }
+  }
+}
+
+/// An animated gradient that sweeps around the border of a rounded rectangle.
+private struct ShimmerBorder: View {
+  var body: some View {
+    TimelineView(.animation) { context in
+      let angle = Angle.degrees(
+        context.date.timeIntervalSinceReferenceDate.truncatingRemainder(dividingBy: 4) / 4 * 360
+      )
+      RoundedRectangle(cornerRadius: 16)
+        .strokeBorder(
+          AngularGradient(
+            stops: [
+              .init(color: .clear, location: 0),
+              .init(color: .clear, location: 0.3),
+              .init(color: Theme.colorHighlight.opacity(0.35), location: 0.42),
+              .init(color: .white.opacity(0.45), location: 0.5),
+              .init(color: Theme.colorHighlight.opacity(0.35), location: 0.58),
+              .init(color: .clear, location: 0.7),
+              .init(color: .clear, location: 1.0),
+            ],
+            center: .center,
+            angle: angle
+          ),
+          lineWidth: 1.5
+        )
+    }
+  }
+}
+
 #Preview {
   NavigationStack {
     SongCell(song: Song(
