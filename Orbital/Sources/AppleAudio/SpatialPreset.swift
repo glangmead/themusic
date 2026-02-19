@@ -163,15 +163,9 @@ class SpatialPreset: NoteHandler {
       if let voiceHandles = presets[voiceIdx].handles {
         for (key, modulatingArrow) in modulators {
           if let arrowConsts = voiceHandles.namedConsts[key] {
-            if key == "vibratoAmp" {
-              print("vibratoAmp being set to...")
-            }
             let value = modulatingArrow.of(now)
             for arrowConst in arrowConsts {
               arrowConst.val = value
-            }
-            if key == "vibratoAmp" {
-              print("vibratoAmp being set to \(value)")
             }
           }
         }

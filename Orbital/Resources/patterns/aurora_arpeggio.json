@@ -39,9 +39,11 @@
       "arrow": { "reciprocal": { "of": {
         "sum": { "of": [
           {"prod": { "of": [
-            { "eventNote": {} },
+            {"compose": {"arrows": [
+              { "identity": {} },
+              { "eventNote": {} }
+            ]}},
             { "reciprocal": { "of": { "const": {"val": 12, "name": "twelve"} }}},
-            { "identity": {} }
           ]}},
           {"const": {"val": 1, "name": "one"}}
         ]}
