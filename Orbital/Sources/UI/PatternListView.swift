@@ -44,6 +44,11 @@ struct PatternListView: View {
           Image(systemName: "stop.fill")
         }
         .disabled(!playbackState.isPlaying)
+        Button {
+          playbackState.restart()
+        } label: {
+          Image(systemName: "arrow.counterclockwise")
+        }
       }
       ToolbarItem {
         Button {

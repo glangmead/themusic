@@ -558,6 +558,53 @@ struct PatternSyntax: Codable {
     }
   }
 }
+// MARK: - GeneratorType
+
+/// Enum for the type-switching picker in the pattern editor UI.
+enum GeneratorType: String, CaseIterable, Identifiable {
+  case melodic = "Melodic"
+  case scaleSampler = "Scale Sampler"
+  case chordProgression = "Chord Progression"
+  case fixed = "Fixed"
+  case midiFile = "MIDI File"
+  var id: String { rawValue }
+}
+
+extension NoteGeneratorSyntax {
+  /// The generator type of this instance.
+  var generatorType: GeneratorType {
+    switch self {
+    case .melodic:          return .melodic
+    case .scaleSampler:     return .scaleSampler
+    case .chordProgression: return .chordProgression
+    case .fixed:            return .fixed
+    case .midiFile:         return .midiFile
+    }
+  }
+
+  /// Create a default instance for the given generator type.
+  static func defaultGenerator(for type: GeneratorType) -> NoteGeneratorSyntax {
+    switch type {
+    case .melodic:
+      return .melodic(
+        scales: IteratedListSyntax(candidates: ["Major"], emission: .cyclic),
+        roots: IteratedListSyntax(candidates: ["C"], emission: .cyclic),
+        octaves: IteratedListSyntax(candidates: [4], emission: .cyclic),
+        degrees: IteratedListSyntax(candidates: [1, 3, 5], emission: .cyclic),
+        ordering: .cyclic
+      )
+    case .scaleSampler:
+      return .scaleSampler(scale: "Major", root: "C", octaves: [3, 4, 5])
+    case .chordProgression:
+      return .chordProgression(scale: "Major", root: "C", style: "baroque")
+    case .fixed:
+      return .fixed(events: [ChordSyntax(notes: [NoteSyntax(midi: 60, velocity: 100)])])
+    case .midiFile:
+      return .midiFile(filename: "", track: nil, loop: true)
+    }
+  }
+}
+
 // MARK: - PatternFile
 
 /// Decodes a pattern JSON file that is either a single PatternSyntax object

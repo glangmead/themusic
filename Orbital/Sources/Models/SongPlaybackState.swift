@@ -11,7 +11,7 @@ import Foundation
 struct TrackInfo: Identifiable {
   let id: Int
   let patternName: String
-  let patternSpec: PatternSyntax
+  var patternSpec: PatternSyntax
   var presetSpec: PresetSyntax
   let spatialPreset: SpatialPreset
 }
@@ -52,6 +52,13 @@ class SongPlaybackState {
   /// preset list is populated before the user hits play.
   func loadTracks() {
     guard compiledPatterns.isEmpty else { return }
+
+    // If tracks already exist (from a previous load), recompile from in-memory
+    // patternSpecs to preserve user edits across stop/play cycles.
+    if !tracks.isEmpty {
+      recompileFromTracks()
+      return
+    }
 
     var compiled: [(MusicPattern, SpatialPreset)] = []
     var trackInfos: [TrackInfo] = []
@@ -106,6 +113,38 @@ class SongPlaybackState {
 
     tracks = trackInfos
     compiledPatterns = compiled
+  }
+
+  /// Recompile patterns from the existing in-memory tracks (preserves user edits).
+  private func recompileFromTracks() {
+    var compiled: [(MusicPattern, SpatialPreset)] = []
+    for track in tracks {
+      let presetFileName = track.patternSpec.presetFilename + ".json"
+      let presetSpec = Bundle.main.decode(
+        PresetSyntax.self,
+        from: presetFileName,
+        subdirectory: "presets"
+      )
+      let (pattern, sp) = track.patternSpec.compile(
+        presetSpec: presetSpec,
+        engine: engine
+      )
+      compiled.append((pattern, sp))
+    }
+    compiledPatterns = compiled
+  }
+
+  /// Replace the pattern spec for a given track. Takes effect on next play().
+  func replacePattern(trackId: Int, newPatternSpec: PatternSyntax) {
+    guard let idx = tracks.firstIndex(where: { $0.id == trackId }) else { return }
+    tracks[idx].patternSpec = newPatternSpec
+    compiledPatterns = []  // Force recompilation on next play()
+  }
+
+  /// Stop and immediately restart playback (applies any pending edits).
+  func restart() {
+    stop()
+    play()
   }
 
   /// Patterns compiled by loadTracks(), consumed by play().
