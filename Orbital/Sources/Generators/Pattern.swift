@@ -57,8 +57,12 @@ struct MusicEvent {
 
     // Set up EventUsingArrow references
     for (_, modulatingArrow) in modulators {
-      if let eventUsingArrow = modulatingArrow as? EventUsingArrow {
-        eventUsingArrow.event = self
+      if let handleWH = modulatingArrow as? ArrowWithHandles {
+        for eventUsingArrowList in handleWH.namedEventUsing.values {
+          for eventUsingArrow in eventUsingArrowList {
+            eventUsingArrow.event = self
+          }
+        }
       }
     }
 

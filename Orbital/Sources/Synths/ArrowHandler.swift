@@ -184,7 +184,24 @@ extension ArrowSyntax {
         child.collectDescriptors(into: &descriptors, seenIds: &seenIds)
       }
 
-    case .identity, .control, .rand, .exponentialRand, .noiseSmoothStep, .line:
+    case .reciprocalConst(let name, let val):
+      guard seenIds.insert(name).inserted else { return }
+      descriptors.append(ArrowParamDescriptor(
+        id: name,
+        displayName: Self.displayName(for: name),
+        group: Self.groupName(for: name),
+        kind: .constVal,
+        defaultValue: val,
+        defaultShape: nil,
+        suggestedRange: Self.suggestedRange(for: name, defaultValue: val),
+        stepSize: Self.suggestedStep(for: name)
+      ))
+
+    case .reciprocal(of: let inner):
+      inner.collectDescriptors(into: &descriptors, seenIds: &seenIds)
+
+    case .identity, .control, .rand, .exponentialRand, .noiseSmoothStep, .line,
+         .eventNote, .eventVelocity:
       break
     }
   }

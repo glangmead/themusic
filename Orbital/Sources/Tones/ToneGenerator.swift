@@ -586,6 +586,7 @@ class ArrowWithHandles: Arrow11 {
   var namedChorusers     = [String: [Choruser]]()
   var namedCrossfaders   = [String: [ArrowCrossfade]]()
   var namedCrossfadersEqPow = [String: [ArrowEqualPowerCrossfade]]()
+  var namedEventUsing = [String: [EventUsingArrow]]()
   var wrappedArrow: Arrow11
   private var wrappedArrowUnsafe: Unmanaged<Arrow11>
   
@@ -616,6 +617,7 @@ class ArrowWithHandles: Arrow11 {
     namedChorusers.merge(arr2.namedChorusers) { (a, b) in return a + b }
     namedCrossfaders.merge(arr2.namedCrossfaders) { (a, b) in return a + b }
     namedCrossfadersEqPow.merge(arr2.namedCrossfadersEqPow) { (a, b) in return a + b }
+    namedEventUsing.merge(arr2.namedEventUsing) { (a, b) in return a + b }
     return self
   }
   
@@ -646,6 +648,10 @@ enum ArrowSyntax: Codable {
   case rand(min: CoreFloat, max: CoreFloat)
   case exponentialRand(min: CoreFloat, max: CoreFloat)
   case line(duration: CoreFloat, min: CoreFloat, max: CoreFloat)
+  case reciprocalConst(name: String, val: CoreFloat)
+  indirect case reciprocal(of: ArrowSyntax)
+  case eventNote
+  case eventVelocity
   
   indirect case osc(name: String, shape: BasicOscillator.OscShape, width: ArrowSyntax)
   
@@ -784,6 +790,34 @@ enum ArrowSyntax: Codable {
       } else {
         handleArr.namedADSREnvelopes[name] = [env]
       }
+      return handleArr
+
+    case .reciprocalConst(let name, let val):
+      let arr = ArrowConstReciprocal(value: val)
+      let handleArr = ArrowWithHandles(arr)
+      handleArr.namedConsts[name] = [arr]
+      return handleArr
+
+    case .reciprocal(of: let inner):
+      let innerCompiled = inner.compile()
+      let arr = ArrowReciprocal()
+      arr.innerArr = innerCompiled.wrappedArrow
+      return ArrowWithHandles(arr).withMergeDictsFromArrow(innerCompiled)
+
+    case .eventNote:
+      let arr = EventUsingArrow(ofEvent: { event, _ in
+        CoreFloat(event.notes[0].note)
+      })
+      let handleArr = ArrowWithHandles(arr)
+      handleArr.namedEventUsing[""] = [arr]
+      return handleArr
+
+    case .eventVelocity:
+      let arr = EventUsingArrow(ofEvent: { event, _ in
+        CoreFloat(event.notes[0].velocity) / 127.0
+      })
+      let handleArr = ArrowWithHandles(arr)
+      handleArr.namedEventUsing[""] = [arr]
       return handleArr
 
     }

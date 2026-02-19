@@ -5,7 +5,6 @@
 //  Created by Greg Langmead on 2/18/26.
 //
 
-import SceneKit
 import SwiftUI
 
 /// Edits the spatial rose parameters for all tracks in a song.
@@ -15,8 +14,8 @@ struct SpatialFormView: View {
   @State private var isShowingVisualizer = false
 
   var body: some View {
-    Text("Change how sounds move in space. Sounds in the same preset use the same path but with staggered positions.")
     Form {
+      Text("Change how sounds move in space. Sounds in the same preset use the same path but with staggered positions.")
       let roseTracks = playbackState.tracks.filter {
         $0.spatialPreset.presets.first?.positionLFO != nil
       }
@@ -24,7 +23,7 @@ struct SpatialFormView: View {
       if let rose = roseTracks.first?.spatialPreset.presets.first?.positionLFO {
         Section {
           RoseSceneView(rose: rose)
-            .frame(height: 300)
+            .frame(height: 600)
             .clipShape(RoundedRectangle(cornerRadius: 12))
             .listRowInsets(EdgeInsets())
         }
@@ -111,6 +110,7 @@ private struct RoseSliders: View {
     _leaves = State(initialValue: lfo?.leafFactor.val ?? 0)
   }
 }
+
 #Preview("Spatial Form") {
   let engine = SpatialAudioEngine()
   let song = Song(name: "Preview Song", patternFileNames: ["aurora_arpeggio.json"])

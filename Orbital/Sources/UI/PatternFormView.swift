@@ -38,13 +38,18 @@ struct TimingState: Equatable {
   }
 }
 
+
+
 /// Arrow types supported in the modulator editor UI.
 enum SimpleArrowType: String, CaseIterable, Identifiable {
   case rand = "Random"
   case exponentialRand = "Exponential Random"
   case const = "Constant"
+  case reciprocalConst = "Reciprocal Constant"
   case noiseSmoothStep = "Noise Smooth Step"
   case line = "Line"
+  case eventNote = "Event Note"
+  case eventVelocity = "Event Velocity"
   var id: String { rawValue }
 }
 
@@ -69,6 +74,12 @@ struct ModulatorState: Identifiable, Equatable {
       arrowType = .exponentialRand; min = lo; max = hi; constValue = lo; noiseDuration = 1; lineDuration = 1
     case .const(_, let val):
       arrowType = .const; min = 0; max = 1; constValue = val; noiseDuration = 1; lineDuration = 1
+    case .reciprocalConst(_, let val):
+      arrowType = .reciprocalConst; min = 0; max = 1; constValue = val; noiseDuration = 1; lineDuration = 1
+    case .eventNote:
+      arrowType = .eventNote; min = 0; max = 127; constValue = 0; noiseDuration = 1; lineDuration = 1
+    case .eventVelocity:
+      arrowType = .eventVelocity; min = 0; max = 1; constValue = 0; noiseDuration = 1; lineDuration = 1
     case .noiseSmoothStep(let freq, let lo, let hi):
       arrowType = .noiseSmoothStep; min = lo; max = hi; constValue = 0; noiseDuration = freq; lineDuration = 1
     case .line(let dur, let lo, let hi):
@@ -95,8 +106,11 @@ struct ModulatorState: Identifiable, Equatable {
     case .rand:            arrow = .rand(min: min, max: max)
     case .exponentialRand: arrow = .exponentialRand(min: min, max: max)
     case .const:           arrow = .const(name: target, val: constValue)
+    case .reciprocalConst: arrow = .reciprocalConst(name: target, val: constValue)
     case .noiseSmoothStep: arrow = .noiseSmoothStep(noiseFreq: noiseDuration, min: min, max: max)
     case .line:            arrow = .line(duration: lineDuration, min: min, max: max)
+    case .eventNote:       arrow = .eventNote
+    case .eventVelocity:   arrow = .eventVelocity
     }
     return ModulatorSyntax(target: target, arrow: arrow)
   }
@@ -504,25 +518,13 @@ struct PatternFormView: View {
 
     switch state.wrappedValue.kind {
     case .fixed:
-      HStack {
-        Text(String(format: "%.2fs", state.wrappedValue.fixedValue))
-        Slider(value: state.fixedValue, in: 0.01...10.0)
-      }
+      SliderWithField(label: "Value", value: state.fixedValue, range: 0.01...10.0)
     case .random:
-      HStack {
-        Text(String(format: "Min: %.2fs", state.wrappedValue.randomMin))
-        Slider(value: state.randomMin, in: 0.01...10.0)
-      }
-      HStack {
-        Text(String(format: "Max: %.2fs", state.wrappedValue.randomMax))
-        Slider(value: state.randomMax, in: 0.01...10.0)
-      }
+      SliderWithField(label: "Min", value: state.randomMin, range: 0.01...10.0)
+      SliderWithField(label: "Max", value: state.randomMax, range: 0.01...10.0)
     case .list:
       ForEach(Array(state.wrappedValue.listValues.enumerated()), id: \.offset) { i, _ in
-        HStack {
-          Text(String(format: "%.2fs", state.wrappedValue.listValues[i]))
-          Slider(value: state.listValues[i], in: 0.01...10.0)
-        }
+        SliderWithField(label: "Value \(i + 1)", value: state.listValues[i], range: 0.01...10.0)
       }
       .onDelete { state.wrappedValue.listValues.remove(atOffsets: $0) }
       Button("Add Value") { state.wrappedValue.listValues.append(1.0) }
@@ -557,45 +559,26 @@ struct PatternFormView: View {
 
       switch modulators[i].arrowType {
       case .const:
-        HStack {
-          Text(String(format: "%.3f", modulators[i].constValue))
-          Slider(value: $modulators[i].constValue, in: 0...2)
-        }
+        SliderWithField(label: "Value", value: $modulators[i].constValue, range: 0...2)
       case .rand, .exponentialRand:
-        HStack {
-          Text(String(format: "Min: %.3f", modulators[i].min))
-          Slider(value: $modulators[i].min, in: 0...2)
-        }
-        HStack {
-          Text(String(format: "Max: %.3f", modulators[i].max))
-          Slider(value: $modulators[i].max, in: 0...2)
-        }
+        SliderWithField(label: "Min", value: $modulators[i].min, range: modulatorRange(for: modulators[i]))
+        SliderWithField(label: "Max", value: $modulators[i].max, range: modulatorRange(for: modulators[i]))
       case .noiseSmoothStep:
-        HStack {
-          Text(String(format: "Freq: %.2f", modulators[i].noiseDuration))
-          Slider(value: $modulators[i].noiseDuration, in: 0.01...10)
-        }
-        HStack {
-          Text(String(format: "Min: %.3f", modulators[i].min))
-          Slider(value: $modulators[i].min, in: 0...2)
-        }
-        HStack {
-          Text(String(format: "Max: %.3f", modulators[i].max))
-          Slider(value: $modulators[i].max, in: 0...2)
-        }
+        SliderWithField(label: "Freq", value: $modulators[i].noiseDuration, range: 0.01...10)
+        SliderWithField(label: "Min", value: $modulators[i].min, range: modulatorRange(for: modulators[i]))
+        SliderWithField(label: "Max", value: $modulators[i].max, range: modulatorRange(for: modulators[i]))
       case .line:
-        HStack {
-          Text(String(format: "Duration: %.2fs", modulators[i].lineDuration))
-          Slider(value: $modulators[i].lineDuration, in: 0.01...30)
-        }
-        HStack {
-          Text(String(format: "Min: %.3f", modulators[i].min))
-          Slider(value: $modulators[i].min, in: 0...2)
-        }
-        HStack {
-          Text(String(format: "Max: %.3f", modulators[i].max))
-          Slider(value: $modulators[i].max, in: 0...2)
-        }
+        SliderWithField(label: "Duration", value: $modulators[i].lineDuration, range: 0.01...30)
+        SliderWithField(label: "Min", value: $modulators[i].min, range: modulatorRange(for: modulators[i]))
+        SliderWithField(label: "Max", value: $modulators[i].max, range: modulatorRange(for: modulators[i]))
+      case .reciprocalConst:
+        SliderWithField(label: "Value", value: $modulators[i].constValue, range: 0...128)
+      case .eventNote:
+        Text("Emits MIDI note number (0–127)")
+          .foregroundStyle(.secondary)
+      case .eventVelocity:
+        Text("Emits velocity (0.0–1.0)")
+          .foregroundStyle(.secondary)
       }
     }
   }
@@ -640,6 +623,16 @@ struct PatternFormView: View {
     case "random":   return .random
     default:         return .cyclic
     }
+  }
+
+  /// Computes a slider range that adapts to the modulator's current values.
+  /// For large values (>= 0.01), uses 0...2. For tiny values (like vibratoAmp),
+  /// scales the range to 10x the larger of min/max so the slider is usable.
+  private func modulatorRange(for mod: ModulatorState) -> ClosedRange<CoreFloat> {
+    let upper = max(abs(mod.min), abs(mod.max))
+    if upper >= 0.01 { return 0...2 }
+    if upper == 0 { return 0...2 }
+    return 0...(upper * 10)
   }
 
   // MARK: - Apply / Save
@@ -718,3 +711,17 @@ struct PatternFormView: View {
     }
   }
 }
+
+#Preview {
+  let engine = SpatialAudioEngine()
+  let song = Song(name: "Aurora", patternFileNames: ["aurora_arpeggio.json"])
+  let playbackState = SongPlaybackState(song: song, engine: engine)
+  let _ = playbackState.loadTracks()
+  let track = playbackState.tracks.first!
+  NavigationStack {
+    PatternFormView(track: track)
+  }
+  .environment(engine)
+  .environment(playbackState)
+}
+

@@ -104,6 +104,24 @@ struct ArrowSyntaxEditorView: View {
 
     case .control:
       EmptyView()
+
+    case .reciprocalConst(let name, _):
+      ConstEditorRow(name: name, handler: handler, label: "\(name) (reciprocal)")
+
+    case .reciprocal(of: let inner):
+      DisclosureGroup("1/x") {
+        ArrowSyntaxEditorView(syntax: inner, handler: handler)
+      }
+
+    case .eventNote:
+      Text("Event Note")
+        .font(.caption)
+        .foregroundStyle(.secondary)
+
+    case .eventVelocity:
+      Text("Event Velocity")
+        .font(.caption)
+        .foregroundStyle(.secondary)
     }
   }
 }
