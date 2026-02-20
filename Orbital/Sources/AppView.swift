@@ -40,44 +40,44 @@ private struct PlaybackAccessoryView: View {
     HStack {
       if library.isLoading {
         ProgressView()
+      }
 
-        if let name = library.currentSongName {
-          Text(name)
-            .lineLimit(1)
-        }
-      } else {
-        Button {
-          if library.allPaused {
-            library.resumeAll()
-          } else {
-            library.pauseAll()
-          }
-        } label: {
-          Image(systemName: library.allPaused ? "play.fill" : "pause.fill")
-        }
-
-        Button {
-          library.stopAll()
-        } label: {
-          Image(systemName: "stop.fill")
-        }
-
-        if let name = library.currentSongName {
-          Text(name)
-            .lineLimit(1)
-        }
+      if let name = library.currentSongName {
+        Text(name)
+          .lineLimit(1)
       }
 
       Spacer()
 
-      Button {
-        withAnimation(.easeInOut(duration: 0.4)) {
-          isShowingVisualizer = true
+      HStack(spacing: 20) {
+        if !library.isLoading {
+          Button {
+            if library.allPaused {
+              library.resumeAll()
+            } else {
+              library.pauseAll()
+            }
+          } label: {
+            Image(systemName: library.allPaused ? "play.fill" : "pause.fill")
+          }
+
+          Button {
+            library.stopAll()
+          } label: {
+            Image(systemName: "stop.fill")
+          }
         }
-      } label: {
-        Image(systemName: "sparkles.tv")
+
+        Button {
+          withAnimation(.easeInOut(duration: 0.4)) {
+            isShowingVisualizer = true
+          }
+        } label: {
+          Image(systemName: "sparkles.tv")
+        }
       }
     }
+    .padding(.horizontal)
   }
 }
 
