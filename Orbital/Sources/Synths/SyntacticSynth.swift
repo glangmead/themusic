@@ -47,11 +47,11 @@ class SyntacticSynth {
   
   // FX params
   var distortionAvailable: Bool {
-    presets[0].distortionAvailable
+    presets.first?.distortionAvailable ?? false
   }
   
   var delayAvailable: Bool {
-    presets[0].delayAvailable
+    presets.first?.delayAvailable ?? false
   }
   
   var reverbMix: CoreFloat = 50 {
@@ -136,22 +136,24 @@ class SyntacticSynth {
     }
     
     // Read rose, effects, and delay values from the first preset
-    if let posLFO = presets[0].positionLFO {
+    guard let first = presets.first else { return }
+
+    if let posLFO = first.positionLFO {
       roseAmp = posLFO.amp.val
       roseFreq = posLFO.freq.val
       roseLeaves = posLFO.leafFactor.val
     }
     
-    reverbPreset = presets[0].reverbPreset
-    reverbMix = presets[0].getReverbWetDryMix()
+    reverbPreset = first.reverbPreset
+    reverbMix = first.getReverbWetDryMix()
     
-    delayTime = presets[0].getDelayTime()
-    delayFeedback = presets[0].getDelayFeedback()
-    delayWetDryMix = presets[0].getDelayWetDryMix()
-    delayLowPassCutoff = presets[0].getDelayLowPassCutoff()
+    delayTime = first.getDelayTime()
+    delayFeedback = first.getDelayFeedback()
+    delayWetDryMix = first.getDelayWetDryMix()
+    delayLowPassCutoff = first.getDelayLowPassCutoff()
     
-    distortionPreset = presets[0].getDistortionPreset()
-    distortionPreGain = presets[0].getDistortionPreGain()
-    distortionWetDryMix = presets[0].getDistortionWetDryMix()
+    distortionPreset = first.getDistortionPreset()
+    distortionPreGain = first.getDistortionPreGain()
+    distortionWetDryMix = first.getDistortionWetDryMix()
   }
 }
