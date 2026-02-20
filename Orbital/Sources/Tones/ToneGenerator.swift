@@ -406,8 +406,17 @@ final class Rose: Arrow13 {
     self.phase = phase
   }
   override func of(_ t: CoreFloat) -> (CoreFloat, CoreFloat, CoreFloat) {
-    let domain = (freq.of(t) * t) + phase
-    return ( amp.of(t) * sin(leafFactor.of(t) * domain) * cos(domain), amp.of(t) * sin(leafFactor.of(t) * domain) * sin(domain), amp.of(t) * sin(domain) )
+    let a = amp.of(t)
+    let k = leafFactor.of(t)
+    let theta = (freq.of(t) * t) + phase
+    // Rose curve on the upper hemisphere of a sphere of radius `a`.
+    // phi (colatitude from +Y pole) ranges over [-π/2, π/2] so
+    // cos(phi) ≥ 0 — the curve stays in the upper hemisphere.
+    // No abs() so the particle passes smoothly through the pole.
+    let phi = (CoreFloat.pi / 2) * sin(k * theta)
+    return (a * sin(phi) * cos(theta),
+            a * cos(phi),
+            a * sin(phi) * sin(theta))
   }
 }
 

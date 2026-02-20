@@ -16,17 +16,30 @@ struct PresetFormView: View {
   let presetSpec: PresetSyntax
   @State private var synth: SyntacticSynth?
   private let externalSynth: SyntacticSynth?
+  /// Live spatial preset from a song track; used for the keyboard so
+  /// edits made in SpatialFormView are heard immediately.
+  private let liveSpatialPreset: SpatialPreset?
 
   /// Create a PresetFormView that builds its own SyntacticSynth.
   init(presetSpec: PresetSyntax) {
     self.presetSpec = presetSpec
     self.externalSynth = nil
+    self.liveSpatialPreset = nil
   }
 
   /// Create a PresetFormView that uses an existing SyntacticSynth.
   init(synth: SyntacticSynth) {
     self.presetSpec = synth.presetSpec
     self.externalSynth = synth
+    self.liveSpatialPreset = nil
+  }
+
+  /// Create a PresetFormView backed by a live SpatialPreset from a song track.
+  /// The keyboard plays through this preset so spatial parameter edits are heard.
+  init(presetSpec: PresetSyntax, spatialPreset: SpatialPreset) {
+    self.presetSpec = presetSpec
+    self.externalSynth = nil
+    self.liveSpatialPreset = spatialPreset
   }
 
   var body: some View {
@@ -34,7 +47,8 @@ struct PresetFormView: View {
       PresetFormContent(
         synth: resolved,
         presetSpec: presetSpec,
-        playbackState: playbackState
+        playbackState: playbackState,
+        liveSpatialPreset: liveSpatialPreset
       )
     } else {
       ProgressView()
@@ -52,6 +66,15 @@ private struct PresetFormContent: View {
   @Bindable var synth: SyntacticSynth
   let presetSpec: PresetSyntax
   var playbackState: SongPlaybackState?
+  /// When provided, the keyboard plays through this preset instead of the
+  /// synth's own spatial preset, so spatial edits are reflected.
+  var liveSpatialPreset: SpatialPreset?
+
+  /// The note handler the keyboard uses: prefer the live spatial preset
+  /// from the song track when available, fall back to the synth's own.
+  private var keyboardNoteHandler: NoteHandler? {
+    liveSpatialPreset ?? synth.noteHandler
+  }
 
   var body: some View {
     VStack(spacing: 0) {
@@ -61,10 +84,10 @@ private struct PresetFormContent: View {
           if !synth.engine.audioEngine.isRunning {
             try? synth.engine.start()
           }
-          synth.noteHandler?.noteOn(MidiNote(note: MidiValue(pitch.intValue), velocity: 100))
+          keyboardNoteHandler?.noteOn(MidiNote(note: MidiValue(pitch.intValue), velocity: 100))
         },
         noteOff: { pitch in
-          synth.noteHandler?.noteOff(MidiNote(note: MidiValue(pitch.intValue), velocity: 0))
+          keyboardNoteHandler?.noteOff(MidiNote(note: MidiValue(pitch.intValue), velocity: 0))
         }
       )
       .frame(height: 120)

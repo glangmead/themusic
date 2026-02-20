@@ -40,7 +40,7 @@ struct SongPresetListView: View {
     }
     .navigationDestination(item: $editingTrackId) { trackId in
       if let track = playbackState.tracks.first(where: { $0.id == trackId }) {
-        PresetFormView(presetSpec: track.presetSpec)
+        PresetFormView(presetSpec: track.presetSpec, spatialPreset: track.spatialPreset)
           .environment(playbackState)
       }
     }

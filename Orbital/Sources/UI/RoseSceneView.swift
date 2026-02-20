@@ -129,12 +129,9 @@ struct RoseSceneView: View {
                 let freq = roseRef.freq.val
                 let leafFactor = roseRef.leafFactor.val
 
-                // Compute Rose position
-                let domain = freq * t + Double(roseRef.phase)
-                let x = Float(roseRef.amp.val * sin(leafFactor * domain) * cos(domain))
-                let y = Float(roseRef.amp.val * sin(leafFactor * domain) * sin(domain))
-                let z = Float(roseRef.amp.val * sin(domain))
-                let pos = SIMD3<Float>(x, y, z)
+                // Compute Rose position (upper-hemisphere spherical)
+                let (rx, ry, rz) = roseRef.of(t)
+                let pos = SIMD3<Float>(Float(rx), Float(ry), Float(rz))
 
                 // Move dot
                 dotEntity.position = pos
@@ -203,10 +200,10 @@ struct RoseSceneView: View {
             DragGesture()
                 .onChanged { value in
                     let sensitivity: Float = 0.008
-                    cam.yaw = cam.baseYaw + Float(value.translation.width) * sensitivity
+                    cam.yaw = cam.baseYaw - Float(value.translation.width) * sensitivity
                     cam.pitch = max(-Float.pi / 2 + 0.1,
                                     min(Float.pi / 2 - 0.1,
-                                        cam.basePitch - Float(value.translation.height) * sensitivity))
+                                        cam.basePitch + Float(value.translation.height) * sensitivity))
                 }
                 .onEnded { _ in
                     cam.baseYaw = cam.yaw
