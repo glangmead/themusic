@@ -105,13 +105,13 @@ class SyntacticSynth {
   init(engine: SpatialAudioEngine, presetSpec: PresetSyntax, numVoices: Int = 12) {
     self.engine = engine
     self.presetSpec = presetSpec
-    setup(presetSpec: presetSpec)
+    Task { await setup(presetSpec: presetSpec) }
   }
   
   func loadPreset(_ presetSpec: PresetSyntax) {
     cleanup()
     self.presetSpec = presetSpec
-    setup(presetSpec: presetSpec)
+    Task { await setup(presetSpec: presetSpec) }
     reloadCount += 1
   }
   
@@ -121,8 +121,8 @@ class SyntacticSynth {
     arrowHandler = nil
   }
   
-  private func setup(presetSpec: PresetSyntax) {
-    spatialPreset = SpatialPreset(presetSpec: presetSpec, engine: engine, numVoices: numVoices)
+  private func setup(presetSpec: PresetSyntax) async {
+    spatialPreset = try? await SpatialPreset(presetSpec: presetSpec, engine: engine, numVoices: numVoices)
     
     // Build ArrowHandler from the syntax tree + aggregated handles
     if let arrowSyntax = presetSpec.arrow {

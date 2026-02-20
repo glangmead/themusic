@@ -350,7 +350,7 @@ class Preset: NoteHandler {
     }
   }
   
-  func wrapInAppleNodes(forEngine engine: SpatialAudioEngine) -> AVAudioMixerNode {
+  func wrapInAppleNodes(forEngine engine: SpatialAudioEngine) async throws -> AVAudioMixerNode {
     guard let mixerNode = self.mixerNode else {
       fatalError()
     }
@@ -371,7 +371,13 @@ class Preset: NoteHandler {
       initialNode = sourceNode
     } else if let sampler = sampler {
       engine.attach([sampler.node])
-      sampler.loadInstrument()
+      do {
+        try await sampler.loadInstrument()
+      } catch {
+        // Detach the sampler node we just attached before re-throwing
+        engine.detach([sampler.node])
+        throw error
+      }
       initialNode = sampler.node
     }
     

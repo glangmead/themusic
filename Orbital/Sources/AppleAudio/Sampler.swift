@@ -15,41 +15,54 @@ class Sampler {
   let fileNames: [String]
   let bank: UInt8
   let program: UInt8
-  
+
   init(fileNames: [String], bank: UInt8, program: UInt8) {
     self.node = AVAudioUnitSampler()
     self.fileNames = fileNames
     self.bank = bank
     self.program = program
   }
-  
-  func loadInstrument() {
+
+  /// Loads the instrument into the sampler node. Throws on failure.
+  /// Runs the actual file I/O on a background thread so the main thread
+  /// remains responsive (important for large SoundFont files).
+  func loadInstrument() async throws {
     let urls = fileNames.compactMap { fileName in
       Bundle.main.url(forResource: fileName, withExtension: "wav") ??
       Bundle.main.url(forResource: fileName, withExtension: "aiff") ??
       Bundle.main.url(forResource: fileName, withExtension: "aif")
     }
-    
+
+    // Capture node locally so we can use it from a nonisolated context.
+    let samplerNode = node
+    let program = program
+    let bank = bank
+
     if !urls.isEmpty {
-      do {
-        try node.loadAudioFiles(at: urls)
-      } catch {
-        print("Error loading audio file \(urls): \(error.localizedDescription)")
-      }
+      try await Task.detached {
+        try samplerNode.loadAudioFiles(at: urls)
+      }.value
     } else if let fileName = fileNames.first, let url = Bundle.main.url(forResource: fileName, withExtension: "exs") {
-      do {
-        try node.loadInstrument(at: url)
-      } catch {
-        print("Error loading exs instrument \(fileName): \(error.localizedDescription)")
-      }
+      try await Task.detached {
+        try samplerNode.loadInstrument(at: url)
+      }.value
     } else if let fileName = fileNames.first, let url = Bundle.main.url(forResource: fileName, withExtension: "sf2") {
-      do {
-        try node.loadSoundBankInstrument(at: url, program: program, bankMSB: bank, bankLSB: 0)
-      } catch {
-        print("Error loading sound bank instrument \(fileName): \(error.localizedDescription)")
-      }
+      try await Task.detached {
+        try samplerNode.loadSoundBankInstrument(at: url, program: program, bankMSB: bank, bankLSB: 0)
+      }.value
     } else {
-      print("Could not find sampler file(s): \(fileNames)")
+      throw SamplerError.fileNotFound(fileNames)
+    }
+  }
+
+  enum SamplerError: LocalizedError {
+    case fileNotFound([String])
+
+    var errorDescription: String? {
+      switch self {
+      case .fileNotFound(let names):
+        return "Could not find sampler file(s): \(names.joined(separator: ", "))"
+      }
     }
   }
 }

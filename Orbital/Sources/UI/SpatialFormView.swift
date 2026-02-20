@@ -42,8 +42,8 @@ struct SpatialFormView: View {
       }
     }
     .navigationTitle("Spatial")
-    .onAppear {
-      playbackState.loadTracks()
+    .task {
+      try? await playbackState.loadTracks()
     }
     .toolbar {
       ToolbarItemGroup {

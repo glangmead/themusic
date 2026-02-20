@@ -709,9 +709,16 @@ struct PatternFormView: View {
 #Preview {
   let engine = SpatialAudioEngine()
   let song = Song(name: "Aurora", patternFileNames: ["aurora_arpeggio.json"])
-  let playbackState = SongPlaybackState(song: song, engine: engine)
-  let _ = playbackState.loadTracks()
-  let track = playbackState.tracks.first!
+  let playbackState = SongPlaybackState(song: song)
+  let patternSpec = Bundle.main.decode(PatternFile.self, from: "aurora_arpeggio.json", subdirectory: "patterns").patterns[0]
+  let presetSpec = Bundle.main.decode(PresetSyntax.self, from: "auroraBorealis.json", subdirectory: "presets")
+  let track = TrackInfo(
+    id: 0,
+    patternName: "Preview",
+    patternSpec: patternSpec,
+    presetSpec: presetSpec,
+    spatialPreset: SpatialPreset(presetSpec: presetSpec)
+  )
   NavigationStack {
     PatternFormView(track: track)
   }

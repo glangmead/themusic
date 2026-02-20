@@ -93,8 +93,8 @@ struct SongSettingsView: View {
       }
     }
     .navigationTitle(song.name)
-    .onAppear {
-      playbackState.loadTracks()
+    .task {
+      try? await playbackState.loadTracks()
     }
     .toolbar {
       ToolbarItemGroup {

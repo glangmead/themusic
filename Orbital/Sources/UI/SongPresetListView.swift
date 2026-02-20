@@ -54,8 +54,8 @@ struct SongPresetListView: View {
         }
       }
     }
-    .onAppear {
-      playbackState.loadTracks()
+    .task {
+      try? await playbackState.loadTracks()
     }
   }
 }

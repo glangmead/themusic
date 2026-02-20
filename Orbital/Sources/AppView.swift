@@ -38,25 +38,34 @@ private struct PlaybackAccessoryView: View {
 
   var body: some View {
     HStack {
-      Button {
-        if library.allPaused {
-          library.resumeAll()
-        } else {
-          library.pauseAll()
+      if library.isLoading {
+        ProgressView()
+
+        if let name = library.currentSongName {
+          Text(name)
+            .lineLimit(1)
         }
-      } label: {
-        Image(systemName: library.allPaused ? "play.fill" : "pause.fill")
-      }
+      } else {
+        Button {
+          if library.allPaused {
+            library.resumeAll()
+          } else {
+            library.pauseAll()
+          }
+        } label: {
+          Image(systemName: library.allPaused ? "play.fill" : "pause.fill")
+        }
 
-      Button {
-        library.stopAll()
-      } label: {
-        Image(systemName: "stop.fill")
-      }
+        Button {
+          library.stopAll()
+        } label: {
+          Image(systemName: "stop.fill")
+        }
 
-      if let name = library.currentSongName {
-        Text(name)
-          .lineLimit(1)
+        if let name = library.currentSongName {
+          Text(name)
+            .lineLimit(1)
+        }
       }
 
       Spacer()

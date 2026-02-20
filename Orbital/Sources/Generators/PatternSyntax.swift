@@ -505,9 +505,9 @@ struct PatternSyntax: Codable {
   /// Convenience: compile from a PresetSyntax and engine, creating the SpatialPreset internally.
   /// Returns both the MusicPattern and the SpatialPreset (caller must hold a reference to the
   /// SpatialPreset to keep the audio nodes alive, and must call cleanup() when done).
-  func compile(presetSpec: PresetSyntax, engine: SpatialAudioEngine, clock: any Clock<Duration> = ContinuousClock()) -> (MusicPattern, SpatialPreset) {
+  func compile(presetSpec: PresetSyntax, engine: SpatialAudioEngine, clock: any Clock<Duration> = ContinuousClock()) async throws -> (MusicPattern, SpatialPreset) {
     let voices = numVoices ?? 12
-    let sp = SpatialPreset(presetSpec: presetSpec, engine: engine, numVoices: voices)
+    let sp = try await SpatialPreset(presetSpec: presetSpec, engine: engine, numVoices: voices)
     let pattern = compile(spatialPreset: sp, clock: clock)
     return (pattern, sp)
   }
@@ -515,7 +515,7 @@ struct PatternSyntax: Codable {
   /// For MIDI files with no track specified, compile ALL nonempty tracks into separate
   /// MusicPatterns, each with its own SpatialPreset. Returns an array of (pattern, spatialPreset, trackName).
   /// Returns nil if this isn't a multi-track MIDI pattern (i.e. noteGenerator is not .midiFile or has a specific track).
-  func compileMultiTrack(presetSpec: PresetSyntax, engine: SpatialAudioEngine, clock: any Clock<Duration> = ContinuousClock()) -> [(pattern: MusicPattern, spatialPreset: SpatialPreset, trackName: String)]? {
+  func compileMultiTrack(presetSpec: PresetSyntax, engine: SpatialAudioEngine, clock: any Clock<Duration> = ContinuousClock()) async throws -> [(pattern: MusicPattern, spatialPreset: SpatialPreset, trackName: String)]? {
     guard case .midiFile(let filename, let track, let loop) = noteGenerator else { return nil }
     // Only expand when track is nil (no specific track requested)
     guard track == nil else { return nil }
@@ -534,7 +534,8 @@ struct PatternSyntax: Codable {
 
     let voices = numVoices ?? 12
 
-    return allSeqs.enumerated().map { (i, entry) in
+    var results: [(pattern: MusicPattern, spatialPreset: SpatialPreset, trackName: String)] = []
+    for (i, entry) in allSeqs.enumerated() {
       // Use per-track preset if specified, otherwise the shared one
       let trackPresetSpec: PresetSyntax
       if let trackPresets = trackPresetFilenames, i < trackPresets.count {
@@ -543,7 +544,7 @@ struct PatternSyntax: Codable {
       } else {
         trackPresetSpec = presetSpec
       }
-      let sp = SpatialPreset(presetSpec: trackPresetSpec, engine: engine, numVoices: voices)
+      let sp = try await SpatialPreset(presetSpec: trackPresetSpec, engine: engine, numVoices: voices)
       let iters = entry.sequence.makeIterators(loop: loopVal)
       let pattern = MusicPattern(
         spatialPreset: sp,
@@ -554,8 +555,9 @@ struct PatternSyntax: Codable {
         clock: clock
       )
       let name = entry.trackName.isEmpty ? "Track \(entry.trackIndex)" : entry.trackName
-      return (pattern: pattern, spatialPreset: sp, trackName: name)
+      results.append((pattern: pattern, spatialPreset: sp, trackName: name))
     }
+    return results
   }
 }
 // MARK: - GeneratorType

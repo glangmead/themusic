@@ -25,6 +25,9 @@ class SongPlaybackState {
 
   private(set) var isPlaying = false
   private(set) var isPaused = false
+  private(set) var isLoading = false
+  /// Set when loading fails; shown as an alert to the user.
+  var loadError: String?
   private var playbackTask: Task<Void, Never>? = nil
   private var musicPatterns: MusicPatterns? = nil
   private(set) var tracks: [TrackInfo] = []
@@ -58,13 +61,13 @@ class SongPlaybackState {
   /// Called automatically by `play()`, but can also be called early so the
   /// preset list is populated before the user hits play.
   /// When no engine is available, builds UI-only track info (no audio nodes).
-  func loadTracks() {
+  func loadTracks() async throws {
     guard compiledPatterns.isEmpty else { return }
 
     // If tracks already exist (from a previous load), recompile from in-memory
     // patternSpecs to preserve user edits across stop/play cycles.
     if !tracks.isEmpty {
-      if engine != nil { recompileFromTracks() }
+      if engine != nil { try await recompileFromTracks() }
       return
     }
 
@@ -89,7 +92,7 @@ class SongPlaybackState {
 
         if let engine {
           // Full compilation with audio engine
-          if let multiTracks = patternSpec.compileMultiTrack(presetSpec: presetSpec, engine: engine) {
+          if let multiTracks = try await patternSpec.compileMultiTrack(presetSpec: presetSpec, engine: engine) {
             for entry in multiTracks {
               compiled.append((entry.pattern, entry.spatialPreset))
               trackInfos.append(TrackInfo(
@@ -102,7 +105,7 @@ class SongPlaybackState {
               nextTrackId += 1
             }
           } else {
-            let (pattern, sp) = patternSpec.compile(
+            let (pattern, sp) = try await patternSpec.compile(
               presetSpec: presetSpec,
               engine: engine
             )
@@ -136,7 +139,7 @@ class SongPlaybackState {
   }
 
   /// Recompile patterns from the existing in-memory tracks (preserves user edits).
-  private func recompileFromTracks() {
+  private func recompileFromTracks() async throws {
     guard let engine else { return }
     var compiled: [(MusicPattern, SpatialPreset)] = []
     for track in tracks {
@@ -146,7 +149,7 @@ class SongPlaybackState {
         from: presetFileName,
         subdirectory: "presets"
       )
-      let (pattern, sp) = track.patternSpec.compile(
+      let (pattern, sp) = try await track.patternSpec.compile(
         presetSpec: presetSpec,
         engine: engine
       )
@@ -172,20 +175,39 @@ class SongPlaybackState {
   private var compiledPatterns: [(MusicPattern, SpatialPreset)] = []
 
   func play() {
-    guard !isPlaying, let engine else { return }
+    guard !isPlaying, !isLoading, let engine else { return }
 
-    loadTracks()
+    // Stop the engine while we build the audio graph to avoid render errors
+    // from partially-connected nodes in a live graph.
+    engine.audioEngine.stop()
 
-    let mp = MusicPatterns()
-    musicPatterns = mp
+    loadError = nil
+    isLoading = true
 
-    let compiled = compiledPatterns
+    // Use a Task so the main run loop can process UI updates (spinner)
+    // while the expensive SoundFont loading happens on background threads.
+    playbackTask = Task {
+      do {
+        try await loadTracks()
+      } catch {
+        for track in tracks {
+          track.spatialPreset.detachNodes()
+        }
+        tracks = []
+        compiledPatterns = []
+        loadError = error.localizedDescription
+        isLoading = false
+        return
+      }
 
-    if !engine.audioEngine.isRunning {
-      try! engine.start()
-    }
-    isPlaying = true
-    playbackTask = Task.detached {
+      let mp = MusicPatterns()
+      musicPatterns = mp
+      let compiled = compiledPatterns
+
+      try? engine.start()
+      isLoading = false
+      isPlaying = true
+
       await mp.addPatterns(compiled)
       await mp.playAll()
     }
@@ -215,13 +237,15 @@ class SongPlaybackState {
   func stop() {
     playbackTask?.cancel()
     playbackTask = nil
-    // Detach audio nodes synchronously so a subsequent play() on another song
-    // doesn't race with deferred cleanup on the audio engine's node graph.
+    // Stop the engine before detaching to avoid crashes from mutating
+    // the node graph while the render thread is pulling audio.
+    engine?.audioEngine.stop()
     for track in tracks {
       track.spatialPreset.detachNodes()
     }
     musicPatterns = nil
     compiledPatterns = []
+    isLoading = false
     isPlaying = false
     isPaused = false
   }

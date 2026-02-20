@@ -50,11 +50,11 @@ class SpatialPreset: NoteHandler {
     return holder
   }
   
-  init(presetSpec: PresetSyntax, engine: SpatialAudioEngine, numVoices: Int = 12) {
+  init(presetSpec: PresetSyntax, engine: SpatialAudioEngine, numVoices: Int = 12) async throws {
     self.presetSpec = presetSpec
     self.engine = engine
     self.numVoices = numVoices
-    setup()
+    try await setup()
   }
 
   /// Create a UI-only SpatialPreset: builds Preset objects (with positionLFO, handles, etc.)
@@ -66,11 +66,11 @@ class SpatialPreset: NoteHandler {
     setupForUI()
   }
   
-  private func setup() {
+  private func setup() async throws {
     guard let engine else { return }
     var avNodes = [AVAudioMixerNode]()
     _cachedHandles = nil
-    
+
     if presetSpec.arrow != nil {
       // Independent spatial: N Presets x 1 voice each
       // Each note goes to a different Preset (different spatial position)
@@ -81,7 +81,7 @@ class SpatialPreset: NoteHandler {
         // Spread voices evenly around the rose curve
         preset.positionLFO?.phase += phaseStep * CoreFloat(i)
         presets.append(preset)
-        let node = preset.wrapInAppleNodes(forEngine: engine)
+        let node = try await preset.wrapInAppleNodes(forEngine: engine)
         avNodes.append(node)
       }
     } else if presetSpec.samplerFilenames != nil {
@@ -92,11 +92,11 @@ class SpatialPreset: NoteHandler {
         // Spread voices evenly around the rose curve
         preset.positionLFO?.phase += phaseStep * CoreFloat(i)
         presets.append(preset)
-        let node = preset.wrapInAppleNodes(forEngine: engine)
+        let node = try await preset.wrapInAppleNodes(forEngine: engine)
         avNodes.append(node)
       }
     }
-    
+
     spatialLedger = VoiceLedger(voiceCount: numVoices)
     engine.connectToEnvNode(avNodes)
   }
@@ -132,7 +132,7 @@ class SpatialPreset: NoteHandler {
   func reload(presetSpec: PresetSyntax? = nil) {
     cleanup()
     if let presetSpec { self.presetSpec = presetSpec }
-    setup()
+    Task { try? await setup() }
   }
   
   // MARK: - NoteHandler

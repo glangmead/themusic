@@ -60,9 +60,9 @@ class SongLibrary {
     state.togglePlayback()
   }
 
-  /// True when the current song is playing (includes paused).
+  /// True when the current song is playing, paused, or loading.
   var anySongPlaying: Bool {
-    currentPlaybackState?.isPlaying == true
+    currentPlaybackState?.isPlaying == true || currentPlaybackState?.isLoading == true
   }
 
   /// True when the current song is paused.
@@ -70,9 +70,14 @@ class SongLibrary {
     currentPlaybackState?.isPaused == true
   }
 
-  /// The name of the currently playing song, if any.
+  /// True when the current song is still loading (e.g. SoundFont instruments).
+  var isLoading: Bool {
+    currentPlaybackState?.isLoading == true
+  }
+
+  /// The name of the currently playing or loading song, if any.
   var currentSongName: String? {
-    guard let state = currentPlaybackState, state.isPlaying else { return nil }
+    guard let state = currentPlaybackState, state.isPlaying || state.isLoading else { return nil }
     return state.song.name
   }
 
