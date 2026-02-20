@@ -194,8 +194,8 @@ final class ArrowExponentialRandom: Arrow11 {
   var scratch = [CoreFloat](repeating: 1, count: MAX_BUFFER_SIZE)
   init(min: CoreFloat, max: CoreFloat) {
     let neg = min < 0 || max < 0
-    self.min = neg ? clamp(min, min: min, max: -0.001) : clamp(min, min: 0.001, max: min)
-    self.max = neg ? clamp(max, min: max, max: -0.001) : clamp(max, min: 0.001, max: max)
+    self.min = neg ? clamp(min, min: min, max: -1e-8) : clamp(min, min: 1e-8, max: min)
+    self.max = neg ? clamp(max, min: max, max: -1e-8) : clamp(max, min: 1e-8, max: max)
     super.init()
   }
   override func of(_ t: CoreFloat) -> CoreFloat {
@@ -408,6 +408,40 @@ final class ArrowConst: Arrow11, ValHaver, Equatable {
 
   static func == (lhs: ArrowConst, rhs: ArrowConst) -> Bool {
     lhs.val == rhs.val
+  }
+}
+
+/// Emits 1/val for every sample. Useful for building reciprocal expressions
+/// from event-derived values (e.g. `1 / (noteClass + 1)`).
+final class ArrowConstReciprocal: Arrow11, ValHaver, Equatable {
+  var val: CoreFloat
+  init(value: CoreFloat) {
+    self.val = value
+    super.init()
+  }
+  override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
+    outputs.withUnsafeMutableBufferPointer { outBuf in
+      var v = val != 0 ? 1.0 / val : 0.0
+      vDSP_vfillD(&v, outBuf.baseAddress!, 1, vDSP_Length(inputs.count))
+    }
+  }
+  static func == (lhs: ArrowConstReciprocal, rhs: ArrowConstReciprocal) -> Bool {
+    lhs.val == rhs.val
+  }
+}
+
+/// Composes with an inner arrow and emits 1/x for each sample.
+/// Returns 0 when the input is 0.
+final class ArrowReciprocal: Arrow11 {
+  private var scratchBuffer = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
+
+  override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
+    (innerArr ?? ArrowIdentity()).process(inputs: inputs, outputs: &scratchBuffer)
+    let count = inputs.count
+    for i in 0..<count {
+      let v = scratchBuffer[i]
+      outputs[i] = v != 0 ? 1.0 / v : 0.0
+    }
   }
 }
 

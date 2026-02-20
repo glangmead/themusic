@@ -15,6 +15,9 @@ struct OrbitalApp: App {
   @Environment(\.scenePhase) private var scenePhase
   
   init() {
+    // Opt-in to Swift Observation for AVPlayer and related types.
+    AVPlayer.isObservationEnabled = true
+
     do {
       try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default, options: [.mixWithOthers, .allowBluetoothHFP, .allowAirPlay])
       // Request a larger I/O buffer to reduce the chance of audio glitches.
@@ -31,7 +34,7 @@ struct OrbitalApp: App {
       AppView()
         .environment(engine)
         .environment(songLibrary)
-        .tint(.white)
+        .tint(.primary)
         .onReceive(NotificationCenter.default.publisher(for: UIApplication.willTerminateNotification)) { _ in
           engine.fadeOutAndStop()
         }

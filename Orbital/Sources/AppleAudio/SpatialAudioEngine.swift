@@ -35,7 +35,7 @@ class SpatialAudioEngine {
   }
   
   func detach(_ nodes: [AVAudioNode]) {
-    for node in nodes {
+    for node in nodes where node.engine != nil {
       audioEngine.detach(node)
     }
   }

@@ -57,8 +57,12 @@ struct MusicEvent {
 
     // Set up EventUsingArrow references
     for (_, modulatingArrow) in modulators {
-      if let eventUsingArrow = modulatingArrow as? EventUsingArrow {
-        eventUsingArrow.event = self
+      if let handleWH = modulatingArrow as? ArrowWithHandles {
+        for eventUsingArrowList in handleWH.namedEventUsing.values {
+          for eventUsingArrow in eventUsingArrowList {
+            eventUsingArrow.event = self
+          }
+        }
       }
     }
 
@@ -449,6 +453,15 @@ actor MusicPatterns {
     }
   }
   
+  /// Detach audio nodes but keep Preset objects alive for UI access.
+  func detachNodes() {
+    for (_, spatialPreset) in patterns {
+      spatialPreset.detachNodes()
+    }
+    patterns.removeAll()
+  }
+
+  /// Full teardown: detach nodes and destroy Preset objects.
   func cleanup() {
     for (_, spatialPreset) in patterns {
       spatialPreset.cleanup()

@@ -12,7 +12,6 @@ struct PresetFormView: View {
   @Environment(SpatialAudioEngine.self) private var engine
   @Environment(SongPlaybackState.self) private var playbackState: SongPlaybackState?
   let presetSpec: PresetSyntax
-  @State private var isShowingVisualizer = false
   @State private var synth: SyntacticSynth?
   private let externalSynth: SyntacticSynth?
 
@@ -33,16 +32,8 @@ struct PresetFormView: View {
       PresetFormContent(
         synth: resolved,
         presetSpec: presetSpec,
-        playbackState: playbackState,
-        engine: engine,
-        isShowingVisualizer: $isShowingVisualizer
+        playbackState: playbackState
       )
-      .fullScreenCover(isPresented: $isShowingVisualizer) {
-        if let playbackState {
-          VisualizerView(engine: engine, noteHandler: playbackState.noteHandler, isPresented: $isShowingVisualizer)
-            .ignoresSafeArea()
-        }
-      }
     } else {
       ProgressView()
         .onAppear {
@@ -59,17 +50,9 @@ private struct PresetFormContent: View {
   @Bindable var synth: SyntacticSynth
   let presetSpec: PresetSyntax
   var playbackState: SongPlaybackState?
-  let engine: SpatialAudioEngine
-  @Binding var isShowingVisualizer: Bool
 
   var body: some View {
     Form {
-      Section("Rose (Spatial Movement)") {
-        LabeledSlider(value: $synth.roseAmp, label: "Amplitude", range: 0...20)
-        LabeledSlider(value: $synth.roseFreq, label: "Frequency", range: 0...30)
-        LabeledSlider(value: $synth.roseLeaves, label: "Leaves", range: 0...30)
-      }
-
       Section("Effects") {
         Picker("Reverb Preset", selection: $synth.reverbPreset) {
           ForEach(AVAudioUnitReverbPreset.allCases, id: \.self) { option in
@@ -110,21 +93,6 @@ private struct PresetFormContent: View {
           } label: {
             Image(systemName: playbackState.isPlaying && !playbackState.isPaused ? "pause.fill" : "play.fill")
           }
-          Button {
-            playbackState.stop()
-          } label: {
-            Image(systemName: "stop.fill")
-          }
-          .disabled(!playbackState.isPlaying)
-        }
-      }
-      ToolbarItem {
-        Button {
-          withAnimation(.easeInOut(duration: 0.4)) {
-            isShowingVisualizer = true
-          }
-        } label: {
-          Label("Visualizer", systemImage: "sparkles.tv")
         }
       }
     }

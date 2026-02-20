@@ -25,13 +25,12 @@
                    ]}},
                    {"compose": {"arrows": [
                    { "prod": { "of": [
-                       { "const": {"name": "freq", "val": 300} },
                        { "const": {"name": "vibratoAmp", "val": 0.0005} },
                        { "envelope": { "release": 0.1, "scale": 1, "name": "vibratoEnv", "attack": 7, "decay": 0.1, "sustain": 1 } },
                        { "sum": { "of": [
                          { "const": {"name": "vibratoOscShift", "val": 0.5}}, 
                          { "prod": { "of": [
-                           { "const": {"name": "vibratoOscScale", "val": 0.5}},
+                           { "const": {"name": "vibratoOscScale", "val": 2}},
                            { "compose": { "arrows": [
                              { "prod": { "of": [
                                { "const": {"val": 2, "name": "vibratoFreq"} },
