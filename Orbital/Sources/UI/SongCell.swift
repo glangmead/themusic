@@ -22,7 +22,7 @@ struct SongCell: View {
     HStack {
       // Tappable title area for play/pause
       Button {
-        playbackState?.togglePlayback()
+        library.play(song, engine: engine)
       } label: {
         HStack {
           Text(song.name)

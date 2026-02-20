@@ -10,8 +10,6 @@ import SwiftUI
 /// Edits the spatial rose parameters for all tracks in a song.
 struct SpatialFormView: View {
   @Environment(SongPlaybackState.self) private var playbackState
-  @Environment(SpatialAudioEngine.self) private var engine
-  @State private var isShowingVisualizer = false
 
   var body: some View {
     Form {
@@ -54,26 +52,7 @@ struct SpatialFormView: View {
         } label: {
           Image(systemName: playbackState.isPlaying && !playbackState.isPaused ? "pause.fill" : "play.fill")
         }
-        Button {
-          playbackState.stop()
-        } label: {
-          Image(systemName: "stop.fill")
-        }
-        .disabled(!playbackState.isPlaying)
       }
-      ToolbarItem {
-        Button {
-          withAnimation(.easeInOut(duration: 0.4)) {
-            isShowingVisualizer = true
-          }
-        } label: {
-          Label("Visualizer", systemImage: "sparkles.tv")
-        }
-      }
-    }
-    .fullScreenCover(isPresented: $isShowingVisualizer) {
-      VisualizerView(engine: engine, noteHandler: playbackState.noteHandler, isPresented: $isShowingVisualizer)
-        .ignoresSafeArea()
     }
   }
 }

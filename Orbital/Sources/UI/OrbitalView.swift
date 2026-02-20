@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct OrbitalView: View {
-  @Environment(SpatialAudioEngine.self) private var engine
   @Environment(SongLibrary.self) private var library
-  @State private var isShowingVisualizer = false
 
   var body: some View {
     NavigationStack {
@@ -20,43 +18,8 @@ struct OrbitalView: View {
         }
       }
       .navigationTitle("Orbital")
-      .toolbar {
-        ToolbarItemGroup {
-          Button {
-            if library.allPaused {
-              library.resumeAll()
-            } else {
-              library.pauseAll()
-            }
-          } label: {
-            Image(systemName: library.allPaused ? "play.fill" : "pause.fill")
-          }
-          .disabled(!library.anySongPlaying)
-
-          Button {
-            library.stopAll()
-          } label: {
-            Image(systemName: "stop.fill")
-          }
-          .disabled(!library.anySongPlaying)
-
-          Button {
-            withAnimation(.easeInOut(duration: 0.4)) {
-              isShowingVisualizer = true
-            }
-          } label: {
-            Label("Visualizer", systemImage: "sparkles.tv")
-          }
-        }
-      }
     }
-    .overlay {
-      VisualizerView(engine: engine, isPresented: $isShowingVisualizer)
-        .ignoresSafeArea()
-        .opacity(isShowingVisualizer ? 1 : 0)
-        .allowsHitTesting(isShowingVisualizer)
-        .animation(.easeInOut(duration: 0.4), value: isShowingVisualizer)
-    }
+    .toolbarVisibility(.hidden, for: .tabBar)
   }
 }
 

@@ -8,10 +8,8 @@
 import SwiftUI
 
 struct SongPresetListView: View {
-  @Environment(SpatialAudioEngine.self) private var engine
   @Environment(SongPlaybackState.self) private var playbackState
   let song: Song
-  @State private var isShowingVisualizer = false
   @State private var editingTrackId: Int?
 
   var body: some View {
@@ -54,29 +52,10 @@ struct SongPresetListView: View {
         } label: {
           Image(systemName: playbackState.isPlaying && !playbackState.isPaused ? "pause.fill" : "play.fill")
         }
-        Button {
-          playbackState.stop()
-        } label: {
-          Image(systemName: "stop.fill")
-        }
-        .disabled(!playbackState.isPlaying)
-      }
-      ToolbarItem {
-        Button {
-          withAnimation(.easeInOut(duration: 0.4)) {
-            isShowingVisualizer = true
-          }
-        } label: {
-          Label("Visualizer", systemImage: "sparkles.tv")
-        }
       }
     }
     .onAppear {
       playbackState.loadTracks()
-    }
-    .fullScreenCover(isPresented: $isShowingVisualizer) {
-      VisualizerView(engine: engine, noteHandler: playbackState.noteHandler, isPresented: $isShowingVisualizer)
-        .ignoresSafeArea()
     }
   }
 }

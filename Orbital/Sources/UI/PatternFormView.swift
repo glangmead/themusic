@@ -302,12 +302,6 @@ struct PatternFormView: View {
           Image(systemName: playbackState.isPlaying && !playbackState.isPaused ? "pause.fill" : "play.fill")
         }
         Button {
-          playbackState.stop()
-        } label: {
-          Image(systemName: "stop.fill")
-        }
-        .disabled(!playbackState.isPlaying)
-        Button {
           playbackState.restart()
         } label: {
           Image(systemName: "arrow.counterclockwise")

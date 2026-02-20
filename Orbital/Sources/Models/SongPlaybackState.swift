@@ -213,11 +213,14 @@ class SongPlaybackState {
   }
 
   func stop() {
-    let mp = musicPatterns
     playbackTask?.cancel()
     playbackTask = nil
+    // Detach audio nodes synchronously so a subsequent play() on another song
+    // doesn't race with deferred cleanup on the audio engine's node graph.
+    for track in tracks {
+      track.spatialPreset.detachNodes()
+    }
     musicPatterns = nil
-    Task { await mp?.detachNodes() }
     compiledPatterns = []
     isPlaying = false
     isPaused = false

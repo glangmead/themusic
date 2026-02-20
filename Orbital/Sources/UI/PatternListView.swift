@@ -6,10 +6,8 @@
 import SwiftUI
 
 struct PatternListView: View {
-  @Environment(SpatialAudioEngine.self) private var engine
   @Environment(SongPlaybackState.self) private var playbackState
   let song: Song
-  @State private var isShowingVisualizer = false
 
   var body: some View {
     List(playbackState.tracks) { track in
@@ -39,33 +37,14 @@ struct PatternListView: View {
           Image(systemName: playbackState.isPlaying && !playbackState.isPaused ? "pause.fill" : "play.fill")
         }
         Button {
-          playbackState.stop()
-        } label: {
-          Image(systemName: "stop.fill")
-        }
-        .disabled(!playbackState.isPlaying)
-        Button {
           playbackState.restart()
         } label: {
           Image(systemName: "arrow.counterclockwise")
         }
       }
-      ToolbarItem {
-        Button {
-          withAnimation(.easeInOut(duration: 0.4)) {
-            isShowingVisualizer = true
-          }
-        } label: {
-          Label("Visualizer", systemImage: "sparkles.tv")
-        }
-      }
     }
     .onAppear {
       playbackState.loadTracks()
-    }
-    .fullScreenCover(isPresented: $isShowingVisualizer) {
-      VisualizerView(engine: engine, noteHandler: playbackState.noteHandler, isPresented: $isShowingVisualizer)
-        .ignoresSafeArea()
     }
   }
 }

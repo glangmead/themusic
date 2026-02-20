@@ -37,6 +37,9 @@ class SongLibrary {
   /// Playback states keyed by Song.id, created lazily by SongCells.
   var playbackStates: [UUID: SongPlaybackState] = [:]
 
+  /// The currently playing (or paused) song's state, if any.
+  var currentPlaybackState: SongPlaybackState?
+
   func playbackState(for song: Song, engine: SpatialAudioEngine) -> SongPlaybackState {
     if let existing = playbackStates[song.id] { return existing }
     let state = SongPlaybackState(song: song, engine: engine)
@@ -44,32 +47,45 @@ class SongLibrary {
     return state
   }
 
-  /// True when any song is currently playing (includes paused).
+  /// Start playing a song, stopping any currently playing song first.
+  /// If the tapped song is already the current song, toggle pause/resume.
+  func play(_ song: Song, engine: SpatialAudioEngine) {
+    let state = playbackState(for: song, engine: engine)
+    if state === currentPlaybackState {
+      state.togglePlayback()
+      return
+    }
+    currentPlaybackState?.stop()
+    currentPlaybackState = state
+    state.togglePlayback()
+  }
+
+  /// True when the current song is playing (includes paused).
   var anySongPlaying: Bool {
-    playbackStates.values.contains { $0.isPlaying }
+    currentPlaybackState?.isPlaying == true
+  }
+
+  /// True when the current song is paused.
+  var allPaused: Bool {
+    currentPlaybackState?.isPaused == true
+  }
+
+  /// The name of the currently playing song, if any.
+  var currentSongName: String? {
+    guard let state = currentPlaybackState, state.isPlaying else { return nil }
+    return state.song.name
   }
 
   func pauseAll() {
-    for state in playbackStates.values where state.isPlaying && !state.isPaused {
-      state.pause()
-    }
+    currentPlaybackState?.pause()
   }
 
   func resumeAll() {
-    for state in playbackStates.values where state.isPlaying && state.isPaused {
-      state.resume()
-    }
+    currentPlaybackState?.resume()
   }
 
   func stopAll() {
-    for state in playbackStates.values where state.isPlaying {
-      state.stop()
-    }
-  }
-
-  /// True when all playing songs are paused.
-  var allPaused: Bool {
-    let playing = playbackStates.values.filter { $0.isPlaying }
-    return !playing.isEmpty && playing.allSatisfy { $0.isPaused }
+    currentPlaybackState?.stop()
+    currentPlaybackState = nil
   }
 }

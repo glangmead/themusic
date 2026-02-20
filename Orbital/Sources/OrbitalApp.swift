@@ -15,6 +15,9 @@ struct OrbitalApp: App {
   @Environment(\.scenePhase) private var scenePhase
   
   init() {
+    // Opt-in to Swift Observation for AVPlayer and related types.
+    AVPlayer.isObservationEnabled = true
+
     do {
       try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default, options: [.mixWithOthers, .allowBluetoothHFP, .allowAirPlay])
       // Request a larger I/O buffer to reduce the chance of audio glitches.

@@ -9,10 +9,8 @@ import SwiftUI
 
 /// A combined settings view for a song, with sections for Patterns, Presets, and Spatial.
 struct SongSettingsView: View {
-  @Environment(SpatialAudioEngine.self) private var engine: SpatialAudioEngine?
   @Environment(SongPlaybackState.self) private var playbackState
   let song: Song
-  @State private var isShowingVisualizer = false
   @State private var editingTrackId: Int?
 
   var body: some View {
@@ -106,31 +104,10 @@ struct SongSettingsView: View {
           Image(systemName: playbackState.isPlaying && !playbackState.isPaused ? "pause.fill" : "play.fill")
         }
         Button {
-          playbackState.stop()
-        } label: {
-          Image(systemName: "stop.fill")
-        }
-        .disabled(!playbackState.isPlaying)
-        Button {
           playbackState.restart()
         } label: {
           Image(systemName: "arrow.counterclockwise")
         }
-      }
-      ToolbarItem {
-        Button {
-          withAnimation(.easeInOut(duration: 0.4)) {
-            isShowingVisualizer = true
-          }
-        } label: {
-          Label("Visualizer", systemImage: "sparkles.tv")
-        }
-      }
-    }
-    .fullScreenCover(isPresented: $isShowingVisualizer) {
-      if let engine {
-        VisualizerView(engine: engine, noteHandler: playbackState.noteHandler, isPresented: $isShowingVisualizer)
-          .ignoresSafeArea()
       }
     }
   }
