@@ -21,7 +21,7 @@ struct TrackInfo: Identifiable {
 @MainActor @Observable
 class SongPlaybackState {
   let song: Song
-  let engine: SpatialAudioEngine
+  let engine: SpatialAudioEngine?
 
   private(set) var isPlaying = false
   private(set) var isPaused = false
@@ -37,6 +37,13 @@ class SongPlaybackState {
     self.engine = engine
   }
 
+  /// UI-only init: loads track info (patterns, presets, spatial data) without an audio engine.
+  /// Playback controls are disabled in this mode.
+  init(song: Song) {
+    self.song = song
+    self.engine = nil
+  }
+
   func togglePlayback() {
     if isPlaying && !isPaused {
       pause()
@@ -50,13 +57,14 @@ class SongPlaybackState {
   /// Build track info and compiled patterns without starting playback.
   /// Called automatically by `play()`, but can also be called early so the
   /// preset list is populated before the user hits play.
+  /// When no engine is available, builds UI-only track info (no audio nodes).
   func loadTracks() {
     guard compiledPatterns.isEmpty else { return }
 
     // If tracks already exist (from a previous load), recompile from in-memory
     // patternSpecs to preserve user edits across stop/play cycles.
     if !tracks.isEmpty {
-      recompileFromTracks()
+      if engine != nil { recompileFromTracks() }
       return
     }
 
@@ -79,26 +87,38 @@ class SongPlaybackState {
           subdirectory: "presets"
         )
 
-        // Try multi-track MIDI expansion first
-        if let multiTracks = patternSpec.compileMultiTrack(presetSpec: presetSpec, engine: engine) {
-          for entry in multiTracks {
-            compiled.append((entry.pattern, entry.spatialPreset))
+        if let engine {
+          // Full compilation with audio engine
+          if let multiTracks = patternSpec.compileMultiTrack(presetSpec: presetSpec, engine: engine) {
+            for entry in multiTracks {
+              compiled.append((entry.pattern, entry.spatialPreset))
+              trackInfos.append(TrackInfo(
+                id: nextTrackId,
+                patternName: entry.trackName,
+                patternSpec: patternSpec,
+                presetSpec: entry.spatialPreset.presetSpec,
+                spatialPreset: entry.spatialPreset
+              ))
+              nextTrackId += 1
+            }
+          } else {
+            let (pattern, sp) = patternSpec.compile(
+              presetSpec: presetSpec,
+              engine: engine
+            )
+            compiled.append((pattern, sp))
             trackInfos.append(TrackInfo(
               id: nextTrackId,
-              patternName: entry.trackName,
+              patternName: patternSpec.name,
               patternSpec: patternSpec,
-              presetSpec: entry.spatialPreset.presetSpec,
-              spatialPreset: entry.spatialPreset
+              presetSpec: presetSpec,
+              spatialPreset: sp
             ))
             nextTrackId += 1
           }
         } else {
-          // Single-track pattern (generative or MIDI with specific track)
-          let (pattern, sp) = patternSpec.compile(
-            presetSpec: presetSpec,
-            engine: engine
-          )
-          compiled.append((pattern, sp))
+          // UI-only: build TrackInfo with lightweight SpatialPreset (no audio nodes)
+          let sp = SpatialPreset(presetSpec: presetSpec, numVoices: patternSpec.numVoices ?? 12)
           trackInfos.append(TrackInfo(
             id: nextTrackId,
             patternName: patternSpec.name,
@@ -117,6 +137,7 @@ class SongPlaybackState {
 
   /// Recompile patterns from the existing in-memory tracks (preserves user edits).
   private func recompileFromTracks() {
+    guard let engine else { return }
     var compiled: [(MusicPattern, SpatialPreset)] = []
     for track in tracks {
       let presetFileName = track.patternSpec.presetFilename + ".json"
@@ -151,7 +172,7 @@ class SongPlaybackState {
   private var compiledPatterns: [(MusicPattern, SpatialPreset)] = []
 
   func play() {
-    guard !isPlaying else { return }
+    guard !isPlaying, let engine else { return }
 
     loadTracks()
 

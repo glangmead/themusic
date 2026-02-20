@@ -22,7 +22,7 @@ import AVFAudio
 @Observable
 class SpatialPreset: NoteHandler {
   private(set) var presetSpec: PresetSyntax
-  let engine: SpatialAudioEngine
+  let engine: SpatialAudioEngine?
   let numVoices: Int
   private(set) var presets: [Preset] = []
   
@@ -56,8 +56,18 @@ class SpatialPreset: NoteHandler {
     self.numVoices = numVoices
     setup()
   }
+
+  /// Create a UI-only SpatialPreset: builds Preset objects (with positionLFO, handles, etc.)
+  /// but skips audio node creation and engine connection. Useful for previews and settings screens.
+  init(presetSpec: PresetSyntax, numVoices: Int = 12) {
+    self.presetSpec = presetSpec
+    self.engine = nil
+    self.numVoices = numVoices
+    setupForUI()
+  }
   
   private func setup() {
+    guard let engine else { return }
     var avNodes = [AVAudioMixerNode]()
     _cachedHandles = nil
     
@@ -90,12 +100,25 @@ class SpatialPreset: NoteHandler {
     spatialLedger = VoiceLedger(voiceCount: numVoices)
     engine.connectToEnvNode(avNodes)
   }
-  
+
+  /// Build Preset objects for UI display only — no audio nodes, no engine connection.
+  private func setupForUI() {
+    _cachedHandles = nil
+
+    let phaseStep = CoreFloat(2 * Double.pi) / CoreFloat(numVoices)
+    // Create a single Preset (enough for UI to read positionLFO, presetSpec, handles)
+    let preset = presetSpec.compile(numVoices: 1, initEffects: false)
+    preset.positionLFO?.phase += phaseStep * 0
+    presets.append(preset)
+  }
+
   /// Detach audio nodes from the engine but keep the Preset objects
   /// (and their positionLFO values) alive for UI access.
   func detachNodes() {
-    for preset in presets {
-      preset.detachAppleNodes(from: engine)
+    if let engine {
+      for preset in presets {
+        preset.detachAppleNodes(from: engine)
+      }
     }
     spatialLedger = nil
   }

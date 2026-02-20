@@ -14,34 +14,10 @@ struct OrbitalView: View {
 
   var body: some View {
     NavigationStack {
-      ScrollView {
-        LazyVGrid(columns: [GridItem(.flexible())], spacing: 16) {
-          ForEach(library.songs) { song in
-            SongCell(song: song)
-          }
+      List {
+        ForEach(library.songs) { song in
+          SongCell(song: song)
         }
-        .padding()
-      }
-      .background {
-        // A gradient behind the Liquid Glass cards gives the material
-        // something to blur and reflect, improving contrast in light mode.
-        LinearGradient(
-          colors: [
-            Color(UIColor { traits in
-              traits.userInterfaceStyle == .dark
-                ? UIColor(white: 0.10, alpha: 1)
-                : UIColor(white: 0.88, alpha: 1)
-            }),
-            Color(UIColor { traits in
-              traits.userInterfaceStyle == .dark
-                ? UIColor(white: 0.05, alpha: 1)
-                : UIColor(white: 0.80, alpha: 1)
-            })
-          ],
-          startPoint: .top,
-          endPoint: .bottom
-        )
-        .ignoresSafeArea()
       }
       .navigationTitle("Orbital")
       .toolbar {
@@ -83,7 +59,9 @@ struct OrbitalView: View {
     }
   }
 }
+
 #Preview {
+  let engine = SpatialAudioEngine()
   let library = SongLibrary()
   library.songs = [
     Song(
@@ -95,8 +73,12 @@ struct OrbitalView: View {
       patternFileNames: ["baroque_chords.json"]
     ),
   ]
+  // Pre-create playback states so navigating to SongSettingsView works in Preview
+  for song in library.songs {
+    _ = library.playbackState(for: song, engine: engine)
+  }
   return OrbitalView()
-    .environment(SpatialAudioEngine())
+    .environment(engine)
     .environment(library)
 }
 
