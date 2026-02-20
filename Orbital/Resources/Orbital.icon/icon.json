@@ -16,9 +16,22 @@
     },
     {
       "layers" : [
+
+      ],
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.5
+      },
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.5
+      }
+    },
+    {
+      "layers" : [
         {
-          "image-name" : "icon.svg",
-          "name" : "icon",
+          "image-name" : "icon 4.svg",
+          "name" : "icon 4",
           "position" : {
             "scale" : 0.95,
             "translation-in-points" : [
