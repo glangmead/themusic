@@ -30,6 +30,7 @@ class SongPlaybackState {
   var loadError: String?
   private var playbackTask: Task<Void, Never>? = nil
   private var musicPatterns: MusicPatterns? = nil
+
   private(set) var tracks: [TrackInfo] = []
 
   /// The active note handler for this song's playback (first track, for visualizer).

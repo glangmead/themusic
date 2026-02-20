@@ -16,8 +16,10 @@ class SpatialAudioEngine {
   let stereo: AVAudioFormat
   let mono: AVAudioFormat
 
+  let spatialEnabled = true
+
   init() {
-    audioEngine.attach(envNode)
+    if spatialEnabled { audioEngine.attach(envNode) }
     stereo = AVAudioFormat(standardFormatWithSampleRate: audioEngine.outputNode.inputFormat(forBus: 0).sampleRate, channels: 2)!
     mono = AVAudioFormat(standardFormatWithSampleRate: audioEngine.outputNode.inputFormat(forBus: 0).sampleRate, channels: 1)!
   }
@@ -45,37 +47,92 @@ class SpatialAudioEngine {
   }
   
   func connectToEnvNode(_ nodes: [AVAudioMixerNode]) {
-    for node in nodes {
-      node.pointSourceInHeadMode = .mono
-      node.sourceMode = .spatializeIfMono
-      audioEngine.connect(node, to: envNode, format: mono)
+    if spatialEnabled {
+      for node in nodes {
+        node.pointSourceInHeadMode = .mono
+        node.sourceMode = .spatializeIfMono
+        audioEngine.connect(node, to: envNode, format: mono)
+      }
+      audioEngine.connect(envNode, to: audioEngine.outputNode, format: stereo)
+    } else {
+      // Non-spatial: connect directly to mainMixerNode for flat stereo.
+      for node in nodes {
+        audioEngine.connect(node, to: audioEngine.mainMixerNode, format: stereo)
+      }
     }
-    audioEngine.connect(envNode, to: audioEngine.outputNode, format: stereo)
   }
   
   func start() throws {
-    envNode.renderingAlgorithm = .HRTF
-    envNode.outputType = .auto
-    envNode.isListenerHeadTrackingEnabled = true
-    envNode.listenerPosition = AVAudio3DPoint(x: 0, y: 0, z: 0)
-    envNode.distanceAttenuationParameters.referenceDistance = 5.0
-    envNode.distanceAttenuationParameters.maximumDistance = 50.0
-    //envNode.distanceAttenuationParameters.rolloffFactor = 2.0
-    envNode.reverbParameters.enable = true
-    envNode.reverbParameters.level = 60
-    envNode.reverbParameters.loadFactoryReverbPreset(.largeHall)
+    if spatialEnabled {
+      envNode.renderingAlgorithm = .HRTF
+      envNode.outputType = .auto
+      envNode.isListenerHeadTrackingEnabled = true
+      envNode.listenerPosition = AVAudio3DPoint(x: 0, y: 0, z: 0)
+      envNode.distanceAttenuationParameters.referenceDistance = 5.0
+      envNode.distanceAttenuationParameters.maximumDistance = 50.0
+      //envNode.distanceAttenuationParameters.rolloffFactor = 2.0
+      envNode.reverbParameters.enable = true
+      envNode.reverbParameters.level = 60
+      envNode.reverbParameters.loadFactoryReverbPreset(.largeHall)
+      
+      //envNode.listenerVectorOrientation = AVAudio3DVectorOrientation(forward: AVAudio3DVector(x: 0.0, y: -1.0, z: 1.0), up: AVAudio3DVector(x: 0.0, y: 0.0, z: 1.0))
+    }
     
-    //envNode.listenerVectorOrientation = AVAudio3DVectorOrientation(forward: AVAudio3DVector(x: 0.0, y: -1.0, z: 1.0), up: AVAudio3DVector(x: 0.0, y: 0.0, z: 1.0))
-    
+    // Prevent the engine from auto-stopping when the app is backgrounded
+    // or during brief silence. Required for background audio to continue.
+    audioEngine.isAutoShutdownEnabled = false
+
     // Prepare the engine, getting all resources ready.
     audioEngine.prepare()
     
     // And then, start the engine! This is the moment the sound begins to play.
     try audioEngine.start()
 
+    // Restart the engine after audio session interruptions (phone calls, Siri, etc.)
+    NotificationCenter.default.addObserver(
+      forName: AVAudioSession.interruptionNotification,
+      object: AVAudioSession.sharedInstance(),
+      queue: nil
+    ) { [weak self] notification in
+      guard let info = notification.userInfo,
+            let typeValue = info[AVAudioSessionInterruptionTypeKey] as? UInt,
+            let type = AVAudioSession.InterruptionType(rawValue: typeValue) else { return }
+      if type == .ended {
+        try? AVAudioSession.sharedInstance().setActive(true)
+        try? self?.audioEngine.start()
+      }
+    }
+
+    // Track audio route changes (headphones, Bluetooth, speaker switch)
+    NotificationCenter.default.addObserver(
+      forName: AVAudioSession.routeChangeNotification,
+      object: AVAudioSession.sharedInstance(),
+      queue: nil
+    ) { _ in }
+
+    // Track media services reset (rare but catastrophic)
+    NotificationCenter.default.addObserver(
+      forName: AVAudioSession.mediaServicesWereResetNotification,
+      object: AVAudioSession.sharedInstance(),
+      queue: nil
+    ) { _ in }
+
+    // The audio engine may silently stop pulling from source nodes after a
+    // hardware configuration change (e.g. sample rate change, Bluetooth
+    // route switch). engine.isRunning stays true but the render thread is
+    // dead. Observing this notification and restarting is the documented fix.
+    NotificationCenter.default.addObserver(
+      forName: .AVAudioEngineConfigurationChange,
+      object: audioEngine,
+      queue: nil
+    ) { [weak self] _ in
+      try? AVAudioSession.sharedInstance().setActive(true)
+      try? self?.audioEngine.start()
+    }
+
     // Install the audio tap once up-front so that opening the visualizer
     // later doesn't cause a glitch by reconfiguring the live audio graph.
-    installTapOnce()
+    if spatialEnabled { installTapOnce() }
   }
   
   /// Client-provided callback; set before calling `start()` or at any time.
