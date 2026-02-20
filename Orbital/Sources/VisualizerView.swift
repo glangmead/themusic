@@ -7,170 +7,179 @@
 
 import SwiftUI
 import WebKit
-import UIKit
 import os
 
-// Host a web view that displays the Butterchurn-ios visualizer.
-// The visualizer index.html is modified from https://github.com/pxl-pshr/butterchurn-ios
-// The JS files are inlined into index.html to avoid cross-origin issues in WKWebView.
-class VisualizerWebView: WKWebView {
-  var onEscape: (() -> Void)?
-  var onDidMoveToWindow: (() -> Void)?
+// MARK: - VisualizerPageHolder
 
-  // Force the web view to ignore safe area insets so it fills the entire screen
-  override var safeAreaInsets: UIEdgeInsets { .zero }
-
-  // Hide the input accessory view (the bar above the keyboard)
-  override var inputAccessoryView: UIView? {
-    return nil
-  }
-  
-  override var canBecomeFirstResponder: Bool {
-    return true // Needs to be true to receive key events
-  }
-  
-  override var keyCommands: [UIKeyCommand]? {
-    return [
-      UIKeyCommand(input: UIKeyCommand.inputEscape, modifierFlags: [], action: #selector(escapePressed))
-    ]
-  }
-  
-  @objc func escapePressed() {
-    onEscape?()
-  }
-  
-  override func didMoveToWindow() {
-    super.didMoveToWindow()
-    if window != nil {
-      let success = becomeFirstResponder()
-      #if DEBUG
-      if !success {
-        print("VisualizerWebView: Could not become first responder")
-      }
-      #endif
-      onDidMoveToWindow?()
-    }
-  }
-}
-
-/// Holds a single persistent WKWebView instance so the WebGL context and Butterchurn
-/// visualizer survive across show/hide cycles. Recreating WKWebView each time causes
-/// WebGL context exhaustion on iOS.
-class VisualizerHolder: NSObject, WKNavigationDelegate, WKScriptMessageHandler {
+/// Owns a persistent WebPage instance so the WebGL context and Butterchurn
+/// visualizer survive across show/hide cycles. All state that was previously
+/// split between VisualizerHolder, VisualizerWebView, and WKScriptMessageHandler
+/// now lives here.
+@MainActor @Observable
+class VisualizerPageHolder {
   let engine: SpatialAudioEngine
-  var noteHandler: NoteHandler?
-  private(set) var webView: VisualizerWebView!
-  private var isLoaded = false
-  
+  let page: WebPage
+
+  // Page / preset state
+  var presetNames: [String] = []
+  var currentPreset: String = ""
+  var speed: Double = 1.0
+  var isCycling: Bool = false
+  private(set) var isPageLoaded: Bool = false
+
   // Audio tap state
   private let pendingSamples = OSAllocatedUnfairLock(initialState: [Float]())
   private let sendThreshold = 1024
   private var callbackInstalled = false
   private let sendingEnabled = OSAllocatedUnfairLock(initialState: false)
-  
-  // Callbacks wired by the SwiftUI layer
-  var onPresetChange: ((String) -> Void)?
-  var onSpeedChange: ((Double) -> Void)?
-  var onCloseRequested: (() -> Void)?
-  
-  init(engine: SpatialAudioEngine, noteHandler: NoteHandler? = nil) {
+
+  // Cycle task
+  private var cycleTask: Task<Void, Never>?
+
+  init(engine: SpatialAudioEngine) {
     self.engine = engine
-    self.noteHandler = noteHandler
-    super.init()
-    
-    let config = WKWebViewConfiguration()
-    config.mediaTypesRequiringUserActionForPlayback = []
-    config.allowsInlineMediaPlayback = true
-    
-    let ucc = WKUserContentController()
-    ucc.add(self, name: "keyHandler")
-    ucc.add(self, name: "presetHandler")
-    ucc.add(self, name: "closeViz")
-    ucc.add(self, name: "speedHandler")
-    config.userContentController = ucc
-    
-    let wv = VisualizerWebView(frame: .zero, configuration: config)
-    wv.scrollView.contentInsetAdjustmentBehavior = .never
-    wv.scrollView.isScrollEnabled = false
-    wv.scrollView.backgroundColor = .clear
-    wv.isOpaque = false
-    wv.underPageBackgroundColor = .black
-    if #available(iOS 16.4, macOS 13.3, *) {
-      wv.isInspectable = true
-    }
-    wv.backgroundColor = .black
-    wv.navigationDelegate = self
-    wv.onEscape = { [weak self] in self?.onCloseRequested?() }
-    wv.onDidMoveToWindow = { [weak self] in self?.injectSafeAreaTop() }
-    
-    self.webView = wv
-    loadPage()
+
+    var config = WebPage.Configuration()
+    config.mediaPlaybackBehavior = .allowsInlinePlayback
+    self.page = WebPage(configuration: config)
   }
-  
-  /// Inject the saved preset/speed and load index.html (only done once).
-  func loadPage(presetName: String = "", speed: Double = 1.0) {
-    guard !isLoaded else { return }
-    
-    var initJS = ""
-    if !presetName.isEmpty, let data = presetName.data(using: .utf8) {
-      let b64 = data.base64EncodedString()
-      initJS += "window.initialPresetNameB64 = '\(b64)';\n"
-    }
-    initJS += "window.initialSpeed = \(speed);"
-    
-    let script = WKUserScript(
-      source: initJS,
-      injectionTime: .atDocumentStart,
-      forMainFrameOnly: true
-    )
-    webView.configuration.userContentController.addUserScript(script)
-    
-    if let indexURL = Bundle.main.url(forResource: "index", withExtension: "html") {
+
+  // MARK: Page loading
+
+  func loadPageIfNeeded(presetName: String, speed: Double) {
+    guard !isPageLoaded else { return }
+    self.speed = speed
+
+    guard let indexURL = Bundle.main.url(forResource: "index", withExtension: "html") else {
       #if DEBUG
-      print("Visualizer: loading index.html from \(indexURL)")
+      print("Visualizer: index.html not found in bundle")
       #endif
-      webView.loadFileURL(indexURL, allowingReadAccessTo: indexURL.deletingLastPathComponent())
+      return
+    }
+
+    let baseURL = indexURL.deletingLastPathComponent()
+
+    #if DEBUG
+    print("Visualizer: loading index.html from \(indexURL)")
+    page.isInspectable = true
+    #endif
+
+    Task {
+      do {
+        let html = try String(contentsOf: indexURL, encoding: .utf8)
+        for try await _ in page.load(html: html, baseURL: baseURL) {
+          // Wait for navigation to complete
+        }
+        await onPageLoaded(savedPreset: presetName, savedSpeed: speed)
+      } catch {
+        #if DEBUG
+        print("Visualizer: failed to load page: \(error.localizedDescription)")
+        #endif
+      }
     }
   }
-  
-  /// Update speed on an already-loaded page.
-  func setSpeed(_ speed: Double) {
-    webView.evaluateJavaScript("if(window.setSpeed) window.setSpeed(\(speed))", completionHandler: nil)
+
+  private func onPageLoaded(savedPreset: String, savedSpeed: Double) async {
+    isPageLoaded = true
+
+    // Suspend the Web AudioContext — we inject waveform data directly via
+    // pushSamples, so the web audio pipeline is unnecessary.
+    _ = try? await page.callJavaScript("""
+      if (window.audioContext) {
+        window.audioContext.suspend();
+        window.audioContext.resume = function() { return Promise.resolve(); };
+      }
+      """)
+
+    // Fetch the preset name list from JS
+    if let names = try? await page.callJavaScript(
+      "return window.getPresetNames()") as? [String] {
+      presetNames = names
+    }
+
+    // Inject saved preset
+    if !savedPreset.isEmpty, presetNames.contains(savedPreset) {
+      _ = try? await page.callJavaScript(
+        "window.loadPresetByName(n)",
+        arguments: ["n": savedPreset])
+      currentPreset = savedPreset
+    }
+
+    // Inject saved speed
+    _ = try? await page.callJavaScript(
+      "window.setSpeed(s)",
+      arguments: ["s": savedSpeed])
+
+    #if DEBUG
+    print("Visualizer: page loaded, \(presetNames.count) presets available")
+    #endif
   }
-  
-  /// Inject the real safe-area-inset-top so the preset overlay can avoid the status bar.
-  /// (Our WKWebView subclass returns .zero for safeAreaInsets so the canvas fills the screen,
-  /// which means env(safe-area-inset-top) is always 0 in CSS.)
-  func injectSafeAreaTop() {
-    let window = webView.window ?? UIApplication.shared.connectedScenes
-            .compactMap({ $0 as? UIWindowScene }).first?.windows.first
-    let top = window?.safeAreaInsets.top ?? 0
-    
-    let js = """
-    (function() {
-      var el = document.getElementById('presetOverlay');
-      if (el) { el.style.top = '\(Int(top))px'; }
-      window._safeAreaTop = \(Int(top));
-    })()
-    """
-    webView.evaluateJavaScript(js, completionHandler: nil)
+
+  // MARK: JS calls
+
+  func setSpeed(_ newSpeed: Double) {
+    speed = newSpeed
+    guard isPageLoaded else { return }
+    Task {
+      _ = try? await page.callJavaScript(
+        "window.setSpeed(s)",
+        arguments: ["s": newSpeed])
+    }
   }
-  
+
+  func loadPreset(_ name: String) {
+    currentPreset = name
+    guard isPageLoaded else { return }
+    Task {
+      _ = try? await page.callJavaScript(
+        "window.loadPresetByName(n)",
+        arguments: ["n": name])
+    }
+  }
+
+  func randomPreset() {
+    guard !presetNames.isEmpty else { return }
+    let name = presetNames.randomElement()!
+    loadPreset(name)
+  }
+
+  // MARK: Cycling
+
+  func startCycling() {
+    isCycling = true
+    cycleTask = Task {
+      while !Task.isCancelled {
+        try? await Task.sleep(for: .seconds(15))
+        guard !Task.isCancelled else { break }
+        randomPreset()
+      }
+    }
+  }
+
+  func stopCycling() {
+    isCycling = false
+    cycleTask?.cancel()
+    cycleTask = nil
+  }
+
+  // MARK: Audio tap
+
   func installTapIfNeeded() {
-    webView.evaluateJavaScript("if(window.resumeAudio) window.resumeAudio()", completionHandler: nil)
+    guard isPageLoaded else { return }
+
+    Task {
+      _ = try? await page.callJavaScript("if (window.resumeAudio) window.resumeAudio()")
+    }
     sendingEnabled.withLock { $0 = true }
-    injectSafeAreaTop()
-    
+
     guard !callbackInstalled else { return }
     callbackInstalled = true
-    
-    // Set the tap callback on the engine. The actual audio tap was already
-    // installed during engine.start(), so this won't reconfigure the audio
-    // graph and won't cause a glitch. We gate JS calls with sendingEnabled
-    // so we don't waste CPU while hidden.
+
+    // The audio tap was already installed during engine.start(). We only
+    // set the callback here so we don't reconfigure the audio graph.
     engine.setTapCallback { [weak self] samples in
-      guard let self = self, self.sendingEnabled.withLock({ $0 }) else { return }
-      
+      guard let self, self.sendingEnabled.withLock({ $0 }) else { return }
+
       let samplesToSend: [Float]? = self.pendingSamples.withLock { pending in
         pending.append(contentsOf: samples)
         guard pending.count >= self.sendThreshold else { return nil }
@@ -178,161 +187,227 @@ class VisualizerHolder: NSObject, WKNavigationDelegate, WKScriptMessageHandler {
         pending.removeAll(keepingCapacity: true)
         return batch
       }
-      
+
       if let samplesToSend {
         let jsonString = samplesToSend.description
-        DispatchQueue.main.async {
-          self.webView.evaluateJavaScript("if(window.pushSamples) window.pushSamples(\(jsonString))", completionHandler: nil)
+        Task { @MainActor in
+          _ = try? await self.page.callJavaScript(
+            "if (window.pushSamples) window.pushSamples(JSON.parse(s))",
+            arguments: ["s": jsonString])
         }
       }
     }
   }
-  
+
   func removeTap() {
     sendingEnabled.withLock { $0 = false }
   }
-  
-  // MARK: - WKNavigationDelegate
-  
-  func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-    isLoaded = true
-    injectSafeAreaTop()
-    
-    // Suspend the Web AudioContext that Butterchurn creates and disable the
-    // watchdog that would resume it. The visualizer doesn't need Web Audio —
-    // waveform data is injected directly via pushSamples(). This saves
-    // resources and avoids any audio session interference.
-    let suspendJS = """
-    (function() {
-      if (window.audioContext) {
-        window.audioContext.suspend();
-        window.audioContext.resume = function() { return Promise.resolve(); };
-      }
-    })()
-    """
-    webView.evaluateJavaScript(suspendJS, completionHandler: nil)
-    
-    #if DEBUG
-    print("Visualizer webview finished loading index.html")
-    #endif
-  }
-  func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
-    #if DEBUG
-    print("Visualizer webview failed navigation: \(error.localizedDescription)")
-    #endif
-  }
-  func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
-    #if DEBUG
-    print("Visualizer webview failed provisional navigation: \(error.localizedDescription)")
-    #endif
-  }
-  
-  // MARK: - WKScriptMessageHandler
-  
-  func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
-    if message.name == "keyHandler", let dict = message.body as? [String: String],
-       let key = dict["key"], let type = dict["type"] {
-      playKey(key: key, type: type)
-    } else if message.name == "presetHandler", let presetName = message.body as? String {
-      onPresetChange?(presetName)
-    } else if message.name == "speedHandler", let speed = message.body as? Double {
-      onSpeedChange?(speed)
-    } else if message.name == "closeViz" {
-      DispatchQueue.main.async { self.onCloseRequested?() }
+}
+
+// MARK: - VisualizerView
+
+struct VisualizerView: View {
+  var engine: SpatialAudioEngine
+  @Binding var isPresented: Bool
+
+  @AppStorage("lastVisualizerPreset") private var lastPreset: String = ""
+  @AppStorage("lastVisualizerSpeed") private var lastSpeed: Double = 1.0
+  @State private var controlsVisible = true
+  @State private var holder: VisualizerPageHolder?
+
+  /// Single persistent holder — survives show/hide cycles.
+  private static var persistentHolder: VisualizerPageHolder?
+
+  private func getOrCreateHolder() -> VisualizerPageHolder {
+    if let existing = Self.persistentHolder, existing.engine === engine {
+      return existing
     }
+    let h = VisualizerPageHolder(engine: engine)
+    Self.persistentHolder = h
+    return h
   }
-  
-  private func playKey(key: String, type: String) {
-    let charToMidiNote: [String: Int] = [
-      "a": 60, "w": 61, "s": 62, "e": 63, "d": 64, "f": 65, "t": 66, "g": 67, "y": 68, "h": 69, "u": 70, "j": 71, "k": 72, "o": 73, "l": 74, "p": 75
-    ]
-    if let noteValue = charToMidiNote[key] {
-      if type == "keydown" {
-        noteHandler?.noteOn(MidiNote(note: UInt8(noteValue), velocity: 100))
-      } else if type == "keyup" {
-        noteHandler?.noteOff(MidiNote(note: UInt8(noteValue), velocity: 100))
+
+  var body: some View {
+    ZStack {
+      if let holder {
+        WebView(holder.page)
+          .ignoresSafeArea()
+
+        // Tap-to-show-controls when hidden
+        if !controlsVisible {
+          Color.clear
+            .contentShape(.rect)
+            .onTapGesture {
+              withAnimation { controlsVisible = true }
+            }
+        }
+
+        if controlsVisible {
+          VStack {
+            Spacer()
+            VisualizerControlsView(
+              holder: holder,
+              controlsVisible: $controlsVisible,
+              isPresented: $isPresented,
+              lastPreset: $lastPreset,
+              lastSpeed: $lastSpeed
+            )
+          }
+          .transition(.move(edge: .bottom).combined(with: .opacity))
+        }
       }
+    }
+    .onAppear {
+      let h = getOrCreateHolder()
+      holder = h
+      h.loadPageIfNeeded(presetName: lastPreset, speed: lastSpeed)
+      h.installTapIfNeeded()
+      h.setSpeed(lastSpeed)
+    }
+    .onChange(of: isPresented) {
+      guard let holder else { return }
+      if isPresented {
+        holder.installTapIfNeeded()
+      } else {
+        holder.removeTap()
+        holder.stopCycling()
+      }
+    }
+    .onKeyPress(.escape) {
+      withAnimation(.easeInOut(duration: 0.4)) {
+        isPresented = false
+      }
+      return .handled
     }
   }
 }
 
-struct VisualizerView: UIViewRepresentable {
-  typealias UIViewType = VisualizerWebView
-  
-  var engine: SpatialAudioEngine
-  var noteHandler: NoteHandler?
+// MARK: - VisualizerControlsView
+
+struct VisualizerControlsView: View {
+  var holder: VisualizerPageHolder
+  @Binding var controlsVisible: Bool
   @Binding var isPresented: Bool
-  @AppStorage("lastVisualizerPreset") private var lastPreset: String = ""
-  @AppStorage("lastVisualizerSpeed") private var lastSpeed: Double = 1.0
-  
-  /// Single persistent holder - survives fullScreenCover dismiss/re-present cycles.
-  private static var persistentHolder: VisualizerHolder?
-  
-  private func getOrCreateHolder() -> VisualizerHolder {
-    if let existing = Self.persistentHolder, existing.engine === engine {
-      existing.noteHandler = noteHandler
-      return existing
-    }
-    // Engine changed or first use — create fresh holder
-    let h = VisualizerHolder(engine: engine, noteHandler: noteHandler)
-    h.loadPage(presetName: lastPreset, speed: lastSpeed)
-    Self.persistentHolder = h
-    return h
-  }
-  
-  func makeUIView(context: Context) -> VisualizerWebView {
-    let h = getOrCreateHolder()
-    context.coordinator.holder = h
-    
-    h.onPresetChange = { [self] name in
-      DispatchQueue.main.async { self.lastPreset = name }
-    }
-    h.onSpeedChange = { [self] speed in
-      DispatchQueue.main.async { self.lastSpeed = speed }
-    }
-    h.onCloseRequested = { [self] in
-      DispatchQueue.main.async {
-        withAnimation(.easeInOut(duration: 0.4)) {
-          self.isPresented = false
+  @Binding var lastPreset: String
+  @Binding var lastSpeed: Double
+
+  @State private var showingPresetList = false
+  @State private var speed: Double = 1.0
+
+  var body: some View {
+    VStack(spacing: 12) {
+      // Preset button
+      Button {
+        showingPresetList = true
+      } label: {
+        Text(holder.currentPreset.isEmpty ? "Presets" : holder.currentPreset)
+          .lineLimit(1)
+          .frame(maxWidth: .infinity, alignment: .leading)
+      }
+      .buttonStyle(.bordered)
+
+      // Speed slider
+      HStack {
+        Text("Speed")
+        Slider(value: $speed, in: 0.1...1.0, step: 0.05)
+          .onChange(of: speed) {
+            holder.setSpeed(speed)
+            lastSpeed = speed
+          }
+      }
+
+      // Action buttons
+      HStack {
+        Button("Random", systemImage: "shuffle") {
+          holder.randomPreset()
+          lastPreset = holder.currentPreset
+        }
+
+        Button(
+          holder.isCycling ? "Stop Cycle" : "Cycle",
+          systemImage: holder.isCycling ? "stop.circle" : "arrow.trianglehead.2.clockwise.rotate.90"
+        ) {
+          if holder.isCycling {
+            holder.stopCycling()
+          } else {
+            holder.startCycling()
+          }
+        }
+
+        Spacer()
+
+        Button("Hide", systemImage: "eye.slash") {
+          withAnimation { controlsVisible = false }
+        }
+
+        Button("Close", systemImage: "xmark") {
+          withAnimation(.easeInOut(duration: 0.4)) {
+            isPresented = false
+          }
         }
       }
     }
-    
-    // Don't install the tap here — updateUIView will handle it when
-    // isPresented becomes true. This avoids doing work at app startup.
-    return h.webView
+    .padding()
+    .background(.ultraThinMaterial, in: .rect(cornerRadius: 16))
+    .padding()
+    .onAppear {
+      speed = lastSpeed
+    }
+    .sheet(isPresented: $showingPresetList) {
+      VisualizerPresetListView(
+        holder: holder,
+        lastPreset: $lastPreset,
+        isPresented: $showingPresetList
+      )
+    }
   }
-  
-  func updateUIView(_ uiView: VisualizerWebView, context: Context) {
-    let h = context.coordinator.holder
-    h?.onPresetChange = { [self] name in
-      DispatchQueue.main.async { self.lastPreset = name }
+}
+
+// MARK: - VisualizerPresetListView
+
+struct VisualizerPresetListView: View {
+  var holder: VisualizerPageHolder
+  @Binding var lastPreset: String
+  @Binding var isPresented: Bool
+
+  @State private var searchText = ""
+
+  private var filteredPresets: [String] {
+    if searchText.isEmpty {
+      return holder.presetNames
     }
-    h?.onSpeedChange = { [self] speed in
-      DispatchQueue.main.async { self.lastSpeed = speed }
+    return holder.presetNames.filter {
+      $0.localizedStandardContains(searchText)
     }
-    h?.onCloseRequested = { [self] in
-      DispatchQueue.main.async {
-        withAnimation(.easeInOut(duration: 0.4)) {
-          self.isPresented = false
+  }
+
+  var body: some View {
+    NavigationStack {
+      List(filteredPresets, id: \.self) { name in
+        Button {
+          holder.loadPreset(name)
+          lastPreset = name
+          isPresented = false
+        } label: {
+          HStack {
+            Text(name)
+            Spacer()
+            if name == holder.currentPreset {
+              Image(systemName: "checkmark")
+                .foregroundStyle(.tint)
+            }
+          }
+        }
+      }
+      .searchable(text: $searchText, prompt: "Filter presets")
+      .navigationTitle("Presets")
+      .toolbar {
+        ToolbarItem(placement: .cancellationAction) {
+          Button("Done") {
+            isPresented = false
+          }
         }
       }
     }
-    
-    // Toggle the audio tap based on visibility.
-    if isPresented {
-      h?.installTapIfNeeded()
-      h?.setSpeed(lastSpeed)
-    } else {
-      h?.removeTap()
-    }
-  }
-  
-  func makeCoordinator() -> Coordinator {
-    Coordinator()
-  }
-  
-  class Coordinator {
-    var holder: VisualizerHolder?
   }
 }
