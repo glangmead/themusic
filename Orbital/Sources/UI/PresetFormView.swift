@@ -6,7 +6,9 @@
 //
 
 import AVFAudio
+import Keyboard
 import SwiftUI
+import Tonic
 
 struct PresetFormView: View {
   @Environment(SpatialAudioEngine.self) private var engine
@@ -52,35 +54,51 @@ private struct PresetFormContent: View {
   var playbackState: SongPlaybackState?
 
   var body: some View {
-    Form {
-      Section("Effects") {
-        Picker("Reverb Preset", selection: $synth.reverbPreset) {
-          ForEach(AVAudioUnitReverbPreset.allCases, id: \.self) { option in
-            Text(option.name)
+    VStack(spacing: 0) {
+      Keyboard(
+        layout: .piano(pitchRange: Pitch(intValue: 48)...Pitch(intValue: 84)),
+        noteOn: { pitch, _ in
+          if !synth.engine.audioEngine.isRunning {
+            try? synth.engine.start()
+          }
+          synth.noteHandler?.noteOn(MidiNote(note: MidiValue(pitch.intValue), velocity: 100))
+        },
+        noteOff: { pitch in
+          synth.noteHandler?.noteOff(MidiNote(note: MidiValue(pitch.intValue), velocity: 0))
+        }
+      )
+      .frame(height: 120)
+
+      Form {
+        Section("Effects") {
+          Picker("Reverb Preset", selection: $synth.reverbPreset) {
+            ForEach(AVAudioUnitReverbPreset.allCases, id: \.self) { option in
+              Text(option.name)
+            }
+          }
+          LabeledSlider(value: $synth.reverbMix, label: "Reverb Wet/Dry", range: 0...100)
+          if synth.delayAvailable {
+            LabeledSlider(value: $synth.delayTime, label: "Delay Time", range: 0...30)
+            LabeledSlider(value: $synth.delayFeedback, label: "Delay Feedback", range: 0...30)
+            LabeledSlider(value: $synth.delayWetDryMix, label: "Delay Wet/Dry", range: 0...100)
+            LabeledSlider(value: $synth.delayLowPassCutoff, label: "Delay LowPass", range: 0...1000)
           }
         }
-        LabeledSlider(value: $synth.reverbMix, label: "Reverb Wet/Dry", range: 0...100)
-        if synth.delayAvailable {
-          LabeledSlider(value: $synth.delayTime, label: "Delay Time", range: 0...30)
-          LabeledSlider(value: $synth.delayFeedback, label: "Delay Feedback", range: 0...30)
-          LabeledSlider(value: $synth.delayWetDryMix, label: "Delay Wet/Dry", range: 0...100)
-          LabeledSlider(value: $synth.delayLowPassCutoff, label: "Delay LowPass", range: 0...1000)
-        }
-      }
 
-      if let handler = synth.arrowHandler {
-        ForEach(handler.groupedDescriptors(), id: \.0) { title, descs in
-          Section(title) {
-            ForEach(descs) { desc in
-              ArrowParamRow(descriptor: desc, handler: handler)
+        if let handler = synth.arrowHandler {
+          ForEach(handler.groupedDescriptors(), id: \.0) { title, descs in
+            Section(title) {
+              ForEach(descs) { desc in
+                ArrowParamRow(descriptor: desc, handler: handler)
+              }
             }
           }
         }
-      }
 
-      if let arrow = presetSpec.arrow, let handler = synth.arrowHandler {
-        DisclosureGroup("Advanced") {
-          ArrowSyntaxEditorView(syntax: arrow, handler: handler)
+        if let arrow = presetSpec.arrow, let handler = synth.arrowHandler {
+          DisclosureGroup("Advanced") {
+            ArrowSyntaxEditorView(syntax: arrow, handler: handler)
+          }
         }
       }
     }

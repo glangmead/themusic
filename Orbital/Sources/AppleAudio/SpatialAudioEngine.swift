@@ -49,6 +49,7 @@ class SpatialAudioEngine {
   func connectToEnvNode(_ nodes: [AVAudioMixerNode]) {
     if spatialEnabled {
       for node in nodes {
+        node.renderingAlgorithm = .auto
         node.pointSourceInHeadMode = .mono
         node.sourceMode = .spatializeIfMono
         audioEngine.connect(node, to: envNode, format: mono)
@@ -64,7 +65,6 @@ class SpatialAudioEngine {
   
   func start() throws {
     if spatialEnabled {
-      envNode.renderingAlgorithm = .HRTF
       envNode.outputType = .auto
       envNode.isListenerHeadTrackingEnabled = true
       envNode.listenerPosition = AVAudio3DPoint(x: 0, y: 0, z: 0)

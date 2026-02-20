@@ -18,6 +18,7 @@
 		9BCED9112F1FD0A30029ED1B /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 9BCED9102F1FD0A30029ED1B /* index.html */; };
 		9BCED9902F246B150029ED1B /* Orbital.icon in Resources */ = {isa = PBXBuildFile; fileRef = 9BCED98F2F246B150029ED1B /* Orbital.icon */; };
 		9BD1B7002E8B08D000C718F1 /* Tonic in Frameworks */ = {isa = PBXBuildFile; productRef = 9BD1B6FF2E8B08D000C718F1 /* Tonic */; };
+		9BDF96F12F48FB39006E614F /* Keyboard in Frameworks */ = {isa = PBXBuildFile; productRef = 9BDF96F02F48FB39006E614F /* Keyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 			files = (
 				9BA522562EB0FE8F00ECF215 /* AudioKit in Frameworks */,
 				9BD1B7002E8B08D000C718F1 /* Tonic in Frameworks */,
+				9BDF96F12F48FB39006E614F /* Keyboard in Frameworks */,
 				9B0F28872ED00401004C0884 /* AudioKitUI in Frameworks */,
 				9B1864642E772E37006147D8 /* Overture in Frameworks */,
 			);
@@ -164,6 +166,7 @@
 				9BD1B6FF2E8B08D000C718F1 /* Tonic */,
 				9BA522552EB0FE8F00ECF215 /* AudioKit */,
 				9B0F28862ED00401004C0884 /* AudioKitUI */,
+				9BDF96F02F48FB39006E614F /* Keyboard */,
 			);
 			productName = ProgressionPlayer;
 			productReference = 9BC0FCA72E704EA900472A5A /* Orbital.app */;
@@ -249,6 +252,7 @@
 				9BD1B6FE2E8B08D000C718F1 /* XCRemoteSwiftPackageReference "Tonic" */,
 				9BA522542EB0FE8400ECF215 /* XCRemoteSwiftPackageReference "AudioKit" */,
 				9B0F28852ED00401004C0884 /* XCRemoteSwiftPackageReference "AudioKitUI" */,
+				9BDF96EF2F48FA7C006E614F /* XCRemoteSwiftPackageReference "Keyboard" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9BC0FCA82E704EA900472A5A /* Products */;
@@ -467,7 +471,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Orbital-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Orbital;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music-games";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
 				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -506,7 +510,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Orbital-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Orbital;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music-games";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
 				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -677,6 +681,14 @@
 				minimumVersion = 2.1.0;
 			};
 		};
+		9BDF96EF2F48FA7C006E614F /* XCRemoteSwiftPackageReference "Keyboard" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/Keyboard.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -699,6 +711,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9BD1B6FE2E8B08D000C718F1 /* XCRemoteSwiftPackageReference "Tonic" */;
 			productName = Tonic;
+		};
+		9BDF96F02F48FB39006E614F /* Keyboard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9BDF96EF2F48FA7C006E614F /* XCRemoteSwiftPackageReference "Keyboard" */;
+			productName = Keyboard;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
