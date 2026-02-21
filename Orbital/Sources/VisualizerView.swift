@@ -97,12 +97,15 @@ class VisualizerPageHolder {
       presetNames = names
     }
 
-    // Inject saved preset
+    // Inject saved preset, or discover the one Butterchurn picked
     if !savedPreset.isEmpty, presetNames.contains(savedPreset) {
       _ = try? await page.callJavaScript(
         "window.loadPresetByName(n)",
         arguments: ["n": savedPreset])
       currentPreset = savedPreset
+    } else if let name = try? await page.callJavaScript(
+      "return window.getCurrentPreset()") as? String, !name.isEmpty {
+      currentPreset = name
     }
 
     // Inject saved speed
@@ -346,6 +349,9 @@ struct VisualizerControlsView: View {
           }
         }
       }
+      Text("Visualizations by Milkdrop by Ryan Geiss,\nvia Butterchurn by Jordan Berg,\nvia https://github.com/pxl-pshr/butterchurn-ios")
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .font(.caption)
     }
     .padding()
     .background(.ultraThinMaterial, in: .rect(cornerRadius: 16))
@@ -383,31 +389,53 @@ struct VisualizerPresetListView: View {
 
   var body: some View {
     NavigationStack {
-      List(filteredPresets, id: \.self) { name in
-        Button {
-          holder.loadPreset(name)
-          lastPreset = name
-          isPresented = false
-        } label: {
-          HStack {
-            Text(name)
-            Spacer()
-            if name == holder.currentPreset {
-              Image(systemName: "checkmark")
-                .foregroundStyle(.tint)
+      ScrollViewReader { proxy in
+        List(filteredPresets, id: \.self) { name in
+          Button {
+            holder.loadPreset(name)
+            lastPreset = name
+            isPresented = false
+          } label: {
+            HStack {
+              Text(name)
+              Spacer()
+              if name == holder.currentPreset {
+                Image(systemName: "checkmark")
+                  .foregroundStyle(.tint)
+              }
+            }
+          }
+          .id(name)
+        }
+        .searchable(text: $searchText, prompt: "Filter presets")
+        .navigationTitle("Presets")
+        .toolbar {
+          ToolbarItem(placement: .cancellationAction) {
+            Button("Done") {
+              isPresented = false
             }
           }
         }
-      }
-      .searchable(text: $searchText, prompt: "Filter presets")
-      .navigationTitle("Presets")
-      .toolbar {
-        ToolbarItem(placement: .cancellationAction) {
-          Button("Done") {
-            isPresented = false
+        .onAppear {
+          if !holder.currentPreset.isEmpty {
+            proxy.scrollTo(holder.currentPreset, anchor: .center)
           }
         }
       }
     }
   }
+}
+
+#Preview {
+  @Previewable @State var controlsVisible = true
+  @Previewable @State var isPresented = true
+  @Previewable @State var lastPreset = "foo"
+  @Previewable @State var lastSpeed = 1.0
+  VisualizerControlsView(
+    holder: VisualizerPageHolder(engine: SpatialAudioEngine()),
+    controlsVisible: $controlsVisible,
+    isPresented: $isPresented,
+    lastPreset: $lastPreset,
+    lastSpeed: $lastSpeed
+  )
 }
