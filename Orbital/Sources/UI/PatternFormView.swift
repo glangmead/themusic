@@ -162,7 +162,15 @@ struct PatternFormView: View {
 
   init(track: TrackInfo) {
     self.track = track
-    let spec = track.patternSpec
+    let spec = track.trackSpec ?? ProceduralTrackSyntax(
+      name: track.patternName,
+      presetFilename: "",
+      numVoices: nil,
+      noteGenerator: .fixed(events: []),
+      sustain: nil,
+      gap: nil,
+      modulators: nil
+    )
 
     _generatorType = State(initialValue: spec.noteGenerator.generatorType)
     _name = State(initialValue: spec.name)
@@ -631,7 +639,7 @@ struct PatternFormView: View {
 
   // MARK: - Apply / Save
 
-  private func buildPatternSpec() -> PatternSyntax {
+  private func buildTrackSpec() -> ProceduralTrackSyntax {
     let noteGen: NoteGeneratorSyntax
     switch generatorType {
     case .melodic:
@@ -652,28 +660,32 @@ struct PatternFormView: View {
       noteGen = .midiFile(filename: midiFilename, track: midiTrack, loop: midiLoop)
     }
 
-    return PatternSyntax(
+    return ProceduralTrackSyntax(
       name: name,
       presetFilename: presetFilename,
       numVoices: numVoices,
       noteGenerator: noteGen,
       sustain: sustain.toSyntax(),
       gap: gap.toSyntax(),
-      modulators: modulators.isEmpty ? nil : modulators.map { $0.toSyntax() },
-      trackPresetFilenames: nil
+      modulators: modulators.isEmpty ? nil : modulators.map { $0.toSyntax() }
     )
   }
 
   private func applyChanges() {
-    let newSpec = buildPatternSpec()
-    playbackState.replacePattern(trackId: track.id, newPatternSpec: newSpec)
+    let newSpec = buildTrackSpec()
+    playbackState.replaceTrack(trackId: track.id, newTrackSpec: newSpec)
   }
 
   private func savePattern() {
     applyChanges()
-    let spec = buildPatternSpec()
-    let filename = track.patternSpec.name.lowercased().replacingOccurrences(of: " ", with: "_") + ".json"
-    PatternStorage.save(spec, filename: filename)
+    let spec = buildTrackSpec()
+    let filename = name.lowercased().replacingOccurrences(of: " ", with: "_") + ".json"
+    let patternSyntax = PatternSyntax(
+      name: name,
+      proceduralTracks: [spec],
+      midiTracks: nil
+    )
+    PatternStorage.save(patternSyntax, filename: filename)
   }
 
   private func resetGeneratorState(for type: GeneratorType) {
@@ -708,14 +720,15 @@ struct PatternFormView: View {
 
 #Preview {
   let engine = SpatialAudioEngine()
-  let song = Song(name: "Aurora", patternFileNames: ["aurora_arpeggio.json"])
+  let song = Song(name: "Aurora", patternFileName: "aurora_arpeggio.json")
   let playbackState = SongPlaybackState(song: song)
-  let patternSpec = Bundle.main.decode(PatternFile.self, from: "aurora_arpeggio.json", subdirectory: "patterns").patterns[0]
+  let patternSpec = Bundle.main.decode(PatternSyntax.self, from: "aurora_arpeggio.json", subdirectory: "patterns")
+  let trackSpec = patternSpec.proceduralTracks![0]
   let presetSpec = Bundle.main.decode(PresetSyntax.self, from: "auroraBorealis.json", subdirectory: "presets")
   let track = TrackInfo(
     id: 0,
     patternName: "Preview",
-    patternSpec: patternSpec,
+    trackSpec: trackSpec,
     presetSpec: presetSpec,
     spatialPreset: SpatialPreset(presetSpec: presetSpec)
   )

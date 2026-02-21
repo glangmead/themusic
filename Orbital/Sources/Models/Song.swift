@@ -11,7 +11,7 @@ import MediaPlayer
 struct Song: Identifiable {
   let id = UUID()
   let name: String
-  let patternFileNames: [String] // e.g. ["aurora_arpeggio.json"]
+  let patternFileName: String // e.g. "aurora_arpeggio.json"
 }
 
 @MainActor @Observable
@@ -19,19 +19,19 @@ class SongLibrary {
   var songs: [Song] = [
     Song(
       name: "Aurora Borealis",
-      patternFileNames: ["aurora_arpeggio.json"]
+      patternFileName: "aurora_arpeggio.json"
     ),
     Song(
       name: "Baroque Chords",
-      patternFileNames: ["baroque_chords.json"]
+      patternFileName: "baroque_chords.json"
     ),
     Song(
       name: "Bach Invention 1",
-      patternFileNames: ["bach_invention.json"]
+      patternFileName: "bach_invention.json"
     ),
     Song(
       name: "Duet Arpeggios",
-      patternFileNames: ["duet_arpeggios.json"]
+      patternFileName: "duet_arpeggios.json"
     ),
   ]
 

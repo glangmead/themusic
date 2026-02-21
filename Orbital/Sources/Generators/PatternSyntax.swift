@@ -443,11 +443,10 @@ enum NoteGeneratorSyntax: Codable {
 
 }
 
-// MARK: - PatternSyntax
+// MARK: - ProceduralTrackSyntax
 
-/// Top-level Codable specification for a generative music pattern.
-/// Parallels PresetSyntax: decode from JSON, then compile() to get a runtime MusicPattern.
-struct PatternSyntax: Codable {
+/// A single procedural track within a pattern.
+struct ProceduralTrackSyntax: Codable {
   let name: String
   let presetFilename: String
   let numVoices: Int?
@@ -455,109 +454,197 @@ struct PatternSyntax: Codable {
   let sustain: TimingSyntax?
   let gap: TimingSyntax?
   let modulators: [ModulatorSyntax]?
-  /// Optional per-track preset overrides for multi-track MIDI files.
-  /// Track N uses trackPresetFilenames[N] if available, otherwise presetFilename.
-  let trackPresetFilenames: [String]?
+}
 
-  /// Compile into a MusicPattern using an already-constructed SpatialPreset.
-  /// The caller is responsible for resolving the presetFilename and creating
-  /// the SpatialPreset with the appropriate engine.
-  func compile(spatialPreset: SpatialPreset, clock: any Clock<Duration> = ContinuousClock()) -> MusicPattern {
-    let modulatorDict: [String: Arrow11]
-    if let mods = modulators {
-      modulatorDict = Dictionary(
-        mods.map { $0.compile() },
-        uniquingKeysWith: { first, _ in first }
-      )
+// MARK: - MidiTracksSyntax
+
+/// Per-track configuration for a MIDI pattern (preset + voice count).
+struct MidiTrackEntry: Codable {
+  let presetFilename: String
+  let numVoices: Int?
+  let modulators: [ModulatorSyntax]?
+}
+
+/// Multi-track MIDI specification. A single MIDI file that auto-expands
+/// into one track per nonempty MIDI track at compile time.
+struct MidiTracksSyntax: Codable {
+  let filename: String
+  let loop: Bool?
+  let tracks: [MidiTrackEntry]
+}
+
+// MARK: - PatternSyntax
+
+/// Top-level Codable specification for a generative music pattern.
+/// A pattern has a name and either `proceduralTracks` (generative) or
+/// `midiTracks` (MIDI file). Exactly one must be present.
+struct PatternSyntax: Codable {
+  let name: String
+  let proceduralTracks: [ProceduralTrackSyntax]?
+  let midiTracks: MidiTracksSyntax?
+
+  /// Compile all tracks into a single MusicPattern. Returns the pattern
+  /// plus a TrackInfo array for the UI (built at compile time so
+  /// SongPlaybackState can access it without awaiting the actor).
+  func compile(engine: SpatialAudioEngine, clock: any Clock<Duration> = ContinuousClock()) async throws -> (MusicPattern, [TrackInfo]) {
+    if let procedural = proceduralTracks {
+      return try await compileProceduralTracks(procedural, engine: engine, clock: clock)
+    } else if let midi = midiTracks {
+      return try await compileMidiTracks(midi, engine: engine, clock: clock)
     } else {
-      modulatorDict = [:]
+      fatalError("PatternSyntax '\(name)' has neither proceduralTracks nor midiTracks")
     }
-
-    // For MIDI files, timing comes from the file itself
-    if let midiSeq = noteGenerator.compileMidiSequence() {
-      let loop: Bool
-      if case .midiFile(_, _, let l) = noteGenerator { loop = l ?? true } else { loop = true }
-      let iters = midiSeq.makeIterators(loop: loop)
-      return MusicPattern(
-        spatialPreset: spatialPreset,
-        modulators: modulatorDict,
-        notes: iters.notes,
-        sustains: iters.sustains,
-        gaps: iters.gaps,
-        clock: clock
-      )
-    }
-
-    // For generative patterns, use the sustain/gap fields (default to 1s fixed if missing)
-    let sustainIter = (sustain ?? .fixed(value: 1.0)).compile()
-    let gapIter = (gap ?? .fixed(value: 1.0)).compile()
-
-    return MusicPattern(
-      spatialPreset: spatialPreset,
-      modulators: modulatorDict,
-      notes: noteGenerator.compile(),
-      sustains: sustainIter,
-      gaps: gapIter,
-      clock: clock
-    )
   }
 
-  /// Convenience: compile from a PresetSyntax and engine, creating the SpatialPreset internally.
-  /// Returns both the MusicPattern and the SpatialPreset (caller must hold a reference to the
-  /// SpatialPreset to keep the audio nodes alive, and must call cleanup() when done).
-  func compile(presetSpec: PresetSyntax, engine: SpatialAudioEngine, clock: any Clock<Duration> = ContinuousClock()) async throws -> (MusicPattern, SpatialPreset) {
-    let voices = numVoices ?? 12
-    let sp = try await SpatialPreset(presetSpec: presetSpec, engine: engine, numVoices: voices)
-    let pattern = compile(spatialPreset: sp, clock: clock)
-    return (pattern, sp)
-  }
-
-  /// For MIDI files with no track specified, compile ALL nonempty tracks into separate
-  /// MusicPatterns, each with its own SpatialPreset. Returns an array of (pattern, spatialPreset, trackName).
-  /// Returns nil if this isn't a multi-track MIDI pattern (i.e. noteGenerator is not .midiFile or has a specific track).
-  func compileMultiTrack(presetSpec: PresetSyntax, engine: SpatialAudioEngine, clock: any Clock<Duration> = ContinuousClock()) async throws -> [(pattern: MusicPattern, spatialPreset: SpatialPreset, trackName: String)]? {
-    guard case .midiFile(let filename, let track, let loop) = noteGenerator else { return nil }
-    // Only expand when track is nil (no specific track requested)
-    guard track == nil else { return nil }
-    guard let url = NoteGeneratorSyntax.midiFileURL(filename: filename) else { return nil }
-
-    let loopVal = loop ?? true
-    let allSeqs = MidiEventSequence.allTracks(url: url, loop: loopVal)
-    guard allSeqs.count > 0 else { return nil }
-
-    let modulatorDict: [String: Arrow11]
-    if let mods = modulators {
-      modulatorDict = Dictionary(mods.map { $0.compile() }, uniquingKeysWith: { first, _ in first })
-    } else {
-      modulatorDict = [:]
-    }
-
-    let voices = numVoices ?? 12
-
-    var results: [(pattern: MusicPattern, spatialPreset: SpatialPreset, trackName: String)] = []
-    for (i, entry) in allSeqs.enumerated() {
-      // Use per-track preset if specified, otherwise the shared one
-      let trackPresetSpec: PresetSyntax
-      if let trackPresets = trackPresetFilenames, i < trackPresets.count {
-        let trackPresetFileName = trackPresets[i] + ".json"
-        trackPresetSpec = Bundle.main.decode(PresetSyntax.self, from: trackPresetFileName, subdirectory: "presets")
-      } else {
-        trackPresetSpec = presetSpec
+  /// Compile without an engine — produces TrackInfo for UI-only display.
+  func compileTrackInfoOnly() -> [TrackInfo] {
+    var infos: [TrackInfo] = []
+    var nextId = 0
+    if let procedural = proceduralTracks {
+      for track in procedural {
+        let presetFileName = track.presetFilename + ".json"
+        let presetSpec = Bundle.main.decode(PresetSyntax.self, from: presetFileName, subdirectory: "presets")
+        let sp = SpatialPreset(presetSpec: presetSpec, numVoices: track.numVoices ?? 12)
+        infos.append(TrackInfo(
+          id: nextId,
+          patternName: track.name,
+          trackSpec: track,
+          presetSpec: presetSpec,
+          spatialPreset: sp
+        ))
+        nextId += 1
       }
-      let sp = try await SpatialPreset(presetSpec: trackPresetSpec, engine: engine, numVoices: voices)
+    } else if let midi = midiTracks {
+      for (i, entry) in midi.tracks.enumerated() {
+        let presetFileName = entry.presetFilename + ".json"
+        let presetSpec = Bundle.main.decode(PresetSyntax.self, from: presetFileName, subdirectory: "presets")
+        let sp = SpatialPreset(presetSpec: presetSpec, numVoices: entry.numVoices ?? 12)
+        infos.append(TrackInfo(
+          id: nextId,
+          patternName: "Track \(i)",
+          trackSpec: nil,
+          presetSpec: presetSpec,
+          spatialPreset: sp
+        ))
+        nextId += 1
+      }
+    }
+    return infos
+  }
+
+  // MARK: - Private compilation helpers
+
+  private func compileProceduralTracks(
+    _ procedural: [ProceduralTrackSyntax],
+    engine: SpatialAudioEngine,
+    clock: any Clock<Duration>
+  ) async throws -> (MusicPattern, [TrackInfo]) {
+    var musicTracks: [MusicPattern.Track] = []
+    var trackInfos: [TrackInfo] = []
+
+    for (i, trackSpec) in procedural.enumerated() {
+      let presetFileName = trackSpec.presetFilename + ".json"
+      let presetSpec = Bundle.main.decode(PresetSyntax.self, from: presetFileName, subdirectory: "presets")
+      let voices = trackSpec.numVoices ?? 12
+      let sp = try await SpatialPreset(presetSpec: presetSpec, engine: engine, numVoices: voices)
+
+      let modulatorDict = Self.compileModulators(trackSpec.modulators)
+
+      let noteGen = trackSpec.noteGenerator
+      let notes: any IteratorProtocol<[MidiNote]>
+      let sustains: any IteratorProtocol<CoreFloat>
+      let gaps: any IteratorProtocol<CoreFloat>
+
+      if let midiSeq = noteGen.compileMidiSequence() {
+        let loop: Bool
+        if case .midiFile(_, _, let l) = noteGen { loop = l ?? true } else { loop = true }
+        let iters = midiSeq.makeIterators(loop: loop)
+        notes = iters.notes
+        sustains = iters.sustains
+        gaps = iters.gaps
+      } else {
+        notes = noteGen.compile()
+        sustains = (trackSpec.sustain ?? .fixed(value: 1.0)).compile()
+        gaps = (trackSpec.gap ?? .fixed(value: 1.0)).compile()
+      }
+
+      musicTracks.append(MusicPattern.Track(
+        spatialPreset: sp,
+        modulators: modulatorDict,
+        notes: notes,
+        sustains: sustains,
+        gaps: gaps,
+        name: trackSpec.name
+      ))
+
+      trackInfos.append(TrackInfo(
+        id: i,
+        patternName: trackSpec.name,
+        trackSpec: trackSpec,
+        presetSpec: presetSpec,
+        spatialPreset: sp
+      ))
+    }
+
+    let pattern = MusicPattern(tracks: musicTracks, clock: clock)
+    return (pattern, trackInfos)
+  }
+
+  private func compileMidiTracks(
+    _ midi: MidiTracksSyntax,
+    engine: SpatialAudioEngine,
+    clock: any Clock<Duration>
+  ) async throws -> (MusicPattern, [TrackInfo]) {
+    guard let url = NoteGeneratorSyntax.midiFileURL(filename: midi.filename) else {
+      fatalError("MIDI file not found: \(midi.filename)")
+    }
+
+    let loopVal = midi.loop ?? true
+    let allSeqs = MidiEventSequence.allTracks(url: url, loop: loopVal)
+
+    var musicTracks: [MusicPattern.Track] = []
+    var trackInfos: [TrackInfo] = []
+
+    for (i, entry) in allSeqs.enumerated() {
+      // Use per-track entry if available, otherwise fall back to first entry
+      let trackEntry = i < midi.tracks.count ? midi.tracks[i] : midi.tracks[0]
+      let presetFileName = trackEntry.presetFilename + ".json"
+      let presetSpec = Bundle.main.decode(PresetSyntax.self, from: presetFileName, subdirectory: "presets")
+      let voices = trackEntry.numVoices ?? 12
+      let sp = try await SpatialPreset(presetSpec: presetSpec, engine: engine, numVoices: voices)
+
+      let modulatorDict = Self.compileModulators(trackEntry.modulators)
       let iters = entry.sequence.makeIterators(loop: loopVal)
-      let pattern = MusicPattern(
+      let trackName = entry.trackName.isEmpty ? "Track \(entry.trackIndex)" : entry.trackName
+
+      musicTracks.append(MusicPattern.Track(
         spatialPreset: sp,
         modulators: modulatorDict,
         notes: iters.notes,
         sustains: iters.sustains,
         gaps: iters.gaps,
-        clock: clock
-      )
-      let name = entry.trackName.isEmpty ? "Track \(entry.trackIndex)" : entry.trackName
-      results.append((pattern: pattern, spatialPreset: sp, trackName: name))
+        name: trackName
+      ))
+
+      trackInfos.append(TrackInfo(
+        id: i,
+        patternName: trackName,
+        trackSpec: nil,
+        presetSpec: presetSpec,
+        spatialPreset: sp
+      ))
     }
-    return results
+
+    let pattern = MusicPattern(tracks: musicTracks, clock: clock)
+    return (pattern, trackInfos)
+  }
+
+  private static func compileModulators(_ modulators: [ModulatorSyntax]?) -> [String: Arrow11] {
+    guard let mods = modulators else { return [:] }
+    return Dictionary(
+      mods.map { $0.compile() },
+      uniquingKeysWith: { first, _ in first }
+    )
   }
 }
 // MARK: - GeneratorType
@@ -607,29 +694,7 @@ extension NoteGeneratorSyntax {
   }
 }
 
-// MARK: - PatternFile
 
-/// Decodes a pattern JSON file that is either a single PatternSyntax object
-/// or an array of PatternSyntax objects (multi-track generative patterns).
-enum PatternFile: Decodable {
-  case single(PatternSyntax)
-  case multi([PatternSyntax])
-
-  var patterns: [PatternSyntax] {
-    switch self {
-    case .single(let p): return [p]
-    case .multi(let ps): return ps
-    }
-  }
-
-  init(from decoder: Decoder) throws {
-    if let array = try? [PatternSyntax](from: decoder) {
-      self = .multi(array)
-    } else {
-      self = .single(try PatternSyntax(from: decoder))
-    }
-  }
-}
 
 // MARK: - NoteGeneratorSyntax Display Helpers
 

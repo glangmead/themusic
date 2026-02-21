@@ -72,7 +72,7 @@ struct SongCell: View {
   let library = SongLibrary()
   let song = Song(
     name: "Aurora Borealis",
-    patternFileNames: ["aurora_arpeggio.json"]
+    patternFileName: "aurora_arpeggio.json"
   )
   library.songs = [song]
   _ = library.playbackState(for: song, engine: engine)

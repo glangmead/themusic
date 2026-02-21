@@ -17,13 +17,19 @@ struct PatternListView: View {
       } label: {
         VStack(alignment: .leading, spacing: 4) {
           Text(track.patternName)
-          HStack(spacing: 8) {
-            Text(track.patternSpec.noteGenerator.displayTypeName)
+          if let trackSpec = track.trackSpec {
+            HStack(spacing: 8) {
+              Text(trackSpec.noteGenerator.displayTypeName)
+                .font(.caption)
+                .foregroundStyle(.secondary)
+              Text(trackSpec.noteGenerator.displaySummary)
+                .font(.caption)
+                .foregroundStyle(.tertiary)
+            }
+          } else {
+            Text("MIDI")
               .font(.caption)
               .foregroundStyle(.secondary)
-            Text(track.patternSpec.noteGenerator.displaySummary)
-              .font(.caption)
-              .foregroundStyle(.tertiary)
           }
         }
       }
@@ -53,7 +59,7 @@ struct PatternListView: View {
   let engine = SpatialAudioEngine()
   let song = Song(
     name: "Aurora Borealis",
-    patternFileNames: ["aurora_arpeggio.json"]
+    patternFileName: "aurora_arpeggio.json"
   )
   let playbackState = SongPlaybackState(song: song, engine: engine)
   NavigationStack {

@@ -1,61 +1,66 @@
 {
   "name": "Aurora Arpeggio",
-  "presetFilename": "auroraBorealis",
-  "numVoices": 20,
-  "noteGenerator": {
-    "melodic": {
-      "scales": {
-        "candidates": ["lydian"],
-        "emission": "cyclic"
-      },
-      "roots": {
-        "candidates": ["C", "E", "G"],
-        "emission": {
-          "waiting": {
-            "iterator": "cyclic",
-            "timeBetweenChanges": { "rand": { "min": 10, "max": 25 } }
+  "proceduralTracks": [
+    {
+      "name": "Aurora Arpeggio",
+      "presetFilename": "auroraBorealis",
+      "numVoices": 20,
+      "noteGenerator": {
+        "melodic": {
+          "scales": {
+            "candidates": ["lydian"],
+            "emission": "cyclic"
+          },
+          "roots": {
+            "candidates": ["C", "E", "G"],
+            "emission": {
+              "waiting": {
+                "iterator": "cyclic",
+                "timeBetweenChanges": { "rand": { "min": 10, "max": 25 } }
+              }
+            }
+          },
+          "octaves": {
+            "candidates": [2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 5],
+            "emission": "random"
+          },
+          "degrees": {
+            "candidates": [0, 1, 2, 3, 4, 5, 6],
+            "emission": "shuffled"
           }
         }
       },
-      "octaves": {
-        "candidates": [2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 5],
-        "emission": "random"
-      },
-      "degrees": {
-        "candidates": [0, 1, 2, 3, 4, 5, 6],
-        "emission": "shuffled"
-      }
-    }
-  },
-  "sustain": { "random": { "min": 5.0, "max": 10.0 } },
-  "gap":     { "random": { "min": 0.2, "max": 0.5 } },
-  "modulators": [
-    {
-      "target": "overallAmp",
-      "arrow": { "exponentialRand": { "min": 0.3, "max": 0.6 } }
-    },
-    {
-      "target": "overallAmp2",
-      "arrow": { "reciprocal": { "of": {
-        "sum": { "of": [
-          {"prod": { "of": [
-            {"compose": {"arrows": [
-              { "identity": {} },
-              { "eventNote": {} }
-            ]}},
-            { "reciprocal": { "of": { "const": {"val": 12, "name": "twelve"} }}},
-          ]}},
-          {"const": {"val": 1, "name": "one"}}
-        ]}
-      }}}
-    },
-    {
-      "target": "vibratoAmp",
-      "arrow": { "exponentialRand": { "min": 0.0002, "max": 0.001 } }
-    },
-    {
-      "target": "vibratoFreq",
-      "arrow": { "rand": { "min": 1.0, "max": 25.0 } }
+      "sustain": { "random": { "min": 5.0, "max": 10.0 } },
+      "gap":     { "random": { "min": 0.2, "max": 0.5 } },
+      "modulators": [
+        {
+          "target": "overallAmp",
+          "arrow": { "exponentialRand": { "min": 0.3, "max": 0.6 } }
+        },
+        {
+          "target": "overallAmp2",
+          "arrow": { "reciprocal": { "of": {
+            "sum": { "of": [
+              {"prod": { "of": [
+                {"compose": {"arrows": [
+                  { "identity": {} },
+                  { "eventNote": {} }
+                ]}},
+                { "reciprocal": { "of": { "const": {"val": 12, "name": "twelve"} }}},
+              ]}},
+              {"const": {"val": 1, "name": "one"}}
+            ]}
+          }}}
+        },
+        {
+          "target": "vibratoAmp",
+          "arrow": { "exponentialRand": { "min": 0.0002, "max": 0.001 } }
+        },
+        {
+          "target": "vibratoFreq",
+          "arrow": { "rand": { "min": 1.0, "max": 25.0 } }
+        }
+      ]
     }
   ]
 }

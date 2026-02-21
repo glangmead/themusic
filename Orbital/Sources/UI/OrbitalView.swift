@@ -38,11 +38,11 @@ struct OrbitalView: View {
   library.songs = [
     Song(
       name: "Aurora Borealis",
-      patternFileNames: ["aurora_arpeggio.json"]
+      patternFileName: "aurora_arpeggio.json"
     ),
     Song(
       name: "Baroque Chords",
-      patternFileNames: ["baroque_chords.json"]
+      patternFileName: "baroque_chords.json"
     ),
   ]
   // Pre-create playback states so navigating to SongSettingsView works in Preview

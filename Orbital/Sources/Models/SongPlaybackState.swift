@@ -7,11 +7,12 @@
 
 import Foundation
 
-/// Per-track info exposed to the UI: the pattern name, its spec, and its compiled preset.
+/// Per-track info exposed to the UI: the track name, its spec, and its compiled preset.
+/// `trackSpec` is nil for MIDI tracks (their note data comes from the file).
 struct TrackInfo: Identifiable {
   let id: Int
   let patternName: String
-  var patternSpec: PatternSyntax
+  var trackSpec: ProceduralTrackSyntax?
   var presetSpec: PresetSyntax
   let spatialPreset: SpatialPreset
 }
@@ -29,9 +30,13 @@ class SongPlaybackState {
   /// Set when loading fails; shown as an alert to the user.
   var loadError: String?
   private var playbackTask: Task<Void, Never>? = nil
-  private var musicPatterns: MusicPatterns? = nil
+  /// Compiled pattern ready for playback.
+  private var compiledPattern: MusicPattern?
 
   private(set) var tracks: [TrackInfo] = []
+
+  /// The stored PatternSyntax, kept so we can rebuild after user edits.
+  private var patternSpec: PatternSyntax?
 
   /// The active note handler for this song's playback (first track, for visualizer).
   var noteHandler: NoteHandler? { tracks.first?.spatialPreset }
@@ -63,107 +68,84 @@ class SongPlaybackState {
   /// preset list is populated before the user hits play.
   /// When no engine is available, builds UI-only track info (no audio nodes).
   func loadTracks() async throws {
-    guard compiledPatterns.isEmpty else { return }
+    guard compiledPattern == nil else { return }
 
     // If tracks already exist (from a previous load), recompile from in-memory
-    // patternSpecs to preserve user edits across stop/play cycles.
+    // patternSpec to preserve user edits across stop/play cycles.
     if !tracks.isEmpty {
-      if engine != nil { try await recompileFromTracks() }
+      if engine != nil { try await recompileFromSpec() }
       return
     }
 
-    var compiled: [(MusicPattern, SpatialPreset)] = []
-    var trackInfos: [TrackInfo] = []
-    var nextTrackId = 0
+    let spec = Bundle.main.decode(
+      PatternSyntax.self,
+      from: song.patternFileName,
+      subdirectory: "patterns"
+    )
 
-    for patternFileName in song.patternFileNames {
-      let patternFile = Bundle.main.decode(
-        PatternFile.self,
-        from: patternFileName,
-        subdirectory: "patterns"
-      )
-
-      for patternSpec in patternFile.patterns {
-        let presetFileName = patternSpec.presetFilename + ".json"
-        let presetSpec = Bundle.main.decode(
-          PresetSyntax.self,
-          from: presetFileName,
-          subdirectory: "presets"
+    if let engine {
+      let (pattern, infos) = try await spec.compile(engine: engine)
+      compiledPattern = pattern
+      tracks = infos.enumerated().map { i, info in
+        TrackInfo(
+          id: i,
+          patternName: info.patternName,
+          trackSpec: info.trackSpec,
+          presetSpec: info.presetSpec,
+          spatialPreset: info.spatialPreset
         )
-
-        if let engine {
-          // Full compilation with audio engine
-          if let multiTracks = try await patternSpec.compileMultiTrack(presetSpec: presetSpec, engine: engine) {
-            for entry in multiTracks {
-              compiled.append((entry.pattern, entry.spatialPreset))
-              trackInfos.append(TrackInfo(
-                id: nextTrackId,
-                patternName: entry.trackName,
-                patternSpec: patternSpec,
-                presetSpec: entry.spatialPreset.presetSpec,
-                spatialPreset: entry.spatialPreset
-              ))
-              nextTrackId += 1
-            }
-          } else {
-            let (pattern, sp) = try await patternSpec.compile(
-              presetSpec: presetSpec,
-              engine: engine
-            )
-            compiled.append((pattern, sp))
-            trackInfos.append(TrackInfo(
-              id: nextTrackId,
-              patternName: patternSpec.name,
-              patternSpec: patternSpec,
-              presetSpec: presetSpec,
-              spatialPreset: sp
-            ))
-            nextTrackId += 1
-          }
-        } else {
-          // UI-only: build TrackInfo with lightweight SpatialPreset (no audio nodes)
-          let sp = SpatialPreset(presetSpec: presetSpec, numVoices: patternSpec.numVoices ?? 12)
-          trackInfos.append(TrackInfo(
-            id: nextTrackId,
-            patternName: patternSpec.name,
-            patternSpec: patternSpec,
-            presetSpec: presetSpec,
-            spatialPreset: sp
-          ))
-          nextTrackId += 1
-        }
+      }
+    } else {
+      // UI-only: build TrackInfo without audio nodes
+      let infos = spec.compileTrackInfoOnly()
+      tracks = infos.enumerated().map { i, info in
+        TrackInfo(
+          id: i,
+          patternName: info.patternName,
+          trackSpec: info.trackSpec,
+          presetSpec: info.presetSpec,
+          spatialPreset: info.spatialPreset
+        )
       }
     }
 
-    tracks = trackInfos
-    compiledPatterns = compiled
+    patternSpec = spec
   }
 
-  /// Recompile patterns from the existing in-memory tracks (preserves user edits).
-  private func recompileFromTracks() async throws {
-    guard let engine else { return }
-    var compiled: [(MusicPattern, SpatialPreset)] = []
-    for track in tracks {
-      let presetFileName = track.patternSpec.presetFilename + ".json"
-      let presetSpec = Bundle.main.decode(
-        PresetSyntax.self,
-        from: presetFileName,
-        subdirectory: "presets"
+  /// Recompile from the stored in-memory spec (preserves user edits).
+  private func recompileFromSpec() async throws {
+    guard let engine, let spec = patternSpec else { return }
+    let (pattern, infos) = try await spec.compile(engine: engine)
+    compiledPattern = pattern
+    tracks = infos.enumerated().map { i, info in
+      TrackInfo(
+        id: i,
+        patternName: info.patternName,
+        trackSpec: info.trackSpec,
+        presetSpec: info.presetSpec,
+        spatialPreset: info.spatialPreset
       )
-      let (pattern, sp) = try await track.patternSpec.compile(
-        presetSpec: presetSpec,
-        engine: engine
-      )
-      compiled.append((pattern, sp))
     }
-    compiledPatterns = compiled
   }
 
-  /// Replace the pattern spec for a given track. Takes effect on next play().
-  func replacePattern(trackId: Int, newPatternSpec: PatternSyntax) {
+  /// Replace the procedural track spec for a given track. Takes effect on next play().
+  func replaceTrack(trackId: Int, newTrackSpec: ProceduralTrackSyntax) {
     guard let idx = tracks.firstIndex(where: { $0.id == trackId }) else { return }
-    tracks[idx].patternSpec = newPatternSpec
-    compiledPatterns = []  // Force recompilation on next play()
+    tracks[idx].trackSpec = newTrackSpec
+    updatePatternSpec(forTrackAt: idx, newTrackSpec: newTrackSpec)
+    compiledPattern = nil
+  }
+
+  /// Update the ProceduralTrackSyntax at the given index in the stored PatternSyntax.
+  private func updatePatternSpec(forTrackAt trackIdx: Int, newTrackSpec: ProceduralTrackSyntax) {
+    guard let spec = patternSpec, var procedural = spec.proceduralTracks else { return }
+    guard trackIdx >= 0 && trackIdx < procedural.count else { return }
+    procedural[trackIdx] = newTrackSpec
+    patternSpec = PatternSyntax(
+      name: spec.name,
+      proceduralTracks: procedural,
+      midiTracks: nil
+    )
   }
 
   /// Stop and immediately restart playback (applies any pending edits).
@@ -171,9 +153,6 @@ class SongPlaybackState {
     stop()
     play()
   }
-
-  /// Patterns compiled by loadTracks(), consumed by play().
-  private var compiledPatterns: [(MusicPattern, SpatialPreset)] = []
 
   func play() {
     guard !isPlaying, !isLoading, let engine else { return }
@@ -195,36 +174,33 @@ class SongPlaybackState {
           track.spatialPreset.detachNodes()
         }
         tracks = []
-        compiledPatterns = []
+        compiledPattern = nil
         loadError = error.localizedDescription
         isLoading = false
         return
       }
 
-      let mp = MusicPatterns()
-      musicPatterns = mp
-      let compiled = compiledPatterns
-
       try? engine.start()
       isLoading = false
       isPlaying = true
 
-      await mp.addPatterns(compiled)
-      await mp.playAll()
+      await compiledPattern?.play()
     }
   }
 
   func pause() {
     guard isPlaying, !isPaused else { return }
-    let mp = musicPatterns
-    Task { await mp?.pause() }
+    if let pattern = compiledPattern {
+      Task { await pattern.setPaused(true) }
+    }
     isPaused = true
   }
 
   func resume() {
     guard isPlaying, isPaused else { return }
-    let mp = musicPatterns
-    Task { await mp?.resume() }
+    if let pattern = compiledPattern {
+      Task { await pattern.setPaused(false) }
+    }
     isPaused = false
   }
 
@@ -244,8 +220,7 @@ class SongPlaybackState {
     for track in tracks {
       track.spatialPreset.detachNodes()
     }
-    musicPatterns = nil
-    compiledPatterns = []
+    compiledPattern = nil
     isLoading = false
     isPlaying = false
     isPaused = false

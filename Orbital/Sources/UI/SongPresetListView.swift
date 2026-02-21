@@ -64,7 +64,7 @@ struct SongPresetListView: View {
   let engine = SpatialAudioEngine()
   let song = Song(
     name: "Aurora Borealis",
-    patternFileNames: ["aurora_arpeggio.json"]
+    patternFileName: "aurora_arpeggio.json"
   )
   let playbackState = SongPlaybackState(song: song, engine: engine)
   NavigationStack {

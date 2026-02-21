@@ -92,7 +92,7 @@ private struct RoseSliders: View {
 
 #Preview("Spatial Form") {
   let engine = SpatialAudioEngine()
-  let song = Song(name: "Preview Song", patternFileNames: ["aurora_arpeggio.json"])
+  let song = Song(name: "Preview Song", patternFileName: "aurora_arpeggio.json")
   let state = SongPlaybackState(song: song, engine: engine)
   NavigationStack {
     SpatialFormView()

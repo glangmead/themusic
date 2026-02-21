@@ -57,7 +57,9 @@ struct MusicEvent {
 
     // Set up EventUsingArrow references
     for (_, modulatingArrow) in modulators {
-      if let handleWH = modulatingArrow as? ArrowWithHandles {
+      if let eventUsingArrow = modulatingArrow as? EventUsingArrow {
+        eventUsingArrow.event = self
+      } else if let handleWH = modulatingArrow as? ArrowWithHandles {
         for eventUsingArrowList in handleWH.namedEventUsing.values {
           for eventUsingArrow in eventUsingArrowList {
             eventUsingArrow.event = self
@@ -338,59 +340,71 @@ struct FloatSampler: Sequence, IteratorProtocol {
   }
 }
 
-// the ingredients for generating music events
+/// A multi-track generative music pattern. Each track has its own preset,
+/// note generator, timing, and modulators, and runs concurrently.
 actor MusicPattern {
-  let spatialPreset: SpatialPreset
-  var modulators: [String: Arrow11] // modulates constants in the preset
-  var notes: any IteratorProtocol<[MidiNote]> // a sequence of chords
-  var sustains: any IteratorProtocol<CoreFloat> // a sequence of sustain lengths
-  var gaps: any IteratorProtocol<CoreFloat> // a sequence of sustain lengths
-  var timeOrigin: Double
-  let clock: any Clock<Duration>
-  var isPaused: Bool = false
-  
-  init(
-    spatialPreset: SpatialPreset,
-    modulators: [String : Arrow11],
-    notes: any IteratorProtocol<[MidiNote]>,
-    sustains: any IteratorProtocol<CoreFloat>,
-    gaps: any IteratorProtocol<CoreFloat>,
-    clock: any Clock<Duration> = ContinuousClock()
-  ){
-    self.spatialPreset = spatialPreset
-    self.modulators = modulators
-    self.notes = notes
-    self.sustains = sustains
-    self.gaps = gaps
-    self.timeOrigin = Date.now.timeIntervalSince1970
-    self.clock = clock
+  /// State for a single track within the pattern.
+  struct Track {
+    let spatialPreset: SpatialPreset
+    let modulators: [String: Arrow11]
+    var notes: any IteratorProtocol<[MidiNote]>
+    var sustains: any IteratorProtocol<CoreFloat>
+    var gaps: any IteratorProtocol<CoreFloat>
+    let name: String
   }
-  
+
+  private var tracks: [Track]
+  private let clock: any Clock<Duration>
+  var timeOrigin: Double
+  var isPaused: Bool = false
+
+  init(tracks: [Track], clock: any Clock<Duration> = ContinuousClock()) {
+    self.tracks = tracks
+    self.clock = clock
+    self.timeOrigin = Date.now.timeIntervalSince1970
+  }
+
   func setPaused(_ paused: Bool) {
     self.isPaused = paused
     if paused {
-      spatialPreset.allNotesOff()
+      for track in tracks {
+        track.spatialPreset.allNotesOff()
+      }
     }
   }
-  
-  func next() async -> MusicEvent? {
-    let noteHandler: NoteHandler = spatialPreset
-    guard let notes = notes.next() else { return nil }
-    guard let sustain = sustains.next() else { return nil }
-    guard let gap = gaps.next() else { return nil }
-    
+
+  /// Generate the next event for a specific track.
+  private func nextEvent(trackIndex: Int) -> MusicEvent? {
+    guard trackIndex < tracks.count else { return nil }
+    guard let notes = tracks[trackIndex].notes.next() else { return nil }
+    guard let sustain = tracks[trackIndex].sustains.next() else { return nil }
+    guard let gap = tracks[trackIndex].gaps.next() else { return nil }
+
     return MusicEvent(
-      noteHandler: noteHandler,
+      noteHandler: tracks[trackIndex].spatialPreset,
       notes: notes,
       sustain: sustain,
       gap: gap,
-      modulators: modulators,
+      modulators: tracks[trackIndex].modulators,
       timeOrigin: timeOrigin,
       clock: clock
     )
   }
-  
+
+  /// Play all tracks concurrently. Each track runs its own event loop.
+  /// Cancelling the calling task propagates to all track tasks.
   func play() async {
+    await withTaskGroup(of: Void.self) { group in
+      for trackIndex in tracks.indices {
+        group.addTask { [self] in
+          await self.playTrack(trackIndex)
+        }
+      }
+    }
+  }
+
+  /// Event loop for a single track.
+  private func playTrack(_ trackIndex: Int) async {
     await withTaskGroup(of: Void.self) { group in
       while !Task.isCancelled {
         // Wait while paused, checking cancellation periodically
@@ -403,7 +417,7 @@ actor MusicPattern {
           }
         }
         guard !Task.isCancelled else { return }
-        guard var event = await next() else { return }
+        guard var event = nextEvent(trackIndex: trackIndex) else { return }
         group.addTask {
           try? await event.play()
         }
@@ -415,58 +429,19 @@ actor MusicPattern {
       }
     }
   }
-}
-/// Container for multiple MusicPatterns, each with its own SpatialPreset.
-/// Supports multi-track generative playback with pause/resume.
-actor MusicPatterns {
-  private var patterns: [(MusicPattern, SpatialPreset)] = []
 
-  func addPattern(_ pattern: MusicPattern, spatialPreset: SpatialPreset) {
-    patterns.append((pattern, spatialPreset))
-  }
-
-  func addPatterns(_ newPatterns: [(MusicPattern, SpatialPreset)]) {
-    patterns.append(contentsOf: newPatterns)
-  }
-
-  /// Play all patterns concurrently using structured concurrency.
-  /// Cancelling the calling task propagates to all pattern tasks.
-  func playAll() async {
-    await withTaskGroup(of: Void.self) { group in
-      for (pattern, _) in patterns {
-        group.addTask {
-          await pattern.play()
-        }
-      }
-    }
-  }
-
-  func pause() async {
-    for (pattern, _) in patterns {
-      await pattern.setPaused(true)
-    }
-  }
-
-  func resume() async {
-    for (pattern, _) in patterns {
-      await pattern.setPaused(false)
-    }
-  }
-  
-  /// Detach audio nodes but keep Preset objects alive for UI access.
+  /// Detach audio nodes from all tracks.
   func detachNodes() {
-    for (_, spatialPreset) in patterns {
-      spatialPreset.detachNodes()
+    for track in tracks {
+      track.spatialPreset.detachNodes()
     }
-    patterns.removeAll()
   }
 
   /// Full teardown: detach nodes and destroy Preset objects.
   func cleanup() {
-    for (_, spatialPreset) in patterns {
-      spatialPreset.cleanup()
+    for track in tracks {
+      track.spatialPreset.cleanup()
     }
-    patterns.removeAll()
   }
 }
 

@@ -88,7 +88,7 @@ The project has a strict layered architecture. Lower layers must not reference o
 3. **VoiceLedger**: Note-to-voice-index allocator using Set-based availability tracking and queue-based reuse ordering. Used at both the Preset level (polyphony) and SpatialPreset level (spatial routing)
 4. **Preset** (`NoteHandler`): A polyphonic sound source plus effects chain (reverb, delay, distortion, mixer). For Arrow presets: compiles N copies of an `ArrowSyntax`, sums via `ArrowSum`, wraps in `AudioGate`, owns a `VoiceLedger` for voice allocation. For Sampler presets: wraps one `AVAudioUnitSampler` with a 1-voice `VoiceLedger` for note tracking. Exposes merged `handles` from all internal voices. Created from JSON via `PresetSyntax.compile(numVoices:)`
 5. **SpatialPreset** (`NoteHandler`): Spatial audio distributor. Owns N Presets (typically 12), each at a different spatial position. Routes notes to Presets via a spatial-level `VoiceLedger`. Aggregates `handles` from all Presets. `notesOn`/`notesOff` chord API with `independentSpatial` parameter for per-note spatial ownership. For Arrow presets: 12 Presets x 1 voice each. For Sampler presets: 12 Presets x 1 sampler each (one note per spatial position)
-6. **Music Generation**: `Sequencer` (wraps `AVAudioSequencer`, per-track `NoteHandler` routing via `setHandler(_:forTrack:)`), `MusicPattern`/`MusicPatterns` (generative playback using `SpatialPreset`)
+6. **Music Generation**: `Sequencer` (wraps `AVAudioSequencer`, per-track `NoteHandler` routing via `setHandler(_:forTrack:)`), `MusicPattern` (multi-track generative playback using `SpatialPreset`)
 
 ## Key file map
 
@@ -102,7 +102,8 @@ The project has a strict layered architecture. Lower layers must not reference o
 - `AppleAudio/AVAudioSourceNode+withSource.swift` — Real-time audio render callback bridging Arrow11 output to `AVAudioSourceNode`
 - `AppleAudio/SpatialAudioEngine.swift` — Audio engine with `AVAudioEnvironmentNode` for HRTF spatial audio
 - `AppleAudio/Sequencer.swift` — MIDI file playback via `AVAudioSequencer`
-- `Generators/Pattern.swift` — `MusicEvent`, `MusicPattern`, `MusicPatterns` (generative playback)
+- `Generators/Pattern.swift` — `MusicEvent`, `MusicPattern` (multi-track generative playback with `Track` struct)
+- `Generators/PatternSyntax.swift` — `PatternSyntax` (Codable JSON spec with `proceduralTracks`/`midiTracks`), `ProceduralTrackSyntax`, `MidiTracksSyntax`, `compile(engine:clock:)`
 - `Synths/ArrowHandler.swift` — `ArrowHandler` (`@Observable`): dynamic parameter binding from `ArrowSyntax` descriptors to `ArrowWithHandles` write-through. `ArrowParamKind`, `ArrowParamDescriptor`, `ArrowSyntax.parameterDescriptors()`
 - `Synths/SyntacticSynth.swift` — Lifecycle wrapper owning a `SpatialPreset` and `ArrowHandler`, plus rose\/effects properties
 

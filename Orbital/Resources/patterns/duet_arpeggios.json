@@ -1,78 +1,81 @@
-[
-  {
-    "name": "Lydian Shimmer",
-    "presetFilename": "auroraBorealis",
-    "numVoices": 16,
-    "noteGenerator": {
-      "melodic": {
-        "scales": {
-          "candidates": ["lydian"],
-          "emission": "cyclic"
-        },
-        "roots": {
-          "candidates": ["C", "G"],
-          "emission": {
-            "waiting": {
-              "iterator": "cyclic",
-              "timeBetweenChanges": { "rand": { "min": 12, "max": 20 } }
+{
+  "name": "Duet Arpeggios",
+  "proceduralTracks": [
+    {
+      "name": "Lydian Shimmer",
+      "presetFilename": "auroraBorealis",
+      "numVoices": 16,
+      "noteGenerator": {
+        "melodic": {
+          "scales": {
+            "candidates": ["lydian"],
+            "emission": "cyclic"
+          },
+          "roots": {
+            "candidates": ["C", "G"],
+            "emission": {
+              "waiting": {
+                "iterator": "cyclic",
+                "timeBetweenChanges": { "rand": { "min": 12, "max": 20 } }
+              }
             }
+          },
+          "octaves": {
+            "candidates": [3, 3, 4, 4, 4, 5, 5],
+            "emission": "random"
+          },
+          "degrees": {
+            "candidates": [0, 1, 2, 3, 4, 5, 6],
+            "emission": "shuffled"
           }
-        },
-        "octaves": {
-          "candidates": [3, 3, 4, 4, 4, 5, 5],
-          "emission": "random"
-        },
-        "degrees": {
-          "candidates": [0, 1, 2, 3, 4, 5, 6],
-          "emission": "shuffled"
         }
-      }
+      },
+      "sustain": { "random": { "min": 4.0, "max": 8.0 } },
+      "gap":     { "random": { "min": 0.15, "max": 0.6 } },
+      "modulators": [
+        {
+          "target": "overallAmp",
+          "arrow": { "exponentialRand": { "min": 0.25, "max": 0.5 } }
+        }
+      ]
     },
-    "sustain": { "random": { "min": 4.0, "max": 8.0 } },
-    "gap":     { "random": { "min": 0.15, "max": 0.6 } },
-    "modulators": [
-      {
-        "target": "overallAmp",
-        "arrow": { "exponentialRand": { "min": 0.25, "max": 0.5 } }
-      }
-    ]
-  },
-  {
-    "name": "Dorian Bass",
-    "presetFilename": "prophet_brass",
-    "numVoices": 8,
-    "noteGenerator": {
-      "melodic": {
-        "scales": {
-          "candidates": ["dorian"],
-          "emission": "cyclic"
-        },
-        "roots": {
-          "candidates": ["C", "G"],
-          "emission": {
-            "waiting": {
-              "iterator": "cyclic",
-              "timeBetweenChanges": { "rand": { "min": 12, "max": 20 } }
+    {
+      "name": "Dorian Bass",
+      "presetFilename": "prophet_brass",
+      "numVoices": 8,
+      "noteGenerator": {
+        "melodic": {
+          "scales": {
+            "candidates": ["dorian"],
+            "emission": "cyclic"
+          },
+          "roots": {
+            "candidates": ["C", "G"],
+            "emission": {
+              "waiting": {
+                "iterator": "cyclic",
+                "timeBetweenChanges": { "rand": { "min": 12, "max": 20 } }
+              }
             }
+          },
+          "octaves": {
+            "candidates": [2, 2, 3, 3],
+            "emission": "random"
+          },
+          "degrees": {
+            "candidates": [0, 2, 4, 6],
+            "emission": "shuffled"
           }
-        },
-        "octaves": {
-          "candidates": [2, 2, 3, 3],
-          "emission": "random"
-        },
-        "degrees": {
-          "candidates": [0, 2, 4, 6],
-          "emission": "shuffled"
         }
-      }
-    },
-    "sustain": { "random": { "min": 2.0, "max": 5.0 } },
-    "gap":     { "random": { "min": 1.0, "max": 3.0 } },
-    "modulators": [
-      {
-        "target": "overallAmp",
-        "arrow": { "exponentialRand": { "min": 0.3, "max": 0.55 } }
-      }
-    ]
-  }
-]
+      },
+      "sustain": { "random": { "min": 2.0, "max": 5.0 } },
+      "gap":     { "random": { "min": 1.0, "max": 3.0 } },
+      "modulators": [
+        {
+          "target": "overallAmp",
+          "arrow": { "exponentialRand": { "min": 0.3, "max": 0.55 } }
+        }
+      ]
+    }
+  ]
+}
