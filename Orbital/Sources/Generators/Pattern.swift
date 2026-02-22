@@ -340,6 +340,188 @@ struct FloatSampler: Sequence, IteratorProtocol {
   }
 }
 
+// MARK: - LatchingIterator
+
+/// An iterator wrapper that caches its last value for a short window.
+/// Multiple callers within the window receive the same value without
+/// advancing the inner iterator. After the window expires, the next
+/// call advances the inner iterator and starts a new latch window.
+/// Used for shared emitter instances across tracks (~15ms = 1/64 second).
+class LatchingIterator<Element>: Sequence, IteratorProtocol {
+  private var inner: any IteratorProtocol<Element>
+  private var cachedValue: Element?
+  private var lastAdvanceTime: TimeInterval = 0
+  private let latchDuration: TimeInterval
+
+  init(inner: any IteratorProtocol<Element>, latchDuration: TimeInterval = 1.0 / 64.0) {
+    self.inner = inner
+    self.latchDuration = latchDuration
+  }
+
+  func next() -> Element? {
+    let now = Date.now.timeIntervalSince1970
+    if let cached = cachedValue, (now - lastAdvanceTime) < latchDuration {
+      return cached
+    }
+    cachedValue = inner.next()
+    lastAdvanceTime = now
+    return cachedValue
+  }
+}
+
+// MARK: - IntSampler
+
+/// Generates random integers in a range. Stateless — safe with any update mode.
+struct IntSampler: Sequence, IteratorProtocol {
+  let min: Int
+  let max: Int
+
+  func next() -> Int? {
+    Int.random(in: min...max)
+  }
+}
+
+// MARK: - ExponentialFloatSampler
+
+/// Log-uniform sampling: values are distributed exponentially across [min, max].
+/// Useful for parameters that span multiple orders of magnitude (e.g. frequencies).
+struct ExponentialFloatSampler: Sequence, IteratorProtocol {
+  let min: CoreFloat
+  let max: CoreFloat
+
+  func next() -> CoreFloat? {
+    guard min > 0, max > min else { return min }
+    return min * exp(CoreFloat.random(in: 0...1) * log(max / min))
+  }
+}
+
+// MARK: - MutableParam
+
+/// A mutable parameter holder for emitters, enabling meta-modulation.
+/// When a modulator targets "emitterName.arg1", the compiler wires
+/// the modulating arrow to write to this object's `val` property.
+/// The emitter reads `val` on each `next()` call.
+final class MutableParam {
+  var val: CoreFloat
+  init(_ val: CoreFloat) { self.val = val }
+}
+
+// MARK: - MutableFloatSampler
+
+/// A FloatSampler variant whose min/max can be changed at runtime
+/// via MutableParam references, enabling meta-modulation.
+struct MutableFloatSampler: Sequence, IteratorProtocol {
+  let minParam: MutableParam
+  let maxParam: MutableParam
+
+  func next() -> CoreFloat? {
+    let lo = minParam.val
+    let hi = maxParam.val
+    guard hi > lo else { return lo }
+    return CoreFloat.random(in: lo...hi)
+  }
+}
+
+// MARK: - EmitterArrow
+
+/// Bridges a float emitter (IteratorProtocol<CoreFloat>) into an Arrow11
+/// so it can be used as a modulator in the existing MusicEvent pipeline.
+final class EmitterArrow: Arrow11 {
+  private var emitter: any IteratorProtocol<CoreFloat>
+
+  init(emitter: any IteratorProtocol<CoreFloat>) {
+    self.emitter = emitter
+    super.init()
+  }
+
+  override func of(_ t: CoreFloat) -> CoreFloat {
+    emitter.next() ?? 0
+  }
+}
+
+// MARK: - SumIterator
+
+/// Sums the next() values of multiple float emitters.
+struct SumIterator: Sequence, IteratorProtocol {
+  var sources: [any IteratorProtocol<CoreFloat>]
+
+  mutating func next() -> CoreFloat? {
+    var total: CoreFloat = 0
+    for i in sources.indices {
+      total += sources[i].next() ?? 0
+    }
+    return total
+  }
+}
+
+// MARK: - ReciprocalIterator
+
+/// Returns 1/x of the next() value from a source emitter.
+struct ReciprocalIterator: Sequence, IteratorProtocol {
+  var source: any IteratorProtocol<CoreFloat>
+
+  mutating func next() -> CoreFloat? {
+    guard let val = source.next(), val != 0 else { return 0 }
+    return 1.0 / val
+  }
+}
+
+// MARK: - IndexPickerIterator
+
+/// Uses an int emitter to pick elements from a fixed array.
+class IndexPickerIterator<Element>: Sequence, IteratorProtocol {
+  private var indexEmitter: any IteratorProtocol<Int>
+  private let items: [Element]
+
+  init(items: [Element], indexEmitter: any IteratorProtocol<Int>) {
+    self.items = items
+    self.indexEmitter = indexEmitter
+  }
+
+  func next() -> Element? {
+    guard !items.isEmpty else { return nil }
+    guard let idx = indexEmitter.next() else { return nil }
+    let clamped = Swift.max(0, Swift.min(idx, items.count - 1))
+    return items[clamped]
+  }
+}
+
+// MARK: - TableNoteGenerator
+
+/// Generates [MidiNote] from table-based note material.
+/// On each next(), picks an interval entry (single degree or chord),
+/// resolves each degree against the current scale/root/octave to produce MIDI notes.
+struct TableNoteGenerator: Sequence, IteratorProtocol {
+  let intervalMaterial: [[Int]]
+  var intervalPicker: any IteratorProtocol<Int>
+  var scaleEmitter: any IteratorProtocol<Scale>
+  var rootEmitter: any IteratorProtocol<NoteClass>
+  var octaveEmitter: any IteratorProtocol<Int>
+
+  mutating func next() -> [MidiNote]? {
+    guard !intervalMaterial.isEmpty else { return nil }
+    guard let idx = intervalPicker.next() else { return nil }
+    let clamped = Swift.max(0, Swift.min(idx, intervalMaterial.count - 1))
+    let degrees = intervalMaterial[clamped]
+
+    guard let scale = scaleEmitter.next() else { return nil }
+    guard let root = rootEmitter.next() else { return nil }
+    guard let octave = octaveEmitter.next() else { return nil }
+
+    let rootNote = Note(root.letter, accidental: root.accidental, octave: octave)
+
+    var notes: [MidiNote] = []
+    for degree in degrees {
+      let clampedDegree = Swift.max(0, Swift.min(degree, scale.intervals.count - 1))
+      let interval = scale.intervals[clampedDegree]
+      if let shifted = rootNote.shiftUp(interval) {
+        notes.append(MidiNote(note: MidiValue(shifted.noteNumber), velocity: 127))
+      }
+    }
+    return notes.isEmpty ? nil : notes
+  }
+}
+
 /// A multi-track generative music pattern. Each track has its own preset,
 /// note generator, timing, and modulators, and runs concurrently.
 actor MusicPattern {

@@ -33,6 +33,10 @@ class SongLibrary {
       name: "Duet Arpeggios",
       patternFileName: "duet_arpeggios.json"
     ),
+    Song(
+      name: "Table Aurora",
+      patternFileName: "table_aurora.json"
+    ),
   ]
 
   /// Playback states keyed by Song.id, created lazily by SongCells.

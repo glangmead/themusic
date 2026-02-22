@@ -17,26 +17,40 @@ struct SongSettingsView: View {
     List {
       // MARK: - Patterns
       Section("Patterns") {
-        ForEach(playbackState.tracks) { track in
+        if let table = playbackState.tablePattern {
           NavigationLink {
-            PatternFormView(track: track)
+            TablePatternFormView(table: table)
               .environment(playbackState)
           } label: {
             VStack(alignment: .leading, spacing: 4) {
-              Text(track.patternName)
-              if let trackSpec = track.trackSpec {
-                HStack(spacing: 8) {
-                  Text(trackSpec.noteGenerator.displayTypeName)
+              Text(table.name)
+              Text("Table Pattern — \(table.tracks.count) track(s)")
+                .font(.caption)
+                .foregroundStyle(.secondary)
+            }
+          }
+        } else {
+          ForEach(playbackState.tracks) { track in
+            NavigationLink {
+              PatternFormView(track: track)
+                .environment(playbackState)
+            } label: {
+              VStack(alignment: .leading, spacing: 4) {
+                Text(track.patternName)
+                if let trackSpec = track.trackSpec {
+                  HStack(spacing: 8) {
+                    Text(trackSpec.noteGenerator.displayTypeName)
+                      .font(.caption)
+                      .foregroundStyle(.secondary)
+                    Text(trackSpec.noteGenerator.displaySummary)
+                      .font(.caption)
+                      .foregroundStyle(.tertiary)
+                  }
+                } else {
+                  Text("MIDI")
                     .font(.caption)
                     .foregroundStyle(.secondary)
-                  Text(trackSpec.noteGenerator.displaySummary)
-                    .font(.caption)
-                    .foregroundStyle(.tertiary)
                 }
-              } else {
-                Text("MIDI")
-                  .font(.caption)
-                  .foregroundStyle(.secondary)
               }
             }
           }

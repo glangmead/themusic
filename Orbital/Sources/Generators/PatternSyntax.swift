@@ -482,6 +482,7 @@ struct PatternSyntax: Codable {
   let name: String
   let proceduralTracks: [ProceduralTrackSyntax]?
   let midiTracks: MidiTracksSyntax?
+  let tableTracks: TablePatternSyntax?
 
   /// Compile all tracks into a single MusicPattern. Returns the pattern
   /// plus a TrackInfo array for the UI (built at compile time so
@@ -491,8 +492,10 @@ struct PatternSyntax: Codable {
       return try await compileProceduralTracks(procedural, engine: engine, clock: clock)
     } else if let midi = midiTracks {
       return try await compileMidiTracks(midi, engine: engine, clock: clock)
+    } else if let table = tableTracks {
+      return try await TablePatternCompiler.compile(table, engine: engine, clock: clock)
     } else {
-      fatalError("PatternSyntax '\(name)' has neither proceduralTracks nor midiTracks")
+      fatalError("PatternSyntax '\(name)' has no tracks")
     }
   }
 
@@ -528,6 +531,8 @@ struct PatternSyntax: Codable {
         ))
         nextId += 1
       }
+    } else if let table = tableTracks {
+      return TablePatternCompiler.compileTrackInfoOnly(table)
     }
     return infos
   }

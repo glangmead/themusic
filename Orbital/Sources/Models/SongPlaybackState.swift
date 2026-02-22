@@ -144,7 +144,8 @@ class SongPlaybackState {
     patternSpec = PatternSyntax(
       name: spec.name,
       proceduralTracks: procedural,
-      midiTracks: nil
+      midiTracks: nil,
+      tableTracks: nil
     )
   }
 
@@ -224,5 +225,27 @@ class SongPlaybackState {
     isLoading = false
     isPlaying = false
     isPaused = false
+  }
+
+  /// Whether the pattern uses the table-based definition.
+  var hasTablePattern: Bool {
+    patternSpec?.tableTracks != nil
+  }
+
+  /// The table pattern syntax, if this is a table-based pattern.
+  var tablePattern: TablePatternSyntax? {
+    patternSpec?.tableTracks
+  }
+
+  /// Replace the table pattern definition. Takes effect on next play().
+  func replaceTablePattern(_ newTable: TablePatternSyntax) {
+    guard let spec = patternSpec else { return }
+    patternSpec = PatternSyntax(
+      name: spec.name,
+      proceduralTracks: nil,
+      midiTracks: nil,
+      tableTracks: newTable
+    )
+    compiledPattern = nil
   }
 }

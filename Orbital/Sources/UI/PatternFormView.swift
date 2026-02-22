@@ -683,7 +683,8 @@ struct PatternFormView: View {
     let patternSyntax = PatternSyntax(
       name: name,
       proceduralTracks: [spec],
-      midiTracks: nil
+      midiTracks: nil,
+      tableTracks: nil
     )
     PatternStorage.save(patternSyntax, filename: filename)
   }

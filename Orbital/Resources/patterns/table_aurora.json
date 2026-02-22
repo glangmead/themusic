@@ -1,0 +1,120 @@
+{
+  "name": "Table Aurora",
+  "tableTracks": {
+    "name": "Table Aurora",
+    "emitters": [
+      {
+        "name": "timer",
+        "outputType": "float",
+        "function": "randFloat",
+        "arg1": 10,
+        "arg2": 25
+      },
+      {
+        "name": "rootPicker",
+        "outputType": "int",
+        "function": "randInt",
+        "arg1": 0,
+        "arg2": 2
+      },
+      {
+        "name": "roots",
+        "outputType": "root",
+        "function": { "indexPicker": { "emitter": "rootPicker" } },
+        "candidates": ["C", "E", "G"],
+        "updateMode": { "waiting": { "emitter": "timer" } }
+      },
+      {
+        "name": "octaves",
+        "outputType": "octave",
+        "function": "random",
+        "candidates": ["2", "2", "2", "2", "2", "2", "3", "3", "3", "3", "3", "3", "3", "3", "4", "4", "4", "5"]
+      },
+      {
+        "name": "scales",
+        "outputType": "scale",
+        "function": "cyclic",
+        "candidates": ["lydian"]
+      },
+      {
+        "name": "degreePicker",
+        "outputType": "int",
+        "function": "shuffle",
+        "candidates": ["0", "1", "2", "3", "4", "5", "6"]
+      },
+      {
+        "name": "overallAmpVal",
+        "outputType": "float",
+        "function": "exponentialRandFloat",
+        "arg1": 0.3,
+        "arg2": 0.6
+      },
+      {
+        "name": "vibratoAmpVal",
+        "outputType": "float",
+        "function": "exponentialRandFloat",
+        "arg1": 0.0002,
+        "arg2": 0.001
+      },
+      {
+        "name": "vibratoFreqVal",
+        "outputType": "float",
+        "function": "randFloat",
+        "arg1": 1,
+        "arg2": 25
+      },
+      {
+        "name": "sustain",
+        "outputType": "float",
+        "function": "randFloat",
+        "arg1": 5,
+        "arg2": 10
+      },
+      {
+        "name": "gap",
+        "outputType": "float",
+        "function": "randFloat",
+        "arg1": 0.2,
+        "arg2": 0.5
+      }
+    ],
+    "noteMaterials": [
+      {
+        "name": "melody",
+        "intervalMaterial": [[0], [1], [2], [3], [4], [5], [6]],
+        "intervalPicker": "degreePicker",
+        "octaveEmitter": "octaves",
+        "scaleEmitter": "scales",
+        "scaleRootEmitter": "roots"
+      }
+    ],
+    "modulators": [
+      {
+        "name": "ampMod",
+        "targetHandle": "overallAmp",
+        "floatEmitter": "overallAmpVal"
+      },
+      {
+        "name": "vibAmpMod",
+        "targetHandle": "vibratoAmp",
+        "floatEmitter": "vibratoAmpVal"
+      },
+      {
+        "name": "vibFreqMod",
+        "targetHandle": "vibratoFreq",
+        "floatEmitter": "vibratoFreqVal"
+      }
+    ],
+    "tracks": [
+      {
+        "name": "Table Aurora",
+        "presetFilename": "auroraBorealis",
+        "numVoices": 3,
+        "modulatorNames": ["ampMod", "vibAmpMod", "vibFreqMod"],
+        "noteMaterial": "melody",
+        "sustainEmitter": "sustain",
+        "gapEmitter": "gap"
+      }
+    ]
+  }
+}
