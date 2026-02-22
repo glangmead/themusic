@@ -236,14 +236,12 @@ struct VisualizerView: View {
         WebView(holder.page)
           .ignoresSafeArea()
 
-        // Tap-to-show-controls when hidden
-        if !controlsVisible {
-          Color.clear
-            .contentShape(.rect)
-            .onTapGesture {
-              withAnimation { controlsVisible = true }
-            }
-        }
+        // Tap anywhere on the web view to toggle controls
+        Color.clear
+          .contentShape(.rect)
+          .onTapGesture {
+            withAnimation { controlsVisible.toggle() }
+          }
 
         if controlsVisible {
           VStack {
@@ -311,8 +309,9 @@ struct VisualizerControlsView: View {
 
       // Speed slider
       HStack {
-        Text("Speed")
-        Slider(value: $speed, in: 0.1...1.0, step: 0.05)
+        Text(String(format: "Speed %.1f%%", speed * 100))
+          .monospacedDigit()
+        Slider(value: $speed, in: 0.0...1.0, step: 0.05)
           .onChange(of: speed) {
             holder.setSpeed(speed)
             lastSpeed = speed
