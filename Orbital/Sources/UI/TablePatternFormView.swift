@@ -111,7 +111,7 @@ struct TablePatternFormView: View {
 
   @ViewBuilder
   private func emitterSection(_ emitter: Binding<EmitterRowState>) -> some View {
-    DisclosureGroup(emitter.wrappedValue.name.isEmpty ? "Unnamed Emitter" : emitter.wrappedValue.name) {
+    DisclosureGroup {
       TextField("Name", text: emitter.name)
 
       Picker("Output Type", selection: emitter.outputType) {
@@ -153,6 +153,13 @@ struct TablePatternFormView: View {
           Text("Waiting: \(name)").tag(EmitterUpdateMode.waiting(emitter: name))
         }
       }
+    } label: {
+      VStack(alignment: .leading, spacing: 2) {
+        Text(emitter.wrappedValue.name.isEmpty ? "Unnamed Emitter" : emitter.wrappedValue.name)
+        Text(emitterSummary(emitter.wrappedValue))
+          .font(.caption)
+          .foregroundStyle(.secondary)
+      }
     }
   }
 
@@ -160,7 +167,7 @@ struct TablePatternFormView: View {
 
   @ViewBuilder
   private func noteMaterialSection(_ nm: Binding<NoteMaterialRowState>) -> some View {
-    DisclosureGroup(nm.wrappedValue.name.isEmpty ? "Unnamed Material" : nm.wrappedValue.name) {
+    DisclosureGroup {
       TextField("Name", text: nm.name)
 
       Section("Intervals") {
@@ -201,6 +208,13 @@ struct TablePatternFormView: View {
           Text(name).tag(name)
         }
       }
+    } label: {
+      VStack(alignment: .leading, spacing: 2) {
+        Text(nm.wrappedValue.name.isEmpty ? "Unnamed Material" : nm.wrappedValue.name)
+        Text(noteMaterialSummary(nm.wrappedValue))
+          .font(.caption)
+          .foregroundStyle(.secondary)
+      }
     }
   }
 
@@ -208,7 +222,7 @@ struct TablePatternFormView: View {
 
   @ViewBuilder
   private func modulatorSection(_ mod: Binding<TableModulatorRowState>) -> some View {
-    DisclosureGroup(mod.wrappedValue.name.isEmpty ? "Unnamed Modulator" : mod.wrappedValue.name) {
+    DisclosureGroup {
       TextField("Name", text: mod.name)
       TextField("Target Handle", text: mod.targetHandle)
 
@@ -218,6 +232,13 @@ struct TablePatternFormView: View {
           Text(name).tag(name)
         }
       }
+    } label: {
+      VStack(alignment: .leading, spacing: 2) {
+        Text(mod.wrappedValue.name.isEmpty ? "Unnamed Modulator" : mod.wrappedValue.name)
+        Text(modulatorSummary(mod.wrappedValue))
+          .font(.caption)
+          .foregroundStyle(.secondary)
+      }
     }
   }
 
@@ -225,7 +246,7 @@ struct TablePatternFormView: View {
 
   @ViewBuilder
   private func trackSection(_ track: Binding<TrackAssemblyRowState>) -> some View {
-    DisclosureGroup(track.wrappedValue.name.isEmpty ? "Unnamed Track" : track.wrappedValue.name) {
+    DisclosureGroup {
       TextField("Name", text: track.name)
 
       Picker("Preset", selection: track.presetFilename) {
@@ -259,6 +280,13 @@ struct TablePatternFormView: View {
       }
 
       modulatorNamesEditor(names: track.modulatorNames)
+    } label: {
+      VStack(alignment: .leading, spacing: 2) {
+        Text(track.wrappedValue.name.isEmpty ? "Unnamed Track" : track.wrappedValue.name)
+        Text(trackSummary(track.wrappedValue))
+          .font(.caption)
+          .foregroundStyle(.secondary)
+      }
     }
   }
 
@@ -348,6 +376,62 @@ struct TablePatternFormView: View {
         names.wrappedValue.append("")
       }
     }
+  }
+
+  // MARK: - Summaries
+
+  private func emitterSummary(_ emitter: EmitterRowState) -> String {
+    var parts: [String] = [emitter.outputType.rawValue]
+    parts.append(functionLabel(emitter.function))
+    if emitter.needsArgs {
+      parts.append("\(formatNumber(emitter.arg1))–\(formatNumber(emitter.arg2))")
+    } else if emitter.needsCandidates {
+      let count = emitter.candidates.filter { !$0.isEmpty }.count
+      parts.append("\(count) candidates")
+    } else if emitter.needsInputEmitters {
+      let inputs = emitter.inputEmitters.filter { !$0.isEmpty }
+      if !inputs.isEmpty {
+        parts.append("of: " + inputs.joined(separator: ", "))
+      }
+    }
+    if case .waiting(let e) = emitter.updateMode {
+      parts.append("waiting: \(e)")
+    }
+    return parts.joined(separator: " · ")
+  }
+
+  private func noteMaterialSummary(_ nm: NoteMaterialRowState) -> String {
+    var parts: [String] = []
+    let count = nm.intervalStrings.filter { !$0.isEmpty }.count
+    parts.append("\(count) interval\(count == 1 ? "" : "s")")
+    if !nm.intervalPicker.isEmpty { parts.append("picker: \(nm.intervalPicker)") }
+    if !nm.scaleEmitter.isEmpty { parts.append("scale: \(nm.scaleEmitter)") }
+    if !nm.scaleRootEmitter.isEmpty { parts.append("root: \(nm.scaleRootEmitter)") }
+    return parts.joined(separator: " · ")
+  }
+
+  private func modulatorSummary(_ mod: TableModulatorRowState) -> String {
+    if mod.targetHandle.isEmpty && mod.floatEmitter.isEmpty { return "unconfigured" }
+    let target = mod.targetHandle.isEmpty ? "?" : mod.targetHandle
+    let source = mod.floatEmitter.isEmpty ? "?" : mod.floatEmitter
+    return "\(target) ← \(source)"
+  }
+
+  private func trackSummary(_ track: TrackAssemblyRowState) -> String {
+    var parts: [String] = []
+    if !track.presetFilename.isEmpty { parts.append(track.presetFilename) }
+    if !track.noteMaterial.isEmpty { parts.append(track.noteMaterial) }
+    if !track.sustainEmitter.isEmpty { parts.append("sustain: \(track.sustainEmitter)") }
+    if !track.gapEmitter.isEmpty { parts.append("gap: \(track.gapEmitter)") }
+    if parts.isEmpty { return "unconfigured" }
+    return parts.joined(separator: " · ")
+  }
+
+  private func formatNumber(_ value: CoreFloat) -> String {
+    if value == value.rounded() && abs(value) < 10000 {
+      return String(format: "%.0f", value)
+    }
+    return String(format: "%.4g", value)
   }
 
   // MARK: - Apply & Save
