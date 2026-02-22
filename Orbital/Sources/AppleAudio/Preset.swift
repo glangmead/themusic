@@ -34,13 +34,28 @@ struct PresetSyntax: Codable {
   let samplerFilenames: [String]? // a sound from an audio file(s) in our bundle; mutually exclusive with an arrow
   let samplerProgram: UInt8? // a soundfont idiom: the instrument/preset index
   let samplerBank: UInt8? // a soundfont idiom: the grouping of instruments, e.g. usually 121 for sounds and 120 for percussion
+  let library: [[String: ArrowSyntax]]? // named reusable arrow definitions, referenced via .libraryArrow
   let rose: RoseSyntax
   let effects: EffectsSyntax
+  
+  /// Build the resolved [String: ArrowSyntax] dictionary from the library
+  /// array, resolving forward references in order.
+  private func resolvedLibrary() -> [String: ArrowSyntax] {
+    guard let library else { return [:] }
+    var dict = [String: ArrowSyntax]()
+    for entry in library {
+      for (name, arrow) in entry {
+        dict[name] = arrow.resolveLibrary(dict)
+      }
+    }
+    return dict
+  }
   
   func compile(numVoices: Int = 12, initEffects: Bool = true) -> Preset {
     let preset: Preset
     if let arrowSyntax = arrow {
-      preset = Preset(arrowSyntax: arrowSyntax, numVoices: numVoices, initEffects: initEffects)
+      let resolved = arrowSyntax.resolveLibrary(resolvedLibrary())
+      preset = Preset(arrowSyntax: resolved, numVoices: numVoices, initEffects: initEffects)
     } else if let samplerFilenames = samplerFilenames, let samplerBank = samplerBank, let samplerProgram = samplerProgram {
       preset = Preset(sampler: Sampler(fileNames: samplerFilenames, bank: samplerBank, program: samplerProgram), initEffects: initEffects)
     } else {

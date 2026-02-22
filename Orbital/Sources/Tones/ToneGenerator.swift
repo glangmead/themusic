@@ -661,6 +661,7 @@ enum ArrowSyntax: Codable {
   indirect case reciprocal(of: ArrowSyntax)
   case eventNote
   case eventVelocity
+  case libraryArrow(name: String)
   
   indirect case osc(name: String, shape: BasicOscillator.OscShape, width: ArrowSyntax)
   
@@ -829,6 +830,56 @@ enum ArrowSyntax: Codable {
       handleArr.namedEventUsing[""] = [arr]
       return handleArr
 
+    case .libraryArrow(let name):
+      fatalError("libraryArrow '\(name)' was not resolved — call resolveLibrary() before compile()")
+    }
+  }
+
+  /// Replace every `.libraryArrow` reference with its definition from the
+  /// library dictionary. The dictionary values should already be resolved
+  /// (no remaining `.libraryArrow` nodes), which is guaranteed when the
+  /// caller builds the dict in order and resolves each entry against the
+  /// dict-so-far.
+  /// Applies `transform` to every ArrowSyntax child, returning a structurally
+  /// identical node with transformed children. Leaf cases return self unchanged.
+  func mapChildren(_ transform: (ArrowSyntax) -> ArrowSyntax) -> ArrowSyntax {
+    switch self {
+    case .prod(let arrows):
+      return .prod(of: arrows.map(transform))
+    case .compose(let arrows):
+      return .compose(arrows: arrows.map(transform))
+    case .sum(let arrows):
+      return .sum(of: arrows.map(transform))
+    case .crossfade(let arrows, let name, let mixPoint):
+      return .crossfade(of: arrows.map(transform), name: name, mixPoint: transform(mixPoint))
+    case .crossfadeEqPow(let arrows, let name, let mixPoint):
+      return .crossfadeEqPow(of: arrows.map(transform), name: name, mixPoint: transform(mixPoint))
+    case .lowPassFilter(let name, let cutoff, let resonance):
+      return .lowPassFilter(name: name, cutoff: transform(cutoff), resonance: transform(resonance))
+    case .osc(let name, let shape, let width):
+      return .osc(name: name, shape: shape, width: transform(width))
+    case .reciprocal(let inner):
+      return .reciprocal(of: transform(inner))
+    case .const, .constOctave, .constCent, .reciprocalConst,
+         .identity, .control, .envelope, .choruser,
+         .noiseSmoothStep, .rand, .exponentialRand, .line,
+         .eventNote, .eventVelocity, .libraryArrow:
+      return self
+    }
+  }
+
+  // This pattern is going to *copy* each referenced library arrow whenever it is asked for later
+  // In future we may want to make the compiled arrow into a DAG.
+  // But that will require more design around how to handle a node being called twice by other nodes.
+  func resolveLibrary(_ library: [String: ArrowSyntax]) -> ArrowSyntax {
+    switch self {
+    case .libraryArrow(let name):
+      guard let definition = library[name] else {
+        fatalError("Unknown library arrow '\(name)'. Available: \(library.keys.sorted())")
+      }
+      return definition
+    default:
+      return mapChildren { $0.resolveLibrary(library) }
     }
   }
 }

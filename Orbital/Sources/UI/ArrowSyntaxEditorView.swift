@@ -122,6 +122,11 @@ struct ArrowSyntaxEditorView: View {
       Text("Event Velocity")
         .font(.caption)
         .foregroundStyle(.secondary)
+
+    case .libraryArrow(let name):
+      Text("Library: \(name)")
+        .font(.caption)
+        .foregroundStyle(.secondary)
     }
   }
 }

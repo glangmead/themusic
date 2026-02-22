@@ -528,3 +528,120 @@ struct PresetSoundFingerprintTests {
   }
 }
 
+// MARK: - 7. Arrow Library Resolution
+
+@Suite("Arrow Library", .serialized)
+struct ArrowLibraryTests {
+
+  @Test("resolveLibrary replaces a single reference")
+  func singleReference() {
+    let library: [String: ArrowSyntax] = [
+      "myConst": .const(name: "x", val: 42)
+    ]
+    let arrow: ArrowSyntax = .prod(of: [
+      .identity,
+      .libraryArrow(name: "myConst")
+    ])
+    let resolved = arrow.resolveLibrary(library)
+    if case .prod(let children) = resolved {
+      if case .const(let name, let val) = children[1] {
+        #expect(name == "x")
+        #expect(val == 42)
+      } else {
+        Issue.record("Expected .const, got \(children[1])")
+      }
+    } else {
+      Issue.record("Expected .prod, got \(resolved)")
+    }
+  }
+
+  @Test("resolveLibrary handles transitive references")
+  func transitiveReferences() {
+    // A references B which references C
+    let cDef: ArrowSyntax = .const(name: "c", val: 1)
+    let bDef: ArrowSyntax = .prod(of: [.libraryArrow(name: "c")])
+    let aDef: ArrowSyntax = .sum(of: [.libraryArrow(name: "b")])
+
+    // Build dict in order, resolving each against the dict-so-far
+    var dict = [String: ArrowSyntax]()
+    dict["c"] = cDef.resolveLibrary(dict)
+    dict["b"] = bDef.resolveLibrary(dict)
+    dict["a"] = aDef.resolveLibrary(dict)
+
+    // "a" should be fully resolved: sum(of: [prod(of: [const("c", 1)])])
+    if case .sum(let sumChildren) = dict["a"] {
+      if case .prod(let prodChildren) = sumChildren[0] {
+        if case .const(let name, let val) = prodChildren[0] {
+          #expect(name == "c")
+          #expect(val == 1)
+        } else {
+          Issue.record("Expected .const")
+        }
+      } else {
+        Issue.record("Expected .prod")
+      }
+    } else {
+      Issue.record("Expected .sum")
+    }
+  }
+
+  @Test("Resolved library arrow compiles to working Arrow11")
+  func resolvedArrowCompiles() {
+    let library: [String: ArrowSyntax] = [
+      "osc1": .compose(arrows: [
+        .prod(of: [.const(name: "freq", val: 440), .identity]),
+        .osc(name: "osc", shape: .sine, width: .const(name: "w", val: 1))
+      ])
+    ]
+    let arrow: ArrowSyntax = .prod(of: [
+      .const(name: "amp", val: 1),
+      .libraryArrow(name: "osc1")
+    ])
+    let resolved = arrow.resolveLibrary(library)
+    let compiled = resolved.compile()
+    #expect(compiled.namedConsts["freq"] != nil, "Should have freq const from resolved library arrow")
+    #expect(compiled.namedBasicOscs["osc"] != nil, "Should have osc from resolved library arrow")
+  }
+
+  @Test("table_keening.json decodes and compiles with library")
+  func tableKeeningLoadsAndCompiles() throws {
+    let preset = try loadPresetSyntax("table_keening.json")
+    #expect(preset.name == "Table Keening")
+    #expect(preset.library != nil)
+    #expect(preset.library?.count == 3)
+
+    // Verify library entry names
+    let names = preset.library!.flatMap { $0.keys }
+    #expect(names == ["vibrato", "shapedVibrato", "freqWithVibratoTerm"])
+
+    // Compile should succeed (resolves library + compiles arrow)
+    let compiled = preset.compile(numVoices: 1, initEffects: false)
+    #expect(compiled.name == "Table Keening")
+    #expect(compiled.sound != nil, "Should have a compiled sound arrow")
+  }
+
+  @Test("Multiple references to same library entry produce independent instances")
+  func independentInstances() {
+    let library: [String: ArrowSyntax] = [
+      "myConst": .const(name: "x", val: 10)
+    ]
+    let arrow: ArrowSyntax = .prod(of: [
+      .libraryArrow(name: "myConst"),
+      .libraryArrow(name: "myConst")
+    ])
+    let resolved = arrow.resolveLibrary(library)
+    let compiled = resolved.compile()
+    // Should have two const entries for "x"
+    let consts = compiled.namedConsts["x"]
+    #expect(consts?.count == 2, "Two references should produce two independent const instances")
+  }
+
+  @Test("Presets without library still decode and compile")
+  func presetWithoutLibrary() throws {
+    let preset = try loadPresetSyntax("sine.json")
+    #expect(preset.library == nil)
+    let compiled = preset.compile(numVoices: 1, initEffects: false)
+    #expect(compiled.sound != nil)
+  }
+}
+
