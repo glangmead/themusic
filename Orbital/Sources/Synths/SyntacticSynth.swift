@@ -102,10 +102,12 @@ class SyntacticSynth {
     }
   }
   
-  init(engine: SpatialAudioEngine, presetSpec: PresetSyntax, numVoices: Int = 12) {
+  init(engine: SpatialAudioEngine, presetSpec: PresetSyntax, numVoices: Int = 12, deferSetup: Bool = false) {
     self.engine = engine
     self.presetSpec = presetSpec
-    Task { await setup(presetSpec: presetSpec) }
+    if !deferSetup {
+      Task { await setup(presetSpec: presetSpec) }
+    }
   }
   
   func loadPreset(_ presetSpec: PresetSyntax) {
@@ -114,16 +116,38 @@ class SyntacticSynth {
     Task { await setup(presetSpec: presetSpec) }
     reloadCount += 1
   }
-  
-  private func cleanup() {
-    spatialPreset?.cleanup()
+
+  /// Attach to an existing SpatialPreset (e.g. from a song track) so that
+  /// parameter changes affect the live audio graph instead of a disconnected copy.
+  func attachToLivePreset(_ live: SpatialPreset) {
+    // Detach without destroying — we don't own the live preset's audio nodes.
     spatialPreset = nil
     arrowHandler = nil
+    isAttachedToLivePreset = true
+    self.presetSpec = live.presetSpec
+    spatialPreset = live
+    buildHandlerAndReadValues()
+    reloadCount += 1
+  }
+
+  /// Whether this synth is borrowing an external SpatialPreset it doesn't own.
+  private var isAttachedToLivePreset = false
+  
+  private func cleanup() {
+    if !isAttachedToLivePreset {
+      spatialPreset?.cleanup()
+    }
+    spatialPreset = nil
+    arrowHandler = nil
+    isAttachedToLivePreset = false
   }
   
   private func setup(presetSpec: PresetSyntax) async {
     spatialPreset = try? await SpatialPreset(presetSpec: presetSpec, engine: engine, numVoices: numVoices)
-    
+    buildHandlerAndReadValues()
+  }
+
+  private func buildHandlerAndReadValues() {
     // Build ArrowHandler from the syntax tree + aggregated handles
     if let arrowSyntax = presetSpec.arrow {
       let handler = ArrowHandler(syntax: arrowSyntax)

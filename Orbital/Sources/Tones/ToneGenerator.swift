@@ -834,7 +834,7 @@ enum ArrowSyntax: Codable {
 }
 
 #Preview {
-  let osc = NoiseSmoothStep(noiseFreq: 2, min: 0, max: 2)
+  let osc = Triangle()
   osc.innerArr = ArrowIdentity()
-  return ArrowChart(arrow: osc, ymin: 0, ymax: 2)
+  return ArrowChart(arrow: osc, ymin: -2, ymax: 2)
 }

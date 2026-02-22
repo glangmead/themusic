@@ -53,9 +53,14 @@ struct PresetFormView: View {
     } else {
       ProgressView()
         .onAppear {
-          let s = SyntacticSynth(engine: engine, presetSpec: presetSpec)
-          s.loadPreset(presetSpec)
-          synth = s
+          if let liveSpatialPreset {
+            let s = SyntacticSynth(engine: engine, presetSpec: presetSpec, deferSetup: true)
+            s.attachToLivePreset(liveSpatialPreset)
+            synth = s
+          } else {
+            let s = SyntacticSynth(engine: engine, presetSpec: presetSpec)
+            synth = s
+          }
         }
     }
   }
