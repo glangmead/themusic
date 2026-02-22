@@ -383,15 +383,27 @@ struct IntSampler: Sequence, IteratorProtocol {
 
 // MARK: - ExponentialFloatSampler
 
-/// Log-uniform sampling: values are distributed exponentially across [min, max].
-/// Useful for parameters that span multiple orders of magnitude (e.g. frequencies).
+/// Exponential distribution sampling mapped to [min, max].
+/// λ is chosen so ~95% of raw samples fall within the range; values beyond max are clamped.
+/// Heavily biased toward min.
 struct ExponentialFloatSampler: Sequence, IteratorProtocol {
   let min: CoreFloat
   let max: CoreFloat
+  private let lambda: CoreFloat
+
+  init(min: CoreFloat, max: CoreFloat) {
+    self.min = Swift.min(min, max)
+    self.max = Swift.max(min, max)
+    let range = self.max - self.min
+    self.lambda = range > 0 ? -log(0.05) / range : 1
+  }
 
   func next() -> CoreFloat? {
-    guard min > 0, max > min else { return min }
-    return min * exp(CoreFloat.random(in: 0...1) * log(max / min))
+    let u = CoreFloat.random(in: CoreFloat.ulpOfOne...1)
+    let raw = -log(u) / lambda
+    let result = clamp(min + raw, min: min, max: max)
+    print("ExponentialFloatSampler \(min)-\(max): \(result)")
+    return result
   }
 }
 

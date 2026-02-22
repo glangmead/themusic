@@ -188,46 +188,36 @@ func clamp(_ val: CoreFloat, min: CoreFloat, max: CoreFloat) -> CoreFloat {
   return val
 }
 
+/// Samples from an exponential distribution mapped to [min, max].
+/// Rate λ is chosen so that ~95% of raw samples fall within the range;
+/// values beyond max are clamped.  The result is heavily biased toward min.
 final class ArrowExponentialRandom: Arrow11 {
   var min: CoreFloat
   var max: CoreFloat
-  var scratch = [CoreFloat](repeating: 1, count: MAX_BUFFER_SIZE)
+  /// Rate parameter: λ = -ln(0.05) / (max - min) ≈ 3 / (max - min)
+  private var lambda: CoreFloat
+
   init(min: CoreFloat, max: CoreFloat) {
-    let neg = min < 0 || max < 0
-    self.min = neg ? clamp(min, min: min, max: -1e-8) : clamp(min, min: 1e-8, max: min)
-    self.max = neg ? clamp(max, min: max, max: -1e-8) : clamp(max, min: 1e-8, max: max)
+    self.min = Swift.min(min, max)
+    self.max = Swift.max(min, max)
+    let range = self.max - self.min
+    self.lambda = range > 0 ? -log(0.05) / range : 1
     super.init()
   }
+
+  /// Inverse-transform sample: x = -ln(U) / λ, shifted and clamped to [min, max].
   override func of(_ t: CoreFloat) -> CoreFloat {
-    // Log-uniform distribution: min * exp(U * log(max/min)), U in [0,1]
-    let result = min * exp(CoreFloat.random(in: 0...1) * log(max / min))
+    let u = CoreFloat.random(in: CoreFloat.ulpOfOne...1)  // avoid ln(0)
+    let raw = -log(u) / lambda
+    let result = clamp(min + raw, min: min, max: max)
     return result
   }
   
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
-    let count = vDSP_Length(inputs.count)
-    let logRatio = log(max / min)
-    
-    // Generate random values in [0, 1]
     for i in 0..<inputs.count {
-      outputs[i] = CoreFloat.random(in: 0...1)
-    }
-    
-    // outputs = outputs * log(max/min)
-    outputs.withUnsafeMutableBufferPointer { outBuf in
-      var lr = logRatio
-      vDSP_vsmulD(outBuf.baseAddress!, 1, &lr, outBuf.baseAddress!, 1, count)
-    }
-    
-    // outputs = exp(outputs)  — no vectorized exp for Double, do scalar
-    for i in 0..<inputs.count {
-      outputs[i] = exp(outputs[i])
-    }
-    
-    // outputs = outputs * min
-    outputs.withUnsafeMutableBufferPointer { outBuf in
-      var m = min
-      vDSP_vsmulD(outBuf.baseAddress!, 1, &m, outBuf.baseAddress!, 1, count)
+      let u = CoreFloat.random(in: CoreFloat.ulpOfOne...1)
+      let raw = -log(u) / lambda
+      outputs[i] = clamp(min + raw, min: min, max: max)
     }
   }
 }

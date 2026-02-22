@@ -117,11 +117,11 @@ struct RuntimePrimitiveTests {
     }
   }
 
-  @Test("ExponentialFloatSampler with degenerate range returns min")
+  @Test("ExponentialFloatSampler with equal min and max returns that value")
   func exponentialDegenerateRange() {
-    let sampler = ExponentialFloatSampler(min: 0, max: 1.0)
+    let sampler = ExponentialFloatSampler(min: 0.5, max: 0.5)
     let val = sampler.next()!
-    #expect(val == 0, "ExponentialFloatSampler with min=0 should return 0")
+    #expect(val == 0.5, "ExponentialFloatSampler with min==max should return that value")
   }
 
   @Test("MutableParam updates are visible to MutableFloatSampler")

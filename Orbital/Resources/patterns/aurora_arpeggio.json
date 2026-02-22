@@ -54,7 +54,7 @@
         },
         {
           "target": "vibratoAmp",
-          "arrow": { "exponentialRand": { "min": 0.0002, "max": 0.001 } }
+          "arrow": { "exponentialRand": { "min": 0.002, "max": 0.02 } }
         },
         {
           "target": "vibratoFreq",

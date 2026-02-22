@@ -103,6 +103,11 @@
         "name": "vibFreqMod",
         "targetHandle": "vibratoFreq",
         "floatEmitter": "vibratoFreqVal"
+      },
+      {
+        "name": "vibEnvMod",
+        "targetHandle": "",
+        "floatEmitter": "sustain"
       }
     ],
     "tracks": [
