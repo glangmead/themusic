@@ -116,6 +116,93 @@ struct VoiceLedgerTests {
     }
     #expect(indices.count == 12, "12 notes should get 12 distinct voices")
   }
+
+  @Test("beginRelease keeps voice unavailable until finishRelease")
+  func deferredRelease() {
+    let ledger = VoiceLedger(voiceCount: 2)
+    let _ = ledger.takeAvailableVoice(60) // index 0
+    let _ = ledger.takeAvailableVoice(62) // index 1
+
+    // Begin release on note 60 — voice 0 moves to releasing
+    let released = ledger.beginRelease(60)
+    #expect(released == 0)
+
+    // Voice 0 is releasing, not available — next allocation should fail
+    let overflow = ledger.takeAvailableVoice(64)
+    #expect(overflow == nil, "Voice 0 should be releasing, not available")
+
+    // Note mapping is cleared, so voiceIndex returns nil
+    #expect(ledger.voiceIndex(for: 60) == nil)
+
+    // Finish release — voice 0 becomes available
+    ledger.finishRelease(voiceIndex: 0)
+    let reused = ledger.takeAvailableVoice(64)
+    #expect(reused == 0, "Voice 0 should be available after finishRelease")
+  }
+
+  @Test("beginRelease for untracked note returns nil")
+  func beginReleaseUntracked() {
+    let ledger = VoiceLedger(voiceCount: 4)
+    #expect(ledger.beginRelease(60) == nil)
+  }
+
+  @Test("Same note can be replayed on a different voice while first is releasing")
+  func replayWhileReleasing() {
+    let ledger = VoiceLedger(voiceCount: 3)
+    let idx0 = ledger.takeAvailableVoice(60) // index 0
+    #expect(idx0 == 0)
+
+    // Begin release — voice 0 is releasing, note 60 unmapped
+    let _ = ledger.beginRelease(60)
+
+    // Play note 60 again — should get a different voice
+    let idx1 = ledger.takeAvailableVoice(60)
+    #expect(idx1 == 1, "Should get voice 1 since voice 0 is still releasing")
+
+    // Finish release of voice 0
+    ledger.finishRelease(voiceIndex: 0)
+
+    // Now voice 0 is back in the pool
+    let idx2 = ledger.takeAvailableVoice(62)
+    #expect(idx2 == 2, "Voice 2 was next in queue")
+    let idx3 = ledger.takeAvailableVoice(64)
+    #expect(idx3 == 0, "Voice 0 should now be available at end of queue")
+  }
+
+  @Test("Registered envelopes auto-release voice when all close")
+  func autoReleaseViaEnvelopes() {
+    let ledger = VoiceLedger(voiceCount: 2)
+    let env = ADSR(envelope: EnvelopeData(
+      attackTime: 0.01, decayTime: 0.01, sustainLevel: 1.0,
+      releaseTime: 0.05, scale: 1.0
+    ))
+    ledger.registerEnvelopes(forVoice: 0, envelopes: [env])
+
+    let _ = ledger.takeAvailableVoice(60) // voice 0
+    let _ = ledger.takeAvailableVoice(62) // voice 1
+
+    // Begin release — appends finish callback on the envelope
+    let released = ledger.beginRelease(60)
+    #expect(released == 0)
+
+    // Voice 0 is releasing — not available
+    #expect(ledger.takeAvailableVoice(64) == nil)
+
+    // Start the envelope's attack, then release
+    env.noteOn(MidiNote(note: 60, velocity: 127))
+    _ = env.env(0.0)
+    _ = env.env(0.03) // past attack+decay
+    env.noteOff(MidiNote(note: 60, velocity: 0))
+
+    // Pump the envelope past the release time to trigger the callback
+    _ = env.env(0.03) // reset timeOrigin for release
+    _ = env.env(0.03 + 0.06) // past releaseTime (0.05)
+
+    // The finish callback should have called finishRelease
+    #expect(env.state == .closed)
+    let reused = ledger.takeAvailableVoice(64)
+    #expect(reused == 0, "Voice 0 should be auto-released after envelope closed")
+  }
 }
 
 // MARK: - Preset NoteOn/NoteOff Tests (Arrow path)

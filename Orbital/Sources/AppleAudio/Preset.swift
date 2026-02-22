@@ -121,7 +121,7 @@ class Preset: NoteHandler {
         env.startCallback = { [weak self] in
           self?.activate()
         }
-        env.finishCallback = { [weak self] in
+        env.finishCallbacks.append { [weak self] in
           if let self = self {
             let allClosed = ampEnvs.allSatisfy { $0.state == .closed }
             if allClosed {
@@ -234,6 +234,14 @@ class Preset: NoteHandler {
     self.audioGate?.isOpen = false
     self.voiceLedger = VoiceLedger(voiceCount: numVoices)
     
+    // Register ampEnv envelopes per voice so the ledger can
+    // auto-release voices when envelope release completes.
+    for (voiceIdx, voice) in voices.enumerated() {
+      if let ampEnvs = voice.namedADSREnvelopes["ampEnv"] {
+        self.voiceLedger?.registerEnvelopes(forVoice: voiceIdx, envelopes: ampEnvs)
+      }
+    }
+    
     if initEffects { self.initEffects() }
     setupLifecycleCallbacks()
   }
@@ -289,7 +297,7 @@ class Preset: NoteHandler {
     }
     
     guard let ledger = voiceLedger else { return }
-    if let voiceIdx = ledger.releaseVoice(noteVelIn.note) {
+    if let voiceIdx = ledger.beginRelease(noteVelIn.note) {
       releaseVoice(voiceIdx, note: noteVel)
     }
   }

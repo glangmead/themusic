@@ -98,6 +98,15 @@ class SpatialPreset: NoteHandler {
     }
 
     spatialLedger = VoiceLedger(voiceCount: numVoices)
+    
+    // Register each inner Preset's ampEnv envelopes with the spatial ledger
+    // so it can auto-release voices when the envelope release completes.
+    for (i, preset) in presets.enumerated() {
+      if let sound = preset.sound, let ampEnvs = sound.namedADSREnvelopes["ampEnv"] {
+        spatialLedger?.registerEnvelopes(forVoice: i, envelopes: ampEnvs)
+      }
+    }
+    
     engine.connectToEnvNode(avNodes)
   }
 
@@ -153,7 +162,7 @@ class SpatialPreset: NoteHandler {
   func noteOff(_ noteVelIn: MidiNote) {
     guard let ledger = spatialLedger else { return }
     
-    if let idx = ledger.releaseVoice(noteVelIn.note) {
+    if let idx = ledger.beginRelease(noteVelIn.note) {
       presets[idx].noteOff(noteVelIn)
     }
   }

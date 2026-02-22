@@ -40,7 +40,10 @@ class ADSR: Arrow11, NoteHandler {
   var valueAtRelease: CoreFloat = 0
   var valueAtAttack: CoreFloat = 0
   var startCallback: (() -> Void)? = nil
-  var finishCallback: (() -> Void)? = nil
+  /// Callbacks fired when the release phase completes and the envelope
+  /// closes. Multiple listeners (audio gate lifecycle, voice ledger
+  /// recycling, etc.) can each append a callback.
+  var finishCallbacks: [() -> Void] = []
 
   init(envelope e: EnvelopeData) {
     self.env = e
@@ -65,7 +68,9 @@ class ADSR: Arrow11, NoteHandler {
       if time > env.releaseTime {
         state = .closed
         val = 0
-        finishCallback?()
+        let callbacks = finishCallbacks
+        finishCallbacks = []
+        for cb in callbacks { cb() }
       } else {
         val = releaseEnv.val(time)
       }

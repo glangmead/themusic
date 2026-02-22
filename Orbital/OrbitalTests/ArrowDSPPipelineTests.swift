@@ -353,13 +353,13 @@ struct ADSREnvelopeTests {
     #expect(lateRelease < midRelease, "Release should keep decreasing")
   }
 
-  @Test("ADSR finishCallback fires after release completes")
-  func finishCallbackFires() {
+  @Test("ADSR finishCallbacks fire after release completes")
+  func finishCallbacksFire() {
     var finished = false
     let env = ADSR(envelope: EnvelopeData(
       attackTime: 0.01, decayTime: 0.01, sustainLevel: 1.0, releaseTime: 0.1, scale: 1.0
     ))
-    env.finishCallback = { finished = true }
+    env.finishCallbacks.append { finished = true }
 
     env.noteOn(MidiNote(note: 60, velocity: 127))
     _ = env.env(0.0)
@@ -369,7 +369,7 @@ struct ADSREnvelopeTests {
     #expect(!finished, "Should not be finished mid-release")
     // Process past release time
     _ = env.env(0.2)
-    #expect(finished, "finishCallback should have fired after release completes")
+    #expect(finished, "finishCallbacks should have fired after release completes")
   }
 }
 
