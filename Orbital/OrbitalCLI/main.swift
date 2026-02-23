@@ -58,6 +58,9 @@ struct OrbitalPlay: AsyncParsableCommand {
     @Option(name: .long, help: "Output file path (.aiff). If provided, renders offline instead of playing through speakers.")
     var output: String?
 
+    @Flag(name: .long, help: "Disable spatial audio (AVAudioEnvironmentNode). By default spatial audio is enabled.")
+    var noSpatial: Bool = false
+
     func validate() throws {
         if output != nil && duration == nil {
             // Default to 10 seconds when writing to a file
@@ -72,6 +75,8 @@ struct OrbitalPlay: AsyncParsableCommand {
         let patternData = try Data(contentsOf: patternURL)
         let patternSpec = try JSONDecoder().decode(PatternSyntax.self, from: patternData)
 
+        let spatialEnabled = !noSpatial
+
         if let outputPath = output {
             // Offline render to AIFF
             let renderDuration = duration ?? 10.0
@@ -79,14 +84,16 @@ struct OrbitalPlay: AsyncParsableCommand {
                 patternSpec: patternSpec,
                 resourcesURL: resourcesURL,
                 duration: renderDuration,
-                outputPath: outputPath
+                outputPath: outputPath,
+                spatialEnabled: spatialEnabled
             )
         } else {
             // Play through speakers
             try await playThroughSpeakers(
                 patternSpec: patternSpec,
                 resourcesURL: resourcesURL,
-                duration: duration
+                duration: duration,
+                spatialEnabled: spatialEnabled
             )
         }
     }
@@ -96,11 +103,10 @@ struct OrbitalPlay: AsyncParsableCommand {
     private func playThroughSpeakers(
         patternSpec: PatternSyntax,
         resourcesURL: URL,
-        duration: Double?
+        duration: Double?,
+        spatialEnabled: Bool
     ) async throws {
-        // Disable spatial audio for CLI — AVAudioEnvironmentNode doesn't
-        // produce output in a headless macOS command-line context.
-        let engine = SpatialAudioEngine(spatialEnabled: false)
+        let engine = SpatialAudioEngine(spatialEnabled: spatialEnabled)
         try engine.start()
 
         let (musicPattern, trackInfos) = try await patternSpec.compile(
@@ -155,13 +161,14 @@ struct OrbitalPlay: AsyncParsableCommand {
         patternSpec: PatternSyntax,
         resourcesURL: URL,
         duration: Double,
-        outputPath: String
+        outputPath: String,
+        spatialEnabled: Bool
     ) async throws {
         // Use real-time engine with a tap to capture audio, since offline
         // manual rendering mode has ordering constraints that conflict with
         // the Orbital compile flow (nodes must be attached after enabling
         // manual mode, but compile needs engine format info).
-        let engine = SpatialAudioEngine(spatialEnabled: false)
+        let engine = SpatialAudioEngine(spatialEnabled: spatialEnabled)
         try engine.start()
 
         let (musicPattern, trackInfos) = try await patternSpec.compile(
@@ -176,22 +183,30 @@ struct OrbitalPlay: AsyncParsableCommand {
         print("Rendering \(trackInfos.count) track(s), \(duration)s to \(outputPath)...")
 
         let sampleRate = engine.sampleRate
-        let mainMixer = engine.audioEngine.mainMixerNode
-        let mixerFormat = mainMixer.outputFormat(forBus: 0)
+
+        // When spatial is enabled, audio flows: sources → envNode → outputNode.
+        // Tap the envNode to capture the spatialized mix. When spatial is off,
+        // audio flows: sources → mainMixerNode, so tap the main mixer.
+        // The engine installs a visualizer tap on envNode during start(); remove
+        // it first since AVAudioNode only allows one tap per bus.
+        let tapNode: AVAudioNode = spatialEnabled ? engine.envNode : engine.audioEngine.mainMixerNode
+        if spatialEnabled {
+            engine.envNode.removeTap(onBus: 0)
+        }
+        let tapFormat = tapNode.outputFormat(forBus: 0)
 
         // Create the output file
         let outputURL = URL(fileURLWithPath: outputPath)
         let audioFile = try AVAudioFile(
             forWriting: outputURL,
-            settings: mixerFormat.settings
+            settings: tapFormat.settings
         )
 
         // Install a tap to capture audio to file
         var framesWritten: AVAudioFrameCount = 0
         let totalFrames = AVAudioFrameCount(duration * sampleRate)
-        let writeGroup = DispatchGroup()
 
-        mainMixer.installTap(onBus: 0, bufferSize: 4096, format: mixerFormat) { buffer, _ in
+        tapNode.installTap(onBus: 0, bufferSize: 4096, format: tapFormat) { buffer, _ in
             guard framesWritten < totalFrames else { return }
             do {
                 try audioFile.write(from: buffer)
@@ -217,7 +232,7 @@ struct OrbitalPlay: AsyncParsableCommand {
         try await Task.sleep(for: .seconds(duration))
 
         playTask.cancel()
-        mainMixer.removeTap(onBus: 0)
+        tapNode.removeTap(onBus: 0)
         engine.audioEngine.stop()
 
         print("Done. Wrote \(outputPath)")
