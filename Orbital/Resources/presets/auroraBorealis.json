@@ -70,7 +70,7 @@
                 },
                 {
                   "prod": [
-                    { "const": {"val": 2, "name": "osc3Mix"} },
+                    { "const": {"val": 0.8, "name": "osc3Mix"} },
                     {
                       "compose": [
                         {"libraryArrow": {"name": "freqWithVibratoTerm"}},

@@ -142,12 +142,15 @@ struct TableModulatorRowState: Identifiable, Equatable {
   var name: String
   var targetHandle: String
   var floatEmitter: String
+  /// Arrow-based modulation formula (optional). When present, takes precedence over floatEmitter.
+  var arrow: ArrowSyntax?
 
   init(from syntax: ModulatorRowSyntax) {
     id = syntax.id
     name = syntax.name
     targetHandle = syntax.targetHandle
     floatEmitter = syntax.floatEmitter ?? ""
+    arrow = syntax.arrow
   }
 
   init() {
@@ -155,6 +158,7 @@ struct TableModulatorRowState: Identifiable, Equatable {
     name = ""
     targetHandle = "overallAmp"
     floatEmitter = ""
+    arrow = nil
   }
 
   func toSyntax() -> ModulatorRowSyntax {
@@ -162,7 +166,8 @@ struct TableModulatorRowState: Identifiable, Equatable {
       id: id,
       name: name,
       targetHandle: targetHandle,
-      floatEmitter: floatEmitter
+      floatEmitter: arrow != nil ? nil : floatEmitter,
+      arrow: arrow
     )
   }
 }

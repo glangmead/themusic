@@ -86,11 +86,13 @@ struct TablePatternFormView: View {
     .toolbar {
       ToolbarItemGroup {
         Button {
+          applyChanges()
           playbackState.togglePlayback()
         } label: {
           Image(systemName: playbackState.isPlaying && !playbackState.isPaused ? "pause.fill" : "play.fill")
         }
         Button {
+          applyChanges()
           playbackState.restart()
         } label: {
           Image(systemName: "arrow.counterclockwise")
@@ -226,10 +228,15 @@ struct TablePatternFormView: View {
       TextField("Name", text: mod.name)
       TextField("Target Handle", text: mod.targetHandle)
 
-      Picker("Float Emitter", selection: mod.floatEmitter) {
-        Text("(none)").tag("")
-        ForEach(emitterNames(ofType: .float), id: \.self) { name in
-          Text(name).tag(name)
+      if mod.wrappedValue.arrow != nil {
+        Text("Source: arrow formula (edit in JSON)")
+          .foregroundStyle(.secondary)
+      } else {
+        Picker("Float Emitter", selection: mod.floatEmitter) {
+          Text("(none)").tag("")
+          ForEach(emitterNames(ofType: .float), id: \.self) { name in
+            Text(name).tag(name)
+          }
         }
       }
     } label: {
@@ -411,9 +418,16 @@ struct TablePatternFormView: View {
   }
 
   private func modulatorSummary(_ mod: TableModulatorRowState) -> String {
-    if mod.targetHandle.isEmpty && mod.floatEmitter.isEmpty { return "unconfigured" }
+    if mod.targetHandle.isEmpty && mod.floatEmitter.isEmpty && mod.arrow == nil { return "unconfigured" }
     let target = mod.targetHandle.isEmpty ? "?" : mod.targetHandle
-    let source = mod.floatEmitter.isEmpty ? "?" : mod.floatEmitter
+    let source: String
+    if mod.arrow != nil {
+      source = "(arrow)"
+    } else if mod.floatEmitter.isEmpty {
+      source = "?"
+    } else {
+      source = mod.floatEmitter
+    }
     return "\(target) ← \(source)"
   }
 
