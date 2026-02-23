@@ -581,6 +581,174 @@ struct PresetSoundFingerprintTests {
   }
 }
 
+// MARK: - Sample Rate Sensitivity
+
+@Suite("Sample Rate Sensitivity", .serialized)
+struct SampleRateSensitivityTests {
+
+  @Test("Aurora Borealis with fixed crossfade sounds similar at 44100 and 48000 Hz",
+        arguments: [0.0, 0.5, 1.0, 1.5, 2.0])
+  func auroraFixedCrossfadeAcrossSampleRates(crossfadePosition: Double) throws {
+    let syntax = try loadFixturePreset("auroraBorealis_frozen.json")
+    guard let arrowSyntax = syntax.arrow else {
+      Issue.record("No arrow in auroraBorealis"); return
+    }
+    let library = syntax.resolvedLibrary()
+
+    // Compile two independent copies
+    let arrow44 = arrowSyntax.compile(library: library)
+    let arrow48 = arrowSyntax.compile(library: library)
+
+    // Set frequency and trigger envelopes
+    let note = MidiNote(note: 69, velocity: 127)
+    for a in [arrow44, arrow48] {
+      if let freqConsts = a.namedConsts["freq"] {
+        for c in freqConsts { c.val = 440 }
+      }
+      for (_, envs) in a.namedADSREnvelopes {
+        for env in envs { env.noteOn(note) }
+      }
+      // Fix crossfade at the given position to eliminate NoiseSmoothStep randomness
+      if let crossfaders = a.namedCrossfadersEqPow["oscCrossfade"] {
+        for cf in crossfaders {
+          cf.mixPointArr = ArrowConst(value: crossfadePosition)
+        }
+      }
+    }
+
+    // Render 0.5s at each sample rate
+    let buf44 = renderArrow(arrow44, sampleRate: 44100, sampleCount: 22050)
+    let buf48 = renderArrow(arrow48, sampleRate: 48000, sampleCount: 24000)
+
+    let rms44 = rms(buf44)
+    let rms48 = rms(buf48)
+
+    // Guard against division by zero for silent buffers
+    guard rms44 > 1e-10 else {
+      #expect(rms48 < 1e-6, "If 44100 is silent, 48000 should also be silent")
+      return
+    }
+
+    let rmsRatio = rms48 / rms44
+    #expect(rmsRatio > 0.7 && rmsRatio < 1.4,
+            "crossfade=\(crossfadePosition): RMS should be similar; 44100=\(rms44), 48000=\(rms48), ratio=\(rmsRatio)")
+  }
+
+  @Test("Aurora Borealis vibrato depth is similar at 44100 and 48000 Hz")
+  func auroraVibratoDepthAcrossSampleRates() throws {
+    let syntax = try loadFixturePreset("auroraBorealis_frozen.json")
+    guard let arrowSyntax = syntax.arrow else {
+      Issue.record("No arrow in auroraBorealis"); return
+    }
+    let library = syntax.resolvedLibrary()
+
+    // Compile two independent copies
+    let arrow44 = arrowSyntax.compile(library: library)
+    let arrow48 = arrowSyntax.compile(library: library)
+
+    let note = MidiNote(note: 69, velocity: 127)
+    for a in [arrow44, arrow48] {
+      if let freqConsts = a.namedConsts["freq"] {
+        for c in freqConsts { c.val = 440 }
+      }
+      for (_, envs) in a.namedADSREnvelopes {
+        for env in envs { env.noteOn(note) }
+      }
+      // Fix crossfade to 0.5 (square+sawtooth blend)
+      if let crossfaders = a.namedCrossfadersEqPow["oscCrossfade"] {
+        for cf in crossfaders {
+          cf.mixPointArr = ArrowConst(value: 0.5)
+        }
+      }
+      // Use clearly audible vibrato for diagnosis
+      if let vibAmp = a.namedConsts["vibratoAmp"] {
+        for c in vibAmp { c.val = 0.01 }
+      }
+      if let vibFreq = a.namedConsts["vibratoFreq"] {
+        for c in vibFreq { c.val = 5.0 }
+      }
+    }
+
+    // Render 1s starting at t=3.0 (past the 2.5s attack phase)
+    let buf44 = renderArrow(arrow44, sampleRate: 44100, startTime: 3.0, sampleCount: 44100)
+    let buf48 = renderArrow(arrow48, sampleRate: 48000, startTime: 3.0, sampleCount: 48000)
+
+    // Measure RMS in ~50ms windows to capture vibrato modulation at 5 Hz (200ms period)
+    func windowedRMSStats(_ buf: [CoreFloat], windowSize: Int) -> (min: CoreFloat, max: CoreFloat) {
+      var minR: CoreFloat = .infinity
+      var maxR: CoreFloat = 0
+      var i = 0
+      while i + windowSize <= buf.count {
+        let window = Array(buf[i..<(i + windowSize)])
+        let r = rms(window)
+        if r < minR { minR = r }
+        if r > maxR { maxR = r }
+        i += windowSize
+      }
+      return (minR, maxR)
+    }
+
+    let stats44 = windowedRMSStats(buf44, windowSize: 2205)  // ~50ms at 44100
+    let stats48 = windowedRMSStats(buf48, windowSize: 2400)   // ~50ms at 48000
+
+    let depth44 = stats44.max - stats44.min
+    let depth48 = stats48.max - stats48.min
+    let rms44 = rms(buf44)
+    let rms48 = rms(buf48)
+
+    // RMS should be similar
+    let rmsRatio = rms48 / rms44
+    #expect(rmsRatio > 0.95 && rmsRatio < 1.05,
+            "RMS: 44k=\(rms44), 48k=\(rms48), ratio=\(rmsRatio)")
+
+    // Vibrato modulation depth should be similar
+    if depth44 > 1e-6 {
+      let depthRatio = depth48 / depth44
+      #expect(depthRatio > 0.95 && depthRatio < 1.05,
+              "Vibrato depth: 44k=\(depth44), 48k=\(depth48), ratio=\(depthRatio)")
+    }
+
+    // Zero crossings per second should be identical (same pitch)
+    let zc44 = zeroCrossings(buf44)
+    let zc48 = zeroCrossings(buf48)
+    #expect(abs(zc48 - zc44) < 5,
+            "Zero crossings/sec: 44k=\(zc44), 48k=\(zc48)")
+  }
+
+  @Test("NoiseSmoothStep uses correct sample rate at 48000 Hz")
+  func noiseSmoothStepAt48000() {
+    let nss = NoiseSmoothStep(noiseFreq: 0.5, min: 0, max: 2)
+
+    // At default (44100), samplesPerSegment = 44100/0.5 = 88200
+    var buf44 = [CoreFloat](repeating: 0, count: 1024)
+    var times44 = [CoreFloat](repeating: 0, count: 1024)
+    for i in 0..<1024 { times44[i] = CoreFloat(i) / 44100.0 }
+    nss.process(inputs: times44, outputs: &buf44)
+
+    // Set to 48000
+    nss.setSampleRateRecursive(rate: 48000)
+    var buf48 = [CoreFloat](repeating: 0, count: 1024)
+    var times48 = [CoreFloat](repeating: 0, count: 1024)
+    for i in 0..<1024 { times48[i] = CoreFloat(i) / 48000.0 }
+    nss.process(inputs: times48, outputs: &buf48)
+
+    // Both should produce smoothly varying values in [0, 2]
+    let min48 = buf48.min() ?? 0
+    let max48 = buf48.max() ?? 0
+    #expect(min48 >= 0 && max48 <= 2, "NoiseSmoothStep output should be in [0, 2]")
+
+    // At 0.5 Hz noise freq and 48000 sample rate, each segment should be 96000 samples.
+    // Over 1024 samples, we should see very smooth (nearly constant) output.
+    var maxDelta: CoreFloat = 0
+    for i in 1..<1024 {
+      maxDelta = Swift.max(maxDelta, abs(buf48[i] - buf48[i-1]))
+    }
+    // With 96000 samples per segment, 1024 samples is a tiny fraction,
+    // so consecutive differences should be very small
+    #expect(maxDelta < 0.05, "NoiseSmoothStep should be smooth within 1024 samples; maxDelta=\(maxDelta)")
+  }
+}
+
 // MARK: - 7. Arrow Library Resolution
 
 @Suite("Arrow Library", .serialized)
@@ -655,9 +823,9 @@ struct ArrowLibraryTests {
     #expect(compiled.namedBasicOscs["osc"] != nil, "Should have osc from resolved library arrow")
   }
 
-  @Test("table_keening.json decodes and compiles with library")
+  @Test("auroraBorealis_frozen.json decodes and compiles with library")
   func tableKeeningLoadsAndCompiles() throws {
-    let preset = try loadPresetSyntax("table_keening.json")
+    let preset = try loadFixturePreset("auroraBorealis_frozen.json")
     #expect(preset.name == "Table Keening")
     #expect(preset.library != nil)
     #expect(preset.library?.count == 3)

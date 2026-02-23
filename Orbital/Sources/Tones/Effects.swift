@@ -128,6 +128,12 @@ final class LowPassFilter2: Arrow11 {
     self.previousOutput2 = 0
     super.init()
   }
+
+  override func setSampleRateRecursive(rate: CoreFloat) {
+    cutoff.setSampleRateRecursive(rate: rate)
+    resonance.setSampleRateRecursive(rate: rate)
+    super.setSampleRateRecursive(rate: rate)
+  }
   func filter(_ t: CoreFloat, inner: CoreFloat, cutoff: CoreFloat, resonance: CoreFloat) -> CoreFloat {
     if self.previousTime == 0 {
       self.previousTime = t

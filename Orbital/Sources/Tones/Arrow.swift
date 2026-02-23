@@ -238,6 +238,11 @@ final class ArrowCrossfade: Arrow11 {
     super.init(innerArrs: innerArrs)
   }
 
+  override func setSampleRateRecursive(rate: CoreFloat) {
+    mixPointArr.setSampleRateRecursive(rate: rate)
+    super.setSampleRateRecursive(rate: rate)
+  }
+
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
     mixPointArr.process(inputs: inputs, outputs: &mixPoints)
     // run all the arrows

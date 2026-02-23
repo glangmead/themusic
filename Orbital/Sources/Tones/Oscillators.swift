@@ -360,7 +360,17 @@ final class BasicOscillator: Arrow11 {
     super.init()
     self.updateShape()
   }
-  
+
+  override func setSampleRateRecursive(rate: CoreFloat) {
+    widthArr.setSampleRateRecursive(rate: rate)
+    sine.setSampleRateRecursive(rate: rate)
+    triangle.setSampleRateRecursive(rate: rate)
+    sawtooth.setSampleRateRecursive(rate: rate)
+    square.setSampleRateRecursive(rate: rate)
+    noise.setSampleRateRecursive(rate: rate)
+    super.setSampleRateRecursive(rate: rate)
+  }
+
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
     // Ensure innerVals matches outputs size so downstream vDSP calls
     // (which use inputs.count) don't overrun the outputs buffer.
