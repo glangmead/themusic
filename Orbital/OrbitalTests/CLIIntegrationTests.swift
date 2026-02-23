@@ -51,10 +51,10 @@ struct CLIAudioPipelineTests {
         let mainMixer = engine.audioEngine.mainMixerNode
         let mixerFormat = mainMixer.outputFormat(forBus: 0)
 
-        var peakAmplitude: Float = 0
-        let captureComplete = DispatchSemaphore(value: 0)
-        var buffersReceived = 0
         let requiredBuffers = 50  // ~0.5s of audio at 4096-sample buffers
+        nonisolated(unsafe) var peakAmplitude: Float = 0
+        nonisolated(unsafe) var buffersReceived = 0
+        nonisolated(unsafe) var tapContinuation: CheckedContinuation<Void, Never>?
 
         mainMixer.installTap(onBus: 0, bufferSize: 4096, format: mixerFormat) { buffer, _ in
             // Scan for peak amplitude in this buffer
@@ -71,7 +71,8 @@ struct CLIAudioPipelineTests {
             }
             buffersReceived += 1
             if buffersReceived >= requiredBuffers {
-                captureComplete.signal()
+                tapContinuation?.resume()
+                tapContinuation = nil
             }
         }
 
@@ -81,7 +82,21 @@ struct CLIAudioPipelineTests {
         }
 
         // 7. Wait for enough audio to be captured (up to 10 seconds)
-        let waitResult = captureComplete.wait(timeout: .now() + 10.0)
+        let capturedEnough = await withTaskGroup(of: Bool.self) { group in
+            group.addTask {
+                await withCheckedContinuation { continuation in
+                    tapContinuation = continuation
+                }
+                return true
+            }
+            group.addTask {
+                try? await Task.sleep(for: .seconds(10))
+                return false
+            }
+            let result = await group.next()!
+            group.cancelAll()
+            return result
+        }
 
         // 8. Clean up
         playTask.cancel()
@@ -89,7 +104,7 @@ struct CLIAudioPipelineTests {
         engine.audioEngine.stop()
 
         // 9. Verify results
-        #expect(waitResult == .success,
+        #expect(capturedEnough,
                 "Should have received \(requiredBuffers) audio buffers within timeout")
         #expect(peakAmplitude > 0.001,
                 "Audio output should be nonzero; peak amplitude was \(peakAmplitude)")
