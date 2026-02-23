@@ -98,13 +98,21 @@ struct OrbitalPlay: AsyncParsableCommand {
         resourcesURL: URL,
         duration: Double?
     ) async throws {
-        let engine = SpatialAudioEngine()
+        // Disable spatial audio for CLI — AVAudioEnvironmentNode doesn't
+        // produce output in a headless macOS command-line context.
+        let engine = SpatialAudioEngine(spatialEnabled: false)
         try engine.start()
 
         let (musicPattern, trackInfos) = try await patternSpec.compile(
             engine: engine,
             resourceBaseURL: resourcesURL
         )
+
+        // Nodes were attached after engine.start(). On macOS CLI, the engine
+        // may not automatically pull from newly-connected source nodes.
+        // Stop and restart to force the render graph to reconfigure.
+        engine.audioEngine.stop()
+        try engine.audioEngine.start()
 
         print("Playing \(trackInfos.count) track(s)...")
         if let duration {
@@ -119,7 +127,6 @@ struct OrbitalPlay: AsyncParsableCommand {
         signalSource.setEventHandler {
             print("\nStopping...")
             engine.fadeOutAndStop()
-            // Give the fade a moment, then exit
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                 Foundation.exit(0)
             }
@@ -150,83 +157,68 @@ struct OrbitalPlay: AsyncParsableCommand {
         duration: Double,
         outputPath: String
     ) async throws {
-        // Set up the engine in normal mode first to build the audio graph
-        let engine = SpatialAudioEngine()
+        // Use real-time engine with a tap to capture audio, since offline
+        // manual rendering mode has ordering constraints that conflict with
+        // the Orbital compile flow (nodes must be attached after enabling
+        // manual mode, but compile needs engine format info).
+        let engine = SpatialAudioEngine(spatialEnabled: false)
+        try engine.start()
 
         let (musicPattern, trackInfos) = try await patternSpec.compile(
             engine: engine,
             resourceBaseURL: resourcesURL
         )
 
-        print("Rendering \(trackInfos.count) track(s), \(duration)s to \(outputPath)...")
-
-        // Configure for manual (offline) rendering
-        let sampleRate = engine.audioEngine.outputNode.inputFormat(forBus: 0).sampleRate
-        let format = AVAudioFormat(standardFormatWithSampleRate: sampleRate, channels: 2)!
-        let totalFrames = AVAudioFrameCount(duration * sampleRate)
-
-        // Stop the engine if it was running, then enable manual rendering
+        // Restart engine so newly-connected source nodes are pulled
         engine.audioEngine.stop()
-        try engine.audioEngine.enableManualRenderingMode(
-            .offline,
-            format: format,
-            maximumFrameCount: 4096
-        )
-
-        // Start the engine in offline mode
         try engine.audioEngine.start()
 
-        // Start pattern playback in background
-        let playTask = Task {
-            await musicPattern.play()
-        }
+        print("Rendering \(trackInfos.count) track(s), \(duration)s to \(outputPath)...")
+
+        let sampleRate = engine.sampleRate
+        let mainMixer = engine.audioEngine.mainMixerNode
+        let mixerFormat = mainMixer.outputFormat(forBus: 0)
 
         // Create the output file
         let outputURL = URL(fileURLWithPath: outputPath)
         let audioFile = try AVAudioFile(
             forWriting: outputURL,
-            settings: format.settings,
-            commonFormat: .pcmFormatFloat32,
-            interleaved: true
+            settings: mixerFormat.settings
         )
 
-        // Render in chunks
-        let buffer = AVAudioPCMBuffer(pcmFormat: format, frameCapacity: 4096)!
-        var framesRemaining = totalFrames
-        var framesRendered: AVAudioFrameCount = 0
+        // Install a tap to capture audio to file
+        var framesWritten: AVAudioFrameCount = 0
+        let totalFrames = AVAudioFrameCount(duration * sampleRate)
+        let writeGroup = DispatchGroup()
 
-        while framesRemaining > 0 {
-            let framesToRender = min(buffer.frameCapacity, framesRemaining)
-            let status = try engine.audioEngine.renderOffline(framesToRender, to: buffer)
-
-            switch status {
-            case .success:
+        mainMixer.installTap(onBus: 0, bufferSize: 4096, format: mixerFormat) { buffer, _ in
+            guard framesWritten < totalFrames else { return }
+            do {
                 try audioFile.write(from: buffer)
-                framesRendered += buffer.frameLength
-                framesRemaining -= buffer.frameLength
-            case .insufficientDataFromInputNode:
-                // Input node hasn't produced data yet; continue
-                continue
-            case .cannotDoInCurrentContext:
-                // Try again
-                try await Task.sleep(for: .milliseconds(1))
-                continue
-            case .error:
-                throw CLIError.renderFailed
-            @unknown default:
-                throw CLIError.renderFailed
-            }
+                framesWritten += buffer.frameLength
 
-            // Progress indicator every ~1 second of audio
-            let secondsRendered = Double(framesRendered) / sampleRate
-            if Int(secondsRendered) > Int(Double(framesRendered - buffer.frameLength) / sampleRate) {
-                print("  \(Int(secondsRendered))s / \(Int(duration))s")
+                // Progress indicator every ~1 second of audio
+                let secondsWritten = Double(framesWritten) / sampleRate
+                let prevSeconds = Double(framesWritten - buffer.frameLength) / sampleRate
+                if Int(secondsWritten) > Int(prevSeconds) {
+                    print("  \(Int(secondsWritten))s / \(Int(duration))s")
+                }
+            } catch {
+                fputs("Error writing audio: \(error)\n", stderr)
             }
         }
 
+        // Start pattern playback
+        let playTask = Task {
+            await musicPattern.play()
+        }
+
+        // Wait for the duration
+        try await Task.sleep(for: .seconds(duration))
+
         playTask.cancel()
+        mainMixer.removeTap(onBus: 0)
         engine.audioEngine.stop()
-        engine.audioEngine.disableManualRenderingMode()
 
         print("Done. Wrote \(outputPath)")
     }

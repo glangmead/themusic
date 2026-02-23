@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		01AD54111CB832744DD9D3B4 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1DA2ACBEE58E34EF14EFEF01 /* AudioKit */; };
+		236DB001F1164704FD5D7387 /* CLIEndToEndTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E86542670B9A9A624F44CAA /* CLIEndToEndTests.swift */; };
 		2FE4CE838AAAB431C9C01F0E /* Tonic in Frameworks */ = {isa = PBXBuildFile; productRef = 8206ECD197768E34F06A5FC8 /* Tonic */; };
 		4C67B2F7BC310C51258236AC /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = E12962ED1AFB9E4DEC6A6B08 /* ArgumentParser */; };
+		53ECDA2AEDC130FD19C2B5C6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FAAA31B3A4333E0DB8DCE40 /* Cocoa.framework */; };
 		5DCAB2DD59043BFE15106A7C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DD6800366650ECCC9F3933 /* main.swift */; };
 		782D27A02208C62B5D6EE43B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F02BA295029F9F3FE1846C40 /* Foundation.framework */; };
 		86D351107B76A61A677232A3 /* Overture in Frameworks */ = {isa = PBXBuildFile; productRef = 54A489589A5B0332439EEB84 /* Overture */; };
@@ -18,6 +20,7 @@
 		9B1864642E772E37006147D8 /* Overture in Frameworks */ = {isa = PBXBuildFile; productRef = 9B1864632E772E37006147D8 /* Overture */; };
 		9B7430A02ECFA5640017DE7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B7430922ECFA5640017DE7D /* Assets.xcassets */; };
 		9BA522562EB0FE8F00ECF215 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9BA522552EB0FE8F00ECF215 /* AudioKit */; };
+		9BAC01152F4CA5C20045341E /* table_aurora_frozen.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BAC01142F4CA5C20045341E /* table_aurora_frozen.json */; };
 		9BB2CD342F44E1C00019A2D4 /* samples in Resources */ = {isa = PBXBuildFile; fileRef = 9BB2CD332F44E1BB0019A2D4 /* samples */; };
 		9BB2CD362F44E1CA0019A2D4 /* presets in Resources */ = {isa = PBXBuildFile; fileRef = 9BB2CD352F44E1C60019A2D4 /* presets */; };
 		9BB2CD382F44E1D00019A2D4 /* patterns in Resources */ = {isa = PBXBuildFile; fileRef = 9BB2CD372F44E1CD0019A2D4 /* patterns */; };
@@ -30,6 +33,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		479D81FA8B674E67E48AC6BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BC0FC9F2E704EA900472A5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F57A792364534F331D2AAF6;
+			remoteInfo = OrbitalCLI;
+		};
 		9BC0FCB52E704EAA00472A5A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9BC0FC9F2E704EA900472A5A /* Project object */;
@@ -47,12 +57,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E86542670B9A9A624F44CAA /* CLIEndToEndTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CLIEndToEndTests.swift; sourceTree = "<group>"; };
+		355937DF421092FF815B50F7 /* OrbitalCLITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrbitalCLITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FAAA31B3A4333E0DB8DCE40 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		85DD6800366650ECCC9F3933 /* main.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		9B00F9D82F42402E0008058E /* AGENTS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = AGENTS.md; path = ../AGENTS.md; sourceTree = SOURCE_ROOT; };
 		9B0327712F46678900E12D2C /* Orbital-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Orbital-Info.plist"; sourceTree = "<group>"; };
 		9B1F016F2EB95F0A00C5110F /* Note.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = Note.icon; sourceTree = "<group>"; };
 		9B7430922ECFA5640017DE7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9BAC01142F4CA5C20045341E /* table_aurora_frozen.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = table_aurora_frozen.json; sourceTree = "<group>"; };
 		9BB2CD332F44E1BB0019A2D4 /* samples */ = {isa = PBXFileReference; lastKnownFileType = folder; path = samples; sourceTree = "<group>"; };
 		9BB2CD352F44E1C60019A2D4 /* presets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = presets; sourceTree = "<group>"; };
 		9BB2CD372F44E1CD0019A2D4 /* patterns */ = {isa = PBXFileReference; lastKnownFileType = folder; path = patterns; sourceTree = "<group>"; };
@@ -127,6 +140,14 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0C34D1120F1013572791289D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53ECDA2AEDC130FD19C2B5C6 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7BFFE7422B2572EF44FAC405 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -178,6 +199,15 @@
 			path = OrbitalCLI;
 			sourceTree = "<group>";
 		};
+		1111A8047F40255DB2FA3179 /* OrbitalCLITests */ = {
+			isa = PBXGroup;
+			children = (
+				2E86542670B9A9A624F44CAA /* CLIEndToEndTests.swift */,
+				9BAC01132F4CA5B70045341E /* Fixtures */,
+			);
+			path = OrbitalCLITests;
+			sourceTree = "<group>";
+		};
 		70486D5467729D2CE4A1461A /* OS X */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +230,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		9BAC01132F4CA5B70045341E /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				9BAC01142F4CA5C20045341E /* table_aurora_frozen.json */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
 		9BC0FC9E2E704EA900472A5A = {
 			isa = PBXGroup;
 			children = (
@@ -212,6 +250,7 @@
 				9BC0FCD42E7055FE00472A5A /* Frameworks */,
 				9BC0FCA82E704EA900472A5A /* Products */,
 				099EC7E6135668894AE83E6E /* OrbitalCLI */,
+				1111A8047F40255DB2FA3179 /* OrbitalCLITests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -222,6 +261,7 @@
 				9BC0FCB42E704EAA00472A5A /* OrbitalTests.xctest */,
 				9BC0FCBE2E704EAA00472A5A /* OrbitalUITests.xctest */,
 				CC70A99AE6E5F83E5B667F92 /* orbital-play */,
+				355937DF421092FF815B50F7 /* OrbitalCLITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -263,6 +303,24 @@
 			productName = OrbitalCLI;
 			productReference = CC70A99AE6E5F83E5B667F92 /* orbital-play */;
 			productType = "com.apple.product-type.tool";
+		};
+		668BAA23EB5AC1A1FA411977 /* OrbitalCLITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF97D94B6B60738C67CC35B8 /* Build configuration list for PBXNativeTarget "OrbitalCLITests" */;
+			buildPhases = (
+				C83BE9E5D4126FF29AA709DA /* Sources */,
+				0C34D1120F1013572791289D /* Frameworks */,
+				F8743D4D62A75F5064533892 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3A584EBC08F4E0FE875311E /* PBXTargetDependency */,
+			);
+			name = OrbitalCLITests;
+			productName = OrbitalCLITests;
+			productReference = 355937DF421092FF815B50F7 /* OrbitalCLITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		9BC0FCA62E704EA900472A5A /* Orbital */ = {
 			isa = PBXNativeTarget;
@@ -379,6 +437,7 @@
 				9BC0FCB32E704EAA00472A5A /* OrbitalTests */,
 				9BC0FCBD2E704EAA00472A5A /* OrbitalUITests */,
 				2F57A792364534F331D2AAF6 /* OrbitalCLI */,
+				668BAA23EB5AC1A1FA411977 /* OrbitalCLITests */,
 			);
 		};
 /* End PBXProject section */
@@ -412,6 +471,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F8743D4D62A75F5064533892 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BAC01152F4CA5C20045341E /* table_aurora_frozen.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -436,6 +503,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C83BE9E5D4126FF29AA709DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				236DB001F1164704FD5D7387 /* CLIEndToEndTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F7B29497D9EAC33C076F805E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -456,6 +531,12 @@
 			isa = PBXTargetDependency;
 			target = 9BC0FCA62E704EA900472A5A /* Orbital */;
 			targetProxy = 9BC0FCBF2E704EAA00472A5A /* PBXContainerItemProxy */;
+		};
+		A3A584EBC08F4E0FE875311E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OrbitalCLI;
+			target = 2F57A792364534F331D2AAF6 /* OrbitalCLI */;
+			targetProxy = 479D81FA8B674E67E48AC6BB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -754,6 +835,34 @@
 			};
 			name = Debug;
 		};
+		E07FE41C6B1FF83A73B4A2E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5Y5NG75847;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.langmead.OrbitalCLITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E5837B899B0D5A14262EED60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5Y5NG75847;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.langmead.OrbitalCLITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -798,6 +907,15 @@
 			buildConfigurations = (
 				101E684268240529855A8677 /* Release */,
 				A3F1BDF30C8DE578A30DCC05 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF97D94B6B60738C67CC35B8 /* Build configuration list for PBXNativeTarget "OrbitalCLITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E07FE41C6B1FF83A73B4A2E5 /* Release */,
+				E5837B899B0D5A14262EED60 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

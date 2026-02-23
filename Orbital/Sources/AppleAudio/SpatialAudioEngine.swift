@@ -16,9 +16,10 @@ class SpatialAudioEngine {
   let stereo: AVAudioFormat
   let mono: AVAudioFormat
 
-  let spatialEnabled = true
+  let spatialEnabled: Bool
 
-  init() {
+  init(spatialEnabled: Bool = true) {
+    self.spatialEnabled = spatialEnabled
     if spatialEnabled { audioEngine.attach(envNode) }
     stereo = AVAudioFormat(standardFormatWithSampleRate: audioEngine.outputNode.inputFormat(forBus: 0).sampleRate, channels: 2)!
     mono = AVAudioFormat(standardFormatWithSampleRate: audioEngine.outputNode.inputFormat(forBus: 0).sampleRate, channels: 1)!
