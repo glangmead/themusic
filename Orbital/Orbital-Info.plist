@@ -10,5 +10,17 @@
 	</array>
 	<key>UIFileSharingEnabled</key>
 	<true/>
+	<key>NSUbiquitousContainers</key>
+	<dict>
+			<key>iCloud.com.yourdomain.Orbital</key>
+			<dict>
+					<key>NSUbiquitousContainerIsDocumentScopePublic</key>
+					<true/>
+					<key>NSUbiquitousContainerName</key>
+					<string>Orbital</string>
+					<key>NSUbiquitousContainerSupportedFolderLevels</key>
+					<string>ANY</string>
+			</dict>
+	</dict>
 </dict>
 </plist>
