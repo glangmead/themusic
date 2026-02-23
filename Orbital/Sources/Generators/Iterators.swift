@@ -49,6 +49,7 @@ class WaitingIterator<Element>: Sequence, IteratorProtocol {
   }
 }
 
+// [MidiNote]
 struct Midi1700sChordGenerator: Sequence, IteratorProtocol {
   // two pieces of data for the "key", e.g. "E minor"
   var scaleGenerator: any IteratorProtocol<Scale>
@@ -211,7 +212,7 @@ struct MidiPitchAsChordGenerator: Sequence, IteratorProtocol {
   }
 }
 
-// sample notes from a scale
+// sample notes from a scale: [MidiNote]
 struct ScaleSampler: Sequence, IteratorProtocol {
   typealias Element = [MidiNote]
   var scale: Scale
@@ -230,7 +231,7 @@ struct ScaleSampler: Sequence, IteratorProtocol {
 
 enum ProbabilityDistribution {
   case uniform
-  case gaussian(avg: CoreFloat, stdev: CoreFloat)
+  case exponential
 }
 
 struct FloatSampler: Sequence, IteratorProtocol {
@@ -238,14 +239,25 @@ struct FloatSampler: Sequence, IteratorProtocol {
   let distribution: ProbabilityDistribution
   let min: CoreFloat
   let max: CoreFloat
+  private let lambda: CoreFloat
+
   init(min: CoreFloat, max: CoreFloat, dist: ProbabilityDistribution = .uniform) {
     self.distribution = dist
-    self.min = min
-    self.max = max
+    self.min = Swift.min(min, max)
+    self.max = Swift.max(min, max)
+    let range = self.max - self.min
+    self.lambda = range > 0 ? -log(0.05) / range : 1
   }
   
   func next() -> CoreFloat? {
-    CoreFloat.random(in: min...max)
+    switch distribution {
+    case .uniform:
+      return CoreFloat.random(in: min...max)
+    case .exponential:
+      let u = CoreFloat.random(in: CoreFloat.ulpOfOne...1)
+      let raw = -log(u) / lambda
+      return clamp(min + raw, min: min, max: max)
+    }
   }
 }
 
@@ -287,31 +299,6 @@ struct IntSampler: Sequence, IteratorProtocol {
 
   func next() -> Int? {
     Int.random(in: min...max)
-  }
-}
-
-// MARK: - ExponentialFloatSampler
-
-/// Exponential distribution sampling mapped to [min, max].
-/// λ is chosen so ~95% of raw samples fall within the range; values beyond max are clamped.
-/// Heavily biased toward min.
-struct ExponentialFloatSampler: Sequence, IteratorProtocol {
-  let min: CoreFloat
-  let max: CoreFloat
-  private let lambda: CoreFloat
-
-  init(min: CoreFloat, max: CoreFloat) {
-    self.min = Swift.min(min, max)
-    self.max = Swift.max(min, max)
-    let range = self.max - self.min
-    self.lambda = range > 0 ? -log(0.05) / range : 1
-  }
-
-  func next() -> CoreFloat? {
-    let u = CoreFloat.random(in: CoreFloat.ulpOfOne...1)
-    let raw = -log(u) / lambda
-    let result = clamp(min + raw, min: min, max: max)
-    return result
   }
 }
 

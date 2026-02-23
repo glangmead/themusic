@@ -107,21 +107,21 @@ struct RuntimePrimitiveTests {
     }
   }
 
-  @Test("ExponentialFloatSampler produces values in range")
+  @Test("FloatSampler with exponential distribution produces values in range")
   func exponentialFloatSamplerRange() {
-    let sampler = ExponentialFloatSampler(min: 0.001, max: 1.0)
+    let sampler = FloatSampler(min: 0.001, max: 1.0, dist: .exponential)
     for _ in 0..<100 {
       let val = sampler.next()!
       #expect(val >= 0.001 && val <= 1.0,
-              "ExponentialFloatSampler value \(val) should be in [0.001, 1.0]")
+              "Exponential FloatSampler value \(val) should be in [0.001, 1.0]")
     }
   }
 
-  @Test("ExponentialFloatSampler with equal min and max returns that value")
+  @Test("FloatSampler with exponential distribution and equal min/max returns that value")
   func exponentialDegenerateRange() {
-    let sampler = ExponentialFloatSampler(min: 0.5, max: 0.5)
+    let sampler = FloatSampler(min: 0.5, max: 0.5, dist: .exponential)
     let val = sampler.next()!
-    #expect(val == 0.5, "ExponentialFloatSampler with min==max should return that value")
+    #expect(val == 0.5, "Exponential FloatSampler with min==max should return that value")
   }
 
   @Test("MutableParam updates are visible to MutableFloatSampler")

@@ -293,7 +293,7 @@ enum TablePatternCompiler {
       iter = MutableFloatSampler(minParam: minP, maxParam: maxP)
 
     case .exponentialRandFloat:
-      iter = ExponentialFloatSampler(min: minVal, max: maxVal)
+      iter = FloatSampler(min: minVal, max: maxVal, dist: .exponential)
 
     case .sum:
       guard let inputs = row.inputEmitters, !inputs.isEmpty else {
