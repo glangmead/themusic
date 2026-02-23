@@ -474,9 +474,11 @@ struct MusicPatternEventGenerationTests {
 @Suite("Multi-track MIDI Parsing", .serialized)
 struct MultiTrackMidiParsingTests {
 
-  /// Locate the BachInvention1.mid file in the app bundle.
-  private func bachURL() throws -> URL {
-    guard let url = Bundle.main.url(forResource: "BachInvention1", withExtension: "mid", subdirectory: "patterns") else {
+  /// Locate the BachInvention1.mid file in the OrbitalTests/Fixtures directory.
+  private func bachURL(filePath: String = #filePath) throws -> URL {
+    let testsDir = URL(fileURLWithPath: filePath).deletingLastPathComponent()
+    let url = testsDir.appendingPathComponent("Fixtures").appendingPathComponent("BachInvention1.mid")
+    guard FileManager.default.fileExists(atPath: url.path) else {
       throw MidiTestError.fileNotFound
     }
     return url

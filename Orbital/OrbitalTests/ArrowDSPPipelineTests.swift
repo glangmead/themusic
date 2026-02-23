@@ -82,10 +82,12 @@ func zeroCrossings(_ buffer: [CoreFloat]) -> Int {
   return count
 }
 
-/// Loads a PresetSyntax from a JSON file in the app bundle's presets directory.
-func loadPresetSyntax(_ filename: String) throws -> PresetSyntax {
-  guard let url = Bundle.main.url(forResource: filename, withExtension: nil, subdirectory: "presets") else {
-    throw PresetLoadError.fileNotFound(filename)
+/// Loads a PresetSyntax from a JSON file in the OrbitalTests/Fixtures directory.
+func loadPresetSyntax(_ filename: String, filePath: String = #filePath) throws -> PresetSyntax {
+  let testsDir = URL(fileURLWithPath: filePath).deletingLastPathComponent()
+  let url = testsDir.appendingPathComponent("Fixtures").appendingPathComponent(filename)
+  guard FileManager.default.fileExists(atPath: url.path) else {
+    throw PresetLoadError.fileNotFound("Fixture not found: \(url.path)")
   }
   let data = try Data(contentsOf: url)
   return try JSONDecoder().decode(PresetSyntax.self, from: data)
@@ -117,8 +119,8 @@ let arrowPresetFiles = [
 ]
 
 /// Presets whose sound fingerprint should remain stable.
-/// auroraBorealis is tested separately via a frozen fixture so that
-/// sound-design iteration doesn't break fingerprint assertions.
+/// auroraBorealis is tested separately via auroraBorealis_frozen.json so that
+/// sound-design iteration on auroraBorealis.json doesn't break fingerprint assertions.
 let fingerprintPresetFiles = [
   "sine.json",
   "saw.json",
@@ -826,7 +828,7 @@ struct ArrowLibraryTests {
   @Test("auroraBorealis_frozen.json decodes and compiles with library")
   func tableKeeningLoadsAndCompiles() throws {
     let preset = try loadFixturePreset("auroraBorealis_frozen.json")
-    #expect(preset.name == "Table Keening")
+    #expect(preset.name == "Keening")
     #expect(preset.library != nil)
     #expect(preset.library?.count == 3)
 
@@ -836,7 +838,7 @@ struct ArrowLibraryTests {
 
     // Compile should succeed (resolves library + compiles arrow)
     let compiled = preset.compile(numVoices: 1, initEffects: false)
-    #expect(compiled.name == "Table Keening")
+    #expect(compiled.name == "Keening")
     #expect(compiled.sound != nil, "Should have a compiled sound arrow")
   }
 

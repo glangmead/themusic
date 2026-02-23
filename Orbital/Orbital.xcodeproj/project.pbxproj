@@ -114,7 +114,15 @@
 		9B520CF52F4BEE4B001B575D /* Exceptions for "OrbitalTests" folder in "OrbitalTests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				Fixtures/5th_cluedo.json,
 				Fixtures/auroraBorealis_frozen.json,
+				Fixtures/auroraBorealis.json,
+				Fixtures/BachInvention1.mid,
+				Fixtures/saw.json,
+				Fixtures/sine.json,
+				Fixtures/square.json,
+				Fixtures/table_aurora.json,
+				Fixtures/triangle.json,
 			);
 			target = 9BC0FCB32E704EAA00472A5A /* OrbitalTests */;
 		};

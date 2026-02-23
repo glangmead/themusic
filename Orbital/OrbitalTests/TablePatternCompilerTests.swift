@@ -629,9 +629,22 @@ struct ArrowModulatorTests {
     #expect(compiled.namedEmitterValues["b"]?.count == 1)
   }
 
+  /// Load a fixture file from OrbitalTests/Fixtures/.
+  private func loadFixturePattern(_ filename: String, filePath: String = #filePath) throws -> PatternSyntax {
+    let testsDir = URL(fileURLWithPath: filePath).deletingLastPathComponent()
+    let url = testsDir.appendingPathComponent("Fixtures").appendingPathComponent(filename)
+    guard FileManager.default.fileExists(atPath: url.path) else {
+      throw FixtureLoadError.fileNotFound("Fixture not found: \(url.path)")
+    }
+    let data = try Data(contentsOf: url)
+    return try JSONDecoder().decode(PatternSyntax.self, from: data)
+  }
+
+  private enum FixtureLoadError: Error { case fileNotFound(String) }
+
   @Test("table_aurora.json decodes successfully with arrow modulator")
   func tableAuroraDecodes() throws {
-    let pattern = Bundle.main.decode(PatternSyntax.self, from: "table_aurora.json", subdirectory: "patterns")
+    let pattern = try loadFixturePattern("table_aurora.json")
     let table = try #require(pattern.tableTracks)
     // Find the arrow-based modulator
     let octaveMod = table.modulators.first(where: { $0.name == "octaveAmpMod" })
