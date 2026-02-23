@@ -201,7 +201,7 @@ extension ArrowSyntax {
       inner.collectDescriptors(into: &descriptors, seenIds: &seenIds)
 
     case .identity, .control, .rand, .exponentialRand, .noiseSmoothStep, .line,
-         .eventNote, .eventVelocity, .libraryArrow:
+         .eventNote, .eventVelocity, .libraryArrow, .emitterValue:
       break
     }
   }

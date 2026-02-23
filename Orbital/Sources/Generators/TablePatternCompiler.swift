@@ -20,11 +20,15 @@ final class CompiledEmitter {
   let iterator: Any
   /// Mutable parameters exposed for meta-modulation (e.g. "arg1", "arg2").
   var mutableParams: [String: MutableParam]
+  /// Shadow ArrowConst that holds the float-coerced last value from this emitter.
+  /// Updated by CapturingIterator wrapper whenever next() is called.
+  let lastValueShadow: ArrowConst
 
-  init(outputType: EmitterOutputType, iterator: Any, mutableParams: [String: MutableParam] = [:]) {
+  init(outputType: EmitterOutputType, iterator: Any, mutableParams: [String: MutableParam] = [:], lastValueShadow: ArrowConst = ArrowConst(value: 0)) {
     self.outputType = outputType
     self.iterator = iterator
     self.mutableParams = mutableParams
+    self.lastValueShadow = lastValueShadow
   }
 
   /// Convenience to get the iterator as a specific type.
@@ -334,7 +338,9 @@ enum TablePatternCompiler {
     }
 
     iter = wrapUpdateMode(iter, row: row, allEmitters: allEmitters)
-    return CompiledEmitter(outputType: .float, iterator: iter, mutableParams: mutableParams)
+    let shadow = ArrowConst(value: 0)
+    let capturing = CapturingIterator(inner: iter, shadow: shadow, toFloat: { $0 })
+    return CompiledEmitter(outputType: .float, iterator: capturing, mutableParams: mutableParams, lastValueShadow: shadow)
   }
 
   private static func compileIntEmitter(
@@ -368,7 +374,9 @@ enum TablePatternCompiler {
     }
 
     iter = wrapUpdateMode(iter, row: row, allEmitters: allEmitters)
-    return CompiledEmitter(outputType: .int, iterator: iter)
+    let shadow = ArrowConst(value: 0)
+    let capturing = CapturingIterator(inner: iter, shadow: shadow, toFloat: { CoreFloat($0) })
+    return CompiledEmitter(outputType: .int, iterator: capturing, lastValueShadow: shadow)
   }
 
   private static func compileRootEmitter(
@@ -389,7 +397,9 @@ enum TablePatternCompiler {
     }
 
     iter = wrapUpdateMode(iter, row: row, allEmitters: allEmitters)
-    return CompiledEmitter(outputType: .root, iterator: iter)
+    let shadow = ArrowConst(value: 0)
+    let capturing = CapturingIterator(inner: iter, shadow: shadow, toFloat: { _ in 0 })
+    return CompiledEmitter(outputType: .root, iterator: capturing, lastValueShadow: shadow)
   }
 
   private static func compileOctaveEmitter(
@@ -410,7 +420,9 @@ enum TablePatternCompiler {
     }
 
     iter = wrapUpdateMode(iter, row: row, allEmitters: allEmitters)
-    return CompiledEmitter(outputType: .octave, iterator: iter)
+    let shadow = ArrowConst(value: 0)
+    let capturing = CapturingIterator(inner: iter, shadow: shadow, toFloat: { CoreFloat($0) })
+    return CompiledEmitter(outputType: .octave, iterator: capturing, lastValueShadow: shadow)
   }
 
   private static func compileScaleEmitter(
@@ -431,7 +443,9 @@ enum TablePatternCompiler {
     }
 
     iter = wrapUpdateMode(iter, row: row, allEmitters: allEmitters)
-    return CompiledEmitter(outputType: .scale, iterator: iter)
+    let shadow = ArrowConst(value: 0)
+    let capturing = CapturingIterator(inner: iter, shadow: shadow, toFloat: { _ in 0 })
+    return CompiledEmitter(outputType: .scale, iterator: capturing, lastValueShadow: shadow)
   }
 
   // MARK: - List Function Application
@@ -513,6 +527,26 @@ enum TablePatternCompiler {
     _ mod: ModulatorRowSyntax,
     emitters: [String: CompiledEmitter]
   ) throws -> (target: String, arrow: Arrow11) {
+    // Arrow-based modulator: compile the ArrowSyntax and wire emitterValue placeholders
+    if let arrowSyntax = mod.arrow {
+      let compiled = arrowSyntax.compile()
+      // Wire emitter value placeholders to shadows
+      for (emitterName, placeholders) in compiled.namedEmitterValues {
+        guard let shadow = emitters[emitterName]?.lastValueShadow else {
+          throw TableCompileError.unknownEmitter(name: emitterName, referencedBy: mod.name)
+        }
+        for placeholder in placeholders {
+          placeholder.forwardTo = shadow
+        }
+      }
+      return (target: mod.targetHandle, arrow: compiled)
+    }
+
+    // Float-emitter based modulation (existing path)
+    guard let floatEmitterName = mod.floatEmitter, !floatEmitterName.isEmpty else {
+      throw TableCompileError.unknownEmitter(name: "(none)", referencedBy: mod.name)
+    }
+
     // Check for meta-modulation: "emitterName.paramName"
     if mod.targetHandle.contains(".") {
       let parts = mod.targetHandle.split(separator: ".", maxSplits: 1)
@@ -524,9 +558,9 @@ enum TablePatternCompiler {
         if let targetEmitter = emitters[emitterName],
            let param = targetEmitter.mutableParams[paramName] {
           // Create an arrow that writes to the mutable param
-          guard let sourceEmitter = emitters[mod.floatEmitter],
+          guard let sourceEmitter = emitters[floatEmitterName],
                 let sourceIter = sourceEmitter.floatIterator() else {
-            throw TableCompileError.unknownEmitter(name: mod.floatEmitter, referencedBy: mod.name)
+            throw TableCompileError.unknownEmitter(name: floatEmitterName, referencedBy: mod.name)
           }
           let arrow = MetaModulationArrow(source: sourceIter, target: param)
           // Return a dummy target — meta-modulation happens inside the arrow
@@ -536,9 +570,9 @@ enum TablePatternCompiler {
     }
 
     // Standard modulation: target is a preset handle name
-    guard let sourceEmitter = emitters[mod.floatEmitter],
+    guard let sourceEmitter = emitters[floatEmitterName],
           let sourceIter = sourceEmitter.floatIterator() else {
-      throw TableCompileError.unknownEmitter(name: mod.floatEmitter, referencedBy: mod.name)
+      throw TableCompileError.unknownEmitter(name: floatEmitterName, referencedBy: mod.name)
     }
     return (target: mod.targetHandle, arrow: EmitterArrow(emitter: sourceIter))
   }
@@ -554,6 +588,28 @@ enum TablePatternCompiler {
       throw TableCompileError.unknownEmitter(name: name, referencedBy: referencedBy)
     }
     return fi
+  }
+}
+
+// MARK: - CapturingIterator
+
+/// Wraps an iterator and writes the float-coerced last value to a shadow ArrowConst
+/// on each next(). Used so that arrow-based modulators can read emitter values.
+class CapturingIterator<T>: Sequence, IteratorProtocol {
+  private var inner: any IteratorProtocol<T>
+  private let shadow: ArrowConst
+  private let toFloat: (T) -> CoreFloat
+
+  init(inner: any IteratorProtocol<T>, shadow: ArrowConst, toFloat: @escaping (T) -> CoreFloat) {
+    self.inner = inner
+    self.shadow = shadow
+    self.toFloat = toFloat
+  }
+
+  func next() -> T? {
+    guard let value = inner.next() else { return nil }
+    shadow.val = toFloat(value)
+    return value
   }
 }
 

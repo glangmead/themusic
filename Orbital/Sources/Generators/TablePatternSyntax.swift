@@ -258,29 +258,34 @@ struct NoteMaterialRowSyntax: Codable, Equatable, Identifiable {
 
 // MARK: - Table 3: Modulator Row
 
-/// A row in the Modulators table. Wires a float emitter to a target handle.
+/// A row in the Modulators table. Wires a float emitter or an ArrowSyntax formula to a target handle.
 struct ModulatorRowSyntax: Codable, Equatable, Identifiable {
   var id: UUID
   var name: String
   /// The target parameter handle (e.g. "overallAmp", or "♦️.max" for meta-modulation).
   var targetHandle: String
-  /// Name of a float-output emitter that drives this modulator.
-  var floatEmitter: String
+  /// Name of a float-output emitter that drives this modulator (simple path).
+  var floatEmitter: String?
+  /// An ArrowSyntax formula for computing the modulation value (arrow path).
+  /// Can reference emitter values via `.emitterValue(name:)`.
+  var arrow: ArrowSyntax?
 
   init(
     id: UUID = UUID(),
     name: String,
     targetHandle: String,
-    floatEmitter: String
+    floatEmitter: String? = nil,
+    arrow: ArrowSyntax? = nil
   ) {
     self.id = id
     self.name = name
     self.targetHandle = targetHandle
     self.floatEmitter = floatEmitter
+    self.arrow = arrow
   }
 
   enum CodingKeys: String, CodingKey {
-    case id, name, targetHandle, floatEmitter
+    case id, name, targetHandle, floatEmitter, arrow
   }
 
   init(from decoder: Decoder) throws {
@@ -288,7 +293,8 @@ struct ModulatorRowSyntax: Codable, Equatable, Identifiable {
     id = try c.decodeIfPresent(UUID.self, forKey: .id) ?? UUID()
     name = try c.decode(String.self, forKey: .name)
     targetHandle = try c.decode(String.self, forKey: .targetHandle)
-    floatEmitter = try c.decode(String.self, forKey: .floatEmitter)
+    floatEmitter = try c.decodeIfPresent(String.self, forKey: .floatEmitter)
+    arrow = try c.decodeIfPresent(ArrowSyntax.self, forKey: .arrow)
   }
 }
 

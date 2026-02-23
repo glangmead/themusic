@@ -105,9 +105,12 @@
         "floatEmitter": "vibratoFreqVal"
       },
       {
-        "name": "vibEnvMod",
-        "targetHandle": "",
-        "floatEmitter": "sustain"
+        "name": "octaveAmpMod",
+        "targetHandle": "overallAmp2",
+        "arrow": {"reciprocal": {"of": {"sum": {"of": [
+          {"const": {"name": "one", "val": 1}},
+          {"emitterValue": {"name": "octaves"}}
+        ]}}}}
       }
     ],
     "tracks": [
@@ -115,7 +118,7 @@
         "name": "Table Aurora",
         "presetFilename": "auroraBorealis",
         "numVoices": 3,
-        "modulatorNames": ["ampMod", "vibAmpMod", "vibFreqMod"],
+        "modulatorNames": ["ampMod", "octaveAmpMod", "vibAmpMod", "vibFreqMod"],
         "noteMaterial": "melody",
         "sustainEmitter": "sustain",
         "gapEmitter": "gap"

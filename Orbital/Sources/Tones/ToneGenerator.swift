@@ -596,6 +596,7 @@ class ArrowWithHandles: Arrow11 {
   var namedCrossfaders   = [String: [ArrowCrossfade]]()
   var namedCrossfadersEqPow = [String: [ArrowEqualPowerCrossfade]]()
   var namedEventUsing = [String: [EventUsingArrow]]()
+  var namedEmitterValues = [String: [ArrowConst]]()
   var wrappedArrow: Arrow11
   private var wrappedArrowUnsafe: Unmanaged<Arrow11>
   
@@ -627,6 +628,7 @@ class ArrowWithHandles: Arrow11 {
     namedCrossfaders.merge(arr2.namedCrossfaders) { (a, b) in return a + b }
     namedCrossfadersEqPow.merge(arr2.namedCrossfadersEqPow) { (a, b) in return a + b }
     namedEventUsing.merge(arr2.namedEventUsing) { (a, b) in return a + b }
+    namedEmitterValues.merge(arr2.namedEmitterValues) { (a, b) in return a + b }
     return self
   }
   
@@ -638,7 +640,7 @@ class ArrowWithHandles: Arrow11 {
   }
 }
 
-enum ArrowSyntax: Codable {
+enum ArrowSyntax: Codable, Equatable {
   // NOTE: cases must each have a *different associated type*, as it's branched on in the Decoding logic
   case const(name: String, val: CoreFloat)
   case constOctave(name: String, val: CoreFloat)
@@ -662,6 +664,7 @@ enum ArrowSyntax: Codable {
   case eventNote
   case eventVelocity
   case libraryArrow(name: String)
+  case emitterValue(name: String)
   
   indirect case osc(name: String, shape: BasicOscillator.OscShape, width: ArrowSyntax)
   
@@ -832,6 +835,12 @@ enum ArrowSyntax: Codable {
 
     case .libraryArrow(let name):
       fatalError("libraryArrow '\(name)' was not resolved — call resolveLibrary() before compile()")
+
+    case .emitterValue(let name):
+      let arr = ArrowConst(value: 0)
+      let handleArr = ArrowWithHandles(arr)
+      handleArr.namedEmitterValues[name] = [arr]
+      return handleArr
     }
   }
 
@@ -863,7 +872,7 @@ enum ArrowSyntax: Codable {
     case .const, .constOctave, .constCent, .reciprocalConst,
          .identity, .control, .envelope, .choruser,
          .noiseSmoothStep, .rand, .exponentialRand, .line,
-         .eventNote, .eventVelocity, .libraryArrow:
+         .eventNote, .eventVelocity, .libraryArrow, .emitterValue:
       return self
     }
   }

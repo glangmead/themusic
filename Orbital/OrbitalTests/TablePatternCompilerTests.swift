@@ -510,3 +510,136 @@ struct IntToFloatIteratorTests {
     #expect(adapter.next()! == 3.0)
   }
 }
+// MARK: - CapturingIterator Tests
+
+@Suite("CapturingIterator")
+struct CapturingIteratorTests {
+
+  @Test("CapturingIterator updates shadow ArrowConst on each next()")
+  func updatesShadowOnNext() {
+    let shadow = ArrowConst(value: 0)
+    let inner: any IteratorProtocol<Int> = [10, 20, 30].cyclicIterator()
+    let capturing = CapturingIterator(inner: inner, shadow: shadow, toFloat: { CoreFloat($0) })
+    #expect(shadow.val == 0, "Shadow starts at 0")
+
+    let v1 = capturing.next()
+    #expect(v1 == 10)
+    #expect(shadow.val == 10.0, "Shadow updated to 10 after first next()")
+
+    let v2 = capturing.next()
+    #expect(v2 == 20)
+    #expect(shadow.val == 20.0, "Shadow updated to 20 after second next()")
+  }
+
+  @Test("CapturingIterator preserves original element type")
+  func preservesElementType() {
+    let shadow = ArrowConst(value: 0)
+    let inner: any IteratorProtocol<CoreFloat> = [3.5, 7.25].cyclicIterator()
+    let capturing = CapturingIterator(inner: inner, shadow: shadow, toFloat: { $0 })
+
+    let v = capturing.next()!
+    #expect(v == 3.5)
+    #expect(shadow.val == 3.5)
+  }
+}
+
+// MARK: - ArrowConst ForwardTo Tests
+
+@Suite("ArrowConst ForwardTo")
+struct ArrowConstForwardToTests {
+
+  @Test("ArrowConst without forwardTo reads own val")
+  func readsOwnVal() {
+    let c = ArrowConst(value: 42.0)
+    #expect(c.effectiveVal == 42.0)
+  }
+
+  @Test("ArrowConst with forwardTo reads forwarded val")
+  func readsForwardedVal() {
+    let source = ArrowConst(value: 99.0)
+    let placeholder = ArrowConst(value: 0)
+    placeholder.forwardTo = source
+    #expect(placeholder.effectiveVal == 99.0)
+
+    // process() should also use the forwarded value
+    let inputs: [CoreFloat] = [0, 0, 0]
+    var outputs: [CoreFloat] = [0, 0, 0]
+    placeholder.process(inputs: inputs, outputs: &outputs)
+    #expect(outputs == [99.0, 99.0, 99.0])
+
+    // Updating source's val should be reflected
+    source.val = 50.0
+    #expect(placeholder.effectiveVal == 50.0)
+  }
+}
+
+// MARK: - Arrow Modulator Tests
+
+@Suite("Arrow-Based Modulators")
+struct ArrowModulatorTests {
+
+  @Test("emitterValue compiles to ArrowConst registered in namedEmitterValues")
+  func emitterValueCompiles() {
+    let syntax = ArrowSyntax.emitterValue(name: "octaves")
+    let compiled = syntax.compile()
+    #expect(compiled.namedEmitterValues["octaves"]?.count == 1)
+    // The ArrowConst should start at 0
+    #expect(compiled.namedEmitterValues["octaves"]?.first?.val == 0)
+  }
+
+  @Test("emitterValue with forwardTo reads captured emitter value")
+  func emitterValueReadsCapture() {
+    // Simulate what compileModulator does:
+    // 1. Create shadow (as CapturingIterator would)
+    let shadow = ArrowConst(value: 3.0) // simulates octave = 3
+
+    // 2. Compile an arrow: reciprocal(sum(const(1), emitterValue("oct")))
+    let syntax = ArrowSyntax.reciprocal(
+      of: .sum(of: [
+        .const(name: "one", val: 1.0),
+        .emitterValue(name: "oct")
+      ])
+    )
+    let compiled = syntax.compile()
+
+    // 3. Wire the placeholder to the shadow
+    for placeholder in compiled.namedEmitterValues["oct"] ?? [] {
+      placeholder.forwardTo = shadow
+    }
+
+    // 4. Evaluate: should compute 1 / (1 + 3) = 0.25
+    let result = compiled.of(0)
+    #expect(abs(result - 0.25) < 0.001, "Expected 0.25, got \(result)")
+
+    // 5. Update shadow and re-evaluate: 1 / (1 + 4) = 0.2
+    shadow.val = 4.0
+    let result2 = compiled.of(0)
+    #expect(abs(result2 - 0.2) < 0.001, "Expected 0.2, got \(result2)")
+  }
+
+  @Test("namedEmitterValues merges through recursive compilation")
+  func emitterValuesMerge() {
+    // A sum that contains two emitterValue references
+    let syntax = ArrowSyntax.sum(of: [
+      .emitterValue(name: "a"),
+      .emitterValue(name: "b")
+    ])
+    let compiled = syntax.compile()
+    #expect(compiled.namedEmitterValues["a"]?.count == 1)
+    #expect(compiled.namedEmitterValues["b"]?.count == 1)
+  }
+
+  @Test("table_aurora.json decodes successfully with arrow modulator")
+  func tableAuroraDecodes() throws {
+    let pattern = Bundle.main.decode(PatternSyntax.self, from: "table_aurora.json", subdirectory: "patterns")
+    let table = try #require(pattern.tableTracks)
+    // Find the arrow-based modulator
+    let octaveMod = table.modulators.first(where: { $0.name == "octaveAmpMod" })
+    #expect(octaveMod != nil, "Should find octaveAmpMod modulator")
+    #expect(octaveMod?.arrow != nil, "octaveAmpMod should have an arrow")
+    #expect(octaveMod?.floatEmitter == nil, "octaveAmpMod should not have a floatEmitter")
+    #expect(octaveMod?.targetHandle == "overallAmp2")
+  }
+}
+
+

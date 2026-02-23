@@ -127,6 +127,11 @@ struct ArrowSyntaxEditorView: View {
       Text("Library: \(name)")
         .font(.caption)
         .foregroundStyle(.secondary)
+
+    case .emitterValue(let name):
+      Text("Emitter: \(name)")
+        .font(.caption)
+        .foregroundStyle(.secondary)
     }
   }
 }

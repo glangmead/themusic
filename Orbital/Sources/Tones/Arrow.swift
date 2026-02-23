@@ -385,13 +385,19 @@ protocol ValHaver: AnyObject {
 
 final class ArrowConst: Arrow11, ValHaver, Equatable {
   var val: CoreFloat
+  /// When set, this ArrowConst reads from the forwarded source's val instead of its own.
+  /// Used by emitterValue arrows to read captured emitter values.
+  var forwardTo: ArrowConst?
   init(value: CoreFloat) {
     self.val = value
     super.init()
   }
+  /// The effective value: reads from forwardTo if set, otherwise self.val.
+  var effectiveVal: CoreFloat { forwardTo?.val ?? val }
+
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
     outputs.withUnsafeMutableBufferPointer { outBuf in
-      var v = val
+      var v = effectiveVal
       vDSP_vfillD(&v, outBuf.baseAddress!, 1, vDSP_Length(inputs.count))
     }
   }

@@ -147,7 +147,7 @@ struct TableModulatorRowState: Identifiable, Equatable {
     id = syntax.id
     name = syntax.name
     targetHandle = syntax.targetHandle
-    floatEmitter = syntax.floatEmitter
+    floatEmitter = syntax.floatEmitter ?? ""
   }
 
   init() {

@@ -91,17 +91,39 @@ func loadPresetSyntax(_ filename: String) throws -> PresetSyntax {
   return try JSONDecoder().decode(PresetSyntax.self, from: data)
 }
 
+/// Load a frozen preset fixture from OrbitalTests/Fixtures/.
+func loadFixturePreset(_ filename: String, filePath: String = #filePath) throws -> PresetSyntax {
+  let testsDir = URL(fileURLWithPath: filePath).deletingLastPathComponent()
+  let url = testsDir.appendingPathComponent("Fixtures").appendingPathComponent(filename)
+  guard FileManager.default.fileExists(atPath: url.path) else {
+    throw PresetLoadError.fileNotFound("Fixture not found: \(url.path)")
+  }
+  let data = try Data(contentsOf: url)
+  return try JSONDecoder().decode(PresetSyntax.self, from: data)
+}
+
 enum PresetLoadError: Error {
   case fileNotFound(String)
 }
 
-/// The Arrow preset JSON filenames (excludes sampler-only presets).
+/// All Arrow preset JSON filenames for structural tests (decode, compile).
 let arrowPresetFiles = [
   "sine.json",
   "saw.json",
   "square.json",
   "triangle.json",
   "auroraBorealis.json",
+  "5th_cluedo.json",
+]
+
+/// Presets whose sound fingerprint should remain stable.
+/// auroraBorealis is tested separately via a frozen fixture so that
+/// sound-design iteration doesn't break fingerprint assertions.
+let fingerprintPresetFiles = [
+  "sine.json",
+  "saw.json",
+  "square.json",
+  "triangle.json",
   "5th_cluedo.json",
 ]
 
@@ -392,7 +414,8 @@ struct PresetCompilationTests {
       Issue.record("\(filename) has no arrow field")
       return
     }
-    let handles = arrowSyntax.compile()
+    let resolved = arrowSyntax.resolveLibrary(syntax.resolvedLibrary())
+    let handles = resolved.compile()
     // Every arrow preset should have an ampEnv and at least one freq const
     #expect(!handles.namedADSREnvelopes.isEmpty,
             "\(filename) should have ADSR envelopes")
@@ -404,8 +427,9 @@ struct PresetCompilationTests {
 
   @Test("Aurora Borealis has Chorusers in its graph")
   func auroraBorealisHasChoruser() throws {
-    let syntax = try loadPresetSyntax("auroraBorealis.json")
-    let handles = syntax.arrow!.compile()
+    let syntax = try loadFixturePreset("auroraBorealis_frozen.json")
+    let resolved = syntax.arrow!.resolveLibrary(syntax.resolvedLibrary())
+    let handles = resolved.compile()
     #expect(!handles.namedChorusers.isEmpty,
             "auroraBorealis should have at least one Choruser")
   }
@@ -444,7 +468,8 @@ struct PresetSoundFingerprintTests {
     guard let arrowSyntax = syntax.arrow else {
       throw PresetLoadError.fileNotFound("No arrow in \(filename)")
     }
-    let handles = arrowSyntax.compile()
+    let resolved = arrowSyntax.resolveLibrary(syntax.resolvedLibrary())
+    let handles = resolved.compile()
 
     // Set frequency
     if let freqConsts = handles.namedConsts["freq"] {
@@ -461,14 +486,46 @@ struct PresetSoundFingerprintTests {
     return (rms: rms(buffer), zeroCrossings: zeroCrossings(buffer))
   }
 
+  /// Fingerprint a preset loaded from any source.
+  private func fingerprint(
+    preset syntax: PresetSyntax,
+    freq: CoreFloat = 440,
+    sampleCount: Int = 4410
+  ) throws -> (rms: CoreFloat, zeroCrossings: Int) {
+    guard let arrowSyntax = syntax.arrow else {
+      throw PresetLoadError.fileNotFound("No arrow in preset")
+    }
+    let resolved = arrowSyntax.resolveLibrary(syntax.resolvedLibrary())
+    let handles = resolved.compile()
+    if let freqConsts = handles.namedConsts["freq"] {
+      for c in freqConsts { c.val = freq }
+    }
+    let note = MidiNote(note: 69, velocity: 127)
+    for (_, envs) in handles.namedADSREnvelopes {
+      for env in envs { env.noteOn(note) }
+    }
+    let buffer = renderArrow(handles, sampleCount: sampleCount)
+    return (rms: rms(buffer), zeroCrossings: zeroCrossings(buffer))
+  }
+
   @Test("All arrow presets produce non-silent output when note is triggered",
-        arguments: arrowPresetFiles)
+        arguments: fingerprintPresetFiles)
   func presetProducesSound(filename: String) throws {
     let fp = try fingerprint(filename: filename)
     #expect(fp.rms > 0.001,
             "\(filename) should produce audible output, got RMS \(fp.rms)")
     #expect(fp.zeroCrossings > 10,
             "\(filename) should have zero crossings, got \(fp.zeroCrossings)")
+  }
+
+  @Test("Frozen auroraBorealis fixture produces non-silent output")
+  func auroraFixtureProducesSound() throws {
+    let syntax = try loadFixturePreset("auroraBorealis_frozen.json")
+    let fp = try fingerprint(preset: syntax)
+    #expect(fp.rms > 0.001,
+            "auroraBorealis fixture should produce audible output, got RMS \(fp.rms)")
+    #expect(fp.zeroCrossings > 10,
+            "auroraBorealis fixture should have zero crossings, got \(fp.zeroCrossings)")
   }
 
   @Test("Sine preset is quieter than square preset at same frequency")

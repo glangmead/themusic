@@ -83,7 +83,7 @@ struct ArrowHandlerDescriptorTests {
 
   @Test("auroraBorealis descriptors include crossfade-specific params")
   func auroraDescriptors() throws {
-    let syntax = try loadPresetSyntax("auroraBorealis.json")
+    let syntax = try loadFixturePreset("auroraBorealis_frozen.json")
     let descs = syntax.arrow!.parameterDescriptors()
     let ids = Set(descs.map(\.id))
 

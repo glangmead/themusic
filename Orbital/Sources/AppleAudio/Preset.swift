@@ -40,7 +40,7 @@ struct PresetSyntax: Codable {
   
   /// Build the resolved [String: ArrowSyntax] dictionary from the library
   /// array, resolving forward references in order.
-  private func resolvedLibrary() -> [String: ArrowSyntax] {
+  func resolvedLibrary() -> [String: ArrowSyntax] {
     guard let library else { return [:] }
     var dict = [String: ArrowSyntax]()
     for entry in library {

@@ -54,6 +54,16 @@
 		9BFFD9802E7DABD200E7CB55 /* Orbital.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Orbital.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		9B520CF52F4BEE4B001B575D /* Exceptions for "OrbitalTests" folder in "OrbitalTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Fixtures/auroraBorealis_frozen.json,
+			);
+			target = 9BC0FCB32E704EAA00472A5A /* OrbitalTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		9BC0FCA92E704EA900472A5A /* Sources */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
@@ -62,6 +72,9 @@
 		};
 		9BC0FCB72E704EAA00472A5A /* OrbitalTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				9B520CF52F4BEE4B001B575D /* Exceptions for "OrbitalTests" folder in "OrbitalTests" target */,
+			);
 			path = OrbitalTests;
 			sourceTree = "<group>";
 		};
