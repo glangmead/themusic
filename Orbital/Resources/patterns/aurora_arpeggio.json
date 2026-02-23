@@ -39,18 +39,18 @@
         },
         {
           "target": "overallAmp2",
-          "arrow": { "reciprocal": { "of": {
-            "sum": { "of": [
-              {"prod": { "of": [
-                {"compose": {"arrows": [
+          "arrow": { "reciprocal": {
+            "sum": [
+              {"prod": [
+                {"compose": [
                   { "identity": {} },
                   { "eventNote": {} }
-                ]}},
-                { "reciprocal": { "of": { "const": {"val": 12, "name": "twelve"} }}},
-              ]}},
+                ]},
+                { "reciprocal": { "const": {"val": 12, "name": "twelve"} }},
+              ]},
               {"const": {"val": 1, "name": "one"}}
-            ]}
-          }}}
+            ]
+          }}
         },
         {
           "target": "vibratoAmp",
