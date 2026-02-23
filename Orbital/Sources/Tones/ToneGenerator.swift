@@ -669,7 +669,10 @@ enum ArrowSyntax: Codable, Equatable {
   indirect case osc(name: String, shape: BasicOscillator.OscShape, width: ArrowSyntax)
   
   // see https://www.compilenrun.com/docs/language/swift/swift-enumerations/swift-recursive-enumerations/
-  func compile() -> ArrowWithHandles {
+  func compile(library: [String: ArrowSyntax] = [:]) -> ArrowWithHandles {
+    if !library.isEmpty {
+      return resolveLibrary(library).compile()
+    }
     switch self {
     case .rand(let min, let max):
       let rand = ArrowRandom(min: min, max: max)

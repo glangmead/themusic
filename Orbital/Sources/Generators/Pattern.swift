@@ -134,7 +134,6 @@ class WaitingIterator<Element>: Sequence, IteratorProtocol {
       mostRecentElement = timeIndependentIterator.next()
       savedTime = now
       neverCalled = false
-      print("WaitingIterator emitting next(): \(String(describing: mostRecentElement))")
     }
     return mostRecentElement
   }
@@ -402,7 +401,6 @@ struct ExponentialFloatSampler: Sequence, IteratorProtocol {
     let u = CoreFloat.random(in: CoreFloat.ulpOfOne...1)
     let raw = -log(u) / lambda
     let result = clamp(min + raw, min: min, max: max)
-    print("ExponentialFloatSampler \(min)-\(max): \(result)")
     return result
   }
 }

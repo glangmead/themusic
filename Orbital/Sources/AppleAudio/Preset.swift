@@ -54,8 +54,7 @@ struct PresetSyntax: Codable {
   func compile(numVoices: Int = 12, initEffects: Bool = true) -> Preset {
     let preset: Preset
     if let arrowSyntax = arrow {
-      let resolved = arrowSyntax.resolveLibrary(resolvedLibrary())
-      preset = Preset(arrowSyntax: resolved, numVoices: numVoices, initEffects: initEffects)
+      preset = Preset(arrowSyntax: arrowSyntax, library: resolvedLibrary(), numVoices: numVoices, initEffects: initEffects)
     } else if let samplerFilenames = samplerFilenames, let samplerBank = samplerBank, let samplerProgram = samplerProgram {
       preset = Preset(sampler: Sampler(fileNames: samplerFilenames, bank: samplerBank, program: samplerProgram), initEffects: initEffects)
     } else {
@@ -225,12 +224,12 @@ class Preset: NoteHandler {
   private let setPositionMinWaitTimeSecs: CoreFloat = 0.01
   
   /// Create a polyphonic Arrow-based Preset with N independent voice copies.
-  init(arrowSyntax: ArrowSyntax, numVoices: Int = 12, initEffects: Bool = true) {
+  init(arrowSyntax: ArrowSyntax, library: [String: ArrowSyntax] = [:], numVoices: Int = 12, initEffects: Bool = true) {
     self.numVoices = numVoices
     
     // Compile N independent voice arrow trees
     for _ in 0..<numVoices {
-      voices.append(arrowSyntax.compile())
+      voices.append(arrowSyntax.compile(library: library))
     }
     
     // Sum all voices into one signal

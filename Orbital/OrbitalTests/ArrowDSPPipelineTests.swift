@@ -414,8 +414,7 @@ struct PresetCompilationTests {
       Issue.record("\(filename) has no arrow field")
       return
     }
-    let resolved = arrowSyntax.resolveLibrary(syntax.resolvedLibrary())
-    let handles = resolved.compile()
+    let handles = arrowSyntax.compile(library: syntax.resolvedLibrary())
     // Every arrow preset should have an ampEnv and at least one freq const
     #expect(!handles.namedADSREnvelopes.isEmpty,
             "\(filename) should have ADSR envelopes")
@@ -428,8 +427,7 @@ struct PresetCompilationTests {
   @Test("Aurora Borealis has Chorusers in its graph")
   func auroraBorealisHasChoruser() throws {
     let syntax = try loadFixturePreset("auroraBorealis_frozen.json")
-    let resolved = syntax.arrow!.resolveLibrary(syntax.resolvedLibrary())
-    let handles = resolved.compile()
+    let handles = syntax.arrow!.compile(library: syntax.resolvedLibrary())
     #expect(!handles.namedChorusers.isEmpty,
             "auroraBorealis should have at least one Choruser")
   }
@@ -468,8 +466,7 @@ struct PresetSoundFingerprintTests {
     guard let arrowSyntax = syntax.arrow else {
       throw PresetLoadError.fileNotFound("No arrow in \(filename)")
     }
-    let resolved = arrowSyntax.resolveLibrary(syntax.resolvedLibrary())
-    let handles = resolved.compile()
+    let handles = arrowSyntax.compile(library: syntax.resolvedLibrary())
 
     // Set frequency
     if let freqConsts = handles.namedConsts["freq"] {
@@ -495,8 +492,7 @@ struct PresetSoundFingerprintTests {
     guard let arrowSyntax = syntax.arrow else {
       throw PresetLoadError.fileNotFound("No arrow in preset")
     }
-    let resolved = arrowSyntax.resolveLibrary(syntax.resolvedLibrary())
-    let handles = resolved.compile()
+    let handles = arrowSyntax.compile(library: syntax.resolvedLibrary())
     if let freqConsts = handles.namedConsts["freq"] {
       for c in freqConsts { c.val = freq }
     }
@@ -642,8 +638,8 @@ struct ArrowLibraryTests {
     }
   }
 
-  @Test("Resolved library arrow compiles to working Arrow11")
-  func resolvedArrowCompiles() {
+  @Test("Library arrow compiles to working Arrow11 in one step")
+  func libraryArrowCompiles() {
     let library: [String: ArrowSyntax] = [
       "osc1": .compose(arrows: [
         .prod(of: [.const(name: "freq", val: 440), .identity]),
@@ -654,8 +650,7 @@ struct ArrowLibraryTests {
       .const(name: "amp", val: 1),
       .libraryArrow(name: "osc1")
     ])
-    let resolved = arrow.resolveLibrary(library)
-    let compiled = resolved.compile()
+    let compiled = arrow.compile(library: library)
     #expect(compiled.namedConsts["freq"] != nil, "Should have freq const from resolved library arrow")
     #expect(compiled.namedBasicOscs["osc"] != nil, "Should have osc from resolved library arrow")
   }
@@ -686,8 +681,7 @@ struct ArrowLibraryTests {
       .libraryArrow(name: "myConst"),
       .libraryArrow(name: "myConst")
     ])
-    let resolved = arrow.resolveLibrary(library)
-    let compiled = resolved.compile()
+    let compiled = arrow.compile(library: library)
     // Should have two const entries for "x"
     let consts = compiled.namedConsts["x"]
     #expect(consts?.count == 2, "Two references should produce two independent const instances")

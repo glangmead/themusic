@@ -594,7 +594,8 @@ enum TablePatternCompiler {
 // MARK: - CapturingIterator
 
 /// Wraps an iterator and writes the float-coerced last value to a shadow ArrowConst
-/// on each next(). Used so that arrow-based modulators can read emitter values.
+/// that was provided to the init() on each next().
+/// Used so that arrow-based modulators can read emitter values.
 class CapturingIterator<T>: Sequence, IteratorProtocol {
   private var inner: any IteratorProtocol<T>
   private let shadow: ArrowConst

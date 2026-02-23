@@ -19,7 +19,7 @@ class SongLibrary {
   var songs: [Song] = [
     Song(
       name: "Aurora Borealis",
-      patternFileName: "aurora_arpeggio.json"
+      patternFileName: "table_aurora.json"
     ),
     Song(
       name: "Baroque Chords",
@@ -32,10 +32,6 @@ class SongLibrary {
     Song(
       name: "Duet Arpeggios",
       patternFileName: "duet_arpeggios.json"
-    ),
-    Song(
-      name: "Table Aurora",
-      patternFileName: "table_aurora.json"
     ),
   ]
 
