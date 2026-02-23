@@ -1,102 +1,12 @@
 //
-//  Player.swift
+//  Iterators.swift
 //  Orbital
 //
-//  Created by Greg Langmead on 1/21/26.
+//  Extracted from Pattern.swift
 //
 
 import Foundation
 import Tonic
-import AVFAudio
-
-// an arrow that has an additional value and a closure that can make use of it when called with a time
-final class EventUsingArrow: Arrow11 {
-  var event: MusicEvent? = nil
-  var ofEvent: (_ event: MusicEvent, _ t: CoreFloat) -> CoreFloat
-  
-  init(ofEvent: @escaping (_: MusicEvent, _: CoreFloat) -> CoreFloat) {
-    self.ofEvent = ofEvent
-    super.init()
-  }
-  
-  override func of(_ t: CoreFloat) -> CoreFloat {
-    ofEvent(event!, innerArr?.of(t) ?? 0)
-  }
-}
-
-// a musical utterance to play at one point in time, a set of simultaneous noteOns
-struct MusicEvent {
-  let noteHandler: NoteHandler
-  let notes: [MidiNote]
-  let sustain: CoreFloat // time between noteOn and noteOff in seconds
-  let gap: CoreFloat // time reserved for this event, before next event is played
-  let modulators: [String: Arrow11]
-  let timeOrigin: Double
-  let clock: any Clock<Duration>
-  
-  init(
-    noteHandler: NoteHandler,
-    notes: [MidiNote],
-    sustain: CoreFloat,
-    gap: CoreFloat,
-    modulators: [String: Arrow11],
-    timeOrigin: Double,
-    clock: any Clock<Duration> = ContinuousClock()
-  ) {
-    self.noteHandler = noteHandler
-    self.notes = notes
-    self.sustain = sustain
-    self.gap = gap
-    self.modulators = modulators
-    self.timeOrigin = timeOrigin
-    self.clock = clock
-  }
-  
-  mutating func play() async throws {
-    let now = CoreFloat(Date.now.timeIntervalSince1970 - timeOrigin)
-
-    // Set up EventUsingArrow references
-    for (_, modulatingArrow) in modulators {
-      if let eventUsingArrow = modulatingArrow as? EventUsingArrow {
-        eventUsingArrow.event = self
-      } else if let handleWH = modulatingArrow as? ArrowWithHandles {
-        for eventUsingArrowList in handleWH.namedEventUsing.values {
-          for eventUsingArrow in eventUsingArrowList {
-            eventUsingArrow.event = self
-          }
-        }
-      }
-    }
-
-    // Apply modulators per-voice when possible, otherwise globally
-    if let spatialPreset = noteHandler as? SpatialPreset, !modulators.isEmpty {
-      spatialPreset.notesOnWithModulators(notes, modulators: modulators, now: now)
-    } else {
-      // Global modulation fallback (single-voice presets)
-      if let handles = noteHandler.handles {
-        for (key, modulatingArrow) in modulators {
-          if let arrowConsts = handles.namedConsts[key] {
-            let value = modulatingArrow.of(now)
-            for arrowConst in arrowConsts {
-              arrowConst.val = value
-            }
-          }
-        }
-      }
-      noteHandler.notesOn(notes)
-    }
-    do {
-      try await clock.sleep(for: .seconds(TimeInterval(sustain)))
-    } catch {
-      
-    }
-    noteHandler.notesOff(notes)
-  }
-  
-  func cancel() {
-    noteHandler.notesOff(notes)
-  }
-}
 
 struct ListSampler<Element>: Sequence, IteratorProtocol {
   let items: [Element]
@@ -532,108 +442,57 @@ struct TableNoteGenerator: Sequence, IteratorProtocol {
   }
 }
 
-/// A multi-track generative music pattern. Each track has its own preset,
-/// note generator, timing, and modulators, and runs concurrently.
-actor MusicPattern {
-  /// State for a single track within the pattern.
-  struct Track {
-    let spatialPreset: SpatialPreset
-    let modulators: [String: Arrow11]
-    var notes: any IteratorProtocol<[MidiNote]>
-    var sustains: any IteratorProtocol<CoreFloat>
-    var gaps: any IteratorProtocol<CoreFloat>
-    let name: String
+// MARK: - CapturingIterator
+
+/// Wraps an iterator and writes the float-coerced last value to a shadow ArrowConst
+/// that was provided to the init() on each next().
+/// Used so that arrow-based modulators can read emitter values.
+class CapturingIterator<T>: Sequence, IteratorProtocol {
+  private var inner: any IteratorProtocol<T>
+  private let shadow: ArrowConst
+  private let toFloat: (T) -> CoreFloat
+
+  init(inner: any IteratorProtocol<T>, shadow: ArrowConst, toFloat: @escaping (T) -> CoreFloat) {
+    self.inner = inner
+    self.shadow = shadow
+    self.toFloat = toFloat
   }
 
-  private var tracks: [Track]
-  private let clock: any Clock<Duration>
-  var timeOrigin: Double
-  var isPaused: Bool = false
-
-  init(tracks: [Track], clock: any Clock<Duration> = ContinuousClock()) {
-    self.tracks = tracks
-    self.clock = clock
-    self.timeOrigin = Date.now.timeIntervalSince1970
-  }
-
-  func setPaused(_ paused: Bool) {
-    self.isPaused = paused
-    if paused {
-      for track in tracks {
-        track.spatialPreset.allNotesOff()
-      }
-    }
-  }
-
-  /// Generate the next event for a specific track.
-  private func nextEvent(trackIndex: Int) -> MusicEvent? {
-    guard trackIndex < tracks.count else { return nil }
-    guard let notes = tracks[trackIndex].notes.next() else { return nil }
-    guard let sustain = tracks[trackIndex].sustains.next() else { return nil }
-    guard let gap = tracks[trackIndex].gaps.next() else { return nil }
-
-    return MusicEvent(
-      noteHandler: tracks[trackIndex].spatialPreset,
-      notes: notes,
-      sustain: sustain,
-      gap: gap,
-      modulators: tracks[trackIndex].modulators,
-      timeOrigin: timeOrigin,
-      clock: clock
-    )
-  }
-
-  /// Play all tracks concurrently. Each track runs its own event loop.
-  /// Cancelling the calling task propagates to all track tasks.
-  func play() async {
-    await withTaskGroup(of: Void.self) { group in
-      for trackIndex in tracks.indices {
-        group.addTask { [self] in
-          await self.playTrack(trackIndex)
-        }
-      }
-    }
-  }
-
-  /// Event loop for a single track.
-  private func playTrack(_ trackIndex: Int) async {
-    await withTaskGroup(of: Void.self) { group in
-      while !Task.isCancelled {
-        // Wait while paused, checking cancellation periodically
-        while isPaused {
-          guard !Task.isCancelled else { return }
-          do {
-            try await clock.sleep(for: .milliseconds(50))
-          } catch {
-            return
-          }
-        }
-        guard !Task.isCancelled else { return }
-        guard var event = nextEvent(trackIndex: trackIndex) else { return }
-        group.addTask {
-          try? await event.play()
-        }
-        do {
-          try await clock.sleep(for: .seconds(TimeInterval(event.gap)))
-        } catch {
-          return
-        }
-      }
-    }
-  }
-
-  /// Detach audio nodes from all tracks.
-  func detachNodes() {
-    for track in tracks {
-      track.spatialPreset.detachNodes()
-    }
-  }
-
-  /// Full teardown: detach nodes and destroy Preset objects.
-  func cleanup() {
-    for track in tracks {
-      track.spatialPreset.cleanup()
-    }
+  func next() -> T? {
+    guard let value = inner.next() else { return nil }
+    shadow.val = toFloat(value)
+    return value
   }
 }
 
+// MARK: - IntToFloatIterator
+
+/// Adapts an Int iterator to produce CoreFloat values.
+struct IntToFloatIterator: Sequence, IteratorProtocol {
+  var source: any IteratorProtocol<Int>
+  mutating func next() -> CoreFloat? {
+    guard let val = source.next() else { return nil }
+    return CoreFloat(val)
+  }
+}
+
+// MARK: - MetaModulationArrow
+
+/// An Arrow11 that reads from a float emitter and writes the value
+/// to a MutableParam on the target emitter. Returns the written value.
+final class MetaModulationArrow: Arrow11 {
+  private var source: any IteratorProtocol<CoreFloat>
+  private let target: MutableParam
+
+  init(source: any IteratorProtocol<CoreFloat>, target: MutableParam) {
+    self.source = source
+    self.target = target
+    super.init()
+  }
+
+  override func of(_ t: CoreFloat) -> CoreFloat {
+    let val = source.next() ?? target.val
+    target.val = val
+    return val
+  }
+}
