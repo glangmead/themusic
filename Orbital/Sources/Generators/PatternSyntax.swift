@@ -216,26 +216,26 @@ struct PatternSyntax: Codable {
   /// Compile all tracks into a single MusicPattern. Returns the pattern
   /// plus a TrackInfo array for the UI (built at compile time so
   /// SongPlaybackState can access it without awaiting the actor).
-  func compile(engine: SpatialAudioEngine, clock: any Clock<Duration> = ContinuousClock()) async throws -> (MusicPattern, [TrackInfo]) {
+  func compile(engine: SpatialAudioEngine, clock: any Clock<Duration> = ContinuousClock(), resourceBaseURL: URL? = nil) async throws -> (MusicPattern, [TrackInfo]) {
     if let procedural = proceduralTracks {
-      return try await compileProceduralTracks(procedural, engine: engine, clock: clock)
+      return try await compileProceduralTracks(procedural, engine: engine, clock: clock, resourceBaseURL: resourceBaseURL)
     } else if let midi = midiTracks {
-      return try await compileMidiTracks(midi, engine: engine, clock: clock)
+      return try await compileMidiTracks(midi, engine: engine, clock: clock, resourceBaseURL: resourceBaseURL)
     } else if let table = tableTracks {
-      return try await TablePatternCompiler.compile(table, engine: engine, clock: clock)
+      return try await TablePatternCompiler.compile(table, engine: engine, clock: clock, resourceBaseURL: resourceBaseURL)
     } else {
       fatalError("PatternSyntax '\(name)' has no tracks")
     }
   }
 
   /// Compile without an engine — produces TrackInfo for UI-only display.
-  func compileTrackInfoOnly() -> [TrackInfo] {
+  func compileTrackInfoOnly(resourceBaseURL: URL? = nil) -> [TrackInfo] {
     var infos: [TrackInfo] = []
     var nextId = 0
     if let procedural = proceduralTracks {
       for track in procedural {
         let presetFileName = track.presetFilename + ".json"
-        let presetSpec = Bundle.main.decode(PresetSyntax.self, from: presetFileName, subdirectory: "presets")
+        let presetSpec = decodeJSON(PresetSyntax.self, from: presetFileName, subdirectory: "presets", resourceBaseURL: resourceBaseURL)
         let sp = SpatialPreset(presetSpec: presetSpec, numVoices: track.numVoices ?? 12)
         infos.append(TrackInfo(
           id: nextId,
@@ -249,7 +249,7 @@ struct PatternSyntax: Codable {
     } else if let midi = midiTracks {
       for (i, entry) in midi.tracks.enumerated() {
         let presetFileName = entry.presetFilename + ".json"
-        let presetSpec = Bundle.main.decode(PresetSyntax.self, from: presetFileName, subdirectory: "presets")
+        let presetSpec = decodeJSON(PresetSyntax.self, from: presetFileName, subdirectory: "presets", resourceBaseURL: resourceBaseURL)
         let sp = SpatialPreset(presetSpec: presetSpec, numVoices: entry.numVoices ?? 12)
         infos.append(TrackInfo(
           id: nextId,
@@ -261,7 +261,7 @@ struct PatternSyntax: Codable {
         nextId += 1
       }
     } else if let table = tableTracks {
-      return TablePatternCompiler.compileTrackInfoOnly(table)
+      return TablePatternCompiler.compileTrackInfoOnly(table, resourceBaseURL: resourceBaseURL)
     }
     return infos
   }
@@ -271,16 +271,17 @@ struct PatternSyntax: Codable {
   private func compileProceduralTracks(
     _ procedural: [ProceduralTrackSyntax],
     engine: SpatialAudioEngine,
-    clock: any Clock<Duration>
+    clock: any Clock<Duration>,
+    resourceBaseURL: URL? = nil
   ) async throws -> (MusicPattern, [TrackInfo]) {
     var musicTracks: [MusicPattern.Track] = []
     var trackInfos: [TrackInfo] = []
 
     for (i, trackSpec) in procedural.enumerated() {
       let presetFileName = trackSpec.presetFilename + ".json"
-      let presetSpec = Bundle.main.decode(PresetSyntax.self, from: presetFileName, subdirectory: "presets")
+      let presetSpec = decodeJSON(PresetSyntax.self, from: presetFileName, subdirectory: "presets", resourceBaseURL: resourceBaseURL)
       let voices = trackSpec.numVoices ?? 12
-      let sp = try await SpatialPreset(presetSpec: presetSpec, engine: engine, numVoices: voices)
+      let sp = try await SpatialPreset(presetSpec: presetSpec, engine: engine, numVoices: voices, resourceBaseURL: resourceBaseURL)
 
       let modulatorDict = Self.compileModulators(trackSpec.modulators)
 
@@ -289,7 +290,7 @@ struct PatternSyntax: Codable {
       let sustains: any IteratorProtocol<CoreFloat>
       let gaps: any IteratorProtocol<CoreFloat>
 
-      if let midiSeq = noteGen.compileMidiSequence() {
+      if let midiSeq = noteGen.compileMidiSequence(resourceBaseURL: resourceBaseURL) {
         let loop: Bool
         if case .midiFile(_, _, let l) = noteGen { loop = l ?? true } else { loop = true }
         let iters = midiSeq.makeIterators(loop: loop)
@@ -297,7 +298,7 @@ struct PatternSyntax: Codable {
         sustains = iters.sustains
         gaps = iters.gaps
       } else {
-        notes = noteGen.compile()
+        notes = noteGen.compile(resourceBaseURL: resourceBaseURL)
         sustains = (trackSpec.sustain ?? .fixed(value: 1.0)).compile()
         gaps = (trackSpec.gap ?? .fixed(value: 1.0)).compile()
       }
@@ -327,9 +328,10 @@ struct PatternSyntax: Codable {
   private func compileMidiTracks(
     _ midi: MidiTracksSyntax,
     engine: SpatialAudioEngine,
-    clock: any Clock<Duration>
+    clock: any Clock<Duration>,
+    resourceBaseURL: URL? = nil
   ) async throws -> (MusicPattern, [TrackInfo]) {
-    guard let url = NoteGeneratorSyntax.midiFileURL(filename: midi.filename) else {
+    guard let url = NoteGeneratorSyntax.midiFileURL(filename: midi.filename, resourceBaseURL: resourceBaseURL) else {
       fatalError("MIDI file not found: \(midi.filename)")
     }
 
@@ -343,9 +345,9 @@ struct PatternSyntax: Codable {
       // Use per-track entry if available, otherwise fall back to first entry
       let trackEntry = i < midi.tracks.count ? midi.tracks[i] : midi.tracks[0]
       let presetFileName = trackEntry.presetFilename + ".json"
-      let presetSpec = Bundle.main.decode(PresetSyntax.self, from: presetFileName, subdirectory: "presets")
+      let presetSpec = decodeJSON(PresetSyntax.self, from: presetFileName, subdirectory: "presets", resourceBaseURL: resourceBaseURL)
       let voices = trackEntry.numVoices ?? 12
-      let sp = try await SpatialPreset(presetSpec: presetSpec, engine: engine, numVoices: voices)
+      let sp = try await SpatialPreset(presetSpec: presetSpec, engine: engine, numVoices: voices, resourceBaseURL: resourceBaseURL)
 
       let modulatorDict = Self.compileModulators(trackEntry.modulators)
       let iters = entry.sequence.makeIterators(loop: loopVal)

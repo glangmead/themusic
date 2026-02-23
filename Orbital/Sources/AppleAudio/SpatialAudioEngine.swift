@@ -88,6 +88,7 @@ class SpatialAudioEngine {
     // And then, start the engine! This is the moment the sound begins to play.
     try audioEngine.start()
 
+#if os(iOS)
     // Restart the engine after audio session interruptions (phone calls, Siri, etc.)
     NotificationCenter.default.addObserver(
       forName: AVAudioSession.interruptionNotification,
@@ -116,6 +117,7 @@ class SpatialAudioEngine {
       object: AVAudioSession.sharedInstance(),
       queue: nil
     ) { _ in }
+#endif
 
     // The audio engine may silently stop pulling from source nodes after a
     // hardware configuration change (e.g. sample rate change, Bluetooth
@@ -126,7 +128,9 @@ class SpatialAudioEngine {
       object: audioEngine,
       queue: nil
     ) { [weak self] _ in
+#if os(iOS)
       try? AVAudioSession.sharedInstance().setActive(true)
+#endif
       try? self?.audioEngine.start()
     }
 

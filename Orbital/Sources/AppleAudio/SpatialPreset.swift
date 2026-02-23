@@ -24,6 +24,7 @@ class SpatialPreset: NoteHandler {
   private(set) var presetSpec: PresetSyntax
   let engine: SpatialAudioEngine?
   let numVoices: Int
+  let resourceBaseURL: URL?
   private(set) var presets: [Preset] = []
   
   // Spatial voice management: routes notes to different Presets
@@ -50,10 +51,11 @@ class SpatialPreset: NoteHandler {
     return holder
   }
   
-  init(presetSpec: PresetSyntax, engine: SpatialAudioEngine, numVoices: Int = 12) async throws {
+  init(presetSpec: PresetSyntax, engine: SpatialAudioEngine, numVoices: Int = 12, resourceBaseURL: URL? = nil) async throws {
     self.presetSpec = presetSpec
     self.engine = engine
     self.numVoices = numVoices
+    self.resourceBaseURL = resourceBaseURL
     try await setup()
   }
 
@@ -63,6 +65,7 @@ class SpatialPreset: NoteHandler {
     self.presetSpec = presetSpec
     self.engine = nil
     self.numVoices = numVoices
+    self.resourceBaseURL = nil
     setupForUI()
   }
   
@@ -76,7 +79,7 @@ class SpatialPreset: NoteHandler {
       // Each note goes to a different Preset (different spatial position)
       let phaseStep = CoreFloat(2 * Double.pi) / CoreFloat(numVoices)
       for i in 0..<numVoices {
-        let preset = presetSpec.compile(numVoices: 1)
+        let preset = presetSpec.compile(numVoices: 1, resourceBaseURL: resourceBaseURL)
         preset.name = "\(preset.name)[\(i)]"
         // Spread voices evenly around the rose curve
         preset.positionLFO?.phase += phaseStep * CoreFloat(i)
@@ -88,7 +91,7 @@ class SpatialPreset: NoteHandler {
       // Sampler: 1 sampler per spatial slot, same as Arrow
       let phaseStep = CoreFloat(2 * Double.pi) / CoreFloat(numVoices)
       for i in 0..<numVoices {
-        let preset = presetSpec.compile(numVoices: 1)
+        let preset = presetSpec.compile(numVoices: 1, resourceBaseURL: resourceBaseURL)
         // Spread voices evenly around the rose curve
         preset.positionLFO?.phase += phaseStep * CoreFloat(i)
         presets.append(preset)

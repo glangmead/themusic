@@ -51,12 +51,12 @@ struct PresetSyntax: Codable {
     return dict
   }
   
-  func compile(numVoices: Int = 12, initEffects: Bool = true) -> Preset {
+  func compile(numVoices: Int = 12, initEffects: Bool = true, resourceBaseURL: URL? = nil) -> Preset {
     let preset: Preset
     if let arrowSyntax = arrow {
       preset = Preset(arrowSyntax: arrowSyntax, library: resolvedLibrary(), numVoices: numVoices, initEffects: initEffects)
     } else if let samplerFilenames = samplerFilenames, let samplerBank = samplerBank, let samplerProgram = samplerProgram {
-      preset = Preset(sampler: Sampler(fileNames: samplerFilenames, bank: samplerBank, program: samplerProgram), initEffects: initEffects)
+      preset = Preset(sampler: Sampler(fileNames: samplerFilenames, bank: samplerBank, program: samplerProgram, resourceBaseURL: resourceBaseURL), initEffects: initEffects)
     } else {
       fatalError("PresetSyntax must have either arrow or sampler")
     }

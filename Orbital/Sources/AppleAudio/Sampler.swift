@@ -15,12 +15,14 @@ class Sampler {
   let fileNames: [String]
   let bank: UInt8
   let program: UInt8
+  let resourceBaseURL: URL?
 
-  init(fileNames: [String], bank: UInt8, program: UInt8) {
+  init(fileNames: [String], bank: UInt8, program: UInt8, resourceBaseURL: URL? = nil) {
     self.node = AVAudioUnitSampler()
     self.fileNames = fileNames
     self.bank = bank
     self.program = program
+    self.resourceBaseURL = resourceBaseURL
   }
 
   /// Loads the instrument into the sampler node. Throws on failure.
@@ -28,9 +30,9 @@ class Sampler {
   /// remains responsive (important for large SoundFont files).
   func loadInstrument() async throws {
     let urls = fileNames.compactMap { fileName in
-      Bundle.main.url(forResource: fileName, withExtension: "wav") ??
-      Bundle.main.url(forResource: fileName, withExtension: "aiff") ??
-      Bundle.main.url(forResource: fileName, withExtension: "aif")
+      resolveResourceURL(name: fileName, ext: "wav", resourceBaseURL: resourceBaseURL) ??
+      resolveResourceURL(name: fileName, ext: "aiff", resourceBaseURL: resourceBaseURL) ??
+      resolveResourceURL(name: fileName, ext: "aif", resourceBaseURL: resourceBaseURL)
     }
 
     // Capture node locally so we can use it from a nonisolated context.
@@ -42,11 +44,11 @@ class Sampler {
       try await Task.detached {
         try samplerNode.loadAudioFiles(at: urls)
       }.value
-    } else if let fileName = fileNames.first, let url = Bundle.main.url(forResource: fileName, withExtension: "exs") {
+    } else if let fileName = fileNames.first, let url = resolveResourceURL(name: fileName, ext: "exs", resourceBaseURL: resourceBaseURL) {
       try await Task.detached {
         try samplerNode.loadInstrument(at: url)
       }.value
-    } else if let fileName = fileNames.first, let url = Bundle.main.url(forResource: fileName, withExtension: "sf2") {
+    } else if let fileName = fileNames.first, let url = resolveResourceURL(name: fileName, ext: "sf2", resourceBaseURL: resourceBaseURL) {
       try await Task.detached {
         try samplerNode.loadSoundBankInstrument(at: url, program: program, bankMSB: bank, bankLSB: 0)
       }.value

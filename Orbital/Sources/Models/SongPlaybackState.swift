@@ -7,16 +7,6 @@
 
 import Foundation
 
-/// Per-track info exposed to the UI: the track name, its spec, and its compiled preset.
-/// `trackSpec` is nil for MIDI tracks (their note data comes from the file).
-struct TrackInfo: Identifiable {
-  let id: Int
-  let patternName: String
-  var trackSpec: ProceduralTrackSyntax?
-  var presetSpec: PresetSyntax
-  let spatialPreset: SpatialPreset
-}
-
 /// Shared playback state for a song, passed through the Orbital navigation stack
 /// so that drill-down views (preset list, preset editor) can show play/pause controls.
 @MainActor @Observable

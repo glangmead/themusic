@@ -1,5 +1,5 @@
 {
-  "originHash" : "25585b348303bd1e6a53fa2220a15de92e13b2fb539c7b4c6d02856dcb9130a1",
+  "originHash" : "cface411ed5c97b2883b1973800c091b37860cade950888abe1bf3f5d2609460",
   "pins" : [
     {
       "identity" : "audiokit",
@@ -35,6 +35,15 @@
       "state" : {
         "revision" : "c0752677c602eec2f97ec50825581608bc56dac6",
         "version" : "1.4.1"
+      }
+    },
+    {
+      "identity" : "swift-argument-parser",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-argument-parser.git",
+      "state" : {
+        "revision" : "c5d11a805e765f52ba34ec7284bd4fcd6ba68615",
+        "version" : "1.7.0"
       }
     },
     {

@@ -36,3 +36,39 @@ extension Bundle {
     }
   }
 }
+
+/// Decode a JSON file, optionally from an explicit base directory URL instead of the app bundle.
+/// When `resourceBaseURL` is nil, delegates to `Bundle.main.decode(...)`.
+/// When set, looks for `subdirectory/filename` under that directory.
+func decodeJSON<T: Decodable>(_ type: T.Type, from file: String, subdirectory: String? = nil, resourceBaseURL: URL? = nil) -> T {
+  guard let base = resourceBaseURL else {
+    return Bundle.main.decode(type, from: file, subdirectory: subdirectory)
+  }
+  var url = base
+  if let subdirectory { url = url.appendingPathComponent(subdirectory) }
+  url = url.appendingPathComponent(file)
+  guard let data = try? Data(contentsOf: url) else {
+    fatalError("Failed to load \(file) from \(url.path).")
+  }
+  do {
+    return try JSONDecoder().decode(T.self, from: data)
+  } catch {
+    fatalError("Failed to decode \(file) from \(url.path): \(error.localizedDescription)")
+  }
+}
+
+/// Resolve a resource URL, optionally from an explicit base directory URL instead of the app bundle.
+/// When `resourceBaseURL` is nil, delegates to `Bundle.main.url(forResource:withExtension:)`.
+/// When set, looks for `filename.ext` under that directory and common subdirectories (samples/).
+func resolveResourceURL(name: String, ext: String, resourceBaseURL: URL? = nil) -> URL? {
+  guard let base = resourceBaseURL else {
+    return Bundle.main.url(forResource: name, withExtension: ext)
+  }
+  let filename = "\(name).\(ext)"
+  // Check root directory first, then common resource subdirectories
+  for subdir in ["", "samples"] {
+    let url = subdir.isEmpty ? base.appendingPathComponent(filename) : base.appendingPathComponent(subdir).appendingPathComponent(filename)
+    if FileManager.default.fileExists(atPath: url.path) { return url }
+  }
+  return nil
+}

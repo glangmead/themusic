@@ -87,7 +87,8 @@ enum TablePatternCompiler {
   static func compile(
     _ table: TablePatternSyntax,
     engine: SpatialAudioEngine,
-    clock: any Clock<Duration> = ContinuousClock()
+    clock: any Clock<Duration> = ContinuousClock(),
+    resourceBaseURL: URL? = nil
   ) async throws -> (MusicPattern, [TrackInfo]) {
     // 1. Build and validate the emitter dependency graph
     let sortedEmitterNames = try topologicalSort(table.emitters)
@@ -120,9 +121,9 @@ enum TablePatternCompiler {
 
     for (i, trackRow) in table.tracks.enumerated() {
       let presetFileName = trackRow.presetFilename + ".json"
-      let presetSpec = Bundle.main.decode(PresetSyntax.self, from: presetFileName, subdirectory: "presets")
+      let presetSpec = decodeJSON(PresetSyntax.self, from: presetFileName, subdirectory: "presets", resourceBaseURL: resourceBaseURL)
       let voices = trackRow.numVoices ?? 12
-      let sp = try await SpatialPreset(presetSpec: presetSpec, engine: engine, numVoices: voices)
+      let sp = try await SpatialPreset(presetSpec: presetSpec, engine: engine, numVoices: voices, resourceBaseURL: resourceBaseURL)
 
       // Look up note material
       guard var notes = compiledNoteMaterials[trackRow.noteMaterial] else {
@@ -165,11 +166,11 @@ enum TablePatternCompiler {
   }
 
   /// Compile for UI-only display (no engine, no audio nodes).
-  static func compileTrackInfoOnly(_ table: TablePatternSyntax) -> [TrackInfo] {
+  static func compileTrackInfoOnly(_ table: TablePatternSyntax, resourceBaseURL: URL? = nil) -> [TrackInfo] {
     var infos: [TrackInfo] = []
     for (i, trackRow) in table.tracks.enumerated() {
       let presetFileName = trackRow.presetFilename + ".json"
-      let presetSpec = Bundle.main.decode(PresetSyntax.self, from: presetFileName, subdirectory: "presets")
+      let presetSpec = decodeJSON(PresetSyntax.self, from: presetFileName, subdirectory: "presets", resourceBaseURL: resourceBaseURL)
       let sp = SpatialPreset(presetSpec: presetSpec, numVoices: trackRow.numVoices ?? 12)
       infos.append(TrackInfo(
         id: i,

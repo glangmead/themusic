@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import SwiftUI
 
 enum ArrowSyntax: Equatable {
   case const(name: String, val: CoreFloat)
@@ -447,8 +446,11 @@ extension ArrowSyntax {
   }
 }
 
+#if os(iOS)
+import SwiftUI
 #Preview {
   let osc = Triangle()
   osc.innerArr = ArrowIdentity()
   return ArrowChart(arrow: osc, ymin: -2, ymax: 2)
 }
+#endif

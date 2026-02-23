@@ -36,7 +36,7 @@ enum NoteGeneratorSyntax: Codable {
   /// JSON: { "midiFile": { "filename": "BachInvention1.mid", "track": 0, "loop": true } }
   case midiFile(filename: String, track: Int?, loop: Bool?)
 
-  func compile() -> any IteratorProtocol<[MidiNote]> {
+  func compile(resourceBaseURL: URL? = nil) -> any IteratorProtocol<[MidiNote]> {
     switch self {
     case .fixed(let events):
       let chords = events.map { $0.midiNotes }
@@ -72,20 +72,26 @@ enum NoteGeneratorSyntax: Codable {
       )
 
     case .midiFile(let filename, let track, let loop):
-      let seq = Self.parseMidiFile(filename: filename, track: track, loop: loop ?? true)
+      let seq = Self.parseMidiFile(filename: filename, track: track, loop: loop ?? true, resourceBaseURL: resourceBaseURL)
       return seq?.makeIterators(loop: loop ?? true).notes ?? [[MidiNote]]().makeIterator()
     }
   }
 
   /// For MIDI files, compile all three iterators (notes + timing) from the file.
   /// Returns nil for non-MIDI generators.
-  func compileMidiSequence() -> MidiEventSequence? {
+  func compileMidiSequence(resourceBaseURL: URL? = nil) -> MidiEventSequence? {
     guard case .midiFile(let filename, let track, let loop) = self else { return nil }
-    return Self.parseMidiFile(filename: filename, track: track, loop: loop ?? true)
+    return Self.parseMidiFile(filename: filename, track: track, loop: loop ?? true, resourceBaseURL: resourceBaseURL)
   }
 
-  /// Resolve a MIDI filename to a bundle URL.
-  static func midiFileURL(filename: String) -> URL? {
+  /// Resolve a MIDI filename to a bundle URL, or to a file under `resourceBaseURL` if provided.
+  static func midiFileURL(filename: String, resourceBaseURL: URL? = nil) -> URL? {
+    if let base = resourceBaseURL {
+      let url = base.appendingPathComponent(filename)
+      if FileManager.default.fileExists(atPath: url.path) { return url }
+      print("MidiFile not found at \(url.path)")
+      return nil
+    }
     let name = (filename as NSString).deletingPathExtension
     let ext = (filename as NSString).pathExtension
     guard let url = Bundle.main.url(forResource: name, withExtension: ext) else {
@@ -95,8 +101,8 @@ enum NoteGeneratorSyntax: Codable {
     return url
   }
 
-  private static func parseMidiFile(filename: String, track: Int?, loop: Bool) -> MidiEventSequence? {
-    guard let url = midiFileURL(filename: filename) else { return nil }
+  private static func parseMidiFile(filename: String, track: Int?, loop: Bool, resourceBaseURL: URL? = nil) -> MidiEventSequence? {
+    guard let url = midiFileURL(filename: filename, resourceBaseURL: resourceBaseURL) else { return nil }
     return MidiEventSequence.from(url: url, trackIndex: track, loop: loop)
   }
 

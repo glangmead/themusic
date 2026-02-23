@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01AD54111CB832744DD9D3B4 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1DA2ACBEE58E34EF14EFEF01 /* AudioKit */; };
+		2FE4CE838AAAB431C9C01F0E /* Tonic in Frameworks */ = {isa = PBXBuildFile; productRef = 8206ECD197768E34F06A5FC8 /* Tonic */; };
+		4C67B2F7BC310C51258236AC /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = E12962ED1AFB9E4DEC6A6B08 /* ArgumentParser */; };
+		5DCAB2DD59043BFE15106A7C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DD6800366650ECCC9F3933 /* main.swift */; };
+		782D27A02208C62B5D6EE43B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F02BA295029F9F3FE1846C40 /* Foundation.framework */; };
+		86D351107B76A61A677232A3 /* Overture in Frameworks */ = {isa = PBXBuildFile; productRef = 54A489589A5B0332439EEB84 /* Overture */; };
 		9B00F9D92F42402E0008058E /* AGENTS.md in Resources */ = {isa = PBXBuildFile; fileRef = 9B00F9D82F42402E0008058E /* AGENTS.md */; };
 		9B0F28872ED00401004C0884 /* AudioKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9B0F28862ED00401004C0884 /* AudioKitUI */; };
 		9B1864642E772E37006147D8 /* Overture in Frameworks */ = {isa = PBXBuildFile; productRef = 9B1864632E772E37006147D8 /* Overture */; };
@@ -19,6 +25,8 @@
 		9BCED9902F246B150029ED1B /* Orbital.icon in Resources */ = {isa = PBXBuildFile; fileRef = 9BCED98F2F246B150029ED1B /* Orbital.icon */; };
 		9BD1B7002E8B08D000C718F1 /* Tonic in Frameworks */ = {isa = PBXBuildFile; productRef = 9BD1B6FF2E8B08D000C718F1 /* Tonic */; };
 		9BDF96F12F48FB39006E614F /* Keyboard in Frameworks */ = {isa = PBXBuildFile; productRef = 9BDF96F02F48FB39006E614F /* Keyboard */; };
+		DFBD9951213F20500B823AFB /* AVFAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9D0216F1C218610E8A1E8E8 /* AVFAudio.framework */; };
+		F8337F47156AD77FF619C35F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FAAA31B3A4333E0DB8DCE40 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7FAAA31B3A4333E0DB8DCE40 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		85DD6800366650ECCC9F3933 /* main.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		9B00F9D82F42402E0008058E /* AGENTS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = AGENTS.md; path = ../AGENTS.md; sourceTree = SOURCE_ROOT; };
 		9B0327712F46678900E12D2C /* Orbital-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Orbital-Info.plist"; sourceTree = "<group>"; };
 		9B1F016F2EB95F0A00C5110F /* Note.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = Note.icon; sourceTree = "<group>"; };
@@ -52,9 +62,42 @@
 		9BCED9102F1FD0A30029ED1B /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		9BCED98F2F246B150029ED1B /* Orbital.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = Orbital.icon; sourceTree = "<group>"; };
 		9BFFD9802E7DABD200E7CB55 /* Orbital.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Orbital.entitlements; sourceTree = "<group>"; };
+		C9D0216F1C218610E8A1E8E8 /* AVFAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFAudio.framework; path = System/Library/Frameworks/AVFAudio.framework; sourceTree = SDKROOT; };
+		CC70A99AE6E5F83E5B667F92 /* orbital-play */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = text; path = "orbital-play"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F02BA295029F9F3FE1846C40 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		4E51531B5EF04E82B1DF8C5A /* Exceptions for "Sources" folder in "OrbitalCLI" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AppView.swift,
+				Models/PatternStorage.swift,
+				Models/Song.swift,
+				Models/SongPlaybackState.swift,
+				OrbitalApp.swift,
+				UI/ArrowChart.swift,
+				UI/ArrowSyntaxEditorView.swift,
+				UI/KnobbyBox.swift,
+				UI/KnobbyKnob.swift,
+				UI/OrbitalView.swift,
+				UI/PatternFormView.swift,
+				UI/PatternListView.swift,
+				UI/PresetFormView.swift,
+				UI/PresetPickerView.swift,
+				UI/RoseSceneView.swift,
+				UI/SliderWithField.swift,
+				UI/SongCell.swift,
+				UI/SongPresetListView.swift,
+				UI/SongSettingsView.swift,
+				UI/SpatialFormView.swift,
+				UI/TablePatternFormView.swift,
+				UI/TablePatternState.swift,
+				UI/Theme.swift,
+				VisualizerView.swift,
+			);
+			target = 2F57A792364534F331D2AAF6 /* OrbitalCLI */;
+		};
 		9B520CF52F4BEE4B001B575D /* Exceptions for "OrbitalTests" folder in "OrbitalTests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -67,6 +110,9 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		9BC0FCA92E704EA900472A5A /* Sources */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				4E51531B5EF04E82B1DF8C5A /* Exceptions for "Sources" folder in "OrbitalCLI" target */,
+			);
 			path = Sources;
 			sourceTree = "<group>";
 		};
@@ -81,6 +127,20 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7BFFE7422B2572EF44FAC405 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8337F47156AD77FF619C35F /* Cocoa.framework in Frameworks */,
+				4C67B2F7BC310C51258236AC /* ArgumentParser in Frameworks */,
+				01AD54111CB832744DD9D3B4 /* AudioKit in Frameworks */,
+				2FE4CE838AAAB431C9C01F0E /* Tonic in Frameworks */,
+				86D351107B76A61A677232A3 /* Overture in Frameworks */,
+				DFBD9951213F20500B823AFB /* AVFAudio.framework in Frameworks */,
+				782D27A02208C62B5D6EE43B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9BC0FCA42E704EA900472A5A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -110,6 +170,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		099EC7E6135668894AE83E6E /* OrbitalCLI */ = {
+			isa = PBXGroup;
+			children = (
+				85DD6800366650ECCC9F3933 /* main.swift */,
+			);
+			path = OrbitalCLI;
+			sourceTree = "<group>";
+		};
+		70486D5467729D2CE4A1461A /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				7FAAA31B3A4333E0DB8DCE40 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
 		9B935B932EDE0F0600600E63 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +211,7 @@
 				9BC0FCB72E704EAA00472A5A /* OrbitalTests */,
 				9BC0FCD42E7055FE00472A5A /* Frameworks */,
 				9BC0FCA82E704EA900472A5A /* Products */,
+				099EC7E6135668894AE83E6E /* OrbitalCLI */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,6 +221,7 @@
 				9BC0FCA72E704EA900472A5A /* Orbital.app */,
 				9BC0FCB42E704EAA00472A5A /* OrbitalTests.xctest */,
 				9BC0FCBE2E704EAA00472A5A /* OrbitalUITests.xctest */,
+				CC70A99AE6E5F83E5B667F92 /* orbital-play */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,6 +229,9 @@
 		9BC0FCD42E7055FE00472A5A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				70486D5467729D2CE4A1461A /* OS X */,
+				C9D0216F1C218610E8A1E8E8 /* AVFAudio.framework */,
+				F02BA295029F9F3FE1846C40 /* Foundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -158,6 +239,31 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2F57A792364534F331D2AAF6 /* OrbitalCLI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A14D7B30D6844CB16544C733 /* Build configuration list for PBXNativeTarget "OrbitalCLI" */;
+			buildPhases = (
+				F7B29497D9EAC33C076F805E /* Sources */,
+				7BFFE7422B2572EF44FAC405 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				9BC0FCA92E704EA900472A5A /* Sources */,
+			);
+			name = OrbitalCLI;
+			packageProductDependencies = (
+				E12962ED1AFB9E4DEC6A6B08 /* ArgumentParser */,
+				1DA2ACBEE58E34EF14EFEF01 /* AudioKit */,
+				8206ECD197768E34F06A5FC8 /* Tonic */,
+				54A489589A5B0332439EEB84 /* Overture */,
+			);
+			productName = OrbitalCLI;
+			productReference = CC70A99AE6E5F83E5B667F92 /* orbital-play */;
+			productType = "com.apple.product-type.tool";
+		};
 		9BC0FCA62E704EA900472A5A /* Orbital */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9BC0FCC82E704EAA00472A5A /* Build configuration list for PBXNativeTarget "Orbital" */;
@@ -202,8 +308,6 @@
 				9BC0FCB72E704EAA00472A5A /* OrbitalTests */,
 			);
 			name = OrbitalTests;
-			packageProductDependencies = (
-			);
 			productName = ProgressionPlayerTests;
 			productReference = 9BC0FCB42E704EAA00472A5A /* OrbitalTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -222,8 +326,6 @@
 				9BC0FCC02E704EAA00472A5A /* PBXTargetDependency */,
 			);
 			name = OrbitalUITests;
-			packageProductDependencies = (
-			);
 			productName = ProgressionPlayerUITests;
 			productReference = 9BC0FCBE2E704EAA00472A5A /* OrbitalUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -266,6 +368,7 @@
 				9BA522542EB0FE8400ECF215 /* XCRemoteSwiftPackageReference "AudioKit" */,
 				9B0F28852ED00401004C0884 /* XCRemoteSwiftPackageReference "AudioKitUI" */,
 				9BDF96EF2F48FA7C006E614F /* XCRemoteSwiftPackageReference "Keyboard" */,
+				2C0790A818DEC6A79AA07A66 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9BC0FCA82E704EA900472A5A /* Products */;
@@ -275,6 +378,7 @@
 				9BC0FCA62E704EA900472A5A /* Orbital */,
 				9BC0FCB32E704EAA00472A5A /* OrbitalTests */,
 				9BC0FCBD2E704EAA00472A5A /* OrbitalUITests */,
+				2F57A792364534F331D2AAF6 /* OrbitalCLI */,
 			);
 		};
 /* End PBXProject section */
@@ -332,6 +436,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F7B29497D9EAC33C076F805E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DCAB2DD59043BFE15106A7C /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -348,6 +460,16 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		101E684268240529855A8677 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_NAME = "orbital-play";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		9BC0FCC62E704EAA00472A5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -622,6 +744,16 @@
 			};
 			name = Release;
 		};
+		A3F1BDF30C8DE578A30DCC05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_NAME = "orbital-play";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -661,9 +793,26 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		A14D7B30D6844CB16544C733 /* Build configuration list for PBXNativeTarget "OrbitalCLI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				101E684268240529855A8677 /* Release */,
+				A3F1BDF30C8DE578A30DCC05 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		2C0790A818DEC6A79AA07A66 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
 		9B0F28852ED00401004C0884 /* XCRemoteSwiftPackageReference "AudioKitUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/AudioKit/AudioKitUI.git";
@@ -707,6 +856,21 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		1DA2ACBEE58E34EF14EFEF01 /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9BA522542EB0FE8400ECF215 /* XCRemoteSwiftPackageReference "AudioKit" */;
+			productName = AudioKit;
+		};
+		54A489589A5B0332439EEB84 /* Overture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B1864622E772E37006147D8 /* XCRemoteSwiftPackageReference "swift-overture" */;
+			productName = Overture;
+		};
+		8206ECD197768E34F06A5FC8 /* Tonic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9BD1B6FE2E8B08D000C718F1 /* XCRemoteSwiftPackageReference "Tonic" */;
+			productName = Tonic;
+		};
 		9B0F28862ED00401004C0884 /* AudioKitUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 9B0F28852ED00401004C0884 /* XCRemoteSwiftPackageReference "AudioKitUI" */;
@@ -731,6 +895,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9BDF96EF2F48FA7C006E614F /* XCRemoteSwiftPackageReference "Keyboard" */;
 			productName = Keyboard;
+		};
+		E12962ED1AFB9E4DEC6A6B08 /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C0790A818DEC6A79AA07A66 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
