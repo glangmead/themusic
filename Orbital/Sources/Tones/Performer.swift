@@ -110,6 +110,7 @@ final class VoiceLedger: @unchecked Sendable {
   
   func takeAvailableVoice(_ note: MidiValue) -> Int? {
     lock.withLock { state in
+      // Prefer a genuinely available voice
       if let availableIdx = state.indexQueue.first(where: {
         state.availableVoiceIdxs.contains($0)
       }) {
@@ -118,6 +119,16 @@ final class VoiceLedger: @unchecked Sendable {
         state.noteToVoiceIdx[note] = availableIdx
         state.indexQueue.removeAll(where: { $0 == availableIdx })
         return availableIdx
+      }
+      // Voice stealing: steal a releasing voice (already fading out,
+      // least audible impact). The new noteOn will reset the ADSR
+      // to attack phase; any pending finishRelease callbacks are
+      // guarded by the releasingVoiceIdxs check and become no-ops.
+      if let releasingIdx = state.releasingVoiceIdxs.first {
+        state.releasingVoiceIdxs.remove(releasingIdx)
+        state.noteOnnedVoiceIdxs.insert(releasingIdx)
+        state.noteToVoiceIdx[note] = releasingIdx
+        return releasingIdx
       }
       return nil
     }

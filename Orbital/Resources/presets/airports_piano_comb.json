@@ -1,0 +1,127 @@
+{
+ "name"   : "Airports Piano Comb",
+ "rose"   : {"freq": 0.2, "leafFactor": 3, "phase": 1.0, "amp": 3},
+ "effects": {"reverbPreset": 4, "delayTime": 0.03, "delayLowPassCutoff": 1500, "delayFeedback": 10, "reverbWetDryMix": 45, "delayWetDryMix": 10},
+ "arrow"  : {
+  "compose": [
+    {
+     "prod": [
+       {
+        "sum": [
+          {
+           "prod": [
+             { "const": {"val": 0.8, "name": "osc1Mix"} },
+             {
+              "compose": [
+                {
+                 "sum": [
+                   { "prod": [
+                    { "const": {"name": "freq", "val": 300} },
+                    { "constOctave": {"name": "osc1Octave", "val": 0} },
+                    { "constCent": {"name": "osc1CentDetune", "val": 0} },
+                    { "identity": {}}
+                   ]},
+                   { "prod": [
+                       { "const": {"name": "freq", "val": 300} },
+                       { "const": {"name": "vibratoAmp", "val": 0} },
+                      { "compose": [
+                         { "prod": [
+                           { "const": {"val": 1, "name": "vibratoFreq"} },
+                           { "identity": {} }
+                         ]},
+                         { "osc": {"name": "vibratoOsc", "shape": "sineOsc", "width": { "const": {"name": "osc1VibWidth", "val": 1} }} }
+                      ]}
+                    ]
+                   }
+                 ]},
+                { "osc": {"name": "osc1", "shape": "noiseOsc", "width": { "const": {"name": "osc1Width", "val": 1} }} },
+                { "choruser": {"name": "osc1Choruser", "valueToChorus": "freq", "chorusCentRadius": 0, "chorusNumVoices": 1 } }
+              ]}
+           ]
+          },
+          {
+           "prod": [
+             { "const": {"val": 0.15, "name": "osc2Mix"} },
+             {
+              "compose": [
+                {
+                 "sum": [
+                   { "prod": [
+                     {"const": {"name": "freq", "val": 300} },
+                     {"constOctave": {"name": "osc2Octave", "val": 0} },
+                     {"constCent": {"name": "osc2CentDetune", "val": 0} },
+                     {"identity": {}}
+                   ]},
+                   { "prod": [
+                       { "const": {"name": "freq", "val": 300} },
+                       { "const": {"name": "vibratoAmp", "val": 0} },
+                       { "compose": [
+                          { "prod": [
+                            { "const": {"val": 1, "name": "vibratoFreq"} },
+                            { "identity": {} }
+                          ]},
+                          { "osc": {"name": "vibratoOsc", "shape": "sineOsc", "width": { "const": {"name": "osc2VibWidth", "val": 1} }} }
+                       ]}
+                     ]
+                    }
+                 ]
+                },
+                { "osc": {"name": "osc2", "shape": "noiseOsc", "width": { "const": {"name": "osc2Width", "val": 1} }} },
+                { "choruser": { "name": "osc2Choruser", "valueToChorus": "freq", "chorusCentRadius": 0, "chorusNumVoices": 1 } }
+              ]
+             }
+           ]
+          },
+          {
+           "prod": [
+             { "const": {"val": 0.0, "name": "osc3Mix"} },
+             {
+              "compose": [
+                {
+                 "sum": [
+                   { "prod": [
+                     { "const": {"name": "freq", "val": 300} },
+                     { "constOctave": {"name": "osc3Octave", "val": 0} },
+                     { "constCent": {"name": "osc3CentDetune", "val": 0} },
+                     { "identity": {}}
+                   ]},
+                   { "prod": [
+                       { "const": {"name": "freq", "val": 300} },
+                       { "const": {"name": "vibratoAmp", "val": 0} },
+                       { "compose": [
+                          { "prod": [
+                            { "const": {"val": 1, "name": "vibratoFreq"} },
+                            { "identity": {} }
+                          ]},
+                          { "osc": {"name": "vibratoOsc", "shape": "sineOsc", "width": { "const": {"name": "osc3VibWidth", "val": 1} }} }
+                       ]}
+                     ]
+                    }
+                 ]
+                },
+                { "osc": {"name": "osc3", "shape": "noiseOsc", "width": { "const": {"name": "osc3Width", "val": 1} }} },
+                { "choruser": { "name": "osc3Choruser", "valueToChorus": "freq", "chorusCentRadius": 0, "chorusNumVoices": 1} }
+               ]
+             }
+           ]
+          }
+        ]
+       },
+       { "envelope": { "decay": 0.06, "sustain": 0.005, "attack": 0.005, "name": "ampEnv", "release": 2.0, "scale": 1 } }
+      ]
+    },
+    {
+     "combFilter": {
+       "frequency":
+        { "prod": [
+          { "const": {"name": "freq", "val": 300} },
+          { "constOctave": {"name": "combOctave", "val": 0} },
+          { "constCent": {"name": "combCentDetune", "val": 3} }
+        ]},
+       "feedback": { "const": {"name": "combFeedback", "val": 0.98} },
+       "name"    : "comb"
+     }
+   }]
+
+ }
+}

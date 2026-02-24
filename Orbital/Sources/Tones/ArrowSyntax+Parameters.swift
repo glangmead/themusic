@@ -157,6 +157,10 @@ extension ArrowSyntax {
       cutoff.collectDescriptors(into: &descriptors, seenIds: &seenIds)
       resonance.collectDescriptors(into: &descriptors, seenIds: &seenIds)
 
+    case .combFilter(_, let frequency, let feedback):
+      frequency.collectDescriptors(into: &descriptors, seenIds: &seenIds)
+      feedback.collectDescriptors(into: &descriptors, seenIds: &seenIds)
+
     case .compose(let arrows):
       for child in arrows {
         child.collectDescriptors(into: &descriptors, seenIds: &seenIds)

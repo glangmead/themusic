@@ -43,6 +43,12 @@ struct ArrowSyntaxEditorView: View {
         ArrowSyntaxEditorView(syntax: resonance, handler: handler)
       }
 
+    case .combFilter(let name, let frequency, let feedback):
+      DisclosureGroup(name) {
+        ArrowSyntaxEditorView(syntax: frequency, handler: handler)
+        ArrowSyntaxEditorView(syntax: feedback, handler: handler)
+      }
+
     case .compose(let arrows):
       ForEach(Array(arrows.enumerated()), id: \.offset) { _, child in
         ArrowSyntaxEditorView(syntax: child, handler: handler)

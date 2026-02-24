@@ -11,6 +11,7 @@ class ArrowWithHandles: Arrow11 {
   // the handles are dictionaries with values that give access to arrows within the arrow
   var namedBasicOscs     = [String: [BasicOscillator]]()
   var namedLowPassFilter = [String: [LowPassFilter2]]()
+  var namedCombFilters   = [String: [CombFilter]]()
   var namedConsts        = [String: [ValHaver]]()
   var namedADSREnvelopes = [String: [ADSR]]()
   var namedChorusers     = [String: [Choruser]]()
@@ -45,6 +46,7 @@ class ArrowWithHandles: Arrow11 {
     }
     namedBasicOscs.merge(arr2.namedBasicOscs) { (a, b) in return a + b }
     namedLowPassFilter.merge(arr2.namedLowPassFilter) { (a, b) in return a + b }
+    namedCombFilters.merge(arr2.namedCombFilters) { (a, b) in return a + b }
     namedChorusers.merge(arr2.namedChorusers) { (a, b) in return a + b }
     namedCrossfaders.merge(arr2.namedCrossfaders) { (a, b) in return a + b }
     namedCrossfadersEqPow.merge(arr2.namedCrossfadersEqPow) { (a, b) in return a + b }

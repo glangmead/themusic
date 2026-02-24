@@ -14,6 +14,7 @@ enum ArrowSyntax: Equatable {
   case identity
   case control
   indirect case lowPassFilter(name: String, cutoff: ArrowSyntax, resonance: ArrowSyntax)
+  indirect case combFilter(name: String, frequency: ArrowSyntax, feedback: ArrowSyntax)
   indirect case prod(of: [ArrowSyntax])
   indirect case compose(arrows: [ArrowSyntax])
   indirect case sum(of: [ArrowSyntax])
@@ -42,7 +43,7 @@ extension ArrowSyntax: Codable {
 
   private enum CaseKey: String, CodingKey {
     case const, constOctave, constCent, identity, control
-    case lowPassFilter, prod, compose, sum
+    case lowPassFilter, combFilter, prod, compose, sum
     case crossfade, crossfadeEqPow
     case envelope, choruser, noiseSmoothStep
     case rand, exponentialRand, line
@@ -54,6 +55,7 @@ extension ArrowSyntax: Codable {
   // Payloads for multi-field cases
   private struct NameVal: Codable, Equatable { let name: String; let val: CoreFloat }
   private struct LowPassPayload: Codable, Equatable { let name: String; let cutoff: ArrowSyntax; let resonance: ArrowSyntax }
+  private struct CombFilterPayload: Codable, Equatable { let name: String; let frequency: ArrowSyntax; let feedback: ArrowSyntax }
   private struct CrossfadePayload: Codable, Equatable { let of: [ArrowSyntax]; let name: String; let mixPoint: ArrowSyntax }
   private struct EnvelopePayload: Codable, Equatable { let name: String; let attack: CoreFloat; let decay: CoreFloat; let sustain: CoreFloat; let release: CoreFloat; let scale: CoreFloat }
   private struct ChoruserPayload: Codable, Equatable { let name: String; let valueToChorus: String; let chorusCentRadius: Int; let chorusNumVoices: Int }
@@ -115,6 +117,9 @@ extension ArrowSyntax: Codable {
     } else if container.contains(.lowPassFilter) {
       let p = try container.decode(LowPassPayload.self, forKey: .lowPassFilter)
       self = .lowPassFilter(name: p.name, cutoff: p.cutoff, resonance: p.resonance)
+    } else if container.contains(.combFilter) {
+      let p = try container.decode(CombFilterPayload.self, forKey: .combFilter)
+      self = .combFilter(name: p.name, frequency: p.frequency, feedback: p.feedback)
     } else if container.contains(.crossfade) {
       let p = try container.decode(CrossfadePayload.self, forKey: .crossfade)
       self = .crossfade(of: p.of, name: p.name, mixPoint: p.mixPoint)
@@ -186,6 +191,8 @@ extension ArrowSyntax: Codable {
       try container.encode([String: String](), forKey: .control)
     case .lowPassFilter(let name, let cutoff, let resonance):
       try container.encode(LowPassPayload(name: name, cutoff: cutoff, resonance: resonance), forKey: .lowPassFilter)
+    case .combFilter(let name, let frequency, let feedback):
+      try container.encode(CombFilterPayload(name: name, frequency: frequency, feedback: feedback), forKey: .combFilter)
     case .crossfade(let of, let name, let mixPoint):
       try container.encode(CrossfadePayload(of: of, name: name, mixPoint: mixPoint), forKey: .crossfade)
     case .crossfadeEqPow(let of, let name, let mixPoint):
@@ -334,6 +341,19 @@ extension ArrowSyntax {
       }
       return handleArr
       
+    case .combFilter(let name, let frequency, let feedback):
+      let frequencyArrow = frequency.compile()
+      let feedbackArrow = feedback.compile()
+      let arr = CombFilter(
+        frequency: frequencyArrow,
+        feedback: feedbackArrow
+      )
+      let handleArr = ArrowWithHandles(arr)
+        .withMergeDictsFromArrow(frequencyArrow)
+        .withMergeDictsFromArrow(feedbackArrow)
+      handleArr.namedCombFilters[name] = [arr]
+      return handleArr
+
     case .choruser(let name, let valueToChorus, let chorusCentRadius, let chorusNumVoices):
       let choruser = Choruser(
         chorusCentRadius: chorusCentRadius,
@@ -434,6 +454,8 @@ extension ArrowSyntax {
       return .crossfadeEqPow(of: arrows.map(transform), name: name, mixPoint: transform(mixPoint))
     case .lowPassFilter(let name, let cutoff, let resonance):
       return .lowPassFilter(name: name, cutoff: transform(cutoff), resonance: transform(resonance))
+    case .combFilter(let name, let frequency, let feedback):
+      return .combFilter(name: name, frequency: transform(frequency), feedback: transform(feedback))
     case .osc(let name, let shape, let width):
       return .osc(name: name, shape: shape, width: transform(width))
     case .reciprocal(let inner):

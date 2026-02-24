@@ -104,6 +104,118 @@ final class Choruser: Arrow11 {
 }
 
 // from https://www.w3.org/TR/audio-eq-cookbook/
+// Feedback comb filter with linear interpolation for fractional delay.
+// output[n] = input[n] + feedback * output[n - D]
+// where D = sampleRate / frequency. This is the core of Karplus-Strong
+// string synthesis: feed a noise burst in and get a pitched, decaying tone.
+// The frequency response has peaks at multiples of the fundamental (harmonics),
+// spaced like the teeth of a comb — hence "comb filter."
+// Linear interpolation between adjacent delay buffer samples allows
+// non-integer delay lengths, matching SuperCollider's CombL behavior.
+final class CombFilter: Arrow11 {
+  private var innerVals = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
+  private var freqs = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
+  private var feedbacks = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
+
+  // Circular delay buffer. Sized for the lowest frequency we support (~20 Hz
+  // at 48 kHz = 2400 samples). Pre-allocated to avoid any allocation in process().
+  private var delayBuffer: [CoreFloat]
+  private var writeIndex: Int = 0
+  private let delayBufferSize: Int
+
+  // Track the last time value seen so we can detect gaps from AudioGate closure.
+  // A large jump means the voice was idle and we should clear stale buffer data.
+  private var lastTime: CoreFloat = 0
+
+  var frequency: Arrow11
+  var feedback: Arrow11
+
+  /// maxDelaySeconds caps the buffer size. 0.05s supports fundamentals down to ~20 Hz.
+  init(frequency: Arrow11, feedback: Arrow11, maxDelaySeconds: CoreFloat = 0.05) {
+    self.frequency = frequency
+    self.feedback = feedback
+    // Allocate for worst case sample rate (48 kHz) — will work fine at 44.1 kHz too.
+    self.delayBufferSize = Int(48000 * maxDelaySeconds) + 2
+    self.delayBuffer = [CoreFloat](repeating: 0, count: Int(48000 * maxDelaySeconds) + 2)
+    super.init()
+  }
+
+  override func setSampleRateRecursive(rate: CoreFloat) {
+    frequency.setSampleRateRecursive(rate: rate)
+    feedback.setSampleRateRecursive(rate: rate)
+    super.setSampleRateRecursive(rate: rate)
+  }
+
+  override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
+    (innerArr ?? ArrowIdentity()).process(inputs: inputs, outputs: &innerVals)
+    frequency.process(inputs: inputs, outputs: &freqs)
+    feedback.process(inputs: inputs, outputs: &feedbacks)
+
+    let count = inputs.count
+    let bufSize = delayBufferSize
+
+    // Detect time gap from AudioGate closure. A normal inter-frame gap at
+    // 44.1 kHz / 512 samples is ~0.012s. Anything over 0.05s means the
+    // voice was gated off and the buffer contains stale resonance.
+    if count > 0 {
+      let currentTime = inputs[0]
+      if lastTime > 0 && (currentTime - lastTime) > 0.05 {
+        delayBuffer.withUnsafeMutableBufferPointer { buf in
+          vDSP_vclrD(buf.baseAddress!, 1, vDSP_Length(bufSize))
+        }
+        writeIndex = 0
+      }
+      lastTime = inputs[count - 1]
+    }
+
+    innerVals.withUnsafeBufferPointer { innerBuf in
+      freqs.withUnsafeBufferPointer { freqBuf in
+        feedbacks.withUnsafeBufferPointer { fbBuf in
+          outputs.withUnsafeMutableBufferPointer { outBuf in
+            guard let innerBase = innerBuf.baseAddress,
+                  let freqBase = freqBuf.baseAddress,
+                  let fbBase = fbBuf.baseAddress,
+                  let outBase = outBuf.baseAddress else { return }
+
+            delayBuffer.withUnsafeMutableBufferPointer { delayBuf in
+              guard let delayBase = delayBuf.baseAddress else { return }
+
+              for i in 0..<count {
+                let freq = max(20.0, freqBase[i])
+                let delaySamples = sampleRate / freq
+                // Clamp to buffer bounds
+                let clampedDelay = min(delaySamples, CoreFloat(bufSize - 2))
+
+                // Linear interpolation between two buffer positions
+                let intDelay = Int(clampedDelay)
+                let frac = clampedDelay - CoreFloat(intDelay)
+
+                // Read from circular buffer
+                var readIndex1 = writeIndex - intDelay
+                if readIndex1 < 0 { readIndex1 += bufSize }
+                var readIndex2 = readIndex1 - 1
+                if readIndex2 < 0 { readIndex2 += bufSize }
+
+                let delayed = delayBase[readIndex1] + frac * (delayBase[readIndex2] - delayBase[readIndex1])
+
+                let output = innerBase[i] + fbBase[i] * delayed
+
+                // Write to circular buffer and advance
+                delayBase[writeIndex] = output
+                writeIndex += 1
+                if writeIndex >= bufSize { writeIndex = 0 }
+
+                outBase[i] = output
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// from https://www.w3.org/TR/audio-eq-cookbook/
 final class LowPassFilter2: Arrow11 {
   private var innerVals = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
   private var cutoffs = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
