@@ -9,33 +9,24 @@ import SwiftUI
 
 struct EventLogView: View {
   let eventLog: [EventAnnotation]
-  @Environment(\.dismiss) private var dismiss
 
   var body: some View {
-    NavigationStack {
-      ScrollViewReader { proxy in
-        ScrollView {
-          LazyVStack(alignment: .leading, spacing: 2) {
-            ForEach(eventLog) { annotation in
-              EventLogRowView(annotation: annotation)
-                .id(annotation.id)
-            }
-          }
-          .padding(.horizontal)
-        }
-        .scrollIndicators(.hidden)
-        .onChange(of: eventLog.count) {
-          if let last = eventLog.last {
-            withAnimation(.easeOut(duration: 0.15)) {
-              proxy.scrollTo(last.id, anchor: .bottom)
-            }
+    ScrollViewReader { proxy in
+      ScrollView {
+        LazyVStack(alignment: .leading, spacing: 2) {
+          ForEach(eventLog) { annotation in
+            EventLogRowView(annotation: annotation)
+              .id(annotation.id)
           }
         }
+        .padding(.horizontal)
       }
-      .navigationTitle("Event Log")
-      .toolbar {
-        ToolbarItem(placement: .cancellationAction) {
-          Button("Done") { dismiss() }
+      .scrollIndicators(.hidden)
+      .onChange(of: eventLog.count) {
+        if let last = eventLog.last {
+          withAnimation(.easeOut(duration: 0.15)) {
+            proxy.scrollTo(last.id, anchor: .bottom)
+          }
         }
       }
     }

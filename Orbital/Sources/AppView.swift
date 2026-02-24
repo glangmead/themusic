@@ -32,6 +32,7 @@ struct AppView: View {
 }
 
 /// Playback controls shown as the tab view's bottom accessory when a song is playing.
+/// Tapping the accessory opens the event log as a sheet.
 private struct PlaybackAccessoryView: View {
   @Environment(SongLibrary.self) private var library
   @Binding var isShowingVisualizer: Bool
@@ -70,12 +71,6 @@ private struct PlaybackAccessoryView: View {
         }
 
         Button {
-          isShowingEventLog = true
-        } label: {
-          Image(systemName: "list.bullet.rectangle")
-        }
-
-        Button {
           withAnimation(.easeInOut(duration: 0.4)) {
             isShowingVisualizer = true
           }
@@ -85,11 +80,34 @@ private struct PlaybackAccessoryView: View {
       }
     }
     .padding(.horizontal)
+    .contentShape(Rectangle())
+    .onTapGesture {
+      isShowingEventLog = true
+    }
     .sheet(isPresented: $isShowingEventLog) {
       if let state = library.currentPlaybackState {
-        EventLogView(eventLog: state.eventLog)
+        EventLogSheet(state: state)
       }
     }
+  }
+}
+
+/// Full event log presented as a sheet with a grab bar.
+private struct EventLogSheet: View {
+  let state: SongDocument
+  @Environment(\.dismiss) private var dismiss
+
+  var body: some View {
+    NavigationStack {
+      EventLogView(eventLog: state.eventLog)
+        .navigationTitle("Event Log")
+        .toolbar {
+          ToolbarItem(placement: .cancellationAction) {
+            Button("Done") { dismiss() }
+          }
+        }
+    }
+    .presentationDragIndicator(.visible)
   }
 }
 
