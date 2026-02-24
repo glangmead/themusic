@@ -1,7 +1,7 @@
 {
  "name"   : "Airports Pulse",
  "rose"   : {"freq": 0.3, "leafFactor": 2, "phase": 0.5, "amp": 3},
- "effects": {"reverbPreset": 4, "delayTime": 0, "delayLowPassCutoff": 100000, "delayFeedback": 0, "reverbWetDryMix": 40, "delayWetDryMix": 0},
+ "effects": {"reverbPreset": 8, "delayTime": 0.05, "delayLowPassCutoff": 1500, "delayFeedback": 15, "reverbWetDryMix": 50, "delayWetDryMix": 15},
  "arrow"  : {
   "compose": [
     {
@@ -112,17 +112,24 @@
     },
     {
      "lowPassFilter": {
-       "cutoff"   :
-        {"sum": [
-          { "const": {"name": "cutoffLow", "val": 40} },
-          { "prod": [
-            { "const": {"name": "freq", "val": 300} },
-            { "const": {"name": "cutoffMultiplier", "val": 1.5} },
-            { "envelope": { "release": 0.5, "scale": 1, "name": "filterEnv", "attack": 0.003, "decay": 0.1, "sustain": 0.15 } }
-          ]}
-       ]},
+       "cutoff":
+        { "prod": [
+          { "const": {"name": "freq", "val": 300} },
+          { "const": {"name": "cutoffMultiplier", "val": 1.5} }
+        ]},
        "resonance": { "const": {"name": "resonance", "val": 1.8} },
-       "name"     : "filter"
+       "name": "filter"
+     }
+   },
+   {
+     "lowPassFilter": {
+       "cutoff":
+        { "prod": [
+          { "const": {"name": "freq", "val": 300} },
+          { "const": {"name": "postLPFMultiplier", "val": 8} }
+        ]},
+       "resonance": { "const": {"name": "postLPFResonance", "val": 0.7} },
+       "name": "postLPF"
      }
    }]
 

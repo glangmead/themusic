@@ -1,7 +1,7 @@
 {
  "name"   : "Airports Piano Comb",
  "rose"   : {"freq": 0.2, "leafFactor": 3, "phase": 1.0, "amp": 3},
- "effects": {"reverbPreset": 4, "delayTime": 0.03, "delayLowPassCutoff": 1500, "delayFeedback": 10, "reverbWetDryMix": 45, "delayWetDryMix": 10},
+ "effects": {"reverbPreset": 8, "delayTime": 0.05, "delayLowPassCutoff": 1500, "delayFeedback": 15, "reverbWetDryMix": 50, "delayWetDryMix": 15},
  "arrow"  : {
   "compose": [
     {
@@ -121,7 +121,17 @@
        "feedback": { "const": {"name": "combFeedback", "val": 0.98} },
        "name"    : "comb"
      }
+   },
+   {
+     "lowPassFilter": {
+       "cutoff":
+        { "prod": [
+          { "const": {"name": "freq", "val": 300} },
+          { "const": {"name": "combLPFMultiplier", "val": 8} }
+        ]},
+       "resonance": { "const": {"name": "combLPFResonance", "val": 0.7} },
+       "name": "combLPF"
+     }
    }]
-
  }
 }

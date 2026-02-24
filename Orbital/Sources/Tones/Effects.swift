@@ -146,6 +146,15 @@ final class CombFilter: Arrow11 {
     super.setSampleRateRecursive(rate: rate)
   }
 
+  /// Clear the delay buffer and reset write position.
+  func reset() {
+    delayBuffer.withUnsafeMutableBufferPointer { buf in
+      vDSP_vclrD(buf.baseAddress!, 1, vDSP_Length(delayBufferSize))
+    }
+    writeIndex = 0
+    lastTime = 0
+  }
+
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
     (innerArr ?? ArrowIdentity()).process(inputs: inputs, outputs: &innerVals)
     frequency.process(inputs: inputs, outputs: &freqs)

@@ -4,8 +4,8 @@
     "filename": "patterns/BachInvention1.mid",
     "loop": true,
     "tracks": [
-      { "presetFilename": "airports_piano_comb", "numVoices": 8 },
-      { "presetFilename": "airports_pulse", "numVoices": 8 }
+      { "presetFilename": "airports_piano_comb", "numVoices": 12 },
+      { "presetFilename": "airports_pulse", "numVoices": 12 }
     ]
   }
 }
