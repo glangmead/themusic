@@ -132,6 +132,11 @@ struct ArrowSyntaxEditorView: View {
       Text("Emitter: \(name)")
         .font(.caption)
         .foregroundStyle(.secondary)
+
+    case .quickExpression(let expr):
+      Text(expr)
+        .font(.system(.caption, design: .monospaced))
+        .foregroundStyle(.secondary)
     }
   }
 }

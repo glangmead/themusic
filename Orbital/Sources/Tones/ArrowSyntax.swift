@@ -31,6 +31,7 @@ enum ArrowSyntax: Equatable {
   case eventVelocity
   case libraryArrow(name: String)
   case emitterValue(name: String)
+  case quickExpression(String)
   
   indirect case osc(name: String, shape: BasicOscillator.OscShape, width: ArrowSyntax)
 }
@@ -47,7 +48,7 @@ extension ArrowSyntax: Codable {
     case rand, exponentialRand, line
     case reciprocalConst, reciprocal
     case eventNote, eventVelocity
-    case libraryArrow, emitterValue, osc
+    case libraryArrow, emitterValue, quickExpression, osc
   }
 
   // Payloads for multi-field cases
@@ -151,6 +152,9 @@ extension ArrowSyntax: Codable {
     } else if container.contains(.emitterValue) {
       let p = try container.decode(NameOnly.self, forKey: .emitterValue)
       self = .emitterValue(name: p.name)
+    } else if container.contains(.quickExpression) {
+      let expr = try container.decode(String.self, forKey: .quickExpression)
+      self = .quickExpression(expr)
     } else if container.contains(.osc) {
       let p = try container.decode(OscPayload.self, forKey: .osc)
       self = .osc(name: p.name, shape: p.shape, width: p.width)
@@ -208,6 +212,8 @@ extension ArrowSyntax: Codable {
       try container.encode(NameOnly(name: name), forKey: .libraryArrow)
     case .emitterValue(let name):
       try container.encode(NameOnly(name: name), forKey: .emitterValue)
+    case .quickExpression(let expr):
+      try container.encode(expr, forKey: .quickExpression)
     case .osc(let name, let shape, let width):
       try container.encode(OscPayload(name: name, shape: shape, width: width), forKey: .osc)
     }
@@ -394,6 +400,16 @@ extension ArrowSyntax {
       let handleArr = ArrowWithHandles(arr)
       handleArr.namedEmitterValues[name] = [arr]
       return handleArr
+
+    case .quickExpression(let expr):
+      // Parse the expression into an ArrowSyntax tree, then compile that tree.
+      // If the expression is invalid, fall back to a zero constant so
+      // playback doesn't crash — the UI validates before saving.
+      guard let parsed = try? QuickParser.parse(expr) else {
+        print("QuickParser: failed to parse '\(expr)', falling back to 0")
+        return ArrowSyntax.const(name: "_error", val: 0).compile()
+      }
+      return parsed.compile()
     }
   }
 
@@ -425,7 +441,8 @@ extension ArrowSyntax {
     case .const, .constOctave, .constCent, .reciprocalConst,
          .identity, .control, .envelope, .choruser,
          .noiseSmoothStep, .rand, .exponentialRand, .line,
-         .eventNote, .eventVelocity, .libraryArrow, .emitterValue:
+         .eventNote, .eventVelocity, .libraryArrow, .emitterValue,
+         .quickExpression:
       return self
     }
   }

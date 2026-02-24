@@ -216,9 +216,13 @@ struct TablePatternFormView: View {
       TextField("Name", text: mod.name)
       TextField("Target Handle", text: mod.targetHandle)
 
-      if mod.wrappedValue.arrow != nil {
-        Text("Source: arrow formula (edit in JSON)")
-          .foregroundStyle(.secondary)
+      if mod.wrappedValue.arrow != nil || !mod.wrappedValue.quickExpressionText.isEmpty {
+        ExpressionTextField(
+          text: mod.quickExpressionText,
+          placeholder: "Expression (e.g. 1 / (octave + 1))",
+          emitterNames: allEmitterNames()
+        )
+        .frame(height: 34)
       } else {
         Picker("Float Emitter", selection: mod.floatEmitter) {
           Text("(none)").tag("")
@@ -233,6 +237,8 @@ struct TablePatternFormView: View {
         Text(modulatorSummary(mod.wrappedValue))
           .font(.caption)
           .foregroundStyle(.secondary)
+          .lineLimit(1)
+          .truncationMode(.middle)
       }
     }
   }
@@ -290,6 +296,11 @@ struct TablePatternFormView: View {
   /// Returns emitter names filtered by output type.
   private func emitterNames(ofType type: EmitterOutputType) -> [String] {
     emitters.filter { $0.outputType == type && !$0.name.isEmpty }.map(\.name)
+  }
+
+  /// Returns all emitter names regardless of type, for expression keyboard.
+  private func allEmitterNames() -> [String] {
+    emitters.filter { !$0.name.isEmpty }.map(\.name)
   }
 
   /// All available preset filenames (without .json extension).
@@ -410,7 +421,9 @@ struct TablePatternFormView: View {
     if mod.targetHandle.isEmpty && mod.floatEmitter.isEmpty && mod.arrow == nil { return "unconfigured" }
     let target = mod.targetHandle.isEmpty ? "?" : mod.targetHandle
     let source: String
-    if mod.arrow != nil {
+    if !mod.quickExpressionText.isEmpty {
+      source = mod.quickExpressionText
+    } else if mod.arrow != nil {
       source = "(arrow)"
     } else if mod.floatEmitter.isEmpty {
       source = "?"

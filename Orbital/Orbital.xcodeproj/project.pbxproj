@@ -92,6 +92,8 @@
 				UI/ArrowChart.swift,
 				UI/ArrowSyntaxEditorView.swift,
 				UI/EventLogView.swift,
+				UI/ExpressionKeyboardView.swift,
+				UI/ExpressionTextField.swift,
 				UI/KnobbyBox.swift,
 				UI/KnobbyKnob.swift,
 				UI/OrbitalView.swift,

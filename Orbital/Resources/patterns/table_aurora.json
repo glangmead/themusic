@@ -107,10 +107,7 @@
       {
         "name": "octaveAmpMod",
         "targetHandle": "overallAmp2",
-        "arrow": {"reciprocal": {"sum": [
-          {"const": {"name": "one", "val": 1}},
-          {"emitterValue": {"name": "octaves"}}
-        ]}}
+        "arrow": {"quickExpression": "1 / (octaves + 1)"}
       }
     ],
     "tracks": [
