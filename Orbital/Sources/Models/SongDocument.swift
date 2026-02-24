@@ -36,6 +36,13 @@ class SongDocument {
   /// Set when loading fails; shown as an alert to the user.
   var loadError: String?
   private var playbackTask: Task<Void, Never>? = nil
+  private var annotationTask: Task<Void, Never>? = nil
+
+  // MARK: - Event log
+
+  /// Rolling log of event annotations, most recent last. Capped at maxLogEntries.
+  private(set) var eventLog: [EventAnnotation] = []
+  private static let maxLogEntries = 500
 
   // MARK: - Document state (survives stop/play cycles)
 
@@ -142,6 +149,7 @@ class SongDocument {
 
     loadError = nil
     phase = .loading
+    eventLog = []
 
     playbackTask = Task {
       do {
@@ -156,6 +164,26 @@ class SongDocument {
       }
 
       phase = .playing
+
+      // Subscribe to annotation streams for the event log
+      if let pattern = runtime?.compiledPattern {
+        let streams = await pattern.getAnnotationStreams()
+        annotationTask = Task {
+          await withTaskGroup(of: Void.self) { group in
+            for stream in streams {
+              group.addTask { @MainActor in
+                for await annotation in stream {
+                  self.eventLog.append(annotation)
+                  if self.eventLog.count > Self.maxLogEntries {
+                    self.eventLog.removeFirst(self.eventLog.count - Self.maxLogEntries)
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
       await runtime?.compiledPattern.play()
     }
   }
@@ -186,6 +214,8 @@ class SongDocument {
   func stop() {
     playbackTask?.cancel()
     playbackTask = nil
+    annotationTask?.cancel()
+    annotationTask = nil
     engine?.stop()
     teardownRuntime()
     phase = .idle

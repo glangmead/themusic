@@ -313,7 +313,9 @@ struct PatternSyntax: Codable {
         notes: notes,
         sustains: sustains,
         gaps: gaps,
-        name: trackSpec.name
+        name: trackSpec.name,
+        emitterShadows: [:],
+        chordEmitterName: nil
       ))
 
       trackInfos.append(TrackInfo(
@@ -364,7 +366,9 @@ struct PatternSyntax: Codable {
         notes: iters.notes,
         sustains: iters.sustains,
         gaps: iters.gaps,
-        name: trackName
+        name: trackName,
+        emitterShadows: [:],
+        chordEmitterName: nil
       ))
 
       trackInfos.append(TrackInfo(

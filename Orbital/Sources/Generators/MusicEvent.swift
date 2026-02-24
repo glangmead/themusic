@@ -22,6 +22,48 @@ final class EventUsingArrow: Arrow11 {
   }
 }
 
+// MARK: - EventAnnotation
+
+/// Per-event metadata yielded from MusicPattern to the UI layer via AsyncStream.
+struct EventAnnotation: Sendable, Identifiable {
+  let id: UUID
+  let trackIndex: Int
+  let trackName: String
+  /// Wall-clock time relative to playback start (seconds).
+  let timestamp: TimeInterval
+  /// Roman numeral chord symbol, if this track uses a Markov chord emitter.
+  let chordSymbol: String?
+  /// The MIDI notes produced by this event.
+  let notes: [MidiNote]
+  /// Sustain duration in seconds.
+  let sustain: CoreFloat
+  /// Gap duration in seconds.
+  let gap: CoreFloat
+  /// Display values of all emitter shadows: emitter name -> last float value.
+  let emitterValues: [String: CoreFloat]
+
+  init(
+    trackIndex: Int,
+    trackName: String,
+    timestamp: TimeInterval,
+    chordSymbol: String?,
+    notes: [MidiNote],
+    sustain: CoreFloat,
+    gap: CoreFloat,
+    emitterValues: [String: CoreFloat]
+  ) {
+    self.id = UUID()
+    self.trackIndex = trackIndex
+    self.trackName = trackName
+    self.timestamp = timestamp
+    self.chordSymbol = chordSymbol
+    self.notes = notes
+    self.sustain = sustain
+    self.gap = gap
+    self.emitterValues = emitterValues
+  }
+}
+
 // a musical utterance to play at one point in time, a set of simultaneous noteOns
 struct MusicEvent {
   let noteHandler: NoteHandler

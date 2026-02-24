@@ -13,7 +13,7 @@ import os
 
 typealias MidiValue = UInt8
 
-struct MidiNote {
+struct MidiNote: Sendable {
   let note: MidiValue
   let velocity: MidiValue
   var freq: CoreFloat {

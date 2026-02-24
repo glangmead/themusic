@@ -115,7 +115,13 @@ enum TablePatternCompiler {
       compiledModulators[mod.name] = result
     }
 
-    // 5. Assemble tracks
+    // 5. Collect all emitter shadows for annotation
+    var allEmitterShadows: [String: ArrowConst] = [:]
+    for (name, compiled) in compiledEmitters {
+      allEmitterShadows[name] = compiled.lastValueShadow
+    }
+
+    // 6. Assemble tracks
     var musicTracks: [MusicPattern.Track] = []
     var trackInfos: [TrackInfo] = []
     var spatialPresets: [SpatialPreset] = []
@@ -144,13 +150,29 @@ enum TablePatternCompiler {
         modDict[mod.target] = mod.arrow
       }
 
+      // Determine if this track's note material uses a markov chord picker
+      let chordEmitterName: String? = {
+        guard let noteMat = table.noteMaterials.first(where: { $0.name == trackRow.noteMaterial }) else {
+          return nil
+        }
+        guard let pickerRow = table.emitters.first(where: { $0.name == noteMat.intervalPicker }) else {
+          return nil
+        }
+        if case .markovChord = pickerRow.function {
+          return noteMat.intervalPicker
+        }
+        return nil
+      }()
+
       musicTracks.append(MusicPattern.Track(
         spatialPreset: sp,
         modulators: modDict,
         notes: notes,
         sustains: sustainEmitter,
         gaps: gapEmitter,
-        name: trackRow.name
+        name: trackRow.name,
+        emitterShadows: allEmitterShadows,
+        chordEmitterName: chordEmitterName
       ))
 
       trackInfos.append(TrackInfo(

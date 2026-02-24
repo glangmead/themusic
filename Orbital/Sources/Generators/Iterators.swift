@@ -77,6 +77,32 @@ enum TymoczkoChords713: Hashable {
     }
   }
 
+  /// Roman numeral display name for UI presentation.
+  var displayName: String {
+    switch self {
+    case .I:     "I"
+    case .vi:    "vi"
+    case .IV:    "IV"
+    case .ii:    "ii"
+    case .V:     "V"
+    case .iii:   "iii"
+    case .I6:    "I6"
+    case .IV6:   "IV6"
+    case .ii6:   "ii6"
+    case .V6:    "V6"
+    case .iii6:  "iii6"
+    case .vi6:   "vi6"
+    case .viio6: "viio6"
+    case .I64:   "I64"
+    }
+  }
+
+  /// Look up the chord display name for a given index in `MarkovChordIndexIterator.chordOrder`.
+  static func chordDisplayName(forIndex index: Int) -> String? {
+    guard index >= 0, index < MarkovChordIndexIterator.chordOrder.count else { return nil }
+    return MarkovChordIndexIterator.chordOrder[index].displayName
+  }
+
   /// Probabilistic state transitions according to Tymoczko diagram 7.1.3 of Tonality.
   static func stateTransitionsBaroqueClassicalMajor(_ start: TymoczkoChords713) -> [(TymoczkoChords713, CoreFloat)] {
     switch start {

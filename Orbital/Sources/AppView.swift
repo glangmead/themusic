@@ -35,6 +35,7 @@ struct AppView: View {
 private struct PlaybackAccessoryView: View {
   @Environment(SongLibrary.self) private var library
   @Binding var isShowingVisualizer: Bool
+  @State private var isShowingEventLog = false
 
   var body: some View {
     HStack {
@@ -69,6 +70,12 @@ private struct PlaybackAccessoryView: View {
         }
 
         Button {
+          isShowingEventLog = true
+        } label: {
+          Image(systemName: "list.bullet.rectangle")
+        }
+
+        Button {
           withAnimation(.easeInOut(duration: 0.4)) {
             isShowingVisualizer = true
           }
@@ -78,6 +85,11 @@ private struct PlaybackAccessoryView: View {
       }
     }
     .padding(.horizontal)
+    .sheet(isPresented: $isShowingEventLog) {
+      if let state = library.currentPlaybackState {
+        EventLogView(eventLog: state.eventLog)
+      }
+    }
   }
 }
 

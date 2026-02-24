@@ -18,6 +18,11 @@ actor MusicPattern {
     var sustains: any IteratorProtocol<CoreFloat>
     var gaps: any IteratorProtocol<CoreFloat>
     let name: String
+    /// Emitter name -> shadow ArrowConst holding last emitted value (float-coerced).
+    /// Empty for non-table compilation paths.
+    let emitterShadows: [String: ArrowConst]
+    /// Name of the markovChord emitter, if one exists for this track's note material.
+    let chordEmitterName: String?
   }
 
   private var tracks: [Track]
@@ -25,10 +30,27 @@ actor MusicPattern {
   var timeOrigin: Double
   var isPaused: Bool = false
 
+  /// One annotation stream per track; UI subscribes to these.
+  private(set) var annotationStreams: [AsyncStream<EventAnnotation>] = []
+  private var annotationContinuations: [AsyncStream<EventAnnotation>.Continuation] = []
+
   init(tracks: [Track], clock: any Clock<Duration> = ContinuousClock()) {
     self.tracks = tracks
     self.clock = clock
     self.timeOrigin = Date.now.timeIntervalSince1970
+
+    for _ in tracks.indices {
+      let (stream, continuation) = AsyncStream<EventAnnotation>.makeStream(
+        bufferingPolicy: .bufferingNewest(1)
+      )
+      annotationStreams.append(stream)
+      annotationContinuations.append(continuation)
+    }
+  }
+
+  /// Accessor for the annotation streams. Called from MainActor before play() starts.
+  func getAnnotationStreams() -> [AsyncStream<EventAnnotation>] {
+    annotationStreams
   }
 
   func setPaused(_ paused: Bool) {
@@ -85,6 +107,32 @@ actor MusicPattern {
         }
         guard !Task.isCancelled else { return }
         guard var event = nextEvent(trackIndex: trackIndex) else { return }
+
+        // Build and yield annotation for the UI event log
+        if trackIndex < annotationContinuations.count {
+          let track = tracks[trackIndex]
+          var emitterValues: [String: CoreFloat] = [:]
+          for (name, shadow) in track.emitterShadows {
+            emitterValues[name] = shadow.val
+          }
+          let chordSymbol: String? = {
+            guard let chordName = track.chordEmitterName,
+                  let shadow = track.emitterShadows[chordName] else { return nil }
+            return TymoczkoChords713.chordDisplayName(forIndex: Int(shadow.val))
+          }()
+          let annotation = EventAnnotation(
+            trackIndex: trackIndex,
+            trackName: track.name,
+            timestamp: Date.now.timeIntervalSince1970 - timeOrigin,
+            chordSymbol: chordSymbol,
+            notes: event.notes,
+            sustain: event.sustain,
+            gap: event.gap,
+            emitterValues: emitterValues
+          )
+          annotationContinuations[trackIndex].yield(annotation)
+        }
+
         group.addTask {
           try? await event.play()
         }
@@ -97,8 +145,16 @@ actor MusicPattern {
     }
   }
 
+  /// Signal all annotation streams that playback has ended.
+  private func finishAnnotations() {
+    for continuation in annotationContinuations {
+      continuation.finish()
+    }
+  }
+
   /// Detach audio nodes from all tracks.
   func detachNodes() {
+    finishAnnotations()
     for track in tracks {
       track.spatialPreset.detachNodes()
     }
@@ -106,6 +162,7 @@ actor MusicPattern {
 
   /// Full teardown: detach nodes and destroy Preset objects.
   func cleanup() {
+    finishAnnotations()
     for track in tracks {
       track.spatialPreset.cleanup()
     }
