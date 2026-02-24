@@ -66,7 +66,7 @@ struct SongSettingsView: View {
 
       // MARK: - Spatial
       Section("Spatial") {
-        if let runtime = playbackState.runtime {
+        if playbackState.runtime != nil {
           let rosePairs = playbackState.tracks.compactMap { track -> (TrackInfo, SpatialPreset)? in
             guard let sp = playbackState.spatialPreset(forTrack: track.id),
                   sp.presets.first?.positionLFO != nil else { return nil }
@@ -129,5 +129,6 @@ struct SongSettingsView: View {
     SongSettingsView(song: song)
   }
   .environment(playbackState)
+  .environment(ResourceManager())
 }
 

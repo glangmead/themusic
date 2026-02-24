@@ -86,6 +86,7 @@
 			membershipExceptions = (
 				AppView.swift,
 				Models/PatternStorage.swift,
+				Models/ResourceManager.swift,
 				Models/SongDocument.swift,
 				Models/SongRef.swift,
 				OrbitalApp.swift,

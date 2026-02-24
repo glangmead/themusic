@@ -70,5 +70,6 @@ func resolveResourceURL(name: String, ext: String, resourceBaseURL: URL? = nil) 
     let url = subdir.isEmpty ? base.appendingPathComponent(filename) : base.appendingPathComponent(subdir).appendingPathComponent(filename)
     if FileManager.default.fileExists(atPath: url.path) { return url }
   }
-  return nil
+  // Fall back to bundle for built-in resources (e.g. shipped sample files)
+  return Bundle.main.url(forResource: name, withExtension: ext)
 }

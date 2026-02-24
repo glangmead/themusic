@@ -126,8 +126,8 @@ struct RoseSceneView: View {
                 let t = elapsed
 
                 let currentAmp = Float(roseRef.amp.val)
-                let freq = roseRef.freq.val
-                let leafFactor = roseRef.leafFactor.val
+                _ = roseRef.freq.val
+                _ = roseRef.leafFactor.val
 
                 // Compute Rose position (upper-hemisphere spherical)
                 let (rx, ry, rz) = roseRef.of(t)

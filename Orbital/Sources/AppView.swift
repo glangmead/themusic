@@ -115,4 +115,5 @@ private struct EventLogSheet: View {
   AppView()
     .environment(SpatialAudioEngine())
     .environment(SongLibrary())
+    .environment(ResourceManager())
 }

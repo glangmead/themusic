@@ -133,7 +133,7 @@ enum TablePatternCompiler {
       let sp = try await SpatialPreset(presetSpec: presetSpec, engine: engine, numVoices: voices, resourceBaseURL: resourceBaseURL)
 
       // Look up note material
-      guard var notes = compiledNoteMaterials[trackRow.noteMaterial] else {
+      guard let notes = compiledNoteMaterials[trackRow.noteMaterial] else {
         throw TableCompileError.unknownNoteMaterial(name: trackRow.noteMaterial, referencedBy: trackRow.name)
       }
 

@@ -31,6 +31,7 @@ class SongDocument {
 
   let song: SongRef
   let engine: SpatialAudioEngine?
+  let resourceBaseURL: URL?
 
   private(set) var phase: PlaybackPhase = .idle
   /// Set when loading fails; shown as an alert to the user.
@@ -71,9 +72,10 @@ class SongDocument {
     return runtime.spatialPresets[trackId]
   }
 
-  init(song: SongRef, engine: SpatialAudioEngine) {
+  init(song: SongRef, engine: SpatialAudioEngine, resourceBaseURL: URL? = nil) {
     self.song = song
     self.engine = engine
+    self.resourceBaseURL = resourceBaseURL
   }
 
   /// UI-only init: loads track info (patterns, presets, spatial data) without an audio engine.
@@ -81,6 +83,7 @@ class SongDocument {
   init(song: SongRef) {
     self.song = song
     self.engine = nil
+    self.resourceBaseURL = nil
   }
 
   func togglePlayback() {
@@ -106,14 +109,15 @@ class SongDocument {
       return
     }
 
-    let spec = Bundle.main.decode(
+    let spec = decodeJSON(
       PatternSyntax.self,
       from: song.patternFileName,
-      subdirectory: "patterns"
+      subdirectory: "patterns",
+      resourceBaseURL: resourceBaseURL
     )
 
     if let engine {
-      let result = try await spec.compile(engine: engine)
+      let result = try await spec.compile(engine: engine, resourceBaseURL: resourceBaseURL)
       runtime = RuntimeSong(
         compiledPattern: result.pattern,
         spatialPresets: result.spatialPresets
@@ -121,7 +125,7 @@ class SongDocument {
       tracks = result.trackInfos
     } else {
       // UI-only: build TrackInfo without audio nodes
-      tracks = spec.compileTrackInfoOnly()
+      tracks = spec.compileTrackInfoOnly(resourceBaseURL: resourceBaseURL)
     }
 
     patternSpec = spec
@@ -130,7 +134,7 @@ class SongDocument {
   /// Recompile from the stored in-memory spec (preserves user edits).
   private func recompileFromSpec() async throws {
     guard let engine, let spec = patternSpec else { return }
-    let result = try await spec.compile(engine: engine)
+    let result = try await spec.compile(engine: engine, resourceBaseURL: resourceBaseURL)
     runtime = RuntimeSong(
       compiledPattern: result.pattern,
       spatialPresets: result.spatialPresets

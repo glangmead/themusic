@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TablePatternFormView: View {
   @Environment(SongDocument.self) private var playbackState
+  @Environment(ResourceManager.self) private var resourceManager
 
   @State private var patternName: String
   @State private var emitters: [EmitterRowState]
@@ -216,14 +217,21 @@ struct TablePatternFormView: View {
       TextField("Name", text: mod.name)
       TextField("Target Handle", text: mod.targetHandle)
 
-      if mod.wrappedValue.arrow != nil || !mod.wrappedValue.quickExpressionText.isEmpty {
+      Picker("Source", selection: mod.sourceKind) {
+        ForEach(ModulatorSourceKind.allCases, id: \.self) { kind in
+          Text(kind.rawValue).tag(kind)
+        }
+      }
+
+      switch mod.wrappedValue.sourceKind {
+      case .expression:
         ExpressionTextField(
           text: mod.quickExpressionText,
           placeholder: "Expression (e.g. 1 / (octave + 1))",
           emitterNames: allEmitterNames()
         )
         .frame(height: 34)
-      } else {
+      case .floatEmitter:
         Picker("Float Emitter", selection: mod.floatEmitter) {
           Text("(none)").tag("")
           ForEach(emitterNames(ofType: .float), id: \.self) { name in
@@ -305,7 +313,12 @@ struct TablePatternFormView: View {
 
   /// All available preset filenames (without .json extension).
   private var availablePresetFilenames: [String] {
-    let urls = Bundle.main.urls(forResourcesWithExtension: "json", subdirectory: "presets") ?? []
+    guard let base = resourceManager.resourceBaseURL else { return [] }
+    let presetsDir = base.appendingPathComponent("presets")
+    let urls = (try? FileManager.default.contentsOfDirectory(
+      at: presetsDir,
+      includingPropertiesForKeys: nil
+    ).filter { $0.pathExtension == "json" }) ?? []
     return urls.map { $0.deletingPathExtension().lastPathComponent }.sorted()
   }
 
@@ -479,4 +492,22 @@ struct TablePatternFormView: View {
     )
     PatternStorage.save(patternSyntax, filename: filename)
   }
+}
+
+#Preview {
+  let pattern = Bundle.main.decode(
+    PatternSyntax.self,
+    from: "table_aurora.json",
+    subdirectory: "patterns"
+  )
+  let table = pattern.tableTracks!
+  NavigationStack {
+    TablePatternFormView(table: table)
+  }
+  .environment(
+    SongDocument(
+      song: SongRef(name: "Aurora Borealis", patternFileName: "table_aurora.json")
+    )
+  )
+  .environment(ResourceManager())
 }

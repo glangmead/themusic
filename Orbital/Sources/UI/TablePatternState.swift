@@ -137,6 +137,11 @@ struct NoteMaterialRowState: Identifiable, Equatable {
 
 // MARK: - Modulator Row State
 
+enum ModulatorSourceKind: String, CaseIterable {
+  case floatEmitter = "Float Emitter"
+  case expression = "Expression"
+}
+
 struct TableModulatorRowState: Identifiable, Equatable {
   let id: UUID
   var name: String
@@ -146,6 +151,24 @@ struct TableModulatorRowState: Identifiable, Equatable {
   var arrow: ArrowSyntax?
   /// Quick expression text for arrow-based modulation, editable in the form.
   var quickExpressionText: String
+
+  var sourceKind: ModulatorSourceKind {
+    get {
+      if arrow != nil || !quickExpressionText.isEmpty {
+        return .expression
+      }
+      return .floatEmitter
+    }
+    set {
+      switch newValue {
+      case .floatEmitter:
+        arrow = nil
+        quickExpressionText = ""
+      case .expression:
+        floatEmitter = ""
+      }
+    }
+  }
 
   init(from syntax: ModulatorRowSyntax) {
     id = syntax.id

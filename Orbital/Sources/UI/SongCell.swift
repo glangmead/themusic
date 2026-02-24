@@ -10,6 +10,7 @@ import SwiftUI
 struct SongCell: View {
   @Environment(SpatialAudioEngine.self) private var engine
   @Environment(SongLibrary.self) private var library
+  @Environment(ResourceManager.self) private var resourceManager
   let song: SongRef
   @Binding var selectedSongID: SongRef.ID?
 
@@ -23,7 +24,7 @@ struct SongCell: View {
     HStack {
       // Tappable title area for play/pause
       Button {
-        library.play(song, engine: engine)
+        library.play(song, engine: engine, resourceBaseURL: resourceManager.resourceBaseURL)
       } label: {
         HStack {
           Text(song.name)
@@ -48,7 +49,7 @@ struct SongCell: View {
     }
     .onAppear {
       if playbackState == nil {
-        playbackState = library.playbackState(for: song, engine: engine)
+        playbackState = library.playbackState(for: song, engine: engine, resourceBaseURL: resourceManager.resourceBaseURL)
       }
     }
     .alert(
@@ -70,6 +71,7 @@ struct SongCell: View {
 #Preview {
   let engine = SpatialAudioEngine()
   let library = SongLibrary()
+  let resourceManager = ResourceManager()
   let song = SongRef(
     name: "Aurora Borealis",
     patternFileName: "aurora_arpeggio.json"
@@ -82,6 +84,7 @@ struct SongCell: View {
     }
     .environment(engine)
     .environment(library)
+    .environment(resourceManager)
   }
 }
 

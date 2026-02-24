@@ -73,4 +73,5 @@ struct SongPresetListView: View {
   }
   .environment(engine)
   .environment(playbackState)
+  .environment(ResourceManager())
 }

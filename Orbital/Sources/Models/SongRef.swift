@@ -14,26 +14,33 @@ struct SongRef: Identifiable {
   let patternFileName: String // e.g. "aurora_arpeggio.json"
 }
 
+/// Lightweight struct for decoding just the pattern name from a JSON file.
+private struct PatternNameOnly: Decodable {
+  let name: String
+}
+
 @MainActor @Observable
 class SongLibrary {
-  var songs: [SongRef] = [
-    SongRef(
-      name: "Aurora Borealis",
-      patternFileName: "table_aurora.json"
-    ),
-    SongRef(
-      name: "Baroque Chords",
-      patternFileName: "baroque_chords.json"
-    ),
-    SongRef(
-      name: "Bach Invention 1",
-      patternFileName: "bach_invention.json"
-    ),
-    SongRef(
-      name: "Duet Arpeggios",
-      patternFileName: "duet_arpeggios.json"
-    ),
-  ]
+  var songs: [SongRef] = []
+
+  /// Populate the song list by enumerating pattern JSON files in the given directory.
+  func loadSongs(from baseURL: URL?) {
+    guard let baseURL else { return }
+    let patternsDir = baseURL.appendingPathComponent("patterns")
+    guard let files = try? FileManager.default.contentsOfDirectory(
+      at: patternsDir,
+      includingPropertiesForKeys: nil
+    ) else { return }
+    songs = files
+      .filter { $0.pathExtension == "json" }
+      .compactMap { url -> SongRef? in
+        guard let data = try? Data(contentsOf: url),
+              let nameOnly = try? JSONDecoder().decode(PatternNameOnly.self, from: data)
+        else { return nil }
+        return SongRef(name: nameOnly.name, patternFileName: url.lastPathComponent)
+      }
+      .sorted { $0.name.localizedCaseInsensitiveCompare($1.name) == .orderedAscending }
+  }
 
   /// Playback states keyed by SongRef.id, created lazily by SongCells.
   var playbackStates: [UUID: SongDocument] = [:]
@@ -50,17 +57,17 @@ class SongLibrary {
   /// The currently playing (or paused) song's state, if any.
   var currentPlaybackState: SongDocument?
 
-  func playbackState(for song: SongRef, engine: SpatialAudioEngine) -> SongDocument {
+  func playbackState(for song: SongRef, engine: SpatialAudioEngine, resourceBaseURL: URL? = nil) -> SongDocument {
     if let existing = playbackStates[song.id] { return existing }
-    let state = SongDocument(song: song, engine: engine)
+    let state = SongDocument(song: song, engine: engine, resourceBaseURL: resourceBaseURL)
     playbackStates[song.id] = state
     return state
   }
 
   /// Start playing a song, stopping any currently playing song first.
   /// If the tapped song is already the current song, toggle pause/resume.
-  func play(_ song: SongRef, engine: SpatialAudioEngine) {
-    let state = playbackState(for: song, engine: engine)
+  func play(_ song: SongRef, engine: SpatialAudioEngine, resourceBaseURL: URL? = nil) {
+    let state = playbackState(for: song, engine: engine, resourceBaseURL: resourceBaseURL)
     if state === currentPlaybackState {
       state.togglePlayback()
       if state.isPaused {
@@ -113,6 +120,23 @@ class SongLibrary {
     currentPlaybackState?.stop()
     currentPlaybackState = nil
     nowPlayingManager.songStopped()
+  }
+
+  func deleteSong(_ song: SongRef) {
+    // Stop playback if this song is currently playing
+    if currentPlaybackState === playbackStates[song.id] {
+      currentPlaybackState?.stop()
+      currentPlaybackState = nil
+      nowPlayingManager.songStopped()
+    }
+    playbackStates[song.id] = nil
+    songs.removeAll { $0.id == song.id }
+    PatternStorage.delete(filename: song.patternFileName)
+  }
+
+  func duplicateSong(_ song: SongRef, resourceBaseURL: URL?) {
+    guard PatternStorage.duplicate(filename: song.patternFileName) != nil else { return }
+    loadSongs(from: resourceBaseURL)
   }
 }
 

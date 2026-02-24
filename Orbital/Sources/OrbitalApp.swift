@@ -13,6 +13,7 @@ import UIKit
 struct OrbitalApp: App {
   @State private var engine = SpatialAudioEngine()
   @State private var songLibrary = SongLibrary()
+  @State private var resourceManager = ResourceManager()
   @Environment(\.scenePhase) private var scenePhase
   
   init() {
@@ -42,7 +43,12 @@ struct OrbitalApp: App {
       AppView()
         .environment(engine)
         .environment(songLibrary)
-        .tint(.primary)
+        .environment(resourceManager)
+        .task {
+          await resourceManager.setup()
+          PatternStorage.resourceBaseURL = resourceManager.resourceBaseURL
+          songLibrary.loadSongs(from: resourceManager.resourceBaseURL)
+        }
         .onReceive(NotificationCenter.default.publisher(for: UIApplication.willTerminateNotification)) { _ in
           engine.fadeOutAndStop()
         }
