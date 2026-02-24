@@ -33,6 +33,9 @@ enum EmitterFunction: Codable, Equatable, Hashable {
   case cyclic
   case random
 
+  // Markov chord progression (Tymoczko baroque/classical major)
+  case markovChord
+
   // Composition operators
   case sum
   case reciprocal
@@ -58,6 +61,7 @@ enum EmitterFunction: Codable, Equatable, Hashable {
       case "shuffle":              self = .shuffle
       case "cyclic":               self = .cyclic
       case "random":               self = .random
+      case "markovChord":          self = .markovChord
       case "sum":                  self = .sum
       case "reciprocal":           self = .reciprocal
       default:                     self = .randFloat
@@ -92,6 +96,8 @@ enum EmitterFunction: Codable, Equatable, Hashable {
       var c = encoder.singleValueContainer(); try c.encode("sum")
     case .reciprocal:
       var c = encoder.singleValueContainer(); try c.encode("reciprocal")
+    case .markovChord:
+      var c = encoder.singleValueContainer(); try c.encode("markovChord")
     case .indexPicker(let emitter):
       var c = encoder.container(keyedBy: CodingKeys.self)
       try c.encode(IndexPickerPayload(emitter: emitter), forKey: .indexPicker)

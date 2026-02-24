@@ -4,13 +4,13 @@
     {
       "layers" : [
         {
-          "image-name" : "icon 2.svg",
-          "name" : "icon 2",
+          "image-name" : "ribbon_plot 2.svg",
+          "name" : "ribbon_plot 2",
           "position" : {
-            "scale" : 0.9,
+            "scale" : 1.65,
             "translation-in-points" : [
-              -10,
-              32
+              0,
+              0
             ]
           }
         }

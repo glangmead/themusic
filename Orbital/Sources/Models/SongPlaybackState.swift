@@ -118,27 +118,6 @@ class SongPlaybackState {
     }
   }
 
-  /// Replace the procedural track spec for a given track. Takes effect on next play().
-  func replaceTrack(trackId: Int, newTrackSpec: ProceduralTrackSyntax) {
-    guard let idx = tracks.firstIndex(where: { $0.id == trackId }) else { return }
-    tracks[idx].trackSpec = newTrackSpec
-    updatePatternSpec(forTrackAt: idx, newTrackSpec: newTrackSpec)
-    compiledPattern = nil
-  }
-
-  /// Update the ProceduralTrackSyntax at the given index in the stored PatternSyntax.
-  private func updatePatternSpec(forTrackAt trackIdx: Int, newTrackSpec: ProceduralTrackSyntax) {
-    guard let spec = patternSpec, var procedural = spec.proceduralTracks else { return }
-    guard trackIdx >= 0 && trackIdx < procedural.count else { return }
-    procedural[trackIdx] = newTrackSpec
-    patternSpec = PatternSyntax(
-      name: spec.name,
-      proceduralTracks: procedural,
-      midiTracks: nil,
-      tableTracks: nil
-    )
-  }
-
   /// Stop and immediately restart playback (applies any pending edits).
   func restart() {
     stop()

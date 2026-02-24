@@ -49,52 +49,36 @@ class WaitingIterator<Element>: Sequence, IteratorProtocol {
   }
 }
 
-// [MidiNote]
-struct Midi1700sChordGenerator: Sequence, IteratorProtocol {
-  // two pieces of data for the "key", e.g. "E minor"
-  var scaleGenerator: any IteratorProtocol<Scale>
-  var rootNoteGenerator: any IteratorProtocol<NoteClass>
-  var currentChord: TymoczkoChords713 = .I
-  var neverCalled = true
-  
-  enum TymoczkoChords713 {
-    case I6
-    case IV6
-    case ii6
-    case viio6
-    case V6
-    case I
-    case vi
-    case IV
-    case ii
-    case I64
-    case V
-    case iii
-    case iii6
-    case vi6
-  }
-  
-  func scaleDegrees(chord: TymoczkoChords713) -> [Int] {
-    switch chord {
-    case .I6:    [3, 5, 1]
-    case .IV6:   [6, 1, 4]
-    case .ii6:   [4, 6, 2]
-    case .viio6: [2, 4, 7]
-    case .V6:    [7, 2, 5]
+// MARK: - Tymoczko Chord Types
+
+/// The 14 chord types from Tymoczko's "Tonality" diagram 7.1.3,
+/// used for Baroque/Classical major-key chord progressions.
+enum TymoczkoChords713: Hashable {
+  case I, vi, IV, ii, V, iii
+  case I6, IV6, ii6, V6, iii6, vi6, viio6, I64
+
+  /// 1-indexed scale degrees for each chord voicing.
+  var scaleDegrees: [Int] {
+    switch self {
     case .I:     [1, 3, 5]
     case .vi:    [6, 1, 3]
     case .IV:    [4, 6, 1]
     case .ii:    [2, 4, 6]
-    case .I64:   [5, 1, 3]
     case .V:     [5, 7, 2]
     case .iii:   [3, 5, 7]
+    case .I6:    [3, 5, 1]
+    case .IV6:   [6, 1, 4]
+    case .ii6:   [4, 6, 2]
+    case .V6:    [7, 2, 5]
     case .iii6:  [5, 7, 3]
     case .vi6:   [1, 3, 6]
+    case .viio6: [2, 4, 7]
+    case .I64:   [5, 1, 3]
     }
   }
-  
-  // probabilistic state transitions according to Tymoczko diagram 7.1.3 of Tonality
-  var stateTransitionsBaroqueClassicalMajor: (TymoczkoChords713) -> [(TymoczkoChords713, CoreFloat)] = { start in
+
+  /// Probabilistic state transitions according to Tymoczko diagram 7.1.3 of Tonality.
+  static func stateTransitionsBaroqueClassicalMajor(_ start: TymoczkoChords713) -> [(TymoczkoChords713, CoreFloat)] {
     switch start {
     case .I:
       return [            (.vi, 0.07),  (.IV, 0.21),  (.ii, 0.14), (.viio6, 0.05),  (.V, 0.50), (.I64, 0.05)]
@@ -126,44 +110,76 @@ struct Midi1700sChordGenerator: Sequence, IteratorProtocol {
       return [                                                                      (.V, 0.5),  (.I64, 0.5) ]
     }
   }
-  
-  func minBy2<A, B: Comparable>(_ items: [(A, B)]) -> A? {
-    items.min(by: {t1, t2 in t1.1 < t2.1})?.0
+
+  /// Weighted random draw using exponential variates.
+  static func weightedDraw<A>(items: [(A, CoreFloat)]) -> A? {
+    func exp2<B>(_ item: (B, CoreFloat)) -> (B, CoreFloat) {
+      (item.0, -1.0 * log(CoreFloat.random(in: 0...1)) / item.1)
+    }
+    return items.map({ exp2($0) }).min(by: { $0.1 < $1.1 })?.0
   }
-  
-  func exp2<A>(_ item: (A, CoreFloat)) -> (A, CoreFloat) {
-    (item.0, -1.0 * log(CoreFloat.random(in: 0...1)) / item.1)
+}
+
+// MARK: - MarkovChordIndexIterator
+
+/// Emitter iterator that outputs 0-based chord indices using the Tymoczko
+/// Baroque/Classical major Markov transition table.
+/// The index corresponds to the chord's position in `MarkovChordIndexIterator.chordOrder`,
+/// which must match the intervalMaterial ordering in the pattern JSON.
+struct MarkovChordIndexIterator: Sequence, IteratorProtocol {
+  private var currentChord: TymoczkoChords713 = .I
+  private var neverCalled = true
+
+  /// Fixed ordering of chords → intervalMaterial index (0-based).
+  static let chordOrder: [TymoczkoChords713] = [
+    .I, .vi, .IV, .ii, .V, .iii,
+    .I6, .IV6, .ii6, .V6, .iii6, .vi6, .viio6, .I64
+  ]
+  private static let chordToIndex: [TymoczkoChords713: Int] = {
+    Dictionary(uniqueKeysWithValues: chordOrder.enumerated().map { ($1, $0) })
+  }()
+
+  mutating func next() -> Int? {
+    let candidates = TymoczkoChords713.stateTransitionsBaroqueClassicalMajor(currentChord)
+    var nextChord = TymoczkoChords713.weightedDraw(items: candidates)!
+    if neverCalled { neverCalled = false; nextChord = .I }
+    currentChord = nextChord
+    return Self.chordToIndex[nextChord]
   }
-  
-  func weightedDraw<A>(items: [(A, CoreFloat)]) -> A? {
-    minBy2(items.map({exp2($0)}))
-  }
-  
+}
+
+// MARK: - Midi1700sChordGenerator
+
+// [MidiNote]
+struct Midi1700sChordGenerator: Sequence, IteratorProtocol {
+  // two pieces of data for the "key", e.g. "E minor"
+  var scaleGenerator: any IteratorProtocol<Scale>
+  var rootNoteGenerator: any IteratorProtocol<NoteClass>
+  var currentChord: TymoczkoChords713 = .I
+  var neverCalled = true
+
   mutating func next() -> [MidiNote]? {
     // the key
     let scaleRootNote = rootNoteGenerator.next()
     let scale = scaleGenerator.next()
-    let candidates = stateTransitionsBaroqueClassicalMajor(currentChord)
-    var nextChord = weightedDraw(items: candidates)!
+    let candidates = TymoczkoChords713.stateTransitionsBaroqueClassicalMajor(currentChord)
+    var nextChord = TymoczkoChords713.weightedDraw(items: candidates)!
     if neverCalled {
       neverCalled = false
       nextChord = .I
     }
-    let chordDegrees = scaleDegrees(chord: nextChord)
-    
+    let chordDegrees = nextChord.scaleDegrees
+
     print("Gonna play \(nextChord)")
-    
+
     // notes
     var midiNotes = [MidiNote]()
     for i in chordDegrees.indices {
       let chordDegree = chordDegrees[i]
-      //print("adding chord degree \(chordDegree)")
       for octave in 0..<6 {
         if CoreFloat.random(in: 0...2) > 1 || (i == 0 && octave < 2) {
           let scaleRootNote = Note(scaleRootNote!.letter, accidental: scaleRootNote!.accidental, octave: octave)
-          //print("scale root note in octave \(octave): \(scaleRootNote.noteNumber)")
           let chordDegreeAboveRoot = scale?.intervals[chordDegree-1]
-          //print("shifting scale root note by \(chordDegreeAboveRoot!)")
           midiNotes.append(
             MidiNote(
               note: MidiValue(scaleRootNote.shiftUp(chordDegreeAboveRoot!)!.noteNumber),
@@ -173,7 +189,7 @@ struct Midi1700sChordGenerator: Sequence, IteratorProtocol {
         }
       }
     }
-    
+
     self.currentChord = nextChord
     print("with notes: \(midiNotes)")
     return midiNotes

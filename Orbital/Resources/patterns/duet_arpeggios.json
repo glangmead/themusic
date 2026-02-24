@@ -1,81 +1,178 @@
 {
   "name": "Duet Arpeggios",
-  "proceduralTracks": [
-    {
-      "name": "Lydian Shimmer",
-      "presetFilename": "auroraBorealis",
-      "numVoices": 16,
-      "noteGenerator": {
-        "melodic": {
-          "scales": {
-            "candidates": ["lydian"],
-            "emission": "cyclic"
-          },
-          "roots": {
-            "candidates": ["C", "G"],
-            "emission": {
-              "waiting": {
-                "iterator": "cyclic",
-                "timeBetweenChanges": { "rand": { "min": 12, "max": 20 } }
-              }
-            }
-          },
-          "octaves": {
-            "candidates": [3, 3, 4, 4, 4, 5, 5],
-            "emission": "random"
-          },
-          "degrees": {
-            "candidates": [0, 1, 2, 3, 4, 5, 6],
-            "emission": "shuffled"
-          }
-        }
+  "tableTracks": {
+    "name": "Duet Arpeggios",
+    "emitters": [
+      {
+        "name": "t1Timer",
+        "outputType": "float",
+        "function": "randFloat",
+        "arg1": 12,
+        "arg2": 20
       },
-      "sustain": { "random": { "min": 4.0, "max": 8.0 } },
-      "gap":     { "random": { "min": 0.15, "max": 0.6 } },
-      "modulators": [
-        {
-          "target": "overallAmp",
-          "arrow": { "exponentialRand": { "min": 0.25, "max": 0.5 } }
-        }
-      ]
-    },
-    {
-      "name": "Dorian Bass",
-      "presetFilename": "prophet_brass",
-      "numVoices": 8,
-      "noteGenerator": {
-        "melodic": {
-          "scales": {
-            "candidates": ["dorian"],
-            "emission": "cyclic"
-          },
-          "roots": {
-            "candidates": ["C", "G"],
-            "emission": {
-              "waiting": {
-                "iterator": "cyclic",
-                "timeBetweenChanges": { "rand": { "min": 12, "max": 20 } }
-              }
-            }
-          },
-          "octaves": {
-            "candidates": [2, 2, 3, 3],
-            "emission": "random"
-          },
-          "degrees": {
-            "candidates": [0, 2, 4, 6],
-            "emission": "shuffled"
-          }
-        }
+      {
+        "name": "t1RootPicker",
+        "outputType": "int",
+        "function": "randInt",
+        "arg1": 0,
+        "arg2": 1
       },
-      "sustain": { "random": { "min": 2.0, "max": 5.0 } },
-      "gap":     { "random": { "min": 1.0, "max": 3.0 } },
-      "modulators": [
-        {
-          "target": "overallAmp",
-          "arrow": { "exponentialRand": { "min": 0.3, "max": 0.55 } }
-        }
-      ]
-    }
-  ]
+      {
+        "name": "t1Roots",
+        "outputType": "root",
+        "function": { "indexPicker": { "emitter": "t1RootPicker" } },
+        "candidates": ["C", "G"],
+        "updateMode": { "waiting": { "emitter": "t1Timer" } }
+      },
+      {
+        "name": "t1Octaves",
+        "outputType": "octave",
+        "function": "random",
+        "candidates": ["3", "3", "4", "4", "4", "5", "5"]
+      },
+      {
+        "name": "t1Scales",
+        "outputType": "scale",
+        "function": "cyclic",
+        "candidates": ["lydian"]
+      },
+      {
+        "name": "t1Degrees",
+        "outputType": "int",
+        "function": "shuffle",
+        "candidates": ["0", "1", "2", "3", "4", "5", "6"]
+      },
+      {
+        "name": "t1AmpVal",
+        "outputType": "float",
+        "function": "exponentialRandFloat",
+        "arg1": 0.25,
+        "arg2": 0.5
+      },
+      {
+        "name": "t1Sustain",
+        "outputType": "float",
+        "function": "randFloat",
+        "arg1": 4,
+        "arg2": 8
+      },
+      {
+        "name": "t1Gap",
+        "outputType": "float",
+        "function": "randFloat",
+        "arg1": 0.15,
+        "arg2": 0.6
+      },
+      {
+        "name": "t2Timer",
+        "outputType": "float",
+        "function": "randFloat",
+        "arg1": 12,
+        "arg2": 20
+      },
+      {
+        "name": "t2RootPicker",
+        "outputType": "int",
+        "function": "randInt",
+        "arg1": 0,
+        "arg2": 1
+      },
+      {
+        "name": "t2Roots",
+        "outputType": "root",
+        "function": { "indexPicker": { "emitter": "t2RootPicker" } },
+        "candidates": ["C", "G"],
+        "updateMode": { "waiting": { "emitter": "t2Timer" } }
+      },
+      {
+        "name": "t2Octaves",
+        "outputType": "octave",
+        "function": "random",
+        "candidates": ["2", "2", "3", "3"]
+      },
+      {
+        "name": "t2Scales",
+        "outputType": "scale",
+        "function": "cyclic",
+        "candidates": ["dorian"]
+      },
+      {
+        "name": "t2Degrees",
+        "outputType": "int",
+        "function": "shuffle",
+        "candidates": ["0", "2", "4", "6"]
+      },
+      {
+        "name": "t2AmpVal",
+        "outputType": "float",
+        "function": "exponentialRandFloat",
+        "arg1": 0.3,
+        "arg2": 0.55
+      },
+      {
+        "name": "t2Sustain",
+        "outputType": "float",
+        "function": "randFloat",
+        "arg1": 2,
+        "arg2": 5
+      },
+      {
+        "name": "t2Gap",
+        "outputType": "float",
+        "function": "randFloat",
+        "arg1": 1,
+        "arg2": 3
+      }
+    ],
+    "noteMaterials": [
+      {
+        "name": "t1Melody",
+        "intervalMaterial": [[0], [1], [2], [3], [4], [5], [6]],
+        "intervalPicker": "t1Degrees",
+        "octaveEmitter": "t1Octaves",
+        "scaleEmitter": "t1Scales",
+        "scaleRootEmitter": "t1Roots"
+      },
+      {
+        "name": "t2Melody",
+        "intervalMaterial": [[0], [2], [4], [6]],
+        "intervalPicker": "t2Degrees",
+        "octaveEmitter": "t2Octaves",
+        "scaleEmitter": "t2Scales",
+        "scaleRootEmitter": "t2Roots"
+      }
+    ],
+    "modulators": [
+      {
+        "name": "t1AmpMod",
+        "targetHandle": "overallAmp",
+        "floatEmitter": "t1AmpVal"
+      },
+      {
+        "name": "t2AmpMod",
+        "targetHandle": "overallAmp",
+        "floatEmitter": "t2AmpVal"
+      }
+    ],
+    "tracks": [
+      {
+        "name": "Lydian Shimmer",
+        "presetFilename": "auroraBorealis",
+        "numVoices": 16,
+        "modulatorNames": ["t1AmpMod"],
+        "noteMaterial": "t1Melody",
+        "sustainEmitter": "t1Sustain",
+        "gapEmitter": "t1Gap"
+      },
+      {
+        "name": "Dorian Bass",
+        "presetFilename": "prophet_brass",
+        "numVoices": 8,
+        "modulatorNames": ["t2AmpMod"],
+        "noteMaterial": "t2Melody",
+        "sustainEmitter": "t2Sustain",
+        "gapEmitter": "t2Gap"
+      }
+    ]
+  }
 }

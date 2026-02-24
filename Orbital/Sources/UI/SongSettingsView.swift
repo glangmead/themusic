@@ -30,30 +30,8 @@ struct SongSettingsView: View {
             }
           }
         } else {
-          ForEach(playbackState.tracks) { track in
-            NavigationLink {
-              PatternFormView(track: track)
-                .environment(playbackState)
-            } label: {
-              VStack(alignment: .leading, spacing: 4) {
-                Text(track.patternName)
-                if let trackSpec = track.trackSpec {
-                  HStack(spacing: 8) {
-                    Text(trackSpec.noteGenerator.displayTypeName)
-                      .font(.caption)
-                      .foregroundStyle(.secondary)
-                    Text(trackSpec.noteGenerator.displaySummary)
-                      .font(.caption)
-                      .foregroundStyle(.tertiary)
-                  }
-                } else {
-                  Text("MIDI")
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
-                }
-              }
-            }
-          }
+          Text("MIDI pattern")
+            .foregroundStyle(.secondary)
         }
       }
 

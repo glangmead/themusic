@@ -1,21 +1,67 @@
 {
   "name": "Minimal Pulse",
-  "proceduralTracks": [
-    {
-      "name": "Minimal Pulse",
-      "presetFilename": "sine",
-      "noteGenerator": {
-        "fixed": {
-          "events": [
-            { "notes": [{ "midi": 60, "velocity": 100 }] },
-            { "notes": [{ "midi": 64, "velocity": 90 }] },
-            { "notes": [{ "midi": 67, "velocity": 80 }] },
-            { "notes": [{ "midi": 60, "velocity": 100 }, { "midi": 64, "velocity": 90 }, { "midi": 67, "velocity": 80 }] }
-          ]
-        }
+  "tableTracks": {
+    "name": "Minimal Pulse",
+    "emitters": [
+      {
+        "name": "degreePicker",
+        "outputType": "int",
+        "function": "cyclic",
+        "candidates": ["0", "1", "2", "3"]
       },
-      "sustain": { "fixed": { "value": 0.8 } },
-      "gap":     { "list": { "values": [1.0, 1.0, 1.0, 2.0] } }
-    }
-  ]
+      {
+        "name": "scales",
+        "outputType": "scale",
+        "function": "cyclic",
+        "candidates": ["major"]
+      },
+      {
+        "name": "roots",
+        "outputType": "root",
+        "function": "cyclic",
+        "candidates": ["C"]
+      },
+      {
+        "name": "octaves",
+        "outputType": "octave",
+        "function": "cyclic",
+        "candidates": ["4"]
+      },
+      {
+        "name": "sustain",
+        "outputType": "float",
+        "function": "randFloat",
+        "arg1": 0.8,
+        "arg2": 0.8
+      },
+      {
+        "name": "gap",
+        "outputType": "float",
+        "function": "cyclic",
+        "candidates": ["1.0", "1.0", "1.0", "2.0"]
+      }
+    ],
+    "noteMaterials": [
+      {
+        "name": "pulse",
+        "intervalMaterial": [[0], [2], [4], [0, 2, 4]],
+        "intervalPicker": "degreePicker",
+        "octaveEmitter": "octaves",
+        "scaleEmitter": "scales",
+        "scaleRootEmitter": "roots"
+      }
+    ],
+    "modulators": [],
+    "tracks": [
+      {
+        "name": "Minimal Pulse",
+        "presetFilename": "sine",
+        "numVoices": 12,
+        "modulatorNames": [],
+        "noteMaterial": "pulse",
+        "sustainEmitter": "sustain",
+        "gapEmitter": "gap"
+      }
+    ]
+  }
 }

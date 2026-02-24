@@ -453,7 +453,7 @@ struct MusicPatternEventGenerationTests {
     )
 
     // Generate many chords to exercise state transitions
-    var chordNames = [Midi1700sChordGenerator.TymoczkoChords713]()
+    var chordNames = [TymoczkoChords713]()
     for _ in 0..<50 {
       let _ = gen.next()!
       chordNames.append(gen.currentChord)

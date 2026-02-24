@@ -364,6 +364,9 @@ enum TablePatternCompiler {
       let ints = candidates.compactMap { Int($0) }
       iter = IndexPickerIterator(items: ints, indexEmitter: indexIter)
 
+    case .markovChord:
+      iter = MarkovChordIndexIterator()
+
     default:
       // List-based functions on int candidates
       if let candidates = row.candidates {

@@ -1,29 +1,107 @@
 {
   "name": "Baroque Chords",
-  "proceduralTracks": [
-    {
-      "name": "Baroque Chords",
-      "presetFilename": "prophet_brass",
-      "numVoices": 20,
-      "noteGenerator": {
-        "chordProgression": {
-          "scale": "major",
-          "root": "C",
-          "style": "baroque"
-        }
+  "tableTracks": {
+    "name": "Baroque Chords",
+    "emitters": [
+      {
+        "name": "chordPicker",
+        "outputType": "int",
+        "function": "markovChord"
       },
-      "sustain": { "random": { "min": 3.0, "max": 8.0 } },
-      "gap":     { "random": { "min": 4.0, "max": 10.0 } },
-      "modulators": [
-        {
-          "target": "overallAmp",
-          "arrow": { "exponentialRand": { "min": 0.3, "max": 0.6 } }
-        },
-        {
-          "target": "overallCentDetune",
-          "arrow": { "rand": { "min": -5.0, "max": 5.0 } }
-        }
-      ]
-    }
-  ]
+      {
+        "name": "octaves",
+        "outputType": "octave",
+        "function": "random",
+        "candidates": ["1", "1", "2", "2", "2", "3", "3", "4"]
+      },
+      {
+        "name": "scales",
+        "outputType": "scale",
+        "function": "cyclic",
+        "candidates": ["major"]
+      },
+      {
+        "name": "roots",
+        "outputType": "root",
+        "function": "cyclic",
+        "candidates": ["C"]
+      },
+      {
+        "name": "overallAmpVal",
+        "outputType": "float",
+        "function": "exponentialRandFloat",
+        "arg1": 0.3,
+        "arg2": 0.6
+      },
+      {
+        "name": "detuneVal",
+        "outputType": "float",
+        "function": "randFloat",
+        "arg1": -5,
+        "arg2": 5
+      },
+      {
+        "name": "sustain",
+        "outputType": "float",
+        "function": "randFloat",
+        "arg1": 3,
+        "arg2": 8
+      },
+      {
+        "name": "gap",
+        "outputType": "float",
+        "function": "randFloat",
+        "arg1": 4,
+        "arg2": 10
+      }
+    ],
+    "noteMaterials": [
+      {
+        "name": "chords",
+        "intervalMaterial": [
+          [0, 2, 4],
+          [5, 0, 2],
+          [3, 5, 0],
+          [1, 3, 5],
+          [4, 6, 1],
+          [2, 4, 6],
+          [2, 4, 0],
+          [5, 0, 3],
+          [3, 5, 1],
+          [6, 1, 4],
+          [4, 6, 2],
+          [0, 2, 5],
+          [1, 3, 6],
+          [4, 0, 2]
+        ],
+        "intervalPicker": "chordPicker",
+        "octaveEmitter": "octaves",
+        "scaleEmitter": "scales",
+        "scaleRootEmitter": "roots"
+      }
+    ],
+    "modulators": [
+      {
+        "name": "ampMod",
+        "targetHandle": "overallAmp",
+        "floatEmitter": "overallAmpVal"
+      },
+      {
+        "name": "detuneMod",
+        "targetHandle": "overallCentDetune",
+        "floatEmitter": "detuneVal"
+      }
+    ],
+    "tracks": [
+      {
+        "name": "Baroque Chords",
+        "presetFilename": "prophet_brass",
+        "numVoices": 20,
+        "modulatorNames": ["ampMod", "detuneMod"],
+        "noteMaterial": "chords",
+        "sustainEmitter": "sustain",
+        "gapEmitter": "gap"
+      }
+    ]
+  }
 }
