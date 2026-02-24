@@ -1,5 +1,5 @@
 //
-//  SongPlaybackState.swift
+//  SongDocument.swift (was SongPlaybackState.swift)
 //  Orbital
 //
 //  Created by Greg Langmead on 2/17/26.
@@ -7,49 +7,81 @@
 
 import Foundation
 
-/// Shared playback state for a song, passed through the Orbital navigation stack
-/// so that drill-down views (preset list, preset editor) can show play/pause controls.
+/// Live audio state that exists only while a song is loaded for playback.
+/// Created during `loadTracks()`, destroyed on `stop()`.
+struct RuntimeSong {
+  let compiledPattern: MusicPattern
+  let spatialPresets: [SpatialPreset]
+
+  var noteHandler: NoteHandler? { spatialPresets.first }
+}
+
+/// Document model for a song: owns editable track metadata, pattern specs,
+/// and live playback state. Passed through the SwiftUI environment so that
+/// drill-down views (preset list, preset editor, spatial form) can read and
+/// edit the song and control playback.
 @MainActor @Observable
-class SongPlaybackState {
-  let song: Song
+class SongDocument {
+  enum PlaybackPhase {
+    case idle
+    case loading
+    case playing
+    case paused
+  }
+
+  let song: SongRef
   let engine: SpatialAudioEngine?
 
-  private(set) var isPlaying = false
-  private(set) var isPaused = false
-  private(set) var isLoading = false
+  private(set) var phase: PlaybackPhase = .idle
   /// Set when loading fails; shown as an alert to the user.
   var loadError: String?
   private var playbackTask: Task<Void, Never>? = nil
-  /// Compiled pattern ready for playback.
-  private var compiledPattern: MusicPattern?
 
+  // MARK: - Document state (survives stop/play cycles)
+
+  /// Track metadata for UI display and editing.
   private(set) var tracks: [TrackInfo] = []
-
   /// The stored PatternSyntax, kept so we can rebuild after user edits.
   private var patternSpec: PatternSyntax?
 
-  /// The active note handler for this song's playback (first track, for visualizer).
-  var noteHandler: NoteHandler? { tracks.first?.spatialPreset }
+  // MARK: - Runtime state (exists only while loaded)
 
-  init(song: Song, engine: SpatialAudioEngine) {
+  /// Live audio objects; nil when idle.
+  private(set) var runtime: RuntimeSong?
+
+  // MARK: - Convenience accessors
+
+  var isPlaying: Bool { phase == .playing || phase == .paused }
+  var isPaused: Bool { phase == .paused }
+  var isLoading: Bool { phase == .loading }
+
+  /// The active note handler for this song's playback (first track, for visualizer).
+  var noteHandler: NoteHandler? { runtime?.noteHandler }
+
+  /// Spatial preset for a given track, if loaded.
+  func spatialPreset(forTrack trackId: Int) -> SpatialPreset? {
+    guard let runtime, trackId >= 0, trackId < runtime.spatialPresets.count else { return nil }
+    return runtime.spatialPresets[trackId]
+  }
+
+  init(song: SongRef, engine: SpatialAudioEngine) {
     self.song = song
     self.engine = engine
   }
 
   /// UI-only init: loads track info (patterns, presets, spatial data) without an audio engine.
   /// Playback controls are disabled in this mode.
-  init(song: Song) {
+  init(song: SongRef) {
     self.song = song
     self.engine = nil
   }
 
   func togglePlayback() {
-    if isPlaying && !isPaused {
-      pause()
-    } else if isPlaying && isPaused {
-      resume()
-    } else {
-      play()
+    switch phase {
+    case .playing: pause()
+    case .paused:  resume()
+    case .idle:    play()
+    case .loading: break
     }
   }
 
@@ -58,7 +90,7 @@ class SongPlaybackState {
   /// preset list is populated before the user hits play.
   /// When no engine is available, builds UI-only track info (no audio nodes).
   func loadTracks() async throws {
-    guard compiledPattern == nil else { return }
+    guard runtime == nil else { return }
 
     // If tracks already exist (from a previous load), recompile from in-memory
     // patternSpec to preserve user edits across stop/play cycles.
@@ -74,29 +106,15 @@ class SongPlaybackState {
     )
 
     if let engine {
-      let (pattern, infos) = try await spec.compile(engine: engine)
-      compiledPattern = pattern
-      tracks = infos.enumerated().map { i, info in
-        TrackInfo(
-          id: i,
-          patternName: info.patternName,
-          trackSpec: info.trackSpec,
-          presetSpec: info.presetSpec,
-          spatialPreset: info.spatialPreset
-        )
-      }
+      let result = try await spec.compile(engine: engine)
+      runtime = RuntimeSong(
+        compiledPattern: result.pattern,
+        spatialPresets: result.spatialPresets
+      )
+      tracks = result.trackInfos
     } else {
       // UI-only: build TrackInfo without audio nodes
-      let infos = spec.compileTrackInfoOnly()
-      tracks = infos.enumerated().map { i, info in
-        TrackInfo(
-          id: i,
-          patternName: info.patternName,
-          trackSpec: info.trackSpec,
-          presetSpec: info.presetSpec,
-          spatialPreset: info.spatialPreset
-        )
-      }
+      tracks = spec.compileTrackInfoOnly()
     }
 
     patternSpec = spec
@@ -105,17 +123,12 @@ class SongPlaybackState {
   /// Recompile from the stored in-memory spec (preserves user edits).
   private func recompileFromSpec() async throws {
     guard let engine, let spec = patternSpec else { return }
-    let (pattern, infos) = try await spec.compile(engine: engine)
-    compiledPattern = pattern
-    tracks = infos.enumerated().map { i, info in
-      TrackInfo(
-        id: i,
-        patternName: info.patternName,
-        trackSpec: info.trackSpec,
-        presetSpec: info.presetSpec,
-        spatialPreset: info.spatialPreset
-      )
-    }
+    let result = try await spec.compile(engine: engine)
+    runtime = RuntimeSong(
+      compiledPattern: result.pattern,
+      spatialPresets: result.spatialPresets
+    )
+    tracks = result.trackInfos
   }
 
   /// Stop and immediately restart playback (applies any pending edits).
@@ -125,76 +138,69 @@ class SongPlaybackState {
   }
 
   func play() {
-    guard !isPlaying, !isLoading, let engine else { return }
-
-    // Stop the engine while we build the audio graph to avoid render errors
-    // from partially-connected nodes in a live graph.
-    engine.audioEngine.stop()
+    guard phase == .idle, let engine else { return }
 
     loadError = nil
-    isLoading = true
+    phase = .loading
 
-    // Use a Task so the main run loop can process UI updates (spinner)
-    // while the expensive SoundFont loading happens on background threads.
     playbackTask = Task {
       do {
-        try await loadTracks()
-      } catch {
-        for track in tracks {
-          track.spatialPreset.detachNodes()
+        try await engine.withQuiescedGraph {
+          try await self.loadTracks()
         }
-        tracks = []
-        compiledPattern = nil
+      } catch {
+        self.teardownRuntime()
         loadError = error.localizedDescription
-        isLoading = false
+        phase = .idle
         return
       }
 
-      try? engine.start()
-      isLoading = false
-      isPlaying = true
-
-      await compiledPattern?.play()
+      phase = .playing
+      await runtime?.compiledPattern.play()
     }
   }
 
   func pause() {
-    guard isPlaying, !isPaused else { return }
-    if let pattern = compiledPattern {
+    guard phase == .playing else { return }
+    if let pattern = runtime?.compiledPattern {
       Task { await pattern.setPaused(true) }
     }
-    isPaused = true
+    phase = .paused
   }
 
   func resume() {
-    guard isPlaying, isPaused else { return }
-    if let pattern = compiledPattern {
+    guard phase == .paused else { return }
+    if let pattern = runtime?.compiledPattern {
       Task { await pattern.setPaused(false) }
     }
-    isPaused = false
+    phase = .playing
   }
 
   /// Replace the preset for a given track, reloading its audio nodes in place.
   func replacePreset(trackId: Int, newPresetSpec: PresetSyntax) {
     guard let idx = tracks.firstIndex(where: { $0.id == trackId }) else { return }
     tracks[idx].presetSpec = newPresetSpec
-    tracks[idx].spatialPreset.reload(presetSpec: newPresetSpec)
+    runtime?.spatialPresets[trackId].reload(presetSpec: newPresetSpec)
   }
 
   func stop() {
     playbackTask?.cancel()
     playbackTask = nil
-    // Stop the engine before detaching to avoid crashes from mutating
-    // the node graph while the render thread is pulling audio.
-    engine?.audioEngine.stop()
-    for track in tracks {
-      track.spatialPreset.detachNodes()
-    }
-    compiledPattern = nil
-    isLoading = false
-    isPlaying = false
-    isPaused = false
+    engine?.stop()
+    teardownRuntime()
+    phase = .idle
   }
+
+  private func teardownRuntime() {
+    if let runtime {
+      for sp in runtime.spatialPresets {
+        sp.detachNodes()
+      }
+    }
+    runtime = nil
+  }
+
+  // MARK: - Table pattern access
 
   /// Whether the pattern uses the table-based definition.
   var hasTablePattern: Bool {
@@ -215,6 +221,6 @@ class SongPlaybackState {
       midiTracks: nil,
       tableTracks: newTable
     )
-    compiledPattern = nil
+    runtime = nil
   }
 }

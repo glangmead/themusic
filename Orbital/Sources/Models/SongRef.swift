@@ -1,5 +1,5 @@
 //
-//  Song.swift
+//  SongRef.swift
 //  Orbital
 //
 //  Created by Greg Langmead on 2/17/26.
@@ -8,7 +8,7 @@
 import Foundation
 import MediaPlayer
 
-struct Song: Identifiable {
+struct SongRef: Identifiable {
   let id = UUID()
   let name: String
   let patternFileName: String // e.g. "aurora_arpeggio.json"
@@ -16,27 +16,27 @@ struct Song: Identifiable {
 
 @MainActor @Observable
 class SongLibrary {
-  var songs: [Song] = [
-    Song(
+  var songs: [SongRef] = [
+    SongRef(
       name: "Aurora Borealis",
       patternFileName: "table_aurora.json"
     ),
-    Song(
+    SongRef(
       name: "Baroque Chords",
       patternFileName: "baroque_chords.json"
     ),
-    Song(
+    SongRef(
       name: "Bach Invention 1",
       patternFileName: "bach_invention.json"
     ),
-    Song(
+    SongRef(
       name: "Duet Arpeggios",
       patternFileName: "duet_arpeggios.json"
     ),
   ]
 
-  /// Playback states keyed by Song.id, created lazily by SongCells.
-  var playbackStates: [UUID: SongPlaybackState] = [:]
+  /// Playback states keyed by SongRef.id, created lazily by SongCells.
+  var playbackStates: [UUID: SongDocument] = [:]
 
   /// Manages lock screen / Control Center Now Playing info and remote commands.
   private var _nowPlayingManager: NowPlayingManager?
@@ -48,18 +48,18 @@ class SongLibrary {
   }
 
   /// The currently playing (or paused) song's state, if any.
-  var currentPlaybackState: SongPlaybackState?
+  var currentPlaybackState: SongDocument?
 
-  func playbackState(for song: Song, engine: SpatialAudioEngine) -> SongPlaybackState {
+  func playbackState(for song: SongRef, engine: SpatialAudioEngine) -> SongDocument {
     if let existing = playbackStates[song.id] { return existing }
-    let state = SongPlaybackState(song: song, engine: engine)
+    let state = SongDocument(song: song, engine: engine)
     playbackStates[song.id] = state
     return state
   }
 
   /// Start playing a song, stopping any currently playing song first.
   /// If the tapped song is already the current song, toggle pause/resume.
-  func play(_ song: Song, engine: SpatialAudioEngine) {
+  func play(_ song: SongRef, engine: SpatialAudioEngine) {
     let state = playbackState(for: song, engine: engine)
     if state === currentPlaybackState {
       state.togglePlayback()

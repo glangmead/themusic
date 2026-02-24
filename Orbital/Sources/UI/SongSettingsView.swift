@@ -9,8 +9,8 @@ import SwiftUI
 
 /// A combined settings view for a song, with sections for Patterns, Presets, and Spatial.
 struct SongSettingsView: View {
-  @Environment(SongPlaybackState.self) private var playbackState
-  let song: Song
+  @Environment(SongDocument.self) private var playbackState
+  let song: SongRef
   @State private var editingTrackId: Int?
 
   var body: some View {
@@ -66,27 +66,35 @@ struct SongSettingsView: View {
 
       // MARK: - Spatial
       Section("Spatial") {
-        let roseTracks = playbackState.tracks.filter {
-          $0.spatialPreset.presets.first?.positionLFO != nil
-        }
-        if roseTracks.isEmpty {
-          Text("Press play to load spatial parameters.")
-            .foregroundStyle(.secondary)
-        } else {
-          ForEach(roseTracks) { track in
-            NavigationLink {
-              SpatialFormView()
-                .environment(playbackState)
-            } label: {
-              Text(track.patternName)
+        if let runtime = playbackState.runtime {
+          let rosePairs = playbackState.tracks.compactMap { track -> (TrackInfo, SpatialPreset)? in
+            guard let sp = playbackState.spatialPreset(forTrack: track.id),
+                  sp.presets.first?.positionLFO != nil else { return nil }
+            return (track, sp)
+          }
+          if rosePairs.isEmpty {
+            Text("No spatial data for this pattern.")
+              .foregroundStyle(.secondary)
+          } else {
+            ForEach(rosePairs, id: \.0.id) { track, _ in
+              NavigationLink {
+                SpatialFormView()
+                  .environment(playbackState)
+              } label: {
+                Text(track.patternName)
+              }
             }
           }
+        } else {
+          Text("Press play to load spatial parameters.")
+            .foregroundStyle(.secondary)
         }
       }
     }
     .navigationDestination(item: $editingTrackId) { trackId in
-      if let track = playbackState.tracks.first(where: { $0.id == trackId }) {
-        PresetFormView(presetSpec: track.presetSpec, spatialPreset: track.spatialPreset)
+      if let track = playbackState.tracks.first(where: { $0.id == trackId }),
+         let sp = playbackState.spatialPreset(forTrack: trackId) {
+        PresetFormView(presetSpec: track.presetSpec, spatialPreset: sp)
           .environment(playbackState)
       }
     }
@@ -112,11 +120,11 @@ struct SongSettingsView: View {
 }
 
 #Preview {
-  let song = Song(
+  let song = SongRef(
     name: "Aurora Borealis",
     patternFileName: "aurora_arpeggio.json"
   )
-  let playbackState = SongPlaybackState(song: song)
+  let playbackState = SongDocument(song: song)
   NavigationStack {
     SongSettingsView(song: song)
   }

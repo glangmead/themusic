@@ -10,7 +10,7 @@ import SwiftUI
 struct OrbitalView: View {
   @Environment(SpatialAudioEngine.self) private var engine
   @Environment(SongLibrary.self) private var library
-  @State private var selectedSongID: Song.ID?
+  @State private var selectedSongID: SongRef.ID?
 
   var body: some View {
     NavigationStack {
@@ -36,11 +36,11 @@ struct OrbitalView: View {
   let engine = SpatialAudioEngine()
   let library = SongLibrary()
   library.songs = [
-    Song(
+    SongRef(
       name: "Aurora Borealis",
       patternFileName: "aurora_arpeggio.json"
     ),
-    Song(
+    SongRef(
       name: "Baroque Chords",
       patternFileName: "baroque_chords.json"
     ),

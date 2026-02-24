@@ -144,7 +144,7 @@ struct RuntimePrimitiveTests {
 
   @Test("EmitterArrow bridges iterator to Arrow11")
   func emitterArrowBridge() {
-    var values: [CoreFloat] = [1.0, 2.0, 3.0]
+    let values: [CoreFloat] = [1.0, 2.0, 3.0]
     let iter = values.cyclicIterator()
     let arrow = EmitterArrow(emitter: iter)
     let v1 = arrow.of(0)

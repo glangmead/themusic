@@ -37,10 +37,10 @@ struct CLIAudioPipelineTests {
         try engine.start()
 
         // 3. Compile the pattern — this attaches source nodes to the engine
-        let (musicPattern, trackInfos) = try await pattern.compile(
+        let result = try await pattern.compile(
             engine: engine
         )
-        #expect(trackInfos.count > 0, "Pattern should have at least one track")
+        #expect(result.trackInfos.count > 0, "Pattern should have at least one track")
 
         // 4. Restart engine so newly-connected source nodes are pulled.
         //    (On macOS, nodes attached after start() aren't automatically pulled.)
@@ -78,7 +78,7 @@ struct CLIAudioPipelineTests {
 
         // 6. Start pattern playback
         let playTask = Task {
-            await musicPattern.play()
+            await result.pattern.play()
         }
 
         // 7. Wait for enough audio to be captured (up to 10 seconds)

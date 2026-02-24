@@ -2,17 +2,17 @@
 //  TrackInfo.swift
 //  Orbital
 //
-//  Extracted from SongPlaybackState.swift
+//  Extracted from SongDocument.swift (was SongPlaybackState.swift)
 //
 
 import Foundation
 
-/// Per-track info exposed to the UI: the track name, its spec, and its compiled preset.
+/// Per-track document data exposed to the UI: names and editable specs.
+/// Does NOT hold live audio state — that lives in `RuntimeSong`.
 /// `trackSpec` is nil for MIDI tracks (their note data comes from the file).
 struct TrackInfo: Identifiable {
   let id: Int
   let patternName: String
   var trackSpec: ProceduralTrackSyntax?
   var presetSpec: PresetSyntax
-  let spatialPreset: SpatialPreset
 }

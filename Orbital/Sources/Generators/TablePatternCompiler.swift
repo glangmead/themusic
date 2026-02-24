@@ -89,7 +89,7 @@ enum TablePatternCompiler {
     engine: SpatialAudioEngine,
     clock: any Clock<Duration> = ContinuousClock(),
     resourceBaseURL: URL? = nil
-  ) async throws -> (MusicPattern, [TrackInfo]) {
+  ) async throws -> PatternSyntax.CompileResult {
     // 1. Build and validate the emitter dependency graph
     let sortedEmitterNames = try topologicalSort(table.emitters)
 
@@ -118,6 +118,7 @@ enum TablePatternCompiler {
     // 5. Assemble tracks
     var musicTracks: [MusicPattern.Track] = []
     var trackInfos: [TrackInfo] = []
+    var spatialPresets: [SpatialPreset] = []
 
     for (i, trackRow) in table.tracks.enumerated() {
       let presetFileName = trackRow.presetFilename + ".json"
@@ -156,13 +157,13 @@ enum TablePatternCompiler {
         id: i,
         patternName: trackRow.name,
         trackSpec: nil,
-        presetSpec: presetSpec,
-        spatialPreset: sp
+        presetSpec: presetSpec
       ))
+      spatialPresets.append(sp)
     }
 
     let pattern = MusicPattern(tracks: musicTracks, clock: clock)
-    return (pattern, trackInfos)
+    return PatternSyntax.CompileResult(pattern: pattern, trackInfos: trackInfos, spatialPresets: spatialPresets)
   }
 
   /// Compile for UI-only display (no engine, no audio nodes).
@@ -171,13 +172,11 @@ enum TablePatternCompiler {
     for (i, trackRow) in table.tracks.enumerated() {
       let presetFileName = trackRow.presetFilename + ".json"
       let presetSpec = decodeJSON(PresetSyntax.self, from: presetFileName, subdirectory: "presets", resourceBaseURL: resourceBaseURL)
-      let sp = SpatialPreset(presetSpec: presetSpec, numVoices: trackRow.numVoices ?? 12)
       infos.append(TrackInfo(
         id: i,
         patternName: trackRow.name,
         trackSpec: nil,
-        presetSpec: presetSpec,
-        spatialPreset: sp
+        presetSpec: presetSpec
       ))
     }
     return infos

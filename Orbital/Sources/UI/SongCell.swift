@@ -10,10 +10,10 @@ import SwiftUI
 struct SongCell: View {
   @Environment(SpatialAudioEngine.self) private var engine
   @Environment(SongLibrary.self) private var library
-  let song: Song
-  @Binding var selectedSongID: Song.ID?
+  let song: SongRef
+  @Binding var selectedSongID: SongRef.ID?
 
-  @State private var playbackState: SongPlaybackState?
+  @State private var playbackState: SongDocument?
 
   private var isPlaying: Bool { playbackState?.isPlaying == true }
   private var isPaused: Bool { playbackState?.isPaused == true }
@@ -70,7 +70,7 @@ struct SongCell: View {
 #Preview {
   let engine = SpatialAudioEngine()
   let library = SongLibrary()
-  let song = Song(
+  let song = SongRef(
     name: "Aurora Borealis",
     patternFileName: "aurora_arpeggio.json"
   )

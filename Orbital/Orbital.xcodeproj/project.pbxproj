@@ -24,7 +24,6 @@
 		9BB2CD342F44E1C00019A2D4 /* samples in Resources */ = {isa = PBXBuildFile; fileRef = 9BB2CD332F44E1BB0019A2D4 /* samples */; };
 		9BB2CD362F44E1CA0019A2D4 /* presets in Resources */ = {isa = PBXBuildFile; fileRef = 9BB2CD352F44E1C60019A2D4 /* presets */; };
 		9BB2CD382F44E1D00019A2D4 /* patterns in Resources */ = {isa = PBXBuildFile; fileRef = 9BB2CD372F44E1CD0019A2D4 /* patterns */; };
-		9BB4763F2F4D16FD004296F8 /* plan-convert-procedural-to-table.md in Resources */ = {isa = PBXBuildFile; fileRef = 9BB4763E2F4D16FD004296F8 /* plan-convert-procedural-to-table.md */; };
 		9BCED9112F1FD0A30029ED1B /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 9BCED9102F1FD0A30029ED1B /* index.html */; };
 		9BCED9902F246B150029ED1B /* Orbital.icon in Resources */ = {isa = PBXBuildFile; fileRef = 9BCED98F2F246B150029ED1B /* Orbital.icon */; };
 		9BD1B7002E8B08D000C718F1 /* Tonic in Frameworks */ = {isa = PBXBuildFile; productRef = 9BD1B6FF2E8B08D000C718F1 /* Tonic */; };
@@ -70,7 +69,6 @@
 		9BB2CD332F44E1BB0019A2D4 /* samples */ = {isa = PBXFileReference; lastKnownFileType = folder; path = samples; sourceTree = "<group>"; };
 		9BB2CD352F44E1C60019A2D4 /* presets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = presets; sourceTree = "<group>"; };
 		9BB2CD372F44E1CD0019A2D4 /* patterns */ = {isa = PBXFileReference; lastKnownFileType = folder; path = patterns; sourceTree = "<group>"; };
-		9BB4763E2F4D16FD004296F8 /* plan-convert-procedural-to-table.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "plan-convert-procedural-to-table.md"; sourceTree = "<group>"; };
 		9BC0FCA72E704EA900472A5A /* Orbital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Orbital.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC0FCB42E704EAA00472A5A /* OrbitalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrbitalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC0FCBE2E704EAA00472A5A /* OrbitalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrbitalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,8 +86,8 @@
 			membershipExceptions = (
 				AppView.swift,
 				Models/PatternStorage.swift,
-				Models/Song.swift,
-				Models/SongPlaybackState.swift,
+				Models/SongDocument.swift,
+				Models/SongRef.swift,
 				OrbitalApp.swift,
 				UI/ArrowChart.swift,
 				UI/ArrowSyntaxEditorView.swift,
@@ -259,7 +257,6 @@
 				9BC0FCA82E704EA900472A5A /* Products */,
 				099EC7E6135668894AE83E6E /* OrbitalCLI */,
 				1111A8047F40255DB2FA3179 /* OrbitalCLITests */,
-				9BB4763E2F4D16FD004296F8 /* plan-convert-procedural-to-table.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -462,7 +459,6 @@
 				9BB2CD342F44E1C00019A2D4 /* samples in Resources */,
 				9BB2CD362F44E1CA0019A2D4 /* presets in Resources */,
 				9BCED9112F1FD0A30029ED1B /* index.html in Resources */,
-				9BB4763F2F4D16FD004296F8 /* plan-convert-procedural-to-table.md in Resources */,
 				9B7430A02ECFA5640017DE7D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

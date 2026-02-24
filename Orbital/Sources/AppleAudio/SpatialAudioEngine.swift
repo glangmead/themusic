@@ -208,6 +208,22 @@ class SpatialAudioEngine {
     }
   }
   
+  /// Stop the engine, run a graph-mutating closure, then restart.
+  /// Ensures the render thread isn't pulling audio while nodes are
+  /// being attached or detached.
+  func withQuiescedGraph(_ mutate: () async throws -> Void) async throws {
+    audioEngine.stop()
+    do {
+      try await mutate()
+      try start()
+    } catch {
+      // Leave the engine running even if the mutation failed,
+      // so previously-attached nodes aren't left dangling.
+      try? start()
+      throw error
+    }
+  }
+
   func stop() {
     audioEngine.stop()
   }

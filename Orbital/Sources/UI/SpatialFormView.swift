@@ -9,16 +9,18 @@ import SwiftUI
 
 /// Edits the spatial rose parameters for all tracks in a song.
 struct SpatialFormView: View {
-  @Environment(SongPlaybackState.self) private var playbackState
+  @Environment(SongDocument.self) private var playbackState
 
   var body: some View {
     Form {
       Text("Change how sounds move in space. Sounds in the same preset use the same path but with staggered positions.")
-      let roseTracks = playbackState.tracks.filter {
-        $0.spatialPreset.presets.first?.positionLFO != nil
+      let rosePairs: [(TrackInfo, SpatialPreset)] = playbackState.tracks.compactMap { track in
+        guard let sp = playbackState.spatialPreset(forTrack: track.id),
+              sp.presets.first?.positionLFO != nil else { return nil }
+        return (track, sp)
       }
       // 3D Rose visualizer (first track with a positionLFO)
-      if let rose = roseTracks.first?.spatialPreset.presets.first?.positionLFO {
+      if let rose = rosePairs.first?.1.presets.first?.positionLFO {
         Section {
           RoseSceneView(rose: rose)
             .frame(height: 600)
@@ -27,16 +29,16 @@ struct SpatialFormView: View {
         }
       }
 
-      if roseTracks.isEmpty {
+      if rosePairs.isEmpty {
         ContentUnavailableView(
           "No Spatial Data",
           systemImage: "globe",
           description: Text("Press play to load spatial parameters.")
         )
       } else {
-        ForEach(roseTracks) { track in
+        ForEach(rosePairs, id: \.0.id) { track, spatialPreset in
           Section(track.patternName) {
-            RoseSliders(spatialPreset: track.spatialPreset)
+            RoseSliders(spatialPreset: spatialPreset)
           }
         }
       }
@@ -92,8 +94,8 @@ private struct RoseSliders: View {
 
 #Preview("Spatial Form") {
   let engine = SpatialAudioEngine()
-  let song = Song(name: "Preview Song", patternFileName: "aurora_arpeggio.json")
-  let state = SongPlaybackState(song: song, engine: engine)
+  let song = SongRef(name: "Preview Song", patternFileName: "aurora_arpeggio.json")
+  let state = SongDocument(song: song, engine: engine)
   NavigationStack {
     SpatialFormView()
       .environment(state)

@@ -213,10 +213,16 @@ struct PatternSyntax: Codable {
   let midiTracks: MidiTracksSyntax?
   let tableTracks: TablePatternSyntax?
 
-  /// Compile all tracks into a single MusicPattern. Returns the pattern
-  /// plus a TrackInfo array for the UI (built at compile time so
-  /// SongPlaybackState can access it without awaiting the actor).
-  func compile(engine: SpatialAudioEngine, clock: any Clock<Duration> = ContinuousClock(), resourceBaseURL: URL? = nil) async throws -> (MusicPattern, [TrackInfo]) {
+  /// Result of compiling a pattern: separates document data from live audio state.
+  struct CompileResult {
+    let pattern: MusicPattern
+    let trackInfos: [TrackInfo]
+    let spatialPresets: [SpatialPreset]
+  }
+
+  /// Compile all tracks into a single MusicPattern. Returns document-level
+  /// track info and live spatial presets separately.
+  func compile(engine: SpatialAudioEngine, clock: any Clock<Duration> = ContinuousClock(), resourceBaseURL: URL? = nil) async throws -> CompileResult {
     if let procedural = proceduralTracks {
       return try await compileProceduralTracks(procedural, engine: engine, clock: clock, resourceBaseURL: resourceBaseURL)
     } else if let midi = midiTracks {
@@ -229,6 +235,7 @@ struct PatternSyntax: Codable {
   }
 
   /// Compile without an engine — produces TrackInfo for UI-only display.
+  /// No audio nodes or SpatialPresets are created.
   func compileTrackInfoOnly(resourceBaseURL: URL? = nil) -> [TrackInfo] {
     var infos: [TrackInfo] = []
     var nextId = 0
@@ -236,13 +243,11 @@ struct PatternSyntax: Codable {
       for track in procedural {
         let presetFileName = track.presetFilename + ".json"
         let presetSpec = decodeJSON(PresetSyntax.self, from: presetFileName, subdirectory: "presets", resourceBaseURL: resourceBaseURL)
-        let sp = SpatialPreset(presetSpec: presetSpec, numVoices: track.numVoices ?? 12)
         infos.append(TrackInfo(
           id: nextId,
           patternName: track.name,
           trackSpec: track,
-          presetSpec: presetSpec,
-          spatialPreset: sp
+          presetSpec: presetSpec
         ))
         nextId += 1
       }
@@ -250,13 +255,11 @@ struct PatternSyntax: Codable {
       for (i, entry) in midi.tracks.enumerated() {
         let presetFileName = entry.presetFilename + ".json"
         let presetSpec = decodeJSON(PresetSyntax.self, from: presetFileName, subdirectory: "presets", resourceBaseURL: resourceBaseURL)
-        let sp = SpatialPreset(presetSpec: presetSpec, numVoices: entry.numVoices ?? 12)
         infos.append(TrackInfo(
           id: nextId,
           patternName: "Track \(i)",
           trackSpec: nil,
-          presetSpec: presetSpec,
-          spatialPreset: sp
+          presetSpec: presetSpec
         ))
         nextId += 1
       }
@@ -273,9 +276,10 @@ struct PatternSyntax: Codable {
     engine: SpatialAudioEngine,
     clock: any Clock<Duration>,
     resourceBaseURL: URL? = nil
-  ) async throws -> (MusicPattern, [TrackInfo]) {
+  ) async throws -> CompileResult {
     var musicTracks: [MusicPattern.Track] = []
     var trackInfos: [TrackInfo] = []
+    var spatialPresets: [SpatialPreset] = []
 
     for (i, trackSpec) in procedural.enumerated() {
       let presetFileName = trackSpec.presetFilename + ".json"
@@ -316,13 +320,13 @@ struct PatternSyntax: Codable {
         id: i,
         patternName: trackSpec.name,
         trackSpec: trackSpec,
-        presetSpec: presetSpec,
-        spatialPreset: sp
+        presetSpec: presetSpec
       ))
+      spatialPresets.append(sp)
     }
 
     let pattern = MusicPattern(tracks: musicTracks, clock: clock)
-    return (pattern, trackInfos)
+    return CompileResult(pattern: pattern, trackInfos: trackInfos, spatialPresets: spatialPresets)
   }
 
   private func compileMidiTracks(
@@ -330,7 +334,7 @@ struct PatternSyntax: Codable {
     engine: SpatialAudioEngine,
     clock: any Clock<Duration>,
     resourceBaseURL: URL? = nil
-  ) async throws -> (MusicPattern, [TrackInfo]) {
+  ) async throws -> CompileResult {
     guard let url = NoteGeneratorSyntax.midiFileURL(filename: midi.filename, resourceBaseURL: resourceBaseURL) else {
       fatalError("MIDI file not found: \(midi.filename)")
     }
@@ -340,6 +344,7 @@ struct PatternSyntax: Codable {
 
     var musicTracks: [MusicPattern.Track] = []
     var trackInfos: [TrackInfo] = []
+    var spatialPresets: [SpatialPreset] = []
 
     for (i, entry) in allSeqs.enumerated() {
       // Use per-track entry if available, otherwise fall back to first entry
@@ -366,13 +371,13 @@ struct PatternSyntax: Codable {
         id: i,
         patternName: trackName,
         trackSpec: nil,
-        presetSpec: presetSpec,
-        spatialPreset: sp
+        presetSpec: presetSpec
       ))
+      spatialPresets.append(sp)
     }
 
     let pattern = MusicPattern(tracks: musicTracks, clock: clock)
-    return (pattern, trackInfos)
+    return CompileResult(pattern: pattern, trackInfos: trackInfos, spatialPresets: spatialPresets)
   }
 
   private static func compileModulators(_ modulators: [ModulatorSyntax]?) -> [String: Arrow11] {

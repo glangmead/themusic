@@ -12,7 +12,7 @@ import Tonic
 
 struct PresetFormView: View {
   @Environment(SpatialAudioEngine.self) private var engine
-  @Environment(SongPlaybackState.self) private var playbackState: SongPlaybackState?
+  @Environment(SongDocument.self) private var playbackState: SongDocument?
   let presetSpec: PresetSyntax
   @State private var synth: SyntacticSynth?
   private let externalSynth: SyntacticSynth?
@@ -70,7 +70,7 @@ struct PresetFormView: View {
 private struct PresetFormContent: View {
   @Bindable var synth: SyntacticSynth
   let presetSpec: PresetSyntax
-  var playbackState: SongPlaybackState?
+  var playbackState: SongDocument?
   /// When provided, the keyboard plays through this preset instead of the
   /// synth's own spatial preset, so spatial edits are reflected.
   var liveSpatialPreset: SpatialPreset?

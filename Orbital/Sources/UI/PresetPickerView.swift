@@ -11,7 +11,7 @@ import SwiftUI
 /// Tapping a preset replaces the track's preset and pops the navigation stack.
 struct PresetPickerView: View {
     @Environment(\.dismiss) private var dismiss
-    @Environment(SongPlaybackState.self) private var playbackState
+    @Environment(SongDocument.self) private var playbackState
     let trackId: Int
     let currentPresetName: String
 

@@ -8,25 +8,13 @@
 import SwiftUI
 
 struct TablePatternFormView: View {
-  @Environment(SongPlaybackState.self) private var playbackState
+  @Environment(SongDocument.self) private var playbackState
 
   @State private var patternName: String
   @State private var emitters: [EmitterRowState]
   @State private var noteMaterials: [NoteMaterialRowState]
   @State private var modulators: [TableModulatorRowState]
   @State private var tracks: [TrackAssemblyRowState]
-
-  init() {
-    let table = TablePatternSyntax(
-      name: "New Pattern", emitters: [], noteMaterials: [],
-      modulators: [], tracks: []
-    )
-    _patternName = State(initialValue: table.name)
-    _emitters = State(initialValue: [])
-    _noteMaterials = State(initialValue: [])
-    _modulators = State(initialValue: [])
-    _tracks = State(initialValue: [])
-  }
 
   init(table: TablePatternSyntax) {
     _patternName = State(initialValue: table.name)
