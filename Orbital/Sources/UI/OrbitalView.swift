@@ -68,7 +68,7 @@ struct OrbitalView: View {
         }
       }
     }
-    .toolbarVisibility(.hidden, for: .tabBar)
+
   }
 }
 

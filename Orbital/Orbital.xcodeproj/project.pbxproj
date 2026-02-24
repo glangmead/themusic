@@ -86,6 +86,7 @@
 			membershipExceptions = (
 				AppView.swift,
 				Models/PatternStorage.swift,
+				Models/PresetStorage.swift,
 				Models/ResourceManager.swift,
 				Models/SongDocument.swift,
 				Models/SongRef.swift,
@@ -98,7 +99,9 @@
 				UI/KnobbyBox.swift,
 				UI/KnobbyKnob.swift,
 				UI/OrbitalView.swift,
+				UI/PresetCell.swift,
 				UI/PresetFormView.swift,
+				UI/PresetLibraryView.swift,
 				UI/PresetPickerView.swift,
 				UI/RoseSceneView.swift,
 				UI/SliderWithField.swift,

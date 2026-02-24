@@ -17,7 +17,11 @@ struct AppView: View {
       Tab("Songs", systemImage: "music.note.list") {
         OrbitalView()
       }
+      Tab("Sounds", systemImage: "pianokeys") {
+        PresetLibraryView()
+      }
     }
+    .tabBarMinimizeBehavior(.onScrollDown)
     .tabViewBottomAccessory(isEnabled: library.anySongPlaying) {
       PlaybackAccessoryView(isShowingVisualizer: $isShowingVisualizer)
     }
@@ -35,48 +39,29 @@ struct AppView: View {
 /// Tapping the accessory opens the event log as a sheet.
 private struct PlaybackAccessoryView: View {
   @Environment(SongLibrary.self) private var library
+  @Environment(\.tabViewBottomAccessoryPlacement) private var placement
   @Binding var isShowingVisualizer: Bool
   @State private var isShowingEventLog = false
 
   var body: some View {
     HStack {
-      if library.isLoading {
-        ProgressView()
-      }
-
-      if let name = library.currentSongName {
-        Text(name)
-          .lineLimit(1)
-      }
-
-      Spacer()
-
-      HStack(spacing: 20) {
-        if !library.isLoading {
-          Button {
-            if library.allPaused {
-              library.resumeAll()
-            } else {
-              library.pauseAll()
-            }
-          } label: {
-            Image(systemName: library.allPaused ? "play.fill" : "pause.fill")
-          }
-
-          Button {
-            library.stopAll()
-          } label: {
-            Image(systemName: "stop.fill")
-          }
+      if placement != .inline {
+        if library.isLoading {
+          ProgressView()
         }
 
-        Button {
-          withAnimation(.easeInOut(duration: 0.4)) {
-            isShowingVisualizer = true
-          }
-        } label: {
-          Image(systemName: "sparkles.tv")
+        if let name = library.currentSongName {
+          Text(name)
+            .lineLimit(1)
         }
+
+        Spacer()
+      }
+
+      if placement == .inline {
+        accessoryButtons.buttonStyle(.glass)
+      } else {
+        accessoryButtons
       }
     }
     .padding(.horizontal)
@@ -87,6 +72,36 @@ private struct PlaybackAccessoryView: View {
     .sheet(isPresented: $isShowingEventLog) {
       if let state = library.currentPlaybackState {
         EventLogSheet(state: state)
+      }
+    }
+  }
+
+  private var accessoryButtons: some View {
+    HStack(spacing: placement == .inline ? 12 : 20) {
+      if !library.isLoading {
+        Button {
+          if library.allPaused {
+            library.resumeAll()
+          } else {
+            library.pauseAll()
+          }
+        } label: {
+          Image(systemName: library.allPaused ? "play.fill" : "pause.fill")
+        }
+
+        Button {
+          library.stopAll()
+        } label: {
+          Image(systemName: "stop.fill")
+        }
+      }
+
+      Button {
+        withAnimation(.easeInOut(duration: 0.4)) {
+          isShowingVisualizer = true
+        }
+      } label: {
+        Image(systemName: "sparkles.tv")
       }
     }
   }
