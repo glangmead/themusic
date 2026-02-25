@@ -6,20 +6,25 @@
       {
         "name": "melodyDegreePicker",
         "outputType": "int",
-        "function": "shuffle",
-        "candidates": ["0", "1", "2", "3", "4", "5", "6"]
+        "function": "fragmentPool",
+        "fragments": [
+          [5,7,4,2,0,12,7,5,7,4,2,0],
+          [5,7,4,2,0,12,4,7,5,0],
+          [-5,2,0,4,7,12,5,2,7,4,0,7,2,5,5,2,4,0],
+          [7,7,2,4,4,4,2,0,7,0,0],
+        ]
       },
       {
         "name": "melodyOctaves",
         "outputType": "octave",
         "function": "random",
-        "candidates": ["3", "3", "3", "3", "4", "4", "4", "5"]
+        "candidates": ["3"]
       },
       {
         "name": "melodyScales",
         "outputType": "scale",
         "function": "cyclic",
-        "candidates": ["major"]
+        "candidates": ["chromatic"]
       },
       {
         "name": "melodyRoot",
@@ -31,14 +36,14 @@
         "name": "melodySustain",
         "outputType": "float",
         "function": "randFloat",
-        "arg1": 2,
-        "arg2": 6
+        "arg1": 0.1,
+        "arg2": 0.1
       },
       {
         "name": "melodyGap",
         "outputType": "float",
         "function": "exponentialRandFloat",
-        "arg1": 0.3,
+        "arg1": 1.0,
         "arg2": 3.0
       },
       {
@@ -135,21 +140,21 @@
         "name": "chordAmpVal",
         "outputType": "float",
         "function": "exponentialRandFloat",
-        "arg1": 0.15,
-        "arg2": 0.4
+        "arg1": 0.01,
+        "arg2": 0.02
       },
       {
         "name": "bassAmpVal",
         "outputType": "float",
         "function": "exponentialRandFloat",
         "arg1": 0.4,
-        "arg2": 0.8
+        "arg2": 0.5
       }
     ],
     "noteMaterials": [
       {
         "name": "melody",
-        "intervalMaterial": [[0], [1], [2], [3], [4], [5], [6]],
+        "intervalMaterial": [[0], [1], [2], [3], [4], [5], [6], [7], [8], [9], [10], [11]],
         "intervalPicker": "melodyDegreePicker",
         "octaveEmitter": "melodyOctaves",
         "scaleEmitter": "melodyScales",
@@ -157,7 +162,7 @@
       },
       {
         "name": "chords",
-        "intervalMaterial": [[0, 2, 4], [2, 4, 6], [0, 2, 4, 5], [0, 3, 5]],
+        "intervalMaterial": [[0,4,7,12], [4,7,11,16], [-3,0,4,7], [-3,0,5,9]],
         "intervalPicker": "chordDegreePicker",
         "octaveEmitter": "chordOctaves",
         "scaleEmitter": "chordScales",
@@ -165,7 +170,7 @@
       },
       {
         "name": "bassNotes",
-        "intervalMaterial": [[0], [0], [4], [3]],
+        "intervalMaterial": [[0]],
         "intervalPicker": "bassDegreePicker",
         "octaveEmitter": "bassOctaves",
         "scaleEmitter": "bassScales",
@@ -201,7 +206,7 @@
       },
       {
         "name": "Bass",
-        "presetFilename": "airports_bass",
+        "presetFilename": "warm_analog_pad",
         "numVoices": 6,
         "modulatorNames": ["chordAmpMod"],
         "noteMaterial": "chords",
@@ -210,7 +215,7 @@
       },
       {
         "name": "Bass",
-        "presetFilename": "airports_bass",
+        "presetFilename": "warm_analog_pad",
         "numVoices": 3,
         "modulatorNames": ["bassAmpMod"],
         "noteMaterial": "bassNotes",

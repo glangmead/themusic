@@ -328,7 +328,7 @@ struct TablePatternFormView: View {
     case .float:
       return [.randFloat, .exponentialRandFloat, .shuffle, .cyclic, .random, .sum, .reciprocal]
     case .int:
-      return [.randInt, .shuffle, .cyclic, .random, .indexPicker(emitter: ""), .markovChord]
+      return [.randInt, .shuffle, .cyclic, .random, .indexPicker(emitter: ""), .markovChord, .fragmentPool]
     case .root, .octave, .scale:
       return [.shuffle, .cyclic, .random, .indexPicker(emitter: "")]
     }
@@ -346,6 +346,7 @@ struct TablePatternFormView: View {
     case .reciprocal: return "Reciprocal"
     case .indexPicker: return "Index Picker"
     case .markovChord: return "Markov Chord"
+    case .fragmentPool: return "Fragment Pool"
     }
   }
 

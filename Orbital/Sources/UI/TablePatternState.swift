@@ -19,6 +19,7 @@ struct EmitterRowState: Identifiable, Equatable {
   var arg2: CoreFloat
   var candidates: [String]
   var inputEmitters: [String]
+  var fragments: [[Int]]
   var updateMode: EmitterUpdateMode
 
   init(from syntax: EmitterRowSyntax) {
@@ -30,6 +31,7 @@ struct EmitterRowState: Identifiable, Equatable {
     arg2 = syntax.arg2 ?? 1
     candidates = syntax.candidates ?? []
     inputEmitters = syntax.inputEmitters ?? []
+    fragments = syntax.fragments ?? []
     updateMode = syntax.updateMode
   }
 
@@ -42,6 +44,7 @@ struct EmitterRowState: Identifiable, Equatable {
     arg2 = 1
     candidates = []
     inputEmitters = []
+    fragments = []
     updateMode = .each
   }
 
@@ -55,8 +58,15 @@ struct EmitterRowState: Identifiable, Equatable {
       arg2: needsArgs ? arg2 : nil,
       candidates: needsCandidates ? candidates : nil,
       inputEmitters: needsInputEmitters ? inputEmitters : nil,
+      fragments: needsFragments ? fragments : nil,
       updateMode: updateMode
     )
+  }
+
+  /// Whether this function uses a fragments list.
+  var needsFragments: Bool {
+    if case .fragmentPool = function { return true }
+    return false
   }
 
   /// Whether this function uses arg1/arg2 (min/max numeric params).

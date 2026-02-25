@@ -332,6 +332,35 @@ class LatchingIterator<Element>: Sequence, IteratorProtocol {
   }
 }
 
+// MARK: - FragmentPoolIterator
+
+/// Randomly picks a fragment from a pool, yields its values one at a time,
+/// then picks another fragment when the current one is exhausted. Loops forever.
+/// Used as a general-purpose int emitter (e.g. for intervalPicker in table patterns).
+struct FragmentPoolIterator: Sequence, IteratorProtocol {
+  let fragments: [[Int]]
+  private var currentIndex: Int
+  private var position: Int = 0
+
+  init(fragments: [[Int]]) {
+    self.fragments = fragments
+    self.currentIndex = fragments.isEmpty ? 0 : Int.random(in: 0..<fragments.count)
+  }
+
+  mutating func next() -> Int? {
+    guard !fragments.isEmpty else { return nil }
+    let fragment = fragments[currentIndex]
+    if position >= fragment.count {
+      currentIndex = Int.random(in: 0..<fragments.count)
+      position = 0
+    }
+    let value = fragments[currentIndex][position]
+    print("pool: playing \(value) from \(fragments[currentIndex])")
+    position += 1
+    return value
+  }
+}
+
 // MARK: - IntSampler
 
 /// Generates random integers in a range. Stateless — safe with any update mode.
@@ -452,6 +481,7 @@ struct TableNoteGenerator: Sequence, IteratorProtocol {
     guard let idx = intervalPicker.next() else { return nil }
     let clamped = Swift.max(0, Swift.min(idx, intervalMaterial.count - 1))
     let degrees = intervalMaterial[clamped]
+    print("selecting from \(intervalMaterial): \(degrees)")
 
     guard let scale = scaleEmitter.next() else { return nil }
     guard let root = rootEmitter.next() else { return nil }
@@ -459,11 +489,18 @@ struct TableNoteGenerator: Sequence, IteratorProtocol {
 
     let rootNote = Note(root.letter, accidental: root.accidental, octave: octave)
 
+    let scaleSize = scale.intervals.count
     var notes: [MidiNote] = []
     for degree in degrees {
-      let clampedDegree = Swift.max(0, Swift.min(degree, scale.intervals.count - 1))
-      let interval = scale.intervals[clampedDegree]
-      if let shifted = rootNote.shiftUp(interval) {
+      // Octave wrapping: degrees outside 0..<scaleSize shift octaves.
+      // e.g. degree 12 in chromatic (12-note) scale = root one octave up.
+      let octaveShift = degree >= 0
+        ? degree / scaleSize
+        : (degree - scaleSize + 1) / scaleSize
+      let degreeInScale = ((degree % scaleSize) + scaleSize) % scaleSize
+      let interval = scale.intervals[degreeInScale]
+      let wrappedRoot = Note(root.letter, accidental: root.accidental, octave: octave + octaveShift)
+      if let shifted = wrappedRoot.shiftUp(interval) {
         notes.append(MidiNote(note: MidiValue(shifted.noteNumber), velocity: 127))
       }
     }

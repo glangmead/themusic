@@ -6,6 +6,8 @@
   "compose": [
     {
      "prod": [
+       { "const": {"val": 1.0, "name": "overallAmp"}},
+       { "const": {"val": 1.0, "name": "overallAmp2"}},
        {
         "sum": [
           {

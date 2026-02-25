@@ -388,6 +388,10 @@ enum TablePatternCompiler {
     case .markovChord:
       iter = MarkovChordIndexIterator()
 
+    case .fragmentPool:
+      let frags = row.fragments ?? []
+      iter = FragmentPoolIterator(fragments: frags)
+
     default:
       // List-based functions on int candidates
       if let candidates = row.candidates {

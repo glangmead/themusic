@@ -109,7 +109,7 @@ struct OrbitalPlay: AsyncParsableCommand {
         let engine = SpatialAudioEngine(spatialEnabled: spatialEnabled)
         try engine.start()
 
-        let (musicPattern, trackInfos) = try await patternSpec.compile(
+        let result = try await patternSpec.compile(
             engine: engine,
             resourceBaseURL: resourcesURL
         )
@@ -120,7 +120,7 @@ struct OrbitalPlay: AsyncParsableCommand {
         engine.audioEngine.stop()
         try engine.audioEngine.start()
 
-        print("Playing \(trackInfos.count) track(s)...")
+        print("Playing \(result.trackInfos.count) track(s)...")
         if let duration {
             print("Will stop after \(duration) seconds.")
         } else {
@@ -141,7 +141,7 @@ struct OrbitalPlay: AsyncParsableCommand {
 
         // Start playback in a task
         let playTask = Task {
-            await musicPattern.play()
+            await result.pattern.play()
         }
 
         if let duration {
@@ -171,7 +171,7 @@ struct OrbitalPlay: AsyncParsableCommand {
         let engine = SpatialAudioEngine(spatialEnabled: spatialEnabled)
         try engine.start()
 
-        let (musicPattern, trackInfos) = try await patternSpec.compile(
+        let result = try await patternSpec.compile(
             engine: engine,
             resourceBaseURL: resourcesURL
         )
@@ -180,7 +180,7 @@ struct OrbitalPlay: AsyncParsableCommand {
         engine.audioEngine.stop()
         try engine.audioEngine.start()
 
-        print("Rendering \(trackInfos.count) track(s), \(duration)s to \(outputPath)...")
+        print("Rendering \(result.trackInfos.count) track(s), \(duration)s to \(outputPath)...")
 
         let sampleRate = engine.sampleRate
 
@@ -225,7 +225,7 @@ struct OrbitalPlay: AsyncParsableCommand {
 
         // Start pattern playback
         let playTask = Task {
-            await musicPattern.play()
+            await result.pattern.play()
         }
 
         // Wait for the duration

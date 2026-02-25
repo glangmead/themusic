@@ -36,6 +36,9 @@ enum EmitterFunction: Codable, Equatable, Hashable {
   // Markov chord progression (Tymoczko baroque/classical major)
   case markovChord
 
+  // Fragment pool: pick a random fragment, yield its values sequentially, repeat
+  case fragmentPool
+
   // Composition operators
   case sum
   case reciprocal
@@ -62,6 +65,7 @@ enum EmitterFunction: Codable, Equatable, Hashable {
       case "cyclic":               self = .cyclic
       case "random":               self = .random
       case "markovChord":          self = .markovChord
+      case "fragmentPool":         self = .fragmentPool
       case "sum":                  self = .sum
       case "reciprocal":           self = .reciprocal
       default:                     self = .randFloat
@@ -98,6 +102,8 @@ enum EmitterFunction: Codable, Equatable, Hashable {
       var c = encoder.singleValueContainer(); try c.encode("reciprocal")
     case .markovChord:
       var c = encoder.singleValueContainer(); try c.encode("markovChord")
+    case .fragmentPool:
+      var c = encoder.singleValueContainer(); try c.encode("fragmentPool")
     case .indexPicker(let emitter):
       var c = encoder.container(keyedBy: CodingKeys.self)
       try c.encode(IndexPickerPayload(emitter: emitter), forKey: .indexPicker)
@@ -166,6 +172,8 @@ struct EmitterRowSyntax: Codable, Equatable, Identifiable {
   var candidates: [String]?
   /// References to other emitters used as inputs (for sum, reciprocal).
   var inputEmitters: [String]?
+  /// Fragment lists for the fragmentPool function. Each inner array is a melody fragment.
+  var fragments: [[Int]]?
   var updateMode: EmitterUpdateMode
 
   init(
@@ -177,6 +185,7 @@ struct EmitterRowSyntax: Codable, Equatable, Identifiable {
     arg2: Double? = nil,
     candidates: [String]? = nil,
     inputEmitters: [String]? = nil,
+    fragments: [[Int]]? = nil,
     updateMode: EmitterUpdateMode = .each
   ) {
     self.id = id
@@ -187,12 +196,13 @@ struct EmitterRowSyntax: Codable, Equatable, Identifiable {
     self.arg2 = arg2
     self.candidates = candidates
     self.inputEmitters = inputEmitters
+    self.fragments = fragments
     self.updateMode = updateMode
   }
 
   // Default id from UUID() if absent in JSON
   enum CodingKeys: String, CodingKey {
-    case id, name, outputType, function, arg1, arg2, candidates, inputEmitters, updateMode
+    case id, name, outputType, function, arg1, arg2, candidates, inputEmitters, fragments, updateMode
   }
 
   init(from decoder: Decoder) throws {
@@ -205,6 +215,7 @@ struct EmitterRowSyntax: Codable, Equatable, Identifiable {
     arg2 = try c.decodeIfPresent(Double.self, forKey: .arg2)
     candidates = try c.decodeIfPresent([String].self, forKey: .candidates)
     inputEmitters = try c.decodeIfPresent([String].self, forKey: .inputEmitters)
+    fragments = try c.decodeIfPresent([[Int]].self, forKey: .fragments)
     updateMode = try c.decodeIfPresent(EmitterUpdateMode.self, forKey: .updateMode) ?? .each
   }
 }
