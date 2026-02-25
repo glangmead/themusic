@@ -129,8 +129,21 @@ class Preset: NoteHandler {
     audioGate?.isOpen = false
   }
   
+  /// Resolve the envelope key for gate lifecycle management.
+  /// Prefers "ampEnv" exactly, then any key containing "ampenv" case-insensitively,
+  /// then falls back to an arbitrary envelope key.
+  static func resolveAmpEnvKey(from dict: [String: [ADSR]]) -> String? {
+    if dict["ampEnv"] != nil { return "ampEnv" }
+    if let fuzzy = dict.keys.first(where: { $0.localizedStandardContains("ampenv") }) {
+      return fuzzy
+    }
+    return dict.keys.first
+  }
+
   private func setupLifecycleCallbacks() {
-    if let sound = sound, let ampEnvs = sound.namedADSREnvelopes["ampEnv"] {
+    if let sound = sound,
+       let key = Self.resolveAmpEnvKey(from: sound.namedADSREnvelopes),
+       let ampEnvs = sound.namedADSREnvelopes[key] {
       for env in ampEnvs {
         env.startCallback = { [weak self] in
           self?.activate()
@@ -248,10 +261,11 @@ class Preset: NoteHandler {
     self.audioGate?.isOpen = false
     self.voiceLedger = VoiceLedger(voiceCount: numVoices)
     
-    // Register ampEnv envelopes per voice so the ledger can
+    // Register amp envelopes per voice so the ledger can
     // auto-release voices when envelope release completes.
     for (voiceIdx, voice) in voices.enumerated() {
-      if let ampEnvs = voice.namedADSREnvelopes["ampEnv"] {
+      if let key = Self.resolveAmpEnvKey(from: voice.namedADSREnvelopes),
+         let ampEnvs = voice.namedADSREnvelopes[key] {
         self.voiceLedger?.registerEnvelopes(forVoice: voiceIdx, envelopes: ampEnvs)
       }
     }

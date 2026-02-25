@@ -1,0 +1,163 @@
+{
+ "name"   : "Airports Piano Mix",
+ "rose"   : {"freq": 0.2, "leafFactor": 3, "phase": 1.0, "amp": 3},
+ "effects": {"reverbPreset": 8, "delayTime": 0.05, "delayLowPassCutoff": 1500, "delayFeedback": 15, "reverbWetDryMix": 50, "delayWetDryMix": 15},
+ "arrow"  : {
+  "crossfadeEqPow": {
+    "name": "pianoPulseMix",
+    "mixPoint": {
+      "compose": [
+        {"identity": {}},
+        { "noiseSmoothStep": {"noiseFreq": 0.05, "min": 0.1, "max": 0.9} }
+      ]
+    },
+    "of": [
+      {
+       "compose": [
+         {
+          "prod": [
+            {
+             "sum": [
+               {
+                "prod": [
+                  { "const": {"val": 0.8, "name": "osc1Mix"} },
+                  { "noiseSmoothStep": {"noiseFreq": 3500, "min": -1, "max": 1} }
+                ]
+               },
+               {
+                "prod": [
+                  { "const": {"val": 0.15, "name": "osc2Mix"} },
+                  { "noiseSmoothStep": {"noiseFreq": 2000, "min": -1, "max": 1} }
+                ]
+               }
+             ]
+            },
+            { "envelope": { "decay": 0.06, "sustain": 0.5, "attack": 0.005, "name": "combAmpEnv", "release": 2.0, "scale": 1 } }
+           ]
+         },
+         {
+          "combFilter": {
+            "frequency":
+             { "prod": [
+               { "const": {"name": "freq", "val": 300} },
+               { "constOctave": {"name": "combOctave", "val": 0} },
+               { "constCent": {"name": "combCentDetune", "val": 3} }
+             ]},
+            "feedback": { "const": {"name": "combFeedback", "val": 0.98} },
+            "name"    : "comb"
+          }
+        },
+        {
+          "lowPassFilter": {
+            "cutoff":
+             { "prod": [
+               { "const": {"name": "freq", "val": 300} },
+               { "const": {"name": "combLPFMultiplier", "val": 8} }
+             ]},
+            "resonance": { "const": {"name": "combLPFResonance", "val": 0.7} },
+            "name": "combLPF"
+          }
+        }]
+      },
+      {
+       "compose": [
+         {
+          "prod": [
+            {
+             "sum": [
+               {
+                "prod": [
+                  { "const": {"val": 0.8, "name": "pulseOsc1Mix"} },
+                  {
+                   "compose": [
+                     {
+                      "sum": [
+                        { "prod": [
+                         { "const": {"name": "freq", "val": 300} },
+                         { "constOctave": {"name": "pulseOsc1Octave", "val": 0} },
+                         { "constCent": {"name": "pulseOsc1CentDetune", "val": 0} },
+                         { "identity": {}}
+                        ]},
+                        { "prod": [
+                            { "const": {"name": "freq", "val": 300} },
+                            { "const": {"name": "pulseVibratoAmp", "val": 0} },
+                           { "compose": [
+                              { "prod": [
+                                { "const": {"val": 1, "name": "pulseVibratoFreq"} },
+                                { "identity": {} }
+                              ]},
+                              { "osc": {"name": "pulseVibratoOsc", "shape": "sineOsc", "width": { "const": {"name": "pulseOsc1VibWidth", "val": 1} }} }
+                           ]}
+                         ]
+                        }
+                      ]},
+                     { "osc": {"name": "pulseOsc1", "shape": "squareOsc", "width": { "const": {"name": "pulseOsc1Width", "val": 0.5} }} },
+                     { "choruser": {"name": "pulseOsc1Choruser", "valueToChorus": "freq", "chorusCentRadius": 0, "chorusNumVoices": 1 } }
+                   ]}
+                ]
+               },
+               {
+                "prod": [
+                  { "const": {"val": 0.2, "name": "pulseOsc2Mix"} },
+                  {
+                   "compose": [
+                     {
+                      "sum": [
+                        { "prod": [
+                          {"const": {"name": "freq", "val": 300} },
+                          {"constOctave": {"name": "pulseOsc2Octave", "val": -1} },
+                          {"constCent": {"name": "pulseOsc2CentDetune", "val": 0} },
+                          {"identity": {}}
+                        ]},
+                        { "prod": [
+                            { "const": {"name": "freq", "val": 300} },
+                            { "const": {"name": "pulseVibratoAmp", "val": 0} },
+                            { "compose": [
+                               { "prod": [
+                                 { "const": {"val": 1, "name": "pulseVibratoFreq"} },
+                                 { "identity": {} }
+                               ]},
+                               { "osc": {"name": "pulseVibratoOsc2", "shape": "sineOsc", "width": { "const": {"name": "pulseOsc2VibWidth", "val": 1} }} }
+                            ]}
+                          ]
+                         }
+                      ]
+                     },
+                     { "osc": {"name": "pulseOsc2", "shape": "squareOsc", "width": { "const": {"name": "pulseOsc2Width", "val": 0.5} }} },
+                     { "choruser": { "name": "pulseOsc2Choruser", "valueToChorus": "freq", "chorusCentRadius": 0, "chorusNumVoices": 1 } }
+                   ]
+                  }
+                ]
+               }
+             ]
+            },
+            { "envelope": { "decay": 0.3, "sustain": 0.0, "attack": 0.003, "name": "pulseAmpEnv", "release": 4.0, "scale": 1 } }
+           ]
+         },
+         {
+          "lowPassFilter": {
+            "cutoff":
+             { "prod": [
+               { "const": {"name": "freq", "val": 300} },
+               { "const": {"name": "pulseCutoffMultiplier", "val": 1.5} }
+             ]},
+            "resonance": { "const": {"name": "pulseResonance", "val": 1.8} },
+            "name": "pulseFilter"
+          }
+        },
+        {
+          "lowPassFilter": {
+            "cutoff":
+             { "prod": [
+               { "const": {"name": "freq", "val": 300} },
+               { "const": {"name": "pulsePostLPFMultiplier", "val": 8} }
+             ]},
+            "resonance": { "const": {"name": "pulsePostLPFResonance", "val": 0.7} },
+            "name": "pulsePostLPF"
+          }
+        }]
+      }
+    ]
+  }
+ }
+}
