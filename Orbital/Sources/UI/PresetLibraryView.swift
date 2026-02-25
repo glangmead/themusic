@@ -15,7 +15,6 @@ private struct PresetRef: Identifiable {
 struct PresetLibraryView: View {
   @Environment(ResourceManager.self) private var resourceManager
   @State private var presets: [PresetRef] = []
-  @State private var selectedPresetFileName: String?
 
   var body: some View {
     NavigationStack {
@@ -23,8 +22,8 @@ struct PresetLibraryView: View {
         if resourceManager.isReady {
           List {
             ForEach(presets) { preset in
-              PresetCell(name: preset.spec.name) {
-                selectedPresetFileName = preset.fileName
+              NavigationLink(value: preset.fileName) {
+                Text(preset.spec.name)
               }
               .swipeActions(edge: .leading, allowsFullSwipe: true) {
                 Button {
@@ -41,7 +40,7 @@ struct PresetLibraryView: View {
         }
       }
       .navigationTitle("Sounds")
-      .navigationDestination(item: $selectedPresetFileName) { fileName in
+      .navigationDestination(for: String.self) { fileName in
         if let preset = presets.first(where: { $0.fileName == fileName }) {
           PresetFormView(presetSpec: preset.spec)
             .navigationTitle(preset.spec.name)

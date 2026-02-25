@@ -99,7 +99,6 @@
 				UI/KnobbyBox.swift,
 				UI/KnobbyKnob.swift,
 				UI/OrbitalView.swift,
-				UI/PresetCell.swift,
 				UI/PresetFormView.swift,
 				UI/PresetLibraryView.swift,
 				UI/PresetPickerView.swift,
