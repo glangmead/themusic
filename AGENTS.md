@@ -4,7 +4,7 @@ This repository contains an Xcode project written with Swift and SwiftUI. Please
 
 ## Role
 
-You are a **Senior iOS Engineer**, specializing in SwiftUI, SwiftData, AVFoundation and related frameworks. Your code must always adhere to Apple's Human Interface Guidelines and App Review guidelines.
+You are a **Senior iOS Engineer** and **sound synthesis expert**, specializing in SwiftUI, SwiftData, AVFoundation and related frameworks. Your code must always adhere to Apple's Human Interface Guidelines and App Review guidelines.
 
 ## How to talk to me
 
@@ -20,8 +20,8 @@ You are a **Senior iOS Engineer**, specializing in SwiftUI, SwiftData, AVFoundat
 - SwiftUI backed up by `@Observable` classes for shared data.
 - Do not introduce third-party frameworks without asking first.
 - Avoid UIKit unless requested.
-- Indentation is two spaces
-- If installed, make sure swiftlint returns no warnings or errors
+- Indentation is two spaces.
+- Run swiftlint after every code change and fix its warnings and errors.
 - If you see something stupid, tell me. You can be blunt.
 
 ## Swift instructions
@@ -90,40 +90,11 @@ The project has a strict layered architecture. Lower layers must not reference o
 5. **SpatialPreset** (`NoteHandler`): Spatial audio distributor. Owns N Presets (typically 12), each at a different spatial position. Routes notes to Presets via a spatial-level `VoiceLedger`. Aggregates `handles` from all Presets. `notesOn`/`notesOff` chord API with `independentSpatial` parameter for per-note spatial ownership. For Arrow presets: 12 Presets x 1 voice each. For Sampler presets: 12 Presets x 1 sampler each (one note per spatial position)
 6. **Music Generation**: `Sequencer` (wraps `AVAudioSequencer`, per-track `NoteHandler` routing via `setHandler(_:forTrack:)`), `MusicPattern` (multi-track generative playback using `SpatialPreset`)
 
-## Key file map
-
-- `Tones/Arrow.swift` — `Arrow11` base class, combinators (`ArrowSum`, `ArrowProd`, `ArrowConst`, `ArrowIdentity`), `AudioGate`, `LowPassFilter2`
-- `Tones/ToneGenerator.swift` — Oscillators (`Sine`, `Triangle`, `Sawtooth`, `Square`), `ArrowWithHandles`, `NoiseSmoothStep`, `Choruser`
-- `Tones/Envelope.swift` — `ADSR` envelope generator (states: closed, attack, decay, sustain, release)
-- `Tones/Performer.swift` — `NoteHandler` protocol (with `handles`), `VoiceLedger`, `MidiNote`, `MidiValue`
-- `AppleAudio/Preset.swift` — `Preset` class (`NoteHandler`, polyphonic voice management, effects chain), `PresetSyntax` (Codable JSON spec, `compile(numVoices:)`)
-- `AppleAudio/SpatialPreset.swift` — `SpatialPreset` (`NoteHandler`, spatial routing of notes to Presets via `VoiceLedger`)
-- `AppleAudio/Sampler.swift` — `Sampler` class (thin `AVAudioUnitSampler` wrapper with file loading)
-- `AppleAudio/AVAudioSourceNode+withSource.swift` — Real-time audio render callback bridging Arrow11 output to `AVAudioSourceNode`
-- `AppleAudio/SpatialAudioEngine.swift` — Audio engine with `AVAudioEnvironmentNode` for HRTF spatial audio
-- `AppleAudio/Sequencer.swift` — MIDI file playback via `AVAudioSequencer`
-- `Generators/Pattern.swift` — `MusicEvent`, `MusicPattern` (multi-track generative playback with `Track` struct)
-- `Generators/PatternSyntax.swift` — `PatternSyntax` (Codable JSON spec with `proceduralTracks`/`midiTracks`), `ProceduralTrackSyntax`, `MidiTracksSyntax`, `compile(engine:clock:)`
-- `Synths/ArrowHandler.swift` — `ArrowHandler` (`@Observable`): dynamic parameter binding from `ArrowSyntax` descriptors to `ArrowWithHandles` write-through. `ArrowParamKind`, `ArrowParamDescriptor`, `ArrowSyntax.parameterDescriptors()`
-- `Synths/SyntacticSynth.swift` — Lifecycle wrapper owning a `SpatialPreset` and `ArrowHandler`, plus rose\/effects properties
-
-## Domain knowledge
-
-- `CoreFloat` is a typealias for `Double`. All audio processing is double-precision.
-- `MAX_BUFFER_SIZE = 4096`. Scratch buffers are pre-allocated to this size. Actual render frame count is typically up to 512.
-- `ArrowWithHandles` wraps an `Arrow11` and adds string-keyed dictionaries (`namedConsts["freq"]`, `namedADSREnvelopes["ampEnv"]`, `namedBasicOscs["osc1"]`, etc.) for parameter access. Keys come from the JSON preset definition.
-- `AVAudioUnitSampler` is inherently polyphonic but has a limited (undocumented) voice count. In practice, each sampler Preset is assigned one note at a time by the spatial `VoiceLedger`, so the limit is not an issue. Retrigger (same note repeated) does stop+start via the inner `VoiceLedger`.
-- `AudioGate` wraps an Arrow graph and gates output. When `isOpen == false`, the render callback returns silence immediately with `isSilence = true`, saving all downstream processing.
-- Each `Preset` can have a `positionLFO` (a `Rose` Lissajous curve) that moves its spatial position over time. `activeNoteCount` on Preset gates whether the LFO updates run.
-- `PresetSyntax.compile(numVoices:)` creates a runtime `Preset` from a declarative JSON specification. The `numVoices` parameter controls how many Arrow voice copies are compiled internally (default 12 for standalone use, typically 1 when created by `SpatialPreset` for independent spatial routing).
-
 ## Tests
 
 The project has over 100 unit tests across files in `OrbitalTests/`, using the Swift Testing framework (`@Suite`, `@Test`, `#expect`). All suites use `.serialized` because Arrow objects have mutable scratch buffers.
 
 Tests avoid AVFoundation by using `Preset(arrowSyntax:numVoices:initEffects: false)` and working directly with `ArrowSyntax.compile()`. The `initEffects` parameter (defaults to `true`) skips creation of `AVAudioUnitReverb`/`AVAudioUnitDelay`/`AVAudioMixerNode`. Shared test utilities (`renderArrow`, `rms`, `zeroCrossings`, `loadPresetSyntax`, `makeOscArrow`) live in `ArrowDSPPipelineTests.swift`.
-
-`RunAllTests` may hang in the test host environment; run suites individually via `RunSomeTests` instead.
 
 ## Audio performance rules
 
