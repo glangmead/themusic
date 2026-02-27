@@ -9,17 +9,10 @@
     },
     "emitters": [
       {
-        "name": "chordTimer",
-        "outputType": "float",
-        "function": "randFloat",
-        "arg1": 3,
-        "arg2": 8
-      },
-      {
         "name": "octaves",
         "outputType": "octave",
         "function": "random",
-        "candidates": ["1", "1", "2", "2", "2", "3", "3", "4"]
+        "candidates": ["2", "2", "3", "3", "3", "4", "4"]
       },
       {
         "name": "overallAmpVal",
@@ -56,14 +49,14 @@
         "level": "chord",
         "operation": "markovChord",
         "n": 1,
-        "fireIntervalEmitter": "chordTimer"
+        "fireIntervalEmitter": "gap"
       }
     ],
     "noteMaterials": [
       {
         "type": "hierarchyChord",
         "name": "chords",
-        "voicing": "closed",
+        "voicing": "spread",
         "octaveEmitter": "octaves"
       }
     ],

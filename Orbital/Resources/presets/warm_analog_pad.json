@@ -1,7 +1,7 @@
 {
  "name"   : "Warm Analog Pad",
  "rose"   : {"freq": 0.15, "leafFactor": 3, "phase": 1.57, "amp": 5},
- "effects": {"reverbPreset": 8, "delayTime": 0.4, "delayLowPassCutoff": 2000, "delayFeedback": 20, "reverbWetDryMix": 70, "delayWetDryMix": 25},
+ "effects": {"reverbPreset": 8, "delayTime": 0.4, "delayLowPassCutoff": 2000, "delayFeedback": 20, "reverbWetDryMix": 90, "delayWetDryMix": 25},
  "arrow"  : {
   "compose": [
     {
