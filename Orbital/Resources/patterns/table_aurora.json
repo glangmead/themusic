@@ -91,7 +91,7 @@
       {
         "name": "Table Aurora",
         "presetFilename": "auroraBorealis",
-        "numVoices": 3,
+        "numVoices": 20,
         "presetModulatorNames": ["ampMod", "octaveAmpMod", "vibAmpMod", "vibFreqMod"],
         "noteMaterial": "melody",
         "sustainEmitter": "sustain",
