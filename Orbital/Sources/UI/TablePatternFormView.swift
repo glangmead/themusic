@@ -14,14 +14,14 @@ struct TablePatternFormView: View {
   @State private var patternName: String
   @State private var emitters: [EmitterRowState]
   @State private var noteMaterials: [NoteMaterialRowState]
-  @State private var modulators: [TableModulatorRowState]
+  @State private var presetModulators: [TableModulatorRowState]
   @State private var tracks: [TrackAssemblyRowState]
 
   init(table: TablePatternSyntax) {
     _patternName = State(initialValue: table.name)
     _emitters = State(initialValue: table.emitters.map(EmitterRowState.init))
     _noteMaterials = State(initialValue: table.noteMaterials.map(NoteMaterialRowState.init))
-    _modulators = State(initialValue: table.modulators.map(TableModulatorRowState.init))
+    _presetModulators = State(initialValue: table.presetModulators.map(TableModulatorRowState.init))
     _tracks = State(initialValue: table.tracks.map(TrackAssemblyRowState.init))
   }
 
@@ -49,14 +49,14 @@ struct TablePatternFormView: View {
         }
       }
 
-      // MARK: - Modulators
-      Section("Modulators") {
-        ForEach($modulators) { $mod in
+      // MARK: - Preset Modulators
+      Section("Preset Modulators") {
+        ForEach($presetModulators) { $mod in
           modulatorSection($mod)
         }
-        .onDelete { modulators.remove(atOffsets: $0) }
+        .onDelete { presetModulators.remove(atOffsets: $0) }
         Button("Add Modulator") {
-          modulators.append(TableModulatorRowState())
+          presetModulators.append(TableModulatorRowState())
         }
       }
 
@@ -160,49 +160,16 @@ struct TablePatternFormView: View {
   private func noteMaterialSection(_ nm: Binding<NoteMaterialRowState>) -> some View {
     DisclosureGroup {
       TextField("Name", text: nm.name)
-
-      Section("Intervals") {
-        ForEach(nm.intervalStrings.indices, id: \.self) { i in
-          TextField("Degrees (e.g. 0,2,4)", text: nm.intervalStrings[i])
-            .keyboardType(.numbersAndPunctuation)
-        }
-        .onDelete { nm.wrappedValue.intervalStrings.remove(atOffsets: $0) }
-        Button("Add Interval") {
-          nm.wrappedValue.intervalStrings.append("0")
-        }
-      }
-
-      Picker("Interval Picker", selection: nm.intervalPicker) {
-        Text("(none)").tag("")
-        ForEach(emitterNames(ofType: .int), id: \.self) { name in
-          Text(name).tag(name)
-        }
-      }
-
-      Picker("Octave Emitter", selection: nm.octaveEmitter) {
-        Text("(none)").tag("")
-        ForEach(emitterNames(ofType: .octave), id: \.self) { name in
-          Text(name).tag(name)
-        }
-      }
-
-      Picker("Scale Emitter", selection: nm.scaleEmitter) {
-        Text("(none)").tag("")
-        ForEach(emitterNames(ofType: .scale), id: \.self) { name in
-          Text(name).tag(name)
-        }
-      }
-
-      Picker("Root Emitter", selection: nm.scaleRootEmitter) {
-        Text("(none)").tag("")
-        ForEach(emitterNames(ofType: .root), id: \.self) { name in
-          Text(name).tag(name)
-        }
-      }
+      Text(nm.wrappedValue.typeName)
+        .font(.caption)
+        .foregroundStyle(.secondary)
+      Text("Edit complex note material types via JSON")
+        .font(.caption2)
+        .foregroundStyle(.tertiary)
     } label: {
       VStack(alignment: .leading, spacing: 2) {
         Text(nm.wrappedValue.name.isEmpty ? "Unnamed Material" : nm.wrappedValue.name)
-        Text(noteMaterialSummary(nm.wrappedValue))
+        Text(nm.wrappedValue.typeName)
           .font(.caption)
           .foregroundStyle(.secondary)
       }
@@ -288,7 +255,7 @@ struct TablePatternFormView: View {
         }
       }
 
-      modulatorNamesEditor(names: track.modulatorNames)
+      presetModulatorNamesEditor(names: track.presetModulatorNames)
     } label: {
       VStack(alignment: .leading, spacing: 2) {
         Text(track.wrappedValue.name.isEmpty ? "Unnamed Track" : track.wrappedValue.name)
@@ -328,8 +295,8 @@ struct TablePatternFormView: View {
     case .float:
       return [.randFloat, .exponentialRandFloat, .shuffle, .cyclic, .random, .sum, .reciprocal]
     case .int:
-      return [.randInt, .shuffle, .cyclic, .random, .indexPicker(emitter: ""), .markovChord, .fragmentPool]
-    case .root, .octave, .scale:
+      return [.randInt, .shuffle, .cyclic, .random, .indexPicker(emitter: ""), .fragmentPool]
+    case .octave:
       return [.shuffle, .cyclic, .random, .indexPicker(emitter: "")]
     }
   }
@@ -345,7 +312,6 @@ struct TablePatternFormView: View {
     case .sum: return "Sum"
     case .reciprocal: return "Reciprocal"
     case .indexPicker: return "Index Picker"
-    case .markovChord: return "Markov Chord"
     case .fragmentPool: return "Fragment Pool"
     }
   }
@@ -382,12 +348,12 @@ struct TablePatternFormView: View {
   }
 
   @ViewBuilder
-  private func modulatorNamesEditor(names: Binding<[String]>) -> some View {
-    Section("Modulators") {
+  private func presetModulatorNamesEditor(names: Binding<[String]>) -> some View {
+    Section("Preset Modulators") {
       ForEach(names.wrappedValue.indices, id: \.self) { i in
         Picker("Modulator \(i + 1)", selection: names[i]) {
           Text("(none)").tag("")
-          ForEach(modulators.map(\.name), id: \.self) { name in
+          ForEach(presetModulators.map(\.name), id: \.self) { name in
             Text(name).tag(name)
           }
         }
@@ -418,16 +384,6 @@ struct TablePatternFormView: View {
     if case .waiting(let e) = emitter.updateMode {
       parts.append("waiting: \(e)")
     }
-    return parts.joined(separator: " · ")
-  }
-
-  private func noteMaterialSummary(_ nm: NoteMaterialRowState) -> String {
-    var parts: [String] = []
-    let count = nm.intervalStrings.filter { !$0.isEmpty }.count
-    parts.append("\(count) interval\(count == 1 ? "" : "s")")
-    if !nm.intervalPicker.isEmpty { parts.append("picker: \(nm.intervalPicker)") }
-    if !nm.scaleEmitter.isEmpty { parts.append("scale: \(nm.scaleEmitter)") }
-    if !nm.scaleRootEmitter.isEmpty { parts.append("root: \(nm.scaleRootEmitter)") }
     return parts.joined(separator: " · ")
   }
 
@@ -471,7 +427,7 @@ struct TablePatternFormView: View {
       name: patternName,
       emitters: emitters.map { $0.toSyntax() },
       noteMaterials: noteMaterials.map { $0.toSyntax() },
-      modulators: modulators.map { $0.toSyntax() },
+      presetModulators: presetModulators.map { $0.toSyntax() },
       tracks: tracks.map { $0.toSyntax() }
     )
   }

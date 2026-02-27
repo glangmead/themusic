@@ -464,30 +464,36 @@ class IndexPickerIterator<Element>: Sequence, IteratorProtocol {
   }
 }
 
-// MARK: - TableNoteGenerator
+// MARK: - ScaleMaterialGenerator
 
-/// Generates [MidiNote] from table-based note material.
-/// On each next(), picks an interval entry (single degree or chord),
-/// resolves each degree against the current scale/root/octave to produce MIDI notes.
-struct TableNoteGenerator: Sequence, IteratorProtocol {
-  let intervalMaterial: [[Int]]
+/// Generates [MidiNote] from scale-degree–based note material with a fixed scale and root.
+///
+/// Two modes:
+/// - `intervals` nil: the picker emitter emits scale degree values directly (e.g. fragmentPool).
+///   Each call produces a single note.
+/// - `intervals` present: the picker emits an index into the intervals array.
+///   Each entry may be a single degree (melody) or multiple degrees (chord).
+struct ScaleMaterialGenerator: Sequence, IteratorProtocol {
+  let scale: Scale
+  let root: NoteClass
+  /// When non-nil, each entry is a list of degrees; picker emits an index into this array.
+  /// When nil, picker emits degree values directly and each call produces one note.
+  let intervals: [[Int]]?
   var intervalPicker: any IteratorProtocol<Int>
-  var scaleEmitter: any IteratorProtocol<Scale>
-  var rootEmitter: any IteratorProtocol<NoteClass>
   var octaveEmitter: any IteratorProtocol<Int>
 
   mutating func next() -> [MidiNote]? {
-    guard !intervalMaterial.isEmpty else { return nil }
-    guard let idx = intervalPicker.next() else { return nil }
-    let clamped = Swift.max(0, Swift.min(idx, intervalMaterial.count - 1))
-    let degrees = intervalMaterial[clamped]
-    print("selecting from \(intervalMaterial): \(degrees)")
-
-    guard let scale = scaleEmitter.next() else { return nil }
-    guard let root = rootEmitter.next() else { return nil }
     guard let octave = octaveEmitter.next() else { return nil }
 
-    let rootNote = Note(root.letter, accidental: root.accidental, octave: octave)
+    let degrees: [Int]
+    if let intervals {
+      guard let idx = intervalPicker.next() else { return nil }
+      let clamped = Swift.max(0, Swift.min(idx, intervals.count - 1))
+      degrees = intervals[clamped]
+    } else {
+      guard let degree = intervalPicker.next() else { return nil }
+      degrees = [degree]
+    }
 
     let scaleSize = scale.intervals.count
     var notes: [MidiNote] = []
@@ -505,6 +511,70 @@ struct TableNoteGenerator: Sequence, IteratorProtocol {
       }
     }
     return notes.isEmpty ? nil : notes
+  }
+}
+
+// MARK: - HierarchyChordGenerator
+
+/// Generates [MidiNote] from the shared hierarchy's current voiced chord.
+/// Called on every event tick — the chord reflects whatever the hierarchy holds at that moment.
+struct HierarchyChordGenerator: Sequence, IteratorProtocol {
+  let hierarchy: PitchHierarchy
+  let voicing: VoicingStyle
+  let baseOctave: Int
+
+  func next() -> [MidiNote]? {
+    let midis = hierarchy.voicedMidi(voicing: voicing, baseOctave: baseOctave)
+    guard !midis.isEmpty else { return nil }
+    return midis.map { MidiNote(note: MidiValue($0), velocity: 127) }
+  }
+}
+
+// MARK: - HierarchyBassGenerator
+
+/// Generates a single [MidiNote] — the hierarchy's inversion-determined lowest degree.
+struct HierarchyBassGenerator: Sequence, IteratorProtocol {
+  let hierarchy: PitchHierarchy
+  let baseOctave: Int
+
+  func next() -> [MidiNote]? {
+    guard let midi = hierarchy.bassMidi(baseOctave: baseOctave) else { return nil }
+    return [MidiNote(note: MidiValue(midi), velocity: 127)]
+  }
+}
+
+// MARK: - HierarchyMelodyGenerator
+
+/// Generates single-note melodies by resolving MelodyNotes through the shared hierarchy.
+/// The `level` parameter controls whether resolution uses the chord layer or scale layer.
+struct HierarchyMelodyGenerator: Sequence, IteratorProtocol {
+  let hierarchy: PitchHierarchy
+  let level: HierarchyLevel
+  var picker: any IteratorProtocol<MelodyNote>
+  var octaveEmitter: any IteratorProtocol<Int>
+
+  init(
+    hierarchy: PitchHierarchy,
+    level: HierarchyLevel,
+    melodyNotes: [MelodyNote],
+    ordering: String,
+    octaveEmitter: any IteratorProtocol<Int>
+  ) {
+    self.hierarchy = hierarchy
+    self.level = level
+    self.octaveEmitter = octaveEmitter
+    switch ordering {
+    case "shuffle": self.picker = melodyNotes.shuffledIterator()
+    case "random":  self.picker = melodyNotes.randomIterator()
+    default:        self.picker = melodyNotes.cyclicIterator()  // "cyclic" default
+    }
+  }
+
+  mutating func next() -> [MidiNote]? {
+    guard let note = picker.next() else { return nil }
+    guard let octave = octaveEmitter.next() else { return nil }
+    guard let midi = hierarchy.resolve(note, at: level, octave: octave) else { return nil }
+    return [MidiNote(note: MidiValue(midi), velocity: 127)]
   }
 }
 

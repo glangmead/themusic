@@ -10,18 +10,6 @@
         "candidates": ["0", "1", "2", "3"]
       },
       {
-        "name": "scales",
-        "outputType": "scale",
-        "function": "cyclic",
-        "candidates": ["major"]
-      },
-      {
-        "name": "roots",
-        "outputType": "root",
-        "function": "cyclic",
-        "candidates": ["C"]
-      },
-      {
         "name": "octaves",
         "outputType": "octave",
         "function": "cyclic",
@@ -43,21 +31,22 @@
     ],
     "noteMaterials": [
       {
+        "type": "scaleMaterial",
         "name": "pulse",
-        "intervalMaterial": [[0], [2], [4], [0, 2, 4]],
-        "intervalPicker": "degreePicker",
-        "octaveEmitter": "octaves",
-        "scaleEmitter": "scales",
-        "scaleRootEmitter": "roots"
+        "root": "C",
+        "scale": "major",
+        "intervals": [[0], [2], [4], [0, 2, 4]],
+        "intervalPickerEmitter": "degreePicker",
+        "octaveEmitter": "octaves"
       }
     ],
-    "modulators": [],
+    "presetModulators": [],
     "tracks": [
       {
         "name": "Minimal Pulse",
         "presetFilename": "sine",
         "numVoices": 12,
-        "modulatorNames": [],
+        "presetModulatorNames": [],
         "noteMaterial": "pulse",
         "sustainEmitter": "sustain",
         "gapEmitter": "gap"

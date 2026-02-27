@@ -46,27 +46,27 @@ struct TopologicalSortTests {
   @Test("IndexPicker dependency is respected")
   func indexPickerDependency() throws {
     let emitters = [
-      EmitterRowSyntax(name: "Roots", outputType: .root, function: .indexPicker(emitter: "Picker"),
-                       candidates: ["C", "E", "G"]),
+      EmitterRowSyntax(name: "Values", outputType: .int, function: .indexPicker(emitter: "Picker"),
+                       candidates: ["0", "1", "2"]),
       EmitterRowSyntax(name: "Picker", outputType: .int, function: .randInt, arg1: 0, arg2: 2),
     ]
     let sorted = try TablePatternCompiler.topologicalSort(emitters)
-    let rootsIdx = sorted.firstIndex(of: "Roots")!
+    let valuesIdx = sorted.firstIndex(of: "Values")!
     let pickerIdx = sorted.firstIndex(of: "Picker")!
-    #expect(pickerIdx < rootsIdx)
+    #expect(pickerIdx < valuesIdx)
   }
 
   @Test("Waiting dependency is respected")
   func waitingDependency() throws {
     let emitters = [
-      EmitterRowSyntax(name: "Roots", outputType: .root, function: .cyclic,
-                       candidates: ["C", "E"], updateMode: .waiting(emitter: "Timer")),
+      EmitterRowSyntax(name: "Degrees", outputType: .int, function: .cyclic,
+                       candidates: ["0", "2", "4"], updateMode: .waiting(emitter: "Timer")),
       EmitterRowSyntax(name: "Timer", outputType: .float, function: .randFloat, arg1: 5, arg2: 10),
     ]
     let sorted = try TablePatternCompiler.topologicalSort(emitters)
-    let rootsIdx = sorted.firstIndex(of: "Roots")!
+    let degreesIdx = sorted.firstIndex(of: "Degrees")!
     let timerIdx = sorted.firstIndex(of: "Timer")!
-    #expect(timerIdx < rootsIdx)
+    #expect(timerIdx < degreesIdx)
   }
 
   @Test("Cyclic dependency throws error")
@@ -231,13 +231,13 @@ struct RuntimePrimitiveTests {
 @Suite("Table Pattern Note Material", .serialized)
 struct NoteMaterialTests {
 
-  @Test("TableNoteGenerator produces single-note melodies")
+  @Test("ScaleMaterialGenerator produces single-note melodies (intervals mode)")
   func singleNoteMelody() {
-    var gen = TableNoteGenerator(
-      intervalMaterial: [[0], [1], [2], [3], [4], [5], [6]],
+    var gen = ScaleMaterialGenerator(
+      scale: Scale.major,
+      root: NoteClass.C,
+      intervals: [[0], [1], [2], [3], [4], [5], [6]],
       intervalPicker: [0, 1, 2].cyclicIterator(),
-      scaleEmitter: [Scale.major].cyclicIterator(),
-      rootEmitter: [NoteClass.C].cyclicIterator(),
       octaveEmitter: [4].cyclicIterator()
     )
 
@@ -249,13 +249,13 @@ struct NoteMaterialTests {
     }
   }
 
-  @Test("TableNoteGenerator produces chords from multi-degree intervals")
+  @Test("ScaleMaterialGenerator produces chords from multi-degree intervals")
   func chordGeneration() {
-    var gen = TableNoteGenerator(
-      intervalMaterial: [[0, 2, 4]], // single chord: root, third, fifth
+    var gen = ScaleMaterialGenerator(
+      scale: Scale.major,
+      root: NoteClass.C,
+      intervals: [[0, 2, 4]], // single chord: root, third, fifth
       intervalPicker: [0].cyclicIterator(),
-      scaleEmitter: [Scale.major].cyclicIterator(),
-      rootEmitter: [NoteClass.C].cyclicIterator(),
       octaveEmitter: [4].cyclicIterator()
     )
 
@@ -269,38 +269,53 @@ struct NoteMaterialTests {
     #expect(pitches[2] == 79, "Fifth should be G4 (79), got \(pitches[2])")
   }
 
-  @Test("TableNoteGenerator respects changing root")
-  func changingRoot() {
-    var gen = TableNoteGenerator(
-      intervalMaterial: [[0]], // just the root degree
-      intervalPicker: [0].cyclicIterator(),
-      scaleEmitter: [Scale.major].cyclicIterator(),
-      rootEmitter: [NoteClass.C, NoteClass.E, NoteClass.G].cyclicIterator(),
+  @Test("ScaleMaterialGenerator in fragment-pool mode (intervals nil) emits degrees directly")
+  func fragmentPoolMode() {
+    // intervals = nil: picker emits degrees directly, each call = one note
+    var gen = ScaleMaterialGenerator(
+      scale: Scale.major,
+      root: NoteClass.C,
+      intervals: nil,
+      intervalPicker: [0, 2, 4].cyclicIterator(), // degrees: C, E, G
       octaveEmitter: [4].cyclicIterator()
     )
 
-    let note1 = gen.next()![0] // C4
-    let note2 = gen.next()![0] // E4
-    let note3 = gen.next()![0] // G4
-    #expect(note1.note != note2.note, "Different roots should produce different notes")
-    #expect(note2.note != note3.note, "Different roots should produce different notes")
-    #expect(Int(note1.note) == 72, "C4 = 72 (Tonic convention)")
-    #expect(Int(note2.note) == 76, "E4 = 76 (Tonic convention)")
-    #expect(Int(note3.note) == 79, "G4 = 79 (Tonic convention)")
+    let note1 = gen.next()![0]  // degree 0 = C4 = 72
+    let note2 = gen.next()![0]  // degree 2 = E4 = 76
+    let note3 = gen.next()![0]  // degree 4 = G4 = 79
+    #expect(Int(note1.note) == 72, "Degree 0 in C major = C4 (72)")
+    #expect(Int(note2.note) == 76, "Degree 2 in C major = E4 (76)")
+    #expect(Int(note3.note) == 79, "Degree 4 in C major = G4 (79)")
   }
 
-  @Test("TableNoteGenerator clamps out-of-range degree index")
+  @Test("ScaleMaterialGenerator clamps out-of-range interval index")
   func clampsDegreeIndex() {
-    var gen = TableNoteGenerator(
-      intervalMaterial: [[0], [2], [4]],
+    var gen = ScaleMaterialGenerator(
+      scale: Scale.major,
+      root: NoteClass.C,
+      intervals: [[0], [2], [4]],
       intervalPicker: [99].cyclicIterator(), // way out of range
-      scaleEmitter: [Scale.major].cyclicIterator(),
-      rootEmitter: [NoteClass.C].cyclicIterator(),
       octaveEmitter: [4].cyclicIterator()
     )
 
     let notes = gen.next()!
     #expect(notes.count == 1, "Should still produce a note despite clamped index")
+  }
+
+  @Test("ScaleMaterialGenerator handles octave-spanning degrees")
+  func octaveSpanning() {
+    // chromatic scale: degree 12 = one octave up
+    var gen = ScaleMaterialGenerator(
+      scale: Scale.chromatic,
+      root: NoteClass.C,
+      intervals: nil,
+      intervalPicker: [0, 12].cyclicIterator(),
+      octaveEmitter: [4].cyclicIterator()
+    )
+
+    let base = gen.next()![0]   // degree 0 = C4 = 72
+    let upper = gen.next()![0]  // degree 12 = C5 = 84
+    #expect(Int(upper.note) - Int(base.note) == 12, "Degree 12 should be exactly one octave up")
   }
 }
 
@@ -378,26 +393,51 @@ struct CodableTests {
     #expect(decoded.updateMode == .each, "Default updateMode should be .each")
   }
 
-  @Test("NoteMaterialRowSyntax round-trips")
-  func noteMaterialRoundTrip() throws {
-    let row = NoteMaterialRowSyntax(
+  @Test("ScaleMaterialSyntax round-trips via NoteMaterialSyntax")
+  func scaleMaterialRoundTrip() throws {
+    let inner = ScaleMaterialSyntax(
       name: "melody",
-      intervalMaterial: [[0], [1], [0, 2, 4]],
-      intervalPicker: "picker",
-      octaveEmitter: "oct",
-      scaleEmitter: "scale",
-      scaleRootEmitter: "root"
+      root: "C",
+      scale: "lydian",
+      intervals: [[0], [1], [0, 2, 4]],
+      intervalPickerEmitter: "picker",
+      octaveEmitter: "oct"
     )
+    let noteMat = NoteMaterialSyntax.scaleMaterial(inner)
     let encoder = JSONEncoder()
     let decoder = JSONDecoder()
-    let data = try encoder.encode(row)
-    let decoded = try decoder.decode(NoteMaterialRowSyntax.self, from: data)
-    #expect(decoded.name == row.name)
-    #expect(decoded.intervalMaterial == row.intervalMaterial)
-    #expect(decoded.intervalPicker == row.intervalPicker)
-    #expect(decoded.octaveEmitter == row.octaveEmitter)
-    #expect(decoded.scaleEmitter == row.scaleEmitter)
-    #expect(decoded.scaleRootEmitter == row.scaleRootEmitter)
+    let data = try encoder.encode(noteMat)
+    let decoded = try decoder.decode(NoteMaterialSyntax.self, from: data)
+    guard case .scaleMaterial(let decodedInner) = decoded else {
+      Issue.record("Should decode as .scaleMaterial")
+      return
+    }
+    #expect(decodedInner.name == inner.name)
+    #expect(decodedInner.root == inner.root)
+    #expect(decodedInner.scale == inner.scale)
+    #expect(decodedInner.intervals == inner.intervals)
+    #expect(decodedInner.intervalPickerEmitter == inner.intervalPickerEmitter)
+    #expect(decodedInner.octaveEmitter == inner.octaveEmitter)
+  }
+
+  @Test("ScaleMaterialSyntax round-trips with nil intervals")
+  func scaleMaterialNilIntervals() throws {
+    let inner = ScaleMaterialSyntax(
+      name: "fragMelody",
+      root: "A",
+      scale: "chromatic",
+      intervals: nil,
+      intervalPickerEmitter: "pool",
+      octaveEmitter: "oct"
+    )
+    let noteMat = NoteMaterialSyntax.scaleMaterial(inner)
+    let data = try JSONEncoder().encode(noteMat)
+    let decoded = try JSONDecoder().decode(NoteMaterialSyntax.self, from: data)
+    guard case .scaleMaterial(let d) = decoded else {
+      Issue.record("Should decode as .scaleMaterial")
+      return
+    }
+    #expect(d.intervals == nil, "nil intervals should remain nil after round-trip")
   }
 
   @Test("TablePatternSyntax full round-trip")
@@ -409,20 +449,18 @@ struct CodableTests {
         EmitterRowSyntax(name: "sustain", outputType: .float, function: .randFloat, arg1: 1, arg2: 3),
         EmitterRowSyntax(name: "picker", outputType: .int, function: .randInt, arg1: 0, arg2: 2),
         EmitterRowSyntax(name: "oct", outputType: .octave, function: .random, candidates: ["3", "4"]),
-        EmitterRowSyntax(name: "scale", outputType: .scale, function: .cyclic, candidates: ["lydian"]),
-        EmitterRowSyntax(name: "root", outputType: .root, function: .cyclic, candidates: ["C"]),
       ],
       noteMaterials: [
-        NoteMaterialRowSyntax(
+        NoteMaterialSyntax.scaleMaterial(ScaleMaterialSyntax(
           name: "melody",
-          intervalMaterial: [[0], [1], [2]],
-          intervalPicker: "picker",
-          octaveEmitter: "oct",
-          scaleEmitter: "scale",
-          scaleRootEmitter: "root"
-        )
+          root: "C",
+          scale: "lydian",
+          intervals: [[0], [1], [2]],
+          intervalPickerEmitter: "picker",
+          octaveEmitter: "oct"
+        ))
       ],
-      modulators: [],
+      presetModulators: [],
       tracks: [
         TrackAssemblyRowSyntax(
           name: "Track 0",
@@ -441,7 +479,7 @@ struct CodableTests {
     #expect(decoded.name == table.name)
     #expect(decoded.emitters.count == table.emitters.count)
     #expect(decoded.noteMaterials.count == table.noteMaterials.count)
-    #expect(decoded.modulators.count == table.modulators.count)
+    #expect(decoded.presetModulators.count == table.presetModulators.count)
     #expect(decoded.tracks.count == table.tracks.count)
     #expect(decoded.tracks[0].presetFilename == "auroraBorealis")
   }
@@ -647,12 +685,10 @@ struct ArrowModulatorTests {
     let pattern = try loadFixturePattern("table_aurora.json")
     let table = try #require(pattern.tableTracks)
     // Find the arrow-based modulator
-    let octaveMod = table.modulators.first(where: { $0.name == "octaveAmpMod" })
+    let octaveMod = table.presetModulators.first(where: { $0.name == "octaveAmpMod" })
     #expect(octaveMod != nil, "Should find octaveAmpMod modulator")
     #expect(octaveMod?.arrow != nil, "octaveAmpMod should have an arrow")
     #expect(octaveMod?.floatEmitter == nil, "octaveAmpMod should not have a floatEmitter")
     #expect(octaveMod?.targetHandle == "overallAmp2")
   }
 }
-
-

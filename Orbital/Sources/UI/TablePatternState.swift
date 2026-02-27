@@ -97,55 +97,45 @@ struct EmitterRowState: Identifiable, Equatable {
 
 // MARK: - Note Material Row State
 
+/// A lightweight state wrapper for a NoteMaterialSyntax entry.
+/// The note material type is shown for reference; deep editing of hierarchy types
+/// is handled via JSON editing rather than in-form controls.
 struct NoteMaterialRowState: Identifiable, Equatable {
   let id: UUID
   var name: String
-  /// Each entry as a comma-separated string for editing (e.g. "0,2,4").
-  var intervalStrings: [String]
-  var intervalPicker: String
-  var octaveEmitter: String
-  var scaleEmitter: String
-  var scaleRootEmitter: String
+  /// The full syntax, preserved for round-tripping.
+  var syntax: NoteMaterialSyntax
 
-  init(from syntax: NoteMaterialRowSyntax) {
-    id = syntax.id
-    name = syntax.name
-    intervalStrings = syntax.intervalMaterial.map { degrees in
-      degrees.map(String.init).joined(separator: ",")
+  var typeName: String {
+    switch syntax {
+    case .scaleMaterial:   return "Scale Material"
+    case .hierarchyMelody: return "Hierarchy Melody"
+    case .hierarchyChord:  return "Hierarchy Chord"
+    case .hierarchyBass:   return "Hierarchy Bass"
     }
-    intervalPicker = syntax.intervalPicker
-    octaveEmitter = syntax.octaveEmitter
-    scaleEmitter = syntax.scaleEmitter
-    scaleRootEmitter = syntax.scaleRootEmitter
+  }
+
+  init(from syntax: NoteMaterialSyntax) {
+    self.id = syntax.id
+    self.name = syntax.name
+    self.syntax = syntax
   }
 
   init() {
-    id = UUID()
-    name = ""
-    intervalStrings = ["0"]
-    intervalPicker = ""
-    octaveEmitter = ""
-    scaleEmitter = ""
-    scaleRootEmitter = ""
+    let defaultSyntax = NoteMaterialSyntax.scaleMaterial(
+      ScaleMaterialSyntax(name: "", root: "C", scale: "major", intervalPickerEmitter: "", octaveEmitter: "")
+    )
+    self.id = defaultSyntax.id
+    self.name = ""
+    self.syntax = defaultSyntax
   }
 
-  func toSyntax() -> NoteMaterialRowSyntax {
-    let material = intervalStrings.map { str in
-      str.split(separator: ",").compactMap { Int($0.trimmingCharacters(in: .whitespaces)) }
-    }.filter { !$0.isEmpty }
-    return NoteMaterialRowSyntax(
-      id: id,
-      name: name,
-      intervalMaterial: material.isEmpty ? [[0]] : material,
-      intervalPicker: intervalPicker,
-      octaveEmitter: octaveEmitter,
-      scaleEmitter: scaleEmitter,
-      scaleRootEmitter: scaleRootEmitter
-    )
+  func toSyntax() -> NoteMaterialSyntax {
+    syntax
   }
 }
 
-// MARK: - Modulator Row State
+// MARK: - Preset Modulator Row State
 
 enum ModulatorSourceKind: String, CaseIterable {
   case floatEmitter = "Float Emitter"
@@ -180,7 +170,7 @@ struct TableModulatorRowState: Identifiable, Equatable {
     }
   }
 
-  init(from syntax: ModulatorRowSyntax) {
+  init(from syntax: PresetModulatorRowSyntax) {
     id = syntax.id
     name = syntax.name
     targetHandle = syntax.targetHandle
@@ -202,14 +192,14 @@ struct TableModulatorRowState: Identifiable, Equatable {
     quickExpressionText = ""
   }
 
-  func toSyntax() -> ModulatorRowSyntax {
+  func toSyntax() -> PresetModulatorRowSyntax {
     let resolvedArrow: ArrowSyntax?
     if !quickExpressionText.isEmpty {
       resolvedArrow = .quickExpression(quickExpressionText)
     } else {
       resolvedArrow = arrow
     }
-    return ModulatorRowSyntax(
+    return PresetModulatorRowSyntax(
       id: id,
       name: name,
       targetHandle: targetHandle,
@@ -226,7 +216,7 @@ struct TrackAssemblyRowState: Identifiable, Equatable {
   var name: String
   var presetFilename: String
   var numVoices: Int
-  var modulatorNames: [String]
+  var presetModulatorNames: [String]
   var noteMaterial: String
   var sustainEmitter: String
   var gapEmitter: String
@@ -236,7 +226,7 @@ struct TrackAssemblyRowState: Identifiable, Equatable {
     name = syntax.name
     presetFilename = syntax.presetFilename
     numVoices = syntax.numVoices ?? 12
-    modulatorNames = syntax.modulatorNames
+    presetModulatorNames = syntax.presetModulatorNames
     noteMaterial = syntax.noteMaterial
     sustainEmitter = syntax.sustainEmitter
     gapEmitter = syntax.gapEmitter
@@ -247,7 +237,7 @@ struct TrackAssemblyRowState: Identifiable, Equatable {
     name = ""
     presetFilename = ""
     numVoices = 12
-    modulatorNames = []
+    presetModulatorNames = []
     noteMaterial = ""
     sustainEmitter = ""
     gapEmitter = ""
@@ -259,7 +249,7 @@ struct TrackAssemblyRowState: Identifiable, Equatable {
       name: name,
       presetFilename: presetFilename,
       numVoices: numVoices,
-      modulatorNames: modulatorNames,
+      presetModulatorNames: presetModulatorNames,
       noteMaterial: noteMaterial,
       sustainEmitter: sustainEmitter,
       gapEmitter: gapEmitter

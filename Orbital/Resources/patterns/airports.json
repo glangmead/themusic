@@ -11,7 +11,7 @@
           [5,7,4,2,0,12,7,5,7,4,2,0],
           [5,7,4,2,0,12,4,7,5,0],
           [-5,2,0,4,7,12,5,2,7,4,0,7,2,5,5,2,4,0],
-          [7,7,2,4,4,4,2,0,7,0,0],
+          [7,7,2,4,4,4,2,0,7,0,0]
         ]
       },
       {
@@ -19,18 +19,6 @@
         "outputType": "octave",
         "function": "random",
         "candidates": ["3"]
-      },
-      {
-        "name": "melodyScales",
-        "outputType": "scale",
-        "function": "cyclic",
-        "candidates": ["chromatic"]
-      },
-      {
-        "name": "melodyRoot",
-        "outputType": "root",
-        "function": "cyclic",
-        "candidates": ["A"]
       },
       {
         "name": "melodySustain",
@@ -66,18 +54,6 @@
         "candidates": ["3", "3", "4", "4"]
       },
       {
-        "name": "chordScales",
-        "outputType": "scale",
-        "function": "cyclic",
-        "candidates": ["major"]
-      },
-      {
-        "name": "chordRoot",
-        "outputType": "root",
-        "function": "cyclic",
-        "candidates": ["A"]
-      },
-      {
         "name": "chordSustain",
         "outputType": "float",
         "function": "randFloat",
@@ -102,18 +78,6 @@
         "outputType": "octave",
         "function": "random",
         "candidates": ["2", "2", "2", "3"]
-      },
-      {
-        "name": "bassScales",
-        "outputType": "scale",
-        "function": "cyclic",
-        "candidates": ["major"]
-      },
-      {
-        "name": "bassRoot",
-        "outputType": "root",
-        "function": "cyclic",
-        "candidates": ["A"]
       },
       {
         "name": "bassSustain",
@@ -153,31 +117,33 @@
     ],
     "noteMaterials": [
       {
+        "type": "scaleMaterial",
         "name": "melody",
-        "intervalMaterial": [[0], [1], [2], [3], [4], [5], [6], [7], [8], [9], [10], [11]],
-        "intervalPicker": "melodyDegreePicker",
-        "octaveEmitter": "melodyOctaves",
-        "scaleEmitter": "melodyScales",
-        "scaleRootEmitter": "melodyRoot"
+        "root": "A",
+        "scale": "chromatic",
+        "intervalPickerEmitter": "melodyDegreePicker",
+        "octaveEmitter": "melodyOctaves"
       },
       {
+        "type": "scaleMaterial",
         "name": "chords",
-        "intervalMaterial": [[0,4,7,12], [4,7,11,16], [-3,0,4,7], [-3,0,5,9]],
-        "intervalPicker": "chordDegreePicker",
-        "octaveEmitter": "chordOctaves",
-        "scaleEmitter": "chordScales",
-        "scaleRootEmitter": "chordRoot"
+        "root": "A",
+        "scale": "major",
+        "intervals": [[0,4,7,12], [4,7,11,16], [-3,0,4,7], [-3,0,5,9]],
+        "intervalPickerEmitter": "chordDegreePicker",
+        "octaveEmitter": "chordOctaves"
       },
       {
+        "type": "scaleMaterial",
         "name": "bassNotes",
-        "intervalMaterial": [[0]],
-        "intervalPicker": "bassDegreePicker",
-        "octaveEmitter": "bassOctaves",
-        "scaleEmitter": "bassScales",
-        "scaleRootEmitter": "bassRoot"
+        "root": "A",
+        "scale": "major",
+        "intervals": [[0]],
+        "intervalPickerEmitter": "bassDegreePicker",
+        "octaveEmitter": "bassOctaves"
       }
     ],
-    "modulators": [
+    "presetModulators": [
       {
         "name": "melodyAmpMod",
         "targetHandle": "overallAmp",
@@ -199,16 +165,16 @@
         "name": "Piano",
         "presetFilename": "airports_piano_mix",
         "numVoices": 6,
-        "modulatorNames": ["melodyAmpMod"],
+        "presetModulatorNames": ["melodyAmpMod"],
         "noteMaterial": "melody",
         "sustainEmitter": "melodySustain",
         "gapEmitter": "melodyGap"
       },
       {
-        "name": "Bass",
+        "name": "Chords",
         "presetFilename": "warm_analog_pad",
         "numVoices": 6,
-        "modulatorNames": ["chordAmpMod"],
+        "presetModulatorNames": ["chordAmpMod"],
         "noteMaterial": "chords",
         "sustainEmitter": "chordSustain",
         "gapEmitter": "chordGap"
@@ -217,7 +183,7 @@
         "name": "Bass",
         "presetFilename": "warm_analog_pad",
         "numVoices": 3,
-        "modulatorNames": ["bassAmpMod"],
+        "presetModulatorNames": ["bassAmpMod"],
         "noteMaterial": "bassNotes",
         "sustainEmitter": "bassSustain",
         "gapEmitter": "bassGap"

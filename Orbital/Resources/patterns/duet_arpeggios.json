@@ -4,37 +4,10 @@
     "name": "Duet Arpeggios",
     "emitters": [
       {
-        "name": "t1Timer",
-        "outputType": "float",
-        "function": "randFloat",
-        "arg1": 12,
-        "arg2": 20
-      },
-      {
-        "name": "t1RootPicker",
-        "outputType": "int",
-        "function": "randInt",
-        "arg1": 0,
-        "arg2": 1
-      },
-      {
-        "name": "t1Roots",
-        "outputType": "root",
-        "function": { "indexPicker": { "emitter": "t1RootPicker" } },
-        "candidates": ["C", "G"],
-        "updateMode": { "waiting": { "emitter": "t1Timer" } }
-      },
-      {
         "name": "t1Octaves",
         "outputType": "octave",
         "function": "random",
         "candidates": ["3", "3", "4", "4", "4", "5", "5"]
-      },
-      {
-        "name": "t1Scales",
-        "outputType": "scale",
-        "function": "cyclic",
-        "candidates": ["lydian"]
       },
       {
         "name": "t1Degrees",
@@ -64,37 +37,10 @@
         "arg2": 0.6
       },
       {
-        "name": "t2Timer",
-        "outputType": "float",
-        "function": "randFloat",
-        "arg1": 12,
-        "arg2": 20
-      },
-      {
-        "name": "t2RootPicker",
-        "outputType": "int",
-        "function": "randInt",
-        "arg1": 0,
-        "arg2": 1
-      },
-      {
-        "name": "t2Roots",
-        "outputType": "root",
-        "function": { "indexPicker": { "emitter": "t2RootPicker" } },
-        "candidates": ["C", "G"],
-        "updateMode": { "waiting": { "emitter": "t2Timer" } }
-      },
-      {
         "name": "t2Octaves",
         "outputType": "octave",
         "function": "random",
         "candidates": ["2", "2", "3", "3"]
-      },
-      {
-        "name": "t2Scales",
-        "outputType": "scale",
-        "function": "cyclic",
-        "candidates": ["dorian"]
       },
       {
         "name": "t2Degrees",
@@ -126,23 +72,25 @@
     ],
     "noteMaterials": [
       {
+        "type": "scaleMaterial",
         "name": "t1Melody",
-        "intervalMaterial": [[0], [1], [2], [3], [4], [5], [6]],
-        "intervalPicker": "t1Degrees",
-        "octaveEmitter": "t1Octaves",
-        "scaleEmitter": "t1Scales",
-        "scaleRootEmitter": "t1Roots"
+        "root": "C",
+        "scale": "lydian",
+        "intervals": [[0], [1], [2], [3], [4], [5], [6]],
+        "intervalPickerEmitter": "t1Degrees",
+        "octaveEmitter": "t1Octaves"
       },
       {
+        "type": "scaleMaterial",
         "name": "t2Melody",
-        "intervalMaterial": [[0], [2], [4], [6]],
-        "intervalPicker": "t2Degrees",
-        "octaveEmitter": "t2Octaves",
-        "scaleEmitter": "t2Scales",
-        "scaleRootEmitter": "t2Roots"
+        "root": "C",
+        "scale": "dorian",
+        "intervals": [[0], [2], [4], [6]],
+        "intervalPickerEmitter": "t2Degrees",
+        "octaveEmitter": "t2Octaves"
       }
     ],
-    "modulators": [
+    "presetModulators": [
       {
         "name": "t1AmpMod",
         "targetHandle": "overallAmp",
@@ -159,7 +107,7 @@
         "name": "Lydian Shimmer",
         "presetFilename": "auroraBorealis",
         "numVoices": 16,
-        "modulatorNames": ["t1AmpMod"],
+        "presetModulatorNames": ["t1AmpMod"],
         "noteMaterial": "t1Melody",
         "sustainEmitter": "t1Sustain",
         "gapEmitter": "t1Gap"
@@ -168,7 +116,7 @@
         "name": "Dorian Bass",
         "presetFilename": "prophet_brass",
         "numVoices": 8,
-        "modulatorNames": ["t2AmpMod"],
+        "presetModulatorNames": ["t2AmpMod"],
         "noteMaterial": "t2Melody",
         "sustainEmitter": "t2Sustain",
         "gapEmitter": "t2Gap"

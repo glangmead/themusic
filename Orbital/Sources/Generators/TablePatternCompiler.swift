@@ -13,7 +13,7 @@ import Tonic
 
 /// Type-erased wrapper holding a compiled emitter's iterator and metadata.
 /// The iterator is stored as `Any` because emitters produce different types
-/// (CoreFloat, Int, Scale, NoteClass) depending on their outputType.
+/// (CoreFloat, Int) depending on their outputType.
 final class CompiledEmitter {
   let outputType: EmitterOutputType
   /// The underlying iterator, type-erased. Callers must cast based on outputType.
@@ -39,14 +39,6 @@ final class CompiledEmitter {
   func intIterator() -> (any IteratorProtocol<Int>)? {
     iterator as? any IteratorProtocol<Int>
   }
-
-  func scaleIterator() -> (any IteratorProtocol<Scale>)? {
-    iterator as? any IteratorProtocol<Scale>
-  }
-
-  func rootIterator() -> (any IteratorProtocol<NoteClass>)? {
-    iterator as? any IteratorProtocol<NoteClass>
-  }
 }
 
 // MARK: - Compile Errors
@@ -57,7 +49,7 @@ enum TableCompileError: Error, CustomStringConvertible {
   case typeMismatch(emitter: String, expected: EmitterOutputType, got: EmitterOutputType)
   case unknownNoteMaterial(name: String, referencedBy: String)
   case unknownModulator(name: String, referencedBy: String)
-  case emptyIntervalMaterial(noteMaterial: String)
+  case missingHierarchy(referencedBy: String)
 
   var description: String {
     switch self {
@@ -71,8 +63,8 @@ enum TableCompileError: Error, CustomStringConvertible {
       return "Unknown note material '\(name)' referenced by track '\(ref)'"
     case .unknownModulator(let name, let ref):
       return "Unknown modulator '\(name)' referenced by track '\(ref)'"
-    case .emptyIntervalMaterial(let name):
-      return "Note material '\(name)' has empty interval material"
+    case .missingHierarchy(let ref):
+      return "Note material '\(ref)' requires a hierarchy, but none is defined in the pattern"
     }
   }
 }
@@ -101,27 +93,39 @@ enum TablePatternCompiler {
       compiledEmitters[name] = emitter
     }
 
-    // 3. Compile note materials
+    // 3. Build the shared PitchHierarchy (optional)
+    let hierarchy: PitchHierarchy? = table.hierarchy.map { buildHierarchy($0) }
+
+    // 4. Compile note materials
     var compiledNoteMaterials: [String: any IteratorProtocol<[MidiNote]>] = [:]
     for noteMat in table.noteMaterials {
-      let gen = try compileNoteMaterial(noteMat, emitters: compiledEmitters)
+      let gen = try compileNoteMaterial(noteMat, emitters: compiledEmitters, hierarchy: hierarchy)
       compiledNoteMaterials[noteMat.name] = gen
     }
 
-    // 4. Compile modulators (including meta-modulation)
+    // 5. Compile preset modulators (including meta-modulation)
     var compiledModulators: [String: (target: String, arrow: Arrow11)] = [:]
-    for mod in table.modulators {
-      let result = try compileModulator(mod, emitters: compiledEmitters)
+    for mod in table.presetModulators {
+      let result = try compilePresetModulator(mod, emitters: compiledEmitters)
       compiledModulators[mod.name] = result
     }
 
-    // 5. Collect all emitter shadows for annotation
+    // 6. Compile hierarchy modulators
+    var compiledHierarchyMods: [CompiledHierarchyModulator] = []
+    if let hierarchy {
+      for mod in table.hierarchyModulators {
+        let compiled = try compileHierarchyModulator(mod, emitters: compiledEmitters, hierarchy: hierarchy)
+        compiledHierarchyMods.append(compiled)
+      }
+    }
+
+    // 7. Collect all emitter shadows for annotation
     var allEmitterShadows: [String: ArrowConst] = [:]
     for (name, compiled) in compiledEmitters {
       allEmitterShadows[name] = compiled.lastValueShadow
     }
 
-    // 6. Assemble tracks
+    // 8. Assemble tracks
     var musicTracks: [MusicPattern.Track] = []
     var trackInfos: [TrackInfo] = []
     var spatialPresets: [SpatialPreset] = []
@@ -141,28 +145,14 @@ enum TablePatternCompiler {
       let sustainEmitter = try requireFloatEmitter(trackRow.sustainEmitter, emitters: compiledEmitters, referencedBy: trackRow.name)
       let gapEmitter = try requireFloatEmitter(trackRow.gapEmitter, emitters: compiledEmitters, referencedBy: trackRow.name)
 
-      // Collect modulators
+      // Collect preset modulators
       var modDict: [String: Arrow11] = [:]
-      for modName in trackRow.modulatorNames {
+      for modName in trackRow.presetModulatorNames {
         guard let mod = compiledModulators[modName] else {
           throw TableCompileError.unknownModulator(name: modName, referencedBy: trackRow.name)
         }
         modDict[mod.target] = mod.arrow
       }
-
-      // Determine if this track's note material uses a markov chord picker
-      let chordEmitterName: String? = {
-        guard let noteMat = table.noteMaterials.first(where: { $0.name == trackRow.noteMaterial }) else {
-          return nil
-        }
-        guard let pickerRow = table.emitters.first(where: { $0.name == noteMat.intervalPicker }) else {
-          return nil
-        }
-        if case .markovChord = pickerRow.function {
-          return noteMat.intervalPicker
-        }
-        return nil
-      }()
 
       musicTracks.append(MusicPattern.Track(
         spatialPreset: sp,
@@ -171,8 +161,7 @@ enum TablePatternCompiler {
         sustains: sustainEmitter,
         gaps: gapEmitter,
         name: trackRow.name,
-        emitterShadows: allEmitterShadows,
-        chordEmitterName: chordEmitterName
+        emitterShadows: allEmitterShadows
       ))
 
       trackInfos.append(TrackInfo(
@@ -184,7 +173,7 @@ enum TablePatternCompiler {
       spatialPresets.append(sp)
     }
 
-    let pattern = MusicPattern(tracks: musicTracks, clock: clock)
+    let pattern = MusicPattern(tracks: musicTracks, hierarchyModulators: compiledHierarchyMods, clock: clock)
     return PatternSyntax.CompileResult(pattern: pattern, trackInfos: trackInfos, spatialPresets: spatialPresets)
   }
 
@@ -285,14 +274,8 @@ enum TablePatternCompiler {
     switch row.outputType {
     case .float:
       return try compileFloatEmitter(row, allEmitters: allEmitters)
-    case .int:
+    case .int, .octave:
       return try compileIntEmitter(row, allEmitters: allEmitters)
-    case .root:
-      return try compileRootEmitter(row, allEmitters: allEmitters)
-    case .octave:
-      return try compileOctaveEmitter(row, allEmitters: allEmitters)
-    case .scale:
-      return try compileScaleEmitter(row, allEmitters: allEmitters)
     }
   }
 
@@ -385,9 +368,6 @@ enum TablePatternCompiler {
       let ints = candidates.compactMap { Int($0) }
       iter = IndexPickerIterator(items: ints, indexEmitter: indexIter)
 
-    case .markovChord:
-      iter = MarkovChordIndexIterator()
-
     case .fragmentPool:
       let frags = row.fragments ?? []
       iter = FragmentPoolIterator(fragments: frags)
@@ -405,76 +385,7 @@ enum TablePatternCompiler {
     iter = wrapUpdateMode(iter, row: row, allEmitters: allEmitters)
     let shadow = ArrowConst(value: 0)
     let capturing = CapturingIterator(inner: iter, shadow: shadow, toFloat: { CoreFloat($0) })
-    return CompiledEmitter(outputType: .int, iterator: capturing, lastValueShadow: shadow)
-  }
-
-  private static func compileRootEmitter(
-    _ row: EmitterRowSyntax,
-    allEmitters: [String: CompiledEmitter]
-  ) throws -> CompiledEmitter {
-    let candidates = (row.candidates ?? []).map { NoteGeneratorSyntax.resolveNoteClass($0) }
-    var iter: any IteratorProtocol<NoteClass>
-
-    switch row.function {
-    case .indexPicker(let emitterName):
-      guard let compiled = allEmitters[emitterName], let indexIter = compiled.intIterator() else {
-        throw TableCompileError.unknownEmitter(name: emitterName, referencedBy: row.name)
-      }
-      iter = IndexPickerIterator(items: candidates, indexEmitter: indexIter)
-    default:
-      iter = applyListFunction(row.function, to: candidates)
-    }
-
-    iter = wrapUpdateMode(iter, row: row, allEmitters: allEmitters)
-    let shadow = ArrowConst(value: 0)
-    let capturing = CapturingIterator(inner: iter, shadow: shadow, toFloat: { _ in 0 })
-    return CompiledEmitter(outputType: .root, iterator: capturing, lastValueShadow: shadow)
-  }
-
-  private static func compileOctaveEmitter(
-    _ row: EmitterRowSyntax,
-    allEmitters: [String: CompiledEmitter]
-  ) throws -> CompiledEmitter {
-    let candidates = (row.candidates ?? []).compactMap { Int($0) }
-    var iter: any IteratorProtocol<Int>
-
-    switch row.function {
-    case .indexPicker(let emitterName):
-      guard let compiled = allEmitters[emitterName], let indexIter = compiled.intIterator() else {
-        throw TableCompileError.unknownEmitter(name: emitterName, referencedBy: row.name)
-      }
-      iter = IndexPickerIterator(items: candidates, indexEmitter: indexIter)
-    default:
-      iter = applyListFunction(row.function, to: candidates)
-    }
-
-    iter = wrapUpdateMode(iter, row: row, allEmitters: allEmitters)
-    let shadow = ArrowConst(value: 0)
-    let capturing = CapturingIterator(inner: iter, shadow: shadow, toFloat: { CoreFloat($0) })
-    return CompiledEmitter(outputType: .octave, iterator: capturing, lastValueShadow: shadow)
-  }
-
-  private static func compileScaleEmitter(
-    _ row: EmitterRowSyntax,
-    allEmitters: [String: CompiledEmitter]
-  ) throws -> CompiledEmitter {
-    let candidates = (row.candidates ?? []).map { NoteGeneratorSyntax.resolveScale($0) }
-    var iter: any IteratorProtocol<Scale>
-
-    switch row.function {
-    case .indexPicker(let emitterName):
-      guard let compiled = allEmitters[emitterName], let indexIter = compiled.intIterator() else {
-        throw TableCompileError.unknownEmitter(name: emitterName, referencedBy: row.name)
-      }
-      iter = IndexPickerIterator(items: candidates, indexEmitter: indexIter)
-    default:
-      iter = applyListFunction(row.function, to: candidates)
-    }
-
-    iter = wrapUpdateMode(iter, row: row, allEmitters: allEmitters)
-    let shadow = ArrowConst(value: 0)
-    let capturing = CapturingIterator(inner: iter, shadow: shadow, toFloat: { _ in 0 })
-    return CompiledEmitter(outputType: .scale, iterator: capturing, lastValueShadow: shadow)
+    return CompiledEmitter(outputType: row.outputType, iterator: capturing, lastValueShadow: shadow)
   }
 
   // MARK: - List Function Application
@@ -513,47 +424,118 @@ enum TablePatternCompiler {
     }
   }
 
+  // MARK: - Hierarchy Construction
+
+  /// Build a PitchHierarchy from its JSON description.
+  private static func buildHierarchy(_ syntax: HierarchySyntax) -> PitchHierarchy {
+    let root = NoteGeneratorSyntax.resolveNoteClass(syntax.root)
+    let scale = NoteGeneratorSyntax.resolveScale(syntax.scale)
+    let key = Key(root: root, scale: scale)
+    let chord = ChordInScale(degrees: syntax.chord.degrees, inversion: syntax.chord.inversion)
+    return PitchHierarchy(key: key, chord: chord)
+  }
+
+  // MARK: - Hierarchy Modulator Compilation
+
+  private static func compileHierarchyModulator(
+    _ mod: HierarchyModulatorRowSyntax,
+    emitters: [String: CompiledEmitter],
+    hierarchy: PitchHierarchy
+  ) throws -> CompiledHierarchyModulator {
+    let intervalIter = try requireFloatEmitter(mod.fireIntervalEmitter, emitters: emitters, referencedBy: mod.name)
+    return CompiledHierarchyModulator(
+      hierarchy: hierarchy,
+      level: mod.level,
+      operation: mod.operation,
+      n: mod.n,
+      intervalEmitter: intervalIter
+    )
+  }
+
   // MARK: - Note Material Compilation
 
   private static func compileNoteMaterial(
-    _ noteMat: NoteMaterialRowSyntax,
+    _ noteMat: NoteMaterialSyntax,
+    emitters: [String: CompiledEmitter],
+    hierarchy: PitchHierarchy?
+  ) throws -> any IteratorProtocol<[MidiNote]> {
+    switch noteMat {
+    case .scaleMaterial(let s):
+      return try compileScaleMaterial(s, emitters: emitters)
+    case .hierarchyMelody(let s):
+      guard let h = hierarchy else { throw TableCompileError.missingHierarchy(referencedBy: s.name) }
+      return try compileHierarchyMelody(s, emitters: emitters, hierarchy: h)
+    case .hierarchyChord(let s):
+      guard let h = hierarchy else { throw TableCompileError.missingHierarchy(referencedBy: s.name) }
+      return compileHierarchyChord(s, hierarchy: h)
+    case .hierarchyBass(let s):
+      guard let h = hierarchy else { throw TableCompileError.missingHierarchy(referencedBy: s.name) }
+      return compileHierarchyBass(s, hierarchy: h)
+    }
+  }
+
+  private static func compileScaleMaterial(
+    _ noteMat: ScaleMaterialSyntax,
     emitters: [String: CompiledEmitter]
   ) throws -> any IteratorProtocol<[MidiNote]> {
-    guard !noteMat.intervalMaterial.isEmpty else {
-      throw TableCompileError.emptyIntervalMaterial(noteMaterial: noteMat.name)
-    }
+    let scale = NoteGeneratorSyntax.resolveScale(noteMat.scale)
+    let root = NoteGeneratorSyntax.resolveNoteClass(noteMat.root)
 
-    // Look up required emitters
-    guard let pickerEmitter = emitters[noteMat.intervalPicker],
+    guard let pickerEmitter = emitters[noteMat.intervalPickerEmitter],
           let pickerIter = pickerEmitter.intIterator() else {
-      throw TableCompileError.unknownEmitter(name: noteMat.intervalPicker, referencedBy: noteMat.name)
-    }
-    guard let scaleEmitter = emitters[noteMat.scaleEmitter],
-          let scaleIter = scaleEmitter.scaleIterator() else {
-      throw TableCompileError.unknownEmitter(name: noteMat.scaleEmitter, referencedBy: noteMat.name)
-    }
-    guard let rootEmitter = emitters[noteMat.scaleRootEmitter],
-          let rootIter = rootEmitter.rootIterator() else {
-      throw TableCompileError.unknownEmitter(name: noteMat.scaleRootEmitter, referencedBy: noteMat.name)
+      throw TableCompileError.unknownEmitter(name: noteMat.intervalPickerEmitter, referencedBy: noteMat.name)
     }
     guard let octEmitter = emitters[noteMat.octaveEmitter],
           let octIter = octEmitter.intIterator() else {
       throw TableCompileError.unknownEmitter(name: noteMat.octaveEmitter, referencedBy: noteMat.name)
     }
 
-    return TableNoteGenerator(
-      intervalMaterial: noteMat.intervalMaterial,
+    return ScaleMaterialGenerator(
+      scale: scale,
+      root: root,
+      intervals: noteMat.intervals,
       intervalPicker: pickerIter,
-      scaleEmitter: scaleIter,
-      rootEmitter: rootIter,
       octaveEmitter: octIter
     )
   }
 
-  // MARK: - Modulator Compilation
+  private static func compileHierarchyMelody(
+    _ noteMat: HierarchyMelodySyntax,
+    emitters: [String: CompiledEmitter],
+    hierarchy: PitchHierarchy
+  ) throws -> any IteratorProtocol<[MidiNote]> {
+    guard let octEmitter = emitters[noteMat.octaveEmitter],
+          let octIter = octEmitter.intIterator() else {
+      throw TableCompileError.unknownEmitter(name: noteMat.octaveEmitter, referencedBy: noteMat.name)
+    }
+    let melodyNotes = noteMat.notes.compactMap { $0.toMelodyNote() }
+    return HierarchyMelodyGenerator(
+      hierarchy: hierarchy,
+      level: noteMat.level,
+      melodyNotes: melodyNotes,
+      ordering: noteMat.ordering,
+      octaveEmitter: octIter
+    )
+  }
 
-  private static func compileModulator(
-    _ mod: ModulatorRowSyntax,
+  private static func compileHierarchyChord(
+    _ noteMat: HierarchyChordSyntax,
+    hierarchy: PitchHierarchy
+  ) -> any IteratorProtocol<[MidiNote]> {
+    HierarchyChordGenerator(hierarchy: hierarchy, voicing: noteMat.voicing, baseOctave: noteMat.baseOctave)
+  }
+
+  private static func compileHierarchyBass(
+    _ noteMat: HierarchyBassSyntax,
+    hierarchy: PitchHierarchy
+  ) -> any IteratorProtocol<[MidiNote]> {
+    HierarchyBassGenerator(hierarchy: hierarchy, baseOctave: noteMat.baseOctave)
+  }
+
+  // MARK: - Preset Modulator Compilation
+
+  private static func compilePresetModulator(
+    _ mod: PresetModulatorRowSyntax,
     emitters: [String: CompiledEmitter]
   ) throws -> (target: String, arrow: Arrow11) {
     // Arrow-based modulator: compile the ArrowSyntax and wire emitterValue placeholders

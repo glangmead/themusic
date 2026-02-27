@@ -143,9 +143,27 @@ struct MelodyNote {
 // MARK: The shared hierarchy
 
 /// Which level of the hierarchy to target with a transformation.
-enum HierarchyLevel {
+enum HierarchyLevel: String, Codable, CaseIterable {
   case scale
   case chord
+}
+
+// MARK: - Voicing
+
+/// How to distribute chord voices vertically above (and including) the bass note.
+enum VoicingStyle: String, Codable, CaseIterable {
+  /// All voices packed upward from the bass within one octave span.
+  case closed
+  /// Every other voice raised an octave — classical open position (~10th span).
+  case open
+  /// Drop-2: second-from-top voice drops an octave. Classic jazz piano texture.
+  case dropTwo
+  /// Voices spread evenly across a ~2-octave range.
+  case spread
+  /// Third + seventh only, omit the fifth (jazz shell).
+  case shell
+  /// Root + fifth only, no third — ambiguous quality.
+  case fifthsOnly
 }
 
 /// Shared mutable state representing the current key and chord.
@@ -320,9 +338,46 @@ class PitchHierarchy {
 
   // MARK: Resolution — melody note to MIDI
 
+  /// Resolve a scale degree directly to a MIDI pitch, ignoring the chord layer.
+  /// Use this for scale-relative melodies that follow key/mode but not chord.
+  private func resolveScaleDegree(_ degree: Int, octave: Int) -> UInt8? {
+    let scaleSize = key.scale.intervals.count
+    let octaveShift: Int
+    if degree >= 0 {
+      octaveShift = degree / scaleSize
+    } else {
+      octaveShift = (degree - scaleSize + 1) / scaleSize
+    }
+    let degreeInScale = ((degree % scaleSize) + scaleSize) % scaleSize
+    let intervals = key.scale.intervals
+    let semitones = intervals[degreeInScale].semitones
+    let rootPC = Int(key.root.canonicalNote.noteNumber) % 12
+    let midi = rootPC + ((octave + 1) * 12) + semitones + (octaveShift * 12)
+    guard midi >= 0, midi <= 127 else { return nil }
+    return UInt8(midi)
+  }
+
   /// Resolve a MelodyNote through the hierarchy to a concrete MIDI pitch.
+  /// - at .chord: chordToneIndex indexes into voicedDegrees; supports perturbation.
+  /// - at .scale: chordToneIndex is used directly as a scale degree; supports perturbation.
   /// octave: the reference octave (e.g. 4 for middle C region).
-  func resolve(_ note: MelodyNote, octave: Int) -> UInt8? {
+  func resolve(_ note: MelodyNote, at level: HierarchyLevel = .chord, octave: Int) -> UInt8? {
+    switch level {
+    case .scale:
+      var degree = note.chordToneIndex
+      switch note.perturbation {
+      case .none: break
+      case .scaleDegree(let steps): degree += steps
+      case .chromatic: break
+      }
+      var midi = Int(resolveScaleDegree(degree, octave: octave) ?? 0)
+      if case .chromatic(let delta) = note.perturbation { midi += delta }
+      guard midi >= 0, midi <= 127 else { return nil }
+      return UInt8(midi)
+    case .chord:
+      break
+    }
+    // .chord path — original implementation below
     let voiced = chord.voicedDegrees
     guard note.chordToneIndex >= 0, note.chordToneIndex < voiced.count else {
       return nil
@@ -372,5 +427,85 @@ class PitchHierarchy {
 
     guard midi >= 0, midi <= 127 else { return nil }
     return UInt8(midi)
+  }
+
+  // MARK: Chord voicing for chord-track output
+
+  /// MIDI pitch of the bass note (voicedDegrees[0]) at the given octave.
+  func bassMidi(baseOctave: Int) -> UInt8? {
+    guard let degree = chord.voicedDegrees.first else { return nil }
+    return resolveScaleDegree(degree, octave: baseOctave)
+  }
+
+  /// All chord voices as MIDI pitches, distributed according to the VoicingStyle.
+  /// The bass note (voicedDegrees[0]) anchors at baseOctave; upper voices are
+  /// arranged above it.
+  func voicedMidi(voicing: VoicingStyle, baseOctave: Int) -> [UInt8] {
+    let degrees = chord.voicedDegrees
+    guard !degrees.isEmpty else { return [] }
+
+    // Resolve all degrees in closed position (bass at baseOctave, each subsequent
+    // voice placed just above the previous).
+    var closed: [Int] = []
+    for (i, degree) in degrees.enumerated() {
+      guard var midi = resolveScaleDegree(degree, octave: baseOctave).map(Int.init) else { continue }
+      // Bump up until it's above the previous note
+      if let prev = closed.last {
+        while midi <= prev { midi += 12 }
+      }
+      if i == 0 { /* bass stays at baseOctave */ }
+      closed.append(midi)
+    }
+    guard !closed.isEmpty else { return [] }
+
+    var result: [Int]
+    switch voicing {
+    case .closed:
+      result = closed
+
+    case .open:
+      // Raise every other upper voice by an octave (classic open position)
+      result = closed
+      for i in stride(from: 2, to: result.count, by: 2) {
+        result[i] += 12
+      }
+
+    case .dropTwo:
+      // Drop the second-from-top voice down an octave
+      result = closed
+      if result.count >= 2 {
+        result[result.count - 2] -= 12
+        result.sort()
+      }
+
+    case .spread:
+      // Distribute voices evenly across a 2-octave range above bass
+      result = closed
+      let n = result.count
+      if n > 1 {
+        let bass = result[0]
+        let span = 24  // 2 octaves
+        for i in 1..<n {
+          result[i] = bass + (span * i / (n - 1))
+        }
+      }
+
+    case .shell:
+      // Root + third + seventh (indices 0, 1, 3 for a seventh chord; 0,1 for triad)
+      let keep: [Int] = degrees.count >= 4
+        ? [0, 1, 3]
+        : [0, 1]
+      result = keep.compactMap { i in i < closed.count ? closed[i] : nil }
+
+    case .fifthsOnly:
+      // Root + fifth (indices 0, 2 in a triad; 0, 2 in a seventh)
+      let keep = [0, 2]
+      result = keep.compactMap { i in i < closed.count ? closed[i] : nil }
+    }
+
+    return result.compactMap { midi in
+      guard midi >= 0, midi <= 127 else { return nil }
+      return UInt8(midi)
+    }
   }
 }

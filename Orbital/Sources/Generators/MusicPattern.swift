@@ -7,6 +7,34 @@
 
 import Foundation
 
+// MARK: - CompiledHierarchyModulator
+
+/// A compiled hierarchy modulator: fires on a timer and applies T/t/L to the shared hierarchy.
+final class CompiledHierarchyModulator {
+  let hierarchy: PitchHierarchy
+  let level: HierarchyLevel
+  /// "T", "t", or "L"
+  let operation: String
+  let n: Int
+  var intervalEmitter: any IteratorProtocol<CoreFloat>
+
+  init(
+    hierarchy: PitchHierarchy,
+    level: HierarchyLevel,
+    operation: String,
+    n: Int,
+    intervalEmitter: any IteratorProtocol<CoreFloat>
+  ) {
+    self.hierarchy = hierarchy
+    self.level = level
+    self.operation = operation
+    self.n = n
+    self.intervalEmitter = intervalEmitter
+  }
+}
+
+// MARK: - MusicPattern
+
 /// A multi-track generative music pattern. Each track has its own preset,
 /// note generator, timing, and modulators, and runs concurrently.
 actor MusicPattern {
@@ -21,8 +49,6 @@ actor MusicPattern {
     /// Emitter name -> shadow ArrowConst holding last emitted value (float-coerced).
     /// Empty for non-table compilation paths.
     let emitterShadows: [String: ArrowConst]
-    /// Name of the markovChord emitter, if one exists for this track's note material.
-    let chordEmitterName: String?
   }
 
   private var tracks: [Track]
@@ -30,12 +56,20 @@ actor MusicPattern {
   var timeOrigin: Double
   var isPaused: Bool = false
 
+  /// Hierarchy modulators that fire on independent timers.
+  private let hierarchyModulators: [CompiledHierarchyModulator]
+
   /// One annotation stream per track; UI subscribes to these.
   private(set) var annotationStreams: [AsyncStream<EventAnnotation>] = []
   private var annotationContinuations: [AsyncStream<EventAnnotation>.Continuation] = []
 
-  init(tracks: [Track], clock: any Clock<Duration> = ContinuousClock()) {
+  init(
+    tracks: [Track],
+    hierarchyModulators: [CompiledHierarchyModulator] = [],
+    clock: any Clock<Duration> = ContinuousClock()
+  ) {
     self.tracks = tracks
+    self.hierarchyModulators = hierarchyModulators
     self.clock = clock
     self.timeOrigin = Date.now.timeIntervalSince1970
 
@@ -81,12 +115,18 @@ actor MusicPattern {
   }
 
   /// Play all tracks concurrently. Each track runs its own event loop.
-  /// Cancelling the calling task propagates to all track tasks.
+  /// Hierarchy modulators also run as concurrent tasks.
+  /// Cancelling the calling task propagates to all child tasks.
   func play() async {
     await withTaskGroup(of: Void.self) { group in
       for trackIndex in tracks.indices {
         group.addTask { [self] in
           await self.playTrack(trackIndex)
+        }
+      }
+      for mod in hierarchyModulators {
+        group.addTask {
+          await self.runHierarchyModulator(mod)
         }
       }
     }
@@ -115,16 +155,11 @@ actor MusicPattern {
           for (name, shadow) in track.emitterShadows {
             emitterValues[name] = shadow.val
           }
-          let chordSymbol: String? = {
-            guard let chordName = track.chordEmitterName,
-                  let shadow = track.emitterShadows[chordName] else { return nil }
-            return TymoczkoChords713.chordDisplayName(forIndex: Int(shadow.val))
-          }()
           let annotation = EventAnnotation(
             trackIndex: trackIndex,
             trackName: track.name,
             timestamp: Date.now.timeIntervalSince1970 - timeOrigin,
-            chordSymbol: chordSymbol,
+            chordSymbol: nil,
             notes: event.notes,
             sustain: event.sustain,
             gap: event.gap,
@@ -141,6 +176,25 @@ actor MusicPattern {
         } catch {
           return
         }
+      }
+    }
+  }
+
+  /// Timer loop for a hierarchy modulator: sleeps for the interval then applies the operation.
+  private func runHierarchyModulator(_ mod: CompiledHierarchyModulator) async {
+    while !Task.isCancelled {
+      guard let interval = mod.intervalEmitter.next(), interval > 0 else { return }
+      do {
+        try await clock.sleep(for: .seconds(TimeInterval(interval)))
+      } catch {
+        return
+      }
+      guard !Task.isCancelled else { return }
+      switch mod.operation {
+      case "T": mod.hierarchy.T(mod.n, at: mod.level)
+      case "t": mod.hierarchy.t(mod.n, at: mod.level)
+      case "L": mod.hierarchy.L(mod.n)
+      default: break
       }
     }
   }
