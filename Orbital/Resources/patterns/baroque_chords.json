@@ -54,7 +54,7 @@
       {
         "name": "chordShifter",
         "level": "chord",
-        "operation": "T",
+        "operation": "markovChord",
         "n": 1,
         "fireIntervalEmitter": "chordTimer"
       }
@@ -82,7 +82,7 @@
     "tracks": [
       {
         "name": "Baroque Chords",
-        "presetFilename": "prophet_brass",
+        "presetFilename": "warm_analog_pad",
         "numVoices": 20,
         "presetModulatorNames": ["ampMod", "detuneMod"],
         "noteMaterial": "chords",

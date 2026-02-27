@@ -167,7 +167,6 @@ enum TablePatternCompiler {
       trackInfos.append(TrackInfo(
         id: i,
         patternName: trackRow.name,
-        trackSpec: nil,
         presetSpec: presetSpec
       ))
       spatialPresets.append(sp)
@@ -186,7 +185,6 @@ enum TablePatternCompiler {
       infos.append(TrackInfo(
         id: i,
         patternName: trackRow.name,
-        trackSpec: nil,
         presetSpec: presetSpec
       ))
     }
@@ -443,11 +441,17 @@ enum TablePatternCompiler {
     hierarchy: PitchHierarchy
   ) throws -> CompiledHierarchyModulator {
     let intervalIter = try requireFloatEmitter(mod.fireIntervalEmitter, emitters: emitters, referencedBy: mod.name)
+    let operation: CompiledHierarchyOperation
+    switch mod.operation {
+    case "T":          operation = .T(n: mod.n, level: mod.level)
+    case "t":          operation = .t(n: mod.n, level: mod.level)
+    case "L":          operation = .L(n: mod.n)
+    case "markovChord": operation = .markovChord(n: mod.n, iterator: MarkovChordIterator())
+    default:           operation = .T(n: 0, level: mod.level)  // no-op fallback
+    }
     return CompiledHierarchyModulator(
       hierarchy: hierarchy,
-      level: mod.level,
-      operation: mod.operation,
-      n: mod.n,
+      operation: operation,
       intervalEmitter: intervalIter
     )
   }

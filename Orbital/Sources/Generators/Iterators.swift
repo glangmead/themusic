@@ -49,176 +49,25 @@ class WaitingIterator<Element>: Sequence, IteratorProtocol {
   }
 }
 
-// MARK: - Tymoczko Chord Types
+// MARK: - MarkovChordIterator
 
-/// The 14 chord types from Tymoczko's "Tonality" diagram 7.1.3,
-/// used for Baroque/Classical major-key chord progressions.
-enum TymoczkoChords713: Hashable {
-  case I, vi, IV, ii, V, iii
-  case I6, IV6, ii6, V6, iii6, vi6, viio6, I64
-
-  /// 1-indexed scale degrees for each chord voicing.
-  var scaleDegrees: [Int] {
-    switch self {
-    case .I:     [1, 3, 5]
-    case .vi:    [6, 1, 3]
-    case .IV:    [4, 6, 1]
-    case .ii:    [2, 4, 6]
-    case .V:     [5, 7, 2]
-    case .iii:   [3, 5, 7]
-    case .I6:    [3, 5, 1]
-    case .IV6:   [6, 1, 4]
-    case .ii6:   [4, 6, 2]
-    case .V6:    [7, 2, 5]
-    case .iii6:  [5, 7, 3]
-    case .vi6:   [1, 3, 6]
-    case .viio6: [2, 4, 7]
-    case .I64:   [5, 1, 3]
-    }
-  }
-
-  /// Roman numeral display name for UI presentation.
-  var displayName: String {
-    switch self {
-    case .I:     "I"
-    case .vi:    "vi"
-    case .IV:    "IV"
-    case .ii:    "ii"
-    case .V:     "V"
-    case .iii:   "iii"
-    case .I6:    "I6"
-    case .IV6:   "IV6"
-    case .ii6:   "ii6"
-    case .V6:    "V6"
-    case .iii6:  "iii6"
-    case .vi6:   "vi6"
-    case .viio6: "viio6"
-    case .I64:   "I64"
-    }
-  }
-
-  /// Look up the chord display name for a given index in `MarkovChordIndexIterator.chordOrder`.
-  static func chordDisplayName(forIndex index: Int) -> String? {
-    guard index >= 0, index < MarkovChordIndexIterator.chordOrder.count else { return nil }
-    return MarkovChordIndexIterator.chordOrder[index].displayName
-  }
-
-  /// Probabilistic state transitions according to Tymoczko diagram 7.1.3 of Tonality.
-  static func stateTransitionsBaroqueClassicalMajor(_ start: TymoczkoChords713) -> [(TymoczkoChords713, CoreFloat)] {
-    switch start {
-    case .I:
-      return [            (.vi, 0.07),  (.IV, 0.21),  (.ii, 0.14), (.viio6, 0.05),  (.V, 0.50), (.I64, 0.05)]
-    case .vi:
-      return [                          (.IV, 0.13),  (.ii, 0.41), (.viio6, 0.06),  (.V, 0.28), (.I6, 0.12) ]
-    case .IV:
-      return [(.I, 0.35),                             (.ii, 0.16), (.viio6, 0.10),  (.V, 0.40), (.IV6, 0.10)]
-    case .ii:
-      return [            (.vi, 0.05),                             (.viio6, 0.20),  (.V, 0.70), (.I64, 0.05)]
-    case .viio6:
-      return [(.I, 0.85), (.vi, 0.02),  (.IV, 0.03),                                (.V, 0.10)]
-    case .V:
-      return [(.I, 0.88), (.vi, 0.05),  (.IV6, 0.05), (.ii, 0.01)]
-    case .V6:
-      return [                                                                      (.V, 0.8),  (.I6, 0.2)  ]
-    case .I6:
-      return [(.I, 0.50), (.vi,0.07/2), (.IV, 0.11),  (.ii, 0.07), (.viio6, 0.025), (.V, 0.25)              ]
-    case .IV6:
-      return [(.I, 0.17),               (.IV, 0.65),  (.ii, 0.08), (.viio6, 0.05),  (.V, 0.4/2)             ]
-    case .ii6:
-      return [                                        (.ii, 0.10), (.viio6, 0.10),  (.V6, 0.8)              ]
-    case .I64:
-      return [                                                                      (.V, 1.0)               ]
-    case .iii:
-      return [                                                                      (.V, 0.5),  (.I6, 0.5)  ]
-    case .iii6:
-      return [                                                                      (.V, 0.5),  (.I64, 0.5) ]
-    case .vi6:
-      return [                                                                      (.V, 0.5),  (.I64, 0.5) ]
-    }
-  }
-
-  /// Weighted random draw using exponential variates.
-  static func weightedDraw<A>(items: [(A, CoreFloat)]) -> A? {
-    func exp2<B>(_ item: (B, CoreFloat)) -> (B, CoreFloat) {
-      (item.0, -1.0 * log(CoreFloat.random(in: 0...1)) / item.1)
-    }
-    return items.map({ exp2($0) }).min(by: { $0.1 < $1.1 })?.0
-  }
-}
-
-// MARK: - MarkovChordIndexIterator
-
-/// Emitter iterator that outputs 0-based chord indices using the Tymoczko
-/// Baroque/Classical major Markov transition table.
-/// The index corresponds to the chord's position in `MarkovChordIndexIterator.chordOrder`,
-/// which must match the intervalMaterial ordering in the pattern JSON.
-struct MarkovChordIndexIterator: Sequence, IteratorProtocol {
-  private var currentChord: TymoczkoChords713 = .I
+/// Emits ChordInScale values following the Tymoczko baroque/classical major Markov chain
+/// (diagram 7.1.3 of Tymoczko's "Tonality"). The first call always returns chord I.
+/// Subsequent calls advance the chain probabilistically.
+/// Used as the implementation for the "markovChord" hierarchy modulator operation.
+struct MarkovChordIterator: Sequence, IteratorProtocol {
+  private var current: ChordInScale.RomanNumerals = .I
   private var neverCalled = true
 
-  /// Fixed ordering of chords → intervalMaterial index (0-based).
-  static let chordOrder: [TymoczkoChords713] = [
-    .I, .vi, .IV, .ii, .V, .iii,
-    .I6, .IV6, .ii6, .V6, .iii6, .vi6, .viio6, .I64
-  ]
-  private static let chordToIndex: [TymoczkoChords713: Int] = {
-    Dictionary(uniqueKeysWithValues: chordOrder.enumerated().map { ($1, $0) })
-  }()
-
-  mutating func next() -> Int? {
-    let candidates = TymoczkoChords713.stateTransitionsBaroqueClassicalMajor(currentChord)
-    var nextChord = TymoczkoChords713.weightedDraw(items: candidates)!
-    if neverCalled { neverCalled = false; nextChord = .I }
-    currentChord = nextChord
-    return Self.chordToIndex[nextChord]
-  }
-}
-
-// MARK: - Midi1700sChordGenerator
-
-// [MidiNote]
-struct Midi1700sChordGenerator: Sequence, IteratorProtocol {
-  // two pieces of data for the "key", e.g. "E minor"
-  var scaleGenerator: any IteratorProtocol<Scale>
-  var rootNoteGenerator: any IteratorProtocol<NoteClass>
-  var currentChord: TymoczkoChords713 = .I
-  var neverCalled = true
-
-  mutating func next() -> [MidiNote]? {
-    // the key
-    let scaleRootNote = rootNoteGenerator.next()
-    let scale = scaleGenerator.next()
-    let candidates = TymoczkoChords713.stateTransitionsBaroqueClassicalMajor(currentChord)
-    var nextChord = TymoczkoChords713.weightedDraw(items: candidates)!
+  mutating func next() -> ChordInScale? {
     if neverCalled {
       neverCalled = false
-      nextChord = .I
+      return ChordInScale(romanNumeral: .I)
     }
-    let chordDegrees = nextChord.scaleDegrees
-
-    print("Gonna play \(nextChord)")
-
-    // notes
-    var midiNotes = [MidiNote]()
-    for i in chordDegrees.indices {
-      let chordDegree = chordDegrees[i]
-      for octave in 0..<6 {
-        if CoreFloat.random(in: 0...2) > 1 || (i == 0 && octave < 2) {
-          let scaleRootNote = Note(scaleRootNote!.letter, accidental: scaleRootNote!.accidental, octave: octave)
-          let chordDegreeAboveRoot = scale?.intervals[chordDegree-1]
-          midiNotes.append(
-            MidiNote(
-              note: MidiValue(scaleRootNote.shiftUp(chordDegreeAboveRoot!)!.noteNumber),
-              velocity: 127
-            )
-          )
-        }
-      }
-    }
-
-    self.currentChord = nextChord
-    print("with notes: \(midiNotes)")
-    return midiNotes
+    let candidates = ChordInScale.RomanNumerals.stateTransitionsBaroqueClassicalMajor(current)
+    guard let nextChord = ChordInScale.RomanNumerals.weightedDraw(items: candidates) else { return nil }
+    current = nextChord
+    return ChordInScale(romanNumeral: nextChord)
   }
 }
 

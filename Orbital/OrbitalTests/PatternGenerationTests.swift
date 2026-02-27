@@ -122,31 +122,22 @@ struct IteratorTests {
     #expect(chord[0].velocity == 127)
   }
 
-  @Test("Midi1700sChordGenerator produces non-empty chords")
+  @Test("MarkovChordIterator produces non-empty ChordInScale values")
   func chordGeneratorProducesChords() {
-    var gen = Midi1700sChordGenerator(
-      scaleGenerator: [Scale.major].cyclicIterator(),
-      rootNoteGenerator: [NoteClass.C].cyclicIterator()
-    )
+    var gen = MarkovChordIterator()
     for _ in 0..<10 {
       let chord = gen.next()!
-      #expect(!chord.isEmpty, "Chord should have at least one note")
-      for note in chord {
-        #expect(note.note <= 127)
-        #expect(note.velocity == 127)
-      }
+      #expect(!chord.degrees.isEmpty, "ChordInScale should have at least one degree")
+      #expect(chord.inversion >= 0)
     }
   }
 
-  @Test("Midi1700sChordGenerator starts with chord I")
+  @Test("MarkovChordIterator starts with chord I (degrees [0,2,4], inversion 0)")
   func chordGeneratorStartsWithI() {
-    var gen = Midi1700sChordGenerator(
-      scaleGenerator: [Scale.major].cyclicIterator(),
-      rootNoteGenerator: [NoteClass.C].cyclicIterator()
-    )
-    let _ = gen.next() // first chord
-    // After the first call, currentChord should be .I
-    #expect(gen.currentChord == .I, "First chord should be I")
+    var gen = MarkovChordIterator()
+    let first = gen.next()!
+    #expect(first.degrees == [0, 2, 4], "First chord should be I: degrees [0,2,4]")
+    #expect(first.inversion == 0, "First chord should be root position")
   }
 
   @Test("ScaleSampler produces notes from the scale")
@@ -382,11 +373,17 @@ struct MusicPatternEventGenerationTests {
     #expect(event.modulators["overallAmp"] != nil)
   }
 
-  @Test("Chord generator + sustain/gap iterators can produce a sequence of events")
+  @Test("MarkovChordIterator + hierarchy + HierarchyChordGenerator can produce a sequence of events")
   func eventSequenceFromGenerators() {
-    var chordGen = Midi1700sChordGenerator(
-      scaleGenerator: [Scale.major].cyclicIterator(),
-      rootNoteGenerator: [NoteClass.C].cyclicIterator()
+    let hierarchy = PitchHierarchy(
+      key: Key(root: NoteClass.C, scale: Scale.major),
+      chord: ChordInScale(degrees: [0, 2, 4], inversion: 0)
+    )
+    var markov = MarkovChordIterator()
+    var chordGen = HierarchyChordGenerator(
+      hierarchy: hierarchy,
+      voicing: .closed,
+      octaveEmitter: [3].cyclicIterator()
     )
     let sustains = FloatSampler(min: 1.0, max: 3.0)
     let gaps = FloatSampler(min: 0.5, max: 1.5)
@@ -397,6 +394,7 @@ struct MusicPatternEventGenerationTests {
 
     // Generate 10 events
     for i in 0..<10 {
+      if let chord = markov.next() { hierarchy.chord = chord }
       guard let notes = chordGen.next() else {
         Issue.record("Chord generator returned nil at iteration \(i)")
         return
@@ -445,27 +443,23 @@ struct MusicPatternEventGenerationTests {
     #expect(abs(detune - 7.0) < 0.001, "overallCentDetune should be 7.0, got \(detune)")
   }
 
-  @Test("Chord generator state transitions produce valid chord sequences")
+  @Test("MarkovChordIterator state transitions produce valid and varied chord sequences")
   func chordTransitionsAreValid() {
-    var gen = Midi1700sChordGenerator(
-      scaleGenerator: [Scale.major].cyclicIterator(),
-      rootNoteGenerator: [NoteClass.A].cyclicIterator()
-    )
+    var gen = MarkovChordIterator()
 
-    // Generate many chords to exercise state transitions
-    var chordNames = [TymoczkoChords713]()
-    for _ in 0..<50 {
-      let _ = gen.next()!
-      chordNames.append(gen.currentChord)
+    // First chord is always I
+    let first = gen.next()!
+    #expect(first.degrees == [0, 2, 4] && first.inversion == 0, "First chord must be I")
+
+    // Generate 49 more and collect degree fingerprints to check variety
+    var seen: Set<String> = ["\(first.degrees)-\(first.inversion)"]
+    for _ in 0..<49 {
+      let chord = gen.next()!
+      seen.insert("\(chord.degrees)-\(chord.inversion)")
     }
 
-    // Should start with I
-    #expect(chordNames[0] == .I)
-
-    // Should have visited more than just I over 50 iterations
-    let uniqueChords = Set(chordNames.map { "\($0)" })
-    #expect(uniqueChords.count > 3,
-            "50 chord transitions should visit more than 3 chord types, visited \(uniqueChords)")
+    #expect(seen.count > 3,
+            "50 chord transitions should visit more than 3 distinct chords, visited \(seen.count)")
   }
 }
 

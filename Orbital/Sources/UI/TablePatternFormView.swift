@@ -443,7 +443,6 @@ struct TablePatternFormView: View {
     let filename = patternName.lowercased().replacingOccurrences(of: " ", with: "_") + ".json"
     let patternSyntax = PatternSyntax(
       name: patternName,
-      proceduralTracks: nil,
       midiTracks: nil,
       tableTracks: table
     )

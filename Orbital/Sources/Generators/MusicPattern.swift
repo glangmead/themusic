@@ -7,28 +7,35 @@
 
 import Foundation
 
+// MARK: - CompiledHierarchyOperation
+
+/// The typed operation applied by a CompiledHierarchyModulator each time it fires.
+enum CompiledHierarchyOperation {
+  /// Transpose up by n steps at the given hierarchy level (n=0 is a no-op).
+  case T(n: Int, level: HierarchyLevel)
+  /// Transpose down by n steps at the given hierarchy level (n=0 is a no-op).
+  case t(n: Int, level: HierarchyLevel)
+  /// Apply n leading-tone transforms (n=0 is a no-op).
+  case L(n: Int)
+  /// Advance the Markov chord chain n times, applying the last result (n=0 is a no-op).
+  case markovChord(n: Int, iterator: any IteratorProtocol<ChordInScale>)
+}
+
 // MARK: - CompiledHierarchyModulator
 
-/// A compiled hierarchy modulator: fires on a timer and applies T/t/L to the shared hierarchy.
+/// A compiled hierarchy modulator: fires on a timer and applies a typed operation to the shared hierarchy.
 final class CompiledHierarchyModulator {
   let hierarchy: PitchHierarchy
-  let level: HierarchyLevel
-  /// "T", "t", or "L"
-  let operation: String
-  let n: Int
+  var operation: CompiledHierarchyOperation
   var intervalEmitter: any IteratorProtocol<CoreFloat>
 
   init(
     hierarchy: PitchHierarchy,
-    level: HierarchyLevel,
-    operation: String,
-    n: Int,
+    operation: CompiledHierarchyOperation,
     intervalEmitter: any IteratorProtocol<CoreFloat>
   ) {
     self.hierarchy = hierarchy
-    self.level = level
     self.operation = operation
-    self.n = n
     self.intervalEmitter = intervalEmitter
   }
 }
@@ -191,10 +198,20 @@ actor MusicPattern {
       }
       guard !Task.isCancelled else { return }
       switch mod.operation {
-      case "T": mod.hierarchy.T(mod.n, at: mod.level)
-      case "t": mod.hierarchy.t(mod.n, at: mod.level)
-      case "L": mod.hierarchy.L(mod.n)
-      default: break
+      case .T(let n, let level):
+        mod.hierarchy.T(n, at: level)
+      case .t(let n, let level):
+        mod.hierarchy.t(n, at: level)
+      case .L(let n):
+        mod.hierarchy.L(n)
+      case .markovChord(let n, var iter):
+        // n=0 is a no-op; n=1 advances once; n>1 skips ahead by calling n times and keeping the last.
+        guard n > 0 else { break }
+        var last: ChordInScale? = nil
+        for _ in 0..<n { last = iter.next() }
+        // Write the mutated iterator state back into the enum case.
+        mod.operation = .markovChord(n: n, iterator: iter)
+        if let chord = last { mod.hierarchy.chord = chord }
       }
     }
   }

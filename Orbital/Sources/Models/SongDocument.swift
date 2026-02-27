@@ -251,7 +251,6 @@ class SongDocument {
     guard let spec = patternSpec else { return }
     patternSpec = PatternSyntax(
       name: spec.name,
-      proceduralTracks: nil,
       midiTracks: nil,
       tableTracks: newTable
     )

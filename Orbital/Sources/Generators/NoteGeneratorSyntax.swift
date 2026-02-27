@@ -2,88 +2,18 @@
 //  NoteGeneratorSyntax.swift
 //  Orbital
 //
-//  Extracted from PatternSyntax.swift
+//  Namespace for scale and note class name resolution utilities,
+//  used by TablePatternCompiler and PatternSyntax.
 //
 
 import Foundation
 import Tonic
 
-// MARK: - NoteGeneratorSyntax
+// MARK: - Name Resolution
 
-/// Different strategies for generating sequences of [MidiNote].
-enum NoteGeneratorSyntax: Codable {
-  /// Explicit list of chords, cycled forever.
-  case fixed(events: [ChordSyntax])
-
-  /// Random notes sampled from a scale.
-  case scaleSampler(scale: String, root: String, octaves: [Int]?)
-
-  /// Chord progressions from a Markov model (e.g., Tymoczko baroque style).
-  case chordProgression(scale: String, root: String, style: String?)
-
-  /// Single-note melody from scale degrees with compositional iterator control.
-  /// Each parameter is an `IteratedListSyntax` bundling candidates + emission strategy.
-  /// The `ordering` field sets the default emission for any field that omits its own.
-  case melodic(
-    scales: IteratedListSyntax<String>,
-    roots: IteratedListSyntax<String>,
-    octaves: IteratedListSyntax<Int>,
-    degrees: IteratedListSyntax<Int>,
-    ordering: IteratorSyntax?
-  )
-
-  /// Notes from a MIDI file track. Timing (sustain/gap) is derived from the file.
-  /// JSON: { "midiFile": { "filename": "BachInvention1.mid", "track": 0, "loop": true } }
-  case midiFile(filename: String, track: Int?, loop: Bool?)
-
-  func compile(resourceBaseURL: URL? = nil) -> any IteratorProtocol<[MidiNote]> {
-    switch self {
-    case .fixed(let events):
-      let chords = events.map { $0.midiNotes }
-      return chords.cyclicIterator()
-
-    case .scaleSampler(let scaleName, _, _):
-      let scale = Self.resolveScale(scaleName)
-      return ScaleSampler(scale: scale)
-
-    case .chordProgression(let scaleName, let rootName, _):
-      let scale = Self.resolveScale(scaleName)
-      let root = Self.resolveNoteClass(rootName)
-      return Midi1700sChordGenerator(
-        scaleGenerator: [scale].cyclicIterator(),
-        rootNoteGenerator: [root].cyclicIterator()
-      )
-
-    case .melodic(let scales, let roots, let octaves, let degrees, let ordering):
-      let defaultOrder: IteratorSyntax = ordering ?? .shuffled
-
-      let scaleIter = scales.compile(default: defaultOrder, transform: Self.resolveScale)
-      let rootIter = roots.compile(default: defaultOrder, transform: Self.resolveNoteClass)
-      let octaveIter = octaves.compile(default: defaultOrder)
-      let degreeIter = degrees.compile(default: defaultOrder)
-
-      return MidiPitchAsChordGenerator(
-        pitchGenerator: MidiPitchGenerator(
-          scaleGenerator: scaleIter,
-          degreeGenerator: degreeIter,
-          rootNoteGenerator: rootIter,
-          octaveGenerator: octaveIter
-        )
-      )
-
-    case .midiFile(let filename, let track, let loop):
-      let seq = Self.parseMidiFile(filename: filename, track: track, loop: loop ?? true, resourceBaseURL: resourceBaseURL)
-      return seq?.makeIterators(loop: loop ?? true).notes ?? [[MidiNote]]().makeIterator()
-    }
-  }
-
-  /// For MIDI files, compile all three iterators (notes + timing) from the file.
-  /// Returns nil for non-MIDI generators.
-  func compileMidiSequence(resourceBaseURL: URL? = nil) -> MidiEventSequence? {
-    guard case .midiFile(let filename, let track, let loop) = self else { return nil }
-    return Self.parseMidiFile(filename: filename, track: track, loop: loop ?? true, resourceBaseURL: resourceBaseURL)
-  }
-
+/// Utilities for resolving scale and note names from JSON strings,
+/// and for locating MIDI files from the bundle or iCloud container.
+enum NoteGeneratorSyntax {
   /// Resolve a MIDI filename to a bundle URL, or to a file under `resourceBaseURL` if provided.
   static func midiFileURL(filename: String, resourceBaseURL: URL? = nil) -> URL? {
     if let base = resourceBaseURL {
@@ -101,12 +31,7 @@ enum NoteGeneratorSyntax: Codable {
     return url
   }
 
-  private static func parseMidiFile(filename: String, track: Int?, loop: Bool, resourceBaseURL: URL? = nil) -> MidiEventSequence? {
-    guard let url = midiFileURL(filename: filename, resourceBaseURL: resourceBaseURL) else { return nil }
-    return MidiEventSequence.from(url: url, trackIndex: track, loop: loop)
-  }
-
-  // MARK: - Name Resolution
+  // MARK: Scale resolution
 
   /// All Tonic scales with display names, ordered for UI pickers.
   static let allScales: [(name: String, scale: Scale)] = [
