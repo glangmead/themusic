@@ -57,9 +57,8 @@ class ResourceManager {
     for ext in extensions {
       for url in Bundle.main.urls(forResourcesWithExtension: ext, subdirectory: subdirectory) ?? [] {
         let dest = destDir.appendingPathComponent(url.lastPathComponent)
-        if !fm.fileExists(atPath: dest.path) {
-          try? fm.copyItem(at: url, to: dest)
-        }
+        try? fm.removeItem(at: dest)
+        try? fm.copyItem(at: url, to: dest)
       }
     }
   }

@@ -108,10 +108,8 @@ struct NoteMaterialRowState: Identifiable, Equatable {
 
   var typeName: String {
     switch syntax {
-    case .scaleMaterial:   return "Scale Material"
     case .hierarchyMelody: return "Hierarchy Melody"
     case .hierarchyChord:  return "Hierarchy Chord"
-    case .hierarchyBass:   return "Hierarchy Bass"
     }
   }
 
@@ -122,8 +120,8 @@ struct NoteMaterialRowState: Identifiable, Equatable {
   }
 
   init() {
-    let defaultSyntax = NoteMaterialSyntax.scaleMaterial(
-      ScaleMaterialSyntax(name: "", root: "C", scale: "major", intervalPickerEmitter: "", octaveEmitter: "")
+    let defaultSyntax = NoteMaterialSyntax.hierarchyMelody(
+      HierarchyMelodySyntax(name: "", level: .scale, degreeEmitter: "", octaveEmitter: "")
     )
     self.id = defaultSyntax.id
     self.name = ""

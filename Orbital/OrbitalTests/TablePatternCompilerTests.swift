@@ -231,91 +231,108 @@ struct RuntimePrimitiveTests {
 @Suite("Table Pattern Note Material", .serialized)
 struct NoteMaterialTests {
 
-  @Test("ScaleMaterialGenerator produces single-note melodies (intervals mode)")
-  func singleNoteMelody() {
-    var gen = ScaleMaterialGenerator(
-      scale: Scale.major,
-      root: NoteClass.C,
-      intervals: [[0], [1], [2], [3], [4], [5], [6]],
-      intervalPicker: [0, 1, 2].cyclicIterator(),
+  // Helpers: build a C/major hierarchy with I triad [0,2,4]
+  private func cMajorHierarchy() -> PitchHierarchy {
+    PitchHierarchy(
+      key: Key(root: NoteClass.C, scale: Scale.major),
+      chord: ChordInScale(degrees: [0, 2, 4], inversion: 0)
+    )
+  }
+
+  @Test("HierarchyMelodyGenerator at .scale level resolves scale degrees to MIDI pitches")
+  func hierarchyMelodyScaleLevel() {
+    let hierarchy = cMajorHierarchy()
+    var gen = HierarchyMelodyGenerator(
+      hierarchy: hierarchy,
+      level: .scale,
+      degreeEmitter: [0, 2, 4].cyclicIterator(),
       octaveEmitter: [4].cyclicIterator()
     )
 
-    for _ in 0..<10 {
-      let notes = gen.next()!
-      #expect(notes.count == 1, "Single-degree interval should produce one note")
-      #expect(notes[0].note <= 127, "MIDI note should be <= 127")
-      #expect(notes[0].velocity == 127)
-    }
+    // C major scale: degree 0=C, 2=E, 4=G at octave 4
+    // Formula: rootPC + (octave+1)*12 + semitones → C4=60, E4=64, G4=67
+    let note1 = gen.next()!
+    #expect(note1.count == 1, "Single note per call")
+    #expect(Int(note1[0].note) == 60, "Degree 0 in C major = C4 (60), got \(note1[0].note)")
+
+    let note2 = gen.next()!
+    #expect(Int(note2[0].note) == 64, "Degree 2 in C major = E4 (64), got \(note2[0].note)")
+
+    let note3 = gen.next()!
+    #expect(Int(note3[0].note) == 67, "Degree 4 in C major = G4 (67), got \(note3[0].note)")
   }
 
-  @Test("ScaleMaterialGenerator produces chords from multi-degree intervals")
-  func chordGeneration() {
-    var gen = ScaleMaterialGenerator(
-      scale: Scale.major,
-      root: NoteClass.C,
-      intervals: [[0, 2, 4]], // single chord: root, third, fifth
-      intervalPicker: [0].cyclicIterator(),
-      octaveEmitter: [4].cyclicIterator()
+  @Test("HierarchyMelodyGenerator at .scale level handles octave-spanning degrees")
+  func hierarchyMelodyOctaveSpanning() {
+    // chromatic scale: degree 12 = one octave up from degree 0
+    let hierarchy = PitchHierarchy(
+      key: Key(root: NoteClass.C, scale: Scale.chromatic),
+      chord: ChordInScale(degrees: [0, 4, 7], inversion: 0)
     )
-
-    let chord = gen.next()!
-    #expect(chord.count == 3, "Triad should produce 3 notes, got \(chord.count)")
-    // C major triad in octave 4 (Tonic uses C4 = 72)
-    // C4 = 72, E4 = 76, G4 = 79
-    let pitches = chord.map { Int($0.note) }
-    #expect(pitches[0] == 72, "Root should be C4 (72), got \(pitches[0])")
-    #expect(pitches[1] == 76, "Third should be E4 (76), got \(pitches[1])")
-    #expect(pitches[2] == 79, "Fifth should be G4 (79), got \(pitches[2])")
-  }
-
-  @Test("ScaleMaterialGenerator in fragment-pool mode (intervals nil) emits degrees directly")
-  func fragmentPoolMode() {
-    // intervals = nil: picker emits degrees directly, each call = one note
-    var gen = ScaleMaterialGenerator(
-      scale: Scale.major,
-      root: NoteClass.C,
-      intervals: nil,
-      intervalPicker: [0, 2, 4].cyclicIterator(), // degrees: C, E, G
-      octaveEmitter: [4].cyclicIterator()
-    )
-
-    let note1 = gen.next()![0]  // degree 0 = C4 = 72
-    let note2 = gen.next()![0]  // degree 2 = E4 = 76
-    let note3 = gen.next()![0]  // degree 4 = G4 = 79
-    #expect(Int(note1.note) == 72, "Degree 0 in C major = C4 (72)")
-    #expect(Int(note2.note) == 76, "Degree 2 in C major = E4 (76)")
-    #expect(Int(note3.note) == 79, "Degree 4 in C major = G4 (79)")
-  }
-
-  @Test("ScaleMaterialGenerator clamps out-of-range interval index")
-  func clampsDegreeIndex() {
-    var gen = ScaleMaterialGenerator(
-      scale: Scale.major,
-      root: NoteClass.C,
-      intervals: [[0], [2], [4]],
-      intervalPicker: [99].cyclicIterator(), // way out of range
-      octaveEmitter: [4].cyclicIterator()
-    )
-
-    let notes = gen.next()!
-    #expect(notes.count == 1, "Should still produce a note despite clamped index")
-  }
-
-  @Test("ScaleMaterialGenerator handles octave-spanning degrees")
-  func octaveSpanning() {
-    // chromatic scale: degree 12 = one octave up
-    var gen = ScaleMaterialGenerator(
-      scale: Scale.chromatic,
-      root: NoteClass.C,
-      intervals: nil,
-      intervalPicker: [0, 12].cyclicIterator(),
+    var gen = HierarchyMelodyGenerator(
+      hierarchy: hierarchy,
+      level: .scale,
+      degreeEmitter: [0, 12].cyclicIterator(),
       octaveEmitter: [4].cyclicIterator()
     )
 
     let base = gen.next()![0]   // degree 0 = C4 = 72
     let upper = gen.next()![0]  // degree 12 = C5 = 84
     #expect(Int(upper.note) - Int(base.note) == 12, "Degree 12 should be exactly one octave up")
+  }
+
+  @Test("HierarchyMelodyGenerator at .chord level resolves chord-tone indices")
+  func hierarchyMelodyChordLevel() {
+    let hierarchy = cMajorHierarchy() // I chord: voicedDegrees = [0, 2, 4]
+    var gen = HierarchyMelodyGenerator(
+      hierarchy: hierarchy,
+      level: .chord,
+      degreeEmitter: [0, 1, 2].cyclicIterator(), // chord-tone indices 0, 1, 2
+      octaveEmitter: [4].cyclicIterator()
+    )
+
+    // voicedDegrees[0]=0 (C), [1]=2 (E), [2]=4 (G) in C major at octave 4
+    // Formula: rootPC + (octave+1)*12 + semitones → C4=60, E4=64, G4=67
+    let note1 = gen.next()!
+    #expect(Int(note1[0].note) == 60, "Chord tone 0 = C4 (60), got \(note1[0].note)")
+
+    let note2 = gen.next()!
+    #expect(Int(note2[0].note) == 64, "Chord tone 1 = E4 (64), got \(note2[0].note)")
+
+    let note3 = gen.next()!
+    #expect(Int(note3[0].note) == 67, "Chord tone 2 = G4 (67), got \(note3[0].note)")
+  }
+
+  @Test("HierarchyChordGenerator emits all voiced chord tones")
+  func hierarchyChordGenerator() {
+    let hierarchy = cMajorHierarchy() // I triad
+    var gen = HierarchyChordGenerator(
+      hierarchy: hierarchy,
+      voicing: .closed,
+      octaveEmitter: [4].cyclicIterator()
+    )
+
+    let chord = gen.next()!
+    #expect(chord.count == 3, "C major triad should emit 3 notes, got \(chord.count)")
+    // Formula: rootPC + (octave+1)*12 + semitones → C4=60, E4=64, G4=67
+    let pitches = chord.map { Int($0.note) }.sorted()
+    #expect(pitches[0] == 60, "Root C4 (60), got \(pitches[0])")
+    #expect(pitches[1] == 64, "Third E4 (64), got \(pitches[1])")
+    #expect(pitches[2] == 67, "Fifth G4 (67), got \(pitches[2])")
+  }
+
+  @Test("HierarchyChordGenerator respects octaveEmitter")
+  func hierarchyChordOctave() {
+    let hierarchy = cMajorHierarchy()
+    var gen = HierarchyChordGenerator(
+      hierarchy: hierarchy,
+      voicing: .closed,
+      octaveEmitter: [3, 4].cyclicIterator() // alternates octave 3 and 4
+    )
+
+    let chord3 = gen.next()!.map { Int($0.note) }.min()!
+    let chord4 = gen.next()!.map { Int($0.note) }.min()!
+    #expect(chord4 - chord3 == 12, "Octave 4 bass should be 12 semitones above octave 3 bass")
   }
 }
 
@@ -393,70 +410,68 @@ struct CodableTests {
     #expect(decoded.updateMode == .each, "Default updateMode should be .each")
   }
 
-  @Test("ScaleMaterialSyntax round-trips via NoteMaterialSyntax")
-  func scaleMaterialRoundTrip() throws {
-    let inner = ScaleMaterialSyntax(
+  @Test("HierarchyMelodySyntax round-trips via NoteMaterialSyntax")
+  func hierarchyMelodyRoundTrip() throws {
+    let inner = HierarchyMelodySyntax(
       name: "melody",
-      root: "C",
-      scale: "lydian",
-      intervals: [[0], [1], [0, 2, 4]],
-      intervalPickerEmitter: "picker",
+      level: .scale,
+      degreeEmitter: "degreePicker",
       octaveEmitter: "oct"
     )
-    let noteMat = NoteMaterialSyntax.scaleMaterial(inner)
+    let noteMat = NoteMaterialSyntax.hierarchyMelody(inner)
     let encoder = JSONEncoder()
     let decoder = JSONDecoder()
     let data = try encoder.encode(noteMat)
     let decoded = try decoder.decode(NoteMaterialSyntax.self, from: data)
-    guard case .scaleMaterial(let decodedInner) = decoded else {
-      Issue.record("Should decode as .scaleMaterial")
+    guard case .hierarchyMelody(let decodedInner) = decoded else {
+      Issue.record("Should decode as .hierarchyMelody")
       return
     }
     #expect(decodedInner.name == inner.name)
-    #expect(decodedInner.root == inner.root)
-    #expect(decodedInner.scale == inner.scale)
-    #expect(decodedInner.intervals == inner.intervals)
-    #expect(decodedInner.intervalPickerEmitter == inner.intervalPickerEmitter)
+    #expect(decodedInner.level == inner.level)
+    #expect(decodedInner.degreeEmitter == inner.degreeEmitter)
     #expect(decodedInner.octaveEmitter == inner.octaveEmitter)
   }
 
-  @Test("ScaleMaterialSyntax round-trips with nil intervals")
-  func scaleMaterialNilIntervals() throws {
-    let inner = ScaleMaterialSyntax(
-      name: "fragMelody",
-      root: "A",
-      scale: "chromatic",
-      intervals: nil,
-      intervalPickerEmitter: "pool",
-      octaveEmitter: "oct"
+  @Test("HierarchyChordSyntax round-trips via NoteMaterialSyntax")
+  func hierarchyChordRoundTrip() throws {
+    let inner = HierarchyChordSyntax(
+      name: "chords",
+      voicing: .open,
+      octaveEmitter: "chordOct"
     )
-    let noteMat = NoteMaterialSyntax.scaleMaterial(inner)
+    let noteMat = NoteMaterialSyntax.hierarchyChord(inner)
     let data = try JSONEncoder().encode(noteMat)
     let decoded = try JSONDecoder().decode(NoteMaterialSyntax.self, from: data)
-    guard case .scaleMaterial(let d) = decoded else {
-      Issue.record("Should decode as .scaleMaterial")
+    guard case .hierarchyChord(let d) = decoded else {
+      Issue.record("Should decode as .hierarchyChord")
       return
     }
-    #expect(d.intervals == nil, "nil intervals should remain nil after round-trip")
+    #expect(d.name == inner.name)
+    #expect(d.voicing == inner.voicing)
+    #expect(d.octaveEmitter == inner.octaveEmitter)
   }
 
   @Test("TablePatternSyntax full round-trip")
   func fullTableRoundTrip() throws {
     let table = TablePatternSyntax(
       name: "Test Pattern",
+      hierarchy: HierarchySyntax(
+        root: "C",
+        scale: "lydian",
+        chord: ChordInScaleSyntax(degrees: [0, 2, 4], inversion: 0)
+      ),
       emitters: [
         EmitterRowSyntax(name: "gap", outputType: .float, function: .randFloat, arg1: 0.2, arg2: 0.5),
         EmitterRowSyntax(name: "sustain", outputType: .float, function: .randFloat, arg1: 1, arg2: 3),
-        EmitterRowSyntax(name: "picker", outputType: .int, function: .randInt, arg1: 0, arg2: 2),
+        EmitterRowSyntax(name: "picker", outputType: .int, function: .shuffle, candidates: ["0","1","2","3","4","5","6"]),
         EmitterRowSyntax(name: "oct", outputType: .octave, function: .random, candidates: ["3", "4"]),
       ],
       noteMaterials: [
-        NoteMaterialSyntax.scaleMaterial(ScaleMaterialSyntax(
+        NoteMaterialSyntax.hierarchyMelody(HierarchyMelodySyntax(
           name: "melody",
-          root: "C",
-          scale: "lydian",
-          intervals: [[0], [1], [2]],
-          intervalPickerEmitter: "picker",
+          level: .scale,
+          degreeEmitter: "picker",
           octaveEmitter: "oct"
         ))
       ],
@@ -482,6 +497,12 @@ struct CodableTests {
     #expect(decoded.presetModulators.count == table.presetModulators.count)
     #expect(decoded.tracks.count == table.tracks.count)
     #expect(decoded.tracks[0].presetFilename == "auroraBorealis")
+    guard case .hierarchyMelody(let nm) = decoded.noteMaterials[0] else {
+      Issue.record("Should decode as .hierarchyMelody")
+      return
+    }
+    #expect(nm.level == .scale)
+    #expect(nm.degreeEmitter == "picker")
   }
 }
 

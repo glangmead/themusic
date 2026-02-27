@@ -464,115 +464,40 @@ class IndexPickerIterator<Element>: Sequence, IteratorProtocol {
   }
 }
 
-// MARK: - ScaleMaterialGenerator
+// MARK: - HierarchyChordGenerator
 
-/// Generates [MidiNote] from scale-degree–based note material with a fixed scale and root.
-///
-/// Two modes:
-/// - `intervals` nil: the picker emitter emits scale degree values directly (e.g. fragmentPool).
-///   Each call produces a single note.
-/// - `intervals` present: the picker emits an index into the intervals array.
-///   Each entry may be a single degree (melody) or multiple degrees (chord).
-struct ScaleMaterialGenerator: Sequence, IteratorProtocol {
-  let scale: Scale
-  let root: NoteClass
-  /// When non-nil, each entry is a list of degrees; picker emits an index into this array.
-  /// When nil, picker emits degree values directly and each call produces one note.
-  let intervals: [[Int]]?
-  var intervalPicker: any IteratorProtocol<Int>
+/// Generates [MidiNote] from the shared hierarchy's current voiced chord.
+/// The octave for the chord's bass note comes from the octaveEmitter.
+struct HierarchyChordGenerator: Sequence, IteratorProtocol {
+  let hierarchy: PitchHierarchy
+  let voicing: VoicingStyle
   var octaveEmitter: any IteratorProtocol<Int>
 
   mutating func next() -> [MidiNote]? {
     guard let octave = octaveEmitter.next() else { return nil }
-
-    let degrees: [Int]
-    if let intervals {
-      guard let idx = intervalPicker.next() else { return nil }
-      let clamped = Swift.max(0, Swift.min(idx, intervals.count - 1))
-      degrees = intervals[clamped]
-    } else {
-      guard let degree = intervalPicker.next() else { return nil }
-      degrees = [degree]
-    }
-
-    let scaleSize = scale.intervals.count
-    var notes: [MidiNote] = []
-    for degree in degrees {
-      // Octave wrapping: degrees outside 0..<scaleSize shift octaves.
-      // e.g. degree 12 in chromatic (12-note) scale = root one octave up.
-      let octaveShift = degree >= 0
-        ? degree / scaleSize
-        : (degree - scaleSize + 1) / scaleSize
-      let degreeInScale = ((degree % scaleSize) + scaleSize) % scaleSize
-      let interval = scale.intervals[degreeInScale]
-      let wrappedRoot = Note(root.letter, accidental: root.accidental, octave: octave + octaveShift)
-      if let shifted = wrappedRoot.shiftUp(interval) {
-        notes.append(MidiNote(note: MidiValue(shifted.noteNumber), velocity: 127))
-      }
-    }
-    return notes.isEmpty ? nil : notes
-  }
-}
-
-// MARK: - HierarchyChordGenerator
-
-/// Generates [MidiNote] from the shared hierarchy's current voiced chord.
-/// Called on every event tick — the chord reflects whatever the hierarchy holds at that moment.
-struct HierarchyChordGenerator: Sequence, IteratorProtocol {
-  let hierarchy: PitchHierarchy
-  let voicing: VoicingStyle
-  let baseOctave: Int
-
-  func next() -> [MidiNote]? {
-    let midis = hierarchy.voicedMidi(voicing: voicing, baseOctave: baseOctave)
+    let midis = hierarchy.voicedMidi(voicing: voicing, baseOctave: octave)
     guard !midis.isEmpty else { return nil }
     return midis.map { MidiNote(note: MidiValue($0), velocity: 127) }
   }
 }
 
-// MARK: - HierarchyBassGenerator
-
-/// Generates a single [MidiNote] — the hierarchy's inversion-determined lowest degree.
-struct HierarchyBassGenerator: Sequence, IteratorProtocol {
-  let hierarchy: PitchHierarchy
-  let baseOctave: Int
-
-  func next() -> [MidiNote]? {
-    guard let midi = hierarchy.bassMidi(baseOctave: baseOctave) else { return nil }
-    return [MidiNote(note: MidiValue(midi), velocity: 127)]
-  }
-}
-
 // MARK: - HierarchyMelodyGenerator
 
-/// Generates single-note melodies by resolving MelodyNotes through the shared hierarchy.
-/// The `level` parameter controls whether resolution uses the chord layer or scale layer.
+/// Generates single-note melodies by resolving degrees through the shared hierarchy.
+/// The `level` parameter controls whether resolution uses the chord layer or scale layer:
+///   - .scale: degreeEmitter emits scale degree values directly (supports large ranges with
+///             octave wrapping, e.g. using a fragment-pool emitter over a chromatic scale).
+///   - .chord: degreeEmitter emits chord-tone indices into the hierarchy's voicedDegrees.
 struct HierarchyMelodyGenerator: Sequence, IteratorProtocol {
   let hierarchy: PitchHierarchy
   let level: HierarchyLevel
-  var picker: any IteratorProtocol<MelodyNote>
+  var degreeEmitter: any IteratorProtocol<Int>
   var octaveEmitter: any IteratorProtocol<Int>
 
-  init(
-    hierarchy: PitchHierarchy,
-    level: HierarchyLevel,
-    melodyNotes: [MelodyNote],
-    ordering: String,
-    octaveEmitter: any IteratorProtocol<Int>
-  ) {
-    self.hierarchy = hierarchy
-    self.level = level
-    self.octaveEmitter = octaveEmitter
-    switch ordering {
-    case "shuffle": self.picker = melodyNotes.shuffledIterator()
-    case "random":  self.picker = melodyNotes.randomIterator()
-    default:        self.picker = melodyNotes.cyclicIterator()  // "cyclic" default
-    }
-  }
-
   mutating func next() -> [MidiNote]? {
-    guard let note = picker.next() else { return nil }
+    guard let degree = degreeEmitter.next() else { return nil }
     guard let octave = octaveEmitter.next() else { return nil }
+    let note = MelodyNote(chordToneIndex: degree, perturbation: .none)
     guard let midi = hierarchy.resolve(note, at: level, octave: octave) else { return nil }
     return [MidiNote(note: MidiValue(midi), velocity: 127)]
   }

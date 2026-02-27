@@ -4,37 +4,10 @@
     "name": "Table Aurora",
     "emitters": [
       {
-        "name": "timer",
-        "outputType": "float",
-        "function": "randFloat",
-        "arg1": 10,
-        "arg2": 25
-      },
-      {
-        "name": "rootPicker",
-        "outputType": "int",
-        "function": "randInt",
-        "arg1": 0,
-        "arg2": 2
-      },
-      {
-        "name": "roots",
-        "outputType": "root",
-        "function": { "indexPicker": { "emitter": "rootPicker" } },
-        "candidates": ["C", "E", "G"],
-        "updateMode": { "waiting": { "emitter": "timer" } }
-      },
-      {
         "name": "octaves",
         "outputType": "octave",
         "function": "random",
         "candidates": ["2", "2", "2", "2", "2", "2", "3", "3", "3", "3", "3", "3", "3", "3", "4", "4", "4", "5"]
-      },
-      {
-        "name": "scales",
-        "outputType": "scale",
-        "function": "cyclic",
-        "candidates": ["lydian"]
       },
       {
         "name": "degreePicker",
@@ -78,17 +51,21 @@
         "arg2": 0.5
       }
     ],
+    "hierarchy": {
+      "root": "C",
+      "scale": "lydian",
+      "chord": {"degrees": [0, 2, 4], "inversion": 0}
+    },
     "noteMaterials": [
       {
+        "type": "hierarchyMelody",
         "name": "melody",
-        "intervalMaterial": [[0], [1], [2], [3], [4], [5], [6]],
-        "intervalPicker": "degreePicker",
-        "octaveEmitter": "octaves",
-        "scaleEmitter": "scales",
-        "scaleRootEmitter": "roots"
+        "level": "scale",
+        "degreeEmitter": "degreePicker",
+        "octaveEmitter": "octaves"
       }
     ],
-    "modulators": [
+    "presetModulators": [
       {
         "name": "ampMod",
         "targetHandle": "overallAmp",
@@ -107,10 +84,7 @@
       {
         "name": "octaveAmpMod",
         "targetHandle": "overallAmp2",
-        "arrow": {"reciprocal": {"sum": [
-          {"const": {"name": "one", "val": 1}},
-          {"emitterValue": {"name": "octaves"}}
-        ]}}
+        "arrow": {"quickExpression": "1 / (octaves + 1)"}
       }
     ],
     "tracks": [
@@ -118,7 +92,7 @@
         "name": "Table Aurora",
         "presetFilename": "auroraBorealis",
         "numVoices": 3,
-        "modulatorNames": ["ampMod", "octaveAmpMod", "vibAmpMod", "vibFreqMod"],
+        "presetModulatorNames": ["ampMod", "octaveAmpMod", "vibAmpMod", "vibFreqMod"],
         "noteMaterial": "melody",
         "sustainEmitter": "sustain",
         "gapEmitter": "gap"

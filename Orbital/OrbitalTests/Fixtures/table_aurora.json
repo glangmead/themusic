@@ -51,13 +51,17 @@
         "arg2": 0.5
       }
     ],
+    "hierarchy": {
+      "root": "C",
+      "scale": "lydian",
+      "chord": {"degrees": [0, 2, 4], "inversion": 0}
+    },
     "noteMaterials": [
       {
-        "type": "scaleMaterial",
+        "type": "hierarchyMelody",
         "name": "melody",
-        "root": "C",
-        "scale": "lydian",
-        "intervalPickerEmitter": "degreePicker",
+        "level": "scale",
+        "degreeEmitter": "degreePicker",
         "octaveEmitter": "octaves"
       }
     ],

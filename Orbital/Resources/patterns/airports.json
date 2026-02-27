@@ -2,6 +2,11 @@
   "name": "Airports",
   "tableTracks": {
     "name": "Airports",
+    "hierarchy": {
+      "root": "A",
+      "scale": "chromatic",
+      "chord": {"degrees": [0, 4, 7], "inversion": 0}
+    },
     "emitters": [
       {
         "name": "melodyDegreePicker",
@@ -42,12 +47,6 @@
         "arg2": 40
       },
       {
-        "name": "chordDegreePicker",
-        "outputType": "int",
-        "function": "shuffle",
-        "candidates": ["0", "1", "2", "3"]
-      },
-      {
         "name": "chordOctaves",
         "outputType": "octave",
         "function": "random",
@@ -70,8 +69,8 @@
       {
         "name": "bassDegreePicker",
         "outputType": "int",
-        "function": "shuffle",
-        "candidates": ["0", "1", "2", "3"]
+        "function": "cyclic",
+        "candidates": ["0"]
       },
       {
         "name": "bassOctaves",
@@ -115,31 +114,34 @@
         "arg2": 0.5
       }
     ],
+    "hierarchyModulators": [
+      {
+        "name": "chordDrifter",
+        "level": "chord",
+        "operation": "T",
+        "n": 1,
+        "fireIntervalEmitter": "chordTimer"
+      }
+    ],
     "noteMaterials": [
       {
-        "type": "scaleMaterial",
+        "type": "hierarchyMelody",
         "name": "melody",
-        "root": "A",
-        "scale": "chromatic",
-        "intervalPickerEmitter": "melodyDegreePicker",
+        "level": "scale",
+        "degreeEmitter": "melodyDegreePicker",
         "octaveEmitter": "melodyOctaves"
       },
       {
-        "type": "scaleMaterial",
+        "type": "hierarchyChord",
         "name": "chords",
-        "root": "A",
-        "scale": "major",
-        "intervals": [[0,4,7,12], [4,7,11,16], [-3,0,4,7], [-3,0,5,9]],
-        "intervalPickerEmitter": "chordDegreePicker",
+        "voicing": "open",
         "octaveEmitter": "chordOctaves"
       },
       {
-        "type": "scaleMaterial",
+        "type": "hierarchyMelody",
         "name": "bassNotes",
-        "root": "A",
-        "scale": "major",
-        "intervals": [[0]],
-        "intervalPickerEmitter": "bassDegreePicker",
+        "level": "chord",
+        "degreeEmitter": "bassDegreePicker",
         "octaveEmitter": "bassOctaves"
       }
     ],

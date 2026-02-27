@@ -119,24 +119,26 @@ struct VoiceLedgerTests {
 
   @Test("beginRelease keeps voice unavailable until finishRelease")
   func deferredRelease() {
-    let ledger = VoiceLedger(voiceCount: 2)
-    let _ = ledger.takeAvailableVoice(60) // index 0
-    let _ = ledger.takeAvailableVoice(62) // index 1
+    // Use 3 voices so voice 2 stays available during the test, avoiding voice stealing.
+    let ledger = VoiceLedger(voiceCount: 3)
+    let _ = ledger.takeAvailableVoice(60) // voice 0
+    let _ = ledger.takeAvailableVoice(62) // voice 1
+    // voice 2 remains available
 
     // Begin release on note 60 — voice 0 moves to releasing
     let released = ledger.beginRelease(60)
     #expect(released == 0)
 
-    // Voice 0 is releasing, not available — next allocation should fail
-    let overflow = ledger.takeAvailableVoice(64)
-    #expect(overflow == nil, "Voice 0 should be releasing, not available")
+    // Available voice 2 is preferred over releasing voice 0
+    let next = ledger.takeAvailableVoice(64)
+    #expect(next == 2, "Available voice 2 should be used before stealing releasing voice 0")
 
-    // Note mapping is cleared, so voiceIndex returns nil
+    // Note mapping for 60 is cleared by beginRelease
     #expect(ledger.voiceIndex(for: 60) == nil)
 
-    // Finish release — voice 0 becomes available
+    // Finish release — voice 0 becomes available at end of queue
     ledger.finishRelease(voiceIndex: 0)
-    let reused = ledger.takeAvailableVoice(64)
+    let reused = ledger.takeAvailableVoice(66)
     #expect(reused == 0, "Voice 0 should be available after finishRelease")
   }
 
@@ -171,7 +173,8 @@ struct VoiceLedgerTests {
 
   @Test("Registered envelopes auto-release voice when all close")
   func autoReleaseViaEnvelopes() {
-    let ledger = VoiceLedger(voiceCount: 2)
+    // Use 3 voices so voice 2 stays available during the test, avoiding voice stealing.
+    let ledger = VoiceLedger(voiceCount: 3)
     let env = ADSR(envelope: EnvelopeData(
       attackTime: 0.01, decayTime: 0.01, sustainLevel: 1.0,
       releaseTime: 0.05, scale: 1.0
@@ -180,13 +183,15 @@ struct VoiceLedgerTests {
 
     let _ = ledger.takeAvailableVoice(60) // voice 0
     let _ = ledger.takeAvailableVoice(62) // voice 1
+    // voice 2 remains available
 
     // Begin release — appends finish callback on the envelope
     let released = ledger.beginRelease(60)
     #expect(released == 0)
 
-    // Voice 0 is releasing — not available
-    #expect(ledger.takeAvailableVoice(64) == nil)
+    // Available voice 2 is preferred over releasing voice 0
+    let next = ledger.takeAvailableVoice(64)
+    #expect(next == 2, "Available voice 2 should be used before stealing releasing voice 0")
 
     // Start the envelope's attack, then release
     env.noteOn(MidiNote(note: 60, velocity: 127))

@@ -278,38 +278,30 @@ struct HierarchyModulatorRowSyntax: Codable, Equatable, Identifiable {
 
 /// A row in the Note Material table. Unified enum covering all note material strategies.
 /// The JSON `type` field selects the case.
+/// All note materials require the pattern-level `hierarchy` to be defined.
 enum NoteMaterialSyntax: Codable, Equatable {
 
-  /// Scale-degree–based melody/chord material. Degrees are resolved against a fixed
-  /// root + scale (not the hierarchy chord layer).
-  case scaleMaterial(ScaleMaterialSyntax)
-
-  /// Chord-relative or scale-relative melody using MelodyNotes resolved via the hierarchy.
+  /// Single-note melody resolved through the shared PitchHierarchy.
+  /// At .scale level, degreeEmitter emits scale degree values directly.
+  /// At .chord level, degreeEmitter emits chord-tone indices into voicedDegrees.
   case hierarchyMelody(HierarchyMelodySyntax)
 
   /// Voiced chord from all of the hierarchy's current chord degrees.
   case hierarchyChord(HierarchyChordSyntax)
 
-  /// Single bass note — the hierarchy's inversion-determined lowest degree.
-  case hierarchyBass(HierarchyBassSyntax)
-
   // MARK: Forwarded properties
 
   var name: String {
     switch self {
-    case .scaleMaterial(let s):   return s.name
     case .hierarchyMelody(let s): return s.name
     case .hierarchyChord(let s):  return s.name
-    case .hierarchyBass(let s):   return s.name
     }
   }
 
   var id: UUID {
     switch self {
-    case .scaleMaterial(let s):   return s.id
     case .hierarchyMelody(let s): return s.id
     case .hierarchyChord(let s):  return s.id
-    case .hierarchyBass(let s):   return s.id
     }
   }
 
@@ -318,137 +310,63 @@ enum NoteMaterialSyntax: Codable, Equatable {
   private enum TypeKey: String, CodingKey { case type }
 
   private enum MaterialType: String, Codable {
-    case scaleMaterial, hierarchyMelody, hierarchyChord, hierarchyBass
+    case hierarchyMelody, hierarchyChord
   }
 
   init(from decoder: Decoder) throws {
     let typeContainer = try decoder.container(keyedBy: TypeKey.self)
     let materialType = try typeContainer.decode(MaterialType.self, forKey: .type)
     switch materialType {
-    case .scaleMaterial:
-      self = .scaleMaterial(try ScaleMaterialSyntax(from: decoder))
     case .hierarchyMelody:
       self = .hierarchyMelody(try HierarchyMelodySyntax(from: decoder))
     case .hierarchyChord:
       self = .hierarchyChord(try HierarchyChordSyntax(from: decoder))
-    case .hierarchyBass:
-      self = .hierarchyBass(try HierarchyBassSyntax(from: decoder))
     }
   }
 
   func encode(to encoder: Encoder) throws {
     var typeContainer = encoder.container(keyedBy: TypeKey.self)
     switch self {
-    case .scaleMaterial(let s):
-      try typeContainer.encode(MaterialType.scaleMaterial, forKey: .type)
-      try s.encode(to: encoder)
     case .hierarchyMelody(let s):
       try typeContainer.encode(MaterialType.hierarchyMelody, forKey: .type)
       try s.encode(to: encoder)
     case .hierarchyChord(let s):
       try typeContainer.encode(MaterialType.hierarchyChord, forKey: .type)
       try s.encode(to: encoder)
-    case .hierarchyBass(let s):
-      try typeContainer.encode(MaterialType.hierarchyBass, forKey: .type)
-      try s.encode(to: encoder)
     }
-  }
-}
-
-// MARK: - Scale Material
-
-/// Note material that resolves scale degrees against a fixed root + scale.
-/// If `intervals` is nil, the picker emitter emits scale degree values directly.
-/// If `intervals` is present, the picker emitter emits an index into that array.
-struct ScaleMaterialSyntax: Codable, Equatable, Identifiable {
-  var id: UUID
-  var name: String
-  var root: String             // NoteClass name, e.g. "A"
-  var scale: String            // Scale name, e.g. "chromatic"
-  /// Each entry is a list of scale degrees (single = melody note, multi = chord).
-  /// Absent means the picker emitter emits degree values directly.
-  var intervals: [[Int]]?
-  /// Name of an int-output emitter that either picks an index (when intervals present)
-  /// or emits degree values directly (when intervals absent).
-  var intervalPickerEmitter: String
-  /// Name of an int/octave-output emitter for the base octave.
-  var octaveEmitter: String
-
-  enum CodingKeys: String, CodingKey {
-    case id, name, root, scale, intervals, intervalPickerEmitter, octaveEmitter, type
-  }
-
-  init(
-    id: UUID = UUID(),
-    name: String,
-    root: String,
-    scale: String,
-    intervals: [[Int]]? = nil,
-    intervalPickerEmitter: String,
-    octaveEmitter: String
-  ) {
-    self.id = id
-    self.name = name
-    self.root = root
-    self.scale = scale
-    self.intervals = intervals
-    self.intervalPickerEmitter = intervalPickerEmitter
-    self.octaveEmitter = octaveEmitter
-  }
-
-  init(from decoder: Decoder) throws {
-    let c = try decoder.container(keyedBy: CodingKeys.self)
-    id = try c.decodeIfPresent(UUID.self, forKey: .id) ?? UUID()
-    name = try c.decode(String.self, forKey: .name)
-    root = try c.decode(String.self, forKey: .root)
-    scale = try c.decode(String.self, forKey: .scale)
-    intervals = try c.decodeIfPresent([[Int]].self, forKey: .intervals)
-    intervalPickerEmitter = try c.decode(String.self, forKey: .intervalPickerEmitter)
-    octaveEmitter = try c.decode(String.self, forKey: .octaveEmitter)
-  }
-
-  func encode(to encoder: Encoder) throws {
-    var c = encoder.container(keyedBy: CodingKeys.self)
-    try c.encodeIfPresent(id, forKey: .id)
-    try c.encode(name, forKey: .name)
-    try c.encode(root, forKey: .root)
-    try c.encode(scale, forKey: .scale)
-    try c.encodeIfPresent(intervals, forKey: .intervals)
-    try c.encode(intervalPickerEmitter, forKey: .intervalPickerEmitter)
-    try c.encode(octaveEmitter, forKey: .octaveEmitter)
   }
 }
 
 // MARK: - Hierarchy Melody
 
-/// Note material that resolves MelodyNotes through the shared PitchHierarchy.
+/// Note material that produces single notes by resolving degrees through the shared PitchHierarchy.
+/// At .scale level, degreeEmitter emits scale degree values directly (supports large ranges with
+/// octave wrapping, e.g. chromatic scale with fragment-pool emitter).
+/// At .chord level, degreeEmitter emits chord-tone indices into the hierarchy's voicedDegrees.
 struct HierarchyMelodySyntax: Codable, Equatable, Identifiable {
   var id: UUID
   var name: String
-  /// .chord: chordTone field indexes into voicedDegrees.
-  /// .scale: degree field is used directly as a scale degree.
   var level: HierarchyLevel
-  var notes: [HierarchyMelodyNoteSyntax]
-  var ordering: String   // "cyclic", "shuffle", or "random"
+  /// Name of an int-output emitter that emits scale degrees (.scale) or chord-tone indices (.chord).
+  var degreeEmitter: String
+  /// Name of an int/octave-output emitter for the base octave.
   var octaveEmitter: String
 
   enum CodingKeys: String, CodingKey {
-    case id, name, level, notes, ordering, octaveEmitter, type
+    case id, name, level, degreeEmitter, octaveEmitter, type
   }
 
   init(
     id: UUID = UUID(),
     name: String,
     level: HierarchyLevel,
-    notes: [HierarchyMelodyNoteSyntax],
-    ordering: String = "cyclic",
+    degreeEmitter: String,
     octaveEmitter: String
   ) {
     self.id = id
     self.name = name
     self.level = level
-    self.notes = notes
-    self.ordering = ordering
+    self.degreeEmitter = degreeEmitter
     self.octaveEmitter = octaveEmitter
   }
 
@@ -457,8 +375,7 @@ struct HierarchyMelodySyntax: Codable, Equatable, Identifiable {
     id = try c.decodeIfPresent(UUID.self, forKey: .id) ?? UUID()
     name = try c.decode(String.self, forKey: .name)
     level = try c.decode(HierarchyLevel.self, forKey: .level)
-    notes = try c.decode([HierarchyMelodyNoteSyntax].self, forKey: .notes)
-    ordering = try c.decodeIfPresent(String.self, forKey: .ordering) ?? "cyclic"
+    degreeEmitter = try c.decode(String.self, forKey: .degreeEmitter)
     octaveEmitter = try c.decode(String.self, forKey: .octaveEmitter)
   }
 
@@ -467,40 +384,8 @@ struct HierarchyMelodySyntax: Codable, Equatable, Identifiable {
     try c.encodeIfPresent(id, forKey: .id)
     try c.encode(name, forKey: .name)
     try c.encode(level, forKey: .level)
-    try c.encode(notes, forKey: .notes)
-    try c.encode(ordering, forKey: .ordering)
+    try c.encode(degreeEmitter, forKey: .degreeEmitter)
     try c.encode(octaveEmitter, forKey: .octaveEmitter)
-  }
-}
-
-/// A single note spec within a HierarchyMelody.
-struct HierarchyMelodyNoteSyntax: Codable, Equatable {
-  /// Chord-tone index (used at .chord level). Index into voicedDegrees.
-  var chordTone: Int?
-  /// Scale degree (used at .scale level).
-  var degree: Int?
-  /// Optional perturbation relative to the resolved tone.
-  var perturbation: PerturbationSyntax?
-
-  /// Convert to a MelodyNote, using chordToneIndex for both chord and scale levels
-  /// (at scale level, chordToneIndex IS the scale degree — resolve() handles the distinction).
-  func toMelodyNote() -> MelodyNote? {
-    let idx = chordTone ?? degree
-    guard let idx else { return nil }
-    let pert = perturbation?.toPerturbation() ?? .none
-    return MelodyNote(chordToneIndex: idx, perturbation: pert)
-  }
-}
-
-/// Optional perturbation applied after resolving a chord tone or scale degree.
-struct PerturbationSyntax: Codable, Equatable {
-  var scaleDegree: Int?
-  var chromatic: Int?
-
-  func toPerturbation() -> Perturbation {
-    if let sd = scaleDegree { return .scaleDegree(sd) }
-    if let ch = chromatic { return .chromatic(ch) }
-    return .none
   }
 }
 
@@ -511,22 +396,23 @@ struct HierarchyChordSyntax: Codable, Equatable, Identifiable {
   var id: UUID
   var name: String
   var voicing: VoicingStyle
-  var baseOctave: Int
+  /// Name of an int/octave-output emitter for the base octave.
+  var octaveEmitter: String
 
   enum CodingKeys: String, CodingKey {
-    case id, name, voicing, baseOctave, type
+    case id, name, voicing, octaveEmitter, type
   }
 
   init(
     id: UUID = UUID(),
     name: String,
     voicing: VoicingStyle = .closed,
-    baseOctave: Int = 4
+    octaveEmitter: String
   ) {
     self.id = id
     self.name = name
     self.voicing = voicing
-    self.baseOctave = baseOctave
+    self.octaveEmitter = octaveEmitter
   }
 
   init(from decoder: Decoder) throws {
@@ -534,7 +420,7 @@ struct HierarchyChordSyntax: Codable, Equatable, Identifiable {
     id = try c.decodeIfPresent(UUID.self, forKey: .id) ?? UUID()
     name = try c.decode(String.self, forKey: .name)
     voicing = try c.decodeIfPresent(VoicingStyle.self, forKey: .voicing) ?? .closed
-    baseOctave = try c.decodeIfPresent(Int.self, forKey: .baseOctave) ?? 4
+    octaveEmitter = try c.decode(String.self, forKey: .octaveEmitter)
   }
 
   func encode(to encoder: Encoder) throws {
@@ -542,40 +428,7 @@ struct HierarchyChordSyntax: Codable, Equatable, Identifiable {
     try c.encodeIfPresent(id, forKey: .id)
     try c.encode(name, forKey: .name)
     try c.encode(voicing, forKey: .voicing)
-    try c.encode(baseOctave, forKey: .baseOctave)
-  }
-}
-
-// MARK: - Hierarchy Bass
-
-/// Note material that emits a single bass note — the hierarchy's inversion-determined lowest degree.
-struct HierarchyBassSyntax: Codable, Equatable, Identifiable {
-  var id: UUID
-  var name: String
-  var baseOctave: Int
-
-  enum CodingKeys: String, CodingKey {
-    case id, name, baseOctave, type
-  }
-
-  init(id: UUID = UUID(), name: String, baseOctave: Int = 2) {
-    self.id = id
-    self.name = name
-    self.baseOctave = baseOctave
-  }
-
-  init(from decoder: Decoder) throws {
-    let c = try decoder.container(keyedBy: CodingKeys.self)
-    id = try c.decodeIfPresent(UUID.self, forKey: .id) ?? UUID()
-    name = try c.decode(String.self, forKey: .name)
-    baseOctave = try c.decodeIfPresent(Int.self, forKey: .baseOctave) ?? 2
-  }
-
-  func encode(to encoder: Encoder) throws {
-    var c = encoder.container(keyedBy: CodingKeys.self)
-    try c.encodeIfPresent(id, forKey: .id)
-    try c.encode(name, forKey: .name)
-    try c.encode(baseOctave, forKey: .baseOctave)
+    try c.encode(octaveEmitter, forKey: .octaveEmitter)
   }
 }
 

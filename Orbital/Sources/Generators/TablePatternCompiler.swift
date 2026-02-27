@@ -460,43 +460,13 @@ enum TablePatternCompiler {
     hierarchy: PitchHierarchy?
   ) throws -> any IteratorProtocol<[MidiNote]> {
     switch noteMat {
-    case .scaleMaterial(let s):
-      return try compileScaleMaterial(s, emitters: emitters)
     case .hierarchyMelody(let s):
       guard let h = hierarchy else { throw TableCompileError.missingHierarchy(referencedBy: s.name) }
       return try compileHierarchyMelody(s, emitters: emitters, hierarchy: h)
     case .hierarchyChord(let s):
       guard let h = hierarchy else { throw TableCompileError.missingHierarchy(referencedBy: s.name) }
-      return compileHierarchyChord(s, hierarchy: h)
-    case .hierarchyBass(let s):
-      guard let h = hierarchy else { throw TableCompileError.missingHierarchy(referencedBy: s.name) }
-      return compileHierarchyBass(s, hierarchy: h)
+      return try compileHierarchyChord(s, emitters: emitters, hierarchy: h)
     }
-  }
-
-  private static func compileScaleMaterial(
-    _ noteMat: ScaleMaterialSyntax,
-    emitters: [String: CompiledEmitter]
-  ) throws -> any IteratorProtocol<[MidiNote]> {
-    let scale = NoteGeneratorSyntax.resolveScale(noteMat.scale)
-    let root = NoteGeneratorSyntax.resolveNoteClass(noteMat.root)
-
-    guard let pickerEmitter = emitters[noteMat.intervalPickerEmitter],
-          let pickerIter = pickerEmitter.intIterator() else {
-      throw TableCompileError.unknownEmitter(name: noteMat.intervalPickerEmitter, referencedBy: noteMat.name)
-    }
-    guard let octEmitter = emitters[noteMat.octaveEmitter],
-          let octIter = octEmitter.intIterator() else {
-      throw TableCompileError.unknownEmitter(name: noteMat.octaveEmitter, referencedBy: noteMat.name)
-    }
-
-    return ScaleMaterialGenerator(
-      scale: scale,
-      root: root,
-      intervals: noteMat.intervals,
-      intervalPicker: pickerIter,
-      octaveEmitter: octIter
-    )
   }
 
   private static func compileHierarchyMelody(
@@ -504,32 +474,32 @@ enum TablePatternCompiler {
     emitters: [String: CompiledEmitter],
     hierarchy: PitchHierarchy
   ) throws -> any IteratorProtocol<[MidiNote]> {
+    guard let degEmitter = emitters[noteMat.degreeEmitter],
+          let degIter = degEmitter.intIterator() else {
+      throw TableCompileError.unknownEmitter(name: noteMat.degreeEmitter, referencedBy: noteMat.name)
+    }
     guard let octEmitter = emitters[noteMat.octaveEmitter],
           let octIter = octEmitter.intIterator() else {
       throw TableCompileError.unknownEmitter(name: noteMat.octaveEmitter, referencedBy: noteMat.name)
     }
-    let melodyNotes = noteMat.notes.compactMap { $0.toMelodyNote() }
     return HierarchyMelodyGenerator(
       hierarchy: hierarchy,
       level: noteMat.level,
-      melodyNotes: melodyNotes,
-      ordering: noteMat.ordering,
+      degreeEmitter: degIter,
       octaveEmitter: octIter
     )
   }
 
   private static func compileHierarchyChord(
     _ noteMat: HierarchyChordSyntax,
+    emitters: [String: CompiledEmitter],
     hierarchy: PitchHierarchy
-  ) -> any IteratorProtocol<[MidiNote]> {
-    HierarchyChordGenerator(hierarchy: hierarchy, voicing: noteMat.voicing, baseOctave: noteMat.baseOctave)
-  }
-
-  private static func compileHierarchyBass(
-    _ noteMat: HierarchyBassSyntax,
-    hierarchy: PitchHierarchy
-  ) -> any IteratorProtocol<[MidiNote]> {
-    HierarchyBassGenerator(hierarchy: hierarchy, baseOctave: noteMat.baseOctave)
+  ) throws -> any IteratorProtocol<[MidiNote]> {
+    guard let octEmitter = emitters[noteMat.octaveEmitter],
+          let octIter = octEmitter.intIterator() else {
+      throw TableCompileError.unknownEmitter(name: noteMat.octaveEmitter, referencedBy: noteMat.name)
+    }
+    return HierarchyChordGenerator(hierarchy: hierarchy, voicing: noteMat.voicing, octaveEmitter: octIter)
   }
 
   // MARK: - Preset Modulator Compilation
