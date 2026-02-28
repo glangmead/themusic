@@ -47,13 +47,6 @@
 			remoteGlobalIDString = 9BC0FCA62E704EA900472A5A;
 			remoteInfo = ProgressionPlayer;
 		};
-		9BC0FCBF2E704EAA00472A5A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9BC0FC9F2E704EA900472A5A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9BC0FCA62E704EA900472A5A;
-			remoteInfo = ProgressionPlayer;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -71,7 +64,7 @@
 		9BB2CD372F44E1CD0019A2D4 /* patterns */ = {isa = PBXFileReference; lastKnownFileType = folder; path = patterns; sourceTree = "<group>"; };
 		9BC0FCA72E704EA900472A5A /* Orbital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Orbital.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC0FCB42E704EAA00472A5A /* OrbitalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrbitalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9BC0FCBE2E704EAA00472A5A /* OrbitalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrbitalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BCE264A2F526CF1002D70CC /* Orbital.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Orbital.xctestplan; sourceTree = "<group>"; };
 		9BCED9102F1FD0A30029ED1B /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		9BCED98F2F246B150029ED1B /* Orbital.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = Orbital.icon; sourceTree = "<group>"; };
 		9BFFD9802E7DABD200E7CB55 /* Orbital.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Orbital.entitlements; sourceTree = "<group>"; };
@@ -193,13 +186,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9BC0FCBB2E704EAA00472A5A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -253,6 +239,7 @@
 		9BC0FC9E2E704EA900472A5A = {
 			isa = PBXGroup;
 			children = (
+				9BCE264A2F526CF1002D70CC /* Orbital.xctestplan */,
 				9B00F9D82F42402E0008058E /* AGENTS.md */,
 				9B935B932EDE0F0600600E63 /* Resources */,
 				9BFFD9802E7DABD200E7CB55 /* Orbital.entitlements */,
@@ -271,7 +258,6 @@
 			children = (
 				9BC0FCA72E704EA900472A5A /* Orbital.app */,
 				9BC0FCB42E704EAA00472A5A /* OrbitalTests.xctest */,
-				9BC0FCBE2E704EAA00472A5A /* OrbitalUITests.xctest */,
 				CC70A99AE6E5F83E5B667F92 /* orbital-play */,
 				355937DF421092FF815B50F7 /* OrbitalCLITests.xctest */,
 			);
@@ -382,24 +368,6 @@
 			productReference = 9BC0FCB42E704EAA00472A5A /* OrbitalTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		9BC0FCBD2E704EAA00472A5A /* OrbitalUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9BC0FCCE2E704EAA00472A5A /* Build configuration list for PBXNativeTarget "OrbitalUITests" */;
-			buildPhases = (
-				9BC0FCBA2E704EAA00472A5A /* Sources */,
-				9BC0FCBB2E704EAA00472A5A /* Frameworks */,
-				9BC0FCBC2E704EAA00472A5A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9BC0FCC02E704EAA00472A5A /* PBXTargetDependency */,
-			);
-			name = OrbitalUITests;
-			productName = ProgressionPlayerUITests;
-			productReference = 9BC0FCBE2E704EAA00472A5A /* OrbitalUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -414,10 +382,6 @@
 						CreatedOnToolsVersion = 16.4;
 					};
 					9BC0FCB32E704EAA00472A5A = {
-						CreatedOnToolsVersion = 16.4;
-						TestTargetID = 9BC0FCA62E704EA900472A5A;
-					};
-					9BC0FCBD2E704EAA00472A5A = {
 						CreatedOnToolsVersion = 16.4;
 						TestTargetID = 9BC0FCA62E704EA900472A5A;
 					};
@@ -447,7 +411,6 @@
 			targets = (
 				9BC0FCA62E704EA900472A5A /* Orbital */,
 				9BC0FCB32E704EAA00472A5A /* OrbitalTests */,
-				9BC0FCBD2E704EAA00472A5A /* OrbitalUITests */,
 				2F57A792364534F331D2AAF6 /* OrbitalCLI */,
 				668BAA23EB5AC1A1FA411977 /* OrbitalCLITests */,
 			);
@@ -470,13 +433,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9BC0FCB22E704EAA00472A5A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9BC0FCBC2E704EAA00472A5A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -508,13 +464,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9BC0FCBA2E704EAA00472A5A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C83BE9E5D4126FF29AA709DA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -538,11 +487,6 @@
 			isa = PBXTargetDependency;
 			target = 9BC0FCA62E704EA900472A5A /* Orbital */;
 			targetProxy = 9BC0FCB52E704EAA00472A5A /* PBXContainerItemProxy */;
-		};
-		9BC0FCC02E704EAA00472A5A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9BC0FCA62E704EA900472A5A /* Orbital */;
-			targetProxy = 9BC0FCBF2E704EAA00472A5A /* PBXContainerItemProxy */;
 		};
 		A3A584EBC08F4E0FE875311E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -801,42 +745,6 @@
 			};
 			name = Release;
 		};
-		9BC0FCCF2E704EAA00472A5A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5Y5NG75847;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.langmead.ProgressionPlayerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ProgressionPlayer;
-			};
-			name = Debug;
-		};
-		9BC0FCD02E704EAA00472A5A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5Y5NG75847;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.langmead.ProgressionPlayerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ProgressionPlayer;
-			};
-			name = Release;
-		};
 		A3F1BDF30C8DE578A30DCC05 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -901,15 +809,6 @@
 			buildConfigurations = (
 				9BC0FCCC2E704EAA00472A5A /* Debug */,
 				9BC0FCCD2E704EAA00472A5A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9BC0FCCE2E704EAA00472A5A /* Build configuration list for PBXNativeTarget "OrbitalUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9BC0FCCF2E704EAA00472A5A /* Debug */,
-				9BC0FCD02E704EAA00472A5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

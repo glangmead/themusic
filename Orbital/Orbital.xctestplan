@@ -1,0 +1,30 @@
+{
+  "configurations" : [
+    {
+      "id" : "6C90BC95-DA6C-469D-8400-6BEC57386DB1",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "performanceAntipatternCheckerEnabled" : true,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Orbital.xcodeproj",
+      "identifier" : "9BC0FCA62E704EA900472A5A",
+      "name" : "Orbital"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Orbital.xcodeproj",
+        "identifier" : "9BC0FCB32E704EAA00472A5A",
+        "name" : "OrbitalTests"
+      }
+    }
+  ],
+  "version" : 1
+}
