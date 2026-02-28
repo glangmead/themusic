@@ -108,30 +108,72 @@ final class VoiceLedger: @unchecked Sendable {
     lock.withLock { $0.noteToVoiceIdx }
   }
   
-  func takeAvailableVoice(_ note: MidiValue) -> Int? {
+  /// The result of a voice allocation attempt.
+  struct VoiceAllocation {
+    let voiceIdx: Int
+    /// True only for tier-3: a sustaining (noteOnned) voice was stolen.
+    /// Callers should treat this as a retrigger and not increment activeNoteCount.
+    let wasNoteOnnedSteal: Bool
+  }
+
+  /// Full allocation result — use this when the caller needs to distinguish tier-3 steals.
+  func takeAvailableVoiceAllocation(_ note: MidiValue) -> VoiceAllocation? {
     lock.withLock { state in
-      // Prefer a genuinely available voice
+      // Helper: move a voice to the back of indexQueue (marks it as most recently activated).
+      func activate(_ idx: Int) {
+        state.indexQueue.removeAll(where: { $0 == idx })
+        state.indexQueue.append(idx)
+      }
+
+      // Tier 1: Prefer a genuinely available voice (oldest first via indexQueue).
       if let availableIdx = state.indexQueue.first(where: {
         state.availableVoiceIdxs.contains($0)
       }) {
         state.availableVoiceIdxs.remove(availableIdx)
         state.noteOnnedVoiceIdxs.insert(availableIdx)
         state.noteToVoiceIdx[note] = availableIdx
-        state.indexQueue.removeAll(where: { $0 == availableIdx })
-        return availableIdx
+        activate(availableIdx)
+        return VoiceAllocation(voiceIdx: availableIdx, wasNoteOnnedSteal: false)
       }
-      // Voice stealing: steal a releasing voice (already fading out,
-      // least audible impact). The new noteOn will reset the ADSR
-      // to attack phase; any pending finishRelease callbacks are
-      // guarded by the releasingVoiceIdxs check and become no-ops.
-      if let releasingIdx = state.releasingVoiceIdxs.first {
+
+      // Tier 2: Steal a releasing voice (already fading out, least audible impact).
+      // The new noteOn picks up from the current envelope level — no click.
+      // Any pending finishRelease callbacks become no-ops because the voice
+      // is removed from releasingVoiceIdxs before they fire.
+      if let releasingIdx = state.indexQueue.first(where: {
+        state.releasingVoiceIdxs.contains($0)
+      }) {
         state.releasingVoiceIdxs.remove(releasingIdx)
         state.noteOnnedVoiceIdxs.insert(releasingIdx)
         state.noteToVoiceIdx[note] = releasingIdx
-        return releasingIdx
+        activate(releasingIdx)
+        return VoiceAllocation(voiceIdx: releasingIdx, wasNoteOnnedSteal: false)
       }
+
+      // Tier 3: Steal the oldest noteOnned voice (front of indexQueue).
+      // The new noteOn picks up from the current envelope level — no click.
+      // The old note's pending noteOff becomes a no-op because its
+      // noteToVoiceIdx entry is evicted here.
+      if let oldestIdx = state.indexQueue.first(where: {
+        state.noteOnnedVoiceIdxs.contains($0)
+      }) {
+        // Evict the old note's mapping for this voice.
+        if let oldNote = state.noteToVoiceIdx.first(where: { $0.value == oldestIdx })?.key {
+          state.noteToVoiceIdx.removeValue(forKey: oldNote)
+        }
+        state.noteToVoiceIdx[note] = oldestIdx
+        // noteOnnedVoiceIdxs unchanged — voice is still noteOnned, now for the new note.
+        activate(oldestIdx)
+        return VoiceAllocation(voiceIdx: oldestIdx, wasNoteOnnedSteal: true)
+      }
+
       return nil
     }
+  }
+
+  /// Convenience wrapper — use when only the voice index is needed.
+  func takeAvailableVoice(_ note: MidiValue) -> Int? {
+    takeAvailableVoiceAllocation(note)?.voiceIdx
   }
   
   func voiceIndex(for note: MidiValue) -> Int? {
@@ -186,7 +228,8 @@ final class VoiceLedger: @unchecked Sendable {
       guard state.releasingVoiceIdxs.contains(voiceIndex) else { return }
       state.releasingVoiceIdxs.remove(voiceIndex)
       state.availableVoiceIdxs.insert(voiceIndex)
-      state.indexQueue.append(voiceIndex)
+      // Voice remains in indexQueue at its current position (representing its age
+      // relative to when it was last noteOnned — oldest available stays near the front).
     }
   }
   
@@ -198,7 +241,7 @@ final class VoiceLedger: @unchecked Sendable {
         state.noteOnnedVoiceIdxs.remove(voiceIdx)
         state.availableVoiceIdxs.insert(voiceIdx)
         state.noteToVoiceIdx.removeValue(forKey: note)
-        state.indexQueue.append(voiceIdx)
+        // Voice remains in indexQueue at its current position.
         return voiceIdx
       }
       return nil

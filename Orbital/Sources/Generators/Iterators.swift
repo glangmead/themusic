@@ -57,8 +57,13 @@ class WaitingIterator<Element>: Sequence, IteratorProtocol {
 /// Used as the implementation for the "markovChord" hierarchy modulator operation.
 struct MarkovChordIterator: Sequence, IteratorProtocol {
   private var current: ChordInScale.RomanNumerals = .I
+  private var isFirstCall = true
 
   mutating func next() -> ChordInScale? {
+    guard !isFirstCall else {
+      isFirstCall = false
+      return ChordInScale(romanNumeral: current)
+    }
     let candidates = ChordInScale.RomanNumerals.stateTransitionsBaroqueClassicalMajor(current)
     guard let nextChord = ChordInScale.RomanNumerals.weightedDraw(items: candidates) else { return nil }
     current = nextChord

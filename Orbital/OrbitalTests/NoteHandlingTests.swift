@@ -39,15 +39,11 @@ struct VoiceLedgerTests {
     let _ = ledger.takeAvailableVoice(60) // takes index 0
     let _ = ledger.takeAvailableVoice(62) // takes index 1
 
-    // Full — next allocation should fail
-    let overflow = ledger.takeAvailableVoice(64)
-    #expect(overflow == nil, "Should be full")
-
-    // Release note 60 (index 0)
+    // Release note 60 — voice 0 returns to the pool
     let released = ledger.releaseVoice(60)
     #expect(released == 0, "Should release index 0")
 
-    // Now we can allocate again
+    // Next allocation reuses voice 0 (now available)
     let reused = ledger.takeAvailableVoice(64)
     #expect(reused == 0, "Should reuse released index 0")
   }
@@ -70,15 +66,19 @@ struct VoiceLedgerTests {
     #expect(second == 2, "Should reuse index 2 second")
   }
 
-  @Test("Returns nil when all voices are exhausted")
-  func exhaustion() {
+  @Test("Tier-3 steals oldest noteOnned voice when all voices are busy")
+  func exhaustionStealsOldest() {
     let ledger = VoiceLedger(voiceCount: 2)
     let a = ledger.takeAvailableVoice(60)
     let b = ledger.takeAvailableVoice(62)
+    // Tier-3: steals the oldest noteOnned voice (index 0, which played note 60)
     let c = ledger.takeAvailableVoice(64)
-    #expect(a != nil)
-    #expect(b != nil)
-    #expect(c == nil, "Third allocation should fail with 2 voices")
+    #expect(a == 0)
+    #expect(b == 1)
+    #expect(c == 0, "Tier-3 should steal oldest noteOnned voice (index 0)")
+    // Old note 60 mapping is evicted; note 64 now owns index 0
+    #expect(ledger.voiceIndex(for: 60) == nil, "Old note mapping should be evicted")
+    #expect(ledger.voiceIndex(for: 64) == 0, "New note should own the stolen voice")
   }
 
   @Test("voiceIndex returns nil for untracked note")
@@ -412,15 +412,16 @@ struct PresetNoteOnOffTests {
     }
   }
 
-  @Test("Voice exhaustion drops extra notes gracefully")
+  @Test("Voice exhaustion steals oldest voice for new note")
   func voiceExhaustion() {
     let preset = makeTestPreset(numVoices: 2)
     preset.noteOn(MidiNote(note: 60, velocity: 127))
     preset.noteOn(MidiNote(note: 64, velocity: 127))
-    // Both voices taken — third note should be dropped
+    // Both voices busy — tier-3 steals voice 0 (note 60) for note 67.
+    // The stolen voice remains noteOnned, so activeNoteCount stays at 2.
     preset.noteOn(MidiNote(note: 67, velocity: 127))
     #expect(preset.activeNoteCount == 2,
-            "Should still be 2 since third note was dropped")
+            "Stolen voice stays noteOnned; count should remain 2")
   }
 
   @Test("globalOffset shifts the note for freq calculation")

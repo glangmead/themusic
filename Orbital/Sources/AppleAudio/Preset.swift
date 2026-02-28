@@ -305,9 +305,11 @@ class Preset: NoteHandler {
     if let voiceIdx = ledger.voiceIndex(for: noteVelIn.note) {
       triggerVoice(voiceIdx, note: noteVel, isRetrigger: true)
     }
-    // Otherwise allocate a fresh voice
-    else if let voiceIdx = ledger.takeAvailableVoice(noteVelIn.note) {
-      triggerVoice(voiceIdx, note: noteVel, isRetrigger: false)
+    // Otherwise allocate a fresh voice (or steal one via tier-3)
+    else if let allocation = ledger.takeAvailableVoiceAllocation(noteVelIn.note) {
+      // Tier-3 steals a sustaining voice: the stolen voice was already counted,
+      // so treat it as a retrigger to avoid inflating activeNoteCount.
+      triggerVoice(allocation.voiceIdx, note: noteVel, isRetrigger: allocation.wasNoteOnnedSteal)
     } else {
     }
   }

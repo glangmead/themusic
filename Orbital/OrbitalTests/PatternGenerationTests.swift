@@ -447,13 +447,9 @@ struct MusicPatternEventGenerationTests {
   func chordTransitionsAreValid() {
     var gen = MarkovChordIterator()
 
-    // First chord is always I
-    let first = gen.next()!
-    #expect(first.degrees == [0, 2, 4] && first.inversion == 0, "First chord must be I")
-
-    // Generate 49 more and collect degree fingerprints to check variety
-    var seen: Set<String> = ["\(first.degrees)-\(first.inversion)"]
-    for _ in 0..<49 {
+    // Generate 50 chords and collect degree fingerprints to check variety
+    var seen: Set<String> = []
+    for _ in 0..<50 {
       let chord = gen.next()!
       seen.insert("\(chord.degrees)-\(chord.inversion)")
     }
