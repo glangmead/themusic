@@ -130,23 +130,57 @@ Uppercase target = tonicize to major; lowercase target = tonicize to minor:
 | `viio7/V` | C major | viio7 chord in G major |
 | `V6/5/IV` | C major | V6/5 chord in F major |
 
-Multiple layers of application are parsed right-to-left at the last `/` preceding a Roman numeral letter.
+Multiple layers of application are parsed right-to-left at the last `/` preceding a Roman numeral letter. Applied chord targets may now carry a `b` or `#` prefix:
 
-#### Unsupported chords
+| Applied chord | Home key | Resolved as |
+|---|---|---|
+| `V/V` | C major | V chord in G major |
+| `V/vi` | C major | V chord in A minor |
+| `viio7/V` | C major | viio7 chord in G major |
+| `V6/5/IV` | C major | V6/5 chord in F major |
+| `V/bIII` | C major | V chord in E♭ major |
 
-The following chord types are not expressible as diatonic scale degrees and are silently ignored at compile time (the harmony state is left unchanged):
+#### Chromatic harmony — flat/sharp prefix, Neapolitan, augmented sixths
 
-| Symbol | Reason |
-|---|---|
-| `N` / `N6` | Neapolitan — chromatic flat-II chord |
-| `It6` | Italian augmented sixth |
-| `Ger6/5` / `Ger7` | German augmented sixth |
-| `Fr4/3` | French augmented sixth |
-| `bII`, `bVI`, etc. | Flat-prefixed chromatic chords |
-| `#IV`, etc. | Sharp-prefixed chromatic chords |
-| `vo` / `vo6` | Diminished chord on scale degree 5 (non-standard numeral) |
+`setRoman` handles chromatic chords via the **perturbation** system: each chord tone carries an integer semitone offset that is applied after the diatonic pitch is resolved. This makes chromatic chords sound correct without abandoning the scale-degree framework.
 
-The `romantext_to_orbital.py` converter prints a warning to stderr for each skipped chord.
+**Flat/sharp prefix chords** — `bII`, `bVII`, `#IV`, etc.:
+
+The `b` or `#` prefix lowers or raises the chord root by one semitone from its diatonic position. All chord tones are adjusted to maintain the chord's quality (major/minor/diminished). For example, `bVII` in C major is a B♭ major triad: the root is lowered from B to B♭, while D and F are already in the right place.
+
+```json
+{ "beat": 0, "op": "setRoman", "roman": "bVII" }
+```
+
+**Neapolitan chord** — `N` and `N6`:
+
+`N` is an alias for `bII` (flat-II major triad, root position). `N6` is an alias for `bII6` (first inversion). In C major, `N6` = D♭ major triad with F in the bass.
+
+```json
+{ "beat": 0, "op": "setRoman", "roman": "N6" }
+```
+
+**Augmented sixth chords** — `It6`, `Ger6/5`, `Ger7`, `Fr4/3`, `Fr6`:
+
+These chromatic chords are defined by fixed pitch targets (semitones above the tonic), independent of the scale. The perturbations are computed automatically from the current key context so the correct spelling always sounds.
+
+| Symbol | Notes (above tonic) | Chord tones |
+|---|---|---|
+| `It6` | ♭6, 8va, ♯4+8va | Ab–C–F♯ |
+| `Ger6/5` | ♭6, 8va, ♭3+8va, ♯4+8va | Ab–C–E♭–F♯ |
+| `Fr4/3` | ♭6, 8va, M2+8va, ♯4+8va | Ab–C–D–F♯ |
+
+```json
+{ "beat": 0, "op": "setRoman", "roman": "Ger6/5" }
+```
+
+**Bracket annotations** — `V9[b9]`, etc.:
+
+Analytical annotations in square brackets (e.g., `[b9]`) are stripped before parsing. `V9[b9]` is treated identically to `V9`.
+
+```json
+{ "beat": 0, "op": "setRoman", "roman": "V9[b9]" }
+```
 
 ---
 
@@ -417,15 +451,37 @@ Beat 4: the `ii/o7/vi` applied chord in F major tonicizes to D minor (vi of F = 
 
 ---
 
+### Example 6: Beethoven Waldstein, 1st movement (`op053-1_orbital.json`)
+
+Beethoven's Op. 53 Sonata in C major at 80 BPM, converted from the Tymoczko corpus. The piece is 302 measures (1208 beats) and uses heavy chromatic vocabulary throughout — the development section alone contains Neapolitan sixths, German augmented sixths, flat-prefixed chords, and applied chords to flat-scale-degree targets.
+
+All 475 chord events convert without warnings. A sample of the development:
+
+```json
+{ "beat": 672, "op": "setRoman", "roman": "bII" },
+{ "beat": 676, "op": "setKey",   "root": "Eb", "scale": "major" },
+{ "beat": 676, "op": "setRoman", "roman": "V" },
+{ "beat": 680, "op": "setKey",   "root": "C",  "scale": "major" },
+{ "beat": 680, "op": "setRoman", "roman": "bIII" },
+{ "beat": 728, "op": "setRoman", "roman": "Ger6/5" }
+```
+
+Beat 672: the Neapolitan (`bII` = D♭ major) prepares a mediant motion. Beat 676: `V/bIII` is resolved by the converter to `setKey(E♭)` + `setRoman(V)` — Bb major, the dominant of E♭. Beat 680: back to C major, `bIII` = E♭ major triad (the chromatic mediant). Beat 728: German augmented sixth (Ab–C–E♭–F♯).
+
+---
+
 ## `romantext_to_orbital.py` — Automatic Converter
 
-The script `romantext_to_orbital.py` (in the project root) converts any RomanText `.txt` file from the Tymoczko corpus into a `scoreTracks` JSON. It handles the full harmonic vocabulary:
+The script `romantext_to_orbital.py` (in the project root) converts any RomanText `.txt` file from the Tymoczko corpus into a `scoreTracks` JSON. It handles the full harmonic vocabulary used in standard RomanText analyses:
 
 - Diatonic numerals → `setRoman` events
-- Applied chords → `setKey` (tonicized key) + `setRoman`
+- Applied chords (`V/V`, `V/bIII`, etc.) → `setKey` (tonicized key) + `setRoman`
 - Pivot chords (two chords on the same beat) → keeps the new-key reading
 - Explicit key changes → `setKey`
-- Unsupported chords (Neapolitan, augmented sixths) → skipped with a warning
+- Flat/sharp prefix chords (`bVII`, `bII`, `#IV`) → `setRoman` with perturbations computed automatically
+- Neapolitan chords (`N`, `N6`) → aliased to `bII` / `bII6`
+- Augmented sixth chords (`It6`, `Ger6/5`, `Ger7`, `Fr4/3`, `Fr6`) → `setRoman` with fixed-pitch perturbations
+- Bracket annotations (`V9[b9]`) → stripped automatically
 - Short chord events → filtered by `--min-duration` (default 0.25 beats)
 - Form sections → selectable via `--section "Verse"`
 
