@@ -74,6 +74,9 @@ struct ChordEventSyntax: Codable, Equatable {
     // For "setChord":
     let degrees: [Int]?     // e.g. [0, 2, 4] for a triad on the root
     let inversion: Int?     // 0 = root position (default)
+    // Per-degree chromatic offsets, parallel to degrees. null or {} → .none.
+    // e.g. [{"chromatic": -1}, null, {"chromatic": -1}] for a Neapolitan 6th.
+    let perturbations: [PerturbationSyntax?]?
 
     // For "T", "t", "Tt":
     let n: Int?             // T amount (or t amount for pure "t" op)
@@ -89,12 +92,14 @@ struct ChordEventSyntax: Codable, Equatable {
     init(
         beat: Double, op: String,
         degrees: [Int]? = nil, inversion: Int? = nil,
+        perturbations: [PerturbationSyntax?]? = nil,
         n: Int? = nil, tVal: Int? = nil,
         root: String? = nil, scale: String? = nil,
         roman: String? = nil
     ) {
         self.beat = beat; self.op = op
         self.degrees = degrees; self.inversion = inversion
+        self.perturbations = perturbations
         self.n = n; self.tVal = tVal
         self.root = root; self.scale = scale
         self.roman = roman

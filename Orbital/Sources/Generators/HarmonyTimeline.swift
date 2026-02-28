@@ -76,7 +76,11 @@ struct HarmonyTimeline {
         switch event.op {
         case "setChord":
             if let degrees = event.degrees {
-                chord = ChordInScale(degrees: degrees, inversion: event.inversion ?? 0)
+                let perturbations: [Perturbation]? = event.perturbations.map { arr in
+                    arr.map { $0?.toPerturbation() ?? .none }
+                }
+                chord = ChordInScale(degrees: degrees, inversion: event.inversion ?? 0,
+                                     perturbations: perturbations)
             }
 
         case "T":
@@ -115,31 +119,52 @@ struct HarmonyTimeline {
     ///
     /// Supported:
     ///   - Diatonic numerals: I ii III IV V vi VII (any case)
-    ///   - Quality suffixes: o (dim), /o or ø (half-dim) — consumed, don't affect degrees
+    ///   - Quality suffixes: o (dim), /o or ø (half-dim) — consumed for quality tracking
     ///   - Figured bass: "", 6, 6/4, 7, 6/5, 4/3, 2, 4/2, 9
-    ///   - Applied targets: /V, /vi, /IV, etc. — tonicizes to that degree's key
-    ///
-    /// Not supported (returns nil, caller keeps current harmony):
-    ///   - Chromatic prefixes: bII, #IV, etc.
-    ///   - Special chord names: N6, Ger6/5, It6, Fr4/3
+    ///   - Applied targets: /V, /vi, /IV, /bIII, etc.
+    ///   - Flat/sharp prefix: bII, bVII, bVI, bIII, #IV, etc. → degrees + perturbations
+    ///   - Neapolitan: N = bII, N6 = bII6
+    ///   - Augmented sixths: It6, Ger6/5, Ger7, Fr4/3, Fr6
+    ///   - Bracket annotations like [b9] are stripped before parsing
     private func parseRomanNumeral(_ s: String, in key: Key) -> (ChordInScale, Key?)? {
         var str = s.trimmingCharacters(in: .whitespaces)
 
-        // Special named chords: not expressible as diatonic scale degrees
-        let specials = ["Ger", "Fr", "It", "N6", "N"]
-        if specials.contains(where: { str.hasPrefix($0) }) { return nil }
+        // Strip analytical bracket annotations (e.g. "V9[b9]" → "V9")
+        if let bracketIdx = str.firstIndex(of: "[") {
+            str = String(str[..<bracketIdx]).trimmingCharacters(in: .whitespaces)
+        }
 
-        // Chromatic prefix: not supported
-        if str.hasPrefix("b") || str.hasPrefix("#") { return nil }
+        // 1. Augmented sixth chords — fixed chromatic structures
+        if str.hasPrefix("Ger") || str.hasPrefix("Fr") || str.hasPrefix("It") {
+            return parseAugmentedSixth(str, in: key)
+        }
 
-        // Extract Roman numeral characters (I, V, i, v only — covers I through VII)
+        // 2. Neapolitan: N = bII (root position), N6 = bII6 (1st inversion)
+        if str == "N" { str = "bII" }
+        else if str == "N6" { str = "bII6" }
+        else if str.hasPrefix("N") { return nil }   // N7 etc. not supported
+
+        // 3. Flat / sharp chromatic prefix
+        var semitonePrefix = 0
+        if str.hasPrefix("b") {
+            semitonePrefix = -1
+            str = String(str.dropFirst())
+        } else if str.hasPrefix("#") {
+            semitonePrefix = 1
+            str = String(str.dropFirst())
+        }
+
+        // 4. Extract Roman numeral characters (I, V, i, v only — covers I through VII)
         let romanChars: Set<Character> = ["I", "V", "i", "v"]
         var numEnd = str.startIndex
         while numEnd < str.endIndex && romanChars.contains(str[numEnd]) {
             numEnd = str.index(after: numEnd)
         }
         guard numEnd > str.startIndex else { return nil }
-        let numeralStr = String(str[str.startIndex..<numEnd]).uppercased()
+
+        let originalNumeral = String(str[str.startIndex..<numEnd])
+        let numeralStr = originalNumeral.uppercased()
+        let isUppercase = originalNumeral.first?.isUppercase ?? true
         str = String(str[numEnd...])
 
         let degreeMap: [String: Int] = [
@@ -147,55 +172,148 @@ struct HarmonyTimeline {
         ]
         guard let rootDegree = degreeMap[numeralStr] else { return nil }
 
-        // Consume quality suffix: /o (half-dim) or o (dim) or ø (half-dim unicode)
+        // 5. Consume quality suffix and track for perturbation calculation
+        var quality = isUppercase ? "major" : "minor"
         if str.hasPrefix("/o") {
+            quality = "halfDim"
             str = String(str.dropFirst(2))
         } else if str.hasPrefix("o") || str.hasPrefix("ø") {
+            quality = "dim"
             str = String(str.dropFirst(1))
         }
 
-        // Find applied chord target: last "/" followed by a Roman numeral character
+        // 6. Find applied chord target: last "/" before b/# or Roman numeral char
+        let appliedStartChars: Set<Character> = ["I", "V", "i", "v", "b", "#"]
         var appliedTargetStr: String? = nil
         if let lastSlash = str.lastIndex(of: "/") {
             let afterSlash = str.index(after: lastSlash)
-            if afterSlash < str.endIndex && romanChars.contains(str[afterSlash]) {
+            if afterSlash < str.endIndex && appliedStartChars.contains(str[afterSlash]) {
                 appliedTargetStr = String(str[afterSlash...])
                 str = String(str[..<lastSlash])
             }
         }
 
+        // 7. Parse figured bass
         let (chordSize, inversion) = parseFiguredBass(str)
         let degrees = (0..<chordSize).map { rootDegree + $0 * 2 }
-        let chord = ChordInScale(degrees: degrees, inversion: inversion)
 
-        // Resolve applied key if present
+        // 8. Compute perturbations for b/# prefix chords
+        var perturbations: [Perturbation]? = nil
+        if semitonePrefix != 0 {
+            let baseRoot = scaleSemitonesForDegree(rootDegree, in: key)
+            let alteredRoot = baseRoot + semitonePrefix
+            let chordInts = chordIntervalsFor(quality: quality, size: chordSize)
+
+            var perturbs: [Perturbation] = []
+            for (i, degree) in degrees.enumerated() {
+                let target = alteredRoot + chordInts[i]
+                let actual = scaleSemitonesForDegree(degree, in: key)
+                let offset = target - actual
+                perturbs.append(offset != 0 ? .chromatic(offset) : .none)
+            }
+            let allNone = perturbs.allSatisfy { if case .none = $0 { return true }; return false }
+            perturbations = allNone ? nil : perturbs
+        }
+
+        let chord = ChordInScale(degrees: degrees, inversion: inversion,
+                                 perturbations: perturbations)
         let newKey = appliedTargetStr.flatMap { tonicizeKey(key, toTarget: $0) }
         return (chord, newKey)
     }
 
-    /// Compute the tonicized key for an applied chord target like "V", "vi", "IV".
-    /// Uppercase target → major key; lowercase → minor key.
+    /// Parse augmented sixth chords (It6, Ger6/5, Ger7, Fr4/3, Fr6).
+    /// All are voiced from the b6 (8 semitones above tonic) with chromatic perturbations.
+    private func parseAugmentedSixth(_ s: String, in key: Key) -> (ChordInScale, Key?)? {
+        // Fixed pitch targets (semitones above tonic): b6, C(oct), [Eb(oct),] [D(oct),] #4(oct)
+        let degrees: [Int]
+        let targetSemitones: [Int]
+        if s.hasPrefix("It") {
+            degrees = [5, 7, 10]
+            targetSemitones = [8, 12, 18]          // Ab, C5, F#5
+        } else if s.hasPrefix("Ger") {
+            degrees = [5, 7, 9, 10]
+            targetSemitones = [8, 12, 15, 18]      // Ab, C5, Eb5, F#5
+        } else if s.hasPrefix("Fr") {
+            degrees = [5, 7, 8, 10]
+            targetSemitones = [8, 12, 14, 18]      // Ab, C5, D5, F#5
+        } else {
+            return nil
+        }
+        let perturbations: [Perturbation] = zip(degrees, targetSemitones).map { (deg, target) in
+            let actual = scaleSemitonesForDegree(deg, in: key)
+            let offset = target - actual
+            return offset != 0 ? .chromatic(offset) : .none
+        }
+        let allNone = perturbations.allSatisfy { if case .none = $0 { return true }; return false }
+        let chord = ChordInScale(degrees: degrees, inversion: 0,
+                                 perturbations: allNone ? nil : perturbations)
+        return (chord, nil)
+    }
+
+    /// Compute the tonicized key for an applied chord target like "V", "vi", "bIII", etc.
+    /// Supports b/# prefix on the target; case of the numeral part determines major/minor.
     private func tonicizeKey(_ key: Key, toTarget targetStr: String) -> Key? {
+        var target = targetStr
+        var semitoneOffset = 0
+        if target.hasPrefix("b") {
+            semitoneOffset = -1
+            target = String(target.dropFirst())
+        } else if target.hasPrefix("#") {
+            semitoneOffset = 1
+            target = String(target.dropFirst())
+        }
+
         let romanChars: Set<Character> = ["I", "V", "i", "v"]
         let degreeMap: [String: Int] = [
             "I": 0, "II": 1, "III": 2, "IV": 3, "V": 4, "VI": 5, "VII": 6
         ]
-        let targetNumeral = String(targetStr.prefix(while: { romanChars.contains($0) })).uppercased()
+        let targetIsMinor = target.first?.isLowercase ?? false
+        let targetNumeral = String(target.prefix(while: { romanChars.contains($0) })).uppercased()
         guard let targetDegree = degreeMap[targetNumeral],
               targetDegree < key.scale.intervals.count else { return nil }
 
         let targetSemitones = key.scale.intervals[targetDegree].semitones
         let homeRootPC = Int(key.root.canonicalNote.noteNumber) % 12
-        let targetRootPC = (homeRootPC + targetSemitones) % 12
+        let targetRootPC = ((homeRootPC + targetSemitones + semitoneOffset) % 12 + 12) % 12
 
-        // Default enharmonic spellings (flat preference, matching common usage)
+        // Flat-preference enharmonic spellings to match Tonic library conventions
         let pcToName = ["C", "Db", "D", "Eb", "E", "F", "Gb", "G", "Ab", "A", "Bb", "B"]
         let rootStr = pcToName[targetRootPC]
         let nc = NoteGeneratorSyntax.resolveNoteClass(rootStr)
 
-        let targetIsMinor = targetStr.first?.isLowercase ?? false
         let targetScale: Scale = targetIsMinor ? .minor : .major
         return Key(root: nc, scale: targetScale)
+    }
+
+    /// Semitones above key root for the given scale degree (supports degrees > scaleSize).
+    private func scaleSemitonesForDegree(_ degree: Int, in key: Key) -> Int {
+        let intervals = key.scale.intervals
+        let scaleSize = intervals.count
+        let octaveShift = degree / scaleSize
+        let degreeInScale = ((degree % scaleSize) + scaleSize) % scaleSize
+        return intervals[degreeInScale].semitones + octaveShift * 12
+    }
+
+    /// Chord tone intervals (semitones from root) for a given quality and chord size.
+    private func chordIntervalsFor(quality: String, size: Int) -> [Int] {
+        let triads:   [String: [Int]] = [
+            "major":   [0, 4, 7],
+            "minor":   [0, 3, 7],
+            "dim":     [0, 3, 6],
+            "halfDim": [0, 3, 6],
+        ]
+        let sevenths: [String: [Int]] = [
+            "major":   [0, 4, 7, 10],   // dominant 7th (most common uppercase 7th)
+            "minor":   [0, 3, 7, 10],
+            "dim":     [0, 3, 6,  9],
+            "halfDim": [0, 3, 6, 10],
+        ]
+        switch size {
+        case 3:  return triads[quality]   ?? [0, 4, 7]
+        case 4:  return sevenths[quality] ?? [0, 4, 7, 10]
+        case 5:  return (sevenths[quality] ?? [0, 4, 7, 10]) + [14]  // 9th approx
+        default: return Array(repeating: 0, count: size).enumerated().map { $0.offset * 3 }
+        }
     }
 
     /// Map a figured bass string to (chordSize, inversion).

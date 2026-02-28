@@ -222,10 +222,11 @@ struct HierarchySyntax: Codable, Equatable {
   var chord: ChordInScaleSyntax
 }
 
-/// Initial chord expressed as scale degrees.
+/// Initial chord expressed as scale degrees, with optional per-degree perturbations.
 struct ChordInScaleSyntax: Codable, Equatable {
   var degrees: [Int]
   var inversion: Int
+  var perturbations: [PerturbationSyntax?]?
 }
 
 // MARK: - Hierarchy Modulator Row

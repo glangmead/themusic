@@ -352,53 +352,81 @@ def parse_romantext_file(path: str):
 
 def is_supported_roman(s: str) -> bool:
     """Return True if the chord symbol can be expressed via setRoman."""
-    if s in ('N', 'N6', 'It6', 'Ger6/5', 'Ger7', 'Fr4/3', 'Fr6', 'vo', 'vo6'):
+    if not s:
         return False
-    # Flat or sharp prefix on Roman numeral → not supported
-    if s.startswith('b') and len(s) > 1 and s[1].upper() in ('I', 'V'):
+    # Strip bracket annotations (e.g. "V9[b9]" → "V9")
+    if '[' in s:
+        s = s[:s.index('[')].strip()
+    if not s:
         return False
-    if s.startswith('#') and len(s) > 1 and s[1].upper() in ('I', 'V'):
-        return False
-    return True
+    # Neapolitan: N and N6 are supported; N7, N9, etc. are not
+    if s.startswith('N'):
+        return s in ('N', 'N6')
+    # Augmented sixths: recognized variants are supported
+    if s.startswith('It') or s.startswith('Ger') or s.startswith('Fr'):
+        return s in ('It6', 'Ger6/5', 'Ger7', 'Fr4/3', 'Fr6')
+    # Flat/sharp-prefixed chords (bII, bVII, #IV, etc.)
+    if s[0] in ('b', '#'):
+        return len(s) > 1 and s[1].upper() in ('I', 'V')
+    # Standard Roman numeral chords (I, i, V, v, plus vo, vo6 etc.)
+    return s[0] in ('I', 'i', 'V', 'v')
 
 
 def _skip_reason(s: str) -> str:
     """Human-readable reason why a chord symbol is unsupported."""
-    if s in ('N', 'N6'):
-        return 'Neapolitan chord (chromatic harmony not yet supported)'
-    if s in ('It6', 'Ger6/5', 'Ger7', 'Fr4/3', 'Fr6'):
-        return 'augmented-sixth chord (chromatic harmony not yet supported)'
-    if s in ('vo', 'vo6'):
-        return 'diminished chord on scale degree 5 (not a standard diatonic numeral)'
-    if (s.startswith('b') and len(s) > 1 and s[1].upper() in ('I', 'V')):
-        return f'flat-prefixed chromatic chord (bII, bVI, etc. not yet supported)'
-    if (s.startswith('#') and len(s) > 1 and s[1].upper() in ('I', 'V')):
-        return f'sharp-prefixed chromatic chord not yet supported'
-    return 'unsupported chord type'
+    if s.startswith('N') and s not in ('N', 'N6'):
+        return f'extended Neapolitan {s!r} (only N and N6 are supported)'
+    if (s.startswith('It') or s.startswith('Ger') or s.startswith('Fr')) and \
+            s not in ('It6', 'Ger6/5', 'Ger7', 'Fr4/3', 'Fr6'):
+        return f'unrecognized augmented-sixth variant {s!r}'
+    return f'unrecognized chord symbol {s!r}'
 
 
 def tonicize(key: KeyState, target_roman: str) -> KeyState:
-    """Compute the tonicized key for an applied chord target (e.g. 'V' → G major in C)."""
-    target_scale = 'major' if target_roman[0].isupper() else 'minor'
-    clean = target_roman.upper().lstrip('B#')
-    degree_idx = NUMERAL_TO_DEGREE.get(clean)
+    """Compute the tonicized key for an applied chord target (e.g. 'V' → G major in C).
+    Supports b/# prefix on the target (e.g. 'bIII' → Eb major in C)."""
+    target = target_roman
+    semitone_offset = 0
+    # Strip b/# prefix; offset applied to final pitch class
+    if target.startswith('b'):
+        semitone_offset = -1
+        target = target[1:]
+    elif target.startswith('#'):
+        semitone_offset = 1
+        target = target[1:]
+    if not target:
+        return key
+    # Scale type determined by case of numeral (not the b/# prefix character)
+    target_scale = 'major' if target[0].isupper() else 'minor'
+    # Extract pure Roman numeral characters (I and V cover all numerals)
+    numeral = ''
+    for c in target.upper():
+        if c in ('I', 'V'):
+            numeral += c
+        else:
+            break
+    degree_idx = NUMERAL_TO_DEGREE.get(numeral)
     if degree_idx is None:
         return key
     semis = scale_semitones(key.semitone(), key.scale)
-    target_semi = semis[degree_idx % len(semis)]
+    if degree_idx >= len(semis):
+        return key
+    target_semi = (semis[degree_idx] + semitone_offset) % 12
     target_root = SEMI_TO_PC[target_semi]
     return KeyState(root=target_root, scale=target_scale)
 
 
 def resolve_applied(roman: str, key: KeyState) -> tuple:
-    """For an applied chord (e.g. 'V7/V', 'viio7/vi'), return (chord_part, resolved_key).
+    """For an applied chord (e.g. 'V7/V', 'V/bIII'), return (chord_part, resolved_key).
     For non-applied chords, returns (roman, key)."""
-    # Find the rightmost '/' followed by a Roman numeral letter
+    # Find the rightmost '/' followed by a Roman numeral letter or b/# prefix
     idx = None
     for pos in range(len(roman) - 1, 0, -1):
-        if roman[pos] == '/' and roman[pos + 1:pos + 2] in ('I', 'i', 'V', 'v'):
-            idx = pos
-            break
+        if roman[pos] == '/' and pos + 1 < len(roman):
+            after = roman[pos + 1]
+            if after in ('I', 'i', 'V', 'v', 'b', '#'):
+                idx = pos
+                break
     if idx is None:
         return roman, key
     chord_part = roman[:idx]

@@ -849,31 +849,79 @@ struct SetRomanTests {
         #expect(chord.inversion == 1)
     }
 
-    // MARK: Unsupported symbols → no chord change
+    // MARK: Chromatic harmony — flat/sharp prefix chords
 
-    @Test("N6 is unsupported → fallback chord unchanged")
-    func romanN6Unsupported() {
-        // Timeline with only N6 event; fallback chord is [0,2,4]
-        let (_, chord) = romanState("N6")
-        #expect(chord.degrees == [0, 2, 4], "Unsupported N6 should leave fallback chord")
-    }
-
-    @Test("Ger6/5 is unsupported → fallback chord unchanged")
-    func romanGerUnsupported() {
-        let (_, chord) = romanState("Ger6/5")
-        #expect(chord.degrees == [0, 2, 4])
-    }
-
-    @Test("bII is unsupported → fallback chord unchanged")
-    func romanBIIUnsupported() {
+    @Test("bII in C major: Neapolitan triad root position with chromatic perturbations")
+    func romanBII() {
+        // bII: root on Db (D-1), F unaltered, Ab (A-1) → perturbations [-1, 0, -1]
         let (_, chord) = romanState("bII")
-        #expect(chord.degrees == [0, 2, 4])
+        #expect(chord.degrees == [1, 3, 5])
+        #expect(chord.inversion == 0)
+        #expect(chord.perturbations == [.chromatic(-1), .none, .chromatic(-1)])
     }
 
-    @Test("It6 is unsupported → fallback chord unchanged")
-    func romanIt6Unsupported() {
+    @Test("bVII in C major: flat-VII major triad — only root flattened")
+    func romanBVII() {
+        // bVII: root on Bb (B-1), D and F unaltered → perturbations [-1, 0, 0]
+        let (_, chord) = romanState("bVII")
+        #expect(chord.degrees == [6, 8, 10])
+        #expect(chord.inversion == 0)
+        #expect(chord.perturbations == [.chromatic(-1), .none, .none])
+    }
+
+    @Test("N = bII in C major: Neapolitan root position")
+    func romanN() {
+        let (_, chord) = romanState("N")
+        #expect(chord.degrees == [1, 3, 5])
+        #expect(chord.perturbations == [.chromatic(-1), .none, .chromatic(-1)])
+    }
+
+    @Test("N6 = bII6 in C major: Neapolitan in 1st inversion")
+    func romanN6() {
+        let (_, chord) = romanState("N6")
+        #expect(chord.degrees == [1, 3, 5])
+        #expect(chord.inversion == 1)
+        #expect(chord.perturbations == [.chromatic(-1), .none, .chromatic(-1)])
+    }
+
+    // MARK: Augmented sixth chords
+
+    @Test("It6 in C major: degrees [5,7,10] with perturbations [-1, 0, +1]")
+    func romanIt6() {
+        // It6: Ab, C(oct), F#(oct) — Ab already 1 below A, F# 1 above F
         let (_, chord) = romanState("It6")
-        #expect(chord.degrees == [0, 2, 4])
+        #expect(chord.degrees == [5, 7, 10])
+        #expect(chord.inversion == 0)
+        #expect(chord.perturbations == [.chromatic(-1), .none, .chromatic(1)])
+    }
+
+    @Test("Ger6/5 in C major: degrees [5,7,9,10] with perturbations [-1,0,-1,+1]")
+    func romanGer65() {
+        // Ger6/5: Ab, C, Eb, F# — Eb is 1 below E, F# is 1 above F
+        let (_, chord) = romanState("Ger6/5")
+        #expect(chord.degrees == [5, 7, 9, 10])
+        #expect(chord.inversion == 0)
+        #expect(chord.perturbations == [.chromatic(-1), .none, .chromatic(-1), .chromatic(1)])
+    }
+
+    // MARK: Applied chords with flat-prefix targets
+
+    @Test("V/bIII in C major: V chord tonicizes to Eb major")
+    func romanVofBIII() {
+        let (key, chord) = romanState("V/bIII")
+        #expect(chord.degrees == [4, 6, 8])
+        #expect(key.root == NoteGeneratorSyntax.resolveNoteClass("Eb"))
+        #expect(key.scale == Scale.major)
+    }
+
+    // MARK: Bracket annotation stripping
+
+    @Test("V9[b9] strips bracket annotation → degrees [4,6,8,10,12]")
+    func romanV9b9() {
+        let (_, chord) = romanState("V9[b9]")
+        #expect(chord.degrees == [4, 6, 8, 10, 12])
+        #expect(chord.inversion == 0)
+        #expect(chord.perturbations == nil)
     }
 
     // MARK: Codable round-trip with roman field
@@ -904,5 +952,167 @@ struct SetRomanTests {
         let (_, after) = timeline.state(at: 4.0, loop: false)
         #expect(before.degrees == [0, 2, 4])
         #expect(after.degrees == [4, 6, 8, 10])
+    }
+}
+
+// MARK: - Perturbations Tests
+
+@Suite("ChordInScale perturbations", .serialized)
+struct PerturbationsTests {
+
+    // MARK: voicedPerturbations rotation
+
+    @Test("voicedPerturbations is nil when no perturbations set")
+    func voicedPerturbationsNilByDefault() {
+        let chord = ChordInScale(degrees: [0, 2, 4], inversion: 0)
+        #expect(chord.voicedPerturbations == nil)
+    }
+
+    @Test("voicedPerturbations in root position matches perturbations order")
+    func voicedPerturbationsRootPosition() {
+        let chord = ChordInScale(
+            degrees: [1, 3, 5], inversion: 0,
+            perturbations: [.chromatic(-1), .none, .chromatic(-1)]
+        )
+        let vp = chord.voicedPerturbations
+        #expect(vp == [.chromatic(-1), .none, .chromatic(-1)])
+    }
+
+    @Test("voicedPerturbations rotates with inversion (N6: inv=1)")
+    func voicedPerturbationsInversion1() {
+        // N6 in any major key: degrees [1,3,5], perturbations [-1, 0, -1], inversion 1
+        // voicedDegrees with inv=1: [3, 5, 1]
+        // voicedPerturbations with inv=1: [.none, .chromatic(-1), .chromatic(-1)]
+        let chord = ChordInScale(
+            degrees: [1, 3, 5], inversion: 1,
+            perturbations: [.chromatic(-1), .none, .chromatic(-1)]
+        )
+        let vp = chord.voicedPerturbations
+        #expect(vp == [.none, .chromatic(-1), .chromatic(-1)])
+    }
+
+    @Test("voicedPerturbations pads with .none when array is shorter than degrees")
+    func voicedPerturbationsPadsShorterArray() {
+        // Only one perturbation provided for a 3-note chord
+        let chord = ChordInScale(
+            degrees: [0, 2, 4], inversion: 0,
+            perturbations: [.chromatic(1)]
+        )
+        let vp = chord.voicedPerturbations
+        #expect(vp == [.chromatic(1), .none, .none])
+    }
+
+    // MARK: voicedMidi with perturbations
+
+    @Test("N6 chord in C major voiced at octave 4 gives F4, Ab4, Db5")
+    func neapolitanSixthVoicedMidi() {
+        // N6 = Db major triad, 1st inversion (bass on F)
+        // degrees [1,3,5] in C major = D, F, A; lower 1 and 3 by semitone → Db, F, Ab
+        // inversion 1 → bass = F (degree 3, no perturbation)
+        let h = PitchHierarchy(
+            key: Key(root: .C, scale: .major),
+            chord: ChordInScale(
+                degrees: [1, 3, 5], inversion: 1,
+                perturbations: [.chromatic(-1), .none, .chromatic(-1)]
+            )
+        )
+        let midi = h.voicedMidi(voicing: .closed, baseOctave: 4)
+        #expect(midi.count == 3)
+        #expect(Int(midi[0]) == 65, "F4 = 65, got \(midi[0])")
+        #expect(Int(midi[1]) == 68, "Ab4 = 68, got \(midi[1])")
+        #expect(Int(midi[2]) == 73, "Db5 = 73, got \(midi[2])")
+    }
+
+    @Test("bassMidi applies chromatic perturbation to bass voice")
+    func bassMidiWithChromatic() {
+        // Root position chord with bass note lowered by 1 semitone
+        // degree 0 in C major = C4 = MIDI 60, -1 = B3 = MIDI 59
+        let h = PitchHierarchy(
+            key: Key(root: .C, scale: .major),
+            chord: ChordInScale(
+                degrees: [0, 2, 4], inversion: 0,
+                perturbations: [.chromatic(-1), .none, .none]
+            )
+        )
+        let bass = h.bassMidi(baseOctave: 4)
+        #expect(bass == 59, "B3 = MIDI 59, got \(String(describing: bass))")
+    }
+
+    @Test("bassMidi with no perturbation is unchanged")
+    func bassMidiNoPerturbation() {
+        let h = PitchHierarchy(
+            key: Key(root: .C, scale: .major),
+            chord: ChordInScale(degrees: [0, 2, 4], inversion: 0)
+        )
+        let bass = h.bassMidi(baseOctave: 4)
+        #expect(bass == 60, "C4 = MIDI 60, got \(String(describing: bass))")
+    }
+
+    // MARK: HarmonyTimeline setChord with perturbations
+
+    @Test("setChord event with perturbations stores them on the chord")
+    func setChordWithPerturbations() {
+        let event = ChordEventSyntax(
+            beat: 0, op: "setChord",
+            degrees: [1, 3, 5], inversion: 1,
+            perturbations: [PerturbationSyntax(chromatic: -1), nil, PerturbationSyntax(chromatic: -1)]
+        )
+        let evs = [HarmonyTimeline.Event(beat: 0, op: event)]
+        let timeline = HarmonyTimeline(
+            totalBeats: 8,
+            initialKey: Key(root: .C, scale: .major),
+            events: evs
+        )
+        let (_, chord) = timeline.state(at: 0, loop: false)
+        #expect(chord.degrees == [1, 3, 5])
+        #expect(chord.inversion == 1)
+        #expect(chord.perturbations == [.chromatic(-1), .none, .chromatic(-1)])
+    }
+
+    // MARK: PerturbationSyntax Codable
+
+    @Test("PerturbationSyntax {} (no fields) round-trips and maps to .none")
+    func perturbationSyntaxNone() throws {
+        let ps = PerturbationSyntax()
+        let data = try JSONEncoder().encode(ps)
+        let decoded = try JSONDecoder().decode(PerturbationSyntax.self, from: data)
+        #expect(decoded == ps)
+        #expect(decoded.toPerturbation() == .none)
+    }
+
+    @Test("PerturbationSyntax chromatic round-trips and maps to .chromatic")
+    func perturbationSyntaxChromatic() throws {
+        let ps = PerturbationSyntax(chromatic: -1)
+        let data = try JSONEncoder().encode(ps)
+        let decoded = try JSONDecoder().decode(PerturbationSyntax.self, from: data)
+        #expect(decoded == ps)
+        #expect(decoded.toPerturbation() == .chromatic(-1))
+    }
+
+    @Test("PerturbationSyntax scaleDegree round-trips and maps to .scaleDegree")
+    func perturbationSyntaxScaleDegree() throws {
+        let ps = PerturbationSyntax(scaleDegree: 2)
+        let data = try JSONEncoder().encode(ps)
+        let decoded = try JSONDecoder().decode(PerturbationSyntax.self, from: data)
+        #expect(decoded == ps)
+        #expect(decoded.toPerturbation() == .scaleDegree(2))
+    }
+
+    @Test("ChordEventSyntax with perturbations array round-trips through JSON")
+    func chordEventWithPerturbationsCodable() throws {
+        let event = ChordEventSyntax(
+            beat: 0, op: "setChord",
+            degrees: [1, 3, 5], inversion: 1,
+            perturbations: [PerturbationSyntax(chromatic: -1), nil, PerturbationSyntax(chromatic: -1)]
+        )
+        let data = try JSONEncoder().encode(event)
+        let decoded = try JSONDecoder().decode(ChordEventSyntax.self, from: data)
+        #expect(decoded.op == "setChord")
+        #expect(decoded.degrees == [1, 3, 5])
+        #expect(decoded.inversion == 1)
+        #expect(decoded.perturbations?.count == 3)
+        #expect(decoded.perturbations?[0]?.chromatic == -1)
+        #expect(decoded.perturbations?[1] == nil)
+        #expect(decoded.perturbations?[2]?.chromatic == -1)
     }
 }

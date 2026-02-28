@@ -100,6 +100,13 @@ extension Tonic.Interval {
 struct ChordInScale {
   var degrees: [Int]      // scale degrees, e.g. [0, 2, 4]
   var inversion: Int      // rotation: which degree is the bass (0 = root position)
+  var perturbations: [Perturbation]?  // per-degree chromatic offsets, parallel to degrees
+
+  init(degrees: [Int], inversion: Int, perturbations: [Perturbation]? = nil) {
+    self.degrees = degrees
+    self.inversion = inversion
+    self.perturbations = perturbations
+  }
 
   /// The degrees in voiced order (bass note first), accounting for inversion.
   var voicedDegrees: [Int] {
@@ -107,6 +114,17 @@ struct ChordInScale {
     let count = degrees.count
     let inv = ((inversion % count) + count) % count
     return Array(degrees[inv...]) + Array(degrees[..<inv])
+  }
+
+  /// Perturbations in voiced order (bass first), rotating in lockstep with voicedDegrees.
+  /// Pads with .none if perturbations array is shorter than degrees.
+  var voicedPerturbations: [Perturbation]? {
+    guard let perturbs = perturbations, !degrees.isEmpty else { return nil }
+    let count = degrees.count
+    let inv = ((inversion % count) + count) % count
+    var padded = Array(perturbs.prefix(count))
+    while padded.count < count { padded.append(.none) }
+    return Array(padded[inv...]) + Array(padded[..<inv])
   }
 
   /// T: shift all degrees by n steps in the parent scale.
@@ -126,10 +144,30 @@ struct ChordInScale {
 /// How a melody note departs from a chord tone.
 /// A note is either a plain chord tone, or a chord tone perturbed by a
 /// neighbor — either chromatically (semitones) or within the scale (steps).
-enum Perturbation {
+enum Perturbation: Equatable {
   case none
   case chromatic(Int)      // semitones from the chord tone
   case scaleDegree(Int)    // scale steps from the chord tone
+}
+
+/// Codable representation of a Perturbation for JSON storage.
+/// - `{}` or both fields nil → .none
+/// - `{"chromatic": N}` → .chromatic(N)
+/// - `{"scaleDegree": N}` → .scaleDegree(N)
+struct PerturbationSyntax: Codable, Equatable {
+  let chromatic: Int?
+  let scaleDegree: Int?
+
+  init(chromatic: Int? = nil, scaleDegree: Int? = nil) {
+    self.chromatic = chromatic
+    self.scaleDegree = scaleDegree
+  }
+
+  func toPerturbation() -> Perturbation {
+    if let c = chromatic { return .chromatic(c) }
+    if let s = scaleDegree { return .scaleDegree(s) }
+    return .none
+  }
 }
 
 /// A transient melody event: "play chord tone N, optionally perturbed."
@@ -420,7 +458,13 @@ class PitchHierarchy {
     let rootMidi = rootPitchClass + ((octave + 1) * 12)
     var midi = rootMidi + semitones + (octaveShift * 12)
 
-    // Step 4: apply chromatic perturbation (post-resolution)
+    // Step 3.5: apply the chord's own chromatic perturbation for this voice slot
+    if let vp = chord.voicedPerturbations, note.chordToneIndex < vp.count,
+       case .chromatic(let delta) = vp[note.chordToneIndex] {
+      midi += delta
+    }
+
+    // Step 4: apply MelodyNote's chromatic perturbation (post-resolution)
     if case .chromatic(let delta) = note.perturbation {
       midi += delta
     }
@@ -434,7 +478,13 @@ class PitchHierarchy {
   /// MIDI pitch of the bass note (voicedDegrees[0]) at the given octave.
   func bassMidi(baseOctave: Int) -> UInt8? {
     guard let degree = chord.voicedDegrees.first else { return nil }
-    return resolveScaleDegree(degree, octave: baseOctave)
+    var midi = Int(resolveScaleDegree(degree, octave: baseOctave) ?? 0)
+    if let vp = chord.voicedPerturbations, let first = vp.first,
+       case .chromatic(let delta) = first {
+      midi += delta
+    }
+    guard midi >= 0, midi <= 127 else { return nil }
+    return UInt8(midi)
   }
 
   /// All chord voices as MIDI pitches, distributed according to the VoicingStyle.
@@ -447,8 +497,13 @@ class PitchHierarchy {
     // Resolve all degrees in closed position (bass at baseOctave, each subsequent
     // voice placed just above the previous).
     var closed: [Int] = []
+    let voicedPerturbs = chord.voicedPerturbations
     for (i, degree) in degrees.enumerated() {
       guard var midi = resolveScaleDegree(degree, octave: baseOctave).map(Int.init) else { continue }
+      // Apply chromatic perturbation for this voice (before octave bumping)
+      if let vp = voicedPerturbs, i < vp.count, case .chromatic(let delta) = vp[i] {
+        midi += delta
+      }
       // Bump up until it's above the previous note
       if let prev = closed.last {
         while midi <= prev { midi += 12 }

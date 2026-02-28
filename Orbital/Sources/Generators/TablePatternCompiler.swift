@@ -429,7 +429,11 @@ enum TablePatternCompiler {
     let root = NoteGeneratorSyntax.resolveNoteClass(syntax.root)
     let scale = NoteGeneratorSyntax.resolveScale(syntax.scale)
     let key = Key(root: root, scale: scale)
-    let chord = ChordInScale(degrees: syntax.chord.degrees, inversion: syntax.chord.inversion)
+    let perturbations: [Perturbation]? = syntax.chord.perturbations.map { arr in
+      arr.map { $0?.toPerturbation() ?? .none }
+    }
+    let chord = ChordInScale(degrees: syntax.chord.degrees, inversion: syntax.chord.inversion,
+                             perturbations: perturbations)
     return PitchHierarchy(key: key, chord: chord)
   }
 
