@@ -42,12 +42,15 @@ struct MidiTracksSyntax: Codable {
 // MARK: - PatternSyntax
 
 /// Top-level Codable specification for a generative music pattern.
-/// A pattern has a name and either `midiTracks` (MIDI file) or `tableTracks` (generative table).
-/// Exactly one must be present.
+/// A pattern has a name and exactly one of:
+/// - `midiTracks`: plays a MIDI file
+/// - `tableTracks`: generative table with stochastic emitters
+/// - `scoreTracks`: score-based absolute-beat sequencing
 struct PatternSyntax: Codable {
   let name: String
   let midiTracks: MidiTracksSyntax?
   let tableTracks: TablePatternSyntax?
+  let scoreTracks: ScorePatternSyntax?
 
   /// Result of compiling a pattern: separates document data from live audio state.
   struct CompileResult {
@@ -62,6 +65,8 @@ struct PatternSyntax: Codable {
       return try await compileMidiTracks(midi, engine: engine, clock: clock, resourceBaseURL: resourceBaseURL)
     } else if let table = tableTracks {
       return try await TablePatternCompiler.compile(table, engine: engine, clock: clock, resourceBaseURL: resourceBaseURL)
+    } else if let score = scoreTracks {
+      return try await ScorePatternCompiler.compile(score, engine: engine, clock: clock, resourceBaseURL: resourceBaseURL)
     } else {
       fatalError("PatternSyntax '\(name)' has no tracks")
     }
@@ -78,6 +83,8 @@ struct PatternSyntax: Codable {
       }
     } else if let table = tableTracks {
       return TablePatternCompiler.compileTrackInfoOnly(table, resourceBaseURL: resourceBaseURL)
+    } else if let score = scoreTracks {
+      return ScorePatternCompiler.compileTrackInfoOnly(score, resourceBaseURL: resourceBaseURL)
     }
     return []
   }
@@ -138,3 +145,4 @@ struct PatternSyntax: Codable {
     )
   }
 }
+

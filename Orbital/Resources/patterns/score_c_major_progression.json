@@ -1,0 +1,54 @@
+{
+  "name": "C Major Progression",
+  "scoreTracks": {
+    "bpm": 90,
+    "totalBeats": 16,
+    "loop": true,
+    "key": { "root": "C", "scale": "major" },
+    "chordEvents": [
+      { "beat": 0,  "op": "setChord", "degrees": [0, 2, 4], "inversion": 0 },
+      { "beat": 4,  "op": "T", "n": 3 },
+      { "beat": 8,  "op": "T", "n": 1 },
+      { "beat": 12, "op": "setChord", "degrees": [0, 2, 4], "inversion": 0 }
+    ],
+    "tracks": [
+      {
+        "name": "Pad",
+        "presetFilename": "warm_analog_pad",
+        "numVoices": 8,
+        "octave": 3,
+        "voicing": "open",
+        "sustainFraction": 0.95,
+        "notes": [
+          { "type": "currentChord", "durationBeats": 4 },
+          { "type": "currentChord", "durationBeats": 4 },
+          { "type": "currentChord", "durationBeats": 4 },
+          { "type": "currentChord", "durationBeats": 4 }
+        ]
+      },
+      {
+        "name": "Melody",
+        "presetFilename": "organ_full_tutti",
+        "numVoices": 4,
+        "octave": 4,
+        "voicing": "closed",
+        "sustainFraction": 0.8,
+        "notes": [
+          { "type": "chordTone",   "index": 2, "durationBeats": 1 },
+          { "type": "chordTone",   "index": 1, "durationBeats": 1 },
+          { "type": "chordTone",   "index": 0, "durationBeats": 1 },
+          { "type": "chordTone",   "index": 1, "durationBeats": 1 },
+          { "type": "chordTone",   "index": 2, "durationBeats": 2 },
+          { "type": "hold",                    "durationBeats": 2 },
+          { "type": "chordTone",   "index": 2, "durationBeats": 1 },
+          { "type": "chordTone",   "index": 1, "durationBeats": 1 },
+          { "type": "chordTone",   "index": 0, "durationBeats": 1 },
+          { "type": "rest",                    "durationBeats": 1 },
+          { "type": "scaleDegree", "degree": 4, "durationBeats": 2 },
+          { "type": "scaleDegree", "degree": 3, "durationBeats": 1 },
+          { "type": "scaleDegree", "degree": 2, "durationBeats": 1 }
+        ]
+      }
+    ]
+  }
+}

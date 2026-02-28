@@ -1,0 +1,59 @@
+{
+  "name": "Baroque Two-Voice (D minor)",
+  "scoreTracks": {
+    "bpm": 80,
+    "totalBeats": 16,
+    "loop": true,
+    "key": { "root": "D", "scale": "minor" },
+    "chordEvents": [
+      { "beat": 0,  "op": "setChord", "degrees": [0, 2, 4], "inversion": 0 },
+      { "beat": 4,  "op": "T", "n": 3 },
+      { "beat": 8,  "op": "T", "n": 1 },
+      { "beat": 12, "op": "setChord", "degrees": [4, 6, 8], "inversion": 0 }
+    ],
+    "tracks": [
+      {
+        "name": "Bass",
+        "presetFilename": "organ_baroque_positive",
+        "numVoices": 4,
+        "octave": 2,
+        "voicing": "closed",
+        "sustainFraction": 0.85,
+        "notes": [
+          { "type": "chordTone", "index": 0, "durationBeats": 2 },
+          { "type": "chordTone", "index": 2, "durationBeats": 2 },
+          { "type": "chordTone", "index": 0, "durationBeats": 2 },
+          { "type": "chordTone", "index": 1, "durationBeats": 2 },
+          { "type": "chordTone", "index": 0, "durationBeats": 2 },
+          { "type": "chordTone", "index": 2, "durationBeats": 2 },
+          { "type": "chordTone", "index": 0, "durationBeats": 2 },
+          { "type": "chordTone", "index": 1, "durationBeats": 2 }
+        ]
+      },
+      {
+        "name": "Soprano",
+        "presetFilename": "organ_baroque_positive",
+        "numVoices": 4,
+        "octave": 4,
+        "voicing": "closed",
+        "sustainFraction": 0.8,
+        "notes": [
+          { "type": "scaleDegree", "degree": 4, "durationBeats": 1 },
+          { "type": "scaleDegree", "degree": 5, "durationBeats": 1 },
+          { "type": "scaleDegree", "degree": 4, "durationBeats": 1 },
+          { "type": "scaleDegree", "degree": 3, "durationBeats": 1 },
+          { "type": "scaleDegree", "degree": 5, "durationBeats": 1 },
+          { "type": "scaleDegree", "degree": 4, "durationBeats": 1 },
+          { "type": "scaleDegree", "degree": 3, "durationBeats": 1 },
+          { "type": "scaleDegree", "degree": 2, "durationBeats": 1 },
+          { "type": "scaleDegree", "degree": 6, "durationBeats": 1 },
+          { "type": "scaleDegree", "degree": 5, "durationBeats": 1 },
+          { "type": "scaleDegree", "degree": 4, "durationBeats": 1 },
+          { "type": "scaleDegree", "degree": 3, "durationBeats": 1 },
+          { "type": "scaleDegree", "degree": 4, "durationBeats": 2 },
+          { "type": "hold",                     "durationBeats": 2 }
+        ]
+      }
+    ]
+  }
+}

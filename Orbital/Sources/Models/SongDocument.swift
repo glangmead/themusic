@@ -252,7 +252,8 @@ class SongDocument {
     patternSpec = PatternSyntax(
       name: spec.name,
       midiTracks: nil,
-      tableTracks: newTable
+      tableTracks: newTable,
+      scoreTracks: nil
     )
     runtime = nil
   }

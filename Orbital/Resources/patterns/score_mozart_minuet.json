@@ -1,0 +1,56 @@
+{
+  "name": "Mozart Minuet (after K282 II)",
+  "scoreTracks": {
+    "bpm": 72,
+    "totalBeats": 24,
+    "loop": true,
+    "key": { "root": "Bb", "scale": "major" },
+    "chordEvents": [
+      { "beat": 0,  "op": "setChord", "degrees": [0, 2, 4], "inversion": 0 },
+      { "beat": 6,  "op": "setChord", "degrees": [4, 6, 8], "inversion": 0 },
+      { "beat": 12, "op": "setChord", "degrees": [0, 2, 4], "inversion": 0 },
+      { "beat": 18, "op": "setChord", "degrees": [4, 6, 8], "inversion": 0 }
+    ],
+    "tracks": [
+      {
+        "name": "Left Hand",
+        "presetFilename": "organ_church_principal",
+        "numVoices": 6,
+        "octave": 3,
+        "voicing": "closed",
+        "sustainFraction": 0.75,
+        "notes": [
+          { "type": "currentChord", "durationBeats": 3 },
+          { "type": "currentChord", "durationBeats": 3 },
+          { "type": "currentChord", "durationBeats": 3 },
+          { "type": "currentChord", "durationBeats": 3 },
+          { "type": "currentChord", "durationBeats": 3 },
+          { "type": "currentChord", "durationBeats": 3 },
+          { "type": "currentChord", "durationBeats": 3 },
+          { "type": "currentChord", "durationBeats": 3 }
+        ]
+      },
+      {
+        "name": "Right Hand",
+        "presetFilename": "organ_church_principal",
+        "numVoices": 4,
+        "octave": 4,
+        "voicing": "closed",
+        "sustainFraction": 0.85,
+        "notes": [
+          { "type": "absolute", "note": "D5",  "durationBeats": 3 },
+          { "type": "absolute", "note": "C5",  "durationBeats": 1 },
+          { "type": "absolute", "note": "Eb5", "durationBeats": 2 },
+          { "type": "absolute", "note": "Bb4", "durationBeats": 2 },
+          { "type": "hold",                    "durationBeats": 4 },
+          { "type": "rest",                    "durationBeats": 4 },
+          { "type": "absolute", "note": "F5",  "durationBeats": 3 },
+          { "type": "absolute", "note": "Eb5", "durationBeats": 1 },
+          { "type": "absolute", "note": "D5",  "durationBeats": 2 },
+          { "type": "absolute", "note": "C5",  "durationBeats": 2 },
+          { "type": "hold",                    "durationBeats": 4 }
+        ]
+      }
+    ]
+  }
+}

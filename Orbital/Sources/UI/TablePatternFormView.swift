@@ -444,7 +444,8 @@ struct TablePatternFormView: View {
     let patternSyntax = PatternSyntax(
       name: patternName,
       midiTracks: nil,
-      tableTracks: table
+      tableTracks: table,
+      scoreTracks: nil
     )
     PatternStorage.save(patternSyntax, filename: filename)
   }
