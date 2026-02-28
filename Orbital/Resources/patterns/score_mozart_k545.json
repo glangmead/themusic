@@ -1,0 +1,334 @@
+{
+  "name": "Mozart \u2013 K545",
+  "scoreTracks": {
+    "bpm": 88.0,
+    "totalBeats": 52,
+    "loop": true,
+    "key": {
+      "root": "C",
+      "scale": "major"
+    },
+    "chordEvents": [
+      {
+        "beat": 0,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 4,
+        "op": "setRoman",
+        "roman": "V4/3"
+      },
+      {
+        "beat": 6,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 8,
+        "op": "setRoman",
+        "roman": "IV6/4"
+      },
+      {
+        "beat": 10,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 12,
+        "op": "setRoman",
+        "roman": "V6/5"
+      },
+      {
+        "beat": 14,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 16,
+        "op": "setRoman",
+        "roman": "IV"
+      },
+      {
+        "beat": 20,
+        "op": "setRoman",
+        "roman": "I6"
+      },
+      {
+        "beat": 24,
+        "op": "setRoman",
+        "roman": "viio6"
+      },
+      {
+        "beat": 28,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 32,
+        "op": "setRoman",
+        "roman": "ii6"
+      },
+      {
+        "beat": 39.5,
+        "op": "setKey",
+        "root": "G",
+        "scale": "major"
+      },
+      {
+        "beat": 39.5,
+        "op": "setRoman",
+        "roman": "V6/5"
+      },
+      {
+        "beat": 40,
+        "op": "setKey",
+        "root": "C",
+        "scale": "major"
+      },
+      {
+        "beat": 40,
+        "op": "setRoman",
+        "roman": "V"
+      },
+      {
+        "beat": 41,
+        "op": "setRoman",
+        "roman": "I6/4"
+      },
+      {
+        "beat": 42,
+        "op": "setRoman",
+        "roman": "V"
+      },
+      {
+        "beat": 43,
+        "op": "setRoman",
+        "roman": "I6/4"
+      },
+      {
+        "beat": 44,
+        "op": "setRoman",
+        "roman": "V"
+      },
+      {
+        "beat": 48,
+        "op": "setKey",
+        "root": "G",
+        "scale": "major"
+      },
+      {
+        "beat": 48,
+        "op": "setRoman",
+        "roman": "V"
+      },
+      {
+        "beat": 50,
+        "op": "setRoman",
+        "roman": "V2"
+      }
+    ],
+    "tracks": [
+      {
+        "name": "Chords",
+        "presetFilename": "warm_analog_pad",
+        "numVoices": 6,
+        "octave": 3,
+        "voicing": "open",
+        "sustainFraction": 0.85,
+        "notes": [
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 2
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 2
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 2
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 2
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 2
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 2
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 7.5
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 0.5
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 1
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 1
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 1
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 1
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 2
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 2
+          }
+        ]
+      },
+      {
+        "name": "Bass",
+        "presetFilename": "organ_baroque_positive",
+        "numVoices": 2,
+        "octave": 2,
+        "voicing": "closed",
+        "sustainFraction": 0.7,
+        "notes": [
+          {
+            "type": "chordTone",
+            "index": 0,
+            "durationBeats": 4
+          },
+          {
+            "type": "chordTone",
+            "index": 0,
+            "durationBeats": 2
+          },
+          {
+            "type": "chordTone",
+            "index": 0,
+            "durationBeats": 2
+          },
+          {
+            "type": "chordTone",
+            "index": 0,
+            "durationBeats": 2
+          },
+          {
+            "type": "chordTone",
+            "index": 0,
+            "durationBeats": 2
+          },
+          {
+            "type": "chordTone",
+            "index": 0,
+            "durationBeats": 2
+          },
+          {
+            "type": "chordTone",
+            "index": 0,
+            "durationBeats": 2
+          },
+          {
+            "type": "chordTone",
+            "index": 0,
+            "durationBeats": 4
+          },
+          {
+            "type": "chordTone",
+            "index": 0,
+            "durationBeats": 4
+          },
+          {
+            "type": "chordTone",
+            "index": 0,
+            "durationBeats": 4
+          },
+          {
+            "type": "chordTone",
+            "index": 0,
+            "durationBeats": 4
+          },
+          {
+            "type": "chordTone",
+            "index": 0,
+            "durationBeats": 7.5
+          },
+          {
+            "type": "chordTone",
+            "index": 0,
+            "durationBeats": 0.5
+          },
+          {
+            "type": "chordTone",
+            "index": 0,
+            "durationBeats": 1
+          },
+          {
+            "type": "chordTone",
+            "index": 0,
+            "durationBeats": 1
+          },
+          {
+            "type": "chordTone",
+            "index": 0,
+            "durationBeats": 1
+          },
+          {
+            "type": "chordTone",
+            "index": 0,
+            "durationBeats": 1
+          },
+          {
+            "type": "chordTone",
+            "index": 0,
+            "durationBeats": 4
+          },
+          {
+            "type": "chordTone",
+            "index": 0,
+            "durationBeats": 2
+          },
+          {
+            "type": "chordTone",
+            "index": 0,
+            "durationBeats": 2
+          }
+        ]
+      }
+    ]
+  }
+}

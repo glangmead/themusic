@@ -14,7 +14,7 @@
     "tracks": [
       {
         "name": "Left Hand",
-        "presetFilename": "organ_church_principal",
+        "presetFilename": "organ_full_tutti",
         "numVoices": 6,
         "octave": 3,
         "voicing": "closed",

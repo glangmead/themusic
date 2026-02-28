@@ -18,7 +18,7 @@
         "numVoices": 4,
         "octave": 2,
         "voicing": "closed",
-        "sustainFraction": 0.85,
+        "sustainFraction": 0.95,
         "notes": [
           { "type": "chordTone", "index": 0, "durationBeats": 2 },
           { "type": "chordTone", "index": 2, "durationBeats": 2 },
@@ -36,7 +36,7 @@
         "numVoices": 4,
         "octave": 4,
         "voicing": "closed",
-        "sustainFraction": 0.8,
+        "sustainFraction": 0.95,
         "notes": [
           { "type": "scaleDegree", "degree": 4, "durationBeats": 1 },
           { "type": "scaleDegree", "degree": 5, "durationBeats": 1 },

@@ -62,9 +62,14 @@ struct ScoreKeySyntax: Codable, Equatable {
 /// - "t": rotate chord inversion by n steps (e.g. root→1st inversion = t(1))
 /// - "Tt": apply T(n) then t(tVal) atomically
 /// - "setKey": change the key (requires `root` and `scale`)
+/// - "setRoman": set chord from a Roman numeral string (requires `roman`).
+///     Diatonic numerals (I, ii, V7, viio, ii6/5, …) map to scale-degree arrays
+///     within the current key. Applied chords (V/V, viio7/V, V6/5/IV, …)
+///     additionally tonicize to the target degree's key and persist that key.
+///     Unsupported symbols (N6, bII, Ger6/5, It6, Fr4/3) are silently ignored.
 struct ChordEventSyntax: Codable, Equatable {
     let beat: Double
-    let op: String          // "setChord" | "T" | "t" | "Tt" | "setKey"
+    let op: String          // "setChord" | "T" | "t" | "Tt" | "setKey" | "setRoman"
 
     // For "setChord":
     let degrees: [Int]?     // e.g. [0, 2, 4] for a triad on the root
@@ -77,6 +82,23 @@ struct ChordEventSyntax: Codable, Equatable {
     // For "setKey":
     let root: String?       // e.g. "G"
     let scale: String?      // e.g. "major"
+
+    // For "setRoman":
+    let roman: String?      // e.g. "V7", "ii6/5", "viio", "V7/V", "viio7/vi"
+
+    init(
+        beat: Double, op: String,
+        degrees: [Int]? = nil, inversion: Int? = nil,
+        n: Int? = nil, tVal: Int? = nil,
+        root: String? = nil, scale: String? = nil,
+        roman: String? = nil
+    ) {
+        self.beat = beat; self.op = op
+        self.degrees = degrees; self.inversion = inversion
+        self.n = n; self.tVal = tVal
+        self.root = root; self.scale = scale
+        self.roman = roman
+    }
 }
 
 // MARK: - Score Note Type

@@ -655,3 +655,254 @@ struct BuildTimelineTests {
         #expect(timeline.events[1].beat == 4.0)
     }
 }
+
+// MARK: - setRoman Tests
+
+/// Helper: build a one-event timeline in C major and query state at beat 0.
+private func romanState(_ roman: String, key: Key = Key(root: .C, scale: .major))
+    -> (key: Key, chord: ChordInScale)
+{
+    let event = ChordEventSyntax(beat: 0, op: "setRoman", roman: roman)
+    let evs = [HarmonyTimeline.Event(beat: 0, op: event)]
+    let timeline = HarmonyTimeline(totalBeats: 16, initialKey: key, events: evs)
+    return timeline.state(at: 0, loop: false)
+}
+
+@Suite("HarmonyTimeline setRoman", .serialized)
+struct SetRomanTests {
+
+    // MARK: Diatonic triads
+
+    @Test("I → degrees [0,2,4] root position, key unchanged")
+    func romanI() {
+        let (key, chord) = romanState("I")
+        #expect(chord.degrees == [0, 2, 4])
+        #expect(chord.inversion == 0)
+        #expect(key.root == NoteClass.C)
+        #expect(key.scale == Scale.major)
+    }
+
+    @Test("ii → degrees [1,3,5] root position")
+    func romanII() {
+        let (_, chord) = romanState("ii")
+        #expect(chord.degrees == [1, 3, 5])
+        #expect(chord.inversion == 0)
+    }
+
+    @Test("IV → degrees [3,5,7]")
+    func romanIV() {
+        let (_, chord) = romanState("IV")
+        #expect(chord.degrees == [3, 5, 7])
+    }
+
+    @Test("V → degrees [4,6,8]")
+    func romanV() {
+        let (_, chord) = romanState("V")
+        #expect(chord.degrees == [4, 6, 8])
+    }
+
+    @Test("vi → degrees [5,7,9]")
+    func romanVI() {
+        let (_, chord) = romanState("vi")
+        #expect(chord.degrees == [5, 7, 9])
+    }
+
+    @Test("viio → degrees [6,8,10], dim quality consumed")
+    func romanVIIo() {
+        let (_, chord) = romanState("viio")
+        #expect(chord.degrees == [6, 8, 10])
+        #expect(chord.inversion == 0)
+    }
+
+    // MARK: Seventh chords
+
+    @Test("V7 → degrees [4,6,8,10]")
+    func romanV7() {
+        let (_, chord) = romanState("V7")
+        #expect(chord.degrees == [4, 6, 8, 10])
+        #expect(chord.inversion == 0)
+    }
+
+    @Test("viio7 → degrees [6,8,10,12]")
+    func romanVIIo7() {
+        let (_, chord) = romanState("viio7")
+        #expect(chord.degrees == [6, 8, 10, 12])
+    }
+
+    @Test("ii/o7 → degrees [1,3,5,7] (half-dim, /o consumed)")
+    func romanIIhalfDim7() {
+        let (_, chord) = romanState("ii/o7")
+        #expect(chord.degrees == [1, 3, 5, 7])
+        #expect(chord.inversion == 0)
+    }
+
+    // MARK: Inversions from figured bass
+
+    @Test("I6 → triad, 1st inversion")
+    func romanI6() {
+        let (_, chord) = romanState("I6")
+        #expect(chord.degrees == [0, 2, 4])
+        #expect(chord.inversion == 1)
+    }
+
+    @Test("I6/4 → triad, 2nd inversion")
+    func romanI64() {
+        let (_, chord) = romanState("I6/4")
+        #expect(chord.degrees == [0, 2, 4])
+        #expect(chord.inversion == 2)
+    }
+
+    @Test("V6/5 → seventh, 1st inversion")
+    func romanV65() {
+        let (_, chord) = romanState("V6/5")
+        #expect(chord.degrees == [4, 6, 8, 10])
+        #expect(chord.inversion == 1)
+    }
+
+    @Test("ii6/5 → degrees [1,3,5,7] 1st inversion")
+    func romanII65() {
+        let (_, chord) = romanState("ii6/5")
+        #expect(chord.degrees == [1, 3, 5, 7])
+        #expect(chord.inversion == 1)
+    }
+
+    @Test("V4/3 → seventh, 2nd inversion")
+    func romanV43() {
+        let (_, chord) = romanState("V4/3")
+        #expect(chord.degrees == [4, 6, 8, 10])
+        #expect(chord.inversion == 2)
+    }
+
+    @Test("V2 → seventh, 3rd inversion")
+    func romanV2() {
+        let (_, chord) = romanState("V2")
+        #expect(chord.degrees == [4, 6, 8, 10])
+        #expect(chord.inversion == 3)
+    }
+
+    @Test("viio6/5 → [6,8,10,12] 1st inversion (quality+figure)")
+    func romanVIIo65() {
+        let (_, chord) = romanState("viio6/5")
+        #expect(chord.degrees == [6, 8, 10, 12])
+        #expect(chord.inversion == 1)
+    }
+
+    @Test("ii/o6/5 → [1,3,5,7] 1st inversion")
+    func romanIIhalfDim65() {
+        let (_, chord) = romanState("ii/o6/5")
+        #expect(chord.degrees == [1, 3, 5, 7])
+        #expect(chord.inversion == 1)
+    }
+
+    // MARK: Applied chords (tonicization)
+
+    @Test("V/V in C major → chord [4,6,8] in G major")
+    func romanVofV() {
+        let (key, chord) = romanState("V/V")
+        // V of C = G → key changes to G major
+        #expect(key.root == NoteClass.G)
+        #expect(key.scale == Scale.major)
+        // V in G major = scale degrees [4,6,8]
+        #expect(chord.degrees == [4, 6, 8])
+        #expect(chord.inversion == 0)
+    }
+
+    @Test("V/vi in C major → chord [4,6,8] in A minor")
+    func romanVofVI() {
+        let (key, chord) = romanState("V/vi")
+        // vi of C = A → key changes to A minor (lowercase target)
+        #expect(key.root == NoteClass.A)
+        #expect(key.scale == Scale.minor)
+        #expect(chord.degrees == [4, 6, 8])
+    }
+
+    @Test("V/IV in C major → key changes to F major")
+    func romanVofIV() {
+        let (key, chord) = romanState("V/IV")
+        #expect(key.root == NoteClass.F)
+        #expect(key.scale == Scale.major)
+        #expect(chord.degrees == [4, 6, 8])
+    }
+
+    @Test("V7/V in C major → seventh chord in G major")
+    func romanV7ofV() {
+        let (key, chord) = romanState("V7/V")
+        #expect(key.root == NoteClass.G)
+        #expect(key.scale == Scale.major)
+        #expect(chord.degrees == [4, 6, 8, 10])
+        #expect(chord.inversion == 0)
+    }
+
+    @Test("viio7/V in C major → [6,8,10,12] in G major")
+    func romanVIIo7ofV() {
+        let (key, chord) = romanState("viio7/V")
+        #expect(key.root == NoteClass.G)
+        #expect(chord.degrees == [6, 8, 10, 12])
+    }
+
+    @Test("V6/5/IV in C major → [4,6,8,10] inv=1 in F major")
+    func romanV65ofIV() {
+        let (key, chord) = romanState("V6/5/IV")
+        #expect(key.root == NoteClass.F)
+        #expect(key.scale == Scale.major)
+        #expect(chord.degrees == [4, 6, 8, 10])
+        #expect(chord.inversion == 1)
+    }
+
+    // MARK: Unsupported symbols → no chord change
+
+    @Test("N6 is unsupported → fallback chord unchanged")
+    func romanN6Unsupported() {
+        // Timeline with only N6 event; fallback chord is [0,2,4]
+        let (_, chord) = romanState("N6")
+        #expect(chord.degrees == [0, 2, 4], "Unsupported N6 should leave fallback chord")
+    }
+
+    @Test("Ger6/5 is unsupported → fallback chord unchanged")
+    func romanGerUnsupported() {
+        let (_, chord) = romanState("Ger6/5")
+        #expect(chord.degrees == [0, 2, 4])
+    }
+
+    @Test("bII is unsupported → fallback chord unchanged")
+    func romanBIIUnsupported() {
+        let (_, chord) = romanState("bII")
+        #expect(chord.degrees == [0, 2, 4])
+    }
+
+    @Test("It6 is unsupported → fallback chord unchanged")
+    func romanIt6Unsupported() {
+        let (_, chord) = romanState("It6")
+        #expect(chord.degrees == [0, 2, 4])
+    }
+
+    // MARK: Codable round-trip with roman field
+
+    @Test("ChordEventSyntax setRoman round-trips through JSON")
+    func setRomanCodable() throws {
+        let event = ChordEventSyntax(beat: 4.0, op: "setRoman", roman: "V7/V")
+        let data = try JSONEncoder().encode(event)
+        let decoded = try JSONDecoder().decode(ChordEventSyntax.self, from: data)
+        #expect(decoded.op == "setRoman")
+        #expect(decoded.roman == "V7/V")
+        #expect(decoded.beat == 4.0)
+    }
+
+    @Test("setRoman event fires correctly at the right beat in a multi-event timeline")
+    func setRomanBeatBoundary() {
+        let events = [
+            ChordEventSyntax(beat: 0, op: "setRoman", roman: "I"),
+            ChordEventSyntax(beat: 4, op: "setRoman", roman: "V7")
+        ]
+        let evs = events.map { HarmonyTimeline.Event(beat: $0.beat, op: $0) }
+        let timeline = HarmonyTimeline(
+            totalBeats: 8,
+            initialKey: Key(root: .C, scale: .major),
+            events: evs
+        )
+        let (_, before) = timeline.state(at: 3.9, loop: false)
+        let (_, after) = timeline.state(at: 4.0, loop: false)
+        #expect(before.degrees == [0, 2, 4])
+        #expect(after.degrees == [4, 6, 8, 10])
+    }
+}
