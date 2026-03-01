@@ -8,6 +8,7 @@
 import Foundation
 
 extension Bundle {
+  // swiftlint:disable:next line_length
   func decode<T: Decodable>(_ type: T.Type, from file: String, dateDecodingStrategy: JSONDecoder.DateDecodingStrategy = .deferredToDate, keyDecodingStrategy: JSONDecoder.KeyDecodingStrategy = .useDefaultKeys, subdirectory: String? = nil) -> T {
     guard let url = self.url(forResource: file, withExtension: nil, subdirectory: subdirectory) else {
       fatalError("Failed to locate \(file) in bundle.")
