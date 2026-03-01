@@ -23,7 +23,10 @@ struct AppView: View {
     }
     .tabBarMinimizeBehavior(.onScrollDown)
     .tabViewBottomAccessory(isEnabled: library.anySongPlaying) {
-      PlaybackAccessoryView(isShowingVisualizer: $isShowingVisualizer)
+      PlaybackAccessoryView(
+        state: library.currentPlaybackState,
+        isShowingVisualizer: $isShowingVisualizer
+      )
     }
     .overlay {
       VisualizerView(engine: engine, isPresented: $isShowingVisualizer)
@@ -40,6 +43,7 @@ struct AppView: View {
 private struct PlaybackAccessoryView: View {
   @Environment(SongLibrary.self) private var library
   @Environment(\.tabViewBottomAccessoryPlacement) private var placement
+  let state: SongDocument?
   @Binding var isShowingVisualizer: Bool
   @State private var isShowingEventLog = false
 
@@ -50,10 +54,19 @@ private struct PlaybackAccessoryView: View {
           ProgressView()
         }
 
-        if let name = library.currentSongName {
-          Text(name)
-            .lineLimit(1)
+        VStack(alignment: .leading, spacing: 2) {
+          if let name = library.currentSongName {
+            Text(name)
+              .lineLimit(1)
+          }
+          if let chord = state?.currentChordLabel {
+            Text(chord)
+              .font(.caption.italic())
+              .lineLimit(1)
+              .transition(.opacity)
+          }
         }
+        .animation(.easeInOut(duration: 0.2), value: state?.currentChordLabel)
 
         Spacer()
       }
@@ -70,7 +83,7 @@ private struct PlaybackAccessoryView: View {
       isShowingEventLog = true
     }
     .sheet(isPresented: $isShowingEventLog) {
-      if let state = library.currentPlaybackState {
+      if let state {
         EventLogSheet(state: state)
       }
     }

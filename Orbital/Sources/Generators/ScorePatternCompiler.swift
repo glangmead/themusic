@@ -31,7 +31,16 @@ enum ScorePatternCompiler {
         resourceBaseURL: URL? = nil
     ) async throws -> PatternSyntax.CompileResult {
         let loopVal = score.loop ?? true
+        let secondsPerBeat = 60.0 / score.bpm
         let timeline = buildTimeline(score)
+
+        // Build beat-indexed chord labels for the UI chord label stream.
+        let labelEvents: [(beat: Double, label: String)] = score.chordEvents
+            .sorted { $0.beat < $1.beat }
+            .compactMap { event in
+                guard let label = HarmonyTimeline.formatLabel(for: event) else { return nil }
+                return (beat: event.beat, label: label)
+            }
 
         var musicTracks: [MusicPattern.Track] = []
         var trackInfos: [TrackInfo] = []
@@ -56,7 +65,7 @@ enum ScorePatternCompiler {
             let (chords, sustains, gaps) = compileTrack(
                 trackSyntax,
                 timeline: timeline,
-                bpm: score.bpm,
+                secondsPerBeat: secondsPerBeat,
                 loop: loopVal
             )
             let iters = makeIterators(chords: chords, sustains: sustains, gaps: gaps, loop: loopVal)
@@ -74,7 +83,14 @@ enum ScorePatternCompiler {
             spatialPresets.append(sp)
         }
 
-        let pattern = MusicPattern(tracks: musicTracks, clock: clock)
+        let pattern = MusicPattern(
+            tracks: musicTracks,
+            chordLabelEvents: labelEvents,
+            secondsPerBeat: secondsPerBeat,
+            totalBeats: score.totalBeats,
+            loop: loopVal,
+            clock: clock
+        )
         return PatternSyntax.CompileResult(
             pattern: pattern,
             trackInfos: trackInfos,
@@ -123,10 +139,9 @@ enum ScorePatternCompiler {
     static func compileTrack(
         _ track: ScoreTrackSyntax,
         timeline: HarmonyTimeline,
-        bpm: Double,
+        secondsPerBeat: Double,
         loop: Bool
     ) -> (chords: [[MidiNote]], sustains: [CoreFloat], gaps: [CoreFloat]) {
-        let secondsPerBeat = 60.0 / bpm
         let sustainFraction = track.sustainFraction ?? 0.85
         let defaultVoicing = track.voicing ?? .closed
 

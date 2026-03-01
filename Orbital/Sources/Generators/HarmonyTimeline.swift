@@ -316,6 +316,50 @@ struct HarmonyTimeline {
         }
     }
 
+    // MARK: - Chord Event Label Formatting
+
+    /// Format a ChordEventSyntax as a human-readable label for display in the UI.
+    ///
+    /// Returns nil for ops that don't produce a meaningful standalone label.
+    /// Used by ScorePatternCompiler to build the chord label stream.
+    static func formatLabel(for event: ChordEventSyntax) -> String? {
+        switch event.op {
+        case "setRoman":
+            return event.roman
+
+        case "T":
+            guard let n = event.n else { return nil }
+            return n >= 0 ? "T+\(n)" : "T\(n)"
+
+        case "t":
+            guard let n = event.n else { return nil }
+            return n >= 0 ? "t+\(n)" : "t\(n)"
+
+        case "Tt":
+            var parts: [String] = []
+            if let n = event.n { parts.append(n >= 0 ? "T+\(n)" : "T\(n)") }
+            if let t = event.tVal { parts.append(t >= 0 ? "t+\(t)" : "t\(t)") }
+            return parts.isEmpty ? nil : parts.joined(separator: " ")
+
+        case "setChord":
+            guard let degrees = event.degrees else { return nil }
+            let degreePart = "[\(degrees.map(String.init).joined(separator: ","))]"
+            if let inv = event.inversion, inv > 0 {
+                let invLabels = ["", "⁶", "⁶⁄₄", "⁷", "⁶⁄₅", "⁴⁄₃", "²"]
+                let invLabel = inv < invLabels.count ? invLabels[inv] : " inv\(inv)"
+                return degreePart + invLabel
+            }
+            return degreePart
+
+        case "setKey":
+            guard let root = event.root, let scale = event.scale else { return nil }
+            return "\(root) \(scale)"
+
+        default:
+            return nil
+        }
+    }
+
     /// Map a figured bass string to (chordSize, inversion).
     private func parseFiguredBass(_ fig: String) -> (chordSize: Int, inversion: Int) {
         switch fig {

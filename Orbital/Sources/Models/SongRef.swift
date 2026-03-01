@@ -104,6 +104,11 @@ class SongLibrary {
     return state.song.name
   }
 
+  /// The most recent chord change label from the currently playing score, if any.
+  var currentChordLabel: String? {
+    currentPlaybackState?.currentChordLabel
+  }
+
   func pauseAll() {
     currentPlaybackState?.pause()
     nowPlayingManager.songPaused()

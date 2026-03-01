@@ -1,0 +1,944 @@
+{
+  "name": "The Beatles \u2013 A Hard Days Night",
+  "scoreTracks": {
+    "bpm": 72,
+    "totalBeats": 332,
+    "loop": true,
+    "key": {
+      "root": "G",
+      "scale": "major"
+    },
+    "chordEvents": [
+      {
+        "beat": 0,
+        "op": "setRoman",
+        "roman": "v7"
+      },
+      {
+        "beat": 4,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 6,
+        "op": "setRoman",
+        "roman": "IV"
+      },
+      {
+        "beat": 8,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 12,
+        "op": "setRoman",
+        "roman": "bVII"
+      },
+      {
+        "beat": 16,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 20,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 22,
+        "op": "setRoman",
+        "roman": "IV"
+      },
+      {
+        "beat": 24,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 28,
+        "op": "setRoman",
+        "roman": "bVII"
+      },
+      {
+        "beat": 32,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 36,
+        "op": "setRoman",
+        "roman": "IV"
+      },
+      {
+        "beat": 40,
+        "op": "setRoman",
+        "roman": "V"
+      },
+      {
+        "beat": 44,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 46,
+        "op": "setRoman",
+        "roman": "IV"
+      },
+      {
+        "beat": 48,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 52,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 54,
+        "op": "setRoman",
+        "roman": "IV"
+      },
+      {
+        "beat": 56,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 60,
+        "op": "setRoman",
+        "roman": "bVII"
+      },
+      {
+        "beat": 64,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 68,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 70,
+        "op": "setRoman",
+        "roman": "IV"
+      },
+      {
+        "beat": 72,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 76,
+        "op": "setRoman",
+        "roman": "bVII"
+      },
+      {
+        "beat": 80,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 84,
+        "op": "setRoman",
+        "roman": "IV"
+      },
+      {
+        "beat": 88,
+        "op": "setRoman",
+        "roman": "V"
+      },
+      {
+        "beat": 92,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 94,
+        "op": "setRoman",
+        "roman": "IV"
+      },
+      {
+        "beat": 96,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 100,
+        "op": "setRoman",
+        "roman": "iii"
+      },
+      {
+        "beat": 104,
+        "op": "setRoman",
+        "roman": "vi"
+      },
+      {
+        "beat": 108,
+        "op": "setRoman",
+        "roman": "iii"
+      },
+      {
+        "beat": 112,
+        "op": "setRoman",
+        "roman": "iii"
+      },
+      {
+        "beat": 116,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 120,
+        "op": "setRoman",
+        "roman": "vi"
+      },
+      {
+        "beat": 124,
+        "op": "setRoman",
+        "roman": "IV"
+      },
+      {
+        "beat": 128,
+        "op": "setRoman",
+        "roman": "V"
+      },
+      {
+        "beat": 132,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 134,
+        "op": "setRoman",
+        "roman": "IV"
+      },
+      {
+        "beat": 136,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 140,
+        "op": "setRoman",
+        "roman": "bVII"
+      },
+      {
+        "beat": 144,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 148,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 150,
+        "op": "setRoman",
+        "roman": "IV"
+      },
+      {
+        "beat": 152,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 156,
+        "op": "setRoman",
+        "roman": "bVII"
+      },
+      {
+        "beat": 160,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 164,
+        "op": "setRoman",
+        "roman": "IV"
+      },
+      {
+        "beat": 168,
+        "op": "setRoman",
+        "roman": "V"
+      },
+      {
+        "beat": 172,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 174,
+        "op": "setRoman",
+        "roman": "IV"
+      },
+      {
+        "beat": 176,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 180,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 182,
+        "op": "setRoman",
+        "roman": "IV"
+      },
+      {
+        "beat": 184,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 188,
+        "op": "setRoman",
+        "roman": "bVII"
+      },
+      {
+        "beat": 192,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 196,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 198,
+        "op": "setRoman",
+        "roman": "IV"
+      },
+      {
+        "beat": 200,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 204,
+        "op": "setRoman",
+        "roman": "bVII"
+      },
+      {
+        "beat": 208,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 212,
+        "op": "setRoman",
+        "roman": "IV"
+      },
+      {
+        "beat": 216,
+        "op": "setRoman",
+        "roman": "V"
+      },
+      {
+        "beat": 220,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 222,
+        "op": "setRoman",
+        "roman": "IV"
+      },
+      {
+        "beat": 224,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 228,
+        "op": "setRoman",
+        "roman": "iii"
+      },
+      {
+        "beat": 232,
+        "op": "setRoman",
+        "roman": "vi"
+      },
+      {
+        "beat": 236,
+        "op": "setRoman",
+        "roman": "iii"
+      },
+      {
+        "beat": 240,
+        "op": "setRoman",
+        "roman": "iii"
+      },
+      {
+        "beat": 244,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 248,
+        "op": "setRoman",
+        "roman": "vi"
+      },
+      {
+        "beat": 252,
+        "op": "setRoman",
+        "roman": "IV"
+      },
+      {
+        "beat": 256,
+        "op": "setRoman",
+        "roman": "V"
+      },
+      {
+        "beat": 260,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 262,
+        "op": "setRoman",
+        "roman": "IV"
+      },
+      {
+        "beat": 264,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 268,
+        "op": "setRoman",
+        "roman": "bVII"
+      },
+      {
+        "beat": 272,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 276,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 278,
+        "op": "setRoman",
+        "roman": "IV"
+      },
+      {
+        "beat": 280,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 284,
+        "op": "setRoman",
+        "roman": "bVII"
+      },
+      {
+        "beat": 288,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 292,
+        "op": "setRoman",
+        "roman": "IV"
+      },
+      {
+        "beat": 296,
+        "op": "setRoman",
+        "roman": "V"
+      },
+      {
+        "beat": 300,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 302,
+        "op": "setRoman",
+        "roman": "IV"
+      },
+      {
+        "beat": 304,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 306,
+        "op": "setRoman",
+        "roman": "IV"
+      },
+      {
+        "beat": 308,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 310,
+        "op": "setRoman",
+        "roman": "IV"
+      },
+      {
+        "beat": 312,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 314,
+        "op": "setRoman",
+        "roman": "IV"
+      },
+      {
+        "beat": 316,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 318,
+        "op": "setRoman",
+        "roman": "IV"
+      },
+      {
+        "beat": 320,
+        "op": "setRoman",
+        "roman": "v7"
+      },
+      {
+        "beat": 324,
+        "op": "setRoman",
+        "roman": "v7"
+      },
+      {
+        "beat": 328,
+        "op": "setRoman",
+        "roman": "v7"
+      }
+    ],
+    "tracks": [
+      {
+        "name": "Chords",
+        "presetFilename": "warm_analog_pad",
+        "numVoices": 6,
+        "octave": 3,
+        "voicing": "open",
+        "sustainFraction": 0.85,
+        "notes": [
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 2
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 2
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 2
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 2
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 2
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 2
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 2
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 2
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 2
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 2
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 2
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 2
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 2
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 2
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 2
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 2
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 2
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 2
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 2
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 2
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 2
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 2
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 2
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 2
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 2
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 2
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 2
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 2
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 2
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 2
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 2
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 2
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 2
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 2
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 2
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 2
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 2
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 2
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          },
+          {
+            "type": "currentChord",
+            "durationBeats": 4
+          }
+        ]
+      }
+    ]
+  }
+}

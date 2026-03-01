@@ -139,6 +139,14 @@ struct OrbitalPlay: AsyncParsableCommand {
         }
         signalSource.resume()
 
+        // Subscribe to chord label stream and print each change to stdout.
+        let chordStream = await result.pattern.getChordLabelStream()
+        let chordTask = Task {
+            for await label in chordStream {
+                print("♩ \(label)")
+            }
+        }
+
         // Start playback in a task
         let playTask = Task {
             await result.pattern.play()
@@ -147,6 +155,7 @@ struct OrbitalPlay: AsyncParsableCommand {
         if let duration {
             try await Task.sleep(for: .seconds(duration))
             playTask.cancel()
+            chordTask.cancel()
             engine.fadeOutAndStop()
             try await Task.sleep(for: .seconds(0.1))
         } else {
@@ -223,6 +232,14 @@ struct OrbitalPlay: AsyncParsableCommand {
             }
         }
 
+        // Subscribe to chord label stream and print each change to stdout.
+        let chordStream = await result.pattern.getChordLabelStream()
+        let chordTask = Task {
+            for await label in chordStream {
+                print("♩ \(label)")
+            }
+        }
+
         // Start pattern playback
         let playTask = Task {
             await result.pattern.play()
@@ -232,6 +249,7 @@ struct OrbitalPlay: AsyncParsableCommand {
         try await Task.sleep(for: .seconds(duration))
 
         playTask.cancel()
+        chordTask.cancel()
         tapNode.removeTap(onBus: 0)
         engine.audioEngine.stop()
 

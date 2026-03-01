@@ -38,12 +38,19 @@ class SongDocument {
   var loadError: String?
   private var playbackTask: Task<Void, Never>? = nil
   private var annotationTask: Task<Void, Never>? = nil
+  private var chordLabelTask: Task<Void, Never>? = nil
 
   // MARK: - Event log
 
   /// Rolling log of event annotations, most recent last. Capped at maxLogEntries.
   private(set) var eventLog: [EventAnnotation] = []
   private static let maxLogEntries = 500
+
+  // MARK: - Chord label
+
+  /// The most recently emitted chord change label from the score's harmony timeline.
+  /// Nil when no score pattern is playing or it has no chord events with labels.
+  private(set) var currentChordLabel: String? = nil
 
   // MARK: - Document state (survives stop/play cycles)
 
@@ -154,6 +161,7 @@ class SongDocument {
     loadError = nil
     phase = .loading
     eventLog = []
+    currentChordLabel = nil
 
     playbackTask = Task {
       do {
@@ -169,7 +177,7 @@ class SongDocument {
 
       phase = .playing
 
-      // Subscribe to annotation streams for the event log
+      // Subscribe to annotation streams for the event log.
       if let pattern = runtime?.compiledPattern {
         let streams = await pattern.getAnnotationStreams()
         annotationTask = Task {
@@ -184,6 +192,15 @@ class SongDocument {
                 }
               }
             }
+          }
+        }
+
+        // Chord label stream gets its own task so it's observed directly by SwiftUI
+        // without going through the task group's intermediate layer.
+        let chordStream = await pattern.getChordLabelStream()
+        chordLabelTask = Task { @MainActor in
+          for await label in chordStream {
+            self.currentChordLabel = label
           }
         }
       }
@@ -220,6 +237,8 @@ class SongDocument {
     playbackTask = nil
     annotationTask?.cancel()
     annotationTask = nil
+    chordLabelTask?.cancel()
+    chordLabelTask = nil
     engine?.stop()
     teardownRuntime()
     phase = .idle

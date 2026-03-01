@@ -397,7 +397,7 @@ struct HoldMergingTests {
         )
         let timeline = simpleTimeline(bpm: bpm, totalBeats: 8)
         let (chords, sustains, gaps) = ScorePatternCompiler.compileTrack(
-            track, timeline: timeline, bpm: bpm, loop: true
+            track, timeline: timeline, secondsPerBeat: 60.0 / bpm, loop: true
         )
         #expect(chords.count == 1)
         #expect(chords[0].count == 1)
@@ -428,7 +428,7 @@ struct HoldMergingTests {
         )
         let timeline = simpleTimeline(bpm: bpm, totalBeats: 8)
         let (chords, sustains, gaps) = ScorePatternCompiler.compileTrack(
-            track, timeline: timeline, bpm: bpm, loop: true
+            track, timeline: timeline, secondsPerBeat: 60.0 / bpm, loop: true
         )
         // One event: the note (holds are absorbed)
         #expect(chords.count == 1)
@@ -451,7 +451,7 @@ struct HoldMergingTests {
         )
         let timeline = simpleTimeline(bpm: bpm, totalBeats: 8)
         let (chords, sustains, gaps) = ScorePatternCompiler.compileTrack(
-            track, timeline: timeline, bpm: bpm, loop: true
+            track, timeline: timeline, secondsPerBeat: 60.0 / bpm, loop: true
         )
         #expect(chords.count == 1)
         #expect(chords[0].isEmpty)
@@ -489,7 +489,7 @@ struct HoldMergingTests {
             events: events.map { HarmonyTimeline.Event(beat: $0.beat, op: $0) }
         )
         let (chords, _, _) = ScorePatternCompiler.compileTrack(
-            track, timeline: timeline, bpm: bpm, loop: false
+            track, timeline: timeline, secondsPerBeat: 60.0 / bpm, loop: false
         )
         #expect(chords.count == 2)
         // First note at beat 0: I chord, tone 0 = C4 = 60
@@ -1114,5 +1114,245 @@ struct PerturbationsTests {
         #expect(decoded.perturbations?[0]?.chromatic == -1)
         #expect(decoded.perturbations?[1] == nil)
         #expect(decoded.perturbations?[2]?.chromatic == -1)
+    }
+}
+
+// MARK: - HarmonyTimeline.formatLabel Tests
+
+@Suite("HarmonyTimeline.formatLabel", .serialized)
+struct FormatLabelTests {
+
+    @Test("setRoman returns the roman string")
+    func setRoman() {
+        let event = ChordEventSyntax(beat: 0, op: "setRoman", roman: "V7")
+        #expect(HarmonyTimeline.formatLabel(for: event) == "V7")
+    }
+
+    @Test("setRoman with nil roman returns nil")
+    func setRomanNilRoman() {
+        let event = ChordEventSyntax(beat: 0, op: "setRoman")
+        #expect(HarmonyTimeline.formatLabel(for: event) == nil)
+    }
+
+    @Test("T with positive n returns T+n")
+    func tPositive() {
+        let event = ChordEventSyntax(beat: 0, op: "T", n: 3)
+        #expect(HarmonyTimeline.formatLabel(for: event) == "T+3")
+    }
+
+    @Test("T with negative n returns Tn")
+    func tNegative() {
+        let event = ChordEventSyntax(beat: 0, op: "T", n: -2)
+        #expect(HarmonyTimeline.formatLabel(for: event) == "T-2")
+    }
+
+    @Test("T with zero returns T+0")
+    func tZero() {
+        let event = ChordEventSyntax(beat: 0, op: "T", n: 0)
+        #expect(HarmonyTimeline.formatLabel(for: event) == "T+0")
+    }
+
+    @Test("T with nil n returns nil")
+    func tNilN() {
+        let event = ChordEventSyntax(beat: 0, op: "T")
+        #expect(HarmonyTimeline.formatLabel(for: event) == nil)
+    }
+
+    @Test("t with positive n returns t+n")
+    func tSmallPositive() {
+        let event = ChordEventSyntax(beat: 0, op: "t", n: 1)
+        #expect(HarmonyTimeline.formatLabel(for: event) == "t+1")
+    }
+
+    @Test("t with negative n returns tn")
+    func tSmallNegative() {
+        let event = ChordEventSyntax(beat: 0, op: "t", n: -1)
+        #expect(HarmonyTimeline.formatLabel(for: event) == "t-1")
+    }
+
+    @Test("Tt with both n and tVal returns combined label")
+    func ttBoth() {
+        let event = ChordEventSyntax(beat: 0, op: "Tt", n: 3, tVal: 1)
+        #expect(HarmonyTimeline.formatLabel(for: event) == "T+3 t+1")
+    }
+
+    @Test("Tt with only n (no tVal) returns T part only")
+    func ttOnlyN() {
+        let event = ChordEventSyntax(beat: 0, op: "Tt", n: 2)
+        #expect(HarmonyTimeline.formatLabel(for: event) == "T+2")
+    }
+
+    @Test("Tt with neither n nor tVal returns nil")
+    func ttNeitherPart() {
+        let event = ChordEventSyntax(beat: 0, op: "Tt")
+        #expect(HarmonyTimeline.formatLabel(for: event) == nil)
+    }
+
+    @Test("setChord returns degree array in brackets")
+    func setChord() {
+        let event = ChordEventSyntax(beat: 0, op: "setChord", degrees: [0, 2, 4], inversion: 0)
+        #expect(HarmonyTimeline.formatLabel(for: event) == "[0,2,4]")
+    }
+
+    @Test("setChord with inversion 1 appends superscript 6")
+    func setChordInversion1() {
+        let event = ChordEventSyntax(beat: 0, op: "setChord", degrees: [0, 2, 4], inversion: 1)
+        #expect(HarmonyTimeline.formatLabel(for: event) == "[0,2,4]⁶")
+    }
+
+    @Test("setChord with inversion 2 appends superscript 6/4")
+    func setChordInversion2() {
+        let event = ChordEventSyntax(beat: 0, op: "setChord", degrees: [0, 2, 4], inversion: 2)
+        #expect(HarmonyTimeline.formatLabel(for: event) == "[0,2,4]⁶⁄₄")
+    }
+
+    @Test("setChord with nil degrees returns nil")
+    func setChordNilDegrees() {
+        let event = ChordEventSyntax(beat: 0, op: "setChord")
+        #expect(HarmonyTimeline.formatLabel(for: event) == nil)
+    }
+
+    @Test("setKey returns root and scale separated by space")
+    func setKey() {
+        let event = ChordEventSyntax(beat: 0, op: "setKey", root: "G", scale: "major")
+        #expect(HarmonyTimeline.formatLabel(for: event) == "G major")
+    }
+
+    @Test("setKey with nil root returns nil")
+    func setKeyNilRoot() {
+        let event = ChordEventSyntax(beat: 0, op: "setKey", scale: "minor")
+        #expect(HarmonyTimeline.formatLabel(for: event) == nil)
+    }
+
+    @Test("unknown op returns nil")
+    func unknownOp() {
+        let event = ChordEventSyntax(beat: 0, op: "unknownOp")
+        #expect(HarmonyTimeline.formatLabel(for: event) == nil)
+    }
+}
+
+// MARK: - MusicPattern Chord Label Stream Tests
+
+@Suite("MusicPattern chord label stream", .serialized)
+struct ChordLabelStreamTests {
+
+    /// Collect all labels from a MusicPattern, running play() and cleanup() concurrently
+    /// with the stream consumer. Uses empty tracks so no audio engine is needed.
+    private func collectLabels(
+        events: [(beat: Double, label: String)],
+        secondsPerBeat: Double = 0.002,
+        totalBeats: Double = 1.0,
+        loop: Bool = false
+    ) async -> [String] {
+        let pattern = MusicPattern(
+            tracks: [],
+            chordLabelEvents: events,
+            secondsPerBeat: secondsPerBeat,
+            totalBeats: totalBeats,
+            loop: loop
+        )
+        let stream = await pattern.getChordLabelStream()
+        var received: [String] = []
+        await withTaskGroup(of: Void.self) { group in
+            group.addTask {
+                await pattern.play()
+                await pattern.cleanup()  // closes the stream
+            }
+            group.addTask {
+                for await label in stream {
+                    received.append(label)
+                }
+            }
+        }
+        return received
+    }
+
+    @Test("stream emits labels in beat order for non-looping pattern")
+    func emitsLabelsInOrder() async {
+        let received = await collectLabels(events: [
+            (beat: 0.0, label: "I"),
+            (beat: 1.0, label: "IV"),
+            (beat: 2.0, label: "V"),
+        ], totalBeats: 3.0)
+        #expect(received == ["I", "IV", "V"])
+    }
+
+    @Test("stream emits nothing and closes cleanly when chord event list is empty")
+    func emptyEventsClosesCleanly() async {
+        let received = await collectLabels(events: [])
+        #expect(received.isEmpty)
+    }
+
+    @Test("stream emits single label for a single chord event")
+    func singleEvent() async {
+        let received = await collectLabels(events: [
+            (beat: 0.0, label: "V7"),
+        ], totalBeats: 1.0)
+        #expect(received == ["V7"])
+    }
+
+    @Test("beat-0 event is emitted without delay")
+    func beatZeroImmediate() async {
+        let received = await collectLabels(events: [
+            (beat: 0.0, label: "I"),
+        ], totalBeats: 0.1)
+        #expect(received == ["I"])
+    }
+
+    @Test("labels match formatLabel output for setRoman events")
+    func labelsMatchFormatLabel() async {
+        // Verify the labels stored in MusicPattern match what formatLabel produces.
+        let events = [
+            ChordEventSyntax(beat: 0, op: "setRoman", roman: "I"),
+            ChordEventSyntax(beat: 1, op: "setRoman", roman: "V7"),
+        ]
+        let labelEvents: [(beat: Double, label: String)] = events.compactMap { ev in
+            guard let label = HarmonyTimeline.formatLabel(for: ev) else { return nil }
+            return (beat: ev.beat, label: label)
+        }
+        #expect(labelEvents.count == 2)
+        let received = await collectLabels(
+            events: labelEvents,
+            totalBeats: 2.0
+        )
+        #expect(received == ["I", "V7"])
+    }
+
+    // Regression test for EventAnnotation.chordSymbol always being nil.
+    // MusicPattern.currentChordLabel must be updated by playChordLabels() so
+    // that playTrack() can stamp each annotation with the active chord symbol.
+    @Test("currentChordLabel on actor is updated as chord events fire")
+    func currentChordLabelUpdatesOnActor() async {
+        let labelEvents: [(beat: Double, label: String)] = [
+            (beat: 0.0, label: "I"),
+            (beat: 0.01, label: "V7"),
+        ]
+        let pattern = MusicPattern(
+            tracks: [],
+            chordLabelEvents: labelEvents,
+            secondsPerBeat: 0.002,
+            totalBeats: 0.1,
+            loop: false
+        )
+
+        // Before play, label is nil.
+        let labelBefore = await pattern.currentChordLabel
+        #expect(labelBefore == nil)
+
+        let stream = await pattern.getChordLabelStream()
+        await withTaskGroup(of: Void.self) { group in
+            group.addTask {
+                await pattern.play()
+                await pattern.cleanup()
+            }
+            group.addTask {
+                // Drain the stream so the task group can finish.
+                for await _ in stream { }
+            }
+        }
+
+        // After play, label should be the last chord that fired.
+        let labelAfter = await pattern.currentChordLabel
+        #expect(labelAfter == "V7")
     }
 }

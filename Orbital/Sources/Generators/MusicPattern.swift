@@ -70,15 +70,45 @@ actor MusicPattern {
   private(set) var annotationStreams: [AsyncStream<EventAnnotation>] = []
   private var annotationContinuations: [AsyncStream<EventAnnotation>.Continuation] = []
 
+  // MARK: - Chord label stream
+
+  /// Beat-indexed chord change events with human-readable labels.
+  /// Empty for non-score patterns.
+  private let chordLabelEvents: [(beat: Double, label: String)]
+  private let chordLabelSecondsPerBeat: Double
+  private let chordLabelTotalBeats: Double
+  private let chordLabelLoop: Bool
+
+  /// The most recently emitted chord label. Updated by playChordLabels() and
+  /// read by playTrack() to populate EventAnnotation.chordSymbol.
+  private(set) var currentChordLabel: String? = nil
+
+  /// Stream that yields a label string each time the harmony changes.
+  /// Fires at beat-accurate absolute times, independent of note rhythm.
+  private(set) var chordLabelStream: AsyncStream<String>
+  private var chordLabelContinuation: AsyncStream<String>.Continuation?
+
   init(
     tracks: [Track],
     hierarchyModulators: [CompiledHierarchyModulator] = [],
+    chordLabelEvents: [(beat: Double, label: String)] = [],
+    secondsPerBeat: Double = 0,
+    totalBeats: Double = 0,
+    loop: Bool = false,
     clock: any Clock<Duration> = ContinuousClock()
   ) {
     self.tracks = tracks
     self.hierarchyModulators = hierarchyModulators
     self.clock = clock
     self.timeOrigin = Date.now.timeIntervalSince1970
+    self.chordLabelEvents = chordLabelEvents
+    self.chordLabelSecondsPerBeat = secondsPerBeat
+    self.chordLabelTotalBeats = totalBeats
+    self.chordLabelLoop = loop
+
+    let (clStream, clContinuation) = AsyncStream<String>.makeStream()
+    self.chordLabelStream = clStream
+    self.chordLabelContinuation = clContinuation
 
     for _ in tracks.indices {
       let (stream, continuation) = AsyncStream<EventAnnotation>.makeStream(
@@ -92,6 +122,11 @@ actor MusicPattern {
   /// Accessor for the annotation streams. Called from MainActor before play() starts.
   func getAnnotationStreams() -> [AsyncStream<EventAnnotation>] {
     annotationStreams
+  }
+
+  /// Accessor for the chord label stream. Called from MainActor before play() starts.
+  func getChordLabelStream() -> AsyncStream<String> {
+    chordLabelStream
   }
 
   func setPaused(_ paused: Bool) {
@@ -125,6 +160,7 @@ actor MusicPattern {
   /// Hierarchy modulators also run as concurrent tasks.
   /// Cancelling the calling task propagates to all child tasks.
   func play() async {
+    timeOrigin = Date.now.timeIntervalSince1970
     await withTaskGroup(of: Void.self) { group in
       for trackIndex in tracks.indices {
         group.addTask { [self] in
@@ -136,7 +172,41 @@ actor MusicPattern {
           await self.runHierarchyModulator(mod)
         }
       }
+      // Chord label emission runs as a separate timer loop rather than being
+      // interleaved with note events. This is necessary because chord changes
+      // (from chordEvents) and note onsets (from tracks) are independent: a
+      // chord can change at any beat even if no note fires at that exact moment.
+      // The pre-compiled note arrays also have no beat information left in them
+      // at runtime, so there is no way for playTrack() to know when a chord
+      // boundary was crossed.
+      if !chordLabelEvents.isEmpty {
+        group.addTask { [self] in
+          await self.playChordLabels()
+        }
+      }
     }
+  }
+
+  /// Timer loop that yields chord label strings at beat-accurate absolute times.
+  private func playChordLabels() async {
+    var beatOffset = 0.0
+    repeat {
+      for event in chordLabelEvents {
+        let targetTime = timeOrigin + (beatOffset + event.beat) * chordLabelSecondsPerBeat
+        let sleepSeconds = targetTime - Date.now.timeIntervalSince1970
+        if sleepSeconds > 0 {
+          do {
+            try await clock.sleep(for: .seconds(sleepSeconds))
+          } catch {
+            return
+          }
+        }
+        guard !Task.isCancelled else { return }
+        currentChordLabel = event.label
+        chordLabelContinuation?.yield(event.label)
+      }
+      beatOffset += chordLabelTotalBeats
+    } while chordLabelLoop && !Task.isCancelled
   }
 
   /// Event loop for a single track.
@@ -166,7 +236,7 @@ actor MusicPattern {
             trackIndex: trackIndex,
             trackName: track.name,
             timestamp: Date.now.timeIntervalSince1970 - timeOrigin,
-            chordSymbol: nil,
+            chordSymbol: currentChordLabel,
             notes: event.notes,
             sustain: event.sustain,
             gap: event.gap,
@@ -216,11 +286,13 @@ actor MusicPattern {
     }
   }
 
-  /// Signal all annotation streams that playback has ended.
+  /// Signal all annotation streams and the chord label stream that playback has ended.
   private func finishAnnotations() {
     for continuation in annotationContinuations {
       continuation.finish()
     }
+    chordLabelContinuation?.finish()
+    chordLabelContinuation = nil
   }
 
   /// Detach audio nodes from all tracks.
