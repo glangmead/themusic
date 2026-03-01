@@ -13,7 +13,7 @@ import Foundation
 extension ArrowSyntax {
 
   // see https://www.compilenrun.com/docs/language/swift/swift-enumerations/swift-recursive-enumerations/
-  // swiftlint:disable:next cyclomatic_complexity
+  // swiftlint:disable:next cyclomatic_complexity function_body_length
   func compile(library: [String: ArrowSyntax] = [:]) -> ArrowWithHandles {
     if !library.isEmpty {
       return resolveLibrary(library).compile()
@@ -212,6 +212,13 @@ extension ArrowSyntax {
         return ArrowSyntax.const(name: "_error", val: 0).compile()
       }
       return parsed.compile()
+
+    case .wavetable(let name, let tableName, let widthArr):
+      let tbl = WavetableLibrary.table(named: tableName)
+      let osc = WavetableOscillator(table: tbl, widthArr: widthArr.compile())
+      let arr = ArrowWithHandles(osc)
+      arr.namedWavetableOscs[name] = [osc]
+      return arr
     }
   }
 
@@ -240,6 +247,8 @@ extension ArrowSyntax {
       return .combFilter(name: name, frequency: transform(frequency), feedback: transform(feedback))
     case .osc(let name, let shape, let width):
       return .osc(name: name, shape: shape, width: transform(width))
+    case .wavetable(let name, let tableName, let width):
+      return .wavetable(name: name, tableName: tableName, width: transform(width))
     case .reciprocal(let inner):
       return .reciprocal(of: transform(inner))
     case .const, .constOctave, .constCent, .reciprocalConst,

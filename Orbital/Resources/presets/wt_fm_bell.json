@@ -1,0 +1,44 @@
+{
+  "name"   : "FM Bell",
+  "rose"   : {"freq": 0.3, "leafFactor": 4, "phase": 0, "amp": 5},
+  "effects": {"reverbPreset": 4, "delayTime": 0, "delayLowPassCutoff": 100000, "delayFeedback": 0, "reverbWetDryMix": 40, "delayWetDryMix": 0},
+  "arrow"  : {
+    "compose": [
+      {
+        "prod": [
+          { "const": {"val": 1.0, "name": "overallAmp"}},
+          {
+            "sum": [
+              {
+                "prod": [
+                  { "const": {"val": 1.0, "name": "osc1Mix"} },
+                  {
+                    "compose": [
+                      {
+                        "prod": [
+                          { "const": {"name": "freq", "val": 300} },
+                          { "constOctave": {"name": "osc1Octave", "val": 0} },
+                          { "constCent": {"name": "osc1CentDetune", "val": 0} },
+                          { "identity": {} }
+                        ]
+                      },
+                      { "wavetable": {"name": "osc1", "tableName": "fm_bell", "width": { "const": {"name": "osc1Width", "val": 1} }} }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          { "envelope": { "attack": 0.01, "decay": 1.2, "sustain": 0.2, "release": 1.5, "scale": 1, "name": "ampEnv" } }
+        ]
+      },
+      {
+        "lowPassFilter": {
+          "cutoff"   : { "const": {"name": "cutoff", "val": 8000} },
+          "resonance": { "const": {"name": "resonance", "val": 0.5} },
+          "name"     : "filter"
+        }
+      }
+    ]
+  }
+}

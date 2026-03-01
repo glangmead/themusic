@@ -1,0 +1,52 @@
+{
+  "name"   : "FM Metallic",
+  "rose"   : {"freq": 0.5, "leafFactor": 5, "phase": 2.1, "amp": 6},
+  "effects": {"reverbPreset": 5, "delayTime": 0.25, "delayLowPassCutoff": 8000, "delayFeedback": 20, "reverbWetDryMix": 35, "delayWetDryMix": 25},
+  "arrow"  : {
+    "compose": [
+      {
+        "prod": [
+          { "const": {"val": 1.0, "name": "overallAmp"}},
+          {
+            "sum": [
+              {
+                "prod": [
+                  { "const": {"val": 1.0, "name": "osc1Mix"} },
+                  {
+                    "compose": [
+                      {
+                        "prod": [
+                          { "const": {"name": "freq", "val": 300} },
+                          { "constOctave": {"name": "osc1Octave", "val": 0} },
+                          { "constCent": {"name": "osc1CentDetune", "val": 0} },
+                          { "identity": {} }
+                        ]
+                      },
+                      { "wavetable": {"name": "osc1", "tableName": "fm_metallic", "width": { "const": {"name": "osc1Width", "val": 1} }} }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          { "envelope": { "attack": 0.005, "decay": 0.8, "sustain": 0.3, "release": 1.0, "scale": 1, "name": "ampEnv" } }
+        ]
+      },
+      {
+        "lowPassFilter": {
+          "cutoff"   : {
+            "sum": [
+              { "const": {"name": "cutoffLow", "val": 100} },
+              { "prod": [
+                { "const": {"name": "cutoff", "val": 6000} },
+                { "envelope": { "attack": 0.005, "decay": 0.6, "sustain": 0.2, "release": 0.8, "scale": 1, "name": "filterEnv" } }
+              ]}
+            ]
+          },
+          "resonance": { "const": {"name": "resonance", "val": 1.2} },
+          "name"     : "filter"
+        }
+      }
+    ]
+  }
+}

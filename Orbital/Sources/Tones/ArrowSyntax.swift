@@ -38,6 +38,7 @@ enum ArrowSyntax: Equatable {
   case quickExpression(String)
 
   indirect case osc(name: String, shape: BasicOscillator.OscShape, width: ArrowSyntax)
+  indirect case wavetable(name: String, tableName: String, width: ArrowSyntax)
 }
 
 #if os(iOS)

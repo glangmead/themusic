@@ -34,6 +34,7 @@ struct KnobbyKnob<T: BinaryFloatingPoint>: View {
   /// Set the sensitivity of the dragging gesture.
   var sensitivity: T = 0.3
 
+  // swiftlint:disable:next force_cast
   var valueString: ((T) -> String) = { isInt($0) ? String(format: "%.0f", $0 as! CVarArg) : String(format: "%.2f", $0 as! CVarArg) }
 
   var onChanged: ((T) -> Void)?

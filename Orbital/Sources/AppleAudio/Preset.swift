@@ -114,6 +114,7 @@ class Preset: NoteHandler {
     }
   }
   var distortionPreset: AVAudioUnitDistortionPreset = .defaultValue
+  // swiftlint:disable:next line_length
   // .drumsBitBrush, .drumsBufferBeats, .drumsLoFi, .multiBrokenSpeaker, .multiCellphoneConcert, .multiDecimated1, .multiDecimated2, .multiDecimated3, .multiDecimated4, .multiDistortedFunk, .multiDistortedCubed, .multiDistortedSquared, .multiEcho1, .multiEcho2, .multiEchoTight1, .multiEchoTight2, .multiEverythingIsBroken, .speechAlienChatter, .speechCosmicInterference, .speechGoldenPi, .speechRadioTower, .speechWaves
   func getDistortionPreset() -> AVAudioUnitDistortionPreset {
     distortionPreset

@@ -1,0 +1,44 @@
+{
+  "name"   : "Digital Organ",
+  "rose"   : {"freq": 0.2, "leafFactor": 6, "phase": 0, "amp": 3},
+  "effects": {"reverbPreset": 2, "delayTime": 0, "delayLowPassCutoff": 100000, "delayFeedback": 0, "reverbWetDryMix": 20, "delayWetDryMix": 0},
+  "arrow"  : {
+    "compose": [
+      {
+        "prod": [
+          { "const": {"val": 1.0, "name": "overallAmp"}},
+          {
+            "sum": [
+              {
+                "prod": [
+                  { "const": {"val": 1.0, "name": "osc1Mix"} },
+                  {
+                    "compose": [
+                      {
+                        "prod": [
+                          { "const": {"name": "freq", "val": 300} },
+                          { "constOctave": {"name": "osc1Octave", "val": 0} },
+                          { "constCent": {"name": "osc1CentDetune", "val": 0} },
+                          { "identity": {} }
+                        ]
+                      },
+                      { "wavetable": {"name": "osc1", "tableName": "organ", "width": { "const": {"name": "osc1Width", "val": 1} }} }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          { "envelope": { "attack": 0.02, "decay": 0.1, "sustain": 1.0, "release": 0.08, "scale": 1, "name": "ampEnv" } }
+        ]
+      },
+      {
+        "lowPassFilter": {
+          "cutoff"   : { "const": {"name": "cutoff", "val": 12000} },
+          "resonance": { "const": {"name": "resonance", "val": 0.3} },
+          "name"     : "filter"
+        }
+      }
+    ]
+  }
+}

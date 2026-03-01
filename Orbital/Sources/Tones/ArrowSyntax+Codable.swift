@@ -20,7 +20,7 @@ extension ArrowSyntax: Codable {
     case rand, exponentialRand, line
     case reciprocalConst, reciprocal
     case eventNote, eventVelocity
-    case libraryArrow, emitterValue, quickExpression, osc
+    case libraryArrow, emitterValue, quickExpression, osc, wavetable
   }
 
   // Payloads for multi-field cases
@@ -34,9 +34,10 @@ extension ArrowSyntax: Codable {
   private struct MinMaxPayload: Codable, Equatable { let min: CoreFloat; let max: CoreFloat }
   private struct LinePayload: Codable, Equatable { let duration: CoreFloat; let min: CoreFloat; let max: CoreFloat }
   private struct OscPayload: Codable, Equatable { let name: String; let shape: BasicOscillator.OscShape; let width: ArrowSyntax }
+  private struct WavetablePayload: Codable, Equatable { let name: String; let tableName: String; let width: ArrowSyntax }
   private struct NameOnly: Codable, Equatable { let name: String }
 
-  // swiftlint:disable:next cyclomatic_complexity
+  // swiftlint:disable:next cyclomatic_complexity function_body_length
   init(from decoder: Decoder) throws {
     let container = try decoder.container(keyedBy: CaseKey.self)
 
@@ -110,6 +111,9 @@ extension ArrowSyntax: Codable {
     } else if container.contains(.osc) {
       let p = try container.decode(OscPayload.self, forKey: .osc)
       self = .osc(name: p.name, shape: p.shape, width: p.width)
+    } else if container.contains(.wavetable) {
+      let p = try container.decode(WavetablePayload.self, forKey: .wavetable)
+      self = .wavetable(name: p.name, tableName: p.tableName, width: p.width)
     } else {
       throw DecodingError.dataCorrupted(.init(codingPath: container.codingPath, debugDescription: "Unknown ArrowSyntax case. Keys: \(container.allKeys)"))
     }
@@ -171,6 +175,8 @@ extension ArrowSyntax: Codable {
       try container.encode(expr, forKey: .quickExpression)
     case .osc(let name, let shape, let width):
       try container.encode(OscPayload(name: name, shape: shape, width: width), forKey: .osc)
+    case .wavetable(let name, let tableName, let width):
+      try container.encode(WavetablePayload(name: name, tableName: tableName, width: width), forKey: .wavetable)
     }
   }
 }

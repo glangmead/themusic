@@ -47,7 +47,7 @@ extension ArrowSyntax {
     return descriptors
   }
 
-  // swiftlint:disable:next cyclomatic_complexity
+  // swiftlint:disable:next cyclomatic_complexity function_body_length
   private func collectDescriptors(
     into descriptors: inout [ArrowParamDescriptor],
     seenIds: inout Set<String>
@@ -133,6 +133,9 @@ extension ArrowSyntax {
           defaultShape: shape, suggestedRange: 0...1, stepSize: nil
         ))
       }
+      width.collectDescriptors(into: &descriptors, seenIds: &seenIds)
+
+    case .wavetable(_, _, let width):
       width.collectDescriptors(into: &descriptors, seenIds: &seenIds)
 
     case .choruser(let name, _, let centRadius, let numVoices):

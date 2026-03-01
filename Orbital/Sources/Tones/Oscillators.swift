@@ -315,6 +315,70 @@ final class NoiseSmoothStep: Arrow11 {
   }
 }
 
+// MARK: - Wavetable Oscillator
+
+// Plays a single-cycle wavetable stored as 2048 Doubles at any frequency.
+// The innerArr provides cumulative phase (output of the frequency chain);
+// the table is addressed via frac(phase) with linear interpolation.
+// tableSize must be a power of 2 (the mask trick requires this).
+final class WavetableOscillator: Arrow11, WidthHaver {
+  private let table: ContiguousArray<CoreFloat>
+  private let tableSizeF: CoreFloat
+  private let tableMask: Int
+  private var widthOutputs = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
+  private var scratch = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
+  var widthArr: Arrow11
+
+  init(table: [CoreFloat], widthArr: Arrow11 = ArrowConst(value: 1.0)) {
+    self.table = ContiguousArray(table)
+    self.tableSizeF = CoreFloat(table.count)
+    self.tableMask = table.count - 1
+    self.widthArr = widthArr
+    super.init()
+  }
+
+  override func setSampleRateRecursive(rate: CoreFloat) {
+    widthArr.setSampleRateRecursive(rate: rate)
+    super.setSampleRateRecursive(rate: rate)
+  }
+
+  override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
+    widthArr.process(inputs: inputs, outputs: &widthOutputs)
+    (innerArr ?? ArrowIdentity()).process(inputs: inputs, outputs: &scratch)
+    let n = inputs.count
+    let sizeF = tableSizeF
+    let mask = tableMask
+    table.withUnsafeBufferPointer { tblBuf in
+      scratch.withUnsafeBufferPointer { scratchBuf in
+        outputs.withUnsafeMutableBufferPointer { outBuf in
+          widthOutputs.withUnsafeBufferPointer { widthBuf in
+            guard let tblBase = tblBuf.baseAddress,
+                  let scratchBase = scratchBuf.baseAddress,
+                  let outBase = outBuf.baseAddress,
+                  let widthBase = widthBuf.baseAddress else { return }
+            for i in 0..<n {
+              let phase = scratchBase[i] - floor(scratchBase[i])  // 0..1
+              let w = widthBase[i]
+              let scaledPhase = w > 1e-9 ? phase / w : 0.0
+              if scaledPhase >= 1.0 {
+                outBase[i] = 0.0
+              } else {
+                let idxF = scaledPhase * sizeF
+                let idx0 = Int(idxF) & mask
+                let idx1 = (idx0 + 1) & mask
+                let frac = idxF - floor(idxF)
+                outBase[i] = tblBase[idx0] + frac * (tblBase[idx1] - tblBase[idx0])
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// MARK: - BasicOscillator
+
 final class BasicOscillator: Arrow11 {
   enum OscShape: String, CaseIterable, Equatable, Hashable, Codable {
     case sine = "sineOsc"

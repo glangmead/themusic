@@ -34,6 +34,11 @@ struct ArrowSyntaxEditorView: View {
         ArrowSyntaxEditorView(syntax: width, handler: handler)
       }
 
+    case .wavetable(let name, let tableName, let width):
+      DisclosureGroup("\(name) [\(tableName)]") {
+        ArrowSyntaxEditorView(syntax: width, handler: handler)
+      }
+
     case .choruser(let name, _, _, _):
       ChoruserEditorRow(name: name, handler: handler)
 

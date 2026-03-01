@@ -87,7 +87,7 @@ class Sequencer {
       }
       // kAudioToolboxError_NoTrackDestination -66720
       avSeq.prepareToPlay()
-      try! avSeq.start()
+      try! avSeq.start() // swiftlint:disable:this force_try
     }
   }
 

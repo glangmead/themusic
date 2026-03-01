@@ -9,7 +9,8 @@ import Foundation
 
 class ArrowWithHandles: Arrow11 {
   // the handles are dictionaries with values that give access to arrows within the arrow
-  var namedBasicOscs     = [String: [BasicOscillator]]()
+  var namedBasicOscs       = [String: [BasicOscillator]]()
+  var namedWavetableOscs   = [String: [WavetableOscillator]]()
   var namedLowPassFilter = [String: [LowPassFilter2]]()
   var namedCombFilters   = [String: [CombFilter]]()
   var namedConsts        = [String: [ValHaver]]()
@@ -45,6 +46,7 @@ class ArrowWithHandles: Arrow11 {
       return a + b
     }
     namedBasicOscs.merge(arr2.namedBasicOscs) { (a, b) in return a + b }
+    namedWavetableOscs.merge(arr2.namedWavetableOscs) { (a, b) in return a + b }
     namedLowPassFilter.merge(arr2.namedLowPassFilter) { (a, b) in return a + b }
     namedCombFilters.merge(arr2.namedCombFilters) { (a, b) in return a + b }
     namedChorusers.merge(arr2.namedChorusers) { (a, b) in return a + b }
