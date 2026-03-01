@@ -87,4 +87,3 @@ struct SongCell: View {
     .environment(resourceManager)
   }
 }
-

@@ -140,9 +140,7 @@ struct HarmonyTimeline {
         }
 
         // 2. Neapolitan: N = bII (root position), N6 = bII6 (1st inversion)
-        if str == "N" { str = "bII" }
-        else if str == "N6" { str = "bII6" }
-        else if str.hasPrefix("N") { return nil }   // N7 etc. not supported
+        if str == "N" { str = "bII" } else if str == "N6" { str = "bII6" } else if str.hasPrefix("N") { return nil }   // N7 etc. not supported
 
         // 3. Flat / sharp chromatic prefix
         var semitonePrefix = 0
@@ -184,7 +182,7 @@ struct HarmonyTimeline {
 
         // 6. Find applied chord target: last "/" before b/# or Roman numeral char
         let appliedStartChars: Set<Character> = ["I", "V", "i", "v", "b", "#"]
-        var appliedTargetStr: String? = nil
+        var appliedTargetStr: String?
         if let lastSlash = str.lastIndex(of: "/") {
             let afterSlash = str.index(after: lastSlash)
             if afterSlash < str.endIndex && appliedStartChars.contains(str[afterSlash]) {
@@ -198,7 +196,7 @@ struct HarmonyTimeline {
         let degrees = (0..<chordSize).map { rootDegree + $0 * 2 }
 
         // 8. Compute perturbations for b/# prefix chords
-        var perturbations: [Perturbation]? = nil
+        var perturbations: [Perturbation]?
         if semitonePrefix != 0 {
             let baseRoot = scaleSemitonesForDegree(rootDegree, in: key)
             let alteredRoot = baseRoot + semitonePrefix
@@ -296,17 +294,17 @@ struct HarmonyTimeline {
 
     /// Chord tone intervals (semitones from root) for a given quality and chord size.
     private func chordIntervalsFor(quality: String, size: Int) -> [Int] {
-        let triads:   [String: [Int]] = [
-            "major":   [0, 4, 7],
-            "minor":   [0, 3, 7],
-            "dim":     [0, 3, 6],
-            "halfDim": [0, 3, 6],
+        let triads: [String: [Int]] = [
+            "major": [0, 4, 7],
+            "minor": [0, 3, 7],
+            "dim": [0, 3, 6],
+            "halfDim": [0, 3, 6]
         ]
         let sevenths: [String: [Int]] = [
-            "major":   [0, 4, 7, 10],   // dominant 7th (most common uppercase 7th)
-            "minor":   [0, 3, 7, 10],
-            "dim":     [0, 3, 6,  9],
-            "halfDim": [0, 3, 6, 10],
+            "major": [0, 4, 7, 10],   // dominant 7th (most common uppercase 7th)
+            "minor": [0, 3, 7, 10],
+            "dim": [0, 3, 6, 9],
+            "halfDim": [0, 3, 6, 10]
         ]
         switch size {
         case 3:  return triads[quality]   ?? [0, 4, 7]

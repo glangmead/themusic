@@ -5,7 +5,6 @@
 //  Created by Greg Langmead on 11/21/25.
 //
 
-
 import Foundation
 import SwiftUI
 
@@ -60,7 +59,7 @@ struct Theme {
 }
 
 extension Color {
-  
+
   /// Initiate SwiftUI colors with hex code.
   init(hex: UInt, alpha: Double = 1) {
     self.init(
@@ -71,9 +70,8 @@ extension Color {
       opacity: alpha
     )
   }
-  
+
   var uiColor: UIColor {
     return UIColor(self)
   }
 }
-

@@ -131,4 +131,3 @@ struct SongSettingsView: View {
   .environment(playbackState)
   .environment(ResourceManager())
 }
-

@@ -660,8 +660,7 @@ struct BuildTimelineTests {
 
 /// Helper: build a one-event timeline in C major and query state at beat 0.
 private func romanState(_ roman: String, key: Key = Key(root: .C, scale: .major))
-    -> (key: Key, chord: ChordInScale)
-{
+    -> (key: Key, chord: ChordInScale) {
     let event = ChordEventSyntax(beat: 0, op: "setRoman", roman: roman)
     let evs = [HarmonyTimeline.Event(beat: 0, op: event)]
     let timeline = HarmonyTimeline(totalBeats: 16, initialKey: key, events: evs)
@@ -1272,7 +1271,7 @@ struct ChordLabelStreamTests {
         let received = await collectLabels(events: [
             (beat: 0.0, label: "I"),
             (beat: 1.0, label: "IV"),
-            (beat: 2.0, label: "V"),
+            (beat: 2.0, label: "V")
         ], totalBeats: 3.0)
         #expect(received == ["I", "IV", "V"])
     }
@@ -1286,7 +1285,7 @@ struct ChordLabelStreamTests {
     @Test("stream emits single label for a single chord event")
     func singleEvent() async {
         let received = await collectLabels(events: [
-            (beat: 0.0, label: "V7"),
+            (beat: 0.0, label: "V7")
         ], totalBeats: 1.0)
         #expect(received == ["V7"])
     }
@@ -1294,7 +1293,7 @@ struct ChordLabelStreamTests {
     @Test("beat-0 event is emitted without delay")
     func beatZeroImmediate() async {
         let received = await collectLabels(events: [
-            (beat: 0.0, label: "I"),
+            (beat: 0.0, label: "I")
         ], totalBeats: 0.1)
         #expect(received == ["I"])
     }
@@ -1304,7 +1303,7 @@ struct ChordLabelStreamTests {
         // Verify the labels stored in MusicPattern match what formatLabel produces.
         let events = [
             ChordEventSyntax(beat: 0, op: "setRoman", roman: "I"),
-            ChordEventSyntax(beat: 1, op: "setRoman", roman: "V7"),
+            ChordEventSyntax(beat: 1, op: "setRoman", roman: "V7")
         ]
         let labelEvents: [(beat: Double, label: String)] = events.compactMap { ev in
             guard let label = HarmonyTimeline.formatLabel(for: ev) else { return nil }
@@ -1325,7 +1324,7 @@ struct ChordLabelStreamTests {
     func currentChordLabelUpdatesOnActor() async {
         let labelEvents: [(beat: Double, label: String)] = [
             (beat: 0.0, label: "I"),
-            (beat: 0.01, label: "V7"),
+            (beat: 0.01, label: "V7")
         ]
         let pattern = MusicPattern(
             tracks: [],

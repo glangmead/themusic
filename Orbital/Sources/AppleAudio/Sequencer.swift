@@ -20,32 +20,32 @@ class Sequencer {
   var sequencerTime: TimeInterval {
     avSeq.currentPositionInSeconds
   }
-  
+
   // Per-track MIDI listeners for routing tracks to different NoteHandlers
   private var trackListeners: [Int: MIDICallbackInstrument] = [:]
   private var defaultListener: MIDICallbackInstrument?
-  
+
   init(engine: AVAudioEngine, numTracks: Int, defaultHandler: NoteHandler) {
     avEngine = engine
     avSeq = AVAudioSequencer(audioEngine: engine)
-    
+
     avSeq.rate = 0.5
     for _ in 0..<numTracks {
       avSeq?.createAndAppendTrack()
     }
     defaultListener = createListener(for: defaultHandler)
   }
-  
+
   convenience init(synth: SyntacticSynth, numTracks: Int) {
     self.init(engine: synth.engine.audioEngine, numTracks: numTracks, defaultHandler: synth.noteHandler!)
   }
-  
+
   /// Assign a specific NoteHandler to a track. Events on this track will be
   /// routed to the given handler instead of the default.
   func setHandler(_ handler: NoteHandler, forTrack trackIndex: Int) {
     trackListeners[trackIndex] = createListener(for: handler)
   }
-  
+
   /// Create a MIDICallbackInstrument that forwards MIDI events to a NoteHandler.
   private func createListener(for handler: NoteHandler) -> MIDICallbackInstrument {
     // borrowing AudioKit's MIDICallbackInstrument, which has some pretty tough
@@ -65,7 +65,7 @@ class Sequencer {
       }
     })
   }
-  
+
   // e.g. Bundle.main.path(forResource: "MSLFSanctus", ofType: "mid")!
   func playURL(url: URL) {
     do {
@@ -77,7 +77,7 @@ class Sequencer {
       print("\(error.localizedDescription)")
     }
   }
-  
+
   func play() {
     if !avSeq.isPlaying {
       for (i, track) in avSeq.tracks.enumerated() {
@@ -90,29 +90,29 @@ class Sequencer {
       try! avSeq.start()
     }
   }
-  
+
   func stop() {
     avSeq.stop()
   }
-  
+
   func rewind() {
     avSeq.currentPositionInBeats = 0
   }
-  
+
   func clear() {
     for track in avTracks {
       track.clear()
     }
   }
-  
+
   func lengthinSeconds() -> Double {
     avTracks.map({$0.lengthInSeconds}).max() ?? 0
   }
-  
+
   func sendTonicChord(chord: Chord, octave: Int) {
-    sendChord(chord: chord.notes(octave: octave).map {MidiValue($0.pitch.midiNoteNumber)} )
+    sendChord(chord: chord.notes(octave: octave).map {MidiValue($0.pitch.midiNoteNumber)})
   }
-  
+
   func sendChord(chord: [MidiValue]) {
     let seqTrack = avTracks[0]
     // AVMusicTimeStamp: a fractional number of beats

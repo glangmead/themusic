@@ -81,7 +81,7 @@ actor MusicPattern {
 
   /// The most recently emitted chord label. Updated by playChordLabels() and
   /// read by playTrack() to populate EventAnnotation.chordSymbol.
-  private(set) var currentChordLabel: String? = nil
+  private(set) var currentChordLabel: String?
 
   /// Stream that yields a label string each time the harmony changes.
   /// Fires at beat-accurate absolute times, independent of note rhythm.
@@ -277,7 +277,7 @@ actor MusicPattern {
       case .markovChord(let n, var iter):
         // n=0 is a no-op; n=1 advances once; n>1 skips ahead by calling n times and keeping the last.
         guard n > 0 else { break }
-        var last: ChordInScale? = nil
+        var last: ChordInScale?
         for _ in 0..<n { last = iter.next() }
         // Write the mutated iterator state back into the enum case.
         mod.operation = .markovChord(n: n, iterator: iter)

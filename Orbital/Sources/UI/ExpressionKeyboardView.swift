@@ -82,7 +82,7 @@ private struct KeyGridView: View {
     [.char("7"), .char("8"), .char("9"), .char("/"), .char("(")],
     [.char("4"), .char("5"), .char("6"), .char("*"), .char(")")],
     [.char("1"), .char("2"), .char("3"), .char("-"), .backspace],
-    [.char("0"), .char("."), .char("+"), .space, .done],
+    [.char("0"), .char("."), .char("+"), .space, .done]
   ]
 
   var body: some View {

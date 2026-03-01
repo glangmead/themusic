@@ -36,9 +36,9 @@ class SongDocument {
   private(set) var phase: PlaybackPhase = .idle
   /// Set when loading fails; shown as an alert to the user.
   var loadError: String?
-  private var playbackTask: Task<Void, Never>? = nil
-  private var annotationTask: Task<Void, Never>? = nil
-  private var chordLabelTask: Task<Void, Never>? = nil
+  private var playbackTask: Task<Void, Never>?
+  private var annotationTask: Task<Void, Never>?
+  private var chordLabelTask: Task<Void, Never>?
 
   // MARK: - Event log
 
@@ -50,7 +50,7 @@ class SongDocument {
 
   /// The most recently emitted chord change label from the score's harmony timeline.
   /// Nil when no score pattern is playing or it has no chord events with labels.
-  private(set) var currentChordLabel: String? = nil
+  private(set) var currentChordLabel: String?
 
   // MARK: - Document state (survives stop/play cycles)
 

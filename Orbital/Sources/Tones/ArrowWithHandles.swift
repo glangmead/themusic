@@ -21,7 +21,7 @@ class ArrowWithHandles: Arrow11 {
   var namedEmitterValues = [String: [ArrowConst]]()
   var wrappedArrow: Arrow11
   private var wrappedArrowUnsafe: Unmanaged<Arrow11>
-  
+
   init(_ wrappedArrow: Arrow11) {
     // has an arrow
     self.wrappedArrow = wrappedArrow
@@ -29,7 +29,7 @@ class ArrowWithHandles: Arrow11 {
     // does not participate in its superclass arrowness
     super.init()
   }
-  
+
   override func setSampleRateRecursive(rate: CoreFloat) {
     wrappedArrow.setSampleRateRecursive(rate: rate)
     super.setSampleRateRecursive(rate: rate)
@@ -54,10 +54,10 @@ class ArrowWithHandles: Arrow11 {
     namedEmitterValues.merge(arr2.namedEmitterValues) { (a, b) in return a + b }
     return self
   }
-  
+
   func withMergeDictsFromArrows(_ arrs: [ArrowWithHandles]) -> ArrowWithHandles {
     for arr in arrs {
-      let _ = withMergeDictsFromArrow(arr)
+      _ = withMergeDictsFromArrow(arr)
     }
     return self
   }

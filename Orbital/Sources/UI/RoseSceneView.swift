@@ -389,7 +389,7 @@ struct RoseSceneView: View {
         let axisConfigs: [(direction: SIMD3<Float>, color: UIColor, label: String)] = [
             (SIMD3(1, 0, 0), .systemRed, "X"),
             (SIMD3(0, 1, 0), .systemGreen, "Y"),
-            (SIMD3(0, 0, 1), .systemBlue, "Z"),
+            (SIMD3(0, 0, 1), .systemBlue, "Z")
         ]
 
         for config in axisConfigs {
@@ -505,7 +505,7 @@ struct RoseSceneView: View {
         head.findEntity(named: "cranium")?.components[ModelComponent.self]?.materials = [headMaterial(isDark: isDark)]
         head.findEntity(named: "nose")?.components[ModelComponent.self]?.materials = [noseMaterial(isDark: isDark)]
         head.findEntity(named: "leftEar")?.components[ModelComponent.self]?.materials = [earMaterial(isDark: isDark)]
-        head.findEntity(named:  "rightEar")?.components[ModelComponent.self]?.materials = [earMaterial(isDark: isDark)]
+        head.findEntity(named: "rightEar")?.components[ModelComponent.self]?.materials = [earMaterial(isDark: isDark)]
         head.findEntity(named: "leftEye")?.components[ModelComponent.self]?.materials = [eyeMaterial(isDark: isDark)]
         head.findEntity(named: "rightEye")?.components[ModelComponent.self]?.materials = [eyeMaterial(isDark: isDark)]
     }
@@ -514,7 +514,7 @@ struct RoseSceneView: View {
         let configs: [(label: String, color: UIColor)] = [
             ("X", .systemRed),
             ("Y", .systemGreen),
-            ("Z", .systemBlue),
+            ("Z", .systemBlue)
         ]
         for config in configs {
             let mat = axisMaterial(color: config.color, isDark: isDark)

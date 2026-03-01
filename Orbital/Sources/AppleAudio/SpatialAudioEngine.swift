@@ -24,29 +24,29 @@ class SpatialAudioEngine {
     stereo = AVAudioFormat(standardFormatWithSampleRate: audioEngine.outputNode.inputFormat(forBus: 0).sampleRate, channels: 2)!
     mono = AVAudioFormat(standardFormatWithSampleRate: audioEngine.outputNode.inputFormat(forBus: 0).sampleRate, channels: 1)!
   }
-  
+
   // We grab the system's sample rate directly from the output node
   // to ensure our oscillator runs at the correct speed for the hardware.
   var sampleRate: Double {
     audioEngine.outputNode.inputFormat(forBus: 0).sampleRate
   }
-  
+
   func attach(_ nodes: [AVAudioNode]) {
     for node in nodes {
       audioEngine.attach(node)
     }
   }
-  
+
   func detach(_ nodes: [AVAudioNode]) {
     for node in nodes where node.engine === audioEngine {
       audioEngine.detach(node)
     }
   }
-  
+
   func connect(_ node1: AVAudioNode, to node2: AVAudioNode, format: AVAudioFormat?) {
     audioEngine.connect(node1, to: node2, format: format)
   }
-  
+
   func connectToEnvNode(_ nodes: [AVAudioMixerNode]) {
     if spatialEnabled {
       for node in nodes {
@@ -63,7 +63,7 @@ class SpatialAudioEngine {
       }
     }
   }
-  
+
   func start() throws {
     if spatialEnabled {
       envNode.outputType = .auto
@@ -71,21 +71,21 @@ class SpatialAudioEngine {
       envNode.listenerPosition = AVAudio3DPoint(x: 0, y: 0, z: 0)
       envNode.distanceAttenuationParameters.referenceDistance = 5.0
       envNode.distanceAttenuationParameters.maximumDistance = 50.0
-      //envNode.distanceAttenuationParameters.rolloffFactor = 2.0
+      // envNode.distanceAttenuationParameters.rolloffFactor = 2.0
       envNode.reverbParameters.enable = true
       envNode.reverbParameters.level = 60
       envNode.reverbParameters.loadFactoryReverbPreset(.largeHall)
-      
-      //envNode.listenerVectorOrientation = AVAudio3DVectorOrientation(forward: AVAudio3DVector(x: 0.0, y: -1.0, z: 1.0), up: AVAudio3DVector(x: 0.0, y: 0.0, z: 1.0))
+
+      // envNode.listenerVectorOrientation = AVAudio3DVectorOrientation(forward: AVAudio3DVector(x: 0.0, y: -1.0, z: 1.0), up: AVAudio3DVector(x: 0.0, y: 0.0, z: 1.0))
     }
-    
+
     // Prevent the engine from auto-stopping when the app is backgrounded
     // or during brief silence. Required for background audio to continue.
     audioEngine.isAutoShutdownEnabled = false
 
     // Prepare the engine, getting all resources ready.
     audioEngine.prepare()
-    
+
     // And then, start the engine! This is the moment the sound begins to play.
     try audioEngine.start()
 
@@ -139,7 +139,7 @@ class SpatialAudioEngine {
     // later doesn't cause a glitch by reconfiguring the live audio graph.
     if spatialEnabled { installTapOnce() }
   }
-  
+
   /// Client-provided callback; set before calling `start()` or at any time.
   /// Called on the audio-render thread with interleaved samples.
   /// The tap is installed once at engine start to avoid audio glitches.
@@ -158,7 +158,7 @@ class SpatialAudioEngine {
     let node = envNode
     let format = node.outputFormat(forBus: 0)
 
-    node.installTap(onBus: 0, bufferSize: 1024, format: format) { [weak self] buffer, time in
+    node.installTap(onBus: 0, bufferSize: 1024, format: format) { [weak self] buffer, _ in
       guard let self else { return }
       guard let callback = self.tapCallback.withLock({ $0 }) else { return }
       guard let channelData = buffer.floatChannelData else { return }
@@ -186,28 +186,28 @@ class SpatialAudioEngine {
       callback(samples)
     }
   }
-  
+
   /// Rapidly fade output to silence to avoid a click/pop when the engine stops.
   func fadeOutAndStop(duration: TimeInterval = 0.05) {
     guard audioEngine.isRunning else { return }
-    
+
     let startVolume = envNode.outputVolume
     let steps = 10
     let interval = duration / Double(steps)
-    
+
     for i in 1...steps {
       let volume = startVolume * Float(1.0 - Double(i) / Double(steps))
       DispatchQueue.main.asyncAfter(deadline: .now() + interval * Double(i)) { [weak self] in
         self?.envNode.outputVolume = volume
       }
     }
-    
+
     // Stop the engine after the fade completes.
     DispatchQueue.main.asyncAfter(deadline: .now() + duration + 0.01) { [weak self] in
       self?.audioEngine.stop()
     }
   }
-  
+
   /// Stop the engine, run a graph-mutating closure, then restart.
   /// Ensures the render thread isn't pulling audio while nodes are
   /// being attached or detached.
@@ -227,7 +227,7 @@ class SpatialAudioEngine {
   func stop() {
     audioEngine.stop()
   }
-  
+
   func pause() {
     audioEngine.pause()
   }

@@ -145,4 +145,3 @@ struct PatternSyntax: Codable {
     )
   }
 }
-

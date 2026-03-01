@@ -5,7 +5,6 @@
 //  Created by Greg Langmead on 11/21/25.
 //
 
-
 import Foundation
 import SwiftUI
 
@@ -13,44 +12,44 @@ struct KnobbyKnob<T: BinaryFloatingPoint>: View {
   @Binding var value: T
   @State private var isDragging = false
   @State private var oldValue: T = 0
-  
+
   static func isInt(_ val: T) -> Bool {
     val - floor(val) < 0.001
   }
-  
+
   var label: String = ""
-  
+
   var range: ClosedRange<T> = 0...1
   var size: CGFloat = 80.0
-  
+
   /// Set how many steps should the knob have.
   var stepSize: T = 0.01
-  
+
   /// Set if when value = 0, the signal light will be turned gray.
   var allowPoweroff = false
-  
+
   /// If show value on the knob
   var ifShowValue = false
-  
+
   /// Set the sensitivity of the dragging gesture.
   var sensitivity: T = 0.3
-  
+
   var valueString: ((T) -> String) = { isInt($0) ? String(format: "%.0f", $0 as! CVarArg) : String(format: "%.2f", $0 as! CVarArg) }
-  
+
   var onChanged: ((T) -> Void)?
-  
+
   let startingAngle: Angle = .radians(.pi / 6)
-  
+
   var normalizedValue: T {
     T((value - range.lowerBound) / (range.upperBound - range.lowerBound))
   }
-  
+
   let numberFormatter: NumberFormatter = {
     let formatter = NumberFormatter()
     formatter.numberStyle = .decimal
     return formatter
   }()
-  
+
   var body: some View {
     VStack {
       ZStack {
@@ -67,7 +66,7 @@ struct KnobbyKnob<T: BinaryFloatingPoint>: View {
               .frame(width: size + 2.0, height: size + 2.0)
               .mask(Circle().frame(width: size, height: size))
           }
-        
+
         KnobbyBox(isOn: false, blankStyle: false, width: size*0.9, height: 16) {
           Text(ifShowValue ? valueString(value) : label)
             .foregroundColor(Theme.colorBodyText)
@@ -103,7 +102,7 @@ struct KnobbyKnob<T: BinaryFloatingPoint>: View {
         .multilineTextAlignment(.center)
     }
   }
-  
+
   private func updateValue(from value: DragGesture.Value) {
     if !isDragging {
       oldValue = self.value
@@ -122,7 +121,6 @@ struct KnobbyKnob<T: BinaryFloatingPoint>: View {
     }
   }
 }
-
 
 struct KnobbyKnob_Container<T: BinaryFloatingPoint>: View {
   @State var value: T = 0.5

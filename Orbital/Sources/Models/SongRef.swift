@@ -165,7 +165,7 @@ class NowPlayingManager {
     let center = MPNowPlayingInfoCenter.default()
     center.nowPlayingInfo = [
       MPMediaItemPropertyTitle: name,
-      MPNowPlayingInfoPropertyPlaybackRate: 1.0,
+      MPNowPlayingInfoPropertyPlaybackRate: 1.0
     ]
   }
 
@@ -180,7 +180,7 @@ class NowPlayingManager {
     let center = MPNowPlayingInfoCenter.default()
     center.nowPlayingInfo = [
       MPMediaItemPropertyTitle: name,
-      MPNowPlayingInfoPropertyPlaybackRate: 1.0,
+      MPNowPlayingInfoPropertyPlaybackRate: 1.0
     ]
   }
 

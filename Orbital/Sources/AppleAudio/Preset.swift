@@ -37,7 +37,7 @@ struct PresetSyntax: Codable {
   let library: [[String: ArrowSyntax]]? // named reusable arrow definitions, referenced via .libraryArrow
   let rose: RoseSyntax
   let effects: EffectsSyntax
-  
+
   /// Build the resolved [String: ArrowSyntax] dictionary from the library
   /// array, resolving forward references in order.
   func resolvedLibrary() -> [String: ArrowSyntax] {
@@ -50,7 +50,7 @@ struct PresetSyntax: Codable {
     }
     return dict
   }
-  
+
   func compile(numVoices: Int = 12, initEffects: Bool = true, resourceBaseURL: URL? = nil) -> Preset {
     let preset: Preset
     if let arrowSyntax = arrow {
@@ -60,7 +60,7 @@ struct PresetSyntax: Codable {
     } else {
       fatalError("PresetSyntax must have either arrow or sampler")
     }
-    
+
     preset.name = name
     preset.reverbPreset = AVAudioUnitReverbPreset(rawValue: Int(effects.reverbPreset)) ?? .mediumRoom
     preset.setReverbWetDryMix(effects.reverbWetDryMix)
@@ -82,53 +82,53 @@ struct PresetSyntax: Codable {
 class Preset: NoteHandler {
   var name: String = "Noname"
   let numVoices: Int
-  
+
   // Arrow voices (polyphonic): each is an independently compiled ArrowWithHandles
   private(set) var voices: [ArrowWithHandles] = []
   private var voiceLedger: VoiceLedger?
-  private(set) var mergedHandles: ArrowWithHandles? = nil
-  
+  private(set) var mergedHandles: ArrowWithHandles?
+
   // The ArrowSum of all voices, wrapped as ArrowWithHandles
-  var sound: ArrowWithHandles? = nil
-  var audioGate: AudioGate? = nil
-  private var sourceNode: AVAudioSourceNode? = nil
-  
+  var sound: ArrowWithHandles?
+  var audioGate: AudioGate?
+  private var sourceNode: AVAudioSourceNode?
+
   // sound from an audio sample
-  var sampler: Sampler? = nil
+  var sampler: Sampler?
   var samplerNode: AVAudioUnitSampler? { sampler?.node }
-  
+
   // movement of the mixerNode in the environment node (see SpatialAudioEngine)
-  var positionLFO: Rose? = nil
+  var positionLFO: Rose?
   var timeOrigin: Double = 0
   private var positionTask: Task<(), Error>?
-  
+
   // FX nodes: members whose params we can expose
-  private var reverbNode: AVAudioUnitReverb? = nil
-  private var mixerNode: AVAudioMixerNode? = nil
-  private var delayNode: AVAudioUnitDelay? = nil
-  private var distortionNode: AVAudioUnitDistortion? = nil
-  
+  private var reverbNode: AVAudioUnitReverb?
+  private var mixerNode: AVAudioMixerNode?
+  private var delayNode: AVAudioUnitDelay?
+  private var distortionNode: AVAudioUnitDistortion?
+
   var distortionAvailable: Bool {
     distortionNode != nil
   }
-  
+
   var delayAvailable: Bool {
     delayNode != nil
   }
-  
+
   // NoteHandler conformance
   var globalOffset: Int = 0
   var activeNoteCount = 0
   var handles: ArrowWithHandles? { mergedHandles }
-  
+
   func activate() {
     audioGate?.isOpen = true
   }
-  
+
   func deactivate() {
     audioGate?.isOpen = false
   }
-  
+
   /// Resolve the envelope key for gate lifecycle management.
   /// Prefers "ampEnv" exactly, then any key containing "ampenv" case-insensitively,
   /// then falls back to an arbitrary envelope key.
@@ -167,9 +167,9 @@ class Preset: NoteHandler {
       }
     }
   }
-  
+
   // the parameters of the effects and the position arrow
-  
+
   // effect enums
   var reverbPreset: AVAudioUnitReverbPreset = .smallRoom {
     didSet {
@@ -185,7 +185,7 @@ class Preset: NoteHandler {
     distortionNode?.loadFactoryPreset(val)
     self.distortionPreset = val
   }
-  
+
   // effect float values
   func getReverbWetDryMix() -> CoreFloat {
     CoreFloat(reverbNode?.wetDryMix ?? 0)
@@ -202,7 +202,7 @@ class Preset: NoteHandler {
   func getDelayFeedback() -> CoreFloat {
     CoreFloat(delayNode?.feedback ?? 0)
   }
-  func setDelayFeedback(_ val : CoreFloat) {
+  func setDelayFeedback(_ val: CoreFloat) {
     delayNode?.feedback = Float(val)
   }
   func getDelayLowPassCutoff() -> CoreFloat {
@@ -229,38 +229,38 @@ class Preset: NoteHandler {
   func setDistortionWetDryMix(_ val: CoreFloat) {
     distortionNode?.wetDryMix = Float(val)
   }
-  
+
   private var lastTimeWeSetPosition: CoreFloat = 0.0
-  
+
   // setting position is expensive, so limit how often
   // at 0.1 this makes my phone hot
   private let setPositionMinWaitTimeSecs: CoreFloat = 0.01
-  
+
   /// Create a polyphonic Arrow-based Preset with N independent voice copies.
   init(arrowSyntax: ArrowSyntax, library: [String: ArrowSyntax] = [:], numVoices: Int = 12, initEffects: Bool = true) {
     self.numVoices = numVoices
-    
+
     // Compile N independent voice arrow trees
     for _ in 0..<numVoices {
       voices.append(arrowSyntax.compile(library: library))
     }
-    
+
     // Sum all voices into one signal
     let sum = ArrowSum(innerArrs: voices)
     let combined = ArrowWithHandles(sum)
-    let _ = combined.withMergeDictsFromArrows(voices)
+    _ = combined.withMergeDictsFromArrows(voices)
     self.sound = combined
-    
+
     // Merged handles for external access (UI knobs, modulation)
     let handleHolder = ArrowWithHandles(ArrowIdentity())
-    let _ = handleHolder.withMergeDictsFromArrows(voices)
+    _ = handleHolder.withMergeDictsFromArrows(voices)
     self.mergedHandles = handleHolder
-    
+
     // Gate + voice ledger
     self.audioGate = AudioGate(innerArr: combined)
     self.audioGate?.isOpen = false
     self.voiceLedger = VoiceLedger(voiceCount: numVoices)
-    
+
     // Register amp envelopes per voice so the ledger can
     // auto-release voices when envelope release completes.
     for (voiceIdx, voice) in voices.enumerated() {
@@ -269,23 +269,23 @@ class Preset: NoteHandler {
         self.voiceLedger?.registerEnvelopes(forVoice: voiceIdx, envelopes: ampEnvs)
       }
     }
-    
+
     if initEffects { self.initEffects() }
     setupLifecycleCallbacks()
   }
-  
+
   init(sampler: Sampler, initEffects: Bool = true) {
     self.numVoices = 1
     self.sampler = sampler
     self.voiceLedger = VoiceLedger(voiceCount: 1)
     if initEffects { self.initEffects() }
   }
-  
+
   // MARK: - NoteHandler
-  
+
   func noteOn(_ noteVelIn: MidiNote) {
     let noteVel = MidiNote(note: applyOffset(note: noteVelIn.note), velocity: noteVelIn.velocity)
-    
+
     if let sampler = sampler {
       guard let ledger = voiceLedger else { return }
       // Re-trigger: stop then start so the note restarts cleanly
@@ -293,14 +293,14 @@ class Preset: NoteHandler {
         sampler.node.stopNote(noteVel.note, onChannel: 0)
       } else {
         activeNoteCount += 1
-        let _ = ledger.takeAvailableVoice(noteVelIn.note)
+        _ = ledger.takeAvailableVoice(noteVelIn.note)
       }
       sampler.node.startNote(noteVel.note, withVelocity: noteVel.velocity, onChannel: 0)
       return
     }
-    
+
     guard let ledger = voiceLedger else { return }
-    
+
     // Re-trigger if this note is already playing on a voice
     if let voiceIdx = ledger.voiceIndex(for: noteVelIn.note) {
       triggerVoice(voiceIdx, note: noteVel, isRetrigger: true)
@@ -313,10 +313,10 @@ class Preset: NoteHandler {
     } else {
     }
   }
-  
+
   func noteOff(_ noteVelIn: MidiNote) {
     let noteVel = MidiNote(note: applyOffset(note: noteVelIn.note), velocity: noteVelIn.velocity)
-    
+
     if let sampler = sampler {
       guard let ledger = voiceLedger else { return }
       if ledger.releaseVoice(noteVelIn.note) != nil {
@@ -325,13 +325,13 @@ class Preset: NoteHandler {
       sampler.node.stopNote(noteVel.note, onChannel: 0)
       return
     }
-    
+
     guard let ledger = voiceLedger else { return }
     if let voiceIdx = ledger.beginRelease(noteVelIn.note) {
       releaseVoice(voiceIdx, note: noteVel)
     }
   }
-  
+
   private func triggerVoice(_ voiceIdx: Int, note: MidiNote, isRetrigger: Bool = false) {
     if !isRetrigger {
       activeNoteCount += 1
@@ -348,7 +348,7 @@ class Preset: NoteHandler {
       }
     }
   }
-  
+
   private func releaseVoice(_ voiceIdx: Int, note: MidiNote) {
     activeNoteCount -= 1
     let voice = voices[voiceIdx]
@@ -358,7 +358,7 @@ class Preset: NoteHandler {
       }
     }
   }
-  
+
   func initEffects() {
     self.reverbNode = AVAudioUnitReverb()
     self.delayNode = AVAudioUnitDelay()
@@ -369,11 +369,11 @@ class Preset: NoteHandler {
     self.reverbNode?.wetDryMix = 0
     self.timeOrigin = Date.now.timeIntervalSince1970
   }
-  
+
   deinit {
     positionTask?.cancel()
   }
-  
+
   func setPosition(_ t: CoreFloat) {
     if t > 1 { // fixes some race on startup
       if positionLFO != nil && (audioGate?.isOpen ?? (activeNoteCount > 0)) { // Always open for sampler
@@ -387,17 +387,17 @@ class Preset: NoteHandler {
       }
     }
   }
-  
+
   func wrapInAppleNodes(forEngine engine: SpatialAudioEngine) async throws -> AVAudioMixerNode {
     guard let mixerNode = self.mixerNode else {
       fatalError()
     }
-    
+
     let sampleRate = engine.sampleRate
-    
+
     // recursively tell all arrows their sample rate
     sound?.setSampleRateRecursive(rate: sampleRate)
-    
+
     // connect our synthesis engine to an AVAudioSourceNode as the initial node in the chain,
     // else create an AVAudioUnitSampler to fill that role
     var initialNode: AVAudioNode?
@@ -418,14 +418,14 @@ class Preset: NoteHandler {
       }
       initialNode = sampler.node
     }
-    
+
     let nodes = [initialNode, distortionNode, delayNode, reverbNode, mixerNode].compactMap { $0 }
     engine.attach(nodes)
-    
+
     for i in 0..<nodes.count-1 {
       engine.connect(nodes[i], to: nodes[i+1], format: nil) // having mono when the "to:" is reverb failed on my iPhone
     }
-    
+
     positionTask?.cancel()
     positionTask = Task.detached(priority: .medium) { [weak self] in
       while let self = self, !Task.isCancelled {
@@ -433,7 +433,7 @@ class Preset: NoteHandler {
         guard let engine = self.mixerNode!.engine else {
           break
         }
-        
+
         if engine.isRunning {
           do {
             try await Task.sleep(for: .seconds(0.01))
@@ -447,15 +447,15 @@ class Preset: NoteHandler {
         }
       }
     }
-    
+
     return mixerNode
   }
-  
+
   func detachAppleNodes(from engine: SpatialAudioEngine) {
     positionTask?.cancel()
     let allNodes: [AVAudioNode?] = [sourceNode, sampler?.node, distortionNode, delayNode, reverbNode, mixerNode]
     let nodes = allNodes.compactMap { $0 }
     engine.detach(nodes)
   }
-  
+
 }

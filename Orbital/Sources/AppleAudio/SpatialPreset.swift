@@ -26,17 +26,17 @@ class SpatialPreset: NoteHandler {
   let numVoices: Int
   let resourceBaseURL: URL?
   private(set) var presets: [Preset] = []
-  
+
   // Spatial voice management: routes notes to different Presets
   private var spatialLedger: VoiceLedger?
   private var _cachedHandles: ArrowWithHandles?
-  
+
   var globalOffset: Int = 0 {
     didSet {
       for preset in presets { preset.globalOffset = globalOffset }
     }
   }
-  
+
   /// Aggregated handles from all Presets for parameter editing (UI knobs, modulation)
   var handles: ArrowWithHandles? {
     if let cached = _cachedHandles { return cached }
@@ -44,13 +44,13 @@ class SpatialPreset: NoteHandler {
     let holder = ArrowWithHandles(ArrowIdentity())
     for preset in presets {
       if let h = preset.handles {
-        let _ = holder.withMergeDictsFromArrow(h)
+        _ = holder.withMergeDictsFromArrow(h)
       }
     }
     _cachedHandles = holder
     return holder
   }
-  
+
   init(presetSpec: PresetSyntax, engine: SpatialAudioEngine, numVoices: Int = 12, resourceBaseURL: URL? = nil) async throws {
     self.presetSpec = presetSpec
     self.engine = engine
@@ -68,7 +68,7 @@ class SpatialPreset: NoteHandler {
     self.resourceBaseURL = nil
     setupForUI()
   }
-  
+
   private func setup() async throws {
     guard let engine else { return }
     var avNodes = [AVAudioMixerNode]()
@@ -101,7 +101,7 @@ class SpatialPreset: NoteHandler {
     }
 
     spatialLedger = VoiceLedger(voiceCount: numVoices)
-    
+
     // Register each inner Preset's ampEnv envelopes with the spatial ledger
     // so it can auto-release voices when the envelope release completes.
     for (i, preset) in presets.enumerated() {
@@ -109,7 +109,7 @@ class SpatialPreset: NoteHandler {
         spatialLedger?.registerEnvelopes(forVoice: i, envelopes: ampEnvs)
       }
     }
-    
+
     engine.connectToEnvNode(avNodes)
   }
 
@@ -140,18 +140,18 @@ class SpatialPreset: NoteHandler {
     presets.removeAll()
     _cachedHandles = nil
   }
-  
+
   func reload(presetSpec: PresetSyntax? = nil) {
     cleanup()
     if let presetSpec { self.presetSpec = presetSpec }
     Task { try? await setup() }
   }
-  
+
   // MARK: - NoteHandler
-  
+
   func noteOn(_ noteVelIn: MidiNote) {
     guard let ledger = spatialLedger else { return }
-    
+
     // Re-trigger if note already playing on a Preset
     if let idx = ledger.voiceIndex(for: noteVelIn.note) {
       presets[idx].noteOn(noteVelIn)
@@ -161,17 +161,17 @@ class SpatialPreset: NoteHandler {
       presets[idx].noteOn(noteVelIn)
     }
   }
-  
+
   func noteOff(_ noteVelIn: MidiNote) {
     guard let ledger = spatialLedger else { return }
-    
+
     if let idx = ledger.beginRelease(noteVelIn.note) {
       presets[idx].noteOff(noteVelIn)
     }
   }
-  
+
   // MARK: - Chord API
-  
+
   /// Play multiple notes simultaneously.
   /// - Parameters:
   ///   - notes: The notes to play.
@@ -208,7 +208,7 @@ class SpatialPreset: NoteHandler {
       presets[voiceIdx].noteOn(note)
     }
   }
-  
+
   func notesOff(_ notes: [MidiNote]) {
     for note in notes {
       noteOff(note)
@@ -223,9 +223,9 @@ class SpatialPreset: NoteHandler {
       noteOff(MidiNote(note: note, velocity: 0))
     }
   }
-  
+
   // MARK: - Preset access
-  
+
   func forEachPreset(_ body: (Preset) -> Void) {
     presets.forEach(body)
   }

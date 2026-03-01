@@ -78,13 +78,13 @@ final class VoiceLedger: @unchecked Sendable {
     var indexQueue: [Int]
     var noteToVoiceIdx: [MidiValue: Int]
   }
-  
+
   private let lock: OSAllocatedUnfairLock<State>
-  
+
   /// Envelopes per voice index. When set, `beginRelease` installs
   /// `releaseDidComplete` callbacks that auto-call `finishRelease`.
   private var voiceEnvelopes: [Int: [ADSR]] = [:]
-  
+
   init(voiceCount: Int) {
     let initialState = State(
       noteOnnedVoiceIdxs: Set<Int>(),
@@ -95,19 +95,19 @@ final class VoiceLedger: @unchecked Sendable {
     )
     self.lock = OSAllocatedUnfairLock(initialState: initialState)
   }
-  
+
   /// Register the amplitude envelopes for a voice so that `beginRelease`
   /// can append finish callbacks that automatically call `finishRelease`
   /// when all envelopes close.
   func registerEnvelopes(forVoice voiceIndex: Int, envelopes: [ADSR]) {
     voiceEnvelopes[voiceIndex] = envelopes
   }
-  
+
   /// Read the current note-to-voice mapping (for tests/diagnostics).
   var noteToVoiceIdx: [MidiValue: Int] {
     lock.withLock { $0.noteToVoiceIdx }
   }
-  
+
   /// The result of a voice allocation attempt.
   struct VoiceAllocation {
     let voiceIdx: Int
@@ -175,13 +175,13 @@ final class VoiceLedger: @unchecked Sendable {
   func takeAvailableVoice(_ note: MidiValue) -> Int? {
     takeAvailableVoiceAllocation(note)?.voiceIdx
   }
-  
+
   func voiceIndex(for note: MidiValue) -> Int? {
     lock.withLock { state in
       state.noteToVoiceIdx[note]
     }
   }
-  
+
   /// Begin releasing a voice: moves it from noteOnned to releasing.
   /// The voice is no longer mapped to the note (so the same MIDI note
   /// can be played again on a different voice) but is NOT yet available
@@ -201,7 +201,7 @@ final class VoiceLedger: @unchecked Sendable {
       }
       return nil
     }
-    
+
     // Install auto-finish callbacks if envelopes are registered
     if let voiceIdx, let envelopes = voiceEnvelopes[voiceIdx], !envelopes.isEmpty {
       for env in envelopes {
@@ -215,10 +215,10 @@ final class VoiceLedger: @unchecked Sendable {
         }
       }
     }
-    
+
     return voiceIdx
   }
-  
+
   /// Finish releasing a voice: moves it from releasing to available.
   /// Called automatically by envelope callbacks if envelopes were
   /// registered, or manually by the caller otherwise.
@@ -232,7 +232,7 @@ final class VoiceLedger: @unchecked Sendable {
       // relative to when it was last noteOnned — oldest available stays near the front).
     }
   }
-  
+
   /// Immediate release: moves a voice directly from noteOnned to available.
   /// Used for sampler-based presets where the sampler handles its own release.
   func releaseVoice(_ note: MidiValue) -> Int? {
@@ -248,6 +248,3 @@ final class VoiceLedger: @unchecked Sendable {
     }
   }
 }
-
-
-

@@ -36,8 +36,8 @@ struct VoiceLedgerTests {
   @Test("Release makes a voice available again")
   func releaseAndReuse() {
     let ledger = VoiceLedger(voiceCount: 2)
-    let _ = ledger.takeAvailableVoice(60) // takes index 0
-    let _ = ledger.takeAvailableVoice(62) // takes index 1
+    _ = ledger.takeAvailableVoice(60) // takes index 0
+    _ = ledger.takeAvailableVoice(62) // takes index 1
 
     // Release note 60 — voice 0 returns to the pool
     let released = ledger.releaseVoice(60)
@@ -51,13 +51,13 @@ struct VoiceLedgerTests {
   @Test("Released voices go to end of reuse queue")
   func reuseOrdering() {
     let ledger = VoiceLedger(voiceCount: 3)
-    let _ = ledger.takeAvailableVoice(60) // index 0
-    let _ = ledger.takeAvailableVoice(62) // index 1
-    let _ = ledger.takeAvailableVoice(64) // index 2
+    _ = ledger.takeAvailableVoice(60) // index 0
+    _ = ledger.takeAvailableVoice(62) // index 1
+    _ = ledger.takeAvailableVoice(64) // index 2
 
     // Release 0, then 2
-    let _ = ledger.releaseVoice(60)
-    let _ = ledger.releaseVoice(64)
+    _ = ledger.releaseVoice(60)
+    _ = ledger.releaseVoice(64)
 
     // Next allocation should get 0 first (released first → appended first)
     let first = ledger.takeAvailableVoice(65)
@@ -97,7 +97,7 @@ struct VoiceLedgerTests {
   func reallocateSameNote() {
     let ledger = VoiceLedger(voiceCount: 2)
     let idx1 = ledger.takeAvailableVoice(60)
-    let _ = ledger.releaseVoice(60)
+    _ = ledger.releaseVoice(60)
     let idx2 = ledger.takeAvailableVoice(60)
     #expect(idx1 != nil)
     #expect(idx2 != nil)
@@ -121,8 +121,8 @@ struct VoiceLedgerTests {
   func deferredRelease() {
     // Use 3 voices so voice 2 stays available during the test, avoiding voice stealing.
     let ledger = VoiceLedger(voiceCount: 3)
-    let _ = ledger.takeAvailableVoice(60) // voice 0
-    let _ = ledger.takeAvailableVoice(62) // voice 1
+    _ = ledger.takeAvailableVoice(60) // voice 0
+    _ = ledger.takeAvailableVoice(62) // voice 1
     // voice 2 remains available
 
     // Begin release on note 60 — voice 0 moves to releasing
@@ -155,7 +155,7 @@ struct VoiceLedgerTests {
     #expect(idx0 == 0)
 
     // Begin release — voice 0 is releasing, note 60 unmapped
-    let _ = ledger.beginRelease(60)
+    _ = ledger.beginRelease(60)
 
     // Play note 60 again — should get a different voice
     let idx1 = ledger.takeAvailableVoice(60)
@@ -181,8 +181,8 @@ struct VoiceLedgerTests {
     ))
     ledger.registerEnvelopes(forVoice: 0, envelopes: [env])
 
-    let _ = ledger.takeAvailableVoice(60) // voice 0
-    let _ = ledger.takeAvailableVoice(62) // voice 1
+    _ = ledger.takeAvailableVoice(60) // voice 0
+    _ = ledger.takeAvailableVoice(62) // voice 1
     // voice 2 remains available
 
     // Begin release — appends finish callback on the envelope

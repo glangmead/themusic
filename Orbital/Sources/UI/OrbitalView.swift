@@ -84,7 +84,7 @@ struct OrbitalView: View {
     SongRef(
       name: "Baroque Chords",
       patternFileName: "baroque_chords.json"
-    ),
+    )
   ]
   resourceManager.isReady = true
   // Pre-create playback states so navigating to SongSettingsView works in Preview
@@ -96,4 +96,3 @@ struct OrbitalView: View {
     .environment(library)
     .environment(resourceManager)
 }
-

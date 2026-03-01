@@ -5,19 +5,18 @@
 //  Created by Greg Langmead on 11/21/25.
 //
 
-
 import Foundation
 import SwiftUI
 
 struct KnobbyBox<Content: View>: View {
-  
+
   var isOn: Bool = true
   var blankStyle: Bool = false
   var width: CGFloat = 200.0
   var height: CGFloat = 200.0
-  
+
   var content: () -> Content?
-  
+
   init(isOn: Bool, blankStyle: Bool = false, width: CGFloat = 200.0, height: CGFloat = 200.0,
        @ViewBuilder content: @escaping () -> Content? = { nil }) {
     self.isOn = isOn
@@ -26,12 +25,12 @@ struct KnobbyBox<Content: View>: View {
     self.height = height
     self.content = content
   }
-  
+
   var body: some View {
     ZStack {
       content()
     }.frame(width: width, height: height)
-    
+
   }
 }
 

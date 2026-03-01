@@ -19,14 +19,14 @@ class Arrow11 {
     innerArrs.forEach({$0.setSampleRateRecursive(rate: rate)})
   }
   // these are arrows with which we can compose (arr/arrs run first, then this arrow)
-  var innerArr: Arrow11? = nil {
+  var innerArr: Arrow11? {
     didSet {
       if let inner = innerArr {
         self.innerArrUnmanaged = Unmanaged.passUnretained(inner)
       }
     }
   }
-  private var innerArrUnmanaged: Unmanaged<Arrow11>? = nil
+  private var innerArrUnmanaged: Unmanaged<Arrow11>?
 
   var innerArrs = ContiguousArray<Arrow11>() {
     didSet {
@@ -44,7 +44,7 @@ class Arrow11 {
       self.innerArrUnmanaged = Unmanaged.passUnretained(inner)
     }
   }
-  
+
   init(innerArrs: ContiguousArray<Arrow11>) {
     self.innerArrs = innerArrs
     innerArrsUnmanaged = []
@@ -52,7 +52,7 @@ class Arrow11 {
       innerArrsUnmanaged.append(Unmanaged.passUnretained(arrow))
     }
   }
-  
+
   init(innerArrs: [Arrow11]) {
     self.innerArrs = ContiguousArray<Arrow11>(innerArrs)
     innerArrsUnmanaged = []
@@ -73,7 +73,7 @@ class Arrow11 {
   func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
     (innerArr ?? ArrowIdentity()).process(inputs: inputs, outputs: &outputs)
   }
-  
+
   final func asControl() -> Arrow11 {
     return ControlArrow11(innerArr: self)
   }
@@ -123,7 +123,7 @@ final class AudioGate: Arrow11 {
 
 final class ArrowSum: Arrow11 {
   private var scratchBuffer = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
-  
+
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
     if innerArrsUnmanaged.isEmpty {
       outputs.withUnsafeMutableBufferPointer { outBuf in
@@ -131,12 +131,12 @@ final class ArrowSum: Arrow11 {
       }
       return
     }
-    
+
     // Process first child directly to output
     innerArrsUnmanaged[0]._withUnsafeGuaranteedRef {
       $0.process(inputs: inputs, outputs: &outputs)
     }
-    
+
     // Process remaining children via scratch
     if innerArrsUnmanaged.count > 1 {
       let count = vDSP_Length(inputs.count)
@@ -163,7 +163,7 @@ final class ArrowProd: Arrow11 {
     innerArrsUnmanaged[0]._withUnsafeGuaranteedRef {
       $0.process(inputs: inputs, outputs: &outputs)
     }
-    
+
     // Process remaining children via scratch
     if innerArrsUnmanaged.count > 1 {
       let count = vDSP_Length(inputs.count)
@@ -212,7 +212,7 @@ final class ArrowExponentialRandom: Arrow11 {
     let result = clamp(min + raw, min: min, max: max)
     return result
   }
-  
+
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
     for i in 0..<inputs.count {
       let u = CoreFloat.random(in: CoreFloat.ulpOfOne...1)
@@ -274,7 +274,7 @@ final class ArrowEqualPowerCrossfade: Arrow11 {
     arrowOuts = [[CoreFloat]](repeating: [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE), count: innerArrs.count)
     super.init(innerArrs: innerArrs)
   }
-  
+
   override func setSampleRateRecursive(rate: CoreFloat) {
     mixPointArr.setSampleRateRecursive(rate: rate)
     super.setSampleRateRecursive(rate: rate)
@@ -310,7 +310,7 @@ final class ArrowRandom: Arrow11 {
   override func of(_ t: CoreFloat) -> CoreFloat {
     CoreFloat.random(in: min...max)
   }
-  
+
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
     // Default implementation: loop
     for i in 0..<inputs.count {
@@ -477,7 +477,7 @@ final class ArrowConstCent: Arrow11, ValHaver, Equatable {
     }
   }
   var centToTheVal: CoreFloat
-  
+
   init(value: CoreFloat) {
     self.val = value
     self.centToTheVal = pow(cent, val)
@@ -493,4 +493,3 @@ final class ArrowConstCent: Arrow11, ValHaver, Equatable {
     lhs.val == rhs.val
   }
 }
-

@@ -32,7 +32,7 @@ private func buildHandlerWithHandles(
   let aggregated = ArrowWithHandles(ArrowIdentity())
   for preset in presets {
     if let h = preset.handles {
-      let _ = aggregated.withMergeDictsFromArrow(h)
+      _ = aggregated.withMergeDictsFromArrow(h)
     }
   }
 
@@ -232,7 +232,7 @@ struct ArrowHandlerReadFromHandlesTests {
     let preset = Preset(arrowSyntax: arrowSyntax, numVoices: 1, initEffects: false)
     let handles = ArrowWithHandles(ArrowIdentity())
     if let h = preset.handles {
-      let _ = handles.withMergeDictsFromArrow(h)
+      _ = handles.withMergeDictsFromArrow(h)
     }
 
     let handler = ArrowHandler(syntax: arrowSyntax)

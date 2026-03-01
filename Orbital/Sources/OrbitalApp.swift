@@ -15,7 +15,7 @@ struct OrbitalApp: App {
   @State private var songLibrary = SongLibrary()
   @State private var resourceManager = ResourceManager()
   @Environment(\.scenePhase) private var scenePhase
-  
+
   init() {
     // Opt-in to Swift Observation for AVPlayer and related types.
     AVPlayer.isObservationEnabled = true

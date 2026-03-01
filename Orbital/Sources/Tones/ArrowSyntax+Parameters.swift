@@ -222,7 +222,7 @@ extension ArrowSyntax {
       "cutoff": "Cutoff", "cutoffLow": "Cutoff Low",
       "cutoffMultiplier": "Cutoff Multiplier",
       "resonance": "Resonance",
-      "overallAmp": "Overall Amp", "overallAmp2": "Overall Amp 2",
+      "overallAmp": "Overall Amp", "overallAmp2": "Overall Amp 2"
     ]
     return mappings[constName] ?? constName
   }
@@ -272,7 +272,7 @@ extension ArrowSyntax {
       "cutoff": 1...20000, "cutoffLow": 0...500,
       "cutoffMultiplier": 0...20,
       "resonance": 0.1...15,
-      "overallAmp": 0...2, "overallAmp2": 0...2,
+      "overallAmp": 0...2, "overallAmp2": 0...2
     ]
     if let range = knownRanges[name] { return range }
     // Fallback: infer from magnitude
@@ -285,7 +285,7 @@ extension ArrowSyntax {
 
   private static func suggestedStep(for name: String) -> CoreFloat? {
     let steppedParams: Set<String> = [
-      "cutoff", "cutoffLow",
+      "cutoff", "cutoffLow"
     ]
     if steppedParams.contains(name) { return 1 }
     return nil

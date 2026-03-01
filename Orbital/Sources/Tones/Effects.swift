@@ -52,7 +52,7 @@ final class Choruser: Arrow11 {
     }
     super.init()
   }
-  
+
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
     outputs.withUnsafeMutableBufferPointer { outBuf in
       vDSP_vclrD(outBuf.baseAddress!, 1, vDSP_Length(inputs.count))
@@ -87,7 +87,7 @@ final class Choruser: Arrow11 {
       (innerArr ?? ArrowIdentity()).process(inputs: inputs, outputs: &outputs)
     }
   }
-  
+
   // return chorusNumVoices frequencies, centered on the requested freq but spanning an interval
   // from freq - delta to freq + delta (where delta depends on freq and chorusCentRadius)
   func chorusedFreqs(freq: CoreFloat) -> [CoreFloat] {
@@ -237,11 +237,11 @@ final class LowPassFilter2: Arrow11 {
 
   var cutoff: Arrow11
   var resonance: Arrow11
-  
+
   init(cutoff: Arrow11, resonance: Arrow11) {
     self.cutoff = cutoff
     self.resonance = resonance
-    
+
     self.previousTime = 0
     self.previousInner1 = 0
     self.previousInner2 = 0
@@ -262,8 +262,8 @@ final class LowPassFilter2: Arrow11 {
     }
 
     let dt = t - previousTime
-    if (dt <= 1.0e-9) {
-      return self.previousOutput1; // Return last output
+    if dt <= 1.0e-9 {
+      return self.previousOutput1 // Return last output
     }
     let cutoff = min(0.5 / dt, cutoff)
     var w0 = 2 * .pi * cutoff * dt // cutoff freq over sample freq
@@ -275,36 +275,36 @@ final class LowPassFilter2: Arrow11 {
     // resonance (Q factor). 0.707 is maximally flat (Butterworth). > 0.707 adds a peak.
     let resonance = resonance
     let alpha = sinw0 / (2.0 * max(0.001, resonance))
-    
+
     let a0 = 1.0 + alpha
     let a1 = (-2.0 * cosw0) / a0
     let a2 = (1 - alpha) / a0
     let b0 = ((1.0 - cosw0) / 2.0) / a0
     let b1 = (1.0 - cosw0) / a0
     let b2 = b0
-    
+
     let output =
         (b0 * inner)
       + (b1 * previousInner1)
       + (b2 * previousInner2)
       - (a1 * previousOutput1)
       - (a2 * previousOutput2)
-    
+
     // shift the data
     previousTime = t
     previousInner2 = previousInner1
     previousInner1 = inner
     previousOutput2 = previousOutput1
     previousOutput1 = output
-    //print("\(output)")
+    // print("\(output)")
     return output
   }
-  
+
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
     (innerArr ?? ArrowIdentity()).process(inputs: inputs, outputs: &innerVals)
     cutoff.process(inputs: inputs, outputs: &cutoffs)
     resonance.process(inputs: inputs, outputs: &resonances)
-    
+
     let count = inputs.count
     inputs.withUnsafeBufferPointer { inBuf in
       outputs.withUnsafeMutableBufferPointer { outBuf in
@@ -316,7 +316,7 @@ final class LowPassFilter2: Arrow11 {
                     let innerBase = innerBuf.baseAddress,
                     let cutoffBase = cutoffBuf.baseAddress,
                     let resBase = resBuf.baseAddress else { return }
-              
+
               for i in 0..<count {
                 outBase[i] = self.filter(inBase[i], inner: innerBase[i], cutoff: cutoffBase[i], resonance: resBase[i])
               }

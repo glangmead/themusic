@@ -153,7 +153,7 @@ struct ArrowSyntaxEditorView: View {
 private struct ConstEditorRow: View {
   let name: String
   let handler: ArrowHandler
-  var label: String? = nil
+  var label: String?
 
   var body: some View {
     if let desc = handler.descriptorMap(for: name) {

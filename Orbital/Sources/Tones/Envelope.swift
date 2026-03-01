@@ -39,7 +39,7 @@ class ADSR: Arrow11, NoteHandler {
   var previousValue: CoreFloat = 0
   var valueAtRelease: CoreFloat = 0
   var valueAtAttack: CoreFloat = 0
-  var startCallback: (() -> Void)? = nil
+  var startCallback: (() -> Void)?
   /// Callbacks fired when the release phase completes and the envelope
   /// closes. Multiple listeners (audio gate lifecycle, voice ledger
   /// recycling, etc.) can each append a callback.
@@ -50,7 +50,7 @@ class ADSR: Arrow11, NoteHandler {
     super.init()
     self.setFunctionsFromEnvelopeSpecs()
   }
-  
+
   func env(_ time: CoreFloat) -> CoreFloat {
     if newAttack || newRelease {
       timeOrigin = time
@@ -78,7 +78,7 @@ class ADSR: Arrow11, NoteHandler {
     previousValue = val
     return val
   }
-  
+
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
     inputs.withUnsafeBufferPointer { inBuf in
       outputs.withUnsafeMutableBufferPointer { outBuf in
@@ -114,18 +114,17 @@ class ADSR: Arrow11, NoteHandler {
         })
     ])
   }
-  
+
   func noteOn(_ note: MidiNote) {
     newAttack = true
     valueAtAttack = previousValue
     state = .attack
     startCallback?()
   }
-  
+
   func noteOff(_ note: MidiNote) {
     newRelease = true
     valueAtRelease = previousValue
     state = .release
   }
 }
-

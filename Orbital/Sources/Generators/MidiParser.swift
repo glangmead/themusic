@@ -36,7 +36,7 @@ struct MidiNoteEvent: Identifiable {
 class MidiParser {
   var tracks: [MidiTrackData] = []
   var globalMetadata = GlobalMidiMetadata()
-  
+
   let loadFlags: MusicSequenceLoadFlags
 
   init?(url: URL, preserveTracks: Bool = false) {
@@ -44,32 +44,32 @@ class MidiParser {
     var sequence: MusicSequence?
     var status = NewMusicSequence(&sequence)
     guard status == noErr, let seq = sequence else { return nil }
-    
+
     status = MusicSequenceFileLoad(seq, url as CFURL, .midiType, loadFlags)
     guard status == noErr else { return nil }
-    
+
     parseGlobalMetadata(from: seq)
     parseTracks(from: seq)
-    
+
     DisposeMusicSequence(seq)
   }
-  
+
   private func parseGlobalMetadata(from seq: MusicSequence) {
     var tempoTrack: MusicTrack?
     if MusicSequenceGetTempoTrack(seq, &tempoTrack) == noErr, let track = tempoTrack {
       var iterator: MusicEventIterator?
       NewMusicEventIterator(track, &iterator)
       guard let iter = iterator else { return }
-      
+
       var hasNext: DarwinBoolean = true
       while hasNext.boolValue {
         var timestamp: MusicTimeStamp = 0
         var type: MusicEventType = 0
         var data: UnsafeRawPointer?
         var size: UInt32 = 0
-        
+
         MusicEventIteratorGetEventInfo(iter, &timestamp, &type, &data, &size)
-        
+
         if type == kMusicEventType_Meta, let data = data {
           let metaEvent = data.bindMemory(to: MIDIMetaEvent.self, capacity: 1)
           if metaEvent.pointee.metaEventType == 0x58 { // Time Signature
@@ -81,44 +81,44 @@ class MidiParser {
             }
           }
         }
-        
+
         if type == kMusicEventType_ExtendedTempo, let data = data {
           let tempoEvent = data.bindMemory(to: ExtendedTempoEvent.self, capacity: 1)
           globalMetadata.tempo = tempoEvent.pointee.bpm
         }
-        
+
         MusicEventIteratorHasNextEvent(iter, &hasNext)
         if hasNext.boolValue { MusicEventIteratorNextEvent(iter) }
       }
       DisposeMusicEventIterator(iter)
     }
   }
-  
+
   private func parseTracks(from seq: MusicSequence) {
     var trackCount: UInt32 = 0
     MusicSequenceGetTrackCount(seq, &trackCount)
-    
+
     var maxTime: Double = 0
-    
+
     for i in 0..<trackCount {
       var musicTrack: MusicTrack?
       MusicSequenceGetIndTrack(seq, i, &musicTrack)
       guard let track = musicTrack else { continue }
-      
+
       var trackData = MidiTrackData(id: Int(i))
       var iterator: MusicEventIterator?
       NewMusicEventIterator(track, &iterator)
       guard let iter = iterator else { continue }
-      
+
       var hasNext: DarwinBoolean = true
       while hasNext.boolValue {
         var timestamp: MusicTimeStamp = 0
         var type: MusicEventType = 0
         var data: UnsafeRawPointer?
         var size: UInt32 = 0
-        
+
         MusicEventIteratorGetEventInfo(iter, &timestamp, &type, &data, &size)
-        
+
         if type == kMusicEventType_MIDINoteMessage, let data = data {
           let noteMsg = data.bindMemory(to: MIDINoteMessage.self, capacity: 1).pointee
           let note = MidiNoteEvent(
@@ -141,7 +141,7 @@ class MidiParser {
             }
           }
         }
-        
+
         MusicEventIteratorHasNextEvent(iter, &hasNext)
         if hasNext.boolValue { MusicEventIteratorNextEvent(iter) }
       }
@@ -160,7 +160,7 @@ struct MidiEventSequence {
   let chords: [[MidiNote]]
   let sustains: [CoreFloat]
   let gaps: [CoreFloat]
-  
+
   /// Parse a MIDI file and extract a single track as a sequence of chord events.
   /// Groups simultaneous notes (within a small beat epsilon) into chords.
   /// Converts beat-based timing to seconds using the file's tempo.
@@ -191,7 +191,7 @@ struct MidiEventSequence {
     let secondsPerBeat = 60.0 / bpm
     return buildSequence(from: track, secondsPerBeat: secondsPerBeat)
   }
-  
+
   /// Parse all nonempty tracks from a MIDI file, returning one MidiEventSequence per track.
   /// Each element includes the track index (among all tracks), the track name, and the sequence.
   static func allTracks(url: URL, loop: Bool) -> [(trackIndex: Int, trackName: String, sequence: MidiEventSequence)] {

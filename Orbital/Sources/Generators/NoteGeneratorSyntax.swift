@@ -153,7 +153,7 @@ enum NoteGeneratorSyntax {
     ("Pfluke", .pfluke),
     ("Ukrainian Dorian", .ukrainianDorian),
     ("Man Gong", .manGong),
-    ("Ritsusen", .ritsusen),
+    ("Ritsusen", .ritsusen)
   ]
 
   /// Lookup table built from `allScales`. Maps lowercased names (with and without spaces) to Scale.
@@ -189,7 +189,7 @@ enum NoteGeneratorSyntax {
     ("G\u{266F} / A\u{266D}", .Gs),
     ("A", .A),
     ("A\u{266F} / B\u{266D}", .As),
-    ("B", .B),
+    ("B", .B)
   ]
 
   /// Lookup table for note class resolution from JSON strings.
@@ -200,13 +200,10 @@ enum NoteGeneratorSyntax {
     "f": .F, "fb": .Fb, "fs": .Fs, "f#": .Fs,
     "g": .G, "gb": .Gb, "gs": .Gs, "g#": .Gs,
     "a": .A, "ab": .Ab, "as": .As, "a#": .As,
-    "b": .B, "bb": .Bb, "bs": .Bs, "b#": .Bs,
+    "b": .B, "bb": .Bb, "bs": .Bs, "b#": .Bs
   ]
 
   static func resolveNoteClass(_ name: String) -> NoteClass {
     noteClassTable[name.lowercased()] ?? .C
   }
 }
-
-
-

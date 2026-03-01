@@ -152,7 +152,7 @@ struct LabeledSlider: View {
   @Binding var value: CoreFloat
   let label: String
   let range: ClosedRange<CoreFloat>
-  var step: CoreFloat? = nil
+  var step: CoreFloat?
 
   var body: some View {
     VStack(alignment: .leading, spacing: 4) {
@@ -216,4 +216,3 @@ private struct ArrowParamRow: View {
     }
   }
 }
-

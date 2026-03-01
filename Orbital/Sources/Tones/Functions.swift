@@ -41,15 +41,15 @@ struct PiecewiseFunc<F: Numeric & Comparable> {
 
 struct CycleSequence<C: Collection>: Sequence {
   let cycledElements: C
-  
+
   init(_ cycledElements: C) {
     self.cycledElements = cycledElements
   }
-  
+
   public func makeIterator() -> WraparoundIterator<C> {
     return WraparoundIterator(cycling: cycledElements)
   }
-  
+
   public func makeShuffledIterator() -> CyclicShuffledIterator<C> {
     return CyclicShuffledIterator(cycling: cycledElements)
   }
@@ -58,12 +58,12 @@ struct CycleSequence<C: Collection>: Sequence {
 struct WraparoundIterator<C: Collection>: IteratorProtocol {
   let cycledElements: C
   var cycledElementIterator: C.Iterator
-  
+
   init(cycling cycledElements: C) {
     self.cycledElements = cycledElements
     self.cycledElementIterator = cycledElements.makeIterator()
   }
-  
+
   public mutating func next() -> C.Iterator.Element? {
     if let next = cycledElementIterator.next() {
       return next
@@ -88,12 +88,12 @@ struct RandomIterator<C: Collection>: IteratorProtocol {
 struct CyclicShuffledIterator<C: Collection>: IteratorProtocol {
   var cycledElements: [C.Element]
   var cycledElementIterator: [C.Element].Iterator
-  
+
   init(cycling cycledElements: C) {
     self.cycledElements = [C.Element](cycledElements)
     self.cycledElementIterator = self.cycledElements.makeIterator()
   }
-  
+
   public mutating func next() -> C.Iterator.Element? {
     if let next = cycledElementIterator.next() {
       return next

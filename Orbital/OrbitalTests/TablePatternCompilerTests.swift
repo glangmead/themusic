@@ -21,7 +21,7 @@ struct TopologicalSortTests {
     let emitters = [
       EmitterRowSyntax(name: "A", outputType: .float, function: .randFloat, arg1: 0, arg2: 1),
       EmitterRowSyntax(name: "B", outputType: .int, function: .randInt, arg1: 0, arg2: 5),
-      EmitterRowSyntax(name: "C", outputType: .float, function: .randFloat, arg1: 1, arg2: 2),
+      EmitterRowSyntax(name: "C", outputType: .float, function: .randFloat, arg1: 1, arg2: 2)
     ]
     let sorted = try TablePatternCompiler.topologicalSort(emitters)
     #expect(sorted.count == 3)
@@ -33,7 +33,7 @@ struct TopologicalSortTests {
     let emitters = [
       EmitterRowSyntax(name: "Sum", outputType: .float, function: .sum, inputEmitters: ["A", "B"]),
       EmitterRowSyntax(name: "A", outputType: .float, function: .randFloat, arg1: 0, arg2: 1),
-      EmitterRowSyntax(name: "B", outputType: .float, function: .randFloat, arg1: 0, arg2: 1),
+      EmitterRowSyntax(name: "B", outputType: .float, function: .randFloat, arg1: 0, arg2: 1)
     ]
     let sorted = try TablePatternCompiler.topologicalSort(emitters)
     let sumIdx = sorted.firstIndex(of: "Sum")!
@@ -48,7 +48,7 @@ struct TopologicalSortTests {
     let emitters = [
       EmitterRowSyntax(name: "Values", outputType: .int, function: .indexPicker(emitter: "Picker"),
                        candidates: ["0", "1", "2"]),
-      EmitterRowSyntax(name: "Picker", outputType: .int, function: .randInt, arg1: 0, arg2: 2),
+      EmitterRowSyntax(name: "Picker", outputType: .int, function: .randInt, arg1: 0, arg2: 2)
     ]
     let sorted = try TablePatternCompiler.topologicalSort(emitters)
     let valuesIdx = sorted.firstIndex(of: "Values")!
@@ -61,7 +61,7 @@ struct TopologicalSortTests {
     let emitters = [
       EmitterRowSyntax(name: "Degrees", outputType: .int, function: .cyclic,
                        candidates: ["0", "2", "4"], updateMode: .waiting(emitter: "Timer")),
-      EmitterRowSyntax(name: "Timer", outputType: .float, function: .randFloat, arg1: 5, arg2: 10),
+      EmitterRowSyntax(name: "Timer", outputType: .float, function: .randFloat, arg1: 5, arg2: 10)
     ]
     let sorted = try TablePatternCompiler.topologicalSort(emitters)
     let degreesIdx = sorted.firstIndex(of: "Degrees")!
@@ -73,7 +73,7 @@ struct TopologicalSortTests {
   func cyclicDependency() throws {
     let emitters = [
       EmitterRowSyntax(name: "A", outputType: .float, function: .sum, inputEmitters: ["B"]),
-      EmitterRowSyntax(name: "B", outputType: .float, function: .sum, inputEmitters: ["A"]),
+      EmitterRowSyntax(name: "B", outputType: .float, function: .sum, inputEmitters: ["A"])
     ]
     #expect(throws: TableCompileError.self) {
       _ = try TablePatternCompiler.topologicalSort(emitters)
@@ -86,7 +86,7 @@ struct TopologicalSortTests {
     let emitters = [
       EmitterRowSyntax(name: "C", outputType: .float, function: .reciprocal, inputEmitters: ["B"]),
       EmitterRowSyntax(name: "B", outputType: .float, function: .sum, inputEmitters: ["A"]),
-      EmitterRowSyntax(name: "A", outputType: .float, function: .randFloat, arg1: 1, arg2: 2),
+      EmitterRowSyntax(name: "A", outputType: .float, function: .randFloat, arg1: 1, arg2: 2)
     ]
     let sorted = try TablePatternCompiler.topologicalSort(emitters)
     #expect(sorted == ["A", "B", "C"])
@@ -464,8 +464,8 @@ struct CodableTests {
       emitters: [
         EmitterRowSyntax(name: "gap", outputType: .float, function: .randFloat, arg1: 0.2, arg2: 0.5),
         EmitterRowSyntax(name: "sustain", outputType: .float, function: .randFloat, arg1: 1, arg2: 3),
-        EmitterRowSyntax(name: "picker", outputType: .int, function: .shuffle, candidates: ["0","1","2","3","4","5","6"]),
-        EmitterRowSyntax(name: "oct", outputType: .octave, function: .random, candidates: ["3", "4"]),
+        EmitterRowSyntax(name: "picker", outputType: .int, function: .shuffle, candidates: ["0", "1", "2", "3", "4", "5", "6"]),
+        EmitterRowSyntax(name: "oct", outputType: .octave, function: .random, candidates: ["3", "4"])
       ],
       noteMaterials: [
         NoteMaterialSyntax.hierarchyMelody(HierarchyMelodySyntax(
@@ -517,13 +517,13 @@ struct MetaModulationTests {
     let target = MutableParam(0.0)
     let arrow = MetaModulationArrow(source: source, target: target)
 
-    let _ = arrow.of(0)
+    _ = arrow.of(0)
     #expect(abs(target.val - 0.5) < 0.001)
 
-    let _ = arrow.of(0)
+    _ = arrow.of(0)
     #expect(abs(target.val - 0.7) < 0.001)
 
-    let _ = arrow.of(0)
+    _ = arrow.of(0)
     #expect(abs(target.val - 0.9) < 0.001)
   }
 
@@ -542,7 +542,7 @@ struct MetaModulationTests {
     // Simulate meta-modulation: change max to 100
     let modSource = [100.0].cyclicIterator()
     let arrow = MetaModulationArrow(source: modSource, target: maxP)
-    let _ = arrow.of(0) // This writes 100.0 to maxP
+    _ = arrow.of(0) // This writes 100.0 to maxP
 
     // Now sampler should use range [0, 100]
     var sawLargeValue = false

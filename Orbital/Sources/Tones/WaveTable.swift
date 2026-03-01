@@ -17,8 +17,6 @@ func loadAudioSignal(audioURL: URL) -> (signal: [Float], rate: Double, frameCoun
   let format = AVAudioFormat(commonFormat: .pcmFormatFloat32, sampleRate: file.fileFormat.sampleRate, channels: file.fileFormat.channelCount, interleaved: false)!
   let buf = AVAudioPCMBuffer(pcmFormat: format, frameCapacity: UInt32(file.length))
   try! file.read(into: buf!) // You probably want better error handling
-  let floatArray = Array(UnsafeBufferPointer(start: buf?.floatChannelData![0], count:Int(buf!.frameLength)))
+  let floatArray = Array(UnsafeBufferPointer(start: buf?.floatChannelData![0], count: Int(buf!.frameLength)))
   return (signal: floatArray, rate: file.fileFormat.sampleRate, frameCount: Int(file.length))
 }
-
-

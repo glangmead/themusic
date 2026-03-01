@@ -9,14 +9,14 @@ import Foundation
 
 // an arrow that has an additional value and a closure that can make use of it when called with a time
 final class EventUsingArrow: Arrow11 {
-  var event: MusicEvent? = nil
+  var event: MusicEvent?
   var ofEvent: (_ event: MusicEvent, _ t: CoreFloat) -> CoreFloat
-  
+
   init(ofEvent: @escaping (_: MusicEvent, _: CoreFloat) -> CoreFloat) {
     self.ofEvent = ofEvent
     super.init()
   }
-  
+
   override func of(_ t: CoreFloat) -> CoreFloat {
     ofEvent(event!, innerArr?.of(t) ?? 0)
   }
@@ -73,7 +73,7 @@ struct MusicEvent {
   let modulators: [String: Arrow11]
   let timeOrigin: Double
   let clock: any Clock<Duration>
-  
+
   init(
     noteHandler: NoteHandler,
     notes: [MidiNote],
@@ -91,7 +91,7 @@ struct MusicEvent {
     self.timeOrigin = timeOrigin
     self.clock = clock
   }
-  
+
   mutating func play() async throws {
     let now = CoreFloat(Date.now.timeIntervalSince1970 - timeOrigin)
 
@@ -128,11 +128,11 @@ struct MusicEvent {
     do {
       try await clock.sleep(for: .seconds(TimeInterval(sustain)))
     } catch {
-      
+
     }
     noteHandler.notesOff(notes)
   }
-  
+
   func cancel() {
     noteHandler.notesOff(notes)
   }

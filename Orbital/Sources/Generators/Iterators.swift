@@ -28,14 +28,14 @@ class WaitingIterator<Element>: Sequence, IteratorProtocol {
   var neverCalled = true
   // underlying iterator
   var timeIndependentIterator: any IteratorProtocol<Element>
-  
+
   init(iterator: any IteratorProtocol<Element>, timeBetweenChanges: Arrow11) {
     self.timeIndependentIterator = iterator
     self.timeBetweenChanges = timeBetweenChanges
     self.savedTime = Date.now.timeIntervalSince1970
     mostRecentElement = nil
   }
-  
+
   func next() -> Element? {
     let now = Date.now.timeIntervalSince1970
     let timeElapsed = CoreFloat(now - savedTime)
@@ -78,7 +78,7 @@ struct MidiPitchGenerator: Sequence, IteratorProtocol {
   var degreeGenerator: any IteratorProtocol<Int>
   var rootNoteGenerator: any IteratorProtocol<NoteClass>
   var octaveGenerator: any IteratorProtocol<Int>
-  
+
   mutating func next() -> MidiValue? {
     // a scale is a collection of intervals
     let scale = scaleGenerator.next()!
@@ -86,7 +86,7 @@ struct MidiPitchGenerator: Sequence, IteratorProtocol {
     let degree = degreeGenerator.next()!
     // from these two we can get a specific interval
     let interval = scale.intervals[degree]
-    
+
     let root = rootNoteGenerator.next()!
     let octave = octaveGenerator.next()!
     // knowing the root class and octave gives us the root note of this scale
@@ -108,11 +108,11 @@ struct MidiPitchAsChordGenerator: Sequence, IteratorProtocol {
 struct ScaleSampler: Sequence, IteratorProtocol {
   typealias Element = [MidiNote]
   var scale: Scale
-  
+
   init(scale: Scale = Scale.aeolian) {
     self.scale = scale
   }
-  
+
   func next() -> [MidiNote]? {
     return [MidiNote(
       note: MidiValue(Note.A.shiftUp(scale.intervals.randomElement()!)!.noteNumber),
@@ -140,7 +140,7 @@ struct FloatSampler: Sequence, IteratorProtocol {
     let range = self.max - self.min
     self.lambda = range > 0 ? -log(0.05) / range : 1
   }
-  
+
   func next() -> CoreFloat? {
     switch distribution {
     case .uniform:

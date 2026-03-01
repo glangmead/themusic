@@ -14,7 +14,7 @@ struct ArrowChart: View {
     var time: CoreFloat
     var amp: CoreFloat
   }
-  
+
   var arrow: Arrow11
   @State private var numSamplesToPlot = 48000
   let sampleRate = 48000
@@ -34,16 +34,16 @@ struct ArrowChart: View {
       var windowAmps = [CoreFloat](repeating: 0, count: 512)
       arrow.process(inputs: windowTimes, outputs: &windowAmps)
       for i in 0..<windowTimes.count {
-        //if i % 100 == 0 {
+        // if i % 100 == 0 {
         //  print("sample at time \(windowTimes[i]) is \(windowAmps[i])")
-        //}
+        // }
         result.append(Sample(time: windowTimes[i], amp: windowAmps[i]))
       }
       numSamplesProcessedByArrow += 512
     }
     return result
   }
-  
+
   var body: some View {
     GroupBox("Oscillator 1") {
       Chart(data, id: \.time) { sample in
@@ -54,7 +54,7 @@ struct ArrowChart: View {
       }
       .chartXScale(domain: now...now+Double(numSamplesToPlot)/Double(sampleRate))
       .chartYScale(domain: ymin...ymax)
-      
+
       TextField("Samples", value: $numSamplesToPlot, format: .number)
         .textFieldStyle(.roundedBorder)
         .padding()
@@ -65,6 +65,6 @@ struct ArrowChart: View {
 #Preview {
   let arr = NoiseSmoothStep(noiseFreq: 5, min: 0, max: 1)
   arr.sampleRate = 44000
-  //arr.innerArr = ArrowProd(innerArrs: [ArrowConst(value: 300), ArrowIdentity()])
+  // arr.innerArr = ArrowProd(innerArrs: [ArrowConst(value: 300), ArrowIdentity()])
   return ArrowChart(arrow: arr, ymin: -1, ymax: 1)
 }

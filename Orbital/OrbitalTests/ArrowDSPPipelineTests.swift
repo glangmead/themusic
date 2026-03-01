@@ -115,7 +115,7 @@ let arrowPresetFiles = [
   "square.json",
   "triangle.json",
   "auroraBorealis.json",
-  "5th_cluedo.json",
+  "5th_cluedo.json"
 ]
 
 /// Presets whose sound fingerprint should remain stable.
@@ -126,7 +126,7 @@ let fingerprintPresetFiles = [
   "saw.json",
   "square.json",
   "triangle.json",
-  "5th_cluedo.json",
+  "5th_cluedo.json"
 ]
 
 /// Build a minimal oscillator arrow: freq * t -> osc
@@ -405,7 +405,7 @@ struct PresetCompilationTests {
   @Test("All arrow JSON presets decode without error",
         arguments: arrowPresetFiles)
   func presetDecodes(filename: String) throws {
-    let _ = try loadPresetSyntax(filename)
+    _ = try loadPresetSyntax(filename)
   }
 
   @Test("All arrow JSON presets compile to ArrowWithHandles with expected handles",
@@ -445,7 +445,7 @@ struct PresetCompilationTests {
     // Compile 4 times and merge, simulating what Preset does
     let voices = (0..<4).map { _ in syntax.arrow!.compile() }
     let merged = ArrowWithHandles(ArrowIdentity())
-    let _ = merged.withMergeDictsFromArrows(voices)
+    _ = merged.withMergeDictsFromArrows(voices)
     let freqConsts = merged.namedConsts["freq"]
     #expect(freqConsts != nil)
     #expect(freqConsts!.count == singleCount * 4,
@@ -865,4 +865,3 @@ struct ArrowLibraryTests {
     #expect(compiled.sound != nil)
   }
 }
-

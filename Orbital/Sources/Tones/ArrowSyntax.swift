@@ -33,7 +33,7 @@ enum ArrowSyntax: Equatable {
   case libraryArrow(name: String)
   case emitterValue(name: String)
   case quickExpression(String)
-  
+
   indirect case osc(name: String, shape: BasicOscillator.OscShape, width: ArrowSyntax)
 }
 
@@ -230,7 +230,7 @@ extension ArrowSyntax: Codable {
 // MARK: - ArrowSyntax Compilation & Tree Operations
 
 extension ArrowSyntax {
-  
+
   // see https://www.compilenrun.com/docs/language/swift/swift-enumerations/swift-recursive-enumerations/
   func compile(library: [String: ArrowSyntax] = [:]) -> ArrowWithHandles {
     if !library.isEmpty {
@@ -252,11 +252,11 @@ extension ArrowSyntax {
     case .compose(let specs):
       // it seems natural to me for the chain to be listed from innermost to outermost (first-to-last)
       let arrows = specs.map({$0.compile()})
-      var composition: ArrowWithHandles? = nil
+      var composition: ArrowWithHandles?
       for arrow in arrows {
         arrow.wrappedArrow.innerArr = composition
         if composition != nil {
-          let _ = arrow.withMergeDictsFromArrow(composition!) // provide each step of composition with all the handles
+          _ = arrow.withMergeDictsFromArrow(composition!) // provide each step of composition with all the handles
         }
         composition = arrow
       }
@@ -340,7 +340,7 @@ extension ArrowSyntax {
         handleArr.namedLowPassFilter[name] = [arr]
       }
       return handleArr
-      
+
     case .combFilter(let name, let frequency, let feedback):
       let frequencyArrow = frequency.compile()
       let feedbackArrow = feedback.compile()
@@ -367,7 +367,7 @@ extension ArrowSyntax {
         handleArr.namedChorusers[name] = [choruser]
       }
       return handleArr
-    
+
     case .envelope(let name, let attack, let decay, let sustain, let release, let scale):
       let env = ADSR(envelope: EnvelopeData(
         attackTime: attack,

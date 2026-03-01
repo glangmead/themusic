@@ -80,41 +80,41 @@ extension ChordInScale {
       case .I64:   "I64"
       }
     }
-    
+
     /// Probabilistic state transitions according to Tymoczko diagram 7.1.3 of Tonality.
     static func stateTransitionsBaroqueClassicalMajor(_ start: RomanNumerals) -> [(RomanNumerals, CoreFloat)] {
       switch start {
       case .I:
-        return [            (.vi, 0.07),  (.IV, 0.21),  (.ii, 0.14), (.viio6, 0.05),  (.V, 0.50), (.I64, 0.05)]
+        return [            (.vi, 0.07), (.IV, 0.21), (.ii, 0.14), (.viio6, 0.05), (.V, 0.50), (.I64, 0.05)]
       case .vi:
-        return [                          (.IV, 0.13),  (.ii, 0.41), (.viio6, 0.06),  (.V, 0.28), (.I6, 0.12) ]
+        return [                          (.IV, 0.13), (.ii, 0.41), (.viio6, 0.06), (.V, 0.28), (.I6, 0.12) ]
       case .IV:
-        return [(.I, 0.35),                             (.ii, 0.16), (.viio6, 0.10),  (.V, 0.40), (.IV6, 0.10)]
+        return [(.I, 0.35), (.ii, 0.16), (.viio6, 0.10), (.V, 0.40), (.IV6, 0.10)]
       case .ii:
-        return [            (.vi, 0.05),                             (.viio6, 0.20),  (.V, 0.70), (.I64, 0.05)]
+        return [            (.vi, 0.05), (.viio6, 0.20), (.V, 0.70), (.I64, 0.05)]
       case .viio6:
-        return [(.I, 0.85), (.vi, 0.02),  (.IV, 0.03),                                (.V, 0.10)]
+        return [(.I, 0.85), (.vi, 0.02), (.IV, 0.03), (.V, 0.10)]
       case .V:
-        return [(.I, 0.88), (.vi, 0.05),  (.IV6, 0.05), (.ii, 0.01)]
+        return [(.I, 0.88), (.vi, 0.05), (.IV6, 0.05), (.ii, 0.01)]
       case .V6:
-        return [                                                                      (.V, 0.8),  (.I6, 0.2)  ]
+        return [                                                                      (.V, 0.8), (.I6, 0.2)  ]
       case .I6:
-        return [(.I, 0.50), (.vi,0.07/2), (.IV, 0.11),  (.ii, 0.07), (.viio6, 0.025), (.V, 0.25)              ]
+        return [(.I, 0.50), (.vi, 0.07/2), (.IV, 0.11), (.ii, 0.07), (.viio6, 0.025), (.V, 0.25)              ]
       case .IV6:
-        return [(.I, 0.17),               (.IV, 0.65),  (.ii, 0.08), (.viio6, 0.05),  (.V, 0.4/2)             ]
+        return [(.I, 0.17), (.IV, 0.65), (.ii, 0.08), (.viio6, 0.05), (.V, 0.4/2)             ]
       case .ii6:
-        return [                                        (.ii, 0.10), (.viio6, 0.10),  (.V6, 0.8)              ]
+        return [                                        (.ii, 0.10), (.viio6, 0.10), (.V6, 0.8)              ]
       case .I64:
         return [                                                                      (.V, 1.0)               ]
       case .iii:
-        return [                                                                      (.V, 0.5),  (.I6, 0.5)  ]
+        return [                                                                      (.V, 0.5), (.I6, 0.5)  ]
       case .iii6:
-        return [                                                                      (.V, 0.5),  (.I64, 0.5) ]
+        return [                                                                      (.V, 0.5), (.I64, 0.5) ]
       case .vi6:
-        return [                                                                      (.V, 0.5),  (.I64, 0.5) ]
+        return [                                                                      (.V, 0.5), (.I64, 0.5) ]
       }
     }
-    
+
     /// Weighted random draw using exponential variates.
     static func weightedDraw<A>(items: [(A, CoreFloat)]) -> A? {
       func exp2<B>(_ item: (B, CoreFloat)) -> (B, CoreFloat) {

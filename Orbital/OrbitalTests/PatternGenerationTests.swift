@@ -302,7 +302,7 @@ struct MusicEventModulationTests {
     let preset = Preset(arrowSyntax: modulatableArrowSyntax, numVoices: 4, initEffects: false)
     let notes = [
       MidiNote(note: 60, velocity: 127),
-      MidiNote(note: 64, velocity: 127),
+      MidiNote(note: 64, velocity: 127)
     ]
 
     // Manually trigger notes first
@@ -429,7 +429,7 @@ struct MusicPatternEventGenerationTests {
       gap: 0.01,
       modulators: [
         "overallAmp": ArrowConst(value: 0.33),
-        "overallCentDetune": ArrowConst(value: 7.0),
+        "overallCentDetune": ArrowConst(value: 7.0)
       ],
       timeOrigin: Date.now.timeIntervalSince1970,
       clock: ImmediateClock()

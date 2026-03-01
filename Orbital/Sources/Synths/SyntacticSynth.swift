@@ -8,7 +8,6 @@
 import AVFAudio
 import SwiftUI
 
-
 /// TODO
 /// A button to save the current synth as a preset
 /// Move on to assigning different presets to different seq tracks
@@ -22,18 +21,18 @@ import SwiftUI
 class SyntacticSynth {
   var presetSpec: PresetSyntax
   let engine: SpatialAudioEngine
-  private(set) var spatialPreset: SpatialPreset? = nil
+  private(set) var spatialPreset: SpatialPreset?
   var arrowHandler: ArrowHandler?
   var reloadCount = 0
   let numVoices = 12
-  
+
   var noteHandler: NoteHandler? { spatialPreset }
   private var presets: [Preset] { spatialPreset?.presets ?? [] }
   var name: String {
     presets.first?.name ?? "Noname"
   }
   let cent: CoreFloat = 1.0005777895065548 // '2 ** (1/1200)' in python
-  
+
   // Rose params
   var roseFreq: CoreFloat = 0 { didSet {
     presets.forEach { $0.positionLFO?.freq.val = roseFreq } }
@@ -44,16 +43,16 @@ class SyntacticSynth {
   var roseLeaves: CoreFloat = 0 { didSet {
     presets.forEach { $0.positionLFO?.leafFactor.val = roseLeaves } }
   }
-  
+
   // FX params
   var distortionAvailable: Bool {
     presets.first?.distortionAvailable ?? false
   }
-  
+
   var delayAvailable: Bool {
     presets.first?.delayAvailable ?? false
   }
-  
+
   var reverbMix: CoreFloat = 50 {
     didSet {
       for preset in self.presets { preset.setReverbWetDryMix(reverbMix) }
@@ -101,7 +100,7 @@ class SyntacticSynth {
       for preset in self.presets { preset.setDistortionPreset(distortionPreset) }
     }
   }
-  
+
   init(engine: SpatialAudioEngine, presetSpec: PresetSyntax, numVoices: Int = 12, deferSetup: Bool = false) {
     self.engine = engine
     self.presetSpec = presetSpec
@@ -109,7 +108,7 @@ class SyntacticSynth {
       Task { await setup(presetSpec: presetSpec) }
     }
   }
-  
+
   func loadPreset(_ presetSpec: PresetSyntax) {
     cleanup()
     self.presetSpec = presetSpec
@@ -132,7 +131,7 @@ class SyntacticSynth {
 
   /// Whether this synth is borrowing an external SpatialPreset it doesn't own.
   private var isAttachedToLivePreset = false
-  
+
   private func cleanup() {
     if !isAttachedToLivePreset {
       spatialPreset?.cleanup()
@@ -141,7 +140,7 @@ class SyntacticSynth {
     arrowHandler = nil
     isAttachedToLivePreset = false
   }
-  
+
   private func setup(presetSpec: PresetSyntax) async {
     spatialPreset = try? await SpatialPreset(presetSpec: presetSpec, engine: engine, numVoices: numVoices)
     buildHandlerAndReadValues()
@@ -158,7 +157,7 @@ class SyntacticSynth {
     } else {
       arrowHandler = nil
     }
-    
+
     // Read rose, effects, and delay values from the first preset
     guard let first = presets.first else { return }
 
@@ -167,15 +166,15 @@ class SyntacticSynth {
       roseFreq = posLFO.freq.val
       roseLeaves = posLFO.leafFactor.val
     }
-    
+
     reverbPreset = first.reverbPreset
     reverbMix = first.getReverbWetDryMix()
-    
+
     delayTime = first.getDelayTime()
     delayFeedback = first.getDelayFeedback()
     delayWetDryMix = first.getDelayWetDryMix()
     delayLowPassCutoff = first.getDelayLowPassCutoff()
-    
+
     distortionPreset = first.getDistortionPreset()
     distortionPreGain = first.getDistortionPreGain()
     distortionWetDryMix = first.getDistortionWetDryMix()

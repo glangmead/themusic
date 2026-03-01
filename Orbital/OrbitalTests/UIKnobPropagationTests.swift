@@ -33,7 +33,7 @@ private func buildTestPresetPool(
   let aggregated = ArrowWithHandles(ArrowIdentity())
   for preset in presets {
     if let h = preset.handles {
-      let _ = aggregated.withMergeDictsFromArrow(h)
+      _ = aggregated.withMergeDictsFromArrow(h)
     }
   }
 

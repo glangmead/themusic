@@ -129,12 +129,12 @@ struct ChordInScale {
 
   /// T: shift all degrees by n steps in the parent scale.
   /// I [0,2,4] -> T(1) -> ii [1,3,5] -> T(1) -> iii [2,4,6] ...
-  mutating func T(_ n: Int) { // swiftlint:disable:this identifier_name
+  mutating func T(_ n: Int) {
     degrees = degrees.map { $0 + n }
   }
 
   /// t: rotate the voicing. t(1) = first inversion, t(2) = second inversion.
-  mutating func t(_ n: Int) { // swiftlint:disable:this identifier_name
+  mutating func t(_ n: Int) {
     inversion += n
   }
 }
@@ -234,7 +234,7 @@ class PitchHierarchy {
   /// T (extrinsic): shift the root through the parent space.
   /// At .scale: moves the key root by n semitones (C major -> C# major -> D major ...).
   /// At .chord: shifts chord degrees within the scale (I -> ii -> iii).
-  func T(_ n: Int, at level: HierarchyLevel) { // swiftlint:disable:this identifier_name
+  func T(_ n: Int, at level: HierarchyLevel) {
     switch level {
     case .scale:
       let semitones = ((n % 12) + 12) % 12
@@ -253,7 +253,7 @@ class PitchHierarchy {
   ///   t(1) on Ionian [W W H W W W H] → Dorian [W H W W W H W].
   ///   The root advances to the next scale degree so the pitch content stays the same.
   /// At .chord: rotate inversion (root -> 1st -> 2nd).
-  func t(_ n: Int, at level: HierarchyLevel) { // swiftlint:disable:this identifier_name
+  func t(_ n: Int, at level: HierarchyLevel) {
     switch level {
     case .scale:
       let intervals = key.scale.intervals
@@ -305,7 +305,7 @@ class PitchHierarchy {
   /// L (lattice): the minimal voice-leading step for this chord type in this scale.
   /// For triads in a 7-note scale, L = T(-2)t(1) at the chord level.
   /// For seventh chords in a 7-note scale, L = T(-3)t(1) at the chord level.
-  func L(_ n: Int) { // swiftlint:disable:this identifier_name
+  func L(_ n: Int) {
     let chordSize = chord.degrees.count
     let scaleSize = key.scale.intervals.count
     // Compute the lattice step: for coprime (chordSize, scaleSize),
