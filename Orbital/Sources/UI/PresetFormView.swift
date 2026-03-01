@@ -7,6 +7,7 @@
 
 import AVFAudio
 import Keyboard
+import MIDIKitIO
 import SwiftUI
 import Tonic
 
@@ -75,10 +76,58 @@ private struct PresetFormContent: View {
   /// synth's own spatial preset, so spatial edits are reflected.
   var liveSpatialPreset: SpatialPreset?
 
+  @State private var midiManager = ObservableMIDIManager(
+    clientName: "Orbital",
+    model: "Orbital",
+    manufacturer: "Orbital"
+  )
+
   /// The note handler the keyboard uses: prefer the live spatial preset
   /// from the song track when available, fall back to the synth's own.
   private var keyboardNoteHandler: NoteHandler? {
     liveSpatialPreset ?? synth.noteHandler
+  }
+
+  private func setupMIDI() {
+    guard midiManager.managedInputConnections["orbital-midi-in"] == nil else { return }
+    let lsp = liveSpatialPreset
+    let s = synth
+    do {
+      try midiManager.start()
+      try midiManager.addInputConnection(
+        to: .allOutputs,
+        tag: "orbital-midi-in",
+        receiver: .events { events, _, _ in
+          for event in events {
+            switch event {
+            case .noteOn(let e):
+              let noteNum = e.note.number.uInt8Value
+              let vel = e.velocity.midi1Value.uInt8Value
+              Task { @MainActor in
+                let handler = lsp ?? s.noteHandler
+                if vel == 0 {
+                  handler?.noteOff(MidiNote(note: noteNum, velocity: vel))
+                } else {
+                  if !s.engine.audioEngine.isRunning { try? s.engine.start() }
+                  handler?.noteOn(MidiNote(note: noteNum, velocity: vel))
+                }
+              }
+            case .noteOff(let e):
+              let noteNum = e.note.number.uInt8Value
+              let vel = e.velocity.midi1Value.uInt8Value
+              Task { @MainActor in
+                let handler = lsp ?? s.noteHandler
+                handler?.noteOff(MidiNote(note: noteNum, velocity: vel))
+              }
+            default:
+              break
+            }
+          }
+        }
+      )
+    } catch {
+      // MIDI not available on this device/simulator
+    }
   }
 
   var body: some View {
@@ -130,6 +179,7 @@ private struct PresetFormContent: View {
         }
       }
     }
+    .onAppear { setupMIDI() }
     .navigationTitle(presetSpec.name)
     .toolbar {
       if let playbackState {

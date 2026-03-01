@@ -68,8 +68,43 @@ enum WavetableLibrary {
     return t
   }()
 
-  // Returns the named table, falling back to a pure sine if name is unknown.
+  // Mutable store for externally loaded tables (e.g. from WAV files on disk).
+  // Keys registered here override built-in tables.
+  static var userTables: [String: [CoreFloat]] = [:]
+
+  // Returns the named table, checking userTables first, then built-ins, then a pure sine fallback.
   static func table(named name: String) -> [CoreFloat] {
-    tables[name] ?? fm(ratio: 1.0, depth: 0.0)
+    userTables[name] ?? tables[name] ?? fm(ratio: 1.0, depth: 0.0)
+  }
+
+  // Number of 2048-sample wavetable frames a WAV file contains.
+  // Opens the file metadata only — does not decode audio.
+  static func frameCount(url: URL) -> Int {
+    guard let file = try? AVAudioFile(forReading: url) else { return 0 }
+    return Int(file.length) / tableSize
+  }
+
+  // Load one wavetable frame (0-based frameIndex) from a WAV file into a [CoreFloat] table.
+  // Mono-mixes by reading channel 0, normalises to ±1, falls back to a pure sine on any error.
+  static func fromFile(url: URL, frameIndex: Int = 0) -> [CoreFloat] {
+    guard
+      let file = try? AVAudioFile(forReading: url),
+      let format = AVAudioFormat(
+        commonFormat: .pcmFormatFloat32,
+        sampleRate: file.fileFormat.sampleRate,
+        channels: 1,
+        interleaved: false
+      ),
+      let buf = AVAudioPCMBuffer(pcmFormat: format, frameCapacity: UInt32(file.length)),
+      (try? file.read(into: buf)) != nil,
+      let data = buf.floatChannelData
+    else { return fm(ratio: 1.0, depth: 0.0) }
+    let signal = UnsafeBufferPointer(start: data[0], count: Int(buf.frameLength))
+    let start = frameIndex * tableSize
+    guard start + tableSize <= signal.count else { return fm(ratio: 1.0, depth: 0.0) }
+    var slice = (0..<tableSize).map { CoreFloat(signal[start + $0]) }
+    let peak = slice.map(abs).max() ?? 1.0
+    if peak > 0 { slice = slice.map { $0 / peak } }
+    return slice
   }
 }

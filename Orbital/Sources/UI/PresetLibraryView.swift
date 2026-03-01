@@ -21,6 +21,9 @@ struct PresetLibraryView: View {
       Group {
         if resourceManager.isReady {
           List {
+            Section {
+              NavigationLink("Wavetable Browser", value: "__wavetable_browser__")
+            }
             ForEach(presets) { preset in
               NavigationLink(value: preset.fileName) {
                 Text(preset.spec.name)
@@ -40,8 +43,10 @@ struct PresetLibraryView: View {
         }
       }
       .navigationTitle("Sounds")
-      .navigationDestination(for: String.self) { fileName in
-        if let preset = presets.first(where: { $0.fileName == fileName }) {
+      .navigationDestination(for: String.self) { value in
+        if value == "__wavetable_browser__" {
+          WavetableBrowserView()
+        } else if let preset = presets.first(where: { $0.fileName == value }) {
           PresetFormView(presetSpec: preset.spec)
             .navigationTitle(preset.spec.name)
         }

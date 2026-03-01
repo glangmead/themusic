@@ -24,6 +24,7 @@
 		9BB2CD342F44E1C00019A2D4 /* samples in Resources */ = {isa = PBXBuildFile; fileRef = 9BB2CD332F44E1BB0019A2D4 /* samples */; };
 		9BB2CD362F44E1CA0019A2D4 /* presets in Resources */ = {isa = PBXBuildFile; fileRef = 9BB2CD352F44E1C60019A2D4 /* presets */; };
 		9BB2CD382F44E1D00019A2D4 /* patterns in Resources */ = {isa = PBXBuildFile; fileRef = 9BB2CD372F44E1CD0019A2D4 /* patterns */; };
+		9BCE26792F5479EB002D70CC /* MIDIKitIO in Frameworks */ = {isa = PBXBuildFile; productRef = 9BCE26782F5479EB002D70CC /* MIDIKitIO */; };
 		9BCED9112F1FD0A30029ED1B /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 9BCED9102F1FD0A30029ED1B /* index.html */; };
 		9BCED9902F246B150029ED1B /* Orbital.icon in Resources */ = {isa = PBXBuildFile; fileRef = 9BCED98F2F246B150029ED1B /* Orbital.icon */; };
 		9BD1B7002E8B08D000C718F1 /* Tonic in Frameworks */ = {isa = PBXBuildFile; productRef = 9BD1B6FF2E8B08D000C718F1 /* Tonic */; };
@@ -104,6 +105,7 @@
 				UI/TablePatternFormView.swift,
 				UI/TablePatternState.swift,
 				UI/Theme.swift,
+				UI/WavetableBrowserView.swift,
 				VisualizerView.swift,
 			);
 			target = 2F57A792364534F331D2AAF6 /* OrbitalCLI */;
@@ -175,6 +177,7 @@
 				9BD1B7002E8B08D000C718F1 /* Tonic in Frameworks */,
 				9BDF96F12F48FB39006E614F /* Keyboard in Frameworks */,
 				9B0F28872ED00401004C0884 /* AudioKitUI in Frameworks */,
+				9BCE26792F5479EB002D70CC /* MIDIKitIO in Frameworks */,
 				9B1864642E772E37006147D8 /* Overture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,6 +345,7 @@
 				9BA522552EB0FE8F00ECF215 /* AudioKit */,
 				9B0F28862ED00401004C0884 /* AudioKitUI */,
 				9BDF96F02F48FB39006E614F /* Keyboard */,
+				9BCE26782F5479EB002D70CC /* MIDIKitIO */,
 			);
 			productName = ProgressionPlayer;
 			productReference = 9BC0FCA72E704EA900472A5A /* Orbital.app */;
@@ -403,6 +407,7 @@
 				9B0F28852ED00401004C0884 /* XCRemoteSwiftPackageReference "AudioKitUI" */,
 				9BDF96EF2F48FA7C006E614F /* XCRemoteSwiftPackageReference "Keyboard" */,
 				2C0790A818DEC6A79AA07A66 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+				9BCE26772F5479EB002D70CC /* XCRemoteSwiftPackageReference "MIDIKit" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9BC0FCA82E704EA900472A5A /* Products */;
@@ -866,6 +871,14 @@
 				minimumVersion = 5.6.5;
 			};
 		};
+		9BCE26772F5479EB002D70CC /* XCRemoteSwiftPackageReference "MIDIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/orchetect/MIDIKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.11.0;
+			};
+		};
 		9BD1B6FE2E8B08D000C718F1 /* XCRemoteSwiftPackageReference "Tonic" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/AudioKit/Tonic.git";
@@ -914,6 +927,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9BA522542EB0FE8400ECF215 /* XCRemoteSwiftPackageReference "AudioKit" */;
 			productName = AudioKit;
+		};
+		9BCE26782F5479EB002D70CC /* MIDIKitIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9BCE26772F5479EB002D70CC /* XCRemoteSwiftPackageReference "MIDIKit" */;
+			productName = MIDIKitIO;
 		};
 		9BD1B6FF2E8B08D000C718F1 /* Tonic */ = {
 			isa = XCSwiftPackageProductDependency;

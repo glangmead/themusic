@@ -1,5 +1,5 @@
 {
-  "originHash" : "cface411ed5c97b2883b1973800c091b37860cade950888abe1bf3f5d2609460",
+  "originHash" : "7a72eb41efbe411e0fbbe3848461abbe49740a045205fa12b66244321b3be44c",
   "pins" : [
     {
       "identity" : "audiokit",
@@ -38,6 +38,15 @@
       }
     },
     {
+      "identity" : "midikit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/orchetect/MIDIKit",
+      "state" : {
+        "revision" : "5af7926114fab97a9dd8c3e2068e0f9c65c1c20f",
+        "version" : "0.11.0"
+      }
+    },
+    {
       "identity" : "swift-argument-parser",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-argument-parser.git",
@@ -53,6 +62,15 @@
       "state" : {
         "revision" : "7977acd7597f413717058acc1e080731249a1d7e",
         "version" : "0.5.0"
+      }
+    },
+    {
+      "identity" : "swift-timecode",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/orchetect/swift-timecode",
+      "state" : {
+        "revision" : "f9a9e88c8e4c38b1b29d3db8130e1f07112e8b9e",
+        "version" : "3.0.0"
       }
     },
     {
