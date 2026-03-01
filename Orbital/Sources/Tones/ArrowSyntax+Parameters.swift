@@ -47,6 +47,7 @@ extension ArrowSyntax {
     return descriptors
   }
 
+  // swiftlint:disable:next cyclomatic_complexity
   private func collectDescriptors(
     into descriptors: inout [ArrowParamDescriptor],
     seenIds: inout Set<String>

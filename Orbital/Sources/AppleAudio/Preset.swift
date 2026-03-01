@@ -10,9 +10,7 @@
 import AVFAudio
 import Overture
 
-/// A Preset is an Instrument plus effects chain.
-
-// TODO: ModulatedReverbNode which has an AVAudioUnitReverb and an arrow for each exposed parameter of said node
+// A Preset is an Instrument plus effects chain.
 
 // MARK: - Preset (runtime)
 // See PresetSyntax.swift for the Codable template types.

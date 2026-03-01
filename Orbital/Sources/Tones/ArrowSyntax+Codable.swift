@@ -35,43 +35,19 @@ extension ArrowSyntax: Codable {
   private struct LinePayload: Codable, Equatable { let duration: CoreFloat; let min: CoreFloat; let max: CoreFloat }
   private struct OscPayload: Codable, Equatable { let name: String; let shape: BasicOscillator.OscShape; let width: ArrowSyntax }
   private struct NameOnly: Codable, Equatable { let name: String }
-  // Legacy wrapper for backward-compat decoding of {"prod": {"of": [...]}}
-  private struct LegacyArrayOf: Codable { let of: [ArrowSyntax] }
-  private struct LegacyArrayArrows: Codable { let arrows: [ArrowSyntax] }
-  private struct LegacyReciprocalOf: Codable { let of: ArrowSyntax }
 
+  // swiftlint:disable:next cyclomatic_complexity
   init(from decoder: Decoder) throws {
     let container = try decoder.container(keyedBy: CaseKey.self)
 
     if container.contains(.prod) {
-      // New: {"prod": [...]}  Old: {"prod": {"of": [...]}}
-      if let arr = try? container.decode([ArrowSyntax].self, forKey: .prod) {
-        self = .prod(of: arr)
-      } else {
-        let legacy = try container.decode(LegacyArrayOf.self, forKey: .prod)
-        self = .prod(of: legacy.of)
-      }
+      self = .prod(of: try container.decode([ArrowSyntax].self, forKey: .prod))
     } else if container.contains(.sum) {
-      if let arr = try? container.decode([ArrowSyntax].self, forKey: .sum) {
-        self = .sum(of: arr)
-      } else {
-        let legacy = try container.decode(LegacyArrayOf.self, forKey: .sum)
-        self = .sum(of: legacy.of)
-      }
+      self = .sum(of: try container.decode([ArrowSyntax].self, forKey: .sum))
     } else if container.contains(.compose) {
-      if let arr = try? container.decode([ArrowSyntax].self, forKey: .compose) {
-        self = .compose(arrows: arr)
-      } else {
-        let legacy = try container.decode(LegacyArrayArrows.self, forKey: .compose)
-        self = .compose(arrows: legacy.arrows)
-      }
+      self = .compose(arrows: try container.decode([ArrowSyntax].self, forKey: .compose))
     } else if container.contains(.reciprocal) {
-      if let inner = try? container.decode(ArrowSyntax.self, forKey: .reciprocal) {
-        self = .reciprocal(of: inner)
-      } else {
-        let legacy = try container.decode(LegacyReciprocalOf.self, forKey: .reciprocal)
-        self = .reciprocal(of: legacy.of)
-      }
+      self = .reciprocal(of: try container.decode(ArrowSyntax.self, forKey: .reciprocal))
     } else if container.contains(.const) {
       let p = try container.decode(NameVal.self, forKey: .const)
       self = .const(name: p.name, val: p.val)
@@ -139,6 +115,7 @@ extension ArrowSyntax: Codable {
     }
   }
 
+  // swiftlint:disable:next cyclomatic_complexity
   func encode(to encoder: Encoder) throws {
     var container = encoder.container(keyedBy: CaseKey.self)
     switch self {

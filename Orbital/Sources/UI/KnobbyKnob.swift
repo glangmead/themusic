@@ -122,7 +122,7 @@ struct KnobbyKnob<T: BinaryFloatingPoint>: View {
   }
 }
 
-struct KnobbyKnob_Container<T: BinaryFloatingPoint>: View {
+struct KnobbyKnobContainer<T: BinaryFloatingPoint>: View {
   @State var value: T = 0.5
   var body: some View {
     KnobbyKnob<T>(value: $value, label: "Testy")
@@ -131,10 +131,10 @@ struct KnobbyKnob_Container<T: BinaryFloatingPoint>: View {
 
 struct KnobbyKnob_Previews<T: BinaryFloatingPoint>: PreviewProvider {
   static var previews: some View {
-    KnobbyKnob_Container<T>()
+    KnobbyKnobContainer<T>()
   }
 }
 
 #Preview {
-  KnobbyKnob_Container<Float>()
+  KnobbyKnobContainer<Float>()
 }

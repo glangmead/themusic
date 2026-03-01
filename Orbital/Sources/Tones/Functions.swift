@@ -30,10 +30,8 @@ struct IntervalFunc<F: Numeric & Comparable> {
 struct PiecewiseFunc<F: Numeric & Comparable> {
   let ifuncs: [IntervalFunc<F>]
   func val(_ time: F) -> F {
-    for i_f in ifuncs {
-      if i_f.interval.contains(time) {
-        return i_f.f(time)
-      }
+    for i_f in ifuncs where i_f.interval.contains(time) {
+      return i_f.f(time)
     }
     return 0
   }

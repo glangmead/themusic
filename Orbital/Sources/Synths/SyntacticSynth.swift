@@ -8,13 +8,6 @@
 import AVFAudio
 import SwiftUI
 
-/// TODO
-/// A button to save the current synth as a preset
-/// Move on to assigning different presets to different seq tracks
-/// Pulse oscillator? Or a param for the square?notehandler
-/// Build a library of presets
-///   - Minifreak V presets that use basic oscillators
-///     - 5th Clue
 // A Synth is an object that wraps a single PresetSyntax and offers mutators for all its settings, and offers a
 // pool of voices for playing the Preset via a SpatialPreset.
 @MainActor @Observable

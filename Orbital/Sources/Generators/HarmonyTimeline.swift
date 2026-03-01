@@ -310,7 +310,7 @@ struct HarmonyTimeline {
         case 3:  return triads[quality]   ?? [0, 4, 7]
         case 4:  return sevenths[quality] ?? [0, 4, 7, 10]
         case 5:  return (sevenths[quality] ?? [0, 4, 7, 10]) + [14]  // 9th approx
-        default: return Array(repeating: 0, count: size).enumerated().map { $0.offset * 3 }
+        default: return (0..<size).map { $0 * 3 }
         }
     }
 

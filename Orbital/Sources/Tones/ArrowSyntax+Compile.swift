@@ -13,6 +13,7 @@ import Foundation
 extension ArrowSyntax {
 
   // see https://www.compilenrun.com/docs/language/swift/swift-enumerations/swift-recursive-enumerations/
+  // swiftlint:disable:next cyclomatic_complexity
   func compile(library: [String: ArrowSyntax] = [:]) -> ArrowWithHandles {
     if !library.isEmpty {
       return resolveLibrary(library).compile()
