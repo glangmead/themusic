@@ -127,6 +127,7 @@ struct ScoreNoteSyntax: Codable, Equatable {
 
     // For "chordTone": which chord tone (0 = bass of voiced chord).
     // Indices ≥ chord size wrap upward by octave (index 3 on a triad = root+1 octave).
+    // Negative indices wrap downward (-1 = top tone of octave below, -3 on a triad = root-1 octave).
     let index: Int?
 
     // For "scaleDegree": the degree index (0 = root, 1 = 2nd, …).

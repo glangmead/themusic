@@ -1,0 +1,46 @@
+{
+  "name": "Guitar Rift",
+  "scoreTracks": {
+    "bpm": 40,
+    "totalBeats": 12,
+    "loop": true,
+    "key": { "root": "C", "scale": "major" },
+    "chordEvents": [
+      { "beat": 0, "op": "setRoman", "roman": "I", "inversion": 0 },
+      { "beat": 6, "op": "setRoman", "roman": "bVII", "inversion": 0 }
+    ],
+    "tracks": [
+      {
+        "name": "Pad",
+        "presetFilename": "warm_analog_pad",
+        "numVoices": 8,
+        "octave": 3,
+        "voicing": "open",
+        "sustainFraction": 0.95,
+        "notes": [
+          { "type": "currentChord", "durationBeats": 6 },
+          { "type": "currentChord", "durationBeats": 6 },
+        ]
+      },
+      {
+        "name": "Melody",
+        "presetFilename": "organ_full_tutti",
+        "numVoices": 4,
+        "octave": 4,
+        "voicing": "closed",
+        "sustainFraction": 0.5,
+        "notes": [
+          { "type": "chordTone",   "index": 0, "durationBeats": 1 },
+          { "type": "chordTone",   "index": 2, "durationBeats": 1 },
+          { "type": "chordTone",   "index": -1, "durationBeats": 1 },
+          { "type": "chordTone",   "index": 1, "durationBeats": 3 },
+          { "type": "chordTone",   "index": -2, "durationBeats": 1 },
+          { "type": "chordTone",   "index": 0, "durationBeats": 1 },
+          { "type": "chordTone",   "index": -3, "durationBeats": 1 },
+          { "type": "chordTone",   "index": -1, "durationBeats": 3 },
+        ]
+      }
+    ]
+  }
+}
+

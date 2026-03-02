@@ -232,9 +232,10 @@ enum ScorePatternCompiler {
             let voiced = hierarchy.chord.voicedDegrees
             let count = voiced.count
             guard count > 0 else { return [] }
-            // Indices ≥ chord size wrap upward by one octave per wrap.
-            let octaveShift = idx / count
-            let wrappedIdx = idx % count
+            // Positive indices ≥ chord size wrap upward by one octave per wrap.
+            // Negative indices wrap downward: -1 = top tone of octave below, -count = root below.
+            let octaveShift = idx < 0 ? (idx + 1) / count - 1 : idx / count
+            let wrappedIdx = ((idx % count) + count) % count
             let melNote = MelodyNote(chordToneIndex: wrappedIdx, perturbation: .none)
             if let midi = hierarchy.resolve(melNote, at: .chord, octave: oct + octaveShift) {
                 return [MidiNote(note: midi, velocity: velocity)]
