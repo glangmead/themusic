@@ -3,6 +3,7 @@
   "midiTracks": {
     "filename": "patterns/debussy-la-cathedrale-engloutie.mid",
     "loop": true,
+    "bpm": 30,
     "tracks": [
       { "presetFilename": "warm_analog_pad", "numVoices": 12 },
       { "presetFilename": "wt_organ_digital", "numVoices": 12 }

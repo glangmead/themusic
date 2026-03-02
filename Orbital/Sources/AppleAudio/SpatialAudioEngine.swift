@@ -77,6 +77,12 @@ class SpatialAudioEngine {
       envNode.reverbParameters.loadFactoryReverbPreset(.largeHall)
 
       // envNode.listenerVectorOrientation = AVAudio3DVectorOrientation(forward: AVAudio3DVector(x: 0.0, y: -1.0, z: 1.0), up: AVAudio3DVector(x: 0.0, y: 0.0, z: 1.0))
+
+      // Multiple simultaneous voices sum without normalization, so reduce master output
+      // to match typical app loudness levels.
+      envNode.outputVolume = 0.25
+    } else {
+      audioEngine.mainMixerNode.outputVolume = 0.25
     }
 
     // Prevent the engine from auto-stopping when the app is backgrounded

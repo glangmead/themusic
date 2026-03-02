@@ -2,6 +2,7 @@
   "name": "Scriabin 12 Etudes Op. 8",
   "midiTracks": {
     "filename": "patterns/scriabin_12_etudes_op8.mid",
+    "bpm": 30,
     "loop": true,
     "tracks": [
       { "presetFilename": "warm_analog_pad", "numVoices": 12 },

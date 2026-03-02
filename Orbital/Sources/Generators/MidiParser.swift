@@ -136,7 +136,10 @@ class MidiParser {
           if metaEvent.pointee.metaEventType == 0x03 { // Track Name
             let dataPtr = data.advanced(by: 8).bindMemory(to: UInt8.self, capacity: Int(metaEvent.pointee.dataLength))
             let dataBuffer = Data(bytes: dataPtr, count: Int(metaEvent.pointee.dataLength))
-            if let name = String(data: dataBuffer, encoding: .utf8) {
+            // MIDI track names are ASCII; discard if bytes form non-ASCII UTF-8 (e.g. Chinese glyphs
+            // from a misencoded file whose bytes happen to be valid UTF-8).
+            if let name = String(data: dataBuffer, encoding: .utf8),
+               name.unicodeScalars.allSatisfy({ $0.value < 128 }) {
               trackData.name = name
             }
           }
@@ -194,10 +197,10 @@ struct MidiEventSequence {
 
   /// Parse all nonempty tracks from a MIDI file, returning one MidiEventSequence per track.
   /// Each element includes the track index (among all tracks), the track name, and the sequence.
-  static func allTracks(url: URL, loop: Bool) -> [(trackIndex: Int, trackName: String, sequence: MidiEventSequence)] {
+  static func allTracks(url: URL, loop: Bool, bpmOverride: Double? = nil) -> [(trackIndex: Int, trackName: String, sequence: MidiEventSequence)] {
     guard let parser = MidiParser(url: url, preserveTracks: true) else { return [] }
 
-    let bpm = parser.globalMetadata.tempo ?? 120.0
+    let bpm = bpmOverride ?? parser.globalMetadata.tempo ?? 120.0
     let secondsPerBeat = 60.0 / bpm
 
     var results: [(trackIndex: Int, trackName: String, sequence: MidiEventSequence)] = []

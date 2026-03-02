@@ -93,6 +93,7 @@
 				UI/GeneratorFormView.swift,
 				UI/KnobbyBox.swift,
 				UI/KnobbyKnob.swift,
+				UI/MidiTracksFormView.swift,
 				UI/OrbitalView.swift,
 				UI/PresetFormView.swift,
 				UI/PresetLibraryView.swift,

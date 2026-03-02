@@ -292,6 +292,20 @@ class SongDocument {
     runtime = nil
   }
 
+  // MARK: - MIDI pattern accessors
+
+  /// The MIDI tracks syntax, if this is a MIDI-based pattern.
+  var midiPattern: MidiTracksSyntax? {
+    patternSpec?.midiTracks
+  }
+
+  /// Replace the MIDI tracks definition. Takes effect on next play().
+  func replaceMidiPattern(_ newMidi: MidiTracksSyntax) {
+    guard let spec = patternSpec else { return }
+    patternSpec = PatternSyntax(name: spec.name, midiTracks: newMidi)
+    runtime = nil
+  }
+
   // MARK: - Generator pattern accessors
 
   /// The generator syntax, if this is a generator-based pattern.

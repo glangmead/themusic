@@ -41,8 +41,20 @@ struct SongSettingsView: View {
                 .foregroundStyle(.secondary)
             }
           }
+        } else if let midi = playbackState.midiPattern {
+          NavigationLink {
+            MidiTracksFormView(midi: midi)
+              .environment(playbackState)
+          } label: {
+            VStack(alignment: .leading, spacing: 4) {
+              Text(midi.filename.components(separatedBy: "/").last ?? midi.filename)
+              Text("MIDI Pattern — \(midi.tracks.count) track(s)")
+                .font(.caption)
+                .foregroundStyle(.secondary)
+            }
+          }
         } else {
-          Text("MIDI or Score pattern")
+          Text("Score pattern")
             .foregroundStyle(.secondary)
         }
       }

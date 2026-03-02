@@ -36,6 +36,7 @@ struct MidiTrackEntry: Codable {
 struct MidiTracksSyntax: Codable {
   let filename: String
   let loop: Bool?
+  let bpm: Double?
   let tracks: [MidiTrackEntry]
 }
 
@@ -124,7 +125,7 @@ struct PatternSyntax: Codable {
     }
 
     let loopVal = midi.loop ?? true
-    let allSeqs = MidiEventSequence.allTracks(url: url, loop: loopVal)
+    let allSeqs = MidiEventSequence.allTracks(url: url, loop: loopVal, bpmOverride: midi.bpm)
 
     var musicTracks: [MusicPattern.Track] = []
     var trackInfos: [TrackInfo] = []
