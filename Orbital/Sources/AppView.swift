@@ -11,20 +11,36 @@ struct AppView: View {
   @Environment(SpatialAudioEngine.self) private var engine
   @Environment(SongLibrary.self) private var library
   @State private var isShowingVisualizer = false
+  @State private var createDocument: SongDocument?
 
   var body: some View {
     TabView {
       Tab("Songs", systemImage: "music.note.list") {
         OrbitalView()
       }
+      Tab("Create", systemImage: "wand.and.stars") {
+        NavigationStack {
+          if let doc = createDocument {
+            GeneratorFormView(params: doc.generatorPattern ?? GeneratorSyntax())
+              .environment(doc)
+          } else {
+            ProgressView()
+          }
+        }
+      }
       Tab("Sounds", systemImage: "pianokeys") {
         PresetLibraryView()
       }
     }
+    .task {
+      if createDocument == nil {
+        createDocument = SongDocument(generatorPattern: GeneratorSyntax(), engine: engine)
+      }
+    }
     .tabBarMinimizeBehavior(.onScrollDown)
-    .tabViewBottomAccessory(isEnabled: library.anySongPlaying) {
+    .tabViewBottomAccessory(isEnabled: library.anySongPlaying || createDocument?.isPlaying == true || createDocument?.isLoading == true) {
       PlaybackAccessoryView(
-        state: library.currentPlaybackState,
+        state: library.currentPlaybackState ?? createDocument,
         isShowingVisualizer: $isShowingVisualizer
       )
     }

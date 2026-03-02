@@ -29,8 +29,20 @@ struct SongSettingsView: View {
                 .foregroundStyle(.secondary)
             }
           }
+        } else if let gen = playbackState.generatorPattern {
+          NavigationLink {
+            GeneratorFormView(params: gen)
+              .environment(playbackState)
+          } label: {
+            VStack(alignment: .leading, spacing: 4) {
+              Text("Generator")
+              Text("\(gen.motion.displayName) · \(gen.scaleType.displayName) · \(gen.texture.displayName)")
+                .font(.caption)
+                .foregroundStyle(.secondary)
+            }
+          }
         } else {
-          Text("MIDI pattern")
+          Text("MIDI or Score pattern")
             .foregroundStyle(.secondary)
         }
       }

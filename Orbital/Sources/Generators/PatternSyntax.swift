@@ -46,11 +46,27 @@ struct MidiTracksSyntax: Codable {
 /// - `midiTracks`: plays a MIDI file
 /// - `tableTracks`: generative table with stochastic emitters
 /// - `scoreTracks`: score-based absolute-beat sequencing
+/// - `generatorTracks`: high-level generator params compiled to scoreTracks at runtime
 struct PatternSyntax: Codable {
   let name: String
   let midiTracks: MidiTracksSyntax?
   let tableTracks: TablePatternSyntax?
   let scoreTracks: ScorePatternSyntax?
+  let generatorTracks: GeneratorSyntax?
+
+  init(
+    name: String,
+    midiTracks: MidiTracksSyntax? = nil,
+    tableTracks: TablePatternSyntax? = nil,
+    scoreTracks: ScorePatternSyntax? = nil,
+    generatorTracks: GeneratorSyntax? = nil
+  ) {
+    self.name = name
+    self.midiTracks = midiTracks
+    self.tableTracks = tableTracks
+    self.scoreTracks = scoreTracks
+    self.generatorTracks = generatorTracks
+  }
 
   /// Result of compiling a pattern: separates document data from live audio state.
   struct CompileResult {
@@ -66,6 +82,9 @@ struct PatternSyntax: Codable {
     } else if let table = tableTracks {
       return try await TablePatternCompiler.compile(table, engine: engine, clock: clock, resourceBaseURL: resourceBaseURL)
     } else if let score = scoreTracks {
+      return try await ScorePatternCompiler.compile(score, engine: engine, clock: clock, resourceBaseURL: resourceBaseURL)
+    } else if let gen = generatorTracks {
+      let score = GeneratorEngine.generate(gen)
       return try await ScorePatternCompiler.compile(score, engine: engine, clock: clock, resourceBaseURL: resourceBaseURL)
     } else {
       fatalError("PatternSyntax '\(name)' has no tracks")
@@ -84,6 +103,9 @@ struct PatternSyntax: Codable {
     } else if let table = tableTracks {
       return TablePatternCompiler.compileTrackInfoOnly(table, resourceBaseURL: resourceBaseURL)
     } else if let score = scoreTracks {
+      return ScorePatternCompiler.compileTrackInfoOnly(score, resourceBaseURL: resourceBaseURL)
+    } else if let gen = generatorTracks {
+      let score = GeneratorEngine.generate(gen)
       return ScorePatternCompiler.compileTrackInfoOnly(score, resourceBaseURL: resourceBaseURL)
     }
     return []

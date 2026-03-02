@@ -145,6 +145,28 @@ struct ScoreNoteSyntax: Codable, Equatable {
 
     // Velocity 0–127. Defaults to 80 if absent.
     let velocity: Int?
+
+    init(
+        type: ScoreNoteType,
+        durationBeats: Double,
+        index: Int? = nil,
+        degree: Int? = nil,
+        midi: Int? = nil,
+        note: String? = nil,
+        octave: Int? = nil,
+        voicing: VoicingStyle? = nil,
+        velocity: Int? = nil
+    ) {
+        self.type = type
+        self.durationBeats = durationBeats
+        self.index = index
+        self.degree = degree
+        self.midi = midi
+        self.note = note
+        self.octave = octave
+        self.voicing = voicing
+        self.velocity = velocity
+    }
 }
 
 // MARK: - Score Track Syntax
@@ -168,6 +190,24 @@ struct ScoreTrackSyntax: Codable {
     /// The ordered sequence of notes for this track.
     /// Total durationBeats across all notes should equal totalBeats for clean looping.
     let notes: [ScoreNoteSyntax]
+
+    init(
+        name: String,
+        presetFilename: String,
+        numVoices: Int? = nil,
+        octave: Int,
+        voicing: VoicingStyle? = nil,
+        sustainFraction: Double? = nil,
+        notes: [ScoreNoteSyntax]
+    ) {
+        self.name = name
+        self.presetFilename = presetFilename
+        self.numVoices = numVoices
+        self.octave = octave
+        self.voicing = voicing
+        self.sustainFraction = sustainFraction
+        self.notes = notes
+    }
 }
 
 // MARK: - Score Pattern Syntax
@@ -196,4 +236,20 @@ struct ScorePatternSyntax: Codable {
 
     /// Per-instrument tracks.
     let tracks: [ScoreTrackSyntax]
+
+    init(
+        bpm: Double,
+        totalBeats: Double,
+        loop: Bool? = true,
+        key: ScoreKeySyntax,
+        chordEvents: [ChordEventSyntax],
+        tracks: [ScoreTrackSyntax]
+    ) {
+        self.bpm = bpm
+        self.totalBeats = totalBeats
+        self.loop = loop
+        self.key = key
+        self.chordEvents = chordEvents
+        self.tracks = tracks
+    }
 }

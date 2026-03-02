@@ -90,6 +90,7 @@
 				UI/EventLogView.swift,
 				UI/ExpressionKeyboardView.swift,
 				UI/ExpressionTextField.swift,
+				UI/GeneratorFormView.swift,
 				UI/KnobbyBox.swift,
 				UI/KnobbyKnob.swift,
 				UI/OrbitalView.swift,

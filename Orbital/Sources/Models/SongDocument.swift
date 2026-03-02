@@ -93,6 +93,15 @@ class SongDocument {
     self.resourceBaseURL = nil
   }
 
+  /// Init for the standalone Create tab — pre-seeds a generator pattern so
+  /// loadTracks() skips file loading and compiles directly from the spec.
+  init(generatorPattern: GeneratorSyntax, engine: SpatialAudioEngine) {
+    self.song = SongRef(name: "Create", patternFileName: "")
+    self.engine = engine
+    self.resourceBaseURL = nil
+    patternSpec = PatternSyntax(name: "Create", generatorTracks: generatorPattern)
+  }
+
   func togglePlayback() {
     switch phase {
     case .playing: pause()
@@ -112,6 +121,12 @@ class SongDocument {
     // If tracks already exist (from a previous load), recompile from in-memory
     // patternSpec to preserve user edits across stop/play cycles.
     if !tracks.isEmpty {
+      if engine != nil { try await recompileFromSpec() }
+      return
+    }
+
+    // If patternSpec was pre-seeded (e.g. Create tab generator init), skip file loading.
+    if patternSpec != nil {
       if engine != nil { try await recompileFromSpec() }
       return
     }
@@ -273,6 +288,26 @@ class SongDocument {
       midiTracks: nil,
       tableTracks: newTable,
       scoreTracks: nil
+    )
+    runtime = nil
+  }
+
+  // MARK: - Generator pattern accessors
+
+  /// The generator syntax, if this is a generator-based pattern.
+  var generatorPattern: GeneratorSyntax? {
+    patternSpec?.generatorTracks
+  }
+
+  /// Replace the generator definition and hot-reload. Takes effect on next play().
+  func replaceGeneratorPattern(_ newGen: GeneratorSyntax) {
+    guard let spec = patternSpec else { return }
+    patternSpec = PatternSyntax(
+      name: spec.name,
+      midiTracks: nil,
+      tableTracks: nil,
+      scoreTracks: nil,
+      generatorTracks: newGen
     )
     runtime = nil
   }
