@@ -61,6 +61,9 @@ struct OrbitalPlay: AsyncParsableCommand {
     @Flag(name: .long, help: "Disable spatial audio (AVAudioEnvironmentNode). By default spatial audio is enabled.")
     var noSpatial: Bool = false
 
+    @Option(name: .customLong("bpm"), help: "Override the BPM for MIDI patterns (overrides both the JSON field and the embedded MIDI tempo).")
+    var bpmOverride: Double?
+
     func validate() throws {
         if output != nil && duration == nil {
             // Default to 10 seconds when writing to a file
@@ -73,7 +76,13 @@ struct OrbitalPlay: AsyncParsableCommand {
 
         // Decode pattern JSON
         let patternData = try Data(contentsOf: patternURL)
-        let patternSpec = try JSONDecoder().decode(PatternSyntax.self, from: patternData)
+        var patternSpec = try JSONDecoder().decode(PatternSyntax.self, from: patternData)
+
+        // Apply --bpm override to midiTracks if provided
+        if let bpm = bpmOverride, let midi = patternSpec.midiTracks {
+            let updated = MidiTracksSyntax(filename: midi.filename, loop: midi.loop, bpm: bpm, tracks: midi.tracks)
+            patternSpec = PatternSyntax(name: patternSpec.name, midiTracks: updated)
+        }
 
         let spatialEnabled = !noSpatial
 
