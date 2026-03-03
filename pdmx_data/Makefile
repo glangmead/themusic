@@ -31,12 +31,14 @@ MXL_META    := $(STAMPS)/04-enrich-mxl-metadata
 WIKIPEDIA   := $(STAMPS)/05-enrich-wikipedia
 WIKIDATA    := $(STAMPS)/06-enrich-wikidata
 FILTERED    := $(STAMPS)/07-build-filtered
+CLUSTERS    := $(STAMPS)/08-cluster-tsv
+PRUNED      := $(STAMPS)/09-prune
 
 # ──────────────────────────────────────────────────────────────
 # Default target
 # ──────────────────────────────────────────────────────────────
 .PHONY: all
-all: $(FILTERED)  ## Build everything including filtered output
+all: $(PRUNED)  ## Build everything including pruned output
 
 # ──────────────────────────────────────────────────────────────
 # Grouped targets
@@ -108,10 +110,27 @@ $(FILTERED): build_filtered.py $(WIKIDATA)
 	@touch $@
 
 # ──────────────────────────────────────────────────────────────
+# Step 8: Build cluster TSV (MIDI content clustering +
+#         instrumentation matching via Wikidata P870 and
+#         Wikipedia categories)
+# ──────────────────────────────────────────────────────────────
+$(CLUSTERS): build_cluster_tsv.py wiki_categories_to_instruments.py $(FILTERED)
+	$(PYTHON) build_cluster_tsv.py
+	@touch $@
+
+# ──────────────────────────────────────────────────────────────
+# Step 9: Prune corpus (drop arrangements + duplicates,
+#         keep originals)
+# ──────────────────────────────────────────────────────────────
+$(PRUNED): prune_corpus.py $(CLUSTERS)
+	$(PYTHON) prune_corpus.py
+	@touch $@
+
+# ──────────────────────────────────────────────────────────────
 # Housekeeping
 # ──────────────────────────────────────────────────────────────
 clean:  ## Remove all build output
-	rm -rf pdmx_composers/ pdmx_composers_with_wiki/ $(STAMPS)
+	rm -rf pdmx_composers/ pdmx_composers_with_wiki/ pdmx_composers_wiki_pruned1/ corpus_clusters.tsv $(STAMPS)
 
 clean-cache:  ## Remove Wikidata API cache (forces re-fetch)
 	rm -rf wikidata_cache/
