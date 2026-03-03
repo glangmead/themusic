@@ -219,6 +219,13 @@ extension ArrowSyntax {
       let arr = ArrowWithHandles(osc)
       arr.namedWavetableOscs[name] = [osc]
       return arr
+
+    case .bitCrusher(let name, let amount):
+      let amountArrow = amount.compile()
+      let crusher = BitCrusher(amountArr: amountArrow)
+      let handleArr = ArrowWithHandles(crusher).withMergeDictsFromArrow(amountArrow)
+      handleArr.namedBitCrushers[name] = [crusher]
+      return handleArr
     }
   }
 
@@ -249,6 +256,8 @@ extension ArrowSyntax {
       return .osc(name: name, shape: shape, width: transform(width))
     case .wavetable(let name, let tableName, let width):
       return .wavetable(name: name, tableName: tableName, width: transform(width))
+    case .bitCrusher(let name, let amount):
+      return .bitCrusher(name: name, amount: transform(amount))
     case .reciprocal(let inner):
       return .reciprocal(of: transform(inner))
     case .const, .constOctave, .constCent, .reciprocalConst,

@@ -224,6 +224,56 @@ final class CombFilter: Arrow11 {
   }
 }
 
+// MARK: - BitCrusher
+
+// A lo-fi effect combining bit-depth reduction and sample-rate (hold) reduction.
+// amount = 0: pass-through; amount = 1: extreme (2-bit depth, 32-sample hold).
+//   bit depth  = 2 + 22 * (1 - amount)^1.5    → 24 bits at 0, 2 bits at 1
+//   sample div = max(1, round(1 + 31 * amount)) → 1 at 0, 32 at 1
+// The convex power curve means the first half of the knob stays relatively subtle
+// while the upper half gets increasingly aggressive.
+// amountArr provides a per-sample amount signal (e.g. a const driven by a slider).
+// The audio signal flows through innerArr as usual.
+final class BitCrusher: Arrow11 {
+  var amountArr: Arrow11
+
+  private var innerVals = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
+  private var amounts   = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
+  private var heldValue: CoreFloat = 0
+  private var heldCounter: Int = 0
+
+  init(amountArr: Arrow11) {
+    self.amountArr = amountArr
+    super.init()
+  }
+
+  override func setSampleRateRecursive(rate: CoreFloat) {
+    amountArr.setSampleRateRecursive(rate: rate)
+    super.setSampleRateRecursive(rate: rate)
+  }
+
+  override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
+    (innerArr ?? ArrowIdentity()).process(inputs: inputs, outputs: &innerVals)
+    amountArr.process(inputs: inputs, outputs: &amounts)
+    let n = inputs.count
+    for i in 0..<n {
+      let amt = max(0, min(1, amounts[i]))
+      guard amt >= 0.001 else {
+        outputs[i] = innerVals[i]
+        continue
+      }
+      // Bit depth: 24 bits near amt=0, 2 bits at amt=1.
+      let bits = 2.0 + 22.0 * pow(1.0 - amt, 1.5)
+      // Sample-rate divisor: hold 1 sample near amt=0, 32 at amt=1.
+      let div = max(1, Int((1.0 + 31.0 * amt).rounded()))
+      if heldCounter == 0 { heldValue = innerVals[i] }
+      heldCounter = (heldCounter + 1) % div
+      let levels = pow(2.0, bits - 1.0)
+      outputs[i] = (heldValue * levels).rounded() / levels
+    }
+  }
+}
+
 // from https://www.w3.org/TR/audio-eq-cookbook/
 final class LowPassFilter2: Arrow11 {
   private var innerVals = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)

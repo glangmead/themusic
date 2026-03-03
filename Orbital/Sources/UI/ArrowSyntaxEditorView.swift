@@ -54,6 +54,11 @@ struct ArrowSyntaxEditorView: View {
         ArrowSyntaxEditorView(syntax: feedback, handler: handler)
       }
 
+    case .bitCrusher(let name, let amount):
+      DisclosureGroup("BitCrusher: \(name)") {
+        ArrowSyntaxEditorView(syntax: amount, handler: handler)
+      }
+
     case .compose(let arrows):
       ForEach(Array(arrows.enumerated()), id: \.offset) { _, child in
         ArrowSyntaxEditorView(syntax: child, handler: handler)

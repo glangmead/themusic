@@ -22,6 +22,7 @@ private struct PadCompiledParams {
   let filterLFORate: CoreFloat?
   let chorusCentRadius: Int
   let chorusNumVoices: Int
+  let gritAmount: CoreFloat  // 0..1 → bit crusher amount (0 = bypass)
 }
 
 // MARK: - Compiler
@@ -38,7 +39,7 @@ enum PadTemplateCompiler {
     }
     let oscSection = buildOscSection(branches: branches, crossfade: t.crossfade, crossfadeRate: params.crossfadeRate)
     let ampEnv = ArrowSyntax.envelope(name: "ampEnv", attack: params.ampAttack, decay: params.ampDecay, sustain: params.ampSustain, release: params.ampRelease, scale: 1)
-    return .compose(arrows: [
+    var steps: [ArrowSyntax] = [
       .prod(of: [
         .const(name: "overallAmp", val: 1.0),
         .const(name: "overallAmp2", val: 1.0),
@@ -46,7 +47,11 @@ enum PadTemplateCompiler {
         ampEnv
       ]),
       buildFilter(params: params, t: t)
-    ])
+    ]
+    if params.gritAmount > 0.001 {
+      steps.append(.bitCrusher(name: "bitCrusher", amount: .const(name: "gritAmount", val: params.gritAmount)))
+    }
+    return .compose(arrows: steps)
   }
 
   // MARK: - Slider resolution
@@ -92,7 +97,8 @@ enum PadTemplateCompiler {
       crossfadeRate: crossfadeRate,
       filterLFORate: filterLFORate,
       chorusCentRadius: Int(lerp(0, 30, s.width)),
-      chorusNumVoices: max(1, Int(lerp(1, 8, s.width)))
+      chorusNumVoices: max(1, Int(lerp(1, 8, s.width))),
+      gritAmount: s.grit
     )
   }
 

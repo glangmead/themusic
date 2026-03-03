@@ -20,6 +20,7 @@ class ArrowWithHandles: Arrow11 {
   var namedCrossfadersEqPow = [String: [ArrowEqualPowerCrossfade]]()
   var namedEventUsing = [String: [EventUsingArrow]]()
   var namedEmitterValues = [String: [ArrowConst]]()
+  var namedBitCrushers = [String: [BitCrusher]]()
   var wrappedArrow: Arrow11
   private var wrappedArrowUnsafe: Unmanaged<Arrow11>
 
@@ -54,6 +55,7 @@ class ArrowWithHandles: Arrow11 {
     namedCrossfadersEqPow.merge(arr2.namedCrossfadersEqPow) { (a, b) in return a + b }
     namedEventUsing.merge(arr2.namedEventUsing) { (a, b) in return a + b }
     namedEmitterValues.merge(arr2.namedEmitterValues) { (a, b) in return a + b }
+    namedBitCrushers.merge(arr2.namedBitCrushers) { (a, b) in return a + b }
     return self
   }
 

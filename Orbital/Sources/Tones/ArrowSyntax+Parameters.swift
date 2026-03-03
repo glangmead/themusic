@@ -161,6 +161,9 @@ extension ArrowSyntax {
       cutoff.collectDescriptors(into: &descriptors, seenIds: &seenIds)
       resonance.collectDescriptors(into: &descriptors, seenIds: &seenIds)
 
+    case .bitCrusher(_, let amount):
+      amount.collectDescriptors(into: &descriptors, seenIds: &seenIds)
+
     case .combFilter(_, let frequency, let feedback):
       frequency.collectDescriptors(into: &descriptors, seenIds: &seenIds)
       feedback.collectDescriptors(into: &descriptors, seenIds: &seenIds)
