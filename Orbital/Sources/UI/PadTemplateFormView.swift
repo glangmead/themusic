@@ -64,8 +64,9 @@ struct PadTemplateFormView: View {
     let standard: [OscChoice] = [
       .standard(.sine), .standard(.triangle), .standard(.sawtooth), .standard(.square)
     ]
-    let wavetables = WavetableLibrary.curatedTableNames.map { OscChoice.wavetable($0) }
-    return standard + wavetables
+    let synthesized = WavetableLibrary.tables.keys.sorted().map { OscChoice.wavetable($0) }
+    let curated = WavetableLibrary.curatedTableNames.map { OscChoice.wavetable($0) }
+    return standard + synthesized + curated
   }
 
   // MARK: - Mood-specific template construction
@@ -277,6 +278,15 @@ private struct PadTemplateFormContent: View {
     }
   }
 
+  private func applyRandomEffects() {
+    synth.reverbPreset = AVAudioUnitReverbPreset.allCases.randomElement()!
+    synth.reverbMix = .random(in: 0...50)
+    synth.delayTime = .random(in: 0...30)
+    synth.delayFeedback = .random(in: 0...30)
+    synth.delayWetDryMix = .random(in: 0...50)
+    synth.delayLowPassCutoff = .random(in: 0...1000)
+  }
+
   private func rebuildSynth() {
     ensureWavetablesLoaded()
     let preset = PadTemplateFormView.buildPreset(mood: mood, sliders: sliders, oscChoices: oscChoices)
@@ -323,10 +333,11 @@ private struct PadTemplateFormContent: View {
           bite: .random(in: 0...1),
           motion: .random(in: 0...1),
           width: .random(in: 0...1),
-          grit: .random(in: 0...1),
+          grit: .random(in: 0...0.3),
           osc1Index: count > 0 ? Int.random(in: 0..<count) : 0,
           osc2Index: count > 0 ? Int.random(in: 0..<count) : 0
         )
+        applyRandomEffects()
       } label: {
         Label("Randomize", systemImage: "dice")
           .frame(maxWidth: .infinity)

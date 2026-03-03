@@ -63,7 +63,8 @@ struct PresetModulatorRowSyntax: Codable, Equatable, Identifiable {
 struct TrackAssemblyRowSyntax: Codable, Equatable, Identifiable {
   var id: UUID
   var name: String
-  var presetFilename: String
+  /// nil or "randomPad" generates a fresh random pad preset at compile time.
+  var presetFilename: String?
   var numVoices: Int?
   /// Names from PresetModulatorRowSyntax.
   var presetModulatorNames: [String]
@@ -77,7 +78,7 @@ struct TrackAssemblyRowSyntax: Codable, Equatable, Identifiable {
   init(
     id: UUID = UUID(),
     name: String,
-    presetFilename: String,
+    presetFilename: String? = nil,
     numVoices: Int? = nil,
     presetModulatorNames: [String] = [],
     noteMaterial: String,
@@ -103,7 +104,7 @@ struct TrackAssemblyRowSyntax: Codable, Equatable, Identifiable {
     let c = try decoder.container(keyedBy: CodingKeys.self)
     id = try c.decodeIfPresent(UUID.self, forKey: .id) ?? UUID()
     name = try c.decode(String.self, forKey: .name)
-    presetFilename = try c.decode(String.self, forKey: .presetFilename)
+    presetFilename = try c.decodeIfPresent(String.self, forKey: .presetFilename)
     numVoices = try c.decodeIfPresent(Int.self, forKey: .numVoices)
     presetModulatorNames = try c.decodeIfPresent([String].self, forKey: .presetModulatorNames) ?? []
     noteMaterial = try c.decode(String.self, forKey: .noteMaterial)

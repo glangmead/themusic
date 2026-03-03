@@ -172,9 +172,10 @@ struct ScoreNoteSyntax: Codable, Equatable {
 // MARK: - Score Track Syntax
 
 /// A single instrument track in a score pattern.
+/// presetFilename: nil or "randomPad" generates a fresh random pad preset at compile time.
 struct ScoreTrackSyntax: Codable {
     let name: String
-    let presetFilename: String
+    let presetFilename: String?
     let numVoices: Int?
 
     /// Base octave for note resolution. Middle-C region = 4.
@@ -193,7 +194,7 @@ struct ScoreTrackSyntax: Codable {
 
     init(
         name: String,
-        presetFilename: String,
+        presetFilename: String? = nil,
         numVoices: Int? = nil,
         octave: Int,
         voicing: VoicingStyle? = nil,

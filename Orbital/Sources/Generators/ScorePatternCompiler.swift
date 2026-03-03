@@ -47,13 +47,7 @@ enum ScorePatternCompiler {
         var spatialPresets: [SpatialPreset] = []
 
         for (i, trackSyntax) in score.tracks.enumerated() {
-            let presetFileName = trackSyntax.presetFilename + ".json"
-            let presetSpec = decodeJSON(
-                PresetSyntax.self,
-                from: presetFileName,
-                subdirectory: "presets",
-                resourceBaseURL: resourceBaseURL
-            )
+            let presetSpec = resolvePresetSpec(filename: trackSyntax.presetFilename, resourceBaseURL: resourceBaseURL)
             let voices = trackSyntax.numVoices ?? 12
             let sp = try await SpatialPreset(
                 presetSpec: presetSpec,
@@ -104,13 +98,7 @@ enum ScorePatternCompiler {
         resourceBaseURL: URL? = nil
     ) -> [TrackInfo] {
         score.tracks.enumerated().map { (i, trackSyntax) in
-            let presetFileName = trackSyntax.presetFilename + ".json"
-            let presetSpec = decodeJSON(
-                PresetSyntax.self,
-                from: presetFileName,
-                subdirectory: "presets",
-                resourceBaseURL: resourceBaseURL
-            )
+            let presetSpec = resolvePresetSpec(filename: trackSyntax.presetFilename, resourceBaseURL: resourceBaseURL)
             return TrackInfo(id: i, patternName: trackSyntax.name, presetSpec: presetSpec)
         }
     }

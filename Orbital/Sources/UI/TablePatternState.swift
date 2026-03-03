@@ -222,7 +222,7 @@ struct TrackAssemblyRowState: Identifiable, Equatable {
   init(from syntax: TrackAssemblyRowSyntax) {
     id = syntax.id
     name = syntax.name
-    presetFilename = syntax.presetFilename
+    presetFilename = syntax.presetFilename ?? ""
     numVoices = syntax.numVoices ?? 12
     presetModulatorNames = syntax.presetModulatorNames
     noteMaterial = syntax.noteMaterial

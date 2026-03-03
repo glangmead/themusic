@@ -38,6 +38,10 @@ class SyntacticSynth {
     presets.forEach { $0.positionLFO?.leafFactor.val = roseLeaves } }
   }
 
+  // After the first successful setup, preserve current effect values across subsequent reloads
+  // (so that neither rebuildSynth nor the Randomize button need special timing infrastructure).
+  private var hasSetupEffectsOnce = false
+
   // FX params
   var distortionAvailable: Bool {
     presets.first?.distortionAvailable ?? false
@@ -171,13 +175,16 @@ class SyntacticSynth {
       roseLeaves = posLFO.leafFactor.val
     }
 
-    reverbPreset = first.reverbPreset
-    reverbMix = first.getReverbWetDryMix()
-
-    delayTime = first.getDelayTime()
-    delayFeedback = first.getDelayFeedback()
-    delayWetDryMix = first.getDelayWetDryMix()
-    delayLowPassCutoff = first.getDelayLowPassCutoff()
+    // On first load read from the preset; on subsequent reloads keep current values so that
+    // user-set effects (or Randomize) survive pad-template rebuilds. Either way, assigning
+    // re-triggers didSet, which propagates the values to the newly created audio nodes.
+    reverbPreset    = hasSetupEffectsOnce ? reverbPreset    : first.reverbPreset
+    reverbMix       = hasSetupEffectsOnce ? reverbMix       : first.getReverbWetDryMix()
+    delayTime       = hasSetupEffectsOnce ? delayTime       : first.getDelayTime()
+    delayFeedback   = hasSetupEffectsOnce ? delayFeedback   : first.getDelayFeedback()
+    delayWetDryMix  = hasSetupEffectsOnce ? delayWetDryMix  : first.getDelayWetDryMix()
+    delayLowPassCutoff = hasSetupEffectsOnce ? delayLowPassCutoff : first.getDelayLowPassCutoff()
+    hasSetupEffectsOnce = true
 
     distortionPreset = first.getDistortionPreset()
     distortionPreGain = first.getDistortionPreGain()

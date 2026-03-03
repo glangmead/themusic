@@ -131,8 +131,7 @@ enum TablePatternCompiler {
     var spatialPresets: [SpatialPreset] = []
 
     for (i, trackRow) in table.tracks.enumerated() {
-      let presetFileName = trackRow.presetFilename + ".json"
-      let presetSpec = decodeJSON(PresetSyntax.self, from: presetFileName, subdirectory: "presets", resourceBaseURL: resourceBaseURL)
+      let presetSpec = resolvePresetSpec(filename: trackRow.presetFilename, resourceBaseURL: resourceBaseURL)
       let voices = trackRow.numVoices ?? 12
       let sp = try await SpatialPreset(presetSpec: presetSpec, engine: engine, numVoices: voices, resourceBaseURL: resourceBaseURL)
 
@@ -180,8 +179,7 @@ enum TablePatternCompiler {
   static func compileTrackInfoOnly(_ table: TablePatternSyntax, resourceBaseURL: URL? = nil) -> [TrackInfo] {
     var infos: [TrackInfo] = []
     for (i, trackRow) in table.tracks.enumerated() {
-      let presetFileName = trackRow.presetFilename + ".json"
-      let presetSpec = decodeJSON(PresetSyntax.self, from: presetFileName, subdirectory: "presets", resourceBaseURL: resourceBaseURL)
+      let presetSpec = resolvePresetSpec(filename: trackRow.presetFilename, resourceBaseURL: resourceBaseURL)
       infos.append(TrackInfo(
         id: i,
         patternName: trackRow.name,

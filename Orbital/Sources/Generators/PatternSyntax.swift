@@ -25,8 +25,9 @@ struct ModulatorSyntax: Codable {
 // MARK: - MidiTracksSyntax
 
 /// Per-track configuration for a MIDI pattern (preset + voice count).
+/// presetFilename: nil or "randomPad" generates a fresh random pad preset at compile time.
 struct MidiTrackEntry: Codable {
-  let presetFilename: String
+  let presetFilename: String?
   let numVoices: Int?
   let modulators: [ModulatorSyntax]?
 }
@@ -97,8 +98,7 @@ struct PatternSyntax: Codable {
   func compileTrackInfoOnly(resourceBaseURL: URL? = nil) -> [TrackInfo] {
     if let midi = midiTracks {
       return midi.tracks.enumerated().map { (i, entry) in
-        let presetFileName = entry.presetFilename + ".json"
-        let presetSpec = decodeJSON(PresetSyntax.self, from: presetFileName, subdirectory: "presets", resourceBaseURL: resourceBaseURL)
+        let presetSpec = resolvePresetSpec(filename: entry.presetFilename, resourceBaseURL: resourceBaseURL)
         return TrackInfo(id: i, patternName: "Track \(i)", presetSpec: presetSpec)
       }
     } else if let table = tableTracks {
@@ -133,8 +133,7 @@ struct PatternSyntax: Codable {
 
     for (i, entry) in allSeqs.enumerated() {
       let trackEntry = i < midi.tracks.count ? midi.tracks[i] : midi.tracks[0]
-      let presetFileName = trackEntry.presetFilename + ".json"
-      let presetSpec = decodeJSON(PresetSyntax.self, from: presetFileName, subdirectory: "presets", resourceBaseURL: resourceBaseURL)
+      let presetSpec = resolvePresetSpec(filename: trackEntry.presetFilename, resourceBaseURL: resourceBaseURL)
       let voices = trackEntry.numVoices ?? 12
       let sp = try await SpatialPreset(presetSpec: presetSpec, engine: engine, numVoices: voices, resourceBaseURL: resourceBaseURL)
 
@@ -167,4 +166,58 @@ struct PatternSyntax: Codable {
       uniquingKeysWith: { first, _ in first }
     )
   }
+}
+
+// MARK: - Random pad helpers
+
+/// Generates a fresh random pad preset using standard oscillators.
+/// Called when presetFilename is nil or "randomPad" in a pattern track.
+func makeRandomPadPreset() -> PresetSyntax {
+  let shapes: [BasicOscillator.OscShape] = [.sine, .triangle, .sawtooth, .square]
+  let sliders = PadSliders(
+    smooth: .random(in: 0...1),
+    bite: .random(in: 0...1),
+    motion: .random(in: 0...1),
+    width: .random(in: 0...1),
+    grit: .random(in: 0...0.3)
+  )
+  let template = PadTemplateSyntax(
+    name: "Random Pad",
+    oscillators: [
+      PadOscDescriptor(kind: .standard, shape: shapes.randomElement()!, file: nil,
+                       detuneCents: .random(in: -12...12), octave: 0),
+      PadOscDescriptor(kind: .standard, shape: shapes.randomElement()!, file: nil,
+                       detuneCents: .random(in: -12...12), octave: [-1, 0, 1].randomElement()!)
+    ],
+    crossfade: [.noiseSmoothStep, .lfo].randomElement()!,
+    crossfadeRate: nil,
+    vibratoEnabled: Bool.random(),
+    vibratoRate: nil,
+    vibratoDepth: .random(in: 0.0001...0.001),
+    ampAttack: nil, ampDecay: 0.1, ampSustain: 1.0, ampRelease: nil,
+    filterCutoffMultiplier: nil, filterResonance: nil, filterLFORate: nil,
+    filterEnvAttack: .random(in: 0.02...0.2),
+    filterEnvDecay: .random(in: 0.2...0.8),
+    filterEnvSustain: .random(in: 0.5...0.95),
+    filterEnvRelease: .random(in: 0.2...0.8),
+    filterCutoffLow: .random(in: 50...120),
+    mood: .custom, sliders: sliders
+  )
+  return PresetSyntax(
+    name: "Random Pad",
+    arrow: nil, samplerFilenames: nil, samplerProgram: nil, samplerBank: nil, library: nil,
+    rose: RoseSyntax(amp: 0, leafFactor: 3, freq: 0.2, phase: 0),
+    effects: EffectsSyntax(reverbPreset: 4, reverbWetDryMix: 30,
+                           delayTime: 0, delayFeedback: 0, delayLowPassCutoff: 0, delayWetDryMix: 0),
+    padTemplate: template
+  )
+}
+
+/// Resolves a preset filename to a PresetSyntax.
+/// nil or "randomPad" → fresh random pad preset; any other string → load from the presets bundle directory.
+func resolvePresetSpec(filename: String?, resourceBaseURL: URL?) -> PresetSyntax {
+  guard let filename, filename != "randomPad" else {
+    return makeRandomPadPreset()
+  }
+  return decodeJSON(PresetSyntax.self, from: filename + ".json", subdirectory: "presets", resourceBaseURL: resourceBaseURL)
 }
