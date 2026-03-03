@@ -1,0 +1,6 @@
+[project]
+name = "pdmx-classical"
+version = "1.0.0"
+description = "Curated classical music MIDI/MusicXML library from the PDMX dataset"
+requires-python = ">=3.9"
+dependencies = []

@@ -1,0 +1,27 @@
+# PDMX input data (too large for git, downloaded from Zenodo)
+PDMX.csv
+data/
+metadata/
+mxl/
+mid/
+subset_paths/
+
+# Build output
+pdmx_composers/
+
+# API cache (regenerated on demand)
+wikidata_cache/
+
+# Make stamps
+.stamps/
+
+# Python
+__pycache__/
+*.pyc
+
+# Superseded scripts (kept locally, not shipped)
+enrich_apple_music.py
+enrich_bios.py
+enrich_year_composed.py
+split_multimovement.py
+build_pdmx_greg.py
