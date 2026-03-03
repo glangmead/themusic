@@ -70,11 +70,40 @@ enum WavetableLibrary {
 
   // Mutable store for externally loaded tables (e.g. from WAV files on disk).
   // Keys registered here override built-in tables.
+  // Must only be written from the main thread — ArrowSyntax.compile() reads this from async Tasks.
   static var userTables: [String: [CoreFloat]] = [:]
 
   // Returns the named table, checking userTables first, then built-ins, then a pure sine fallback.
+  // Does NOT auto-load from disk — callers must pre-populate userTables (e.g. via loadCuratedTable).
   static func table(named name: String) -> [CoreFloat] {
     userTables[name] ?? tables[name] ?? fm(ratio: 1.0, depth: 0.0)
+  }
+
+  // Sorted names of all curated wavetable files in the app bundle (presets/curated_wavetables/).
+  // These are the canonical keys used in userTables and in PadOscDescriptor.file.
+  static let curatedTableNames: [String] = curatedTableURLs.keys.sorted()
+
+  // URL map for curated wavetable files, keyed by display name (filename without extension).
+  // Scanned once at startup from the app bundle. Use these URLs with loadCuratedTable(_:).
+  static let curatedTableURLs: [String: URL] = {
+    guard let dir = Bundle.main.resourceURL?
+      .appendingPathComponent("presets")
+      .appendingPathComponent("curated_wavetables"),
+      let files = try? FileManager.default.contentsOfDirectory(at: dir, includingPropertiesForKeys: nil)
+    else { return [:] }
+    var urls = [String: URL]()
+    for file in files where file.pathExtension.lowercased() == "wav" {
+      urls[file.deletingPathExtension().lastPathComponent] = file
+    }
+    return urls
+  }()
+
+  // Load a curated wavetable by name into userTables if not already present.
+  // Call from the main thread before triggering an async preset rebuild.
+  @MainActor
+  static func loadCuratedTable(_ name: String) {
+    guard userTables[name] == nil, let url = curatedTableURLs[name] else { return }
+    userTables[name] = fromFile(url: url)
   }
 
   // Number of 2048-sample wavetable frames a WAV file contains.

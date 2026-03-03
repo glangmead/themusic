@@ -33,6 +33,7 @@ struct PresetSyntax: Codable {
   let library: [[String: ArrowSyntax]]? // named reusable arrow definitions, referenced via .libraryArrow
   let rose: RoseSyntax
   let effects: EffectsSyntax
+  let padTemplate: PadTemplateSyntax? // high-level template; compiled to arrow on first use when arrow is absent
 
   /// Build the resolved [String: ArrowSyntax] dictionary from the library
   /// array, resolving forward references in order.
@@ -48,13 +49,14 @@ struct PresetSyntax: Codable {
   }
 
   func compile(numVoices: Int = 12, initEffects: Bool = true, resourceBaseURL: URL? = nil) -> Preset {
+    let resolvedArrow = arrow ?? padTemplate.map { PadTemplateCompiler.compile($0) }
     let preset: Preset
-    if let arrowSyntax = arrow {
+    if let arrowSyntax = resolvedArrow {
       preset = Preset(arrowSyntax: arrowSyntax, library: resolvedLibrary(), numVoices: numVoices, initEffects: initEffects)
     } else if let samplerFilenames = samplerFilenames, let samplerBank = samplerBank, let samplerProgram = samplerProgram {
       preset = Preset(sampler: Sampler(fileNames: samplerFilenames, bank: samplerBank, program: samplerProgram, resourceBaseURL: resourceBaseURL), initEffects: initEffects)
     } else {
-      fatalError("PresetSyntax must have either arrow or sampler")
+      fatalError("PresetSyntax must have arrow, padTemplate, or sampler")
     }
 
     preset.name = name

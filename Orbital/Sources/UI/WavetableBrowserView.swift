@@ -182,7 +182,8 @@ struct WavetableBrowserView: View {
         delayFeedback: 0,
         delayLowPassCutoff: 100_000,
         delayWetDryMix: 0
-      )
+      ),
+      padTemplate: nil
     )
   }
 

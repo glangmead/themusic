@@ -1,0 +1,39 @@
+{
+  "name": "Cosmic Pad",
+  "rose":    { "freq": 0.04, "leafFactor": 2, "phase": 1.57, "amp": 5 },
+  "effects": {
+    "reverbPreset": 6,
+    "reverbWetDryMix": 90,
+    "delayTime": 0.35,
+    "delayFeedback": 18,
+    "delayLowPassCutoff": 3000,
+    "delayWetDryMix": 20
+  },
+  "padTemplate": {
+    "name": "Cosmic Pad",
+    "oscillators": [
+      { "kind": "wavetable", "file": "fm_shallow",  "detuneCents": -7, "octave":  0 },
+      { "kind": "wavetable", "file": "fm_bell",     "detuneCents":  0, "octave":  0 },
+      { "kind": "standard",  "shape": "sineOsc",    "detuneCents":  7, "octave": -1 }
+    ],
+    "crossfade":     "noiseSmoothStep",
+    "crossfadeRate": null,
+    "vibratoEnabled": true,
+    "vibratoRate":   null,
+    "vibratoDepth":  0.00015,
+    "ampAttack":     null,
+    "ampDecay":      2.0,
+    "ampSustain":    0.9,
+    "ampRelease":    null,
+    "filterCutoffMultiplier": null,
+    "filterResonance":        null,
+    "filterLFORate":          null,
+    "filterEnvAttack":  3.0,
+    "filterEnvDecay":   1.5,
+    "filterEnvSustain": 0.75,
+    "filterEnvRelease": 3.0,
+    "filterCutoffLow":  80,
+    "mood": "cosmic",
+    "sliders": null
+  }
+}

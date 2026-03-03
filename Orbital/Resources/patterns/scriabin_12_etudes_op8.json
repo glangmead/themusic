@@ -2,11 +2,11 @@
   "name": "Scriabin 12 Etudes Op. 8",
   "midiTracks": {
     "filename": "patterns/scriabin_12_etudes_op8.mid",
-    "bpm": 30,
+    "bpm": 10,
     "loop": true,
     "tracks": [
-      { "presetFilename": "warm_analog_pad", "numVoices": 12 },
-      { "presetFilename": "wt_organ_digital", "numVoices": 12 }
+      { "presetFilename": "auroraBorealis", "numVoices": 12 },
+      { "presetFilename": "warm_analog_pad", "numVoices": 12 }
     ]
   }
 }

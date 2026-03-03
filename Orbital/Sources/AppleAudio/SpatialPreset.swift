@@ -74,7 +74,7 @@ class SpatialPreset: NoteHandler {
     var avNodes = [AVAudioMixerNode]()
     _cachedHandles = nil
 
-    if presetSpec.arrow != nil {
+    if presetSpec.arrow != nil || presetSpec.padTemplate != nil {
       // Independent spatial: N Presets x 1 voice each
       // Each note goes to a different Preset (different spatial position)
       let phaseStep = CoreFloat(2 * Double.pi) / CoreFloat(numVoices)

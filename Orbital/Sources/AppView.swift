@@ -28,8 +28,11 @@ struct AppView: View {
           }
         }
       }
-      Tab("Sounds", systemImage: "pianokeys") {
+      Tab("Sound library", systemImage: "pianokeys") {
         PresetLibraryView()
+      }
+      Tab("Sound design", systemImage: "slider.horizontal.3") {
+        PadTemplateFormView()
       }
     }
     .task {

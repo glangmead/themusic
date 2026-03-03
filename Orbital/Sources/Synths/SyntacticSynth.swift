@@ -18,6 +18,7 @@ class SyntacticSynth {
   var arrowHandler: ArrowHandler?
   var reloadCount = 0
   let numVoices = 12
+  private var setupGeneration: Int = 0
 
   var noteHandler: NoteHandler? { spatialPreset }
   private var presets: [Preset] { spatialPreset?.presets ?? [] }
@@ -98,14 +99,16 @@ class SyntacticSynth {
     self.engine = engine
     self.presetSpec = presetSpec
     if !deferSetup {
-      Task { await setup(presetSpec: presetSpec) }
+      setupGeneration += 1
+      Task { await setup(presetSpec: presetSpec, generation: setupGeneration) }
     }
   }
 
   func loadPreset(_ presetSpec: PresetSyntax) {
     cleanup()
     self.presetSpec = presetSpec
-    Task { await setup(presetSpec: presetSpec) }
+    setupGeneration += 1
+    Task { await setup(presetSpec: presetSpec, generation: setupGeneration) }
     reloadCount += 1
   }
 
@@ -134,8 +137,16 @@ class SyntacticSynth {
     isAttachedToLivePreset = false
   }
 
-  private func setup(presetSpec: PresetSyntax) async {
-    spatialPreset = try? await SpatialPreset(presetSpec: presetSpec, engine: engine, numVoices: numVoices)
+  private func setup(presetSpec: PresetSyntax, generation: Int) async {
+    let newPreset = try? await SpatialPreset(presetSpec: presetSpec, engine: engine, numVoices: numVoices)
+    // If a newer loadPreset() was called while we were awaiting, discard this result.
+    // The newer task will own spatialPreset; our nodes must be detached to avoid a stuck-note leak.
+    guard generation == setupGeneration else {
+      newPreset?.cleanup()
+      return
+    }
+    spatialPreset?.cleanup()
+    spatialPreset = newPreset
     buildHandlerAndReadValues()
   }
 
