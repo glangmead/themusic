@@ -13,11 +13,9 @@
 #   mid/                                  PDMX MIDI files
 #
 # Output:
-#   pdmx_composers/                       One subdirectory per composer
-#     manifest.json                       Summary of all composers
-#     {slug}/index.json                   Composer metadata + works (JSONL)
-#     {slug}/musicxml/                    .mxl files
-#     {slug}/midi/                        .mid files
+#   pdmx_composers/                       All 238 composers, all 5712 works
+#   pdmx_composers_with_wiki/             Filtered: Wikidata-linked works only,
+#                                         quality + noise-title filters applied
 
 PYTHON ?= python3
 
@@ -32,12 +30,13 @@ DATA_JSON   := $(STAMPS)/03-enrich-data-json
 MXL_META    := $(STAMPS)/04-enrich-mxl-metadata
 WIKIPEDIA   := $(STAMPS)/05-enrich-wikipedia
 WIKIDATA    := $(STAMPS)/06-enrich-wikidata
+FILTERED    := $(STAMPS)/07-build-filtered
 
 # ──────────────────────────────────────────────────────────────
 # Default target
 # ──────────────────────────────────────────────────────────────
 .PHONY: all
-all: offline-enrichment network-enrichment  ## Build everything
+all: $(FILTERED)  ## Build everything including filtered output
 
 # ──────────────────────────────────────────────────────────────
 # Grouped targets
@@ -92,16 +91,27 @@ $(WIKIPEDIA): enrich_wikipedia.py $(OFFLINE)
 #         Apple Music Classical links, fuzzy title matching)
 #         Requires network access to en.wikipedia.org and
 #         query.wikidata.org. Caches results in wikidata_cache/.
+#         Falls back to Wikidata entity search when Wikipedia
+#         lookup fails (handles variant composer names).
 # ──────────────────────────────────────────────────────────────
 $(WIKIDATA): enrich_wikidata.py $(DATA_JSON) $(MXL_META) $(WIKIPEDIA)
 	$(PYTHON) enrich_wikidata.py
 	@touch $@
 
 # ──────────────────────────────────────────────────────────────
+# Step 7: Build filtered subset (Wikidata-linked works only)
+#         Applies quality filter (rating > 0 OR views >= 50)
+#         and noise-title filter (WIP, easy, simplified, etc.)
+# ──────────────────────────────────────────────────────────────
+$(FILTERED): build_filtered.py $(WIKIDATA)
+	$(PYTHON) build_filtered.py
+	@touch $@
+
+# ──────────────────────────────────────────────────────────────
 # Housekeeping
 # ──────────────────────────────────────────────────────────────
 clean:  ## Remove all build output
-	rm -rf pdmx_composers/ $(STAMPS)
+	rm -rf pdmx_composers/ pdmx_composers_with_wiki/ $(STAMPS)
 
 clean-cache:  ## Remove Wikidata API cache (forces re-fetch)
 	rm -rf wikidata_cache/

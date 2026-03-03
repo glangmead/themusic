@@ -85,12 +85,58 @@ def api_get(url, headers=None):
         return None
 
 
-def get_wikidata_id(wiki_title):
-    """Get Wikidata Q-ID from Wikipedia article title (cached)."""
+# Manual overrides for names that defeat both Wikipedia and Wikidata search.
+QID_OVERRIDES = {
+    "Sergey Sergeyevich Prokofiev": "Q49481",
+    "Sergey Vasilyevich Rachmaninoff": "Q131861",
+}
+
+
+def search_wikidata_composer(name):
+    """Search Wikidata for a person who is a musician, by name."""
+    if name in QID_OVERRIDES:
+        return QID_OVERRIDES[name]
+    params = {
+        "action": "wbsearchentities",
+        "search": name,
+        "language": "en",
+        "type": "item",
+        "limit": "5",
+        "format": "json",
+    }
+    url = "https://www.wikidata.org/w/api.php?" + urllib.parse.urlencode(params)
+    data = api_get(url)
+    if not data:
+        return None
+    for hit in data.get("search", []):
+        qid = hit["id"]
+        # Verify: instance of human (Q5) AND occupation is subclass of musician (Q639669)
+        verify = sparql_query(
+            "ASK { wd:%s wdt:P31 wd:Q5 . wd:%s wdt:P106/wdt:P279* wd:Q639669 }"
+            % (qid, qid)
+        )
+        # sparql_query returns bindings for SELECT; for ASK we need the boolean
+        # Re-do as SELECT so we can reuse sparql_query
+        check = sparql_query(
+            "SELECT ?x WHERE { wd:%s wdt:P31 wd:Q5 . "
+            "wd:%s wdt:P106/wdt:P279* wd:Q639669 . BIND(1 AS ?x) } LIMIT 1"
+            % (qid, qid)
+        )
+        if check:
+            return qid
+    return None
+
+
+def get_wikidata_id(wiki_title, composer_name=None):
+    """Get Wikidata Q-ID from Wikipedia article title (cached).
+
+    Falls back to Wikidata entity search if Wikipedia lookup fails.
+    """
     cached = load_cache("qid", wiki_title)
     if cached is not None:
         return cached.get("qid")
 
+    # Method 1: Wikipedia article -> Wikidata item
     params = {
         "action": "query",
         "titles": wiki_title,
@@ -106,6 +152,13 @@ def get_wikidata_id(wiki_title):
         pages = data["query"].get("pages", [])
         if pages and not pages[0].get("missing"):
             qid = pages[0].get("pageprops", {}).get("wikibase_item")
+
+    # Method 2: search Wikidata directly by composer name
+    if not qid and composer_name:
+        print("    Wikipedia lookup failed, searching Wikidata for '%s'" % composer_name)
+        qid = search_wikidata_composer(composer_name)
+        if qid:
+            print("    Found %s via Wikidata search" % qid)
 
     save_cache("qid", wiki_title, {"qid": qid})
     return qid
@@ -618,7 +671,7 @@ def process_composer(slug, composer_dir):
     }
 
     # Step 1: Wikidata QID
-    qid = get_wikidata_id(wiki_title)
+    qid = get_wikidata_id(wiki_title, composer_name=composer_name)
     if not qid:
         return empty_result
 
