@@ -5,8 +5,8 @@
     "loop": true,
     "bpm": 30,
     "tracks": [
-      { "presetFilename": "warm_analog_pad", "numVoices": 12 },
-      { "presetFilename": "auroraBorealis", "numVoices": 12 }
+      { "presetFilename": "randomPad", "numVoices": 12 },
+      { "presetFilename": "randomPad", "numVoices": 12 }
     ]
   }
 }

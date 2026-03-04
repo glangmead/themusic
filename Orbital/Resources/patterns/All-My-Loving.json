@@ -1,0 +1,11 @@
+{
+  "name": "All My Loving",
+  "midiTracks": {
+    "filename": "patterns/All-My-Loving.mid",
+    "bpm": 50,
+    "loop": true,
+    "tracks": [
+      { "numVoices": 6 }
+    ]
+  }
+}

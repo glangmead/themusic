@@ -21,6 +21,7 @@ struct MidiTrackData: Identifiable {
   let id: Int
   var name: String = ""
   var notes: [MidiNoteEvent] = []
+  var program: Int?
 }
 
 struct MidiNoteEvent: Identifiable {
@@ -131,6 +132,11 @@ class MidiParser {
           if (Double(timestamp) + Double(noteMsg.duration)) > maxTime {
             maxTime = Double(timestamp) + Double(noteMsg.duration)
           }
+        } else if type == kMusicEventType_MIDIChannelMessage, let data = data {
+          let msg = data.bindMemory(to: MIDIChannelMessage.self, capacity: 1).pointee
+          if (msg.status & 0xF0) == 0xC0 { // program change
+            trackData.program = Int(msg.data1)
+          }
         } else if type == kMusicEventType_Meta, let data = data {
           let metaEvent = data.bindMemory(to: MIDIMetaEvent.self, capacity: 1)
           if metaEvent.pointee.metaEventType == 0x03 { // Track Name
@@ -163,6 +169,7 @@ struct MidiEventSequence {
   let chords: [[MidiNote]]
   let sustains: [CoreFloat]
   let gaps: [CoreFloat]
+  let program: Int?
 
   /// Parse a MIDI file and extract a single track as a sequence of chord events.
   /// Groups simultaneous notes (within a small beat epsilon) into chords.
@@ -264,7 +271,17 @@ struct MidiEventSequence {
       }
     }
 
-    return MidiEventSequence(chords: chords, sustains: sustains, gaps: gaps)
+    return MidiEventSequence(chords: chords, sustains: sustains, gaps: gaps, program: track.program)
+  }
+
+  /// Returns the median sustain duration in seconds across all non-silent events.
+  /// Silence events (initial rest padding) have sustain == 0 and are excluded.
+  func medianSustain() -> CoreFloat? {
+    let nonZero = sustains.filter { $0 > 0 }
+    guard !nonZero.isEmpty else { return nil }
+    let sorted = nonZero.sorted()
+    let mid = sorted.count / 2
+    return sorted.count.isMultiple(of: 2) ? (sorted[mid - 1] + sorted[mid]) / 2 : sorted[mid]
   }
 
   /// Create iterators suitable for MusicPattern.

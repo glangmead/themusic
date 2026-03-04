@@ -98,7 +98,7 @@ struct PatternSyntax: Codable {
   func compileTrackInfoOnly(resourceBaseURL: URL? = nil) -> [TrackInfo] {
     if let midi = midiTracks {
       return midi.tracks.enumerated().map { (i, entry) in
-        let presetSpec = resolvePresetSpec(filename: entry.presetFilename, resourceBaseURL: resourceBaseURL)
+        let presetSpec = resolvePresetSpec(filename: entry.presetFilename, gmProgram: nil, resourceBaseURL: resourceBaseURL)
         return TrackInfo(id: i, patternName: "Track \(i)", presetSpec: presetSpec)
       }
     } else if let table = tableTracks {
@@ -133,7 +133,7 @@ struct PatternSyntax: Codable {
 
     for (i, entry) in allSeqs.enumerated() {
       let trackEntry = i < midi.tracks.count ? midi.tracks[i] : midi.tracks[0]
-      let presetSpec = resolvePresetSpec(filename: trackEntry.presetFilename, resourceBaseURL: resourceBaseURL)
+      let presetSpec = resolvePresetSpec(filename: trackEntry.presetFilename, gmProgram: entry.sequence.program, characteristicDuration: entry.sequence.medianSustain(), resourceBaseURL: resourceBaseURL)
       let voices = trackEntry.numVoices ?? 12
       let sp = try await SpatialPreset(presetSpec: presetSpec, engine: engine, numVoices: voices, resourceBaseURL: resourceBaseURL)
 
@@ -170,37 +170,88 @@ struct PatternSyntax: Codable {
 
 // MARK: - Random pad helpers
 
-/// Generates a fresh random pad preset using standard oscillators.
-/// Called when presetFilename is nil or "randomPad" in a pattern track.
-func makeRandomPadPreset() -> PresetSyntax {
-  let shapes: [BasicOscillator.OscShape] = [.sine, .triangle, .sawtooth, .square]
+/// Timbral constraints for generating a random pad from a GM instrument family.
+/// All ranges are used to pick a random value within the family's characteristic space.
+private struct GMPadProfile {
+  let shapes: [BasicOscillator.OscShape]  // oscillator shapes appropriate for this family
+  let smoothRange: ClosedRange<CoreFloat>  // controls amp attack/release via lerp(0.5, 8.0, smooth)
+  let filterCutoffRange: ClosedRange<CoreFloat>  // filterCutoffLow: brightness floor
+  let gritRange: ClosedRange<CoreFloat>
+  let vibratoWeight: Double  // probability of enabling vibrato (0–1)
+}
+
+private func gmPadProfile(for program: Int?) -> GMPadProfile {
+  guard let program else { return .default }
+  switch program {
+  case 0...7:   return .piano
+  case 8...15:  return .chromPerc
+  case 16...23: return .organ
+  case 24...31: return .guitar
+  case 32...39: return .bass
+  case 40...47: return .strings
+  case 48...55: return .ensemble
+  case 56...63: return .brass
+  case 64...71: return .reed
+  case 72...79: return .pipe
+  case 80...87: return .synthLead
+  case 88...95: return .synthPad
+  default:      return .default
+  }
+}
+
+private extension GMPadProfile {
+  // Slower attack = higher smooth value (smooth drives lerp(0.5, 8.0, smooth) for ampAttack)
+  static let `default` = GMPadProfile(shapes: [.sine, .triangle, .sawtooth, .square], smoothRange: 0.2...0.8,  filterCutoffRange: 60...140,  gritRange: 0.0...0.2, vibratoWeight: 0.4)
+  static let piano     = GMPadProfile(shapes: [.triangle, .square],                   smoothRange: 0.15...0.45, filterCutoffRange: 80...200,  gritRange: 0.0...0.15, vibratoWeight: 0.1)
+  static let chromPerc = GMPadProfile(shapes: [.sine, .triangle],                     smoothRange: 0.2...0.5,   filterCutoffRange: 100...300, gritRange: 0.0...0.08, vibratoWeight: 0.0)
+  static let organ     = GMPadProfile(shapes: [.square, .sawtooth],                   smoothRange: 0.0...0.25,  filterCutoffRange: 60...150,  gritRange: 0.0...0.1,  vibratoWeight: 0.5)
+  static let guitar    = GMPadProfile(shapes: [.triangle, .sawtooth],                 smoothRange: 0.15...0.45, filterCutoffRange: 60...150,  gritRange: 0.0...0.2,  vibratoWeight: 0.25)
+  static let bass      = GMPadProfile(shapes: [.sawtooth, .square],                   smoothRange: 0.1...0.35,  filterCutoffRange: 40...100,  gritRange: 0.0...0.2,  vibratoWeight: 0.1)
+  static let strings   = GMPadProfile(shapes: [.sawtooth, .triangle],                 smoothRange: 0.4...0.85,  filterCutoffRange: 60...140,  gritRange: 0.0...0.08, vibratoWeight: 0.75)
+  static let ensemble  = GMPadProfile(shapes: [.triangle, .sine],                     smoothRange: 0.5...0.9,   filterCutoffRange: 55...120,  gritRange: 0.0...0.05, vibratoWeight: 0.6)
+  static let brass     = GMPadProfile(shapes: [.sawtooth, .square],                   smoothRange: 0.2...0.55,  filterCutoffRange: 80...200,  gritRange: 0.0...0.2,  vibratoWeight: 0.3)
+  static let reed      = GMPadProfile(shapes: [.square, .triangle],                   smoothRange: 0.2...0.5,   filterCutoffRange: 70...180,  gritRange: 0.0...0.1,  vibratoWeight: 0.35)
+  static let pipe      = GMPadProfile(shapes: [.sine, .triangle],                     smoothRange: 0.2...0.5,   filterCutoffRange: 80...200,  gritRange: 0.0...0.05, vibratoWeight: 0.3)
+  static let synthLead = GMPadProfile(shapes: [.sine, .triangle, .sawtooth, .square], smoothRange: 0.1...0.5,   filterCutoffRange: 60...200,  gritRange: 0.0...0.3,  vibratoWeight: 0.4)
+  static let synthPad  = GMPadProfile(shapes: [.sine, .triangle],                     smoothRange: 0.6...1.0,   filterCutoffRange: 50...110,  gritRange: 0.0...0.05, vibratoWeight: 0.6)
+}
+
+/// Generates a fresh random pad preset, constrained to the timbre space of the given GM program.
+/// When characteristicDuration is provided (median note sustain in seconds), ampAttack and
+/// ampRelease are derived from it so short-note tracks feel snappy and long-note tracks bloom slowly.
+func makeRandomPadPreset(gmProgram: Int? = nil, characteristicDuration: CoreFloat? = nil) -> PresetSyntax {
+  let profile = gmPadProfile(for: gmProgram)
   let sliders = PadSliders(
-    smooth: .random(in: 0...1),
+    smooth: .random(in: profile.smoothRange),
     bite: .random(in: 0...1),
     motion: .random(in: 0...1),
     width: .random(in: 0...1),
-    grit: .random(in: 0...0.3)
+    grit: .random(in: profile.gritRange)
   )
+  // Derive amp envelope from median note duration when available.
+  // attack ≈ 20% of median sustain (50 ms – 4 s); release ≈ 30% (100 ms – 5 s).
+  let ampAttack: CoreFloat? = characteristicDuration.map { clamp($0 * 0.2, min: 0.05, max: 4.0) }
+  let ampRelease: CoreFloat? = characteristicDuration.map { clamp($0 * 0.3, min: 0.10, max: 5.0) }
   let template = PadTemplateSyntax(
     name: "Random Pad",
     oscillators: [
-      PadOscDescriptor(kind: .standard, shape: shapes.randomElement()!, file: nil,
+      PadOscDescriptor(kind: .standard, shape: profile.shapes.randomElement()!, file: nil,
                        detuneCents: .random(in: -12...12), octave: 0),
-      PadOscDescriptor(kind: .standard, shape: shapes.randomElement()!, file: nil,
+      PadOscDescriptor(kind: .standard, shape: profile.shapes.randomElement()!, file: nil,
                        detuneCents: .random(in: -12...12), octave: [-1, 0, 1].randomElement()!)
     ],
     crossfade: [.noiseSmoothStep, .lfo].randomElement()!,
     crossfadeRate: nil,
-    vibratoEnabled: Bool.random(),
+    vibratoEnabled: Double.random(in: 0...1) < profile.vibratoWeight,
     vibratoRate: nil,
     vibratoDepth: .random(in: 0.0001...0.001),
-    ampAttack: nil, ampDecay: 0.1, ampSustain: 1.0, ampRelease: nil,
+    ampAttack: ampAttack, ampDecay: 0.1, ampSustain: 1.0, ampRelease: ampRelease,
     filterCutoffMultiplier: nil, filterResonance: nil, filterLFORate: nil,
     filterEnvAttack: .random(in: 0.02...0.2),
     filterEnvDecay: .random(in: 0.2...0.8),
     filterEnvSustain: .random(in: 0.5...0.95),
     filterEnvRelease: .random(in: 0.2...0.8),
-    filterCutoffLow: .random(in: 50...120),
+    filterCutoffLow: .random(in: profile.filterCutoffRange),
     mood: .custom, sliders: sliders
   )
   return PresetSyntax(
@@ -215,9 +266,9 @@ func makeRandomPadPreset() -> PresetSyntax {
 
 /// Resolves a preset filename to a PresetSyntax.
 /// nil or "randomPad" → fresh random pad preset; any other string → load from the presets bundle directory.
-func resolvePresetSpec(filename: String?, resourceBaseURL: URL?) -> PresetSyntax {
+func resolvePresetSpec(filename: String?, gmProgram: Int? = nil, characteristicDuration: CoreFloat? = nil, resourceBaseURL: URL?) -> PresetSyntax {
   guard let filename, filename != "randomPad" else {
-    return makeRandomPadPreset()
+    return makeRandomPadPreset(gmProgram: gmProgram, characteristicDuration: characteristicDuration)
   }
   return decodeJSON(PresetSyntax.self, from: filename + ".json", subdirectory: "presets", resourceBaseURL: resourceBaseURL)
 }
