@@ -210,12 +210,15 @@ struct MidiEventSequence {
     let bpm = bpmOverride ?? parser.globalMetadata.tempo ?? 120.0
     let secondsPerBeat = 60.0 / bpm
 
+    let tracksWithNotes = parser.tracks.filter { !$0.notes.isEmpty }
+    // Trim any global leading silence: find the earliest note across all tracks so that
+    // each track's initial rest is relative to that point, not to absolute beat 0.
+    let globalFirstBeat = tracksWithNotes.compactMap { $0.notes.map(\.startBeat).min() }.min() ?? 0
+
     var results: [(trackIndex: Int, trackName: String, sequence: MidiEventSequence)] = []
-    for track in parser.tracks {
-      guard !track.notes.isEmpty else { continue }
-      // Preserve the initial rest so multi-track playback stays aligned
-      let firstBeat = track.notes.map(\.startBeat).min() ?? 0
-      guard let seq = buildSequence(from: track, secondsPerBeat: secondsPerBeat, initialRestBeats: firstBeat) else { continue }
+    for track in tracksWithNotes {
+      let trackFirstBeat = (track.notes.map(\.startBeat).min() ?? 0) - globalFirstBeat
+      guard let seq = buildSequence(from: track, secondsPerBeat: secondsPerBeat, initialRestBeats: trackFirstBeat) else { continue }
       results.append((trackIndex: track.id, trackName: track.name, sequence: seq))
     }
     return results
