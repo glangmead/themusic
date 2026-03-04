@@ -45,6 +45,7 @@ struct OrbitalApp: App {
         .environment(songLibrary)
         .environment(resourceManager)
         .task {
+          WavetableLibrary.loadAllCuratedTables()
           await resourceManager.setup()
           PatternStorage.resourceBaseURL = resourceManager.resourceBaseURL
           songLibrary.loadSongs(from: resourceManager.resourceBaseURL)

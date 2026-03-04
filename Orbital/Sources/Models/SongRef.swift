@@ -27,17 +27,20 @@ class SongLibrary {
   func loadSongs(from baseURL: URL?) {
     guard let baseURL else { return }
     let patternsDir = baseURL.appendingPathComponent("patterns")
-    guard let files = try? FileManager.default.contentsOfDirectory(
-      at: patternsDir,
-      includingPropertiesForKeys: nil
-    ) else { return }
-    songs = files
+    var allFiles: [URL] = []
+    for subdir in ["midi", "score", "table"] {
+      let dir = patternsDir.appendingPathComponent(subdir)
+      let files = (try? FileManager.default.contentsOfDirectory(at: dir, includingPropertiesForKeys: nil)) ?? []
+      allFiles += files
+    }
+    songs = allFiles
       .filter { $0.pathExtension == "json" }
       .compactMap { url -> SongRef? in
         guard let data = try? Data(contentsOf: url),
               let nameOnly = try? JSONDecoder().decode(PatternNameOnly.self, from: data)
         else { return nil }
-        return SongRef(name: nameOnly.name, patternFileName: url.lastPathComponent)
+        let subdir = url.deletingLastPathComponent().lastPathComponent
+        return SongRef(name: nameOnly.name, patternFileName: "\(subdir)/\(url.lastPathComponent)")
       }
       .sorted { $0.name.localizedCaseInsensitiveCompare($1.name) == .orderedAscending }
   }

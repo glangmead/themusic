@@ -79,11 +79,11 @@ struct OrbitalView: View {
   library.songs = [
     SongRef(
       name: "Aurora Borealis",
-      patternFileName: "aurora_arpeggio.json"
+      patternFileName: "table/aurora_arpeggio.json"
     ),
     SongRef(
       name: "Baroque Chords",
-      patternFileName: "baroque_chords.json"
+      patternFileName: "table/baroque_chords.json"
     )
   ]
   resourceManager.isReady = true

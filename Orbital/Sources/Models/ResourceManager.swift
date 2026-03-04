@@ -34,14 +34,16 @@ class ResourceManager {
     }
 
     let fm = FileManager.default
-    for subdir in ["patterns", "presets", "samples"] {
+    for subdir in ["patterns/midi", "patterns/score", "patterns/table", "presets", "samples"] {
       try? fm.createDirectory(
         at: baseURL.appendingPathComponent(subdir),
         withIntermediateDirectories: true
       )
     }
 
-    copyBundleResources(to: baseURL, subdirectory: "patterns", extensions: ["json", "mid"])
+    copyBundleResources(to: baseURL, subdirectory: "patterns/midi", extensions: ["json", "mid"])
+    copyBundleResources(to: baseURL, subdirectory: "patterns/score", extensions: ["json"])
+    copyBundleResources(to: baseURL, subdirectory: "patterns/table", extensions: ["json"])
     copyBundleResources(to: baseURL, subdirectory: "presets", extensions: ["json"])
     // samples/ left empty — user can add their own via Files.app
 

@@ -1,7 +1,7 @@
 {
   "name": "All My Loving",
   "midiTracks": {
-    "filename": "patterns/All-My-Loving.mid",
+    "filename": "patterns/midi/All-My-Loving.mid",
     "bpm": 50,
     "loop": true,
     "tracks": [

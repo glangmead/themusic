@@ -10,7 +10,18 @@ import Foundation
 extension Bundle {
   // swiftlint:disable:next line_length
   func decode<T: Decodable>(_ type: T.Type, from file: String, dateDecodingStrategy: JSONDecoder.DateDecodingStrategy = .deferredToDate, keyDecodingStrategy: JSONDecoder.KeyDecodingStrategy = .useDefaultKeys, subdirectory: String? = nil) -> T {
-    guard let url = self.url(forResource: file, withExtension: nil, subdirectory: subdirectory) else {
+    // If file contains a path separator, fold the directory part into subdirectory.
+    let resolvedFile: String
+    let resolvedSubdir: String?
+    if file.contains("/") {
+      let dir = (file as NSString).deletingLastPathComponent
+      resolvedFile = (file as NSString).lastPathComponent
+      resolvedSubdir = subdirectory.map { "\($0)/\(dir)" } ?? dir
+    } else {
+      resolvedFile = file
+      resolvedSubdir = subdirectory
+    }
+    guard let url = self.url(forResource: resolvedFile, withExtension: nil, subdirectory: resolvedSubdir) else {
       fatalError("Failed to locate \(file) in bundle.")
     }
 

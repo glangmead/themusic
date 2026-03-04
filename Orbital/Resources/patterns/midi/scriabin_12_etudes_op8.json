@@ -1,7 +1,7 @@
 {
   "name": "Scriabin 12 Etudes Op. 8",
   "midiTracks": {
-    "filename": "patterns/scriabin_12_etudes_op8.mid",
+    "filename": "patterns/midi/scriabin_12_etudes_op8.mid",
     "bpm": 10,
     "loop": true,
     "tracks": [

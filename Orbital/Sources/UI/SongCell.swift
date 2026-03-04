@@ -74,7 +74,7 @@ struct SongCell: View {
   let resourceManager = ResourceManager()
   let song = SongRef(
     name: "Aurora Borealis",
-    patternFileName: "aurora_arpeggio.json"
+    patternFileName: "table/aurora_arpeggio.json"
   )
   library.songs = [song]
   _ = library.playbackState(for: song, engine: engine)

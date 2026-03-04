@@ -454,7 +454,7 @@ struct TablePatternFormView: View {
 #Preview {
   let pattern = Bundle.main.decode(
     PatternSyntax.self,
-    from: "table_aurora.json",
+    from: "table/table_aurora.json",
     subdirectory: "patterns"
   )
   let table = pattern.tableTracks!
@@ -463,7 +463,7 @@ struct TablePatternFormView: View {
   }
   .environment(
     SongDocument(
-      song: SongRef(name: "Aurora Borealis", patternFileName: "table_aurora.json")
+      song: SongRef(name: "Aurora Borealis", patternFileName: "table/table_aurora.json")
     )
   )
   .environment(ResourceManager())

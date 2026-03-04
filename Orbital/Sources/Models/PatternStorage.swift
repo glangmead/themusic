@@ -20,9 +20,8 @@ enum PatternStorage {
 
   /// Save a PatternSyntax as JSON.
   @MainActor static func save(_ pattern: PatternSyntax, filename: String) {
-    let dir = patternsDir
-    try? FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
-    let url = dir.appendingPathComponent(filename)
+    let url = patternsDir.appendingPathComponent(filename)
+    try? FileManager.default.createDirectory(at: url.deletingLastPathComponent(), withIntermediateDirectories: true)
     let encoder = JSONEncoder()
     encoder.outputFormatting = [.prettyPrinted, .sortedKeys]
     guard let data = try? encoder.encode(pattern) else { return }

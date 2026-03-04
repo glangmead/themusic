@@ -22,9 +22,12 @@ enum NoteGeneratorSyntax {
       print("MidiFile not found at \(url.path)")
       return nil
     }
-    let name = (filename as NSString).deletingPathExtension
+    let fullname = (filename as NSString).deletingPathExtension
     let ext = (filename as NSString).pathExtension
-    guard let url = Bundle.main.url(forResource: name, withExtension: ext) else {
+    let name = (fullname as NSString).lastPathComponent
+    let subpath = (fullname as NSString).deletingLastPathComponent
+    let subdir: String? = subpath.isEmpty ? nil : subpath
+    guard let url = Bundle.main.url(forResource: name, withExtension: ext, subdirectory: subdir) else {
       print("MidiFile not found in bundle: \(filename)")
       return nil
     }

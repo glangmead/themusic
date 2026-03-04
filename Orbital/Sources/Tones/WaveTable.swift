@@ -106,6 +106,15 @@ enum WavetableLibrary {
     userTables[name] = fromFile(url: url)
   }
 
+  // Pre-loads every curated wavetable into userTables.
+  // Call once at app startup so makeRandomPadPreset can freely pick any curated table name.
+  @MainActor
+  static func loadAllCuratedTables() {
+    for name in curatedTableNames {
+      loadCuratedTable(name)
+    }
+  }
+
   // Number of 2048-sample wavetable frames a WAV file contains.
   // Opens the file metadata only — does not decode audio.
   static func frameCount(url: URL) -> Int {

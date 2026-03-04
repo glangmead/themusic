@@ -1,7 +1,7 @@
 {
   "name": "Debussy La Cathedrale Engloutie",
   "midiTracks": {
-    "filename": "patterns/debussy-la-cathedrale-engloutie.mid",
+    "filename": "patterns/midi/debussy-la-cathedrale-engloutie.mid",
     "loop": true,
     "bpm": 30,
     "tracks": [
