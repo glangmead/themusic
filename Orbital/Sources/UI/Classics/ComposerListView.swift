@@ -16,9 +16,9 @@ struct ComposerListView: View {
       } label: {
         ComposerRow(composer: composer)
       }
-      .task {
-        await catalog.loadWorkGroupsIfNeeded(for: composer)
-      }
+    }
+    .task {
+      await catalog.preloadAllWorkGroups()
     }
     .navigationTitle("Composers")
     .toolbar {
@@ -44,23 +44,35 @@ struct ComposerListView: View {
 private struct ComposerRow: View {
   @Environment(ClassicsCatalogLibrary.self) private var catalog
   let composer: ComposerEntry
+  @ScaledMetric(relativeTo: .headline) private var imageSize: CGFloat = 50
 
   var body: some View {
-    VStack(alignment: .leading, spacing: 2) {
-      Text(composer.name)
-      HStack(spacing: 6) {
-        if !composer.lifespan.isEmpty {
-          Text(composer.lifespan)
-            .font(.caption)
-            .foregroundStyle(.secondary)
-        }
-        if let counts = catalog.counts(for: composer.slug) {
-          Text("·")
-            .font(.caption)
-            .foregroundStyle(.secondary)
-          Text("\(counts.playableGroups) works · \(counts.totalRenditions) renditions")
-            .font(.caption)
-            .foregroundStyle(.secondary)
+    HStack(spacing: 12) {
+      if let urlString = composer.portraitUrl, let url = URL(string: urlString) {
+        FaceAwarePortraitView(url: url, frameHeight: imageSize)
+          .frame(width: imageSize, height: imageSize)
+          .clipShape(.rect(cornerRadius: 8))
+      } else {
+        RoundedRectangle(cornerRadius: 8)
+          .fill(Color.secondary.opacity(0.2))
+          .frame(width: imageSize, height: imageSize)
+      }
+      VStack(alignment: .leading, spacing: 2) {
+        Text(composer.name)
+        HStack(spacing: 6) {
+          if !composer.lifespan.isEmpty {
+            Text(composer.lifespan)
+              .font(.caption)
+              .foregroundStyle(.secondary)
+          }
+          if let counts = catalog.counts(for: composer.slug) {
+            Text("·")
+              .font(.caption)
+              .foregroundStyle(.secondary)
+            Text("\(counts.playableGroups) works · \(counts.totalRenditions) renditions")
+              .font(.caption)
+              .foregroundStyle(.secondary)
+          }
         }
       }
     }

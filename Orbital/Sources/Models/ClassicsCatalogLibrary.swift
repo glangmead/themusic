@@ -64,6 +64,24 @@ class ClassicsCatalogLibrary {
     composerCountsCache[slug]
   }
 
+  /// Preload work groups for all composers, updating counts incrementally.
+  /// Safe to call repeatedly; no-op if already loaded.
+  func preloadAllWorkGroups() async {
+    let slugs = composers.map(\.slug).filter { workGroupsCache[$0] == nil }
+    guard !slugs.isEmpty else { return }
+
+    for slug in slugs {
+      let groups = await Task.detached(priority: .userInitiated) {
+        ClassicsCatalogLibrary.computeWorkGroups(composerSlug: slug)
+      }.value
+      workGroupsCache[slug] = groups
+      composerCountsCache[slug] = ComposerCounts(
+        playableGroups: groups.count,
+        totalRenditions: groups.reduce(0) { $0 + $1.renditions.count }
+      )
+    }
+  }
+
   /// Load and cache work groups for a composer. Safe to call repeatedly; no-op if already cached.
   func loadWorkGroupsIfNeeded(for composer: ComposerEntry) async {
     let slug = composer.slug

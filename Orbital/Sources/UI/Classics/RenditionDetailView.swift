@@ -33,7 +33,7 @@ struct RenditionDetailView: View {
       Section("Playback") {
         LabeledContent("BPM") {
           HStack {
-            Slider(value: $bpm, in: 15...120, step: 5)
+            Slider(value: $bpm, in: 1...120, step: 1)
               .disabled(isPlaying)
             Text("\(Int(bpm))")
               .monospacedDigit()

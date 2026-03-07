@@ -10,12 +10,40 @@
 import SwiftUI
 import Vision
 
+// MARK: - Shared portrait cache
+
+/// Caches downloaded images and their face-center Y fraction so each URL
+/// is only fetched and analysed once across the lifetime of the app.
+private final class PortraitImageCache: Sendable {
+  static let shared = PortraitImageCache()
+
+  struct Entry: Sendable {
+    let image: UIImage
+    let faceFractionY: CGFloat?
+  }
+
+  private let cache = NSCache<NSURL, Box>()
+
+  // NSCache requires class values
+  private final class Box: Sendable {
+    let entry: Entry
+    init(_ entry: Entry) { self.entry = entry }
+  }
+
+  func get(_ url: URL) -> Entry? {
+    cache.object(forKey: url as NSURL)?.entry
+  }
+
+  func set(_ entry: Entry, for url: URL) {
+    cache.setObject(Box(entry), forKey: url as NSURL)
+  }
+}
+
 struct FaceAwarePortraitView: View {
   let url: URL
   var frameHeight: CGFloat = 250
 
   @State private var uiImage: UIImage?
-  /// Face center Y normalized to image height (0 = top, 1 = bottom). Nil until detection completes.
   @State private var faceFractionY: CGFloat?
 
   var body: some View {
@@ -36,7 +64,7 @@ struct FaceAwarePortraitView: View {
         .clipped()
     }
     .frame(height: frameHeight)
-    .clipShape(RoundedRectangle(cornerRadius: 12))
+    .clipShape(.rect(cornerRadius: 12))
     .task(id: url) {
       await loadAndDetect()
     }
@@ -45,38 +73,60 @@ struct FaceAwarePortraitView: View {
   // MARK: - Offset computation
 
   private func computeOffset(displayHeight: CGFloat) -> CGFloat {
-    // Place the face center at 40% down the frame. Falls back to the upper quarter of the image.
     let facePx = (faceFractionY ?? 0.25) * displayHeight
     let targetY = frameHeight * 0.4
     let raw = targetY - facePx
-    // Clamp: image top can't go below frame top (offset ≤ 0);
-    //        image bottom can't go above frame bottom (offset ≥ frameHeight - displayHeight).
     return min(0, max(frameHeight - displayHeight, raw))
   }
 
   // MARK: - Loading & detection
 
   private func loadAndDetect() async {
-    guard let (data, _) = try? await URLSession.shared.data(from: url),
-          let image = UIImage(data: data)
-    else { return }
+    // Check cache first
+    if let cached = PortraitImageCache.shared.get(url) {
+      uiImage = cached.image
+      faceFractionY = cached.faceFractionY
+      return
+    }
 
-    uiImage = image
-    faceFractionY = await detectFaceCenterY(in: image)
+    // Detach the download so SwiftUI task cancellation doesn't abort it
+    guard let entry = await Task.detached(priority: .userInitiated) { [url] () -> PortraitImageCache.Entry? in
+      let data: Data
+      do {
+        let (d, response) = try await URLSession.shared.data(from: url)
+        if let http = response as? HTTPURLResponse, http.statusCode != 200 {
+          print("[Portrait] HTTP \(http.statusCode) for \(url.absoluteString)")
+          return nil
+        }
+        data = d
+      } catch {
+        print("[Portrait] Network error for \(url.absoluteString): \(error.localizedDescription)")
+        return nil
+      }
+      guard let image = UIImage(data: data) else {
+        print("[Portrait] Could not decode image (\(data.count) bytes) from \(url.absoluteString)")
+        return nil
+      }
+      let faceY = Self.detectFaceCenterYSync(in: image)
+      let entry = PortraitImageCache.Entry(image: image, faceFractionY: faceY)
+      PortraitImageCache.shared.set(entry, for: url)
+      return entry
+    }.value else { return }
+
+    uiImage = entry.image
+    faceFractionY = entry.faceFractionY
   }
 
-  private func detectFaceCenterY(in image: UIImage) async -> CGFloat? {
+  private static func detectFaceCenterYSync(in image: UIImage) -> CGFloat? {
     guard let cgImage = image.cgImage else { return nil }
-    return await Task.detached(priority: .userInitiated) {
-      let request = VNDetectFaceRectanglesRequest()
-      let handler = VNImageRequestHandler(cgImage: cgImage, options: [:])
-      try? handler.perform([request])
-      guard let face = request.results?.first else { return nil }
-      // VNFaceObservation.boundingBox uses bottom-left origin (Vision flips Y vs UIKit).
-      // Convert face center midY to UIKit coords where 0 = top of image.
-      return CGFloat(1.0 - face.boundingBox.midY)
-    }.value
+    let request = VNDetectFaceRectanglesRequest()
+    let handler = VNImageRequestHandler(cgImage: cgImage, options: [:])
+    try? handler.perform([request])
+    guard let face = request.results?.first else { return nil }
+    return CGFloat(1.0 - face.boundingBox.midY)
   }
+
+
 }
 
 #Preview {
