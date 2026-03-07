@@ -19,9 +19,10 @@ struct OrbitalView: View {
     NavigationStack {
       Group {
         if resourceManager.isReady {
-          List {
+          List(selection: $selectedSongID) {
             ForEach(library.songs) { song in
-              SongCell(song: song, selectedSongID: $selectedSongID)
+              SongCell(song: song)
+                .tag(song.id)
                 .swipeActions(edge: .trailing, allowsFullSwipe: false) {
                   Button(role: .destructive) {
                     songToDelete = song
@@ -47,6 +48,9 @@ struct OrbitalView: View {
           ) {
             Button("Delete", role: .destructive) {
               if let song = songToDelete {
+                if selectedSongID == song.id {
+                  selectedSongID = nil
+                }
                 library.deleteSong(song)
               }
             }
@@ -57,10 +61,10 @@ struct OrbitalView: View {
             isShowingDeleteConfirmation = songToDelete != nil
           }
         } else {
-          ProgressView("Loading songs…")
+          ProgressView("Loading songs...")
         }
       }
-      .navigationTitle("Orbital")
+      .navigationTitle("Songs")
       .navigationDestination(item: $selectedSongID) { songID in
         if let song = library.songs.first(where: { $0.id == songID }) {
           let state = library.playbackState(for: song, engine: engine, resourceBaseURL: resourceManager.resourceBaseURL)
@@ -69,7 +73,6 @@ struct OrbitalView: View {
         }
       }
     }
-
   }
 }
 
@@ -88,7 +91,6 @@ struct OrbitalView: View {
     )
   ]
   resourceManager.isReady = true
-  // Pre-create playback states so navigating to SongSettingsView works in Preview
   for song in library.songs {
     _ = library.playbackState(for: song, engine: engine)
   }

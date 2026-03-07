@@ -6,9 +6,17 @@
 import SwiftUI
 
 struct ClassicsBrowserView: View {
+  @Environment(ClassicsCatalogLibrary.self) private var catalog
+  @State private var selectedComposerID: ComposerEntry.ID?
+
   var body: some View {
     NavigationStack {
-      ComposerListView()
+      ComposerListView(selectedComposerID: $selectedComposerID)
+        .navigationDestination(item: $selectedComposerID) { composerID in
+          if let composer = catalog.sortedComposers.first(where: { $0.id == composerID }) {
+            ComposerDetailView(composer: composer)
+          }
+        }
     }
   }
 }

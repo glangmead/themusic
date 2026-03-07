@@ -12,7 +12,6 @@ struct SongCell: View {
   @Environment(SongLibrary.self) private var library
   @Environment(ResourceManager.self) private var resourceManager
   let song: SongRef
-  @Binding var selectedSongID: SongRef.ID?
 
   @State private var playbackState: SongDocument?
   @State private var isShowingLoadError = false
@@ -23,28 +22,29 @@ struct SongCell: View {
 
   var body: some View {
     HStack {
-      // Tappable title area for play/pause
       Button {
         library.play(song, engine: engine, resourceBaseURL: resourceManager.resourceBaseURL)
       } label: {
-        HStack {
-          Text(song.name)
-          Spacer()
-          if isLoading {
-            ProgressView()
-          } else {
-            Image(systemName: isPaused ? "pause.fill" : "waveform")
-              .foregroundStyle(.secondary)
-              .opacity(isPlaying ? 1 : 0)
-          }
+        if isLoading {
+          ProgressView()
+            .frame(width: 24, height: 24)
+        } else {
+          Image(systemName: isPlaying && !isPaused ? "pause.fill" : "play.fill")
+            .foregroundStyle(isPlaying ? .primary : .secondary)
         }
-        .contentShape(Rectangle())
       }
-      .buttonStyle(.plain)
-
-      // Single settings button
-      Button("Settings", systemImage: "slider.horizontal.3") { selectedSongID = song.id }
       .buttonStyle(.borderless)
+      .accessibilityLabel(isPlaying && !isPaused ? "Pause" : "Play")
+
+      Text(song.name)
+
+      Spacer()
+
+      if isPlaying {
+        Image(systemName: "waveform")
+          .foregroundStyle(.secondary)
+          .imageScale(.small)
+      }
     }
     .task {
       if playbackState == nil {
@@ -76,7 +76,7 @@ struct SongCell: View {
   _ = library.playbackState(for: song, engine: engine)
   return NavigationStack {
     List {
-      SongCell(song: song, selectedSongID: .constant(nil))
+      SongCell(song: song)
     }
     .environment(engine)
     .environment(library)

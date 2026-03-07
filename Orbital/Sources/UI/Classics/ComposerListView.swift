@@ -7,15 +7,13 @@ import SwiftUI
 
 struct ComposerListView: View {
   @Environment(ClassicsCatalogLibrary.self) private var catalog
+  @Binding var selectedComposerID: ComposerEntry.ID?
 
   var body: some View {
     @Bindable var catalog = catalog
-    List(catalog.sortedComposers) { composer in
-      NavigationLink {
-        ComposerDetailView(composer: composer)
-      } label: {
-        ComposerRow(composer: composer)
-      }
+    List(catalog.sortedComposers, selection: $selectedComposerID) { composer in
+      ComposerRow(composer: composer)
+        .tag(composer.id)
     }
     .task {
       await catalog.preloadAllWorkGroups()
@@ -41,7 +39,7 @@ struct ComposerListView: View {
 
 // MARK: - ComposerRow
 
-private struct ComposerRow: View {
+struct ComposerRow: View {
   @Environment(ClassicsCatalogLibrary.self) private var catalog
   let composer: ComposerEntry
   @ScaledMetric(relativeTo: .headline) private var imageSize: CGFloat = 50
@@ -81,7 +79,7 @@ private struct ComposerRow: View {
 
 #Preview {
   NavigationStack {
-    ComposerListView()
+    ComposerListView(selectedComposerID: .constant(nil))
   }
   .environment(ClassicsCatalogLibrary())
   .environment(SpatialAudioEngine())

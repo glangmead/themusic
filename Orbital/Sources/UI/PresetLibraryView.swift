@@ -6,7 +6,7 @@
 import SwiftUI
 
 /// A lightweight reference to a preset file on disk.
-private struct PresetRef: Identifiable {
+struct PresetRef: Identifiable {
   var id: String { fileName }
   let fileName: String
   let spec: PresetSyntax
@@ -15,43 +15,46 @@ private struct PresetRef: Identifiable {
 struct PresetLibraryView: View {
   @Environment(ResourceManager.self) private var resourceManager
   @State private var presets: [PresetRef] = []
+  @State private var selectedPresetID: String?
+
+  private static let wavetableBrowserID = "__wavetable_browser__"
 
   var body: some View {
     NavigationStack {
       Group {
         if resourceManager.isReady {
-          List {
+          List(selection: $selectedPresetID) {
             Section {
-              NavigationLink("Wavetable Browser", value: "__wavetable_browser__")
+              Text("Wavetable Browser")
+                .tag(Self.wavetableBrowserID)
             }
             ForEach(presets) { preset in
-              NavigationLink(value: preset.fileName) {
-                Text(preset.spec.name)
-              }
-              .swipeActions(edge: .leading, allowsFullSwipe: true) {
-                Button {
-                  duplicatePreset(preset)
-                } label: {
-                  Label("Duplicate", systemImage: "doc.on.doc")
+              Text(preset.spec.name)
+                .tag(preset.fileName)
+                .swipeActions(edge: .leading, allowsFullSwipe: true) {
+                  Button {
+                    duplicatePreset(preset)
+                  } label: {
+                    Label("Duplicate", systemImage: "doc.on.doc")
+                  }
+                  .tint(.blue)
                 }
-                .tint(.blue)
-              }
             }
           }
         } else {
-          ProgressView("Loading sounds…")
+          ProgressView("Loading sounds...")
         }
       }
       .navigationTitle("Sounds")
-      .navigationDestination(for: String.self) { value in
-        if value == "__wavetable_browser__" {
+      .task { loadPresets() }
+      .navigationDestination(item: $selectedPresetID) { presetID in
+        if presetID == Self.wavetableBrowserID {
           WavetableBrowserView()
-        } else if let preset = presets.first(where: { $0.fileName == value }) {
+        } else if let preset = presets.first(where: { $0.fileName == presetID }) {
           PresetFormView(presetSpec: preset.spec)
             .navigationTitle(preset.spec.name)
         }
       }
-      .onAppear { loadPresets() }
     }
   }
 
