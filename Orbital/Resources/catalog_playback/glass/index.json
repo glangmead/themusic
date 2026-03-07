@@ -1,0 +1,61 @@
+{
+  "composer_name": "Philip Glass",
+  "name_last_first": "Glass, Philip",
+  "slug": "glass",
+  "wiki_page": "https://en.wikipedia.org/wiki/Philip_Glass",
+  "apple_music_playlist": "https://music.apple.com/mk/playlist/pl.bee9f909bae941e782b48f635f3ec8ad",
+  "era": "Contemporary",
+  "dates": "1937 –",
+  "nationality": "USA",
+  "notable": true,
+  "works": [
+    {
+      "title": "Candyman Music Box Theme",
+      "musicxml": "musicxml/Candyman_Music_Box_Theme.mxl",
+      "midi": "midi/Candyman_Music_Box_Theme.mid",
+      "time_signature": "4/4",
+      "instruments": [
+        "Piano",
+        "Ukulele"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 23,
+        "n_views": 1345,
+        "duration_seconds": 58.66666666513481,
+        "n_notes": 247,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "philipglas-ukulele-soundtrack-candyman-movietheme",
+        "musescore_url": "https://musescore.com/peternoster/scores/2828846",
+        "musescore_duration": "00:59"
+      },
+      "instruments_gm": [
+        "Acoustic Grand Piano",
+        "Acoustic Guitar (nylon)"
+      ],
+      "tempo_bpm": 90,
+      "n_measures": 22,
+      "n_parts": 3,
+      "n_notes": 247,
+      "notes_per_second": 4.2,
+      "apple_music_search_query": "Glass Candyman Music Box Theme",
+      "parent_work_title": "Title",
+      "year_composed": 1992,
+      "wikidata_id": "Q1033108",
+      "wikidata_title": "Candyman",
+      "wikidata_match_method": "title_substring",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Glass%20Candyman%20Music%20Box%20Theme",
+      "display_title": "Candyman"
+    }
+  ],
+  "birth_year": 1937,
+  "wikipedia_extract": "Philip Glass (born January 31, 1937) is an American composer and pianist. He is widely regarded as one of the most influential composers of the late 20th century. Glass' work has been associated with minimalism, being built up from repetitive phrases and shifting layers.",
+  "wikipedia_compositions_url": "https://en.wikipedia.org/wiki/List_of_compositions_by_Philip_Glass",
+  "wikidata_id": "Q189729",
+  "apple_music_artist_id": "791154",
+  "apple_music_classical_url": "https://classical.music.apple.com/us/artist/791154"
+}

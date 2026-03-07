@@ -1,0 +1,153 @@
+{
+  "composer_slug": "boccherini",
+  "composer_qid": "Q189766",
+  "work_count": 22,
+  "midi_file_count": 1,
+  "works": [
+    {
+      "qid": "Q24951606",
+      "title": "6 String Quartets, G.242-247 (Op.58)",
+      "imslp_id": "6_String_Quartets,_G.242-247_(Op.58)_(Boccherini,_Luigi)",
+      "pdf_filename": "PMLP195953-Boccherini_-_String_Quartets_G242-244__Op58_No1-3__cello.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q24951732",
+      "title": "6 String Sextets, op. 23",
+      "imslp_id": "6_String_Sextets,_G.454-459_(Op.23)_(Boccherini,_Luigi)",
+      "pdf_filename": "PMLP153747-SixsestetticoncertantiperdueviolinidueviolaeduevioloncellioperaXXIVMsicanotada.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q28497756",
+      "title": "6 concerti a grande orchestra, op. 12",
+      "imslp_id": "6_Symphonies,_G.503-508_(Boccherini,_Luigi)",
+      "pdf_filename": "PMLP162002-Boccherini_-_Symphony_Op12_No3_FS_rsl.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "movements": [
+        {
+          "qid": "Q3507614"
+        }
+      ]
+    },
+    {
+      "qid": "Q24951614",
+      "title": "6 string quartets, Op. 32"
+    },
+    {
+      "qid": "Q28497759",
+      "title": "Boccherini, Luigi, 1743-1805. Symphonies, G. 509-514"
+    },
+    {
+      "qid": "Q28497775",
+      "title": "Boccherini, Luigi, 1743-1805. Symphonies, G. 515-518"
+    },
+    {
+      "qid": "Q5058303",
+      "title": "Cello Concerto No. 2",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/luigi-boccherini-1743-pp51",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cello_Concerto_No._2_(Boccherini)",
+      "wikipedia_extract": "Cello Concerto No. 2 in A major, G. 475 is a cello concerto by Luigi Boccherini. It has been arranged and reorchestrated several times. Ottorino Respighi reorchestrated the Concerto, and changed the \"Tutti\" sections; adding winds and brass. Gaspar Cassadó rewrote the Concerto altogether as a Guitar Concerto for his colleague Andrés Segovia. Cassadó's arrangement features a string quartet, like a Concerto Grosso, and added trumpet fanfares.",
+      "pageviews_yearly": 1314
+    },
+    {
+      "qid": "Q5058309",
+      "title": "Cello Concerto No. 9",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/luigi-boccherini-1743-pp58",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cello_Concerto_No._9_(Boccherini)",
+      "wikipedia_extract": "Luigi Boccherini's Cello Concerto No. 9 in B-flat Major, G. 482, was written in either the late 1760s or early 1770s. Boccherini, a talented cellist, composed twelve concertos for his instrument. In 1895 German cellist Friedrich Grützmacher chose this concerto to be arranged to fit the style of a Romantic virtuoso concerto, and in this form, widely heard, it bears only a tenuous resemblance to the original manuscript.",
+      "pageviews_yearly": 6620
+    },
+    {
+      "qid": "Q28497766",
+      "title": "L'Uccelleria"
+    },
+    {
+      "qid": "Q16761638",
+      "title": "La Clementina",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/luigi-boccherini-1743-pp1",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Clementina_(zarzuela)",
+      "wikipedia_extract": "Clementina, although wrongly and popularly known as La Clementina, is a zarzuela in two acts by Luigi Boccherini. The Spanish-language libretto was by Ramón de la Cruz. It premiered on 3 January 1787 at the Palace Puerta de la Vega, Madrid.",
+      "pageviews_yearly": 2785
+    },
+    {
+      "qid": "Q2850440",
+      "title": "Musica notturna delle strade di Madrid",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/luigi-boccherini-1743-pp142",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Musica_notturna_delle_strade_di_Madrid",
+      "wikipedia_extract": "Musica notturna delle strade di Madrid, Opus 30 No. 6, is a quintettino (quintet) for stringed instruments, by Luigi Boccherini, the Italian composer in service to the Spanish Court from 1761 to 1805.",
+      "pageviews_yearly": 16845
+    },
+    {
+      "qid": "Q109409598",
+      "title": "Quintet no. 4 for Guitar and Strings in D major, G. 448 \"Fandango\"",
+      "imslp_id": "Guitar_Quintet_in_D_major,_G.448_(Boccherini,_Luigi)",
+      "pdf_filename": "PMLP494544-Boccherini_Quintet_1_D_major_Cello.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q24951676",
+      "title": "Six quintettes à cordes, Op. 29"
+    },
+    {
+      "qid": "Q28497757",
+      "title": "Six symphonies, Op. 21"
+    },
+    {
+      "qid": "Q24951601",
+      "title": "Six trios, Op. 14"
+    },
+    {
+      "qid": "Q24951598",
+      "title": "Six trios, Op. 34"
+    },
+    {
+      "qid": "Q3495364",
+      "title": "Stabat Mater",
+      "imslp_id": "Stabat_Mater,_G.532_(Boccherini,_Luigi)",
+      "pdf_filename": "PMLP162987-BOCCHERINI__Luigi._Stabat_Mater_a_3._Sieber_1805.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/luigi-boccherini-1743-pp632",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stabat_Mater_(Boccherini)",
+      "wikipedia_extract": "The Stabat Mater is a musical setting of the Stabat Mater sequence, composed by Luigi Boccherini in 1781 and revised in 1800.",
+      "pageviews_yearly": 2013
+    },
+    {
+      "qid": "Q109409600",
+      "title": "String Quartet in D major, G. 165, op. 8 no. 1"
+    },
+    {
+      "qid": "Q7623961",
+      "title": "String Quintet in E major",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Menuett_and_Trio.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q3507614",
+      "title": "Symphony Op. 12 No. 4 (Boccherini)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_Op._12_No._4_(Boccherini)",
+      "wikipedia_extract": "Luigi Boccherini's Symphony Op.12 No.4 in D minor is a symphony in three movements. Also known as La casa del Diavolo , it was composed in 1771.",
+      "pageviews_yearly": 2020
+    },
+    {
+      "qid": "Q11374076",
+      "title": "Symphony Op. 41 in C minor (Boccherini)"
+    },
+    {
+      "qid": "Q17462179",
+      "title": "Viola Sonata in C minor",
+      "imslp_id": "Viola_Sonata_in_C_minor,_G.18_(Boccherini,_Luigi)",
+      "pdf_filename": "PMLP122679-Boccherini_Viola_e_Basso_Sonata.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    }
+  ]
+}

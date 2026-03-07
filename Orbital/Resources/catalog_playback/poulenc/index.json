@@ -1,0 +1,269 @@
+{
+  "composer_name": "Francis Poulenc",
+  "name_last_first": "Poulenc, Francis",
+  "slug": "poulenc",
+  "wiki_page": "https://en.wikipedia.org/wiki/Francis_Poulenc",
+  "apple_music_playlist": "https://music.apple.com/us/playlist/francis-poulenc-essentials/pl.a8caa4da50fd420d9851f8f9b3cfc562",
+  "era": "Modern",
+  "dates": "1899 – 1963",
+  "nationality": "FRA",
+  "notable": true,
+  "works": [
+    {
+      "title": "Francis Poulenc - Banalités 5- Sanglots",
+      "musicxml": "musicxml/Francis_Poulenc_-_Banalites_5-_Sanglots.mxl",
+      "midi": "midi/Francis_Poulenc_-_Banalites_5-_Sanglots.mid",
+      "time_signature": "3/4",
+      "instruments": [
+        "Chant",
+        "Piano"
+      ],
+      "tempo_markings": [
+        "Très calme ( = 66)",
+        "Très calme ( =66)",
+        "Animer un peu mais très progresssivement",
+        "T",
+        "Animer encore un peu",
+        "Céder à peine",
+        "Tempo I°",
+        "Céder un peu",
+        "Strictement au mouvt"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.54,
+        "n_favorites": 3,
+        "n_views": 409,
+        "duration_seconds": 234.87649679325995,
+        "n_notes": 1531,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/4887176/scores/5490282",
+        "musescore_duration": "03:31"
+      },
+      "key": "A major",
+      "key_changes": [
+        "A major",
+        "G♭ major"
+      ],
+      "instruments_gm": [
+        "Oboe",
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 66,
+      "n_measures": 77,
+      "n_parts": 2,
+      "n_notes": 1503,
+      "notes_per_second": 6.4,
+      "apple_music_search_query": "Poulenc A major Francis Poulenc - Banalités 5- Sanglots",
+      "parent_work_title": "I. Chanson d'Orkenise",
+      "lyricist": "Guillaume Apollinaire",
+      "wikidata_id": "Q15973422",
+      "wikidata_title": "Banalités",
+      "musicbrainz_id": "d80bb6bc-3207-40f9-901f-9ec8585c6b1a",
+      "imslp_id": "Banalités,_FP_107_(Poulenc,_Francis)",
+      "wikidata_match_method": "title_substring",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Poulenc%20-%20Banalit%C3%A9s%205-%20Sanglots",
+      "display_title": "Banalités"
+    },
+    {
+      "title": "Poulenc Sextet Allegro Vivace I.",
+      "musicxml": "musicxml/Poulenc_Sextet_Allegro_Vivace_I.mxl",
+      "midi": "midi/Poulenc_Sextet_Allegro_Vivace_I.mid",
+      "time_signature": "4/4",
+      "instruments": [
+        "Flute",
+        "Oboe",
+        "Clarinet (B♭)",
+        "Bassoon",
+        "Horn (F)",
+        "Piano"
+      ],
+      "tempo_markings": [
+        "Trés Vite et emporté ♩ = 138",
+        "Presser tres peu",
+        "Presser un peu",
+        "Sans ralentir",
+        "Subitement, presque le double plus lent sans trainer",
+        "Tempo I. subito",
+        "Emporté et très rythmé"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.93,
+        "n_favorites": 40,
+        "n_views": 1852,
+        "duration_seconds": 626.0011482820136,
+        "n_notes": 6951,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "sextet-atonal-flute-oboe-clarinet-bassoon-frenchhorn-piano-poulenc",
+        "musescore_url": "https://musescore.com/user/1397281/scores/3783541",
+        "musescore_duration": "07:40"
+      },
+      "instruments_gm": [
+        "Flute",
+        "Oboe",
+        "Clarinet",
+        "Bassoon",
+        "French Horn",
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 138,
+      "n_measures": 250,
+      "n_parts": 6,
+      "n_notes": 6761,
+      "notes_per_second": 10.8,
+      "apple_music_search_query": "Poulenc Poulenc Sextet Allegro Vivace I.",
+      "parent_work_title": "Sextet",
+      "key": "C major",
+      "wikidata_id": "Q1995465",
+      "wikidata_title": "Sextet",
+      "musicbrainz_id": "f9ca8290-a9de-456d-9d2b-183204e9a1ec",
+      "imslp_id": "Sextet,_FP_100_(Poulenc,_Francis)",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Poulenc%20Sextet%20Allegro%20Vivace%20I.",
+      "display_title": "Sextet"
+    },
+    {
+      "title": "Poulenc Sextet Finale III.",
+      "musicxml": "musicxml/Poulenc_Sextet_Finale_III.mxl",
+      "midi": "midi/Poulenc_Sextet_Finale_III.mid",
+      "time_signature": "2/2",
+      "instruments": [
+        "Flute",
+        "Oboe",
+        "B♭ Clarinet",
+        "Bassoon",
+        "Horn in F",
+        "Piano"
+      ],
+      "tempo_markings": [
+        "Prestissimo 𝅗𝅥 = 116",
+        "♩ = ♩",
+        "Subito très lent ♩ = 60"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 11,
+        "n_views": 857,
+        "duration_seconds": 1021.8100005585547,
+        "n_notes": 4365,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": false,
+        "genres": "NA",
+        "tags": "sextet-atonal-flute-oboe-bassoon-clarinet-frenchhorn-piano-poulenc",
+        "musescore_url": "https://musescore.com/user/1397281/scores/3943786",
+        "musescore_duration": "05:26"
+      },
+      "instruments_gm": [
+        "Flute",
+        "Oboe",
+        "Clarinet",
+        "Bassoon",
+        "French Horn",
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 232,
+      "n_measures": 225,
+      "n_parts": 6,
+      "n_notes": 4103,
+      "notes_per_second": 4.0,
+      "apple_music_search_query": "Poulenc Poulenc Sextet Finale III.",
+      "parent_work_title": "III. Finale",
+      "key": "C major",
+      "wikidata_id": "Q1995465",
+      "wikidata_title": "Sextet",
+      "musicbrainz_id": "f9ca8290-a9de-456d-9d2b-183204e9a1ec",
+      "imslp_id": "Sextet,_FP_100_(Poulenc,_Francis)",
+      "wikidata_match_method": "title_tokens",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Poulenc%20Sextet%20Finale%20III.",
+      "display_title": "Sextet"
+    },
+    {
+      "title": "UN SOIR DE NEIGE Francis Poulenc",
+      "musicxml": "musicxml/UN_SOIR_DE_NEIGE_Francis_Poulenc.mxl",
+      "midi": "midi/UN_SOIR_DE_NEIGE_Francis_Poulenc.mid",
+      "time_signature": "3/4",
+      "instruments": [
+        "Sopranos",
+        "Altos",
+        "Tenors",
+        "Basses"
+      ],
+      "tempo_markings": [
+        "Modéré (sans lenteur)",
+        "Très moderé",
+        "Très lent et calme  = 52",
+        "Eclatant, modéré  = 69"
+      ],
+      "movements": [
+        {
+          "start_measure": 20,
+          "time_signature": "4/4"
+        },
+        {
+          "start_measure": 45,
+          "time_signature": "3/4"
+        },
+        {
+          "start_measure": 78,
+          "time_signature": "5/4"
+        }
+      ],
+      "is_multi_movement": true,
+      "pdmx": {
+        "rating": 4.3,
+        "n_favorites": 13,
+        "n_views": 411,
+        "duration_seconds": 296.72716664914816,
+        "n_notes": 1494,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/4887176/scores/5484461",
+        "musescore_duration": "05:17"
+      },
+      "key": "G major",
+      "key_changes": [
+        "G major",
+        "E♭ major",
+        "C major"
+      ],
+      "instruments_gm": [
+        "Choir Aahs"
+      ],
+      "tempo_bpm": 56,
+      "n_measures": 92,
+      "n_parts": 4,
+      "n_notes": 1437,
+      "notes_per_second": 4.8,
+      "apple_music_search_query": "Poulenc G major UN SOIR DE NEIGE Francis Poulenc",
+      "parent_work_title": "UN SOIR DE NEIGE",
+      "lyricist": "Paul ELUARD",
+      "wikidata_id": "Q130219802",
+      "wikidata_title": "Un soir de neige",
+      "musicbrainz_id": "43659bb8-aee3-4b79-bd96-9589e8596eb9",
+      "imslp_id": "Un_soir_de_neige,_FP_126_(Poulenc,_Francis)",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Poulenc%20UN%20SOIR%20DE%20NEIGE",
+      "display_title": "Un soir de neige"
+    }
+  ],
+  "birth_year": 1899,
+  "death_year": 1963,
+  "wikipedia_extract": "Francis Jean Marcel Poulenc (French: [fʁɑ̃sis ʒɑ̃ maʁsɛl pulɛ̃k]; 7 January 1899 – 30 January 1963) was a French composer and pianist. His compositions include songs, solo piano works, chamber music, choral pieces, operas, ballets, and orchestral concert music. Among the best-known are the piano suite Trois mouvements perpétuels (1919), the ballet Les biches (1923), the Concert champêtre (1928) for harpsichord and orchestra, the Organ Concerto (1938), the opera Dialogues des Carmélites (1957)...",
+  "wikipedia_compositions_url": "https://en.wikipedia.org/wiki/List_of_compositions_by_Francis_Poulenc",
+  "wikidata_id": "Q191408",
+  "apple_music_artist_id": "221524",
+  "apple_music_classical_url": "https://classical.music.apple.com/us/artist/221524"
+}

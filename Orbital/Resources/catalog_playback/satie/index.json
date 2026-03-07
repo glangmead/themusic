@@ -1,0 +1,1168 @@
+{
+  "composer_name": "Erik Satie",
+  "name_last_first": "Satie, Erik",
+  "slug": "satie",
+  "wiki_page": "https://en.wikipedia.org/wiki/Erik_Satie",
+  "apple_music_playlist": "https://music.apple.com/mk/playlist/pl.46ea308105314f3d8564d702f95d358f",
+  "era": "Impressionist",
+  "dates": "1866 – 1925",
+  "nationality": "FRA",
+  "notable": true,
+  "works": [
+    {
+      "title": "Gymnopédie No. 1",
+      "musicxml": "musicxml/Gymnopedie_1.mxl",
+      "midi": "midi/Gymnopedie_1.mid",
+      "time_signature": "3/4",
+      "instruments": [
+        "Piano"
+      ],
+      "tempo_markings": [
+        "Lent et douloureux"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 5,
+        "n_views": 87,
+        "duration_seconds": 459.6937221223301,
+        "n_notes": 523,
+        "complexity": "1",
+        "is_original": false,
+        "is_best_arrangement": false,
+        "genres": "NA",
+        "tags": "satie-piano-gymnopedie-gymnopedieno-gymnopedie",
+        "musescore_url": "https://musescore.com/user/28514095/scores/5245660",
+        "musescore_duration": "03:36"
+      },
+      "key": "D major",
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 54,
+      "n_measures": 47,
+      "n_parts": 1,
+      "n_notes": 509,
+      "notes_per_second": 1.1,
+      "apple_music_search_query": "Satie D major Gymnopédie No. 1",
+      "lyricist": "Éric Alfred Leslie Satie",
+      "wikidata_id": "Q66457334",
+      "wikidata_title": "Gymnopédie No. 1",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Satie%20Gymnop%C3%A9die%20No.%201",
+      "display_title": "Gymnopédie No. 1"
+    },
+    {
+      "title": "Gnossienne No. 3",
+      "musicxml": "musicxml/Gnossienne_No_3.mxl",
+      "midi": "midi/Gnossienne_No_3.mid",
+      "instruments": [
+        "Piano"
+      ],
+      "tempo_markings": [
+        "Lent"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 5,
+        "n_views": 186,
+        "duration_seconds": 431.99999998848,
+        "n_notes": 624,
+        "complexity": "2",
+        "is_original": false,
+        "is_best_arrangement": false,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/30572986/scores/6113924",
+        "musescore_duration": "03:39"
+      },
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 60,
+      "n_measures": 11,
+      "n_parts": 1,
+      "n_notes": 600,
+      "notes_per_second": 1.4,
+      "apple_music_search_query": "Satie Gnossienne No. 3",
+      "lyricist": "Éric Alfred Leslie Satie",
+      "wikidata_id": "Q110184980",
+      "wikidata_title": "Gnossienne #3",
+      "musicbrainz_id": "9b36f664-2c21-34ba-ae5c-08d44e89fee2",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Satie%20Gnossienne%20No.%203",
+      "display_title": "Gnossienne #3"
+    },
+    {
+      "title": "Erik Satie - Enfantillages Pittoresques - Berceuse",
+      "musicxml": "musicxml/Erik_Satie_-_Enfantillages_Pittoresques_-_Berceuse.mxl",
+      "midi": "midi/Erik_Satie_-_Enfantillages_Pittoresques_-_Berceuse.mid",
+      "form": "Berceuse",
+      "time_signature": "4/4",
+      "instruments": [
+        "Piano"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.5,
+        "n_favorites": 15,
+        "n_views": 517,
+        "duration_seconds": 63.499999998359584,
+        "n_notes": 255,
+        "complexity": "1",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "NA",
+        "tags": "satie-enfantillages-pittoresques-berceuse-beginner-piano-fingering-easy-lullaby",
+        "musescore_url": "https://musescore.com/user/32847892/scores/5747512",
+        "musescore_duration": "01:04"
+      },
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 120,
+      "n_measures": 32,
+      "n_parts": 1,
+      "n_notes": 255,
+      "notes_per_second": 4.0,
+      "apple_music_search_query": "Satie Erik Satie - Enfantillages Pittoresques - Berceuse",
+      "parent_work_title": "Berceuse",
+      "year_composed": 1914,
+      "wikidata_id": "Q10484120",
+      "wikidata_title": "Enfantillages pittoresques",
+      "musicbrainz_id": "50a3c781-e161-41d4-b501-c4b3614b7f47",
+      "imslp_id": "Enfantillages_pittoresques_(Satie,_Erik)",
+      "wikidata_match_method": "title_substring",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Satie%20-%20Enfantillages%20Pittoresques%20-%20Berceuse",
+      "display_title": "Enfantillages pittoresques"
+    },
+    {
+      "title": "Choses vues à droite et à gauche",
+      "musicxml": "musicxml/Choral_hypocrite.mxl",
+      "midi": "midi/Choral_hypocrite.mid",
+      "time_signature": "4/4",
+      "instruments": [
+        "Violine",
+        "Klavier"
+      ],
+      "tempo_markings": [
+        "Grave",
+        "Large"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 1,
+        "n_views": 100,
+        "duration_seconds": 54.19174761589905,
+        "n_notes": 136,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": false,
+        "genres": "classical",
+        "tags": "erik-satie",
+        "musescore_url": "https://musescore.com/user/30015827/scores/5733375",
+        "musescore_duration": "01:06"
+      },
+      "instruments_gm": [
+        "Violin",
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 43,
+      "n_measures": 10,
+      "n_parts": 2,
+      "n_notes": 130,
+      "notes_per_second": 2.4,
+      "apple_music_search_query": "Satie Choses vues à droite et à gauche",
+      "parent_work_title": "Choral hypocrite",
+      "year_composed": 1914,
+      "wikidata_id": "Q19892225",
+      "wikidata_title": "Choses vues à droite et à gauche",
+      "musicbrainz_id": "6c964736-d5c7-46f8-a51f-78722cc13654",
+      "imslp_id": "Choses_vues_à_droite_et_à_gauche_(Satie,_Erik)",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Satie%20Choses%20vues%20%C3%A0%20droite%20et%20%C3%A0%20gauche",
+      "display_title": "Choses vues à droite et à gauche"
+    },
+    {
+      "title": "Gnossienne No. 1",
+      "musicxml": "musicxml/Peio_092.mxl",
+      "midi": "midi/Peio_092.mid",
+      "instruments": [
+        "Piano"
+      ],
+      "tempo_markings": [
+        "Lent"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.77,
+        "n_favorites": 84,
+        "n_views": 777,
+        "duration_seconds": 190.58823528916608,
+        "n_notes": 871,
+        "complexity": "2",
+        "is_original": false,
+        "is_best_arrangement": false,
+        "genres": "classical",
+        "tags": "eriksatie-satie-piano-bilbaomusika",
+        "musescore_url": "https://musescore.com/user/34360391/scores/6024781",
+        "musescore_duration": "03:13"
+      },
+      "key": "A♭ major",
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 102,
+      "n_measures": 11,
+      "n_parts": 1,
+      "n_notes": 836,
+      "notes_per_second": 4.4,
+      "apple_music_search_query": "Satie A♭ major Gnossienne No. 1",
+      "lyricist": "Éric Alfred Leslie Satie",
+      "wikidata_id": "Q110184793",
+      "wikidata_title": "Gnossienne #1",
+      "musicbrainz_id": "eb07cf62-985a-3f73-9595-2c45b95e1004",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Satie%20Gnossienne%20No.%201",
+      "display_title": "Gnossienne #1"
+    },
+    {
+      "title": "Gnossienne No. 1",
+      "musicxml": "musicxml/Marta_09_2.mxl",
+      "midi": "midi/Marta_09_2.mid",
+      "instruments": [
+        "Piano"
+      ],
+      "tempo_markings": [
+        "Lent"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 1,
+        "n_views": 161,
+        "duration_seconds": 190.58823528916608,
+        "n_notes": 871,
+        "complexity": "2",
+        "is_original": false,
+        "is_best_arrangement": false,
+        "genres": "NA",
+        "tags": "eriksatie-satie-piano-bilbaomusika",
+        "musescore_url": "https://musescore.com/user/31909406/scores/5537947",
+        "musescore_duration": "03:13"
+      },
+      "key": "A♭ major",
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 102,
+      "n_measures": 11,
+      "n_parts": 1,
+      "n_notes": 836,
+      "notes_per_second": 4.4,
+      "apple_music_search_query": "Satie A♭ major Gnossienne No. 1",
+      "lyricist": "Éric Alfred Leslie Satie",
+      "wikidata_id": "Q110184793",
+      "wikidata_title": "Gnossienne #1",
+      "musicbrainz_id": "eb07cf62-985a-3f73-9595-2c45b95e1004",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Satie%20Gnossienne%20No.%201",
+      "display_title": "Gnossienne #1"
+    },
+    {
+      "title": "Gymnopédie No. 1 by Satie transposed to C arranged for lever harp",
+      "musicxml": "musicxml/Gymnopedie_No_1_by_Satie_transposed_to_C_arranged_for_lever_harp.mxl",
+      "midi": "midi/Gymnopedie_No_1_by_Satie_transposed_to_C_arranged_for_lever_harp.mid",
+      "time_signature": "3/4",
+      "instruments": [
+        "Piano"
+      ],
+      "tempo_markings": [
+        "Lent et douloureux",
+        "46",
+        "34"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.66,
+        "n_favorites": 117,
+        "n_views": 1939,
+        "duration_seconds": 156.750391871865,
+        "n_notes": 454,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": false,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/freb/scores/6360221",
+        "musescore_duration": "03"
+      },
+      "key": "C major",
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 54,
+      "n_measures": 78,
+      "n_parts": 1,
+      "n_notes": 454,
+      "notes_per_second": 2.9,
+      "apple_music_search_query": "Satie C major Gymnopédie No. 1 by Satie transposed to C arranged",
+      "parent_work_title": "Gymnopédie No. 1",
+      "lyricist": "Éric Alfred Leslie Satie",
+      "wikidata_id": "Q66457334",
+      "wikidata_title": "Gymnopédie No. 1",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Satie%20Gymnop%C3%A9die%20No.%201%20by%20transposed%20to%20C%20arranged%20for%20l",
+      "display_title": "Gymnopédie No. 1"
+    },
+    {
+      "title": "Gnossienne No. 1",
+      "musicxml": "musicxml/Cati_09_2.mxl",
+      "midi": "midi/Cati_09_2.mid",
+      "instruments": [
+        "Piano"
+      ],
+      "tempo_markings": [
+        "Lent"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 1,
+        "n_views": 59,
+        "duration_seconds": 190.58823528916608,
+        "n_notes": 871,
+        "complexity": "2",
+        "is_original": false,
+        "is_best_arrangement": false,
+        "genres": "NA",
+        "tags": "eriksatie-satie-piano",
+        "musescore_url": "https://musescore.com/user/32043503/scores/5556090",
+        "musescore_duration": "03:13"
+      },
+      "key": "A♭ major",
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 102,
+      "n_measures": 11,
+      "n_parts": 1,
+      "n_notes": 836,
+      "notes_per_second": 4.4,
+      "apple_music_search_query": "Satie A♭ major Gnossienne No. 1",
+      "lyricist": "Éric Alfred Leslie Satie",
+      "wikidata_id": "Q110184793",
+      "wikidata_title": "Gnossienne #1",
+      "musicbrainz_id": "eb07cf62-985a-3f73-9595-2c45b95e1004",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Satie%20Gnossienne%20No.%201",
+      "display_title": "Gnossienne #1"
+    },
+    {
+      "title": "Je Te Veux (for Cello Trio)",
+      "musicxml": "musicxml/Je_Te_Veux_for_Cello_Trio.mxl",
+      "midi": "midi/Je_Te_Veux_for_Cello_Trio.mid",
+      "form": "Trio",
+      "time_signature": "3/4",
+      "instruments": [
+        "Violoncello"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.81,
+        "n_favorites": 44,
+        "n_views": 910,
+        "duration_seconds": 362.2148024404037,
+        "n_notes": 1976,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "satie-jeteveux-cello-trio-cellotrio-eriksatie",
+        "musescore_url": "https://musescore.com/user/26225236/scores/5962769",
+        "musescore_duration": "06:03"
+      },
+      "key": "G major",
+      "key_changes": [
+        "G major",
+        "C major",
+        "F major",
+        "B♭ major"
+      ],
+      "instruments_gm": [
+        "Cello"
+      ],
+      "tempo_bpm": 120,
+      "n_measures": 267,
+      "n_parts": 3,
+      "n_notes": 1925,
+      "notes_per_second": 5.3,
+      "apple_music_search_query": "Satie G major Je Te Veux (for Cello Trio)",
+      "parent_work_title": "Je Tev Veux",
+      "year_composed": 1902,
+      "wikidata_id": "Q3163591",
+      "wikidata_title": "Je te veux",
+      "musicbrainz_id": "1fe5f1b0-c0ff-49f6-828b-631d73dd6a95",
+      "imslp_id": "Je_te_veux_(Satie,_Erik)",
+      "wikidata_match_method": "title_substring",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Satie%20Je%20Te%20Veux%20%28for%20Cello%20Trio%29",
+      "display_title": "Je te veux"
+    },
+    {
+      "title": "Gnossienne No. 1",
+      "musicxml": "musicxml/Cati_09_2_1.mxl",
+      "midi": "midi/Cati_09_2_1.mid",
+      "instruments": [
+        "Piano"
+      ],
+      "tempo_markings": [
+        "Lent"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.22,
+        "n_favorites": 35,
+        "n_views": 509,
+        "duration_seconds": 190.58823528916608,
+        "n_notes": 871,
+        "complexity": "2",
+        "is_original": false,
+        "is_best_arrangement": false,
+        "genres": "NA",
+        "tags": "satie-piano-eriksatie",
+        "musescore_url": "https://musescore.com/user/31734555/scores/5555847",
+        "musescore_duration": "03:13"
+      },
+      "key": "A♭ major",
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 102,
+      "n_measures": 11,
+      "n_parts": 1,
+      "n_notes": 836,
+      "notes_per_second": 4.4,
+      "apple_music_search_query": "Satie A♭ major Gnossienne No. 1",
+      "lyricist": "Éric Alfred Leslie Satie",
+      "wikidata_id": "Q110184793",
+      "wikidata_title": "Gnossienne #1",
+      "musicbrainz_id": "eb07cf62-985a-3f73-9595-2c45b95e1004",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Satie%20Gnossienne%20No.%201",
+      "display_title": "Gnossienne #1"
+    },
+    {
+      "title": "Allegro by Erik Satie",
+      "musicxml": "musicxml/Allegro_by_Erik_Satie.mxl",
+      "midi": "midi/Allegro_by_Erik_Satie.mid",
+      "time_signature": "4/4",
+      "instruments": [
+        "Piano"
+      ],
+      "tempo_markings": [
+        "Allegro"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.72,
+        "n_favorites": 21,
+        "n_views": 602,
+        "duration_seconds": 13.333333332990742,
+        "n_notes": 128,
+        "complexity": "1",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "piano-composition-erik-eric-satie-ericsatie-eriksatie-allegro-short-easy-happy-cheerful-somehowsaties",
+        "musescore_url": "https://musescore.com/user/34296022/scores/6253299",
+        "musescore_duration": "00:14"
+      },
+      "key": "G major",
+      "instruments_gm": [
+        "Bright Acoustic Piano"
+      ],
+      "tempo_bpm": 144,
+      "n_measures": 9,
+      "n_parts": 1,
+      "n_notes": 127,
+      "notes_per_second": 9.5,
+      "apple_music_search_query": "Satie G major Allegro by Erik Satie",
+      "parent_work_title": "Allegro",
+      "year_composed": 1884,
+      "wikidata_id": "Q21998337",
+      "wikidata_title": "Allegro",
+      "musicbrainz_id": "1904f8b0-6900-409f-93c3-c8f528fe03d3",
+      "imslp_id": "Allegro_(Satie,_Erik)",
+      "wikidata_match_method": "title_tokens",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Satie%20Allegro%20by",
+      "display_title": "Allegro"
+    },
+    {
+      "title": "Gnossienne No. 1",
+      "musicxml": "musicxml/Puri_09_2_MSC.mxl",
+      "midi": "midi/Puri_09_2_MSC.mid",
+      "instruments": [
+        "Piano"
+      ],
+      "tempo_markings": [
+        "Lent"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 4,
+        "n_views": 118,
+        "duration_seconds": 190.58823528916608,
+        "n_notes": 871,
+        "complexity": "2",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "NA",
+        "tags": "eric-satie-piano",
+        "musescore_url": "https://musescore.com/user/31892661/scores/5535090",
+        "musescore_duration": "03:13"
+      },
+      "key": "A♭ major",
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 102,
+      "n_measures": 11,
+      "n_parts": 1,
+      "n_notes": 836,
+      "notes_per_second": 4.4,
+      "apple_music_search_query": "Satie A♭ major Gnossienne No. 1",
+      "lyricist": "Éric Alfred Leslie Satie",
+      "wikidata_id": "Q110184793",
+      "wikidata_title": "Gnossienne #1",
+      "musicbrainz_id": "eb07cf62-985a-3f73-9595-2c45b95e1004",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Satie%20Gnossienne%20No.%201",
+      "display_title": "Gnossienne #1"
+    },
+    {
+      "title": "Satie - Gnossienne 6 - Arrangement pour Big Band",
+      "musicxml": "musicxml/Satie_-_Gnossienne_6_-_Arrangement_pour_Big_Band.mxl",
+      "midi": "midi/Satie_-_Gnossienne_6_-_Arrangement_pour_Big_Band.mid",
+      "time_signature": "2/4",
+      "instruments": [
+        "Flûte",
+        "Clarinette",
+        "Trompette",
+        "Alto",
+        "Ténor",
+        "Baryton",
+        "Trombone",
+        "Piano",
+        "Guitare acoustique",
+        "B",
+        "Batterie"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.28,
+        "n_favorites": 4,
+        "n_views": 263,
+        "duration_seconds": 106.56249999722492,
+        "n_notes": 2925,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/5015831/scores/5946736",
+        "musescore_duration": "01:50"
+      },
+      "instruments_gm": [
+        "Flute",
+        "Clarinet",
+        "Trumpet",
+        "Alto Sax",
+        "Tenor Sax",
+        "Baritone Sax",
+        "Trombone",
+        "Acoustic Grand Piano",
+        "Acoustic Guitar (steel)",
+        "Acoustic Bass",
+        "Percussion"
+      ],
+      "tempo_bpm": 96,
+      "n_measures": 59,
+      "n_parts": 12,
+      "n_notes": 3152,
+      "notes_per_second": 29.6,
+      "apple_music_search_query": "Satie Satie - Gnossienne 6 - Arrangement pour Big Band",
+      "wikidata_id": "Q110185062",
+      "wikidata_title": "Gnossienne #6",
+      "musicbrainz_id": "1a085f20-121d-3426-bb88-868569783f9b",
+      "wikidata_match_method": "title_substring",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Satie%20-%20Gnossienne%206%20-%20Arrangement%20pour%20Big%20Band",
+      "display_title": "Gnossienne #6"
+    },
+    {
+      "title": "Gnossienne No. 1",
+      "musicxml": "musicxml/Santi_09_2.mxl",
+      "midi": "midi/Santi_09_2.mid",
+      "instruments": [
+        "Piano"
+      ],
+      "tempo_markings": [
+        "Lent"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 2,
+        "n_views": 138,
+        "duration_seconds": 190.58823528916608,
+        "n_notes": 871,
+        "complexity": "2",
+        "is_original": false,
+        "is_best_arrangement": false,
+        "genres": "NA",
+        "tags": "satie-erik-gnossienne",
+        "musescore_url": "https://musescore.com/user/31929761/scores/5539611",
+        "musescore_duration": "03:13"
+      },
+      "key": "A♭ major",
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 102,
+      "n_measures": 11,
+      "n_parts": 1,
+      "n_notes": 836,
+      "notes_per_second": 4.4,
+      "apple_music_search_query": "Satie A♭ major Gnossienne No. 1",
+      "lyricist": "Éric Alfred Leslie Satie",
+      "wikidata_id": "Q110184793",
+      "wikidata_title": "Gnossienne #1",
+      "musicbrainz_id": "eb07cf62-985a-3f73-9595-2c45b95e1004",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Satie%20Gnossienne%20No.%201",
+      "display_title": "Gnossienne #1"
+    },
+    {
+      "title": "Erik Satie - Socrate",
+      "musicxml": "musicxml/Erik_Satie_-_Socrate.mxl",
+      "midi": "midi/Erik_Satie_-_Socrate.mid",
+      "time_signature": "2/4",
+      "instruments": [
+        "CHANT",
+        "PIANO"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.93,
+        "n_favorites": 13,
+        "n_views": 293,
+        "duration_seconds": 2579.094779556844,
+        "n_notes": 12189,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "eriksatie-socrates-platosdialogues-symphonicdrama-voice-piano",
+        "musescore_url": "https://musescore.com/user/30432972/scores/6304717",
+        "musescore_duration": "30:26"
+      },
+      "instruments_gm": [
+        "Music Box",
+        "Electric Piano 2"
+      ],
+      "tempo_bpm": 66,
+      "n_measures": 676,
+      "n_parts": 2,
+      "n_notes": 11894,
+      "notes_per_second": 4.6,
+      "apple_music_search_query": "Satie Erik Satie - Socrate",
+      "year_composed": 1918,
+      "wikidata_id": "Q3028841",
+      "wikidata_title": "Socrate",
+      "musicbrainz_id": "d2f964d2-76ef-496d-b10d-1bc0a4cd9237",
+      "imslp_id": "Socrate_(Satie,_Erik)",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Satie%20-%20Socrate",
+      "display_title": "Socrate"
+    },
+    {
+      "title": "MSC-Ejercicio 09.2",
+      "musicxml": "musicxml/MSC-Ejercicio_092.mxl",
+      "midi": "midi/MSC-Ejercicio_092.mid",
+      "instruments": [
+        "Piano"
+      ],
+      "tempo_markings": [
+        "Lent"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 0,
+        "n_views": 50,
+        "duration_seconds": 190.58823528916608,
+        "n_notes": 871,
+        "complexity": "2",
+        "is_original": false,
+        "is_best_arrangement": false,
+        "genres": "classical",
+        "tags": "piano",
+        "musescore_url": "https://musescore.com/user/69359/scores/5699895",
+        "musescore_duration": "03:13"
+      },
+      "key": "A♭ major",
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 102,
+      "n_measures": 11,
+      "n_parts": 1,
+      "n_notes": 836,
+      "notes_per_second": 4.4,
+      "apple_music_search_query": "Satie A♭ major MSC-Ejercicio 09.2",
+      "parent_work_title": "Gnossienne No. 1",
+      "lyricist": "Éric Alfred Leslie Satie",
+      "wikidata_id": "Q110184793",
+      "wikidata_title": "Gnossienne #1",
+      "musicbrainz_id": "eb07cf62-985a-3f73-9595-2c45b95e1004",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Satie%20MSC-Ejercicio%2009.2",
+      "display_title": "Gnossienne #1"
+    },
+    {
+      "title": "3 morceaux en forme de poire - En plus - Secoundo",
+      "musicxml": "musicxml/3_morceaux_en_forme_de_poire_-_En_plus_-_Secoundo.mxl",
+      "midi": "midi/3_morceaux_en_forme_de_poire_-_En_plus_-_Secoundo.mid",
+      "time_signature": "4/4",
+      "instruments": [
+        "Piano"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 7,
+        "n_views": 555,
+        "duration_seconds": 107.99999999721,
+        "n_notes": 465,
+        "complexity": "1",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "satie-morceau-poire-mains",
+        "musescore_url": "https://musescore.com/user/2160671/scores/1805511",
+        "musescore_duration": "01:48"
+      },
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 120,
+      "n_measures": 54,
+      "n_parts": 1,
+      "n_notes": 457,
+      "notes_per_second": 4.2,
+      "apple_music_search_query": "Satie 3 morceaux en forme de poire - En plus - Secoundo",
+      "parent_work_title": "3 morceaux en forme de poire",
+      "year_composed": 1911,
+      "wikidata_id": "Q3540015",
+      "wikidata_title": "Trois morceaux en forme de poire",
+      "musicbrainz_id": "ce576ab1-8415-4bdd-9859-266467201876",
+      "imslp_id": "3_Morceaux_en_forme_de_poire_(Satie,_Erik)",
+      "wikidata_match_method": "title_tokens",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Satie%203%20morceaux%20en%20forme%20de%20poire%20-%20En%20plus%20-%20Secoundo",
+      "display_title": "Trois morceaux en forme de poire"
+    },
+    {
+      "title": "Vexations - Erik Satie",
+      "musicxml": "musicxml/Vexations_-_Erik_Satie.mxl",
+      "midi": "midi/Vexations_-_Erik_Satie.mid",
+      "time_signature": "13/4",
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.84,
+        "n_favorites": 49,
+        "n_views": 10138,
+        "duration_seconds": 72.2727601220108,
+        "n_notes": 133,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "piano-satie",
+        "musescore_url": "https://musescore.com/nicolas/scores/23911",
+        "musescore_duration": "00:53"
+      },
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 44,
+      "n_measures": 3,
+      "n_parts": 2,
+      "n_notes": 126,
+      "notes_per_second": 1.7,
+      "apple_music_search_query": "Satie Vexations - Erik Satie",
+      "wikidata_id": "Q2060108",
+      "wikidata_title": "Vexations",
+      "musicbrainz_id": "2493bdd9-e59a-36f2-9e56-46cfb22f956e",
+      "imslp_id": "Vexations_(Satie,_Erik)",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Satie%20Vexations%20-",
+      "display_title": "Vexations"
+    },
+    {
+      "title": "Gnossienne No. 1",
+      "musicxml": "musicxml/jose_juan_092.mxl",
+      "midi": "midi/jose_juan_092.mid",
+      "instruments": [
+        "Piano"
+      ],
+      "tempo_markings": [
+        "Lent"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.77,
+        "n_favorites": 9,
+        "n_views": 156,
+        "duration_seconds": 190.58823528916608,
+        "n_notes": 871,
+        "complexity": "2",
+        "is_original": false,
+        "is_best_arrangement": false,
+        "genres": "classical",
+        "tags": "satie-gnossienne-piano",
+        "musescore_url": "https://musescore.com/user/34486009/scores/6041437",
+        "musescore_duration": "03:13"
+      },
+      "key": "A♭ major",
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 102,
+      "n_measures": 11,
+      "n_parts": 1,
+      "n_notes": 836,
+      "notes_per_second": 4.4,
+      "apple_music_search_query": "Satie A♭ major Gnossienne No. 1",
+      "lyricist": "Éric Alfred Leslie Satie",
+      "wikidata_id": "Q110184793",
+      "wikidata_title": "Gnossienne #1",
+      "musicbrainz_id": "eb07cf62-985a-3f73-9595-2c45b95e1004",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Satie%20Gnossienne%20No.%201",
+      "display_title": "Gnossienne #1"
+    },
+    {
+      "title": "Gnossienne No. 1",
+      "musicxml": "musicxml/Gnossienne_No_1.mxl",
+      "midi": "midi/Gnossienne_No_1.mid",
+      "time_signature": "4/4",
+      "instruments": [
+        "Violín I",
+        "Violín II",
+        "Viola",
+        "Violonchelo",
+        "Contrabajo",
+        "Xilófono",
+        "Triángulo",
+        "Vibráfono",
+        "Bombo de concierto",
+        "Platillos",
+        "Timbales"
+      ],
+      "tempo_markings": [
+        "ritardando"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 2,
+        "n_views": 196,
+        "duration_seconds": 235.2284531063866,
+        "n_notes": 2098,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "arrangement-eriksatie-piano-gnossienneno-gnossiennes-gnossienne-ensamble-percussion-strings",
+        "musescore_url": "https://musescore.com/user/32845006/scores/5997109",
+        "musescore_duration": "03:25"
+      },
+      "key": "A♭ major",
+      "instruments_gm": [
+        "Violin",
+        "Viola",
+        "Cello",
+        "Contrabass",
+        "Xylophone",
+        "Percussion",
+        "Vibraphone",
+        "Timpani"
+      ],
+      "tempo_bpm": 95,
+      "n_measures": 57,
+      "n_parts": 11,
+      "n_notes": 2442,
+      "notes_per_second": 10.4,
+      "apple_music_search_query": "Satie A♭ major Gnossienne No. 1",
+      "parent_work_title": "1° Gnossienne",
+      "lyricist": "Samuel Carrizalez",
+      "wikidata_id": "Q110184793",
+      "wikidata_title": "Gnossienne #1",
+      "musicbrainz_id": "eb07cf62-985a-3f73-9595-2c45b95e1004",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Satie%20Gnossienne%20No.%201",
+      "display_title": "Gnossienne #1"
+    },
+    {
+      "title": "Choses vues à droite et à gauche (sans lunettes) Erik Satie",
+      "musicxml": "musicxml/Choses_vues_a_droite_et_a_gauche_sans_lunettes_Erik_Satie.mxl",
+      "midi": "midi/Choses_vues_a_droite_et_a_gauche_sans_lunettes_Erik_Satie.mid",
+      "time_signature": "4/4",
+      "instruments": [
+        "Violin",
+        "Grand Piano"
+      ],
+      "tempo_markings": [
+        "Grave",
+        "T",
+        "Large",
+        "Pas vite",
+        "Un peu vif",
+        "Très large"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 3,
+        "n_views": 153,
+        "duration_seconds": 535.2015787887491,
+        "n_notes": 1771,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/4887176/scores/5320187",
+        "musescore_duration": "04:23"
+      },
+      "instruments_gm": [
+        "Violin",
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 60,
+      "n_measures": 145,
+      "n_parts": 2,
+      "n_notes": 1739,
+      "notes_per_second": 3.2,
+      "apple_music_search_query": "Satie Choses vues à droite et à gauche (sans lunettes) E",
+      "parent_work_title": "Choses vues à droite et à gauche (sans lunettes)",
+      "year_composed": 1914,
+      "wikidata_id": "Q19892225",
+      "wikidata_title": "Choses vues à droite et à gauche",
+      "musicbrainz_id": "6c964736-d5c7-46f8-a51f-78722cc13654",
+      "imslp_id": "Choses_vues_à_droite_et_à_gauche_(Satie,_Erik)",
+      "wikidata_match_method": "title_substring",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Satie%20Choses%20vues%20%C3%A0%20droite%20et%20%C3%A0%20gauche%20%28sans%20lunettes%29",
+      "display_title": "Choses vues à droite et à gauche"
+    },
+    {
+      "title": "Erik Satie - Gnossienne No. 4",
+      "musicxml": "musicxml/Erik_Satie_-_Gnossienne_No_4.mxl",
+      "midi": "midi/Erik_Satie_-_Gnossienne_No_4.mid",
+      "time_signature": "4/4",
+      "instruments": [
+        "Viulu",
+        "Alto",
+        "Tenorisaksofoni",
+        "Piano"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.72,
+        "n_favorites": 20,
+        "n_views": 411,
+        "duration_seconds": 113.3752803102252,
+        "n_notes": 263,
+        "complexity": "2",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/30572986/scores/6113879",
+        "musescore_duration": "03:42"
+      },
+      "key": "G major",
+      "instruments_gm": [
+        "Violin",
+        "Choir Aahs",
+        "Tenor Sax",
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 120,
+      "n_measures": 38,
+      "n_parts": 4,
+      "n_notes": 258,
+      "notes_per_second": 2.3,
+      "apple_music_search_query": "Satie G major Erik Satie - Gnossienne No. 4",
+      "parent_work_title": "Enkelten yö",
+      "wikidata_id": "Q110185002",
+      "wikidata_title": "Gnossienne #4",
+      "musicbrainz_id": "501f308d-0e5f-3e8d-8e17-9858ea3f0a5a",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Satie%20-%20Gnossienne%20No.%204",
+      "display_title": "Gnossienne #4"
+    },
+    {
+      "title": "Gnossienne No. 1",
+      "musicxml": "musicxml/Gnossienne_No_1_1.mxl",
+      "midi": "midi/Gnossienne_No_1_1.mid",
+      "instruments": [
+        "Piano"
+      ],
+      "tempo_markings": [
+        "Lent"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.22,
+        "n_favorites": 41,
+        "n_views": 554,
+        "duration_seconds": 381.17647057833216,
+        "n_notes": 872,
+        "complexity": "2",
+        "is_original": false,
+        "is_best_arrangement": false,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/30572986/scores/6113833",
+        "musescore_duration": "03:13"
+      },
+      "key": "A♭ major",
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 102,
+      "n_measures": 11,
+      "n_parts": 1,
+      "n_notes": 836,
+      "notes_per_second": 2.2,
+      "apple_music_search_query": "Satie A♭ major Gnossienne No. 1",
+      "lyricist": "Éric Alfred Leslie Satie",
+      "wikidata_id": "Q110184793",
+      "wikidata_title": "Gnossienne #1",
+      "musicbrainz_id": "eb07cf62-985a-3f73-9595-2c45b95e1004",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Satie%20Gnossienne%20No.%201",
+      "display_title": "Gnossienne #1"
+    },
+    {
+      "title": "Le Fils Des Étoiles - Erik Satie - solo piano",
+      "musicxml": "musicxml/Le_Fils_Des_Etoiles_-_Erik_Satie_-_solo_piano.mxl",
+      "midi": "midi/Le_Fils_Des_Etoiles_-_Erik_Satie_-_solo_piano.mid",
+      "time_signature": "8/4",
+      "instruments": [
+        "Piano"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.81,
+        "n_favorites": 20,
+        "n_views": 555,
+        "duration_seconds": 291.7507293691654,
+        "n_notes": 1625,
+        "complexity": "2",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "satie-eriksatie-lefilsdesetoile-piano-solo",
+        "musescore_url": "https://musescore.com/user/6053266/scores/5881010",
+        "musescore_duration": "08:18"
+      },
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 80,
+      "n_measures": 93,
+      "n_parts": 1,
+      "n_notes": 1433,
+      "notes_per_second": 4.9,
+      "apple_music_search_query": "Satie Le Fils Des Étoiles - Erik Satie - solo piano",
+      "parent_work_title": "Le Fils Des Étoiles",
+      "year_composed": 1896,
+      "wikidata_id": "Q24965399",
+      "wikidata_title": "Le Fils des étoiles",
+      "musicbrainz_id": "06438de8-7b69-4cd1-a565-87458f3e40ef",
+      "imslp_id": "Le_Fils_des_étoiles_(Satie,_Erik)",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Satie%20Le%20Fils%20Des%20%C3%89toiles%20-%20-%20solo%20piano",
+      "display_title": "Le Fils des étoiles"
+    },
+    {
+      "title": "Satie - Gnossienne 4 - Arrangement pour Big Band",
+      "musicxml": "musicxml/Satie_-_Gnossienne_4_-_Arrangement_pour_Big_Band.mxl",
+      "midi": "midi/Satie_-_Gnossienne_4_-_Arrangement_pour_Big_Band.mid",
+      "time_signature": "6/4",
+      "instruments": [
+        "Flûte",
+        "Clarinette",
+        "Trompette",
+        "Alto",
+        "Ténor",
+        "Baryton",
+        "Trombone",
+        "P",
+        "Basse",
+        "Batterie"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 1,
+        "n_views": 100,
+        "duration_seconds": 216.5628383738517,
+        "n_notes": 7064,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/5015831/scores/5966236",
+        "musescore_duration": "03:37"
+      },
+      "instruments_gm": [
+        "Flute",
+        "Clarinet",
+        "Trumpet",
+        "Alto Sax",
+        "Tenor Sax",
+        "Baritone Sax",
+        "Trombone",
+        "Acoustic Grand Piano",
+        "Electric Bass (finger)",
+        "Percussion",
+        "Acoustic Bass"
+      ],
+      "tempo_bpm": 128,
+      "n_measures": 54,
+      "n_parts": 14,
+      "n_notes": 7137,
+      "notes_per_second": 33.0,
+      "apple_music_search_query": "Satie Satie - Gnossienne 4 - Arrangement pour Big Band",
+      "parent_work_title": "Gnossienne 4",
+      "arranger": "JP",
+      "wikidata_id": "Q110185002",
+      "wikidata_title": "Gnossienne #4",
+      "musicbrainz_id": "501f308d-0e5f-3e8d-8e17-9858ea3f0a5a",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Satie%20-%20Gnossienne%204%20-%20Arrangement%20pour%20Big%20Band",
+      "display_title": "Gnossienne #4"
+    }
+  ],
+  "birth_year": 1866,
+  "death_year": 1925,
+  "wikipedia_extract": "Eric Alfred Leslie Satie (17 May 1866 – 1 July 1925), better known as Erik Satie, was a French composer and pianist. The son of a French father and a British mother, he studied at the Paris Conservatoire but was undistinguished and did not obtain a diploma. In the 1880s he worked as a pianist in café-cabarets in Montmartre, Paris, and began composing works, mostly for solo piano, such as his Gymnopédies and Gnossiennes.",
+  "wikipedia_compositions_url": "https://en.wikipedia.org/wiki/List_of_compositions_by_Erik_Satie",
+  "wikidata_id": "Q187192"
+}

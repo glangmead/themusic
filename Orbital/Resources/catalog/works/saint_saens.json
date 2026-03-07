@@ -1,0 +1,917 @@
+{
+  "composer_slug": "saint_saens",
+  "composer_qid": "Q150445",
+  "work_count": 95,
+  "midi_file_count": 8,
+  "works": [
+    {
+      "qid": "Q2288901",
+      "title": "Symphony in A Major",
+      "imslp_id": "Symphony_in_A_major_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP194475-Saint-Saëns_-_Symphony_in_A__orch._score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp28",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_in_A_major_(Saint-Sa%C3%ABns)",
+      "wikipedia_extract": "The Symphony in A major is a work for orchestra by the French composer Camille Saint-Saëns.",
+      "pageviews_yearly": 428,
+      "date": "1850-00-00"
+    },
+    {
+      "qid": "Q163579",
+      "title": "Symphony No. 1",
+      "imslp_id": "Symphony_No.1,_Op.2_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP49221-Saint-Saens_-_Symphony_No1_ArrPf4h_rsl.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp29",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._1_(Saint-Sa%C3%ABns)",
+      "wikipedia_extract": "Symphony No. 1 in E♭ major, Op. 2, by Camille Saint-Saëns is a symphonic work composed in June and July 1853 and premiered in Paris the same year.",
+      "pageviews_yearly": 2874,
+      "date": "1853-00-00"
+    },
+    {
+      "qid": "Q210558",
+      "title": "Symphony No. 2",
+      "imslp_id": "Symphony_No.2,_Op.55_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP18232-Saint-Saens_Symphonie_n_2_op55_piano_4_hands.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp32",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._2_(Saint-Sa%C3%ABns)",
+      "wikipedia_extract": "Symphony No. 2 in A minor, Op. 55, is an orchestral work composed by Camille Saint-Saëns in 1859.",
+      "pageviews_yearly": 521,
+      "date": "1859-00-00"
+    },
+    {
+      "qid": "Q176902",
+      "title": "Piano Concerto No. 2",
+      "imslp_id": "Piano Concerto No.2, Op.22 (Saint-Saëns, Camille)",
+      "pdf_filename": "SaintSaens-Op022ar2pf.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp58",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._2_(Saint-Sa%C3%ABns)",
+      "wikipedia_extract": "The Piano Concerto No. 2 in G minor, Op. 22 by Camille Saint-Saëns was composed in 1868 and is probably Saint-Saëns' most popular piano concerto. It was dedicated to Madame A. de Villers.",
+      "pageviews_yearly": 16956,
+      "date": "1868-00-00"
+    },
+    {
+      "qid": "Q106806533",
+      "title": "Romance in D-flat major, Op 37",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Romance%2C_Op._37_(Saint-Sa%C3%ABns)",
+      "wikipedia_extract": "The Romance in D♭ major, Op. 37, is a composition by Camille Saint-Saëns for flute, accompanied by piano or orchestra, written in March 1871.",
+      "pageviews_yearly": 3041,
+      "date": "1871-03-00"
+    },
+    {
+      "qid": "Q17231874",
+      "title": "Cello Sonata No. 1",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp108",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cello_Sonata_No._1_(Saint-Sa%C3%ABns)",
+      "wikipedia_extract": "The Cello Sonata No. 1 in C minor, Op. 32, is a cello sonata composed by Camille Saint-Saëns in 1872. Dedicated to the French cellist Jules Lasserre, the sonata was premiered on 7 December 1872 at the Société nationale de musique in Paris, with Auguste Tolbecque on cello and the composer at the piano.",
+      "pageviews_yearly": 2126,
+      "date": "1872-00-00"
+    },
+    {
+      "qid": "Q230792",
+      "title": "Piano Concerto No. 4",
+      "imslp_id": "Piano_Concerto_No.4,_Op.44_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP08465-Saint-Saëns_-_Piano_Concerto_No._4__Op._44__orch._score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp60",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._4_(Saint-Sa%C3%ABns)",
+      "wikipedia_extract": "The Piano Concerto No. 4 in C minor, Op. 44 was composed by Camille Saint-Saëns in 1875. It was premièred on October 31, 1875, at the Théâtre du Châtelet of Paris, with the composer as the soloist. The concerto is dedicated to Anton Door, a professor of piano at the Vienna Conservatory.",
+      "pageviews_yearly": 4720,
+      "date": "1875-00-00"
+    },
+    {
+      "qid": "Q3413731",
+      "title": "Piano Quartet in B♭ major",
+      "imslp_id": "Piano_Quartet,_Op.41_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP62392-Piano_Quartet_in_B-flat_major__OP._41__unedited__less_compressed.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp90",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Quartet_in_B-flat_major_(Saint-Sa%C3%ABns)",
+      "wikipedia_extract": "The Piano Quartet in B♭ major, Op. 41, also known as the Piano Quartet No. 2, was written by Camille Saint-Saëns in February 1875. Dedicated to Jules Foucault, it was premiered on 6 March 1875 in Paris. It has been called one of Saint-Saëns' neglected masterpieces and is in the core repertoire of the piano quartet.",
+      "pageviews_yearly": 2222,
+      "date": "1875-02-00"
+    },
+    {
+      "qid": "Q753152",
+      "title": "Samson and Delilah",
+      "imslp_id": "Samson_et_Dalila,_Op.47_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP48364-2024-03-16-11-34-3-01.PDF",
+      "has_pdf": false,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp25",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Samson_and_Delilah_(opera)",
+      "wikipedia_extract": "Samson and Delilah, Op. 47, is a grand opera in three acts and four scenes by Camille Saint-Saëns to a French libretto by Ferdinand Lemaire. It was first performed in Weimar at the Grossherzogliches Theater on 2 December 1877 in a German translation.",
+      "pageviews_yearly": 47413,
+      "date": "1876-00-00"
+    },
+    {
+      "qid": "Q136206951",
+      "title": "König Harald Harfagar",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp160",
+      "date": "1880-00-00"
+    },
+    {
+      "qid": "Q11353718",
+      "title": "Septet in E-flat major, Op. 65",
+      "imslp_id": "Septet,_Op.65_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP05064-Saint-Saens_-_Septuor_pour_Trompette__deux_Violons__Alto__Violoncelle__Contre-Basse_et_Piano_Op_65.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Septet_(Saint-Sa%C3%ABns)",
+      "wikipedia_extract": "The Septet in E♭ major, Op. 65, was written by Camille Saint-Saëns between 1879 and 1880 for the unusual combination of trumpet, two violins, viola, cello, double bass and piano. Like the suites Opp. 16, 49, 90, the septet is a neoclassical work that revives 17th-century French dance forms, reflecting Saint-Saëns's interest in the largely forgotten French musical traditions of the 17th century. The work was dedicated to Émile Lemoine, a mathematician and founder of the chamber music society La Trompette, who had long requested Saint-Saëns to compose a piece featuring the trumpet.",
+      "pageviews_yearly": 4236,
+      "date": "1880-00-00"
+    },
+    {
+      "qid": "Q17192151",
+      "title": "Suite algérienne",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp45",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Suite_alg%C3%A9rienne",
+      "wikipedia_extract": "\nThe Suite algérienne in C major, Op. 60 is a composition by Camille Saint-Saëns in four movements.",
+      "pageviews_yearly": 4135,
+      "date": "1880-00-00"
+    },
+    {
+      "qid": "Q3490266",
+      "title": "Violin Sonata No. 1",
+      "imslp_id": "Violin_Sonata_No.1,_Op.75_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP10584-S_S_VS_arr_vc.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp100",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Violin_Sonata_No._1_(Saint-Sa%C3%ABns)",
+      "wikipedia_extract": "The Violin Sonata No. 1 in D minor, Op. 75, was written by Camille Saint-Saëns in October 1885. Dedicated to Martin Pierre Marsick, it was premiered on 9 January 1886 in Paris. The sonata has been called one of Saint-Saëns' neglected masterpieces.",
+      "pageviews_yearly": 4116,
+      "date": "1885-10-00"
+    },
+    {
+      "qid": "Q941724",
+      "title": "The Carnival of the Animals",
+      "imslp_id": "Le_carnaval_des_animaux_(Saint-Saëns,_Camille)",
+      "pdf_filename": "Godowsky_-_Trans_-_The_Swan__for_Vln_and_Pno__Saint-Saens_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp87",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Carnival_of_the_Animals",
+      "wikipedia_extract": "The Carnival of the Animals is a humorous musical suite of 14 movements, including \"The Swan\", by the French composer Camille Saint-Saëns. About 25 minutes long, it was written for private performance by two pianos and chamber ensemble; Saint-Saëns prohibited public performance of the work during his lifetime, feeling that its frivolity would damage his standing as a serious composer. The suite was published in 1922, the year after his death. A public performance that year was greeted with enthusiasm, and it has remained among his most popular works. It is less frequently performed with a full orchestral complement of strings.",
+      "pageviews_yearly": 176683,
+      "date": "1886-03-09",
+      "movements": [
+        {
+          "qid": "Q30728425"
+        },
+        {
+          "qid": "Q13360782"
+        }
+      ]
+    },
+    {
+      "qid": "Q104705937",
+      "title": "Caprice sur des airs danois et russes",
+      "imslp_id": "Caprice_sur_des_airs_danois_et_russes,_Op.79_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP34199-Caprice_Sur_des_airs_-...-Saint-Sae-ns_ms.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Caprice_sur_des_airs_danois_et_russes",
+      "wikipedia_extract": "The Caprice sur des airs danois et russes, Op. 79, is a caprice for flute, oboe, clarinet and piano, composed by Camille Saint-Saëns in 1887. The inspiration for using Danish and Russian airs can be linked to the dedicatee Maria Feodorovna, a Danish princess who became Empress of Russia in 1881 as the spouse of Alexander III.",
+      "pageviews_yearly": 2504,
+      "date": "1887-00-00"
+    },
+    {
+      "qid": "Q136142986",
+      "title": "Feuillet d'album Op. 81",
+      "imslp_id": "Feuillet_d'album,_Op.81_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP28151-Saint-Saëns_-_Feuillet_d_Album__Op._81__trans._Taffanel_-_wind_octet___parts_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1887-00-00"
+    },
+    {
+      "qid": "Q383461",
+      "title": "Havanaise",
+      "imslp_id": "Havanaise,_Op.83_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP33751-Saint-Saëns_-_Havanaise__Op._85__orch._sore_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp101",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Havanaise_(Saint-Sa%C3%ABns)",
+      "wikipedia_extract": "The Havanaise in E major, Op. 83, is a composition for violin and orchestra based on the habanera rhythm, written in 1887 by French composer, Camille Saint-Saëns for Cuban violinist Rafael Díaz Albertini. At the January 7, 1894 orchestral premiere in Paris, the violin was played instead by Martin Pierre Marsick. It is one of the standards of the classical concertante repertoire.",
+      "pageviews_yearly": 5321,
+      "date": "1887-00-00"
+    },
+    {
+      "qid": "Q1334530",
+      "title": "The Dying Swan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Dying_Swan",
+      "wikipedia_extract": "The Dying Swan is a solo dance choreographed by Mikhail Fokine to Camille Saint-Saëns's Le Cygne from Le Carnaval des animaux as a pièce d'occasion for the ballerina Anna Pavlova, who performed it about 4,000 times. The short ballet follows the last moments in the life of a swan, and was first presented in St. Petersburg, Russia in 1905. The ballet has since influenced modern interpretations of Odette, heroine of Tchaikovsky's ballet Swan Lake, and has inspired non-traditional interpretations as well as various adaptations.",
+      "pageviews_yearly": 32672,
+      "date": "1901-00-00"
+    },
+    {
+      "qid": "Q3230951",
+      "title": "Les barbares",
+      "imslp_id": "Les_barbares_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP73977-Saint-Saens_-_Les_barbares__Vocal_Score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Les_barbares",
+      "wikipedia_extract": "Les barbares is a 1901 tragédie lyrique in 3 acts by Camille Saint-Saëns to a libretto by Victorien Sardou and Pierre-Barthélemy Gheusi. The opera was originally intended for the Roman theatre of Orange, in Provence, but instead premiered at the Paris Opéra Palais Garnier in October 1901.",
+      "pageviews_yearly": 2116,
+      "date": "1905-00-00"
+    },
+    {
+      "qid": "Q136190818",
+      "title": "Feuillet d'album Op. 169",
+      "imslp_id": "Feuillet_d'album,_Op.169_(Saint-Saëns,_Camille)",
+      "pdf_filename": "_Album__Op._169__piano_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1921-00-00"
+    },
+    {
+      "qid": "Q3490252",
+      "title": "Oboe Sonata in D major",
+      "imslp_id": "Oboe_Sonata,_Op.166_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP14974-Saint-Saens_Sonate_Op_166_Durand_Oboe_filter.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp119",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oboe_Sonata_(Saint-Sa%C3%ABns)",
+      "wikipedia_extract": "\nCamille Saint-Saëns's Oboe Sonata in D major, Op. 166 was composed in 1921, the year of the composer's death.",
+      "pageviews_yearly": 3879,
+      "date": "1921-00-00"
+    },
+    {
+      "qid": "Q1999134",
+      "title": "Clarinet Sonata (Saint-Saëns)",
+      "imslp_id": "Clarinet_Sonata,_Op.167_(Saint-Saëns,_Camille)",
+      "pdf_filename": "Sainsaens-cl.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp120",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Clarinet_Sonata_(Saint-Sa%C3%ABns)",
+      "wikipedia_extract": "The Clarinet Sonata in E♭ major, Op. 167, was written by Camille Saint-Saëns in 1921 as one of his last works. This clarinet sonata is the second of the three sonatas that Saint-Saëns composed for wind instruments, the other two being the Oboe Sonata and the Bassoon Sonata, written the same year. These works were part of Saint-Saëns's efforts to expand the repertoire for instruments for which hardly any solo parts were written, as he confided to his friend Jean Chantavoine in a letter dated to 15 April 1921: \"At the moment I am concentrating my last reserves on giving rarely considered instruments the chance to be heard.\"",
+      "pageviews_yearly": 5654,
+      "date": "1921-01-01"
+    },
+    {
+      "qid": "Q111473779",
+      "title": "6 Etudes, Op. 111",
+      "imslp_id": "6_Études,_Op.111_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP17894-Saint-Saens_-_111_-_Six_Etudes.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q118874110",
+      "title": "Africa",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Aquarium-_Camille_Saint-Saens.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q1876747",
+      "title": "Allegro appassionato",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp61"
+    },
+    {
+      "qid": "Q2866351",
+      "title": "Ascanio",
+      "imslp_id": "Ascanio_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP75299--Ascanio_Camille_Saint-Sae-ns-__manuscrit_-...-Saint-Sae-ns_1.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp9",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ascanio",
+      "wikipedia_extract": "Ascanio is a grand opera in five acts and seven tableaux by composer Camille Saint-Saëns. The opera's French libretto, by Louis Gallet, is based on the 1852 play Benvenuto Cellini by French playwright Paul Meurice which was in turn based on the 1843 historical novel by Alexandre Dumas, père. The name was changed to Ascanio to avoid confusion with the Berlioz opera Benvenuto Cellini. The opera premiered on March 21, 1890, at the Académie Nationale de Musique in Paris, in costumes designed by Charles Bianchini and sets by Jean-Baptiste Lavastre and Eugène Carpezat, Auguste Alfred Rubé and Philippe Chaperon and Marcel Jambon.",
+      "pageviews_yearly": 4777
+    },
+    {
+      "qid": "Q18159645",
+      "title": "Barcarolle in F major",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp92",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Barcarolle_(Saint-Sa%C3%ABns)",
+      "wikipedia_extract": "Camille Saint-Saëns's Barcarolle in F major, Op. 108 is a chamber composition for a quartet consisting of violin, cello, harmonium and piano. Composed in 1898, the work also exists in a version for violin, cello, viola and piano created by the composer in 1909.",
+      "pageviews_yearly": 1573
+    },
+    {
+      "qid": "Q17231937",
+      "title": "Bassoon Sonata",
+      "imslp_id": "Bassoon_Sonata,_Op.168_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP68835-Saint-Saens_Sonate_Op_168_Durand_Basson_filter.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp121",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bassoon_Sonata_(Saint-Sa%C3%ABns)",
+      "wikipedia_extract": "The Bassoon Sonata in G major, Op. 168, was written by Camille Saint-Saëns in 1921 as one of his last works. This bassoon sonata is the last of the three sonatas that Saint-Saëns composed for wind instruments, the other two being the Oboe Sonata and the Clarinet Sonata, written the same year. These works were part of Saint-Saëns's efforts to expand the repertoire for instruments for which hardly any solo parts were written, as he confided to his friend Jean Chantavoine in a letter dated to 15 April 1921: \"At the moment I am concentrating my last reserves on giving rarely considered instruments the chance to be heard.\"",
+      "pageviews_yearly": 3273
+    },
+    {
+      "qid": "Q136219461",
+      "title": "Berceuse Op.105",
+      "imslp_id": "Berceuse,_Op.105_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP18219-Saint-Saens_-_Berceuse__Op.105__trans._Guilmant_-_organ_.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q5044132",
+      "title": "Carnival of the Animals",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Carnival_of_the_Animals_-_Aquarium.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q122500060",
+      "title": "Cavatine",
+      "imslp_id": "Cavatine,_Op.144_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP53136-Cavatine_pour_Trombone_te-nor_-...-Saint-Sae-ns.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp117",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cavatine_(Saint-Sa%C3%ABns)",
+      "wikipedia_extract": "The Cavatine for Trombone and Piano, Op. 144, is a chamber music composition by French composer Camille Saint-Saëns, written in 1915. The piece was dedicated to George W. Stewart, a trombonist and the musical director of the 1915 World's Fair in San Francisco, where Saint-Saëns had participated in several concerts. Composed immediately after Saint-Saëns' return to Paris from the United States, the cavatina showcases the lyrical and vocal qualities of the trombone, despite its technical demands. The work was well received by Stewart and has since become one of the most popular solo pieces in the trombone repertoire.",
+      "pageviews_yearly": 3154
+    },
+    {
+      "qid": "Q2991925",
+      "title": "Cello Concerto No. 1"
+    },
+    {
+      "qid": "Q2991920",
+      "title": "Cello Concerto No. 2",
+      "imslp_id": "Cello_Concerto_No.2,_Op.119_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP60559-2me_Concerto_pour_Violoncelle_-...-Saint-Saëns_Camille_btv1b53128049j.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp75",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cello_Concerto_No._2_(Saint-Sa%C3%ABns)",
+      "wikipedia_extract": "Saint-Saëns' Cello Concerto No. 2 in D minor, Op. 119, is written in two movements, like his Fourth Piano Concerto. It was composed in 1902 and is dedicated to the Dutch cellist, Joseph Hollman, who gave the first performance on February 5, 1905 in Paris. The Second Concerto is much more virtuosic than the First, but does not possess the thematic inventiveness and harmonic intricacy of the First.",
+      "pageviews_yearly": 5169
+    },
+    {
+      "qid": "Q17231876",
+      "title": "Cello Sonata No. 2",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp112",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cello_Sonata_No._2_(Saint-Sa%C3%ABns)",
+      "wikipedia_extract": "The Cello Sonata No. 2 in F major, Op. 123, is a cello sonata by Camille Saint-Saëns. It was composed in 1905 during the composer's stay in Biskra, Algeria, and was written nearly 30 years after his first cello sonata. The sonata was dedicated to Jules Griset, a long-time friend of the composer, and was first performed privately by cellist Joseph Hollmann and Saint-Saëns himself before receiving its public premiere by Auguste Tolbecque and Aline Riffaud.",
+      "pageviews_yearly": 1640
+    },
+    {
+      "qid": "Q5200556",
+      "title": "Cyprès et lauriers",
+      "imslp_id": "Cyprès_et_lauriers,_Op.156_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP59607-Cypre-s_et_lauriers_arrt_-...-Saint-Sae-ns_2_pnos.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp80",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cypr%C3%A8s_et_lauriers",
+      "wikipedia_extract": "\nCyprès et Lauriers, Op. 156, for Organ and Orchestra was written by Camille Saint-Saëns in 1919 to celebrate the Allied victory in World War I and dedicated to then President of France, Raymond Poincaré.",
+      "pageviews_yearly": 1511
+    },
+    {
+      "qid": "Q54913620",
+      "title": "Danse Macabre - Low Strings Finale"
+    },
+    {
+      "qid": "Q1164860",
+      "title": "Danse macabre",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Danse_Macabre_1.mid",
+        "midi/Camille_Saint-Saens_-_Danse_Macabre.mid",
+        "midi/Saint-Saens_-_Danse_Macabre_Op_40.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q127766379",
+      "title": "Days of Heaven"
+    },
+    {
+      "qid": "Q136202770",
+      "title": "Duettino",
+      "imslp_id": "Duettino,_Op.11_(Saint-Saëns,_Camille)",
+      "pdf_filename": "Saint-Saëns_-_Duettino__Op.11__piano_4_hands_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp159"
+    },
+    {
+      "qid": "Q3043289",
+      "title": "Déjanire",
+      "imslp_id": "Déjanire,_opera_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP81925-Saint-Saens_Dejanire.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/D%C3%A9janire",
+      "wikipedia_extract": "Déjanire is the title of two related French works by Camille Saint-Saëns: Musique de scène pour ‘Déjanire’ de Gallet (1898) and the four-act opera, or drame lyrique, Déjanire for which Saint-Saëns himself fashioned the dramatic scheme and libretto using Gallet's tragedy as a basis. The vocal writing in the musique de scène is exclusively choral in the manner of Ancient Greek narration and commentary, while in the drame lyrique it focuses on solo parts as in most operas. The musique de scène was written to inaugurate an arena in Béziers; the drame lyrique, last of Saint-Saëns' twelve operas, was written for Monaco. The latter's libretto has, besides Gallet, Sophocles' Trachiniae as a source, a main character being Hercule, in the path of Händel; Hercules had already been the subject of two Saint-Saëns tone poems: Le rouet d'Omphale (1869) and La jeunesse d'Hercule (1877).",
+      "pageviews_yearly": 3329
+    },
+    {
+      "qid": "Q470657",
+      "title": "Effi Briest",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Effi_Briest_(1974_film)",
+      "wikipedia_extract": "Effi Briest is a 1974 West German black-and-white historical drama film directed, written and narrated by Rainer Werner Fassbinder. Fassbinder adapted the screenplay from German author Theodor Fontane's 1894 novel of the same name about a young 19th century woman whose affair with a charismatic womanizer has long-term effects on her marriage to an older man. The film uses Fontane's words in dialogue, narration and text of letters.",
+      "pageviews_yearly": 11180
+    },
+    {
+      "qid": "Q17232205",
+      "title": "Etudes",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp132",
+      "movements": [
+        {
+          "qid": "Q111473779"
+        }
+      ]
+    },
+    {
+      "qid": "Q125866442",
+      "title": "Fantaisie for Violin and Harp",
+      "imslp_id": "Fantaisie_for_Violin_and_Harp,_Op.124_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP69010-Fantaisie__pour_violon_et_harpe_op._124.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q30937",
+      "title": "Fantasia 2000"
+    },
+    {
+      "qid": "Q3089520",
+      "title": "Frédégonde"
+    },
+    {
+      "qid": "Q3133124",
+      "title": "Henry VIII",
+      "imslp_id": "Henry_VIII_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP60392-Henry_VIIIope-ra_en_Saint-Sae-ns_Camille_btv1b10515919x.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp6",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Henry_VIII_(opera)",
+      "wikipedia_extract": "Henry VIII is an opera in four acts by Camille Saint-Saëns, from a libretto by Léonce Détroyat and Armand Silvestre, based on El cisma en Inglaterra (1627) by Pedro Calderón de la Barca.",
+      "pageviews_yearly": 5469
+    },
+    {
+      "qid": "Q661265",
+      "title": "Hélène",
+      "imslp_id": "Hélène_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP83690-He-le-ne__manuscrit_autographe__Saint-Sae-ns.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/H%C3%A9l%C3%A8ne_(opera)",
+      "wikipedia_extract": "Hélène is a poème lyrique or opera in one act by composer Camille Saint-Saëns. It is the first opera for which Saint-Saëns wrote his own French libretto, which is based on the classic story of Helen of Troy and Paris from Greek mythology. The opera premiered at the Opéra de Monte-Carlo in Monaco on 18 February 1904. Moderately successful, the opera enjoyed a handful of revivals up through 1919, after which it fell out of the performance repertoire. The work was resurrected in 2008 for its world premiere recording by the Australian music label Melba.",
+      "pageviews_yearly": 2949
+    },
+    {
+      "qid": "Q1279714",
+      "title": "Introduction and Rondo Capriccioso"
+    },
+    {
+      "qid": "Q127510953",
+      "title": "Javotte (ballet)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Javotte_(Saint-Sa%C3%ABns)",
+      "wikipedia_extract": "Javotte by Camille Saint-Saëns is a ballet written in 1896 and was premiered the same year. The work is notated for full orchestra.",
+      "pageviews_yearly": 1964
+    },
+    {
+      "qid": "Q282518",
+      "title": "Jonathan Creek",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jonathan_Creek",
+      "wikipedia_extract": "Jonathan Creek is a British mystery comedy crime drama series produced by the BBC and written by David Renwick. It stars Alan Davies as the title character, who works as a creative consultant to a stage magician while also solving seemingly supernatural mysteries through his talent for logical deduction and his understanding of illusions.",
+      "pageviews_yearly": 201793
+    },
+    {
+      "qid": "Q3201966",
+      "title": "L'ancêtre",
+      "imslp_id": "L'ancêtre_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP83630-Saint-Saëns_-_L_ancêtre__vocal_score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/L'anc%C3%AAtre",
+      "wikipedia_extract": "L'ancêtre is a 1905 drame lyrique in 3 acts by Camille Saint-Saëns to a libretto by Lucien Augé de Lassus (1841-1914).",
+      "pageviews_yearly": 2664
+    },
+    {
+      "qid": "Q11336604",
+      "title": "La jeunesse d'Hercule",
+      "imslp_id": "La_jeunesse_d'Hercule,_Op.50_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP46823-Saint-Saens_Hercule_op50_Pf4H.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp43",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_jeunesse_d'Hercule",
+      "wikipedia_extract": "La Jeunesse d'Hercule, Op. 50, is a symphonic poem by Camille Saint-Saëns composed in 1876–1877.",
+      "pageviews_yearly": 494
+    },
+    {
+      "qid": "Q2717528",
+      "title": "La princesse jaune",
+      "imslp_id": "La_princesse_jaune,_Op.30_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP55740-La_Princesse_jauneOp301871-72aint-Sae-ns_Camille_btv1b550099006.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp1",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_princesse_jaune",
+      "wikipedia_extract": "La princesse jaune, Op. 30, is an opéra comique in one act and five scenes by composer Camille Saint-Saëns to a French libretto by Louis Gallet. The opera premiered at the Opéra-Comique in Paris on 12 June 1872.",
+      "pageviews_yearly": 3927
+    },
+    {
+      "qid": "Q6506880",
+      "title": "Le Déluge",
+      "imslp_id": "Le_déluge,_Op.45_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP50250-C._Saint-Saens_Prelude_Le_Deluge.PDF",
+      "has_pdf": false,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp208",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Le_D%C3%A9luge_(Saint-Sa%C3%ABns)",
+      "wikipedia_extract": "\nLe Déluge, Op. 45, is a French oratorio written by Camille Saint-Saëns in 1875 and scored for orchestra, chorus, and soloists. The libretto, a \"poème biblique\" by Louis Gallet, is based on the biblical story of Noah and the flood. It was premiered at the Théâtre du Châtelet on 5 March 1876, under the direction of Edouard Colonne.",
+      "pageviews_yearly": 2897
+    },
+    {
+      "qid": "Q3226674",
+      "title": "Le Rouet d'Omphale",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp40",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Le_Rouet_d'Omphale",
+      "wikipedia_extract": "\n\nLe Rouet d'Omphale, Op. 31, is a symphonic poem for orchestra, composed by Camille Saint-Saëns in 1871. It is one of the most famous of the four symphonic poems in a mythological series by Saint-Saëns. The other three in the series are Danse macabre, Phaéton, and La jeunesse d'Hercule. The work was printed by Éditions Durand with the dedication 'à Mademoiselle Augusta Holmès'.",
+      "pageviews_yearly": 5548
+    },
+    {
+      "qid": "Q13360782",
+      "title": "Le cygne",
+      "has_midi": true,
+      "midi_files": [
+        "midi/The_Swan.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q961875",
+      "title": "Le timbre d'argent",
+      "imslp_id": "Le_timbre_d'argent_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP75853-Saint-Saëns_-_Le_Timbre_d_Argent_-_Acts_I__II.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp2",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Le_timbre_d'argent",
+      "wikipedia_extract": "\nLe timbre d'argent is an opéra fantastique in four acts by composer Camille Saint-Saëns to a French libretto by Jules Barbier and Michel Carré. Although completed in 1865, the opera did not receive its premiere performance until 23 February 1877, when it was presented by Albert Vizentini's Théâtre National Lyrique at the Théâtre de la Gaîté in Paris. It includes the well-known aria \"Le bonheur est chose légère\".",
+      "pageviews_yearly": 3349
+    },
+    {
+      "qid": "Q3828896",
+      "title": "Les noces de Prométhée"
+    },
+    {
+      "qid": "Q1171747",
+      "title": "Love at the Top",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Love_at_the_Top",
+      "wikipedia_extract": "Love at the Top is a 1974 satirical comedy-drama film directed by Michel Deville from a screenplay by Christopher Frank, based on the 1956 novel Le Mouton enragé by Roger Blondel.",
+      "pageviews_yearly": 7259
+    },
+    {
+      "qid": "Q54987553",
+      "title": "Love! come help my weakness"
+    },
+    {
+      "qid": "Q26899296",
+      "title": "Lumière!"
+    },
+    {
+      "qid": "Q3113022",
+      "title": "Mon cœur s'ouvre à ta voix",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp25",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mon_c%C5%93ur_s'ouvre_%C3%A0_ta_voix",
+      "wikipedia_extract": "\"Mon cœur s'ouvre à ta voix\" is a popular mezzo-soprano aria from Camille Saint-Saëns's opera Samson and Delilah, known in English as \"Softly awakes my heart\", or more literally \"My heart opens itself to your voice\". It is sung by Delilah in act 2 as she attempts to seduce Samson into revealing the secret of his strength.",
+      "pageviews_yearly": 19645
+    },
+    {
+      "qid": "Q17232049",
+      "title": "Morceau de concert, Op.94 (Saint-Saëns)"
+    },
+    {
+      "qid": "Q2028338",
+      "title": "Oratorio de Noël",
+      "imslp_id": "Oratorio_de_Noël,_Op.12_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP30753-IMSLP252089-PMLP30753-Saint_Saens-Oratorio_de_Noel-Partition_Chant_et_Piano_-_scantailored.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp193",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oratorio_de_No%C3%ABl",
+      "wikipedia_extract": "The Oratorio de Noël, Op. 12, by Camille Saint-Saëns, also known as his Christmas Oratorio, is a cantata-like work scored for soloists, chorus, organ, strings and harp. While an organist at La Madeleine, Saint-Saëns wrote the Christmas oratorio in less than a fortnight, completing it ten days before its premiere on Christmas 1858. The vocal score of this oratorio was prepared later by the composer and organist Eugene Gigout, a colleague of Saint-Saëns.",
+      "pageviews_yearly": 10688
+    },
+    {
+      "qid": "Q123299857",
+      "title": "Orient et Occident",
+      "imslp_id": "Orient_et_occident,_Op.25_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP59071--Orient_et_Occident_marche_-...-Saint-Sae-ns_Camille_btv1b10468010s.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp54"
+    },
+    {
+      "qid": "Q11331943",
+      "title": "Phaéton",
+      "imslp_id": "Phaéton,_Op.39_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP47167-Phaeton_Op_39.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp41",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pha%C3%A9ton_(Saint-Sa%C3%ABns)",
+      "wikipedia_extract": "Phaéton (Phaethon), Op. 39, is a symphonic poem for orchestra, composed by Camille Saint-Saëns in 1873. It is the second in his genre's tetralogy, preceded by Le Rouet d'Omphale and followed by Danse macabre and La jeunesse d'Hercule. The work was premiered at the Théâtre du Châtelet on 7 December 1873, performed by the Concert National conducted by Édouard Colonne. Despite its initial cool reception, the work has managed to remain in the borders of the repertoire, but is largely overshadowed in popularity by Danse Macabre.",
+      "pageviews_yearly": 7299
+    },
+    {
+      "qid": "Q2884924",
+      "title": "Phryné",
+      "imslp_id": "Phryné_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP56214--Phryne-_ope-ra-comique_en_deux_-...-Saint-Sae-ns_pno.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp10",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Phryn%C3%A9_(opera)",
+      "wikipedia_extract": "Phryné is an 1893 opéra comique in 2 acts by Camille Saint-Saëns to a libretto by Lucien Augé de Lassus, based on the life of ancient Greek courtesan Phryne. The role of Phryne was initiated by Sibyl Sanderson.",
+      "pageviews_yearly": 2045
+    },
+    {
+      "qid": "Q162918",
+      "title": "Piano Concerto No. 1",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Saint-Saens_2nd_Piano_Concerto_1st_Movement_Piano_solo.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q223334",
+      "title": "Piano Concerto No. 3",
+      "imslp_id": "Piano_Concerto_No.3,_Op.29_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP08463-Saint-Saëns_-_Piano_Concerto_No._3__Op._29__orch._score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp59",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._3_(Saint-Sa%C3%ABns)",
+      "wikipedia_extract": "The Piano Concerto No. 3 in E♭ major, Op. 29 by Camille Saint-Saëns, was composed in 1869. The concerto is written in three movements.",
+      "pageviews_yearly": 3124
+    },
+    {
+      "qid": "Q239698",
+      "title": "Piano Concerto No. 5",
+      "imslp_id": "Piano_Concerto_No.5,_Op.103_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP08467-Piano_Concerto_No_5_Op_103.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp65",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._5_(Saint-Sa%C3%ABns)",
+      "wikipedia_extract": "The Piano Concerto No. 5 in F major, Op. 103, popularly known as The Egyptian, was Camille Saint-Saëns' last piano concerto. He wrote it in 1896, 20 years after his Fourth Piano Concerto, to play himself at his own Jubilee Concert on May 6 of that year. This concert celebrated the fiftieth anniversary of his début at the Salle Pleyel in 1846.",
+      "pageviews_yearly": 16696
+    },
+    {
+      "qid": "Q18163159",
+      "title": "Piano Quartet in E major",
+      "imslp_id": "Piano_Quartet_in_E_major_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP1559603-saint-saëns-piano-quartet-in-e-major-emm-00-score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Quartet_in_E_major_(Saint-Sa%C3%ABns)",
+      "wikipedia_extract": "The Piano Quartet in E major, Op. posth., by Camille Saint-Saëns, also known as the Piano Quartet No. 1 in E major, WoO, was one of the composer's earliest compositions for piano, violin, viola and cello. Completed in 1853, when he was 18 years of age, the quartet remained in manuscript until 1992.",
+      "pageviews_yearly": 1389
+    },
+    {
+      "qid": "Q56303966",
+      "title": "Piano Quintet",
+      "imslp_id": "Piano_Quintet,_Op.14_(Saint-Saëns,_Camille)",
+      "pdf_filename": "SIBLEY1802.24922.2d9f-39087009103328violin2.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp84",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Quintet_(Saint-Sa%C3%ABns)",
+      "wikipedia_extract": "Piano Quintet in A minor, Op. 14, by Camille Saint-Saëns is a piano quintet composed in 1855 and published 10 years later in 1865.",
+      "pageviews_yearly": 1557
+    },
+    {
+      "qid": "Q3539368",
+      "title": "Piano Trio No. 1",
+      "imslp_id": "Piano_Trio_No.1,_Op.18_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP12814-Op018.scptsc.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp93",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Trio_No._1_(Saint-Sa%C3%ABns)",
+      "wikipedia_extract": "The Piano Trio No. 1 in F major, Op. 18 is a piano trio by French composer Camille Saint-Saëns. Written in 1864 during a trip to the Pyrenees and Auvergne, the trio is dedicated to Alfred Lamarche, a family friend who cared for Saint-Saëns's mother during his absences. The work, scored for piano, violin, and violoncello, was premiered in 1865 at Salle Pleyel in Paris and published in 1867. The trio consists of four movements: Allegro vivace, Andante, Scherzo (Presto), and Allegro.",
+      "pageviews_yearly": 2201
+    },
+    {
+      "qid": "Q3539369",
+      "title": "Piano Trio No. 2",
+      "imslp_id": "Piano_Trio_No.2,_Op.92_(Saint-Saëns,_Camille)",
+      "pdf_filename": "SIBLEY1802.9675.5be7-39087011962224color_cover.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp95",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Trio_No._2_(Saint-Sa%C3%ABns)",
+      "wikipedia_extract": "\nThe Piano Trio No. 2 in E minor, Op. 92, was composed by Camille Saint-Saëns in 1892. It was premiered on 7 December 1892 at the Salle Érard in Paris, performed by Isidor Philipp, Henri Berthelier and Jules Loeb.",
+      "pageviews_yearly": 2103
+    },
+    {
+      "qid": "Q3407686",
+      "title": "Proserpine",
+      "imslp_id": "Proserpine_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP81374-Saint-Saëns_-_Proserpine__Act_I_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp8",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Proserpine_(Saint-Sa%C3%ABns)",
+      "wikipedia_extract": "Proserpine is an 1887 drame lyrique in four acts by Camille Saint-Saëns to a libretto by Louis Gallet after Auguste Vacquerie.",
+      "pageviews_yearly": 2075
+    },
+    {
+      "qid": "Q2145477",
+      "title": "Requiem",
+      "imslp_id": "Requiem,_Op.54_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP86326-Requiem_manuscrit_Saint-Saëns.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp211",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Requiem_(Saint-Sa%C3%ABns)",
+      "wikipedia_extract": "The Requiem, full title Messe de Requiem, Op. 54, is a Requiem Mass composed by Camille Saint-Saëns in 1878 for soloists, choir and orchestra. He composed it in memory of his friend and patron, Albert Libon (1823-1877), and conducted the first performance on 22 May 1878 at Saint-Sulpice, Paris, with Charles-Marie Widor as the organist. It was first published the same year.",
+      "pageviews_yearly": 4614
+    },
+    {
+      "qid": "Q86454454",
+      "title": "Saint-Saëns: Violin Concerto No. 3 & Grieg: Piano Concerto"
+    },
+    {
+      "qid": "Q18163714",
+      "title": "Serenade in E-flat major",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Serenade_in_E-flat_major_(Saint-Sa%C3%ABns)",
+      "wikipedia_extract": "Camille Saint-Saëns' Serenade in E-flat major, Op. 15 is a chamber composition for a quartet consisting of piano, organ, violin and viola, composed in 1865. It is one of the earliest works by the composer to make use of an organ in a chamber ensemble, preceded only by the Six Duos for harmonium and piano, Op. 8. In addition to the original scoring, the work has been transcribed for orchestra, piano solo, piano four-hands, and for piano quartet, with a cello taking the part of the organ.",
+      "pageviews_yearly": 1331
+    },
+    {
+      "qid": "Q28973303",
+      "title": "Sonatas for wind instruments (Saint-Saëns)",
+      "movements": [
+        {
+          "qid": "Q3490252"
+        },
+        {
+          "qid": "Q1999134"
+        },
+        {
+          "qid": "Q17231937"
+        }
+      ]
+    },
+    {
+      "qid": "Q54987554",
+      "title": "Spring begins"
+    },
+    {
+      "qid": "Q3413796",
+      "title": "String Quartet No. 1",
+      "imslp_id": "String_Quartet_No.1,_Op.112_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP60205-Quatuor_a-_cordes_No_1msSaint-Sae-ns_Camille_btv1b550098715.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp82"
+    },
+    {
+      "qid": "Q3413818",
+      "title": "String Quartet No. 2",
+      "imslp_id": "String_Quartet_No.2,_Op.153_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP60221-2eQuatuor_pour_2Saint-Sae-ns_Camille_btv1b10546936p.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp83"
+    },
+    {
+      "qid": "Q608472",
+      "title": "Suite for Cello and Piano",
+      "imslp_id": "Suite for Cello and Piano, Op.16 (Saint-Saëns, Camille)",
+      "pdf_filename": "PMLP53100-BnF_bpt6k1182776s.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Suite_for_Cello_and_Piano_(Saint-Sa%C3%ABns)",
+      "wikipedia_extract": "The Suite for Cello and Piano, Op. 16, was written by Camille Saint-Saëns in 1866. This work is considered the launching point of the composer's career.",
+      "pageviews_yearly": 2080
+    },
+    {
+      "qid": "Q223533",
+      "title": "Symphony No. 3"
+    },
+    {
+      "qid": "Q3507609",
+      "title": "Symphony in F major",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Saint-Saens_Symphony_No_1_3rd_Mvmt-Adagio_Arr_for_2_pianos.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q1212230",
+      "title": "The Assassination of the Duke of Guise",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp24",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Assassination_of_the_Duke_of_Guise",
+      "wikipedia_extract": "The Assassination of the Duke of Guise (1908) is a French film d'art silent film directed by Charles le Bargy and André Calmettes, adapted by Henri Lavedan, and featuring actors of the Comédie-Française and prominent set designers. It is one of the first films to feature both an original film score, composed by Camille Saint-Saëns, and a screenplay by an eminent screenwriter.",
+      "pageviews_yearly": 9969
+    },
+    {
+      "qid": "Q28943933",
+      "title": "The Carnival of the Animals, Finale"
+    },
+    {
+      "qid": "Q30728425",
+      "title": "The Lion's Royal March"
+    },
+    {
+      "qid": "Q30611742",
+      "title": "The Promised Land",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Promised_Land_(Saint-Sa%C3%ABns)",
+      "wikipedia_extract": "\nThe Promised Land, Op. 140, is an English and later French-language oratorio by Camille Saint-Saëns for the Three Choirs Festival of 1913 and which the composer conducted at Gloucester Cathedral.",
+      "pageviews_yearly": 1519
+    },
+    {
+      "qid": "Q2991895",
+      "title": "Violin Concerto No. 1 (Saint-Saëns)",
+      "imslp_id": "Violin_Concerto_No.1,_Op.20_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP58065-39087009420060score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp66",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Violin_Concerto_No._1_(Saint-Sa%C3%ABns)",
+      "wikipedia_extract": "The Violin Concerto No. 1 in A major, Op. 20, by Camille Saint-Saëns is a piece for violin and orchestra written in 1859 and premiered in 1867 in Paris. Despite its numbering, this concerto was Saint-Saëns' second for the violin because it was published first. This was the first in a string of collaborations with virtuoso violinist Pablo Sarasate, who was only 15 years old at the time. This concerto, along with No. 2 and No. 3, would result in a lifelong friendship and collaboration between Saint-Saëns and Sarasate. The work never gained much popularity during Saint-Saëns' lifetime, to his disappointment.",
+      "pageviews_yearly": 2849
+    },
+    {
+      "qid": "Q2991906",
+      "title": "Violin Concerto No. 2",
+      "imslp_id": "Violin_Concerto_No.2,_Op.58_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP69048-Concerto_pour_violon_et_orchestre_2Saint-Sae-ns_Camille_btv1b10022051g.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp69",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Violin_Concerto_No._2_(Saint-Sa%C3%ABns)",
+      "wikipedia_extract": "The Violin Concerto No. 2 in C major, Op. 58, by Camille Saint-Saëns, was the composer's first violin concerto, written in 1858, although it was published in 1879 and so is numbered second. It was premiered in 1880 with Pierre Marsick as soloist.",
+      "pageviews_yearly": 2615
+    },
+    {
+      "qid": "Q1141036",
+      "title": "Violin Concerto No. 3",
+      "imslp_id": "Violin_Concerto_No.3,_Op.61_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP10675-Concerto_pour_Violon_Saint-Saëns.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp70",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Violin_Concerto_No._3_(Saint-Sa%C3%ABns)",
+      "wikipedia_extract": "The Violin Concerto No. 3 in B minor, Op. 61, by Camille Saint-Saëns is a piece for violin and orchestra written in March 1880. Saint-Saëns dedicated the concerto to fellow composer-virtuoso Pablo de Sarasate, who performed the solo part at the premiere in October 1880 in Hamburg.",
+      "pageviews_yearly": 11772
+    },
+    {
+      "qid": "Q11351834",
+      "title": "Violin Sonata No. 2",
+      "imslp_id": "Violin_Sonata_No.2,_Op.102_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP10585-2__Sonate_pour_violon_Saint-Sae-ns_Camille_bpt6k1159281q.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp102",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Violin_Sonata_No._2_(Saint-Sa%C3%ABns)",
+      "wikipedia_extract": "The Violin Sonata No. 2 in E♭ major, Op. 102, was written by Camille Saint-Saëns from February to March 1896, and premiered on 2 June 1896 in Paris.",
+      "pageviews_yearly": 1742
+    },
+    {
+      "qid": "Q122596907",
+      "title": "Wedding Cake",
+      "imslp_id": "Wedding_Cake,_Op.76_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP17878-Saint-Saens_Wedding_Cake__Op.76_-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/camille-saint-saens-1835-pp63"
+    },
+    {
+      "qid": "Q3592267",
+      "title": "Étienne Marcel",
+      "imslp_id": "Étienne_Marcel_(Saint-Saëns,_Camille)",
+      "pdf_filename": "PMLP78459-Saint-Saëns_-_Etienne_Marcel_-_Pavane__trans._Taffanel_-_flute_and_piano_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/%C3%89tienne_Marcel_(opera)",
+      "wikipedia_extract": "Étienne Marcel is an 1879 opera in 4 acts by Camille Saint-Saëns to a libretto by Louis Gallet.",
+      "pageviews_yearly": 1671
+    }
+  ]
+}

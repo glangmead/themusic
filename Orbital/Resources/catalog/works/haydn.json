@@ -1,0 +1,2471 @@
+{
+  "composer_slug": "haydn",
+  "composer_qid": "Q7349",
+  "work_count": 242,
+  "midi_file_count": 20,
+  "works": [
+    {
+      "qid": "Q163540",
+      "title": "Symphony No. 1",
+      "imslp_id": "Symphony_No.1_in_D_major,_Hob.I:1_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71223-21093.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp39",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._1_(Haydn)",
+      "wikipedia_extract": "Joseph Haydn's Symphony No. 1 in D major, Hoboken I/1, was written in 1759 in Unter-Lukawitz, while in the service of Count Morzin. While it is reliably known that No. 1 was written in 1759, H. C. Robbins Landon cannot rule out that No. 2, No. 4, or both could have been composed in 1757 or 1758, which would make the this Haydn's third symphony, rather than his first.",
+      "pageviews_yearly": 6697,
+      "date": "1757-00-00"
+    },
+    {
+      "qid": "Q246471",
+      "title": "Symphony No. 6",
+      "imslp_id": "Symphony_No.6_in_D_major,_Hob.I:6_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71273-Haydn-_Sinfonia_Nr6__HCR_Landon_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp44",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._6_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 6 in D major is an early symphony written in 1761 by Joseph Haydn and the first written after Haydn had joined the Esterházy court. It is the first of three that are characterized by unusual virtuoso writing across the orchestral ensemble. It is popularly known as Le matin (\"Morning\").",
+      "pageviews_yearly": 6930,
+      "date": "1761-00-00"
+    },
+    {
+      "qid": "Q261062",
+      "title": "Symphony No. 7",
+      "imslp_id": "Symphony_No.7_in_C_major,_Hob.I:7_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP51749-Haydn-_Sinfonia_Nr7__HCR_Landon_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp45",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._7_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 7 in C major, Hoboken I/7, is a symphony by Joseph Haydn, sometimes called Le midi, meaning \"The Noon.\"",
+      "pageviews_yearly": 4450,
+      "date": "1761-00-00"
+    },
+    {
+      "qid": "Q175537",
+      "title": "Symphony No. 13",
+      "imslp_id": "Symphony_No.13_in_D_major,_Hob.I:13_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP35140-Haydn-H1.013FSbh.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp51",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._13_(Haydn)",
+      "wikipedia_extract": "Joseph Haydn's Symphony No. 13 in D major was written in 1763 for the orchestra of Haydn's patron, Prince Nikolaus Esterházy, in Eisenstadt. The symphony can be precisely dated thanks to a dated score in Haydn's own hand in the National Library of Budapest. Two other Haydn symphonies are known to have been written in the same year: Symphony No. 12 and Symphony No. 40.",
+      "pageviews_yearly": 3429,
+      "date": "1763-00-00"
+    },
+    {
+      "qid": "Q214663",
+      "title": "Symphony No. 22",
+      "imslp_id": "Symphony_No.22_in_E-flat_major,_Hob.I:22_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP61580-Haydn-_Sinfonia_Nr22__HCR_Landon_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp60",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._22_(Haydn)",
+      "wikipedia_extract": "Symphony No. 22 in E♭ major, Hoboken I/22, is a symphony written by Joseph Haydn in 1764 for his employer Prince Nikolaus Esterházy. Its nickname is The Philosopher.",
+      "pageviews_yearly": 6389,
+      "date": "1764-00-00"
+    },
+    {
+      "qid": "Q162002",
+      "title": "Cello Concerto No. 1",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp338",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cello_Concerto_No._1_(Haydn)",
+      "wikipedia_extract": "The Cello Concerto No. 1 in C major, Hob. VIIb/1, by Joseph Haydn was composed around 1761–1765 for longtime friend Joseph Franz Weigl, then the principal cellist of Prince Nicolaus's Esterházy Orchestra.",
+      "pageviews_yearly": 16835,
+      "date": "1765-00-00"
+    },
+    {
+      "qid": "Q132471423",
+      "title": "Keyboard sonata D major Hob. XVI:14",
+      "date": "1767-00-00"
+    },
+    {
+      "qid": "Q219250",
+      "title": "Symphony No. 26",
+      "imslp_id": "Symphony_No.26_in_D_minor,_Hob.I:26_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71533-Haydn-_Sinfonia_Nr26__HCR_Landon_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp64",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._26_(Haydn)",
+      "wikipedia_extract": "\nThe Symphony No. 26 in D minor, Hoboken 1/26, is one of the early Sturm und Drang symphonies written by Joseph Haydn. It was written under the auspices of Prince Nikolaus Esterházy, and is from the late 1760s, when Haydn began to experiment with minor key symphonic writing. It is also one of his first minor key symphonies.",
+      "pageviews_yearly": 4577,
+      "date": "1768-00-00"
+    },
+    {
+      "qid": "Q236693",
+      "title": "Symphony No. 48",
+      "imslp_id": "Symphony_No.48_in_C_major,_Hob.I:48_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP47339-Haydn-_Sinfonia_Nr48__HCR_Landon_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp86",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._48_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 48 in C major, Hoboken I/48, is a symphony by Joseph Haydn written in 1768 or 1769. The work has the nickname Maria Theresa as it was long thought to have been composed for a visit by the Holy Roman Empress, Maria Theresa of Austria in 1773. An earlier copy dated 1769 was later found, but the nickname has stuck. The symphony composed for the empress's visit was most likely No. 50.",
+      "pageviews_yearly": 3682,
+      "date": "1769-00-00"
+    },
+    {
+      "qid": "Q781548",
+      "title": "Symphony No. 43",
+      "imslp_id": "Symphony_No.43_in_E-flat_major,_Hob.I:43_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71692-Haydn-_Sinfonia_Nr43__HCR_Landon_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp81",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._43_(Haydn)",
+      "wikipedia_extract": "Symphony No. 43 in E♭ major, Hoboken I/43, is a symphony by Joseph Haydn. Since the nineteenth century it has been referred to by the subtitle Mercury.",
+      "pageviews_yearly": 2808,
+      "date": "1772-00-00"
+    },
+    {
+      "qid": "Q234880",
+      "title": "Symphony No. 45",
+      "imslp_id": "Symphony_No.45_in_F-sharp_minor,_Hob.I:45_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP51750-1242-Haydn-Symphonie45-000-Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp83",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._45_(Haydn)",
+      "wikipedia_extract": "Joseph Haydn's Symphony No. 45 in F♯ minor, known as the \"Farewell\" Symphony, is a symphony dated 1772 on the autograph score. A typical performance of the symphony lasts around twenty-five minutes.",
+      "pageviews_yearly": 24459,
+      "date": "1772-00-00"
+    },
+    {
+      "qid": "Q132471453",
+      "title": "Keyboard sonata C major Hob. XVI:21",
+      "date": "1773-00-00"
+    },
+    {
+      "qid": "Q3490157",
+      "title": "Piano Sonata in F Major, H.XVI:23",
+      "imslp_id": "Keyboard_Sonata_in_F_major,_Hob.XVI:23_(Haydn,_Joseph)",
+      "pdf_filename": "Haydn_-_Piano_Sonata_No_23_in_F.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1773-00-00"
+    },
+    {
+      "qid": "Q132471475",
+      "title": "Keyboard sonata F major Hob. XVI:29",
+      "date": "1774-00-00"
+    },
+    {
+      "qid": "Q2199709",
+      "title": "Symphony No. 77",
+      "imslp_id": "Symphony_No.77_in_B-flat_major,_Hob.I:77_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP72204-Cinquie-me_simphonie_exe-cute-e_plusieurs_fois_-...-Haydn_Joseph_btv1b90578597.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp115",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._77_(Haydn)",
+      "wikipedia_extract": "Symphony No. 77 in B♭ major, Hoboken I/77, is a symphony by Joseph Haydn completed in 1782.",
+      "pageviews_yearly": 1749,
+      "date": "1782-00-00"
+    },
+    {
+      "qid": "Q1219505",
+      "title": "The Seven Last Words of Christ Hob. XX:1",
+      "imslp_id": "Die_Worte_des_Erlösers_am_Kreuze,_Hob.XX:1_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP191039-Haydn_7_last_pno.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp311",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Seven_Last_Words_of_Christ_(Haydn)",
+      "wikipedia_extract": "The Seven Last Words of Our Saviour on the Cross is an orchestral work by Joseph Haydn, commissioned in 1786 for the Good Friday service at Oratorio de la Santa Cueva in Cádiz, Spain. Published in 1787 and performed then in Paris, Rome, Berlin and Vienna, the composer adapted it in 1787 for string quartet, approved a version for solo piano in the same year, and finally adapted it in 1796 as an oratorio.",
+      "pageviews_yearly": 24106,
+      "date": "1786-00-00"
+    },
+    {
+      "qid": "Q133163458",
+      "title": "The Seven Last Words of Christ Hob. XX:1B",
+      "date": "1787-00-00"
+    },
+    {
+      "qid": "Q46243183",
+      "title": "String Quartet in F Minor, H.III:61",
+      "date": "1788-00-00"
+    },
+    {
+      "qid": "Q28455004",
+      "title": "Fantasia in C major",
+      "imslp_id": "Fantasia_in_C_major,_Hob.XVII:4_(Haydn,_Joseph)",
+      "pdf_filename": "Haydn_-_Fantasia_in_C.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp761",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fantasia_in_C_major_(Haydn)",
+      "wikipedia_extract": "Fantasia in C major, Hob. XVII/4, \"Capriccio\", was written by Joseph Haydn. It is based on the Austrian folk song D’ Bäurin hat d'Katz verlor'n.",
+      "pageviews_yearly": 1925,
+      "date": "1789-00-00"
+    },
+    {
+      "qid": "Q164779",
+      "title": "Symphony No. 100",
+      "imslp_id": "Symphony_No.100_in_G_major,_Hob.I:100_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP07580-153_IMSLP284343-PMLP461683-Hayd_Sinf_2.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp138",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._100_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 100 in G major, Hoboken I/100, is the eighth of the twelve London symphonies written by Joseph Haydn and completed in 1793 or 1794. It is popularly known as the Military Symphony.",
+      "pageviews_yearly": 9024,
+      "date": "1791-00-00"
+    },
+    {
+      "qid": "Q276644",
+      "title": "Symphony No. 93",
+      "imslp_id": "Symphony_No.93_in_D_major,_Hob.I:93_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP61600-71_IMSLP475217-PMLP771208-Haydn-LondonSyms1.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp131",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._93_(Haydn)",
+      "wikipedia_extract": "Joseph Haydn's Symphony No. 93 in D major, Hoboken I/93, is one of Haydn's twelve London symphonies. The symphony was completed in 1791 as one of the set of symphonies completed for his first trip to London. It was first performed at the Hanover Square Rooms in London on 17 February 1792.",
+      "pageviews_yearly": 6269,
+      "date": "1791-00-00"
+    },
+    {
+      "qid": "Q276925",
+      "title": "Symphony No. 95",
+      "imslp_id": "Symphony_No.95_in_C_minor,_Hob.I:95_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP61603-235_IMSLP475217-PMLP771208-Haydn-LondonSyms1.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp133",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._95_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 95 in C minor is the third of the twelve London symphonies written by Joseph Haydn. It is the only one of the twelve London symphonies in a minor key and the only one without a slow introduction.",
+      "pageviews_yearly": 4653,
+      "date": "1791-00-00"
+    },
+    {
+      "qid": "Q2288893",
+      "title": "Sinfonia Concertante in B-flat Major, Hob.I:105",
+      "imslp_id": "Sinfonia_concertante_in_B-flat_major,_Hob.I:105_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71618-Haydn_Sinfonia_concertante_in_B-flat_major__Hob.I_105__Sitt__-_Basses.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sinfonia_Concertante_(Haydn)",
+      "wikipedia_extract": "The Sinfonia Concertante in B♭ major by Joseph Haydn was composed in London between February and March 1792. It is believed to be a response to similar works composed by Ignaz Pleyel, a former student of Haydn's who London newspapers were promoting as a 'rival' to Haydn.",
+      "pageviews_yearly": 5808,
+      "date": "1792-00-00"
+    },
+    {
+      "qid": "Q277086",
+      "title": "Symphony No. 97",
+      "imslp_id": "Symphony_No.97_in_C_major,_Hob.I:97_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP61608-13_IMSLP475217-PMLP771208-Haydn-LondonSyms1.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp135",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._97_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 97 in C major, Hoboken I/97, is the fifth of the twelve London symphonies written by Joseph Haydn. It was completed in 1792 as part of the set of symphonies composed on his first trip to London. It was first performed at the Hanover Square Rooms in London on 3 or 4 May 1792. First published in England, it made its way to the continent a few years later and was used by Ludwig van Beethoven as a model for a symphony in C major he never completed, and by Friedrich Witt for the Jena Symphony.",
+      "pageviews_yearly": 3850,
+      "date": "1792-00-00"
+    },
+    {
+      "qid": "Q979731",
+      "title": "Piano Sonata No. 52",
+      "imslp_id": "Keyboard_Sonata_in_E-flat_major,_Hob.XVI:52_(Haydn,_Joseph)",
+      "pdf_filename": "Haydn_-_Piano_Sonata_No_52_in_Eb.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_Hob._XVI%2F52",
+      "wikipedia_extract": "The Piano Sonata in E♭ major, Hob. XVI/52, L. 62, was written in 1794 by Joseph Haydn. It is the last of Haydn's piano sonatas, and is widely considered his greatest. It has been the subject of extensive analysis by distinguished musicological personages such as Heinrich Schenker and Sir Donald Tovey, largely because of its expansive length, unusual harmonies and interesting development. The sonata is sometimes referred to as number 62 based on the numbering of Landon instead of the numbering of Hoboken.",
+      "pageviews_yearly": 8992,
+      "date": "1794-00-00"
+    },
+    {
+      "qid": "Q3539387",
+      "title": "Piano Trio No. 39",
+      "imslp_id": "Piano_Trio_in_G_major,_Hob.XV:25_(Haydn,_Joseph)",
+      "pdf_filename": "Haydn_-_Gypsy_Rondo.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp1667",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Trio_No._39_(Haydn)",
+      "wikipedia_extract": "Joseph Haydn's Piano Trio No. 39 in G major, Hob. XV/25 was written in 1795, during the final few weeks of Haydn's second trip to London, and one of a set of three dedicated to Rebecca Schroeter. It is perhaps his best-known piano trio and sometimes nicknamed the \"Gypsy\" or \"Gypsy Rondo\" trio because of its Rondo finale in 'Hungarian' style.",
+      "pageviews_yearly": 7755,
+      "date": "1795-00-00"
+    },
+    {
+      "qid": "Q3539386",
+      "title": "Piano Trio No. 43",
+      "imslp_id": "Piano_Trio_in_C_major,_Hob.XV:27_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP118678-Haydn_Jos_PnoTrio3_Pno4h.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp625",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Trio_No._43_(Haydn)",
+      "wikipedia_extract": "Joseph Haydn's Piano Trio No. 43 in C major, Hob XV:27, was published in 1797 while Haydn was still in England on the second of his highly successful London visits. It is the first of a set of three trios dedicated to Mrs. Therese Jansen Bartolozzi. Batolozzi was an eminent pianist, and this trio is notable for its demanding piano part, at a time when the trio form was mostly associated with amateur performance.",
+      "pageviews_yearly": 1895,
+      "date": "1795-00-00"
+    },
+    {
+      "qid": "Q166278",
+      "title": "Symphony No. 104",
+      "imslp_id": "Symphony_No.104_in_D_major,_Hob.I:104_(Haydn,_Joseph)",
+      "pdf_filename": "Haydn_-_Symphony_No.104__Full_Score_-_2_pages_per_image_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp142",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._104_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 104 in D major is Joseph Haydn's final symphony. It is the last of the twelve London symphonies, and is known as the London Symphony. In Germany it is commonly known as the Salomon Symphony after Johann Peter Salomon, who arranged Haydn's two tours of London, even though it is one of three of the last twelve symphonies written for Viotti’s Opera Concerts, rather than for Salomon.",
+      "pageviews_yearly": 21905,
+      "date": "1795-00-00"
+    },
+    {
+      "qid": "Q163138",
+      "title": "The Creation",
+      "imslp_id": "Die_Schöpfung,_Hob.XXI:2_(Haydn,_Joseph)",
+      "pdf_filename": "Haydn_creation_oratorio_full_score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp827",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Creation_(Haydn)",
+      "wikipedia_extract": "The Creation is an oratorio written in 1797 and 1798 by Joseph Haydn, and considered by many to be his masterpiece. The oratorio depicts and celebrates the creation of the world as narrated in the Book of Genesis.",
+      "pageviews_yearly": 62776,
+      "date": "1796-00-00"
+    },
+    {
+      "qid": "Q133163730",
+      "title": "The Seven Last Words of Christ Hob. XX:2",
+      "date": "1796-00-00"
+    },
+    {
+      "qid": "Q15260435",
+      "title": "3rd Ave. El",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/3rd_Ave._El_(film)",
+      "wikipedia_extract": "3rd Ave. El is an American short film made by Carson Davidson in 1955. The film presents four vignettes of passengers riding the Third Avenue elevated railway in New York City, made shortly before the line closed in 1955. The film was nominated for an Academy Award for Best Live Action Short Film.",
+      "pageviews_yearly": 2669
+    },
+    {
+      "qid": "Q78647613",
+      "title": "A Duw a greodd ddyn = And God created man : Y greadigaeth"
+    },
+    {
+      "qid": "Q113563146",
+      "title": "Acide",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp25"
+    },
+    {
+      "qid": "Q78526541",
+      "title": "Adroddgan : Gan agor ei thoreithiog groth ; Alaw : Disglair ogoniant leinw'r nef : Creadigaeth : bas"
+    },
+    {
+      "qid": "Q52325938",
+      "title": "Arianna a Naxos",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp1103"
+    },
+    {
+      "qid": "Q130354755",
+      "title": "Arietta con 12 Variazioni (A major)"
+    },
+    {
+      "qid": "Q238762",
+      "title": "Armida",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp37",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Armida_(Haydn)",
+      "wikipedia_extract": "Armida is a 1784 opera in three acts by Austrian composer Joseph Haydn, set to an Italian-language libretto taken from Antonio Tozzi's 1775 opera Rinaldo, as amended by Nunziato Porta, and ultimately based on the story of Armida and Rinaldo in Torquato Tasso's poem Gerusalemme liberata.",
+      "pageviews_yearly": 5103
+    },
+    {
+      "qid": "Q109769615",
+      "title": "Austrian Hymn"
+    },
+    {
+      "qid": "Q4866065",
+      "title": "Baryton trios",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp552",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Baryton_trios_(Haydn)",
+      "wikipedia_extract": "Joseph Haydn wrote 123 trios for the unusual combination of baryton, viola and cello. Three further trios for baryton, cello and violin are considered part of the series. As Sisman notes, they are the “most intensively cultivated genre” of Haydn’s early career.",
+      "pageviews_yearly": 6574
+    },
+    {
+      "qid": "Q209730",
+      "title": "Cello Concerto No. 2",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp339",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cello_Concerto_No._2_(Haydn)",
+      "wikipedia_extract": "Joseph Haydn's Cello Concerto No. 2 in D Major, Hob. VIIb/2, Op. 101, was for many years thought to have been composed in 1783 for Antonín Kraft, a cellist of Prince Nikolaus's Esterházy orchestra.",
+      "pageviews_yearly": 9807
+    },
+    {
+      "qid": "Q130351783",
+      "title": "Collection of piano pieces, unidentified",
+      "movements": [
+        {
+          "qid": "Q130354755"
+        },
+        {
+          "qid": "Q1805930"
+        },
+        {
+          "qid": "Q130354822"
+        },
+        {
+          "qid": "Q130356274"
+        },
+        {
+          "qid": "Q48772281"
+        },
+        {
+          "qid": "Q211025"
+        },
+        {
+          "qid": "Q130356319"
+        },
+        {
+          "qid": "Q13323"
+        },
+        {
+          "qid": "Q130356420"
+        },
+        {
+          "qid": "Q130356788"
+        },
+        {
+          "qid": "Q2991873"
+        }
+      ]
+    },
+    {
+      "qid": "Q78647720",
+      "title": "Cân Errisena allan o \"Allessandro nell'lndie\" : aria di Errisena"
+    },
+    {
+      "qid": "Q5261261",
+      "title": "Der krumme Teufel",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Der_krumme_Teufel",
+      "wikipedia_extract": "Der krumme Teufel, Hob. 29/1a, was Joseph Haydn's first opera. This German-language comic opera in the genre of Singspiel was commissioned by its librettist, leading comic actor Joseph Felix von Kurz, from the French novel Le Diable boiteux by Alain-René Lesage. It was forbidden after two acclaimed performances in Vienna due to \"offensive remarks in the text\", but later revived and probably revised as Der neue krumme Teufel, Hob. 29/1b. The music is lost, though a libretto survives for each version.",
+      "pageviews_yearly": 2543
+    },
+    {
+      "qid": "Q44042",
+      "title": "Deutschlandlied",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Das_Lied_der_Deutschen_F_J_Haydn_SATB.mid",
+        "midi/Das_Deutschlandlied.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q47465859",
+      "title": "Die Braut"
+    },
+    {
+      "qid": "Q133030693",
+      "title": "Die Himmel erzählen die Ehre Gottes",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp827"
+    },
+    {
+      "qid": "Q17001881",
+      "title": "Divertimento in G major",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp189",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Divertimento_in_G_major",
+      "wikipedia_extract": "The Divertimento in G major, Hob. XVI/8, L. 1, was written in 1766 by Joseph Haydn.",
+      "pageviews_yearly": 2044
+    },
+    {
+      "qid": "Q119586010",
+      "title": "Glorious Things of Thee Are Spoken",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Glorious_Things_of_Thee_Are_Spoken.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q30562",
+      "title": "Gott erhalte Franz den Kaiser",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp1770",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gott_erhalte_Franz_den_Kaiser",
+      "wikipedia_extract": "\"Gott erhalte Franz den Kaiser\", also called the \"Kaiserhymne\", is an anthem composed in 1797 by Joseph Haydn. In its original version it was paired with lyrics by Lorenz Leopold Haschka and served as a patriotic song, expressing devotion to Francis II, Emperor of the Holy Roman Empire. In later times, Haydn's tune came to be widely employed in other contexts, often paired with new lyrics. These later versions include works of classical music, Christian hymns, alma maters, and the \"Deutschlandlied\", whose third stanza is the present national anthem of Germany.",
+      "pageviews_yearly": 75928
+    },
+    {
+      "qid": "Q464448",
+      "title": "Harmoniemesse",
+      "imslp_id": "Mass_in_B-flat_major,_Hob.XXII:14_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP216265-HarmoniemesseVS.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp842",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Harmoniemesse",
+      "wikipedia_extract": "The Harmoniemesse in B-flat major by Joseph Haydn, Hob. XXII:14, Novello 6, was written in 1802. It was Haydn's last major work. It is because of the prominence of the winds in this mass and \"the German terminology for a kind of wind ensemble, Harmonie,\" that this mass setting is called \"Harmoniemesse\" or \"Wind Band Mass\". Besides flute, 2 oboes, 2 clarinets, 2 bassoons, 2 horns in B-flat, 2 trumpets in B-flat, the mass also calls for choir, timpani, strings, and organ, the latter supplying figured bass for most of the duration.",
+      "pageviews_yearly": 5197
+    },
+    {
+      "qid": "Q2263625",
+      "title": "Horn Concerto No. 1",
+      "imslp_id": "Horn_Concerto_No.1_in_D_major,_Hob.VIId:3_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP311639-1.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp342",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Horn_Concerto_No._1_(Haydn)",
+      "wikipedia_extract": "Joseph Haydn's Horn Concerto No. 1 in D major, was completed in 1762, \"when Haydn was new to the Esterhazy court.\"",
+      "pageviews_yearly": 2721
+    },
+    {
+      "qid": "Q1037479",
+      "title": "Il mondo della luna",
+      "imslp_id": "Il_mondo_della_luna,_Hob.XXVIII:7_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP255247-themevariations00hayd.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp31",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Il_mondo_della_luna",
+      "wikipedia_extract": "Il mondo della luna, Hob. XXVIII:7, is an opera buffa by Joseph Haydn with a libretto written by Carlo Goldoni in 1750, first performed at Eszterháza, Hungary, on 3 August 1777. Goldoni's libretto had previously been set by six other composers, first by the composer Baldassare Galuppi and performed in Venice in the carnival of 1750. It was then adapted for Haydn's version of the opera, which would be performed during the wedding celebrations of Count Nikolaus Esterházy, the younger son of Haydn's patron, Prince Nikolaus Esterházy, and the Countess Maria Anna Wissenwolf. It is sometimes performed as a singspiel under its German title Die Welt auf dem Monde.",
+      "pageviews_yearly": 8130
+    },
+    {
+      "qid": "Q1658277",
+      "title": "Il ritorno di Tobia",
+      "imslp_id": "Il_ritorno_di_Tobia,_Hob.XXI:1_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP193203-10015779.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp148",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Il_ritorno_di_Tobia",
+      "wikipedia_extract": "Il ritorno di Tobia is an oratorio in two parts composed in 1775 by Joseph Haydn. The work is the first oratorio the composer wrote and, according to Jones, was \"his most extended and ambitious composition up to that time\".",
+      "pageviews_yearly": 3555
+    },
+    {
+      "qid": "Q5801981",
+      "title": "Keyboard Concerto No. 11",
+      "imslp_id": "Keyboard_Concerto_in_D_major,_Hob.XVIII:11_(Haydn,_Joseph)",
+      "pdf_filename": "Haydn_Piano_Concerto_in_D__two_pianos_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Keyboard_Concerto_No._11_(Haydn)",
+      "wikipedia_extract": "Joseph Haydn's Keyboard Concerto in D major, Hob. XVIII:11, was written between 1780 and 1783 and published in 1784, his last concerto for keyboard. He composed it for harpsichord or fortepiano, scoring for orchestra in the relatively undeveloped galant style of his earlier works, but, being a somewhat late composition, the work has similarities to Mozart's piano concertos; Haydn and Mozart had probably become acquainted by 1783 and the friendship had a deep impact on both composers.",
+      "pageviews_yearly": 8012
+    },
+    {
+      "qid": "Q2991778",
+      "title": "Keyboard Concerto No. 4 in G",
+      "imslp_id": "Keyboard_Concerto_in_G_major,_Hob.XVIII:4_(Haydn,_Joseph)",
+      "pdf_filename": "Haydn_Piano_Concerto_in_G__two_pianos_.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q16965221",
+      "title": "Keyboard Sonata No. 15 in C Major",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_Hob._XVI%2F15",
+      "wikipedia_extract": "The Piano Sonata No. 15 in C major, Hob. XVI/15, is an arrangement for solo keyboard of the 1st, 3rd and 4th movements of the Divertimento in C by Joseph Haydn. This sonata is now considered spurious.",
+      "pageviews_yearly": 1016
+    },
+    {
+      "qid": "Q16982156",
+      "title": "Keyboard Sonata No. 17",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_Hob._XVI%2F17",
+      "wikipedia_extract": "The Piano Sonata in B♭ major, Hob. XVI/17, is a composition that was originally attributed to Joseph Haydn, but was later considered to have been written by an unknown composer, subsequently identified as Johann Gottfried Schwanenberger.",
+      "pageviews_yearly": 1055
+    },
+    {
+      "qid": "Q17017761",
+      "title": "Keyboard Sonata No. 18",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_Hob._XVI%2F18",
+      "wikipedia_extract": "The Piano Sonata in B♭ major, Hob. XVI/18, L. 20, was written in 1767 by Joseph Haydn.",
+      "pageviews_yearly": 1712
+    },
+    {
+      "qid": "Q17121736",
+      "title": "Keyboard Sonata No. 3 in F Major",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp680",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_Hob._XVI%2F9",
+      "wikipedia_extract": "The Piano Sonata in F major, Hob. XVI/9, L.3, also called a divertimento, was written before 1766 by Joseph Haydn. The first and last movements are used as the first and fifth movements respectively of the Piano Trio in F major, Hob. XV/39. The minuet of the middle movement is also used as the minuet of the fourth movement of Hob. XV/39.",
+      "pageviews_yearly": 1786
+    },
+    {
+      "qid": "Q3490155",
+      "title": "Keyboard Sonata No. 33",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Haydn_Sonata_in_G_Major_HOBXVI8.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q3490172",
+      "title": "Keyboard Sonata No. 34 (Haydn)",
+      "imslp_id": "Keyboard_Sonata_in_E_minor,_Hob.XVI:34_(Haydn,_Joseph)",
+      "pdf_filename": "Haydn_-_Piano_Sonata_No_34_in_e.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp704",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_Hob._XVI%2F34",
+      "wikipedia_extract": "The Piano Sonata in E minor, Hob. XVI/34, L. 53, was written in the late 1770s by Joseph Haydn and published in London around 1783 by Beardmore & Birchall.",
+      "pageviews_yearly": 4634
+    },
+    {
+      "qid": "Q3490167",
+      "title": "Keyboard Sonata No. 50 (Haydn)",
+      "imslp_id": "Keyboard_Sonata_in_C_major,_Hob.XVI:50_(Haydn,_Joseph)",
+      "pdf_filename": "Haydn_-_Piano_Sonata_No_50_in_C.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp720",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_Hob._XVI%2F50",
+      "wikipedia_extract": "The Piano Sonata in C major, Hob. XVI/50, L.60, was written c. 1794 by Joseph Haydn.",
+      "pageviews_yearly": 4641
+    },
+    {
+      "qid": "Q3490173",
+      "title": "Keyboard Sonata No. 59",
+      "imslp_id": "Keyboard_Sonata_in_E-flat_major,_Hob.XVI:49_(Haydn,_Joseph)",
+      "pdf_filename": "Haydn_-_Piano_Sonata_No_49_in_Eb.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp729",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_Hob._XVI%2F49",
+      "wikipedia_extract": "The Piano Sonata in E♭ major, Hob. XVI/49, L.59, was written in 1789/90 by Joseph Haydn. The sonata stands out among Haydn's pianoforte works both for the enthusiastic reaction it has evoked from critics and for the rather complicated story behind its genesis, driven by the composer's feelings for a younger, married woman he had befriended.",
+      "pageviews_yearly": 7748
+    },
+    {
+      "qid": "Q17017798",
+      "title": "Keyboard Sonata No. 5a",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp682",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_Hob._XIV%2F5",
+      "wikipedia_extract": "The Piano Sonata in D major, Hob. XIV/5, L.28, also called a divertimento, is a sonata written c.1765–1771 by Joseph Haydn. However, Anthony van Hoboken's catalogue states the composition date as \"before 1766\". It may have been written for 2 violins and cello.",
+      "pageviews_yearly": 1628
+    },
+    {
+      "qid": "Q17017817",
+      "title": "Keyboard Variations No. 5 in C Major",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Keyboard_Variations_in_C_major_(Haydn)",
+      "wikipedia_extract": "The Keyboard Variations No. 5 in C major, Hob. XVII/5, is a set of Keyboard variations written by Joseph Haydn in 1790 and published by Artaria & Co. on February 9, 1791.",
+      "pageviews_yearly": 689
+    },
+    {
+      "qid": "Q132519212",
+      "title": "Keyboard sonatas (Joseph Haydn), vol. II"
+    },
+    {
+      "qid": "Q465544",
+      "title": "L'anima del filosofo",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp38",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/L'anima_del_filosofo",
+      "wikipedia_extract": "L'anima del filosofo, ossia Orfeo ed Euridice, Hob. 28/13, is an opera in Italian in four acts by Joseph Haydn and is one of the last two operas written during his life, the other being Armida (1783).The libretto, by Carlo Francesco Badini, is based on the myth of Orpheus and Euridice as told in Ovid's Metamorphoses. Composed in 1791 for His Majesty's Theatre during his first visit to England, the opera was never performed during Haydn's lifetime and only given its formal premiere in 1951.",
+      "pageviews_yearly": 5467
+    },
+    {
+      "qid": "Q478102",
+      "title": "L'incontro improvviso",
+      "imslp_id": "L'incontro_improvviso,_Hob.XXVIII:6_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP192603-haydn_incontro_improviso.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp30",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/L'incontro_improvviso",
+      "wikipedia_extract": "L’incontro improvviso \nis an opera in three acts by Joseph Haydn first performed at Eszterháza on 29 August 1775 to mark the four-day visit of Archduke Ferdinand, Habsburg governor of Milan, and his consort Maria Beatrice d'Este. The opera is designated a dramma giocoso and is an example of the then Austrian fascination with Turkish subjects.",
+      "pageviews_yearly": 2718
+    },
+    {
+      "qid": "Q555655",
+      "title": "L'infedeltà delusa",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp29",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/L'infedelt%C3%A0_delusa",
+      "wikipedia_extract": "L'infedeltà delusa, Hob. 28/5, is an operatic burletta per musica in two acts by Joseph Haydn. The Italian libretto was by Marco Coltellini.",
+      "pageviews_yearly": 2896
+    },
+    {
+      "qid": "Q468384",
+      "title": "L'isola disabitata",
+      "imslp_id": "L'isola_disabitata,_Hob.XXVIII:9_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP181603-Haydn_-_L_isola_disabitata_Ov_ArrPf4h_rsl.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp34",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/L'isola_disabitata",
+      "wikipedia_extract": "L'isola disabitata, Hob. 28/9, is an opera by Joseph Haydn, his tenth opera, written for the Eszterházy court and premiered on 6 December 1779. The libretto is the only one by Metastasio set by Haydn.",
+      "pageviews_yearly": 4573
+    },
+    {
+      "qid": "Q6466009",
+      "title": "La canterina",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp26",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_canterina",
+      "wikipedia_extract": "La canterina, Hob. XXVIII/2, is a short, two-act opera buffa by Joseph Haydn, the first one he wrote for Prince Esterhazy. Based on the intermezzo from the third act of Niccolò Piccinni's opera L'Origille (1760), it lasts about 50 minutes. It was written in 1766, and was premiered in the summer of that year.",
+      "pageviews_yearly": 3780
+    },
+    {
+      "qid": "Q467107",
+      "title": "La fedeltà premiata",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp35",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_fedelt%C3%A0_premiata",
+      "wikipedia_extract": "La fedeltà premiata, Hob. XXVIII/10, is an opera in three acts by Joseph Haydn first performed at the Eszterháza palace in Fertőd, Hungary, on 25 February 1781 to celebrate the reopening of the court theatre after a fire. The opera was revised for a new version first performed in 1782.",
+      "pageviews_yearly": 3155
+    },
+    {
+      "qid": "Q753287",
+      "title": "La vera costanza",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp32",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_vera_costanza",
+      "wikipedia_extract": "La vera costanza, Hob. 28/8, is an operatic dramma giocoso by Joseph Haydn. The Italian libretto was a shortened version of the one by Francesco Puttini set by Pasquale Anfossi for the opera of the same name given in Rome in 1776. The story explores the troubles of a sentimental heroine abandoned by a mad lover.",
+      "pageviews_yearly": 2975
+    },
+    {
+      "qid": "Q3823610",
+      "title": "Le pescatrici",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Le_pescatrici",
+      "wikipedia_extract": "Le pescatrici Hob. 28/4, is an opera in three acts by Joseph Haydn set to a libretto by Carlo Goldoni. Originally composed as part of the wedding celebrations of Maria Theresa Countess Lamberg, the opera was first performed on 16 September 1770 in the court theatre at Eszterháza.",
+      "pageviews_yearly": 2374
+    },
+    {
+      "qid": "Q470695",
+      "title": "Lo speziale",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp156",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lo_speziale",
+      "wikipedia_extract": "Lo speziale, Hob. 28/3, is a three-act opera buffa by Joseph Haydn, with a libretto by Carlo Goldoni.",
+      "pageviews_yearly": 3465
+    },
+    {
+      "qid": "Q2001980",
+      "title": "London symphonies",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp142",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/London_symphonies",
+      "wikipedia_extract": "\n\nThe London symphonies, sometimes called the Salomon symphonies after Johann Peter Salomon who introduced London to Joseph Haydn, were composed by Joseph Haydn between 1791 and 1795. They can be categorised into two groups: Symphonies Nos. 93–98, which were composed during Haydn's first visit to London, and Symphonies Nos. 99–104, composed in Vienna and London for Haydn's second visit.",
+      "pageviews_yearly": 12583
+    },
+    {
+      "qid": "Q965949",
+      "title": "Masses, H. XXII, 4, E♭ major",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Missa_in_honorem_Beatissimae_Virginis_Mariae",
+      "wikipedia_extract": "The Missa in honorem Beatissimae Virginis Mariae in E♭ major was written by Joseph Haydn for performance in Esterhaza in 1770. It was part of Haydn's duties to compose musical masses. It contains smaller organ obliggato, in contrast to the Kleine Organ Mass, or Missa brevis Sancti Joannis de Deo. It is known as the Gross Orgelsolo Mass in German speaking lands.\n",
+      "pageviews_yearly": 1481
+    },
+    {
+      "qid": "Q2290078",
+      "title": "Mindshadows"
+    },
+    {
+      "qid": "Q1938934",
+      "title": "Missa \"Rorate coeli desuper\""
+    },
+    {
+      "qid": "Q1938918",
+      "title": "Missa Cellensis",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp836",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Missa_Cellensis",
+      "wikipedia_extract": "The Missa cellensis, Hob. XXII:8, fully Missa cellensis fatta per il Signor Liebe de Kreutzner composed in 1782, is Joseph Haydn's eighth setting of the Ordinary of the Mass. The title translates and is often identified by the German name Mariazeller Messe. It was commissioned by the officer Anton Liebe von Kreutzner on the occasion of his ennoblement.",
+      "pageviews_yearly": 2933
+    },
+    {
+      "qid": "Q931664",
+      "title": "Missa Cellensis in honorem Beatissimae Virginis Mariae",
+      "imslp_id": "Mass_in_C_major,_Hob.XXII:5_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP328109-Haydn_J__Mass_in_C_major__Hob.XXII.5__Vl1__MS__colour.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Missa_Cellensis_in_honorem_Beatissimae_Virginis_Mariae",
+      "wikipedia_extract": "The Missa Cellensis in honorem Beatissimae Virginis Mariae in C major by Joseph Haydn, Hob. XXII:5, Novello 3, was originally written in 1766, after Haydn was promoted to Kapellmeister at Eszterháza following the death of Gregor Joseph Werner. The original title as it appears on the only surviving fragment of Haydn's autograph score, that has been discovered around 1970 in Budapest, clearly assigns the mass to the pilgrimage cult of Mariazell, Styria. Until that discovery, the work was known as Missa Sanctae Caeciliae, or in German Cäcilienmesse, a title probably attributed to the mass in the 19th century. Whether the alternative title refers to a performance of the piece by the St. Cecilia's Congregation, a Viennese musician's fraternity, on some St. Cecilia's day, as has been suggested, remains speculation.",
+      "pageviews_yearly": 2803
+    },
+    {
+      "qid": "Q1428540",
+      "title": "Missa Sancti Bernardi von Offida",
+      "imslp_id": "Mass_in_B-flat_major,_Hob.XXII:10_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP191245-Haydn-H.XXII.10.FSbh.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp837",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Missa_Sancti_Bernardi_von_Offida",
+      "wikipedia_extract": "The Missa Sancti Bernardi von Offida is a mass in B-flat major by Joseph Haydn, Hob. XXII:10, Novello 1, was written the same year as the Missa in tempore belli (1796), and it \"may have been the first mass Haydn wrote after his return from England.\" Yet it may also have been the second. It is usually given as Haydn's ninth setting of the mass, though its Hoboken number is XXII:10. This mass was written in honor of St. Bernard of Offida, a Capuchin who devoted himself to helping the poor; a century after the friar's death, he was beatified by Pope Pius VI.",
+      "pageviews_yearly": 2095
+    },
+    {
+      "qid": "Q673056",
+      "title": "Missa Sancti Nicolai",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp834",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Missa_Sancti_Nicolai",
+      "wikipedia_extract": "Missa Sancti Nicolai, Mass No. 6 in G major, Hob. XXII/6, also known as the Nicolaimesse, is a mass by Joseph Haydn, composed around 1772 and revised in 1802.",
+      "pageviews_yearly": 2843
+    },
+    {
+      "qid": "Q1938941",
+      "title": "Missa brevis",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Missa_brevis_Sancti_02_Gloria_Joseph_Haydn.mid",
+        "midi/Agnus_Dei_uit_Missa_brevis_Joannis_de_Deo_Kleine_Orgelmesse_Haydn.mid",
+        "midi/Sanctus_uit_Missa_brevis_Joannis_de_Deo_Kleine_Orgelmesse.mid",
+        "midi/Missa_brevis_Sancti_04_Sanctus.mid",
+        "midi/Missa_brevis_Sancti_05_Benedictus.mid",
+        "midi/Kyrie_uit_Missa_brevis_Joannis_de_Deo_Kleine_Orgelmesse_Haydn.mid",
+        "midi/Missa_brevis_Sancti_Joannis_J_Haydn_03_Credo.mid",
+        "midi/Missa_brevis_Sancti_01_Kyrie_J_Haydn.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q176418",
+      "title": "Missa brevis Sancti Joannis de Deo",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp835",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Missa_brevis_Sancti_Joannis_de_Deo",
+      "wikipedia_extract": "The Missa brevis Sancti Joannis de Deo, Hob. XXII:7, Novello 8, is a mass in B-flat major by Joseph Haydn. The missa brevis was written around 1775 for the order of the Barmherzige Brüder in Eisenstadt, whose patron saint was John of God. Scored modestly for soprano, four-part mixed choir, two violins, organ and bass, it is known as the Kleine Orgelmesse due to an extended organ solo in the Benedictus movement which also includes the only featured solo voice - a soprano.",
+      "pageviews_yearly": 6267
+    },
+    {
+      "qid": "Q660836",
+      "title": "Missa in Angustiis",
+      "imslp_id": "Mass_in_D_minor,_Hob.XXII:11_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP141537-NelsonmesseVS.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp839",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nelson_Mass",
+      "wikipedia_extract": "The Missa in angustiis, commonly known as the Nelson Mass, is a mass setting by the Austrian composer Joseph Haydn. It is one of the six masses written near the end of his career that are seen as a culmination of Haydn's composition of liturgical music.",
+      "pageviews_yearly": 21320
+    },
+    {
+      "qid": "Q1244051",
+      "title": "Missa in tempore belli",
+      "imslp_id": "Mass_in_C_major,_Hob.XXII:9_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP153736-HaydMess_477600220.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp838",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Missa_in_tempore_belli",
+      "wikipedia_extract": "Missa in tempore belli is a setting of the mass by Joseph Haydn. It is catalogued Mass No. 10 in C major. Known also as the Paukenmesse due to the dramatic use of timpani, it is one of the most popular of his fourteen mass settings. The autograph manuscript contains the title \"Missa in tempore belli\" in Haydn's handwriting.",
+      "pageviews_yearly": 11620
+    },
+    {
+      "qid": "Q133142163",
+      "title": "O Lamm Gottes"
+    },
+    {
+      "qid": "Q910595",
+      "title": "Orlando paladino",
+      "imslp_id": "Orlando_Paladino,_Hob.XXVIII:11_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP273899-1214.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp36",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orlando_paladino",
+      "wikipedia_extract": "Orlando paladino, Hob. 28/11, is an opera in three acts by Joseph Haydn which was first performed at Eszterháza on 6 December 1782. The libretto by Nunziato Porta is based on another libretto, Le pazzie d'Orlando, by Carlo Francesco Badini, itself inspired by Ariosto's epic poem Orlando furioso. The opera was described as a dramma eroicomico and the plot mixes heroic and comic elements. It was Haydn's most popular opera during his lifetime. While in Prague, Mozart conducted a few performances of the opera. The Pennsylvania Opera Theater presented the United States premiere of the work at the Trocadero Theatre, Philadelphia, in March 1982 with John Gilmore in the title role. More recently, staged performances have been given in 2009 at the Berlin State Opera with René Jacobs conducting, and in 2016 at the Zurich Opera House conducted by Gianluca Capuano. In 2023, Il Giardino Armonico conducted by Giovanni Antonini gave concert performances at the Gran Teatre del Liceu and the Teatro Real, with cast including Emőke Baráth, Nuria Rial, Alasdair Kent and Josh Lovell.",
+      "pageviews_yearly": 4939
+    },
+    {
+      "qid": "Q301921",
+      "title": "Paris symphonies",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Paris_symphonies",
+      "wikipedia_extract": "The Paris symphonies are a group of six symphonies written by Joseph Haydn commissioned by the Count D'Ogny, Grandmaster of the Masonic Loge Olympique. Beginning on 11 January 1786, the symphonies were performed by the Olympique in the Salle des Gardes du Corps of the Tuileries, conducted by Saint-Georges.",
+      "pageviews_yearly": 8874
+    },
+    {
+      "qid": "Q6074233",
+      "title": "Philemon und Baucis",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp15",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Philemon_und_Baucis_(Haydn)",
+      "wikipedia_extract": "Philemon und Baucis, oder Jupiters Reise auf die Erde, Hob. XXIXb:2, is an opera in one act by Austrian composer Joseph Haydn to a German libretto, possibly by Prince Esterházy's librarian, Phillip Georg Bader. The text is based upon a play by G. K. Pfeffel, itself a retelling of the Baucis and Philemon myth from Ovid's Metamorphoses. The work is in the form of a Singspiel.",
+      "pageviews_yearly": 2517
+    },
+    {
+      "qid": "Q18663728",
+      "title": "Piano Sonata Hob. XVI/20",
+      "imslp_id": "Keyboard_Sonata_in_C_minor,_Hob.XVI:20_(Haydn,_Joseph)",
+      "pdf_filename": "Haydn_-_Piano_Sonata_No_20_in_c.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_Hob._XVI%2F20",
+      "wikipedia_extract": "The Sonata in C minor is a keyboard sonata composed by Joseph Haydn in 1771. It is also referred to as a piano sonata. The three-movement work was published by Artaria in 1780 in a set of six sonatas dedicated to the sisters Katharina and Marianna Auenbrugger.",
+      "pageviews_yearly": 5682
+    },
+    {
+      "qid": "Q19895142",
+      "title": "Piano Sonata Hob. XVI/38",
+      "imslp_id": "Keyboard_Sonata_in_E-flat_major,_Hob.XVI:38_(Haydn,_Joseph)",
+      "pdf_filename": "Haydn_-_Piano_Sonata_No_38_in_Eb.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_Hob._XVI%2F38",
+      "wikipedia_extract": "The Sonata in E♭ major  is a keyboard sonata composed by Joseph Haydn, also referred to as a piano sonata. The three-movement work was published by Artaria in 1780 in a set of six sonatas dedicated to the sisters Katharina and Marianna Auenbrugger.",
+      "pageviews_yearly": 1840
+    },
+    {
+      "qid": "Q3490168",
+      "title": "Piano Sonata No. 54, H. XVI/40 (Haydn)",
+      "imslp_id": "Keyboard_Sonata_in_G_major,_Hob.XVI:40_(Haydn,_Joseph)",
+      "pdf_filename": "Haydn_-_Piano_Sonata_No_40_in_G.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q97174294",
+      "title": "Piano Trio No. 31",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp630",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Joseph_Haydn",
+      "wikipedia_extract": "Franz Joseph Haydn was an Austrian composer of the Classical period. He was pivotal in the evolution of chamber music forms like the string quartet and piano trio. His contributions to musical form have led him to be called \"Father of the Symphony\" and \"Father of the String quartet\".",
+      "pageviews_yearly": 110
+    },
+    {
+      "qid": "Q3539374",
+      "title": "Piano Trio No. 32",
+      "imslp_id": "Piano_Trio_in_A_major,_Hob.XV:18_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP40339-Haydn_-_Piano_Trio_Hob-XV-18_1794_-_cello.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp616"
+    },
+    {
+      "qid": "Q3539377",
+      "title": "Piano Trio No. 34",
+      "imslp_id": "Piano_Trio_in_B-flat_major,_Hob.XV:20_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP40339-Haydn_-_Piano_Trio_Hob-XV-20_1794_-_cello.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q3539378",
+      "title": "Piano Trio No. 35",
+      "imslp_id": "Piano_Trio_in_C_major,_Hob.XV:21_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP40337-Haydn_-_Piano_Trio_Hob-XV-21_1794-95_-_cello.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q3539379",
+      "title": "Piano Trio No. 36",
+      "imslp_id": "Piano_Trio_in_E-flat_major,_Hob.XV:22_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP40337-Haydn_-_Piano_Trio_Hob-XV-22_1794-95_-_cello.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp1665"
+    },
+    {
+      "qid": "Q3539381",
+      "title": "Piano Trio No. 37",
+      "imslp_id": "Piano_Trio_in_D_minor,_Hob.XV:23_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP40337-Haydn_-_Piano_Trio_Hob-XV-23_1794-95_-_cello.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp1666"
+    },
+    {
+      "qid": "Q3539380",
+      "title": "Piano Trio No. 38",
+      "imslp_id": "Piano_Trio_in_D_major,_Hob.XV:24_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP138973-Haydn_Jos_PnoTrio6_Hob.XV24_Pno4h.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp622",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Trio_No._38_(Haydn)",
+      "wikipedia_extract": "Joseph Haydn's Piano Trio No. 38 in D major, Hob. XV:24, was written in 1795, during Haydn's second trip to London, and one of a set of three dedicated to Haydn's friend, the widow Rebecca Schroeter. According to Robert Philip, this work is unusual compared with other later piano trios in that it is serious in tone throughout, \"with almost Beethoven-like earnestness\". The style of piano writing, with its rich chords, octaves in the bass and lively elaboration in the right hand, was much influenced by the sonorous English pianos Haydn came to appreciate while in London.",
+      "pageviews_yearly": 1537
+    },
+    {
+      "qid": "Q3539383",
+      "title": "Piano Trio No. 40",
+      "imslp_id": "Piano_Trio_in_F-sharp_minor,_Hob.XV:26_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP138973-Haydn_Jos_PnoTrio2_Hob.XV26_Pno4h.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp1668",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Trio_No._40_(Haydn)",
+      "wikipedia_extract": "Joseph Haydn's Piano Trio No. 40 in F♯ minor, Hob. XV:26, was completed during the final few weeks of Haydn's second trip to London, and one of a set of three dedicated to Rebecca Schroeter. With its unusual key, this piano trio has been described by Robert Philip as \"subtle and shifting in its moods\".",
+      "pageviews_yearly": 1793
+    },
+    {
+      "qid": "Q3539384",
+      "title": "Piano Trio No. 41",
+      "imslp_id": "Piano_Trio_in_E-flat_minor,_Hob.XV:31_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP140758-115_IMSLP296952-PMLP441788-H_PT_16-20.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp629",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Trio_No._41_(Haydn)",
+      "wikipedia_extract": "Joseph Haydn's Piano Trio No. 41 in E-flat minor, Hob. XV:31, was written in 1795/1796, though not published until 1803 in Vienna. It has the nickname \"Jacob's Dream\" because of its second movement. On publication it was dedicated to Magdalena von Kurzböck (1767–1845), a Viennese pianist and composer.",
+      "pageviews_yearly": 2069
+    },
+    {
+      "qid": "Q3539385",
+      "title": "Piano Trio No. 42",
+      "imslp_id": "Piano_Trio_in_E-flat_major,_Hob.XV:30_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP140020-110_IMSLP296950-PMLP441788-H_PT_6-10.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp628",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Trio_No._42_(Haydn)",
+      "wikipedia_extract": "Joseph Haydn's Piano Trio No. 42 in E♭ major, Hob. XV/30 was completed in 1796 after his return to Vienna from England and first published there by Artaria in 1797. It is without a dedication: the piano part is less challenging than those trios dedicated to keyboard virtuosi. This is thought to have been Haydn's last piano trio and with a typical performance time of 20 minutes it is one of his largest. By the time of its publication, Beethoven had already published his first three piano trios setting a new direction for the form away from the 'accompanied piano sonata' towards a more equal and dramatic interplay between piano, violin, and cello.",
+      "pageviews_yearly": 1513
+    },
+    {
+      "qid": "Q3539388",
+      "title": "Piano Trio No. 44",
+      "imslp_id": "Piano_Trio_in_E_major,_Hob.XV:28_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP118678-Haydn_Jos_PnoTrio4_Pno4h.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Trio_No._44_(Haydn)",
+      "wikipedia_extract": "Joseph Haydn's Piano Trio No. 44 in E major, Hob. XV/28, was published in 1797 but may have been written a few years earlier while Haydn was still in England on the second of his highly successful London visits. It is the second of a set of three piano trios dedicated to the eminent pianist Therese Jansen Bartolozzi, and is noted for its especially wide expressive range as well as its virtuosity.",
+      "pageviews_yearly": 1795
+    },
+    {
+      "qid": "Q3539389",
+      "title": "Piano Trio No. 45",
+      "imslp_id": "Piano_Trio_in_E-flat_major,_Hob.XV:29_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP118678-Haydn_Jos_PnoTrio5_Pno4h.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp1670",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Trio_No._45_(Haydn)",
+      "wikipedia_extract": "Joseph Haydn's Piano Trio No. 45 in E♭ major, Hob. XV:29, was published in 1797 but may have been written a few years earlier, while Haydn was still in England on the second of his highly successful London visits. It is the third piano trio of a set of three dedicated to the eminent pianist Therese Jansen Bartolozzi. It is the least technically sophisticated of the three in a set noted in general for their wide expressive range and virtuosity—piano trios at this time were typically written with amateur performers in mind. But it is still full of character and humour.",
+      "pageviews_yearly": 1999
+    },
+    {
+      "qid": "Q3539373",
+      "title": "Piano Trio Nr. 31",
+      "imslp_id": "Piano_Trio_in_G_major,_Hob.XV:32_(Haydn,_Joseph)",
+      "pdf_filename": "Haydn_-_Violin_Sonata_No.1_in_G_Major.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp630"
+    },
+    {
+      "qid": "Q3539376",
+      "title": "Piano Trio Nr. 33",
+      "imslp_id": "Piano_Trio_in_G_minor,_Hob.XV:19_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP40339-Haydn_-_Piano_Trio_Hob-XV-19_1794_-_cello.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp1663"
+    },
+    {
+      "qid": "Q27952026",
+      "title": "Salomon symphonies",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp142"
+    },
+    {
+      "qid": "Q913653",
+      "title": "Schöpfungsmesse",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp841",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sch%C3%B6pfungsmesse",
+      "wikipedia_extract": "The Mass No. 13 in B-flat major, Hob. XXII/13, was composed by Joseph Haydn in 1801. It is known as the Schöpfungsmesse or Creation Mass because of the words \"qui tollis peccata mundi\" in the Gloria. He recycled music from Adam and Eve's final duet in The Creation, a fact which scandalized Empress Maria Theresa so much that she ordered Haydn to recompose that passage for her own copy.",
+      "pageviews_yearly": 3690
+    },
+    {
+      "qid": "Q2266448",
+      "title": "Sei gesegnet ohne Ende",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/National_anthem_of_Austria_(1929%E2%80%931938)",
+      "wikipedia_extract": "The \"Österreichische Bundeshymne\", also known by its incipit \"Sei gesegnet ohne Ende\", and the \"Kernstock-Hymne\", is a German language song that was used as the national anthem of Austria from 1929 until 1938. Written by Ottokar Kernstock, it was sung to the famous tune of the imperial Austrian anthem, \"Gott erhalte Franz den Kaiser\" by Joseph Haydn, later known as the tune of the \"Deutschlandlied\", which since 1922 has been the national anthem of Germany.",
+      "pageviews_yearly": 3690
+    },
+    {
+      "qid": "Q133064788",
+      "title": "Sei willkommen schöner Stern"
+    },
+    {
+      "qid": "Q29364294",
+      "title": "Select collection of original Welsh airs"
+    },
+    {
+      "qid": "Q3819875",
+      "title": "Stabat Mater",
+      "imslp_id": "Stabat_Mater,_Hob.XXa:1_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP117983-Haydn__Joseph__Stabat_Mater_Hob._XXa1_1-9.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp825",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stabat_Mater_(Haydn)",
+      "wikipedia_extract": "Joseph Haydn's Stabat Mater, Hob. XXa:1, is a setting of the Stabat Mater sequence, written in 1767 for soloists, mixed choir and an orchestra of oboes, strings and continuo. The first performance is believed to have taken place on 17 March 1767 at the Esterhazy court. A performance in Vienna the following year began a wide distribution. His setting is regarded as an important one among around 600, along with the earlier by Pergolesi and the later compositions by Rossini and by Dvořák.",
+      "pageviews_yearly": 7035
+    },
+    {
+      "qid": "Q11487534",
+      "title": "String Quartet No. 3",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp1575"
+    },
+    {
+      "qid": "Q11487539",
+      "title": "String Quartet No. 35",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp1793"
+    },
+    {
+      "qid": "Q11487540",
+      "title": "String Quartet No. 36"
+    },
+    {
+      "qid": "Q11487546",
+      "title": "String Quartet No. 53",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp1778"
+    },
+    {
+      "qid": "Q11487554",
+      "title": "String Quartet No. 68"
+    },
+    {
+      "qid": "Q11487530",
+      "title": "String Quartet in B minor, op. 33 no. 1, Hob. III:37",
+      "imslp_id": "String_Quartet_in_B_minor,_Hob.III:37_(Haydn,_Joseph)",
+      "pdf_filename": "Haydn_-_Op._33__No._1.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q11487535",
+      "title": "String Quartet in B-flat major, op. 33 no. 4, Hob. III:40",
+      "imslp_id": "String_Quartet_in_B-flat_major,_Hob.III:40_(Haydn,_Joseph)",
+      "pdf_filename": "Haydn_-_Op._33__No._4.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q11487532",
+      "title": "String Quartet in C major, op. 33 no. 3, Hob. III:39 \"The Bird\"",
+      "imslp_id": "String_Quartet_in_C_major,_Hob.III:39_(Haydn,_Joseph)",
+      "pdf_filename": "Haydn_-_Op._33__No._3.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q11487538",
+      "title": "String Quartet in D major, op. 33 no. 6, Hob. III:42",
+      "imslp_id": "String_Quartet_in_D_major,_Hob.III:42_(Haydn,_Joseph)",
+      "pdf_filename": "Haydn_-_Op._33__No._6.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q11487531",
+      "title": "String Quartet in E-flat major, op. 33 no. 2, Hob. III:38 “The Joke”",
+      "imslp_id": "String_Quartet_in_E-flat_major,_Hob.III:38_(Haydn,_Joseph)",
+      "pdf_filename": "Haydn_-_Op._33__No._2.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q11487536",
+      "title": "String Quartet in G major, op. 33 no. 5, Hob. III:41",
+      "imslp_id": "String_Quartet_in_G_major,_Hob.III:41_(Haydn,_Joseph)",
+      "pdf_filename": "Haydn_-_Op._33__No._5.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q11487548",
+      "title": "String Quartet, Op. 76, No. 1",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp1573"
+    },
+    {
+      "qid": "Q137369561",
+      "title": "String Quartet, Op.103",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Joseph_Haydn_-_String_quartet_-_Op_76_no5_in_D_major_-_Movement_I.mid",
+        "midi/Joseph_Haydn_-_String_quartet_-_Op_76_no5_in_D_major_-_Movement_IV.mid",
+        "midi/Joseph_Haydn_-_String_quartet_-_Op_76_no5_in_D_major_-_Movement_III.mid",
+        "midi/Joseph_Haydn_-_String_quartet_-_Op_76_no5_in_D_major_-_Movement_I_1.mid",
+        "midi/Joseph_Haydn_-_String_quartet_-_Op_76_no5_in_D_major_-_Movement_II.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q11487549",
+      "title": "String Quartet, Opus 76, No. 2"
+    },
+    {
+      "qid": "Q1721718",
+      "title": "String Quartet, Opus 76, No. 3",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kaiserquartett",
+      "wikipedia_extract": "The Kaiserquartett, is a string quartet in C major by Joseph Haydn.",
+      "pageviews_yearly": 8906
+    },
+    {
+      "qid": "Q1588190",
+      "title": "String Quartet, Opus 76, No. 4",
+      "imslp_id": "String_Quartets,_Op.76_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP57211-A50__4_.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q11487550",
+      "title": "String Quartet, Opus 76, No. 5"
+    },
+    {
+      "qid": "Q11487553",
+      "title": "String Quartet, Opus 76, No. 6"
+    },
+    {
+      "qid": "Q3413887",
+      "title": "String Quartets, Op. 20",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartets%2C_Op._20_(Haydn)",
+      "wikipedia_extract": "The six string quartets Op. 20 by Joseph Haydn are among the works that earned Haydn the sobriquet \"the father of the string quartet\". The quartets are considered a milestone in the history of composition; in them, Haydn develops compositional techniques that were to define the medium for the next 200 years.",
+      "pageviews_yearly": 16416
+    },
+    {
+      "qid": "Q48851028",
+      "title": "String Quartets, Op. 3",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp1793",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartets%2C_Op._3_(attributed_to_Haydn)",
+      "wikipedia_extract": "The String Quartets, Op. 3 are a set of six string quartets published under Joseph Haydn's name by the French music publisher Bailleux in 1777 and subsequently reprinted in 1801 by Maison Pleyel as part of a series of the complete Haydn string quartets.",
+      "pageviews_yearly": 3699
+    },
+    {
+      "qid": "Q3413891",
+      "title": "String Quartets, Op. 33",
+      "imslp_id": "String_Quartets,_Op.33_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP12766-A47_08.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartets%2C_Op._33_(Haydn)",
+      "wikipedia_extract": "\nThe Op. 33 String Quartets were written by Joseph Haydn in the summer and Autumn of 1781 for the Viennese publisher Artaria. This set of string quartets has several nicknames, the most common of which is the \"Russian\" quartets, because Haydn dedicated the quartets to the Grand Duke Paul of Russia and many of the quartets were premiered on Christmas Day, 1781, at the Viennese apartment of the Duke's wife, the Grand Duchess Maria Feodorovna. Some scholars theorize that the \"Russian\" quartets were the inspiration for Mozart's six string quartets dedicated to Haydn, but no direct evidence has been found.",
+      "pageviews_yearly": 18138,
+      "movements": [
+        {
+          "qid": "Q11487530"
+        },
+        {
+          "qid": "Q11487531"
+        },
+        {
+          "qid": "Q11487532"
+        },
+        {
+          "qid": "Q11487535"
+        },
+        {
+          "qid": "Q11487536"
+        },
+        {
+          "qid": "Q11487538"
+        }
+      ]
+    },
+    {
+      "qid": "Q3413888",
+      "title": "String Quartets, Op. 50",
+      "imslp_id": "String_Quartets,_Op.50_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP14070-A48__1_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp1557",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartets%2C_Op._50_(Haydn)",
+      "wikipedia_extract": "The String Quartets, Op. 50, were composed by Joseph Haydn in 1787. The set of six quartets was dedicated to King Frederick William II of Prussia. For this reason the set is commonly known as the Prussian Quartets. Haydn sold the set to the Viennese firm Artaria and, without Artaria's knowledge, to the English publisher William Forster. Forster published it as Haydn's Opus 44. Haydn's autograph manuscripts for Nos. 3 to 6 of the set were discovered in Melbourne, Australia, in 1982.",
+      "pageviews_yearly": 7786
+    },
+    {
+      "qid": "Q3413889",
+      "title": "String Quartets, Op. 64",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartets%2C_Op._64_(Haydn)",
+      "wikipedia_extract": "Joseph Haydn's String Quartets, Op. 64, is a set of six string quartets composed in 1790. Along with six earlier quartets published under the opus numbers 54 and 55, they are known as the Tost quartets, after the Hungarian violinist and later merchant Johann Tost who helped Haydn find a publisher for the works. Unlike the earlier quartets, Haydn actually dedicated the Op. 64 set to Tost in gratitude for his efforts.",
+      "pageviews_yearly": 7207
+    },
+    {
+      "qid": "Q2919526",
+      "title": "String Quartets, Op. 76",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp1573",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartets%2C_Op._76_(Haydn)",
+      "wikipedia_extract": "\nThe six String Quartets, Op. 76, by Joseph Haydn were composed in 1797 or 1798 and dedicated to the Hungarian count Joseph Georg von Erdődy (1754–1824). They form the last complete set of string quartets that Haydn composed. At the time of the commission, Haydn was employed at the court of Prince Nicolaus Esterházy II and was composing the oratorio The Creation as well as Princess Maria Hermenegild Esterházy's annual mass.",
+      "pageviews_yearly": 32057,
+      "movements": [
+        {
+          "qid": "Q11487548"
+        },
+        {
+          "qid": "Q11487549"
+        },
+        {
+          "qid": "Q1721718"
+        },
+        {
+          "qid": "Q1588190"
+        },
+        {
+          "qid": "Q11487550"
+        },
+        {
+          "qid": "Q11487553"
+        }
+      ]
+    },
+    {
+      "qid": "Q3507891",
+      "title": "Symphony A",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Surprise_Symphony_In_C_By_J_Haydn.mid",
+        "midi/Minuet_in_G_major_Haydn.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q3507894",
+      "title": "Symphony B",
+      "imslp_id": "Symphony_No.108_in_B-flat_major,_Hob.I:108_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71615-Haydn_Sinfonia_Hob_I_108__Bb.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp104",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_B_(Haydn)",
+      "wikipedia_extract": "Joseph Haydn's Symphony B in B♭ major, Hoboken I/108, was written between 1757 and 1760, and was one of his earliest symphonies. It does not fall into the usual numbering scheme of Haydn's symphonies because it had later been published without its wind parts as a \"Partita\". It is scored for two oboes, bassoon, two horns, strings, and continuo.",
+      "pageviews_yearly": 2207
+    },
+    {
+      "qid": "Q164627",
+      "title": "Symphony No. 10",
+      "imslp_id": "Symphony_No.10_in_D_major,_Hob.I:10_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71296-Haydn-_Sinfonia_Nr10__HCR_Landon__c2.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp48",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._10_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 10 in D major, Hoboken I/10, is a symphony by Joseph Haydn. The symphony may have been written as early as 1757 but no later than 1761, probably for the small, but resourceful orchestra of Count Morzin.",
+      "pageviews_yearly": 1776
+    },
+    {
+      "qid": "Q165246",
+      "title": "Symphony No. 101",
+      "imslp_id": "Symphony_No.101_in_D_major,_Hob.I:101_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP07581-106_IMSLP284332-PMLP461683-Haydn_Sinf.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp139",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._101_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 101 in D major is the ninth of the twelve London symphonies written by Joseph Haydn. It is popularly known as The Clock because of the \"ticking\" rhythm throughout the second movement.",
+      "pageviews_yearly": 11737
+    },
+    {
+      "qid": "Q165543",
+      "title": "Symphony No. 102",
+      "imslp_id": "Symphony_No.102_in_B-flat_major,_Hob.I:102_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP07582-Op81Sidus.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp140",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._102_(Haydn)",
+      "wikipedia_extract": "\nThe Symphony No. 102 in B♭ major, Hoboken I/102, is the tenth of the twelve London symphonies written by Joseph Haydn, at the instigation of impresario Johann Peter Salomon. It is one of three symphonies he worked on in 1794, along with his 103 and 104th symphonies.",
+      "pageviews_yearly": 5199
+    },
+    {
+      "qid": "Q165900",
+      "title": "Symphony No. 103",
+      "imslp_id": "Symphony_No.103_in_E-flat_major,_Hob.I:103_(Haydn,_Joseph)",
+      "pdf_filename": "Haydn_-_Symphony_No.103_Mvt.III__Full_Score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp141",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._103_(Haydn)",
+      "wikipedia_extract": "Symphony No. 103 in E♭ major was composed in 1795 by Joseph Haydn. It is nicknamed the Drumroll Symphony after the long roll on the timpani with which it begins. The symphony is the eleventh of Haydn's twelve London symphonies and the second to last that he composed.",
+      "pageviews_yearly": 11109
+    },
+    {
+      "qid": "Q2622062",
+      "title": "Symphony No. 11",
+      "imslp_id": "Symphony_No.11_in_E-flat_major,_Hob.I:11_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71299-Haydn-_Sinfonia_Nr11__HCR_Landon_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp49",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._11_(Haydn)",
+      "wikipedia_extract": "Joseph Haydn's Symphony No. 11 in E♭ major is a symphony which may have been written as early as 1760 but no later than 1762, meaning that it was written for either the orchestra of the salubrious Count Morzin or the noble Paul II Anton, Prince Esterházy's palace in Eisenstadt.",
+      "pageviews_yearly": 2183
+    },
+    {
+      "qid": "Q172064",
+      "title": "Symphony No. 12",
+      "imslp_id": "Symphony_No.12_in_E_major,_Hob.I:12_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71301-Haydn-_Sinfonia_Nr12__HCR_Landon_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp50",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._12_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 12 in E major is a symphony by Joseph Haydn. The symphony was composed in 1763, at the age of 31, under the patronage of Prince Nikolaus Esterházy.",
+      "pageviews_yearly": 1988
+    },
+    {
+      "qid": "Q2477286",
+      "title": "Symphony No. 14",
+      "imslp_id": "Symphony_No.14_in_A_major,_Hob.I:14_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71283-Haydn-H1.014FSbh.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp52",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._14_(Haydn)",
+      "wikipedia_extract": "Joseph Haydn's Symphony No. 14 in A major, Hoboken I/14, may have been written between 1761 and 1763. The symphony is scored for two oboes, bassoon, two horns, strings, and continuo. As was becoming more common for Haydn, this symphony has four movements:",
+      "pageviews_yearly": 1785
+    },
+    {
+      "qid": "Q2622078",
+      "title": "Symphony No. 15",
+      "imslp_id": "Symphony_No.15_in_D_major,_Hob.I:15_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71284-Haydn-H1.015FSbh.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp53",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._15_(Haydn)",
+      "wikipedia_extract": "Joseph Haydn's Symphony No. 15 in D major, Hoboken I/15, may have been written between 1760 and 1763.",
+      "pageviews_yearly": 1945
+    },
+    {
+      "qid": "Q2622051",
+      "title": "Symphony No. 16",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Symphony_No_16.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q2541748",
+      "title": "Symphony No. 17",
+      "imslp_id": "Symphony_No.17_in_F_major,_Hob.I:17_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71286-Haydn-H1.017FSbh.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp55",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._17_(Haydn)",
+      "wikipedia_extract": "Joseph Haydn's Symphony No. 17 in F major, Hoboken I/17, may have been written between 1757 and 1763.",
+      "pageviews_yearly": 1591
+    },
+    {
+      "qid": "Q2102970",
+      "title": "Symphony No. 18",
+      "imslp_id": "Symphony_No.18_in_G_major,_Hob.I:18_(Haydn,_Joseph)",
+      "pdf_filename": "Haydn_symphonies_13-18.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp56",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._18_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 18 in G major, Hoboken I/18, is a symphony by Joseph Haydn. The composition date is conspicuously uncertain. The Breitkopf catalogue entry assures that it was composed no later than March 1766, the date of the Esterhazy orchestra moving to Esterhaza, but most scholars believe it was composed at least a few years before then. Dates between 1757 and 1764 have been also suggested but not proven.",
+      "pageviews_yearly": 1680
+    },
+    {
+      "qid": "Q2331499",
+      "title": "Symphony No. 19",
+      "imslp_id": "Symphony_No.19_in_D_major,_Hob.I:19_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71503-Haydn-_Sinfonia_Nr19__HCR_Landon_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp57",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._19_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 19 in D major, Hoboken I/19, is a symphony by Joseph Haydn. The symphony was composed between 1757 and 1761.",
+      "pageviews_yearly": 1462
+    },
+    {
+      "qid": "Q210524",
+      "title": "Symphony No. 2",
+      "imslp_id": "Symphony_No.2_in_C_major,_Hob.I:2_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71226-Haydn-_Sinfonia_Nr2__HCR_Landon_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp40",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._2_(Haydn)",
+      "wikipedia_extract": "Joseph Haydn's Symphony No. 2 in C major, Hoboken I/2, is believed to have been written between 1757 and 1761. The symphony is scored for two oboes, bassoon, two horns, strings, and continuo. Like many of the earliest symphonies by Haydn and others of the time, it is in three movements:",
+      "pageviews_yearly": 3457
+    },
+    {
+      "qid": "Q2142555",
+      "title": "Symphony No. 20",
+      "imslp_id": "Symphony_No.20_in_C_major,_Hob.I:20_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71505-Haydn-_Sinfonia_Nr20__HCR_Landon_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp58",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._20_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 20 in C major is a festive symphony by Joseph Haydn. Hodgson places the composition date in either 1761 or 1762 while Brown states that it was likely composed before 1761. Calvin Stapert affirmatively states that it was composed in the group of 15 symphonies within Haydn's tenure with Count Morzin, and that it is festive, like C major Symphonies 32, 33, and 37.",
+      "pageviews_yearly": 1583
+    },
+    {
+      "qid": "Q213405",
+      "title": "Symphony No. 21",
+      "imslp_id": "Symphony_No.21_in_A_major,_Hob.I:21_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71508-Haydn-_Sinfonia_Nr21__HCR_Landon_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp59",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._21_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 21 in A major, Hoboken I/21, was composed by Joseph Haydn around the year 1764. The symphony’s movements have unusual structures that make their form hard to identify. The parts that pertain to sonata form are often hard to recognize immediately and are often identified “only in retrospect.”",
+      "pageviews_yearly": 2375
+    },
+    {
+      "qid": "Q670424",
+      "title": "Symphony No. 23",
+      "imslp_id": "Symphony_No.23_in_G_major,_Hob.I:23_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71511-Haydn-_Sinfonia_Nr23__HCR_Landon_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp61",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._23_(Haydn)",
+      "wikipedia_extract": "Joseph Haydn wrote Symphony No. 23 in G major, Hoboken I/23, in 1764. The symphony is scored for two oboes, bassoon, two horns, and strings with continuo.",
+      "pageviews_yearly": 1771
+    },
+    {
+      "qid": "Q277047",
+      "title": "Symphony No. 24",
+      "imslp_id": "Symphony_No.24_in_D_major,_Hob.I:24_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71513-Haydn-_Sinfonia_Nr24__HCR_Landon_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp62",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._24_(Haydn)",
+      "wikipedia_extract": "Joseph Haydn wrote Symphony No. 24 in D major, Hoboken I/24, in 1764. The symphony is scored for flute, two oboes, bassoon, two horns, and strings with continuo.",
+      "pageviews_yearly": 1755
+    },
+    {
+      "qid": "Q1810863",
+      "title": "Symphony No. 25",
+      "imslp_id": "Symphony_No.25_in_C_major,_Hob.I:25_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71524-Haydn-_Sinfonia_Nr25__HCR_Landon_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp63",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._25_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 25 in C major, Hoboken I/25, is a symphony by Joseph Haydn.The symphony was most likely composed in 1763, or at the very earliest in 1761, at about the same time as No. 33.",
+      "pageviews_yearly": 1838
+    },
+    {
+      "qid": "Q219727",
+      "title": "Symphony No. 27",
+      "imslp_id": "Symphony_No.27_in_G_major,_Hob.I:27_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71535-Haydn-_Sinfonia_Nr27__HCR_Landon_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp65",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._27_(Haydn)",
+      "wikipedia_extract": "Joseph Haydn's Symphony No. 27 in G major was probably written before March 19, 1761, while he was employed by Count Morzin. Its chronological position was assigned by Eusebius Mandyczewski in 1907. Although later adopted by Hoboken, Robbins Landon has subsequently revised the work's likely chronological position and now believes that the symphony is one of Haydn's earliest, written at roughly the same time as symphonies nos. 15–18. Haydn himself may have labeled the symphony his 16th, although this remains unclear.",
+      "pageviews_yearly": 2361
+    },
+    {
+      "qid": "Q2468277",
+      "title": "Symphony No. 28",
+      "imslp_id": "Symphony_No.28_in_A_major,_Hob.I:28_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71549-Haydn-_Sinfonia_Nr28__HCR_Landon_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp66",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._28_(Haydn)",
+      "wikipedia_extract": "Joseph Haydn's Symphony No. 28 in A major, Hoboken I/28, was written in 1765.",
+      "pageviews_yearly": 2876
+    },
+    {
+      "qid": "Q221518",
+      "title": "Symphony No. 29",
+      "imslp_id": "Symphony_No.29_in_E_major,_Hob.I:29_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71551-Haydn-_Sinfonia_Nr29__HCR_Landon_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp67",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._29_(Haydn)",
+      "wikipedia_extract": "Joseph Haydn's Symphony No. 29 in E major, Hoboken I/29, was written in 1765, just after his 28th, and to be performed in Eisenstadt, under the benign auspices of Prince Nikolaus Esterházy.",
+      "pageviews_yearly": 1960
+    },
+    {
+      "qid": "Q223518",
+      "title": "Symphony No. 3",
+      "imslp_id": "Symphony_No.3_in_G_major,_Hob.I:3_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71232-Haydn-_Sinfonia_Nr3__HCR_Landon_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp41",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._3_(Haydn)",
+      "wikipedia_extract": "Joseph Haydn's Symphony No. 3 in G major, Hoboken I/3, is believed to have been written between 1760 and 1762. The symphony is scored for two oboes, bassoon, two horns, strings, and continuo. It was one of the earliest symphonies to have four movements:",
+      "pageviews_yearly": 2818
+    },
+    {
+      "qid": "Q223756",
+      "title": "Symphony No. 30",
+      "imslp_id": "Symphony_No.30_in_C_major,_Hob.I:30_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71553-Haydn-_Sinfonia_Nr30__HCR_Landon_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp68",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._30_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 30 in C major, Hoboken I/30, is a symphony by Joseph Haydn composed in 1765, at the age of 33. It is nicknamed the Alleluia Symphony because of Haydn's use of a Gregorian Alleluia chant in the opening movement.",
+      "pageviews_yearly": 3257
+    },
+    {
+      "qid": "Q224411",
+      "title": "Symphony No. 31",
+      "imslp_id": "Symphony_No.31_in_D_major,_Hob.I:31_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP50273-31__Horn_Signal__1st_Mvt..pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp69",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._31_(Haydn)",
+      "wikipedia_extract": "Joseph Haydn's Symphony No. 31 in D major, Hob. I/31, was composed in 1765 for Haydn's employer Prince Nikolaus Esterházy. It is nicknamed the Hornsignal Symphony because it gives a prominent role to an unusually large horn section of four players. Probably because of its prominent obbligato writing for the horns, in Paris, the publisher Sieber published this symphony as a \"symphonie concertante\" around 1785.",
+      "pageviews_yearly": 4801
+    },
+    {
+      "qid": "Q225165",
+      "title": "Symphony No. 32",
+      "imslp_id": "Symphony_No.32_in_C_major,_Hob.I:32_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71556-Haydn-_Sinfonia_Nr32__HCR_Landon_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp70",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._32_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 32 in C major is a festive symphony by Joseph Haydn. The exact date of composition is unknown. It has been suggested by noted Haydn scholar H.C. Robbins Landon that it could have been written as early as 1757 and as late as 1763. More recent scholars have suggested it was composed in either 1760 or 1761.",
+      "pageviews_yearly": 1629
+    },
+    {
+      "qid": "Q225715",
+      "title": "Symphony No. 33",
+      "imslp_id": "Symphony_No.33_in_C_major,_Hob.I:33_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71558-Haydn-_Sinfonia_Nr33__HCR_Landon_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp71",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._33_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 33 in C major is a festive symphony by Joseph Haydn. The precise date of composition is unknown. Haydn scholar H.C. Robbins Landon has dated this work to 1763–65. It has also been suggested that it was written in 1760 or 1761, along with Symphony no. 32.",
+      "pageviews_yearly": 1845
+    },
+    {
+      "qid": "Q2692057",
+      "title": "Symphony No. 34",
+      "imslp_id": "Symphony_No.34_in_D_minor,_Hob.I:34_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71561-Haydn-_Sinfonia_Nr34__HCR_Landon_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp72",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._34_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 34 in D minor was written by Joseph Haydn. According to traditional chronology it was written in 1765, shortly before Haydn's Sturm und Drang period began in 1766, during his social withdrawal at Esterháza. However, more recent chronologies place it two years earlier, in 1763, which if correct would suggest that it is the first minor-key symphony Haydn ever wrote, though there is some uncertainty around chronology, with Symphony No. 26 being the traditional candidate and Symphony No. 39 another candidate.",
+      "pageviews_yearly": 2435
+    },
+    {
+      "qid": "Q226541",
+      "title": "Symphony No. 35",
+      "imslp_id": "Symphony_No.35_in_B-flat_major,_Hob.I:35_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71673-57919.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp73",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._35_(Haydn)",
+      "wikipedia_extract": "Symphony No. 35 in B♭ major, Hoboken I/35, was written by Joseph Haydn. The autograph score is \"carefully\" dated \"December 10, 1767\". It has been speculated that this symphony was written to celebrate Prince Esterházy's return from a visit to the Palace of Versailles.",
+      "pageviews_yearly": 1837
+    },
+    {
+      "qid": "Q226922",
+      "title": "Symphony No. 36",
+      "imslp_id": "Symphony_No.36_in_E-flat_major,_Hob.I:36_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71676-Haydn-_Sinfonia_Nr36__HCR_Landon_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp74",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._36_(Haydn)",
+      "wikipedia_extract": "Joseph Haydn wrote his Symphony No. 36 in E♭ major, Hoboken 1/36, some time in the first half of the 1760s, around the same time as his Symphony No. 33, for Prince Nikolaus Esterházy. Scored for two oboes, bassoon, two horns, strings, and continuo, the slow movement features solos for violin and cello.",
+      "pageviews_yearly": 1644
+    },
+    {
+      "qid": "Q2191866",
+      "title": "Symphony No. 37",
+      "imslp_id": "Symphony_No.37_in_C_major,_Hob.I:37_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71680-Haydn-_Sinfonia_Nr37__HCR_Landon_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp75",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._37_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 37 in C major, Hob. I/37, is a symphony by Joseph Haydn. The numbering is misleading, as it is one of Haydn's earliest symphonies. A copy of the score found at Český Krumlov, Czech Republic, is dated 1758. It can be presumed it was written for the orchestra of Count Morzin, in which Haydn was employed until February 1761.",
+      "pageviews_yearly": 2038
+    },
+    {
+      "qid": "Q228046",
+      "title": "Symphony No. 38",
+      "imslp_id": "Symphony_No.38_in_C_major,_Hob.I:38_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71682-Haydn-_Sinfonia_Nr38__HCR_Landon_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp76",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._38_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 38 in C major, Hoboken I/38, is an early and festive symphony by Joseph Haydn. The symphony was composed sometime between 1765 and 1769. Because of the virtuosic oboe parts in the final two movements, it has been suggested that the work's composition may have coincided with the employ of the oboist Vittorino Colombazzo in the fall of 1768. The symphony is popularly called the Echo Symphony, a nickname that, like all other named Haydn symphonies, did not originate with the composer.",
+      "pageviews_yearly": 2462
+    },
+    {
+      "qid": "Q228710",
+      "title": "Symphony No. 39",
+      "imslp_id": "Symphony_No.39_in_G_minor,_Hob.I:39_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71684-Haydn-_Sinfonia_Nr39__HCR_Landon_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp77",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._39_(Haydn)",
+      "wikipedia_extract": "Symphony No. 39 is a symphony in G minor composed by Joseph Haydn, under the patronage of Prince Nikolaus Esterházy. Although the date of its composition is not certain, it is thought to have been written between May and September 1765, making it the earliest of Haydn's minor-key symphonies associated with his Sturm und Drang period.",
+      "pageviews_yearly": 4606
+    },
+    {
+      "qid": "Q335111",
+      "title": "Symphony No. 4",
+      "imslp_id": "Symphony_No.4_in_D_major,_Hob.I:4_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71240-Haydn-_Sinfonia_Nr4__HCR_Landon_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp42",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._4_(Haydn)",
+      "wikipedia_extract": "Joseph Haydn's Symphony No. 4 in D major, Hob. I/4, is one of the earliest symphonies he wrote, believed to have been composed roughly between 1757 and 1761. The work is scored for two oboes, bassoon, two horns, strings, and continuo. As usual for the period, it is in three movements:",
+      "pageviews_yearly": 2594
+    },
+    {
+      "qid": "Q231357",
+      "title": "Symphony No. 40",
+      "imslp_id": "Symphony_No.40_in_F_major,_Hob.I:40_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71686-Haydn-_Sinfonia_Nr40__HCR_Landon_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp78",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._40_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 40 in F major, Hoboken I/40, is a symphony by Joseph Haydn. Despite its number, Haydn had composed this symphony by 1763, long before the other symphonies numbered in the 30s and 40s in Hoboken's catalog. Chronologically, the symphony belongs with Symphony No. 13 and has stylistic similarities with Haydn's earliest symphonic output.",
+      "pageviews_yearly": 1844
+    },
+    {
+      "qid": "Q10749519",
+      "title": "Symphony No. 41",
+      "imslp_id": "Symphony_No.41_in_C_major,_Hob.I:41_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71688-Haydn-_Sinfonia_Nr41__HCR_Landon_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp79",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._41_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 41 in C major, Hoboken I/41, is a festive symphony by Joseph Haydn. The symphony was composed by 1769. It is scored for flute, two oboes, bassoon, two French horns, two trumpets, timpani and strings.",
+      "pageviews_yearly": 1694
+    },
+    {
+      "qid": "Q233036",
+      "title": "Symphony No. 42",
+      "imslp_id": "Symphony_No.42_in_D_major,_Hob.I:42_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71690-00_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp80",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._42_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 42 in D major, Hoboken I/42, is a symphony by Joseph Haydn. The symphony was composed by 1771. It is scored for two oboes, two bassoons, two horns, and strings.",
+      "pageviews_yearly": 1808
+    },
+    {
+      "qid": "Q234358",
+      "title": "Symphony No. 44",
+      "imslp_id": "Symphony_No.44_in_E_minor,_Hob.I:44_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP59952-Haydn_Symphony_No.44_in_E_minor__Hob.I_44_-_Cellos__Basses.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp82",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._44_(Haydn)",
+      "wikipedia_extract": "Symphony No. 44 in E minor, Hoboken I/44, was completed in 1772 by Joseph Haydn. It is popularly known as Trauer. An apocryphal story relates that Haydn asked for the slow movement of this symphony to be played at his funeral.",
+      "pageviews_yearly": 7005
+    },
+    {
+      "qid": "Q235413",
+      "title": "Symphony No. 46",
+      "imslp_id": "Symphony_No.46_in_B_major,_Hob.I:46_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71762-Haydn-_Sinfonia_Nr46__HCR_Landon_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp84",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._46_(Haydn)",
+      "wikipedia_extract": "Joseph Haydn's Symphony No. 46 in B major, Hoboken I/46, was composed in 1772, during his Sturm und Drang period.",
+      "pageviews_yearly": 4783
+    },
+    {
+      "qid": "Q2109373",
+      "title": "Symphony No. 47",
+      "imslp_id": "Symphony_No.47_in_G_major,_Hob.I:47_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71764-Haydn-_Sinfonia_Nr47__HCR_Landon_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp85",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._47_(Haydn)",
+      "wikipedia_extract": "Joseph Haydn's Symphony No. 47 in G major, Hob. I:47, was probably written in 1772. It was nicknamed The Palindrome.",
+      "pageviews_yearly": 4796
+    },
+    {
+      "qid": "Q237382",
+      "title": "Symphony No. 49",
+      "imslp_id": "Symphony_No.49_in_F_minor,_Hob.I:49_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP533574-Haydn_Symphony_No.49_in_F_minor__Hob.I_49_-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp87",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._49_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 49 in F minor was written in 1768 by Joseph Haydn during his Sturm und Drang period. It is popularly known as La passione. The scoring of the symphony is typical of Haydn in this period: two oboes, bassoon, two horns, and strings.",
+      "pageviews_yearly": 6674
+    },
+    {
+      "qid": "Q335426",
+      "title": "Symphony No. 5",
+      "imslp_id": "Symphony_No.5_in_A_major,_Hob.I:5_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71242-Haydn-_Sinfonia_Nr5__HCR_Landon_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp43",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._5_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 5 in A major, Hoboken I/5, by Joseph Haydn, is believed to have been written between 1760 and 1762, while he was employed either by Count Morzin or, Prince Paul II Anton Esterházy.",
+      "pageviews_yearly": 2274
+    },
+    {
+      "qid": "Q240411",
+      "title": "Symphony No. 50",
+      "imslp_id": "Symphony_No.50_in_C_major,_Hob.I:50_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71360-Haydn_-_Symphony_No._50_in_C_major__autograph__PL-KJ_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp88",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._50_(Haydn)",
+      "wikipedia_extract": "Symphony No. 50 in C major, Hoboken I/50, by Joseph Haydn was written partly in 1773 and partly in 1774.",
+      "pageviews_yearly": 2268
+    },
+    {
+      "qid": "Q2435974",
+      "title": "Symphony No. 51",
+      "imslp_id": "Symphony_No.51_in_B-flat_major,_Hob.I:51_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71361-Haydn_Andante_s_51_ed_2.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp89",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._51_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 51 in B♭ major, Hoboken I/51, is a symphony by Joseph Haydn, written in either 1773 or 1774, although the exact dating remains ambiguous.",
+      "pageviews_yearly": 1753
+    },
+    {
+      "qid": "Q928261",
+      "title": "Symphony No. 52",
+      "imslp_id": "Symphony_No.52_in_C_minor,_Hob.I:52_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71362-Haydn_H52_p4__Burchard_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp90",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._52_(Haydn)",
+      "wikipedia_extract": "\nThe Symphony No. 52 in C minor is one of the last Sturm und Drang symphonies composed by the Austrian composer Joseph Haydn while the composer was in residence at Esterházy in 1771 or 1772.",
+      "pageviews_yearly": 2884
+    },
+    {
+      "qid": "Q242858",
+      "title": "Symphony No. 53",
+      "imslp_id": "Symphony_No.53_in_D_major,_Hob.I:53_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71363-57924.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp91",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._53_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 53 in D major, Hoboken I/53, is a symphony by Joseph Haydn. It is often referred to by the subtitle L'Impériale. The symphony was composed by 1777. It is scored for flute, two oboes, bassoon, two horns, timpani, and strings.",
+      "pageviews_yearly": 3071
+    },
+    {
+      "qid": "Q243272",
+      "title": "Symphony No. 54",
+      "imslp_id": "Symphony_No.54_in_G_major,_Hob.I:54_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71364-Haydn_Sinfonia_Hob_I_54__G.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp92",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._54_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 54 in G major, Hoboken I/54, is a symphony by Joseph Haydn, composed in 1774.",
+      "pageviews_yearly": 2279
+    },
+    {
+      "qid": "Q243661",
+      "title": "Symphony No. 55",
+      "imslp_id": "Symphony_No.55_in_E-flat_major,_Hob.I:55_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71365-Haydn_-_Symphony_No.55_in_Eb_Major_-autograph-.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp93",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._55_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 55 in E♭ major, Hoboken I/55, is a symphony by Joseph Haydn, composed by 1774. It is scored for two oboes, bassoon, two horns, and strings.",
+      "pageviews_yearly": 2656
+    },
+    {
+      "qid": "Q577393",
+      "title": "Symphony No. 56",
+      "imslp_id": "Symphony_No.56_in_C_major,_Hob.I:56_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71366-Haydn_-_Symphony_No.56_in_C_Major_-autograph-.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp94",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._56_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 56 in C major, Hoboken I/56, is a symphony by Joseph Haydn, composed by 1774. It is scored for two oboes, bassoon, two horns, two trumpets, timpani and strings. This is the only symphony by Joseph Haydn where he calls for the usage of both C alto horns and trumpets.",
+      "pageviews_yearly": 1910
+    },
+    {
+      "qid": "Q1928133",
+      "title": "Symphony No. 57",
+      "imslp_id": "Symphony_No.57_in_D_major,_Hob.I:57_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71367-Haydn_H57_p4__Burchard_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp95",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._57_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 57 in D major, Hoboken I/57, is a symphony by Joseph Haydn. The symphony was composed in 1774, under the auspices of Nikolaus Esterhazy, for whom he would compose symphonies until 1789. It is scored for two oboes, two bassoons, two horns, and strings.",
+      "pageviews_yearly": 1499
+    },
+    {
+      "qid": "Q2193563",
+      "title": "Symphony No. 58",
+      "imslp_id": "Symphony_No.58_in_F_major,_Hob.I:58_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP72185-Haydn_Sinfonia_Hob_I_58__F.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp96",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._58_(Haydn)",
+      "wikipedia_extract": "Symphony No. 58 in F major, Hoboken I/58, is a symphony by Joseph Haydn, composed probably around 1767 but certainly not after 1774, after which time the traits of this symphony were outmoded.",
+      "pageviews_yearly": 1803
+    },
+    {
+      "qid": "Q244993",
+      "title": "Symphony No. 59",
+      "imslp_id": "Symphony_No.59_in_A_major,_Hob.I:59_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP72186-Haydn_Sinfonia_Hob_I_59__A.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp97",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._59_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 59 in A major is a relatively early work by Joseph Haydn that is known popularly as the Fire Symphony. Composed under the auspices of Nikolaus Esterházy, it was written in the middle or late 1760s.",
+      "pageviews_yearly": 4410
+    },
+    {
+      "qid": "Q246706",
+      "title": "Symphony No. 60",
+      "imslp_id": "Symphony_No.60_in_C_major,_Hob.I:60_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP72187-Haydn_Sinfonia_Hob_I_60__C.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp98",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._60_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 60 in C major, Hoboken I/60, was written by Joseph Haydn. It is sometimes given the nickname Il Distratto or, in German, Der Zerstreute.",
+      "pageviews_yearly": 6645
+    },
+    {
+      "qid": "Q2226370",
+      "title": "Symphony No. 61",
+      "imslp_id": "Symphony_No.61_in_D_major,_Hob.I:61_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP72188-Haydn_H61_p4__Burchard_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp99",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._61_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 61 in D major, Hoboken I/61, is a symphony by Joseph Haydn. The autograph has survived and is dated 1776.",
+      "pageviews_yearly": 1763
+    },
+    {
+      "qid": "Q2156012",
+      "title": "Symphony No. 62",
+      "imslp_id": "Symphony_No.62_in_D_major,_Hob.I:62_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP72189-Haydn_Sinfonia_Hob_I_62__D.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp100",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._62_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 62 in D major, Hoboken I/62, is a symphony written by Joseph Haydn for the orchestra at Esterháza in 1780 or 1781, a good length of time after the writing of Symphony No. 61.",
+      "pageviews_yearly": 2025
+    },
+    {
+      "qid": "Q250849",
+      "title": "Symphony No. 63",
+      "imslp_id": "Symphony_No.63_in_C_major,_Hob.I:63_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP72190-Haydn_-_Symphony_No._63_in_C_Major_-version_2__autograph-.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp101",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._63_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 63 in C major, Hoboken I/63, is a symphony by Joseph Haydn written sometime between 1779 and 1781.",
+      "pageviews_yearly": 3722
+    },
+    {
+      "qid": "Q2115015",
+      "title": "Symphony No. 64",
+      "imslp_id": "Symphony_No.64_in_A_major,_Hob.I:64_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP72191-00_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp102",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._64_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 64 in A major is a symphony by Joseph Haydn dated between 1773 and 1775. The likely date of composition puts it at the tail end of the Sturm und Drang period that produced masterpieces such as symphonies 44 to 48. It is often known by the nickname Tempora mutantur.",
+      "pageviews_yearly": 3373
+    },
+    {
+      "qid": "Q3067539",
+      "title": "Symphony No. 65",
+      "imslp_id": "Symphony_No.65_in_A_major,_Hob.I:65_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP72192-Haydn_Sinfonia_Hob_I_65__A.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp103",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._65_(Haydn)",
+      "wikipedia_extract": "Symphony No. 65 in A major, Hoboken I/65, is a symphony by Joseph Haydn which was composed by 1778.",
+      "pageviews_yearly": 2695
+    },
+    {
+      "qid": "Q2408085",
+      "title": "Symphony No. 66",
+      "imslp_id": "Symphony_No.66_in_B-flat_major,_Hob.I:66_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP72193-57927.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp104",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._66_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 66 in B♭ major is a symphony by Joseph Haydn. The time of composition is uncertain, with one speculation from around 1775–76.",
+      "pageviews_yearly": 1657
+    },
+    {
+      "qid": "Q2832930",
+      "title": "Symphony No. 67",
+      "imslp_id": "Symphony_No.67_in_F_major,_Hob.I:67_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP72194-Haydn_Sinfonia_Hob_I_67__F.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp105",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._67_(Haydn)",
+      "wikipedia_extract": "Symphony No. 67 in F major, Hoboken I/67, is a symphony by Joseph Haydn. It was composed by 1779. The Haydn scholar H. C. Robbins Landon calls this work \"one of the most boldly original symphonies of this period.\"",
+      "pageviews_yearly": 2317
+    },
+    {
+      "qid": "Q3067534",
+      "title": "Symphony No. 68",
+      "imslp_id": "Symphony_No.68_in_B-flat_major,_Hob.I:68_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP72195-57918.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp106",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._68_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 68 in B♭ major, Hoboken I/68, is a symphony by Joseph Haydn. The symphony was composed in 1779 for Nikolaus I, Prince Esterházy. It is chronologically the last symphony by Haydn where the Minuet is second out of the four movements.",
+      "pageviews_yearly": 1721
+    },
+    {
+      "qid": "Q934414",
+      "title": "Symphony No. 69",
+      "imslp_id": "Symphony_No.69_in_C_major,_Hob.I:69_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP72196-Haydn_-_Symphony_No._69__orch._score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp107",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._69_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 69 is a symphony by Joseph Haydn in C major, Hoboken I/69, known as the Laudon Symphony. Composed around 1775–1776, it represents a stylistic departure from the composer's earlier intense Sturm und Drang period and was written at the same time as Haydn was writing numerous comic operas. Despite the lighter tone, however, the symphony is \"as finely crafted, as interesting, indeed as original, as the preceding ones, albeit very different in character.\"",
+      "pageviews_yearly": 2692
+    },
+    {
+      "qid": "Q261220",
+      "title": "Symphony No. 70",
+      "imslp_id": "Symphony_No.70_in_D_major,_Hob.I:70_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP72197-Haydn_-_Symphony_No._70__orch._score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp108",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._70_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 70 in D major, Hoboken 1/70, was written by Joseph Haydn to mark the start of construction of a new opera house on the Eszterháza estate. It was premiered on December 18, 1779—one of the few Haydn symphonies whose exact date of the premiere is known.",
+      "pageviews_yearly": 2989
+    },
+    {
+      "qid": "Q3067549",
+      "title": "Symphony No. 71",
+      "imslp_id": "Symphony_No.71_in_B-flat_major,_Hob.I:71_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP72198-57925.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp109",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._71_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 71 in B-flat major, Hoboken I/71, is a symphony by Joseph Haydn. It was composed by 1780.",
+      "pageviews_yearly": 1589
+    },
+    {
+      "qid": "Q2398678",
+      "title": "Symphony No. 72",
+      "imslp_id": "Symphony_No.72_in_D_major,_Hob.I:72_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP72199-Haydn_Sinfonia_Hob_I_72__D.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp110",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._72_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 72 in D major is a symphony by Joseph Haydn. The symphony was probably composed between 1763 and 1765. The date of this composition is earlier than its number suggests. This work is not well chronologically placed in the Hoboken numbering system: it was composed fifteen to twenty years before the neighboring works.",
+      "pageviews_yearly": 1947
+    },
+    {
+      "qid": "Q2881422",
+      "title": "Symphony No. 73",
+      "imslp_id": "Symphony_No.73_in_D_major,_Hob.I:73_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP72200-1_IMSLP463592-PMLP752803-symphonies00haydbw.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp111",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._73_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 73 in D major, Hoboken 1/73, is a symphony by Joseph Haydn composed in 1782. It is often known by the subtitle La chasse due to the hunting horn calls in the final movement, a popular trope in eighteenth century music.",
+      "pageviews_yearly": 3268
+    },
+    {
+      "qid": "Q2506410",
+      "title": "Symphony No. 74",
+      "imslp_id": "Symphony_No.74_in_E-flat_major,_Hob.I:74_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP72201-Baumgarten-Haydn.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp112",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._74_(Haydn)",
+      "wikipedia_extract": "Symphony No. 74 in E♭ major, Hoboken 1/74, is a symphony by Joseph Haydn composed in 1780 or 1781.",
+      "pageviews_yearly": 1659
+    },
+    {
+      "qid": "Q1989919",
+      "title": "Symphony No. 75",
+      "imslp_id": "Symphony_No.75_in_D_major,_Hob.I:75_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP1290557-cimadevilla_mozart_adagio_favorito.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp113",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._75_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 75 in D major is a symphony composed by Joseph Haydn between 1779 and 1781.",
+      "pageviews_yearly": 2267
+    },
+    {
+      "qid": "Q266871",
+      "title": "Symphony No. 76",
+      "imslp_id": "Symphony_No.76_in_E-flat_major,_Hob.I:76_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP72203-Haydn_H76_p4__Burchard_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp114",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._76_(Haydn)",
+      "wikipedia_extract": "Symphony No. 76 in E♭ major is a symphony by Joseph Haydn completed in 1782.",
+      "pageviews_yearly": 1944
+    },
+    {
+      "qid": "Q1964899",
+      "title": "Symphony No. 78",
+      "imslp_id": "Symphony_No.78_in_C_minor,_Hob.I:78_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP72205-Haydn_Sinfonia_Hob_I_78__c.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp116",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._78_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 78 in C minor, Hoboken 1/78, is a symphony by Joseph Haydn completed in 1782.",
+      "pageviews_yearly": 1923
+    },
+    {
+      "qid": "Q1858828",
+      "title": "Symphony No. 79",
+      "imslp_id": "Symphony_No.79_in_F_major,_Hob.I:79_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP72206-Haydn_H79_p4__Burchard_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp117",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._79_(Haydn)",
+      "wikipedia_extract": "Haydn's Symphony No. 79 in F major, was composed in 1784. The symphony is characterized by a strong and joyful opening theme, as well as varied rhythms throughout all four movements, especially in the minuet. The wind section alternates throughout the symphony between doubling the string section and playing independently. Of particular note are a number of long rests, which are characteristic of Haydn.",
+      "pageviews_yearly": 2147
+    },
+    {
+      "qid": "Q270826",
+      "title": "Symphony No. 8",
+      "imslp_id": "Symphony_No.8_in_G_major,_Hob.I:8_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71308-Haydn-Sinfonia_Nr8__HCR_Landon_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp46",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._8_(Haydn)",
+      "wikipedia_extract": "Joseph Haydn wrote his Symphony No. 8 in G major under the employ of Prince Paul II Anton Esterházy in Spring 1761, in the transition between the Baroque and Classical periods. It is the third part of a set of three symphonies that Prince Anton had commissioned him to write – Le matin, Le midi and Le soir. He had given him as inspiration the three times of Day.",
+      "pageviews_yearly": 3871
+    },
+    {
+      "qid": "Q270960",
+      "title": "Symphony No. 80",
+      "imslp_id": "Symphony_No.80_in_D_minor,_Hob.I:80_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP72207-Haydn_H80_p4__Burchard_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp118",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._80_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 80 in D minor, Hoboken 1/80, is a symphony composed by Joseph Haydn in 1784 as part of a trio of symphonies that also included symphonies 79 and 81. This symphony, along with the one that follows it, and the one that precedes it, were not written for Prince Nikolaus, but for a Lenten concert performed in Vienna in March 1785.",
+      "pageviews_yearly": 3184
+    },
+    {
+      "qid": "Q271438",
+      "title": "Symphony No. 81",
+      "imslp_id": "Symphony_No.81_in_G_major,_Hob.I:81_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP72208-Haydn_H81_p4__Burchard_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp119",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._81_(Haydn)",
+      "wikipedia_extract": "Symphony No. 81 in G major is a symphony by Joseph Haydn composed in 1784 as part of a trio of symphonies that also included symphonies 79 and 80. These three symphonies were specially written for performance in March 1785.",
+      "pageviews_yearly": 2070
+    },
+    {
+      "qid": "Q271693",
+      "title": "Symphony No. 82",
+      "imslp_id": "Symphony_No.82_in_C_major,_Hob.I:82_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP61584-Haydn82hcrl.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp120",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._82_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 82 in C major, Hoboken 1/82, is the first of the six Paris Symphonies written by Joseph Haydn. It is popularly known as the Bear Symphony.",
+      "pageviews_yearly": 7211
+    },
+    {
+      "qid": "Q271978",
+      "title": "Symphony No. 83",
+      "imslp_id": "Symphony_No.83_in_G_minor,_Hob.I:83_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP61586-E519825_53-65-Bibliothek_der_Grazien_1789_1-3.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp121",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._83_(Haydn)",
+      "wikipedia_extract": "Symphony No. 83 in G minor, Hoboken I/83, is the second of the six Paris Symphonies written by Joseph Haydn in 1785. It was published by Artaria in Vienna in December 1787.",
+      "pageviews_yearly": 5723
+    },
+    {
+      "qid": "Q272315",
+      "title": "Symphony No. 84",
+      "imslp_id": "Symphony_No.84_in_E-flat_major,_Hob.I:84_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP61588-Haydn_Sinfonia_Hob_I_84__Eb.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp122",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._84_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 84 in E♭ major, Hoboken I/84, is the third of the six Paris Symphonies written by Joseph Haydn. It is sometimes known by the subtitle In nomine Domini.",
+      "pageviews_yearly": 3232
+    },
+    {
+      "qid": "Q272666",
+      "title": "Symphony No. 85",
+      "imslp_id": "Symphony_No.85_in_B-flat_major,_Hob.I:85_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP61590-10_IMSLP415409-PMLP673537-Vilbac_-_Airs_populaires_Coll.2_S_rie_6_-_pf4h-BDH.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp123",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._85_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 85 in B♭ major, Hoboken I/85, is the fourth of the six Paris symphonies written by Joseph Haydn. The 85th Symphony was completed in either 1785 or 1786. It made its way to America early on, at first through a keyboard arrangement such as one played by Nelly Custis at the White House.",
+      "pageviews_yearly": 5243
+    },
+    {
+      "qid": "Q273132",
+      "title": "Symphony No. 86",
+      "imslp_id": "Symphony_No.86_in_D_major,_Hob.I:86_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP61592-241-244.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp124",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._86_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 86 in D major, Hoboken I/86, is the fifth of the six Paris Symphonies written by Joseph Haydn, and was written to be performed in Paris in 1787. He wrote it in Esterháza in 1786, but for an orchestra much larger, at the instigation of Count Claude d'Ogney.",
+      "pageviews_yearly": 2907
+    },
+    {
+      "qid": "Q273857",
+      "title": "Symphony No. 87",
+      "imslp_id": "Symphony_No.87_in_A_major,_Hob.I:87_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP61594-Haydn_-_Symphony_No.87_in_A_Major_-autograph-.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp125",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._87_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 87 in A major, Hoboken I/87, is the last of the six Paris Symphonies written by Joseph Haydn. It was written in 1786, but performed in 1787 by the Concert de la Loge Olympique, after having been commissioned for performance there by Count d'Ogney in 1785.",
+      "pageviews_yearly": 2523
+    },
+    {
+      "qid": "Q274112",
+      "title": "Symphony No. 88",
+      "imslp_id": "Symphony_No.88_in_G_major,_Hob.I:88_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP61596-205_IMSLP284343-PMLP461683-Hayd_Sinf_2.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp126",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._88_(Haydn)",
+      "wikipedia_extract": "Symphony No. 88 in G major was written by Joseph Haydn, for the orchestra of Esterháza under Prince Nikolaus Esterhazy. It is notably the first of his symphonies written after the completion of the six Paris Symphonies in 1786.",
+      "pageviews_yearly": 8784
+    },
+    {
+      "qid": "Q274467",
+      "title": "Symphony No. 89",
+      "imslp_id": "Symphony_No.89_in_F_major,_Hob.I:89_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71541-Haydn__F._J._-_89._Symphony_in_F_major__Hob.I.89_---_Full_Score__Dover_Reprint_.PDF",
+      "has_pdf": false,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp127",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._89_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 89 in F major, Hoboken I/89, was written by Joseph Haydn in 1787, and performed under the auspices of Nikolaus Esterházy at Esterháza. It is sometimes referred to as The Letter W referring to an older method of cataloging Haydn's symphonic output.",
+      "pageviews_yearly": 2744
+    },
+    {
+      "qid": "Q275849",
+      "title": "Symphony No. 9",
+      "imslp_id": "Symphony_No.9_in_C_major,_Hob.I:9_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71294-Haydn-_Sinfonia_Nr9__HCR_Landon_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp132",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._9_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 9 in C major, Hoboken I/9, is a symphony by Joseph Haydn. The symphony was composed in 1762, under the auspices of Nikolaus Esterházy, who allowed the symphony to be performed in Eisenstadt.",
+      "pageviews_yearly": 2178
+    },
+    {
+      "qid": "Q275911",
+      "title": "Symphony No. 90",
+      "imslp_id": "Symphony_No.90_in_C_major,_Hob.I:90_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71542-Haydn__F._J._-_90._Symphony_in_C_major__Hob.I.90_---_Full_Score__Dover_Reprint_.PDF",
+      "has_pdf": false,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp128",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._90_(Haydn)",
+      "wikipedia_extract": "Symphony No. 90 in C major, Hoboken I/90, was written by Joseph Haydn in 1788 as part of a three-symphony commission by Count d'Ogny for the Concert de la Loge Olympique. It is occasionally referred to as The Letter R – referring to an older method of cataloguing Haydn's symphonic output. This triptych also includes Haydn's own Symphony No. 91 and Symphony No. 92.",
+      "pageviews_yearly": 3543
+    },
+    {
+      "qid": "Q276385",
+      "title": "Symphony No. 91",
+      "imslp_id": "Symphony_No.91_in_E-flat_major,_Hob.I:91_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP71543-115076.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp129",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._91_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 91 in E♭ major, Hoboken I/91, was written by Joseph Haydn. It was completed in 1788 as part of a three-symphony commission from Count d'Ogny for the Concert de la Loge Olympique, a successor to Haydn's series of \"Paris symphonies\". It is occasionally referred to as The Letter T referring to an older method of cataloguing Haydn's symphonic output. This triptych also includes Haydn's own Symphony No. 90 and Symphony No. 92.",
+      "pageviews_yearly": 2532
+    },
+    {
+      "qid": "Q276602",
+      "title": "Symphony No. 92",
+      "imslp_id": "Symphony_No.92_in_G_major,_Hob.I:92_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP61598-139_IMSLP463592-PMLP752803-symphonies00haydbw.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp130",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._92_(Haydn)",
+      "wikipedia_extract": "Joseph Haydn completed his Symphony No. 92 in G major, Hoboken I/92, popularly known as the Oxford Symphony, in 1789 as one of a set of three symphonies commissioned by the French Count d'Ogny.",
+      "pageviews_yearly": 7747
+    },
+    {
+      "qid": "Q276768",
+      "title": "Symphony No. 94",
+      "imslp_id": "Symphony_No.94_in_G_major,_Hob.I:94_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP34746-Haydn_-_Symphony_No.94__Hob._I-94_-_II_-autograph-.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp132",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._94_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 94 in G major is the second of the twelve London symphonies written by Joseph Haydn. It is popularly known as the Surprise Symphony. Haydn wrote the symphony in 1791 in London for a concert series he gave during the first of his visits to England (1791–1792). The premiere took place at the Hanover Square Rooms in London on March 23, 1792, with Haydn leading the orchestra seated at a fortepiano.",
+      "pageviews_yearly": 35340
+    },
+    {
+      "qid": "Q277011",
+      "title": "Symphony No. 96",
+      "imslp_id": "Symphony_No.96_in_D_major,_Hob.I:96_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP61606-281_IMSLP475217-PMLP771208-Haydn-LondonSyms1.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp134",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._96_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 96 in D major, Hoboken I/96, was completed by Joseph Haydn in 1791 as part of the set of symphonies composed on his first trip to London. It was first performed at the Hanover Square Rooms in London on 11 March 1791. Although it is the fourth of the twelve London symphonies by number, it was actually the first one written and performed. It is popularly known as the Miracle Symphony.",
+      "pageviews_yearly": 7013
+    },
+    {
+      "qid": "Q277126",
+      "title": "Symphony No. 98",
+      "imslp_id": "Symphony_No.98_in_B-flat_major,_Hob.I:98_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP61610-173_IMSLP475217-PMLP771208-Haydn-LondonSyms1.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp136",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._98_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 98 in B♭ major, Hoboken I/98, is the sixth of the twelve London symphonies composed by Joseph Haydn. It was completed in 1792 as part of the set of symphonies composed on his first trip to London. It was first performed at the Hanover Square Rooms in London on 2 March 1792. Some musicologists and historians interpret this symphony as Haydn’s tribute to his friend Mozart who had died on 5 December 1791.",
+      "pageviews_yearly": 4637
+    },
+    {
+      "qid": "Q277243",
+      "title": "Symphony No. 99",
+      "imslp_id": "Symphony_No.99_in_E-flat_major,_Hob.I:99_(Haydn,_Joseph)",
+      "pdf_filename": "Haydn_-_Symphony_No.99_Mvt.III__Full_Score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp137",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._99_(Haydn)",
+      "wikipedia_extract": "The Symphony No. 99 in E♭ major is the seventh of the twelve London symphonies written by Joseph Haydn. The symphony was written in 1793 in Vienna in anticipation for his second trip to London.",
+      "pageviews_yearly": 4660
+    },
+    {
+      "qid": "Q10338695",
+      "title": "The Love of the Three Pomegranates"
+    },
+    {
+      "qid": "Q970337",
+      "title": "The Seasons",
+      "imslp_id": "Die_Jahreszeiten,_Hob.XXI:3_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP61624-haydn_seasons.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp828",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Seasons_(Haydn)",
+      "wikipedia_extract": "The Seasons is a secular oratorio by Joseph Haydn, first performed in 1801.",
+      "pageviews_yearly": 17208
+    },
+    {
+      "qid": "Q1219569",
+      "title": "The Soft Skin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Soft_Skin",
+      "wikipedia_extract": "The Soft Skin is a 1964 romantic drama film directed by François Truffaut and starring Jean Desailly, Françoise Dorléac and Nelly Benedetti. Written by Truffaut and Jean-Louis Richard, it follows a married successful writer and lecturer who meets and has an affair with a flight attendant half his age. The film was shot on location in Paris, Reims, and Lisbon, and several scenes were filmed at Paris-Orly Airport. At the 1964 Cannes Film Festival, the film was nominated for the Palme d'Or. Despite Truffaut's recent success with Jules and Jim and The 400 Blows, The Soft Skin did not do well at the box office.",
+      "pageviews_yearly": 16972
+    },
+    {
+      "qid": "Q1438716",
+      "title": "Theresienmesse",
+      "imslp_id": "Mass_in_B-flat_major,_Hob.XXII:12_(Haydn,_Joseph)",
+      "pdf_filename": "PMLP69509-Haydn_Mass_in_B-flat_major__Hob.XXII_12_-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp840",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Theresienmesse",
+      "wikipedia_extract": "Theresienmesse is a mass in B-flat major written by Joseph Haydn and named after Maria Theresa of the Two Sicilies, empress consort of Francis II. The empress herself was the soprano soloist at private performances of both The Creation and The Seasons in May 1801 at the Viennese Court. \nThe title does not appear on the autograph score, which is labeled simply with the Latin word \"Missa\".",
+      "pageviews_yearly": 4033
+    },
+    {
+      "qid": "Q706027",
+      "title": "Toy Symphony"
+    },
+    {
+      "qid": "Q1585960",
+      "title": "Trumpet Concerto in E-flat major"
+    },
+    {
+      "qid": "Q17063502",
+      "title": "Twenty Variations in G major",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Twenty_Variations_in_G_major_(Haydn)",
+      "wikipedia_extract": "Twenty Variations in G major, Hob. XVII/2, was written in the 1760s by Joseph Haydn. In 1788/1789, Artaria published the Arietta con 12 Variazioni in A major, which is an abridged version of the Twenty Variations in G major, and in a different key.",
+      "pageviews_yearly": 1496
+    },
+    {
+      "qid": "Q3554784",
+      "title": "Variations in F minor",
+      "imslp_id": "Variations_in_F_minor,_Hob.XVII:6_(Haydn,_Joseph)",
+      "pdf_filename": "Haydn_-_Andante_with_Variations_in_f.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp763",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Variations_in_F_minor",
+      "wikipedia_extract": "The Andante with variations in F minor, also known as Un piccolo divertimento, is a work for piano composed by Joseph Haydn in 1793.",
+      "pageviews_yearly": 5549
+    },
+    {
+      "qid": "Q2441147",
+      "title": "Violin Concerto No. 1",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp335",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Violin_Concerto_No._1_(Haydn)",
+      "wikipedia_extract": "The Violin Concerto No. 1 in C major by Joseph Haydn, fatto per il luigi, was written in the 1760s for a well-known violinist of the time, Luigi Tomasini, who was just back from Italy and soon became the concertmaster of the Esterházy orchestra.",
+      "pageviews_yearly": 4008
+    },
+    {
+      "qid": "Q7933358",
+      "title": "Violin Concerto No. 3",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp336",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Violin_Concerto_No._3_(Haydn)",
+      "wikipedia_extract": "The Violin Concerto No. 3 in A major was composed by Joseph Haydn probably between 1765 and 1770.",
+      "pageviews_yearly": 1956
+    },
+    {
+      "qid": "Q1948731",
+      "title": "Violin Concerto No. 4",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joseph-haydn-1732-pp337",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Violin_Concerto_No._4_(Haydn)",
+      "wikipedia_extract": "The Violin Concerto No. 4 in G major by Joseph Haydn is one of the composer's three surviving violin concertos.",
+      "pageviews_yearly": 4773
+    },
+    {
+      "qid": "Q12410280",
+      "title": "arrangements of Scottish and Welsh folk songs by Joseph Haydn"
+    },
+    {
+      "qid": "Q4122341",
+      "title": "national anthem of Germany"
+    }
+  ]
+}

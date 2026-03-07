@@ -13,6 +13,7 @@ struct OrbitalView: View {
   @Environment(ResourceManager.self) private var resourceManager
   @State private var selectedSongID: SongRef.ID?
   @State private var songToDelete: SongRef?
+  @State private var isShowingDeleteConfirmation = false
 
   var body: some View {
     NavigationStack {
@@ -41,10 +42,7 @@ struct OrbitalView: View {
           }
           .confirmationDialog(
             "Delete \(songToDelete?.name ?? "")?",
-            isPresented: Binding(
-              get: { songToDelete != nil },
-              set: { if !$0 { songToDelete = nil } }
-            ),
+            isPresented: $isShowingDeleteConfirmation,
             titleVisibility: .visible
           ) {
             Button("Delete", role: .destructive) {
@@ -54,6 +52,9 @@ struct OrbitalView: View {
             }
           } message: {
             Text("This will permanently delete the pattern from iCloud. This cannot be undone.")
+          }
+          .onChange(of: songToDelete) {
+            isShowingDeleteConfirmation = songToDelete != nil
           }
         } else {
           ProgressView("Loading songs…")

@@ -1,0 +1,147 @@
+{
+  "composer_name": "Johann Pachelbel",
+  "name_last_first": "Pachelbel, Johann",
+  "slug": "pachelbel",
+  "wiki_page": "https://en.wikipedia.org/wiki/Johann_Pachelbel",
+  "apple_music_playlist": "https://music.apple.com/us/playlist/johann-pachelbel-essentials/pl.deafd801c23a491b90871266b6670e53",
+  "era": "Baroque",
+  "dates": "1653 – 1706",
+  "nationality": "DEU",
+  "notable": true,
+  "works": [
+    {
+      "title": "Canon and Gigue in D major P.37",
+      "musicxml": "musicxml/Canon_in_D_Major.mxl",
+      "midi": "midi/Canon_in_D_Major.mid",
+      "form": "Canon",
+      "time_signature": "4/4",
+      "instruments": [
+        "Violín"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.68,
+        "n_favorites": 332,
+        "n_views": 5803,
+        "duration_seconds": 340.4998297407214,
+        "n_notes": 594,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "canond-johannpachelbel",
+        "musescore_url": "https://musescore.com/user/551561/scores/3383536",
+        "musescore_duration": "05:45"
+      },
+      "key": "D major",
+      "instruments_gm": [
+        "Violin"
+      ],
+      "tempo_bpm": 40,
+      "n_measures": 57,
+      "n_parts": 1,
+      "n_notes": 593,
+      "notes_per_second": 1.7,
+      "apple_music_search_query": "Pachelbel D major Canon and Gigue in D major P.37",
+      "parent_work_title": "Canno per 3 Violini e Basso",
+      "wikidata_id": "Q689519",
+      "wikidata_title": "Canon and Gigue in D",
+      "musicbrainz_id": "3fa14686-8507-4f63-bf17-1b5f1f1a0088",
+      "imslp_id": "Canon_and_Gigue_in_D_major,_P.37_(Pachelbel,_Johann)",
+      "wikidata_match_method": "title_tokens",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Pachelbel%20Canon%20and%20Gigue%20in%20D%20major%20P.37",
+      "display_title": "Canon and Gigue in D"
+    },
+    {
+      "title": "Canon and Gigue in D major P.37",
+      "musicxml": "musicxml/Canon_in_D_Violin_Duet.mxl",
+      "midi": "midi/Canon_in_D_Violin_Duet.mid",
+      "form": "Canon",
+      "time_signature": "4/4",
+      "instruments": [
+        "Violin"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.72,
+        "n_favorites": 6,
+        "n_views": 822,
+        "duration_seconds": 323.99999999117995,
+        "n_notes": 1174,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/19055331/scores/5939573",
+        "musescore_duration": "05:25"
+      },
+      "key": "D major",
+      "instruments_gm": [
+        "Violin"
+      ],
+      "tempo_bpm": 45,
+      "n_measures": 61,
+      "n_parts": 2,
+      "n_notes": 1172,
+      "notes_per_second": 3.6,
+      "apple_music_search_query": "Pachelbel D major Canon and Gigue in D major P.37",
+      "parent_work_title": "Canon in D Violin Duet",
+      "wikidata_id": "Q689519",
+      "wikidata_title": "Canon and Gigue in D",
+      "musicbrainz_id": "3fa14686-8507-4f63-bf17-1b5f1f1a0088",
+      "imslp_id": "Canon_and_Gigue_in_D_major,_P.37_(Pachelbel,_Johann)",
+      "wikidata_match_method": "title_tokens",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Pachelbel%20Canon%20and%20Gigue%20in%20D%20major%20P.37",
+      "display_title": "Canon and Gigue in D"
+    },
+    {
+      "title": "Tröste uns Gott",
+      "musicxml": "musicxml/Troste_uns_Gott.mxl",
+      "midi": "midi/Troste_uns_Gott.mid",
+      "time_signature": "3/4",
+      "instruments": [
+        "Klavier"
+      ],
+      "tempo_markings": [
+        "Schnell (132 bpm)"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 0,
+        "n_views": 110,
+        "duration_seconds": 148.63636363253516,
+        "n_notes": 204,
+        "complexity": "1",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "NA",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/210701/scores/745326",
+        "musescore_duration": "02:24"
+      },
+      "key": "B♭ major",
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 132,
+      "n_measures": 93,
+      "n_parts": 1,
+      "n_notes": 204,
+      "notes_per_second": 1.4,
+      "apple_music_search_query": "Pachelbel B♭ major Tröste uns Gott",
+      "wikidata_id": "Q133825865",
+      "wikidata_title": "Tröste, tröste uns, Gott",
+      "musicbrainz_id": "83f63625-b6c3-42c6-9b47-eeef5917eae1",
+      "wikidata_match_method": "title_substring",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Pachelbel%20Tr%C3%B6ste%20uns%20Gott",
+      "display_title": "Tröste, tröste uns, Gott"
+    }
+  ],
+  "birth_year": 1653,
+  "death_year": 1706,
+  "wikipedia_extract": "Johann Pachelbel (also Bachelbel; baptised 11 September [O.S. 1 September] 1653 – buried 9 March 1706) was a German composer, organist, and teacher who brought the south German organ schools to their peak. He composed a large body of sacred and secular music, and his contributions to the development of the chorale prelude and fugue have earned him a place among the most important composers of the middle Baroque era.",
+  "wikipedia_compositions_url": "https://en.wikipedia.org/wiki/List_of_compositions_by_Johann_Pachelbel",
+  "wikidata_id": "Q76485"
+}

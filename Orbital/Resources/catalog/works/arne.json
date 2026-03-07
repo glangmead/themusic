@@ -1,0 +1,267 @@
+{
+  "composer_slug": "arne",
+  "composer_qid": "Q309709",
+  "work_count": 49,
+  "midi_file_count": 4,
+  "works": [
+    {
+      "qid": "Q4646901",
+      "title": "A-Hunting We Will Go",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/A-Hunting_We_Will_Go",
+      "wikipedia_extract": "\"A-Hunting We Will Go\" is a popular folk song and nursery rhyme composed in 1777 by English composer Thomas Arne. Arne had composed the song for a 1777 production of The Beggar's Opera in London.",
+      "pageviews_yearly": 20506
+    },
+    {
+      "qid": "Q54990804",
+      "title": "Achilles in Petticoats"
+    },
+    {
+      "qid": "Q4722183",
+      "title": "Alfred",
+      "imslp_id": "Alfred_(Arne,_Thomas_Augustine)",
+      "pdf_filename": "PMLP1218540-arne_1490.e.8._Alfred_the_Great_libretto.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/thomas-augustine-arne-1710-pp20",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alfred_(Arne_opera)",
+      "wikipedia_extract": "Alfred is a sung stage work about Alfred the Great with music by Thomas Arne and libretto by David Mallet and James Thomson. The work was initially devised as a masque in 1740 and was first performed at Cliveden, country home of Frederick, Prince of Wales, on 1 August 1740 to commemorate the accession of his grandfather George I and the birthday of the Princess Augusta. Arne later revised the work turning it into an all-sung oratorio in 1745 and then an opera in 1753. It is best known for its finale \"Rule, Britannia!\".",
+      "pageviews_yearly": 7408
+    },
+    {
+      "qid": "Q54990815",
+      "title": "Alzuma",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alzuma",
+      "wikipedia_extract": "Alzuma is a 1773 historical tragedy by the Irish writer Arthur Murphy. It premiered in London at the Theatre Royal, Covent Garden on 23 February 1773. The original cast included William 'Gentleman' Smith as Alzuma, Thomas Hull as Pizarro, Robert Bensley as Don Carlos and Elizabeth Hartley as Orellana. The music was composed for the production by Thomas Arne. It is based on the Conquest of Peru by Francisco Pizarro in the sixteenth century. Murphy suggested that the British victory at Havana in 1762 influenced his sympathetic depiction of the Peruvians and hostility to Spain. Richard Brinsley Sheridan's later play Pizarro dealt with the same subject and themes.",
+      "pageviews_yearly": 931
+    },
+    {
+      "qid": "Q54990819",
+      "title": "An Hospital for Fools"
+    },
+    {
+      "qid": "Q384482",
+      "title": "Artaxerxes",
+      "has_midi": true,
+      "midi_files": [
+        "midi/The_soldier_tird_of_wars_alarms_from_Artaxerxes.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q54990822",
+      "title": "Brittania"
+    },
+    {
+      "qid": "Q54990829",
+      "title": "Caractacus"
+    },
+    {
+      "qid": "Q5157861",
+      "title": "Comus",
+      "imslp_id": "Comus_(Arne,_Thomas_Augustine)",
+      "pdf_filename": "PMLP117045-Arne-Comus.Walsh1764.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/thomas-augustine-arne-1710-pp15",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Comus_(Arne)",
+      "wikipedia_extract": "Comus is a masque in three acts adapted from John Milton's masque of the same name by John Dalton in 1738. The music there was set by Thomas Arne and helped establish the composer's reputation.",
+      "pageviews_yearly": 2232
+    },
+    {
+      "qid": "Q54990844",
+      "title": "Don John"
+    },
+    {
+      "qid": "Q54990860",
+      "title": "Don Saverio"
+    },
+    {
+      "qid": "Q54990872",
+      "title": "Elfrida"
+    },
+    {
+      "qid": "Q5362079",
+      "title": "Eliza",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Eliza_(Arne)",
+      "wikipedia_extract": "Eliza is an opera in three acts by the composer Thomas Arne to an English libretto by Richard Rolt. The opera was premiered in London at the New Theatre in the Haymarket on 29 May 1754.",
+      "pageviews_yearly": 1223
+    },
+    {
+      "qid": "Q3532871",
+      "title": "Ever in My Heart",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ever_in_My_Heart",
+      "wikipedia_extract": "Ever in My Heart is a 1933 American pre-Code drama film directed by Archie Mayo and starring Barbara Stanwyck, Otto Kruger, and Ralph Bellamy. It portrays the tragic consequences of the virulent propaganda that spread false stories of atrocities and stigmatized anything German during the Great War.",
+      "pageviews_yearly": 9158
+    },
+    {
+      "qid": "Q116059629",
+      "title": "Helmsley"
+    },
+    {
+      "qid": "Q54990874",
+      "title": "Henry and Emma"
+    },
+    {
+      "qid": "Q54990878",
+      "title": "Injured Honour"
+    },
+    {
+      "qid": "Q54990888",
+      "title": "King Pepin's Campaign"
+    },
+    {
+      "qid": "Q11127395",
+      "title": "L'olimpiade"
+    },
+    {
+      "qid": "Q54990902",
+      "title": "Love and Glory"
+    },
+    {
+      "qid": "Q6691850",
+      "title": "Love in a Village",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Love_in_a_Village",
+      "wikipedia_extract": "Love in a Village is a ballad opera in three acts that was composed and arranged by Thomas Arne. A pastiche, the work contains 42 musical numbers of which only five were newly composed works by Arne. The other music is made up of 13 pieces borrowed from Arne's earlier stage works, a new overture was by C. F. Abel, and 23 songs by other composers, including Bishop, Boyce, Geminiani, Giordani, and Galuppi, albeit with new texts. The English libretto, by Isaac Bickerstaffe, is based on Charles Johnson’s 1729 play The Village Opera. The opera premiered at the Royal Opera, Covent Garden in London on 8 December 1762. One of its best known songs is the Miller of Dee.",
+      "pageviews_yearly": 3011,
+      "movements": [
+        {
+          "qid": "Q6859296"
+        }
+      ]
+    },
+    {
+      "qid": "Q54990917",
+      "title": "May-day"
+    },
+    {
+      "qid": "Q54990925",
+      "title": "Miss Lucy in Town"
+    },
+    {
+      "qid": "Q54990926",
+      "title": "Oedipus"
+    },
+    {
+      "qid": "Q54990929",
+      "title": "Phoebe at Court"
+    },
+    {
+      "qid": "Q54990943",
+      "title": "Rosamond",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/thomas-augustine-arne-1710-pp1"
+    },
+    {
+      "qid": "Q215729",
+      "title": "Rule, Britannia!",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Rule_Britannia.mid",
+        "midi/Rule_Britannia_1.mid",
+        "midi/Thomas_Augustine_Arne_-_Rule_Britannia_2.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q7553890",
+      "title": "Soft Flowing Avon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Soft_Flowing_Avon",
+      "wikipedia_extract": "\n\"Soft Flowing Avon\" is a 1769 song with music written by Thomas Arne and lyrics by David Garrick. It was composed for and first staged at the Shakespeare Jubilee in Stratford-upon-Avon in 1769. The lyrics refer to the River Avon which flows through the town, the birthplace of William Shakespeare. The piece was later part of the Shakespeare Pageant performed at the Drury Lane Theatre. The song and the Jubilee were part of the growing culture of Bardolatry which sprang up in the eighteenth century.",
+      "pageviews_yearly": 1992
+    },
+    {
+      "qid": "Q54990959",
+      "title": "Squire Badger"
+    },
+    {
+      "qid": "Q54990974",
+      "title": "The Arcadian Nuptials"
+    },
+    {
+      "qid": "Q54990980",
+      "title": "The Blind Beggar of Bethnal Green"
+    },
+    {
+      "qid": "Q7727566",
+      "title": "The Cooper",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Cooper",
+      "wikipedia_extract": "The Cooper is a comic opera in two acts by Thomas Arne. The English libretto by Arne is based on Nicolas-Médard Audinot and Antoine François Quétant’s Le tonnelier. The opera premiered in London at the Theatre Royal in the Haymarket on 10 June 1772.",
+      "pageviews_yearly": 2115
+    },
+    {
+      "qid": "Q54990982",
+      "title": "The Drummer"
+    },
+    {
+      "qid": "Q7733131",
+      "title": "The Fairy Prince",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Fairy_Prince",
+      "wikipedia_extract": "The Fairy Prince is a masque in three acts by composer Thomas Arne. The English libretto, by George Colman the Elder, is based on Ben Jonson’s Oberon, the Faery Prince (1611). The work premiered at the Covent Garden Theatre, London, on 12 November 1771.",
+      "pageviews_yearly": 2121
+    },
+    {
+      "qid": "Q54990983",
+      "title": "The Fall of Phaeton"
+    },
+    {
+      "qid": "Q55063477",
+      "title": "The Guardian Outwitted",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/thomas-augustine-arne-1710-pp78"
+    },
+    {
+      "qid": "Q54990996",
+      "title": "The Jovial Crew"
+    },
+    {
+      "qid": "Q54991026",
+      "title": "The Judgment of Paris"
+    },
+    {
+      "qid": "Q54991031",
+      "title": "The Muses' Looking Glass"
+    },
+    {
+      "qid": "Q54991035",
+      "title": "The Opera of Operas"
+    },
+    {
+      "qid": "Q54991039",
+      "title": "The Picture"
+    },
+    {
+      "qid": "Q54991060",
+      "title": "The Pincushion"
+    },
+    {
+      "qid": "Q54991083",
+      "title": "The Rose"
+    },
+    {
+      "qid": "Q54991092",
+      "title": "The Sheep-shearing"
+    },
+    {
+      "qid": "Q54991098",
+      "title": "The Temple of Dullness"
+    },
+    {
+      "qid": "Q54991102",
+      "title": "The Triumph of Peace"
+    },
+    {
+      "qid": "Q7795435",
+      "title": "Thomas and Sally",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/thomas-augustine-arne-1710-pp71",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Thomas_and_Sally",
+      "wikipedia_extract": "Thomas and Sally is a dramatic pastoral opera in two acts by the composer Thomas Arne with an English libretto by Isaac Bickerstaffe. The opera was meant to be performed as an \"after piece\", which is a short musical work to be performed after a spoken play.",
+      "pageviews_yearly": 3475
+    },
+    {
+      "qid": "Q136288783",
+      "title": "VIII Sonatas or Lessons for the Harpsichord"
+    },
+    {
+      "qid": "Q54991123",
+      "title": "Zara"
+    }
+  ]
+}

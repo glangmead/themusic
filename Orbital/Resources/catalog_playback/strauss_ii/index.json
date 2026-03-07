@@ -1,0 +1,151 @@
+{
+  "composer_name": "Johann Strauss II",
+  "name_last_first": "Strauss II, Johann",
+  "slug": "strauss_ii",
+  "wiki_page": "https://en.wikipedia.org/wiki/Johann_Strauss_II",
+  "apple_music_playlist": "https://music.apple.com/mk/playlist/pl.83f30526bb294891b6b4524b881700d7",
+  "era": "Late- / Post-Romantic",
+  "dates": "1825 – 1899",
+  "nationality": "AUT",
+  "notable": true,
+  "works": [
+    {
+      "title": "Strauss II - Künstlerleben Op. 316",
+      "musicxml": "musicxml/Strauss_II_-_Kunstlerleben_Op_316.mxl",
+      "midi": "midi/Strauss_II_-_Kunstlerleben_Op_316.mid",
+      "catalog_numbers": {
+        "Op": "316"
+      },
+      "time_signature": "6/8",
+      "instruments": [
+        "Flute",
+        "Piccolo",
+        "2 Oboes",
+        "C Clarinet",
+        "2 Bassoons",
+        "III, IV",
+        "2 Trumpets in F",
+        "Bass Trombone",
+        "Piccolo Snare Drum",
+        "Bass Drum and Cymbal"
+      ],
+      "tempo_markings": [
+        "(♩spaceunicodeAugmentationDot = 42)",
+        "150",
+        "(♩ = 160)",
+        "160",
+        "190",
+        "178",
+        "140",
+        "156",
+        "180"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.87,
+        "n_favorites": 13,
+        "n_views": 631,
+        "duration_seconds": 786.9034642453246,
+        "n_notes": 19565,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "NA",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/22249306/scores/5604130",
+        "musescore_duration": "10:21"
+      },
+      "key": "G major",
+      "key_changes": [
+        "G major",
+        "C major",
+        "F major"
+      ],
+      "instruments_gm": [
+        "Flute",
+        "Piccolo",
+        "Oboe",
+        "Clarinet",
+        "Bassoon",
+        "French Horn",
+        "Trumpet",
+        "Trombone",
+        "Timpani",
+        "Percussion",
+        "String Ensemble 1"
+      ],
+      "tempo_bpm": 63,
+      "n_measures": 416,
+      "n_parts": 19,
+      "n_notes": 18986,
+      "notes_per_second": 24.1,
+      "apple_music_search_query": "II Op 316 G major",
+      "parent_work_title": "The Life of Artists",
+      "year_composed": 1867,
+      "wikidata_id": "Q2335305",
+      "wikidata_title": "Künstlerleben",
+      "musicbrainz_id": "71f4fb64-ef2c-3c00-8fdf-8c75db36efa5",
+      "imslp_id": "Künstlerleben,_Op.316_(Strauss_Jr.,_Johann)",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=II%20Op%20316",
+      "display_title": "Künstlerleben"
+    },
+    {
+      "title": "An der schönen blauen Donau Op.314",
+      "musicxml": "musicxml/The_Blue_Danube.mxl",
+      "midi": "midi/The_Blue_Danube.mid",
+      "catalog_numbers": {
+        "Op": "314"
+      },
+      "time_signature": "3/4",
+      "instruments": [
+        "Flute"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 5,
+        "n_views": 359,
+        "duration_seconds": 82.49989687301485,
+        "n_notes": 624,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/4592436/scores/5971046",
+        "musescore_duration": "01:16"
+      },
+      "key": "D major",
+      "key_changes": [
+        "D major",
+        "A major"
+      ],
+      "instruments_gm": [
+        "Flute"
+      ],
+      "tempo_bpm": 160,
+      "n_measures": 53,
+      "n_parts": 4,
+      "n_notes": 624,
+      "notes_per_second": 7.6,
+      "apple_music_search_query": "II Op 314 D major",
+      "parent_work_title": "The Blue Danube",
+      "year_composed": 1866,
+      "wikidata_id": "Q482621",
+      "wikidata_title": "The Blue Danube",
+      "musicbrainz_id": "6763c20d-f2df-3347-8a0e-7abad42a5a56",
+      "imslp_id": "An_der_schönen_blauen_Donau,_Op.314_(Strauss_Jr.,_Johann)",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=II%20Op%20314",
+      "display_title": "The Blue Danube"
+    }
+  ],
+  "birth_year": 1825,
+  "death_year": 1899,
+  "wikipedia_extract": "Johann Baptist Strauss II (; German: [ˈjoːhan bapˈtɪst ˈʃtʁaʊs]; 25 October 1825 – 3 June 1899), also known as Johann Strauss Jr., the Younger or the Son (German: Johann Strauß Sohn), was an Austrian composer of light music, particularly dance music and operettas, as well as a violinist. He composed over 500 waltzes, polkas, quadrilles, and other types of dance music, as well as several operettas and a ballet. In his lifetime, he was known as \"The Waltz King\", as he played a major role in pop...",
+  "wikipedia_compositions_url": "https://en.wikipedia.org/wiki/List_of_compositions_by_Johann_Strauss_II",
+  "wikidata_id": "Q83309",
+  "apple_music_artist_id": "914054",
+  "apple_music_classical_url": "https://classical.music.apple.com/us/artist/914054"
+}

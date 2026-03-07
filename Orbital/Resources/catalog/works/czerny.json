@@ -1,0 +1,118 @@
+{
+  "composer_slug": "czerny",
+  "composer_qid": "Q215333",
+  "work_count": 12,
+  "midi_file_count": 23,
+  "works": [
+    {
+      "qid": "Q137762420",
+      "title": "48 Preludes and Fugues Op. 856"
+    },
+    {
+      "qid": "Q102259644",
+      "title": "Concerto for Piano Four-Hands and Orchestra",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/carl-czerny-1791-pp45"
+    },
+    {
+      "qid": "Q1168783",
+      "title": "Hexameron"
+    },
+    {
+      "qid": "Q1343567",
+      "title": "Kooky",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kooky",
+      "wikipedia_extract": "Kooky is a 2010 Czech action comedy film directed by Jan Svěrák. The film combines techniques of puppet animation, stop motion and live action. It tells the story of a six-year-old asthmatic boy whose parents throw his favorite toy away, an old teddy bear named Kooky. The boy, however, secretly sneaks out of the house at night, to retrieve Kooky from the garbage can and bring him back home. Due to that, the boy gets ill. In his feverish dreams, Kooky comes to life in the landfill, escapes into a mysterious forest and begins its journey amongst the rough-and-ready creatures of the forest.",
+      "pageviews_yearly": 8117
+    },
+    {
+      "qid": "Q136831849",
+      "title": "Premières leçons",
+      "movements": [
+        {
+          "qid": "Q136831977"
+        }
+      ]
+    },
+    {
+      "qid": "Q18163568",
+      "title": "Rondino for Piano Quintet",
+      "imslp_id": "Rondino_for_Piano_Quintet,_Op.127_(Czerny,_Carl)",
+      "pdf_filename": "SIBLEY1802.7402.2087-39087009373947_Czerny__vc_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rondino_for_Piano_Quintet_(Czerny)",
+      "wikipedia_extract": "Carl Czerny's Rondino on a Theme of Auber for Piano Quintet, Op. 127 was published by Diabelli in 1826. Czerny bases his Rondino on the Ronde - The Round of the Good Worker from Act 1 of Auber's opera, Le maçon.",
+      "pageviews_yearly": 820
+    },
+    {
+      "qid": "Q1637157",
+      "title": "School of Velocity",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Czerny_-_The_School_of_Velocity_Op299_-_no_9.mid",
+        "midi/Czerny_-_The_School_of_Velocity_Op299_-_no_8.mid",
+        "midi/School_Of_Velocity_op_299_no1_Czerny.mid",
+        "midi/Czerny_-_The_School_of_Velocity_Op299_-_no_4.mid",
+        "midi/Czerny_-_The_School_of_Velocity_Op299_-_no_6.mid",
+        "midi/The_School_Of_Velocity_-_1.mid",
+        "midi/Op_299_19.mid",
+        "midi/Czerny_-_The_School_of_Velocity_Op299_-_no_5.mid",
+        "midi/School_Of_Velocity_Op299_No3_Czerny.mid",
+        "midi/Czerny_-_The_School_of_Velocity_Op299_-_no_7.mid",
+        "midi/Op_299_22.mid",
+        "midi/Czerny_-_The_School_of_Velocity_Op299_-_no_10.mid",
+        "midi/Czerny_-_The_School_of_Velocity_Op299_-_no_2.mid",
+        "midi/Czerny_-_The_School_of_Velocity_Op299_-_no_1.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q101425903",
+      "title": "Symphony no. 1 in C minor \"Grand Symphony\"",
+      "imslp_id": "Symphony_No.1,_Op.780_(Czerny,_Carl)",
+      "pdf_filename": "PMLP1151070-Czerny_-_Grand_symphony_No._1_-_Partitura.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q124313265",
+      "title": "The Art of Finger Dexterity",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Czerny_-_The_Art_Of_Finger_Dexterity_Op_740_-_No_3.mid",
+        "midi/Czerny_-_The_Art_Of_Finger_Dexterity_Op_740_-_No_2.mid",
+        "midi/Czerny_-_The_Art_Of_Finger_Dexterity_Op_740_-_No_1.mid",
+        "midi/Czerny_-_The_Art_Of_Finger_Dexterity_Op_740_-_No_5.mid",
+        "midi/Czerny_-_The_Art_Of_Finger_Dexterity_Op_740_-_No_6.mid",
+        "midi/Czerny_-_The_Art_Of_Finger_Dexterity_Op_740_-_No_7.mid",
+        "midi/Czerny_-_The_Art_Of_Finger_Dexterity_Op_740_-_No_8.mid",
+        "midi/Czerny_-_The_Art_Of_Finger_Dexterity_Op_740_-_No_4.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q7915818",
+      "title": "Variations on \"Gott erhalte Franz den Kaiser\"",
+      "imslp_id": "Variationen_über_'Gott_erhalte_Franz_den_Kaiser',_Op.73_(Czerny,_Carl)",
+      "pdf_filename": "PMLP1468838-Op.73.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Variations_on_%22Gott_erhalte_Franz_den_Kaiser%22_(Czerny)",
+      "wikipedia_extract": "Carl Czerny's Variations on \"Gott erhalte Franz den Kaiser\", Op. 73, also known as Variations on a Theme of Haydn and Variations on the Emperor's Hymn, were written in 1824. There are versions for piano and string quartet and piano and orchestra.",
+      "pageviews_yearly": 1417
+    },
+    {
+      "qid": "Q136831977",
+      "title": "Vienna March"
+    },
+    {
+      "qid": "Q136832208",
+      "title": "Études de mécanisme",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Etude_in_G_minor_No_26.mid"
+      ],
+      "has_mxl": true
+    }
+  ]
+}

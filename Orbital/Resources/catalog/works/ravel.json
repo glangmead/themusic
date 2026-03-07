@@ -1,0 +1,762 @@
+{
+  "composer_slug": "ravel",
+  "composer_qid": "Q1178",
+  "work_count": 108,
+  "midi_file_count": 13,
+  "works": [
+    {
+      "qid": "Q11300846",
+      "title": "Sérénade grotesque",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp38",
+      "date": "1892-00-00"
+    },
+    {
+      "qid": "Q30125978",
+      "title": "Oiseaux tristes",
+      "date": "1905-00-00"
+    },
+    {
+      "qid": "Q770354",
+      "title": "Miroirs",
+      "imslp_id": "Miroirs,_M.43_(Ravel,_Maurice)",
+      "pdf_filename": "_océan__Orchestral_Score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp43",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miroirs",
+      "wikipedia_extract": "Miroirs is a five-movement suite for solo piano written by French composer Maurice Ravel between 1904 and 1905. First performed by Ricardo Viñes in 1906, Miroirs contains five movements, each dedicated to a fellow member of the French avant-garde artist group Les Apaches.",
+      "pageviews_yearly": 32249,
+      "date": "1905-01-01",
+      "movements": [
+        {
+          "qid": "Q30125973"
+        },
+        {
+          "qid": "Q30125978"
+        },
+        {
+          "qid": "Q30125986"
+        },
+        {
+          "qid": "Q2831938"
+        },
+        {
+          "qid": "Q30125995"
+        }
+      ]
+    },
+    {
+      "qid": "Q593319",
+      "title": "L'heure espagnole",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp3",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/L'heure_espagnole",
+      "wikipedia_extract": "L'heure espagnole is a French one-act opera from 1911, described as a comédie musicale, with music by Maurice Ravel to a French libretto by Franc-Nohain, based on Franc-Nohain's 1904 play ('comédie-bouffe') of the same name The opera, set in Spain in the 18th century, is about a clockmaker whose unfaithful wife attempts to make love to several different men while he is away, leading to them hiding in, and eventually getting stuck in, her husband's clocks. The title can be translated literally as \"The Spanish Hour\", but the word \"heure\" also means \"time\" – \"Spanish Time\", with the connotation \"How They Keep Time in Spain\".",
+      "pageviews_yearly": 12980,
+      "date": "1907-00-00"
+    },
+    {
+      "qid": "Q105543333",
+      "title": "Vocalise-étude en forme de habanera",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp80",
+      "date": "1907-00-00"
+    },
+    {
+      "qid": "Q11397102",
+      "title": "Prélude",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp47",
+      "date": "1913-00-00"
+    },
+    {
+      "qid": "Q105550985",
+      "title": "Deux mélodies hébraïques",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp87",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Two_Hebrew_Songs",
+      "wikipedia_extract": "Deux mélodies hébraïques is a composition of two traditional Hebrew melodies for voice and piano by Maurice Ravel. It was composed in 1914.",
+      "pageviews_yearly": 5411,
+      "date": "1914-00-00"
+    },
+    {
+      "qid": "Q95789248",
+      "title": "Frontispice",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp56",
+      "date": "1918-00-00"
+    },
+    {
+      "qid": "Q267467",
+      "title": "L'enfant et les sortilèges",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp4",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/L'enfant_et_les_sortil%C3%A8ges",
+      "wikipedia_extract": "L'enfant et les sortilèges: Fantaisie lyrique en deux parties is an opera in one act, with music by Maurice Ravel to a libretto by Colette. It is Ravel's second opera, his first being L'heure espagnole. Written from 1917 to 1925, L'enfant et les sortilèges was first performed in Monte Carlo on 21 March 1925, conducted by Victor de Sabata.",
+      "pageviews_yearly": 43837,
+      "date": "1919-00-00"
+    },
+    {
+      "qid": "Q30116719",
+      "title": "Le Tombeau de Couperin",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp50",
+      "date": "1919-01-01",
+      "movements": [
+        {
+          "qid": "Q30118436"
+        },
+        {
+          "qid": "Q30118437"
+        },
+        {
+          "qid": "Q30118439"
+        },
+        {
+          "qid": "Q30118440"
+        }
+      ]
+    },
+    {
+      "qid": "Q776559",
+      "title": "La valse",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp22",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_valse",
+      "wikipedia_extract": "La valse, poème chorégraphique pour orchestre, is a work written by Maurice Ravel between February 1919 and 1920; it was first performed on 12 December 1920 in Paris. It was conceived as a ballet but is now more often heard as a concert work.",
+      "pageviews_yearly": 30051,
+      "date": "1920-00-00"
+    },
+    {
+      "qid": "Q35684629",
+      "title": "La Valse",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp22",
+      "date": "1920-01-01"
+    },
+    {
+      "qid": "Q35684650",
+      "title": "La Valse",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp22",
+      "date": "1920-01-01"
+    },
+    {
+      "qid": "Q672811",
+      "title": "Sonata for Violin and Cello",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp37",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sonata_for_Violin_and_Cello_(Ravel)",
+      "wikipedia_extract": "The Sonata for Violin and Cello is a composition written by Maurice Ravel from 1920 to 1922. He dedicated it to Claude Debussy, who had died in 1918. It premiered on 6 April 1922 with Hélène Jourdan-Morhange playing the violin and Maurice Maréchal the cello. It is in the key of A minor, with the fourth movement in the relative major key of C. It is M. 73 in the catalogue compiled by Marcel Marnat.",
+      "pageviews_yearly": 5866,
+      "date": "1922-00-00"
+    },
+    {
+      "qid": "Q15526916",
+      "title": "Chansons madécasses",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp67",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chansons_mad%C3%A9casses",
+      "wikipedia_extract": "Chansons madécasses is a set of three exotic art songs by Maurice Ravel written in 1925 and 1926 to words from the poetry collection of the same name by Évariste de Parny.",
+      "pageviews_yearly": 6034,
+      "date": "1925-00-00"
+    },
+    {
+      "qid": "Q125345240",
+      "title": "Fanfare pour l'Éventail de Jeanne",
+      "imslp_id": "Fanfare_for_the_ballet_'L'éventail_de_Jeanne',_M.80_(Ravel,_Maurice)",
+      "pdf_filename": "PMLP32187-L-éventail_de_Jeanne_-_Full_score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1927-00-00"
+    },
+    {
+      "qid": "Q30134849",
+      "title": "Boléro",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp11",
+      "date": "1929-01-01"
+    },
+    {
+      "qid": "Q30134850",
+      "title": "Boléro",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp11",
+      "date": "1929-01-01"
+    },
+    {
+      "qid": "Q1190499",
+      "title": "Piano Concerto for the Left Hand",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp26",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Concerto_for_the_Left_Hand_(Ravel)",
+      "wikipedia_extract": "The Piano Concerto for the Left Hand in D major was composed by Maurice Ravel between 1929 and 1930, concurrently with his Piano Concerto in G major. The piece was commissioned by Paul Wittgenstein, a concert pianist who had lost his right arm in the First World War.",
+      "pageviews_yearly": 36211,
+      "date": "1930-01-01"
+    },
+    {
+      "qid": "Q3035889",
+      "title": "Don Quichotte à Dulcinée",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp68",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Don_Quichotte_%C3%A0_Dulcin%C3%A9e",
+      "wikipedia_extract": "Don Quichotte à Dulcinée is a song cycle by Maurice Ravel based on the story of Don Quixote. It was first composed for voice and piano but later orchestrated. The songs are traditionally performed by a baritone or bass(-baritone). The cycle is made up of three independent pieces: Chanson Romanesque, Chanson épique, and Chanson à boire. The text was written by the librettist Paul Morand. It was composed between the years of 1932 and 1933.",
+      "pageviews_yearly": 7716,
+      "date": "1932-00-00"
+    },
+    {
+      "qid": "Q30763173",
+      "title": "The Bewitched Child",
+      "date": "2004-00-00"
+    },
+    {
+      "qid": "Q4657707",
+      "title": "A Letter to Freddy Buache",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/A_Letter_to_Freddy_Buache",
+      "wikipedia_extract": "A Letter to Freddy Buache is a 1982 French short documentary film directed by Jean-Luc Godard and addressed to the Swiss film critic Freddy Buache. It was screened in the Un Certain Regard section at the 1982 Cannes Film Festival.",
+      "pageviews_yearly": 1598
+    },
+    {
+      "qid": "Q119412866",
+      "title": "Alborada del Gracioso",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp20"
+    },
+    {
+      "qid": "Q2831938",
+      "title": "Alborada del gracioso",
+      "imslp_id": "Miroirs,_M.43_(Ravel,_Maurice)",
+      "pdf_filename": "_océan__Orchestral_Score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp20",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alborada_del_gracioso",
+      "wikipedia_extract": "Alborada del gracioso  is the fourth of the five movements of Maurice Ravel's piano suite Miroirs, written in 1905. Dedicated to fellow Les Apaches member Michel-Dimitri Calvocoressi, it is about seven minutes long and, as part of the suite, has always been regularly played and recorded by pianists. Alborada was orchestrated by Ravel fourteen years later for use as a ballet. In this form, as a standalone orchestral piece, it is often played in concert.",
+      "pageviews_yearly": 18809
+    },
+    {
+      "qid": "Q112144205",
+      "title": "Ballade de la reine morte d'aimer",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp69"
+    },
+    {
+      "qid": "Q3641709",
+      "title": "Ballerina",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ballerina_(1956_film)",
+      "wikipedia_extract": "Ballerina or Roses for Bettina is a 1956 West German drama film directed by G. W. Pabst and starring Willy Birgel, Elisabeth Müller and Ivan Desny. It was shot at the Bavaria Studios in Munich. The film's sets were designed by the art directors Hertha Hareiter and Otto Pischinger.",
+      "pageviews_yearly": 2177
+    },
+    {
+      "qid": "Q99018960",
+      "title": "Berceuse sur le nom de Gabriel Fauré",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Ravel_-_Berceuse_sur_le_nom_de_Gabriel_Faure.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q63301959",
+      "title": "Bolero",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Bolero_de_Ravel.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q112265196",
+      "title": "Bolero17"
+    },
+    {
+      "qid": "Q327331",
+      "title": "Boléro"
+    },
+    {
+      "qid": "Q21775683",
+      "title": "Calla Lily"
+    },
+    {
+      "qid": "Q125243383",
+      "title": "Chanson du rouet",
+      "imslp_id": "Chanson_du_rouet,_M.15_(Ravel,_Maurice)",
+      "pdf_filename": "PMLP1409271-ravel_chanson_du_rouet.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp72"
+    },
+    {
+      "qid": "Q110280729",
+      "title": "Chants populaires",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp85"
+    },
+    {
+      "qid": "Q130753911",
+      "title": "Daphnis and Chloé",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp6"
+    },
+    {
+      "qid": "Q1201123",
+      "title": "Daphnis et Chloé",
+      "has_midi": true,
+      "midi_files": [
+        "midi/DAPHNIS_ET_CHLOE_-_Maurice_Ravel.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q86525124",
+      "title": "Duo Sessions"
+    },
+    {
+      "qid": "Q94768194",
+      "title": "Enormous"
+    },
+    {
+      "qid": "Q3073317",
+      "title": "Flammes"
+    },
+    {
+      "qid": "Q30118363",
+      "title": "Forlane"
+    },
+    {
+      "qid": "Q30118437",
+      "title": "Forlane"
+    },
+    {
+      "qid": "Q30118361",
+      "title": "Fugue"
+    },
+    {
+      "qid": "Q1008459",
+      "title": "Gaspard de la nuit",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Le_Gibet_-_No2_from_Gaspard_de_la_Nuit_-_Maurice_Ravel.mid",
+        "midi/Gaspard_de_la_nuit_MRavel_M55.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q3138293",
+      "title": "Histoires naturelles",
+      "imslp_id": "Histoires_naturelles,_M.50_(Ravel,_Maurice)",
+      "pdf_filename": "PMLP14931-Histoires_naturelles_-_voix_élévee.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp79",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Histoires_naturelles",
+      "wikipedia_extract": "Histoires naturelles is a song cycle by Maurice Ravel, composed in 1906. It sets five poems by Jules Renard to music for voice and piano. Ravel's pupil Manuel Rosenthal created a version for voice and orchestra. The cycle is dedicated to the mezzo-soprano Jane Bathori, who gave the first performance, accompanied by the composer, on 12 January 1907.",
+      "pageviews_yearly": 4569
+    },
+    {
+      "qid": "Q55597233",
+      "title": "Hommage à Gabriel Fauré",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ricardo-vines-1875-pp1"
+    },
+    {
+      "qid": "Q88202361",
+      "title": "Hommage à Joseph Haydn"
+    },
+    {
+      "qid": "Q6009494",
+      "title": "In G Major",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp32",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/In_G_Major",
+      "wikipedia_extract": "In G Major is a ballet choreographed by Jerome Robbins to Maurice Ravel's Piano Concerto in G Major. Performed by a cast of fourteen, the ballet featured Broadway-inspired choreography. The ballet was created for the New York City Ballet's Ravel Festival, which celebrated the centenary of Ravel, and premiered on May 15, 1975, at the New York State Theater, with Suzanne Farrell and Peter Martins originating the two lead roles.",
+      "pageviews_yearly": 2190
+    },
+    {
+      "qid": "Q3153718",
+      "title": "Introduction and Allegro",
+      "imslp_id": "Introduction_et_allegro,_M.46_(Ravel,_Maurice)",
+      "pdf_filename": "PMLP14840-Introduction_et_allegro_Guanghua_Chubanshe.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp30",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Introduction_and_Allegro_(Ravel)",
+      "wikipedia_extract": "Introduction and Allegro for Harp, Flute, Clarinet and String Quartet is a chamber work by Maurice Ravel. It is a short piece, typically lasting between ten and eleven minutes in performance. It was commissioned in 1905 by the Érard harp manufacturers to showcase their instruments, and has been described as a miniature harp concerto. The premiere was in Paris on 22 February 1907.",
+      "pageviews_yearly": 13211
+    },
+    {
+      "qid": "Q1684076",
+      "title": "Jeux d'eau",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Maurice_Ravel_Jeux_deau.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q6456048",
+      "title": "L'éventail de Jeanne"
+    },
+    {
+      "qid": "Q18209065",
+      "title": "La Fin du jour",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Fin_du_jour_(ballet)",
+      "wikipedia_extract": "\nLa Fin du jour is a one-act ballet created by Kenneth MacMillan in 1979 for the Royal Ballet, London. The music is Maurice Ravel's Piano Concerto in G (1931).",
+      "pageviews_yearly": 813
+    },
+    {
+      "qid": "Q124876184",
+      "title": "La Parade",
+      "imslp_id": "La_parade,_M.11_(Ravel,_Maurice)",
+      "pdf_filename": "PMLP1323306-La_Parade.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp105"
+    },
+    {
+      "qid": "Q110818557",
+      "title": "La Valse",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp22",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Valse_(Balanchine)",
+      "wikipedia_extract": "La Valse is a ballet choreographed by George Balanchine to Maurice Ravel's Valses Nobles et Sentimentales and La Valse. It premiered on February 20, 1951, at the City Center of Music and Drama, performed by the New York City Ballet. The ballet depicts dancers waltzing in a ballroom, during which a woman becomes attracted to a figure of death, and ultimately dies.",
+      "pageviews_yearly": 3380
+    },
+    {
+      "qid": "Q30125995",
+      "title": "La vallée des cloches"
+    },
+    {
+      "qid": "Q943096",
+      "title": "Le Batteur Du Boléro",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Le_batteur_du_Bol%C3%A9ro",
+      "wikipedia_extract": "Le Batteur du Boléro is a short film by Patrice Leconte, released in 1992. It features a drummer in an orchestra, played by Jacques Villeret, who plays a simple, repetitive rhythm on his single drum during a performance of Maurice Ravel's Boléro.",
+      "pageviews_yearly": 2154
+    },
+    {
+      "qid": "Q29884860",
+      "title": "Le Gibet"
+    },
+    {
+      "qid": "Q1819366",
+      "title": "Le tombeau de Couperin",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Le_tombeau_de_Couperin_piano_MRavel_M68.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q6508136",
+      "title": "Le tombeau de Couperin",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp50",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Le_Tombeau_de_Couperin_(ballet)",
+      "wikipedia_extract": "Le Tombeau de Couperin is a ballet choreographed by George Balanchine to Ravel's eponymous orchestral music. The ballet features a cast of sixteen divided into two groups, dancing separately. Le Tombeau de Couperin was made for the New York City Ballet's Ravel Festival, celebrating the composer's centenary, and premiered on May 29, 1975, at the New York State Theater.",
+      "pageviews_yearly": 1767
+    },
+    {
+      "qid": "Q136696490",
+      "title": "Les Uns et les Autres"
+    },
+    {
+      "qid": "Q84951105",
+      "title": "Lonlon"
+    },
+    {
+      "qid": "Q119164146",
+      "title": "Ma Mère L'Oye (Mother Goose)",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp12"
+    },
+    {
+      "qid": "Q174524",
+      "title": "Ma mère l'oye",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Le_Jardin_Feerique.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q51099969",
+      "title": "Ma mère l'oye",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Ravel_Le_jardin_feerique_from_Ma_mere_lOye_Ballet_Suite.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q30118366",
+      "title": "Menuet",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp39"
+    },
+    {
+      "qid": "Q30118440",
+      "title": "Menuet",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp39"
+    },
+    {
+      "qid": "Q3142780",
+      "title": "Menuet antique",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp39",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Menuet_antique",
+      "wikipedia_extract": "Menuet antique is a piece for solo piano composed by Maurice Ravel. The original piano version was written in 1895 and orchestrated by the composer in 1929. Ravel wrote the piece to pay tribute to Emmanuel Chabrier, who had welcomed his early works and helped to establish his musical reputation.",
+      "pageviews_yearly": 5749
+    },
+    {
+      "qid": "Q6817676",
+      "title": "Menuet sur le nom d'Haydn",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Ravel_Menuet_sur_le_nom_dHaydn.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q72790261",
+      "title": "Moment Musical"
+    },
+    {
+      "qid": "Q6917346",
+      "title": "Mother Goose",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp12",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mother_Goose_(ballet)",
+      "wikipedia_extract": "\nMother Goose is a ballet made for New York City Ballet's Ravel Festival by balletmaster Jerome Robbins to Ravel's music and scenario, the Ma Mère l'Oye Suite from 1908, orchestrated by the composer in 1912. The premiere took place on May 22, 1975, at the New York State Theater, Lincoln Center, with costumes by Stanley Simmons and lighting by Jennifer Tipton. At its premiere it bore the French title, which was retained when it was first revived in January 1978 but anglicized by May of that year.",
+      "pageviews_yearly": 2873
+    },
+    {
+      "qid": "Q39075281",
+      "title": "Mélodies populaires grecques",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Tout_gai_Maurice_Ravel.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q30125973",
+      "title": "Noctuelles"
+    },
+    {
+      "qid": "Q105549196",
+      "title": "Noël des jouets",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp77"
+    },
+    {
+      "qid": "Q29884858",
+      "title": "Ondine"
+    },
+    {
+      "qid": "Q2271923",
+      "title": "Pavane pour une infante défunte",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Maurice_Ravel_-_Pavane_pour_une_infante_defunte_M_19.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q954815",
+      "title": "Piano Concerto",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Ravel_Piano_Concerto_in_G_2nd_Movement.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q3539334",
+      "title": "Piano Trio",
+      "imslp_id": "Piano_Trio,_M.67_(Ravel,_Maurice)",
+      "pdf_filename": "PMLP04940-Ravel-Garban_Trio_Pf4h.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp31",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Trio_(Ravel)",
+      "wikipedia_extract": "Maurice Ravel's Piano Trio for piano, violin, and cello is a chamber work composed in 1914. Dedicated to Ravel's counterpoint teacher André Gedalge, the trio was first performed in Paris in January 1915, by Alfredo Casella (piano), Gabriel Willaume (violin), and Louis Feuillard (cello). A typical performance of the work lasts about 30 minutes.",
+      "pageviews_yearly": 13713
+    },
+    {
+      "qid": "Q30118359",
+      "title": "Prélude",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp47"
+    },
+    {
+      "qid": "Q30118436",
+      "title": "Prélude",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp47"
+    },
+    {
+      "qid": "Q3083343",
+      "title": "Rapsodie espagnole",
+      "imslp_id": "Rapsodie_espagnole,_M.54_(Ravel,_Maurice)",
+      "pdf_filename": "PMLP31758-RAVEL_Habanera_ArrCharlot_piano_sc.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp14",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rapsodie_espagnole",
+      "wikipedia_extract": "Rapsodie espagnole is an orchestral rhapsody written by Maurice Ravel. Composed between 1907 and 1908, the Rapsodie is one of Ravel's first major works for orchestra. It was first performed in Paris in 1908 and quickly entered the international repertoire. The piece draws on the composer's Spanish heritage and is one of several of his works set in or reflecting Spain.",
+      "pageviews_yearly": 14128
+    },
+    {
+      "qid": "Q30118365",
+      "title": "Rigaudon"
+    },
+    {
+      "qid": "Q30118439",
+      "title": "Rigaudon"
+    },
+    {
+      "qid": "Q105575621",
+      "title": "Ronsard à son âme",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp88"
+    },
+    {
+      "qid": "Q105533460",
+      "title": "Sainte",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp71"
+    },
+    {
+      "qid": "Q29884861",
+      "title": "Scarbo"
+    },
+    {
+      "qid": "Q18460544",
+      "title": "Sheherazade",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp102"
+    },
+    {
+      "qid": "Q1476590",
+      "title": "Shéhérazade",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp102",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sh%C3%A9h%C3%A9razade_(Ravel)",
+      "wikipedia_extract": "\nShéhérazade is the title of two works by the French composer Maurice Ravel. Both have their origins in the composer's fascination with Scheherazade, the heroine and narrator of The Arabian Nights. The first work, an overture (1898), Ravel's earliest surviving orchestral piece, was not well received at its premiere and has not subsequently been among his most popular works. Four years later he had a much greater success with a song cycle with the same title, which has remained a standard repertoire piece and has been recorded many times.",
+      "pageviews_yearly": 17683
+    },
+    {
+      "qid": "Q125245680",
+      "title": "Si morne !",
+      "imslp_id": "Si_morne!,_M.16_(Ravel,_Maurice)",
+      "pdf_filename": "PMLP1109926-ravel_si_morne_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp73"
+    },
+    {
+      "qid": "Q100261170",
+      "title": "Sites auriculaires",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp55"
+    },
+    {
+      "qid": "Q1779888",
+      "title": "Sonatine"
+    },
+    {
+      "qid": "Q1635257",
+      "title": "String Quartet"
+    },
+    {
+      "qid": "Q16839553",
+      "title": "The Beautiful Risk"
+    },
+    {
+      "qid": "Q7775273",
+      "title": "The Witch",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Witch_(ballet)",
+      "wikipedia_extract": "The Witch is a ballet made by John Cranko to Maurice Ravel's Piano Concerto in G Major (1931). The premiere took place Friday, 18 August 1950 at the Royal Opera House, Covent Garden, London.",
+      "pageviews_yearly": 1107
+    },
+    {
+      "qid": "Q30118368",
+      "title": "Toccata"
+    },
+    {
+      "qid": "Q14752515",
+      "title": "Tombeau de Claude Debussy"
+    },
+    {
+      "qid": "Q22905774",
+      "title": "Tomcat"
+    },
+    {
+      "qid": "Q133461751",
+      "title": "Tout est lumière",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tout_est_lumi%C3%A8re",
+      "wikipedia_extract": "Tout est lumière, M. 28, is a piece of choral music by Maurice Ravel. He wrote it as a student in 1901 for the Prix de Rome competition, setting a poem by Victor Hugo for soprano, mixed choir and orchestra.",
+      "pageviews_yearly": 4747
+    },
+    {
+      "qid": "Q12162372",
+      "title": "Trois Chansons (Ravel)",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp59",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Trois_Chansons_(Ravel)",
+      "wikipedia_extract": "Trois Chansons, M 69, is a composition by Maurice Ravel for a cappella choir, set to his own texts. Ravel began the composition in December 1914 in response to the outbreak of World War I, in which he hoped to be enlisted to fight for France. While he waited for months, he wrote text and music of the three songs in the tradition of 16th-century French chansons. He completed the work in 1915, and it was published by Éditions Durand in 1916. The songs were premiered in 1917, performed by a choral ensemble conducted by Louis Aubert. They remained his only composition for a cappella choir.",
+      "pageviews_yearly": 6043
+    },
+    {
+      "qid": "Q3540039",
+      "title": "Trois poèmes de Mallarmé",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp65",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Trois_po%C3%A8mes_de_Mallarm%C3%A9",
+      "wikipedia_extract": "Trois poèmes de Mallarmé is a sequence of three art songs by Maurice Ravel, based on poems by Stéphane Mallarmé for soprano, two flutes, two clarinets, piano, and string quartet. Composed in 1913, it was premiered on 14 January 1914, performed by Rose Féart and conducted by D.-E. Inghelbrecht, at the inaugural concert of the société musicale indépendante of the 1913–1914 season in the Salle Érard in Paris.",
+      "pageviews_yearly": 6580
+    },
+    {
+      "qid": "Q1968288",
+      "title": "Tzigane",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp34",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tzigane",
+      "wikipedia_extract": "\nTzigane is a rhapsodic composition by the French composer Maurice Ravel featuring a virtuosic violin part. The original instrumentation was for violin and piano. The first performance took place in London on 26 April 1924 with the dedicatee, Jelly d'Arányi, on the violin and Henri Gil-Marchex at the piano. In his biographical sketch of 1928 Ravel termed it a rapsodie de concert, as \"a virtuoso piece in the style of a Hungarian rhapsody\". It consists of \"a string of successive variations juxtaposed without development\".",
+      "pageviews_yearly": 18580
+    },
+    {
+      "qid": "Q125221632",
+      "title": "Un grand sommeil noir",
+      "imslp_id": "Un_grand_sommeil_noir,_M.6_(Ravel,_Maurice)",
+      "pdf_filename": "PMLP1109426-ravel_un_grand_sommeil_noir.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp70"
+    },
+    {
+      "qid": "Q30125986",
+      "title": "Une barque sur l'océan",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp13"
+    },
+    {
+      "qid": "Q3083404",
+      "title": "Valses nobles et sentimentales",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp46",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Valses_nobles_et_sentimentales_(Ravel)",
+      "wikipedia_extract": "The Valses nobles et sentimentales are a suite of waltzes composed by Maurice Ravel. Its title was chosen in homage to Franz Schubert, who had released two collections of waltzes in 1823 entitled Valses nobles and Valses sentimentales. The original piano version were published in 1911; an orchestration by the composer was released the following year.",
+      "pageviews_yearly": 29526
+    },
+    {
+      "qid": "Q115802671",
+      "title": "Violin Sonata No. 1",
+      "imslp_id": "Violin_Sonata_No.1,_M.12_(Ravel,_Maurice)",
+      "pdf_filename": "PMLP157084-Ravel_-_Sonate_Posthume_for_Violin_and_Piano.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp35",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Violin_Sonata_No._1_(Ravel)",
+      "wikipedia_extract": "The Violin and Piano Sonata No. 1 by Maurice Ravel, known also as Sonate posthume, is the composer's earliest instance of a sonata for this combination of instruments. Though it was composed 30 years before the publication of his second violin sonata, it was not published until 38 years after his death.",
+      "pageviews_yearly": 5265
+    },
+    {
+      "qid": "Q264268",
+      "title": "Violin Sonata No. 2",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp32",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Violin_Sonata_No._2_(Ravel)",
+      "wikipedia_extract": "Maurice Ravel's Violin and Piano Sonata No. 2 for violin and piano was composed from 1923 to 1927; it was inspired by forms of American music such as jazz and blues.",
+      "pageviews_yearly": 10270
+    },
+    {
+      "qid": "Q11825513",
+      "title": "Voyage to the Edge of the World",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Voyage_to_the_Edge_of_the_World",
+      "wikipedia_extract": "Voyage to the Edge of the World is a 1976 French nature documentary film directed by Jacques-Yves Cousteau, his son Philippe Cousteau and Marshall Flaum. The film follows a four-month expedition through Antarctica undertaken between the end of 1972 and the beginning of 1973. It was Cousteau's third and last full-length film, following The Silent World (1956) and World Without Sun (1964). As a difference with those two earlier Cousteau films, both mainly narrated by Jacques-Yves Cousteau himself, on this film Jacques-Yves' voice-over alternates with co-director Philippe Cousteau's voice.",
+      "pageviews_yearly": 5256
+    },
+    {
+      "qid": "Q17416730",
+      "title": "Zeppelin"
+    },
+    {
+      "qid": "Q100272136",
+      "title": "À la manière d'Emmanuel Chabrier"
+    },
+    {
+      "qid": "Q100268421",
+      "title": "À la manière de Borodine",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp48"
+    },
+    {
+      "qid": "Q137921500",
+      "title": "À la manière de...",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-ravel-1875-pp49",
+      "movements": [
+        {
+          "qid": "Q61716682"
+        }
+      ]
+    }
+  ]
+}

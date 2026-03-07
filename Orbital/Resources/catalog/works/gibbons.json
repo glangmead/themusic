@@ -1,0 +1,68 @@
+{
+  "composer_slug": "gibbons",
+  "composer_qid": "Q311913",
+  "work_count": 10,
+  "midi_file_count": 6,
+  "works": [
+    {
+      "qid": "Q59822516",
+      "title": "Angels"
+    },
+    {
+      "qid": "Q17767958",
+      "title": "Drop, Drop Slow Tears",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Drop_drop_slow_tears_-_Orlando_Gibbons.mid",
+        "midi/Drop_drop_slow_tears_-_Orlando_Gibbons_1.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q126089850",
+      "title": "SONG 4"
+    },
+    {
+      "qid": "Q126079084",
+      "title": "SONG 46"
+    },
+    {
+      "qid": "Q109732597",
+      "title": "Song 1"
+    },
+    {
+      "qid": "Q109732659",
+      "title": "Song 13",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp139"
+    },
+    {
+      "qid": "Q109732811",
+      "title": "Song 34"
+    },
+    {
+      "qid": "Q7764313",
+      "title": "The Silver Swan",
+      "has_midi": true,
+      "midi_files": [
+        "midi/The_silver_swan_Orlando_Gibbons.mid",
+        "midi/The_Silver_Swan_-_Orlando_Gibbons.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q16258218",
+      "title": "This Is the Record of John",
+      "has_midi": true,
+      "midi_files": [
+        "midi/This_is_the_record_of_John_-_Orlando_Gibbons.mid",
+        "midi/Orlando_Gibbons_This_is_the_record_of_John.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q116972625",
+      "title": "Trust in God",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/orlando-gibbons-1583-pp32"
+    }
+  ]
+}

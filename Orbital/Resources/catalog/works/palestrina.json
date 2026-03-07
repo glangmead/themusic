@@ -1,0 +1,404 @@
+{
+  "composer_slug": "palestrina",
+  "composer_qid": "Q179277",
+  "work_count": 56,
+  "midi_file_count": 5,
+  "works": [
+    {
+      "qid": "Q11894350",
+      "title": "Stabat Mater",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giovanni-pierluigi-da-palestrina-c1525-pp173",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stabat_Mater_(Palestrina)",
+      "wikipedia_extract": "Stabat Mater is a motet for double chorus by Giovanni Pierluigi da Palestrina. It was composed in the Late Renaissance period sometime during the late 16th century. It is centered on the 20 verses of text that constitute the hymn of the same name.",
+      "pageviews_yearly": 3273,
+      "date": "1560-00-00"
+    },
+    {
+      "qid": "Q2717291",
+      "title": "Missa Papae Marcelli",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giovanni-pierluigi-da-palestrina-c1525-pp51",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Missa_Papae_Marcelli",
+      "wikipedia_extract": "Missa Papae Marcelli, or Pope Marcellus Mass, is a mass sine nomine by Giovanni Pierluigi da Palestrina. It is his best-known mass, and is regarded as an archetypal example of the complex polyphony championed by Palestrina. It was sung at the papal coronation Masses.",
+      "pageviews_yearly": 25759,
+      "date": "1567-00-00"
+    },
+    {
+      "qid": "Q136996280",
+      "title": "Accepit Jesus",
+      "imslp_id": "Accepit_Iesus_calicem,_PdPWV_Mot116_(Palestrina,_Giovanni_Pierluigi_da)",
+      "pdf_filename": "PMLP1292400-25.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q136996334",
+      "title": "Ad Dominum cum tribularer",
+      "imslp_id": "Ad_Dominum_cum_tribularer,_PdPWV_Mot179_(Palestrina,_Giovanni_Pierluigi_da)",
+      "pdf_filename": "PMLP501822-PAL_05_6.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q136996425",
+      "title": "Ad te levavi (PdPWV Mot178)",
+      "imslp_id": "Ad_te_levavi_oculos_meos,_PdPWV_Mot178_(Palestrina,_Giovanni_Pierluigi_da)",
+      "pdf_filename": "PMLP501826-PAL_05_5.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q136996485",
+      "title": "Ad te levavi (PdPWV Mot322)",
+      "imslp_id": "Ad_te_levavi_oculos_meos,_PdPWV_Mot322_(Palestrina,_Giovanni_Pierluigi_da)",
+      "pdf_filename": "PMLP1313844-PAL_26_12.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q136996385",
+      "title": "Adjuro vos filiae"
+    },
+    {
+      "qid": "Q124310108",
+      "title": "Adoramus te Christe",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Adoramus_te_-_Giovanni_Pierluigi_da_Palestrina.mid",
+        "midi/Adoramus_te_Christe_TTBB.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q136996507",
+      "title": "Aegypte noli flere",
+      "imslp_id": "Aegypte_noli_flere,_PdPWV_Mot161_(Palestrina,_Giovanni_Pierluigi_da)",
+      "pdf_filename": "PMLP1292595-PAL_04_8.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q124310195",
+      "title": "Alla riva del Tebro"
+    },
+    {
+      "qid": "Q136996530",
+      "title": "Alleluja. Tulerunt Dominum",
+      "imslp_id": "Alleluja._Tulerunt_Dominum,_PdPWV_Mot042_(Palestrina,_Giovanni_Pierluigi_da)",
+      "pdf_filename": "PMLP1290941-PAL_6.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q136996578",
+      "title": "Alma Redemptoris Mater (PdPWV Mot185)",
+      "imslp_id": "Alma_Redemptoris_Mater,_PdPWV_Mot185_(Palestrina,_Giovanni_Pierluigi_da)",
+      "pdf_filename": "PMLP1293228-PAL_05_12.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q136996641",
+      "title": "Alma Redemptoris Mater (PdPWV Mot286)",
+      "imslp_id": "Alma_Redemptoris_Mater,_PdPWV_Mot286_(Palestrina,_Giovanni_Pierluigi_da)",
+      "pdf_filename": "PMLP1293623-PAL_06_35.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q136996670",
+      "title": "Alma Redemptoris Mater (PdPWV Mot311)",
+      "imslp_id": "Alma_Redemptoris_Mater,_PdPWV_Mot311_(Palestrina,_Giovanni_Pierluigi_da)",
+      "pdf_filename": "PMLP1294349-PAL_07_17.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q136996744",
+      "title": "Angelus Domini (PdPWV Mot096)",
+      "imslp_id": "Angelus_Domini,_PdPWV_Mot096_(Palestrina,_Giovanni_Pierluigi_da)",
+      "pdf_filename": "PMLP1292344-5.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q136996777",
+      "title": "Apparuit caro"
+    },
+    {
+      "qid": "Q136996804",
+      "title": "Apparuit gratia",
+      "imslp_id": "Apparuit_gratia_Dei,_PdPWV_Dub010_(Palestrina,_Giovanni_Pierluigi_da)",
+      "pdf_filename": "PMLP1294376-PAL_07_28.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q136997725",
+      "title": "Ardens est",
+      "imslp_id": "Ardens_est_cor_meum,_PdPWV_Mot162_(Palestrina,_Giovanni_Pierluigi_da)",
+      "pdf_filename": "PMLP1292596-PAL_04_9.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q136998258",
+      "title": "Ascendens Christus",
+      "imslp_id": "Ascendens_Christus_in_altum,_PdPWV_Mot266_(Palestrina,_Giovanni_Pierluigi_da)",
+      "pdf_filename": "PMLP1294331-PAL_07_9.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q136998912",
+      "title": "Ascendo ad Patrem",
+      "imslp_id": "Ascendo_ad_Patrem_meum,_PdPWV_Mot074_(Palestrina,_Giovanni_Pierluigi_da)",
+      "pdf_filename": "PMLP653867-PAL_02_8.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giovanni-pierluigi-da-palestrina-c1525-pp577"
+    },
+    {
+      "qid": "Q137000028",
+      "title": "Asperges me"
+    },
+    {
+      "qid": "Q137002273",
+      "title": "Ave Maria (PdPWV Mot093)",
+      "imslp_id": "Ave_Maria,_PdPWV_Mot093_(Palestrina,_Giovanni_Pierluigi_da)",
+      "pdf_filename": "PMLP1292340-2.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q137005494",
+      "title": "Ave Regina coelorum (PdPWV Mot122)",
+      "imslp_id": "Ave_Regina_coelorum,_PdPWV_Mot122_(Palestrina,_Giovanni_Pierluigi_da)",
+      "pdf_filename": "PMLP867807-31.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q137005991",
+      "title": "Ave Regina coelorum (PdPWV Mot169)",
+      "imslp_id": "Ave_Regina_coelorum,_PdPWV_Mot169_(Palestrina,_Giovanni_Pierluigi_da)",
+      "pdf_filename": "PMLP1292603-PAL_04_16.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q137006018",
+      "title": "Ave Trinitatis sacrarium"
+    },
+    {
+      "qid": "Q137004653",
+      "title": "Ave mundi spes",
+      "imslp_id": "Ave_mundi_spes_Maria,_PdPWV_Mot288_(Palestrina,_Giovanni_Pierluigi_da)",
+      "pdf_filename": "PMLP1293556-PAL_06_25.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q137006028",
+      "title": "Beata Barbara",
+      "imslp_id": "Beata_Barbara,_PdPWV_Mot084_(Palestrina,_Giovanni_Pierluigi_da)",
+      "pdf_filename": "PMLP1292208-PAL_02_21.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q137007658",
+      "title": "Beata es (PdPWV Dub012)",
+      "imslp_id": "Beata_es_Virgo_Maria,_PdPWV_Dub012_(Palestrina,_Giovanni_Pierluigi_da)",
+      "pdf_filename": "PMLP1311489-PAL_32_1.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q137008461",
+      "title": "Beata es (PdPWV Mot284)",
+      "imslp_id": "Beata_es_Virgo_Maria,_PdPWV_Mot284_(Palestrina,_Giovanni_Pierluigi_da)",
+      "pdf_filename": "PMLP1306688-PAL_30_11.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q137006830",
+      "title": "Beatae Mariae Magdalenae",
+      "imslp_id": "Beatae_Mariae_Magdalenae,_PdPWV_Mot048_(Palestrina,_Giovanni_Pierluigi_da)",
+      "pdf_filename": "PMLP1290947-PAL_11.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q137015809",
+      "title": "Beati omnes",
+      "imslp_id": "Beati_omnes_qui_timent,_PdPWV_Mot323_(Palestrina,_Giovanni_Pierluigi_da)",
+      "pdf_filename": "PMLP1313872-PAL_26_13.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giovanni-pierluigi-da-palestrina-c1525-pp93"
+    },
+    {
+      "qid": "Q137017777",
+      "title": "Beatus Laurentius (PdPWV Mot018)",
+      "imslp_id": "Beatus_Laurentius,_PdPWV_Mot018_(Palestrina,_Giovanni_Pierluigi_da)",
+      "pdf_filename": "PMLP1292995-PAL_05_18.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q137020429",
+      "title": "Beatus Laurentius (PdPWV Mot049)",
+      "imslp_id": "Beatus_Laurentius,_PdPWV_Mot049_(Palestrina,_Giovanni_Pierluigi_da)",
+      "pdf_filename": "PMLP1290949-PAL_13.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q137022854",
+      "title": "Beatus vir qui suffert",
+      "imslp_id": "Beatus_vir,_qui_suffert,_PdPWV_Mot034_(Palestrina,_Giovanni_Pierluigi_da)",
+      "pdf_filename": "PMLP1293196-PAL_05_34.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q137023915",
+      "title": "Benedicta sit",
+      "imslp_id": "Benedicta_sit_sancta_Trinitas,_PdPWV_Mot011_(Palestrina,_Giovanni_Pierluigi_da)",
+      "pdf_filename": "PMLP1292971-PAL_05_11.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q137027526",
+      "title": "Canite tuba",
+      "imslp_id": "Canite_tuba_in_Sion,_PdPWV_Mot076_(Palestrina,_Giovanni_Pierluigi_da)",
+      "pdf_filename": "PMLP719434-PAL_02_10.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giovanni-pierluigi-da-palestrina-c1525-pp61"
+    },
+    {
+      "qid": "Q137033903",
+      "title": "Cantabo Domino",
+      "imslp_id": "Cantabo_Domino_in_vita_mea,_PdPWV_Mot086_(Palestrina,_Giovanni_Pierluigi_da)",
+      "pdf_filename": "PMLP1292210-PAL_02_23.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q137033863",
+      "title": "Cantantibus organis",
+      "imslp_id": "Cantantibus_organis,_PdPWV_Mot094_(Palestrina,_Giovanni_Pierluigi_da)",
+      "pdf_filename": "PMLP1292342-3.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q137037740",
+      "title": "Caput eius aurum (PdPWV Mot144)",
+      "imslp_id": "Caput_eius_aurum_optimum,_PdPWV_Mot144_(Palestrina,_Giovanni_Pierluigi_da)",
+      "pdf_filename": "PMLP1017280-PAL_20.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q137040850",
+      "title": "Caro mea",
+      "imslp_id": "Caro_mea_vere_est_cibus,_PdPWV_Mot095_(Palestrina,_Giovanni_Pierluigi_da)",
+      "pdf_filename": "PMLP1292343-4.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q137040961",
+      "title": "Caro mea (PdPWV Dub013)",
+      "imslp_id": "Caro_mea_vere_est_cibus,_PdPWV_Dub013_(Palestrina,_Giovanni_Pierluigi_da)",
+      "pdf_filename": "PMLP1293522-PAL_06_3.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q124310060",
+      "title": "Fratres ego enim accepi",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giovanni-pierluigi-da-palestrina-c1525-pp74"
+    },
+    {
+      "qid": "Q124309967",
+      "title": "Missa Aeterna Christi munera",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Missa_Æterna_Christi_munera_-_Giovanni_Pierluigi_da_Palestrina.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q124316823",
+      "title": "Missa Hodie Christus natus est"
+    },
+    {
+      "qid": "Q124310249",
+      "title": "Missa ad fugam"
+    },
+    {
+      "qid": "Q124310282",
+      "title": "Missa pro defunctis"
+    },
+    {
+      "qid": "Q2047753",
+      "title": "Palestrina - principles of music",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palestrina_-_Prince_of_Music",
+      "wikipedia_extract": "Palestrina - Prince of Music is an Italian/German 2009 music film directed by Georg Brintrup. The subject is the life and music of Giovanni Pierluigi da Palestrina (ca.1525-1594), a famous Italian Renaissance composer of sacred music. He is the best-known 16th-century composer of the Roman School. Filmed in March 2009 on locations mainly in and around L'Aquila and Rome, most of the ancient buildings and historical interiors in the city of L'Aquila were destroyed by the 2009 L'Aquila earthquake, only a few days after the end of shooting. Palestrina’s music in the film is directed by Flavio Colusso and the Roman Ensemble Seicentonovecento. The film was also titled The Liberation of Music or Die Befreiung der Musik when released in Germany.",
+      "pageviews_yearly": 2625
+    },
+    {
+      "qid": "Q124310170",
+      "title": "Pleni sunt coeli"
+    },
+    {
+      "qid": "Q124310762",
+      "title": "Popule meus",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giovanni-pierluigi-da-palestrina-c1525-pp157"
+    },
+    {
+      "qid": "Q124310868",
+      "title": "Ricercari sopra li tuoni"
+    },
+    {
+      "qid": "Q65080500",
+      "title": "Sicut cervus",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Sicut_cervus_Giovanni_Pierluigi_da_Palestrina.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q130356429",
+      "title": "Tota Pulchra es amica mea"
+    },
+    {
+      "qid": "Q25215432",
+      "title": "Tu es Petrus",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Missa_Tu_es_Petrus_a_6vv_Palestrinas_other_mass_is_for_3_choirs_18vv_-_Giova.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q76833052",
+      "title": "Ut, re, mi, fa, sol, la",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giovanni-pierluigi-da-palestrina-c1525-pp518"
+    },
+    {
+      "qid": "Q116059796",
+      "title": "Victory"
+    },
+    {
+      "qid": "Q124358851",
+      "title": "Vidi turbam magnam"
+    }
+  ]
+}

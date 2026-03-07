@@ -1,0 +1,102 @@
+{
+  "composer_name": "Edward MacDowell",
+  "name_last_first": "MacDowell, Edward",
+  "slug": "macdowell",
+  "wiki_page": "https://en.wikipedia.org/wiki/Edward_MacDowell",
+  "apple_music_playlist": "",
+  "era": "Late- / Post-Romantic",
+  "dates": "1860 – 1908",
+  "nationality": "USA",
+  "notable": false,
+  "works": [
+    {
+      "title": "Edward McDowell: To A Wild Rose",
+      "musicxml": "musicxml/Edward_McDowell_To_A_Wild_Rose.mxl",
+      "midi": "midi/Edward_McDowell_To_A_Wild_Rose.mid",
+      "time_signature": "2/4",
+      "instruments": [
+        "Nyckelharpa",
+        "Guitar"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 1,
+        "n_views": 132,
+        "duration_seconds": 100.99999999730667,
+        "n_notes": 327,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "guitar-viola-violin-edwardmcdowell",
+        "musescore_url": "https://musescore.com/user/8293926/scores/5961803",
+        "musescore_duration": "01:42"
+      },
+      "instruments_gm": [
+        "Oboe",
+        "Orchestral Harp"
+      ],
+      "tempo_bpm": 60,
+      "n_measures": 51,
+      "n_parts": 2,
+      "n_notes": 327,
+      "notes_per_second": 3.2,
+      "apple_music_search_query": "MacDowell Edward McDowell: To A Wild Rose",
+      "parent_work_title": "To A Wild Rose",
+      "year_composed": 1896,
+      "wikidata_id": "Q25217393",
+      "wikidata_title": "To a Wild Rose",
+      "musicbrainz_id": "d11ef600-713a-47ef-9064-affce38bcf5f",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=MacDowell%20McDowell%3A%20To%20A%20Wild%20Rose",
+      "display_title": "To a Wild Rose"
+    },
+    {
+      "title": "To A Wild Rose arranged for Violin Solo",
+      "musicxml": "musicxml/To_A_Wild_Rose_arranged_for_Violin_Solo.mxl",
+      "midi": "midi/To_A_Wild_Rose_arranged_for_Violin_Solo.mid",
+      "time_signature": "2/4",
+      "instruments": [
+        "Violin"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 1,
+        "n_views": 201,
+        "duration_seconds": 151.49992424587165,
+        "n_notes": 276,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "NA",
+        "tags": "violin-arrangement-edwardmacdowell",
+        "musescore_url": "https://musescore.com/user/30636082/scores/5578965",
+        "musescore_duration": "02:33"
+      },
+      "key": "G major",
+      "instruments_gm": [
+        "Violin"
+      ],
+      "tempo_bpm": 40,
+      "n_measures": 51,
+      "n_parts": 1,
+      "n_notes": 276,
+      "notes_per_second": 1.8,
+      "apple_music_search_query": "MacDowell G major To A Wild Rose arranged for Violin Solo",
+      "year_composed": 1896,
+      "wikidata_id": "Q25217393",
+      "wikidata_title": "To a Wild Rose",
+      "musicbrainz_id": "d11ef600-713a-47ef-9064-affce38bcf5f",
+      "wikidata_match_method": "title_substring",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=MacDowell%20To%20A%20Wild%20Rose%20arranged%20for%20Violin%20Solo",
+      "display_title": "To a Wild Rose"
+    }
+  ],
+  "birth_year": 1860,
+  "death_year": 1908,
+  "wikipedia_extract": "Edward Alexander MacDowell (December 18, 1860 – January 23, 1908) was an American composer and pianist of the late Romantic period. He was best known for his second piano concerto and his piano suites Woodland Sketches, Sea Pieces and New England Idylls. Woodland Sketches includes his most popular short piece, \"To a Wild Rose\".",
+  "wikipedia_compositions_url": "https://en.wikipedia.org/wiki/List_of_compositions_by_Edward_MacDowell",
+  "wikidata_id": "Q450467"
+}

@@ -1,0 +1,167 @@
+{
+  "composer_slug": "dukas",
+  "composer_qid": "Q215556",
+  "work_count": 20,
+  "midi_file_count": 2,
+  "works": [
+    {
+      "qid": "Q7190147",
+      "title": "Piano Sonata",
+      "imslp_id": "Piano_Sonata_(Dukas,_Paul)",
+      "pdf_filename": "Dukas_-_Sonata.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-dukas-1865-pp18",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_(Dukas)",
+      "wikipedia_extract": "The Piano Sonata in E-flat minor is a musical work composed by Paul Dukas between 1899 and 1900, and published in 1901.",
+      "pageviews_yearly": 2464,
+      "date": "1900-00-00"
+    },
+    {
+      "qid": "Q122916432",
+      "title": "Sonnet de Ronsard",
+      "imslp_id": "Sonnet_de_Ronsard_(Dukas,_Paul)",
+      "pdf_filename": "Dukas_-_Sonnet_de_Ronsard__voice_and_piano_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1924-00-00"
+    },
+    {
+      "qid": "Q3202209",
+      "title": "The Sorcerer's Apprentice",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-dukas-1865-pp17",
+      "date": "1930-00-00"
+    },
+    {
+      "qid": "Q655858",
+      "title": "Ariane et Barbe-bleue",
+      "imslp_id": "Ariane_et_Barbe-bleue_(Dukas,_Paul)",
+      "pdf_filename": "Dukas_-_Ariane_et_Barbe-Bleue__orch._score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-dukas-1865-pp20",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ariane_et_Barbe-bleue",
+      "wikipedia_extract": "Ariane et Barbe-bleue is an opera in three acts by Paul Dukas. The French libretto is adapted from the symbolist play of the same name by Maurice Maeterlinck, itself loosely based on the French literary tale La Barbe bleue by Charles Perrault.",
+      "pageviews_yearly": 9073
+    },
+    {
+      "qid": "Q125392286",
+      "title": "Fanfare pour précéder La Péri"
+    },
+    {
+      "qid": "Q943192",
+      "title": "Fantasia"
+    },
+    {
+      "qid": "Q30937",
+      "title": "Fantasia 2000"
+    },
+    {
+      "qid": "Q3089520",
+      "title": "Frédégonde",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fr%C3%A9d%C3%A9gonde",
+      "wikipedia_extract": "Frédégonde is an 1895 French opera in five acts with music by Ernest Guiraud, Camille Saint-Saëns, and Paul Dukas and a libretto by Louis Gallet based on Augustin Thierry's Récits des temps mérovingiens [Tales from the time of the Merovingians] (1840).",
+      "pageviews_yearly": 2362
+    },
+    {
+      "qid": "Q88202361",
+      "title": "Hommage à Joseph Haydn"
+    },
+    {
+      "qid": "Q42194331",
+      "title": "La Plainte au loin du faune",
+      "imslp_id": "La_plainte,_au_loin,_du_faune_(Dukas,_Paul)",
+      "pdf_filename": "Dukas_-_La_plainte__au_loin__du_faune.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-dukas-1865-pp26"
+    },
+    {
+      "qid": "Q3212076",
+      "title": "La Péri",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-dukas-1865-pp24",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_P%C3%A9ri_(Dukas)",
+      "wikipedia_extract": "La Péri is a 1912 ballet in one act by French composer Paul Dukas, originally choreographed by Ivan Clustine and first performed in Paris, about Iskender searching for immortality and his encounter with a mythological Peri. It was premiered on April 22, 1912.",
+      "pageviews_yearly": 7900
+    },
+    {
+      "qid": "Q866001",
+      "title": "Longing for the Moment"
+    },
+    {
+      "qid": "Q11339322",
+      "title": "Polyeucte",
+      "imslp_id": "Polyeucte_(Dukas,_Paul)",
+      "pdf_filename": "Dukas_-_Polyeucte_Overture.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-dukas-1865-pp15",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Polyeucte_(Dukas)",
+      "wikipedia_extract": "Polyeucte is an overture composed by Paul Dukas in 1891 for the tragedy of the same name by Pierre Corneille. Dukas made his public debut with the first performance of this overture on 23 January 1892 at the Concerts Lamoureux.",
+      "pageviews_yearly": 1668
+    },
+    {
+      "qid": "Q99521205",
+      "title": "Prélude élégiaque",
+      "imslp_id": "Prélude_élégiaque_(Dukas,_Paul)",
+      "pdf_filename": "Dukas_-_Prelude_Elegiague.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-dukas-1865-pp22"
+    },
+    {
+      "qid": "Q608522",
+      "title": "Symphony in C",
+      "imslp_id": "Symphony_in_C_major_(Dukas,_Paul)",
+      "pdf_filename": "PMLP39684-Dukas-SymphC.vn1.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-dukas-1865-pp16",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_in_C_(Dukas)",
+      "wikipedia_extract": "The Symphony in C is a symphony by the French composer Paul Dukas, dedicated to his fellow musician Paul Vidal.",
+      "pageviews_yearly": 3184
+    },
+    {
+      "qid": "Q1066882",
+      "title": "The Sorcerer's Apprentice",
+      "has_midi": true,
+      "midi_files": [
+        "midi/The_Sorcerers_Apprentice.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q7765318",
+      "title": "The Sorcerer's Apprentice",
+      "has_midi": true,
+      "midi_files": [
+        "midi/El_aprendiz_de_brujo_LApprenti_sorcier_The_Sorcerers_Apprentice.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q14752515",
+      "title": "Tombeau de Claude Debussy"
+    },
+    {
+      "qid": "Q3554772",
+      "title": "Variations, Interlude and Finale on a Theme by Rameau",
+      "imslp_id": "Variations,_interlude_et_final_sur_un_thème_de_Rameau_(Dukas,_Paul)",
+      "pdf_filename": "Dukas-VarsRameau.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Variations%2C_Interlude_and_Finale_on_a_Theme_by_Rameau",
+      "wikipedia_extract": "The Variations, Interlude and Finale on a Theme by Rameau were composed by Paul Dukas between 1899 and 1902. The work was first performed in Paris in 1903.",
+      "pageviews_yearly": 1787
+    },
+    {
+      "qid": "Q99583644",
+      "title": "Villanelle",
+      "imslp_id": "Villanelle_(Dukas,_Paul)",
+      "pdf_filename": "Dukas-Villanelle_horn.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-dukas-1865-pp21"
+    }
+  ]
+}

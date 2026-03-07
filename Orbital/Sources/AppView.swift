@@ -18,6 +18,9 @@ struct AppView: View {
       Tab("Songs", systemImage: "music.note.list") {
         OrbitalView()
       }
+      Tab("Classics", systemImage: "building.columns") {
+        ClassicsBrowserView()
+      }
       Tab("Create", systemImage: "wand.and.stars") {
         NavigationStack {
           if let doc = createDocument {
@@ -78,22 +81,25 @@ private struct PlaybackAccessoryView: View {
             Text(name)
               .lineLimit(1)
           }
-          if let chord = state?.currentChordLabel {
-            Text(chord)
+          // Show subtitle (e.g. composer name from Classics) first; fall back to chord label.
+          let secondaryText = state?.song.subtitle ?? state?.currentChordLabel
+          if let secondary = secondaryText {
+            Text(secondary)
               .font(.caption.italic())
               .lineLimit(1)
               .transition(.opacity)
           }
         }
-        .animation(.easeInOut(duration: 0.2), value: state?.currentChordLabel)
+        .animation(.easeInOut(duration: 0.2), value: state?.song.subtitle ?? state?.currentChordLabel)
 
         Spacer()
       }
 
       if placement == .inline {
-        accessoryButtons.buttonStyle(.glass)
+        AccessoryButtons(isShowingVisualizer: $isShowingVisualizer)
+          .buttonStyle(.glass)
       } else {
-        accessoryButtons
+        AccessoryButtons(isShowingVisualizer: $isShowingVisualizer)
       }
     }
     .padding(.horizontal)
@@ -107,33 +113,31 @@ private struct PlaybackAccessoryView: View {
       }
     }
   }
+}
 
-  private var accessoryButtons: some View {
+private struct AccessoryButtons: View {
+  @Environment(SongLibrary.self) private var library
+  @Environment(\.tabViewBottomAccessoryPlacement) private var placement
+  @Binding var isShowingVisualizer: Bool
+
+  var body: some View {
     HStack(spacing: placement == .inline ? 12 : 20) {
       if !library.isLoading {
-        Button {
+        Button(library.allPaused ? "Play" : "Pause", systemImage: library.allPaused ? "play.fill" : "pause.fill") {
           if library.allPaused {
             library.resumeAll()
           } else {
             library.pauseAll()
           }
-        } label: {
-          Image(systemName: library.allPaused ? "play.fill" : "pause.fill")
         }
 
-        Button {
-          library.stopAll()
-        } label: {
-          Image(systemName: "stop.fill")
-        }
+        Button("Stop", systemImage: "stop.fill", action: library.stopAll)
       }
 
-      Button {
+      Button("Visualizer", systemImage: "sparkles.tv") {
         withAnimation(.easeInOut(duration: 0.4)) {
           isShowingVisualizer = true
         }
-      } label: {
-        Image(systemName: "sparkles.tv")
       }
     }
   }
@@ -163,4 +167,5 @@ private struct EventLogSheet: View {
     .environment(SpatialAudioEngine())
     .environment(SongLibrary())
     .environment(ResourceManager())
+    .environment(ClassicsCatalogLibrary())
 }

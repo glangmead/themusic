@@ -1,0 +1,136 @@
+{
+  "composer_slug": "pachelbel",
+  "composer_qid": "Q76485",
+  "work_count": 16,
+  "midi_file_count": 3,
+  "works": [
+    {
+      "qid": "Q1352930",
+      "title": "Begin the Beguine",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Begin_the_Beguine_(film)",
+      "wikipedia_extract": "Begin the Beguine is a 1982 Spanish film written and directed by José Luis Garci, starring Antonio Ferrandis. The plot follows the story of a Spaniard who returns to his homeland after many years in exile when he wins the Nobel Prize in Literature. Its original Spanish title, Volver a Empezar, means Starting Again.",
+      "pageviews_yearly": 10714
+    },
+    {
+      "qid": "Q123293276",
+      "title": "C'è bisogno di un piccolo aiuto"
+    },
+    {
+      "qid": "Q689519",
+      "title": "Canon and Gigue in D",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Canon_in_D_Major.mid",
+        "midi/Canon_in_D_Violin_Duet.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q5066120",
+      "title": "Chaconne in D minor",
+      "imslp_id": "Chaconne_in_D_minor,_P.41_(Pachelbel,_Johann)",
+      "pdf_filename": "PMLP299345-17CHdmin_IMSLP75268-PMLP151082-Pachelbel_-_Works_for_Organ_and_Harpsichord.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johann-pachelbel-1653-pp550",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chaconne_in_D_minor_(Pachelbel)",
+      "wikipedia_extract": "Chaconne in D minor is an organ chaconne by Johann Pachelbel. It is one of the six surviving chaconnes by the composer, and one of his best known organ works.",
+      "pageviews_yearly": 3204
+    },
+    {
+      "qid": "Q5066124",
+      "title": "Chaconne in F minor",
+      "imslp_id": "Chaconne_in_F_minor,_P.43_(Pachelbel,_Johann)",
+      "pdf_filename": "PMLP299351-19.Fmin89_IMSLP75268-PMLP151082-Pachelbel_-_Works_for_Organ_and_Harpsichord.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johann-pachelbel-1653-pp550",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chaconne_in_F_minor",
+      "wikipedia_extract": "Chaconne in F minor is an organ chaconne by Johann Pachelbel. One of the six surviving chaconnes by the composer, it is one of his best known organ works.",
+      "pageviews_yearly": 4569
+    },
+    {
+      "qid": "Q5395870",
+      "title": "Erster Theil etlicher Choräle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Erster_Theil_etlicher_Chor%C3%A4le",
+      "wikipedia_extract": "\nErster Theil etlicher Choräle is a collection of liturgical organ music by Johann Pachelbel, published during his lifetime. It contains eight chorale preludes in seven different styles.",
+      "pageviews_yearly": 1485
+    },
+    {
+      "qid": "Q5748692",
+      "title": "Hexachordum Apollinis",
+      "imslp_id": "Hexachordum_Apollinis_(Pachelbel,_Johann)",
+      "pdf_filename": "HexachordumApollinis.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hexachordum_Apollinis",
+      "wikipedia_extract": "Hexachordum Apollinis is a collection of keyboard music by Johann Pachelbel, published in 1699. It comprises six arias with variations, on original themes, and is generally regarded as one of the pinnacles of Pachelbel's oeuvre. The collection includes a preface in which Pachelbel dedicates the work to Dieterich Buxtehude and Ferdinand Tobias Richter and briefly discusses the nature of music.",
+      "pageviews_yearly": 9305
+    },
+    {
+      "qid": "Q17060032",
+      "title": "Musicalische Ergötzung",
+      "imslp_id": "Musicalische_Ergötzung_(Pachelbel,_Johann)",
+      "pdf_filename": "PMLP451203-HM_55_Pach_2_psc.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johann-pachelbel-1653-pp547",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Musicalische_Erg%C3%B6tzung",
+      "wikipedia_extract": "\nMusicalische Ergötzung is a collection of chamber music by Johann Pachelbel. Published during his lifetime, it contains six suites for two violins and basso continuo.",
+      "pageviews_yearly": 1794
+    },
+    {
+      "qid": "Q6942575",
+      "title": "Musicalische Sterbens-Gedancken",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Musicalische_Sterbens-Gedancken",
+      "wikipedia_extract": "\nMusicalische Sterbens-Gedancken is a collection of keyboard music by Johann Pachelbel. It was first published in 1683 and contains four sets of chorale variations.",
+      "pageviews_yearly": 1835
+    },
+    {
+      "qid": "Q133808978",
+      "title": "Nun danket alle Gott",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johann-pachelbel-1653-pp464",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nun_danket_alle_Gott_(Pachelbel)",
+      "wikipedia_extract": "Nun danket alle Gott, P. 381, is a motet for two four-part choirs by Johann Pachelbel. The composer set Ecclesiasticus 50:22-24 for double choir in a first section, followed by the first stanza of the hymn \"Nun danket alle Gott\" with its tune as a cantus firmus. Bärenreiter published the motet in 1954.",
+      "pageviews_yearly": 1536
+    },
+    {
+      "qid": "Q88316257",
+      "title": "Quelques larmes de pluie"
+    },
+    {
+      "qid": "Q1867079",
+      "title": "Rain and Tears",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rain_and_Tears",
+      "wikipedia_extract": "\"Rain and Tears\" is a song by the Greek band Aphrodite's Child. The song was included on the band's 1968 debut studio album End of the World, and was released as a single in July 1968 on Mercury Records. It became a major hit across Europe, reaching number one in France, number two in several other countries, and entering the top 30 in the United Kingdom and West Germany.",
+      "pageviews_yearly": 17205
+    },
+    {
+      "qid": "Q133564206",
+      "title": "Singet dem Herrn ein neues Lied",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johann-pachelbel-1653-pp466",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Singet_dem_Herrn_ein_neues_Lied_(Pachelbel)",
+      "wikipedia_extract": "Singet dem Herrn ein neues Lied, P. 424, is a motet for two four-part choirs by Johann Pachelbel, a setting of verses from Psalm 98.",
+      "pageviews_yearly": 1266
+    },
+    {
+      "qid": "Q133825865",
+      "title": "Tröste, tröste uns, Gott",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Troste_uns_Gott.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q2250001",
+      "title": "Was Gott tut, das ist wohlgetan",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johann-pachelbel-1653-pp178"
+    },
+    {
+      "qid": "Q106809422",
+      "title": "Was Gott tut, das ist wohlgetan",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johann-pachelbel-1653-pp178"
+    }
+  ]
+}

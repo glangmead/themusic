@@ -1,0 +1,64 @@
+{
+  "composer_name": "William Byrd",
+  "name_last_first": "Byrd, William",
+  "slug": "byrd",
+  "wiki_page": "https://en.wikipedia.org/wiki/William_Byrd",
+  "apple_music_playlist": "https://music.apple.com/mk/playlist/pl.aa3fab0b177d4e1f84bdcd08fc5f0884",
+  "era": "Renaissance",
+  "dates": "1540 – 1623 (c.)",
+  "nationality": "ENG",
+  "notable": true,
+  "works": [
+    {
+      "title": "Mass for 4 Voices",
+      "musicxml": "musicxml/Byrd_-_Mass_SATB.mxl",
+      "midi": "midi/Byrd_-_Mass_SATB.mid",
+      "form": "Mass",
+      "key": "Ab major",
+      "time_signature": "4/2",
+      "instruments": [
+        "Sopran",
+        "Alt",
+        "Tenor",
+        "Bas"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 3,
+        "n_views": 109,
+        "duration_seconds": 2442.841528063316,
+        "n_notes": 4984,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/48743/scores/5928409",
+        "musescore_duration": "20:37"
+      },
+      "key_from_data": "A♭ major",
+      "instruments_gm": [
+        "Choir Aahs"
+      ],
+      "tempo_bpm": 160,
+      "n_measures": 480,
+      "n_parts": 4,
+      "n_notes": 4928,
+      "notes_per_second": 2.0,
+      "apple_music_search_query": "Byrd Ab major Mass for 4 Voices",
+      "parent_work_title": "Mass SATB",
+      "wikidata_id": "Q6784039",
+      "wikidata_title": "Mass for Four Voices",
+      "musicbrainz_id": "5c1b5be7-e6bc-4ba5-aae2-ee188b217abe",
+      "wikidata_match_method": "title_tokens",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Byrd%20Mass%20for%204%20Voices",
+      "display_title": "Mass for Four Voices"
+    }
+  ],
+  "birth_year": 1540,
+  "death_year": 1623,
+  "wikipedia_extract": "William Byrd (; c. 1540 – 4 July 1623) was an English Renaissance composer. Considered among the greatest composers of the Renaissance, he had a profound influence on composers both from his native country and on the Continent.",
+  "wikipedia_compositions_url": "https://en.wikipedia.org/wiki/List_of_compositions_by_William_Byrd",
+  "wikidata_id": "Q208375"
+}

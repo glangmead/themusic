@@ -1,0 +1,256 @@
+{
+  "composer_slug": "des_prez",
+  "composer_qid": "Q143100",
+  "work_count": 46,
+  "midi_file_count": 5,
+  "works": [
+    {
+      "qid": "Q114891210",
+      "title": "Adieu mes amours on m'atent"
+    },
+    {
+      "qid": "Q16949660",
+      "title": "Ave Maria ... Virgo serena",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Ave_Maria_-_Josquin_des_Prez.mid",
+        "midi/Ave_Maria_Josquin_des_Prez.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q116250742",
+      "title": "Belle pour l'amour de vous",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/josquin-des-prez-1450-pp153"
+    },
+    {
+      "qid": "Q116250816",
+      "title": "Bergerette savoyene"
+    },
+    {
+      "qid": "Q116250912",
+      "title": "Cela sans plus et puis hola"
+    },
+    {
+      "qid": "Q116250743",
+      "title": "Comment peult haver joye"
+    },
+    {
+      "qid": "Q135653804",
+      "title": "Congratulamini mihi omnes"
+    },
+    {
+      "qid": "Q135653812",
+      "title": "Cum sancto spiritu"
+    },
+    {
+      "qid": "Q116250819",
+      "title": "Des biens d'amours quiconques les despart"
+    },
+    {
+      "qid": "Q128270954",
+      "title": "Domini est terra"
+    },
+    {
+      "qid": "Q116215576",
+      "title": "Entre ye suis en gran pensier"
+    },
+    {
+      "qid": "Q116246615",
+      "title": "Et trop penser"
+    },
+    {
+      "qid": "Q116250732",
+      "title": "Fortuna d'um gran tempo"
+    },
+    {
+      "qid": "Q116247281",
+      "title": "Hellas madame"
+    },
+    {
+      "qid": "Q135653910",
+      "title": "In illo tempore Maria Magdalena"
+    },
+    {
+      "qid": "Q114436671",
+      "title": "In pace in idipsum",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/josquin-des-prez-1450-pp39"
+    },
+    {
+      "qid": "Q116250896",
+      "title": "In pace in idipsum dormiam et requiescam"
+    },
+    {
+      "qid": "Q116250734",
+      "title": "In te Domine speravi, non confundar"
+    },
+    {
+      "qid": "Q114888256",
+      "title": "J'ay bien nouri sept ans ung joly gay"
+    },
+    {
+      "qid": "Q116250741",
+      "title": "Je suis si trescourte"
+    },
+    {
+      "qid": "Q116250817",
+      "title": "Liber generationis Jesu Christi",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/josquin-des-prez-1450-pp89"
+    },
+    {
+      "qid": "Q686307",
+      "title": "Mille Regretz",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Mille_regretz.mid",
+        "midi/Mille_regretz_-_Josquin_des_Prez.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q17025792",
+      "title": "Miserere",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/josquin-des-prez-1450-pp94",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miserere_(Josquin)",
+      "wikipedia_extract": "The Miserere, by Josquin des Prez, is a motet setting of Psalm 51 for five voices. He composed it while in the employ of Duke Ercole I d'Este in Ferrara, in 1503 or 1504. It was one of the most famous settings of that psalm of the entire Renaissance, was hugely influential in subsequent settings of the Penitential Psalms, and was itself probably inspired by the recent suffering and execution of the reformer Girolamo Savonarola.",
+      "pageviews_yearly": 4655
+    },
+    {
+      "qid": "Q3859205",
+      "title": "Missa \"L'homme armé\" super voces musicales",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/josquin-des-prez-1450-pp16",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Missa_L'homme_arm%C3%A9_super_voces_musicales",
+      "wikipedia_extract": "The Missa L'homme armé super voces musicales is the first of two settings of the Ordinary of the Mass by Josquin des Prez using the famous L'homme armé tune as his cantus firmus source material. The setting is for four voices. It was the most famous mass Josquin composed, surviving in numerous manuscripts and print editions. The earliest printed collection of music devoted to a single composer, the Misse Josquin published by Ottaviano Petrucci in 1502, begins with this famous work.",
+      "pageviews_yearly": 5650
+    },
+    {
+      "qid": "Q16850889",
+      "title": "Missa Gaudeamus",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/josquin-des-prez-1450-pp11",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Missa_Gaudeamus",
+      "wikipedia_extract": "\nThe Missa Gaudeamus is a musical setting of the Ordinary of the Mass by Franco-Flemish composer Josquin des Prez, probably composed in the early or middle 1480s, and published in 1502. It is based on the gregorian introit Gaudeamus Omnes and its setting is for four voices.",
+      "pageviews_yearly": 2481
+    },
+    {
+      "qid": "Q3859203",
+      "title": "Missa L'homme armé sexti toni",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/josquin-des-prez-1450-pp15",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Missa_L'homme_arm%C3%A9_sexti_toni",
+      "wikipedia_extract": "\nMissa L'homme armé sexti toni is a L'homme armé mass by Josquin des Prez well into his career, composed some time in the late 15th century. It is thought to be the second of two L'homme armé masses Josquin composed and differs in many composition elements when compared to its earlier counterpart, Missa L'homme armé super voces musicales. This mass gets its name from Josquin's use of the sixth Gregorian mode, deviating from the norm. Missa L'homme armé sexti toni is also a paraphrase mass where the cantus firmus, or the L'homme armé melody in this case, jumps between voice parts rather than the usual practice of remaining primarily in the tenor part. This mass appears quite straightforward, adhering to the standard Mass ordinary text, but exhibits many complex uses of strict canon and repetition throughout its movements.",
+      "pageviews_yearly": 2125
+    },
+    {
+      "qid": "Q6878148",
+      "title": "Missa La sol fa re mi",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/josquin-des-prez-1450-pp14",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Missa_La_sol_fa_re_mi",
+      "wikipedia_extract": "The Missa La sol fa re mi is a musical setting of the mass by Josquin des Prez, first published in 1502. It is one of his most famous masses, and one of the earliest and most renowned examples of the soggetto cavato technique – the technique of deriving musical notes from the syllables of a phrase, in this case \"Lascia fare mi\".",
+      "pageviews_yearly": 3559
+    },
+    {
+      "qid": "Q3859201",
+      "title": "Missa Pange lingua",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/josquin-des-prez-1450-pp19",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Missa_Pange_lingua",
+      "wikipedia_extract": "\nThe Missa Pange lingua is a musical setting of the Ordinary of the Mass by Franco-Flemish composer Josquin des Prez, probably dating from around 1515, near the end of his life. Most likely his last mass, it is an extended fantasia on the Pange Lingua hymn, and is one of Josquin's most famous mass settings.",
+      "pageviews_yearly": 8122
+    },
+    {
+      "qid": "Q3859200",
+      "title": "Missa de Beata Virgine",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/josquin-des-prez-1450-pp5",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Missa_de_Beata_Virgine_(Josquin)",
+      "wikipedia_extract": "The Missa de Beata Virgine is a musical setting of the Ordinary of the Mass, by Renaissance composer Josquin des Prez. Though formerly believed to have been a late composition on the basis of stylistic analysis, evidence from Burchard’s Diary proves that the mass was written sometime before September 23, 1497. It was the most popular of his masses in the 16th century.",
+      "pageviews_yearly": 3422
+    },
+    {
+      "qid": "Q3859207",
+      "title": "Missa sine nomine",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/josquin-des-prez-1450-pp21",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Missa_sine_nomine_(Josquin)",
+      "wikipedia_extract": "\nThe Missa Sine nomine is a setting of the Ordinary of the Mass by Renaissance composer Josquin des Prez. It is a work of his maturity, probably dating from the period after he returned to Condé-sur-l'Escaut in 1504. It is one of Josquin's only masses not to be based on pre-existing material, and like the Missa ad fugam, it is a canonic mass.",
+      "pageviews_yearly": 1695
+    },
+    {
+      "qid": "Q116215873",
+      "title": "Missus est Gabriel angelus",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/josquin-des-prez-1450-pp96"
+    },
+    {
+      "qid": "Q1982391",
+      "title": "Nymphes des bois",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/josquin-des-prez-1450-pp198",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nymphes_des_bois",
+      "wikipedia_extract": "\n\n\nNymphes des bois, also known as La Déploration de Johannes Ockeghem, is a lament composed by Josquin des Prez on the occasion of the death of his predecessor Johannes Ockeghem in February 1497. The composition is based on a poem written by Jean Molinet (1435–1507). The performance date most likely coincides with the first anniversary of Ockeghem's death, 4 February 1498.",
+      "pageviews_yearly": 6325
+    },
+    {
+      "qid": "Q116215885",
+      "title": "O bone et dulcis domine",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/josquin-des-prez-1450-pp101"
+    },
+    {
+      "qid": "Q135653973",
+      "title": "Osculetur me osculo oris sui quia meliora (= Ecce video caelos apertos 19.2)"
+    },
+    {
+      "qid": "Q116215798",
+      "title": "Paratum cor meum"
+    },
+    {
+      "qid": "Q116215767",
+      "title": "Plus millem regretem"
+    },
+    {
+      "qid": "Q116250735",
+      "title": "Que vous madame/Da pacem"
+    },
+    {
+      "qid": "Q133278284",
+      "title": "Qui habitat",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/josquin-des-prez-1450-pp447",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Qui_habitat",
+      "wikipedia_extract": "\nQui habitat is a liturgical chant sung as the tract during the Mass of the First Sunday of Lent or Quadragesima Sunday in the Roman Rite of the Catholic Church. This tract, drawn from Psalm 90, is a significant example of Gregorian chant and \"one of the most remarquable tracts\" of the Graduale Romanum. It reflects the penitential character of the Lenten season. It replaces the Alleluia, which is omitted during Lent, and serves as a meditative interlude between the Gradual and the Gospel reading.",
+      "pageviews_yearly": 4286
+    },
+    {
+      "qid": "Q114890408",
+      "title": "Scaramella va alla guerra",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Scaramella_-_Josquin_des_Prez.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q116215624",
+      "title": "Se jay perdiu mon amy"
+    },
+    {
+      "qid": "Q116250733",
+      "title": "Tu solus qui facis mirabilia",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/josquin-des-prez-1450-pp136"
+    },
+    {
+      "qid": "Q135654082",
+      "title": "Tua est potentia tuum regnum Dominus"
+    },
+    {
+      "qid": "Q116250740",
+      "title": "Une musque de buscaye"
+    },
+    {
+      "qid": "Q116250745",
+      "title": "Victime paschali laudes"
+    },
+    {
+      "qid": "Q135654093",
+      "title": "Vivray-je tousjours en telle paine"
+    },
+    {
+      "qid": "Q135654106",
+      "title": "Vultum tuum",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/josquin-des-prez-1450-pp414"
+    }
+  ]
+}

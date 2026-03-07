@@ -15,6 +15,7 @@ struct SongCell: View {
   @Binding var selectedSongID: SongRef.ID?
 
   @State private var playbackState: SongDocument?
+  @State private var isShowingLoadError = false
 
   private var isPlaying: Bool { playbackState?.isPlaying == true }
   private var isPaused: Bool { playbackState?.isPaused == true }
@@ -42,23 +43,18 @@ struct SongCell: View {
       .buttonStyle(.plain)
 
       // Single settings button
-      Button { selectedSongID = song.id } label: {
-        Image(systemName: "slider.horizontal.3")
-      }
+      Button("Settings", systemImage: "slider.horizontal.3") { selectedSongID = song.id }
       .buttonStyle(.borderless)
     }
-    .onAppear {
+    .task {
       if playbackState == nil {
         playbackState = library.playbackState(for: song, engine: engine, resourceBaseURL: resourceManager.resourceBaseURL)
       }
     }
-    .alert(
-      "Failed to Load Song",
-      isPresented: Binding(
-        get: { playbackState?.loadError != nil },
-        set: { if !$0 { playbackState?.loadError = nil } }
-      )
-    ) {
+    .onChange(of: playbackState?.loadError) {
+      isShowingLoadError = playbackState?.loadError != nil
+    }
+    .alert("Failed to Load Song", isPresented: $isShowingLoadError) {
       Button("OK") { playbackState?.loadError = nil }
     } message: {
       if let error = playbackState?.loadError {

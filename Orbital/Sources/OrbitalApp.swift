@@ -14,6 +14,7 @@ struct OrbitalApp: App {
   @State private var engine = SpatialAudioEngine()
   @State private var songLibrary = SongLibrary()
   @State private var resourceManager = ResourceManager()
+  @State private var classicsCatalog = ClassicsCatalogLibrary()
   @Environment(\.scenePhase) private var scenePhase
 
   init() {
@@ -44,11 +45,13 @@ struct OrbitalApp: App {
         .environment(engine)
         .environment(songLibrary)
         .environment(resourceManager)
+        .environment(classicsCatalog)
         .task {
           WavetableLibrary.loadAllCuratedTables()
           await resourceManager.setup()
           PatternStorage.resourceBaseURL = resourceManager.resourceBaseURL
           songLibrary.loadSongs(from: resourceManager.resourceBaseURL)
+          classicsCatalog.load()
         }
         .onReceive(NotificationCenter.default.publisher(for: UIApplication.willTerminateNotification)) { _ in
           engine.fadeOutAndStop()

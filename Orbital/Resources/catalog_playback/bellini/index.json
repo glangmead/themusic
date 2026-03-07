@@ -1,0 +1,113 @@
+{
+  "composer_name": "Vincenzo Bellini",
+  "name_last_first": "Bellini, Vincenzo",
+  "slug": "bellini",
+  "wiki_page": "https://en.wikipedia.org/wiki/Vincenzo_Bellini",
+  "apple_music_playlist": "https://music.apple.com/us/playlist/vinzenco-bellini-essentials/pl.c2fb9ed17d6c448abd0f01942a78a5fb",
+  "era": "Romantic",
+  "dates": "1801 – 1835",
+  "nationality": "ITA",
+  "notable": true,
+  "works": [
+    {
+      "title": "Casta Diva",
+      "musicxml": "musicxml/Casta_diva.mxl",
+      "midi": "midi/Casta_diva.mid",
+      "time_signature": "12/8",
+      "instruments": [
+        "Piano"
+      ],
+      "tempo_markings": [
+        "poco rit.",
+        "a tempo"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.7,
+        "n_favorites": 13,
+        "n_views": 885,
+        "duration_seconds": 67.74999999909667,
+        "n_notes": 767,
+        "complexity": "2",
+        "is_original": false,
+        "is_best_arrangement": false,
+        "genres": "classical",
+        "tags": "bellini-chopin-castadiva-mike",
+        "musescore_url": "https://musescore.com/user/30859765/scores/5606552",
+        "musescore_duration": "01:48"
+      },
+      "key": "E major",
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 120,
+      "n_measures": 36,
+      "n_parts": 1,
+      "n_notes": 756,
+      "notes_per_second": 11.2,
+      "apple_music_search_query": "Bellini E major Casta Diva",
+      "year_composed": 1831,
+      "wikidata_id": "Q1107815",
+      "wikidata_title": "Casta Diva",
+      "musicbrainz_id": "b87816a7-211f-3097-9144-8a7bbaff34a3",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Bellini%20Casta%20Diva",
+      "display_title": "Casta Diva"
+    },
+    {
+      "title": "Casta Diva for String Quartet",
+      "musicxml": "musicxml/Casta_Diva_for_String_Quartet.mxl",
+      "midi": "midi/Casta_Diva_for_String_Quartet.mid",
+      "form": "Quartet",
+      "time_signature": "12/8",
+      "instruments": [
+        "Violin I",
+        "Violin II",
+        "Viola",
+        "Violoncello"
+      ],
+      "tempo_markings": [
+        "Adagio sostenuto assai"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.65,
+        "n_favorites": 10,
+        "n_views": 679,
+        "duration_seconds": 143.19999999801908,
+        "n_notes": 1561,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "NA",
+        "tags": "stringquartet-bellini-castadiva-norma",
+        "musescore_url": "https://musescore.com/user/28755101/scores/5627130",
+        "musescore_duration": "04:48"
+      },
+      "key": "F major",
+      "instruments_gm": [
+        "Violin",
+        "Viola",
+        "Cello"
+      ],
+      "tempo_bpm": 120,
+      "n_measures": 60,
+      "n_parts": 4,
+      "n_notes": 1472,
+      "notes_per_second": 10.3,
+      "apple_music_search_query": "Bellini F major Casta Diva for String Quartet",
+      "parent_work_title": "Casta Diva",
+      "year_composed": 1831,
+      "wikidata_id": "Q1107815",
+      "wikidata_title": "Casta Diva",
+      "musicbrainz_id": "b87816a7-211f-3097-9144-8a7bbaff34a3",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Bellini%20Casta%20Diva%20for%20String%20Quartet",
+      "display_title": "Casta Diva"
+    }
+  ],
+  "birth_year": 1801,
+  "death_year": 1835,
+  "wikipedia_extract": "Vincenzo Salvatore Carmelo Francesco Bellini ( bə-LEE-nee, Italian: [vinˈtʃɛntso salvaˈtoːre karˈmɛːlo franˈtʃesko belˈliːni] ; 3 November 1801 – 23 September 1835) was an Italian opera composer famed for his long, graceful melodies and evocative musical settings. A central figure of the bel canto era, he was admired not only by the public but also by many composers who were influenced by his work. His songs balanced florid embellishment with a deceptively simple approach to lyric setting.",
+  "wikidata_id": "Q170209"
+}

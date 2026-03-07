@@ -1,0 +1,3860 @@
+{
+  "composer_slug": "chopin",
+  "composer_qid": "Q1268",
+  "work_count": 420,
+  "midi_file_count": 39,
+  "works": [
+    {
+      "qid": "Q7210085",
+      "title": "Pieśni, Op. posth. 74",
+      "imslp_id": "Polish_Songs,_Op.74_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin-Sgambati-Piosnka_Litewska.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Polish_songs_(Chopin)",
+      "wikipedia_extract": "Although Frédéric Chopin is best known for his works for piano solo, among his extant output are 19 songs for voice and piano, set to Polish texts.",
+      "pageviews_yearly": 11374,
+      "date": "1800-00-00",
+      "movements": [
+        {
+          "qid": "Q9397723"
+        },
+        {
+          "qid": "Q6168011"
+        },
+        {
+          "qid": "Q17583517"
+        },
+        {
+          "qid": "Q17583518"
+        },
+        {
+          "qid": "Q17583604"
+        },
+        {
+          "qid": "Q17583616"
+        },
+        {
+          "qid": "Q17583608"
+        },
+        {
+          "qid": "Q17583609"
+        },
+        {
+          "qid": "Q17583617"
+        },
+        {
+          "qid": "Q17583606"
+        },
+        {
+          "qid": "Q17583610"
+        },
+        {
+          "qid": "Q17583618"
+        },
+        {
+          "qid": "Q17583605"
+        },
+        {
+          "qid": "Q17583612"
+        },
+        {
+          "qid": "Q17583607"
+        },
+        {
+          "qid": "Q17583614"
+        },
+        {
+          "qid": "Q17583613"
+        },
+        {
+          "qid": "Q17583611"
+        },
+        {
+          "qid": "Q113519249"
+        }
+      ]
+    },
+    {
+      "qid": "Q15457502",
+      "title": "Polonaises, Op. posth. [71]",
+      "imslp_id": "Polonaises,_Op.71_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_3_Polonaises__Op_71.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Polonaises%2C_Op._71_(Chopin)",
+      "wikipedia_extract": "The three Polonaises, Op. 71 were composed by Frédéric Chopin in his earlier days.",
+      "pageviews_yearly": 3588,
+      "date": "1800-00-00",
+      "movements": [
+        {
+          "qid": "Q16746794"
+        },
+        {
+          "qid": "Q16746796"
+        },
+        {
+          "qid": "Q16746798"
+        }
+      ]
+    },
+    {
+      "qid": "Q147580",
+      "title": "Trois nouvelles études",
+      "imslp_id": "3_Nouvelles_études,_B.130_(Chopin,_Frédéric)",
+      "pdf_filename": "PMLP01969-E948543_122-130-Chopin--etudes--Ekier.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp56",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Trois_nouvelles_%C3%A9tudes",
+      "wikipedia_extract": "Frédéric Chopin wrote his Trois nouvelles études for piano in 1839, as a contribution to \"Méthode des méthodes de piano\", a piano instruction book by Ignaz Moscheles and François-Joseph Fétis. These études are less technical than the composer's Op. 10 and 25 and retain Chopin's original formula for harmonic and structural balance. They are often erroneously described as posthumous, due to their lack of an opus number.",
+      "pageviews_yearly": 5679,
+      "date": "1800-00-00",
+      "movements": [
+        {
+          "qid": "Q9255656"
+        },
+        {
+          "qid": "Q9255658"
+        },
+        {
+          "qid": "Q16741308"
+        }
+      ]
+    },
+    {
+      "qid": "Q7966847",
+      "title": "Waltzes, Op. Posth. 70",
+      "imslp_id": "Waltzes,_Op.70_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_Waltzes__Op_70.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Waltzes%2C_Op._70_(Chopin)",
+      "wikipedia_extract": "The three Waltzes, Op. 70, were composed by Frédéric Chopin between 1829 and 1842 and were posthumously published by Julian Fontana in 1855, six years after the composer's death. Waltz No. 1 is in G-flat major, No. 2 in F minor and No. 3 in D-flat major. Each of the three waltzes lasts less than three minutes to perform in typical performances.",
+      "pageviews_yearly": 6057,
+      "date": "1800-00-00",
+      "movements": [
+        {
+          "qid": "Q16746850"
+        },
+        {
+          "qid": "Q16142757"
+        },
+        {
+          "qid": "Q16746852"
+        }
+      ]
+    },
+    {
+      "qid": "Q16747421",
+      "title": "Waltzes, Op. posth. 69",
+      "imslp_id": "Waltzes,_Op.69_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_Waltzes__Op_69.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1800-00-00",
+      "movements": [
+        {
+          "qid": "Q4008434"
+        },
+        {
+          "qid": "Q7966838"
+        }
+      ]
+    },
+    {
+      "qid": "Q9255656",
+      "title": "Étude No.1 from Trois nouvelles études",
+      "date": "1800-00-00"
+    },
+    {
+      "qid": "Q9255658",
+      "title": "Étude No.2 from Trois nouvelles études",
+      "date": "1800-00-00"
+    },
+    {
+      "qid": "Q16741308",
+      "title": "Étude No.3 from Trois nouvelles études",
+      "date": "1800-00-00"
+    },
+    {
+      "qid": "Q9255660",
+      "title": "Études, Op. 10",
+      "date": "1800-00-00",
+      "movements": [
+        {
+          "qid": "Q146977"
+        },
+        {
+          "qid": "Q147005"
+        },
+        {
+          "qid": "Q147031"
+        },
+        {
+          "qid": "Q147076"
+        },
+        {
+          "qid": "Q147098"
+        },
+        {
+          "qid": "Q147119"
+        },
+        {
+          "qid": "Q147146"
+        },
+        {
+          "qid": "Q147166"
+        },
+        {
+          "qid": "Q147211"
+        },
+        {
+          "qid": "Q147227"
+        },
+        {
+          "qid": "Q147244"
+        },
+        {
+          "qid": "Q147265"
+        }
+      ]
+    },
+    {
+      "qid": "Q11770508",
+      "title": "Military march",
+      "date": "1817-00-00"
+    },
+    {
+      "qid": "Q16142845",
+      "title": "Polonaise in B-flat major, B.3",
+      "imslp_id": "Polonaise_in_B-flat_major,_B.3_(Chopin,_Frédéric)",
+      "pdf_filename": "PMLP45743-Chopin_Paderewski_No_8_Polonaises_No_12_B_Dur_filter.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp159",
+      "date": "1817-00-00"
+    },
+    {
+      "qid": "Q16142739",
+      "title": "Polonaise in G minor, B.1",
+      "imslp_id": "Polonaise_in_G_minor,_B.1_(Chopin,_Frédéric)",
+      "pdf_filename": "Det-pol.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1817-00-00"
+    },
+    {
+      "qid": "Q136407804",
+      "title": "Variations",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp14",
+      "date": "1818-00-00"
+    },
+    {
+      "qid": "Q130076745",
+      "title": "2 Mazurkas, B. 16",
+      "imslp_id": "2_Mazurkas,_B.16_(Chopin,_Frédéric)",
+      "pdf_filename": "PMLP115348-FChopin_Mazurka_in_G_major__B.16_No.1_BH13.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1820-00-00"
+    },
+    {
+      "qid": "Q1114066",
+      "title": "Introduction and Polonaise brillante in C major, Op. 3",
+      "imslp_id": "Introduction_et_polonaise_brillante,_Op.3_(Chopin,_Frédéric)",
+      "pdf_filename": "PMLP05649-Chopin_-_Introduction_and_Polonaise_Brillante_for_Cello_and_Piano_Op3_score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Introduction_and_Polonaise_brillante_(Chopin)",
+      "wikipedia_extract": "Introduction and Polonaise brillante in C major, Op. 3, is a composition for cello and piano by Frédéric Chopin. It was one of Chopin's first published compositions.",
+      "pageviews_yearly": 5877,
+      "date": "1820-00-00"
+    },
+    {
+      "qid": "Q130229573",
+      "title": "Mazurka in B-flat major",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp121",
+      "date": "1820-00-00"
+    },
+    {
+      "qid": "Q134416662",
+      "title": "Mazurka in B-flat minor, KK Anh. Ib",
+      "date": "1820-00-00"
+    },
+    {
+      "qid": "Q134414231",
+      "title": "Mazurka in D major, B.4, KK Anh. Ia/1",
+      "date": "1820-00-00"
+    },
+    {
+      "qid": "Q130148840",
+      "title": "Mazurka in G major",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp92",
+      "date": "1820-00-00"
+    },
+    {
+      "qid": "Q1746036",
+      "title": "Piano Sonata No. 1 in C minor, Op. 4",
+      "imslp_id": "Piano_Sonata_No.1,_Op.4_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_Piano_Sonata__Op_4.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp25",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_No._1_(Chopin)",
+      "wikipedia_extract": "The Piano Sonata No. 1 in C minor, Op. 4 was written by Frédéric Chopin in 1828. It was written during Chopin's time as a student with Józef Elsner, to whom the sonata is dedicated. Despite being one of his earliest works, the sonata was not published until 1851 by Tobias Haslinger in Vienna, two years after Chopin's death. This sonata is considered to be less refined than the later 2 sonatas, and is thus much less frequently performed and recorded.",
+      "pageviews_yearly": 8831,
+      "date": "1820-00-00"
+    },
+    {
+      "qid": "Q6143523",
+      "title": "Piano Trio",
+      "imslp_id": "Piano_Trio,_Op.8_(Chopin,_Frédéric)",
+      "pdf_filename": "Ch-trio-cello.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp21",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Trio_(Chopin)",
+      "wikipedia_extract": "The Piano Trio, Op. 8, is a composition in G minor for piano, violin and cello by Frédéric Chopin, written in 1828 or 1829 and published in 1829, dedicated to Antoni Radziwiłł. It is a piece of musical juvenilia, written by Chopin when he was still young.",
+      "pageviews_yearly": 5222,
+      "date": "1820-00-00"
+    },
+    {
+      "qid": "Q16142859",
+      "title": "Polonaise in A-flat major, B.5",
+      "imslp_id": "Polonaise_in_A-flat_major,_B.5_(Chopin,_Frédéric)",
+      "pdf_filename": "PMLP45764-Chopin_Paderewski_No_8_Polonaises_No_13_As_Dur_filter.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1821-00-00"
+    },
+    {
+      "qid": "Q133571832",
+      "title": "Mazurka in A minor, B. 8",
+      "date": "1824-00-00"
+    },
+    {
+      "qid": "Q133279673",
+      "title": "Mazurka in A minor, op. 7 no. 2a",
+      "date": "1824-00-00"
+    },
+    {
+      "qid": "Q133448949",
+      "title": "Mazurka in A-flat major, B. 7",
+      "date": "1824-00-00"
+    },
+    {
+      "qid": "Q16142873",
+      "title": "Polonaise in G-sharp minor, B.6",
+      "imslp_id": "Polonaise_in_G-sharp_minor,_B.6_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin-polonaise_op_posthum.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1824-00-00"
+    },
+    {
+      "qid": "Q129511462",
+      "title": "Variations for flute and piano in E major",
+      "imslp_id": "Variations_for_Flute_and_Piano_in_E_major,_B.9_(Chopin,_Frédéric)",
+      "pdf_filename": "PMLP113761-ChopinVariationspourFlutecs.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1824-00-00"
+    },
+    {
+      "qid": "Q11322493",
+      "title": "Variations in E major on the air \"Der Schweizerbub\"",
+      "imslp_id": "Variations_sur_un_air_national_allemand,_B.14_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_variation_on_a_german_air.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp227",
+      "date": "1824-00-00",
+      "movements": [
+        {
+          "qid": "Q214981"
+        }
+      ]
+    },
+    {
+      "qid": "Q135068942",
+      "title": "Waltz in C major, KK Vb/8",
+      "date": "1824-00-00"
+    },
+    {
+      "qid": "Q727987",
+      "title": "Rondo in C minor, op. 1",
+      "imslp_id": "Rondo_in_C_minor,_Op.1_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_Rondo__Op_1.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rondo_in_C_minor_(Chopin)",
+      "wikipedia_extract": "The Rondo in C minor, Op. 1, for solo piano is Chopin's first published work, published in 1825, and dedicated to \"Madame de Linde\", the wife of the headmaster of the Lyceum at which Chopin was studying. The piece contains an \"unorthodox tonal scheme\". The first phase begins in C minor, moving into E major, A♭ major, then back to C minor. The second phase moves to D♭ major, finishing in C minor for a final statement of the theme.",
+      "pageviews_yearly": 5613,
+      "date": "1825-00-00"
+    },
+    {
+      "qid": "Q16142881",
+      "title": "Polonaise in B-flat minor, B.13",
+      "imslp_id": "Polonaise_in_B-flat_minor,_B.13_(Chopin,_Frédéric)",
+      "pdf_filename": "PMLP45768-Chopin_Paderewski_No_8_Polonaises_No_15_b_moll_filter.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp156",
+      "date": "1826-00-00"
+    },
+    {
+      "qid": "Q136455358",
+      "title": "Variations in F major, KK Vb/2",
+      "date": "1826-00-00"
+    },
+    {
+      "qid": "Q135105139",
+      "title": "Waltz in C major, KK Vb/3",
+      "date": "1826-00-00"
+    },
+    {
+      "qid": "Q16765416",
+      "title": "Écossaise No. 1, Op. posth. 72, No. 3/a",
+      "date": "1826-00-00"
+    },
+    {
+      "qid": "Q16765417",
+      "title": "Écossaise No. 2, Op. posth. 72, No. 3/b",
+      "date": "1826-00-00"
+    },
+    {
+      "qid": "Q16765418",
+      "title": "Écossaise No. 3, Op. posth. 72, No. 3/c",
+      "date": "1826-00-00"
+    },
+    {
+      "qid": "Q11289887",
+      "title": "Three Écossaises, Op. posth. 72, No. 3",
+      "imslp_id": "3_Ecossaises,_Op.72_No.3_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_3_Ecossiases__Op_72.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1826-01-01",
+      "movements": [
+        {
+          "qid": "Q16765416"
+        },
+        {
+          "qid": "Q16765417"
+        },
+        {
+          "qid": "Q16765418"
+        }
+      ]
+    },
+    {
+      "qid": "Q16766039",
+      "title": "Variations sur un air national de Moore, B.12a",
+      "imslp_id": "Variations_sur_un_air_national_de_Moore,_B.12a_(Chopin,_Frédéric)",
+      "pdf_filename": "PMLP113722-941_Chopin_Fryderyk_1810-1849_Wariacje_D-dur_na_temat_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1826-01-01"
+    },
+    {
+      "qid": "Q136407816",
+      "title": "Andante dolente in B-flat minor, KK Vb/1",
+      "date": "1827-00-00"
+    },
+    {
+      "qid": "Q5785161",
+      "title": "Contredanse in G-flat major, B. 17",
+      "imslp_id": "Contredanse_in_G-flat_major,_B.17_(Chopin,_Frédéric)",
+      "pdf_filename": "Contredanse.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1827-00-00"
+    },
+    {
+      "qid": "Q136433010",
+      "title": "Ecossaise in E-flat major, KK Ve/3",
+      "date": "1827-00-00"
+    },
+    {
+      "qid": "Q136407833",
+      "title": "Ecossaise, KK Vb/9",
+      "date": "1827-00-00"
+    },
+    {
+      "qid": "Q121747721",
+      "title": "Mazurka in A minor, op. 68 no. 2",
+      "date": "1827-00-00"
+    },
+    {
+      "qid": "Q16739812",
+      "title": "Mazurkas, Op. 68",
+      "imslp_id": "Mazurkas,_Op.68_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_4_Mazurkas__Op_68.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mazurkas%2C_Op._68_(Chopin)",
+      "wikipedia_extract": "The Mazurkas, Op. 68, by Frédéric Chopin are a set of four mazurkas composed between 1827 and 1849 and posthumously published in 1855. A typical performance of all four mazurkas lasts around nine minutes.",
+      "pageviews_yearly": 6377,
+      "date": "1827-00-00",
+      "movements": [
+        {
+          "qid": "Q11340339"
+        },
+        {
+          "qid": "Q121747047"
+        },
+        {
+          "qid": "Q121747721"
+        },
+        {
+          "qid": "Q122587046"
+        }
+      ]
+    },
+    {
+      "qid": "Q16746794",
+      "title": "Polonaise, Op. posth. [71], No. 1 in D minor",
+      "date": "1827-00-00"
+    },
+    {
+      "qid": "Q16746798",
+      "title": "Polonaise, Op. posth. [71], No. 3 in F minor",
+      "date": "1827-00-00"
+    },
+    {
+      "qid": "Q3941124",
+      "title": "Rondo à la mazur in F major, Op. 5",
+      "imslp_id": "Rondo_à_la_mazur,_Op.5_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_Rondo_a_la_Mazur__Op_5.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rondo_%C3%A0_la_mazur",
+      "wikipedia_extract": "\nThe Rondo à la mazur in F major, Op. 5, was written by Polish composer, Frédéric Chopin in 1826, when he was 16, and published in 1828. It was the second of his four rondos, and is dedicated to the Countess Alexandrine de Moriolles, the daughter of the Count de Moriolles, who was the tutor to the adopted son of the Grand Duke Constantine, Governor of Warsaw. It is the only one of the four rondos not written in 2/4 time.",
+      "pageviews_yearly": 3230,
+      "date": "1827-00-00"
+    },
+    {
+      "qid": "Q1113953",
+      "title": "Variations in B-flat major on \"Là ci darem la mano\", op. 2",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp14",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Variations_on_%22L%C3%A0_ci_darem_la_mano%22",
+      "wikipedia_extract": "Frédéric Chopin's Variations on \"Là ci darem la mano\" for piano and orchestra, Op. 2, was written in 1827, when he was aged 17. \"Là ci darem la mano\" is a duet sung by Don Giovanni and Zerlina in act 1 of Mozart's 1787 opera Don Giovanni. In a manuscript of this composition, dedicated to his schoolfriend Tytus Woyciechowski, the latter replied on the title page in written form „J’accepte avec plaisir“. Chopin's work inspired Robert Schumann's famous exclamation: \"Hats off, gentlemen, a genius.\"",
+      "pageviews_yearly": 11164,
+      "date": "1827-00-00"
+    },
+    {
+      "qid": "Q135105158",
+      "title": "Waltz in A-flat major, KK Vb/4",
+      "date": "1827-00-00"
+    },
+    {
+      "qid": "Q16747520",
+      "title": "Waltz No. 17 in E-flat major, Op. posth.",
+      "imslp_id": "Waltz_in_E-flat_major,_B.46_(Chopin,_Frédéric)",
+      "pdf_filename": "PMLP30275-Chopin_Walzer_Henle_Urtext_P1_14_filter.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1827-01-01"
+    },
+    {
+      "qid": "Q9257964",
+      "title": "Fantasy on Polish Airs in A major, op. 13",
+      "imslp_id": "Grande_fantaisie_sur_des_airs_polonais,_Op.13_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_Grande_Fantasie__Op_13.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fantasy_on_Polish_Airs_(Chopin)",
+      "wikipedia_extract": "\nFrédéric Chopin wrote six works for piano and orchestra, including two concertos. The Fantasy on Polish Airs in A major, Op. 13, was the second of his concertante works, written in 1828–30. The piece is also sometimes referred to as Fantasia on Polish Airs, Grande fantaisie or Fantaisie brillante. Chopin himself referred to it as his \"Potpourri on Polish themes\", and kept it in his repertoire for many years.",
+      "pageviews_yearly": 4892,
+      "date": "1828-00-00"
+    },
+    {
+      "qid": "Q16746796",
+      "title": "Polonaise, Op. posth. [71], No. 2 in B-flat major",
+      "date": "1828-00-00"
+    },
+    {
+      "qid": "Q135441099",
+      "title": "Rondo in C major, Op. 73a",
+      "date": "1828-00-00"
+    },
+    {
+      "qid": "Q11350830",
+      "title": "Rondo in C major, Op. posth. 73",
+      "imslp_id": "Rondo_in_C_major,_Op.73_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_Op73_Rondo_in_C_major_for_2-piano.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rondo_in_C_major_(Chopin)",
+      "wikipedia_extract": "The Rondo in C major for two pianos, Op. posth. 73, by Frédéric Chopin, was composed in 1828, when the composer was just 18 years old and a student at the Warsaw Conservatory. A typical performance lasts 8–9 minutes.",
+      "pageviews_yearly": 2275,
+      "date": "1828-00-00"
+    },
+    {
+      "qid": "Q4384879",
+      "title": "Rondo à la Krakowiak in F major, op. 14",
+      "imslp_id": "Krakowiak,_Op.14_(Chopin,_Frédéric)",
+      "pdf_filename": "Krakowiav__rondeau_de_concert__op._14.PDF",
+      "has_pdf": false,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rondo_%C3%A0_la_Krakowiak",
+      "wikipedia_extract": "\nFrédéric Chopin's Rondo à la Krakowiak in F major, Op. 14 is a composition for piano and orchestra. It was written in 1828 and dedicated to Princess Anna Zofia Sapieha, whose mother, Izabela Czartoryska, was influential in shaping the burgeoning Romantic aesthetic in Poland, particularly through the Temple of [Polish] Memory in Puławy.",
+      "pageviews_yearly": 1782,
+      "date": "1828-00-00"
+    },
+    {
+      "qid": "Q135105166",
+      "title": "Waltz in D minor, KK Vb/6",
+      "date": "1828-00-00"
+    },
+    {
+      "qid": "Q210210",
+      "title": "Concerto for Piano and Orchestra no. 2 in F minor, op. 21",
+      "imslp_id": "Piano_Concerto_No.2,_Op.21_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_op.21_Piano_Concerto_No.2_4hands.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp17",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._2_(Chopin)",
+      "wikipedia_extract": "The Piano Concerto No. 2 in F minor, Op. 21, is a piano concerto composed by Frédéric Chopin in fall 1829. Chopin composed the piece before he had finished his formal education, at around 20 years of age. It was first performed on 17 March 1830, in Warsaw, Poland, with the composer as soloist. It was the second of his piano concertos to be published, and so was designated as \"No. 2\", even though it was written first.",
+      "pageviews_yearly": 28340,
+      "date": "1829-00-00"
+    },
+    {
+      "qid": "Q136606315",
+      "title": "Jakież kwiaty",
+      "imslp_id": "Mazur,_B.39_(Chopin,_Frédéric)",
+      "pdf_filename": "PMLP1495141-1000056528.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1829-00-00"
+    },
+    {
+      "qid": "Q121747047",
+      "title": "Mazurka in C major, op. 68 no. 1",
+      "date": "1829-00-00"
+    },
+    {
+      "qid": "Q130273101",
+      "title": "Mazurka in D major, B. 31",
+      "imslp_id": "Mazurka_in_D_major,_B.31_(Chopin,_Frédéric)",
+      "pdf_filename": "PMLP113597-Chopin_Werke_Paderewski_10_Mazurken_240_54_D_Dur_filter.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1829-00-00"
+    },
+    {
+      "qid": "Q122587046",
+      "title": "Mazurka in F major, op. 68 no. 3",
+      "date": "1829-00-00"
+    },
+    {
+      "qid": "Q11431260",
+      "title": "Nocturne No. 19 in E minor, Op. posth. 72, No. 1",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nocturne_in_E_minor%2C_Op._posth._72_(Chopin)",
+      "wikipedia_extract": "The Nocturne in E minor, Op. posth. 72 No. 1, WN 23, was composed by Frédéric Chopin for solo piano in 1826. It was Chopin's first composed nocturne, although it was the nineteenth to be published, in 1855, along with two other early works: a funeral march in C minor and three écossaises. The composition features an unbroken line of quaver triplets in the left hand set against a slow melody of minims, crotchets, quaver duplets and triplets. It consists of 57 bars of common time with the tempo given as Andante,  = 69 bpm.",
+      "pageviews_yearly": 14436,
+      "date": "1829-00-00"
+    },
+    {
+      "qid": "Q16142892",
+      "title": "Polonaise in G-flat major, B. 36",
+      "imslp_id": "Polonaise_in_G-flat_major,_B.36_(Chopin,_Frédéric)",
+      "pdf_filename": "PMLP24486-Chopin_-_Polonaise__B.36__arr._Lodwigowski.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1829-00-00"
+    },
+    {
+      "qid": "Q135105179",
+      "title": "Waltz in A-flat major, KK Vb/5",
+      "date": "1829-00-00"
+    },
+    {
+      "qid": "Q135105186",
+      "title": "Waltz in E-flat major, KK Vb/7",
+      "date": "1829-00-00"
+    },
+    {
+      "qid": "Q147211",
+      "title": "Étude Op. 10, No. 9",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/%C3%89tude_Op._10%2C_No._9_(Chopin)",
+      "wikipedia_extract": "Étude Op. 10, No. 9, in F minor, is a technical study composed by Frédéric Chopin in 1829. This étude is part of the twelve studies which belong to Op. 10. It is widely regarded as a good left hand étude because it promotes flexibility in the wrists and fingers.",
+      "pageviews_yearly": 4380,
+      "date": "1829-00-00"
+    },
+    {
+      "qid": "Q17583604",
+      "title": "Gdzie lubi",
+      "date": "1829-01-01"
+    },
+    {
+      "qid": "Q3492379",
+      "title": "Variations in A major \"Souvenir de Paganini\"",
+      "imslp_id": "Variations_in_A_major,_B.37_(Chopin,_Frédéric)",
+      "pdf_filename": "PMLP72018-PWM-1950-Chopin-Souvenir-de-Paganini.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp229",
+      "date": "1829-01-01"
+    },
+    {
+      "qid": "Q7966838",
+      "title": "Waltz No. 10 in B minor, Op. posth. 69, No. 2",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Waltzes%2C_Op._69_(Chopin)",
+      "wikipedia_extract": "Waltzes, Op. 69 refers to two waltzes for solo piano by Frédéric Chopin, written in 1829 and 1835. Both were published posthumously by Chopin’s friend Julian Fontana in 1855.",
+      "pageviews_yearly": 8838,
+      "date": "1829-01-01"
+    },
+    {
+      "qid": "Q7966840",
+      "title": "Waltz No. 15 in E major, Op. posth.",
+      "imslp_id": "Waltz_in_E_major,_B.44_(Chopin,_Frédéric)",
+      "pdf_filename": "PMLP142854-Chopin_Walzer_Henle_Urtext_P1_12_filter.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Waltz_in_E_major_(Chopin)",
+      "wikipedia_extract": "Frédéric Chopin's Waltz in E major is one of his lesser known waltzes, discovered in his folder containing musical works that he did not want to be published.",
+      "pageviews_yearly": 2502,
+      "date": "1829-01-01"
+    },
+    {
+      "qid": "Q9397723",
+      "title": "Życzenie",
+      "date": "1829-01-01"
+    },
+    {
+      "qid": "Q16746852",
+      "title": "Waltz No. 13 in D-flat major, Op. 70, No. 3",
+      "date": "1829-10-03"
+    },
+    {
+      "qid": "Q325646",
+      "title": "24 Preludes op. 28",
+      "imslp_id": "Preludes,_Op.28_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_Preludes__Op_28.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1830-00-00",
+      "movements": [
+        {
+          "qid": "Q16739689"
+        },
+        {
+          "qid": "Q16739694"
+        },
+        {
+          "qid": "Q3910272"
+        },
+        {
+          "qid": "Q7240056"
+        },
+        {
+          "qid": "Q16739696"
+        },
+        {
+          "qid": "Q3910273"
+        },
+        {
+          "qid": "Q3910274"
+        },
+        {
+          "qid": "Q16739700"
+        },
+        {
+          "qid": "Q16739703"
+        },
+        {
+          "qid": "Q16739706"
+        },
+        {
+          "qid": "Q16739707"
+        },
+        {
+          "qid": "Q16739711"
+        },
+        {
+          "qid": "Q16739713"
+        },
+        {
+          "qid": "Q16739714"
+        },
+        {
+          "qid": "Q1148572"
+        },
+        {
+          "qid": "Q7240055"
+        },
+        {
+          "qid": "Q16739715"
+        },
+        {
+          "qid": "Q16739716"
+        },
+        {
+          "qid": "Q16739717"
+        },
+        {
+          "qid": "Q3910271"
+        },
+        {
+          "qid": "Q16739718"
+        },
+        {
+          "qid": "Q16739719"
+        },
+        {
+          "qid": "Q16739720"
+        },
+        {
+          "qid": "Q16739721"
+        }
+      ]
+    },
+    {
+      "qid": "Q123574667",
+      "title": "Andante spianato",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp19",
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q2846074",
+      "title": "Andante spianato et grande polonaise brillante",
+      "imslp_id": "Andante_spianato_et_Grande_polonaise_brillante,_Op.22_(Chopin,_Frédéric)",
+      "pdf_filename": "Andante_Spianato_and_Grande_Polonaise_Brillante.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp19",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Andante_spianato_et_grande_polonaise_brillante",
+      "wikipedia_extract": "Andante spianato et grande polonaise brillante in E♭ major, Op. 22, was composed by Frédéric Chopin between 1830 and 1834. The Grande polonaise brillante in E♭, set for piano and orchestra, was written first, in 1830–31. In 1834, Chopin wrote an Andante spianato in G, for piano solo, which he added to the start of the piece, and joined the two parts with a fanfare-like sequence. The combined work was published in 1836, and was dedicated to Madame d'Este.",
+      "pageviews_yearly": 20322,
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q162884",
+      "title": "Concerto for Piano and Orchestra no. 1 in E minor, op. 11",
+      "imslp_id": "Piano_Concerto_No.1,_Op.11_(Chopin,_Frédéric)",
+      "pdf_filename": "Balakirev_-_Transcription_of_Romance_from_Chopin_s_Piano_Concerto_No.1.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._1_(Chopin)",
+      "wikipedia_extract": "The Piano Concerto No. 1 in E minor, Op. 11, is a piano concerto written by Frédéric Chopin in 1830, when he was twenty years old. It was first performed on 12 October of that year, at the Teatr Narodowy in Warsaw, Poland, with the composer as soloist, during one of his \"farewell\" concerts before leaving Poland.",
+      "pageviews_yearly": 41620,
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q17583611",
+      "title": "Czary",
+      "imslp_id": "Czary,_B.51_(Chopin,_Frédéric)",
+      "pdf_filename": "PMLP113910-czarychopinlied.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp267",
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q123587323",
+      "title": "Grande polonaise brillante",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp19",
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q28501421",
+      "title": "Mazurka Op. 33 nr. 1",
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q28790898",
+      "title": "Mazurka Op. 33 nr. 2",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp85",
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q28790902",
+      "title": "Mazurka Op. 33 nr. 3",
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q28790911",
+      "title": "Mazurka Op. 33 nr. 4",
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q17586672",
+      "title": "Mazurka no. 1 in F-sharp minor, op. 6 no. 1",
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q17586714",
+      "title": "Mazurka no. 10 in B-flat major, op. 17 no. 1",
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q17586716",
+      "title": "Mazurka no. 11 in E minor, op. 17 no. 2",
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q17586673",
+      "title": "Mazurka no. 2 in C-sharp minor, op. 6 no. 2",
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q17586674",
+      "title": "Mazurka no. 3 in E major, op. 6 no. 3",
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q17586682",
+      "title": "Mazurka no. 5 in B-flat major, op. 7 no. 1",
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q17586684",
+      "title": "Mazurka no. 6 in A minor, op. 7 no. 2",
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q17586685",
+      "title": "Mazurka no. 7 in F minor, op. 7 no. 3",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp69",
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q17586686",
+      "title": "Mazurka no. 8 in A-flat major, op. 7 no. 4",
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q17586688",
+      "title": "Mazurka no. 9 in C major, op. 7 no. 5",
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q3070647",
+      "title": "Mazurkas, Op. 17",
+      "imslp_id": "Mazurkas,_Op.17_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_4_Mazurkas__Op_17.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp75",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mazurkas%2C_Op._17_(Chopin)",
+      "wikipedia_extract": "Mazurkas, Op. 17 is a set of four mazurkas for solo piano by Frédéric Chopin, composed in 1832–1833 and published in 1834. The set was dedicated to Lina Freppa.",
+      "pageviews_yearly": 9962,
+      "date": "1830-00-00",
+      "movements": [
+        {
+          "qid": "Q17586714"
+        },
+        {
+          "qid": "Q17586716"
+        },
+        {
+          "qid": "Q17586717"
+        },
+        {
+          "qid": "Q17586720"
+        }
+      ]
+    },
+    {
+      "qid": "Q6799054",
+      "title": "Mazurkas, Op. 30",
+      "imslp_id": "Mazurkas,_Op.30_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_4_Mazurkas__Op_30.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mazurkas%2C_Op._30_(Chopin)",
+      "wikipedia_extract": "The Op. 30 mazurkas, by Frédéric Chopin, are a set of 4 mazurkas written and published in 1837:No. 1, in C minor\nNo. 2, in B minor \nNo. 3, in D♭ major\nNo. 4, in C♯ minor",
+      "pageviews_yearly": 2858,
+      "date": "1830-00-00",
+      "movements": [
+        {
+          "qid": "Q17586941"
+        },
+        {
+          "qid": "Q17586943"
+        },
+        {
+          "qid": "Q17586946"
+        },
+        {
+          "qid": "Q17586948"
+        }
+      ]
+    },
+    {
+      "qid": "Q6149400",
+      "title": "Mazurkas, Op. 33",
+      "imslp_id": "Mazurkas,_Op.33_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_4_Mazurkas__Op_33.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp85",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mazurkas%2C_Op._33_(Chopin)",
+      "wikipedia_extract": "Mazurkas, Op. 33, are a set of four mazurkas for piano by Frédéric Chopin, composed and published in 1838. The pieces were dedicated to Countess Róża Mostowska.",
+      "pageviews_yearly": 5293,
+      "date": "1830-00-00",
+      "movements": [
+        {
+          "qid": "Q28501421"
+        },
+        {
+          "qid": "Q28790898"
+        },
+        {
+          "qid": "Q28790902"
+        },
+        {
+          "qid": "Q28790911"
+        }
+      ]
+    },
+    {
+      "qid": "Q6150184",
+      "title": "Mazurkas, Op. 6",
+      "imslp_id": "Mazurkas,_Op.6_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_4_Mazurkas__Op_6.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mazurkas%2C_Op._6_(Chopin)",
+      "wikipedia_extract": "The Mazurkas, Op. 6 are Frédéric Chopin's first set of mazurkas published during his lifetime. They were composed in 1830–1831 and were published in 1832. The set was dedicated to Countess Pauline Plater.",
+      "pageviews_yearly": 4918,
+      "date": "1830-00-00",
+      "movements": [
+        {
+          "qid": "Q17586672"
+        },
+        {
+          "qid": "Q17586673"
+        },
+        {
+          "qid": "Q17586674"
+        },
+        {
+          "qid": "Q17586676"
+        }
+      ]
+    },
+    {
+      "qid": "Q6799062",
+      "title": "Mazurkas, Op. 7",
+      "imslp_id": "Mazurkas,_Op.7_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_5_Mazurkas__Op_7.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp69",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mazurkas%2C_Op._7_(Chopin)",
+      "wikipedia_extract": "The Mazurkas, Op. 7 are a set of five mazurkas by Frédéric Chopin. The mazurkas were mostly written in 1830–1831 and were published in 1832 by Maurice Schlesinger. This is the only set of Chopin's mazurkas that contains five pieces; all the composer's other published sets consist of either three or four mazurkas each. It is dedicated to Paul Emile Johns, a German–American pianist from New Orleans who met Chopin in 1832 in Paris.",
+      "pageviews_yearly": 8197,
+      "date": "1830-00-00",
+      "movements": [
+        {
+          "qid": "Q17586682"
+        },
+        {
+          "qid": "Q17586684"
+        },
+        {
+          "qid": "Q17586685"
+        },
+        {
+          "qid": "Q17586686"
+        },
+        {
+          "qid": "Q17586688"
+        },
+        {
+          "qid": "Q133279673"
+        }
+      ]
+    },
+    {
+      "qid": "Q16739831",
+      "title": "Nocturne No. 2 in E-flat major, Op. 9, No. 2",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp126",
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q16142781",
+      "title": "Nocturne No. 3 in B major, Op. 9, No. 3",
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q1060858",
+      "title": "Nocturne No. 4 in F major, Op. 15, No. 1",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp128",
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q3878967",
+      "title": "Nocturne No. 5 in F-sharp major, Op. 15, No. 2",
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q16740894",
+      "title": "Nocturne No. 9 in B major, Op. 32, No. 1",
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q11431255",
+      "title": "Nocturne No.10 in A-flat major, Op.32, No.2",
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q1632466",
+      "title": "Nocturnes, Op. 15",
+      "imslp_id": "Nocturnes,_Op.15_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_3_Nocturnes__Op_15.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp128",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nocturnes%2C_Op._15_(Chopin)",
+      "wikipedia_extract": "The Nocturnes, Op. 15 are a set of three nocturnes for solo piano written by Frédéric Chopin between 1830 and 1833. The work was published in January 1834, and was dedicated to Ferdinand Hiller. These nocturnes display a more personal approach to the nocturne form than that of the earlier Opus 9. The melodies and emotional depth of these nocturnes have thus been thought of as more \"Chopinesque.\"",
+      "pageviews_yearly": 13732,
+      "date": "1830-00-00",
+      "movements": [
+        {
+          "qid": "Q1060858"
+        },
+        {
+          "qid": "Q3878967"
+        },
+        {
+          "qid": "Q16738512"
+        }
+      ]
+    },
+    {
+      "qid": "Q7046555",
+      "title": "Nocturnes, Op. 37",
+      "imslp_id": "Nocturnes,_Op.37_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_2_Nocturnes__Op_37.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nocturnes%2C_Op._37_(Chopin)",
+      "wikipedia_extract": "The Nocturnes, Op. 37 are a set of two nocturnes for solo piano written by Frédéric Chopin in 1839 during the time of his stay with author George Sand in Majorca and published in 1840. Unusually, neither piece carries a dedication.",
+      "pageviews_yearly": 8592,
+      "date": "1830-00-00",
+      "movements": [
+        {
+          "qid": "Q11431256"
+        },
+        {
+          "qid": "Q16739817"
+        }
+      ]
+    },
+    {
+      "qid": "Q16766403",
+      "title": "Polonaise in C minor, Op. 40, No. 2",
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q3087780",
+      "title": "Polonaises, Op. 40",
+      "imslp_id": "Polonaises,_Op.40_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_2_Polonaises__Op_40.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp148",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Polonaises_Op._40_(Chopin)",
+      "wikipedia_extract": "The twin Op. 40 Polonaises of the Polonaise in A major, Op. 40, No. 1 and the Polonaise in C minor, Op. 40, No. 2 were composed by Frédéric Chopin in 1838. The one in A major he originally intended to dedicate to Tytus Woyciechowski, but in the end Chopin placed Julian Fontana’s name as the dedicatee on both works.",
+      "pageviews_yearly": 11941,
+      "date": "1830-00-00",
+      "movements": [
+        {
+          "qid": "Q11637459"
+        },
+        {
+          "qid": "Q16766403"
+        }
+      ]
+    },
+    {
+      "qid": "Q17583608",
+      "title": "Poseł",
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q17583616",
+      "title": "Precz z moich oczu",
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q16739713",
+      "title": "Prelude no. 13 in F-sharp major, Op. 28",
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q16739714",
+      "title": "Prelude no. 14 in E-flat minor, Op. 28",
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q7240055",
+      "title": "Prelude no. 16 in B-flat minor, Op. 28",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Prelude%2C_Op._28%2C_No._16_(Chopin)",
+      "wikipedia_extract": "The Prelude Op. 28, No. 16, the \"Hades\" prelude, by Frédéric Chopin, is considered by many to be the most difficult of the Chopin preludes. Hans von Bülow dubbed this prelude \"Hades.\" It was composed between 1836 and 1839, published in 1839 and dedicated to Camille Pleyel who commissioned the opus 28 preludes for 2,000 francs.",
+      "pageviews_yearly": 4331,
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q16739717",
+      "title": "Prelude no. 19 in E-flat major, Op. 28",
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q16739718",
+      "title": "Prelude no. 21 in B-flat major, Op. 28",
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q16739719",
+      "title": "Prelude no. 22 in G minor, Op. 28",
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q16739720",
+      "title": "Prelude no. 23 in F major, Op. 28,",
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q3910271",
+      "title": "Prélude No. 20 in C minor, Op. 28",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Prelude%2C_Op._28%2C_No._20_(Chopin)",
+      "wikipedia_extract": "The Prelude Op. 28, No. 20, in C minor by Frédéric Chopin was dubbed the \"Funeral March\" by Hans von Bülow but is commonly known as the \"Chord Prelude\" due to its slow progression of quarter note chords. It was written between 1831 and 1839.",
+      "pageviews_yearly": 15600,
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q16739706",
+      "title": "Prélude no. 10 in C-sharp minor, op. 28",
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q16739707",
+      "title": "Prélude no. 11 in B major, op. 28",
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q16739711",
+      "title": "Prélude no. 12 in G-sharp minor, op. 28",
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q3910272",
+      "title": "Prélude no. 3 in G major, op. 28",
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q16739696",
+      "title": "Prélude no. 5 in D major, op. 28",
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q3910273",
+      "title": "Prélude no. 6 in B minor, op. 28",
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q16739700",
+      "title": "Prélude no. 8 in F-sharp minor, op. 28",
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q16739703",
+      "title": "Prélude no. 9 in E major, op. 28",
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q16747456",
+      "title": "Waltz No. 16 in A-flat major, Op. posth.",
+      "imslp_id": "Waltz_in_A-flat_major,_B.21_(Chopin,_Frédéric)",
+      "pdf_filename": "PMLP30273-Chopin_Walzer_Henle_Urtext_P1_13_filter.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q17583606",
+      "title": "Wojak",
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q147519",
+      "title": "Étude Op. 25, No. 10",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/%C3%89tude_Op._25%2C_No._10_(Chopin)",
+      "wikipedia_extract": "Étude Op. 25, No. 10, in B minor is a solo piano study composed by Frédéric Chopin in 1835.",
+      "pageviews_yearly": 5600,
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q147383",
+      "title": "Étude Op. 25, No. 4",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/%C3%89tude_Op._25%2C_No._4_(Chopin)",
+      "wikipedia_extract": "Étude Op. 25, No. 4 in A minor is a technical study composed by Frédéric Chopin. It is marked Agitato at the head. This piece is like a polka. The technique explored in this piece is the performance of off-beat staccato chords set against a regular on-beat bass. This is an example of syncopation. The left hand leaps intervals of up to a tenth between the bass and the lowest note of the following chord : this requires a very strong left hand 5th finger. Very often, the performer is required to hold the uppermost note of the right hand in legato while continuing to play the rest of the chord in that hand as staccato: this requires a very strong right hand 5th finger. The ending is marked Lento and pianissimo and the chords are all on beat in stark contrast with the rest of the piece.",
+      "pageviews_yearly": 4026,
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q147424",
+      "title": "Étude Op. 25, No. 5",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/%C3%89tude_Op._25%2C_No._5_(Chopin)",
+      "wikipedia_extract": "Étude Op. 25, No. 5 in E minor, is a technical study composed by Frédéric Chopin in 1837. Marking a serious departure in the expected technique developed previously, Chopin wrote this étude with a series of quick, dissonant minor seconds. The effect has earned the étude the nickname \"Wrong Note\".",
+      "pageviews_yearly": 9656,
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q147445",
+      "title": "Étude Op. 25, No. 6",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/%C3%89tude_Op._25%2C_No._6_(Chopin)",
+      "wikipedia_extract": "Étude Op. 25, No. 6, in G-sharp minor, is a technical study composed by Frédéric Chopin focusing on thirds, trilling them at a high speed. Also called the Double Thirds Étude, it is considered one of the hardest of Chopin's 24 Études, ranking the highest level of difficulty according to the Henle difficulty rankings.",
+      "pageviews_yearly": 12444,
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q147474",
+      "title": "Étude Op. 25, No. 8",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/%C3%89tude_Op._25%2C_No._8_(Chopin)",
+      "wikipedia_extract": "Étude Op. 25, No. 8, in D-flat major, is a technical piano study composed by Frédéric Chopin.",
+      "pageviews_yearly": 3226,
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q147508",
+      "title": "Étude Op. 25, No. 9",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/%C3%89tude_Op._25%2C_No._9_(Chopin)",
+      "wikipedia_extract": "Étude Op. 25, No. 9 in G-flat major, known as the Butterfly étude, is an étude by Frédéric Chopin. The title Butterfly was not given by Chopin ; however Arthur Friedheim said, \"while some titles were superfluous, this one is inadequate.\"",
+      "pageviews_yearly": 6068,
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q16741233",
+      "title": "Études, Op. 25",
+      "date": "1830-00-00",
+      "movements": [
+        {
+          "qid": "Q147324"
+        },
+        {
+          "qid": "Q147343"
+        },
+        {
+          "qid": "Q147363"
+        },
+        {
+          "qid": "Q147383"
+        },
+        {
+          "qid": "Q147424"
+        },
+        {
+          "qid": "Q147445"
+        },
+        {
+          "qid": "Q147458"
+        },
+        {
+          "qid": "Q147474"
+        },
+        {
+          "qid": "Q147508"
+        },
+        {
+          "qid": "Q147519"
+        },
+        {
+          "qid": "Q147543"
+        },
+        {
+          "qid": "Q147563"
+        }
+      ]
+    },
+    {
+      "qid": "Q4008431",
+      "title": "Waltz No. 14 in E minor, Op. posth.",
+      "imslp_id": "Waltz_in_E_minor,_B.56_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_Waltzes__ph.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Waltz_in_E_minor_(Chopin)",
+      "wikipedia_extract": "The Waltz in E minor is a waltz for solo piano by Frédéric Chopin. It was composed circa 1830 and published in May 1851.",
+      "pageviews_yearly": 8079,
+      "date": "1830-01-01"
+    },
+    {
+      "qid": "Q17583518",
+      "title": "Hulanka",
+      "date": "1830-08-01"
+    },
+    {
+      "qid": "Q5594520",
+      "title": "Grand Duo concertant in E major, B. 70",
+      "imslp_id": "Grand_duo_concertant_sur_des_thèmes_de_Robert_le_diable,_B.70_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_Duo_Vc_Pno.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Grand_Duo_concertant_(Chopin_and_Franchomme)",
+      "wikipedia_extract": "The Grand Duo concertant in E major, B. 70 is a composition for piano and cello, written jointly by Frédéric Chopin and Auguste Franchomme. It was written in 1832 and published in 1833.",
+      "pageviews_yearly": 3629,
+      "date": "1831-00-00"
+    },
+    {
+      "qid": "Q17583607",
+      "title": "Narzeczony",
+      "date": "1831-00-00"
+    },
+    {
+      "qid": "Q17583614",
+      "title": "Piosnka litewska",
+      "date": "1831-00-00"
+    },
+    {
+      "qid": "Q134838171",
+      "title": "Polonaise, KK Vc/1",
+      "date": "1831-00-00"
+    },
+    {
+      "qid": "Q17583517",
+      "title": "Smutna rzeka",
+      "date": "1831-01-01"
+    },
+    {
+      "qid": "Q130405981",
+      "title": "Mazurka in D major, B.71",
+      "imslp_id": "Mazurka_in_D_major,_B.71_(Chopin,_Frédéric)",
+      "pdf_filename": "PMLP199585-Chopin_Werke_Paderewski_10_Mazurken_240_55_D_Dur_filter.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1832-00-00"
+    },
+    {
+      "qid": "Q17586676",
+      "title": "Mazurka no. 4 in E-flat minor, op. 6 no. 4",
+      "date": "1832-00-00"
+    },
+    {
+      "qid": "Q134399852",
+      "title": "Mazurka, KK Vc/2",
+      "date": "1832-00-00"
+    },
+    {
+      "qid": "Q1140459",
+      "title": "Nocturnes, Op. 9",
+      "imslp_id": "Nocturnes,_Op.9_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_3_Nocturnes__Op_9.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp126",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nocturnes%2C_Op._9_(Chopin)",
+      "wikipedia_extract": "The Nocturnes, Op. 9 are a set of three nocturnes for solo piano written by Frédéric Chopin between 1831 and 1832, published in 1832, and dedicated to Madame Marie Pleyel. These were Chopin's first published set of nocturnes. The second nocturne of the work is often regarded as Chopin's most famous piece.",
+      "pageviews_yearly": 93439,
+      "date": "1832-00-00",
+      "movements": [
+        {
+          "qid": "Q16142728"
+        },
+        {
+          "qid": "Q16739831"
+        },
+        {
+          "qid": "Q16142781"
+        }
+      ]
+    },
+    {
+      "qid": "Q134838253",
+      "title": "Polonaise, KK Vc/3",
+      "date": "1832-00-00"
+    },
+    {
+      "qid": "Q7365575",
+      "title": "Rondo in E-flat major op. 16",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rondo_in_E-flat_major_(Chopin)",
+      "wikipedia_extract": "The Rondo in E-flat major, Op. 16, sometimes called Introduction and Rondo, is a classical composition by Frédéric Chopin, written in 1833. It was dedicated to his pupil Caroline Hartmann.",
+      "pageviews_yearly": 2888,
+      "date": "1832-00-00"
+    },
+    {
+      "qid": "Q130418845",
+      "title": "Mazurka in B-flat major, B.73",
+      "imslp_id": "Mazurka_in_B-flat_major_'Wołowska',_B.73_(Chopin,_Frédéric)",
+      "pdf_filename": "PMLP162187-Chopin_Werke_Paderewski_10_Mazurken_240_56_B_Dur_filter.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp121",
+      "date": "1832-06-24"
+    },
+    {
+      "qid": "Q134399905",
+      "title": "Mazurka, KK Ve/7",
+      "date": "1832-09-14"
+    },
+    {
+      "qid": "Q2909545",
+      "title": "Bolero",
+      "imslp_id": "Bolero,_Op.19_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_Bolero__Op_19.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp232",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bol%C3%A9ro_(Chopin)",
+      "wikipedia_extract": "The Boléro, Op. 19, is a short piano work written by Frédéric Chopin in 1833 and published in 1834. It is one of his lesser-known piano pieces, although it has been recorded numerous times.",
+      "pageviews_yearly": 5721,
+      "date": "1833-00-00"
+    },
+    {
+      "qid": "Q2918877",
+      "title": "Grande valse brillante in E-flat major",
+      "imslp_id": "Grande_valse_brillante,_Op.18_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_Grand_Waltz__Op_18.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp202",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Grande_valse_brillante_in_E-flat_major_(Chopin)",
+      "wikipedia_extract": "The Grande valse brillante in E♭ major, Op. 18, was composed by Frédéric Chopin in 1833 and published in 1834. Chopin dedicated it to his pupil, Laura Horsford. This was his first published waltz composition for solo piano, although prior to 1834 he had written at least sixteen waltzes that were either destroyed or eventually published posthumously.",
+      "pageviews_yearly": 14133,
+      "date": "1833-00-00"
+    },
+    {
+      "qid": "Q130468745",
+      "title": "Mazurka in C major, B.82",
+      "imslp_id": "Mazurka_in_C_major,_B.82_(Chopin,_Frédéric)",
+      "pdf_filename": "Mazurka_posthum_p_2_3.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1833-00-00"
+    },
+    {
+      "qid": "Q17586717",
+      "title": "Mazurka no. 12 in A-flat major, op. 17 no. 3",
+      "date": "1833-00-00"
+    },
+    {
+      "qid": "Q17586720",
+      "title": "Mazurka no. 13 in A minor, op. 17 no. 4",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp75",
+      "date": "1833-00-00"
+    },
+    {
+      "qid": "Q17586932",
+      "title": "Mazurka no. 14 in G minor, op. 24 no. 1",
+      "date": "1833-00-00"
+    },
+    {
+      "qid": "Q17586934",
+      "title": "Mazurka no. 15 in C major, op. 24 no. 2",
+      "date": "1833-00-00"
+    },
+    {
+      "qid": "Q17586936",
+      "title": "Mazurka no. 16 in A-flat major, op. 24 no. 3",
+      "date": "1833-00-00"
+    },
+    {
+      "qid": "Q17586939",
+      "title": "Mazurka no. 17 in B-flat minor, op. 24 no. 4",
+      "date": "1833-00-00"
+    },
+    {
+      "qid": "Q11340333",
+      "title": "Mazurkas, Op. 24",
+      "imslp_id": "Mazurkas,_Op.24_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_4_Mazurkas__Op_24.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mazurkas%2C_Op._24_(Chopin)",
+      "wikipedia_extract": "The Op. 24 mazurkas by Frédéric Chopin were published in 1835, when the composer was 25 years old.",
+      "pageviews_yearly": 4494,
+      "date": "1833-00-00",
+      "movements": [
+        {
+          "qid": "Q17586932"
+        },
+        {
+          "qid": "Q17586934"
+        },
+        {
+          "qid": "Q17586936"
+        },
+        {
+          "qid": "Q17586939"
+        }
+      ]
+    },
+    {
+      "qid": "Q16738512",
+      "title": "Nocturne No. 6 in G minor, Op. 15, No. 3",
+      "date": "1833-00-00"
+    },
+    {
+      "qid": "Q11620141",
+      "title": "Variations brillantes, Op.12",
+      "imslp_id": "Variations_brillantes,_Op.12_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_Variations_Brillantes__Op_12.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1833-01-01"
+    },
+    {
+      "qid": "Q16746850",
+      "title": "Waltz No. 11 in G-flat major, Op. 70, No. 1",
+      "date": "1833-01-01"
+    },
+    {
+      "qid": "Q16765357",
+      "title": "Cantabile in B-flat major, B.84",
+      "imslp_id": "Cantabile_in_B-flat_major,_B.84_(Chopin,_Frédéric)",
+      "pdf_filename": "Cantabile.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp233",
+      "date": "1834-00-00"
+    },
+    {
+      "qid": "Q16766398",
+      "title": "Polonaise, Op. 26, No. 2 in E-flat minor",
+      "date": "1834-00-00"
+    },
+    {
+      "qid": "Q16746778",
+      "title": "Prelude [No. 26] \"Presto con leggierezza\" in A-flat major",
+      "imslp_id": "Prelude_in_A-flat_major,_B.86_(Chopin,_Frédéric)",
+      "pdf_filename": "PMLP28254-chopin_prelude_aflat_posth.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Prelude_No._26_(Chopin)",
+      "wikipedia_extract": "The Prelude in A♭ major, B. 86, WN 44, was composed by Frédéric Chopin as a gift to a friend, Swiss pianist Pierre Etienne Wolff, professor of piano at the Geneva Conservatory. The composition, which predates the first of the Preludes, Op. 28, ended up in the possession of the family of one of Wolff's students and was not publicly performed until 1919, following the composition's first publication in a Swiss arts magazine in 1918.",
+      "pageviews_yearly": 2773,
+      "date": "1834-00-00"
+    },
+    {
+      "qid": "Q147543",
+      "title": "Étude Op. 25, No. 11",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/%C3%89tude_Op._25%2C_No._11_(Chopin)",
+      "wikipedia_extract": "Étude Op. 25, No. 11 in A minor, often referred to as Winter Wind in English, is a solo piano technical etude composed by Frédéric Chopin in 1836. It was first published together with all études of Opus 25 in 1837, in France, Germany, and England. The first French edition indicates a common time signature, but the manuscript and the first German edition both feature cut time. The first four bars that characterize the melody were added just before publication at the advice of Charles A. Hoffmann, a friend. Winter Wind is considered one of the most difficult of Chopin's 24 études.",
+      "pageviews_yearly": 30995,
+      "date": "1834-00-00"
+    },
+    {
+      "qid": "Q123207809",
+      "title": "Mazurka in A-flat major, B. 85",
+      "imslp_id": "Mazurka_in_A-flat_major,_B.85_(Chopin,_Frédéric)",
+      "pdf_filename": "PMLP199598-Chopin_F_-_Mazurek_As_dur.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1834-07-00"
+    },
+    {
+      "qid": "Q134399917",
+      "title": "Mazurka in B-flat major, KK Ve/4",
+      "date": "1835-00-00"
+    },
+    {
+      "qid": "Q122599142",
+      "title": "Mazurka in C major, op. 67 no. 3",
+      "date": "1835-00-00"
+    },
+    {
+      "qid": "Q122590278",
+      "title": "Mazurka in G major, op. 67 no. 1",
+      "date": "1835-00-00"
+    },
+    {
+      "qid": "Q6799060",
+      "title": "Mazurkas, Op. 67",
+      "imslp_id": "Mazurkas,_Op.67_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_4_Mazurkas__Op_67.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mazurkas%2C_Op._67_(Chopin)",
+      "wikipedia_extract": "The Op. 67 mazurkas by Frédéric Chopin are a set of four mazurkas composed between 1835 and 1849 and published posthumously in 1855. A typical performance of all four lasts around seven minutes. They comprise:Mazurka in G major, Op. 67, No. 1 (1835)\nMazurka in G minor, Op. 67, No. 2 \nMazurka in C major, Op. 67, No. 3 (1835)\nMazurka in A minor, Op. 67, No. 4 ",
+      "pageviews_yearly": 4419,
+      "date": "1835-00-00",
+      "movements": [
+        {
+          "qid": "Q122590278"
+        },
+        {
+          "qid": "Q122593250"
+        },
+        {
+          "qid": "Q122599142"
+        },
+        {
+          "qid": "Q122599324"
+        }
+      ]
+    },
+    {
+      "qid": "Q16142805",
+      "title": "Nocturne No. 7 in C-sharp minor, Op. 27, No. 1",
+      "date": "1835-00-00"
+    },
+    {
+      "qid": "Q16740882",
+      "title": "Nocturne No. 8 in D-flat major, Op. 27, No. 2",
+      "date": "1835-00-00"
+    },
+    {
+      "qid": "Q1057403",
+      "title": "Nocturnes, Op. 27",
+      "imslp_id": "Nocturnes,_Op.27_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_2_Nocturnes__Op_27.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nocturnes%2C_Op._27_(Chopin)",
+      "wikipedia_extract": "The Nocturnes, Op. 27 are a set of two nocturnes for solo piano composed by Frédéric Chopin. The pieces were composed in 1836 and published in 1837. Both nocturnes in this opus are dedicated to Countess d'Appony.",
+      "pageviews_yearly": 18998,
+      "date": "1835-00-00",
+      "movements": [
+        {
+          "qid": "Q16142805"
+        },
+        {
+          "qid": "Q16740882"
+        }
+      ]
+    },
+    {
+      "qid": "Q11339374",
+      "title": "Polonaise, Op. 26, No. 1 in C-sharp minor",
+      "date": "1835-00-00"
+    },
+    {
+      "qid": "Q3071076",
+      "title": "Polonaises, Op. 26",
+      "imslp_id": "Polonaises,_Op.26_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_2_Polonaises__Op_26.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Polonaises%2C_Op._26_(Chopin)",
+      "wikipedia_extract": "The Polonaise in C♯ minor, Op. 26 No. 1 and the Polonaise in E♭ minor, Op. 26 No. 2 were composed by Frédéric Chopin in 1836. Both of them were dedicated to Josef Dessauer. These were his first published polonaises.",
+      "pageviews_yearly": 5452,
+      "date": "1835-00-00",
+      "movements": [
+        {
+          "qid": "Q11339374"
+        },
+        {
+          "qid": "Q16766398"
+        }
+      ]
+    },
+    {
+      "qid": "Q1636510",
+      "title": "Scherzo No. 1 in B Minor, Op. 20",
+      "imslp_id": "Scherzo_No.1,_Op.20_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_Scherzo_1.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Scherzo_No._1_(Chopin)",
+      "wikipedia_extract": "The Scherzo No. 1 in B minor, Op. 20, is a composition for solo piano written by Frédéric Chopin and dedicated to Thomas Albrecht. As to the genesis of this Scherzo, little is known beyond the 1835 publication date, though it is presumed to have been completed around 1833. The piece begins with the tempo marking Presto con fuoco. The piece is dark, dramatic, and lively. It is complex and considered to be one of Chopin's more difficult works.",
+      "pageviews_yearly": 10242,
+      "date": "1835-00-00"
+    },
+    {
+      "qid": "Q16747405",
+      "title": "Waltz No. 2 in A-flat major, Op. 34 No. 1",
+      "date": "1835-01-01"
+    },
+    {
+      "qid": "Q4008434",
+      "title": "Waltz No. 9 in A-flat major, Op. posth. 69, No. 1",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Waltzes%2C_Op._69_(Chopin)",
+      "wikipedia_extract": "Waltzes, Op. 69 refers to two waltzes for solo piano by Frédéric Chopin, written in 1829 and 1835. Both were published posthumously by Chopin’s friend Julian Fontana in 1855.",
+      "pageviews_yearly": 4045,
+      "date": "1835-09-24"
+    },
+    {
+      "qid": "Q17583612",
+      "title": "Pierścień",
+      "date": "1836-00-00"
+    },
+    {
+      "qid": "Q16739715",
+      "title": "Prelude no. 17 in A-flat major, Op. 28",
+      "date": "1836-00-00"
+    },
+    {
+      "qid": "Q3910274",
+      "title": "Prélude no. 7 in A major, op. 28",
+      "date": "1836-00-00"
+    },
+    {
+      "qid": "Q147563",
+      "title": "Étude Op. 25, No. 12",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/%C3%89tude_Op._25%2C_No._12_(Chopin)",
+      "wikipedia_extract": "Étude Op. 25, No. 12 in C minor is one of Frédéric Chopin's formal studies for the piano, opus 25, dedicated À Madame la Comtesse d'Agoult. It was first published in 1837 in French, German, and English. In the first French edition, the time signature is 4/4, but most recent editions of this piece follow the manuscript and German editions, which indicate cut time. This work is a series of rising and falling arpeggios in various chord progressions from C minor. It is sometimes nicknamed the \"Ocean\" étude.",
+      "pageviews_yearly": 8701,
+      "date": "1836-00-00"
+    },
+    {
+      "qid": "Q147363",
+      "title": "Étude Op. 25, No. 3",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/%C3%89tude_Op._25%2C_No._3_(Chopin)",
+      "wikipedia_extract": "Étude Op. 25, No. 3, in F major, is a technical study composed by Frédéric Chopin in 1836. The romanticized nickname of this piece is \"The Horseman\" or \"The Knight\", probably because of its \"galloping\" style. It is mostly a study in rhythm. The study has four different voices that must be brought out by the performer. The technical figure consists of lateral movements of the hand that must be played with flourish and refinement.",
+      "pageviews_yearly": 2689,
+      "date": "1836-00-00"
+    },
+    {
+      "qid": "Q147458",
+      "title": "Étude Op. 25, No. 7",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/%C3%89tude_Op._25%2C_No._7_(Chopin)",
+      "wikipedia_extract": "Étude Op. 25, No. 7 in C-sharp minor is a solo piano technical study composed by Frédéric Chopin in 1834. Markedly different from Chopin's overall scheme of technical virtuosity, this étude focuses instead on perfect sound and phrasing, particularly for the left hand.",
+      "pageviews_yearly": 6210,
+      "date": "1836-00-00"
+    },
+    {
+      "qid": "Q17583613",
+      "title": "Śpiew z mogiły",
+      "date": "1836-00-00"
+    },
+    {
+      "qid": "Q147343",
+      "title": "Étude Op. 25, No. 2",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/%C3%89tude_Op._25%2C_No._2_(Chopin)",
+      "wikipedia_extract": "Étude Op. 25, No. 2, in F minor, is an étude composed by Frédéric Chopin. It was marked 'Presto'. It was preceded by a relative major key. It is based on a polyrhythm, with pairs of eighth-note (quaver) triplets in the right hand against quarter-note (crotchet) triplets in the left.",
+      "pageviews_yearly": 4951,
+      "date": "1836-01-00"
+    },
+    {
+      "qid": "Q147324",
+      "title": "Étude Op. 25, No. 1",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/%C3%89tude_Op._25%2C_No._1_(Chopin)",
+      "wikipedia_extract": "Étude Op. 25, No. 1 in A-flat major  is a solo piano work composed by Frédéric Chopin in 1836, and published in 1837. The work consists entirely of rapid arpeggios and harmonic modulations based on A-flat major.",
+      "pageviews_yearly": 11780,
+      "date": "1836-09-00"
+    },
+    {
+      "qid": "Q9008175",
+      "title": "Impromptu no. 1 in A-flat major, op. 29",
+      "imslp_id": "Impromptu_No.1,_Op.29_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_Impromptu_1.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Impromptu_No._1_(Chopin)",
+      "wikipedia_extract": "Frédéric Chopin's Impromptu No. 1 in A♭ major, Op. 29, was composed in 1837.",
+      "pageviews_yearly": 4809,
+      "date": "1837-00-00"
+    },
+    {
+      "qid": "Q17586941",
+      "title": "Mazurka no. 18 in C minor, op. 30 no. 1",
+      "date": "1837-00-00"
+    },
+    {
+      "qid": "Q17586943",
+      "title": "Mazurka no. 19 in B minor, op. 30 no. 2",
+      "date": "1837-00-00"
+    },
+    {
+      "qid": "Q17586946",
+      "title": "Mazurka no. 20 in D-flat major, op. 30 no. 3",
+      "date": "1837-00-00"
+    },
+    {
+      "qid": "Q17586948",
+      "title": "Mazurka no. 21 in C-sharp minor, op. 30 no. 4",
+      "date": "1837-00-00"
+    },
+    {
+      "qid": "Q17583618",
+      "title": "Moja pieszczotka",
+      "date": "1837-00-00"
+    },
+    {
+      "qid": "Q900847",
+      "title": "Nocturnes, Op. 32",
+      "imslp_id": "Nocturnes,_Op.32_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_2_Nocturnes__Op_32.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nocturnes%2C_Op._32_(Chopin)",
+      "wikipedia_extract": "The Nocturnes, Op. 32 is a set of two nocturnes for solo piano written and published by Frédéric Chopin in 1837. The nocturnes are dedicated to Madame Camile de Billing, and were his ninth and tenth nocturnes published.",
+      "pageviews_yearly": 8038,
+      "date": "1837-00-00",
+      "movements": [
+        {
+          "qid": "Q16740894"
+        },
+        {
+          "qid": "Q11431255"
+        }
+      ]
+    },
+    {
+      "qid": "Q3267212",
+      "title": "Scherzo no. 2 in B-flat minor, op. 31",
+      "imslp_id": "Scherzo_No.2,_Op.31_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_Scherzo_2.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Scherzo_No._2_(Chopin)",
+      "wikipedia_extract": "The Scherzo No. 2 in B♭ minor, Op. 31 is a scherzo by Frédéric Chopin. The work was composed and published between 1835 and 1837, and was dedicated to Countess Adèle Fürstenstein. As pianist David Dubal has written, Robert Schumann compared this scherzo to a Byronic poem, \"so overflowing with tenderness, boldness, love and contempt.\" According to Wilhelm von Lenz, a pupil of Chopin, the composer said that the renowned sotto voce opening was a question and the second phrase the answer: \"For Chopin it was never questioning enough, never soft enough, never vaulted (tombe) enough. It must be a charnel-house.\" Dubal wrote that critic James Huneker \"exults\": \"What masterly writing, and it lies in the very heart of the piano! A hundred generations may not improve on these pages.\"",
+      "pageviews_yearly": 11569,
+      "date": "1837-00-00"
+    },
+    {
+      "qid": "Q16766022",
+      "title": "Hexaméron, S. 392: VIIIa. Variation VI. Largo",
+      "imslp_id": "Hexaméron:_Variation_No.6,_B.113_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_variation_no6_hexameron.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1837-01-01"
+    },
+    {
+      "qid": "Q16766007",
+      "title": "Largo in E-flat major, B.109",
+      "imslp_id": "Largo_in_E-flat_major,_B.109_(Chopin,_Frédéric)",
+      "pdf_filename": "Largo.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1837-01-01"
+    },
+    {
+      "qid": "Q28843839",
+      "title": "Mazurka op. 41 nr. 2",
+      "date": "1838-00-00"
+    },
+    {
+      "qid": "Q11431256",
+      "title": "Nocturne No. 11 in G minor, Op. 37, No. 1",
+      "date": "1838-00-00"
+    },
+    {
+      "qid": "Q11637459",
+      "title": "Polonaise Op. 40 No. 1 in A major",
+      "date": "1838-00-00"
+    },
+    {
+      "qid": "Q1148572",
+      "title": "Prelude no. 15 in D-flat major, Op. 28",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Prelude%2C_Op._28%2C_No._15_(Chopin)",
+      "wikipedia_extract": "The Prelude Op. 28, No. 15, by Frédéric Chopin, known as the \"Raindrop\" prelude, is one of the 24 Chopin preludes. It is one of Chopin's most famous works. Usually lasting between five and seven minutes, this is the longest of the preludes. The prelude is noted for its repeating A♭, which appears throughout the piece and sounds like raindrops to many listeners.",
+      "pageviews_yearly": 33779,
+      "date": "1838-00-00"
+    },
+    {
+      "qid": "Q16739694",
+      "title": "Prélude no. 2 in A minor, op. 28",
+      "date": "1838-00-00"
+    },
+    {
+      "qid": "Q7966844",
+      "title": "Waltzes, Op. 34",
+      "imslp_id": "Waltzes,_Op.34_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_Waltzes__Op_34.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Waltzes%2C_Op._34_(Chopin)",
+      "wikipedia_extract": "The three Waltzes, Op. 34, were composed by Frédéric Chopin from 1834 until 1838 and published in 1838.",
+      "pageviews_yearly": 10523,
+      "date": "1838-00-00",
+      "movements": [
+        {
+          "qid": "Q16747405"
+        },
+        {
+          "qid": "Q16747406"
+        },
+        {
+          "qid": "Q16747407"
+        }
+      ]
+    },
+    {
+      "qid": "Q16764414",
+      "title": "Andantino, B.117",
+      "imslp_id": "Andantino,_B.117_(Chopin,_Frédéric)",
+      "pdf_filename": "PMLP153953-chopin_leichte_klavierstucke_und_tanze_16.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1838-01-01"
+    },
+    {
+      "qid": "Q16747407",
+      "title": "Waltz No. 4 in F major, Op. 34 No. 3",
+      "date": "1838-01-01"
+    },
+    {
+      "qid": "Q6168011",
+      "title": "Wiosna",
+      "date": "1838-01-01"
+    },
+    {
+      "qid": "Q6799056",
+      "title": "Mazurkas, Op. 41",
+      "imslp_id": "Mazurkas,_Op.41_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_4_Mazurkas__Op_41.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mazurkas%2C_Op._41_(Chopin)",
+      "wikipedia_extract": "Mazurkas, Op. 41 is a set of four mazurkas for piano by Frédéric Chopin, composed and published between 1838 and 1839. A typical performance of the set lasts about nine and a half minutes. The set is dedicated to Chopin's friend Stefan Witwicki, a minor poet, ten of whose poems Chopin set to music as songs.",
+      "pageviews_yearly": 4798,
+      "date": "1838-11-28",
+      "movements": [
+        {
+          "qid": "Q28843575"
+        },
+        {
+          "qid": "Q28843839"
+        },
+        {
+          "qid": "Q28843922"
+        },
+        {
+          "qid": "Q28843935"
+        }
+      ]
+    },
+    {
+      "qid": "Q1785955",
+      "title": "Ballade No. 2 in F major, Op. 38",
+      "imslp_id": "Ballade_No.2,_Op.38_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_Ballade_No2.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ballade_No._2_(Chopin)",
+      "wikipedia_extract": "The Ballade No. 2 in F major, Op. 38 is a ballade for solo piano by Frédéric Chopin, completed in 1839. A typical performance lasts six to eight minutes.",
+      "pageviews_yearly": 12404,
+      "date": "1839-00-00"
+    },
+    {
+      "qid": "Q6007782",
+      "title": "Impromptu no. 2 in F-sharp major, op. 36",
+      "imslp_id": "Impromptu_No.2,_Op.36_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_Impromptu_2.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Impromptu_No._2_(Chopin)",
+      "wikipedia_extract": "Frédéric Chopin's Impromptu No. 2 in F♯ major, Op. 36, was composed in 1839 and published in the following year.",
+      "pageviews_yearly": 3526,
+      "date": "1839-00-00"
+    },
+    {
+      "qid": "Q28843575",
+      "title": "Mazurka op. 41 no. 1",
+      "date": "1839-00-00"
+    },
+    {
+      "qid": "Q28843922",
+      "title": "Mazurka op. 41 nr. 3",
+      "date": "1839-00-00"
+    },
+    {
+      "qid": "Q28843935",
+      "title": "Mazurka op. 41 nr. 4",
+      "date": "1839-00-00"
+    },
+    {
+      "qid": "Q16739817",
+      "title": "Nocturne No. 12 in G major, Op. 37, No. 2",
+      "date": "1839-00-00"
+    },
+    {
+      "qid": "Q16739689",
+      "title": "Prélude no. 1 in C major, op. 28",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Prelude%2C_Op._28%2C_No._1_(Chopin)",
+      "wikipedia_extract": "The Prelude, Op. 28, No. 1 is the first of Chopin's 24 preludes for piano. It was published in 1839 and dedicated to Camille Pleyel. Pianist Vladimir de Pachmann noted this prelude as \"The first one is in a style that reminds one very forcibly of Schumann.\"",
+      "pageviews_yearly": 3225,
+      "date": "1839-00-00"
+    },
+    {
+      "qid": "Q3274388",
+      "title": "Scherzo no. 3 in C-sharp minor, op. 39",
+      "imslp_id": "Scherzo_No.3,_Op.39_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_Scherzo_3.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Scherzo_No._3_(Chopin)",
+      "wikipedia_extract": "The Scherzo No. 3, Op. 39, in C♯ minor by Frédéric Chopin. He began composing it 1838 in the abandoned monastery of Valldemossa on the Balearic island of Majorca, Spain, and completed it back in France by the end of 1839. This is the most terse, ironic, and tightly constructed of the four scherzi, with an almost Beethovenian grandeur.",
+      "pageviews_yearly": 8853,
+      "date": "1839-00-00"
+    },
+    {
+      "qid": "Q16765180",
+      "title": "Canon in F minor",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp239",
+      "date": "1839-01-01"
+    },
+    {
+      "qid": "Q2424993",
+      "title": "Ballade No. 3 in A-flat major, Op. 47",
+      "imslp_id": "Ballade_No.3,_Op.47_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_Ballade_No3.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ballade_No._3_(Chopin)",
+      "wikipedia_extract": "The Ballade No. 3 in A♭ major, Op. 47, is the third of Chopin's ballades for solo piano. It was composed in 1841 and published the same year.",
+      "pageviews_yearly": 12934,
+      "date": "1840-00-00"
+    },
+    {
+      "qid": "Q807908",
+      "title": "Barcarole",
+      "imslp_id": "Barcarolle,_Op.60_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_Barcarole__Op_60.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp245",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Barcarolle_(Chopin)",
+      "wikipedia_extract": "The Barcarolle in F-sharp major, Op. 60, is a piece for solo piano by Frédéric Chopin, composed between autumn of 1845 and summer 1846, three years before his death.",
+      "pageviews_yearly": 15432,
+      "date": "1840-00-00"
+    },
+    {
+      "qid": "Q113519249",
+      "title": "Dumka",
+      "imslp_id": "Rêverie,_B.132_(Chopin,_Frédéric)",
+      "pdf_filename": "PMLP153930-Reverie_B132.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp268",
+      "date": "1840-00-00"
+    },
+    {
+      "qid": "Q131181026",
+      "title": "Mazurka in A minor, B.140",
+      "imslp_id": "Mazurka_in_A_minor,_B.140_(Chopin,_Frédéric)",
+      "pdf_filename": "PMLP02286-E911180_89-93-Chopin--mazurkas-ed-Ekier.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1840-00-00"
+    },
+    {
+      "qid": "Q126188927",
+      "title": "Mazurka in A-flat major, op. 50 no. 2",
+      "date": "1840-00-00"
+    },
+    {
+      "qid": "Q126197746",
+      "title": "Mazurka in C-sharp minor, op. 50 no. 3",
+      "date": "1840-00-00"
+    },
+    {
+      "qid": "Q126173812",
+      "title": "Mazurka in G major, op. 50 no. 1",
+      "date": "1840-00-00"
+    },
+    {
+      "qid": "Q6799055",
+      "title": "Mazurkas, Op. 50",
+      "imslp_id": "Mazurkas,_Op.50_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_3_Mazurkas__Op_50.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mazurkas%2C_Op._50_(Chopin)",
+      "wikipedia_extract": "The Op. 50 mazurkas by Frédéric Chopin are a set of three mazurkas written and published in 1842.",
+      "pageviews_yearly": 3064,
+      "date": "1840-00-00",
+      "movements": [
+        {
+          "qid": "Q126173812"
+        },
+        {
+          "qid": "Q126188927"
+        },
+        {
+          "qid": "Q126197746"
+        }
+      ]
+    },
+    {
+      "qid": "Q3132823",
+      "title": "Polonaise-Fantaisie",
+      "imslp_id": "Polonaise-fantaisie,_Op.61_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_Polonaise-Fantasie__Op_61.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp152",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Polonaise-Fantaisie_(Chopin)",
+      "wikipedia_extract": "The Polonaise-Fantaisie in A-flat major, Op. 61, is a composition for piano by Frédéric Chopin. It was dedicated to Mme A. Veyret, written and published in 1846.",
+      "pageviews_yearly": 23753,
+      "date": "1840-00-00"
+    },
+    {
+      "qid": "Q16742080",
+      "title": "Waltzes, Op. 64",
+      "imslp_id": "Waltzes,_Op.64_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_Waltzes__Op_64.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1840-00-00",
+      "movements": [
+        {
+          "qid": "Q1527943"
+        },
+        {
+          "qid": "Q5255031"
+        },
+        {
+          "qid": "Q16142717"
+        }
+      ]
+    },
+    {
+      "qid": "Q11315130",
+      "title": "Waltz No. 18 in E-flat major, Op. posth., \"Sostenuto\"",
+      "imslp_id": "Waltz_in_E-flat_major,_B.133_(Chopin,_Frédéric)",
+      "pdf_filename": "PMLP143036-Chopin_Walzer_Henle_Urtext_P2_10_filter.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1840-01-01"
+    },
+    {
+      "qid": "Q7966834",
+      "title": "Waltz No. 5 in A-flat major, Op. 42",
+      "imslp_id": "Waltz_in_A-flat_major,_Op.42_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_Waltz__Op_42.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Waltz_in_A-flat_major%2C_Op._42_(Chopin)",
+      "wikipedia_extract": "Waltz in A♭ major, Op. 42, is a lively waltz composed by Frédéric Chopin in 1840.",
+      "pageviews_yearly": 6471,
+      "date": "1840-01-01"
+    },
+    {
+      "qid": "Q131155865",
+      "title": "Mazurka in A minor, B.134",
+      "imslp_id": "Mazurka_in_A_minor,_B.134_(Chopin,_Frédéric)",
+      "pdf_filename": "PMLP02286-E911180_94-97-Chopin--mazurkas-ed-Ekier.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1841-00-00"
+    },
+    {
+      "qid": "Q11431257",
+      "title": "Nocturne No. 13 in C minor, Op. 48, No. 1",
+      "date": "1841-00-00"
+    },
+    {
+      "qid": "Q16740897",
+      "title": "Nocturne No. 14 in F-sharp minor, Op. 48, No. 2",
+      "date": "1841-00-00"
+    },
+    {
+      "qid": "Q7046559",
+      "title": "Nocturnes, Op. 48",
+      "imslp_id": "Nocturnes,_Op.48_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_2_Nocturnes__Op_48.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp137",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nocturnes%2C_Op._48_(Chopin)",
+      "wikipedia_extract": "The Nocturnes, Op. 48 are a set of two nocturnes for solo piano written by Frédéric Chopin in 1841 and published the following year in 1842. They are dedicated to Mlle. Laure Duperré. Chopin later sold the copyright for the nocturnes for 2,000 francs along with several other pieces.",
+      "pageviews_yearly": 17741,
+      "date": "1841-00-00",
+      "movements": [
+        {
+          "qid": "Q11431257"
+        },
+        {
+          "qid": "Q16740897"
+        }
+      ]
+    },
+    {
+      "qid": "Q15841142",
+      "title": "Prelude [No. 25] in C-sharp minor, Op. 45",
+      "imslp_id": "Prelude_in_C-sharp_minor,_Op.45_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_Prelude__Op_45.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1841-00-00"
+    },
+    {
+      "qid": "Q17583609",
+      "title": "Śliczny chłopiec",
+      "date": "1841-00-00"
+    },
+    {
+      "qid": "Q4731420",
+      "title": "Allegro de concert, Op. 46",
+      "imslp_id": "Allegro_de_concert,_Op.46_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_Allegro_de_Concert__Op_46.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Allegro_de_concert_(Chopin)",
+      "wikipedia_extract": "Frédéric Chopin's Allegro de concert, Op. 46, is a piece for piano, published in November 1841. It is in one movement and takes between 11 and 15 minutes to play. The principal themes are bold and expressive. It has a curious place in the Chopin canon, and while its history is obscure, the evidence supports the view, shared by Robert Schumann and others, that it started out as the first movement of a projected third piano concerto, of which the orchestral parts are either now non-existent or were never scored at all. There is no evidence that Chopin ever even started work on the latter movements of this concerto.",
+      "pageviews_yearly": 7963,
+      "date": "1841-01-01"
+    },
+    {
+      "qid": "Q1506063",
+      "title": "Polonaise in F-sharp minor",
+      "imslp_id": "Polonaise_in_F-sharp_minor,_Op.44_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_Polonaise__Op_44.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp150",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Polonaise_in_F-sharp_minor%2C_Op._44_(Chopin)",
+      "wikipedia_extract": "The Polonaise in F♯ minor, Op. 44, is a piece for solo piano written by Frédéric Chopin in 1841. It is often referred to as the \"tragic\" polonaise, due to its dark nature. The polonaise is dedicated to Princess Ludmilla de Beauvau, a prominent member of the Polish émigré community in Paris.",
+      "pageviews_yearly": 7598,
+      "date": "1841-01-01"
+    },
+    {
+      "qid": "Q6149758",
+      "title": "Tarantelle in A-flat major, Op. 43",
+      "imslp_id": "Tarantella,_Op.43_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_Tarantelle__Op_43.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tarantelle_(Chopin)",
+      "wikipedia_extract": "The Tarantella in A-flat major, Op. 43 is a short piano piece in tarantella form written by Frédéric Chopin in June 1841 and published in October 1841. It takes about 3 minutes to play.",
+      "pageviews_yearly": 3542,
+      "date": "1841-06-01"
+    },
+    {
+      "qid": "Q16142757",
+      "title": "Waltz No. 12 in F minor, Op. 70, No. 2",
+      "date": "1841-06-01"
+    },
+    {
+      "qid": "Q4467040",
+      "title": "Ballade No. 4 in F minor, Op. 52",
+      "imslp_id": "Ballade_No.4,_Op.52_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_Ballade_No4.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ballade_No._4_(Chopin)",
+      "wikipedia_extract": "The Ballade No. 4 in F minor, Op. 52 is a ballade for solo piano by Frédéric Chopin, completed in 1842 in Paris and published in 1843 with a dedication to Baroness Charlotte de Rothschild. Being his last published ballade, the piece is commonly considered one of the masterpieces of piano music.",
+      "pageviews_yearly": 22024,
+      "date": "1842-00-00"
+    },
+    {
+      "qid": "Q6007784",
+      "title": "Impromptu no. 3 in G-flat major, Op. 51",
+      "imslp_id": "Impromptu_No.3,_Op.51_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_Impromptu_3.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Impromptu_No._3_(Chopin)",
+      "wikipedia_extract": "Frédéric Chopin's Impromptu No. 3 in G♭ major, Op. 51, for piano, was composed in 1842 and published in February 1843. It was the last in order of composition of his four impromptus, but the third published.",
+      "pageviews_yearly": 2908,
+      "date": "1842-00-00"
+    },
+    {
+      "qid": "Q4379929",
+      "title": "Scherzo no. 4 in E major, op. 54",
+      "imslp_id": "Scherzo_No.4,_Op.54_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_Scherzo_4.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Scherzo_No._4_(Chopin)",
+      "wikipedia_extract": "The Scherzo No. 4, Op. 54, in E major by Frédéric Chopin was composed in 1842 in Nohant.",
+      "pageviews_yearly": 7135,
+      "date": "1842-00-00"
+    },
+    {
+      "qid": "Q3178652",
+      "title": "Polonaise in A-flat major \"Heroic\", Op. 53",
+      "imslp_id": "Polonaise_in_A-flat_major,_Op.53_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_Polonaise__Op_53.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Polonaise_in_A-flat_major%2C_Op._53",
+      "wikipedia_extract": "The Polonaise in A♭ major, Op. 53 is a solo piano piece composed by Frédéric Chopin in 1842 The piece was published in 1843, and is one of Chopin's most admired compositions and has long been a favorite of the romantic piano repertoire. Pianist Arthur Rubinstein once called it \"the composition which is the closest to my heart.\" The piece requires exceptional piano skills and great virtuosity to be interpreted at a high degree of proficiency. It is also very physically demanding, and according to his student Adolphe Gutmann, Chopin played it more gently than most performers. The polonaise was dedicated to Auguste Léo, a German banker and friend of Chopin.",
+      "pageviews_yearly": 26220,
+      "date": "1842-01-01"
+    },
+    {
+      "qid": "Q123707399",
+      "title": "Mazurka in B major, op. 56 no. 1",
+      "date": "1843-00-00"
+    },
+    {
+      "qid": "Q123707492",
+      "title": "Mazurka in C major, op. 56 no. 2",
+      "date": "1843-00-00"
+    },
+    {
+      "qid": "Q123707618",
+      "title": "Mazurka in C minor, op. 56 no. 3",
+      "date": "1843-00-00"
+    },
+    {
+      "qid": "Q6799057",
+      "title": "Mazurkas, Op. 56",
+      "imslp_id": "Mazurkas,_Op.56_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_3_Mazurkas__Op_56.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mazurkas%2C_Op._56_(Chopin)",
+      "wikipedia_extract": "The Op. 56 mazurkas by Frédéric Chopin are a set of three mazurkas written for solo piano and presumably written in 1843–1844 and published in 1844. A typical performance of all three mazurkas lasts around 12 minutes.",
+      "pageviews_yearly": 3150,
+      "date": "1843-00-00",
+      "movements": [
+        {
+          "qid": "Q123707399"
+        },
+        {
+          "qid": "Q123707492"
+        },
+        {
+          "qid": "Q123707618"
+        }
+      ]
+    },
+    {
+      "qid": "Q11431258",
+      "title": "Nocturne No. 15 in F minor, Op. 55, No. 1",
+      "date": "1843-00-00"
+    },
+    {
+      "qid": "Q16739823",
+      "title": "Nocturne No. 16 in E-flat major, Op. 55, No. 2",
+      "date": "1843-00-00"
+    },
+    {
+      "qid": "Q7046558",
+      "title": "Nocturnes, Op. 55",
+      "imslp_id": "Nocturnes,_Op.55_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_2_Nocturnes__Op_55.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nocturnes%2C_Op._55_(Chopin)",
+      "wikipedia_extract": "The Nocturnes, Op. 55 are a set of two nocturnes for solo piano written by Frédéric Chopin. They are his fifteenth and sixteenth installations in the genre, and were composed between 1842 and 1844, and published in August 1844. Chopin dedicated them to his pupil and admirer Mademoiselle Jane Stirling.",
+      "pageviews_yearly": 23687,
+      "date": "1843-00-00",
+      "movements": [
+        {
+          "qid": "Q11431258"
+        },
+        {
+          "qid": "Q16739823"
+        }
+      ]
+    },
+    {
+      "qid": "Q5861431",
+      "title": "Moderato in E major (Album Leaf)",
+      "imslp_id": "Moderato_in_E_major,_B.151_(Chopin,_Frédéric)",
+      "pdf_filename": "Album.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp243",
+      "date": "1843-01-01"
+    },
+    {
+      "qid": "Q7966835",
+      "title": "Waltz No. 19 in A Minor, Op. posth.",
+      "imslp_id": "Waltz_in_A_minor,_B.150_(Chopin,_Frédéric)",
+      "pdf_filename": "PMLP113759-Chopin_Waltz_in_A_minor_B.150.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp220",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Waltz_in_A_minor%2C_Op._posth._(Chopin)",
+      "wikipedia_extract": "Frédéric Chopin's Waltz in A minor, B. 150, WN 63, KK IVb/11, P. 2/11, is a waltz for solo piano. The waltz was published in 1860, after the composer's death, by Jacques Maho. At this time, it was attributed to Charlotte de Rothschild and was published as no. 3 of \"Four pieces for piano\". This collection also included Chopin's Nocturne in C minor, B. 108. In The Musical Quarterly, January 1939, Jacques-Gabriel Prod'homme first reported the waltz. In 1955, this piece was published in the special edition of the magazine La Revue Musicale and finally reattributed to Chopin. In 1965, it was republished by Andrzej Koszewski.",
+      "pageviews_yearly": 8104,
+      "date": "1843-01-01"
+    },
+    {
+      "qid": "Q2896940",
+      "title": "Berceuse",
+      "imslp_id": "Berceuse,_Op.57_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_Berceuse__Op_57.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp244",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Berceuse_(Chopin)",
+      "wikipedia_extract": "Frédéric Chopin's \"Berceuse\", Op. 57, is a lullaby to be played on the piano. He composed it in 1843/44 as variations in D-flat major. Chopin originally called his work \"Variantes\". \"Berceuse\" was first published in Paris in 1844 by Jean-Racine Meissonnier, dedicated to Chopin's pupil Élise Gavard, and appeared in London and Leipzig the following year.",
+      "pageviews_yearly": 13674,
+      "date": "1844-00-00"
+    },
+    {
+      "qid": "Q1746043",
+      "title": "Piano Sonata No. 3 in B minor, Op. 58",
+      "imslp_id": "Piano_Sonata_No.3,_Op.58_(Chopin,_Frédéric)",
+      "pdf_filename": "PMLP02364-FChopin_Piano_Sonata_No.3__Op.58_BH_FE.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_No._3_(Chopin)",
+      "wikipedia_extract": "The Piano Sonata No. 3 in B minor, Op. 58, is a piano sonata in four movements composed by Polish composer Frédéric Chopin; it is the second of the composer's three mature sonatas. Completed in 1844 and published in 1845, the work is considered to be one of Chopin's most difficult compositions, both technically and musically. The work has a structure similar to Piano Sonata No. 5, Op. 81 by Johann Nepomuk Hummel.",
+      "pageviews_yearly": 23428,
+      "date": "1844-00-00"
+    },
+    {
+      "qid": "Q136454912",
+      "title": "Andantino in D minor, KK Anh. Ia/3",
+      "date": "1845-00-00"
+    },
+    {
+      "qid": "Q17583610",
+      "title": "Dwojaki koniec",
+      "date": "1845-00-00"
+    },
+    {
+      "qid": "Q123853325",
+      "title": "Mazurka in A minor, op. 59 no. 1",
+      "date": "1845-00-00"
+    },
+    {
+      "qid": "Q123853624",
+      "title": "Mazurka in A-flat major, op. 59 no. 2",
+      "date": "1845-00-00"
+    },
+    {
+      "qid": "Q123853848",
+      "title": "Mazurka in F-sharp minor, op. 59 no. 3",
+      "date": "1845-00-00"
+    },
+    {
+      "qid": "Q6799059",
+      "title": "Mazurkas, Op. 59",
+      "imslp_id": "Mazurkas,_Op.59_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_3_Mazurkas__Op_59.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mazurkas%2C_Op._59_(Chopin)",
+      "wikipedia_extract": "Mazurkas, Op. 59 are a set of three Mazurkas for solo piano by Frédéric Chopin. The set was composed and published in 1845.",
+      "pageviews_yearly": 4597,
+      "date": "1845-00-00",
+      "movements": [
+        {
+          "qid": "Q123853325"
+        },
+        {
+          "qid": "Q123853624"
+        },
+        {
+          "qid": "Q123853848"
+        }
+      ]
+    },
+    {
+      "qid": "Q17583605",
+      "title": "Nie ma czego trzeba",
+      "date": "1845-00-00"
+    },
+    {
+      "qid": "Q136454892",
+      "title": "Prélude in F major, KK Anh. Ia/2",
+      "date": "1845-00-00"
+    },
+    {
+      "qid": "Q5732877",
+      "title": "2 Bourrées",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp246",
+      "date": "1846-00-00",
+      "movements": [
+        {
+          "qid": "Q16765125"
+        },
+        {
+          "qid": "Q16765124"
+        }
+      ]
+    },
+    {
+      "qid": "Q122599324",
+      "title": "Mazurka in A minor, op. 67 no. 4",
+      "date": "1846-00-00"
+    },
+    {
+      "qid": "Q123471300",
+      "title": "Mazurka in B major, op. 63 no. 1",
+      "date": "1846-00-00"
+    },
+    {
+      "qid": "Q123471756",
+      "title": "Mazurka in C-sharp minor, op. 63 no. 3",
+      "date": "1846-00-00"
+    },
+    {
+      "qid": "Q123471641",
+      "title": "Mazurka in F minor, op. 63 no. 2",
+      "date": "1846-00-00"
+    },
+    {
+      "qid": "Q134399940",
+      "title": "Mazurka, KK Vc/4",
+      "date": "1846-00-00"
+    },
+    {
+      "qid": "Q6799058",
+      "title": "Mazurkas, Op. 63",
+      "imslp_id": "Mazurkas,_Op.63_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_3_Mazurkas__Op_63.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mazurkas%2C_Op._63_(Chopin)",
+      "wikipedia_extract": "The Op. 63 Mazurkas by Frédéric Chopin are a set of three mazurkas for solo piano written in 1846 and published in 1847. These were Chopin's last set of mazurkas published during his lifetime. They demonstrate the composer's \"late\" style and may suggest a maturity of his emotional approach to the mazurka as a musical form.",
+      "pageviews_yearly": 4058,
+      "date": "1846-00-00",
+      "movements": [
+        {
+          "qid": "Q123471300"
+        },
+        {
+          "qid": "Q123471641"
+        },
+        {
+          "qid": "Q123471756"
+        }
+      ]
+    },
+    {
+      "qid": "Q11431259",
+      "title": "Nocturne No. 17 in B major, Op. 62, No. 1",
+      "date": "1846-00-00"
+    },
+    {
+      "qid": "Q16739827",
+      "title": "Nocturne No. 18 in E major, Op. 62, No. 2",
+      "date": "1846-00-00"
+    },
+    {
+      "qid": "Q7046561",
+      "title": "Nocturnes, Op. 62",
+      "imslp_id": "Nocturnes,_Op.62_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin_-_2_Nocturnes__Op_62.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nocturnes%2C_Op._62_(Chopin)",
+      "wikipedia_extract": "Written between 1845 and 1846, Nocturnes Op. 62 are a set of two nocturnes for solo piano by Frédéric Chopin. They were published in 1846 and are dedicated to Mademoiselle R[osa] de Konneritz. These were Chopin's final compositions in the genre, although they were not the last to be published.",
+      "pageviews_yearly": 11322,
+      "date": "1846-00-00",
+      "movements": [
+        {
+          "qid": "Q11431259"
+        },
+        {
+          "qid": "Q16739827"
+        }
+      ]
+    },
+    {
+      "qid": "Q16765125",
+      "title": "Bourrée No. 1",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp272",
+      "date": "1846-01-01"
+    },
+    {
+      "qid": "Q16765124",
+      "title": "Bourrée No. 2",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp273",
+      "date": "1846-01-01"
+    },
+    {
+      "qid": "Q2616121",
+      "title": "Cello Sonata (Chopin)",
+      "imslp_id": "Cello_Sonata,_Op.65_(Chopin,_Frédéric)",
+      "pdf_filename": "Chopin-Cellosonata-Brandus1847.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp24",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cello_Sonata_(Chopin)",
+      "wikipedia_extract": "The Cello Sonata in G minor, Op. 65, was written by Frédéric Chopin in 1846-1847. It is one of only nine works of Chopin published during his lifetime that were written for instruments other than piano. Chopin composed four sonatas, the other three being piano sonatas. The cello sonata was the last of Chopin's works to be published in his lifetime.",
+      "pageviews_yearly": 12008,
+      "date": "1846-01-01"
+    },
+    {
+      "qid": "Q16765973",
+      "title": "Galop A-flat major \"Marquis\", Opus. posth.",
+      "imslp_id": "Gallop_marquis_(Chopin,_Frédéric)",
+      "pdf_filename": "PMLP113698-galopmarquis.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1846-01-01"
+    },
+    {
+      "qid": "Q17583617",
+      "title": "Melodia",
+      "date": "1847-00-00"
+    },
+    {
+      "qid": "Q11431261",
+      "title": "Nocturne No. 21 in C minor, Op. posth.",
+      "imslp_id": "Nocturne_in_C_minor,_B.108_(Chopin,_Frédéric)",
+      "pdf_filename": "Nocturne_Op._Post._in_C_Minor.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nocturne_in_C_minor%2C_Op._posth._(Chopin)",
+      "wikipedia_extract": "Frédéric Chopin's Nocturne No. 21 in C minor, B. 108, WN 62, KK IVb/8, P. 2/8, is a musical work for solo piano composed in 1847–1848 or 1837. It was the last of Chopin's nocturnes to be published, and was done so posthumously in 1938. It is famous for its striking simplicity and folk-like melody. The date of composition is uncertain: in the first publication in 1938, Ludwik Bronarski claimed that this piece may be one of the earliest of Chopin's known nocturnes, written before he left Poland; nonetheless, it has traits of the composer's late period. The fact that the two manuscripts of the piece came from the Rothschilds, and the manuscript paper was mostly used by Chopin in 1845–46, suggests that it was composed late in the composer's life.",
+      "pageviews_yearly": 9105,
+      "date": "1847-00-00"
+    },
+    {
+      "qid": "Q5255031",
+      "title": "Waltz No. 7 in C-sharp minor, Op. 64, No. 2",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Waltz_in_C-sharp_minor%2C_Op._64%2C_No._2_(Chopin)",
+      "wikipedia_extract": "The Waltz in C♯ minor is a piano waltz composed by Frédéric Chopin in 1846–47, the second of the three waltzes of his Opus 64, and the companion to the \"Minute Waltz\". Chopin dedicated it to Madame Nathaniel de Rothschild.",
+      "pageviews_yearly": 19250,
+      "date": "1847-01-01"
+    },
+    {
+      "qid": "Q16142717",
+      "title": "Waltz No. 8 in A flat major, Op. 64, No. 3",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Waltz_in_A-flat_major%2C_Op._64%2C_No._3_(Chopin)",
+      "wikipedia_extract": "The Waltz in A-flat major, Op. 64 No. 3, composed by Frédéric Chopin, is the final waltz by Chopin that was published in his lifetime. It was dedicated to Countess Katarzyna Branicka. The waltz is in A-flat major and features a central section in C major.",
+      "pageviews_yearly": 4380,
+      "date": "1847-01-01"
+    },
+    {
+      "qid": "Q135185258",
+      "title": "Waltz in B major, KK Va/3",
+      "date": "1848-10-12"
+    },
+    {
+      "qid": "Q11340339",
+      "title": "Mazurka in F minor, Op. 68, No. 4",
+      "date": "1849-00-00"
+    },
+    {
+      "qid": "Q122593250",
+      "title": "Mazurka in G minor, op. 67 no. 2",
+      "date": "1849-00-00"
+    },
+    {
+      "qid": "Q4658348",
+      "title": "A Month in the Country",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/A_Month_in_the_Country_(ballet)",
+      "wikipedia_extract": "\n\nA Month in the Country is a narrative ballet created in 1976 with choreography by Frederick Ashton, to the music of Frédéric Chopin arranged by John Lanchbery. It is based on the play by Ivan Turgenev of the same name, and lasts for about 40 minutes.",
+      "pageviews_yearly": 4701
+    },
+    {
+      "qid": "Q101578422",
+      "title": "A Winter in Mallorca"
+    },
+    {
+      "qid": "Q131282330",
+      "title": "Allegretto and Mazurka",
+      "imslp_id": "Allegretto_and_Mazurka_(Chopin,_Frédéric)",
+      "pdf_filename": "PMLP836231-Chopin_Allegretto_and_Mazurka.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q131308660",
+      "title": "Allegretto in F-sharp major"
+    },
+    {
+      "qid": "Q131290249",
+      "title": "Allegretto, KK VIIb/7"
+    },
+    {
+      "qid": "Q9158115",
+      "title": "Antyki"
+    },
+    {
+      "qid": "Q322572",
+      "title": "Autumn Sonata",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Autumn_Sonata",
+      "wikipedia_extract": "Autumn Sonata is a 1978 film written and directed by Ingmar Bergman, and starring Ingrid Bergman, Liv Ullmann and Lena Nyman. Its plot follows a celebrated classical pianist and her neglected daughter who meet for the first time in years, and chronicles their painful discussions of how they have hurt each other. It was the only collaboration between Ingrid Bergman and Ingmar Bergman .Autumn Sonata was the last of Ingmar Bergman's films to be made for theatrical exhibition; all of his films made after it, even those screened in theatres, were television productions.",
+      "pageviews_yearly": 89962
+    },
+    {
+      "qid": "Q9163830",
+      "title": "Baby sa jakies inne"
+    },
+    {
+      "qid": "Q2038498",
+      "title": "Ballade No. 1 in G minor, Op. 23",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Chopin_-_Ballade_No_1_in_G_Minor_-_Op_23.mid",
+        "midi/Chopin_-_Ballade_No_1_in_G_Minor.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q112325005",
+      "title": "Ballade op. 23, G minor"
+    },
+    {
+      "qid": "Q112325024",
+      "title": "Ballade op. 47, A flat major"
+    },
+    {
+      "qid": "Q6541319",
+      "title": "Ballades",
+      "imslp_id": "4_Ballades_(Chopin,_Frédéric)",
+      "pdf_filename": "PMLP1126972-Chopin--ballades--Ekier.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp28",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ballades_(Chopin)",
+      "wikipedia_extract": "Frédéric Chopin's four Ballades are single-movement pieces for solo piano, composed between 1831 and 1842. They are considered to be some of the most important and challenging pieces in the standard piano repertoire.",
+      "pageviews_yearly": 26369,
+      "movements": [
+        {
+          "qid": "Q2038498"
+        },
+        {
+          "qid": "Q1785955"
+        },
+        {
+          "qid": "Q2424993"
+        },
+        {
+          "qid": "Q4467040"
+        }
+      ]
+    },
+    {
+      "qid": "Q112325009",
+      "title": "Berceuse",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp244"
+    },
+    {
+      "qid": "Q16766346",
+      "title": "Chamber Music by Chopin",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp24",
+      "movements": [
+        {
+          "qid": "Q1114066"
+        },
+        {
+          "qid": "Q6143523"
+        },
+        {
+          "qid": "Q2616121"
+        },
+        {
+          "qid": "Q5594520"
+        },
+        {
+          "qid": "Q7210085"
+        }
+      ]
+    },
+    {
+      "qid": "Q65218301",
+      "title": "Chopin",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp162"
+    },
+    {
+      "qid": "Q134520630",
+      "title": "Chopin: Ballades for the Piano",
+      "movements": [
+        {
+          "qid": "Q2038498"
+        },
+        {
+          "qid": "Q1785955"
+        },
+        {
+          "qid": "Q2424993"
+        },
+        {
+          "qid": "Q4467040"
+        }
+      ]
+    },
+    {
+      "qid": "Q670904",
+      "title": "Chopin: Desire for Love",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chopin%3A_Desire_for_Love",
+      "wikipedia_extract": "Chopin: Desire for Love is a film created by the director Jerzy Antczak based on the life story of the Polish pianist and composer Frédéric Chopin.",
+      "pageviews_yearly": 9896
+    },
+    {
+      "qid": "Q5215410",
+      "title": "Dances at a Gathering",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dances_at_a_Gathering",
+      "wikipedia_extract": "Dances at a Gathering is a ballet choreographed by Jerome Robbins to music by Frédéric Chopin, with costumes designed by Joe Eula. The ballet premiered on May 22, 1969, at the New York State Theater, performed by the New York City Ballet.",
+      "pageviews_yearly": 5141
+    },
+    {
+      "qid": "Q2429947",
+      "title": "Disque 957"
+    },
+    {
+      "qid": "Q5291415",
+      "title": "Don't",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Don't_(1974_film)",
+      "wikipedia_extract": "Don't is a 1974 short American documentary film following the life cycle of the monarch butterfly, directed by Robin Lehman. It won an Oscar at the 47th Academy Awards in 1975 for Best Documentary Short Subject.",
+      "pageviews_yearly": 3248
+    },
+    {
+      "qid": "Q136786784",
+      "title": "Dumka na Wygnaniu"
+    },
+    {
+      "qid": "Q1338867",
+      "title": "Eternal Sonata",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Eternal_Sonata",
+      "wikipedia_extract": "Eternal Sonata is a role-playing video game developed by tri-Crescendo and published by Bandai Namco Games. The game was originally released on Xbox 360 in 2007, followed by an expanded version releasing on PlayStation 3 the following year.",
+      "pageviews_yearly": 63101
+    },
+    {
+      "qid": "Q112325020",
+      "title": "Etude E-Dur, op. 10, no. 3",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Revolutionary_Etude.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q112756674",
+      "title": "Etude Ges Dur, op. 10, no. 5"
+    },
+    {
+      "qid": "Q112756673",
+      "title": "Etude op. 10, no. 12 (Revolutions-Etude)"
+    },
+    {
+      "qid": "Q112325010",
+      "title": "Etude op. 10, no. 5, Ges-Dur"
+    },
+    {
+      "qid": "Q112325022",
+      "title": "Etude op. 25, no. 9, G flat"
+    },
+    {
+      "qid": "Q106377671",
+      "title": "Etudes op. 25. N. 1 ; N. 2 ; N. 3",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Douze_Etudes_op_25_full.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q3066529",
+      "title": "Fantaisie in F minor",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Frederic_Chopin_-_Fantaisie-Impromtu_op_66.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q147619",
+      "title": "Fantaisie-impromptu in C-sharp minor, op. 66",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Frederic_Chopin_Fantaisie-impromptu_in_C-sharp_minor_Op66.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q5870792",
+      "title": "Fugue in A minor, B. 144",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Chopin_Fugue_in_A_minor_B144.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q16739778",
+      "title": "Funeral March in C minor, Op. posth. 72, No. 2"
+    },
+    {
+      "qid": "Q5392215",
+      "title": "Funeral Marches",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp26",
+      "movements": [
+        {
+          "qid": "Q284448"
+        },
+        {
+          "qid": "Q3910271"
+        },
+        {
+          "qid": "Q16739778"
+        },
+        {
+          "qid": "Q116431346"
+        }
+      ]
+    },
+    {
+      "qid": "Q1168783",
+      "title": "Hexameron"
+    },
+    {
+      "qid": "Q20005574",
+      "title": "Il Notturno di Chopin",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp133",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Il_notturno_di_Chopin",
+      "wikipedia_extract": "Il notturno di Chopin is a 2012 Italian film directed by Aldo Lado.",
+      "pageviews_yearly": 1191
+    },
+    {
+      "qid": "Q2118505",
+      "title": "Impromptu",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp59",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Impromptu_(1991_film)",
+      "wikipedia_extract": "Impromptu is a 1991 period drama film directed by James Lapine, written by Sarah Kernochan, produced by Daniel A. Sherkow and Stuart Oken, and starring Hugh Grant as Frédéric Chopin and Judy Davis as George Sand. It was shot entirely on location in France as a British production by an American company. Its main filming location was at the Château des Briottières outside Angers, in the Loire Valley.",
+      "pageviews_yearly": 53022
+    },
+    {
+      "qid": "Q3149502",
+      "title": "Impromptus",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp59",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/List_of_compositions_by_Fr%C3%A9d%C3%A9ric_Chopin_by_genre",
+      "wikipedia_extract": "Most of Frédéric Chopin's compositions were for solo piano, though he did compose several pieces for piano and orchestra as well as some chamber works that include other instruments.",
+      "pageviews_yearly": 823,
+      "movements": [
+        {
+          "qid": "Q9008175"
+        },
+        {
+          "qid": "Q6007782"
+        },
+        {
+          "qid": "Q6007784"
+        },
+        {
+          "qid": "Q147619"
+        }
+      ]
+    },
+    {
+      "qid": "Q52837312",
+      "title": "In The Name of Love"
+    },
+    {
+      "qid": "Q15868010",
+      "title": "In the Night",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/In_the_Night_(ballet)",
+      "wikipedia_extract": "In the Night is a ballet choreographed by Jerome Robbins to four nocturnes by Frédéric Chopin. It premiered on January 29, 1970 at the New York State Theater, performed by the New York City Ballet.",
+      "pageviews_yearly": 3471
+    },
+    {
+      "qid": "Q52835976",
+      "title": "Kapo in Jerusalem"
+    },
+    {
+      "qid": "Q130382568",
+      "title": "La Dame aux camélias"
+    },
+    {
+      "qid": "Q2358852",
+      "title": "La note bleue"
+    },
+    {
+      "qid": "Q11541007",
+      "title": "Lady of the Camellias"
+    },
+    {
+      "qid": "Q3101524",
+      "title": "Lemon Incest",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lemon_Incest",
+      "wikipedia_extract": "\"Lemon Incest\" is a song recorded by French father and daughter Serge and Charlotte Gainsbourg. It was recorded in 1984 and released as a single from Serge's 1985 album Love on the Beat and on Charlotte's 1986 debut album Charlotte for Ever, marking her musical debut. It is a pop song about a relationship between Serge and Charlotte, the latter of whom was 12 or 13 years old at the time, set to the melody of Frédéric Chopin's Étude Op. 10, No. 3. Its title is a play on the French term un zeste de citron, which translates to lemon zest in English.",
+      "pageviews_yearly": 94375
+    },
+    {
+      "qid": "Q1630831",
+      "title": "Les Sylphides",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp12",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Les_Sylphides",
+      "wikipedia_extract": "Les Sylphides is a short, non-narrative ballet blanc to piano music by Frédéric Chopin, selected and orchestrated by Alexander Glazunov.",
+      "pageviews_yearly": 31656
+    },
+    {
+      "qid": "Q98745126",
+      "title": "Love Affair(s)"
+    },
+    {
+      "qid": "Q15656073",
+      "title": "Love Is Strange",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Love_Is_Strange_(film)",
+      "wikipedia_extract": "Love Is Strange is a 2014 American romantic drama film directed by Ira Sachs. The film had its premiere in the non-Competition programme of the 2014 Sundance Film Festival. The film was also screened in the Panorama section of the 64th Berlin International Film Festival.",
+      "pageviews_yearly": 28825
+    },
+    {
+      "qid": "Q136432998",
+      "title": "March in B minor, KK Vd/2"
+    },
+    {
+      "qid": "Q136433001",
+      "title": "March in F minor, KK Vd/3"
+    },
+    {
+      "qid": "Q136432993",
+      "title": "March, KK Vd/1"
+    },
+    {
+      "qid": "Q116431346",
+      "title": "Marche funèbre"
+    },
+    {
+      "qid": "Q134378641",
+      "title": "Mazurka in D major, KK Ve/5"
+    },
+    {
+      "qid": "Q131301678",
+      "title": "Mazurka, KK VIIb/8"
+    },
+    {
+      "qid": "Q134414196",
+      "title": "Mazurka, KK Ve/6"
+    },
+    {
+      "qid": "Q134399952",
+      "title": "Mazurka, KK Ve/8"
+    },
+    {
+      "qid": "Q3131015",
+      "title": "Mazurkas",
+      "imslp_id": "Mazurkas_(Chopin,_Frédéric)",
+      "pdf_filename": "PMLP1126972-Chopin--mazurkas-ed-Ekier.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp77",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mazurkas_(Chopin)",
+      "wikipedia_extract": "Over the years 1825–1849, Frédéric Chopin wrote at least 59 compositions for piano called Mazurkas. Mazurka refers to one of the traditional Polish dances.58 have been published\n45 during Chopin's lifetime, of which 41 have opus numbers \n13 posthumously, of which 8 have posthumous opus numbers \n11 further mazurkas are known whose manuscripts are either in private hands (2) or untraced.",
+      "pageviews_yearly": 26078,
+      "movements": [
+        {
+          "qid": "Q6150184"
+        },
+        {
+          "qid": "Q6799062"
+        },
+        {
+          "qid": "Q3070647"
+        },
+        {
+          "qid": "Q11340333"
+        },
+        {
+          "qid": "Q6799054"
+        },
+        {
+          "qid": "Q6149400"
+        },
+        {
+          "qid": "Q6799056"
+        },
+        {
+          "qid": "Q6799055"
+        },
+        {
+          "qid": "Q6799057"
+        },
+        {
+          "qid": "Q6799059"
+        },
+        {
+          "qid": "Q6799058"
+        },
+        {
+          "qid": "Q20875234"
+        },
+        {
+          "qid": "Q130076745"
+        },
+        {
+          "qid": "Q130273101"
+        },
+        {
+          "qid": "Q130405981"
+        },
+        {
+          "qid": "Q130418845"
+        },
+        {
+          "qid": "Q130468745"
+        },
+        {
+          "qid": "Q123207809"
+        }
+      ]
+    },
+    {
+      "qid": "Q20875234",
+      "title": "Mazurkas, Op. posth.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mazurkas%2C_Op._posth._(Chopin)",
+      "wikipedia_extract": "There are at least eight mazurkas by Chopin without opus number, usually designated as Op. posth., though at least four of these were published in his lifetime.2 mazurkas in B♭ major and G major were composed and published in 1826 in revised versions; the originals were published in 1875. B. 16\nD major, B. 31 (1829); revised version, B. 71 (1832)\nB♭ major (Wolowska), B. 73 (1832) – dedicated to Alexandrine Wolowska\nC major, B. 82 (1833)\nA♭ major, B. 85 (1834)\nA minor, B.134 (1840) – published (1841) in the collection \"Six morceaux de salon\", issued by the magazine Notre Temps along with works by Thalberg, Czerny and others.\nA minor, B.140 (1840) – published (1841) in \"Album de pianistes polonais\". Dedicated to Émile Gaillard.",
+      "pageviews_yearly": 2098,
+      "movements": [
+        {
+          "qid": "Q6799060"
+        },
+        {
+          "qid": "Q16739812"
+        }
+      ]
+    },
+    {
+      "qid": "Q16763476",
+      "title": "Miscellaneous compositions by Chopin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miscellaneous_compositions_(Chopin)",
+      "wikipedia_extract": "Frédéric Chopin's output mostly consists of pieces for solo piano. There are also the two piano concertos, four other works for piano and orchestra, and a small amount of chamber music. However, Chopin also produced a number of other compositions, mostly for solo piano, but some for other forces. Some of these are well-known, such as the Barcarolle in F♯, the Fantaisie in F minor, the Berceuse in D♭, and some of the 19 Polish songs. Most of the other lesser-known works were published only after his death, contrary to his express wishes that all his unpublished manuscripts should be burned.",
+      "pageviews_yearly": 5232
+    },
+    {
+      "qid": "Q64398251",
+      "title": "Nijinsky"
+    },
+    {
+      "qid": "Q1990244",
+      "title": "Niki de Saint Phalle"
+    },
+    {
+      "qid": "Q112325013",
+      "title": "Nocturne Des-Dur, op. 27, no. 2"
+    },
+    {
+      "qid": "Q112756652",
+      "title": "Nocturne F sharp, op. 15, no. 2"
+    },
+    {
+      "qid": "Q112325001",
+      "title": "Nocturne H-Dur op. 32"
+    },
+    {
+      "qid": "Q16142728",
+      "title": "Nocturne No. 1 in B-flat minor, Op. 9, No. 1",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Nocturne_1_Op9.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q7046547",
+      "title": "Nocturne No. 20 in C-sharp minor, Op. posth."
+    },
+    {
+      "qid": "Q112325000",
+      "title": "Nocturne op. 15, no. 2, Fis-Dur"
+    },
+    {
+      "qid": "Q112325006",
+      "title": "Nocturne op. 37, no. 2, G major",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Chopin_-_Nocturne_Op_9_No_2.mid",
+        "midi/Frederic_Chopin_Nocturne_in_F-sharp_major_Op15_No2.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q112324997",
+      "title": "Nocturne op. 55, no. 2, E flat major"
+    },
+    {
+      "qid": "Q112756678",
+      "title": "Nocturne op. 9, no. 1, B-flat minor"
+    },
+    {
+      "qid": "Q769763",
+      "title": "Nocturnes",
+      "imslp_id": "Nocturnes_(Chopin,_Frédéric)",
+      "pdf_filename": "PMLP1126972-Chopin--nocturnes--Ekier-pd.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp126",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nocturnes_(Chopin)",
+      "wikipedia_extract": "Frédéric Chopin wrote 21 nocturnes for solo piano between 1827 and 1846. They are generally considered among the finest short solo works for the instrument and hold an important place in contemporary concert repertoire. Although Chopin did not invent the nocturne, he popularized and expanded on it, building on the form developed by Irish composer John Field.",
+      "pageviews_yearly": 85926,
+      "movements": [
+        {
+          "qid": "Q1140459"
+        },
+        {
+          "qid": "Q1632466"
+        },
+        {
+          "qid": "Q1057403"
+        },
+        {
+          "qid": "Q900847"
+        },
+        {
+          "qid": "Q7046555"
+        },
+        {
+          "qid": "Q7046559"
+        },
+        {
+          "qid": "Q7046558"
+        },
+        {
+          "qid": "Q7046561"
+        },
+        {
+          "qid": "Q11431260"
+        },
+        {
+          "qid": "Q7046547"
+        },
+        {
+          "qid": "Q11431261"
+        }
+      ]
+    },
+    {
+      "qid": "Q136786842",
+      "title": "O wiem, że Polska"
+    },
+    {
+      "qid": "Q7108587",
+      "title": "Other Dances",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Other_Dances",
+      "wikipedia_extract": "Other Dances is a ballet choreographed by Jerome Robbins to music by Frédéric Chopin. It was created on Natalia Makarova and Mikhail Baryshnikov, and premiered on May 9, 1976, at a gala benefitting the New York Public Library for the Performing Arts, held at Metropolitan Opera House. It was originally made as a pièce d'occasion, but after receiving critical acclaim, it was soon added to American Ballet Theatre and New York City Ballet's repertories.",
+      "pageviews_yearly": 3053
+    },
+    {
+      "qid": "Q19895140",
+      "title": "Piano Concerto No. 3",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp17",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Allegro_de_concert_(Chopin)",
+      "wikipedia_extract": "Frédéric Chopin's Allegro de concert, Op. 46, is a piece for piano, published in November 1841. It is in one movement and takes between 11 and 15 minutes to play. The principal themes are bold and expressive. It has a curious place in the Chopin canon, and while its history is obscure, the evidence supports the view, shared by Robert Schumann and others, that it started out as the first movement of a projected third piano concerto, of which the orchestral parts are either now non-existent or were never scored at all. There is no evidence that Chopin ever even started work on the latter movements of this concerto.",
+      "pageviews_yearly": 539,
+      "movements": [
+        {
+          "qid": "Q4731420"
+        }
+      ]
+    },
+    {
+      "qid": "Q284448",
+      "title": "Piano Sonata No. 2 in B-flat minor, Op. 35",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Chopin_-_Piano_Sonata_2_in_Bb_Minor.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q16746813",
+      "title": "Piano Sonatas",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp26",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_sonatas_(Chopin)",
+      "wikipedia_extract": "Frédéric Chopin composed three piano sonatas, two of which were published in his lifetime, one posthumously. They are considered to be among Chopin's most difficult piano compositions both musically and technically. They cover a period of time from 1828 to 1844, reflecting Chopin's style changes.",
+      "pageviews_yearly": 9879,
+      "movements": [
+        {
+          "qid": "Q1746036"
+        },
+        {
+          "qid": "Q284448"
+        },
+        {
+          "qid": "Q1746043"
+        }
+      ]
+    },
+    {
+      "qid": "Q136827791",
+      "title": "Pieśni pielgrzyma polskiego"
+    },
+    {
+      "qid": "Q7208837",
+      "title": "Pola Negri: Life Is a Dream in Cinema",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pola_Negri%3A_Life_Is_a_Dream_in_Cinema",
+      "wikipedia_extract": "Pola Negri: Life is a Dream in Cinema is a feature-length biographical documentary film by Polish-American director Mariusz Kotowski released in 2006. The film chronicles the life of Polish silent film actress Pola Negri, as told by those who knew her and those who have studied her life and films.",
+      "pageviews_yearly": 2301
+    },
+    {
+      "qid": "Q112325023",
+      "title": "Polonaise op. 44, fis-Moll"
+    },
+    {
+      "qid": "Q112325008",
+      "title": "Polonaise op. 53, A flat"
+    },
+    {
+      "qid": "Q3492430",
+      "title": "Polonaises",
+      "imslp_id": "Polonaises_(Chopin,_Frédéric)",
+      "pdf_filename": "PMLP506236-Fr_CHOPIN_Polonaises__M_Raoul_Pugno_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp28",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Polonaises_(Chopin)",
+      "wikipedia_extract": "Most of Frédéric Chopin's polonaises were written for solo piano. He wrote his first polonaise in 1817, when he was 7; his last was the Polonaise-Fantaisie of 1846, three years before his death. Among the best known polonaises are the \"Military\" Polonaise in A, Op. 40, No. 1, and the \"Heroic\" Polonaise in A♭, Op. 53.",
+      "pageviews_yearly": 19378,
+      "movements": [
+        {
+          "qid": "Q3071076"
+        },
+        {
+          "qid": "Q3087780"
+        },
+        {
+          "qid": "Q1506063"
+        },
+        {
+          "qid": "Q3178652"
+        },
+        {
+          "qid": "Q3132823"
+        },
+        {
+          "qid": "Q16746722"
+        }
+      ]
+    },
+    {
+      "qid": "Q16746722",
+      "title": "Polonaises, Op. posth.",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Polonaises%2C_Op._posth._(Chopin)",
+      "wikipedia_extract": "The Polonaises Op. posth[umous] include Frédéric Chopin's polonaises that were not given opus numbers.",
+      "pageviews_yearly": 6391,
+      "movements": [
+        {
+          "qid": "Q16142739"
+        },
+        {
+          "qid": "Q15457502"
+        },
+        {
+          "qid": "Q16142845"
+        },
+        {
+          "qid": "Q16142859"
+        },
+        {
+          "qid": "Q16142873"
+        },
+        {
+          "qid": "Q16142881"
+        },
+        {
+          "qid": "Q16142892"
+        }
+      ]
+    },
+    {
+      "qid": "Q10638118",
+      "title": "Postmästarfrun från Hörby"
+    },
+    {
+      "qid": "Q16746781",
+      "title": "Prelude [No. 27] in E-flat minor \"Devil's Trill\""
+    },
+    {
+      "qid": "Q16739716",
+      "title": "Prelude no. 18 in F minor, Op. 28",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Frederic_Chopin_Prelude_in_F_minor_Op28_No18.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q16739721",
+      "title": "Prelude no. 24 in D minor, Op. 28",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Chopin_Prelude_Op_28_No_24.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q112756667",
+      "title": "Prelude op. 28, Nr. 15, D flat"
+    },
+    {
+      "qid": "Q112756676",
+      "title": "Prelude op. 28, no. 18, F minor"
+    },
+    {
+      "qid": "Q10353577",
+      "title": "Preludes",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Prelude_No_4.mid",
+        "midi/Prelude_No_4_1.mid",
+        "midi/Prelude_e-moll.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q7240056",
+      "title": "Prélude no. 4 in E minor, op. 28",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Chopin_Prelude_Op_28_No_4.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q112756647",
+      "title": "Prélude op. 28, no. 20, c-Moll",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Prelude_in_C_Minor_Opus_28_No_20.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q112756654",
+      "title": "Préludes, op. 28, no. 1, C major, op. 28, no. 21, B flat"
+    },
+    {
+      "qid": "Q136786826",
+      "title": "Pytasz się, czemu"
+    },
+    {
+      "qid": "Q136726957",
+      "title": "Płótno"
+    },
+    {
+      "qid": "Q136731533",
+      "title": "Płótno"
+    },
+    {
+      "qid": "Q6111967",
+      "title": "Rondos",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp188",
+      "movements": [
+        {
+          "qid": "Q4384879"
+        },
+        {
+          "qid": "Q727987"
+        },
+        {
+          "qid": "Q3941124"
+        },
+        {
+          "qid": "Q7365575"
+        },
+        {
+          "qid": "Q11350830"
+        }
+      ]
+    },
+    {
+      "qid": "Q112325027",
+      "title": "Scherzo E-Dur, op. 54"
+    },
+    {
+      "qid": "Q6532501",
+      "title": "Scherzos",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp194",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Scherzos_(Chopin)",
+      "wikipedia_extract": "Frédéric Chopin's four scherzos (or scherzi) are single-movement pieces for solo piano, composed between 1833 and 1843. They are often linked to Chopin's four ballades, composed in roughly the same period; these works are examples of large scale autonomous musical pieces, composed within the classical framework, but surpassing previous expressive and technical limitations. Unlike the classical model, the musical form adopted by Chopin is not characterised by humour or elements of surprise, but by highly charged \"gestures of despair and demonic energy\". Commenting on the first scherzo, Robert Schumann wrote: \"How is 'gravity' to clothe itself if 'jest' goes about in dark veils?\"",
+      "pageviews_yearly": 13158,
+      "movements": [
+        {
+          "qid": "Q1636510"
+        },
+        {
+          "qid": "Q3267212"
+        },
+        {
+          "qid": "Q3274388"
+        },
+        {
+          "qid": "Q4379929"
+        }
+      ]
+    },
+    {
+      "qid": "Q3952382",
+      "title": "Sciopèn",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sciop%C3%A8n",
+      "wikipedia_extract": "Sciopèn is a 1982 Italian comedy film directed by Luciano Odorisio. The film entered the competition at the 39th Venice Film Festival, in which it won the Silver Lion for best first work. Odorisio was awarded best new director at the San Sebastián International Film Festival, while Tino Schirinzi won a Silver Ribbon for best supporting actor.",
+      "pageviews_yearly": 2183
+    },
+    {
+      "qid": "Q136470770",
+      "title": "Sonata for piano four hands, KK Vc/5"
+    },
+    {
+      "qid": "Q136727435",
+      "title": "Song, KK Vc/10"
+    },
+    {
+      "qid": "Q136731509",
+      "title": "Song, KK Vd/6"
+    },
+    {
+      "qid": "Q136731777",
+      "title": "Song, KK Vd/6"
+    },
+    {
+      "qid": "Q136731568",
+      "title": "Song, KK Vd/8"
+    },
+    {
+      "qid": "Q136786802",
+      "title": "Tam na błoniu"
+    },
+    {
+      "qid": "Q7727279",
+      "title": "The Concert",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp16",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Concert_(ballet)",
+      "wikipedia_extract": "The Concert (or The Perils of Everybody) is a ballet made by Jerome Robbins, subsequently New York City Ballet's ballet master, to Chopin's:",
+      "pageviews_yearly": 3809
+    },
+    {
+      "qid": "Q7734606",
+      "title": "The Flying Machine",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Flying_Machine_(film)",
+      "wikipedia_extract": "The Flying Machine is a 2011 adventure fantasy film produced by BreakThru Films. Combining live action and stop-motion animation presented in 3D, the film is directed by Martin Clapp and Geoff Lindsey, and stars Heather Graham and Lang Lang.",
+      "pageviews_yearly": 4850
+    },
+    {
+      "qid": "Q1232753",
+      "title": "The Margin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Margin_(film)",
+      "wikipedia_extract": "The Margin is a 1976 French erotic drama film written and directed by Walerian Borowczyk and starring Sylvia Kristel, Joe Dallesandro, André Falcon, Mireille Audibert and Denis Canuel.",
+      "pageviews_yearly": 17005
+    },
+    {
+      "qid": "Q12319173",
+      "title": "The Reluctant Sadist",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Reluctant_Sadist",
+      "wikipedia_extract": "The Reluctant Sadist is a 1967 Danish-Swedish comedy film directed by Mac Ahlberg and Peer Guldbrandsen, and starring Gabriel Axel in the role of Marcel de Sade.",
+      "pageviews_yearly": 3211
+    },
+    {
+      "qid": "Q3205507",
+      "title": "The Strange Case of Angelica",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Strange_Case_of_Angelica",
+      "wikipedia_extract": "The Strange Case of Angelica is a 2010 Portuguese drama film directed by Manoel de Oliveira. It was entered into the Un Certain Regard section of the 2010 Cannes Film Festival. De Oliveira conceived the idea for the film in 1946 and initially wrote the script in 1952, updating it with modern elements.",
+      "pageviews_yearly": 6836
+    },
+    {
+      "qid": "Q451558",
+      "title": "The Turning Point",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Turning_Point_(1977_film)",
+      "wikipedia_extract": "The Turning Point is a 1977 American drama film centered on the world of ballet in New York City, written by Arthur Laurents and directed by Herbert Ross. It stars Shirley MacLaine and Anne Bancroft, along with Leslie Browne, Mikhail Baryshnikov, and Tom Skerritt. It was nominated for 11 Academy Awards, including Best Picture; however, the film did not win any Oscars, and it is tied with The Color Purple (1985) with that distinction for most nominations and no wins. The script is a fictionalized version of the real-life Brown family and the friendship between ballerinas Isabel Mirrow Brown and Nora Kaye.",
+      "pageviews_yearly": 100815
+    },
+    {
+      "qid": "Q1321880",
+      "title": "Tristana",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tristana_(film)",
+      "wikipedia_extract": "Tristana is a 1970 drama film co-written, directed and produced by Luis Buñuel, and starring Catherine Deneuve, Fernando Rey, and Franco Nero. The screenplay by Buñuel and Julio Alejandro adapts an 1892 realist novel of the same name by Benito Pérez Galdós. It is a Spanish-French-Italian co-production filmed in Toledo, Buñuel's one-time home, and represents his return to his native country after several years living and working abroad. It earned positive acclaim from critics, and was nominated for Best Foreign-Language Film at the 43rd Academy Awards.",
+      "pageviews_yearly": 23743
+    },
+    {
+      "qid": "Q136786813",
+      "title": "Trzeci maj"
+    },
+    {
+      "qid": "Q112756651",
+      "title": "Valse op. 64, no. 2, cis-Moll"
+    },
+    {
+      "qid": "Q136669251",
+      "title": "Variations for Flute and Piano in E major",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Variations_for_Flute_and_Piano_in_E_major_(Chopin)",
+      "wikipedia_extract": "The Variations on \"Non più mesta\" from Rossini's La Cenerentola is a composition for flute and piano in E major, attributed to Frédéric Chopin. The work, likely composed around 1829, has been the subject of musicological debate regarding its authenticity. Modern scholarship, particularly the research for the Chopin National Edition, suggests that while the entire work is not by Chopin, he likely composed the minor-key variation and may have had limited involvement in the rest of the piece.",
+      "pageviews_yearly": 3522
+    },
+    {
+      "qid": "Q16747406",
+      "title": "Waltz No. 3 in A minor, Op. 34 No. 2",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Frederic_Chopin_-_Waltz_in_A_minor_B_150.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q1527943",
+      "title": "Waltz No. 6 in D-flat major, Op. 64, No. 1",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Minute_Waltz_in_Da_Major_Op_64_No_1.mid",
+        "midi/Waltz_Op64_No1_Valse_Du_Petit_Chien_Minute_Waltz.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q130731165",
+      "title": "Waltz in A minor",
+      "imslp_id": "Waltz_in_A_minor_(Chopin,_Frédéric)",
+      "pdf_filename": "PMLP1472889-FChopin_Waltz_in_A-minor_Morgan_color.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp208",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Waltz_in_A_minor_(Chopin%2C_rediscovered_2024)",
+      "wikipedia_extract": "The Waltz in A minor is a waltz attributed to Frédéric Chopin found in the Morgan Library & Museum and announced to the public by The New York Times on 27 October 2024. Dated back to 1830–1835, authentication would make it the first discovery of an unknown work by Chopin since the late 1930s, though Artur Szklener, Director of the Fryderyk Chopin Institute, has doubts that the manuscript represents a complete work, and thus does not group it among Chopin's waltzes.",
+      "pageviews_yearly": 18134
+    },
+    {
+      "qid": "Q112325017",
+      "title": "Waltz op. 64, no. 2, C-sharp minor"
+    },
+    {
+      "qid": "Q135185225",
+      "title": "Waltz, KK Ve/10"
+    },
+    {
+      "qid": "Q135185246",
+      "title": "Waltz, KK Ve/11"
+    },
+    {
+      "qid": "Q135185251",
+      "title": "Waltz, KK Ve/12"
+    },
+    {
+      "qid": "Q686808",
+      "title": "Waltzes",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Minute_Waltz.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q18117364",
+      "title": "Warsaw Melody"
+    },
+    {
+      "qid": "Q16766317",
+      "title": "Works for Piano and Orchestra",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chopin's_compositions_for_piano_and_orchestra",
+      "wikipedia_extract": "Frédéric Chopin's compositions for piano and orchestra originated from the late 1820s to the early 1830s, and comprise three concert pieces he composed 1827–1828, while a student at the Central School of Music in Warsaw, two piano concertos, completed and premièred between finishing his studies and leaving Poland, and later drafts, resulting in two more published works. Among these, and the other works in the brilliant style which Chopin composed in this period, the concertos are the most accomplished ones.",
+      "pageviews_yearly": 8910,
+      "movements": [
+        {
+          "qid": "Q162884"
+        },
+        {
+          "qid": "Q210210"
+        },
+        {
+          "qid": "Q1113953"
+        },
+        {
+          "qid": "Q4384879"
+        },
+        {
+          "qid": "Q2846074"
+        },
+        {
+          "qid": "Q9257964"
+        }
+      ]
+    },
+    {
+      "qid": "Q111659696",
+      "title": "piano roll with Ballade F-Dur, op. 38"
+    },
+    {
+      "qid": "Q146977",
+      "title": "Étude Op. 10, No. 1",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Frederic_Chopin_Etude_in_C_major_Op10_No1_Waterfall.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q147227",
+      "title": "Étude Op. 10, No. 10",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Frederic_Chopin_Etude_in_A-flat_major_Op10_No10.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q147244",
+      "title": "Étude Op. 10, No. 11",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Frederic_Chopin_Etude_in_A_minor_Op25_No11_Winter_Wind.mid",
+        "midi/Frederic_Chopin_Etude_in_E-flat_major_Op10_No11_Arpeggio.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q147265",
+      "title": "Étude Op. 10, No. 12",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Frederic_Chopin_Etude_in_C_minor_Op10_No12_Revolutionary.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q147005",
+      "title": "Étude Op. 10, No. 2",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Frederic_Chopin_Etude_in_F_minor_Op25_No2_The_Bees.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q147031",
+      "title": "Étude Op. 10, No. 3",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Chopin_-_Etude_Op_10_No_3.mid",
+        "midi/Frederic_Chopin_Etude_in_E_major_Op10_No3_Tristesse.mid",
+        "midi/Frederic_Chopin_Etude_in_F_major_Op25_No3_The_Horseman.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q147076",
+      "title": "Étude Op. 10, No. 4",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Frederic_Chopin_Etude_in_C-sharp_minor_Op10_No4_Torrent.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q147098",
+      "title": "Étude Op. 10, No. 5",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Frederic_Chopin_Etude_in_G-flat_major_Op10_No5_Black_Keys.mid",
+        "midi/Frederic_Chopin_Etude_in_E_minor_Op25_No5_Wrong_Note.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q147119",
+      "title": "Étude Op. 10, No. 6",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Frederic_Chopin_Etude_in_G-sharp_minor_Op25_No6_Thirds.mid",
+        "midi/Frederic_Chopin_Etude_in_E-flat_minor_Op10_No6_Lament.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q147146",
+      "title": "Étude Op. 10, No. 7",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Frederic_Chopin_Etude_in_C-sharp_minor_Op25_No7_Cello.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q147166",
+      "title": "Étude Op. 10, No. 8",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Frederic_Chopin_Etude_in_F_major_Op10_No8_Sunshine.mid",
+        "midi/Frederic_Chopin_Etude_in_D-flat_major_Op25_No8_Sixths.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q146917",
+      "title": "Études",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/frederic-chopin-1810-pp162",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/%C3%89tudes_(Chopin)",
+      "wikipedia_extract": "The Études by Frédéric Chopin are three sets of études for the piano published during the 1830s. There are 27 études overall, comprising two separate collections of 12, numbered Op. 10 and Op. 25, and a set of three without opus numbers.",
+      "pageviews_yearly": 53385,
+      "movements": [
+        {
+          "qid": "Q9255660"
+        },
+        {
+          "qid": "Q16741233"
+        },
+        {
+          "qid": "Q147580"
+        }
+      ]
+    }
+  ]
+}

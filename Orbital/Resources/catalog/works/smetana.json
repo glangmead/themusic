@@ -1,0 +1,298 @@
+{
+  "composer_slug": "smetana",
+  "composer_qid": "Q48173",
+  "work_count": 32,
+  "midi_file_count": 2,
+  "works": [
+    {
+      "qid": "Q11331293",
+      "title": "Piano Trio in G Minor",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bedrich-smetana-1824-pp48",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Trio_in_G_minor_(Smetana)",
+      "wikipedia_extract": "\nThe Piano Trio in G minor, Op. 15, for piano, violin, and cello, was written in 1855 by Bedřich Smetana initially as his Opus 9. Following some revision, he had finished and premiered the revised work in Sweden in 1858. The work was then officially published in 1880. This piece was dedicated to the memory of his eldest daughter, Bedřiška. This work features paraphrases and quotations of his previous Piano Sonata in G minor JB 3:24 (1846). This work takes approximately 28–32 minutes to perform.",
+      "pageviews_yearly": 3465,
+      "date": "1855-00-00"
+    },
+    {
+      "qid": "Q451461",
+      "title": "On the Seashore",
+      "date": "1861-00-00"
+    },
+    {
+      "qid": "Q600572",
+      "title": "Libuše",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bedrich-smetana-1824-pp13",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Libu%C5%A1e_(opera)",
+      "wikipedia_extract": "Libuše is a \"festival opera\" in three acts, with music by Bedřich Smetana. The libretto was originally written in German by Josef Wenzig, and was then translated into Czech by Ervín Špindler. In Czech historical myth, Libuše, the title character, prophesied the founding of Prague.",
+      "pageviews_yearly": 6052,
+      "date": "1872-00-00"
+    },
+    {
+      "qid": "Q3489036",
+      "title": "Viola",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bedrich-smetana-1824-pp9",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Viola_(opera)",
+      "wikipedia_extract": "Viola is an unfinished romantic opera by Bedřich Smetana. The libretto was written by Eliška Krásnohorská, and is based on Shakespeare's play Twelfth Night. The composer did some work on it in 1874 and then came back to it in 1883, when he only managed to orchestrate a few scenes; the opera was left incomplete upon Smetana's death in 1884.",
+      "pageviews_yearly": 2872,
+      "date": "1874-00-00"
+    },
+    {
+      "qid": "Q2392083",
+      "title": "Dreams",
+      "imslp_id": "Rêves,_JB_1:103_(Smetana,_Bedřich)",
+      "pdf_filename": "Smetana_Dreams.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bedrich-smetana-1824-pp169",
+      "date": "1875-00-00"
+    },
+    {
+      "qid": "Q10857024",
+      "title": "From Bohemian Woods and Fields",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bedrich-smetana-1824-pp220",
+      "date": "1875-00-00"
+    },
+    {
+      "qid": "Q10508471",
+      "title": "Šárka",
+      "imslp_id": "Šárka,_JB_1:112/3_(Smetana,_Bedřich)",
+      "pdf_filename": "PMLP85118-Smetana__MaVlast__Sarka__pi4hSmet.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bedrich-smetana-1824-pp220",
+      "date": "1875-02-20"
+    },
+    {
+      "qid": "Q3141125",
+      "title": "String Quartet No. 1",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bedrich-smetana-1824-pp46",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._1_(Smetana)",
+      "wikipedia_extract": "String Quartet No. 1 in E minor, written in 1876, is a four-movement chamber composition by Czech composer Bedřich Smetana. It is an autobiographical work with nationalistic elements and was published in 1880 by František Augustin Urbánek in Prague. It was given a private premiere in 1878 in Prague, with Antonín Dvořák as violist, and its public premiere took place on 29 March 1879, performed by Ferdinand Lachner, Jan Pelikán, Josef Krehan and Alois Neruda. Smetana was a complex figure in his time, straddling his Austro-Hungarian upbringing coupled with his ethnic Czech background. His first quartet encompasses the politics and culture that resulted from that upbringing.",
+      "pageviews_yearly": 11010,
+      "date": "1876-00-00"
+    },
+    {
+      "qid": "Q11158707",
+      "title": "Blaník",
+      "imslp_id": "Blaník,_JB_1:112/6_(Smetana,_Bedřich)",
+      "pdf_filename": "PMLP85121-Smetana__MaVlast_Blanik__pi4hSmet.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bedrich-smetana-1824-pp220",
+      "date": "1879-03-09"
+    },
+    {
+      "qid": "Q1216736",
+      "title": "The Devil's Wall",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bedrich-smetana-1824-pp17",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Devil's_Wall",
+      "wikipedia_extract": "The Devil's Wall is a comic-romantic opera in three acts, with music by Bedřich Smetana and libretto by Eliška Krásnohorská, in their third operatic collaboration. The subtext of the plot is a Czech legend of a sheer rockface that overlooks the Vltava river, near the old monastery of Vyšši Brod, where the Devil was said to have halted the building of the monastery by damming the Vltava, which then rose and flooded the site.",
+      "pageviews_yearly": 3413,
+      "date": "1882-04-00"
+    },
+    {
+      "qid": "Q7623929",
+      "title": "String Quartet No. 2",
+      "imslp_id": "String_Quartet_No.2,_JB_1:124_(Smetana,_Bedřich)",
+      "pdf_filename": "PMLP205861-Smetana_-_String_Quartet_No._2.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bedrich-smetana-1824-pp47",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._2_(Smetana)",
+      "wikipedia_extract": "Bedřich Smetana's String Quartet No. 2 in D minor is a chamber composition for string quartet. It is Smetana's second and final quartet, written between 1882 and 1883.",
+      "pageviews_yearly": 2788,
+      "date": "1883-03-12"
+    },
+    {
+      "qid": "Q2878995",
+      "title": "Bagatelles and Impromptus",
+      "imslp_id": "Bagatelles_et_impromptus,_JB_1:19_(Smetana,_Bedřich)",
+      "pdf_filename": "PMLP33261-Smetana__Bedrich-Klavirni_Dilo_Spolecnost_B.S._Band_1_00_Vorwort_filter.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bedrich-smetana-1824-pp74"
+    },
+    {
+      "qid": "Q3015682",
+      "title": "Czech dances",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bedrich-smetana-1824-pp170"
+    },
+    {
+      "qid": "Q1157925",
+      "title": "Dalibor",
+      "imslp_id": "Dalibor,_JB_1:101_(Smetana,_Bedřich)",
+      "pdf_filename": "PMLP59055-BSmetana_Dalibor_German_vocal-score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bedrich-smetana-1824-pp12",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dalibor_(opera)",
+      "wikipedia_extract": "Dalibor is a Czech opera in three acts by Bedřich Smetana. The libretto was written in German by Josef Wenzig, and translated into Czech by Ervín Špindler. It was first performed at the New Town Theatre in Prague on 16 May 1868. The opera received criticism at the time for being overly influenced by German opera, including that of Wagner's Lohengrin.",
+      "pageviews_yearly": 8649
+    },
+    {
+      "qid": "Q5210950",
+      "title": "Dalibor",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bedrich-smetana-1824-pp12",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dalibor_(film)",
+      "wikipedia_extract": "Dalibor is a 1956 Czech film rendering of the opera of the same name by Bedřich Smetana. Directed by Václav Krška, the film was entered into the 1956 Cannes Film Festival.",
+      "pageviews_yearly": 1743
+    },
+    {
+      "qid": "Q18160838",
+      "title": "Hakon Jarl",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bedrich-smetana-1824-pp30",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hakon_Jarl_(Smetana)",
+      "wikipedia_extract": "Hakon Jarl is a symphonic poem in C minor composed by Bedřich Smetana between 1860 and 1861. It is based on the historical tragedy of the same name by the Danish poet and playwright Adam Oehlenschläger. The play's protagonist and namesake is Håkon Jarl who ruled Norway in the late 10th century.",
+      "pageviews_yearly": 2477
+    },
+    {
+      "qid": "Q1044709",
+      "title": "Má vlast",
+      "imslp_id": "Má_Vlast,_JB_1:112_(Smetana,_Bedřich)",
+      "pdf_filename": "PMLP5549-Smetana_Mein_Vaterland_Partitur.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bedrich-smetana-1824-pp220",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/M%C3%A1_vlast",
+      "wikipedia_extract": "\nMá vlast, also known as My Fatherland, is a set of six symphonic poems composed between 1874 and 1879 by the Czech composer Bedřich Smetana. The six pieces, conceived as individual works, are often presented and recorded as a single work in six movements. They premiered separately between 1875 and 1880. The complete set premiered on 5 November 1882 in Žofín Palace, Prague, under Adolf Čech.",
+      "pageviews_yearly": 79884,
+      "movements": [
+        {
+          "qid": "Q11949366"
+        },
+        {
+          "qid": "Q3820990"
+        },
+        {
+          "qid": "Q10508471"
+        },
+        {
+          "qid": "Q10857024"
+        },
+        {
+          "qid": "Q12060102"
+        },
+        {
+          "qid": "Q11158707"
+        }
+      ]
+    },
+    {
+      "qid": "Q7247579",
+      "title": "Prodaná nevěsta",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bedrich-smetana-1824-pp11",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Prodan%C3%A1_nev%C4%9Bsta_(film)",
+      "wikipedia_extract": "Prodaná nevěsta  is a 1975 Czechoslovak film starring Josef Kemr. It is based on the comic opera The Bartered Bride by Bedřich Smetana.",
+      "pageviews_yearly": 945
+    },
+    {
+      "qid": "Q98590117",
+      "title": "Sitkovetsky Piano Trio plays Dvořák, Smetana & Suk"
+    },
+    {
+      "qid": "Q3485655",
+      "title": "Six Character Pieces",
+      "imslp_id": "6_Characteristic_Pieces,_Op.1_(Smetana,_Bedřich)",
+      "pdf_filename": "PMLP33600-Smetana__Bedrich-Klavirni_Dilo_Spolecnost_B.S._Band_1_02_6_Charakteristickych_Skladeb_Op_1_filter.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q3058637",
+      "title": "Sketches I",
+      "imslp_id": "4_Sketches,_Op.4_(Smetana,_Bedřich)",
+      "pdf_filename": "Smetana_-_Op.4_-_Idylle.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bedrich-smetana-1824-pp148"
+    },
+    {
+      "qid": "Q3058640",
+      "title": "Sketches II",
+      "imslp_id": "4_Sketches,_Op.5_(Smetana,_Bedřich)",
+      "pdf_filename": "PMLP33620-Smetana_op.05_Vier_Skizzen_Nr.1_Scherzo-Polka.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bedrich-smetana-1824-pp149"
+    },
+    {
+      "qid": "Q907745",
+      "title": "The Bartered Bride",
+      "has_midi": true,
+      "midi_files": [
+        "midi/ProA_bychom_se_netAsili.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q1211710",
+      "title": "The Brandenburgers in Bohemia",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bedrich-smetana-1824-pp10",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Brandenburgers_in_Bohemia",
+      "wikipedia_extract": "The Brandenburgers in Bohemia is a three-act opera, the first by Bedřich Smetana. The Czech libretto was written by Karel Sabina, and is based on events from Czech history. The work was composed in the years 1862–1863. Smetana and Sabina wrote the opera at a time of great Czech patriotism, with the pending opening of a new theatre for production of Czech operas in Prague.",
+      "pageviews_yearly": 4004
+    },
+    {
+      "qid": "Q11821482",
+      "title": "The Don Juans"
+    },
+    {
+      "qid": "Q1195062",
+      "title": "The Kiss",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bedrich-smetana-1824-pp15",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Kiss_(opera)",
+      "wikipedia_extract": "The Kiss is an opera in two acts, with music by Bedřich Smetana and text by Eliška Krásnohorská, based on a novel by Karolina Světlá. It received its first performance at the Provisional Theatre in Prague on 7 November 1876.",
+      "pageviews_yearly": 3103
+    },
+    {
+      "qid": "Q1167948",
+      "title": "The Secret",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Secret_(opera)",
+      "wikipedia_extract": "The Secret is a comic opera in three acts by Bedřich Smetana. The libretto was written by Eliška Krásnohorská. The premiere took place on 18 September 1878 at the Nové České Divadlo in Prague.",
+      "pageviews_yearly": 4699
+    },
+    {
+      "qid": "Q232134",
+      "title": "The Two Widows",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bedrich-smetana-1824-pp14",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Two_Widows",
+      "wikipedia_extract": "The Two Widows is a two-act Czech opera by Bedřich Smetana based on the libretto of Emanuel František Züngel. The libretto is based on Jean Pierre Felicien Mallefille's one-act play Les deux veuves. The opera was composed between June 1873 and January 1874, and its premiere took place on 27 March 1874 at the Prague Czech Theatre under the direction of Smetana. However, this premiere was not successful and the opera was rewritten in 1874. The spoken dialogue was replaced by through-composed recitatives and some of the music and characters were reworked. The second premiere on 20 October 1874 was very successful. A further revised version was premiered on 17 March 1878, under Adolf Čech.",
+      "pageviews_yearly": 2611
+    },
+    {
+      "qid": "Q3071022",
+      "title": "Three Album Leaves",
+      "imslp_id": "3_Album_Leaves,_Op.3_(Smetana,_Bedřich)",
+      "pdf_filename": "PMLP146546-Smetana--To-Robert-Schumann-Op3-No1--V-Urbanek.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q12060102",
+      "title": "Tábor",
+      "imslp_id": "Tábor,_JB_1:112/5_(Smetana,_Bedřich)",
+      "pdf_filename": "PMLP85120-Smetana__MaVlast_Tabor__pi4hSmet.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bedrich-smetana-1824-pp220"
+    },
+    {
+      "qid": "Q3820990",
+      "title": "Vltava",
+      "has_midi": true,
+      "midi_files": [
+        "midi/The_Moldau.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q11949366",
+      "title": "Vyšehrad",
+      "imslp_id": "Vyšehrad,_JB_1:112/1_(Smetana,_Bedřich)",
+      "pdf_filename": "PMLP85109-Smetana__MaVlast_Vysehrad__pi4hSmet.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bedrich-smetana-1824-pp220"
+    }
+  ]
+}

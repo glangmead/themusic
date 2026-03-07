@@ -1,0 +1,109 @@
+{
+  "composer_slug": "buxtehude",
+  "composer_qid": "Q153637",
+  "work_count": 12,
+  "midi_file_count": 2,
+  "works": [
+    {
+      "qid": "Q109827367",
+      "title": "Das jüngste Gericht",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Das_j%C3%BCngste_Gericht",
+      "wikipedia_extract": "Das jüngste Gericht, BuxWV Anh. 3, is an anonymous 17th-century oratorio in three acts, attributed to Dieterich Buxtehude. It is also known by its incipit, \"Wacht! Euch zum Streit gefasset macht\".",
+      "pageviews_yearly": 1435
+    },
+    {
+      "qid": "Q932247",
+      "title": "Der Herr ist mit mir",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Buxtehude_-_Alelluia.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q16549562",
+      "title": "Die Natur, oder Eigenschaft der Planeten"
+    },
+    {
+      "qid": "Q3134329",
+      "title": "Herr, wenn ich nur dich hab",
+      "imslp_id": "Herr,_wenn_ich_nur_Dich_hab,_BuxWV_38_(Buxtehude,_Dietrich)",
+      "pdf_filename": "PMLP340756-BuxWV38.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dietrich-buxtehude-1637-pp38"
+    },
+    {
+      "qid": "Q3134690",
+      "title": "Herzlich lieb hab ich dich, o Herr",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dietrich-buxtehude-1637-pp41"
+    },
+    {
+      "qid": "Q131382632",
+      "title": "In dulci jubilo",
+      "imslp_id": "In dulci jubilo, BuxWV 52 (Buxtehude, Dietrich)",
+      "pdf_filename": "PMLP340764-Buxtehude_-_In_dulci_jubilo_tab_score.PDF",
+      "has_pdf": false,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dietrich-buxtehude-1637-pp52",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/In_dulci_jubilo_(Buxtehude)",
+      "wikipedia_extract": "In dulci jubilo, BuxWV 52, is a Christmas cantata by Dieterich Buxtehude, setting the Christmas carol \"In dulci jubilo\" for three voices, two violins and continuo. He composed it between 1680 and 1685, setting the four stanzas differently. It was published in the Düben collection.",
+      "pageviews_yearly": 518
+    },
+    {
+      "qid": "Q307225",
+      "title": "Membra Jesu Nostri",
+      "imslp_id": "Membra_Jesu_Nostri,_BuxWV_75_(Buxtehude,_Dietrich)",
+      "pdf_filename": "PMLP232995-Buxtehude_-_Membra_Jesu_Nostra_-_autograph_tablature.PDF",
+      "has_pdf": false,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dietrich-buxtehude-1637-pp75",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Membra_Jesu_Nostri",
+      "wikipedia_extract": "\nMembra Jesu nostri, BuxWV 75, is a cycle of seven cantatas composed in 1680 by Dieterich Buxtehude and dedicated to Gustaf Düben. More specifically and fully it is, in Buxtehude's phrase, a “devotione decantata,” or “sung devotion,” titled Membra Jesu nostri patientis sanctissima, which translates from the Latin as Limbs Most Holy of Our Suffering Jesus. Regarding genre, the cycle consists in seven concerto-aria cantatas, a form that had emerged in Germany in the 1660s. The stanzas of its main text are drawn from the medieval hymn Salve mundi salutare, also known as the Rhythmica oratio, formerly ascribed to Bernard of Clairvaux but now thought to be by Arnulf of Leuven. Each cantata addresses a part of Jesus' crucified body: feet, knees, hands, side, breast, heart and face; in each, Biblical words referring to the limb frame verses of the hymn's text.",
+      "pageviews_yearly": 14763
+    },
+    {
+      "qid": "Q3197718",
+      "title": "Mit Fried und Freud",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dietrich-buxtehude-1637-pp76",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mit_Fried_und_Freud_(Buxtehude)",
+      "wikipedia_extract": "Mit Fried und Freud, BuxWV 76, is the common name for a piece of funeral music composed by Dieterich Buxtehude as an homage to his father in 1674. The composer named the work Fried- und Freudenreiche Hinfarth when he published it the same year. It is a bundle of two compositions, the earlier Mit Fried und Freud, BuxWV 76a, a setting of Luther's hymn Mit Fried und Freud ich fahr dahin composed in 1671 reflecting the death of Menno Hanneken, and the elegy Klag-Lied, BuxWV 76b, an aria in seven stanzas. The incipit of the elegy, \"Muß der Tod denn auch entbinden\", translates roughly to \"Even if death must separate us\". It is one of few compositions published during Buxtehude's lifetime.",
+      "pageviews_yearly": 2096,
+      "movements": [
+        {
+          "qid": "Q3317040"
+        },
+        {
+          "qid": "Q51804024"
+        }
+      ]
+    },
+    {
+      "qid": "Q3317040",
+      "title": "Mit Fried und Freud",
+      "imslp_id": "Mit_Fried_und_Freud,_BuxWV_76_(Buxtehude,_Dietrich)",
+      "pdf_filename": "PMLP212370-BuxWV76.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dietrich-buxtehude-1637-pp76"
+    },
+    {
+      "qid": "Q2310616",
+      "title": "Passacaglia in D minor",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Buxtehude_-_Passacaglia_in_D_Minor_BuxWV_161_Professional_production_score.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q47417342",
+      "title": "The Death of Empedocles"
+    },
+    {
+      "qid": "Q4019691",
+      "title": "Wie schön leuchtet der Morgenstern",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dietrich-buxtehude-1637-pp224"
+    }
+  ]
+}

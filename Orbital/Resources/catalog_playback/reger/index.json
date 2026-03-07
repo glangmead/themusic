@@ -1,0 +1,124 @@
+{
+  "composer_name": "Max Reger",
+  "name_last_first": "Reger, Max",
+  "slug": "reger",
+  "wiki_page": "https://en.wikipedia.org/wiki/Max_Reger",
+  "apple_music_playlist": "",
+  "era": "Late- / Post-Romantic",
+  "dates": "1873 – 1916",
+  "nationality": "DEU",
+  "notable": false,
+  "works": [
+    {
+      "title": "Wiegenlied Max Reger",
+      "musicxml": "musicxml/Wiegenlied_Max_Reger.mxl",
+      "midi": "midi/Wiegenlied_Max_Reger.mid",
+      "time_signature": "6/8",
+      "instruments": [
+        "Voice",
+        "Piano"
+      ],
+      "tempo_markings": [
+        "Sehr ruhig (♩spaceunicodeAugmentationDot = 40)",
+        "T",
+        "a tempo dolciss.  (molto tranquillo)"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 2,
+        "n_views": 209,
+        "duration_seconds": 94.62121302729848,
+        "n_notes": 1071,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "NA",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/4887176/scores/5254666",
+        "musescore_duration": "02:45"
+      },
+      "key": "F major",
+      "instruments_gm": [
+        "Oboe",
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 60,
+      "n_measures": 53,
+      "n_parts": 2,
+      "n_notes": 1000,
+      "notes_per_second": 10.6,
+      "apple_music_search_query": "Reger F major Wiegenlied Max Reger",
+      "parent_work_title": "Wiegenlied",
+      "lyricist": "Gretel Stein",
+      "wikidata_id": "Q10577261",
+      "wikidata_title": "Mariae Wiegenlied",
+      "musicbrainz_id": "ad93bba4-1e88-4be3-8cf3-3d86049982b2",
+      "wikidata_match_method": "title_substring",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Reger%20Wiegenlied",
+      "display_title": "Mariae Wiegenlied"
+    },
+    {
+      "title": "Der Mensch lebt und bestehet nur eine kleine Zeit Op. 138 No. 1 - Max Reger",
+      "musicxml": "musicxml/Der_Mensch_lebt_und_bestehet_nur_eine_kleine_Zeit_Op_138_No_1_-_Max_Reger.mxl",
+      "midi": "midi/Der_Mensch_lebt_und_bestehet_nur_eine_kleine_Zeit_Op_138_No_1_-_Max_Reger.mid",
+      "catalog_numbers": {
+        "Op": "138"
+      },
+      "key": "A major",
+      "time_signature": "2/2",
+      "instruments": [
+        "Sopran I",
+        "Alt I",
+        "Tenor I",
+        "Bass I",
+        "Sopran II",
+        "Alt II",
+        "Tenor II",
+        "Bass II"
+      ],
+      "tempo_markings": [
+        "Ziemlich langsam   metNoteHalfUp = 60",
+        "Etwas bewegter   metNoteHalfUp = 80"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.85,
+        "n_favorites": 2,
+        "n_views": 72,
+        "duration_seconds": 214.99994373915047,
+        "n_notes": 771,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/33131263/scores/5749975",
+        "musescore_duration": "01:47"
+      },
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 120,
+      "n_measures": 58,
+      "n_parts": 8,
+      "n_notes": 770,
+      "notes_per_second": 3.6,
+      "apple_music_search_query": "Reger Op 138 A major",
+      "movement_title": "Der Mensch lebt und bestehet nur eine kleine Zeit, Op. 138, #1",
+      "year_composed": 1914,
+      "wikidata_id": "Q24034669",
+      "wikidata_title": "Der Mensch lebt und bestehet",
+      "imslp_id": "8_Geistliche_Gesänge,_Op.138_(Reger,_Max)",
+      "wikidata_match_method": "title_substring",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Reger%20Op%20138",
+      "display_title": "Der Mensch lebt und bestehet"
+    }
+  ],
+  "birth_year": 1873,
+  "death_year": 1916,
+  "catalog_type": "Op",
+  "wikipedia_extract": "Johann Baptist Joseph Maximilian Reger (19 March 1873 – 11 May 1916) was a German composer, pianist, organist, conductor, and academic teacher. He worked as a concert pianist, a musical director at the Leipzig University Church, a professor at the Royal Conservatory in Leipzig, and a music director at the court of George II, Duke of Saxe-Meiningen. Reger first composed mainly Lieder, chamber music, choral music and works for piano and organ.",
+  "wikipedia_compositions_url": "https://en.wikipedia.org/wiki/List_of_compositions_by_Max_Reger",
+  "wikidata_id": "Q57139"
+}

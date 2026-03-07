@@ -21,7 +21,6 @@
 		9B7430A02ECFA5640017DE7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B7430922ECFA5640017DE7D /* Assets.xcassets */; };
 		9BA522562EB0FE8F00ECF215 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9BA522552EB0FE8F00ECF215 /* AudioKit */; };
 		9BAC01152F4CA5C20045341E /* table_aurora_frozen.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BAC01142F4CA5C20045341E /* table_aurora_frozen.json */; };
-		9BB2CD342F44E1C00019A2D4 /* samples in Resources */ = {isa = PBXBuildFile; fileRef = 9BB2CD332F44E1BB0019A2D4 /* samples */; };
 		9BB2CD362F44E1CA0019A2D4 /* presets in Resources */ = {isa = PBXBuildFile; fileRef = 9BB2CD352F44E1C60019A2D4 /* presets */; };
 		9BB2CD382F44E1D00019A2D4 /* patterns in Resources */ = {isa = PBXBuildFile; fileRef = 9BB2CD372F44E1CD0019A2D4 /* patterns */; };
 		9BCE26792F5479EB002D70CC /* MIDIKitIO in Frameworks */ = {isa = PBXBuildFile; productRef = 9BCE26782F5479EB002D70CC /* MIDIKitIO */; };
@@ -29,6 +28,9 @@
 		9BCED9902F246B150029ED1B /* Orbital.icon in Resources */ = {isa = PBXBuildFile; fileRef = 9BCED98F2F246B150029ED1B /* Orbital.icon */; };
 		9BD1B7002E8B08D000C718F1 /* Tonic in Frameworks */ = {isa = PBXBuildFile; productRef = 9BD1B6FF2E8B08D000C718F1 /* Tonic */; };
 		9BDF96F12F48FB39006E614F /* Keyboard in Frameworks */ = {isa = PBXBuildFile; productRef = 9BDF96F02F48FB39006E614F /* Keyboard */; };
+		9BF85B192F5B19DD0020D781 /* samples in Resources */ = {isa = PBXBuildFile; fileRef = 9BF85B182F5B19D90020D781 /* samples */; };
+		9BF85C232F5B19F30020D781 /* catalog in Resources */ = {isa = PBXBuildFile; fileRef = 9BF85C222F5B19EB0020D781 /* catalog */; };
+		9BF870A72F5B1A060020D781 /* catalog_playback in Resources */ = {isa = PBXBuildFile; fileRef = 9BF870A62F5B1A020020D781 /* catalog_playback */; };
 		DFBD9951213F20500B823AFB /* AVFAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9D0216F1C218610E8A1E8E8 /* AVFAudio.framework */; };
 		F8337F47156AD77FF619C35F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FAAA31B3A4333E0DB8DCE40 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
@@ -60,7 +62,6 @@
 		9B1F016F2EB95F0A00C5110F /* Note.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = Note.icon; sourceTree = "<group>"; };
 		9B7430922ECFA5640017DE7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BAC01142F4CA5C20045341E /* table_aurora_frozen.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = table_aurora_frozen.json; sourceTree = "<group>"; };
-		9BB2CD332F44E1BB0019A2D4 /* samples */ = {isa = PBXFileReference; lastKnownFileType = folder; path = samples; sourceTree = "<group>"; };
 		9BB2CD352F44E1C60019A2D4 /* presets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = presets; sourceTree = "<group>"; };
 		9BB2CD372F44E1CD0019A2D4 /* patterns */ = {isa = PBXFileReference; lastKnownFileType = folder; path = patterns; sourceTree = "<group>"; };
 		9BC0FCA72E704EA900472A5A /* Orbital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Orbital.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +69,9 @@
 		9BCE264A2F526CF1002D70CC /* Orbital.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Orbital.xctestplan; sourceTree = "<group>"; };
 		9BCED9102F1FD0A30029ED1B /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		9BCED98F2F246B150029ED1B /* Orbital.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = Orbital.icon; sourceTree = "<group>"; };
+		9BF85B182F5B19D90020D781 /* samples */ = {isa = PBXFileReference; lastKnownFileType = folder; path = samples; sourceTree = "<group>"; };
+		9BF85C222F5B19EB0020D781 /* catalog */ = {isa = PBXFileReference; lastKnownFileType = folder; path = catalog; sourceTree = "<group>"; };
+		9BF870A62F5B1A020020D781 /* catalog_playback */ = {isa = PBXFileReference; lastKnownFileType = folder; path = catalog_playback; sourceTree = "<group>"; };
 		9BFFD9802E7DABD200E7CB55 /* Orbital.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Orbital.entitlements; sourceTree = "<group>"; };
 		C9D0216F1C218610E8A1E8E8 /* AVFAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFAudio.framework; path = System/Library/Frameworks/AVFAudio.framework; sourceTree = SDKROOT; };
 		CC70A99AE6E5F83E5B667F92 /* orbital-play */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = text; path = "orbital-play"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +83,8 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				AppView.swift,
+				Models/ClassicsCatalog.swift,
+				Models/ClassicsCatalogLibrary.swift,
 				Models/PatternStorage.swift,
 				Models/PresetStorage.swift,
 				Models/ResourceManager.swift,
@@ -229,7 +235,9 @@
 				9BCED98F2F246B150029ED1B /* Orbital.icon */,
 				9BB2CD372F44E1CD0019A2D4 /* patterns */,
 				9BB2CD352F44E1C60019A2D4 /* presets */,
-				9BB2CD332F44E1BB0019A2D4 /* samples */,
+				9BF85B182F5B19D90020D781 /* samples */,
+				9BF85C222F5B19EB0020D781 /* catalog */,
+				9BF870A62F5B1A020020D781 /* catalog_playback */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -430,10 +438,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BF870A72F5B1A060020D781 /* catalog_playback in Resources */,
+				9BF85C232F5B19F30020D781 /* catalog in Resources */,
+				9BF85B192F5B19DD0020D781 /* samples in Resources */,
 				9B00F9D92F42402E0008058E /* AGENTS.md in Resources */,
 				9BCED9902F246B150029ED1B /* Orbital.icon in Resources */,
 				9BB2CD382F44E1D00019A2D4 /* patterns in Resources */,
-				9BB2CD342F44E1C00019A2D4 /* samples in Resources */,
 				9BB2CD362F44E1CA0019A2D4 /* presets in Resources */,
 				9BCED9112F1FD0A30029ED1B /* index.html in Resources */,
 				9B7430A02ECFA5640017DE7D /* Assets.xcassets in Resources */,

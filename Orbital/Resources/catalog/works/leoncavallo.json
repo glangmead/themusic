@@ -1,0 +1,163 @@
+{
+  "composer_slug": "leoncavallo",
+  "composer_qid": "Q189015",
+  "work_count": 19,
+  "midi_file_count": 2,
+  "works": [
+    {
+      "qid": "Q248644",
+      "title": "Pagliacci",
+      "imslp_id": "Pagliacci_(Leoncavallo,_Ruggiero)",
+      "pdf_filename": "PMLP08597-Leoncavallo_-_Pagliacci_ItEnVS_Sibley.1802.16386.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ruggiero-leoncavallo-1858-pp23",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pagliacci",
+      "wikipedia_extract": "Pagliacci is an Italian opera in a prologue and two acts, with music and libretto by Ruggero Leoncavallo. The opera tells the tale of Canio, actor and leader of a commedia dell'arte theatrical company, who murders his wife Nedda and her lover Silvio on stage during a performance. Canio portrays on stage the character of Pagliaccio (Pierrot), while Nedda portays Pierrot's unfaithful lover Columbina.",
+      "pageviews_yearly": 322707,
+      "date": "1891-00-00",
+      "movements": [
+        {
+          "qid": "Q645543"
+        }
+      ]
+    },
+    {
+      "qid": "Q8012683",
+      "title": "Zingari",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ruggiero-leoncavallo-1858-pp7",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zingari",
+      "wikipedia_extract": "Zingari (Gypsies), also known as Gli Zingari, is an opera in two acts by Ruggero Leoncavallo. The libretto by Enrico Cavacchioli and Guglielmo Emanuel is based on The Gypsies, an 1827 narrative poem by Alexander Pushkin. The opera premiered on 16 September 1912 at the Hippodrome Theatre in London. The United States premiere of the opera was staged by the Chicago Grand Opera Company in 1913 with soprano Carolina White as Fleana.",
+      "pageviews_yearly": 14993,
+      "date": "1912-01-01"
+    },
+    {
+      "qid": "Q4788478",
+      "title": "Are You There?",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Are_You_There%3F",
+      "wikipedia_extract": "Are You There? is a \"farcical musical play in two acts\" composed by Ruggero Leoncavallo with a book by Albert de Courville and lyrics by Edgar Wallace. Also described as an \"operette\" by Variety, it premièred unsuccessfully on 1 November 1913 at The Prince of Wales Theatre, London to a rowdy audience which almost became a riot. Its star, Shirley Kellogg, was Courville's wife.",
+      "pageviews_yearly": 5590
+    },
+    {
+      "qid": "Q2065855",
+      "title": "Chatterton",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ruggiero-leoncavallo-1858-pp1",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chatterton_(opera)",
+      "wikipedia_extract": "Chatterton is a dramma lirico or opera in three acts by Ruggero Leoncavallo. The libretto was written by the composer himself and is freely adapted from the life of the young English poet from Bristol, Thomas Chatterton (1752–1770). Although composed in 1876, it premiered 20 years later on 10 March 1896, at the Teatro Drammatico Nazionale in Rome.",
+      "pageviews_yearly": 3405
+    },
+    {
+      "qid": "Q3705783",
+      "title": "Der Roland von Berlin",
+      "imslp_id": "Der_Roland_von_Berlin_(Leoncavallo,_Ruggiero)",
+      "pdf_filename": "PMLP168112-Leoncavallo_-_Il_Rolando_VS1.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Der_Roland_von_Berlin_(opera)",
+      "wikipedia_extract": "Der Roland von Berlin is an opera in four acts by composer Ruggero Leoncavallo. The work uses a German-language libretto by Leoncavallo which is based on Willibald Alexis's 1840 historical novel of the same name. The opera premiered at the Königliches Opernhaus in Berlin on 13 December 1904. Its premiere in Italy was given at the Teatro di San Carlo in Naples the following month where it was sung in Italian with the title Rolando.",
+      "pageviews_yearly": 1972
+    },
+    {
+      "qid": "Q1053009",
+      "title": "Edipo re",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Edipo_re_(opera)",
+      "wikipedia_extract": "Edipo Re is an opera generally attributed to Ruggero Leoncavallo, although there is some dispute about the authorship. The libretto is by Giovacchino Forzano. It had its premiere in Chicago in 1920.",
+      "pageviews_yearly": 2330
+    },
+    {
+      "qid": "Q54983454",
+      "title": "God bless you!"
+    },
+    {
+      "qid": "Q2555421",
+      "title": "I Medici",
+      "imslp_id": "I_Medici_(Leoncavallo,_Ruggiero)",
+      "pdf_filename": "PMLP90106-Leoncavallo__Ruggiero_-_I_Medici_-Vocal_Score-.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ruggiero-leoncavallo-1858-pp81",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/I_Medici",
+      "wikipedia_extract": "I Medici is an opera in four acts composed by Ruggero Leoncavallo, with a libretto by the composer. Set in Renaissance Florence at the court of Lorenzo de' Medici, it was intended as the first part of a planned but unfinished trilogy called Crepusculum. The opera premiered on 6 November 1893 at the Teatro Dal Verme in Milan.",
+      "pageviews_yearly": 3208
+    },
+    {
+      "qid": "Q984983",
+      "title": "La bohème",
+      "imslp_id": "La_bohème_(Leoncavallo,_Ruggiero)",
+      "pdf_filename": "PMLP90104-Leoncavallo__Ruggiero_-_La_Boheme_-Vocal_Score-.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ruggiero-leoncavallo-1858-pp4",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_boh%C3%A8me_(Leoncavallo)",
+      "wikipedia_extract": "La bohème is an Italian opera in four acts, with music and libretto by Ruggero Leoncavallo, based on Scènes de la vie de bohème (1851) by Henri Murger. The opera received a successful premiere at the Teatro la Fenice, Venice, on 6 May 1897.",
+      "pageviews_yearly": 10354
+    },
+    {
+      "qid": "Q109244102",
+      "title": "La bohème",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ruggiero-leoncavallo-1858-pp4"
+    },
+    {
+      "qid": "Q56711723",
+      "title": "Laugh! Cool Clown"
+    },
+    {
+      "qid": "Q109244211",
+      "title": "Mameli",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ruggiero-leoncavallo-1858-pp18"
+    },
+    {
+      "qid": "Q539721",
+      "title": "Pagliacci",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ruggiero-leoncavallo-1858-pp23",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pagliacci_(1936_film)",
+      "wikipedia_extract": "Pagliacci is a 1936 British musical film directed by Karl Grune and starring Richard Tauber, Steffi Duna and Diana Napier. It is an adaptation in English of the 1892 opera Pagliacci by Ruggiero Leoncavallo.",
+      "pageviews_yearly": 2779
+    },
+    {
+      "qid": "Q3888952",
+      "title": "Pagliacci",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ruggiero-leoncavallo-1858-pp23",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pagliacci_(1948_film)",
+      "wikipedia_extract": "Love of a Clown, or  Pagliacci, is a 1948 Italian film based on Ruggero Leoncavallo's opera Pagliacci, directed by Mario Costa. The film stars Tito Gobbi and Gina Lollobrigida. It recounts the tragedy of Canio, the lead clown in a commedia dell'arte troupe, his wife Nedda, and her lover, Silvio. When Nedda spurns the advances of Tonio, another player in the troupe, he tells Canio about Nedda's betrayal. In a jealous rage Canio murders both Nedda and Silvio. The only actor in the cast who also sang his role was the celebrated Italian baritone, Tito Gobbi, but the film is largely very faithful to its source material, presenting the opera nearly complete.",
+      "pageviews_yearly": 4616
+    },
+    {
+      "qid": "Q3888955",
+      "title": "Pagliacci",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ruggiero-leoncavallo-1858-pp23",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pagliacci_(1982_film)",
+      "wikipedia_extract": "Pagliacci is a 1982 Italian film of Ruggero Leoncavallo's opera Pagliacci, directed by Franco Zeffirelli. All the actors, including Plácido Domingo and Teresa Stratas in the starring roles, were opera singers who sang their own parts. Pagliacci was shot at Milan's La Scala opera house and on a movie sound stage. Georges Prêtre conducted the Orchestra and Choir of La Scala.",
+      "pageviews_yearly": 8658
+    },
+    {
+      "qid": "Q54983474",
+      "title": "Stridono lassù"
+    },
+    {
+      "qid": "Q645543",
+      "title": "Vesti la giubba",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Vesti_la_Giubba.mid",
+        "midi/Vesti_la_Giubba_1.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q17060232",
+      "title": "You're Breaking My Heart",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/You're_Breaking_My_Heart",
+      "wikipedia_extract": "\"You're Breaking My Heart\" is a popular song, which was first published in 1948. Though credited to Pat Genaro and Sunny Skylar, the song is an English version of the famous Italian song \"Mattinata\" written by Ruggero Leoncavallo at the beginning of the 20th century; that song had lapsed into the public domain in the United States by the time this English song was set to its tune.",
+      "pageviews_yearly": 8291
+    },
+    {
+      "qid": "Q167914",
+      "title": "Zazà",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ruggiero-leoncavallo-1858-pp24",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zaz%C3%A0",
+      "wikipedia_extract": "Zazà is an opera by Ruggero Leoncavallo, with a libretto by the composer, which draws on the same material as the French play Zaza (1898). The story concerns the French music hall singer, Zazà, and her affair and subsequent decision to leave her lover, Milio, when she discovers that he is married. The music is influenced by the French music halls where Leoncavallo had spent his early years as a composer.",
+      "pageviews_yearly": 7198
+    }
+  ]
+}

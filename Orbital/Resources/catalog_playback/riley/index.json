@@ -1,0 +1,60 @@
+{
+  "composer_name": "Terry Riley",
+  "name_last_first": "Riley, Terry",
+  "slug": "riley",
+  "wiki_page": "https://en.wikipedia.org/wiki/Terry_Riley",
+  "apple_music_playlist": "",
+  "era": "Contemporary",
+  "dates": "1935 –",
+  "nationality": "USA",
+  "notable": false,
+  "works": [
+    {
+      "title": "In C Ut",
+      "musicxml": "musicxml/In_C_Ut.mxl",
+      "midi": "midi/In_C_Ut.mid",
+      "time_signature": "4/4",
+      "instruments": [
+        "Flute"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.49,
+        "n_favorites": 0,
+        "n_views": 600,
+        "duration_seconds": 322.2499999916752,
+        "n_notes": 530,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/10352206/scores/5891375",
+        "musescore_duration": "05:44"
+      },
+      "instruments_gm": [
+        "Flute"
+      ],
+      "tempo_bpm": 120,
+      "n_measures": 53,
+      "n_parts": 1,
+      "n_notes": 524,
+      "notes_per_second": 1.6,
+      "apple_music_search_query": "Riley In C Ut",
+      "movement_title": "In C",
+      "key": "C major",
+      "year_composed": 1964,
+      "wikidata_id": "Q1500990",
+      "wikidata_title": "In C",
+      "musicbrainz_id": "a645d42f-18ce-3973-b026-89e6566e659a",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Riley%20In%20C%20Ut",
+      "display_title": "In C"
+    }
+  ],
+  "birth_year": 1935,
+  "wikipedia_extract": "Terrence Mitchell Riley (born June 24, 1935) is an American composer and performing musician best known as a pioneer of the minimalist school of composition. Influenced by jazz and Indian classical music, his work became notable for its innovative use of repetition, tape delay systems, and improvisation. His best known works are the 1964 composition In C and the 1969 album A Rainbow in Curved Air, both considered landmarks of minimalism and important influences on experimental music, rock, an...",
+  "wikidata_id": "Q365243",
+  "apple_music_artist_id": "41358711",
+  "apple_music_classical_url": "https://classical.music.apple.com/us/artist/41358711"
+}

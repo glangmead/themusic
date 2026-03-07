@@ -1,0 +1,644 @@
+{
+  "composer_name": "Gustav Holst",
+  "name_last_first": "Holst, Gustav",
+  "slug": "holst",
+  "wiki_page": "https://en.wikipedia.org/wiki/Gustav_Holst",
+  "apple_music_playlist": "https://music.apple.com/us/playlist/gustav-holst-essentials/pl.f0ab4986d37d41ed8aa74d4ad2eeaf22",
+  "era": "Modern",
+  "dates": "1874 – 1934",
+  "nationality": "ENG",
+  "notable": true,
+  "works": [
+    {
+      "title": "In the Bleak Midwinter",
+      "musicxml": "musicxml/In_the_Bleak_Midwinter.mxl",
+      "midi": "midi/In_the_Bleak_Midwinter.mid",
+      "time_signature": "4/4",
+      "instruments": [
+        "Guitarra clásica"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 5,
+        "n_views": 123,
+        "duration_seconds": 41.739221171131085,
+        "n_notes": 408,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "christmas-carol-holst-rossetti-english-winter-choir-choral",
+        "musescore_url": "https://musescore.com/user/3495691/scores/5909449",
+        "musescore_duration": "00:42"
+      },
+      "key": "A major",
+      "key_changes": [
+        "A major",
+        "G major"
+      ],
+      "instruments_gm": [
+        "Acoustic Guitar (nylon)"
+      ],
+      "tempo_bpm": 92,
+      "n_measures": 50,
+      "n_parts": 1,
+      "n_notes": 499,
+      "notes_per_second": 12.0,
+      "apple_music_search_query": "Holst A major In the Bleak Midwinter",
+      "lyricist": "Christina Rosetti",
+      "wikidata_id": "Q3797415",
+      "wikidata_title": "In the Bleak Midwinter",
+      "musicbrainz_id": "e41df163-2f2e-4ed6-b407-17bcac64e348",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Holst%20In%20the%20Bleak%20Midwinter",
+      "display_title": "In the Bleak Midwinter"
+    },
+    {
+      "title": "In the bleak midwinter",
+      "musicxml": "musicxml/In_the_bleak_midwinter_1.mxl",
+      "midi": "midi/In_the_bleak_midwinter_1.mid",
+      "time_signature": "4/4",
+      "instruments": [
+        "Guitarra clásica"
+      ],
+      "tempo_markings": [
+        "In moderate time"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.63,
+        "n_favorites": 6,
+        "n_views": 397,
+        "duration_seconds": 48.750121874025,
+        "n_notes": 211,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/3099636/scores/5744009",
+        "musescore_duration": "00:49"
+      },
+      "key": "A major",
+      "key_changes": [
+        "A major",
+        "G major"
+      ],
+      "instruments_gm": [
+        "Acoustic Guitar (nylon)"
+      ],
+      "tempo_bpm": 92,
+      "n_measures": 50,
+      "n_parts": 1,
+      "n_notes": 499,
+      "notes_per_second": 10.2,
+      "apple_music_search_query": "Holst A major In the bleak midwinter",
+      "lyricist": "Christina Rosetti",
+      "wikidata_id": "Q3797415",
+      "wikidata_title": "In the Bleak Midwinter",
+      "musicbrainz_id": "e41df163-2f2e-4ed6-b407-17bcac64e348",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Holst%20In%20the%20bleak%20midwinter",
+      "display_title": "In the Bleak Midwinter"
+    },
+    {
+      "title": "Gustav Holst - In the Bleak Midwinter",
+      "musicxml": "musicxml/Gustav_Holst_-_In_the_Bleak_Midwinter.mxl",
+      "midi": "midi/Gustav_Holst_-_In_the_Bleak_Midwinter.mid",
+      "key": "G major",
+      "time_signature": "4/4",
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 0,
+        "n_views": 55,
+        "duration_seconds": 31.999999999173333,
+        "n_notes": 45,
+        "complexity": "1",
+        "is_original": false,
+        "is_best_arrangement": false,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/11050847/scores/4869909",
+        "musescore_duration": "00:32"
+      },
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 120,
+      "n_measures": 16,
+      "n_parts": 1,
+      "n_notes": 44,
+      "notes_per_second": 1.4,
+      "apple_music_search_query": "Holst G major Gustav Holst - In the Bleak Midwinter",
+      "parent_work_title": "In the Bleak Midwinter",
+      "wikidata_id": "Q3797415",
+      "wikidata_title": "In the Bleak Midwinter",
+      "musicbrainz_id": "e41df163-2f2e-4ed6-b407-17bcac64e348",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Holst%20-%20In%20the%20Bleak%20Midwinter",
+      "display_title": "In the Bleak Midwinter"
+    },
+    {
+      "title": "Holst The Planets-Neptune (Excerpt) Choral Finale with Piano",
+      "musicxml": "musicxml/Holst_The_Planets-Neptune_Excerpt_Choral_Finale_with_Piano.mxl",
+      "midi": "midi/Holst_The_Planets-Neptune_Excerpt_Choral_Finale_with_Piano.mid",
+      "form": "Chorale",
+      "time_signature": "5/4",
+      "instruments": [
+        "Voice",
+        "Piano"
+      ],
+      "tempo_markings": [
+        "Allegretto"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 14,
+        "n_views": 1279,
+        "duration_seconds": 440.6249408924954,
+        "n_notes": 1563,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/hmscomp/scores/2477501",
+        "musescore_duration": "02:33"
+      },
+      "key": "E major",
+      "instruments_gm": [
+        "Choir Aahs",
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 112,
+      "n_measures": 56,
+      "n_parts": 5,
+      "n_notes": 1229,
+      "notes_per_second": 2.8,
+      "apple_music_search_query": "Holst E major Holst The Planets-Neptune (Excerpt) Choral Finale ",
+      "parent_work_title": "The Planets - Neptune",
+      "wikidata_id": "Q303508",
+      "wikidata_title": "The Planets",
+      "musicbrainz_id": "439c1605-bf74-4e0c-b2d9-6f4f89619ec6",
+      "imslp_id": "The_Planets,_Op.32_(Holst,_Gustav)",
+      "wikidata_match_method": "title_tokens",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Holst%20The%20Planets-Neptune%20%28Excerpt%29%20Choral%20Finale%20with%20P",
+      "display_title": "The Planets"
+    },
+    {
+      "title": "In the Bleak Midwinter",
+      "musicxml": "musicxml/In_the_Bleak_Midwinter_2.mxl",
+      "midi": "midi/In_the_Bleak_Midwinter_2.mid",
+      "time_signature": "4/4",
+      "instruments": [
+        "Guitarra clásica"
+      ],
+      "tempo_markings": [
+        "Andante"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 2,
+        "n_views": 83,
+        "duration_seconds": 182.8571428523537,
+        "n_notes": 637,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/4899006/scores/5857841",
+        "musescore_duration": "03:03"
+      },
+      "key": "A major",
+      "key_changes": [
+        "A major",
+        "G major"
+      ],
+      "instruments_gm": [
+        "Acoustic Guitar (nylon)"
+      ],
+      "tempo_bpm": 92,
+      "n_measures": 50,
+      "n_parts": 1,
+      "n_notes": 499,
+      "notes_per_second": 2.7,
+      "apple_music_search_query": "Holst A major In the Bleak Midwinter",
+      "lyricist": "Christina Rosetti",
+      "wikidata_id": "Q3797415",
+      "wikidata_title": "In the Bleak Midwinter",
+      "musicbrainz_id": "e41df163-2f2e-4ed6-b407-17bcac64e348",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Holst%20In%20the%20Bleak%20Midwinter",
+      "display_title": "In the Bleak Midwinter"
+    },
+    {
+      "title": "First Suite for Military Band Op.28 No.1",
+      "musicxml": "musicxml/First_Suite_in_Ea.mxl",
+      "midi": "midi/First_Suite_in_Ea.mid",
+      "catalog_numbers": {
+        "Op": "28"
+      },
+      "form": "Suite",
+      "time_signature": "3/4",
+      "instruments": [
+        "Piano"
+      ],
+      "movements": [
+        {
+          "start_measure": 255,
+          "time_signature": "4/4"
+        },
+        {
+          "start_measure": 275,
+          "time_signature": "2/2"
+        }
+      ],
+      "is_multi_movement": true,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 1,
+        "n_views": 67,
+        "duration_seconds": 768.0693969646286,
+        "n_notes": 4847,
+        "complexity": "2",
+        "is_original": false,
+        "is_best_arrangement": false,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/26808580/scores/6103030",
+        "musescore_duration": "10:14"
+      },
+      "key": "E♭ major",
+      "key_changes": [
+        "E♭ major",
+        "C major",
+        "A♭ major"
+      ],
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 86,
+      "n_measures": 453,
+      "n_parts": 1,
+      "n_notes": 4843,
+      "notes_per_second": 6.3,
+      "apple_music_search_query": "Holst Op 28 E♭ major",
+      "parent_work_title": "First Suite in E♭",
+      "year_composed": 1909,
+      "wikidata_id": "Q4324726",
+      "wikidata_title": "First Suite in E-flat for Military Band",
+      "musicbrainz_id": "e8530598-9e74-45f9-8686-d02e97e338d0",
+      "wikidata_match_method": "title_substring",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Holst%20Op%2028",
+      "display_title": "First Suite in E-flat for Military Band"
+    },
+    {
+      "title": "Song Without Words (I'll Love My Love) [For Piano and Viola]",
+      "musicxml": "musicxml/Song_Without_Words_Ill_Love_My_Love_For_Piano_and_Viola.mxl",
+      "midi": "midi/Song_Without_Words_Ill_Love_My_Love_For_Piano_and_Viola.mid",
+      "form": "Song",
+      "time_signature": "4/4",
+      "instruments": [
+        "Viola",
+        "Piano"
+      ],
+      "tempo_markings": [
+        "♩ = 67 Adagio"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 19,
+        "n_views": 868,
+        "duration_seconds": 158.95474938459668,
+        "n_notes": 469,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "NA",
+        "tags": "holst-classical-music-viola-piano-suiteinf-songwithoutwords-solo-accompaniment-f-arrangement-love-illlovemylove",
+        "musescore_url": "https://musescore.com/user/12837061/scores/2945156",
+        "musescore_duration": "02:13"
+      },
+      "key": "D major",
+      "instruments_gm": [
+        "Viola",
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 67,
+      "n_measures": 37,
+      "n_parts": 2,
+      "n_notes": 463,
+      "notes_per_second": 2.9,
+      "apple_music_search_query": "Holst D major Song Without Words (I'll Love My Love) [For Piano ",
+      "parent_work_title": "Song Without Words",
+      "year_composed": 1922,
+      "wikidata_id": "Q78156574",
+      "wikidata_title": "2 Songs without Words",
+      "wikidata_match_method": "title_tokens",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Holst%20Song%20Without%20Words%20%28I%27ll%20Love%20My%20Love%29%20%5BFor%20Piano",
+      "display_title": "2 Songs without Words"
+    },
+    {
+      "title": "In the bleak midwinter",
+      "musicxml": "musicxml/In_the_bleak_midwinter_3.mxl",
+      "midi": "midi/In_the_bleak_midwinter_3.mid",
+      "time_signature": "4/4",
+      "instruments": [
+        "Guitarra clásica"
+      ],
+      "tempo_markings": [
+        "Andante moderato"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 3,
+        "n_views": 133,
+        "duration_seconds": 129.1307154981868,
+        "n_notes": 505,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "NA",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/2657361/scores/5849185",
+        "musescore_duration": "02:10"
+      },
+      "key": "A major",
+      "key_changes": [
+        "A major",
+        "G major"
+      ],
+      "instruments_gm": [
+        "Acoustic Guitar (nylon)"
+      ],
+      "tempo_bpm": 92,
+      "n_measures": 50,
+      "n_parts": 1,
+      "n_notes": 499,
+      "notes_per_second": 3.9,
+      "apple_music_search_query": "Holst A major In the bleak midwinter",
+      "lyricist": "Christina Rosetti",
+      "wikidata_id": "Q3797415",
+      "wikidata_title": "In the Bleak Midwinter",
+      "musicbrainz_id": "e41df163-2f2e-4ed6-b407-17bcac64e348",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Holst%20In%20the%20bleak%20midwinter",
+      "display_title": "In the Bleak Midwinter"
+    },
+    {
+      "title": "Gustav Holst's March from the Second Suite in F for Military band",
+      "musicxml": "musicxml/Gustav_Holsts_March_from_the_Second_Suite_in_F_for_Military_band.mxl",
+      "midi": "midi/Gustav_Holsts_March_from_the_Second_Suite_in_F_for_Military_band.mid",
+      "form": "Suite",
+      "time_signature": "2/2",
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.81,
+        "n_favorites": 27,
+        "n_views": 970,
+        "duration_seconds": 463.4999999775472,
+        "n_notes": 874,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/32262816/scores/5902567",
+        "musescore_duration": "04:29"
+      },
+      "key": "F major",
+      "key_changes": [
+        "F major",
+        "D♭ major"
+      ],
+      "instruments_gm": [
+        "Tuba"
+      ],
+      "tempo_bpm": 240,
+      "n_measures": 159,
+      "n_parts": 1,
+      "n_notes": 859,
+      "notes_per_second": 1.9,
+      "apple_music_search_query": "Holst F major Gustav Holst's March from the Second Suite in F fo",
+      "parent_work_title": "Second Suite in F",
+      "instruments": [
+        "Euphonium"
+      ],
+      "year_composed": 1911,
+      "wikidata_id": "Q2641380",
+      "wikidata_title": "Second Suite in F for Military Band",
+      "musicbrainz_id": "37d9b87e-2d52-4cce-835f-e47980c42fc7",
+      "wikidata_match_method": "title_substring",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Holst%20%27s%20March%20from%20the%20Second%20Suite%20in%20F%20for%20Military%20b",
+      "display_title": "Second Suite in F for Military Band"
+    },
+    {
+      "title": "The Planets Op.32",
+      "musicxml": "musicxml/Jupiter_1.mxl",
+      "midi": "midi/Jupiter_1.mid",
+      "catalog_numbers": {
+        "Op": "32"
+      },
+      "time_signature": "3/4",
+      "instruments": [
+        "Violin",
+        "Violoncello",
+        "Contrabass",
+        "Piano"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 1,
+        "n_views": 317,
+        "duration_seconds": 137.02739736773336,
+        "n_notes": 522,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "classical-baroque-holst-jupiter",
+        "musescore_url": "https://musescore.com/user/34134587/scores/5966746",
+        "musescore_duration": "02:21"
+      },
+      "key": "G major",
+      "instruments_gm": [
+        "Violin",
+        "Cello",
+        "Contrabass",
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 74,
+      "n_measures": 43,
+      "n_parts": 4,
+      "n_notes": 522,
+      "notes_per_second": 3.8,
+      "apple_music_search_query": "Holst Op 32 G major",
+      "parent_work_title": "Title",
+      "wikidata_id": "Q303508",
+      "wikidata_title": "The Planets",
+      "musicbrainz_id": "439c1605-bf74-4e0c-b2d9-6f4f89619ec6",
+      "imslp_id": "The_Planets,_Op.32_(Holst,_Gustav)",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Holst%20Op%2032",
+      "display_title": "The Planets"
+    },
+    {
+      "title": "Hymn to Indra - Gustav Holst",
+      "musicxml": "musicxml/Hymn_to_Indra_-_Gustav_Holst.mxl",
+      "midi": "midi/Hymn_to_Indra_-_Gustav_Holst.mid",
+      "form": "Hymn",
+      "key": "Eb major",
+      "time_signature": "4/4",
+      "instruments": [
+        "Tenor",
+        "Bass",
+        "Piano"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 2,
+        "n_views": 52,
+        "duration_seconds": 135.71428571073128,
+        "n_notes": 1653,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/33131263/scores/5748138",
+        "musescore_duration": "02:17"
+      },
+      "key_from_data": "E♭ major",
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 120,
+      "n_measures": 48,
+      "n_parts": 3,
+      "n_notes": 1653,
+      "notes_per_second": 12.2,
+      "apple_music_search_query": "Holst Eb major Hymn to Indra - Gustav Holst",
+      "parent_work_title": "Hymn to Indra",
+      "wikidata_id": "Q135650090",
+      "wikidata_title": "Indra",
+      "wikidata_match_method": "title_tokens",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Holst%20Hymn%20to%20Indra%20-",
+      "display_title": "Indra"
+    },
+    {
+      "title": "Jupiter The Bringer Of Jollity",
+      "musicxml": "musicxml/O_God_Beyond_All_Praising.mxl",
+      "midi": "midi/O_God_Beyond_All_Praising.mid",
+      "time_signature": "3/4",
+      "instruments": [
+        "Voice",
+        "Tenor Trombone",
+        "Bass Trombone",
+        "Organ"
+      ],
+      "tempo_markings": [
+        "Moderato ♩ = 76"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.74,
+        "n_favorites": 16,
+        "n_views": 2728,
+        "duration_seconds": 113.68391135513632,
+        "n_notes": 643,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "thaxted-jupiter-hymn-holst",
+        "musescore_url": "https://musescore.com/user/124976/scores/970691",
+        "musescore_duration": "00:58"
+      },
+      "instruments_gm": [
+        "Choir Aahs",
+        "Trombone",
+        "Church Organ"
+      ],
+      "tempo_bpm": 76,
+      "n_measures": 25,
+      "n_parts": 4,
+      "n_notes": 637,
+      "notes_per_second": 5.6,
+      "apple_music_search_query": "Holst Jupiter The Bringer Of Jollity",
+      "parent_work_title": "Thaxted",
+      "wikidata_id": "Q7711508",
+      "wikidata_title": "Thaxted",
+      "musicbrainz_id": "6ec19d24-074b-4358-bbb1-c751431e8714",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Holst%20Jupiter%20The%20Bringer%20Of%20Jollity",
+      "display_title": "Thaxted"
+    },
+    {
+      "title": "Second Suite for Military Band Op.28 No.2",
+      "musicxml": "musicxml/Second_Suite_in_F.mxl",
+      "midi": "midi/Second_Suite_in_F.mid",
+      "catalog_numbers": {
+        "Op": "28"
+      },
+      "form": "Suite",
+      "time_signature": "2/2",
+      "instruments": [
+        "Piano"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.92,
+        "n_favorites": 18,
+        "n_views": 696,
+        "duration_seconds": 463.4999999775472,
+        "n_notes": 2191,
+        "complexity": "2",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/26808580/scores/5658530",
+        "musescore_duration": "11:38"
+      },
+      "key": "F major",
+      "key_changes": [
+        "F major",
+        "D♭ major"
+      ],
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 240,
+      "n_measures": 159,
+      "n_parts": 1,
+      "n_notes": 2175,
+      "notes_per_second": 4.7,
+      "apple_music_search_query": "Holst Op 28 F major",
+      "parent_work_title": "Second Suite in F",
+      "year_composed": 1911,
+      "wikidata_id": "Q2641380",
+      "wikidata_title": "Second Suite in F for Military Band",
+      "musicbrainz_id": "37d9b87e-2d52-4cce-835f-e47980c42fc7",
+      "wikidata_match_method": "title_substring",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Holst%20Op%2028",
+      "display_title": "Second Suite in F for Military Band"
+    }
+  ],
+  "birth_year": 1874,
+  "death_year": 1934,
+  "catalog_type": "Op",
+  "wikipedia_extract": "Gustav Holst (born Gustavus Theodore von Holst; 21 September 1874 – 25 May 1934) was an English composer, arranger and teacher. Best known for his orchestral suite The Planets, he composed many other works across a range of genres, although none achieved comparable success. His distinctive compositional style was the product of many influences, Richard Wagner and Richard Strauss being most crucial early in his development.",
+  "wikipedia_compositions_url": "https://en.wikipedia.org/wiki/List_of_compositions_by_Gustav_Holst",
+  "wikidata_id": "Q200867",
+  "apple_music_artist_id": "1129428",
+  "apple_music_classical_url": "https://classical.music.apple.com/us/artist/1129428"
+}

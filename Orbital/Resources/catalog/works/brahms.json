@@ -1,0 +1,1127 @@
+{
+  "composer_slug": "brahms",
+  "composer_qid": "Q7294",
+  "work_count": 124,
+  "midi_file_count": 12,
+  "works": [
+    {
+      "qid": "Q108874748",
+      "title": "In der Fremde",
+      "date": "1852-00-00"
+    },
+    {
+      "qid": "Q18413493",
+      "title": "Variations on a Theme by Robert Schumann",
+      "imslp_id": "Variations_on_a_Theme_by_Robert_Schumann,_Op.9_(Brahms,_Johannes)",
+      "pdf_filename": "Brahms_-_Variations_Op.9_-_Sauer.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp48",
+      "date": "1854-00-00"
+    },
+    {
+      "qid": "Q136312254",
+      "title": "Variations on an Original Theme, Op. 21 No. 1",
+      "imslp_id": "Variations_on_an_Original_Theme,_Op.21_No.1_(Brahms,_Johannes)",
+      "pdf_filename": "Brahms_-_Variations_Op.21.1_-_Sauer.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1857-00-00"
+    },
+    {
+      "qid": "Q123382587",
+      "title": "Begräbnisgesang",
+      "imslp_id": "Begräbnisgesang,_Op.13_(Brahms,_Johannes)",
+      "pdf_filename": "PMLP52273-BraWV__S._42.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp95",
+      "date": "1858-00-00"
+    },
+    {
+      "qid": "Q106039802",
+      "title": "Abendständchen",
+      "date": "1859-00-00"
+    },
+    {
+      "qid": "Q2482582",
+      "title": "String Sextet No. 1",
+      "imslp_id": "String_Sextet_No.1,_Op.18_(Brahms,_Johannes)",
+      "pdf_filename": "Brahms_-_018_-_Sextet_Bb__2H_Keller_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp18",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Sextet_No._1_(Brahms)",
+      "wikipedia_extract": "The String Sextet No. 1 in B♭ major, Op. 18, was composed in 1860 by Johannes Brahms and premiered 20 October that year in Hanover by an ensemble led by Joseph Joachim. It was published in 1862 by the firm of Fritz Simrock.",
+      "pageviews_yearly": 9283,
+      "date": "1859-00-00"
+    },
+    {
+      "qid": "Q106039991",
+      "title": "Gesänge, Chor, op. 42",
+      "imslp_id": "3_Songs,_Op.42_(Brahms,_Johannes)",
+      "pdf_filename": "PMLP52590-BraWV__S._152f.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1861-00-00",
+      "movements": [
+        {
+          "qid": "Q106039802"
+        }
+      ]
+    },
+    {
+      "qid": "Q691140",
+      "title": "Piano Quartet No. 2",
+      "imslp_id": "Piano_Quartet_No.2,_Op.26_(Brahms,_Johannes)",
+      "pdf_filename": "PMLP52504-BraWV__S._90.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp25",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Quartet_No._2_(Brahms)",
+      "wikipedia_extract": "The Piano Quartet No. 2 in A major, Op. 26, by Johannes Brahms is scored for piano, violin, viola and cello. It was completed in 1861 and received its premiere in November 1862 by the Hellmesberger Quartet with the composer playing the piano part. It has been especially noted for drawing influence from composer Franz Schubert. Lasting approximately 50 minutes, this quartet is the longest of Brahms's chamber works to perform and one of the longest piano quartets in the repertoire. He also made an arrangement of this quartet for two pianos.",
+      "pageviews_yearly": 5470,
+      "date": "1861-00-00"
+    },
+    {
+      "qid": "Q3554787",
+      "title": "Variations and Fugue on a Theme by Handel",
+      "imslp_id": "Variations_and_Fugue_on_a_Theme_by_Handel,_Op.24_(Brahms,_Johannes)",
+      "pdf_filename": "Brahms_-_Variations_Op.24_-_Sauer.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp57",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Variations_and_Fugue_on_a_Theme_by_Handel",
+      "wikipedia_extract": "The Variations and Fugue on a Theme by Handel, Op. 24, is a work for solo piano written by Johannes Brahms in 1861. It consists of a set of twenty-five variations and a concluding fugue, all based on a theme from George Frideric Handel's Harpsichord Suite No. 1 in B♭ major, HWV 434. They are known as his Handel Variations.",
+      "pageviews_yearly": 10333,
+      "date": "1861-00-00"
+    },
+    {
+      "qid": "Q1479539",
+      "title": "Variations on a Theme of Paganini",
+      "imslp_id": "Variations_on_a_Theme_by_Paganini,_Op.35_(Brahms,_Johannes)",
+      "pdf_filename": "PMLP06495-BraWV__S._129.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Variations_on_a_Theme_of_Paganini",
+      "wikipedia_extract": "Variations on a Theme of Paganini, Op. 35, is a work for piano composed in 1863 by Johannes Brahms, based on the Caprice No. 24 in A minor by Niccolò Paganini.",
+      "pageviews_yearly": 10165,
+      "date": "1862-00-00"
+    },
+    {
+      "qid": "Q7334559",
+      "title": "Rinaldo",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp100",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rinaldo_(cantata)",
+      "wikipedia_extract": "Rinaldo, Op. 50, is a cantata for tenor solo, four-part male chorus and orchestra by German composer Johannes Brahms. It was begun in 1863 as an entry for a choral competition announced in Aachen. He chose as his text the dramatic poem of the same name by Johann Wolfgang von Goethe, which presents an episode from the epic Jerusalem Delivered by Torquato Tasso in the form of a series of dialogues between the knight Rinaldo, who has been enchanted by the witch Armida, and his fellow knights, who are calling him back to the path of duty.",
+      "pageviews_yearly": 4065,
+      "date": "1863-00-00"
+    },
+    {
+      "qid": "Q3477975",
+      "title": "Sixteen Waltzes, Op. 39",
+      "imslp_id": "16_Waltzes,_Op.39_(Brahms,_Johannes)",
+      "pdf_filename": "Brahms_-_Waltzes_Op.39.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sixteen_Waltzes%2C_Op._39_(Brahms)",
+      "wikipedia_extract": "Sixteen Waltzes, Op. 39, is a set of 16 short waltzes for piano written by Johannes Brahms. They were composed in 1865, and published in 1866, dedicated to the music critic Eduard Hanslick.",
+      "pageviews_yearly": 11447,
+      "date": "1865-00-00"
+    },
+    {
+      "qid": "Q1358378",
+      "title": "Variations on a Theme by Haydn, Op. 56a",
+      "imslp_id": "Variations_on_a_Theme_by_Haydn,_Op.56_(Brahms,_Johannes)",
+      "pdf_filename": "Brahms_-_Op.56_-_Arr_Stark.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp7",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Variations_on_a_Theme_by_Haydn",
+      "wikipedia_extract": "The Variations on a Theme by Joseph Haydn, now also called the Saint Anthony Variations, is a work in the form of a theme and variations, composed by Johannes Brahms in the summer of 1873 at Tutzing in Bavaria. It consists of a theme in B♭ major based on a \"Chorale St Antoni\", eight variations, and a finale. The work was published in two versions: for two pianos, written first but designated Op. 56b; and for orchestra, designated Op. 56a. The orchestral version is better known and much more often heard than the two-piano version.",
+      "pageviews_yearly": 18142,
+      "date": "1873-00-00"
+    },
+    {
+      "qid": "Q900170",
+      "title": "String Quartet No. 3",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp17",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._3_(Brahms)",
+      "wikipedia_extract": "The String Quartet No. 3 in B♭ major, Op. 67, was composed by Johannes Brahms in the summer of 1875 and published by the firm of Fritz Simrock. It received its premiere performance on October 30, 1876 in Berlin. It has four movements:",
+      "pageviews_yearly": 4754,
+      "date": "1875-00-00"
+    },
+    {
+      "qid": "Q30931316",
+      "title": "Feldeinsamkeit",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp183",
+      "date": "1879-00-00"
+    },
+    {
+      "qid": "Q442416",
+      "title": "Nänie",
+      "imslp_id": "Nänie,_Op.82_(Brahms,_Johannes)",
+      "pdf_filename": "PMLP52824-BraWV__S._342.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp105",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/N%C3%A4nie",
+      "wikipedia_extract": "Nänie is a composition for SATB chorus and orchestra, Op. 82 by Johannes Brahms, which sets to music the poem \"Nänie\" by Friedrich Schiller. Brahms composed the piece in 1881, in memory of his deceased friend Anselm Feuerbach. It was first performed by the Tonhalle Gesellschaft Chorus Zürich on 6 December 1881, conducted by Brahms. Nänie is a lamentation on the inevitability of death; the first sentence, \"Auch das Schöne muß sterben\", translates to \"Even beauty must die\". Typical duration of a performance is approximately 15 minutes.",
+      "pageviews_yearly": 11095,
+      "date": "1880-00-00"
+    },
+    {
+      "qid": "Q1366627",
+      "title": "Tragic Overture",
+      "imslp_id": "Tragic_Overture,_Op.81_(Brahms,_Johannes)",
+      "pdf_filename": "Brahms_-_Tragic_Overture.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp9",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tragic_Overture_(Brahms)",
+      "wikipedia_extract": "The Tragic Overture, Op. 81, is a concert overture for orchestra written by Johannes Brahms during the summer of 1880. It premiered, under Hans Richter, on 26 December 1880 in Vienna. Most performances last between twelve and fifteen minutes.",
+      "pageviews_yearly": 8606,
+      "date": "1880-00-00"
+    },
+    {
+      "qid": "Q5813732",
+      "title": "Two Songs for Alto Voice, Viola and Piano, op. 91",
+      "imslp_id": "2_Gesänge,_Op.91_(Brahms,_Johannes)",
+      "pdf_filename": "PMLP52839-BraWV__S._376.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Two_Songs_for_Voice%2C_Viola_and_Piano",
+      "wikipedia_extract": "Two Songs for Voice, Viola and Piano, Op. 91, were composed by Johannes Brahms for his friends Joseph Joachim and his wife Amalie. The text of the first song, \"Gestillte Sehnsucht\", is a poem by Friedrich Rückert, composed in 1884. The text of the second, \"Geistliches Wiegenlied\" was written by Emanuel Geibel after Lope de Vega, and set to music in 1863. They were published together in 1884.",
+      "pageviews_yearly": 7938,
+      "date": "1884-00-00"
+    },
+    {
+      "qid": "Q3490207",
+      "title": "Violin Sonata No. 2",
+      "imslp_id": "Violin_Sonata_No.2,_Op.100_(Brahms,_Johannes)",
+      "pdf_filename": "Brahms_Violinsonate_Nr.2_op.100.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp36",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Violin_Sonata_No._2_(Brahms)",
+      "wikipedia_extract": "The Violin Sonata No. 2 in A major, Op. 100, by Johannes Brahms, the second of three such works for violin and piano, was written while spending the summer of 1886 in Thun in the Bernese Oberland, Switzerland. It was first performed on 2 December 1886 in Vienna.",
+      "pageviews_yearly": 9574,
+      "date": "1886-00-00"
+    },
+    {
+      "qid": "Q3414637",
+      "title": "String Quintet No. 2",
+      "imslp_id": "String_Quintet_No.2,_Op.111_(Brahms,_Johannes)",
+      "pdf_filename": "Brahms_-_111_-_Quintet_G__2H_Klengel_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp22",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quintet_No._2_(Brahms)",
+      "wikipedia_extract": "String Quintet No. 2 in G major, Op. 111, is a work by Johannes Brahms composed in 1890 and published in 1891. It is known as the Prater Quintet. Brahms intended it to be his last piece of music, though he later produced a number of piano pieces and the two sonatas for clarinet or viola and piano. The first performance of the Quintet in Vienna on November 11, 1890 was a sensation.",
+      "pageviews_yearly": 6805,
+      "date": "1890-00-00"
+    },
+    {
+      "qid": "Q1257047",
+      "title": "Three Intermezzi for piano, Op. 117",
+      "imslp_id": "3_Intermezzi,_Op.117_(Brahms,_Johannes)",
+      "pdf_filename": "Brahms_-_Op.117_-_Sauer.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Three_Intermezzi_for_piano%2C_Op._117_(Brahms)",
+      "wikipedia_extract": "The Three Intermezzi for piano, Op. 117, are a set of solo piano pieces composed by Johannes Brahms in 1892. They show Brahms's interest in lullaby; in particular, Brahms told a friend that they were \"three lullabies of my grief\". They consist of:Intermezzo in E♭ major. Andante moderato\nIntermezzo in B♭ minor. Andante non troppo e con molto espressione\nIntermezzo in C♯ minor. Andante con moto",
+      "pageviews_yearly": 13699,
+      "date": "1892-00-00",
+      "movements": [
+        {
+          "qid": "Q104586058"
+        },
+        {
+          "qid": "Q104586059"
+        },
+        {
+          "qid": "Q104586061"
+        }
+      ]
+    },
+    {
+      "qid": "Q3490257",
+      "title": "Clarinet Sonatas",
+      "imslp_id": "Clarinet_Sonata_No.1,_Op.120_No.1_(Brahms,_Johannes)",
+      "pdf_filename": "Brahms_-_120_n.1_-_Clarinet_Sonata_f_-_Allegretto__2H_Laurischkus__new.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp219",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Clarinet_Sonatas_(Brahms)",
+      "wikipedia_extract": "The Clarinet Sonatas, Op. 120, Nos. 1 and 2, are a pair of works written for clarinet and piano by the Romantic composer Johannes Brahms. They were written in 1894 and are dedicated to the clarinetist Richard Mühlfeld.",
+      "pageviews_yearly": 17660,
+      "date": "1894-00-00",
+      "movements": [
+        {
+          "qid": "Q125516421"
+        },
+        {
+          "qid": "Q125516437"
+        }
+      ]
+    },
+    {
+      "qid": "Q125516437",
+      "title": "Sonata for Clarinet and Piano no. 2 in E-flat major",
+      "date": "1894-00-00"
+    },
+    {
+      "qid": "Q111474299",
+      "title": "6 Gesänge, op. 3",
+      "imslp_id": "6_Songs,_Op.3_(Brahms,_Johannes)",
+      "pdf_filename": "PMLP12870-1_Brahms_fremde.pdf.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "movements": [
+        {
+          "qid": "Q108874748"
+        }
+      ]
+    },
+    {
+      "qid": "Q756299",
+      "title": "A German Requiem",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Brahms_And_the_Ransomed_Shall_Return_Again_Excerpt_from_A_German_Requiem_Op_45.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q414694",
+      "title": "Academic Festival Overture"
+    },
+    {
+      "qid": "Q432984",
+      "title": "Alto Rhapsody"
+    },
+    {
+      "qid": "Q2881134",
+      "title": "Ballades, Op. 10",
+      "imslp_id": "4_Ballades,_Op.10_(Brahms,_Johannes)",
+      "pdf_filename": "Brahms_-_Balladen_Op.10_-_Sauer.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gerard-pesson-1958-pp33",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ballades%2C_Op._10_(Brahms)",
+      "wikipedia_extract": "The Ballades, Op. 10, are lyrical piano pieces written by Johannes Brahms during his youth. They were dated 1854 and were dedicated to his friend Julius Otto Grimm. Their composition coincided with the beginning of the composer's lifelong affection for the pianist and composer Clara Schumann, who was helping Brahms launch his career. Frédéric Chopin had written the last of his ballades only 12 years earlier, but Brahms approached the genre differently from Chopin, choosing to take its origin in narrative poetry more literally.",
+      "pageviews_yearly": 10311
+    },
+    {
+      "qid": "Q16205022",
+      "title": "Brahms/Handel",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp57",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brahms%2FHandel",
+      "wikipedia_extract": "\n\nBrahms/Handel is a ballet made by New York City Ballet ballet master Jerome Robbins in collaboration with Twyla Tharp to Brahms' Variations and Fugue on a Theme by Handel, Op. 24 (1861), orchestrated by Edmund Rubbra. The premiere took place Thursday, June 7, 1984 at the New York State Theater, Lincoln Center, with costumes by Oscar de la Renta and lighting by Jennifer Tipton.",
+      "pageviews_yearly": 1349
+    },
+    {
+      "qid": "Q86109943",
+      "title": "Brahms: Piano Quartets No. 1 Op. 25 & No. 3 Op. 60"
+    },
+    {
+      "qid": "Q86360109",
+      "title": "Brahms: Violin Concerto - Double Concerto"
+    },
+    {
+      "qid": "Q104626137",
+      "title": "Brahms: Violin Concerto - Double Concerto"
+    },
+    {
+      "qid": "Q4955629",
+      "title": "Brahms–Schoenberg Quartet",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brahms%E2%80%93Schoenberg_Quartet",
+      "wikipedia_extract": "Brahms–Schoenberg Quartet is a one-act ballet by George Balanchine, to Johannes Brahms's Piano Quartet No. 1, orchestrated by Arnold Schoenberg. The ballet premiered on April 21, 1966 at the New York State Theater, performed by the New York City Ballet.",
+      "pageviews_yearly": 3172
+    },
+    {
+      "qid": "Q3132924",
+      "title": "Cello Sonata No. 1",
+      "imslp_id": "Cello_Sonata_No.1,_Op.38_(Brahms,_Johannes)",
+      "pdf_filename": "Brahms_-_Cello_Sonata__Op.38_in_E_minor__1866_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp38",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cello_Sonata_No._1_(Brahms)",
+      "wikipedia_extract": "The Cello Sonata No. 1 in E minor, Op. 38, entitled \"Sonate für Klavier und Violoncello\", was written by Johannes Brahms in 1862–65.",
+      "pageviews_yearly": 13356
+    },
+    {
+      "qid": "Q3490239",
+      "title": "Cello Sonata No. 2",
+      "imslp_id": "Cello_Sonata_No.2,_Op.99_(Brahms,_Johannes)",
+      "pdf_filename": "Brahms_-_Cello_Sonata_No.2__Op.99__1887__cello.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp39",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cello_Sonata_No._2_(Brahms)",
+      "wikipedia_extract": "The Cello Sonata No. 2 in F major, Op. 99, was written by Johannes Brahms in 1886, more than twenty years after completing his Sonata No. 1. It was first published in 1887. It was written for, dedicated to and first performed by Robert Hausmann, who had popularised the First Sonata, and who would the following year be given the honour of premiering the Double Concerto in A minor with Joseph Joachim.",
+      "pageviews_yearly": 6345
+    },
+    {
+      "qid": "Q3098064",
+      "title": "Clarinet Quintet",
+      "imslp_id": "Clarinet_Quintet,_Op.115_(Brahms,_Johannes)",
+      "pdf_filename": "PMLP41016-Br_115_Pfte.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp23",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Clarinet_Quintet_(Brahms)",
+      "wikipedia_extract": "Johannes Brahms's Clarinet Quintet in B minor, Op. 115, was written in 1891 for the clarinettist Richard Mühlfeld. It is scored for a clarinet in A with a string quartet. It has a duration of approximately thirty-five minutes.",
+      "pageviews_yearly": 12061
+    },
+    {
+      "qid": "Q3539354",
+      "title": "Clarinet Trio",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Brahms_Clarinet_Trio_2nd_mvt_arr_Bb_Clarinet_Violin_Piano.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q21712236",
+      "title": "Conduct! Every Move Counts!"
+    },
+    {
+      "qid": "Q1405431",
+      "title": "Death in a French Garden"
+    },
+    {
+      "qid": "Q52458002",
+      "title": "Die Blümelein sie schlafen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Die_Bl%C3%BCmelein%2C_sie_schlafen",
+      "wikipedia_extract": "\"Die Blümelein, sie schlafen\" is the first line of the German lullaby \"Sandmännchen\" (Sandman), from Anton Wilhelm von Zuccalmaglio's collection Deutsche Volkslieder (1840). The melody is based on a French song from the late 1500s which was also used for the Christmas carol \"Zu Bethlehem geboren\" (1638) to a text by Friedrich Spee.",
+      "pageviews_yearly": 5585
+    },
+    {
+      "qid": "Q30931309",
+      "title": "Die Mainacht"
+    },
+    {
+      "qid": "Q848915",
+      "title": "Double Concerto",
+      "imslp_id": "Concerto_for_Violin_and_Cello,_Op.102_(Brahms,_Johannes)",
+      "pdf_filename": "Brahms_-_Concerto_for_Violin_and_Cello_in_A_minor__Op.102_-_I._Allegro.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp14",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Double_Concerto_(Brahms)",
+      "wikipedia_extract": "The Double Concerto in A minor, Op. 102, by Johannes Brahms is a concerto for violin, cello and orchestra, composed in 1887 as his last work for orchestra.",
+      "pageviews_yearly": 16989
+    },
+    {
+      "qid": "Q3197768",
+      "title": "Eight Pieces for piano",
+      "imslp_id": "8_Klavierstücke,_Op.76_(Brahms,_Johannes)",
+      "pdf_filename": "Brahms_-_Klavierstucke_Op.76_-_Sauer.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q5359758",
+      "title": "Eleven Chorale Preludes",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp224",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Eleven_Chorale_Preludes",
+      "wikipedia_extract": "Eleven Chorale Preludes, Op. 122, is a collection of works for organ by Johannes Brahms, written in 1896, at the end of the composer's life, immediately after the death of his beloved friend, Clara Schumann, published posthumously in 1902. They are based on verses of nine Lutheran chorales, two of them set twice, and are relatively short, compact miniatures. They were the last compositions Brahms ever wrote, composed around the time that he became aware of the cancer that would ultimately prove fatal; thus the final piece is, appropriately enough, a second setting of \"O Welt, ich muß dich lassen.\"Mein Jesu, der du mich in E minor\nHerzliebster Jesu, was hast du verbrochen in G minor\nO Welt, ich muß dich lassen in F major\nHerzlich tut mich erfreuen in D major\nSchmücke dich, o liebe Seele in E major\nO wie selig seid ihr doch, ihr Frommen in D minor\nO Gott, du frommer Gott in A minor\nEs ist ein Ros’ entsprungen in F major\nHerzlich tut mich verlangen in A minor\nHerzlich tut mich verlangen in A minor\nO Welt, ich muß dich lassen in F major",
+      "pageviews_yearly": 6779
+    },
+    {
+      "qid": "Q926070",
+      "title": "Emma",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Emma_(1932_film)",
+      "wikipedia_extract": "Emma is a 1932 American pre-Code comedy-drama film released by Metro-Goldwyn-Mayer, starring Marie Dressler, written by Leonard Praskins from a story by Frances Marion, and directed by Clarence Brown. The supporting cast features Richard Cromwell, Jean Hersholt and Myrna Loy. The film's copyright was registered in 1932 and renewed in 1959. It will enter the American public domain on January 1, 2028.",
+      "pageviews_yearly": 9948
+    },
+    {
+      "qid": "Q2270897",
+      "title": "F-A-E Sonata",
+      "imslp_id": "F-A-E_Sonata_(Various)",
+      "pdf_filename": "PMLP183730-Brahms__Dietrich__Schumann_-_F.A.E._Sonata_-_Piano.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q105200121",
+      "title": "Fantasies, Op. 116",
+      "imslp_id": "7_Fantasien,_Op.116_(Brahms,_Johannes)",
+      "pdf_filename": "Brahms_-_Op.116_-_Sauer.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fantasies%2C_Op._116_(Brahms)",
+      "wikipedia_extract": "The Fantasies, Op. 116 for solo piano were composed by Johannes Brahms in the Austrian town of Bad Ischl during the summer of 1892. The set consists of seven pieces entitled Capriccio or Intermezzo, though Brahms originally considered using \"Notturno\" for No. 4 and \"Intermezzo\" for No. 7. The pieces were published by N. Simrock in December 1892, and represent the end of Brahms's long break from composing piano pieces. The seven movements are:",
+      "pageviews_yearly": 5353
+    },
+    {
+      "qid": "Q78526823",
+      "title": "Feldeinsamkeit = Unigedd y maes"
+    },
+    {
+      "qid": "Q30643101",
+      "title": "Fest- und Gedenksprüche",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp122",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fest-_und_Gedenkspr%C3%BCche",
+      "wikipedia_extract": "Fest- und Gedenksprüche, Op. 109, is a cycle of three motets for mixed double choir by Johannes Brahms. He completed the work, setting biblical verses to music, in 1889 and dedicated it to Carl Petersen. It was published in 1890 by Simrock.",
+      "pageviews_yearly": 3406
+    },
+    {
+      "qid": "Q3069011",
+      "title": "Four Pieces for Piano, Op. 119",
+      "imslp_id": "4_Klavierstücke,_Op.119_(Brahms,_Johannes)",
+      "pdf_filename": "Brahms_-_Op.119_-_Sauer.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Four_Pieces_for_Piano%2C_Op._119_(Brahms)",
+      "wikipedia_extract": "The Four Pieces for Piano Op. 119, are four character pieces for piano composed by Johannes Brahms in 1893. The collection is the last composition for solo piano by Brahms. Together with the six pieces from Op. 118, Op. 119 was premiered in London in January 1894.",
+      "pageviews_yearly": 14417
+    },
+    {
+      "qid": "Q5511742",
+      "title": "Fünf Gesänge, Op.104",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/F%C3%BCnf_Ges%C3%A4nge%2C_Op._104_(Brahms)",
+      "wikipedia_extract": "Fünf Gesänge, Op. 104, is a song cycle of five part songs for mixed choir a cappella by Johannes Brahms. Composed in 1888 when Brahms was a 55-year-old bachelor, the five songs reflect an intensely nostalgic and even tragic mood. Brahms has chosen texts which centre on lost youth, summer turning into fall and, ultimately, man's mortality. While the score and the parts themselves are not that difficult for the singers, the sombre nature of the texts coupled with intense soaring melodies and complex harmonies make it quite a demanding work for any choir.",
+      "pageviews_yearly": 3389
+    },
+    {
+      "qid": "Q5769416",
+      "title": "Fünf Lieder, Op. 105",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Klage.mid",
+        "midi/Brahms_-_Wiegenlied.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q110527286",
+      "title": "Fünf Ophelia-Lieder",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp175"
+    },
+    {
+      "qid": "Q108293451",
+      "title": "Geistliches Lied",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Geistliches_Lied_Op_30_Brahms_-_Tutti.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q1499682",
+      "title": "Geliebte Clara"
+    },
+    {
+      "qid": "Q5553557",
+      "title": "Gesang der Parzen",
+      "imslp_id": "Gesang_der_Parzen,_Op.89_(Brahms,_Johannes)",
+      "pdf_filename": "PMLP52836-BraWV__S._368.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp106",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gesang_der_Parzen",
+      "wikipedia_extract": "Gesang der Parzen, Op. 89, is a piece for mixed choir and orchestra by Johannes Brahms.",
+      "pageviews_yearly": 3605
+    },
+    {
+      "qid": "Q1381081",
+      "title": "Golden Boy",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Golden_Boy_(1939_film)",
+      "wikipedia_extract": "Golden Boy is a 1939 American drama romance sports film directed by Rouben Mamoulian and starring Barbara Stanwyck, Adolphe Menjou and William Holden. It is based on the 1937 play of the same title by Clifford Odets.",
+      "pageviews_yearly": 21369
+    },
+    {
+      "qid": "Q2613456",
+      "title": "Horn Trio",
+      "imslp_id": "Horn_Trio,_Op.40_(Brahms,_Johannes)",
+      "pdf_filename": "Brahms-Horn_Trio_Op.40_Cello.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp29",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Horn_Trio_(Brahms)",
+      "wikipedia_extract": "The Horn Trio in E♭ major, Op. 40, by Johannes Brahms is a chamber piece in four movements written for natural horn, violin, and piano. Composed in 1865, the work commemorates the death of Brahms's mother, Christiane, earlier that year. However, it draws on a theme which Brahms had composed twelve years previously but did not publish at the time.",
+      "pageviews_yearly": 9899
+    },
+    {
+      "qid": "Q66686679",
+      "title": "Hungarian Dance No. 5",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Hungarian_Dance_No_5_pag1.mid",
+        "midi/Hungarian_Dance_No_5_in_F_Minor.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q71405773",
+      "title": "Hungarian Dance No. 6",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp84"
+    },
+    {
+      "qid": "Q1065126",
+      "title": "Hungarian Dances",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Hungarian_Dance_No_1.mid",
+        "midi/Hungarian_Dances_No_5_YG.mid",
+        "midi/Hungarian_Dance_No5.mid",
+        "midi/Hungarian_Dance_No5_1.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q130753923",
+      "title": "In the Blue"
+    },
+    {
+      "qid": "Q86525036",
+      "title": "Johannes Brahms Cycle"
+    },
+    {
+      "qid": "Q42192261",
+      "title": "Liebeslieder Waltzes",
+      "imslp_id": "Liebeslieder_Waltzes,_Op.52_(Brahms,_Johannes)",
+      "pdf_filename": "Brahms_-_Liebeslieder_Waltzes__Op.52a.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp147",
+      "movements": [
+        {
+          "qid": "Q1693027"
+        },
+        {
+          "qid": "Q17021219"
+        }
+      ]
+    },
+    {
+      "qid": "Q16960645",
+      "title": "Liebeslieder Walzer",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp147",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liebeslieder_Walzer_(ballet)",
+      "wikipedia_extract": "Liebeslieder Walzer is a two-part neoclassical ballet choreographed by George Balanchine to Johannes Brahms' Liebeslieder Waltzes, Op. 52 and Neue Liebeslieder, Op. 65, with original sets and lighting designed by David Hays, and costumes designed by Barbara Karinska. The ballet premiered on 12 November 1960 at the New York City Center, performed by the New York City Ballet.",
+      "pageviews_yearly": 1495
+    },
+    {
+      "qid": "Q1693027",
+      "title": "Liebeslieder Walzer, Op. 52",
+      "imslp_id": "Liebeslieder_Waltzes,_Op.52_(Brahms,_Johannes)",
+      "pdf_filename": "Brahms_-_Liebeslieder_Waltzes__Op.52a.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liebeslieder_Waltzes_(Brahms)",
+      "wikipedia_extract": "Johannes Brahms' Liebeslieder Waltzes (Liebeslieder-Walzer) are distributed across two opus numbers: Op. 52 and Op. 65. The waltzes are a collection of love songs in Ländler style for voices and piano four hands. The lyrics for the Liebeslieder come from Georg Friedrich Daumer's Polydora, a collection of folk songs and love poems. While there is no concrete record indicating the exact inspiration for the Waltzes, there is speculation that Brahms' motivation for the songs was his frustrated love for pianist and composer Clara Schumann.",
+      "pageviews_yearly": 7628
+    },
+    {
+      "qid": "Q79267487",
+      "title": "Mae nodau hen alawon = Wie Melodien zieht es mir"
+    },
+    {
+      "qid": "Q15990789",
+      "title": "Man with the Transplanted Brain",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Man_with_the_Transplanted_Brain",
+      "wikipedia_extract": "Man with the Transplanted Brain  is a 1972 French-Italian-West German science fiction-drama film written and directed by Jacques Doniol-Valcroze. It is loosely based on a novel by Alain Franck and Victor Vicas.",
+      "pageviews_yearly": 1734
+    },
+    {
+      "qid": "Q108846765",
+      "title": "Mondnacht",
+      "imslp_id": "Mondnacht,_WoO_21_(Brahms,_Johannes)",
+      "pdf_filename": "Mondnacht.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp163"
+    },
+    {
+      "qid": "Q17021219",
+      "title": "Neue Liebeslieder",
+      "imslp_id": "Neue_Liebeslieder_Waltzes,_Op.65_(Brahms,_Johannes)",
+      "pdf_filename": "Brahms_op065a_New_Liebeslieder_Waltzes__duet_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp149",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Neue_Liebeslieder",
+      "wikipedia_extract": "Neue Liebeslieder, Op. 65, written by Johannes Brahms, is a collection of Romantic pieces written for four solo voices and four hands on the piano. They are also known as Neue Liebesliederwalzer. Neue Liebeslieder were written during the Romantic period between 1869 and 1874. The text of the songs is adapted from folk songs of various areas of Europe including Turkey, Poland, Latvia and Sicily. The text for songs 1 through 14 were translated and compiled by Georg Friedrich Daumer in his poem series, Polydora; the text for the fifteenth and final song, entitled \"Zum Schluß\", was written by Johann Wolfgang von Goethe.",
+      "pageviews_yearly": 3375
+    },
+    {
+      "qid": "Q78648194",
+      "title": "O liebliche Wangen = O ruddiau serchusol"
+    },
+    {
+      "qid": "Q78648204",
+      "title": "O wüsst' ich doch den Weg zurück = O na chawn hyd i'r ffordd yn ôl"
+    },
+    {
+      "qid": "Q11813099",
+      "title": "Partita na instrument drewniany"
+    },
+    {
+      "qid": "Q162876",
+      "title": "Piano Concerto No. 1",
+      "imslp_id": "Piano_Concerto_No.1,_Op.15_(Brahms,_Johannes)",
+      "pdf_filename": "Brahms-Op015-2pf.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp11",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._1_(Brahms)",
+      "wikipedia_extract": "The Piano Concerto No. 1 in D minor, Op. 15, is a work for piano and orchestra completed by Johannes Brahms in 1858. The composer gave the work's public debut in Hanover, the following year. It was his first-performed orchestral work, and his first orchestral work performed to audience approval.",
+      "pageviews_yearly": 27940
+    },
+    {
+      "qid": "Q210208",
+      "title": "Piano Concerto No. 2",
+      "imslp_id": "Piano_Concerto_No.2,_Op.83_(Brahms,_Johannes)",
+      "pdf_filename": "Brahms_-_Piano_Concerto_No.2_-_Keller.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp12",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._2_(Brahms)",
+      "wikipedia_extract": "The Piano Concerto No. 2 in B♭ major, Op. 83, by Johannes Brahms is separated by a gap of 22 years from his first piano concerto. Brahms began work on the piece in 1878 and completed it in 1881 while in Pressbaum near Vienna. It took him three years to work on this concerto, which indicates that he was always self-critical. He wrote to Clara Schumann: \"I want to tell you that I have written a very small piano concerto with a very small and pretty scherzo.\" He was ironically describing a huge piece. This concerto is dedicated to his teacher, Eduard Marxsen. The public premiere of the concerto was given in Budapest on 9 November 1881, with Brahms as soloist and the Budapest Philharmonic Orchestra, and was an immediate success. He proceeded to perform the piece in many cities across Europe.",
+      "pageviews_yearly": 29612
+    },
+    {
+      "qid": "Q3132812",
+      "title": "Piano Quartet No. 1",
+      "imslp_id": "Piano_Quartet_No.1,_Op.25_(Brahms,_Johannes)",
+      "pdf_filename": "PMLP05562-brahms-op25-orch-schoenberg-01-fl1.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp24",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Quartet_No._1_(Brahms)",
+      "wikipedia_extract": "The Piano Quartet No. 1 in G minor, Op. 25, was composed by Johannes Brahms between 1856 and 1861. It was premiered in 1861 in Hamburg, with Clara Schumann at the piano. It was also played in Vienna on 16 November 1862, with Brahms himself at the piano supported by members of the Hellmesberger Quartet. Like most piano quartets, it is scored for piano, violin, viola, and cello.",
+      "pageviews_yearly": 13264
+    },
+    {
+      "qid": "Q3413740",
+      "title": "Piano Quartet No. 3",
+      "imslp_id": "Piano_Quartet_No.3,_Op.60_(Brahms,_Johannes)",
+      "pdf_filename": "Brahms_Piano_Quartet_Op60_1st_mvt.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp26",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Quartet_No._3_(Brahms)",
+      "wikipedia_extract": "The Piano Quartet No. 3 in C minor, Op. 60, completed by Johannes Brahms in 1875, is scored for piano, violin, viola and cello. It is sometimes called the Werther Quartet after Goethe's The Sorrows of Young Werther. The premiere took place in Vienna on November 18, 1875, as part of the Hellmesberger Quartet's opening concert of the season. Brahms was the pianist. Richard Wagner and his wife Cosima were in attendance.",
+      "pageviews_yearly": 11632
+    },
+    {
+      "qid": "Q2719356",
+      "title": "Piano Quintet",
+      "imslp_id": "Piano_Quintet,_Op.34_(Brahms,_Johannes)",
+      "pdf_filename": "Brahms_-_quintet_-_kirchner.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp20",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Quintet_(Brahms)",
+      "wikipedia_extract": "The Piano Quintet in F minor, Op. 34, by Johannes Brahms was completed during the summer of 1864 and published in 1865. It was dedicated to Her Royal Highness Princess Anna of Hesse. As with most piano quintets composed after Robert Schumann's Piano Quintet (1842), it is written for piano and string quartet.",
+      "pageviews_yearly": 14732
+    },
+    {
+      "qid": "Q3043401",
+      "title": "Piano Sonata No. 1",
+      "imslp_id": "Piano_Sonata_No.1,_Op.1_(Brahms,_Johannes)",
+      "pdf_filename": "Brahms_-_Piano_Sonata_No_1_in_C.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp42",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_No._1_(Brahms)",
+      "wikipedia_extract": "The Piano Sonata No. 1 in C major, Op. 1, of Johannes Brahms was written in Hamburg in 1853, and published later that year. Despite being his first published work, he had actually composed his Piano Sonata No. 2 first, but chose this work to be his first published opus because he felt that it was of higher quality. The piece was sent along with his second sonata to Breitkopf & Härtel with a letter of recommendation from Robert Schumann. Schumann had already praised Brahms enthusiastically, and the sonata shows signs of an effort to impress in its symphonic grandeur, technical demands, and dramatic character. It was dedicated to Joseph Joachim.",
+      "pageviews_yearly": 45430
+    },
+    {
+      "qid": "Q3068533",
+      "title": "Piano Sonata No. 2",
+      "imslp_id": "Piano_Sonata_No.2,_Op.2_(Brahms,_Johannes)",
+      "pdf_filename": "Brahms_-_Piano_Sonata_No_2_in_fs.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp43",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_No._2_(Brahms)",
+      "wikipedia_extract": "Johannes Brahms composed the Piano Sonata No. 2 in F♯ minor, Op. 2, in 1852 in Hamburg, Germany, and it was published the year after. Despite being his second published work, it was actually composed before his Piano Sonata No. 1 in C major, but was published later because Brahms recognized the importance of an inaugural publication and felt that the C major sonata was of higher quality. It was sent along with his first sonata to Breitkopf und Härtel with a letter of recommendation from Robert Schumann. Schumann had already praised Brahms enthusiastically, and the sonata shows signs of an effort to impress, with its technical demands and highly dramatic nature. It was dedicated to Clara Schumann.",
+      "pageviews_yearly": 6097
+    },
+    {
+      "qid": "Q1538097",
+      "title": "Piano Sonata No. 3",
+      "imslp_id": "Piano_Sonata_No.3,_Op.5_(Brahms,_Johannes)",
+      "pdf_filename": "Brahms_-_Piano_Sonata_No_3_in_f.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp44",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_No._3_(Brahms)",
+      "wikipedia_extract": "The Piano Sonata No. 3 in F minor, Op. 5 of Johannes Brahms was composed in Düsseldorf in 1853, when the composer was just over 20 years old. It was published the following year. The work is dedicated to Countess Ida von Hohenthal of Leipzig.",
+      "pageviews_yearly": 12692
+    },
+    {
+      "qid": "Q3132817",
+      "title": "Piano Trio No. 1",
+      "imslp_id": "Piano_Trio_No.1,_Op.8_(Brahms,_Johannes)",
+      "pdf_filename": "PMLP52223-BraWV__S._25.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp28",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Trio_No._1_(Brahms)",
+      "wikipedia_extract": "The Piano Trio No. 1 in B major, Op. 8, by Johannes Brahms was completed in January 1854, when the composer was only twenty years old, published in November 1854 and premiered on 13 October 1855 in Danzig. It has often been mistakenly claimed that the first performance had taken place in the United States. Brahms produced a revised version of the work in summer 1889 that shows significant alterations so that it may even be regarded as a distinct (fourth) piano trio. This \"New Edition\", as he called it, was premiered on 10 January 1890 in Budapest and published in February 1891.",
+      "pageviews_yearly": 12796
+    },
+    {
+      "qid": "Q13479732",
+      "title": "Piano Trio No. 2",
+      "imslp_id": "Piano_Trio_No.2,_Op.87_(Brahms,_Johannes)",
+      "pdf_filename": "PMLP52833-BraWV__S._362.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp30",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Trio_No._2_(Brahms)",
+      "wikipedia_extract": "Johannes Brahms composed his Piano Trio No. 2 in C major, Op. 87, between 1880 and 1882. It is scored for piano, violin and cello. He wrote this piece at the age of 49.",
+      "pageviews_yearly": 5249
+    },
+    {
+      "qid": "Q3539367",
+      "title": "Piano Trio No. 3",
+      "imslp_id": "Piano_Trio_No.3,_Op.101_(Brahms,_Johannes)",
+      "pdf_filename": "PMLP52890-BraWV__S._411f.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp31",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Trio_No._3_(Brahms)",
+      "wikipedia_extract": "The Piano Trio No. 3 in C minor, Op. 101, by Johannes Brahms is scored for piano, violin and cello, and was written in the summer of 1886 while Brahms was on holiday in Hofstetten, Switzerland. It was premiered on 20 December of that year by Brahms, violinist Jenő Hubay, and cellist David Popper.",
+      "pageviews_yearly": 5242
+    },
+    {
+      "qid": "Q7190188",
+      "title": "Piano Trio No. 4",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp32",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Trio_in_A_major_(attributed_to_Brahms)",
+      "wikipedia_extract": "The Piano Trio in A major, sometimes attributed to Johannes Brahms as Anh. 4/5, is scored for piano, violin and cello. Brahms is reported to have destroyed many of his works that did not meet his own high standards. This piano trio may be one of the exceptions to have survived.",
+      "pageviews_yearly": 2940
+    },
+    {
+      "qid": "Q6092572",
+      "title": "Puertos de ensueño"
+    },
+    {
+      "qid": "Q2917435",
+      "title": "Rhapsodies, Op. 79",
+      "imslp_id": "2_Rhapsodies,_Op.79_(Brahms,_Johannes)",
+      "pdf_filename": "Brahms_-_Rhapsodies_Op.79_-_Sauer.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rhapsodies%2C_Op._79_(Brahms)",
+      "wikipedia_extract": "The Rhapsodies, Op. 79, for piano were written by Johannes Brahms in 1879 during his summer stay in Pörtschach, when he had reached the maturity of his career. They were inscribed to his friend, the musician and composer Elisabeth von Herzogenberg. At the suggestion of the dedicatee, Brahms reluctantly renamed the sophisticated compositions from \"Klavierstücke\" to \"rhapsodies\".No. 1 in B minor. Agitato is the more extensive piece, with outer sections in sonata form enclosing a lyrical, nocturne-like central section in B major and with a coda ending in that key.\nNo. 2 in G minor. Molto passionato, ma non troppo allegro is a more compact piece in a more conventional sonata form.",
+      "pageviews_yearly": 8682
+    },
+    {
+      "qid": "Q79266750",
+      "title": "Rhodianna wnaethom = Wir wandelten"
+    },
+    {
+      "qid": "Q2406618",
+      "title": "Scherzo Op. 4",
+      "imslp_id": "Scherzo,_Op.4_(Brahms,_Johannes)",
+      "pdf_filename": "Brahms_-_Scherzo__Op.4.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q1041951",
+      "title": "Schicksalslied",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp103",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Schicksalslied",
+      "wikipedia_extract": "The Schicksalslied, Op. 54, is an orchestrally accompanied choral setting of a poem written by Friedrich Hölderlin and is one of several major choral works written by Johannes Brahms.",
+      "pageviews_yearly": 19951
+    },
+    {
+      "qid": "Q79266757",
+      "title": "Serch-gân ofer = Vergebliches Ständchen"
+    },
+    {
+      "qid": "Q18195760",
+      "title": "Serenade No. 1",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp5"
+    },
+    {
+      "qid": "Q16830251",
+      "title": "Serenade nr. 2",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp6"
+    },
+    {
+      "qid": "Q163460",
+      "title": "Serenades",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp5",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Serenades_(Brahms)",
+      "wikipedia_extract": "The two Serenades, Op. 11 and 16, are early orchestral works by Johannes Brahms. They both date from after the 1856 death of Robert Schumann when Brahms was residing in Detmold and had access to an orchestra.",
+      "pageviews_yearly": 11167,
+      "movements": [
+        {
+          "qid": "Q18195760"
+        },
+        {
+          "qid": "Q16830251"
+        }
+      ]
+    },
+    {
+      "qid": "Q3485664",
+      "title": "Six Pieces for Piano, Op. 118",
+      "imslp_id": "6_Klavierstücke,_Op.118_(Brahms,_Johannes)",
+      "pdf_filename": "Brahms_-_Op.118_-_Sauer.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Six_Pieces_for_Piano%2C_Op._118_(Brahms)",
+      "wikipedia_extract": "Johannes Brahms's Six Pieces for Piano, Op. 118, were completed in 1893 in Bad Ischl and published with a dedication to Clara Schumann. The set was the penultimate of Brahms's published works.",
+      "pageviews_yearly": 20986
+    },
+    {
+      "qid": "Q78648307",
+      "title": "So willst du des Armen = A fynni di dosturio"
+    },
+    {
+      "qid": "Q125516421",
+      "title": "Sonata for Clarinet and Piano no. 1 in F minor"
+    },
+    {
+      "qid": "Q1095259",
+      "title": "Song of Love",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Song_of_Love_(1947_film)",
+      "wikipedia_extract": "Song of Love is a 1947 American biopic film about the relationship between renowned 19th-century musicians Clara Wieck Schumann and Robert Schumann. The film, which also stars Robert Walker and Leo G. Carroll, was directed by Clarence Brown and released by Metro-Goldwyn-Mayer. Ivan Tors, Irma von Cube, Allen Vincent, and Robert Ardrey co-authored the screenplay, which was based on a play by Bernard Schubert and Mario Silva.",
+      "pageviews_yearly": 14160
+    },
+    {
+      "qid": "Q2339492",
+      "title": "Stein"
+    },
+    {
+      "qid": "Q51572026",
+      "title": "String Quartet No. 1",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp15"
+    },
+    {
+      "qid": "Q3413833",
+      "title": "String Quartet No. 2",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp16"
+    },
+    {
+      "qid": "Q3414636",
+      "title": "String Quintet No. 1",
+      "imslp_id": "String_Quintet_No.1,_Op.88_(Brahms,_Johannes)",
+      "pdf_filename": "Brahms_-_088_-_Quintet_F__2H_Klengel__new.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp21",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quintet_No._1_(Brahms)",
+      "wikipedia_extract": "Johannes Brahms' String Quintet No. 1 in F major, Op. 88, was composed in 1882 in the spa town of Bad Ischl, Upper Austria, and published by the firm of Fritz Simrock. It was first performed at a chamber music evening in Frankfurt on 29 December 1882.",
+      "pageviews_yearly": 4698
+    },
+    {
+      "qid": "Q2482539",
+      "title": "String Sextet No. 2",
+      "imslp_id": "String_Sextet_No.2,_Op.36_(Brahms,_Johannes)",
+      "pdf_filename": "Brahms_-_036_-_Sextet_G__2H_Klengel__new.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp19",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Sextet_No._2_(Brahms)",
+      "wikipedia_extract": "Johannes Brahms' String Sextet No. 2 in G major, Opus 36 was composed during the years of 1864–1865 and published by the firm of Fritz Simrock.\nIt was first performed in Boston, Massachusetts on October 11, 1866, with the European premiere following the next month in Zurich.",
+      "pageviews_yearly": 6244
+    },
+    {
+      "qid": "Q57933916",
+      "title": "Symfonie",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp4"
+    },
+    {
+      "qid": "Q163512",
+      "title": "Symphony No. 1"
+    },
+    {
+      "qid": "Q210469",
+      "title": "Symphony No. 2",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp2",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._2_(Brahms)",
+      "wikipedia_extract": "Symphony No. 2 in D major, Op. 73, was composed by Johannes Brahms in the summer of 1877, during a visit to Pörtschach am Wörthersee, a town in the Austrian province of Carinthia. Its composition was brief in comparison with the 21 years it took him to complete his First Symphony.",
+      "pageviews_yearly": 28917
+    },
+    {
+      "qid": "Q223502",
+      "title": "Symphony No. 3",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp3",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._3_(Brahms)",
+      "wikipedia_extract": "Symphony No. 3 in F major, Op. 90, is a symphony by Johannes Brahms. The work was written in the summer of 1883 at Wiesbaden, nearly six years after he completed his Symphony No. 2. In the interim Brahms had written some of his greatest works, including the Violin Concerto, two overtures, and the Piano Concerto No. 2.",
+      "pageviews_yearly": 38613
+    },
+    {
+      "qid": "Q231144",
+      "title": "Symphony No. 4",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp4",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._4_(Brahms)",
+      "wikipedia_extract": "The Symphony No. 4 in E minor, Op. 98 by Johannes Brahms is the last of his symphonies. Brahms began working on the piece in Mürzzuschlag, then in the Austro-Hungarian Empire, in 1884, just a year after completing his Symphony No. 3. Brahms conducted the Court Orchestra in Meiningen, Germany, for the work's premiere on 25 October 1885.",
+      "pageviews_yearly": 44369
+    },
+    {
+      "qid": "Q10339136",
+      "title": "The Fatalist",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Fatalist",
+      "wikipedia_extract": "The Fatalist is a 2005 Portuguese-French drama film written and directed by João Botelho. It is based on Denis Diderot's novel Jacques the Fatalist. It was entered into the main competition at the 62nd edition of the Venice Film Festival.",
+      "pageviews_yearly": 1902
+    },
+    {
+      "qid": "Q1171366",
+      "title": "The L-Shaped Room",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_L-Shaped_Room",
+      "wikipedia_extract": "The L-Shaped Room is a 1962 British drama romance film written and directed by Bryan Forbes, based on the 1960 novel by Lynne Reid Banks. It tells the story of Jane Fosset, a young French woman, unmarried and pregnant, who moves into a cheap London boarding house, befriending a young man, Toby, in the building. The work is considered part of the kitchen sink realism school of British drama. The film reflected a trend in British films of greater frankness about sex and displays a sympathetic treatment of outsiders \"unmarried mothers, lesbian or black\" as well as a \"largely natural and non-judgmental handling of their problems\". As director, Forbes represents \"a more romantic, wistful type of realism\" than that of Tony Richardson or Lindsay Anderson.",
+      "pageviews_yearly": 30127
+    },
+    {
+      "qid": "Q1214543",
+      "title": "The Lovers",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Lovers_(1958_film)",
+      "wikipedia_extract": "The Lovers is a 1958 French drama film directed by Louis Malle which stars Jeanne Moreau, Alain Cuny, and Jean-Marc Bory. Based on the posthumously-published 1876 short story \"Point de Lendemain\" by Dominique Vivant (1747–1825), the film concerns a woman involved in adultery who rediscovers human love. The Lovers was Malle's second feature film, made when he was 25 years old. The film was a box-office hit in France when released theatrically, gaining 2,594,160 admissions in France alone. The film was highly controversial when released in the United States for its depiction of allegedly obscene material. At the 1958 Venice Film Festival, the film won the Grand Jury Prize and was nominated for the Golden Lion.",
+      "pageviews_yearly": 39491
+    },
+    {
+      "qid": "Q1481210",
+      "title": "Triumphlied",
+      "imslp_id": "Triumphlied,_Op.55_(Brahms,_Johannes)",
+      "pdf_filename": "PMLP52747-BraWV__S._232.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp104",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Triumphlied",
+      "wikipedia_extract": "The Triumphlied (Op. 55) is a work for baritone solo, choir and orchestra by the German composer Johannes Brahms. Brahms wrote the work on the occasion of the German victory in the Franco-Prussian War and dedicated it to emperor Wilhelm I. The text itself emanates from the Book of Revelation predicting the downfall of Babylon but is consciously reinterpreted into political terms. It premiered on 5 June 1872 in Karlsruhe. Due to its patriotic message bound to the zeitgeist of the Unification of Germany, the Triumphlied lost popularity after World War I, despite its musical quality. Today it is one of Brahms's rather unknown œuvres.",
+      "pageviews_yearly": 2912
+    },
+    {
+      "qid": "Q3414488",
+      "title": "Twice Upon a Time",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Twice_Upon_a_Time_(1953_film)",
+      "wikipedia_extract": "Twice Upon a Time is a 1953 British comedy film directed by Emeric Pressburger and starring Hugh Williams, Elizabeth Allan, Yolande Larthe, and Charmian Larthe. It is based on the 1949 novel Lisa and Lottie by Erich Kästner.",
+      "pageviews_yearly": 5923
+    },
+    {
+      "qid": "Q18180909",
+      "title": "Two Motets, Op. 74",
+      "imslp_id": "2_Motets,_Op.74_(Brahms,_Johannes)",
+      "pdf_filename": "PMLP52813-BraWV__S._316.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Two_Motets%2C_Op._74_(Brahms)",
+      "wikipedia_extract": "Two Motets, Op. 74, are two sacred motets for unaccompanied mixed choir by Johannes Brahms, published together. Number 1, composed in 1877 in several movements, is Warum ist das Licht gegeben dem Mühseligen?, based on Biblical texts and a chorale. Number 2, believed to have been composed in 1863/64, is O Heiland, reiß die Himmel auf, containing different settings of the stanzas of Friedrich von Spee's \"O Heiland, reiß die Himmel auf\". The two motets were published by N. Simrock in December 1878 and dedicated to Philipp Spitta.",
+      "pageviews_yearly": 4378
+    },
+    {
+      "qid": "Q900725",
+      "title": "Two String Quartets, Op. 51",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp16",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartets%2C_Op._51_(Brahms)",
+      "wikipedia_extract": "Johannes Brahms' String Quartet No. 1 in C minor and String Quartet No. 2 in A minor were completed in Tutzing, Bavaria, during the summer of 1873, and published together that autumn as Op. 51. They are dedicated to his friend Theodor Billroth. He only published one other string quartet, No. 3 in B♭ major, in 1876.",
+      "pageviews_yearly": 9286,
+      "movements": [
+        {
+          "qid": "Q51572026"
+        },
+        {
+          "qid": "Q3413833"
+        }
+      ]
+    },
+    {
+      "qid": "Q42197152",
+      "title": "Variations on a Theme by Haydn, Op. 56b",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp7"
+    },
+    {
+      "qid": "Q110044187",
+      "title": "Vier Gesänge, op. 43",
+      "imslp_id": "4_Songs,_Op.43_(Brahms,_Johannes)",
+      "pdf_filename": "PMLP22019-066_May_Night_-_Brahms_arr_Andrews_LR.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "movements": [
+        {
+          "qid": "Q11550399"
+        },
+        {
+          "qid": "Q30931309"
+        }
+      ]
+    },
+    {
+      "qid": "Q2523482",
+      "title": "Vier ernste Gesänge",
+      "imslp_id": "4_Serious_Songs,_Op.121_(Brahms,_Johannes)",
+      "pdf_filename": "PMLP52920-BraWV__S._485f.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp194",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vier_ernste_Ges%C3%A4nge",
+      "wikipedia_extract": "Vier ernste Gesänge, Op. 121, is a cycle of four songs for bass and piano by Johannes Brahms. As in his Ein deutsches Requiem, the texts are compiled from the Luther Bible. Three songs deal with death and the transience of life, while the fourth has an outlook of faith, hope and charity. Brahms composed the work in Vienna in 1896 and dedicated it to Max Klinger. The songs were premiered there in the presence of the composer by baritone Anton Sistermans and pianist Coenraad V. Bos. They have been recorded often by both female and male singers.",
+      "pageviews_yearly": 9726
+    },
+    {
+      "qid": "Q1156068",
+      "title": "Violin Concerto",
+      "imslp_id": "Violin_Concerto,_Op.77_(Brahms,_Johannes)",
+      "pdf_filename": "PMLP6518-toveybrahms.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp13",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Violin_Concerto_(Brahms)",
+      "wikipedia_extract": "The Violin Concerto in D major, Op. 77, was composed by Johannes Brahms in 1878 and dedicated to and premiered by his friend, the violinist Joseph Joachim. It is Brahms's only violin concerto, and, according to Joachim, one of the four great German violin concerti:The Germans have four violin concertos. The greatest, most uncompromising is Beethoven's. The one by Brahms vies with it in seriousness. The richest, the most seductive, was written by Max Bruch. But the most inward, the heart's jewel, is Mendelssohn's.",
+      "pageviews_yearly": 30776
+    },
+    {
+      "qid": "Q3490205",
+      "title": "Violin Sonata No. 1 in G Major, Op. 78",
+      "imslp_id": "Violin_Sonata_No.1,_Op.78_(Brahms,_Johannes)",
+      "pdf_filename": "Brahms_Violinsonate_Nr.1_op.78.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Violin_Sonata_No._1_(Brahms)",
+      "wikipedia_extract": "The Violin Sonata No. 1 in G major, Op. 78, Regensonate, the first of three such works for violin and piano, was composed by Johannes Brahms during the summers of 1878 and 1879 in Pörtschach am Wörthersee. It was first performed on 8 November 1879 in Bonn, by the husband and wife Robert Heckmann (violin) and Marie Heckmann-Hertig (piano).",
+      "pageviews_yearly": 12022
+    },
+    {
+      "qid": "Q3490213",
+      "title": "Violin Sonata No. 3",
+      "imslp_id": "Violin_Sonata_No.3,_Op.108_(Brahms,_Johannes)",
+      "pdf_filename": "Brahms_Violinsonate_Nr.3_op.108.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp37",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Violin_Sonata_No._3_(Brahms)",
+      "wikipedia_extract": "Johannes Brahms's Violin Sonata No. 3 in D minor, Op. 108 is the third and last of his violin sonatas, composed between 1886 and 1888. Unlike the two previous violin sonatas, it is in four movements. The sonata is dedicated to Brahms' friend and colleague Hans von Bülow and was premiered in Budapest in 1888, with Jenő Hubay on violin and the composer at the piano.",
+      "pageviews_yearly": 9943
+    },
+    {
+      "qid": "Q11550399",
+      "title": "Von ewiger Liebe"
+    },
+    {
+      "qid": "Q1557135",
+      "title": "Wiegenlied, Op. 49, No. 4",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Wiegenlied_-_Lullaby_-_Johannes_Brahms.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q199399",
+      "title": "Zigeunerlieder",
+      "imslp_id": "6_Quartets,_Op.112_(Brahms,_Johannes)",
+      "pdf_filename": "PMLP44485-BraWV__S._450f.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/johannes-brahms-1833-pp151",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zigeunerlieder_(Brahms)",
+      "wikipedia_extract": "The Zigeunerlieder, Op. 103 and Op. 112 Nos. 3–6, are a song cycle for four singers and piano by Johannes Brahms. The texts are Hungarian folk songs in German adaptation by Hugo Conrat, a member of Brahms’ circle in Vienna. The first translation of the texts was by the Hungarian nurse of the Conrat family.",
+      "pageviews_yearly": 4354
+    }
+  ]
+}

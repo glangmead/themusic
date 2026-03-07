@@ -1,0 +1,490 @@
+{
+  "composer_name": "Antonín (Leopold) Dvořák",
+  "name_last_first": "Dvořák, Antonín (Leopold)",
+  "slug": "dvorak",
+  "wiki_page": "https://en.wikipedia.org/wiki/Antonín_Dvořák",
+  "apple_music_playlist": "https://music.apple.com/mk/playlist/pl.e9a2ea836ac44812a8168976c6a94045",
+  "era": "Late- / Post-Romantic",
+  "dates": "1841 – 1904",
+  "nationality": "CZE",
+  "notable": true,
+  "works": [
+    {
+      "title": "Dvorak Symphonic Variations (part 1)",
+      "musicxml": "musicxml/Dvorak_Symphonic_Variations_part_1.mxl",
+      "midi": "midi/Dvorak_Symphonic_Variations_part_1.mid",
+      "form": "Variations",
+      "time_signature": "2/4",
+      "instruments": [
+        "Flutes",
+        "Piccolo",
+        "Oboes",
+        "C Clarinet",
+        "Bassoons",
+        "Horns in F",
+        "F Trumpet",
+        "Tenor Trombone",
+        "Bass Trombone",
+        "Timpani",
+        "Violins I",
+        "Violins II",
+        "Violas",
+        "Violoncellos",
+        "Contrabasses"
+      ],
+      "tempo_markings": [
+        "Lento e molto tranquillo. ♩ = 69",
+        "Un poco piu moso, quasi allegretto. ♩ = 84",
+        "Piu Allegro. ♩ = 126",
+        "Tempo I ♩ = 126",
+        "Tempo I ♩ = 124",
+        "Tempo I. ♩ = 124",
+        "poco ritard. ♩ = 115",
+        "a tempo ♩ = 124",
+        "Vivace. ♩ = 144",
+        "Meno mosso. quasi Tempo I. ♩ = 124",
+        "in tempo ♩ = 124",
+        "Poco Andante. ♩ = 80",
+        "Meno mosso. ♩ = 75",
+        "Allegro ♩ = 126",
+        "Lento. ♩ = 69"
+      ],
+      "movements": [
+        {
+          "start_measure": 1,
+          "tempo_marking": "Lento e molto tranquillo. unicodeNoteQuarterUp = 69"
+        },
+        {
+          "start_measure": 21,
+          "tempo_marking": "Un poco piu moso, quasi allegretto. unicodeNoteQuarterUp = 84"
+        },
+        {
+          "start_measure": 81,
+          "tempo_marking": "Piu Allegro. unicodeNoteQuarterUp = 126"
+        },
+        {
+          "start_measure": 225,
+          "tempo_marking": "poco ritard. unicodeNoteQuarterUp = 115"
+        },
+        {
+          "start_measure": 236,
+          "tempo_marking": "Vivace. unicodeNoteQuarterUp = 144"
+        },
+        {
+          "start_measure": 297,
+          "tempo_marking": "Poco Andante. unicodeNoteQuarterUp = 80"
+        },
+        {
+          "start_measure": 321,
+          "tempo_marking": "Allegro unicodeNoteQuarterUp = 126"
+        },
+        {
+          "start_measure": 341,
+          "tempo_marking": "Lento. unicodeNoteQuarterUp = 69"
+        }
+      ],
+      "is_multi_movement": true,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 4,
+        "n_views": 386,
+        "duration_seconds": 823.2047671256364,
+        "n_notes": 12079,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "NA",
+        "tags": "dvorak-symphonicvariations",
+        "musescore_url": "https://musescore.com/user/6105546/scores/2486486",
+        "musescore_duration": "08:05"
+      },
+      "instruments_gm": [
+        "Flute",
+        "Piccolo",
+        "Oboe",
+        "Clarinet",
+        "Bassoon",
+        "French Horn",
+        "Trumpet",
+        "Trombone",
+        "Timpani",
+        "String Ensemble 1",
+        "Contrabass"
+      ],
+      "tempo_bpm": 69,
+      "n_measures": 402,
+      "n_parts": 15,
+      "n_notes": 11519,
+      "notes_per_second": 14.0,
+      "apple_music_search_query": "Dvořák Dvorak Symphonic Variations (part 1)",
+      "parent_work_title": "Symphonic Variations",
+      "year_composed": 1877,
+      "wikidata_id": "Q7661427",
+      "wikidata_title": "Symphonic Variations",
+      "musicbrainz_id": "5c56f156-f38e-371e-86fc-ef2321ed2fae",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Dvo%C5%99%C3%A1k%20Dvorak%20Symphonic%20Variations%20%28part%201%29",
+      "display_title": "Symphonic Variations"
+    },
+    {
+      "title": "Slavonic Dances Op.72 No.1",
+      "musicxml": "musicxml/Slavonic_Dances_Op72_No1.mxl",
+      "midi": "midi/Slavonic_Dances_Op72_No1.mid",
+      "catalog_numbers": {
+        "Op": "72"
+      },
+      "time_signature": "2/4",
+      "instruments": [
+        "Piccolo",
+        "Flute 1",
+        "Flute 2",
+        "Oboe 1",
+        "Oboe 2",
+        "Bassoon 1",
+        "Bassoon 2",
+        "B♭ Clarinet 1",
+        "B♭ Clarinet 2",
+        "B♭ Clarinet 3",
+        "Bass Clarinet",
+        "Alto Saxophone 1",
+        "Alto Saxophone 2",
+        "Tenor Saxophone",
+        "Baritone Saxophone",
+        "B♭ Trumpet 1",
+        "B♭ Trumpet 2",
+        "F Horn 1 &amp;amp; 2",
+        "F Horn 3 &amp;amp; 4"
+      ],
+      "tempo_markings": [
+        "Molto vivace",
+        "poco ritard.",
+        "Meno mosso (Allegro moderato)",
+        "molto rit.",
+        "in tempo",
+        "molto accelarando"
+      ],
+      "movements": [
+        {
+          "start_measure": 1,
+          "tempo_marking": "Molto vivace"
+        },
+        {
+          "start_measure": 103,
+          "tempo_marking": "poco ritard."
+        },
+        {
+          "start_measure": 104,
+          "tempo_marking": "poco ritard."
+        },
+        {
+          "start_measure": 105,
+          "tempo_marking": "Meno mosso (Allegro moderato)"
+        },
+        {
+          "start_measure": 113,
+          "tempo_marking": "Meno mosso (Allegro moderato)"
+        },
+        {
+          "start_measure": 135,
+          "tempo_marking": "molto rit."
+        },
+        {
+          "start_measure": 136,
+          "tempo_marking": "molto rit."
+        },
+        {
+          "start_measure": 159,
+          "tempo_marking": "molto accelarando"
+        },
+        {
+          "start_measure": 160,
+          "tempo_marking": "molto accelarando"
+        },
+        {
+          "start_measure": 161,
+          "tempo_marking": "molto accelarando"
+        },
+        {
+          "start_measure": 162,
+          "tempo_marking": "molto accelarando"
+        },
+        {
+          "start_measure": 163,
+          "tempo_marking": "molto accelarando"
+        },
+        {
+          "start_measure": 164,
+          "tempo_marking": "molto accelarando"
+        },
+        {
+          "start_measure": 167,
+          "tempo_marking": "molto accelarando"
+        },
+        {
+          "start_measure": 169,
+          "tempo_marking": "Molto vivace"
+        }
+      ],
+      "is_multi_movement": true,
+      "pdmx": {
+        "rating": 4.37,
+        "n_favorites": 6,
+        "n_views": 283,
+        "duration_seconds": 223.69019277929857,
+        "n_notes": 12375,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/190843/scores/6353246",
+        "musescore_duration": "03:45"
+      },
+      "key": "B♭ major",
+      "key_changes": [
+        "B♭ major",
+        "D♭ major"
+      ],
+      "instruments_gm": [
+        "Piccolo",
+        "Flute",
+        "Oboe",
+        "Bassoon",
+        "Clarinet",
+        "Alto Sax",
+        "Tenor Sax",
+        "Baritone Sax",
+        "Trumpet",
+        "French Horn",
+        "Trombone",
+        "Tuba",
+        "Contrabass",
+        "Timpani",
+        "Glockenspiel",
+        "Percussion"
+      ],
+      "tempo_bpm": 144,
+      "n_measures": 229,
+      "n_parts": 29,
+      "n_notes": 12342,
+      "notes_per_second": 55.2,
+      "apple_music_search_query": "Dvořák Op 72 B♭ major",
+      "parent_work_title": "Slavonic Dances Op.72",
+      "wikidata_id": "Q92586586",
+      "wikidata_title": "Slavonic Dances, Op. 46",
+      "musicbrainz_id": "782fc932-3c6b-4dea-b47d-93494bb3c680",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Dvo%C5%99%C3%A1k%20Op%2072",
+      "display_title": "Slavonic Dances, Op. 46"
+    },
+    {
+      "title": "Dvorak Symphonic Variations (part 2)",
+      "musicxml": "musicxml/Dvorak_Symphonic_Variations_part_2.mxl",
+      "midi": "midi/Dvorak_Symphonic_Variations_part_2.mid",
+      "form": "Variations",
+      "time_signature": "2/4",
+      "instruments": [
+        "Flute",
+        "Flute 2",
+        "Oboes",
+        "C Clarinet",
+        "B♭ Clarinet",
+        "Bassoons",
+        "Horns in F",
+        "F Trumpet",
+        "Trombone",
+        "Bass Trombone",
+        "Timpani",
+        "Triangle",
+        "Violins I",
+        "Violins II",
+        "Violas",
+        "Violoncellos",
+        "Contrabasses"
+      ],
+      "tempo_markings": [
+        "Vivace. ♩ = 168",
+        "ritard. ♩ = 160",
+        "in tempo ♩ = 168",
+        "Allegro vivace. 𝅗𝅥spaceunicodeAugmentationDot = 100",
+        "Larghetto. ♩ = 66",
+        "in tempo ♩ = 66",
+        "Tempo di Valse. 𝅗𝅥spaceunicodeAugmentationDot = 66",
+        "in tempo 𝅗𝅥spaceunicodeAugmentationDot = 66",
+        "Piu animato. ♩spaceunicodeAugmentationDot = 88",
+        "Andante ♩spaceunicodeAugmentationDot = 69",
+        "Piu moso. quasi Allegretto ♩spaceunicodeAugmentationDot = 100",
+        "Moderato. L'istesso tempo. ♩ = wie früher ♩spaceunicodeAugmentationDot",
+        "Allegro maestoso. ♩ = 116",
+        "Meno mosso. (quasi tempo I.)",
+        "Allegro con fuoco. ♩ = 168",
+        "Più animato. 𝅗𝅥 = 144"
+      ],
+      "movements": [
+        {
+          "start_measure": 1,
+          "tempo_marking": "Vivace. unicodeNoteQuarterUp = 168"
+        },
+        {
+          "start_measure": 23,
+          "tempo_marking": "Allegro vivace. unicodeNoteHalfUpspaceunicodeAugmentationDot = 100"
+        },
+        {
+          "start_measure": 227,
+          "tempo_marking": "Andante unicodeNoteQuarterUpspaceunicodeAugmentationDot = 69"
+        },
+        {
+          "start_measure": 298,
+          "tempo_marking": "Moderato. L'istesso tempo. unicodeNoteQuarterUp = wie früher unicodeNoteQuarterUpspaceunicodeAugmentationDot"
+        },
+        {
+          "start_measure": 323,
+          "tempo_marking": "Allegro maestoso. unicodeNoteQuarterUp = 116"
+        },
+        {
+          "start_measure": 508,
+          "tempo_marking": "Allegro con fuoco. unicodeNoteQuarterUp = 168"
+        }
+      ],
+      "is_multi_movement": true,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 4,
+        "n_views": 308,
+        "duration_seconds": 847.7130460639546,
+        "n_notes": 18533,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "NA",
+        "tags": "dvorak-symphonicvariations",
+        "musescore_url": "https://musescore.com/user/6105546/scores/2486501",
+        "musescore_duration": "10:33"
+      },
+      "key": "D major",
+      "key_changes": [
+        "D major",
+        "B♭ major",
+        "D♭ major",
+        "G♭ major",
+        "C major"
+      ],
+      "instruments_gm": [
+        "Flute",
+        "Oboe",
+        "Clarinet",
+        "Bassoon",
+        "French Horn",
+        "Trumpet",
+        "Trombone",
+        "Timpani",
+        "Percussion",
+        "String Ensemble 1",
+        "Contrabass"
+      ],
+      "tempo_bpm": 168,
+      "n_measures": 583,
+      "n_parts": 17,
+      "n_notes": 17802,
+      "notes_per_second": 21.0,
+      "apple_music_search_query": "Dvořák D major Dvorak Symphonic Variations (part 2)",
+      "parent_work_title": "Symphonic Variation (Dvorak) part 2",
+      "year_composed": 1877,
+      "wikidata_id": "Q7661427",
+      "wikidata_title": "Symphonic Variations",
+      "musicbrainz_id": "5c56f156-f38e-371e-86fc-ef2321ed2fae",
+      "wikidata_match_method": "title_substring",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Dvo%C5%99%C3%A1k%20Dvorak%20Symphonic%20Variations%20%28part%202%29",
+      "display_title": "Symphonic Variations"
+    },
+    {
+      "title": "Antonin Dvorak - Song to the Moon",
+      "musicxml": "musicxml/Antonin_Dvorak_-_Song_to_the_Moon.mxl",
+      "midi": "midi/Antonin_Dvorak_-_Song_to_the_Moon.mid",
+      "form": "Song",
+      "key": "G major",
+      "time_signature": "3/4",
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.74,
+        "n_favorites": 8,
+        "n_views": 249,
+        "duration_seconds": 74.99984999835,
+        "n_notes": 603,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/20271637/scores/4571125",
+        "musescore_duration": "01:16"
+      },
+      "instruments_gm": [
+        "Oboe",
+        "Orchestral Harp"
+      ],
+      "tempo_bpm": 100,
+      "n_measures": 41,
+      "n_parts": 3,
+      "n_notes": 582,
+      "notes_per_second": 7.8,
+      "apple_music_search_query": "Dvořák G major Antonin Dvorak - Song to the Moon",
+      "parent_work_title": "Song to the Moon",
+      "wikidata_id": "Q118391033",
+      "wikidata_title": "Song to the Moon",
+      "musicbrainz_id": "b5358e0b-a617-4874-abbe-5d897424e472",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Dvo%C5%99%C3%A1k%20Antonin%20Dvorak%20-%20Song%20to%20the%20Moon",
+      "display_title": "Song to the Moon"
+    },
+    {
+      "title": "IVCSO Violin II Dvorak Slavonic Dances Nos 1-4",
+      "musicxml": "musicxml/IVCSO_Violin_II_Dvorak_Slavonic_Dances_Nos_1-4.mxl",
+      "midi": "midi/IVCSO_Violin_II_Dvorak_Slavonic_Dances_Nos_1-4.mid",
+      "time_signature": "3/4",
+      "instruments": [
+        "Piano"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 1,
+        "n_views": 91,
+        "duration_seconds": 108.99999999718416,
+        "n_notes": 226,
+        "complexity": "1",
+        "is_original": false,
+        "is_best_arrangement": false,
+        "genres": "NA",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/28594974/scores/5207625",
+        "musescore_duration": "01:40"
+      },
+      "key": "A major",
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 120,
+      "n_measures": 43,
+      "n_parts": 1,
+      "n_notes": 226,
+      "notes_per_second": 2.1,
+      "apple_music_search_query": "Dvořák A major IVCSO Violin II Dvorak Slavonic Dances Nos 1-4",
+      "parent_work_title": "Title",
+      "year_composed": 1886,
+      "wikidata_id": "Q1468901",
+      "wikidata_title": "Slavonic Dances",
+      "musicbrainz_id": "09835fb8-af7e-43a0-9347-075104e5a1c9",
+      "imslp_id": "Slavonic_Dances,_Op.46_(Dvořák,_Antonín)",
+      "wikidata_match_method": "title_substring",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Dvo%C5%99%C3%A1k%20IVCSO%20Violin%20II%20Dvorak%20Slavonic%20Dances%20Nos%201-4",
+      "display_title": "Slavonic Dances"
+    }
+  ],
+  "birth_year": 1841,
+  "death_year": 1904,
+  "wikipedia_extract": "Antonín Leopold Dvořák (, d(ə-)VOR-zha(h)k; Czech: [ˈantoɲiːn ˈlɛopold ˈdvor̝aːk] ; 8 September 1841 – 1 May 1904) was a Czech composer. He frequently employed rhythms and other aspects of the folk music of Moravia and his native Bohemia, following the Romantic era nationalist example of his predecessor Bedřich Smetana. Dvořák's style has been described as \"the fullest recreation of a national idiom with that of the symphonic tradition, absorbing folk influences and finding effective ways of ...",
+  "wikidata_id": "Q7298",
+  "apple_music_artist_id": "219776",
+  "apple_music_classical_url": "https://classical.music.apple.com/us/artist/219776"
+}

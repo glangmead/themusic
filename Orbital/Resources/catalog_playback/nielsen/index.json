@@ -1,0 +1,217 @@
+{
+  "composer_name": "Carl Nielsen",
+  "name_last_first": "Nielsen, Carl",
+  "slug": "nielsen",
+  "wiki_page": "https://en.wikipedia.org/wiki/Carl_Nielsen",
+  "apple_music_playlist": "https://music.apple.com/mk/playlist/pl.ea90b59cc14646e4af17e9b3d500791a",
+  "era": "Late- / Post-Romantic",
+  "dates": "1865 – 1931",
+  "nationality": "DNK",
+  "notable": true,
+  "works": [
+    {
+      "title": "Jeg ved en laerkerede",
+      "musicxml": "musicxml/Jeg_ved_en_lærkerede.mxl",
+      "midi": "midi/Jeg_ved_en_lærkerede.mid",
+      "time_signature": "4/4",
+      "instruments": [
+        "Piano"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 1,
+        "n_views": 173,
+        "duration_seconds": 17.499999999547917,
+        "n_notes": 26,
+        "complexity": "1",
+        "is_original": false,
+        "is_best_arrangement": false,
+        "genres": "NA",
+        "tags": "lrkeredekarlnielsendenmark-laerkerede",
+        "musescore_url": "https://musescore.com/user/32459000/scores/5665184",
+        "musescore_duration": "00:18"
+      },
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 120,
+      "n_measures": 9,
+      "n_parts": 1,
+      "n_notes": 26,
+      "notes_per_second": 1.5,
+      "apple_music_search_query": "Nielsen Jeg ved en laerkerede",
+      "arranger": "Kim Mogensen 2019",
+      "year_composed": 1921,
+      "wikidata_id": "Q12319185",
+      "wikidata_title": "Jeg ved en lærkerede",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Nielsen%20Jeg%20ved%20en%20laerkerede",
+      "display_title": "Jeg ved en lærkerede"
+    },
+    {
+      "title": "Quintet for Flute Oboe Clarinet French Horn and Bassoon Op. 43",
+      "musicxml": "musicxml/Carl_Nielsen_Wind_Quintet_Op_43.mxl",
+      "midi": "midi/Carl_Nielsen_Wind_Quintet_Op_43.mid",
+      "catalog_numbers": {
+        "Op": "43"
+      },
+      "form": "Quintet",
+      "time_signature": "4/4",
+      "instruments": [
+        "Flute",
+        "Oboe",
+        "A Clarinet",
+        "Horn in F",
+        "Bassoon"
+      ],
+      "tempo_markings": [
+        "Allegro ben moderato",
+        "(♩ = 96)",
+        "Adagio",
+        "Un poco andantino.",
+        "Un poco de più",
+        "Meno Mosso",
+        "Più vivo.",
+        "Tempo giusto.",
+        "Andantino con moto.",
+        "Un poco di più",
+        "Poco meno.",
+        "Allegretto",
+        "Tempo di marcia.",
+        "più mosso",
+        "Andante festivo."
+      ],
+      "movements": [
+        {
+          "start_measure": 1,
+          "tempo_marking": "Allegro ben moderato"
+        },
+        {
+          "start_measure": 230,
+          "tempo_marking": "Adagio"
+        },
+        {
+          "start_measure": 256,
+          "tempo_marking": "Un poco andantino."
+        },
+        {
+          "start_measure": 290,
+          "tempo_marking": "Un poco de più"
+        },
+        {
+          "start_measure": 358,
+          "tempo_marking": "Andantino con moto."
+        },
+        {
+          "start_measure": 375,
+          "tempo_marking": "Un poco di più"
+        },
+        {
+          "start_measure": 392,
+          "tempo_marking": "Poco meno."
+        },
+        {
+          "start_measure": 489,
+          "tempo_marking": "Andante festivo."
+        }
+      ],
+      "is_multi_movement": true,
+      "pdmx": {
+        "rating": 4.82,
+        "n_favorites": 28,
+        "n_views": 936,
+        "duration_seconds": 1357.7287855112734,
+        "n_notes": 16450,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/25704646/scores/5005888",
+        "musescore_duration": "23:16"
+      },
+      "key": "E major",
+      "key_changes": [
+        "E major",
+        "A major",
+        "F major",
+        "E♭ major",
+        "C major"
+      ],
+      "instruments_gm": [
+        "Flute",
+        "Oboe",
+        "Clarinet",
+        "French Horn",
+        "Bassoon"
+      ],
+      "tempo_bpm": 100,
+      "n_measures": 507,
+      "n_parts": 5,
+      "n_notes": 15266,
+      "notes_per_second": 11.2,
+      "apple_music_search_query": "Nielsen Op 43 E major",
+      "parent_work_title": "Quintet op. 43",
+      "year_composed": 1922,
+      "wikidata_id": "Q1855463",
+      "wikidata_title": "Wind Quintet",
+      "musicbrainz_id": "7bf75592-0a3e-4f8c-902c-933380834683",
+      "imslp_id": "Wind Quintet, Op.43 (Nielsen, Carl)",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Nielsen%20Op%2043",
+      "display_title": "Wind Quintet"
+    },
+    {
+      "title": "Two Fantasy Pieces for Oboe and Piano Romance",
+      "musicxml": "musicxml/Two_Fantasy_Pieces_for_Oboe_and_Piano_Romance.mxl",
+      "midi": "midi/Two_Fantasy_Pieces_for_Oboe_and_Piano_Romance.mid",
+      "time_signature": "4/4",
+      "instruments": [
+        "Oboe",
+        "Piano"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 2,
+        "n_views": 201,
+        "duration_seconds": 198.250495621035,
+        "n_notes": 1057,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/31563583/scores/6009378",
+        "musescore_duration": "03:18"
+      },
+      "key": "B♭ major",
+      "instruments_gm": [
+        "Oboe",
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 80,
+      "n_measures": 66,
+      "n_parts": 2,
+      "n_notes": 1011,
+      "notes_per_second": 5.1,
+      "apple_music_search_query": "Nielsen B♭ major Two Fantasy Pieces for Oboe and Piano Romance",
+      "parent_work_title": "Fantasy Pieces for Oboe and Piano - Romance",
+      "year_composed": 1889,
+      "wikidata_id": "Q5434319",
+      "wikidata_title": "Fantasy Pieces for Oboe and Piano",
+      "imslp_id": "Fantasy_Pieces_for_Oboe_and_Piano,_Op.2_(Nielsen,_Carl)",
+      "wikidata_match_method": "title_substring",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Nielsen%20Two%20Fantasy%20Pieces%20for%20Oboe%20and%20Piano%20Romance",
+      "display_title": "Fantasy Pieces for Oboe and Piano"
+    }
+  ],
+  "birth_year": 1865,
+  "death_year": 1931,
+  "wikipedia_extract": "Carl August Nielsen (Danish: [ˈkʰɑˀl ˈne̝lsn̩]; 9 June 1865 – 3 October 1931) was a Danish composer, conductor, and violinist, widely recognized as his country's most prominent composer. Brought up by poor yet musically talented parents on the island of Funen, he demonstrated his musical abilities at an early age. He initially played in a military band before attending the Royal Danish Academy of Music in Copenhagen from 1884 until December 1886.",
+  "wikipedia_compositions_url": "https://en.wikipedia.org/wiki/List_of_compositions_by_Carl_Nielsen",
+  "wikidata_id": "Q205139",
+  "apple_music_artist_id": "617134",
+  "apple_music_classical_url": "https://classical.music.apple.com/us/artist/617134"
+}

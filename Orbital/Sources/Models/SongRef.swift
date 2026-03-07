@@ -8,10 +8,18 @@
 import Foundation
 import MediaPlayer
 
-struct SongRef: Identifiable {
+struct SongRef: Identifiable, Equatable {
   let id = UUID()
   let name: String
+  /// Optional subtitle shown in the playback accessory (e.g. composer name when playing from Classics).
+  let subtitle: String?
   let patternFileName: String // e.g. "aurora_arpeggio.json"
+
+  init(name: String, subtitle: String? = nil, patternFileName: String) {
+    self.name = name
+    self.subtitle = subtitle
+    self.patternFileName = patternFileName
+  }
 }
 
 /// Lightweight struct for decoding just the pattern name from a JSON file.
@@ -65,6 +73,24 @@ class SongLibrary {
     let state = SongDocument(song: song, engine: engine, resourceBaseURL: resourceBaseURL)
     playbackStates[song.id] = state
     return state
+  }
+
+  /// Play a pre-built SongDocument (e.g. from the Classics browser).
+  /// Stops any currently playing song first; toggles pause/resume if the same doc is re-tapped.
+  func play(document: SongDocument) {
+    if document === currentPlaybackState {
+      document.togglePlayback()
+      if document.isPaused {
+        nowPlayingManager.songPaused()
+      } else {
+        nowPlayingManager.songResumed(name: document.song.name)
+      }
+      return
+    }
+    currentPlaybackState?.stop()
+    currentPlaybackState = document
+    document.togglePlayback()
+    nowPlayingManager.songStarted(name: document.song.name)
   }
 
   /// Start playing a song, stopping any currently playing song first.

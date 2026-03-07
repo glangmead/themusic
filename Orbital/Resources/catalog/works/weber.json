@@ -1,0 +1,460 @@
+{
+  "composer_slug": "weber",
+  "composer_qid": "Q154812",
+  "work_count": 57,
+  "midi_file_count": 1,
+  "works": [
+    {
+      "qid": "Q109244041",
+      "title": "Rübezahl",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/carl-maria-von-weber-1786-pp3",
+      "date": "1805-00-00"
+    },
+    {
+      "qid": "Q107740802",
+      "title": "6 sonates progressives",
+      "imslp_id": "6_Sonates_progressives,_Op.10_(Weber,_Carl_Maria_von)",
+      "pdf_filename": "PMLP830754-Weber_Sonaten_Vl_u._Kl_op.13_Kl-stimme.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/carl-maria-von-weber-1786-pp79",
+      "date": "1810-00-00"
+    },
+    {
+      "qid": "Q114774013",
+      "title": "Variations on a theme from the opera \"Silvana\"",
+      "imslp_id": "Variationen_über_ein_Thema_aus_Silvana,_Op.33_(Weber,_Carl_Maria_von)",
+      "pdf_filename": "-Free-scores.com-_weber-carl-maria-von-variations-for-clarinet-and-piano-clarinet-part-7805-1-.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1811-00-00"
+    },
+    {
+      "qid": "Q107723570",
+      "title": "Sonata for Piano no. 2 in A-flat major, op. 39",
+      "imslp_id": "Piano_Sonata_No.2_in_A-flat_major,_Op.39_(Weber,_Carl_Maria_von)",
+      "pdf_filename": "Liszt_-_S57X_Weber_Sonata_No2.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_No._2_(Weber)",
+      "wikipedia_extract": "Carl Maria von Weber's Piano Sonata No. 2 in A-flat major, Op. 39, is a piano sonata in four movements. Weber started his piano sonata in 1814 and completed it in 1816.",
+      "pageviews_yearly": 1574,
+      "date": "1814-00-00"
+    },
+    {
+      "qid": "Q5158544",
+      "title": "Concertino for Horn and Orchestra",
+      "imslp_id": "Concertino_in_E_minor,_Op.45_(Weber,_Carl_Maria_von)",
+      "pdf_filename": "PMLP118970-00._WEBER_-_CONCERTINO_FOR_HORN__OP._45__J.288__-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Concertino_for_Horn_and_Orchestra_(Weber)",
+      "wikipedia_extract": "The Concertino for Horn and Orchestra in E minor, J. 188, was composed in 1806 for the Karlsruhe player Dautrevaux, and revised for the Munich virtuoso Rauch in 1815 by Carl Maria von Weber. It is an extremely taxing work, whether played on the natural horn for which it was written, or on the modern valve horn. The soloist is accompanied by a small orchestra. It requires, among other feats, that the player produce what is in effect a four-note chord using the interplay between humming and the sound from the instrument, a technique known as multiphonics.",
+      "pageviews_yearly": 3200,
+      "date": "1815-00-00"
+    },
+    {
+      "qid": "Q19893002",
+      "title": "Grand Duo Concertant",
+      "imslp_id": "Grand_duo_concertant,_Op.48_(Weber,_Carl_Maria_von)",
+      "pdf_filename": "PMLP119121-Weber__Carl_Maria_von_-_Gran_Duo_Concertante_op._48._Clarinet_part.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/carl-maria-von-weber-1786-pp81",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Grand_Duo_Concertant_(Weber)",
+      "wikipedia_extract": "The Grand Duo Concertant, Opus 48, J204, is a three-movement work for clarinet and piano composed by Carl Maria von Weber from 1815 to 1816. It is a virtuosic piece for both instruments. Weber most likely composed the work for himself and his friend Heinrich Baermann, a leading clarinettist of the era, although it has also been suggested that the intended clarinettist was Johann Simon Hermstedt.",
+      "pageviews_yearly": 4330,
+      "date": "1816-00-00"
+    },
+    {
+      "qid": "Q156435",
+      "title": "Der Freischütz",
+      "imslp_id": "Der_Freischütz,_Op.77_(Weber,_Carl_Maria_von)",
+      "pdf_filename": "C.M._von_Weber_-_Wir_winden_dir_den_Jungfernkranz.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/carl-maria-von-weber-1786-pp42",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Der_Freisch%C3%BCtz",
+      "wikipedia_extract": "Der Freischütz is a German opera with spoken dialogue in three acts by Carl Maria von Weber with a libretto by Friedrich Kind, based on a story by Johann August Apel and Friedrich Laun from their 1810 collection Gespensterbuch. It premiered on 18 June 1821 at the Schauspielhaus Berlin. It is considered the first German Romantic opera.",
+      "pageviews_yearly": 117009,
+      "date": "1817-00-00"
+    },
+    {
+      "qid": "Q109244042",
+      "title": "Jubel Ouverture",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/carl-maria-von-weber-1786-pp57",
+      "date": "1818-08-00"
+    },
+    {
+      "qid": "Q557467",
+      "title": "Invitation to the Dance",
+      "imslp_id": "Aufforderung_zum_Tanze,_Op.65_(Weber,_Carl_Maria_von)",
+      "pdf_filename": "PMLP05759-Aufforderung_zum_Tanz_-_op._65.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/carl-maria-von-weber-1786-pp103",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Invitation_to_the_Dance_(Weber)",
+      "wikipedia_extract": "Invitation to the Dance, Op. 65, J. 260, is a piano piece in rondo form written by Carl Maria von Weber in 1819. It is also well known in the 1841 orchestration by Hector Berlioz. It is sometimes called Invitation to the Waltz, but this is a mistranslation of the original.",
+      "pageviews_yearly": 15210,
+      "date": "1819-00-00"
+    },
+    {
+      "qid": "Q29592308",
+      "title": "Trio for Piano, Flute and Cello",
+      "imslp_id": "Trio_in_G_minor,_Op.63_(Weber,_Carl_Maria_von)",
+      "pdf_filename": "PMLP41282-000000014139_01_CMvWeber_Piano_Trio__Op.63_IMC_score.PDF",
+      "has_pdf": false,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Trio_for_Piano%2C_Flute_and_Cello_(Weber)",
+      "wikipedia_extract": "Trio for Piano, Flute and Cello in G minor, Op. 63, J. 259 was composed by Carl Maria von Weber in 1818–1819 and published the next year. It is the only piano trio he ever wrote, albeit scored for flute rather than the more conventional violin, and is one of his most substantial chamber pieces. A typical performance lasts 21-25 min.",
+      "pageviews_yearly": 2774,
+      "date": "1819-00-00"
+    },
+    {
+      "qid": "Q2654296",
+      "title": "Konzertstück in F minor",
+      "imslp_id": "Konzertstück_in_F_minor,_Op.79_(Weber,_Carl_Maria_von)",
+      "pdf_filename": "PMLP21206-00._WEBER_-_KONZERTSTUCKE_in_F_minor__Op._79__J.282__-_Conductor_s_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Konzertst%C3%BCck_in_F_minor_(Weber)",
+      "wikipedia_extract": "The Konzertstück in F minor for Piano and Orchestra, Op. 79, J. 282, was written by Carl Maria von Weber. He started work on it in 1815, and completed it on the morning of the premiere of his opera Der Freischütz, 18 June 1821. He premiered it a week later, on 25 June, at his farewell Berlin concert.",
+      "pageviews_yearly": 4973,
+      "date": "1821-00-00"
+    },
+    {
+      "qid": "Q240932",
+      "title": "Abu Hassan",
+      "imslp_id": "Abu_Hassan,_J.106_(Weber,_Carl_Maria_von)",
+      "pdf_filename": "PMLP50017-00._WEBER_-_ABU_HASSAN___J.106__COMP._-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/carl-maria-von-weber-1786-pp41",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Abu_Hassan",
+      "wikipedia_extract": "Abu Hassan is a comic opera in one act by Carl Maria von Weber to a German libretto by Franz Carl Hiemer, based on a story in One Thousand and One Nights. It was composed between 11 August 1810 and 12 January 1811 and has set numbers with recitative and spoken dialogue. The work is a Singspiel in the then popular Turkish style.",
+      "pageviews_yearly": 8028
+    },
+    {
+      "qid": "Q4868192",
+      "title": "Bassoon Concerto",
+      "imslp_id": "Bassoon_Concerto_in_F_major,_Op.75_(Weber,_Carl_Maria_von)",
+      "pdf_filename": "PMLP47593-00._WEBER_-_CONCERTO_FOR_BASSOON__OP._75__J.127__-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/carl-maria-von-weber-1786-pp72",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bassoon_Concerto_(Weber)",
+      "wikipedia_extract": "Carl Maria von Weber's Concerto for Bassoon in F Major, Op. 75 was composed in 1811 for Munich court musician Georg Friedrich Brandt, was premiered on December 28, 1811, and then revised in 1822. Primarily an opera conductor and composer, Weber had only arrived a few months earlier in Munich, where he was extremely well received. The concerto is one of two pieces written for bassoon by Weber, the other being Andante e Rondo Ungarese, Op. 35. A typical performance lasts 18–20 minutes.",
+      "pageviews_yearly": 4619
+    },
+    {
+      "qid": "Q4179212",
+      "title": "Clarinet Concerto No. 1",
+      "imslp_id": "Clarinet_Concerto_No.1_in_F_minor,_Op.73_(Weber,_Carl_Maria_von)",
+      "pdf_filename": "PMLP24385-153_486285103.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/carl-maria-von-weber-1786-pp68",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Clarinet_Concerto_No._1_(Weber)",
+      "wikipedia_extract": "Carl Maria von Weber wrote his Clarinet Concerto No. 1 in F minor, Op. 73 for the clarinettist Heinrich Bärmann in 1811. The piece is highly regarded in the instrument's repertoire. It is written for clarinet in B♭. The work consists of three movements in the form of fast, slow, fast. It was premiered in Munich on 13 June 1811, with Maximilian I Joseph of Bavaria in attendance.",
+      "pageviews_yearly": 7397
+    },
+    {
+      "qid": "Q81975580",
+      "title": "Clarinet Concerto No. 1 in F Minor, Op. 73: I. Allegro"
+    },
+    {
+      "qid": "Q81976109",
+      "title": "Clarinet Concerto No. 1 in F Minor, Op. 73: II. Adagio ma non troppo"
+    },
+    {
+      "qid": "Q81979930",
+      "title": "Clarinet Concerto No. 1 in F Minor, Op. 73: III. Rondo. Allegretto"
+    },
+    {
+      "qid": "Q5126988",
+      "title": "Clarinet Concerto No. 2",
+      "imslp_id": "Clarinet_Concerto_No.2_in_E-flat_major,_Op.74_(Weber,_Carl_Maria_von)",
+      "pdf_filename": "PMLP33894-00._WEBER_-_CLARINET_CONCERTO_NO._2__OP._74__J.118__-_Conductor_s_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/carl-maria-von-weber-1786-pp69",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Clarinet_Concerto_No._2_(Weber)",
+      "wikipedia_extract": "Carl Maria von Weber wrote his Clarinet Concerto No. 2 in E♭ major, Op. 74, J. 118 in 1811, and premiered on December 25, 1813. It is composed of three movements:Allegro\nRomanze: Andante con moto\nAlla Polacca",
+      "pageviews_yearly": 4987
+    },
+    {
+      "qid": "Q11871949",
+      "title": "Clarinet Quintet",
+      "imslp_id": "Clarinet_Quintet,_Op.34_(Weber,_Carl_Maria_von)",
+      "pdf_filename": "PMLP301079-Weber_op_34_min_sc_Eulen.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/carl-maria-von-weber-1786-pp76",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Clarinet_Quintet_(Weber)",
+      "wikipedia_extract": "The Clarinet Quintet in B♭ Major, Op. 34, is a clarinet quintet that was composed by Carl Maria von Weber from 1811 to 1815. As with most of Weber's other clarinet compositions, the quintet was written for the German clarinet virtuoso Heinrich Baermann.",
+      "pageviews_yearly": 2536
+    },
+    {
+      "qid": "Q21998424",
+      "title": "Concertino for Clarinet",
+      "imslp_id": "Concertino_in_E-flat_major,_Op.26_(Weber,_Carl_Maria_von)",
+      "pdf_filename": "PMLP06240-129_486285103.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/carl-maria-von-weber-1786-pp67",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Concertino_for_Clarinet_(Weber)",
+      "wikipedia_extract": "Carl Maria von Weber wrote his Concertino for Clarinet in E-flat major, Op. 26, J. 109, for clarinettist Heinrich Bärmann in 1811. Weber wrote the work in three days between March 29 and April 3. Bärmann learned the work over the next three days and the command performance, for which King Maximilian I of Bavaria purchased 50 tickets, took place on the evening of April 5.",
+      "pageviews_yearly": 4451
+    },
+    {
+      "qid": "Q106695969",
+      "title": "Der Freischütz",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Der_Freischutz_-_Wir_winden_dir_den_Jungfernkranz.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q115269745",
+      "title": "Der Freischütz (Staatstheater Mainz, 2021)"
+    },
+    {
+      "qid": "Q132731985",
+      "title": "Der Freischütz. Ouverture (Carl Maria von Weber)"
+    },
+    {
+      "qid": "Q10266176",
+      "title": "Die Macht der Liebe und des Weins"
+    },
+    {
+      "qid": "Q323838",
+      "title": "Die drei Pintos",
+      "imslp_id": "Die_drei_Pintos,_J._Anh.5_(Weber,_Carl_Maria_von)",
+      "pdf_filename": "PMLP362022-._WEBER_-_DIE_DREI_PINTOS__MAHLER___J.Ahn.5__-_Bassoon_1.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Die_drei_Pintos",
+      "wikipedia_extract": "Die drei Pintos is a comic opera of which Carl Maria von Weber began composing the music, working on a libretto by Theodor Hell. The work was completed about 61 years after Weber's death by Gustav Mahler. It premiered on 20 January 1888 at the Neues Stadttheater in Leipzig.",
+      "pageviews_yearly": 6078
+    },
+    {
+      "qid": "Q109001494",
+      "title": "Euriante"
+    },
+    {
+      "qid": "Q707737",
+      "title": "Euryanthe",
+      "imslp_id": "Euryanthe,_Op.81_(Weber,_Carl_Maria_von)",
+      "pdf_filename": "PMLP50021-1_Weber_Euryanthe_1870z.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/carl-maria-von-weber-1786-pp44",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Euryanthe",
+      "wikipedia_extract": "Euryanthe is a German grand heroic-romantic opera by Carl Maria von Weber, first performed at the Theater am Kärntnertor in Vienna on 25 October 1823. Though acknowledged as one of Weber's most important operas, the work is rarely staged because of the weak libretto by Helmina von Chézy. Euryanthe is based on the 13th-century French romance L'Histoire du très-noble et chevalereux prince Gérard, comte de Nevers et la très-virtueuse et très chaste princesse Euriant de Savoye, sa mye.",
+      "pageviews_yearly": 15987
+    },
+    {
+      "qid": "Q107723522",
+      "title": "Grande Polonaise",
+      "imslp_id": "Grande_polonaise,_Op.21_(Weber,_Carl_Maria_von)",
+      "pdf_filename": "PMLP72301-Weber__Carl_Maria_von-Saemmtliche_Werke_fuer_Pianoforte_Peters_6176_02_Op_21_scan.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/carl-maria-von-weber-1786-pp97"
+    },
+    {
+      "qid": "Q54989369",
+      "title": "I fain would hide"
+    },
+    {
+      "qid": "Q54989360",
+      "title": "If a slim young man comes along"
+    },
+    {
+      "qid": "Q127047495",
+      "title": "JEWETT (Weber)"
+    },
+    {
+      "qid": "Q1529152",
+      "title": "Le Spectre de la Rose",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Le_Spectre_de_la_rose",
+      "wikipedia_extract": "Le Spectre de la rose is a short ballet about a young girl who dreams of dancing with the spirit of a souvenir rose from her first ball. The ballet was written by Jean-Louis Vaudoyer who based the story on a verse by Théophile Gautier and used the music of Carl Maria von Weber's piano piece Aufforderung zum Tanz as orchestrated by Hector Berlioz.",
+      "pageviews_yearly": 9149
+    },
+    {
+      "qid": "Q2607724",
+      "title": "Mayerling"
+    },
+    {
+      "qid": "Q1938928",
+      "title": "Missa sancta, no. 1",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/carl-maria-von-weber-1786-pp109"
+    },
+    {
+      "qid": "Q107723297",
+      "title": "Momento capriccioso in B-flat major, op. 12",
+      "imslp_id": "Momento_capriccioso,_Op.12_(Weber,_Carl_Maria_von)",
+      "pdf_filename": "PMLP06465-Weber_Beruehmte_Klavier_Compositionen_Peters_Momento_capriccioso_Op12.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q690835",
+      "title": "Oberon",
+      "imslp_id": "Oberon,_J.306_(Weber,_Carl_Maria_von)",
+      "pdf_filename": "Henselt_-_Arrangement_-_Weber_-_Oberon_-_Ouverture.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/carl-maria-von-weber-1786-pp45",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oberon_(Weber)",
+      "wikipedia_extract": "Oberon, or The Elf-King's Oath is a 3-act romantic opera with spoken dialogue composed in 1825–26 by Carl Maria von Weber. The only English opera ever set by Weber, the libretto by James Robinson Planché was based on the German poem Oberon by Christoph Martin Wieland, which itself was based on the epic romance Huon de Bordeaux, a French medieval tale. It was premiered in London on 12 April 1826.",
+      "pageviews_yearly": 15614
+    },
+    {
+      "qid": "Q834193",
+      "title": "Peter Schmoll und seine Nachbarn",
+      "imslp_id": "Peter_Schmoll_und_seine_Nachbarn,_J.8_(Weber,_Carl_Maria_von)",
+      "pdf_filename": "PMLP1261559-00._WEBER_-_PETER_SCHMOLL_OVERTURE___J.8__-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/carl-maria-von-weber-1786-pp39",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Peter_Schmoll_und_seine_Nachbarn",
+      "wikipedia_extract": "Peter Schmoll und seine Nachbarn is the third opera by Carl Maria von Weber and the first for which the music has survived, though the libretto has not. It was written in 1801–2 when the composer was only 15 and premiered in Augsburg the following year. The libretto is based on a novel by Carl Gottlob Cramer.",
+      "pageviews_yearly": 2143
+    },
+    {
+      "qid": "Q11331308",
+      "title": "Piano Concerto No. 1",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/carl-maria-von-weber-1786-pp60"
+    },
+    {
+      "qid": "Q11331316",
+      "title": "Piano Concerto No. 2",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/carl-maria-von-weber-1786-pp61"
+    },
+    {
+      "qid": "Q107723485",
+      "title": "Piano Quartet in B-flat major, J.76",
+      "imslp_id": "Piano_Quartet_in_B-flat_major,_J.76_(Weber,_Carl_Maria_von)",
+      "pdf_filename": "PMLP133982-4736.WeberCM-Op008.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q109044789",
+      "title": "Piano Sonata No.1",
+      "imslp_id": "Piano_Sonata_No.1_in_C_major,_Op.24_(Weber,_Carl_Maria_von)",
+      "pdf_filename": "Liszt_-_S57X_Weber_Sonata_No1.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/carl-maria-von-weber-1786-pp84"
+    },
+    {
+      "qid": "Q19708590",
+      "title": "Piano Sonata No.3",
+      "imslp_id": "Piano_Sonata_No.3_in_D_minor,_Op.49_(Weber,_Carl_Maria_von)",
+      "pdf_filename": "PMLP10920-CMvWeber_Piano_Sonata_No.3__Op.49_LitolffEd.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/carl-maria-von-weber-1786-pp86"
+    },
+    {
+      "qid": "Q120200792",
+      "title": "Piano Sonata No.4",
+      "imslp_id": "Piano_Sonata_No.4_in_E_minor,_Op.70_(Weber,_Carl_Maria_von)",
+      "pdf_filename": "PMLP10921-980__Weber__Allegretto_from_the_4th_Piano_Sonata_in_e_minor__Op._70.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/carl-maria-von-weber-1786-pp87"
+    },
+    {
+      "qid": "Q107732457",
+      "title": "Polacca brillante",
+      "imslp_id": "Polacca_brillante,_Op.72_(Weber,_Carl_Maria_von)",
+      "pdf_filename": "Liszt_-_S.367_-_Polonaise_Brillante__Weber_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/carl-maria-von-weber-1786-pp104"
+    },
+    {
+      "qid": "Q1240094",
+      "title": "Preciosa",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/carl-maria-von-weber-1786-pp47"
+    },
+    {
+      "qid": "Q123120385",
+      "title": "Romance",
+      "imslp_id": "Romance_(Weber,_Carl_Maria_von)",
+      "pdf_filename": "PMLP395140-Weber_Romance_RSL.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q59286050",
+      "title": "Seymour"
+    },
+    {
+      "qid": "Q834218",
+      "title": "Silvana",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/carl-maria-von-weber-1786-pp80",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Silvana_(opera)",
+      "wikipedia_extract": "Silvana is an opera by Carl Maria von Weber, first performed at the Nationaltheater Frankfurt on 16 September 1810. The libretto, by Franz Carl Hiemer, is a reworking of an earlier, unsuccessful opera by Weber, Das Waldmädchen. Weber also reused music from the same piece in Silvana. It has been characterized as a somewhat unstable combination of emerging individualism with conventional techniques; however, the premiere was moderately successful, and the Berlin premiere was met with an enthusiastic reception. It is the earliest Weber opera to have survived in its complete form; older operatic works are either fragmentary or entirely lost.",
+      "pageviews_yearly": 4095
+    },
+    {
+      "qid": "Q58102460",
+      "title": "Softly Now the Light of Day"
+    },
+    {
+      "qid": "Q58102556",
+      "title": "Softly Now the Light of Day"
+    },
+    {
+      "qid": "Q58102655",
+      "title": "Softly Now the Light of Day"
+    },
+    {
+      "qid": "Q11374093",
+      "title": "Symphony No. 1",
+      "imslp_id": "Symphony_No.1_in_C_major,_Op.19_(Weber,_Carl_Maria_von)",
+      "pdf_filename": "PMLP58546-57930.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/carl-maria-von-weber-1786-pp49",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._1_(Weber)",
+      "wikipedia_extract": "Carl Maria von Weber's Symphony No. 1 in C Op. 19, was written in 1806–1807. It was written for Duke Eugen of Württemberg, who employed Weber from 1806.",
+      "pageviews_yearly": 2373
+    },
+    {
+      "qid": "Q11374109",
+      "title": "Symphony No. 2",
+      "imslp_id": "Symphony_No.2_in_C_major,_J.51_(Weber,_Carl_Maria_von)",
+      "pdf_filename": "PMLP683290-00._WEBER_-_SYMPHONY_NO._2__J.51__-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/carl-maria-von-weber-1786-pp50"
+    },
+    {
+      "qid": "Q138448682",
+      "title": "Variations on \"Schöne Minka\"",
+      "imslp_id": "9_Variations_sur_un_air_russe,_Op.40_(Weber,_Carl_Maria_von)",
+      "pdf_filename": "PMLP156338-Weber__Carl_Maria_von-Saemmtliche_Werke_fuer_Pianoforte_Peters_6176_08_Op_40_scan.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/carl-maria-von-weber-1786-pp100"
+    },
+    {
+      "qid": "Q130725461",
+      "title": "Vyzvání k tanci"
+    },
+    {
+      "qid": "Q127032738",
+      "title": "WILMOT (Weber)"
+    },
+    {
+      "qid": "Q72590924",
+      "title": "Weber: Clarinet Concerto No. 1 in F Minor, Op. 73"
+    }
+  ]
+}

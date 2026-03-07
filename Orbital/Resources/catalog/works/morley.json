@@ -1,0 +1,33 @@
+{
+  "composer_slug": "morley",
+  "composer_qid": "Q438141",
+  "work_count": 3,
+  "midi_file_count": 5,
+  "works": [
+    {
+      "qid": "Q622054",
+      "title": "April is in my mistress' face",
+      "has_midi": true,
+      "midi_files": [
+        "midi/April_is_in_My_Mistress_Face.mid",
+        "midi/April_is_in_my_mistress_face_1.mid",
+        "midi/April_is_in_my_Mistress_Face_Thomas_Morley.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q11697995",
+      "title": "Fetish"
+    },
+    {
+      "qid": "Q288774",
+      "title": "Now Is the Month of Maying",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Now_is_the_Month_of_Maying.mid",
+        "midi/Now_is_the_Month_of_Maying_1.mid"
+      ],
+      "has_mxl": true
+    }
+  ]
+}

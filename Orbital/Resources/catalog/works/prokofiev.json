@@ -1,0 +1,1113 @@
+{
+  "composer_slug": "prokofiev",
+  "composer_qid": "Q49481",
+  "work_count": 136,
+  "midi_file_count": 1,
+  "works": [
+    {
+      "qid": "Q7736360",
+      "title": "The Giant",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Giant_(opera)",
+      "wikipedia_extract": "The Giant is an opera in three acts by Sergei Prokofiev. The 12 page work was written for performance by the nine-year-old composer's family.",
+      "pageviews_yearly": 3723,
+      "date": "1900-00-00"
+    },
+    {
+      "qid": "Q24936832",
+      "title": "Na pustynnikh ostrovakh",
+      "date": "1901-00-00"
+    },
+    {
+      "qid": "Q25392849",
+      "title": "Undina",
+      "date": "1904-00-00"
+    },
+    {
+      "qid": "Q745980",
+      "title": "Piano Sonata No. 1",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp132",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_No._1_(Prokofiev)",
+      "wikipedia_extract": "Sergei Prokofiev's Piano Sonata No. 1 in F minor, Op. 1 was written in 1909. It consists of a single movement in sonata form.",
+      "pageviews_yearly": 3648,
+      "date": "1909-00-00"
+    },
+    {
+      "qid": "Q2611334",
+      "title": "Piano Sonata No. 2",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp128",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_No._2_(Prokofiev)",
+      "wikipedia_extract": "Sergei Prokofiev's Piano Sonata No. 2 in D Minor, Op. 14, is a sonata for solo piano, written in 1912. First published by P. Jurgenson in 1913, it was premiered on 5 February 1914 in Moscow with the composer performing. Prokofiev dedicated the work to his friend and fellow student at the St. Petersburg Conservatory, Maximilian Schmidthof, who committed suicide in 1913. Concert pianist Boris Berman has said of this sonata that it 'covers a huge emotional range: from Romantic lyricism to aggressive brutality'.",
+      "pageviews_yearly": 6878,
+      "date": "1912-00-00"
+    },
+    {
+      "qid": "Q908855",
+      "title": "Toccata",
+      "imslp_id": "Toccata,_Op.11_(Prokofiev,_Sergey)",
+      "pdf_filename": "PMLP03208-Prokofiev_-_Toccata__op._11.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp172",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toccata_(Prokofiev)",
+      "wikipedia_extract": "The Toccata in D minor, Op. 11 is a piece for solo piano, written by Sergei Prokofiev in 1912 and debuted by the composer on December 10, 1916, in Petrograd. It is a further development of the toccata form, which has been used by composers such as Johann Sebastian Bach and Robert Schumann. Other composers of well-known toccatas include Maurice Ravel, Dmitri Kabalevsky and Aram Khachaturian.",
+      "pageviews_yearly": 6307,
+      "date": "1912-00-00"
+    },
+    {
+      "qid": "Q3132828",
+      "title": "Piano Sonata No. 4",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp130",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_No._4_(Prokofiev)",
+      "wikipedia_extract": "Sergei Prokofiev's Piano Sonata No. 4 in C minor, Op. 29, subtitled D’après des vieux cahiers, or After Old Notebooks, was composed in 1917 and premiered on April 17 the next year by the composer himself in Petrograd. The work was dedicated to Prokofiev's late friend Maximilian Schmidthof, whose suicide in 1913 had shocked and saddened the composer.",
+      "pageviews_yearly": 4556,
+      "date": "1917-00-00"
+    },
+    {
+      "qid": "Q2740744",
+      "title": "Overture on Hebrew Themes",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp107",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Overture_on_Hebrew_Themes",
+      "wikipedia_extract": "Sergei Prokofiev wrote the Overture on Hebrew Themes, Op. 34, in 1919 while he was in the United States. It is scored for the rare combination of clarinet, string quartet and piano. Fifteen years later the composer prepared a version for chamber orchestra, his “Op. 34 bis” or Op. 34a, retaining a separate part for piano but featuring solo cello as much as solo clarinet.",
+      "pageviews_yearly": 6539,
+      "date": "1919-00-00"
+    },
+    {
+      "qid": "Q907735",
+      "title": "The Love for Three Oranges",
+      "imslp_id": "The_Love_for_Three_Oranges_(opera),_Op.33_(Prokofiev,_Sergey)",
+      "pdf_filename": "PMLP20756-prokovieftheloveofthethreeorangesBassoon1.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp7",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Love_for_Three_Oranges",
+      "wikipedia_extract": "L'amour des trois oranges, Op. 33, is a 1921 satirical French-language opera by Sergei Prokofiev. He wrote his own libretto, basing it on the Italian play L'amore delle tre melarance, or The Love for Three Oranges by Carlo Gozzi, and conducted the premiere, which took place at the Auditorium Theatre in Chicago on 30 December 1921.",
+      "pageviews_yearly": 33898,
+      "date": "1919-00-00"
+    },
+    {
+      "qid": "Q2964614",
+      "title": "Chout",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp16",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chout",
+      "wikipedia_extract": "Chout, Op. 21, is a ballet by Sergei Prokofiev. It was originally composed in 1915, then extensively revised at the request of Serge Diaghilev in 1921. The composer extracted an orchestral suite from it, Op. 21 bis. The ballet's full title is Tale of the Jester Who Outwits Seven Other Jesters. The most commonly used title for the work is based on the French transliteration of the Russian word for \"jester\", shut.",
+      "pageviews_yearly": 7136,
+      "date": "1920-00-00"
+    },
+    {
+      "qid": "Q223333",
+      "title": "Piano Concerto No. 3",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp95",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._3_(Prokofiev)",
+      "wikipedia_extract": "Piano Concerto No. 3 in C major, Op. 26, is a piano concerto by Sergei Prokofiev. It was completed in 1921 using sketches first started in 1913.",
+      "pageviews_yearly": 21491,
+      "date": "1921-00-00"
+    },
+    {
+      "qid": "Q3414595",
+      "title": "Quintet in G minor",
+      "imslp_id": "Quintet,_Op.39_(Prokofiev,_Sergey)",
+      "pdf_filename": "PMLP51403-Prokofiev_-_Quintet__Op._39__score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp108",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quintet_(Prokofiev)",
+      "wikipedia_extract": "Sergei Prokofiev's Quintet in G minor, Op. 39 is a piece of chamber music for oboe, clarinet, violin, viola and double bass, written in 1924. The quintet, closely related to Prokofiev's ballet, Trapèze, contains six movements and lasts 20–25 minutes.",
+      "pageviews_yearly": 4242,
+      "date": "1924-08-14"
+    },
+    {
+      "qid": "Q2372929",
+      "title": "The Fiery Angel",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp8",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Fiery_Angel_(opera)",
+      "wikipedia_extract": "The Fiery Angel, Op. 37, is an opera by Russian composer Sergei Prokofiev. The opera was composed between 1919 and 1927. It was premiered posthumously in 1955 in Venice, in Italian. The work was not presented to Russian audiences until the 1990s, most notably by the Mariinsky Theatre, after the dissolution of the Soviet Union.",
+      "pageviews_yearly": 11454,
+      "date": "1925-00-00"
+    },
+    {
+      "qid": "Q3490093",
+      "title": "Sonata for Two Violins",
+      "imslp_id": "Sonata_for_2_Violins,_Op.56_(Prokofiev,_Sergey)",
+      "pdf_filename": "Prokofiev_-_Sonata_for_2_Violins_Op.56__Violin_I_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp115",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sonata_for_Two_Violins_(Prokofiev)",
+      "wikipedia_extract": "Sergei Prokofiev composed his Sonata for Two Violins in C major, Op. 56, in 1932 during his vacation near St. Tropez as a commission piece to conclude the inaugural concert of Triton, a Paris-based society dedicated to presenting new chamber music. That concert was held on 16 December 1932.",
+      "pageviews_yearly": 4508,
+      "date": "1932-00-00"
+    },
+    {
+      "qid": "Q3328800",
+      "title": "Music for Children",
+      "imslp_id": "Music_for_Children,_Op.65_(Prokofiev,_Sergey)",
+      "pdf_filename": "PMLP04523-Prokofiev_-_Music_For_Children__op._65.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp186",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Music_for_Children_(Prokofiev)",
+      "wikipedia_extract": "Music for Children, Op. 65, is a cycle of twelve character pieces for piano by Sergei Prokofiev (1891–1953). Composed in 1935, it is – beside its compositors qualities – considered one of the most popular collections of pedagogical piano music of the 20th century.",
+      "pageviews_yearly": 621,
+      "date": "1935-00-00"
+    },
+    {
+      "qid": "Q911487",
+      "title": "Romeo and Juliet",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp36",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Romeo_and_Juliet_(Prokofiev)",
+      "wikipedia_extract": "Romeo and Juliet, Op. 64, is a ballet by Sergei Prokofiev based on William Shakespeare's play Romeo and Juliet. First composed in 1935, it was substantially revised for its Soviet premiere in early 1940. Prokofiev made from the ballet three orchestral suites and a suite for solo piano.",
+      "pageviews_yearly": 119315,
+      "date": "1935-09-00"
+    },
+    {
+      "qid": "Q3060075",
+      "title": "Eugene Onegin",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp26",
+      "date": "1936-00-00"
+    },
+    {
+      "qid": "Q2990276",
+      "title": "Cello Concerto",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp101",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cello_Concerto_(Prokofiev)",
+      "wikipedia_extract": "\nThe Cello Concerto in E minor, Op. 58 is a concerto written by Sergey Prokofiev between 1933 and 1938. Its duration is approximately 35 minutes. It consists of three movements:",
+      "pageviews_yearly": 4898,
+      "date": "1938-00-00"
+    },
+    {
+      "qid": "Q3132581",
+      "title": "Semyon Kotko",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp61",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Semyon_Kotko",
+      "wikipedia_extract": "Semyon Kotko, Op. 81, is an opera in five acts by Sergei Prokofiev to a libretto by Sergei Prokofiev and Valentin Katayev based on Katayev's 1937 novel I, Son of Working People. It was premiered on 23 June 1940 at the Stanislavsky Opera Theatre in Moscow.",
+      "pageviews_yearly": 5097,
+      "date": "1939-00-00"
+    },
+    {
+      "qid": "Q3413829",
+      "title": "String Quartet No. 2",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp105",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._2_(Prokofiev)",
+      "wikipedia_extract": "Sergei Prokofiev's String Quartet No. 2 in F Major, Op. 92 (1941) was first performed by the Beethoven Quartet in Moscow on 7 April 1942. A later concert in Moscow, on 5 September 1942, was delayed by a Nazi air raid and started late. Prokofiev thought it \"an extremely turbulent success.\" The string quartet, lasting for 20–25 minutes, is in three movements.",
+      "pageviews_yearly": 4796,
+      "date": "1941-00-00"
+    },
+    {
+      "qid": "Q785515",
+      "title": "War and Peace",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp12",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/War_and_Peace_(opera)",
+      "wikipedia_extract": "War and Peace is a 1946 230-minute opera in 13 scenes, plus an overture and an epigraph, by Sergei Prokofiev. Based on the 1869 novel War and Peace by Leo Tolstoy, its Russian libretto was prepared by the composer and Mira Mendelson. The first seven scenes are devoted to peace, the latter six, after the epigraph, to war.",
+      "pageviews_yearly": 16412,
+      "date": "1942-00-00"
+    },
+    {
+      "qid": "Q2293104",
+      "title": "Flute Sonata",
+      "imslp_id": "Flute_Sonata,_Op.94_(Prokofiev,_Sergey)",
+      "pdf_filename": "PMLP72016-prokofiev_sonate_fur_flote_und_klavier.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp120",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Flute_Sonata_(Prokofiev)",
+      "wikipedia_extract": "The Flute Sonata in D, Op. 94, is a musical work composed by Sergei Prokofiev in 1943. It was initially composed for flute and piano, and was later transcribed for violin as Op. 94a, both versions have been recorded several times. The piece contains four movements.",
+      "pageviews_yearly": 6099,
+      "date": "1943-00-00"
+    },
+    {
+      "qid": "Q2452810",
+      "title": "Piano Sonata No. 9",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp135",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_No._9_(Prokofiev)",
+      "wikipedia_extract": "\nThe Piano Sonata No. 9 in C major, Op. 103 by Sergei Prokofiev is his final completed piano sonata. It is dedicated to pianist Sviatoslav Richter.",
+      "pageviews_yearly": 4343,
+      "date": "1947-00-00"
+    },
+    {
+      "qid": "Q3490223",
+      "title": "Sonata for Solo Violin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sonata_for_Solo_Violin_(Prokofiev)",
+      "wikipedia_extract": "The Sonata for Solo Violin in D major, Opus 115, is a three-movement work for unaccompanied violin composed by Sergei Prokofiev in 1947. It was commissioned by the Soviet Union's Committee of Arts Affairs as a pedagogical work for talented violin students. It is therefore a non-virtuosic piece, and was originally designed to be played not by one soloist but by multiple young performers in unison. It was not performed until 10 July 1959 - six years after Prokofiev's death - by Ruggiero Ricci at the Moscow Conservatory.",
+      "pageviews_yearly": 3189,
+      "date": "1947-00-00"
+    },
+    {
+      "qid": "Q2991736",
+      "title": "Cello Concertino",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp103",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cello_Concertino_(Prokofiev)",
+      "wikipedia_extract": "Sergei Prokofiev's Cello Concertino in G minor, Op. 132 was left incomplete at the composer's death in 1953. It was completed by Mstislav Rostropovich and Dmitry Kabalevsky.",
+      "pageviews_yearly": 2679,
+      "date": "1952-00-00"
+    },
+    {
+      "qid": "Q261098",
+      "title": "Symphony No. 7",
+      "imslp_id": "Symphony_No.7,_Op.131_(Prokofiev,_Sergey)",
+      "pdf_filename": "PMLP214303-Prokofiev_-_Symphony_No._7__Op._131__orch._score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp47",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._7_(Prokofiev)",
+      "wikipedia_extract": "Sergei Prokofiev's Symphony No. 7 in C♯ minor, Op. 131, was completed in 1952, the year before his death. It is his last symphony.",
+      "pageviews_yearly": 9818,
+      "date": "1952-00-00"
+    },
+    {
+      "qid": "Q1840239",
+      "title": "I Believe in Father Christmas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/I_Believe_in_Father_Christmas",
+      "wikipedia_extract": "\"I Believe in Father Christmas\" is a song by English musician Greg Lake with lyrics by Peter Sinfield. Although it is often categorised as an antireligious song, this was not Lake's intention. He said that he wrote the song in protest at the commercialisation of Christmas.\nSinfield, however, said that the words are about a loss of innocence and childhood belief. Released as Lake's debut solo single in 1975, the song reached number 2 on the UK Singles Chart, number 17 on the Irish Singles Chart and number 98 in Australia.",
+      "pageviews_yearly": 62205,
+      "date": "1974-00-00"
+    },
+    {
+      "qid": "Q118976",
+      "title": "Alexander Nevsky",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp205",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alexander_Nevsky_(film)",
+      "wikipedia_extract": "Alexander Nevsky is a 1938 Soviet historical drama film directed by Sergei Eisenstein. It depicts the attempted invasion of Novgorod in the 13th century by the Teutonic Knights of the Holy Roman Empire and their defeat by Prince Alexander, known popularly as Alexander Nevsky (1220–1263).",
+      "pageviews_yearly": 80592
+    },
+    {
+      "qid": "Q2541462",
+      "title": "Alexander Nevsky",
+      "imslp_id": "Alexander_Nevsky_(cantata),_Op.78_(Prokofiev,_Sergey)",
+      "pdf_filename": "PMLP198312-Alexander_Nevsky.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp205",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alexander_Nevsky_(Prokofiev)",
+      "wikipedia_extract": "Alexander Nevsky is the score composed by Sergei Prokofiev for Sergei Eisenstein's 1938 film Alexander Nevsky. The subject of the film is the 13th century incursion of the knights of the Livonian Order into the territory of the Novgorod Republic, their capture of the city of Pskov, the summoning of Prince Alexander Nevsky to the defense of Rus', and his subsequent victory over the crusaders in 1242. The majority of the score's song texts were written by the poet Vladimir Lugovskoy.",
+      "pageviews_yearly": 23366
+    },
+    {
+      "qid": "Q82712404",
+      "title": "Alexander Nevsky, op 78 : [programme]"
+    },
+    {
+      "qid": "Q84147",
+      "title": "Anna Karenina",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Anna_Karenina_(1997_film)",
+      "wikipedia_extract": "Anna Karenina is a 1997 American period drama film written and directed by Bernard Rose and starring Sophie Marceau, Sean Bean, Alfred Molina, Mia Kirshner and James Fox. Based on the 1878 novel of the same name by Leo Tolstoy, the film is about a young and beautiful married woman who meets a handsome count, with whom she falls in love. Eventually, the conflict between her passionate desires and painful social realities leads to depression and despair.",
+      "pageviews_yearly": 49961
+    },
+    {
+      "qid": "Q4127674",
+      "title": "Arise, Russian people!",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arise%2C_Russian_People!",
+      "wikipedia_extract": "\"Arise, Russian People!\" is a patriotic song from the Soviet film Alexander Nevsky (1938) directed by Sergei Eisenstein. The music is composed by Sergei Prokofiev, with lyricist Vladimir Lugovskoy.",
+      "pageviews_yearly": 2834
+    },
+    {
+      "qid": "Q2629201",
+      "title": "Betrothal in a Monastery",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp10",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Betrothal_in_a_Monastery",
+      "wikipedia_extract": "Betrothal in a Monastery is an opera in nine scenes by Sergei Prokofiev to a Russian libretto by the composer and Mira Mendelson after Sheridan's The Duenna.",
+      "pageviews_yearly": 6935
+    },
+    {
+      "qid": "Q18236548",
+      "title": "Bibigon"
+    },
+    {
+      "qid": "Q2910945",
+      "title": "Boris Godunov",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp25"
+    },
+    {
+      "qid": "Q217685",
+      "title": "Caligula",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Caligula_(film)",
+      "wikipedia_extract": "Caligula is a 1979 historical drama film about the rise and fall of Roman Emperor Caligula. The film stars Malcolm McDowell in the title role, alongside Teresa Ann Savoy, Helen Mirren, Peter O'Toole, John Steiner, and John Gielgud.",
+      "pageviews_yearly": 814943
+    },
+    {
+      "qid": "Q3655689",
+      "title": "Cantata for the 20th Anniversary of the October Revolution",
+      "imslp_id": "Cantata_for_the_20th_Anniversary_of_the_October_Revolution,_Op.74_(Prokofiev,_Sergey)",
+      "pdf_filename": "PMLP1391638-Prokofiev_-_Cantata_for_the_20th_Anniversary_of_the_October_Revolution__Full_Score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cantata_for_the_20th_Anniversary_of_the_October_Revolution",
+      "wikipedia_extract": "The Cantata for the 20th Anniversary of the October Revolution, Op. 74, is a dramatic cantata by Sergei Prokofiev.",
+      "pageviews_yearly": 4071
+    },
+    {
+      "qid": "Q3490235",
+      "title": "Cello Sonata",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp118",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cello_Sonata_(Prokofiev)",
+      "wikipedia_extract": "The Cello Sonata in C major, Op. 119, was composed by Sergei Prokofiev in 1949. The year before, Prokofiev was accused of formalism by the Zhdanov Decree and much of his music was banned. However, he continued to compose music, though he was not sure if his new works would ever be performed in public.",
+      "pageviews_yearly": 6125
+    },
+    {
+      "qid": "Q4193716",
+      "title": "Cinderella",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp37"
+    },
+    {
+      "qid": "Q5120428",
+      "title": "Cinderella",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp37",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cinderella_(Ashton)",
+      "wikipedia_extract": "This version of the Cinderella ballet, using Sergei Prokofiev's Cinderella music and re-choreographed by Frederick Ashton, is a comic ballet.",
+      "pageviews_yearly": 5829
+    },
+    {
+      "qid": "Q108367766",
+      "title": "Divertissement (Prokofiev)",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp78",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Divertissement_(Prokofiev)",
+      "wikipedia_extract": "Sergei Prokofiev composed his Divertissement Op.43 for small orchestra. The work is closely related to his ballet, Trapèze. He also made a piano transcription of the work with subtitles for each movement.",
+      "pageviews_yearly": 1831
+    },
+    {
+      "qid": "Q5462025",
+      "title": "Flourish, Mighty Land",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Flourish%2C_Mighty_Land_(Prokofiev)",
+      "wikipedia_extract": "Flourish, Mighty Land, Op. 114, is a cantata written by Sergei Prokofiev in 1947, to commemorate the 30th anniversary of the October Revolution, along with his Thirty Years.",
+      "pageviews_yearly": 1313
+    },
+    {
+      "qid": "Q11884157",
+      "title": "Four Etudes for Piano"
+    },
+    {
+      "qid": "Q3413506",
+      "title": "Four Pieces for Piano, Op. 3"
+    },
+    {
+      "qid": "Q3413499",
+      "title": "Four Pieces for Piano, Op. 32",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Four_Pieces_for_Piano%2C_Op._32_(Prokofiev)",
+      "wikipedia_extract": "Four Pieces for Piano, Op. 32, is a set of short solo piano pieces written by Russian composer Sergei Prokofiev. Written in 1918, it is part of a lengthy series of collections of short pieces for piano.",
+      "pageviews_yearly": 442
+    },
+    {
+      "qid": "Q2204797",
+      "title": "Four Pieces for Piano, Op. 4 (Prokofiev)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Four_Pieces_for_Piano%2C_Op._4_(Prokofiev)",
+      "wikipedia_extract": "Four Pieces for Piano, Op. 4 is the third set of short pieces for piano by Russian composer Sergei Prokofiev. Notably, this set includes the Suggestion diabolique, one of the composer's best-known works.",
+      "pageviews_yearly": 856
+    },
+    {
+      "qid": "Q3126474",
+      "title": "Hamlet",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp27"
+    },
+    {
+      "qid": "Q138499351",
+      "title": "Happiness Waltz"
+    },
+    {
+      "qid": "Q4195586",
+      "title": "Ivan the Terrible",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp35"
+    },
+    {
+      "qid": "Q4195589",
+      "title": "Ivan the Terrible",
+      "imslp_id": "Ivan_the_Terrible,_Op.116_(Prokofiev,_Sergey)",
+      "pdf_filename": "PMLP499051-Prokofiev_-_Ivan_the_Terrible__Stasevich__-_Full_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp35",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ivan_the_Terrible_(Prokofiev)",
+      "wikipedia_extract": "\nIvan the Terrible, Op. 116, is the score composed by Sergei Prokofiev for Sergei Eisenstein's film Ivan the Terrible (1945) and its sequel (1958), the first two parts of an incomplete trilogy.",
+      "pageviews_yearly": 7568
+    },
+    {
+      "qid": "Q20051329",
+      "title": "Ivan the Terrible",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp35",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ivan_the_Terrible_(1945_film)",
+      "wikipedia_extract": "Ivan the Terrible is a two-part Soviet historical drama film, produced, written and directed by Sergei Eisenstein. The film chronicles the reign of 16th-century Russian tsar Ivan IV and details his formation of the oprichnina and conflict with the boyars, particularly with his aunt and cousin. Lyudmila Tselikovskaya plays Ivan's wife Anastasia, while members of the oprichnina are played by Mikhail Zharov, Amvrosy Buchma, and Mikhail Kuznetsov. The score was composed by Sergei Prokofiev.",
+      "pageviews_yearly": 67187,
+      "movements": [
+        {
+          "qid": "Q1542476"
+        },
+        {
+          "qid": "Q1436866"
+        },
+        {
+          "qid": "Q3804793"
+        }
+      ]
+    },
+    {
+      "qid": "Q116973616",
+      "title": "Ivan the Terrible",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp35",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ivan_the_Terrible_(ballet)",
+      "wikipedia_extract": "Ivan the Terrible is a full-length ballet choreographed by Yury Grigorovich for the Bolshoi Ballet in Moscow, where it was first performed in 1975 with scenic design and costumes by Simon Virsaladze. It was based on music by Sergei Prokofiev, namely his film score for Eisenstein's 1945 Ivan the Terrible and its sequel. Yuri Vladimirov created the title role. The ballet was presented on international tours and was filmed in 1976. The production has remained in the repertoire of the Bolshoi.",
+      "pageviews_yearly": 2422
+    },
+    {
+      "qid": "Q1542476",
+      "title": "Ivan the Terrible. Part I",
+      "movements": [
+        {
+          "qid": "Q105078859"
+        }
+      ]
+    },
+    {
+      "qid": "Q1436866",
+      "title": "Ivan the Terrible. Part II"
+    },
+    {
+      "qid": "Q3804793",
+      "title": "Ivan the Terrible. Part III"
+    },
+    {
+      "qid": "Q3163537",
+      "title": "Je suis le seigneur du château",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Je_suis_le_seigneur_du_ch%C3%A2teau",
+      "wikipedia_extract": "Je suis le seigneur du château is a 1989 French drama film, directed by Régis Wargnier, loosely based on the 1970 novel I'm the King of the Castle by the English writer Susan Hill.",
+      "pageviews_yearly": 5545
+    },
+    {
+      "qid": "Q6189256",
+      "title": "Jeu",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jeu_(film)",
+      "wikipedia_extract": "Jeu is a 2006 animated short film by Georges Schwizgebel. Described as a film about the frenetic pace of modern life, Jeu is set to the scherzo of Prokofiev's Concerto for Piano No. 2, Opus 16.",
+      "pageviews_yearly": 2353
+    },
+    {
+      "qid": "Q25384214",
+      "title": "Khan Buzay"
+    },
+    {
+      "qid": "Q4236251",
+      "title": "Kotovsky (film)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kotovsky_(film)",
+      "wikipedia_extract": "Kotovsky, is a 1942 Soviet biopic propaganda film directed by Aleksandr Faintsimmer.",
+      "pageviews_yearly": 1489
+    },
+    {
+      "qid": "Q57392226",
+      "title": "Le Trapèze"
+    },
+    {
+      "qid": "Q2435952",
+      "title": "Le pas d'acier",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp18",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Le_pas_d'acier_(Prokofiev)",
+      "wikipedia_extract": "\nLe pas d'acier, Op. 41, is a 1926 ballet in two scenes containing eleven dances composed by Sergei Prokofiev. Prokofiev also created a four-movement orchestral suite from the ballet.",
+      "pageviews_yearly": 4564
+    },
+    {
+      "qid": "Q15270708",
+      "title": "Lermontov (1943 film)"
+    },
+    {
+      "qid": "Q1112886",
+      "title": "Lieutenant Kijé",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp56",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lieutenant_Kij%C3%A9_(film)",
+      "wikipedia_extract": "Lieutenant Kijé is a 1934 Soviet comedy film directed by Aleksandr Faintsimmer and promoted by Boris Gusman, based on the novella \"Lieutenant Kijé\" by Yury Tynyanov. The film was released in the United States as The Czar Wants to Sleep. Sergei Prokofiev composed the score; a five-movement suite based on the score quickly became part of the international concert repertoire.",
+      "pageviews_yearly": 10637
+    },
+    {
+      "qid": "Q1821685",
+      "title": "Lieutenant Kijé",
+      "imslp_id": "Lieutenant_Kijé_(suite),_Op.60_(Prokofiev,_Sergey)",
+      "pdf_filename": "PMLP134095-Prokofiev_-_Lieutenant_Kijé_Suite__Op._60__orch._score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp56",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lieutenant_Kij%C3%A9_(Prokofiev)",
+      "wikipedia_extract": "Sergei Prokofiev's Lieutenant Kijé music was originally written to accompany the film of the same name, produced by the Belgoskino film studios in Leningrad in 1933–34 and released in March 1934. It was Prokofiev's first attempt at film music, and his first commission.",
+      "pageviews_yearly": 47996,
+      "movements": [
+        {
+          "qid": "Q72324681"
+        }
+      ]
+    },
+    {
+      "qid": "Q1218888",
+      "title": "Love and Death",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Love_and_Death",
+      "wikipedia_extract": "Love and Death is a 1975 American comedy film written and directed by Woody Allen. It is a satire on the Golden Age of Russian literature starring Allen and Diane Keaton as Boris and Sonja, Russians living during the Napoleonic Era who engage in mock-serious philosophical debates. Allen considered it the funniest film he had made up until that point.",
+      "pageviews_yearly": 115280
+    },
+    {
+      "qid": "Q3275476",
+      "title": "Maddalena",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maddalena_(opera)",
+      "wikipedia_extract": "Maddalena is an opera in one act by the Russian composer Sergei Prokofiev, who also wrote the libretto based on a play of the same name by Magda Gustavovna Lieven-Orlov. That play was in turn based on Oscar Wilde's play A Florentine Tragedy.",
+      "pageviews_yearly": 3994
+    },
+    {
+      "qid": "Q2114145",
+      "title": "March from 'Love for Three Oranges'"
+    },
+    {
+      "qid": "Q6904168",
+      "title": "Montagues and Capulets",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp36",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Romeo_and_Juliet_(Prokofiev)",
+      "wikipedia_extract": "Romeo and Juliet, Op. 64, is a ballet by Sergei Prokofiev based on William Shakespeare's play Romeo and Juliet. First composed in 1935, it was substantially revised for its Soviet premiere in early 1940. Prokofiev made from the ballet three orchestral suites and a suite for solo piano.",
+      "pageviews_yearly": 8022
+    },
+    {
+      "qid": "Q115519789",
+      "title": "On Guard for Peace",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp211",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/On_Guard_for_Peace",
+      "wikipedia_extract": "On Guard for Peace, also translated as On Guard of Peace, Op. 124 is an oratorio by Sergei Prokofiev scored for narrators, mezzo-soprano, boy soprano, boys choir, mixed choir, and symphony orchestra. Each of its ten movements sets texts by Samuil Marshak, who had collaborated previously with the composer in the work Winter Bonfire, Op. 122.",
+      "pageviews_yearly": 3692
+    },
+    {
+      "qid": "Q7091333",
+      "title": "On the Dnieper",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp20",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/On_the_Dnieper",
+      "wikipedia_extract": "On the Dnieper , Op. 51, is a ballet in two scenes with prelude and epilogue by Sergei Prokofiev. Composed in 1931 as his fourth work in the genre, it resulted from a commission by the Ballet de l'Opéra National de Paris after the unexpected death in 1929 of Ballets Russes founder Sergei Diaghilev and after the success of The Prodigal Son. The premiere took place in 1932; a year later Prokofiev extracted an orchestral suite from the work, Op. 51 bis, using six of its twelve movements.",
+      "pageviews_yearly": 2548
+    },
+    {
+      "qid": "Q28664539",
+      "title": "Partisans in the Steppes of Ukraine"
+    },
+    {
+      "qid": "Q3374866",
+      "title": "Pensées"
+    },
+    {
+      "qid": "Q677403",
+      "title": "Peter and the Wolf",
+      "imslp_id": "Peter_and_the_Wolf,_Op.67_(Prokofiev,_Sergey)",
+      "pdf_filename": "PMLP1275949-Prokofieff_Peter_and_The_Wolf_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp219",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Peter_and_the_Wolf",
+      "wikipedia_extract": "Peter and the Wolf, Op. 67, a \"symphonic tale for children\", is a programmatic musical composition written by Sergei Prokofiev in 1936. The narrator tells a Russian folk tale, which the orchestra illustrates by using different instruments to play themes that represent each character in the story.",
+      "pageviews_yearly": 248052
+    },
+    {
+      "qid": "Q1576209",
+      "title": "Peter and the Wolf",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp219",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Peter_%26_the_Wolf_(2006_film)",
+      "wikipedia_extract": "Peter & the Wolf is a stop-motion animated short film written and directed by Suzie Templeton. An international co-production film between Norway, Poland and United Kingdom, it was made in Se-ma-for Studios in Łódź and has been shown in cinemas; the film has no dialogue but sometimes with live musical accompaniment.",
+      "pageviews_yearly": 22309
+    },
+    {
+      "qid": "Q3387812",
+      "title": "Peter and the Wolf",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp219",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Peter_and_the_Wolf_(1946_film)",
+      "wikipedia_extract": "Peter and the Wolf is a 1946 animated short based on the 1936 musical composition/fairy tale by Sergei Prokofiev, produced by Walt Disney and narrated by Sterling Holloway. It was originally released theatrically as a segment in Make Mine Music. It was re-issued the following year accompanying a re-issue of Fantasia, then released separately on home video in the 1990s.",
+      "pageviews_yearly": 36485
+    },
+    {
+      "qid": "Q106696425",
+      "title": "Peter und der Wolf",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp219"
+    },
+    {
+      "qid": "Q162911",
+      "title": "Piano Concerto No. 1",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp93",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._1_(Prokofiev)",
+      "wikipedia_extract": "Sergei Prokofiev set about composing his Piano Concerto No. 1 in D♭ major, Op. 10, in 1911, and finished it the next year. The shortest of all his concertos, it is in one movement, about 15 minutes in duration, and dedicated to the “dreaded Tcherepnin.”",
+      "pageviews_yearly": 9295
+    },
+    {
+      "qid": "Q210219",
+      "title": "Piano Concerto No. 2",
+      "imslp_id": "Piano_Concerto_No.2,_Op.16_(Prokofiev,_Sergey)",
+      "pdf_filename": "PMLP04521-Prokofiev_-_Piano_Concerto_No._2__Op._16__orch._score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp94",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._2_(Prokofiev)",
+      "wikipedia_extract": "Sergei Prokofiev set to work on his Piano Concerto No. 2 in G minor, Op. 16, in 1912 and completed it the next year. However, that version of the concerto is lost; the score was destroyed in a fire following the Russian Revolution. Prokofiev reconstructed the work in 1923, two years after finishing his Piano Concerto No. 3, and declared it to be \"so completely rewritten that it might almost be considered [Piano Concerto] No. 4.\" Indeed, its orchestration has features that clearly postdate the 1921 concerto. Performing as soloist, Prokofiev premiered this \"No. 2\" in Paris on 8 May 1924 with Serge Koussevitzky conducting. It is dedicated to the memory of Maximilian Schmidthof, a friend of Prokofiev's at the Saint Petersburg Conservatory, who had committed suicide in April 1913 after having written a farewell letter to Prokofiev.",
+      "pageviews_yearly": 27948
+    },
+    {
+      "qid": "Q230785",
+      "title": "Piano Concerto No. 4",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp96",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._4_(Prokofiev)",
+      "wikipedia_extract": "\nSergei Prokofiev's Piano Concerto No. 4 in B♭ major for the left hand, Op. 53, was commissioned by the one-armed pianist Paul Wittgenstein and completed in 1931.",
+      "pageviews_yearly": 5986
+    },
+    {
+      "qid": "Q239689",
+      "title": "Piano Concerto No. 5",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp97",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._5_(Prokofiev)",
+      "wikipedia_extract": "The last complete piano concerto by Sergei Prokofiev, Piano Concerto No. 5 in G major, Op. 55, dates to 1932. It was premiered by Prokofiev himself at the piano on October 30, 1932, accompanied by the Berlin Philharmonic conducted by Wilhelm Furtwängler.",
+      "pageviews_yearly": 5105
+    },
+    {
+      "qid": "Q2468854",
+      "title": "Piano Concerto No. 6",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._6_(Prokofiev)",
+      "wikipedia_extract": "Sergei Prokofiev did not manage to compose more than a few bars of his Piano Concerto No. 6 before his death in 1953, so it is impossible to reconstruct the underlying musical ideas and complete it.",
+      "pageviews_yearly": 3171
+    },
+    {
+      "qid": "Q7190150",
+      "title": "Piano Sonata No. 10",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp137",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_No._10_(Prokofiev)",
+      "wikipedia_extract": "Sergei Prokofiev's Piano Sonata No. 10 in E minor, Op. 137 (1952) (unfinished) is a sonata composed for solo piano.",
+      "pageviews_yearly": 2239
+    },
+    {
+      "qid": "Q2446873",
+      "title": "Piano Sonata No. 3 in A Minor, Op. 28",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_No._3_(Prokofiev)",
+      "wikipedia_extract": "\nSergei Prokofiev's Piano Sonata No. 3 in A minor, Op. 28 (1917) is a sonata composed for solo piano, using sketches dating from 1907. Prokofiev gave the première of this in Saint Petersburg on 15 April 1918, during a week-long festival of his music sponsored by the Conservatory.",
+      "pageviews_yearly": 6662
+    },
+    {
+      "qid": "Q1864706",
+      "title": "Piano Sonata No. 5",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp131",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_No._5_(Prokofiev)",
+      "wikipedia_extract": "\nSergei Prokofiev's Piano Sonata No. 5 in C major, Op. 38, was written at Ettal near Oberammergau in the Bavarian Alps during the composer's stay there in 1923. He would revise it thirty years later, at the end of his life, but not drastically, as his Opus 135, and it is this version that is usually played. The work is dedicated it to Pierre Souvtchinski, a musicologist and friend. All eight of Prokofiev's other piano sonatas were written in Russia. The revisions to this piece, made in 1952–53 in Russia, are mostly in the last movement.",
+      "pageviews_yearly": 3439
+    },
+    {
+      "qid": "Q2955960",
+      "title": "Piano Sonata No. 6",
+      "imslp_id": "Piano_Sonata_No.6,_Op.82_(Prokofiev,_Sergey)",
+      "pdf_filename": "PMLP04494-Prokofiev_-_Piano_Sonata_No._6__op._82.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp132",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_No._6_(Prokofiev)",
+      "wikipedia_extract": "Sergei Prokofiev's Piano Sonata No. 6 in A major, Op. 82 is a sonata for solo piano, the first of the \"War Sonatas\". It was composed in 1940 and first performed on 8 April of that year in Moscow, with the composer at the piano.",
+      "pageviews_yearly": 8479
+    },
+    {
+      "qid": "Q2431843",
+      "title": "Piano Sonata No. 7",
+      "imslp_id": "Piano_Sonata_No.7,_Op.83_(Prokofiev,_Sergey)",
+      "pdf_filename": "PMLP04495-Prokofiev__Sergei_-_Piano_Sonata__No._7_Op._83_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp133",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_No._7_(Prokofiev)",
+      "wikipedia_extract": "Sergei Prokofiev's Piano Sonata No. 7 in B♭ major, Op. 83 is a sonata for solo piano, the second of the three \"War Sonatas\", composed in 1942. The sonata was first performed on 18 January 1943 in Moscow by Sviatoslav Richter. Performances of this sonata can last anywhere from 17 to about 20 minutes.",
+      "pageviews_yearly": 14263
+    },
+    {
+      "qid": "Q2587212",
+      "title": "Piano Sonata No. 8",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp134",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_No._8_(Prokofiev)",
+      "wikipedia_extract": "\nSergei Prokofiev's Piano Sonata No. 8 in B♭ major, Op. 84 is a sonata for solo piano, the third and longest of the three \"war sonatas\", with performances typically lasting around 30 minutes. He completed it in 1944 and dedicated it to his partner Mira Mendelson, who later became his second wife. The sonata was first performed on 30 December 1944, in Moscow, by Emil Gilels.",
+      "pageviews_yearly": 8172
+    },
+    {
+      "qid": "Q3110046",
+      "title": "Pushkin Waltzes",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp89",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pushkin_Waltzes_(Prokofiev)",
+      "wikipedia_extract": "\nSergei Prokofiev wrote the two Pushkin Waltzes in 1949.",
+      "pageviews_yearly": 2035
+    },
+    {
+      "qid": "Q7363069",
+      "title": "Romeo + Juliet",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp36",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Romeo_%2B_Juliet_(ballet)",
+      "wikipedia_extract": "Romeo + Juliet is a ballet by New York City Ballet balletmaster-in-chief Peter Martins to Sergei Prokofiev's Romeo and Juliet (1934–1940). The premiere took place on Tuesday, 1 May 2007 at the New York State Theater, Lincoln Center.",
+      "pageviews_yearly": 5284
+    },
+    {
+      "qid": "Q7363131",
+      "title": "Romeo and Juliet",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp36",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Romeo_and_Juliet_(1955_film)",
+      "wikipedia_extract": "Romeo and Juliet is a 1955 Soviet ballet film directed by Lev Arnshtam. The film was based on the 1940 production of Prokofiev's ballet, choreographed by Leonid Lavrovsky. It was entered into the 1955 Cannes Film Festival, where it won the Best Lyrical Film and was nominated as the Palme d'Or.",
+      "pageviews_yearly": 4623
+    },
+    {
+      "qid": "Q86236828",
+      "title": "Russian Violin Concertos"
+    },
+    {
+      "qid": "Q104518885",
+      "title": "Russian Violin Concertos"
+    },
+    {
+      "qid": "Q3473529",
+      "title": "Sarcasms",
+      "imslp_id": "Sarcasms,_Op.17_(Prokofiev,_Sergey)",
+      "pdf_filename": "PMLP03210-Prokofiev_-_Sarcasms__op._17.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp175",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sarcasms_(Prokofiev)",
+      "wikipedia_extract": "Sarcasms, Op. 17, initially alternatively entitled Sarcastic Pieces, is a 1914 solo piano composition by Russian composer Sergei Prokofiev.",
+      "pageviews_yearly": 4700
+    },
+    {
+      "qid": "Q578262",
+      "title": "Scythian Suite",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp49",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Scythian_Suite",
+      "wikipedia_extract": "\nThe Scythian Suite, Op. 20 is an orchestral suite by Sergei Prokofiev written in 1915.",
+      "pageviews_yearly": 12299
+    },
+    {
+      "qid": "Q15990983",
+      "title": "Semyon Kotko",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp61"
+    },
+    {
+      "qid": "Q7457136",
+      "title": "Seven, They Are Seven",
+      "imslp_id": "Seven,_They_Are_Seven,_Op.30_(Prokofiev,_Sergey)",
+      "pdf_filename": "PMLP1420243-prokofiev-seven-they-are-op30-01-picc1.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seven%2C_They_Are_Seven",
+      "wikipedia_extract": "Seven, They Are Seven is a cantata by Sergei Prokofiev composed in 1917 for large orchestra, choir, and tenor soloist. It was composed in Yessentuki and Kislovodsk, and the words are taken from the poem Ancient Calls by Konstantin Balmont. It was revised by Prokofiev in 1933.",
+      "pageviews_yearly": 2686
+    },
+    {
+      "qid": "Q7522545",
+      "title": "Sinfonietta",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp79",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sinfonietta_(Prokofiev)",
+      "wikipedia_extract": "The Sinfonietta in A major is a composition for orchestra by Sergei Prokofiev.",
+      "pageviews_yearly": 2594
+    },
+    {
+      "qid": "Q49000546",
+      "title": "Sonata for Solo Cello in C-sharp Minor",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sonata_for_Solo_Cello_(Prokofiev)",
+      "wikipedia_extract": "\nSergei Prokofiev began composing his Sonata for Solo Cello, Op. 134, in 1952. The sonata was intended to be written in four movements, but as it was one of seven compositions which the composer was writing during this time, only the beginning of the first movement was completed before Prokofiev's death in March 1953.",
+      "pageviews_yearly": 2200
+    },
+    {
+      "qid": "Q7561565",
+      "title": "Songs of Our Days",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Songs_of_Our_Days_(Prokofiev)",
+      "wikipedia_extract": "\nSongs of Our Days, Op. 76, is a rarely performed cantata for mezzo-soprano and baritone soloists, chorus and orchestra composed by Sergei Prokofiev in 1937, during the height of Stalin's power. With rousing marches and text extolling Russian virtues and Stalin's magnanimity, the work is composed in a much more approachable style than one would expect of Prokofiev's music during this period.",
+      "pageviews_yearly": 1382
+    },
+    {
+      "qid": "Q151177",
+      "title": "Strike",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Strike_(1925_film)",
+      "wikipedia_extract": "Strike is a 1925 Soviet silent propaganda film directed and edited by Sergei Eisenstein. Originating as one entry out of a proposed seven-part series titled \"Towards Dictatorship of the Proletariat\", Strike was a joint collaboration between the Proletcult Theatre and the film studio Goskino. As Eisenstein's first full-length feature film, it marked his transition from theatre to cinema, and his next film Battleship Potemkin emerged from the same film cycle.",
+      "pageviews_yearly": 32587
+    },
+    {
+      "qid": "Q3068986",
+      "title": "String Quartet No. 1",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp104",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._1_(Prokofiev)",
+      "wikipedia_extract": "Sergei Prokofiev's String Quartet No. 1 in B minor, Op. 50 (1931) was commissioned by the Library of Congress. The Quartet was first performed in Washington, D.C., on 25 April 1931 by the Brosa Quartet and in Moscow on 9 October 1931 by the Roth Quartet. The string quartet is in three movements, lasting around 20–25 minutes.",
+      "pageviews_yearly": 3183
+    },
+    {
+      "qid": "Q138499339",
+      "title": "Suite from Zoluška"
+    },
+    {
+      "qid": "Q7661424",
+      "title": "Symphonic Song",
+      "imslp_id": "Symphonic_Song,_Op.57_(Prokofiev,_Sergey)",
+      "pdf_filename": "PMLP1482252-prokofiev_chant_symphonique_op.57.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp44",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphonic_Song_(Prokofiev)",
+      "wikipedia_extract": "Sergei Prokofiev's Symphonic Song, Op. 57, was written in 1933.",
+      "pageviews_yearly": 1588
+    },
+    {
+      "qid": "Q163571",
+      "title": "Symphony No. 1",
+      "imslp_id": "Symphony_No.1,_Op.25_(Prokofiev,_Sergey)",
+      "pdf_filename": "Classical_Symphony_-_1.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp40",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._1_(Prokofiev)",
+      "wikipedia_extract": "The Symphony No. 1 in D major, Op. 25, also known as the Classical, was Sergei Prokofiev's first numbered symphony. He began to compose it in 1916 and completed it on September 10, 1917. It was composed as a modern reinterpretation of the classical style of Joseph Haydn and Wolfgang Amadeus Mozart. The symphony's nickname was bestowed upon it by the composer. It premiered on April 18, 1918, in Petrograd, conducted by Prokofiev. It has remained one of his most popular works.",
+      "pageviews_yearly": 19417
+    },
+    {
+      "qid": "Q210556",
+      "title": "Symphony No. 2",
+      "imslp_id": "Symphony_No.2,_Op.40_(Prokofiev,_Sergey)",
+      "pdf_filename": "PMLP214300-Prokofiev_-_Symphony_No._2__Op._40__orch._score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp41",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._2_(Prokofiev)",
+      "wikipedia_extract": "Sergei Prokofiev wrote his Symphony No. 2 in D minor, Op. 40, in Paris in 1924-25, during what he called \"nine months of frenzied toil\". He characterized this symphony as a work of \"iron and steel\".",
+      "pageviews_yearly": 7021
+    },
+    {
+      "qid": "Q223529",
+      "title": "Symphony No. 3",
+      "imslp_id": "Symphony_No.3,_Op.44_(Prokofiev,_Sergey)",
+      "pdf_filename": "PMLP145653-prokofieff_symhony_no.3_bcl.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp42",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._3_(Prokofiev)",
+      "wikipedia_extract": "Sergei Prokofiev wrote his Symphony No. 3 in C minor, Op. 44, in 1928.",
+      "pageviews_yearly": 6910
+    },
+    {
+      "qid": "Q200613",
+      "title": "Symphony No. 4",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp46",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._4_(Prokofiev)",
+      "wikipedia_extract": "Sergei Prokofiev's Symphony No. 4 is actually two works, both using material created for The Prodigal Son ballet. The first, Op. 47, was completed in 1930 and premiered that November; it lasts about 22 minutes. The second, Op. 112, is too different to be termed a \"revision\"; made in 1947, it is about 37 minutes long, differs stylistically from the earlier work, reflecting a new context, and differs formally as well in its grander instrumentation.",
+      "pageviews_yearly": 9741
+    },
+    {
+      "qid": "Q240271",
+      "title": "Symphony No. 5",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp44",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._5_(Prokofiev)",
+      "wikipedia_extract": "Sergei Prokofiev wrote his Symphony No. 5 in B♭ major, Op. 100, in the Soviet Union in one month in the summer of 1944.",
+      "pageviews_yearly": 21886
+    },
+    {
+      "qid": "Q246511",
+      "title": "Symphony No. 6",
+      "imslp_id": "Symphony_No.6,_Op.111_(Prokofiev,_Sergey)",
+      "pdf_filename": "PMLP205962-S._Prokofiev_-_Symphony_No._6_VLN_1.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp45",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._6_(Prokofiev)",
+      "wikipedia_extract": "The Symphony No. 6 in E♭ minor, Op. 111, by Sergei Prokofiev was completed and premiered in 1947. Sketches for the symphony exist as early as from June 1945; Prokofiev had reportedly begun work on it prior to composing his Fifth Symphony. He later remarked that the Sixth memorialized the victims of the Great Patriotic War.",
+      "pageviews_yearly": 10142
+    },
+    {
+      "qid": "Q1814596",
+      "title": "Symphony-Concerto",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony-Concerto_(Prokofiev)",
+      "wikipedia_extract": "Sergei Prokofiev's Symphony-Concerto in E minor, Op. 125 is a large-scale work for cello and orchestra.",
+      "pageviews_yearly": 10441
+    },
+    {
+      "qid": "Q47146333",
+      "title": "Tales of an Old Grandmother",
+      "imslp_id": "Tales_of_an_Old_Grandmother,_Op.31_(Prokofiev,_Sergey)",
+      "pdf_filename": "PMLP04510-Prokofiev_-_Tales_Of_The_Old_Grandmother__op._31.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp177",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tales_of_an_Old_Grandmother",
+      "wikipedia_extract": "\nTales of an Old Grandmother, Op. 31 is a set of four piano pieces by Sergei Prokofiev. It was composed in 1918 and premiered by the composer himself on January 7 the following year in New York City, probably at Aeolian Hall. It has an approximate duration of ten minutes and it was first published by Gutheil in Moscow in 1922. It was composed during Prokofiev's exile in the United States after the outbreak of the Russian Revolution. An arrangement for orchestra also exists.",
+      "pageviews_yearly": 2415
+    },
+    {
+      "qid": "Q3032591",
+      "title": "Ten Pieces for Piano",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp173"
+    },
+    {
+      "qid": "Q1197011",
+      "title": "The Gambler",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp6",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Gambler_(Prokofiev)",
+      "wikipedia_extract": "The Gambler is an opera in four acts by Sergei Prokofiev to a Russian libretto by the composer, based on the 1866 story of the same name by Fyodor Dostoyevsky.",
+      "pageviews_yearly": 10199
+    },
+    {
+      "qid": "Q4501868",
+      "title": "The Glass Slipper",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cinderella_(1960_film)",
+      "wikipedia_extract": "Cinderella is a 1960 Soviet dance film directed by Rostislav Zakharov and Aleksandr Rou and performed by the Bolshoi Ballet.",
+      "pageviews_yearly": 3316
+    },
+    {
+      "qid": "Q3222845",
+      "title": "The Prodigal Son",
+      "imslp_id": "L'enfant_prodigue,_Op.46_(Prokofiev,_Sergey)",
+      "pdf_filename": "PMLP1387022-Prokofiev_-_L_enfant_prodigue__Full_Score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp19",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Prodigal_Son_(ballet)",
+      "wikipedia_extract": "Prodigal Son, or Le Fils prodigue, Op. 46 is a ballet created for Diaghilev's Ballets Russes by George Balanchine to music by Sergei Prokofiev (1928–29). The libretto, based on the parable in the Gospel of Luke, was by Boris Kochno, who added a good deal of drama and emphasized the theme of sin and redemption ending with the Prodigal Son's return.",
+      "pageviews_yearly": 7243
+    },
+    {
+      "qid": "Q25217693",
+      "title": "The Queen of Spades",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Queen_of_Spades_(Prokofiev)",
+      "wikipedia_extract": "The Queen of Spades, Op. 70, is the score composed by Sergei Prokofiev in 1936 for the planned but unrealized film by Mikhail Romm. The film was to be based on the 1834 short story \"The Queen of Spades\" by Alexander Pushkin, and was intended for release in 1937, the centenary of Pushkin's death. It is one of Prokofiev's least known pieces.",
+      "pageviews_yearly": 2546
+    },
+    {
+      "qid": "Q7761260",
+      "title": "The Rock Peter and the Wolf",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Peter_and_the_Wolf_(1975_rock_album)",
+      "wikipedia_extract": "Peter and the Wolf is an album adapting Sergei Prokofiev's Peter and the Wolf by Jack Lancaster and Robin Lumley released in 1975. It features a rock arrangement of Prokofiev's music. Performers on the album include Jack Lancaster, Robin Lumley, Gary Brooker, Bill Bruford, Phil Collins, Julie Tippett, Stephane Grappelli, Jon Hiseman, Brian Eno, Alvin Lee, Gary Moore, Cozy Powell, Manfred Mann, Keith Tippett, Viv Stanshall, and the English Chorale. This album is notable for featuring several musicians from Brand X, who would release their debut album the following year.",
+      "pageviews_yearly": 5073
+    },
+    {
+      "qid": "Q1212967",
+      "title": "The Story of a Real Man",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Story_of_a_Real_Man",
+      "wikipedia_extract": "The Story of a Real Man is an opera in four acts by the Russian composer Sergei Prokofiev, his opus 117. It is based on the novel of the same name by Boris Polevoy recounting the life of Aleksey Maresyev. It was written from 1947 to 1948.",
+      "pageviews_yearly": 6056
+    },
+    {
+      "qid": "Q2667531",
+      "title": "The Tale of the Stone Flower",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp23",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Tale_of_the_Stone_Flower_(Prokofiev)",
+      "wikipedia_extract": "The Tale of the Stone Flower, Op. 118, is Sergei Prokofiev's eighth and last ballet, written between 1948 and 1953. It is based on the Russian Ural folk tale The Stone Flower by Pavel Bazhov and is also the last of the trilogy of ballets Prokofiev wrote in the Russian ballet tradition. It was premiered posthumously in 1954, conducted by Yuri Fayer.",
+      "pageviews_yearly": 6419
+    },
+    {
+      "qid": "Q3228128",
+      "title": "The Ugly Duckling",
+      "imslp_id": "The_Ugly_Duckling,_Op.18_(Prokofiev,_Sergey)",
+      "pdf_filename": "PMLP150142-PMLUS00487-Prokofiev_-_Ugly_Duckling_Op.18_original_voicepiano.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp224"
+    },
+    {
+      "qid": "Q16259675",
+      "title": "The Year 1941",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp62",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Year_1941_(Prokofiev)",
+      "wikipedia_extract": "Sergei Prokofiev wrote the symphonic suite The Year 1941 in 1941.",
+      "pageviews_yearly": 1876
+    },
+    {
+      "qid": "Q3540034",
+      "title": "Three Pieces, Op. 59"
+    },
+    {
+      "qid": "Q16912506",
+      "title": "Three Pieces, Op. 96"
+    },
+    {
+      "qid": "Q7835564",
+      "title": "Trapeze",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Trap%C3%A8ze_(Prokofiev)",
+      "wikipedia_extract": "\nTrapèze is a ballet by Sergei Prokofiev. Closely related to his Quintet, Op. 39 (1924), it contains eight movements and lasts 20–25 minutes. The complete ballet in eight movements was first performed in Gotha, a German town near Hanover, on 6 November 1925.",
+      "pageviews_yearly": 1685
+    },
+    {
+      "qid": "Q110248785",
+      "title": "Troïka"
+    },
+    {
+      "qid": "Q72324681",
+      "title": "Troїka"
+    },
+    {
+      "qid": "Q2410502",
+      "title": "Violin Concerto No. 1",
+      "imslp_id": "Violin_Concerto_No.1,_Op.19_(Prokofiev,_Sergey)",
+      "pdf_filename": "PMLP37879-PMLASIA01406-placeholder-Prokofiev__S._-_Violin_Concerto_No._1_in_D_major__Op._19_--_Piano_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp99",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Violin_Concerto_No._1_(Prokofiev)",
+      "wikipedia_extract": "Sergei Prokofiev began his Violin Concerto No. 1 in D major, Op. 19, as a concertino in 1915 but soon abandoned it to work on his opera The Gambler. He returned to the concerto in the summer of 1917. It was premiered on October 18, 1923 at the Paris Opera with Marcel Darrieux playing the violin part and the Paris Opera Orchestra conducted by Serge Koussevitzky. Igor Stravinsky made his debut as conductor at the same concert, conducting the first performance of his own Octet for Wind Instruments.",
+      "pageviews_yearly": 14233,
+      "movements": [
+        {
+          "qid": "Q49481"
+        }
+      ]
+    },
+    {
+      "qid": "Q2991907",
+      "title": "Violin Concerto No. 2",
+      "imslp_id": "Violin_Concerto_No.2,_Op.63_(Prokofiev,_Sergey)",
+      "pdf_filename": "PMLP43029-Prokofiev_-_Violin_Concerto_No._2__orch._score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp100",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Violin_Concerto_No._2_(Prokofiev)",
+      "wikipedia_extract": "The Violin Concerto No. 2 in G minor, Op. 63, written in 1935 by Sergei Prokofiev, is a work in three movements:",
+      "pageviews_yearly": 12417
+    },
+    {
+      "qid": "Q2457349",
+      "title": "Violin Sonata No. 1 in F Minor, Op. 80",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Violin_Sonata_No._1_(Prokofiev)",
+      "wikipedia_extract": "\nSergei Prokofiev's Violin Sonata No. 1 in F minor, Op. 80, was composed between 1938 and 1946, two years after Violin Sonata No. 2. Prokofiev was awarded the 1947 Stalin Prize for this composition.",
+      "pageviews_yearly": 5626
+    },
+    {
+      "qid": "Q2352641",
+      "title": "Violin Sonata No. 2",
+      "imslp_id": "Violin_Sonata_No.2,_Op.94bis_(Prokofiev,_Sergey)",
+      "pdf_filename": "PMLP28225-PMLASIA01277-placeholder-Prokofiev__S._-_Sonata_No._2_for_Violin_and_Piano_in_D_major__Op._94bis_-_Violin_Solo__International_Music_Company_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp115",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Violin_Sonata_No._2_(Prokofiev)",
+      "wikipedia_extract": "Sergei Prokofiev's Violin Sonata No. 2 in D Major, Op. 94a, was based on the composer's own Flute Sonata in D, Op. 94, written in 1942 but arranged for violin in 1943 when Prokofiev was living in Perm in the Ural Mountains, a remote shelter for Soviet artists during the Second World War. Prokofiev transformed the work into a violin sonata at the prompting of his close friend, the violinist David Oistrakh. It was premiered on 17 June 1944 by David Oistrakh and Lev Oborin.",
+      "pageviews_yearly": 5710
+    },
+    {
+      "qid": "Q1340297",
+      "title": "Visions fugitives",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Ridicolosamente.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q7966827",
+      "title": "Waltz Suite",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp67",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Waltz_Suite_(Prokofiev)",
+      "wikipedia_extract": "\nSergei Prokofiev composed and compiled his Waltz Suite, Op. 110, during the Soviet Union's post-Great Patriotic War period of 1946–1947.",
+      "pageviews_yearly": 3222
+    },
+    {
+      "qid": "Q8026000",
+      "title": "Winstanley",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Winstanley_(film)",
+      "wikipedia_extract": "Winstanley is a 1975 British black-and-white film directed by Kevin Brownlow and Andrew Mollo and starring Miles Halliwell and Terry Higgins. It was written by David Caute and Brownlow based on Caute's 1961 novel Comrade Jacob. It was produced by the British Film Institute Production Board, and is about social reformer and writer Gerrard Winstanley.",
+      "pageviews_yearly": 9719
+    },
+    {
+      "qid": "Q11395186",
+      "title": "Winter Bonfire",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/sergey-prokofiev-1891-pp210"
+    },
+    {
+      "qid": "Q8067992",
+      "title": "Zdravitsa",
+      "imslp_id": "Zdravitsa,_Op.85_(Prokofiev,_Sergey)",
+      "pdf_filename": "PMLP1396590-Prokofiev_-_Zdravitsa_-_Full_Score__1947_imprint_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zdravitsa",
+      "wikipedia_extract": "\n\nZdravitsa, Op. 85, is a cantata written by Sergei Prokofiev in 1939 to celebrate Stalin's 60th birthday. Its title is sometimes translated as Hail to Stalin in English. A performance lasts around thirteen minutes.",
+      "pageviews_yearly": 4592
+    },
+    {
+      "qid": "Q144545",
+      "title": "Zoluška",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cinderella_(Prokofiev)",
+      "wikipedia_extract": "Cinderella Op. 87, is a ballet composed by Sergei Prokofiev to a scenario by Nikolai Volkov. It is one of his most popular and melodious compositions, and has inspired a great many choreographers since its inception. The piece was composed between 1940 and 1944. Part way through writing it Prokofiev broke off to write his opera War and Peace. The premiere of Cinderella was conducted by Yuri Fayer on 21 November, 1945, at the Bolshoi Theatre, with choreography by Rostislav Zakharov and Galina Ulanova in the title role. Cinderella is notable for its jubilant music, lush scenery, and for the comic double-roles of the stepmother and the two stepsisters, more mad than bad in this treatment.",
+      "pageviews_yearly": 36001
+    }
+  ]
+}

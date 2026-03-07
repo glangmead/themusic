@@ -1,0 +1,87 @@
+{
+  "composer_name": "Gerald Raphael Finzi",
+  "name_last_first": "Finzi, Gerald Raphael",
+  "slug": "finzi",
+  "wiki_page": "https://en.wikipedia.org/wiki/Gerald_Finzi",
+  "apple_music_playlist": "",
+  "era": "Modern",
+  "dates": "1901 – 1956",
+  "nationality": "ENG",
+  "notable": false,
+  "works": [
+    {
+      "title": "Let Us Garlands Bring Op.18",
+      "musicxml": "musicxml/Who_Is_Silvia_Gerald_Finzi.mxl",
+      "midi": "midi/Who_Is_Silvia_Gerald_Finzi.mid",
+      "catalog_numbers": {
+        "Op": "18"
+      },
+      "time_signature": "2/4",
+      "instruments": [
+        "Voice",
+        "Piano"
+      ],
+      "tempo_markings": [
+        "Allegro ♩ = c. 88",
+        "poco ritard.",
+        "a tempo",
+        "poco allargando",
+        "allargando",
+        "ritenuto"
+      ],
+      "movements": [
+        {
+          "start_measure": 1,
+          "tempo_marking": "Allegro unicodeNoteQuarterUp = c. 88"
+        },
+        {
+          "start_measure": 17,
+          "tempo_marking": "poco ritard."
+        },
+        {
+          "start_measure": 30,
+          "tempo_marking": "poco allargando"
+        }
+      ],
+      "is_multi_movement": true,
+      "pdmx": {
+        "rating": 4.72,
+        "n_favorites": 6,
+        "n_views": 513,
+        "duration_seconds": 94.59909409065428,
+        "n_notes": 933,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": false,
+        "genres": "NA",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/4887176/scores/5201050",
+        "musescore_duration": "01:08"
+      },
+      "key": "F major",
+      "instruments_gm": [
+        "Oboe",
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 88,
+      "n_measures": 50,
+      "n_parts": 2,
+      "n_notes": 902,
+      "notes_per_second": 9.5,
+      "apple_music_search_query": "Finzi Op 18 F major",
+      "parent_work_title": "IV. O Mistress Mine",
+      "lyricist": "WILLIAM SHAKESPEARE",
+      "year_composed": 1929,
+      "wikidata_id": "Q19875091",
+      "wikidata_title": "Let Us Garlands Bring",
+      "musicbrainz_id": "475e650c-beb4-4ac0-8122-24d378aa19a1",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Finzi%20Op%2018",
+      "display_title": "Let Us Garlands Bring"
+    }
+  ],
+  "birth_year": 1901,
+  "death_year": 1956,
+  "wikipedia_extract": "Gerald Raphael Finzi (14 July 1901 – 27 September 1956) was an English composer. Finzi is best known as a choral composer, but also wrote in other genres. Large-scale compositions by Finzi include the cantata Dies natalis for solo voice and string orchestra, and his concertos for cello and clarinet.",
+  "wikidata_id": "Q713025"
+}

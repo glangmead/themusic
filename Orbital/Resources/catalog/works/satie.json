@@ -1,0 +1,901 @@
+{
+  "composer_slug": "satie",
+  "composer_qid": "Q187192",
+  "work_count": 89,
+  "midi_file_count": 25,
+  "works": [
+    {
+      "qid": "Q3015673",
+      "title": "Danses gothiques",
+      "imslp_id": "Danses_gothiques_(Satie,_Erik)",
+      "pdf_filename": "PMLP35129-_Cultifiements_et_Coadunations_Choristiques_Danses_-...-Satie_Erik_btv1b108682526.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp42",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Danses_gothiques",
+      "wikipedia_extract": "The Danses gothiques is an 1893 piano composition by Erik Satie, one of the works of his \"Rosicrucian\" or \"mystic\" period. It was published posthumously in 1929. A performance lasts around 12 minutes.",
+      "pageviews_yearly": 3620,
+      "date": "1893-00-00"
+    },
+    {
+      "qid": "Q24963453",
+      "title": "Pièces froides",
+      "imslp_id": "Pièces_froides_(Satie,_Erik)",
+      "pdf_filename": "PMLP06222-Satie__Erik-Klavierwerke_Peters_Klemm_Band_1_06_Pieces_froides_scan.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp45",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pi%C3%A8ces_froides",
+      "wikipedia_extract": "\nThe Pièces froides are two sets of piano pieces composed in March 1897 by Erik Satie. Unpublished until 1912, they marked Satie's break from the mystical-religious music of his \"Rosicrucian\" period (1891–95), and were a harbinger of his humoristic piano suites of the 1910s.",
+      "pageviews_yearly": 5425,
+      "date": "1897-00-00"
+    },
+    {
+      "qid": "Q108325566",
+      "title": "Verset laïque et somptueux",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp52",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Verset_la%C3%AFque_et_somptueux",
+      "wikipedia_extract": "Verset laïque et somptueux (Secular and Sumptuous Verse) is a pièce d'occasion for piano composed in 1900 by Erik Satie. With it he bid an ironic farewell to the style of his \"Rosicrucian\" or \"mystic\" period, which he ultimately dismissed as \"musique à genoux\". It was written for an ephemeral publication and never performed in Satie's lifetime.",
+      "pageviews_yearly": 1503,
+      "date": "1900-00-00"
+    },
+    {
+      "qid": "Q133805286",
+      "title": "Passacaille",
+      "imslp_id": "Passacaille_(Satie,_Erik)",
+      "pdf_filename": "PMLP19869-_Passacaille_Erik_Satie__Pour_piano_-...-Satie_Erik_btv1b10864335q.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp53",
+      "date": "1906-00-00"
+    },
+    {
+      "qid": "Q134436164",
+      "title": "Nouvelles Pièces froides",
+      "imslp_id": "Nouvelles_pièces_froides_(Satie,_Erik)",
+      "pdf_filename": "PMLP189438--Nouvelles-__Pie-ces_froides__pour_-...-Satie_Erik_btv1b100749588.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp58",
+      "date": "1907-00-00"
+    },
+    {
+      "qid": "Q24041395",
+      "title": "Trois poèmes d'amour",
+      "imslp_id": "3_Poèmes_d'amour_(Satie,_Erik)",
+      "pdf_filename": "SIBLEY1802.21492.c8b0-39087014316717score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp95",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Trois_Po%C3%A8mes_d'amour",
+      "wikipedia_extract": "The Trois Poèmes d'amour is a 1914 song cycle for voice and piano by Erik Satie. It is the only set of mélodies Satie composed to his own texts. In performance the set lasts between 2 and 3 minutes.",
+      "pageviews_yearly": 1311,
+      "date": "1914-00-00"
+    },
+    {
+      "qid": "Q60788394",
+      "title": "Quatre petites mélodies",
+      "imslp_id": "4_Petites_mélodies_(Satie,_Erik)",
+      "pdf_filename": "PMLP374577-Satie_-_En_souvenir_VPf_Sibley.1802.21420.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp97",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quatre_Petites_M%C3%A9lodies",
+      "wikipedia_extract": "The Quatre Petites Mélodies is a 1920 song cycle for voice and piano by French composer Erik Satie. It is most notable for its opening lament, Élégie, which Satie composed in memory of his friend Claude Debussy. A typical performance lasts under 4 minutes.",
+      "pageviews_yearly": 2522,
+      "date": "1920-00-00"
+    },
+    {
+      "qid": "Q115918859",
+      "title": "Community Terrors",
+      "date": "2017-00-00"
+    },
+    {
+      "qid": "Q21998337",
+      "title": "Allegro",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Allegro_by_Erik_Satie.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q105203305",
+      "title": "Aperçus désagréables",
+      "imslp_id": "Aperçus_désagréables_(Satie,_Erik)",
+      "pdf_filename": "Apercus.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp79",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aper%C3%A7us_d%C3%A9sagr%C3%A9ables",
+      "wikipedia_extract": "Aperçus désagréables (Unpleasant Glimpses) is a suite for piano four hands composed between 1908 and 1912 by Erik Satie. It shows the early development of his mature style, a product of his studies at the Schola Cantorum de Paris. In performance it lasts about 5 minutes.",
+      "pageviews_yearly": 1916
+    },
+    {
+      "qid": "Q2873281",
+      "title": "Avant-dernières pensées",
+      "imslp_id": "Avant-dernières_pensées_(Satie,_Erik)",
+      "pdf_filename": "Avant-dernieres.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp74",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Avant-derni%C3%A8res_Pens%C3%A9es",
+      "wikipedia_extract": "The Avant-dernières Pensées is a 1915 piano composition by Erik Satie. The last of his humoristic piano suites of the 1910s, it was premiered by the composer at the Galerie Thomas in Paris on May 30, 1916, and published that same year. A typical performance lasts 3–4 minutes.",
+      "pageviews_yearly": 1895
+    },
+    {
+      "qid": "Q105104213",
+      "title": "Chapitres tournés en tous sens",
+      "imslp_id": "Chapitres_tournés_en_tous_sens_(Satie,_Erik)",
+      "pdf_filename": "Satie_-_Chapitres_Tournés_En_Tous_Sens.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp67",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chapitres_tourn%C3%A9s_en_tous_sens",
+      "wikipedia_extract": "Chapitres tournés en tous sens (Chapters Turned Every Which Way) is a 1913 piano composition by Erik Satie. One of his humoristic keyboard suites of the 1910s, it was published by the firm E. Demets that year. Ricardo Viñes gave the premiere at the Salle Erard in Paris on January 14, 1914. In performance it lasts about 5 minutes.",
+      "pageviews_yearly": 1609
+    },
+    {
+      "qid": "Q19892225",
+      "title": "Choses vues à droite et à gauche",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Choral_hypocrite.mid",
+        "midi/Choses_vues_a_droite_et_a_gauche_sans_lunettes_Erik_Satie.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q21998406",
+      "title": "Cinq grimaces pour Le songe d'une nuit d'été",
+      "imslp_id": "5_Grimaces_pour_Le_songe_d'une_nuit_d'été_(Satie,_Erik)",
+      "pdf_filename": "PMLP37372-PMLUS06509-Satie-Milhaud.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp18",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cinq_Grimaces_pour_Le_Songe_d'une_nuit_d'%C3%A9t%C3%A9",
+      "wikipedia_extract": "The Cinq Grimaces pour Le Songe d'une nuit d'été is a set of incidental music pieces for orchestra by Erik Satie. Composed in 1915 for a planned circus-style staging of Shakespeare's play A Midsummer Night's Dream, it marked the composer's first collaboration with author Jean Cocteau. The production failed to materialize and Satie's music went unperformed in his lifetime. His score was published posthumously in 1929.",
+      "pageviews_yearly": 1112
+    },
+    {
+      "qid": "Q105104726",
+      "title": "Croquis et agaceries d'un gros bonhomme en bois",
+      "imslp_id": "Croquis_et_agaceries_d'un_gros_bonhomme_en_bois_(Satie,_Erik)",
+      "pdf_filename": "_un_Gros_Bonhomme_en_Bois.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp66",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Croquis_et_agaceries_d'un_gros_bonhomme_en_bois",
+      "wikipedia_extract": "Croquis et agaceries d'un gros bonhomme en bois, translated as Sketches and Exasperations of a Big Wooden Dummy, is a 1913 piano composition by Erik Satie. One of his pre-World War I humoristic suites, it was published by E. Demets that same year. Ricardo Viñes gave the premiere during a concert of the Société Nationale de Musique at the Salle Pleyel in Paris on March 28, 1914. A typical performance lasts about five minutes.",
+      "pageviews_yearly": 2727
+    },
+    {
+      "qid": "Q5215539",
+      "title": "Dancing in the Dark",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dancing_in_the_Dark_(1986_film)",
+      "wikipedia_extract": "Dancing in the Dark is a 1986 Canadian drama film directed and written by Leon Marr, based on the 1982 novel Dancing in the Dark by Joan Barfoot. It was produced by Anthony Kramreither, Don Haig and co-produced by John Ryan. The film is about a housewife, Edna, whose life revolves around her husband Henry. Edna spends her days cleaning the house making sure that it looks spotless and fulfilling her husband's every need in the process. After Henry betrays Edna's trust she murders him and then finds herself in a psychiatric hospital where she relives her old life by writing in her journal.",
+      "pageviews_yearly": 4797
+    },
+    {
+      "qid": "Q59612",
+      "title": "Elisa, vida mía",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Elisa%2C_vida_m%C3%ADa",
+      "wikipedia_extract": "Elisa, Vida mía is a 1977 Spanish drama film written and directed by Carlos Saura. The film stars Saura's long-term companion and frequent collaborator, Geraldine Chaplin. She stars alongside Fernando Rey, who won the Best Actor award at the 1977 Cannes Film Festival for his performance.",
+      "pageviews_yearly": 5774
+    },
+    {
+      "qid": "Q5370249",
+      "title": "Embryons desséchés",
+      "imslp_id": "Embryons_desséchés_(Satie,_Erik)",
+      "pdf_filename": "Embryons_desseches.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp65",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Embryons_dess%C3%A9ch%C3%A9s",
+      "wikipedia_extract": "Embryons desséchés is a piano composition by Erik Satie, composed in the summer of 1913. The composition consists of three little movements, each taking about two to three minutes to play.",
+      "pageviews_yearly": 5265
+    },
+    {
+      "qid": "Q21998480",
+      "title": "En habit de cheval",
+      "imslp_id": "En_habit_de_cheval_(Satie,_Erik)",
+      "pdf_filename": "En_habit_de_cheval.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp80",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/En_habit_de_cheval",
+      "wikipedia_extract": "En habit de cheval is a 1911 suite for piano four hands by Erik Satie. He arranged it for orchestra that same year. It is a transitional work, composed towards the end of Satie's studies at the Schola Cantorum in Paris (1905-1912) and foreshadowing his pre-World War I \"humoristic\" or \"fantaisiste\" period. Robert Orledge wrote that \"En habit de cheval offers the best example of Satie integrating Schola teaching with his own composition, and in it he also worked out his own individual concept of orchestration.\" In performance it lasts about 7 minutes.",
+      "pageviews_yearly": 2177
+    },
+    {
+      "qid": "Q10484120",
+      "title": "Enfantillages pittoresques",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Erik_Satie_-_Enfantillages_Pittoresques_-_Berceuse.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q1345290",
+      "title": "Entr'acte",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp24",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Entr'acte_(film)",
+      "wikipedia_extract": "Entr'acte is a silent French Dada short film directed by René Clair. It premiered on 4 December 1924 at the Théâtre des Champs-Élysées in Paris as a prologue and entr'acte for the Ballets Suédois production of Relâche, based on a book by Francis Picabia, which had settings by Picabia, was produced by Rolf de Maré, and was choreographed by Jean Börlin. The music for both the ballet and the film was composed by Erik Satie.",
+      "pageviews_yearly": 16712
+    },
+    {
+      "qid": "Q125867472",
+      "title": "Fantaisie-Valse",
+      "imslp_id": "Fantaisie-valse_(Satie,_Erik)",
+      "pdf_filename": "PMLP189388-Satie_-_fantaisie-valse.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp30"
+    },
+    {
+      "qid": "Q107995099",
+      "title": "Fête donnée par des Chevaliers Normands en l'honneur d'une jeune demoiselle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/F%C3%AAte_donn%C3%A9e_par_des_Chevaliers_Normands_en_l'honneur_d'une_jeune_demoiselle_(XIe_siecle)",
+      "wikipedia_extract": "\nThe Fête donnée par des Chevaliers Normands en l'honneur d'une jeune demoiselle  is an 1892 piano composition by Erik Satie. An example of his Rosicrucian or \"mystic\" phase, it was published posthumously in 1929. A typical performance lasts about 4 minutes.",
+      "pageviews_yearly": 1108
+    },
+    {
+      "qid": "Q107564676",
+      "title": "Geneviève de Brabant",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp14",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Genevi%C3%A8ve_de_Brabant_(Satie)",
+      "wikipedia_extract": "Geneviève de Brabant is a theatre piece composed around 1900 by Erik Satie. The score was intended as incidental music for a three-act comedy in verse and prose by \nJ. P. Contamine de Latour, based on the medieval legend of Genevieve of Brabant. Unproduced at the time, its existence was not discovered until after Satie's death in 1925.",
+      "pageviews_yearly": 2393
+    },
+    {
+      "qid": "Q110184793",
+      "title": "Gnossienne #1",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Peio_092.mid",
+        "midi/Marta_09_2.mid",
+        "midi/Cati_09_2.mid",
+        "midi/Cati_09_2_1.mid",
+        "midi/Puri_09_2_MSC.mid",
+        "midi/Santi_09_2.mid",
+        "midi/MSC-Ejercicio_092.mid",
+        "midi/jose_juan_092.mid",
+        "midi/Gnossienne_No_1.mid",
+        "midi/Gnossienne_No_1_1.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q110184872",
+      "title": "Gnossienne #2",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp100"
+    },
+    {
+      "qid": "Q110184980",
+      "title": "Gnossienne #3",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Gnossienne_No_3.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q110185002",
+      "title": "Gnossienne #4",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Erik_Satie_-_Gnossienne_No_4.mid",
+        "midi/Satie_-_Gnossienne_4_-_Arrangement_pour_Big_Band.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q110185045",
+      "title": "Gnossienne #5",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp100"
+    },
+    {
+      "qid": "Q110185062",
+      "title": "Gnossienne #6",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Satie_-_Gnossienne_6_-_Arrangement_pour_Big_Band.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q110185097",
+      "title": "Gnossienne #7",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp100"
+    },
+    {
+      "qid": "Q2602501",
+      "title": "Gnossiennes",
+      "imslp_id": "Gnossiennes_(Satie,_Erik)",
+      "pdf_filename": "Gnossienne_1-a4.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp100",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gnossiennes",
+      "wikipedia_extract": "The  Gnossiennes are several piano compositions by the French composer Erik Satie in the late 19th century. The works are for the most part in free time and highly experimental with form, rhythm and chordal structure. The form was invented by Satie but the term itself existed in French literature before Satie's usage.",
+      "pageviews_yearly": 105393,
+      "movements": [
+        {
+          "qid": "Q110184793"
+        },
+        {
+          "qid": "Q110184872"
+        },
+        {
+          "qid": "Q110184980"
+        },
+        {
+          "qid": "Q110185002"
+        },
+        {
+          "qid": "Q110185045"
+        },
+        {
+          "qid": "Q110185062"
+        },
+        {
+          "qid": "Q110185097"
+        },
+        {
+          "qid": "Q111974610"
+        }
+      ]
+    },
+    {
+      "qid": "Q66457334",
+      "title": "Gymnopédie No. 1",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Gymnopedie_1.mid",
+        "midi/Gymnopedie_No_1_by_Satie_transposed_to_C_arranged_for_lever_harp.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q66458114",
+      "title": "Gymnopédie No. 2",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp33"
+    },
+    {
+      "qid": "Q66458255",
+      "title": "Gymnopédie No. 3",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp33"
+    },
+    {
+      "qid": "Q1190965",
+      "title": "Gymnopédies",
+      "imslp_id": "3_Gymnopédies_(Satie,_Erik)",
+      "pdf_filename": "PMLP4215-Bass_Trombone.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp33",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gymnop%C3%A9dies",
+      "wikipedia_extract": "The Gymnopédies, or Trois Gymnopédies, are three piano compositions written by French composer and pianist Erik Satie. He completed the whole set by 2 April 1888, but they were at first published individually: the first and the third compositions were published in 1888, while the second would not be published until 1895.",
+      "pageviews_yearly": 185907,
+      "movements": [
+        {
+          "qid": "Q66457334"
+        },
+        {
+          "qid": "Q66458114"
+        },
+        {
+          "qid": "Q66458255"
+        }
+      ]
+    },
+    {
+      "qid": "Q105160634",
+      "title": "Heures séculaires et instantanées",
+      "imslp_id": "Heures_séculaires_et_Instantanées_(Satie,_Erik)",
+      "pdf_filename": "Heures.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp72",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heures_s%C3%A9culaires_et_instantan%C3%A9es",
+      "wikipedia_extract": "Heures séculaires et instantanées is a 1914 piano composition by Erik Satie. One of his humoristic keyboard suites of the 1910s, it features Satie's famous warning to pianists against reading aloud the fanciful texts that adorned his scores. In performance it lasts about 4 minutes.",
+      "pageviews_yearly": 1697
+    },
+    {
+      "qid": "Q3157358",
+      "title": "Jack in the Box",
+      "imslp_id": "Jack-in-the-Box_(Satie,_Erik)",
+      "pdf_filename": "Satie_-_Jack-in-the-Box__piano_score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp7"
+    },
+    {
+      "qid": "Q3157359",
+      "title": "Jack in the Box",
+      "imslp_id": "Jack-in-the-Box_(Satie,_Erik)",
+      "pdf_filename": "Satie_-_Jack-in-the-Box__piano_score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp7",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jack_in_the_Box_(Satie)",
+      "wikipedia_extract": "Jack in the Box is a work written by Erik Satie in 1899 for a pantomime-ballet to a scenario by the illustrator Jules Depaquit. Satie gave it an English title because English phrases were considered fashionable in Parisian society at the time.",
+      "pageviews_yearly": 3216
+    },
+    {
+      "qid": "Q3163591",
+      "title": "Je te veux",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Je_Te_Veux_for_Cello_Trio.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q18204974",
+      "title": "La Diva de l'Empire",
+      "imslp_id": "La_diva_de_l'Empire_(Satie,_Erik)",
+      "pdf_filename": "PMLP19803-_Re-pertoire_de_Paulette_Darty_La_-...-Satie_Erik_btv1b10844663k.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp90",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Diva_de_l'Empire",
+      "wikipedia_extract": "\"La Diva de l'Empire\" is a French popular song with music by Erik Satie and lyrics by Dominique Bonnaud and Numa Blès, composed in 1904. Along with \"Je te veux\" (1903) it is probably the best-known example of Satie's cabaret or \"café-concert\" idiom. It was premiered by singer Paulette Darty, dubbed the \"Queen of the Slow Waltz\", in the musical revue Dévidons la bobine in Paris on July 26, 1904, and published that same year.",
+      "pageviews_yearly": 5060
+    },
+    {
+      "qid": "Q16721855",
+      "title": "La belle excentrique",
+      "imslp_id": "La_belle_excentrique_(Satie,_Erik)",
+      "pdf_filename": "La_belle.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp21",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Belle_Excentrique",
+      "wikipedia_extract": "\nLa Belle Excentrique is a dance suite for small orchestra by French composer Erik Satie. A parody of music hall clichés, it was conceived as a choreographic stage work and by modern standards can be considered a ballet. Satie gave it the whimsical subtitle Fantaisie sérieuse. It was premiered at the Théâtre du Colisée in Paris on June 14, 1921, conducted by Vladimir Golschmann. The composer later arranged it for piano four hands.",
+      "pageviews_yearly": 1881
+    },
+    {
+      "qid": "Q108415657",
+      "title": "Le Bœuf Angora",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Le_B%C5%93uf_Angora",
+      "wikipedia_extract": "Le Bœuf Angora (The Angora Ox) is an unfinished tone poem composed around 1901 by Erik Satie. Based on a tale by Lord Cheminot, it was his first attempt at writing for large orchestra. The original score has never been published, though Satie reused a portion of it as the Redite movement of his Trois morceaux en forme de poire (1903). Today the existing work can be heard in a reconstruction for solo piano. In performance it lasts about 8 minutes.",
+      "pageviews_yearly": 1436
+    },
+    {
+      "qid": "Q24965399",
+      "title": "Le Fils des étoiles",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Le_Fils_Des_Etoiles_-_Erik_Satie_-_solo_piano.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q11331395",
+      "title": "Le Piccadilly",
+      "imslp_id": "Le_piccadilly_(Satie,_Erik)",
+      "pdf_filename": "PMLP189397-_Le_Piccadilly_Marche_Erik_Satie__-...-Satie_Erik_btv1b10861954b.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp48",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Le_Piccadilly",
+      "wikipedia_extract": "Le Piccadilly is a 1904 composition for piano or string orchestra by Erik Satie. Written as a light cabaret or café-concert tune, it was one of Satie's early experiments with ragtime influences. A performance lasts under 2 minutes.",
+      "pageviews_yearly": 2838
+    },
+    {
+      "qid": "Q6508083",
+      "title": "Le piège de Méduse",
+      "imslp_id": "Le_piège_de_Méduse_(Satie,_Erik)",
+      "pdf_filename": "Le_Piege_de_Meduse.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp63",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Le_Pi%C3%A8ge_de_M%C3%A9duse",
+      "wikipedia_extract": "Le Piège de Méduse is a short play of which Erik Satie wrote both the text and the incidental music.",
+      "pageviews_yearly": 2879
+    },
+    {
+      "qid": "Q108649637",
+      "title": "Le poisson rêveur",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp12",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Le_Poisson_r%C3%AAveur",
+      "wikipedia_extract": "Le Poisson rêveur is an unfinished tone poem for solo piano composed between 1900 and 1901 by Erik Satie, based on a tale by \"Lord Cheminot\". The text does not survive and Satie's music went unpublished for decades. In performance the piece lasts about 6 minutes.",
+      "pageviews_yearly": 2013
+    },
+    {
+      "qid": "Q108085282",
+      "title": "Les Pantins dansent",
+      "imslp_id": "Les_pantins_dansent_(Satie,_Erik)",
+      "pdf_filename": "Les_Pantins_dansent.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp105",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Les_Pantins_dansent",
+      "wikipedia_extract": "Les Pantins dansent (The Puppets are Dancing) is a \"poème dansé\" for small orchestra or piano composed in 1913 by Erik Satie. It was commissioned for an experimental theatrical event starring Futurist author and dancer Valentine de Saint-Point. Maurice Droeghmans conducted the premiere at the Salle Léon-Poirier in Paris on December 20, 1913.",
+      "pageviews_yearly": 1799
+    },
+    {
+      "qid": "Q105047107",
+      "title": "Les trois valses distinguées du précieux dégoûté",
+      "imslp_id": "3_Valses_distinguées_du_précieux_dégoûté_(Satie,_Erik)",
+      "pdf_filename": "PMLP07428-Satie__Erik-Klavierwerke_Peters_Klemm_Band_2_07_Les_trois_Valses_scan.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp73",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Les_Trois_Valses_distingu%C3%A9es_du_pr%C3%A9cieux_d%C3%A9go%C3%BBt%C3%A9",
+      "wikipedia_extract": "Les Trois Valses distinguées du précieux dégoûté  (The Three Distinguished Waltzes of a Jaded Dandy) is a 1914 piano composition by Erik Satie. The shortest of his humoristic keyboard suites of the 1910s, it features what author James Harding called \"the most baroque verbal scaffolding Satie ever erected around his music\". A performance lasts around 3 minutes.",
+      "pageviews_yearly": 1657
+    },
+    {
+      "qid": "Q98745126",
+      "title": "Love Affair(s)"
+    },
+    {
+      "qid": "Q19894105",
+      "title": "Ludions",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp98",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ludions",
+      "wikipedia_extract": "The Ludions is a song cycle for voice and piano by Erik Satie, composed in 1923 to five absurdist poems by Léon-Paul Fargue. It was the last of his vocal compositions. The songs are brief and a performance of the set usually lasts less than five minutes.",
+      "pageviews_yearly": 3322
+    },
+    {
+      "qid": "Q105133643",
+      "title": "Menus propos enfantins",
+      "imslp_id": "Menus_propos_enfantins_(Satie,_Erik)",
+      "pdf_filename": "Menus_propos_enfantines.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp69"
+    },
+    {
+      "qid": "Q19894298",
+      "title": "Mercure",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp16",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mercure_(ballet)",
+      "wikipedia_extract": "Mercure is a 1924 ballet with music by Erik Satie. The original décor and costumes were designed by Pablo Picasso and the choreography was by Léonide Massine, who also danced the title role. Subtitled \"Plastic Poses in Three Tableaux\", it was an important link between Picasso's Neoclassical and Surrealist phases and has been described as a \"painter's ballet\".",
+      "pageviews_yearly": 6028
+    },
+    {
+      "qid": "Q21998643",
+      "title": "Messe des pauvres",
+      "imslp_id": "Messe_des_pauvres_(Satie,_Erik)",
+      "pdf_filename": "SatieMesseDesPauvres.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp81",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Messe_des_pauvres",
+      "wikipedia_extract": "The Messe des pauvres is a partial musical setting of the mass for mixed choir and organ, written from 1893 through 1895 by Erik Satie. It was intended for liturgical use in the Metropolitan Church of Art of Jesus the Conductor. The mass is Satie's only liturgical work and the culmination of his \"Rosicrucian\" or \"mystic\" period. It was published posthumously in 1929.",
+      "pageviews_yearly": 3737
+    },
+    {
+      "qid": "Q18354056",
+      "title": "Nocturnes",
+      "imslp_id": "5_Nocturnes_(Satie,_Erik)",
+      "pdf_filename": "PMLP19645-Satie-Nocturne-No1-FE.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp76",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nocturnes_(Satie)",
+      "wikipedia_extract": "The Nocturnes are a set of five piano pieces by Erik Satie. They were written between August and November 1919. With the exception of the Premier Menuet (1920), they were his final works for solo piano, and are considered among his most significant achievements in the genre. The Nocturnes stand apart from Satie's piano music of the 1910s in their complete seriousness—lacking the zany titles, musical parody, and extramusical texts that he typically featured in his scores of the time. The completed set of five nocturnes takes about 13 minutes to perform.",
+      "pageviews_yearly": 4397
+    },
+    {
+      "qid": "Q7080076",
+      "title": "Ogives",
+      "imslp_id": "4_Ogives_(Satie,_Erik)",
+      "pdf_filename": "PMLP189442-Satie-Ogives-FE-color.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp31",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ogives",
+      "wikipedia_extract": "The Ogives are four pieces for piano composed by Erik Satie in the late 1880s. They were published in 1889, and were the first compositions by Satie he did not publish in his father's music publishing house.",
+      "pageviews_yearly": 5307
+    },
+    {
+      "qid": "Q2051330",
+      "title": "Parade",
+      "imslp_id": "Parade_(Satie,_Erik)",
+      "pdf_filename": "PMLP04637-Satie-Rag-Time-Parade.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp15",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Parade_(ballet)",
+      "wikipedia_extract": "Parade is a ballet choreographed by Leonide Massine, with music by Erik Satie and a one-act scenario by Jean Cocteau. The ballet was composed in 1916–17 for Sergei Diaghilev's Ballets Russes. The ballet premiered on Friday, May 18, 1917, at the Théâtre du Châtelet in Paris, with costumes and sets designed by Pablo Picasso, choreography by Léonide Massine, and the orchestra conducted by Ernest Ansermet.",
+      "pageviews_yearly": 30992
+    },
+    {
+      "qid": "Q122916444",
+      "title": "Parade (Ballets Russes, 1917)"
+    },
+    {
+      "qid": "Q105134879",
+      "title": "Peccadilles importunes",
+      "imslp_id": "Peccadilles_importunes_(Satie,_Erik)",
+      "pdf_filename": "Peccadilles.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp104"
+    },
+    {
+      "qid": "Q108325451",
+      "title": "Petite ouverture à danser",
+      "imslp_id": "Petite_ouverture_à_danser_(Satie,_Erik)",
+      "pdf_filename": "PMLP1511421--Petite_ouverture_a-_danser-__manuscrit_-...-Satie_Erik_btv1b52000725p.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp50",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Petite_Ouverture_%C3%A0_danser",
+      "wikipedia_extract": "\nThe Petite Ouverture à danser is a piece for solo piano composed around 1897 by Erik Satie. Unknown for many years, it is one of the more popular works to emerge from his posthumous manuscripts. A performance lasts under 3 minutes.",
+      "pageviews_yearly": 1240
+    },
+    {
+      "qid": "Q49139233",
+      "title": "Poudre d'or",
+      "imslp_id": "Poudre_d'or_(Satie,_Erik)",
+      "pdf_filename": "_or.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp47",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Poudre_d'or",
+      "wikipedia_extract": "Poudre d'or (Gold Dust) is a waltz for solo piano composed in 1901 by Erik Satie. It is the first notable example of his light café-concert idiom, and is still popular today. In performance it lasts about 5 minutes. Satie also created a version for small orchestra but this survives only in a fragmentary state.",
+      "pageviews_yearly": 2433
+    },
+    {
+      "qid": "Q18209459",
+      "title": "Premier Menuet",
+      "imslp_id": "Premier_menuet_(Satie,_Erik)",
+      "pdf_filename": "PMLP32092-_Premier_Menuet_a-_Claude_Duboscq_-...-Satie_Erik_btv1b10076452c.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp77",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Premier_Menuet",
+      "wikipedia_extract": "The Premier Menuet is a Neoclassical piano piece by Erik Satie. Written in June 1920, it was his last composition for solo piano. It was published by Les Éditions de La Sirène in 1921.",
+      "pageviews_yearly": 2148
+    },
+    {
+      "qid": "Q133858883",
+      "title": "Première pensée Rose+Croix",
+      "imslp_id": "Première_pensée_Rose+Croix_(Satie,_Erik)",
+      "pdf_filename": "PMLP189445-Satie_-_Premiere_pensee_rose___croix.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp38"
+    },
+    {
+      "qid": "Q24901070",
+      "title": "Prélude d'Eginhard",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pr%C3%A9lude_d'Eginhard",
+      "wikipedia_extract": "The Prélude d'Eginhard is an 1893 composition for solo piano by Erik Satie. It is a notable example of his \"Rosicrucian\" or \"mystic\" period. Unpublished during his lifetime, it was issued posthumously in 1929. A typical performance lasts under 3 minutes.",
+      "pageviews_yearly": 1975
+    },
+    {
+      "qid": "Q24963394",
+      "title": "Prélude de la porte héroïque du ciel",
+      "imslp_id": "Prélude_de_la_porte_héroïque_du_ciel_(Satie,_Erik)",
+      "pdf_filename": "Prelude_de_la_porte_heroique_du_ciel.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp11",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pr%C3%A9lude_de_la_porte_h%C3%A9ro%C3%AFque_du_ciel",
+      "wikipedia_extract": "The Prélude de La Porte héroïque du ciel is an 1894 piano composition by Erik Satie, intended as a musical introduction to the play The Heroic Gate of Heaven by Jules Bois. It is considered one of the finest works of his \n\"Rosicrucian\" or \"mystic\" period. A typical performance lasts around 6 minutes. Satie was so fond of the piece he dedicated it to himself.",
+      "pageviews_yearly": 1661
+    },
+    {
+      "qid": "Q105713791",
+      "title": "Prélude en tapisserie",
+      "imslp_id": "Prélude_en_tapisserie_(Satie,_Erik)",
+      "pdf_filename": "Prelude_en_Tapisserie.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp54"
+    },
+    {
+      "qid": "Q134308120",
+      "title": "Préludes du Nazaréen",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp102"
+    },
+    {
+      "qid": "Q3424451",
+      "title": "Relâche",
+      "imslp_id": "Relâche_(Satie,_Erik)",
+      "pdf_filename": "PMLP45044-Cinema_piano0001.PDF",
+      "has_pdf": false,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp17",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rel%C3%A2che_(ballet)",
+      "wikipedia_extract": "Relâche is a 1924 \"ballet obscène\" by Francis Picabia with music composed by Erik Satie.",
+      "pageviews_yearly": 5905
+    },
+    {
+      "qid": "Q28154242",
+      "title": "Sarabandes",
+      "imslp_id": "3_Sarabandes_(Satie,_Erik)",
+      "pdf_filename": "3_sarabandes.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp32",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sarabandes_(Satie)",
+      "wikipedia_extract": "The Sarabandes are three dances for solo piano composed in 1887 by Erik Satie. Along with the famous Gymnopédies (1888) they are regarded as his first important works, and the ones upon which his reputation as a harmonic innovator and precursor of modern French music, beginning with Debussy, principally rests. The Sarabandes also played a key role in Satie's belated \"discovery\" by his country's musical establishment in the 1910s, setting the stage for what became his international fame.",
+      "pageviews_yearly": 7659
+    },
+    {
+      "qid": "Q57933675",
+      "title": "Satrio"
+    },
+    {
+      "qid": "Q15233484",
+      "title": "Skierri: Land of the Dwarf Birches"
+    },
+    {
+      "qid": "Q3028841",
+      "title": "Socrate",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Erik_Satie_-_Socrate.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q7560849",
+      "title": "Sonatine bureaucratique",
+      "imslp_id": "Sonatine_bureaucratique_(Satie,_Erik)",
+      "pdf_filename": "PMLP06198-Satie__Erik-Klavierwerke_Peters_Klemm_Band_2_10_Sonatine_bureaucratique_scan.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp75",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sonatine_bureaucratique",
+      "wikipedia_extract": "The Sonatine bureaucratique is a 1917 piano composition by Erik Satie. The final entry in his humoristic piano music of the 1910s, it is Satie's only full-scale parody of a single musical work: the Sonatina Op. 36 N° 1 (1797) by Muzio Clementi. In performance it lasts around 4 minutes.",
+      "pageviews_yearly": 6075
+    },
+    {
+      "qid": "Q105517363",
+      "title": "Sonnerie pour réveiller le bon gros roi des singes",
+      "imslp_id": "Sonnerie_pour_reveiller_le_bon_gros_Roi_des_Singes_(Satie,_Erik)",
+      "pdf_filename": "PMLP47159-satie_-_sonnerie.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q7561954",
+      "title": "Sonneries de la Rose+Croix",
+      "imslp_id": "3_Sonneries_de_la_Rose+Croix_(Satie,_Erik)",
+      "pdf_filename": "Sonneries_de_la_rose-croix.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp41",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sonneries_de_la_Rose%2BCroix",
+      "wikipedia_extract": "Trois Sonneries de la Rose+Croix is a piano composition by Erik Satie, first published in 1892, while he was composer and chapel-master of the Rosicrucian \"Ordre de la Rose-Croix Catholique, du Temple et du Graal\", led by Sâr Joséphin Péladan.",
+      "pageviews_yearly": 3309
+    },
+    {
+      "qid": "Q3494173",
+      "title": "Sports et divertissements",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp71",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sports_et_divertissements",
+      "wikipedia_extract": "Sports et divertissements is a cycle of 21 short piano pieces composed in 1914 by Erik Satie. The set consists of a prefatory chorale and 20 musical vignettes depicting various sports and leisure activities. First published in 1923, it has long been considered one of his finest achievements.",
+      "pageviews_yearly": 9087
+    },
+    {
+      "qid": "Q1047872",
+      "title": "The Adventures of Picasso",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Adventures_of_Picasso",
+      "wikipedia_extract": "The Adventures of Picasso is a 1978 Swedish surrealist comedy film directed by Tage Danielsson, starring Gösta Ekman, as the famous painter. The film had the tag-line Tusen kärleksfulla lögner av Hans Alfredson och Tage Danielsson. At the 14th Guldbagge Awards it won the award for Best Film.",
+      "pageviews_yearly": 10101
+    },
+    {
+      "qid": "Q2053405",
+      "title": "The Fire Within",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Fire_Within",
+      "wikipedia_extract": "The Fire Within is a 1963 French tragedy film written and directed by Louis Malle. It is based on the 1931 novel Will O' the Wisp by Pierre Drieu La Rochelle, which was inspired by the life of poet Jacques Rigaut. The film stars Maurice Ronet and features Léna Skerla, Jean-Paul Moulinot, Bernard Tiphaine, Bernard Noël, Jeanne Moreau, Jacques Sereys, and Alexandra Stewart in supporting roles. The score consists of music composed by Erik Satie and performed by pianist Claude Helffer.",
+      "pageviews_yearly": 40995
+    },
+    {
+      "qid": "Q3549563",
+      "title": "The Immortal Story",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Immortal_Story",
+      "wikipedia_extract": "The Immortal Story is a 1968 French film directed by Orson Welles and starring Jeanne Moreau. The film was originally broadcast on French television and was later released in theatres. It was based on a short story by the Danish writer Karen Blixen. With a running time of sixty minutes, it is the shortest feature film directed by Welles.",
+      "pageviews_yearly": 23614
+    },
+    {
+      "qid": "Q1216237",
+      "title": "The Inheritors",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Inheritors_(1998_film)",
+      "wikipedia_extract": "The Inheritors is a 1998 Austrian-German film directed by Stefan Ruzowitzky. It stars Simon Schwarz and Sophie Rois and has won numerous awards. The film was selected as the Austrian entry for the Best Foreign Language Film at the 71st Academy Awards, but was not accepted as a nominee.",
+      "pageviews_yearly": 3122
+    },
+    {
+      "qid": "Q14752515",
+      "title": "Tombeau de Claude Debussy"
+    },
+    {
+      "qid": "Q111974610",
+      "title": "Trois Gnossiennes",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp100",
+      "movements": [
+        {
+          "qid": "Q110184793"
+        },
+        {
+          "qid": "Q110184872"
+        },
+        {
+          "qid": "Q110184980"
+        }
+      ]
+    },
+    {
+      "qid": "Q60788404",
+      "title": "Trois Mélodies",
+      "imslp_id": "3_Mélodies,_IES_34_(Satie,_Erik)",
+      "pdf_filename": "Satie_-_3_Mèlodies__voice_and_piano_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp96",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Trois_M%C3%A9lodies_(Satie)",
+      "wikipedia_extract": "Trois Mélodies is a 1916 song cycle for voice and piano by Erik Satie. One of Satie's rare excursions in mélodies, it lasts under four minutes in performance.",
+      "pageviews_yearly": 2839
+    },
+    {
+      "qid": "Q3540015",
+      "title": "Trois morceaux en forme de poire",
+      "has_midi": true,
+      "midi_files": [
+        "midi/3_morceaux_en_forme_de_poire_-_En_plus_-_Secoundo.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q19898073",
+      "title": "Trois petites pièces montées",
+      "imslp_id": "3_Petites_pièces_montées_(Satie,_Erik)",
+      "pdf_filename": "PMLP217320-Satie_-_Reverie_Pf.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp20",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Trois_Petites_Pi%C3%A8ces_mont%C3%A9es",
+      "wikipedia_extract": "The Trois Petites Pièces montées is a suite for small orchestra by Erik Satie, inspired by themes from the novel series Gargantua and Pantagruel by François Rabelais. It was premiered at the Comédie des Champs-Élysées in Paris on February 21, 1920, conducted by Vladimir Golschmann. Satie later arranged it for piano four hands and today it is more frequently heard in this version. A typical performance lasts about five minutes.",
+      "pageviews_yearly": 2903
+    },
+    {
+      "qid": "Q125868877",
+      "title": "Valse-ballet",
+      "imslp_id": "Valse-ballet_(Satie,_Erik)",
+      "pdf_filename": "PMLP189460-Satie_-_Valse-ballet.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp29"
+    },
+    {
+      "qid": "Q11571136",
+      "title": "Veritables Preludes flasques (pour un chien)",
+      "imslp_id": "3_Véritables_préludes_flasques_(pour_un_chien)_(Satie,_Erik)",
+      "pdf_filename": "SIBLEY1802.20121.5529-39087012833770color_cover.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp62",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/V%C3%A9ritables_Pr%C3%A9ludes_flasques_(pour_un_chien)",
+      "wikipedia_extract": "The Véritables Préludes flasques  is a 1912 piano composition by Erik Satie. The first of his published humoristic piano suites of the 1910s, it signified a breakthrough in his creative development and in the public perception of his music. In performance it lasts about 5 minutes.",
+      "pageviews_yearly": 2684
+    },
+    {
+      "qid": "Q2060108",
+      "title": "Vexations",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Vexations_-_Erik_Satie.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q105105636",
+      "title": "Vieux sequins et vieilles cuirasses",
+      "imslp_id": "Vieux_sequins_et_vieilles_cuirasses_(Satie,_Erik)",
+      "pdf_filename": "PMLP19805-Satie__Erik-Klavierwerke_Peters_Klemm_Band_2_06_Vieux_Sequins_scan.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/erik-satie-1866-pp68"
+    }
+  ]
+}

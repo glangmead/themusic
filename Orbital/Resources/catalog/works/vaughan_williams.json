@@ -1,0 +1,603 @@
+{
+  "composer_slug": "vaughan_williams",
+  "composer_qid": "Q207947",
+  "work_count": 70,
+  "midi_file_count": 5,
+  "works": [
+    {
+      "qid": "Q2608920",
+      "title": "Fantasia on a Theme by Thomas Tallis",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp73",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fantasia_on_a_Theme_by_Thomas_Tallis",
+      "wikipedia_extract": "Fantasia on a Theme by Thomas Tallis, also known as the Tallis Fantasia, is a one-movement work for string orchestra by Ralph Vaughan Williams. The theme is by the 16th-century English composer Thomas Tallis. The Fantasia was first performed at Gloucester Cathedral as part of the 1910 Three Choirs Festival, and has entered the orchestral repertoire, with frequent concert performances and recordings by conductors and orchestras of various countries.",
+      "pageviews_yearly": 41204,
+      "date": "1910-00-00"
+    },
+    {
+      "qid": "Q300463",
+      "title": "A London Symphony",
+      "imslp_id": "A_London_Symphony_(Symphony_No.2)_(Vaughan_Williams,_Ralph)",
+      "pdf_filename": "PMLP60779-8115-mu.197.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp52",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/A_London_Symphony",
+      "wikipedia_extract": "\n\n\nA London Symphony is the second symphony that Ralph Vaughan Williams composed. The work is sometimes referred to as Symphony No. 2, though the composer did not designate that name for the work. First performed in 1914, the original score of this four-movement symphony was lost and subsequently reconstructed. Vaughan Williams continued revisions of the work into its final definitive form, which was published in 1936.",
+      "pageviews_yearly": 12443,
+      "date": "1913-00-00"
+    },
+    {
+      "qid": "Q5475251",
+      "title": "Four Hymns",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp277",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Four_Hymns_(Vaughan_Williams)",
+      "wikipedia_extract": "Four Hymns, set to music for tenor voice with the accompaniment of pianoforte and viola obbligato, is a liturgical song cycle composed by Ralph Vaughan Williams.",
+      "pageviews_yearly": 2196,
+      "date": "1914-00-00"
+    },
+    {
+      "qid": "Q83875934",
+      "title": "The Lark Ascending",
+      "imslp_id": "The_Lark_Ascending_(Vaughan_Williams,_Ralph)",
+      "pdf_filename": "PMLP49679-Vaughan-Williams_-_The_Lark_Ascending__orch._score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp104",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Lark_Ascending_(Vaughan_Williams)",
+      "wikipedia_extract": "The Lark Ascending is a short, single-movement work by the English composer Ralph Vaughan Williams, inspired by the 1881 poem of the same name by the English writer George Meredith. It was originally for violin and piano, completed in 1914, but not performed until 1920. The composer reworked it for solo violin and orchestra after the First World War. This version, in which the work is chiefly known, was first performed in 1921. It is subtitled \"A Romance\", a term that Vaughan Williams favoured for contemplative slow music.",
+      "pageviews_yearly": 59032,
+      "date": "1914-00-00"
+    },
+    {
+      "qid": "Q256668",
+      "title": "A Pastoral Symphony",
+      "imslp_id": "Pastoral_Symphony_(Symphony_No.3)_(Vaughan_Williams,_Ralph)",
+      "pdf_filename": "PMLP60780-Vaughan-Williams_-_Symphony_No._3__orch._score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp53",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pastoral_Symphony_(Vaughan_Williams)",
+      "wikipedia_extract": "\n\n\nRalph Vaughan Williams's third symphony, published as A Pastoral Symphony and not formally numbered until later, was completed in 1922. Vaughan Williams's inspiration to write this symphony came during his military service during the First World War after hearing a bugler practising: this ultimately led to the trumpet cadenza in the second movement.",
+      "pageviews_yearly": 9147,
+      "date": "1921-00-00"
+    },
+    {
+      "qid": "Q2182004",
+      "title": "Mass in G minor",
+      "imslp_id": "Mass_in_G_minor_(Vaughan_Williams,_Ralph)",
+      "pdf_filename": "PMLP243153-Vaughan_Williams_-_Mass_in_G_minor.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp163",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mass_in_G_minor_(Vaughan_Williams)",
+      "wikipedia_extract": "The Mass in G minor is a choral work by Ralph Vaughan Williams written in 1921. According to one commentator, it is the first Mass written in a distinctly English manner since the sixteenth century. The composer dedicated the piece to Gustav Holst and the Whitsuntide Singers at Thaxted in north Essex, but it was first performed by the City of Birmingham Choir on 6 December 1922. Though the first performance was in a concert venue Vaughan Williams intended the Mass to be used in a liturgical setting. R.R Terry directed its first liturgical performance at Westminster Cathedral.",
+      "pageviews_yearly": 4267,
+      "date": "1921-00-00"
+    },
+    {
+      "qid": "Q4992431",
+      "title": "The Poisoned Kiss",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp6",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Poisoned_Kiss",
+      "wikipedia_extract": "The Poisoned Kiss, or The Empress and the Necromancer is an opera in three acts by the English composer Ralph Vaughan Williams. The libretto, by Evelyn Sharp, is based on Richard Garnett's The Poison Maid and Nathaniel Hawthorne's 1844 short story Rappaccini's Daughter.",
+      "pageviews_yearly": 2963,
+      "date": "1929-00-00"
+    },
+    {
+      "qid": "Q166179",
+      "title": "Piano Concerto",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp103",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Concerto_(Vaughan_Williams)",
+      "wikipedia_extract": "\nThe Piano Concerto in C is a concertante work by Ralph Vaughan Williams written in 1926 and 1930-31. During the intervening years, the composer completed Job: A Masque for Dancing and began work on his Fourth Symphony. The concerto shares some thematic characteristics with these works, as well as some of their drama and turbulence.",
+      "pageviews_yearly": 2390,
+      "date": "1931-00-00"
+    },
+    {
+      "qid": "Q1456722",
+      "title": "Concerto in A minor for Oboe and Strings",
+      "imslp_id": "Oboe_Concerto_(Vaughan_Williams,_Ralph)",
+      "pdf_filename": "PMLP49196-PMLASIA00454-placeholder-vaughan_williams_oboe_concerto_pf.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp110",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oboe_Concerto_(Vaughan_Williams)",
+      "wikipedia_extract": "\nThe Concerto in A minor for Oboe and Strings was written by Ralph Vaughan Williams in 1943–44 for the oboist Léon Goossens, to whom the score is dedicated.",
+      "pageviews_yearly": 4456,
+      "date": "1944-01-01"
+    },
+    {
+      "qid": "Q2273931",
+      "title": "Concerto Grosso",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp90",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Concerto_Grosso_(Vaughan_Williams)",
+      "wikipedia_extract": "\nConcerto Grosso is a work for string orchestra by Ralph Vaughan Williams. Originally composed in 1950 for a performance by the Rural Schools Music Association conducted by Sir Adrian Boult, the piece is unique in that the orchestra is split into three sections based on skill: Concertino (Advanced), Tutti (Intermediate), and Ad Lib (Novice) which only plays open strings. The piece is in five movements, and performances generally run for 14 minutes.",
+      "pageviews_yearly": 2114,
+      "date": "1950-00-00"
+    },
+    {
+      "qid": "Q106878736",
+      "title": "The Mayor of Casterbridge",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp46",
+      "date": "1950-00-00"
+    },
+    {
+      "qid": "Q2557806",
+      "title": "Symphony No. 8",
+      "imslp_id": "Symphony_No.8_in_D_minor_(Vaughan_Williams,_Ralph)",
+      "pdf_filename": "PMLP238796-Vaughan_Williams_-_Symphony_No._8_-_I._Fantasia__Variazioni_senza_Tema_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp58",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._8_(Vaughan_Williams)",
+      "wikipedia_extract": "Ralph Vaughan Williams's Symphony No. 8 in D minor was composed between 1953 and 1955. Sir John Barbirolli, its dedicatee, conducted the Hallé Orchestra in the premiere at the Kings Hall in Manchester, on 2 May 1956. It is the shortest of the composer's nine symphonies, and is mostly buoyant and optimistic in tone.",
+      "pageviews_yearly": 5054,
+      "date": "1953-00-00"
+    },
+    {
+      "qid": "Q2665441",
+      "title": "Tuba Concerto",
+      "imslp_id": "Tuba_Concerto_(Vaughan_Williams,_Ralph)",
+      "pdf_filename": "PMLP49229-_score__vaughan_williams_-_tuba_concerto.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp112",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tuba_Concerto_(Vaughan_Williams)",
+      "wikipedia_extract": "\nThe Concerto in F Minor for Bass Tuba and Orchestra by British composer Ralph Vaughan Williams was written in 1954 for Philip Catelinet, principal tubist of the London Symphony Orchestra (LSO), who together gave the premiere on 13 June 1954 with Sir John Barbirolli conducting. The same musicians made the work’s first recording that same year. This concerto was the first concerto written for solo tuba.",
+      "pageviews_yearly": 7410,
+      "date": "1954-00-00"
+    },
+    {
+      "qid": "Q117285289",
+      "title": "Tuba Concerto",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp112",
+      "date": "2000-00-00"
+    },
+    {
+      "qid": "Q1620394",
+      "title": "49th Parallel",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp88",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/49th_Parallel_(film)",
+      "wikipedia_extract": "49th Parallel is a 1941 British epic war drama film, the third made by the team of Michael Powell and Emeric Pressburger. It stars Leslie Howard, Laurence Olivier, Anton Walbrook, Raymond Massey, Glynis Johns and Eric Portman. The plot involves a German U-boat crew that is stranded in Canada, and attempts to cross into the then-neutral United States.",
+      "pageviews_yearly": 66104
+    },
+    {
+      "qid": "Q2681152",
+      "title": "A Cambridge Mass",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/A_Cambridge_Mass",
+      "wikipedia_extract": "A Cambridge Mass is a choral work in G major by Ralph Vaughan Williams written between 1898 and 1899 as part of his studies in Cambridge for his Doctorate of Music. It is one of two large scale choral works with orchestral accompaniment by Vaughan Williams surviving from this period, the other being a cantata setting of Swinburne's poem The Garden of Proserpine.",
+      "pageviews_yearly": 1727
+    },
+    {
+      "qid": "Q3363984",
+      "title": "A Family at War",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/A_Family_at_War",
+      "wikipedia_extract": "A Family at War is a British drama series that aired on ITV from 14 April 1970 to 16 February 1972. It was created by John Finch and made by Granada Television for ITV. The original producer was Richard Doubleday, and with 13 directors during the series. The series examined the lives of the lower middle-class Ashton family of the city of Liverpool and their experiences from 1938 and throughout the Second World War.",
+      "pageviews_yearly": 69605
+    },
+    {
+      "qid": "Q300546",
+      "title": "A Sea Symphony",
+      "imslp_id": "A_Sea_Symphony_(Symphony_No.1)_(Vaughan_Williams,_Ralph)",
+      "pdf_filename": "PMLP58145-VaughanWilliams-SeaSymFS.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp51",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/A_Sea_Symphony",
+      "wikipedia_extract": "A Sea Symphony is a work of just over an hour's length for soprano, baritone, chorus and large orchestra written by Ralph Vaughan Williams between 1903 and 1909. The first and longest of his nine symphonies, it was first performed at the Leeds Festival in 1910 with the composer conducting. It is one of the first symphonies in which a chorus is used throughout as an integral part of the texture and it helped set the stage for a new era of symphonic and choral music in Britain during the first half of the 20th century.",
+      "pageviews_yearly": 22309
+    },
+    {
+      "qid": "Q4750203",
+      "title": "An Oxford Elegy",
+      "imslp_id": "An_Oxford_Elegy_(Vaughan_Williams,_Ralph)",
+      "pdf_filename": "PMLP1504235-Vaughan_Williams_-_An_Oxford_Elegy_-_Vocal_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp214",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/An_Oxford_Elegy",
+      "wikipedia_extract": "An Oxford Elegy is a work for narrator, small mixed chorus and small orchestra, written by Ralph Vaughan Williams between 1947 and 1949. It uses portions of two poems by Matthew Arnold, \"The Scholar Gipsy\" and \"Thyrsis\". The first performance took place privately, whilst the public premiere took place in Oxford in June 1952, with Steuart Wilson as the speaker and Bernard Rose conductor.",
+      "pageviews_yearly": 3060
+    },
+    {
+      "qid": "Q4919025",
+      "title": "Bitter Springs",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp49",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bitter_Springs_(film)",
+      "wikipedia_extract": "Bitter Springs is a 1950 Australian–British film directed by Ralph Smart and starring Tommy Trinder, Chips Rafferty and Gordon Jackson.",
+      "pageviews_yearly": 5621
+    },
+    {
+      "qid": "Q5138274",
+      "title": "Coastal Command",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp98",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Coastal_Command_(film)",
+      "wikipedia_extract": "Coastal Command is a 1942 British film made by the Crown Film Unit for the Ministry of Information. The film, distributed by RKO, dramatised the work of RAF Coastal Command.",
+      "pageviews_yearly": 3986
+    },
+    {
+      "qid": "Q96375320",
+      "title": "Come Down, O Love Divine",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp609",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Come_Down%2C_O_Love_Divine",
+      "wikipedia_extract": "\"Come Down, O Love Divine\" is a Christian hymn usually sung for the festival of Pentecost. It makes reference to the descent of the Holy Spirit as an invocation to God to come to into the soul of the believer. It is a popular piece of Anglican church music and is commonly sung to the tune \"Down Ampney\" by Ralph Vaughan Williams or the less well-known tune North Petherton by William Henry Harris.",
+      "pageviews_yearly": 7132
+    },
+    {
+      "qid": "Q166288",
+      "title": "Concerto for Two Pianos and Orchestra",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp103",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Concerto_for_Two_Pianos_and_Orchestra_(Vaughan_Williams)",
+      "wikipedia_extract": "The Concerto for Two Pianos and Orchestra is a piano concerto by the British composer Ralph Vaughan Williams. He wrote his solo Piano Concerto in the years between 1926 and 1930, which was first performed in 1933 under Adrian Boult. The piece gained a reputation for being too difficult and demanding, so Vaughan Williams reworked the piece for two pianos with the assistance of Joseph Cooper. This revised edition premiered in 1946.",
+      "pageviews_yearly": 2057
+    },
+    {
+      "qid": "Q57934248",
+      "title": "Dialoog"
+    },
+    {
+      "qid": "Q5293810",
+      "title": "Dona nobis pacem",
+      "imslp_id": "Dona_Nobis_Pacem_(Vaughan_Williams,_Ralph)",
+      "pdf_filename": "PMLP208443-DNP.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp207",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dona_nobis_pacem_(Vaughan_Williams)",
+      "wikipedia_extract": "Dona nobis pacem is a cantata written by Ralph Vaughan Williams in 1936 and first performed on 2 October of that year. The work was commissioned to mark the centenary of the Huddersfield Choral Society. Vaughan Williams produced his plea for peace by referring to recent wars during the growing fears of a new one. His texts were taken from the Mass, three poems by Walt Whitman, a political speech, and sections of the Bible. A.V. Butcher has analysed Vaughan Williams' use of the Whitman poems in this composition.",
+      "pageviews_yearly": 16247
+    },
+    {
+      "qid": "Q116059597",
+      "title": "Down Ampney",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Down_Ampney_Come_down_O_Love_divine.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q11300541",
+      "title": "Fantasia on Greensleeves",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp113"
+    },
+    {
+      "qid": "Q122059548",
+      "title": "Five Tudor Portraits",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp203",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Five_Tudor_Portraits",
+      "wikipedia_extract": "\n\nFive Tudor Portraits (1935), by Ralph Vaughan Williams, is a work scored for contralto, baritone, mixed chorus and orchestra. It sets several poems, or extracts from poems, by the 15th- and 16th-century poet John Skelton, portraying five characters with a mixture of satire, compassion, acerbity and earthy humour. Though acclaimed by critics, it has not been so frequently performed as some of Vaughan Williams' other works. In its complete form it lasts about 42 minutes, though the composer also sanctioned the performance of individual movements separately.",
+      "pageviews_yearly": 2569
+    },
+    {
+      "qid": "Q515554",
+      "title": "Five Variants of Dives and Lazarus",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp85",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Five_Variants_of_Dives_and_Lazarus",
+      "wikipedia_extract": "Five Variants of Dives and Lazarus is a work for string orchestra and harp composed in 1939 by Ralph Vaughan Williams. It is based on the English folk song \"Dives and Lazarus\". According to varying personal recollections, Vaughan Williams first heard the song either in 1893 or 1898. He subsequently transcribed several versions of it during his ethnomusicological surveys, one of which he included in The English Hymnal in 1906. He also quoted the melody in the first movement of his English Folk Song Suite in 1923.",
+      "pageviews_yearly": 10202
+    },
+    {
+      "qid": "Q2053352",
+      "title": "Flos Campi",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp106",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Flos_Campi",
+      "wikipedia_extract": "\n\nFlos Campi: Suite for Solo Viola, Small Chorus, and Small Orchestra is a composition by the English composer Ralph Vaughan Williams, completed in 1925. Its title is Latin for \"flower of the field.\" It is neither a concerto nor a choral piece, although it prominently features the viola and a wordless choir. The piece is divided into six movements, played without pause, each headed by a verse from the Song of Solomon:Sicut Lilium inter spinas (Lento)\nJam enim hiems transiit \nQuaesivi quem diligit anima mea \nEn lectulum Salomonis \nRevertere, revertere Sulamitis! \nPone me ut signaculum ",
+      "pageviews_yearly": 5340
+    },
+    {
+      "qid": "Q5475278",
+      "title": "Four Last Songs",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp291",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Four_Last_Songs_(Vaughan_Williams)",
+      "wikipedia_extract": "\n\n\nRalph Vaughan Williams' Four Last Songs cycle is made up of four songs: \"Procris\", \"Tired\", \"Hands, Eyes, and Heart\", and \"Menelaus\". All of the songs were composed between 1954 and 1958. The cycle is best suited for mezzo-soprano, although, the original program note from the cycle's 1959 premiere acknowledges that all of the songs may be sung by a baritone, except for \"Hands, Eyes, and Heart\", \"which is a woman's song.\" It is suggested that the four songs were originally intended to be two separate song cycles with \"Menelaus\" and \"Procris\" belonging to one cycle and \"Tired\" and \"Hands, Eyes, and Heart\" belonging to another. However, there is debate in the scholarly community about this proposed song cycle grouping. Renée Chérie Clark in her essay, \"A Critical Appraisal of Four Last Songs\" suggests, citing a letter from the composer to a friend at Cornell University, that Vaughan Williams actually intended for \"Menelaus\" and \"Hands, Eyes, and Heart\" to be grouped together. The composer's death in 1958 left both cycles unfinished, and in 1960, they were assembled by the composer's widow, Ursula Vaughan Williams, and published as set by Oxford University Press. The texts of all four songs are poems written by Vaughan Williams' wife Ursula who penned several books of poetry throughout her lifetime as well as a biography of her late husband. \"Procris\" and \"Menelaus\" deal with figures from ancient Greek and Roman mythology and epic poetry while \"Tired\" and \"Hands, Eyes, and Heart\" depict images of love between a husband and wife.",
+      "pageviews_yearly": 3268
+    },
+    {
+      "qid": "Q105102584",
+      "title": "Herr, mach uns stark",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Herr%2C_mach_uns_stark",
+      "wikipedia_extract": "\"Herr, mach uns stark\" is a Christian hymn in German with text by Anna Martina Gottschick written in 1972. The hymn for the end of the church year is sung to the melody \"Sine Nomine\" by Ralph Vaughan Williams. It is contained in the Catholic hymnal Gotteslob, concluded with an added sixth stanza by Jürgen Henkys. The first line is \"Herr, mach uns stark im Mut, der dich bekennt\".",
+      "pageviews_yearly": 1207
+    },
+    {
+      "qid": "Q3139026",
+      "title": "Hodie",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp219",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hodie",
+      "wikipedia_extract": "Hodie is a cantata by Ralph Vaughan Williams. Composed between 1953 and 1954, it is the composer's last major choral-orchestral composition, and was premiered under his baton at Worcester Cathedral, as part of the Three Choirs Festival, on 8 September 1954. The piece is dedicated to Herbert Howells. The cantata, in 16 movements, is scored for chorus, boys' choir, organ and orchestra, and features tenor, baritone, and soprano soloists.",
+      "pageviews_yearly": 8236
+    },
+    {
+      "qid": "Q14491587",
+      "title": "Household Music: Three Preludes on Welsh Hymn Tunes",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp117",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Household_Music%3A_Three_Preludes_on_Welsh_Hymn_Tunes",
+      "wikipedia_extract": "Household Music: Three Preludes on Welsh Hymn Tunes is a 1940 composition by Ralph Vaughan Williams. It was written for string quartet and can be adapted for other instruments.",
+      "pageviews_yearly": 1255
+    },
+    {
+      "qid": "Q267076",
+      "title": "Hugh the Drover",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp3",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hugh_the_Drover",
+      "wikipedia_extract": "\n\nHugh the Drover is an opera in two acts by Ralph Vaughan Williams to an original English libretto by Harold Child. The work has set numbers with recitatives. It has been described as a modern example of a ballad opera. Contemporary comment noted the use of humour and the role of the chorus in the work, in the context of developing English opera.",
+      "pageviews_yearly": 3912
+    },
+    {
+      "qid": "Q425722",
+      "title": "Job: A Masque for Dancing",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp35",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Job%3A_A_Masque_for_Dancing",
+      "wikipedia_extract": "Job: A Masque for Dancing is a one-act ballet produced in 1931. The scenario is by Geoffrey Keynes, the choreography by Ninette de Valois, and the music by Ralph Vaughan Williams. The ballet is based on the Book of Job from the Hebrew Bible and was inspired by the illustrated edition by William Blake. The music was first given in concert in 1930 and the ballet had its stage premiere on 5 July 1931. It was the first ballet to be produced by an entirely British creative team. It was taken into the repertoire of the Vic-Wells Ballet and its successors, and has been intermittently revived.",
+      "pageviews_yearly": 6276
+    },
+    {
+      "qid": "Q116059654",
+      "title": "King's Weston",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp611"
+    },
+    {
+      "qid": "Q18663684",
+      "title": "Magnificat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Magnificat_(Vaughan_Williams)",
+      "wikipedia_extract": "Ralph Vaughan Williams composed his setting of the Magnificat or Song of Mary, one of the three New Testament canticles, in 1932. It is scored for contralto soloist, women's chorus, and an orchestra consisting of two flutes, two oboes, cor anglais, two clarinets, two bassoons, four horns, two trumpets, timpani, triangle, cymbals, bass drum, tambourine, Indian drum, glockenspiel, celesta, harp, organ, and strings.",
+      "pageviews_yearly": 1338
+    },
+    {
+      "qid": "Q6941823",
+      "title": "Music for a Time of War"
+    },
+    {
+      "qid": "Q7051091",
+      "title": "Norfolk Rhapsody No. 1",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp70",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Norfolk_Rhapsodies",
+      "wikipedia_extract": "\n\nThe Norfolk Rhapsodies are three orchestral rhapsodies by Ralph Vaughan Williams, drafted in 1905–06. They were based on folk songs Vaughan Williams had collected in the English county of Norfolk, in particular the fishing port of King's Lynn in January 1905. Only the first rhapsody survives in its entirety, having been revised by the composer in 1914. The second exists in fragmentary form, and has been completed by other hands. The third is lost.",
+      "pageviews_yearly": 6240
+    },
+    {
+      "qid": "Q2605854",
+      "title": "On Wenlock Edge",
+      "imslp_id": "On_Wenlock_Edge_(Vaughan_Williams,_Ralph)",
+      "pdf_filename": "PMLP236706-Vaughan_Williams_-_On_Wenlock_Edge.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp276",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/On_Wenlock_Edge_(song_cycle)",
+      "wikipedia_extract": "On Wenlock Edge is a song cycle composed in 1909 by Ralph Vaughan Williams for tenor, piano and string quartet. The cycle comprises settings of six poems from A. E. Housman's 1896 collection A Shropshire Lad. A typical performance lasts around 22 minutes. It was premiered by Gervase Elwes, Frederick Kiddle and the Schwiller Quartet on 15 November 1909 in the Aeolian Hall, London.",
+      "pageviews_yearly": 6622
+    },
+    {
+      "qid": "Q86459078",
+      "title": "Poème"
+    },
+    {
+      "qid": "Q115798082",
+      "title": "Randolph"
+    },
+    {
+      "qid": "Q264750",
+      "title": "Riders to the Sea",
+      "imslp_id": "Riders_to_the_Sea_(Vaughan_Williams,_Ralph)",
+      "pdf_filename": "PMLP252260-Vaughan_Williams_-_Riders_To_The_Sea__vocal_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Riders_to_the_Sea_(opera)",
+      "wikipedia_extract": "Riders to the Sea is a short one-act opera by Ralph Vaughan Williams, based on the play of the same name by John Millington Synge. The composer completed the score in 1927, but it was not premiered until 1 December 1937, at the Royal College of Music, London. The opera remained largely the province of students and amateurs until it entered the repertoire of Sadler's Wells in 1953.",
+      "pageviews_yearly": 6153
+    },
+    {
+      "qid": "Q7362406",
+      "title": "Romance for viola and piano",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Romance_for_viola_and_piano_(Vaughan_Williams)",
+      "wikipedia_extract": "\nThe Romance for Viola and Piano was one of many pieces found in Ralph Vaughan Williams' library after his death in 1958. The date of the composition is not known, but it is thought to date from around 1914. It is probable that it was written for the great English violist, Lionel Tertis, the dedicatee of Vaughan Williams's other pieces for viola: Flos Campi (1925) and the Suite for viola and small orchestra (1933–1934), the latter of which was written for Tertis.",
+      "pageviews_yearly": 1699
+    },
+    {
+      "qid": "Q116059739",
+      "title": "Salve Festa Dies"
+    },
+    {
+      "qid": "Q1476143",
+      "title": "Scott of the Antarctic",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Scott_of_the_Antarctic_(film)",
+      "wikipedia_extract": "Scott of the Antarctic is a 1948 British adventure film starring John Mills as Robert Falcon Scott in his ill-fated attempt to reach the South Pole. The film more or less faithfully recreates the events that befell the Terra Nova Expedition in 1912.",
+      "pageviews_yearly": 37399
+    },
+    {
+      "qid": "Q7440006",
+      "title": "Sea Songs",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp75",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sea_Songs",
+      "wikipedia_extract": "\n\nSea Songs is an arrangement of three British sea-songs by the English composer Ralph Vaughan Williams. It is based on the songs \"Princess Royal\", \"Admiral Benbow\" and \"Portsmouth\". The work is a march of roughly four minutes duration. It follows a ternary structure, with opening material based on \"Princess Royal\" and \"Admiral Benbow\", with \"Portsmouth\" forming the central section before a return to the opening material featuring the first two songs.",
+      "pageviews_yearly": 5855
+    },
+    {
+      "qid": "Q78648305",
+      "title": "Silent noon"
+    },
+    {
+      "qid": "Q116059749",
+      "title": "Sine Nomine",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp603"
+    },
+    {
+      "qid": "Q2313192",
+      "title": "Sinfonia antartica",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp57",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sinfonia_antartica",
+      "wikipedia_extract": "\n\nSinfonia antartica is the Italian title given by Ralph Vaughan Williams to his seventh symphony, first performed in 1953. It drew on incidental music the composer had written for the 1948 film Scott of the Antarctic.",
+      "pageviews_yearly": 10657
+    },
+    {
+      "qid": "Q265909",
+      "title": "Sir John in Love",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp5",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sir_John_in_Love",
+      "wikipedia_extract": "Sir John in Love is an opera in four acts by the English composer Ralph Vaughan Williams. The libretto, by the composer himself, is based on Shakespeare's The Merry Wives of Windsor and supplemented with texts by Philip Sidney, Thomas Middleton, Ben Jonson, and Beaumont and Fletcher. The music deploys English folk tunes, including \"Greensleeves\". Originally titled The Fat Knight, the opera premiered at the Parry Opera Theatre, Royal College of Music, London, on 21 March 1929. Its first professional performance was on 9 April 1946 at Sadler's Wells Theatre.",
+      "pageviews_yearly": 5514
+    },
+    {
+      "qid": "Q17019410",
+      "title": "Six Studies in English Folk Song",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp130",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Six_Studies_in_English_Folk_Song",
+      "wikipedia_extract": "\nSix Studies in English Folk Song is a piece of chamber music written by English composer Ralph Vaughan Williams in 1926. It is a collection of six English folk songs set for cello and piano. Each song follows the same format: presentation of the tune in the solo line, followed by a full iteration of the folk song in the piano with an ornamented solo line.",
+      "pageviews_yearly": 5750
+    },
+    {
+      "qid": "Q953488",
+      "title": "Songs of Travel"
+    },
+    {
+      "qid": "Q23023057",
+      "title": "Stricken Peninsula",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp31",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stricken_Peninsula",
+      "wikipedia_extract": "Stricken Peninsula is a 1945 British short propaganda film directed by Paul Fletcher and narrated by William Holt. It was made by the Army Film Unit and the British Ministry of Information for the Department of Psychological Warfare to highlight the British Army's reconstruction work in southern Italy in the immediate aftermath of World War II.",
+      "pageviews_yearly": 1326
+    },
+    {
+      "qid": "Q7635571",
+      "title": "Suite for Viola and Orchestra",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Suite_for_Viola_and_Orchestra_(Vaughan_Williams)",
+      "wikipedia_extract": "\nThe Suite for Viola and Orchestra by Ralph Vaughan Williams is a work in eight movements for solo viola and orchestra composed in 1933 and 1934. The Suite is dedicated to violist Lionel Tertis, who premiered the work on November 12, 1934 at the Queen's Hall in London under the baton of Malcolm Sargent. A typical performance lasts about 23 minutes.",
+      "pageviews_yearly": 3626
+    },
+    {
+      "qid": "Q231271",
+      "title": "Symphony No. 4",
+      "imslp_id": "Symphony_No.4_in_F_minor_(Vaughan_Williams,_Ralph)",
+      "pdf_filename": "PMLP140966-RVW_Symphony__No.4__in_F_minor__III_Scherzo._Allegro_molto_FS.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp54",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._4_(Vaughan_Williams)",
+      "wikipedia_extract": "\n\nRalph Vaughan Williams composed his fourth symphony between 1931 and 1935. Unlike his first three symphonies, it was not given a title: the composer said that it was to be understood as pure music, without any incidental or external inspiration. In contrast to many of Vaughan Williams's previous compositions, the symphony displays a severity of tone. It is in four movements, scored for a large orchestra.",
+      "pageviews_yearly": 6410
+    },
+    {
+      "qid": "Q240312",
+      "title": "Symphony No. 5",
+      "imslp_id": "Symphony_No.5_in_D_major_(Vaughan_Williams,_Ralph)",
+      "pdf_filename": "PMLP140967-RVW_Symphony__No.5__in_D_major__I_Preludio_FS.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp55",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._5_(Vaughan_Williams)",
+      "wikipedia_extract": "Ralph Vaughan Williams wrote his Symphony No. 5 in D major between 1938 and 1943. In style it represents a shift away from the violent dissonance of his Fourth Symphony, and a return to the gentler style of the earlier Pastoral Symphony.",
+      "pageviews_yearly": 12954
+    },
+    {
+      "qid": "Q2251173",
+      "title": "Symphony No. 6",
+      "imslp_id": "Symphony_No.6_in_E_minor_(Vaughan_Williams,_Ralph)",
+      "pdf_filename": "PMLP238875-Vaughan_Williams_-_Symphony_No._6_-_I._Allegro.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp56",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._6_(Vaughan_Williams)",
+      "wikipedia_extract": "Ralph Vaughan Williams composed his Sixth Symphony between 1944 and 1947. It is a purely orchestral work, with the conventional four movements, but the orchestration adds a saxophone to the customary woodwind instruments. Many listeners, including some prominent music critics, felt that the work had a hidden programme, possibly connected with desolation after a nuclear war, but the composer maintained that it was to be regarded as absolute music.",
+      "pageviews_yearly": 9278
+    },
+    {
+      "qid": "Q2670828",
+      "title": "Symphony No. 9",
+      "imslp_id": "Symphony_No.9_in_E_minor_(Vaughan_Williams,_Ralph)",
+      "pdf_filename": "PMLP196384-Vaughan_Williams_-_Symphony_No._9_-_I._Moderato_maestoso.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp59",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._9_(Vaughan_Williams)",
+      "wikipedia_extract": "The Symphony No. 9 in E minor was the last symphony completed by the English composer Ralph Vaughan Williams. He composed it during 1956 and 1957, and it was given its premiere performance in London by the Royal Philharmonic Orchestra conducted by Sir Malcolm Sargent on 2 April 1958, in the composer's eighty-sixth year. The work was received respectfully but, at first, without great enthusiasm. Its reputation has subsequently grown, and the symphony has entered the repertoire, in the concert hall and on record, with the majority of recordings from the 1990s and the 21st century.",
+      "pageviews_yearly": 7624
+    },
+    {
+      "qid": "Q19897922",
+      "title": "Ten Blake Songs",
+      "has_midi": true,
+      "midi_files": [
+        "midi/R_Vaughan_Williams_-_Ten_Blake_Songs_-_7_Ah_Sun-Flower.mid",
+        "midi/R_Vaughan_Williams_-_Ten_Blake_Songs_-_4_London.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q12117923",
+      "title": "The England of Elizabeth",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp50",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_England_of_Elizabeth",
+      "wikipedia_extract": "The England of Elizabeth is a 1957 Technicolor documentary short film about the Elizabethan age, directed by John Taylor for British Transport Films. The script was by Gloucestershire novelist John Moore.",
+      "pageviews_yearly": 2065
+    },
+    {
+      "qid": "Q7734410",
+      "title": "The Flemish Farm",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp87",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Flemish_Farm",
+      "wikipedia_extract": "The Flemish Farm is a 1943 British war film, based on an actual wartime incident. Released during the war and used as a propaganda tool to support the Allied war effort, the film begins with the caption:The following story is based on an actual incident, but for security reasons, real names have not been used. The co-operation of the Belgian Government and of the Air Ministry is gratefully acknowledged.",
+      "pageviews_yearly": 6770
+    },
+    {
+      "qid": "Q7749073",
+      "title": "The Loves of Joanna Godden",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp47",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Loves_of_Joanna_Godden",
+      "wikipedia_extract": "The Loves of Joanna Godden is a 1947 British historical drama film directed by Charles Frend and produced by Michael Balcon. The screenplay was written by H. E. Bates and Angus MacPhail from the novel Joanna Godden (1921) by Sheila Kaye-Smith.",
+      "pageviews_yearly": 6010
+    },
+    {
+      "qid": "Q7757107",
+      "title": "The Pilgrim's Progress",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp9",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Pilgrim's_Progress_(opera)",
+      "wikipedia_extract": "The Pilgrim's Progress is an opera by Ralph Vaughan Williams, based on John Bunyan's 1678 allegory The Pilgrim's Progress. The composer himself described the work as a 'Morality' rather than an opera. Nonetheless, he intended the work to be performed on stage, rather than in a church or cathedral. Vaughan Williams himself prepared the libretto, with interpolations from the Bible and also text from his second wife, Ursula Wood. His changes to the story included altering the name of the central character from 'Christian' to 'Pilgrim', so as to universalise the spiritual message.",
+      "pageviews_yearly": 6159
+    },
+    {
+      "qid": "Q3443563",
+      "title": "The Wasps",
+      "imslp_id": "The_Wasps,_Aristophanic_suite_(Vaughan_Williams,_Ralph)",
+      "pdf_filename": "PMLP54172-VW-WaspsSte.Bass.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp40",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Wasps_(Vaughan_Williams)",
+      "wikipedia_extract": "The Wasps is incidental music composed by the British composer Ralph Vaughan Williams in 1909. It was written for the Cambridge Greek Play production of Aristophanes' The Wasps at Trinity College, Cambridge, and was Vaughan Williams' first of only three forays into incidental music. A later performance of the work was one of only a small number of performances conducted by Vaughan Williams that was committed to a recording.",
+      "pageviews_yearly": 11006
+    },
+    {
+      "qid": "Q78527300",
+      "title": "The vagabond",
+      "has_midi": true,
+      "midi_files": [
+        "midi/I_The_Vagabond_R_Vaughan_Williams.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q7797785",
+      "title": "Three Shakespeare Songs",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/ralph-vaughan-williams-1872-pp241",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Three_Shakespeare_Songs",
+      "wikipedia_extract": "Three Shakespeare Songs is a piece of classical choral music written for an a cappella SATB choir. It was written in 1951 by the British classical composer Ralph Vaughan Williams. The work comprises three short pieces which are settings of text from two plays by the English playwright William Shakespeare. It is published by Oxford University Press.",
+      "pageviews_yearly": 6224
+    },
+    {
+      "qid": "Q7996493",
+      "title": "Whither Must I Wander",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Ralph_Vaughan_Williams_Wither_must_I_wander.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q61946984",
+      "title": "Zea",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zea_(film)",
+      "wikipedia_extract": "Zea is a Canadian short film, directed by André Leduc and Jean-Jacques Leduc and released in 1981.",
+      "pageviews_yearly": 2793
+    }
+  ]
+}

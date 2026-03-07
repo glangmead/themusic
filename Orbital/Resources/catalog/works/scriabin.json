@@ -1,0 +1,581 @@
+{
+  "composer_slug": "scriabin",
+  "composer_qid": "Q185647",
+  "work_count": 72,
+  "midi_file_count": 4,
+  "works": [
+    {
+      "qid": "Q17027470",
+      "title": "Sonata-Fantaisie in G-sharp minor",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/alexander-scriabin-1872-pp16",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sonata-Fantaisie_in_G-sharp_minor_(Scriabin)",
+      "wikipedia_extract": "Alexander Scriabin's Sonate-Fantaisie in G-sharp minor was composed in 1886, when he was fourteen. It was dedicated to Natalya Sekerina, the sweetheart of his adolescence.",
+      "pageviews_yearly": 2115,
+      "date": "1886-00-00"
+    },
+    {
+      "qid": "Q20631831",
+      "title": "Piano Sonata in E-flat minor",
+      "imslp_id": "Piano_Sonata_in_E-flat_minor_(Scriabin,_Aleksandr)",
+      "pdf_filename": "PMLP303307-Scriabin_Piano_Sonata_Eb_minor.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/alexander-scriabin-1872-pp14",
+      "date": "1889-00-00"
+    },
+    {
+      "qid": "Q389653",
+      "title": "Piano Sonata No. 1",
+      "imslp_id": "Piano_Sonata_No.1,_Op.6_(Scriabin,_Aleksandr)",
+      "pdf_filename": "PMLP05543-Scriabin---Sonata-No1-Op6---Ed-Soviet.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/alexander-scriabin-1872-pp15",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_No._1_(Scriabin)",
+      "wikipedia_extract": "The Piano Sonata No. 1 in F minor, Op. 6, by Alexander Scriabin, was the third of twelve piano sonatas that he composed. It was completed in 1892. The music is emotionally charged as much of the music was written after Scriabin had damaged his right hand through excessive piano playing.",
+      "pageviews_yearly": 4253,
+      "date": "1892-00-00"
+    },
+    {
+      "qid": "Q1399065",
+      "title": "Piano Concerto",
+      "imslp_id": "Piano_Concerto,_Op.20_(Scriabin,_Aleksandr)",
+      "pdf_filename": "PMLP9449--------_-------_---_----------_---------.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/alexander-scriabin-1872-pp10",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Concerto_(Scriabin)",
+      "wikipedia_extract": "The Piano Concerto in F sharp minor, Op. 20, is an early work of the Russian composer Alexander Scriabin (1872–1915). Written in 1896, when he was 24, it was his first work for orchestra and the only concerto he composed. Scriabin completed the concerto in only a few days in the fall of 1896, but did not finish the orchestration until the following May. Belyayev paid the composer 600 rubles ; it premiered in October 1897 and was finally published in 1898.",
+      "pageviews_yearly": 10056,
+      "date": "1896-00-00"
+    },
+    {
+      "qid": "Q1627188",
+      "title": "Piano Sonata No. 2",
+      "imslp_id": "Piano_Sonata_No.2,_Op.19_(Scriabin,_Aleksandr)",
+      "pdf_filename": "PMLP05514-Scriabin--Sonata-N2-Op19--ed-Peters.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/alexander-scriabin-1872-pp16",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_No._2_(Scriabin)",
+      "wikipedia_extract": "Scriabin's Piano Sonata No. 2 in G-sharp minor, took five years for him to write. It was finally published in 1898, at the urging of his publisher. The piece is in two movements, with a style combining Chopin-like Romanticism with an impressionistic touch. The piece is widely appreciated and is one of Scriabin's most popular pieces.",
+      "pageviews_yearly": 7226,
+      "date": "1897-00-00"
+    },
+    {
+      "qid": "Q1321264",
+      "title": "Piano Sonata No. 3",
+      "imslp_id": "Piano_Sonata_No.3,_Op.23_(Scriabin,_Aleksandr)",
+      "pdf_filename": "PMLP5659-Scriabin-PianoSonata3.Dover.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/alexander-scriabin-1872-pp17",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_No._3_(Scriabin)",
+      "wikipedia_extract": "The Piano Sonata No. 3 in F-sharp minor, Op. 23, by Alexander Scriabin was composed between 1897 and 1898. The sonata consists of four movements, typically spanning 18 minutes in performance.",
+      "pageviews_yearly": 6181,
+      "date": "1897-00-00"
+    },
+    {
+      "qid": "Q163600",
+      "title": "Symphony No. 1",
+      "imslp_id": "Symphony_No.1,_Op.26_(Scriabin,_Aleksandr)",
+      "pdf_filename": "PMLP46737-Scriabin_-_Symphony_No._1__Op._26__orch._score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/alexander-scriabin-1872-pp2",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._1_(Scriabin)",
+      "wikipedia_extract": "\nAlexander Scriabin's Symphony No. 1, Op. 26, in E major was written in 1899 and 1900. It is an ambitious first symphony, consisting of six movements, the last of which has a chorus and two vocal soloists. This work is one of the first in which Scriabin's idea of art morally transforming a person is clearly expressed.",
+      "pageviews_yearly": 6252,
+      "date": "1900-00-00"
+    },
+    {
+      "qid": "Q1746040",
+      "title": "Piano Sonata No. 4",
+      "imslp_id": "Piano_Sonata_No.4,_Op.30_(Scriabin,_Aleksandr)",
+      "pdf_filename": "PMLP5654-Scriabin-PianoSonata4.Dover.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/alexander-scriabin-1872-pp18",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_No._4_(Scriabin)",
+      "wikipedia_extract": "The Piano Sonata No. 4 in F-sharp major, Op. 30, was written by Alexander Scriabin around 1903 and first published in 1904. It consists of two movements, Andante and Prestissimo volando, and is one of Scriabin's shortest piano sonatas. The sonata is generally considered to be the beginning of Scriabin's middle period due to the newly mystical sonorities and tonal ambiguity of the first movement. It remains one of the most performed of Scriabin's sonatas.",
+      "pageviews_yearly": 8888,
+      "date": "1903-00-00"
+    },
+    {
+      "qid": "Q137002898",
+      "title": "Poème satanique",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/alexander-scriabin-1872-pp60",
+      "date": "1903-00-00"
+    },
+    {
+      "qid": "Q3024896",
+      "title": "Two Poems, Op. 32",
+      "date": "1903-00-00"
+    },
+    {
+      "qid": "Q1733265",
+      "title": "Prometheus: The Poem of Fire",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/alexander-scriabin-1872-pp6",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Prometheus%3A_The_Poem_of_Fire",
+      "wikipedia_extract": "\nPrometheus: The Poem of Fire, Op. 60 (1910), is a tone poem by the Russian composer Alexander Scriabin for piano, orchestra, optional choir, and clavier à lumières or \"Chromola\". Prometheus is only loosely based on the myth of Prometheus. It premiered in Moscow on 2 March 1911. A typical performance lasts about 20 minutes.",
+      "pageviews_yearly": 19077,
+      "date": "1908-00-00"
+    },
+    {
+      "qid": "Q3490176",
+      "title": "Piano Sonata No. 7",
+      "imslp_id": "Piano_Sonata_No.7,_Op.64_(Scriabin,_Aleksandr)",
+      "pdf_filename": "PMLP5433-Scriabin-PianoSonatas.Dover.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/alexander-scriabin-1872-pp21",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_No._7_(Scriabin)",
+      "wikipedia_extract": "The Piano Sonata No. 7, Op. 64, subtitled Messe Blanche, was written by Alexander Scriabin in 1911. The idea and the first sketches of the Sixth Sonata by A. N. Scriabin originated in a country house on the estate of Obraztsovo-Karpovo, Serpukhov district, Moscow province. As one of the late piano sonatas of Scriabin's career, the music is highly chromatic and almost atonal. George Perle says that, \"the primary set upon which the Seventh Sonata is based,\" is, in linear order as spelled by Scriabin, E, F♯, G, A, B♭, C, D♭, and that the mystic chord may be derived from the quartal spelling of this set.",
+      "pageviews_yearly": 7294,
+      "date": "1911-00-00"
+    },
+    {
+      "qid": "Q11331285",
+      "title": "Piano Sonata No. 8",
+      "imslp_id": "Piano_Sonata_No.8,_Op.66_(Scriabin,_Aleksandr)",
+      "pdf_filename": "PMLP05434-Scriabin_Ausgewaehlte_Klavierwerke_Band_6_Peters_Op_66_filter.pdf",
+      "has_pdf": false,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/alexander-scriabin-1872-pp22",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_No._8_(Scriabin)",
+      "wikipedia_extract": "The Piano Sonata No. 8, Op. 66, by Alexander Scriabin, was composed between 1912 and 1913. As one of Scriabin's late piano sonatas, the eighth sonata features non-tertian harmony, though is arguably less dissonant than some of his other late works. Like Scriabin's other late piano sonatas, the eighth sonata reflects the composer's mystical interests. Scriabin saw some parts of this sonata, which, like the sixth sonata, he never performed in public, as \"the most tragic episode of my creative work\".",
+      "pageviews_yearly": 4090,
+      "date": "1912-00-00"
+    },
+    {
+      "qid": "Q2031786",
+      "title": "Piano Sonata No. 9",
+      "imslp_id": "Piano_Sonata_No.9,_Op.68_(Scriabin,_Aleksandr)",
+      "pdf_filename": "PMLP5363-Scriabin-PianoSonata9.Dover.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/alexander-scriabin-1872-pp23",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_No._9_(Scriabin)",
+      "wikipedia_extract": "The Piano Sonata No. 9, Op. 68, commonly known as the Black Mass Sonata, is one of the late piano sonatas composed by Alexander Scriabin. The work was written around 1912–1913. Although its nickname was not invented by Scriabin, he approved of it.",
+      "pageviews_yearly": 7018,
+      "date": "1912-00-00"
+    },
+    {
+      "qid": "Q3024899",
+      "title": "2 Preludes, Op. 67",
+      "date": "1913-00-00"
+    },
+    {
+      "qid": "Q6962276",
+      "title": "Piano Sonata No. 10",
+      "imslp_id": "Piano_Sonata_No.10,_Op.70_(Scriabin,_Aleksandr)",
+      "pdf_filename": "PMLP5431-Scriabin-PianoSonata10.Dover.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/alexander-scriabin-1872-pp24",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_No._10_(Scriabin)",
+      "wikipedia_extract": "The Piano Sonata No. 10, Op. 70, was written by Alexander Scriabin in 1913. It was his final work in this form. The piece is highly chromatic and tonally ambiguous like Scriabin's other late works, although arguably less dissonant than most of his late works. It is characterized by frequent trills and tremolos. It is sometimes called his \"Insect Sonata\", in reference to the following statement he made that was recorded by Leonid Sabaneev:",
+      "pageviews_yearly": 5789,
+      "date": "1913-00-00"
+    },
+    {
+      "qid": "Q2610891",
+      "title": "Vers la flamme",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/alexander-scriabin-1872-pp87",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vers_la_flamme",
+      "wikipedia_extract": "\n\nVers la flamme, Op. 72, is one of Alexander Scriabin's last pieces for piano, written in 1914.",
+      "pageviews_yearly": 10764,
+      "date": "1914-00-00"
+    },
+    {
+      "qid": "Q3032542",
+      "title": "10 Mazurkas",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/alexander-scriabin-1872-pp33"
+    },
+    {
+      "qid": "Q3038232",
+      "title": "12 Études, Op. 8",
+      "imslp_id": "12_Etudes,_Op.8_(Scriabin,_Aleksandr)",
+      "pdf_filename": "PMLP07375-Scriabin--Etudes-Op8-Ed-Muzyka.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "movements": [
+        {
+          "qid": "Q3592579"
+        }
+      ]
+    },
+    {
+      "qid": "Q3024882",
+      "title": "2 Impromptus, Op. 10"
+    },
+    {
+      "qid": "Q3024884",
+      "title": "2 Impromptus, Op. 12"
+    },
+    {
+      "qid": "Q3024886",
+      "title": "2 Impromptus, Op. 14"
+    },
+    {
+      "qid": "Q3024890",
+      "title": "2 Mazurkas, Op. 40"
+    },
+    {
+      "qid": "Q3024897",
+      "title": "2 Preludes, Op. 27"
+    },
+    {
+      "qid": "Q217297",
+      "title": "24 Preludes, Op. 11",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/24_Preludes%2C_Op._11_(Scriabin)",
+      "wikipedia_extract": "Alexander Scriabin's 24 Preludes, Op. 11 is a set of preludes composed in the course of eight years between 1888–96, being also one of Scriabin's first published works with M.P. Belaieff in 1897, in Leipzig, Germany, together with his 12 Études, Op. 8 (1894–95).",
+      "pageviews_yearly": 10591
+    },
+    {
+      "qid": "Q3539939",
+      "title": "3 Preludes, Op. 35"
+    },
+    {
+      "qid": "Q3413454",
+      "title": "4 Preludes, Op. 22"
+    },
+    {
+      "qid": "Q3413456",
+      "title": "4 Preludes, Op. 31"
+    },
+    {
+      "qid": "Q3413455",
+      "title": "4 Preludes, Op. 33"
+    },
+    {
+      "qid": "Q3413457",
+      "title": "4 Preludes, Op. 37"
+    },
+    {
+      "qid": "Q3413460",
+      "title": "4 Preludes, Op. 39"
+    },
+    {
+      "qid": "Q3413459",
+      "title": "4 Preludes, Op. 48"
+    },
+    {
+      "qid": "Q2972849",
+      "title": "5 Preludes op. 15"
+    },
+    {
+      "qid": "Q2972848",
+      "title": "5 Preludes op. 16"
+    },
+    {
+      "qid": "Q2972903",
+      "title": "5 Preludes, Op. 74",
+      "movements": [
+        {
+          "qid": "Q7240057"
+        }
+      ]
+    },
+    {
+      "qid": "Q3485602",
+      "title": "6 Préludes, Op. 13"
+    },
+    {
+      "qid": "Q3478901",
+      "title": "7 Préludes, Op. 17"
+    },
+    {
+      "qid": "Q3142918",
+      "title": "8 Études, Op. 42",
+      "imslp_id": "8_Etudes,_Op.42_(Scriabin,_Aleksandr)",
+      "pdf_filename": "PMLP07388-Op._42_-_8_Etudes__1924_Muzgiz_.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q18676992",
+      "title": "A Man Before His Time",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/A_Man_Before_His_Time",
+      "wikipedia_extract": "A Man Before His Time is a 1971 Soviet drama film directed by Abram Room. It is based on Yakov Bogomolov, an unfinished play by Maxim Gorky.",
+      "pageviews_yearly": 1562
+    },
+    {
+      "qid": "Q380803",
+      "title": "Aelita"
+    },
+    {
+      "qid": "Q15990895",
+      "title": "Deux Danses"
+    },
+    {
+      "qid": "Q11484163",
+      "title": "Fantaisie in B minor",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/alexander-scriabin-1872-pp54",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fantaisie_in_B_minor_(Scriabin)",
+      "wikipedia_extract": "Alexander Scriabin's Fantasie in B minor, Op. 28, was written in 1900. This is a single sonata form movement which bridges the gap between Scriabin's third and his fourth sonata. Scriabin wrote this piece during an otherwise compositionally unproductive period during his tenure at the Moscow Conservatory. The first edition was published by Belaieff.",
+      "pageviews_yearly": 7557
+    },
+    {
+      "qid": "Q5490677",
+      "title": "Frankenstein: Day of the Beast",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frankenstein%3A_Day_of_the_Beast",
+      "wikipedia_extract": "Frankenstein: Day of the Beast is a 2011 independent horror film directed by Ricardo Islas, based on the 1818 novel Frankenstein; or, The Modern Prometheus by Mary Shelley. It premiered with a limited theatrical release in the United States on November 27, 2011.",
+      "pageviews_yearly": 6000
+    },
+    {
+      "qid": "Q77892609",
+      "title": "Moonlight People",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Moonlight_People",
+      "wikipedia_extract": "Moonlight People is a black-and-white 2019 Russian independent film directed by Dmitrii Frolov. It is based on Vasily Rozanov treatise Moonlight People. Treatise by Vasily Rozanov, devoted to the study of sexuality and its denial in Christianity. Published in St. Petersburg in 1911.",
+      "pageviews_yearly": 2419
+    },
+    {
+      "qid": "Q3224861",
+      "title": "Mysterium",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/alexander-scriabin-1872-pp1",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mysterium_(Scriabin)",
+      "wikipedia_extract": "Mysterium is an unfinished musical work by composer Alexander Scriabin. He started working on the composition in 1903, but left it incomplete when he died in 1915. Scriabin planned that the work would be synesthetic, exploiting the senses of smell and touch as well as hearing. He wrote that\"There will not be a single spectator. All will be participants. The work requires special people, special artists and a completely new culture. The cast of performers includes an orchestra, a large mixed choir, an instrument with visual effects, dancers, a procession, incense, and rhythmic textural articulation. The cathedral in which it will take place will not be of one single type of stone but will continually change with the atmosphere and motion of the Mysterium. This will be done with the aid of mists and lights, which will modify the architectural contours.\"",
+      "pageviews_yearly": 20306
+    },
+    {
+      "qid": "Q3338599",
+      "title": "Nine Mazurkas",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/alexander-scriabin-1872-pp52"
+    },
+    {
+      "qid": "Q7046536",
+      "title": "Nocturne in A-flat",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Aleksandr_Scriabin_Nocturne_in_A-flat_major.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q279574",
+      "title": "Piano Sonata No. 5",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Alexander_Scriabin_Piano_Sonata_No5_Op53.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q7190160",
+      "title": "Piano Sonata No. 6",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Aleksandr_Scriabin_-_Piano_Sonata_No_6_Op_62_abandoned.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q7240069",
+      "title": "Prelude Op. 59 No. 2",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Prelude%2C_Op._59%2C_No._2_(Scriabin)",
+      "wikipedia_extract": "The Prelude Op. 59 No. 2 is one of the latest works written by Alexander Scriabin, it was completed in 1910, five years before his death. It is notated as \"Sauvage, Belliqueux\".",
+      "pageviews_yearly": 1043
+    },
+    {
+      "qid": "Q7240077",
+      "title": "Prelude in A minor, Op. 51, No. 2",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Prelude_in_A_minor%2C_Op._51%2C_No._2_(Scriabin)",
+      "wikipedia_extract": "\nAlexander Scriabin's Prelude Opus 51 No. 2 is the second of his Quatre Morceaux op. 51, published in 1906. It is notated in A minor. It is written in a 6/8 beat in 30 measures and should be expressed Lugubre (dire).",
+      "pageviews_yearly": 1152
+    },
+    {
+      "qid": "Q7240082",
+      "title": "Prelude in C major, Op. 11, No. 1",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/24_Preludes%2C_Op._11_(Scriabin)",
+      "wikipedia_extract": "Alexander Scriabin's 24 Preludes, Op. 11 is a set of preludes composed in the course of eight years between 1888–96, being also one of Scriabin's first published works with M.P. Belaieff in 1897, in Leipzig, Germany, together with his 12 Études, Op. 8 (1894–95).",
+      "pageviews_yearly": 380
+    },
+    {
+      "qid": "Q7240081",
+      "title": "Prelude in C-sharp minor, Op. 11, No. 10",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/24_Preludes%2C_Op._11_(Scriabin)",
+      "wikipedia_extract": "Alexander Scriabin's 24 Preludes, Op. 11 is a set of preludes composed in the course of eight years between 1888–96, being also one of Scriabin's first published works with M.P. Belaieff in 1897, in Leipzig, Germany, together with his 12 Études, Op. 8 (1894–95).",
+      "pageviews_yearly": 864
+    },
+    {
+      "qid": "Q7240092",
+      "title": "Prelude in E major, Op. 11, No. 9",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/24_Preludes%2C_Op._11_(Scriabin)",
+      "wikipedia_extract": "Alexander Scriabin's 24 Preludes, Op. 11 is a set of preludes composed in the course of eight years between 1888–96, being also one of Scriabin's first published works with M.P. Belaieff in 1897, in Leipzig, Germany, together with his 12 Études, Op. 8 (1894–95).",
+      "pageviews_yearly": 612
+    },
+    {
+      "qid": "Q7240093",
+      "title": "Prelude in E minor, Op. 11, No. 4",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/24_Preludes%2C_Op._11_(Scriabin)",
+      "wikipedia_extract": "Alexander Scriabin's 24 Preludes, Op. 11 is a set of preludes composed in the course of eight years between 1888–96, being also one of Scriabin's first published works with M.P. Belaieff in 1897, in Leipzig, Germany, together with his 12 Études, Op. 8 (1894–95).",
+      "pageviews_yearly": 551
+    },
+    {
+      "qid": "Q7240095",
+      "title": "Prelude in F major, Op. 49, No. 2",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Prelude_in_F_major%2C_Op._49%2C_No._2_(Scriabin)",
+      "wikipedia_extract": "Alexander Scriabin's Prelude, Op. 49, No. 2 is the second of his Trois Morceaux Op. 49, which were written in 1905. It is notated in F major, 3/4 measure, with a speed of 69 per quarter note, and lasts for 23 measures. It should be expressed Bruscamente irato.",
+      "pageviews_yearly": 920
+    },
+    {
+      "qid": "Q7240057",
+      "title": "Prelude, Op. 74, No. 2",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Prelude%2C_Op._74%2C_No._2_(Scriabin)",
+      "wikipedia_extract": "Alexander Scriabin's Prelude, Op. 74, No. 2, entitled Très lent, contemplatif, is one of five preludes in Op. 74, composed in late 1914.",
+      "pageviews_yearly": 1867
+    },
+    {
+      "qid": "Q15990970",
+      "title": "Prélude et Nocturne for Piano"
+    },
+    {
+      "qid": "Q7386173",
+      "title": "Rêverie",
+      "imslp_id": "Rêverie,_Op.24_(Scriabin,_Aleksandr)",
+      "pdf_filename": "PMLP64612-Scriabin-Reverie_-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/alexander-scriabin-1872-pp8",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/R%C3%AAverie_(Scriabin)",
+      "wikipedia_extract": "\nRêverie, Op. 24, is an orchestral work composed by Alexander Scriabin in 1898. A typical performance lasts from 3 to 5 minutes. Scriabin, who was a pianist, had never before composed for orchestra, except for a few unpublished works. However, he composed the work in total secrecy, without any advice.",
+      "pageviews_yearly": 2028
+    },
+    {
+      "qid": "Q4422640",
+      "title": "Skryabiniana"
+    },
+    {
+      "qid": "Q210572",
+      "title": "Symphony No. 2",
+      "imslp_id": "Symphony_No.2,_Op.29_(Scriabin,_Aleksandr)",
+      "pdf_filename": "PMLP46738-SIBLEY1802.12715.98aa-39087009399454pp1-74__etc_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/alexander-scriabin-1872-pp3",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._2_(Scriabin)",
+      "wikipedia_extract": "\nAlexander Scriabin's Symphony No. 2, Op. 29, in C minor was written in 1901 and first performed in St Petersburg under Anatol Lyadov on 12 January 1902.",
+      "pageviews_yearly": 4006
+    },
+    {
+      "qid": "Q223538",
+      "title": "Symphony No. 3",
+      "imslp_id": "Symphony_No.3,_Op.43_(Scriabin,_Aleksandr)",
+      "pdf_filename": "PMLP46739-Scriabin-Op43fs.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/alexander-scriabin-1872-pp4",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._3_(Scriabin)",
+      "wikipedia_extract": "Alexander Scriabin's Symphony No. 3 in C minor, entitled Le Divin Poème, was written between 1902 and 1904 and published in 1905. It was premiered in Paris on 29 May of that year.",
+      "pageviews_yearly": 7105
+    },
+    {
+      "qid": "Q1810096",
+      "title": "The Poem of Ecstasy",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/alexander-scriabin-1872-pp5",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Poem_of_Ecstasy",
+      "wikipedia_extract": "The Poem of Ecstasy, Op. 54, is a symphonic poem by Russian composer and pianist Alexander Scriabin written between 1905 and 1908, when Scriabin was actively involved with the Theosophical Society. The 20-minute work premiered on 10 December 1908 in New York City.",
+      "pageviews_yearly": 19254
+    },
+    {
+      "qid": "Q3540017",
+      "title": "Three Pieces, Op. 2",
+      "imslp_id": "3_Pieces,_Op.2_(Scriabin,_Aleksandr)",
+      "pdf_filename": "PMLP07373-Op._2_-_Etude_in_C-sharp_minor__1894_Jurgenson__FE_.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q3024892",
+      "title": "Two Poems, Op. 44"
+    },
+    {
+      "qid": "Q3024893",
+      "title": "Two Poems, Op. 63"
+    },
+    {
+      "qid": "Q3024894",
+      "title": "Two Poems, Op. 69"
+    },
+    {
+      "qid": "Q3024895",
+      "title": "Two Poems, Op. 71"
+    },
+    {
+      "qid": "Q13933068",
+      "title": "piano sonatas by Alexander Scriabin",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/alexander-scriabin-1872-pp17",
+      "movements": [
+        {
+          "qid": "Q389653"
+        },
+        {
+          "qid": "Q1627188"
+        },
+        {
+          "qid": "Q1321264"
+        },
+        {
+          "qid": "Q1746040"
+        },
+        {
+          "qid": "Q279574"
+        },
+        {
+          "qid": "Q7190160"
+        },
+        {
+          "qid": "Q3490176"
+        },
+        {
+          "qid": "Q11331285"
+        },
+        {
+          "qid": "Q2031786"
+        },
+        {
+          "qid": "Q6962276"
+        },
+        {
+          "qid": "Q17027470"
+        },
+        {
+          "qid": "Q20631831"
+        }
+      ]
+    },
+    {
+      "qid": "Q8078515",
+      "title": "Étude in C-sharp minor, Op. 2, No. 1",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/%C3%89tude_in_C-sharp_minor%2C_Op._2%2C_No._1_(Scriabin)",
+      "wikipedia_extract": "Étude in C-sharp minor, Op. 2, No. 1, is an étude for piano, written by Russian composer Alexander Scriabin in 1887.",
+      "pageviews_yearly": 3728
+    },
+    {
+      "qid": "Q3592579",
+      "title": "Étude in D-sharp minor, Op. 8, No. 12",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Alexander_Scriabin_Etude_in_D-sharp_minor_Op8_No12.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q1372031",
+      "title": "Études",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/alexander-scriabin-1872-pp39",
+      "movements": [
+        {
+          "qid": "Q3038232"
+        },
+        {
+          "qid": "Q3142918"
+        },
+        {
+          "qid": "Q8078515"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "composer_slug": "chaminade",
+  "composer_qid": "Q236438",
+  "work_count": 11,
+  "midi_file_count": 1,
+  "works": [
+    {
+      "qid": "Q137464336",
+      "title": "Feuillets d'album",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/cecile-chaminade-1857-pp132",
+      "date": "1900-00-00"
+    },
+    {
+      "qid": "Q136906422",
+      "title": "Feuilles d'automne",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/cecile-chaminade-1857-pp186",
+      "date": "1912-00-00"
+    },
+    {
+      "qid": "Q136905279",
+      "title": "Gavotte, piano, op. 162",
+      "date": "1921-00-00"
+    },
+    {
+      "qid": "Q137464278",
+      "title": "Arabesque, piano, no. 1, op. 61, G minor"
+    },
+    {
+      "qid": "Q136906570",
+      "title": "Automne",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/cecile-chaminade-1857-pp211"
+    },
+    {
+      "qid": "Q2991728",
+      "title": "Flute Concertino",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Concertino_for_Flute.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q112964471",
+      "title": "Les Amazones"
+    },
+    {
+      "qid": "Q136907098",
+      "title": "Marche américaine"
+    },
+    {
+      "qid": "Q136907284",
+      "title": "Sylvains",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/cecile-chaminade-1857-pp79"
+    },
+    {
+      "qid": "Q137002870",
+      "title": "Valse brillante, no. 3"
+    },
+    {
+      "qid": "Q136906503",
+      "title": "Études de concert, op. 35",
+      "movements": [
+        {
+          "qid": "Q136906570"
+        }
+      ]
+    }
+  ]
+}

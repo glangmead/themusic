@@ -1,0 +1,781 @@
+{
+  "composer_slug": "bartok",
+  "composer_qid": "Q83326",
+  "work_count": 83,
+  "midi_file_count": 8,
+  "works": [
+    {
+      "qid": "Q427943",
+      "title": "Kossuth",
+      "imslp_id": "Kossuth,_Sz.21_(Bartók,_Béla)",
+      "pdf_filename": "PMLP118136-Bartok_-_Kossuth.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp7",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kossuth_(Bart%C3%B3k)",
+      "wikipedia_extract": "\nKossuth, Sz. 21, BB. 31, DD. 75a is a symphonic poem composed by Béla Bartók inspired by the Hungarian politician Lajos Kossuth.",
+      "pageviews_yearly": 4432,
+      "date": "1903-00-00"
+    },
+    {
+      "qid": "Q790972",
+      "title": "Fourteen Bagatelles",
+      "imslp_id": "14_Bagatelles,_Op.6_(Bartók,_Béla)",
+      "pdf_filename": "Bartok_-_Op.6_-_14_Bagatellen.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp115",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/14_Bagatelles",
+      "wikipedia_extract": "14 Bagatelles, Sz.38, BB 50; 3rd Set, Op. 6 is a set of pieces for solo piano by Hungarian composer Béla Bartók, written in the spring of 1908 and first performed by the composer June 29, 1908, in Berlin. The work was published the following year in Budapest by Rozsnyai Károly. Composed the same year as Ten Easy Pieces, 14 Bagatelles was experimental and signified Bartók's departure from the tonality of 19th century composition. The work borders on atonality, and Bartók adopted some techniques of Debussy and Schoenberg.",
+      "pageviews_yearly": 3244,
+      "date": "1908-00-00"
+    },
+    {
+      "qid": "Q790997",
+      "title": "String Quartet No. 1",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp39",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._1_(Bart%C3%B3k)",
+      "wikipedia_extract": "The String Quartet No. 1 in A minor by Hungarian composer Béla Bartók was completed in 1909. The score is dated January 27 of that year. It is one of six string quartets by Bartok.",
+      "pageviews_yearly": 5528,
+      "date": "1909-00-00"
+    },
+    {
+      "qid": "Q25468192",
+      "title": "Four Old Hungarian Folk Songs",
+      "date": "1910-00-00"
+    },
+    {
+      "qid": "Q790974",
+      "title": "Two Romanian Folk Dances",
+      "imslp_id": "2_Romanian_Dances,_Op.8a_(Bartók,_Béla)",
+      "pdf_filename": "Bartok_op08a_2_Romanian_Dances.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Two_Romanian_Dances",
+      "wikipedia_extract": "\nTwo Romanian Dances, Op. 8a, Sz. 43, is a set of piano compositions by Béla Bartók, based on Romanian traditional music. Written in 1910, they date from the beginning of his interest in folk music – his first work showing strong folk influence, the String Quartet No. 1, is from just two years before. However, the Dances show that he has already seamlessly incorporated folk idioms into his musical language.",
+      "pageviews_yearly": 1788,
+      "date": "1910-00-00"
+    },
+    {
+      "qid": "Q264315",
+      "title": "Allegro barbaro",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp123",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Allegro_barbaro_(Bart%C3%B3k)",
+      "wikipedia_extract": "\nAllegro barbaro, BB 63, composed in 1911, is one of Béla Bartók's most famous and frequently performed solo piano pieces. The composition is typical of Bartók's style, utilizing folk elements. The work combines Hungarian and Romanian scales; Hungarian peasant music is based on the pentatonic scale, while Romanian music is largely chromatic. The title is a jab at Bartók's critics who called him a 'barbarian'.",
+      "pageviews_yearly": 7113,
+      "date": "1911-00-00"
+    },
+    {
+      "qid": "Q249749",
+      "title": "Bluebeard's Castle",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp1",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bluebeard's_Castle",
+      "wikipedia_extract": "Duke Bluebeard's Castle is a one-act Symbolist opera by composer Béla Bartók to a Hungarian libretto by his friend and poet Béla Balázs. Bartók's only opera, it is based on the French folk legend, or conte populaire, as told by Charles Perrault, it lasts about an hour and deploys just two singing characters: Bluebeard and his newest wife Judith ; the two have just eloped and she is coming home to his castle for the first time.",
+      "pageviews_yearly": 56859,
+      "date": "1911-00-00"
+    },
+    {
+      "qid": "Q1220451",
+      "title": "Four Pieces for Orchestra",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp12",
+      "date": "1912-00-00"
+    },
+    {
+      "qid": "Q579499",
+      "title": "Sonatina (Bartók)",
+      "imslp_id": "Sonatina,_Sz.55_(Bartók,_Béla)",
+      "pdf_filename": "Bartok__1915__sz55_Sonatina_on_Themes_from_Transylvania__alt_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp127",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sonatina_(Bart%C3%B3k)",
+      "wikipedia_extract": "Sonatina, Sz. 55, BB. 69 is a piece for solo piano written in 1915 by Hungarian composer Béla Bartók. Initially entitled Sonatina on Romanian folk tunes, it is based on folk tunes Bartók collected in his neighbour country Romania, which, even though he proclaimed Hungarian folk music was clearly superior, was a direct source of inspiration all along his active years.",
+      "pageviews_yearly": 3160,
+      "date": "1915-00-00"
+    },
+    {
+      "qid": "Q7635557",
+      "title": "Suite, Op. 14",
+      "imslp_id": "Suite_for_Piano,_Op.14_(Bartók,_Béla)",
+      "pdf_filename": "Bartok_-_op.14_-_Suite.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Suite%2C_Op._14_(Bart%C3%B3k)",
+      "wikipedia_extract": "The Suite, Op. 14, Sz. 62, BB 70 is a piece for solo piano written by Béla Bartók. It was written in February 1916, published in 1918, and debuted by the composer on April 21, 1919, in Budapest. The Suite is one of Bartók's most significant works for piano, only comparable with his 1926 Piano Sonata. Though much of Bartók's work makes frequent use of Eastern European folk music, this suite is one of the few pieces without melodies of folk origin. \nHowever, Romanian, Arabic, and North African rhythmic influences can still be found in some movements. Originally intending the suite to be a five-movement work, Bartók later decided against the idea and discarded the second movement, the Andante, which was published only posthumously in the October 1955 issue of Új Zenei Szemle.",
+      "pageviews_yearly": 4177,
+      "date": "1916-00-00"
+    },
+    {
+      "qid": "Q714785",
+      "title": "String Quartet No. 2",
+      "imslp_id": "String_Quartet_No.2,_Sz.67_(Bartók,_Béla)",
+      "pdf_filename": "PMLP12579-Bartok-Sz67-Str-Quartet-No2-score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp40",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._2_(Bart%C3%B3k)",
+      "wikipedia_extract": "The String Quartet No. 2 in A minor by Béla Bartók was written between 1915 and October 1917 in Rákoskeresztúr in Hungary. It is one of six string quartets by Bartok.",
+      "pageviews_yearly": 4567,
+      "date": "1917-00-00"
+    },
+    {
+      "qid": "Q1321869",
+      "title": "Fifteen Hungarian Peasant Songs",
+      "imslp_id": "15_Magyar_parasztdal,_Sz.71_(Bartók,_Béla)",
+      "pdf_filename": "Bartok_-_Sz.71_-_15_Hungarian_Peasant_Songs.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp133",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fifteen_Hungarian_Peasant_Songs",
+      "wikipedia_extract": "Fifteen Hungarian Peasant Songs, Sz. 71, BB 79 is a collection of short folk melodies arranged for piano by the Hungarian composer Béla Bartók. It was composed between 1914 and 1918. In 1933, Bartók adapted and orchestrated parts of the piece as Hungarian Peasant Songs, Sz. 100, BB 107, commonly known by its Hungarian name, Magyar parasztdalok.",
+      "pageviews_yearly": 2720,
+      "date": "1918-00-00"
+    },
+    {
+      "qid": "Q1096673",
+      "title": "Improvisations on Hungarian Peasant Songs",
+      "imslp_id": "Improvisations_on_Hungarian_Peasant_Songs,_Op.20_(Bartók,_Béla)",
+      "pdf_filename": "Bartok_-_op.20_-_Improvisations-on-Hungarian-Peasant-Songs.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp135",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Eight_Improvisations_on_Hungarian_Peasant_Songs",
+      "wikipedia_extract": "Eight Improvisations on Hungarian Peasant Songs, Op. 20, Sz. 74, BB 83, also known as Improvisations on Hungarian Peasant Songs or simply as Improvisations, is a composition for solo piano by Hungarian composer Béla Bartók. It was finished in 1920.",
+      "pageviews_yearly": 2725,
+      "date": "1920-00-00"
+    },
+    {
+      "qid": "Q715033",
+      "title": "Dance Suite",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp16",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dance_Suite_(Bart%C3%B3k)",
+      "wikipedia_extract": "Dance Suite, Sz. 77, BB 86a, is a well-known 1923 orchestral work by the Hungarian composer Béla Bartók. The composer produced a reduction for piano in 1925, though this is less commonly performed.",
+      "pageviews_yearly": 5855,
+      "date": "1923-00-00"
+    },
+    {
+      "qid": "Q162855",
+      "title": "Piano Concerto No. 1",
+      "imslp_id": "Piano_Concerto_No.1,_Sz.83_(Bartók,_Béla)",
+      "pdf_filename": "Bartok__1926__Piano_Concerto_-1__two_piano_reduction_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp27",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._1_(Bart%C3%B3k)",
+      "wikipedia_extract": "The Piano Concerto No. 1, Sz. 83, BB 91 of Béla Bartók was composed in 1926. Average playing time is between 23 and 24 minutes.",
+      "pageviews_yearly": 5535,
+      "date": "1926-00-00"
+    },
+    {
+      "qid": "Q716057",
+      "title": "Piano Sonata",
+      "imslp_id": "Piano_Sonata,_Sz.80_(Bartók,_Béla)",
+      "pdf_filename": "Bartok_-_Piano_Sonata.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp68",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_(Bart%C3%B3k)",
+      "wikipedia_extract": "The Piano Sonata, BB 88, Sz. 80, is a piano sonata by Hungarian composer Béla Bartók, composed in June 1926. 1926 is known to musicologists as Bartók's \"piano year\", when he underwent a creative shift in part from Beethovenian intensity to a more Bachian craftsmanship.",
+      "pageviews_yearly": 5445,
+      "date": "1926-00-00"
+    },
+    {
+      "qid": "Q791001",
+      "title": "String Quartet No. 3",
+      "imslp_id": "String_Quartet_No.3,_Sz.85_(Bartók,_Béla)",
+      "pdf_filename": "PMLP12561-Bartók_-_String_Quartet_No._3__score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp41",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._3_(Bart%C3%B3k)",
+      "wikipedia_extract": "String Quartet No. 3 by Béla Bartók was written in September 1927 in Budapest. It is one of six string quartets by Bartók.",
+      "pageviews_yearly": 5224,
+      "date": "1927-00-00"
+    },
+    {
+      "qid": "Q790991",
+      "title": "Rhapsody No. 1",
+      "imslp_id": "Violin_Rhapsody_No.1,_Sz.87_(Bartók,_Béla)",
+      "pdf_filename": "PMLP87646-Bartok-Rapsodie-1_piano_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp17",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rhapsody_No._1_(Bart%C3%B3k)",
+      "wikipedia_extract": "Rhapsody No. 1, Sz. 86, 87, and 88, BB 94 is the first of two virtuoso works for violin and piano, written by Béla Bartók in 1928 and subsequently arranged in 1929 for violin and orchestra, as well as for cello and piano. It is dedicated to Hungarian virtuoso violinist Joseph Szigeti, a close friend of Bartók, who gave the first performance of the orchestra version in Königsberg on 1 November 1929, with Hermann Scherchen conducting the orchestra.",
+      "pageviews_yearly": 5156,
+      "date": "1928-00-00"
+    },
+    {
+      "qid": "Q790996",
+      "title": "Rhapsody No. 2",
+      "imslp_id": "Violin_Rhapsody_No.2,_Sz.90_(Bartók,_Béla)",
+      "pdf_filename": "PMLP87646-Bartok-Rapsodie-2_violon_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp33",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rhapsody_No._2_(Bart%C3%B3k)",
+      "wikipedia_extract": "Rhapsody No. 2, Sz. 89 and 90, BB 96, is the second of two virtuoso works for violin and piano, subsequently arranged with orchestra accompaniment, written by Béla Bartók. It was composed in 1928 and orchestrated in 1929. The orchestral version was revised in 1935, and the version with piano in 1945. It is dedicated to Hungarian violinist Zoltán Székely, who later became the first violinist of the Hungarian String Quartet in 1937, two years after the founding of the ensemble.",
+      "pageviews_yearly": 2377,
+      "date": "1928-00-00"
+    },
+    {
+      "qid": "Q612109",
+      "title": "Hungarian Pictures",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp20",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hungarian_Pictures",
+      "wikipedia_extract": "Hungarian Pictures, sometimes also referred to as Hungarian Sketches, Sz. 97, BB 103 is a suite for orchestra by Hungarian composer Béla Bartók finished in 1931. The suite consists of orchestrations of earlier short pieces for piano composed between 1908 and 1911.",
+      "pageviews_yearly": 3733,
+      "date": "1931-00-00"
+    },
+    {
+      "qid": "Q210195",
+      "title": "Piano Concerto No. 2",
+      "imslp_id": "Piano_Concerto_No.2,_Sz.95_(Bartók,_Béla)",
+      "pdf_filename": "Bartok_Piano_Concerto_No._2.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp28",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._2_(Bart%C3%B3k)",
+      "wikipedia_extract": "The Piano Concerto No. 2 in G major, Sz. 95, BB 101 of Béla Bartók is a musical composition for piano and orchestra. The work, which was composed between 1930 and 1931, is notorious for being one of the most difficult pieces in the repertoire. Playing time is 26–29 minutes.",
+      "pageviews_yearly": 11147,
+      "date": "1931-00-00"
+    },
+    {
+      "qid": "Q791020",
+      "title": "String Quartet No. 5",
+      "imslp_id": "String_Quartet_No.5,_Sz.102_(Bartók,_Béla)",
+      "pdf_filename": "PMLP12554-Bartók_-_String_Quartet_No._5__score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp43",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._5_(Bart%C3%B3k)",
+      "wikipedia_extract": "The String Quartet No. 5, Sz. 102, BB 110 by Béla Bartók was written between 6 August and 6 September 1934. It is one of six string quartets by Bartok.",
+      "pageviews_yearly": 5559,
+      "date": "1934-00-00"
+    },
+    {
+      "qid": "Q790999",
+      "title": "Violin Concerto No. 2",
+      "imslp_id": "Violin_Concerto_No.2,_Sz.112_(Bartók,_Béla)",
+      "pdf_filename": "Bartok_ViolinConcerto2_pianoreduction.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp34",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Violin_Concerto_No._2_(Bart%C3%B3k)",
+      "wikipedia_extract": "Béla Bartók's Violin Concerto No. 2, Sz. 112, BB 117 was written in 1937–38. During the composer's life, it was known simply as his Violin Concerto. His other violin concerto, Violin Concerto No. 1, Sz. 36, BB 48a, was written in the years 1907–1908, but only published in 1956, after the composer's death, as \"Violin Concerto No. 1, Op. posth.\"",
+      "pageviews_yearly": 8831,
+      "date": "1937-00-00"
+    },
+    {
+      "qid": "Q631285",
+      "title": "Divertimento for String Orchestra",
+      "imslp_id": "Divertimento,_Sz.113_(Bartók,_Béla)",
+      "pdf_filename": "Bartok_Divertimento.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Divertimento_for_String_Orchestra_(Bart%C3%B3k)",
+      "wikipedia_extract": "Divertimento for String Orchestra Sz.113 BB.118 is a three-movement work composed by Béla Bartók in 1939, scored for full orchestral strings. Paul Sacher, a Swiss conductor, patron, impresario, and the founder of the chamber orchestra Basler Kammerorchester, commissioned Bartók to compose the Divertimento, which is now known to be the pair's last collaborative work.",
+      "pageviews_yearly": 6695,
+      "date": "1939-00-00"
+    },
+    {
+      "qid": "Q427401",
+      "title": "Sonata for Solo Violin",
+      "imslp_id": "Sonata_for_Violin_Solo,_Sz.117_(Bartók,_Béla)",
+      "pdf_filename": "PMLP980920-Complete_Score_-_Sonata_for_Violin_Solo__Sz.117__Barto-k_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp65",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sonata_for_Solo_Violin_(Bart%C3%B3k)",
+      "wikipedia_extract": "The Sonata for Solo Violin Sz. 117, BB 124, is a sonata for unaccompanied violin composed by Béla Bartók. It was premiered by Yehudi Menuhin, to whom it was dedicated, in New York on 26 November 1944.",
+      "pageviews_yearly": 6612,
+      "date": "1944-00-00"
+    },
+    {
+      "qid": "Q223329",
+      "title": "Piano Concerto No. 3",
+      "imslp_id": "Piano_Concerto_No.3,_Sz.119_(Bartók,_Béla)",
+      "pdf_filename": "PMLP203160-Bartok.-.Piano-Concerto-No.3.-._Arr.-for-two-pianos_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp29",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._3_(Bart%C3%B3k)",
+      "wikipedia_extract": "The Piano Concerto No. 3 in E major, Sz. 119, BB 127 of Béla Bartók is a musical composition for piano and orchestra. The work was composed in 1945 during the final months of his life, as a surprise birthday present for his second wife Ditta Pásztory-Bartók.",
+      "pageviews_yearly": 20354,
+      "date": "1945-00-00"
+    },
+    {
+      "qid": "Q790989",
+      "title": "Viola Concerto",
+      "imslp_id": "Viola_Concerto_(Bartók,_Béla)",
+      "pdf_filename": "PMLP672529-Bartok_-_Viola_Concerto.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp36",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Viola_Concerto_(Bart%C3%B3k)",
+      "wikipedia_extract": "The Viola Concerto, Sz. 120, BB 128 was one of the last pieces Béla Bartók wrote. He began composing it while living in Saranac Lake, New York, in July 1945. It was commissioned by William Primrose, a respected violist who knew that Bartók could provide a challenging piece for him to perform. He said that Bartók should not \"feel in any way proscribed by the apparent technical limitations of the instrument\". Bartók was suffering the terminal stages of leukemia when he began writing the piece and left only sketches at the time of his death.",
+      "pageviews_yearly": 10480,
+      "date": "1945-00-00"
+    },
+    {
+      "qid": "Q790982",
+      "title": "44 Duos for Two Violins",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/44_Duos_for_Two_Violins",
+      "wikipedia_extract": "44 Duos for Two Violins, Sz. 98, BB 104 is a series of duets composed in 1931 by Hungarian composer Béla Bartók.",
+      "pageviews_yearly": 5324
+    },
+    {
+      "qid": "Q107328723",
+      "title": "Buciumeana"
+    },
+    {
+      "qid": "Q830876",
+      "title": "Cantata Profana",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp154",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cantata_profana",
+      "wikipedia_extract": "Cantata profana is a work for tenor, baritone, double mixed chorus and orchestra by the Hungarian composer Béla Bartók. Completed on 8 September 1930, it was premiered in London on 25 May 1934 by the BBC Symphony Orchestra and Wireless Chorus, conducted by Aylmer Buesst; tenor Trefor Jones and baritone Frank Phillips were the featured soloists.",
+      "pageviews_yearly": 543
+    },
+    {
+      "qid": "Q118859394",
+      "title": "Concerto for Orchestra",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp24",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Concerto_for_Orchestra_(film)",
+      "wikipedia_extract": "Concerto for Orchestra is a 1965 Australian short documentary film featuring conductor Dean Dixon and the Sydney Symphony Orchestra. It shows a behind the scenes look at some members of the orchestra and rehearsal at the Sydney Town Hall. It is named for Béla Bartók's Concerto for Orchestra which features in the film. It was one of a Australia Today series of films commissioned by the Australian Broadcasting Commission and was broadcast on the ABC TV on 12 July 1965. The film won the 1966 Australian Film Institute award for Best Documentary.",
+      "pageviews_yearly": 1211
+    },
+    {
+      "qid": "Q791000",
+      "title": "Concerto for Orchestra",
+      "imslp_id": "Concerto_for_Orchestra,_Sz.116_(Bartók,_Béla)",
+      "pdf_filename": "PMLP04854-Bartók_-_Concerto_for_Orchestra__orch._score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp24",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Concerto_for_Orchestra_(Bart%C3%B3k)",
+      "wikipedia_extract": "The Concerto for Orchestra, Sz. 116, BB 123, is a five-movement orchestral work composed by Béla Bartók in 1943. It is one of his best-known, most popular, and most accessible works.",
+      "pageviews_yearly": 34357
+    },
+    {
+      "qid": "Q714793",
+      "title": "Contrasts",
+      "imslp_id": "Contrasts,_Sz.111_(Bartók,_Béla)",
+      "pdf_filename": "Bartok_-_Contrasts_for_piano__violin_clarinet.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp50",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Contrasts_(Bart%C3%B3k)",
+      "wikipedia_extract": "Contrasts is a 1938 composition scored for clarinet–violin–piano trio by Béla Bartók (1881–1945). It is based on Hungarian and Romanian dance melodies and has three movements with a combined duration of 17–20 minutes. Bartók wrote the work in response to a letter from violinist Joseph Szigeti, although it was officially commissioned by clarinetist Benny Goodman.",
+      "pageviews_yearly": 7320
+    },
+    {
+      "qid": "Q57933681",
+      "title": "De Wonderbare Mandarijn"
+    },
+    {
+      "qid": "Q3713525",
+      "title": "Don Giovanni",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Don_Giovanni_(1970_film)",
+      "wikipedia_extract": "Don Giovanni is a 1970 Italian comedy-drama film directed by Carmelo Bene. The narrative follows how Don Giovanni tries to seduce a young woman who is manically searching for Christian icons. The film is loosely based on Jules Barbey d'Aurevilly's short story \"The Greatest Love of Don Juan\", from the collection Les Diaboliques.",
+      "pageviews_yearly": 1866
+    },
+    {
+      "qid": "Q91906296",
+      "title": "Eight Hungarian Folksongs",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp175",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Eight_Hungarian_Folksongs",
+      "wikipedia_extract": "Eight Hungarian Folksongs, Sz. 64, BB 47 is a song cycle for high voice and piano by Hungarian composer Béla Bartók. It was composed between 1907 and 1917.",
+      "pageviews_yearly": 2194
+    },
+    {
+      "qid": "Q714970",
+      "title": "For Children"
+    },
+    {
+      "qid": "Q790980",
+      "title": "Four Dirges",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp121",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Four_Dirges",
+      "wikipedia_extract": "Four Dirges, Op. 9a, Sz. 45, BB 58 is a short collection of dirges by Hungarian composer Béla Bartók.",
+      "pageviews_yearly": 110
+    },
+    {
+      "qid": "Q108907625",
+      "title": "Four Orchestral Pieces, op. 12, Sz. 51",
+      "imslp_id": "4_Pieces,_Op.12_(Bartók,_Béla)",
+      "pdf_filename": "PMLP46172-4pieces.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q791006",
+      "title": "Four Piano Pieces",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp110"
+    },
+    {
+      "qid": "Q5745244",
+      "title": "Herzog Blaubarts Burg",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp1",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Herzog_Blaubarts_Burg",
+      "wikipedia_extract": "Herzog Blaubarts Burg (1963) is a film of the opera Bluebeard's Castle by the Hungarian composer Béla Bartók, written in 1911 to a symbolist libretto by the poet and later film theorist Béla Balázs. The film was made for West German television, Süddeutscher Rundfunk, and was produced by Norman Foster, who also performs the lead role. The designer was Hein Heckroth who brought in his old friend Michael Powell, for whom he had designed a number of films, to direct it. The film, which was shot at Dürer Film Ateliers in Salzburg, Austria, was out of circulation for decades because of legal problems.",
+      "pageviews_yearly": 6803
+    },
+    {
+      "qid": "Q16844512",
+      "title": "Homage to Paderewski",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Homage_to_Paderewski",
+      "wikipedia_extract": "\n\nHomage to Paderewski is an album of piano pieces by 17 composers, published in 1942 in honour of the Polish pianist, composer and statesman Ignacy Jan Paderewski.",
+      "pageviews_yearly": 2127
+    },
+    {
+      "qid": "Q17011544",
+      "title": "Hungarian folksongs for voice and piano",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hungarian_folksongs_for_voice_and_piano_(Bart%C3%B3k)",
+      "wikipedia_extract": "\nMagyar népdalok énekhangra és zongorára is a collection of Hungarian folk song arrangements by Béla Bartók. Bartók's Hungarian Folksongs are now much better known outside Hungary in arrangements for violin and piano, or—without voice—for piano alone. One of the most famous songs \"Elindultam szép hazámból\" came to be applied to Bartók himself as he assumed the role of an exile.",
+      "pageviews_yearly": 1918
+    },
+    {
+      "qid": "Q4338865",
+      "title": "Island of the Dead"
+    },
+    {
+      "qid": "Q1128177",
+      "title": "Lassú tánc"
+    },
+    {
+      "qid": "Q25458608",
+      "title": "Magyar népdalok BB43"
+    },
+    {
+      "qid": "Q107328730",
+      "title": "Maruntel"
+    },
+    {
+      "qid": "Q130753865",
+      "title": "Medea"
+    },
+    {
+      "qid": "Q661639",
+      "title": "Mikrokosmos",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Dance_in_34_Time.mid",
+        "midi/Variations.mid",
+        "midi/Modal_Bartok.mid",
+        "midi/Intermezzo.mid",
+        "midi/Duet_for_Pipes.mid",
+        "midi/Syncopation_1.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q3860986",
+      "title": "Monsieur René Magritte"
+    },
+    {
+      "qid": "Q1047743",
+      "title": "Music for Strings, Percussion and Celesta",
+      "imslp_id": "Music_for_Strings,_Percussion_and_Celesta,_Sz.106_(Bartók,_Béla)",
+      "pdf_filename": "Bartok_-_Music_for_Strings__Percussion_and_Celesta__orch._score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp22",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Music_for_Strings%2C_Percussion_and_Celesta",
+      "wikipedia_extract": "Music for Strings, Percussion and Celesta, Sz. 106, BB 114 is one of the best-known compositions by the Hungarian composer Béla Bartók. Commissioned by Paul Sacher to celebrate the tenth anniversary of the chamber orchestra Basler Kammerorchester, the score is dated 7 September 1936.",
+      "pageviews_yearly": 20602
+    },
+    {
+      "qid": "Q7033632",
+      "title": "Night music",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp187",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Night_music_(Bart%C3%B3k)",
+      "wikipedia_extract": "Night music is a musical style of the Hungarian composer Béla Bartók that he used mostly in slow movements of multi-movement ensemble or orchestra compositions in his mature period. It is characterized by \"eerie dissonances providing a backdrop to sounds of nature and lonely melodies\".",
+      "pageviews_yearly": 8306
+    },
+    {
+      "qid": "Q1108484",
+      "title": "Nine Little Pieces",
+      "imslp_id": "9_Little_Pieces_for_Piano,_Sz.82_(Bartók,_Béla)",
+      "pdf_filename": "Bartok_-_Nine-Little-Pieces.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp138",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nine_Little_Piano_Pieces",
+      "wikipedia_extract": "Nine Little Piano Pieces, Sz. 82, BB 90 is a collection of short pieces for piano by Hungarian composer Béla Bartók. It was completed in 1926.",
+      "pageviews_yearly": 1478
+    },
+    {
+      "qid": "Q7062183",
+      "title": "Not Reconciled",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Not_Reconciled",
+      "wikipedia_extract": "Not Reconciled is a 1965 West German drama film directed by Jean-Marie Straub. It has the subtitle Only Violence Helps Where Violence Reigns. The film is an adaptation of the 1959 novel Billiards at Half-past Nine by Heinrich Böll.",
+      "pageviews_yearly": 4363
+    },
+    {
+      "qid": "Q716195",
+      "title": "Out of Doors",
+      "imslp_id": "Out_of_Doors,_Sz.81_(Bartók,_Béla)",
+      "pdf_filename": "Bartok.-.Five-Pieces.-.Szabadban_Sz81.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp137",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Out_of_Doors_(Bart%C3%B3k)",
+      "wikipedia_extract": "Out of Doors is a set of five piano solo pieces, Sz. 81, BB 89, written by Béla Bartók in 1926. Out of Doors is among the very few instrumental compositions by Bartók with programmatic titles.",
+      "pageviews_yearly": 8202
+    },
+    {
+      "qid": "Q7128549",
+      "title": "Palo y hueso",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Palo_y_hueso",
+      "wikipedia_extract": "Palo y hueso is a 1968 Argentine film directed by Nicolás Sarquís and starring Héctor da Rosa and Miguel Ligero. The film was shot entirely in Buenos Aires, premiering there on August 7, 1968.",
+      "pageviews_yearly": 1555
+    },
+    {
+      "qid": "Q7178413",
+      "title": "Petite Suite",
+      "imslp_id": "Petite_suite,_Sz.105_(Bartók,_Béla)",
+      "pdf_filename": "Bartok_-_Petite-Suite.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp140",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Petite_Suite_(Bart%C3%B3k)",
+      "wikipedia_extract": "Petite Suite, Sz. 105, BB 113 is a reduction for piano of six of Bartók's 44 Duos for Two Violins, arranged by the composer in 1936.",
+      "pageviews_yearly": 1304
+    },
+    {
+      "qid": "Q136555446",
+      "title": "Piano Quintet in C major",
+      "imslp_id": "Piano_Quintet_in_C_major,_Sz.23_(Bartók,_Béla)",
+      "pdf_filename": "PMLP1284519-Bartok_Klavier-5.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp48"
+    },
+    {
+      "qid": "Q791007",
+      "title": "Rhapsody op. 1 by Béla Bartók",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rhapsody%2C_Op._1_(Bart%C3%B3k)",
+      "wikipedia_extract": "Rhapsody, Op. 1, Sz. 26, BB 36, is a composition for piano by Hungarian composer Béla Bartók. It was finished in 1904. A year later, he wrote a version for piano and orchestra. The catalogue number of this composition is Op. 1, Sz. 26. The initial full-length composition for piano eventually received a catalogue number BB 36a, whereas the second version, with piano and orchestra, received a catalogue number BB 36b.",
+      "pageviews_yearly": 2662
+    },
+    {
+      "qid": "Q7362535",
+      "title": "Romanian Christmas Carols",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Romainian_Christmas_Carols_Series_1.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q791013",
+      "title": "Romanian Folk Dances",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Santi_091_1.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q1288695",
+      "title": "Simon, the Magician",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Simon%2C_the_Magician",
+      "wikipedia_extract": "Simon, the Magician is a Hungarian-French film written & directed by Ildikó Enyedi. The film premiered at the 1999 Locarno Festival in competition where it won the Don Quixote Award - Special Mention.",
+      "pageviews_yearly": 3145
+    },
+    {
+      "qid": "Q7541667",
+      "title": "Slovakian Dance",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Slovakian_Dance",
+      "wikipedia_extract": "\nSlovakian Dance is a piece for solo piano by Hungarian composer Béla Bartók. It was presumably composed in 1923, but it was not published until 1999.",
+      "pageviews_yearly": 1488
+    },
+    {
+      "qid": "Q831870",
+      "title": "Sonata for Two Pianos and Percussion",
+      "imslp_id": "Sonata_for_2_Pianos_and_Percussion,_Sz.110_(Bartók,_Béla)",
+      "pdf_filename": "PMLP4692-Bartok_-_Concerto_for_2_Pianos_Percussion_Orchestra.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp49",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sonata_for_Two_Pianos_and_Percussion",
+      "wikipedia_extract": "The Sonata for Two Pianos and Percussion, Sz. 110, BB 115, is a musical piece written by Hungarian composer Béla Bartók in 1937. The sonata was premiered by Bartók and his second wife, Ditta Pásztory-Bartók, with the percussionists Fritz Schiesser and Philipp Rühlig at the International Society for Contemporary Music (ISCM) anniversary concert of 16 January 1938 in Basel, Switzerland, where it received enthusiastic reviews. Bartók and his wife also played the piano parts for the American premiere which took place in New York City's Town Hall in 1940 with the percussionists Saul Goodman and Henry Deneke. It has since become one of Bartók's most performed works.",
+      "pageviews_yearly": 6932
+    },
+    {
+      "qid": "Q791002",
+      "title": "String Quartet No. 4",
+      "imslp_id": "String_Quartet_No.4,_Sz.91_(Bartók,_Béla)",
+      "pdf_filename": "PMLP12559-Bartók_-_String_Quartet_No._4__score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp42",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._4_(Bart%C3%B3k)",
+      "wikipedia_extract": "The String Quartet No. 4 in C major by Béla Bartók was written from July to September 1928 in Budapest. It is one of six string quartets by Bartok.",
+      "pageviews_yearly": 9487
+    },
+    {
+      "qid": "Q791019",
+      "title": "String Quartet No. 6",
+      "imslp_id": "String_Quartet_No.6,_Sz.114_(Bartók,_Béla)",
+      "pdf_filename": "PMLP44769-Bartók_-_String_Quartet_No._6__score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp44",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._6_(Bart%C3%B3k)",
+      "wikipedia_extract": "The String Quartet No. 6 in D minor, Sz. 114, BB 119, was the final string quartet Hungarian composer Béla Bartók wrote before his death in 1945.",
+      "pageviews_yearly": 5964
+    },
+    {
+      "qid": "Q124683918",
+      "title": "String quartets by Béla Bartók",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp39"
+    },
+    {
+      "qid": "Q7635578",
+      "title": "Suite paysanne hongroise",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp133",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Suite_paysanne_hongroise",
+      "wikipedia_extract": "The Suite Paysanne Hongroise is an arrangement of music by Béla Bartók, by Paul Arma.",
+      "pageviews_yearly": 1498
+    },
+    {
+      "qid": "Q1676654",
+      "title": "Szőllősy index"
+    },
+    {
+      "qid": "Q790968",
+      "title": "Ten Easy Pieces",
+      "imslp_id": "10_Easy_Pieces,_Sz.39_(Bartók,_Béla)",
+      "pdf_filename": "Bartok_-_Ten_Easy_Pieces__1908_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp116",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ten_Easy_Pieces_(Bart%C3%B3k)",
+      "wikipedia_extract": "Ten Easy Pieces, Sz. 39, BB 51 is a collection of short pieces for piano by Hungarian composer Béla Bartók. It was composed in 1908.",
+      "pageviews_yearly": 3238
+    },
+    {
+      "qid": "Q15114210",
+      "title": "The Barbarian",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Barbarian_(song)",
+      "wikipedia_extract": "\"The Barbarian\" is the opening track on the eponymous debut album of British progressive rock band Emerson, Lake & Palmer, released in 1970.",
+      "pageviews_yearly": 6799
+    },
+    {
+      "qid": "Q464708",
+      "title": "The Miraculous Mandarin",
+      "imslp_id": "A_csodálatos_mandarin_(Bartók,_Béla)",
+      "pdf_filename": "PMLP301137-BBartok_The_Miraculous_Mandarin_p4h.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp3",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Miraculous_Mandarin",
+      "wikipedia_extract": "The Miraculous Mandarin Op. 19, Sz. 73, is a one act pantomime ballet composed by Béla Bartók between 1918 and 1924, and based on the 1916 story by Melchior Lengyel. Premiered on 27 November 1926 conducted by Eugen Szenkar at the Cologne Opera, Germany, it caused a scandal and was subsequently banned on moral grounds. Although more successful at its Prague premiere, it was generally performed during the rest of Bartók's life in the form of a concert suite, which preserves about two-thirds of the original pantomime's music.",
+      "pageviews_yearly": 29824
+    },
+    {
+      "qid": "Q3208723",
+      "title": "The Woman in Blue",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Woman_in_Blue",
+      "wikipedia_extract": "The Woman in Blue is a 1973 French comedy film directed by Michel Deville.",
+      "pageviews_yearly": 3093
+    },
+    {
+      "qid": "Q465752",
+      "title": "The Wooden Prince",
+      "imslp_id": "A_fából_faragott_királyfi,_Sz.60_(Bartók,_Béla)",
+      "pdf_filename": "PMLP236629-Bartok_-_The_Wooden_Prince.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp2",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Wooden_Prince",
+      "wikipedia_extract": "\nThe Wooden Prince, Op. 13, Sz. 60, is a one-act pantomime ballet composed by Béla Bartók in 1914–1916 to a scenario by Béla Balázs. It was first performed at the Budapest Opera on 12 May 1917 under the conductor Egisto Tango.",
+      "pageviews_yearly": 10339
+    },
+    {
+      "qid": "Q790973",
+      "title": "Three Burlesques",
+      "imslp_id": "Burlesques,_Sz.47_(Bartók,_Béla)",
+      "pdf_filename": "3_Burlesques_Op._8.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp122",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Three_Burlesques",
+      "wikipedia_extract": "Three Burlesques, Op. 8c, Sz. 47, BB 55 is a set of burlesques for piano by Hungarian composer Béla Bartók. It was composed between 1908 and 1911.",
+      "pageviews_yearly": 1785
+    },
+    {
+      "qid": "Q790976",
+      "title": "Three Hungarian Folktunes",
+      "imslp_id": "3_Magyar_népdal,_Sz.66_(Bartók,_Béla)",
+      "pdf_filename": "PMLP1476531-bartok_3_hungarian_folktunes.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp114",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Three_Hungarian_Folktunes",
+      "wikipedia_extract": "Three Hungarian Folksongs, Sz. 66, BB 80b is a collection of folksongs for piano by Hungarian composer Béla Bartók. It was composed between 1914 and 1918.",
+      "pageviews_yearly": 2011
+    },
+    {
+      "qid": "Q790975",
+      "title": "Three Rondos on Slovak Folk Tunes",
+      "imslp_id": "Rondos_on_Slovak_Folk_Tunes,_Sz.84_(Bartók,_Béla)",
+      "pdf_filename": "Bartok_-_Sz.84_-_Three-Rondos.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Three_Rondos_on_Slovak_Folk_Tunes",
+      "wikipedia_extract": "Three Rondos on Slovak Folk Tunes, Sz. 84, BB 92, also referred to as Three Rondos on Folk Tunes, is a collection of three small pieces for piano by Hungarian composer Béla Bartók.",
+      "pageviews_yearly": 1468
+    },
+    {
+      "qid": "Q14752515",
+      "title": "Tombeau de Claude Debussy",
+      "movements": [
+        {
+          "qid": "Q56408563"
+        }
+      ]
+    },
+    {
+      "qid": "Q790983",
+      "title": "Transylvanian Dances",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp19"
+    },
+    {
+      "qid": "Q16958200",
+      "title": "Triptych",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Triptych_(ballet)",
+      "wikipedia_extract": "\nTriptych (Strings Percussion Celesta) is a ballet made by Christopher d'Amboise to Bartók's Music for Strings, Percussion and Celesta, as part of New York City Ballet's Diamond Project. The premiere took place on Wednesday, 7 June 2000 at the New York State Theater, Lincoln Center.",
+      "pageviews_yearly": 977
+    },
+    {
+      "qid": "Q1057896",
+      "title": "Twenty Hungarian Folksongs",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp114",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Twenty_Hungarian_Folksongs",
+      "wikipedia_extract": "Twenty Hungarian Folksongs, Sz. 92, BB 98, is the last cycle of folksongs for voice and piano by Hungarian composer Béla Bartók.",
+      "pageviews_yearly": 2083
+    },
+    {
+      "qid": "Q790985",
+      "title": "Village Scenes",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp176",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Village_Scenes",
+      "wikipedia_extract": "Village Scenes, Sz. 78, BB 87a, also known as Falun, Dedinské scény, or its German title, Dorfszenen, is a collection of Slovak folk songs for female voice and piano by Hungarian composer Béla Bartók. It was completed in 1924.",
+      "pageviews_yearly": 2158
+    },
+    {
+      "qid": "Q714799",
+      "title": "Violin Concerto No. 1",
+      "imslp_id": "Violin_Concerto_No.1,_Sz.36_(Bartók,_Béla)",
+      "pdf_filename": "PMLP191564-31761034924613.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/bela-bartok-1881-pp30",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Violin_Concerto_No._1_(Bart%C3%B3k)",
+      "wikipedia_extract": "Béla Bartók's Violin Concerto No. 1, Sz. 36, BB 48a was written in the years 1907–1908, but only published in 1956, 11 years after the composer's death, as \"Violin Concerto No. 1, Op. posth.\" It was premiered on 30 May 1958 in Basel, Switzerland.",
+      "pageviews_yearly": 6052
+    }
+  ]
+}

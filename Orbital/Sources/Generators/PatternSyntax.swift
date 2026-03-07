@@ -131,10 +131,14 @@ struct PatternSyntax: Codable {
     var trackInfos: [TrackInfo] = []
     var spatialPresets: [SpatialPreset] = []
 
+    // When fewer track entries are defined than MIDI tracks, the last entry is reused for the
+    // remaining tracks. In that case, reduce voices so a single-entry spec applied to many
+    // MIDI tracks doesn't overwhelm the audio engine.
+    let isFallbackMode = !midi.tracks.isEmpty && allSeqs.count > midi.tracks.count
     for (i, entry) in allSeqs.enumerated() {
       let trackEntry = i < midi.tracks.count ? midi.tracks[i] : midi.tracks[0]
       let presetSpec = resolvePresetSpec(filename: trackEntry.presetFilename, gmProgram: entry.sequence.program, characteristicDuration: entry.sequence.medianSustain(), resourceBaseURL: resourceBaseURL)
-      let voices = trackEntry.numVoices ?? 12
+      let voices = isFallbackMode ? 2 : (trackEntry.numVoices ?? 12)
       let sp = try await SpatialPreset(presetSpec: presetSpec, engine: engine, numVoices: voices, resourceBaseURL: resourceBaseURL)
 
       let modulatorDict = Self.compileModulators(trackEntry.modulators)

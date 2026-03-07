@@ -1,0 +1,128 @@
+{
+  "composer_name": "Sir Malcolm Arnold",
+  "name_last_first": "Arnold, Sir Malcolm",
+  "slug": "arnold",
+  "wiki_page": "https://en.wikipedia.org/wiki/Sir_Malcolm_Arnold",
+  "apple_music_playlist": "",
+  "era": "Modern",
+  "dates": "1921 – 2006",
+  "nationality": "ENG",
+  "notable": false,
+  "works": [
+    {
+      "title": "Four Scottish Dances op. 59 Sir Malcolm Arnold",
+      "musicxml": "musicxml/Four_Scottish_Dances_op_59_Sir_Malcolm_Arnold.mxl",
+      "midi": "midi/Four_Scottish_Dances_op_59_Sir_Malcolm_Arnold.mid",
+      "catalog_numbers": {
+        "Op": "59"
+      },
+      "time_signature": "4/4",
+      "instruments": [
+        "Piccolo",
+        "Flute",
+        "2 Oboes",
+        "2 Clarinets in B♭",
+        "2 Bassoons",
+        "Horns in F 1. 2.",
+        "Horns in F 3. 4.",
+        "2 Trumpets in B♭",
+        "Trombones 1. 2.",
+        "Trombone 3.",
+        "Timpani",
+        "Percussion",
+        "Harp",
+        "Violins I",
+        "Violins II",
+        "Violas",
+        "Violoncellos"
+      ],
+      "tempo_markings": [
+        "Pesante ( = 104)",
+        "Poco più mosso",
+        "Tempo primo (Pesante  = 104)",
+        "Vivace ( = 160)",
+        "Meno mosso ( = 112)",
+        "Tempo prino (vivace)  = 160",
+        "Allegretto  = 96",
+        "Con brio  = 144",
+        "Presto"
+      ],
+      "movements": [
+        {
+          "start_measure": 21,
+          "tempo_marking": "Poco più mosso"
+        },
+        {
+          "start_measure": 52,
+          "tempo_marking": "Vivace ( = 160)"
+        },
+        {
+          "start_measure": 109,
+          "tempo_marking": "Tempo prino (vivace)  = 160"
+        },
+        {
+          "start_measure": 262,
+          "tempo_marking": "Presto"
+        }
+      ],
+      "is_multi_movement": true,
+      "pdmx": {
+        "rating": 4.61,
+        "n_favorites": 23,
+        "n_views": 2177,
+        "duration_seconds": 404.5293503134122,
+        "n_notes": 16137,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "scottish-jig-dance-piccolo-flute-oboe-clarinet-bassoon-frenchhorn-trumpet-trombone-timpani-snaredrum-cymbals-woodblock-harp-violins-violas-violoncellos-cellos-contrabasses-doublebasses-fullorchestra",
+        "musescore_url": "https://musescore.com/neal_etude/scores/5662019",
+        "musescore_duration": "06:59"
+      },
+      "key": "D major",
+      "key_changes": [
+        "D major",
+        "C major",
+        "E♭ major",
+        "E major",
+        "F major",
+        "F♯ major",
+        "G major",
+        "A major",
+        "D♭ major"
+      ],
+      "instruments_gm": [
+        "Piccolo",
+        "Flute",
+        "Oboe",
+        "Clarinet",
+        "Bassoon",
+        "French Horn",
+        "Trumpet",
+        "Trombone",
+        "Timpani",
+        "Percussion",
+        "Orchestral Harp",
+        "String Ensemble 1"
+      ],
+      "tempo_bpm": 104,
+      "n_measures": 270,
+      "n_parts": 18,
+      "n_notes": 15929,
+      "notes_per_second": 39.4,
+      "apple_music_search_query": "Arnold Op 59 D major",
+      "parent_work_title": "Four Scottish Dances",
+      "wikidata_id": "Q8565099",
+      "wikidata_title": "Four Scottish Dances",
+      "musicbrainz_id": "a9addf8c-34df-43e1-9a73-bec0f08088ae",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Arnold%20Op%2059",
+      "display_title": "Four Scottish Dances"
+    }
+  ],
+  "birth_year": 1921,
+  "death_year": 2006,
+  "wikipedia_extract": "English composer known for tuneful, colorful orchestral works including nine symphonies, numerous concertos, and the film score for The Bridge on the River Kwai (Academy Award). Also composed ballets, chamber music, and brass band works.",
+  "wikidata_id": "Q313554"
+}

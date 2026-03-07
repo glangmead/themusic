@@ -1,0 +1,679 @@
+{
+  "composer_slug": "hindemith",
+  "composer_qid": "Q57244",
+  "work_count": 82,
+  "midi_file_count": 2,
+  "works": [
+    {
+      "qid": "Q3413845",
+      "title": "String Quartet No. 4",
+      "imslp_id": "String_Quartet_No.4,_Op.22_(Hindemith,_Paul)",
+      "pdf_filename": "PMLP501751-Hindemith_-_String_Quartet_No._3.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp88",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._4_(Hindemith)",
+      "wikipedia_extract": "The String Quartet No. 4, Op. 22 by Paul Hindemith was written in 1921 and published in 1923. A performance of the work takes about 26 minutes.",
+      "pageviews_yearly": 1220,
+      "date": "1921-00-00"
+    },
+    {
+      "qid": "Q736496",
+      "title": "Overture of 'The Flying Dutchman' as played at sight by a bad spa orchestra at the well at 7 in the morning",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ouvert%C3%BCre_zum_%22Fliegenden_Holl%C3%A4nder%22%2C_wie_sie_eine_schlechte_Kurkapelle_morgens_um_7_am_Brunnen_vom_Blatt_spielt",
+      "wikipedia_extract": "Ouvertüre zum „Fliegenden Holländer“, wie sie eine schlechte Kurkapelle morgens um 7 am Brunnen vom Blatt spielt is a musical parody for string quartet by Paul Hindemith, based on the overture to The Flying Dutchman by Richard Wagner. The piece dates to c. 1925 and in performance lasts approximately eight minutes.",
+      "pageviews_yearly": 2604,
+      "date": "1925-00-00"
+    },
+    {
+      "qid": "Q733434",
+      "title": "Konzertmusik, Op. 41",
+      "date": "1926-00-00"
+    },
+    {
+      "qid": "Q74201978",
+      "title": "Kammermusik No. 5, op. 36 no. 4",
+      "date": "1927-00-00"
+    },
+    {
+      "qid": "Q822985",
+      "title": "Neues vom Tage",
+      "imslp_id": "Neues_vom_Tage_(Hindemith,_Paul)",
+      "pdf_filename": "PMLP544192-Hindemith_-_Neues_vom_Tage__Vocal_Score__Original_Version_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Neues_vom_Tage",
+      "wikipedia_extract": "Neues vom Tage is a comic opera in three parts by Paul Hindemith, with a German libretto by Marcellus Schiffer.",
+      "pageviews_yearly": 2641,
+      "date": "1928-00-00"
+    },
+    {
+      "qid": "Q3198808",
+      "title": "Konzertmusik for Brass and String Orchestra",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Konzertmusik_f%C3%BCr_Streichorchester_und_Blechbl%C3%A4ser",
+      "wikipedia_extract": "\nKonzertmusik für Streichorchester und Blechbläser, Op. 50, is a work by Paul Hindemith, composed in 1930. It was one of a large group of pieces commissioned for the 50th anniversary of the Boston Symphony Orchestra by its music director, Serge Koussevitzky. Koussevitzky conducted the premiere of Hindemith's work with the Boston Symphony Orchestra on 3 April 1931.",
+      "pageviews_yearly": 1877,
+      "date": "1930-00-00"
+    },
+    {
+      "qid": "Q3299003",
+      "title": "Symphony: Mathis der Maler",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp39",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony%3A_Mathis_der_Maler",
+      "wikipedia_extract": "Symphony: Mathis der Maler is among the most famous orchestral works of German composer Paul Hindemith. Music from the symphony was incorporated into, or reworked for, Hindemith's opera Mathis der Maler, which concerns the painter Matthias Grünewald.",
+      "pageviews_yearly": 13026,
+      "date": "1934-00-00"
+    },
+    {
+      "qid": "Q55629966",
+      "title": "Piano Sonata No. 2",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp162",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_No._2_(Hindemith)",
+      "wikipedia_extract": "The Piano Sonata No. 2 in G major by Paul Hindemith was composed in 1936. A typical performance lasts 13 minutes. The shortest of his three piano sonatas, Hindemith thought of this sonata as a sonatina, and its writing is considered to be accessible even to amateurs.",
+      "pageviews_yearly": 1257,
+      "date": "1936-00-00"
+    },
+    {
+      "qid": "Q106043613",
+      "title": "Singet leise",
+      "date": "1936-00-00"
+    },
+    {
+      "qid": "Q3413717",
+      "title": "Quartet for clarinet, violin, cello and piano",
+      "imslp_id": "Clarinet_Quartet_(Hindemith,_Paul)",
+      "pdf_filename": "PMLP531987-Hindemithclarinetquartetpianoscoremusic.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1938-00-00"
+    },
+    {
+      "qid": "Q1420025",
+      "title": "Ludus Tonalis",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp180",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ludus_Tonalis",
+      "wikipedia_extract": "Ludus Tonalis, subtitled Kontrapunktische, tonale, und Klaviertechnische Übungen, is a 1942 piano work by Paul Hindemith. It was composed during his stay in the United States and was his last piano piece. The suite of 25 pieces demonstrates Hindemith's ideas about tonality and his mastery of counterpoint.",
+      "pageviews_yearly": 7800,
+      "date": "1942-00-00"
+    },
+    {
+      "qid": "Q3068189",
+      "title": "Symphonic Metamorphosis on Themes by Carl Maria von Weber",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp58",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphonic_Metamorphosis_of_Themes_by_Carl_Maria_von_Weber",
+      "wikipedia_extract": "\n \nSymphonic Metamorphosis of Themes by Carl Maria von Weber is an orchestral work written by German composer Paul Hindemith in the United States in 1943.",
+      "pageviews_yearly": 11530,
+      "date": "1943-00-00"
+    },
+    {
+      "qid": "Q21998538",
+      "title": "Hérodiade",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp15",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/H%C3%A9rodiade_(ballet)",
+      "wikipedia_extract": "Hérodiade de Stéphane Mallarmé: Recitation orchestrale is a composition by Paul Hindemith written in June 1944 on commission from Martha Graham, supported by funds from the Elizabeth Sprague Coolidge Foundation. The ballet premiered under the title of Herodiade in the Elizabeth Sprague Coolidge Auditorium at the Library of Congress in Washington DC. The premiere took place on 30 October 1944, sharing the program with Aaron Copland's Appalachian Spring and Darius Milhaud's Jeux du printemps, with Martha Graham and May O'Donnell in the leading roles. The choreography was by Martha Graham, stage design was by the Japanese American sculptor Isamu Noguchi, and costumes by Edythe Gilfond.",
+      "pageviews_yearly": 2138,
+      "date": "1944-00-00"
+    },
+    {
+      "qid": "Q7748181",
+      "title": "The Long Christmas Dinner",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Long_Christmas_Dinner_(opera)",
+      "wikipedia_extract": "The Long Christmas Dinner is an opera in one act by Paul Hindemith, with an English libretto by Thornton Wilder based on his 1931 play of the same name.",
+      "pageviews_yearly": 2880,
+      "date": "1961-00-00"
+    },
+    {
+      "qid": "Q136852624",
+      "title": "3 Pieces for Cello and Piano, op. 8"
+    },
+    {
+      "qid": "Q106039726",
+      "title": "Abendständchen"
+    },
+    {
+      "qid": "Q12300494",
+      "title": "Acht Stücke für Flöte allein",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp158"
+    },
+    {
+      "qid": "Q119016118",
+      "title": "Bassoon Sonata",
+      "imslp_id": "Bassoon_Sonata_(Hindemith,_Paul)",
+      "pdf_filename": "PMLP501603-Bassoon_Sonata_-_Bassoon_part.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp124"
+    },
+    {
+      "qid": "Q3479073",
+      "title": "Blasseptett",
+      "imslp_id": "Septet_(Hindemith,_Paul)",
+      "pdf_filename": "PMLP511606-Hindemith_-_Septet__score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q618009",
+      "title": "Cardillac",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp5",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cardillac",
+      "wikipedia_extract": "Cardillac, Op. 39, is an opera by Paul Hindemith in three acts and four scenes. Ferdinand Lion wrote the libretto based on characters from the short story Das Fräulein von Scuderi by E. T. A. Hoffmann.",
+      "pageviews_yearly": 8921
+    },
+    {
+      "qid": "Q5126982",
+      "title": "Clarinet Concerto",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp81",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Clarinet_Concerto_(Hindemith)",
+      "wikipedia_extract": "The Clarinet Concerto by Paul Hindemith was premiered on 11 December 1950 by Benny Goodman, for whom it was composed in 1947, with the Philadelphia Orchestra, conducted by Eugene Ormandy. The composer commented that \"I tried to give Benny a pleasant and very 'clarinetistic' piece, a piece he would enjoy playing and that would convey his mellow and meaningful virtuosity to the listener.\" The concerto has four movements and is composed in a \"quasi-neo-classical manner\". The movements are a sonata-allegro, a scherzo, a variation, and a rondo.",
+      "pageviews_yearly": 1667
+    },
+    {
+      "qid": "Q119700582",
+      "title": "Clarinet Sonata",
+      "imslp_id": "Clarinet_Sonata_(Hindemith,_Paul)",
+      "pdf_filename": "PMLP500081-Hin_Cl_Son_cl_pt254.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp126"
+    },
+    {
+      "qid": "Q20077965",
+      "title": "Concerto for Cello and Orchestra"
+    },
+    {
+      "qid": "Q1169721",
+      "title": "Das Marienleben",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp266",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Das_Marienleben",
+      "wikipedia_extract": "Das Marienleben is a song cycle by German composer Paul Hindemith. The cycle, written for piano and soprano, sets to music a collection of 15 poems by Rainer Maria Rilke that tells the story of the life of Mary. The cycle was featured in the 1923 Bauhaus exhibition in Weimar. Thirteen years after its 1923 premiere in Frankfurt, Hindemith began extensively revising and reworking the piece, eventually producing a second version which premiered in Hanover in 1948.",
+      "pageviews_yearly": 3325
+    },
+    {
+      "qid": "Q5226432",
+      "title": "Das Nusch-Nuschi",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp2",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Das_Nusch-Nuschi",
+      "wikipedia_extract": "Das Nusch-Nuschi, Op. 20, is an opera in one act by Paul Hindemith, with a German libretto by Franz Blei.",
+      "pageviews_yearly": 2417
+    },
+    {
+      "qid": "Q864573",
+      "title": "Der Schwanendreher",
+      "imslp_id": "Der_Schwanendreher_(Hindemith,_Paul)",
+      "pdf_filename": "PMLP500073-Der_Schwanendreher_-_Viola_part.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp74",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Der_Schwanendreher",
+      "wikipedia_extract": "\nPaul Hindemith's Der Schwanendreher is a concerto for viola and orchestra. Der Schwanendreher occupies a place at the core of the viola concerto repertoire, along with the concertos by Walton and Bartók. It was composed in 1935 and premiered by the composer himself at a performance in Amsterdam on 14 November 1935. Each movement is based on a separate medieval German folk song, thus, it is sometimes referred to as the \"Concerto from Old Folk Songs\". This composition draws its title from the final movement's folk song base, \"Aren't you the swan turner?\"",
+      "pageviews_yearly": 9273
+    },
+    {
+      "qid": "Q952616",
+      "title": "Die Harmonie der Welt",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp11",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Die_Harmonie_der_Welt",
+      "wikipedia_extract": "Die Harmonie der Welt is an opera in five acts by Paul Hindemith. The German libretto was by the composer.",
+      "pageviews_yearly": 4649
+    },
+    {
+      "qid": "Q3027323",
+      "title": "Die Harmonie der Welt Symphony",
+      "imslp_id": "Die_Harmonie_der_Welt_Symphony_(Hindemith,_Paul)",
+      "pdf_filename": "PMLP540642-hindemithdieharmoniederweltsymphoniescoremvt1.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp42",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Die_Harmonie_der_Welt_Symphony",
+      "wikipedia_extract": "Die Harmonie der Welt Symphony, IPH 50, is a symphony by German composer Paul Hindemith composed in 1951, which served as the basis for his opera Die Harmonie der Welt.",
+      "pageviews_yearly": 2708
+    },
+    {
+      "qid": "Q1169101",
+      "title": "Dr. M",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dr._M_(film)",
+      "wikipedia_extract": "Dr. M. is a 1990 crime film co-written and directed by Claude Chabrol. The film is loosely based on the plot of Fritz Lang's Dr. Mabuse the Gambler, which was in turn based on Mabuse der Spieler by Norbert Jacques.",
+      "pageviews_yearly": 10461
+    },
+    {
+      "qid": "Q137187362",
+      "title": "Duet",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Duet_(Hindemith)",
+      "wikipedia_extract": "The Duet for Viola and Cello, initially and alternatively entitled Scherzo, is a short duet by German composer Paul Hindemith. It was written and first recorded in 1934, and its origins are closely connected to the composer's Sonata for Solo Viola No. 2.",
+      "pageviews_yearly": 459
+    },
+    {
+      "qid": "Q119042335",
+      "title": "English Horn Sonata",
+      "imslp_id": "English_Horn_Sonata_(Hindemith,_Paul)",
+      "pdf_filename": "PMLP489682-English_Horn_Sonata_-_English_Horn_part.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q42405234",
+      "title": "Flute Sonata",
+      "imslp_id": "Flute_Sonata_(Hindemith,_Paul)",
+      "pdf_filename": "PMLP501614-Flute_Sonata_-_Flute_part.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp122"
+    },
+    {
+      "qid": "Q3104970",
+      "title": "Ghosts Before Breakfast",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ghosts_Before_Breakfast",
+      "wikipedia_extract": "Ghosts Before Breakfast is a 1928 German dadaist animated short film directed by Hans Richter. It utilizes stop motion for some of its effects and live action for others. The film does not present a coherent narrative, and includes a number of seemingly arbitrary images.",
+      "pageviews_yearly": 5014
+    },
+    {
+      "qid": "Q119495735",
+      "title": "Harp Sonata",
+      "imslp_id": "Harp_Sonata_(Hindemith,_Paul)",
+      "pdf_filename": "PMLP526155-hindemithSonatafurHarpscoremusic.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp159"
+    },
+    {
+      "qid": "Q3135744",
+      "title": "Hin und zurück",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp7",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hin_und_zur%C3%BCck",
+      "wikipedia_extract": "Hin und zurück is an operatic 'sketch' in one scene by Paul Hindemith, with a German libretto by Marcellus Schiffer. It acts as a parody of conventional opera tropes featuring a coloratura ariette, a jealousy duet, and a terzet for the tenor, baritone and bass.",
+      "pageviews_yearly": 2242
+    },
+    {
+      "qid": "Q2533567",
+      "title": "Histoire(s) du cinéma",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Histoire(s)_du_cin%C3%A9ma",
+      "wikipedia_extract": "\nHistoire(s) du cinéma is an eight-part video project begun by Jean-Luc Godard in the late 1980s and completed in 1998. At a total of 266 minutes, it is the longest and one of the most complex of Godard's projects. Histoire(s) du cinéma is an examination of the history of the concept of cinema and how it relates to the 20th century; in this sense, it can also be considered a critique of the 20th century and how it perceives itself. The project is widely considered Godard's magnum opus.",
+      "pageviews_yearly": 21504
+    },
+    {
+      "qid": "Q28497915",
+      "title": "Horn Concerto (Hindemith)",
+      "imslp_id": "Horn_Concerto_(Hindemith,_Paul)",
+      "pdf_filename": "PMLP527283-hindemithHornConcertohornpart.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp83",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Horn_Concerto_(Hindemith)",
+      "wikipedia_extract": "The Horn Concerto is the only concerto for solo horn and orchestra composed by German composer Paul Hindemith. It was written in 1949.",
+      "pageviews_yearly": 872
+    },
+    {
+      "qid": "Q119441405",
+      "title": "Horn Sonata",
+      "imslp_id": "Horn_Sonata_(Hindemith,_Paul)",
+      "pdf_filename": "PMLP501616-Hindemith_-_Horn_Sonata.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp127"
+    },
+    {
+      "qid": "Q15227192",
+      "title": "Im Kampf mit dem Berge"
+    },
+    {
+      "qid": "Q3149691",
+      "title": "In einer Nacht",
+      "imslp_id": "In_einer_Nacht...,_Op.15_(Hindemith,_Paul)",
+      "pdf_filename": "PMLP732025-Hindemith.-.op.15.-.In-einer-Nacht--Träume-und-Erlebnisse.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp164"
+    },
+    {
+      "qid": "Q86523961",
+      "title": "Julia Fischer at the BBC Proms"
+    },
+    {
+      "qid": "Q963679",
+      "title": "Kammermusik",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Hindemith_Schnelle_Halbe_from_5th_Kammermusik.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q109642710",
+      "title": "Kammermusik No. 1, op. 24 no. 1",
+      "imslp_id": "Kammermusik_No.1,_Op.24_No.1_(Hindemith,_Paul)",
+      "pdf_filename": "PMLP233233-Hindemith-Kammermusik_-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q109642731",
+      "title": "Kammermusik No. 2, op. 36 no. 1",
+      "imslp_id": "Kammermusik_No.2,_Op.36_No.1_(Hindemith,_Paul)",
+      "pdf_filename": "PMLP514170-HindemithKammermusikNo.2Op.36No.1score.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q109729263",
+      "title": "Kammermusik No. 3, op. 36 no. 2"
+    },
+    {
+      "qid": "Q109729422",
+      "title": "Kammermusik No. 4, op. 36 no. 3"
+    },
+    {
+      "qid": "Q109729452",
+      "title": "Kammermusik No. 6, op. 46 no. 1",
+      "imslp_id": "Kammermusik_No.6,_Op.46_No.1_(Hindemith,_Paul)",
+      "pdf_filename": "PMLP514183-HindemithKammermusikNo.6Op.46No.1score.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q109729467",
+      "title": "Kammermusik No. 7, op. 46 no. 2",
+      "imslp_id": "Kammermusik_No.7,_Op.46_No.2_(Hindemith,_Paul)",
+      "pdf_filename": "PMLP514040-HindemithKammermusikNo.7Op.46No.2Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q28497638",
+      "title": "Kleine Kammermusik, Op. 24, No. 2",
+      "imslp_id": "Kleine_Kammermusik,_Op.24_No.2_(Hindemith,_Paul)",
+      "pdf_filename": "PMLP186087-Hindemith_-_Kleine_Kammermusik__Op._24_No._2__parts_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp96"
+    },
+    {
+      "qid": "Q508290",
+      "title": "Mathis der Maler",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp10",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mathis_der_Maler_(opera)",
+      "wikipedia_extract": "Mathis der Maler is an opera by Paul Hindemith. The work's protagonist, Matthias Grünewald, was a historical figure who flourished during the Reformation, and whose art, in particular the Isenheim Altarpiece, inspired many creative figures in the early 20th century.",
+      "pageviews_yearly": 11416
+    },
+    {
+      "qid": "Q97166841",
+      "title": "Minimax",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp287"
+    },
+    {
+      "qid": "Q6950358",
+      "title": "Mörder, Hoffnung der Frauen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/M%C3%B6rder%2C_Hoffnung_der_Frauen",
+      "wikipedia_extract": "Mörder, Hoffnung der Frauen is an opera in one act by Paul Hindemith, written in 1919 on a German libretto by Oskar Kokoschka which he based on his play of 1907. The opera was the first in a triptych of expressionist one-act operas, the others being Das Nusch-Nuschi, and Sancta Susanna. They were the first operas written by Hindemith. The first two were premiered together in Stuttgart on 4 June 1921, all three were performed at the Oper Frankfurt in 1922.",
+      "pageviews_yearly": 3394
+    },
+    {
+      "qid": "Q3342523",
+      "title": "Nobilissima Visione",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp31",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nobilissima_Visione",
+      "wikipedia_extract": "\nNobilissima visione is a 50-minute ballet in six scenes by Paul Hindemith, originally choreographed by Léonide Massine for the Ballet Russe de Monte Carlo. The libretto by Hindemith and Massine depicts episodes from the life of Saint Francis of Assisi. The work was completed in February 1938 and premiered at Theatre Royal, Drury Lane in London on 21 July 1938, with sets and costumes by Pavel Tchelitchew and under the baton of the composer. He led one performance of the new ballet at the Metropolitan Opera House in New York on 14 October of the same year.",
+      "pageviews_yearly": 4447
+    },
+    {
+      "qid": "Q119575218",
+      "title": "Oboe Sonata",
+      "imslp_id": "Oboe_Sonata_(Hindemith,_Paul)",
+      "pdf_filename": "PMLP489680-Hindemith_-_Oboe_Sonata.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp125"
+    },
+    {
+      "qid": "Q18663730",
+      "title": "Piano Sonata No. 1",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_No._1_(Hindemith)",
+      "wikipedia_extract": "Piano Sonata No. 1 in A major is the first piano sonata by German composer Paul Hindemith. It was finished in 1936 and is subtitled Der Main after a poem by Friedrich Hölderlin.",
+      "pageviews_yearly": 1911
+    },
+    {
+      "qid": "Q3072314",
+      "title": "Sancta Susanna",
+      "imslp_id": "Sancta_Susanna,_Op.21_(Hindemith,_Paul)",
+      "pdf_filename": "PMLP228911-Hindemith_-_Sancta_Susanna__Op._21-full_score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp3",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sancta_Susanna",
+      "wikipedia_extract": "Sancta Susanna is an early opera by Paul Hindemith in one act, with a German libretto by August Stramm. Composed over a two-week period in January/February 1921, its premiere was on 26 March 1922, at the Oper Frankfurt.",
+      "pageviews_yearly": 9406
+    },
+    {
+      "qid": "Q119718701",
+      "title": "Sonata for Four Horns",
+      "imslp_id": "Sonata_for_4_Horns_(Hindemith,_Paul)",
+      "pdf_filename": "PMLP501741-Hindemith_-_Sonata_For_4_Horns.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp100"
+    },
+    {
+      "qid": "Q137177378",
+      "title": "Sonata for Solo Viola No. 2",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp154",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sonata_for_Solo_Viola_No._2_(Hindemith)",
+      "wikipedia_extract": "The Sonata for Solo Viola No. 2, Op. 25/1, is the second of German composer Paul Hindemith's four sonatas for unaccompanied viola. Completed in 1922, it is part of an opus that also includes three other sonatas for different instruments.",
+      "pageviews_yearly": 615
+    },
+    {
+      "qid": "Q3490180",
+      "title": "Sonata in E-flat major for Alto Horn and Piano",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp132"
+    },
+    {
+      "qid": "Q3413793",
+      "title": "String Quartet No. 1",
+      "imslp_id": "String_Quartet_No.1,_Op.2_(Hindemith,_Paul)",
+      "pdf_filename": "PMLP564213-hindemithStringQuartetNo.1Op.2score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp85"
+    },
+    {
+      "qid": "Q3413816",
+      "title": "String Quartet No. 2",
+      "imslp_id": "String_Quartet_No.2,_Op.10_(Hindemith,_Paul)",
+      "pdf_filename": "PMLP198486-Hindemith_-_String_Quartet__op._10.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp86"
+    },
+    {
+      "qid": "Q3413834",
+      "title": "String Quartet No. 3",
+      "imslp_id": "String_Quartet_No.3,_Op.16_(Hindemith,_Paul)",
+      "pdf_filename": "PMLP231671-Hindemith_-_String_Quartet_No._2__Op._16-score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp87"
+    },
+    {
+      "qid": "Q3413850",
+      "title": "String Quartet No. 5",
+      "imslp_id": "String_Quartet_No.5,_Op.32_(Hindemith,_Paul)",
+      "pdf_filename": "PMLP524165-hindemithstreichquartetteop.32score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp89"
+    },
+    {
+      "qid": "Q3413851",
+      "title": "String Quartet No. 6",
+      "imslp_id": "String_Quartet_No.6_(Hindemith,_Paul)",
+      "pdf_filename": "PMLP524205-hindemithstreichquartette6score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp90"
+    },
+    {
+      "qid": "Q15990923",
+      "title": "String Quartet No. 7",
+      "imslp_id": "String_Quartet_No.7_(Hindemith,_Paul)",
+      "pdf_filename": "PMLP503145-Hindemith_-_String_Quartet_No._6.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp91"
+    },
+    {
+      "qid": "Q3539401",
+      "title": "String Trio No. 2",
+      "imslp_id": "String_Trio_No.2_(Hindemith,_Paul)",
+      "pdf_filename": "PMLP525991-hindemithSWV_52.TriofuerVioline_BratscheundVioloncellocellopart.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp104",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Trio_No._2_(Hindemith)",
+      "wikipedia_extract": "String Trio No. 2 is the last string trio by German composer Paul Hindemith. It was composed in 1933 and recorded by the composer shortly after.",
+      "pageviews_yearly": 369
+    },
+    {
+      "qid": "Q3539408",
+      "title": "String Trio, Op. 34",
+      "imslp_id": "String_Trio_No.1,_Op.34_(Hindemith,_Paul)",
+      "pdf_filename": "PMLP525985-hindemithSWV_5TriofuerVioline_BratscheundVioloncelloop.34_urspruenglicher3.Satzscore.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q3503209",
+      "title": "Suite \"1922\"",
+      "imslp_id": "1922,_Op.26_(Hindemith,_Paul)",
+      "pdf_filename": "PMLP180041-Hindemith.-.op.26.-.1922-Suite_-Unlocked_by_www.freemypdf.com-.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp168"
+    },
+    {
+      "qid": "Q3507587",
+      "title": "Symphonia Serena",
+      "imslp_id": "Symphonia_Serena_(Hindemith,_Paul)",
+      "pdf_filename": "PMLP516769-HindemithSymphoniaSerenascore.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp41",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphonia_Serena",
+      "wikipedia_extract": "\nSymphonia Serena is an orchestral work composed by Paul Hindemith in 1946. It was premiered by the Dallas Symphony Orchestra on 2 February 1947 with Antal Dorati conducting. The work is organized into four movements:Moderately fast\nGeschwindmarsch by Beethoven, paraphrase\nColloquy\nFinale",
+      "pageviews_yearly": 1779
+    },
+    {
+      "qid": "Q3467686",
+      "title": "Symphony in B-flat for Band",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp43",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_in_B-flat_for_Band_(Hindemith)",
+      "wikipedia_extract": " \nSymphony in B-flat for Band was written by the German composer Paul Hindemith in 1951. It was premiered on April 5 of that year by the U.S. Army Band \"Pershing's Own\" with the composer conducting.",
+      "pageviews_yearly": 4719
+    },
+    {
+      "qid": "Q444076",
+      "title": "The Flight across the Ocean",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Flight_Across_the_Ocean",
+      "wikipedia_extract": "The Flight Across the Ocean is a Lehrstück by the German dramatist Bertolt Brecht, inspired by We, Charles Lindbergh's 1927 account of his transatlantic flight in the plane Spirit of St. Louis. Written for the Baden-Baden Music Festival, it was originally entitled Lindbergh's Flight and premiered in 1929 with music by Kurt Weill and Paul Hindemith in a broadcast by the Frankfurter Rundfunk-Symphonie-Orchester under the direction of Hermann Scherchen and produced by Ernst Hardt.",
+      "pageviews_yearly": 4223
+    },
+    {
+      "qid": "Q56458418",
+      "title": "The Four Temperaments",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp32"
+    },
+    {
+      "qid": "Q427522",
+      "title": "Trauermusik",
+      "imslp_id": "Trauermusik_(Hindemith,_Paul)",
+      "pdf_filename": "PMLP500070-Hind_Trauer_psc.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp75",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Trauermusik",
+      "wikipedia_extract": "\n\nTrauermusik is a suite for viola and string orchestra, written on 21 January 1936 by Paul Hindemith at very short notice in memory of King George V of the United Kingdom, who died the previous night. The title means \"Mourning Music\" or \"Funeral Music\" in English, but the work is always known by its German title.",
+      "pageviews_yearly": 7499
+    },
+    {
+      "qid": "Q318793",
+      "title": "Triadic Ballet",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Triadisches_Ballett",
+      "wikipedia_extract": "Triadisches Ballett is a ballet developed by Oskar Schlemmer. The ballet became the most widely performed avant-garde artistic dance and while Schlemmer was at the Bauhaus from 1921 to 1929, the ballet toured, helping to spread the ethos of the Bauhaus.",
+      "pageviews_yearly": 16992
+    },
+    {
+      "qid": "Q119458032",
+      "title": "Trombone Sonata",
+      "imslp_id": "Trombone_Sonata_(Hindemith,_Paul)",
+      "pdf_filename": "PMLP501762-Hindemith_-_Trombone_Sonata.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp130"
+    },
+    {
+      "qid": "Q119443618",
+      "title": "Trumpet Sonata",
+      "imslp_id": "Trumpet_Sonata_(Hindemith,_Paul)",
+      "pdf_filename": "PMLP501768-Hindemith_-_Trumpet_Sonata.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp128"
+    },
+    {
+      "qid": "Q119458371",
+      "title": "Tuba Sonata",
+      "imslp_id": "Tuba_Sonata_(Hindemith,_Paul)",
+      "pdf_filename": "PMLP501773-Hindemith_-_Tuba_Sonata.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp134"
+    },
+    {
+      "qid": "Q17063373",
+      "title": "Tuttifäntchen",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp68",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tuttif%C3%A4ntchen",
+      "wikipedia_extract": "\nTuttifäntchen is a 1922 German musical play, a Christmas fairy tale for children with music by Paul Hindemith. The play itself is subtitled, Weihnachtsmärchen mit Gesang und Tanz in drei Bildern von Hedwig Michel und Franziska Becker.",
+      "pageviews_yearly": 1811
+    },
+    {
+      "qid": "Q7933041",
+      "title": "Viola Sonata No. 4",
+      "imslp_id": "Viola_Sonata,_Op.11_No.4_(Hindemith,_Paul)",
+      "pdf_filename": "PMLP231953-Hindemith_-_Viola_Sonata__op._11-4.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp156",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Viola_Sonata_No._1_(Hindemith)",
+      "wikipedia_extract": "The first Sonata for viola and piano, also known as Sonata in F, Op. 11, No. 4, by Paul Hindemith was composed in 1919. It is the fourth of five instrumental sonatas comprising his opus 11. This sonata and the following Op. 11 No. 5 for solo viola mark Hindemith's decision to abandon playing the violin in favor of its larger cousin.",
+      "pageviews_yearly": 3711
+    },
+    {
+      "qid": "Q65246666",
+      "title": "Violin Sonata No. 2 (Hindemith)",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp148",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Violin_Sonata_No._2_(Hindemith)",
+      "wikipedia_extract": "The Violin Sonata No. 2 for piano and violin, in D major, Op. 11, No. 2, is the second surviving violin sonata for the two instruments by Paul Hindemith, composed in 1918. It was published as Sonate in D für Klavier und Violine.",
+      "pageviews_yearly": 1550
+    },
+    {
+      "qid": "Q3567675",
+      "title": "When Lilacs Last in the Dooryard Bloom'd",
+      "imslp_id": "When_Lilacs_last_in_the_Door-yard_Bloom'd_(Hindemith,_Paul)",
+      "pdf_filename": "PMLP544375-hindemithSWVII_2Whenlilacslastinthedoor-yardbloom_dscore.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/paul-hindemith-1895-pp196",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/When_Lilacs_Last_in_the_Dooryard_Bloom'd_(Hindemith)",
+      "wikipedia_extract": "When Lilacs Last in the Dooryard Bloom'd: A Requiem for those we love (An American Requiem) is a 1946 oratorio by composer Paul Hindemith, based on the poem of the same name by Walt Whitman. It is the first musical work to include the entirety of Whitman's 1865 poem. Conductor Robert Shaw and the Robert Shaw Chorale commissioned the work after the 1945 death of President Franklin D. Roosevelt. It received its world premiere on May 14, 1946, at New York City Center, with the Collegiate Chorale conducted by Shaw and soloists Mona Paulee, contralto, and George Burnson, baritone. Paulee performed the work again with bass-baritone Chester Watson and the CBS Symphony Orchestra for the work's first recorded broadcast on CBS Radio on June 30, 1946.",
+      "pageviews_yearly": 5726
+    },
+    {
+      "qid": "Q110038665",
+      "title": "Wir bauen eine Stadt",
+      "has_midi": true,
+      "midi_files": [
+        "midi/2_Wir_bauen_eine_neue_Stadt.mid"
+      ],
+      "has_mxl": true
+    }
+  ]
+}

@@ -1,0 +1,1440 @@
+{
+  "composer_slug": "debussy",
+  "composer_qid": "Q4700",
+  "work_count": 196,
+  "midi_file_count": 50,
+  "works": [
+    {
+      "qid": "Q130244252",
+      "title": "Invocation",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp120",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Invocation_(Debussy)",
+      "wikipedia_extract": "Invocation is a composition for men's choir and orchestra, with a solo tenor, by Claude Debussy. It is a setting of a text by Alphonse de Lamartine.",
+      "pageviews_yearly": 981,
+      "date": "1883-00-00"
+    },
+    {
+      "qid": "Q130717779",
+      "title": "Le Gladiateur",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp126",
+      "date": "1883-00-00"
+    },
+    {
+      "qid": "Q106998701",
+      "title": "Apparition",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp166",
+      "date": "1884-00-00"
+    },
+    {
+      "qid": "Q19205924",
+      "title": "L'enfant prodigue",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp127",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/L'enfant_prodigue_(Debussy)",
+      "wikipedia_extract": "\nL'enfant prodigue is a scène lyrique, or lyric scene, by Claude Debussy to a text by Édouard Guinand. Scored for soprano, tenor, baritone and piano, it bears the catalog number L.61. Its premiere came on June 27, 1884, in Paris in the composition category of the Prix de Rome competition, which it handily won with Debussy receiving 22 out of 28 votes; the vocal soloists were Rose Caron (Lia), Ernest Van Dyck (Azaël) and Émile-Alexandre Taskin (Siméon). Debussy's prize included a three-year (1885-1887) Académie des Beaux-Arts scholastic residency at the Villa Medici.",
+      "pageviews_yearly": 5214,
+      "date": "1884-00-00"
+    },
+    {
+      "qid": "Q130711641",
+      "title": "Le Printemps",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp118",
+      "date": "1884-00-00"
+    },
+    {
+      "qid": "Q4790520",
+      "title": "Ariettes oubliées",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp170",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ariettes_oubli%C3%A9es",
+      "wikipedia_extract": "Ariettes oubliées is a song cycle for voice and piano, L. 60 by Claude Debussy, based on poems by Paul Verlaine. The work consists of six pieces, with an approximate run time of sixteen minutes.",
+      "pageviews_yearly": 9142,
+      "date": "1887-01-01"
+    },
+    {
+      "qid": "Q14613445",
+      "title": "Fantaisie for piano and orchestra",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp58",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fantaisie_for_piano_and_orchestra_(Debussy)",
+      "wikipedia_extract": "\nFantaisie for piano and orchestra (L.73/CD.72), is a composition for piano and orchestra by French composer Claude Debussy. It was composed between October 1889 and April 1890, but only received its first public performance in 1919, a year after Debussy's death. The work is dedicated to the pianist René Chansarel, who had been scheduled to play the solo part for the cancelled premiere in 1890.",
+      "pageviews_yearly": 5354,
+      "date": "1889-01-01"
+    },
+    {
+      "qid": "Q1471875",
+      "title": "Prélude à l'après-midi d'un faune",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp59",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pr%C3%A9lude_%C3%A0_l'apr%C3%A8s-midi_d'un_faune",
+      "wikipedia_extract": "Prélude à l'Après-midi d'un faune, known in English as Prelude to the Afternoon of a Faun, is a symphonic poem for orchestra by Claude Debussy, approximately 10 minutes in duration. It was composed in 1894 and first performed in Paris on 22 December 1894, conducted by Gustave Doret. The flute solo was played by Georges Barrère.",
+      "pageviews_yearly": 67697,
+      "date": "1892-01-01"
+    },
+    {
+      "qid": "Q122932584",
+      "title": "Proses lyriques",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp178",
+      "date": "1893-00-00"
+    },
+    {
+      "qid": "Q2454977",
+      "title": "Nocturnes",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp53",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nocturnes_(Debussy)",
+      "wikipedia_extract": "Nocturnes, L 98 is an Impressionist orchestral composition in three movements by the French composer Claude Debussy, who wrote it between 1892 and 1899. It is based on poems from Poèmes anciens et romanesques.",
+      "pageviews_yearly": 29069,
+      "date": "1897-00-00"
+    },
+    {
+      "qid": "Q368019",
+      "title": "Pelléas et Mélisande",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp5",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pell%C3%A9as_et_M%C3%A9lisande_(opera)",
+      "wikipedia_extract": "Pelléas et Mélisande is an opera in five acts with music by Claude Debussy. The French libretto was adapted from Maurice Maeterlinck's symbolist play of the same name. It premiered at the Salle Favart in Paris by the Opéra-Comique on 30 April 1902; Jean Périer was Pelléas and Mary Garden was Mélisande, conducted by André Messager, who was instrumental in getting the Opéra-Comique to stage the work. It is the only opera Debussy ever completed.",
+      "pageviews_yearly": 64257,
+      "date": "1901-00-00"
+    },
+    {
+      "qid": "Q3609505",
+      "title": "Le diable dans le beffroi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Le_diable_dans_le_beffroi",
+      "wikipedia_extract": "Le diable dans le beffroi is an unfinished comic opera in one act by Claude Debussy to his own libretto, based on Edgar Allan Poe's short story \"The Devil in the Belfry\".",
+      "pageviews_yearly": 2421,
+      "date": "1902-01-01"
+    },
+    {
+      "qid": "Q11590768",
+      "title": "Danse sacrée et Danse profane",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp63",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dances_for_Harp_and_String_Orchestra",
+      "wikipedia_extract": "Dances for Harp and String Orchestra, in full in the original, Danses pour harpe chromatique avec accompagnement d'orchestre d'instruments à cordes, is a 1904 work by Claude Debussy. There are two sections: Danse sacrée and Danse profane, and the work is sometimes billed accordingly. It is a two-movement work, of about ten minutes' duration.",
+      "pageviews_yearly": 6343,
+      "date": "1904-00-00",
+      "movements": [
+        {
+          "qid": "Q51880960"
+        },
+        {
+          "qid": "Q25468153"
+        }
+      ]
+    },
+    {
+      "qid": "Q29158512",
+      "title": "Images 1st series",
+      "date": "1904-01-01",
+      "movements": [
+        {
+          "qid": "Q7307341"
+        },
+        {
+          "qid": "Q29158530"
+        },
+        {
+          "qid": "Q29158540"
+        }
+      ]
+    },
+    {
+      "qid": "Q3297374",
+      "title": "Masques",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp91",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Masques_(Debussy)",
+      "wikipedia_extract": "Masques, L. 105, is a piece for solo piano by Claude Debussy. Composed in July 1904, it was premiered on 18 February 1905 by Ricardo Viñes at the Salle Pleyel in Paris. Its sombre character reflects Debussy's difficult separation from Lilly Texier, his first wife. The title refers to the commedia dell'arte, although Debussy confided to Marguerite Long that the piece was \"not Italian comedy, but an expression of the tragedy of existence\"",
+      "pageviews_yearly": 2513,
+      "date": "1904-01-01"
+    },
+    {
+      "qid": "Q29168244",
+      "title": "Préludes pour piano Deuxième livre",
+      "date": "1904-01-01"
+    },
+    {
+      "qid": "Q29168243",
+      "title": "Préludes pour piano Premier livre",
+      "date": "1904-01-01",
+      "movements": [
+        {
+          "qid": "Q28496953"
+        },
+        {
+          "qid": "Q2530460"
+        },
+        {
+          "qid": "Q29177506"
+        },
+        {
+          "qid": "Q29177520"
+        },
+        {
+          "qid": "Q29177532"
+        },
+        {
+          "qid": "Q5263580"
+        },
+        {
+          "qid": "Q5055679"
+        },
+        {
+          "qid": "Q6466152"
+        },
+        {
+          "qid": "Q6466452"
+        },
+        {
+          "qid": "Q6466022"
+        },
+        {
+          "qid": "Q29177547"
+        },
+        {
+          "qid": "Q29177559"
+        }
+      ]
+    },
+    {
+      "qid": "Q665871",
+      "title": "Images pour orchestre",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp55",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Images_pour_orchestre",
+      "wikipedia_extract": "Images pour orchestre, L. 122, is an orchestral composition in three sections by Claude Debussy, written between 1905 and 1912. Debussy had originally intended this set of Images as a two-piano sequel to the first set of Images for solo piano, as described in a letter to his publisher Durand as of September 1905. However, by March 1906, in another letter to Durand, he had begun to think of arranging the work for orchestra rather than two pianos.",
+      "pageviews_yearly": 15027,
+      "date": "1905-00-00"
+    },
+    {
+      "qid": "Q29158520",
+      "title": "Images 2nd series",
+      "date": "1907-01-01"
+    },
+    {
+      "qid": "Q65081324",
+      "title": "Trois Chansons",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp179",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Trois_Chansons_(Debussy)",
+      "wikipedia_extract": "Trois Chansons, or Chansons de Charles d’Orléans, L 99 (92), is an a cappella choir composition by Claude Debussy set to the medieval poetry of Charles, Duke of Orléans (1394–1465). Debussy wrote the first and third songs in 1898 and finished the second in 1908. He premiered the piece in 1909 and Trois Chansons is his only composition for unaccompanied choir.",
+      "pageviews_yearly": 5542,
+      "date": "1908-00-00"
+    },
+    {
+      "qid": "Q4228845",
+      "title": "Jimbo’s lullaby",
+      "date": "1908-01-01"
+    },
+    {
+      "qid": "Q4179132",
+      "title": "Première rhapsodie",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp74",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Premi%C3%A8re_rhapsodie",
+      "wikipedia_extract": "The Première rhapsodie, L. 116, CD. 124, by Claude Debussy is a piece for accompanied clarinet. Composed between December 1909 and January 1910, it was dedicated to the French clarinet professor Prosper Mimart.",
+      "pageviews_yearly": 6532,
+      "date": "1909-00-00"
+    },
+    {
+      "qid": "Q28496953",
+      "title": "Danseuses de Delphes",
+      "date": "1909-12-07"
+    },
+    {
+      "qid": "Q5263580",
+      "title": "Des pas sur la neige",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Des_pas_sur_la_neige",
+      "wikipedia_extract": "Des pas sur la neige is a musical composition by French composer Claude Debussy. It is the sixth piece in the composer's first book of Préludes, written between late 1909 and early 1910. The title is in French and translates to \"Footprints in the Snow\" The piece is 36 measures long and takes approximately three and a half to four and a half minutes to play. It is in the key of D minor. The prelude was, along with Danseuses de Delphes, one of the preludes Debussy believed should be played \"entre quatre-z-yeux\" meaning intimately, as if privately.",
+      "pageviews_yearly": 7437,
+      "date": "1909-12-27"
+    },
+    {
+      "qid": "Q5055679",
+      "title": "Ce qu'a vu le vent d'ouest",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ce_qu'a_vu_le_vent_d'ouest",
+      "wikipedia_extract": "Ce qu'a vu le vent d'ouest is a musical composition by French composer Claude Debussy. It is the seventh piece in the composer's first book of Préludes, written between late 1909 and early 1910. The piece is 72 measures long, taking approximately four minutes to play. It is in the key of F♯ minor.",
+      "pageviews_yearly": 3493,
+      "date": "1910-01-01"
+    },
+    {
+      "qid": "Q29177520",
+      "title": "Les sons et les parfums tournent dans l'air du soir",
+      "date": "1910-01-01"
+    },
+    {
+      "qid": "Q29177547",
+      "title": "La danse de Puck",
+      "date": "1910-02-04"
+    },
+    {
+      "qid": "Q110455402",
+      "title": "D'un cahier d'esquisses",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp89",
+      "date": "1911-00-00"
+    },
+    {
+      "qid": "Q29177559",
+      "title": "Minstrels",
+      "date": "1911-03-29"
+    },
+    {
+      "qid": "Q2533703",
+      "title": "Syrinx",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp77",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Syrinx_(Debussy)",
+      "wikipedia_extract": "Syrinx, L. 129, is a piece of music for solo flute which Claude Debussy wrote in 1913. It generally takes three minutes or less to perform. It was the first significant piece for solo flute after the Sonata in A minor composed by C. P. E. Bach over 150 years before (1747), and it is the first such solo composition for the modern Böhm flute, developed in 1847.",
+      "pageviews_yearly": 12194,
+      "date": "1913-01-01"
+    },
+    {
+      "qid": "Q15991009",
+      "title": "Trois poèmes de Stéphane Mallarmé",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp185",
+      "date": "1913-01-01"
+    },
+    {
+      "qid": "Q2747188",
+      "title": "Cello Sonata",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp76",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cello_Sonata_(Debussy)",
+      "wikipedia_extract": "The Cello Sonata, L. 135, is a sonata for cello and piano by Claude Debussy. It consists of three movements: Prologue, Sérénade and Finale. It was composed and published in 1915. After performances in London and Geneva in 1916, the sonata's official premiere in Paris was played in 1917 by Joseph Salmon and Debussy. It was the first chamber music work in his late style, and became one of the key works in the repertoire from the 20th century.",
+      "pageviews_yearly": 10440,
+      "date": "1915-01-01"
+    },
+    {
+      "qid": "Q3053508",
+      "title": "En blanc et noir",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp116",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/En_blanc_et_noir",
+      "wikipedia_extract": "En blanc et noir, L. 134, CD. 142, is a suite in three movements for two pianos by Claude Debussy, written in June 1915. He composed the work on the Normandy coast, suffering from cancer and concerned about the prospects of France in the Great War. The work is full of personal literary and musical allusions. Each movement comes with a literary motto. In the second movement, Debussy quoted Luther's hymn \"Ein feste Burg ist unser Gott\" as a symbol of militant Lutheran Germany. The three movements were dedicated respectively to three people: Serge Koussevitzky, Jacques Charlot, and Igor Stravinsky.",
+      "pageviews_yearly": 6921,
+      "date": "1915-01-01"
+    },
+    {
+      "qid": "Q2628153",
+      "title": "Sonata for flute, viola and harp",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp67",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Six_sonatas_for_various_instruments",
+      "wikipedia_extract": "\nClaude Debussy's Six sonatas for various instruments was a projected cycle of sonatas that was interrupted by the composer's death in 1918, after he had composed only half of the projected sonatas. He left behind his sonatas for cello and piano (1915), flute, viola and harp (1915), and violin and piano (1916–1917).",
+      "pageviews_yearly": 2386,
+      "date": "1915-01-01"
+    },
+    {
+      "qid": "Q2719749",
+      "title": "Violin Sonata",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp72",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Six_sonatas_for_various_instruments",
+      "wikipedia_extract": "\nClaude Debussy's Six sonatas for various instruments was a projected cycle of sonatas that was interrupted by the composer's death in 1918, after he had composed only half of the projected sonatas. He left behind his sonatas for cello and piano (1915), flute, viola and harp (1915), and violin and piano (1916–1917).",
+      "pageviews_yearly": 1757,
+      "date": "1916-01-01"
+    },
+    {
+      "qid": "Q1637772",
+      "title": "Afternoon of a Faun",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp59",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Afternoon_of_a_Faun_(Nijinsky)",
+      "wikipedia_extract": "The Afternoon of a Faun is a ballet choreographed by Vaslav Nijinsky for the Ballets Russes, and was first performed in the Théâtre du Châtelet in Paris on 29 May 1912. Nijinsky danced the main part himself. The ballet is set to Claude Debussy's symphonic poem Prélude à l'après-midi d'un faune. Both the music and the ballet were inspired by the poem L'Après-midi d'un faune by Stéphane Mallarmé. The costumes, sets and programme illustrations were designed by the painter Léon Bakst.",
+      "pageviews_yearly": 34239
+    },
+    {
+      "qid": "Q4690789",
+      "title": "Afternoon of a Faun",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp59",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Afternoon_of_a_Faun_(Robbins)",
+      "wikipedia_extract": "Afternoon of a Faun is a neoclassical ballet choreographed by Jerome Robbins to Claude Debussy's Prélude à l'après-midi d'un faune. The ballet features two young dancers meeting at a rehearsal studio. Robbins was influenced by Stéphane Mallarmé's poem L'après-midi d'un faune, the inspiration for Debussy's score, as well as Vaslav Nijinsky's 1912 ballet to the same score, and his own observation of dancers.",
+      "pageviews_yearly": 3668
+    },
+    {
+      "qid": "Q107008068",
+      "title": "Aimons-nous et dormons",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp140"
+    },
+    {
+      "qid": "Q2000923",
+      "title": "Allegro non troppo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Allegro_non_troppo",
+      "wikipedia_extract": "Allegro non troppo is a 1976 Italian animated film directed by Bruno Bozzetto. Featuring six pieces of classical music, the film is a parody of Walt Disney's 1940 feature film Fantasia, two of its segments being derived from the earlier film. The classical pieces are set to color animation, ranging from comedy to deep tragedy.",
+      "pageviews_yearly": 30613
+    },
+    {
+      "qid": "Q107041286",
+      "title": "Andante cantabile",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp109"
+    },
+    {
+      "qid": "Q4775164",
+      "title": "Antique Epigraphs",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Antique_Epigraphs",
+      "wikipedia_extract": "\n\nAntique Epigraphs is a ballet made on New York City Ballet by ballet master Jerome Robbins to an orchestrated version of Debussy's Six épigraphes antiques, L131, for piano, four hands, from 1914:“Pour invoquer Pan, dieu du vent d'été”\n“Pour un tombeau sans nom”\n“Pour que la nuit soit propice”\n“Pour la danseuse aux crotales”\n“Pour l'égyptienne”\n“Pour remercier la pluie au matin”",
+      "pageviews_yearly": 2159
+    },
+    {
+      "qid": "Q56459214",
+      "title": "Arabesque",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Arabesque_N1.mid",
+        "midi/Arabesque_-_Debussy.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q123050526",
+      "title": "Barcarolle"
+    },
+    {
+      "qid": "Q2737834",
+      "title": "Beau soir",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Beau_soir_Flute_Piano_CDebussy.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q123054169",
+      "title": "Berceuse",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp103"
+    },
+    {
+      "qid": "Q120159924",
+      "title": "Berceuse héroïque",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp103"
+    },
+    {
+      "qid": "Q4975860",
+      "title": "Brouillards",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Debussy_Prelude_Book_2_No_1_Brouillards.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q17428058",
+      "title": "Brugge"
+    },
+    {
+      "qid": "Q29217392",
+      "title": "Bruyères",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Bruyeres.mid",
+        "midi/Debussy_Prelude_Book_2_No_5_Bruyeres.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q1029155",
+      "title": "Camille Claudel",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Camille_Claudel_(film)",
+      "wikipedia_extract": "Camille Claudel is a 1988 French biographical drama film about the life of 19th-century sculptor Camille Claudel. The film's screenplay was based on the book by Reine-Marie Paris, granddaughter of Camille's younger brother Paul Claudel, a poet and diplomat.",
+      "pageviews_yearly": 37823
+    },
+    {
+      "qid": "Q29217437",
+      "title": "Canope"
+    },
+    {
+      "qid": "Q107003230",
+      "title": "Caprice",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp131"
+    },
+    {
+      "qid": "Q122977802",
+      "title": "Chanson espagnole",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp157"
+    },
+    {
+      "qid": "Q847300",
+      "title": "Children's Corner",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp96",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Children's_Corner",
+      "wikipedia_extract": "Children's Corner, L. 113, is a six-movement suite for solo piano by Claude Debussy. It was published by Durand in 1908, and was first performed by Harold Bauer in Paris on 18 December that year. In 1911, an orchestration by André Caplet was premiered and subsequently published.",
+      "pageviews_yearly": 34287,
+      "movements": [
+        {
+          "qid": "Q29099924"
+        },
+        {
+          "qid": "Q4228845"
+        },
+        {
+          "qid": "Q29099933"
+        },
+        {
+          "qid": "Q29099944"
+        },
+        {
+          "qid": "Q29099954"
+        },
+        {
+          "qid": "Q29097968"
+        }
+      ]
+    },
+    {
+      "qid": "Q111692616",
+      "title": "Children's corner",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Childrens_Corner_-_Jimbos_Lullaby.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q23021858",
+      "title": "Cinq poèmes de Charles Baudelaire",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp171",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cinq_po%C3%A8mes_de_Charles_Baudelaire",
+      "wikipedia_extract": "The Cinq poèmes de Charles Baudelaire constitute a song cycle for voice and piano by Claude Debussy, on poems taken from Les Fleurs du mal by Charles Baudelaire. Composed from December 1887 to March 1889, these five highly developed vocal pieces were not well received by Parisian musical circles because of the Wagnerian influence they revealed.",
+      "pageviews_yearly": 4096
+    },
+    {
+      "qid": "Q123165866",
+      "title": "Clair de lune",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Clair_de_Lune_CDebussy.mid",
+        "midi/III_Clair_de_Lune.mid",
+        "midi/Clair_de_Lune_orchestra.mid",
+        "midi/Clair_De_Lune_in_Bb_for_Unaccompanied_flute.mid",
+        "midi/Clair_de_Lune_For_Clarinet_Choir.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q29117946",
+      "title": "Clair de lune",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Debussy_-_Suite_Bergamasque_-_III_Clair_de_Lune.mid",
+        "midi/Clair_de_Lune_for_Viola_and_Piano.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q137768100",
+      "title": "Claude Debussy: Images 2nd Series"
+    },
+    {
+      "qid": "Q29159967",
+      "title": "Cloches à travers les feuilles",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp95"
+    },
+    {
+      "qid": "Q123055105",
+      "title": "Dans le jardin",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp174"
+    },
+    {
+      "qid": "Q25468153",
+      "title": "Danse profane",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp63"
+    },
+    {
+      "qid": "Q51880960",
+      "title": "Danse sacrée",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp63"
+    },
+    {
+      "qid": "Q104602449",
+      "title": "De l'aube à midi sur la mer",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp54"
+    },
+    {
+      "qid": "Q1206599",
+      "title": "Deux arabesques",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Deux_arabesques.mid",
+        "midi/2_Arabesques_CDebussy.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q104602604",
+      "title": "Dialogue du vent et de la mer",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp54"
+    },
+    {
+      "qid": "Q29099924",
+      "title": "Doctor Gradus ad Parnassum",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Childrens_Corner_-_Doctor_Gradus_ad_Parnassum.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q2572020",
+      "title": "Estampes",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp90",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Estampes",
+      "wikipedia_extract": "Estampes (Prints), L. 100, is a composition for solo piano by Claude Debussy. Finished in 1903, the first performance of the work was given by Ricardo Viñes at the Salle Érard of the Société nationale de musique in Paris on 9 January 1904.",
+      "pageviews_yearly": 29040
+    },
+    {
+      "qid": "Q29159973",
+      "title": "Et la lune descend sur le temple qui fut"
+    },
+    {
+      "qid": "Q123166208",
+      "title": "Fantoches",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp144"
+    },
+    {
+      "qid": "Q29217350",
+      "title": "Feuilles mortes",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Debussy_Prelude_Book_2_No_2_Feuilles_mortes.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q29217458",
+      "title": "Feux d'artifice",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Feux_dArtifice.mid",
+        "midi/Debussy_Prelude_Book_2_No_12_Feux_dartifice.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q122943329",
+      "title": "Fleur des blés",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp133"
+    },
+    {
+      "qid": "Q15990914",
+      "title": "Fêtes galantes (Debussy)",
+      "imslp_id": "Fêtes_galantes_(Debussy,_Claude)",
+      "pdf_filename": "Debussy_-_Fêtes_galantes__voice_and_piano_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp176",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/F%C3%AAtes_galantes_(Debussy)",
+      "wikipedia_extract": "Fêtes Galantes is a cycle of six mélodies composed by Claude Debussy to poems by Paul Verlaine. It consists of two books of three songs. The songs were composed over several years, and were premiered in 1904.",
+      "pageviews_yearly": 6399
+    },
+    {
+      "qid": "Q11235869",
+      "title": "Giant Shoe-Factory"
+    },
+    {
+      "qid": "Q29097968",
+      "title": "Golliwogg's Cakewalk",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp96"
+    },
+    {
+      "qid": "Q29217406",
+      "title": "Général Lavine – excentrique"
+    },
+    {
+      "qid": "Q99519762",
+      "title": "Hommage à Haydn",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Claude_Debussy_Hommage_a_Haydn.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q88202361",
+      "title": "Hommage à Joseph Haydn",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp99"
+    },
+    {
+      "qid": "Q29158530",
+      "title": "Hommage à Rameau",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Hommage_a_Rameau_de_Images_2_Claude_Debussy.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q5890931",
+      "title": "Hommage à S. Pickwick Esq. P.P.M.P.C.",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Debussy_Prelude_Book_2_No_9_Hommage_a_S_Pickwick_Esq_P_P_M_P_C.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q1132712",
+      "title": "Images",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp87",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Images_(piano_suite)",
+      "wikipedia_extract": "Images is a suite of nine compositions for solo piano by Claude Debussy. They were published in two books/series, each consisting of three pieces. These works are distinct from Debussy's Images pour orchestre. The first book was composed between 1901 and 1905, and the second book was composed in 1907. The total duration is approximately 30 minutes. With respect to the first series of Images, Debussy wrote to his publisher, Jacques Durand: \"Without false pride, I feel that these three pieces hold together well, and that they will find their place in the literature of the piano ... to the left of Schumann, or to the right of Chopin... \"",
+      "pageviews_yearly": 20860,
+      "movements": [
+        {
+          "qid": "Q29158512"
+        },
+        {
+          "qid": "Q29158520"
+        }
+      ]
+    },
+    {
+      "qid": "Q6002359",
+      "title": "Images",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp87",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Images_(ballet)",
+      "wikipedia_extract": "\nImages is a ballet made by Miriam Mahdaviani for the New York City Ballet's first Diamond Project to Debussy's \"Gigues\" from Images pour orchestre (1906–12) and \"Nuages\" and \"Fêtes\" from his Nocturnes (1893–99). The premiere took place 30 May 1992 at the New York State Theater, Lincoln Center.",
+      "pageviews_yearly": 602
+    },
+    {
+      "qid": "Q120091770",
+      "title": "Images oubliées",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp87"
+    },
+    {
+      "qid": "Q86520095",
+      "title": "In Memoriam Yakov Kreizberg"
+    },
+    {
+      "qid": "Q29106247",
+      "title": "Jardins sous la pluie"
+    },
+    {
+      "qid": "Q2381161",
+      "title": "Jeux",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp9",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jeux",
+      "wikipedia_extract": "Jeux (Games) is a ballet written by Claude Debussy. Described as a \"poème dansé\", it was written for Sergei Diaghilev's Ballets Russes with choreography by Vaslav Nijinsky. Debussy initially objected to the scenario but reconsidered the commission when Diaghilev doubled the fee. Debussy wrote the score quickly, from mid-August to mid-September 1912. Robert Orledge has analysed the chronology of Debussy's composition and preserved manuscripts of the score.",
+      "pageviews_yearly": 26276
+    },
+    {
+      "qid": "Q104602582",
+      "title": "Jeux de vagues"
+    },
+    {
+      "qid": "Q2160065",
+      "title": "Khamma",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp8",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Khamma_(ballet)",
+      "wikipedia_extract": "\nKhamma is music by Claude Debussy originally intended for a ballet.",
+      "pageviews_yearly": 7159
+    },
+    {
+      "qid": "Q1759475",
+      "title": "L'isle joyeuse",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp92",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/L'isle_joyeuse",
+      "wikipedia_extract": "\nL'isle joyeuse, L. 106 is a piece for solo piano by Claude Debussy composed in 1904. It is assumed that the painting The Embarkation for Cythera by Jean-Antoine Watteau served as inspiration for the piece, with Debussy reimagining a group's journey to Cythera, the island considered Aphrodite's birthplace, and their subsequent ecstatic unions of love upon arrival. According to Jim Samson (1977), the \"central relationship in the work is that between material based on the whole-tone scale, the lydian mode and the diatonic scale, the lydian mode functioning as an effective mediator between the other two.\"",
+      "pageviews_yearly": 10479
+    },
+    {
+      "qid": "Q123050713",
+      "title": "La Belle au bois dormant",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp172"
+    },
+    {
+      "qid": "Q6461488",
+      "title": "La Cambrure",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Cambrure",
+      "wikipedia_extract": "La Cambrure is a 1999 French short film shot on video, directed by Edwige Shaki, who also wrote the scenario. Éric Rohmer was a technical advisor for the short, which was produced by his production company. Despite being directed by Shaki, some of Rohmer's trademarks—such as extensive dialog and beautiful young actors, including Shaki herself—are present.",
+      "pageviews_yearly": 1833
+    },
+    {
+      "qid": "Q24938126",
+      "title": "La Damoiselle élue",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp122",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Damoiselle_%C3%A9lue",
+      "wikipedia_extract": "La Damoiselle élue, L.69a, is a poème lyrique, or lyric poem, for soprano and alto soloists, two-part women’s chorus and orchestra composed by Claude Debussy in 1888 to a text by Dante Gabriel Rossetti. It premiered in Paris five years later. Debussy arranged the work in 1906 for soprano, four-part women’s chorus and piano; L.69b is the catalog number.",
+      "pageviews_yearly": 7916
+    },
+    {
+      "qid": "Q29217362",
+      "title": "La Puerta del Vino"
+    },
+    {
+      "qid": "Q3206849",
+      "title": "La boîte à joujoux",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp10",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_bo%C3%AEte_%C3%A0_joujoux",
+      "wikipedia_extract": "La boîte à joujoux is a ballet score by Claude Debussy. The composer completed the work as a piano score, but he died before he was able to orchestrate it. A successful orchestration was done by André Caplet.",
+      "pageviews_yearly": 5416
+    },
+    {
+      "qid": "Q6466022",
+      "title": "La cathédrale engloutie",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Claude_Debussy_La_cathedrale_engloutie_The_Submerged_Cathedral.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q369659",
+      "title": "La chute de la maison Usher",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_chute_de_la_maison_Usher_(opera)",
+      "wikipedia_extract": "La chute de la maison Usher is an unfinished opera in one act by Claude Debussy to his own libretto, based on Edgar Allan Poe's 1839 short story \"The Fall of the House of Usher\". The composer worked on the score between 1908 and 1917 but it was never completed.",
+      "pageviews_yearly": 5987
+    },
+    {
+      "qid": "Q6466152",
+      "title": "La fille aux cheveux de lin",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Debussy_-_La_fille_aux_cheveux_de_lin.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q1057812",
+      "title": "La mer",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp54",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_mer_(Debussy)",
+      "wikipedia_extract": "La mer, trois esquisses symphoniques pour orchestre, or simply La mer, L. 109, CD. 111, is an orchestral composition by the French composer Claude Debussy.",
+      "pageviews_yearly": 55664,
+      "movements": [
+        {
+          "qid": "Q104602449"
+        },
+        {
+          "qid": "Q104602582"
+        },
+        {
+          "qid": "Q104602604"
+        }
+      ]
+    },
+    {
+      "qid": "Q6466330",
+      "title": "La plus que lente",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Debussy_Claude_-_La_plus_que_lente.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q29106235",
+      "title": "La soirée dans Grenade"
+    },
+    {
+      "qid": "Q6466452",
+      "title": "La sérénade interrompue",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_s%C3%A9r%C3%A9nade_interrompue",
+      "wikipedia_extract": "La sérénade interrompue is a musical composition for solo piano by French composer Claude Debussy. It is the ninth piece in Book I of Debussy's Préludes (1909–1910). It takes about three minutes to perform.",
+      "pageviews_yearly": 2697
+    },
+    {
+      "qid": "Q29217416",
+      "title": "La terrasse des audiences du clair de lune",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Debussy_Prelude_Book_2_No_7_La_terrasse_des_audiences_du_clair_de_lune.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q130708763",
+      "title": "Le Printemps",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Printemps_Paraphrase_CDebussy_-_LRoques.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q1514166",
+      "title": "Le martyre de Saint Sébastien",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp49",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Le_Martyre_de_saint_S%C3%A9bastien",
+      "wikipedia_extract": "Le Martyre de saint Sébastien is a five-act musical mystery play on the subject of Saint Sebastian, with a text written in 1911 by the Italian author Gabriele D'Annunzio and incidental music by the French composer Claude Debussy (L.130).",
+      "pageviews_yearly": 8503
+    },
+    {
+      "qid": "Q29177506",
+      "title": "Le vent dans la plaine",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Debussy_Prelude_Bk_1_No_3_Le_Vent_dans_la_plaine.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q107010723",
+      "title": "Les Baisers",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp169"
+    },
+    {
+      "qid": "Q123021580",
+      "title": "Les Elfes"
+    },
+    {
+      "qid": "Q122983091",
+      "title": "Les Papillons",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp225"
+    },
+    {
+      "qid": "Q29177532",
+      "title": "Les collines d'Anacapri",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Les_collines_dAnacapri.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q29217378",
+      "title": "Les fées sont d'exquises danseuses",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Debussy_Prelude_Book_2_No_4_Les_fees_sont_dexquises_danseuses.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q29217449",
+      "title": "Les tierces alternées"
+    },
+    {
+      "qid": "Q11348655",
+      "title": "Lindaraja",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp115"
+    },
+    {
+      "qid": "Q98745126",
+      "title": "Love Affair(s)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Love_Affair(s)",
+      "wikipedia_extract": "Love Affair(s) (Original title, French: Les Choses qu'on dit, les choses qu'on fait, lit. 'The things we say, the things we do') is a 2020 French drama film written and directed by Emmanuel Mouret. The film stars Camelia Jordana, Niels Schneider, Vincent Macaigne and Julia Piaton.",
+      "pageviews_yearly": 15544
+    },
+    {
+      "qid": "Q107001117",
+      "title": "Madrid",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp129"
+    },
+    {
+      "qid": "Q109350493",
+      "title": "Maestro",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maestro_in_Blue",
+      "wikipedia_extract": "Maestro in Blue is a Greek drama television series airing on Mega Channel in Greece and through Netflix worldwide. The series consists of three seasons with a total of 19 episodes.",
+      "pageviews_yearly": 56264
+    },
+    {
+      "qid": "Q54974443",
+      "title": "Maintenant que le père de Pelléas est sauvé"
+    },
+    {
+      "qid": "Q11311621",
+      "title": "Marche écossaise, sur un thème populaire",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp113"
+    },
+    {
+      "qid": "Q120033152",
+      "title": "Mazurka",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp80"
+    },
+    {
+      "qid": "Q29117940",
+      "title": "Menuet",
+      "has_midi": true,
+      "midi_files": [
+        "midi/II_Menuet.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q29158540",
+      "title": "Mouvement",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Mouvement_Images_Nr_III_C_Debussy.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q122974535",
+      "title": "Musique",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp54"
+    },
+    {
+      "qid": "Q56459412",
+      "title": "Nachteiland"
+    },
+    {
+      "qid": "Q1156010",
+      "title": "No. 5 the Film",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/No._5_the_Film",
+      "wikipedia_extract": "No. 5 the Film is a 2004 180-second short film directed by Baz Luhrmann and starring Nicole Kidman and Rodrigo Santoro. Karl Lagerfeld designed the costumes; he also briefly appears in the film. It is part of a new breed of advertising crossover films known as branded content. It had a budget of US$33 million, financed exclusively by Chanel. The film is an extended television commercial for Chanel No. 5 perfume. The film was initially screened in many North American cinemas during the \"Coming Attractions\" section preceding the main feature. During the 2006 Christmas season, an edited 30-second TV spot was shown on primetime on many networks in Canada and the United States. Kidman was paid $3 million for her role in the advertisement.",
+      "pageviews_yearly": 15384
+    },
+    {
+      "qid": "Q6044282",
+      "title": "Nocturne (Debussy)",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Nocturne_CDebussy.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q123115069",
+      "title": "Nocturne et Scherzo",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp73"
+    },
+    {
+      "qid": "Q6045126",
+      "title": "Northless"
+    },
+    {
+      "qid": "Q1138968",
+      "title": "Nostalghia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nostalghia",
+      "wikipedia_extract": "Nostalghia is a 1983 drama film directed by Andrei Tarkovsky and starring Oleg Yankovsky, Domiziana Giordano and Erland Josephson. Tarkovsky co-wrote the screenplay with Tonino Guerra.",
+      "pageviews_yearly": 99880
+    },
+    {
+      "qid": "Q107001372",
+      "title": "Nuit d'étoiles",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp130"
+    },
+    {
+      "qid": "Q29217428",
+      "title": "Ondine"
+    },
+    {
+      "qid": "Q29106224",
+      "title": "Pagodes",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp90"
+    },
+    {
+      "qid": "Q29117951",
+      "title": "Passepied"
+    },
+    {
+      "qid": "Q82713294",
+      "title": "Pelléas et Mélisande : [programme] : lyric drama in 5 acts"
+    },
+    {
+      "qid": "Q1853293",
+      "title": "Petite Suite"
+    },
+    {
+      "qid": "Q111754658",
+      "title": "Petite pièce",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Petite_piece.mid",
+        "midi/Debussy_-_Petite_Piece.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q17001543",
+      "title": "Piano Trio",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp66",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Trio_(Debussy)",
+      "wikipedia_extract": "The Piano Trio in G major, L. 5, was written by an 18-year-old Claude Debussy in 1880 in Fiesole, Italy, where he resided at Nadezhda von Meck's. Most of the autograph of the work was thought to be lost until 1982, when it was discovered from the legacy of Maurice Dumesnil, a pupil of Debussy's. The first edition was published in 1986.",
+      "pageviews_yearly": 6539
+    },
+    {
+      "qid": "Q122960217",
+      "title": "Pierrot",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp139"
+    },
+    {
+      "qid": "Q29159981",
+      "title": "Poissons d'or",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp95"
+    },
+    {
+      "qid": "Q112756669",
+      "title": "Poissons d'or",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp95"
+    },
+    {
+      "qid": "Q1687008",
+      "title": "Portrait of Jennie",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Portrait_of_Jennie",
+      "wikipedia_extract": "Portrait of Jennie is a 1948 American supernatural film directed by William Dieterle, produced by David O. Selznick, and starring Jennifer Jones, Joseph Cotten, Ethel Barrymore, and Lillian Gish. Its plot follows an impoverished New York City painter whose chance encounter with an old-fashioned young woman in Central Park changes the course of his life. It is based on the 1940 novella of the same name by Robert Nathan.",
+      "pageviews_yearly": 51938
+    },
+    {
+      "qid": "Q7235697",
+      "title": "Pour le piano",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Sarabande_CDebussy_Pour_le_piano_No2.mid",
+        "midi/Claude_Debussy_Pour_le_Piano_II_Sarabande.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q61654598",
+      "title": "Première Suite d'Orchestre",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp51"
+    },
+    {
+      "qid": "Q7245285",
+      "title": "Printemps",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp227",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Printemps_(ballet)",
+      "wikipedia_extract": "\nPrintemps is a ballet made on New York City Ballet by Lorca Massine to Debussy's eponymous music from 1887. The premiere took place on January 13, 1972, at the New York State Theater, Lincoln Center.",
+      "pageviews_yearly": 727
+    },
+    {
+      "qid": "Q11513319",
+      "title": "Printemps",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Voici_Que_Le_Printemps.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q29117932",
+      "title": "Prélude",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp59"
+    },
+    {
+      "qid": "Q29168222",
+      "title": "Prélude",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp59"
+    },
+    {
+      "qid": "Q512715",
+      "title": "Préludes",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Debussy_-_Preludes_-_Book_I_-_I.mid",
+        "midi/Debussy_-_Preludes_-_Book_I_-_II.mid",
+        "midi/Debussy_-_Preludes_-_Book_I_-_XII.mid",
+        "midi/Debussy_-_Preludes_-_Book_I_-_VI.mid",
+        "midi/Debussy_-_Preludes_-_Book_I_-_IV.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q953545",
+      "title": "Red Lights",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Red_Lights_(2004_film)",
+      "wikipedia_extract": "Red Lights is a 2004 French thriller film directed by Cédric Kahn. It was adapted from the eponymous 1955 Georges Simenon novel set in the Northeastern United States. The film is set in modern-day France.",
+      "pageviews_yearly": 5236
+    },
+    {
+      "qid": "Q7307341",
+      "title": "Reflets dans l'eau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Reflets_dans_l'eau",
+      "wikipedia_extract": "Claude Debussy's Reflets dans l'eau is the first of three piano pieces from his first volume of Images, which are frequently performed separately. It was written in 1905.",
+      "pageviews_yearly": 12653
+    },
+    {
+      "qid": "Q122975644",
+      "title": "Regret",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp168"
+    },
+    {
+      "qid": "Q42958595",
+      "title": "Rhapsodie pour orchestre et saxophone",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp62",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rhapsodie_for_saxophone_and_orchestra",
+      "wikipedia_extract": "Rhapsodie for saxophone and orchestra, L.98, also known as Rhapsodie mauresque or Rhapsodie orientale, is a piece for alto saxophone and accompaniment by Claude Debussy. Completed in solo and piano form in 1911, the piece is most well known through its 1919 orchestration of the accompaniment by Jean Roger-Ducasse.",
+      "pageviews_yearly": 4962
+    },
+    {
+      "qid": "Q3891952",
+      "title": "Rodrigue et Chimène",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp4",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rodrigue_et_Chim%C3%A8ne",
+      "wikipedia_extract": "Rodrigue et Chimène is an unfinished opera in three acts by Claude Debussy. The French libretto, by Catulle Mendès, is based on the plays Las Mocedades del Cid by Guillén de Castro y Bellvís and Corneille's Le Cid which deal with the legend of El Cid. It was first staged in a version completed by Edison Denisov in Lyon on 14 May 1993.",
+      "pageviews_yearly": 3649
+    },
+    {
+      "qid": "Q122971964",
+      "title": "Romance (FL 65)"
+    },
+    {
+      "qid": "Q122978496",
+      "title": "Rondeau",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp150"
+    },
+    {
+      "qid": "Q109043491",
+      "title": "Rondel chinois",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp141"
+    },
+    {
+      "qid": "Q1851122",
+      "title": "Rêverie",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Reverie_Debussy_fix.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q107002913",
+      "title": "Rêverie",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp81"
+    },
+    {
+      "qid": "Q29168224",
+      "title": "Sarabande",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp88"
+    },
+    {
+      "qid": "Q7421918",
+      "title": "Sarabande and Danse",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sarabande_and_Danse_(Clifford)",
+      "wikipedia_extract": "\nSarabande and Danse is a ballet choreographed by John Clifford to Debussy's Sarabande (1901) and Danse (1890). The premiere took place on 21 May 1970, with New York City Ballet at the New York State Theater, Lincoln Center.",
+      "pageviews_yearly": 1399
+    },
+    {
+      "qid": "Q7421919",
+      "title": "Sarabande and Danse",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sarabande_and_Danse_(d'Amboise)",
+      "wikipedia_extract": "Sarabande and Danse is a ballet made by Jacques d'Amboise to Debussy's Sarabande (1901) and Danse (1890). The premiere took place May 29, 1975, as part of New York City Ballet's Ravel Festival at the Lincoln Center.",
+      "pageviews_yearly": 3194
+    },
+    {
+      "qid": "Q29099933",
+      "title": "Serenade for the Doll"
+    },
+    {
+      "qid": "Q3485662",
+      "title": "Six sonatas for various instruments",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Six_sonatas_for_various_instruments",
+      "wikipedia_extract": "\nClaude Debussy's Six sonatas for various instruments was a projected cycle of sonatas that was interrupted by the composer's death in 1918, after he had composed only half of the projected sonatas. He left behind his sonatas for cello and piano (1915), flute, viola and harp (1915), and violin and piano (1916–1917).",
+      "pageviews_yearly": 10150,
+      "movements": [
+        {
+          "qid": "Q2747188"
+        },
+        {
+          "qid": "Q2719749"
+        },
+        {
+          "qid": "Q2628153"
+        }
+      ]
+    },
+    {
+      "qid": "Q3589146",
+      "title": "Six épigraphes antiques",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp114",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Six_%C3%A9pigraphes_antiques",
+      "wikipedia_extract": "\nSix épigraphes antiques, L. 131, CD. 139, is a suite of six pieces by Claude Debussy, originally written for piano duo. Completed in July 1914, the suite was Debussy's only completed composition that year. In 1915 Debussy transcribed them for piano solo. Much of the music is taken from the musical accompaniments he had written in 1901 for his friend Pierre Louÿs's erotic lesbian poems Les Chansons de Bilitis. In 1939 the Swiss conductor Ernest Ansermet created an orchestration of the suite.",
+      "pageviews_yearly": 7035
+    },
+    {
+      "qid": "Q122979196",
+      "title": "Souhait",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp135"
+    },
+    {
+      "qid": "Q1346508",
+      "title": "String Quartet",
+      "imslp_id": "String_Quartet_in_G_minor,_Op.10_(Debussy,_Claude)",
+      "pdf_filename": "Debussy.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp64",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_(Debussy)",
+      "wikipedia_extract": "Claude Debussy completed his String Quartet in G minor, Op. 10 (L.91), in 1893, when he was 31 years old. It is Debussy's only string quartet.",
+      "pageviews_yearly": 12425
+    },
+    {
+      "qid": "Q1367599",
+      "title": "Suite bergamasque",
+      "has_midi": true,
+      "midi_files": [
+        "midi/IV_Passepied.mid",
+        "midi/Debussy_-_Suite_Bergamasque_-_II_Menuet.mid",
+        "midi/Debussy_-_Suite_Bergamasque_-_I_Prelude.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q107010620",
+      "title": "Symphonie en si mineur"
+    },
+    {
+      "qid": "Q123010385",
+      "title": "Sérénade",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp154"
+    },
+    {
+      "qid": "Q120000102",
+      "title": "Tarentelle styrienne",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp82"
+    },
+    {
+      "qid": "Q29099954",
+      "title": "The Little Shepherd",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Childrens_Corner_-_The_Little_Shepherd.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q1215386",
+      "title": "The Peacock Feather"
+    },
+    {
+      "qid": "Q768223",
+      "title": "The Secret Heart",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Secret_Heart",
+      "wikipedia_extract": "The Secret Heart is a 1946 American drama film directed by Robert Z. Leonard and starring Claudette Colbert, Walter Pidgeon and June Allyson.",
+      "pageviews_yearly": 4966
+    },
+    {
+      "qid": "Q29099944",
+      "title": "The Snow is Dancing"
+    },
+    {
+      "qid": "Q57934196",
+      "title": "The Submerged Cathedral"
+    },
+    {
+      "qid": "Q3286447",
+      "title": "The little Nigar",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp98",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Little_Nigar",
+      "wikipedia_extract": "The Little Nigar is the original title by composer Claude Debussy for a short piece for piano, composed in 1909 for a piano method and published the same year. It was later also published as a single piece, entitled The Little Negro and Le petit nègre. In more recent times, the piece has also been published under the title Le petit noir.",
+      "pageviews_yearly": 22652
+    },
+    {
+      "qid": "Q15991008",
+      "title": "Three Songs of Bilitis",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp179"
+    },
+    {
+      "qid": "Q29168226",
+      "title": "Toccata"
+    },
+    {
+      "qid": "Q107043269",
+      "title": "Tragédie",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp142"
+    },
+    {
+      "qid": "Q123057605",
+      "title": "Trois Chansons de France"
+    },
+    {
+      "qid": "Q7912619",
+      "title": "Valse romantique",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Valse_romantique_Claude_Debussy.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q3879159",
+      "title": "Villancico para los niños que ya no tienen hogar"
+    },
+    {
+      "qid": "Q2530460",
+      "title": "Voiles",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp130",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Voiles",
+      "wikipedia_extract": "Voiles is a musical composition for solo piano by French composer Claude Debussy that was composed in 1909. It is the second piece in Debussy's first book of préludes, published in 1910. The title may be translated as either veils or sails; both meanings can be connected to the musical structure.",
+      "pageviews_yearly": 8313
+    },
+    {
+      "qid": "Q29257187",
+      "title": "pour les accords"
+    },
+    {
+      "qid": "Q29257153",
+      "title": "pour les agréments"
+    },
+    {
+      "qid": "Q29257179",
+      "title": "pour les arpèges composés",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp105"
+    },
+    {
+      "qid": "Q29257143",
+      "title": "pour les degrés chromatiques"
+    },
+    {
+      "qid": "Q29257135",
+      "title": "pour les huit doigts"
+    },
+    {
+      "qid": "Q29257159",
+      "title": "pour les notes répétées"
+    },
+    {
+      "qid": "Q29257125",
+      "title": "pour les octaves"
+    },
+    {
+      "qid": "Q29257106",
+      "title": "pour les quartes",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp106"
+    },
+    {
+      "qid": "Q29257116",
+      "title": "pour les sixtes",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp106"
+    },
+    {
+      "qid": "Q29257168",
+      "title": "pour les sonorités opposées"
+    },
+    {
+      "qid": "Q29257098",
+      "title": "pour les tierces",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp106"
+    },
+    {
+      "qid": "Q29257089",
+      "title": "pour les “cinq doigts”, d'après Monsieur Czerny"
+    },
+    {
+      "qid": "Q123022865",
+      "title": "Églogue"
+    },
+    {
+      "qid": "Q1188389",
+      "title": "Études",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/claude-debussy-1862-pp106",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/%C3%89tudes_(Debussy)",
+      "wikipedia_extract": "The Études are the final collection for piano by Claude Debussy, comprising twelve pieces composed between August 5 and September 29, 1915. Divided into two \"books\" and dedicated to the memory of Frédéric Chopin, they were premiered partially by pianists George Copeland on November 21, 1916, in New York City, Walter Rummel on December 14, 1916, at a concert for the benefit of \"L'Aide affectueuse aux musiciens\" in Paris, and Marguerite Long on November 10, 1917, at the Société nationale de musique.",
+      "pageviews_yearly": 13624,
+      "movements": [
+        {
+          "qid": "Q29257089"
+        },
+        {
+          "qid": "Q29257098"
+        },
+        {
+          "qid": "Q29257106"
+        },
+        {
+          "qid": "Q29257116"
+        },
+        {
+          "qid": "Q29257125"
+        },
+        {
+          "qid": "Q29257135"
+        },
+        {
+          "qid": "Q29257143"
+        },
+        {
+          "qid": "Q29257153"
+        },
+        {
+          "qid": "Q29257159"
+        },
+        {
+          "qid": "Q29257168"
+        },
+        {
+          "qid": "Q29257179"
+        },
+        {
+          "qid": "Q29257187"
+        }
+      ]
+    }
+  ]
+}

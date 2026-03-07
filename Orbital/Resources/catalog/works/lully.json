@@ -1,0 +1,2911 @@
+{
+  "composer_slug": "lully",
+  "composer_qid": "Q1192",
+  "work_count": 671,
+  "midi_file_count": 2,
+  "works": [
+    {
+      "qid": "Q3232857",
+      "title": "Les Fâcheux",
+      "date": "1661-00-00"
+    },
+    {
+      "qid": "Q3224315",
+      "title": "Marriage by Compulsion",
+      "imslp_id": "Le_mariage_forcé,_LWV_20_(Lully,_Jean-Baptiste)",
+      "pdf_filename": "Lully-lwv20-philidor.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1664-00-00"
+    },
+    {
+      "qid": "Q2044613",
+      "title": "L'Amour médecin",
+      "imslp_id": "L'amour_médecin,_LWV_29_(Lully,_Jean-Baptiste)",
+      "pdf_filename": "Lully-lwv29-philidor.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-baptiste-lully-1632-pp115",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/L'Amour_m%C3%A9decin",
+      "wikipedia_extract": "L'Amour médecin is a French comedy written by Molière. It was presented for the first time by order of King Louis XIV at Versailles on September 22, 1665. Molière's foreword to the text states that the play is only a sketch, a mere impromptu commissioned for one of the Royal Entertainments. It was the most hurriedly written of all his commissioned works. It was written, rehearsed, and performed, all within five days. Original music was composed for the play by Jean-Baptiste Lully. This music still exists and has been recorded in recent years.",
+      "pageviews_yearly": 4857,
+      "date": "1665-00-00"
+    },
+    {
+      "qid": "Q4229750",
+      "title": "Pastorale comique",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-baptiste-lully-1632-pp116",
+      "date": "1666-00-00"
+    },
+    {
+      "qid": "Q3227160",
+      "title": "Le Sicilien ou l'Amour peintre",
+      "date": "1667-00-00"
+    },
+    {
+      "qid": "Q919540",
+      "title": "George Dandin ou le Mari confondu",
+      "imslp_id": "George_Dandin,_LWV_38_(Lully,_Jean-Baptiste)",
+      "pdf_filename": "Lully-lwv38-philidor.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/George_Dandin_ou_le_Mari_confondu",
+      "wikipedia_extract": "\nGeorge Dandin ou le Mari confondu is a French Comédie-ballet in three acts by Molière, with music by Jean-Baptiste Lully, choreography by Pierre Beauchamp, and architecture/staging by Carlo Vigarani and Henri de Gissey. It premiered at the Palace of Versailles, seen by Louis XIV and guests, numbering possibly to 3000 total people, on 18 July 1668, during the Le Grand divertissement royal, produced by court financier Jean-Baptiste Colbert, celebrating the peace from the Treaty of Aachen. Without the ballet and music, the comedy appeared to the Paris public at the theatre of the Palais-Royal beginning on 9 November 1668.",
+      "pageviews_yearly": 6018,
+      "date": "1668-00-00"
+    },
+    {
+      "qid": "Q2456214",
+      "title": "Monsieur de Pourceaugnac",
+      "imslp_id": "Monsieur_de_Pourceaugnac,_LWV_41_(Lully,_Jean-Baptiste)",
+      "pdf_filename": "PMLP125845-Ballet_de_Pourceaugnac_Lully_Jean-Baptiste_bpt6k5390335f.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Monsieur_de_Pourceaugnac",
+      "wikipedia_extract": "Monsieur de Pourceaugnac is a three-act comédie-ballet—a ballet interrupted by spoken dialogue—by Molière, first presented on 6 October 1669 before the court of Louis XIV at the Château of Chambord by Molière's troupe of actors. Subsequent public performances were given at the theatre of the Palais-Royal beginning on 18 November 1669. The music was composed by Jean-Baptiste Lully, the choreography was by Pierre Beauchamp, the sets were by Carlo Vigarani, and the costumes were created by the chevalier d’Arvieux.",
+      "pageviews_yearly": 4437,
+      "date": "1669-00-00"
+    },
+    {
+      "qid": "Q3230474",
+      "title": "Les amants magnifiques",
+      "date": "1670-00-00"
+    },
+    {
+      "qid": "Q3410202",
+      "title": "Psyché",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-baptiste-lully-1632-pp123",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Psych%C3%A9_(play)",
+      "wikipedia_extract": "Psyché is a five-act tragédie-ballet, originally written as a prose text by Molière and versified in collaboration with Pierre Corneille and Philippe Quinault, with music composed by Jean-Baptiste Lully in 1671 and by Marc-Antoine Charpentier in 1684. The plot is based on the story of Cupid and Psyche in The Golden Ass, written in the 2nd century by Apuleius. It was first performed on 17 January 1671 before the royal court of Louis XIV at the Théâtre des Tuileries, with ballets by Pierre Beauchamps, Anthoine des Brosses, and Nicolas Delorge, and spectacular scenery and special effects designed by Carlo Vigarani.",
+      "pageviews_yearly": 6244,
+      "date": "1671-00-00"
+    },
+    {
+      "qid": "Q341496",
+      "title": "Acis et Galatée",
+      "imslp_id": "Acis_et_Galatée,_LWV_73_(Lully,_Jean-Baptiste)",
+      "pdf_filename": "PMLP216368-B-Br_1562612_LR.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-baptiste-lully-1632-pp126",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Acis_et_Galat%C3%A9e",
+      "wikipedia_extract": "Acis et Galatée is an opera by Jean-Baptiste Lully. Unlike most of his operas, which are designated tragédies en musique, Lully called this work a pastorale-héroïque, because it was on a pastoral theme and had only three acts compared to the usual five. Otherwise, there is little musically or dramatically to distinguish it from Lully's tragédies.",
+      "pageviews_yearly": 3736,
+      "date": "1686-00-00"
+    },
+    {
+      "qid": "Q1361941",
+      "title": "Armide",
+      "imslp_id": "Armide,_LWV_71_(Lully,_Jean-Baptiste)",
+      "pdf_filename": "Armidems.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-baptiste-lully-1632-pp85",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Armide_(Lully)",
+      "wikipedia_extract": "Armide is an opera in five acts by Jean-Baptiste Lully. The libretto by Philippe Quinault is based on Torquato Tasso's poem La Gerusalemme liberata. The work is in the form of a tragédie en musique, a genre invented by Lully and Quinault.",
+      "pageviews_yearly": 14540,
+      "date": "1686-00-00"
+    },
+    {
+      "qid": "Q106829375",
+      "title": "Achille et Polixene, Entrée de Pastres Troyens (Act III, Scene IX)"
+    },
+    {
+      "qid": "Q106829376",
+      "title": "Achille et Polixene, Entrée de Pastres Troyens (Act III, Scene IX)"
+    },
+    {
+      "qid": "Q106829373",
+      "title": "Achille et Polixene, Hautbois"
+    },
+    {
+      "qid": "Q106830075",
+      "title": "Achille et Polixene, Passacaille"
+    },
+    {
+      "qid": "Q3775997",
+      "title": "Achille et Polyxène",
+      "imslp_id": "Achille_et_Polixène,_LWV_74_(Lully,_Jean-Baptiste)",
+      "pdf_filename": "Lully_-Achille.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-baptiste-lully-1632-pp86",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Achille_et_Polyx%C3%A8ne",
+      "wikipedia_extract": "Achille et Polyxène is a tragédie lyrique containing a prologue and five acts based on Virgil's Aeneid with a French libretto by Jean Galbert de Campistron. The opera's overture and first act were composed by Jean-Baptiste Lully, who died from a conducting injury before he could complete the score. The prologue and the remaining acts are the work of his pupil Pascal Collasse who finished the work, eight months after Lully's death on 22 March 1687. Acts 1 and 4 of the ballet was created by Louis Lestang, and the ballet to the prologue and acts 2 and 3 were by Louis-Guillaume Pécour. The opera was first performed on 7 November 1687, by the Paris Opera at the Théâtre du Palais-Royal in Paris.",
+      "pageviews_yearly": 3831
+    },
+    {
+      "qid": "Q106830238",
+      "title": "Acis et Galatée",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Passacaille_-_choeur.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q106829649",
+      "title": "Acis et Galatée, Chaconne"
+    },
+    {
+      "qid": "Q106829697",
+      "title": "Acis et Galatée, Chaconne"
+    },
+    {
+      "qid": "Q106830031",
+      "title": "Acis et Galatée, Chaconne"
+    },
+    {
+      "qid": "Q106830042",
+      "title": "Acis et Galatée, Chaconne"
+    },
+    {
+      "qid": "Q106829763",
+      "title": "Acis et Galatée, Chaconne"
+    },
+    {
+      "qid": "Q106829876",
+      "title": "Acis et Galatée, Chaconne"
+    },
+    {
+      "qid": "Q106830085",
+      "title": "Acis et Galatée, Chaconne"
+    },
+    {
+      "qid": "Q106830123",
+      "title": "Acis et Galatée, Chaconne"
+    },
+    {
+      "qid": "Q106830132",
+      "title": "Acis et Galatée, Chaconne"
+    },
+    {
+      "qid": "Q106830230",
+      "title": "Acis et Galatée, Chaconne"
+    },
+    {
+      "qid": "Q106829372",
+      "title": "Acis et Galatée, Chaconne"
+    },
+    {
+      "qid": "Q106829613",
+      "title": "Acis et Galatée, Passacaille"
+    },
+    {
+      "qid": "Q106829699",
+      "title": "Acis et Galatée, Rigaudon"
+    },
+    {
+      "qid": "Q106830077",
+      "title": "Acis et Galatée, Rigaudon"
+    },
+    {
+      "qid": "Q106829768",
+      "title": "Acis et Galatée, Rigaudon"
+    },
+    {
+      "qid": "Q106829769",
+      "title": "Acis et Galatée, Rigaudon"
+    },
+    {
+      "qid": "Q106829778",
+      "title": "Acis et Galatée, Rigaudon"
+    },
+    {
+      "qid": "Q106829779",
+      "title": "Acis et Galatée, Rigaudon"
+    },
+    {
+      "qid": "Q106829783",
+      "title": "Acis et Galatée, Rigaudon"
+    },
+    {
+      "qid": "Q106829784",
+      "title": "Acis et Galatée, Rigaudon"
+    },
+    {
+      "qid": "Q106829473",
+      "title": "Acis et Galatée, Rigaudon"
+    },
+    {
+      "qid": "Q106830120",
+      "title": "Acis et Galatée, Rigaudon"
+    },
+    {
+      "qid": "Q106830121",
+      "title": "Acis et Galatée, Rigaudon"
+    },
+    {
+      "qid": "Q106830125",
+      "title": "Acis et Galatée, Rigaudon"
+    },
+    {
+      "qid": "Q106830237",
+      "title": "Acis et Galatée, Rigaudon"
+    },
+    {
+      "qid": "Q106830271",
+      "title": "Acis et Galatée, Rigaudon"
+    },
+    {
+      "qid": "Q106830272",
+      "title": "Acis et Galatée, Rigaudon"
+    },
+    {
+      "qid": "Q29208532",
+      "title": "Air",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-baptiste-lully-1632-pp337"
+    },
+    {
+      "qid": "Q109242690",
+      "title": "Alceste",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-baptiste-lully-1632-pp74"
+    },
+    {
+      "qid": "Q2019911",
+      "title": "Alceste",
+      "imslp_id": "Alceste,_LWV_50_(Lully,_Jean-Baptiste)",
+      "pdf_filename": "PMLP71225-Alceste__LWV_50__Jean-Baptiste_Lully___1708.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-baptiste-lully-1632-pp74",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alceste_(Lully)",
+      "wikipedia_extract": "Alceste, ou Le triomphe d'Alcide is a tragédie en musique in a prologue and five acts by Jean-Baptiste Lully. The French-language libretto is by Philippe Quinault, after Euripides' Alcestis. It was first performed on 19 January 1674 at the Théâtre du Palais-Royal by the Paris Opera.",
+      "pageviews_yearly": 6203
+    },
+    {
+      "qid": "Q106830092",
+      "title": "Alceste, Air Alcide"
+    },
+    {
+      "qid": "Q106829466",
+      "title": "Alceste, Gigue"
+    },
+    {
+      "qid": "Q106829752",
+      "title": "Alceste, Jeunes cœurs"
+    },
+    {
+      "qid": "Q106829718",
+      "title": "Alceste, La descente de la Gloire"
+    },
+    {
+      "qid": "Q106829359",
+      "title": "Alceste, Loure"
+    },
+    {
+      "qid": "Q106829657",
+      "title": "Alceste, Menuet"
+    },
+    {
+      "qid": "Q106829750",
+      "title": "Alceste, Menuet"
+    },
+    {
+      "qid": "Q106829717",
+      "title": "Alceste, Ouverture"
+    },
+    {
+      "qid": "Q106829544",
+      "title": "Alceste, Ouverture"
+    },
+    {
+      "qid": "Q106830221",
+      "title": "Alceste, Ouverture"
+    },
+    {
+      "qid": "Q106829759",
+      "title": "Alceste, Premier Air pour les Pastres"
+    },
+    {
+      "qid": "Q106829658",
+      "title": "Alceste, Quel cœur sauvage (Menuet)"
+    },
+    {
+      "qid": "Q106829578",
+      "title": "Alceste, Quel cœur sauvage (Menuet)"
+    },
+    {
+      "qid": "Q106830036",
+      "title": "Alcide"
+    },
+    {
+      "qid": "Q106830035",
+      "title": "Alcide, Air de trompette"
+    },
+    {
+      "qid": "Q2840837",
+      "title": "Amadis",
+      "imslp_id": "Amadis,_LWV_63_(Lully,_Jean-Baptiste)",
+      "pdf_filename": "PMLP05458-Amadis.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-baptiste-lully-1632-pp83",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amadis_(Lully)",
+      "wikipedia_extract": "Amadis or Amadis de Gaule is a tragédie en musique in a prologue and five acts by Jean-Baptiste Lully to a libretto by Philippe Quinault based on Nicolas Herberay des Essarts' adaptation of Garci Rodríguez de Montalvo's Amadis de Gaula. It was premiered by the Paris Opera at the Théâtre du Palais-Royal sometime from January 15 to 18, 1684. There was a later production at Versailles without scenery or machines in 1685.",
+      "pageviews_yearly": 3687
+    },
+    {
+      "qid": "Q106830063",
+      "title": "Amadis, Chaconne"
+    },
+    {
+      "qid": "Q106830236",
+      "title": "Amadis, Chaconne"
+    },
+    {
+      "qid": "Q106829882",
+      "title": "Amadis, Cœurs accablez (Menuet)"
+    },
+    {
+      "qid": "Q106830153",
+      "title": "Amadis, Cœurs accablez (Menuet)"
+    },
+    {
+      "qid": "Q106830162",
+      "title": "Amadis, Gigue"
+    },
+    {
+      "qid": "Q106830161",
+      "title": "Amadis, Marche"
+    },
+    {
+      "qid": "Q106830155",
+      "title": "Amadis, Menuet"
+    },
+    {
+      "qid": "Q106829799",
+      "title": "Amadis, Ouverture"
+    },
+    {
+      "qid": "Q106830151",
+      "title": "Amadis, Ouverture"
+    },
+    {
+      "qid": "Q106830159",
+      "title": "Amadis, Prelude, Bois épais"
+    },
+    {
+      "qid": "Q106829340",
+      "title": "Amadis, Premier Air"
+    },
+    {
+      "qid": "Q106830157",
+      "title": "Amadis, Prélude, Amour que veux-tu de moi?"
+    },
+    {
+      "qid": "Q106830154",
+      "title": "Amadis, Second Air"
+    },
+    {
+      "qid": "Q106829650",
+      "title": "Amadis, Suivons l’amour (Menuet)"
+    },
+    {
+      "qid": "Q106829654",
+      "title": "Amadis, Suivons l’amour (Menuet)"
+    },
+    {
+      "qid": "Q106829770",
+      "title": "Amadis, Suivons l’amour (Menuet)"
+    },
+    {
+      "qid": "Q106829787",
+      "title": "Amadis, Suivons l’amour (Menuet)"
+    },
+    {
+      "qid": "Q106829840",
+      "title": "Amadis, Suivons l’amour (Menuet)"
+    },
+    {
+      "qid": "Q106829573",
+      "title": "Amadis, Suivons l’amour (Menuet)"
+    },
+    {
+      "qid": "Q106830152",
+      "title": "Amadis, Suivons l’amour (Menuet)"
+    },
+    {
+      "qid": "Q106829765",
+      "title": "Amadis, Vous ne devez plus attendre"
+    },
+    {
+      "qid": "Q106829838",
+      "title": "Amadis, Vous ne devez plus attendre"
+    },
+    {
+      "qid": "Q106829609",
+      "title": "Amadis, Vous ne devez plus attendre"
+    },
+    {
+      "qid": "Q106830110",
+      "title": "Amadis, Vous ne devez plus attendre"
+    },
+    {
+      "qid": "Q106830158",
+      "title": "Amadis, Vous ne devez plus attendre"
+    },
+    {
+      "qid": "Q106830241",
+      "title": "Amadis, Vous ne devez plus attendre"
+    },
+    {
+      "qid": "Q106829367",
+      "title": "Amadis, Vous ne devez plus attendre"
+    },
+    {
+      "qid": "Q106830175",
+      "title": "Amadis, Vous ne devez plus attendre (air)"
+    },
+    {
+      "qid": "Q106830195",
+      "title": "Armide, Entrée"
+    },
+    {
+      "qid": "Q106829626",
+      "title": "Armide, Entrée de la Gloire"
+    },
+    {
+      "qid": "Q106830197",
+      "title": "Armide, Gavotte"
+    },
+    {
+      "qid": "Q106830200",
+      "title": "Armide, Les plaisirs"
+    },
+    {
+      "qid": "Q106829656",
+      "title": "Armide, Menuet"
+    },
+    {
+      "qid": "Q106830196",
+      "title": "Armide, Menuet"
+    },
+    {
+      "qid": "Q106829352",
+      "title": "Armide, Menuet"
+    },
+    {
+      "qid": "Q106829371",
+      "title": "Armide, Menuet"
+    },
+    {
+      "qid": "Q106830194",
+      "title": "Armide, Ouverture"
+    },
+    {
+      "qid": "Q106829624",
+      "title": "Armide, Passacaille"
+    },
+    {
+      "qid": "Q106829672",
+      "title": "Armide, Passacaille"
+    },
+    {
+      "qid": "Q106829695",
+      "title": "Armide, Passacaille"
+    },
+    {
+      "qid": "Q106830057",
+      "title": "Armide, Passacaille"
+    },
+    {
+      "qid": "Q106829760",
+      "title": "Armide, Passacaille"
+    },
+    {
+      "qid": "Q106829607",
+      "title": "Armide, Passacaille"
+    },
+    {
+      "qid": "Q106829339",
+      "title": "Armide, Passacaille"
+    },
+    {
+      "qid": "Q106829350",
+      "title": "Armide, Rondeau"
+    },
+    {
+      "qid": "Q106829378",
+      "title": "Armide, Rondeau"
+    },
+    {
+      "qid": "Q106829625",
+      "title": "Armide, Second Air, Sourdines"
+    },
+    {
+      "qid": "Q106829692",
+      "title": "Armide, Second Air, Sourdines"
+    },
+    {
+      "qid": "Q106830046",
+      "title": "Armide, Second Air, Sourdines"
+    },
+    {
+      "qid": "Q106830078",
+      "title": "Armide, Second Air, Sourdines"
+    },
+    {
+      "qid": "Q106830082",
+      "title": "Armide, Second Air, Sourdines"
+    },
+    {
+      "qid": "Q106829761",
+      "title": "Armide, Second Air, Sourdines"
+    },
+    {
+      "qid": "Q106829583",
+      "title": "Armide, Second Air, Sourdines"
+    },
+    {
+      "qid": "Q106829588",
+      "title": "Armide, Second Air, Sourdines"
+    },
+    {
+      "qid": "Q106830244",
+      "title": "Armide, Second Air, Sourdines"
+    },
+    {
+      "qid": "Q106830267",
+      "title": "Armide, Second Air, Sourdines"
+    },
+    {
+      "qid": "Q2870199",
+      "title": "Atys",
+      "imslp_id": "Atys,_LWV_53_(Lully,_Jean-Baptiste)",
+      "pdf_filename": "PMLP1447785-Gavotte__1_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-baptiste-lully-1632-pp76",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Atys_(Lully)",
+      "wikipedia_extract": "Atys (Attis) is a tragédie en musique, an early form of French opera, in a prologue and five acts by Jean-Baptiste Lully to a libretto by Philippe Quinault after Ovid's Fasti. It was premiered for the royal court on 10 January 1676 by Lully's Académie Royale de Musique at the Château de Saint-Germain-en-Laye. The first public performance took place in April 1676 at the Théâtre du Palais-Royal in Paris.",
+      "pageviews_yearly": 12928
+    },
+    {
+      "qid": "Q106829617",
+      "title": "Atys, Chaconne"
+    },
+    {
+      "qid": "Q106830052",
+      "title": "Atys, Chaconne"
+    },
+    {
+      "qid": "Q106829468",
+      "title": "Atys, Chaconne"
+    },
+    {
+      "qid": "Q106829341",
+      "title": "Atys, Chaconne"
+    },
+    {
+      "qid": "Q106829381",
+      "title": "Atys, Chaconne"
+    },
+    {
+      "qid": "Q106829619",
+      "title": "Atys, Gavotte"
+    },
+    {
+      "qid": "Q106829705",
+      "title": "Atys, Gavotte"
+    },
+    {
+      "qid": "Q106829385",
+      "title": "Atys, Gavotte"
+    },
+    {
+      "qid": "Q106829800",
+      "title": "Atys, La beauté (Gavotte)"
+    },
+    {
+      "qid": "Q106829862",
+      "title": "Atys, La beauté (Gavotte)"
+    },
+    {
+      "qid": "Q106829888",
+      "title": "Atys, La beauté (Gavotte)"
+    },
+    {
+      "qid": "Q106829480",
+      "title": "Atys, La beauté (Gavotte)"
+    },
+    {
+      "qid": "Q106829576",
+      "title": "Atys, La beauté (Gavotte)"
+    },
+    {
+      "qid": "Q106830108",
+      "title": "Atys, La beauté (Gavotte)"
+    },
+    {
+      "qid": "Q106829465",
+      "title": "Atys, La beauté (Gavotte)"
+    },
+    {
+      "qid": "Q106830114",
+      "title": "Atys, La descente de Cybelle"
+    },
+    {
+      "qid": "Q106830115",
+      "title": "Atys, La descente de Cybelle"
+    },
+    {
+      "qid": "Q106829467",
+      "title": "Atys, La descente de Cybelle"
+    },
+    {
+      "qid": "Q106829616",
+      "title": "Atys, Les Songes agréables"
+    },
+    {
+      "qid": "Q106829693",
+      "title": "Atys, Les Songes agréables"
+    },
+    {
+      "qid": "Q106829749",
+      "title": "Atys, Les Songes agréables"
+    },
+    {
+      "qid": "Q106830051",
+      "title": "Atys, Les Songes agréables"
+    },
+    {
+      "qid": "Q106830222",
+      "title": "Atys, Les Songes agréables"
+    },
+    {
+      "qid": "Q106830246",
+      "title": "Atys, Les Songes agréables"
+    },
+    {
+      "qid": "Q106829370",
+      "title": "Atys, Les Songes agréables"
+    },
+    {
+      "qid": "Q106829383",
+      "title": "Atys, Les Songes agréables"
+    },
+    {
+      "qid": "Q106829642",
+      "title": "Atys, Les Songes funestes"
+    },
+    {
+      "qid": "Q106829360",
+      "title": "Atys, Les Songes funestes"
+    },
+    {
+      "qid": "Q106829719",
+      "title": "Atys, Les plaisirs à ses yeux"
+    },
+    {
+      "qid": "Q106829577",
+      "title": "Atys, Menuet"
+    },
+    {
+      "qid": "Q106830247",
+      "title": "Atys, Menuet d’Atys’"
+    },
+    {
+      "qid": "Q106830070",
+      "title": "Atys, Ouverture"
+    },
+    {
+      "qid": "Q106829543",
+      "title": "Atys, Ouverture"
+    },
+    {
+      "qid": "Q106829364",
+      "title": "Atys, Ouverture"
+    },
+    {
+      "qid": "Q106829858",
+      "title": "Atys, Quand le peril est agréable"
+    },
+    {
+      "qid": "Q106829860",
+      "title": "Atys, Quand le peril est agréable"
+    },
+    {
+      "qid": "Q106829568",
+      "title": "Atys, Que devant vous"
+    },
+    {
+      "qid": "Q106829384",
+      "title": "Atys, Que devant vous"
+    },
+    {
+      "qid": "Q106829643",
+      "title": "Atys, Second Air"
+    },
+    {
+      "qid": "Q106829708",
+      "title": "Atys, Second Air"
+    },
+    {
+      "qid": "Q106830032",
+      "title": "Atys, Second Air"
+    },
+    {
+      "qid": "Q106830223",
+      "title": "Atys, Second Air"
+    },
+    {
+      "qid": "Q106829344",
+      "title": "Atys, Second Air"
+    },
+    {
+      "qid": "Q106829361",
+      "title": "Atys, Second Air"
+    },
+    {
+      "qid": "Q17000349",
+      "title": "Ballet Royal de la Nuit",
+      "imslp_id": "Ballet_de_la_nuit_(Cambefort,_Jean_de)",
+      "pdf_filename": "PMLP128208-Ballet_--_Royal_--_De_-...-Cambefort_Jean_btv1b525105173.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ballet_Royal_de_la_Nuit",
+      "wikipedia_extract": "The Ballet Royal de la Nuit, Ballet Royal de la Nuict in its original spelling and often referred to simply as the Ballet de la Nuit, is a ballet de cour with a libretto by Isaac de Benserade and music by Jean de Cambefort, Jean-Baptiste Boësset, Michel Lambert and possibly others, which premiered on February 23, 1653, at the Salle du Petit-Bourbon in Paris. It took 13 hours to perform and included the debut of the fifteen-year-old Louis XIV as Apollo, the Sun King.",
+      "pageviews_yearly": 12853
+    },
+    {
+      "qid": "Q5717310",
+      "title": "Ballet d'Alcidiane",
+      "imslp_id": "Ballet_d'Alcidiane,_LWV_9_(Lully,_Jean-Baptiste)",
+      "pdf_filename": "Lully-lwv9-philidor.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-baptiste-lully-1632-pp90"
+    },
+    {
+      "qid": "Q106829495",
+      "title": "Ballet de Flore, Bourrée"
+    },
+    {
+      "qid": "Q106829494",
+      "title": "Ballet de Flore, Courante"
+    },
+    {
+      "qid": "Q106829501",
+      "title": "Ballet de Flore, Marche"
+    },
+    {
+      "qid": "Q106829652",
+      "title": "Ballet de Flore, Menuet"
+    },
+    {
+      "qid": "Q106829490",
+      "title": "Ballet de Flore, Menuet"
+    },
+    {
+      "qid": "Q106829493",
+      "title": "Ballet de Flore, Menuet"
+    },
+    {
+      "qid": "Q106830090",
+      "title": "Ballet de Flore, Menuet"
+    },
+    {
+      "qid": "Q106830101",
+      "title": "Ballet de Flore, Menuet"
+    },
+    {
+      "qid": "Q106830113",
+      "title": "Ballet de Flore, Menuet"
+    },
+    {
+      "qid": "Q106830254",
+      "title": "Ballet de Flore, Menuet"
+    },
+    {
+      "qid": "Q106830058",
+      "title": "Ballet de Flore, Ouverture"
+    },
+    {
+      "qid": "Q106830083",
+      "title": "Ballet de Flore, Ouverture"
+    },
+    {
+      "qid": "Q106829674",
+      "title": "Ballet de Flore, le Marié et la mariée"
+    },
+    {
+      "qid": "Q106830073",
+      "title": "Ballet de Flore, le Marié et la mariée"
+    },
+    {
+      "qid": "Q106829558",
+      "title": "Ballet de Flore, le Marié et la mariée"
+    },
+    {
+      "qid": "Q106830086",
+      "title": "Ballet de Flore, le Marié et la mariée"
+    },
+    {
+      "qid": "Q106829688",
+      "title": "Ballet de la Naissance de Venus, Dieu des enfers (Sarabande)"
+    },
+    {
+      "qid": "Q106829909",
+      "title": "Ballet de la Naissance de Venus, Dieu des enfers (Sarabande)"
+    },
+    {
+      "qid": "Q106830265",
+      "title": "Ballet de la Naissance de Venus, Dieu des enfers (Sarabande)"
+    },
+    {
+      "qid": "Q106830060",
+      "title": "Ballet de la Naissance de Venus, Les Ombres"
+    },
+    {
+      "qid": "Q106829938",
+      "title": "Ballet de la Raillerie, Bourrée pour les mêmes"
+    },
+    {
+      "qid": "Q106829950",
+      "title": "Ballet de la Raillerie, Entrée"
+    },
+    {
+      "qid": "Q106830104",
+      "title": "Ballet de la Raillerie, Entrée, les Sçavans et les Ignorans"
+    },
+    {
+      "qid": "Q106829921",
+      "title": "Ballet de la Raillerie, Ouverture"
+    },
+    {
+      "qid": "Q106829952",
+      "title": "Ballet de la Raillerie, Ritournelle"
+    },
+    {
+      "qid": "Q106829923",
+      "title": "Ballet de la Raillerie, Ritournelle"
+    },
+    {
+      "qid": "Q106829936",
+      "title": "Ballet de la Raillerie, Rondeau pour les Adroits et Maladroits"
+    },
+    {
+      "qid": "Q106830002",
+      "title": "Ballet de la Raillerie, Sarabande"
+    },
+    {
+      "qid": "Q106829946",
+      "title": "Ballet de la Revente des Habits, Symphonie, la Revente des Habits"
+    },
+    {
+      "qid": "Q106830229",
+      "title": "Ballet de l’Amour malade, Air pour Jean Doucet et son frère"
+    },
+    {
+      "qid": "Q106829579",
+      "title": "Ballet de l’Amour malade, Air pour Scaramouche"
+    },
+    {
+      "qid": "Q106829934",
+      "title": "Ballet de l’Amour malade, Gavotte pour le Marié et la Mariée"
+    },
+    {
+      "qid": "Q106829944",
+      "title": "Ballet de l’Amour malade, Gavotte pour les Parents de la Mariée"
+    },
+    {
+      "qid": "Q106829366",
+      "title": "Ballet de l’Amour malade, Ouverture"
+    },
+    {
+      "qid": "Q106829948",
+      "title": "Ballet de l’Amour malade, Sarabande pour le Pere et la Mere du Mariée"
+    },
+    {
+      "qid": "Q106829894",
+      "title": "Ballet de l’Amour malade, Second Air pour les Parents de la Mariée"
+    },
+    {
+      "qid": "Q106829895",
+      "title": "Ballet de l’Impatience, Chaconne"
+    },
+    {
+      "qid": "Q106829651",
+      "title": "Ballet de l’Impatience, Entrée ‘Bel Iris’"
+    },
+    {
+      "qid": "Q106829721",
+      "title": "Ballet de l’Impatience, Entrée ‘Bel Iris’"
+    },
+    {
+      "qid": "Q106829971",
+      "title": "Ballet de l’Impatience, Entrée ‘Bel Iris’"
+    },
+    {
+      "qid": "Q106829554",
+      "title": "Ballet de l’Impatience, Entrée ‘Bel Iris’"
+    },
+    {
+      "qid": "Q106830089",
+      "title": "Ballet de l’Impatience, Entrée ‘Bel Iris’"
+    },
+    {
+      "qid": "Q106830100",
+      "title": "Ballet de l’Impatience, Entrée ‘Bel Iris’"
+    },
+    {
+      "qid": "Q106830102",
+      "title": "Ballet de l’Impatience, Entrée ‘Bel Iris’"
+    },
+    {
+      "qid": "Q106830103",
+      "title": "Ballet de l’Impatience, Entrée ‘Bel Iris’"
+    },
+    {
+      "qid": "Q106830107",
+      "title": "Ballet de l’Impatience, Entrée ‘Bel Iris’"
+    },
+    {
+      "qid": "Q106829489",
+      "title": "Ballet de l’Impatience, Les Suisses"
+    },
+    {
+      "qid": "Q106829955",
+      "title": "Ballet de l’Impatience, Ritournelle"
+    },
+    {
+      "qid": "Q106829915",
+      "title": "Ballet des Arts, Entrée, Concert des Amazones"
+    },
+    {
+      "qid": "Q106829992",
+      "title": "Ballet des Arts, Ritournelle"
+    },
+    {
+      "qid": "Q106829913",
+      "title": "Ballet des Arts, Ritournelle"
+    },
+    {
+      "qid": "Q106829484",
+      "title": "Ballet des Muses",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-baptiste-lully-1632-pp104"
+    },
+    {
+      "qid": "Q106829863",
+      "title": "Ballet des Muses, Chaconne"
+    },
+    {
+      "qid": "Q106830225",
+      "title": "Ballet des Muses, Chaconne"
+    },
+    {
+      "qid": "Q106830245",
+      "title": "Ballet des Muses, Chaconne"
+    },
+    {
+      "qid": "Q106829644",
+      "title": "Ballet des Muses, Chaconne (Act II, Scene 2)"
+    },
+    {
+      "qid": "Q106829483",
+      "title": "Ballet des Muses, Entrée (Gavotte)"
+    },
+    {
+      "qid": "Q106830263",
+      "title": "Ballet des Muses, Entrée (Gavotte)"
+    },
+    {
+      "qid": "Q106829485",
+      "title": "Ballet des Muses, Entrée (Menuet)"
+    },
+    {
+      "qid": "Q106830264",
+      "title": "Ballet des Muses, Entrée (Menuet)"
+    },
+    {
+      "qid": "Q106829497",
+      "title": "Ballet des Muses, Menuet"
+    },
+    {
+      "qid": "Q106829928",
+      "title": "Ballet des Saisons, Entrée"
+    },
+    {
+      "qid": "Q106829966",
+      "title": "Ballet des Saisons, Entrée, six Faunes"
+    },
+    {
+      "qid": "Q106829969",
+      "title": "Ballet des Saisons, Gavotte"
+    },
+    {
+      "qid": "Q106829968",
+      "title": "Ballet des Saisons, Ouverture"
+    },
+    {
+      "qid": "Q106829892",
+      "title": "Ballet des Saisons, Ritournelle"
+    },
+    {
+      "qid": "Q106829623",
+      "title": "Ballet des plaisirs, Entrée (Le Marié et la mariée)"
+    },
+    {
+      "qid": "Q106829700",
+      "title": "Ballet des plaisirs, Entrée (Le Marié et la mariée)"
+    },
+    {
+      "qid": "Q106829982",
+      "title": "Ballet des plaisirs, Entrée (Le Marié et la mariée)"
+    },
+    {
+      "qid": "Q106829797",
+      "title": "Ballet des plaisirs, Entrée (Le Marié et la mariée)"
+    },
+    {
+      "qid": "Q106829581",
+      "title": "Ballet des plaisirs, Entrée (Le Marié et la mariée)"
+    },
+    {
+      "qid": "Q106830124",
+      "title": "Ballet des plaisirs, Entrée (Le Marié et la mariée)"
+    },
+    {
+      "qid": "Q106830127",
+      "title": "Ballet des plaisirs, Entrée (Le Marié et la mariée)"
+    },
+    {
+      "qid": "Q106830252",
+      "title": "Ballet des plaisirs, Entrée (Le Marié et la mariée)"
+    },
+    {
+      "qid": "Q106830269",
+      "title": "Ballet des plaisirs, Entrée (Le Marié et la mariée)"
+    },
+    {
+      "qid": "Q106830275",
+      "title": "Ballet des plaisirs, Entrée (Le Marié et la mariée)"
+    },
+    {
+      "qid": "Q106829374",
+      "title": "Ballet des plaisirs, Entrée (Le Marié et la mariée)"
+    },
+    {
+      "qid": "Q106829954",
+      "title": "Ballet d’Alcidiane, Chaconne des Maures"
+    },
+    {
+      "qid": "Q106829991",
+      "title": "Ballet d’Alcidiane, Entrée, la Victoire"
+    },
+    {
+      "qid": "Q106829940",
+      "title": "Ballet d’Alcidiane, Entrée, trois Bergers et autant de Bergeres de cette heureuse Contrée, Rondeau"
+    },
+    {
+      "qid": "Q106829984",
+      "title": "Ballet d’Alcidiane, Entrée, un Combat de plaisir"
+    },
+    {
+      "qid": "Q106829486",
+      "title": "Ballet d’Alcidiane, Entrée, un Combat de plaisir"
+    },
+    {
+      "qid": "Q106829988",
+      "title": "Ballet d’Alcidiane, La Charge"
+    },
+    {
+      "qid": "Q106829990",
+      "title": "Ballet d’Alcidiane, Le Combat"
+    },
+    {
+      "qid": "Q106829989",
+      "title": "Ballet d’Alcidiane, L’Attaque du fort"
+    },
+    {
+      "qid": "Q106829985",
+      "title": "Ballet d’Alcidiane, L’Exercice des Mousquetaires"
+    },
+    {
+      "qid": "Q106829986",
+      "title": "Ballet d’Alcidiane, Marche françoise"
+    },
+    {
+      "qid": "Q106829930",
+      "title": "Ballet d’Alcidiane, Marche italienne"
+    },
+    {
+      "qid": "Q106829891",
+      "title": "Ballet d’Alcidiane, Ouverture"
+    },
+    {
+      "qid": "Q106830001",
+      "title": "Ballet d’Alcidiane, Petite Chaconne"
+    },
+    {
+      "qid": "Q106829932",
+      "title": "Ballet d’Alcidiane, Ritournelle"
+    },
+    {
+      "qid": "Q106829540",
+      "title": "Bellerophon",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-baptiste-lully-1632-pp79"
+    },
+    {
+      "qid": "Q106829358",
+      "title": "Bellerophon, Bourrée"
+    },
+    {
+      "qid": "Q106829571",
+      "title": "Bellerophon, Faisons cesser nos allarmes"
+    },
+    {
+      "qid": "Q106830030",
+      "title": "Bellerophon, Gigue"
+    },
+    {
+      "qid": "Q106830207",
+      "title": "Bellerophon, Le malheur (Gavotte)"
+    },
+    {
+      "qid": "Q106829542",
+      "title": "Bellerophon, Les Amazones"
+    },
+    {
+      "qid": "Q106829518",
+      "title": "Bellerophon, Menuet"
+    },
+    {
+      "qid": "Q106829640",
+      "title": "Bellerophon, Ouverture"
+    },
+    {
+      "qid": "Q106829710",
+      "title": "Bellerophon, Ouverture"
+    },
+    {
+      "qid": "Q106830062",
+      "title": "Bellerophon, Ouverture"
+    },
+    {
+      "qid": "Q106830080",
+      "title": "Bellerophon, Ouverture"
+    },
+    {
+      "qid": "Q106829475",
+      "title": "Bellerophon, Ouverture"
+    },
+    {
+      "qid": "Q106829541",
+      "title": "Bellerophon, Ouverture"
+    },
+    {
+      "qid": "Q106829552",
+      "title": "Bellerophon, Ouverture"
+    },
+    {
+      "qid": "Q106830098",
+      "title": "Bellerophon, Ouverture"
+    },
+    {
+      "qid": "Q106830204",
+      "title": "Bellerophon, Ouverture"
+    },
+    {
+      "qid": "Q106829346",
+      "title": "Bellerophon, Second Air"
+    },
+    {
+      "qid": "Q106829647",
+      "title": "Bellerophon, Trompettes"
+    },
+    {
+      "qid": "Q106829582",
+      "title": "Bellerophon, Trompettes"
+    },
+    {
+      "qid": "Q106829587",
+      "title": "Bellerophon, Trompettes"
+    },
+    {
+      "qid": "Q106830205",
+      "title": "Bellerophon, Trompettes"
+    },
+    {
+      "qid": "Q106830206",
+      "title": "Bellerophon, Trompettes"
+    },
+    {
+      "qid": "Q2895007",
+      "title": "Bellérophon",
+      "imslp_id": "Bellérophon,_LWV_57_(Lully,_Jean-Baptiste)",
+      "pdf_filename": "Lully-Bellerophon.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-baptiste-lully-1632-pp79",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bell%C3%A9rophon",
+      "wikipedia_extract": "Bellérophon is an opera with music by Jean-Baptiste Lully and a libretto by Thomas Corneille and Bernard le Bovier de Fontenelle first performed by the Opéra at the Théâtre du Palais-Royal in Paris on 31 January 1679.",
+      "pageviews_yearly": 2225
+    },
+    {
+      "qid": "Q106829959",
+      "title": "Branles de 1665, Bourrée"
+    },
+    {
+      "qid": "Q106829961",
+      "title": "Branles de 1665, Gavotte"
+    },
+    {
+      "qid": "Q106829958",
+      "title": "Branles de 1665, Sarabande des branles"
+    },
+    {
+      "qid": "Q1025301",
+      "title": "Cadmus et Hermione",
+      "imslp_id": "Cadmus_et_Hermione,_LWV_49_(Lully,_Jean-Baptiste)",
+      "pdf_filename": "PMLP93970-Ariette_de_Cadmus.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-baptiste-lully-1632-pp73",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cadmus_et_Hermione",
+      "wikipedia_extract": "Cadmus et Hermione is a tragédie en musique in a prologue and five acts by Jean-Baptiste Lully. The French-language libretto is by Philippe Quinault, after Ovid's Metamorphoses. It was first performed on 27 April 1673 by the Paris Opera at the Jeu de paume de Béquet.",
+      "pageviews_yearly": 6541
+    },
+    {
+      "qid": "Q106829756",
+      "title": "Cadmus et Hermione, Air"
+    },
+    {
+      "qid": "Q106829638",
+      "title": "Cadmus et Hermione, Air des vents, les furies"
+    },
+    {
+      "qid": "Q106829757",
+      "title": "Cadmus et Hermione, Amants, aimez vos chaînes"
+    },
+    {
+      "qid": "Q106829758",
+      "title": "Cadmus et Hermione, Heureux qui peut plaire"
+    },
+    {
+      "qid": "Q106829635",
+      "title": "Cadmus et Hermione, Marche des Sacrificateurs"
+    },
+    {
+      "qid": "Q106829775",
+      "title": "Cadmus et Hermione, Marche des Sacrificateurs"
+    },
+    {
+      "qid": "Q106829584",
+      "title": "Cadmus et Hermione, Marche des Sacrificateurs"
+    },
+    {
+      "qid": "Q106829349",
+      "title": "Cadmus et Hermione, Marche des Sacrificateurs"
+    },
+    {
+      "qid": "Q106829751",
+      "title": "Cadmus et Hermione, Menuet"
+    },
+    {
+      "qid": "Q106829679",
+      "title": "Cadmus et Hermione, Ouverture"
+    },
+    {
+      "qid": "Q106830112",
+      "title": "Cadmus et Hermione, Suivons, suivons l’amour"
+    },
+    {
+      "qid": "Q106829363",
+      "title": "Entr’actes d’Œdipé, Ouverture"
+    },
+    {
+      "qid": "Q106829963",
+      "title": "Hercule amoureux, Concert de Venus et des Plaisirs"
+    },
+    {
+      "qid": "Q106829901",
+      "title": "Hercule amoureux, Concert de guitares"
+    },
+    {
+      "qid": "Q106829976",
+      "title": "Hercule amoureux, Entrée"
+    },
+    {
+      "qid": "Q106830262",
+      "title": "Hercule amoureux, Entrée"
+    },
+    {
+      "qid": "Q106829972",
+      "title": "Hercule amoureux, Entrée, le Sommeil et les Songes"
+    },
+    {
+      "qid": "Q106829977",
+      "title": "Hercule amoureux, Entrée, les Zephirs"
+    },
+    {
+      "qid": "Q106829965",
+      "title": "Hercule amoureux, Entrée, les tempêtes et les foudres"
+    },
+    {
+      "qid": "Q106829362",
+      "title": "Hercule amoureux, Ouverture"
+    },
+    {
+      "qid": "Q106829904",
+      "title": "Hercule amoureux, Rondeau"
+    },
+    {
+      "qid": "Q106829482",
+      "title": "Hercule amoureux, Rondeau"
+    },
+    {
+      "qid": "Q106830190",
+      "title": "Idylle sur la Paix, Chantons Bergers"
+    },
+    {
+      "qid": "Q106829715",
+      "title": "Isis",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-baptiste-lully-1632-pp77"
+    },
+    {
+      "qid": "Q3084062",
+      "title": "Isis",
+      "imslp_id": "Isis,_LWV_54_(Lully,_Jean-Baptiste)",
+      "pdf_filename": "Lully-isis1719.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-baptiste-lully-1632-pp77",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Isis_(Lully)",
+      "wikipedia_extract": "Isis is a French opera in a prologue and five acts with music by Jean-Baptiste Lully and a libretto by Philippe Quinault, based on Ovid's Metamorphoses. The fifth of Lully's collaborations with Quinault, it was first performed on 5 January 1677 before the royal court of Louis XIV at the Château de Saint-Germain-en-Laye and in August received a run of public performances at the Théâtre du Palais-Royal. It was Lully's first published score ; a full score was published in 1719.",
+      "pageviews_yearly": 4648
+    },
+    {
+      "qid": "Q106830095",
+      "title": "Isis, Aimez, profitez"
+    },
+    {
+      "qid": "Q106829634",
+      "title": "Isis, Air [pour les trompettes]"
+    },
+    {
+      "qid": "Q106829712",
+      "title": "Isis, Air [pour les trompettes]"
+    },
+    {
+      "qid": "Q106829848",
+      "title": "Isis, Air [pour les trompettes]"
+    },
+    {
+      "qid": "Q106829580",
+      "title": "Isis, Air [pour les trompettes]"
+    },
+    {
+      "qid": "Q106830117",
+      "title": "Isis, Air [pour les trompettes]"
+    },
+    {
+      "qid": "Q106830119",
+      "title": "Isis, Air [pour les trompettes]"
+    },
+    {
+      "qid": "Q106830270",
+      "title": "Isis, Air [pour les trompettes]"
+    },
+    {
+      "qid": "Q106829725",
+      "title": "Isis, Gavotte (Marche)"
+    },
+    {
+      "qid": "Q106830202",
+      "title": "Isis, Jupiter vient sur la terre"
+    },
+    {
+      "qid": "Q106830093",
+      "title": "Isis, Les Plaisirs les plus doux"
+    },
+    {
+      "qid": "Q106829614",
+      "title": "Isis, Ouverture"
+    },
+    {
+      "qid": "Q106829707",
+      "title": "Isis, Ouverture"
+    },
+    {
+      "qid": "Q106829711",
+      "title": "Isis, Ouverture"
+    },
+    {
+      "qid": "Q106829746",
+      "title": "Isis, Ouverture"
+    },
+    {
+      "qid": "Q106830047",
+      "title": "Isis, Ouverture"
+    },
+    {
+      "qid": "Q106830076",
+      "title": "Isis, Ouverture"
+    },
+    {
+      "qid": "Q106829766",
+      "title": "Isis, Ouverture"
+    },
+    {
+      "qid": "Q106829798",
+      "title": "Isis, Ouverture"
+    },
+    {
+      "qid": "Q106829832",
+      "title": "Isis, Ouverture"
+    },
+    {
+      "qid": "Q106830203",
+      "title": "Isis, Ouverture"
+    },
+    {
+      "qid": "Q106830233",
+      "title": "Isis, Ouverture"
+    },
+    {
+      "qid": "Q106829365",
+      "title": "Isis, Ouverture"
+    },
+    {
+      "qid": "Q106830050",
+      "title": "Isis, Premier Air pour les Muses"
+    },
+    {
+      "qid": "Q106829834",
+      "title": "Isis, Premier Air pour les Muses"
+    },
+    {
+      "qid": "Q106830126",
+      "title": "Isis, Premier Air pour les Muses"
+    },
+    {
+      "qid": "Q106830198",
+      "title": "Isis, Premier Air pour les Muses"
+    },
+    {
+      "qid": "Q106829645",
+      "title": "Isis, Prélude des Muses"
+    },
+    {
+      "qid": "Q106829842",
+      "title": "Isis, Que ces lieux ont d’attraits"
+    },
+    {
+      "qid": "Q106829572",
+      "title": "Isis, Que ces lieux ont d’attraits"
+    },
+    {
+      "qid": "Q106830096",
+      "title": "Isis, Que ces lieux ont d’attraits"
+    },
+    {
+      "qid": "Q106829868",
+      "title": "Isis, Rondeau"
+    },
+    {
+      "qid": "Q106829836",
+      "title": "Isis, Second Air (Bourrée)"
+    },
+    {
+      "qid": "Q106829716",
+      "title": "Isis, Second Air (Menuet)"
+    },
+    {
+      "qid": "Q106830256",
+      "title": "Isis, Second Air (Menuet)"
+    },
+    {
+      "qid": "Q106829386",
+      "title": "Isis, Second Air (Menuet)"
+    },
+    {
+      "qid": "Q106829870",
+      "title": "Isis, Second et dernier Air"
+    },
+    {
+      "qid": "Q106829713",
+      "title": "Isis, Troisiéme Air (Menuet)"
+    },
+    {
+      "qid": "Q107429853",
+      "title": "Jubilate Deo omnis terra",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jubilate_Deo_omnis_terra",
+      "wikipedia_extract": "Jubilate Deo omnis terra is a motet by Jean-Baptiste Lully set on biblical text. Written to both celebrate the new treaty and to celebrate the wedding of Louis XIV of France and Maria Theresa of Spain on 29 August 1660 at the l'église de la Mercy.",
+      "pageviews_yearly": 2762
+    },
+    {
+      "qid": "Q125355292",
+      "title": "L'Hercule amoureux, LWV 17",
+      "imslp_id": "L'Hercule_amoureux,_LWV_17_(Lully,_Jean-Baptiste)",
+      "pdf_filename": "PMLP1008975-Ballet_D_Hercules_amoureux_Lully_Jean-Baptiste_bpt6k5390324n.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q106829620",
+      "title": "La Grotte de Versailles, Air des echos"
+    },
+    {
+      "qid": "Q106829889",
+      "title": "La Grotte de Versailles, Air des echos"
+    },
+    {
+      "qid": "Q106829646",
+      "title": "La Grotte de Versailles, Ouverture"
+    },
+    {
+      "qid": "Q106830034",
+      "title": "La Grotte de Versailles, Ouverture"
+    },
+    {
+      "qid": "Q106829762",
+      "title": "La Grotte de Versailles, Ouverture"
+    },
+    {
+      "qid": "Q106829767",
+      "title": "La Grotte de Versailles, Ouverture"
+    },
+    {
+      "qid": "Q106829796",
+      "title": "La Grotte de Versailles, Ouverture"
+    },
+    {
+      "qid": "Q106830228",
+      "title": "La Grotte de Versailles, Ouverture"
+    },
+    {
+      "qid": "Q106830250",
+      "title": "La Grotte de Versailles, Ouverture"
+    },
+    {
+      "qid": "Q106829022",
+      "title": "La Grotte de Versailles, Ouverture"
+    },
+    {
+      "qid": "Q106829561",
+      "title": "La Grotte de Versailles, Ritournelle ‘Goutons bien’"
+    },
+    {
+      "qid": "Q106830074",
+      "title": "Le Bourgeois Gentilhomme, Air des Espagnols (Sarabande)"
+    },
+    {
+      "qid": "Q106830087",
+      "title": "Le Bourgeois Gentilhomme, Air des Espagnols (Sarabande)"
+    },
+    {
+      "qid": "Q106830258",
+      "title": "Le Bourgeois Gentilhomme, Air des Espagnols (Sarabande)"
+    },
+    {
+      "qid": "Q106829706",
+      "title": "Le Bourgeois Gentilhomme, Chaconne"
+    },
+    {
+      "qid": "Q106830071",
+      "title": "Le Bourgeois Gentilhomme, Chaconne"
+    },
+    {
+      "qid": "Q106829764",
+      "title": "Le Bourgeois Gentilhomme, Chaconne"
+    },
+    {
+      "qid": "Q106829589",
+      "title": "Le Bourgeois Gentilhomme, Chaconne"
+    },
+    {
+      "qid": "Q106830130",
+      "title": "Le Bourgeois Gentilhomme, Chaconne"
+    },
+    {
+      "qid": "Q106829377",
+      "title": "Le Bourgeois Gentilhomme, Chaconne"
+    },
+    {
+      "qid": "Q106829380",
+      "title": "Le Bourgeois Gentilhomme, Chaconne"
+    },
+    {
+      "qid": "Q106829506",
+      "title": "Le Bourgeois Gentilhomme, Menuet"
+    },
+    {
+      "qid": "Q106829507",
+      "title": "Le Bourgeois Gentilhomme, Menuet"
+    },
+    {
+      "qid": "Q106829615",
+      "title": "Le Bourgeois Gentilhomme, Ouverture"
+    },
+    {
+      "qid": "Q106830201",
+      "title": "Le Bourgeois Gentilhomme, Ouverture"
+    },
+    {
+      "qid": "Q1054372",
+      "title": "Le Bourgeois gentilhomme",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Lully_-_Premier_Intermede_le_Bourgeois_Gentilhomme.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q106829496",
+      "title": "Le Carnaval, Mascarade, Ballet"
+    },
+    {
+      "qid": "Q106829491",
+      "title": "Le Carnaval, Mascarade, Bourrée"
+    },
+    {
+      "qid": "Q106829560",
+      "title": "Le Carnaval, Mascarade, Canaries"
+    },
+    {
+      "qid": "Q106829559",
+      "title": "Le Carnaval, Mascarade, Entrée, les Maîtres à dancer"
+    },
+    {
+      "qid": "Q106829691",
+      "title": "Le Carnaval, Mascarade, Ouverture"
+    },
+    {
+      "qid": "Q106829726",
+      "title": "Le Carnaval, Mascarade, Ouverture"
+    },
+    {
+      "qid": "Q106829874",
+      "title": "Le Carnaval, Mascarade, Ouverture"
+    },
+    {
+      "qid": "Q106829504",
+      "title": "Le Divertissement de Chambord, Les Combattants"
+    },
+    {
+      "qid": "Q106829503",
+      "title": "Le Divertissement de Chambord, Les Maîtres à danser"
+    },
+    {
+      "qid": "Q106829500",
+      "title": "Le Divertissement royal (Les Amants magnifiques), Air de Neptune"
+    },
+    {
+      "qid": "Q106829556",
+      "title": "Le Divertissement royal (Les Amants magnifiques), Air de Neptune"
+    },
+    {
+      "qid": "Q106829505",
+      "title": "Le Divertissement royal (Les Amants magnifiques), Jouissons des plaisirs"
+    },
+    {
+      "qid": "Q106829502",
+      "title": "Le Divertissement royal (Les Amants magnifiques), Les Hommes et femmes armés"
+    },
+    {
+      "qid": "Q106829555",
+      "title": "Le Divertissement royal (Les Amants magnifiques), Les Pêcheurs de corail"
+    },
+    {
+      "qid": "Q106829499",
+      "title": "Le Divertissement royal (Les Amants magnifiques), Les Pêcheurs de corail (air)"
+    },
+    {
+      "qid": "Q106829557",
+      "title": "Le Divertissement royal (Les Amants magnifiques), Les Suivants de Neptune"
+    },
+    {
+      "qid": "Q106829498",
+      "title": "Le Divertissement royal (Les Amants magnifiques), Menuet"
+    },
+    {
+      "qid": "Q106829487",
+      "title": "Le Grand Divertissement Royal de Versailles, Les Mariniers"
+    },
+    {
+      "qid": "Q106829488",
+      "title": "Le Grand Divertissement Royal de Versailles, Menuet (flutes)"
+    },
+    {
+      "qid": "Q106829995",
+      "title": "Le Mariage forcé, Second Air pour les mesmes"
+    },
+    {
+      "qid": "Q669232",
+      "title": "Le Roi danse",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_King_Is_Dancing",
+      "wikipedia_extract": "The King Dances is a 2000 costume drama film co-written and directed by Gérard Corbiau based on Philippe Beaussant's biography of Jean-Baptiste Lully, Lully ou le musicien du soleil (1992). The film, presenting libertine Lully as a natural ally of the early Enlightenment figure Louis XIV of France in his conflicts with the Catholic establishment, focuses on Lully's personal relationship with the King, as well as his camaraderie with Molière and rivalry with Robert Cambert.",
+      "pageviews_yearly": 13462
+    },
+    {
+      "qid": "Q106829673",
+      "title": "Le Temple de la Paix, Canaries"
+    },
+    {
+      "qid": "Q106829553",
+      "title": "Le Temple de la Paix, Canaries"
+    },
+    {
+      "qid": "Q106830185",
+      "title": "Le Temple de la Paix, Canaries"
+    },
+    {
+      "qid": "Q106830192",
+      "title": "Le Temple de la Paix, Charmant repos"
+    },
+    {
+      "qid": "Q106830180",
+      "title": "Le Temple de la Paix, Entrée de Bergers et Bergères"
+    },
+    {
+      "qid": "Q106829636",
+      "title": "Le Temple de la Paix, Entrée des Basques"
+    },
+    {
+      "qid": "Q106830129",
+      "title": "Le Temple de la Paix, Entrée des Basques"
+    },
+    {
+      "qid": "Q106829379",
+      "title": "Le Temple de la Paix, Entrée des Basques"
+    },
+    {
+      "qid": "Q106830179",
+      "title": "Le Temple de la Paix, Gigue"
+    },
+    {
+      "qid": "Q106830182",
+      "title": "Le Temple de la Paix, La paix revient"
+    },
+    {
+      "qid": "Q106829575",
+      "title": "Le Temple de la Paix, Menuet"
+    },
+    {
+      "qid": "Q106830178",
+      "title": "Le Temple de la Paix, Menuet"
+    },
+    {
+      "qid": "Q106830187",
+      "title": "Le Temple de la Paix, Menuet"
+    },
+    {
+      "qid": "Q106830183",
+      "title": "Le Temple de la Paix, On conteroit"
+    },
+    {
+      "qid": "Q106829629",
+      "title": "Le Temple de la Paix, Ouverture"
+    },
+    {
+      "qid": "Q106829562",
+      "title": "Le Temple de la Paix, Ouverture"
+    },
+    {
+      "qid": "Q106830193",
+      "title": "Le Temple de la Paix, Ouverture"
+    },
+    {
+      "qid": "Q106829675",
+      "title": "Le Temple de la Paix, Passepied"
+    },
+    {
+      "qid": "Q106830186",
+      "title": "Le Temple de la Paix, Passepied"
+    },
+    {
+      "qid": "Q106830045",
+      "title": "Le Temple de la Paix, Preparons nous"
+    },
+    {
+      "qid": "Q106830176",
+      "title": "Le Temple de la Paix, Preparons nous"
+    },
+    {
+      "qid": "Q106830191",
+      "title": "Le Temple de la Paix, Sans crainte"
+    },
+    {
+      "qid": "Q106830188",
+      "title": "Le Temple de la Paix, Suivons l’aimable paix"
+    },
+    {
+      "qid": "Q106830189",
+      "title": "Le Temple de la Paix, Suivons l’aimable paix"
+    },
+    {
+      "qid": "Q106830177",
+      "title": "Le Temple de la Paix, [Prologue:] La Gloire luy suffit"
+    },
+    {
+      "qid": "Q108705551",
+      "title": "Le Triomphe de l'Amour",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-baptiste-lully-1632-pp109"
+    },
+    {
+      "qid": "Q106829547",
+      "title": "Le Triomphe de l’Amour, Borée et des quatre Vents"
+    },
+    {
+      "qid": "Q106829551",
+      "title": "Le Triomphe de l’Amour, Bourrée"
+    },
+    {
+      "qid": "Q106829345",
+      "title": "Le Triomphe de l’Amour, Bourrée"
+    },
+    {
+      "qid": "Q106830039",
+      "title": "Le Triomphe de l’Amour, Chaconne"
+    },
+    {
+      "qid": "Q106829549",
+      "title": "Le Triomphe de l’Amour, Deux Marins"
+    },
+    {
+      "qid": "Q106830056",
+      "title": "Le Triomphe de l’Amour, Deuxiesme Air"
+    },
+    {
+      "qid": "Q106830054",
+      "title": "Le Triomphe de l’Amour, Deuxiesme Air pour Endimion"
+    },
+    {
+      "qid": "Q106830218",
+      "title": "Le Triomphe de l’Amour, Deuxiesme Menuet"
+    },
+    {
+      "qid": "Q106829347",
+      "title": "Le Triomphe de l’Amour, Deuxiesme Menuet"
+    },
+    {
+      "qid": "Q106829618",
+      "title": "Le Triomphe de l’Amour, Entrée d’Apollon"
+    },
+    {
+      "qid": "Q106829694",
+      "title": "Le Triomphe de l’Amour, Entrée d’Apollon"
+    },
+    {
+      "qid": "Q106829702",
+      "title": "Le Triomphe de l’Amour, Entrée d’Apollon"
+    },
+    {
+      "qid": "Q106830048",
+      "title": "Le Triomphe de l’Amour, Entrée d’Apollon"
+    },
+    {
+      "qid": "Q106829886",
+      "title": "Le Triomphe de l’Amour, Entrée d’Apollon"
+    },
+    {
+      "qid": "Q106829585",
+      "title": "Le Triomphe de l’Amour, Entrée d’Apollon"
+    },
+    {
+      "qid": "Q106830088",
+      "title": "Le Triomphe de l’Amour, Entrée d’Apollon"
+    },
+    {
+      "qid": "Q106830105",
+      "title": "Le Triomphe de l’Amour, Entrée d’Apollon"
+    },
+    {
+      "qid": "Q106830111",
+      "title": "Le Triomphe de l’Amour, Entrée d’Apollon"
+    },
+    {
+      "qid": "Q106830215",
+      "title": "Le Triomphe de l’Amour, Entrée d’Apollon"
+    },
+    {
+      "qid": "Q106830234",
+      "title": "Le Triomphe de l’Amour, Entrée d’Apollon"
+    },
+    {
+      "qid": "Q106830053",
+      "title": "Le Triomphe de l’Amour, Gavotte"
+    },
+    {
+      "qid": "Q106829548",
+      "title": "Le Triomphe de l’Amour, Gavotte"
+    },
+    {
+      "qid": "Q106830220",
+      "title": "Le Triomphe de l’Amour, Gavotte"
+    },
+    {
+      "qid": "Q106829550",
+      "title": "Le Triomphe de l’Amour, Mars et des Amours"
+    },
+    {
+      "qid": "Q106829641",
+      "title": "Le Triomphe de l’Amour, Ouverture"
+    },
+    {
+      "qid": "Q106830066",
+      "title": "Le Triomphe de l’Amour, Ouverture"
+    },
+    {
+      "qid": "Q106829476",
+      "title": "Le Triomphe de l’Amour, Ouverture"
+    },
+    {
+      "qid": "Q106829545",
+      "title": "Le Triomphe de l’Amour, Ouverture"
+    },
+    {
+      "qid": "Q106830210",
+      "title": "Le Triomphe de l’Amour, Ouverture"
+    },
+    {
+      "qid": "Q106830055",
+      "title": "Le Triomphe de l’Amour, Premier Air pour la Jeunesse"
+    },
+    {
+      "qid": "Q106830257",
+      "title": "Le Triomphe de l’Amour, Premier Air pour la Jeunesse"
+    },
+    {
+      "qid": "Q106829478",
+      "title": "Le Triomphe de l’Amour, Premier Entrée des Graces"
+    },
+    {
+      "qid": "Q106830217",
+      "title": "Le Triomphe de l’Amour, Tranquiles cœurs"
+    },
+    {
+      "qid": "Q106829382",
+      "title": "Le Triomphe de l’Amour, Tranquiles cœurs"
+    },
+    {
+      "qid": "Q106829996",
+      "title": "Les Amours deguisés, Entrée"
+    },
+    {
+      "qid": "Q106829911",
+      "title": "Les Amours deguisés, Entrée"
+    },
+    {
+      "qid": "Q106829998",
+      "title": "Les Amours deguisés, Quatrième air, Bourrée"
+    },
+    {
+      "qid": "Q106829997",
+      "title": "Les Amours deguisés, Second Air, Sarabande"
+    },
+    {
+      "qid": "Q106829999",
+      "title": "Les Plaisirs de l’Ile enchantée, Premier air pour les valets de chiens endormis"
+    },
+    {
+      "qid": "Q106829917",
+      "title": "Les Plaisirs de l’Ile enchantée, Ritournelle"
+    },
+    {
+      "qid": "Q106829701",
+      "title": "Les Plaisirs de l’Ile enchantée, Rondeau"
+    },
+    {
+      "qid": "Q106829983",
+      "title": "Les Plaisirs de l’Ile enchantée, Rondeau"
+    },
+    {
+      "qid": "Q106830000",
+      "title": "Les Plaisirs de l’Ile enchantée, Second air des valet de chiens"
+    },
+    {
+      "qid": "Q136688937",
+      "title": "Les fêtes de l'Amour et de Bacchus",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-baptiste-lully-1632-pp124"
+    },
+    {
+      "qid": "Q690525",
+      "title": "Louis, the Child King",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Louis%2C_the_Child_King",
+      "wikipedia_extract": "Louis, the Child King is a 1993 French drama film directed by Roger Planchon. It was entered into the 1993 Cannes Film Festival.",
+      "pageviews_yearly": 2694
+    },
+    {
+      "qid": "Q106829677",
+      "title": "Miscellaneous Instrumental Pieces"
+    },
+    {
+      "qid": "Q106829686",
+      "title": "Miscellaneous Instrumental Pieces"
+    },
+    {
+      "qid": "Q106830040",
+      "title": "Miscellaneous Instrumental Pieces"
+    },
+    {
+      "qid": "Q106829897",
+      "title": "Miscellaneous Instrumental Pieces"
+    },
+    {
+      "qid": "Q106829546",
+      "title": "Miscellaneous Instrumental Pieces"
+    },
+    {
+      "qid": "Q106830232",
+      "title": "Miscellaneous Instrumental Pieces"
+    },
+    {
+      "qid": "Q106829919",
+      "title": "Miscellaneous Instrumental Pieces, Air"
+    },
+    {
+      "qid": "Q106829980",
+      "title": "Miscellaneous Instrumental Pieces, Allemande"
+    },
+    {
+      "qid": "Q106829610",
+      "title": "Miscellaneous Instrumental Pieces, Allemande des fragments de M. Lully"
+    },
+    {
+      "qid": "Q106829845",
+      "title": "Miscellaneous Instrumental Pieces, Allemande des fragments de M. Lully"
+    },
+    {
+      "qid": "Q106829564",
+      "title": "Miscellaneous Instrumental Pieces, Allemande des fragments de M. Lully"
+    },
+    {
+      "qid": "Q106829684",
+      "title": "Miscellaneous Instrumental Pieces, Courante"
+    },
+    {
+      "qid": "Q106829747",
+      "title": "Miscellaneous Instrumental Pieces, Courante"
+    },
+    {
+      "qid": "Q106829748",
+      "title": "Miscellaneous Instrumental Pieces, Courante"
+    },
+    {
+      "qid": "Q106829975",
+      "title": "Miscellaneous Instrumental Pieces, Courante"
+    },
+    {
+      "qid": "Q106829993",
+      "title": "Miscellaneous Instrumental Pieces, Courante"
+    },
+    {
+      "qid": "Q106829586",
+      "title": "Miscellaneous Instrumental Pieces, Courante"
+    },
+    {
+      "qid": "Q106829606",
+      "title": "Miscellaneous Instrumental Pieces, Courante"
+    },
+    {
+      "qid": "Q106830226",
+      "title": "Miscellaneous Instrumental Pieces, Courante"
+    },
+    {
+      "qid": "Q106830231",
+      "title": "Miscellaneous Instrumental Pieces, Courante"
+    },
+    {
+      "qid": "Q106829689",
+      "title": "Miscellaneous Instrumental Pieces, Gigue"
+    },
+    {
+      "qid": "Q106829793",
+      "title": "Miscellaneous Instrumental Pieces, Marche des fanatiques"
+    },
+    {
+      "qid": "Q106830239",
+      "title": "Miscellaneous Instrumental Pieces, Passepied"
+    },
+    {
+      "qid": "Q106829570",
+      "title": "Noce de Village, Airs pour Madame la Dauphine, Menuet"
+    },
+    {
+      "qid": "Q106829981",
+      "title": "Noce de Village, Airs pour Madame la Dauphine, Pavane"
+    },
+    {
+      "qid": "Q3376129",
+      "title": "Persée",
+      "imslp_id": "Persée,_LWV_60_(Lully,_Jean-Baptiste)",
+      "pdf_filename": "Lully-Persee1722.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-baptiste-lully-1632-pp81",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pers%C3%A9e_(Lully)",
+      "wikipedia_extract": "Persée (Perseus) is a tragédie lyrique with music by Jean-Baptiste Lully and a libretto by Philippe Quinault, first performed on 18 April 1682 by the Opéra at the Théâtre du Palais-Royal in Paris.",
+      "pageviews_yearly": 3247
+    },
+    {
+      "qid": "Q106830212",
+      "title": "Persée, Air pour les hautbois"
+    },
+    {
+      "qid": "Q106830249",
+      "title": "Persée, Air pour les hautbois"
+    },
+    {
+      "qid": "Q106829387",
+      "title": "Persée, Air pour les hautbois"
+    },
+    {
+      "qid": "Q106829676",
+      "title": "Persée, Gigue"
+    },
+    {
+      "qid": "Q106830214",
+      "title": "Persée, Gigue"
+    },
+    {
+      "qid": "Q106830248",
+      "title": "Persée, Les Sacrificateurs"
+    },
+    {
+      "qid": "Q106829567",
+      "title": "Persée, Menuet"
+    },
+    {
+      "qid": "Q106830128",
+      "title": "Persée, Menuet"
+    },
+    {
+      "qid": "Q106829627",
+      "title": "Persée, Ouverture"
+    },
+    {
+      "qid": "Q106830059",
+      "title": "Persée, Ouverture"
+    },
+    {
+      "qid": "Q106830213",
+      "title": "Persée, Ouverture"
+    },
+    {
+      "qid": "Q106829628",
+      "title": "Persée, Passacaille"
+    },
+    {
+      "qid": "Q106830211",
+      "title": "Persée, Passacaille"
+    },
+    {
+      "qid": "Q106829356",
+      "title": "Persée, Passacaille"
+    },
+    {
+      "qid": "Q106829655",
+      "title": "Persée, Rondeau (Menuet)"
+    },
+    {
+      "qid": "Q106829353",
+      "title": "Phaéton, Air (Entrée)"
+    },
+    {
+      "qid": "Q106829348",
+      "title": "Phaéton, Bourrée"
+    },
+    {
+      "qid": "Q106829351",
+      "title": "Phaéton, Bourrée"
+    },
+    {
+      "qid": "Q106829622",
+      "title": "Phaéton, Chaconne"
+    },
+    {
+      "qid": "Q106829683",
+      "title": "Phaéton, Chaconne"
+    },
+    {
+      "qid": "Q106830037",
+      "title": "Phaéton, Chaconne"
+    },
+    {
+      "qid": "Q106830072",
+      "title": "Phaéton, Chaconne"
+    },
+    {
+      "qid": "Q106829771",
+      "title": "Phaéton, Chaconne"
+    },
+    {
+      "qid": "Q106829786",
+      "title": "Phaéton, Chaconne"
+    },
+    {
+      "qid": "Q106829852",
+      "title": "Phaéton, Chaconne"
+    },
+    {
+      "qid": "Q106829879",
+      "title": "Phaéton, Chaconne"
+    },
+    {
+      "qid": "Q106829565",
+      "title": "Phaéton, Chaconne"
+    },
+    {
+      "qid": "Q106830149",
+      "title": "Phaéton, Chaconne"
+    },
+    {
+      "qid": "Q106829357",
+      "title": "Phaéton, Chaconne"
+    },
+    {
+      "qid": "Q106829698",
+      "title": "Phaéton, Cherchons la paix"
+    },
+    {
+      "qid": "Q106830146",
+      "title": "Phaéton, Cherchons la paix"
+    },
+    {
+      "qid": "Q106829369",
+      "title": "Phaéton, Cherchons la paix"
+    },
+    {
+      "qid": "Q106829704",
+      "title": "Phaéton, Dans ce palais"
+    },
+    {
+      "qid": "Q106830145",
+      "title": "Phaéton, Dans ce palais"
+    },
+    {
+      "qid": "Q106830148",
+      "title": "Phaéton, Dans ces lieux"
+    },
+    {
+      "qid": "Q106830043",
+      "title": "Phaéton, Le Printemps"
+    },
+    {
+      "qid": "Q106830219",
+      "title": "Phaéton, Le Printemps"
+    },
+    {
+      "qid": "Q106830143",
+      "title": "Phaéton, Le plaisir (Gavotte)"
+    },
+    {
+      "qid": "Q106830144",
+      "title": "Phaéton, Le plaisir (Gavotte)"
+    },
+    {
+      "qid": "Q106830147",
+      "title": "Phaéton, Menuet"
+    },
+    {
+      "qid": "Q106829637",
+      "title": "Phaéton, Ouverture"
+    },
+    {
+      "qid": "Q106829471",
+      "title": "Phaéton, Ouverture"
+    },
+    {
+      "qid": "Q106830140",
+      "title": "Phaéton, Ouverture"
+    },
+    {
+      "qid": "Q106829355",
+      "title": "Phaéton, Ouverture"
+    },
+    {
+      "qid": "Q106830150",
+      "title": "Phaéton, Plaisirs, venez (Bourrée)"
+    },
+    {
+      "qid": "Q106830160",
+      "title": "Phaéton, Que l’incertitude"
+    },
+    {
+      "qid": "Q106829469",
+      "title": "Phaéton, Rondeau (Gavotte)"
+    },
+    {
+      "qid": "Q106829569",
+      "title": "Phaéton, Rondeau (Gavotte)"
+    },
+    {
+      "qid": "Q106830141",
+      "title": "Phaéton, Rondeau (Gavotte)"
+    },
+    {
+      "qid": "Q106830142",
+      "title": "Phaéton, Rondeau (Gavotte)"
+    },
+    {
+      "qid": "Q106829354",
+      "title": "Phaéton, Rondeau (Gavotte)"
+    },
+    {
+      "qid": "Q106829563",
+      "title": "Phaéton, Rondeau (Menuet)"
+    },
+    {
+      "qid": "Q106829703",
+      "title": "Phaéton, Second Air"
+    },
+    {
+      "qid": "Q106830216",
+      "title": "Phaéton, Second Air"
+    },
+    {
+      "qid": "Q106829342",
+      "title": "Phaéton, Second Air"
+    },
+    {
+      "qid": "Q106829470",
+      "title": "Phaéton, Vous ne devez plus attendre"
+    },
+    {
+      "qid": "Q1633296",
+      "title": "Phaëton",
+      "imslp_id": "Phaëton,_LWV_61_(Lully,_Jean-Baptiste)",
+      "pdf_filename": "Lully-Phaeton1.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-baptiste-lully-1632-pp82",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pha%C3%ABton_(Lully)",
+      "wikipedia_extract": "Phaëton is a tragédie en musique in a prologue and five acts by Jean-Baptiste Lully. Philippe Quinault wrote the French libretto after a story from Ovid's Metamorphoses. It can be read as an allegorical depiction of the punishment awaiting those mortals who dare to raise themselves as high as the \"sun\".",
+      "pageviews_yearly": 4114
+    },
+    {
+      "qid": "Q664726",
+      "title": "Pickpocket",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pickpocket_(film)",
+      "wikipedia_extract": "Pickpocket is a 1959 French film written and directed by Robert Bresson. It stars Martin LaSalle, in his feature film debut, in the title role, and features Marika Green, Pierre Leymarie, and Jean Pélégri in supporting roles. It features a pickpocket who is drawn to crime, despite the intercession of his family, his friends, and even an empathetic policeman.",
+      "pageviews_yearly": 60183
+    },
+    {
+      "qid": "Q16220813",
+      "title": "Plaude Laetare Gallia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Plaude_Laetare_Gallia",
+      "wikipedia_extract": "Plaude laetare Gallia is a motet by Jean-Baptiste Lully (music) and Pierre Perrin (text), written to celebrate the baptism of King Louis XIV's son, the Grand Dauphin Louis, on 24 March 1668, at the chapel of the Château de Saint-Germain-en-Laye.",
+      "pageviews_yearly": 1756
+    },
+    {
+      "qid": "Q106829785",
+      "title": "Première Marche des Mousquetaires, Première Marche"
+    },
+    {
+      "qid": "Q106829925",
+      "title": "Première Marche des Mousquetaires, Première Marche"
+    },
+    {
+      "qid": "Q2745696",
+      "title": "Proserpine",
+      "imslp_id": "Proserpine,_LWV_58_(Lully,_Jean-Baptiste)",
+      "pdf_filename": "Lully-Pros1.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-baptiste-lully-1632-pp80",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Proserpine_(Lully)",
+      "wikipedia_extract": "Proserpine (Proserpina) is an opera with music by Jean-Baptiste Lully and a libretto by Philippe Quinault first performed at Saint-Germain-en-Laye on 3 February 1680.",
+      "pageviews_yearly": 2789
+    },
+    {
+      "qid": "Q106829792",
+      "title": "Proserpine, Air pour les trompettes"
+    },
+    {
+      "qid": "Q106829884",
+      "title": "Proserpine, Air pour les trompettes"
+    },
+    {
+      "qid": "Q106830268",
+      "title": "Proserpine, Air pour les trompettes"
+    },
+    {
+      "qid": "Q106830209",
+      "title": "Proserpine, Belles fleurs"
+    },
+    {
+      "qid": "Q106829621",
+      "title": "Proserpine, La Discorde"
+    },
+    {
+      "qid": "Q106830081",
+      "title": "Proserpine, La Discorde"
+    },
+    {
+      "qid": "Q106830243",
+      "title": "Proserpine, Menuet"
+    },
+    {
+      "qid": "Q106829696",
+      "title": "Proserpine, Ouverture"
+    },
+    {
+      "qid": "Q106829517",
+      "title": "Proserpine, Ouverture"
+    },
+    {
+      "qid": "Q106830208",
+      "title": "Proserpine, Ouverture"
+    },
+    {
+      "qid": "Q106829678",
+      "title": "Proserpine, Second Air"
+    },
+    {
+      "qid": "Q3099033",
+      "title": "Psyché",
+      "imslp_id": "Psyché,_LWV_56_(Lully,_Jean-Baptiste)",
+      "pdf_filename": "PMLP44522-LWV56-Psyché.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-baptiste-lully-1632-pp123",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Psych%C3%A9_(opera)",
+      "wikipedia_extract": "Psyché is an opera in a prologue and five acts composed by Jean-Baptiste Lully to a libretto by Thomas Corneille. Based on the love story of Cupid and Psyche, Psyché was premiered on April 19, 1678, by the Académie Royale de Musique at the Théâtre du Palais-Royal in Paris.",
+      "pageviews_yearly": 4745
+    },
+    {
+      "qid": "Q106829510",
+      "title": "Psyché, Aimable jeunesse"
+    },
+    {
+      "qid": "Q106829516",
+      "title": "Psyché, Dernier Air"
+    },
+    {
+      "qid": "Q106829511",
+      "title": "Psyché, Entrée (Gavotte)"
+    },
+    {
+      "qid": "Q106830235",
+      "title": "Psyché, Entrée (Gavotte)"
+    },
+    {
+      "qid": "Q106829513",
+      "title": "Psyché, Les Bacchanales"
+    },
+    {
+      "qid": "Q106829978",
+      "title": "Psyché, Menuet"
+    },
+    {
+      "qid": "Q106829508",
+      "title": "Psyché, Menuet"
+    },
+    {
+      "qid": "Q106829509",
+      "title": "Psyché, Menuet"
+    },
+    {
+      "qid": "Q106829639",
+      "title": "Psyché, Ouverture"
+    },
+    {
+      "qid": "Q106830041",
+      "title": "Psyché, Ouverture"
+    },
+    {
+      "qid": "Q106829788",
+      "title": "Psyché, Prélude"
+    },
+    {
+      "qid": "Q106829608",
+      "title": "Psyché, Prélude"
+    },
+    {
+      "qid": "Q106829514",
+      "title": "Psyché, Second Air"
+    },
+    {
+      "qid": "Q106829831",
+      "title": "Psyché, Trompettes"
+    },
+    {
+      "qid": "Q106829481",
+      "title": "Psyché, Trompettes"
+    },
+    {
+      "qid": "Q106829515",
+      "title": "Psyché, Trompettes"
+    },
+    {
+      "qid": "Q106830253",
+      "title": "Psyché, Trompettes"
+    },
+    {
+      "qid": "Q106830266",
+      "title": "Psyché, Trompettes"
+    },
+    {
+      "qid": "Q3439921",
+      "title": "Roland",
+      "imslp_id": "Roland,_LWV_65_(Lully,_Jean-Baptiste)",
+      "pdf_filename": "Lully-Roland1.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-baptiste-lully-1632-pp84",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Roland_(Lully)",
+      "wikipedia_extract": "Roland is an opera with music by Jean-Baptiste Lully and a libretto by Philippe Quinault. It was first performed on January 8, 1685, at the Palace of Versailles by the Académie Royale de Musique and later, beginning on March 8, 1685, at the company's public theatre in Paris, the Théâtre du Palais-Royal. The story is derived from Ariosto's epic poem Orlando Furioso. The opera takes the form of a tragédie en musique with an allegorical prologue and five acts.",
+      "pageviews_yearly": 4581
+    },
+    {
+      "qid": "Q106830065",
+      "title": "Roland, Air"
+    },
+    {
+      "qid": "Q106829474",
+      "title": "Roland, C’est l’amour"
+    },
+    {
+      "qid": "Q106829566",
+      "title": "Roland, C’est l’amour"
+    },
+    {
+      "qid": "Q106830106",
+      "title": "Roland, C’est l’amour"
+    },
+    {
+      "qid": "Q106830164",
+      "title": "Roland, C’est l’amour"
+    },
+    {
+      "qid": "Q106830174",
+      "title": "Roland, Deux Amantes contentes"
+    },
+    {
+      "qid": "Q106830165",
+      "title": "Roland, Gavotte"
+    },
+    {
+      "qid": "Q106830167",
+      "title": "Roland, Gavotte"
+    },
+    {
+      "qid": "Q106830166",
+      "title": "Roland, Gigue"
+    },
+    {
+      "qid": "Q106830169",
+      "title": "Roland, Le Marié (Marche)"
+    },
+    {
+      "qid": "Q106830064",
+      "title": "Roland, Marche"
+    },
+    {
+      "qid": "Q106829772",
+      "title": "Roland, Menuet"
+    },
+    {
+      "qid": "Q106829855",
+      "title": "Roland, Menuet"
+    },
+    {
+      "qid": "Q106830116",
+      "title": "Roland, Menuet"
+    },
+    {
+      "qid": "Q106830170",
+      "title": "Roland, Menuet"
+    },
+    {
+      "qid": "Q106830172",
+      "title": "Roland, Menuet"
+    },
+    {
+      "qid": "Q106830173",
+      "title": "Roland, Menuet"
+    },
+    {
+      "qid": "Q106829368",
+      "title": "Roland, Menuet"
+    },
+    {
+      "qid": "Q106829611",
+      "title": "Roland, Ouverture"
+    },
+    {
+      "qid": "Q106830061",
+      "title": "Roland, Ouverture"
+    },
+    {
+      "qid": "Q106830163",
+      "title": "Roland, Ouverture"
+    },
+    {
+      "qid": "Q106829994",
+      "title": "Roland, Roland",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-baptiste-lully-1632-pp84"
+    },
+    {
+      "qid": "Q106829472",
+      "title": "Roland, Second Menuet"
+    },
+    {
+      "qid": "Q106830171",
+      "title": "Roland, Second Menuet"
+    },
+    {
+      "qid": "Q106829680",
+      "title": "Roland, Symphonie (Ritournelle)"
+    },
+    {
+      "qid": "Q29208286",
+      "title": "Rondeau"
+    },
+    {
+      "qid": "Q670343",
+      "title": "Rufst du, mein Vaterland",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rufst_du%2C_mein_Vaterland",
+      "wikipedia_extract": "\"Rufst du, mein Vaterland\" is the former national anthem of Switzerland. It had the status of de facto national anthem from the formation of Switzerland as a federal state in the 1840s, until 1961, when it was replaced by the Swiss Psalm.",
+      "pageviews_yearly": 16834
+    },
+    {
+      "qid": "Q1547583",
+      "title": "Te Deum",
+      "imslp_id": "Te_Deum,_LWV_55_(Lully,_Jean-Baptiste)",
+      "pdf_filename": "PMLP115942-Lully_Te_deum.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-baptiste-lully-1632-pp280"
+    },
+    {
+      "qid": "Q106828565",
+      "title": "The Online Thematic Catalogue of Lully Keyboard Arrangements"
+    },
+    {
+      "qid": "Q63542553",
+      "title": "The Would-Be Noble"
+    },
+    {
+      "qid": "Q63546465",
+      "title": "The Would-Be Noble"
+    },
+    {
+      "qid": "Q64596822",
+      "title": "The Would-Be Noble"
+    },
+    {
+      "qid": "Q64596827",
+      "title": "The Would-Be Noble"
+    },
+    {
+      "qid": "Q3098992",
+      "title": "Thésée",
+      "imslp_id": "Thésée,_LWV_51_(Lully,_Jean-Baptiste)",
+      "pdf_filename": "Lully_-_Thesee1.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-baptiste-lully-1632-pp75",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Th%C3%A9s%C3%A9e_(Lully)",
+      "wikipedia_extract": "Thésée is a tragédie en musique, an early type of French opera, in a prologue and five acts with music by Jean-Baptiste Lully and a libretto by Philippe Quinault based on Ovid's Metamorphoses. It was first performed on 11 January 1675 by the Paris Opera for the royal court at the Château de Saint-Germain-en-Laye and was first performed in public in April at the Théâtre du Palais-Royal in Paris.",
+      "pageviews_yearly": 3616
+    },
+    {
+      "qid": "Q106830242",
+      "title": "Thésée, Aimons, aimons"
+    },
+    {
+      "qid": "Q106829866",
+      "title": "Thésée, Descente de Mars"
+    },
+    {
+      "qid": "Q106829633",
+      "title": "Thésée, Entrée des Combattants"
+    },
+    {
+      "qid": "Q106829632",
+      "title": "Thésée, La Marche"
+    },
+    {
+      "qid": "Q106829720",
+      "title": "Thésée, La Marche"
+    },
+    {
+      "qid": "Q106829774",
+      "title": "Thésée, La Marche"
+    },
+    {
+      "qid": "Q106829782",
+      "title": "Thésée, La Marche"
+    },
+    {
+      "qid": "Q106829850",
+      "title": "Thésée, La Marche"
+    },
+    {
+      "qid": "Q106830261",
+      "title": "Thésée, La Marche"
+    },
+    {
+      "qid": "Q106829723",
+      "title": "Thésée, Les Démons"
+    },
+    {
+      "qid": "Q106830068",
+      "title": "Thésée, Les Démons"
+    },
+    {
+      "qid": "Q106830084",
+      "title": "Thésée, Les Démons"
+    },
+    {
+      "qid": "Q106830255",
+      "title": "Thésée, L’amour plaist"
+    },
+    {
+      "qid": "Q106830067",
+      "title": "Thésée, Prélude"
+    },
+    {
+      "qid": "Q106829631",
+      "title": "Thésée, Ritournelle"
+    },
+    {
+      "qid": "Q106830079",
+      "title": "Thésée, Ritournelle"
+    },
+    {
+      "qid": "Q106829781",
+      "title": "Thésée, Ritournelle"
+    },
+    {
+      "qid": "Q106829791",
+      "title": "Thésée, Ritournelle"
+    },
+    {
+      "qid": "Q106830260",
+      "title": "Thésée, Ritournelle"
+    },
+    {
+      "qid": "Q106829724",
+      "title": "Thésée, Second Air"
+    },
+    {
+      "qid": "Q106830038",
+      "title": "Thésée, Second Air"
+    },
+    {
+      "qid": "Q106830069",
+      "title": "Thésée, Second Air"
+    },
+    {
+      "qid": "Q106829630",
+      "title": "Thésée, Trompettes"
+    },
+    {
+      "qid": "Q106830033",
+      "title": "Thésée, Trompettes"
+    },
+    {
+      "qid": "Q106829773",
+      "title": "Thésée, Trompettes"
+    },
+    {
+      "qid": "Q106829780",
+      "title": "Thésée, Trompettes"
+    },
+    {
+      "qid": "Q106829790",
+      "title": "Thésée, Trompettes"
+    },
+    {
+      "qid": "Q106829846",
+      "title": "Thésée, Trompettes"
+    },
+    {
+      "qid": "Q106830259",
+      "title": "Thésée, Trompettes"
+    },
+    {
+      "qid": "Q106829682",
+      "title": "Trios de la Chambre du Roi, Dans nos bois"
+    },
+    {
+      "qid": "Q106829754",
+      "title": "Trios de la Chambre du Roi, Dans nos bois"
+    },
+    {
+      "qid": "Q106829755",
+      "title": "Trios de la Chambre du Roi, Dans nos bois"
+    },
+    {
+      "qid": "Q106829872",
+      "title": "Trios de la Chambre du Roi, Dans nos bois"
+    },
+    {
+      "qid": "Q106829574",
+      "title": "Trios de la Chambre du Roi, Dans nos bois"
+    },
+    {
+      "qid": "Q106830091",
+      "title": "Trios de la Chambre du Roi, Dans nos bois"
+    },
+    {
+      "qid": "Q106830097",
+      "title": "Trios de la Chambre du Roi, Dans nos bois"
+    },
+    {
+      "qid": "Q106830109",
+      "title": "Trios de la Chambre du Roi, Dans nos bois"
+    },
+    {
+      "qid": "Q106830131",
+      "title": "Trios de la Chambre du Roi, Dans nos bois"
+    },
+    {
+      "qid": "Q106830240",
+      "title": "Trios de la Chambre du Roi, Dans nos bois"
+    },
+    {
+      "qid": "Q106829690",
+      "title": "Trios de la Chambre du Roi, La Jeune Iris"
+    },
+    {
+      "qid": "Q106830274",
+      "title": "Trios de la Chambre du Roi, La Jeune Iris"
+    },
+    {
+      "qid": "Q106830044",
+      "title": "Trios de la Chambre du Roi, Menuet"
+    },
+    {
+      "qid": "Q106829899",
+      "title": "Trios de la Chambre du Roi, Où estes-vous allé"
+    },
+    {
+      "qid": "Q106829907",
+      "title": "Trios de la Chambre du Roi, Ritournelle de Junon"
+    },
+    {
+      "qid": "Q106829908",
+      "title": "Trios de la Chambre du Roi, Sarabande"
+    },
+    {
+      "qid": "Q106829722",
+      "title": "Xerxes, Entrée, les Basques"
+    },
+    {
+      "qid": "Q106829973",
+      "title": "Xerxes, Entrée, les Basques"
+    },
+    {
+      "qid": "Q106829974",
+      "title": "Xerxes, Rondeau"
+    },
+    {
+      "qid": "Q106830122",
+      "title": "Zéphire et Flore"
+    },
+    {
+      "qid": "Q106830029",
+      "title": "Zéphire et Flore, Echo"
+    },
+    {
+      "qid": "Q106829789",
+      "title": "not in LWV"
+    }
+  ]
+}

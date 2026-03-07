@@ -1,0 +1,693 @@
+{
+  "composer_slug": "wagner",
+  "composer_qid": "Q1511",
+  "work_count": 97,
+  "midi_file_count": 44,
+  "works": [
+    {
+      "qid": "Q1213477",
+      "title": "Die Hochzeit",
+      "imslp_id": "Die_Hochzeit,_WWV_31_(Wagner,_Richard)",
+      "pdf_filename": "PMLP270754-RWagner_Die_Hochzeit__WWV31_fs.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Die_Hochzeit",
+      "wikipedia_extract": "Die Hochzeit is an unfinished opera by Richard Wagner which predates his completed works in the genre. Wagner completed the libretto, then started composing the music in the second half of 1832 when he was just nineteen. He abandoned the project and destroyed the libretto after his sister Rosalie, who was the main supporter and the spokesman of the family, expressed her disgust at the story. Today, only three pieces survive from the opera.",
+      "pageviews_yearly": 3923,
+      "date": "1832-00-00"
+    },
+    {
+      "qid": "Q477656",
+      "title": "Die Feen",
+      "imslp_id": "Die_Feen,_WWV_32_(Wagner,_Richard)",
+      "pdf_filename": "PMLP188631-00._WAGNER_-_DIE_FEEN_OVERTURE_-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/richard-wagner-1813-pp30",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Die_Feen",
+      "wikipedia_extract": "Die Feen is an opera in three acts by Richard Wagner. The German libretto was written by the composer after Carlo Gozzi's La donna serpente. Die Feen was Wagner's first completed opera, but remained unperformed in his lifetime. It has never established itself firmly in the operatic repertory although it receives occasional performances, on stage or in concert, most often in Germany. The opera is available on CD and in a heavily cut, adapted-for-children version, DVD.",
+      "pageviews_yearly": 9995,
+      "date": "1833-00-00"
+    },
+    {
+      "qid": "Q689441",
+      "title": "Rienzi",
+      "imslp_id": "Rienzi,_WWV_49_(Wagner,_Richard)",
+      "pdf_filename": "PMLP21247-00._WAGNER_-_RIENZI_FINALE_ACT_III_-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/richard-wagner-1813-pp32",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rienzi",
+      "wikipedia_extract": "Rienzi, der letzte der Tribunen is an 1842 opera by Richard Wagner in five acts, with the libretto written by the composer after Edward Bulwer-Lytton's novel of the same name (1835). The title is commonly shortened to Rienzi. Written between July 1838 and November 1840, it was first performed at the Königliches Hoftheater Dresden, on 20 October 1842, and was the composer's first success.",
+      "pageviews_yearly": 43504,
+      "date": "1837-00-00"
+    },
+    {
+      "qid": "Q557486",
+      "title": "Arrival at the Black Swans",
+      "imslp_id": "Ankunft_bei_den_schwarzen_Schwänen,_WWV_95_(Wagner,_Richard)",
+      "pdf_filename": "Wagner_Ankunft_bei_den_schwarzen_Schwanen.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1861-00-00"
+    },
+    {
+      "qid": "Q16988570",
+      "title": "Kaisermarsch",
+      "imslp_id": "Kaisermarsch,_WWV_104_(Wagner,_Richard)",
+      "pdf_filename": "PMLP56672-00._WAGNER_-_KAISERMARSCH_-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/richard-wagner-1813-pp85",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kaisermarsch",
+      "wikipedia_extract": "The Kaisermarsch is a patriotic march composed by Richard Wagner in 1871 in order to exalt the foundation of the German Empire after the victorious Franco-Prussian War.",
+      "pageviews_yearly": 3769,
+      "date": "1871-04-14"
+    },
+    {
+      "qid": "Q104896306",
+      "title": "Byeway",
+      "date": "2014-01-01"
+    },
+    {
+      "qid": "Q54989233",
+      "title": "Almighty Father"
+    },
+    {
+      "qid": "Q101424826",
+      "title": "An Webers Grabe",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/richard-wagner-1813-pp83"
+    },
+    {
+      "qid": "Q1476098",
+      "title": "Bridal Chorus",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/richard-wagner-1813-pp35",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bridal_Chorus",
+      "wikipedia_extract": "The \"Bridal Chorus\" from the 1850 opera Lohengrin by German composer Richard Wagner, who also wrote the libretto, is a march played for the bride's entrance at many formal weddings throughout the Western world. In English-speaking countries, it is generally known as \"Here Comes the Bride\" or \"Wedding March\", but \"wedding march\" refers to any piece in march tempo accompanying the entrance or exit of the bride, notably Felix Mendelssohn's \"Wedding March\". Wagner’s piece was made popular when it was used as the processional at the wedding of Victoria the Princess Royal to Prince Frederick William of Prussia in 1858.",
+      "pageviews_yearly": 58399
+    },
+    {
+      "qid": "Q101424839",
+      "title": "Centennial march",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/richard-wagner-1813-pp60"
+    },
+    {
+      "qid": "Q101424960",
+      "title": "Columbus Overture",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/richard-wagner-1813-pp52"
+    },
+    {
+      "qid": "Q5159981",
+      "title": "Confession",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Confession_(miniseries)",
+      "wikipedia_extract": "Confession is a Russian documentary by Alexander Sokurov released in 1998 as a five-part miniseries on television. The series follows the lives of Russian sailors aboard a battleship in the Barents Sea.",
+      "pageviews_yearly": 2357
+    },
+    {
+      "qid": "Q1169644",
+      "title": "Das Liebesmahl der Apostel",
+      "imslp_id": "Das_Liebesmahl_der_Apostel,_WWV_69_(Wagner,_Richard)",
+      "pdf_filename": "PMLP236126-00._WAGNER_-_DAS_LIEBESMAHL_DER_APOSTEL_-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/richard-wagner-1813-pp81",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Das_Liebesmahl_der_Apostel",
+      "wikipedia_extract": "\n\nDas Liebesmahl der Apostel (1843) WWV 69 is a piece for orchestra and male choruses by Richard Wagner. It is rarely performed and little known. Many years after having written it, Wagner described it as \"a sort of folkloric miracle play\".",
+      "pageviews_yearly": 3132
+    },
+    {
+      "qid": "Q174392",
+      "title": "Das Liebesverbot",
+      "imslp_id": "Das_Liebesverbot,_WWV_38_(Wagner,_Richard)",
+      "pdf_filename": "PMLP49996-00._WAGNER_-_DAS_LIEBESVERBOT_OVERTURE_-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/richard-wagner-1813-pp31",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Das_Liebesverbot",
+      "wikipedia_extract": "Das Liebesverbot, is an early comic opera in two acts by Richard Wagner, with the libretto written by the composer after Shakespeare's Measure for Measure. Described as a Große komische Oper, it was composed in early 1836.",
+      "pageviews_yearly": 9688
+    },
+    {
+      "qid": "Q327717",
+      "title": "Das Rheingold",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Richard_Wagner_-_Das_Rheingold_Transformation_Music_Piano_Score.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q107976754",
+      "title": "Der Ring an einem Abend"
+    },
+    {
+      "qid": "Q190237",
+      "title": "Der Ring des Nibelungen",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Wagner_-_Vorspiel_to_Das_Rheingold_WWV_86A_Professional_production_full_score.mid",
+        "midi/Wagner_-_Gotterdamerung_Vorspiel_to_Akt_3_WWV_86D_Professional_production_ful.mid",
+        "midi/Wagner_-_Siegfried_Vorspiel_to_Akt_3_WWV_86C_Professional_production_full_sco.mid",
+        "midi/Siegfried.mid",
+        "midi/Wagner_-_Ride_of_the_Valkryies_from_Akt_3_of_Die_Walkure_WWV_86B_Professional.mid",
+        "midi/Wagner_-_Gotterdammerung_Vorspiel_to_Akt_2_WWV_86D_Professional_production_fu.mid",
+        "midi/Wagner_-_Siegfried_Akt_2_Siegfried_vs_Fafner_WWV_86C_Professional_production.mid",
+        "midi/Wagner_-_Gotterdammerung_Vorspiel_to_Akt_1_WWV_86D_Professional_production_fu.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q248596",
+      "title": "Die Deutsche Wochenschau"
+    },
+    {
+      "qid": "Q54989235",
+      "title": "Die Freiheit Rom's"
+    },
+    {
+      "qid": "Q41738484",
+      "title": "Die Laune des Verliebten",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Die_Laune_des_Verliebten",
+      "wikipedia_extract": "Die Laune des Verliebten was Richard Wagner's first attempt at an opera project. Written in about 1830, when Wagner was 17, the libretto was based on a play of the same name by Johann Wolfgang von Goethe. Wagner wrote a scene for three female voices and a tenor aria before abandoning the project. There is no performance history for these fragments, and neither words nor music have survived.",
+      "pageviews_yearly": 2553
+    },
+    {
+      "qid": "Q465540",
+      "title": "Die Meistersinger von Nürnberg",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Wagner_-_Die_Meistersinger_von_Nurnberg_Overture_to_Akt_2_WWV_96_Professional.mid",
+        "midi/Wagner_-_Die_Meistersinger_von_Nurnberg_Overture_to_Akt_3_WWV_96_Professional.mid",
+        "midi/Richard_Wagner_-_ENDEzuDIE_MEISTERSINGER_in_Full_score_WWV_96.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q324319",
+      "title": "Die Walküre",
+      "imslp_id": "Die_Walküre,_WWV_86B_(Wagner,_Richard)",
+      "pdf_filename": "Brassin_-_Aus_Richard_Wagner_s_Der_Ring_des_Nibelungen_-_No.2_-_Siegmunds_Liebesgesang__Die_Walkure_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/richard-wagner-1813-pp37",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Die_Walk%C3%BCre",
+      "wikipedia_extract": "Die Walküre, WWV 86B, is the second of the four epic music dramas that constitute Richard Wagner's cycle Der Ring des Nibelungen. It was performed, as a single opera, at the National Theatre Munich on 26 June 1870, and received its first performance as part of the Ring cycle at the Bayreuth Festspielhaus on 14 August 1876.",
+      "pageviews_yearly": 152169
+    },
+    {
+      "qid": "Q979231",
+      "title": "Détective",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/D%C3%A9tective",
+      "wikipedia_extract": "Détective is a 1985 French crime film directed by Jean-Luc Godard. It was entered into the 1985 Cannes Film Festival. The film won the Georges Delerue Award for Best Soundtrack/Sound Design at Film Fest Gent in 1985.",
+      "pageviews_yearly": 7340
+    },
+    {
+      "qid": "Q78647882",
+      "title": "Einsam in trübem [sic] Tagen = Drwy ddyddiau'r dwys ofalon (Breuddwyd Elsa) : Lohengrin"
+    },
+    {
+      "qid": "Q101425149",
+      "title": "Elegy in A-flat major",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Wagner_-_Elegy_for_Piano_in_Ab_Major_WWV_93_Professional_production_score.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q3057871",
+      "title": "Escape to Nowhere"
+    },
+    {
+      "qid": "Q3202242",
+      "title": "Family Tree",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Family_Tree_(2010_film)",
+      "wikipedia_extract": "Family Tree is a 2010 French film directed by Olivier Ducastel and Jacques Martineau. It drew its inspiration in large measure from the life of Pierre Seel, an Alsatian homosexual deported to the camp of Schirmeck, who wrote of his experiences in a book, Moi, Pierre Seel, déporté homosexuel. The film won the Prix Jean Vigo in 2009.",
+      "pageviews_yearly": 2077
+    },
+    {
+      "qid": "Q54989155",
+      "title": "Farewell, Siegmund, hero most blest"
+    },
+    {
+      "qid": "Q955581",
+      "title": "Faust Overture",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Wagner_-_A_Faust_Overture_WWV_59_Professional_production_full_score_Unfinis.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q101424834",
+      "title": "Festgesang: 'Der Tag erscheint'",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/richard-wagner-1813-pp80"
+    },
+    {
+      "qid": "Q78647944",
+      "title": "Gerechter Gott = O gyfiawn Dduw : Rienzi"
+    },
+    {
+      "qid": "Q138318203",
+      "title": "Good Friday Music (from Parsifal)"
+    },
+    {
+      "qid": "Q1478847",
+      "title": "Grail Narration"
+    },
+    {
+      "qid": "Q101425067",
+      "title": "Grand Sonata in A major"
+    },
+    {
+      "qid": "Q114204263",
+      "title": "Gretchen at the spinning wheel"
+    },
+    {
+      "qid": "Q272029",
+      "title": "Götterdämmerung",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Wagner_-_GoItterdaImmerung_Act_2_Scene_1_Vocal_Score.mid",
+        "midi/Richard_Wagner_-_GoItterdaImmerung_Act_3_Prelude_Piano_Score.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q15052161",
+      "title": "Hardware Wars",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hardware_Wars",
+      "wikipedia_extract": "Hardware Wars is a 1978 American short science fiction parody film in the form of a teaser trailer for a fictitious science fiction film that parodies Star Wars. The 13-minute film, which was released almost 18 months after Star Wars, mainly consisted of inside jokes and visual puns that heavily depended upon audience familiarity with the original. The theme song is Richard Wagner's \"Ride of the Valkyries\".",
+      "pageviews_yearly": 34914
+    },
+    {
+      "qid": "Q101424837",
+      "title": "Huldigungsmarsch",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/richard-wagner-1813-pp57"
+    },
+    {
+      "qid": "Q1660620",
+      "title": "In Danger and Deep Distress, the Middleway Spells Certain Death",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/In_Danger_and_Deep_Distress%2C_the_Middleway_Spells_Certain_Death",
+      "wikipedia_extract": "In Danger and Deep Distress, the Middleway Spells Certain Death is a 1974 drama film directed by Alexander Kluge and Edgar Reitz. It is set in Frankfurt and tells the story of two women, one who sleeps with many men and steals their wallets, and one who is a spy for East Germany. The film mimics the style of documentaries, with actual documentary footage from the city as well as essayistic aspects.",
+      "pageviews_yearly": 1738
+    },
+    {
+      "qid": "Q86520095",
+      "title": "In Memoriam Yakov Kreizberg"
+    },
+    {
+      "qid": "Q131470953",
+      "title": "Kinderkatechismus",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/richard-wagner-1813-pp86",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kinderkatechismus",
+      "wikipedia_extract": "\nKinderkatechismus is an 1873 composition by Richard Wagner, originally for voices and piano and later for voices and small orchestra. Written to celebrate his wife's birthday it was sung to her by her young children.",
+      "pageviews_yearly": 1660
+    },
+    {
+      "qid": "Q3203141",
+      "title": "L'Ennui",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/L'Ennui",
+      "wikipedia_extract": "L'Ennui is a 1998 erotic drama film directed by Cédric Kahn from a screenplay he co-wrote with Laurence Ferreira Barbosa, based on the 1960 novel La noia by Alberto Moravia. The film stars Charles Berling, Sophie Guillemin and Arielle Dombasle, with Robert Kramer, Alice Grey and Maurice Antoni. It follows the life of a bored philosopher as he becomes jealously obsessed with the much younger lover of a dead painter.",
+      "pageviews_yearly": 22273
+    },
+    {
+      "qid": "Q3207671",
+      "title": "La Complainte du Hollandais"
+    },
+    {
+      "qid": "Q2527167",
+      "title": "Lessons of Darkness",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lessons_of_Darkness",
+      "wikipedia_extract": "Lessons of Darkness is a 1992 documentary film directed by Werner Herzog. The film is an exploration of the ravaged oil fields of post-Gulf War Kuwait, portrayed in a manner that accentuates the catastrophic and surreal nature of the landscape. An effective companion to Herzog's earlier film Fata Morgana, the film again perceives the desert as a landscape with its voice.",
+      "pageviews_yearly": 96502
+    },
+    {
+      "qid": "Q645250",
+      "title": "Liebestod",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liebestod",
+      "wikipedia_extract": "\"Liebestod\" is the title often given to the final, dramatic music or aria from the opera Tristan und Isolde by Richard Wagner. It is the climactic end of the 1859 completed / 1865 premiered opera, as Isolde sings over Tristan's dead body.",
+      "pageviews_yearly": 32909
+    },
+    {
+      "qid": "Q23085",
+      "title": "Lohengrin"
+    },
+    {
+      "qid": "Q3836469",
+      "title": "Lohengrin",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Wagner_Richard_Das_Brautlied_aus_Lohengrin_Treulich_gefuhrt.mid",
+        "midi/Lohengrin_Overture_Piano.mid",
+        "midi/Wagner-Elsas_Procession_to_the_Cathedral_from_the_Opera_Lohengrin_piano_solo.mid",
+        "midi/Treulich_Gefuhrt_Bridal_Chorus_from_Lohengrin.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q60627740",
+      "title": "Lohengrin - Act I"
+    },
+    {
+      "qid": "Q60627783",
+      "title": "Lohengrin - Act II"
+    },
+    {
+      "qid": "Q60627825",
+      "title": "Lohengrin - Act III",
+      "movements": [
+        {
+          "qid": "Q60628006"
+        },
+        {
+          "qid": "Q1476098"
+        },
+        {
+          "qid": "Q1478847"
+        }
+      ]
+    },
+    {
+      "qid": "Q60628006",
+      "title": "Lohengrin - Prelude to Act III"
+    },
+    {
+      "qid": "Q60627697",
+      "title": "Lohengrin - Vorspiel",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/richard-wagner-1813-pp35"
+    },
+    {
+      "qid": "Q54989185",
+      "title": "Lonely, in troubled days"
+    },
+    {
+      "qid": "Q630855",
+      "title": "Love in the Afternoon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Love_in_the_Afternoon_(1957_film)",
+      "wikipedia_extract": "Love in the Afternoon is a 1957 American romantic comedy film produced and directed by Billy Wilder, and starring Gary Cooper, Audrey Hepburn, and Maurice Chevalier. The screenplay by Wilder and I. A. L. Diamond is based on the 1920 Claude Anet novel Ariane, jeune fille russe. The story explores the relationship between a notorious middle-aged American playboy business magnate and the 20-something daughter of a private detective hired to investigate him. The supporting cast features John McGiver and Lise Bourdin.",
+      "pageviews_yearly": 69651
+    },
+    {
+      "qid": "Q324524",
+      "title": "Ludwig II: Glanz und Ende eines Königs",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ludwig_II_(1955_film)",
+      "wikipedia_extract": "Ludwig II is a 1955 West German historical drama film directed by Helmut Käutner and starring O.W. Fischer, Ruth Leuwerik and Marianne Koch. It is based on the life of the nineteenth century ruler Ludwig II of Bavaria. It was entered into the 1955 Cannes Film Festival. The film was shot in technicolor at the Bavaria Studios in Munich with sets designed by the art director Hein Heckroth and Fritz Lück. Location shooting took place at the historic residences of Ludwig II Herrenchiemsee, Neuschwanstein Castle and Hohenschwangau Castle.",
+      "pageviews_yearly": 5684
+    },
+    {
+      "qid": "Q6699165",
+      "title": "Ludwig: Requiem for a Virgin King",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ludwig%3A_Requiem_for_a_Virgin_King",
+      "wikipedia_extract": "Ludwig: Requiem for a Virgin King is a 1972 West German historical drama film directed by Hans-Jürgen Syberberg, starring Harry Baer as Ludwig II of Bavaria. The film was shot on a soundstage with rear-projected scenography and an intentionally artificial style.",
+      "pageviews_yearly": 8597
+    },
+    {
+      "qid": "Q976002",
+      "title": "Magic Fire",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Magic_Fire",
+      "wikipedia_extract": "Magic Fire is a 1955 American biographical film about the life of composer Richard Wagner, released by Republic Pictures.",
+      "pageviews_yearly": 6836
+    },
+    {
+      "qid": "Q148383",
+      "title": "Meeting Venus",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Meeting_Venus",
+      "wikipedia_extract": "Meeting Venus is a 1991 British–American-Japanese film directed by the Hungarian director István Szabó and starring Glenn Close and Niels Arestrup. The movie was filmed in Budapest, Hungary.",
+      "pageviews_yearly": 10730
+    },
+    {
+      "qid": "Q165699",
+      "title": "Melancholia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Melancholia_(2011_film)",
+      "wikipedia_extract": "Melancholia is a 2011 science fiction drama film written and directed by Lars von Trier and starring Kirsten Dunst, Charlotte Gainsbourg, and Kiefer Sutherland, with Alexander Skarsgård, Brady Corbet, Cameron Spurr, Charlotte Rampling, Jesper Christensen, John Hurt, Stellan Skarsgård, and Udo Kier in supporting roles. The film's story revolves around two sisters, one of whom marries just before a rogue planet is about to collide with Earth. Melancholia is the second film in von Trier's unofficially titled Depression Trilogy. It was preceded in 2009 by Antichrist and followed by Nymphomaniac in 2013.",
+      "pageviews_yearly": 590142
+    },
+    {
+      "qid": "Q3854283",
+      "title": "Melodramma"
+    },
+    {
+      "qid": "Q604954",
+      "title": "Moloch",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Moloch_(1999_film)",
+      "wikipedia_extract": "Moloch is a 1999 Russian biographical film, directed by Alexander Sokurov. The storyline was conceived from a screenplay written by Yuri Arabov and Marina Koreneva. It portrays Adolf Hitler living life in an unassuming manner during an abrupt journey to the Bavarian Alps. The film stars actors Leonid Mozgovoy, Yelena Rufanova, Vladimir Bogdanov, and Leonid Sokol in principal roles. Moloch explores companionship, intimacy and dictatorship.",
+      "pageviews_yearly": 13322
+    },
+    {
+      "qid": "Q54989164",
+      "title": "My father promised me a sword"
+    },
+    {
+      "qid": "Q1996297",
+      "title": "Männerlist grösser als Frauenlist",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/M%C3%A4nnerlist_gr%C3%B6%C3%9Fer_als_Frauenlist",
+      "wikipedia_extract": "Männerlist größer als Frauenlist oder Die glückliche Bärenfamilie is an unfinished Singspiel by Richard Wagner, written between 1837 and 1838.",
+      "pageviews_yearly": 3534
+    },
+    {
+      "qid": "Q2605605",
+      "title": "Once More, with Feeling!"
+    },
+    {
+      "qid": "Q138319557",
+      "title": "Overture from Die Meistersinger von Nürnberg"
+    },
+    {
+      "qid": "Q220340",
+      "title": "Parsifal",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Richard_Wagner_-_ENDEzuPARSIFAL_WWV_111.mid",
+        "midi/Wagner_-_Parsifal_Vorspiel_to_Akt_2_Klingsors_Zauberschloss_WWV_111_Professi.mid",
+        "midi/Richard_Wagner_-_Parsifal_Act_3_Transformation_Music_Piano_Solo_WWV111.mid",
+        "midi/Wagner_-_Parsifal_Vorspiel_to_Akt_1_WWV_111_Professional_production_full_scor.mid",
+        "midi/Wagner_-_Parsifal_Vorspiel_to_Akt_3_WWV_111_Professional_production_full_scor.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q3896511",
+      "title": "Parsifal",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/richard-wagner-1813-pp42",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Parsifal_(1982_film)",
+      "wikipedia_extract": "Parsifal is a 1982 West German-French opera film directed by Hans-Jürgen Syberberg, based on the opera of the same name by Richard Wagner. It was shown out of competition at the 1982 Cannes Film Festival.",
+      "pageviews_yearly": 8931
+    },
+    {
+      "qid": "Q57511337",
+      "title": "Parsifal",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Wagner_-_Parsifal_Act_1_Scene_1a_Vocal_Score.mid",
+        "midi/Wagner_Overture_to_the_Opera_Parsifal_Piano_solo.mid",
+        "midi/Wagner_-_Parsifal_Act_2_Ending_Vocal_Score.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q8874808",
+      "title": "Patriotism",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Patriotism_(1966_film)",
+      "wikipedia_extract": "Patriotism or the Rite of Love and Death  is a 1966 Japanese short film directed by Yukio Mishima. It is based on Mishima's short story \"Patriotism\", published in 1960.",
+      "pageviews_yearly": 16765
+    },
+    {
+      "qid": "Q19895213",
+      "title": "Polonia",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/richard-wagner-1813-pp53",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Polonia_(Wagner)",
+      "wikipedia_extract": "Polonia is a concert overture written by Richard Wagner. Wagner completed Polonia in 1836, although it has been suggested that it may have been drafted as early as 1832.",
+      "pageviews_yearly": 2608
+    },
+    {
+      "qid": "Q10351536",
+      "title": "Ponto a Ponto"
+    },
+    {
+      "qid": "Q1464243",
+      "title": "Ride of the Valkyries",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Wagner_Ride_of_the_Valkyries_Piano_with_Mixed_Voices.mid",
+        "midi/Wagner_Ride_of_the_Valkyries_Piano_solo.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q333146",
+      "title": "Siegfried",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Siegfried_-_Act_1_Pg1_-_7_Richard_Wagner.mid",
+        "midi/Wagner_Siegfrieds_Funeral_March_from_Gotterdammerung_Piano_solo.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q2117942",
+      "title": "Siegfried Idyll"
+    },
+    {
+      "qid": "Q3483409",
+      "title": "Siegfrieds Tod"
+    },
+    {
+      "qid": "Q24577958",
+      "title": "Sing Faster: The Stagehands' Ring Cycle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sing_Faster%3A_The_Stagehands'_Ring_Cycle",
+      "wikipedia_extract": "Sing Faster: The Stagehands' Ring Cycle is a 1999 documentary film directed by Jon H. Else, that explores the work – and leisure activities – of a crew of stagehands at the San Francisco Opera, as they prepare and rehearse for a production of Richard Wagner's complete Der Ring des Nibelungen. The cycle, a set of four operas with a combined performance time of seventeen hours, is regarded as the most ambitious production an opera company can mount. The film was distributed by the American Public Broadcast Service as part of its Independent Lens series.",
+      "pageviews_yearly": 2683
+    },
+    {
+      "qid": "Q66384894",
+      "title": "Swastika",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Swastika_(film)",
+      "wikipedia_extract": "Swastika is a 1973 British documentary film by Philippe Mora. Its screening at that year's Cannes Film Festival nearly caused a riot.",
+      "pageviews_yearly": 5309
+    },
+    {
+      "qid": "Q2659761",
+      "title": "Symphony in C major"
+    },
+    {
+      "qid": "Q101424763",
+      "title": "Symphony in E major",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Richard_Wagner_-_Symphony_in_C_-_1st_mouvement_Intro.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q560619",
+      "title": "Tannhäuser",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Wagner_Tannhauser_Overture_Piano_solo.mid",
+        "midi/Wagner_-_Pilgerchor_aus_Tannhauser_Horn_Quartet.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q1138798",
+      "title": "That Obscure Object of Desire",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/That_Obscure_Object_of_Desire",
+      "wikipedia_extract": "That Obscure Object of Desire is a 1977 French-Spanish absurdist satirical comedy-drama film directed by Luis Buñuel, based on the 1898 novel The Woman and the Puppet by Pierre Louÿs. It was Buñuel's final directorial effort before his death in July 1983. Set in Spain and France against the backdrop of a terrorist insurgency, the film conveys the story told through a series of flashbacks by an aging Frenchman, Mathieu, who recounts falling in love with a beautiful young Spanish woman, Conchita, who repeatedly frustrates his romantic and sexual desires. The film was nominated for the Academy Award for Best Foreign Language Film at the 50th Academy Awards representing for Spain.",
+      "pageviews_yearly": 63456
+    },
+    {
+      "qid": "Q114640",
+      "title": "The Flying Dutchman",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Wagner_-_Der_Fleigende_Hollander_Overture_to_Akt_1_WWV_63_Professional_produc.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q138499231",
+      "title": "The Flying Dutchman Overture"
+    },
+    {
+      "qid": "Q54989061",
+      "title": "The time has come and seven years have again elapsed"
+    },
+    {
+      "qid": "Q54989163",
+      "title": "Thou art the spring"
+    },
+    {
+      "qid": "Q7811203",
+      "title": "To an Evening Star",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Song_to_the_Evening_Star",
+      "wikipedia_extract": "\"Song to the Evening Star\", also known as \"Oh Star Of Eve\", is an aria sung by the character Wolfram (baritone) in the third act of Richard Wagner's 1845 opera Tannhäuser. Wolfram greets the Evening Star for offering hope in darkness, in an implied contrast to Tannhäuser's lover Venus at the beginning of the opera, in her underground realm Venusberg.",
+      "pageviews_yearly": 5737
+    },
+    {
+      "qid": "Q101424813",
+      "title": "Trauermusik",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/richard-wagner-1813-pp56"
+    },
+    {
+      "qid": "Q1139339",
+      "title": "Tristan chord",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Tristan_et_Ysolde_Act_I_-_Biginning.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q1324254",
+      "title": "Tristan und Isolde",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Wagner_Tristan_and_Isolde_Transfiguration_Act_III_Piano_solo.mid",
+        "midi/Wagner_-_Tristan_und_Isolde_Act_2_King_Marks_Aria_Vocal_Score.mid",
+        "midi/Wagner_-_Tristan_und_Isolde_Vorspiel_to_Akt_3_WWV_90_Professional_production.mid",
+        "midi/Richard_Wagner_-_ENDEzuTRISTAN_UND_ISOLDE_WWV_90.mid",
+        "midi/Wagner_-_Tristan_und_Isolde_Einleitung_zu_Akt_2_WWV_90_Professional_productio.mid",
+        "midi/Wagner_-_Tristan_und_Isolde_Love_Duet_WWV_90_Professional_production_full_sco.mid",
+        "midi/Wagner_-_Tristan_und_Isolde_Act_3_Wie_sie_Selig_Vocal_Score.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q190575",
+      "title": "Un Chien Andalou",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Un_Chien_Andalou",
+      "wikipedia_extract": "Un Chien Andalou is a 1929 French silent short film directed, produced and edited by Luis Buñuel, who also co-wrote the screenplay with Salvador Dalí. Buñuel's first film, it was initially released in a limited capacity at Studio des Ursulines in Paris, but became popular and ran for eight months.",
+      "pageviews_yearly": 180399
+    },
+    {
+      "qid": "Q56510784",
+      "title": "Venusberg"
+    },
+    {
+      "qid": "Q1541783",
+      "title": "Wesendonck Lieder",
+      "imslp_id": "5_Gedichte_für_eine_Frauenstimme,_WWV_91_(Wagner,_Richard)",
+      "pdf_filename": "PMLP45968-HOLY-_WAGNER-Träume___Rêve.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/richard-wagner-1813-pp105",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wesendonck_Lieder",
+      "wikipedia_extract": "Wesendonck Lieder, WWV 91, is the common name of a set of five songs for female voice and piano by Richard Wagner, Fünf Gedichte für eine Frauenstimme. He set five poems by Mathilde Wesendonck while he was working on his opera Tristan und Isolde. The songs, together with the Siegfried Idyll, are the two non-operatic works by Wagner most regularly performed.",
+      "pageviews_yearly": 13485
+    },
+    {
+      "qid": "Q2635222",
+      "title": "What's Opera, Doc?",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/What's_Opera%2C_Doc%3F",
+      "wikipedia_extract": "What's Opera, Doc? is a 1957 American Warner Bros. Merrie Melodies cartoon directed by Chuck Jones and written by Michael Maltese. The short was released on July 6, 1957, and stars Bugs Bunny and Elmer Fudd.",
+      "pageviews_yearly": 74159
+    },
+    {
+      "qid": "Q2990368",
+      "title": "White Tiger",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/White_Tiger_(2012_film)",
+      "wikipedia_extract": "White Tiger is a 2012 Russian war film, directed by Karen Shakhnazarov and co-written with Aleksandr Borodyansky based on the novel The Tankman, or The White Tiger by Russian novelist Ilya Boyashov. The film is about a badly wounded Soviet tank commander on the Eastern Front of World War II who becomes obsessed with tracking down and destroying a mysterious, invincible German tank, which the Soviet troops call the \"White Tiger\". The Soviets design a new, more powerful T-34 tank and assign the tank commander the job of destroying the White Tiger.",
+      "pageviews_yearly": 66395
+    },
+    {
+      "qid": "Q27832311",
+      "title": "Winifred Wagner und die Geschichte des Hauses Wahnfried von 1914-1975",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Confessions_of_Winifred_Wagner",
+      "wikipedia_extract": "The Confessions of Winifred Wagner is a 1975 West German documentary film directed by Hans-Jürgen Syberberg.",
+      "pageviews_yearly": 3169
+    },
+    {
+      "qid": "Q2656419",
+      "title": "Wuthering Heights",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wuthering_Heights_(1954_film)",
+      "wikipedia_extract": "Wuthering Heights is a 1954 Mexican film directed by Luis Buñuel. Its original Spanish title is Abismos de pasión.",
+      "pageviews_yearly": 18202
+    },
+    {
+      "qid": "Q2605556",
+      "title": "Züricher Vielliebchen-Walzer",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/richard-wagner-1813-pp70"
+    }
+  ]
+}

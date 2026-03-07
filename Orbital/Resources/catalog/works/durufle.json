@@ -1,0 +1,35 @@
+{
+  "composer_slug": "durufle",
+  "composer_qid": "Q183256",
+  "work_count": 3,
+  "midi_file_count": 3,
+  "works": [
+    {
+      "qid": "Q1510137",
+      "title": "Requiem",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/maurice-durufle-1902-pp7",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Requiem_(Durufl%C3%A9)",
+      "wikipedia_extract": "The Requiem, Op. 9, is a 1947 setting of the Latin Requiem by Maurice Duruflé for a solo baritone, mezzo-soprano, mixed choir, and organ, or orchestra with organ. The thematic material is mostly taken from the Mass for the Dead in Gregorian chant. The Requiem was first published in 1948 by Durand in an organ version.",
+      "pageviews_yearly": 27179,
+      "date": "1941-00-00"
+    },
+    {
+      "qid": "Q11495836",
+      "title": "Notre Père",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Notre_Pere_Durufle.mid",
+        "midi/Notre_PeIre_-_DurufleI_-_satb-nvtxt.mid",
+        "midi/Notre_Pere_-_Maurice_Durufle.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q41095843",
+      "title": "Quatre Motets sur des thèmes grégoriens",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quatre_Motets_sur_des_th%C3%A8mes_gr%C3%A9goriens",
+      "wikipedia_extract": "Quatre Motets sur des thèmes grégoriens, Op. 10, are four sacred motets composed by Maurice Duruflé in 1960, based on Gregorian themes. He set Ubi caritas et amor, Tota pulchra es, Tu es Petrus and Tantum ergo.",
+      "pageviews_yearly": 5040
+    }
+  ]
+}

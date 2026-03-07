@@ -1,0 +1,68 @@
+{
+  "composer_name": "Modest Petrovich Mussorgsky",
+  "name_last_first": "Mussorgsky, Modest Petrovich",
+  "slug": "mussorgsky",
+  "wiki_page": "https://en.wikipedia.org/wiki/Modest_Petrovich_Mussorgsky",
+  "apple_music_playlist": "https://music.apple.com/us/playlist/modest-mussorgsky-essentials/pl.883975f5039c4759b7c6254fd1e30000",
+  "era": "Late- / Post-Romantic",
+  "dates": "1839 – 1881",
+  "nationality": "RUS",
+  "notable": true,
+  "works": [
+    {
+      "title": "Mussorgsky monologue of Boris Godunov",
+      "musicxml": "musicxml/Mussorgsky_monologue_of_Boris_Godunov.mxl",
+      "midi": "midi/Mussorgsky_monologue_of_Boris_Godunov.mid",
+      "time_signature": "4/4",
+      "instruments": [
+        "Бас",
+        "Piano"
+      ],
+      "tempo_markings": [
+        "Moderato (Meno mosso)"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.87,
+        "n_favorites": 4,
+        "n_views": 146,
+        "duration_seconds": 93.33333333089628,
+        "n_notes": 538,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/19174891/scores/6293847",
+        "musescore_duration": "01:28"
+      },
+      "key": "E♭ major",
+      "key_changes": [
+        "E♭ major",
+        "C major"
+      ],
+      "instruments_gm": [
+        "Choir Aahs",
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 90,
+      "n_measures": 33,
+      "n_parts": 2,
+      "n_notes": 513,
+      "notes_per_second": 5.5,
+      "apple_music_search_query": "Mussorgsky E♭ major Mussorgsky monologue of Boris Godunov",
+      "parent_work_title": "Boris's soliloguy",
+      "wikidata_id": "Q4945260",
+      "wikidata_title": "Boris Godunov",
+      "wikidata_match_method": "title_substring",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Mussorgsky%20monologue%20of%20Boris%20Godunov",
+      "display_title": "Boris Godunov"
+    }
+  ],
+  "birth_year": 1839,
+  "death_year": 1881,
+  "wikipedia_extract": "Russian nationalist composer known for the opera Boris Godunov, the piano suite Pictures at an Exhibition (later orchestrated by Ravel), and the song cycle Songs and Dances of Death. His bold, unconventional harmonic language was ahead of its time.",
+  "wikidata_id": "Q132682",
+  "apple_music_artist_id": "239667",
+  "apple_music_classical_url": "https://classical.music.apple.com/us/artist/239667"
+}

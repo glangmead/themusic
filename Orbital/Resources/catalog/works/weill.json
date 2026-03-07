@@ -1,0 +1,534 @@
+{
+  "composer_slug": "weill",
+  "composer_qid": "Q55004",
+  "work_count": 74,
+  "midi_file_count": 5,
+  "works": [
+    {
+      "qid": "Q25206538",
+      "title": "The Berlin Requiem",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/kurt-weill-1900-pp40",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Berlin_Requiem_(Weill)",
+      "wikipedia_extract": "The Berlin Requiem is a 1928 cantata for tenor, baritone, and choir of three male voices and orchestra by Kurt Weill to poems by Bertolt Brecht. The work had been commissioned by the Reichs-Rundfunk-Gesellschaft who intended to broadcast the work on all its stations. However Brecht failed to abide by his contractual obligation to show the poems to the commissioning body for advance approval and the content, some of it a memorial to Rosa Luxemburg, led to several stations banning the performance.",
+      "pageviews_yearly": 2893,
+      "date": "1928-00-00"
+    },
+    {
+      "qid": "Q212495",
+      "title": "The Threepenny Opera",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/kurt-weill-1900-pp12",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Threepenny_Opera",
+      "wikipedia_extract": "The Threepenny Opera is a 1928 German \"play with music\" by Bertolt Brecht, adapted from a translation by Elisabeth Hauptmann of John Gay's 18th-century English ballad opera, The Beggar's Opera, and four ballads by François Villon, with music by Kurt Weill. Although there is debate as to how much contribution Hauptmann might have made to the libretto, Brecht is usually listed as sole author and Hauptmann as the sole translator, which was probably an unfair oversimplification typical of the time.",
+      "pageviews_yearly": 198409,
+      "date": "1928-00-00",
+      "movements": [
+        {
+          "qid": "Q7197803"
+        }
+      ]
+    },
+    {
+      "qid": "Q1211850",
+      "title": "Die Bürgschaft",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Die_B%C3%BCrgschaft_(opera)",
+      "wikipedia_extract": "Die Bürgschaft is an opera in three acts by Kurt Weill. Caspar Neher wrote the German libretto after the parable Der afrikanische Rechtspruch by Johann Gottfried Herder. Composed from August to October 1931, it was premiered on 10 March 1932 at the Städtische Oper in Berlin, Germany.",
+      "pageviews_yearly": 2025,
+      "date": "1931-00-00"
+    },
+    {
+      "qid": "Q5302976",
+      "title": "Down in the Valley",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/kurt-weill-1900-pp31",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Down_in_the_Valley_(opera)",
+      "wikipedia_extract": "Down in the Valley is a folk-opera in one act by composer Kurt Weill and librettist Arnold Sundgaard, initially composed and conceived for the radio in 1945 then rewritten and produced in 1948. It uses famous American tunes to carry the story and connected by original choral music.",
+      "pageviews_yearly": 4492,
+      "date": "1948-00-00"
+    },
+    {
+      "qid": "Q4657604",
+      "title": "A Kurt Weill Cabaret",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/A_Kurt_Weill_Cabaret",
+      "wikipedia_extract": "A Kurt Weill Cabaret was a Broadway and off-Broadway production featuring the music of Kurt Weill. A precursor, The World of Kurt Weill in Song, opened off-Broadway at One Sheridan Square in the West Village on June 6, 1963, starring Will Holt and Martha Schlamme. In 1979, it was revised as A Kurt Weill Cabaret and opened at the Bijou Theater on Broadway, with Alvin Epstein and Martha Schlamme and ran for 72 performances. The Harold Clurman Theatre showed it in 1984.",
+      "pageviews_yearly": 1852
+    },
+    {
+      "qid": "Q1633771",
+      "title": "Alabama Song",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alabama_Song",
+      "wikipedia_extract": "The \"Alabama Song\"—also known as \"Moon of Alabama\", \"Moon over Alabama\", and \"Whisky Bar\"—is an English language song written by Elisabeth Hauptmann in 1925 and set to music by Franz Servatius Bruinier and Kurt Weill for Bertolt Brecht's 1927 Mahagonny-Songspiel. Brecht also used it for his 1930 opera Rise and Fall of the City of Mahagonny. It has been recorded by the Doors and David Bowie.",
+      "pageviews_yearly": 120685
+    },
+    {
+      "qid": "Q54989406",
+      "title": "And where is the one who will mourn me"
+    },
+    {
+      "qid": "Q2717558",
+      "title": "Ballad of the Soldiers Wife",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Und_was_bekam_des_Soldaten_Weib%3F",
+      "wikipedia_extract": "\"Und was bekam des Soldaten Weib?\" is a 1942 poem by German writer Bertolt Brecht. It may be best known in its musical setting by German-born American composer Kurt Weill, Brecht's long-time musical collaborator, and in an English translation entitled \"The Ballad of the Soldier's Wife\" associated with that. There have been several other musical settings, as described below in their order of composition.",
+      "pageviews_yearly": 2516
+    },
+    {
+      "qid": "Q54989432",
+      "title": "Big Mole"
+    },
+    {
+      "qid": "Q1194602",
+      "title": "Der Jasager",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/kurt-weill-1900-pp14",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Der_Jasager",
+      "wikipedia_extract": "Der Jasager is an opera by Kurt Weill to a German libretto by Bertolt Brecht.",
+      "pageviews_yearly": 5000
+    },
+    {
+      "qid": "Q363824",
+      "title": "Der Protagonist",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/kurt-weill-1900-pp6",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Der_Protagonist",
+      "wikipedia_extract": "Der Protagonist is an opera in one act by Kurt Weill, his Op. 15. The German libretto was written by Georg Kaiser based on his own play of the same name of (1920). Weill's first surviving opera has been described as Literaturoper.",
+      "pageviews_yearly": 3901
+    },
+    {
+      "qid": "Q847229",
+      "title": "Der Silbersee",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/kurt-weill-1900-pp16",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Der_Silbersee",
+      "wikipedia_extract": "Der Silbersee: ein Wintermärchen is a 'play with music' in three acts by Kurt Weill to a German text by Georg Kaiser. The subtitle is an allusion to Heinrich Heine's 1844 satirical epic poem, Germany. A Winter's Tale.",
+      "pageviews_yearly": 4274
+    },
+    {
+      "qid": "Q651505",
+      "title": "Der Zar lässt sich photographieren",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/kurt-weill-1900-pp11",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Der_Zar_l%C3%A4sst_sich_photographieren",
+      "wikipedia_extract": "Der Zar lässt sich photographieren  is an opera buffa in one act by Kurt Weill, op. 21. The German libretto was written by Georg Kaiser, and Weill composed the music in 1927. It is a Zeitoper, a genre of music theatre which used contemporary settings and characters, satiric plots which often include technology and machinery. Musically the Zeitoper genre tends to be eclectic and borrow from Jazz. The genre has practically disappeared from the world's opera houses. Historically the Zeitoper came to an abrupt end with the Nazi period, and after the war the cultural institutions were perhaps hesitant to return to the lighter, often decadent and comic operas written before the holocaust changed the artistic perspective. This conjecture is supported by the statistical fact that of all of Weill's, Schönberg's, Hindemith's and Krenek's works – it is these very shorter, satirical Zeitoper works that are no longer performed.",
+      "pageviews_yearly": 2203
+    },
+    {
+      "qid": "Q1214889",
+      "title": "Die Moritat von Mackie Messer",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Die_Moritat_von_Mackie_Messer.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q3027599",
+      "title": "Dieu vomit les tièdes"
+    },
+    {
+      "qid": "Q1211998",
+      "title": "Dreigroschenoper",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/kurt-weill-1900-pp12",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Threepenny_Opera_(1963_film)",
+      "wikipedia_extract": "The Threepenny Opera is a 1963 West German-French musical crime drama film directed by Wolfgang Staudte and starring Curd Jürgens, Hildegard Knef and Gert Fröbe. Sammy Davis Jr. appeared as a street singer of ballads. It was shot in Eastmancolor at the Spandau Studios and Tempelhof Studios in West Berlin. The film's sets were designed by the art director Hein Heckroth. It is based on the 1928 play The Threepenny Opera by Bertolt Brecht, itself inspired by the 18th-century British work The Beggar's Opera. A previous film adaptation The Threepenny Opera had been produced in 1931.",
+      "pageviews_yearly": 536
+    },
+    {
+      "qid": "Q1723865",
+      "title": "Dreigroschenoper",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/kurt-weill-1900-pp12"
+    },
+    {
+      "qid": "Q16983100",
+      "title": "Halbwelt Kultur",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Halbwelt_Kultur",
+      "wikipedia_extract": "Halbwelt Kultur is a 2012 musical cabaret based on the lives of seven highly influential women of the Weimar Republic.",
+      "pageviews_yearly": 709
+    },
+    {
+      "qid": "Q1584256",
+      "title": "Happy End",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/kurt-weill-1900-pp13",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Happy_End_(musical)",
+      "wikipedia_extract": "Happy End is a three-act musical comedy by Kurt Weill, Elisabeth Hauptmann, and Bertolt Brecht which first opened in Berlin at the Theater am Schiffbauerdamm on September 2, 1929. It closed after seven performances. In 1977 it premiered on Broadway, where it ran for 75 performances.",
+      "pageviews_yearly": 17968
+    },
+    {
+      "qid": "Q1676214",
+      "title": "I’m a Stranger Here Myself"
+    },
+    {
+      "qid": "Q65079529",
+      "title": "J'attends un navire",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/J'attends_un_navire",
+      "wikipedia_extract": "\"J'attends un navire\", also known as \"I Am Waiting for a Ship\", is a song written in 1934 by Kurt Weill with lyrics by Jacques Deval. The song was written for the musical Marie Galante but later became an unofficial anthem of the French Resistance.",
+      "pageviews_yearly": 2893
+    },
+    {
+      "qid": "Q6266982",
+      "title": "Johnny Johnson",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/kurt-weill-1900-pp20",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Johnny_Johnson_(musical)",
+      "wikipedia_extract": "Johnny Johnson is a musical with a book and lyrics by Paul Green and music by Kurt Weill. It premiered in 1936 on Broadway.",
+      "pageviews_yearly": 5773
+    },
+    {
+      "qid": "Q15823886",
+      "title": "Klopslied"
+    },
+    {
+      "qid": "Q1236039",
+      "title": "Knickerbocker Holiday",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/kurt-weill-1900-pp22",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Knickerbocker_Holiday",
+      "wikipedia_extract": "Knickerbocker Holiday is a 1938 musical written by Kurt Weill (music) and Maxwell Anderson, based loosely on Washington Irving's Knickerbocker's History of New York about life in 17th-century New Netherland. The musical numbers include \"September Song\", now considered a pop standard.",
+      "pageviews_yearly": 13332,
+      "movements": [
+        {
+          "qid": "Q7452233"
+        }
+      ]
+    },
+    {
+      "qid": "Q109310782",
+      "title": "La Chanson de Bilbao"
+    },
+    {
+      "qid": "Q57157117",
+      "title": "La veglia dei lestofanti (The Beggars' Opera – Die Drei-Groschen-Oper)"
+    },
+    {
+      "qid": "Q57158116",
+      "title": "La veglia dei lestofanti (The Beggars' Opera – Die Drei-Groschen-Oper)"
+    },
+    {
+      "qid": "Q1424307",
+      "title": "Lady in the Dark",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/kurt-weill-1900-pp26",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lady_in_the_Dark",
+      "wikipedia_extract": "Lady in the Dark is a musical with music by Kurt Weill, lyrics by Ira Gershwin and book and direction by Moss Hart. It was produced by Sam Harris. The protagonist, Liza Elliott, is the unhappy editor of a fashion magazine who is undergoing psychoanalysis. The musical ran on Broadway in 1941, and in the United Kingdom in 1981. A film version was released in 1944, and a live television special followed in 1954.",
+      "pageviews_yearly": 16972
+    },
+    {
+      "qid": "Q54989441",
+      "title": "Let things be like they always was"
+    },
+    {
+      "qid": "Q54989450",
+      "title": "Lonely House"
+    },
+    {
+      "qid": "Q1338894",
+      "title": "Lost in the Stars",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/kurt-weill-1900-pp33",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lost_in_the_Stars_(1949_musical)",
+      "wikipedia_extract": "Lost in the Stars is a 1949-premiered musical with book and lyrics by Maxwell Anderson and music by Kurt Weill, based on the novel Cry, the Beloved Country (1948) by Alan Paton. The musical premiered on Broadway in 1949; it was the composer's last work for the stage before he died the following year.",
+      "movements": [
+        {
+          "qid": "Q54989411"
+        }
+      ]
+    },
+    {
+      "qid": "Q15046239",
+      "title": "Lost in the Stars",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/kurt-weill-1900-pp33",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lost_in_the_Stars_(1974_film)",
+      "wikipedia_extract": "Lost in the Stars is a 1974 American film version of the Kurt Weill-Maxwell Anderson musical adaptation of the Alan Paton novel Cry, the Beloved Country. The film was produced and released as part of the American Film Theatre, which adapted theatrical works for a subscription-driven cinema series.",
+      "pageviews_yearly": 4612
+    },
+    {
+      "qid": "Q54989411",
+      "title": "Lost in the Stars",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/kurt-weill-1900-pp33"
+    },
+    {
+      "qid": "Q6690960",
+      "title": "Love Life",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/kurt-weill-1900-pp32",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Love_Life_(musical)",
+      "wikipedia_extract": "Love Life is a musical written by Kurt Weill (music) and Alan Jay Lerner.",
+      "pageviews_yearly": 17495
+    },
+    {
+      "qid": "Q6690180",
+      "title": "LoveMusik",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/LoveMusik",
+      "wikipedia_extract": "LoveMusik is a musical written by Alfred Uhry, using a selection of music by Kurt Weill. The story explores the romance and lives of Kurt Weill and Lotte Lenya, based on Speak Low : The Letters of Kurt Weill and Lotte Lenya, edited and translated by Lys Symonette and Kim H. Kowalke. Harold Prince had read Speak Low and suggested the idea for a musical to Uhry. Uhry and Prince worked on LoveMusik for four years to develop it into a stage work. The story spans over 25 years, from the first meeting of Lenya and Weill as struggling young artists, to their popularity in Europe and America, to Weill's death from a heart attack at age 50.",
+      "pageviews_yearly": 4816
+    },
+    {
+      "qid": "Q3274701",
+      "title": "Mack the Knife",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/kurt-weill-1900-pp12",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mack_the_Knife_(1989_film)",
+      "wikipedia_extract": "Mack the Knife is a 1989 romantic comedy musical film written and directed by Menahem Golan, a film adaptation of the 1928 Brecht/Weill musical The Threepenny Opera. The film stars Raúl Juliá as Captain Macheath, Richard Harris as Mr. Peachum, Julia Migenes as Jenny Diver, Julie Walters as Mrs. Peachum, and Roger Daltrey as the Street Singer. Brecht and Weill's score and libretto was adapted by Golan, Marc Blitzstein, and Dov Seltzer.",
+      "pageviews_yearly": 16562
+    },
+    {
+      "qid": "Q51801270",
+      "title": "Mack the Knife",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/kurt-weill-1900-pp12",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mack_the_Knife",
+      "wikipedia_extract": "\"Mack the Knife\" or \"The Ballad of Mack the Knife\" is a song composed by Kurt Weill with lyrics by Bertolt Brecht for their 1928 music drama The Threepenny Opera. The song tells of a knife-wielding criminal of the London underworld named Macheath, the \"Mack the Knife\" of the title.",
+      "pageviews_yearly": 288039
+    },
+    {
+      "qid": "Q6732814",
+      "title": "Mahagonny-Songspiel",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/kurt-weill-1900-pp9",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mahagonny-Songspiel",
+      "wikipedia_extract": "Mahagonny, ein Songspiel, or Mahagonny, a song-play, was written by composer Kurt Weill and dramatist Bertolt Brecht and first performed with that title and description in 1927. Elisabeth Hauptmann contributed the words to two of its songs. Just under half an hour in length, the work can be thought of as a staged or scenic cantata. By the end of 1929, however, Mahagonny had grown into a two-hour opera with the title Aufstieg und Fall der Stadt Mahagonny, or Rise and Fall of the City of Mahagonny. This was premiered in March 1930. Today the cantata and the opera are considered separately, the latter holding a place in the repertory, the former being an occasional piece staged in small theaters or programmed as an outgrowth of a song recital when resources permit. For this reason the shorter work is informally referred to as Das kleine Mahagonny, or The Little Mahagonny, or as Mahagonny-Songspiel.",
+      "pageviews_yearly": 10531
+    },
+    {
+      "qid": "Q6946373",
+      "title": "My Ship",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/kurt-weill-1900-pp137",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/My_Ship",
+      "wikipedia_extract": "\"My Ship\" is a popular song written for the 1941 Broadway musical Lady in the Dark, with music by Kurt Weill and lyrics by Ira Gershwin.",
+      "pageviews_yearly": 7393
+    },
+    {
+      "qid": "Q54989416",
+      "title": "O Tixo, Tixo, Help Me"
+    },
+    {
+      "qid": "Q54989402",
+      "title": "Oh, don't you see that lonesome dove"
+    },
+    {
+      "qid": "Q1403471",
+      "title": "One Touch of Venus",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/kurt-weill-1900-pp28",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/One_Touch_of_Venus",
+      "wikipedia_extract": "One Touch of Venus is a 1943 musical with music written by Kurt Weill, lyrics by Ogden Nash, and book by S. J. Perelman and Nash, based on the 1885 novella The Tinted Venus by Thomas Anstey Guthrie, and very loosely spoofing the Pygmalion myth. The show satirizes contemporary American suburban values, artistic fads and romantic and sexual mores. Weill had been in America for eight years by the time he wrote this musical, and his music, though retaining his early haunting power, had evolved into a very different Broadway style.",
+      "pageviews_yearly": 12979,
+      "movements": [
+        {
+          "qid": "Q1799926"
+        }
+      ]
+    },
+    {
+      "qid": "Q3548422",
+      "title": "One Touch of Venus",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/kurt-weill-1900-pp28",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/One_Touch_of_Venus_(film)",
+      "wikipedia_extract": "One Touch of Venus is a 1948 American black-and-white romantic musical comedy film starring Robert Walker, Ava Gardner, Dick Haymes, and Eve Arden. Directed by William A. Seiter, the Universal-International release was based on the 1943 Broadway musical of the same name, book written by S. J. Perelman and Ogden Nash, with music composed by Kurt Weill. However, the film omits most of Weill's music. The actors did their own singing, except for Ava Gardner (Venus) whose singing was dubbed by Eileen Wilson. The plot is from an original 1885 novella by Thomas Anstey Guthrie.",
+      "pageviews_yearly": 21242
+    },
+    {
+      "qid": "Q86984853",
+      "title": "Pirate Jenny"
+    },
+    {
+      "qid": "Q3925498",
+      "title": "Pulitzer Prize Playhouse",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pulitzer_Prize_Playhouse",
+      "wikipedia_extract": "Pulitzer Prize Playhouse is an American drama anthology television series which offered adaptations of Pulitzer Prize-winning plays, novels, and stories. The journalist Elmer Davis was the host and narrator of this 1950–1952 ABC series.",
+      "pageviews_yearly": 5757,
+      "movements": [
+        {
+          "qid": "Q12912824"
+        },
+        {
+          "qid": "Q12912823"
+        }
+      ]
+    },
+    {
+      "qid": "Q760054",
+      "title": "Rise and Fall of the City of Mahagonny",
+      "imslp_id": "Aufstieg_und_Fall_der_Stadt_Mahagonny_(Weill,_Kurt)",
+      "pdf_filename": "PMLP1486428-PMLUS06395-Weill_-_Aufstieg_und_Fall_der_Stadt_Mahagonny_-_Vocal_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/kurt-weill-1900-pp10",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rise_and_Fall_of_the_City_of_Mahagonny",
+      "wikipedia_extract": "Rise and Fall of the City of Mahagonny is a political-satirical opera composed by Kurt Weill to a German libretto by Bertolt Brecht and Elisabeth Hauptmann. It was first performed on 9 March 1930 at the Neues Theater in Leipzig.",
+      "pageviews_yearly": 59066,
+      "movements": [
+        {
+          "qid": "Q59342647"
+        },
+        {
+          "qid": "Q59342666"
+        },
+        {
+          "qid": "Q59342683"
+        }
+      ]
+    },
+    {
+      "qid": "Q33645787",
+      "title": "Royal Palace",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Royal_Palace_(opera)",
+      "wikipedia_extract": "\nRoyal Palace is a 1925 one-act German-language ballet opera with a female choir in 13 scenes by Kurt Weil to a libretto by Yvan Goll. The premiere was on 2 March 1927 at the Berlin State Opera under the artistic direction of Erich Kleiber.",
+      "pageviews_yearly": 1493
+    },
+    {
+      "qid": "Q7197803",
+      "title": "Seeräuberjenny",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pirate_Jenny",
+      "wikipedia_extract": "\"Pirate Jenny\" is a song from The Threepenny Opera by Kurt Weill, with lyrics by Bertolt Brecht. The English lyrics are by Marc Blitzstein. It is one of the best known songs in the opera, along with \"Mack the Knife\".",
+      "pageviews_yearly": 33929
+    },
+    {
+      "qid": "Q7452233",
+      "title": "September Song",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/kurt-weill-1900-pp22",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/September_Song",
+      "wikipedia_extract": "\"September Song\" is an American standard popular song composed by Kurt Weill with lyrics by Maxwell Anderson. It was introduced by Walter Huston in the 1938 Broadway musical production Knickerbocker Holiday. The song has been recorded by numerous singers and instrumentalists.",
+      "pageviews_yearly": 50155
+    },
+    {
+      "qid": "Q910523",
+      "title": "Shadows and Fog",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shadows_and_Fog",
+      "wikipedia_extract": "Shadows and Fog is a 1991 American black-and-white comedy film directed by Woody Allen and based on his one-act play Death (1975). It stars Allen, Mia Farrow, John Malkovich, Kathy Bates, David Ogden Stiers, Jodie Foster, Donald Pleasence, Lily Tomlin, John Cusack, Madonna, and Kenneth Mars. It was filmed on a 26,000-square-foot (2,400 m2) set at Kaufman Astoria Studios, which was the biggest set ever built in New York. It was also Allen's last film for Orion Pictures.",
+      "pageviews_yearly": 45198
+    },
+    {
+      "qid": "Q54989445",
+      "title": "Somehow I never could believe"
+    },
+    {
+      "qid": "Q1799926",
+      "title": "Speak Low",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Tout_bas_tout_bas_Speak_low_-_Kurt_Weill.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q54989434",
+      "title": "Stay Well"
+    },
+    {
+      "qid": "Q2355342",
+      "title": "Street Scene",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/kurt-weill-1900-pp30",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Street_Scene_(opera)",
+      "wikipedia_extract": "Street Scene is an American opera by Kurt Weill (music), Langston Hughes (lyrics), and Elmer Rice (book). Written in 1946 and premiered in Philadelphia that year, Street Scene is based on the Pulitzer Prize-winning 1929 play of the same name by Rice.",
+      "pageviews_yearly": 26796
+    },
+    {
+      "qid": "Q25393517",
+      "title": "Symphony No. 2",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/kurt-weill-1900-pp71"
+    },
+    {
+      "qid": "Q7690616",
+      "title": "Tchaikovsky",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tschaikowsky_(and_Other_Russians)",
+      "wikipedia_extract": "\"Tschaikowsky \" is a patter song with lyrics by Ira Gershwin and music by Kurt Weill, first performed by American comedian Danny Kaye in the 1941 Broadway musical Lady in the Dark. Gershwin used the spelling \"Tschaikowsky\" from the German transliteration in place of the more widely accepted modern transliteration Tchaikovsky.",
+      "pageviews_yearly": 6722
+    },
+    {
+      "qid": "Q1197934",
+      "title": "The Eternal Road",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Eternal_Road_(opera)",
+      "wikipedia_extract": "The Eternal Road is an opera-oratorio with spoken dialogue in four acts by Kurt Weill with a libretto, by Austrian novelist and playwright Franz Werfel and translated into English by Ludwig Lewisohn.",
+      "pageviews_yearly": 2823
+    },
+    {
+      "qid": "Q7734032",
+      "title": "The Firebrand of Florence",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/kurt-weill-1900-pp29",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Firebrand_of_Florence",
+      "wikipedia_extract": "The Firebrand of Florence is a Broadway operetta in two acts, written by Kurt Weill (music), Ira Gershwin (lyrics), and Edwin Justus Mayer and Gershwin (book), based on Mayer's play. The show opened at the Alvin Theatre on March 22, 1945, and closed on April 28 that year after 43 performances. The original production was directed by John Murray Anderson, choreographed by Catherine Littlefield, and conducted by Maurice Abravanel; it featured Lotte Lenya as Duchess.",
+      "pageviews_yearly": 4218
+    },
+    {
+      "qid": "Q444076",
+      "title": "The Flight across the Ocean"
+    },
+    {
+      "qid": "Q54989419",
+      "title": "The Little Gray House"
+    },
+    {
+      "qid": "Q7762022",
+      "title": "The Saga of Jenny",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Saga_of_Jenny",
+      "wikipedia_extract": "\"The Saga of Jenny\" is a popular song written for the 1941 Broadway musical Lady in the Dark, with music by Kurt Weill and lyrics by Ira Gershwin, considered now as a blues standard.",
+      "pageviews_yearly": 4532
+    },
+    {
+      "qid": "Q533623",
+      "title": "The Seven Deadly Sins",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/kurt-weill-1900-pp17",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Seven_Deadly_Sins_(ballet_chant%C3%A9)",
+      "wikipedia_extract": "The Seven Deadly Sins is a satirical ballet chanté in seven scenes composed by Kurt Weill to a German libretto by Bertolt Brecht in 1933 under a commission from Boris Kochno and Edward James. It was translated into English by W. H. Auden and Chester Kallman and more recently by Michael Feingold. It was the last major collaboration between Weill and Brecht.",
+      "pageviews_yearly": 18040
+    },
+    {
+      "qid": "Q693798",
+      "title": "The Threepenny Opera",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/kurt-weill-1900-pp12",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Threepenny_Opera_(1931_film)",
+      "wikipedia_extract": "The Threepenny Opera is a 1931 German musical film directed by G. W. Pabst. Produced by Seymour Nebenzal's Nero-Film for Tonbild-Syndikat AG (Tobis), Berlin and Warner Bros. Pictures GmbH, Berlin, the film is loosely based on the 1928 musical theatre success of the same name by Bertolt Brecht and Kurt Weill. As was usual in the early sound film era, Pabst also directed a French-language version of the film, L'Opéra de quat'sous, with some variation of plot details. A planned English version went unproduced. The two existing versions were released on home video by The Criterion Collection. This film was shot at Staaken Studios",
+      "pageviews_yearly": 5018
+    },
+    {
+      "qid": "Q47419180",
+      "title": "The Threepenny Opera",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/kurt-weill-1900-pp12"
+    },
+    {
+      "qid": "Q54989439",
+      "title": "The Wild Justice"
+    },
+    {
+      "qid": "Q54989424",
+      "title": "Thousands of Miles"
+    },
+    {
+      "qid": "Q54989437",
+      "title": "Trouble Man"
+    },
+    {
+      "qid": "Q17036588",
+      "title": "What Keeps Mankind Alive?",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/What_Keeps_Mankind_Alive%3F",
+      "wikipedia_extract": "\"What Keeps Mankind Alive?\" is a song composed by Kurt Weill with lyrics by Bertolt Brecht for their drama with music The Threepenny Opera which premiered in Berlin in 1928 at the Theater am Schiffbauerdamm. The title refers to the central line from the finale of act 2, Denn wovon lebt der Mensch?. In the play, the two stanzas of the strophic piece are sung by Macheath and Low-Dive Jenny and the final line is sung in fortissimo by the chorus.",
+      "pageviews_yearly": 6625
+    },
+    {
+      "qid": "Q54989447",
+      "title": "What good would the moon be?"
+    },
+    {
+      "qid": "Q54989428",
+      "title": "Who'll Buy?"
+    },
+    {
+      "qid": "Q2362272",
+      "title": "You and Me",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/You_and_Me_(1938_film)",
+      "wikipedia_extract": "You and Me is a 1938 American crime drama/comedy/romance film directed by Fritz Lang. It stars Sylvia Sidney and George Raft as a pair of ex-convicts on parole, working in a department store whose owner, played by Harry Carey, routinely hires former criminals to give them a second chance. It was written by Norman Krasna and Virginia Van Upp.",
+      "pageviews_yearly": 10859
+    },
+    {
+      "qid": "Q15093538",
+      "title": "Youkali",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Youkali_Mib_major_maior_Do_minor_menor_-_Kurt_Weill.mid",
+        "midi/Youkali_chorus_tenor_bass.mid",
+        "midi/Youkali_chorus_I.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q6171025",
+      "title": "Zaubernacht",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/kurt-weill-1900-pp4"
+    },
+    {
+      "qid": "Q3507896",
+      "title": "symphonies by Kurt Weill",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/kurt-weill-1900-pp71",
+      "movements": [
+        {
+          "qid": "Q25393517"
+        }
+      ]
+    }
+  ]
+}

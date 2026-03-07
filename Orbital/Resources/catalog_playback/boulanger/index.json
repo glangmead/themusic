@@ -1,0 +1,225 @@
+{
+  "composer_name": "Lili Boulanger",
+  "name_last_first": "Boulanger, Lili",
+  "slug": "boulanger",
+  "wiki_page": "https://en.wikipedia.org/wiki/Lili_Boulanger",
+  "apple_music_playlist": "",
+  "era": "Modern",
+  "dates": "1893 – 1918",
+  "nationality": "FRA",
+  "notable": false,
+  "works": [
+    {
+      "title": "Cortège for piano - Lili Boulanger",
+      "musicxml": "musicxml/Cortege_for_piano_-_Lili_Boulanger.mxl",
+      "midi": "midi/Cortege_for_piano_-_Lili_Boulanger.mid",
+      "time_signature": "2/4",
+      "instruments": [
+        "Piano"
+      ],
+      "tempo_markings": [
+        "Pas vite  ♩ = 108"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.91,
+        "n_favorites": 12,
+        "n_views": 437,
+        "duration_seconds": 124.76393434660756,
+        "n_notes": 971,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "piano-french-boulanger-liliboulanger-lili-short",
+        "musescore_url": "https://musescore.com/user/788211/scores/5756897",
+        "musescore_duration": "01:31"
+      },
+      "key": "B major",
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 108,
+      "n_measures": 83,
+      "n_parts": 1,
+      "n_notes": 932,
+      "notes_per_second": 7.5,
+      "apple_music_search_query": "Boulanger B major Cortège for piano - Lili Boulanger",
+      "parent_work_title": "Cortège",
+      "year_composed": 1914,
+      "wikidata_id": "Q131153245",
+      "wikidata_title": "Cortège",
+      "musicbrainz_id": "2d5ad041-4afd-43d1-b103-09e0d3e1b361",
+      "imslp_id": "Cortège_(Boulanger,_Lili)",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Boulanger%20Cort%C3%A8ge%20for%20piano%20-",
+      "display_title": "Cortège"
+    },
+    {
+      "title": "D'un vieux jardin - Lili Boulanger",
+      "musicxml": "musicxml/Dun_vieux_jardin_-_Lili_Boulanger.mxl",
+      "midi": "midi/Dun_vieux_jardin_-_Lili_Boulanger.mid",
+      "time_signature": "3/4",
+      "instruments": [
+        "Piano"
+      ],
+      "tempo_markings": [
+        "Expressif"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.86,
+        "n_favorites": 15,
+        "n_views": 486,
+        "duration_seconds": 216.2110680606313,
+        "n_notes": 621,
+        "complexity": "2",
+        "is_original": false,
+        "is_best_arrangement": false,
+        "genres": "classical",
+        "tags": "boulanger-lili-liliboulanger-piano-french",
+        "musescore_url": "https://musescore.com/user/788211/scores/5749340",
+        "musescore_duration": "01:57"
+      },
+      "key": "E major",
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 80,
+      "n_measures": 51,
+      "n_parts": 1,
+      "n_notes": 588,
+      "notes_per_second": 2.7,
+      "apple_music_search_query": "Boulanger E major D'un vieux jardin - Lili Boulanger",
+      "parent_work_title": "D'un Vieux Jardin",
+      "lyricist": "Auguste Lacaussade",
+      "year_composed": 1914,
+      "wikidata_id": "Q131154988",
+      "wikidata_title": "D'un vieux jardin",
+      "musicbrainz_id": "92387684-9e50-4348-b18a-8e9617eb4d2c",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Boulanger%20D%27un%20vieux%20jardin%20-",
+      "display_title": "D'un vieux jardin"
+    },
+    {
+      "title": "Soir Sur La Plaine by Lili Boulanger",
+      "musicxml": "musicxml/Soir_Sur_La_Plaine_by_Lili_Boulanger.mxl",
+      "midi": "midi/Soir_Sur_La_Plaine_by_Lili_Boulanger.mid",
+      "time_signature": "4/4",
+      "instruments": [
+        "Soprano I",
+        "Soprano II",
+        "Alto I",
+        "Alto II",
+        "Tenor I",
+        "Tenor II",
+        "Bass I",
+        "Bass II",
+        "Piano"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.83,
+        "n_favorites": 3,
+        "n_views": 503,
+        "duration_seconds": 468.2557013488258,
+        "n_notes": 3416,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "lili-boulanger-liliboulanger-choir-satb-french-soir-evening-woman",
+        "musescore_url": "https://musescore.com/user/788211/scores/5855706",
+        "musescore_duration": "05:58"
+      },
+      "key": "B major",
+      "instruments_gm": [
+        "Choir Aahs",
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 86,
+      "n_measures": 129,
+      "n_parts": 10,
+      "n_notes": 3251,
+      "notes_per_second": 6.9,
+      "apple_music_search_query": "Boulanger B major Soir Sur La Plaine by Lili Boulanger",
+      "parent_work_title": "Soir Sur La Plaine",
+      "lyricist": "Albert Samain",
+      "year_composed": 1913,
+      "wikidata_id": "Q116867251",
+      "wikidata_title": "Soir sur la plaine",
+      "musicbrainz_id": "2a7a2f23-543f-4ff4-8c7b-cec5e72e4723",
+      "imslp_id": "Soir_sur_la_plaine_(Boulanger,_Lili)",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Boulanger%20Soir%20Sur%20La%20Plaine%20by",
+      "display_title": "Soir sur la plaine"
+    },
+    {
+      "title": "Pie Jesu by Lili Boulanger",
+      "musicxml": "musicxml/Pie_Jesu_by_Lili_Boulanger.mxl",
+      "midi": "midi/Pie_Jesu_by_Lili_Boulanger.mid",
+      "time_signature": "6/4",
+      "instruments": [
+        "Chant",
+        "Violin I",
+        "Violin II",
+        "Viola",
+        "Violoncello",
+        "Harp",
+        "Organ"
+      ],
+      "tempo_markings": [
+        "Assez lent (♩ = 96)",
+        "Cédez",
+        "a Tempo",
+        "Lent"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.85,
+        "n_favorites": 4,
+        "n_views": 239,
+        "duration_seconds": 278.7426139352144,
+        "n_notes": 1538,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "lili-boulanger-liliboulanger-piejesu-requiem",
+        "musescore_url": "https://musescore.com/user/788211/scores/5825030",
+        "musescore_duration": "03:04"
+      },
+      "key": "B♭ major",
+      "key_changes": [
+        "B♭ major",
+        "C major"
+      ],
+      "instruments_gm": [
+        "Choir Aahs",
+        "Violin",
+        "Viola",
+        "Cello",
+        "Orchestral Harp",
+        "Church Organ"
+      ],
+      "tempo_bpm": 96,
+      "n_measures": 56,
+      "n_parts": 7,
+      "n_notes": 1419,
+      "notes_per_second": 5.1,
+      "apple_music_search_query": "Boulanger B♭ major Pie Jesu by Lili Boulanger",
+      "parent_work_title": "Pie Jesu",
+      "wikidata_id": "Q28496705",
+      "wikidata_title": "Pie Jesu",
+      "musicbrainz_id": "76198849-b508-43ce-8a83-7d29bf79ddee",
+      "imslp_id": "Pie_Jesu_(Boulanger,_Lili)",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Boulanger%20Pie%20Jesu%20by",
+      "display_title": "Pie Jesu"
+    }
+  ],
+  "birth_year": 1893,
+  "death_year": 1918,
+  "wikipedia_extract": "Marie Juliette Boulanger (French: [maʁi ʒyljɛt bulɑ̃ʒe] ; 21 August 1893 – 15 March 1918), professionally known as Lili Boulanger (French: [lili bulɑ̃ʒe]), was a French composer and musician, associated with the Symbolist and Impressionist movements. The first woman to win the Grand Prix de Rome composition competition, her older sister was the composer and composition teacher Nadia Boulanger; their father was the composer Ernest Boulanger. In spite of her short career, critics, composers and...",
+  "wikidata_id": "Q230412"
+}

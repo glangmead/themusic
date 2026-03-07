@@ -1,0 +1,122 @@
+{
+  "composer_slug": "albinoni",
+  "composer_qid": "Q174606",
+  "work_count": 20,
+  "midi_file_count": 0,
+  "works": [
+    {
+      "qid": "Q2807391",
+      "title": "12 Concerti a cinque",
+      "imslp_id": "12_Concerti_a_cinque,_Op.9_(Albinoni,_Tomaso)",
+      "pdf_filename": "PMLP153203-albinoni_concerti_a5_op9.1.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/tomaso-albinoni-1671-pp39",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/12_Concerti_a_cinque_(Albinoni)",
+      "wikipedia_extract": "12 Concerti a cinque is a collection of concertos by the Italian composer Tomaso Albinoni, published in 1722.",
+      "pageviews_yearly": 6440
+    },
+    {
+      "qid": "Q125760207",
+      "title": "12 Trio Sonatas",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/tomaso-albinoni-1671-pp34"
+    },
+    {
+      "qid": "Q4057223",
+      "title": "Adagio",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/tomaso-albinoni-1671-pp84",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adagio_(2000_film)",
+      "wikipedia_extract": "Adagio is a 2000 Russian animated short film directed by Garri Bardin.",
+      "pageviews_yearly": 2515
+    },
+    {
+      "qid": "Q4797327",
+      "title": "Artamene",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Artamene",
+      "wikipedia_extract": "\nArtamene was an opera in three acts by Tomaso Albinoni set to a libretto by Bartolomeo Vitturi. Composed in 1740, it premiered in Venice at the Teatro San Angelo in the 1741 carnival season. It was Albinoni's last opera. The music is lost.",
+      "pageviews_yearly": 1149
+    },
+    {
+      "qid": "Q33133522",
+      "title": "Ballet Adagio"
+    },
+    {
+      "qid": "Q5274230",
+      "title": "Didone abbandonata",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Didone_abbandonata_(Albinoni)",
+      "wikipedia_extract": "Didone abbandonata  was an opera in three acts composed by Tomaso Albinoni. Albinoni's music was set to Pietro Metastasio's libretto, Didone abbandonata, which was in turn based on the story of Dido and Aeneas from the fourth book of Virgil's Aeneid. The opera premiered on 26 December 1724 at the Teatro San Cassiano in Venice and was the first time that an opera based on a Metastasio libretto was performed in Venice.",
+      "pageviews_yearly": 2492
+    },
+    {
+      "qid": "Q55064024",
+      "title": "Diomede punito da Alcide"
+    },
+    {
+      "qid": "Q55064025",
+      "title": "Elenia"
+    },
+    {
+      "qid": "Q54998040",
+      "title": "Il concilio de' pianeti",
+      "imslp_id": "Il_concilio_de'_pianeti_(Albinoni,_Tomaso)",
+      "pdf_filename": "PMLP910625-Albinoni_concilio_7.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q124809358",
+      "title": "Il nascimento dell'Aurora",
+      "imslp_id": "Il_nascimento_dell’Aurora_(Albinoni,_Tomaso)",
+      "pdf_filename": "PMLP547765-Il_nascimento_dell_Aurora_-Mus.Hs.17738-.pdf",
+      "has_pdf": false,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/tomaso-albinoni-1671-pp93"
+    },
+    {
+      "qid": "Q54998056",
+      "title": "Il più infedel tra gli amanti"
+    },
+    {
+      "qid": "Q54998071",
+      "title": "Il tiranno eroe"
+    },
+    {
+      "qid": "Q109244523",
+      "title": "L'alarico"
+    },
+    {
+      "qid": "Q109244826",
+      "title": "L'arte in garra con l'arte"
+    },
+    {
+      "qid": "Q6465323",
+      "title": "La Statira",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Statira",
+      "wikipedia_extract": "La Statira is an opera seria in three acts by the Italian composer Tomaso Albinoni with a libretto by Apostolo Zeno and Pietro Pariati. It was first performed at the Teatro Capranica in Rome during the Carnival season of 1726. The plot concerns the rivalry between Statira and Barsimo for the throne of Persia.",
+      "pageviews_yearly": 2788
+    },
+    {
+      "qid": "Q55064036",
+      "title": "La pace generosa"
+    },
+    {
+      "qid": "Q55064063",
+      "title": "Merope"
+    },
+    {
+      "qid": "Q135529480",
+      "title": "Oboe concerto in D minor (Op. 9, no. 2)"
+    },
+    {
+      "qid": "Q55064067",
+      "title": "Scipione nelle Spagne"
+    },
+    {
+      "qid": "Q31896709",
+      "title": "Zenobia, regina de' Palmireni",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zenobia_(Albinoni)",
+      "wikipedia_extract": "Zenobia, regina de’ Palmireni is an opera in three acts by Tomaso Albinoni with a libretto by Antonio Marchi. It was Albinoni’s first opera, written when he was only 23, and was first performed at the 1694 carnival at the Teatro Santi Giovanni e Paolo in Venice. The work was popular and performances continued for several weeks. Albinoni was also the first composer to write an opera on the theme of Zenobia.",
+      "pageviews_yearly": 2767
+    }
+  ]
+}

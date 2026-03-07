@@ -1,0 +1,104 @@
+{
+  "composer_name": "Michael Praetorius",
+  "name_last_first": "Praetorius, Michael",
+  "slug": "praetorius",
+  "wiki_page": "https://en.wikipedia.org/wiki/Michael_Praetorius",
+  "apple_music_playlist": "",
+  "era": "Baroque",
+  "dates": "1571 – 1621",
+  "nationality": "DEU",
+  "notable": false,
+  "works": [
+    {
+      "title": "es ist ein ros entsprungen",
+      "musicxml": "musicxml/Es_ist_ein_Ros_-_SATB.mxl",
+      "midi": "midi/Es_ist_ein_Ros_-_SATB.mid",
+      "time_signature": "4/4",
+      "instruments": [
+        "Sopraan",
+        "Alt",
+        "Bas"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 1,
+        "n_views": 74,
+        "duration_seconds": 34.999999999095834,
+        "n_notes": 145,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "soundtrack",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/60868/scores/5887924",
+        "musescore_duration": "00:35"
+      },
+      "key": "F major",
+      "instruments_gm": [
+        "Bright Acoustic Piano"
+      ],
+      "tempo_bpm": 120,
+      "n_measures": 15,
+      "n_parts": 3,
+      "n_notes": 145,
+      "notes_per_second": 4.1,
+      "apple_music_search_query": "Praetorius F major es ist ein ros entsprungen",
+      "year_composed": 1599,
+      "wikidata_id": "Q763041",
+      "wikidata_title": "Es ist ein Ros entsprungen",
+      "musicbrainz_id": "97c63ac2-7204-4bb5-a958-7749b7bcf832",
+      "imslp_id": "Es_ist_ein_Ros_entsprungen_(Praetorius,_Michael)",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Praetorius%20es%20ist%20ein%20ros%20entsprungen",
+      "display_title": "Es ist ein Ros entsprungen"
+    },
+    {
+      "title": "Es ist ein Ros' entsprungen",
+      "musicxml": "musicxml/Es_ist_ein_Ros_entsprungen.mxl",
+      "midi": "midi/Es_ist_ein_Ros_entsprungen.mid",
+      "time_signature": "4/4",
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.79,
+        "n_favorites": 15,
+        "n_views": 981,
+        "duration_seconds": 201.15979923277297,
+        "n_notes": 428,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "NA",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/45257/scores/75136",
+        "musescore_duration": "02:15"
+      },
+      "key": "D major",
+      "instruments_gm": [
+        "English Horn",
+        "Acoustic Guitar (nylon)"
+      ],
+      "tempo_bpm": 95,
+      "n_measures": 18,
+      "n_parts": 2,
+      "n_notes": 633,
+      "notes_per_second": 3.1,
+      "apple_music_search_query": "Praetorius D major Es ist ein Ros' entsprungen",
+      "instruments": [
+        "Guitar"
+      ],
+      "year_composed": 1599,
+      "wikidata_id": "Q763041",
+      "wikidata_title": "Es ist ein Ros entsprungen",
+      "musicbrainz_id": "97c63ac2-7204-4bb5-a958-7749b7bcf832",
+      "imslp_id": "Es_ist_ein_Ros_entsprungen_(Praetorius,_Michael)",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Praetorius%20Es%20ist%20ein%20Ros%27%20entsprungen",
+      "display_title": "Es ist ein Ros entsprungen"
+    }
+  ],
+  "birth_year": 1571,
+  "death_year": 1621,
+  "wikipedia_extract": "Michael Praetorius (probably 28 September 1571 – 15 February 1621) was a German composer, organist, and music theorist. He was one of the most versatile composers of his age, being particularly significant in the development of musical forms based on Protestant hymns.",
+  "wikidata_id": "Q108278"
+}

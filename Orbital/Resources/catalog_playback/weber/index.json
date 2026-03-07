@@ -1,0 +1,65 @@
+{
+  "composer_name": "Carl Maria von Weber",
+  "name_last_first": "Weber, Carl Maria von",
+  "slug": "weber",
+  "wiki_page": "https://en.wikipedia.org/wiki/Carl_Maria_von_Weber",
+  "apple_music_playlist": "https://music.apple.com/us/playlist/carl-maria-von-weber-essentials/pl.b8327cba44b14c1d8521c6d0ace053fa",
+  "era": "Romantic",
+  "dates": "1786 – 1826",
+  "nationality": "DEU",
+  "notable": true,
+  "works": [
+    {
+      "title": "Der Freischütz - Wir winden dir den Jungfernkranz",
+      "musicxml": "musicxml/Der_Freischutz_-_Wir_winden_dir_den_Jungfernkranz.mxl",
+      "midi": "midi/Der_Freischutz_-_Wir_winden_dir_den_Jungfernkranz.mid",
+      "time_signature": "2/4",
+      "instruments": [
+        "Sopran",
+        "Alt",
+        "Piano"
+      ],
+      "tempo_markings": [
+        "Andante quasi allegretto"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 5,
+        "n_views": 382,
+        "duration_seconds": 88.71403224327757,
+        "n_notes": 886,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/3099636/scores/4855838",
+        "musescore_duration": "01:18"
+      },
+      "instruments_gm": [
+        "Choir Aahs",
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 70,
+      "n_measures": 29,
+      "n_parts": 4,
+      "n_notes": 886,
+      "notes_per_second": 10.0,
+      "apple_music_search_query": "Weber Der Freischütz - Wir winden dir den Jungfernkranz",
+      "wikidata_id": "Q106695969",
+      "wikidata_title": "Der Freischütz",
+      "wikidata_match_method": "title_substring",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Weber%20Der%20Freisch%C3%BCtz%20-%20Wir%20winden%20dir%20den%20Jungfernkranz",
+      "display_title": "Der Freischütz"
+    }
+  ],
+  "birth_year": 1786,
+  "death_year": 1826,
+  "catalog_type": "Op",
+  "wikipedia_extract": "Carl Maria Friedrich Ernst von Weber (c. 18 November 1786 – 5 June 1826) was a German composer, conductor, virtuoso pianist, guitarist, and critic in the late Classical and early Romantic eras. Best known for his operas, he was a crucial figure in the development of German Romantische Oper (German Romantic opera).",
+  "wikipedia_compositions_url": "https://en.wikipedia.org/wiki/List_of_compositions_by_Carl_Maria_von_Weber",
+  "wikidata_id": "Q154812",
+  "apple_music_artist_id": "238344",
+  "apple_music_classical_url": "https://classical.music.apple.com/us/artist/238344"
+}

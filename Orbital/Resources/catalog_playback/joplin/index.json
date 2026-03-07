@@ -1,0 +1,854 @@
+{
+  "composer_name": "Scott Joplin",
+  "name_last_first": "Joplin, Scott",
+  "slug": "joplin",
+  "wiki_page": "https://en.wikipedia.org/wiki/Scott_Joplin",
+  "apple_music_playlist": "https://music.apple.com/mk/playlist/pl.606613e893e248dbb48cdc2b8666965f",
+  "era": "Late- / Post-Romantic",
+  "dates": "1868 – 1917 (c.)",
+  "nationality": "USA",
+  "notable": false,
+  "works": [
+    {
+      "title": "the entertainer",
+      "musicxml": "musicxml/The_Entertainer.mxl",
+      "midi": "midi/The_Entertainer.mid",
+      "time_signature": "4/4",
+      "instruments": [
+        "Piano"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 26,
+        "n_views": 1382,
+        "duration_seconds": 103.24999999733272,
+        "n_notes": 736,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "jazz-classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/11049456/scores/2403271",
+        "musescore_duration": "01:43"
+      },
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 90,
+      "n_measures": 92,
+      "n_parts": 1,
+      "n_notes": 2671,
+      "notes_per_second": 25.9,
+      "apple_music_search_query": "Joplin the entertainer",
+      "key": "C major",
+      "year_composed": 1902,
+      "wikidata_id": "Q1890794",
+      "wikidata_title": "The Entertainer",
+      "musicbrainz_id": "8833a765-686e-3d19-8e3b-b2ee1cc33cf8",
+      "imslp_id": "The_Entertainer_(Joplin,_Scott)",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Joplin%20the%20entertainer",
+      "display_title": "The Entertainer"
+    },
+    {
+      "title": "The Entertainer",
+      "musicxml": "musicxml/The_Entertainer_1.mxl",
+      "midi": "midi/The_Entertainer_1.mid",
+      "time_signature": "4/4",
+      "instruments": [
+        "Piano"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 3,
+        "n_views": 165,
+        "duration_seconds": 111.00027749778,
+        "n_notes": 288,
+        "complexity": "1",
+        "is_original": false,
+        "is_best_arrangement": false,
+        "genres": "NA",
+        "tags": "beginner-joplin",
+        "musescore_url": "https://musescore.com/user/27214530/scores/4852105",
+        "musescore_duration": "01:51"
+      },
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 90,
+      "n_measures": 92,
+      "n_parts": 1,
+      "n_notes": 2671,
+      "notes_per_second": 24.1,
+      "apple_music_search_query": "Joplin The Entertainer",
+      "key": "C major",
+      "year_composed": 1902,
+      "wikidata_id": "Q1890794",
+      "wikidata_title": "The Entertainer",
+      "musicbrainz_id": "8833a765-686e-3d19-8e3b-b2ee1cc33cf8",
+      "imslp_id": "The_Entertainer_(Joplin,_Scott)",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Joplin%20The%20Entertainer",
+      "display_title": "The Entertainer"
+    },
+    {
+      "title": "the entertainer",
+      "musicxml": "musicxml/The_Entertainer_2.mxl",
+      "midi": "midi/The_Entertainer_2.mid",
+      "time_signature": "4/4",
+      "instruments": [
+        "Piano"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.66,
+        "n_favorites": 5,
+        "n_views": 200,
+        "duration_seconds": 105.35714285444624,
+        "n_notes": 1789,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "jazz-classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/dragonfire2024/scores/5869752",
+        "musescore_duration": "01:46"
+      },
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 90,
+      "n_measures": 92,
+      "n_parts": 1,
+      "n_notes": 2671,
+      "notes_per_second": 25.4,
+      "apple_music_search_query": "Joplin the entertainer",
+      "key": "C major",
+      "year_composed": 1902,
+      "wikidata_id": "Q1890794",
+      "wikidata_title": "The Entertainer",
+      "musicbrainz_id": "8833a765-686e-3d19-8e3b-b2ee1cc33cf8",
+      "imslp_id": "The_Entertainer_(Joplin,_Scott)",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Joplin%20the%20entertainer",
+      "display_title": "The Entertainer"
+    },
+    {
+      "title": "maple leaf rag",
+      "musicxml": "musicxml/Maple_Leaf_Rag.mxl",
+      "midi": "midi/Maple_Leaf_Rag.mid",
+      "time_signature": "2/2",
+      "instruments": [
+        "Piano"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.74,
+        "n_favorites": 6,
+        "n_views": 284,
+        "duration_seconds": 546.4606977250294,
+        "n_notes": 2063,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "jazz-classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/28851728/scores/5948499",
+        "musescore_duration": "04:26"
+      },
+      "key": "A♭ major",
+      "key_changes": [
+        "A♭ major",
+        "D♭ major"
+      ],
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 100,
+      "n_measures": 85,
+      "n_parts": 1,
+      "n_notes": 2629,
+      "notes_per_second": 4.8,
+      "apple_music_search_query": "Joplin A♭ major maple leaf rag",
+      "year_composed": 1897,
+      "wikidata_id": "Q277463",
+      "wikidata_title": "Maple Leaf Rag",
+      "musicbrainz_id": "a28705df-3bfa-3888-b3e9-cc707bda74dc",
+      "imslp_id": "Maple_Leaf_Rag_(Joplin,_Scott)",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Joplin%20maple%20leaf%20rag",
+      "display_title": "Maple Leaf Rag"
+    },
+    {
+      "title": "maple leaf rag",
+      "musicxml": "musicxml/Maple_Leaf_Rag_1.mxl",
+      "midi": "midi/Maple_Leaf_Rag_1.mid",
+      "time_signature": "2/4",
+      "instruments": [
+        "Piano"
+      ],
+      "tempo_markings": [
+        "tempo di marcio"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.83,
+        "n_favorites": 140,
+        "n_views": 6142,
+        "duration_seconds": 178.05359673651083,
+        "n_notes": 2792,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "jazz-classical",
+        "tags": "ragtime-scottjoplin-rag-reg",
+        "musescore_url": "https://musescore.com/user/2037776/scores/770616",
+        "musescore_duration": "02:45"
+      },
+      "key": "A♭ major",
+      "key_changes": [
+        "A♭ major",
+        "D♭ major"
+      ],
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 100,
+      "n_measures": 85,
+      "n_parts": 1,
+      "n_notes": 2629,
+      "notes_per_second": 14.8,
+      "apple_music_search_query": "Joplin A♭ major maple leaf rag",
+      "year_composed": 1897,
+      "wikidata_id": "Q277463",
+      "wikidata_title": "Maple Leaf Rag",
+      "musicbrainz_id": "a28705df-3bfa-3888-b3e9-cc707bda74dc",
+      "imslp_id": "Maple_Leaf_Rag_(Joplin,_Scott)",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Joplin%20maple%20leaf%20rag",
+      "display_title": "Maple Leaf Rag"
+    },
+    {
+      "title": "maple leaf rag",
+      "musicxml": "musicxml/Maple_Leaf_Rag_2.mxl",
+      "midi": "midi/Maple_Leaf_Rag_2.mid",
+      "time_signature": "2/4",
+      "instruments": [
+        "Piano"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 8,
+        "n_views": 204,
+        "duration_seconds": 177.5996447960928,
+        "n_notes": 2803,
+        "complexity": "2",
+        "is_original": false,
+        "is_best_arrangement": false,
+        "genres": "jazz-classical",
+        "tags": "scott-joplin-piano-rag-maple-leaf-thcentury-classic",
+        "musescore_url": "https://musescore.com/user/27827686/scores/4939458",
+        "musescore_duration": "02:53"
+      },
+      "key": "A♭ major",
+      "key_changes": [
+        "A♭ major",
+        "D♭ major"
+      ],
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 100,
+      "n_measures": 85,
+      "n_parts": 1,
+      "n_notes": 2629,
+      "notes_per_second": 14.8,
+      "apple_music_search_query": "Joplin A♭ major maple leaf rag",
+      "year_composed": 1897,
+      "wikidata_id": "Q277463",
+      "wikidata_title": "Maple Leaf Rag",
+      "musicbrainz_id": "a28705df-3bfa-3888-b3e9-cc707bda74dc",
+      "imslp_id": "Maple_Leaf_Rag_(Joplin,_Scott)",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Joplin%20maple%20leaf%20rag",
+      "display_title": "Maple Leaf Rag"
+    },
+    {
+      "title": "Weeping Willow",
+      "musicxml": "musicxml/Weeping_Willow.mxl",
+      "midi": "midi/Weeping_Willow.mid",
+      "time_signature": "2/4",
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 1,
+        "n_views": 678,
+        "duration_seconds": 187.2499999951627,
+        "n_notes": 2750,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "NA",
+        "tags": "piano-solo-ragtime",
+        "musescore_url": "https://musescore.com/user/174697/scores/172019",
+        "musescore_duration": "03:48"
+      },
+      "key": "G major",
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 120,
+      "n_measures": 88,
+      "n_parts": 2,
+      "n_notes": 2510,
+      "notes_per_second": 13.4,
+      "apple_music_search_query": "Joplin G major Weeping Willow",
+      "year_composed": 1903,
+      "wikidata_id": "Q7979589",
+      "wikidata_title": "Weeping Willow",
+      "musicbrainz_id": "027de9df-0aea-3e7f-a243-6f5640e1038d",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Joplin%20Weeping%20Willow",
+      "display_title": "Weeping Willow"
+    },
+    {
+      "title": "The Entertainer",
+      "musicxml": "musicxml/The_Entertainer_3.mxl",
+      "midi": "midi/The_Entertainer_3.mid",
+      "time_signature": "4/4",
+      "instruments": [
+        "Piano"
+      ],
+      "tempo_markings": [
+        "♩ = ca. 160"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 6,
+        "n_views": 247,
+        "duration_seconds": 77.62490296688216,
+        "n_notes": 731,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "NA",
+        "tags": "bassoonquartet-baritonequartet-bassclefquartet-euphoniumquartet-trombonequartet-theentertainer-ragtimequartet-quartet",
+        "musescore_url": "https://musescore.com/user/26978183/scores/4889845",
+        "musescore_duration": "01:18"
+      },
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 90,
+      "n_measures": 92,
+      "n_parts": 1,
+      "n_notes": 2671,
+      "notes_per_second": 34.4,
+      "apple_music_search_query": "Joplin The Entertainer",
+      "key": "C major",
+      "year_composed": 1902,
+      "wikidata_id": "Q1890794",
+      "wikidata_title": "The Entertainer",
+      "musicbrainz_id": "8833a765-686e-3d19-8e3b-b2ee1cc33cf8",
+      "imslp_id": "The_Entertainer_(Joplin,_Scott)",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Joplin%20The%20Entertainer",
+      "display_title": "The Entertainer"
+    },
+    {
+      "title": "The Entertainer 2020",
+      "musicxml": "musicxml/The_Entertainer_2020.mxl",
+      "midi": "midi/The_Entertainer_2020.mid",
+      "time_signature": "4/4",
+      "instruments": [
+        "Piano"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.85,
+        "n_favorites": 5,
+        "n_views": 525,
+        "duration_seconds": 247.909541647289,
+        "n_notes": 1515,
+        "complexity": "2",
+        "is_original": false,
+        "is_best_arrangement": false,
+        "genres": "jazz-classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/34133357/scores/5966560",
+        "musescore_duration": "03:47"
+      },
+      "key": "F major",
+      "key_changes": [
+        "F major",
+        "C major"
+      ],
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 110,
+      "n_measures": 74,
+      "n_parts": 1,
+      "n_notes": 1403,
+      "notes_per_second": 5.7,
+      "apple_music_search_query": "Joplin F major The Entertainer 2020",
+      "year_composed": 1902,
+      "wikidata_id": "Q1890794",
+      "wikidata_title": "The Entertainer",
+      "musicbrainz_id": "8833a765-686e-3d19-8e3b-b2ee1cc33cf8",
+      "imslp_id": "The_Entertainer_(Joplin,_Scott)",
+      "wikidata_match_method": "title_substring",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Joplin%20The%20Entertainer%202020",
+      "display_title": "The Entertainer"
+    },
+    {
+      "title": "maple leaf rag",
+      "musicxml": "musicxml/Maple_Leaf_Rag_3.mxl",
+      "midi": "midi/Maple_Leaf_Rag_3.mid",
+      "time_signature": "2/4",
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 15,
+        "n_views": 1301,
+        "duration_seconds": 151.7499999960798,
+        "n_notes": 2861,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "jazz-classical",
+        "tags": "brassquintet-brass-scottjoplin-scott-joplin-awesome-greatmusic-ragtime-rap-pop",
+        "musescore_url": "https://musescore.com/user/1464841/scores/1567781",
+        "musescore_duration": "02:25"
+      },
+      "key": "A♭ major",
+      "key_changes": [
+        "A♭ major",
+        "D♭ major"
+      ],
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 100,
+      "n_measures": 85,
+      "n_parts": 1,
+      "n_notes": 2629,
+      "notes_per_second": 17.3,
+      "apple_music_search_query": "Joplin A♭ major maple leaf rag",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1897,
+      "wikidata_id": "Q277463",
+      "wikidata_title": "Maple Leaf Rag",
+      "musicbrainz_id": "a28705df-3bfa-3888-b3e9-cc707bda74dc",
+      "imslp_id": "Maple_Leaf_Rag_(Joplin,_Scott)",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Joplin%20maple%20leaf%20rag",
+      "display_title": "Maple Leaf Rag"
+    },
+    {
+      "title": "The Entertainer",
+      "musicxml": "musicxml/The_Entertainer_5.mxl",
+      "midi": "midi/The_Entertainer_5.mid",
+      "time_signature": "4/4",
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 21,
+        "n_views": 897,
+        "duration_seconds": 73.49999999810125,
+        "n_notes": 379,
+        "complexity": "1",
+        "is_original": false,
+        "is_best_arrangement": false,
+        "genres": "NA",
+        "tags": "the-scott-joplin-entertainer",
+        "musescore_url": "https://musescore.com/arw-music/scores/98457",
+        "musescore_duration": "01:12"
+      },
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 90,
+      "n_measures": 92,
+      "n_parts": 1,
+      "n_notes": 2671,
+      "notes_per_second": 36.3,
+      "apple_music_search_query": "Joplin The Entertainer",
+      "instruments": [
+        "Piano"
+      ],
+      "key": "C major",
+      "year_composed": 1902,
+      "wikidata_id": "Q1890794",
+      "wikidata_title": "The Entertainer",
+      "musicbrainz_id": "8833a765-686e-3d19-8e3b-b2ee1cc33cf8",
+      "imslp_id": "The_Entertainer_(Joplin,_Scott)",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Joplin%20The%20Entertainer",
+      "display_title": "The Entertainer"
+    },
+    {
+      "title": "Solace - Ragtime",
+      "musicxml": "musicxml/Solace_-_Ragtime.mxl",
+      "midi": "midi/Solace_-_Ragtime.mid",
+      "time_signature": "2/4",
+      "instruments": [
+        "Clarinette en Si♭",
+        "Piano"
+      ],
+      "tempo_markings": [
+        "Very Slow March Time"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.83,
+        "n_favorites": 22,
+        "n_views": 1851,
+        "duration_seconds": 661.8749999820742,
+        "n_notes": 3285,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "jazz-classical",
+        "tags": "scottjoplin-ragtime",
+        "musescore_url": "https://musescore.com/user/12667566/scores/2937141",
+        "musescore_duration": "06:14"
+      },
+      "key": "D major",
+      "key_changes": [
+        "D major",
+        "G major"
+      ],
+      "instruments_gm": [
+        "Clarinet",
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 96,
+      "n_measures": 88,
+      "n_parts": 2,
+      "n_notes": 2837,
+      "notes_per_second": 4.3,
+      "apple_music_search_query": "Joplin D major Solace - Ragtime",
+      "wikidata_id": "Q11315379",
+      "wikidata_title": "Solace",
+      "wikidata_match_method": "title_tokens",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Joplin%20Solace%20-%20Ragtime",
+      "display_title": "Solace"
+    },
+    {
+      "title": "the entertainer",
+      "musicxml": "musicxml/The_Entertainer_8.mxl",
+      "midi": "midi/The_Entertainer_8.mid",
+      "time_signature": "4/4",
+      "instruments": [
+        "Piano"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.89,
+        "n_favorites": 22,
+        "n_views": 884,
+        "duration_seconds": 103.49999999732626,
+        "n_notes": 734,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "jazz-classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/wim_de_baerdemaeker/scores/1813226",
+        "musescore_duration": "01:44"
+      },
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 90,
+      "n_measures": 92,
+      "n_parts": 1,
+      "n_notes": 2671,
+      "notes_per_second": 25.8,
+      "apple_music_search_query": "Joplin the entertainer",
+      "key": "C major",
+      "year_composed": 1902,
+      "wikidata_id": "Q1890794",
+      "wikidata_title": "The Entertainer",
+      "musicbrainz_id": "8833a765-686e-3d19-8e3b-b2ee1cc33cf8",
+      "imslp_id": "The_Entertainer_(Joplin,_Scott)",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Joplin%20the%20entertainer",
+      "display_title": "The Entertainer"
+    },
+    {
+      "title": "Maple Leaf Rag - Piano Duet",
+      "musicxml": "musicxml/Maple_Leaf_Rag_-_Piano_Duet.mxl",
+      "midi": "midi/Maple_Leaf_Rag_-_Piano_Duet.mid",
+      "form": "Duet",
+      "time_signature": "2/4",
+      "instruments": [
+        "Piano"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.76,
+        "n_favorites": 49,
+        "n_views": 1881,
+        "duration_seconds": 167.3080140495296,
+        "n_notes": 3584,
+        "complexity": "2",
+        "is_original": false,
+        "is_best_arrangement": false,
+        "genres": "jazz-classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/piotrbarcz/scores/6319063",
+        "musescore_duration": "02:47"
+      },
+      "key": "A♭ major",
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 104,
+      "n_measures": 145,
+      "n_parts": 1,
+      "n_notes": 3426,
+      "notes_per_second": 20.5,
+      "apple_music_search_query": "Joplin A♭ major Maple Leaf Rag - Piano Duet",
+      "wikidata_id": "Q110699057",
+      "wikidata_title": "Maple Leaf Rag",
+      "musicbrainz_id": "9f45c6d5-870c-4da1-aa5f-6a6e6b69e7bb",
+      "wikidata_match_method": "title_substring",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Joplin%20Maple%20Leaf%20Rag%20-%20Piano%20Duet",
+      "display_title": "Maple Leaf Rag"
+    },
+    {
+      "title": "Maple Leaf Rag (Scott Joplin)",
+      "musicxml": "musicxml/Maple_Leaf_Rag_Scott_Joplin.mxl",
+      "midi": "midi/Maple_Leaf_Rag_Scott_Joplin.mid",
+      "time_signature": "2/4",
+      "instruments": [
+        "Piano"
+      ],
+      "tempo_markings": [
+        "Tempo Di Marcia",
+        "TRIO"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.84,
+        "n_favorites": 8297,
+        "n_views": 335718,
+        "duration_seconds": 181.1996375960136,
+        "n_notes": 2809,
+        "complexity": "2",
+        "is_original": false,
+        "is_best_arrangement": false,
+        "genres": "jazz-classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/116681/scores/145724",
+        "musescore_duration": "02:53"
+      },
+      "key": "A♭ major",
+      "key_changes": [
+        "A♭ major",
+        "D♭ major"
+      ],
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 100,
+      "n_measures": 85,
+      "n_parts": 1,
+      "n_notes": 2639,
+      "notes_per_second": 14.6,
+      "apple_music_search_query": "Joplin A♭ major Maple Leaf Rag (Scott Joplin)",
+      "year_composed": 1897,
+      "wikidata_id": "Q277463",
+      "wikidata_title": "Maple Leaf Rag",
+      "musicbrainz_id": "a28705df-3bfa-3888-b3e9-cc707bda74dc",
+      "imslp_id": "Maple_Leaf_Rag_(Joplin,_Scott)",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Joplin%20Maple%20Leaf%20Rag%20%28%20%29",
+      "display_title": "Maple Leaf Rag"
+    },
+    {
+      "title": "Stoptime Rag",
+      "musicxml": "musicxml/Stoptime_Rag.mxl",
+      "midi": "midi/Stoptime_Rag.mid",
+      "time_signature": "2/4",
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 23,
+        "n_views": 2029,
+        "duration_seconds": 149.68749999610188,
+        "n_notes": 2156,
+        "complexity": "2",
+        "is_original": false,
+        "is_best_arrangement": false,
+        "genres": "jazz-classical",
+        "tags": "piano-jazz-ragtime",
+        "musescore_url": "https://musescore.com/user/40274/scores/69479",
+        "musescore_duration": "03:10"
+      },
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 96,
+      "n_measures": 87,
+      "n_parts": 1,
+      "n_notes": 1899,
+      "notes_per_second": 12.7,
+      "apple_music_search_query": "Joplin Stoptime Rag",
+      "key": "C major",
+      "year_composed": 1910,
+      "wikidata_id": "Q29002267",
+      "wikidata_title": "Stoptime Rag",
+      "musicbrainz_id": "880cdb56-7e9a-34d3-a263-01ef032da0fb",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Joplin%20Stoptime%20Rag",
+      "display_title": "Stoptime Rag"
+    },
+    {
+      "title": "solace",
+      "musicxml": "musicxml/Solace.mxl",
+      "midi": "midi/Solace.mid",
+      "time_signature": "2/4",
+      "instruments": [
+        "Piano"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.7,
+        "n_favorites": 183,
+        "n_views": 13973,
+        "duration_seconds": 338.2498308657827,
+        "n_notes": 1165,
+        "complexity": "2",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "jazz-classical",
+        "tags": "scottjoplin-solace-thesting-ragtime",
+        "musescore_url": "https://musescore.com/user/1287031/scores/2039191",
+        "musescore_duration": "03:12"
+      },
+      "key": "F major",
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 40,
+      "n_measures": 34,
+      "n_parts": 1,
+      "n_notes": 971,
+      "notes_per_second": 2.9,
+      "apple_music_search_query": "Joplin F major solace",
+      "wikidata_id": "Q11315379",
+      "wikidata_title": "Solace",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Joplin%20solace",
+      "display_title": "Solace"
+    },
+    {
+      "title": "The Entertainer",
+      "musicxml": "musicxml/The_Entertainer_9.mxl",
+      "midi": "midi/The_Entertainer_9.mid",
+      "time_signature": "2/4",
+      "instruments": [
+        "Piano"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 42,
+        "n_views": 943,
+        "duration_seconds": 218.3333333276324,
+        "n_notes": 2910,
+        "complexity": "2",
+        "is_original": false,
+        "is_best_arrangement": false,
+        "genres": "NA",
+        "tags": "ragtime-theentertainer",
+        "musescore_url": "https://musescore.com/user/5415031/scores/1341366",
+        "musescore_duration": "03:23"
+      },
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 90,
+      "n_measures": 92,
+      "n_parts": 1,
+      "n_notes": 2671,
+      "notes_per_second": 12.2,
+      "apple_music_search_query": "Joplin The Entertainer",
+      "key": "C major",
+      "year_composed": 1902,
+      "wikidata_id": "Q1890794",
+      "wikidata_title": "The Entertainer",
+      "musicbrainz_id": "8833a765-686e-3d19-8e3b-b2ee1cc33cf8",
+      "imslp_id": "The_Entertainer_(Joplin,_Scott)",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Joplin%20The%20Entertainer",
+      "display_title": "The Entertainer"
+    },
+    {
+      "title": "The Entertainer (full)",
+      "musicxml": "musicxml/The_Entertainer_full.mxl",
+      "midi": "midi/The_Entertainer_full.mid",
+      "time_signature": "2/4",
+      "instruments": [
+        "Grand Piano"
+      ],
+      "tempo_markings": [
+        "Andante"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 46,
+        "n_views": 744,
+        "duration_seconds": 226.02221357997084,
+        "n_notes": 2721,
+        "complexity": "2",
+        "is_original": false,
+        "is_best_arrangement": false,
+        "genres": "NA",
+        "tags": "ragtimeclassic",
+        "musescore_url": "https://musescore.com/agvdwalt/scores/1809426",
+        "musescore_duration": "03:27"
+      },
+      "key": "F major",
+      "key_changes": [
+        "F major",
+        "C major"
+      ],
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 88,
+      "n_measures": 92,
+      "n_parts": 1,
+      "n_notes": 2721,
+      "notes_per_second": 12.0,
+      "apple_music_search_query": "Joplin F major The Entertainer (full)",
+      "parent_work_title": "THE ENTERTAINER",
+      "year_composed": 1902,
+      "wikidata_id": "Q1890794",
+      "wikidata_title": "The Entertainer",
+      "musicbrainz_id": "8833a765-686e-3d19-8e3b-b2ee1cc33cf8",
+      "imslp_id": "The_Entertainer_(Joplin,_Scott)",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Joplin%20The%20Entertainer%20%28full%29",
+      "display_title": "The Entertainer"
+    }
+  ],
+  "birth_year": 1868,
+  "death_year": 1917,
+  "wikipedia_extract": "Scott Joplin (November 24, 1868 – April 1, 1917) was an American composer and pianist. Dubbed the \"King of Ragtime\", he composed more than 40 ragtime pieces, one ragtime ballet (original version of \"The Ragtime Dance\", 1899/1902), and two operas. One of his first and most popular pieces, the \"Maple Leaf Rag\", became the genre's first and most influential hit, later being recognized as the quintessential rag.",
+  "wikipedia_compositions_url": "https://en.wikipedia.org/wiki/List_of_compositions_by_Scott_Joplin",
+  "wikidata_id": "Q191499",
+  "apple_music_artist_id": "178430",
+  "apple_music_classical_url": "https://classical.music.apple.com/us/artist/178430"
+}

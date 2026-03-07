@@ -1,0 +1,61 @@
+{
+  "composer_slug": "tarrega",
+  "composer_qid": "Q313372",
+  "work_count": 6,
+  "midi_file_count": 4,
+  "works": [
+    {
+      "qid": "Q5036244",
+      "title": "Capricho árabe",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francisco-tarrega-1852-pp130",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Capricho_%C3%A1rabe",
+      "wikipedia_extract": "\nCapricho árabe is an 1892 composition by Spanish composer Francisco Tárrega. The piece was composed after a trip through Andalucia and North Africa, he dedicated it to his friend, conductor Tomás Bretón.",
+      "pageviews_yearly": 9749,
+      "date": "1892-00-00"
+    },
+    {
+      "qid": "Q18160371",
+      "title": "Estudio en forma de minueto",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Francisco_Tarrega_-_Estudio_En_Forma_De_Minuetto.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q107551156",
+      "title": "Gran vals",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Francisco_Tarrega_-_Vals_en_Re.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q18209075",
+      "title": "Lágrima",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francisco-tarrega-1852-pp91",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/L%C3%A1grima_(T%C3%A1rrega)",
+      "wikipedia_extract": "Lágrima (Teardrop) is a romantic prelude for solo guitar by Spanish guitarist Francisco Tárrega. It is one of the best-known original compositions by Tárrega. It has been published by Ildefonso Alier.",
+      "pageviews_yearly": 9261
+    },
+    {
+      "qid": "Q7101533",
+      "title": "Oremus",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Francisco_Tarrega_-_Oremus.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q651729",
+      "title": "Recuerdos de la Alhambra",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Recuerdos_de_la_Alhambra_-_Francesco_Tarrega.mid"
+      ],
+      "has_mxl": true
+    }
+  ]
+}

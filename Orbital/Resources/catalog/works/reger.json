@@ -1,0 +1,386 @@
+{
+  "composer_slug": "reger",
+  "composer_qid": "Q57139",
+  "work_count": 44,
+  "midi_file_count": 2,
+  "works": [
+    {
+      "qid": "Q26869608",
+      "title": "Ein' feste Burg ist unser Gott, Op. 27",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/max-reger-1873-pp232",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ein'_feste_Burg_ist_unser_Gott_(Reger)",
+      "wikipedia_extract": "Ein' feste Burg ist unser Gott, Op. 27, is a chorale fantasia for organ by Max Reger. He composed it in 1898 on Luther's hymn \"Ein feste Burg ist unser Gott\". The full title is Phantasie über den Choral \"Ein' feste Burg ist unser Gott\".",
+      "pageviews_yearly": 1469,
+      "date": "1898-00-00"
+    },
+    {
+      "qid": "Q65719218",
+      "title": "Cello Sonata No. 2",
+      "imslp_id": "Cello_Sonata_No.2,_Op.28_(Reger,_Max)",
+      "pdf_filename": "PMLP57578-Reger_-_Cello_Sonata_No.2_in_G_minor_Op28_cello.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/max-reger-1873-pp61",
+      "date": "1898-11-02"
+    },
+    {
+      "qid": "Q108554976",
+      "title": "Abendlied",
+      "date": "1900-00-00"
+    },
+    {
+      "qid": "Q2816946",
+      "title": "Four Tone Poems after Arnold Böcklin",
+      "imslp_id": "4_Tone_Poems_after_Arnold_Böcklin,_Op.128_(Reger,_Max)",
+      "pdf_filename": "PMLP98799-00._REGER_-_FOUR_TONE_POEMES__OP._128_-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vier_Tondichtungen_nach_A._B%C3%B6cklin",
+      "wikipedia_extract": "Vier Tondichtungen nach A. Böcklin, Op. 128, is a composition in four parts for orchestra by Max Reger, based on four paintings by Arnold Böcklin, including Die Toteninsel. He composed them in Meiningen in 1913.",
+      "pageviews_yearly": 2688,
+      "date": "1913-00-00"
+    },
+    {
+      "qid": "Q27920798",
+      "title": "Acht geistliche Gesänge",
+      "imslp_id": "8_Geistliche_Gesänge,_Op.138_(Reger,_Max)",
+      "pdf_filename": "PMLP367510-Reger_op.138_Acht_Geistliche_Gesaenge_RGA_vol27.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/max-reger-1873-pp212",
+      "date": "1914-00-00",
+      "movements": [
+        {
+          "qid": "Q25218072"
+        },
+        {
+          "qid": "Q2496846"
+        },
+        {
+          "qid": "Q27921286"
+        }
+      ]
+    },
+    {
+      "qid": "Q27921286",
+      "title": "Morgengesang",
+      "date": "1914-00-00"
+    },
+    {
+      "qid": "Q2496846",
+      "title": "Unser lieben Frauen Traum",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Unser_lieben_Frauen_Traum",
+      "wikipedia_extract": "Unser lieben Frauen Traum Op. 138, No. 4, is a sacred motet for unaccompanied mixed choir by Max Reger. The German text is a poem by an anonymous poet, derived from a Volkslied. The piece is in F major and scored for up to six voices, SSATBB. Composed in Meiningen in 1914, it was published in 1916 after Reger's death as the fourth of Acht geistliche Gesänge. It is often performed in Advent.",
+      "pageviews_yearly": 2968,
+      "date": "1914-00-00"
+    },
+    {
+      "qid": "Q3554785",
+      "title": "Variations and Fugue on a Theme by Mozart",
+      "imslp_id": "Variations_and_Fugue_on_a_Theme_by_Mozart,_Op.132_(Reger,_Max)",
+      "pdf_filename": "PMLP33655-Reger-Op132FSe.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/max-reger-1873-pp18",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Variations_and_Fugue_on_a_Theme_by_Mozart",
+      "wikipedia_extract": "The Variations and Fugue on a Theme by Mozart, Op. 132, is a set of variations for orchestra composed in 1914 by Max Reger; the composer conducted the premiere in Berlin on 5 February 1915. He later produced a version for two pianos, Op. 132a, where the Variation 8 (\"Moderato\") is completely different.",
+      "pageviews_yearly": 4270,
+      "date": "1914-00-00"
+    },
+    {
+      "qid": "Q3414597",
+      "title": "Clarinet Quintet in A major",
+      "imslp_id": "Clarinet Quintet, Op.146 (Reger, Max)",
+      "pdf_filename": "PMLP110761-Reger_-_Clarinet_Quintet__Op._146__score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/max-reger-1873-pp255",
+      "date": "1915-00-00"
+    },
+    {
+      "qid": "Q25218072",
+      "title": "Nachtlied",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nachtlied_(Reger)",
+      "wikipedia_extract": "Nachtlied Op. 138, No. 3, is a sacred motet for unaccompanied mixed choir by Max Reger. The German text is a poem by Petrus Herbert, beginning \"Die Nacht ist kommen\". The piece is in B minor and scored for five voices SATBB. Composed in Meiningen in 1914, it was published in 1916 after Reger's death as the third of Acht geistliche Gesänge.",
+      "pageviews_yearly": 3082,
+      "date": "1916-10-12"
+    },
+    {
+      "qid": "Q2363952",
+      "title": "3 Suites for Solo Cello",
+      "imslp_id": "3_Suites_for_Solo_Cello,_Op.131c_(Reger,_Max)",
+      "pdf_filename": "PMLP57586-Reger_-_Suite_No1_in_G_Major_Op131c_cello_solo.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/max-reger-1873-pp286"
+    },
+    {
+      "qid": "Q28812703",
+      "title": "52 chorale preludes, Op. 67",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/max-reger-1873-pp224",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/52_chorale_preludes%2C_Op._67",
+      "wikipedia_extract": "52 chorale preludes, Op. 67, is a collection of 52 settings of popular Protestant hymns for organ by Max Reger, composed between 1900 and 1902. Originally published in three volumes between 1900 and 1903 with the cover title \"52 Choralvorspiele für Orgel\", the full title of the collection was \"Zweiundfünfzig leicht ausführbare Vorspiele zu den gebräuchlichsten evangelischen Chorälen\".",
+      "pageviews_yearly": 2153
+    },
+    {
+      "qid": "Q3503238",
+      "title": "A Ballet Suite"
+    },
+    {
+      "qid": "Q21081605",
+      "title": "An die Hoffnung",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/max-reger-1873-pp109",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/An_die_Hoffnung",
+      "wikipedia_extract": "\"An die Hoffnung\", Op. 124, is a Lied for alto or mezzo-soprano and orchestra by Max Reger, setting a poem by Friedrich Hölderlin. He composed it in Meiningen in 1912 and dedicated it to Anna Erler-Schnaudt, the singer of the first performance. It was published by Edition Peters the same year.",
+      "pageviews_yearly": 2117
+    },
+    {
+      "qid": "Q28453034",
+      "title": "Cello Sonata No. 1",
+      "imslp_id": "Cello_Sonata_No.1,_Op.5_(Reger,_Max)",
+      "pdf_filename": "PMLP98040-Reger_-_Cello_Sonata_No1_Op5_cello.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/max-reger-1873-pp58",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cello_Sonata_No._1_(Reger)",
+      "wikipedia_extract": "The Cello Sonata in F minor, Op. 5, was composed by Max Reger in 1892 in Wiesbaden. He dedicated it to the cellist Oskar Brückner who performed it first, with the composer as the pianist, in Wiesbaden on 17 October 1893. It was published by Augener & Co., London, in September 1893.",
+      "pageviews_yearly": 1117
+    },
+    {
+      "qid": "Q21998455",
+      "title": "Der 100. Psalm",
+      "imslp_id": "Psalm_100,_Op.106_(Reger,_Max)",
+      "pdf_filename": "PMLP15020-Reger-Op106FS.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Der_100._Psalm",
+      "wikipedia_extract": "Der 100. Psalm, Op. 106, is a composition in four movements by Max Reger in D major for mixed choir and orchestra, a late Romantic setting of Psalm 100. Reger began composing the work in 1908 for the 350th anniversary of Jena University. The occasion was celebrated that year with the premiere of Part I, conducted by Fritz Stein on 31 July. Reger completed the composition in 1909. It was published that year and premiered simultaneously on 23 February 1910 in Chemnitz, conducted by the composer, and in Breslau, conducted by Georg Dohrn.",
+      "pageviews_yearly": 6645
+    },
+    {
+      "qid": "Q24041492",
+      "title": "Der Einsiedler",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Der_Einsiedler",
+      "wikipedia_extract": "Der Einsiedler Op. 144a, is a composition for baritone soloist, five-part choir and orchestra by Max Reger, written in 1915. The German text is a poem by Joseph von Eichendorff, beginning \"Komm' Trost der Welt, du stille Nacht\". The composition was published in 1916 after Reger's death by N. Simrock, combined with the Hebbel Requiem, as Zwei Gesänge für gemischten Chor mit Orchester, Op. 144.",
+      "pageviews_yearly": 2030
+    },
+    {
+      "qid": "Q24034669",
+      "title": "Der Mensch lebt und bestehet",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Der_Mensch_lebt_und_bestehet_nur_eine_kleine_Zeit_Op_138_No_1_-_Max_Reger.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q109973458",
+      "title": "Die Nonnen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Die_Nonnen",
+      "wikipedia_extract": "Die Nonnen, Op. 112, is composition for mixed choir and orchestra by Max Reger, written in 1909. The text is a poem by Martin Boelitz.",
+      "pageviews_yearly": 1228
+    },
+    {
+      "qid": "Q30639053",
+      "title": "Die Weihe der Nacht",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Die_Weihe_der_Nacht",
+      "wikipedia_extract": "Die Weihe der Nacht, Op. 119, is a choral composition for alto, men's choir and orchestra by Max Reger, setting a poem by Friedrich Hebbel. He composed it in Leipzig in 1911 and dedicated it to Gertrud Fischer-Maretzki, the soloist in the first performance. It was published by Ed. Bote & G. Bock in Berlin the same year.",
+      "pageviews_yearly": 1237
+    },
+    {
+      "qid": "Q26234440",
+      "title": "Drei Chöre, Op. 6",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Drei_Ch%C3%B6re%2C_Op._6",
+      "wikipedia_extract": "Drei Chöre, Op. 6, is a set of three compositions for mixed choir and piano by Max Reger, composed before 2 August 1892 in Wiesbaden. The texts are poems by three poets:Trost\nZur Nacht\nAbendbild",
+      "pageviews_yearly": 1176
+    },
+    {
+      "qid": "Q26821212",
+      "title": "Eine romantische Suite",
+      "imslp_id": "Eine_romantische_Suite,_Op.125_(Reger,_Max)",
+      "pdf_filename": "PMLP98797-Reger_op.125_Eine_romantische_Suite_fs_RGA.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/max-reger-1873-pp235",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Eine_romantische_Suite",
+      "wikipedia_extract": "Eine romantische Suite, Op. 125, is a suite for orchestra by Max Reger, based on poems by Joseph von Eichendorff. Reger described this suite, composed and first performed in 1912, and the Vier Tondichtungen nach A. Böcklin, Op. 128, as \"Ausflug in das Gebiet der Programmusik\".",
+      "pageviews_yearly": 1815
+    },
+    {
+      "qid": "Q24256360",
+      "title": "Geistliche Gesänge",
+      "imslp_id": "Geistliche_Gesänge,_Op.110_(Reger,_Max)",
+      "pdf_filename": "PMLP229092-Reger__Max__Geistliche_Gesänge__Op.110__No.1__Mein_Odem.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/max-reger-1873-pp212",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Geistliche_Ges%C3%A4nge%2C_Op._110",
+      "wikipedia_extract": "Geistliche Gesänge, Op. 110, are three motets by Max Reger. He composed them between 1909 and 1912:No. 1: Mein Odem ist schwach, 1909\nNo. 2: Ach Herr, strafe mich nicht!, 1910\nNo. 3: O Tod, wie bitter bist du, 1912",
+      "pageviews_yearly": 1433
+    },
+    {
+      "qid": "Q24965394",
+      "title": "Gesang der Verklärten",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gesang_der_Verkl%C3%A4rten",
+      "wikipedia_extract": "Gesang der Verklärten, Op. 71, is a composition by Max Reger for a mixed five-part choir and orchestra, a late Romantic setting of a poem by Carl Busse. Reger composed the work in 1903. He dedicated it to \"Meiner geliebten Frau Elsa\". It was published in 1905 and first performed in Aachen on 18 January 1906 by the municipal choir and orchestra, conducted by Eberhard Schwickerath.",
+      "pageviews_yearly": 1528
+    },
+    {
+      "qid": "Q21082944",
+      "title": "Hymnus der Liebe",
+      "imslp_id": "Hymne der Liebe, Op.136 (Reger, Max)",
+      "pdf_filename": "PMLP138977-Reger_op.136_Hymnus_der_Liebe_fs_RGA_vol35.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/max-reger-1873-pp110"
+    },
+    {
+      "qid": "Q60555786",
+      "title": "Introduction, Passacaglia and Fugue",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/max-reger-1873-pp159",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Introduction%2C_Passacaglia_and_Fugue",
+      "wikipedia_extract": "Introduction, Passacaglia and Fugue in E minor, Op. 127, is an extended composition for organ by Max Reger, composed in 1913 and dedicated to Karl Straube who played the premiere in Breslau on 24 September. It was published in November that year in Berlin by Bote & Bock.",
+      "pageviews_yearly": 1916
+    },
+    {
+      "qid": "Q10577261",
+      "title": "Mariae Wiegenlied",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Wiegenlied_Max_Reger.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q19977390",
+      "title": "Max Reger – Music as perpetual state"
+    },
+    {
+      "qid": "Q30931322",
+      "title": "Phantasie und Fuge über B-A-C-H",
+      "imslp_id": "Fantasie_und_Fuge_über_B-A-C-H,_Op.46_(Reger,_Max)",
+      "pdf_filename": "PMLP13861-Reger-Stradal_Fantasy_Fugue_over_Bach_Op46_2H.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q115817004",
+      "title": "Piano Concerto",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/max-reger-1873-pp241",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Concerto_(Reger)",
+      "wikipedia_extract": "The Piano Concerto in F minor, Op. 114, is a concerto for piano and orchestra composed by Max Reger in Leipzig in 1910. He dedicated the work to Frieda Kwast-Hodapp, who premiered it in Leipzig on 15 December 1910 with the Gewandhausorchester conducted by Arthur Nikisch. The difficult composition has been rarely performed and recorded. Pianists who have tackled it range from the American Rudolf Serkin, who first recorded it in 1959, to Markus Becker who was the soloist in an award-winning recording in 2017.",
+      "pageviews_yearly": 2329
+    },
+    {
+      "qid": "Q2145482",
+      "title": "Requiem",
+      "imslp_id": "Requiem,_WoO_V/9_(Reger,_Max)",
+      "pdf_filename": "PMLP286432-Reger_Dies_Irae_fs_RGA36.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Requiem_(Reger)",
+      "wikipedia_extract": "Max Reger's 1915 Requiem, Op. 144b, is a late Romantic setting of Friedrich Hebbel's poem \"Requiem\" for alto or baritone solo, chorus and orchestra. It is Reger's last completed work for chorus and orchestra, dedicated in the autograph as Dem Andenken der im Kriege 1914/15 gefallenen deutschen Helden.",
+      "pageviews_yearly": 8114
+    },
+    {
+      "qid": "Q57960471",
+      "title": "Responsories",
+      "imslp_id": "20_Responsories_(Reger,_Max)",
+      "pdf_filename": "PMLP96815-Reger__Max__Responsories_for_Choir_SATB_a_cappella.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Responsories_(Reger)",
+      "wikipedia_extract": "The Responsories by the German composer Max Reger are 20 short settings of mostly biblical texts in English, to be used as responsories in Lutheran church services. Composed in 1911, they were first published in Philadelphia in 1914 as The Responsories.",
+      "pageviews_yearly": 1297
+    },
+    {
+      "qid": "Q26213947",
+      "title": "Sechs Lieder, Op. 35",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sechs_Lieder%2C_Op._35",
+      "wikipedia_extract": "Sechs Lieder, Op. 35, is a set of six Lieder for medium voice and piano by Max Reger. He composed the first five of them in Berchtesgaden in June and July 1899, and the last one in Weiden in August that year. Dedicated to different people, they were published by Jos. Aibl Verlag in Munich the same year.",
+      "pageviews_yearly": 1276
+    },
+    {
+      "qid": "Q28228111",
+      "title": "Sechs Lieder, Op. 4",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sechs_Lieder%2C_Op._4",
+      "wikipedia_extract": "Sechs Lieder, Op. 4, is a set of six Lieder for medium voice and piano by Max Reger. He composed them in Weiden and Wiesbaden between 1890 and 1892, and dedicated them to Elisabeth Riemann. They were published by Augener & Co. in London.",
+      "pageviews_yearly": 1197
+    },
+    {
+      "qid": "Q30591913",
+      "title": "Sieben Stücke, Op. 145",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sieben_St%C3%BCcke%2C_Op._145",
+      "wikipedia_extract": "Sieben Stücke für Orgel, Op. 145, is a collection of seven compositions for organ by Max Reger. He composed the work in three groups in 1915 and 1916. The titles of seven individual character pieces reflect aspects of World War I and Christian feasts. The compositions are based on traditional German hymns, sometimes combining several in one piece. Reger's last work for organ, it was published, again in three instalments, in 1915 and 1916.",
+      "pageviews_yearly": 2638
+    },
+    {
+      "qid": "Q3413837",
+      "title": "String Quartet No. 3",
+      "imslp_id": "String_Quartet_No.3,_Op.74_(Reger,_Max)",
+      "pdf_filename": "PMLP109763-Reger_-_String_Quartet_Op._74__score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/max-reger-1873-pp74"
+    },
+    {
+      "qid": "Q3413844",
+      "title": "String Quartet No. 4",
+      "imslp_id": "String_Quartet_No.4,_Op.109_(Reger,_Max)",
+      "pdf_filename": "PMLP111747-Reger_-_String_Quartet__Op._109__score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/max-reger-1873-pp90"
+    },
+    {
+      "qid": "Q1256954",
+      "title": "Three chorale fantasias, Op. 52",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Three_chorale_fantasias%2C_Op._52",
+      "wikipedia_extract": "Three chorale fantasias, Op. 52, are chorale fantasias for organ by Max Reger. He composed the fantasias on three chorales in September 1900: Phantasie über den Choral \"Alle Menschen müssen sterben\", Phantasie über den Choral \"Wachet auf, ruft uns die Stimme\" and Phantasie über den Choral \"Halleluja! Gott zu loben bleibe meine Seelenfreud\". They were all first performed individually by Reger's friend Karl Straube, and were first published by Breitkopf & Härtel.",
+      "pageviews_yearly": 2116
+    },
+    {
+      "qid": "Q3554783",
+      "title": "Variations and Fugue on a Theme by Hiller",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/max-reger-1873-pp10",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Variations_and_Fugue_on_a_Theme_by_Hiller",
+      "wikipedia_extract": "Variations and Fugue on a Theme by Hiller, Op. 100, is a set of variations for orchestra written by the German composer Max Reger in 1907 after he had preconceived the idea by May 1904. They are based on an original melodic line by the 18th-century composer Johann Adam Hiller. Fritz Steinbach conducted the premiere in Cologne, Germany on 15 October 1907. Along with the composer's Mozart Variations, the Hiller Variations are one of his most popular and frequently recorded works.",
+      "pageviews_yearly": 2133
+    },
+    {
+      "qid": "Q14942870",
+      "title": "Variations and Fugue on a theme of Bach",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/max-reger-1873-pp139"
+    },
+    {
+      "qid": "Q17193848",
+      "title": "Violin Concerto",
+      "imslp_id": "Violin_Concerto,_Op.101_(Reger,_Max)",
+      "pdf_filename": "PMLP97442-Reger_op.101_Violin_Concerto_Vsolo_EP.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/max-reger-1873-pp250"
+    },
+    {
+      "qid": "Q26821217",
+      "title": "Zwei Choralphantasien, Op. 40",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zwei_Choralphantasien%2C_Op._40",
+      "wikipedia_extract": "Zwei Choralphantasien, Op. 40, are fantasias for organ by Max Reger. He composed the fantasias in 1899 on two chorales: \"Wie schön leucht't uns der Morgenstern\" and \"Straf mich nicht in deinem Zorn\" They were published by Musikverlag Josef Aibl in Munich in May 1900.",
+      "pageviews_yearly": 1520
+    },
+    {
+      "qid": "Q26821196",
+      "title": "Zwölf Stücke, Op. 65",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zw%C3%B6lf_St%C3%BCcke%2C_Op._65",
+      "wikipedia_extract": "Zwölf Stücke, Op. 65, is a group of twelve pieces for organ by Max Reger, composed in Munich in 1902. They were published by C. F. Peters in Leipzig in August of that year, in two books (Heft) of six pieces each.",
+      "pageviews_yearly": 1134
+    },
+    {
+      "qid": "Q26813699",
+      "title": "Zwölf Stücke, Op. 80",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zw%C3%B6lf_St%C3%BCcke%2C_Op._80",
+      "wikipedia_extract": "Zwölf Stücke, Op. 80, is a group of twelve pieces for organ by Max Reger. He composed them in Munich in 1902 and 1904. They were published by C. F. Peters in Leipzig in September 1904.",
+      "pageviews_yearly": 1189
+    }
+  ]
+}

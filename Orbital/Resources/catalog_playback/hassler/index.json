@@ -1,0 +1,103 @@
+{
+  "composer_name": "Hans Leo Hassler",
+  "name_last_first": "Hassler, Hans Leo",
+  "slug": "hassler",
+  "wiki_page": "https://en.wikipedia.org/wiki/Hans_Leo_Hassler",
+  "apple_music_playlist": "",
+  "era": "Baroque",
+  "dates": "1562 – 1612",
+  "nationality": "DEU",
+  "notable": false,
+  "works": [
+    {
+      "title": "Tanzen und Springen - SSATB Hans Leo Hassler",
+      "musicxml": "musicxml/Tanzen_und_Springen_-_SSATB_Hans_Leo_Hassler.mxl",
+      "midi": "midi/Tanzen_und_Springen_-_SSATB_Hans_Leo_Hassler.mid",
+      "time_signature": "3/2",
+      "instruments": [
+        "Sopran 1",
+        "Sopran 2",
+        "Alt",
+        "Tenor",
+        "Bass"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.82,
+        "n_favorites": 13,
+        "n_views": 699,
+        "duration_seconds": 101.99999999485748,
+        "n_notes": 429,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/sangerforum/scores/5115266",
+        "musescore_duration": "00:51"
+      },
+      "instruments_gm": [
+        "Choir Aahs"
+      ],
+      "tempo_bpm": 240,
+      "n_measures": 34,
+      "n_parts": 5,
+      "n_notes": 429,
+      "notes_per_second": 4.2,
+      "apple_music_search_query": "Hassler Tanzen und Springen - SSATB Hans Leo Hassler",
+      "parent_work_title": "Tanzen und Springen",
+      "wikidata_id": "Q21013856",
+      "wikidata_title": "Tanzen und Springen",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Hassler%20Tanzen%20und%20Springen%20-%20SSATB",
+      "display_title": "Tanzen und Springen"
+    },
+    {
+      "title": "Missa Secunda - Hans Leo Hassler",
+      "musicxml": "musicxml/Missa_Secunda_-_Hans_Leo_Hassler.mxl",
+      "midi": "midi/Missa_Secunda_-_Hans_Leo_Hassler.mid",
+      "key": "G major",
+      "time_signature": "4/2",
+      "instruments": [
+        "Soprano",
+        "Alto",
+        "Tenor",
+        "Bass"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.62,
+        "n_favorites": 2,
+        "n_views": 125,
+        "duration_seconds": 1654.9953858376518,
+        "n_notes": 3694,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/33131263/scores/5758114",
+        "musescore_duration": "13:47"
+      },
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 120,
+      "n_measures": 263,
+      "n_parts": 4,
+      "n_notes": 3694,
+      "notes_per_second": 2.2,
+      "apple_music_search_query": "Hassler G major Missa Secunda - Hans Leo Hassler",
+      "year_composed": 1599,
+      "wikidata_id": "Q124358304",
+      "wikidata_title": "Missa Secunda",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Hassler%20Missa%20Secunda%20-",
+      "display_title": "Missa Secunda"
+    }
+  ],
+  "birth_year": 1562,
+  "death_year": 1612,
+  "wikipedia_extract": "Hans Leo Hassler (in German, Hans Leo Haßler) (baptised 26 October 1564 – 8 June 1612) was a German composer and organist of the late Renaissance and early Baroque eras, elder brother of lesser known composer Jakob Hassler. He was born in Nuremberg and died in Frankfurt.",
+  "wikidata_id": "Q164882"
+}

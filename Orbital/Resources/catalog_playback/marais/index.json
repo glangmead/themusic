@@ -1,0 +1,71 @@
+{
+  "composer_name": "Marin Marais",
+  "name_last_first": "Marais, Marin",
+  "slug": "marais",
+  "wiki_page": "https://en.wikipedia.org/wiki/Marin_Marais",
+  "apple_music_playlist": "",
+  "era": "Baroque",
+  "dates": "1656 – 1728",
+  "nationality": "FRA",
+  "notable": false,
+  "works": [
+    {
+      "title": "Sonnerie de Sainte GenevieÌve du Mont de Paris Marin Marais",
+      "musicxml": "musicxml/Sonnerie_de_Sainte_GenevieIve_du_Mont_de_Paris_Marin_Marais.mxl",
+      "midi": "midi/Sonnerie_de_Sainte_GenevieIve_du_Mont_de_Paris_Marin_Marais.mid",
+      "time_signature": "3/4",
+      "instruments": [
+        "Violon",
+        "Viole",
+        "Clavecin"
+      ],
+      "tempo_markings": [
+        "Légèrement"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 7,
+        "n_views": 390,
+        "duration_seconds": 452.9999999882975,
+        "n_notes": 4046,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/4887176/scores/5639981",
+        "musescore_duration": "07:33"
+      },
+      "key": "F major",
+      "key_changes": [
+        "F major",
+        "C major"
+      ],
+      "instruments_gm": [
+        "Violin",
+        "Cello",
+        "Harpsichord"
+      ],
+      "tempo_bpm": 120,
+      "n_measures": 302,
+      "n_parts": 3,
+      "n_notes": 4010,
+      "notes_per_second": 8.9,
+      "apple_music_search_query": "Marais F major Sonnerie de Sainte GenevieÌve du Mont de Paris Mar",
+      "parent_work_title": "Sonnerie",
+      "year_composed": 1723,
+      "wikidata_id": "Q3490496",
+      "wikidata_title": "Sonnerie de Ste-Geneviève du Mont-de-Paris",
+      "musicbrainz_id": "d1633102-7b72-382b-9882-e07b5ec5ee2a",
+      "imslp_id": "Sonnerie_de_Sainte_Genevieve_du_Mont_de_Paris_(Marais,_Marin)",
+      "wikidata_match_method": "title_substring",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Marais%20Sonnerie%20de%20Sainte%20Genevie%C3%8Cve%20du%20Mont%20de%20Paris",
+      "display_title": "Sonnerie de Ste-Geneviève du Mont-de-Paris"
+    }
+  ],
+  "birth_year": 1656,
+  "death_year": 1728,
+  "wikipedia_extract": "Marin Marais (French: [maʁɛ̃ maʁɛ]; 31 May 1656, Paris – 15 August 1728, Paris) was a French composer and viol player. He studied composition with Jean-Baptiste Lully, often conducting his operas, and with master of the bass viol Monsieur de Sainte-Colombe for six months. In 1676 he was hired as a musician to the royal court of Versailles and was successful there, being appointed in 1679 as ordinaire de la chambre du roy pour la viole, a title he kept until 1725.",
+  "wikidata_id": "Q213519"
+}

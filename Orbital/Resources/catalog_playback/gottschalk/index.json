@@ -1,0 +1,63 @@
+{
+  "composer_name": "Louis Moreau Gottschalk",
+  "name_last_first": "Gottschalk, Louis Moreau",
+  "slug": "gottschalk",
+  "wiki_page": "https://en.wikipedia.org/wiki/Louis_Moreau_Gottschalk",
+  "apple_music_playlist": "",
+  "era": "Romantic",
+  "dates": "1829 – 1869",
+  "nationality": "USA",
+  "notable": false,
+  "works": [
+    {
+      "title": "Le Bananier (Chiptune)",
+      "musicxml": "musicxml/Le_Bananier_Chiptune.mxl",
+      "midi": "midi/Le_Bananier_Chiptune.mid",
+      "time_signature": "2/2",
+      "instruments": [
+        "Piano"
+      ],
+      "tempo_markings": [
+        "Presto 𝅗𝅥 = 180"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 1,
+        "n_views": 215,
+        "duration_seconds": 390.3333333137083,
+        "n_notes": 4922,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "NA",
+        "tags": "lebananier-gottschalk-chiptune-bit-impossible",
+        "musescore_url": "https://musescore.com/c9h18o2/scores/4463941",
+        "musescore_duration": "02:56"
+      },
+      "key": "E♭ major",
+      "instruments_gm": [
+        "Lead 1 (square)"
+      ],
+      "tempo_bpm": 360,
+      "n_measures": 132,
+      "n_parts": 2,
+      "n_notes": 4914,
+      "notes_per_second": 12.6,
+      "apple_music_search_query": "Gottschalk E♭ major Le Bananier (Chiptune)",
+      "parent_work_title": "Le Bananier",
+      "year_composed": 1846,
+      "wikidata_id": "Q6506518",
+      "wikidata_title": "Le Bananier",
+      "musicbrainz_id": "4b2c45da-027c-4288-87da-55654ebe4f57",
+      "imslp_id": "Le_bananier,_Op.5_(Gottschalk,_Louis_Moreau)",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Gottschalk%20Le%20Bananier%20%28Chiptune%29",
+      "display_title": "Le Bananier"
+    }
+  ],
+  "birth_year": 1829,
+  "death_year": 1869,
+  "wikipedia_extract": "Louis Moreau Gottschalk (May 8, 1829 – December 18, 1869) was an American composer, pianist, and virtuoso performer of his own romantic piano works. He spent most of his working career outside the United States.",
+  "wikidata_id": "Q550701"
+}

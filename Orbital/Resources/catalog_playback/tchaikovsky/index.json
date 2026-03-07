@@ -1,0 +1,915 @@
+{
+  "composer_name": "Pyotr Ilyich Tchaikovsky",
+  "name_last_first": "Tchaikovsky, Pyotr Ilyich",
+  "slug": "tchaikovsky",
+  "wiki_page": "https://en.wikipedia.org/wiki/Pyotr_Ilyich_Tchaikovsky",
+  "apple_music_playlist": "https://music.apple.com/mk/playlist/pl.0c4ca6824b214ae5973c50cc1d651519",
+  "era": "Late- / Post-Romantic",
+  "dates": "1840 – 1893",
+  "nationality": "RUS",
+  "notable": true,
+  "works": [
+    {
+      "title": "Swan Lake (ballet) Op.20",
+      "musicxml": "musicxml/Swan_Lake_Theme.mxl",
+      "midi": "midi/Swan_Lake_Theme.mid",
+      "catalog_numbers": {
+        "Op": "20"
+      },
+      "time_signature": "4/4",
+      "instruments": [
+        "Flöte"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.47,
+        "n_favorites": 442,
+        "n_views": 14402,
+        "duration_seconds": 157.1253928093575,
+        "n_notes": 883,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": false,
+        "genres": "classical",
+        "tags": "swanlake-swan-lake-pyotr-pjotr-peter-iljitsch-ilyich-tchaikovsky-tschaikovsky-tschaikovski-theme-swanlaketheme-ballet-flute-flte-trio",
+        "musescore_url": "https://musescore.com/user/3887781/scores/3737971",
+        "musescore_duration": "02:45"
+      },
+      "key": "E♭ major",
+      "instruments_gm": [
+        "Flute"
+      ],
+      "tempo_bpm": 80,
+      "n_measures": 55,
+      "n_parts": 3,
+      "n_notes": 861,
+      "notes_per_second": 5.5,
+      "apple_music_search_query": "Tchaikovsky Op 20 E♭ major",
+      "parent_work_title": "Swan Lake Theme",
+      "wikidata_id": "Q1093555",
+      "wikidata_title": "Swan Lake",
+      "wikidata_match_method": "title_substring",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Tchaikovsky%20Op%2020",
+      "display_title": "Swan Lake"
+    },
+    {
+      "title": "Sleeping Beauty",
+      "musicxml": "musicxml/Sleeping_Beauty.mxl",
+      "midi": "midi/Sleeping_Beauty.mid",
+      "time_signature": "3/4",
+      "instruments": [
+        "Piano"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 23,
+        "n_views": 546,
+        "duration_seconds": 248.72704660544457,
+        "n_notes": 3937,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": false,
+        "genres": "NA",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/6112376/scores/4014186",
+        "musescore_duration": "04:05"
+      },
+      "key": "B♭ major",
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 220,
+      "n_measures": 300,
+      "n_parts": 2,
+      "n_notes": 3836,
+      "notes_per_second": 15.4,
+      "apple_music_search_query": "Tchaikovsky B♭ major Sleeping Beauty",
+      "parent_work_title": "Sleapy Beauty",
+      "wikidata_id": "Q110931368",
+      "wikidata_title": "The Sleeping Beauty, op. 66a",
+      "musicbrainz_id": "f9764922-5c35-41c6-8fad-6d6ecc0bd3e4",
+      "imslp_id": "The_Sleeping_Beauty_(suite),_Op.66a_(Tchaikovsky,_Pyotr)",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Tchaikovsky%20Sleeping%20Beauty",
+      "display_title": "The Sleeping Beauty, op. 66a"
+    },
+    {
+      "title": "Swan Lake Theme - Tchaikovsky",
+      "musicxml": "musicxml/Swan_Lake_Theme_-_Tchaikovsky.mxl",
+      "midi": "midi/Swan_Lake_Theme_-_Tchaikovsky.mid",
+      "time_signature": "4/4",
+      "instruments": [
+        "Piano"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.74,
+        "n_favorites": 4699,
+        "n_views": 98826,
+        "duration_seconds": 76.1998475983236,
+        "n_notes": 326,
+        "complexity": "1",
+        "is_original": false,
+        "is_best_arrangement": false,
+        "genres": "classical",
+        "tags": "tchaikovsky-swanlake-swantheme-ballet-piano",
+        "musescore_url": "https://musescore.com/willdsc/scores/5964065",
+        "musescore_duration": "01:17"
+      },
+      "key": "D major",
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 100,
+      "n_measures": 32,
+      "n_parts": 1,
+      "n_notes": 326,
+      "notes_per_second": 4.3,
+      "apple_music_search_query": "Tchaikovsky D major Swan Lake Theme - Tchaikovsky",
+      "parent_work_title": "Swan Lake",
+      "wikidata_id": "Q7653459",
+      "wikidata_title": "Swan Lake",
+      "musicbrainz_id": "13867eb1-42c2-45ed-97d9-e1cc85b006fd",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Tchaikovsky%20Swan%20Lake%20Theme%20-",
+      "display_title": "Swan Lake"
+    },
+    {
+      "title": "Romeo and Juliet Fantasy Overture Tchaikovsky",
+      "musicxml": "musicxml/Romeo_and_Juliet_Fantasy_Overture_Tchaikovsky.mxl",
+      "midi": "midi/Romeo_and_Juliet_Fantasy_Overture_Tchaikovsky.mid",
+      "form": "Overture",
+      "time_signature": "4/4",
+      "instruments": [
+        "Piccolo",
+        "Flute",
+        "Oboe",
+        "A Clarinet",
+        "English Horn",
+        "Bassoon",
+        "Horn in F",
+        "C Trumpet",
+        "Trombone",
+        "Tuba",
+        "Timpani",
+        "Cymbal",
+        "Bass Drum",
+        "Harp",
+        "Violin I",
+        "Violin II",
+        "Viola",
+        "Violoncello",
+        "Contrabass"
+      ],
+      "tempo_markings": [
+        "Andante non tanto quasi moderato",
+        "Allegro",
+        "Molto meno mosso",
+        "Moderato assai"
+      ],
+      "movements": [
+        {
+          "start_measure": 1,
+          "tempo_marking": "Andante non tanto quasi moderato"
+        },
+        {
+          "start_measure": 90,
+          "tempo_marking": "Allegro"
+        },
+        {
+          "start_measure": 96,
+          "tempo_marking": "Molto meno mosso"
+        },
+        {
+          "start_measure": 112,
+          "tempo_marking": "Allegro"
+        },
+        {
+          "start_measure": 485,
+          "tempo_marking": "Moderato assai"
+        }
+      ],
+      "is_multi_movement": true,
+      "pdmx": {
+        "rating": 4.81,
+        "n_favorites": 154,
+        "n_views": 10072,
+        "duration_seconds": 1165.1327703557429,
+        "n_notes": 26559,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "romeo-juliet-overture-tchaikovsky",
+        "musescore_url": "https://musescore.com/user/339571/scores/909136",
+        "musescore_duration": "18:22"
+      },
+      "key": "A major",
+      "key_changes": [
+        "A major",
+        "A♭ major",
+        "C major",
+        "D major",
+        "D♭ major",
+        "B major"
+      ],
+      "instruments_gm": [
+        "Piccolo",
+        "Flute",
+        "Oboe",
+        "Clarinet",
+        "English Horn",
+        "Bassoon",
+        "French Horn",
+        "Trumpet",
+        "Trombone",
+        "Tuba",
+        "Timpani",
+        "Percussion",
+        "Orchestral Harp",
+        "Violin",
+        "Viola",
+        "Cello",
+        "Contrabass"
+      ],
+      "tempo_bpm": 80,
+      "n_measures": 522,
+      "n_parts": 20,
+      "n_notes": 25605,
+      "notes_per_second": 22.0,
+      "apple_music_search_query": "Tchaikovsky A major Romeo and Juliet Fantasy Overture Tchaikovsky",
+      "parent_work_title": "Romeo and Juliet Fantasy Overtune",
+      "movement_title": "Subtitle",
+      "year_composed": 1880,
+      "wikidata_id": "Q763716",
+      "wikidata_title": "Romeo and Juliet",
+      "musicbrainz_id": "d33ffabe-159f-3ab0-ba87-e497d7dd4b32",
+      "imslp_id": "Romeo_and_Juliet_(overture-fantasia)_(Tchaikovsky,_Pyotr)",
+      "wikidata_match_method": "title_substring",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Tchaikovsky%20Romeo%20and%20Juliet%20Fantasy%20Overture",
+      "display_title": "Romeo and Juliet"
+    },
+    {
+      "title": "Waltz of the Flowers",
+      "musicxml": "musicxml/Waltz_of_the_Flowers.mxl",
+      "midi": "midi/Waltz_of_the_Flowers.mid",
+      "form": "Waltz",
+      "time_signature": "3/4",
+      "instruments": [
+        "Flauta Transversal",
+        "Violino",
+        "Clarinete em B♭"
+      ],
+      "tempo_markings": [
+        "- - - - - - acell.- - - - - - - - -",
+        "- - - - - - dim. - - - - - - - -",
+        "Ritardando",
+        "Poco a poco",
+        "A tempo",
+        "Accelerando",
+        "Rallentando - - - - - - - - - - - - - - - - - -"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.83,
+        "n_favorites": 19,
+        "n_views": 489,
+        "duration_seconds": 380.7872980245121,
+        "n_notes": 2770,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "tchaikovsky",
+        "musescore_url": "https://musescore.com/1g0rt30d0r0/scores/5930685",
+        "musescore_duration": "06:21"
+      },
+      "key": "E♭ major",
+      "instruments_gm": [
+        "Flute",
+        "Violin",
+        "Clarinet"
+      ],
+      "tempo_bpm": 160,
+      "n_measures": 296,
+      "n_parts": 3,
+      "n_notes": 2763,
+      "notes_per_second": 7.3,
+      "apple_music_search_query": "Tchaikovsky E♭ major Waltz of the Flowers",
+      "wikidata_id": "Q12860108",
+      "wikidata_title": "Waltz of the Flowers",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Tchaikovsky%20Waltz%20of%20the%20Flowers",
+      "display_title": "Waltz of the Flowers"
+    },
+    {
+      "title": "Swan Lake Cello and Piano",
+      "musicxml": "musicxml/Swan_Lake_Cello_and_Piano.mxl",
+      "midi": "midi/Swan_Lake_Cello_and_Piano.mid",
+      "time_signature": "4/4",
+      "instruments": [
+        "Violoncello",
+        "Piano"
+      ],
+      "tempo_markings": [
+        "Andante"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.63,
+        "n_favorites": 1330,
+        "n_views": 30489,
+        "duration_seconds": 134.58333332982855,
+        "n_notes": 1016,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "cello-piano-swanlake-duet",
+        "musescore_url": "https://musescore.com/user/8266416/scores/4811958",
+        "musescore_duration": "02:25"
+      },
+      "key": "D major",
+      "instruments_gm": [
+        "Cello",
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 96,
+      "n_measures": 58,
+      "n_parts": 2,
+      "n_notes": 1004,
+      "notes_per_second": 7.5,
+      "apple_music_search_query": "Tchaikovsky D major Swan Lake Cello and Piano",
+      "wikidata_id": "Q1093555",
+      "wikidata_title": "Swan Lake",
+      "wikidata_match_method": "title_substring",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Tchaikovsky%20Swan%20Lake%20Cello%20and%20Piano",
+      "display_title": "Swan Lake"
+    },
+    {
+      "title": "Dance of the Sugar Plum Fairy Duet",
+      "musicxml": "musicxml/Dance_of_the_Sugar_Plum_Fairy_Duet.mxl",
+      "midi": "midi/Dance_of_the_Sugar_Plum_Fairy_Duet.mid",
+      "form": "Duet",
+      "time_signature": "4/4",
+      "instruments": [
+        "Alto Saxophone",
+        "Violoncello"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.78,
+        "n_favorites": 56,
+        "n_views": 1145,
+        "duration_seconds": 104.18200760095093,
+        "n_notes": 443,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "motionlessafternoon-motionlessafternoon-offixials-duet",
+        "musescore_url": "https://musescore.com/user/5224486/scores/5834577",
+        "musescore_duration": "01:45"
+      },
+      "key": "E major",
+      "instruments_gm": [
+        "Alto Sax",
+        "Cello"
+      ],
+      "tempo_bpm": 110,
+      "n_measures": 48,
+      "n_parts": 2,
+      "n_notes": 443,
+      "notes_per_second": 4.3,
+      "apple_music_search_query": "Tchaikovsky E major Dance of the Sugar Plum Fairy Duet",
+      "parent_work_title": "Dance of the Sugar Plum Fairy",
+      "wikidata_id": "Q10264139",
+      "wikidata_title": "Dance of the Sugar Plum Fairy",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Tchaikovsky%20Dance%20of%20the%20Sugar%20Plum%20Fairy%20Duet",
+      "display_title": "Dance of the Sugar Plum Fairy"
+    },
+    {
+      "title": "Pyotr Tchaikovsky - Violin Concerto Op. 35",
+      "musicxml": "musicxml/Pyotr_Tchaikovsky_-_Violin_Concerto_Op_35.mxl",
+      "midi": "midi/Pyotr_Tchaikovsky_-_Violin_Concerto_Op_35.mid",
+      "catalog_numbers": {
+        "Op": "35"
+      },
+      "form": "Concerto",
+      "time_signature": "4/4",
+      "instruments": [
+        "Flauto I",
+        "Flauto II",
+        "Oboe I",
+        "Oboe II",
+        "Clarinetto in A I",
+        "Clarinetto in A II",
+        "Clarinetto in B I",
+        "Clarinetto in B II",
+        "Fagotto I",
+        "Fagotto II",
+        "Corno in F I",
+        "Corno in F II",
+        "Corno in F III",
+        "Corno in F IV",
+        "Tromba in D I",
+        "Tromba in D II",
+        "Timpani in A,D",
+        "Violino solo",
+        "Violini I",
+        "Violini II",
+        "Viole",
+        "Violoncelli",
+        "Contrabassi"
+      ],
+      "tempo_markings": [
+        "Allegro moderato ♩ = 126",
+        "Moderato assai (♩ = 80)"
+      ],
+      "movements": [
+        {
+          "start_measure": 1,
+          "tempo_marking": "Allegro moderato unicodeNoteQuarterUp = 126"
+        },
+        {
+          "start_measure": 28,
+          "tempo_marking": "Moderato assai (unicodeNoteQuarterUp = 80)"
+        }
+      ],
+      "is_multi_movement": true,
+      "pdmx": {
+        "rating": 4.92,
+        "n_favorites": 127,
+        "n_views": 5598,
+        "duration_seconds": 1549.1823157722897,
+        "n_notes": 20767,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/660611/scores/4988702",
+        "musescore_duration": "18:31"
+      },
+      "key": "D major",
+      "instruments_gm": [
+        "Flute",
+        "Oboe",
+        "Clarinet",
+        "Bassoon",
+        "French Horn",
+        "Trumpet",
+        "Timpani",
+        "Violin",
+        "String Ensemble 1"
+      ],
+      "tempo_bpm": 126,
+      "n_measures": 351,
+      "n_parts": 23,
+      "n_notes": 19964,
+      "notes_per_second": 12.9,
+      "apple_music_search_query": "Tchaikovsky Op 35 D major",
+      "parent_work_title": "Violin Concerto Op. 35",
+      "year_composed": 1878,
+      "wikidata_id": "Q372907",
+      "wikidata_title": "Violin Concerto",
+      "musicbrainz_id": "f7136e19-4a8a-42ae-be40-01e9d78b45d5",
+      "imslp_id": "Violin_Concerto,_Op.35_(Tchaikovsky,_Pyotr)",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Tchaikovsky%20Op%2035",
+      "display_title": "Violin Concerto"
+    },
+    {
+      "title": "Swan Lake Op. 20 (Act II X/XIV. Scéne)-Pyotr Ilyich Tchaikovsky",
+      "musicxml": "musicxml/Swan_Lake_Op_20_Act_II_XXIV_Scene-Pyotr_Ilyich_Tchaikovsky.mxl",
+      "midi": "midi/Swan_Lake_Op_20_Act_II_XXIV_Scene-Pyotr_Ilyich_Tchaikovsky.mid",
+      "catalog_numbers": {
+        "Op": "20"
+      },
+      "time_signature": "4/4",
+      "instruments": [
+        "Piccolo",
+        "Flute 1",
+        "Flute 2",
+        "Oboe 1",
+        "Oboe 2",
+        "Bassoon 1",
+        "Bassoon 2",
+        "B♭ Clarinet 1",
+        "B♭ Clarinet 2",
+        "Bass Clarinet",
+        "Alto Saxophone 1 &amp;amp; 2",
+        "Alto Saxophone 3 &amp;amp; 4",
+        "Tenor Saxophone 1 &amp;amp; 2",
+        "Baritone Saxophone 1 &amp;amp; 2",
+        "B♭ Trumpet 1",
+        "B♭ Trumpet 2",
+        "F Horn 1 &amp;amp; 2",
+        "F Horn 3 &amp;amp; 4",
+        "Trombone 1",
+        "Trombone 2",
+        "Euphonium",
+        "Tuba"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.89,
+        "n_favorites": 17,
+        "n_views": 350,
+        "duration_seconds": 180.51412331253528,
+        "n_notes": 3616,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/28335048/scores/5969235",
+        "musescore_duration": "03:01"
+      },
+      "key": "E♭ major",
+      "instruments_gm": [
+        "Piccolo",
+        "Flute",
+        "Oboe",
+        "Bassoon",
+        "Clarinet",
+        "Alto Sax",
+        "Tenor Sax",
+        "Baritone Sax",
+        "Trumpet",
+        "French Horn",
+        "Trombone",
+        "Tuba",
+        "Contrabass",
+        "Timpani",
+        "Marimba"
+      ],
+      "tempo_bpm": 70,
+      "n_measures": 70,
+      "n_parts": 25,
+      "n_notes": 3601,
+      "notes_per_second": 19.9,
+      "apple_music_search_query": "Tchaikovsky Op 20 E♭ major",
+      "parent_work_title": "Swan Lake",
+      "lyricist": "Mateo Abilla",
+      "wikidata_id": "Q7653459",
+      "wikidata_title": "Swan Lake",
+      "musicbrainz_id": "13867eb1-42c2-45ed-97d9-e1cc85b006fd",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Tchaikovsky%20Op%2020",
+      "display_title": "Swan Lake"
+    },
+    {
+      "title": "Children's Album - P. I. Tchaikovsky Op. 39",
+      "musicxml": "musicxml/Childrens_Album_-_P_I_Tchaikovsky_Op_39.mxl",
+      "midi": "midi/Childrens_Album_-_P_I_Tchaikovsky_Op_39.mid",
+      "catalog_numbers": {
+        "Op": "39"
+      },
+      "time_signature": "3/4",
+      "instruments": [
+        "Piano"
+      ],
+      "tempo_markings": [
+        "Andante",
+        "Allegro",
+        "Presto",
+        "Moderato",
+        "Adagio",
+        "Allegro assai",
+        "Allegro non troppo",
+        "Vivace",
+        "Moderato assai",
+        "Molto moderato"
+      ],
+      "movements": [
+        {
+          "start_measure": 1,
+          "tempo_marking": "Andante"
+        },
+        {
+          "start_measure": 25,
+          "tempo_marking": "Allegro"
+        },
+        {
+          "start_measure": 89,
+          "tempo_marking": "Presto"
+        },
+        {
+          "start_measure": 161,
+          "tempo_marking": "Moderato"
+        },
+        {
+          "start_measure": 197,
+          "tempo_marking": "Moderato"
+        },
+        {
+          "start_measure": 245,
+          "tempo_marking": "Moderato"
+        },
+        {
+          "start_measure": 287,
+          "tempo_marking": "Adagio"
+        },
+        {
+          "start_measure": 335,
+          "tempo_marking": "Allegro assai"
+        },
+        {
+          "start_measure": 420,
+          "tempo_marking": "Allegro"
+        },
+        {
+          "start_measure": 477,
+          "tempo_marking": "Allegro non troppo"
+        },
+        {
+          "start_measure": 529,
+          "tempo_marking": "Allegro"
+        },
+        {
+          "start_measure": 559,
+          "tempo_marking": "Adagio"
+        },
+        {
+          "start_measure": 582,
+          "tempo_marking": "Vivace"
+        },
+        {
+          "start_measure": 631,
+          "tempo_marking": "Moderato"
+        },
+        {
+          "start_measure": 661,
+          "tempo_marking": "Moderato assai"
+        },
+        {
+          "start_measure": 710,
+          "tempo_marking": "Molto moderato"
+        },
+        {
+          "start_measure": 743,
+          "tempo_marking": "Molto moderato"
+        },
+        {
+          "start_measure": 769,
+          "tempo_marking": "Andante"
+        },
+        {
+          "start_measure": 805,
+          "tempo_marking": "Vivace"
+        },
+        {
+          "start_measure": 823,
+          "tempo_marking": "Moderato"
+        },
+        {
+          "start_measure": 871,
+          "tempo_marking": "Presto"
+        },
+        {
+          "start_measure": 917,
+          "tempo_marking": "Moderato"
+        },
+        {
+          "start_measure": 965,
+          "tempo_marking": "Moderato"
+        },
+        {
+          "start_measure": 993,
+          "tempo_marking": "Andante"
+        },
+        {
+          "start_measure": 1025,
+          "tempo_marking": "Moderato"
+        }
+      ],
+      "is_multi_movement": true,
+      "pdmx": {
+        "rating": 4.91,
+        "n_favorites": 300,
+        "n_views": 8352,
+        "duration_seconds": 4008.004131713416,
+        "n_notes": 18227,
+        "complexity": "2",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "pyotr-peter-ilyich-ilich-ilitch-tchaikovsky-tchaikowsky-chaykovsky-tschaikowski-child-children-album-young-piano-classical-romantic",
+        "musescore_url": "https://musescore.com/user/13502736/scores/5329984",
+        "musescore_duration": "26:17"
+      },
+      "key": "G major",
+      "key_changes": [
+        "G major",
+        "D major",
+        "B♭ major",
+        "E♭ major",
+        "F major",
+        "C major"
+      ],
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 60,
+      "n_measures": 1076,
+      "n_parts": 1,
+      "n_notes": 17868,
+      "notes_per_second": 4.5,
+      "apple_music_search_query": "Tchaikovsky Op 39 G major",
+      "parent_work_title": "Morning Prayer",
+      "year_composed": 1878,
+      "wikidata_id": "Q1141678",
+      "wikidata_title": "Children’s Album",
+      "musicbrainz_id": "1642ebe0-91f2-4c89-bdab-0a162b18b2b8",
+      "imslp_id": "Children's_Album,_Op.39_(Tchaikovsky,_Pyotr_Ilyich)",
+      "wikidata_match_method": "title_substring",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Tchaikovsky%20Op%2039",
+      "display_title": "Children’s Album"
+    },
+    {
+      "title": "Waltz of the Snowflakes - Tchaikovsky",
+      "musicxml": "musicxml/Waltz_of_the_Snowflakes_-_Tchaikovsky.mxl",
+      "midi": "midi/Waltz_of_the_Snowflakes_-_Tchaikovsky.mid",
+      "form": "Waltz",
+      "time_signature": "3/4",
+      "instruments": [
+        "Flute",
+        "Piccolo",
+        "Oboe",
+        "English Horn",
+        "Clarinet",
+        "Bass Clarinet",
+        "Bassoon",
+        "Horn in F",
+        "Trumpet",
+        "Trombone",
+        "Tuba",
+        "Timpani",
+        "Triangle",
+        "Crash Cymbal",
+        "Glockenspiel",
+        "Harp",
+        "Voice",
+        "Violins",
+        "Violas",
+        "Violoncellos",
+        "Contrabasses"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.44,
+        "n_favorites": 25,
+        "n_views": 3204,
+        "duration_seconds": 622.7450396665406,
+        "n_notes": 17661,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "tchaikovsky-thenutcracker-ballet-christmas-waltzofthesnowflakes-snow-transcription",
+        "musescore_url": "https://musescore.com/user/13976176/scores/4982042",
+        "musescore_duration": "06:26"
+      },
+      "key": "G major",
+      "key_changes": [
+        "G major",
+        "E major"
+      ],
+      "instruments_gm": [
+        "Flute",
+        "Piccolo",
+        "Oboe",
+        "English Horn",
+        "Clarinet",
+        "Bassoon",
+        "French Horn",
+        "Trumpet",
+        "Trombone",
+        "Tuba",
+        "Timpani",
+        "Percussion",
+        "Glockenspiel",
+        "Orchestral Harp",
+        "Choir Aahs",
+        "String Ensemble 1"
+      ],
+      "tempo_bpm": 120,
+      "n_measures": 408,
+      "n_parts": 21,
+      "n_notes": 16690,
+      "notes_per_second": 26.8,
+      "apple_music_search_query": "Tchaikovsky G major Waltz of the Snowflakes - Tchaikovsky",
+      "parent_work_title": "Waltz of the Snowflakes",
+      "wikidata_id": "Q137410885",
+      "wikidata_title": "Waltz of the Snowflakes",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Tchaikovsky%20Waltz%20of%20the%20Snowflakes%20-",
+      "display_title": "Waltz of the Snowflakes"
+    },
+    {
+      "title": "The Seasons:  Op. 37b XII. December",
+      "musicxml": "musicxml/December-Christmas_Opus_37_No_12.mxl",
+      "midi": "midi/December-Christmas_Opus_37_No_12.mid",
+      "time_signature": "3/4",
+      "instruments": [
+        "Piano"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.81,
+        "n_favorites": 82,
+        "n_views": 4382,
+        "duration_seconds": 422.0838443516188,
+        "n_notes": 2735,
+        "complexity": "2",
+        "is_original": false,
+        "is_best_arrangement": false,
+        "genres": "classical",
+        "tags": "tchaikovsky-christmas-december-waltz",
+        "musescore_url": "https://musescore.com/user/75786/scores/1518501",
+        "musescore_duration": "04:57"
+      },
+      "key": "A♭ major",
+      "key_changes": [
+        "A♭ major",
+        "E major"
+      ],
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 170,
+      "n_measures": 278,
+      "n_parts": 1,
+      "n_notes": 2652,
+      "notes_per_second": 6.3,
+      "apple_music_search_query": "Tchaikovsky A♭ major The Seasons: Op. 37b XII. December",
+      "wikidata_id": "Q21148885",
+      "wikidata_title": "Seasons",
+      "wikidata_match_method": "title_tokens",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Tchaikovsky%20The%20Seasons%3A%20Op.%2037b%20XII.%20December",
+      "display_title": "Seasons"
+    },
+    {
+      "title": "Romance Opus 16 - No. 1",
+      "musicxml": "musicxml/Romance_Opus_16_-_No_1.mxl",
+      "midi": "midi/Romance_Opus_16_-_No_1.mid",
+      "time_signature": "2/4",
+      "instruments": [
+        "Soprano",
+        "Piano"
+      ],
+      "tempo_markings": [
+        "Andantino"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.85,
+        "n_favorites": 3,
+        "n_views": 181,
+        "duration_seconds": 352.9999999905867,
+        "n_notes": 1346,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "NA",
+        "tags": "tchaikovsky-romance",
+        "musescore_url": "https://musescore.com/user/24394276/scores/5377856",
+        "musescore_duration": "03:04"
+      },
+      "key": "C♭ major",
+      "key_changes": [
+        "C♭ major",
+        "B major"
+      ],
+      "instruments_gm": [
+        "Choir Aahs",
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 60,
+      "n_measures": 90,
+      "n_parts": 2,
+      "n_notes": 1322,
+      "notes_per_second": 3.7,
+      "apple_music_search_query": "Tchaikovsky C♭ major Romance Opus 16 - No. 1",
+      "year_composed": 1868,
+      "wikidata_id": "Q3440999",
+      "wikidata_title": "Romance in F minor",
+      "musicbrainz_id": "60507d3c-2d04-454d-ac73-f07705c02e12",
+      "imslp_id": "Romance,_Op.5_(Tchaikovsky,_Pyotr)",
+      "wikidata_match_method": "title_tokens",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Tchaikovsky%20Romance%20Opus%2016%20-%20No.%201",
+      "display_title": "Romance in F minor"
+    }
+  ],
+  "birth_year": 1840,
+  "death_year": 1893,
+  "catalog_type": "Op",
+  "wikipedia_extract": "Pyotr Ilyich Tchaikovsky (  chy-KOF-skee; 7 May 1840 – 6 November 1893) was a Russian composer of the Romantic period. He was the first Russian composer whose music made a lasting impression internationally. Tchaikovsky wrote some of the most popular concert and theatrical music in the classical repertoire, including the 1812 Overture, his First Piano Concerto, the Violin Concerto, the Romeo and Juliet Overture-Fantasy, several symphonies, the opera Eugene Onegin, and the ballets Swan Lake, T...",
+  "wikipedia_compositions_url": "https://en.wikipedia.org/wiki/List_of_compositions_by_Pyotr_Ilyich_Tchaikovsky",
+  "wikidata_id": "Q7315",
+  "apple_music_artist_id": "262899",
+  "apple_music_classical_url": "https://classical.music.apple.com/us/artist/262899"
+}

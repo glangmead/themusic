@@ -1,0 +1,337 @@
+{
+  "composer_slug": "herbert",
+  "composer_qid": "Q1275145",
+  "work_count": 47,
+  "midi_file_count": 1,
+  "works": [
+    {
+      "qid": "Q137907765",
+      "title": "Irish Rhapsody",
+      "imslp_id": "Irish_Rhapsody_(Herbert,_Victor)",
+      "pdf_filename": "PMLP405542-Herbert-IrishRhapsody-Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/victor-herbert-1859-pp72",
+      "date": "1892-00-00"
+    },
+    {
+      "qid": "Q116846295",
+      "title": "Babette",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Babette_(musical)",
+      "wikipedia_extract": "Babette is an operetta with a libretto by Harry B. Smith and music by Victor Herbert, which premiered on Broadway in 1903.",
+      "pageviews_yearly": 1422,
+      "date": "1903-00-00"
+    },
+    {
+      "qid": "Q6885735",
+      "title": "Mlle. Modiste",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/victor-herbert-1859-pp16",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mlle._Modiste",
+      "wikipedia_extract": "Mlle. Modiste is an operetta in two acts composed by Victor Herbert with a libretto by Henry Blossom. It concerns hat shop girl Fifi, who longs to be an opera singer, but who is such a good hat seller that her employer, Mme. Cecil, discourages her in her ambitions and exploits her commercial talents. Also, Fifi loves Etienne de Bouvray, who returns her love, but his uncle, Count Henri, opposes their union. The operetta features the song \"Kiss Me Again\".",
+      "pageviews_yearly": 4478,
+      "date": "1905-00-00"
+    },
+    {
+      "qid": "Q6092990",
+      "title": "Italian Street Song",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Italian_Street_Song",
+      "wikipedia_extract": "\"Italian Street Song\" is a popular song written by Victor Herbert (music) and Rida Johnson Young (lyrics) in 1910.",
+      "pageviews_yearly": 2432,
+      "date": "1910-00-00"
+    },
+    {
+      "qid": "Q6981145",
+      "title": "Naughty Marietta",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/victor-herbert-1859-pp27",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Naughty_Marietta_(operetta)",
+      "wikipedia_extract": "Naughty Marietta is an operetta in two acts, with libretto by Rida Johnson Young and music by Victor Herbert, written as a vehicle for Emma Trentini and produced by Oscar Hammerstein I. Set in 18th century New Orleans, it tells how Captain Richard Warrington is commissioned to unmask and capture a notorious French pirate calling himself \"Bras Pique\". Warrington is helped and hindered by a high-spirited runaway, Contessa Marietta. The score includes several well-known songs, including \"Ah! Sweet Mystery of Life\".",
+      "pageviews_yearly": 15491,
+      "date": "1910-00-00",
+      "movements": [
+        {
+          "qid": "Q6092990"
+        }
+      ]
+    },
+    {
+      "qid": "Q1563380",
+      "title": "Babes in Toyland",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Toyland.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q2064189",
+      "title": "Babes in Toyland",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/victor-herbert-1859-pp11",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Babes_in_Toyland_(1934_film)",
+      "wikipedia_extract": "Babes in Toyland is a Laurel and Hardy musical Christmas film released on November 30, 1934. The film is also known by the alternative titles Laurel and Hardy in Toyland, Revenge Is Sweet, and March of the Wooden Soldiers, a 73-minute abridged version.",
+      "pageviews_yearly": 85705
+    },
+    {
+      "qid": "Q2877834",
+      "title": "Babes in Toyland",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/victor-herbert-1859-pp11",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Babes_in_Toyland_(1961_film)",
+      "wikipedia_extract": "Babes in Toyland is a 1961 American Christmas musical fantasy film directed by Jack Donohue and produced by Walt Disney Productions. It stars Ray Bolger as Barnaby, Tommy Sands as Tom Piper, Annette Funicello as Mary Contrary, and Ed Wynn as the Toymaker.",
+      "pageviews_yearly": 122692
+    },
+    {
+      "qid": "Q5306334",
+      "title": "Dream City",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dream_City",
+      "wikipedia_extract": "Dream City is an operetta in two acts with music by Victor Herbert and a libretto by Edgar Smith. The show contained a one-act musical burlesque The Magic Knight which parodies Richard Wagner's opera Lohengrin.",
+      "pageviews_yearly": 2239
+    },
+    {
+      "qid": "Q5306416",
+      "title": "Dream On (An Indian Lullaby)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dream_On_(An_Indian_Lullaby)",
+      "wikipedia_extract": "\"Dream On \" is a popular song written by B.G. DeSylva with music composed by Victor Herbert. The song is a Cherokee mother's lullaby to her child. The lyrics as first written are:",
+      "pageviews_yearly": 967
+    },
+    {
+      "qid": "Q3032157",
+      "title": "Eileen",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/victor-herbert-1859-pp39",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Eileen_(opera)",
+      "wikipedia_extract": "Eileen is a comic opera in three acts with music by Victor Herbert and lyrics and book by Henry Blossom, based loosely on the 1835 novel Rory O'More by Herbert's grandfather, Samuel Lover. Set in 1798, the story concerns an Irish revolutionary arrested by the British for treason. Eileen, his nobly born sweetheart, helps him to escape by disguising him as a servant.",
+      "pageviews_yearly": 1779
+    },
+    {
+      "qid": "Q54983221",
+      "title": "I list the trill in golden throat"
+    },
+    {
+      "qid": "Q54983277",
+      "title": "In my dreams"
+    },
+    {
+      "qid": "Q6021703",
+      "title": "Indian Summer",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/victor-herbert-1859-pp110",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indian_Summer_(Victor_Herbert_song)",
+      "wikipedia_extract": "\"Indian Summer\" is an American standard originally written as a piano piece by the prolific composer Victor Herbert. Al Dubin wrote lyrics for the tune in 1939, twenty years after Herbert wrote the tune.",
+      "pageviews_yearly": 5804
+    },
+    {
+      "qid": "Q19068116",
+      "title": "Indian Summer",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/victor-herbert-1859-pp110"
+    },
+    {
+      "qid": "Q3197497",
+      "title": "Kiss Me Again",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kiss_Me_Again_(1931_film)",
+      "wikipedia_extract": "Kiss Me Again  is a 1931 American pre-Code musical operetta film filmed entirely in Technicolor. It was originally released in the United States as Toast of the Legion late in 1930, but was quickly withdrawn when Warner Bros. Pictures realized that the public had grown weary of musicals. The Warner Bros. believed that this attitude would only last for a few months, but, when the public proved obstinate, they reluctantly re-released the film early in 1931 after making a few cuts to the film.",
+      "pageviews_yearly": 4554
+    },
+    {
+      "qid": "Q54983248",
+      "title": "Lonely am I"
+    },
+    {
+      "qid": "Q8012710",
+      "title": "Madeleine",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Madeleine_(opera)",
+      "wikipedia_extract": "Madeleine is an opera in one act by Victor Herbert set to a libretto by Grant Stewart, after the French play Je dîne chez ma mère by Adrien Decourcelle and Lambert-Thiboust. It premiered at the Metropolitan Opera in New York on 24 January 1914 with Frances Alda in the title role.",
+      "pageviews_yearly": 2193
+    },
+    {
+      "qid": "Q104829669",
+      "title": "Mantovani and His Orchestra Play the Music of Victor Herbert",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mantovani_and_His_Orchestra_Play_the_Music_of_Victor_Herbert",
+      "wikipedia_extract": "Mantovani and His Orchestra Play the Music of Victor Herbert is an album of music composed by Victor Herbert and performed by Mantovani and His Orchestra. It was released in 1953 by London Recordings. On June 6, 1953, it was listed by Billboard magazine as the best selling popular album in the United States.",
+      "pageviews_yearly": 622
+    },
+    {
+      "qid": "Q6875962",
+      "title": "Miss 1917",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miss_1917",
+      "wikipedia_extract": "Miss 1917 is a musical revue with a book by Guy Bolton and P. G. Wodehouse, music by Jerome Kern, Victor Herbert and others, and lyrics by Harry B. Smith, Otto Harbach, Henry Blossom and others. Made up of a string of vignettes, the show features songs from such musicals as The Wizard of Oz, Three Twins, Babes in Toyland, Ziegfeld Follies and The Belle of New York.",
+      "pageviews_yearly": 2719
+    },
+    {
+      "qid": "Q8012589",
+      "title": "Miss Dolly Dollars",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miss_Dolly_Dollars",
+      "wikipedia_extract": "\nMiss Dolly Dollars is a musical comedy written in two acts with the book and lyrics by Harry B. Smith and music by Victor Herbert. The musical concerns a wealthy American girl in Europe, who is sought after by bankrupt aristocrats. Its score includes a few famous songs such as \"A Woman is Only a Woman \".",
+      "pageviews_yearly": 1502
+    },
+    {
+      "qid": "Q6980200",
+      "title": "Natoma",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/victor-herbert-1859-pp29",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Natoma_(opera)",
+      "wikipedia_extract": "Natoma is a 1911 opera with music by Victor Herbert, famous for his operettas, and libretto by Joseph D. Redding. It is a serious full-scale grand opera set in Santa Barbara, California in the \"Spanish days\" of 1820; the story and music are colored by \"Indian\" and Spanish themes. It was given its premiere performances by the Chicago Grand Opera Company, first in Philadelphia, on February 25, 1911 and in New York City at the Metropolitan Opera House on February 28, 1911.",
+      "pageviews_yearly": 2361
+    },
+    {
+      "qid": "Q54983280",
+      "title": "No country can my own outvie"
+    },
+    {
+      "qid": "Q54983199",
+      "title": "O child of love!"
+    },
+    {
+      "qid": "Q54983235",
+      "title": "O wondrous night!"
+    },
+    {
+      "qid": "Q7243811",
+      "title": "Prince Ananias",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Prince_Ananias",
+      "wikipedia_extract": "Prince Ananias was the first operetta composed by Victor Herbert. The libretto is by Francis Neilson. It was first produced by a troupe called \"The Bostonians\" at The Broadway Theatre on November 20, 1894, directed by Jerome Sykes. It remained in their repertoire for three seasons and was given more than 300 performances in all. A modest success at first, it did well on tour.",
+      "pageviews_yearly": 1985
+    },
+    {
+      "qid": "Q2214688",
+      "title": "Sally",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sally_(musical)",
+      "wikipedia_extract": "Sally is a musical comedy with music by Jerome Kern, lyrics by Clifford Grey and book by Guy Bolton, with additional lyrics by Buddy De Sylva, Anne Caldwell and P. G. Wodehouse. The plot hinges on a mistaken identity: Sally, a waif, is a dishwasher at the Alley Inn in New York City. She poses as a famous foreign ballerina and rises to fame through joining the Ziegfeld Follies. There is a rags to riches story, a ballet as a centrepiece, and a wedding as a finale. \"Look for the Silver Lining\" continues to be one of Kern's most familiar songs. The song is lampooned by another song, \"Look for a Sky of Blue,\" in Rick Besoyan's satirical 1959 musical Little Mary Sunshine.",
+      "pageviews_yearly": 8121,
+      "movements": [
+        {
+          "qid": "Q1869683"
+        }
+      ]
+    },
+    {
+      "qid": "Q1162937",
+      "title": "Sweethearts",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/victor-herbert-1859-pp33",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sweethearts_(1938_film)",
+      "wikipedia_extract": "Sweethearts is a 1938 American Technicolor musical romance film directed by W.S. Van Dyke and starring Jeanette MacDonald and Nelson Eddy. The screenplay, by Dorothy Parker and Alan Campbell, uses the “play within a play” device: a Broadway production of the 1913 Victor Herbert operetta is the setting for another pair of sweethearts, the stars of the show. It was the first color film for Nelson or Jeanette. It was their first film together without uniforms or period costumes.",
+      "pageviews_yearly": 16030
+    },
+    {
+      "qid": "Q7655717",
+      "title": "Sweethearts",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/victor-herbert-1859-pp33",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sweethearts_(musical)",
+      "wikipedia_extract": "Sweethearts is an operetta or musical play in two acts with music by Victor Herbert, lyrics by Robert B. Smith and book by Harry B. Smith and Fred de Gresac.",
+      "pageviews_yearly": 3673
+    },
+    {
+      "qid": "Q54995661",
+      "title": "The Ameer"
+    },
+    {
+      "qid": "Q17383398",
+      "title": "The Century Girl",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/victor-herbert-1859-pp37",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Century_Girl",
+      "wikipedia_extract": "The Century Girl is a musical comedy revue with music by Victor Herbert and Irving Berlin, and lyrics by Henry Blossom and Berlin.",
+      "pageviews_yearly": 2214,
+      "movements": [
+        {
+          "qid": "Q19034792"
+        }
+      ]
+    },
+    {
+      "qid": "Q7730918",
+      "title": "The Dream Girl",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Dream_Girl_(operetta)",
+      "wikipedia_extract": "\n\nThe Dream Girl is an operetta in three acts with music by Victor Herbert and book by Rida Johnson Young and Harold Atteridge. Based on the 1906 play The Road to Yesterday, by Beulah Marie Dix and Evelyn Greenleaf Sutherland, its satiric story concerns reincarnation. Additional music was written by Sigmund Romberg. The piece was Victor Herbert's last musical composition, and the work was produced posthumously on Broadway in 1924.",
+      "pageviews_yearly": 1821
+    },
+    {
+      "qid": "Q134740073",
+      "title": "The Enchantress",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/victor-herbert-1859-pp31",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Enchantress_(operetta)",
+      "wikipedia_extract": "The Enchantress is an operetta in two acts with music by Victor Herbert, lyrics by Harry B. Smith and a book by Fred de Gresac. To prevent spoiled Prince Ivan from ascending to his rightful throne, Zergovia's regent and war minister scheme to have him \"enchanted\" by an alluring opera singer, Vivien Savary, as marriage to a commoner would require him to abdicate. The head of the secret service helps to thwart the plan, as does Vivien, who falls for the prince; meanwhile, several princesses and an American heiress also vie for the prince's hand.",
+      "pageviews_yearly": 7061
+    },
+    {
+      "qid": "Q7733213",
+      "title": "The Fall of a Nation",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Fall_of_a_Nation",
+      "wikipedia_extract": "The Fall of a Nation is a 1916 American silent drama film directed by Thomas Dixon Jr., and a sequel to the 1915 film The Birth of a Nation, directed by D. W. Griffith. Dixon, Jr. attempted to cash in on the success of the controversial first film. The Fall of a Nation is considered to be the first ever feature-length film sequel, though it was predated by short film sequels such as The Little Train Robbery and Sherlock Holmes II: Raffles Escaped from Prison. Based upon Dixon's novel The Fall of a Nation, the film is now lost, although the complete score survives.",
+      "pageviews_yearly": 16116
+    },
+    {
+      "qid": "Q7734897",
+      "title": "The Fortune Teller",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/victor-herbert-1859-pp6",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Fortune_Teller_(operetta)",
+      "wikipedia_extract": "The Fortune Teller is an operetta in three acts composed by Victor Herbert, with a libretto by Harry B. Smith. After a brief tryout in Toronto, it premiered on Broadway on September 26, 1898, at Wallack's Theatre and ran for 40 performances. Star Alice Nielsen and many of the original company traveled to London, where the piece opened at the Shaftesbury Theatre on April 9, 1901, running for 88 performances. It was revived in New York on November 4, 1929, at Jolson's 59th Street Theatre, starring Tessa Kosta, and ran for 16 performances. The piece continued to be revived, including by the Light Opera of Manhattan in the late 20th century and the Comic Opera Guild in the early 21st century.",
+      "pageviews_yearly": 3889
+    },
+    {
+      "qid": "Q7749443",
+      "title": "The Magic Knight",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Magic_Knight",
+      "wikipedia_extract": "\nThe Magic Knight is a one-act Victorian burlesque with music by Victor Herbert and a libretto by Edgar Smith. The piece parodies Wagner's opera Lohengrin.",
+      "pageviews_yearly": 1513
+    },
+    {
+      "qid": "Q120466348",
+      "title": "The Prima Donna",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Prima_Donna",
+      "wikipedia_extract": "The Prima Donna is a comic opera in two acts with music by Victor Herbert and a libretto by Henry Blossom. Written as a starring vehicle for Fritzi Scheff, the work premiered at the Studebaker Theater in Chicago on October 5, 1908. The production moved to Broadway where it had its New York City debut at the Knickerbocker Theatre on November 30, 1908. It ran at that theatre for total of 72 performances; closing on January 30, 1909. The original production was produced by Charles Dillingham, staged by Fred G. Latham, and conducted by musical director John Lund. The sets were designed by Homer Emens, and the costumes were created by Elsie de Wolfe. The leading cast included Fritzi Scheff as Mlle. Athenee, a.k.a. \"The Prima Donna\"; Donald Hall as her love interest, Lieutenant Fernand Drouillard; William K. Harcourt as Athenee's thwarted suitor, Captain Bordenave; James E. Sullivan as the French music hall impresario, Herr Max Gundelfinger; and W. J. Ferguson as Athenee's father, Monsieur Beaurivage.",
+      "pageviews_yearly": 846
+    },
+    {
+      "qid": "Q7758309",
+      "title": "The Princess Pat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Princess_Pat",
+      "wikipedia_extract": "The Princess Pat is an operetta in three acts with music by Victor Herbert and book and lyrics by Henry Blossom. While set on Long Island, New York, the story follows the American born Princess di Montaldo, a.k.a. \"Princess Pat\", who is married to the Italian Prince Antonio di Montaldo, a.k.a. \"Prince Toto\". Unhappy that her husband ignores her, she is intent on winning back his attention and affections. Herbert wrote the piece as a vehicle for the soprano Eleanor Painter.",
+      "pageviews_yearly": 1634
+    },
+    {
+      "qid": "Q7759898",
+      "title": "The Red Mill",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/victor-herbert-1859-pp17",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Red_Mill",
+      "wikipedia_extract": "The Red Mill is an operetta written by Victor Herbert, with a libretto by Henry Blossom. The farcical story concerns two American vaudevillians who wreak havoc at an inn in the Netherlands, interfering with two marriages; but all ends well. The musical premiered on Broadway on September 24, 1906, at the Knickerbocker Theatre and ran for 274 performances, starring comedians Fred Stone and David C. Montgomery. It also had a London run and toured extensively, and in 1945 had a long-running Broadway revival. The Red Mill includes the famous songs \"Every Day is Lady's Day with Me\", \"The Streets of New York\", \"You Never Can Tell About a Woman\", and \"Because You're You\".",
+      "pageviews_yearly": 6841
+    },
+    {
+      "qid": "Q7763341",
+      "title": "The Serenade",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/victor-herbert-1859-pp70",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Serenade",
+      "wikipedia_extract": "The Serenade is an operetta with music and lyrics by Victor Herbert, and book by Harry B. Smith. Produced by a troupe called \"The Bostonians\", it premiered on Broadway on March 16, 1897 at the Knickerbocker Theatre and ran initially for 79 performances. It remained very popular into the new century, running almost continuously for the next seven years.",
+      "pageviews_yearly": 2138
+    },
+    {
+      "qid": "Q108782040",
+      "title": "The Streets of New York",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Streets_of_New_York_(In_Old_New_York)",
+      "wikipedia_extract": "\n \"The Streets of New York\" is a song originally published by M. Witmark & Sons. The song was from the musical comedy The Red Mill. The song was composed by Victor Herbert and typically plays at the end of Act II in The Red Mill.",
+      "pageviews_yearly": 1287
+    },
+    {
+      "qid": "Q7775393",
+      "title": "The Wizard of the Nile",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Wizard_of_the_Nile",
+      "wikipedia_extract": "The Wizard of the Nile is a comic opera in three acts with music by composer Victor Herbert and a libretto by Harry B. Smith. This was Herbert's second comic opera after Prince Ananias, and was his first real success.",
+      "pageviews_yearly": 1572
+    },
+    {
+      "qid": "Q54983208",
+      "title": "Two children wandered hand in hand"
+    },
+    {
+      "qid": "Q54983196",
+      "title": "When the sunlight dies"
+    },
+    {
+      "qid": "Q54983282",
+      "title": "Who dares the bronco wild defy?"
+    },
+    {
+      "qid": "Q54983263",
+      "title": "Within the hour"
+    },
+    {
+      "qid": "Q18590176",
+      "title": "Ziegfeld Follies of 1922"
+    }
+  ]
+}

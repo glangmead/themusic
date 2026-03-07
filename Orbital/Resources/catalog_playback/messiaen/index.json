@@ -1,0 +1,68 @@
+{
+  "composer_name": "Olivier Messiaen",
+  "name_last_first": "Messiaen, Olivier",
+  "slug": "messiaen",
+  "wiki_page": "https://en.wikipedia.org/wiki/Olivier_Messiaen",
+  "apple_music_playlist": "https://music.apple.com/mk/playlist/pl.4d8bb81a0ba14b9997f112aa8dc4aad6",
+  "era": "Modern",
+  "dates": "1908 – 1992",
+  "nationality": "FRA",
+  "notable": true,
+  "works": [
+    {
+      "title": "Quartet for the end of Time - 8th movement",
+      "musicxml": "musicxml/Quartet_for_the_end_of_Time_-_8th_movement.mxl",
+      "midi": "midi/Quartet_for_the_end_of_Time_-_8th_movement.mid",
+      "form": "Quartet",
+      "time_signature": "4/4",
+      "instruments": [
+        "Violino"
+      ],
+      "tempo_markings": [
+        "Extremement lent et tendre, extatique ( unicodeNote8thUp=36 env. )"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 11,
+        "n_views": 2591,
+        "duration_seconds": 333.8888888786868,
+        "n_notes": 200,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "messiaen-quartetfortheendoftime-quartet-quatour-violin-oliviermessiaen",
+        "musescore_url": "https://musescore.com/user/39439/scores/1230751",
+        "musescore_duration": "07:07"
+      },
+      "key": "E major",
+      "instruments_gm": [
+        "Violin"
+      ],
+      "tempo_bpm": 18,
+      "n_measures": 32,
+      "n_parts": 1,
+      "n_notes": 173,
+      "notes_per_second": 0.5,
+      "apple_music_search_query": "Messiaen E major Quartet for the end of Time - 8th movement",
+      "parent_work_title": "Quatour pour de fin du temps",
+      "movement_title": "Louange à Immortalité de Jesus",
+      "movement_number": "8",
+      "year_composed": 1941,
+      "wikidata_id": "Q1683795",
+      "wikidata_title": "Quatuor pour la fin du temps",
+      "musicbrainz_id": "92eab622-10fb-4613-8b95-e7ef4e76d99b",
+      "wikidata_match_method": "title_tokens",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Messiaen%20Quartet%20for%20the%20end%20of%20Time%20-%208th%20movement",
+      "display_title": "Quatuor pour la fin du temps"
+    }
+  ],
+  "birth_year": 1908,
+  "death_year": 1992,
+  "wikipedia_extract": "Olivier Eugène Prosper Charles Messiaen (UK: , US: ; French: [ɔlivje øʒɛn pʁɔspɛʁ ʃaʁl mɛsjɑ̃]; 10 December 1908 – 27 April 1992) was a French composer, organist, and ornithologist. One of the major composers of the 20th century, he was also an outstanding teacher of composition and musical analysis. Messiaen entered the Conservatoire de Paris at age 11 and studied with Paul Dukas, Maurice Emmanuel, Charles-Marie Widor and Marcel Dupré, among others.",
+  "wikipedia_compositions_url": "https://en.wikipedia.org/wiki/List_of_compositions_by_Olivier_Messiaen",
+  "wikidata_id": "Q151593",
+  "apple_music_artist_id": "271645",
+  "apple_music_classical_url": "https://classical.music.apple.com/us/artist/271645"
+}

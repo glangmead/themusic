@@ -1,0 +1,61 @@
+{
+  "composer_name": "Alessandro Scarlatti",
+  "name_last_first": "Scarlatti, Alessandro",
+  "slug": "a_scarlatti",
+  "wiki_page": "https://en.wikipedia.org/wiki/Alessandro_Scarlatti",
+  "apple_music_playlist": "",
+  "era": "Baroque",
+  "dates": "1660 – 1725",
+  "nationality": "ITA",
+  "notable": false,
+  "works": [
+    {
+      "title": "Exultate Deo (A. Scarlatti) SATB",
+      "musicxml": "musicxml/Exultate_Deo_A_Scarlatti_SATB.mxl",
+      "midi": "midi/Exultate_Deo_A_Scarlatti_SATB.mid",
+      "time_signature": "2/2",
+      "instruments": [
+        "Sopran",
+        "Alt",
+        "Tenor",
+        "Bass"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.55,
+        "n_favorites": 21,
+        "n_views": 2475,
+        "duration_seconds": 477.9999999757017,
+        "n_notes": 1350,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/sangerforum/scores/2325696",
+        "musescore_duration": "04:02"
+      },
+      "instruments_gm": [
+        "Choir Aahs"
+      ],
+      "tempo_bpm": 120,
+      "n_measures": 83,
+      "n_parts": 4,
+      "n_notes": 1328,
+      "notes_per_second": 2.8,
+      "apple_music_search_query": "Scarlatti Exultate Deo (A. Scarlatti) SATB",
+      "parent_work_title": "Exultate Deo",
+      "key": "C major",
+      "wikidata_id": "Q125356121",
+      "wikidata_title": "Exultate Deo",
+      "imslp_id": "Exultate_Deo_(Scarlatti,_Alessandro)",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Scarlatti%20Exultate%20Deo%20%28A.%20%29%20SATB",
+      "display_title": "Exultate Deo"
+    }
+  ],
+  "birth_year": 1660,
+  "death_year": 1725,
+  "wikipedia_extract": "Pietro Alessandro Gaspare Scarlatti (2 May 1660 – 22 October 1725) was an Italian Baroque composer, known especially for his operas and chamber cantatas. He is considered the most important representative of the Neapolitan school of opera. Nicknamed by his contemporaries \"the Italian Orpheus\", he divided his career between Naples and Rome; a significant part of his works was composed for the papal city.",
+  "wikidata_id": "Q183087"
+}

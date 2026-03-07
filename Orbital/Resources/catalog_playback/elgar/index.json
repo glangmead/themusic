@@ -1,0 +1,566 @@
+{
+  "composer_name": "Sir Edward Elgar",
+  "name_last_first": "Elgar, Sir Edward",
+  "slug": "elgar",
+  "wiki_page": "https://en.wikipedia.org/wiki/Sir_Edward_Elgar",
+  "apple_music_playlist": "https://music.apple.com/us/playlist/edward-elgar-essentials/pl.f1ee6be8b30d47a481e05a5347a879f1",
+  "era": "Late- / Post-Romantic",
+  "dates": "1857 – 1934",
+  "nationality": "ENG",
+  "notable": true,
+  "works": [
+    {
+      "title": "Variations on an Original Theme 'Enigma' Op.36",
+      "musicxml": "musicxml/Nimrod_Enigma_Variations.mxl",
+      "midi": "midi/Nimrod_Enigma_Variations.mid",
+      "catalog_numbers": {
+        "Op": "36"
+      },
+      "form": "Variations",
+      "time_signature": "3/4",
+      "instruments": [
+        "Clarinet in Bb",
+        "Bass Clarinet"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.75,
+        "n_favorites": 39,
+        "n_views": 2319,
+        "duration_seconds": 178.66666666180294,
+        "n_notes": 541,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "nimrod-enigmavariations-edwardelgar-clarinet-woodwind-quartet",
+        "musescore_url": "https://musescore.com/user/121331/scores/2001611",
+        "musescore_duration": "03"
+      },
+      "key": "F major",
+      "instruments_gm": [
+        "Clarinet"
+      ],
+      "tempo_bpm": 45,
+      "n_measures": 45,
+      "n_parts": 4,
+      "n_notes": 536,
+      "notes_per_second": 3.0,
+      "apple_music_search_query": "Elgar Op 36 F major",
+      "parent_work_title": "Nimrod",
+      "wikidata_id": "Q33325138",
+      "wikidata_title": "Nimrod",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Elgar%20Op%2036",
+      "display_title": "Nimrod"
+    },
+    {
+      "title": "Pomp and Circumstance March No.1 Op.39 No.1",
+      "musicxml": "musicxml/Pomp_and_Circumstance.mxl",
+      "midi": "midi/Pomp_and_Circumstance.mid",
+      "catalog_numbers": {
+        "Op": "39"
+      },
+      "form": "March",
+      "time_signature": "4/4",
+      "instruments": [
+        "Piano"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.72,
+        "n_favorites": 256,
+        "n_views": 21784,
+        "duration_seconds": 95.999807997888,
+        "n_notes": 483,
+        "complexity": "1",
+        "is_original": false,
+        "is_best_arrangement": false,
+        "genres": "classical",
+        "tags": "pompandcircumstance-edwardelgar-lorenzstechauner",
+        "musescore_url": "https://musescore.com/user/16021681/scores/4603731",
+        "musescore_duration": "01:36"
+      },
+      "key": "G major",
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 100,
+      "n_measures": 40,
+      "n_parts": 1,
+      "n_notes": 483,
+      "notes_per_second": 5.0,
+      "apple_music_search_query": "Elgar Op 39 G major",
+      "parent_work_title": "Pomp and Circumstance",
+      "year_composed": 1904,
+      "wikidata_id": "Q1141118",
+      "wikidata_title": "Pomp and Circumstance Marches",
+      "musicbrainz_id": "f9ee7f5f-9a2e-4a71-b969-50502827192a",
+      "imslp_id": "Pomp_and_Circumstance,_Op.39_(Elgar,_Edward)",
+      "wikidata_match_method": "title_substring",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Elgar%20Op%2039",
+      "display_title": "Pomp and Circumstance Marches"
+    },
+    {
+      "title": "Pomp and Circumstance March No.1 Op.39 No.1",
+      "musicxml": "musicxml/Pomp_and_Circumstance_March_No_1_-_Trio.mxl",
+      "midi": "midi/Pomp_and_Circumstance_March_No_1_-_Trio.mid",
+      "catalog_numbers": {
+        "Op": "39"
+      },
+      "form": "March",
+      "time_signature": "2/4",
+      "instruments": [
+        "Organ"
+      ],
+      "tempo_markings": [
+        "Largamente"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.69,
+        "n_favorites": 79,
+        "n_views": 3669,
+        "duration_seconds": 119.6252990601075,
+        "n_notes": 825,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "pompandcircumstance-pomp-circumstance-graduation-elgar-organ",
+        "musescore_url": "https://musescore.com/musikmann/scores/5103275",
+        "musescore_duration": "02"
+      },
+      "key": "G major",
+      "instruments_gm": [
+        "Church Organ"
+      ],
+      "tempo_bpm": 80,
+      "n_measures": 80,
+      "n_parts": 1,
+      "n_notes": 809,
+      "notes_per_second": 6.8,
+      "apple_music_search_query": "Elgar Op 39 G major",
+      "parent_work_title": "Pomp and Circumstance March No. 1 - Trio",
+      "wikidata_id": "Q42194446",
+      "wikidata_title": "Pomp and Circumstance March in D Major, Op. 39, No. 1",
+      "musicbrainz_id": "b1b15406-c585-3d3c-8ccc-0850d450f5c7",
+      "imslp_id": "Pomp_and_Circumstance_March_No.1,_Op.39_No.1_(Elgar,_Edward)",
+      "wikidata_match_method": "title_substring",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Elgar%20Op%2039",
+      "display_title": "Pomp and Circumstance March in D Major, Op. 39, No. 1"
+    },
+    {
+      "title": "Variations on an Original Theme 'Enigma' Op.36",
+      "musicxml": "musicxml/Elgar_-_Enigma_Variations_-_XI_Nimrod.mxl",
+      "midi": "midi/Elgar_-_Enigma_Variations_-_XI_Nimrod.mid",
+      "catalog_numbers": {
+        "Op": "36"
+      },
+      "form": "Variations",
+      "time_signature": "3/4",
+      "instruments": [
+        "Piano"
+      ],
+      "tempo_markings": [
+        "Adagio"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.84,
+        "n_favorites": 289,
+        "n_views": 19062,
+        "duration_seconds": 245.19962874482528,
+        "n_notes": 678,
+        "complexity": "2",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/879881/scores/5062595",
+        "musescore_duration": "02:32"
+      },
+      "key": "E♭ major",
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 52,
+      "n_measures": 43,
+      "n_parts": 1,
+      "n_notes": 661,
+      "notes_per_second": 2.7,
+      "apple_music_search_query": "Elgar Op 36 E♭ major",
+      "parent_work_title": "Enigma Variations",
+      "year_composed": 1899,
+      "wikidata_id": "Q934028",
+      "wikidata_title": "Enigma Variations",
+      "musicbrainz_id": "626bef05-10e7-3fb0-9f4c-17f947810429",
+      "imslp_id": "Variations_on_an_Original_Theme_'Enigma',_Op.36_(Elgar,_Edward)",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Elgar%20Op%2036",
+      "display_title": "Enigma Variations"
+    },
+    {
+      "title": "Salut d'amour clarinet Elgar",
+      "musicxml": "musicxml/Salut_damour_clarinet_Elgar.mxl",
+      "midi": "midi/Salut_damour_clarinet_Elgar.mid",
+      "time_signature": "2/4",
+      "instruments": [
+        "B♭ Clarinet",
+        "Violin",
+        "Piano"
+      ],
+      "tempo_markings": [
+        "Andantino",
+        "Tempo pìu lento"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 1,
+        "n_views": 240,
+        "duration_seconds": 407.1322328670349,
+        "n_notes": 1292,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": false,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/23131141/scores/5964730",
+        "musescore_duration": "03:36"
+      },
+      "key": "F♯ major",
+      "instruments_gm": [
+        "Clarinet",
+        "Violin",
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 56,
+      "n_measures": 86,
+      "n_parts": 3,
+      "n_notes": 1249,
+      "notes_per_second": 3.1,
+      "apple_music_search_query": "Elgar F♯ major Salut d'amour clarinet Elgar",
+      "parent_work_title": "Salut d'amour",
+      "wikidata_id": "Q2673530",
+      "wikidata_title": "Salut d'Amour",
+      "musicbrainz_id": "e49c8de1-bbd9-446e-ac59-c1966792c1e3",
+      "imslp_id": "Salut_d'amour,_Op.12_(Elgar,_Edward)",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Elgar%20Salut%20d%27amour%20clarinet",
+      "display_title": "Salut d'Amour"
+    },
+    {
+      "title": "Elgar Pomp and Circumstance March No. 1 (Piano solo with choral finale)",
+      "musicxml": "musicxml/Elgar_Pomp_and_Circumstance_March_No_1_Piano_solo_with_choral_finale.mxl",
+      "midi": "midi/Elgar_Pomp_and_Circumstance_March_No_1_Piano_solo_with_choral_finale.mid",
+      "form": "Chorale",
+      "time_signature": "2/4",
+      "instruments": [
+        "Piano"
+      ],
+      "tempo_markings": [
+        "Allegro con molto fuoco",
+        "(♩ = 96)",
+        "(♩ = 88)",
+        "Maestoso",
+        "Tempo I"
+      ],
+      "movements": [
+        {
+          "start_measure": 1,
+          "tempo_marking": "Allegro con molto fuoco"
+        },
+        {
+          "start_measure": 223,
+          "tempo_marking": "Maestoso"
+        }
+      ],
+      "is_multi_movement": true,
+      "pdmx": {
+        "rating": 4.81,
+        "n_favorites": 339,
+        "n_views": 28192,
+        "duration_seconds": 747.9399765997672,
+        "n_notes": 3662,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "modifiedtranscription",
+        "musescore_url": "https://musescore.com/hmscomp/scores/151163",
+        "musescore_duration": "06:43"
+      },
+      "key": "D major",
+      "instruments_gm": [
+        "Choir Aahs",
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 106,
+      "n_measures": 275,
+      "n_parts": 3,
+      "n_notes": 3575,
+      "notes_per_second": 4.8,
+      "apple_music_search_query": "Elgar D major Elgar Pomp and Circumstance March No. 1 (Piano sol",
+      "wikidata_id": "Q42194446",
+      "wikidata_title": "Pomp and Circumstance March in D Major, Op. 39, No. 1",
+      "musicbrainz_id": "b1b15406-c585-3d3c-8ccc-0850d450f5c7",
+      "imslp_id": "Pomp_and_Circumstance_March_No.1,_Op.39_No.1_(Elgar,_Edward)",
+      "wikidata_match_method": "title_substring",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Elgar%20Pomp%20and%20Circumstance%20March%20No.%201%20%28Piano%20solo%20with",
+      "display_title": "Pomp and Circumstance March in D Major, Op. 39, No. 1"
+    },
+    {
+      "title": "Variations on an Original Theme 'Enigma' Op.36",
+      "musicxml": "musicxml/Enigma_Variations_X_Intermezzo_Edward_Elgar.mxl",
+      "midi": "midi/Enigma_Variations_X_Intermezzo_Edward_Elgar.mid",
+      "catalog_numbers": {
+        "Op": "36"
+      },
+      "form": "Variations",
+      "time_signature": "3/4",
+      "instruments": [
+        "Piano"
+      ],
+      "tempo_markings": [
+        "Allegretto.  = 90"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 4,
+        "n_views": 176,
+        "duration_seconds": 129.99999999660557,
+        "n_notes": 1310,
+        "complexity": "2",
+        "is_original": false,
+        "is_best_arrangement": false,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/4887176/scores/5549198",
+        "musescore_duration": "02:26"
+      },
+      "key": "G major",
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 90,
+      "n_measures": 75,
+      "n_parts": 1,
+      "n_notes": 1299,
+      "notes_per_second": 10.0,
+      "apple_music_search_query": "Elgar Op 36 G major",
+      "parent_work_title": "Variations Enigma X",
+      "year_composed": 1899,
+      "wikidata_id": "Q934028",
+      "wikidata_title": "Enigma Variations",
+      "musicbrainz_id": "626bef05-10e7-3fb0-9f4c-17f947810429",
+      "imslp_id": "Variations_on_an_Original_Theme_'Enigma',_Op.36_(Elgar,_Edward)",
+      "wikidata_match_method": "title_substring",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Elgar%20Op%2036",
+      "display_title": "Enigma Variations"
+    },
+    {
+      "title": "Variations on an Original Theme 'Enigma' Op.36",
+      "musicxml": "musicxml/Nimrod.mxl",
+      "midi": "midi/Nimrod.mid",
+      "catalog_numbers": {
+        "Op": "36"
+      },
+      "form": "Variations",
+      "time_signature": "3/4",
+      "instruments": [
+        "Piano"
+      ],
+      "tempo_markings": [
+        "Adagio"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.65,
+        "n_favorites": 29,
+        "n_views": 941,
+        "duration_seconds": 124.39021330220028,
+        "n_notes": 503,
+        "complexity": "2",
+        "is_original": false,
+        "is_best_arrangement": false,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/28736851/scores/5981050",
+        "musescore_duration": "02:06"
+      },
+      "key": "E♭ major",
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 52,
+      "n_measures": 44,
+      "n_parts": 1,
+      "n_notes": 500,
+      "notes_per_second": 4.0,
+      "apple_music_search_query": "Elgar Op 36 E♭ major",
+      "parent_work_title": "Nimrod",
+      "wikidata_id": "Q33325138",
+      "wikidata_title": "Nimrod",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Elgar%20Op%2036",
+      "display_title": "Nimrod"
+    },
+    {
+      "title": "Salut d'amour Edward Elgar Love's Greeting",
+      "musicxml": "musicxml/Salut_damour_Edward_Elgar_Loves_Greeting.mxl",
+      "midi": "midi/Salut_damour_Edward_Elgar_Loves_Greeting.mid",
+      "time_signature": "2/4",
+      "instruments": [
+        "Piano"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.8,
+        "n_favorites": 294,
+        "n_views": 6428,
+        "duration_seconds": 298.75036000132246,
+        "n_notes": 1255,
+        "complexity": "2",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/27344725/scores/5008111",
+        "musescore_duration": "02:50"
+      },
+      "key": "E major",
+      "key_changes": [
+        "E major",
+        "G major"
+      ],
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 72,
+      "n_measures": 100,
+      "n_parts": 1,
+      "n_notes": 1228,
+      "notes_per_second": 4.1,
+      "apple_music_search_query": "Elgar E major Salut d'amour Edward Elgar Love's Greeting",
+      "parent_work_title": "Salut d'amour",
+      "wikidata_id": "Q2673530",
+      "wikidata_title": "Salut d'Amour",
+      "musicbrainz_id": "e49c8de1-bbd9-446e-ac59-c1966792c1e3",
+      "imslp_id": "Salut_d'amour,_Op.12_(Elgar,_Edward)",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Elgar%20Salut%20d%27amour%20Love%27s%20Greeting",
+      "display_title": "Salut d'Amour"
+    },
+    {
+      "title": "The shepherd's Song Edward Elgar",
+      "musicxml": "musicxml/The_shepherds_Song_Edward_Elgar.mxl",
+      "midi": "midi/The_shepherds_Song_Edward_Elgar.mid",
+      "form": "Song",
+      "time_signature": "4/4",
+      "instruments": [
+        "Voice",
+        "Piano"
+      ],
+      "tempo_markings": [
+        "Allegretto",
+        "T",
+        "a tempo",
+        "allargando",
+        "largamente"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 1,
+        "n_views": 306,
+        "duration_seconds": 227.46670160391784,
+        "n_notes": 1750,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/4887176/scores/5227560",
+        "musescore_duration": "01:38"
+      },
+      "key": "F major",
+      "instruments_gm": [
+        "Oboe",
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 85,
+      "n_measures": 38,
+      "n_parts": 2,
+      "n_notes": 1730,
+      "notes_per_second": 7.6,
+      "apple_music_search_query": "Elgar F major The shepherd's Song Edward Elgar",
+      "parent_work_title": "The shepherd's Song",
+      "lyricist": "Barry Pain",
+      "year_composed": 1892,
+      "wikidata_id": "Q7763771",
+      "wikidata_title": "The Shepherd's Song",
+      "imslp_id": "3_Songs,_Op.16_(Elgar,_Edward)",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Elgar%20The%20shepherd%27s%20Song",
+      "display_title": "The Shepherd's Song"
+    },
+    {
+      "title": "Bb Salut d'amour clarinet Elgar Bb",
+      "musicxml": "musicxml/Bb_Salut_damour_clarinet_Elgar_Bb.mxl",
+      "midi": "midi/Bb_Salut_damour_clarinet_Elgar_Bb.mid",
+      "time_signature": "2/4",
+      "instruments": [
+        "B♭ Clarinet",
+        "Violin",
+        "Piano"
+      ],
+      "tempo_markings": [
+        "Andantino",
+        "Tempo pìu lento"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.59,
+        "n_favorites": 16,
+        "n_views": 877,
+        "duration_seconds": 407.1322328670349,
+        "n_notes": 1292,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/23131141/scores/5974176",
+        "musescore_duration": "03:36"
+      },
+      "key": "C major",
+      "instruments_gm": [
+        "Clarinet",
+        "Violin",
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 56,
+      "n_measures": 86,
+      "n_parts": 3,
+      "n_notes": 1249,
+      "notes_per_second": 3.1,
+      "apple_music_search_query": "Elgar C major Bb Salut d'amour clarinet Elgar Bb",
+      "parent_work_title": "Salut d'amour",
+      "wikidata_id": "Q2673530",
+      "wikidata_title": "Salut d'Amour",
+      "musicbrainz_id": "e49c8de1-bbd9-446e-ac59-c1966792c1e3",
+      "imslp_id": "Salut_d'amour,_Op.12_(Elgar,_Edward)",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Elgar%20Bb%20Salut%20d%27amour%20clarinet%20Bb",
+      "display_title": "Salut d'Amour"
+    }
+  ],
+  "birth_year": 1857,
+  "death_year": 1934,
+  "wikipedia_extract": "English composer whose orchestral and choral works define the late Romantic English sound. Known for the Enigma Variations, the Pomp and Circumstance Marches, the Cello Concerto, the oratorio The Dream of Gerontius, and the Violin Concerto.",
+  "wikidata_id": "Q179631",
+  "apple_music_artist_id": "271628",
+  "apple_music_classical_url": "https://classical.music.apple.com/us/artist/271628"
+}

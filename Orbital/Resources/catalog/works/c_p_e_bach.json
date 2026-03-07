@@ -1,0 +1,144 @@
+{
+  "composer_slug": "c_p_e_bach",
+  "composer_qid": "Q76428",
+  "work_count": 20,
+  "midi_file_count": 1,
+  "works": [
+    {
+      "qid": "Q66730133",
+      "title": "Sonata in A minor for Solo Flute, Wq. 132",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sonata_in_A_minor_for_Solo_Flute%2C_Wq._132",
+      "wikipedia_extract": "The Sonata for Solo Flute in A minor, Wq.132, H 562, is a sonata for flute, without Basso Continuo or accompanying instruments, composed by Carl Philipp Emanuel Bach. The sonata is considered, along with Telemann's Fantasias for Solo Flute and J. S. Bach's A minor partita, one of the most significant works for unaccompanied flute before the 20th century. It is the sole flute work by Bach that was printed and published during his lifetime. No manuscript of it has been discovered.",
+      "pageviews_yearly": 3855,
+      "date": "1747-00-00"
+    },
+    {
+      "qid": "Q60983522",
+      "title": "Concerto for Harpsichord, 2 Violins, Viola and Basso Continuo in D minor",
+      "imslp_id": "Harpsichord_Concerto_in_D_minor,_H.427_(Bach,_Carl_Philipp_Emanuel)",
+      "pdf_filename": "PMLP112073-Bach-CPE_Concerto_Cembalo_W23.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1748-00-00"
+    },
+    {
+      "qid": "Q15833350",
+      "title": "Magnificat",
+      "imslp_id": "Magnificat_in_D_major,_H.772_(Bach,_Carl_Philipp_Emanuel)",
+      "pdf_filename": "PMLP117676-C.P.E._Bach-Magnificat_in_D_major__Wq.215_-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/carl-philipp-emanuel-bach-1714-pp706",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Magnificat_(C._P._E._Bach)",
+      "wikipedia_extract": "The Magnificat, Wq 215, H.772, by Carl Philipp Emanuel Bach is a musical setting of the biblical canticle Magnificat as an extended composition for voices and orchestra in nine movements, composed in Berlin in 1749. It is the composer's first extant major choral composition.",
+      "pageviews_yearly": 4806,
+      "date": "1749-00-00"
+    },
+    {
+      "qid": "Q2098563",
+      "title": "Cello Concerto in A Major",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/carl-philipp-emanuel-bach-1714-pp66",
+      "date": "1753-00-00"
+    },
+    {
+      "qid": "Q2080831",
+      "title": "Cello Concerto in B-flat major",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/carl-philipp-emanuel-bach-1714-pp63"
+    },
+    {
+      "qid": "Q2666262",
+      "title": "Celloconcert in a klein"
+    },
+    {
+      "qid": "Q1211115",
+      "title": "Die Auferstehung und Himmelfahrt Jesu",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/carl-philipp-emanuel-bach-1714-pp711",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Die_Auferstehung_und_Himmelfahrt_Jesu",
+      "wikipedia_extract": "Die Auferstehung und Himmelfahrt Jesu is an oratorio by Carl Philipp Emanuel Bach to a text by Karl Wilhelm Ramler on the subject of the resurrection and ascension of Jesus Christ. The first documented performance evidently took place in 1774, and was first publicly performed in 1778; it was further revised between 1778 and 1780. Along with the other oratorios that CPE Bach composed, Die Auferstehung und Himmelfahrt Jesu has been described as being \"among the most important Protestant vocal works of the second half of the 18th century\".",
+      "pageviews_yearly": 2176
+    },
+    {
+      "qid": "Q5274379",
+      "title": "Die Israeliten in der Wüste",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/carl-philipp-emanuel-bach-1714-pp709",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Die_Israeliten_in_der_W%C3%BCste",
+      "wikipedia_extract": "Die Israeliten in der Wüste is an oratorio by Carl Philipp Emanuel Bach.",
+      "pageviews_yearly": 1818
+    },
+    {
+      "qid": "Q21998519",
+      "title": "Gellert Odes and Songs",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gellert_Odes_and_Songs",
+      "wikipedia_extract": "Geistliche Oden und Lieder, also known as Gellert Oden, is a collection of songs by Carl Philipp Emanuel Bach with texts by Christian Fürchtegott Gellert. Originally published in 1758, Bach's work enjoyed continuous popularity for several decades and influenced numerous composers, most importantly Ludwig van Beethoven, who composed his own settings of six of Gellert's poems.",
+      "pageviews_yearly": 1690
+    },
+    {
+      "qid": "Q112074565",
+      "title": "Gellert's Sacred Odes & Lieder (Wq 195)"
+    },
+    {
+      "qid": "Q15965142",
+      "title": "Heilig",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/carl-philipp-emanuel-bach-1714-pp712"
+    },
+    {
+      "qid": "Q19778310",
+      "title": "Klopstocks Morgengesang am Schöpfungsfeste"
+    },
+    {
+      "qid": "Q6461556",
+      "title": "La Caroline",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/carl-philipp-emanuel-bach-1714-pp391",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Caroline_(C._P._E._Bach)",
+      "wikipedia_extract": "\nLa Caroline, Wq. 117/39, H. 98, is a character piece for solo keyboard in A minor, written by Carl Philipp Emanuel Bach. Bach wrote several character pieces which were often grouped together and published as a set. These character pieces were based on similar works composed by François Couperin. La Caroline along with La Philippine may have been named after his daughter Anna Carolina Philippina.",
+      "pageviews_yearly": 1391
+    },
+    {
+      "qid": "Q1341631",
+      "title": "Notebook for Anna Magdalena Bach",
+      "has_midi": true,
+      "midi_files": [
+        "midi/02-_Polonaise_in_G_minor_CPE_Bach.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q7557714",
+      "title": "Solfeggietto",
+      "imslp_id": "Solfeggio_in_C_minor,_H.220_(Bach,_Carl_Philipp_Emanuel)",
+      "pdf_filename": "Bach__CPE_-_Solfeggietto.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Solfeggietto",
+      "wikipedia_extract": "Solfeggietto is a short solo keyboard piece in C minor composed in 1766 by Carl Philipp Emanuel Bach. Although the Solfeggietto title is widely used today, the work is correctly called Solfeggio. Thomas Owens refers to the work as a toccata.",
+      "pageviews_yearly": 14355
+    },
+    {
+      "qid": "Q132127019",
+      "title": "Solfeggietto (Carl Philipp Emmanuel Bach)"
+    },
+    {
+      "qid": "Q28497842",
+      "title": "Sonata in A minor for Solo Flute, Wq. 132",
+      "imslp_id": "Flute_Sonata_in_A_minor,_H.562_(Bach,_Carl_Philipp_Emanuel)",
+      "pdf_filename": "PMLP04561-BachCPE_Solo_Flute_Sonata_Wq132_ms.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q55827272",
+      "title": "Suite No. 3"
+    },
+    {
+      "qid": "Q55827721",
+      "title": "Suite No. 3 - Ouverture"
+    },
+    {
+      "qid": "Q7756288",
+      "title": "The Passions of C.P.E. Bach",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Passions_(C._P._E._Bach)",
+      "wikipedia_extract": "As Kapellmeister at Hamburg from 1768 to 1788, Carl Philipp Emanuel Bach composed 21 settings of the Passion narrative and 1 Passion oratorio.",
+      "pageviews_yearly": 2080
+    }
+  ]
+}

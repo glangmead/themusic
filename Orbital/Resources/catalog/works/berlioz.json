@@ -1,0 +1,429 @@
+{
+  "composer_slug": "berlioz",
+  "composer_qid": "Q1151",
+  "work_count": 45,
+  "midi_file_count": 1,
+  "works": [
+    {
+      "qid": "Q2022751",
+      "title": "Messe solennelle",
+      "imslp_id": "Messe_solennelle,_H_20_(Berlioz,_Hector)",
+      "pdf_filename": "PMLP121339-Berlioz_-_Resurrexit__orch._score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/louis-hector-berlioz-1803-pp33",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Messe_solennelle_(Berlioz)",
+      "wikipedia_extract": "Messe solennelle is a setting of the Catholic missa solemnis by the French composer Hector Berlioz. It was written in 1824, when the composer was twenty, and first performed at the Saint-Roch, Paris, on 10 July 1825, and again at the Saint-Eustache in 1827. After this, Berlioz claimed to have destroyed the entire score, except for the Resurrexit, but in 1991 a Belgian schoolteacher, Frans Moors, came across a copy of the work in an organ gallery in Antwerp, and it has since been revived.",
+      "pageviews_yearly": 4619,
+      "date": "1824-00-00"
+    },
+    {
+      "qid": "Q51675209",
+      "title": "La mort de Cléopâtre",
+      "imslp_id": "La_mort_de_Cléopâtre,_H_36_(Berlioz,_Hector)",
+      "pdf_filename": "PMLP58418-Berlioz__vol._6_-_Cléopâtre.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/louis-hector-berlioz-1803-pp67",
+      "date": "1829-00-00"
+    },
+    {
+      "qid": "Q462313",
+      "title": "Symphonie fantastique",
+      "imslp_id": "Symphonie_fantastique,_H_48_(Berlioz,_Hector)",
+      "pdf_filename": "Liszt_-_Symphonie_Fantastique__piano_reduction_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/louis-hector-berlioz-1803-pp14",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphonie_fantastique",
+      "wikipedia_extract": "Symphonie fantastique: Épisode de la vie d'un artiste … en cinq parties Op. 14, is a programmatic symphony written by Hector Berlioz in 1830. The first performance was at the Paris Conservatoire on 5 December 1830.",
+      "pageviews_yearly": 129936,
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q109037784",
+      "title": "Feuillets d'album",
+      "imslp_id": "Feuillets_d'album,_H_121_(Berlioz,_Hector)",
+      "pdf_filename": "PMLP115001-Berlioz_-_Feuillets_d_Album__Op._19_-_I._Zaïde__orch._score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/louis-hector-berlioz-1803-pp104",
+      "date": "1834-00-00",
+      "movements": [
+        {
+          "qid": "Q109046767"
+        },
+        {
+          "qid": "Q125516214"
+        },
+        {
+          "qid": "Q28495575"
+        }
+      ]
+    },
+    {
+      "qid": "Q976789",
+      "title": "Harold en Italie",
+      "imslp_id": "Harold_en_Italie,_H_68_(Berlioz,_Hector)",
+      "pdf_filename": "Berlioz_-_Harold_in_Italy.pdf.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/louis-hector-berlioz-1803-pp15",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Harold_en_Italie",
+      "wikipedia_extract": "Harold en Italie, symphonie avec un alto principal, as the manuscript describes it, is a four-movement orchestral work by Hector Berlioz, his Opus 16, H. 68, written in 1834. Throughout, the unusual viola part represents the titular protagonist, without casting the form as a concerto. The movements have these titles, alluding to a programme:Harold in the mountains\nMarch of the pilgrims\nSerenade of an Abruzzo mountaineer\nOrgy of bandits",
+      "pageviews_yearly": 20916,
+      "date": "1834-00-00"
+    },
+    {
+      "qid": "Q125516214",
+      "title": "Les champs",
+      "date": "1834-00-00"
+    },
+    {
+      "qid": "Q277846",
+      "title": "Benvenuto Cellini",
+      "imslp_id": "Benvenuto_Cellini,_H_76_(Berlioz,_Hector)",
+      "pdf_filename": "Berlioz_-_Benvenuto_Cellini_Overture.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/louis-hector-berlioz-1803-pp10",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Benvenuto_Cellini_(opera)",
+      "wikipedia_extract": "Benvenuto Cellini  is an opera semiseria in four tableaux by Hector Berlioz, his first full-length work for the stage. Premiered at the Académie Royale de Musique on 10 September 1838, it is a setting of a libretto by Léon de Wailly and Henri Auguste Barbier, who invented most of the plot inspired by the memoirs of the Florentine sculptor Benvenuto Cellini. The opera is technically challenging and was until the 21st century rarely performed. However, the overture occasionally features in orchestral concerts, as does the concert overture Le carnaval romain which Berlioz composed from material in the opera.",
+      "pageviews_yearly": 13203,
+      "date": "1836-00-00"
+    },
+    {
+      "qid": "Q122974391",
+      "title": "Aubade",
+      "imslp_id": "Aubade,_H_78_(Berlioz,_Hector)",
+      "pdf_filename": "PMLP222018-NBE_-_Aubade.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1839-00-00"
+    },
+    {
+      "qid": "Q2634994",
+      "title": "Grande symphonie funèbre et triomphale",
+      "imslp_id": "Grande_symphonie_funèbre_et_triomphale,_H_80_(Berlioz,_Hector)",
+      "pdf_filename": "PMLP130823-Berlioz_-_L_apothéose__vocal_score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/louis-hector-berlioz-1803-pp17",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Grande_Symphonie_fun%C3%A8bre_et_triomphale",
+      "wikipedia_extract": "Grande symphonie funèbre et triomphale, Op. 15, is the fourth and last symphony by the French composer Hector Berlioz, first performed on 28 July 1840 in Paris. It is one of the earliest examples of a symphony composed for military band.",
+      "pageviews_yearly": 6237,
+      "date": "1840-00-00"
+    },
+    {
+      "qid": "Q11431407",
+      "title": "Rêverie et Caprice",
+      "imslp_id": "Rêverie_et_caprice,_H_88_(Berlioz,_Hector)",
+      "pdf_filename": "PMLP81702-00._BERLIOZ_-_REVERIE_ET_CAPRICE__OP._8_-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/louis-hector-berlioz-1803-pp29",
+      "date": "1841-00-00"
+    },
+    {
+      "qid": "Q109002053",
+      "title": "Il carnevale romano",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/louis-hector-berlioz-1803-pp24",
+      "date": "1843-00-00"
+    },
+    {
+      "qid": "Q1144992",
+      "title": "La damnation de Faust",
+      "imslp_id": "La_damnation_de_Faust,_H_111_(Berlioz,_Hector)",
+      "pdf_filename": "Berlioz-Klindworth_Tanz.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/louis-hector-berlioz-1803-pp55",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Damnation_de_Faust",
+      "wikipedia_extract": "La Damnation de Faust, Op. 24 is a French musical composition for four solo voices, full seven-part chorus, large children's chorus and orchestra by the French composer Hector Berlioz. He called it a légende dramatique. It was first performed at the Opéra-Comique in Paris on 6 December 1846.",
+      "pageviews_yearly": 22063,
+      "date": "1845-00-00",
+      "movements": [
+        {
+          "qid": "Q54971658"
+        }
+      ]
+    },
+    {
+      "qid": "Q109046767",
+      "title": "Zaïde",
+      "imslp_id": "Zaïde,_H_107_(Berlioz,_Hector)",
+      "pdf_filename": "PMLP115001-Berlioz_-_Feuillets_d_Album__Op._19_-_I._Zaïde__orch._score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/louis-hector-berlioz-1803-pp96",
+      "date": "1845-00-00"
+    },
+    {
+      "qid": "Q3539678",
+      "title": "Tristia",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/louis-hector-berlioz-1803-pp102",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tristia_(Berlioz)",
+      "wikipedia_extract": "Tristia, Op. 18, is a musical work consisting of three short pieces for chorus and orchestra by the French composer Hector Berlioz. Apart from its title, it has nothing to do with the collection of Latin poems by Ovid. The individual works were composed at different times and published together in 1852. Berlioz associated them in his mind with Shakespeare's Hamlet, one of his favourite plays. They were never performed during the composer's lifetime.",
+      "pageviews_yearly": 4079,
+      "date": "1848-00-00"
+    },
+    {
+      "qid": "Q54971658",
+      "title": "Autrefois, un roi de Thulé",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/louis-hector-berlioz-1803-pp55"
+    },
+    {
+      "qid": "Q109045336",
+      "title": "Berlioz symphony in A minor"
+    },
+    {
+      "qid": "Q791661",
+      "title": "Béatrice et Bénédict",
+      "imslp_id": "Béatrice_et_Bénédict,_H_138_(Berlioz,_Hector)",
+      "pdf_filename": "Berlioz_-_beatrice_et_benedict_overture.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/louis-hector-berlioz-1803-pp13",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/B%C3%A9atrice_et_B%C3%A9n%C3%A9dict",
+      "wikipedia_extract": "Béatrice et Bénédict is an opéra comique in two acts by French composer Hector Berlioz. Berlioz wrote the French libretto himself, based in general outline on a subplot in Shakespeare's Much Ado About Nothing.",
+      "pageviews_yearly": 12672
+    },
+    {
+      "qid": "Q2956238",
+      "title": "Chant sacré",
+      "imslp_id": "Chant_sacré,_H_44_(Berlioz,_Hector)",
+      "pdf_filename": "PMLP115008-Berlioz_-_Irlande__Op._2_-_6._Chant_sacré_-_First_Version__vocal_score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/louis-hector-berlioz-1803-pp43"
+    },
+    {
+      "qid": "Q54971708",
+      "title": "Dear Tyrians"
+    },
+    {
+      "qid": "Q109242142",
+      "title": "I trojani in Cartagine"
+    },
+    {
+      "qid": "Q1516577",
+      "title": "L'enfance du Christ",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Ladieu_des_bergers_from_LEnfance_du_Christ_Op_25_-_Hector_Berlioz.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q109310778",
+      "title": "La Captive",
+      "imslp_id": "La_captive,_H_60_(Berlioz,_Hector)",
+      "pdf_filename": "PMLP59001-00._BERLIOZ_-_LE_CAPTIVE__OP._12_-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/louis-hector-berlioz-1803-pp86"
+    },
+    {
+      "qid": "Q133519397",
+      "title": "La Dame aux Camélias"
+    },
+    {
+      "qid": "Q487789",
+      "title": "La Grande Vadrouille",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Grande_Vadrouille",
+      "wikipedia_extract": "La Grande Vadrouille, originally released in the United Kingdom as Don't Look Now... We're Being Shot At!, is a 1966 French-British comedy film directed by Gérard Oury about French civilians who, in 1942, help the crew of a Royal Air Force bomber that has been shot down over Paris make their way through German-occupied France to safe territory.",
+      "pageviews_yearly": 52491
+    },
+    {
+      "qid": "Q7886273",
+      "title": "La Symphonie fantastique",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/louis-hector-berlioz-1803-pp14",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Symphonie_fantastique",
+      "wikipedia_extract": "La Symphonie fantastique is a 1942 French drama film by Christian-Jaque and produced by the German-controlled French film production company Continental Films. The film is based upon the life of the French composer Hector Berlioz. The title is taken from the five-movement programmatic Symphonie fantastique of 1830. The film lasts around 90 minutes and was first shown at the 'Normandie' cinema in Paris on 1 April 1942. The posters at the premiere contained the sub-title 'La Vie passionnée et glorieuse d'un génie'.",
+      "pageviews_yearly": 4023
+    },
+    {
+      "qid": "Q4503566",
+      "title": "Late Flowers",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Late_Flowers",
+      "wikipedia_extract": "Late Flowers is a 1970 romantic musical film based on the novella of the same name by Anton Chekhov wrote in the early period of the writer's work.",
+      "pageviews_yearly": 2040
+    },
+    {
+      "qid": "Q28495575",
+      "title": "Le Chant des chemins de fer",
+      "imslp_id": "Chant_des_chemins_de_fer,_H_110_(Berlioz,_Hector)",
+      "pdf_filename": "PMLP58815-Berlioz__vol._12b_-_Chant_des_chemins_de_fer.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Le_Chant_des_chemins_de_fer",
+      "wikipedia_extract": "\nLe Chant des chemins de fer is a cantata in B major by Hector Berlioz for tenor solo, choir and orchestra composed in June 1846 on lyrics by Jules Janin and premiered 14 June 1846 for the inauguration of the Gare de Lille.",
+      "pageviews_yearly": 1523
+    },
+    {
+      "qid": "Q15975613",
+      "title": "Le Corsaire"
+    },
+    {
+      "qid": "Q90698615",
+      "title": "Le Roi Lear",
+      "imslp_id": "Overture_'King_Lear',_H_53_(Berlioz,_Hector)",
+      "pdf_filename": "PMLP116373-Berlioz__vol._20_-_Roi_Lear.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q109735662",
+      "title": "Le Spectre de la rose"
+    },
+    {
+      "qid": "Q403368",
+      "title": "Le carnaval romain",
+      "imslp_id": "Le_carnaval_romain,_H_95_(Berlioz,_Hector)",
+      "pdf_filename": "Berlioz_-_Roman_Carnival_Overture.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/louis-hector-berlioz-1803-pp24"
+    },
+    {
+      "qid": "Q285689",
+      "title": "Les Francs-juges",
+      "imslp_id": "Les_francs-juges,_H_23_(Berlioz,_Hector)",
+      "pdf_filename": "Liszt_-_s471_Ouverture_de_Francs-Juges__schott__mono.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/louis-hector-berlioz-1803-pp18",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Les_Francs-juges",
+      "wikipedia_extract": "Les Francs-juges is the title of an unfinished opera by the French composer Hector Berlioz written to a libretto by his friend Humbert Ferrand in 1826. Berlioz abandoned the incomplete composition and destroyed most of the music. He retained the overture, which has become a popular concert item, and used some other musical material in later compositions.",
+      "pageviews_yearly": 3543
+    },
+    {
+      "qid": "Q3051034",
+      "title": "Les Nuits d'Été",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/louis-hector-berlioz-1803-pp92",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Les_Nuits_d'%C3%A9t%C3%A9",
+      "wikipedia_extract": "Les Nuits d'été, Op. 7, is a song cycle by the French composer Hector Berlioz. It is a setting of six poems by Théophile Gautier. The cycle, completed in 1841, was originally for soloist and piano accompaniment. Berlioz orchestrated one of the songs in 1843, and did the same for the other five in 1856. The cycle was neglected for many years, but during the 20th century it became, and has remained, one of the composer's most popular works. The full orchestral version is more frequently performed in concert and on record than the piano original. The theme of the work is the progress of love, from youthful innocence to loss and finally renewal.",
+      "pageviews_yearly": 11096,
+      "movements": [
+        {
+          "qid": "Q109735662"
+        }
+      ]
+    },
+    {
+      "qid": "Q472325",
+      "title": "Les Troyens",
+      "imslp_id": "Les_Troyens,_H_133_(Berlioz,_Hector)",
+      "pdf_filename": "PMLP27866-Berlioz_-_Les_Troyens_-_Part_I_-_La_prise_de_Troie__orch._score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/louis-hector-berlioz-1803-pp12",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Les_Troyens",
+      "wikipedia_extract": "Les Troyens is a French grand opera in five acts, running for about five hours, by Hector Berlioz. The libretto was written by Berlioz himself from Virgil's epic poem the Aeneid; the score was composed between 1856 and 1858. Les Troyens is Berlioz's most ambitious work, the summation of his entire artistic career, but he did not live to see it performed in its entirety. Under the title Les Troyens à Carthage, the last three acts were premièred with many cuts by Léon Carvalho's company, the Théâtre Lyrique, at their theatre on the Place du Châtelet in Paris on 4 November 1863, with 21 repeat performances. The reduced versions run for about three hours. After decades of neglect, today the opera is considered by some music critics as one of the finest ever written.",
+      "pageviews_yearly": 29486
+    },
+    {
+      "qid": "Q56459330",
+      "title": "Liefdesscène"
+    },
+    {
+      "qid": "Q3270347",
+      "title": "Lélio",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/louis-hector-berlioz-1803-pp45",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/L%C3%A9lio",
+      "wikipedia_extract": "Lélio, ou Le retour à la vie, Op. 14b, is a work incorporating music and spoken text by the French composer Hector Berlioz, intended as a sequel to his Symphonie fantastique. It is written for a narrator, solo tenor and baritone, mixed chorus, and an orchestra including piano.",
+      "pageviews_yearly": 7368
+    },
+    {
+      "qid": "Q51162713",
+      "title": "Orphée et Eurydice"
+    },
+    {
+      "qid": "Q15975607",
+      "title": "Overtures by Hector Berlioz",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/louis-hector-berlioz-1803-pp24",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Overtures_by_Hector_Berlioz",
+      "wikipedia_extract": "French composer Hector Berlioz wrote a number of \"overtures\", many of which have become popular concert works. They include true overtures, intended to introduce operas, but also independent concert overtures that are in effect the first orchestral tone poems.",
+      "pageviews_yearly": 9767,
+      "movements": [
+        {
+          "qid": "Q403368"
+        },
+        {
+          "qid": "Q91000603"
+        },
+        {
+          "qid": "Q90698615"
+        },
+        {
+          "qid": "Q15975613"
+        }
+      ]
+    },
+    {
+      "qid": "Q501388",
+      "title": "Prix de Rome cantatas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Prix_de_Rome_cantatas_(Berlioz)",
+      "wikipedia_extract": "The French composer Hector Berlioz made four attempts at winning the Prix de Rome music prize, finally succeeding in 1830. As part of the competition, he had to write a cantata to a text set by the examiners. Berlioz's efforts to win the prize are described at length in his Memoirs. He regarded it as the first stage in his struggle against the musical conservatism represented by the judges, who included established composers such as Luigi Cherubini, François-Adrien Boieldieu and Henri-Montan Berton. Berlioz's stay in Italy as a result of winning the prize also had a great influence on later works such as Benvenuto Cellini and Harold en Italie. The composer subsequently destroyed the scores of two cantatas almost completely and reused music from all four of them in later works. There was a revival of interest in the cantatas in the late 20th century, particularly Cléopâtre, which has become a favourite showcase for the soprano and mezzo-soprano voice.",
+      "pageviews_yearly": 3735,
+      "movements": [
+        {
+          "qid": "Q51675209"
+        }
+      ]
+    },
+    {
+      "qid": "Q109043374",
+      "title": "Prologue des Troyens à Carthage"
+    },
+    {
+      "qid": "Q1495114",
+      "title": "Requiem",
+      "imslp_id": "Grande_messe_des_morts,_H_75_(Berlioz,_Hector)",
+      "pdf_filename": "Berlioz_Requiem.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/louis-hector-berlioz-1803-pp51",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Requiem_(Berlioz)",
+      "wikipedia_extract": "The Grande Messe des morts, Op. 5, by Hector Berlioz was composed in 1837. The Grande Messe des Morts is one of Berlioz's best-known works, with a tremendous orchestration of woodwind and brass instruments, including four antiphonal off-stage brass ensembles. The work derives its text from the traditional Latin Requiem Mass. It has a duration of approximately ninety minutes, although there are faster recordings of under seventy-five minutes.",
+      "pageviews_yearly": 40351
+    },
+    {
+      "qid": "Q2450718",
+      "title": "Roméo et Juliette",
+      "imslp_id": "Roméo_et_Juliette,_H_79_(Berlioz,_Hector)",
+      "pdf_filename": "PMLP48685-Berlioz_-_Romeo_et_Juliette_-_vocal_score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/louis-hector-berlioz-1803-pp16",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rom%C3%A9o_et_Juliette_(Berlioz)",
+      "wikipedia_extract": "Roméo et Juliette is a seven-movement symphonie dramatique for orchestra and three choruses, with vocal solos, by French composer Hector Berlioz. Émile Deschamps wrote its libretto with Shakespeare's play as his base. The work was completed in 1839 and first performed on 24 November of that year, but it was modified before its first publication, in 1847, and modified again for the 2ème Édition of 1857, today's reference. It bears the catalogue numbers Op. 17 and H. 79. Regarded as one of Berlioz's finest achievements, Roméo et Juliette is also among his most original in form and his most comprehensive and detailed to follow a program. The vocal forces are used in the 1st, 5th and 7th movements.",
+      "pageviews_yearly": 16409
+    },
+    {
+      "qid": "Q821235",
+      "title": "Te Deum",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/louis-hector-berlioz-1803-pp58",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Te_Deum_(Berlioz)",
+      "wikipedia_extract": "The Te Deum by Hector Berlioz (1803–1869) was completed in 1849. Like the earlier and more famous Grande Messe des Morts, it is one of the works referred to by Berlioz in his Memoirs as \"the enormous compositions which some critics have called architectural or monumental music.\" While the orchestral forces required for the Te Deum are not as titanic as those of the Requiem, the work calls for an organ that can compete on equal terms with the rest of the orchestra. It lasts approximately fifty minutes and derives its text from the traditional Latin Te Deum, although Berlioz changed the word order for dramatic purposes.",
+      "pageviews_yearly": 7722
+    },
+    {
+      "qid": "Q109046570",
+      "title": "Vox populi",
+      "imslp_id": "Vox_populi,_H_120_(Berlioz,_Hector)",
+      "pdf_filename": "PMLP58812-HB_97_Hymne_à_la_France_FS_OBE_40.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q91000603",
+      "title": "Waverley",
+      "imslp_id": "Overture_'Waverley',_H_26_(Berlioz,_Hector)",
+      "pdf_filename": "PMLP116371-00._BERLIOZ_-_WAVERLY_OVERTURE_-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/louis-hector-berlioz-1803-pp19"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "composer_slug": "gottschalk",
+  "composer_qid": "Q550701",
+  "work_count": 14,
+  "midi_file_count": 1,
+  "works": [
+    {
+      "qid": "Q4853446",
+      "title": "Bamboula",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/louis-moreau-gottschalk-1829-pp15",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bamboula_(Gottschalk)",
+      "wikipedia_extract": "Bamboula, Op. 2, is a fantasy for piano written by American composer Louis Moreau Gottschalk during a delirium of typhoid fever in the French town of Clermont-sur-l'Oise in the summer of 1848. Dedicated \"à sa Majesté Isabelle II, Reine des Espagnes\", it is the first of the so-called set of four \"Louisiana Creole pieces\" that Gottschalk composed between 1848 and 1851.",
+      "pageviews_yearly": 4081,
+      "date": "1848-00-00"
+    },
+    {
+      "qid": "Q6507186",
+      "title": "Le Mancenillier",
+      "imslp_id": "Le_mancenillier,_Op.11_(Gottschalk,_Louis_Moreau)",
+      "pdf_filename": "Gottschalk_Le_Mancenillier_op.11.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/louis-moreau-gottschalk-1829-pp26",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Le_Mancenillier_(Gottschalk)",
+      "wikipedia_extract": "Le Mancenillier, Op. 11, is a Creole-based composition for piano written by American composer Louis Moreau Gottschalk in Switzerland in the fall of 1848. Dedicated to \"Madame Mennechet de Barival\", it was published in Paris with the subtitle Sérénade by his publisher 'Escudiers' in April 1851. It is the fourth and last piece dubbed by musicologist Gilbert Chase the Louisiana Trilogy, written between 1844 and 1846 when Gottschalk had not yet come of age.",
+      "pageviews_yearly": 1859,
+      "date": "1848-00-00"
+    },
+    {
+      "qid": "Q7571530",
+      "title": "Souvenir de Porto Rico",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/louis-moreau-gottschalk-1829-pp75",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Souvenir_de_Porto_Rico",
+      "wikipedia_extract": "Souvenir de Porto Rico, Op. 31, is a musical composition for piano by American composer Louis Moreau Gottschalk written from 1857 during a tour in Puerto Rico. Dedicated to the Dutch piano virtuoso and salon music composer Ernest Henry Lubeck, and published in Mainz circa 1860 with the subtitle of Marche des Gibaros, it is based on the Christmas folk song Si me dan pasteles, denmelos calientes, performed by local peasants known as Jíbaros. The piece makes use of Latin-American and Afro-American melodies and rhythms almost fifty years before early ragtime and jazz would popularize its use.",
+      "pageviews_yearly": 3081,
+      "date": "1858-00-00"
+    },
+    {
+      "qid": "Q134591981",
+      "title": "Cakewalk"
+    },
+    {
+      "qid": "Q3115034",
+      "title": "Grande Tarantelle",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/louis-moreau-gottschalk-1829-pp8",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Grande_Tarantelle_(Gottschalk)",
+      "wikipedia_extract": "Grande Tarantelle, Op. 67, is a tarantella written by American composer Louis Moreau Gottschalk from 1858-64. Subtitled Célèbre Tarentelle, it was first performed at the Academy of Music in Philadelphia in 1864.",
+      "pageviews_yearly": 2185
+    },
+    {
+      "qid": "Q5599226",
+      "title": "Great Galloping Gottschalk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Galloping_Gottschalk",
+      "wikipedia_extract": "\nGreat Galloping Gottschalk is a contemporary ballet with choreography by Lynne Taylor-Corbett, set to the music of American composer Louis Moreau Gottschalk. It premiered with the American Ballet Theatre (ABT) at the Miami Beach Theater of the Performing Arts on 12 January 1982.",
+      "pageviews_yearly": 1277
+    },
+    {
+      "qid": "Q58199622",
+      "title": "Holy Ghost! with Light Divine"
+    },
+    {
+      "qid": "Q58199649",
+      "title": "Holy Ghost! with Light Divine"
+    },
+    {
+      "qid": "Q58199702",
+      "title": "Holy Ghost! with Light Divine"
+    },
+    {
+      "qid": "Q6465190",
+      "title": "La Savane",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/louis-moreau-gottschalk-1829-pp20",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Savane_(Gottschalk)",
+      "wikipedia_extract": "La Savane, Op. 3, is a composition in the form of a ballade written for piano in 1846 by the American composer Louis Moreau Gottschalk. With the subtitle Ballade Créole, it was first published in 1849 by Gottschalk's publisher 'Escudiers' and again in 1850 by Editions Schott, with a dedication to Maria II of Portugal on the composer's assumption that a trip from Madrid to Lisbon during his concert tour in the spring of that year was likely to happen.",
+      "pageviews_yearly": 1991
+    },
+    {
+      "qid": "Q6506518",
+      "title": "Le Bananier",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Le_Bananier_Chiptune.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q21872999",
+      "title": "Symphony No. 1",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._1_(Gottschalk)",
+      "wikipedia_extract": "The Symphony No. 1 \"La nuit des tropiques\", D. 104, is Louis Moreau Gottschalk's first and most well-known symphony.",
+      "pageviews_yearly": 3209
+    },
+    {
+      "qid": "Q7685453",
+      "title": "Tarantella",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/louis-moreau-gottschalk-1829-pp8",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tarantella_(ballet)",
+      "wikipedia_extract": "Tarantella is a ballet choreographed by George Balanchine to Grande Tarantelle by Louis Moreau Gottschalk, arranged by Hershy Kay. The ballet premiered on January 7, 1964, at the New York City Center, performed by New York City Ballet's Patricia McBride and Edward Villella.",
+      "pageviews_yearly": 3783
+    },
+    {
+      "qid": "Q7715548",
+      "title": "The Banjo",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/louis-moreau-gottschalk-1829-pp61",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Banjo_(Gottschalk)",
+      "wikipedia_extract": "The Banjo, Op. 15, is a composition for piano by the American composer Louis Moreau Gottschalk. Composed in 1853, it is one of Gottschalk's best-known works. The piece features imitations of mid-nineteenth-century African-American banjo techniques and includes demonstrations of techniques, such as up-picking and strumming, which are not found in other sources from the period.",
+      "pageviews_yearly": 2651
+    }
+  ]
+}

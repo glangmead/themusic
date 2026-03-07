@@ -1,0 +1,271 @@
+{
+  "composer_slug": "boulanger",
+  "composer_qid": "Q230412",
+  "work_count": 30,
+  "midi_file_count": 4,
+  "works": [
+    {
+      "qid": "Q131143505",
+      "title": "Pièce",
+      "imslp_id": "Pièce_(Boulanger,_Lili)",
+      "pdf_filename": "PMLP1475962-Pie-ce_pour_violon_ou_flu-te_-...-Boulanger_Lili_btv1b10880179n.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/lili-boulanger-1893-pp11",
+      "date": "1910-00-00"
+    },
+    {
+      "qid": "Q131153202",
+      "title": "Nocturne",
+      "imslp_id": "Nocturne_(Boulanger,_Lili)",
+      "pdf_filename": "PMLP1476202-_Pie-ce_courte_pour_flu-te_et_-...-Boulanger_Lili_btv1b10879378r.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/lili-boulanger-1893-pp8",
+      "date": "1911-00-00"
+    },
+    {
+      "qid": "Q131144720",
+      "title": "Prélude en ré bémol",
+      "imslp_id": "Prelude_in_D-flat_major_(Boulanger,_Lili)",
+      "pdf_filename": "PMLP103926-_Pre-lude_en_re-____Pour_-...-Boulanger_Lili_btv1b55014493z.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1911-00-00"
+    },
+    {
+      "qid": "Q131144170",
+      "title": "Prélude en si",
+      "imslp_id": "Prélude_in_B_major_(Boulanger,_Lili)",
+      "pdf_filename": "PMLP1357330-Prélude_en_si_pour_piano_-...-Boulanger_Lili_btv1b55014492h.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1911-00-00"
+    },
+    {
+      "qid": "Q131105759",
+      "title": "Reflets",
+      "imslp_id": "Reflets_(Boulanger,_Lili)",
+      "pdf_filename": "PMLP707821-Reflets.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/lili-boulanger-1893-pp6",
+      "date": "1911-00-00"
+    },
+    {
+      "qid": "Q131107967",
+      "title": "Sous-bois",
+      "imslp_id": "Sous-bois_(Boulanger,_Lili)",
+      "pdf_filename": "PMLP1190161-_Sous_bois_Ph_Gille__Musique_-...-Boulanger_Lili_btv1b10879479k.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/lili-boulanger-1893-pp2",
+      "date": "1911-00-00"
+    },
+    {
+      "qid": "Q131137115",
+      "title": "La Source",
+      "imslp_id": "La_Source_(Boulanger,_Lili)",
+      "pdf_filename": "PMLP1475581-_La_Source_Re-duction_pour_choeur_-...-Boulanger_Lili_btv1b52508720k.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/lili-boulanger-1893-pp19",
+      "date": "1912-00-00"
+    },
+    {
+      "qid": "Q131106973",
+      "title": "Le Retour",
+      "imslp_id": "Le_Retour_(Boulanger,_Lili)",
+      "pdf_filename": "PMLP1475485-_Le_Retour_La_nef_le-ge-re__-...-Boulanger_Lili_btv1b55014494d.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/lili-boulanger-1893-pp34",
+      "date": "1912-00-00"
+    },
+    {
+      "qid": "Q131138323",
+      "title": "Pendant la tempête",
+      "imslp_id": "Pendant_la_tempête_(Boulanger,_Lili)",
+      "pdf_filename": "PMLP1475595-_La_tempe-te__Choeur_pour_soprani_-...-Boulanger_Lili_btv1b10074781m.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/lili-boulanger-1893-pp20",
+      "date": "1912-00-00"
+    },
+    {
+      "qid": "Q131156182",
+      "title": "D'un jardin clair",
+      "date": "1914-00-00"
+    },
+    {
+      "qid": "Q26211239",
+      "title": "Du fond de l'abîme",
+      "imslp_id": "Psaume_CXXX_(Boulanger,_Lili)",
+      "pdf_filename": "PMLP430943-Lili_Boulanger_-_Psalm_130.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/lili-boulanger-1893-pp27",
+      "date": "1914-00-00"
+    },
+    {
+      "qid": "Q131084999",
+      "title": "Dans l'immense tristesse",
+      "imslp_id": "Dans_l'immense_tristesse_(Boulanger,_Lili)",
+      "pdf_filename": "PMLP741441-BOULANGER_dans_l_immense_tristesse.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/lili-boulanger-1893-pp29",
+      "date": "1916-00-00"
+    },
+    {
+      "qid": "Q131098519",
+      "title": "Attente",
+      "imslp_id": "Attente_(Boulanger,_Lili)",
+      "pdf_filename": "PMLP707817-_Attente_-me-lodie_chant_et_piano_-...-Boulanger_Lili_btv1b550144969.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/lili-boulanger-1893-pp15"
+    },
+    {
+      "qid": "Q48746845",
+      "title": "Clairières dans le ciel",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/lili-boulanger-1893-pp28"
+    },
+    {
+      "qid": "Q131153245",
+      "title": "Cortège",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Cortege_for_piano_-_Lili_Boulanger.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q28493541",
+      "title": "D'un matin de printemps",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/lili-boulanger-1893-pp55",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/D'un_matin_de_printemps",
+      "wikipedia_extract": "D'un matin de printemps is a musical work by Lili Boulanger. It exists in various versions, for violin and piano, for flute and piano, for piano trio, or for orchestra.",
+      "pageviews_yearly": 4223
+    },
+    {
+      "qid": "Q130974686",
+      "title": "D'un soir triste",
+      "imslp_id": "D'un_soir_triste_(Boulanger,_Lili)",
+      "pdf_filename": "PMLP1336072-D_Un_Soir_Triste-Cello.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/lili-boulanger-1893-pp56"
+    },
+    {
+      "qid": "Q131154988",
+      "title": "D'un vieux jardin",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Dun_vieux_jardin_-_Lili_Boulanger.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q20724596",
+      "title": "Faust et Hélène",
+      "imslp_id": "Faust_et_Hélène_(Boulanger,_Lili)",
+      "pdf_filename": "PMLP405598-Boulanger_-_Faust_et_Hélène__Full_Score__Autograph_MS_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Faust_et_H%C3%A9l%C3%A8ne",
+      "wikipedia_extract": "Faust et Hélène is a cantata written by Lili Boulanger in 1913 to a libretto by Eugène Adenis. It was written for the final round of the Prix de Rome music competition, which she then won, becoming the first woman to receive its first prize.",
+      "pageviews_yearly": 4065
+    },
+    {
+      "qid": "Q130873257",
+      "title": "Hymne au soleil",
+      "imslp_id": "Hymne_au_soleil_(Boulanger,_Lili)",
+      "pdf_filename": "PMLP539796-_Choeur_Concours_de_Rome_1888__-...-Boulanger_Lili_btv1b10866174v.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/lili-boulanger-1893-pp17"
+    },
+    {
+      "qid": "Q130914166",
+      "title": "Les Sirènes",
+      "imslp_id": "Les_sirènes_(Boulanger,_Lili)",
+      "pdf_filename": "PMLP836776-_Les_Sire-nes_Choeur_a-_3_-...-Boulanger_Lili_btv1b55014503m.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/lili-boulanger-1893-pp4"
+    },
+    {
+      "qid": "Q131177790",
+      "title": "Marche gaie"
+    },
+    {
+      "qid": "Q28496705",
+      "title": "Pie Jesu",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Pie_Jesu_by_Lili_Boulanger.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q28493567",
+      "title": "Pour les funérailles d'un soldat",
+      "imslp_id": "Pour_les_funérailles_d’un_soldat_(Boulanger,_Lili)",
+      "pdf_filename": "PMLP539799-_Pour_les_fune-railles_d_un_soldat__-...-Boulanger_Lili_btv1b10315915k.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/lili-boulanger-1893-pp21"
+    },
+    {
+      "qid": "Q122413727",
+      "title": "Psaume 24",
+      "imslp_id": "Psaume_XXIV_(Boulanger,_Lili)",
+      "pdf_filename": "PMLP430957-Lili_Boulanger_-_Psalm_24.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/lili-boulanger-1893-pp30"
+    },
+    {
+      "qid": "Q130970022",
+      "title": "Renouveau",
+      "imslp_id": "Renouveau_(Boulanger,_Lili)",
+      "pdf_filename": "PMLP695006-_Renouveau_Orchestre__Pour_choeur_mixte_-...-Boulanger_Lili_btv1b525087016.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/lili-boulanger-1893-pp12"
+    },
+    {
+      "qid": "Q116867251",
+      "title": "Soir sur la plaine",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Soir_Sur_La_Plaine_by_Lili_Boulanger.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q131108932",
+      "title": "Soleils de septembre",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/lili-boulanger-1893-pp9"
+    },
+    {
+      "qid": "Q28496693",
+      "title": "Theme et Variations",
+      "imslp_id": "Thème_et_variations_(Boulanger,_Lili)",
+      "pdf_filename": "PMLP891005-Lili_Boulanger_Thème_et_Variations.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/lili-boulanger-1893-pp10"
+    },
+    {
+      "qid": "Q28493566",
+      "title": "Vieille prière bouddhique",
+      "imslp_id": "Vieille_prière_bouddhique_(Boulanger,_Lili)",
+      "pdf_filename": "PMLP48704-Boulanger_Vielle_Prière_Bouddhique.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/lili-boulanger-1893-pp26"
+    }
+  ]
+}

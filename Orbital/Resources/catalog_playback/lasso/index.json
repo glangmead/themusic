@@ -1,0 +1,63 @@
+{
+  "composer_name": "Orlando di Lasso",
+  "name_last_first": "Lasso, Orlando di",
+  "slug": "lasso",
+  "wiki_page": "https://en.wikipedia.org/wiki/Orlando_di_Lasso",
+  "apple_music_playlist": "",
+  "era": "Renaissance",
+  "dates": "1532 – 1594 (c.)",
+  "nationality": "FLM",
+  "notable": false,
+  "works": [
+    {
+      "title": "Mon Coeur se recommande a vous (Orlando di Lasso)",
+      "musicxml": "musicxml/Mon_Coeur_se_recommande_a_vous_Orlando_di_Lasso.mxl",
+      "midi": "midi/Mon_Coeur_se_recommande_a_vous_Orlando_di_Lasso.mid",
+      "time_signature": "4/2",
+      "instruments": [
+        "S1",
+        "S2",
+        "A",
+        "T",
+        "B"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.83,
+        "n_favorites": 3,
+        "n_views": 214,
+        "duration_seconds": 223.9999999886756,
+        "n_notes": 664,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/m_thum/scores/5528052",
+        "musescore_duration": "01:52"
+      },
+      "key": "F major",
+      "instruments_gm": [
+        "Soprano Sax",
+        "Alto Sax",
+        "Tenor Sax",
+        "Baritone Sax"
+      ],
+      "tempo_bpm": 180,
+      "n_measures": 42,
+      "n_parts": 5,
+      "n_notes": 664,
+      "notes_per_second": 3.0,
+      "apple_music_search_query": "Lasso F major Mon Coeur se recommande a vous (Orlando di Lasso)",
+      "wikidata_id": "Q130342287",
+      "wikidata_title": "Mon cœur se recommande à vous",
+      "wikidata_match_method": "title_tokens",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Lasso%20Mon%20Coeur%20se%20recommande%20a%20vous%20%28%20%29",
+      "display_title": "Mon cœur se recommande à vous"
+    }
+  ],
+  "birth_year": 1532,
+  "death_year": 1594,
+  "wikipedia_extract": "Orlando di Lasso (various other names; probably c. 1532 – 14 June 1594) was a composer of the late Renaissance. The chief representative of the mature polyphonic style in the Franco-Flemish school, Lasso stands with William Byrd, Giovanni Pierluigi da Palestrina, and Tomás Luis de Victoria as one of the leading composers of the later Renaissance.",
+  "wikidata_id": "Q154792"
+}

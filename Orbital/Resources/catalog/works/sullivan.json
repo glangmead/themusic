@@ -1,0 +1,477 @@
+{
+  "composer_slug": "sullivan",
+  "composer_qid": "Q212692",
+  "work_count": 65,
+  "midi_file_count": 14,
+  "works": [
+    {
+      "qid": "Q96288593",
+      "title": "A British Tar"
+    },
+    {
+      "qid": "Q54988072",
+      "title": "A More Humane Mikado"
+    },
+    {
+      "qid": "Q54988087",
+      "title": "A Wand'ring Minstrel, I"
+    },
+    {
+      "qid": "Q54988044",
+      "title": "A many years ago"
+    },
+    {
+      "qid": "Q127059085",
+      "title": "ANGEL VOICES (Sullivan)"
+    },
+    {
+      "qid": "Q54988075",
+      "title": "Alone and Yet Alive"
+    },
+    {
+      "qid": "Q54988061",
+      "title": "As Some Day It May Happen"
+    },
+    {
+      "qid": "Q15947960",
+      "title": "As some day it may happen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/As_some_day_it_may_happen",
+      "pageviews_yearly": 787
+    },
+    {
+      "qid": "Q5058298",
+      "title": "Cello Concerto",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arthur-sullivan-1842-pp54",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cello_Concerto_(Sullivan)",
+      "wikipedia_extract": "The Cello Concerto in D major is Arthur Sullivan's only concerto and was one of his earliest large-scale works. It was written for the Italian cellist Alfredo Piatti and premiered on 24 November 1866 at the Crystal Palace, London, with August Manns conducting. After this, it was performed only a few times. The score was not published, and the manuscript was destroyed in a fire in the 1960s, but the full score was reconstructed by the conductors Sir Charles Mackerras and David Mackie in the 1980s. Their version was premiered and published in 1986.",
+      "pageviews_yearly": 2142
+    },
+    {
+      "qid": "Q5272821",
+      "title": "Dick Deadeye, or Duty Done",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dick_Deadeye%2C_or_Duty_Done",
+      "wikipedia_extract": "Dick Deadeye, or Duty Done is a 1975 British animated musical comedy film directed by Bill Melendez and designed by Ronald Searle, based on the 19th century comic operas of Gilbert and Sullivan.",
+      "pageviews_yearly": 5860
+    },
+    {
+      "qid": "Q54988035",
+      "title": "Fair moon, to thee I sing"
+    },
+    {
+      "qid": "Q17113314",
+      "title": "Festival Te Deum",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Festival_Te_Deum",
+      "wikipedia_extract": "The Festival Te Deum is the popular name for an 1872 composition by Arthur Sullivan, written to celebrate the recovery of Albert Edward, Prince of Wales from typhoid fever. The prince's father, Prince Albert, had died of typhoid fever in 1861, and so the prince's recovery was especial cause for celebration.",
+      "pageviews_yearly": 2667
+    },
+    {
+      "qid": "Q1197244",
+      "title": "H.M.S. Pinafore",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Arthur_Sullivan_-_HMS_Pinafore_Overture.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q127048448",
+      "title": "HANFORD (Sullivan)"
+    },
+    {
+      "qid": "Q127049476",
+      "title": "HOMELAND (Sullivan)"
+    },
+    {
+      "qid": "Q5637693",
+      "title": "Haddon Hall",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Haddon_Hall_(opera)",
+      "wikipedia_extract": "Haddon Hall is an English light opera with music by Arthur Sullivan and a libretto by Sydney Grundy. The opera, set at the eponymous hall, dramatises the legend of Dorothy Vernon's elopement with John Manners, resetting the tale in the 17th century.",
+      "pageviews_yearly": 4490
+    },
+    {
+      "qid": "Q5639165",
+      "title": "Hail, Hail, the Gang's All Here",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hail%2C_Hail%2C_the_Gang's_All_Here",
+      "wikipedia_extract": "Hail, Hail, the Gang's All Here is an American popular song first published in 1917. The lyrics, written by D. A. Esrom to a tune composed by Arthur Sullivan for the 1879 comic opera The Pirates of Penzance, are:",
+      "pageviews_yearly": 16922
+    },
+    {
+      "qid": "Q137557535",
+      "title": "Henry VIII",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arthur-sullivan-1842-pp43",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Henry_VIII_(Sullivan)",
+      "wikipedia_extract": "Arthur Sullivan's music for Henry VIII is the fourth of the composer's sets of incidental music for Shakespeare plays. It consists of four sections – one of them vocal – later arranged by Sullivan into a concert suite. The music was first heard in the production of Henry VIII at the Theatre Royal, Manchester, in August 1877; the suite was premiered at the Crystal Palace, London, two months later. It is not among Sullivan's best-known music, but the full score has been published and the suite recorded for CD.",
+      "pageviews_yearly": 528
+    },
+    {
+      "qid": "Q5882870",
+      "title": "Hollywood Pinafore",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hollywood_Pinafore",
+      "wikipedia_extract": "Hollywood Pinafore, or The Lad Who Loved a Salary is a musical comedy in two acts by George S. Kaufman, with music by Arthur Sullivan, based on Gilbert and Sullivan's H.M.S. Pinafore. The adaptation transplants the maritime satire of the original Pinafore to a satire of the glamorous world of 1940s Hollywood film making, but Sullivan's score is retained with minor adaptations.",
+      "pageviews_yearly": 3461
+    },
+    {
+      "qid": "Q54988038",
+      "title": "I am the Captain of the Pinafore"
+    },
+    {
+      "qid": "Q60320097",
+      "title": "I know a youth"
+    },
+    {
+      "qid": "Q54988048",
+      "title": "I'm called Little Buttercup"
+    },
+    {
+      "qid": "Q3154075",
+      "title": "Iolanthe",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Arthur_Sullivan_Iolanthe-Overture.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q1591428",
+      "title": "Ivanhoe",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arthur-sullivan-1842-pp6",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ivanhoe_(opera)",
+      "wikipedia_extract": "Ivanhoe is a romantic opera in three acts based on the 1819 novel by Sir Walter Scott, with music by Sir Arthur Sullivan and a libretto by Julian Sturgis. It premiered at the Royal English Opera House on 31 January 1891 for a consecutive run of 155 performances, a record for a grand opera. Later that year it was performed six more times, making a total of 161 performances. It was toured by Carl Rosa Opera Company in 1894–1895 but has rarely been performed since. The first complete, fully professional recording was released in 2010 on the Chandos Records label.",
+      "pageviews_yearly": 9141
+    },
+    {
+      "qid": "Q6456037",
+      "title": "L'Île Enchantée",
+      "imslp_id": "L'île_enchantée_(Sullivan,_Arthur)",
+      "pdf_filename": "PMLP1180158-115783.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arthur-sullivan-1842-pp39",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/L'%C3%8Ele_Enchant%C3%A9e",
+      "wikipedia_extract": "L'Île Enchantée is an 1864 ballet by Arthur Sullivan written as a divertissement at the end of Vincenzo Bellini's La Sonnambula at Covent Garden. It was choreographed by Henri Desplaces.",
+      "pageviews_yearly": 2542
+    },
+    {
+      "qid": "Q127046569",
+      "title": "LUX EOI",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arthur-sullivan-1842-pp146"
+    },
+    {
+      "qid": "Q137400107",
+      "title": "Macbeth",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arthur-sullivan-1842-pp22",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Macbeth_(Sullivan)",
+      "wikipedia_extract": "Arthur Sullivan composed incidental music for a production of Shakespeare's Macbeth staged by Henry Irving at the Lyceum Theatre, London, in 1888. Sullivan later arranged the score into a concert suite, premiered at the Leeds Festival in 1889. The suite comprises an overture, four orchestral sections and two songs with orchestral accompaniment.",
+      "pageviews_yearly": 1354
+    },
+    {
+      "qid": "Q48742772",
+      "title": "Memphis Bound!",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Memphis_Bound",
+      "wikipedia_extract": "Memphis Bound is a 1945 American musical based on the Gilbert and Sullivan opera H.M.S. Pinafore. The score was adapted and augmented by Don Walker and Clay Warnick, with a libretto credited to Albert Barker and Sally Benson, \"with gratitude to W. S. Gilbert and Sir Arthur Sullivan.\" The original production starred an all-black cast including Bill \"Bojangles\" Robinson, Avon Long, Billy Daniels, Ada Brown, and Sheila Guyse.",
+      "pageviews_yearly": 1861
+    },
+    {
+      "qid": "Q500337",
+      "title": "Onward, Christian Soldiers",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Onward_Christians_Soldiers.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q54988065",
+      "title": "Our Great Mikado, Virtuous Man"
+    },
+    {
+      "qid": "Q3897647",
+      "title": "Patience",
+      "imslp_id": "Patience_(Sullivan,_Arthur)",
+      "pdf_filename": "PMLP37885-Sullivan_-_Patience_-_Full_Score__Autograph_MS_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arthur-sullivan-1842-pp30",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Patience_(opera)",
+      "wikipedia_extract": "Patience; or, Bunthorne's Bride, is a comic opera in two acts with music by Arthur Sullivan and libretto by W. S. Gilbert. The opera is a satire on the aesthetic movement of the 1870s and '80s in England and, more broadly, on fads, superficiality, vanity, hypocrisy and pretentiousness; it also satirises romantic love, rural simplicity and military bluster.",
+      "pageviews_yearly": 34301
+    },
+    {
+      "qid": "Q1091101",
+      "title": "Princess Ida",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arthur-sullivan-1842-pp32",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Princess_Ida",
+      "wikipedia_extract": "Princess Ida; or, Castle Adamant is a comic opera with music by Arthur Sullivan and a libretto by W. S. Gilbert. It was their eighth operatic collaboration of fourteen; the next was The Mikado. Princess Ida opened at the Savoy Theatre on 5 January 1884 and ran for 246 performances. The piece concerns a princess who founds a women's university and teaches that women are superior to men and should rule in their stead. Prince Hilarion, to whom she was betrothed in infancy, sneaks into the university, together with two friends, with the aim of collecting his bride. They disguise themselves as female students but are discovered, and all soon face a literal war between the sexes.",
+      "pageviews_yearly": 25941,
+      "movements": [
+        {
+          "qid": "Q124306622"
+        }
+      ]
+    },
+    {
+      "qid": "Q1091683",
+      "title": "Ruddigore",
+      "imslp_id": "Ruddigore_(Sullivan,_Arthur)",
+      "pdf_filename": "PMLP50454-Choruses_from_Ruddigore_-_Sullivan_arr_Davison_PLR.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arthur-sullivan-1842-pp34",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ruddigore",
+      "wikipedia_extract": "Ruddigore; or, The Witch's Curse, originally called Ruddygore, is a comic opera in two acts, with music by Arthur Sullivan and libretto by W. S. Gilbert. It is one of the Savoy Operas and the tenth of fourteen comic operas written together by Gilbert and Sullivan. It was first performed by the D'Oyly Carte Opera Company at the Savoy Theatre in London on 22 January 1887.",
+      "pageviews_yearly": 41169,
+      "movements": [
+        {
+          "qid": "Q60320097"
+        }
+      ]
+    },
+    {
+      "qid": "Q54988051",
+      "title": "Sorry her lot"
+    },
+    {
+      "qid": "Q20745619",
+      "title": "St. Gertrude",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arthur-sullivan-1842-pp165"
+    },
+    {
+      "qid": "Q116059757",
+      "title": "St. Kevin",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arthur-sullivan-1842-pp166"
+    },
+    {
+      "qid": "Q7661671",
+      "title": "Symphony in E",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arthur-sullivan-1842-pp44",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_in_E_(Sullivan)",
+      "wikipedia_extract": "\n\nThe Symphony in E, first performed on 10 March 1866 in London, was the only symphony composed by Arthur Sullivan. Since Sullivan's death, it has frequently been called the \"Irish\" Symphony as it was composed in Ireland, and as a homage to Mendelssohn's \"Scottish Symphony\".",
+      "pageviews_yearly": 3180
+    },
+    {
+      "qid": "Q7690792",
+      "title": "Te Deum Laudamus",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Te_Deum_Laudamus_(Sullivan)",
+      "wikipedia_extract": "Arthur Sullivan's Te Deum Laudamus—A Thanksgiving for Victory, usually known as the Boer War Te Deum, is a choral work composed by Sullivan in the last few months of his life. It was commissioned on behalf of Dean and Chapter of London's St. Paul's Cathedral by the cathedral's organist, Sir George Martin, as part of a grand service to celebrate the expected British victory in the Second Boer War.",
+      "pageviews_yearly": 2541
+    },
+    {
+      "qid": "Q7716195",
+      "title": "The Beauty Stone",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Beauty_Stone",
+      "wikipedia_extract": "The Beauty Stone is an opera, billed as a \"romantic musical drama\" in three acts, composed by Arthur Sullivan to a libretto by Arthur Wing Pinero and J. Comyns Carr. The medieval Faustian story concerns an ugly, crippled girl, who dreams of being beautiful and meeting a handsome prince. The Devil offers her a magical stone that confers perfect beauty to anyone who wears it. The stone is passed from one character to another, but eventually the prince recognizes the girl's beautiful soul, the stone is discarded, and the disappointed Devil leaves the town.",
+      "pageviews_yearly": 3727
+    },
+    {
+      "qid": "Q7718388",
+      "title": "The Black Mikado",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Black_Mikado",
+      "wikipedia_extract": "The Black Mikado is a musical comedy, based on Gilbert and Sullivan's The Mikado, adapted by Janos Bajtala, George Larnyoh and Eddie Quansah from W. S. Gilbert's original 1885 libretto and Arthur Sullivan's score. The show premiered on 24 April 1975 at the Cambridge Theatre in London, where it ran for 472 performances before going on a national tour. A 1976 production was mounted in Soweto, South Africa, where it played at the Diepkloof Hall. After this, the musical was not revived.",
+      "pageviews_yearly": 3398
+    },
+    {
+      "qid": "Q7727486",
+      "title": "The Contrabandista",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Contrabandista",
+      "wikipedia_extract": "The Contrabandista, or The Law of the Ladrones, is a two-act comic opera by Arthur Sullivan and F. C. Burnand. It premiered at St. George's Hall, in London, on 18 December 1867 under the management of Thomas German Reed, for a run of 72 performances. There were brief revivals in Manchester in 1874 and America in 1880. In 1894, it was revised into a new opera, The Chieftain, with a completely different second act.",
+      "pageviews_yearly": 4028
+    },
+    {
+      "qid": "Q7731876",
+      "title": "The Emerald Isle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Emerald_Isle",
+      "wikipedia_extract": "\nThe Emerald Isle; or, The Caves of Carrig-Cleena, is a two-act comic opera, with music by Arthur Sullivan and Edward German, and a libretto by Basil Hood. The plot concerns the efforts of an Irish patriot to resist the oppressive \"re-education\" programme of the English, which has robbed the Irish of their cultural heritage. A quirky \"Professor of Elocution\" who is hired by the English to continue this \"re-education\" of the Irish switches sides to help the Irish defend their culture. Romantic complications cause a confrontation between the Irish patriots and the superstitious English at the supposedly haunted caves of Carric-Cleena, and disguises are employed to hold the English off; but the professor ultimately comes up with a solution that works out happily for all.",
+      "pageviews_yearly": 5020
+    },
+    {
+      "qid": "Q7737071",
+      "title": "The Golden Legend",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arthur-sullivan-1842-pp94",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Golden_Legend_(cantata)",
+      "wikipedia_extract": "The Golden Legend is an 1886 cantata by Arthur Sullivan with libretto by Joseph Bennett, based on the 1851 poem of the same name by Henry Wadsworth Longfellow. The piece premiered at the triennial Leeds Music Festival. At least 17 performances of the cantata were given in Britain during the first year after its premiere in October 1886, and during Sullivan's lifetime it was widely considered his greatest and most successful work of serious music. Indeed, outside of the comic operas with W. S. Gilbert, this cantata was widely regarded as Sullivan's most successful large-scale composition.",
+      "pageviews_yearly": 5115
+    },
+    {
+      "qid": "Q3987314",
+      "title": "The Gondoliers",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arthur-sullivan-1842-pp36",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Gondoliers",
+      "wikipedia_extract": "\nThe Gondoliers; or, The King of Barataria is a Savoy Opera, with music by Arthur Sullivan and libretto by W. S. Gilbert. It premiered at the Savoy Theatre on 7 December 1889 and ran for a very successful 554 performances, closing on 30 June 1891. This was the twelfth comic opera collaboration of fourteen between Gilbert and Sullivan.",
+      "pageviews_yearly": 34226
+    },
+    {
+      "qid": "Q3987345",
+      "title": "The Grand Duke",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arthur-sullivan-1842-pp38",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Grand_Duke",
+      "wikipedia_extract": "The Grand Duke; or, The Statutory Duel, is the final Savoy Opera written by librettist W. S. Gilbert and composer Arthur Sullivan, their fourteenth and last opera together. It premiered at the Savoy Theatre on 7 March 1896, and ran for 123 performances. Despite a successful opening night, the production had a relatively short run and was the partnership's only financial failure, and the two men never worked together again. In recent decades, the opera has been revived professionally, first in the US and then in the UK.",
+      "pageviews_yearly": 14327
+    },
+    {
+      "qid": "Q3521660",
+      "title": "The Lost Chord",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Sullivan_Arthur_The_Lost_Chord.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q137292013",
+      "title": "The Merchant of Venice",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arthur-sullivan-1842-pp42",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Merchant_of_Venice_(Sullivan)",
+      "wikipedia_extract": "Arthur Sullivan composed his suite of incidental music, The Merchant of Venice, in 1871 for a production of Shakespeare's play. It is in seven movements. There is one movement in which the orchestra is joined by a solo singer: the words are not by Shakespeare, but by the 19th-century poet Franceso Rizzelli. The success of this theatre music by Sullivan led within weeks to the beginning of his twenty-five-year collaboration with the librettist W. S. Gilbert.",
+      "pageviews_yearly": 965
+    },
+    {
+      "qid": "Q137519458",
+      "title": "The Merry Wives of Windsor",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Merry_Wives_of_Windsor_(Sullivan)",
+      "wikipedia_extract": "Arthur Sullivan wrote incidental music for a production of the then seldom staged Shakespeare comedy The Merry Wives of Windsor presented for the 1874–75 Christmas season at the Gaiety Theatre in London. This was the third suite of incidental music that Sullivan wrote for a play. The music, though well received, is not among the composer's best-known, but has been recorded and released on CD and online.",
+      "pageviews_yearly": 603
+    },
+    {
+      "qid": "Q1195818",
+      "title": "The Mikado",
+      "imslp_id": "The_Mikado_(Sullivan,_Arthur)",
+      "pdf_filename": "PMLP1104711-Brightly_Dawns_-_Euphonium.pdf",
+      "has_pdf": false,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arthur-sullivan-1842-pp33",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Mikado",
+      "wikipedia_extract": "The Mikado; or, The Town of Titipu is a comic opera in two acts, with music by Arthur Sullivan and libretto by W. S. Gilbert, their ninth of fourteen operatic collaborations. It opened on 14 March 1885, in London, where it ran at the Savoy Theatre for 672 performances, the second-longest run for any work of musical theatre and one of the longest runs of any theatre piece up to that time. By the end of 1885, it was estimated that, in Europe and America, at least 150 companies were producing the opera.",
+      "pageviews_yearly": 219954
+    },
+    {
+      "qid": "Q7751395",
+      "title": "The Mikado",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arthur-sullivan-1842-pp33",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Mikado_(1939_film)",
+      "wikipedia_extract": "The Mikado is a 1939 British musical comedy film based on Gilbert and Sullivan's 1885 comic opera The Mikado. Shot in Technicolor, the film stars Martyn Green as Ko-Ko, Sydney Granville as Pooh-Bah, the American singer Kenny Baker as Nanki-Poo and Jean Colin as Yum-Yum. Many of the other leads and choristers were or had been members of the D'Oyly Carte Opera Company.",
+      "pageviews_yearly": 10311
+    },
+    {
+      "qid": "Q18152710",
+      "title": "The Mikado",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arthur-sullivan-1842-pp33",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Mikado_(1967_film)",
+      "wikipedia_extract": "The Mikado is a 1967 British musical film adaptation of Gilbert and Sullivan's 1885 comic opera of the same name. The film was directed by Stuart Burge and was a slightly edited adaptation of the D'Oyly Carte Opera Company's production of The Mikado and used all D'Oyly Carte singers.",
+      "pageviews_yearly": 8525
+    },
+    {
+      "qid": "Q1215463",
+      "title": "The Pirates of Penzance",
+      "has_midi": true,
+      "midi_files": [
+        "midi/The_Pirates_of_Penzance_-_Act_1_03_Song_-_Pirate_King_and_Chorus.mid",
+        "midi/The_Pirates_of_Penzance_-_Act_1_10_Duet_-_Mabel_Frederic_Chorus.mid",
+        "midi/The_Pirates_of_Penzance_-_Act_1_02_Song_Ruth.mid",
+        "midi/The_Pirates_of_Penzance_-_Act_1_01_Opening_Chorus_of_Pirates.mid",
+        "midi/The_Pirates_of_Penzance_-_Act_1_09_Edith_Kate_Chorus_of_Girls.mid",
+        "midi/The_Pirates_of_Penzance_-_Act_1_08_Air_Mabel_and_Chorus.mid",
+        "midi/The_Pirates_of_Penzance_-_Act_1_05_Chorus_of_Maidens.mid",
+        "midi/The_Pirates_of_Penzance_-_Act_1_06_Recit_Edith_Kate_Frederic_Chorus.mid",
+        "midi/The_Pirates_of_Penzance_-_Act_1_04_Recit_Duet_Ruth_Frederic.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q1754164",
+      "title": "The Pirates of Penzance",
+      "has_midi": true,
+      "midi_files": [
+        "midi/The_Pirates_of_Penzance_-_Act_1_13_Major_Generals_Song.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q7761563",
+      "title": "The Rose of Persia",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arthur-sullivan-1842-pp12",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Rose_of_Persia",
+      "wikipedia_extract": "\nThe Rose of Persia; or, The Story-Teller and the Slave, is a two-act comic opera, with music by Arthur Sullivan and a libretto by Basil Hood. It premiered at the Savoy Theatre on 29 November 1899, closing on 28 June 1900 after a profitable run of 211 performances. The opera then toured, had a brief run in America and played elsewhere throughout the English-speaking world.",
+      "pageviews_yearly": 4222
+    },
+    {
+      "qid": "Q3989381",
+      "title": "The Sorcerer",
+      "imslp_id": "The_Sorcerer_(Sullivan,_Arthur)",
+      "pdf_filename": "PMLP4605-SorcererVSa1__etc_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arthur-sullivan-1842-pp27",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Sorcerer",
+      "wikipedia_extract": "The Sorcerer is a two-act comic opera, with a libretto by W. S. Gilbert and music by Arthur Sullivan. It was the British duo's third operatic collaboration. The plot of The Sorcerer is based on a Christmas story, An Elixir of Love, that Gilbert wrote for The Graphic magazine in 1876. A young man, Alexis, is obsessed with the idea of love levelling all ranks and social distinctions. To promote his beliefs, he invites the proprietor of J. W. Wells & Co., Family Sorcerers, to brew a love potion. This causes everyone in the village to fall in love with the first person they see and results in the pairing of comically mismatched couples. In the end, Wells must sacrifice his life to break the spell.",
+      "pageviews_yearly": 25164
+    },
+    {
+      "qid": "Q54988082",
+      "title": "The Sun, Whose Rays Are All Ablaze"
+    },
+    {
+      "qid": "Q7775096",
+      "title": "The Window",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arthur-sullivan-1842-pp218",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Window_(song_cycle)",
+      "wikipedia_extract": "The Window; or, The Songs of the Wrens is a song cycle by Arthur Sullivan with words by Alfred, Lord Tennyson. The songs in the cycle tell the story of the hopes and fears of a lover over many months until his wedding day in the spring.",
+      "pageviews_yearly": 6332
+    },
+    {
+      "qid": "Q499778",
+      "title": "The Yeomen of the Guard",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arthur-sullivan-1842-pp35",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Yeomen_of_the_Guard",
+      "wikipedia_extract": "The Yeomen of the Guard; or, The Merryman and His Maid, is a Savoy Opera, with music by Arthur Sullivan and libretto by W. S. Gilbert. It premiered at the Savoy Theatre on 3 October 1888 and ran for 423 performances. This was the eleventh collaboration of fourteen between Gilbert and Sullivan.",
+      "pageviews_yearly": 34621,
+      "movements": [
+        {
+          "qid": "Q60322732"
+        }
+      ]
+    },
+    {
+      "qid": "Q54988053",
+      "title": "The hours creep on apace"
+    },
+    {
+      "qid": "Q54988056",
+      "title": "The nightingale…A Maiden fair to see"
+    },
+    {
+      "qid": "Q972539",
+      "title": "Thespis",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arthur-sullivan-1842-pp25",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Thespis_(opera)",
+      "wikipedia_extract": "Thespis, or The Gods Grown Old, is an operatic extravaganza that was the first collaboration between dramatist W. S. Gilbert and composer Arthur Sullivan. No musical score of Thespis was ever published, and most of the music has been lost. Gilbert and Sullivan went on to become the most famous and successful artistic partnership in Victorian England, creating a string of enduring comic opera hits, including H.M.S. Pinafore, The Pirates of Penzance and The Mikado.",
+      "pageviews_yearly": 14509
+    },
+    {
+      "qid": "Q123235761",
+      "title": "Three Little Maids From School Are We",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Three_Little_Maids_from_School_Are_We",
+      "wikipedia_extract": "\"Three Little Maids from School Are We\", sometimes listed as \"Three Little Maids\", is a song from Act I of Gilbert and Sullivan's comic opera The Mikado. The song is a trio for three female characters who are schoolmates; at the end of the song, the three are joined by the chorus of female schoolmates. The three friends sing that they are \"filled to the brim with girlish glee\", find \"fun\" in life and \"come from a ladies' seminary\".",
+      "pageviews_yearly": 19229
+    },
+    {
+      "qid": "Q250903",
+      "title": "Trial by Jury",
+      "imslp_id": "Trial_by_Jury_(Sullivan,_Arthur)",
+      "pdf_filename": "PMLP48444-115817.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arthur-sullivan-1842-pp26",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Trial_by_Jury",
+      "wikipedia_extract": "Trial by Jury is a comic opera in one act, with music by Arthur Sullivan and libretto by W. S. Gilbert. It was first produced on 25 March 1875, at London's Royalty Theatre, where it initially ran for 131 performances and was considered a hit, receiving critical praise and outrunning its popular companion piece, Jacques Offenbach's La Périchole. The story concerns a \"breach of promise of marriage\" lawsuit in which the judge and legal system are the objects of lighthearted satire. Gilbert based the libretto of Trial by Jury on an operetta parody that he had written in 1868.",
+      "pageviews_yearly": 28026
+    },
+    {
+      "qid": "Q54988041",
+      "title": "When I was a lad"
+    },
+    {
+      "qid": "Q60322732",
+      "title": "When Maiden Loves, She Sits And Sighs"
+    }
+  ]
+}

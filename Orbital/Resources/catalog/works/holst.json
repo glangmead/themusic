@@ -1,0 +1,325 @@
+{
+  "composer_slug": "holst",
+  "composer_qid": "Q200867",
+  "work_count": 37,
+  "midi_file_count": 13,
+  "works": [
+    {
+      "qid": "Q95742683",
+      "title": "Sita",
+      "date": "1906-00-00"
+    },
+    {
+      "qid": "Q4974339",
+      "title": "Brook Green Suite",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gustav-holst-1874-pp58",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Brook_Green_Suite",
+      "wikipedia_extract": "Gustav Holst's Brook Green Suite, H. 190, was written in 1933 for St Paul's Girls' School junior orchestra for strings and consists of 3 movements.",
+      "pageviews_yearly": 3949,
+      "date": "1933-00-00"
+    },
+    {
+      "qid": "Q78156574",
+      "title": "2 Songs without Words",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Song_Without_Words_Ill_Love_My_Love_For_Piano_and_Viola.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q5104943",
+      "title": "A Choral Fantasia",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gustav-holst-1874-pp113",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/A_Choral_Fantasia_(Holst)",
+      "wikipedia_extract": "A Choral Fantasia, Op. 51, is a work Gustav Holst composed in 1930, setting a selection of verses from Robert Bridges' Ode to Music. Featuring a concertante organ part, A Choral Fantasia also involves a soprano soloist, chorus, string orchestra, brass and percussion.",
+      "pageviews_yearly": 1678
+    },
+    {
+      "qid": "Q126325725",
+      "title": "A Fugal Concerto",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gustav-holst-1874-pp63",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/A_Fugal_Concerto",
+      "wikipedia_extract": "\n\n\nA Fugal Concerto by the English composer Gustav Holst is a short concerto in three movements for flute, oboe and string orchestra. It was composed and first performed in 1923. Influenced by the counterpoint of J. S. Bach, it is an early example of neoclassicism. Early reviews of the concerto were mixed, but it has since come to be seen as an attractive, if slight, example of Holst's neoclassical style, and it has been recorded many times.",
+      "pageviews_yearly": 2337
+    },
+    {
+      "qid": "Q125372044",
+      "title": "A Fugal Overture",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gustav-holst-1874-pp53",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/A_Fugal_Overture",
+      "wikipedia_extract": "\n\n\nA Fugal Overture, Op. 40/1, H 151, is a short concert overture for full orchestra by the English composer Gustav Holst. It was written in 1922 and first performed in 1923, and is a very early example of musical neoclassicism. Though there were conflicting opinions from Holst's contemporaries about the work's merits, it has since come to be considered an attractive and exciting, if slight, example of Holst's later style.",
+      "pageviews_yearly": 1674
+    },
+    {
+      "qid": "Q17232094",
+      "title": "A Moorside Suite",
+      "imslp_id": "A_Moorside_Suite,_H.173_(Holst,_Gustav)",
+      "pdf_filename": "PMLP205132-Holst_--_A_Moorside_Suite_brass_band_1.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gustav-holst-1874-pp55",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/A_Moorside_Suite",
+      "wikipedia_extract": "\n\nA Moorside Suite (H.173) is a work for brass band by the English composer Gustav Holst. It was commissioned by the BBC and the National Brass Band Festival Committee in 1927 for the final of the 1928 National Brass Band Championships of Great Britain at Crystal Palace. The suite comprises three movements - Scherzo, Nocturne and March.",
+      "pageviews_yearly": 4025
+    },
+    {
+      "qid": "Q4812466",
+      "title": "At the Boar's Head",
+      "imslp_id": "At_the_Boar's_Head,_Op.42_(Holst,_Gustav)",
+      "pdf_filename": "PMLP1483684-PMLUS06279-GHolst_At_the_Boars_Head_vocalscore.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gustav-holst-1874-pp12",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/At_the_Boar's_Head",
+      "wikipedia_extract": "At the Boar's Head is an opera in one act by the English composer Gustav Holst, his op. 42. Holst himself described the work as \"A Musical Interlude in One Act\". The libretto, by the composer himself, is based on Shakespeare's Henry IV, Part 1 and Henry IV, Part 2.",
+      "pageviews_yearly": 3540
+    },
+    {
+      "qid": "Q116059587",
+      "title": "Cranham"
+    },
+    {
+      "qid": "Q123454259",
+      "title": "Double Concerto",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gustav-holst-1874-pp64",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Double_Concerto_(Holst)",
+      "wikipedia_extract": "\n\n\nThe Double Concerto for Two Violins and Orchestra is a work by Gustav Holst in three movements played without a break. It was written in 1929 and first performed in 1930 by its dedicatees, the sisters Adila Fachiri and Jelly d'Arányi. Though now praised by many critics, it has never been frequently performed in the concert hall. It is characterized by fugal counterpoint, folk-like melody, and bitonality without dissonance.",
+      "pageviews_yearly": 1929
+    },
+    {
+      "qid": "Q19872942",
+      "title": "Egdon Heath",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gustav-holst-1874-pp54",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Egdon_Heath_(Holst)",
+      "wikipedia_extract": "\n\nEgdon Heath, Op. 47, H. 172, subtitled \"A Homage to Thomas Hardy\", is a tone poem by Gustav Holst, written in 1927. Holst considered it his most perfectly realised composition.",
+      "pageviews_yearly": 4230
+    },
+    {
+      "qid": "Q3507597",
+      "title": "First Choral Symphony",
+      "imslp_id": "Choral_Symphony,_Op.41_(Holst,_Gustav)",
+      "pdf_filename": "PMLP859844-GHolst_First_Choral_Symphony__Op.41_vocal-score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gustav-holst-1874-pp110",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Choral_Symphony_(Holst)",
+      "wikipedia_extract": "\nThe Choral Symphony is a work by Gustav Holst for soprano soloist, chorus, and orchestra in a setting of verses by John Keats. Written in 1923–24, it was premiered in Leeds Town Hall on October 7, 1925, conducted by Albert Coates with Dorothy Silk as soloist. The same performers gave the work's second performance three weeks later in Queen's Hall, London. The work is sometimes known as the First Choral Symphony, although a planned 'second Choral Symphony' never progressed beyond some uncompleted sketches.",
+      "pageviews_yearly": 2606
+    },
+    {
+      "qid": "Q4324726",
+      "title": "First Suite in E-flat for Military Band",
+      "has_midi": true,
+      "midi_files": [
+        "midi/First_Suite_in_Ea.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q90162559",
+      "title": "From glory to glory advancing, we prais thee, o Lord"
+    },
+    {
+      "qid": "Q116550385",
+      "title": "Hammersmith",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gustav-holst-1874-pp56",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hammersmith_(Holst)",
+      "wikipedia_extract": "Hammersmith: Prelude and Scherzo, more commonly known as just Hammersmith, Op. 52, is a wind band work composed by English composer Gustav Holst in 1930, with a corresponding orchestral version. Commissioned by the BBC Military Band, the piece is based on Holst's love for the London borough of Hammersmith. The writing is more musically challenging than Holst's other wind band works, and is a wind band essential today. A typical performance runs for 14 minutes.",
+      "pageviews_yearly": 4368
+    },
+    {
+      "qid": "Q135838446",
+      "title": "Hymns from the Rig Veda",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gustav-holst-1874-pp240",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hymns_from_the_Rig_Veda",
+      "wikipedia_extract": "Hymns from the Rig Veda, Op. 24 and Op. 26, is a collection of vedic hymns by the English composer Gustav Holst, completed in the period from 1907 to 1909. There are 23 published hymns, based on texts that Holst translated himself from Sanskrit literature. He also incorporated elements of the Indian classical music tradition when composing the work.",
+      "pageviews_yearly": 13473
+    },
+    {
+      "qid": "Q1198881",
+      "title": "I Vow to Thee, My Country",
+      "imslp_id": "I_vow_to_thee,_my_country,_H.148_(Holst,_Gustav)",
+      "pdf_filename": "PMLP838901-I_vow_to_thee_my_country.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gustav-holst-1874-pp127",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/I_Vow_to_Thee%2C_My_Country",
+      "wikipedia_extract": "\"I Vow to Thee, My Country\" is a British patriotic hymn, created in 1921 when Gustav Holst set words written earlier by Cecil Spring Rice. The music originated as a wordless melody, which Holst later named \"Thaxted\", taken from the \"Jupiter\" movement of Holst's 1917 suite The Planets.",
+      "pageviews_yearly": 150607
+    },
+    {
+      "qid": "Q3797415",
+      "title": "In the Bleak Midwinter",
+      "has_midi": true,
+      "midi_files": [
+        "midi/In_the_Bleak_Midwinter.mid",
+        "midi/In_the_bleak_midwinter_1.mid",
+        "midi/Gustav_Holst_-_In_the_Bleak_Midwinter.mid",
+        "midi/In_the_Bleak_Midwinter_2.mid",
+        "midi/In_the_bleak_midwinter_3.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q135650090",
+      "title": "Indra",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Hymn_to_Indra_-_Gustav_Holst.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q15876934",
+      "title": "Japanese Suite",
+      "imslp_id": "Japanese_Suite,_Op.33_(Holst,_Gustav)",
+      "pdf_filename": "PMLP934418-Holst--Japanese-Suite--score-no-preface.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gustav-holst-1874-pp51",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Japanese_Suite",
+      "wikipedia_extract": "Japanese Suite, Op. 33 is a short orchestral work by the English composer Gustav Holst, completed in 1915. It was the first of Holst's works to be performed at a Queen's Hall Promenade Concert, on 1 September 1919, with the composer conducting the New Queen's Hall Orchestra. After this there were a small number of performances in the British provinces.",
+      "pageviews_yearly": 5019
+    },
+    {
+      "qid": "Q137258643",
+      "title": "Lansdown Castle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lansdown_Castle",
+      "wikipedia_extract": "Lansdown Castle or The Sorcerer of Tewkesbury is a two-act operetta written in 1892 by the English composer Gustav Holst, to a libretto by Colonel A. C. Cunningham.",
+      "pageviews_yearly": 1021
+    },
+    {
+      "qid": "Q124367102",
+      "title": "Lyric Movement",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gustav-holst-1874-pp65",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lyric_Movement",
+      "wikipedia_extract": "\n\n\nThe Lyric Movement for viola and small orchestra is a short concertante work by Gustav Holst. It was one of his last compositions, being written in 1933. It was first performed in 1934, the year of his death, by its dedicatee, the violist Lionel Tertis, and the BBC Symphony Orchestra conducted by Adrian Boult. Though its early performers found the Lyric Movement too austere for their tastes, it has more recently been considered one of Holst's most successful later works. It has been recorded several times.",
+      "pageviews_yearly": 1982
+    },
+    {
+      "qid": "Q136085360",
+      "title": "Mr Shilkret's Maggot",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mr_Shilkret's_Maggot",
+      "wikipedia_extract": "Mr Shilkret's Maggot is a short piece for jazz band by the English composer Gustav Holst, completed in 1932. It was composed at the request of Nat Shilkret, an American musician, composer and musical director.",
+      "pageviews_yearly": 1129
+    },
+    {
+      "qid": "Q1248825",
+      "title": "Quatermass II",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quatermass_II",
+      "wikipedia_extract": "Quatermass II is a British science fiction serial, originally broadcast by BBC Television in the autumn of 1955. It is the second in the Quatermass series by writer Nigel Kneale, and the oldest of those serials to survive in its entirety in the BBC archives.",
+      "pageviews_yearly": 25764
+    },
+    {
+      "qid": "Q3474583",
+      "title": "Savitri",
+      "imslp_id": "Sāvitri,_Op.25_(Holst,_Gustav)",
+      "pdf_filename": "PMLP261808-Holst_-_Savitri__vocal_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gustav-holst-1874-pp9",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/S%C4%81vitri_(opera)",
+      "wikipedia_extract": "Sāvitri is a chamber opera in one act with music composed by Gustav Holst in 1908, his Opus 25, to his own libretto. The story is based on the episode of Savitri and Satyavan from the Mahābhārata, which was also included in Specimens of Old Indian Poetry and Idylls from the Sanskrit. The opera features three solo singers, a wordless female chorus, and a chamber orchestra of 12 musicians. Holst had made at least six earlier attempts at composing opera before arriving at Sāvitri.",
+      "pageviews_yearly": 4519
+    },
+    {
+      "qid": "Q2641380",
+      "title": "Second Suite in F for Military Band",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Gustav_Holsts_March_from_the_Second_Suite_in_F_for_Military_band.mid",
+        "midi/Second_Suite_in_F.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q2615181",
+      "title": "St Paul's Suite"
+    },
+    {
+      "qid": "Q20812719",
+      "title": "Suites for Military Band",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gustav-holst-1874-pp45",
+      "movements": [
+        {
+          "qid": "Q4324726"
+        },
+        {
+          "qid": "Q2641380"
+        }
+      ]
+    },
+    {
+      "qid": "Q7711508",
+      "title": "Thaxted",
+      "has_midi": true,
+      "midi_files": [
+        "midi/O_God_Beyond_All_Praising.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q7716445",
+      "title": "The Bells",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Bells_(1931_film)",
+      "wikipedia_extract": "The Bells is a 1931 British drama film directed by Harcourt Templeman and Oscar Werndorff and starring Donald Calthrop, Jane Welsh, and Edward Sinclair.",
+      "pageviews_yearly": 3014
+    },
+    {
+      "qid": "Q95833404",
+      "title": "The Cloud Messenger",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gustav-holst-1874-pp104"
+    },
+    {
+      "qid": "Q135959294",
+      "title": "The Cloud Messenger",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gustav-holst-1874-pp104",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Cloud_Messenger_(Holst)",
+      "wikipedia_extract": "The Cloud Messenger, Op. 30, is a cantata for contralto solo, chorus and orchestra by the English composer Gustav Holst, based on Meghadūta, an ancient Sanskrit poem. Holst worked on it for several years, and it was completed in 1910. After some revisions, it was published in 1912.",
+      "pageviews_yearly": 1771
+    },
+    {
+      "qid": "Q3290124",
+      "title": "The Perfect Fool",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gustav-holst-1874-pp52",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Perfect_Fool",
+      "wikipedia_extract": "The Perfect Fool is an opera in one act with music and libretto by the English composer Gustav Holst. Holst composed the work over the period of 1918 to 1922. The opera received its premiere at the Covent Garden Theatre, London, on 14 May 1923. Holst had originally asked Clifford Bax to write the libretto, but Bax declined.",
+      "pageviews_yearly": 4460
+    },
+    {
+      "qid": "Q303508",
+      "title": "The Planets",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Holst_The_Planets-Neptune_Excerpt_Choral_Finale_with_Piano.mid",
+        "midi/Jupiter_1.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q113625001",
+      "title": "This Have I Done for My True Love",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gustav-holst-1874-pp165",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/This_Have_I_Done_for_My_True_Love",
+      "wikipedia_extract": "\"This Have I Done for My True Love\", or \"Tomorrow Shall Be My Dancing Day\", Op. 34, no. 1 [H128], is a motet or part song composed in 1916 by Gustav Holst. The words are taken from an ancient carol, and the music is so strongly influenced by English folk music that it has sometimes been mistaken for a traditional folk song itself. It has often been described as a small masterpiece.",
+      "pageviews_yearly": 2349
+    },
+    {
+      "qid": "Q136196578",
+      "title": "Two Eastern Pictures",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gustav-holst-1874-pp136",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Two_Eastern_Pictures",
+      "wikipedia_extract": "Two Eastern Pictures is a short choral work by the English composer Gustav Holst, completed in 1911. Holst based his text on parts of the ancient Indian poem Ṛtusaṃhāra, which he translated from Sanskrit into English.",
+      "pageviews_yearly": 1330
+    },
+    {
+      "qid": "Q4387499",
+      "title": "World in Union",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gustav-holst-1874-pp127",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/World_in_Union",
+      "wikipedia_extract": "\n\"World in Union\" is a theme song for the Rugby World Cup. The song's lyrics are by Charlie Skarbek, set to the melody \"Thaxted\" by Gustav Holst.",
+      "pageviews_yearly": 21388
+    }
+  ]
+}

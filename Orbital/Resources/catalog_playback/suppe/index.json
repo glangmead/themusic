@@ -1,0 +1,75 @@
+{
+  "composer_name": "Franz von Suppé",
+  "name_last_first": "Suppé, Franz von",
+  "slug": "suppe",
+  "wiki_page": "https://en.wikipedia.org/wiki/Franz_von_Suppé",
+  "apple_music_playlist": "",
+  "era": "Romantic",
+  "dates": "1819 – 1895",
+  "nationality": "AUT",
+  "notable": false,
+  "works": [
+    {
+      "title": "poet and peasant overture wwq",
+      "musicxml": "musicxml/poet_and_peasant_overture_wwq.mxl",
+      "midi": "midi/poet_and_peasant_overture_wwq.mid",
+      "form": "Overture",
+      "time_signature": "4/4",
+      "instruments": [
+        "Flute",
+        "Oboe",
+        "B♭ Clarinet",
+        "Horn in F",
+        "Bassoon"
+      ],
+      "tempo_markings": [
+        "Allegro Strepitoso ♩ = 160"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.68,
+        "n_favorites": 19,
+        "n_views": 682,
+        "duration_seconds": 421.8809369352823,
+        "n_notes": 5815,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "woodwind-quintet-woodwindquintet-flute-oboe-clarinet-horn-frenchhorn-bassoon-overture-suppe-franzvonsuppe-chambermusic-chamber",
+        "musescore_url": "https://musescore.com/user/1847826/scores/5733821",
+        "musescore_duration": "08:24"
+      },
+      "key": "D major",
+      "key_changes": [
+        "D major",
+        "B♭ major"
+      ],
+      "instruments_gm": [
+        "Flute",
+        "Oboe",
+        "Clarinet",
+        "French Horn",
+        "Bassoon"
+      ],
+      "tempo_bpm": 66,
+      "n_measures": 395,
+      "n_parts": 5,
+      "n_notes": 5664,
+      "notes_per_second": 13.4,
+      "apple_music_search_query": "Suppé D major poet and peasant overture wwq",
+      "parent_work_title": "Poet and Peasant Overture",
+      "year_composed": 1846,
+      "wikidata_id": "Q61756538",
+      "wikidata_title": "Poet and Peasant",
+      "musicbrainz_id": "c54bedea-1646-4bb6-b022-951689c96ecb",
+      "wikidata_match_method": "title_substring",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Supp%C3%A9%20poet%20and%20peasant%20overture%20wwq",
+      "display_title": "Poet and Peasant"
+    }
+  ],
+  "birth_year": 1819,
+  "death_year": 1895,
+  "wikipedia_extract": "Franz von Suppé, born Francesco Ezechiele Ermenegildo de Suppé (18 April 1819 – 21 May 1895) was an Austrian composer of light operas and other theatre music. He came from the Kingdom of Dalmatia, Austro-Hungarian Empire (now part of Croatia). A composer and conductor of the Romantic period, he is notable for his four dozen operettas, including the first operetta to a German libretto.",
+  "wikidata_id": "Q310431"
+}

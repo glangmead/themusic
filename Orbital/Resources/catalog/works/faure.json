@@ -1,0 +1,600 @@
+{
+  "composer_slug": "faure",
+  "composer_qid": "Q104919",
+  "work_count": 71,
+  "midi_file_count": 2,
+  "works": [
+    {
+      "qid": "Q125253307",
+      "title": "2 Mélodies, Op.46",
+      "imslp_id": "2_Mélodies,_Op.46_(Fauré,_Gabriel)",
+      "pdf_filename": "PMLP54710-Faure_-_Clair_de_lune_for_Violin_Cello_and_Piano_Op46__Perilhou__cello.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1887-00-00",
+      "movements": [
+        {
+          "qid": "Q730599"
+        }
+      ]
+    },
+    {
+      "qid": "Q730599",
+      "title": "Clair de lune",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Clair_de_lune_(Faur%C3%A9)",
+      "wikipedia_extract": "\"Clair de lune\", (\"Moonlight\") Op. 46 No 2, is a song by Gabriel Fauré, composed in 1887 to words by Paul Verlaine.",
+      "pageviews_yearly": 19088,
+      "date": "1887-01-01"
+    },
+    {
+      "qid": "Q105826038",
+      "title": "Shylock Suite, Op. 57",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shylock_(Faur%C3%A9)",
+      "wikipedia_extract": "The Shylock Suite, Op. 57 is a six-movement work by Gabriel Fauré, first performed in 1890. In addition to four purely orchestral movements it includes two serenades for solo tenor with orchestral accompaniment. The composer constructed the suite from incidental music he had written the previous year for Edmond Haraucourt's play Shylock, an adaptation of Shakespeare's The Merchant of Venice, presented at the Théâtre de l'Odéon in Paris. The theatre music had been written for a small orchestra, and Fauré greatly expanded the orchestration for the concert suite.",
+      "pageviews_yearly": 3809,
+      "date": "1890-00-00"
+    },
+    {
+      "qid": "Q132355834",
+      "title": "Romance",
+      "imslp_id": "Romance,_Op.69_(Fauré,_Gabriel)",
+      "pdf_filename": "PMLP59443-Fauré_-_Romance__Op._69__Cello_and_Piano_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gabriel-faure-1845-pp87",
+      "date": "1894-00-00"
+    },
+    {
+      "qid": "Q3206741",
+      "title": "La bonne chanson",
+      "imslp_id": "La_bonne_chanson,_Op.61_(Fauré,_Gabriel)",
+      "pdf_filename": "PMLP54722-Bonne.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gabriel-faure-1845-pp153",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Bonne_Chanson_(Faur%C3%A9)",
+      "wikipedia_extract": "La Bonne Chanson, Op. 61, by Gabriel Fauré, is a song cycle of nine mélodies for voice and piano. He composed it during 1892–94; in 1898 he created a version for voice, piano and string quintet. The cycle is based on nine of the poems from the collection of the same name by Paul Verlaine. According to Fauré himself, the song cycle contains a number of musical themes which recur from song to song. He had devised this technique for the 1891 song cycle Cinq mélodies \"de Venise\", which was also based on Verlaine's poetry.",
+      "pageviews_yearly": 4020,
+      "date": "1894-02-00"
+    },
+    {
+      "qid": "Q3033966",
+      "title": "Dolly",
+      "imslp_id": "Dolly_Suite,_Op.56_(Fauré,_Gabriel)",
+      "pdf_filename": "PMLP10472-Fau_Dol_V_p.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gabriel-faure-1845-pp97",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dolly_(Faur%C3%A9)",
+      "wikipedia_extract": "The Dolly Suite, Op. 56, is a collection of pieces for piano duet by Gabriel Fauré. It consists of six short pieces written or revised between 1893 and 1896, to mark the birthdays and other events in the life of the daughter of the composer's mistress, Emma Bardac.",
+      "pageviews_yearly": 14978,
+      "date": "1896-00-00"
+    },
+    {
+      "qid": "Q3526245",
+      "title": "Theme and Variations",
+      "imslp_id": "Thème_et_variations,_Op.73_(Fauré,_Gabriel)",
+      "pdf_filename": "Faure_-_Theme_and_Variations__piano_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gabriel-faure-1845-pp89",
+      "date": "1896-12-10"
+    },
+    {
+      "qid": "Q2705084",
+      "title": "Pelléas et Mélisande",
+      "imslp_id": "Pelléas_et_Mélisande,_Op.80_(Fauré,_Gabriel)",
+      "pdf_filename": "PMLP52649-Fau_Fil.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gabriel-faure-1845-pp16",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pell%C3%A9as_et_M%C3%A9lisande_(Faur%C3%A9)",
+      "wikipedia_extract": "Pelléas et Mélisande, Op. 80 is a suite derived from incidental music by Gabriel Fauré for Maurice Maeterlinck's play of the same name. He was the first of four leading composers to write music inspired by Maeterlinck's drama. Debussy, Schoenberg and Sibelius followed in the first decade of the 20th century.",
+      "pageviews_yearly": 14032,
+      "date": "1898-00-00"
+    },
+    {
+      "qid": "Q3490238",
+      "title": "Cello Sonata No. 1 (Fauré)",
+      "imslp_id": "Cello_Sonata_No.1,_Op.109_(Fauré,_Gabriel)",
+      "pdf_filename": "PMLP55541-Faure-Cello-Sonata-No1-FE-part.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gabriel-faure-1845-pp37",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cello_Sonata_No._1_(Faur%C3%A9)",
+      "wikipedia_extract": "The Cello Sonata No. 1 in D minor, Op. 109 is the first of the two cello sonatas by Gabriel Fauré. Composed in 1917 at Saint-Raphaël and Paris, it was premiered on 10 November 1917 at a concert of the Société Nationale de Musique by Gérard Hekking as the cellist and Alfred Cortot as the pianist. At the same concert, the Second Violin Sonata was also premiered. The dedicatee of the work was the cellist Louis Hasselmans, who gave a second performance at the Théâtre des Champs-Élysées in 1918.",
+      "pageviews_yearly": 1912,
+      "date": "1917-00-00"
+    },
+    {
+      "qid": "Q3490217",
+      "title": "Violin Sonata No. 2 (Fauré)",
+      "imslp_id": "Violin_Sonata_No.2,_Op.108_(Fauré,_Gabriel)",
+      "pdf_filename": "Faure_op.108_Violinsonate_Nr.2.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gabriel-faure-1845-pp31",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Violin_Sonata_No._2_(Faur%C3%A9)",
+      "wikipedia_extract": "The Violin Sonata No. 2 in E minor, Op. 108, was written by Gabriel Fauré in 1916, more than 40 years after the first violin sonata. It was premiered on 10 November 1917 at a concert of the Société Nationale de Musique with Louis Capet on the violin and the composer himself playing the piano. At the same concert, the Cello Sonata No. 1 was also premiered. It was dedicated to Queen Elisabeth of Belgium, who was a violinist, and had shown sympathy towards Fauré's works.",
+      "pageviews_yearly": 1861,
+      "date": "1917-00-00"
+    },
+    {
+      "qid": "Q6872609",
+      "title": "Mirages",
+      "imslp_id": "Mirages,_Op.113_(Fauré,_Gabriel)",
+      "pdf_filename": "PMLP54659-Faure-Op113-Mirages-FE.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gabriel-faure-1845-pp166",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mirages_(Faur%C3%A9)",
+      "wikipedia_extract": "\nMirages, Op. 113, is a song cycle by Gabriel Fauré, of four mélodies for voice and piano. Composed in 1919, the cycle is based on four of the poems from the collection of the same name by Renée de Brimont.",
+      "pageviews_yearly": 2232,
+      "date": "1919-00-00"
+    },
+    {
+      "qid": "Q6455946",
+      "title": "L'horizon chimérique",
+      "imslp_id": "L'horizon_chimérique,_Op.118_(Fauré,_Gabriel)",
+      "pdf_filename": "Faure_horizon_chimerique_op118.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gabriel-faure-1845-pp168",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/L'Horizon_chim%C3%A9rique",
+      "wikipedia_extract": "L'Horizon chimérique, Op. 118, is a song cycle by Gabriel Fauré, of four mélodies for voice and piano. Composed in 1921, the cycle is based on four of the poems from the collection of the same name by Jean de La Ville de Mirmont.",
+      "pageviews_yearly": 1901,
+      "date": "1921-00-00"
+    },
+    {
+      "qid": "Q3539360",
+      "title": "Piano Trio",
+      "imslp_id": "Piano_Trio,_Op.120_(Fauré,_Gabriel)",
+      "pdf_filename": "Faure_-_Op.120_-_Piano_Trio_in_b.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gabriel-faure-1845-pp25",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Trio_(Faur%C3%A9)",
+      "wikipedia_extract": "Gabriel Fauré's Piano Trio in D minor, Op. 120 is one of the composer's late chamber works. The first public performance was given by the pianist Tatiana de Sanzévitch, with Robert Krettly and Jacques Patté, in May 1923 for the Société Nationale de Musique in honour of the composer's 78th birthday. The following month it was performed by the celebrated trio of Alfred Cortot, Jacques Thibaud and Pablo Casals. The work is dedicated to Mme Maurice Rouvier, widow of the former prime minister.",
+      "pageviews_yearly": 4309,
+      "date": "1923-00-00"
+    },
+    {
+      "qid": "Q3342622",
+      "title": "13 nocturnes",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gabriel-faure-1845-pp79",
+      "movements": [
+        {
+          "qid": "Q24894331"
+        }
+      ]
+    },
+    {
+      "qid": "Q126110916",
+      "title": "2 Duets, Op.10",
+      "imslp_id": "2_Duets,_Op.10_(Fauré,_Gabriel)",
+      "pdf_filename": "PMLP59246-Fauré-Messager_-_Tarentelle_Op10No2_-_ARR2soporch-BNF-ms-parts.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q1305215",
+      "title": "A Sunday in the Country",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/A_Sunday_in_the_Country",
+      "wikipedia_extract": "A Sunday in the Country is a 1984 French drama film directed, co-written, and co-produced by Bertrand Tavernier, based on Pierre Bost's 1945 novel Monsieur Ladmiral va bientôt mourir. The film stars Louis Ducreux, Michel Aumont, Sabine Azéma, Geneviève Mnich, and Monique Chaumette. It explores family dynamics in a clan on the eve of World War I.",
+      "pageviews_yearly": 10695
+    },
+    {
+      "qid": "Q2881091",
+      "title": "Ballade Op. 19",
+      "imslp_id": "Ballade,_Op.19_(Fauré,_Gabriel)",
+      "pdf_filename": "Faure_-_Ballade__Op.19__piano_.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q2884271",
+      "title": "Barcarolles",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gabriel-faure-1845-pp47"
+    },
+    {
+      "qid": "Q55605233",
+      "title": "Berceuse, Op. 16"
+    },
+    {
+      "qid": "Q78647707",
+      "title": "Blodyn a daflwyd = Fleur jetée"
+    },
+    {
+      "qid": "Q2653917",
+      "title": "Cantique de Jean Racine"
+    },
+    {
+      "qid": "Q3490240",
+      "title": "Cello Sonata No. 2 (Fauré)",
+      "imslp_id": "Cello_Sonata_No.2,_Op.117_(Fauré,_Gabriel)",
+      "pdf_filename": "PMLP55671-Faure-Cello-Sonata-No2-FE-part.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gabriel-faure-1845-pp38",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cello_Sonata_No._2_(Faur%C3%A9)",
+      "wikipedia_extract": "The Cello Sonata No. 2 in G minor, Op. 117 is the second of the two cello sonatas by Gabriel Fauré.",
+      "pageviews_yearly": 2213
+    },
+    {
+      "qid": "Q124744981",
+      "title": "Chant funéraire",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gabriel-faure-1845-pp17"
+    },
+    {
+      "qid": "Q5121074",
+      "title": "Cinq mélodies \"de Venise\"",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Faure_Gabriel_-_Green_-_Cinq_Melodies_Op_58_No_3.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q78647723",
+      "title": "Cân i'r Hydref"
+    },
+    {
+      "qid": "Q105480282",
+      "title": "Dear Mother",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dear_Mother_(film)",
+      "wikipedia_extract": "Dear Mother is a 2020 French film written and directed by Laurent Lafitte. Lafitte also stars in the film, alongside Karin Viard and Vincent Macaigne. The movie was adapted from a play of the same name by Sébastien Thiéry. It was an official selection at the 2020 Cannes Film Festival.",
+      "pageviews_yearly": 7763
+    },
+    {
+      "qid": "Q105825996",
+      "title": "Fantaisie",
+      "imslp_id": "Fantaisie,_Op.79_(Fauré,_Gabriel)",
+      "pdf_filename": "PMLP56741-Fantaisie__Op_79.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gabriel-faure-1845-pp40",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fantaisie%2C_Op._79_(Faur%C3%A9)",
+      "wikipedia_extract": "The Fantaisie for flute and piano, Op. 79, is a chamber music composition written by Gabriel Fauré in 1898.",
+      "pageviews_yearly": 4027
+    },
+    {
+      "qid": "Q3066525",
+      "title": "Fantaisie in G for piano and orchestra",
+      "imslp_id": "Fantaisie,_Op.111_(Fauré,_Gabriel)",
+      "pdf_filename": "Faure_-_Op.111_-_Fantaisie__2P_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fantaisie%2C_Op._111_(Faur%C3%A9)",
+      "wikipedia_extract": "The Fantaisie for piano and orchestra, Op. 111, is a concertante composition written by Gabriel Fauré in 1918.",
+      "pageviews_yearly": 1857
+    },
+    {
+      "qid": "Q3389559",
+      "title": "Huit pièces brèves",
+      "imslp_id": "8_Pièces_brèves,_Op.84_(Fauré,_Gabriel)",
+      "pdf_filename": "PMLP15901-Adagietto.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q124767360",
+      "title": "Impromptu No.6, Op.86",
+      "imslp_id": "Impromptu_No.6,_Op.86_(Fauré,_Gabriel)",
+      "pdf_filename": "Faure_-_Impromptu__Op_86.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q3149501",
+      "title": "Impromptus (Fauré)",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gabriel-faure-1845-pp44"
+    },
+    {
+      "qid": "Q20890091",
+      "title": "Isabel",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Isabel_(Il_Divo_song)",
+      "wikipedia_extract": "Isabel (Elisabeth) is a classical crossover song in Spanish adapted for the quartet Il Divo, included in their album Ancora (2005).",
+      "pageviews_yearly": 2409
+    },
+    {
+      "qid": "Q78648027",
+      "title": "Iâr fach yr haf a'r blodeuyn = Le papillon et la fleur"
+    },
+    {
+      "qid": "Q3178483",
+      "title": "Jewels"
+    },
+    {
+      "qid": "Q6466034",
+      "title": "La chanson d'Ève",
+      "imslp_id": "La_chanson_d'Ève,_Op.95_(Fauré,_Gabriel)",
+      "pdf_filename": "PMLP54674-Faure-Op95-La-chanson-d-Eve-FE.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gabriel-faure-1845-pp164",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Chanson_d'%C3%88ve",
+      "wikipedia_extract": "\nLa Chanson d'Ève, Op. 95, is a song cycle by Gabriel Fauré, of ten mélodies for voice and piano. Composed during 1906–10, it is based on the collection of poetry of the same name by Charles van Lerberghe. It is Fauré's longest song cycle.",
+      "pageviews_yearly": 2575
+    },
+    {
+      "qid": "Q6508041",
+      "title": "Le jardin clos",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gabriel-faure-1845-pp165",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Le_Jardin_clos",
+      "wikipedia_extract": "Le Jardin clos, Op. 106, is a song cycle by Gabriel Fauré, of eight mélodies for voice and piano. It is based on eight poems from the collection Entrevisions by Charles van Lerberghe. Fauré composed the cycle in 1914, starting it in Germany and continuing in Switzerland and France after he fled Germany on the outbreak of World War I.",
+      "pageviews_yearly": 1942
+    },
+    {
+      "qid": "Q133827024",
+      "title": "Lumiere! The Adventure Continues"
+    },
+    {
+      "qid": "Q55621700",
+      "title": "Madrigal (Fauré)",
+      "imslp_id": "Madrigal,_Op.35_(Fauré,_Gabriel)",
+      "pdf_filename": "PMLP60197-Fauré_-_Madrigal__Op._35__SATB_and_piano_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gabriel-faure-1845-pp160",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Madrigal_(Faur%C3%A9)",
+      "wikipedia_extract": "\"Madrigal\", Op. 35 is a four-part song by Gabriel Fauré to words by Armand Silvestre, composed in 1883. It is written to be sung by vocal quartet or choir, with piano or – a later addition – an orchestral accompaniment. The song was reused in 1919 in the composer's Masques et bergamasques.",
+      "pageviews_yearly": 2427
+    },
+    {
+      "qid": "Q78526982",
+      "title": "Madrigal : Op. 57 rhif. 2"
+    },
+    {
+      "qid": "Q78648116",
+      "title": "Mai"
+    },
+    {
+      "qid": "Q3297391",
+      "title": "Masques et bergamasques",
+      "imslp_id": "Masques_et_Bergamasques,_suite,_Op.112_(Fauré,_Gabriel)",
+      "pdf_filename": "Faure_Masques_et_Bergamasques_piano_4_hands.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gabriel-faure-1845-pp169",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Masques_et_bergamasques",
+      "wikipedia_extract": "Masques et bergamasques, Op. 112, is an orchestral suite by Gabriel Fauré. It was arranged by the composer from incidental music he provided for a theatrical entertainment commissioned for Albert I, Prince of Monaco in 1919. The original score contained eight numbers, including two songs for tenor, and a choral passage. These numbers were not included in the published suite, which has four movements.",
+      "pageviews_yearly": 5854
+    },
+    {
+      "qid": "Q3307015",
+      "title": "Messe des pêcheurs de Villerville",
+      "imslp_id": "Messe_basse_(Fauré,_Gabriel)",
+      "pdf_filename": "PMLP59445-Fauré_-_Messe_Basse.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gabriel-faure-1845-pp105",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Messe_des_p%C3%AAcheurs_de_Villerville",
+      "wikipedia_extract": "\nThe Messe des pêcheurs de Villerville is a missa brevis written by Gabriel Fauré in collaboration with his former pupil André Messager. A later version, published as Messe basse contained only movements composed by Fauré.",
+      "pageviews_yearly": 2045
+    },
+    {
+      "qid": "Q78527002",
+      "title": "Mewn gweddi = En prière"
+    },
+    {
+      "qid": "Q78648175",
+      "title": "Nell"
+    },
+    {
+      "qid": "Q3408998",
+      "title": "Nine Preludes",
+      "imslp_id": "9_Préludes,_Op.103_(Fauré,_Gabriel)",
+      "pdf_filename": "Faure_-_Preludes__9___Op_103.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q24894331",
+      "title": "Nocturne No. 3",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gabriel-faure-1845-pp69"
+    },
+    {
+      "qid": "Q134980596",
+      "title": "Paperhouse"
+    },
+    {
+      "qid": "Q124767578",
+      "title": "Papillon",
+      "imslp_id": "Papillon,_Op.77_(Fauré,_Gabriel)",
+      "pdf_filename": "PMLP57122-Faure_-_Papillon_Butterfly_Op77_cello_piano.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gabriel-faure-1845-pp33"
+    },
+    {
+      "qid": "Q923138",
+      "title": "Pavane, Op. 50"
+    },
+    {
+      "qid": "Q91805490",
+      "title": "Pelleas and Melisande",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gabriel-faure-1845-pp16"
+    },
+    {
+      "qid": "Q3413736",
+      "title": "Piano Quartet No. 1",
+      "imslp_id": "Piano_Quartet_No.1,_Op.15_(Fauré,_Gabriel)",
+      "pdf_filename": "PMLP59305-Fauré_-_Piano_Quartet_No._1__Op._15__parts_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gabriel-faure-1845-pp23",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Quartet_No._1_(Faur%C3%A9)",
+      "wikipedia_extract": "Gabriel Fauré's Piano Quartet No. 1, in C minor, Op. 15, is one of the two chamber works he wrote for the conventional piano quartet combination of piano, violin, viola and cello. Despite being in a minor key it is predominantly positive in tone, though with some hints in the slow movement of the emotional turmoil of Fauré's life at the time of the composition. He later wrote a second work in the form.",
+      "pageviews_yearly": 5618
+    },
+    {
+      "qid": "Q3413739",
+      "title": "Piano Quartet No. 2",
+      "imslp_id": "Piano_Quartet_No.2,_Op.45_(Fauré,_Gabriel)",
+      "pdf_filename": "PMLP57598-Fauré_-_Piano_Quartet_No._2__Op._45__parts_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gabriel-faure-1845-pp24",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Quartet_No._2_(Faur%C3%A9)",
+      "wikipedia_extract": "Gabriel Fauré's Piano Quartet No. 2, in G minor, Op. 45, is one of the two chamber works he wrote for the conventional piano quartet combination of piano, violin, viola and cello. It was first performed in 1887, seven years after his first quartet.",
+      "pageviews_yearly": 3498
+    },
+    {
+      "qid": "Q3414615",
+      "title": "Piano Quintet No. 1",
+      "imslp_id": "Piano_Quintet_No.1,_Op.89_(Fauré,_Gabriel)",
+      "pdf_filename": "PMLP52054-5716.Faure-Op089.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gabriel-faure-1845-pp21",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Quintet_No._1_(Faur%C3%A9)",
+      "wikipedia_extract": "Gabriel Fauré's Piano Quintet No. 1 in D minor, Op. 89 is the first of his two works in the genre. Dedicated to Eugène Ysaÿe, the quintet was given its premiere in Brussels by the Quatuor Ysaÿe, with the composer at the piano, on 23 March 1906. The gestation of the work was long and effortful: Fauré started work on it in 1887 and repeatedly set it aside and returned to it until he completed it in 1905.",
+      "pageviews_yearly": 3373
+    },
+    {
+      "qid": "Q3414621",
+      "title": "Piano Quintet No. 2",
+      "imslp_id": "Piano_Quintet_No.2,_Op.115_(Fauré,_Gabriel)",
+      "pdf_filename": "PMLP60191-5717.Faure-Op115.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gabriel-faure-1845-pp22",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Quintet_No._2_(Faur%C3%A9)",
+      "wikipedia_extract": "Gabriel Fauré's Piano Quintet in C minor, Op. 115, is the second of his two works in the genre and his last four-movement chamber work. Dedicated to Paul Dukas, the quintet was given its premiere in Paris at a concert of the Société nationale de musique on 21 May 1921. It was an immediate success and has always been more popular than the First Quintet, completed sixteen years earlier.",
+      "pageviews_yearly": 3471
+    },
+    {
+      "qid": "Q78527110",
+      "title": "Pie Jesu = Ddwyfol Iesu : Requiem"
+    },
+    {
+      "qid": "Q24833344",
+      "title": "Poème d'un jour",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gabriel-faure-1845-pp143"
+    },
+    {
+      "qid": "Q1091750",
+      "title": "Prométhée",
+      "imslp_id": "Prométhée,_Op.82_(Fauré,_Gabriel)",
+      "pdf_filename": "PMLP59275-Fauré_-_Prométhée__Op._82__vocal_score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gabriel-faure-1845-pp2",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Prom%C3%A9th%C3%A9e_(Faur%C3%A9)",
+      "wikipedia_extract": "Prométhée, Op. 82, (Prometheus) is a tragédie lyrique in three acts by the French composer Gabriel Fauré with a French libretto by the Symboliste poets Jean Lorrain and André-Ferdinand Hérold (1865–1940). It was partly based on the opening of the Greek tragedy of Prometheus Bound. The first performance at Arènes de Béziers on 27 August 1900 involved almost 800 performers and was watched by an audience of 10,000. Between 1914 and 1916, Jean Roger-Ducasse reworked the score for a reduced orchestra. This version made its debut at the Paris Opéra on 17 May 1917 but never became popular.",
+      "pageviews_yearly": 160
+    },
+    {
+      "qid": "Q2259941",
+      "title": "Pénélope",
+      "imslp_id": "Pénélope_(Fauré,_Gabriel)",
+      "pdf_filename": "PMLP59253-Faure-Penelope-Prelude_-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gabriel-faure-1845-pp3",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/P%C3%A9n%C3%A9lope_(Faur%C3%A9)",
+      "wikipedia_extract": "Pénélope is an opera in three acts by the French composer Gabriel Fauré. The libretto, by René Fauchois, is based on Homer's Odyssey. It was first performed at the Salle Garnier, Monte Carlo, on 4 March 1913. The piece is dedicated to Camille Saint-Saëns.",
+      "pageviews_yearly": 173
+    },
+    {
+      "qid": "Q1811459",
+      "title": "Requiem"
+    },
+    {
+      "qid": "Q120669081",
+      "title": "Romances sans paroles",
+      "imslp_id": "3_Romances_sans_paroles,_Op.17_(Fauré,_Gabriel)",
+      "pdf_filename": "Faure_-_Op.17_-_3_Romances_Sans_Paroles.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gabriel-faure-1845-pp87"
+    },
+    {
+      "qid": "Q7507514",
+      "title": "Sicilienne",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Faure_Sicilienne_-_Arrangement_pour_Big_Band.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q3413749",
+      "title": "String Quartet",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gabriel-faure-1845-pp20",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_(Faur%C3%A9)",
+      "wikipedia_extract": "The String Quartet in E minor, Op. 121, is the only string quartet by Gabriel Fauré. Completed in 1924 shortly before his death at the age of 79, it is his final composition. His pupil Maurice Ravel had dedicated his String Quartet to Fauré in 1903, and he and others urged Fauré to compose one of his own; he declined on the grounds that it was too difficult. When he finally decided to write it, he did so in trepidation.",
+      "pageviews_yearly": 4603
+    },
+    {
+      "qid": "Q131376059",
+      "title": "Sérénade, Op. 98",
+      "imslp_id": "Sérénade,_Op.98_(Fauré,_Gabriel)",
+      "pdf_filename": "PMLP59250-Fauré_-_Sérénade__Op._98__cello_and_piano_.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q2298877",
+      "title": "Thérèse"
+    },
+    {
+      "qid": "Q16035400",
+      "title": "Tous les maux d'amour"
+    },
+    {
+      "qid": "Q7845073",
+      "title": "Trois mélodies, Op.7",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Trois_M%C3%A9lodies%2C_Op._7_(Faur%C3%A9)",
+      "wikipedia_extract": "Trois Mélodies is a set of mélodies for solo voice and piano, by Gabriel Fauré. It consists of \"Après un rêve\", one of Fauré's most popular vocal pieces, \"Hymne\", and \"Barcarolle\". The songs were written between 1870 and 1877 and were published separately, only appearing together for the first time in 1878 as a part of his first of 3 song collections. The opus number 7 was imposed on them retrospectively in the 1890s, almost 20 years after their first publications.",
+      "pageviews_yearly": 7156
+    },
+    {
+      "qid": "Q3554153",
+      "title": "Valses-caprices",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gabriel-faure-1845-pp83"
+    },
+    {
+      "qid": "Q105816289",
+      "title": "Violin Concerto in D minor",
+      "imslp_id": "Violin_Concerto,_Op.14_(Fauré,_Gabriel)",
+      "pdf_filename": "PMLP1381457-faure_covlmanus_bnf.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Violin_Concerto_(Faur%C3%A9)",
+      "wikipedia_extract": "The Violin Concerto in D minor, Op. 14, is an unfinished violin concerto by Gabriel Fauré, who worked on it between 1878 and 1879. Of the two completed movements, only the first survives.",
+      "pageviews_yearly": 2064
+    },
+    {
+      "qid": "Q3490210",
+      "title": "Violin Sonata No. 1",
+      "imslp_id": "Violin_Sonata_No.1,_Op.13_(Fauré,_Gabriel)",
+      "pdf_filename": "Faure_op.13_Violinsonate_Nr.1.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gabriel-faure-1845-pp26",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Violin_Sonata_No._1_(Faur%C3%A9)",
+      "wikipedia_extract": "The Violin Sonata No. 1 in A major, Op. 13, was written by Gabriel Fauré from 1875 to 1876. It is considered one of the three masterpieces of his youth, along with the first piano quartet and the Ballade in F♯ major.",
+      "pageviews_yearly": 5691
+    },
+    {
+      "qid": "Q3328751",
+      "title": "piano music of Gabriel Fauré",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_music_of_Gabriel_Faur%C3%A9",
+      "wikipedia_extract": "The French composer Gabriel Fauré (1845–1924) wrote in many genres, including songs, chamber music, orchestral pieces, and choral works. His compositions for piano, written between the 1860s and the 1920s, include some of his best-known works.",
+      "pageviews_yearly": 51216
+    },
+    {
+      "qid": "Q2746359",
+      "title": "Élégie",
+      "imslp_id": "Elegy,_Op.24_(Fauré,_Gabriel)",
+      "pdf_filename": "PMLP1046534-198002_02Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gabriel-faure-1845-pp32",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/%C3%89l%C3%A9gie_(Faur%C3%A9)",
+      "wikipedia_extract": "The Élégie (Elegy), Op. 24, was written by the French composer Gabriel Fauré in 1880, and first published and performed in public in 1883. Originally for cello and piano, the piece was later orchestrated by Fauré. The work features a sad and somber opening and climaxes with an intense, tempestuous central section before returning to the elegiac opening theme in C minor.",
+      "pageviews_yearly": 11039
+    }
+  ]
+}

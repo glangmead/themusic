@@ -1,0 +1,79 @@
+{
+  "composer_slug": "grainger",
+  "composer_qid": "Q318354",
+  "work_count": 11,
+  "midi_file_count": 1,
+  "works": [
+    {
+      "qid": "Q2465646",
+      "title": "Afterword"
+    },
+    {
+      "qid": "Q5148375",
+      "title": "Colonial Song"
+    },
+    {
+      "qid": "Q2459439",
+      "title": "County Derry Air"
+    },
+    {
+      "qid": "Q17231942",
+      "title": "In a Nutshell",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/percy-grainger-1882-pp1",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/In_a_Nutshell",
+      "wikipedia_extract": "In a Nutshell is a musical composition by Percy Aldridge Grainger for orchestra, piano, and Deagan percussion instruments. The suite, published in 1916, is made up of four movements: \"Arrival Platform Humlet\", \"Gay But Wistful\", \"Pastoral\", and \"The Gum-Suckers March\". Grainger later made versions for both solo piano and piano duo. It is described as one of the early modernist works of Grainger.",
+      "pageviews_yearly": 2750
+    },
+    {
+      "qid": "Q6551267",
+      "title": "Lincolnshire Posy"
+    },
+    {
+      "qid": "Q6887765",
+      "title": "Mock Morris",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/percy-grainger-1882-pp49",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mock_Morris",
+      "wikipedia_extract": "\nMock Morris is a musical work by Percy Grainger.\nGrainger wrote versions for string orchestra and solo piano. Composed in 1910, the work was first played at a concert in the Queen's Hall in 1912.",
+      "pageviews_yearly": 2112
+    },
+    {
+      "qid": "Q11142436",
+      "title": "Molly on the Shore",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Molly_on_the_Shore_shortened_for_small_ensemble.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q3216559",
+      "title": "Shallow Brown",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/percy-grainger-1882-pp139"
+    },
+    {
+      "qid": "Q11496050",
+      "title": "The Warriors",
+      "imslp_id": "The_Warriors_(Grainger,_Percy)",
+      "pdf_filename": "PMLP751372-Grainger_The_Warriors_Full_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/percy-grainger-1882-pp3"
+    },
+    {
+      "qid": "Q131384599",
+      "title": "The Warriors",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/percy-grainger-1882-pp3",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Warriors_(Grainger)",
+      "wikipedia_extract": "\nThe Warriors: Music to an Imaginary Ballet is an orchestral piece written in the United States by the Australian-born composer and pianist Percy Grainger between 1913 and 1916. It is dedicated \"For Frederick Delius, in admiration and affection\".",
+      "pageviews_yearly": 2023
+    },
+    {
+      "qid": "Q7832866",
+      "title": "Train Music",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/percy-grainger-1882-pp74",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/List_of_compositions_by_Percy_Grainger",
+      "wikipedia_extract": "The published musical compositions of Percy Grainger (1882–1961) fall into two main categories: (a) original works and (b) folksong settings. There are also numerous unpublished works, sketches and juvenilia. Grainger's compositional career lasted for more than half a century, from the end of the 19th century until the middle 1950s. Works tended to be written concurrently, and were often developed over very long periods of time—in some cases extending to several decades—before eventual publication. Many of the compositions exist in a number of different versions, some of which refer to \"elastic scoring\", a means which permits performances by undefined musical forces ranging from small instrumental groups to full orchestra.",
+      "pageviews_yearly": 1278
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "composer_name": "Jacques Offenbach",
+  "name_last_first": "Offenbach, Jacques",
+  "slug": "offenbach",
+  "wiki_page": "https://en.wikipedia.org/wiki/Jacques_Offenbach",
+  "apple_music_playlist": "https://music.apple.com/us/playlist/jacques-offenbach-essentials/pl.5baf888436d2476b9a0f04c598f9299c",
+  "era": "Late- / Post-Romantic",
+  "dates": "1819 – 1880",
+  "nationality": "DEU/FRA",
+  "notable": true,
+  "works": [
+    {
+      "title": "Orphée aux enfers",
+      "musicxml": "musicxml/Can_can.mxl",
+      "midi": "midi/Can_can.mid",
+      "time_signature": "2/4",
+      "instruments": [
+        "Flauto"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 1,
+        "n_views": 359,
+        "duration_seconds": 30.99999999919917,
+        "n_notes": 110,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": false,
+        "genres": "classical",
+        "tags": "musica-musescore-school-can-cancan-italy",
+        "musescore_url": "https://musescore.com/user/33900480/scores/5942150",
+        "musescore_duration": "00:31"
+      },
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 120,
+      "n_measures": 31,
+      "n_parts": 1,
+      "n_notes": 110,
+      "notes_per_second": 3.5,
+      "apple_music_search_query": "Offenbach Orphée aux enfers",
+      "parent_work_title": "Can can",
+      "wikidata_id": "Q57316083",
+      "wikidata_title": "Orphée aux Enfers",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Offenbach%20Orph%C3%A9e%20aux%20enfers",
+      "display_title": "Orphée aux Enfers"
+    },
+    {
+      "title": "Chanson de Fortunio Jacques Offenbach",
+      "musicxml": "musicxml/Chanson_de_Fortunio_Jacques_Offenbach.mxl",
+      "midi": "midi/Chanson_de_Fortunio_Jacques_Offenbach.mid",
+      "form": "Chanson",
+      "time_signature": "6/8",
+      "instruments": [
+        "Voice",
+        "Piano"
+      ],
+      "tempo_markings": [
+        "Allegretto.",
+        "T"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 1,
+        "n_views": 84,
+        "duration_seconds": 51.88462096426383,
+        "n_notes": 476,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "NA",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/4887176/scores/5352649",
+        "musescore_duration": "01:44"
+      },
+      "instruments_gm": [
+        "Oboe",
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 75,
+      "n_measures": 42,
+      "n_parts": 2,
+      "n_notes": 475,
+      "notes_per_second": 9.2,
+      "apple_music_search_query": "Offenbach Chanson de Fortunio Jacques Offenbach",
+      "parent_work_title": "Chanson de Fortunio",
+      "lyricist": "Alfred de Musset",
+      "year_composed": 1850,
+      "wikidata_id": "Q1439127",
+      "wikidata_title": "La chanson de Fortunio",
+      "musicbrainz_id": "1164d5ee-9dd8-481a-b0b6-de6bf418ae06",
+      "imslp_id": "La_chanson_de_Fortunio_(Offenbach,_Jacques)",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Offenbach%20Chanson%20de%20Fortunio",
+      "display_title": "La chanson de Fortunio"
+    }
+  ],
+  "birth_year": 1819,
+  "death_year": 1880,
+  "wikipedia_extract": "Jacques Offenbach (; 20 June 1819 – 5 October 1880) was a German-born French composer, cellist and impresario. He is remembered for his nearly 100 operettas of the 1850s to the 1870s, and his uncompleted opera The Tales of Hoffmann. He was a powerful influence on later composers of the operetta genre, particularly Franz von Suppé, Johann Strauss II and Arthur Sullivan.",
+  "wikipedia_compositions_url": "https://en.wikipedia.org/wiki/List_of_compositions_by_Jacques_Offenbach",
+  "wikidata_id": "Q41555",
+  "apple_music_artist_id": "321421",
+  "apple_music_classical_url": "https://classical.music.apple.com/us/artist/321421"
+}

@@ -1,0 +1,341 @@
+{
+  "composer_name": "Leonard Bernstein",
+  "name_last_first": "Bernstein, Leonard",
+  "slug": "bernstein",
+  "wiki_page": "https://en.wikipedia.org/wiki/Leonard_Bernstein",
+  "apple_music_playlist": "https://music.apple.com/mk/playlist/pl.391f982839cc4d3796a2dfa1d15c7b75",
+  "era": "Modern",
+  "dates": "1918 – 1990",
+  "nationality": "USA",
+  "notable": true,
+  "works": [
+    {
+      "title": "America for Brass Quartet",
+      "musicxml": "musicxml/America_for_Brass_Quartet.mxl",
+      "midi": "midi/America_for_Brass_Quartet.mid",
+      "form": "Quartet",
+      "time_signature": "2/2",
+      "instruments": [
+        "B♭ Trumpet",
+        "Horn in F",
+        "Trombone",
+        "Tuba"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 15,
+        "n_views": 323,
+        "duration_seconds": 184.2111111044902,
+        "n_notes": 1992,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "NA",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/6766976/scores/5934941",
+        "musescore_duration": "03:22"
+      },
+      "key": "D major",
+      "key_changes": [
+        "D major",
+        "B♭ major"
+      ],
+      "instruments_gm": [
+        "Trumpet",
+        "French Horn",
+        "Trombone",
+        "Tuba"
+      ],
+      "tempo_bpm": 108,
+      "n_measures": 147,
+      "n_parts": 4,
+      "n_notes": 1982,
+      "notes_per_second": 10.8,
+      "apple_music_search_query": "Bernstein D major America for Brass Quartet",
+      "parent_work_title": "America",
+      "lyricist": "Arr. Laeth Kaakarni",
+      "year_composed": 1957,
+      "wikidata_id": "Q4742729",
+      "wikidata_title": "America",
+      "musicbrainz_id": "d43e25a9-6b30-3955-9e35-ed798c5f9533",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Bernstein%20America%20for%20Brass%20Quartet",
+      "display_title": "America"
+    },
+    {
+      "title": "Something's Coming (from West Side Story)",
+      "musicxml": "musicxml/Somethings_Coming_from_West_Side_Story.mxl",
+      "midi": "midi/Somethings_Coming_from_West_Side_Story.mid",
+      "time_signature": "3/4",
+      "instruments": [
+        "Flute 1",
+        "Flute 2",
+        "Flute 3",
+        "Clarinet 1",
+        "Clarinet 2",
+        "Clarinet 3",
+        "Bass Clarinet",
+        "Bassoon",
+        "F Horn 1",
+        "F Horn 2",
+        "Trumpet 1",
+        "Trumpet 2",
+        "Trumpet 3",
+        "Trombone 1",
+        "Trombone 2",
+        "Piano",
+        "Celesta",
+        "Guitar",
+        "Drumset"
+      ],
+      "movements": [
+        {
+          "start_measure": 99,
+          "time_signature": "2/4"
+        },
+        {
+          "start_measure": 154,
+          "time_signature": "2/4"
+        }
+      ],
+      "is_multi_movement": true,
+      "pdmx": {
+        "rating": 4.77,
+        "n_favorites": 23,
+        "n_views": 936,
+        "duration_seconds": 138.51412740888378,
+        "n_notes": 6324,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/1680641/scores/5871960",
+        "musescore_duration": "02:43"
+      },
+      "key": "D major",
+      "key_changes": [
+        "D major",
+        "C major"
+      ],
+      "instruments_gm": [
+        "Flute",
+        "Clarinet",
+        "Bassoon",
+        "French Horn",
+        "Trumpet",
+        "Trombone",
+        "Acoustic Grand Piano",
+        "Celesta",
+        "Electric Guitar (jazz)",
+        "Percussion",
+        "English Horn",
+        "String Ensemble 1",
+        "Contrabass"
+      ],
+      "tempo_bpm": 175,
+      "n_measures": 198,
+      "n_parts": 29,
+      "n_notes": 6409,
+      "notes_per_second": 46.3,
+      "apple_music_search_query": "Bernstein D major Something's Coming (from West Side Story)",
+      "parent_work_title": "Something's Coming",
+      "lyricist": "Stephen Sondheim",
+      "year_composed": 1957,
+      "wikidata_id": "Q17036527",
+      "wikidata_title": "Something's Coming",
+      "musicbrainz_id": "723f12a3-4dc5-3381-b435-f28e2e9c6645",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Bernstein%20Something%27s%20Coming%20%28from%20West%20Side%20Story%29",
+      "display_title": "Something's Coming"
+    },
+    {
+      "title": "America from Bernstein's West Side Story",
+      "musicxml": "musicxml/America_from_Bernsteins_West_Side_Story.mxl",
+      "midi": "midi/America_from_Bernsteins_West_Side_Story.mid",
+      "time_signature": "6/8",
+      "instruments": [
+        "BaccidentalFlat Clarinet",
+        "Alto Clarinet"
+      ],
+      "tempo_markings": [
+        "Allegro"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.61,
+        "n_favorites": 157,
+        "n_views": 10552,
+        "duration_seconds": 54.55005454934541,
+        "n_notes": 2603,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "NA",
+        "tags": "clarinet-clarinetquartet-altoclarinet-america-bernstein-leonardbernstein-westsidestory",
+        "musescore_url": "https://musescore.com/user/1253051/scores/2154926",
+        "musescore_duration": "02:20"
+      },
+      "key": "D major",
+      "key_changes": [
+        "D major",
+        "B♭ major"
+      ],
+      "instruments_gm": [
+        "Clarinet"
+      ],
+      "tempo_bpm": 200,
+      "n_measures": 156,
+      "n_parts": 4,
+      "n_notes": 2571,
+      "notes_per_second": 47.1,
+      "apple_music_search_query": "Bernstein D major America from Bernstein's West Side Story",
+      "wikidata_id": "Q63643994",
+      "wikidata_title": "West Side Story",
+      "wikidata_match_method": "title_substring",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Bernstein%20America%20from%20%27s%20West%20Side%20Story",
+      "display_title": "West Side Story"
+    },
+    {
+      "title": "Over Somewhere (Over The Rainbow/Somewhere)",
+      "musicxml": "musicxml/Over_Somewhere_Over_The_RainbowSomewhere.mxl",
+      "midi": "midi/Over_Somewhere_Over_The_RainbowSomewhere.mid",
+      "time_signature": "4/4",
+      "instruments": [
+        "Part I",
+        "Part II",
+        "Piano"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 6,
+        "n_views": 1046,
+        "duration_seconds": 237.9999999936533,
+        "n_notes": 654,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "pop-jazz",
+        "tags": "somewhere-overtherainbow-westsidestory-wizardofoz",
+        "musescore_url": "https://musescore.com/user/30224041/scores/5680879",
+        "musescore_duration": "04"
+      },
+      "key": "C major",
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 60,
+      "n_measures": 60,
+      "n_parts": 3,
+      "n_notes": 645,
+      "notes_per_second": 2.7,
+      "apple_music_search_query": "Bernstein C major Over Somewhere (Over The Rainbow/Somewhere)",
+      "parent_work_title": "Title",
+      "year_composed": 1956,
+      "wikidata_id": "Q2231931",
+      "wikidata_title": "Somewhere",
+      "musicbrainz_id": "16e6fba9-2670-4b2d-9ee7-c4d9710a0bbb",
+      "wikidata_match_method": "title_substring",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Bernstein%20Over%20Somewhere%20%28Over%20The%20Rainbow/Somewhere%29",
+      "display_title": "Somewhere"
+    },
+    {
+      "title": "I like to be in America",
+      "musicxml": "musicxml/America.mxl",
+      "midi": "midi/America.mid",
+      "time_signature": "6/8",
+      "instruments": [
+        "MusicXML Part",
+        "Piano"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 10,
+        "n_views": 1118,
+        "duration_seconds": 37.20833333283722,
+        "n_notes": 732,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": false,
+        "genres": "NA",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/30613796/scores/5355223",
+        "musescore_duration": "01:12"
+      },
+      "instruments_gm": [
+        "Choir Aahs",
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 120,
+      "n_measures": 26,
+      "n_parts": 2,
+      "n_notes": 718,
+      "notes_per_second": 19.3,
+      "apple_music_search_query": "Bernstein I like to be in America",
+      "parent_work_title": "America",
+      "movement_title": "I like to be in America",
+      "key": "C major",
+      "year_composed": 1957,
+      "wikidata_id": "Q4742729",
+      "wikidata_title": "America",
+      "musicbrainz_id": "d43e25a9-6b30-3955-9e35-ed798c5f9533",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Bernstein%20I%20like%20to%20be%20in%20America",
+      "display_title": "America"
+    },
+    {
+      "title": "West side story sextuor de clarinettes",
+      "musicxml": "musicxml/West_side_story_-_Tonight.mxl",
+      "midi": "midi/West_side_story_-_Tonight.mid",
+      "time_signature": "4/4",
+      "instruments": [
+        "Clarinette en Si♭ solo",
+        "Clarinette Basse solo",
+        "Clarinette en Si♭1",
+        "Clarinette en Si♭2",
+        "Clarinette en Si♭3",
+        "Clarinette Basse"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.55,
+        "n_favorites": 16,
+        "n_views": 701,
+        "duration_seconds": 398.2190972691832,
+        "n_notes": 1305,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/29019845/scores/5902311",
+        "musescore_duration": "03:38"
+      },
+      "key": "B major",
+      "instruments_gm": [
+        "Clarinet"
+      ],
+      "tempo_bpm": 56,
+      "n_measures": 99,
+      "n_parts": 6,
+      "n_notes": 1301,
+      "notes_per_second": 3.3,
+      "apple_music_search_query": "Bernstein B major West side story sextuor de clarinettes",
+      "wikidata_id": "Q63643994",
+      "wikidata_title": "West Side Story",
+      "wikidata_match_method": "title_substring",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Bernstein%20West%20side%20story%20sextuor%20de%20clarinettes",
+      "display_title": "West Side Story"
+    }
+  ],
+  "birth_year": 1918,
+  "death_year": 1990,
+  "wikipedia_extract": "Leonard Bernstein ( BURN-styne; born Louis Bernstein; August 25, 1918 – October 14, 1990) was an American conductor, composer, pianist, music educator, author, and humanitarian. Considered to be one of the most important conductors of his time, he was the first American-born conductor to receive international acclaim. Bernstein was \"one of the most prodigiously talented and successful musicians in American history\" according to music critic Donal Henahan.",
+  "wikipedia_compositions_url": "https://en.wikipedia.org/wiki/List_of_compositions_by_Leonard_Bernstein",
+  "wikidata_id": "Q152505",
+  "apple_music_artist_id": "269390",
+  "apple_music_classical_url": "https://classical.music.apple.com/us/artist/269390"
+}

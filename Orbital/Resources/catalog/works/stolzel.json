@@ -1,0 +1,25 @@
+{
+  "composer_slug": "stolzel",
+  "composer_qid": "Q544385",
+  "work_count": 2,
+  "midi_file_count": 2,
+  "works": [
+    {
+      "qid": "Q2904769",
+      "title": "Bist du bei mir",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Bist_Du_bei_mir.mid",
+        "midi/Bist_Du_Bei_Mir_1.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q114566020",
+      "title": "Deutsche Messe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Deutsche_Messe_(St%C3%B6lzel)",
+      "wikipedia_extract": "Deutsche Messe is a Lutheran mass in C minor by Gottfried Heinrich Stölzel. He set the text of Kyrie and Gloria in German in 1739.",
+      "pageviews_yearly": 732
+    }
+  ]
+}

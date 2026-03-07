@@ -1,0 +1,68 @@
+{
+  "composer_slug": "byrd",
+  "composer_qid": "Q208375",
+  "work_count": 7,
+  "midi_file_count": 1,
+  "works": [
+    {
+      "qid": "Q116549857",
+      "title": "Mass for Five Voices",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/william-byrd-c1539-pp122",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mass_for_Five_Voices",
+      "wikipedia_extract": "\n\nThe Mass for Five Voices is a choral Mass setting by the English composer William Byrd. It was probably written c. 1594 during the reign of Queen Elizabeth I, and is one of three settings of the Mass Ordinary which Byrd published in the early 1590s. It consists of the text of the Mass set for a five-part choir.",
+      "pageviews_yearly": 3707
+    },
+    {
+      "qid": "Q6784039",
+      "title": "Mass for Four Voices",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Byrd_-_Mass_SATB.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q3331204",
+      "title": "My Ladye Nevells Booke",
+      "imslp_id": "My_Ladye_Nevells_Booke_of_Virginal_Music_(Byrd,_William)",
+      "pdf_filename": "ByrdMyLadyeNevellsBookeofVirginalMusic.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/william-byrd-c1539-pp576",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/My_Ladye_Nevells_Booke",
+      "wikipedia_extract": "\n\n\nMy Ladye Nevells Booke is a music manuscript containing keyboard pieces by the English composer William Byrd, and, together with the Fitzwilliam Virginal Book, one of the most important collections of Renaissance keyboard music.",
+      "pageviews_yearly": 5584
+    },
+    {
+      "qid": "Q42195767",
+      "title": "Songs of sundrie natures",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/william-byrd-c1539-pp16"
+    },
+    {
+      "qid": "Q137705054",
+      "title": "The Battell",
+      "imslp_id": "The Battell (Byrd, William)",
+      "pdf_filename": "PMLP573601-Byrd-BattellSuite.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/william-byrd-c1539-pp569"
+    },
+    {
+      "qid": "Q125355892",
+      "title": "The Carman's Whistle",
+      "imslp_id": "The_Carman's_Whistle,_T_444_(Byrd,_William)",
+      "pdf_filename": "PMLP476902-FVB_vol._1_58_Carman.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/william-byrd-c1539-pp425"
+    },
+    {
+      "qid": "Q2599928",
+      "title": "Ye Sacred Muses",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/william-byrd-c1539-pp384",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ye_Sacred_Muses",
+      "wikipedia_extract": "Ye Sacred Muses is William Byrd's Musical elegy on the death of his colleague and mentor, Thomas Tallis, in the form of a consort song or secular madrigal. It is scored for 5 parts or SATTB vocal ensemble.",
+      "pageviews_yearly": 2406
+    }
+  ]
+}

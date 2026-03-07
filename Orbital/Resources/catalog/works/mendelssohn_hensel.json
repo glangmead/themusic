@@ -1,0 +1,91 @@
+{
+  "composer_slug": "mendelssohn_hensel",
+  "composer_qid": "Q57286",
+  "work_count": 14,
+  "midi_file_count": 1,
+  "works": [
+    {
+      "qid": "Q114324221",
+      "title": "Füllest wieder Busch und Thal",
+      "date": "1820-00-00"
+    },
+    {
+      "qid": "Q115168707",
+      "title": "Der Fischer",
+      "date": "1823-00-00"
+    },
+    {
+      "qid": "Q56304566",
+      "title": "Das Jahr",
+      "imslp_id": "Das_Jahr,_H.385_(Hensel,_Fanny)",
+      "pdf_filename": "PMLP907629-Hensel_Mendelssohn_Das_Jahr_H385_ms_SBB.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/fanny-mendelssohn-1805-pp68",
+      "date": "1841-00-00"
+    },
+    {
+      "qid": "Q48969126",
+      "title": "Piano Trio",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/fanny-mendelssohn-1805-pp56",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Trio_(Fanny_Mendelssohn)",
+      "wikipedia_extract": "The Piano Trio for violin, cello, piano in D minor, Op. 11, by Fanny Mendelssohn was conceived between 1846 and 1847 as a birthday present for her sister Rebecka, and posthumously published in 1850, three years after the composer's death.",
+      "pageviews_yearly": 3524,
+      "date": "1847-00-00"
+    },
+    {
+      "qid": "Q111659774",
+      "title": "6 Lieder, Op. 7",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Hensel_Fanny_Mendelssohn_-_6_Lieder_Op7_No3_-_Frhling.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q111659772",
+      "title": "6 Lieder, Op. 9"
+    },
+    {
+      "qid": "Q30594711",
+      "title": "Easter Sonata",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/fanny-mendelssohn-1805-pp125",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Easter_Sonata",
+      "wikipedia_extract": "The Easter Sonata is a piano sonata in the key of A major, composed by Fanny Mendelssohn. It was lost for 150 years and when found attributed to her brother Felix, before finally being recognized as hers. It premiered in her name on 7 September 2012, played by Andrea Lam. It received a second performance by Sofya Gulyak on 8 March 2017 for BBC Radio 3. It was the second sonata composed by Fanny Mendelssohn and was completed in 1828.",
+      "pageviews_yearly": 6013
+    },
+    {
+      "qid": "Q114135263",
+      "title": "Frühzeitiger Frühling",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/fanny-mendelssohn-1805-pp146"
+    },
+    {
+      "qid": "Q111659779",
+      "title": "Fünf Lieder, Op. 10"
+    },
+    {
+      "qid": "Q15819932",
+      "title": "Il Saltarello Romano"
+    },
+    {
+      "qid": "Q138317231",
+      "title": "Overture in C"
+    },
+    {
+      "qid": "Q110527358",
+      "title": "Sechs Lieder, Op.1",
+      "imslp_id": "6_Lieder,_Op.1_(Hensel,_Fanny)",
+      "pdf_filename": "PMLP194743-6_Lieder__Op.1.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q56408585",
+      "title": "Vas Lieder für das Pianoforte (Fanny Mendelssohn)"
+    },
+    {
+      "qid": "Q56757637",
+      "title": "Women Composers"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "composer_name": "Benjamin Britten",
+  "name_last_first": "Britten, Benjamin",
+  "slug": "britten",
+  "wiki_page": "https://en.wikipedia.org/wiki/Benjamin_Britten",
+  "apple_music_playlist": "https://music.apple.com/mk/playlist/pl.25e7fc8e5dfc42259a146f8282806864",
+  "era": "Modern",
+  "dates": "1913 – 1976",
+  "nationality": "ENG",
+  "notable": true,
+  "works": [
+    {
+      "title": "Advance Democracy SSAATTBB",
+      "musicxml": "musicxml/Advance_Democracy_SSAATTBB.mxl",
+      "midi": "midi/Advance_Democracy_SSAATTBB.mid",
+      "time_signature": "4/4",
+      "instruments": [
+        "Soprano 1",
+        "Soprano 2",
+        "Alto 1",
+        "Alto 2",
+        "Tenor 1",
+        "Tenor 2",
+        "Bass 1",
+        "Bass 2"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 3,
+        "n_views": 868,
+        "duration_seconds": 159.74999999585228,
+        "n_notes": 2096,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "NA",
+        "tags": "voice-britten",
+        "musescore_url": "https://musescore.com/user/4766936/scores/2286911",
+        "musescore_duration": "03:09"
+      },
+      "key": "E♭ major",
+      "key_changes": [
+        "E♭ major",
+        "C major"
+      ],
+      "instruments_gm": [
+        "Choir Aahs"
+      ],
+      "tempo_bpm": 120,
+      "n_measures": 88,
+      "n_parts": 8,
+      "n_notes": 2047,
+      "notes_per_second": 12.8,
+      "apple_music_search_query": "Britten E♭ major Advance Democracy SSAATTBB",
+      "parent_work_title": "Advance Democracy",
+      "year_composed": 1938,
+      "wikidata_id": "Q86010320",
+      "wikidata_title": "Advance Democracy",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Britten%20Advance%20Democracy%20SSAATTBB",
+      "display_title": "Advance Democracy"
+    }
+  ],
+  "birth_year": 1913,
+  "death_year": 1976,
+  "catalog_type": "Op",
+  "wikipedia_extract": "Edward Benjamin Britten, Baron Britten  (22 November 1913 – 4 December 1976) was an English composer, conductor, and pianist. He was a central figure of 20th-century British music, with a range of works including opera, other vocal music, orchestral and chamber pieces. His best-known works include the opera Peter Grimes (1945), the War Requiem (1962) and the orchestral showpiece The Young Person's Guide to the Orchestra (1945).",
+  "wikipedia_compositions_url": "https://en.wikipedia.org/wiki/List_of_compositions_by_Benjamin_Britten",
+  "wikidata_id": "Q150767",
+  "apple_music_artist_id": "320866",
+  "apple_music_classical_url": "https://classical.music.apple.com/us/artist/320866"
+}

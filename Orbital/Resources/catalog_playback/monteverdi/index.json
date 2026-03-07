@@ -1,0 +1,374 @@
+{
+  "composer_name": "Claudio Monteverdi",
+  "name_last_first": "Monteverdi, Claudio",
+  "slug": "monteverdi",
+  "wiki_page": "https://en.wikipedia.org/wiki/Claudio_Monteverdi",
+  "apple_music_playlist": "https://music.apple.com/mk/playlist/pl.c7890ca4ba3b400bb7171681fe6e0dd6",
+  "era": "Baroque",
+  "dates": "1567 – 1643",
+  "nationality": "ITA",
+  "notable": true,
+  "works": [
+    {
+      "title": "Lamento della ninfa - Monteverdi",
+      "musicxml": "musicxml/Lamento_della_ninfa_-_Monteverdi.mxl",
+      "midi": "midi/Lamento_della_ninfa_-_Monteverdi.mid",
+      "time_signature": "3/4",
+      "instruments": [
+        "Soprano",
+        "Ténor",
+        "Basse",
+        "Harpe"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.7,
+        "n_favorites": 44,
+        "n_views": 4121,
+        "duration_seconds": 206.9999999946525,
+        "n_notes": 861,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "monteverdi-lamento-della-ninfa-amor-baroque-soprano-tnor-basse-harpe-voix",
+        "musescore_url": "https://musescore.com/user/30759266/scores/5571632",
+        "musescore_duration": "03:27"
+      },
+      "instruments_gm": [
+        "Choir Aahs",
+        "Orchestral Harp"
+      ],
+      "tempo_bpm": 120,
+      "n_measures": 138,
+      "n_parts": 5,
+      "n_notes": 861,
+      "notes_per_second": 4.2,
+      "apple_music_search_query": "Monteverdi Lamento della ninfa - Monteverdi",
+      "parent_work_title": "Amor Navaséen",
+      "wikidata_id": "Q136350158",
+      "wikidata_title": "Lamento della Ninfa",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Monteverdi%20Lamento%20della%20ninfa%20-",
+      "display_title": "Lamento della Ninfa"
+    },
+    {
+      "title": "Tirsi e Clori - Claudio Monteverdi",
+      "musicxml": "musicxml/Tirsi_e_Clori_-_Claudio_Monteverdi.mxl",
+      "midi": "midi/Tirsi_e_Clori_-_Claudio_Monteverdi.mid",
+      "key": "D minor",
+      "time_signature": "3/2",
+      "instruments": [
+        "MusicXML Part"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 1,
+        "n_views": 87,
+        "duration_seconds": 1223.4219061626982,
+        "n_notes": 10909,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/33131263/scores/5789335",
+        "musescore_duration": "11:56"
+      },
+      "key_changes": [
+        "D minor",
+        "C major"
+      ],
+      "instruments_gm": [
+        "Harpsichord"
+      ],
+      "tempo_bpm": 700,
+      "n_measures": 354,
+      "n_parts": 6,
+      "n_notes": 10903,
+      "notes_per_second": 8.9,
+      "apple_music_search_query": "Monteverdi D minor Tirsi e Clori - Claudio Monteverdi",
+      "movement_title": "Tirsi e Clori",
+      "year_composed": 1616,
+      "wikidata_id": "Q63949696",
+      "wikidata_title": "Tirsi e Clori",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Monteverdi%20Tirsi%20e%20Clori%20-",
+      "display_title": "Tirsi e Clori"
+    },
+    {
+      "title": "Claudio Monteverdi - Pur ti miro",
+      "musicxml": "musicxml/Claudio_Monteverdi_-_Pur_ti_miro.mxl",
+      "midi": "midi/Claudio_Monteverdi_-_Pur_ti_miro.mid",
+      "key": "G major",
+      "time_signature": "6/4",
+      "instruments": [
+        "Poppea",
+        "Nerome",
+        "basso"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.61,
+        "n_favorites": 26,
+        "n_views": 1542,
+        "duration_seconds": 193.49999999500125,
+        "n_notes": 646,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/9025532/scores/4831515",
+        "musescore_duration": "03:14"
+      },
+      "instruments_gm": [
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 120,
+      "n_measures": 66,
+      "n_parts": 3,
+      "n_notes": 644,
+      "notes_per_second": 3.3,
+      "apple_music_search_query": "Monteverdi G major Claudio Monteverdi - Pur ti miro",
+      "parent_work_title": "Pur ti miro",
+      "year_composed": 1642,
+      "wikidata_id": "Q2534234",
+      "wikidata_title": "Pur ti miro, pur ti godo",
+      "musicbrainz_id": "18b67116-036d-42ed-a5d6-919a5ce4bbcf",
+      "wikidata_match_method": "title_substring",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Monteverdi%20-%20Pur%20ti%20miro",
+      "display_title": "Pur ti miro, pur ti godo"
+    },
+    {
+      "title": "Claudio Monteverdi - Il ballo delle ingrate",
+      "musicxml": "musicxml/Claudio_Monteverdi_-_Il_ballo_delle_ingrate.mxl",
+      "midi": "midi/Claudio_Monteverdi_-_Il_ballo_delle_ingrate.mid",
+      "time_signature": "4/4",
+      "instruments": [
+        "Amore",
+        "Venere",
+        "Plutone",
+        "Viola"
+      ],
+      "tempo_markings": [
+        "(Lento, ma non troppo)",
+        "(Allegro)",
+        "(Lento)",
+        "(Allegro, in uno)",
+        "(Mosso)",
+        "(unicodeNoteWhole unicodeAugmentationDot = 𝅗𝅥 )",
+        "(𝅗𝅥 = unicodeNoteWhole unicodeAugmentationDot )",
+        "(unicodeNoteWhole unicodeAugmentationDot = 𝅗𝅥 unicodeAugmentationDot )",
+        "(Un poco più mosso)"
+      ],
+      "movements": [
+        {
+          "start_measure": 1,
+          "tempo_marking": "(Lento, ma non troppo)"
+        },
+        {
+          "start_measure": 37,
+          "tempo_marking": "(Allegro)"
+        },
+        {
+          "start_measure": 51,
+          "tempo_marking": "(Lento)"
+        },
+        {
+          "start_measure": 69,
+          "tempo_marking": "(Allegro)"
+        },
+        {
+          "start_measure": 83,
+          "tempo_marking": "(Lento)"
+        },
+        {
+          "start_measure": 100,
+          "tempo_marking": "(Lento)"
+        },
+        {
+          "start_measure": 174,
+          "tempo_marking": "(Allegro, in uno)"
+        },
+        {
+          "start_measure": 183,
+          "tempo_marking": "(Lento)"
+        },
+        {
+          "start_measure": 276,
+          "tempo_marking": "(Lento)"
+        },
+        {
+          "start_measure": 469,
+          "tempo_marking": "(Lento)"
+        },
+        {
+          "start_measure": 645,
+          "tempo_marking": "(Lento)"
+        },
+        {
+          "start_measure": 684,
+          "tempo_marking": "(Un poco più mosso)"
+        },
+        {
+          "start_measure": 696,
+          "tempo_marking": "(Lento)"
+        }
+      ],
+      "is_multi_movement": true,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 1,
+        "n_views": 143,
+        "duration_seconds": 3604.752832905601,
+        "n_notes": 9869,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "NA",
+        "tags": "monteverdi-claudio-ballo-ingrate-opera-madrigal-rapresentativo",
+        "musescore_url": "https://musescore.com/user/339551/scores/5368034",
+        "musescore_duration": "40:15"
+      },
+      "key": "F major",
+      "key_changes": [
+        "F major",
+        "C major"
+      ],
+      "instruments_gm": [
+        "Choir Aahs",
+        "Violin",
+        "Viola",
+        "Harpsichord"
+      ],
+      "tempo_bpm": 80,
+      "n_measures": 719,
+      "n_parts": 16,
+      "n_notes": 9739,
+      "notes_per_second": 2.7,
+      "apple_music_search_query": "Monteverdi F major Claudio Monteverdi - Il ballo delle ingrate",
+      "parent_work_title": "Il ballo delle ingrate",
+      "year_composed": 1638,
+      "wikidata_id": "Q5996683",
+      "wikidata_title": "Il ballo delle ingrate",
+      "musicbrainz_id": "f0b27525-67cd-4dc3-9448-dad6466c2e33",
+      "imslp_id": "Il_ballo_delle_ingrate_in_genere_representativo,_SV_167_(Monteverdi,_Claudio)",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Monteverdi%20-%20Il%20ballo%20delle%20ingrate",
+      "display_title": "Il ballo delle ingrate"
+    },
+    {
+      "title": "Lamento d'Arianna",
+      "musicxml": "musicxml/Lamento_dArianna.mxl",
+      "midi": "midi/Lamento_dArianna.mid",
+      "time_signature": "4/4",
+      "instruments": [
+        "Soprano",
+        "Piano"
+      ],
+      "tempo_markings": [
+        "Lento (♩ = 58)"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 6,
+        "n_views": 884,
+        "duration_seconds": 114.82754660812212,
+        "n_notes": 266,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "NA",
+        "tags": "pera-arianna-monteverdi-soprano-piano",
+        "musescore_url": "https://musescore.com/user/126575/scores/2926196",
+        "musescore_duration": "01:19"
+      },
+      "key": "A♭ major",
+      "instruments_gm": [
+        "Choir Aahs",
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 58,
+      "n_measures": 19,
+      "n_parts": 2,
+      "n_notes": 255,
+      "notes_per_second": 2.2,
+      "apple_music_search_query": "Monteverdi A♭ major Lamento d'Arianna",
+      "wikidata_id": "Q47008942",
+      "wikidata_title": "Lamento d'Arianna",
+      "musicbrainz_id": "e3794c42-4de1-348b-8bd7-696a9b1b56e7",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Monteverdi%20Lamento%20d%27Arianna",
+      "display_title": "Lamento d'Arianna"
+    },
+    {
+      "title": "Monteverdi - L'incoronazione di Poppea - Pur ti miro - AT Bc",
+      "musicxml": "musicxml/Monteverdi_-_Lincoronazione_di_Poppea_-_Pur_ti_miro_-_AT_Bc.mxl",
+      "midi": "midi/Monteverdi_-_Lincoronazione_di_Poppea_-_Pur_ti_miro_-_AT_Bc.mid",
+      "time_signature": "3/1",
+      "instruments": [
+        "Poppea",
+        "Nerone"
+      ],
+      "tempo_markings": [
+        "Presto",
+        "Adagio"
+      ],
+      "movements": [
+        {
+          "start_measure": 19,
+          "tempo_marking": "Presto"
+        },
+        {
+          "start_measure": 49,
+          "tempo_marking": "Adagio"
+        }
+      ],
+      "is_multi_movement": true,
+      "pdmx": {
+        "rating": 4.68,
+        "n_favorites": 13,
+        "n_views": 540,
+        "duration_seconds": 855.2818064022706,
+        "n_notes": 990,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "opera-baroque-oper-duetto-duett-sopran-soprano-tenor-tenore-voice-voices-gesang-canto",
+        "musescore_url": "https://musescore.com/user/33373/scores/6130532",
+        "musescore_duration": "03:38"
+      },
+      "key": "G major",
+      "instruments_gm": [
+        "Flute",
+        "Oboe",
+        "Harpsichord"
+      ],
+      "tempo_bpm": 166,
+      "n_measures": 64,
+      "n_parts": 3,
+      "n_notes": 962,
+      "notes_per_second": 1.1,
+      "apple_music_search_query": "Monteverdi G major Monteverdi - L'incoronazione di Poppea - Pur ti mi",
+      "wikidata_id": "Q615522",
+      "wikidata_title": "L'incoronazione di Poppea",
+      "musicbrainz_id": "04da0699-cf05-4d95-9605-c8718501dd82",
+      "imslp_id": "L'Incoronazione_di_Poppea,_SV_308_(Monteverdi,_Claudio)",
+      "wikidata_match_method": "title_substring",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Monteverdi%20-%20L%27incoronazione%20di%20Poppea%20-%20Pur%20ti%20miro%20-%20AT%20Bc",
+      "display_title": "L'incoronazione di Poppea"
+    }
+  ],
+  "birth_year": 1567,
+  "death_year": 1643,
+  "catalog_type": "SV",
+  "wikipedia_extract": "Claudio Giovanni Antonio Monteverdi (baptized 15 May 1567 – 29 November 1643) was an Italian composer, choirmaster and string player. A composer of both secular and sacred music, and a pioneer in the development of opera, he is considered a crucial transitional figure between the Renaissance and Baroque periods of music history. Born in Cremona, where he undertook his first musical studies and compositions, Monteverdi developed his career first at the court of Mantua (c.",
+  "wikipedia_compositions_url": "https://en.wikipedia.org/wiki/List_of_compositions_by_Claudio_Monteverdi",
+  "wikidata_id": "Q53068",
+  "apple_music_artist_id": "618710",
+  "apple_music_classical_url": "https://classical.music.apple.com/us/artist/618710"
+}

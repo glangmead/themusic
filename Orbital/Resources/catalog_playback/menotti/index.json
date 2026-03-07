@@ -1,0 +1,81 @@
+{
+  "composer_name": "Gian Carlo Menotti",
+  "name_last_first": "Menotti, Gian Carlo",
+  "slug": "menotti",
+  "wiki_page": "https://en.wikipedia.org/wiki/Gian_Carlo_Menotti",
+  "apple_music_playlist": "",
+  "era": "Modern",
+  "dates": "1911 – 2007",
+  "nationality": "ITA",
+  "notable": false,
+  "works": [
+    {
+      "title": "When the air sings of summer (Bob's Bedroom Aria) from The Old Maid and the Thief",
+      "musicxml": "musicxml/When_the_air_sings_of_summer_Bobs_Bedroom_Aria_from_The_Old_Maid_and_the_Thie.mxl",
+      "midi": "midi/When_the_air_sings_of_summer_Bobs_Bedroom_Aria_from_The_Old_Maid_and_the_Thie.mid",
+      "form": "Aria",
+      "time_signature": "5/4",
+      "instruments": [
+        "Violoncello",
+        "Piano"
+      ],
+      "tempo_markings": [
+        "Andante calmo, ma senza trascinare",
+        "rit.",
+        "Largamente",
+        "Lento",
+        "Andante"
+      ],
+      "movements": [
+        {
+          "start_measure": 1,
+          "tempo_marking": "Andante calmo, ma senza trascinare"
+        },
+        {
+          "start_measure": 21,
+          "tempo_marking": "Lento"
+        },
+        {
+          "start_measure": 23,
+          "tempo_marking": "Andante"
+        }
+      ],
+      "is_multi_movement": true,
+      "pdmx": {
+        "rating": 4.91,
+        "n_favorites": 7,
+        "n_views": 971,
+        "duration_seconds": 110.20430671939272,
+        "n_notes": 719,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "opera-english-menotti-baritonearia",
+        "musescore_url": "https://musescore.com/user/28362050/scores/6251278",
+        "musescore_duration": "01:49"
+      },
+      "key": "F major",
+      "instruments_gm": [
+        "Cello",
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 71,
+      "n_measures": 27,
+      "n_parts": 2,
+      "n_notes": 711,
+      "notes_per_second": 6.5,
+      "apple_music_search_query": "Menotti F major When the air sings of summer (Bob's Bedroom Aria) ",
+      "parent_work_title": "When the air sings of summer",
+      "wikidata_id": "Q54984440",
+      "wikidata_title": "When the air sings of summer",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Menotti%20When%20the%20air%20sings%20of%20summer%20%28Bob%27s%20Bedroom%20Aria%29",
+      "display_title": "When the air sings of summer"
+    }
+  ],
+  "birth_year": 1911,
+  "death_year": 2007,
+  "wikipedia_extract": "Gian Carlo Menotti (; Italian: [ˈdʒaŋ ˈkarlo meˈnɔtti]; July 7, 1911 – February 1, 2007) was an Italian composer, librettist, director, and playwright who is primarily known for his output of 25 operas. Although he often referred to himself as an American composer, he kept his Italian citizenship and never officially became an American citizen. One of the most frequently performed opera composers of the 20th century, he wrote his most successful works in the 1940s and 1950s.",
+  "wikidata_id": "Q270662"
+}

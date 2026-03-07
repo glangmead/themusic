@@ -1,0 +1,341 @@
+{
+  "composer_slug": "ibert",
+  "composer_qid": "Q296828",
+  "work_count": 45,
+  "midi_file_count": 1,
+  "works": [
+    {
+      "qid": "Q3057811",
+      "title": "Escales",
+      "imslp_id": "Escales_(Ibert,_Jacques)",
+      "pdf_filename": "PMLP427780-Ibert_-_Escales__arr._Ibert_-_piano_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jacques-ibert-1890-pp52",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Escales_(Ibert)",
+      "wikipedia_extract": "\nEscales is a three-movement orchestral suite by Jacques Ibert. The music was inspired by several voyages the composer made in the years after the First World War. He did not originally give the three movements geographical titles, but they are now customarily headed \"Rome–Palerme\", \"Tunis–Nefta\" and \"Valencia\". Escales was an immediate success when premiered in Paris in 1924 and has remained one of Ibert's most popular works.",
+      "pageviews_yearly": 3593,
+      "date": "1922-00-00"
+    },
+    {
+      "qid": "Q11452986",
+      "title": "Divertissement",
+      "imslp_id": "Divertissement_(Ibert,_Jacques)",
+      "pdf_filename": "PMLP432333-Ibert_-_Divertissement.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jacques-ibert-1890-pp56",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Divertissement_(Ibert)",
+      "wikipedia_extract": "\nJacques Ibert's Divertissement is a six-movement suite for chamber orchestra adapted by the composer in 1930 from incidental music he had written for a production of Eugène Labiche's stage comedy The Italian Straw Hat in 1929. It is among Ibert's best-known works and has been recorded many times.",
+      "pageviews_yearly": 2871,
+      "date": "1930-00-00"
+    },
+    {
+      "qid": "Q55599967",
+      "title": "Symphonie Marine",
+      "imslp_id": "Symphonie_marine_(Ibert,_Jacques)",
+      "pdf_filename": "PMLP492522-Ibert_-_Symphonie_marine__orch._score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jacques-ibert-1890-pp59",
+      "date": "1931-00-00"
+    },
+    {
+      "qid": "Q125632262",
+      "title": "Cinq pièces en trio",
+      "imslp_id": "5_Pièces_en_trio_(Ibert,_Jacques)",
+      "pdf_filename": "PMLP199988-Ibert_-_5_Pièces_en_Trio__oboe__clarinet_and_bassoon_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jacques-ibert-1890-pp110",
+      "date": "1935-00-00"
+    },
+    {
+      "qid": "Q120336853",
+      "title": "Bostoniana",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jacques-ibert-1890-pp73",
+      "date": "1955-00-00"
+    },
+    {
+      "qid": "Q2849858",
+      "title": "Angélique",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ang%C3%A9lique_(opera)",
+      "wikipedia_extract": "Angélique is a 1927 French opera by Jacques Ibert to a libretto by \"Nino\", a pseudonym of Michel Veber, Ibert's brother-in-law. A 1996 recording conducted by Yoram David was released on Fonit.",
+      "pageviews_yearly": 1378
+    },
+    {
+      "qid": "Q2850817",
+      "title": "Anne-Marie",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Anne-Marie_(film)",
+      "wikipedia_extract": "Anne-Marie is a 1936 French drama film directed by Raymond Bernard and starring Annabella, Pierre Richard-Willm and Paul Azaïs. If features Annabella as an aspiring young pilot. It was shot at the Saint-Maurice Studios in Paris. The film's sets were designed by the art directors Jean d'Eaubonne and Jean Perrier.",
+      "pageviews_yearly": 2030
+    },
+    {
+      "qid": "Q2849849",
+      "title": "Blood Red Rose",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Angelica_(1939_film)",
+      "wikipedia_extract": "Angelica is a 1939 French-Italian adventure film directed by Jean Choux and starring Viviane Romance, Georges Flamant and Guillaume de Sax. It is based on a novel by Pierre Benoît.",
+      "pageviews_yearly": 1527
+    },
+    {
+      "qid": "Q4893572",
+      "title": "Concertino da camera",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jacques-ibert-1890-pp63",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Concertino_da_camera_(Ibert)",
+      "wikipedia_extract": "The Concertino da camera for alto saxophone and eleven instruments was written by Jacques Ibert in 1935. Ibert dedicated the work to saxophone pioneer Sigurd Raschèr, who premiered the first movement in 1935. Later that year, Ibert completed the second movement, which was performed for the first time in its entirety by Raschèr in December 1935.",
+      "pageviews_yearly": 5324
+    },
+    {
+      "qid": "Q2992524",
+      "title": "Conflit",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Conflict_(1938_film)",
+      "wikipedia_extract": "Conflict is a 1938 French drama film directed by Léonide Moguy, who co-wrote the screenplay with Hans Wilhelm and Charles Gombault (dialogue), based on the novel Die Schwestern Kleh by Gina Kaus. It stars Corinne Luchaire, Annie Ducaux, Marguerite Pierry and Armand Bernard.",
+      "pageviews_yearly": 2020
+    },
+    {
+      "qid": "Q3001300",
+      "title": "Courrier sud",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Southern_Mail_(film)",
+      "wikipedia_extract": "Southern Mail or Southern Carrier is a 1937 French action film directed by Pierre Billon and starring Pierre Richard-Willm, Jany Holt and Raymond Aimos. It is adapted from the 1929 novel of the same name by Antoine de Saint-Exupéry.",
+      "pageviews_yearly": 2642
+    },
+    {
+      "qid": "Q3221848",
+      "title": "Culprit",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Culprit_(1937_film)",
+      "wikipedia_extract": "Culprit is a 1937 French drama film directed by Raymond Bernard and starring Pierre Blanchar, Gabriel Signoret and Suzet Maïs. It is a remake of the 1917 silent film Culprit, which was based on a novel by François Coppée.",
+      "pageviews_yearly": 1197
+    },
+    {
+      "qid": "Q123175844",
+      "title": "Deux mouvements",
+      "imslp_id": "2_Mouvements_(Ibert,_Jacques)",
+      "pdf_filename": "PMLP491204-Ibert_-_2_Mouvements__score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q56459561",
+      "title": "Divertimento"
+    },
+    {
+      "qid": "Q3415599",
+      "title": "Don Quichotte",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jacques-ibert-1890-pp91"
+    },
+    {
+      "qid": "Q22025928",
+      "title": "Don Quichotte (1933)"
+    },
+    {
+      "qid": "Q3415590",
+      "title": "Don Quixote",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jacques-ibert-1890-pp34",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Don_Quixote_(1933_film)",
+      "wikipedia_extract": "Don Quixote (1933) is a British-French film adaptation of the classic Miguel de Cervantes novel, directed by Georg Wilhelm Pabst, starring the famous operatic bass Feodor Chaliapin. Although the film stars Chaliapin, it is not an opera. However, he does sing four songs in it. It is the first sound film version of the Spanish classic. The supporting cast in the English version includes George Robey, René Donnio, Miles Mander, Lydia Sherwood, Renée Valliers, and Emily Fitzroy. The film was made in three versions—French, English, and German—with Chaliapin starring in all three versions.",
+      "pageviews_yearly": 8618
+    },
+    {
+      "qid": "Q3226132",
+      "title": "Father Serge",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Father_Serge",
+      "wikipedia_extract": "Father Serge is a 1945 French historical drama film directed by Lucien Ganier-Raymond and starring Jacques Dumesnil, Mila Parély and Marcel Herrand. It is based on the short story Father Sergius by Leo Tolstoy. It was shot at the Saint-Maurice Studios and Studio François 1 in Paris. The film's sets were designed by the art director Robert-Jules Garnier.",
+      "pageviews_yearly": 1555
+    },
+    {
+      "qid": "Q48974758",
+      "title": "Flute Concerto",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Ibert_Flute_Concerto_Movement_3_Excerpt_Arranged_for_Wind_Ensemble.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q3092275",
+      "title": "Félicie Nanteuil",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Twilight_(1944_film)",
+      "wikipedia_extract": "Twilight is a 1944 French drama film directed by Marc Allégret and starring Claude Dauphin, Micheline Presle and Louis Jourdan.",
+      "pageviews_yearly": 1706
+    },
+    {
+      "qid": "Q1747675",
+      "title": "Golgotha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Golgotha_(film)",
+      "wikipedia_extract": "Golgotha is a 1935 French film about the death of Jesus Christ, released in English-speaking countries as Behold the Man. The film was directed by Julien Duvivier, and stars Harry Baur as Herod, Jean Gabin as Pontius Pilate, and Robert Le Vigan plays Jesus of Nazareth.",
+      "pageviews_yearly": 4475
+    },
+    {
+      "qid": "Q3223523",
+      "title": "Heroes of the Marne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heroes_of_the_Marne",
+      "wikipedia_extract": "Heroes of the Marne is a 1938 French war drama film directed by André Hugon and starring Raimu, Albert Bassermann and Germaine Dermoz. The film's sets were designed by the art director Émile Duquesne.",
+      "pageviews_yearly": 1381
+    },
+    {
+      "qid": "Q3190516",
+      "title": "Justin de Marseille",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Justin_de_Marseille",
+      "wikipedia_extract": "Justin de Marseille is a 1935 French crime drama film directed by Maurice Tourneur and starring Antonin Berval, Pierre Larquey and Alexandre Rignault. It was shot at the Joinville Studios of Pathé-Natan in Paris and on location around Marseille. The film's sets were designed by the art director Lazare Meerson.",
+      "pageviews_yearly": 1919
+    },
+    {
+      "qid": "Q3201337",
+      "title": "Koenigsmark",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Koenigsmark_(1935_film)",
+      "wikipedia_extract": "Koenigsmark is a 1935 British-French drama film directed by Maurice Tourneur and starring Elissa Landi, John Lodge and Pierre Fresnay.",
+      "pageviews_yearly": 2977
+    },
+    {
+      "qid": "Q6455506",
+      "title": "L'Aiglon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/L'Aiglon_(opera)",
+      "wikipedia_extract": "L'Aiglon is an opera in five acts composed by Arthur Honegger and Jacques Ibert. Honegger composed acts 2, 3, and 4, with Ibert composing acts 1 and 5. A 2016 reviewer described it as \"a singular piece of work\" with its \"blend of operetta, divertissement, conversation piece, historical pageant and, in the disturbingly powerful fourth act set on the Napoleonic battlefield at Wagram, phantasmagoria peopled with living figures onstage and dead voices off\".",
+      "pageviews_yearly": 2882
+    },
+    {
+      "qid": "Q6456048",
+      "title": "L'éventail de Jeanne",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/L'%C3%89ventail_de_Jeanne",
+      "wikipedia_extract": "L'Éventail de Jeanne is a children's ballet choreographed in 1927 by Alice Bourgat and Yvonne Franck.",
+      "pageviews_yearly": 2346
+    },
+    {
+      "qid": "Q3207253",
+      "title": "La Charrette fantôme",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Phantom_Carriage_(1939_film)",
+      "wikipedia_extract": "The Phantom Carriage or The Phantom Wagon is a 1939 French drama film directed by Julien Duvivier and starring Pierre Fresnay, Marie Bell and Micheline Francey. It is based on the novel Thy Soul Shall Bear Witness! by Selma Lagerlöf, which had previously been adapted into the 1921 Swedish silent film The Phantom Carriage by Victor Sjöström.",
+      "pageviews_yearly": 3012
+    },
+    {
+      "qid": "Q3207697",
+      "title": "La Comédie du bonheur",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Com%C3%A9die_du_bonheur",
+      "wikipedia_extract": "La Comédie du bonheur is a French-Italian film directed by Marcel L'Herbier as a dual-language production. It was filmed in Rome in the early months of 1940, but after Italy joined World War II on the side of Germany, the French and Italian versions of the film were completed separately. The Italian version was released in December 1940 under the title Ecco la felicità!. The French version was released in July 1942.",
+      "pageviews_yearly": 2342
+    },
+    {
+      "qid": "Q3210404",
+      "title": "La maison du Maltais"
+    },
+    {
+      "qid": "Q3231557",
+      "title": "Les Cinq Gentlemen maudits",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Moon_Over_Morocco_(film)",
+      "wikipedia_extract": "Moon Over Morocco is a 1931 French mystery film directed by Julien Duvivier and starring Harry Baur, René Lefèvre and Rosine Deréan. A separate German-language film The Five Accursed Gentlemen was also produced.",
+      "pageviews_yearly": 1369
+    },
+    {
+      "qid": "Q3234569",
+      "title": "Les Petites du quai aux fleurs",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Les_Petites_du_quai_aux_fleurs",
+      "wikipedia_extract": "Les Petites du quai aux fleurs is a French film.",
+      "pageviews_yearly": 1558
+    },
+    {
+      "qid": "Q2573008",
+      "title": "Macbeth",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Macbeth_(1948_film)",
+      "wikipedia_extract": "Macbeth is a 1948 American historical drama directed by Orson Welles. A film adaptation of William Shakespeare's tragedy of the same name, it tells the story of the Scottish general who becomes the King of Scotland through treachery and murder. The film stars Welles in the lead role and Jeanette Nolan as Lady Macbeth.",
+      "pageviews_yearly": 45832
+    },
+    {
+      "qid": "Q1647437",
+      "title": "Marianne"
+    },
+    {
+      "qid": "Q3291348",
+      "title": "Marianne de ma jeunesse",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marianne_of_My_Youth",
+      "wikipedia_extract": "Marianne of My Youth is a 1955 French–West German romantic drama film directed by Julien Duvivier and starring Marianne Hold, Horst Buchholz and Pierre Vaneck. It was released in separate French language and German language versions. It is based on a 1932 novel Schmerzliches Arkadien by Peter von Mendelssohn.",
+      "pageviews_yearly": 2818
+    },
+    {
+      "qid": "Q25397054",
+      "title": "Motherhood",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Motherhood_(1935_film)",
+      "wikipedia_extract": "Motherhood is a 1935 French drama film directed by Jean Choux and starring Françoise Rosay, Félix Oudart and Thérèse Reignier.",
+      "pageviews_yearly": 1111
+    },
+    {
+      "qid": "Q3365238",
+      "title": "Paris",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jacques-ibert-1890-pp58",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Paris_(1937_film)",
+      "wikipedia_extract": "Paris is a 1937 French comedy drama film directed by Jean Choux and starring Harry Baur, Renée Saint-Cyr and Raymond Segard.",
+      "pageviews_yearly": 1129
+    },
+    {
+      "qid": "Q55629556",
+      "title": "Persée et Andromède",
+      "imslp_id": "Persée_et_Andromède_(Ibert,_Jacques)",
+      "pdf_filename": "PMLP1492152-Ibert_-_Persée_et_Andromède__full_score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pers%C3%A9e_et_Androm%C3%A8de",
+      "wikipedia_extract": "Persée et Andromède is the 1921 first opera of Jacques Ibert. A recording, with Yann Beuron and Annick Massis in the title roles and Philippe Rouillon as the monster, was conducted by Jan Latham-Koenig in 2002 for Avie.",
+      "pageviews_yearly": 838
+    },
+    {
+      "qid": "Q2362999",
+      "title": "String Quartet",
+      "imslp_id": "String_Quartet_(Ibert,_Jacques)",
+      "pdf_filename": "PMLP499371-Ibert_-_String_Quartet__parts_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jacques-ibert-1890-pp111"
+    },
+    {
+      "qid": "Q56277237",
+      "title": "The Five Accursed Gentlemen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Five_Accursed_Gentlemen",
+      "wikipedia_extract": "The Five Accursed Gentlemen is a 1932 French mystery drama film directed by Julien Duvivier and starring Anton Walbrook, Camilla Horn and Jack Trevor. It was made as the German-language version of Moon Over Morocco.",
+      "pageviews_yearly": 1592
+    },
+    {
+      "qid": "Q3203655",
+      "title": "The Former Mattia Pascal",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Former_Mattia_Pascal",
+      "wikipedia_extract": " The Former Mattia Pascal is a 1937 Italian drama film directed by Pierre Chenal and starring Pierre Blanchar, Isa Miranda and Irma Gramatica. It is based on the 1904 novel Il fu Mattia Pascal by Luigi Pirandello. The film was shot at the Cines Studios in Rome. A separate French-language version was also made, under the title The Man from Nowhere.",
+      "pageviews_yearly": 2230
+    },
+    {
+      "qid": "Q27890517",
+      "title": "The Man from Nowhere",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Man_from_Nowhere_(1937_film)",
+      "wikipedia_extract": "The Man from Nowhere is a 1937 French drama film directed by Pierre Chenal and starring Pierre Blanchar, Isa Miranda and Catherine Fonteney. It was made at the Cines Studios in Rome, and based on Luigi Pirandello's 1904 novel Il fu Mattia Pascal. A separate Italian-language version of the film was also produced.",
+      "pageviews_yearly": 2360
+    },
+    {
+      "qid": "Q19895055",
+      "title": "The Patriot",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Patriot_(1938_film)",
+      "wikipedia_extract": "The Patriot is a 1938 French historical drama film directed by Maurice Tourneur and starring Harry Baur, Pierre Renoir and Suzy Prim. The film was based on a novel by Alfred Neumann which had previously been turned into a 1928 American silent film The Patriot starring Emil Jannings. It was made by the French subsidiary of the German company Tobis Film. The sets were designed by the Russian-born art director Alexandre Lochakoff.",
+      "pageviews_yearly": 3092
+    },
+    {
+      "qid": "Q15845427",
+      "title": "Thérèse Martin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Th%C3%A9r%C3%A8se_Martin_(film)",
+      "wikipedia_extract": "Thérèse Martin is a 1939 French biographical drama film directed by Maurice de Canonge and starring Irène Corday, Madeleine Soria and Marthe Mellot. It portrays the life of the Roman Catholic saint Thérèse of Lisieux. The film's sets were designed by the art director Claude Bouxin.",
+      "pageviews_yearly": 1693
+    },
+    {
+      "qid": "Q3539390",
+      "title": "Trio pour violon, violoncelle et harpe",
+      "imslp_id": "Trio_for_Violin,_Cello,_and_Harp_(Ibert,_Jacques)",
+      "pdf_filename": "PMLP499145-Ibert_-_Trio_for_violin__cello__and_harp__score_and_parts_.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q98506077",
+      "title": "Trois pièces brèves",
+      "imslp_id": "3_Pièces_brèves_(Ibert,_Jacques)",
+      "pdf_filename": "PMLP427776-Ibert_-_3_Pièces_Brèves__score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jacques-ibert-1890-pp107"
+    }
+  ]
+}

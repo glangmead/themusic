@@ -102,6 +102,15 @@ class SongDocument {
     patternSpec = PatternSyntax(name: "Create", generatorTracks: generatorPattern)
   }
 
+  /// Init for the Classics browser — pre-seeds a PatternSyntax built from catalog data.
+  /// loadTracks() skips JSON file loading and compiles directly from the spec.
+  init(patternSyntax: PatternSyntax, name: String, subtitle: String? = nil, engine: SpatialAudioEngine, resourceBaseURL: URL? = nil) {
+    self.song = SongRef(name: name, subtitle: subtitle, patternFileName: "")
+    self.engine = engine
+    self.resourceBaseURL = resourceBaseURL
+    self.patternSpec = patternSyntax
+  }
+
   func togglePlayback() {
     switch phase {
     case .playing: pause()

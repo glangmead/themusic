@@ -1,0 +1,74 @@
+{
+  "composer_name": "Georg Philipp Telemann",
+  "name_last_first": "Telemann, Georg Philipp",
+  "slug": "telemann",
+  "wiki_page": "https://en.wikipedia.org/wiki/Georg_Philipp_Telemann",
+  "apple_music_playlist": "https://music.apple.com/mk/playlist/pl.432453d9808a45448529f6629747190c",
+  "era": "Baroque",
+  "dates": "1681 – 1767",
+  "nationality": "DEU",
+  "notable": true,
+  "works": [
+    {
+      "title": "Telemann G. P. _ Quartet in d minor TWV 43:d1 from Tafelmusik [S-A-T-B]",
+      "musicxml": "musicxml/Telemann_G_P___Quartet_in_d_minor_TWV_43d1_from_Tafelmusik_S-A-T-B.mxl",
+      "midi": "midi/Telemann_G_P___Quartet_in_d_minor_TWV_43d1_from_Tafelmusik_S-A-T-B.mid",
+      "form": "Quartet",
+      "time_signature": "4/4",
+      "instruments": [
+        "Soprano Rec.",
+        "Alto Rec.",
+        "Tenor Rec.",
+        "Bass Rec."
+      ],
+      "tempo_markings": [
+        "45"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.92,
+        "n_favorites": 19,
+        "n_views": 899,
+        "duration_seconds": 1266.2702062148312,
+        "n_notes": 13205,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/3795306/scores/5509768",
+        "musescore_duration": "14:55"
+      },
+      "key": "d minor",
+      "key_from_data": "F major",
+      "key_changes": [
+        "F major",
+        "D major"
+      ],
+      "instruments_gm": [
+        "Recorder"
+      ],
+      "tempo_bpm": 56,
+      "n_measures": 366,
+      "n_parts": 4,
+      "n_notes": 12997,
+      "notes_per_second": 10.3,
+      "apple_music_search_query": "Telemann d minor Telemann G. P. Quartet in d minor TWV 43:d1 from T",
+      "year_composed": 1733,
+      "wikidata_id": "Q1032362",
+      "wikidata_title": "Tafelmusik",
+      "imslp_id": "Tafelmusik (Telemann, Georg Philipp)",
+      "wikidata_match_method": "title_substring",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Telemann%20G.%20P.%20Quartet%20in%20d%20minor%20TWV%2043%3Ad1%20from%20Tafelmusik",
+      "display_title": "Tafelmusik"
+    }
+  ],
+  "birth_year": 1681,
+  "death_year": 1767,
+  "catalog_type": "TWV",
+  "wikipedia_extract": "Georg Philipp Telemann (German: [ˈɡeːɔʁk ˈfiːlɪp ˈteːləman]; 24 March [O.S. 14 March] 1681 – 25 June 1767) was a German Baroque composer and multi-instrumentalist. He is one of the most prolific composers in history, at least in terms of surviving works.",
+  "wikipedia_compositions_url": "https://en.wikipedia.org/wiki/List_of_compositions_by_Georg_Philipp_Telemann",
+  "wikidata_id": "Q75854",
+  "apple_music_artist_id": "319303",
+  "apple_music_classical_url": "https://classical.music.apple.com/us/artist/319303"
+}

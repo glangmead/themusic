@@ -1,0 +1,1151 @@
+{
+  "composer_slug": "dvorak",
+  "composer_qid": "Q7298",
+  "work_count": 126,
+  "midi_file_count": 5,
+  "works": [
+    {
+      "qid": "Q163532",
+      "title": "Symphony No. 1",
+      "imslp_id": "Symphony_No.1,_B.9_(Dvořák,_Antonín)",
+      "pdf_filename": "PMLP46629-Symphony_no._1__B.9.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp15",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._1_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "The Symphony No. 1 in C minor, B. 9, subtitled The Bells of Zlonice, was composed by Antonín Dvořák during February and March 1865. It is written in the early Romantic style, inspired by the works of Ludwig van Beethoven and Felix Mendelssohn. Dvořák never heard or revised the symphony, because the completed work was lost during his lifetime. It premiered in 1936.",
+      "pageviews_yearly": 7239,
+      "date": "1865-00-00"
+    },
+    {
+      "qid": "Q3499250",
+      "title": "Alfred",
+      "imslp_id": "Alfred,_B.16_(Dvořák,_Antonín)",
+      "pdf_filename": "PMLP155867-00._DVORAK_-_DRAMATIC_OVERTURE__SQ1__-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alfred_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "Alfred (B. 16) is a heroic opera in three acts by the Czech composer Antonín Dvořák. It was Dvořák's first opera and the only one he composed to a German text. The libretto, by Carl Theodor Körner, was set by Friedrich von Flotow, based on the story of the English king Alfred the Great. Composed in 1870, Alfred was not performed during Dvořák's lifetime. The opera premiered at the City Theatre, Olomouc on 10 December 1938.",
+      "pageviews_yearly": 2595,
+      "date": "1870-00-00"
+    },
+    {
+      "qid": "Q6412175",
+      "title": "King and Charcoal Burner",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp2",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_and_Charcoal_Burner",
+      "wikipedia_extract": "King and Charcoal Burner, Op. 14, is a Czech comic opera in three acts, divided into 23 scenes, with music by Antonín Dvořák.",
+      "pageviews_yearly": 3403,
+      "date": "1871-00-00"
+    },
+    {
+      "qid": "Q7767095",
+      "title": "The Stubborn Lovers",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Stubborn_Lovers",
+      "wikipedia_extract": "The Stubborn Lovers, Op. 17, is a one-act comic opera in 16 scenes by Czech composer Antonín Dvořák. It was written in 1874 to the libretto of the Czech lawyer and writer Josef Štolba (1846–1930). In English, the work is also known as The Pig-Headed Peasants.",
+      "pageviews_yearly": 2525,
+      "date": "1874-12-24"
+    },
+    {
+      "qid": "Q11331296",
+      "title": "Piano Trio No. 1",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp111",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Trio_No._1_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "\nThe Piano Trio No. 1 in B♭ major, Op. 21 (B. 51), is a piano trio by Antonín Dvořák, completed in 1875. It is the first out of the four surviving piano trios, preceded by two works from 1871 to 1872 that Dvořák destroyed.",
+      "pageviews_yearly": 2095,
+      "date": "1875-00-00"
+    },
+    {
+      "qid": "Q126243",
+      "title": "String Quintet No. 2",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp104",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quintet_No._2_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "Antonín Dvořák's String Quintet No. 2 in G major, Op. 77 (B. 49), was originally composed in early March 1875 and first performed on 18 March 1876 in Prague at the concert of the Umělecká beseda. It is scored for two violins, viola, cello, and double bass.",
+      "pageviews_yearly": 6732,
+      "date": "1875-00-00"
+    },
+    {
+      "qid": "Q2547832",
+      "title": "Vanda",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp41",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vanda_(opera)",
+      "wikipedia_extract": "Vanda is an early opera by the Czech composer Antonín Dvořák about the legendary Polish (Kraków) princess Vanda, which was literarised in the movement of the national revival by Julian Surzycki from Warsaw, a Polish national awakener, politician, civil engineer and occasional poet. His book was translated from the Polish by Václav Beneš Šumavský and adapted to libretto together with František Zákrejs in 1875. The premiere took place on 17 April 1876 at the Provisional Theatre in Prague.",
+      "pageviews_yearly": 4255,
+      "date": "1875-12-22"
+    },
+    {
+      "qid": "Q383974",
+      "title": "Piano Concerto",
+      "imslp_id": "Piano_Concerto,_Op.33_(Dvořák,_Antonín)",
+      "pdf_filename": "Dvorak_pno_concerto_2versions_2pianos.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp67",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Concerto_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "The Concerto for Piano and Orchestra in G minor, Op. 33, is the only piano concerto by Czech composer Antonín Dvořák. Written in 1876, it was the first of three concertos that Dvořák completed, followed by the Violin Concerto, Op. 53 from 1879 and the Cello Concerto, Op. 104, written in 1894–1895. The piano concerto is the least known and least performed of Dvořák's concertos.",
+      "pageviews_yearly": 5982,
+      "date": "1876-00-00"
+    },
+    {
+      "qid": "Q48847621",
+      "title": "Piano Trio No. 2",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp112",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Trio_No._2_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "Antonín Dvořák's Piano Trio No. 2 in G minor, Op. 26 (B. 57), is a chamber composition, written in 1876. The trio was written shortly after the death of his eldest daughter Josefa, and although Dvorak never wrote that the piece was intended as a memorial it is generally regarded as such. The Presto - Trio movement foreshadows the more well-known Slavonic Dances.",
+      "pageviews_yearly": 1890,
+      "date": "1876-00-00"
+    },
+    {
+      "qid": "Q7484737",
+      "title": "The Cunning Peasant",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Cunning_Peasant",
+      "wikipedia_extract": "The Cunning Peasant is an opera by Antonín Dvořák. The Czech libretto is by Josef Otakar Veselý.",
+      "pageviews_yearly": 2482,
+      "date": "1877-07-00"
+    },
+    {
+      "qid": "Q19895537",
+      "title": "Romance in F minor",
+      "imslp_id": "Romance,_Op.11_(Dvořák,_Antonín)",
+      "pdf_filename": "PMLP51921-00._DVORAK_-_ROMANCE__OP._11__BURGHAUSER__-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp118",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Romance_in_F_minor_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "The Romance in F minor, Op. 11, (B. 39) is a single-movement work for violin and orchestra by Antonín Dvořák, published in 1879.",
+      "pageviews_yearly": 4823,
+      "date": "1877-12-09"
+    },
+    {
+      "qid": "Q3511385",
+      "title": "Serenade for Wind Instruments",
+      "imslp_id": "Serenade_for_Wind_Instruments,_Op.44_(Dvořák,_Antonín)",
+      "pdf_filename": "PMLP55717-Dvorak-Op44-Serenade-pf4h-reduction.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp35",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Serenade_for_Wind_Instruments_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "Serenade for wind instruments, cello and double bass in D minor, Op. 44, B. 77, is a chamber composition by the Czech composer Antonín Dvořák. The work is dedicated to the music critic and composer Louis Ehlert who praised the Slavonic Dances highly in the German press.",
+      "pageviews_yearly": 8758,
+      "date": "1878-00-00"
+    },
+    {
+      "qid": "Q1949980",
+      "title": "String Quartet No. 10",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp89",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._10_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "Antonín Dvořák wrote his String Quartet No. 10 in E♭ major, Op. 51 (B. 92), in 1879 at the request of Jean Becker, the leader of the Florentine Quartet. It is sometimes nicknamed the Slavonic Quartet. The quartet was dedicated to Jean Becker; it was first performed by the Joachim Quartet at a private chamber music evening on July 29, 1879, in Berlin. It was published by Simrock, Berlin, in 1879.",
+      "pageviews_yearly": 3646,
+      "date": "1878-12-25"
+    },
+    {
+      "qid": "Q125356176",
+      "title": "Polonaise in E-flat major, B.100",
+      "imslp_id": "Polonaise_in_E-flat_major,_B.100_(Dvořák,_Antonín)",
+      "pdf_filename": "PMLP113895-Dvorak-B100-Polonaise-pf4h.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp43",
+      "date": "1879-00-00"
+    },
+    {
+      "qid": "Q12764130",
+      "title": "Cigánské melodie",
+      "date": "1880-00-00"
+    },
+    {
+      "qid": "Q33129816",
+      "title": "Sonata for Violin and Piano",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Violin_Sonata_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "\nThe Sonata for Violin and Piano in F major, Op. 57 (B. 106), is a violin sonata by Antonín Dvořák. The work was composed between 3 and 17 March 1880. At the time, Dvořák was also working on his violin concerto, and it seems that the composer explored different aspects of the violin in the two pieces. The sonata is naturally the more intimate of the two works, and appears in places to be influenced by Johannes Brahms.",
+      "pageviews_yearly": 2138,
+      "date": "1880-03-00"
+    },
+    {
+      "qid": "Q1977856",
+      "title": "String Quartet No. 9",
+      "imslp_id": "String_Quartet_No.9,_Op.34_(Dvořák,_Antonín)",
+      "pdf_filename": "Dvořák_Stringquartet_9_opus_34__B_75_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp87",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._9_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "\nAntonín Dvořák finished the composition of his String Quartet No. 9 in D minor, Op. 34, (B. 75) on 18 December 1877, having probably started it in July of that year.",
+      "pageviews_yearly": 2742,
+      "date": "1881-12-14"
+    },
+    {
+      "qid": "Q1194594",
+      "title": "The Jacobin",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp53",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Jacobin",
+      "wikipedia_extract": "Jakobín, or The Jacobin, is an operatic pastoral comedy in three acts by Antonín Dvořák, his Op. 84 (B. 159). Its Czech libretto by Marie Červinková-Riegrová employs characters from Alois Jirásek's story At the Ducal Court but in a plot of her devising. The opera's first performance took place on 9 February 1889 at the National Theatre in Prague with Adolf Čech conducting; it was however revised by both librettist and composer and premiered again, under Čech, on 19 June 1898, with notable adjustments to the last act, in the version that has since been standard.",
+      "pageviews_yearly": 5055,
+      "date": "1882-00-00"
+    },
+    {
+      "qid": "Q5277544",
+      "title": "Dimitrij",
+      "imslp_id": "Dimitrij,_Op.64_(Dvořák,_Antonín)",
+      "pdf_filename": "PMLP168550-Dvorak_-_Dimitrij_VS.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dimitrij_(opera)",
+      "wikipedia_extract": "Dimitrij is a Czech-language grand opera in four acts by Antonín Dvořák, set to a libretto by Marie Červinková-Riegrová, with a plot derived from Ferdinand Mikovec's Dimitr Ivanovič, itself based upon Friedrich Schiller's incomplete Demetrius. The work was first performed in Prague in 1882.",
+      "pageviews_yearly": 3858,
+      "date": "1882-09-23"
+    },
+    {
+      "qid": "Q104329884",
+      "title": "Piano Trio No. 3",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp113",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Trio_No._3_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "The Piano Trio No. 3 in F minor, Op. 65 (B. 130), is a piano trio by Antonín Dvořák. As with the Scherzo capriccioso, the Hussite Overture, the Ballade in D minor, and the Seventh Symphony, composed in the same period, the work is written in a more dramatic, dark and aggressive style that supersedes the carefree folk style of Dvořák's \"Slavonic period\".",
+      "pageviews_yearly": 3881,
+      "date": "1883-00-00"
+    },
+    {
+      "qid": "Q18396824",
+      "title": "Scherzo capriccioso",
+      "imslp_id": "Scherzo_capriccioso,_Op.66_(Dvořák,_Antonín)",
+      "pdf_filename": "PMLP46689-Dv66P4H.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp48",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Scherzo_capriccioso_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "\nThe Scherzo capriccioso in D♭ major, Op. 66 (B. 131), is an orchestral work by Antonín Dvořák. Composed in 1883, it was premiered the same year at the National Theatre under Adolf Čech. A typical performance takes approximately 14 minutes.",
+      "pageviews_yearly": 3224,
+      "date": "1883-01-01"
+    },
+    {
+      "qid": "Q261040",
+      "title": "Symphony No. 7",
+      "imslp_id": "Symphony_No.7,_Op.70_(Dvořák,_Antonín)",
+      "pdf_filename": "Dvorak_-_Symphony_No.7_in_D_minor__4-hands_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp21",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._7_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "Antonín Dvořák's Symphony No. 7 in D minor, Op. 70, B. 141, was completed on 17 March 1885 and first performed on 22 April 1885 at St James's Hall in London. It was originally published as Symphony No. 2. It is highly regarded by critics and musicologists; Donald Tovey stated that \"along with the four Brahms symphonies and Schubert's Ninth, it is among the greatest and purest examples in this art-form since Beethoven\".",
+      "pageviews_yearly": 22429,
+      "date": "1885-00-00"
+    },
+    {
+      "qid": "Q7401743",
+      "title": "Saint Ludmila, Op. 71, B. 144",
+      "imslp_id": "Saint_Ludmila,_Op.71_(Dvořák,_Antonín)",
+      "pdf_filename": "PMLP76070-Dvorak-71-Ludmila--excerpts-arr-Martin--a4.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Saint_Ludmila_(oratorio)",
+      "wikipedia_extract": "Antonín Dvořák composed his oratorio Saint Ludmila for soloists, choir and orchestra, between September 1885 and May 1886. The oratorio was written to a text by the leading Czech poet and writer Jaroslav Vrchlický. Saint Ludmila is Dvořák's third oratorio, and is considered one of his foremost works.",
+      "pageviews_yearly": 3515,
+      "date": "1886-00-00"
+    },
+    {
+      "qid": "Q2406039",
+      "title": "Terzetto in C major",
+      "imslp_id": "Terzetto,_Op.74_(Dvořák,_Antonín)",
+      "pdf_filename": "PMLP41362-terzett.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp115",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Terzetto_in_C_major_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "The Terzetto in C major, Op. 74 (B. 148), is a chamber work for two violins and viola by the Czech composer Antonín Dvořák, published in 1887.",
+      "pageviews_yearly": 3512,
+      "date": "1887-01-07"
+    },
+    {
+      "qid": "Q104369236",
+      "title": "Piano Quartet No. 2",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp110",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Quartet_No._2_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "\nThe Piano Quartet No. 2 in E♭ major, Op. 87 (B. 162), is a piano quartet by Antonín Dvořák. It was composed in summer 1889 at his country residence in Vysoká, and given its premiere performance on 17 October 1890 by Hugo Heermann, Ernst Welcker, Hugo Becker, and Martin Wallenstein.",
+      "pageviews_yearly": 3273,
+      "date": "1889-07-10"
+    },
+    {
+      "qid": "Q205756",
+      "title": "Requiem",
+      "imslp_id": "Requiem,_Op.89_(Dvořák,_Antonín)",
+      "pdf_filename": "PMLP98158-00._DVORAK_-_REQUIEM__OP._89__NOVELLO__-_Conductor_s_Score_Part_I.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp183",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Requiem_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "Antonín Dvořák's Requiem in B♭ minor, Op. 89, B. 165, is a funeral Mass scored for soloists, choir and orchestra. It was composed in 1890 and performed for the first time on 9 October 1891, in Birmingham, England, with the composer conducting.",
+      "pageviews_yearly": 9605,
+      "date": "1890-00-00"
+    },
+    {
+      "qid": "Q6010241",
+      "title": "In Nature's Realm",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp52",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/In_Nature's_Realm_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "The concert overture In Nature's Realm, Op. 91, B. 168, was written by Antonín Dvořák in 1891. It is the first part (\"Nature\") of a \"Nature, Life and Love\" trilogy of overtures written by Dvořák. The other two parts of the trilogy are the Carnival Overture, Op. 92 (\"Life\") and Othello, Op. 93 (\"Love\").",
+      "pageviews_yearly": 3960,
+      "date": "1891-03-31"
+    },
+    {
+      "qid": "Q5044098",
+      "title": "Carnival Overture",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp53",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Carnival_Overture_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "The concert overture Carnival, Op. 92, B. 169, was written by Antonín Dvořák in 1891. It is part of a \"Nature, Life and Love\" trilogy of overtures, forming the second part, \"Life\". The other two parts are In Nature's Realm, Op. 91 (\"Nature\") and Othello, Op. 93 (\"Love\").",
+      "pageviews_yearly": 6513,
+      "date": "1891-07-28"
+    },
+    {
+      "qid": "Q2398152",
+      "title": "Te Deum",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp184",
+      "date": "1892-06-25"
+    },
+    {
+      "qid": "Q172092",
+      "title": "String Quartet No. 12",
+      "imslp_id": "String_Quartet_No.12,_Op.96_(Dvořák,_Antonín)",
+      "pdf_filename": "Dvorak_String_Quartet_Op.96_piano_4_hands.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp98",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._12_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "The String Quartet No. 12 in F major, Op. 96 (B. 179), nicknamed the American Quartet, is the twelfth string quartet composed by Antonín Dvořák. It was written in 1893, during Dvořák's time in the United States. The quartet is one of the most popular in the chamber music repertoire.",
+      "pageviews_yearly": 27478,
+      "date": "1893-00-00"
+    },
+    {
+      "qid": "Q499070",
+      "title": "String Quintet No. 3",
+      "imslp_id": "String_Quintet_No.3,_Op.97_(Dvořák,_Antonín)",
+      "pdf_filename": "PMLP50835-Dvorak__Antonin__String_Quintet__Op.97__FS.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp106",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quintet_No._3_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "The String Quintet in E♭ major, Op. 97, B. 180, was composed by Antonín Dvořák during the summer he spent in Spillville, Iowa in 1893. It is a \"Viola Quintet\" in that it is scored for string quartet with an extra viola. It was completed in just over a month, immediately after he wrote his American String Quartet. Like the Quartet, the Quintet finely captures the inflection of Dvořák's Bohemian idiom with American inspirations. The Quintet was premiered by the Kneisel Quartet in New York with the addition of Max Zach, on 13 January 1894, along with the second performance of the Quartet. The quintet was very favorably reviewed, as comparable to Mozart. The reviewer noted that the Quintet was \"of the kind about which a commentator may write a small volume without exhausting his admiration or fully describing their beauties\". It received its European premiere on 10 October 1894, in Prague, by the Czech Quartet and Ferdinand Lachner.",
+      "pageviews_yearly": 6467,
+      "date": "1893-06-26"
+    },
+    {
+      "qid": "Q3503261",
+      "title": "Suite in A major",
+      "imslp_id": "Suite,_Op.98_(Dvořák,_Antonín)",
+      "pdf_filename": "Dvorak_op098_Suite.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp40",
+      "date": "1894-00-00"
+    },
+    {
+      "qid": "Q3503234",
+      "title": "American Suite",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp166",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/American_Suite",
+      "wikipedia_extract": "The American Suite in A major, Op. 98b, B. 190, is an orchestral suite written in 1894–1895 by Czech composer Antonín Dvořák.",
+      "pageviews_yearly": 5273,
+      "date": "1895-00-00"
+    },
+    {
+      "qid": "Q2140836",
+      "title": "String Quartet No. 14",
+      "imslp_id": "String_Quartet_No.14,_Op.105_(Dvořák,_Antonín)",
+      "pdf_filename": "PMLP83833-Dvorak_Aflat.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp100",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._14_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "The String Quartet No. 14 in A♭ major, Op. 105, B. 193, was the last string quartet completed by Antonín Dvořák, even though it was published before his String Quartet No. 13. Dvořák finished his Fourteenth Quartet in 1895, when he had returned to Bohemia after his visit to America. The gestation of the Quartet had actually begun in America and lasted six months, which was rather protracted for the composer. This Quartet marked an important point in Dvořák's development because he would devote himself almost exclusively to writing explicit program music, namely symphonic poems and operas, afterwards.",
+      "pageviews_yearly": 4166,
+      "date": "1895-03-26"
+    },
+    {
+      "qid": "Q540216",
+      "title": "The Wild Dove",
+      "imslp_id": "The_Wild_Dove,_Op.110_(Dvořák,_Antonín)",
+      "pdf_filename": "PMLP46645-00._DVORAK_-_THE_FOREST_DOVE__OP._110__SOUREK__-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp65",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Wild_Dove",
+      "wikipedia_extract": "\nThe Wild Dove, Op. 110, B. 198 (1896), is the fourth orchestral poem composed by the Czech composer, Antonín Dvořák. Composed in October and November 1896, with a revision in January 1897, the premiere was given on 20 March 1898 in Brno under the baton of Leoš Janáček. The story is taken from the poem of the same name from Kytice, a collection of ballads by Karel Jaromír Erben. The four musical scenes describe the story of a woman who poisoned her husband and married another man shortly afterwards. A dove then sits on the grave of her dead husband and sings a sad song day after day. The wife feels guilty and commits suicide at the end by jumping and drowning in a river.",
+      "pageviews_yearly": 5464,
+      "date": "1896-00-00"
+    },
+    {
+      "qid": "Q1216733",
+      "title": "The Devil and Kate",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp9",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Devil_and_Kate",
+      "wikipedia_extract": "The Devil and Kate, Op. 112, B. 201, is an opera in three acts by Antonín Dvořák to a Czech libretto by Adolf Wenig. It is based on a farce by Josef Kajetán Tyl, and the story also had been treated as the fairy tale Devil and Káča by Božena Němcová. The first performance of the opera was at the National Theatre, Prague, on 23 November 1899, under Adolf Čech.",
+      "pageviews_yearly": 8036,
+      "date": "1898-00-00"
+    },
+    {
+      "qid": "Q831255",
+      "title": "Rusalka",
+      "imslp_id": "Rusalka,_Op.114_(Dvořák,_Antonín)",
+      "pdf_filename": "PMLP25047-00._DVORAK_-_SONG_TO_THE_MOON_-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp14",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rusalka_(opera)",
+      "wikipedia_extract": "Rusalka, Op. 114, is an opera by Antonín Dvořák. His ninth opera (1900–1901), it became his most successful, frequenting the standard repertoire worldwide. Jaroslav Kvapil wrote the libretto on Karel Jaromír Erben's and Božena Němcová's fairy tales. The rusalka is a water sprite from Slavic mythology; it usually inhabits a lake or river.",
+      "pageviews_yearly": 73610,
+      "date": "1900-00-00"
+    },
+    {
+      "qid": "Q3312234",
+      "title": "Armida",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp11",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Armida_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "Armida is an opera by Antonín Dvořák in four acts, set to a libretto by Jaroslav Vrchlický that was originally based on Torquato Tasso's epic La Gerusalemme liberata. Dvořák's opera was first performed at Prague's National Theatre on 25 March 1904; the score was published as Opus 115 in 1941.",
+      "pageviews_yearly": 4271,
+      "date": "1903-08-23"
+    },
+    {
+      "qid": "Q3038227",
+      "title": "12 Silhouettes",
+      "imslp_id": "Silhouettes,_Op.8_(Dvořák,_Antonín)",
+      "pdf_filename": "Dvorak_-_Op.8_-_Silhouettes.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q135209748",
+      "title": "2 Pieces",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp169"
+    },
+    {
+      "qid": "Q4657289",
+      "title": "A Hero's Song",
+      "imslp_id": "A_Hero's_Song,_Op.111_(Dvořák,_Antonín)",
+      "pdf_filename": "PMLP100495-00._DVORAK_-_HERO_S_SONG__OP._111__SIMROK__-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp66",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/A_Hero's_Song",
+      "wikipedia_extract": "A Hero's Song, Op. 111, B. 199, also called Heroic Song for Orchestra, is a symphonic poem for orchestra composed by Antonín Dvořák between August 4 and October 25, 1897. It was premiered in Vienna in on December 4, 1898, with Gustav Mahler conducting the Vienna Philharmonic, and was later published in Berlin in 1899. Unlike Dvořák's other symphonic poems, this work is not based upon a specific text, and it may have been intended to be autobiographical. The piece is mostly energetic and triumphant, but it includes a slower section containing a funeral march. A typical performance lasts approximately 22 minutes.",
+      "pageviews_yearly": 4583
+    },
+    {
+      "qid": "Q3208935",
+      "title": "A Single Girl",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/A_Single_Girl",
+      "wikipedia_extract": "A Single Girl is a 1995 French drama film directed by Benoît Jacquot. It follows a day in the life of a young Parisian woman named Valérie who begins a new job at a four-star hotel the same day she reveals to her boyfriend that she is pregnant. The 90-minute film is shot in real time, with a very mobile camera style, recalling the French New Wave.",
+      "pageviews_yearly": 14684
+    },
+    {
+      "qid": "Q96372972",
+      "title": "Bagatelles, Op. 47",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bagatelles_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "The Bagatelles, Op. 47 (B. 79) are five bagatelles for two violins, cello, and harmonium written by Antonín Dvořák. They were premiered in Prague on 2 February 1879 by Ferdinand Lachner, Vorel, Alois Neruda, and the composer, at the apartment of his friend, Josef Srb-Debrnov. At Srb-Debrnov's apartment there was no piano, but a harmonium, which dictated the unusual instrumentation of the work.",
+      "pageviews_yearly": 3557
+    },
+    {
+      "qid": "Q104382520",
+      "title": "Ballade",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp123",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ballade_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "\nThe Ballade in D minor, Op. 15 (B. 139), is a ballade for violin and piano, composed by Antonín Dvořák in 1884. As with the third piano trio, the Scherzo capriccioso, the Hussite Overture, and the seventh symphony, composed in the same period, the work is written in a more dramatic, dark and aggressive style that supersedes the carefree folk style of Dvořák's \"Slavonic period\".",
+      "pageviews_yearly": 1469
+    },
+    {
+      "qid": "Q11145498",
+      "title": "Biblical Songs, Op. 99",
+      "imslp_id": "Biblical_Songs,_Op.99_(Dvořák,_Antonín)",
+      "pdf_filename": "Dvorak_-_Op.99_-_Biblical_Songs.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Biblical_Songs",
+      "wikipedia_extract": "Biblical Songs is a song cycle which consists of musical settings by Czech composer Antonín Dvořák of ten texts, selected by him, from the Book of Psalms. It was originally composed for low voice and piano. The first five songs were later orchestrated by the composer.",
+      "pageviews_yearly": 5892
+    },
+    {
+      "qid": "Q86521849",
+      "title": "Bruch & Dvořák: Violin Concertos"
+    },
+    {
+      "qid": "Q1053081",
+      "title": "Cello Concerto",
+      "imslp_id": "Cello_Concerto,_Op.104_(Dvořák,_Antonín)",
+      "pdf_filename": "Dvorak_-_Cello_Concerto_No.2__Op.104.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp74",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cello_Concerto_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "Antonín Dvořák's Cello Concerto in B minor, Op. 104, B. 191, is his last solo concerto. It was written in 1894 for his friend, the cellist Hanuš Wihan, but was premiered in London on March 19, 1896, by the English cellist Leo Stern.",
+      "pageviews_yearly": 33153
+    },
+    {
+      "qid": "Q2882314",
+      "title": "Cello Concerto in A major",
+      "imslp_id": "Cello_Concerto_in_A_major,_B.10_(Dvořák,_Antonín)",
+      "pdf_filename": "PMLP183484-DvorakVlcConcertAdur.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp127",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cello_Concerto_in_A_major_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "Antonín Dvořák wrote his first Cello Concerto in A major, B. 10 in 1865.",
+      "pageviews_yearly": 4802
+    },
+    {
+      "qid": "Q2084761",
+      "title": "Cypresses quartet",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp94",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cypresses_(Dvo%C5%99%C3%A1k%3B_quartet_version)",
+      "wikipedia_extract": "In 1887, Antonín Dvořák selected 12 of the 18 love songs from his collection Cypresses, B. 11, of 1865, and arranged them for string quartet, B. 152. He also named these 12 pieces Cypresses. The 12 pieces he selected from B. 11 are Nos. 2–4, 6–9, 12, 14, and 16–18; the original songs are for solo voice and piano, and are settings of poems by Gustav Pfleger Moravský from the collection \"Cypresses\".",
+      "pageviews_yearly": 4262
+    },
+    {
+      "qid": "Q12764286",
+      "title": "Cypřiše",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp94"
+    },
+    {
+      "qid": "Q2414230",
+      "title": "Czech Suite",
+      "imslp_id": "Czech Suite, Op.39 (Dvořák, Antonín)",
+      "pdf_filename": "PMLP109132-00._DVORAK_-_CZECH_SUITE__OP._39__SOUREK__-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp40",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Czech_Suite_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "\nThe Czech Suite in D major, Op. 39, was composed by Antonín Dvořák in 1879 and published later in his life. Adolf Čech conducted the premiere.",
+      "pageviews_yearly": 3884
+    },
+    {
+      "qid": "Q81820843",
+      "title": "Dvořák: Symphony No. 7 (Live Recording)"
+    },
+    {
+      "qid": "Q2162735",
+      "title": "Erben cycle by Antonín Dvořák",
+      "movements": [
+        {
+          "qid": "Q1171239"
+        },
+        {
+          "qid": "Q1114713"
+        },
+        {
+          "qid": "Q540216"
+        },
+        {
+          "qid": "Q4657289"
+        },
+        {
+          "qid": "Q1197908"
+        }
+      ]
+    },
+    {
+      "qid": "Q138508490",
+      "title": "Goin' Home",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp273"
+    },
+    {
+      "qid": "Q2622524",
+      "title": "Humoresques, Op. 101",
+      "imslp_id": "8_Humoresques,_Op.101_(Dvořák,_Antonín)",
+      "pdf_filename": "Dvorak_-_Op.101_-_8_Humoresques.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Humoresques_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "\nHumoresques, Op. 101 (B. 187), is a piano cycle by the Czech composer Antonín Dvořák, written during the summer of 1894. Music critic David Hurwitz says \"the seventh Humoresque is probably the most famous small piano work ever written after Beethoven's Für Elise.\"",
+      "pageviews_yearly": 25984
+    },
+    {
+      "qid": "Q28402025",
+      "title": "Hussite Overture",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hussite_Overture",
+      "wikipedia_extract": "The Hussite Overture, Op. 67, B. 132, was written by Antonín Dvořák in 1883 for the gala opening of the Prague National Theater. The composition was originally intended as a part of a dramatic trilogy on the Bohemian religious leader Jan Hus.",
+      "pageviews_yearly": 3751
+    },
+    {
+      "qid": "Q86520095",
+      "title": "In Memoriam Yakov Kreizberg"
+    },
+    {
+      "qid": "Q86523961",
+      "title": "Julia Fischer at the BBC Proms"
+    },
+    {
+      "qid": "Q3032592",
+      "title": "Legends",
+      "imslp_id": "Legends,_Op.59_(Dvořák,_Antonín)",
+      "pdf_filename": "Dvorak_-_Op.59_-_Legends.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp172",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Legends_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "\nLegends, Op. 59, B. 117, is a forty-minute group of ten pieces by the Czech composer Antonín Dvořák. They were written in early 1881 for piano duet and reset later that year for a reduced orchestra (B. 122).",
+      "pageviews_yearly": 4023
+    },
+    {
+      "qid": "Q21098801",
+      "title": "Mass in D major",
+      "imslp_id": "Mass_in_D_major,_Op.86_(Dvořák,_Antonín)",
+      "pdf_filename": "PMLP59531-Dvorak-Op086VSnov.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp182",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mass_in_D_major_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "The Mass in D major, Op. 86, is a mass composed by Antonín Dvořák in 1887. It is also called Lužanská mše after the chapel in Lužany for which it was written. It was first a work for soloists, choir and organ, and expanded to an orchestra version in 1892.",
+      "pageviews_yearly": 5650
+    },
+    {
+      "qid": "Q6909348",
+      "title": "Moravian Duets",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp209",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Moravian_Duets",
+      "wikipedia_extract": "Moravian Duets by Antonín Dvořák is a cycle of 23 Moravian folk poetry settings for two voices with piano accompaniment, composed between 1875 and 1881. The Duets, published in three volumes, Op. 20 (B. 50), Op. 32, and Op. 38 (B. 69), occupy an important position among Dvořák's other works. The fifteen duets of Op. 32 are the most famous part of the cycle. Popular interest in the Moravian Duets was the starting point for subsequent works which propelled Dvořák to international fame.",
+      "pageviews_yearly": 3694
+    },
+    {
+      "qid": "Q12771953",
+      "title": "Moravské dvojspevy"
+    },
+    {
+      "qid": "Q6945677",
+      "title": "My Home",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/My_Home_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "\nMy Home, Op. 62, B. 125a, is an overture in C major by Czech composer Antonín Dvořák. He wrote this symphonic poem between December 1881 and January 23 of the next year as one of nine numbers comprising incidental music for the play Josef Kajetán Tyl by František Ferdinand Šamberk, but it is usually performed alone as a concert work of about ten minutes.",
+      "pageviews_yearly": 2704
+    },
+    {
+      "qid": "Q19894788",
+      "title": "Nocturne in B",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp119",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nocturne_in_B_major_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "\nThe Nocturne in B major, Op. 40 (B. 47), is a single-movement composition for string orchestra by Antonín Dvořák, published in 1883.",
+      "pageviews_yearly": 2462
+    },
+    {
+      "qid": "Q7108559",
+      "title": "Othello",
+      "imslp_id": "Othello, Op.93 (Dvořák, Antonín)",
+      "pdf_filename": "PMLP46686-00._DVORAK_-_OTHELLO_OVERTURE__OP._93__SOUREK__-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp54",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Othello_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "\n\nThe concert overture Othello, Op. 93, B. 174, was written by Antonín Dvořák in 1892 as the third part of a trilogy of overtures called \"Nature, Life and Love\". The first two parts of the trilogy are In Nature's Realm, Op. 91 (\"Nature\") and the Carnival Overture, Op. 92 (\"Life\").",
+      "pageviews_yearly": 3988
+    },
+    {
+      "qid": "Q22977904",
+      "title": "Peacock"
+    },
+    {
+      "qid": "Q104369235",
+      "title": "Piano Quartet No. 1",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp107",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Quartet_No._1_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "\nThe Piano Quartet No. 1 in D major, Op. 23 (B. 53), is a piano quartet by Antonín Dvořák. Composed during an 18-day period in 1875, it was premiered on 16 December 1880 in Prague, performed by Václav Kopta, Petr Mareš, Alois Neruda, and Karel Slavkovský.",
+      "pageviews_yearly": 1884
+    },
+    {
+      "qid": "Q210227",
+      "title": "Piano Quintet No. 2",
+      "imslp_id": "Piano_Quintet_No.2,_Op.81_(Dvořák,_Antonín)",
+      "pdf_filename": "Dvorak-pianoquintet2-pianoarr.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp105",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Quintet_No._2_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "Antonín Dvořák's Piano Quintet No. 2 in A major Op. 81, B. 155, is a quintet for piano, 2 violins, viola, and cello. It was composed between August 18 and October 8, 1887, and was premiered in Prague on January 6, 1888, by Karel Ondříček, Jan Pelikán, Petr Mareš, Alois Neruda, and Karel Kovařovic. The quintet is acknowledged as one of the masterpieces in the form, along with those of Schumann, Brahms and Shostakovich.",
+      "pageviews_yearly": 12834
+    },
+    {
+      "qid": "Q162922",
+      "title": "Piano Quintet No.1, Op.5",
+      "imslp_id": "Piano_Quintet_No.1,_Op.5_(Dvořák,_Antonín)",
+      "pdf_filename": "PMLP88145-Dvorak_op.005_Piano_Quintet_No.1_score_SNKLHU.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Quintet_No._1_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "\nThe Piano Quintet No. 1 in A major, Op. 5 (B. 28), is a piano quintet by Antonín Dvořák, scored for two violins, viola, cello and piano. Composed in 1872 in Prague, it was premiered in November that year, by Vojtěch Hřímalý, Lederer, Josef Krehan, Alois Neruda, and Karel Slavkovský. It was not published then and Dvořák lost the autograph over the years, having to ask a friend for a copy when he revised the work in 1887. The revised version was not performed until 1922, 18 years after his death.",
+      "pageviews_yearly": 2594
+    },
+    {
+      "qid": "Q1305653",
+      "title": "Piano Trio No. 4",
+      "imslp_id": "Piano_Trio_No.4,_Op.90_(Dvořák,_Antonín)",
+      "pdf_filename": "PMLP83172-Dvorak_op.090_Piano_Trio_No.4_Simr.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp114",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Trio_No._4_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "The Piano Trio No. 4 in E minor, Op. 90, B. 166 is a composition by Antonín Dvořák for piano, violin and cello. It is among the composer's best-known works.",
+      "pageviews_yearly": 11342
+    },
+    {
+      "qid": "Q78527119",
+      "title": "Pisen Rusalky o Mesicku = Rusalka's song to the moon = Cân Rusalka i'r lleuad"
+    },
+    {
+      "qid": "Q3538364",
+      "title": "Poetic Tone Poems",
+      "imslp_id": "Poetic_Tone_Pictures,_Op.85_(Dvořák,_Antonín)",
+      "pdf_filename": "Dvorak_-_stimmungsbilder.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp162"
+    },
+    {
+      "qid": "Q7269349",
+      "title": "Quartet movement in F major",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quartet_Movement_in_F_major%2C_B.120_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "The Quartet Movement in F major, B. 120, is the first movement of a planned string quartet in F major by Antonín Dvořák composed in early October 1881 to fulfill a commission from the Hellmesberger Quartet and abandoned in favour of the String Quartet No. 11 in C major, Op. 61, B. 121.",
+      "pageviews_yearly": 1417
+    },
+    {
+      "qid": "Q21188988",
+      "title": "Quartet movement in F major, B.40a",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Andante_appassionato_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "Antonín Dvořák's Andante appassionato for string quartet in F major B. 40a is a section of music taken from the original version of his string quartet B. 40, No. 6. With minimal editing, the Andante appassionato forms a standalone piece.",
+      "pageviews_yearly": 1622
+    },
+    {
+      "qid": "Q7362809",
+      "title": "Romantic Pieces",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp124",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Romantic_Pieces_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "Antonín Dvořák composed his cycle of four Romantic Pieces, Op. 75, B. 150,, for violin and piano in January 1887. These four pieces are arranged from his previous composition, a trio for two violins and viola, known as Miniatures, Op. 75a, B. 149.",
+      "pageviews_yearly": 6701
+    },
+    {
+      "qid": "Q116620788",
+      "title": "Rusalka",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp14"
+    },
+    {
+      "qid": "Q132853339",
+      "title": "Scottish Dances",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp143",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Scottish_Dances_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "The Scottish Dances, Op. 41, B74, by Antonín Dvořák are a set of 15 Écossaises written for piano.",
+      "pageviews_yearly": 1399
+    },
+    {
+      "qid": "Q1758561",
+      "title": "Serenade for Strings",
+      "imslp_id": "Serenade_for_Strings,_Op.22_(Dvořák,_Antonín)",
+      "pdf_filename": "PMLP59797-00._DVORAK_-_SERENADE_IN_E__OP._22__SOUREK__-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp33",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Serenade_for_Strings_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "Antonín Dvořák's Serenade for Strings in E major, Op. 22 (B. 52), is one of the composer's most popular orchestral works. It was composed in the first two weeks of May 1875.",
+      "pageviews_yearly": 19561
+    },
+    {
+      "qid": "Q3960511",
+      "title": "Silent Woods",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp73",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Silent_Woods_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "\nSilent Woods is the translated title of the composition by Antonín Dvořák initially published under the German title Waldesruhe. It is the fifth part of the cycle for piano four-hands, Ze Šumavy Op. 68, B. 133, composed in 1883. The work is also transcribed by the composer for cello and piano (B. 173) and for cello and orchestra.",
+      "pageviews_yearly": 6457
+    },
+    {
+      "qid": "Q98590117",
+      "title": "Sitkovetsky Piano Trio plays Dvořák, Smetana & Suk"
+    },
+    {
+      "qid": "Q1468901",
+      "title": "Slavonic Dances",
+      "has_midi": true,
+      "midi_files": [
+        "midi/IVCSO_Violin_II_Dvorak_Slavonic_Dances_Nos_1-4.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q92586586",
+      "title": "Slavonic Dances, Op. 46",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Slavonic_Dances_Op72_No1.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q118391033",
+      "title": "Song to the Moon",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Antonin_Dvorak_-_Song_to_the_Moon.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q7561359",
+      "title": "Songs My Mother Taught Me",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp222",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Songs_My_Mother_Taught_Me_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "\"Songs My Mother Taught Me\" is a song for voice and piano written in 1880 by Antonín Dvořák. It is the fourth of seven songs from his cycle Gypsy Songs, B. 104, Op. 55. The Gypsy Songs are set to poems by Adolf Heyduk in both Czech and German. This song in particular has achieved widespread fame.",
+      "pageviews_yearly": 18308
+    },
+    {
+      "qid": "Q2299142",
+      "title": "Stabat Mater",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp177",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stabat_Mater_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "Antonín Dvořák's Stabat Mater, Op. 58 (B. 71), is an extended setting for vocal soloists, choir and orchestra of the 20 stanzas of the Stabat Mater sequence. Dvořák sketched the composition in 1876 and completed it in 1877. It has been characterized as a sacred cantata and as an oratorio, and consists of ten movements of which only the first and the last are thematically connected. Its total performance time is around 85 minutes.",
+      "pageviews_yearly": 15379
+    },
+    {
+      "qid": "Q2580485",
+      "title": "String Quartet No. 1",
+      "imslp_id": "String_Quartet_No.1,_Op.2_(Dvořák,_Antonín)",
+      "pdf_filename": "PMLP659921-dvorak_quartet1.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._1_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "\nAntonín Dvořák finished the composition of his String Quartet No. 1 in A major, Op. 2, (B. 8), one of his earliest chamber works, in March 1862.",
+      "pageviews_yearly": 2577
+    },
+    {
+      "qid": "Q920831",
+      "title": "String Quartet No. 11",
+      "imslp_id": "String_Quartet_No.11,_Op.61_(Dvořák,_Antonín)",
+      "pdf_filename": "PMLP143201-Dvorak.op_61.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp93",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._11_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "\nAntonín Dvořák composed his String Quartet No. 11 in C major, Op. 61, B. 121, between late October and early November 1881 to fulfill a commission from the Hellmesberger Quartet.",
+      "pageviews_yearly": 2496
+    },
+    {
+      "qid": "Q2614872",
+      "title": "String Quartet No. 13",
+      "imslp_id": "String_Quartet_No.13,_Op.106_(Dvořák,_Antonín)",
+      "pdf_filename": "PMLP137433-Dv_4tet_106_sc.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp99",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._13_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "Antonín Dvořák composed the String Quartet No. 13 in G major, Op. 106 (B. 192), between November 11 and December 9, 1895. It was first performed by the Bohemian Quartet in Prague on 9 October 1896.",
+      "pageviews_yearly": 4848
+    },
+    {
+      "qid": "Q2359368",
+      "title": "String Quartet No. 2",
+      "imslp_id": "String_Quartet_No.2,_B.17_(Dvořák,_Antonín)",
+      "pdf_filename": "PMLP659596-dvorak-string-quartet-2.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp78",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._2_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "\nThe String Quartet No. 2 in B♭ major, B. 17, was probably composed by Antonín Dvořák in 1869, early in his compositional career. It was one of three which Dvořák later believed he had destroyed after he had disposed of the scores.",
+      "pageviews_yearly": 1918
+    },
+    {
+      "qid": "Q14406495",
+      "title": "String Quartet No. 3",
+      "imslp_id": "String_Quartet_No.3,_B.18_(Dvořák,_Antonín)",
+      "pdf_filename": "PMLP660825-dvorak_3_fullscore.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp79",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._3_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "At over an hour's duration, Dvořák's String Quartet No. 3 in D major B. 18 is the longest of his compositions for this medium. It was written early in his career, probably at some stage in the years 1869 and 1870. In addition to its length, its style has been described in parts as Wagnerian.",
+      "pageviews_yearly": 2291
+    },
+    {
+      "qid": "Q5031046",
+      "title": "String Quartet No. 4",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp98",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._4_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "Antonín Dvořák composed String Quartet No. 4 in E minor, B. 19 at some stage in the years 1869 and 1870. It was one of three which Dvořák later believed he had destroyed after he had disposed of the scores.",
+      "pageviews_yearly": 2154
+    },
+    {
+      "qid": "Q2037168",
+      "title": "String Quartet No. 5",
+      "imslp_id": "String_Quartet_No.5,_Op.9_(Dvořák,_Antonín)",
+      "pdf_filename": "PMLP661461-Seiten_aus_noten_str.qu._op.9_dvorak_partitur.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp81",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._5_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "Antonín Dvořák wrote his String Quartet No. 5 in F minor, Op. 9 (B. 37), in September 1873, the composition was finished on 4 October 1873.",
+      "pageviews_yearly": 2504
+    },
+    {
+      "qid": "Q2261339",
+      "title": "String Quartet No. 6",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp82",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._6_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "Antonín Dvořák composed his String Quartet No. 6 in A minor, B. 40 Op. 12, in November and December 1873, finishing it on 5 December. He later revised it, but at this stage left the work unfinished. After a reconstruction by Jarmil Burghauser, with minimal additions, a first recording was made by the Prague String Quartet, for Deutsche Grammophon, in March and April 1977.",
+      "pageviews_yearly": 2084
+    },
+    {
+      "qid": "Q2286611",
+      "title": "String Quartet No. 7",
+      "imslp_id": "String_Quartet_No.7,_Op.16_(Dvořák,_Antonín)",
+      "pdf_filename": "PMLP379252-dvorak_quartet7_without_preface.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp84",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._7_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "Antonín Dvořák finished the composition of his String Quartet No. 7 in A minor, Op. 16 (B. 45), on 24 September 1874, having probably started it on or around the 14 September.",
+      "pageviews_yearly": 1966
+    },
+    {
+      "qid": "Q2117669",
+      "title": "String Quartet No. 8",
+      "imslp_id": "String_Quartet_No.8,_Op.80_(Dvořák,_Antonín)",
+      "pdf_filename": "PMLP379257-Dvorak_Op_80_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp85",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._8_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "Antonín Dvořák's String Quartet No. 8. in E major, Op. 80 (B. 57), is a chamber composition, written between 20 January and 4 February 1876 in Prague.",
+      "pageviews_yearly": 1878
+    },
+    {
+      "qid": "Q104353531",
+      "title": "String Quintet No. 1",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp102",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quintet_No._1_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "\nThe String Quintet No. 1 in A minor, Op. 1 (B. 7), is a string quintet by Antonín Dvořák, scored for two violins, two violas and cello. Composed in 1861, it is the first piece to which he assigned an opus number and the work with which he, at age 20, launched his career as a composer. It was not premiered until 1921, 17 years after his death, when it was played in Prague by Josef Hašek, Jan Bruna, Bohumil Klabík, Josef Tesárek, and Bedřich Jaroš. It was first published in 1943.",
+      "pageviews_yearly": 2411
+    },
+    {
+      "qid": "Q497162",
+      "title": "String Sextet",
+      "imslp_id": "String_Sextet,_Op.48_(Dvořák,_Antonín)",
+      "pdf_filename": "PMLP373315-Dv_6tet_sc_ed.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp101",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Sextet_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "Antonín Dvořák´s String Sextet in A major, Op. 48, (B. 80) for two violins, two violas and two cellos was composed for the most part in May 1878. It was Dvořák's first work to be premiered outside Bohemia.",
+      "pageviews_yearly": 3839
+    },
+    {
+      "qid": "Q1946275",
+      "title": "String quartets by Antonín Dvořák",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp98"
+    },
+    {
+      "qid": "Q7661427",
+      "title": "Symphonic Variations",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Dvorak_Symphonic_Variations_part_1.mid",
+        "midi/Dvorak_Symphonic_Variations_part_2.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q210504",
+      "title": "Symphony No. 2",
+      "imslp_id": "Symphony_No.2,_Op.4_(Dvořák,_Antonín)",
+      "pdf_filename": "PMLP46630-Dvo-ák_-_Symphony_No._2__Op._4.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp16",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._2_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "The Symphony No. 2 in B-flat major, Op. 4, B. 12 was composed by Antonín Dvořák between August and October 1865. Dvořák sent the score to be bound, but could not pay the binder, who kept the score. A friend of his, with whom he was sharing lodgings, Moric Anger, lent Dvořák the money to pay off the binder and retrieve his score. Later, when Anger asked for repayment of the debt, Dvořák was again unable to pay, so Anger took the score as security and only returned it when Dvořák retracted a previous threat to destroy it, something Anger had always advised against. In 1887 Dvořák revised the score, thinning out the rather dense orchestration.",
+      "pageviews_yearly": 10962
+    },
+    {
+      "qid": "Q223516",
+      "title": "Symphony No. 3",
+      "imslp_id": "Symphony_No.3,_Op.10_(Dvořák,_Antonín)",
+      "pdf_filename": "PMLP46631-Dvorak_op_10_Kb.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp17",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._3_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "The Symphony No. 3 in E♭ major, Op. 10, B. 34, is a classical composition by Antonín Dvořák.",
+      "pageviews_yearly": 5705
+    },
+    {
+      "qid": "Q231191",
+      "title": "Symphony No. 4",
+      "imslp_id": "Symphony_No.4,_Op.13_(Dvořák,_Antonín)",
+      "pdf_filename": "PMLP46632-00._DVORAK_-_SYMPHONY_NO._4__OP._13__SOUREK__-_Conductor_s_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp24",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._4_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "The Symphony No. 4 in D minor, Op. 13, B. 41, is a classical composition by Antonín Dvořák composed in 1874.",
+      "pageviews_yearly": 6346
+    },
+    {
+      "qid": "Q240202",
+      "title": "Symphony No. 5",
+      "imslp_id": "Symphony_No.5,_Op.76_(Dvořák,_Antonín)",
+      "pdf_filename": "Dvorak_-_Symphony_No.3_in_F_major__4-hands_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp19",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._5_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "The Symphony No. 5 in F major, Op. 76, B. 54, is a classical composition by Czech composer Antonín Dvořák. It was originally published as Symphony No. 3.",
+      "pageviews_yearly": 7888
+    },
+    {
+      "qid": "Q246464",
+      "title": "Symphony No. 6",
+      "imslp_id": "Symphony_No.6,_Op.60_(Dvořák,_Antonín)",
+      "pdf_filename": "Dvorak_-_Symphony_No.6_in_D_major__4-hands_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp24",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._6_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "Antonín Dvořák composed his Symphony No. 6 in D major, Op. 60, B. 112, in 1880. It was premiered on 25 March 1881. It was originally published as Symphony No. 1 and is dedicated to Hans Richter, who was the conductor of the Vienna Philharmonic Orchestra. With a performance time of approximately 40 minutes, the four-movement piece was one of the first of Dvořák’s large symphonic works to draw international attention. In it, he manages to capture some of the Czech national style within a standard Germanic classical-romantic form.",
+      "pageviews_yearly": 13942
+    },
+    {
+      "qid": "Q81999278",
+      "title": "Symphony No. 7 in D Minor, Op. 70, B. 141: I. Allegro Maestoso"
+    },
+    {
+      "qid": "Q82001599",
+      "title": "Symphony No. 7 in D Minor, Op. 70, B. 141: II. Poco Adagio"
+    },
+    {
+      "qid": "Q82002946",
+      "title": "Symphony No. 7 in D Minor, Op. 70, B. 141: III. Scherzo. Vivace (Poco Meno Mosso)"
+    },
+    {
+      "qid": "Q82004062",
+      "title": "Symphony No. 7 in D Minor, Op. 70, B. 141: IV. Finale. Allegro"
+    },
+    {
+      "qid": "Q270816",
+      "title": "Symphony No. 8",
+      "imslp_id": "Symphony_No.8,_Op.88_(Dvořák,_Antonín)",
+      "pdf_filename": "Dvorak-Op088arr2p4h.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp22",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._8_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "The Symphony No. 8 in G major, Op. 88, B. 163, is a symphony by Antonín Dvořák, composed in 1889 at Vysoká u Příbramě, Bohemia, on the occasion of his election to the Bohemian Academy of Science, Literature and Arts. Dvořák conducted the premiere in Prague on 2 February 1890. In contrast to other symphonies of both the composer and the period, the music is cheerful and optimistic. It was originally published as Symphony No. 4.",
+      "pageviews_yearly": 31596
+    },
+    {
+      "qid": "Q11985",
+      "title": "Symphony No. 9"
+    },
+    {
+      "qid": "Q1197383",
+      "title": "The Demon's Daughter"
+    },
+    {
+      "qid": "Q11821482",
+      "title": "The Don Juans"
+    },
+    {
+      "qid": "Q1171239",
+      "title": "The Golden Spinning Wheel",
+      "imslp_id": "The_Golden_Spinning_Wheel,_Op.109_(Dvořák,_Antonín)",
+      "pdf_filename": "PMLP46646-Dvorak_op.109_Das_goldene_Spinnrad_fs_SNKLHU_3_14.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp64",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Golden_Spinning_Wheel_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "The Golden Spinning Wheel, Op. 109, B. 197, is a symphonic poem for orchestra by Antonín Dvořák, composed from January to April 1896. The work is inspired by the poem of the same name found in Kytice, a collection of folk ballads by Karel Jaromír Erben.",
+      "pageviews_yearly": 6214
+    },
+    {
+      "qid": "Q1114713",
+      "title": "The Noon Witch",
+      "imslp_id": "The_Noon_Witch,_Op.108_(Dvořák,_Antonín)",
+      "pdf_filename": "PMLP46644-00._DVORAK_-_NOON_WITCH__OP._108__BURGHAUSER__-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp63",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Noon_Witch",
+      "wikipedia_extract": "\nThe Noon Witch, Op. 108, B. 196, is a symphonic poem written in 1896 by Antonín Dvořák which was inspired by the Karel Jaromír Erben poem Polednice from the collection Kytice. Polednice is based on the noon demon \"Lady Midday\" of Slavic mythology. It is one of a set of late orchestral works inspired by national themes which were written after his return to his native Bohemia from the United States.",
+      "pageviews_yearly": 10917
+    },
+    {
+      "qid": "Q1197658",
+      "title": "The Patoquet"
+    },
+    {
+      "qid": "Q23008906",
+      "title": "The Spectre's Bride",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp179",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Spectre's_Bride",
+      "wikipedia_extract": "The Spectre's Bride is a cantata for soloists, choir and orchestra Op. 69 by Antonín Dvořák based on a literary model by Karel Jaromír Erben (1884).",
+      "pageviews_yearly": 5129
+    },
+    {
+      "qid": "Q1197908",
+      "title": "The Water Goblin",
+      "imslp_id": "The Water Goblin, Op.107 (Dvořák, Antonín)",
+      "pdf_filename": "PMLP46642-00._DVORAK_-_THE_WATER_GOBLIN__OP._107__-UBR__-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp62",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Water_Goblin",
+      "wikipedia_extract": "\nThe Water Goblin is a symphonic poem, Op. 107 (B. 195), written by Antonín Dvořák in 1896.",
+      "pageviews_yearly": 11050
+    },
+    {
+      "qid": "Q7832642",
+      "title": "Tragic Overture",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp28",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tragic_Overture_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "The Tragic Overture, B. 16a is an orchestral composition written in 1870 by the Czech composer Antonín Dvořák. It is Dvořák's overture to his first opera Alfred.",
+      "pageviews_yearly": 1587
+    },
+    {
+      "qid": "Q16518831",
+      "title": "Tri novogrécke básne"
+    },
+    {
+      "qid": "Q109046191",
+      "title": "Trio In F Minor, Op. 65 / Trio In D Minor, Op. 32"
+    },
+    {
+      "qid": "Q135209834",
+      "title": "Two little Pearls",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp160"
+    },
+    {
+      "qid": "Q25609",
+      "title": "Violin Concerto",
+      "imslp_id": "Violin_Concerto,_Op.53_(Dvořák,_Antonín)",
+      "pdf_filename": "PMLP10720-00._DVORAK_-_VIOLIN_CONCERTO__OP._53__SOUREK__-_Conductor_s_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp70",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Violin_Concerto_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "The Violin Concerto in A minor, Op. 53, is a violin concerto composed by Antonín Dvořák in 1879. It was premiered in Prague on 14 October 1883.",
+      "pageviews_yearly": 12479
+    },
+    {
+      "qid": "Q2300887",
+      "title": "Violin Sonatina",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp126",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Violin_Sonatina_(Dvo%C5%99%C3%A1k)",
+      "wikipedia_extract": "The Sonatina in G major for violin and piano, Op. 100, B. 183, was written by Antonín Dvořák between November 19 and December 3, 1893, in New York City. It was the last chamber composition he wrote during his sojourn in the United States. Dvořák catered the sonatina to the gradually developing musical abilities of his children, especially those of his 15-year-old daughter Otilie and 10-year-old son Toník, who played piano and violin respectively. In a letter to Fritz Simrock on January 2, 1894, Dvořák conceived the piece in the following terms: \"It is intended for youths, but even grown-ups, adults, should be able to converse with it...\" The sonatina was published by Simrock in Berlin in 1894. It also exists in a version for cello and piano.",
+      "pageviews_yearly": 5980
+    },
+    {
+      "qid": "Q137161695",
+      "title": "Ze Šumavy",
+      "imslp_id": "From the Bohemian Forest, Op.68 (Dvořák, Antonín)",
+      "pdf_filename": "Dvorak_-_Waldesruhe_Op.62__Cello___Piano_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/antonin-dvorak-1841-pp173"
+    },
+    {
+      "qid": "Q12781597",
+      "title": "Šesť piesní z Rukopisu královédvorského"
+    },
+    {
+      "qid": "Q12781843",
+      "title": "Štyri piesne"
+    }
+  ]
+}

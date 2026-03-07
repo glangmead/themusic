@@ -1,0 +1,1299 @@
+{
+  "composer_slug": "shostakovich",
+  "composer_qid": "Q80135",
+  "work_count": 164,
+  "midi_file_count": 10,
+  "works": [
+    {
+      "qid": "Q153477",
+      "title": "Three Fantastic Dances",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp197",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Three_Fantastic_Dances",
+      "wikipedia_extract": "The Three Fantastic Dances, Op. 5 are a set of three piano pieces composed by Dmitri Shostakovich while he was a student at the Petrograd Conservatory. They are dedicated to Iosif Shvarts, a friend and fellow pupil in the piano class of Leonid Nikolayev.",
+      "pageviews_yearly": 3655,
+      "date": "1922-05-00"
+    },
+    {
+      "qid": "Q3539337",
+      "title": "Piano Trio No. 1",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp185",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Trio_No._1_(Shostakovich)",
+      "wikipedia_extract": "Piano Trio No. 1, Op. 8, in C minor for violin, violoncello and piano is a very early chamber composition by Dmitri Shostakovich. It was performed privately in early 1924, but was not published until the 1980s. Twenty years later, the composer wrote the more well-known Piano Trio No. 2 in E minor, Op. 67.",
+      "pageviews_yearly": 6312,
+      "date": "1923-00-00"
+    },
+    {
+      "qid": "Q210567",
+      "title": "Symphony No. 2",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp100",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._2_(Shostakovich)",
+      "wikipedia_extract": "Dmitri Shostakovich wrote his Symphony No. 2 in B major, Op. 14, subtitled To October, for the 10th anniversary of the October Revolution. It was first performed by the Leningrad Philharmonic Orchestra and the Academy Capella Choir under Nikolai Malko, on 5 November 1927. After the premiere, Shostakovich made some revisions to the score, and this final version was first played in Moscow later in 1927 under the baton of Konstantin Saradzhev. It was also the first time any version of the work had been played in Moscow.",
+      "pageviews_yearly": 13868,
+      "date": "1927-00-00"
+    },
+    {
+      "qid": "Q377536",
+      "title": "The Bedbug",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp74",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Bedbug",
+      "wikipedia_extract": "The Bedbug is a play by Vladimir Mayakovsky written in 1928–1929 and published originally by Molodaya Gvardiya magazine, then as a book, by Gosizdat, in 1929. \"The faerie comedy in nine pictures\", lampooning the type of philistine that emerged with the New Economic Policy in the Soviet Union, was premiered in February 1929 at the Meyerhold Theatre, with designs by Alexander Rodchenko. Received warmly by audiences, it caused controversy and received harsh treatment in the Soviet press. Unlike its follow-up, The Bathhouse, The Bedbug was criticised mostly for its alleged \"aesthetic faults\".",
+      "pageviews_yearly": 7591,
+      "date": "1928-00-00"
+    },
+    {
+      "qid": "Q2367888",
+      "title": "The Nose",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp66",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Nose_(opera)",
+      "wikipedia_extract": "The Nose, Op. 15, is Dmitri Shostakovich's first opera, a satirical work completed in 1928 based on Nikolai Gogol's 1836 story of the same name.",
+      "pageviews_yearly": 18664,
+      "date": "1928-00-00"
+    },
+    {
+      "qid": "Q223536",
+      "title": "Symphony No. 3",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp101",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._3_(Shostakovich)",
+      "wikipedia_extract": "The Symphony No. 3 in E♭ major, Op. 20 by Dmitri Shostakovich was first performed by the Leningrad Philharmonic Orchestra and Academy Capella Choir under Aleksandr Gauk on 21 January 1930.",
+      "pageviews_yearly": 8671,
+      "date": "1929-00-00"
+    },
+    {
+      "qid": "Q2507171",
+      "title": "The Golden Age",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp117",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Golden_Age_(Shostakovich)",
+      "wikipedia_extract": "\n\nThe Golden Age or The Age of Gold, Op. 22, is a ballet in three acts and six scenes by Dmitri Shostakovich to a libretto by Alexander Ivanovsky. Choreographed by Vasili Vainonen, Leonid Jacobson, and V. Chesnakov, it premiered on 26 October 1930 at the Kirov Theatre.",
+      "pageviews_yearly": 9494,
+      "date": "1929-00-00"
+    },
+    {
+      "qid": "Q2070036",
+      "title": "The Bolt",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp118",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Bolt_(Shostakovich)",
+      "wikipedia_extract": "The Bolt, Op. 27, is a ballet music score written by Dmitri Shostakovich between 1930 and 1931 to a libretto by Victor Smirnov. The humorous and satirical full-length ballet in three acts and seven scenes was choreographed by Fyodor Lopukhov and premiered on 8 April 1931 at the State Academic Theatre of Opera and Ballet in Leningrad. It was not performed again until 2005, when a two-act choreography by Alexei Ratmansky was performed at the Bolshoi Theatre in Moscow.",
+      "pageviews_yearly": 6604,
+      "date": "1931-00-00"
+    },
+    {
+      "qid": "Q130246851",
+      "title": "Two Pieces for string quartet",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp183",
+      "date": "1931-00-00"
+    },
+    {
+      "qid": "Q48614",
+      "title": "Lady Macbeth of the Mtsensk District",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp67",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lady_Macbeth_of_Mtsensk_(opera)",
+      "wikipedia_extract": "Lady Macbeth of Mtsensk, Op. 29 is an opera in four acts and nine scenes by Dmitri Shostakovich. The libretto, jointly written by Alexander Preys and the composer, is based on the novella Lady Macbeth of the Mtsensk District by Nikolai Leskov.",
+      "pageviews_yearly": 60838,
+      "date": "1932-00-00"
+    },
+    {
+      "qid": "Q7099831",
+      "title": "Orango",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Orango_(Shostakovich)",
+      "wikipedia_extract": "\n\nOrango is an unfinished satirical opera sketched in 1932 by Dmitri Shostakovich. The manuscript was found by Olga Digonskaya, a Russian musicologist, in the Glinka Museum, Moscow in 2004. The plan was for a prologue and three acts but only about a quarter of the Prologue was sketched.",
+      "pageviews_yearly": 3400,
+      "date": "1932-00-00"
+    },
+    {
+      "qid": "Q19876686",
+      "title": "The Big Lightning",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp68",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Big_Lightning",
+      "wikipedia_extract": "\nThe Big Lightning is an unfinished opera sketched in 1932 by Dmitri Shostakovich. The manuscript was found by Olga Digonskaya. Some of the musical material was borrowed from the earlier composition, Hypothetically Murdered, Op. 31. The music for the Big Lightning was eventually scrapped and reworked into Orango, because of his lack of confidence in the libretto. Shostakovich only managed to write the overture and eight following pieces, which lasts about 17 minutes. The original title may have been Nail in the Powder. The opera contains parodies of Glière's The Red Poppy, and Beethoven's Rage Over a Lost Penny.",
+      "pageviews_yearly": 1949,
+      "date": "1932-00-00"
+    },
+    {
+      "qid": "Q2526940",
+      "title": "Piano Concerto No. 1",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp160",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._1_(Shostakovich)",
+      "wikipedia_extract": "The Concerto in C minor for Piano, Trumpet, and String Orchestra, Op. 35, was completed by Dmitri Shostakovich in 1933.",
+      "pageviews_yearly": 14799,
+      "date": "1933-00-00"
+    },
+    {
+      "qid": "Q2312425",
+      "title": "Cello Sonata",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp189",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cello_Sonata_(Shostakovich)",
+      "wikipedia_extract": "The Cello Sonata in D minor, Op. 40, was composed in 1934 by Dmitri Shostakovich. It was also a period of emotional turmoil in his life, as he had fallen in love with a young student at a Leningrad festival featuring his Lady Macbeth of Mtsensk District. Their affair resulted in a brief separation from his wife Nina; he composed the Cello Sonata during this period. He completed it within a few weeks and gave its premiere in Moscow on 25 December with his close friend, the cellist Viktor Kubatsky, who was also the piece's dedicatee. By late 1934 Shostakovich and Nina reunited and she eventually became pregnant with their first-born daughter, who was born in 1936.",
+      "pageviews_yearly": 10117,
+      "date": "1934-00-00"
+    },
+    {
+      "qid": "Q1685790",
+      "title": "Suite for Jazz Orchestra No. 1",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp122",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Suite_for_Jazz_Orchestra_No._1_(Shostakovich)",
+      "wikipedia_extract": "\nThe Suite for Jazz Orchestra No. 1 by Dmitri Shostakovich was composed in 1934.",
+      "pageviews_yearly": 13110,
+      "date": "1934-00-00"
+    },
+    {
+      "qid": "Q105081940",
+      "title": "Five Fragments",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp151",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Five_Fragments",
+      "wikipedia_extract": "The Five Fragments, Op. 42 is a suite for small orchestra composed on June 9, 1935, by Dmitri Shostakovich. It was the only work, apart from film music, that he composed that year. He approached it as preparatory work for the composition of the final version of his Symphony No. 4.",
+      "pageviews_yearly": 1931,
+      "date": "1935-00-00"
+    },
+    {
+      "qid": "Q949217",
+      "title": "Girl Friends",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp88",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Girl_Friends_(1936_film)",
+      "wikipedia_extract": "Girl Friends is a 1936 Soviet war romance film, directorial debut of Lev Arnshtam. The film tells story of the friendship between three girls from Petrograd who grow up together and become nurses during the Russian Civil War. The film was released in the US in 1936 as Three Women.",
+      "pageviews_yearly": 5296,
+      "date": "1935-00-00"
+    },
+    {
+      "qid": "Q4410493",
+      "title": "The Limpid Stream",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp73",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Limpid_Stream",
+      "wikipedia_extract": "\nThe Limpid Stream, Op. 39, is a ballet in 3 acts, 4 scenes, composed by Dmitri Shostakovich on the libretto by Adrian Piotrovsky and Fyodor Lopukhov, with choreography by Fyodor Lopukhov. It premiered in Leningrad's Mikhaylovsky Theatre in 1935.",
+      "pageviews_yearly": 6233,
+      "date": "1935-00-00"
+    },
+    {
+      "qid": "Q231253",
+      "title": "Symphony No. 4",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp102",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._4_(Shostakovich)",
+      "wikipedia_extract": "The Symphony No. 4 in C minor, Op. 43, composed by Dmitri Shostakovich between September 1935 and May 1936, after abandoning some preliminary sketch material. In January 1936, halfway through this period, Pravda—under direct orders from Joseph Stalin—published an editorial \"Muddle Instead of Music\" that denounced the composer and targeted his opera Lady Macbeth of Mtsensk. Despite this attack and the political climate of the time, Shostakovich completed the symphony and planned its premiere for December 1936 in Leningrad. After rehearsals began, the orchestra's management cancelled the performance, offering a statement that Shostakovich had withdrawn the work. He may have agreed to withdraw it to relieve orchestra officials of responsibility. The symphony was premiered on 30 December 1961 by the Moscow Philharmonic Orchestra led by Kirill Kondrashin.",
+      "pageviews_yearly": 24436,
+      "date": "1936-00-00"
+    },
+    {
+      "qid": "Q7767996",
+      "title": "The Tale of the Priest and of His Workman Balda",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Tale_of_the_Priest_and_of_His_Workman_Balda_(film)",
+      "wikipedia_extract": "The Tale of the Priest and of His Workman Balda is a partially lost Soviet animated feature film directed by the husband-and-wife team Mikhail Tsekhanovsky and Vera Tsekhanovskaya and based on the 1830 eponymous fairy-tale in verse by Alexander Pushkin. The score was composed by Dmitri Shostakovich. The only surviving scene is called Bazaar (Marketplace). The rest of the film reels were lost in the bombing of the Lenfilm studio during the 1941 Siege of Leningrad.",
+      "pageviews_yearly": 10009,
+      "date": "1936-00-00"
+    },
+    {
+      "qid": "Q2563540",
+      "title": "String Quartet No. 1",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp168",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._1_(Shostakovich)",
+      "wikipedia_extract": "Dmitri Shostakovich's String Quartet No. 1 in C major, Op. 49, was composed in six weeks during the summer of 1938. He began to work on the quartet on the morning of May 10, 1938. It carries no dedication. Shostakovich said that in this quartet he had \"visualized childhood scenes, somewhat naïve and bright moods associated with spring.\"",
+      "pageviews_yearly": 4927,
+      "date": "1938-00-00"
+    },
+    {
+      "qid": "Q692535",
+      "title": "Suite for Jazz Orchestra No. 2",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp338",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Suite_for_Jazz_Orchestra_No._2",
+      "wikipedia_extract": "The Suite for Jazz Orchestra No. 2 is a suite by Dmitri Shostakovich. It was written in 1938 for the newly founded State Jazz Orchestra of Victor Knushevitsky, and was premiered on 28 November 1938 in Moscow by the State Jazz Orchestra. The score was used in a Soviet movie in 1950. It was performed in England for the first time in 1984. A piano score of the work was rediscovered in 1999. Three movements of the suite were reconstructed and orchestrated by Gerard McBurney, after which it was performed at a The Proms in London in 2000.",
+      "pageviews_yearly": 67298,
+      "date": "1938-00-00"
+    },
+    {
+      "qid": "Q246530",
+      "title": "Symphony No. 6",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp105",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._6_(Shostakovich)",
+      "wikipedia_extract": "The Symphony No. 6 in B minor, Op. 54 by Dmitri Shostakovich was written in 1939, and first performed in Leningrad on November 5, 1939, by the Leningrad Philharmonic Orchestra under Yevgeny Mravinsky.",
+      "pageviews_yearly": 14177,
+      "date": "1939-00-00"
+    },
+    {
+      "qid": "Q2563912",
+      "title": "Piano Quintet",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp184",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Quintet_(Shostakovich)",
+      "wikipedia_extract": "The Piano Quintet in G minor, Op. 57, is a five-movement composition for two violins, viola, cello, and piano by Dmitri Shostakovich. He composed it between July 13 and September 14, 1940. Sources conflict on where he began to compose it—the location is variously stated to be Shalovo, Kellomäki, or Moscow—but most agree that it was completed in Leningrad. It is the second of Shostakovich's two attempts at composing a piano quintet. His first dated from his student years, but was ultimately abandoned and repurposed in other compositions.",
+      "pageviews_yearly": 12083,
+      "date": "1940-00-00"
+    },
+    {
+      "qid": "Q261140",
+      "title": "Symphony No. 7",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp106",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._7_(Shostakovich)",
+      "wikipedia_extract": "Dmitri Shostakovich's Symphony No. 7 in C major, Op. 60, nicknamed the Leningrad Symphony, was begun in Leningrad, completed in the city of Samara in December 1941, and premiered in that city on March 5, 1942. At first dedicated to Lenin, it was eventually submitted in honor of the besieged city of Leningrad, where it was first played under dire circumstances on August 9, 1942, nearly a year into the siege by German forces.",
+      "pageviews_yearly": 77100,
+      "date": "1941-00-00"
+    },
+    {
+      "qid": "Q527357",
+      "title": "The Gamblers",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp69",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Gamblers_(Shostakovich)",
+      "wikipedia_extract": "The Gamblers, Op. 63, is an unfinished opera, composed by Dmitri Shostakovich in 1941/42 to his own libretto based on Nikolai Gogol's comedy The Gamblers (1842). The surviving first act lasts around 47 minutes. Krzysztof Meyer realised a completion in German, Die Spieler, in 1981. Both versions were performed on stage and recorded.",
+      "pageviews_yearly": 3020,
+      "date": "1942-00-00"
+    },
+    {
+      "qid": "Q3490151",
+      "title": "Piano Sonata No. 2",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp192",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_No._2_(Shostakovich)",
+      "wikipedia_extract": "The Piano Sonata No. 2 in B minor, Op. 61 by Dmitri Shostakovich, the last of his piano sonatas, was composed in early 1943. It was his first solo piano composition since 1933, as well as his second attempt at composing a piano sonata in the key of B minor.",
+      "pageviews_yearly": 7705,
+      "date": "1943-00-00"
+    },
+    {
+      "qid": "Q270892",
+      "title": "Symphony No. 8",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp107",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._8_(Shostakovich)",
+      "wikipedia_extract": "The Symphony No. 8 in C minor, Op. 65, by Dmitri Shostakovich was written in the summer of 1943, and first performed on 4 November of that year by the USSR Symphony Orchestra under Yevgeny Mravinsky, to whom the work is dedicated. It was briefly nicknamed the \"Stalingrad Symphony\" following the American premiere in 1944.",
+      "pageviews_yearly": 31583,
+      "date": "1943-00-00"
+    },
+    {
+      "qid": "Q3539338",
+      "title": "Piano Trio No. 2",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp186",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Trio_No._2_(Shostakovich)",
+      "wikipedia_extract": "The Piano Trio No. 2 in E minor, Op. 67, is a piece for violin, cello and piano by the Russian composer Dmitri Shostakovich, started in late 1943 and completed in August the following year. It was premiered on 14 November 1944. The piece was dedicated to his close friend Ivan Sollertinsky, whose death in February 1944 affected Shostakovich profoundly.",
+      "pageviews_yearly": 20908,
+      "date": "1944-00-00"
+    },
+    {
+      "qid": "Q2563817",
+      "title": "String Quartet No. 2",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp169",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._2_(Shostakovich)",
+      "wikipedia_extract": "Dmitri Shostakovich's String Quartet No. 2 in A major, Op. 68, was completed in September 1944 in just nineteen days in Ivanovo, 300 kilometres north-east of Moscow. It was premiered by the Beethoven Quartet and is dedicated to the composer Vissarion Shebalin.\nWhen Shostakovich began writing his Second String Quartet he had already completed eight of his fifteen symphonies. He was also half-way through his life. Another thirteen quartets remained to be composed, however, and they would come in rapid succession.",
+      "pageviews_yearly": 4520,
+      "date": "1944-09-00"
+    },
+    {
+      "qid": "Q275872",
+      "title": "Symphony No. 9",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp108",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._9_(Shostakovich)",
+      "wikipedia_extract": "The Symphony No. 9 in E♭ major, Op. 70, was composed by Dmitri Shostakovich in 1945. It was premiered on 3 November 1945 in Leningrad by the Leningrad Philharmonic Orchestra under Yevgeny Mravinsky.",
+      "pageviews_yearly": 22490,
+      "date": "1945-00-00"
+    },
+    {
+      "qid": "Q2014870",
+      "title": "String Quartet No. 3",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp170",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._3_(Shostakovich)",
+      "wikipedia_extract": "Dmitri Shostakovich's String Quartet No. 3 in F major, Op. 73, was composed in 1946. He wrote most of it between May and August of 1946 at his summer home in Kellomäki. The quartet was premiered in Moscow by the Beethoven Quartet, to which it is dedicated, in December 1946.",
+      "pageviews_yearly": 8680,
+      "date": "1946-00-00"
+    },
+    {
+      "qid": "Q4067153",
+      "title": "Antiformalist Rayok",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp349",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Antiformalist_Rayok",
+      "wikipedia_extract": "Antiformalist Rayok, also known as Learner's Manual, without opus number, is a rayok or satirical cantata for four voices, chorus, and piano by Dmitri Shostakovich. It is subtitled As an aid to students: the struggle of the realistic and formalistic directions in music. It satirizes the conferences that resulted from the Zhdanov decree of 1948 and the anti-formalism campaign in Soviet arts which followed it.",
+      "pageviews_yearly": 5492,
+      "date": "1948-00-00"
+    },
+    {
+      "qid": "Q5505451",
+      "title": "From Jewish Folk Poetry",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp261",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/From_Jewish_Folk_Poetry",
+      "wikipedia_extract": "\nFrom Jewish Folk Poetry, Op. 79, is a song cycle for soprano, contralto, tenor and piano by Dmitri Shostakovich. It uses texts taken from the collection Jewish folk songs, compiled by I. Dobrushin and A. Yuditsky, edited by Y. M. Sokolov.",
+      "pageviews_yearly": 5747,
+      "date": "1948-00-00"
+    },
+    {
+      "qid": "Q2991905",
+      "title": "Violin Concerto No. 1",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp162",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Violin_Concerto_No._1_(Shostakovich)",
+      "wikipedia_extract": "The Violin Concerto No. 1 in A minor, Op. 77 (99), was originally composed by Dmitri Shostakovich in 1947–48. He was still working on the piece at the time of the Zhdanov Doctrine, and it could not be performed in the period following the composer's denunciation. In the time between the work's initial completion and the first performance, the composer, sometimes with the collaboration of its dedicatee, David Oistrakh, worked on several revisions. The concerto was finally premiered by the Leningrad Philharmonic under Yevgeny Mravinsky on 29 October 1955. It was well-received, Oistrakh remarking on the \"depth of its artistic content\" and describing the violin part as a \"pithy 'Shakespearian' role\".",
+      "pageviews_yearly": 21413,
+      "date": "1948-00-00"
+    },
+    {
+      "qid": "Q2411249",
+      "title": "Song of the Forests",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp223",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Song_of_the_Forests",
+      "wikipedia_extract": "\nThe Song of the Forests, Op. 81, is an oratorio by Dmitri Shostakovich composed in the summer of 1949. It was written to celebrate the forestation of the Russian steppes following the end of World War II. The composition originally included texts by Yevgeny Dolmatovsky praising Joseph Stalin as the \"great gardener\"; these references were eliminated after his death. Premiered by the Leningrad Philharmonic under Yevgeny Mravinsky on 15 November 1949, the work was well received by the government, earning the composer a Stalin Prize the following year.",
+      "pageviews_yearly": 6091,
+      "date": "1949-00-00"
+    },
+    {
+      "qid": "Q1893007",
+      "title": "String Quartet No. 4",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp171",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._4_(Shostakovich)",
+      "wikipedia_extract": "Dmitri Shostakovich's String Quartet No. 4 in D major, Op. 83, was composed in 1949 and premiered in Moscow on 3 December 1953. It is dedicated to the memory of Pyotr Williams (1902–1947), a painter and set designer who was a close friend of Shostakovich.",
+      "pageviews_yearly": 4001,
+      "date": "1949-00-00"
+    },
+    {
+      "qid": "Q11331376",
+      "title": "The Pioneers Plant the Forests",
+      "date": "1949-00-00"
+    },
+    {
+      "qid": "Q60492353",
+      "title": "Four Songs to Verses of Dolmatovsky",
+      "date": "1951-00-00",
+      "movements": [
+        {
+          "qid": "Q29017193"
+        }
+      ]
+    },
+    {
+      "qid": "Q29017193",
+      "title": "The Motherland Hears",
+      "date": "1951-00-00"
+    },
+    {
+      "qid": "Q742772",
+      "title": "24 Preludes and Fugues",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp202",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/24_Preludes_and_Fugues_(Shostakovich)",
+      "wikipedia_extract": "The 24 Preludes and Fugues, Op. 87 by Dmitri Shostakovich are a set of 24 musical pieces for solo piano, one in each of the major and minor keys of the chromatic scale. The cycle was composed in 1950 and 1951 while Shostakovich was in Moscow, and premiered by pianist Tatiana Nikolayeva in Leningrad in December 1952; it was published the same year. A complete performance takes approximately 2 hours and 32 minutes. It is one of several examples of music written in all major or minor keys.",
+      "pageviews_yearly": 26559,
+      "date": "1951-03-00"
+    },
+    {
+      "qid": "Q2563804",
+      "title": "String Quartet No. 5",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp172",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._5_(Shostakovich)",
+      "wikipedia_extract": "Dmitri Shostakovich's String Quartet No. 5 in B♭ major, Op. 92, was composed in autumn 1952. It was premiered in Moscow on 13 November 1953 by the Beethoven Quartet, to whom it is dedicated.",
+      "pageviews_yearly": 3172,
+      "date": "1952-00-00"
+    },
+    {
+      "qid": "Q1992009",
+      "title": "Festive Overture",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp154",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Festive_Overture",
+      "wikipedia_extract": "\nThe Festive Overture, Op. 96 is an orchestral work composed by Dmitri Shostakovich in 1954. Commissioned for the Bolshoi Theatre's celebration of the 37th anniversary of the October Revolution, the score has since become one of the most enduring of Shostakovich's occasional scores.",
+      "pageviews_yearly": 15273,
+      "date": "1954-00-00"
+    },
+    {
+      "qid": "Q2563784",
+      "title": "String Quartet No. 6",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp173",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._6_(Shostakovich)",
+      "wikipedia_extract": "Dmitri Shostakovich's String Quartet No. 6 in G major, Op. 101, was composed in the summer of 1956. It was premiered by the Beethoven Quartet in October 1956. It carries no dedication. The Beethoven Quartet recorded it on the Mezhdunarodnaya Kniga label.",
+      "pageviews_yearly": 3344,
+      "date": "1956-00-00"
+    },
+    {
+      "qid": "Q169965",
+      "title": "Symphony No. 11",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp110",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._11_(Shostakovich)",
+      "wikipedia_extract": "The Symphony No. 11 in G minor, Op. 103, by Dmitri Shostakovich was written in 1957 and premiered by the USSR Symphony Orchestra under Natan Rakhlin on 30 October 1957. The symphony's subtitle refers to the events of the Russian Revolution of 1905, which the symphony depicts. The first performance given outside the Soviet Union took place in London's Royal Festival Hall on 22 January 1958, when Malcolm Sargent conducted the BBC Symphony Orchestra. The United States premiere was given by Leopold Stokowski and the Houston Symphony on 7 April 1958. The symphony was conceived as a popular piece and proved an instant success in the Soviet Union, his greatest since the Leningrad Symphony 15 years earlier. It earned him a Lenin Prize in April 1958.",
+      "pageviews_yearly": 38276,
+      "date": "1957-00-00"
+    },
+    {
+      "qid": "Q162004",
+      "title": "Cello Concerto No. 1",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp165",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cello_Concerto_No._1_(Shostakovich)",
+      "wikipedia_extract": "The Cello Concerto No. 1 in E♭ major, Op. 107, was composed in 1959 by Dmitri Shostakovich. Shostakovich wrote the work for his friend Mstislav Rostropovich, who committed it to memory in four days. He premiered it on October 4, 1959, at the Large Hall of the Leningrad Conservatory with the Leningrad Philharmonic Orchestra conducted by Yevgeny Mravinsky. The first recording was made in two days following the premiere by Rostropovich and the Moscow Philharmonic Orchestra conducted by Aleksandr Gauk.",
+      "pageviews_yearly": 19762,
+      "date": "1959-00-00"
+    },
+    {
+      "qid": "Q372530",
+      "title": "String Quartet No. 7",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp174",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._7_(Shostakovich)",
+      "wikipedia_extract": "Dmitri Shostakovich began work on his String Quartet No. 7 in F♯ minor, Op. 108, in May 1959 and completed it in March 1960. He dedicated it to the memory of his first wife Nina Vassilyevna Varzar, who died in December 1954. This piece was composed in the year that would have marked her 50th birthday. This quartet was premiered in Leningrad Glinka Concert Hall by the Beethoven Quartet on May 15, 1960.",
+      "pageviews_yearly": 5194,
+      "date": "1960-03-00"
+    },
+    {
+      "qid": "Q172080",
+      "title": "Symphony No. 12",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp111",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._12_(Shostakovich)",
+      "wikipedia_extract": "Symphony No. 12 in D minor, Op. 112, titled The Year 1917, was composed by Dmitri Shostakovich in 1961. He dedicated it to the memory of Vladimir Lenin. Although the performance on October 1, 1961, by the Leningrad Philharmonic Orchestra conducted by Yevgeny Mravinsky was billed as the official premiere, the actual first performance took place two hours earlier that same day in Kuybyshev by the Kuybyshev State Philharmonic Orchestra conducted by Abram Stasevich.",
+      "pageviews_yearly": 13588,
+      "date": "1961-00-00"
+    },
+    {
+      "qid": "Q175557",
+      "title": "Symphony No. 13",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp112",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._13_(Shostakovich)",
+      "wikipedia_extract": "The Symphony No. 13 in B♭ minor, Op. 113 for bass soloist, bass chorus, and large orchestra was composed by Dmitri Shostakovich in 1962. It consists of five movements, each a setting of a Yevgeny Yevtushenko poem that describes aspects of Soviet history and life. Although the symphony is commonly referred to by the nickname Babi Yar, no such subtitle is designated in Shostakovich's manuscript score.",
+      "pageviews_yearly": 31392,
+      "date": "1962-00-00"
+    },
+    {
+      "qid": "Q2668589",
+      "title": "String Quartet No. 10",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp177",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._10_(Shostakovich)",
+      "wikipedia_extract": "Dmitri Shostakovich's String Quartet No. 10 in A♭ major, Op. 118, was composed from 9 to 20 July 1964. It was premiered by the Beethoven Quartet in Moscow and is dedicated to composer Mieczysław (Moisei) Weinberg, a close friend of Shostakovich. It has been described as cultivating the uncertain mood of his earlier Stalin-era quartets, as well as foreshadowing the austerity and emotional distance of his later works. The quartet typified the preference for chamber music over large scale works, such as symphonies, that characterised his late period. According to musicologist Richard Taruskin, this made him the first Russian composer to devote so much time to the string quartet medium.",
+      "pageviews_yearly": 5437,
+      "date": "1964-00-00"
+    },
+    {
+      "qid": "Q2487732",
+      "title": "String Quartet No. 9",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp176",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._9_(Shostakovich)",
+      "wikipedia_extract": "Dmitri Shostakovich's String Quartet No. 9 in E♭ major, Op. 117, was composed in 1964 and premiered by the Beethoven Quartet. The Ninth Quartet was dedicated to his third wife, Irina Antonovna Shostakovich, a young editor he married in 1962.",
+      "pageviews_yearly": 4021,
+      "date": "1964-00-00"
+    },
+    {
+      "qid": "Q2748723",
+      "title": "Cello Concerto No. 2",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp166",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cello_Concerto_No._2_(Shostakovich)",
+      "wikipedia_extract": "Dmitri Shostakovich wrote his Cello Concerto No. 2, Op. 126, in 1966 in the Crimea. Like the first concerto, it was written for Mstislav Rostropovich, who gave the premiere in Moscow under Yevgeny Svetlanov on 25 September 1966 at the composer's 60th birthday concert. The concerto is sometimes listed as in the key of G, but the score gives no such indication.",
+      "pageviews_yearly": 10425,
+      "date": "1966-00-00"
+    },
+    {
+      "qid": "Q2249378",
+      "title": "String Quartet No. 11",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp178",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._11_(Shostakovich)",
+      "wikipedia_extract": "Dmitri Shostakovich's String Quartet No. 11 in F minor, Op. 122 was finished on January 30, 1966, in Moscow. It was premiered by the Beethoven Quartet and is the first in a series of four quartets to be dedicated to members of the Quartet. Vasily Shirinsky was the dedicatee of the Eleventh, the quartet's second violinist, who died on August 16 of the previous year.",
+      "pageviews_yearly": 3662,
+      "date": "1966-01-00"
+    },
+    {
+      "qid": "Q17214408",
+      "title": "October",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp100",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/October_(Shostakovich)",
+      "wikipedia_extract": "October, Op. 131, is a symphonic poem composed by Dmitri Shostakovich to commemorate the fiftieth anniversary of the October Revolution in 1967. He was spurred to compose the work after reencountering his score for the Vasilyev brothers' 1937 film Volochayev Days, reusing its \"Partisan Song\" in October. Although Shostakovich completed the work quickly, the process of writing it fatigued him physically because of his deteriorating motor functions.",
+      "pageviews_yearly": 4360,
+      "date": "1967-00-00"
+    },
+    {
+      "qid": "Q7457456",
+      "title": "Seven Songs on Poems by Alexander Blok",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp275",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seven_Romances_on_Poems_by_Alexander_Blok",
+      "wikipedia_extract": "\nSeven Romances on Poems by Alexander Blok is a vocal-instrumental song cycle by Dmitri Shostakovich, based on verses by Alexander Blok.",
+      "pageviews_yearly": 4248,
+      "date": "1967-00-00"
+    },
+    {
+      "qid": "Q2525229",
+      "title": "Violin Concerto No. 2",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp164",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Violin_Concerto_No._2_(Shostakovich)",
+      "wikipedia_extract": "The Violin Concerto No. 2 in C♯ minor, Op. 129, was Dmitri Shostakovich's last concerto. He wrote it in the spring of 1967 and intended it to serve as a 60th birthday present for its dedicatee, David Oistrakh, in September. However, Shostakovich had mistaken Oistrakh's age; he actually turned 59 that year. It was premiered unofficially in Bolshevo, near Moscow, on 13 September 1967, and officially on 26 September by Oistrakh and the Moscow Philharmonic under Kirill Kondrashin in Moscow.",
+      "pageviews_yearly": 7632,
+      "date": "1967-00-00"
+    },
+    {
+      "qid": "Q2563793",
+      "title": "String Quartet No. 12",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp179",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._12_(Shostakovich)",
+      "wikipedia_extract": "Dmitri Shostakovich's String Quartet No. 12 in D♭ major, Op. 133, was composed in 1968. It is dedicated to Dmitri Tsyganov, the first violinist of the Beethoven Quartet, which premiered the work in Moscow on June 14.",
+      "pageviews_yearly": 3211,
+      "date": "1968-00-00"
+    },
+    {
+      "qid": "Q188073",
+      "title": "Symphony No. 14",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp113",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._14_(Shostakovich)",
+      "wikipedia_extract": "The Symphony No. 14 in G minor, Op. 135, by Dmitri Shostakovich was completed in the spring of 1969, and was premiered later that year. It is a work for soprano, bass and a small string orchestra with percussion, consisting of eleven linked settings of poems by four authors. Most of the poems deal with the theme of death, particularly that of unjust or early death. They were set in Russian, although two other versions of the work exist with the texts all back-translated from Russian either into their original languages or into German. The symphony is dedicated to Benjamin Britten.",
+      "pageviews_yearly": 15669,
+      "date": "1969-00-00"
+    },
+    {
+      "qid": "Q2047892",
+      "title": "String Quartet No. 13",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp180",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._13_(Shostakovich)",
+      "wikipedia_extract": "Dmitri Shostakovich's String Quartet No. 13 in B♭ minor, Op. 138, was first conceived in 1969, and completed in 1970 as Shostakovich was undergoing treatment at the Russian Ilizarov Scientific Center for Restorative Traumatology and Orthopaedics in Kurgan.",
+      "pageviews_yearly": 4176,
+      "date": "1970-00-00"
+    },
+    {
+      "qid": "Q115678912",
+      "title": "March of the Soviet Militia",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp159",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/March_of_the_Soviet_Militia",
+      "wikipedia_extract": "The \"March of the Soviet Militia\", Op. 139 is a march for military band composed in 1970 by Dmitri Shostakovich.",
+      "pageviews_yearly": 2638,
+      "date": "1970-10-00"
+    },
+    {
+      "qid": "Q112765",
+      "title": "Symphony No. 15",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp114",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._15_(Shostakovich)",
+      "wikipedia_extract": "The Symphony No. 15 in A major, Op. 141, composed between late 1970 and July 29, 1971, is the final symphony by Dmitri Shostakovich. He began to plan and sketch the symphony, originally intended as a cheerful commemoration of his 65th birthday, in late 1970. After completing the sketch score in April 1971, he began the orchestration in June, during his medical therapy in Kurgan. The symphony was completed on July 29 at his summer dacha in Repino. This was followed by a prolonged period of creative inactivity that did not end until the composition of the Fourteenth Quartet in 1973.",
+      "pageviews_yearly": 26346,
+      "date": "1971-00-00"
+    },
+    {
+      "qid": "Q2563547",
+      "title": "String Quartet No. 14",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp181",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._14_(Shostakovich)",
+      "wikipedia_extract": "Dmitri Shostakovich's String Quartet No. 14 in F♯ major, Op. 142, was composed in 1972–73. It is dedicated to Sergei Shirinsky, the cellist of the Beethoven Quartet, the ensemble that premiered most of Shostakovich's quartets. The first performance was held in Leningrad on November 12, 1973.",
+      "pageviews_yearly": 3514,
+      "date": "1973-00-00"
+    },
+    {
+      "qid": "Q2050990",
+      "title": "String Quartet No. 15",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp182",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._15_(Shostakovich)",
+      "wikipedia_extract": "The String Quartet No. 15 in E♭ minor, Op. 144 by Dmitri Shostakovich is the composer's last. It was his first quartet since the Sixth which did not bear a dedication.",
+      "pageviews_yearly": 9072,
+      "date": "1974-00-00"
+    },
+    {
+      "qid": "Q3490081",
+      "title": "Viola Sonata",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp188",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Viola_Sonata_(Shostakovich)",
+      "wikipedia_extract": "The Sonata for Viola and Piano, Op. 147, is the last composition by Dmitri Shostakovich. It was completed on July 5, 1975, weeks before his death. It is dedicated to Fyodor Druzhinin, violist of the Beethoven Quartet.",
+      "pageviews_yearly": 10173,
+      "date": "1975-07-06"
+    },
+    {
+      "qid": "Q116779413",
+      "title": "Dmitry Shostakovich: Sonata for Viola",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp188",
+      "date": "1981-00-00"
+    },
+    {
+      "qid": "Q3560133",
+      "title": "24 Preludes",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp202",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/24_Preludes_(Shostakovich)",
+      "wikipedia_extract": "The 24 Preludes, Op. 34 is a set of short piano pieces written and premiered by Dmitri Shostakovich in 1933. They are arranged following the circle of fifths, with one prelude in each major and minor key.",
+      "pageviews_yearly": 6575
+    },
+    {
+      "qid": "Q1978846",
+      "title": "5 fragments for orchestra",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp151"
+    },
+    {
+      "qid": "Q46346062",
+      "title": "ABF-Memories"
+    },
+    {
+      "qid": "Q651553",
+      "title": "Alone",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp84",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alone_(1931_Soviet_film)",
+      "wikipedia_extract": "Alone is a Soviet film released in 1931. It was written and directed by Grigori Kozintsev and Leonid Trauberg. It was originally planned as a silent film, but it was eventually released with a soundtrack comprising sound effects, some dialogue and a full orchestral score by Dmitri Shostakovich. The film, about a young teacher sent to work in Siberia, is in a realist mode and addresses three political topics then current: education, technology, and the elimination of the kulaks.",
+      "pageviews_yearly": 4527
+    },
+    {
+      "qid": "Q2858244",
+      "title": "Aphorisms",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp198"
+    },
+    {
+      "qid": "Q152350",
+      "title": "Battleship Potemkin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Battleship_Potemkin",
+      "wikipedia_extract": " Battleship Potemkin is a 1925 Soviet silent epic film produced by Mosfilm. Directed and co-written by Sergei Eisenstein, it presents a dramatization of the mutiny that occurred in 1905 when the crew of the Russian battleship Potemkin rebelled against their officers.",
+      "pageviews_yearly": 299669
+    },
+    {
+      "qid": "Q4081961",
+      "title": "Belinsky",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Belinsky_(film)",
+      "wikipedia_extract": "Belinsky is a 1953 Soviet biopic film directed by Grigori Kozintsev, based on the life of Russian literary critic Vissarion Belinsky (1811–1848). The production of the film was completed in 1951 but it was not released until 1953, following the reshooting of various scenes demanded by Stalin.",
+      "pageviews_yearly": 3104
+    },
+    {
+      "qid": "Q109002423",
+      "title": "Caterina Ismàilova"
+    },
+    {
+      "qid": "Q4514789",
+      "title": "Cherry Town",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cherry_Town",
+      "wikipedia_extract": "Cherry Town is a 1962 Soviet musical comedy-drama film directed by Herbert Rappaport. It is based on Dmitri Shostakovich's 1959 operetta Moscow, Cheryomushki.",
+      "pageviews_yearly": 2297
+    },
+    {
+      "qid": "Q195170",
+      "title": "Children's Notebook",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Children's_Notebook",
+      "wikipedia_extract": "Children's Notebook, also known as A Child's Exercise Book, Op. 69 is a suite for piano composed by Dmitri Shostakovich. Although precise dating is uncertain, it is believed to have been composed over a period of twelve to eighteen months between 1944 and 1945. Shostakovich intended it for his daughter, Galina, who at the time was a young child beginning her piano studies. Originally envisioned as a cycle of twenty-four pieces in all keys arranged along a circle of fifths, the completed work ultimately contained only seven. Each piece included a corresponding illustration by Pyotr Williams.",
+      "pageviews_yearly": 4034
+    },
+    {
+      "qid": "Q4224124",
+      "title": "Clownery",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Clownery",
+      "wikipedia_extract": "Clownery is a black-and-white and colour 1989 Soviet independent film directed by Dmitrii Frolov. It is based on Daniil Kharms novel Situations.",
+      "pageviews_yearly": 1986
+    },
+    {
+      "qid": "Q18208702",
+      "title": "Concerto",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp165",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Concerto_(ballet)",
+      "wikipedia_extract": "Concerto is a one-act ballet in three movements created by Kenneth MacMillan in 1966 for the Deutsche Oper Ballet. The music is Dmitri Shostakovich's Second Piano Concerto (1957). The ballet premiered on 30 November 1966.",
+      "pageviews_yearly": 2424
+    },
+    {
+      "qid": "Q5158552",
+      "title": "Concerto DSCH",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Concerto_DSCH",
+      "wikipedia_extract": "Concerto DSCH is a ballet by Alexei Ratmansky choreographed for the New York City Ballet to the music of\nDmitri Shostakovich's Piano Concerto No. 2 in F Major, Op. 102 (1957). The premiere took place on Thursday, May 29, 2008, at the New York State Theater, Lincoln Center. The ballet's title derives from the composer's use of DSCH, his musical monogram. Wendy Whelan, one of the creators of the ballet, performed the second movement of the ballet at her farewell performance.",
+      "pageviews_yearly": 1710
+    },
+    {
+      "qid": "Q4127714",
+      "title": "Counterplan",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp85",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Counterplan_(film)",
+      "wikipedia_extract": "Counterplan is a 1932 Soviet drama film directed by Sergei Yutkevich and Fridrikh Ermler.",
+      "pageviews_yearly": 4241
+    },
+    {
+      "qid": "Q2657630",
+      "title": "Crime and Punishment",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Crime_and_Punishment_(1983_film)",
+      "wikipedia_extract": "Crime and Punishment is a 1983 film directed by Aki Kaurismäki. It is the first full-length film by Kaurismäki and is based on Fyodor Dostoevsky's 1866 novel of the same title, Crime and Punishment. The main character in the film is called Rahikainen.",
+      "pageviews_yearly": 11421
+    },
+    {
+      "qid": "Q972176",
+      "title": "DSCH motif",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/DSCH_motif",
+      "wikipedia_extract": "DSCH is a musical motif used by the composer Dmitri Shostakovich to represent himself. It is a musical cryptogram in the manner of the BACH motif, consisting of the notes D, E-flat, C, B natural, or in German musical notation D, Es, C, H, thus standing for the composer's initials in German transliteration: D. Sch..",
+      "pageviews_yearly": 21292
+    },
+    {
+      "qid": "Q4451341",
+      "title": "Dances of the Toys",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Dances_of_the_Dolls_Polka_Dmitri_Shostakovich.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q1975020",
+      "title": "Encounter at the Elbe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Encounter_at_the_Elbe",
+      "wikipedia_extract": "\nEncounter at the Elbe is a Soviet war film released in 1949 from Mosfilm, describing the conflict, spying, and collaboration between the Soviet Army advancing from the east and the U.S. Army advancing from the west. The two allied forces met each other for the first time on the River Elbe near the end of the World War II. This meeting occurred on April 25, 1945, which was usually remembered as “Elbe Day” in Western Bloc nations and as the \"Encounter at the Elbe” in Eastern Bloc nations.",
+      "pageviews_yearly": 10489
+    },
+    {
+      "qid": "Q4532119",
+      "title": "Enthusiasm",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Enthusiasm_(film)",
+      "wikipedia_extract": "Enthusiasm: The Symphony of Donbas, also referred to as Donbas Symphony or The Symphony of the Donbas Basin, is a 1931 sound film directed by Soviet filmmaker Dziga Vertov. The film was the director's first sound film and also the first of the Soviet production company Ukrainfilm. The film's score is considered experimental and avant-garde because of its incorporation of factory, industrial, and other machine sounds; human speech plays only a small role in the film's sounds.",
+      "pageviews_yearly": 9201
+    },
+    {
+      "qid": "Q209481",
+      "title": "Eyes Wide Shut",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Eyes_Wide_Shut",
+      "wikipedia_extract": "Eyes Wide Shut is a 1999 erotic psychological drama film directed, produced, and co-written by Stanley Kubrick, and starring Tom Cruise and Nicole Kidman. The plot centers on a Manhattan doctor who is shocked when his wife reveals that she contemplated cheating on him. He embarks on a night-long adventure and infiltrates a masked orgy of a secret society. It is based on the 1926 novella Dream Story by Arthur Schnitzler, and transfers the story's setting from early twentieth-century Vienna to 1990s New York City.",
+      "pageviews_yearly": 2801638
+    },
+    {
+      "qid": "Q30937",
+      "title": "Fantasia 2000",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fantasia_2000",
+      "wikipedia_extract": "Fantasia 2000 is a 1999 American animated musical anthology film produced by Walt Disney Feature Animation and the sequel to Fantasia (1940). Like its predecessor, the film consists of animated segments set to pieces of classical music. Segments are introduced by Steve Martin, Itzhak Perlman, Quincy Jones, Bette Midler, James Earl Jones, Penn & Teller, James Levine, and Angela Lansbury in live action scenes directed by Don Hahn, while the animated sequences are directed by Pixote Hunt, Hendel Butoy, Eric Goldberg, James Algar, Francis Glebas and Paul and Gaëtan Brizzi.",
+      "pageviews_yearly": 252533,
+      "movements": [
+        {
+          "qid": "Q28943917"
+        },
+        {
+          "qid": "Q28943932"
+        },
+        {
+          "qid": "Q28162258"
+        },
+        {
+          "qid": "Q19544197"
+        },
+        {
+          "qid": "Q28943933"
+        },
+        {
+          "qid": "Q3202209"
+        },
+        {
+          "qid": "Q28943934"
+        },
+        {
+          "qid": "Q28943935"
+        }
+      ]
+    },
+    {
+      "qid": "Q442853",
+      "title": "Five Days, Five Nights",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp142",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Five_Days%2C_Five_Nights_(1960_film)",
+      "wikipedia_extract": "Five Days, Five Nights is a 1961 joint Soviet–East German film, directed by Lev Arnshtam and Heinz Thiel.",
+      "pageviews_yearly": 6178
+    },
+    {
+      "qid": "Q11188024",
+      "title": "Five Preludes",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp196"
+    },
+    {
+      "qid": "Q118905853",
+      "title": "Four Verses of Captain Lebyadkin",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp279",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Four_Verses_of_Captain_Lebyadkin",
+      "wikipedia_extract": "The Four Verses of Captain Lebyadkin by Dmitri Shostakovich is a song cycle composed in 1974. It is his final vocal work.",
+      "pageviews_yearly": 3549
+    },
+    {
+      "qid": "Q4168915",
+      "title": "Friends",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp88",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Friends_(1938_film)",
+      "wikipedia_extract": "Friends is a 1938 Soviet biopic film directed by Lev Arnshtam.",
+      "pageviews_yearly": 1715
+    },
+    {
+      "qid": "Q15312783",
+      "title": "Gloria Victoria",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gloria_Victoria",
+      "wikipedia_extract": "Gloria Victoria is a 2013 3-D anti-war animated short by Theodore Ushev, produced in Montreal by the National Film Board of Canada (NFB). A film without words set to the music of Shostakovich's Leningrad Symphony, Victoria Gloria is final film in a trilogy of NFB animated shorts by Ushev on art, ideology and power, following Tower Bawher (2005) and Drux Flux (2008).",
+      "pageviews_yearly": 2576
+    },
+    {
+      "qid": "Q123684961",
+      "title": "Gogoliad",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gogoliad",
+      "wikipedia_extract": "Gogoliad, also referred to as Saint Petersburg Days, and Petersburg Tales, is an unfinished film score composed by Dmitri Shostakovich. It was intended for the namesake film that was to have been directed by Grigori Kozintsev.",
+      "pageviews_yearly": 1794
+    },
+    {
+      "qid": "Q5579675",
+      "title": "Golden Mountains",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp26",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Golden_Mountains_(film)",
+      "wikipedia_extract": "Golden Mountains is a 1931 Soviet silent drama film directed by Sergei Yutkevich. A re-edited sound version of the film was released in 1936.",
+      "pageviews_yearly": 3286
+    },
+    {
+      "qid": "Q2481391",
+      "title": "Hamlet",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp120",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamlet_(1964_film)",
+      "wikipedia_extract": "Hamlet is a 1964 film adaptation in Russian of William Shakespeare's play of the same title, based on a translation by Boris Pasternak. It was directed by Grigori Kozintsev and Iosif Shapiro, and stars Innokenty Smoktunovsky as Prince Hamlet.",
+      "pageviews_yearly": 23126
+    },
+    {
+      "qid": "Q3126472",
+      "title": "Hamlet",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp120"
+    },
+    {
+      "qid": "Q18634947",
+      "title": "Hamlet",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp120"
+    },
+    {
+      "qid": "Q2448982",
+      "title": "Heers, Britannia!"
+    },
+    {
+      "qid": "Q109047359",
+      "title": "Introducing The Canadian Piano Trio"
+    },
+    {
+      "qid": "Q1072282",
+      "title": "Japón",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jap%C3%B3n",
+      "wikipedia_extract": "Japón is a 2002 film by the Mexican director Carlos Reygadas. It was Reygadas' debut feature, which was shot on anamorphic 16-millimeter film in a 2.66:1 screen aspect ratio.",
+      "pageviews_yearly": 11434
+    },
+    {
+      "qid": "Q15052399",
+      "title": "Kalinovski Square",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kalinovski_Square",
+      "wikipedia_extract": "Kalinovski Square is a 2007 documentary film by Belarusian filmmaker Yury Khashchavatski. The film takes a critical look at the re-election of Alexander Lukashenko in March 2006, featuring especially the protests that occurred after the election was found to be fraudulent. The protests had their centre at October Square in downtown Minsk, which was informally renamed on the occasion for Konstanty Kalinowski.",
+      "pageviews_yearly": 1372
+    },
+    {
+      "qid": "Q4217296",
+      "title": "Katerina Izmailova",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Katerina_Izmailova_(film)",
+      "wikipedia_extract": "Katerina Izmailova is a 1966 Soviet film adaptation of Dmitri Shostakovich's opera Lady Macbeth of the Mtsensk District, directed by Mikhail Shapiro. It was entered into the 1967 Cannes Film Festival.",
+      "pageviews_yearly": 3121
+    },
+    {
+      "qid": "Q118904952",
+      "title": "Katyusha Maslova",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Katyusha_Maslova",
+      "wikipedia_extract": "Katyusha Maslova is an unfinished opera by Dmitri Shostakovich, with a libretto by Anatoly Mariengof, based on the novel Resurrection by Leo Tolstoy. Shostakovich received a commission from the Kirov Theatre to compose the opera in October 1940, while he was composing music for Grigori Kozintsev's production of King Lear. The first act of the libretto arrived in November, but further work was stalled because of preparations for the premiere of the Piano Quintet and the suicide of Mariengof's son. By the time work resumed in early 1941, Shostakovich had privately decided not to finish the opera.",
+      "pageviews_yearly": 2548
+    },
+    {
+      "qid": "Q2406650",
+      "title": "King Lear",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp81",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Lear_(1971_Soviet_film)",
+      "wikipedia_extract": "King Lear is a 1971 Soviet drama film directed by Grigori Kozintsev, based on William Shakespeare's play King Lear. The film uses Boris Pasternak's translation of the play, while the Fool's songs are translated by Samuil Marshak. It was Kozintsev's last completed film.",
+      "pageviews_yearly": 7082
+    },
+    {
+      "qid": "Q123604389",
+      "title": "King Lear",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp81",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/King_Lear_(Shostakovich_film_score)",
+      "wikipedia_extract": "King Lear, Op. 137, is a film score composed by Dmitri Shostakovich for the 1971 film King Lear by Grigori Kozintsev, based on Shakespeare's tragedy. It is Shostakovich's last completed film score.",
+      "pageviews_yearly": 3039
+    },
+    {
+      "qid": "Q18432385",
+      "title": "Love and Hate",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp31"
+    },
+    {
+      "qid": "Q1908016",
+      "title": "Mata Hari"
+    },
+    {
+      "qid": "Q6818534",
+      "title": "Mercurial Manoeuvres",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mercurial_Manoeuvres",
+      "wikipedia_extract": "Mercurial Manoeuvres is a ballet choreographed by Christopher Wheeldon to Shostakovich's Piano Concerto No. 1, with costumes designed by Carole Divet. The ballet premiered on April 28, 2000 at the New York State Theater.",
+      "pageviews_yearly": 966
+    },
+    {
+      "qid": "Q59188718",
+      "title": "Messengers of Eternity"
+    },
+    {
+      "qid": "Q1964422",
+      "title": "Michurin",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp131",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Michurin_(film)",
+      "wikipedia_extract": "Michurin is a 1948 Soviet film directed by Oleksandr Dovzhenko about the life of Russian practitioner of selection Ivan Michurin. The film is based on Dovzhenko's play Life in Bloom, which was also the title used for the film in its 1949 American release by Artkino Pictures.",
+      "pageviews_yearly": 3771
+    },
+    {
+      "qid": "Q5236699",
+      "title": "Moscow, Cheryomushki",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Moscow%2C_Cheryomushki",
+      "wikipedia_extract": "Moscow, Cheryomushki is an operetta in three acts by Dmitri Shostakovich, his Op. 105. It is sometimes referred to as simply Cheryomushki. Cheryomushki is a district in Moscow full of cheap subsidized housing built in 1956, and the word is also commonly used for such housing projects in general.",
+      "pageviews_yearly": 7812
+    },
+    {
+      "qid": "Q64398251",
+      "title": "Nijinsky"
+    },
+    {
+      "qid": "Q4325158",
+      "title": "Novorossiysk Chimes",
+      "has_midi": true,
+      "midi_files": [
+        "midi/The_Fire_of_Eternal_GloryNovorossiysk_Chimes_for_Brass_Ensemble.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q1156836",
+      "title": "October: Ten Days That Shook the World",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/October%3A_Ten_Days_That_Shook_the_World",
+      "wikipedia_extract": "October: Ten Days That Shook the World is a 1928 Soviet silent propaganda film written and directed by Sergei Eisenstein and Grigori Aleksandrov. It is a celebratory dramatization of the 1917 October Revolution commissioned for the tenth anniversary of the event. Originally released in the Soviet Union as October, the film was re-edited and released internationally as Ten Days That Shook The World, after John Reed's popular 1919 book on the Revolution.",
+      "pageviews_yearly": 46494
+    },
+    {
+      "qid": "Q4101838",
+      "title": "On Thursday and Never Again",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/On_Thursday_and_Never_Again",
+      "wikipedia_extract": "On Thursday and Never Again is a 1977 Soviet romantic drama film directed by Anatoly Efros.",
+      "pageviews_yearly": 1530
+    },
+    {
+      "qid": "Q11350263",
+      "title": "Overture on Russian and Kirghiz Folk Themes"
+    },
+    {
+      "qid": "Q210226",
+      "title": "Piano Concerto No. 2",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp161",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._2_(Shostakovich)",
+      "wikipedia_extract": "Piano Concerto No. 2 in F major, Op. 102, by Dmitri Shostakovich was composed in 1957 for the 19th birthday of his son Maxim, who premiered the piece on 10 May 1957 during his graduation concert at the Moscow Conservatory. It contains many similar elements to Shostakovich's Concertino for Two Pianos: both works were written to be accessible for developing young pianists. It is an uncharacteristically cheerful piece for Shostakovich.",
+      "pageviews_yearly": 28374
+    },
+    {
+      "qid": "Q19544197",
+      "title": "Piano Concerto No. 2",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp161"
+    },
+    {
+      "qid": "Q4363366",
+      "title": "Pirogov",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp47",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pirogov_(film)",
+      "wikipedia_extract": "Pirogov is a 1947 Soviet biopic film directed by Grigori Kozintsev, based on the life of Russian scientist and doctor Nikolay Ivanovich Pirogov (1810-1881). Pirogov is famous for being the founder of field surgery. It was Kozintsev's first solo directorial feature film.",
+      "pageviews_yearly": 2969
+    },
+    {
+      "qid": "Q17065925",
+      "title": "Quartet Movement in E-flat major",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp344",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quartet_Movement_in_E-flat_major_(Shostakovich)",
+      "wikipedia_extract": "The Quartet Movement in E♭ major, also known as the Unfinished Quartet, is the first movement of a projected string quartet in E♭ major by Dmitri Shostakovich, rediscovered in 2003.",
+      "pageviews_yearly": 1758
+    },
+    {
+      "qid": "Q112672864",
+      "title": "Scherzo in F-sharp minor",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp146",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Scherzo_in_F-sharp_minor_(Shostakovich)",
+      "wikipedia_extract": "Scherzo in F-sharp minor is a piece for orchestra written by Dmitri Shostakovich (1906–1975). Shostakovich was a Russian composer and pianist during the Soviet era. It was most likely written in 1921 or 1922 while Shostakovich was studying at the Petrograd Conservatory under Maximilian Steinberg. The composition is one of the composer's earliest surviving works. Originally written as a single movement of a piano sonata, the Scherzo was later orchestrated with assistance from Steinberg and became an orchestral work in its own right.",
+      "pageviews_yearly": 3608
+    },
+    {
+      "qid": "Q4381600",
+      "title": "Simple People",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Simple_People",
+      "wikipedia_extract": "Simple People is a 1945 Soviet war romance film directed by Grigori Kozintsev and Leonid Trauberg. The film, along with the second part of Eisenstein's Ivan the Terrible was harshly criticized by Andrei Zhdanov and banned. A version of the film, released in 1956 during Khrushchev Thaw, was disowned by Kozintsev because the reediting was done without his participation.",
+      "pageviews_yearly": 2288
+    },
+    {
+      "qid": "Q11341147",
+      "title": "Six Poems by Marina Tsvetayeva",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp277",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Six_Poems_by_Marina_Tsvetayeva",
+      "wikipedia_extract": "The Six Poems by Marina Tsvetayeva: Suite for Contralto and Piano, Op. 143 is a song cycle by Dmitri Shostakovich. It was composed in 1973 and originally scored for contralto and piano. In 1974, the composer made an arrangement for contralto and chamber orchestra which he designated as Op. 143a.",
+      "pageviews_yearly": 3382
+    },
+    {
+      "qid": "Q11187491",
+      "title": "Small Concerto for Two Pianos in A Minor Op. 94"
+    },
+    {
+      "qid": "Q7553776",
+      "title": "Sofiya Perovskaya",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sofiya_Perovskaya_(film)",
+      "wikipedia_extract": "Sofiya Perovskaya is a 1967 Soviet biopic film directed by Lev Arnshtam. The film is based on the life of Sofiya Perovskaya, member of Narodnaya Volya, executed for taking part in planning the successful assassination of Alexander II of Russia.",
+      "pageviews_yearly": 2678
+    },
+    {
+      "qid": "Q130284020",
+      "title": "String Quartet No. 16",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._16_(Shostakovich)",
+      "wikipedia_extract": "The String Quartet No. 16 in B major is an unrealized musical composition by Dmitri Shostakovich.",
+      "pageviews_yearly": 2908
+    },
+    {
+      "qid": "Q1965644",
+      "title": "String Quartet No. 8"
+    },
+    {
+      "qid": "Q747768",
+      "title": "Suite for Variety Orchestra No. 1",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp122",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Suite_for_Variety_Orchestra_No._1",
+      "wikipedia_extract": "The Suite for Variety Orchestra No. 1 is a suite in eight movements arranged by Levon Atovmyan after 1956, based on music by Dmitri Shostakovich. An editorial error in the tenth volume of the Shostakovich collected works edition published by Muzyka in 1984 resulted in the Suite for Variety Orchestra No. 1 being misidentified as the \"Suite for Jazz Orchestra No. 2\" or \"Jazz Suite No. 2\". The score was first published with the correct name in 2001.",
+      "pageviews_yearly": 22240,
+      "movements": [
+        {
+          "qid": "Q21774078"
+        }
+      ]
+    },
+    {
+      "qid": "Q7635577",
+      "title": "Suite on Finnish Themes",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp342",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Suite_on_Finnish_Themes",
+      "wikipedia_extract": "The Suite on Finnish Themes or Seven Arrangements of Finnish Folk Songs is a suite composed in 1939 for soloists and chamber ensemble in seven movements by the Russian composer Dmitri Shostakovich (1906–75). The composer later disowned the work, and the suite does not have an opus number.",
+      "pageviews_yearly": 4754
+    },
+    {
+      "qid": "Q7635576",
+      "title": "Suite on Verses of Michelangelo Buonarroti",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp278",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Suite_on_Verses_of_Michelangelo_Buonarroti",
+      "wikipedia_extract": "The Suite on Verses of Michelangelo Buonarroti is a cycle of song settings by Dmitri Shostakovich of eleven poems by Michelangelo Buonarroti, translated into the Russian language by Avram Efros. The original version (Op.145) is for bass voice and piano; the composer also produced an orchestrated version (145a).",
+      "pageviews_yearly": 4458
+    },
+    {
+      "qid": "Q52157794",
+      "title": "Suites (Shostakovich)",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp338",
+      "movements": [
+        {
+          "qid": "Q1685790"
+        },
+        {
+          "qid": "Q692535"
+        },
+        {
+          "qid": "Q747768"
+        }
+      ]
+    },
+    {
+      "qid": "Q163588",
+      "title": "Symphony No. 1"
+    },
+    {
+      "qid": "Q164652",
+      "title": "Symphony No. 10"
+    },
+    {
+      "qid": "Q240279",
+      "title": "Symphony No. 5"
+    },
+    {
+      "qid": "Q3519100",
+      "title": "Testimony",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Testimony_(1987_film)",
+      "wikipedia_extract": "Testimony is a 1987 British independent musical drama film directed by Tony Palmer and starring Ben Kingsley, Sherry Baines and Robert Stephens. The film is based on the memoirs of Dmitri Shostakovich (1906–1975) as dictated in the book Testimony and filmed in Panavision.",
+      "pageviews_yearly": 1276
+    },
+    {
+      "qid": "Q1406083",
+      "title": "The Condemned of Altona",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Condemned_of_Altona_(film)",
+      "wikipedia_extract": "The Condemned of Altona is a 1962 Italian-French drama film directed by Vittorio De Sica. It is based on the play of the same name by Jean-Paul Sartre. For this film Vittorio De Sica won the Academy of Italian Cinema's David di Donatello award for Best Director.",
+      "pageviews_yearly": 6335
+    },
+    {
+      "qid": "Q4124053",
+      "title": "The Defense of Volotchayevsk",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Defense_of_Volotchayevsk",
+      "wikipedia_extract": "The Defense of Volotchayevsk is a 1937 Soviet history war film directed and written by the Vasilyev brothers.",
+      "pageviews_yearly": 1501
+    },
+    {
+      "qid": "Q3819060",
+      "title": "The Execution of Stepan Razin",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp244",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Execution_of_Stepan_Razin",
+      "wikipedia_extract": "\nThe Execution of Stepan Razin is a cantata composed by Dimitri Shostakovich to a libretto by Yevgeny Yevtushenko in 1964. The subject is the execution of Stepan Razin, a Cossack leader who headed a major uprising (1670–71) against the nobility and tsarist bureaucracy in southern Russia.",
+      "pageviews_yearly": 4390
+    },
+    {
+      "qid": "Q2587854",
+      "title": "The Fall of Berlin",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp50",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Fall_of_Berlin_(film)",
+      "wikipedia_extract": "The Fall of Berlin is a 1950 Soviet two-part epic war and propaganda film. It was produced by Mosfilm Studio and directed by Mikheil Chiaureli, from a screenplay he co-wrote with Pyotr Pavlenko, and a musical score composed by Dmitri Shostakovich. Portraying the history of the Second World War with a focus on a highly positive depiction of the role Soviet leader Joseph Stalin played in the events, it is considered one of the most important manifestations of Stalin's cult of personality, and a noted example of Soviet realism. After De-Stalinization, the film was banned in the Eastern Bloc for several decades.",
+      "pageviews_yearly": 30636
+    },
+    {
+      "qid": "Q4349915",
+      "title": "The First Echelon",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp141",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_First_Echelon",
+      "wikipedia_extract": "The First Echelon is a 1955 Soviet war romance film directed by Mikhail Kalatozov, for which Dmitri Shostakovich wrote the music. The film tells the story of the touching romance between Komsomol secretary Alexey Uzorov and tractor driver Anna Zalogina against the background of Virgin Lands Campaign in Kazakhstan. Part of Shostakovich's score was used as the basis for the Suite for Variety Orchestra No. 1. \"Waltz II\" from the suite was used in the 1999 Stanley Kubrick film Eyes Wide Shut.",
+      "pageviews_yearly": 8140
+    },
+    {
+      "qid": "Q1995073",
+      "title": "The Gadfly",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp140",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Gadfly_(1955_film)",
+      "wikipedia_extract": "The Gadfly is a 1955 Soviet historical action film based on the novel by Ethel Lilian Voynich and directed by Aleksandr Faintsimmer. In 1955 the film was third in attendance in the Soviet Union, collecting 39.16 million ticket sales.",
+      "pageviews_yearly": 14172
+    },
+    {
+      "qid": "Q7735591",
+      "title": "The Gadfly Suite",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Gadfly_Suite",
+      "wikipedia_extract": "\nThe Gadfly Suite, Op. 97a, is a suite for orchestra arranged by Levon Atovmyan from Dmitri Shostakovich's score for the 1955 Soviet film The Gadfly, based on the novel of the same name by Ethel Lilian Voynich. Atovmyan's suite differs markedly from the original: the orchestration is more colorful and economic, certain sections have been transposed harmonically, and he inserted newly composed connecting passages.",
+      "pageviews_yearly": 16497
+    },
+    {
+      "qid": "Q4106580",
+      "title": "The Great Citizen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Great_Citizen",
+      "wikipedia_extract": "The Great Citizen is a 1938 Soviet biopic film directed by Fridrikh Ermler.",
+      "pageviews_yearly": 6261
+    },
+    {
+      "qid": "Q4078892",
+      "title": "The Lady and the Hooligan",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp339"
+    },
+    {
+      "qid": "Q4508597",
+      "title": "The Man with the Gun",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp90",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Man_with_the_Gun",
+      "wikipedia_extract": "The Man with the Gun is a 1938 Soviet history drama film directed by Sergei Yutkevich.",
+      "pageviews_yearly": 4789
+    },
+    {
+      "qid": "Q3211125",
+      "title": "The New Babylon",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_New_Babylon",
+      "wikipedia_extract": "The New Babylon is a 1929 silent historical drama film written and directed by Grigori Kozintsev and Leonid Trauberg. The film deals with the 1871 Paris Commune and the events leading to it, and follows the encounter and tragic fate of two lovers separated by the barricades of the Commune.",
+      "pageviews_yearly": 9303
+    },
+    {
+      "qid": "Q4114650",
+      "title": "The Return of Maxim",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp34",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Return_of_Maxim",
+      "wikipedia_extract": "The Return of Maxim is a 1937 Soviet drama film directed by Grigori Kozintsev and Leonid Trauberg, the second part of trilogy about the life of a young factory worker, Maxim. It was preceded by The Youth of Maxim (1935).",
+      "pageviews_yearly": 3702
+    },
+    {
+      "qid": "Q55517381",
+      "title": "The Song of the Counterplan",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Counterplan_Song",
+      "wikipedia_extract": "The Counterplan Song (The Morning Greets Us With Coolness) (Russian: \"Песня о встречном (Нас утро встречает прохладой\") is a Soviet song created for the 1932 propaganda drama film Counterplan, which rose to great popularity and became a popular melody in the Soviet Union. The song was composed by Dmitri Shostakovich and the lyrics written by Boris Kornilov, who would be killed as part of the Great Terror in 1938.",
+      "pageviews_yearly": 1651
+    },
+    {
+      "qid": "Q1169655",
+      "title": "The Song of the Rivers",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Song_of_the_Rivers",
+      "wikipedia_extract": "The Song of the Rivers is a 1954 documentary film production by the East Germany film studio DEFA. Dutch filmmaker Joris Ivens was the leading director. The sprawling film celebrates international workers movements along six major rivers: the Volga, Mississippi, Ganges, Nile, Amazon and the Yangtze. Shot in many countries by different film crews, and later edited by Ivens, Song of the Rivers begins with a lyrical montage of landscapes and laborers and proceeds to glorify labor and modern industrial machinery. The musical score is by Dmitri Shostakovich, with lyrics written by Bertolt Brecht, and songs performed by German communism's star Ernst Busch and famous American actor, singer and activist Paul Robeson who also narrates. Song of the Rivers is an ode to international solidarity.",
+      "pageviews_yearly": 3559
+    },
+    {
+      "qid": "Q24077724",
+      "title": "The Sun Shines over Our Motherland",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Sun_Shines_Over_Our_Motherland",
+      "wikipedia_extract": "\n\nThe Sun Shines Over Our Motherland, Op.90 is a cantata composed in 1952 by Dimitri Shostakovich, based on a text by Yevgeny Dolmatovsky. Originally titled Cantata About the Party, it was commissioned to celebrate the 35th anniversary of the October Revolution. In it, the sun is a metaphor for the achievement of the Soviet people under the leadership of the Communist Party. It begins with a lyrical section for boys' chorus and woodwind, followed by a more energetic section for the men's voices.",
+      "pageviews_yearly": 1951
+    },
+    {
+      "qid": "Q4028658",
+      "title": "The Twelve Chairs"
+    },
+    {
+      "qid": "Q19876726",
+      "title": "The Twelve Chairs",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Twelve_Chairs_(Shostakovich)",
+      "wikipedia_extract": "\nThe Twelve Chairs is an unfinished operetta by Dmitri Shostakovich based on the 1928 novel The Twelve Chairs by Ilf and Petrov. Shostakovich announced the work in July 1939, for the Leningrad Theater of Musical Comedy. In October that year, he assumed he would be finished with the operetta at the end of that year, but he never finished the work.",
+      "pageviews_yearly": 1931
+    },
+    {
+      "qid": "Q1976428",
+      "title": "The Unforgettable Year 1919",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp136",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Unforgettable_Year_1919",
+      "wikipedia_extract": "The Unforgettable Year 1919 is a 1951 Soviet historical drama film directed by Mikheil Chiaureli.",
+      "pageviews_yearly": 5202
+    },
+    {
+      "qid": "Q48848205",
+      "title": "The Unforgettable Year 1919",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp136",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Unforgettable_Year_1919_(Shostakovich)",
+      "wikipedia_extract": "The Unforgettable Year 1919, Op. 89a, is a suite of music adapted from the score written by Dmitri Shostakovich for the 1951 film of the same name directed by Mikheil Chiaureli. \nThe suite was arranged from the film score by Lev Atovmyan (1901-1973) in 1954.",
+      "pageviews_yearly": 1986
+    },
+    {
+      "qid": "Q4128545",
+      "title": "The Vyborg Side",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp36",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Vyborg_Side",
+      "wikipedia_extract": "The Vyborg Side is a 1939 Soviet drama film directed by Grigori Kozintsev and Leonid Trauberg, the final part of trilogy about the life of a young factory worker, Maxim. It was preceded by The Youth of Maxim (1935) and The Return of Maxim (1937). The film was also released in the United States under the title New Horizons.",
+      "pageviews_yearly": 3444
+    },
+    {
+      "qid": "Q18393939",
+      "title": "The War Symphonies: Shostakovich Against Stalin",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_War_Symphonies%3A_Shostakovich_Against_Stalin",
+      "wikipedia_extract": "The War Symphonies: Shostakovich Against Stalin is a 1997 documentary film about Soviet composer Dmitri Shostakovich. It focuses on the period between 1936 and 1945, during which Shostakovich composed his Fourth, Fifth, Sixth, Seventh, Eighth, and Ninth Symphonies, but also briefly discusses other works in the composer's oeuvre, such as his Lady Macbeth of the Mtsensk District.",
+      "pageviews_yearly": 5281
+    },
+    {
+      "qid": "Q1976498",
+      "title": "The Young Guard",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp129",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Young_Guard_(film)",
+      "wikipedia_extract": "The Young Guard is a two-part 1948 Soviet film directed by Sergei Gerasimov and based on the 1946 novel of the same title by Alexander Fadeyev. In 1949 a Stalin Prize for this film was awarded to Gerasimov, cinematographer Vladimir Rapoport, and the leading actors.",
+      "pageviews_yearly": 8850
+    },
+    {
+      "qid": "Q388339",
+      "title": "The Youth of Maxim",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Youth_of_Maxim",
+      "wikipedia_extract": "The Youth of Maxim is a 1935 Soviet historical drama film directed by Grigori Kozintsev and Leonid Trauberg, the first part of trilogy about the life of a young factory worker named Maxim. It was followed in 1937 by The Return of Maxim.",
+      "pageviews_yearly": 6676
+    },
+    {
+      "qid": "Q3535879",
+      "title": "Toutes peines confondues",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toutes_peines_confondues_(film)",
+      "wikipedia_extract": "Toutes peines confondues is a 1992 French crime drama film starring Mathilda May. It was filmed and produced at locations in France and Switzerland, and bases on the 1985 novel Sweetheart by Andrew Coburn.",
+      "pageviews_yearly": 5979
+    },
+    {
+      "qid": "Q1970972",
+      "title": "Triple Agent",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Triple_Agent",
+      "wikipedia_extract": "Triple Agent is a 2004 spy thriller film written and directed by Éric Rohmer and starring Katerina Didaskalou and Serge Renko. The film is based on the true story of White Russian general Nikolai Skoblin and his involvement in the disappearance and murder of fellow White Russian general Evgenii Miller.",
+      "pageviews_yearly": 10154
+    },
+    {
+      "qid": "Q106746376",
+      "title": "Two Pieces, for string octet",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Two_Pieces_for_String_Octet_by_Dmitri_Shostakovich_-_Prelude.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q3490189",
+      "title": "Violin Sonata",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp187",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Violin_Sonata_(Shostakovich)",
+      "wikipedia_extract": "Dmitri Shostakovich composed his Sonata for Violin and Piano in G major, Op. 134 in the autumn of 1968 in Moscow, completing it on October 23. It is set in three movements and lasts approximately 31 minutes. It is dedicated to the violinist David Oistrakh, who premiered the work on May 3, 1969 in the Large Hall of the Moscow Conservatory.",
+      "pageviews_yearly": 5080
+    },
+    {
+      "qid": "Q21774078",
+      "title": "Waltz No. 2",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Shostakovich_Waltz_No_2.mid",
+        "midi/Waltz_Number_2_Flute_-_Alto_Flute_-_Piano_r0.mid",
+        "midi/Shostakovich_Waltz_no_2_1.mid",
+        "midi/Waltz_No2.mid",
+        "midi/Second_Waltz_Dmitri_Shostakovich.mid",
+        "midi/Shostakovich_-_Waltz_No_2_Piano_Solo.mid",
+        "midi/Shostakovich_Waltz_No_2_for_Woodwind_Quintet.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q4141085",
+      "title": "Year as Long as Life",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Year_as_Long_as_Life",
+      "wikipedia_extract": "Year as Long as Life is a 1966 Soviet biographical drama film directed by Grigori Roshal.",
+      "pageviews_yearly": 1875
+    },
+    {
+      "qid": "Q8074696",
+      "title": "Zoya",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/dmitry-shostakovich-1906-pp92",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zoya_(1944_film)",
+      "wikipedia_extract": "Zoya is a 1944 Soviet biographical war film directed by Lev Arnshtam. Margarita Aliger’s poem with the same name which had been published in September 1942 was the inspiration of the film. It was entered into the 1946 Cannes Film Festival.",
+      "pageviews_yearly": 7064
+    }
+  ]
+}

@@ -1,0 +1,402 @@
+{
+  "composer_slug": "rameau",
+  "composer_qid": "Q1145",
+  "work_count": 40,
+  "midi_file_count": 9,
+  "works": [
+    {
+      "qid": "Q15990927",
+      "title": "L'impatience",
+      "imslp_id": "Cantates_Françaises_(Rameau,_Jean-Philippe)",
+      "pdf_filename": "PMLP199641-Rameau_-_Cantates.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-philippe-rameau-1683-pp53",
+      "date": "1715-00-00"
+    },
+    {
+      "qid": "Q15973234",
+      "title": "The Betrayed Lovers",
+      "imslp_id": "Les_Amants_trahis,_RCT_22_(Rameau,_Jean-Philippe)",
+      "pdf_filename": "PMLP71664-Rameau_Amants_Trahis.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1721-00-00"
+    },
+    {
+      "qid": "Q1376211",
+      "title": "Hippolyte et Aricie",
+      "imslp_id": "Hippolyte_et_Aricie,_RCT_43_(Rameau,_Jean-Philippe)",
+      "pdf_filename": "PMLP64519-Hippolythe_-_Vocal_score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-philippe-rameau-1683-pp1",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hippolyte_et_Aricie",
+      "wikipedia_extract": "Hippolyte et Aricie was the first opera by Jean-Philippe Rameau. It was premiered to great controversy by the Académie Royale de Musique at its theatre in the Palais-Royal in Paris on October 1, 1733. The French libretto, by Abbé Simon-Joseph Pellegrin, is based on Racine's tragedy Phèdre. The opera takes the traditional form of a tragédie en musique with an allegorical prologue followed by five acts. Early audiences found little else conventional about the work.",
+      "pageviews_yearly": 12867,
+      "date": "1733-00-00"
+    },
+    {
+      "qid": "Q25395651",
+      "title": "La Dauphine",
+      "imslp_id": "La_Dauphine,_RCT_12_(Rameau,_Jean-Philippe)",
+      "pdf_filename": "PMLP18912-Rameau_-_La_Dauphine.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-philippe-rameau-1683-pp42",
+      "date": "1747-00-00"
+    },
+    {
+      "qid": "Q3235670",
+      "title": "Les sibarites",
+      "imslp_id": "Les_Sybarites,_RCT_57_(Rameau,_Jean-Philippe)",
+      "pdf_filename": "PMLP103417-BnF_opéra__A-196__E_4__-_Les_Sibarites__Jean-Philippe_Rameau_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-philippe-rameau-1683-pp19",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Les_sibarites",
+      "wikipedia_extract": "Les sibarites is an opera in the form of a one-act acte de ballet by Jean-Philippe Rameau, first performed on 13 November 1753 at Fontainebleau. The libretto is by Jean-François Marmontel. It tells the story of a war between Sybaris and Croton. The conflict ends when the king and queen of the two cities fall in love with each other. The work was later incorporated into a revival of Rameau's opéra-ballet Les surprises de l'Amour in 1757.",
+      "pageviews_yearly": 1540,
+      "date": "1753-11-13"
+    },
+    {
+      "qid": "Q659107",
+      "title": "Acante et Céphise",
+      "imslp_id": "Acante_et_Céphise,_RCT_29_(Rameau,_Jean-Philippe)",
+      "pdf_filename": "PMLP107835-94_BnF_RES_VM2-119_-_Achante_et_Céphise__RCT_29__Jean-Philippe_Rameau_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Acante_et_C%C3%A9phise",
+      "wikipedia_extract": "Acante et Céphise, ou La sympathie is an opera by Jean-Philippe Rameau, first performed on 19 November 1751 at the Opéra in Paris. It takes the form of a pastorale héroïque in three acts. The librettist was Jean-François Marmontel. The opera was written to celebrate the birth of the Louis, Duke of Burgundy, the elder brother of the future King Louis XVI.",
+      "pageviews_yearly": 2702
+    },
+    {
+      "qid": "Q54986383",
+      "title": "Amorous nightingales"
+    },
+    {
+      "qid": "Q11679825",
+      "title": "Anacréon",
+      "imslp_id": "Anacréon,_RCT_30_(Rameau,_Jean-Philippe)",
+      "pdf_filename": "PMLP111999-Anacréon_Rameau.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-philippe-rameau-1683-pp21",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Les_surprises_de_l'Amour",
+      "wikipedia_extract": "Les surprises de l'Amour is an opéra-ballet in two entrées and a prologue by the French composer Jean-Philippe Rameau. It was first performed in Versailles on 27 November 1748. The opera is set to a libretto by Gentil-Bernard. According to the usage of the time, it was originally just billed as a ballet and was only later classified by scholars as an opéra-ballet, although its content might more precisely ascribe it to the ballet héroïque genre.",
+      "pageviews_yearly": 287
+    },
+    {
+      "qid": "Q13420014",
+      "title": "Anacréon",
+      "imslp_id": "Anacréon,_RCT_30_(Rameau,_Jean-Philippe)",
+      "pdf_filename": "PMLP111999-Anacréon_Rameau.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-philippe-rameau-1683-pp21",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Anacr%C3%A9on_(Rameau%2C_1754)",
+      "wikipedia_extract": "Anacréon is an opera by Jean-Philippe Rameau which was first performed at Fontainebleau on 23 October 1754. Its libretto is by Louis de Cahusac. It takes the form of an acte de ballet in one act. Rameau also composed another Anacréon in 1757. The latter was an act added to a revival of the opéra-ballet Les surprises de l'Amour and has sometimes been performed and recorded as a stand-alone opera. It too features the Ancient Greek poet Anacreon as its hero, but the libretto and its plot are totally different.",
+      "pageviews_yearly": 1535
+    },
+    {
+      "qid": "Q15990971",
+      "title": "Book I of Pièces de Clavecin",
+      "imslp_id": "Premier_livre_de_pièces_de_clavecin,_RCT_1_(Rameau,_Jean-Philippe)",
+      "pdf_filename": "PMLP18869-Rameau_-_1er_Livre.PDF",
+      "has_pdf": false,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q15990896",
+      "title": "Book II of Pièces de Clavecin"
+    },
+    {
+      "qid": "Q20173712",
+      "title": "Book III of Pièces de Clavecin"
+    },
+    {
+      "qid": "Q1049784",
+      "title": "Castor et Pollux",
+      "imslp_id": "Castor_et_Pollux,_RCT_32_(Rameau,_Jean-Philippe)",
+      "pdf_filename": "PMLP102580-Rameau-Benaut_Castor-Pollux_Zoroastre_Ouvertures.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-philippe-rameau-1683-pp31",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Castor_et_Pollux",
+      "wikipedia_extract": "Castor et Pollux is an opera by Jean-Philippe Rameau, first performed on 24 October 1737 by the Académie royale de musique at its theatre in the Palais-Royal in Paris. The librettist was Pierre-Joseph-Justin Bernard, whose reputation as a salon poet it made. This was the third opera by Rameau and his second in the form of the tragédie en musique. Rameau made substantial cuts, alterations and added new material to the opera for its revival in 1754. Experts still dispute which of the two versions is superior. Whatever the case, Castor et Pollux has always been regarded as one of Rameau's finest works.",
+      "pageviews_yearly": 13410
+    },
+    {
+      "qid": "Q167222",
+      "title": "Dardanus",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Dardanus_-_Tambourins_I_II.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q19892780",
+      "title": "In convertendo Dominus",
+      "imslp_id": "In_convertendo_Dominus,_RCT_14_(Rameau,_Jean-Philippe)",
+      "pdf_filename": "PMLP59838-Rameau_Convertendo.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-philippe-rameau-1683-pp44",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/In_convertendo_Dominus_(Rameau)",
+      "wikipedia_extract": "In convertendo Dominus , sometimes referred to as In convertendo, is a setting by Jean-Philippe Rameau of In convertendo Dominus, the Latin version of Psalm 126,. It is listed as RCT 14 in the Rameau Catalogue Thématique of Sylvie Bouissou and Denis Herlin.",
+      "pageviews_yearly": 1828
+    },
+    {
+      "qid": "Q3211029",
+      "title": "La naissance d'Osiris",
+      "imslp_id": "La_Naissance_d'Osiris,_RCT_48_(Rameau,_Jean-Philippe)",
+      "pdf_filename": "PMLP494437-La_Naissance_d_Osiris_Rameau.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-philippe-rameau-1683-pp20",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_naissance_d'Osiris",
+      "wikipedia_extract": "La naissance d'Osiris, ou La fête Pamilie is a one-act opera by Jean-Philippe Rameau, first performed on 12 October 1754 at Fontainebleau to celebrate the birth of the future King Louis XVI. The libretto is by Rameau's frequent collaborator Louis de Cahusac. Cahusac styled the work a ballet allégorique, but it is usually categorised as an acte de ballet. Its slender plot tells of Jupiter's announcement to a group of Egyptian shepherds of the birth of the god Osiris, who symbolises the baby prince. The piece may have started life as part of a larger work, Les beaux jours de l'Amour, an opéra-ballet Rameau and Cahusac planned but never completed for reasons which are still uncertain.",
+      "pageviews_yearly": 1852
+    },
+    {
+      "qid": "Q3227543",
+      "title": "Le temple de la Gloire",
+      "imslp_id": "Le_Temple_de_la_gloire,_RCT_59_(Rameau,_Jean-Philippe)",
+      "pdf_filename": "PMLP56730-Piano.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-philippe-rameau-1683-pp9",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Le_temple_de_la_Gloire",
+      "wikipedia_extract": "Le temple de la Gloire is an opéra-ballet by Jean-Philippe Rameau with a libretto by Voltaire. The work was first performed in a five-act version on 27 November 1745 at the Grande Écurie, Versailles to celebrate the French victory at the Battle of Fontenoy. It transferred, unsuccessfully, to the Paris Opéra on 7 December 1745. A revised version, in a prologue and three acts, appeared at the Opéra on 19 April 1746.",
+      "pageviews_yearly": 2251
+    },
+    {
+      "qid": "Q1191054",
+      "title": "Les Boréades",
+      "imslp_id": "Les_Boréades,_RCT_31_(Rameau,_Jean-Philippe)",
+      "pdf_filename": "PMLP430377-boreades_overture_score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-philippe-rameau-1683-pp81",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Les_Bor%C3%A9ades",
+      "wikipedia_extract": "Les Boréades is the final opera composed by Jean-Philippe Rameau (1683–1764). The work takes the form of a tragédie lyrique in five acts. The libretto, attributed to Louis de Cahusac (1706–1759), is loosely based on the Greek legend of Abaris the Hyperborean and includes Masonic elements; the Boréades are the descendants of Boréas. Though evidently rehearsed in 1763, the work was yet unperformed by Rameau's death in 1764.",
+      "pageviews_yearly": 9243
+    },
+    {
+      "qid": "Q583297",
+      "title": "Les Indes galantes",
+      "imslp_id": "Les_Indes_galantes,_RCT_44_(Rameau,_Jean-Philippe)",
+      "pdf_filename": "PMLP59117-LesIndesGalante.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-philippe-rameau-1683-pp2",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Les_Indes_galantes",
+      "wikipedia_extract": "Les Indes galantes is a ballet héroïque, a type of French Baroque opera-ballet, by Jean-Philippe Rameau with a libretto by Louis Fuzelier. In its final form it comprised an allegorical prologue and four entrées, or acts, each set in an exotic place, the whole being unified around the theme of love. The work dates from 1735 except for the last entrée, which was added the following year. In 1761, however, Rameau dropped the relatively short and mildly contrasted third entrée so as to leave what is now considered the work's definitive form: Prologue; Le turc généreux ; Les incas du Pérou ; and Les sauvages . The dropped entrée was Les fleurs . Famous pieces from Les Indes galantes include the Dance of the Peace Pipe and the Chaconne, both from The Savages of North America.",
+      "pageviews_yearly": 37061
+    },
+    {
+      "qid": "Q3234424",
+      "title": "Les Paladins",
+      "imslp_id": "Les_Paladins,_RCT_51_(Rameau,_Jean-Philippe)",
+      "pdf_filename": "PMLP157509-Rameau_Les_Palatins_def.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-philippe-rameau-1683-pp24",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Les_Paladins",
+      "wikipedia_extract": "Les Paladins is an opera by Jean-Philippe Rameau first performed on 12 February 1760 at the Paris Opera. The author of the libretto is not known for sure but was probably one of the Duplat de Monticourt brothers. Rameau called Les Paladins a comédie lyrique, putting it in the same category as his earlier work Platée.",
+      "pageviews_yearly": 3384
+    },
+    {
+      "qid": "Q97171300",
+      "title": "Les Sauvages",
+      "has_midi": true,
+      "midi_files": [
+        "midi/JP_Rameau_Suite_en_Sol_Les_Sauvages.mid",
+        "midi/J_Ph_Rameau_Les_Sauvages.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q3232871",
+      "title": "Les fêtes d'Hébé",
+      "imslp_id": "Les_Fêtes_d'Hébé,_RCT_41_(Rameau,_Jean-Philippe)",
+      "pdf_filename": "PMLP111980-RAMEAU_Les_Fêtes_D_Hébé-Full_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-philippe-rameau-1683-pp4",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Les_f%C3%AAtes_d'H%C3%A9b%C3%A9",
+      "wikipedia_extract": "Les fêtes d'Hébé, ou Les talens lyriques  is an opéra-ballet in a prologue and three entrées (acts) by the French composer Jean-Philippe Rameau. The libretto was written by Antoine Gautier de Montdorge (1707–1768). The work was first performed on 21 May 1739 by the Académie royale de musique at its theatre in the Palais-Royal in Paris.",
+      "pageviews_yearly": 7591
+    },
+    {
+      "qid": "Q3232872",
+      "title": "Les fêtes de Polymnie",
+      "imslp_id": "Les_Fêtes_de_Polymnie,_RCT_39_(Rameau,_Jean-Philippe)",
+      "pdf_filename": "PMLP67458-Rameau_Fêtes_Polymnie.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-philippe-rameau-1683-pp8",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Les_f%C3%AAtes_de_Polymnie",
+      "wikipedia_extract": "Les fêtes de Polymnie is an opéra-ballet in three entrées and a prologue by Jean-Philippe Rameau. The work was first performed on 12 October 1745 at the Opéra, Paris, and is set to a libretto by Louis de Cahusac. The piece was written to celebrate the French victory at the Battle of Fontenoy in the War of the Austrian Succession. It was revived at the same venue on 21 August 1753.",
+      "pageviews_yearly": 1677
+    },
+    {
+      "qid": "Q1760494",
+      "title": "Les surprises de l'Amour",
+      "imslp_id": "Les_Surprises_de_l'amour,_RCT_58_(Rameau,_Jean-Philippe)",
+      "pdf_filename": "PMLP111999-Rameau_Anacréon.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-philippe-rameau-1683-pp13",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Les_surprises_de_l'Amour",
+      "wikipedia_extract": "Les surprises de l'Amour is an opéra-ballet in two entrées and a prologue by the French composer Jean-Philippe Rameau. It was first performed in Versailles on 27 November 1748. The opera is set to a libretto by Gentil-Bernard. According to the usage of the time, it was originally just billed as a ballet and was only later classified by scholars as an opéra-ballet, although its content might more precisely ascribe it to the ballet héroïque genre.",
+      "pageviews_yearly": 2738
+    },
+    {
+      "qid": "Q829695",
+      "title": "Marie Antoinette",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marie_Antoinette_(2006_film)",
+      "wikipedia_extract": "Marie Antoinette is a 2006 historical drama film written, directed, and produced by Sofia Coppola. Based on the 2001 biography Marie Antoinette: The Journey by Antonia Fraser, the film covers the life of Marie Antoinette, in the years leading to the French Revolution. The film stars Kirsten Dunst as Marie Antoinette, alongside an ensemble cast, which includes Jason Schwartzman, Judy Davis, Rip Torn, Rose Byrne, Asia Argento, Molly Shannon, Shirley Henderson, Danny Huston, Steve Coogan, and Jamie Dornan in his film debut.",
+      "pageviews_yearly": 455689
+    },
+    {
+      "qid": "Q3325055",
+      "title": "Motets by Jean-Philippe Rameau",
+      "imslp_id": "Motets_(Rameau,_Jean-Philippe)",
+      "pdf_filename": "PMLP495242-Rameau_JP_-_OC_4_Motets_1.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "movements": [
+        {
+          "qid": "Q19892780"
+        }
+      ]
+    },
+    {
+      "qid": "Q18803169",
+      "title": "Naïs",
+      "imslp_id": "Naïs,_RCT_49_(Rameau,_Jean-Philippe)",
+      "pdf_filename": "PMLP27287-Rameau_-_Gavotte_from_Opera_Ballet_Nais__Grunwald_e_Standke__for_cello_and_piano.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-philippe-rameau-1683-pp14",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Na%C3%AFs",
+      "wikipedia_extract": "Naïs is an opera by Jean-Philippe Rameau first performed on 22 April 1749 at the Opéra in Paris. It takes the form of a pastorale héroïque in three acts and a prologue. The librettist was Louis de Cahusac, in the fourth collaboration between him and Rameau. The work bears the subtitle Opéra pour La Paix, which refers to the fact that Rameau composed the opera on the occasion of the Treaty of Aix-la-Chapelle, at the conclusion of the War of the Austrian Succession. Its original title was Le triomphe de la paix, but criticism of the terms of the treaty led to a change in the title.",
+      "pageviews_yearly": 4937
+    },
+    {
+      "qid": "Q3347024",
+      "title": "Nélée et Myrthis",
+      "imslp_id": "Nélée_et_Myrthis,_RCT_50_(Rameau,_Jean-Philippe)",
+      "pdf_filename": "PMLP84842-Rameau_Nelee_Myrthis.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-philippe-rameau-1683-pp27",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/N%C3%A9l%C3%A9e_et_Myrthis",
+      "wikipedia_extract": "Nélée et Myrthis is a one-act opera by Jean-Philippe Rameau in the form of an acte de ballet. Little is known about its background: the score may be incomplete and it was never staged in Rameau's lifetime. The first known performance took place at the Victoria State Opera, Melbourne, Australia on 22 November 1974. Nélée et Myrthis may have been intended to form part of a larger opéra-ballet to be called Les beaux jours de l'Amour. The name of the librettist is unknown but it was probably Rameau's frequent collaborator Louis de Cahusac.",
+      "pageviews_yearly": 1536
+    },
+    {
+      "qid": "Q15990965",
+      "title": "Orphée",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-philippe-rameau-1683-pp52"
+    },
+    {
+      "qid": "Q2718325",
+      "title": "Pigmalion",
+      "imslp_id": "Pigmalion,_RCT_52_(Rameau,_Jean-Philippe)",
+      "pdf_filename": "PMLP111977-PMLUS04664-Rameau_-_Pigmalion_vocalscore.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-philippe-rameau-1683-pp12",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pygmalion_(Rameau)",
+      "wikipedia_extract": "Pigmalion, more commonly today Pygmalion, is an opera in the form of a one-act acte de ballet by Jean-Philippe Rameau first performed on 27 August 1748 at the Paris Opera. The libretto is by Ballot de Sauvot. This work has generally been regarded as the best of Rameau's one-act pieces. He was said to have composed the work in eight days.",
+      "pageviews_yearly": 4477
+    },
+    {
+      "qid": "Q1642824",
+      "title": "Pièces de Clavecin",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Rameau_Jean-Philippe_Premier_Livre_de_Pieces_de_Clavecin_-_8_Gavotte.mid",
+        "midi/Rameau_Jean-Philippe_Premier_Livre_de_Pieces_de_Clavecin_-_6_Sarabande_1_et_2.mid",
+        "midi/Rameau_Jean-Philippe_Premier_Livre_de_Pieces_de_Clavecin_-_9_Menuet.mid",
+        "midi/Rameau_Jean-Philippe_Premier_Livre_de_Pieces_de_Clavecin_-_7_Venitienne.mid",
+        "midi/Rameau_Jean-Philippe_Premier_Livre_de_Pieces_de_Clavecin_-_1_Prelude.mid",
+        "midi/Rameau_Jean-Philippe_Premier_Livre_de_Pieces_de_Clavecin_-_4_Courante.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q2468162",
+      "title": "Pièces de clavecin en concerts",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-philippe-rameau-1683-pp36",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pi%C3%A8ces_de_clavecin_en_concerts",
+      "wikipedia_extract": "The Pièces de clavecin en concerts, published in 1741, constitute the only chamber music by Jean-Philippe Rameau and were composed in full maturity; they came after his music for solo harpsichord, and were published before his opera Platée.",
+      "pageviews_yearly": 3953
+    },
+    {
+      "qid": "Q1376222",
+      "title": "Platée",
+      "imslp_id": "Platée,_RCT_53_(Rameau,_Jean-Philippe)",
+      "pdf_filename": "PMLP53471-Rameau-PlateeFS1749.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-philippe-rameau-1683-pp7",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Plat%C3%A9e",
+      "wikipedia_extract": "Platée is an opera in a prologue and three acts by Jean-Philippe Rameau with a libretto by Adrien-Joseph Le Valois d'Orville. Rameau bought the rights to the libretto Platée ou Junon jalouse by Jacques Autreau (1657–1745) and had d'Orville modify it. The ultimate source of the story is a myth related by the Greek writer Pausanias in his Guide to Greece.",
+      "pageviews_yearly": 13588
+    },
+    {
+      "qid": "Q25339030",
+      "title": "Samson",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Samson_(opera)",
+      "wikipedia_extract": "Samson is an opera by the French composer Jean-Philippe Rameau with a libretto by Voltaire. The work was never staged due to censorship, although Voltaire later printed his text. Rameau intended the opera on the theme of Samson and Delilah as the successor to his debut Hippolyte et Aricie, which premiered in October 1733. Like Hippolyte, Samson was a tragédie en musique in five acts and a prologue. Voltaire had become a great admirer of Rameau's music after seeing Hippolyte and suggested a collaboration with the composer in November 1733. The opera was complete by late summer 1734 and went into rehearsal. However, a work on a religious subject with a libretto by such a notorious critic of the Church was bound to run into controversy and Samson was banned. An attempt to revive the project in a new version in 1736 also failed. The score is lost, although Rameau recycled some of the music from Samson in his later operas.",
+      "pageviews_yearly": 4346
+    },
+    {
+      "qid": "Q2342350",
+      "title": "The Enchanted Island"
+    },
+    {
+      "qid": "Q60448591",
+      "title": "The Moving Statue"
+    },
+    {
+      "qid": "Q3745706",
+      "title": "Windows"
+    },
+    {
+      "qid": "Q3574987",
+      "title": "Zaïs",
+      "imslp_id": "Zaïs,_RCT_60_(Rameau,_Jean-Philippe)",
+      "pdf_filename": "PMLP81021-Rameau_-_Zaïs_1748_-BNF-.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-philippe-rameau-1683-pp11",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Za%C3%AFs",
+      "wikipedia_extract": "Zaïs is an opera by Jean-Philippe Rameau first performed on 29 February 1748 at the Opéra in Paris. It takes the form of a pastorale héroïque in four acts and a prologue. The librettist was Louis de Cahusac.",
+      "pageviews_yearly": 3074
+    },
+    {
+      "qid": "Q3576117",
+      "title": "Zoroastre",
+      "imslp_id": "Zoroastre,_RCT_62_(Rameau,_Jean-Philippe)",
+      "pdf_filename": "PMLP102580-Air.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/jean-philippe-rameau-1683-pp15",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zoroastre",
+      "wikipedia_extract": "Zoroastre (Zoroaster) is an opera by Jean-Philippe Rameau, first performed on 5 December 1749 by the Opéra in the first Salle du Palais-Royal in Paris. The libretto is by Louis de Cahusac. Zoroastre was the fourth of Rameau's tragédies en musique to be staged and the last to appear during the composer's own lifetime. Audiences gave the original version a lukewarm reception, so Rameau and his librettist thoroughly reworked the opera for a revival which took place at the Opéra on 19 January 1756. This time the work was a great success and this is the version generally heard today.",
+      "pageviews_yearly": 10661
+    },
+    {
+      "qid": "Q6684491",
+      "title": "lost operas by Jean-Philippe Rameau",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lost_operas_by_Jean-Philippe_Rameau",
+      "wikipedia_extract": "The musical scores to several operas by the French composer Jean-Philippe Rameau have been lost. They include two major tragédies en musique, Samson and Linus, and a one-act pastoral opera Lisis et Délie. The music to these pieces was substantially complete and was performed in rehearsal but for various reasons - including censorship in the case of Samson - they were never publicly staged. Rameau also wrote a divertissement for Alexis Piron's play Les courses de Tempé, which did appear at the theatre in 1734. The music to all these works has been almost completely lost, although there is evidence Rameau reused some of it in his later operas. Rameau also began other operatic projects, which were either abandoned at an early stage (Pandore) or broken up to form shorter works.",
+      "pageviews_yearly": 1575
+    }
+  ]
+}

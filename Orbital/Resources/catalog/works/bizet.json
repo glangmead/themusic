@@ -1,0 +1,422 @@
+{
+  "composer_slug": "bizet",
+  "composer_qid": "Q56158",
+  "work_count": 53,
+  "midi_file_count": 8,
+  "works": [
+    {
+      "qid": "Q370473",
+      "title": "Don Procopio",
+      "imslp_id": "Don_Procopio_(Bizet,_Georges)",
+      "pdf_filename": "PMLP142189-Bizet_-_Don_Procopio__vocal_score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/georges-bizet-1838-pp5",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Don_Procopio",
+      "wikipedia_extract": "Don Procopio is a two-act opera buffa by Georges Bizet with an Italian libretto completed in 1859, and first performed in 1906.",
+      "pageviews_yearly": 3003,
+      "date": "1859-00-00"
+    },
+    {
+      "qid": "Q56159",
+      "title": "The Pearl Fishers",
+      "imslp_id": "Les_pêcheurs_de_perles_(Bizet,_Georges)",
+      "pdf_filename": "PMLP55417-01_Bizet-Klengel-Pearl-Fishers-Dance_-_Flute_1-2.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/georges-bizet-1838-pp28",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Les_p%C3%AAcheurs_de_perles",
+      "wikipedia_extract": "Les pêcheurs de perles is an opera in three acts by the French composer Georges Bizet, to a libretto by Eugène Cormon and Michel Carré. It was premiered on 30 September 1863 at the Théâtre Lyrique in Paris, and was given 18 performances in its initial run. Set in ancient times on the island of Ceylon, the opera tells the story of how two men's vow of eternal friendship is threatened by their love for the same woman, whose own dilemma is the conflict between secular love and her sacred oath as a priestess. The friendship duet \"Au fond du temple saint\", generally known as \"The Pearl Fishers Duet\", is one of the best-known in Western opera.",
+      "pageviews_yearly": 58321,
+      "date": "1863-00-00"
+    },
+    {
+      "qid": "Q912017",
+      "title": "Djamileh",
+      "imslp_id": "Djamileh_(Bizet,_Georges)",
+      "pdf_filename": "PMLP73014-00_Bizet-Klengel-Djamileh-Egyptian-Dance_-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/georges-bizet-1838-pp24",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Djamileh",
+      "wikipedia_extract": "Djamileh is an opéra comique in one act by Georges Bizet to a libretto by Louis Gallet, based on an oriental tale, Namouna, by Alfred de Musset.",
+      "pageviews_yearly": 5390,
+      "date": "1871-00-00"
+    },
+    {
+      "qid": "Q109244784",
+      "title": "Arlesiana",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/georges-bizet-1838-pp35"
+    },
+    {
+      "qid": "Q790309",
+      "title": "Ave Maria",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/georges-bizet-1838-pp143"
+    },
+    {
+      "qid": "Q185968",
+      "title": "Carmen",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Carmen_Overture.mid",
+        "midi/Carmen.mid",
+        "midi/Overture_to_Carmen_for_piano_solo_By_Georges_Bizet.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q429043",
+      "title": "Carmen",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/georges-bizet-1838-pp37",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Carmen_(1942_film)",
+      "wikipedia_extract": "Carmen is a French-Italian musical drama film directed by Christian-Jaque and starring Viviane Romance, Jean Marais and Lucien Coëdel. It is a version of the famous opera. Although filmed in 1942 it was not released until 1944 in France and 1945 in Italy.",
+      "pageviews_yearly": 2861
+    },
+    {
+      "qid": "Q531363",
+      "title": "Carmen",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/georges-bizet-1838-pp37",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Carmen_(1949_ballet)",
+      "wikipedia_extract": "Carmen is a ballet created by Roland Petit and his company 'Les Ballets de Paris' at the Prince's Theatre in London on 21 February 1949, which has entered the repertory of ballet companies in France and around the world.",
+      "pageviews_yearly": 14732
+    },
+    {
+      "qid": "Q1056376",
+      "title": "Carmen",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/georges-bizet-1838-pp37",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Carmen_(1984_film)",
+      "wikipedia_extract": "Carmen is a 1984 French-Italian film directed by Francesco Rosi. It is a film version of Bizet's opera, Carmen. Julia Migenes stars in the title role, Plácido Domingo as Don José, Ruggero Raimondi as Escamillo, and Faith Esham as Micaela. Lorin Maazel conducts the Orchestre National de France.",
+      "pageviews_yearly": 14705
+    },
+    {
+      "qid": "Q10443149",
+      "title": "Carmen",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/georges-bizet-1838-pp37"
+    },
+    {
+      "qid": "Q19819236",
+      "title": "Carmen",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/georges-bizet-1838-pp37",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Carmen_(Stromae_song)",
+      "wikipedia_extract": "\"Carmen\" is a song by Belgian singer Stromae, the sixth single from his second album Racine carrée.",
+      "pageviews_yearly": 9932
+    },
+    {
+      "qid": "Q1043659",
+      "title": "Carmen Jones",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Carmen_Jones_(film)",
+      "wikipedia_extract": "Carmen Jones is a 1954 American musical film featuring an African-American cast starring Harry Belafonte, Dorothy Dandridge, and Pearl Bailey and produced and directed by Otto Preminger. The screenplay by Harry Kleiner is based on the lyrics and book by Oscar Hammerstein II, from the 1943 stage musical of the same name, set to the music of Georges Bizet's 1875 opera Carmen. The opera was an adaptation of the 1845 Prosper Mérimée novella Carmen by Henri Meilhac and Ludovic Halévy.",
+      "pageviews_yearly": 96160
+    },
+    {
+      "qid": "Q13424336",
+      "title": "Carmen Jones",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Carmen_Jones",
+      "wikipedia_extract": "Carmen Jones is a 1943 Broadway musical with music by Georges Bizet and lyrics and book by Oscar Hammerstein II which was performed at The Broadway Theatre. Conceptually, it is Bizet's opera Carmen updated to a World War II-era, African-American setting. Bizet's opera was, in turn, based on the 1846 novella by Prosper Mérimée. The Broadway musical was produced by Billy Rose, using an all-black cast, and directed by Hassard Short. Robert Shaw prepared the choral portions of the show.",
+      "pageviews_yearly": 23563
+    },
+    {
+      "qid": "Q20735256",
+      "title": "Carmen Suite No.1",
+      "imslp_id": "Carmen_Suite_No.1_(Bizet,_Georges)",
+      "pdf_filename": "PMLP1387433-00_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/georges-bizet-1838-pp37"
+    },
+    {
+      "qid": "Q20735257",
+      "title": "Carmen Suite No.2",
+      "imslp_id": "Carmen_Suite_No.2_(Bizet,_Georges)",
+      "pdf_filename": "PMLP64164-Bizet_G._Carmen-suite-2_full_score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/georges-bizet-1838-pp112"
+    },
+    {
+      "qid": "Q5043593",
+      "title": "Carmen Suites (Bizet/Guiraud)",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/georges-bizet-1838-pp37",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Carmen_Suites_(Bizet%2FGuiraud)",
+      "wikipedia_extract": "\nThe Carmen Suites are two suites of orchestral music drawn from the music of Georges Bizet's 1875 opera Carmen and compiled posthumously by his friend Ernest Guiraud. They adhere very closely to Bizet's orchestration. However the order of the musical allusions are in reversed chronological order, and do not adhere to the operatic versions entirely, although the Suite is directly inspired by Bizet's opera.",
+      "pageviews_yearly": 23722,
+      "movements": [
+        {
+          "qid": "Q20735256"
+        },
+        {
+          "qid": "Q20735257"
+        }
+      ]
+    },
+    {
+      "qid": "Q1043749",
+      "title": "Carmen on Ice",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Carmen_on_Ice",
+      "wikipedia_extract": "Carmen on Ice is a 1990 dance film with a choreography for figure skaters made in Germany. The music is based on the opera Carmen by Georges Bizet in an orchestral version arranged especially for this film. In contrast to figure skating movies of former times, Carmen on Ice is a film without spoken dialogue, which is an innovation in the history of figure skating.",
+      "pageviews_yearly": 5795
+    },
+    {
+      "qid": "Q4518373",
+      "title": "Chucha-3"
+    },
+    {
+      "qid": "Q31073171",
+      "title": "Clovis et Clotilde",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/georges-bizet-1838-pp68"
+    },
+    {
+      "qid": "Q692648",
+      "title": "Habanera",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Habanera.mid",
+        "midi/Habanera_1.mid",
+        "midi/Habanera_do_min.mid",
+        "midi/Habanera_2.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q3326144",
+      "title": "Half a Life"
+    },
+    {
+      "qid": "Q54971936",
+      "title": "In vain in order to avoid harsh remarks"
+    },
+    {
+      "qid": "Q6096443",
+      "title": "Ivan IV",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/georges-bizet-1838-pp10",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ivan_IV_(opera)",
+      "wikipedia_extract": "Ivan IV is an opera in five acts by Georges Bizet, with a libretto by Francois-Hippolyte Leroy and Henri Trianon.",
+      "pageviews_yearly": 3675
+    },
+    {
+      "qid": "Q54971985",
+      "title": "Je dis que rien ne m'epouvante",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/georges-bizet-1838-pp30"
+    },
+    {
+      "qid": "Q78526934",
+      "title": "Je dis que rien ne m'epouvante = Hawdd dweud nad oes dim byd i'w ofni : Carmen"
+    },
+    {
+      "qid": "Q1647640",
+      "title": "Jeux d'enfants",
+      "imslp_id": "Jeux_d'enfants_(Bizet,_Georges)",
+      "pdf_filename": "Bizet_-_Jeux_d_Enfants.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/georges-bizet-1838-pp57",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jeux_d'enfants_(Bizet)",
+      "wikipedia_extract": "\nJeux d'enfants Op. 22, is a suite of twelve miniatures composed by Georges Bizet for piano four hands in 1871. The entire piece has a duration of about 20 to 23 minutes.",
+      "pageviews_yearly": 6562
+    },
+    {
+      "qid": "Q1850215",
+      "title": "L'Arlésienne",
+      "imslp_id": "L'Arlésienne_(Bizet,_Georges)",
+      "pdf_filename": "Bizet-ArlesienneVS.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/georges-bizet-1838-pp35",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/L'Arl%C3%A9sienne_(Bizet)",
+      "wikipedia_extract": "L'Arlésienne is incidental music composed by Georges Bizet for Alphonse Daudet's drama of the same name. It was first performed on 30 September 1872 at the Théâtre du Vaudeville in Paris. Bizet's original incidental music consists of 27 numbers for chorus and small orchestra, ranging from pieces of background music (mélodrames) only a few measures long, to entr'actes. The score achieves powerful dramatic ends with the most economic of means. Still, the work received poor reviews in the wake of the unsuccessful premiere and is not often performed now in its original form, although recordings are available. However, key pieces of the incidental music, most often heard in the form of two suites for full orchestra, have become some of Bizet's most popular compositions.",
+      "pageviews_yearly": 39017
+    },
+    {
+      "qid": "Q3202311",
+      "title": "L'Arlésienne",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/georges-bizet-1838-pp35",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/L'Arl%C3%A9sienne_(1942_film)",
+      "wikipedia_extract": "L'Arlésienne is a 1942 French drama film directed by Marc Allégret, starring Raimu and a young Louis Jourdan. It is based on Alphonse Daudet's play L'Arlésienne.",
+      "pageviews_yearly": 1837
+    },
+    {
+      "qid": "Q131733441",
+      "title": "L'Arlésienne",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/georges-bizet-1838-pp35"
+    },
+    {
+      "qid": "Q471784",
+      "title": "La jolie fille de Perth",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Bizet_La_Jolie_fille_de_Perth_-_A_la_voix_dun_amant_fidele.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q6466230",
+      "title": "La maison du docteur",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_maison_du_docteur",
+      "wikipedia_extract": "La maison du docteur is an opéra comique in one act by Georges Bizet with a French libretto by Henry Boisseaux. Some music scholars assert that the opera was composed in 1852 while others believe that it was written in 1855. Either way the composition is the first opera written by Bizet. La maison du docteur has never been performed and while the music does survive in piano score only, the work has never been published.",
+      "pageviews_yearly": 1854
+    },
+    {
+      "qid": "Q56276944",
+      "title": "Lady J"
+    },
+    {
+      "qid": "Q3028007",
+      "title": "Le docteur Miracle",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/georges-bizet-1838-pp2",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Le_docteur_Miracle",
+      "wikipedia_extract": "Le docteur Miracle is an opérette in one act by the French composer Georges Bizet. The libretto, by Léon Battu and Ludovic Halévy, is based on Sheridan's play Saint Patrick's Day. Bizet wrote the work when he was just 18 years old for a competition organised by Jacques Offenbach. He shared first prize with Charles Lecocq. His reward was to have the piece performed 11 times at Offenbach's Bouffes-Parisiens theatre. The premiere took place on 9 April 1857 at Théâtre des Bouffes Parisiens in Paris.",
+      "pageviews_yearly": 5113
+    },
+    {
+      "qid": "Q114812388",
+      "title": "Malbrough s'en va-t-en guerre"
+    },
+    {
+      "qid": "Q733677",
+      "title": "Match Point",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Match_Point",
+      "wikipedia_extract": "Match Point is a 2005 psychological thriller film written and directed by Woody Allen, and starring Jonathan Rhys Meyers, Scarlett Johansson, Emily Mortimer, Matthew Goode, Brian Cox, and Penelope Wilton. In the film, Rhys Meyers' character, a former professional tennis player, marries into a wealthy family, but his social position is threatened by his affair with his brother-in-law's girlfriend, played by Scarlett Johansson. The film deals with themes of morality and greed, and explores the roles of lust, money, and luck in life, leading many to compare it to Allen's earlier film Crimes and Misdemeanors (1989). It was produced and filmed in London after Allen had difficulty finding financial support for the film in New York. The agreement obliged him to make it there using a cast and crew mostly from the United Kingdom. Allen quickly re-wrote the script, which was originally set in New York, for an English setting.",
+      "pageviews_yearly": 466805
+    },
+    {
+      "qid": "Q54971973",
+      "title": "Near the ramparts of Seville"
+    },
+    {
+      "qid": "Q1475053",
+      "title": "Noé",
+      "imslp_id": "Noé_(Halévy,_Fromental)",
+      "pdf_filename": "PMLP142208-Halévy_-_Noé__vocal_score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/No%C3%A9_(opera)",
+      "wikipedia_extract": "Noé (Noah) was the last opera of the composer Fromental Halévy.",
+      "pageviews_yearly": 2961
+    },
+    {
+      "qid": "Q11588507",
+      "title": "Patrie",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/georges-bizet-1838-pp41"
+    },
+    {
+      "qid": "Q78527128",
+      "title": "Pres des remparts de Seville = Draw ger y mur yn Sevilla : Carmen"
+    },
+    {
+      "qid": "Q613406",
+      "title": "Roma Symphony",
+      "imslp_id": "Roma_(Bizet,_Georges)",
+      "pdf_filename": "PMLP51520-Bizet_-_Roma__orch._score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/georges-bizet-1838-pp32",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Roma_Symphony_(Bizet)",
+      "wikipedia_extract": "\n\nThe Fantaisie symphonique in C, called Souvenirs de Rome, is the second of Georges Bizet's symphonies. Unlike his First, also in C major and written quickly at the age of 17, Souvenirs de Rome took more than a decade to compose: he began it at age 22, had largely finished it at 33, but was never fully satisfied, revising it repeatedly, and he died at 36 years of age without having reached a definitive version. All four of its movements were performed during Bizet's lifetime, but not on the same occasion; not until 1875 was the full work in its last revision premiered. Perhaps because of Bizet's dissatisfaction, Souvenirs de Rome is often described as \"unfinished\", but is a complete work and fully scored.",
+      "pageviews_yearly": 3966
+    },
+    {
+      "qid": "Q3945702",
+      "title": "Salome",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Salome_(1972_film)",
+      "wikipedia_extract": "Salomè is a 1972 Italian drama film directed and produced by Carmelo Bene. It stars Bene, Lydia Mancinelli, Alfiero Vincenti and Donyale Luna in the lead roles. A psychedelic re-telling of the biblical story, Salome is the daughter of King Herod's second wife. The King is infatuated with her, and after she fails to seduce the prophet John the Baptist, she dances for the King in order to ask for his execution. The story is told with fast cuts, repetitive dialogue and extreme satire. Australian-born composer Ashley Irwin composed the film's music.",
+      "pageviews_yearly": 5037
+    },
+    {
+      "qid": "Q2288944",
+      "title": "Symphony in C",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/georges-bizet-1838-pp31",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_in_C_(ballet)",
+      "wikipedia_extract": "Symphony in C, originally titled Le Palais de Cristal, is a ballet choreographed by George Balanchine, to Georges Bizet's Symphony in C. The ballet was originally created for the Paris Opera Ballet, and premiered on July 28, 1947, at the Palais Garnier.",
+      "pageviews_yearly": 5984
+    },
+    {
+      "qid": "Q3082680",
+      "title": "Symphony in C",
+      "imslp_id": "Symphony_in_C_major_(Bizet,_Georges)",
+      "pdf_filename": "PMLP42111-Bizet_Symphony-I_Allegro_Vivo__etc_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/georges-bizet-1838-pp31",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_in_C_(Bizet)",
+      "wikipedia_extract": "The Symphony in C is an early work by the French composer Georges Bizet. According to Grove's Dictionary, the symphony \"reveals an extraordinarily accomplished talent for a 17-year-old student, in melodic invention, thematic handling and orchestration.\" Bizet started work on the symphony on 29 October 1855, four days after turning 17, and finished it roughly a month later. It was written while he was studying at the Paris Conservatoire under the composer Charles Gounod, and was evidently a student assignment. Bizet showed no apparent interest in having it performed or published, and the piece was never played in his lifetime. He used certain material from the symphony in later works, however. There is no mention of the work in Bizet's letters, and it was unknown to his earlier biographers. His widow, Geneviève Halévy (1849–1926), gave the manuscript to Reynaldo Hahn, who passed it along with other papers to the archives of the conservatory library, where it was found in 1933 by Jean Chantavoine. Soon thereafter, Bizet's first British biographer Douglas Charles Parker (1885–1970) showed the manuscript to the conductor Felix Weingartner, who led the first performance in Basel, Switzerland, on 26 February 1935.",
+      "pageviews_yearly": 11880
+    },
+    {
+      "qid": "Q1423437",
+      "title": "Te Deum",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/georges-bizet-1838-pp69"
+    },
+    {
+      "qid": "Q3520202",
+      "title": "The Car Man",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Car_Man_(Bourne)",
+      "wikipedia_extract": "\n\nMatthew Bourne's The Car Man is a dance production by British choreographer Matthew Bourne. It previewed for the first time on Tuesday, May 16, 2000, at the Theatre Royal in Plymouth, England, and was subsequently staged at the Old Vic in London in September of that year.",
+      "pageviews_yearly": 9424
+    },
+    {
+      "qid": "Q7728299",
+      "title": "The Cry",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Cry_(1964_film)",
+      "wikipedia_extract": "The Cry is a 1964 Czechoslovak drama film directed by Jaromil Jireš. It was entered into the 1964 Cannes Film Festival. It is often described as the first film of the Czechoslovak New Wave, a movement known for its dark humor, use of non-professional actors, and \"art-cinema realism\". The film's events are ambiguous, leaving it to the viewer to determine whether the telling is objective or from a character's point of view.",
+      "pageviews_yearly": 3317
+    },
+    {
+      "qid": "Q56156",
+      "title": "The Pearl Fishers' Duet",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/georges-bizet-1838-pp28",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Au_fond_du_temple_saint",
+      "wikipedia_extract": "\"Au fond du temple saint\" is a duet from Georges Bizet's 1863 opera Les pêcheurs de perles. The libretto was written by Eugène Cormon and Michel Carré. Generally known as \"The Pearl Fishers' Duet\", it is one of the most popular numbers in Western opera – it appeared on seven of the Classic 100 Countdowns conducted by ABC Classic FM. It is sung by Nadir (tenor) and Zurga (baritone) in act 1.",
+      "pageviews_yearly": 22399
+    },
+    {
+      "qid": "Q7766425",
+      "title": "The Steadfast Tin Soldier",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Steadfast_Tin_Soldier_(ballet)",
+      "wikipedia_extract": "The Steadfast Tin Soldier is a ballet choreographed by George Balanchine to Bizet's Jeux d'enfants, based on Hans Christian Andersen's 1838 fairytale of the same name of the love between a tin soldier and a paper-doll ballerina. The ballet premiered on July 30, 1975, at the Saratoga Performing Arts Center, with New York City Ballet's Patricia McBride and Peter Schaufuss.",
+      "pageviews_yearly": 2544
+    },
+    {
+      "qid": "Q3426380",
+      "title": "The Tragedy of Carmen",
+      "movements": [
+        {
+          "qid": "Q126034515"
+        },
+        {
+          "qid": "Q126034576"
+        },
+        {
+          "qid": "Q126034598"
+        }
+      ]
+    },
+    {
+      "qid": "Q54971986",
+      "title": "The flower that you tossed to me"
+    },
+    {
+      "qid": "Q6150784",
+      "title": "Toreador Song",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/georges-bizet-1838-pp30",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toreador_Song",
+      "wikipedia_extract": "The Toreador Song, also known as the Toreador March or March of the Toreadors, is the popular name for the 1875 aria \"Votre toast, je peux vous le rendre\", from the French opera Carmen, composed by Georges Bizet to a libretto by Henri Meilhac and Ludovic Halévy. It is sung by the bullfighter Escamillo as he enters in act 2 and describes various situations in the bullring, the cheering of the crowds and the fame that comes with victory. The refrain, \"Toréador, en garde\", forms the middle part of the prelude to act 1 of Carmen.",
+      "pageviews_yearly": 104214
+    },
+    {
+      "qid": "Q2141815",
+      "title": "U-Carmen eKhayelitsha",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/U-Carmen_eKhayelitsha",
+      "wikipedia_extract": "U-Carmen eKhayelitsha is a 2005 South African operatic film directed and produced by Mark Dornford-May. The title, \"Carmen in Khayelitsha\", refers to one of the poorest areas of Cape Town.",
+      "pageviews_yearly": 6671
+    },
+    {
+      "qid": "Q4501551",
+      "title": "Variations chromatiques de concert",
+      "imslp_id": "Variations_chromatiques_de_concert_(Bizet,_Georges)",
+      "pdf_filename": "Bizet_-_Variations_Chromatiques_de_Concert.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/georges-bizet-1838-pp54"
+    }
+  ]
+}

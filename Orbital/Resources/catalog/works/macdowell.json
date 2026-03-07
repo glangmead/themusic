@@ -1,0 +1,96 @@
+{
+  "composer_slug": "macdowell",
+  "composer_qid": "Q450467",
+  "work_count": 9,
+  "midi_file_count": 2,
+  "works": [
+    {
+      "qid": "Q111911973",
+      "title": "Piano Concerto No. 1",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Edward_MacDowell",
+      "wikipedia_extract": "Edward Alexander MacDowell was an American composer and pianist of the late Romantic period. He was best known for his second piano concerto and his piano suites Woodland Sketches, Sea Pieces and New England Idylls. Woodland Sketches includes his most popular short piece, \"To a Wild Rose\". In 1904 he was one of the first seven Americans honored by membership in the American Academy of Arts and Letters.",
+      "pageviews_yearly": 533,
+      "date": "1882-00-00"
+    },
+    {
+      "qid": "Q2314238",
+      "title": "Piano Concerto No. 2 in D minor",
+      "imslp_id": "Piano_Concerto_No.2,_Op.23_(MacDowell,_Edward)",
+      "pdf_filename": "MacDowell-Op23ar2p4h.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Concerto_No._2_(MacDowell)",
+      "wikipedia_extract": "The Piano Concerto No. 2 in D minor, Op. 23 by Edward MacDowell was completed in late 1885. Although some obvious similarities with Edvard Grieg's, Camille Saint-Saëns's and Franz Liszt's concertos have often been stated, MacDowell’s composition proves to be quite original, at least compared to his First Concerto. It was the first major piano concerto written by an American. It was also the only large-scale composition by MacDowell to remain in standard repertoire.",
+      "pageviews_yearly": 3382,
+      "date": "1885-00-00"
+    },
+    {
+      "qid": "Q125356062",
+      "title": "4 Stücke, Op. 24",
+      "imslp_id": "4_Stücke,_Op.24_(MacDowell,_Edward)",
+      "pdf_filename": "MacDowell_-_Vier_Stucke_Op._24__piano_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1886-00-00"
+    },
+    {
+      "qid": "Q136998951",
+      "title": "Märzwind",
+      "date": "1894-00-00"
+    },
+    {
+      "qid": "Q136998213",
+      "title": "Zwölf Virtuosen-Etüden, Op. 46",
+      "date": "1894-00-00",
+      "movements": [
+        {
+          "qid": "Q136998951"
+        }
+      ]
+    },
+    {
+      "qid": "Q107104272",
+      "title": "Woodland Sketches",
+      "imslp_id": "10_Woodland_Sketches,_Op.51_(MacDowell,_Edward)",
+      "pdf_filename": "MacDowell_Woodland_op51.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/edward-alexander-macdowell-1860-pp51",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Woodland_Sketches",
+      "wikipedia_extract": "Woodland Sketches, Op. 51, is a suite of ten short piano pieces by the American composer Edward MacDowell. It was written during an 1896 stay at MacDowell's summer retreat in Peterborough, New Hampshire, where each piece was inspired by a different aspect of the surrounding nature and landscape. The suite was first published in 1896, with pieces such as \"To a Wild Rose\" and \"To a Water-lily\" becoming some of MacDowell's most popular works. While some pieces are notable for their use of impressionistic techniques in depicting the New England wilderness, others are based on elements from Native American and Southern music. Woodland Sketches is considered by critics and historians to contain some of MacDowell's most skillful and distinctive works.",
+      "pageviews_yearly": 5006,
+      "date": "1896-00-00",
+      "movements": [
+        {
+          "qid": "Q25217393"
+        }
+      ]
+    },
+    {
+      "qid": "Q2166643",
+      "title": "Indian Suite",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/edward-alexander-macdowell-1860-pp48",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Indian_Suite",
+      "wikipedia_extract": "\nThe Indian Suite for orchestra was composed in 1892 by Edward MacDowell. The composer's second suite for orchestra, it was first performed in New York City by the Boston Symphony on January 23, 1896. The piece is based upon numerous American Indian melodies and rhythms.",
+      "pageviews_yearly": 1694
+    },
+    {
+      "qid": "Q25217393",
+      "title": "To a Wild Rose",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Edward_McDowell_To_A_Wild_Rose.mid",
+        "midi/To_A_Wild_Rose_arranged_for_Violin_Solo.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q8032883",
+      "title": "Woodland Sketches",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/edward-alexander-macdowell-1860-pp51",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Woodland_Sketches_(ballet)",
+      "wikipedia_extract": "\n \nWoodland Sketches is a ballet made by Robert La Fosse to Edward MacDowell's eponymous music from 1896 for New York City Ballet's American Music Festival. The premiere took place on Thursday, May 5, 1988, at New York State Theater, Lincoln Center.",
+      "pageviews_yearly": 1253
+    }
+  ]
+}

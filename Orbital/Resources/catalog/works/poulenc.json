@@ -1,0 +1,735 @@
+{
+  "composer_slug": "poulenc",
+  "composer_qid": "Q191408",
+  "work_count": 76,
+  "midi_file_count": 4,
+  "works": [
+    {
+      "qid": "Q7190183",
+      "title": "Piano Suite",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp177",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Suite_(Poulenc)",
+      "wikipedia_extract": "The Suite en 3 mouvements in C major, FP 19, is a suite for piano by Francis Poulenc which contains three movements:I Presto\nII Andante\nIII Vif",
+      "pageviews_yearly": 1563,
+      "date": "1920-00-00"
+    },
+    {
+      "qid": "Q771591",
+      "title": "Sonata for Horn, Trumpet, and Trombone",
+      "imslp_id": "Sonata_for_Horn,_Trumpet_and_Trombone,_FP_33a_(Poulenc,_Francis)",
+      "pdf_filename": "PMLP603532-271791105-Poulenc-Sonata-for-Brass-Trio.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sonata_for_horn%2C_trumpet_and_trombone",
+      "wikipedia_extract": "The Sonate pour cor, trompette et trombone, FP 33a, by Francis Poulenc is a piece of chamber music composed in 1922 and dedicated to Raymonde Linossier (1897–1930). Poulenc revised it in 1945. Its total performance time is about eight minutes.",
+      "pageviews_yearly": 2327,
+      "date": "1922-00-00"
+    },
+    {
+      "qid": "Q2956192",
+      "title": "Chansons gaillardes",
+      "imslp_id": "8_Chansons_gaillardes,_FP_42_(Poulenc,_Francis)",
+      "pdf_filename": "PMLP603538-Poulenc_42.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp130",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chansons_gaillardes",
+      "wikipedia_extract": "The Chansons gaillardes FP 42, are a song cycle of eight pieces composed by Francis Poulenc in 1925–1926 \"In euphoria and post-war\" on anonymous texts of the 17th century. The work was dedicated to Mme Fernand Allard.",
+      "pageviews_yearly": 2400,
+      "date": "1926-00-00"
+    },
+    {
+      "qid": "Q3539355",
+      "title": "Trio for Oboe, Bassoon and Piano",
+      "imslp_id": "Trio_for_Oboe,_Bassoon_and_Piano,_FP_43_(Poulenc,_Francis)",
+      "pdf_filename": "PMLP499600-IMSLP309031-PMLP499600-Poulenc_-_Trio_for_oboe_bassoon_and_piano_Bassoon_Part.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp185",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Trio_for_oboe%2C_bassoon_and_piano",
+      "wikipedia_extract": "The Trio pour hautbois, basson et piano, FP 43, by Francis Poulenc is a three-movement chamber work, composed between 1924 and 1926, and premiered in the latter year.",
+      "pageviews_yearly": 4164,
+      "date": "1926-00-00"
+    },
+    {
+      "qid": "Q1783676",
+      "title": "Concerto for Two Pianos and Orchestra",
+      "imslp_id": "Concerto_for_2_Pianos,_FP_61_(Poulenc,_Francis)",
+      "pdf_filename": "PMLP489112-Poulenc_-_Concerto_for_Two_Pianos__orch._score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp34",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Concerto_for_Two_Pianos_and_Orchestra_(Poulenc)",
+      "wikipedia_extract": "Francis Poulenc's Concerto pour deux pianos in D minor, FP 61, was composed over the period of three months in the summer of 1932. It is often described as the climax of Poulenc's early period. The composer wrote to the Belgian musicologist Paul Collaer: \"You will see for yourself what an enormous step forward it is from my previous work and that I am really entering my great period.\" The concerto was commissioned by and dedicated to the Princess Edmond de Polignac, an American-born arts patron to whom many early-20th-century masterpieces are dedicated, including Stravinsky's Renard, Ravel's Pavane pour une infante défunte, Kurt Weill's Second Symphony, and Satie's Socrate. Her Paris salon was a gathering place for the musical avant-garde.",
+      "pageviews_yearly": 9274,
+      "date": "1932-00-00"
+    },
+    {
+      "qid": "Q3071103",
+      "title": "Fiançailles pour rire",
+      "imslp_id": "Fiançailles_pour_rire,_FP_101_(Poulenc,_Francis)",
+      "pdf_filename": "PMLP1184646-Poulenc_-_Fiançailles_pour_rire.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp149",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fian%C3%A7ailles_pour_rire",
+      "wikipedia_extract": "Fiançailles pour rire, FP 101, is a song cycle of six mélodies for voice and piano by Francis Poulenc on poems from the collection of the same name by Louise de Vilmorin. Composed in 1939, it was premiered on 21 March 1942 at Salle Gaveau by the soprano Geneviève Touraine and the composer as the pianist.",
+      "pageviews_yearly": 3025,
+      "date": "1939-00-00"
+    },
+    {
+      "qid": "Q15990889",
+      "title": "Les Chemins de l'amour",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp193",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Les_Chemins_de_l'amour",
+      "wikipedia_extract": "\"Les Chemins de l'Amour\" is a 1940 valse chantée, or sung waltz, by Francis Poulenc to lyrics by Jean Anouilh. It was written for soprano voice as part of Poulenc's incidental music for Anouilh's new play Léocadia and exists with two accompaniments: piano only and chamber ensemble. The rest of the incidental music is lost.",
+      "pageviews_yearly": 6636,
+      "date": "1940-00-00"
+    },
+    {
+      "qid": "Q130065873",
+      "title": "Exultate Deo",
+      "imslp_id": "Exultate_Deo,_FP_109_(Poulenc,_Francis)",
+      "pdf_filename": "PMLP499501-Poulenc_F_-_Exultate_Deo.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp107",
+      "date": "1941-00-00"
+    },
+    {
+      "qid": "Q3071699",
+      "title": "Figure humaine",
+      "imslp_id": "Figure_humaine,_FP_120_(Poulenc,_Francis)",
+      "pdf_filename": "PMLP787928-Poulenc_-_La_figure_humaine.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp120",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Figure_humaine",
+      "wikipedia_extract": "Figure humaine, FP 120, by Francis Poulenc is a cantata for double mixed choir of 12 voices composed in 1943 on texts by Paul Éluard including \"'Liberté\". Written during the Nazi occupation of France, it was premiered in London in English by the BBC in 1945. It was first performed in French in 1946 in Brussels, then in Paris on 22 May 1947. The work was published by Éditions Salabert. Cherished as the summit of the composer's work and a masterpiece by musical critics, the cantata is a hymn to Liberté, victorious over tyranny.",
+      "pageviews_yearly": 6530,
+      "date": "1943-00-00"
+    },
+    {
+      "qid": "Q4692200",
+      "title": "Les mamelles de Tirésias",
+      "imslp_id": "Les_mamelles_de_Tirésias,_FP_125_(Poulenc,_Francis)",
+      "pdf_filename": "PMLP533153-Poulenc_-_Les_Mamelles_de_Tirésias_-_Full_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp1",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Les_Mamelles_de_Tir%C3%A9sias",
+      "wikipedia_extract": "Les Mamelles de Tirésias is an opéra bouffe by Francis Poulenc, in a prologue and two acts based on the eponymous play by Guillaume Apollinaire. The opera was written in 1945 and first performed in 1947. Apollinaire's play, written in 1903, was revised with a sombre prologue by the time it premiered during World War I in France. For the opera, Poulenc incorporated both the farcical and the serious aspects of the original play, which according to one critic displays a \"high-spirited topsy-turveydom\" that conceals \"a deeper and sadder theme – the need to repopulate and rediscover a France ravaged by war.\"",
+      "pageviews_yearly": 10227,
+      "date": "1944-00-00"
+    },
+    {
+      "qid": "Q15427496",
+      "title": "Four small prayers of St. Françis of Assisi",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp109",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quatre_Petites_Pri%C3%A8res_de_saint_Fran%C3%A7ois_d'Assise",
+      "wikipedia_extract": "Quatre Petites Prières de saint François d'Assise, FP 142 is a sacred choral work by Francis Poulenc for a cappella men's chorus, composed in 1948. Written on a request by Poulenc's relative who was a Franciscan friar, the work was premiered by the monks of Champfleury.",
+      "pageviews_yearly": 2914,
+      "date": "1948-00-00"
+    },
+    {
+      "qid": "Q2406184",
+      "title": "Sonate pour violoncelle et piano",
+      "imslp_id": "Cello_Sonata,_FP_143_(Poulenc,_Francis)",
+      "pdf_filename": "PMLP488103-Poulenc-Cello-Sonata_piano_score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp44",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cello_Sonata_(Poulenc)",
+      "wikipedia_extract": "Francis Poulenc completed his Sonate pour violoncelle et piano, FP 143, in 1948. He first sketched it in 1940. It was dedicated to the French cellist Pierre Fournier, who had helped with the technical aspects of the cello part. The work was published by Heugel in Paris.",
+      "pageviews_yearly": 4389,
+      "date": "1948-00-00"
+    },
+    {
+      "qid": "Q1967091",
+      "title": "Flute Sonata",
+      "imslp_id": "Flute_Sonata,_FP_164_(Poulenc,_Francis)",
+      "pdf_filename": "PMLP593473-Poulenc-Flute-Sonata.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp45",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Flute_Sonata_(Poulenc)",
+      "wikipedia_extract": "The Sonate pour flûte et piano, FP 164, by Francis Poulenc, is a three-movement work for flute and piano, written in 1957.",
+      "pageviews_yearly": 8722,
+      "date": "1956-00-00"
+    },
+    {
+      "qid": "Q36084",
+      "title": "La voix humaine",
+      "imslp_id": "La_voix_humaine,_FP_171_(Poulenc,_Francis)",
+      "pdf_filename": "PMLP488469-Poulenc_-_La_Voix_Humaine__vocal_score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp3",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Voix_humaine",
+      "wikipedia_extract": "La Voix humaine is a 40-minute, one-act opera for soprano and orchestra composed by Francis Poulenc in 1958. The work is based on the play of the same name by Jean Cocteau, who, along with French soprano Denise Duval, worked closely with Poulenc in preparation for the opera's premiere. Poulenc's tragédie lyrique was first performed at the Théâtre National de l'Opéra-Comique in Paris on 6 February 1959, with Duval as the solo singer and Georges Prêtre conducting; the scenery, costumes and direction were by Cocteau.",
+      "pageviews_yearly": 11186,
+      "date": "1958-00-00"
+    },
+    {
+      "qid": "Q15990892",
+      "title": "La Courte Paille",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp173",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Courte_Paille",
+      "wikipedia_extract": "La Courte Paille, FP 178, is a set of seven songs for voice and piano, composed in 1960 by Francis Poulenc on poems by Maurice Carême. The duration of the work is roughly 8 minutes.",
+      "pageviews_yearly": 2919,
+      "date": "1960-00-00"
+    },
+    {
+      "qid": "Q1489755",
+      "title": "Oboe Sonata",
+      "imslp_id": "Oboe_Sonata,_FP_185_(Poulenc,_Francis)",
+      "pdf_filename": "PMLP499597-Poulenc_-_Oboe_Sonata_1_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp48",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oboe_Sonata_(Poulenc)",
+      "wikipedia_extract": "The Sonate pour hautbois et piano, FP 185, is an oboe sonata by Francis Poulenc dating from 1962. The composer's last work, it is dedicated to the memory of Sergei Prokofiev.",
+      "pageviews_yearly": 4911,
+      "date": "1962-00-00"
+    },
+    {
+      "qid": "Q2004783",
+      "title": "Clarinet Sonata",
+      "imslp_id": "Clarinet_Sonata,_FP_184_(Poulenc,_Francis)",
+      "pdf_filename": "PMLP592480-Poulenc_Clarinet_Sonata.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp47",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Clarinet_Sonata_(Poulenc)",
+      "wikipedia_extract": "The Sonate pour clarinette et piano, FP 184, for clarinet in B-flat and piano by Francis Poulenc dates from 1962 and is one of the last pieces he completed. It is dedicated to the memory of Arthur Honegger, who like Poulenc had belonged to the group Les Six. A typical performance takes 12–14 minutes.",
+      "pageviews_yearly": 6431,
+      "date": "1962-01-01"
+    },
+    {
+      "qid": "Q129829785",
+      "title": "4 Motets pour le temps de Noël",
+      "imslp_id": "4_Motets_pour_le_temps_de_Noël,_FP_152_(Poulenc,_Francis)",
+      "pdf_filename": "PMLP500974-Poulenc_F__1__O_magnum_mysterium.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp111"
+    },
+    {
+      "qid": "Q119163225",
+      "title": "Acheron"
+    },
+    {
+      "qid": "Q2870538",
+      "title": "Aubade",
+      "imslp_id": "Aubade,_FP_51_(Poulenc,_Francis)",
+      "pdf_filename": "PMLP499578-Poulenc_-_Aubade__orch._score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp8",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aubade_(Poulenc)",
+      "wikipedia_extract": "Aubade, a choreographic concerto for piano and 18 instruments, is a work of Francis Poulenc premiered in 1929. It was conceived as a ballet, but is more often played as a chamber piano concerto.",
+      "pageviews_yearly": 3416
+    },
+    {
+      "qid": "Q130265253",
+      "title": "Ave verum corpus",
+      "imslp_id": "Ave_verum_corpus,_FP_154_(Poulenc,_Francis)",
+      "pdf_filename": "PMLP500984-Poulenc_F_-_Ave_verum_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp112"
+    },
+    {
+      "qid": "Q15973422",
+      "title": "Banalités",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Francis_Poulenc_-_Banalites_5-_Sanglots.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q2956173",
+      "title": "Chanson à boire",
+      "imslp_id": "Chanson_à_boire,_FP_31_(Poulenc,_Francis)",
+      "pdf_filename": "PMLP500987-Poulenc_F_-_Chanson_à_boire.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chanson_%C3%A0_boire_(Poulenc)",
+      "wikipedia_extract": "Chanson à boire,, FP 31, is a choral work by Francis Poulenc, composed in 1922 on an anonymous text of the 17th century for a four-part men's chorus a cappella. It was published first by Rouart-Lerolle, but today by Salabert.",
+      "pageviews_yearly": 1289
+    },
+    {
+      "qid": "Q1123897",
+      "title": "Concert champêtre",
+      "imslp_id": "Concert_champêtre,_FP_49_(Poulenc,_Francis)",
+      "pdf_filename": "PMLP499583-Poulenc_-_Concert_Champêtre__orch._score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp33",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Concert_champ%C3%AAtre",
+      "wikipedia_extract": "Concert champêtre, FP 49, is a harpsichord concerto by Francis Poulenc, which also exists in a version for piano solo with very slight changes in the solo part.",
+      "pageviews_yearly": 7751
+    },
+    {
+      "qid": "Q137800820",
+      "title": "Deux poèmes de Guillaume Apollinaire",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp157",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Deux_po%C3%A8mes_de_Guillaume_Apollinaire",
+      "wikipedia_extract": "Deux poèmes de Guillaume Apollinaire, FP 94, is a song cycle by French composer Francis Poulenc, composed in 1938, with texts by poet Guillaume Apollinaire.",
+      "pageviews_yearly": 221
+    },
+    {
+      "qid": "Q1208527",
+      "title": "Dialogues of the Carmelites",
+      "imslp_id": "Dialogues_des_Carmélites,_FP_159_(Poulenc,_Francis)",
+      "pdf_filename": "PMLP592286-Poulenc_-_Dialogue_des_Carmelites__vocal_score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp2",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dialogues_of_the_Carmelites",
+      "wikipedia_extract": "Dialogues des Carmélites, FP 159, is an opera in three acts, divided into twelve scenes with linking orchestral interludes, with music and libretto by Francis Poulenc, completed in 1956. Poulenc wrote the libretto for his second opera after the work of the same name by Georges Bernanos, itself based on The Song at the Scaffold by Gertrud von Le Fort. This is a fictionalized version of the story of the Martyrs of Compiègne, Carmelite nuns who, in 1794 during the closing days of the Reign of Terror during the French Revolution, were guillotined in Paris for refusing to renounce their vocation.",
+      "pageviews_yearly": 50475
+    },
+    {
+      "qid": "Q137324804",
+      "title": "Dix improvisations",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dix_improvisations",
+      "wikipedia_extract": "Dix improvisations, FP 63, is the first set of improvisations by French composer Francis Poulenc. Written for solo piano, it was finished in 1934.",
+      "pageviews_yearly": 630
+    },
+    {
+      "qid": "Q4039507",
+      "title": "Gloria",
+      "imslp_id": "Gloria,_FP_177_(Poulenc,_Francis)",
+      "pdf_filename": "PMLP499558-331083420-287713822-F-Poulenc-Gloria-Vocal-score-pdf.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp114",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gloria_(Poulenc)",
+      "wikipedia_extract": "The Gloria by Francis Poulenc, FP 177, scored for soprano solo, large orchestra, and chorus, is a setting of the Gloria text from the mass ordinary. One of Poulenc's most celebrated works, it was commissioned by the Koussevitsky Foundation in honor of Sergei Koussevitzky and his wife Natalia, the namesakes of the foundation.",
+      "pageviews_yearly": 16293
+    },
+    {
+      "qid": "Q130280905",
+      "title": "Huit Chansons françaises",
+      "imslp_id": "8 Chansons françaises, FP 130 (Poulenc, Francis)",
+      "pdf_filename": "PMLP500325-Poulenc_F__1__Margoton_va_t_à_l_iau.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp189"
+    },
+    {
+      "qid": "Q137271521",
+      "title": "Huit nocturnes",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp199",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Huit_nocturnes",
+      "wikipedia_extract": "Huit nocturnes, FP 56, is a cycle of nocturnes for solo piano by French composer Francis Poulenc. Written over a period of nine years, each one of the nocturnes were published separately.",
+      "pageviews_yearly": 685
+    },
+    {
+      "qid": "Q3797020",
+      "title": "Improvisations",
+      "imslp_id": "15_Improvisations,_FP_63,_113,_170,_176_(Poulenc,_Francis)",
+      "pdf_filename": "PMLP499650-Poulenc_-_Les_Quinze_Improvisations__piano_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp64"
+    },
+    {
+      "qid": "Q129380",
+      "title": "L'Album des Six",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/L'Album_des_Six",
+      "wikipedia_extract": "L'Album des Six is a suite of six piano pieces published in 1920 by Eugène Demets, and written by the members of the group of French composers known as Les Six.",
+      "pageviews_yearly": 2757
+    },
+    {
+      "qid": "Q6456048",
+      "title": "L'éventail de Jeanne"
+    },
+    {
+      "qid": "Q29071327",
+      "title": "La Dame de Monte-Carlo",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp125"
+    },
+    {
+      "qid": "Q6466183",
+      "title": "La guirlande de Campra",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp31",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Guirlande_de_Campra",
+      "wikipedia_extract": "\n\nLa Guirlande de Campra is collaborative orchestral work written by seven French composers in 1952. It is in the form of variations or meditations on a theme from André Campra's 1717 opera Camille, reine des Volsques.",
+      "pageviews_yearly": 1340
+    },
+    {
+      "qid": "Q126942627",
+      "title": "Laudes de Saint Antoine de Padoue",
+      "imslp_id": "Laudes_de_Saint-Antoine_de_Padoue,_FP_172_(Poulenc,_Francis)",
+      "pdf_filename": "PMLP500992-Poulenc_F_-_Laudes_de_Saint-Antoine_de_Padoue.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp113"
+    },
+    {
+      "qid": "Q2424673",
+      "title": "Le Voyage en Amérique",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Voyage_to_America",
+      "wikipedia_extract": "The Voyage to America is a 1951 French comedy film directed by Henri Lavorel and starring Pierre Fresnay, Yvonne Printemps and Jean Brochard. The film contrasts the prosperity of France and the United States in the post-Second World War era It replaced the Laurel and Hardy film Atoll K at the Olympia cinema in Paris, and was much more successful.",
+      "pageviews_yearly": 1377
+    },
+    {
+      "qid": "Q137719525",
+      "title": "Le bestiaire",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp127",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Le_bestiaire_(Poulenc)",
+      "wikipedia_extract": "\nLe bestiaire, ou Cortège d'Orphée, FP 15a, is a song cycle for voice and instrumental ensemble by French composer Francis Poulenc, after Guillaume Apollinaire's Le Bestiaire ou Cortège d'Orphée. Written in 1918 and 1919, it initially consisted of twelve songs, even though it was reduced to six before it was premiered and published.",
+      "pageviews_yearly": 698
+    },
+    {
+      "qid": "Q3230579",
+      "title": "Les Animaux modèles",
+      "imslp_id": "Les_animaux_modèles,_FP_111_(Poulenc,_Francis)",
+      "pdf_filename": "PMLP563282-Poulenc_-_Les_animaux_modèles__Full_Score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp26",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Les_Animaux_mod%C3%A8les",
+      "wikipedia_extract": "Les Animaux modèles, FP 111, is a ballet dating from 1940 to 1942 with music by Francis Poulenc. It was the third and final ballet that he composed and was staged at the Paris Opéra in 1942, with choreography by Serge Lifar, who also danced in the 1942 premiere. The themes of the ballet are drawn from the Fables of Jean de La Fontaine.",
+      "pageviews_yearly": 3722
+    },
+    {
+      "qid": "Q119164003",
+      "title": "Les Biches",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp177"
+    },
+    {
+      "qid": "Q3488974",
+      "title": "Les Soirées de Nazelles",
+      "imslp_id": "Les_soirées_de_Nazelles,_FP_84_(Poulenc,_Francis)",
+      "pdf_filename": "PMLP499626-Poulenc_-_Les_soirées_de_Nazelles__piano_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp93",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Soir%C3%A9es_de_Nazelles",
+      "wikipedia_extract": "Les Soirées de Nazelles, FP 84, is a set of variations for piano written by the French composer Francis Poulenc. During the evenings, the composer used to sit at the piano and improvise \"portraits\" of his friends, all based on a given theme. The work was begun in 1930, and completed at Noizay on October 1, 1936.",
+      "pageviews_yearly": 2356
+    },
+    {
+      "qid": "Q1773642",
+      "title": "Les biches",
+      "imslp_id": "Les_biches,_FP_36_(Poulenc,_Francis)",
+      "pdf_filename": "PMLP594370-Poulenc_-_Les_Biches__piano-vocal_score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp177",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Les_Biches",
+      "wikipedia_extract": "Les Biches is a one-act ballet to music by Francis Poulenc, choreographed by Bronislava Nijinska and premiered by the Ballets Russes on 6 January 1924 at the Salle Garnier in Monte Carlo. Nijinska danced the central role of the Hostess. The ballet has no story, and depicts the random interactions of a group of mainly young people in a house party on a summer afternoon.",
+      "pageviews_yearly": 9510
+    },
+    {
+      "qid": "Q2480913",
+      "title": "Les mariés de la tour Eiffel",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp6",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Les_Mari%C3%A9s_de_la_tour_Eiffel",
+      "wikipedia_extract": "Les Mariés de la tour Eiffel is a ballet to a libretto by Jean Cocteau, choreography by Jean Börlin, set by Irène Lagut, costumes by Jean Hugo, and music by five members of Les Six: Georges Auric, Arthur Honegger, Darius Milhaud, Francis Poulenc and Germaine Tailleferre. The score calls for two narrators. The ballet was first performed in Paris in 1921.",
+      "pageviews_yearly": 3841
+    },
+    {
+      "qid": "Q28864841",
+      "title": "Litanies à la Vierge Noire",
+      "imslp_id": "Litanies_à_la_Vierge_Noire,_FP_82_(Poulenc,_Francis)",
+      "pdf_filename": "PMLP500327-Poulenc_F_-_Litanies_à_la_Vierge_Noire.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp104",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Litanies_%C3%A0_la_Vierge_Noire",
+      "wikipedia_extract": "Litanies à la Vierge Noire, FP 82, is a piece of sacred music composed by Francis Poulenc in 1936 for a three-part choir of women and organ, setting a French litany recited at the pilgrimage site Rocamadour which the composer visited. The subtitle, Notre-Dame de Rocamadour, refers to the venerated black sculpture of Mary. The composition is Poulenc's first piece of sacred music. In 1947 he wrote a version for voices accompanied by string orchestra and timpani.",
+      "pageviews_yearly": 4376
+    },
+    {
+      "qid": "Q98745126",
+      "title": "Love Affair(s)"
+    },
+    {
+      "qid": "Q28222102",
+      "title": "Mass in G Major",
+      "imslp_id": "Mass_in_G_major,_FP_89_(Poulenc,_Francis)",
+      "pdf_filename": "PMLP499071-Poulenc_F_-_Messe_en_sol_majeur.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp105",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mass_in_G_major_(Poulenc)",
+      "wikipedia_extract": "Messe en sol majeur, FP 89, is a missa brevis by Francis Poulenc. He set most parts of the Latin mass to music in 1937, scored for a mixed choir a cappella.",
+      "pageviews_yearly": 2072
+    },
+    {
+      "qid": "Q1634841",
+      "title": "Organ Concerto",
+      "imslp_id": "Organ_Concerto,_FP_93_(Poulenc,_Francis)",
+      "pdf_filename": "PMLP608061-Poulenc_-_Organ_Concerto__orch._score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp35",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Organ_Concerto_(Poulenc)",
+      "wikipedia_extract": "The Concerto pour orgue, cordes et timbales in G minor, FP 93, is an organ concerto composed by Francis Poulenc between 1934 and 1938. It has become one of the most frequently performed pieces of the genre not written in the Baroque period.",
+      "pageviews_yearly": 8272
+    },
+    {
+      "qid": "Q1746013",
+      "title": "Piano Concerto",
+      "imslp_id": "Piano_Concerto,_FP_146_(Poulenc,_Francis)",
+      "pdf_filename": "PMLP486284-Cover.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp36",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Concerto_(Poulenc)",
+      "wikipedia_extract": "The Piano Concerto in C-sharp minor, FP 146, by French composer Francis Poulenc is the last of his five concertos. Written in 1949 on commission from the Boston Symphony Orchestra, it has three movements and a duration of about 19 minutes.",
+      "pageviews_yearly": 5125
+    },
+    {
+      "qid": "Q28401330",
+      "title": "Quatre motets pour un temps de pénitence",
+      "imslp_id": "4_Motets_pour_un_temps_de_pénitence,_FP_97_(Poulenc,_Francis)",
+      "pdf_filename": "PMLP499455-Poulenc_-_4_Motets_pour_un_temps_de_pénitence__SATB_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp106",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quatre_Motets_pour_un_temps_de_p%C3%A9nitence",
+      "wikipedia_extract": "Quatre Motets pour un temps de pénitence, FP 97, are four sacred motets composed by Francis Poulenc in 1938–39. He wrote them on Latin texts for penitence, scored for four unaccompanied voices.",
+      "pageviews_yearly": 2262
+    },
+    {
+      "qid": "Q3419712",
+      "title": "Rapsodie nègre",
+      "imslp_id": "Rapsodie_nègre,_FP_3_(Poulenc,_Francis)",
+      "pdf_filename": "PMLP185526-Poulenc_Rapsodie_Negre_score_and_parts.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp123",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rapsodie_n%C3%A8gre",
+      "wikipedia_extract": "Rapsodie nègre, FP 3, is a work dating from 1917 by Francis Poulenc for flute, clarinet, string quartet, baritone and piano. It was the composer's first work to be publicly performed.",
+      "pageviews_yearly": 2738
+    },
+    {
+      "qid": "Q3461110",
+      "title": "Sade",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sade_(film)",
+      "wikipedia_extract": "Sade is a 2000 French film directed by Benoît Jacquot, adapted by Jacques Fieschi and Bernard Minoret from the novel La terreur dans le boudoir by Serge Bramly.",
+      "pageviews_yearly": 12510
+    },
+    {
+      "qid": "Q130224810",
+      "title": "Salve Regina",
+      "imslp_id": "Salve_Regina,_FP_110_(Poulenc,_Francis)",
+      "pdf_filename": "PMLP499502-Poulenc_F_-_Salve_Regina__FP_110_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp108"
+    },
+    {
+      "qid": "Q129845387",
+      "title": "Sept Chansons",
+      "imslp_id": "7_Chansons,_FP_81_(Poulenc,_Francis)",
+      "pdf_filename": "PMLP500329-Poulenc_F__3__Par_une_nuit_nouvelle.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp117"
+    },
+    {
+      "qid": "Q1995465",
+      "title": "Sextet",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Poulenc_Sextet_Allegro_Vivace_I.mid",
+        "midi/Poulenc_Sextet_Finale_III.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q3484920",
+      "title": "Sinfonietta",
+      "imslp_id": "Sinfonietta,_FP_141_(Poulenc,_Francis)",
+      "pdf_filename": "PMLP484153-Poulenc_-_Sinfonietta__orch._score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp30",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sinfonietta_(Poulenc)",
+      "wikipedia_extract": "The Sinfonietta, FP 141, is a work for orchestra by Francis Poulenc. Composed in 1947 on a commission from the BBC, it was first performed in London on 24 October 1948, conducted by Roger Désormière. The work, light and full of dance rhythms, is in four movements.",
+      "pageviews_yearly": 4308
+    },
+    {
+      "qid": "Q70183919",
+      "title": "Sleeping Beauty"
+    },
+    {
+      "qid": "Q116199781",
+      "title": "Sonata for Piano four-hands"
+    },
+    {
+      "qid": "Q3490090",
+      "title": "Sonata for Two Pianos",
+      "imslp_id": "Sonata_for_2_Pianos,_FP_156_(Poulenc,_Francis)",
+      "pdf_filename": "PMLP631304-Poulenc_-_Sonata_for_2_Pianos.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q3490083",
+      "title": "Sonata for clarinet and bassoon",
+      "imslp_id": "Sonata_for_Clarinet_and_Bassoon,_FP_32a_(Poulenc,_Francis)",
+      "pdf_filename": "PMLP518099-PoulencSonataClarinet_Bassoon.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sonata_for_clarinet_and_bassoon",
+      "wikipedia_extract": "The Sonate pour clarinette et basson, FP 32a, is a piece of chamber music composed by Francis Poulenc in 1922.",
+      "pageviews_yearly": 1758
+    },
+    {
+      "qid": "Q3490089",
+      "title": "Sonata for two clarinets",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp179",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sonata_for_two_clarinets",
+      "wikipedia_extract": "The Sonata for two clarinets, FP 7, is a piece of chamber music composed by Francis Poulenc in 1918. Dedicated to Édouard Souberbielle, its total execution time is about six minutes. It is unusual among clarinet duets in that it is written for B♭ clarinet, which generally plays the melodic themes, and A clarinet, which plays a more supporting role through much of the piece. It is also unusual for music of this period that the clarinetists perform different time signatures simultaneously in parts of the opening movement.",
+      "pageviews_yearly": 2149
+    },
+    {
+      "qid": "Q614820",
+      "title": "Stabat Mater",
+      "imslp_id": "Stabat_Mater,_FP_148_(Poulenc,_Francis)",
+      "pdf_filename": "PMLP500622-Poulenc_-_Stabat_Mater__orch._score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp110",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stabat_Mater_(Poulenc)",
+      "wikipedia_extract": "Stabat Mater, FP 148, is a musical setting of the Stabat Mater sequence composed by Francis Poulenc in 1950.",
+      "pageviews_yearly": 5892
+    },
+    {
+      "qid": "Q3503275",
+      "title": "Suite française",
+      "imslp_id": "Suite_française_d’après_Claude_Gervaise,_FP_80_(Poulenc,_Francis)",
+      "pdf_filename": "PMLP499628-Poulenc_-__SCORES__-_Suite_Française.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp28",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Suite_fran%C3%A7aise_(Poulenc)",
+      "wikipedia_extract": "Suite française, FP 80, is an orchestral suite for wind instruments, percussion and harpsichord by Francis Poulenc. It was composed in a neoclassical style in 1935 for Édouard Bourdet's la Reine Margot, and it was inspired by Claude Gervaise's dance collection Le livre de danceries.",
+      "pageviews_yearly": 3522
+    },
+    {
+      "qid": "Q25397190",
+      "title": "Sécheresses",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp119",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/S%C3%A9cheresses",
+      "wikipedia_extract": "Sécheresses (Drought), FP 90, is a cantata by Francis Poulenc for mixed choir (SATB) composed in 1937 on poems by Edward James who commissioned it. It was regarded as a failure when it was premiered in 1938, but a great success when it was performed again in 1953.",
+      "pageviews_yearly": 1257
+    },
+    {
+      "qid": "Q137785147",
+      "title": "Tel jour, telle nuit",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp181",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tel_jour%2C_telle_nuit",
+      "wikipedia_extract": "Tel jour, telle nuit or Tel jour telle nuit is a song cycle consisting of nine songs by French composer Francis Poulenc. Based on poems by Paul Éluard, it was finished in 1937.",
+      "pageviews_yearly": 372
+    },
+    {
+      "qid": "Q3208390",
+      "title": "The Duchess of Langeais",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Duchess_of_Langeais_(1942_film)",
+      "wikipedia_extract": "The Duchess of Langeais is a 1942 French historical drama film directed by Jacques de Baroncelli and starring Edwige Feuillère, Pierre Richard-Willm and Aimé Clariond. It is also known as Wicked Duchess. It is based on the 1834 novel of the same name by Honoré de Balzac. It was shot at the Buttes-Chaumont Studios in Paris. The film's sets were designed by the art director Serge Piménoff. Francis Poulenc composed the music.",
+      "pageviews_yearly": 1799
+    },
+    {
+      "qid": "Q107640168",
+      "title": "The Human Voice (New Zealand Opera 2020)"
+    },
+    {
+      "qid": "Q130753921",
+      "title": "The Masquers"
+    },
+    {
+      "qid": "Q3203514",
+      "title": "The Story of Babar",
+      "imslp_id": "Histoire_de_Babar_le_petit_éléphant,_FP_129_(Poulenc,_Francis)",
+      "pdf_filename": "PMLP500020-Poulenc_-_L_Histoire_de_Babar__le_petit_éléphant__narrator__piano_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp5",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/L'Histoire_de_Babar%2C_le_petit_%C3%A9l%C3%A9phant",
+      "wikipedia_extract": "L'Histoire de Babar, le petit éléphant, FP 129, is a composition for narrator and piano by Francis Poulenc, based on Histoire de Babar and written from 1940. Orchestral versions were later written by Jean Françaix and David Matthews.",
+      "pageviews_yearly": 4393
+    },
+    {
+      "qid": "Q117921098",
+      "title": "Thème varié",
+      "imslp_id": "Thème_varié,_FP_151_(Poulenc,_Francis)",
+      "pdf_filename": "PMLP499602-Poulenc_-_Thème_varié__piano_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp97"
+    },
+    {
+      "qid": "Q16654544",
+      "title": "Traveling Light",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Traveling_Light_(1944_film)",
+      "wikipedia_extract": "Traveling Light is a 1944 French drama film directed by Jean Anouilh, starring Pierre Fresnay and Blanchette Brunoy.",
+      "pageviews_yearly": 2123
+    },
+    {
+      "qid": "Q3326873",
+      "title": "Trois mouvements perpétuels",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp74",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mouvements_perp%C3%A9tuels",
+      "wikipedia_extract": "Mouvements perpétuels, FP 14a, is a short three-movement solo-piano piece by French composer Francis Poulenc.",
+      "pageviews_yearly": 4181
+    },
+    {
+      "qid": "Q130219802",
+      "title": "Un soir de neige",
+      "has_midi": true,
+      "midi_files": [
+        "midi/UN_SOIR_DE_NEIGE_Francis_Poulenc.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q24965548",
+      "title": "Variations sur le nom de Marguerite Long",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp32",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Variations_sur_le_nom_de_Marguerite_Long",
+      "wikipedia_extract": "Variations sur le nom de Marguerite Long is a collaborative orchestral suite written by eight French composers in 1956, in honour of the pianist Marguerite Long.",
+      "pageviews_yearly": 2072
+    },
+    {
+      "qid": "Q3559043",
+      "title": "Villanelle",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp43",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Villanelle_(Poulenc)",
+      "wikipedia_extract": "Villanelle, FP 74, by Francis Poulenc is a piece of chamber music composed in 1934. It was written for recorder and piano. The execution time is about 2 minutes.",
+      "pageviews_yearly": 1287
+    },
+    {
+      "qid": "Q3490193",
+      "title": "Violin Sonata",
+      "imslp_id": "Violin_Sonata,_FP_119_(Poulenc,_Francis)",
+      "pdf_filename": "PMLP592447-Poulenc-Violin-Sonata_part.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp40",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Violin_Sonata_(Poulenc)",
+      "wikipedia_extract": "The Sonate pour violon et piano, FP 119, by Francis Poulenc was composed in 1942–1943 in memory of the Spanish poet Federico García Lorca. The score, dedicated to Poulenc's niece Brigitte Manceaux, was published by Max Eschig. The work was premiered by the violinist Ginette Neveu with the composer at the piano on 21 June 1943 in Paris, Salle Gaveau.",
+      "pageviews_yearly": 5784
+    },
+    {
+      "qid": "Q3588084",
+      "title": "Élégie pour cor et piano",
+      "imslp_id": "Élégie,_FP_168_(Poulenc,_Francis)",
+      "pdf_filename": "PMLP914281-PoulencElegieHorn.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/francis-poulenc-1899-pp46",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/%C3%89l%C3%A9gie_pour_cor_et_piano",
+      "wikipedia_extract": "Élégie pour cor et piano – Elegy for horn and piano – FP 168 is a short, one-movement work by the French composer Francis Poulenc, written in memory of the horn player Dennis Brain, who died in 1957. It was first performed in January 1958.",
+      "pageviews_yearly": 1904
+    }
+  ]
+}

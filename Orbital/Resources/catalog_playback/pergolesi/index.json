@@ -1,0 +1,115 @@
+{
+  "composer_name": "Giovanni Battista Pergolesi",
+  "name_last_first": "Pergolesi, Giovanni Battista",
+  "slug": "pergolesi",
+  "wiki_page": "https://en.wikipedia.org/wiki/Giovanni_Battista_Pergolesi",
+  "apple_music_playlist": "https://music.apple.com/us/playlist/giovanni-battista-pergolesi-essentials/pl.20eef31899d842bbb815a35f1060f65a",
+  "era": "Classical",
+  "dates": "1710 – 1736",
+  "nationality": "ITA",
+  "notable": true,
+  "works": [
+    {
+      "title": "Pergolesi Stabat Mater Dolorosa for sax",
+      "musicxml": "musicxml/Pergolesi_Stabat_Mater_Dolorosa_for_sax.mxl",
+      "midi": "midi/Pergolesi_Stabat_Mater_Dolorosa_for_sax.mid",
+      "time_signature": "4/4",
+      "instruments": [
+        "Sassofono soprano",
+        "Sassofono contralto",
+        "Sassofono tenore"
+      ],
+      "tempo_markings": [
+        "Grave"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 1,
+        "n_views": 72,
+        "duration_seconds": 322.2858984401068,
+        "n_notes": 1131,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/30385586/scores/6094019",
+        "musescore_duration": "05:22"
+      },
+      "key": "B♭ major",
+      "instruments_gm": [
+        "Soprano Sax",
+        "Alto Sax",
+        "Tenor Sax"
+      ],
+      "tempo_bpm": 35,
+      "n_measures": 47,
+      "n_parts": 6,
+      "n_notes": 1127,
+      "notes_per_second": 3.5,
+      "apple_music_search_query": "Pergolesi B♭ major Pergolesi Stabat Mater Dolorosa for sax",
+      "parent_work_title": "Stabat Mater Dolorosa",
+      "year_composed": 1736,
+      "wikidata_id": "Q643347",
+      "wikidata_title": "Stabat Mater",
+      "musicbrainz_id": "ff1fa880-c322-4ba2-8a96-7d462fb657db",
+      "imslp_id": "Stabat_Mater,_P.77_(Pergolesi,_Giovanni_Battista)",
+      "wikidata_match_method": "title_tokens",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Pergolesi%20Stabat%20Mater%20Dolorosa%20for%20sax",
+      "display_title": "Stabat Mater"
+    },
+    {
+      "title": "Giovanni Pergolesi Stabat Mater AMEN",
+      "musicxml": "musicxml/Giovanni_Pergolesi_Stabat_Mater_AMEN.mxl",
+      "midi": "midi/Giovanni_Pergolesi_Stabat_Mater_AMEN.mid",
+      "time_signature": "2/2",
+      "instruments": [
+        "Soprano",
+        "Contralto",
+        "Organo a canne"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.72,
+        "n_favorites": 2,
+        "n_views": 209,
+        "duration_seconds": 149.15873909645452,
+        "n_notes": 620,
+        "complexity": "0",
+        "is_original": true,
+        "is_best_arrangement": true,
+        "genres": "NA",
+        "tags": "stabatmater-pergolesistabatmater-mozart-amadeus-amadeussoundtrack-pergolesistabatmateramen",
+        "musescore_url": "https://musescore.com/user/31136735/scores/5983956",
+        "musescore_duration": "01:15"
+      },
+      "key": "A♭ major",
+      "instruments_gm": [
+        "Choir Aahs",
+        "Church Organ"
+      ],
+      "tempo_bpm": 214,
+      "n_measures": 67,
+      "n_parts": 3,
+      "n_notes": 620,
+      "notes_per_second": 4.2,
+      "apple_music_search_query": "Pergolesi A♭ major Giovanni Pergolesi Stabat Mater AMEN",
+      "parent_work_title": "Amen",
+      "year_composed": 1736,
+      "wikidata_id": "Q643347",
+      "wikidata_title": "Stabat Mater",
+      "musicbrainz_id": "ff1fa880-c322-4ba2-8a96-7d462fb657db",
+      "imslp_id": "Stabat_Mater,_P.77_(Pergolesi,_Giovanni_Battista)",
+      "wikidata_match_method": "title_tokens",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Pergolesi%20Stabat%20Mater%20AMEN",
+      "display_title": "Stabat Mater"
+    }
+  ],
+  "birth_year": 1710,
+  "death_year": 1736,
+  "wikipedia_extract": "Giovanni Battista Draghi (Italian: [dʒoˈvanni batˈtista ˈdraːɡi]; 4 January 1710 – 16 or 17 March 1736), usually referred to as Giovanni Battista Pergolesi (Italian: [perɡoˈleːzi, -eːsi]), was an Italian Baroque composer, violinist, and organist, leading exponent of the Baroque; he is considered one of the greatest Italian musicians of the first half of the 18th century and one of the most important representatives of the Neapolitan school. Despite his short life and few years of activity (he...",
+  "wikidata_id": "Q185312",
+  "apple_music_artist_id": "4326587",
+  "apple_music_classical_url": "https://classical.music.apple.com/us/artist/4326587"
+}

@@ -1,0 +1,936 @@
+{
+  "composer_slug": "donizetti",
+  "composer_qid": "Q101698",
+  "work_count": 112,
+  "midi_file_count": 3,
+  "works": [
+    {
+      "qid": "Q471226",
+      "title": "Il borgomastro di Saardam",
+      "imslp_id": "Il_borgomastro_di_Saardam_(Donizetti,_Gaetano)",
+      "pdf_filename": "PMLP230775-Donizetti_-_Il_Borgomastro_di_Saardam__fs_ms_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Il_borgomastro_di_Saardam",
+      "wikipedia_extract": "Il borgomastro di Saardam is an 1827 melodramma giocoso in two acts by Gaetano Donizetti. The libretto, by Domenico Gilardoni, was based on the 1818 play Le bourgmestre de Sardam, ou Les deux Pierres by Mélesville, Jean-Toussaint Merle and Eugène Cantiran de Boirie. Albert Lortzing's 1837 opera Zar und Zimmermann is ultimately based, via a German translation, on the same French play. The plot concerns a famous episode in the life of Peter the Great, in which he disguised himself under an assumed name as a worker in the shipyards of Saardam, and has certain similarities to Donizetti's earlier 1-act farce Il falegname di Livonia.",
+      "pageviews_yearly": 1872,
+      "date": "1827-00-00"
+    },
+    {
+      "qid": "Q465270",
+      "title": "Il giovedì grasso, o Il nuovo Pourceaugnac",
+      "imslp_id": "Il_giovedì_grasso_(Donizetti,_Gaetano)",
+      "pdf_filename": "PMLP235756-Donizetti_-_Il_giovedì_grasso__fs_aut_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Il_gioved%C3%AC_grasso",
+      "wikipedia_extract": "Il giovedì grasso is a farsa in one act by Gaetano Donizetti, from a libretto by Domenico Gilardoni. The literal translation of the title is \"Fat Thursday\", a reference to Carnival celebration. The libretto was adapted from the French comedies Monsieur de Pourceaugnac by Molière and Le nouveau Pourceaugnac by Charles-Gaspard Delestre-Poirson and Eugène Scribe. The opera uses spoken dialogue rather than recitatives, and the buffo role is given in the Neapolitan language. The work premiered at the Teatro del Fondo in Naples on 26 February 1829.",
+      "pageviews_yearly": 2016,
+      "date": "1828-00-00"
+    },
+    {
+      "qid": "Q559848",
+      "title": "Anna Bolena",
+      "imslp_id": "Anna_Bolena_(Donizetti,_Gaetano)",
+      "pdf_filename": "PMLP89312-94594-00a.bndsc.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp85",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Anna_Bolena",
+      "wikipedia_extract": "Anna Bolena is a tragic opera in two acts composed by Gaetano Donizetti. Felice Romani wrote the Italian libretto after Ippolito Pindemonte's Enrico VIII ossia Anna Bolena and Alessandro Pepoli's Anna Bolena, both recounting the life of Anne Boleyn, the second wife of England's King Henry VIII.",
+      "pageviews_yearly": 26256,
+      "date": "1830-00-00"
+    },
+    {
+      "qid": "Q846285",
+      "title": "Gianni di Parigi",
+      "imslp_id": "Gianni_di_Parigi_(Donizetti,_Gaetano)",
+      "pdf_filename": "PMLP230752-Donizetti_-_Gianni_di_Parigi_II__fs_aut_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp55",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gianni_di_Parigi",
+      "wikipedia_extract": "Gianni di Parigi is an 1839 melodramma comico in two acts with music by Gaetano Donizetti to a libretto by Felice Romani, which had previously been set by Francesco Morlacchi in 1818 and by Giovanni Antonio Speranza in 1836.",
+      "pageviews_yearly": 2195,
+      "date": "1831-00-00"
+    },
+    {
+      "qid": "Q781142",
+      "title": "La romanziera e l'uomo nero",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp35",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_romanziera_e_l'uomo_nero",
+      "wikipedia_extract": "La romanziera e l'uomo nero is an 1831 one-act farsa with music by Gaetano Donizetti and an Italian libretto by Domenico Gilardoni, possibly based on the 1819 play La donna dei romanzi by Augusto Bon. Other suggested sources include L'homme noir (1820) by Eugene Scribe and Jean-Henri Dupin and Le coiffeur et le perruquier (1824) by Scribe, Édouard-Joseph-Ennemond Mazères and Charles Nombret Saint-Laurent.",
+      "pageviews_yearly": 1539,
+      "date": "1831-00-00"
+    },
+    {
+      "qid": "Q108950904",
+      "title": "Niso e Violetta",
+      "date": "1833-00-00"
+    },
+    {
+      "qid": "Q11777543",
+      "title": "Requiem",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp259",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Requiem_(Donizetti)",
+      "wikipedia_extract": "The Messa da requiem in D minor (1835) is a musical setting of the Catholic funeral mass (Requiem) by Italian opera composer Gaetano Donizetti. It is scored for five soloists, mixed chorus and orchestra. A performance lasts about 62–75 minutes.",
+      "pageviews_yearly": 2758,
+      "date": "1835-00-00"
+    },
+    {
+      "qid": "Q503582",
+      "title": "Adelia",
+      "imslp_id": "Adelia_(Donizetti,_Gaetano)",
+      "pdf_filename": "PMLP230424-mas358176.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp61",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adelia_(opera)",
+      "wikipedia_extract": "Adelia, o La figlia dell'arciere is an opera in three acts by Gaetano Donizetti. The Italian libretto was written partly by Felice Romani and by Girolamo Maria Marini, a part-time poet who had achieved notability the previous year with Otto Nicolai's Il templario. The opera premiered at the Teatro Apollo, Rome on 11 February 1841.",
+      "pageviews_yearly": 2645,
+      "date": "1840-00-00"
+    },
+    {
+      "qid": "Q723941",
+      "title": "Don Pasquale",
+      "imslp_id": "Don_Pasquale_(Donizetti,_Gaetano)",
+      "pdf_filename": "PMLP58429-Donizetti_-_Don_Pasquale__vocal_score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp93",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Don_Pasquale",
+      "wikipedia_extract": "Don Pasquale is a Gaetano Donizetti opera buffa, or comic opera, in three acts, with an Italian libretto completed largely by Giovanni Ruffini as well as the composer. It was based on a libretto by Angelo Anelli for Stefano Pavesi's opera Ser Marcantonio written in 1810 but, on the published libretto, the author appears as \"M.A.\"",
+      "pageviews_yearly": 37056,
+      "date": "1842-00-00"
+    },
+    {
+      "qid": "Q54974683",
+      "title": "Ah! mes amis, quel jour de fête!"
+    },
+    {
+      "qid": "Q54974888",
+      "title": "Ah! quando in regio ta lamo"
+    },
+    {
+      "qid": "Q78526547",
+      "title": "Ah! un foco insolito = A! nwyd anarferol : Don Pasquale"
+    },
+    {
+      "qid": "Q517060",
+      "title": "Alahor in Granata",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp17",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alahor_in_Granata",
+      "wikipedia_extract": "Alahor in Granata is an opera in two acts by Gaetano Donizetti to an anonymous Italian libretto after Jean-Pierre Claris de Florian's text Gonzalve de Cordoue, ou Granade reconquise (1793). However, it seems that the original basis of the libretto goes back to one by Felice Romani written for Meyerbeer in 1821, which in turn can be traced back through another iteration to begin with the de Florian version.",
+      "pageviews_yearly": 2141
+    },
+    {
+      "qid": "Q1039890",
+      "title": "Alfredo il Grande",
+      "imslp_id": "Alfredo_il_grande_(Donizetti,_Gaetano)",
+      "pdf_filename": "PMLP230432-Donizetti_-_Alfredo_il_grande_I.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp13",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alfredo_il_grande",
+      "wikipedia_extract": "Alfredo il grande is a melodramma serio or serious opera in two acts by Gaetano Donizetti. Andrea Leone Tottola wrote the Italian libretto, which may have been derived from Johann Simon Mayr's 1818 opera of the same name. The opera tells the story of the Anglo-Saxon king Alfred the Great.",
+      "pageviews_yearly": 2597
+    },
+    {
+      "qid": "Q648981",
+      "title": "Alina, regina di Golconda",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp26",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alina%2C_regina_di_Golconda",
+      "wikipedia_extract": "Alina, regina di Golconda is an opera in two acts by Gaetano Donizetti. The Italian libretto was written by Felice Romani after Michel-Jean Sedaine's French libretto for Pierre-Alexandre Monsigny's ballet-heroique Aline, reine de Golconde, in its turn based on the novel by Stanislas de Boufflers.",
+      "pageviews_yearly": 2441
+    },
+    {
+      "qid": "Q78526580",
+      "title": "Aria Camoens : Don Sebastino"
+    },
+    {
+      "qid": "Q109242513",
+      "title": "Ave Maria"
+    },
+    {
+      "qid": "Q792443",
+      "title": "Belisario",
+      "imslp_id": "Belisario_(Donizetti,_Gaetano)",
+      "pdf_filename": "PMLP120200-Belisario.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp49",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Belisario",
+      "wikipedia_extract": "Belisario (Belisarius) is a tragedia lirica in three acts by Gaetano Donizetti. Salvadore Cammarano wrote the Italian libretto after Luigi Marchionni's adaptation of Eduard von Schenk's play, Belisarius, first staged in Munich in 1820 and then in Naples in 1826. The plot is loosely based on the life of the famous general Belisarius of the 6th century Byzantine Empire.",
+      "pageviews_yearly": 6492
+    },
+    {
+      "qid": "Q794233",
+      "title": "Betly, o sia La capanna svizzera",
+      "imslp_id": "Betly_(Donizetti,_Gaetano)",
+      "pdf_filename": "PMLP230439-Donizetti_-_Betly__vs_Ricordi__old.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Betly",
+      "wikipedia_extract": "Betly, ossia La capanna svizzera is a dramma giocoso in two acts by the Italian composer Gaetano Donizetti. The composer wrote the Italian libretto after Eugène Scribe and Mélésville's libretto for Adolphe Adam's opéra comique Le chalet, in its turn based on Goethe's Singspiel Jery und Bätely (1779).",
+      "pageviews_yearly": 2926
+    },
+    {
+      "qid": "Q3647137",
+      "title": "Buondelmonte"
+    },
+    {
+      "qid": "Q859034",
+      "title": "Caterina Cornaro",
+      "imslp_id": "Caterina_Cornaro_(Donizetti,_Gaetano)",
+      "pdf_filename": "PMLP230444-Donizetti_-_Caterina_Cornaro__Ricordi_1840__pr.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp65",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Caterina_Cornaro_(opera)",
+      "wikipedia_extract": "Caterina Cornaro ossia La Regina di Cipro is a tragedia lirica, or opera, in a prologue and two acts by Gaetano Donizetti. Giacomo Sacchero wrote the Italian libretto after Jules-Henri Vernoy de Saint-Georges' libretto for Halévy's La reine de Chypre (1841). It is based on the life of Caterina Cornaro, Queen of Cyprus from 1474 to 1489. It premiered at the Teatro San Carlo, Naples on 12 January 1844.",
+      "pageviews_yearly": 13858
+    },
+    {
+      "qid": "Q753250",
+      "title": "Chiara e Serafina",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp12",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chiara_e_Serafina",
+      "wikipedia_extract": "Chiara e Serafina, o I pirati is an opera semiseria in two acts by Gaetano Donizetti to a libretto by Felice Romani, based on the melodrama La cisterne by René Charles Guilbert de Pixérécourt. Donizetti's first opera for La Scala, it was premiered on October 26, 1822, but was not a success. Donizetti was not given the opportunity to compose again for La Scala until writing Ugo, conte di Parigi nearly a decade later.",
+      "pageviews_yearly": 2075
+    },
+    {
+      "qid": "Q78647773",
+      "title": "Ciascum lo dice = Pobun a ddywed : La Figlia del reggimento"
+    },
+    {
+      "qid": "Q125429266",
+      "title": "Dalinda"
+    },
+    {
+      "qid": "Q846809",
+      "title": "Dom Sébastien",
+      "imslp_id": "Dom_Sébastien_(Donizetti,_Gaetano)",
+      "pdf_filename": "PMLP391518-Donizetti_-_Don_Sebastiano__vs_Ricordi_old_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp64",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dom_S%C3%A9bastien",
+      "wikipedia_extract": "Dom Sébastien, Roi de Portugal is a French grand opera in five acts by Gaetano Donizetti. The libretto was written by Eugène Scribe, based on Paul Foucher's play Don Sébastien de Portugal which premiered at the Théâtre de la Porte-Saint-Martin on 9 November 1838. It is a historic-fiction about King Sebastian of Portugal (1554–1578) and his ill-fated 1578 expedition to Morocco. The opera premiered on 13 November 1843 at the Salle Le Peletier of the Paris Opéra. This was the last opera that Donizetti completed before going insane as a result of syphilis.",
+      "pageviews_yearly": 5889
+    },
+    {
+      "qid": "Q5292706",
+      "title": "Don Gregorio",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Don_Gregorio_(opera)",
+      "wikipedia_extract": "Don Gregorio is an 1826 opera by Gaetano Donizetti from a libretto by Jacopo Ferretti and adapted from his popular 1824 opera buffa L'ajo nell'imbarazzo, which had enjoyed considerable success when presented at the Teatro Valle in Rome on 4 February 1824.",
+      "pageviews_yearly": 2684
+    },
+    {
+      "qid": "Q109001798",
+      "title": "Don Sebastiano",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp64"
+    },
+    {
+      "qid": "Q109242083",
+      "title": "Elisabetta",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp30"
+    },
+    {
+      "qid": "Q989156",
+      "title": "Elvida",
+      "imslp_id": "Elvida_(Donizetti,_Gaetano)",
+      "pdf_filename": "PMLP230464-Donizetti_-_Elvida__fs_aut_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp18",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Elvida",
+      "wikipedia_extract": "Elvida is a melodramma or opera in one act by Gaetano Donizetti. Giovanni Schmidt wrote the Italian libretto. The opera was written as a pièce d'occasion for the birthday of Queen Maria of the Two Sicilies. The choice of subject matter was no doubt intended as an elegant acknowledgement of the Queen's Spanish ancestry. Donizetti received little financial reward for the work and, as a result, put the minimum of effort into its composition.",
+      "pageviews_yearly": 2339
+    },
+    {
+      "qid": "Q426071",
+      "title": "Emilia di Liverpool",
+      "imslp_id": "Emilia_di_Liverpool_(Donizetti,_Gaetano)",
+      "pdf_filename": "PMLP230469-Donizetti_-_L_Eremitaggio_di_Liverpool__Schonenberger_1855__pr.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp16",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Emilia_di_Liverpool",
+      "wikipedia_extract": "Emilia di Liverpool is a dramma semiserio, (\"half-serious\") dramatic opera, in two acts with music by Gaetano Donizetti. Giuseppe Checcherini wrote the Italian libretto after the anonymous libretto for Vittorio Trento's Emilia di Laverpaut, itself based on Stefano Scatizzi's play of the same name. It premiered on 28 July 1824 at the Teatro Nuovo in Naples.",
+      "pageviews_yearly": 2737
+    },
+    {
+      "qid": "Q263045",
+      "title": "Enrico di Borgogna",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Enrico_di_Borgogna",
+      "wikipedia_extract": "Enrico di Borgogna is an opera eroica or \"heroic\" opera in two acts by Gaetano Donizetti. Bartolomeo Merelli, wrote the Italian libretto based on Der Graf von Burgund by August von Kotzebue.",
+      "pageviews_yearly": 2492
+    },
+    {
+      "qid": "Q54974670",
+      "title": "Everyone knows it"
+    },
+    {
+      "qid": "Q54974588",
+      "title": "Fair as the fairest angel"
+    },
+    {
+      "qid": "Q755445",
+      "title": "Fausta",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fausta_(opera)",
+      "wikipedia_extract": "Fausta is a melodramma, or opera seria, in two acts by Gaetano Donizetti. The Italian libretto was partly written by Domenico Gilardoni, who died while doing so: the remainder was written by Donizetti. The literary source of the opera's libretto is Crispo, a tragedy improvised by Tommaso Sgricci on 3 November 1827.",
+      "pageviews_yearly": 3261
+    },
+    {
+      "qid": "Q749217",
+      "title": "Francesca di Foix",
+      "imslp_id": "Francesca_di_Foix_(Donizetti,_Gaetano)",
+      "pdf_filename": "PMLP230477-Donizetti_-_Francesca_di_Foix__fs_aut_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp34",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Francesca_di_Foix",
+      "wikipedia_extract": "Francesca di Foix is a melodramma giocoso in one act by Gaetano Donizetti with a libretto by Domenico Gilardoni based on one by Jean-Nicolas Bouilly and Emmanuel Mercier-Dupaty for Henri Montan Berton's 3-act opéra-comique Françoise de Foix, inspired by the life of Françoise de Foix.",
+      "pageviews_yearly": 3382
+    },
+    {
+      "qid": "Q914134",
+      "title": "Gabriella di Vergy",
+      "imslp_id": "Gabriella_di_Vergy_(Donizetti,_Gaetano)",
+      "pdf_filename": "PMLP110043-Donizetti_-_Gabriella_di_Vergy_II__fs_ms_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp19",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gabriella_di_Vergy",
+      "wikipedia_extract": "Gabriella di Vergy is an opera seria in two acts by Gaetano Donizetti written in 1826 and revised in 1838, from a libretto by Andrea Leone Tottola, which was based on the tragedy Gabrielle de Vergy (1777) by Dormont De Belloy. Prior to that, the play was itself inspired by two French medieval legends, Le châtelain de Coucy et la dame de Fayel and Le Roman de la chastelaine de Vergy.",
+      "pageviews_yearly": 2328
+    },
+    {
+      "qid": "Q913934",
+      "title": "Gemma di Vergy",
+      "imslp_id": "Gemma_di_Vergy_(Donizetti,_Gaetano)",
+      "pdf_filename": "PMLP120209-mas358161.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp45",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gemma_di_Vergy",
+      "wikipedia_extract": "Gemma di Vergy is an 1834 tragedia lirica in two acts by Gaetano Donizetti from a libretto by Giovanni Emanuele Bidera. It is based on the tragedy Charles VII chez ses grands vassaux (Charles VII and His Chief Vassals) (1831) by Alexandre Dumas père, which was later to become the subject of the opera The Saracen by the Russian composer César Cui.",
+      "pageviews_yearly": 2425
+    },
+    {
+      "qid": "Q539410",
+      "title": "Gianni di Calais",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp27",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gianni_di_Calais",
+      "wikipedia_extract": "Gianni di Calais is a melodramma semiserio, a \"semi-serious\" opera in three acts by Gaetano Donizetti (1828), from a libretto by Domenico Gilardoni, based on Jean de Calais by Louis-Charles Caigniez.",
+      "pageviews_yearly": 1650
+    },
+    {
+      "qid": "Q109002181",
+      "title": "Gli esiliati in Siberia"
+    },
+    {
+      "qid": "Q54974598",
+      "title": "How is it good at night"
+    },
+    {
+      "qid": "Q756048",
+      "title": "I pazzi per progetto",
+      "imslp_id": "I_pazzi_per_progetto_(Donizetti,_Gaetano)",
+      "pdf_filename": "PMLP230765-Donizetti_-_I_pazzi_per_progetto__fs_aut_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp31",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/I_pazzi_per_progetto",
+      "wikipedia_extract": "I pazzi per progetto is a farsa in one act by Gaetano Donizetti to a libretto by Domenico Gilardoni. The first performance took place at the Teatro di San Carlo on 6 February 1830 and was followed by its second presentation on 7 February at the Teatro del Fondo.",
+      "pageviews_yearly": 1694
+    },
+    {
+      "qid": "Q54974597",
+      "title": "I shall go, no more returning"
+    },
+    {
+      "qid": "Q1064667",
+      "title": "Il Pigmalione",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Il_Pigmalione",
+      "wikipedia_extract": "Il Pigmalione (Pygmalion) is a scena lirica in one act by Gaetano Donizetti. The librettist is unknown, but it is known that the libretto was based on one by Antonio Simeone Sografi for Giovanni Battista Cimador's Pimmalione (1790), in turn based on Jean-Jacques Rousseau's Pygmalion and ultimately based on Book X of Ovid's Metamorphoses. Sografi's libretto was also used for an opera by Bonifazio Asioli (1796).",
+      "pageviews_yearly": 3400
+    },
+    {
+      "qid": "Q464664",
+      "title": "Il campanello",
+      "imslp_id": "Il_campanello_(Donizetti,_Gaetano)",
+      "pdf_filename": "PMLP228473-Donizetti_-_Il_campanello_di_notte__vocal_score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp50",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Il_campanello",
+      "wikipedia_extract": "Il campanello or Il campanello di notte is a dramma giocoso, or opera, in one act by Gaetano Donizetti. The composer wrote the Italian libretto after Mathieu-Barthélemy Troin Brunswick and Victor Lhérie's French vaudeville La sonnette de nuit. The premiere took place on 1 June 1836 at the Teatro Nuovo in Naples and was \"revived every year over the next decade\".",
+      "pageviews_yearly": 4211
+    },
+    {
+      "qid": "Q637613",
+      "title": "Il castello di Kenilworth",
+      "imslp_id": "Elisabetta_(Donizetti,_Gaetano)",
+      "pdf_filename": "PMLP230447-Donizetti_-_Elisabetta_o_Il_castello_di_Kenilworth__fs_aut_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp30",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Il_castello_di_Kenilworth",
+      "wikipedia_extract": "Il castello di Kenilworth is a melodramma serio or tragic opera in three acts by Gaetano Donizetti. Andrea Leone Tottola wrote the Italian libretto after Victor Hugo's play Amy Robsart (1828) and Eugène Scribe's play Leicester, both of which following from Sir Walter Scott's novel Kenilworth (1821). Daniel Auber composed another opera on the same subject, Leicester, ou Le chateau de Kenilworth in 1823.",
+      "pageviews_yearly": 4557
+    },
+    {
+      "qid": "Q786494",
+      "title": "Il diluvio universale",
+      "imslp_id": "Il_diluvio_universale_(Donizetti,_Gaetano)",
+      "pdf_filename": "PMLP235727-Dio_tremendo__onnipossente.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Il_diluvio_universale",
+      "wikipedia_extract": "Il diluvio universale is an azione tragico-sacra, or opera, by Gaetano Donizetti. The Italian libretto was written by Domenico Gilardoni after Lord Byron's Heaven and Earth and Francesco Ringhieri's tragedy Il diluvio (1788).",
+      "pageviews_yearly": 3349
+    },
+    {
+      "qid": "Q5809685",
+      "title": "Il dolce suono",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp88",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Il_dolce_suono",
+      "wikipedia_extract": "\"Il dolce suono\" is the incipit of the recitativo of a scena ed aria taken from Act III scene 2, Lucia di Lammermoor by Gaetano Donizetti. It is also commonly known as the \"mad scene\" sung by the leading soprano, Lucia.",
+      "pageviews_yearly": 14569
+    },
+    {
+      "qid": "Q69155",
+      "title": "Il falegname di Livonia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Il_falegname_di_Livonia",
+      "wikipedia_extract": "Il falegname di Livonia, o Pietro il grande, czar delle Russie is an 1819 opera buffa in two acts with music by Gaetano Donizetti set to a libretto by Gherardo Bevilacqua-Aldobrandini. The libretto was based in part on Felice Romani's libretto for Giovanni Pacini's opera Il falegname di Livonia, which had just been presented at La Scala in Milan on 12 April 1819. Another source was Alexandre Duval's comedy Le menuisier de Livonie, ou Les illustres voyageurs (1805).",
+      "pageviews_yearly": 1613
+    },
+    {
+      "qid": "Q585313",
+      "title": "Il fortunato inganno",
+      "imslp_id": "Il_fortunato_inganno_(Donizetti,_Gaetano)",
+      "pdf_filename": "PMLP235748-Donizetti_-_Il_fortunato_inganno_II__fs_aut_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Il_fortunato_inganno",
+      "wikipedia_extract": "Il fortunato inganno is an opera buffa in two acts by Gaetano Donizetti, to a libretto by Andrea Leone Tottola. Composed in 1823, it was first given on September 3 of that year at the Teatro Nuovo in Naples. It was not a success, and has disappeared from the repertory.",
+      "pageviews_yearly": 1556
+    },
+    {
+      "qid": "Q461182",
+      "title": "Il furioso all'isola di San Domingo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Il_furioso_all'isola_di_San_Domingo",
+      "wikipedia_extract": "Il furioso all'isola di San Domingo (The Madman on the Island of San Domingo) is a \"romantic melodramma\" in two acts by the composer Gaetano Donizetti. Jacopo Ferretti, who since 1821 had written five libretti for Donizetti and two for Rossini, had proposed the unusual subject and he was contracted to write the Italian libretto based on a five-act play of the same title by an unknown author in 1820, which \"had been given in the same theatre [...] and which Donizetti had immediately loved\". However, as has been noted by Charles Osborne, the \"ultimate derivation of both play and libretto is an episode in part 1 of Don Quixote by Miguel de Cervantes's published in 1605\" which is the story of Cardenio and Lucinda.",
+      "pageviews_yearly": 3026
+    },
+    {
+      "qid": "Q54974631",
+      "title": "Il mio destin dipende"
+    },
+    {
+      "qid": "Q470876",
+      "title": "Il paria",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp29",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Il_paria",
+      "wikipedia_extract": "Il paria is an opera in two acts by Gaetano Donizetti from a libretto by Domenico Gilardoni, based on Le Paria by Casimir Delavigne and Michele Carafa's Il paria with a libretto by Gaetano Rossi.",
+      "pageviews_yearly": 2012
+    },
+    {
+      "qid": "Q5996760",
+      "title": "Il pesceballo"
+    },
+    {
+      "qid": "Q78526926",
+      "title": "Il segreto per esser felici = M [sic] ddatgelaf gyfrinach fy nghalon : Lucrezia Borgia"
+    },
+    {
+      "qid": "Q846289",
+      "title": "Imelda de' Lambertazzi",
+      "imslp_id": "Imelda_de'_Lambertazzi_(Donizetti,_Gaetano)",
+      "pdf_filename": "PMLP235779-1383532228bsb10579411.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp33",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Imelda_de'_Lambertazzi",
+      "wikipedia_extract": "Imelda de' Lambertazzi is a melodramma tragico or tragic opera in two acts by Gaetano Donizetti from a libretto by Andrea Leone Tottola, based on the tragedy Imelda by Gabriele Sperduti. It received its first performance on 5 September 1830 at the Teatro San Carlo, Naples.",
+      "pageviews_yearly": 2269
+    },
+    {
+      "qid": "Q109241582",
+      "title": "In morte di M. F. Malibran de Beriot"
+    },
+    {
+      "qid": "Q54974627",
+      "title": "Io morrò! Suonata è l'ora"
+    },
+    {
+      "qid": "Q463726",
+      "title": "L'ajo nell'imbarazzo",
+      "imslp_id": "L'ajo_nell'imbarazzo_(Donizetti,_Gaetano)",
+      "pdf_filename": "PMLP537072-Donizetti_-_Ajo.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/L'ajo_nell'imbarazzo",
+      "wikipedia_extract": "L'ajo nell'imbarazzo is a melodramma giocoso, or opera, in two acts by Gaetano Donizetti. The Italian libretto was written by Jacopo Ferretti, after the 1807 play by Giovanni Giraud. At its premiere at the Teatro Valle, Rome, on 4 February 1824, it \"was greeted with wild enthusiasm [and] it was with this opera that [...] Donizetti had his first really lasting success\" During revisions planned for the 1826 production in Naples, Donizetti renamed the opera Don Gregorio, and it is under that name that most later productions were staged.",
+      "pageviews_yearly": 2840
+    },
+    {
+      "qid": "Q3818584",
+      "title": "L'ange de Nisida",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp57",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/L'Ange_de_Nisida",
+      "wikipedia_extract": "L'Ange de Nisida is an opera semiseria in four acts by Italian composer Gaetano Donizetti, from a French-language libretto by Alphonse Royer and Gustave Vaëz.",
+      "pageviews_yearly": 6332
+    },
+    {
+      "qid": "Q846737",
+      "title": "L'assedio di Calais",
+      "imslp_id": "L'assedio_di_Calais_(Donizetti,_Gaetano)",
+      "pdf_filename": "PMLP218358-Donizetti_-_L_assedio_di_Calais_III__fs_ms_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp52",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/L'assedio_di_Calais",
+      "wikipedia_extract": "L'assedio di Calais is an 1836 melodramma lirico, or opera, in three acts by Gaetano Donizetti, his 49th opera. Salvatore Cammarano wrote the Italian libretto, which has been described as \"...a remarkable libretto, the closest Cammarano ever got to real poetry, particularly in his description of the embattled city and the heartfelt pride of its citizens\". It was based on Luigi Marchionni's play L'assedio di Calais, which had been presented in Naples around 1825, and secondarily on Luigi Henry's ballet L'assedio di Calais, which had been performed in Naples in 1828 and revived in 1835.",
+      "pageviews_yearly": 3147
+    },
+    {
+      "qid": "Q332536",
+      "title": "L'elisir d'amore",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp86",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/L'elisir_d'amore",
+      "wikipedia_extract": "L'elisir d'amore is a melodramma giocoso in two acts by the Italian composer Gaetano Donizetti. Felice Romani wrote the Italian libretto, after Eugène Scribe's libretto for Daniel Auber's Le philtre (1831). The opera premiered on 12 May 1832 at the Teatro della Canobbiana in Milan and has remained continually in the international opera repertory.",
+      "pageviews_yearly": 66093
+    },
+    {
+      "qid": "Q471164",
+      "title": "L'esule di Roma",
+      "imslp_id": "L'esule_di_Roma_(Donizetti,_Gaetano)",
+      "pdf_filename": "PMLP410476-Donizetti_-_L_esule_di_Roma__fs_aut_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/L'esule_di_Roma",
+      "wikipedia_extract": "L'esule di Roma, ossia Il proscritto is a melodramma eroico, or heroic opera, in two acts by Gaetano Donizetti. Domenico Gilardoni wrote the Italian libretto after Luigi Marchionni's Il proscritto romano, in its turn based on Louis-Charles Caigniez and Debotière's Androclès ou Le lion reconnaissant. It premiered on 1 January 1828 at the Teatro San Carlo, Naples.",
+      "pageviews_yearly": 2213
+    },
+    {
+      "qid": "Q729568",
+      "title": "La Fille du régiment",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Ah_mes_amis_quel_jour_de_fetePour_mon_ame_from_La_fille_du_regiment.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q467394",
+      "title": "La favorite",
+      "imslp_id": "La_favorite_(Donizetti,_Gaetano)",
+      "pdf_filename": "PMLP98841-3716.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp91",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_favorite",
+      "wikipedia_extract": "La favorite is a grand opera in four acts by Gaetano Donizetti to a French-language libretto by Alphonse Royer and Gustave Vaëz, based on the play Le comte de Comminges by Baculard d'Arnaud with additions by Eugène Scribe based on the story of Leonora de Guzman. The opera concerns the romantic struggles of the King of Castile, Alfonso XI, and his mistress, the \"favourite\" Leonora, against the backdrop of the political wiles of receding Moorish Spain and the life of the Catholic Church. It premiered on 2 December 1840 at the Académie Royale de Musique in Paris.",
+      "pageviews_yearly": 29064
+    },
+    {
+      "qid": "Q845656",
+      "title": "La lettera anonima",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_lettera_anonima",
+      "wikipedia_extract": "La lettera anonima is a farce in one act composed by Gaetano Donizetti in 1822 to a libretto by Giulio Genoino, a former monk and the official censor of the Kingdom of the Two Sicilies. Genoino based his libretto on his own farce which, in turn, had been based on Mélite, ou Les fausses lettres by Pierre Corneille in 1630.",
+      "pageviews_yearly": 1967
+    },
+    {
+      "qid": "Q464514",
+      "title": "La zingara",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp10",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_zingara",
+      "wikipedia_extract": "La zingara is an opera semiseria in two acts by Gaetano Donizetti, set to a libretto by Andrea Leone Tottola after La petite bohémienne by Louis-Charles Caigniez, which was itself derived from a work of August von Kotzebue.",
+      "pageviews_yearly": 3948
+    },
+    {
+      "qid": "Q681820",
+      "title": "Le convenienze ed inconvenienze teatrali",
+      "imslp_id": "Le_convenienze_ed_inconveniente_teatrali_(Donizetti,_Gaetano)",
+      "pdf_filename": "PMLP537060-Arie_der_Corilla.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Le_convenienze_ed_inconvenienze_teatrali",
+      "wikipedia_extract": "Le convenienze ed inconvenienze teatrali, also known as Viva la mamma and Viva la Diva, is a dramma giocoso, or opera, in two acts by Gaetano Donizetti. The Italian libretto was written by Domenico Gilardoni, adapted from Antonio Simeone Sografi's plays Le convenienze teatrali (1794) and Le inconvenienze teatrali (1800).",
+      "pageviews_yearly": 5682
+    },
+    {
+      "qid": "Q576230",
+      "title": "Le duc d'Albe",
+      "imslp_id": "Il_duca_d'Alba_(Donizetti,_Gaetano)",
+      "pdf_filename": "PMLP877316-Donizetti_duca_dAlba_Vocal_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Le_duc_d'Albe",
+      "wikipedia_extract": "Le duc d'Albe or Il duca d'Alba is an opera in three acts originally composed by Gaetano Donizetti in 1839 to a French language libretto by Eugène Scribe and Charles Duveyrier. Its title, which translates as The Duke of Alba, refers to its protagonist Fernando Álvarez de Toledo, 3rd Duke of Alba. The work was intended for performance at the Paris Opéra. However, William Ashbrook notes that \"Rosine Stoltz, the director's mistress, disliked her intended role of Hélène and Donizetti put the work aside when it was half completed\".",
+      "pageviews_yearly": 5193
+    },
+    {
+      "qid": "Q753323",
+      "title": "Le nozze in villa",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Le_nozze_in_villa",
+      "wikipedia_extract": "Le nozze in villa is an opera buffa in two acts by Gaetano Donizetti, dating to early in his career. Completed in 1819, it was premiered at the Teatro Vecchio in Mantua sometime during the carnival season of 1820-1821; the exact date is uncertain. The libretto by Bartolomeo Merelli is based on the play Die deutschen Kleinstädter by August von Kotzebue.",
+      "pageviews_yearly": 2749
+    },
+    {
+      "qid": "Q17020379",
+      "title": "Les martyrs",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp60",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Les_martyrs",
+      "wikipedia_extract": "Les martyrs is a four-act grand opera by Gaetano Donizetti set to a French libretto by Eugène Scribe. The libretto was based on one written by Salvadore Cammarano for an original Italian version known as Poliuto, which was not performed until after the composer's death. Pierre Corneille's play Polyeucte written in 1641–42, the story of which reflected the life of the early Christian martyr Saint Polyeuctus, is the original source for both versions.",
+      "pageviews_yearly": 4573
+    },
+    {
+      "qid": "Q669382",
+      "title": "Linda di Chamounix",
+      "imslp_id": "Linda_di_Chamounix_(Donizetti,_Gaetano)",
+      "pdf_filename": "PMLP146607-Donizetti_-_Linda_di_Chamounix__2H_Jansen_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp92",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Linda_di_Chamounix",
+      "wikipedia_extract": "Linda di Chamounix is an operatic melodramma semiserio in three acts by Gaetano Donizetti. The Italian libretto was written by Gaetano Rossi. It premiered in Vienna, at the Kärntnertortheater, on 19 May 1842.",
+      "pageviews_yearly": 6919
+    },
+    {
+      "qid": "Q244209",
+      "title": "Lucia di Lammermoor",
+      "imslp_id": "Lucia_di_Lammermoor_(Donizetti,_Gaetano)",
+      "pdf_filename": "PMLP1387279-SoffrLam.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp88",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lucia_di_Lammermoor",
+      "wikipedia_extract": "Lucia di Lammermoor is a dramma tragico in three acts by Italian composer Gaetano Donizetti. Salvadore Cammarano wrote the Italian-language libretto loosely based upon Walter Scott's 1819 historical novel The Bride of Lammermoor.",
+      "pageviews_yearly": 99813
+    },
+    {
+      "qid": "Q3838492",
+      "title": "Lucia di Lammermoor",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp88"
+    },
+    {
+      "qid": "Q16672885",
+      "title": "Lucia di Lammermoor",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp88"
+    },
+    {
+      "qid": "Q3265312",
+      "title": "Lucie de Lammermoor",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp88",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lucia_di_Lammermoor",
+      "wikipedia_extract": "Lucia di Lammermoor is a dramma tragico in three acts by Italian composer Gaetano Donizetti. Salvadore Cammarano wrote the Italian-language libretto loosely based upon Walter Scott's 1819 historical novel The Bride of Lammermoor.",
+      "pageviews_yearly": 631
+    },
+    {
+      "qid": "Q685501",
+      "title": "Lucrezia Borgia",
+      "imslp_id": "Lucrezia_Borgia_(Donizetti,_Gaetano)",
+      "pdf_filename": "PMLP51147-Donizetti_-_Lucrezia_Borgia_II__fs_ms__alt.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp87",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lucrezia_Borgia_(opera)",
+      "wikipedia_extract": "Lucrezia Borgia is a melodramatic opera in a prologue and two acts by Gaetano Donizetti. Felice Romani wrote the Italian libretto after the play Lucrezia Borgia by Victor Hugo, in its turn after the legend of Lucrezia Borgia. Lucrezia Borgia was first performed on 26 December 1833 at La Scala, Milan.",
+      "pageviews_yearly": 19718
+    },
+    {
+      "qid": "Q136770158",
+      "title": "L’ira di Achille"
+    },
+    {
+      "qid": "Q756150",
+      "title": "Maria Padilla",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp63",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maria_Padilla",
+      "wikipedia_extract": "Maria Padilla is a melodramma, or opera, in three acts by Gaetano Donizetti. Gaetano Rossi and the composer wrote the Italian libretto after François Ancelot's play. It premiered on 26 December 1841 at La Scala, Milan. The plot is loosely based on the historical figure María de Padilla, the mistress of Pedro the Cruel, King of Castile.",
+      "pageviews_yearly": 4366
+    },
+    {
+      "qid": "Q377685",
+      "title": "Maria Stuarda",
+      "imslp_id": "Maria_Stuarda_(Donizetti,_Gaetano)",
+      "pdf_filename": "PMLP260272-Donizetti_Maria_Stuarda.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp43",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maria_Stuarda",
+      "wikipedia_extract": "Maria Stuarda is a tragic opera, in two acts, by Gaetano Donizetti, to a libretto by Giuseppe Bardari, based on Andrea Maffei's translation of Friedrich Schiller's 1800 play Maria Stuart.",
+      "pageviews_yearly": 22501
+    },
+    {
+      "qid": "Q729921",
+      "title": "Maria de Rudenz",
+      "imslp_id": "Maria_de_Rudenz_(Donizetti,_Gaetano)",
+      "pdf_filename": "PMLP254941-Donizetti_-_Maria_de_Rudenz__vs_ed.Lucca_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maria_de_Rudenz",
+      "wikipedia_extract": "Maria de Rudenz is a dramma tragico, or tragic opera, in three parts by Gaetano Donizetti. The Italian libretto was written by Salvadore Cammarano, based on \"a piece of Gothic horror\", La nonne sanglante by Auguste Anicet-Bourgeois and Julien de Mallian, and The Monk by Matthew Gregory Lewis. It premiered at La Fenice in Venice, on 30 January 1838.",
+      "pageviews_yearly": 2569
+    },
+    {
+      "qid": "Q732789",
+      "title": "Maria di Rohan",
+      "imslp_id": "Maria_di_Rohan_(Donizetti,_Gaetano)",
+      "pdf_filename": "PMLP162332-Donizetti_-_Maria_di_Rohan__vs_Ricordi_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp94",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maria_di_Rohan",
+      "wikipedia_extract": "Maria di Rohan is a melodramma tragico, or tragic opera, in three acts by Gaetano Donizetti. The Italian libretto was written by Salvadore Cammarano, after Lockroy and Edmond Badon's Un duel sous le cardinal de Richelieu, which had played in Paris in 1832. The story is based on events of the life of Marie de Rohan.",
+      "pageviews_yearly": 4604
+    },
+    {
+      "qid": "Q914165",
+      "title": "Marino Faliero",
+      "imslp_id": "Marino_Faliero_(Donizetti,_Gaetano)",
+      "pdf_filename": "PMLP260317-mas358114.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp48",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Marino_Faliero_(opera)",
+      "wikipedia_extract": "Marino Faliero is a tragedia lirica, or tragic opera, in three acts by Gaetano Donizetti. Giovanni Emanuele Bidera wrote the Italian libretto, with revisions by Agostino Ruffini, after Casimir Delavigne's play. It is inspired by Lord Byron's drama Marino Faliero (1820) and based on the life of Marino Faliero (c.1285-1355), the Venetian Doge.",
+      "pageviews_yearly": 3526
+    },
+    {
+      "qid": "Q473359",
+      "title": "Martha"
+    },
+    {
+      "qid": "Q55441228",
+      "title": "Mona Lisa"
+    },
+    {
+      "qid": "Q78527073",
+      "title": "O luce di quest'anima = Fy heulwen loyw ydwyt ti : Linda di Chamounix"
+    },
+    {
+      "qid": "Q54974725",
+      "title": "Oh you are the radiance of my soul"
+    },
+    {
+      "qid": "Q1040611",
+      "title": "Olivo e Pasquale",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Olivo_e_Pasquale",
+      "wikipedia_extract": "Olivo e Pasquale is a melodramma giocoso, a romantic comedy opera, in two acts by Gaetano Donizetti. Jacopo Ferretti wrote the Italian libretto after Antonio Simeone Sografi's play.",
+      "pageviews_yearly": 1664
+    },
+    {
+      "qid": "Q690606",
+      "title": "Otto mesi in due ore",
+      "imslp_id": "Otto_mesi_in_due_ore_(Donizetti,_Gaetano)",
+      "pdf_filename": "PMLP230447-Elizabeth.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Otto_mesi_in_due_ore",
+      "wikipedia_extract": "Otto mesi in due ore ossia Gli esiliati in Siberia is an opera in three acts by Gaetano Donizetti to a libretto by Domenico Gilardoni.",
+      "pageviews_yearly": 2251
+    },
+    {
+      "qid": "Q652926",
+      "title": "Parisina",
+      "imslp_id": "Parisina_(Donizetti,_Gaetano)",
+      "pdf_filename": "PMLP260403-mas326275.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp40",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Parisina_(Donizetti)",
+      "wikipedia_extract": "Parisina is an opera, in three acts by Gaetano Donizetti. Felice Romani wrote the Italian libretto after Byron's 1816 poem Parisina.",
+      "pageviews_yearly": 4034
+    },
+    {
+      "qid": "Q109242164",
+      "title": "Pia de' Tolomei",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp53"
+    },
+    {
+      "qid": "Q974534",
+      "title": "Pia de' Tolomei",
+      "imslp_id": "Pia_de'_Tolomei_(Donizetti,_Gaetano)",
+      "pdf_filename": "PMLP260414-Donizetti_-_Pia_de_Tolomei_II__fs_ms_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp53",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pia_de'_Tolomei_(opera)",
+      "wikipedia_extract": "Pia de' Tolomei is a tragedia lirica in two acts by Gaetano Donizetti. Salvadore Cammarano wrote the Italian libretto after Bartolomeo Sestini's verse novella Pia de' Tolomei, which was based on Canto V, vv. 130–136 from Dante's narrative poem The Divine Comedy part 2: Purgatorio. It premiered on 18 February 1837 at the Teatro Apollo in Venice.",
+      "pageviews_yearly": 3204
+    },
+    {
+      "qid": "Q240295",
+      "title": "Poliuto",
+      "imslp_id": "Poliuto_(Donizetti,_Gaetano)",
+      "pdf_filename": "PMLP260457-Donizetti_-_Les_martyrs__2H_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp56",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Poliuto",
+      "wikipedia_extract": "Poliuto is a three-act tragedia lirica by Gaetano Donizetti from the Italian libretto by Salvadore Cammarano, which was based on Pierre Corneille's play Polyeucte written in 1641–42. It reflected the life of the early Christian martyr Saint Polyeuctus.",
+      "pageviews_yearly": 6914
+    },
+    {
+      "qid": "Q11274662",
+      "title": "Quanto è bella",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp86"
+    },
+    {
+      "qid": "Q78648266",
+      "title": "Quel guardo il cavaliere = Gwanodd ei threm y marchog : Don Pasquale"
+    },
+    {
+      "qid": "Q838597",
+      "title": "Rita",
+      "imslp_id": "Rita_(Donizetti,_Gaetano)",
+      "pdf_filename": "PMLP260461-Donizetti_-_Rita__score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp62",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rita_(opera)",
+      "wikipedia_extract": "Deux Hommes et une femme, also known as Rita, is an opéra comique in one act, composed by Gaetano Donizetti to a French libretto by Gustave Vaëz. The opera, a domestic comedy consisting of eight musical numbers connected by spoken dialogue, was completed in 1841. Never performed in Donizetti's lifetime, it premiered posthumously at the Opéra-Comique in Paris on 7 May 1860.",
+      "pageviews_yearly": 6901
+    },
+    {
+      "qid": "Q672708",
+      "title": "Roberto Devereux",
+      "imslp_id": "Roberto_Devereux_(Donizetti,_Gaetano)",
+      "pdf_filename": "PMLP191035-Donizetti-Gallay_Cor.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp89",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Roberto_Devereux",
+      "wikipedia_extract": "Roberto Devereux is an 1837 tragedia lirica in three acts by Gaetano Donizetti. The opera is loosely based on the life of Robert Devereux, 2nd Earl of Essex, an influential member of the court of Queen Elizabeth I of England.",
+      "pageviews_yearly": 13099
+    },
+    {
+      "qid": "Q769645",
+      "title": "Rosmonda d'Inghilterra",
+      "imslp_id": "Rosmonda_d'Inghilterra_(Donizetti,_Gaetano)",
+      "pdf_filename": "PMLP261099-mas358127.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp42",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rosmonda_d'Inghilterra",
+      "wikipedia_extract": "Rosmonda d'Inghilterra is a melodramma or opera in two acts by Gaetano Donizetti. The Italian libretto was written by Felice Romani originally for Coccia's Rosmunda (1829). It is based on the legend of Rosamund Clifford.",
+      "pageviews_yearly": 3150
+    },
+    {
+      "qid": "Q109242628",
+      "title": "Rosmunda d'Inghilterra"
+    },
+    {
+      "qid": "Q847087",
+      "title": "Sancia di Castiglia",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp38",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sancia_di_Castiglia",
+      "wikipedia_extract": "Sancia di Castiglia is an Italian opera seria in two acts by Gaetano Donizetti to a libretto by Pietro Salatino. It was first performed at the Teatro San Carlo in Naples on 4 November 1832, conducted by Nicola Festa.",
+      "pageviews_yearly": 1636
+    },
+    {
+      "qid": "Q3209623",
+      "title": "Sono stato io",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sono_stato_io",
+      "wikipedia_extract": "Sono stato io is a 1973 Italian comedy-drama film co-written and directed by Alberto Lattuada. For his role Giancarlo Giannini was awarded as best actor at the San Sebastián International Film Festival.",
+      "pageviews_yearly": 1742
+    },
+    {
+      "qid": "Q78648309",
+      "title": "Spirto gentil = Ysbryd ein serch : La Favorita"
+    },
+    {
+      "qid": "Q54974594",
+      "title": "That glance, it pierced the knight's heart...I also know the magic virtue"
+    },
+    {
+      "qid": "Q54974744",
+      "title": "The night, deep and dark, reigned in the silence",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp88"
+    },
+    {
+      "qid": "Q3818953",
+      "title": "This Wine of Love"
+    },
+    {
+      "qid": "Q520950",
+      "title": "Torquato Tasso",
+      "imslp_id": "Torquato_Tasso_(Donizetti,_Gaetano)",
+      "pdf_filename": "PMLP261117-mas358156.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp41",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Torquato_Tasso_(opera)",
+      "wikipedia_extract": "Torquato Tasso is a melodramma semiserio, or \"semi-serious\" opera, in three acts by Gaetano Donizetti and based on the life of the great poet Torquato Tasso. The Italian libretto was written by Jacopo Ferretti, who used a number of sources for his text, including works by Giovanni Rosini, Goethe, Goldoni and Lord Byron, as well as Tasso's actual poetry. It premiered on 9 September 1833 at the Teatro Valle, Rome.",
+      "pageviews_yearly": 2687
+    },
+    {
+      "qid": "Q78648383",
+      "title": "Tranquillo ei posa!"
+    },
+    {
+      "qid": "Q2278129",
+      "title": "Tudor Queens Trilogy",
+      "movements": [
+        {
+          "qid": "Q559848"
+        },
+        {
+          "qid": "Q377685"
+        },
+        {
+          "qid": "Q672708"
+        }
+      ]
+    },
+    {
+      "qid": "Q755439",
+      "title": "Ugo, conte di Parigi",
+      "imslp_id": "Ugo,_Conte_di_Parigi_(Donizetti,_Gaetano)",
+      "pdf_filename": "PMLP261159-Donizetti_-_Ugo_conte_di_Parigi_-_Sinfonia__2H_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/gaetano-donizetti-1797-pp37",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ugo%2C_conte_di_Parigi",
+      "wikipedia_extract": "Ugo, conte di Parigi is a tragedia lirica, or tragic opera, in two acts by Gaetano Donizetti. Felice Romani wrote the Italian libretto after Hippolyte-Louis-Florent Bis's Blanche d'Aquitaine. It premiered on 13 March 1832 at La Scala, Milan.",
+      "pageviews_yearly": 2071,
+      "movements": [
+        {
+          "qid": "Q54974888"
+        }
+      ]
+    },
+    {
+      "qid": "Q845828",
+      "title": "Una follia",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Una_follia",
+      "wikipedia_extract": "Una follia is a farsa in one act by composer Gaetano Donizetti. The work premiered on 15 December 1818 at the Teatro San Luca in Venice. The opera uses the same Italian-language libretto by Bartolomeo Merelli after August von Kotzebue's Der Graf von Burgund that Donizetti used for his Enrico di Borgogna a month earlier, but with different music. It was given one performance and \"never performed again, and its score has never been found.\"",
+      "pageviews_yearly": 2375
+    },
+    {
+      "qid": "Q78527329",
+      "title": "Una furtima [sic] lagrima = Y deigryn"
+    },
+    {
+      "qid": "Q2060389",
+      "title": "Una furtiva lagrima",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Una_Furtiva_Lagrima_-_Gaetano_Donizetti.mid",
+        "midi/Una_Furtiva_Lagrima.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q911022",
+      "title": "Zoraida di Granata",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zoraida_di_Granata",
+      "wikipedia_extract": "Zoraida di Granata is a two-act melodramma eroico by Gaetano Donizetti. The Italian libretto, partly prepared by Bartolomeo Merelli, drew on Jean-Pierre Claris de Florian's 1791 play Gonzalve de Cordoue ou Grenade Reconquise and on Luigi Romanelli's libretto for Giuseppe Nicolini's Abenamet e Zoraide.",
+      "pageviews_yearly": 2921
+    }
+  ]
+}

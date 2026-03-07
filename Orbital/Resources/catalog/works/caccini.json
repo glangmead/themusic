@@ -1,0 +1,132 @@
+{
+  "composer_slug": "caccini",
+  "composer_qid": "Q215308",
+  "work_count": 22,
+  "midi_file_count": 3,
+  "works": [
+    {
+      "qid": "Q116266484",
+      "title": "Amarilli mia bella",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Amarilli_mia_Bella_-_Giulio_Caccini.mid",
+        "midi/Caccini_Amarilli.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q116266482",
+      "title": "Amor l'ali m'impenna"
+    },
+    {
+      "qid": "Q116266472",
+      "title": "Ardi cor mio",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giulio-caccini-1551-pp20"
+    },
+    {
+      "qid": "Q116266479",
+      "title": "Ch'io non t'ami cor mio"
+    },
+    {
+      "qid": "Q116266781",
+      "title": "Dalla porta d'oriente",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giulio-caccini-1551-pp25"
+    },
+    {
+      "qid": "Q116266483",
+      "title": "Dolcissimo sospiro",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Dolcissimo_sospiro_-_Giulio_Caccini.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q116268181",
+      "title": "Ecco 'l mio ben ritorna"
+    },
+    {
+      "qid": "Q1239187",
+      "title": "Euridice",
+      "imslp_id": "Euridice_(Caccini,_Giulio)",
+      "pdf_filename": "PMLP64181-Caccini-GB_Euridice.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Euridice_(Caccini)",
+      "wikipedia_extract": "\nEuridice is an opera in a prologue and one act by the Italian composer Giulio Caccini. The libretto, by Ottavio Rinuccini, had already been set by Caccini's rival Jacopo Peri in 1600. Caccini's version of Euridice was first performed at the Pitti Palace, Florence, on 5 December 1602. Caccini hurriedly prepared the score for the press and published it six weeks before Peri's version appeared.",
+      "pageviews_yearly": 4078
+    },
+    {
+      "qid": "Q116266475",
+      "title": "Fere selvagge che per monti errate"
+    },
+    {
+      "qid": "Q116266480",
+      "title": "Fortunato augellino"
+    },
+    {
+      "qid": "Q5996777",
+      "title": "Il rapimento di Cefalo",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giulio-caccini-1551-pp4",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Il_rapimento_di_Cefalo",
+      "wikipedia_extract": "\nIl rapimento di Cefalo was one of the first Italian operas. Most of the music was written by Giulio Caccini but Stefano Venturi del Nibbio, Luca Bati and Piero Strozzi also contributed. The libretto, by Gabriello Chiabrera, is in a prologue, five scenes and an epilogue and is based on the Classical myth of Cephalus and Aurora.",
+      "pageviews_yearly": 1909
+    },
+    {
+      "qid": "Q3828909",
+      "title": "Le nuove musiche",
+      "imslp_id": "Le_nuove_musiche_(Caccini,_Giulio)",
+      "pdf_filename": "PMLP116645-Caccini_Giulio-Le_nuove_musiche_Marescotti_scan_cleaned.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giulio-caccini-1551-pp13",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Le_nuove_musiche",
+      "wikipedia_extract": "Le nuove musiche is a collection of monodies and songs for solo voice and basso continuo by the composer Giulio Caccini, published in Florence in July 1602. It is one of the earliest and most significant examples of music written in the early baroque style of the seconda pratica. It contains 12 madrigals and 10 arias.",
+      "pageviews_yearly": 5664
+    },
+    {
+      "qid": "Q116268182",
+      "title": "Mentre che fra doglie e pene",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giulio-caccini-1551-pp44"
+    },
+    {
+      "qid": "Q116266782",
+      "title": "Movetevi a pietà del mio tormento",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giulio-caccini-1551-pp45"
+    },
+    {
+      "qid": "Q116266471",
+      "title": "Non ha 'l ciel cotanti lumi",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giulio-caccini-1551-pp47"
+    },
+    {
+      "qid": "Q116266778",
+      "title": "O che felice giorno"
+    },
+    {
+      "qid": "Q116266470",
+      "title": "O piante o selve ombrose"
+    },
+    {
+      "qid": "Q116266474",
+      "title": "Occhi immortali"
+    },
+    {
+      "qid": "Q116266481",
+      "title": "Serenissima donna il cui gran nome"
+    },
+    {
+      "qid": "Q116266777",
+      "title": "Udite udite amanti",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giulio-caccini-1551-pp79"
+    },
+    {
+      "qid": "Q5963840",
+      "title": "intermedi for La pellegrina"
+    },
+    {
+      "qid": "Q116266779",
+      "title": "lo che dal ciel cader farei la luna"
+    }
+  ]
+}

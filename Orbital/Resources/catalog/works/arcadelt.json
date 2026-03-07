@@ -1,0 +1,77 @@
+{
+  "composer_slug": "arcadelt",
+  "composer_qid": "Q316402",
+  "work_count": 13,
+  "midi_file_count": 9,
+  "works": [
+    {
+      "qid": "Q116266676",
+      "title": "Ancidetemi pur grevi martiri"
+    },
+    {
+      "qid": "Q124315826",
+      "title": "Ave Maria",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Ave_Maria_Arcadelt_SATB.mid",
+        "midi/Ave_Maria_-_Arcadelt_SAA_3_gAosy_podziaA_do_nauki.mid",
+        "midi/Ave_Maria.mid",
+        "midi/Ave_Maria_Jacob_Arcadelt_1557.mid",
+        "midi/Ave_Maria_Baixo.mid",
+        "midi/Ave_Maria_Baixo_1.mid",
+        "midi/Ave_Maria_JArcadelt.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q116266675",
+      "title": "Deh dimm'Amor se l'alma di costei"
+    },
+    {
+      "qid": "Q116266674",
+      "title": "Il bianco e dolce cigno",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Il_bianco_e_dolce_cigno_2.mid",
+        "midi/Il_bianco_e_dolce_cigno_-_Jacques_Arcadelt.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q116266671",
+      "title": "Il ciel che rado virtù tanta mostra"
+    },
+    {
+      "qid": "Q116266660",
+      "title": "Io son talvolta, donna, per morire"
+    },
+    {
+      "qid": "Q116266669",
+      "title": "Io vorrei pur fuggir crudel amore"
+    },
+    {
+      "qid": "Q116266667",
+      "title": "Non ch’io non voglio mai altro pensiero"
+    },
+    {
+      "qid": "Q116266673",
+      "title": "O felic'occhi miei"
+    },
+    {
+      "qid": "Q116266672",
+      "title": "Occhi miei lassi, mentre ch'io vi giro"
+    },
+    {
+      "qid": "Q116266677",
+      "title": "Quand'io pens'al martire"
+    },
+    {
+      "qid": "Q116266668",
+      "title": "Ver’inferno è ’l mio petto"
+    },
+    {
+      "qid": "Q116266670",
+      "title": "Voi ve n'andate al cielo"
+    }
+  ]
+}

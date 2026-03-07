@@ -1,0 +1,543 @@
+{
+  "composer_slug": "grieg",
+  "composer_qid": "Q80621",
+  "work_count": 76,
+  "midi_file_count": 23,
+  "works": [
+    {
+      "qid": "Q3490117",
+      "title": "Piano Sonata",
+      "imslp_id": "Piano_Sonata,_Op.7_(Grieg,_Edvard)",
+      "pdf_filename": "Grieg_-_Piano_Sonata_Op.7_peters.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/edvard-grieg-1843-pp30",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_(Grieg)",
+      "wikipedia_extract": "Edvard Grieg's Piano Sonata in E minor, Op. 7 was written in 1865 when he was 22 years old. The sonata was published a year later and revised in 1887. The work was Grieg's only piano sonata and it was dedicated to the Danish composer Niels Gade. The sonata has four movements with the following tempo markings:Allegro moderato\nAndante molto\nAlla Menuetto, ma poco più lento\nFinale: Molto allegro",
+      "pageviews_yearly": 6334,
+      "date": "1865-00-00"
+    },
+    {
+      "qid": "Q208094",
+      "title": "Peer Gynt",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/edvard-grieg-1843-pp10",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Peer_Gynt",
+      "wikipedia_extract": "Peer Gynt is a five-act play in verse written in 1867 by the Norwegian dramatist Henrik Ibsen. It is one of Ibsen's best known and most widely performed plays.",
+      "pageviews_yearly": 230992,
+      "date": "1867-00-00"
+    },
+    {
+      "qid": "Q14912776",
+      "title": "Peer Gynt",
+      "imslp_id": "Peer_Gynt,_Op.23_(Grieg,_Edvard)",
+      "pdf_filename": "PMLP54588-bass_op.23.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/edvard-grieg-1843-pp10",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Peer_Gynt_(Grieg)",
+      "wikipedia_extract": "Peer Gynt, Op. 23, is the incidental music to Henrik Ibsen's 1867 play Peer Gynt, written by the Norwegian composer Edvard Grieg in 1875. It premiered along with the play on 24 February 1876 in Christiania. Grieg later created two suites from his Peer Gynt music. Some of the music from these suites has received coverage in popular culture.",
+      "pageviews_yearly": 103593,
+      "date": "1875-00-00"
+    },
+    {
+      "qid": "Q3920286",
+      "title": "Peer Gynt Suites",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/edvard-grieg-1843-pp10",
+      "date": "1875-00-00"
+    },
+    {
+      "qid": "Q286945",
+      "title": "Solveig's Song",
+      "date": "1875-00-00"
+    },
+    {
+      "qid": "Q5682503",
+      "title": "Haugtussa",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/edvard-grieg-1843-pp125",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Haugtussa_(Grieg)",
+      "wikipedia_extract": "Haugtussa, Op. 67, or The Mountain Maid, is a song cycle for soprano and piano composed by Edvard Grieg in 1895 and published in 1898. Even though Grieg wrote a total of 181 songs, this is the only song cycle in his entire output. The text was written by the Norwegian writer Arne Garborg, an excerpt from his book of poetry Haugtussa. It tells the story of Haugtussa, a young herding girl, and her first love affair with a boy, her first heartache. Both the lyrics, which brim over with imagery of gurgling brooks and tasty blueberries, and the music that mimics this imagery, intertwine the main character’s personal story and the mystic spring-like landscape that surrounds her, which may even motivate it.",
+      "pageviews_yearly": 4203,
+      "date": "1895-00-00"
+    },
+    {
+      "qid": "Q1661622",
+      "title": "Wedding Day at Troldhaugen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wedding_Day_at_Troldhaugen",
+      "wikipedia_extract": "\"Wedding Day at Troldhaugen\" is a composition for piano by Edvard Grieg. It is the sixth piano piece in the eighth book of his Lyric Pieces, bearing the opus number 65.",
+      "pageviews_yearly": 13033,
+      "date": "1896-00-00"
+    },
+    {
+      "qid": "Q3032521",
+      "title": "19 Norwegian Folk Songs"
+    },
+    {
+      "qid": "Q3560104",
+      "title": "25 Norwegian Folk Songs and Dances",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/edvard-grieg-1843-pp38"
+    },
+    {
+      "qid": "Q13636243",
+      "title": "4 Psalms after Old Norwegian Church Melodies"
+    },
+    {
+      "qid": "Q55080877",
+      "title": "4 Romances",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/edvard-grieg-1843-pp107"
+    },
+    {
+      "qid": "Q14326812",
+      "title": "6 Norwegian Mountain Melodies",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/edvard-grieg-1843-pp41"
+    },
+    {
+      "qid": "Q54957827",
+      "title": "6 Poems",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/edvard-grieg-1843-pp119"
+    },
+    {
+      "qid": "Q13428942",
+      "title": "Album for Male Voices"
+    },
+    {
+      "qid": "Q13636236",
+      "title": "Album leaves",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/edvard-grieg-1843-pp42"
+    },
+    {
+      "qid": "Q16166590",
+      "title": "Anitra's Dance",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Grieg_Anitras_Dance_Piano_solo.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q13432390",
+      "title": "Ave maris stella",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Ave_Maris_Stella_SATB.mid",
+        "midi/Ave_Maris_Stella_SATB_Edvard_Grieg.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q4851353",
+      "title": "Ballade in the Form of Variations",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ballade_in_the_Form_of_Variations_on_a_Norwegian_Folk_Song",
+      "wikipedia_extract": "Ballade in the Form of Variations on a Norwegian Folk Song in G minor, Op. 24, is a large-scale work for piano by Edvard Grieg. It is in the form of theme and variations, the theme being the Norwegian folk song Den nordlanske bondestand. A performance usually lasts around 20 minutes.Theme. The theme is first introduced in 34 time. It is marked andante espressivo. The theme is haunting and sad, and has much lyrical beauty.\nVariation I. The first variation marked poco meno andante, ma molto tranquillo, introduces the harmonic chord pattern in triplets.\nVariation II. The second variation branches off the first and is marked allegro agitato. The time signature changes to 98. This variation requires much virtuosity, having daring jumps in the left hand. The chord patterns are the same as the first variation.\nVariation III. The third variation in contrast to the preceding agitato, is a calm adagio marked molto espressivo. It is a slow movement that introduces a new melody very similar to the theme, but darker. The time changes back to 34.\nVariation IV. The fourth variation is a lively allegro capriccioso. It consists of brisk descending chromatic sixteenth notes, with chords in the left hand, still resembling the harmonic changes in the theme.\nVariation V. The fifth variation, marked più lento, is unlike the rest of the piece. It consists of huge, but slow, arpeggios followed by a variation of the theme. This variation produces an intense feeling of sorrow and loneliness.\nVariation VI. The sixth variation marked allegro scherzando, is a technically difficult variation based on jumping chords passing from hand to hand. Still the chord progressions are the same as the theme.\nVariation VII. The seventh variation is the same as the sixth, but more sustained, and instead of chords, arpeggios, but still in the same fashion of passing from hand to hand.\nVariation VIII. The eighth variation is marked lento, and is another form of the theme melody played in chords.\nVariation IX. The ninth variation is marked un poco andante, and is perhaps the most creative of the variations. It is similar to the eight, but more agitated, and does not have the same hypnotic flow.\nVariation X. The tenth variation starts the buildup to the climax with an un poco allegro e alla burla tempo. It is a light scherzando section. 34 changes to 128.\nVariation XI. The eleventh variation marked piu animato is a fast preparatory variation, still leading to the coda.\nVariation XII. The twelfth variation is marked meno allegro e maestoso, and is a huge grand variation of con tutta forza, with massive chords and repeats the melody heard in the third variation, only in a grand major voice. The key changes to g major, and the time from 128 to 68.\nVariation XIII. The thirteenth variation, marked allegro furioso, is the final buildup to the huge climax. It consists of virtuosic arpeggiated chords, and octaves flying all over the keyboard. The key and time signature revert to the original G minor and 34.\nVariation XIV. The final variation, fourteen, is a huge prestissimo. The theme is pounded in fast octave chords, and climbs up the keyboard. Ends with a low e flat octave, marked lunga with a fermata.\nCoda. The theme is finally closed, with a flashback of the first 8 measures, and closes with a G minor chord.",
+      "pageviews_yearly": 3315
+    },
+    {
+      "qid": "Q4243094",
+      "title": "Cello Sonata",
+      "imslp_id": "Cello_Sonata,_Op.36_(Grieg,_Edvard)",
+      "pdf_filename": "Grieg36p.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/edvard-grieg-1843-pp29",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cello_Sonata_(Grieg)",
+      "wikipedia_extract": "Edvard Grieg composed the Cello Sonata in A minor, Op. 36 for cello and piano, and his only work for this combination, in 1882–83, marking a return to composition following a period when he had been preoccupied with his conducting duties at the Bergen Symphony Orchestra as well as illness.",
+      "pageviews_yearly": 4457
+    },
+    {
+      "qid": "Q114839764",
+      "title": "Digte af Vilhelm Krag"
+    },
+    {
+      "qid": "Q117288411",
+      "title": "Fem dikt av John Paulsen"
+    },
+    {
+      "qid": "Q114755100",
+      "title": "Fire dikt fra Fiskerjenten"
+    },
+    {
+      "qid": "Q245063",
+      "title": "Fitna",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fitna_(film)",
+      "wikipedia_extract": "Fitna is a 2008 short film by Dutch politician Geert Wilders. Approximately 17 minutes in length, the film attempts to demonstrate that the Qur'an motivates its followers to hate all who violate Islamic teachings. The film shows selected excerpts from Surahs of the Qur'an, interspersed with media clips and newspaper cuttings showing or describing acts of violence by Muslims worldwide.",
+      "pageviews_yearly": 71298
+    },
+    {
+      "qid": "Q4845508",
+      "title": "Funeral March in Memory of Rikard Nordraak"
+    },
+    {
+      "qid": "Q54960017",
+      "title": "Hjertets Melodier",
+      "imslp_id": "Melodies_of_the_Heart,_Op.5_(Grieg,_Edvard)",
+      "pdf_filename": "Grieg-hjert-mel.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/edvard-grieg-1843-pp103",
+      "movements": [
+        {
+          "qid": "Q10539863"
+        },
+        {
+          "qid": "Q136721083"
+        }
+      ]
+    },
+    {
+      "qid": "Q777583",
+      "title": "Holberg Suite",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Grieg_Holberg_Suite_-_III_Gavotte_Arr_for_piano_4_hands.mid",
+        "midi/Grieg_Holberg_Suite_-_II_Sarabande_Arr_for_piano_4_hands.mid",
+        "midi/Grieg_Holberg_Suite_-_V_Rigaudon_Arr_for_piano_4_hands.mid",
+        "midi/Grieg_Holberg_Suite_-_I_Praeludium_Arr_for_piano_4_hands.mid",
+        "midi/Grieg_Holberg_Suite_-_IV_Air_Arr_for_piano_4_hands.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q13727404",
+      "title": "Holberg-kantate"
+    },
+    {
+      "qid": "Q57934214",
+      "title": "Holbergsuite",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/edvard-grieg-1843-pp45"
+    },
+    {
+      "qid": "Q5058680",
+      "title": "Humoresker"
+    },
+    {
+      "qid": "Q122960171",
+      "title": "Hvileløse hjerte"
+    },
+    {
+      "qid": "Q5193815",
+      "title": "Improvisations on Two Norwegian Folk Songs",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/edvard-grieg-1843-pp43"
+    },
+    {
+      "qid": "Q6009021",
+      "title": "In Autumn",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/edvard-grieg-1843-pp62",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/In_Autumn",
+      "wikipedia_extract": "In Autumn, Op. 11, is a concert overture written by Edvard Grieg in 1865.",
+      "pageviews_yearly": 2471
+    },
+    {
+      "qid": "Q956115",
+      "title": "In the Hall of the Mountain King",
+      "has_midi": true,
+      "midi_files": [
+        "midi/In_the_Hall_of_the_Mountain_King.mid",
+        "midi/In_the_Hall_of_the_Mountain_King_1.mid",
+        "midi/In_der_Halle_des_Bergkonigs.mid",
+        "midi/In_the_hall_of_the_mountain_king_2.mid",
+        "midi/In_the_Hall_of_the_Mountain_King_3.mid",
+        "midi/In_Hall_of_The_Mountain_King.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q10539863",
+      "title": "Jeg elsker Dig!",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/edvard-grieg-1843-pp144"
+    },
+    {
+      "qid": "Q47520050",
+      "title": "Landkjenning"
+    },
+    {
+      "qid": "Q4424116",
+      "title": "Listener"
+    },
+    {
+      "qid": "Q2304758",
+      "title": "Lyric Pieces",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Lyric_Piece_Book_IV_No_2_Album-Leaf.mid",
+        "midi/Arietta_from_Lyric_Pieces_Op_12_No_1_by_Edvard_Grieg.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q6709992",
+      "title": "Lyric Suite",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/edvard-grieg-1843-pp17",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lyric_Suite_(Grieg)",
+      "wikipedia_extract": "\nEdvard Grieg's Lyric Suite is an orchestration of four of the six piano pieces from Book V of his Lyric Pieces, Op. 54. Both Grieg and the Austro-Hungarian conductor Anton Seidl had a hand in the orchestration. It consists of three pieces revised by Grieg from Seidl's arrangements, and one piece arranged by Grieg alone.",
+      "pageviews_yearly": 6592
+    },
+    {
+      "qid": "Q127021",
+      "title": "M",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/edvard-grieg-1843-pp6",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/M_(1931_film)",
+      "wikipedia_extract": "M is a 1931 German mystery thriller film directed by Fritz Lang and starring Peter Lorre as Hans Beckert, a serial killer who targets children, in his third screen role. Both Lang's first sound film and an early example of a procedural drama, M centres on the efforts of both a city's police force and its criminal syndicates to apprehend a serial child-murderer.",
+      "pageviews_yearly": 311405
+    },
+    {
+      "qid": "Q66643930",
+      "title": "March of the Trolls"
+    },
+    {
+      "qid": "Q2412053",
+      "title": "Morning Mood",
+      "imslp_id": "Peer_Gynt_Suite_No.1,_Op.46_(Grieg,_Edvard)",
+      "pdf_filename": "Grieg_-_Op.46_-_Peer_Gynt_Suite_No.1__4H_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/edvard-grieg-1843-pp6",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Morning_Mood",
+      "wikipedia_extract": "\"Morning Mood\", commonly referred to simply as \"Morning\", is part of Edvard Grieg's Peer Gynt, Op. 23, written in 1875 as incidental music to Henrik Ibsen's play of the same name, and was also included as the first of four movements in Peer Gynt Suite No. 1, Op. 46.",
+      "pageviews_yearly": 73039
+    },
+    {
+      "qid": "Q1962852",
+      "title": "Nightshade"
+    },
+    {
+      "qid": "Q126734773",
+      "title": "Norwegian Dances",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/edvard-grieg-1843-pp65"
+    },
+    {
+      "qid": "Q2067101",
+      "title": "Peer Gynt",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/edvard-grieg-1843-pp10"
+    },
+    {
+      "qid": "Q47434670",
+      "title": "Peer Gynt",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Peer_Gynt_Suite_Ases_Death.mid",
+        "midi/Ases_Tod.mid",
+        "midi/Peer_Gynt_-_Solveigs_song.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q44261",
+      "title": "Piano Concerto",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Grieg_Piano_Concerto_in_A_Minor_-_2nd_Movement_Arr_for_2_pianos.mid",
+        "midi/Grieg_Piano_Concerto_in_A_Minor_3rd_Movement.mid",
+        "midi/Grieg_Piano_Concerto_in_A_Minor_-_1st_Movement_Arr_for_2_pianos.mid",
+        "midi/Piano_Concerto_in_A_minor_Opus_16_Grieg_2nd_Movement_-_Adagio.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q14136691",
+      "title": "Poetic Tone Pictures",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/edvard-grieg-1843-pp34"
+    },
+    {
+      "qid": "Q55004265",
+      "title": "Romances and Ballades",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/edvard-grieg-1843-pp105"
+    },
+    {
+      "qid": "Q114195264",
+      "title": "Romanser"
+    },
+    {
+      "qid": "Q114839754",
+      "title": "Romanser (ældre og nyere)"
+    },
+    {
+      "qid": "Q86454454",
+      "title": "Saint-Saëns: Violin Concerto No. 3 & Grieg: Piano Concerto"
+    },
+    {
+      "qid": "Q13636770",
+      "title": "Scenes of Country Life",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/edvard-grieg-1843-pp39"
+    },
+    {
+      "qid": "Q682002",
+      "title": "Scoop",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Scoop_(2006_film)",
+      "wikipedia_extract": "Scoop is a 2006 romantic crime comedy film written and directed by Woody Allen and starring Hugh Jackman, Scarlett Johansson, Ian McShane and Allen himself. It was released in the United States by Focus Features on July 28, 2006. The film follows an American journalist and a magician being guided by the spirit of a reporter to investigate a British aristocrat who might be a serial killer. Scoop received mixed reviews from critics regarding its humor, but was a box-office success, grossing $39 million against a $4 million budget.",
+      "pageviews_yearly": 137612
+    },
+    {
+      "qid": "Q115169668",
+      "title": "Sechs Lieder",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/edvard-grieg-1843-pp118"
+    },
+    {
+      "qid": "Q7460549",
+      "title": "Shadow Man",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shadow_Man_(1988_film)",
+      "wikipedia_extract": "Shadow Man is a 1988 film about a Polish-Jewish refugee during a fictional war in Amsterdam.",
+      "pageviews_yearly": 4659
+    },
+    {
+      "qid": "Q3483737",
+      "title": "Sigurd Jorsalfar",
+      "imslp_id": "Sigurd_Jorsalfar_(incidental_music),_Op.22_(Grieg,_Edvard)",
+      "pdf_filename": "PMLP59898-GriegOp22-2Pf.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/edvard-grieg-1843-pp13",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sigurd_Jorsalfar_(Grieg)",
+      "wikipedia_extract": "\nSigurd Jorsalfar is a work of incidental music composed by Edvard Grieg for a play by Bjørnstjerne Bjørnson celebrating King Sigurd I of Norway. Published as Op. 22, it was first performed in Christiania on 10 April 1872. An orchestral suite compiled by Grieg from the main work and published as Op. 56 was premiered in Oslo on 5 November 1892 and revised by the composer the same year.",
+      "pageviews_yearly": 4799
+    },
+    {
+      "qid": "Q14361294",
+      "title": "Slåtter",
+      "imslp_id": "Norwegian_Peasant_Dances,_Op.72_(Grieg,_Edvard)",
+      "pdf_filename": "PMLP02554-Grieg__Edvard-Samlede_Verker_Peters_Band_2_04_Op_72_scan.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/edvard-grieg-1843-pp58"
+    },
+    {
+      "qid": "Q56404570",
+      "title": "Slåtter op.72 & The Knut Dahle Slåtter",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/edvard-grieg-1843-pp58"
+    },
+    {
+      "qid": "Q72047",
+      "title": "Song of Norway",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Song_of_Norway",
+      "wikipedia_extract": "Song of Norway is an operetta written in 1944 by Robert Wright and George Forrest, adapted from the music of Edvard Grieg and the book by Milton Lazarus and Homer Curran. A very loose film adaptation with major changes to both the book and music was released in 1970.",
+      "pageviews_yearly": 7177,
+      "movements": [
+        {
+          "qid": "Q96041828"
+        },
+        {
+          "qid": "Q96051406"
+        }
+      ]
+    },
+    {
+      "qid": "Q5105226",
+      "title": "Stemninger",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/edvard-grieg-1843-pp59"
+    },
+    {
+      "qid": "Q96041828",
+      "title": "Strange Music"
+    },
+    {
+      "qid": "Q745514",
+      "title": "String Quartet No. 1",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/edvard-grieg-1843-pp20",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._1_(Grieg)",
+      "wikipedia_extract": "Edvard Grieg's String Quartet No. 1 in G minor, Op. 27, is the second of three string quartets written by the composer. The first, in D minor, was an early work, now lost, written in the early 1860s at the request of his teacher, Carl Reinecke. The third quartet, in F major, remained incomplete at the composer's death.",
+      "pageviews_yearly": 6131
+    },
+    {
+      "qid": "Q3015689",
+      "title": "Symphonic Dances",
+      "imslp_id": "Symphonic_Dances,_Op.64_(Grieg,_Edvard)",
+      "pdf_filename": "Grieg_Symphonic_Dances.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/edvard-grieg-1843-pp15",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphonic_Dances_(Grieg)",
+      "wikipedia_extract": "The four Symphonic Dances Op. 64 by the Norwegian composer Edvard Grieg were written c. 1896 and published in 1897.",
+      "pageviews_yearly": 4365
+    },
+    {
+      "qid": "Q11374065",
+      "title": "Symphony No. 1 in C minor"
+    },
+    {
+      "qid": "Q14438713",
+      "title": "Syv barnlige sange"
+    },
+    {
+      "qid": "Q4140798",
+      "title": "The Gnomes and the Mountain King"
+    },
+    {
+      "qid": "Q18121667",
+      "title": "The Stork"
+    },
+    {
+      "qid": "Q136721083",
+      "title": "To brune Øjne"
+    },
+    {
+      "qid": "Q28960943",
+      "title": "Two Elegiac Melodies",
+      "imslp_id": "2_Elegiac_Melodies,_Op.34_(Grieg,_Edvard)",
+      "pdf_filename": "PMLP02518-Grieg__Edvard-Samlede_Verker_Peters_Band_4_03_Op_34_scan.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/edvard-grieg-1843-pp64",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Two_Elegiac_Melodies",
+      "wikipedia_extract": "\nTwo Elegiac Melodies, Op. 34, is a composition in two movements for string orchestra by Edvard Grieg, completed in 1880 and first published in 1881.",
+      "pageviews_yearly": 5463
+    },
+    {
+      "qid": "Q54943444",
+      "title": "Vier Lieder für Altstimme und Pianoforte"
+    },
+    {
+      "qid": "Q4594648",
+      "title": "Vier Stücke für das Pianoforte"
+    },
+    {
+      "qid": "Q3490221",
+      "title": "Violin Sonata No. 1 in F Major, Op. 8",
+      "imslp_id": "Violin_Sonata_No.1,_Op.8_(Grieg,_Edvard)",
+      "pdf_filename": "Grieg_-_Violin_Sonata_No.1__score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q5978989",
+      "title": "Violin Sonata No. 2",
+      "imslp_id": "Violin_Sonata_No.2,_Op.13_(Grieg,_Edvard)",
+      "pdf_filename": "Grieg_-_Op.13_-_Violin_Sonata__Mvt._Transcribed_for_Piano.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/edvard-grieg-1843-pp25"
+    },
+    {
+      "qid": "Q6127146",
+      "title": "Violin Sonata No. 3",
+      "imslp_id": "Violin_Sonata_No.3,_Op.45_(Grieg,_Edvard)",
+      "pdf_filename": "PMLP14069-Grieg__Edvard-Samlede_Verker_Peters_Band_8_03_Op_45_scan.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/edvard-grieg-1843-pp26"
+    },
+    {
+      "qid": "Q54412929",
+      "title": "Violin Sonatas",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/edvard-grieg-1843-pp26",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Violin_Sonatas_(Grieg)",
+      "wikipedia_extract": "Norwegian composer Edvard Grieg wrote three violin sonatas. They are all examples of his musical nationalism, since they all contain references or similarities to Norwegian folk song. Grieg wrote the sonatas between 1865 and 1887.Violin Sonata No. 1 in F major, Op. 8 was written in Copenhagen in 1865.\nViolin Sonata No. 2 in G major, Op. 13 was written in Oslo in 1867.\nViolin Sonata No. 3 in C minor, Op. 45 was completed while Grieg was living in Troldhaugen in 1887.",
+      "pageviews_yearly": 8704,
+      "movements": [
+        {
+          "qid": "Q3490221"
+        },
+        {
+          "qid": "Q5978989"
+        },
+        {
+          "qid": "Q6127146"
+        }
+      ]
+    },
+    {
+      "qid": "Q2585379",
+      "title": "Wir Deutschen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wir_Deutschen",
+      "wikipedia_extract": "Wir Deutschen - Eine Reise zu den Schauplätzen der Vergangenheit is a 13-part documentary series first shown on German television in 1991 and 1992. The series presents a condensed history of the Germans from 300 BC to the abdication of the last Kaiser in 1918.",
+      "pageviews_yearly": 935
+    }
+  ]
+}

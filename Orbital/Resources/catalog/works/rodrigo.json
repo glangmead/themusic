@@ -1,0 +1,115 @@
+{
+  "composer_slug": "rodrigo",
+  "composer_qid": "Q151084",
+  "work_count": 19,
+  "midi_file_count": 0,
+  "works": [
+    {
+      "qid": "Q24934443",
+      "title": "Four Madrigals of Love",
+      "date": "1948-00-00"
+    },
+    {
+      "qid": "Q2991742",
+      "title": "Concierto Andaluz",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joaquin-rodrigo-1901-pp30",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Concierto_Andaluz",
+      "wikipedia_extract": "\nThe Concierto Andaluz is a concerto for four guitars and orchestra by Spanish composer Joaquín Rodrigo. First played by Los Romeros in San Antonio, Texas, USA on 18 November 1967.",
+      "pageviews_yearly": 3038,
+      "date": "1967-00-00"
+    },
+    {
+      "qid": "Q16507711",
+      "title": "Aranjuez, mon amour"
+    },
+    {
+      "qid": "Q47501433",
+      "title": "Caro amore"
+    },
+    {
+      "qid": "Q56459298",
+      "title": "Concerto di Aranjuez",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joaquin-rodrigo-1901-pp27"
+    },
+    {
+      "qid": "Q23067867",
+      "title": "Concierto como un divertimento para violonchelo y orquesta"
+    },
+    {
+      "qid": "Q939989",
+      "title": "Concierto de Aranjuez"
+    },
+    {
+      "qid": "Q25406213",
+      "title": "Concierto en modo galante para violonchelo y orquesta"
+    },
+    {
+      "qid": "Q2991755",
+      "title": "Concierto heroico",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joaquin-rodrigo-1901-pp22",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Concierto_heroico",
+      "wikipedia_extract": "\nThe Concierto heroico for piano and orchestra was composed by Joaquín Rodrigo for pianist Leopoldo Querol between 1935 and 1943.",
+      "pageviews_yearly": 1339
+    },
+    {
+      "qid": "Q20191275",
+      "title": "Concierto madrigal",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joaquin-rodrigo-1901-pp31"
+    },
+    {
+      "qid": "Q2991763",
+      "title": "Concierto pastoral",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joaquin-rodrigo-1901-pp34",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Concierto_pastoral",
+      "wikipedia_extract": "The Concierto pastoral is a flute concerto by Joaquín Rodrigo. Rodrigo wrote the work during 1977–1978 on commission from James Galway, who had first encountered the composer's work in 1974 when he asked permission to transcribe the Fantasia para un Gentilhombre for flute. Galway gave its premiere on October 17, 1978, in London, with Eduardo Mata conducting the Philharmonia Orchestra.",
+      "pageviews_yearly": 1841
+    },
+    {
+      "qid": "Q72845766",
+      "title": "El hereje"
+    },
+    {
+      "qid": "Q30250508",
+      "title": "El hijo fingido",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joaquin-rodrigo-1901-pp1"
+    },
+    {
+      "qid": "Q2276015",
+      "title": "Fantasía para un Gentilhombre",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joaquin-rodrigo-1901-pp28",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fantas%C3%ADa_para_un_gentilhombre",
+      "wikipedia_extract": "\n\nFantasía para un gentilhombre is a concerto for guitar and orchestra by the Spanish composer Joaquín Rodrigo. The concerto is Rodrigo's most popular work after the famous Concierto de Aranjuez.",
+      "pageviews_yearly": 8986
+    },
+    {
+      "qid": "Q20196095",
+      "title": "Follow Me"
+    },
+    {
+      "qid": "Q3822689",
+      "title": "I Was a Parish Priest",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/I_Was_a_Parish_Priest",
+      "wikipedia_extract": "I Was a Parish Priest or God's War is a 1953 Spanish drama film directed by Rafael Gil and starring Claude Laydu, Francisco Rabal and José Marco Davó. It was awarded the Gran Premio at the first ever San Sebastián International Film Festival. It was also shown at the Venice Film Festival where it was awarded the Bronze Lion.",
+      "pageviews_yearly": 2309
+    },
+    {
+      "qid": "Q7560826",
+      "title": "Sonata a la Española",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/joaquin-rodrigo-1901-pp58",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sonata_a_la_Espa%C3%B1ola",
+      "wikipedia_extract": "Sonata a la Española is a sonata for solo guitar composed in 1969 by the Spanish composer Joaquín Rodrigo.",
+      "pageviews_yearly": 1240
+    },
+    {
+      "qid": "Q3210369",
+      "title": "The House of Exorcism"
+    },
+    {
+      "qid": "Q25208179",
+      "title": "The Moorish Queen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Moorish_Queen_(1937_film)",
+      "wikipedia_extract": "The Moorish Queen is a 1937 Spanish musical film directed by Eusebio Fernández Ardavín and starring María Arias, Raquel Rodrigo and Alejandrina Caro.",
+      "pageviews_yearly": 1012
+    }
+  ]
+}

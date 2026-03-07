@@ -1,0 +1,109 @@
+{
+  "composer_name": "Jean-Baptiste Lully",
+  "name_last_first": "Lully, Jean-Baptiste",
+  "slug": "lully",
+  "wiki_page": "https://en.wikipedia.org/wiki/Jean-Baptiste_Lully",
+  "apple_music_playlist": "https://music.apple.com/us/playlist/jean-baptiste-lully-essentials/pl.72d974a2cb20437f8063129f6b89c764",
+  "era": "Baroque",
+  "dates": "1632 – 1687",
+  "nationality": "FRA",
+  "notable": true,
+  "works": [
+    {
+      "title": "Acis et Galatée LWV 73",
+      "musicxml": "musicxml/Passacaille_-_choeur.mxl",
+      "midi": "midi/Passacaille_-_choeur.mid",
+      "time_signature": "3/4",
+      "instruments": [
+        "Soprano",
+        "Alto",
+        "Tenor",
+        "Bass",
+        "Piano"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 1,
+        "n_views": 59,
+        "duration_seconds": 252.99999999346417,
+        "n_notes": 1482,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "NA",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/32411879/scores/6283456",
+        "musescore_duration": "04:14"
+      },
+      "key": "F major",
+      "instruments_gm": [
+        "Choir Aahs",
+        "Acoustic Grand Piano"
+      ],
+      "tempo_bpm": 120,
+      "n_measures": 169,
+      "n_parts": 5,
+      "n_notes": 1482,
+      "notes_per_second": 5.9,
+      "apple_music_search_query": "Lully F major Acis et Galatée LWV 73",
+      "parent_work_title": "Passaccaile - choeur",
+      "wikidata_id": "Q106830238",
+      "wikidata_title": "Acis et Galatée",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Lully%20Acis%20et%20Galat%C3%A9e%20LWV%2073",
+      "display_title": "Acis et Galatée"
+    },
+    {
+      "title": "Lully - Premier Intermede (le Bourgeois Gentilhomme)",
+      "musicxml": "musicxml/Lully_-_Premier_Intermede_le_Bourgeois_Gentilhomme.mxl",
+      "midi": "midi/Lully_-_Premier_Intermede_le_Bourgeois_Gentilhomme.mid",
+      "time_signature": "2/2",
+      "instruments": [
+        "Violin",
+        "Viola",
+        "Violoncello"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.71,
+        "n_favorites": 6,
+        "n_views": 737,
+        "duration_seconds": 99.17148898389766,
+        "n_notes": 720,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "lully-moliere-dance-sarabande-gaillarde-bourree",
+        "musescore_url": "https://musescore.com/user/352976/scores/2335821",
+        "musescore_duration": "01:09"
+      },
+      "key": "F major",
+      "instruments_gm": [
+        "Bassoon"
+      ],
+      "tempo_bpm": 140,
+      "n_measures": 42,
+      "n_parts": 5,
+      "n_notes": 719,
+      "notes_per_second": 7.3,
+      "apple_music_search_query": "Lully F major Lully - Premier Intermede (le Bourgeois Gentilhomm",
+      "parent_work_title": "PREMIER INTERMEDE (le Bourgeois Gentilhomme)",
+      "year_composed": 1670,
+      "wikidata_id": "Q1054372",
+      "wikidata_title": "Le Bourgeois gentilhomme",
+      "musicbrainz_id": "c8b0642a-205a-4144-9fa5-71a608b28939",
+      "imslp_id": "Le_bourgeois_gentilhomme,_LWV_43_(Lully,_Jean-Baptiste)",
+      "wikidata_match_method": "title_substring",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Lully%20-%20Premier%20Intermede%20%28le%20Bourgeois%20Gentilhomme%29",
+      "display_title": "Le Bourgeois gentilhomme"
+    }
+  ],
+  "birth_year": 1632,
+  "death_year": 1687,
+  "catalog_type": "LWV",
+  "wikipedia_extract": "Jean-Baptiste Lully born Giovanni Battista Lulli (28 or 29 November [O.S. 18 or 19 November] 1632 – 22 March 1687) was an Italian-French composer, dancer and instrumentalist, who is considered a master of the French Baroque music style. Best known for his operas, he spent most of his life working in the court of Louis XIV and became a French subject in 1661.",
+  "wikipedia_compositions_url": "https://en.wikipedia.org/wiki/List_of_compositions_by_Jean-Baptiste_Lully",
+  "wikidata_id": "Q1192"
+}

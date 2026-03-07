@@ -1,0 +1,1195 @@
+{
+  "composer_slug": "verdi",
+  "composer_qid": "Q7317",
+  "work_count": 167,
+  "midi_file_count": 16,
+  "works": [
+    {
+      "qid": "Q99214036",
+      "title": "Sei Romanze",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp52",
+      "date": "1838-00-00",
+      "movements": [
+        {
+          "qid": "Q99214306"
+        },
+        {
+          "qid": "Q99214320"
+        },
+        {
+          "qid": "Q99214334"
+        },
+        {
+          "qid": "Q99214349"
+        },
+        {
+          "qid": "Q99214373"
+        },
+        {
+          "qid": "Q99214380"
+        }
+      ]
+    },
+    {
+      "qid": "Q470932",
+      "title": "Un giorno di regno",
+      "imslp_id": "Un_giorno_di_regno_(Verdi,_Giuseppe)",
+      "pdf_filename": "PMLP68967-95283-fs.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp4",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Un_giorno_di_regno",
+      "wikipedia_extract": "Un giorno di regno, ossia Il finto Stanislao is an operatic melodramma giocoso in two acts by Giuseppe Verdi to an Italian libretto written in 1818 by Felice Romani.\nOriginally written for the Bohemian composer Adalbert Gyrowetz the libretto was based on the play Le faux Stanislas written by the Frenchman Alexandre-Vincent Pineux Duval in 1808. Un giorno was given its premiere performance at the Teatro alla Scala, Milan on 5 September 1840.",
+      "pageviews_yearly": 10046,
+      "date": "1840-00-00"
+    },
+    {
+      "qid": "Q211279",
+      "title": "Ernani",
+      "imslp_id": "Ernani_(Verdi,_Giuseppe)",
+      "pdf_filename": "PMLP1011308-legnani_ernani_introduction.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp7",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ernani",
+      "wikipedia_extract": "Ernani is an operatic dramma lirico in four acts by Giuseppe Verdi to an Italian libretto by Francesco Maria Piave, based on the 1830 play Hernani by Victor Hugo.",
+      "pageviews_yearly": 48372,
+      "date": "1843-00-00"
+    },
+    {
+      "qid": "Q757134",
+      "title": "Giovanna d'Arco",
+      "imslp_id": "Giovanna_d'Arco_(Verdi,_Giuseppe)",
+      "pdf_filename": "PMLP68986-00._VERDI_GIOVANNA_DARCO_-_BANDA_SCORE.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp9",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Giovanna_d'Arco",
+      "wikipedia_extract": "Giovanna d'Arco is an operatic dramma lirico with a prologue and three acts by Giuseppe Verdi set to an Italian libretto by Temistocle Solera, who had prepared the libretti for Nabucco and I Lombardi. It is Verdi's seventh opera.",
+      "pageviews_yearly": 14213,
+      "date": "1844-00-00"
+    },
+    {
+      "qid": "Q108950908",
+      "title": "Sei romanze",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp52",
+      "date": "1845-00-00",
+      "movements": [
+        {
+          "qid": "Q125517147"
+        },
+        {
+          "qid": "Q125517156"
+        },
+        {
+          "qid": "Q125517215"
+        },
+        {
+          "qid": "Q125517252"
+        },
+        {
+          "qid": "Q125517265"
+        },
+        {
+          "qid": "Q125526317"
+        }
+      ]
+    },
+    {
+      "qid": "Q211460",
+      "title": "Attila",
+      "imslp_id": "Attila_(Verdi,_Giuseppe)",
+      "pdf_filename": "PMLP32306-Verdi_-_Attila__vs.ed.Lucca_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp11",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Attila_(opera)",
+      "wikipedia_extract": "Attila is an opera in a prologue and three acts by Giuseppe Verdi to an Italian libretto by Temistocle Solera, based on the 1809 play Attila, König der Hunnen by Zacharias Werner. The opera received its first performance at La Fenice in Venice on 17 March 1846.",
+      "pageviews_yearly": 16815,
+      "date": "1846-09-00"
+    },
+    {
+      "qid": "Q697950",
+      "title": "Aroldo",
+      "imslp_id": "Aroldo_(Verdi,_Giuseppe)",
+      "pdf_filename": "AroldoActII.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp24",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aroldo",
+      "wikipedia_extract": "Aroldo is an opera in four acts by Giuseppe Verdi to an Italian libretto by Francesco Maria Piave, based on and adapted from their earlier 1850 collaboration, Stiffelio. The opera premiered in Rimini's Teatro Nuovo Comunale on 16 August 1857.",
+      "pageviews_yearly": 8547,
+      "date": "1854-00-00"
+    },
+    {
+      "qid": "Q212451",
+      "title": "La forza del destino",
+      "imslp_id": "La_forza_del_destino_(Verdi,_Giuseppe)",
+      "pdf_filename": "PMLP55369-BassDrum.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp26",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_forza_del_destino",
+      "wikipedia_extract": "La forza del destino is an Italian opera by Giuseppe Verdi. The libretto was written by Francesco Maria Piave based on a Spanish drama, Don Álvaro o la fuerza del sino (1835), by Ángel de Saavedra, 3rd Duke of Rivas, with a scene adapted from Friedrich Schiller's Wallensteins Lager. It was first performed in the Bolshoi Kamenny Theatre of Saint Petersburg, Russia, on 29 October 1862 O.S..",
+      "pageviews_yearly": 46178,
+      "date": "1861-00-00"
+    },
+    {
+      "qid": "Q179110",
+      "title": "Don Carlos",
+      "imslp_id": "Don_Carlos_(Verdi,_Giuseppe)",
+      "pdf_filename": "Liszt_-_S.435_-_Coro_di_Festa_e_Marcia_Funebre_from_Don_Carlos__Verdi_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp27",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Don_Carlos",
+      "wikipedia_extract": "Don Carlos is an 1867 five-act grand opera composed by Giuseppe Verdi to a French-language libretto by Joseph Méry and Camille du Locle, based on the 1787 play Don Karlos, Infant von Spanien by Friedrich Schiller and several incidents from Eugène Cormon's 1846 play Philippe II, Roi d'Espagne. The opera is most often performed in Italian translation, usually under the title Don Carlo.",
+      "pageviews_yearly": 71355,
+      "date": "1865-00-00"
+    },
+    {
+      "qid": "Q1423582",
+      "title": "Messa per Rossini",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Messa_per_Rossini",
+      "wikipedia_extract": "The Messa per Rossini is a Requiem Mass composed to commemorate the first anniversary of Gioachino Rossini's death. It was a collaboration among 13 Italian composers, initiated by Giuseppe Verdi. The composition was intended to be performed on 13 November 1869 in the Basilica of San Petronio, Bologna, where Rossini grew up and spent a large part of his life.",
+      "pageviews_yearly": 8290,
+      "date": "1869-00-00"
+    },
+    {
+      "qid": "Q171277",
+      "title": "Aida",
+      "imslp_id": "Aïda_(Verdi,_Giuseppe)",
+      "pdf_filename": "PMLP17351-01._VERDI_AIDA_-_Flute_1.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp28",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aida",
+      "wikipedia_extract": "Aida is a tragic opera in four acts by Giuseppe Verdi to an Italian libretto by Antonio Ghislanzoni. Set in the Old Kingdom of Egypt, it was commissioned by Cairo's Khedivial Opera House and had its première there on 24 December 1871, in a performance conducted by Giovanni Bottesini. Today the work holds a central place in the operatic canon, receiving performances every year around the world. At New York's Metropolitan Opera alone, Aida has been sung more than 1,100 times since 1886. Ghislanzoni's scheme follows a scenario often attributed to the French Egyptologist Auguste Mariette, but Verdi biographer Mary Jane Phillips-Matz argues that the source is actually Temistocle Solera.",
+      "pageviews_yearly": 333359,
+      "date": "1871-00-00",
+      "movements": [
+        {
+          "qid": "Q2401650"
+        }
+      ]
+    },
+    {
+      "qid": "Q108948437",
+      "title": "Aida Sinfonia",
+      "date": "1872-00-00"
+    },
+    {
+      "qid": "Q1568939",
+      "title": "String Quartet in E minor",
+      "imslp_id": "String_Quartet_(Verdi,_Giuseppe)",
+      "pdf_filename": "PMLP30505-GVerdi_String_Quartet_arrsolopiano_AJaëll.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp33",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_(Verdi)",
+      "wikipedia_extract": "Giuseppe Verdi's String Quartet in E minor was written in the spring of 1873 during a production of Aida in Naples. It is the only surviving chamber music work in Verdi's catalogue.",
+      "pageviews_yearly": 4011,
+      "date": "1873-00-00"
+    },
+    {
+      "qid": "Q172324",
+      "title": "Otello",
+      "imslp_id": "Otello_(Verdi,_Giuseppe)",
+      "pdf_filename": "PMLP55439-00._VERDI_OTELLO_-_Banda_Off_Stage_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp29",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Otello",
+      "wikipedia_extract": "Otello is an opera in four acts by Giuseppe Verdi to an Italian libretto by Arrigo Boito, based on Shakespeare's play Othello. It was Verdi's penultimate opera, first performed at the Teatro alla Scala, Milan, on 5 February 1887.",
+      "pageviews_yearly": 68554,
+      "date": "1884-00-00"
+    },
+    {
+      "qid": "Q318455",
+      "title": "Falstaff",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp30",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Falstaff_(opera)",
+      "wikipedia_extract": "Falstaff is a comic opera in three acts by the Italian composer Giuseppe Verdi. The Italian-language libretto was adapted by Arrigo Boito from the play The Merry Wives of Windsor and scenes from Henry IV, Part 1 and Part 2, by William Shakespeare. The work premiered on 9 February 1893 at La Scala, Milan.",
+      "pageviews_yearly": 73593,
+      "date": "1889-00-00"
+    },
+    {
+      "qid": "Q1416456",
+      "title": "Quattro Pezzi Sacri",
+      "imslp_id": "4 Pezzi sacri (Verdi, Giuseppe)",
+      "pdf_filename": "PMLP132391-Klavierauszug_sw_600.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp45",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quattro_pezzi_sacri",
+      "wikipedia_extract": "The Quattro pezzi sacri are choral works by Giuseppe Verdi. Written separately during the last decades of the composer's life and with different origins and purposes, they were nevertheless published together in 1898 by Casa Ricordi. They are often performed as a cycle, not in chronological sequence of their composition, but in the sequence used in the Ricordi publication:Ave Maria, a setting of the Latin Ave Maria for four solo voices a cappella composed in 1889\nStabat Mater, a setting of the Latin Stabat Mater for chorus and orchestra composed in 1896 and 1897\nLaudi alla Vergine Maria, a setting of a prayer in Canto XXXIII of Dante's Paradiso for four female voices a cappella composed between 1886 and 1888\nTe Deum, a setting of the Latin Te Deum for double chorus and orchestra composed in 1895 and 1896.",
+      "pageviews_yearly": 7050,
+      "date": "1889-00-00",
+      "movements": [
+        {
+          "qid": "Q16268142"
+        },
+        {
+          "qid": "Q3967650"
+        },
+        {
+          "qid": "Q16268468"
+        },
+        {
+          "qid": "Q16268819"
+        }
+      ]
+    },
+    {
+      "qid": "Q125517215",
+      "title": "Ad una stella",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp58"
+    },
+    {
+      "qid": "Q54988677",
+      "title": "Addio del passato",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp21",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_traviata",
+      "wikipedia_extract": "La traviata is an opera in three acts by Giuseppe Verdi set to an Italian libretto by Francesco Maria Piave. It is based on La Dame aux camélias (1852), a play by Alexandre Dumas fils, which he adapted from his own 1848 novel. The opera was originally titled Violetta, after the main character. It was first performed on 6 March 1853 at La Fenice opera house in Venice.",
+      "pageviews_yearly": 158
+    },
+    {
+      "qid": "Q54988631",
+      "title": "Ah wicked souls of hell"
+    },
+    {
+      "qid": "Q54988610",
+      "title": "Ah! viens démon, esprit du mal"
+    },
+    {
+      "qid": "Q640054",
+      "title": "Aida",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp28",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aida_(1953_film)",
+      "wikipedia_extract": "Aida is a 1953 Italian musical melodrama film version of the opera Aida by Giuseppe Verdi. It was directed by Clemente Fracassi and produced by Gregor Rabinovitch and Federico Teti. The screenplay was adapted by Fracassi, Carlo Castelli, Anna Gobbi, and Giorgio Salviucci from the libretto by Antonio Ghislanzoni. The cinematography was by Piero Portalupi, the production design by Flavio Mogherini and the costume design by Maria De Matteis. The RAI National Symphony Orchestra was conducted by Giuseppe Morelli, the ballet was choreographed by Margherita Wallmann.",
+      "pageviews_yearly": 9166
+    },
+    {
+      "qid": "Q4696622",
+      "title": "Aida",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp28",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aida_(1987_film)",
+      "wikipedia_extract": "Aida  is a 1987 Swedish movie, directed by Claes Fellbom. The film is based on Giuseppe Verdi's opera, Aida.",
+      "pageviews_yearly": 4657
+    },
+    {
+      "qid": "Q450801",
+      "title": "Alzira",
+      "imslp_id": "Alzira_(Verdi,_Giuseppe)",
+      "pdf_filename": "AlziraActI.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp10",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alzira_(opera)",
+      "wikipedia_extract": "Alzira is an opera in a prologue and two acts by Giuseppe Verdi to an Italian libretto by Salvatore Cammarano, based on the 1736 play Alzire, ou les Américains by Voltaire.",
+      "pageviews_yearly": 6595
+    },
+    {
+      "qid": "Q54988741",
+      "title": "Anch'io dischiuso un giorno... Salgo già del trono aurato"
+    },
+    {
+      "qid": "Q4777980",
+      "title": "Anvil Chorus",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Anvil_Chorus",
+      "wikipedia_extract": "The Coro di Zingari, \nknown in English as the \"Anvil Chorus\", is a chorus from act 2, scene 1 of Giuseppe Verdi's 1853 opera Il trovatore. It depicts Spanish Gypsies striking their anvils at dawn – hence its English name – and singing the praises of hard work, good wine, and Gypsy women. The piece is also commonly known by its opening words, \"Vedi! Le fosche\".",
+      "pageviews_yearly": 32910
+    },
+    {
+      "qid": "Q654154",
+      "title": "Aria",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp21",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aria_(1987_film)",
+      "wikipedia_extract": "Aria is a 1987 British anthology film produced by Don Boyd that consists of ten short films by ten different filmmakers, each showing the director's choice of visual accompaniment to one or more operatic arias. There is little or no dialogue, with most words coming from the libretto of the operas in Italian, French, or German.",
+      "pageviews_yearly": 36431
+    },
+    {
+      "qid": "Q54988355",
+      "title": "As my soul seemed to swell"
+    },
+    {
+      "qid": "Q54988568",
+      "title": "At times my thought flies free from its prison"
+    },
+    {
+      "qid": "Q16268142",
+      "title": "Ave Maria",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Ave_Maria_-_Giuseppe_Verdi.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q4851817",
+      "title": "Ballo della Regina",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ballo_della_Regina",
+      "wikipedia_extract": "Ballo della Regina is a ballet choreographed by George Balanchine. Set to the ballet divertissement from Giuseppe Verdi's opera Don Carlos, the Balanchine ballet is plotless but alludes to the grotto setting of the divertissement. The ballet is danced by a lead couple and an all-female ensemble, with choreography that showcases the speed and precision of the lead ballerina. Ballo della Regina was made for the New York City Ballet, and premiered on January 12, 1978, at the New York State Theater, with Merrill Ashley and Robert Weiss in the two lead roles.",
+      "pageviews_yearly": 3001
+    },
+    {
+      "qid": "Q18205433",
+      "title": "Bella figlia dell’amore",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bella_figlia_dell'amore",
+      "wikipedia_extract": "\"Bella figlia dell'amore\" is a vocal quartet from the last act of Giuseppe Verdi's 1851 opera Rigoletto.",
+      "pageviews_yearly": 7614
+    },
+    {
+      "qid": "Q3881946",
+      "title": "Beyond Love",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beyond_Love_(film)",
+      "wikipedia_extract": "Beyond Love is a 1940 Italian historical drama film directed by Carmine Gallone and starring Alida Valli, Amedeo Nazzari and Osvaldo Valenti. It is based on the 1829 novella Vanina Vanini by Stendhal.",
+      "pageviews_yearly": 1705
+    },
+    {
+      "qid": "Q125526317",
+      "title": "Brindisi",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp21"
+    },
+    {
+      "qid": "Q78526640",
+      "title": "Caro nome = Enw wnaeth i galon merch : Rigoletto"
+    },
+    {
+      "qid": "Q25405129",
+      "title": "Caro nome che il mio cor",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Caro_nome_che_il_mio_cor",
+      "wikipedia_extract": "\"Caro nome che il mio cor\", or \"Caro nome\" for short, is an aria for coloratura soprano from act 1 of Verdi's opera Rigoletto.",
+      "pageviews_yearly": 7035
+    },
+    {
+      "qid": "Q2401650",
+      "title": "Celeste Aida",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp28",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Celeste_Aida",
+      "wikipedia_extract": "\"Celeste Aida\" is a romanza from the first act of the opera Aida by Giuseppe Verdi, with a text by Antonio Ghislanzoni. It is preceded by the recitative \"Se quel guerrier io fossi!\". The aria is sung by Radamès, a young Egyptian warrior who wishes to be chosen as a commander of the Egyptian army. He dreams of gaining victory on the battlefield and also of the Ethiopian slave girl, Aida, with whom he is secretly in love.",
+      "pageviews_yearly": 7801
+    },
+    {
+      "qid": "Q78526674",
+      "title": "Che mai vegg'io! Infin che un brando vindice = Ai rhith yw'r cyfan? Rhith yw'r cyfan : Ernani"
+    },
+    {
+      "qid": "Q78526701",
+      "title": "Condotta ell'era in ceppi = Fe'i rhwymwyd a'i llusgo'n greulon : Il Trovatore"
+    },
+    {
+      "qid": "Q54988777",
+      "title": "Cortigiani, vil razza dannata",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp19"
+    },
+    {
+      "qid": "Q78526704",
+      "title": "Credo = Credaf : Otello"
+    },
+    {
+      "qid": "Q20196025",
+      "title": "Cry of freedom"
+    },
+    {
+      "qid": "Q54988734",
+      "title": "D'Egitto là su i lidi...Come notte a sol fulgente"
+    },
+    {
+      "qid": "Q99214380",
+      "title": "Deh, pietoso, oh Addolorata"
+    },
+    {
+      "qid": "Q78647841",
+      "title": "Di miei bollenti spiriti = Angerdd a nwyd ieuenctid ffôl : La Traviata"
+    },
+    {
+      "qid": "Q3706452",
+      "title": "Di quella pira",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp20",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Di_quella_pira",
+      "wikipedia_extract": "\"Di quella pira\" is a short tenor aria sung by Manrico in act 3, scene 2, of Giuseppe Verdi's opera Il trovatore. It is the last number of the act.",
+      "pageviews_yearly": 7942
+    },
+    {
+      "qid": "Q54988732",
+      "title": "Dio di Giuda... O prodi miei, seguitemi"
+    },
+    {
+      "qid": "Q106819411",
+      "title": "Don Carlo",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp27"
+    },
+    {
+      "qid": "Q3796845",
+      "title": "Empire",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Empire_(1986_film)",
+      "wikipedia_extract": "Empire is a short film directed by Alexander Sokurov, released in 1986. The movie is based on a play by Lucille Fletcher.",
+      "pageviews_yearly": 2363
+    },
+    {
+      "qid": "Q5392608",
+      "title": "Ernani",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp7",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ernani_(1903_La_voce_del_padrone_recording)",
+      "wikipedia_extract": "The recording of Verdi's Ernani in 1903 by La voce del padrone was the first complete opera recording. It was issued on 40 single-sided discs. The first complete orchestral recording, Arthur Nikisch's recording of Beethoven's Fifth Symphony, was made in 1913.",
+      "pageviews_yearly": 2275
+    },
+    {
+      "qid": "Q54988417",
+      "title": "Ernani, Ernani rescue me"
+    },
+    {
+      "qid": "Q1768473",
+      "title": "Giuseppe Verdi",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp21",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Giuseppe_Verdi_(film)",
+      "wikipedia_extract": "Giuseppe Verdi is a 1938 Italian biographical film directed by Carmine Gallone and starring Fosco Giachetti, Gaby Morlay and Germana Paolieri. The film portrays the life of the composer Giuseppe Verdi (1813-1901). The casting of Giachetti as Verdi was intended to emphasise the composer's patriotism, as he had recently played patriotic roles in films such as The White Squadron. The film was made at the Cinecittà Studios in Rome. The film is also known by the alternative title The Life of Giuseppe Verdi.",
+      "pageviews_yearly": 3069
+    },
+    {
+      "qid": "Q5621423",
+      "title": "Gustavo III",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gustavo_III_(Verdi)",
+      "wikipedia_extract": "Gustavo III is an opera by Giuseppe Verdi to a libretto begun in early 1857 by the Italian playwright Antonio Somma. Never performed as written, the libretto was later revised several times under two additional names – Una vendetta in dominò and Adelia degli Adimari – during which the setting was changed to vastly different locations. Eventually, it was agreed that it could be called Un ballo in maschera, the name by which it is known today, but Verdi was forced to accept that the location of the story would have to be Colonial Boston. This setting became the \"standard\" one until the mid-20th Century. Most productions today locate the action in Sweden.",
+      "pageviews_yearly": 3024
+    },
+    {
+      "qid": "Q54988512",
+      "title": "Hail Mary!"
+    },
+    {
+      "qid": "Q54988714",
+      "title": "How the shade falls from heaven"
+    },
+    {
+      "qid": "Q1640657",
+      "title": "Hymn of the Nations",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp50",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hymn_of_the_Nations",
+      "wikipedia_extract": "Hymn of the Nations, originally titled Arturo Toscanini: Hymn of the Nations, is a 1944 film directed by Alexander Hammid, which features the Inno delle nazioni, a patriotic work for tenor soloist, chorus, and orchestra, composed by Italian opera composer Giuseppe Verdi in the early-1860s. For this musical work, Verdi utilized the national anthems of several European nations.",
+      "pageviews_yearly": 6314
+    },
+    {
+      "qid": "Q468625",
+      "title": "I Lombardi alla prima crociata",
+      "imslp_id": "I_Lombardi_alla_prima_crociata_(Verdi,_Giuseppe)",
+      "pdf_filename": "PMLP55463-00._VERDI_LOMBARDI_-_BANDA_SCORE.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp6",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/I_Lombardi_alla_prima_crociata",
+      "wikipedia_extract": "I Lombardi alla Prima Crociata is an operatic dramma lirico in four acts by Giuseppe Verdi to an Italian libretto by Temistocle Solera, based on an epic poem by Tommaso Grossi, which was \"very much a child of its age; a grand historical novel with a patriotic slant\". Its first performance was given at the Teatro alla Scala in Milan on 11 February 1843. Verdi dedicated the score to Maria Luigia, the Habsburg Duchess of Parma, who died a few weeks after the premiere. In 1847, the opera was significantly revised to become Verdi's first grand opera for performances in France at the Salle Le Peletier of the Paris Opera under the title of Jérusalem.",
+      "pageviews_yearly": 12456
+    },
+    {
+      "qid": "Q54988758",
+      "title": "I believe in a cruel God"
+    },
+    {
+      "qid": "Q468112",
+      "title": "I due Foscari",
+      "imslp_id": "I_due_Foscari_(Verdi,_Giuseppe)",
+      "pdf_filename": "PMLP68963-I_due_foscari.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp8",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/I_due_Foscari",
+      "wikipedia_extract": "I due Foscari is an opera in three acts by Giuseppe Verdi to an Italian libretto by Francesco Maria Piave, based on the 1821 historical play, The Two Foscari by Lord Byron.",
+      "pageviews_yearly": 8317
+    },
+    {
+      "qid": "Q466338",
+      "title": "I masnadieri",
+      "imslp_id": "I_masnadieri_(Verdi,_Giuseppe)",
+      "pdf_filename": "PMLP60867-I_Masnadieri.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp13",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/I_masnadieri",
+      "wikipedia_extract": "I masnadieri is an opera in four acts by Giuseppe Verdi to an Italian libretto by Andrea Maffei, based on the play Die Räuber by Friedrich von Schiller.\nAs Verdi became more successful in Italy, he began to receive offers from other opera houses outside the country. The London impresario Benjamin Lumley had presented Ernani in 1845 and, as a result of its success, commissioned an opera from the composer which became I masnadieri. It was given its first performance at Her Majesty's Theatre on 22 July 1847 with Verdi conducting the first two performances.",
+      "pageviews_yearly": 10964
+    },
+    {
+      "qid": "Q17082432",
+      "title": "I vespri siciliani",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp22",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/I_vespri_siciliani",
+      "wikipedia_extract": "I vespri siciliani is a five-act Italian opera originally written in French for the Paris Opéra by the Italian romantic composer Giuseppe Verdi and translated into Italian shortly after its premiere in June 1855.",
+      "pageviews_yearly": 14867
+    },
+    {
+      "qid": "Q467289",
+      "title": "Il corsaro",
+      "imslp_id": "Il_corsaro_(Verdi,_Giuseppe)",
+      "pdf_filename": "PMLP68946-Verdi_-_Il_corsaro_PS.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp15",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Il_corsaro",
+      "wikipedia_extract": "Il corsaro is an opera in three acts by Giuseppe Verdi, from a libretto by Francesco Maria Piave, based on Lord Byron's 1814 poem The Corsair. The first performance was given at the Teatro Grande in Trieste on 25 October 1848.",
+      "pageviews_yearly": 8794
+    },
+    {
+      "qid": "Q78526923",
+      "title": "Il lacerato spirito"
+    },
+    {
+      "qid": "Q125517147",
+      "title": "Il tramonto",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp57"
+    },
+    {
+      "qid": "Q203470",
+      "title": "Il trovatore",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Si_la_stanchezza_from_Il_trovatore.mid",
+        "midi/Il_Trovatore_Coro_di_Zingari_e_Canzone.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q99214334",
+      "title": "In solitaria stanza",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp5"
+    },
+    {
+      "qid": "Q736576",
+      "title": "Inno delle Nazioni",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp50",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Inno_delle_nazioni",
+      "wikipedia_extract": "\nInno delle nazioni, a cantata in a single movement, is one of only two secular choral works composed by Giuseppe Verdi. This Hymn incorporates \"God Save the King\", \"La Marseillaise\", and \"Il Canto degli Italiani\". It was the first collaboration between the composer and Arrigo Boito, who, much later, would revise the libretto of Simon Boccanegra and write the original libretti of Otello and Falstaff.",
+      "pageviews_yearly": 5885
+    },
+    {
+      "qid": "Q54988434",
+      "title": "Is it dream or reality?"
+    },
+    {
+      "qid": "Q54988510",
+      "title": "It was not a dream"
+    },
+    {
+      "qid": "Q3163402",
+      "title": "Je chante avec toi Liberté",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Je_chante_avec_toi_Libert%C3%A9",
+      "wikipedia_extract": "\n\"Je chante avec toi Liberté\" (1981) also known in English as \"Song for Liberty\" (1970) is a song written by Pierre Delanoë and Claude Lemesle, arranged by Alain Goraguer and performed by Nana Mouskouri. The melody is from \"Va, pensiero\" also known in English as the \"Chorus of the Hebrew Slaves\" from the opera Nabucco (1842) by Giuseppe Verdi.",
+      "pageviews_yearly": 6126
+    },
+    {
+      "qid": "Q54988627",
+      "title": "Je veux encore entendre"
+    },
+    {
+      "qid": "Q3227564",
+      "title": "Just a Sigh"
+    },
+    {
+      "qid": "Q914332",
+      "title": "Jérusalem",
+      "imslp_id": "Jérusalem_(Verdi,_Giuseppe)",
+      "pdf_filename": "PMLP55461-JERUSALEM_Libretto_French.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp5",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/J%C3%A9rusalem",
+      "wikipedia_extract": "Jérusalem is a grand opera in four acts by Giuseppe Verdi. The libretto was to be an adaptation and partial translation of the composer's original 1843 Italian opera, I Lombardi alla prima crociata. It was the one opera which he regarded as the most suitable for being translated into French and, taking Eugène Scribe's advice, Verdi agreed that a French libretto was to be prepared by Alphonse Royer and Gustave Vaëz, who had written the libretto for Donizetti's most successful French opera, La favorite. The opera received its premiere performance at the Salle Le Peletier in Paris on 26 November 1847. The maiden production was designed by Paul Lormier (costumes), Charles Séchan, Jules Diéterle and Édouard Desplechin, and Charles-Antoine Cambon and Joseph Thierry.",
+      "pageviews_yearly": 7087
+    },
+    {
+      "qid": "Q54988874",
+      "title": "King of the abyss, make haste"
+    },
+    {
+      "qid": "Q109002117",
+      "title": "L'inno delle nazioni"
+    },
+    {
+      "qid": "Q1056912",
+      "title": "La Traviata",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp21",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_Traviata_(1982_film)",
+      "wikipedia_extract": "La Traviata is a 1982 Italian film written, designed, and directed by Franco Zeffirelli. It is based on the 1853 opera La traviata with music by Giuseppe Verdi and libretto by Francesco Maria Piave. Soprano Teresa Stratas, tenor Plácido Domingo, and baritone Cornell MacNeil starred in the movie, in addition to singing their roles. The film premiered in Italy in 1982 and went into general release there the following year. It opened in theatres in the U.S. on April 22, 1983. The movie's soundtrack, with James Levine conducting the Metropolitan Opera Orchestra and Chorus, won a Grammy Award for Best Opera Recording.",
+      "pageviews_yearly": 9744
+    },
+    {
+      "qid": "Q468546",
+      "title": "La battaglia di Legnano",
+      "imslp_id": "La_battaglia_di_Legnano_(Verdi,_Giuseppe)",
+      "pdf_filename": "PMLP68943-Verdi_-_La_battaglia_di_Legnano_-_Act_III__orch._score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp16",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_battaglia_di_Legnano",
+      "wikipedia_extract": "La battaglia di Legnano is an opera in four acts, with music by Giuseppe Verdi to an Italian-language libretto by Salvadore Cammarano. It was based on the play La Bataille de Toulouse by Joseph Méry, later the co-librettist of Don Carlos.",
+      "pageviews_yearly": 7077
+    },
+    {
+      "qid": "Q1469717",
+      "title": "La donna è mobile",
+      "has_midi": true,
+      "midi_files": [
+        "midi/La_donna_e_mobile.mid",
+        "midi/Giuseppe_Verdi_-_la_Donna_e_Mobile.mid",
+        "midi/Giuseppe_Verdi_-_la_Donna_e_Mobile_1.mid",
+        "midi/La_donna_e_mobile_from_Rigoletto.mid",
+        "midi/Giuseppe_Verdi_-_la_Donna_e_Mobile_2.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q55712988",
+      "title": "La forza del destino",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp26"
+    },
+    {
+      "qid": "Q78648061",
+      "title": "La luce langue = Gwywa'r goleuni : Macbeth"
+    },
+    {
+      "qid": "Q186162",
+      "title": "La traviata",
+      "has_midi": true,
+      "midi_files": [
+        "midi/La_Traviata-Preludio_per_ensemble_di_Flauti_e_Corni.mid",
+        "midi/La_Traviata.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q3214220",
+      "title": "La traviata",
+      "has_midi": true,
+      "midi_files": [
+        "midi/La_Traviata_-_Ouverture.mid",
+        "midi/Coro_di_Matadori_Di_Madride_from_La_Traviata_Act_3_-_Giuseppe_Verdi.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q125517156",
+      "title": "La zingara"
+    },
+    {
+      "qid": "Q16268468",
+      "title": "Laudi alla Vergine Maria",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp45"
+    },
+    {
+      "qid": "Q2836444",
+      "title": "Le Trouvère",
+      "imslp_id": "Il_trovatore_(Verdi,_Giuseppe)",
+      "pdf_filename": "Godowsky_-_Operatic_Masterpieces_-_No.3_-_Verdi_-_Excerpts_from_Il_Trovatore.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp20"
+    },
+    {
+      "qid": "Q471645",
+      "title": "Les vêpres siciliennes",
+      "imslp_id": "Les_vêpres_siciliennes_(Verdi,_Giuseppe)",
+      "pdf_filename": "PMLP55448-I_Vespri_Siciliani_-_Cavatina_-_Euphonium.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp22",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Les_v%C3%AApres_siciliennes",
+      "wikipedia_extract": "Les vêpres siciliennes is a grand opera in five acts by the Italian romantic composer Giuseppe Verdi set to a French libretto by Eugène Scribe and Charles Duveyrier from their work Le duc d'Albe of 1838. Les vêpres followed immediately after Verdi's three great mid-career masterpieces, Rigoletto, Il trovatore and La traviata of 1850 to 1853 and was first performed at the Paris Opéra on 13 June 1855.",
+      "pageviews_yearly": 22387
+    },
+    {
+      "qid": "Q78526961",
+      "title": "Liber scriptus = Gwelir llyfr ysgrifenedig : Requiem"
+    },
+    {
+      "qid": "Q60139304",
+      "title": "Libera me, Domine"
+    },
+    {
+      "qid": "Q2603520",
+      "title": "Libiamo ne' lieti calici",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Libiamo_ne_lieti_calici_-_korstemmer.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q125517252",
+      "title": "Lo spazzacamino"
+    },
+    {
+      "qid": "Q77901176",
+      "title": "Love Me, Alfredo!",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Love_Me%2C_Alfredo!",
+      "wikipedia_extract": "Love Me, Alfredo! is a 1940 Italian romantic drama film directed by Carmine Gallone and starring Maria Cebotari, Claudio Gora and Lucie Englisch. It portrays the relationship between an established opera singer and her lover an unknown composer. The title is a reference to Verdi's La Traviata. It was shot at Cinecittà Studios in Rome. The film's sets were designed by the art director Guido Fiorini.",
+      "pageviews_yearly": 1852
+    },
+    {
+      "qid": "Q545265",
+      "title": "Luisa Miller",
+      "imslp_id": "Luisa_Miller_(Verdi,_Giuseppe)",
+      "pdf_filename": "PMLP87218-15_4_Verdi_Luisa_Miller_1870zb_301424.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp17",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luisa_Miller",
+      "wikipedia_extract": "Luisa Miller is an opera in three acts by Giuseppe Verdi to an Italian libretto by Salvadore Cammarano, based on the play Kabale und Liebe by the German dramatist Friedrich von Schiller.",
+      "pageviews_yearly": 20502
+    },
+    {
+      "qid": "Q54988912",
+      "title": "Ma se m'è forza perderti"
+    },
+    {
+      "qid": "Q320363",
+      "title": "Macbeth",
+      "imslp_id": "Macbeth_(Verdi,_Giuseppe)",
+      "pdf_filename": "PMLP55443-F-Pb_4-779_-_Giuseppe_Verdi_-_Macbeth__éd._ch_p_188_.__.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp12",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Macbeth_(Verdi)",
+      "wikipedia_extract": "Macbeth is an opera in four acts by Giuseppe Verdi, with an Italian libretto by Francesco Maria Piave and additions by Andrea Maffei, based on William Shakespeare's play of the same name. Written for the Teatro della Pergola in Florence, Macbeth was Verdi's tenth opera and premiered on 14 March 1847. It was the first Shakespeare play that Verdi adapted for the operatic stage. Almost twenty years later, Macbeth was revised and expanded into a French version and given in Paris on 21 April 1865.",
+      "pageviews_yearly": 39626
+    },
+    {
+      "qid": "Q3274113",
+      "title": "Macbeth",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp12",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Macbeth_(1987_film)",
+      "wikipedia_extract": "Macbeth is a 1987 French film of Verdi's opera Macbeth. Directed by Claude d'Anna, it was screened out of competition at the 1987 Cannes Film Festival.",
+      "pageviews_yearly": 3653
+    },
+    {
+      "qid": "Q79267485",
+      "title": "Madre, pietosa Vergine = Forwyn drugarog, ddwyfol fam : la forza del destino"
+    },
+    {
+      "qid": "Q1356210",
+      "title": "Messa da Requiem",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Sanctus_from_Verdis_Messa_da_Requiem.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q3115273",
+      "title": "Messa da Requiem von Giuseppe Verdi"
+    },
+    {
+      "qid": "Q55441228",
+      "title": "Mona Lisa"
+    },
+    {
+      "qid": "Q99214320",
+      "title": "More, Elisa, lo stanco poeta",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp52"
+    },
+    {
+      "qid": "Q78648156",
+      "title": "Morro, ma prima in grazia = Gwae fi, yn awr ar farw : un ballo in maschera"
+    },
+    {
+      "qid": "Q54988666",
+      "title": "Mother, merciful Virgin"
+    },
+    {
+      "qid": "Q202230",
+      "title": "Nabucco",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Verdi_-_Nabucco.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q99214349",
+      "title": "Nell'orror di notte oscura"
+    },
+    {
+      "qid": "Q99214306",
+      "title": "Non t'accostare all'urna",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp52"
+    },
+    {
+      "qid": "Q3343449",
+      "title": "Nora Helmer"
+    },
+    {
+      "qid": "Q54988740",
+      "title": "O dischius'è il firmamento"
+    },
+    {
+      "qid": "Q78527061",
+      "title": "O don fatale = O rodd alaethus : Don Carlo"
+    },
+    {
+      "qid": "Q54988368",
+      "title": "O father, is your image not imprinted on the fleeting clouds?"
+    },
+    {
+      "qid": "Q54988391",
+      "title": "O terrible gift"
+    },
+    {
+      "qid": "Q636873",
+      "title": "Oberto, conte di San Bonifacio",
+      "imslp_id": "Oberto_(Verdi,_Giuseppe)",
+      "pdf_filename": "PMLP701268-Oberto_Conte_di_S.Bonifacio__Op.286_C.Munier_Mandola.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp3",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oberto_(opera)",
+      "wikipedia_extract": "Oberto, Conte di San Bonifacio is an opera in two acts by Giuseppe Verdi to an Italian libretto by Temistocle Solera, based on an existing libretto by Antonio Piazza probably called Rocester.",
+      "pageviews_yearly": 8853
+    },
+    {
+      "qid": "Q54988314",
+      "title": "Oh my homeland"
+    },
+    {
+      "qid": "Q54988410",
+      "title": "Oh! cruel fortune!"
+    },
+    {
+      "qid": "Q78648188",
+      "title": "Oh! de' verd'anni miei = O! fy mlynyddoedd gleision : Ernani"
+    },
+    {
+      "qid": "Q15270897",
+      "title": "Otello",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp29"
+    },
+    {
+      "qid": "Q16683907",
+      "title": "Otello",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp29"
+    },
+    {
+      "qid": "Q3887056",
+      "title": "Otello",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp29",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Otello_(1986_film)",
+      "wikipedia_extract": "Otello is a 1986 film based on the Giuseppe Verdi opera of the same name, which was itself based on the Shakespearean play Othello. The film was directed by Franco Zeffirelli and starred Plácido Domingo in the title role, Katia Ricciarelli as Desdemona and Justino Díaz as Iago. For the film's soundtrack, Lorin Maazel conducted the Orchestra and Chorus of the Teatro alla Scala. The film premiered in West Germany on 28 August 1986 and received a U.S. theatrical release on 12 September 1986. It was nominated for a Bafta Award and a Golden Globe for Best Foreign Language Film.",
+      "pageviews_yearly": 12135
+    },
+    {
+      "qid": "Q19297737",
+      "title": "Othello",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp29"
+    },
+    {
+      "qid": "Q78648212",
+      "title": "Parmi veder le lagrime = Dagrau 'welaf yn llifo'n awr : Rigoletto"
+    },
+    {
+      "qid": "Q27106474",
+      "title": "Pater noster",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp43"
+    },
+    {
+      "qid": "Q54988670",
+      "title": "Peace, O mighty Father, give me peace!"
+    },
+    {
+      "qid": "Q78527097",
+      "title": "Per me giunto e il di supremo = Dyma ddiwrnod ac awr fy nhynged"
+    },
+    {
+      "qid": "Q99214373",
+      "title": "Perduta ho la pace"
+    },
+    {
+      "qid": "Q20005685",
+      "title": "Piazza Garibaldi"
+    },
+    {
+      "qid": "Q78648220",
+      "title": "Pieta, rispetto, onore = Trugaredd, parch a breiniau : Macbeth"
+    },
+    {
+      "qid": "Q3414268",
+      "title": "Questa o quella",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp19"
+    },
+    {
+      "qid": "Q3421522",
+      "title": "Re Lear",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Re_Lear",
+      "wikipedia_extract": "Re Lear is an Italian operatic libretto in four acts written by Antonio Somma for the Italian opera composer Giuseppe Verdi. It was based on King Lear, \"the Shakespeare play with which Verdi struggled for so many years, but without success\".",
+      "pageviews_yearly": 3870
+    },
+    {
+      "qid": "Q19800856",
+      "title": "Rigoletto",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp19",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rigoletto_(1982_film)",
+      "wikipedia_extract": "Rigoletto in a 1982 Italian opera film directed by Jean-Pierre Ponnelle and starring Ingvar Wixell, Edita Gruberová and Luciano Pavarotti, with the music score conducted by Riccardo Chailly. The film is based upon the 1851 opera of the same name by Giuseppe Verdi to a libretto by Francesco Maria Piave.",
+      "pageviews_yearly": 10670
+    },
+    {
+      "qid": "Q19800903",
+      "title": "Rigoletto",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp19"
+    },
+    {
+      "qid": "Q189234",
+      "title": "Rigoletto",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Bella_figlia_dellamor_from_Rigoletto.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q54988317",
+      "title": "Ritorna vincitor!",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp28"
+    },
+    {
+      "qid": "Q78527177",
+      "title": "Saper vorreste di che si veste = Fe garech wybod pa fasg sy'n briod : Un ballo in maschera"
+    },
+    {
+      "qid": "Q54988905",
+      "title": "Say if you are faithful"
+    },
+    {
+      "qid": "Q1057548",
+      "title": "Serenade",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Serenade_(1956_film)",
+      "wikipedia_extract": "Serenade is a 1956 American musical drama film directed by Anthony Mann and starring tenor Mario Lanza, Joan Fontaine, Sara Montiel, and Vincent Price. Based on the 1937 novel Serenade by James M. Cain, the film was a Warner Bros. Pictures release, Lanza's fifth film, and his first on-screen appearance in four years.",
+      "pageviews_yearly": 11898
+    },
+    {
+      "qid": "Q54988389",
+      "title": "She never loved me"
+    },
+    {
+      "qid": "Q54988594",
+      "title": "Shrieks the pyre!"
+    },
+    {
+      "qid": "Q548161",
+      "title": "Simon Boccanegra",
+      "imslp_id": "Simon_Boccanegra_(Verdi,_Giuseppe)",
+      "pdf_filename": "PMLP55408-Verdi_Simon_Boccanegra_finale_piano_solo.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp23",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Simon_Boccanegra",
+      "wikipedia_extract": "Simon Boccanegra is an opera with a prologue and three acts by Giuseppe Verdi to an Italian libretto by Francesco Maria Piave, based on the play Simón Bocanegra (1843) by Antonio García Gutiérrez.",
+      "pageviews_yearly": 33835
+    },
+    {
+      "qid": "Q3967650",
+      "title": "Stabat Mater",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp36"
+    },
+    {
+      "qid": "Q371584",
+      "title": "Stiffelio",
+      "imslp_id": "Stiffelio_(Verdi,_Giuseppe)",
+      "pdf_filename": "PMLP55371-Verdi_-_Stiffelio.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp18",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stiffelio",
+      "wikipedia_extract": "Stiffelio is an opera in three acts by Giuseppe Verdi, from an Italian libretto by Francesco Maria Piave. The origin of this was the novel Le pasteur d’hommes, by Émile Souvestre, which was published in 1838. This was adapted into the French play Le pasteur, ou L'évangile et le foyer by Souvestre together with Eugène Bourgeois. That play was in turn translated into Italian by Gaetano Vestri as Stifellius; this formed the basis of Piave's libretto.",
+      "pageviews_yearly": 13180
+    },
+    {
+      "qid": "Q78648316",
+      "title": "Stride la vampa = Gwridog y fflamau : Il Travatore"
+    },
+    {
+      "qid": "Q7641857",
+      "title": "Suona la tromba",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Suona_la_tromba",
+      "wikipedia_extract": "\"Suona la tromba\" or \"Inno popolare\" is a secular hymn composed by Giuseppe Verdi in 1848 to a text by the Italian poet and patriot Goffredo Mameli. The work's title comes from the opening line of Mameli's poem. It has sometimes been referred to as \"Grido di guerra\".",
+      "pageviews_yearly": 2987
+    },
+    {
+      "qid": "Q16268819",
+      "title": "Te Deum (Giuseppe Verdi)"
+    },
+    {
+      "qid": "Q689300",
+      "title": "The Bitter Tears of Petra von Kant",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Bitter_Tears_of_Petra_von_Kant",
+      "wikipedia_extract": "The Bitter Tears Of Petra Von Kant is a 1972 West German New Wave psychological romantic drama film written and directed by Rainer Werner Fassbinder, based on his play of the same name. Featuring an all-female cast, the film takes place entirely in the home of fashion designer Petra von Kant, following the changing dynamics in her relationships with other women. The film was entered into the 22nd Berlin International Film Festival. It is regarded by many as Fassbinder's magnum opus and a classic of New German Cinema.",
+      "pageviews_yearly": 54417
+    },
+    {
+      "qid": "Q11821482",
+      "title": "The Don Juans",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Don_Juans",
+      "wikipedia_extract": "The Don Juans is a 2013 Czech comedy film directed by Jiří Menzel. The film was selected as the Czech entry for the Best Foreign Language Film at the 86th Academy Awards, but it was not nominated. Originally Agnieszka Holland's mini-series Burning Bush had been selected to represent the Czech Republic. However AMPAS disqualified the film, citing regulations that the film must not have initially appeared on television. The mini-series aired on Czech TV eight months prior to the re-edited version that appeared in cinemas. The Don Juans was a controversial pick as members of the Czech Film Academy did not see the film before it was chosen and because the film was poorly received by Czech critics.",
+      "pageviews_yearly": 2251
+    },
+    {
+      "qid": "Q1217247",
+      "title": "The Expulsion from Paradise",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Expulsion_from_Paradise",
+      "wikipedia_extract": "The Expulsion from Paradise is a 1977 West German comedy-drama film directed by Niklaus Schilling. It was entered into the 27th Berlin International Film Festival.",
+      "pageviews_yearly": 2020
+    },
+    {
+      "qid": "Q25209669",
+      "title": "The Force of Destiny",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp26",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Force_of_Destiny_(film)",
+      "wikipedia_extract": "The Force of Destiny is a 1950 Italian musical melodrama film directed by Carmine Gallone and starring Nelly Corradi, Tito Gobbi and Gino Sinimberghi. It is based on Giuseppe Verdi's opera La forza del destino.",
+      "pageviews_yearly": 2012
+    },
+    {
+      "qid": "Q3795499",
+      "title": "The King's Jester",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_King's_Jester",
+      "wikipedia_extract": "The King's Jester is a 1941 Italian historical drama film directed by Mario Bonnard and starring Michel Simon, María Mercader and Rossano Brazzi. The film is an adaptation of the play Le roi s'amuse by Victor Hugo and uses elements such as the music and some of the character names from Giuseppe Verdi's later opera Rigoletto. It is set at the court of Francis I of France in the Sixteenth century.",
+      "pageviews_yearly": 2288
+    },
+    {
+      "qid": "Q3824198",
+      "title": "The Lady of the Camellias",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Lady_of_the_Camellias_(1947_film)",
+      "wikipedia_extract": "The Lady of the Camellias is a 1947 Italian musical drama film directed by Carmine Gallone and starring Nelly Corradi, Gino Mattera and Manfredi Polverosi. It is an adaptation of the 1853 opera La traviata by Giuseppe Verdi. In 1948 it was released in America by Columbia Pictures under the title The Lost One.",
+      "pageviews_yearly": 2472
+    },
+    {
+      "qid": "Q1214661",
+      "title": "The Power of Feelings",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alexander_Kluge",
+      "wikipedia_extract": "Alexander Kluge is a German author, philosopher, academic and film director.",
+      "pageviews_yearly": 576
+    },
+    {
+      "qid": "Q3148551",
+      "title": "The Troubadour",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp20"
+    },
+    {
+      "qid": "Q54988586",
+      "title": "The flashing of her smile"
+    },
+    {
+      "qid": "Q54988600",
+      "title": "The night was still and quiet"
+    },
+    {
+      "qid": "Q54988673",
+      "title": "The sea and soil of Provence",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_traviata",
+      "wikipedia_extract": "La traviata is an opera in three acts by Giuseppe Verdi set to an Italian libretto by Francesco Maria Piave. It is based on La Dame aux camélias (1852), a play by Alexandre Dumas fils, which he adapted from his own 1848 novel. The opera was originally titled Violetta, after the main character. It was first performed on 6 March 1853 at La Fenice opera house in Venice.",
+      "pageviews_yearly": 176
+    },
+    {
+      "qid": "Q54988582",
+      "title": "The world seemed to smile"
+    },
+    {
+      "qid": "Q54988487",
+      "title": "Thou beneath whose almighty glance all men rejoice or weep"
+    },
+    {
+      "qid": "Q54988395",
+      "title": "Tu che le vanità",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tu_che_le_vanit%C3%A0",
+      "wikipedia_extract": "\"Tu che le vanità\" is an aria for soprano from the first scene of the final act of Verdi's 1867 opera Don Carlo. It was composed to a French text and later translated into Italian, the language in which it is most well known and most often performed. It is sometimes performed in recitals and featured in anthologies for dramatic sopranos. Sopranos also use it as an audition piece, as it displays the singer's high and low registers, forte and pianissimo volumes, legato bel canto singing technique, and several dramatic emotions such as reverence, longing, and resignation.",
+      "pageviews_yearly": 4835
+    },
+    {
+      "qid": "Q54988736",
+      "title": "Tu sul labbro"
+    },
+    {
+      "qid": "Q221757",
+      "title": "Un ballo in maschera",
+      "imslp_id": "Un_ballo_in_maschera_(Verdi,_Giuseppe)",
+      "pdf_filename": "BalloInMascheraActI.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp25",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Un_ballo_in_maschera",
+      "wikipedia_extract": "Un ballo in maschera is an 1859 opera in three acts by Giuseppe Verdi. The text, by Antonio Somma, was based on Eugène Scribe's libretto for Daniel Auber's 1833 five act opera, Gustave III, ou Le bal masqué.",
+      "pageviews_yearly": 46247
+    },
+    {
+      "qid": "Q4052360",
+      "title": "Un di, felice, eterea",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Un_d%C3%AC%2C_felice%2C_eterea",
+      "wikipedia_extract": "\"Un dì, felice, eterea\" is a duet from the first act of Giuseppe Verdi's 1853 opera La traviata. It is sung by the male and female protagonists of the opera, Alfredo and Violetta. The main melody of the duet, which is very famous in its own right, is also an important musical theme throughout the opera.",
+      "pageviews_yearly": 7096
+    },
+    {
+      "qid": "Q1352178",
+      "title": "Va, pensiero",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp5",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Va%2C_pensiero",
+      "wikipedia_extract": "\"Va, pensiero\", also known as the \"Chorus of the Hebrew Slaves\", is a chorus from the opera Nabucco (1842) by Giuseppe Verdi. It recollects the period of Babylonian captivity after the destruction of Solomon's Temple in Jerusalem in 586 BC.",
+      "pageviews_yearly": 64545
+    },
+    {
+      "qid": "Q1995633",
+      "title": "Verdi",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp21",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Verdi_(album)",
+      "wikipedia_extract": "Verdi is Italian tenor Andrea Bocelli's seventh studio album and fourth classical album, of Verdi's most famous arias, released in 2000. The Israel Philharmonic Orchestra, conducted by Zubin Mehta, accompanied Bocelli for the album. The album was certified Gold in the US by the Recording Industry Association of America and in Switzerland by IFPI of Switzerland, Platinum in Canada by the Canadian Recording Industry Association, and Double Platinum in the Netherlands by the Nederlandse Vereniging van Producenten en Importeurs van beeld- en geluidsdragers.",
+      "pageviews_yearly": 4855
+    },
+    {
+      "qid": "Q3771609",
+      "title": "Verdi",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/giuseppe-verdi-1813-pp21",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Verdi%2C_the_King_of_Melody",
+      "wikipedia_extract": "Giuseppe Verdi, released theatrically in the US as The Life and Music of Giuseppe Verdi and on video as Verdi, the King of Melody, is a 1953 Italian biographical musical melodrama film starring Pierre Cressoy and directed by Raffaello Matarazzo. It is based on adult life events of the composer Giuseppe Verdi. The film was a commercial success, grossing over 957 million lire at the Italian box office.",
+      "pageviews_yearly": 3331
+    },
+    {
+      "qid": "Q7926527",
+      "title": "Victoria",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Victoria_(1979_film)",
+      "wikipedia_extract": "Victoria is a 1979 Swedish drama film directed by Bo Widerberg based on Knut Hamsun's 1898 novel. It was entered into the 1979 Cannes Film Festival.",
+      "pageviews_yearly": 2479
+    },
+    {
+      "qid": "Q3089485",
+      "title": "We Believed",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/We_Believed",
+      "wikipedia_extract": "We Believed is a 2010 Italian drama film directed by Mario Martone, based on a screenplay by Martone and Giancarlo De Cataldo inspired by events around the 19th-century Young Italy political movement and based on the novel of the late art historian Anna Banti. Nominated for the Golden Lion at the 67th Venice International Film Festival, the film was released in Italy on 12 November 2010.",
+      "pageviews_yearly": 4093
+    },
+    {
+      "qid": "Q54988707",
+      "title": "When at eventide, in the tranquil glimmer of a starry sky"
+    },
+    {
+      "qid": "Q54988867",
+      "title": "You were the one who stained her soul"
+    },
+    {
+      "qid": "Q1227508",
+      "title": "Young Toscanini",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Young_Toscanini",
+      "wikipedia_extract": "Young Toscanini is a 1988 biographical drama film directed by Franco Zeffirelli and starring C. Thomas Howell and Elizabeth Taylor. It was screened out of competition at the 45th edition of the Venice Film Festival.",
+      "pageviews_yearly": 10068
+    },
+    {
+      "qid": "Q16268846",
+      "title": "popular trilogy",
+      "movements": [
+        {
+          "qid": "Q189234"
+        },
+        {
+          "qid": "Q203470"
+        },
+        {
+          "qid": "Q186162"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "composer_name": "Luigi Boccherini",
+  "name_last_first": "Boccherini, Luigi",
+  "slug": "boccherini",
+  "wiki_page": "https://en.wikipedia.org/wiki/Luigi_Boccherini",
+  "apple_music_playlist": "https://music.apple.com/us/playlist/luigi-boccherini-essentials/pl.c2a0c9048c364711be5796c80a870ac2",
+  "era": "Classical",
+  "dates": "1743 – 1805",
+  "nationality": "ITA",
+  "notable": true,
+  "works": [
+    {
+      "title": "Menuet and Trio from String Quintet in C major (Lauterbach)",
+      "musicxml": "musicxml/Menuett_and_Trio.mxl",
+      "midi": "midi/Menuett_and_Trio.mid",
+      "form": "Trio",
+      "time_signature": "3/4",
+      "instruments": [
+        "Violin",
+        "Viola",
+        "Violoncello"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 5,
+        "n_views": 335,
+        "duration_seconds": 155.74999999597645,
+        "n_notes": 1944,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "boccherini-quintet-string-cmajor-minuet-trio-violin-viola-cello-twocellos-gmajor-gminor-menuet",
+        "musescore_url": "https://musescore.com/user/9019046/scores/5956699",
+        "musescore_duration": "02:36"
+      },
+      "key": "C major",
+      "key_from_data": "G major",
+      "key_changes": [
+        "G major",
+        "B♭ major"
+      ],
+      "instruments_gm": [
+        "Violin",
+        "Viola",
+        "Cello"
+      ],
+      "tempo_bpm": 120,
+      "n_measures": 56,
+      "n_parts": 5,
+      "n_notes": 1942,
+      "notes_per_second": 12.5,
+      "apple_music_search_query": "Boccherini C major Menuet and Trio from String Quintet in C major (La",
+      "parent_work_title": "Menuett and Trio",
+      "wikidata_id": "Q7623961",
+      "wikidata_title": "String Quintet in E major",
+      "musicbrainz_id": "d0938129-7654-4a23-8e8e-b44a9e8c3c34",
+      "imslp_id": "String_Quintet_in_E_major,_G.275_(Boccherini,_Luigi)",
+      "wikidata_match_method": "title_substring",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Boccherini%20Menuet%20and%20Trio%20from%20String%20Quintet%20in%20C%20major%20%28La",
+      "display_title": "String Quintet in E major"
+    }
+  ],
+  "birth_year": 1743,
+  "death_year": 1805,
+  "wikipedia_extract": "Ridolfo Luigi Boccherini (, also US: ; Italian: [riˈdɔlfo luˈiːdʒi bokkeˈriːni] ; 19 February 1743 – 28 May 1805) was an Italian composer and cellist of the Classical era whose music retained a courtly and galante style even while he matured somewhat apart from the major classical musical centers. He is best known for a minuet from his String Quintet in E, Op. 11, No.",
+  "wikipedia_compositions_url": "https://en.wikipedia.org/wiki/List_of_compositions_by_Luigi_Boccherini",
+  "wikidata_id": "Q189766"
+}

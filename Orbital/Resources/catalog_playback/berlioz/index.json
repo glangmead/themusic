@@ -1,0 +1,71 @@
+{
+  "composer_name": "Hector Berlioz",
+  "name_last_first": "Berlioz, (Louis) Hector",
+  "slug": "berlioz",
+  "wiki_page": "https://en.wikipedia.org/wiki/Hector_Berlioz",
+  "apple_music_playlist": "https://music.apple.com/mk/playlist/pl.622ec630ca554a0b91bfe27145e2c069",
+  "era": "Romantic",
+  "dates": "1803 – 1869",
+  "nationality": "FRA",
+  "notable": true,
+  "works": [
+    {
+      "title": "L'adieu des bergers from L'Enfance du Christ Op. 25 - Hector Berlioz",
+      "musicxml": "musicxml/Ladieu_des_bergers_from_LEnfance_du_Christ_Op_25_-_Hector_Berlioz.mxl",
+      "midi": "midi/Ladieu_des_bergers_from_LEnfance_du_Christ_Op_25_-_Hector_Berlioz.mid",
+      "catalog_numbers": {
+        "Op": "25"
+      },
+      "key": "E major",
+      "time_signature": "3/8",
+      "instruments": [
+        "Oboe",
+        "Soprano",
+        "Alto",
+        "Tenor",
+        "Bass"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.89,
+        "n_favorites": 3,
+        "n_views": 232,
+        "duration_seconds": 49.749999999336666,
+        "n_notes": 1073,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/33131263/scores/5770846",
+        "musescore_duration": "01:43"
+      },
+      "instruments_gm": [
+        "Oboe",
+        "Flute"
+      ],
+      "tempo_bpm": 120,
+      "n_measures": 126,
+      "n_parts": 5,
+      "n_notes": 1054,
+      "notes_per_second": 21.2,
+      "apple_music_search_query": "Berlioz Op 25 E major",
+      "year_composed": 1850,
+      "wikidata_id": "Q1516577",
+      "wikidata_title": "L'enfance du Christ",
+      "musicbrainz_id": "e49d8194-aa12-4e56-9152-01e8dc6a8769",
+      "imslp_id": "L'enfance_du_Christ,_H_130_(Berlioz,_Hector)",
+      "wikidata_match_method": "title_substring",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Berlioz%20Op%2025",
+      "display_title": "L'enfance du Christ"
+    }
+  ],
+  "birth_year": 1803,
+  "death_year": 1869,
+  "catalog_type": "Op",
+  "wikipedia_extract": "Louis-Hector Berlioz (11 December 1803 – 8 March 1869) was a French Romantic composer and conductor. His output includes orchestral works such as the Symphonie fantastique and Harold in Italy, choral pieces including the Requiem and L'Enfance du Christ, his three operas Benvenuto Cellini, Les Troyens and Béatrice et Bénédict, and works of hybrid genres such as the \"dramatic symphony\" Roméo et Juliette and the \"dramatic legend\" La Damnation de Faust. The elder son of a provincial physician, Be...",
+  "wikipedia_compositions_url": "https://en.wikipedia.org/wiki/List_of_compositions_by_Hector_Berlioz",
+  "wikidata_id": "Q1151",
+  "apple_music_artist_id": "219726",
+  "apple_music_classical_url": "https://classical.music.apple.com/us/artist/219726"
+}

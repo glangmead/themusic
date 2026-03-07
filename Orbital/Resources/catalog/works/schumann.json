@@ -1,0 +1,1134 @@
+{
+  "composer_slug": "schumann",
+  "composer_qid": "Q7351",
+  "work_count": 128,
+  "midi_file_count": 14,
+  "works": [
+    {
+      "qid": "Q1646954",
+      "title": "Toccata",
+      "imslp_id": "Toccata,_Op.7_(Schumann,_Robert)",
+      "pdf_filename": "PMLP02926-E927717_1_168-179-Schumann-werke-pf-solo-Dorffel-Schmidt-vol3.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp90",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Toccata_(Schumann)",
+      "wikipedia_extract": "The Toccata in C major, Op. 7 by Robert Schumann, was completed in 1830 and revised in 1833. The piece is in sonata-allegro form.",
+      "pageviews_yearly": 4489,
+      "date": "1829-00-00"
+    },
+    {
+      "qid": "Q761567",
+      "title": "Papillons",
+      "imslp_id": "Papillons,_Op.2_(Schumann,_Robert)",
+      "pdf_filename": "PMLP02829-E927717_1_154-167-Schumann-werke-pf-solo-Dorffel-Schmidt-vol3.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp70",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Papillons",
+      "wikipedia_extract": "\nPapillons, Op. 2, is a suite of piano pieces written in 1831 by Robert Schumann when he was 21 years old. The work is meant to represent a masked ball and was inspired by Jean Paul's novel Flegeljahre.",
+      "pageviews_yearly": 10509,
+      "date": "1831-00-00"
+    },
+    {
+      "qid": "Q3153199",
+      "title": "6 Intermezzi",
+      "imslp_id": "Intermezzi,_Op.4_(Schumann,_Robert)",
+      "pdf_filename": "PMLP02797-E927717_1-2_195-225-Schumann-werke-pf-solo-Dorffel-Schmidt-vol3.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp72",
+      "date": "1832-00-00"
+    },
+    {
+      "qid": "Q3490133",
+      "title": "Piano Sonata No. 1",
+      "imslp_id": "Piano_Sonata_No.1,_Op.11_(Schumann,_Robert)",
+      "pdf_filename": "PMLP02193-E927719_1-2_5-47-Schumann-werke-pf-solo-Dorffel-Schmidt-vol5.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp57",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_No._1_(Schumann)",
+      "wikipedia_extract": "The Piano Sonata No. 1 in F♯ minor, Op. 11, was composed by Robert Schumann from 1833 to 1835. He published it anonymously as \"Pianoforte Sonata, dedicated to Clara by Florestan and Eusebius\".",
+      "pageviews_yearly": 7644,
+      "date": "1835-00-00"
+    },
+    {
+      "qid": "Q1395862",
+      "title": "Fantasie in C",
+      "imslp_id": "Fantasie,_Op.17_(Schumann,_Robert)",
+      "pdf_filename": "PMLP02776-E927717_1-2_107-140-Schumann-werke-pf-solo-Dorffel-Schmidt-vol3.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp99",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fantasie_in_C_(Schumann)",
+      "wikipedia_extract": "The Fantasie in C, Op. 17, was written by Robert Schumann in 1836. It was revised prior to publication in 1839, when it was dedicated to Franz Liszt. It is generally described as one of Schumann's greatest works for solo piano, and is one of the central works of the early Romantic period. It is often called by the Italian version, fantasia; the word \"Fantasie\" is the German spelling.",
+      "pageviews_yearly": 19060,
+      "date": "1836-00-00"
+    },
+    {
+      "qid": "Q623826",
+      "title": "Arabeske in C major",
+      "imslp_id": "Arabeske,_Op.18_(Schumann,_Robert)",
+      "pdf_filename": "Arabesque.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp100",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arabeske_(Schumann)",
+      "wikipedia_extract": "Arabeske in C major, Op. 18 is a composition by Robert Schumann, written in 1839 when he was 29 years old. He dedicated it to Frau Majorin Friederike Serre auf Maxen, to whom he also dedicated his Blumenstück in D-flat, Op. 19. In the autumn of 1838 Schumann had left Leipzig for Vienna. His relationship with Clara Wieck had reached a point of no return, as her father vehemently opposed anything that might interfere with his daughter's career as a pianist and strongly disapproved of Schumann as a possible son-in-law. Geographically yet not emotionally detached from Clara, he was able to communicate with her only through letters and in his own music. This has been proposed as an explanation for this work, which alternates passages of wistful longing with more robust, declamatory episodes.",
+      "pageviews_yearly": 8477,
+      "date": "1838-00-00"
+    },
+    {
+      "qid": "Q771607",
+      "title": "Novelletten",
+      "imslp_id": "8_Novelletten,_Op.21_(Schumann,_Robert)",
+      "pdf_filename": "PMLP02827-E927716_1-2_75-142-Schumann-werke-pf-solo-Dorffel-Schmidt-vol2.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp103",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Novelletten_(Schumann)",
+      "wikipedia_extract": "The Novelletten, Op. 21, is a set of eight pieces for solo piano, written by Robert Schumann in 1838. This composition is dedicated to Adolf von Henselt.",
+      "pageviews_yearly": 5638,
+      "date": "1838-00-00"
+    },
+    {
+      "qid": "Q4930736",
+      "title": "Blumenstück",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp101",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Blumenst%C3%BCck_(Schumann)",
+      "wikipedia_extract": "\nBlumenstück in D-flat, Op. 19, is a piano work by Robert Schumann, written in 1839. Blumenstück is a series of short, connected and thematically related episodes, of which the second forms a recurring refrain while undergoing changes in both key and mood. It is considered to reflect the amorous human activities with which flowers are associated, rather than as depictions of flowers themselves. The piece takes between six and seven minutes to play.",
+      "pageviews_yearly": 3743,
+      "date": "1839-00-00"
+    },
+    {
+      "qid": "Q1397324",
+      "title": "Faschingsschwank aus Wien",
+      "imslp_id": "Faschingsschwank_aus_Wien,_Op.26_(Schumann,_Robert)",
+      "pdf_filename": "PMLP02778-E927717_1_36-64-Schumann-werke-pf-solo-Dorffel-Schmidt-vol3.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp105",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Faschingsschwank_aus_Wien",
+      "wikipedia_extract": "Faschingsschwank aus Wien, Op. 26, is a solo piano work by Robert Schumann. He began composition of the work in 1839 in Vienna. He wrote the first four movements in Vienna, and the last on his return to Leipzig.",
+      "pageviews_yearly": 8965,
+      "date": "1839-00-00"
+    },
+    {
+      "qid": "Q1637202",
+      "title": "Humoreske",
+      "imslp_id": "Humoreske,_Op.20_(Schumann,_Robert)",
+      "pdf_filename": "PMLP02779-E927717_1-2_5-35-Schumann-werke-pf-solo-Dorffel-Schmidt-vol3.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp102",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Humoreske_(Schumann)",
+      "wikipedia_extract": "\nHumoreske in B-flat major, Op. 20, is a piano piece by Robert Schumann, composed in 1839 and dedicated to Julie von Webenau. Schumann cited Jean Paul's style of humour as source of inspiration, although there are no direct programmatic links to Jean Paul's oeuvre found in the piece.",
+      "pageviews_yearly": 6258,
+      "date": "1839-01-01"
+    },
+    {
+      "qid": "Q108874761",
+      "title": "In der Fremde",
+      "date": "1840-00-00"
+    },
+    {
+      "qid": "Q1469612",
+      "title": "Liederkreis, Op. 39",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp203",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liederkreis%2C_Op._39_(Schumann)",
+      "wikipedia_extract": "Liederkreis, Op. 39, is a song cycle composed by Robert Schumann. Its poetry is taken from Joseph von Eichendorff's collection entitled Intermezzo. Schumann wrote two cycles of this name – the other being his Opus 24, to texts by Heinrich Heine – so this work is also known as the Eichendorff Liederkreis. Schumann wrote, \"The voice alone cannot reproduce everything or produce every effect; together with the expression of the whole the finer details of the poem should also be emphasized; and all is well so long as the vocal line is not sacrificed.\" Liederkreis, Op. 39, is regarded as one of the great song cycles of the 19th century, capturing, in essence, the Romantic experience of landscape. Schumann wrote it starting in May 1840, the year in which he wrote such a large number of lieder that it is known as his \"year of song\" or Liederjahr.",
+      "pageviews_yearly": 14231,
+      "date": "1840-00-00",
+      "movements": [
+        {
+          "qid": "Q108874761"
+        },
+        {
+          "qid": "Q108846778"
+        },
+        {
+          "qid": "Q108866541"
+        }
+      ]
+    },
+    {
+      "qid": "Q108846778",
+      "title": "Mondnacht",
+      "date": "1840-00-00"
+    },
+    {
+      "qid": "Q136996328",
+      "title": "Romances and ballads, op. 49",
+      "date": "1840-00-00",
+      "movements": [
+        {
+          "qid": "Q136996370"
+        }
+      ]
+    },
+    {
+      "qid": "Q114245464",
+      "title": "Talismane",
+      "date": "1840-00-00"
+    },
+    {
+      "qid": "Q108866541",
+      "title": "Zwielicht",
+      "date": "1840-00-00"
+    },
+    {
+      "qid": "Q125506948",
+      "title": "12 Gedichte aus Friedrich Rückert’s ‘Liebesfrühling’",
+      "date": "1841-00-00",
+      "movements": [
+        {
+          "qid": "Q125506949"
+        },
+        {
+          "qid": "Q125506951"
+        },
+        {
+          "qid": "Q125506952"
+        },
+        {
+          "qid": "Q111264688"
+        }
+      ]
+    },
+    {
+      "qid": "Q999104",
+      "title": "Piano Concerto",
+      "imslp_id": "Piano_Concerto,_Op.54_(Schumann,_Robert)",
+      "pdf_filename": "PMLP03738-Grainger_-_Concert_Transcription_-_Schumann_-_1st_Mvt_Piano_Concerto__23p_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp22",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Concerto_(Schumann)",
+      "wikipedia_extract": "The Piano Concerto in A minor, Op. 54, by the German Romantic composer Robert Schumann was completed in 1845 and is the composer's only piano concerto. The complete work was premiered in Dresden on 4 December 1845. It is one of the most widely performed and recorded piano concertos from the Romantic period.",
+      "pageviews_yearly": 25088,
+      "date": "1841-00-00"
+    },
+    {
+      "qid": "Q7190135",
+      "title": "Piano Quartet",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp37",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Quartet_(Schumann)",
+      "wikipedia_extract": "The Piano Quartet in E♭ major, Op. 47, was composed by Robert Schumann in 1842 for piano, violin, viola and cello. Written during a productive period in which he produced several large-scale chamber music works, it has been described as the \"creative double\" of his Piano Quintet, finished weeks earlier. Though dedicated to the Russian cellist Mathieu Wielhorsky, it was written with Schumann's wife Clara in mind, who would be the pianist at the premiere on 8 December 1844 in Leipzig.",
+      "pageviews_yearly": 12786,
+      "date": "1842-00-00"
+    },
+    {
+      "qid": "Q1620665",
+      "title": "Piano Quintet",
+      "imslp_id": "Piano_Quintet,_Op.44_(Schumann,_Robert)",
+      "pdf_filename": "PMLP16473-39087012432235Arrangements_No._1.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp32",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Quintet_(Schumann)",
+      "wikipedia_extract": "The Piano Quintet in E♭ major, Op. 44, by Robert Schumann was composed in 1842 and received its first public performance the following year. Noted for its \"extroverted, exuberant\" character, Schumann's piano quintet is considered one of his finest compositions and a major work of nineteenth-century chamber music. Composed for piano and string quartet, the work revolutionized the instrumentation and musical character of the piano quintet and established it as a quintessentially Romantic genre.",
+      "pageviews_yearly": 15562,
+      "date": "1842-00-00"
+    },
+    {
+      "qid": "Q1170035",
+      "title": "Paradise and the Peri",
+      "imslp_id": "Das_Paradies_und_die_Peri,_Op.50_(Schumann,_Robert)",
+      "pdf_filename": "PMLP65778-00._SCHUMANN_-_PARADIES_UND_DIE_PERI__OP._50_-_Conductor_s_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp151",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Paradise_and_the_Peri",
+      "wikipedia_extract": "Paradise and the Peri, in German Das Paradies und die Peri, is a secular oratorio for soloists, choir, and orchestra by Robert Schumann. Completed in 1843, the work was published as Schumann's Op. 50.",
+      "pageviews_yearly": 9786,
+      "date": "1843-00-00"
+    },
+    {
+      "qid": "Q96371706",
+      "title": "Albumblätter",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp131",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Albumbl%C3%A4tter_(Schumann)",
+      "wikipedia_extract": "\nAlbumblätter, Op. 124, is a collection of piano pieces by Robert Schumann assembled from earlier unpublished pieces after the success of the Album for the Young , Op. 68. Originally intended to form part of a single collection entitled Spreu, these pieces were published in 1853, some two years after the first collection Bunte Blätter, Op. 99.",
+      "pageviews_yearly": 4557,
+      "date": "1845-00-00"
+    },
+    {
+      "qid": "Q210568",
+      "title": "Symphony No. 2",
+      "imslp_id": "Symphony_No.2,_Op.61_(Schumann,_Robert)",
+      "pdf_filename": "PMLP10836-1._Ausgabe_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp9",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._2_(Schumann)",
+      "wikipedia_extract": "The Symphony in C major by German composer Robert Schumann was published in 1847 as his Symphony No. 2, Op. 61, although it was the third symphony he had completed, counting the B♭ major symphony published as No. 1 in 1841, and the original version of his D minor symphony of 1841. It is dedicated to Oscar I, king of Sweden and Norway.",
+      "pageviews_yearly": 14306,
+      "date": "1845-00-00"
+    },
+    {
+      "qid": "Q3539371",
+      "title": "Piano Trio No. 2",
+      "imslp_id": "Piano_Trio_No.2,_Op.80_(Schumann,_Robert)",
+      "pdf_filename": "PMLP25410-RS23.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp39",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Trio_No._2_(Schumann)",
+      "wikipedia_extract": "The Piano Trio No. 2 in F major, Op. 80, by Robert Schumann was written in 1847. It has four movements:Sehr lebhaft in F major\nMit innigem Ausdruck – Lebhaft in D♭ major\nIn mässiger Bewegung in B♭minor\nNicht zu rasch in F major",
+      "pageviews_yearly": 2623,
+      "date": "1847-00-00"
+    },
+    {
+      "qid": "Q115793140",
+      "title": "Die wandelnde Glocke",
+      "date": "1849-00-00"
+    },
+    {
+      "qid": "Q5434322",
+      "title": "Fantasy Pieces for Clarinet and Piano",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fantasiest%C3%BCcke%2C_Op._73",
+      "wikipedia_extract": "Fantasiestücke for clarinet and piano, Op. 73, were written in 1849 by Robert Schumann. Though they were originally intended for clarinet and piano, Schumann indicated that the clarinet part could be also performed on violin or cello.",
+      "pageviews_yearly": 12616,
+      "date": "1849-00-00"
+    },
+    {
+      "qid": "Q116392211",
+      "title": "Five Pieces in Folk Style",
+      "imslp_id": "5_Stücke_im_Volkston,_Op.102_(Schumann,_Robert)",
+      "pdf_filename": "PMLP54967-RS33.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp49",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Five_Pieces_in_Folk_Style",
+      "wikipedia_extract": "Robert Schumann's Five Pieces in Folk Style, Op. 102 is a set of five short pieces for cello and piano, composed in 1849 and published in 1851 with a dedication to cellist Andreas Grabau. It was Schumann's only published work designed explicitly for performance by cello and piano, though the pieces also appeared in a version prepared by Schumann for violin and piano. The first edition's title page reads \"ad libitum violine\".",
+      "pageviews_yearly": 5078,
+      "date": "1849-00-00"
+    },
+    {
+      "qid": "Q55614582",
+      "title": "Introduction and Allegro appassionato",
+      "imslp_id": "Konzertstück,_Op.92_(Schumann,_Robert)",
+      "pdf_filename": "PMLP59145-Schumann__Robert_Werke_Breitkopf_Gregg_Serie_3_RS_17_Op_92_scan.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp23",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Introduction_and_Allegro_appassionato_(Schumann)",
+      "wikipedia_extract": "The Introduction and Allegro appassionato (Konzertstück) for piano and orchestra in G major, Op. 92, was composed by Robert Schumann in September 1849. It received its first performance in Leipzig on February 14, 1850, with Clara Schumann at the piano with Julius Rietz conducting. The work was published in 1852. The work takes around 15 minutes to perform.",
+      "pageviews_yearly": 2831,
+      "date": "1849-00-00"
+    },
+    {
+      "qid": "Q114267746",
+      "title": "Lied Lynceus des Türmers",
+      "date": "1849-00-00"
+    },
+    {
+      "qid": "Q114133526",
+      "title": "Mignon",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp155",
+      "date": "1849-00-00"
+    },
+    {
+      "qid": "Q1257134",
+      "title": "Three Romances for Oboe and Piano",
+      "imslp_id": "3_Romanzen,_Op.94_(Schumann,_Robert)",
+      "pdf_filename": "PMLP39688-RSchumann_3_Romances__Op.94_fe-2.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Three_Romances_for_Oboe_and_Piano_(Schumann)",
+      "wikipedia_extract": "The Three Romances for Oboe and Piano, Op. 94 is a composition by Robert Schumann, his only composition for oboe. It was composed in December 1849. The work consists of three short pieces in A-B-A form, and it was written during what was speculated to be one of Schumann's manic episodes.",
+      "pageviews_yearly": 8309,
+      "date": "1849-00-00"
+    },
+    {
+      "qid": "Q223540",
+      "title": "Symphony No. 3",
+      "imslp_id": "Symphony_No.3,_Op.97_(Schumann,_Robert)",
+      "pdf_filename": "PMLP10638-1._Ausgabe_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp10",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._3_(Schumann)",
+      "wikipedia_extract": "The Symphony No. 3 in E♭ major, Op. 97, also known as the Rhenish, is the last symphony composed by Robert Schumann, although not the last published. It was composed from 2 November to 9 December 1850 and premiered on 6 February 1851 in Düsseldorf, conducted by Schumann himself, and was received with mixed reviews, \"ranging from praise without qualification to bewilderment\". However, according to A. Peter Brown, members of the audience applauded between every movement, and especially at the end of the work when the orchestra joined them in congratulating Schumann by shouting \"hurrah!\".",
+      "pageviews_yearly": 19175,
+      "date": "1850-00-00"
+    },
+    {
+      "qid": "Q113939115",
+      "title": "Herman and Dorothea",
+      "imslp_id": "Hermann_und_Dorothea,_Op.136_(Schumann,_Robert)",
+      "pdf_filename": "PMLP22439-00._SCHUMANN_-_HERMAN___DOROTHEA_OVERTURE__OP._136_-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1851-00-00"
+    },
+    {
+      "qid": "Q494872",
+      "title": "Märchenbilder",
+      "imslp_id": "Märchenbilder,_Op.113_(Schumann,_Robert)",
+      "pdf_filename": "Märchenbilder__Op._113.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp48",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/M%C3%A4rchenbilder",
+      "wikipedia_extract": "\nMärchenbilder or Fairy Tale Pictures, for Piano and Viola, Op. 113, was written by Robert Schumann in March 1851. The work is dedicated to the German violinist and conductor Wilhelm Joseph von Wasielewski. It consists of four character pieces and is an original composition featuring the viola from the Romantic period.",
+      "pageviews_yearly": 6182,
+      "date": "1851-00-00"
+    },
+    {
+      "qid": "Q3073254",
+      "title": "Violin Sonata No. 1 in A Minor, Op. 105",
+      "imslp_id": "Violin_Sonata_No.1,_Op.105_(Schumann,_Robert)",
+      "pdf_filename": "PMLP10272-RS29.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Violin_Sonata_No._1_(Schumann)",
+      "wikipedia_extract": "The Violin Sonata No. 1 in A minor, Op. 105 of Robert Schumann was written the week of 12–16 September 1851. Schumann was reported to have expressed displeasure with the work. This was also the year of the premiere of the Rhenish symphony, and among compositions the substantial revision of the Fourth Symphony, the Third Piano Trio, the oratorio Der Rose Pilgerfahrt, a number of piano works and two of his concert overtures, Julius Caesar and Hermann und Dorothea after Goethe.",
+      "pageviews_yearly": 6587,
+      "date": "1852-03-21"
+    },
+    {
+      "qid": "Q5553745",
+      "title": "Gesänge der Frühe",
+      "imslp_id": "Gesänge_der_Frühe,_Op.133_(Schumann,_Robert)",
+      "pdf_filename": "PMLP02823-E927718_1_98-110-Schumann-werke-pf-solo-Dorffel-Schmidt-vol4.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp133",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ges%C3%A4nge_der_Fr%C3%BChe",
+      "wikipedia_extract": "\nGesänge der Frühe, Op. 133, is a composition in five movements by Robert Schumann for solo piano. A performance takes about 13 minutes.",
+      "pageviews_yearly": 5813,
+      "date": "1853-00-00"
+    },
+    {
+      "qid": "Q1957384",
+      "title": "Märchenerzählungen (Schumann)",
+      "imslp_id": "Märchenerzählungen,_Op.132_(Schumann,_Robert)",
+      "pdf_filename": "PMLP53369-Schuman_March_MS.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp54",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/M%C3%A4rchenerz%C3%A4hlungen",
+      "wikipedia_extract": "Märchenerzählungen, Op. 132, is a trio composition by Robert Schumann in four movements for clarinet, viola and piano. He composed the clarinet-viola-piano trio in B-flat major, between 9 and 11 October 1853. The movements are connected by a motif (Kernmotiv). The work is dedicated to Schumann's pupil Albert Dietrich, and was published in 1854 by Breitkopf & Härtel.",
+      "pageviews_yearly": 4356,
+      "date": "1853-00-00"
+    },
+    {
+      "qid": "Q1501118",
+      "title": "Violin Concerto",
+      "imslp_id": "Violin_Concerto_in_D_minor,_WoO_23_(Schumann,_Robert)",
+      "pdf_filename": "PMLP10766-Partitur_D-B_Mus._ms._autogr._Schumann__R._22.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp26",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Violin_Concerto_(Schumann)",
+      "wikipedia_extract": "Robert Schumann's Violin Concerto in D minor, WoO 23, written in 1853, was his only violin concerto and one of his last significant compositions. It remained unknown to all but a very small circle for more than 80 years after it was written.",
+      "pageviews_yearly": 10354,
+      "date": "1853-00-00"
+    },
+    {
+      "qid": "Q3490220",
+      "title": "Violin Sonata No. 2 (Schumann)",
+      "imslp_id": "Violin_Sonata_No.2,_Op.121_(Schumann,_Robert)",
+      "pdf_filename": "PMLP17324-RS30.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp43",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Violin_Sonata_No._2_(Schumann)",
+      "wikipedia_extract": "The Violin Sonata No. 2 in D minor, Op. 121, by Robert Schumann was completed in November 1851, Dedicated to the violinist Ferdinand David, the sonata received its first public performance from Clara Schumann and Joseph Joachim on 29 October 1853 in Düsseldorf, in a concert that marked the beginning of a long term musical collaboration.",
+      "pageviews_yearly": 4599,
+      "date": "1853-10-29"
+    },
+    {
+      "qid": "Q2636117",
+      "title": "Cello Concerto",
+      "imslp_id": "Cello_Concerto,_Op.129_(Schumann,_Robert)",
+      "pdf_filename": "PMLP13161-Schumann_cello_concerto.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp27",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cello_Concerto_(Schumann)",
+      "wikipedia_extract": "The Cello Concerto in A minor, Op. 129, by Robert Schumann was completed in a period of only two weeks, between 10 October and 24 October 1850, shortly after Schumann became the music director at Düsseldorf.",
+      "pageviews_yearly": 14480,
+      "date": "1860-06-09"
+    },
+    {
+      "qid": "Q112756664",
+      "title": "2nd sonata, op. 22, no. 2, G minor"
+    },
+    {
+      "qid": "Q11283743",
+      "title": "Adagio and Allegro",
+      "imslp_id": "Adagio_and_Allegro,_Op.70_(Schumann,_Robert)",
+      "pdf_filename": "PMLP57112-RS27.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp51",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adagio_and_Allegro_for_Horn_and_Piano",
+      "wikipedia_extract": "Adagio and Allegro, Op. 70, is a chamber music piece in A-flat major for piano and horn by Robert Schumann. It was written in February 1849. Schumann planned alternative editions before it was printed in which the horn or cello or violin could be replaced. The title was initially intended to be \"Romance and Allegro\". Schumann then decided on \"Adagio and Allegro\".",
+      "pageviews_yearly": 5197
+    },
+    {
+      "qid": "Q580760",
+      "title": "Album for the Young",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Schumann_-_Album_for_the_Young_Op_68_No_5_-_A_Little_Piece.mid",
+        "midi/Schumann_-_Album_for_the_Young_Op_68_No_11_Sicilienne.mid",
+        "midi/Schumann_-_Album_for_the_Young_Op_68_No_8_The_Rough_Rider.mid",
+        "midi/Schumann_-_Album_for_the_Young_Op_68_No_6_The_Poor_Orphan-Child.mid",
+        "midi/Schumann_-_Album_for_the_Young_Op_68_No_4_A_Hymn-Tune_-_Choral.mid",
+        "midi/Schumann_-_Album_for_the_Young_Op_68_No_7_The_Little_Hunters_Song.mid",
+        "midi/Schumann_-_Album_for_the_Young_Op_68_No_10_The_Merry_Peasant.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q17192594",
+      "title": "Andante and Variations, Op. 46"
+    },
+    {
+      "qid": "Q116026525",
+      "title": "Barenboim Celibidache"
+    },
+    {
+      "qid": "Q11960227",
+      "title": "Barn Jesus i en krybbe lå"
+    },
+    {
+      "qid": "Q136996370",
+      "title": "Beiden Grenadiere"
+    },
+    {
+      "qid": "Q79267473",
+      "title": "Belshazzar = Gwledd Belsasar"
+    },
+    {
+      "qid": "Q30681063",
+      "title": "Bunte Blätter",
+      "imslp_id": "Bunte_Blätter,_Op.99_(Schumann,_Robert)",
+      "pdf_filename": "PMLP02770-E927715_1_100-134-Schumann-werke-pf-solo-Dorffel-Schmidt-vol1.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp129",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bunte_Bl%C3%A4tter",
+      "wikipedia_extract": "Bunte Blätter, Op. 99, is a collection of piano pieces by Robert Schumann assembled from earlier unpublished pieces after the success of the Album for the Young , Op. 68. Upon publication the pieces were issued both as a complete set and individual pieces, the latter in differently colored covers.",
+      "pageviews_yearly": 6811
+    },
+    {
+      "qid": "Q114051800",
+      "title": "Canonbury"
+    },
+    {
+      "qid": "Q1043926",
+      "title": "Carnaval",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Schumann_Carnaval_-_No_12_Chopin_Piano_solo.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q4215498",
+      "title": "Carnaval",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp92"
+    },
+    {
+      "qid": "Q5043820",
+      "title": "Carnaval",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp92",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Carnaval_(ballet)",
+      "wikipedia_extract": "Carnaval is a ballet based on the music of Robert Schumann's piano suite Carnaval, Op. 9, as orchestrated by Alexander Glazunov, Nikolai Rimsky-Korsakov, Anatoly Lyadov and Alexander Tcherepnin. It was choreographed by Michel Fokine to his own libretto, with costumes designed by Léon Bakst, and premiered in Pavlovsk on 5 March 1910.",
+      "pageviews_yearly": 3357
+    },
+    {
+      "qid": "Q56458420",
+      "title": "Carnaval",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp92"
+    },
+    {
+      "qid": "Q1211134",
+      "title": "Colonel Chabert",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Colonel_Chabert_(1994_film)",
+      "wikipedia_extract": "Le Colonel Chabert is a 1994 French historical drama film directed by Yves Angelo and starring Gérard Depardieu, Fanny Ardant and Fabrice Luchini. It is based on the novel Le Colonel Chabert by Honoré de Balzac. It is the sixth film adaptation of Balzac's novel.",
+      "pageviews_yearly": 8843
+    },
+    {
+      "qid": "Q11187907",
+      "title": "Concert Piece for four Horns and Orchestra",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Konzertst%C3%BCck_for_Four_Horns_and_Orchestra",
+      "wikipedia_extract": "The Konzertstück for Four Horns and large orchestra in F major, Op. 86, was composed by Robert Schumann in 1849 and premiered at the Leipzig Gewandhaus in 1850.",
+      "pageviews_yearly": 4444
+    },
+    {
+      "qid": "Q668821",
+      "title": "Davidsbündlertänze",
+      "imslp_id": "Davidsbündlertänze,_Op.6_(Schumann,_Robert)",
+      "pdf_filename": "PMLP02774-E927716_1-2_5-39-Schumann-werke-pf-solo-Dorffel-Schmidt-vol2.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp89",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Davidsb%C3%BCndlert%C3%A4nze",
+      "wikipedia_extract": "\nDavidsbündlertänze, Op. 6, is a group of eighteen pieces for piano composed in 1837 by Robert Schumann, who named them after his music society Davidsbündler. The low opus number is misleading: the work was written after Carnaval, Op. 9, and the Symphonic Studies, Op. 13.",
+      "pageviews_yearly": 14390
+    },
+    {
+      "qid": "Q108866896",
+      "title": "Der Einsiedler"
+    },
+    {
+      "qid": "Q121356671",
+      "title": "Der Handschuh",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp225",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Der_Handschuh_(Schumann)",
+      "wikipedia_extract": "Der Handschuh is a German lied written by Robert Schumann and published in 1850 as his Op.87. The song's text is the eponymous poem by German poet Friedrich Schiller, written in 1797 as part of a ballad competition alongside friend and colleague Johann Wolfgang von Goethe.",
+      "pageviews_yearly": 1200
+    },
+    {
+      "qid": "Q4443382",
+      "title": "Der Rose Pilgerfahrt",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp157"
+    },
+    {
+      "qid": "Q1209545",
+      "title": "Dichterliebe",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Dichterliebe_Summer_Rain.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q11484158",
+      "title": "Drei Fantasiestücke",
+      "imslp_id": "3_Fantasiestücke,_Op.111_(Schumann,_Robert)",
+      "pdf_filename": "PMLP02695-E927718_1_52-62-Schumann-werke-pf-solo-Dorffel-Schmidt-vol4.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp130",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Three_Fantasiest%C3%BCcke%2C_Op._111",
+      "wikipedia_extract": "Three Fantasiestücke for piano, Op. 111, were written in 1851 by Robert Schumann.",
+      "pageviews_yearly": 3749
+    },
+    {
+      "qid": "Q110044416",
+      "title": "Drei Gedichte nach Emanuel Geibel für mehrstimmigen Chor und Klavier",
+      "imslp_id": "3_Gedichte,_Op.29_(Schumann,_Robert)",
+      "pdf_filename": "PMLP49039-00._SCHUMANN_-_ZIGUENERLEBEN_OVERTURE__OP._29-3_-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q340817",
+      "title": "Eight Polonaises",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp137"
+    },
+    {
+      "qid": "Q5824815",
+      "title": "El día que nací yo"
+    },
+    {
+      "qid": "Q89793552",
+      "title": "El vent de l'illa"
+    },
+    {
+      "qid": "Q78526812",
+      "title": "Er, der Herrlichste von allen = Ef, yr haelaf oll o ddynion"
+    },
+    {
+      "qid": "Q136066171",
+      "title": "Erster Verlust Op. 68, No. 16"
+    },
+    {
+      "qid": "Q2270897",
+      "title": "F-A-E Sonata",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp45",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/F-A-E_Sonata",
+      "wikipedia_extract": "\nThe F-A-E Sonata, a four-movement work for violin and piano, is a collaborative musical work by three composers: Robert Schumann, the young Johannes Brahms, and Schumann's pupil Albert Dietrich. It was composed in Düsseldorf in October 1853.",
+      "pageviews_yearly": 14396
+    },
+    {
+      "qid": "Q116155094",
+      "title": "Fantasia op. 17, C-major"
+    },
+    {
+      "qid": "Q776368",
+      "title": "Fantasiestücke, Op. 12",
+      "imslp_id": "Fantasiestücke,_Op.12_(Schumann,_Robert)",
+      "pdf_filename": "PMLP02924-2024-03-10-18-20-2-01.PDF",
+      "has_pdf": false,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp94",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fantasiest%C3%BCcke%2C_Op._12",
+      "wikipedia_extract": "Robert Schumann's Fantasiestücke, Op. 12, is a set of eight pieces for piano, written in 1837. The title was inspired by the 1814–15 collection of novellas, essays, treatises, letters, and writings about music, Fantasy Pieces in Callot's Manner by one of his favourite authors, E. T. A. Hoffmann. Schumann dedicated the pieces to Fräulein Anna Robena Laidlaw, an accomplished 18-year-old Scottish pianist with whom Schumann had become good friends.",
+      "pageviews_yearly": 16967
+    },
+    {
+      "qid": "Q115896515",
+      "title": "Fantasiestücke, Op. 88",
+      "imslp_id": "Phantasiestücke,_Op.88_(Schumann,_Robert)",
+      "pdf_filename": "PMLP95556-115692.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q635095",
+      "title": "Frauen-Liebe und Leben",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp205",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Frauen-Liebe_und_Leben",
+      "wikipedia_extract": "Frauen-Liebe und Leben is a cycle of poems by Adelbert von Chamisso, written in late 1829 and early 1830. They describe the course of a woman's love for a man, from their first meeting to her widowhood. The poems were widely popular and set to music by many composers, including Carl Loewe and Franz Lachner. Robert Schumann's song cycle on the text is the most widely known.",
+      "pageviews_yearly": 13167
+    },
+    {
+      "qid": "Q111264688",
+      "title": "Gedichte aus Liebesfrühling op.37",
+      "imslp_id": "Gedichte aus 'Liebesfrühling', Op.37 (Schumann, Robert)",
+      "pdf_filename": "PMLP12740-RS126.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q1499682",
+      "title": "Geliebte Clara",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Geliebte_Clara",
+      "wikipedia_extract": "Geliebte Clara is a Franco-German-Hungarian 2008 film, directed by Helma Sanders-Brahms, her last film before her 2014 death, about the pianist Clara Schumann and her marriage with the composer Robert Schumann.",
+      "pageviews_yearly": 5329
+    },
+    {
+      "qid": "Q957377",
+      "title": "Genoveva",
+      "imslp_id": "Genoveva,_Op.81_(Schumann,_Robert)",
+      "pdf_filename": "PMLP22451-Partitur_D-B_Mus._ms._autogr._Schumann__R._1.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp4",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Genoveva",
+      "wikipedia_extract": "Genoveva, Op. 81, is an opera in four acts by Robert Schumann in the genre of German Romanticism with a libretto by Robert Reinick and the composer. The only opera Schumann ever wrote, it received its first performance on 25 June 1850 at the Stadttheater in Leipzig, with the composer conducting. It received only three performances during the premiere, and the negative criticism it received in the press played a decisive role in Schumann's decision to not write a second opera.",
+      "pageviews_yearly": 10400
+    },
+    {
+      "qid": "Q114245530",
+      "title": "Gesänge op. 141. Talismane"
+    },
+    {
+      "qid": "Q18160850",
+      "title": "Julius Caesar overture",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Julius_Caesar_(overture)",
+      "wikipedia_extract": "\nThe Julius Caesar overture, Op. 128, is a concert overture written in 1851 by Robert Schumann, inspired by Shakespeare's play Julius Caesar and influenced by the Egmont and Coriolan overtures of Ludwig van Beethoven.",
+      "pageviews_yearly": 3369
+    },
+    {
+      "qid": "Q112756665",
+      "title": "Kinderscenen",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp97"
+    },
+    {
+      "qid": "Q1569982",
+      "title": "Kinderszenen",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Schumann_-_Kinderszenen_Op_15.mid",
+        "midi/Kind_im_Einschlummern_-_Kinderszenen_No_12_child_falling_asleep.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q741180",
+      "title": "Kreisleriana",
+      "imslp_id": "Kreisleriana,_Op.16_(Schumann,_Robert)",
+      "pdf_filename": "PMLP02821-E927716_1_176-206-Schumann-werke-pf-solo-Dorffel-Schmidt-vol2.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp98",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kreisleriana",
+      "wikipedia_extract": "Kreisleriana, Op. 16, is a composition in eight movements by Robert Schumann for solo piano, subtitled Phantasien für das Pianoforte. Schumann claimed to have written it in only four days in April 1838 and a revised version appeared in 1850. The work was dedicated to Frédéric Chopin, but when a copy was sent to the Polish composer, \"he commented favorably only on the design of the title page\".",
+      "pageviews_yearly": 23961
+    },
+    {
+      "qid": "Q114436555",
+      "title": "Lieder, Gesänge und Requiem. Die Lieder Mignons, des Harfners und Philinens. Nur wer die Sehnsucht kennt"
+    },
+    {
+      "qid": "Q111474598",
+      "title": "Liederkreis Op. 39 – Zwölf Gesänge nach Joseph von Eichendorff"
+    },
+    {
+      "qid": "Q6544099",
+      "title": "Liederkreis, Op. 24",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Im_Walde_from_Liederkreis_op_39_1840.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q1647641",
+      "title": "Made in U.S.A",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Made_in_U.S.A._(1966_film)",
+      "wikipedia_extract": "Made in U.S.A is a 1966 French crime comedy film written and directed by Jean-Luc Godard, and starring Anna Karina, László Szabó, Jean-Pierre Léaud, Marianne Faithfull, Yves Afonso, and Jean-Claude Bouillon. It was a loose and unauthorized adaptation of the 1965 novel The Jugger by Richard Stark, and was also inspired by the 1946 Howard Hawks film The Big Sleep.",
+      "pageviews_yearly": 16192
+    },
+    {
+      "qid": "Q6748474",
+      "title": "Manfred",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp5",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Manfred_(Schumann)",
+      "wikipedia_extract": "Manfred: Dramatic Poem with Music in Three Parts is a work of incidental music by Robert Schumann. The work is based on the 1817 poem Manfred by Lord Byron and consists of an overture, and 15 pieces of music: an entracte, melodramas, and several solos and choruses.",
+      "pageviews_yearly": 9108
+    },
+    {
+      "qid": "Q3307009",
+      "title": "Missa Sacra",
+      "imslp_id": "Mass_in_C_minor,_Op.147_(Schumann,_Robert)",
+      "pdf_filename": "PMLP29943-Schumann_-_147_-_Messe_c__fs_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Missa_sacra_(Schumann)",
+      "wikipedia_extract": "Missa sacra, also called Mass in C minor, Op. 147 is a six movement work by Robert Schumann for choir and orchestra. The work was originally composed in 1852 and 1853 and fully published in 1862, six years after the composer's death. The work runs approximately 45 minutes.",
+      "pageviews_yearly": 1851
+    },
+    {
+      "qid": "Q1699144",
+      "title": "Myrthen",
+      "imslp_id": "Myrthen,_Op.25_(Schumann,_Robert)",
+      "pdf_filename": "Godowsky_-_Trans_-_A_Flower_to_me_Thou_Seemest__Schumann_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp194",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Myrthen",
+      "wikipedia_extract": "Myrthen (Myrtles), Op. 25, is a song cycle composed in the spring of 1840 by Robert Schumann. Its 26 Lieder were written as a wedding gift for his fiancée, Clara Wieck, and presented to her on the eve of their wedding which took place on 12 September that year. The cycle was published that same month, with a dedication to Clara, in four books by Kistner in Leipzig where the couple lived.",
+      "pageviews_yearly": 15380,
+      "movements": [
+        {
+          "qid": "Q114245464"
+        }
+      ]
+    },
+    {
+      "qid": "Q134613749",
+      "title": "Nachtlied",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp156",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nachtlied_(Schumann)",
+      "wikipedia_extract": "Nachtlied, Op. 108, is a tone poem by Robert Schumann for choir and orchestra with text from a poem of the same name by Friedrich Hebbel. The work was composed in 1849 and published in 1852. A performance lasts for approximately 10 to 12 minutes.",
+      "pageviews_yearly": 1951
+    },
+    {
+      "qid": "Q136101527",
+      "title": "Nachtstück, Op. 23, No. 4"
+    },
+    {
+      "qid": "Q6957221",
+      "title": "Nachtstücke",
+      "imslp_id": "4_Nachtstücke,_Op.23_(Schumann,_Robert)",
+      "pdf_filename": "Godowsky_APS_60_Schumann_Nachtstucke_Op.23_No.4.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp104",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nachtst%C3%BCcke",
+      "wikipedia_extract": "The  Nachtstücke or Night Pieces are a set of four character pieces for piano by the German composer and pianist Robert Schumann.",
+      "pageviews_yearly": 4933
+    },
+    {
+      "qid": "Q134613731",
+      "title": "Neujahrslied",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Neujahrslied_(Schumann)",
+      "wikipedia_extract": "Neujahrslied, Op. 144, is a set of seven songs by Robert Schumann for choir and orchestra. The work was originally composed in 1849 and fully published in 1861, five years after the composer's death. The work runs approximately 17 minutes.",
+      "pageviews_yearly": 722
+    },
+    {
+      "qid": "Q64398251",
+      "title": "Nijinsky"
+    },
+    {
+      "qid": "Q290275",
+      "title": "Overture, Scherzo and Finale",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp12",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Overture%2C_Scherzo_and_Finale",
+      "wikipedia_extract": "The Overture, Scherzo and Finale in E major is a work for symphony orchestra by Robert Schumann. It is his opus 52, and was written in 1841. Schumann originally considered it his second symphony. The Overture, Scherzo and Finale was received tepidly by critics, was revised in 1845 and published the next year, with a dedication to Johannes Verhulst.",
+      "pageviews_yearly": 4145
+    },
+    {
+      "qid": "Q28480156",
+      "title": "Papillons",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp70"
+    },
+    {
+      "qid": "Q3490145",
+      "title": "Piano Sonata No. 2",
+      "imslp_id": "Piano_Sonata_No.2,_Op.22_(Schumann,_Robert)",
+      "pdf_filename": "PMLP02194-Schumann__Robert__Piano_Sonata_No.2__Op.22__Autogr.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp58",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_No._2_(Schumann)",
+      "wikipedia_extract": "The Piano Sonata No. 2 in G minor, Op. 22 was composed by Robert Schumann from 1830 to 1834.",
+      "pageviews_yearly": 7704
+    },
+    {
+      "qid": "Q11331284",
+      "title": "Piano Sonata No. 3",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp59",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_No._3_(Schumann)",
+      "wikipedia_extract": "The Piano Sonata No. 3 in F minor, Op. 14, called \"Concerto for piano without orchestra\" by Tobias Haslinger, was composed by Robert Schumann in 1836 and dedicated to Ignaz Moscheles, to whom in a letter he comments \"what crazy inspirations one can have\". Liszt believed that the work was rich and powerful. In 1853 Schumann revised the work and added a Scherzo as a second movement, which the performer could choose to play, or not play. In 1861 it was released into the hands of Johannes Brahms.",
+      "pageviews_yearly": 6345
+    },
+    {
+      "qid": "Q3539370",
+      "title": "Piano Trio No. 1",
+      "imslp_id": "Piano_Trio_No.1,_Op.63_(Schumann,_Robert)",
+      "pdf_filename": "PMLP06089-RS22.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp38",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Trio_No._1_(Schumann)",
+      "wikipedia_extract": "The Piano Trio No. 1 in D minor, Op. 63, by Robert Schumann was written in 1847. It has four movements:",
+      "pageviews_yearly": 4669
+    },
+    {
+      "qid": "Q3539375",
+      "title": "Piano Trio No. 3",
+      "imslp_id": "Piano_Trio_No.3,_Op.110_(Schumann,_Robert)",
+      "pdf_filename": "PMLP26971-RS24.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp41",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Trio_No._3_(Schumann)",
+      "wikipedia_extract": "Robert Schumann's Piano Trio No. 3, Op. 110, in G minor was written in 1851. It has four movements:",
+      "pageviews_yearly": 3406
+    },
+    {
+      "qid": "Q11819895",
+      "title": "Po sezonie"
+    },
+    {
+      "qid": "Q11342414",
+      "title": "Requiem für Mignon, Op.98b",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Requiem_for_Mignon",
+      "wikipedia_extract": "Requiem for Mignon is a six movement work by Robert Schumann for choir and orchestra. The work was originally composed in 1849, premiered in 1851, and runs approximately 13 minutes.",
+      "pageviews_yearly": 2627
+    },
+    {
+      "qid": "Q11946486",
+      "title": "Requiem, Op. 148 (Schumann)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Requiem_(Schumann)",
+      "wikipedia_extract": "Requiem Op. 148 is a nine movement work by Robert Schumann for choir and orchestra. The work was originally composed in 1852 and published in 1865, eight years after the composer's death. The work runs approximately 33 minutes.",
+      "pageviews_yearly": 4582
+    },
+    {
+      "qid": "Q7349637",
+      "title": "Robert Schumann's Davidsbündlertänze",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp89",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Robert_Schumann's_Davidsb%C3%BCndlert%C3%A4nze",
+      "wikipedia_extract": "\n\nRobert Schumann’s “Davidsbündlertänze” is one of the last major works made by New York City Ballet's founding choreographer and balletmaster-in-chief, George Balanchine. It is set to Robert Schumann's Davidsbündlertänze, Op. 6 (1837). The idea for setting this piano work very likely came from a work created by Robert Joffrey for his own Joffrey Ballet Company, the premier of which took place at the City Center Theater in the late 1970s. Joffrey, in turn, received his inspiration from Jonathan Watts, a protege of Joffrey's and director of the Joffrey apprentice company, who, at the suggestion of pianist Neil Stannard, created a ballet titled Evening Dialogues to this same score. This initial version of the Schumann cycle was featured on tour with the Joffrey second company in the mid 1970a.",
+      "pageviews_yearly": 1963
+    },
+    {
+      "qid": "Q130544844",
+      "title": "Robert Schumann: Träumerei from Kinderszenen, Op. 15"
+    },
+    {
+      "qid": "Q114064036",
+      "title": "Schumann",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp97"
+    },
+    {
+      "qid": "Q119840727",
+      "title": "Sechs Gedichte und Requiem",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sechs_Gedichte_und_Requiem",
+      "wikipedia_extract": "Sechs Gedichte und Requiem, Op. 90, also called the Lenau-Lieder, is a song cycle by Robert Schumann. It was composed in 1850, shortly before the Schumanns moved to Düsseldorf.",
+      "pageviews_yearly": 3034
+    },
+    {
+      "qid": "Q114245746",
+      "title": "So lasst mich scheinen"
+    },
+    {
+      "qid": "Q878258",
+      "title": "Spring Symphony",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp8",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Spring_Symphony_(film)",
+      "wikipedia_extract": "Spring Symphony is a 1983 West German historical drama film directed by Peter Schamoni and starring Nastassja Kinski, Herbert Grönemeyer, and Rolf Hoppe. It portrays the life of the pianist Clara Wieck and her relationship with the composer Robert Schumann.",
+      "pageviews_yearly": 4742
+    },
+    {
+      "qid": "Q29839127",
+      "title": "String Quartet No.3, Op.41 No.3",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp255"
+    },
+    {
+      "qid": "Q3413882",
+      "title": "String Quartets",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp255",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/List_of_compositions_by_Robert_Schumann",
+      "wikipedia_extract": "This list of compositions by Robert Schumann is classified into piano, vocal, orchestral and chamber works. All works are also listed separately, by opus number. Schumann wrote almost exclusively for the piano until 1840, when he burst into song composition around the time of his marriage to Clara Wieck. Partly due to Clara Schumann's encouragement, he then expanded his oeuvre to orchestral works, composing the 1st symphony, the 4th symphony, and the Overture, Scherzo and Finale Op. 52 in the year of 1841. The next year, 1842, is known as 'the year of chamber works,' where he notably composed 3 String Quartets, a Piano Quintet, and a Piano Quartet. Robert Schumann is known as one of the most prolific composers in the romantic era, producing multiple works for multiple instruments, forms, and genres. The list is based on lists of his works, such as in the 2001 biography by Eric Frederick Jensen.",
+      "pageviews_yearly": 1464
+    },
+    {
+      "qid": "Q374316",
+      "title": "Symphonic Studies",
+      "imslp_id": "Symphonic_Etudes,_Op.13_(Schumann,_Robert)",
+      "pdf_filename": "PMLP02189-E927717_1-2_65-106-Schumann-werke-pf-solo-Dorffel-Schmidt-vol3.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphonic_%C3%89tudes",
+      "wikipedia_extract": "The Symphonic Études, Op. 13, is a set of études for solo piano by Robert Schumann. It began in 1834 as a theme and sixteen variations on a theme by Baron von Fricken, plus a further variation on an entirely different theme by Heinrich Marschner.",
+      "pageviews_yearly": 7973
+    },
+    {
+      "qid": "Q163594",
+      "title": "Symphony No. 1",
+      "imslp_id": "Symphony_No.1,_Op.38_(Schumann,_Robert)",
+      "pdf_filename": "PMLP10737-E213034_etc-SIBLEY1802.12712.988c-39087009410004scorepp1-51.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp8",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._1_(Schumann)",
+      "wikipedia_extract": "The Symphony No. 1 in B♭ major, Op. 38, also known as the Spring Symphony, is the first completed symphonic work composed by Robert Schumann.",
+      "pageviews_yearly": 14887
+    },
+    {
+      "qid": "Q231263",
+      "title": "Symphony No. 4",
+      "imslp_id": "Symphony_No.4,_Op.120_(Schumann,_Robert)",
+      "pdf_filename": "PMLP11051-1._Ausgabe_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp11",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._4_(Schumann)",
+      "wikipedia_extract": "The Symphony No. 4 in D minor, Op. 120, composed by Robert Schumann, was first completed in 1841. Schumann heavily revised the symphony in 1851, and it was this version that reached publication.",
+      "pageviews_yearly": 15233
+    },
+    {
+      "qid": "Q11318849",
+      "title": "Symphony in G minor",
+      "imslp_id": "Symphony_in_G_minor,_WoO_29_(Schumann,_Robert)",
+      "pdf_filename": "PMLP821214-SchumannZwickauGMollScF.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp6",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_in_G_minor_(%22Zwickau%22)",
+      "wikipedia_extract": "Symphony in G minor (\"Zwickau\"), WoO29 is an unfinished symphony by Robert Schumann, written between October 1832 and May 1833.",
+      "pageviews_yearly": 3035
+    },
+    {
+      "qid": "Q3476599",
+      "title": "Szenen aus Goethes Faust",
+      "imslp_id": "Szenen_aus_Goethes_Faust,_WoO_3_(Schumann,_Robert)",
+      "pdf_filename": "PMLP22433-00._SCHUMANN_-_SCENES_FROM_GOETHE_FAUST_-_Conductor_s_Score_I.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp166",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Scenes_from_Goethe's_Faust",
+      "wikipedia_extract": "Scenes from Goethe's Faust is a musical-theatrical work by composer Robert Schumann. The work has been described as the height of his accomplishments in the realm of dramatic music. The work was written between 1844 and 1853 and is scored for SATB chorus, boys' chorus, orchestra, and a number of solo parts which, even with doubling, require seven solo singers, although eight is the usual number for a performance. Schumann never saw all three parts of the work performed in the same concert, or published together. Eric Sams comments 'There is no coherence in the orchestration, which audibly dates from two different periods ', leading him to conclude that Schumann did not conceive the work as a whole, although late nineteenth-century ideas of performance mean that in the modern era the piece is predominantly heard with all three parts.",
+      "pageviews_yearly": 7352
+    },
+    {
+      "qid": "Q111474476",
+      "title": "Sämtliche Lieder für eine Singstimme mit Klavierbegleitung von Robert Schuman",
+      "imslp_id": "Sämtliche_Lieder_für_eine_Singstimme_mit_Klavierbegleitung_(Schumann,_Robert)",
+      "pdf_filename": "Schumann_Lieder.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q15710971",
+      "title": "Tables of Content",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tables_of_Content",
+      "wikipedia_extract": "Tables of Content is a 1986 Canadian animated short film directed by Wendy Tilby.",
+      "pageviews_yearly": 922
+    },
+    {
+      "qid": "Q3208863",
+      "title": "The 15 Year Old Girl",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_15_Year_Old_Girl",
+      "wikipedia_extract": "The 15 Year Old Girl is a 1989 French drama film directed by Jacques Doillon. The plot is about a teenage girl falling in love with the father of her boyfriend. It was entered into the 16th Moscow International Film Festival.",
+      "pageviews_yearly": 9854
+    },
+    {
+      "qid": "Q33860638",
+      "title": "The Happy Farmer",
+      "has_midi": true,
+      "midi_files": [
+        "midi/The_happy_farmer.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q112756670",
+      "title": "Toccata C major, op. 7"
+    },
+    {
+      "qid": "Q2804011",
+      "title": "Träumerei",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Dreaming_-_Traumerei.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q17040212",
+      "title": "Union Maid",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Union_Maid",
+      "wikipedia_extract": "\"Union Maid\" is a union song, with lyrics written by Woody Guthrie in response to a request for a union song from a female point of view. The melody is the 1907 standard \"Red Wing\" by Kerry Mills, which was in turn adapted from Robert Schumann's piano composition \"The Happy Farmer, Returning From Work\" in his 1848 Album for the Young, Opus 68.",
+      "pageviews_yearly": 5668
+    },
+    {
+      "qid": "Q1339833",
+      "title": "Variations on an Original Theme, WoO 24",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Geistervariationen",
+      "wikipedia_extract": "\nThe Geistervariationen, or Theme and Variations in E-flat major for piano, WoO 24, composed in 1854, is the last piano work of Robert Schumann. The variations were composed in the time leading up to his admission to an asylum for the insane and are infrequently played or recorded today.",
+      "pageviews_yearly": 8035
+    },
+    {
+      "qid": "Q318293",
+      "title": "Variations on the Name \"Abegg\"",
+      "imslp_id": "Abegg_Variations,_Op.1_(Schumann,_Robert)",
+      "pdf_filename": "PMLP02928-E927717_1-2_141-153-Schumann-werke-pf-solo-Dorffel-Schmidt-vol3.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp64",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Variations_on_the_name_%22Abegg%22",
+      "wikipedia_extract": "The Variations on the name \"Abegg\" in F major is a piece for piano by Robert Schumann, composed between 1829 and 1830, while as a student in Heidelberg, and published as his Opus 1. The name is believed to refer to Schumann's fictitious friend, Meta Abegg, whose surname Schumann used through a musical cryptogram as the motivic basis for the piece. The name Meta is considered to be an anagram of the word \"tema\" (Latin). Another suggestion is Pauline von Abegg. Apparently, when he was twenty years old, Schumann met her and dedicated this work to her, as witnessed in Clara Schumann's edition of her husband's piano works.",
+      "pageviews_yearly": 5905
+    },
+    {
+      "qid": "Q115896514",
+      "title": "Violin Sonata No. 3",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp47",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Violin_Sonata_No._3_(Schumann)",
+      "wikipedia_extract": "Violin Sonata No. 3 in A minor, WoO 2, is a four-movement work by Robert Schumann for violin and piano. The sonata was composed in 1853 but not fully published until 1956. The work runs approximately 20 minutes.",
+      "pageviews_yearly": 1472
+    },
+    {
+      "qid": "Q3565331",
+      "title": "Waldszenen",
+      "imslp_id": "Waldszenen,_Op.82_(Schumann,_Robert)",
+      "pdf_filename": "PMLP02930-BnF_btv1b55009575t.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp128",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Waldszenen",
+      "wikipedia_extract": "Waldszenen, Op. 82, is a set of nine short solo piano pieces composed by Robert Schumann in 1848–1849, first published in 1850–1851 in Leipzig by Bartholf Senff.",
+      "pageviews_yearly": 11370
+    },
+    {
+      "qid": "Q11556728",
+      "title": "Zigeunerleben",
+      "imslp_id": "3_Gedichte,_Op.29_(Schumann,_Robert)",
+      "pdf_filename": "PMLP49039-00._SCHUMANN_-_ZIGUENERLEBEN_OVERTURE__OP._29-3_-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q3485663",
+      "title": "Études After Paganini Caprices",
+      "imslp_id": "Etudes_after_Paganini_Caprices,_Op.3_(Schumann,_Robert)",
+      "pdf_filename": "PMLP02187-E927718_1-2_111-137-Schumann-werke-pf-solo-Dorffel-Schmidt-vol4.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/robert-schumann-1810-pp71"
+    }
+  ]
+}

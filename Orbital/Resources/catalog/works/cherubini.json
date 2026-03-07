@@ -1,0 +1,251 @@
+{
+  "composer_slug": "cherubini",
+  "composer_qid": "Q20721",
+  "work_count": 31,
+  "midi_file_count": 1,
+  "works": [
+    {
+      "qid": "Q130972551",
+      "title": "Achille à Scyros"
+    },
+    {
+      "qid": "Q109244416",
+      "title": "Alessandro nell' Indie"
+    },
+    {
+      "qid": "Q5689470",
+      "title": "Alessandro nell'Indie"
+    },
+    {
+      "qid": "Q16165327",
+      "title": "Ali Baba",
+      "imslp_id": "Ali_Baba_(Cherubini,_Luigi)",
+      "pdf_filename": "PMLP128579-Ali_Baba_-_Euphonium.pdf",
+      "has_pdf": false,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ali_Baba_(Cherubini)",
+      "wikipedia_extract": "Ali Baba, ou Les quarante voleurs is a tragédie lyrique in four acts plus a prologue, with libretto by Eugène Scribe and Mélesville and music by Luigi Cherubini. The story is based on the tale Ali Baba and the Forty Thieves. It was premiered by the Paris Opera in the Salle Le Peletier on 22 July 1833. It was Cherubini's last opera, though he lived for nearly a decade longer. It is also his longest opera, lasting for about three and a half hours at the premiere.",
+      "pageviews_yearly": 2514
+    },
+    {
+      "qid": "Q4750726",
+      "title": "Anacréon",
+      "imslp_id": "Anacréon_(Cherubini,_Luigi)",
+      "pdf_filename": "PMLP49818-ANACREON.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Anacr%C3%A9on_(Cherubini)",
+      "wikipedia_extract": "Anacréon, ou L'amour fugitif is an opera-ballet in two acts by Luigi Cherubini with a French libretto by C. R. Mendouze. It was premiered on 4 October 1803 by the Paris Opéra at the Salle Montansier. The choreography was by Pierre-Gabriel Gardel. The work proved to be a complete failure, ending its run on 1 January 1804 after only seven performances. The subject matter, a love affair of the Ancient Greek poet Anacreon, was completely alien to the spirit of the time. One critic complained that in his protagonist Cherubini had represented \"un vieux debauché déguisé en héros d'opéra\".",
+      "pageviews_yearly": 1979
+    },
+    {
+      "qid": "Q790311",
+      "title": "Ave Maria",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Ave_Maria_-_Luigi_Cherubini.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q136722042",
+      "title": "Bayard à Mézières"
+    },
+    {
+      "qid": "Q5802124",
+      "title": "Demetrio"
+    },
+    {
+      "qid": "Q5802281",
+      "title": "Démophoon",
+      "imslp_id": "Démophoon_(Cherubini,_Luigi)",
+      "pdf_filename": "PMLP49822-DEMOPHOON.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/D%C3%A9mophoon",
+      "wikipedia_extract": "Démophoon is an opera by the composer Luigi Cherubini, first performed at the Académie Royale de Musique on 2 December 1788. It takes the form of a tragédie lyrique in three acts. The libretto, by Jean-François Marmontel, is based on Demofoonte by Metastasio.",
+      "pageviews_yearly": 1962
+    },
+    {
+      "qid": "Q3063192",
+      "title": "Elisa, ou Le voyage aux glaciers du Mont St-Bernard",
+      "imslp_id": "Eliza_(Cherubini,_Luigi)",
+      "pdf_filename": "PMLP49824-Cherubini-Eliza-Overture_-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Eliza_(Cherubini)",
+      "wikipedia_extract": "Eliza, ou Le voyage aux glaciers du Mont St Bernard is an opéra comique in two acts by Luigi Cherubini with a French libretto by Jacques-Antoine de Révéroni Saint-Cyr. It was first performed at the Théâtre Feydeau, Paris on 13 December 1794.",
+      "pageviews_yearly": 1906
+    },
+    {
+      "qid": "Q5433891",
+      "title": "Faniska",
+      "imslp_id": "Faniska_(Cherubini,_Luigi)",
+      "pdf_filename": "PMLP198322-114359.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/luigi-cherubini-1760-pp25",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Faniska",
+      "wikipedia_extract": "Faniska is an opera eroica in three acts by Luigi Cherubini. The German libretto, by Joseph Sonnleithner, is based on the melodrama Les mines de Pologne (1803) by René-Charles Guilbert de Pixérécourt.",
+      "pageviews_yearly": 2416
+    },
+    {
+      "qid": "Q3792164",
+      "title": "Ifigenia in Aulide",
+      "imslp_id": "Ifigenia_in_Aulide_(Cherubini,_Luigi)",
+      "pdf_filename": "PMLP221814-Cherubini_-_Ifigenia_in_Aulide_-_atto_II__fs_ms_.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q3794156",
+      "title": "Il giocatore"
+    },
+    {
+      "qid": "Q30589932",
+      "title": "Koukourgi",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Koukourgi",
+      "wikipedia_extract": "Koukourgi is a 1792 French-language comic opera by Luigi Cherubini to a libretto by Mélesville père, which was not performed in Cherubini's lifetime. The music was laid up for nearly forty years till four numbers were re-used in Ali Baba; ou, les Quarante Voleurs of 1833, to a libretto by Mélesville fils, Eugène Scribe, and with additional new music by the then elderly Cherubini. The opera was reconstructed and premiered in celebration of the composer's 250th anniversary at the Stadttheater Klagenfurt in 2010.",
+      "pageviews_yearly": 1349
+    },
+    {
+      "qid": "Q6455951",
+      "title": "L'hôtellerie portugaise",
+      "imslp_id": "L'hôtellerie_portugaise_(Cherubini,_Luigi)",
+      "pdf_filename": "PMLP49823-Cherubini-Portuguese-Inn-Overture_-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/L'h%C3%B4tellerie_portugaise",
+      "wikipedia_extract": "L'Hôtellerie portugaise is an opéra comique in 1 act by Luigi Cherubini. The opera uses a French language libretto by Étienne Aignan. The work premiered on 25 July 1798 in Paris at the Théâtre Feydeau.",
+      "pageviews_yearly": 1105
+    },
+    {
+      "qid": "Q6466237",
+      "title": "La marquise de Brinvilliers",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La_marquise_de_Brinvilliers_(opera)",
+      "wikipedia_extract": "La marquise de Brinvilliers is an operatic 'drame lyrique' that was written as a collaborative effort on the part of nine composers. It premiered in Paris at the Salle Ventadour of the Opéra-Comique on 31 October 1831.",
+      "pageviews_yearly": 1919
+    },
+    {
+      "qid": "Q6507977",
+      "title": "Le congrès des rois",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Le_congr%C3%A8s_des_rois",
+      "wikipedia_extract": "Le congrès des rois was a 3-act French Revolutionary opera of the genre comédie mêlée d'ariettes with a libretto by De Maillot, a stage name used by Antoine-François Ève early in his career, and music by a collaborative of twelve composers. It was a satire directed against the \"enemies of France\". The libretto and most of the music has been lost.",
+      "pageviews_yearly": 1468
+    },
+    {
+      "qid": "Q6507983",
+      "title": "Le crescendo",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Le_crescendo",
+      "wikipedia_extract": "Le crescendo is a comic opera in one act by Luigi Cherubini with a libretto by Charles Augustin [de Bassompierre] Sewrin. The libretto is based on the opera buffa L'Angiolina ovvero Il matrimonio per sussurro with music by Antonio Salieri and by Valentino Fioravanti.",
+      "pageviews_yearly": 1110
+    },
+    {
+      "qid": "Q254363",
+      "title": "Les Abencérages",
+      "imslp_id": "Les_Abencérages_(Cherubini,_Luigi)",
+      "pdf_filename": "PMLP128601-Cherubini-Aberncerages-Overture_-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Les_Abenc%C3%A9rages",
+      "wikipedia_extract": "Les Abencérages, ou L'étendard de Grenade is an opera in three acts by Luigi Cherubini with a French libretto by Etienne de Jouy, based on the novel Gonzalve de Cordoue by Jean-Pierre Claris de Florian. It was first performed on 6 April 1813 by the Académie Impériale de Musique at the Salle Montansier, with Napoleon and his wife, the Empress Marie-Louise, in the audience. The opera was initially a success but its popularity waned after the fall of Napoleon.",
+      "pageviews_yearly": 2742
+    },
+    {
+      "qid": "Q972277",
+      "title": "Les deux journées, ou Le porteur de l'eau",
+      "imslp_id": "Les_deux_journées_(Cherubini,_Luigi)",
+      "pdf_filename": "PMLP49827-Cheru_Wasser_ov_P4h.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/luigi-cherubini-1760-pp21",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Les_deux_journ%C3%A9es",
+      "wikipedia_extract": "Les deux journées, ou Le porteur d'eau is an opera in three acts by Luigi Cherubini with a libretto by Jean-Nicolas Bouilly. It takes the form of an opéra comique, meaning not that the subject matter is humorous, but that the piece is a mixture of spoken dialogue and musical numbers. Bouilly claimed he took the story from a real-life incident during the French Revolution but, for fear of censorship, he moved the action back to 1647 and the time of Cardinal Mazarin. The opera was first performed on 16 January 1800 at the Théâtre Feydeau in Paris.",
+      "pageviews_yearly": 3079
+    },
+    {
+      "qid": "Q3835889",
+      "title": "Lo sposo di tre e marito di nessuna"
+    },
+    {
+      "qid": "Q1117908",
+      "title": "Lodoïska",
+      "imslp_id": "Lodoïska_(Cherubini,_Luigi)",
+      "pdf_filename": "PMLP49826-Cherubini-Lodoiska-Overture_-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/luigi-cherubini-1760-pp15",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lodo%C3%AFska_(Cherubini)",
+      "wikipedia_extract": "Lodoïska is an opera by Luigi Cherubini to a French libretto by Claude-François Fillette-Loraux after an episode from Jean-Baptiste Louvet de Couvrai's novel, Les amours du chevalier de Faublas. It takes the form of a comédie héroïque in three acts, and was a founding work of rescue opera. It has also been called one of the first Romantic operas, though Cherubini's work was basically classical.",
+      "pageviews_yearly": 3191
+    },
+    {
+      "qid": "Q108950447",
+      "title": "Medea",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/luigi-cherubini-1760-pp33"
+    },
+    {
+      "qid": "Q55441228",
+      "title": "Mona Lisa"
+    },
+    {
+      "qid": "Q577758",
+      "title": "Médée",
+      "imslp_id": "Médée_(Cherubini,_Luigi)",
+      "pdf_filename": "PMLP49825-Cherubini_-_Medee_Ov_FSPeters_rsl.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/luigi-cherubini-1760-pp33",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/M%C3%A9d%C3%A9e_(Cherubini)",
+      "wikipedia_extract": "Médée is a French language opéra-comique by Luigi Cherubini. The libretto by François-Benoît Hoffman was based on Euripides' tragedy of Medea and Pierre Corneille's play Médée. It is set in the ancient city of Corinth.",
+      "pageviews_yearly": 24270
+    },
+    {
+      "qid": "Q16962326",
+      "title": "Overture in G major",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/luigi-cherubini-1760-pp47",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Overture_in_G_major_(Cherubini)",
+      "wikipedia_extract": "The Overture in G major by Luigi Cherubini (1760-1842) is an orchestral work written for concert use in early 1815. It is unusual among Cherubini's overtures in that his other, better known overtures, were intended to introduce stage works. Although born in Italy Cherubini had been living in France since 1784, and had earned world fame through a series of operas composed for the Paris stage. In the first decade of the nineteenth century the vogue for his dramatic works began to wane, and he turned increasingly to sacred music.",
+      "pageviews_yearly": 1680
+    },
+    {
+      "qid": "Q7194662",
+      "title": "Pimmalione",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pimmalione",
+      "wikipedia_extract": "Pimmalione (Pygmalion) is an opera in one act by Luigi Cherubini, first performed at the Théâtre des Tuileries, Paris, on 30 November 1809. The libretto is an adaptation by Stefano Vestris of Antonio Simeone Sografi's Italian translation of the text Jean-Jacques Rousseau wrote for his scène lyrique Pygmalion (1770). It is based on the Classical legend of the sculptor Pygmalion.",
+      "pageviews_yearly": 2021
+    },
+    {
+      "qid": "Q2145469",
+      "title": "Requiem No. 2",
+      "imslp_id": "Requiem_in_D_minor_(Cherubini,_Luigi)",
+      "pdf_filename": "PMLP59525-4_MusicSunday_Music.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/luigi-cherubini-1760-pp79"
+    },
+    {
+      "qid": "Q510288",
+      "title": "Requiem in C minor",
+      "imslp_id": "Requiem_in_C_minor_(Cherubini,_Luigi)",
+      "pdf_filename": "PMLP59513-26064059.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/luigi-cherubini-1760-pp73",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Requiem_in_C_minor_(Cherubini)",
+      "wikipedia_extract": "The Requiem in C minor for mixed chorus was written by Luigi Cherubini in 1816 and premiered 21 January 1817 at a commemoration service for King Louis XVI of France on the twenty-fourth anniversary of his beheading during the French Revolution.",
+      "pageviews_yearly": 9096
+    },
+    {
+      "qid": "Q136827799",
+      "title": "Three Fugues from Cherubini's Cours de contrepoint et de fugue"
+    },
+    {
+      "qid": "Q22908187",
+      "title": "Épicure",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/%C3%89picure_(opera)",
+      "wikipedia_extract": "Épicure (Epicurus) is an opera in three acts with music by the composers Étienne Méhul and Luigi Cherubini. The libretto is by Charles-Albert Demoustier. It was first performed at the Opéra-Comique, Paris on 14 March 1800. It was a complete failure, enjoying only three performances. For the third and final performance on 20 March the opera was reduced from three acts to two. Cherubini wrote the overture, the first act and half of the third; Méhul the second act and the rest of the third.",
+      "pageviews_yearly": 1085
+    }
+  ]
+}

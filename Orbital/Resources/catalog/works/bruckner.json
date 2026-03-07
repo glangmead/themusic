@@ -1,0 +1,1343 @@
+{
+  "composer_slug": "bruckner",
+  "composer_qid": "Q81752",
+  "work_count": 124,
+  "midi_file_count": 14,
+  "works": [
+    {
+      "qid": "Q18121432",
+      "title": "Rondo in C minor",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp160",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rondo_in_C_minor_(Bruckner)",
+      "wikipedia_extract": "The Rondo in C minor is a composition for string quartet by the Austrian composer Anton Bruckner. It was written in 1862 but was not performed publicly until 1984, after the composer's death. A critical edition was first published in 1985 and the piece was first recorded in 1992 by the Raphael Quartet.",
+      "pageviews_yearly": 1637,
+      "date": "1862-01-01"
+    },
+    {
+      "qid": "Q1831363",
+      "title": "Study Symphony",
+      "imslp_id": "Symphony_in_F_minor,_WAB_99_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP87889-ABruckner_Andante_SymphonyWAB99_piano4hands.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp1",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_in_F_minor_(Bruckner)",
+      "wikipedia_extract": "At the end of his study period in form and orchestration by Otto Kitzler, Anton Bruckner made on 7 January 1863 sketches for a Symphony in D minor, WAB add 244.Bruckner did not go on with this project, but composed later in the same year the Symphony in F minor, WAB 99.",
+      "pageviews_yearly": 3671,
+      "date": "1863-00-00"
+    },
+    {
+      "qid": "Q1316554",
+      "title": "Mass No. 2",
+      "imslp_id": "Mass_No.2_in_E_minor,_WAB_27_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP53875-ABruckner_Mass_No.2__WAB27_firstedition.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp58",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mass_No._2_(Bruckner)",
+      "wikipedia_extract": "The Mass No. 2 in E minor, WAB 27 is a setting of the mass ordinary for eight-part mixed choir and fifteen wind instruments, that Anton Bruckner composed in 1866.",
+      "pageviews_yearly": 4291,
+      "date": "1866-00-00"
+    },
+    {
+      "qid": "Q1723173",
+      "title": "String Quintet (Bruckner)",
+      "imslp_id": "String Quintet, WAB 112 (Bruckner, Anton)",
+      "pdf_filename": "PMLP217146-ABruckner_String_Quintet__WAB112_Mus.Hs.19482.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp25",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quintet_(Bruckner)",
+      "wikipedia_extract": "Anton Bruckner's String Quintet in F major, WAB 112 was composed in 1878/79 in Vienna.",
+      "pageviews_yearly": 4090,
+      "date": "1879-00-00"
+    },
+    {
+      "qid": "Q231162",
+      "title": "Symphony No. 4",
+      "imslp_id": "Symphony No.4 in E-flat major, WAB 104 (Bruckner, Anton)",
+      "pdf_filename": "PMLP09057-Bruckner_-_Symphony_No._4_in_E_flat_major__WAB_104__1878_revised_2nd_version_with_1880_finale__autograph_manuscript__-_Mvt._1.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp7",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._4_(Bruckner)",
+      "wikipedia_extract": "Anton Bruckner's Symphony No. 4 in E-flat major, WAB 104, is one of the composer's most popular works. It was written in 1874 and revised several times through 1888. It was dedicated to Prince Konstantin of Hohenlohe-Schillingsfürst. It was premiered in 1881 by Hans Richter in Vienna to great acclaim.",
+      "pageviews_yearly": 25749,
+      "date": "1880-00-00"
+    },
+    {
+      "qid": "Q18066978",
+      "title": "Ecce sacerdos magnus",
+      "imslp_id": "Ecce_sacerdos_magnus,_WAB_13_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP188428-ABruckner_Ecce_sacerdos_magnus__WAB13_firstedition.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ecce_sacerdos_magnus_(Bruckner)",
+      "wikipedia_extract": "Ecce sacerdos magnus, WAB 13, is an 1885 sacred motet by the Austrian composer Anton Bruckner. It is a musical setting of the antiphon of the same title.",
+      "pageviews_yearly": 2688,
+      "date": "1885-04-28"
+    },
+    {
+      "qid": "Q275815",
+      "title": "Symphony No. 9",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp12",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._9_(Bruckner)",
+      "wikipedia_extract": "The Symphony No. 9 in D minor, WAB 109, is the last symphony on which Anton Bruckner worked, leaving the last movement incomplete at the time of his death in 1896; Bruckner dedicated it \"to the beloved God\". The symphony was premiered under Ferdinand Löwe in Vienna in 1903.",
+      "pageviews_yearly": 29153,
+      "date": "1887-00-00"
+    },
+    {
+      "qid": "Q324459",
+      "title": "Helgoland",
+      "imslp_id": "Helgoland,_WAB_71_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP695286-ABruckner_Helgoland__WAB71_A-WnMus.Hs.19485.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp120",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Helgoland_(Bruckner)",
+      "wikipedia_extract": "Helgoland, WAB 71, is a secular, patriotic cantata for male choir and orchestra, composed by Anton Bruckner in 1893. Since Bruckner did not complete the 9th symphony, Helgoland is his last complete work.",
+      "pageviews_yearly": 3285,
+      "date": "1893-00-00"
+    },
+    {
+      "qid": "Q21998317",
+      "title": "Abendklänge, WAB 110",
+      "imslp_id": "Abendklänge,_WAB_110_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP692567-ABruckner_Abendklänge__WAB110_Mus.Hs.19686.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp27",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Abendkl%C3%A4nge%2C_WAB_110",
+      "wikipedia_extract": "Abendklänge, WAB 110, is a character piece for violin and piano, which Anton Bruckner composed in 1866.",
+      "pageviews_yearly": 1531
+    },
+    {
+      "qid": "Q21998319",
+      "title": "Abendzauber, WAB 57",
+      "imslp_id": "Abendzauber,_WAB_57_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP690884-brucknerabendzauber_WAB57manuscript_Universal_Edition.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp118",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Abendzauber%2C_WAB_57",
+      "wikipedia_extract": "Abendzauber, WAB 57, is a song composed by Anton Bruckner in 1878.",
+      "pageviews_yearly": 1803
+    },
+    {
+      "qid": "Q18159549",
+      "title": "Afferentur regi",
+      "imslp_id": "Afferentur_regi,_WAB_1_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP590338-ABruckner_Afferentur_regi__WAB1_A-KR-C57-7.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp85",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Afferentur_regi",
+      "wikipedia_extract": "Afferentur regi, WAB 1, is a motet, which Anton Bruckner composed on 7 November 1861 on the text of the Offertorium of the Missa pro Virgine et Martyre.",
+      "pageviews_yearly": 1987
+    },
+    {
+      "qid": "Q85516384",
+      "title": "Am Grabe, WAB 2",
+      "imslp_id": "Am_Grabe,_WAB_2_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP691096-ABruckner_Am_Grabe__WAB2_Mus.Hs.37287.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp82",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Am_Grabe%2C_WAB_2",
+      "wikipedia_extract": "Am Grabe, WAB 2, is an elegy composed by Anton Bruckner in 1861, for men's voices a capella.",
+      "pageviews_yearly": 1277
+    },
+    {
+      "qid": "Q21998345",
+      "title": "An dem Feste, WAB 59",
+      "imslp_id": "An_dem_Feste,_WAB_59a_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP697759-brucknerTafelliedWAB86score_First_Edition.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp121",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/An_dem_Feste%2C_WAB_59a",
+      "wikipedia_extract": "\"An dem Feste\", WAB 59a, is a song composed by the 19-year-old Anton Bruckner in 1843 during his stay as schoolteacher's assistant in Kronstorf. In 1893, near the end of his life, Bruckner modified slightly its music score and let Karl Ptak put another text on the song, with as title \"Tafellied\", WAB 59c.",
+      "pageviews_yearly": 1240
+    },
+    {
+      "qid": "Q131341298",
+      "title": "Anton Bruckner：Symphony No.8 Munich Philharmonic Orchestra Hans Knappertsbusch conducting"
+    },
+    {
+      "qid": "Q18612615",
+      "title": "Arneth Cantata, WAB 61",
+      "imslp_id": "Arneth_Cantata,_WAB_61_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP698806-brucknerarnethcantataWAB61manuscript_First_Edition.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arneth_Cantata%2C_WAB_61",
+      "wikipedia_extract": "The Arneth Cantata, WAB 61, is a cantata composed by Anton Bruckner in 1852.",
+      "pageviews_yearly": 1407
+    },
+    {
+      "qid": "Q18640112",
+      "title": "Asperges me, WAB 4",
+      "imslp_id": "Asperges_me,_WAB_4_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP691339-ABruckner_Asperges_me__WAB4_A-LId465_6_29_femaleparts.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp88",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Asperges_me%2C_WAB_4",
+      "wikipedia_extract": "Asperges me, WAB 4, is a sacred motet composed by Anton Bruckner. It is a setting of the Latin Asperges me, the antiphon used for the celebration of Asperges.",
+      "pageviews_yearly": 1490
+    },
+    {
+      "qid": "Q18205381",
+      "title": "Ave Maria",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Ave_Maria_WAB_6_-_Anton_Bruckner.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q18205291",
+      "title": "Ave Maria, WAB 5",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Ave_Maria.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q18205293",
+      "title": "Ave Maria, WAB 7",
+      "imslp_id": "Ave_Maria,_WAB_7_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP691072-ABruckner_Ave_Maria__WAB7_NMZ1902.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp98",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ave_Maria%2C_WAB_7",
+      "wikipedia_extract": "Ave Maria, WAB 7, is a setting of the Latin prayer Ave Maria by Anton Bruckner.",
+      "pageviews_yearly": 1415
+    },
+    {
+      "qid": "Q18663611",
+      "title": "Ave Regina caelorum, WAB 8",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ave_Regina_caelorum%2C_WAB_8",
+      "wikipedia_extract": "Ave Regina caelorum, WAB 8, is a motet composed by Anton Bruckner in c. 1886.",
+      "pageviews_yearly": 1888
+    },
+    {
+      "qid": "Q18159835",
+      "title": "Bruckner's early Masses",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/List_of_masses_by_Anton_Bruckner",
+      "wikipedia_extract": "\nAnton Bruckner was a devoutly religious man, and composed numerous sacred works. Among these are seven Masses, two requiems, and sketches for two additional Masses and one requiem.",
+      "pageviews_yearly": 3502
+    },
+    {
+      "qid": "Q21998290",
+      "title": "Cantatas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/List_of_cantatas_by_Anton_Bruckner",
+      "wikipedia_extract": "\nAnton Bruckner composed eight cantatas during his life, the earliest Vergißmeinnicht, in 1845, the last, Helgoland, in 1893.",
+      "pageviews_yearly": 900
+    },
+    {
+      "qid": "Q18347542",
+      "title": "Christus factus est, WAB 10",
+      "imslp_id": "Christus_factus_est,_WAB_10_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP690849-E563185_106-112-Bruckner_-_Kleine_Kirchenmusikwerke__ed._Nowak_1984_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp96",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Christus_factus_est%2C_WAB_10",
+      "wikipedia_extract": "Christus factus est, WAB 10, is a sacred motet by Anton Bruckner, his second setting of the Latin gradual Christus factus est, written in 1873. Several decades earlier, in 1844, he had composed another piece on the same text as gradual for the Messe für den Gründonnerstag. In 1884, Bruckner composed a third, better known setting for choir a cappella.",
+      "pageviews_yearly": 1579
+    },
+    {
+      "qid": "Q18347544",
+      "title": "Christus factus est, WAB 11",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Christus_factus_est_WAB_11_-_Anton_Bruckner.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q21998599",
+      "title": "Das Lied vom deutschen Vaterland, WAB 78",
+      "imslp_id": "Das_Lied_vom_deutschen_Vaterland,_WAB_78_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP702722-ABruckner_Das_Lied_vom_deutschen_Vaterland__WAB78_A-SF20-4.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp124",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Das_Lied_vom_deutschen_Vaterland%2C_WAB_78",
+      "wikipedia_extract": "Das Lied vom deutschen Vaterland, WAB 78, is a patriotic song composed by Anton Bruckner in c. 1845 during his stay in St. Florian.",
+      "pageviews_yearly": 1882
+    },
+    {
+      "qid": "Q21998476",
+      "title": "Das edle Herz, WAB 65",
+      "imslp_id": "Das_edle_Herz,_WAB_65_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP699181-ABruckner_Das_edle_Herz__WAB65_A-SF20-35.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Das_edle_Herz%2C_WAB_65",
+      "wikipedia_extract": "Das edle Herz, WAB 65, is a song composed by Anton Bruckner in c. 1851 during his stay in St. Florian.",
+      "pageviews_yearly": 1842
+    },
+    {
+      "qid": "Q21998477",
+      "title": "Das edle Herz, WAB 66",
+      "imslp_id": "Das_edle_Herz,_WAB_66_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP699200-ABruckner_Das_edle_Herz__WAB66_firstedition.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp133",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Das_edle_Herz%2C_WAB_66",
+      "wikipedia_extract": "Das edle Herz, WAB 66, is a song composed by Anton Bruckner in December 1857 during his stay in Linz. In St. Florian, Bruckner had already composed a first setting of the song for men's choir, WAB 65.",
+      "pageviews_yearly": 1883
+    },
+    {
+      "qid": "Q21998541",
+      "title": "Das hohe Lied, WAB 74",
+      "imslp_id": "Das_hohe_Lied,_WAB_74_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP703035-ABruckner_Das_hohe_Lied__WAB74_A-SF-20-30.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Das_hohe_Lied%2C_WAB_74",
+      "wikipedia_extract": "Das hohe Lied, WAB 74, is a song for double men's choir and three soloists, which Anton Bruckner composed in 1876 on a text by Heinrich von der Mattig.",
+      "pageviews_yearly": 1025
+    },
+    {
+      "qid": "Q21998313",
+      "title": "Der Abendhimmel, WAB 55",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Der_Abendhimmel_I_WAB_55_-_Anton_Bruckner.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q21998315",
+      "title": "Der Abendhimmel, WAB 56",
+      "imslp_id": "Der_Abendhimmel,_WAB_56_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP690870-ABruckner_Der_Abendhimmel__WAB56_firstedition.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp136",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Der_Abendhimmel%2C_WAB_56",
+      "wikipedia_extract": "Der Abendhimmel, WAB 56, is a song composed by Anton Bruckner in 1866. It is the second setting of the work. In 1862, Bruckner had already composed a first setting of the song for men's voice quartet.",
+      "pageviews_yearly": 1254
+    },
+    {
+      "qid": "Q21998593",
+      "title": "Der Lehrerstand, WAB 77",
+      "imslp_id": "Der_Lehrerstand,_WAB_77_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP702448-ABruckner_Der_Lehrerstand__WAB77_A-WnMus.Hs.19753.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp126",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Der_Lehrerstand%2C_WAB_77",
+      "wikipedia_extract": "Der Lehrerstand, WAB 77, is a song composed by Anton Bruckner in c. 1847 during his stay in Sankt Florian.",
+      "pageviews_yearly": 1294
+    },
+    {
+      "qid": "Q21998456",
+      "title": "Der Mondabend",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Der_Mondabend_(Bruckner)",
+      "wikipedia_extract": "\"Der Mondabend\", WAB 200, is a lied composed by Anton Bruckner in c. 1850 for Aloisia Bogner.",
+      "pageviews_yearly": 1135
+    },
+    {
+      "qid": "Q21998458",
+      "title": "Der deutsche Gesang, WAB 63",
+      "imslp_id": "Der_deutsche_Gesang,_WAB_63_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP699557-brucknerDasdeutscheLiedWAB63manuscript_A-LIsakaWAB63.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Der_deutsche_Gesang%2C_WAB_63",
+      "wikipedia_extract": "Der deutsche Gesang, WAB 63, is a patriotic song composed by Anton Bruckner in 1892, one year before Helgoland.",
+      "pageviews_yearly": 1408
+    },
+    {
+      "qid": "Q21998446",
+      "title": "Des Dankes Wort sei mir vergönnt, WAB 62",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Des_Dankes_Wort_sei_mir_verg%C3%B6nnt%2C_WAB_62",
+      "wikipedia_extract": "Des Dankes Wort sei mir vergönnt, WAB 62, is a song composed by Anton Bruckner during his stay in Sankt Florian.",
+      "pageviews_yearly": 938
+    },
+    {
+      "qid": "Q21998518",
+      "title": "Die Geburt, WAB 69",
+      "imslp_id": "Die_Geburt,_WAB_69_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP698590-ABruckner_Die_Geburt__WAB69_A-WEsa_invNr2697.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Die_Geburt%2C_WAB_69",
+      "wikipedia_extract": "Die Geburt, WAB 69, is a song composed by Anton Bruckner in 1851 during his stay in St. Florian.",
+      "pageviews_yearly": 1155
+    },
+    {
+      "qid": "Q18663627",
+      "title": "Dir, Herr, dir will ich mich ergeben",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Dir_Herr_dir_will_ich_mich_ergeben_WAB_12_-_Anton_Bruckner.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q21998470",
+      "title": "Du bist wie eine Blume, WAB 64",
+      "imslp_id": "Du_bist_wie_eine_Blume,_WAB_64_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP698794-brucknerDubistwieeineBlumeWAB64manuscript_First_Edition.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp132",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Du_bist_wie_eine_Blume%2C_WAB_64",
+      "wikipedia_extract": "Du bist wie eine Blume, WAB 64, is a song, which Anton Bruckner composed in 1861.",
+      "pageviews_yearly": 2049
+    },
+    {
+      "qid": "Q18612436",
+      "title": "Entsagen, WAB 14",
+      "imslp_id": "Entsagen,_WAB_14_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP691048-ABruckner_Entsagen__WAB14_A-SF20-28_parts.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Entsagen%2C_WAB_14",
+      "wikipedia_extract": "The cantata Entsagen (Renunciation), WAB 14, is a cantata composed by Anton Bruckner in c. 1851.",
+      "pageviews_yearly": 1472
+    },
+    {
+      "qid": "Q18663638",
+      "title": "Festgesang, WAB 15",
+      "imslp_id": "Festgesang,_WAB_15_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP692972-ABruckner_Festgesang__WAB15_A-SF19-9a.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp80",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Festgesang%2C_WAB_15",
+      "wikipedia_extract": "The Festgesang, WAB 15, is a cantata composed by Anton Bruckner in 1855.",
+      "pageviews_yearly": 1411
+    },
+    {
+      "qid": "Q571895",
+      "title": "Festive Cantata",
+      "imslp_id": "Festkantate,_WAB_16_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP692576-ABruckner_Festkantate__WAB16_A-LIdaWAB16_choralscore.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Festive_Cantata_(Bruckner)",
+      "wikipedia_extract": "The Fest-Kantate Preiset den Herrn, WAB 16, is a festive cantata composed by Anton Bruckner in 1862 for the celebration of the laying of the foundation stone of the new Mariä-Empfängnis-Dom of Linz.",
+      "pageviews_yearly": 1589
+    },
+    {
+      "qid": "Q5475414",
+      "title": "Four Orchestral Pieces",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Four_Orchestral_Pieces_(Bruckner)",
+      "wikipedia_extract": "The Four Orchestral Pieces are four short orchestral pieces, which Anton Bruckner composed in the fall of 1862 during his tuition with Otto Kitzler.",
+      "pageviews_yearly": 2123
+    },
+    {
+      "qid": "Q18663644",
+      "title": "Four Tantum ergo, WAB 41",
+      "imslp_id": "4_Tantum_ergo,_WAB_41_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP226513-Bruckner__Anton__4_Tantum_ergo__WAB_41.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Four_Tantum_ergo%2C_WAB_41",
+      "wikipedia_extract": "The four Tantum ergo, WAB 41, are settings of the hymn Tantum ergo composed by Anton Bruckner in 1846.",
+      "pageviews_yearly": 1596
+    },
+    {
+      "qid": "Q21998513",
+      "title": "Frühlingslied, WAB 68",
+      "imslp_id": "Frühlingslied,_WAB_68_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP698304-ABruckner_Frühlingslied__WAB68_A-LIlmMusHS519.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp147",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fr%C3%BChlingslied%2C_WAB_68",
+      "wikipedia_extract": "Frühlingslied, WAB 68, is a lied composed by Anton Bruckner in 1851 for the name-day of Aloisia Bogner.",
+      "pageviews_yearly": 1537
+    },
+    {
+      "qid": "Q5551889",
+      "title": "Germanenzug",
+      "imslp_id": "Germanenzug,_WAB_70_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP701578-ABruckner_Germanenzug__WAB70_A-KR-C56-6a.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp111",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Germanenzug",
+      "wikipedia_extract": "Germanenzug is a secular, patriotic cantata composed in 1863–1864 by Anton Bruckner on a text by August Silberstein.",
+      "pageviews_yearly": 2198
+    },
+    {
+      "qid": "Q21998534",
+      "title": "Herbstkummer, WAB 72",
+      "imslp_id": "Herbstkummer,_WAB_72_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP703488-ABruckner_Herbstkummer__WAB72_A-LIsa.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp149",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Herbstkummer%2C_WAB_72",
+      "wikipedia_extract": "Herbstkummer, WAB 72 is a lied composed by Anton Bruckner in 1864.",
+      "pageviews_yearly": 1521
+    },
+    {
+      "qid": "Q21998536",
+      "title": "Herbstlied, WAB 73",
+      "imslp_id": "Herbstlied,_WAB_73_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP703241-ABruckner_Herbstlied__WAB73_A-LIsakaWAB73.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp113",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Herbstlied%2C_WAB_73",
+      "wikipedia_extract": "Herbstlied, WAB 73, is a romantic song composed by Anton Bruckner in 1864. The song, scored for men's choir and two soprano soloists with piano accompaniment, depicts an autumn walking with nightingale song.",
+      "pageviews_yearly": 1294
+    },
+    {
+      "qid": "Q18663651",
+      "title": "Herz Jesu-Lied",
+      "imslp_id": "Herz-Jesu-Lied,_WAB_144_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP700312-E563185_46-47-Bruckner_-_Kleine_Kirchenmusikwerke__ed._Nowak_1984_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp67",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Herz_Jesu-Lied",
+      "wikipedia_extract": "Herz Jesu-Lied, WAB 144, is the second of two motets of Anton Bruckner's St. Florian period, which is of uncertain authorship. If Bruckner was the composer, it was composed presumably in 1845-1846.",
+      "pageviews_yearly": 1030
+    },
+    {
+      "qid": "Q18663658",
+      "title": "Iam lucis orto sidere",
+      "has_midi": true,
+      "midi_files": [
+        "midi/In_S_Angelum_custodem_WAB_18_-_Anton_Bruckner.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q21998554",
+      "title": "Im April, WAB 75",
+      "imslp_id": "Im_April,_WAB_75_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP692099-ABruckner_Im_April__WAB75_firstedition.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp150",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Im_April%2C_WAB_75",
+      "wikipedia_extract": "Im April, WAB 75 is a lied composed by Anton Bruckner in c. 1865.",
+      "pageviews_yearly": 1209
+    },
+    {
+      "qid": "Q18663660",
+      "title": "In jener letzten der Nächte",
+      "imslp_id": "In_jener_letzten_der_Nächte,_WAB_17_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP316546-ABruckner_In_jener_letzten_der_Nächte__WAB17_A-SF22-5.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp72",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/In_jener_letzten_der_N%C3%A4chte",
+      "wikipedia_extract": "In jener letzten der Nächte, WAB 17, is a motet composed by Anton Bruckner.",
+      "pageviews_yearly": 1192
+    },
+    {
+      "qid": "Q18161473",
+      "title": "Intermezzo in D minor",
+      "imslp_id": "Intermezzo,_WAB_113_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP661361-ABruckner_Intermezzo__WAB113_Mus.Hs.19684.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp26",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Intermezzo_in_D_minor_(Bruckner)",
+      "wikipedia_extract": "The Intermezzo in D minor is an 1879 composition by the Austrian composer Anton Bruckner. Although it was intended to replace the scherzo of the String Quintet, that piece was instead performed in its original form; the Intermezzo was not publicly premiered until after the composer's death.",
+      "pageviews_yearly": 1450
+    },
+    {
+      "qid": "Q18663661",
+      "title": "Inveni David, WAB 19",
+      "imslp_id": "Inveni_David,_WAB_19_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP590340-ABruckner_Inveni_David__WAB19_A-LIsakaWAB19.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp91",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Inveni_David%2C_WAB_19",
+      "wikipedia_extract": "Inveni David, WAB 19, is a sacred motet composed by Anton Bruckner in 1868.",
+      "pageviews_yearly": 1381
+    },
+    {
+      "qid": "Q129548",
+      "title": "It Happened Here",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/It_Happened_Here",
+      "wikipedia_extract": "It Happened Here is a 1964 British black-and-white war film written, produced and directed by Kevin Brownlow and Andrew Mollo, who began work on the film as teenagers. The film's largely amateur and independent production took some eight years, using volunteer actors with some support from professional filmmakers.",
+      "pageviews_yearly": 27272
+    },
+    {
+      "qid": "Q63498428",
+      "title": "Johan"
+    },
+    {
+      "qid": "Q18207005",
+      "title": "Kronstorfer Messe",
+      "imslp_id": "Kronstorfer_Messe,_WAB_146_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP481933-ABruckner_Kronstorfer_Messe__WAB146_A-SF20-66.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kronstorfer_Messe",
+      "wikipedia_extract": "The Kronstorfer Messe, WAB 146, is a missa brevis composed by Anton Bruckner in 1843-1844.",
+      "pageviews_yearly": 1585
+    },
+    {
+      "qid": "Q18663670",
+      "title": "Laßt Jubeltöne laut erklingen",
+      "imslp_id": "Lasst_Jubeltöne_laut_erklingen,_WAB_76_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP702401-ABruckner_Lasst_Jubeltöne_laut_erklingen__WAB76_A-LIa-PA94.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp109",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/La%C3%9Ft_Jubelt%C3%B6ne_laut_erklingen",
+      "wikipedia_extract": "Laßt Jubeltöne laut erklingen, WAB 76, is a festive song composed by Anton Bruckner in 1854.",
+      "pageviews_yearly": 1254
+    },
+    {
+      "qid": "Q18663674",
+      "title": "Libera me, WAB 21",
+      "imslp_id": "Libera_me,_WAB_21_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP690891-ABruckner_Libera_me__WAB21_A-SF20-56.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp66",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Libera_me%2C_WAB_21",
+      "wikipedia_extract": "Libera me, WAB 21, is the first of two settings of the absoute Libera me, composed by Anton Bruckner in c. 1843.",
+      "pageviews_yearly": 1102
+    },
+    {
+      "qid": "Q18663676",
+      "title": "Libera me, WAB 22",
+      "imslp_id": "Libera_me,_WAB_22_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP690831-ABruckner_Libera_me__WAB22_A-SF20-59.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp78",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Libera_me%2C_WAB_22",
+      "wikipedia_extract": "Libera me, WAB 22, is the second of two settings of the absoute Libera me, composed by Anton Bruckner in 1854.",
+      "pageviews_yearly": 1310
+    },
+    {
+      "qid": "Q1124334",
+      "title": "Locus iste",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Locus_Iste_-_Anton_Bruckner.mid",
+        "midi/Locus_iste.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q6731722",
+      "title": "Magnificat",
+      "imslp_id": "Magnificat,_WAB_24_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP496108-ABruckner_Magnificat__WAB24_firstedition.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp51",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Magnificat_(Bruckner)",
+      "wikipedia_extract": "The Magnificat, WAB 24 is a setting of the Magnificat for SATB choir and soloists, orchestra and organ composed by Anton Bruckner in 1852.",
+      "pageviews_yearly": 1989
+    },
+    {
+      "qid": "Q1924064",
+      "title": "Mass No. 1",
+      "imslp_id": "Mass_No.1_in_D_minor,_WAB_26_(Bruckner,_Anton)",
+      "pdf_filename": "Bruckner_Messe_d-Moll.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp57",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mass_No._1_(Bruckner)",
+      "wikipedia_extract": "The Mass No. 1 in D minor, WAB 26 by Anton Bruckner, is a setting of the Mass ordinary for soloists, mixed choir and orchestra, and organ.",
+      "pageviews_yearly": 3785
+    },
+    {
+      "qid": "Q1472748",
+      "title": "Mass No. 3",
+      "imslp_id": "Mass_No.3_in_F_minor,_WAB_28_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP53872-00._COMPLETE_SCORE.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp59",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mass_No._3_(Bruckner)",
+      "wikipedia_extract": "The Mass No. 3 in F minor, WAB 28, is a setting of the mass ordinary for vocal soloists, chorus and orchestra, and organ ad libitum, that Anton Bruckner composed in 1867–1868.",
+      "pageviews_yearly": 5797
+    },
+    {
+      "qid": "Q18663695",
+      "title": "Mayer Cantata, WAB 60",
+      "imslp_id": "Mayer_Cantata,_WAB_60_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP697851-brucknerAuf_Brüder_auf_UnddieSaitenzurHandWAB60vocalscore_First_Edition.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mayer_Cantata%2C_WAB_60",
+      "wikipedia_extract": "The Mayer Cantata, WAB 60, is a cantata composed by Anton Bruckner in 1855. It is the second of three larger-scale occasional compositions, and the composer's first extended composition for large wind ensemble and choir.",
+      "pageviews_yearly": 1151
+    },
+    {
+      "qid": "Q21998640",
+      "title": "Mein Herz und deine Stimme, WAB 79",
+      "imslp_id": "Mein_Herz_und_deine_Stimme,_WAB_79_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP703008-ABruckner_Mein_Herz_und_deine_Stimme__WAB79_A-WnMus.Hs.19783.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp151",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mein_Herz_und_deine_Stimme%2C_WAB_79",
+      "wikipedia_extract": "Mein Herz und deine Stimme, WAB 79 is a lied composed by Anton Bruckner in 1868.",
+      "pageviews_yearly": 1119
+    },
+    {
+      "qid": "Q18162357",
+      "title": "Messe für den Gründonnerstag",
+      "imslp_id": "Messe_für_den_Gründonnerstag,_WAB_9_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP463396-ABruckner_Mess_für_den_Gründonnerstag__WAB9_firstedition.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Messe_f%C3%BCr_den_Gr%C3%BCndonnerstag",
+      "wikipedia_extract": "The Messe für den Gründonnerstag, WAB 9, is a missa brevis composed by Anton Bruckner in 1844.",
+      "pageviews_yearly": 1728
+    },
+    {
+      "qid": "Q18663699",
+      "title": "Military march",
+      "imslp_id": "Military_March_in_E-flat_major,_WAB_116_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP674175-ABruckner_March__WAB116_Mus.Hs.19683.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Military_march_(Bruckner)",
+      "wikipedia_extract": "The Marsch in E-flat major, WAB 116, is a military march composed by Anton Bruckner in 1865.",
+      "pageviews_yearly": 1726
+    },
+    {
+      "qid": "Q16952732",
+      "title": "Missa solemnis",
+      "imslp_id": "Missa_solemnis,_WAB_29_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP696077-B_Missa_solemnis_IMSLP.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp54",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Missa_solemnis_(Bruckner)",
+      "wikipedia_extract": "\nThe Missa solemnis, WAB 29, is a solemn mass composed by Anton Bruckner in 1854 for the installation of Friedrich Mayer as abbot of St. Florian Monastery on 14 September 1854.",
+      "pageviews_yearly": 2406
+    },
+    {
+      "qid": "Q24963354",
+      "title": "Mitternacht, WAB 80",
+      "imslp_id": "Mitternacht,_WAB_80_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP690847-brucknermitternachtWAB80score_Doblinger_Edition.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp114",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mitternacht%2C_WAB_80",
+      "wikipedia_extract": "Mitternacht (Midnight), WAB 80, is a song composed by Anton Bruckner in 1869.",
+      "pageviews_yearly": 1209
+    },
+    {
+      "qid": "Q18391244",
+      "title": "Motets",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/List_of_motets_by_Anton_Bruckner",
+      "wikipedia_extract": "\nAnton Bruckner composed about 40 motets during his life, the earliest, a setting of Pange lingua, in c. 1835, the last, Vexilla regis in 1892.",
+      "pageviews_yearly": 4112
+    },
+    {
+      "qid": "Q24085003",
+      "title": "Nachruf, WAB 81",
+      "imslp_id": "Nachruf,_WAB_81a_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP702734-brucknerTrösterinMusikWAB88score_Universal_Edition.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nachruf%2C_WAB_81a",
+      "wikipedia_extract": "Nachruf (\"Obituary\"), WAB 81a, is a song composed by Anton Bruckner in 1877 in memory of Joseph Seiberl. The song is better known as its 1886 reissue as Trösterin Musik, WAB 81b.",
+      "pageviews_yearly": 1704
+    },
+    {
+      "qid": "Q18663704",
+      "title": "O Du liebes Jesu-Kind",
+      "imslp_id": "O_du_liebes_Jesu_Kind,_WAB_145_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP700301-E563185_45-Bruckner_-_Kleine_Kirchenmusikwerke__ed._Nowak_1984_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/O_Du_liebes_Jesu-Kind",
+      "wikipedia_extract": "O Du liebes Jesu-Kind, WAB 145, is the first of two motets of Anton Bruckner's St. Florian period, which is of uncertain authorship. If Bruckner was the composer, he composed it presumably in 1845–46.",
+      "pageviews_yearly": 1092
+    },
+    {
+      "qid": "Q57934077",
+      "title": "Ode"
+    },
+    {
+      "qid": "Q11334836",
+      "title": "Orchestral pieces (Bruckner)",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp16",
+      "movements": [
+        {
+          "qid": "Q5475414"
+        },
+        {
+          "qid": "Q7114051"
+        },
+        {
+          "qid": "Q18413315"
+        },
+        {
+          "qid": "Q18663699"
+        }
+      ]
+    },
+    {
+      "qid": "Q18663712",
+      "title": "Os justi",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Os_justi_meditabitur_WAB_30_-_Anton_Bruckner.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q7114051",
+      "title": "Overture in G minor",
+      "imslp_id": "Overture_in_G_minor,_WAB_98_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP100933-00._BRUCKNER_OVERTURE_-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp17",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Overture_(Bruckner)",
+      "wikipedia_extract": "Anton Bruckner composed the Overture in G minor, WAB 98 in 1862–63, during his tuition by Otto Kitzler.",
+      "pageviews_yearly": 2106
+    },
+    {
+      "qid": "Q18663719",
+      "title": "Pange lingua, WAB 31",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Bruckner_-_Pange_Lingua.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q18663721",
+      "title": "Pange lingua, WAB 33",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Pange_lingua_-_Tantum_ergo_Phrygian_WAB_33_-_Anton_Bruckner.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q7253919",
+      "title": "Psalm 112",
+      "imslp_id": "Psalm_112,_WAB_35_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP696722-Bruckner_-_Psalm_112_-_Vocal_Score__Wöss_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp56",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Psalm_112_(Bruckner)",
+      "wikipedia_extract": "Bruckner's Psalm 112, WAB 35, is a psalm setting for eight-part double mixed choir and full orchestra. It is a setting of a German version of Psalm 113, which is Psalm 112 in the Vulgata.",
+      "pageviews_yearly": 1677
+    },
+    {
+      "qid": "Q7253921",
+      "title": "Psalm 114",
+      "imslp_id": "Psalm_114,_WAB_36_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP695934-ABruckner_Psalm_114__WAB36_A-SF19-4b.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp53",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Psalm_114_(Bruckner)",
+      "wikipedia_extract": "Bruckner's Psalm 114, WAB 36, is a psalm setting of verses 1 to 9 of a German version of Psalm 116, which is Psalm 114 in the Vulgata.",
+      "pageviews_yearly": 1463
+    },
+    {
+      "qid": "Q7253926",
+      "title": "Psalm 146",
+      "imslp_id": "Psalm_146,_WAB_37_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP697010-ABruckner_Psalm_146__WAB37_Mus.Hs.40500_segment1.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp55",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Psalm_146_(Bruckner)",
+      "wikipedia_extract": "Psalm 146 in A major by Anton Bruckner is a psalm setting for double mixed choir, soloists and orchestra. It is a setting of verses 1 to 11 of a German version of Psalm 147, which is Psalm 146 in the Vulgata.",
+      "pageviews_yearly": 2424
+    },
+    {
+      "qid": "Q7253928",
+      "title": "Psalm 150 (Bruckner)",
+      "imslp_id": "Psalm 150, WAB 38 (Bruckner, Anton)",
+      "pdf_filename": "PMLP145481-00._BRUCKNER_PSALM_150_-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp62",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Psalm_150_(Bruckner)",
+      "wikipedia_extract": "Anton Bruckner's Psalm 150, WAB 38, is a setting of Psalm 150 for mixed chorus, soprano soloist and orchestra written in 1892.",
+      "pageviews_yearly": 2623
+    },
+    {
+      "qid": "Q7253929",
+      "title": "Psalm 22",
+      "imslp_id": "Psalm_22,_WAB_34_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP691080-ABruckner_Psalm_22__WAB34_A-SF-19-5a.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp52",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Psalm_22_(Bruckner)",
+      "wikipedia_extract": "Bruckner's Psalm 22, WAB 34, is a setting of a German version of Psalm 23, which was psalm 22 in the Vulgata.",
+      "pageviews_yearly": 1567
+    },
+    {
+      "qid": "Q21998296",
+      "title": "Psalms",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp62",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/List_of_psalm_settings_by_Anton_Bruckner",
+      "wikipedia_extract": "\nAnton Bruckner composed five psalms settings during his life, the earliest Psalm 114 in 1852, the last, Psalm 150 in 1892.",
+      "pageviews_yearly": 959
+    },
+    {
+      "qid": "Q1369413",
+      "title": "Requiem",
+      "imslp_id": "Requiem,_WAB_39_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP99876-Bruckner-RequiemFS.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp50",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Requiem_(Bruckner)",
+      "wikipedia_extract": "The Requiem in D minor, WAB 39, is a Missa pro defunctis composed by Anton Bruckner in 1849.",
+      "pageviews_yearly": 3754
+    },
+    {
+      "qid": "Q18663751",
+      "title": "Salvum fac populum tuum, WAB 40",
+      "imslp_id": "Salvum_fac_populum,_WAB_40_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP695782-ABruckner_Salvum_fac_populum__WAB40_MHc7679.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Salvum_fac_populum_tuum%2C_WAB_40",
+      "wikipedia_extract": "Salvum fac populum tuum, WAB 40, is a motet composed by Anton Bruckner in 1884.",
+      "pageviews_yearly": 2007
+    },
+    {
+      "qid": "Q649600",
+      "title": "Senso",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Senso_(film)",
+      "wikipedia_extract": "Senso is a 1954 Italian historical melodrama film directed and co-written by Luchino Visconti, based on Camillo Boito's novella of the same name. Set during the Third Italian War of Independence, the film follows the Italian Contessa Livia Serpieri, who has an affair with the Austrian Lieutenant Franz Mahler. It was Visconti's first color film.",
+      "pageviews_yearly": 34392
+    },
+    {
+      "qid": "Q24963364",
+      "title": "Sternschnuppen, WAB 85",
+      "imslp_id": "Sternschnuppen,_WAB_85_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP691093-brucknerSternschnuppenWAB85manuscript_First_Edition.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sternschnuppen%2C_WAB_85",
+      "wikipedia_extract": "Sternschnuppen, WAB 73, is a song, which Anton Bruckner composed for his own men's voice quartet in c. 1848 during his stay in the Sankt Florian.",
+      "pageviews_yearly": 1225
+    },
+    {
+      "qid": "Q17025620",
+      "title": "String Quartet",
+      "imslp_id": "String_Quartet,_WAB_111_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP573786-B_SQ_IMSLP.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp22",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_(Bruckner)",
+      "wikipedia_extract": "The String Quartet in C minor WAB 111, was composed by Anton Bruckner's in 1862 during his tuition by Otto Kitzler.",
+      "pageviews_yearly": 2062
+    },
+    {
+      "qid": "Q24963355",
+      "title": "Ständchen, WAB 84",
+      "imslp_id": "Ständchen,_WAB_84.2_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP701863-brucknerstaendchenWAB84manuscript_First_Edition.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp125",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/St%C3%A4ndchen%2C_WAB_84.2",
+      "wikipedia_extract": "\"Ständchen\" (\"Serenade\"), WAB 84.2, is a Lied composed by Anton Bruckner in c. 1846.",
+      "pageviews_yearly": 1052
+    },
+    {
+      "qid": "Q18413315",
+      "title": "Symphonic Prelude",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphonic_Prelude_(Bruckner)",
+      "wikipedia_extract": "The Symphonisches Präludium in C minor, WAB add 332, is an orchestral composition by Anton Bruckner or his entourage, composed in 1876. The work was discovered shortly after World War II. Heinrich Tschuppik, who found the orchestral score of the work in the estate of Bruckner's pupil Rudolf Krzyzanowski, attributed the authorship to Bruckner. Thirty years later, Mahler scholar Paul Banks, who knew only a four-stave reduction of the work, proposed that the work might be attributed to Mahler. While the exact circumstances of the composition of this Prelude have not been determined, it is certain to have been composed within the circle of Bruckner and his students at the Vienna Conservatory of Music. Based on the original orchestral score, it seems likely that the work was at least sketched by Bruckner, possibly as an exercise in orchestration for Krzyzanowski.",
+      "pageviews_yearly": 2001
+    },
+    {
+      "qid": "Q163524",
+      "title": "Symphony No. 1",
+      "imslp_id": "Symphony_No.1_in_C_minor,_WAB_101_(Bruckner,_Anton)",
+      "pdf_filename": "Bruckner_A._Symphony_N1__c__Clavier__A.Stradal_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp3",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._1_(Bruckner)",
+      "wikipedia_extract": "Anton Bruckner's Symphony No. 1 in C minor, WAB 101, was the first symphony the composer thought worthy of performing and bequeathing to the Austrian National Library. Chronologically it comes after the Study Symphony in F minor and before the \"nullified\" Symphony in D minor. The composer gave it the nickname Das kecke Beserl, and conducted its 1868 premiere. Much later, after Bruckner was granted an honorary University of Vienna doctorate in 1891, he dedicated the 1890–1891 version of the work to that institution.",
+      "pageviews_yearly": 7905
+    },
+    {
+      "qid": "Q210483",
+      "title": "Symphony No. 2",
+      "imslp_id": "Symphony_No.2_in_C_minor,_WAB_102_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP15246-ABruckner_Symphony_No.2__WAB102_Mus.Hs.6018.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp5",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._2_(Bruckner)",
+      "wikipedia_extract": "Anton Bruckner's Symphony No. 2 in C minor, sometimes known as the \"Symphony of Pauses\", was completed in 1872. It was actually the fourth symphony composed by Bruckner, after the Symphony in F minor (1863), the Symphony No. 1 in C minor (1866), and the Symphony in D minor (1869).",
+      "pageviews_yearly": 7120
+    },
+    {
+      "qid": "Q223510",
+      "title": "Symphony No. 3",
+      "imslp_id": "Symphony No.3 in D minor, WAB 103 (Bruckner, Anton)",
+      "pdf_filename": "PMLP15252-Bruckner_-_Symphony_No._3_in_D_minor__WAB_103__1877-78_2nd_version__autograph_manuscript__-_Mvt._1.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp6",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._3_(Bruckner)",
+      "wikipedia_extract": "Anton Bruckner's Symphony No. 3 in D minor, WAB 103, was dedicated to Richard Wagner and is sometimes known as his \"Wagner Symphony\". It was written in 1873, revised in 1877 and again in 1889.",
+      "pageviews_yearly": 14037
+    },
+    {
+      "qid": "Q240200",
+      "title": "Symphony No. 5",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp8",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._5_(Bruckner)",
+      "wikipedia_extract": "Anton Bruckner's Symphony No. 5 in B-flat major WAB 105, was written in 1875–1876, with minor changes over the next two years. It came at a time of trouble and disillusion for the composer: a lawsuit, from which he was exonerated, and a reduction in salary. Dedicated to Karl von Stremayr, education minister in the Austro-Hungarian Empire, the symphony has at times been nicknamed the \"Tragic\", the \"Church of Faith\" or the \"Pizzicato\"; Bruckner himself referred to it as the \"Fantastic\" without applying this or any other name formally.",
+      "pageviews_yearly": 16929
+    },
+    {
+      "qid": "Q246450",
+      "title": "Symphony No. 6",
+      "imslp_id": "Symphony No.6 in A major, WAB 106 (Bruckner, Anton)",
+      "pdf_filename": "PMLP16209-Bruckner_-_Symphony_No._6_in_A_major__1879-81_1st_version__autograph_manuscript___WAB_106_-_Full_Score_-_Mvt._1.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp9",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._6_(Bruckner)",
+      "wikipedia_extract": "The Symphony No. 6 in A major, WAB 106, by Austrian composer Anton Bruckner (1824–1896) is a work in four movements composed between 24 September 1879, and 3 September 1881 and dedicated to his landlord, Anton van Ölzelt-Newin. Only two movements from it were performed in public in the composer's lifetime. Though it possesses many characteristic features of a Bruckner symphony, it differs the most from the rest of his symphonic repertory. Redlich went so far as to cite the lack of hallmarks of Bruckner's symphonic compositional style in the Sixth Symphony for the somewhat bewildered reaction of supporters and critics alike.",
+      "pageviews_yearly": 12288
+    },
+    {
+      "qid": "Q260988",
+      "title": "Symphony No. 7",
+      "imslp_id": "Symphony No.7 in E major, WAB 107 (Bruckner, Anton)",
+      "pdf_filename": "Bruckner_Symphony_No.7_Piano_2hands.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp10",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._7_(Bruckner)",
+      "wikipedia_extract": "Anton Bruckner's Symphony No. 7 in E major, WAB 107, is one of the composer's best-known symphonies. It was written between 1881 and 1883 and was revised in 1885. It is dedicated to Ludwig II of Bavaria. The premiere, given under Arthur Nikisch and the Gewandhaus Orchestra in the opera house at Leipzig on 30 December 1884, brought Bruckner the greatest success he had known in his life.",
+      "pageviews_yearly": 33846
+    },
+    {
+      "qid": "Q270798",
+      "title": "Symphony No. 8",
+      "imslp_id": "Symphony No.8 in C minor, WAB 108 (Bruckner, Anton)",
+      "pdf_filename": "PMLP16220-Bruckner-WAB108FSeu.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp11",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._8_(Bruckner)",
+      "wikipedia_extract": "Anton Bruckner's Symphony No. 8 in C minor, WAB 108, is the last symphony the composer completed. It exists in two major versions of 1887 and 1890. It was premiered under conductor Hans Richter in 1892 at the Musikverein, Vienna. It is dedicated to the Emperor Franz Joseph I of Austria.",
+      "pageviews_yearly": 31510
+    },
+    {
+      "qid": "Q1990679",
+      "title": "Symphony in D minor",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Excerpt_From_Symphony_8_Finale_Mvmt_IV.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q24963377",
+      "title": "Sängerbund, WAB 82",
+      "imslp_id": "Sängerbund,_WAB_82_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP703229-brucknersaengerbundWAB82score_Oberoesterreichisch-Salzburger_Linz_Edition.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/S%C3%A4ngerbund%2C_WAB_82",
+      "wikipedia_extract": "Sängerbund, WAB 82, is a patriotic song, which Anton Bruckner composed in 1882.",
+      "pageviews_yearly": 1150
+    },
+    {
+      "qid": "Q18663773",
+      "title": "Tantum ergo, WAB 32",
+      "imslp_id": "Tantum_ergo,_WAB_32_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP517337-ABruckner_Tantum_ergo__WAB32_A-SF20-32.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp65",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tantum_ergo%2C_WAB_32",
+      "wikipedia_extract": "Tantum ergo, WAB 32, is the first of eight settings of the hymn Tantum ergo composed by Anton Bruckner in 1845.",
+      "pageviews_yearly": 1274
+    },
+    {
+      "qid": "Q18663775",
+      "title": "Tantum ergo, WAB 42",
+      "imslp_id": "Tantum_ergo,_WAB_42_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP226519-Bruckner__Anton__Tantum_ergo__WAB_43.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp71",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tantum_ergo%2C_WAB_42",
+      "wikipedia_extract": "Tantum ergo, WAB 42, is a setting of the hymn Tantum ergo composed by Anton Bruckner in 1846.",
+      "pageviews_yearly": 1176
+    },
+    {
+      "qid": "Q18663777",
+      "title": "Tantum ergo, WAB 43",
+      "imslp_id": "Tantum_ergo,_WAB_43_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP696289-ABruckner_Tantum_ergo__WAB43_SF20-29.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp73",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tantum_ergo%2C_WAB_43",
+      "wikipedia_extract": "Tantum ergo, WAB 43, is the second of eight settings of the hymn Tantum ergo composed by Anton Bruckner in c. 1845.",
+      "pageviews_yearly": 977
+    },
+    {
+      "qid": "Q18663779",
+      "title": "Tantum ergo, WAB 44",
+      "imslp_id": "Tantum_ergo,_WAB_44_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP694998-ABruckner_Tantum_ergo__WAB44_firstedition.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp77",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tantum_ergo%2C_WAB_44",
+      "wikipedia_extract": "Tantum ergo, WAB 44, is the last of eight settings of the hymn Tantum ergo composed by Anton Bruckner in c. 1854.",
+      "pageviews_yearly": 1134
+    },
+    {
+      "qid": "Q1387966",
+      "title": "Te Deum",
+      "imslp_id": "Te_Deum,_WAB_45_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP58634-00._BRUCKNER_TE_DEUM_-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp61",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Te_Deum_(Bruckner)",
+      "wikipedia_extract": "The Te Deum in C major, WAB 45, is a setting of the Te Deum hymn, composed by Anton Bruckner for SATB choir and soloists, orchestra, and organ ad libitum.",
+      "pageviews_yearly": 9068
+    },
+    {
+      "qid": "Q18164523",
+      "title": "Tota pulchra es",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Tota_pulchra_es_WAB_46_-_Anton_Bruckner.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q18663796",
+      "title": "Trauungschor, WAB 49",
+      "imslp_id": "Trauungslied,_WAB_49_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP691088-brucknertrauungsliedWAB49manuscript_Mus.Hs.19764.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Trauungschor%2C_WAB_49",
+      "wikipedia_extract": "Trauungschor, WAB 49, is a wedding song composed by Anton Bruckner on 8 January 1865.",
+      "pageviews_yearly": 1375
+    },
+    {
+      "qid": "Q24963378",
+      "title": "Träumen und Wachen, WAB 87",
+      "imslp_id": "Träumen_und_Wachen,_WAB_87_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP691337-ABruckner_Träumen_und_Wachen__WAB87_firstedition.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp144",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tr%C3%A4umen_und_Wachen%2C_WAB_87",
+      "wikipedia_extract": "Träumen und Wachen, WAB 87, is a song, which Anton Bruckner composed in 1890 to celebrate the 100th anniversary of Franz Grillparzer's birth.",
+      "pageviews_yearly": 1574
+    },
+    {
+      "qid": "Q18589250",
+      "title": "Two Aequali",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Two_Aequali_(Bruckner)",
+      "wikipedia_extract": "The Two Aequali, WAB 114 & WAB 149, were composed by Anton Bruckner in 1847.",
+      "pageviews_yearly": 2052
+    },
+    {
+      "qid": "Q19898094",
+      "title": "Two Asperges me, WAB 3",
+      "imslp_id": "2_Asperges_me,_WAB_3_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP690837-ABruckner_2_Asperges_me__WAB3_firstedition.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Two_Asperges_me%2C_WAB_3",
+      "wikipedia_extract": "The two Asperges me, WAB 3, are sacred motets composed by Anton Bruckner. They are settings of the Latin Asperges me, the antiphon used for the celebration of Asperges.",
+      "pageviews_yearly": 1358
+    },
+    {
+      "qid": "Q18589175",
+      "title": "Two Totenlieder",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Two_Totenlieder_(Bruckner)",
+      "wikipedia_extract": "The two Totenlieder, WAB 47/1 & 47/2, are elegies composed by Anton Bruckner in 1852.",
+      "pageviews_yearly": 3683
+    },
+    {
+      "qid": "Q24963329",
+      "title": "Um Mitternacht, WAB 89",
+      "imslp_id": "Um_Mitternacht,_WAB_89_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP703840-brucknerUmMitternachtWAB89score_Universal_Edition.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp112",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Um_Mitternacht%2C_WAB_89",
+      "wikipedia_extract": "Um Mitternacht, WAB 89, is a song composed by Anton Bruckner in 1864.",
+      "pageviews_yearly": 1406
+    },
+    {
+      "qid": "Q24963350",
+      "title": "Um Mitternacht, WAB 90",
+      "imslp_id": "Um_Mitternacht,_WAB_90_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP426246-ABruckner_Um_Mitternacht.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp143",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Um_Mitternacht%2C_WAB_90",
+      "wikipedia_extract": "Um Mitternacht, WAB 90, is a song composed by Anton Bruckner in 1886 on a text of Robert Prutz. About twenty years earlier Bruckner had already composed a song on the same text.",
+      "pageviews_yearly": 1152
+    },
+    {
+      "qid": "Q24963387",
+      "title": "Vaterlandslied, WAB 92",
+      "imslp_id": "Vaterlandslied,_WAB_92_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP691939-ABruckner_Vaterlandslied__WAB92_firstedition.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vaterlandslied%2C_WAB_92",
+      "wikipedia_extract": "Vaterlandslied, WAB 92, is a patriotic song composed by Anton Bruckner during his stay in Linz.",
+      "pageviews_yearly": 1377
+    },
+    {
+      "qid": "Q24963390",
+      "title": "Vaterländisch Weinlied, WAB 91",
+      "imslp_id": "Vaterländisch_Weinlied,_WAB_91_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP701318-brucknerVaterlaendischesWeinliedWAB91_Emil_Berté_First_Edition.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vaterl%C3%A4ndisch_Weinlied%2C_WAB_91",
+      "wikipedia_extract": "Vaterländisch Weinlied, WAB 91, is a song composed by Anton Bruckner in 1866 during his stay in Linz.",
+      "pageviews_yearly": 1468
+    },
+    {
+      "qid": "Q18663803",
+      "title": "Veni Creator Spiritus, WAB 50",
+      "imslp_id": "Veni_creator_spiritus,_WAB_50_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP697313-E563185_135-Bruckner_-_Kleine_Kirchenmusikwerke__ed._Nowak_1984_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Veni_Creator_Spiritus%2C_WAB_50",
+      "wikipedia_extract": "Veni Creator Spiritus, WAB 50, is a motet composed by Anton Bruckner in c. 1884.",
+      "pageviews_yearly": 1289
+    },
+    {
+      "qid": "Q18663805",
+      "title": "Vergißmeinnicht, WAB 93",
+      "imslp_id": "Vergissmeinnicht,_WAB_93_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP699823-ABruckner_Vergissmeinnicht__WAB93_text_A-SF19-1a.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vergi%C3%9Fmeinnicht%2C_WAB_93",
+      "wikipedia_extract": "Vergißmeinnicht (Forget-me-not), WAB 93, is a cantata composed by Anton Bruckner in 1845.",
+      "pageviews_yearly": 1246
+    },
+    {
+      "qid": "Q18164675",
+      "title": "Vexilla regis",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Vexilla_Regis_WAB_51_-_Anton_Bruckner.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q18164683",
+      "title": "Virga Jesse",
+      "imslp_id": "Virga_Jesse,_WAB_52_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP169686-Bruckner_Virga_Jesse_ed._Berberich.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp103",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Virga_Jesse_(Bruckner)",
+      "wikipedia_extract": "Virga Jesse, WAB 52, is a motet by the Austrian composer Anton Bruckner. It sets the gradual Virga Jesse floruit for unaccompanied mixed choir.",
+      "pageviews_yearly": 3467
+    },
+    {
+      "qid": "Q24963307",
+      "title": "Volkslied, WAB 94",
+      "imslp_id": "Volkslied,_WAB_94_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP692706-Bruckner-WAB94.Manuscript.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp134",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Volkslied%2C_WAB_94",
+      "wikipedia_extract": "The Volkslied, WAB 94, is a patriotic song composed by Anton Bruckner in 1882 for a competition for a Hymne für das Deutsche Volk in Österreich.",
+      "pageviews_yearly": 1894
+    },
+    {
+      "qid": "Q18663807",
+      "title": "Vor Arneths Grab, WAB 53",
+      "imslp_id": "Vor_Arneths_Grab,_WAB_53_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP691345-brucknervorarnethsgrabWAB53manuscript_First_Edition.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp79",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Vor_Arneths_Grab%2C_WAB_53",
+      "wikipedia_extract": "Vor Arneths Grab, WAB 53, is an elegy composed by Anton Bruckner in 1854, for men's voices and three trombones.",
+      "pageviews_yearly": 1236
+    },
+    {
+      "qid": "Q18640030",
+      "title": "Weltliche Chorwerke",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/List_of_secular_choral_works_by_Anton_Bruckner",
+      "wikipedia_extract": "Throughout almost all his composing life, Anton Bruckner composed about thirty Weltliche Chorwerke and seven Wahlsprüche (mottoes) on German-language texts, the first in 1843 and the last in 1893. Many of these works including the mottoes, often with a patriotic slant, were written for Liedertafel, above all Frohsinn and Sängerbund. Others were composed for private occasions, such as weddings, funerals, birthdays or name-days, being dedicated to friends and acquaintances of the composer. The large majority of these works are set for men's choir, sometimes with soloists. Only two choral works and one motto are set for mixed choir.",
+      "pageviews_yearly": 1509
+    },
+    {
+      "qid": "Q24963442",
+      "title": "Wie bist du, Frühling, gut und treu, WAB 58",
+      "imslp_id": "Wie_bist_du,_Frühling,_gut_und_treu,_WAB_58_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP695516-ABruckner_Wie_bist_du__Frühling__gut_und_treu__WAB58_A-Wst-MH7680.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp148",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wie_bist_du%2C_Fr%C3%BChling%2C_gut_und_treu%2C_WAB_58",
+      "wikipedia_extract": "Wie bist du, Frühling, gut und treu, WAB 58 is a lied composed by Anton Bruckner in 1856 on a text of Oskar von Redwitz.",
+      "pageviews_yearly": 1140
+    },
+    {
+      "qid": "Q1778554",
+      "title": "Windhaager Messe",
+      "imslp_id": "Windhaager_Messe,_WAB_25_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP694526-ABruckner_Windhaager_Messe__WAB25_firstedition.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Windhaager_Messe",
+      "wikipedia_extract": "The Windhaager Messe, WAB 25, is a missa brevis composed by Anton Bruckner in 1842.",
+      "pageviews_yearly": 2105
+    },
+    {
+      "qid": "Q24085002",
+      "title": "Zur Vermählungsfeier, WAB 54",
+      "imslp_id": "Zur_Vermählungsfeier,_WAB_54_(Bruckner,_Anton)",
+      "pdf_filename": "PMLP691090-brucknerzurvermählungsfeierWAB54score_First_Edition.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/anton-bruckner-1824-pp94",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zur_Verm%C3%A4hlungsfeier%2C_WAB_54",
+      "wikipedia_extract": "Zur Vermählungsfeier, WAB 54, is a wedding song composed by Anton Bruckner on 27 November 1878.",
+      "pageviews_yearly": 1142
+    }
+  ]
+}

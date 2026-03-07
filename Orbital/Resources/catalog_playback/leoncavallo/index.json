@@ -1,0 +1,99 @@
+{
+  "composer_name": "Ruggero Leoncavallo",
+  "name_last_first": "Leoncavallo, Ruggero",
+  "slug": "leoncavallo",
+  "wiki_page": "https://en.wikipedia.org/wiki/Ruggero_Leoncavallo",
+  "apple_music_playlist": "",
+  "era": "Late- / Post-Romantic",
+  "dates": "1857 – 1919",
+  "nationality": "ITA",
+  "notable": true,
+  "works": [
+    {
+      "title": "Vesti la Giubba",
+      "musicxml": "musicxml/Vesti_la_Giubba.mxl",
+      "midi": "midi/Vesti_la_Giubba.mid",
+      "time_signature": "2/4",
+      "instruments": [
+        "Voice"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 4.14,
+        "n_favorites": 51,
+        "n_views": 2552,
+        "duration_seconds": 82.49996412820853,
+        "n_notes": 93,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "opera-tenor-pagliacci",
+        "musescore_url": "https://musescore.com/user/5575706/scores/1372956",
+        "musescore_duration": "01:26"
+      },
+      "key": "G major",
+      "instruments_gm": [
+        "Choir Aahs"
+      ],
+      "tempo_bpm": 46,
+      "n_measures": 33,
+      "n_parts": 1,
+      "n_notes": 91,
+      "notes_per_second": 1.1,
+      "apple_music_search_query": "Leoncavallo G major Vesti la Giubba",
+      "parent_work_title": "pagliac",
+      "wikidata_id": "Q645543",
+      "wikidata_title": "Vesti la giubba",
+      "musicbrainz_id": "d4126086-8d71-3b9e-98f2-dd578f2ff4bb",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Leoncavallo%20Vesti%20la%20Giubba",
+      "display_title": "Vesti la giubba"
+    },
+    {
+      "title": "vesti la giubba",
+      "musicxml": "musicxml/Vesti_la_Giubba_1.mxl",
+      "midi": "midi/Vesti_la_Giubba_1.mid",
+      "time_signature": "4/4",
+      "instruments": [
+        "Voice"
+      ],
+      "is_multi_movement": false,
+      "pdmx": {
+        "rating": 0.0,
+        "n_favorites": 0,
+        "n_views": 120,
+        "duration_seconds": 65.99999999829501,
+        "n_notes": 206,
+        "complexity": "0",
+        "is_original": false,
+        "is_best_arrangement": true,
+        "genres": "classical",
+        "tags": "NA",
+        "musescore_url": "https://musescore.com/user/31574702/scores/5964158",
+        "musescore_duration": "01:06"
+      },
+      "key": "G major",
+      "instruments_gm": [
+        "Choir Aahs"
+      ],
+      "tempo_bpm": 46,
+      "n_measures": 33,
+      "n_parts": 1,
+      "n_notes": 91,
+      "notes_per_second": 1.4,
+      "apple_music_search_query": "Leoncavallo G major vesti la giubba",
+      "parent_work_title": "pagliac",
+      "wikidata_id": "Q645543",
+      "wikidata_title": "Vesti la giubba",
+      "musicbrainz_id": "d4126086-8d71-3b9e-98f2-dd578f2ff4bb",
+      "wikidata_match_method": "title_exact",
+      "apple_music_classical_search_url": "https://classical.music.apple.com/us/search?q=Leoncavallo%20vesti%20la%20giubba",
+      "display_title": "Vesti la giubba"
+    }
+  ],
+  "birth_year": 1857,
+  "death_year": 1919,
+  "wikipedia_extract": "Ruggero (or Ruggiero) Leoncavallo (23 April 1857 – 9 August 1919) was an Italian opera composer and librettist. Throughout his career, Leoncavallo produced numerous operas and songs, but it is his 1892 opera Pagliacci that remained his lasting contribution, despite attempts to escape the shadow of his greatest success. Today Pagliacci continues to be his most famous opera and one of the most popular and frequently performed works in the operatic repertory.",
+  "wikidata_id": "Q189015"
+}

@@ -1,0 +1,818 @@
+{
+  "composer_slug": "part",
+  "composer_qid": "Q189534",
+  "work_count": 139,
+  "midi_file_count": 1,
+  "works": [
+    {
+      "qid": "Q3375554",
+      "title": "Perpetuum mobile, Op. 10",
+      "date": "1963-00-00"
+    },
+    {
+      "qid": "Q3057618",
+      "title": "Es sang vor Iangen Jahren",
+      "date": "1984-00-00"
+    },
+    {
+      "qid": "Q3516657",
+      "title": "Te Deum",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp10",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Te_Deum_(P%C3%A4rt)",
+      "wikipedia_extract": "Te Deum is a setting of the Latin Te Deum text, also known as the Ambrosian Hymn attributed to Saints Ambrose, Augustine, and Hilary, by Estonian-born composer Arvo Pärt, commissioned by the Westdeutscher Rundfunk in Cologne, Germany, in 1984. Dedicated to the late Alfred Schlee of Universal Edition, the WDR Broadcast Choir premiered the Te Deum under the direction of conductor Dennis Russell Davies on January 19, 1985. The Te Deum plays an important role in the services of many Christian denominations, including the Paraklesis (Moleben) of Thanksgiving in the Eastern Orthodox Church. Because of the unusual instrumentation Pärt employs, his Te Deum is not suited for use within the Orthodox Church. It was recorded on the ECM New Series label in 1993 by the Estonian Philharmonic Chamber Choir and Tallinn Chamber Orchestra under the direction of Tõnu Kaljuste. The piece is approximately thirty minutes long.",
+      "pageviews_yearly": 6099,
+      "date": "1985-00-00"
+    },
+    {
+      "qid": "Q769460",
+      "title": "Magnificat",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp23",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Magnificat_(P%C3%A4rt)",
+      "wikipedia_extract": "Arvo Pärt set the Latin text of the Magnificat canticle in 1989. It is a composition for five-part choir (SSATB) a cappella, with several divided parts. Its performance time is approximately seven minutes. The composition is in tintinnabuli style, a style which Pärt had invented in the mid-1970s.",
+      "pageviews_yearly": 5282,
+      "date": "1989-00-00"
+    },
+    {
+      "qid": "Q3346395",
+      "title": "Nunc dimittis",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp35",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nunc_dimittis_(P%C3%A4rt)",
+      "wikipedia_extract": "Arvo Pärt's Nunc dimittis is a setting of the Latin canticle Nunc dimittis for mixed choir a cappella, written in 2001. It was published by Universal Edition.",
+      "pageviews_yearly": 3077,
+      "date": "2001-00-00"
+    },
+    {
+      "qid": "Q2823909",
+      "title": "Adam's Lament",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp108",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adam's_Lament_(P%C3%A4rt)",
+      "wikipedia_extract": "Adam's Lament is a 2009 choral composition in Russian by Estonian composer Arvo Pärt. The lyrics were inspired by the chapter Adam's Lament found in the book Saint Silouan the Athonite. The work is scored for choir and orchestra, and is a setting of the words of Saint Silouan. Pärt has been reported to say that the fallen Adam of the work represents \"humankind in its entirety and each individual person alike\".",
+      "pageviews_yearly": 5038,
+      "date": "2009-00-00"
+    },
+    {
+      "qid": "Q3483854",
+      "title": "Silhouette",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp117",
+      "date": "2009-00-00"
+    },
+    {
+      "qid": "Q3483383",
+      "title": "7 Magnificat-Antiphonen",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp23"
+    },
+    {
+      "qid": "Q21511431",
+      "title": "Adam's Passion",
+      "movements": [
+        {
+          "qid": "Q109044257"
+        },
+        {
+          "qid": "Q2823909"
+        },
+        {
+          "qid": "Q3513555"
+        },
+        {
+          "qid": "Q3316301"
+        }
+      ]
+    },
+    {
+      "qid": "Q119412837",
+      "title": "After the Rain Pas de Deux"
+    },
+    {
+      "qid": "Q2837845",
+      "title": "Alleluia-Tropus",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp100"
+    },
+    {
+      "qid": "Q2844938",
+      "title": "An den Wassern zu Babel saßen wir und weinten",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp5"
+    },
+    {
+      "qid": "Q60835016",
+      "title": "And I Heard a Voice...",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp105"
+    },
+    {
+      "qid": "Q2846029",
+      "title": "And One of the Pharisees ...",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp40"
+    },
+    {
+      "qid": "Q2851805",
+      "title": "Annum per annum",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp81"
+    },
+    {
+      "qid": "Q2852728",
+      "title": "Anthem of St. John the Baptist"
+    },
+    {
+      "qid": "Q2859726",
+      "title": "Arbos",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp65"
+    },
+    {
+      "qid": "Q61109197",
+      "title": "Beatitudines"
+    },
+    {
+      "qid": "Q2893031",
+      "title": "Beatus Petronius",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp13"
+    },
+    {
+      "qid": "Q2897278",
+      "title": "Berliner Messe",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp14",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Berliner_Messe",
+      "wikipedia_extract": "Berliner Messe is a mass setting by Estonian composer Arvo Pärt. Commissioned for the 90th Katholikentag in Berlin in 1990, it was originally scored for SATB soloists and organ. It was first performed at St. Hedwig's Cathedral on 24 May 1990, the Feast of the Ascension, with Paul Hillier conducting the Theatre of Voices. Pärt later (1997) revised the piece for chorus and string orchestra. Pärt uses his tintinnabuli technique throughout, with movements taking many forms within that style—flowing from quietly reverent duets between parts to full chorus proclamations of faith.",
+      "pageviews_yearly": 6256
+    },
+    {
+      "qid": "Q2908713",
+      "title": "Bogoroditse Djevo",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp26"
+    },
+    {
+      "qid": "Q1553019",
+      "title": "Cameraman Kops in Mushroomland"
+    },
+    {
+      "qid": "Q2936560",
+      "title": "Cantate Domino canticum novum"
+    },
+    {
+      "qid": "Q2936621",
+      "title": "Cantique des degrés",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp17"
+    },
+    {
+      "qid": "Q1033914",
+      "title": "Cantus in Memoriam Benjamin Britten",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp52",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cantus_in_Memoriam_Benjamin_Britten",
+      "wikipedia_extract": "\nCantus in Memoriam Benjamin Britten is a short canon in A minor, written in 1977 by the Estonian composer Arvo Pärt, for string orchestra and bell. The work is an early example of Pärt's tintinnabuli style, which he based on his reactions to early chant music. Its appeal is often ascribed to its relative simplicity; a single melodic motif dominates and it both begins and ends with scored silence. However, as the critic Ivan Hewett observes, while it \"may be simple in concept...the concept produces a tangle of lines which is hard for the ear to unravel. And even where the music really is simple in its audible features, the expressive import of those features is anything but.\" A typical performance lasts about six and a half minutes.",
+      "pageviews_yearly": 14676
+    },
+    {
+      "qid": "Q2943706",
+      "title": "Cecilia, vergine romana",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp18",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cecilia%2C_vergine_romana",
+      "wikipedia_extract": "Cecilia, vergine romana is a composition for mixed choir and orchestra by Estonian composer Arvo Pärt, written in 2000 for the Great Jubilee in Rome. The Italian text deals with the life and martyrdom of Saint Cecilia, the patron saint of music, and was first performed on 19 November 2000, close to her feast day on 22 November, by the Accademia Nazionale di Santa Cecilia conducted by Myung-whun Chung.",
+      "pageviews_yearly": 2097
+    },
+    {
+      "qid": "Q2982720",
+      "title": "Collage sur B-A-C-H",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp60",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/List_of_compositions_by_Arvo_P%C3%A4rt",
+      "wikipedia_extract": "This is an incomplete list of works by the Estonian composer Arvo Pärt.",
+      "pageviews_yearly": 653
+    },
+    {
+      "qid": "Q2989724",
+      "title": "Como cierva sedienta",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp41"
+    },
+    {
+      "qid": "Q2991758",
+      "title": "Concerto piccolo über B-A-C-H",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp63"
+    },
+    {
+      "qid": "Q3002421",
+      "title": "Credo",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp3",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Credo_(P%C3%A4rt)",
+      "wikipedia_extract": "\"Credo\" is a 1968 musical piece by Estonian composer Arvo Pärt. Its text is in Latin.",
+      "pageviews_yearly": 3824
+    },
+    {
+      "qid": "Q61111134",
+      "title": "Da Pacem",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp5"
+    },
+    {
+      "qid": "Q3011545",
+      "title": "Da pacem Domine",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp5",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Da_pacem_Domine_(P%C3%A4rt)",
+      "wikipedia_extract": "Da pacem Domine is a choral composition by Arvo Pärt on the Latin prayer for peace Da pacem Domine, first composed in 2004 for four voices. Different versions, also for and with string instruments, were published by Universal Edition.",
+      "pageviews_yearly": 7138
+    },
+    {
+      "qid": "Q3016056",
+      "title": "Darf ich ..."
+    },
+    {
+      "qid": "Q2412967",
+      "title": "De profundis",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp7",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/De_profundis_(P%C3%A4rt)",
+      "wikipedia_extract": "De profundis is a choral composition by Arvo Pärt. He wrote the work in 1980, a setting of Psalm 130 in Latin for a four-part men's choir, percussion and organ. It was first performed at the Martinskirche, Kassel on 25 April 1981, conducted by Klaus Martin Ziegler. Pärt dedicated the work of around 7 minutes to Gottfried von Einem. It was published by Universal Edition. Pärt arranged it for chamber orchestra in 2008.",
+      "pageviews_yearly": 3958
+    },
+    {
+      "qid": "Q3025891",
+      "title": "Diagrams"
+    },
+    {
+      "qid": "Q4096524",
+      "title": "Diamonds for the Dictatorship of the Proletariat",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Diamonds_for_the_Dictatorship_of_the_Proletariat",
+      "wikipedia_extract": "Diamonds for the Dictatorship of the Proletariat is a 1975 Soviet crime action film directed by Grigori Kromanov and based on the novel of the same name by Yulian Semyonov.",
+      "pageviews_yearly": 3000
+    },
+    {
+      "qid": "Q3036927",
+      "title": "Dopo la vittoria",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp29"
+    },
+    {
+      "qid": "Q15943306",
+      "title": "Eesti hällilaul",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp113"
+    },
+    {
+      "qid": "Q3069822",
+      "title": "Festina lente",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp54",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Festina_lente_(P%C3%A4rt)",
+      "wikipedia_extract": "\nFestina lente is a 1986 composition by Estonian composer Arvo Pärt. It is scored for string orchestra and harp. It uses layering to explore the musical ideas, by allowing the violas to take the melody, the violins to take it at double the speed and the basses to take the melody at half time.",
+      "pageviews_yearly": 1912
+    },
+    {
+      "qid": "Q3557996",
+      "title": "Four Easy Dances"
+    },
+    {
+      "qid": "Q3086716",
+      "title": "Fratres",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp66",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fratres",
+      "wikipedia_extract": "Fratres is a musical work by the Estonian composer Arvo Pärt exemplifying his tintinnabuli style of composition. It was composed in 1977. It is written for three parts without fixed instrumentation and has been described as a \"mesmerizing set of variations on a six-bar theme combining frantic activity and sublime stillness.\"",
+      "pageviews_yearly": 24530
+    },
+    {
+      "qid": "Q3092981",
+      "title": "Für Alina",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp77",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/F%C3%BCr_Alina",
+      "wikipedia_extract": "Für Alina, is a work for piano, composed by the Estonian composer Arvo Pärt. It is considered an essential work of his tintinnabuli style.",
+      "pageviews_yearly": 19522
+    },
+    {
+      "qid": "Q3092977",
+      "title": "Für Anna Maria",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp92"
+    },
+    {
+      "qid": "Q1934839",
+      "title": "Für Lennart in memoriam",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp109"
+    },
+    {
+      "qid": "Q1514846",
+      "title": "Gerry",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gerry_(2002_film)",
+      "wikipedia_extract": "Gerry is a 2002 American drama film written and directed by Gus Van Sant, and starring and co-written by Matt Damon and Casey Affleck. It is the first installment of Van Sant's \"Death Trilogy\", three films based on deaths that occurred in real life and is succeeded by Elephant (2003) and Last Days (2005).",
+      "pageviews_yearly": 142761
+    },
+    {
+      "qid": "Q24807343",
+      "title": "Gravitation: Variation in Time and Space",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gravitation%3A_Variation_in_Time_and_Space",
+      "wikipedia_extract": "Gravitation: Variation in Time and Space is a 2015 black & white art film, written and produced by Rem Hass and directed by Andrei Severny. \nGravitation is a synergy of dance, cinema and abstract art and stars Diana Vishneva, principal dancer of the Mariinsky Ballet and the American Ballet Theatre. The movements were choreographed by Mauro Bigonzetti specifically for the film. The work was shot entirely in slow motion with Phantom Flex4K cameras in 500-1,000 frames-per-second. The film was shot on location at the Alvin Ailey American Dance Theater in New York City.",
+      "pageviews_yearly": 1077
+    },
+    {
+      "qid": "Q19502444",
+      "title": "Grüningers Fall",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gr%C3%BCningers_Fall",
+      "wikipedia_extract": "Grüningers Fall is a Swiss documentary film that was produced in 1997 for the Swiss television SRF. The film focuses on the events of late summer, 1938, when Paul Grüninger saved the lives of up to 3,600 Jewish refugees from Germany and Austria by enabling them to migrate 'illegally' to Switzerland by pre-dating their visas.",
+      "pageviews_yearly": 2182
+    },
+    {
+      "qid": "Q3125362",
+      "title": "Habitare fratres in unum",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp102"
+    },
+    {
+      "qid": "Q705887",
+      "title": "Heaven",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heaven_(2002_film)",
+      "wikipedia_extract": "Heaven is a 2002 romantic thriller film directed by Tom Tykwer, starring Cate Blanchett and Giovanni Ribisi. Co-screenwriter Krzysztof Kieślowski intended for it to be the first part of a trilogy, but Kieślowski died before he could complete the project. The film is an international co-production among producers based in Germany, France, Italy, the United States, and the United Kingdom. The dialogue is in Italian and English.",
+      "pageviews_yearly": 43636
+    },
+    {
+      "qid": "Q3144035",
+      "title": "Hymn to a Great City",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp82"
+    },
+    {
+      "qid": "Q3147051",
+      "title": "I Am the True Vine",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp28"
+    },
+    {
+      "qid": "Q3032174",
+      "title": "In Praise of Love",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/In_Praise_of_Love_(film)",
+      "wikipedia_extract": "In Praise of Love is a 2001 French film written and directed by Jean-Luc Godard. The black-and-white and color drama was shot by Julien Hirsch and Christophe Pollock. Godard has famously stated that \"a film should have a beginning, a middle and an end, but not necessarily in that order.\" This aphorism is illustrated by In Praise of Love, which reverses the order of past and present. It was selected as the Swiss entry for the Best Foreign Language Film at the 74th Academy Awards, but it was not nominated.",
+      "pageviews_yearly": 15725
+    },
+    {
+      "qid": "Q966185",
+      "title": "In principio",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp107"
+    },
+    {
+      "qid": "Q3149702",
+      "title": "In spe"
+    },
+    {
+      "qid": "Q2369914",
+      "title": "Inquest of Pilot Pirx",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Inquest_of_Pilot_Pirx",
+      "wikipedia_extract": "Inquest of Pilot Pirx is a joint Polish-Soviet Estonian 1979 film directed by Marek Piestrak. It is based on the short story \"The Inquest\" by Stanisław Lem from his 1968 short story collection Opowieści o pilocie Pirxie. It was adapted for film by Vladimir Valutsky. It is a joint production by Zespoly Filmowe, and Tallinnfilm. Some of the studio-based filming was done at the Dovzhenko Film Studios.",
+      "pageviews_yearly": 7282
+    },
+    {
+      "qid": "Q27056944",
+      "title": "Is it far?"
+    },
+    {
+      "qid": "Q1072282",
+      "title": "Japón"
+    },
+    {
+      "qid": "Q3192715",
+      "title": "Kanon Pokajanen",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp30",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kanon_Pokajanen",
+      "wikipedia_extract": "Kanon Pokajanen is a 1997 composition by Arvo Pärt for four-part (SATB) choir. The text is the \"Canon of Repentance to Our Lord Jesus Christ\", an Orthodox hymn. The text is sung in Church Slavonic and following the tradition of Russian sacred choral music, it is sung a cappella.",
+      "pageviews_yearly": 5610
+    },
+    {
+      "qid": "Q1193254",
+      "title": "Khodorkovsky"
+    },
+    {
+      "qid": "Q42888996",
+      "title": "Kleine Litanei",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp106"
+    },
+    {
+      "qid": "Q18291604",
+      "title": "Königsberg express"
+    },
+    {
+      "qid": "Q3201364",
+      "title": "L'abbé Agathon",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp104"
+    },
+    {
+      "qid": "Q3212834",
+      "title": "La Sindone",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp97"
+    },
+    {
+      "qid": "Q3216713",
+      "title": "Lamentate",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp110",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lamentate",
+      "wikipedia_extract": "Lamentate  for piano and orchestra is the largest instrumental work by Estonian composer Arvo Pärt. The work was commissioned by Tate and Egg Live, written in 2002, and premiered on 7 and 8 February 2003 in the Turbine Hall of Tate Modern Museum in London where the massive \"Marsyas\" was installed. The pianist for the premiere was Hélène Grimaud, with Alexander Briger conducting the London Sinfonietta. The piece is written in the tintinnabuli style, the technique Pärt created in 1976.",
+      "pageviews_yearly": 3744
+    },
+    {
+      "qid": "Q3218628",
+      "title": "Laul armastatule"
+    },
+    {
+      "qid": "Q1214555",
+      "title": "Les Amants du Pont-Neuf",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Les_Amants_du_Pont-Neuf",
+      "wikipedia_extract": "Les Amants du Pont-Neuf is a 1991 French romantic drama film directed by Leos Carax, starring Juliette Binoche and Denis Lavant. The film follows a love story between two young vagrants: Alex, a would-be circus performer addicted to alcohol and sedatives, and Michèle, a painter with a disease that is slowly turning her blind. The streets, skies and waterways of Paris are used as a backdrop for the story in a series of set-pieces set during the French Bicentennial celebrations in 1989.",
+      "pageviews_yearly": 66453
+    },
+    {
+      "qid": "Q3256529",
+      "title": "Litany",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp16"
+    },
+    {
+      "qid": "Q2081164",
+      "title": "Little Lili",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Little_Lili",
+      "wikipedia_extract": "Little Lili is a 2003 French drama film directed by Claude Miller. The film stars Ludivine Sagnier, Bernard Giraudeau, Nicole Garcia, Julie Depardieu and Jean-Pierre Marielle.",
+      "pageviews_yearly": 5416
+    },
+    {
+      "qid": "Q3256735",
+      "title": "Littlemore Tractus",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp19"
+    },
+    {
+      "qid": "Q6653381",
+      "title": "Liturgy",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liturgy_(ballet)",
+      "wikipedia_extract": "Liturgy is a ballet made by New York City Ballet resident choreographer Christopher Wheeldon to Fratres by Arvo Pärt. The premiere took place on May 31, 2003 at the New York State Theater, Lincoln Center, originated by Jock Soto and Wendy Whelan. Whelan described the piece as \"a piece about union\".",
+      "pageviews_yearly": 1454
+    },
+    {
+      "qid": "Q3273666",
+      "title": "Maailma samm"
+    },
+    {
+      "qid": "Q3304594",
+      "title": "Meie aed",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp1"
+    },
+    {
+      "qid": "Q3304710",
+      "title": "Mein Weg",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp83"
+    },
+    {
+      "qid": "Q3316301",
+      "title": "Miserere",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp11",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Miserere_(P%C3%A4rt)",
+      "wikipedia_extract": "Miserere is a choral work by Estonian composer Arvo Pärt, setting the words of two liturgical hymns: the Miserere and the Dies irae. The piece begins with repeated pleas for mercy, accompanied by dramatic pauses, leading to the arrival of the day of wrath, signaled by a powerful drum roll. The drum initiates each new verse as the choir sings the most terrifying words in the Christian liturgy. Having confronted catastrophe, the choir ascends to radiant heights over the deep-throated resonance of the organ, tam-tam, and bell. Performances of The Miserere typically last around 35 minutes. The composition was written between 1989 and 1992.",
+      "pageviews_yearly": 2336
+    },
+    {
+      "qid": "Q3316668",
+      "title": "Missa brevis"
+    },
+    {
+      "qid": "Q3316672",
+      "title": "Missa syllabica",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp6"
+    },
+    {
+      "qid": "Q3324259",
+      "title": "Morning Star",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp86"
+    },
+    {
+      "qid": "Q3324964",
+      "title": "Most Holy Mother of God",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp88"
+    },
+    {
+      "qid": "Q3327034",
+      "title": "Mozart-Adagio",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp71"
+    },
+    {
+      "qid": "Q2397799",
+      "title": "Musica syllabica",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp6"
+    },
+    {
+      "qid": "Q3331186",
+      "title": "My Heart's in the Highlands",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp42"
+    },
+    {
+      "qid": "Q3337890",
+      "title": "Nekroloog"
+    },
+    {
+      "qid": "Q3356282",
+      "title": "Orient & Occident",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp59"
+    },
+    {
+      "qid": "Q3365062",
+      "title": "Pari intervallo",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Pari_Intervallo.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q3366955",
+      "title": "Partita",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp75"
+    },
+    {
+      "qid": "Q3367810",
+      "title": "Passacaglia",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp98"
+    },
+    {
+      "qid": "Q3368364",
+      "title": "Passio Domini Nostri Jesu Christi secundum Joannem",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp103",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Passio_(P%C3%A4rt)",
+      "wikipedia_extract": "Passio Domini Nostri Jesu Christi secundum Joannem, also known as the St. John Passion or simply Passio, is a passion setting by Arvo Pärt for solo baritone (Jesus), solo tenor (Pilate), solo vocal quartet (Evangelist), choir, violin, oboe, cello, bassoon and organ. The work lasts approximately 70 minutes and is a setting of the Latin text from the Gospel of John, chapters 18 and 19, plus a brief introduction and conclusion.",
+      "pageviews_yearly": 9238
+    },
+    {
+      "qid": "Q3373804",
+      "title": "Peace upon You",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp87"
+    },
+    {
+      "qid": "Q3406193",
+      "title": "Pro et contra",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp46"
+    },
+    {
+      "qid": "Q7249788",
+      "title": "Promised Land",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Promised_Land_(2002_film)",
+      "wikipedia_extract": "Promised Land is a 2002 film based on the 1978 English translation of the award-winning Afrikaans novel, Na die Geliefde Land (1972) by the South African author, Karel Schoeman.",
+      "pageviews_yearly": 1601
+    },
+    {
+      "qid": "Q3409400",
+      "title": "Psalom",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp70"
+    },
+    {
+      "qid": "Q3414641",
+      "title": "Quintettino",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp61"
+    },
+    {
+      "qid": "Q7279374",
+      "title": "Rachel River",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rachel_River",
+      "wikipedia_extract": "Rachel River is a 1987 American drama film directed by Sandy Smolan and written by Judith Guest. It is inspired by Letters From the Country, a collection of short stories by Carol Bly. The film centers on the residents of a small northern Minnesota town. It stars Pamela Reed, Viveca Lindfors, Željko Ivanek, James Olson, and Craig T. Nelson. The film premiered at the Toronto International Film Festival and was given a limited theatrical release on January 20, 1989.",
+      "pageviews_yearly": 6151
+    },
+    {
+      "qid": "Q15910307",
+      "title": "Rozhdyestvyenskaya kolïbyelnaya"
+    },
+    {
+      "qid": "Q3470412",
+      "title": "Salve Regina",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp95",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Salve_Regina_(P%C3%A4rt)",
+      "wikipedia_extract": "Salve Regina is a Marian anthem, a setting by Arvo Pärt of the Latin hymn \"Salve Regina\" for mixed choir and organ in 2001. It was first performed in Essen Cathedral on 22 May 2002. It was published by Universal Edition in 2002. Pärt arranged the composition for choir, celesta and string orchestra in 2011 for a celebration of 150 years of Italian unity.",
+      "pageviews_yearly": 3105
+    },
+    {
+      "qid": "Q3473433",
+      "title": "Sarah Was Ninety Years Old"
+    },
+    {
+      "qid": "Q3474921",
+      "title": "Scala cromatica"
+    },
+    {
+      "qid": "Q3477778",
+      "title": "Sei gelobt, du Baum",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp101"
+    },
+    {
+      "qid": "Q109044257",
+      "title": "Sequentia",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp112"
+    },
+    {
+      "qid": "Q3483932",
+      "title": "Silouans Song",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp56"
+    },
+    {
+      "qid": "Q3489370",
+      "title": "Solfedžo"
+    },
+    {
+      "qid": "Q3490286",
+      "title": "Sonatines",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp74"
+    },
+    {
+      "qid": "Q1311666",
+      "title": "Sounds and Silence"
+    },
+    {
+      "qid": "Q517901",
+      "title": "Spiegel im Spiegel",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp69",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Spiegel_im_Spiegel",
+      "wikipedia_extract": "Spiegel im Spiegel is a composition by Arvo Pärt written in 1978, just before his departure from Estonia. The piece is in the tintinnabular style, in which a melodic voice and a tintinnabular voice accompany each other. The piece is about ten minutes long.",
+      "pageviews_yearly": 65863
+    },
+    {
+      "qid": "Q3495370",
+      "title": "Stabat Mater",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp39",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stabat_Mater_(P%C3%A4rt)",
+      "wikipedia_extract": "Stabat Mater is a musical setting of the Stabat Mater sequence composed by Arvo Pärt in 1985, a commission of the Alban Berg Foundation. The piece is scored for a trio of singers: soprano, alto, and tenor; and a trio of string instruments: violin, viola, and violoncello; it has a duration of approximately 24 minutes. A version with expanded forces was premiered on 12 June 2008 at the Großer Musikvereinssaal during the Wiener Festwochen 2008 with Kristjan Järvi conducting the Singverein der Gesellschaft der Musikfreunde in Wien and the Tonkünstler-Orchester Niederösterreich. This new version was commissioned by the Tonkünstler-Orchester. Stabat Mater is composed in Pärt's characteristic tintinnabuli style in which arpeggiations of a major or minor triad are combined with ascending or descending diatonic scales.",
+      "pageviews_yearly": 4227
+    },
+    {
+      "qid": "Q3497635",
+      "title": "Statuit ei Dominus",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp15"
+    },
+    {
+      "qid": "Q3503633",
+      "title": "Summa",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp21",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Summa_(P%C3%A4rt)",
+      "wikipedia_extract": "\nSumma is a composition by Estonian composer Arvo Pärt. It was initially written in 1977 as a choral work, then later scored by Pärt for instruments. It has been described as \"gently rocked muted harmonic simplicities back and forth\" when it was performed by the Kronos Quartet in 1992.",
+      "pageviews_yearly": 3608
+    },
+    {
+      "qid": "Q2310014",
+      "title": "Symphony No. 1",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp45",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._1_(P%C3%A4rt)",
+      "wikipedia_extract": "Symphony No. 1 \"Polyphonic\" is the first symphony by Estonian composer Arvo Pärt. The symphony was written in 1963. It is dedicated to Estonian composer Heino Eller.",
+      "pageviews_yearly": 1597
+    },
+    {
+      "qid": "Q3507728",
+      "title": "Symphony No. 2",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp47",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._2_(P%C3%A4rt)",
+      "wikipedia_extract": "Symphony No. 2 is the second symphony by Estonian composer Arvo Pärt, written in 1966.",
+      "pageviews_yearly": 1155
+    },
+    {
+      "qid": "Q3507773",
+      "title": "Symphony No. 3",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp48",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._3_(P%C3%A4rt)",
+      "wikipedia_extract": "Arvo Pärt composed his Third Symphony in 1971. It is scored for symphony orchestra and was dedicated to Neeme Järvi.",
+      "pageviews_yearly": 3444
+    },
+    {
+      "qid": "Q3314173",
+      "title": "Symphony No. 4",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp111",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._4_(P%C3%A4rt)",
+      "wikipedia_extract": "Symphony No. 4 Los Angeles is the fourth symphony by Estonian composer Arvo Pärt. It is the first of his symphonies to be written post-1976 and is in his signature tintinnabuli style. It is the first of his pieces that focuses on larger scale, instrumental tintinnabulation. Previous pieces, such as Summa and Für Alina, were typically written for SATB choir or a smaller number of instruments. Composed in 2008, and premiered 10 January 2009, Symphony No. 4 was nominated for a 2010 Grammy Award for Best Classical Contemporary Composition, although he did not receive the award.",
+      "pageviews_yearly": 4762
+    },
+    {
+      "qid": "Q3513555",
+      "title": "Tabula rasa",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp50",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tabula_Rasa_(P%C3%A4rt)",
+      "wikipedia_extract": "Tabula Rasa is a musical composition written in 1977 by the Estonian composer Arvo Pärt. The piece contains two movements, \"Ludus\" and \"Silentium,\" and is a double concerto for two solo violins, prepared piano, and chamber orchestra.",
+      "pageviews_yearly": 19231
+    },
+    {
+      "qid": "Q42196287",
+      "title": "Te Deum (Arvo Pärt)",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp10"
+    },
+    {
+      "qid": "Q512070",
+      "title": "The Banishment",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Banishment",
+      "wikipedia_extract": "The Banishment is a 2007 Russian psychological drama film directed by Andrey Zvyagintsev. The film is a loose adaptation of The Laughing Matter, a 1953 novel by Armenian-American writer William Saroyan. It stars Konstantin Lavronenko and Maria Bonnevie.",
+      "pageviews_yearly": 16359
+    },
+    {
+      "qid": "Q3519900",
+      "title": "The Beatitudes",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp12"
+    },
+    {
+      "qid": "Q3520554",
+      "title": "The Deer's Cry",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp115",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Deer's_Cry_(P%C3%A4rt)",
+      "wikipedia_extract": "The Deer's Cry is a sacred motet by Arvo Pärt, set to text from a traditional Irish lorica for a four-part choir a cappella. He composed the piece on a commission from the Ireland's Louth Contemporary Music Society. It was published by Universal Edition in 2007 and first performed in County Louth, Ireland, in February 2008.",
+      "pageviews_yearly": 9511
+    },
+    {
+      "qid": "Q7746987",
+      "title": "The Letter",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Letter_(2012_film)",
+      "wikipedia_extract": "The Letter, previously called The Stare, is a 2012 American psychological thriller film written and directed by Jay Anania, starring Winona Ryder and James Franco. Franco is a former student of Anania's, who teaches directing at NYU. The pair previously collaborated on Shadows and Lies. In 2012, it was announced that Lionsgate purchased the distribution rights to the film, which was retitled The Letter. The film got its first theatrical showing at the Cincinnati Film Festival on September 9, 2012.",
+      "pageviews_yearly": 14457
+    },
+    {
+      "qid": "Q59619244",
+      "title": "The Man Who Waited"
+    },
+    {
+      "qid": "Q65262623",
+      "title": "The Very Best of Arvo Pärt"
+    },
+    {
+      "qid": "Q3523421",
+      "title": "The Woman with the Alabaster Box",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp32"
+    },
+    {
+      "qid": "Q3523925",
+      "title": "These Words…",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp114"
+    },
+    {
+      "qid": "Q913953",
+      "title": "Time to Leave",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Time_to_Leave",
+      "wikipedia_extract": "Time to Leave is a 2005 French drama film written and directed by François Ozon. It was screened in the Un Certain Regard section of the 2005 Cannes Film Festival.",
+      "pageviews_yearly": 12299
+    },
+    {
+      "qid": "Q2920518",
+      "title": "Times and Winds",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Times_and_Winds",
+      "wikipedia_extract": "Times and Winds or is a 2006 Turkish drama film directed and written by Reha Erdem. The film premiered in the United States on January 11, 2008. It won the Best Turkish Film of the Year Award at the Istanbul International Film Festival.",
+      "pageviews_yearly": 2580
+    },
+    {
+      "qid": "Q3538947",
+      "title": "Tribute to Caesar",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp31"
+    },
+    {
+      "qid": "Q3539451",
+      "title": "Triodion",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp33",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Triodion_(P%C3%A4rt)",
+      "wikipedia_extract": "Triodion is a 15-minute choral work for mixed a cappella choir, composed in 1998 by the Estonian composer Arvo Pärt. It was a commission for the 150th anniversary of the foundation of Lancing College in West Sussex. It derives its lyrics from the Triodion, after which it is named. Its world premiere was on 30 April 1998 at Westminster Abbey by the choir of Lancing College Chapel, conducted by Neil Cox.",
+      "pageviews_yearly": 1063
+    },
+    {
+      "qid": "Q632784",
+      "title": "Trisagion",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp58"
+    },
+    {
+      "qid": "Q3539753",
+      "title": "Trivium",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp78"
+    },
+    {
+      "qid": "Q105186159",
+      "title": "Ukuaru waltz"
+    },
+    {
+      "qid": "Q3554767",
+      "title": "Variationen zur Gesundung von Arinuschka",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp80"
+    },
+    {
+      "qid": "Q3555018",
+      "title": "Vater unser"
+    },
+    {
+      "qid": "Q3555510",
+      "title": "Veni creator",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp89"
+    },
+    {
+      "qid": "Q3558233",
+      "title": "Viis laulu lastele"
+    },
+    {
+      "qid": "Q3560595",
+      "title": "Virgencita",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp90"
+    },
+    {
+      "qid": "Q3563066",
+      "title": "Von Angesicht zu Angesicht",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp99"
+    },
+    {
+      "qid": "Q3565494",
+      "title": "Wallfahrtslied",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp37"
+    },
+    {
+      "qid": "Q3567272",
+      "title": "Wenn Bach Bienen gezüchtet hätte ..."
+    },
+    {
+      "qid": "Q3567731",
+      "title": "Which Was the Son of ...",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp34",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Which_Was_the_Son_of_...",
+      "wikipedia_extract": "Arvo Pärt's Which Was the Son of ... is a setting of the genealogy of Jesus from the Gospel of Luke, for mixed choir a cappella, written in 2000. It was published by Universal Edition.",
+      "pageviews_yearly": 476
+    },
+    {
+      "qid": "Q3576336",
+      "title": "Zwei Beter"
+    },
+    {
+      "qid": "Q3576337",
+      "title": "Zwei slawische Psalmen",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/arvo-part-1935-pp94"
+    }
+  ]
+}

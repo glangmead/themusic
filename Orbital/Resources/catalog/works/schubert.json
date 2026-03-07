@@ -1,0 +1,2898 @@
+{
+  "composer_slug": "schubert",
+  "composer_qid": "Q7312",
+  "work_count": 310,
+  "midi_file_count": 27,
+  "works": [
+    {
+      "qid": "Q135441589",
+      "title": "Fantasy in G major",
+      "imslp_id": "Fantasie_in_G_major,_D.1_(Schubert,_Franz)",
+      "pdf_filename": "PMLP21558-115641.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp148",
+      "date": "1810-00-00"
+    },
+    {
+      "qid": "Q3927138",
+      "title": "String Quartet No. 1 in G Minor, D. 18",
+      "imslp_id": "String_Quartet_in_G_minor,_D.18_(Schubert,_Franz)",
+      "pdf_filename": "SchubertStringQuartetNo1.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp74",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._1_(Schubert)",
+      "wikipedia_extract": "The String Quartet No. 1 in mixed keys was composed by Franz Schubert in 1810 or 1811.",
+      "pageviews_yearly": 2660,
+      "date": "1810-00-00"
+    },
+    {
+      "qid": "Q135450161",
+      "title": "Des Mädchens Klage, D 6",
+      "imslp_id": "Des_Mädchens_Klage,_D.6_(Schubert,_Franz)",
+      "pdf_filename": "PMLP33230-D6-manuscript.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1811-00-00"
+    },
+    {
+      "qid": "Q135455709",
+      "title": "Leichenphantasie",
+      "imslp_id": "Eine_Leichenphantasie,_D.7_(Schubert,_Franz)",
+      "pdf_filename": "SchubertD007_Eine_Leichenphantasie.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1811-00-00"
+    },
+    {
+      "qid": "Q135471114",
+      "title": "Overture, D 8A",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp73",
+      "date": "1811-00-00"
+    },
+    {
+      "qid": "Q19896255",
+      "title": "String Quartet No. 7",
+      "imslp_id": "String_Quartet_in_D_major,_D.94_(Schubert,_Franz)",
+      "pdf_filename": "PMLP09715-Schubert_-_094_-_String_Quartet_D_-_Andante__2H_Lessmann___.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp85",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._7_(Schubert)",
+      "wikipedia_extract": "The String Quartet No. 7 in D major was composed by Franz Schubert in 1811 or 1812.",
+      "pageviews_yearly": 1697,
+      "date": "1811-00-00"
+    },
+    {
+      "qid": "Q16820670",
+      "title": "Symphony D 2B",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp43",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony%2C_D_2B_(Schubert)",
+      "wikipedia_extract": "Schubert's Symphony in D major, D 2B/997, is an unfinished work that survives in an incomplete 30-bar orchestral score. The sketch includes the whole slow introduction and the first theme of the Allegro before breaking off. It is one of Schubert's six unfinished symphonies. It was begun in 1811, when Schubert was fourteen years old, but it is unclear exactly how much he wrote before he abandoned the symphony. Its instrumentation is for the standard early Schubertian and classical orchestra, with the addition of trombones.",
+      "pageviews_yearly": 1203,
+      "date": "1811-00-00"
+    },
+    {
+      "qid": "Q135447237",
+      "title": "Hagars Klage",
+      "imslp_id": "Hagars_Klage,_D.5_(Schubert,_Franz)",
+      "pdf_filename": "SchubertD005_Hagars_Klage.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp500",
+      "date": "1811-03-30"
+    },
+    {
+      "qid": "Q135468273",
+      "title": "Overture in C minor, D.8",
+      "imslp_id": "Overture_in_C_minor,_D.8_(Schubert,_Franz)",
+      "pdf_filename": "PMLP607913-D_8__Overture_in_C_minor.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp73",
+      "date": "1811-06-29"
+    },
+    {
+      "qid": "Q135475845",
+      "title": "Fantasy, D 9",
+      "imslp_id": "Fantasy_in_G_minor,_D.9_(Schubert,_Franz)",
+      "pdf_filename": "PMLP21562-D9-manuscript.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1811-09-20"
+    },
+    {
+      "qid": "Q135476247",
+      "title": "Der Vatermörder",
+      "imslp_id": "Der_Vatermörder,_D.10_(Schubert,_Franz)",
+      "pdf_filename": "SchubertD010_Der_Vatermörder.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp503",
+      "date": "1811-12-26"
+    },
+    {
+      "qid": "Q135491451",
+      "title": "Der Spiegelritter",
+      "imslp_id": "Der_Spiegelritter,_D.11_(Schubert,_Franz)",
+      "pdf_filename": "SchubertD011a_Der_Spiegelritter_overture.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1812-00-00"
+    },
+    {
+      "qid": "Q135441971",
+      "title": "Der Teufel als Hydraulicus",
+      "imslp_id": "Der_Teufel_als_Hydraulicus,_D.4_(Schubert,_Franz)",
+      "pdf_filename": "PMLP40300-00._SCHUBERT_-_DIE_TEUFEL_ALS_HYDRAULICUS__D.4__-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1812-00-00"
+    },
+    {
+      "qid": "Q135503752",
+      "title": "Fugue, D. 13",
+      "imslp_id": "Fugue_in_D_minor,_D.13_(Schubert,_Franz)",
+      "pdf_filename": "PMLP855192-D_13__Fugue_in_D_minor.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp216",
+      "date": "1812-00-00"
+    },
+    {
+      "qid": "Q135537208",
+      "title": "Klaglied",
+      "imslp_id": "Klaglied,_D.23_(Schubert,_Franz)",
+      "pdf_filename": "SchubertD023_Klaglied.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp507",
+      "date": "1812-00-00"
+    },
+    {
+      "qid": "Q135491810",
+      "title": "Overture, D 12",
+      "imslp_id": "Overture_in_D_major,_D.12_(Schubert,_Franz)",
+      "pdf_filename": "PMLP40130-00._SCHUBERT_-_OVERTURE_IN_D_-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp57",
+      "date": "1812-00-00"
+    },
+    {
+      "qid": "Q28001483",
+      "title": "Sonatensatz, D 28",
+      "imslp_id": "Piano_Trio_in_B-flat_major,_D.28_(Schubert,_Franz)",
+      "pdf_filename": "PMLP37616-D_28__Trio_in_B-flat_major__Sonatensatz_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp111",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sonatensatz%2C_D_28_(Schubert)",
+      "wikipedia_extract": "The Sonatensatz in B♭ major D. 28, also known as Piano Trio in B♭ major, is a single-movement work for piano trio by Franz Schubert.",
+      "pageviews_yearly": 2141,
+      "date": "1812-00-00"
+    },
+    {
+      "qid": "Q19972135",
+      "title": "String Quartet No. 2",
+      "imslp_id": "String_Quartet_in_C_major,_D.32_(Schubert,_Franz)",
+      "pdf_filename": "PMLP9114-D_32__String_Quartet_in_C_major.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp76",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._2_(Schubert)",
+      "wikipedia_extract": "The String Quartet No. 2 in C major was composed by Franz Schubert in 1812.",
+      "pageviews_yearly": 2014,
+      "date": "1812-00-00"
+    },
+    {
+      "qid": "Q131625812",
+      "title": "Der Taucher",
+      "imslp_id": "Der_Taucher,_D.77_(Schubert,_Franz)",
+      "pdf_filename": "SchubertD077_Der_Taucher_1st_version.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp519",
+      "date": "1813-00-00"
+    },
+    {
+      "qid": "Q1200474",
+      "title": "Des Teufels Lustschloss",
+      "imslp_id": "Des_Teufels _Lustschloss,_D.84_(Schubert,_Franz)",
+      "pdf_filename": "PMLP147062-00._SCHUBERT_-_DIE_TEUFEL_LUSTSCHLOSS__D.84__-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp31",
+      "date": "1813-00-00"
+    },
+    {
+      "qid": "Q3413781",
+      "title": "String Quartet No. 3",
+      "imslp_id": "String_Quartet_in_B-flat_major,_D.36_(Schubert,_Franz)",
+      "pdf_filename": "SchubertStringQuartetNo3.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp77",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._3_(Schubert)",
+      "wikipedia_extract": "The String Quartet No. 3 in B♭ major was composed by Franz Schubert in 1813.",
+      "pageviews_yearly": 1519,
+      "date": "1813-00-00"
+    },
+    {
+      "qid": "Q19896249",
+      "title": "String Quartet No. 5",
+      "imslp_id": "String_Quartet_in_B-flat_major,_D.68_(Schubert,_Franz)",
+      "pdf_filename": "SchubertStringQuartetNo5.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp79",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._5_(Schubert)",
+      "wikipedia_extract": "The String Quartet No. 5 in B-flat major was composed by Franz Schubert in 1813.",
+      "pageviews_yearly": 1697,
+      "date": "1813-00-00"
+    },
+    {
+      "qid": "Q19896251",
+      "title": "String Quartet No. 6",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp80",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._6_(Schubert)",
+      "wikipedia_extract": "The String Quartet No. 6 in D major was composed by Franz Schubert in 1813.",
+      "pageviews_yearly": 1695,
+      "date": "1813-00-00"
+    },
+    {
+      "qid": "Q19896246",
+      "title": "String Quartet No. 4 in C Major, D. 46",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp78",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._4_(Schubert)",
+      "wikipedia_extract": "The String Quartet No. 4 in C major was composed by Franz Schubert in 1813.",
+      "pageviews_yearly": 1870,
+      "date": "1813-03-03"
+    },
+    {
+      "qid": "Q55807761",
+      "title": "Lützow's Wild Hunt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/L%C3%BCtzow's_Wild_Hunt_(poem)",
+      "wikipedia_extract": "Lützow's Wild Hunt is a patriotic German song.",
+      "pageviews_yearly": 2744,
+      "date": "1813-04-24"
+    },
+    {
+      "qid": "Q135962187",
+      "title": "Majestätsche Sonnenrosse",
+      "imslp_id": "Majestätsche_Sonnenrosse,_D.64_(Schubert,_Franz)",
+      "pdf_filename": "SchubertD064_Majestätsche_Sonnenrosse.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp447",
+      "date": "1813-05-10"
+    },
+    {
+      "qid": "Q135962922",
+      "title": "Trinklied D. 75",
+      "imslp_id": "Trinklied,_D.75_(Schubert,_Franz)",
+      "pdf_filename": "SchubertD075_Trinklied.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp347",
+      "date": "1813-08-29"
+    },
+    {
+      "qid": "Q3413770",
+      "title": "String Quartet No. 10 in E-flat Major, D. 87",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp89",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._10_(Schubert)",
+      "wikipedia_extract": "Franz Schubert composed his String Quartet No. 10 in E♭ major in 1813.",
+      "pageviews_yearly": 2902,
+      "date": "1813-11-00"
+    },
+    {
+      "qid": "Q1924043",
+      "title": "Mass No. 1",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp295",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mass_No._1_(Schubert)",
+      "wikipedia_extract": "Mass No. 1 in F major, D 105, is a mass composed by Franz Schubert in 1814. It is scored for two soprano soloists, two tenor soloists, alto and bass soloists, SATB choir, oboe, clarinet, bassoon, 2 horns, violin I and II, viola, and basso continuo. It was the first of Schubert's masses to be performed, and is of the missa solemnis type.",
+      "pageviews_yearly": 3065,
+      "date": "1814-00-00"
+    },
+    {
+      "qid": "Q17102746",
+      "title": "Quartettsatz, D. 103",
+      "imslp_id": "String_Quartet_Movement_in_C_minor,_D.103_(Schubert,_Franz)",
+      "pdf_filename": "PMLP795128-D_103__String_Quartet_Movement_in_C_minor__fragment_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp86",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quartettsatz%2C_D_103_(Schubert)",
+      "wikipedia_extract": "The Quartettsatz in c-Moll, D. 103 was composed by Franz Schubert in 1814. It is believed to be the only surviving movement of a complete quartet in C minor.",
+      "pageviews_yearly": 1665,
+      "date": "1814-00-00"
+    },
+    {
+      "qid": "Q19896257",
+      "title": "String Quartet No. 8 in B-flat Major, D. 112",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp87",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._8_(Schubert)",
+      "wikipedia_extract": "The String Quartet No. 8 in B♭ major was composed by Franz Schubert in 1814. It was posthumously published as Op. 168.",
+      "pageviews_yearly": 1913,
+      "date": "1814-09-05"
+    },
+    {
+      "qid": "Q674477",
+      "title": "Gretchen am Spinnrade",
+      "imslp_id": "Gretchen_am_Spinnrade,_D.118_(Schubert,_Franz)",
+      "pdf_filename": "PMLP25880-00._SCHUBERT_-_GRETCHEN_AM_SPINNRADE__LISZT_1__-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp540",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gretchen_am_Spinnrade",
+      "wikipedia_extract": "\"Gretchen am Spinnrade\", Op. 2, D 118, is a Lied composed by Franz Schubert using the text from Part One, scene 15 of Johann Wolfgang von Goethe's Faust. With \"Gretchen am Spinnrade\" and some 600 other songs for voice and piano, Schubert contributed transformatively to the genre of Lied. \"Gretchen am Spinnrade\" was composed for soprano voice but has been transposed to accommodate other voice types. Schubert composed \"Gretchen am Spinnrade\" on 19 October 1814, three months before his eighteenth birthday.",
+      "pageviews_yearly": 21576,
+      "date": "1814-10-19"
+    },
+    {
+      "qid": "Q117046184",
+      "title": "Nachtgesang, D 119",
+      "imslp_id": "Nachtgesang,_D.119_(Schubert,_Franz)",
+      "pdf_filename": "PMLP34260-schubert_nachtgesang_d_119_original_peters_8774.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp541",
+      "date": "1814-11-30"
+    },
+    {
+      "qid": "Q114300648",
+      "title": "An den Mond, D 296",
+      "imslp_id": "An_den_Mond,_D.296_(Schubert,_Franz)",
+      "pdf_filename": "PMLP36516-D296-manuscript.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp663",
+      "date": "1815-00-00"
+    },
+    {
+      "qid": "Q114743946",
+      "title": "Claudine von Villa Bella, D. 239",
+      "imslp_id": "Claudine_von_Villa_Bella,_D.239_(Schubert,_Franz)",
+      "pdf_filename": "PMLP48222-SchubertD239a_Claudine_von_Villa_Bella_titlepage.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp35",
+      "date": "1815-00-00"
+    },
+    {
+      "qid": "Q11679001",
+      "title": "Der Rattenfänger",
+      "imslp_id": "Der_Rattenfänger,_D.255_(Schubert,_Franz)",
+      "pdf_filename": "PMLP22248-D255-manuscript.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp628",
+      "date": "1815-00-00"
+    },
+    {
+      "qid": "Q1924048",
+      "title": "Mass No. 3",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp297",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mass_No._3_(Schubert)",
+      "wikipedia_extract": "The Mass No. 3 in B-flat major, D 324, is a mass composed by Franz Schubert in 1815. It is written for four soloists, a four-part choir and orchestra. While by length it could be a missa brevis, its large orchestral force with trumpets, timpani and woodwinds has also led to its classification as a missa solemnis.",
+      "pageviews_yearly": 2191,
+      "date": "1815-00-00"
+    },
+    {
+      "qid": "Q114436641",
+      "title": "Sehnsucht, D 310",
+      "imslp_id": "Sehnsucht,_D.310_(Schubert,_Franz)",
+      "pdf_filename": "PMLP36040-Schubert_D.310b_Sehnsucht.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp676",
+      "date": "1815-00-00"
+    },
+    {
+      "qid": "Q115183445",
+      "title": "Der Sänger",
+      "imslp_id": "Der_Sänger,_D.149_(Schubert,_Franz)",
+      "pdf_filename": "PMLP34616-schubert_der_sänger_low_voice_g_major_peters_8828.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp554",
+      "date": "1815-02-00"
+    },
+    {
+      "qid": "Q6143201",
+      "title": "Piano Sonata in E major, D. 157",
+      "imslp_id": "Piano_Sonata_in_E_major,_D.157_(Schubert,_Franz)",
+      "pdf_filename": "Franz_Schubert_-_Piano_Sonata_in_E__D_157.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp129",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_in_E_major%2C_D_157_(Schubert)",
+      "wikipedia_extract": "The Piano Sonata in E major, D 157 is a piano sonata with three movements composed by Franz Schubert in February 1815. The Allegro D 154 is an early version of its first movement.",
+      "pageviews_yearly": 3056,
+      "date": "1815-02-00"
+    },
+    {
+      "qid": "Q117156126",
+      "title": "Nähe des Geliebten",
+      "imslp_id": "Nähe_des_Geliebten,_D.162_(Schubert,_Franz)",
+      "pdf_filename": "PMLP34967-D162-manuscript.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp563",
+      "date": "1815-02-27"
+    },
+    {
+      "qid": "Q19896260",
+      "title": "String Quartet No. 9 in G Minor, D. 173",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp88",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._9_(Schubert)",
+      "wikipedia_extract": "The String Quartet No. 9 in G minor was composed by Franz Schubert in 1815.",
+      "pageviews_yearly": 2210,
+      "date": "1815-03-25"
+    },
+    {
+      "qid": "Q7595705",
+      "title": "Stabat Mater in G minor",
+      "imslp_id": "Stabat_Mater,_D.175_(Schubert,_Franz)",
+      "pdf_filename": "SchubertD175_Stabat_Mater.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp313",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stabat_Mater_in_G_minor_(Schubert)",
+      "wikipedia_extract": "Stabat Mater in G minor, D 175, is a musical setting of the Latin Stabat Mater sequence, composed by Franz Schubert in April 1815. It is scored for SATB choir, 2 oboes, 2 clarinets, 2 bassoons, 3 trombones, violin I and II, viola, and basso continuo.",
+      "pageviews_yearly": 1643,
+      "date": "1815-04-00"
+    },
+    {
+      "qid": "Q130332682",
+      "title": "Ratlose Liebe (1815)",
+      "date": "1815-05-19"
+    },
+    {
+      "qid": "Q223534",
+      "title": "Symphony No. 3",
+      "imslp_id": "Symphony_No.3,_D.200_(Schubert,_Franz)",
+      "pdf_filename": "PMLP25695-Schubert_Symphony_3__D.200_Adagio-Allegro.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp44",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._3_(Schubert)",
+      "wikipedia_extract": "Franz Schubert's Symphony No. 3 in D major, D 200, was written between 24 May and 19 July 1815, a few months after his eighteenth birthday. Like the other early symphonies, it was not published during Schubert's lifetime. It appeared many years later, in the first Schubert complete works edition in 1884. A typical performance of the symphony lasts approximately 21–23 minutes.",
+      "pageviews_yearly": 6337,
+      "date": "1815-05-24"
+    },
+    {
+      "qid": "Q114207428",
+      "title": "Die Liebe",
+      "imslp_id": "Die_Liebe,_D.210_(Schubert,_Franz)",
+      "pdf_filename": "PMLP35125-Schubert_Lieder_Bd2_Tief_KlaerchensLied.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp592",
+      "date": "1815-06-03"
+    },
+    {
+      "qid": "Q116974586",
+      "title": "Meeres Stille, D 215A",
+      "imslp_id": "Meeres_Stille,_D.215a_(Schubert,_Franz)",
+      "pdf_filename": "PMLP896534-D_215A__Meeres_Stille__1st_setting_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1815-06-20"
+    },
+    {
+      "qid": "Q116974621",
+      "title": "Meeres Stille, D 216",
+      "imslp_id": "Meeres_Stille,_D.216_(Schubert,_Franz)",
+      "pdf_filename": "PMLP35405-LOEB_15379750_2.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1815-06-21"
+    },
+    {
+      "qid": "Q115169092",
+      "title": "Der Fischer",
+      "imslp_id": "Der_Fischer,_D.225_(Schubert,_Franz)",
+      "pdf_filename": "PMLP35502-D_225__Der_Fischer__1st_version_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp605",
+      "date": "1815-07-05"
+    },
+    {
+      "qid": "Q115169713",
+      "title": "Der Gott und die Bajadere",
+      "imslp_id": "Der_Gott_und_die_Bajadere,_D.254_(Schubert,_Franz)",
+      "pdf_filename": "SchubertD254_Der_Gott_und_die_Bajadere.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp627",
+      "date": "1815-08-18"
+    },
+    {
+      "qid": "Q114592794",
+      "title": "Der Schatzgräber",
+      "imslp_id": "Der_Schatzgräber,_D.256_(Schubert,_Franz)",
+      "pdf_filename": "SchubertD256_Der_Schatzgraber.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp629",
+      "date": "1815-08-19"
+    },
+    {
+      "qid": "Q7190167",
+      "title": "Piano Sonata in C major, D. 279",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp130",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_in_C_major%2C_D_279_(Schubert)",
+      "wikipedia_extract": "The Piano Sonata in C major, D 279, composed by Franz Schubert in September 1815, has three movements and is regarded as incomplete for lacking a fourth movement. D. 346, an unfinished Allegretto in C major, has been suggested as its final movement.",
+      "pageviews_yearly": 2209,
+      "date": "1815-09-00"
+    },
+    {
+      "qid": "Q18163655",
+      "title": "Adagio and Rondo concertante in F major, D 487",
+      "imslp_id": "Adagio_e_Rondo_concertante,_D.487_(Schubert,_Franz)",
+      "pdf_filename": "PMLP10132-Schubert__Franz-Complete_Chamber_Music_Breitkopf-Dover_For_Pianoforte_and_Strings_02_D.487_scan.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp108",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Adagio_and_Rondo_Concertante",
+      "wikipedia_extract": "\nThe Adagio and Rondo Concertante in F major for piano quartet, D 487, was composed by Franz Schubert in 1816. A \"brilliant\" work designed as a display piece for the piano soloist, it is not only one of the few works the composer wrote in this style, but it is his first complete composition for piano and string ensemble, preceding the \"Trout\" Quintet\" by three years.",
+      "pageviews_yearly": 2253,
+      "date": "1816-00-00"
+    },
+    {
+      "qid": "Q109020199",
+      "title": "Der König in Thule",
+      "imslp_id": "Der_König_in_Thule,_D.367_(Schubert,_Franz)",
+      "pdf_filename": "PMLP38900-LOEB_12132041_5.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp706",
+      "date": "1816-00-00"
+    },
+    {
+      "qid": "Q1211849",
+      "title": "Die Bürgschaft",
+      "imslp_id": "Die_Bürgschaft,_D.435_(Schubert,_Franz)",
+      "pdf_filename": "PMLP28522-Schubert_Burgschaft_Act_1.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp619",
+      "date": "1816-00-00"
+    },
+    {
+      "qid": "Q7190172",
+      "title": "Piano Sonata in E major, D. 459",
+      "imslp_id": "Piano_Sonata_in_E_major,_D.459_(Schubert,_Franz)",
+      "pdf_filename": "PMLP07759-Schubert_Werke_Breitkopf_Serie_11_No_121_D_459.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp131",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_in_E_major%2C_D_459_(Schubert)",
+      "wikipedia_extract": "The Piano Sonata in E major, D 459, is a work for solo piano, composed by Franz Schubert in August 1816. It was first published in 1843, after the composer's death, by Carl August Klemm in Leipzig, in a publication known as Fünf Klavierstücke.",
+      "pageviews_yearly": 3123,
+      "date": "1816-00-00"
+    },
+    {
+      "qid": "Q19896269",
+      "title": "String Quartet No. 11 in E Major, D. 353",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp90",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._11_(Schubert)",
+      "wikipedia_extract": "The String Quartet No. 11 in E major was composed by Franz Schubert in 1816. It was posthumously published as Op. 125 No. 2.",
+      "pageviews_yearly": 2028,
+      "date": "1816-00-00"
+    },
+    {
+      "qid": "Q231264",
+      "title": "Symphony No. 4",
+      "imslp_id": "Symphony_No.4,_D.417_(Schubert,_Franz)",
+      "pdf_filename": "PMLP25691-Schubert_Symphonie_Cminor_D417_Pf4H.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp45",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._4_(Schubert)",
+      "wikipedia_extract": "The Symphony No. 4 in C minor, D 417, is a symphony by Franz Schubert completed in April 1816 when Schubert was 19 years old, a year after his Third Symphony. However, it was not premiered until November 19, 1849, in Leipzig, more than two decades after Schubert's death. The symphony was called the Tragic by its composer.",
+      "pageviews_yearly": 8122,
+      "date": "1816-00-00"
+    },
+    {
+      "qid": "Q114643884",
+      "title": "To coachman Chronos",
+      "imslp_id": "An_Schwager_Kronos,_D.369_(Schubert,_Franz)",
+      "pdf_filename": "PMLP38904-114275.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1816-00-00"
+    },
+    {
+      "qid": "Q114268520",
+      "title": "Wer nie sein Brot mit Tränen aß",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp782",
+      "date": "1816-00-00"
+    },
+    {
+      "qid": "Q7595703",
+      "title": "Stabat Mater in F minor",
+      "imslp_id": "Stabat_Mater,_D.383_(Schubert,_Franz)",
+      "pdf_filename": "PMLP40598-00._SCHUBERT_-_STABAT_MATER__D.383__-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp319",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Stabat_Mater_in_F_minor_(Schubert)",
+      "wikipedia_extract": "Stabat Mater in F minor, D 383, is a musical setting of the Stabat Mater sequence, composed by Franz Schubert in 1816. It is scored for soprano, tenor and bass soloists, SATB choir, 2 flutes, 2 oboes, 2 bassoons, contrabassoon, 2 french horns, 3 trombones, violin I and II, viola, cello and double bass.",
+      "pageviews_yearly": 2921,
+      "date": "1816-02-28"
+    },
+    {
+      "qid": "Q60795785",
+      "title": "Violin Sonata No. 1 in D major",
+      "imslp_id": "Violin_Sonata_in_D major,_D.384_(Schubert,_Franz)",
+      "pdf_filename": "PMLP28744-FS54.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Violin_Sonatas%2C_Op._137_(Schubert)",
+      "wikipedia_extract": "Franz Schubert's first three violin sonatas, D 384, 385 and 408 were composed in 1816. They were published after the composer's death as Sonatinas in 1836. These sonatas breathe an intimate atmosphere, requiring relatively little virtuoso bravura from their performers.",
+      "pageviews_yearly": 71,
+      "date": "1816-03-00"
+    },
+    {
+      "qid": "Q130304804",
+      "title": "Violin Sonata No. 2 in A minor",
+      "imslp_id": "Violin_Sonata_in_A_minor,_D.385_(Schubert,_Franz)",
+      "pdf_filename": "PMLP28744-FS55.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1816-03-00"
+    },
+    {
+      "qid": "Q60835592",
+      "title": "Der Herbstabend",
+      "imslp_id": "Der_Herbstabend,_D.405_(Schubert,_Franz)",
+      "pdf_filename": "PMLP37755-D405-manuscript.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp733",
+      "date": "1816-03-27"
+    },
+    {
+      "qid": "Q130304833",
+      "title": "Violin Sonata No. 3 in G minor",
+      "imslp_id": "Violin_Sonata_in_G_minor,_D.408_(Schubert,_Franz)",
+      "pdf_filename": "PMLP28744-FS56.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1816-04-00"
+    },
+    {
+      "qid": "Q11613181",
+      "title": "Seligkeit",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp750",
+      "date": "1816-05-00"
+    },
+    {
+      "qid": "Q18163658",
+      "title": "Rondo in A major for Violin and Strings, D 438",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rondo_in_A_major_for_Violin_and_Strings%2C_D_438_(Schubert)",
+      "wikipedia_extract": "The Rondo for Violin and Strings, D 438, is a composition in A major by Franz Schubert. He wrote the rondo in 1816. Like the roughly contemporary Adagio and Rondo concertante in F major, D 487, the work is a concertante piece designed to highlight the skills of the violin soloist.",
+      "pageviews_yearly": 2346,
+      "date": "1816-06-00"
+    },
+    {
+      "qid": "Q2112758",
+      "title": "Prometheus Cantata",
+      "date": "1816-06-17"
+    },
+    {
+      "qid": "Q116859811",
+      "title": "Gesang der Geister über den Wassern, D 484",
+      "imslp_id": "Gesang_der_Geister_über_den_Wassern,_D.484_(Schubert,_Franz)",
+      "pdf_filename": "SchubertD484_Gesang_der_Geister_über_den_Wassern_Fragment.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1816-09-00"
+    },
+    {
+      "qid": "Q7998912",
+      "title": "Wiegenlied, D. 498",
+      "imslp_id": "Wiegenlied,_D.498_(Schubert,_Franz)",
+      "pdf_filename": "PMLP38944-Schubert__Franz_-_Wiegenlied__D.498__arr._Elman___complete_score_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp795",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wiegenlied%2C_D_498_(Schubert)",
+      "wikipedia_extract": "Franz Schubert's Wiegenlied \"Schlafe, schlafe, holder süßer Knabe\", D 498, Op. 98, No. 2, is a lullaby composed in November 1816. The song is also known as \"Mille cherubini in coro\" after an Italian language arrangement for voice and orchestra by Alois Melichar.",
+      "pageviews_yearly": 8077,
+      "date": "1816-11-00"
+    },
+    {
+      "qid": "Q105195045",
+      "title": "Didone Abbandonata",
+      "imslp_id": "Vedi_quanto_adoro,_D.510_(Schubert,_Franz)",
+      "pdf_filename": "SchubertD510_Didone_abbandonata.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1816-12-00"
+    },
+    {
+      "qid": "Q11563196",
+      "title": "Auf dem See",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp834",
+      "date": "1817-00-00"
+    },
+    {
+      "qid": "Q11296115",
+      "title": "Ganymed",
+      "imslp_id": "Ganymed,_D.544_(Schubert,_Franz)",
+      "pdf_filename": "PMLP39013-LOEB_12821233_3.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp835",
+      "date": "1817-00-00"
+    },
+    {
+      "qid": "Q116859924",
+      "title": "Gesang der Geister über den Wassern, D 538",
+      "imslp_id": "Gesang_der_Geister_über_den_Wassern,_D.538_(Schubert,_Franz)",
+      "pdf_filename": "PMLP56269-Schubert_Gesang_D.538.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp473",
+      "date": "1817-00-00"
+    },
+    {
+      "qid": "Q114613446",
+      "title": "Gretchen im Zwinger",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp853",
+      "date": "1817-00-00"
+    },
+    {
+      "qid": "Q60835597",
+      "title": "Liebhaber in allen Gestalten",
+      "imslp_id": "Liebhaber_in_allen_Gestalten,_D.558_(Schubert,_Franz)",
+      "pdf_filename": "PMLP22429-schubert_liebhaber_in_allen_Gestalten_low_voice_f_major_schirmer.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp847",
+      "date": "1817-00-00"
+    },
+    {
+      "qid": "Q113077558",
+      "title": "Mahomets Gesang, D 549",
+      "imslp_id": "Mahomets_Gesang,_D.549_(Schubert,_Franz)",
+      "pdf_filename": "SchubertD549_Mahomets_Gesang_1st_setting_fragment.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp840",
+      "date": "1817-00-00"
+    },
+    {
+      "qid": "Q7190163",
+      "title": "Piano Sonata in A minor, D. 537",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp132",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_in_A_minor%2C_D_537_(Schubert)",
+      "wikipedia_extract": "The Piano Sonata in A minor, D 537, of Franz Schubert is a sonata for solo piano, composed in March 1817.",
+      "pageviews_yearly": 3706,
+      "date": "1817-03-00"
+    },
+    {
+      "qid": "Q7190162",
+      "title": "Piano Sonata in A-flat major, D. 557",
+      "imslp_id": "Piano_Sonata_in_A-flat_major,_D.557_(Schubert,_Franz)",
+      "pdf_filename": "Franz_Schubert_-_Piano_Sonata_in_Ab__D_557.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp133",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_in_A-flat_major%2C_D_557_(Schubert)",
+      "wikipedia_extract": "Franz Schubert's Piano Sonata in A♭ major, D 557 was composed in May 1817.",
+      "pageviews_yearly": 1999,
+      "date": "1817-05-00"
+    },
+    {
+      "qid": "Q18163164",
+      "title": "Piano Sonata in D-flat major D. 567",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp135",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_in_D-flat_major%2C_D_568_(Schubert)",
+      "wikipedia_extract": "The Piano Sonata in D-flat major D 568, composed in June 1817 by Franz Schubert, is an early version of his Piano Sonata in E-flat major D 568.",
+      "pageviews_yearly": 1744,
+      "date": "1817-06-00"
+    },
+    {
+      "qid": "Q7190176",
+      "title": "Piano Sonata in E minor, D. 566",
+      "imslp_id": "Piano_Sonata_in_E_minor,_D.566_(Schubert,_Franz)",
+      "pdf_filename": "Franz_Schubert_-_Piano_Sonata_in_e__D_566.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp134",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_in_E_minor%2C_D_566_(Schubert)",
+      "wikipedia_extract": "The Piano Sonata in E minor D 566 by Franz Schubert is a sonata for solo piano written in June 1817. The original manuscript appeared to lack a finale. Ludwig Scheibler (1848-1921) was the first to suggest in 1905 that the Rondo in E, D.506 might be that movement. The British composer and musicologist Kathleen Dale produced the first edition using this suggestion in 1948. The 1976 Henle edition by Paul Badura-Skoda followed the same practice.",
+      "pageviews_yearly": 4482,
+      "date": "1817-06-00"
+    },
+    {
+      "qid": "Q134087452",
+      "title": "Lied im Freien",
+      "imslp_id": "Lied_im_Freien,_D.572_(Schubert,_Franz)",
+      "pdf_filename": "PMLP147263-FS228.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp474",
+      "date": "1817-07-00"
+    },
+    {
+      "qid": "Q7190179",
+      "title": "Piano Sonata in F-sharp minor, D. 571",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp137",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_in_F-sharp_minor%2C_D_571_(Schubert)",
+      "wikipedia_extract": "The Piano Sonata in F-sharp minor D 571, was composed by Franz Schubert in July 1817. The sonata was first published long after the composer's death in 1888 by Breitkopf & Härtel.",
+      "pageviews_yearly": 2783,
+      "date": "1817-07-00"
+    },
+    {
+      "qid": "Q119791671",
+      "title": "13 Variations on a theme by Anselm Hüttenbrenner",
+      "imslp_id": "13_Variations_on_a_Theme_of_Hüttenbrenner,_D.576_(Schubert,_Franz)",
+      "pdf_filename": "PMLP07764-Schubert_Werke_Breitkopf_Serie_11_No_114_D_576.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp237",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/13_Variations_on_a_theme_by_Anselm_H%C3%BCttenbrenner",
+      "wikipedia_extract": "\nThe 13 Variations on a theme by Anselm Hüttenbrenner, D. 576, is a set of variations for the piano in A minor composed by Franz Schubert in 1817. The theme was composed by Anselm Hüttenbrenner for his first string quartet op. 3 in 1816, to whom it is also dedicated.",
+      "pageviews_yearly": 1189,
+      "date": "1817-08-00"
+    },
+    {
+      "qid": "Q3490268",
+      "title": "Sonata for Violin and Piano in A Major D. 574, \"Duo\"",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Violin_Sonata_in_A_major%2C_D_574_(Schubert)",
+      "wikipedia_extract": "The Violin Sonata No. 4 in A major, Op. posth. 162, D 574, for violin and piano by Franz Schubert was composed in 1817. This sonata, composed one year after his first three violin sonatas, was a much more individual work, showing neither the influence of Mozart, as in these previous works, nor of Rossini, as in the contemporaneous 6th Symphony.",
+      "pageviews_yearly": 4163,
+      "date": "1817-08-00"
+    },
+    {
+      "qid": "Q11316414",
+      "title": "Gruppe aus dem Tartarus, D 583",
+      "imslp_id": "Gruppe_aus_dem_Tartarus,_D.583_(Schubert,_Franz)",
+      "pdf_filename": "PMLP28742-Schubert_Lieder_Bd2_Tief_GruppeAusDemTartarus.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp861",
+      "date": "1817-09-00"
+    },
+    {
+      "qid": "Q246533",
+      "title": "Symphony No. 6",
+      "imslp_id": "Symphony_No.6,_D.589_(Schubert,_Franz)",
+      "pdf_filename": "PMLP32468-Fs_R.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp47",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._6_(Schubert)",
+      "wikipedia_extract": "The Symphony No. 6 in C major, D 589, is a symphony by Franz Schubert composed between October 1817 and February 1818. Its first public performance was in Vienna in 1828. It is nicknamed the \"Little C major\" to distinguish it from his later Ninth Symphony, in the same key, which is known as the \"Great C major\".",
+      "pageviews_yearly": 6276,
+      "date": "1817-10-00"
+    },
+    {
+      "qid": "Q11187445",
+      "title": "2 Scherzos",
+      "imslp_id": "2_Scherzos,_D.593_(Schubert,_Franz)",
+      "pdf_filename": "PMLP07762-2_Scherzos__D_593.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp238",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Scherzos_(Schubert)",
+      "wikipedia_extract": "Franz Schubert wrote two Scherzos, D 593, for solo piano:B♭ major\nD♭ major",
+      "pageviews_yearly": 1358,
+      "date": "1817-11-00"
+    },
+    {
+      "qid": "Q48835466",
+      "title": "Sonata in B-flat major for piano four-hands, D 617",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sonata_in_B-flat_major_for_piano_four-hands%2C_D_617_(Schubert)",
+      "wikipedia_extract": "The Sonata in B♭ major for piano four-hands, Op. 30, D 617 by Franz Schubert, is the first of two sonatas for two pianists the composer wrote in his lifetime, the other being the Grand Duo of 1824.",
+      "pageviews_yearly": 1820,
+      "date": "1818-00-00"
+    },
+    {
+      "qid": "Q16155936",
+      "title": "Piano Sonata in C major, D. 613",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp139",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_in_C_major%2C_D_613_(Schubert)",
+      "wikipedia_extract": "The Piano Sonata in C major D 613 is an unfinished piano sonata written by Franz Schubert in April 1818.",
+      "pageviews_yearly": 1561,
+      "date": "1818-04-00"
+    },
+    {
+      "qid": "Q16155239",
+      "title": "Symphony, D. 615",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp48",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony%2C_D_615_(Schubert)",
+      "wikipedia_extract": "Schubert's Symphony in D major, D 615, is an unfinished work that survives in an incomplete four-page, 259-bar sketch written for piano solo. It is one of Schubert's six unfinished symphonies. It was begun in May 1818, with initial sketches made for the opening sections of the first movement and finale. He abandoned this symphony after this initial phase of work and never returned to it, probably due to dissatisfaction with it, although Schubert would live for another ten years. Although conductor and composer Brian Newbould has made a performing version of the fragments, a full completion has not yet been attempted.",
+      "pageviews_yearly": 2178,
+      "date": "1818-05-00"
+    },
+    {
+      "qid": "Q7190182",
+      "title": "Piano Sonata in F minor, D. 625",
+      "imslp_id": "Piano_Sonata_in_F_minor,_D.625_(Schubert,_Franz)",
+      "pdf_filename": "Schubert_-_D.625_-_Piano_Sonata_in_F_minor.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp140",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_in_F_minor%2C_D_625_(Schubert)",
+      "wikipedia_extract": "The Piano Sonata in F minor D 625 is a piano sonata written in September 1818 by Franz Schubert. The Adagio D. 505 is assumed to be its slow movement.",
+      "pageviews_yearly": 2195,
+      "date": "1818-09-00"
+    },
+    {
+      "qid": "Q7249721",
+      "title": "Prometheus",
+      "imslp_id": "Prometheus,_D.674_(Schubert,_Franz)",
+      "pdf_filename": "PMLP21565-schubert_prometheus_low_voice_e_minor_peters_8828.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp909",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Prometheus_(art_song)",
+      "wikipedia_extract": "\"Prometheus\", D. 674, is an intensely dramatic art song composed by Franz Schubert in October 1819 to a poem of the same name by Johann Wolfgang von Goethe.",
+      "pageviews_yearly": 2803,
+      "date": "1819-00-00"
+    },
+    {
+      "qid": "Q1217815",
+      "title": "Die Zwillingsbrüder",
+      "imslp_id": "Die_Zwillingsbrüder,_D.647_(Schubert,_Franz)",
+      "pdf_filename": "PMLP55789-01._SCHUBERT_-_DIE_ZWILLINGSBRUEDER_-_Flute_1-2.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp37",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Die_Zwillingsbr%C3%BCder",
+      "wikipedia_extract": "Die Zwillingsbrüder is a one-act Singspiel composed by Franz Schubert in 1819 on a libretto by Georg Ernst von Hofmann. Die Zwillingsbrüder was first performed at the Kärntnertortheater on June 14, 1820.",
+      "pageviews_yearly": 2893,
+      "date": "1819-01-00"
+    },
+    {
+      "qid": "Q7190164",
+      "title": "Piano Sonata in C-sharp minor, D. 655",
+      "imslp_id": "Piano_Sonata_in_C-sharp_minor,_D.655_(Schubert,_Franz)",
+      "pdf_filename": "Schubert_-_D.655_-_Piano_Sonata_in_C-_minor.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp141",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_in_C-sharp_minor%2C_D_655_(Schubert)",
+      "wikipedia_extract": "The Piano Sonata in C-sharp minor D. 655 is a piano sonata written by Franz Schubert.",
+      "pageviews_yearly": 1636,
+      "date": "1819-04-00"
+    },
+    {
+      "qid": "Q116859839",
+      "title": "Gesang der Geister über den Wassern, D 714",
+      "imslp_id": "Gesang_der_Geister_über_den_Wassern,_D.714_(Schubert,_Franz)",
+      "pdf_filename": "PMLP147226-FS197.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1820-00-00"
+    },
+    {
+      "qid": "Q194011",
+      "title": "Lazarus",
+      "imslp_id": "Lazarus,_D.689_(Schubert,_Franz)",
+      "pdf_filename": "PMLP40773-39087011280478color_cover.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lazarus_(Schubert)",
+      "wikipedia_extract": "Lazarus or Die Feier der Auferstehung, D 689, is an unfinished 1820 oratorio by Franz Schubert on a libretto by August Hermann Niemeyer. Intended to be in three acts, only act 1 with twenty-one numbers, and eight numbers from act 2 are extant.",
+      "pageviews_yearly": 2608,
+      "date": "1820-00-00"
+    },
+    {
+      "qid": "Q12354813",
+      "title": "Sakontala",
+      "imslp_id": "Sakuntala,_D.701_(Schubert,_Franz)",
+      "pdf_filename": "PMLP88568-Schubert_Andantino_Sakontala_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sakuntala_(opera)",
+      "wikipedia_extract": "Sakuntala, also Sakontala, D 701, is an unfinished opera in three acts, written c. 1820 by Franz Schubert to a libretto by Johann Philipp Neumann. The opera is based on the Sanskrit story of Shakuntala's love for King Duschmanta and her rejection.",
+      "pageviews_yearly": 2413,
+      "date": "1820-00-00"
+    },
+    {
+      "qid": "Q116859709",
+      "title": "Gesang der Geister über den Wassern, D 705",
+      "imslp_id": "Gesang_der_Geister_über_den_Wassern,_D.705_(Schubert,_Franz)",
+      "pdf_filename": "SchubertD705_Gesang_der_Geister_über_den_Wassern_sketch.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp403",
+      "date": "1820-12-00"
+    },
+    {
+      "qid": "Q3413020",
+      "title": "Quartettsatz",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp92",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Quartettsatz%2C_D_703_(Schubert)",
+      "wikipedia_extract": "The Quartettsatz c-Moll D 703 was composed by Franz Schubert in December 1820 as the first movement, Allegro assai, of a string quartet he was never to complete. Upon publication it was nonetheless listed as his \"String Quartet No. 12\". The nine-minute work is regarded as an early product of the composer's mature phase of output.",
+      "pageviews_yearly": 6488,
+      "date": "1820-12-00"
+    },
+    {
+      "qid": "Q113077695",
+      "title": "Mahomets Gesang, D 721",
+      "imslp_id": "Mahomets_Gesang,_D.721_(Schubert,_Franz)",
+      "pdf_filename": "PMLP39632-115643-3.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp937",
+      "date": "1821-00-00"
+    },
+    {
+      "qid": "Q116969451",
+      "title": "Grenzen der Menschheit",
+      "imslp_id": "Grenzen_der_Menschheit,_D.716_(Schubert,_Franz)",
+      "pdf_filename": "PMLP39146-schubert_grenzen_der_menschheit_original_peters_8394.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp933",
+      "date": "1821-03-00"
+    },
+    {
+      "qid": "Q114245637",
+      "title": "Mignon I, D 726",
+      "imslp_id": "Mignon,_D.726_(Schubert,_Franz)",
+      "pdf_filename": "PMLP27377-Godowsky_Schubert_12_Transcriptions-9.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1821-04-00"
+    },
+    {
+      "qid": "Q130332709",
+      "title": "Rastlose Liebe (1821)",
+      "date": "1821-05-00"
+    },
+    {
+      "qid": "Q1885751",
+      "title": "Symphony No. 7",
+      "imslp_id": "Symphony_No.7,_D.729_(Schubert,_Franz)",
+      "pdf_filename": "PMLP959563-FSchubert_Symphony_No.7__D.729_pianosolo_JFBarnett.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp50",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._7_(Schubert)",
+      "wikipedia_extract": "Symphony No. 7 is the name given to a four-movement symphony in E major (D 729) drafted by Franz Schubert in August 1821. Although the work is structurally complete, Schubert only orchestrated the slow introduction and the first 110 bars of the first movement. The rest of the work is continued on 14-stave score pages as a melodic line with occasional basses or counterpoints, giving clues as to changes in orchestral texture. The symphony is one of four unfinished symphonies Schubert worked on between 1818 and 1822, the others being the symphonies in D major D 615 of 1818 and D 708A of 1820, and the symphony in B minor D 759 – the \"Unfinished Symphony\".",
+      "pageviews_yearly": 10057,
+      "date": "1821-08-00"
+    },
+    {
+      "qid": "Q2032667",
+      "title": "Alfonso und Estrella",
+      "imslp_id": "Alfonso_und_Estrella,_D.732_(Schubert,_Franz)",
+      "pdf_filename": "PMLP55510-00._SCHUBERT_-_ALFONSO___ESTRELLA_OVERTURE_-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp25",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alfonso_und_Estrella",
+      "wikipedia_extract": "\nAlfonso und Estrella, D 732, is an opera with music by Franz Schubert, set to a German libretto by Franz von Schober, written in 1822. Like Fierrabras (1823), it marks Schubert's attempt to compose grand Romantic opera in German, departing from the Singspiel tradition. Unlike Fierrabras, it contains no spoken dialogue.",
+      "pageviews_yearly": 5685,
+      "date": "1822-00-00"
+    },
+    {
+      "qid": "Q5261251",
+      "title": "Der Zwerg",
+      "imslp_id": "Der_Zwerg,_D.771_(Schubert,_Franz)",
+      "pdf_filename": "PMLP39326-LOEB_12131870_1.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp967",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Der_Zwerg_(Schubert)",
+      "wikipedia_extract": "Der Zwerg is a lied for voice and piano by Franz Schubert, written in the mid-1820s on a text by Matthäus von Collin. The poem is in terza rima. In Otto Erich Deutsch's catalogue of Schubert's works, it is Op. 22, No. 1, D. 771.",
+      "pageviews_yearly": 3728,
+      "date": "1822-00-00"
+    },
+    {
+      "qid": "Q201295",
+      "title": "Fierrabras",
+      "imslp_id": "Fierabras,_D.796_(Schubert,_Franz)",
+      "pdf_filename": "PMLP47619-D_798__Overture_to_the_Opera__Fierabras___setting_by_Carl_Czerny_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp27",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fierrabras_(opera)",
+      "wikipedia_extract": "\nFierrabras, D 796, is a three-act German opera with spoken dialogue written by the composer Franz Schubert in 1823, to a libretto by Joseph Kupelwieser, the general manager of the Theater am Kärntnertor. Like Alfonso und Estrella (1822), it marks Schubert's attempt to compose a grand Romantic opera in German, departing from the Singspiel tradition. It had to wait until 1897 for a (relatively) complete performance.",
+      "pageviews_yearly": 7013,
+      "date": "1822-00-00"
+    },
+    {
+      "qid": "Q11336612",
+      "title": "Heliopolis II",
+      "imslp_id": "Heliopolis,_D.754_(Schubert,_Franz)",
+      "pdf_filename": "PMLP39225-D754-manuscript.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp956",
+      "date": "1822-00-00"
+    },
+    {
+      "qid": "Q1146131",
+      "title": "Mass No. 5",
+      "imslp_id": "Mass_in_A-flat_major,_D.678_(Schubert,_Franz)",
+      "pdf_filename": "PMLP06224-Schubert-D678vs.Spengel.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp301",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mass_No._5_(Schubert)",
+      "wikipedia_extract": "Mass No. 5 in A-flat major, D 678, is a mass composed by Franz Schubert, completed in 1822. There is no record of a performance during Schubert's lifetime. It is scored for soprano, alto, tenor and bass soloists, SATB choir with divisi, violin I and II, viola, flute, 2 oboes, 2 clarinets, 2 bassoons, 2 horns, 2 trumpets, 3 trombones colla parte, timpani and basso continuo. It is classified as a missa solemnis.",
+      "pageviews_yearly": 4138,
+      "date": "1822-00-00"
+    },
+    {
+      "qid": "Q31842134",
+      "title": "Nachtviolen",
+      "imslp_id": "Nachtviolen,_D.752_(Schubert,_Franz)",
+      "pdf_filename": "PMLP39221-schubert-nachtviolen-gb-lhb.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp954",
+      "date": "1822-00-00"
+    },
+    {
+      "qid": "Q651383",
+      "title": "Symphony No. 8",
+      "imslp_id": "Symphony_No.8,_D.759_(Schubert,_Franz)",
+      "pdf_filename": "PMLP05477-FS8.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp51",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._8_(Schubert)",
+      "wikipedia_extract": "Franz Schubert's Symphony No. 8 in B minor, D 759, commonly known as the Unfinished Symphony, is a musical composition that Schubert started in 1822 but left with only two movements—though he lived for another six years. A scherzo, nearly completed in piano score but with only two pages orchestrated, also survives.",
+      "pageviews_yearly": 57808,
+      "date": "1822-00-00"
+    },
+    {
+      "qid": "Q56097441",
+      "title": "Der Musensohn",
+      "imslp_id": "Der_Musensohn,_D.764_(Schubert,_Franz)",
+      "pdf_filename": "PMLP39306-89453.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp961",
+      "date": "1822-12-00"
+    },
+    {
+      "qid": "Q750057",
+      "title": "Die Verschworenen",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp38",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Die_Verschworenen",
+      "wikipedia_extract": "Die Verschworenen, also known as Der häusliche Krieg is an 1823 one-act singspiel by Franz Schubert after a libretto by Ignaz Franz Castelli with spoken dialogue by the composer. Castelli's libretto was based on Lisistrata, ou Les Athéniennes, Comédie en un acte et en prose, mêlée de vaudevilles by François-Benoît Hoffman, which had premiered at the Théâtre Feydeau in Paris in 1802. The French play in turn was based on Lysistrata by Aristophanes.",
+      "pageviews_yearly": 2799,
+      "date": "1823-00-00"
+    },
+    {
+      "qid": "Q24964408",
+      "title": "Du bist die Ruh'",
+      "imslp_id": "Du_bist_die_Ruh,_D.776_(Schubert,_Franz)",
+      "pdf_filename": "PMLP39350-00._SCHUBERT_-_DU_BIST_DIE_RUH_-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp971",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Du_bist_die_Ruh'",
+      "wikipedia_extract": "\"Du bist die Ruh' \", D. 776; Op. 59, No. 3 is a Lied composed by Franz Schubert in 1823. The text is from a set of poems by the German poet Friedrich Rückert (1788–1866). It is the third poem in a set of four. This song is set for solo voice and piano.",
+      "pageviews_yearly": 13972,
+      "date": "1823-00-00"
+    },
+    {
+      "qid": "Q6957204",
+      "title": "Nacht und Träume",
+      "imslp_id": "Nacht_und_Träume,_D.827_(Schubert,_Franz)",
+      "pdf_filename": "PMLP39387-D_827__Nacht_und_Tra-ume__1st_version_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp990",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nacht_und_Tr%C3%A4ume",
+      "wikipedia_extract": "Nacht und Träume is a lied for voice and piano by Franz Schubert, from a text by Matthäus von Collin, and published in 1825. In Otto Erich Deutsch's catalogue of Schubert's works, it is D. 827.",
+      "pageviews_yearly": 8255,
+      "date": "1823-00-00"
+    },
+    {
+      "qid": "Q50841813",
+      "title": "Piano Sonata in E minor, D. 769A",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp143",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_in_E_minor%2C_D_769A_(Schubert)",
+      "wikipedia_extract": "The Piano Sonata in E minor D 769A is a piano sonata written by Franz Schubert.",
+      "pageviews_yearly": 1237,
+      "date": "1823-00-00"
+    },
+    {
+      "qid": "Q2296248",
+      "title": "Ungeduld",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp496",
+      "date": "1823-00-00"
+    },
+    {
+      "qid": "Q7912624",
+      "title": "Valses Sentimentales",
+      "imslp_id": "Valses_sentimentales,_D.779_(Schubert,_Franz)",
+      "pdf_filename": "PMLP07858-Schubert_Taenze_Universal_Op_50_1200dpi.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp185",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Valses_Sentimentales_and_Valses_Nobles_(Schubert)",
+      "wikipedia_extract": "Franz Schubert wrote about a hundred waltzes for piano solo. Particularly well known among these are two named collections, the 34 Valses Sentimentales and the 12 Valses Nobles.",
+      "pageviews_yearly": 3722,
+      "date": "1823-00-00"
+    },
+    {
+      "qid": "Q3490126",
+      "title": "Piano Sonata in A minor, D. 784",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp144",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_in_A_minor%2C_D_784_(Schubert)",
+      "wikipedia_extract": "Franz Schubert's Piano Sonata in A minor, D 784, is one of Schubert's major compositions for the piano. Schubert composed the work in February 1823, perhaps as a response to his illness the year before. It was however not published until 1839, eleven years after his death. It was given the opus number 143 and a dedication to Felix Mendelssohn by its publishers. The D 784 sonata, Schubert's last to be in three movements, is seen by many to herald a new era in Schubert's output for the piano, and to be a profound and sometimes almost obsessively tragic work.",
+      "pageviews_yearly": 7918,
+      "date": "1823-02-00"
+    },
+    {
+      "qid": "Q765966",
+      "title": "Die schöne Müllerin",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp496",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Die_sch%C3%B6ne_M%C3%BCllerin",
+      "wikipedia_extract": "Die schöne Müllerin, is a song cycle by Franz Schubert from 1823 based on 20 poems by Wilhelm Müller. It is the first of Schubert's two seminal cycles , and a pinnacle of Lied repertoire.",
+      "pageviews_yearly": 33085,
+      "date": "1823-10-00"
+    },
+    {
+      "qid": "Q2331223",
+      "title": "String Quartet No. 13",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp93",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._13_(Schubert)",
+      "wikipedia_extract": "The String Quartet No. 13 in A minor, D 804, Op. 29, was written by Franz Schubert between February and March 1824. It dates roughly to the same time as his monumental Death and the Maiden Quartet, emerging around three years after his previous attempt to write for the string quartet genre, the Quartettsatz, D 703, that he never finished.",
+      "pageviews_yearly": 10920,
+      "date": "1824-00-00"
+    },
+    {
+      "qid": "Q28497909",
+      "title": "Introduction and variations for flute and piano on Trockne Blumen",
+      "imslp_id": "Introduction_and_Variations,_D.802_(Schubert,_Franz)",
+      "pdf_filename": "Introduction_and_Variations__Op_160.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1824-01-00"
+    },
+    {
+      "qid": "Q118442",
+      "title": "Octet",
+      "imslp_id": "Octet_in_F_major,_D.803_(Schubert,_Franz)",
+      "pdf_filename": "PMLP06127-FS19.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp103",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Octet_(Schubert)",
+      "wikipedia_extract": "The Octet in F major, D. 803 was composed by Franz Schubert in March 1824. It was commissioned by the renowned clarinetist Ferdinand Troyer and came from the same period as two of Schubert's other major chamber works, the 'Rosamunde' and 'Death and the Maiden' string quartets.",
+      "pageviews_yearly": 13225,
+      "date": "1824-02-00"
+    },
+    {
+      "qid": "Q605107",
+      "title": "Death and the Maiden",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp94",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._14_(Schubert)",
+      "wikipedia_extract": "The String Quartet No. 14 in D minor, D 810, known as Death and the Maiden, is a piece by Franz Schubert that has been called \"one of the pillars of the chamber music repertoire\". It was composed in 1824, after the composer suffered from a serious illness and realized that he was dying. It is named for the theme of the second movement, which Schubert took from a song he wrote in 1817 of the same title. But, writes Walter Willson Cobbett, all four movements of the quartet are welded \"into a unity under the pressure of a dominating idea – the dance of death.\"",
+      "pageviews_yearly": 25763,
+      "date": "1824-03-00"
+    },
+    {
+      "qid": "Q5594517",
+      "title": "Sonata in C major for piano four-hands, D 812",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sonata_in_C_major_for_piano_four-hands%2C_D_812_(Schubert)",
+      "wikipedia_extract": "Franz Schubert wrote his Sonata in C major for piano four-hands, D 812, in June 1824 during his second stay at the Esterházy estate in Želiezovce. The extended work, in four movements, has a performance time of around 40 to 45 minutes. It was published as Grand Duo, Op. 140, in 1837, nine years after the composer's death.",
+      "pageviews_yearly": 5985,
+      "date": "1824-06-00"
+    },
+    {
+      "qid": "Q2915782",
+      "title": "Arpeggione Sonata",
+      "imslp_id": "Arpeggione_Sonata,_D.821_(Schubert,_Franz)",
+      "pdf_filename": "PMLP39828-Klass_st_Vol_3_Sch_Arpegg009.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp124",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arpeggione_Sonata",
+      "wikipedia_extract": "The Sonata for Arpeggione and Piano in A minor, D. 821, was written by Franz Schubert in Vienna in November 1824. The sonata is the only substantial composition extant today for the arpeggione. The sonata was composed in November 1824, about a month after Schubert had returned to Vienna from his second stay in Zseliz. It has been adapted to other string instruments, especially the cello.",
+      "pageviews_yearly": 17584,
+      "date": "1824-11-00"
+    },
+    {
+      "qid": "Q123575540",
+      "title": "Der Einsame",
+      "imslp_id": "Der_Einsame,_D.800_(Schubert,_Franz)",
+      "pdf_filename": "PMLP39375-Schubert_Lieder_Bd2_Tief_DerEinsame.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp984",
+      "date": "1825-00-00"
+    },
+    {
+      "qid": "Q85853150",
+      "title": "Ellen's Gesang n°I",
+      "imslp_id": "Ellens_Gesang,_D.837_(Schubert,_Franz)",
+      "pdf_filename": "PMLP39389-89454.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1825-00-00"
+    },
+    {
+      "qid": "Q11430229",
+      "title": "Im Abendrot",
+      "imslp_id": "Im_Abendrot,_D.799_(Schubert,_Franz)",
+      "pdf_filename": "PMLP39371-115647.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp983",
+      "date": "1825-02-00"
+    },
+    {
+      "qid": "Q1748274",
+      "title": "Piano Sonata in D major, D. 850",
+      "imslp_id": "Piano_Sonata_in_D_major,_D.850_(Schubert,_Franz)",
+      "pdf_filename": "Franz_Schubert_-_Piano_Sonata_in_D__D_850.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp147",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_in_D_major%2C_D_850_(Schubert)",
+      "wikipedia_extract": "Franz Schubert's Piano Sonata in D major D. 850, Op. 53, known as the Gasteiner, was written during August 1825 while the composer was staying in the spa town of Bad Gastein. A year later, it became only the second of his piano sonatas to be published.",
+      "pageviews_yearly": 6416,
+      "date": "1825-08-00"
+    },
+    {
+      "qid": "Q11308433",
+      "title": "An Silvia",
+      "imslp_id": "An_Sylvia,_D.891_(Schubert,_Franz)",
+      "pdf_filename": "PMLP29773-1_Schubert_to_Sylvia.pdf.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp1033",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/An_Sylvia",
+      "wikipedia_extract": "\"An Sylvia\", D 891; Op. 106, No. 4, is a Lied for voice and piano composed by Franz Schubert in 1826 and published in 1828. Its text is a German translation by Eduard von Bauernfeld of \"Who is Silvia?\" from act 4, scene 2, of The Two Gentlemen of Verona by William Shakespeare. \"An Sylvia\" was composed during a peak in Schubert's career around the time he was writing the Ninth Symphony \"Great\", two years before his death.",
+      "pageviews_yearly": 8264,
+      "date": "1826-00-00"
+    },
+    {
+      "qid": "Q123582627",
+      "title": "Das Zügenglöcklein",
+      "imslp_id": "Das_Zügenglöcklein,_D.871_(Schubert,_Franz)",
+      "pdf_filename": "PMLP29780-D871-manuscript.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp1019",
+      "date": "1826-00-00"
+    },
+    {
+      "qid": "Q123477389",
+      "title": "Der Wanderer an den Mond",
+      "imslp_id": "Der_Wanderer_an_den_Mond,_D.870_(Schubert,_Franz)",
+      "pdf_filename": "PMLP29777-D870-manuscript.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp1018",
+      "date": "1826-00-00"
+    },
+    {
+      "qid": "Q114245659",
+      "title": "Lied der Mignon, Op. 62 No. 2",
+      "date": "1826-00-00"
+    },
+    {
+      "qid": "Q114245792",
+      "title": "Lied der Mignon, Op. 62 No. 3",
+      "date": "1826-00-00"
+    },
+    {
+      "qid": "Q1746042",
+      "title": "Piano Sonata in E-flat major, D. 568",
+      "imslp_id": "Piano_Sonata_in_E-flat_major,_D.568_(Schubert,_Franz)",
+      "pdf_filename": "Franz_Schubert_-_Piano_Sonata_in_Eb__D_568.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp136",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_in_E-flat_major%2C_D_568_(Schubert)",
+      "wikipedia_extract": "\n\nThe Piano Sonata in E-flat major D 568 by Franz Schubert is a sonata for solo piano. It is a revision and completion of the Sonata in D-flat major D 568. The D-flat major version was composed in June 1817, while the E-flat major revision and completion, published in 1829 after Schubert's death as Op. posth. 122, dates from sometime around 1826.",
+      "pageviews_yearly": 3029,
+      "date": "1826-00-00"
+    },
+    {
+      "qid": "Q3490130",
+      "title": "Piano Sonata in G major, D. 894",
+      "imslp_id": "Piano_Sonata_in_G_major,_D.894_(Schubert,_Franz)",
+      "pdf_filename": "Franz_Schubert_-_Piano_Sonata_in_G__D_894.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp148",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_in_G_major%2C_D_894_(Schubert)",
+      "wikipedia_extract": "The Piano Sonata in G major D. 894, Op. 78 by Franz Schubert is a sonata for solo piano, completed in October 1826. The work is sometimes called the \"Fantasie\", a title which the publisher Tobias Haslinger, rather than Schubert, gave to the first movement of the work. It was the last of Schubert's sonatas published during his lifetime, and was later described by Robert Schumann as the \"most perfect in form and conception\" of any of Schubert's sonatas. A typical performance runs approximately 35 minutes.",
+      "pageviews_yearly": 10114,
+      "date": "1826-10-00"
+    },
+    {
+      "qid": "Q110567535",
+      "title": "Auf dem Flusse",
+      "imslp_id": "Winterreise,_D.911_(Schubert,_Franz)",
+      "pdf_filename": "PMLP02203-Boije_0861.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1827-00-00"
+    },
+    {
+      "qid": "Q111142340",
+      "title": "Das Wirtshaus",
+      "imslp_id": "Winterreise,_D.911_(Schubert,_Franz)",
+      "pdf_filename": "PMLP02203-Boije_0861.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1827-00-00"
+    },
+    {
+      "qid": "Q111232917",
+      "title": "Der Leiermann",
+      "imslp_id": "Winterreise,_D.911_(Schubert,_Franz)",
+      "pdf_filename": "PMLP02203-Boije_0861.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp497",
+      "date": "1827-00-00"
+    },
+    {
+      "qid": "Q111100085",
+      "title": "Der Wegweiser",
+      "imslp_id": "Winterreise,_D.911_(Schubert,_Franz)",
+      "pdf_filename": "PMLP02203-Boije_0861.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1827-00-00"
+    },
+    {
+      "qid": "Q110609585",
+      "title": "Der greise Kopf",
+      "imslp_id": "Winterreise,_D.911_(Schubert,_Franz)",
+      "pdf_filename": "PMLP02203-Boije_0861.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1827-00-00"
+    },
+    {
+      "qid": "Q110619331",
+      "title": "Der stürmische Morgen",
+      "imslp_id": "Winterreise,_D.911_(Schubert,_Franz)",
+      "pdf_filename": "PMLP02203-Boije_0861.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1827-00-00"
+    },
+    {
+      "qid": "Q110618380",
+      "title": "Die Krähe",
+      "imslp_id": "Winterreise,_D.911_(Schubert,_Franz)",
+      "pdf_filename": "PMLP02203-Boije_0861.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1827-00-00"
+    },
+    {
+      "qid": "Q111232820",
+      "title": "Die Nebensonnen",
+      "imslp_id": "Winterreise,_D.911_(Schubert,_Franz)",
+      "pdf_filename": "PMLP02203-Boije_0861.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1827-00-00"
+    },
+    {
+      "qid": "Q110609470",
+      "title": "Die Post",
+      "imslp_id": "Winterreise,_D.911_(Schubert,_Franz)",
+      "pdf_filename": "PMLP02203-Boije_0861.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1827-00-00"
+    },
+    {
+      "qid": "Q110553597",
+      "title": "Die Wetterfahne",
+      "imslp_id": "Winterreise,_D.911_(Schubert,_Franz)",
+      "pdf_filename": "PMLP02203-Boije_0861.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1827-00-00"
+    },
+    {
+      "qid": "Q110594706",
+      "title": "Einsamkeit",
+      "imslp_id": "Winterreise,_D.911_(Schubert,_Franz)",
+      "pdf_filename": "PMLP02203-Boije_0861.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp874",
+      "date": "1827-00-00"
+    },
+    {
+      "qid": "Q110554969",
+      "title": "Erstarrung",
+      "imslp_id": "Winterreise,_D.911_(Schubert,_Franz)",
+      "pdf_filename": "PMLP02203-Boije_0861.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1827-00-00"
+    },
+    {
+      "qid": "Q110554627",
+      "title": "Gefrorne Tränen",
+      "imslp_id": "Winterreise,_D.911_(Schubert,_Franz)",
+      "pdf_filename": "PMLP02203-Boije_0861.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1827-00-00"
+    },
+    {
+      "qid": "Q110619204",
+      "title": "Im Dorfe",
+      "imslp_id": "Winterreise,_D.911_(Schubert,_Franz)",
+      "pdf_filename": "PMLP02203-Boije_0861.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1827-00-00"
+    },
+    {
+      "qid": "Q110567840",
+      "title": "Irrlicht",
+      "imslp_id": "Winterreise,_D.911_(Schubert,_Franz)",
+      "pdf_filename": "PMLP02203-Boije_0861.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1827-00-00"
+    },
+    {
+      "qid": "Q110618528",
+      "title": "Letzte Hoffnung",
+      "imslp_id": "Winterreise,_D.911_(Schubert,_Franz)",
+      "pdf_filename": "PMLP02203-Boije_0861.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1827-00-00"
+    },
+    {
+      "qid": "Q111164123",
+      "title": "Mut!",
+      "imslp_id": "Winterreise,_D.911_(Schubert,_Franz)",
+      "pdf_filename": "PMLP02203-Boije_0861.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp851",
+      "date": "1827-00-00"
+    },
+    {
+      "qid": "Q110570682",
+      "title": "Rast",
+      "imslp_id": "Winterreise,_D.911_(Schubert,_Franz)",
+      "pdf_filename": "PMLP02203-Boije_0861.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp1006",
+      "date": "1827-00-00"
+    },
+    {
+      "qid": "Q110567710",
+      "title": "Rückblick",
+      "imslp_id": "Winterreise,_D.911_(Schubert,_Franz)",
+      "pdf_filename": "PMLP02203-Boije_0861.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1827-00-00"
+    },
+    {
+      "qid": "Q111099876",
+      "title": "Täuschung",
+      "imslp_id": "Winterreise,_D.911_(Schubert,_Franz)",
+      "pdf_filename": "PMLP02203-Boije_0861.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp610",
+      "date": "1827-00-00"
+    },
+    {
+      "qid": "Q110559102",
+      "title": "Wasserflut",
+      "imslp_id": "Winterreise,_D.911_(Schubert,_Franz)",
+      "pdf_filename": "PMLP02203-Boije_0861.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1827-00-00"
+    },
+    {
+      "qid": "Q611529",
+      "title": "Winterreise",
+      "imslp_id": "Winterreise,_D.911_(Schubert,_Franz)",
+      "pdf_filename": "PMLP02203-Boije_0861.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp497",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Winterreise",
+      "wikipedia_extract": "Winterreise is a song cycle for voice and piano by Franz Schubert, a setting of 24 poems by German poet Wilhelm Müller. It is the second of Schubert's two song cycles on Müller's poems, the earlier being Die schöne Müllerin.",
+      "pageviews_yearly": 77113,
+      "date": "1827-00-00",
+      "movements": [
+        {
+          "qid": "Q110553262"
+        },
+        {
+          "qid": "Q110553597"
+        },
+        {
+          "qid": "Q110554627"
+        },
+        {
+          "qid": "Q110554969"
+        },
+        {
+          "qid": "Q110555396"
+        },
+        {
+          "qid": "Q110559102"
+        },
+        {
+          "qid": "Q110567535"
+        },
+        {
+          "qid": "Q110567710"
+        },
+        {
+          "qid": "Q110567840"
+        },
+        {
+          "qid": "Q110570682"
+        },
+        {
+          "qid": "Q109038003"
+        },
+        {
+          "qid": "Q110594706"
+        },
+        {
+          "qid": "Q110609470"
+        },
+        {
+          "qid": "Q110609585"
+        },
+        {
+          "qid": "Q110618380"
+        },
+        {
+          "qid": "Q110618528"
+        },
+        {
+          "qid": "Q110619204"
+        },
+        {
+          "qid": "Q110619331"
+        },
+        {
+          "qid": "Q111099876"
+        },
+        {
+          "qid": "Q111100085"
+        },
+        {
+          "qid": "Q111142340"
+        },
+        {
+          "qid": "Q111164123"
+        },
+        {
+          "qid": "Q111232820"
+        },
+        {
+          "qid": "Q111232917"
+        }
+      ]
+    },
+    {
+      "qid": "Q109038003",
+      "title": "Frühlingstraum",
+      "imslp_id": "Winterreise,_D.911_(Schubert,_Franz)",
+      "pdf_filename": "PMLP02203-Boije_0861.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "date": "1827-02-00"
+    },
+    {
+      "qid": "Q1714890",
+      "title": "Jägers Liebeslied",
+      "imslp_id": "Jägers_Liebeslied,_D.909_(Schubert,_Franz)",
+      "pdf_filename": "PMLP30849-Schubert_Album_Band_1_hoch_Peters_87_Jaegers_Liebeslied_filter.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp1042",
+      "date": "1827-02-00"
+    },
+    {
+      "qid": "Q111937942",
+      "title": "Allegretto in C minor, D. 915",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp251",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Allegretto_in_C_minor%2C_D._915_(Schubert)",
+      "wikipedia_extract": "Allegretto in C minor D 915 is a short piano piece written on 26 April 1827 by Franz Schubert (1797-1828). It is approximately 5 minutes in length.",
+      "pageviews_yearly": 2178,
+      "date": "1827-04-26"
+    },
+    {
+      "qid": "Q28228314",
+      "title": "Der Graf von Gleichen",
+      "imslp_id": "Der_Graf_von_Gleichen,_D.918_(Schubert,_Franz)",
+      "pdf_filename": "PMLP1063050-Schu_Herb_Morg_sc.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp28",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Der_Graf_von_Gleichen",
+      "wikipedia_extract": "Der Graf von Gleichen D 918 is an unfinished 1827 opera in two acts by Franz Schubert after a libretto by Eduard Bauernfeld.",
+      "pageviews_yearly": 1681,
+      "date": "1827-06-19"
+    },
+    {
+      "qid": "Q21899268",
+      "title": "Auf dem Strom",
+      "imslp_id": "Auf_dem_Strom,_D.943_(Schubert,_Franz)",
+      "pdf_filename": "PMLP13156-E788854_200-222-Schubert_-_Werke_4-14_-_Lieder_Band_14.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp1057",
+      "date": "1828-00-00"
+    },
+    {
+      "qid": "Q1924059",
+      "title": "Mass No. 6",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp303",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mass_No._6_(Schubert)",
+      "wikipedia_extract": "Mass No. 6 in E-flat major, D 950, is a mass composed by Franz Schubert, a few months before his death. It is scored for two tenor soloists, soprano, alto and bass soloists, SATB choir with divisi, 2 oboes, 2 clarinets, 2 bassoons, 2 horns, 2 trumpets, 3 trombones, timpani, violin I and II, viola, cello, and double bass. It was Schubert's final setting of the order of Mass, and is classified as a missa solemnis.",
+      "pageviews_yearly": 6424,
+      "date": "1828-00-00"
+    },
+    {
+      "qid": "Q7063774",
+      "title": "Notturno",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp112",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Notturno_(Schubert)",
+      "wikipedia_extract": "The Notturno in E♭ major, Op. 148, also called Adagio, is a nocturne for piano trio by Franz Schubert.",
+      "pageviews_yearly": 6212,
+      "date": "1828-00-00"
+    },
+    {
+      "qid": "Q15975838",
+      "title": "Sonata in A major, D. 959",
+      "imslp_id": "Piano_Sonata_in_A_major,_D.959_(Schubert,_Franz)",
+      "pdf_filename": "Franz_Schubert_-_Piano_Sonata_in_A__D_959.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp150",
+      "date": "1828-00-00"
+    },
+    {
+      "qid": "Q15975837",
+      "title": "Sonata in C minor, D. 958",
+      "imslp_id": "Piano_Sonata_in_C_minor,_D.958_(Schubert,_Franz)",
+      "pdf_filename": "Franz_Schubert_-_Piano_Sonata_in_c__D_958.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp149",
+      "date": "1828-00-00"
+    },
+    {
+      "qid": "Q1779432",
+      "title": "String Quintet",
+      "imslp_id": "String_Quintet,_D.956_(Schubert,_Franz)",
+      "pdf_filename": "PMLP06343-E788857_21-92-Schubert_-_Werke_6-2_-_Streichquintette.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp106",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quintet_(Schubert)",
+      "wikipedia_extract": "Franz Schubert's final chamber work, the String Quintet in C major is sometimes called the \"Cello Quintet\" because it is scored for a standard string quartet plus an extra cello instead of the extra viola which is more usual in conventional string quintets.",
+      "pageviews_yearly": 28722,
+      "date": "1828-00-00"
+    },
+    {
+      "qid": "Q511538",
+      "title": "Symphony No. 9",
+      "imslp_id": "Symphony_No.9,_D.944_(Schubert,_Franz)",
+      "pdf_filename": "PMLP25384-1_Diack_farewell.pdf.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp53",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._9_(Schubert)",
+      "wikipedia_extract": "\nThe Symphony No. 9 in C major, D 944, known as The Great, is the final symphony completed by Franz Schubert. It was first published by Breitkopf & Härtel in 1849 as \"Symphonie / C Dur / für großes Orchester\" and listed as Symphony No. 8 in the New Schubert Edition. Originally called The Great C major to distinguish it from his Symphony No. 6, the Little C major, the subtitle is now usually taken as a reference to the symphony's majesty. Unusually long for a symphony of its time, a typical performance of The Great lasts around one hour when all repeats indicated in the score are taken. The symphony was not professionally performed until a decade after Schubert's death in 1828.",
+      "pageviews_yearly": 33601,
+      "date": "1828-00-00"
+    },
+    {
+      "qid": "Q3066517",
+      "title": "Fantasia in F minor",
+      "imslp_id": "Fantasie_in_F_minor,_D.940_(Schubert,_Franz)",
+      "pdf_filename": "PMLP20830-Schubert_D940_I-II_on_Same_Page.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp287",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fantasia_in_F_minor_(Schubert)",
+      "wikipedia_extract": "The Fantasia in F minor by Franz Schubert, D.940, for piano four hands, is one of Schubert's most important works for more than one pianist and one of his most important piano works altogether. He composed it in 1828, the last year of his life. A dedication to his former pupil Caroline Esterházy can only be found in the posthumous first edition, not in Schubert's autograph.",
+      "pageviews_yearly": 53403,
+      "date": "1828-01-00"
+    },
+    {
+      "qid": "Q11594775",
+      "title": "Herbst",
+      "imslp_id": "Herbst,_D.945_(Schubert,_Franz)",
+      "pdf_filename": "PMLP39609-Schubert_Herbst_e_-_Partitur.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp1058",
+      "date": "1828-04-28"
+    },
+    {
+      "qid": "Q5261141",
+      "title": "Der Doppelgänger",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Der_Doppelg%C3%A4nger",
+      "wikipedia_extract": "\"Der Doppelgänger\" is one of the six songs from Franz Schubert's Schwanengesang that sets words by Heinrich Heine for piano and tenor voice. It was written in 1828, the year of Schubert's death.",
+      "pageviews_yearly": 17815,
+      "date": "1828-08-00"
+    },
+    {
+      "qid": "Q1194344",
+      "title": "The Shepherd on the Rock",
+      "imslp_id": "Der_Hirt_auf_dem_Felsen,_D.965_(Schubert,_Franz)",
+      "pdf_filename": "PMLP154484-23113226.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp1060",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_Shepherd_on_the_Rock",
+      "wikipedia_extract": "\"The Shepherd on the Rock\", D. 965, is a Lied for soprano, clarinet, and piano by Franz Schubert. It was composed in 1828 during the final months of his life.",
+      "pageviews_yearly": 9244,
+      "date": "1828-10-00"
+    },
+    {
+      "qid": "Q21645753",
+      "title": "Schubertiana",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/xavier-montsalvatge-1912-pp142",
+      "date": "1912-00-00"
+    },
+    {
+      "qid": "Q366677",
+      "title": "Adrast",
+      "imslp_id": "Adrast,_D.137_(Schubert,_Franz)",
+      "pdf_filename": "SchubertD137_Adrast.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp32"
+    },
+    {
+      "qid": "Q332798",
+      "title": "Alive",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alive_(1993_film)",
+      "wikipedia_extract": "Alive is a 1993 American survival drama film directed by Frank Marshall, and based on Piers Paul Read's 1974 book Alive: The Story of the Andes Survivors. It is the second feature film about the Uruguayan rugby team whose plane crashed in the Andes mountains in 1972. Filmed in the Purcell Mountains in British Columbia, the film was written by John Patrick Shanley, narrated by John Malkovich, and stars Ethan Hawke, Josh Hamilton, Vincent Spano, Bruce Ramsay, John Haymes Newton, Illeana Douglas, and Danny Nucci. One of the survivors, Nando Parrado, served as the technical advisor for the film.",
+      "pageviews_yearly": 310588
+    },
+    {
+      "qid": "Q451214",
+      "title": "Am Brunnen vor dem Tore",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Am_Brunnen_vor_dem_Tore_1.mid",
+        "midi/Am_Brunnen_vor_dem_Tore_2.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q78526552",
+      "title": "Am Feierabend = Wedi gwaith y dydd"
+    },
+    {
+      "qid": "Q11353946",
+      "title": "Am Tage Aller Seelen"
+    },
+    {
+      "qid": "Q110293701",
+      "title": "Amen"
+    },
+    {
+      "qid": "Q110315222",
+      "title": "Amen"
+    },
+    {
+      "qid": "Q637820",
+      "title": "Amour",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Amour_(2012_film)",
+      "wikipedia_extract": "Amour is a 2012 French romantic tragedy film written and directed by Michael Haneke, starring Jean-Louis Trintignant, Emmanuelle Riva and Isabelle Huppert. The narrative focuses on an elderly couple, Anne and Georges, who are retired music teachers with a daughter who lives abroad. One morning during breakfast, Anne has a stroke, and the ensuing complications reshape their lives. The film is an international co-production among the French, German, and Austrian companies Les Films du Losange, X Filme Creative Pool, and Wega Film.",
+      "pageviews_yearly": 184721
+    },
+    {
+      "qid": "Q78647647",
+      "title": "An den Mond = Cân i'r lloer"
+    },
+    {
+      "qid": "Q78647649",
+      "title": "An die Leier = I'r delyn"
+    },
+    {
+      "qid": "Q2187379",
+      "title": "An die Musik",
+      "has_midi": true,
+      "midi_files": [
+        "midi/An_Die_Musik_Accompaniment.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q187276",
+      "title": "Au revoir les enfants",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Au_revoir_les_enfants",
+      "wikipedia_extract": "Au revoir les enfants is an autobiographical 1987 film written, produced, and directed by Louis Malle. It is based on the actions of Père Jacques, a French priest and headmaster who attempted to shelter Jewish children during the Holocaust. The film won the Golden Lion at the Venice Film Festival.",
+      "pageviews_yearly": 86087
+    },
+    {
+      "qid": "Q4820311",
+      "title": "Auf dem Wasser zu singen",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Auf_Dem_Wasser_Zu_Singen.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q113551455",
+      "title": "Ave Maria",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Ave_Maria.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q4055597",
+      "title": "Ave Maria",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp1000"
+    },
+    {
+      "qid": "Q28109084",
+      "title": "Ave Maria",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Ave_Maria_for_2_Saxophone.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q137393123",
+      "title": "Ballet from \"Rosamunde\""
+    },
+    {
+      "qid": "Q130220966",
+      "title": "Blossom Time"
+    },
+    {
+      "qid": "Q1211134",
+      "title": "Colonel Chabert"
+    },
+    {
+      "qid": "Q181555",
+      "title": "Crimes and Misdemeanors",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Crimes_and_Misdemeanors",
+      "wikipedia_extract": "Crimes and Misdemeanors is a 1989 American existential comedy-drama film written and directed by Woody Allen, who stars alongside Martin Landau, Mia Farrow, Anjelica Huston, Jerry Orbach, Alan Alda, Sam Waterston, and Joanna Gleason.",
+      "pageviews_yearly": 108133
+    },
+    {
+      "qid": "Q78526749",
+      "title": "Cystadleuaeth unawd contralto : Ave Maria : cyfieithiad Cymraeg gan Syr Thomas Parry"
+    },
+    {
+      "qid": "Q832620",
+      "title": "Das Dreimäderlhaus",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Das_Dreim%C3%A4derlhaus",
+      "wikipedia_extract": "Das Dreimäderlhaus, adapted into English-language versions as Blossom Time and Lilac Time, is a Viennese pastiche operetta with music by Franz Schubert, rearranged by Heinrich Berté (1857–1924), and a libretto by Alfred Maria Willner and Heinz Reichert. The work gives a fictionalized account of Schubert's romantic life, and the story was adapted from the 1912 novel Schwammerl by Rudolf Hans Bartsch (1873–1952). Originally the score was mostly Berté, with just one piece of Schubert's, but the producers required Berté to discard his score and create a pasticcio of Schubert music.",
+      "pageviews_yearly": 4840
+    },
+    {
+      "qid": "Q1405431",
+      "title": "Death in a French Garden",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Death_in_a_French_Garden",
+      "wikipedia_extract": " Death in a French Garden  is a 1985 French drama film directed by Michel Deville. It was entered into the 35th Berlin International Film Festival.",
+      "pageviews_yearly": 4737
+    },
+    {
+      "qid": "Q78393905",
+      "title": "Der Gondelfahrer = Serenâd y Gondolêr"
+    },
+    {
+      "qid": "Q110555396",
+      "title": "Der Lindenbaum",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Der_Lindenbaum.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q1196821",
+      "title": "Der Schüler Gerber"
+    },
+    {
+      "qid": "Q581306",
+      "title": "Der Tod und das Mädchen",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Der_Tod_und_das_Madchen_D531.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q660049",
+      "title": "Der vierjährige Posten",
+      "imslp_id": "Der_vierjährige_Posten,_D.190_(Schubert,_Franz)",
+      "pdf_filename": "PMLP47476-D_190_No._5_Arie._Gott__ho-re_meine_Stimme.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp33",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Der_vierj%C3%A4hrige_Posten",
+      "wikipedia_extract": "Der vierjährige Posten, D 190, is a one-act singspiel by Franz Schubert to a libretto by Theodor Körner written for Carl Steinacker's (1784–1814) opera of the same title that premiered in 1813 in Vienna's Theater an der Wien. Written in 1815 when Schubert was 18 years old, it was first performed on 23 September 1896, 67 years after Schubert's death, at the Dresden Court Opera.",
+      "pageviews_yearly": 1535
+    },
+    {
+      "qid": "Q1203556",
+      "title": "Deutsche Messe"
+    },
+    {
+      "qid": "Q630565",
+      "title": "Die Forelle",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Die_Forelle_Op_32_D_550.mid",
+        "midi/Franz_Schubert_-_Die_Forelle.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q28041896",
+      "title": "Die Freunde von Salamanka",
+      "imslp_id": "Die_Freunde_von_Salamanka,_D.326_(Schubert,_Franz)",
+      "pdf_filename": "PMLP147155-FS183-1.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp36",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Die_Freunde_von_Salamanka",
+      "wikipedia_extract": "Die Freunde von Salamanka D. 326, is an 1815 Singspiel in two acts by Franz Schubert to a libretto by Johann Mayrhofer.",
+      "pageviews_yearly": 2698
+    },
+    {
+      "qid": "Q121363243",
+      "title": "Die Männer sind méchant!",
+      "imslp_id": "4_Refrainlieder,_D.866_(Schubert,_Franz)",
+      "pdf_filename": "PMLP30191-4_Refrainlieder__D.866.pdf",
+      "has_pdf": true,
+      "has_mxl": false
+    },
+    {
+      "qid": "Q1217690",
+      "title": "Die Zauberharfe",
+      "imslp_id": "Die_Zauberharfe,_D.644_(Schubert,_Franz)",
+      "pdf_filename": "PMLP147164-D_644_No_9__Finale_II._Romanze_des_Palmerin__concert_version_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp39"
+    },
+    {
+      "qid": "Q6455891",
+      "title": "Drei Klavierstücke, D. 946",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp255"
+    },
+    {
+      "qid": "Q78526806",
+      "title": "Du bist die Ruh = Ti ydyw hedd"
+    },
+    {
+      "qid": "Q19644634",
+      "title": "Ein Geschenk der Götter"
+    },
+    {
+      "qid": "Q78647884",
+      "title": "Eisteddfod Genedlaethol Bro Delyn 1990 [sic] : unawd i fechgyn dan 19 oed Ständchen = Nosgan serch"
+    },
+    {
+      "qid": "Q5352406",
+      "title": "El desencanto",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/El_desencanto",
+      "wikipedia_extract": "El desencanto is a 1976 Spanish documentary film written and directed by Jaime Chávarri about the family of famous poet Leopoldo Panero. It tells the story of the Panero family told by themselves twelve years after the death of patriarch Leopoldo Panero, a poet of Francoist Spain. The documentary is based on the testimony of the remaining four members: the poet's widow, Felicidad Blanc, and the couple's three sons: Juan Luis, Leopoldo Maria and Michi. In their intertwined testimonies, they deal with family relations, the weight of their shared past and about themselves.",
+      "pageviews_yearly": 2889
+    },
+    {
+      "qid": "Q1331995",
+      "title": "Ellens dritter Gesang",
+      "imslp_id": "Ave_Maria,_D.839_(Schubert,_Franz)",
+      "pdf_filename": "PMLP16143-15024.e62f-39087017829799score-2.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ave_Maria_(Schubert)",
+      "wikipedia_extract": "\"Ellens dritter Gesang\", in English: \"Ellen's Third Song\", was composed by Franz Schubert in 1825 as part of his Op. 52, a setting of seven songs from Walter Scott's 1810 popular narrative poem The Lady of the Lake, loosely translated into German.",
+      "pageviews_yearly": 219834
+    },
+    {
+      "qid": "Q1134417",
+      "title": "Erlkönig",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Erlkonig_-_F_Schubert_arr_F_Liszt.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q112325011",
+      "title": "Erlkönig",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Erlkonig_-_F_Schubert_D_328.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q78647900",
+      "title": "Erlkönig = Brenin yr hud"
+    },
+    {
+      "qid": "Q136086970",
+      "title": "Erster Verlust, D 226",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp606"
+    },
+    {
+      "qid": "Q943192",
+      "title": "Fantasia"
+    },
+    {
+      "qid": "Q24899576",
+      "title": "Fantasie in C major",
+      "imslp_id": "Fantasie_in_C_major,_D.934_(Schubert,_Franz)",
+      "pdf_filename": "D.934_-_Fantasia_in_C_for_piano_and_violin.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp246",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fantasy_for_violin_and_piano_(Schubert)",
+      "wikipedia_extract": "Franz Schubert composed his Fantasy in C major for violin and piano, Op. posth. 159, D 934, in December 1827. It was the last of his compositions for violin and piano, and was premiered in January 1828 by the violinist Josef Slavik and the pianist Carl Maria von Bocklet at the Landhaussaal in Vienna.",
+      "pageviews_yearly": 6645
+    },
+    {
+      "qid": "Q1458430",
+      "title": "Flowers and Trees",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Flowers_and_Trees",
+      "wikipedia_extract": "Flowers and Trees is a Silly Symphonies animated short film produced by Walt Disney, directed by Burt Gillett, and released to theatres by United Artists on July 30, 1932. It was the first commercially released film to be produced in the full-color three-strip Technicolor process after several years of two-color Technicolor films. The film was a commercial and critical success, winning the first Academy Award for Best Cartoon Short Subject.",
+      "pageviews_yearly": 58793
+    },
+    {
+      "qid": "Q6455950",
+      "title": "Four Impromptus, D. 899 (Op. 90)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Impromptus%2C_Op._90_(Schubert)",
+      "wikipedia_extract": "The Impromptus, Op. 90, D. 899, are a set of four impromptus for solo piano composed by Franz Schubert in 1827. They were written in the same year as the Impromptus, Op. 142, though only the first two pieces were published during Schubert's lifetime. Together with the latter set, they have become a cornerstone of the piano repertoire.",
+      "pageviews_yearly": 17125
+    },
+    {
+      "qid": "Q6455928",
+      "title": "Four Impromptus, D. 935 (Op. posth. 142)",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Impromptus%2C_Op._142_(Schubert)",
+      "wikipedia_extract": "The Impromptus, Op. posth. 142, D. 935, are a set of four impromptus for solo piano composed by Franz Schubert in 1827. They were written in the same year as the Impromptus, Op. 90, but were not published until 1839, more than a decade after his death. Together with the preceding set, they have become a cornerstone of the piano repertoire.",
+      "pageviews_yearly": 10673
+    },
+    {
+      "qid": "Q137358633",
+      "title": "Franz Schubert: Famous Tunes",
+      "movements": [
+        {
+          "qid": "Q2187379"
+        },
+        {
+          "qid": "Q137361008"
+        },
+        {
+          "qid": "Q137393123"
+        },
+        {
+          "qid": "Q137393201"
+        },
+        {
+          "qid": "Q137393510"
+        },
+        {
+          "qid": "Q651383"
+        },
+        {
+          "qid": "Q700157"
+        },
+        {
+          "qid": "Q605107"
+        },
+        {
+          "qid": "Q7190163"
+        },
+        {
+          "qid": "Q1331995"
+        },
+        {
+          "qid": "Q630565"
+        },
+        {
+          "qid": "Q105700805"
+        }
+      ]
+    },
+    {
+      "qid": "Q78647932",
+      "title": "Frühingstraum [sic] = Breuddwyd am wanwyn (allan o'r cylch \"Die Winterresie [sic]\" - Y daith aeafol)"
+    },
+    {
+      "qid": "Q1481810",
+      "title": "Fünf letzte Tage",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/F%C3%BCnf_letzte_Tage",
+      "wikipedia_extract": "Fünf letzte Tage is a West German film about the last days in 1943 of Sophie Scholl. Scholl was a member of the anti-war group Weiße Rose. She was executed for her non-violent activities by the National Socialist regime during the Second World War. The film was directed by Percy Adlon, who also wrote the script. Eleonore Adlon was the producer, and Horst Lermer the cinematographer. The music was taken from Franz Schubert. It was released on 16 October 1982, and was first shown on public television on 20 February 1983. The film received national and international awards for actors and direction.",
+      "pageviews_yearly": 4003
+    },
+    {
+      "qid": "Q78526864",
+      "title": "Gretchen am Spinnrade = Gretchen wrth y droëll nyddu"
+    },
+    {
+      "qid": "Q134350027",
+      "title": "Group 16 Intermediate Division T. C. L. Exams",
+      "movements": [
+        {
+          "qid": "Q134350015"
+        },
+        {
+          "qid": "Q134349998"
+        }
+      ]
+    },
+    {
+      "qid": "Q110553262",
+      "title": "Gute Nacht",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Gute_Nacht.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q5636911",
+      "title": "Habla, mudita",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Habla%2C_mudita",
+      "wikipedia_extract": "Habla, mudita is a 1973 Spanish drama film directed by Manuel Gutiérrez Aragón. It was entered into the 23rd Berlin International Film Festival. It was also selected as the Spanish entry for the Best Foreign Language Film at the 46th Academy Awards, but was not accepted as a nominee.",
+      "pageviews_yearly": 2648
+    },
+    {
+      "qid": "Q700157",
+      "title": "Heidenröslein",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp630"
+    },
+    {
+      "qid": "Q2254393",
+      "title": "Human Resources",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Human_Resources_(1999_film)",
+      "wikipedia_extract": "Human Resources is a 1999 French-British comedy drama film directed by Laurent Cantet. As the title implies, the subject of the film is the workplace and the personal difficulties that result from conflicts among management and labour, corporations and individuals. It stars Jalil Lespert. Most of the other actors are non-professionals. It won the César Award for Best First Feature Film and the César Award for Most Promising Actor at the 26th César Awards.",
+      "pageviews_yearly": 6424
+    },
+    {
+      "qid": "Q47527644",
+      "title": "Hymnus an den heiligen Geist",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp371"
+    },
+    {
+      "qid": "Q18290889",
+      "title": "I slagbjörnens spår"
+    },
+    {
+      "qid": "Q6001803",
+      "title": "Im Frühling",
+      "has_midi": true,
+      "midi_files": [
+        "midi/An_den_Fruhling.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q137361008",
+      "title": "Impromptu D 935 No. 2",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Impromptu_in_Ga_Major.mid",
+        "midi/Schubert_Impromptu_Op_142_No_2.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q4861173",
+      "title": "Impromptus",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp254",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Impromptus_(Schubert)",
+      "wikipedia_extract": "Franz Schubert's Impromptus are a series of eight pieces for solo piano composed in 1827. They were published in two sets of four impromptus each: the first two pieces in the first set were published in the composer's lifetime as Op. 90; the second set was published posthumously as Op. 142 in 1839. The third and fourth pieces in the first set were published in 1857. The two sets are now catalogued as D. 899 and D. 935 respectively. They are considered to be among the most important examples of this popular early 19th-century genre.",
+      "pageviews_yearly": 49577,
+      "movements": [
+        {
+          "qid": "Q6455950"
+        },
+        {
+          "qid": "Q6455928"
+        },
+        {
+          "qid": "Q6455891"
+        }
+      ]
+    },
+    {
+      "qid": "Q638848",
+      "title": "In the Presence of a Clown",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/In_the_Presence_of_a_Clown",
+      "wikipedia_extract": "In the Presence of a Clown is a television film by Ingmar Bergman, recorded for Swedish television in 1997 with Bergman as a director. It was screened in the Un Certain Regard section of the 1998 Cannes Film Festival. It tells the story of a professor named Carl, who has been found guilty of attempted murder and sentenced to treatment in a mental ward. In the hospital he befriends a man named Osvald, and they attempt to make and promote a film.",
+      "pageviews_yearly": 7148
+    },
+    {
+      "qid": "Q6468336",
+      "title": "Lachen und Weinen",
+      "imslp_id": "Lachen_und_Weinen,_D.777_(Schubert,_Franz)",
+      "pdf_filename": "PMLP20836-Schubert_Album_Band_1_hoch_Peters_82_Lachen_und_Weinen_filter.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp972",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lachen_und_Weinen",
+      "wikipedia_extract": "\"Lachen und Weinen\" is a Lied composed by Franz Schubert in 1822 and published in 1826. It is D. 777 in Otto Erich Deutsch's catalog. The text is from Friedrich Rückert's collection of poems, Östliche Rosen, which was highly influenced by the poetry of the Persian poet Hafis. The poem was untitled in the collection, so Schubert named it after the beginning words.",
+      "pageviews_yearly": 3445
+    },
+    {
+      "qid": "Q6507304",
+      "title": "Le Monsieur, le Vampire et Renée Marcelle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oscar_Alvarado",
+      "wikipedia_extract": "Oscar Alvarado Mendoza is a Mexican illustrator, animator and composer whose work include the comics series Penumbra and the animated short-films Sonámbulo and Murnau the Vampire.",
+      "pageviews_yearly": 544
+    },
+    {
+      "qid": "Q130221901",
+      "title": "Lilac Time"
+    },
+    {
+      "qid": "Q137524380",
+      "title": "Litanie auf das Fest Allerseelen"
+    },
+    {
+      "qid": "Q17010782",
+      "title": "Magnificat",
+      "imslp_id": "Magnificat,_D.486_(Schubert,_Franz)",
+      "pdf_filename": "PMLP40527-00._SCHUBERT_-_MAGNIFICAT_-_Conductor_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp323",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Magnificat_(Schubert)",
+      "wikipedia_extract": "The Magnificat in C major, D 486, is a musical setting of the Magnificat hymn composed by Franz Schubert in 1816. It is scored for SATB soloists, mixed choir, 2 oboes, 2 bassoons, 2 trumpets, violin I and II, viola, timpani and basso continuo.",
+      "pageviews_yearly": 1736
+    },
+    {
+      "qid": "Q866713",
+      "title": "Mass No. 2"
+    },
+    {
+      "qid": "Q1924051",
+      "title": "Mass No. 4 (Schubert)",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp298",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mass_No._4_(Schubert)",
+      "wikipedia_extract": "Mass No. 4 in C major, D 452, is a mass composed by Franz Schubert in 1816. It was originally scored for soprano, alto, tenor and bass soloists, SATB choir, violin I and II, and basso continuo. It is classified as a missa solemnis.",
+      "pageviews_yearly": 2667
+    },
+    {
+      "qid": "Q24950519",
+      "title": "May B"
+    },
+    {
+      "qid": "Q115796425",
+      "title": "Memorial Acclamation"
+    },
+    {
+      "qid": "Q114134209",
+      "title": "Mignon",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp687"
+    },
+    {
+      "qid": "Q19894333",
+      "title": "Mignon",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp687",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mignon_(Schubert)",
+      "wikipedia_extract": "Mignon, a character appearing in Johann Wolfgang von Goethe's writings such as Wilhelm Meister's Apprenticeship and Wilhelm Meister's Journeyman Years, is the subject of several Lieder by Franz Schubert.",
+      "pageviews_yearly": 5190
+    },
+    {
+      "qid": "Q1939389",
+      "title": "Mit meinen heißen Tränen",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mit_meinen_hei%C3%9Fen_Tr%C3%A4nen",
+      "wikipedia_extract": "Mit meinen heißen Tränen is a West German-Austrian-Swiss three-part television miniseries which depicts the final years of the life of 19th century Austrian composer Franz Schubert. It was released on 31 October 1986 in Germany, Austria, and The Netherlands.",
+      "pageviews_yearly": 2174
+    },
+    {
+      "qid": "Q137393510",
+      "title": "Moment musical No. 3",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp247"
+    },
+    {
+      "qid": "Q1781370",
+      "title": "Neue Schubert-Ausgabe",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/New_Schubert_Edition",
+      "wikipedia_extract": "Franz Schubert (1797–1828): New Edition of the Complete Works, commonly known as the New Schubert Edition (NSE), or, in German: Neue Schubert-Ausgabe (NSA), is a complete edition of Franz Schubert's works, which started in 1956 and is scheduled to conclude in 2027. The projected number of volumes of the publication, which includes score editions, critical reports and supplements, is 177, of which, as of 2020, 150 have been realised.",
+      "pageviews_yearly": 4320
+    },
+    {
+      "qid": "Q3549661",
+      "title": "Night on Bald Mountain/Ave Maria",
+      "movements": [
+        {
+          "qid": "Q28109081"
+        },
+        {
+          "qid": "Q28109084"
+        }
+      ]
+    },
+    {
+      "qid": "Q2058511",
+      "title": "Nocturne Indien",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nocturne_Indien",
+      "wikipedia_extract": "Nocturne indien is a 1989 French film directed by Alain Corneau, based on the novel Notturno Indiano by Italian writer Antonio Tabucchi.",
+      "pageviews_yearly": 2967
+    },
+    {
+      "qid": "Q57933992",
+      "title": "Nostalgie"
+    },
+    {
+      "qid": "Q138328579",
+      "title": "Overture from Rosamunde"
+    },
+    {
+      "qid": "Q3490124",
+      "title": "Piano Sonata in A major, D. 664",
+      "imslp_id": "Piano_Sonata_in_A_major,_D.664_(Schubert,_Franz)",
+      "pdf_filename": "Franz_Schubert_-_Piano_Sonata_in_A__D_664.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp142",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_in_A_major%2C_D_664_(Schubert)",
+      "wikipedia_extract": "The Piano Sonata in A major, D 664, Op. posth. 120, is a sonata for solo piano composed by Franz Schubert in the summer of 1819.",
+      "pageviews_yearly": 8530
+    },
+    {
+      "qid": "Q2743631",
+      "title": "Piano Sonata in A minor, D. 845",
+      "imslp_id": "Piano_Sonata_in_A_minor,_D.845_(Schubert,_Franz)",
+      "pdf_filename": "Franz_Schubert_-_Piano_Sonata_in_a__D_845.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp146",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_in_A_minor%2C_D_845_(Schubert)",
+      "wikipedia_extract": "The Piano Sonata in A minor D. 845 (Op.42) by Franz Schubert is a sonata for solo piano. Composed in May 1825 and entitled Premiere Grande Sonata, it is the first of three sonatas published during the composer's lifetime, the others being D.850 and D.894. Conceived as a set, these works were composed during what was reportedly a period of relatively good health and spirits for Schubert and are praised for their quality and ambition. This first sonata in particular marks a significant step toward the composer’s mature piano sonata style; the format and several characteristic stylistic elements continue through the last.",
+      "pageviews_yearly": 6160
+    },
+    {
+      "qid": "Q7190168",
+      "title": "Piano Sonata in B major, D. 575",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp138",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_in_B_major%2C_D_575_(Schubert)",
+      "wikipedia_extract": "The Piano Sonata in B major D 575 by Franz Schubert is a sonata for solo piano, posthumously published as Op. 147 and given a dedication to Sigismond Thalberg by its publishers. Schubert composed the sonata in August 1817.",
+      "pageviews_yearly": 2978
+    },
+    {
+      "qid": "Q3490127",
+      "title": "Piano Sonata in C major, D. 840",
+      "imslp_id": "Piano_Sonata_in_C_major,_D.840_(Schubert,_Franz)",
+      "pdf_filename": "PMLP21675-PMLUS01301-Schubert_D840_Krenek.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp145",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Piano_Sonata_in_C_major%2C_D_840_(Schubert)",
+      "wikipedia_extract": "Franz Schubert's Piano Sonata in C major, D. 840, nicknamed \"Reliquie\" upon its first publication in 1861 in the mistaken belief that it had been Schubert's last work, was written in April 1825, whilst the composer was also working on the A minor sonata, D. 845 in tandem. Schubert abandoned the C major sonata, and only the first two movements were fully completed, with the trio section of the third movement also written in full. The minuet section of the third movement is incomplete and contains unusual harmonic changes, which suggests it was there Schubert had become disillusioned and abandoned the movement and later the sonata. The final fourth movement is also incomplete, ending abruptly after 272 measures.",
+      "pageviews_yearly": 4525
+    },
+    {
+      "qid": "Q3108957",
+      "title": "Piano Trio No. 1"
+    },
+    {
+      "qid": "Q1660217",
+      "title": "Piano Trio No. 2",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Schubert_Piano_Trio_in_E_Flat_Major_2nd_Movement_Piano_solo.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q7295275",
+      "title": "Rastlose Liebe",
+      "imslp_id": "Rastlose_Liebe,_D.138_(Schubert,_Franz)",
+      "pdf_filename": "PMLP36519-D_138__Rastlose_Liebe__2nd_version_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp549",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rastlose_Liebe",
+      "wikipedia_extract": "\"Rastlose Liebe\" is a Lied composed by Franz Schubert and published in July 1821 as Op. 5, No. 1. In Otto Erich Deutsch's catalog it is D138. The song, dedicated to Anton Salieri, is based on a text by Johann Wolfgang von Goethe, written during a snowstorm in the Thuringian Forest.",
+      "pageviews_yearly": 2283
+    },
+    {
+      "qid": "Q19895550",
+      "title": "Rondo in B minor for violin and piano, D 895",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rondo_in_B_minor_for_violin_and_piano%2C_D_895_(Schubert)",
+      "wikipedia_extract": "Franz Schubert's Rondo in B minor for violin and piano, D 895 was composed in 1826.",
+      "pageviews_yearly": 3228
+    },
+    {
+      "qid": "Q2166612",
+      "title": "Rosamunde",
+      "imslp_id": "Rosamunde,_D.797_(Schubert,_Franz)",
+      "pdf_filename": "PMLP06226-908__Schubert__Andantino_in_Second_Entr_act_to__Rosamunde_.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp93",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rosamunde",
+      "wikipedia_extract": "Rosamunde, Fürstin von Zypern is a play by Helmina von Chézy, which is primarily remembered for the incidental music which Franz Schubert composed for it. Music and play premiered in Vienna's Theater an der Wien on 20 December 1823.",
+      "pageviews_yearly": 18937
+    },
+    {
+      "qid": "Q115796437",
+      "title": "Sanctus",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp308"
+    },
+    {
+      "qid": "Q134350015",
+      "title": "Scherzo D 593 No. 1"
+    },
+    {
+      "qid": "Q45398725",
+      "title": "Schubert's compositions for violin and piano",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Schubert's_compositions_for_violin_and_piano",
+      "wikipedia_extract": "\nFrom March 1816 to August 1817, Franz Schubert composed four violin sonatas. All four were published after the composer's death: the first three, D 384, 385 and 408, as Sonatinas in 1836, and the last one, D 574, as Duo in 1851. Schubert composed two more pieces for violin and piano, in October 1826 and December 1827 respectively: a Rondo, D 895, which was published during the composer's lifetime (Op. 70), and a Fantasy, D 934, which was premiered in January 1828, less than a year before the composer's death.",
+      "pageviews_yearly": 5134
+    },
+    {
+      "qid": "Q1509328",
+      "title": "Schubert's last sonatas",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Schubert's_last_sonatas",
+      "wikipedia_extract": "Franz Schubert's last three piano sonatas, D 958, 959 and 960, are his last major compositions for solo piano. They were written during the last months of his life, between the spring and autumn of 1828, but were not published until about ten years after his death, in 1838–39. Like the rest of Schubert's piano sonatas, they were mostly neglected in the 19th century. By the late 20th century, however, public and critical opinion had changed, and these sonatas are now considered among the most important of the composer's mature masterpieces. They are part of the core piano repertoire, appearing regularly on concert programs and recordings.",
+      "pageviews_yearly": 51905,
+      "movements": [
+        {
+          "qid": "Q15975837"
+        },
+        {
+          "qid": "Q15975838"
+        },
+        {
+          "qid": "Q15975840"
+        }
+      ]
+    },
+    {
+      "qid": "Q18163659",
+      "title": "Schubert's sonatas and fantasies for piano",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sonatas%2C_duos_and_fantasies_by_Franz_Schubert",
+      "wikipedia_extract": "Sonatas, duos and fantasies by Franz Schubert include all works for solo piano by Franz Schubert, except separate dances. They also include a number of works for two players: piano four hands, or piano and a string instrument.",
+      "pageviews_yearly": 6070
+    },
+    {
+      "qid": "Q19891975",
+      "title": "Schubert's song cycles",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Schubert's_song_cycles",
+      "wikipedia_extract": "Franz Schubert's best known song cycles, like Die schöne Müllerin and Winterreise are based on separate poems with a common theme and narrative. Other song cycles are based on consecutive excerpts of the same literary work: Schubert's \"Ave Maria\" is part of such a song cycle based on excerpts of the same poem, in this case by Walter Scott.",
+      "pageviews_yearly": 10891
+    },
+    {
+      "qid": "Q86523550",
+      "title": "Schubert: Complete Works for Violin and Piano"
+    },
+    {
+      "qid": "Q86453223",
+      "title": "Schubert: Complete Works for Violin and Piano, Volume 1"
+    },
+    {
+      "qid": "Q86453774",
+      "title": "Schubert: Complete Works for Violin and Piano, Volume 2"
+    },
+    {
+      "qid": "Q1635249",
+      "title": "Schwanengesang",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp498",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Schwanengesang",
+      "wikipedia_extract": "Schwanengesang, D 957, is a collection of 14 songs written by Franz Schubert at the end of his life and published posthumously:Liebesbotschaft \nKriegers Ahnung (Rellstab)\nFrühlingssehnsucht (Rellstab)\nStändchen (Rellstab)\nAufenthalt (Rellstab)\nIn der Ferne (Rellstab)\nAbschied (Rellstab)\nDer Atlas \nIhr Bild (Heine)\nDas Fischermädchen (Heine)\nDie Stadt (Heine)\nAm Meer (Heine)\nDer Doppelgänger (Heine)\nDie Taubenpost ",
+      "pageviews_yearly": 35502
+    },
+    {
+      "qid": "Q11608654",
+      "title": "Schäfers Klagelied",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Schafers_Klagelied_D_121_1814.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q114436575",
+      "title": "Sehnsucht, D 481",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Sehnsucht.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q136759719",
+      "title": "Sei mir gegrüsst",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp946"
+    },
+    {
+      "qid": "Q137393201",
+      "title": "Serenade",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp498"
+    },
+    {
+      "qid": "Q1257344",
+      "title": "Six moments musicaux"
+    },
+    {
+      "qid": "Q15975840",
+      "title": "Sonata in B-flat major, D. 960",
+      "imslp_id": "Piano_Sonata_in_B-flat_major,_D.960_(Schubert,_Franz)",
+      "pdf_filename": "PMLP02039-Piano_Sonata__D._960.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp151"
+    },
+    {
+      "qid": "Q3413774",
+      "title": "String Quartet No. 15",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp95",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Quartet_No._15_(Schubert)",
+      "wikipedia_extract": "The String Quartet No. 15 in G major, D. 887, was the last quartet written by Franz Schubert in June 1826. It was posthumously published in 1851, as Op. 161. The work focuses on lyrical ideas and explores far-reaching major and minor modes, which was uncommon to this degree in his compositions. Schubert reinforced this with a range of dynamic contrast and use of texture and pizzicato. The structural form of the movements in this quartet are somewhat ambiguous due to Schubert's focus on lyricism rather than traditional harmonic structure.",
+      "pageviews_yearly": 10154
+    },
+    {
+      "qid": "Q17025627",
+      "title": "String Trios",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp110",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/String_Trios_(Schubert)",
+      "wikipedia_extract": "Franz Schubert wrote three string trios, all of them in the key of B♭ major. From the first of these, D 111A, a trio Schubert wrote in 1814, only a few measures are extant. The string trio D 471 consists of a completed first movement and an incomplete second movement, composed in 1816. The last of these trios, D 581, was completed in four movements, exists in two versions and was composed in 1817.",
+      "pageviews_yearly": 4288
+    },
+    {
+      "qid": "Q105395240",
+      "title": "String quartets by Franz Schubert",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp94"
+    },
+    {
+      "qid": "Q10757660",
+      "title": "Ständchen",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Standchen.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q30608102",
+      "title": "Ständchen, D 920",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Standchen_Serenade.mid",
+        "midi/SchubertLiszt_-_Standchen.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q163587",
+      "title": "Symphony No. 1",
+      "imslp_id": "Symphony_No.1,_D.82_(Schubert,_Franz)",
+      "pdf_filename": "PMLP32464-D82_-_1.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp42",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._1_(Schubert)",
+      "wikipedia_extract": "The Symphony No. 1 in D major, D 82, was composed by Franz Schubert in 1813, when he was just 16 years old. Despite his youth, his first symphony is an impressive piece of orchestral music for both its time and size. The first movement opens with a stately Adagio introduction, reminiscent of Joseph Haydn's 104th symphony in its format. The short Adagio sets off a lively Allegro vivace.",
+      "pageviews_yearly": 5921
+    },
+    {
+      "qid": "Q3507632",
+      "title": "Symphony No. 10",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp54",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._10_(Schubert)",
+      "wikipedia_extract": "Schubert's Symphony No. 10 in D major, D 936A, is an unfinished work that survives in a piano sketch. Written during the last weeks of the composer's short life, it was only properly identified in the 1970s. It has been orchestrated by Brian Newbould in a completion that has subsequently been performed, published and recorded.",
+      "pageviews_yearly": 7588
+    },
+    {
+      "qid": "Q210566",
+      "title": "Symphony No. 2",
+      "imslp_id": "Symphony_No.2,_D.125_(Schubert,_Franz)",
+      "pdf_filename": "PMLP32466-Schubert_-_Symphony_No2_-_Full_Score.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp43",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._2_(Schubert)",
+      "wikipedia_extract": "The Symphony No. 2 in B♭ major, D 125, is a symphony by Franz Schubert composed between 1814 and 1815. It is scored for two flutes, two oboes, two clarinets, two bassoons, two horns, two trumpets, timpani, and strings.",
+      "pageviews_yearly": 5534
+    },
+    {
+      "qid": "Q240289",
+      "title": "Symphony No. 5",
+      "imslp_id": "Symphony_No.5,_D.485_(Schubert,_Franz)",
+      "pdf_filename": "PMLP25688-Schubert_-_Symphony_No.5_in_B-flat_Major__D.485_-autograph__PL-Kj-.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp46",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._5_(Schubert)",
+      "wikipedia_extract": "Franz Schubert's Symphony No. 5 in B♭ major, D 485, was written mainly in September 1816 and completed on 3 October 1816. It was finished six months after the completion of his previous symphony.",
+      "pageviews_yearly": 13308
+    },
+    {
+      "qid": "Q16155244",
+      "title": "Symphony, D. 708a",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Schubert_-_Symphony_No_8_Mvt2_D759_Professional_production_full_score_Un.mid",
+        "midi/Schubert_-_Symphony_No8_Mvt1_D759_Professional_production_full_score_Un.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q112325012",
+      "title": "The Erl King"
+    },
+    {
+      "qid": "Q20743903",
+      "title": "The House of Three Girls",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_House_of_Three_Girls_(1918_film)",
+      "wikipedia_extract": "The House of Three Girls is a 1918 German silent film directed by Richard Oswald and starring Julius Spielmann, Wilhelm Diegelmann and Sybille Binder. It is based on the operetta Das Dreimäderlhaus. It is considered to be a lost film.",
+      "pageviews_yearly": 1482
+    },
+    {
+      "qid": "Q59275291",
+      "title": "The Little House on the Hill"
+    },
+    {
+      "qid": "Q6131406",
+      "title": "Three Marches Militaires",
+      "imslp_id": "3_Marches_militaires,_D.733_(Schubert,_Franz)",
+      "pdf_filename": "PMLP23461-00._SCHUBERT__F_-_MILITARY_MARCHES__TOBANI__-_Piano_Conductor.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp273",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Three_Marches_Militaires_(Schubert)",
+      "wikipedia_extract": "The Three Marches Militaires, Op. 51, D. 733, are pieces in march form written for piano four-hands by Franz Schubert.",
+      "pageviews_yearly": 9833,
+      "movements": [
+        {
+          "qid": "Q105700805"
+        },
+        {
+          "qid": "Q105700806"
+        },
+        {
+          "qid": "Q105700807"
+        }
+      ]
+    },
+    {
+      "qid": "Q105700805",
+      "title": "Three Marches Militaires, No. 1"
+    },
+    {
+      "qid": "Q1257118",
+      "title": "Three Men and a Cradle",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Three_Men_and_a_Cradle",
+      "wikipedia_extract": "Three Men and a Cradle is a 1985 French comedy film by Coline Serreau. The film was remade in Hollywood as Three Men and a Baby in 1987, which subsequently inspired nine adaptations in seven languages.",
+      "pageviews_yearly": 35464
+    },
+    {
+      "qid": "Q227474",
+      "title": "Too Beautiful for You",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Too_Beautiful_for_You",
+      "wikipedia_extract": "Too Beautiful for You is a 1989 French romantic comedy-drama film written and directed by Bertrand Blier. It tells the story of Bernard, a well-established BMW car dealer in the South of France, who is cheating on his beautiful wife with his ordinary-looking secretary.",
+      "pageviews_yearly": 16084
+    },
+    {
+      "qid": "Q1349941",
+      "title": "Trout Quintet",
+      "imslp_id": "Piano_Quintet_in_A_major,_D.667_(Schubert,_Franz)",
+      "pdf_filename": "PMLP10129-39087032302830score1.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp105",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Trout_Quintet",
+      "wikipedia_extract": "The Trout Quintet (Forellenquintett) is the popular name for the Piano Quintet in A major, D. 667, by Franz Schubert. The piano quintet was composed in 1819, when he was 22 years old; it was not published, however, until 1829, a year after his death.",
+      "pageviews_yearly": 40984
+    },
+    {
+      "qid": "Q78648451",
+      "title": "Ungeduld = Y diamynedd"
+    },
+    {
+      "qid": "Q129676350",
+      "title": "Valses Nobles",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Vals_nº_9_D_969.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q85813273",
+      "title": "Violin Sonatas, Op. 137",
+      "imslp_id": "3_Sonatinas,_Op.137_(Schubert,_Franz)",
+      "pdf_filename": "PMLP28744-Schubert_-_3_Sonatas_Op137__Goltermann__for_Cello_and_Piano_pno.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Violin_Sonatas%2C_Op._137_(Schubert)",
+      "wikipedia_extract": "Franz Schubert's first three violin sonatas, D 384, 385 and 408 were composed in 1816. They were published after the composer's death as Sonatinas in 1836. These sonatas breathe an intimate atmosphere, requiring relatively little virtuoso bravura from their performers.",
+      "pageviews_yearly": 5519,
+      "movements": [
+        {
+          "qid": "Q60795785"
+        },
+        {
+          "qid": "Q130304804"
+        },
+        {
+          "qid": "Q130304833"
+        }
+      ]
+    },
+    {
+      "qid": "Q732784",
+      "title": "Wanderer Fantasy",
+      "imslp_id": "Fantasie_in_C_major,_D.760_(Schubert,_Franz)",
+      "pdf_filename": "Liszt_-_S565a_Wandererfantasie_Schubert.pdf",
+      "has_pdf": true,
+      "has_mxl": false,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wanderer_Fantasy",
+      "wikipedia_extract": "The Fantasie in C major, Op. 15, popularly known as the Wanderer Fantasy, is a four-movement fantasy for solo piano composed by Franz Schubert in 1822. It is widely considered Schubert's most technically demanding composition for the piano. Schubert himself said \"the devil may play it,\" in reference to his own inability to do so properly.",
+      "pageviews_yearly": 17137
+    },
+    {
+      "qid": "Q112756683",
+      "title": "Wanderer-Fantasie",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp246"
+    },
+    {
+      "qid": "Q121327815",
+      "title": "Wandrers Nachtlied II",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Wandrers_Nachtlied_II_D_768_1822.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q12010746",
+      "title": "Winterreise",
+      "has_midi": true,
+      "midi_files": [
+        "midi/Winterreise_-_Gute_Nacht.mid"
+      ],
+      "has_mxl": true
+    },
+    {
+      "qid": "Q78527351",
+      "title": "Wohin? = I ble?"
+    },
+    {
+      "qid": "Q55638289",
+      "title": "Écossaises, D 421 (Schubert)",
+      "apple_classical_url": "https://classical.music.apple.com/us/work/franz-schubert-1797-pp171",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/%C3%89cossaises%2C_D_421_(Schubert)",
+      "wikipedia_extract": "\nFranz Schubert's Écossaises, D 421, are six short dances for solo piano:A♭ major\nF minor \nE♭ major\nA♭ major\nB major\nD major ",
+      "pageviews_yearly": 742
+    },
+    {
+      "qid": "Q131520711",
+      "title": "Önskelistan"
+    }
+  ]
+}
