@@ -51,6 +51,9 @@ private struct CompactAppLayout: View {
       Tab("Sound design", systemImage: "slider.horizontal.3") {
         PadTemplateFormView()
       }
+      Tab("Sound design 2", systemImage: "waveform.path.ecg") {
+        PADSynthFormView()
+      }
     }
     .task {
       if createDocument == nil {
@@ -82,6 +85,7 @@ enum SidebarCategory: String, CaseIterable, Identifiable {
   case create = "Create"
   case soundLibrary = "Sound Library"
   case soundDesign = "Sound Design"
+  case soundDesign2 = "Sound Design 2"
 
   var id: String { rawValue }
 
@@ -92,6 +96,7 @@ enum SidebarCategory: String, CaseIterable, Identifiable {
     case .create: "wand.and.stars"
     case .soundLibrary: "pianokeys"
     case .soundDesign: "slider.horizontal.3"
+    case .soundDesign2: "waveform.path.ecg"
     }
   }
 }
@@ -111,6 +116,9 @@ private struct RegularAppLayout: View {
       List(SidebarCategory.allCases, selection: $selectedCategory) { category in
         Label(category.rawValue, systemImage: category.systemImage)
           .tag(category)
+          .accessibilityIdentifier("sidebar-\(category.rawValue)")
+          .accessibilityLabel(category.rawValue)
+          .accessibilityAddTraits(.isButton)
       }
       .navigationTitle("Orbital")
     } detail: {
@@ -166,6 +174,8 @@ private struct RegularAppLayout: View {
       }
     case .soundDesign:
       PadTemplateFormView()
+    case .soundDesign2:
+      PADSynthFormView()
     case nil:
       ContentUnavailableView("Select a Category", systemImage: "sidebar.left", description: Text("Choose a category from the sidebar."))
     }
