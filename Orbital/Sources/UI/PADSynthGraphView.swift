@@ -8,15 +8,79 @@ import SwiftUI
 
 struct PADSynthGraphView: View {
   var engine: PADSynthEngine
+  var onEnvelopeChanged: (() -> Void)?
   @State private var touchPoints: [CGPoint] = []
   @State private var isDragging = false
-
-  private static let freqDomain: ClosedRange<Double> = 20...40_000
+  @State private var cachedImage: Image?
+  @State private var cachedVersion: Int = -1
+  @State private var chartSize: CGSize = .zero
 
   var body: some View {
+    ZStack {
+      // Cached chart image — only re-rendered when data changes
+      if let cachedImage {
+        cachedImage
+          .resizable()
+          .scaledToFit()
+      }
+
+      // Drawing overlay
+      Rectangle()
+        .fill(.clear)
+        .contentShape(Rectangle())
+        .gesture(
+          DragGesture(minimumDistance: 0)
+            .onChanged { value in
+              isDragging = true
+              touchPoints.append(value.location)
+            }
+            .onEnded { value in
+              isDragging = false
+              fitEnvelopeFromTouchPoints(size: chartSize)
+            }
+        )
+        .overlay {
+          if isDragging {
+            ForEach(touchPoints.indices, id: \.self) { idx in
+              Circle()
+                .fill(.orange)
+                .frame(width: 4, height: 4)
+                .position(touchPoints[idx])
+            }
+          }
+        }
+    }
+    .onGeometryChange(for: CGSize.self) { proxy in
+      proxy.size
+    } action: { newSize in
+      chartSize = newSize
+    }
+    .task(id: engine.displayVersion) {
+      guard engine.displayVersion != cachedVersion else { return }
+      renderChart()
+    }
+    .overlay(alignment: .topTrailing) {
+      PADSynthLegend()
+    }
+  }
+
+  @MainActor
+  private func renderChart() {
+    guard chartSize.width > 0 && chartSize.height > 0 else { return }
+    let chartView = makeChart()
+      .frame(width: chartSize.width, height: chartSize.height)
+    let renderer = ImageRenderer(content: chartView)
+    renderer.scale = 2.0
+    if let uiImage = renderer.uiImage {
+      cachedImage = Image(uiImage: uiImage)
+      cachedVersion = engine.displayVersion
+    }
+  }
+
+  @ViewBuilder
+  private func makeChart() -> some View {
     Chart {
       if engine.envelopeCoefficients != nil {
-        // Orange dashed: drawn envelope
         ForEach(engine.displayEnvelope) { point in
           LineMark(
             x: .value("Frequency", point.frequency),
@@ -26,7 +90,6 @@ struct PADSynthGraphView: View {
           .lineStyle(StrokeStyle(lineWidth: 2, dash: [6, 3]))
         }
 
-        // Green: enveloped spectrum (what will be heard)
         ForEach(engine.displayProduct) { point in
           LineMark(
             x: .value("Frequency", point.frequency),
@@ -36,7 +99,6 @@ struct PADSynthGraphView: View {
           .lineStyle(StrokeStyle(lineWidth: 1))
         }
       } else {
-        // Blue: raw PADsynth freq_amp (only when no envelope)
         ForEach(engine.displayFreqAmp) { point in
           LineMark(
             x: .value("Frequency", point.frequency),
@@ -52,7 +114,7 @@ struct PADSynthGraphView: View {
       "Envelope": Color.orange,
       "Result": Color.green
     ])
-    .chartXScale(domain: Self.freqDomain, type: .log)
+    .chartXScale(domain: 20.0...40_000.0, type: .log)
     .chartXAxis {
       AxisMarks(values: [20, 50, 200, 1000, 5000, 20_000, 40_000]) { value in
         AxisGridLine()
@@ -71,59 +133,29 @@ struct PADSynthGraphView: View {
       }
     }
     .chartLegend(.hidden)
-    .overlay(alignment: .topTrailing) {
-      PADSynthLegend()
-    }
-    .chartOverlay { proxy in
-      GeometryReader { geometry in
-        Rectangle()
-          .fill(.clear)
-          .contentShape(Rectangle())
-          .gesture(
-            DragGesture(minimumDistance: 0)
-              .onChanged { value in
-                isDragging = true
-                touchPoints.append(value.location)
-              }
-              .onEnded { _ in
-                isDragging = false
-                fitEnvelopeFromTouchPoints(proxy: proxy, geometry: geometry)
-              }
-          )
-          .overlay {
-            if isDragging {
-              ForEach(touchPoints.indices, id: \.self) { idx in
-                Circle()
-                  .fill(.orange)
-                  .frame(width: 4, height: 4)
-                  .position(touchPoints[idx])
-              }
-            }
-          }
-      }
-    }
   }
 
-  private func fitEnvelopeFromTouchPoints(proxy: ChartProxy, geometry: GeometryProxy) {
-    guard let plotFrame = proxy.plotFrame else {
-      touchPoints.removeAll()
-      return
-    }
-    let plotRect = geometry[plotFrame]
+  // MARK: - Envelope fitting
+
+  /// Maps a screen x position to a log-frequency value using the same
+  /// log scale the chart uses (20 Hz – 40 kHz).
+  private func fitEnvelopeFromTouchPoints(size: CGSize) {
     let logMin = log2(PADSynthEngine.minFreq)
     let logMax = log2(PADSynthEngine.maxFreq)
 
     let points: [(x: CoreFloat, y: CoreFloat)] = touchPoints.compactMap { point
       -> (x: CoreFloat, y: CoreFloat)? in
-      guard let freq: Double = proxy.value(atX: point.x - plotRect.minX) else { return nil }
+      // Map x to frequency via log interpolation (matching the chart's log axis)
+      let t = CoreFloat(point.x / size.width)
+      guard t >= 0 && t <= 1 else { return nil }
+      let logFreq = logMin + t * (logMax - logMin)
+      let freq = pow(2.0, logFreq)
       guard freq >= PADSynthEngine.minFreq && freq <= PADSynthEngine.maxFreq else { return nil }
 
-      let normalizedY = CoreFloat(1.0 - ((point.y - plotRect.minY) / plotRect.height))
+      let normalizedY = CoreFloat(1.0 - (point.y / size.height))
       let amplitude = max(0.0, min(1.0, normalizedY))
 
-      let logFreq = log2(freq)
-      let normalizedLogFreq = (logFreq - logMin) / (logMax - logMin) * 10.0
-
+      let normalizedLogFreq = t * 10.0
       return (x: normalizedLogFreq, y: amplitude)
     }
 
@@ -131,6 +163,7 @@ struct PADSynthGraphView: View {
 
     guard points.count >= 2 else { return }
     engine.envelopeCoefficients = PADSynthEngine.fitPolynomial(points: points, degree: 20)
+    onEnvelopeChanged?()
 
     Task {
       await engine.recomputeDisplay()

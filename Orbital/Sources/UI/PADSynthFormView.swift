@@ -20,34 +20,34 @@ struct PADSynthFormView: View {
 
   var body: some View {
     NavigationStack {
-      GeometryReader { geometry in
-        VStack(spacing: 0) {
-          Keyboard(
-            layout: .piano(pitchRange: Pitch(intValue: 48)...Pitch(intValue: 84)),
-            noteOn: { pitch, _ in
-              player.noteOn(note: UInt8(pitch.intValue), velocity: 100)
-            },
-            noteOff: { pitch in
-              player.noteOff(note: UInt8(pitch.intValue))
-            }
-          )
-          .frame(height: 120)
+      VStack(spacing: 0) {
+        Keyboard(
+          layout: .piano(pitchRange: Pitch(intValue: 48)...Pitch(intValue: 84)),
+          noteOn: { pitch, _ in
+            player.noteOn(note: UInt8(pitch.intValue), velocity: 100)
+          },
+          noteOff: { pitch in
+            player.noteOff(note: UInt8(pitch.intValue))
+          }
+        )
+        .frame(height: 120)
 
-          PADSynthGraphView(engine: engine)
-            .padding(8)
-            .background(.black.opacity(0.05))
-            .frame(height: (geometry.size.height - 120) * 0.55)
+        PADSynthGraphView(engine: engine, onEnvelopeChanged: {
+          player.invalidateCache()
+        })
+          .padding(8)
+          .background(.black.opacity(0.05))
+          .frame(minHeight: 200, maxHeight: .infinity)
 
-          PADSynthControlsView(
-            engine: engine,
-            onParameterChange: { scheduleRecompute() },
-            onClearEnvelope: {
-              engine.envelopeCoefficients = nil
-              scheduleRecompute()
-            }
-          )
-          .frame(height: (geometry.size.height - 120) * 0.45)
-        }
+        PADSynthControlsView(
+          engine: engine,
+          onParameterChange: { scheduleRecompute() },
+          onClearEnvelope: {
+            engine.envelopeCoefficients = nil
+            scheduleRecompute()
+          }
+        )
+        .frame(minHeight: 250, maxHeight: .infinity)
       }
       .navigationTitle("Sound Design 2")
       .task {
@@ -96,6 +96,11 @@ struct PADSynthFormView: View {
   }
 
   private func scheduleRecompute() {
+    // Invalidate wavetable cache immediately so stale sounds are never played.
+    // The fallback in noteOn generates on-the-fly with current parameters.
+    player.invalidateCache()
+
+    // Debounce the display update (expensive)
     recomputeTask?.cancel()
     recomputeTask = Task {
       try? await Task.sleep(for: .milliseconds(200))

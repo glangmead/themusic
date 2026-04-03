@@ -7,18 +7,79 @@ import AVFAudio
 import Foundation
 
 /// Plays PADsynth wavetables for individual notes via noteOn/noteOff.
-/// Each active note gets its own AVAudioPlayerNode with a looping wavetable
-/// generated at the note's fundamental frequency.
+/// Wavetables for the visible keyboard range are pre-generated and cached.
+/// Call `invalidateCache()` when engine parameters change.
 @MainActor @Observable
 final class PADSynthPlayer {
   private var audioEngine: AVAudioEngine?
   private var format: AVAudioFormat?
-  // Maps MIDI note number to its player node
   private var activeNotes: [UInt8: AVAudioPlayerNode] = [:]
   private var synthEngine: PADSynthEngine?
 
+  // Wavetable cache: MIDI note number -> pre-generated stereo buffer
+  private var cachedBuffers: [UInt8: AVAudioPCMBuffer] = [:]
+  private var cacheTask: Task<Void, Never>?
+  var isCaching = false
+
+  // Keyboard range (C3=48 to C6=84)
+  static let keyboardLow: UInt8 = 48
+  static let keyboardHigh: UInt8 = 84
+
   func configure(engine: PADSynthEngine) {
     synthEngine = engine
+    invalidateCache()
+  }
+
+  /// Invalidate all cached wavetables and regenerate on a background thread.
+  func invalidateCache() {
+    cacheTask?.cancel()
+    cachedBuffers.removeAll()
+    guard let synthEngine else { return }
+
+    isCaching = true
+    let params = synthEngine.currentParams()
+
+    cacheTask = Task {
+      // Generate all wavetables off the main thread
+      let tables = await Task.detached(priority: .userInitiated) {
+        var result: [UInt8: [CoreFloat]] = [:]
+        for note in Self.keyboardLow...Self.keyboardHigh {
+          if Task.isCancelled { return result }
+          let freq = 440.0 * pow(2.0, (CoreFloat(note) - 69.0) / 12.0)
+          let wavetable = PADSynthEngine.generateWavetableStatic(fundamentalHz: freq, params: params)
+          result[note] = wavetable
+        }
+        return result
+      }.value
+
+      guard !Task.isCancelled else { return }
+
+      // Build AVAudioPCMBuffers on MainActor
+      guard ensureAudioEngine(), let format else {
+        isCaching = false
+        return
+      }
+      let n = PADSynthEngine.wavetableSize
+
+      for (note, wavetable) in tables {
+        guard !Task.isCancelled else { break }
+        guard let buffer = AVAudioPCMBuffer(
+          pcmFormat: format, frameCapacity: UInt32(n)
+        ) else { continue }
+        buffer.frameLength = UInt32(n)
+        guard let left = buffer.floatChannelData?[0],
+              let right = buffer.floatChannelData?[1] else { continue }
+        let randomStart = Int.random(in: 0..<n)
+
+        for i in 0..<n {
+          left[i] = Float(wavetable[(randomStart + i) % n])
+          right[i] = Float(wavetable[(randomStart + n / 2 + i) % n])
+        }
+        cachedBuffers[note] = buffer
+      }
+
+      isCaching = false
+    }
   }
 
   private func ensureAudioEngine() -> Bool {
@@ -42,8 +103,6 @@ final class PADSynthPlayer {
     return true
   }
 
-  /// Starts the engine if not already running. Must be called after at least one
-  /// node has been attached and connected.
   private func startEngineIfNeeded() {
     guard let audioEngine, !audioEngine.isRunning else { return }
     do {
@@ -58,43 +117,47 @@ final class PADSynthPlayer {
       noteOff(note: note)
       return
     }
-    guard let synthEngine else { return }
 
-    // Stop any existing note at this pitch
     noteOff(note: note)
 
     guard ensureAudioEngine(),
           let audioEngine,
           let format else { return }
 
-    // Generate wavetable at this note's frequency
-    let freq = 440.0 * pow(2.0, (CoreFloat(note) - 69.0) / 12.0)
-    let wavetable = synthEngine.generateWavetable(fundamentalHz: freq)
-    let n = PADSynthEngine.wavetableSize
+    // Use cached buffer if available, otherwise generate on the fly
+    let buffer: AVAudioPCMBuffer
+    if let cached = cachedBuffers[note] {
+      buffer = cached
+    } else {
+      guard let synthEngine else { return }
+      let freq = 440.0 * pow(2.0, (CoreFloat(note) - 69.0) / 12.0)
+      let wavetable = synthEngine.generateWavetable(fundamentalHz: freq)
+      let n = PADSynthEngine.wavetableSize
+
+      guard let buf = AVAudioPCMBuffer(
+        pcmFormat: format, frameCapacity: UInt32(n)
+      ) else { return }
+      buf.frameLength = UInt32(n)
+      guard let left = buf.floatChannelData?[0],
+            let right = buf.floatChannelData?[1] else { return }
+      let randomStart = Int.random(in: 0..<n)
+
+      for i in 0..<n {
+        left[i] = Float(wavetable[(randomStart + i) % n])
+        right[i] = Float(wavetable[(randomStart + n / 2 + i) % n])
+      }
+      buffer = buf
+    }
 
     let player = AVAudioPlayerNode()
     audioEngine.attach(player)
     audioEngine.connect(player, to: audioEngine.mainMixerNode, format: format)
-
-    // Engine can only start after nodes are connected
     startEngineIfNeeded()
 
-    guard let buffer = AVAudioPCMBuffer(
-      pcmFormat: format, frameCapacity: UInt32(n)
-    ) else { return }
-    buffer.frameLength = UInt32(n)
-    guard let leftChannel = buffer.floatChannelData?[0],
-          let rightChannel = buffer.floatChannelData?[1] else { return }
-    let randomStart = Int.random(in: 0..<n)
-
     let velScale = Float(velocity) / 127.0
-    for i in 0..<n {
-      leftChannel[i] = Float(wavetable[(randomStart + i) % n]) * velScale
-      rightChannel[i] = Float(wavetable[(randomStart + n / 2 + i) % n]) * velScale
-    }
+    player.volume = velScale
 
-    let capturedBuffer = buffer
-    Task.detached { await player.scheduleBuffer(capturedBuffer, at: nil, options: .loops) }
+    Task.detached { await player.scheduleBuffer(buffer, at: nil, options: .loops) }
     player.play()
 
     activeNotes[note] = player
