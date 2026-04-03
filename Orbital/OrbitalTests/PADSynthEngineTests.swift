@@ -280,4 +280,89 @@ struct PADSynthEngineTests {
     #expect(peak > 0.9 && peak <= 1.0,
             "Wavetable should be normalized to ~1.0, got peak \(peak)")
   }
+
+  // MARK: - SHARC integration
+
+  @Test("SHARC harmonics override base shape in freq_amp")
+  func sharcHarmonicsOverrideBaseShape() {
+    let fundamentalHz: CoreFloat = 440.0
+    let n = PADSynthEngine.wavetableSize
+    let sr = PADSynthEngine.sampleRate
+
+    // SHARC-like spectrum: harmonic 2 is strongest (like oboe)
+    let sharcAmps: [CoreFloat] = [0.27, 1.0, 0.50, 0.50, 0.09]
+    let params = PADSynthEngine.ParamSnapshot(
+      baseShape: .oneOverN, tilt: 0, bandwidthCents: 25, bwScale: 1,
+      profileShape: .gaussian, stretch: 1, envelopeCoefficients: nil,
+      sharcHarmonics: sharcAmps
+    )
+
+    let freqAmp = PADSynthEngine.generateFreqAmpStatic(
+      fundamentalHz: fundamentalHz, params: params
+    )
+
+    let bin1 = Int(round(fundamentalHz / sr * CoreFloat(n)))
+    let bin2 = Int(round(2.0 * fundamentalHz / sr * CoreFloat(n)))
+
+    // With SHARC data, harmonic 2 should be louder than harmonic 1
+    #expect(freqAmp[bin2] > freqAmp[bin1],
+            "SHARC: harmonic 2 (\(freqAmp[bin2])) should exceed harmonic 1 (\(freqAmp[bin1]))")
+  }
+
+  @Test("SHARC harmonics with tilt still applies tilt modifier")
+  func sharcWithTilt() {
+    let fundamentalHz: CoreFloat = 440.0
+    let n = PADSynthEngine.wavetableSize
+    let sr = PADSynthEngine.sampleRate
+
+    let sharcAmps: [CoreFloat] = [1.0, 1.0, 1.0, 1.0, 1.0]
+
+    let neutralParams = PADSynthEngine.ParamSnapshot(
+      baseShape: .equal, tilt: 0, bandwidthCents: 25, bwScale: 1,
+      profileShape: .gaussian, stretch: 1, envelopeCoefficients: nil,
+      sharcHarmonics: sharcAmps
+    )
+    let brightParams = PADSynthEngine.ParamSnapshot(
+      baseShape: .equal, tilt: 1.5, bandwidthCents: 25, bwScale: 1,
+      profileShape: .gaussian, stretch: 1, envelopeCoefficients: nil,
+      sharcHarmonics: sharcAmps
+    )
+
+    let neutralAmp = PADSynthEngine.generateFreqAmpStatic(
+      fundamentalHz: fundamentalHz, params: neutralParams
+    )
+    let brightAmp = PADSynthEngine.generateFreqAmpStatic(
+      fundamentalHz: fundamentalHz, params: brightParams
+    )
+
+    let bin1 = Int(round(fundamentalHz / sr * CoreFloat(n)))
+    let bin5 = Int(round(5.0 * fundamentalHz / sr * CoreFloat(n)))
+
+    let neutralRatio = neutralAmp[bin5] / neutralAmp[bin1]
+    let brightRatio = brightAmp[bin5] / brightAmp[bin1]
+    #expect(brightRatio > neutralRatio,
+            "Positive tilt should brighten SHARC spectrum too")
+  }
+
+  @Test("Nil SHARC harmonics falls back to base shape")
+  func nilSharcFallsBackToBaseShape() {
+    let fundamentalHz: CoreFloat = 440.0
+
+    let params = PADSynthEngine.ParamSnapshot(
+      baseShape: .oneOverN, tilt: 0, bandwidthCents: 25, bwScale: 1,
+      profileShape: .gaussian, stretch: 1, envelopeCoefficients: nil,
+      sharcHarmonics: nil
+    )
+
+    let freqAmp = PADSynthEngine.generateFreqAmpStatic(
+      fundamentalHz: fundamentalHz, params: params
+    )
+
+    let n = PADSynthEngine.wavetableSize
+    let sr = PADSynthEngine.sampleRate
+    let bin1 = Int(round(fundamentalHz / sr * CoreFloat(n)))
+    let bin3 = Int(round(3.0 * fundamentalHz / sr * CoreFloat(n)))
+    #expect(freqAmp[bin1] > freqAmp[bin3],
+            "Without SHARC, 1/n base shape should make harmonic 1 louder than 3")
+  }
 }

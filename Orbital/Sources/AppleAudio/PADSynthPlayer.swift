@@ -37,7 +37,8 @@ final class PADSynthPlayer {
     guard let synthEngine else { return }
 
     isCaching = true
-    let params = synthEngine.currentParams()
+    let baseParams = synthEngine.currentParams()
+    let selectedInstrument = synthEngine.selectedInstrument
 
     cacheTask = Task {
       // Generate all wavetables off the main thread
@@ -46,7 +47,19 @@ final class PADSynthPlayer {
         for note in Self.keyboardLow...Self.keyboardHigh {
           if Task.isCancelled { return result }
           let freq = 440.0 * pow(2.0, (CoreFloat(note) - 69.0) / 12.0)
-          let wavetable = PADSynthEngine.generateWavetableStatic(fundamentalHz: freq, params: params)
+          let sharcHarmonics = PADSynthEngine.resolveSharcHarmonics(
+            instrumentId: selectedInstrument, midiNote: note
+          )
+          let noteParams = PADSynthEngine.ParamSnapshot(
+            baseShape: baseParams.baseShape, tilt: baseParams.tilt,
+            bandwidthCents: baseParams.bandwidthCents, bwScale: baseParams.bwScale,
+            profileShape: baseParams.profileShape, stretch: baseParams.stretch,
+            envelopeCoefficients: baseParams.envelopeCoefficients,
+            sharcHarmonics: sharcHarmonics
+          )
+          let wavetable = PADSynthEngine.generateWavetableStatic(
+            fundamentalHz: freq, params: noteParams
+          )
           result[note] = wavetable
         }
         return result
@@ -131,7 +144,10 @@ final class PADSynthPlayer {
     } else {
       guard let synthEngine else { return }
       let freq = 440.0 * pow(2.0, (CoreFloat(note) - 69.0) / 12.0)
-      let wavetable = synthEngine.generateWavetable(fundamentalHz: freq)
+      let noteParams = synthEngine.paramsForNote(midiNote: note)
+      let wavetable = PADSynthEngine.generateWavetableStatic(
+        fundamentalHz: freq, params: noteParams
+      )
       let n = PADSynthEngine.wavetableSize
 
       guard let buf = AVAudioPCMBuffer(

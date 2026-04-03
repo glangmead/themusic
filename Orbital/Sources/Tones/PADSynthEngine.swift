@@ -71,6 +71,9 @@ final class PADSynthEngine {
   var overtonePreset: PADOvertonePreset = .harmonic
   var stretch: CoreFloat = 1.0
 
+  // SHARC instrument selection (nil = use baseShape formulas)
+  var selectedInstrument: String?
+
   // Envelope (polynomial coefficients in log-frequency space)
   var envelopeCoefficients: [CoreFloat]?
 
@@ -123,11 +126,16 @@ final class PADSynthEngine {
 
   /// Runs the PADsynth extended algorithm, returning the freq_amp array (N/2 entries).
   /// Does not apply the user-drawn envelope.
-  func generateFreqAmp(fundamentalHz: CoreFloat) -> [CoreFloat] {
+  func generateFreqAmp(
+    fundamentalHz: CoreFloat, sharcHarmonics: [CoreFloat]? = nil
+  ) -> [CoreFloat] {
     let n = Self.wavetableSize
     let halfN = n / 2
     let sr = Self.sampleRate
-    let maxHarmonic = Int(sr / fundamentalHz)
+    var maxHarmonic = Int(sr / fundamentalHz)
+    if let sharc = sharcHarmonics {
+      maxHarmonic = min(maxHarmonic, sharc.count)
+    }
     var freqAmp = [CoreFloat](repeating: 0, count: halfN)
 
     for nh in 1...maxHarmonic {
@@ -135,7 +143,13 @@ final class PADSynthEngine {
       let harmonicFreq = fundamentalHz * relF
       guard harmonicFreq < sr / 2.0 else { break }
 
-      let a = baseShape.amplitude(harmonic: nh) * pow(CoreFloat(nh), tilt)
+      let baseAmp: CoreFloat
+      if let sharc = sharcHarmonics, nh <= sharc.count {
+        baseAmp = sharc[nh - 1]
+      } else {
+        baseAmp = baseShape.amplitude(harmonic: nh)
+      }
+      let a = baseAmp * pow(CoreFloat(nh), tilt)
       guard a > 1e-12 else { continue }
 
       let bwHz = (pow(2.0, bandwidthCents / 1200.0) - 1.0) * fundamentalHz * pow(relF, bwScale)
@@ -405,6 +419,7 @@ final class PADSynthEngine {
     let profileShape: PADProfileShape
     let stretch: CoreFloat
     let envelopeCoefficients: [CoreFloat]?
+    let sharcHarmonics: [CoreFloat]?
   }
 
   /// Creates a snapshot of current parameters for off-main-thread use.
@@ -412,8 +427,37 @@ final class PADSynthEngine {
     ParamSnapshot(
       baseShape: baseShape, tilt: tilt, bandwidthCents: bandwidthCents,
       bwScale: bwScale, profileShape: profileShape, stretch: stretch,
-      envelopeCoefficients: envelopeCoefficients
+      envelopeCoefficients: envelopeCoefficients,
+      sharcHarmonics: nil
     )
+  }
+
+  /// Creates a ParamSnapshot with SHARC harmonics resolved for a specific MIDI note.
+  func paramsForNote(midiNote: UInt8) -> ParamSnapshot {
+    let harmonics: [CoreFloat]?
+    if let instId = selectedInstrument,
+       let inst = SharcDatabase.shared.instrument(id: instId) {
+      harmonics = inst.harmonicsForMidiNote(Int(midiNote))
+    } else {
+      harmonics = nil
+    }
+    return ParamSnapshot(
+      baseShape: baseShape, tilt: tilt, bandwidthCents: bandwidthCents,
+      bwScale: bwScale, profileShape: profileShape, stretch: stretch,
+      envelopeCoefficients: envelopeCoefficients,
+      sharcHarmonics: harmonics
+    )
+  }
+
+  /// Resolves SHARC harmonics for a MIDI note. Thread-safe, no actor isolation.
+  nonisolated static func resolveSharcHarmonics(
+    instrumentId: String?, midiNote: UInt8
+  ) -> [CoreFloat]? {
+    guard let instId = instrumentId,
+          let inst = SharcDatabase.shared.instrument(id: instId) else {
+      return nil
+    }
+    return inst.harmonicsForMidiNote(Int(midiNote))
   }
 
   /// Generates a wavetable from a parameter snapshot. Thread-safe, no actor isolation.
@@ -428,7 +472,8 @@ final class PADSynthEngine {
       let flatParams = ParamSnapshot(
         baseShape: .equal, tilt: 0, bandwidthCents: params.bandwidthCents,
         bwScale: params.bwScale, profileShape: params.profileShape,
-        stretch: params.stretch, envelopeCoefficients: nil
+        stretch: params.stretch, envelopeCoefficients: nil,
+        sharcHarmonics: params.sharcHarmonics
       )
       let flatFreqAmp = generateFreqAmpStatic(fundamentalHz: fundamentalHz, params: flatParams)
       let peak = flatFreqAmp.max() ?? 1.0
@@ -503,7 +548,20 @@ final class PADSynthEngine {
   /// Recomputes all display data. Call after parameter changes.
   /// Heavy computation runs off the main thread; only the final assignment is on MainActor.
   func recomputeDisplay() async {
-    let params = currentParams()
+    // Resolve SHARC harmonics for C4 (MIDI 60), the display fundamental
+    let sharcHarmonics: [CoreFloat]?
+    if let instId = selectedInstrument,
+       let inst = SharcDatabase.shared.instrument(id: instId) {
+      sharcHarmonics = inst.harmonicsForMidiNote(60)
+    } else {
+      sharcHarmonics = nil
+    }
+    let params = ParamSnapshot(
+      baseShape: baseShape, tilt: tilt, bandwidthCents: bandwidthCents,
+      bwScale: bwScale, profileShape: profileShape, stretch: stretch,
+      envelopeCoefficients: envelopeCoefficients,
+      sharcHarmonics: sharcHarmonics
+    )
 
     let result = await Task.detached(priority: .userInitiated) {
       Self.computeDisplay(params: params)
@@ -562,13 +620,16 @@ final class PADSynthEngine {
     }
   }
 
-  private nonisolated static func generateFreqAmpStatic(
+  nonisolated static func generateFreqAmpStatic(
     fundamentalHz: CoreFloat, params: ParamSnapshot
   ) -> [CoreFloat] {
     let n = wavetableSize
     let halfN = n / 2
     let sr = sampleRate
-    let maxHarmonic = Int(sr / fundamentalHz)
+    var maxHarmonic = Int(sr / fundamentalHz)
+    if let sharc = params.sharcHarmonics {
+      maxHarmonic = min(maxHarmonic, sharc.count)
+    }
     var freqAmp = [CoreFloat](repeating: 0, count: halfN)
 
     for nh in 1...maxHarmonic {
@@ -576,7 +637,13 @@ final class PADSynthEngine {
       let harmonicFreq = fundamentalHz * relF
       guard harmonicFreq < sr / 2.0 else { break }
 
-      let a = params.baseShape.amplitude(harmonic: nh) * pow(CoreFloat(nh), params.tilt)
+      let baseAmp: CoreFloat
+      if let sharc = params.sharcHarmonics, nh <= sharc.count {
+        baseAmp = sharc[nh - 1]
+      } else {
+        baseAmp = params.baseShape.amplitude(harmonic: nh)
+      }
+      let a = baseAmp * pow(CoreFloat(nh), params.tilt)
       guard a > 1e-12 else { continue }
 
       let bwHz = (pow(2.0, params.bandwidthCents / 1200.0) - 1.0) * fundamentalHz * pow(relF, params.bwScale)
@@ -611,11 +678,11 @@ final class PADSynthEngine {
     }
 
     // Generate flat spectrum
-    var flatParams = params
-    flatParams = ParamSnapshot(
+    let flatParams = ParamSnapshot(
       baseShape: .equal, tilt: 0, bandwidthCents: params.bandwidthCents,
       bwScale: params.bwScale, profileShape: params.profileShape,
-      stretch: params.stretch, envelopeCoefficients: nil
+      stretch: params.stretch, envelopeCoefficients: nil,
+      sharcHarmonics: params.sharcHarmonics
     )
     let flatFreqAmp = rawGenerator(fundamentalHz, flatParams)
 

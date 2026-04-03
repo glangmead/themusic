@@ -128,13 +128,25 @@ private struct PADSynthControlsView: View {
         .disabled(engine.envelopeCoefficients == nil)
       }
 
-      Section("Harmonics") {
-        Picker("Base shape", selection: $engine.baseShape) {
-          ForEach(PADBaseShape.allCases) { shape in
-            Text(shape.rawValue).tag(shape)
+      Section("Instrument") {
+        Picker("Timbre source", selection: $engine.selectedInstrument) {
+          Text("Custom").tag(String?.none)
+          ForEach(SharcDatabase.shared.instruments) { inst in
+            Text(inst.displayName).tag(Optional(inst.id))
           }
         }
-        .onChange(of: engine.baseShape) { onParameterChange() }
+        .onChange(of: engine.selectedInstrument) { onParameterChange() }
+      }
+
+      Section("Harmonics") {
+        if engine.selectedInstrument == nil {
+          Picker("Base shape", selection: $engine.baseShape) {
+            ForEach(PADBaseShape.allCases) { shape in
+              Text(shape.rawValue).tag(shape)
+            }
+          }
+          .onChange(of: engine.baseShape) { onParameterChange() }
+        }
 
         LabeledSlider(value: $engine.tilt, label: "Tilt", range: -2.0...2.0, step: 0.1)
           .onChange(of: engine.tilt) { onParameterChange() }

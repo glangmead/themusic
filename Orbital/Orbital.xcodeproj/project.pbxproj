@@ -13,6 +13,7 @@
 		4C67B2F7BC310C51258236AC /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = E12962ED1AFB9E4DEC6A6B08 /* ArgumentParser */; };
 		53ECDA2AEDC130FD19C2B5C6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FAAA31B3A4333E0DB8DCE40 /* Cocoa.framework */; };
 		5DCAB2DD59043BFE15106A7C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DD6800366650ECCC9F3933 /* main.swift */; };
+		75CE5C4AE2E97DEC4786B61D /* sharc_instruments.json in Resources */ = {isa = PBXBuildFile; fileRef = 883C8244A11D6BCC1626DE29 /* sharc_instruments.json */; };
 		782D27A02208C62B5D6EE43B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F02BA295029F9F3FE1846C40 /* Foundation.framework */; };
 		86D351107B76A61A677232A3 /* Overture in Frameworks */ = {isa = PBXBuildFile; productRef = 54A489589A5B0332439EEB84 /* Overture */; };
 		9B00F9D92F42402E0008058E /* AGENTS.md in Resources */ = {isa = PBXBuildFile; fileRef = 9B00F9D82F42402E0008058E /* AGENTS.md */; };
@@ -57,6 +58,7 @@
 		355937DF421092FF815B50F7 /* OrbitalCLITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrbitalCLITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FAAA31B3A4333E0DB8DCE40 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		85DD6800366650ECCC9F3933 /* main.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		883C8244A11D6BCC1626DE29 /* sharc_instruments.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sharc_instruments.json; sourceTree = "<group>"; };
 		9B00F9D82F42402E0008058E /* AGENTS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = AGENTS.md; path = ../AGENTS.md; sourceTree = SOURCE_ROOT; };
 		9B0327712F46678900E12D2C /* Orbital-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Orbital-Info.plist"; sourceTree = "<group>"; };
 		9B1F016F2EB95F0A00C5110F /* Note.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = Note.icon; sourceTree = "<group>"; };
@@ -238,6 +240,7 @@
 				9BF85B182F5B19D90020D781 /* samples */,
 				9BF85C222F5B19EB0020D781 /* catalog */,
 				9BF870A62F5B1A020020D781 /* catalog_playback */,
+				883C8244A11D6BCC1626DE29 /* sharc_instruments.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75CE5C4AE2E97DEC4786B61D /* sharc_instruments.json in Resources */,
 				9BF870A72F5B1A060020D781 /* catalog_playback in Resources */,
 				9BF85C232F5B19F30020D781 /* catalog in Resources */,
 				9BF85B192F5B19DD0020D781 /* samples in Resources */,
