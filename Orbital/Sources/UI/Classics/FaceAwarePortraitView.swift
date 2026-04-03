@@ -14,7 +14,7 @@ import Vision
 
 /// Caches downloaded images and their face-center Y fraction so each URL
 /// is only fetched and analysed once across the lifetime of the app.
-private final class PortraitImageCache: Sendable {
+private final class PortraitImageCache: @unchecked Sendable {
   static let shared = PortraitImageCache()
 
   struct Entry: Sendable {
@@ -90,34 +90,37 @@ struct FaceAwarePortraitView: View {
     }
 
     // Detach the download so SwiftUI task cancellation doesn't abort it
-    guard let entry = await Task.detached(priority: .userInitiated) { [url] () -> PortraitImageCache.Entry? in
-      let data: Data
-      do {
-        let (d, response) = try await URLSession.shared.data(from: url)
-        if let http = response as? HTTPURLResponse, http.statusCode != 200 {
-          print("[Portrait] HTTP \(http.statusCode) for \(url.absoluteString)")
+    guard let entry = await Task.detached(
+      priority: .userInitiated,
+      operation: { [url] () -> PortraitImageCache.Entry? in
+        let data: Data
+        do {
+          let (d, response) = try await URLSession.shared.data(from: url)
+          if let http = response as? HTTPURLResponse, http.statusCode != 200 {
+            print("[Portrait] HTTP \(http.statusCode) for \(url.absoluteString)")
+            return nil
+          }
+          data = d
+        } catch {
+          print("[Portrait] Network error for \(url.absoluteString): \(error.localizedDescription)")
           return nil
         }
-        data = d
-      } catch {
-        print("[Portrait] Network error for \(url.absoluteString): \(error.localizedDescription)")
-        return nil
+        guard let image = UIImage(data: data) else {
+          print("[Portrait] Could not decode image (\(data.count) bytes) from \(url.absoluteString)")
+          return nil
+        }
+        let faceY = FaceAwarePortraitView.detectFaceCenterYSync(in: image)
+        let entry = PortraitImageCache.Entry(image: image, faceFractionY: faceY)
+        PortraitImageCache.shared.set(entry, for: url)
+        return entry
       }
-      guard let image = UIImage(data: data) else {
-        print("[Portrait] Could not decode image (\(data.count) bytes) from \(url.absoluteString)")
-        return nil
-      }
-      let faceY = Self.detectFaceCenterYSync(in: image)
-      let entry = PortraitImageCache.Entry(image: image, faceFractionY: faceY)
-      PortraitImageCache.shared.set(entry, for: url)
-      return entry
-    }.value else { return }
+    ).value else { return }
 
     uiImage = entry.image
     faceFractionY = entry.faceFractionY
   }
 
-  private static func detectFaceCenterYSync(in image: UIImage) -> CGFloat? {
+  private nonisolated static func detectFaceCenterYSync(in image: UIImage) -> CGFloat? {
     guard let cgImage = image.cgImage else { return nil }
     let request = VNDetectFaceRectanglesRequest()
     let handler = VNImageRequestHandler(cgImage: cgImage, options: [:])
@@ -125,8 +128,6 @@ struct FaceAwarePortraitView: View {
     guard let face = request.results?.first else { return nil }
     return CGFloat(1.0 - face.boundingBox.midY)
   }
-
-
 }
 
 #Preview {

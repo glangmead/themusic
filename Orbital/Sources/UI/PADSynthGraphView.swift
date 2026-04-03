@@ -34,7 +34,7 @@ struct PADSynthGraphView: View {
               isDragging = true
               touchPoints.append(value.location)
             }
-            .onEnded { value in
+            .onEnded { _ in
               isDragging = false
               fitEnvelopeFromTouchPoints(size: chartSize)
             }

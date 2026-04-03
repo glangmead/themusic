@@ -22,8 +22,8 @@ final class PADSynthPlayer {
   var isCaching = false
 
   // Keyboard range (C3=48 to C6=84)
-  static let keyboardLow: UInt8 = 48
-  static let keyboardHigh: UInt8 = 84
+  nonisolated static let keyboardLow: UInt8 = 48
+  nonisolated static let keyboardHigh: UInt8 = 84
 
   func configure(engine: PADSynthEngine) {
     synthEngine = engine
@@ -173,7 +173,7 @@ final class PADSynthPlayer {
     let velScale = Float(velocity) / 127.0
     player.volume = velScale
 
-    Task.detached { await player.scheduleBuffer(buffer, at: nil, options: .loops) }
+    player.scheduleBuffer(buffer, at: nil, options: .loops)
     player.play()
 
     activeNotes[note] = player

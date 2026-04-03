@@ -206,7 +206,7 @@ private func gmPadProfile(for program: Int?) -> GMPadProfile {
 
 private extension GMPadProfile {
   // Slower attack = higher smooth value (smooth drives lerp(0.5, 8.0, smooth) for ampAttack)
-  // swiftlint:disable line_length
+  // swiftlint:disable line_length comma
   static let `default` = GMPadProfile(shapes: [.sine, .triangle, .sawtooth, .square], wavetableNames: ["fm_bell", "fm_electric", "fm_metallic", "fm_shallow", "fm_deep", "bright", "warm", "organ", "hollow"], smoothRange: 0.2...0.8,  filterCutoffRange: 60...140,  gritRange: 0.0...0.2,  vibratoWeight: 0.4)
   static let piano     = GMPadProfile(shapes: [.triangle, .square],                   wavetableNames: ["fm_electric", "fm_shallow", "bright", "warm"],                                                         smoothRange: 0.15...0.45, filterCutoffRange: 80...200,  gritRange: 0.0...0.15, vibratoWeight: 0.1)
   static let chromPerc = GMPadProfile(shapes: [.sine, .triangle],                     wavetableNames: ["fm_bell", "fm_metallic", "bright"],                                                                    smoothRange: 0.2...0.5,   filterCutoffRange: 100...300, gritRange: 0.0...0.08, vibratoWeight: 0.0)
@@ -220,7 +220,7 @@ private extension GMPadProfile {
   static let pipe      = GMPadProfile(shapes: [.sine, .triangle],                     wavetableNames: ["hollow", "fm_shallow", "bright"],                                                                      smoothRange: 0.2...0.5,   filterCutoffRange: 80...200,  gritRange: 0.0...0.05, vibratoWeight: 0.3)
   static let synthLead = GMPadProfile(shapes: [.sine, .triangle, .sawtooth, .square], wavetableNames: ["fm_bell", "fm_electric", "fm_metallic", "fm_shallow", "fm_deep", "bright", "hollow"],                 smoothRange: 0.1...0.5,   filterCutoffRange: 60...200,  gritRange: 0.0...0.3,  vibratoWeight: 0.4)
   static let synthPad  = GMPadProfile(shapes: [.sine, .triangle],                     wavetableNames: ["warm", "hollow", "fm_shallow", "fm_deep", "fm_bell"],                                                 smoothRange: 0.6...1.0,   filterCutoffRange: 50...110,  gritRange: 0.0...0.05, vibratoWeight: 0.6)
-  // swiftlint:enable line_length
+  // swiftlint:enable line_length comma
 }
 
 /// Picks a random oscillator descriptor appropriate for the given profile.
