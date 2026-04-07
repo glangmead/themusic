@@ -1,0 +1,257 @@
+{
+  "works": [
+    {
+      "title": "Ach Herr, mich armen Sünder",
+      "qid": "Q126909346"
+    },
+    {
+      "title": "Mein G'müt ist mir verwirret",
+      "qid": "Q1917900"
+    },
+    {
+      "title": "Missa Secunda",
+      "qid": "Q124358304",
+      "key": "G major",
+      "instruments": [
+        "Soprano",
+        "Alto",
+        "Tenor",
+        "Bass"
+      ],
+      "year_composed": 1599
+    },
+    {
+      "title": "Passion Chorale",
+      "qid": "Q116059716"
+    },
+    {
+      "title": "Tanzen und Springen",
+      "qid": "Q21013856",
+      "instruments": [
+        "Sopran 1",
+        "Sopran 2",
+        "Alt",
+        "Tenor",
+        "Bass"
+      ],
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/hassler_tanzen_und_springen_(c)zamir.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Missa Super \"Dixit Maria\" for choir SATB ��",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=17/hassler_missa_super_dixit_maria_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ach Weh des Leiden",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/hassler_ach_weh_des_leiden_(c)zamir.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ad Dominum cum tribularer clamavi *",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=3/hassler-hl_ad_dominum_cum_tribularer_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "All Lust und Freud",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/hassler_all_lust_und_freud_(c)zamir.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Dixit Maria ��",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=17/hassler_motet_dixit_maria_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Dixit Maria",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/hassler_dixit_maria_(c)zamir.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ecce quam bonum",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/hassler_ecce_quam_bonum_(c)zamir.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ihr Musici, frisch auf",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/hassler_ihr_musici_frisch_auf_(c)zamir.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ihr Musici, frisch auf *",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=12/hassler-hl_in_musici_frisch_auf_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "In te, Domine, speravi **",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=12/hassler-hl_in_domini_speravi_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nun fanget an �",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=polish/other/lan_nunc_(c)krawczyk.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Von Himmel hoch da komm ich her",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/hassler_vom_himmel_hoch_da_komm_ich_her_(c)zamir.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cantate Domino",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/hassler_cantate_domino_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Canzon in g",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/hassler_canzon_in_g_(c)zamir.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Canzona (Gloria)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=12/hassler-hl_canzona_gloria_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Canzona (Nun Fanget an)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=12/hassler-hl_canzona_nun_fanget_an_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

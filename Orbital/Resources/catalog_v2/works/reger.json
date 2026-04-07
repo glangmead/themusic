@@ -1,0 +1,411 @@
+{
+  "works": [
+    {
+      "title": "Ein' feste Burg ist unser Gott, Op. 27",
+      "qid": "Q26869608"
+    },
+    {
+      "title": "Cello Sonata No. 2",
+      "qid": "Q65719218"
+    },
+    {
+      "title": "Abendlied",
+      "qid": "Q108554976"
+    },
+    {
+      "title": "Four Tone Poems after Arnold Böcklin",
+      "qid": "Q2816946"
+    },
+    {
+      "title": "Acht geistliche Gesänge",
+      "qid": "Q27920798"
+    },
+    {
+      "title": "Morgengesang",
+      "qid": "Q27921286"
+    },
+    {
+      "title": "Unser lieben Frauen Traum",
+      "qid": "Q2496846"
+    },
+    {
+      "title": "Variations and Fugue on a Theme by Mozart",
+      "qid": "Q3554785"
+    },
+    {
+      "title": "Clarinet Quintet in A major",
+      "qid": "Q3414597"
+    },
+    {
+      "title": "Nachtlied",
+      "qid": "Q25218072"
+    },
+    {
+      "title": "3 Suites for Solo Cello",
+      "qid": "Q2363952"
+    },
+    {
+      "title": "52 chorale preludes, Op. 67",
+      "qid": "Q28812703"
+    },
+    {
+      "title": "A Ballet Suite",
+      "qid": "Q3503238"
+    },
+    {
+      "title": "An die Hoffnung",
+      "qid": "Q21081605"
+    },
+    {
+      "title": "Cello Sonata No. 1",
+      "qid": "Q28453034"
+    },
+    {
+      "title": "Der 100. Psalm",
+      "qid": "Q21998455"
+    },
+    {
+      "title": "Der Einsiedler",
+      "qid": "Q24041492"
+    },
+    {
+      "title": "Der Mensch lebt und bestehet",
+      "qid": "Q24034669",
+      "catalog_numbers": {
+        "Op": "138"
+      },
+      "key": "A major",
+      "instruments": [
+        "Sopran I",
+        "Alt I",
+        "Tenor I",
+        "Bass I",
+        "Sopran II",
+        "Alt II",
+        "Tenor II",
+        "Bass II"
+      ],
+      "year_composed": 1914
+    },
+    {
+      "title": "Die Nonnen",
+      "qid": "Q109973458"
+    },
+    {
+      "title": "Die Weihe der Nacht",
+      "qid": "Q30639053"
+    },
+    {
+      "title": "Drei Chöre, Op. 6",
+      "qid": "Q26234440"
+    },
+    {
+      "title": "Eine romantische Suite",
+      "qid": "Q26821212"
+    },
+    {
+      "title": "Geistliche Gesänge",
+      "qid": "Q24256360"
+    },
+    {
+      "title": "Gesang der Verklärten",
+      "qid": "Q24965394"
+    },
+    {
+      "title": "Hymnus der Liebe",
+      "qid": "Q21082944"
+    },
+    {
+      "title": "Introduction, Passacaglia and Fugue",
+      "qid": "Q60555786"
+    },
+    {
+      "title": "Mariae Wiegenlied",
+      "qid": "Q10577261",
+      "key": "F major",
+      "instruments": [
+        "Voice",
+        "Piano"
+      ]
+    },
+    {
+      "title": "Max Reger – Music as perpetual state",
+      "qid": "Q19977390"
+    },
+    {
+      "title": "Phantasie und Fuge über B-A-C-H",
+      "qid": "Q30931322"
+    },
+    {
+      "title": "Piano Concerto",
+      "qid": "Q115817004"
+    },
+    {
+      "title": "Requiem",
+      "qid": "Q2145482"
+    },
+    {
+      "title": "Responsories",
+      "qid": "Q57960471"
+    },
+    {
+      "title": "Sechs Lieder, Op. 35",
+      "qid": "Q26213947"
+    },
+    {
+      "title": "Sechs Lieder, Op. 4",
+      "qid": "Q28228111"
+    },
+    {
+      "title": "Sieben Stücke, Op. 145",
+      "qid": "Q30591913"
+    },
+    {
+      "title": "String Quartet No. 3",
+      "qid": "Q3413837",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/reger_quintet_for_clarinet_and_strings_146_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "String Quartet No. 4",
+      "qid": "Q3413844"
+    },
+    {
+      "title": "Three chorale fantasias, Op. 52",
+      "qid": "Q1256954"
+    },
+    {
+      "title": "Variations and Fugue on a Theme by Hiller",
+      "qid": "Q3554783"
+    },
+    {
+      "title": "Variations and Fugue on a theme of Bach",
+      "qid": "Q14942870"
+    },
+    {
+      "title": "Violin Concerto",
+      "qid": "Q17193848"
+    },
+    {
+      "title": "Zwei Choralphantasien, Op. 40",
+      "qid": "Q26821217"
+    },
+    {
+      "title": "Zwölf Stücke, Op. 65",
+      "qid": "Q26821196"
+    },
+    {
+      "title": "Zwölf Stücke, Op. 80",
+      "qid": "Q26813699"
+    },
+    {
+      "title": "Fantasie �ber Ein feste Burg, Op. 27 (1898)",
+      "catalog_numbers": {
+        "Op": "27"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=reger/ein_feste_burg_ist_uns_er_gott_(borsari).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Introduction, Variationen [12] und Fuge �ber ein Originalthema in fa diesis, Op. 73 (1903)",
+      "catalog_numbers": {
+        "Op": "73"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=reger/73_introduktion_variationen_fuge_(c)borsari.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Three Chorales from the Op. 135a",
+      "catalog_numbers": {
+        "Op": "135"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=reger/135a_three_chorales_(diodati).mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=reger/135b_fantasie_d_(winitzki).mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=reger/135b_fugue_d_(winitzki).mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=reger/135b_fantasie_d_[scpop]_(winitzki-bogdanow).mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=reger/135b_fugue_d_[scpop]_(winitzki-bogdanow).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Weihnachten-Fantasie in d minor, Op. 145 No. 3",
+      "catalog_numbers": {
+        "Op": "145/3"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=reger/145_3_weihnachten_(winitzki).mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=reger/145_3_weihnachten_[scpop]_(winitzki-bogdanow).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Vom Himmel hoch, da komm Ich her",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=reger/vom_himmel_hoch_da_kommich_her_(borsari).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Trascriptions from J.S. Bach 2-voice Inventions BWV 772-786",
+      "catalog_numbers": {
+        "BWV": "772"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=reger/invention_01_[unknown].mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=reger/invention_02_[unknown].mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=reger/invention_03_[unknown].mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=reger/invention_04_[unknown].mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=reger/invention_05_[unknown].mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=reger/invention_06_[unknown].mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=reger/invention_07_[unknown].mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=reger/invention_08_[unknown].mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=reger/invention_09_[unknown].mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=reger/invention_10_[unknown].mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=reger/invention_11_[unknown].mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=reger/invention_12_[unknown].mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=reger/invention_13_[unknown].mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=reger/invention_14_[unknown].mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=reger/invention_15_[unknown].mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sechs Burlesken, Op. 58 (1901)",
+      "catalog_numbers": {
+        "Op": "58"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=29/reger_sechs_burlesken_58_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=29/reger_sechs_burlesken_58_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=reger/burlesques_58_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=29/reger_sechs_burlesken_58_4_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=reger/burlesques_58_5_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=reger/burlesques_58_6_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Großer Gott, wir loben dich",
+      "catalog_numbers": {
+        "Op": "135a/10"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/RegerM/O135a/reger_grosser_gott_wir_loben_dich/reger_grosser_gott_wir_loben_dich.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata 1 for Unaccompanied Violin",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/RegerM/O42/sonate/sonate-lys/sonate.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata 2 for Unaccompanied Violin",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/RegerM/O42/sonate2/sonate2-lys/sonate2.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata 3 for Unaccompanied Violin",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/RegerM/O42/sonate3/sonate3-lys/sonate3.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Untreue",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution 4.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/RegerM/Untreue/Untreue.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

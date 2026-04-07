@@ -1,0 +1,473 @@
+{
+  "works": [
+    {
+      "title": "Germanicus",
+      "qid": "Q5551938"
+    },
+    {
+      "title": "Concerto for 2 Recorders, TWV 52:a2",
+      "qid": "Q125356049"
+    },
+    {
+      "title": "Siehe, es hat überwunden der Löwe, BWV 219",
+      "qid": "Q3483413"
+    },
+    {
+      "title": "Divertimento in B-flat major",
+      "qid": "Q47011081"
+    },
+    {
+      "title": "12 Fantasias for Solo Flute",
+      "qid": "Q2802490"
+    },
+    {
+      "title": "12 Fantasias for Solo Violin",
+      "qid": "Q2397832"
+    },
+    {
+      "title": "12 Fantasias for Viola da Gamba",
+      "qid": "Q30647062"
+    },
+    {
+      "title": "4 Concertos for 4 Violins",
+      "qid": "Q18612215"
+    },
+    {
+      "title": "6 Canonical Sonatas",
+      "qid": "Q4642495"
+    },
+    {
+      "title": "Admiralitätsmusik",
+      "qid": "Q1572956"
+    },
+    {
+      "title": "Cantata Cycle 1716-1717",
+      "qid": "Q5033558"
+    },
+    {
+      "title": "Christus, der uns selig macht",
+      "qid": "Q65090478"
+    },
+    {
+      "title": "Concerto for 2 violas",
+      "qid": "Q3686134"
+    },
+    {
+      "title": "Das ist je gewißlich wahr, BWV 141",
+      "qid": "Q3016717"
+    },
+    {
+      "title": "Der Tag des Gerichts",
+      "qid": "Q5261222"
+    },
+    {
+      "title": "Der geduldige Socrates",
+      "qid": "Q5261257"
+    },
+    {
+      "title": "Der getreue Musik-Meister",
+      "qid": "Q109599851"
+    },
+    {
+      "title": "Der neumodische Liebhaber Damon",
+      "qid": "Q5261265"
+    },
+    {
+      "title": "Don Quichotte auf der Hochzeit des Comacho",
+      "qid": "Q5293353"
+    },
+    {
+      "title": "Donner-Ode",
+      "qid": "Q1241842"
+    },
+    {
+      "title": "El vent de l'illa",
+      "qid": "Q89793552"
+    },
+    {
+      "title": "Emma und Eginhard",
+      "qid": "Q5373016"
+    },
+    {
+      "title": "Flavius Bertaridus",
+      "qid": "Q224571"
+    },
+    {
+      "title": "Gesegnet ist die Zuversicht",
+      "qid": "Q3761357"
+    },
+    {
+      "title": "Gott der Hoffnung erfülle euch, BWV 218",
+      "qid": "Q3111511"
+    },
+    {
+      "title": "Harmonischer Gottes-Dienst",
+      "qid": "Q5659359"
+    },
+    {
+      "title": "Herr Christ der ein'ge Gottessohn",
+      "qid": "Q3785318"
+    },
+    {
+      "title": "Ich habe Lust zu scheiden",
+      "qid": "Q3791670"
+    },
+    {
+      "title": "Ich weiß, daß mein Erlöser lebt, TWV 1:877",
+      "qid": "Q3147637"
+    },
+    {
+      "title": "Jauchzet dem Herrn alle Welt",
+      "qid": "Q21998568"
+    },
+    {
+      "title": "Kapitänsmusik",
+      "qid": "Q1728633"
+    },
+    {
+      "title": "La canzone dell'amore perduto",
+      "qid": "Q47501083"
+    },
+    {
+      "title": "Long Live the Lady!",
+      "qid": "Q113268"
+    },
+    {
+      "title": "Machet die Tore weit",
+      "qid": "Q27996225"
+    },
+    {
+      "title": "Miriways",
+      "qid": "Q911424"
+    },
+    {
+      "title": "Orpheus",
+      "qid": "Q7103975"
+    },
+    {
+      "title": "Ouverture des Nations anciens et modernes",
+      "qid": "Q55648798"
+    },
+    {
+      "title": "Paris quartets",
+      "qid": "Q18663724"
+    },
+    {
+      "title": "Passions",
+      "qid": "Q3368390"
+    },
+    {
+      "title": "Pastorelle en musique",
+      "qid": "Q116711045"
+    },
+    {
+      "title": "Pimpinone",
+      "qid": "Q738800"
+    },
+    {
+      "title": "Sei Lob und Preis mit Ehren",
+      "qid": "Q12718216"
+    },
+    {
+      "title": "Sieg der Schönheit",
+      "qid": "Q7509760"
+    },
+    {
+      "title": "Siehe ich verkündige euch große Freude. Arr; V (4), Coro, orch, bc; TWV 1:1334",
+      "qid": "Q106988477"
+    },
+    {
+      "title": "Siehe ich verkündige euch große Freude; V (4), Coro, orch; TWV 1:1334",
+      "qid": "Q106988475"
+    },
+    {
+      "title": "Sonates sans basse",
+      "qid": "Q25206660"
+    },
+    {
+      "title": "TWV 02:12 – Oratorium zur Einweyhung der neuen St.-Michaelis-Kirche",
+      "qid": "Q2028382"
+    },
+    {
+      "title": "Tafelmusik",
+      "qid": "Q1032362",
+      "key": "d minor",
+      "instruments": [
+        "Soprano Rec.",
+        "Alto Rec.",
+        "Tenor Rec.",
+        "Bass Rec."
+      ],
+      "year_composed": 1733,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/telemann_tafelmusik_1_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/telemann_tafelmusik_2_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/telemann_tafelmusik_3_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/telemann_tafelmusik_4_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/telemann_tafelmusik_5_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/telemann_tafelmusik_6_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/telemann_tafelmusik_7_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=12/telemann_tafelmusik_1_(trumpets)_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=12/telemann_tafelmusik_2_(trumpets)_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=12/telemann_tafelmusik_3_(trumpets)_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=12/telemann_tafelmusik_4_(trumpets)_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=12/telemann_tafelmusik_5_(trumpets)_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=12/telemann_tafelmusik_6_(trumpets)_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=12/telemann_tafelmusik_7_(trumpets)_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=12/telemann_quartet_from_tafelmusik_iii_1_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=12/telemann_quartet_from_tafelmusik_iii_2_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=12/telemann_quartet_from_tafelmusik_iii_3_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=12/telemann_quartet_from_tafelmusik_iii_4_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Telemann cantata",
+      "qid": "Q1453310"
+    },
+    {
+      "title": "Telemann's Trumpet Concertos",
+      "qid": "Q2991859"
+    },
+    {
+      "title": "The joy of Danish, Norwegian and German subjects",
+      "qid": "Q25430997"
+    },
+    {
+      "title": "Trumpet Concerto in D major, TWV 51:D7",
+      "qid": "Q63522936"
+    },
+    {
+      "title": "Viola concerto in G major",
+      "qid": "Q3686161"
+    },
+    {
+      "title": "Water Music",
+      "qid": "Q1572994"
+    },
+    {
+      "title": "Wer ist der, so von Edom kömmt",
+      "qid": "Q24909334"
+    },
+    {
+      "title": "Ist Widerw�rtigkeit den Frommen eigen",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/telemann_harmonischer_[ist_widerwaertigkeit]_1_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Durch stille seyn und Hoffen",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/telemann_harmonischer_[ist_widerwaertigkeit]_2_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Hat deine Seele sich nun in Gedult gefasst",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/telemann_harmonischer_[ist_widerwaertigkeit]_3_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ewige Liebe!",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/telemann_harmonischer_[ist_widerwaertigkeit]_4_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Wassermusik for 2 oboes, bassoon, strings and b.c. (arranged for 4 recorders)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/telemann_wassermusik_1_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/telemann_wassermusik_2_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/telemann_wassermusik_3_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/telemann_wassermusik_4_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/telemann_wassermusik_5_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/telemann_wassermusik_6_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/telemann_wassermusik_7_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/telemann_wassermusik_8_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/telemann_wassermusik_9_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/telemann_wassermusik_10_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Burlesque for string orchestra (arranged for 4 recorders)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/telemann_burlesque_1_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/telemann_burlesque_2_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/telemann_burlesque_3_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/telemann_burlesque_4_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/telemann_burlesque_5_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/telemann_burlesque_6_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/telemann_burlesque_7_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/telemann_burlesque_8_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Triosonata in A major (arranged for 2 flutes or violins, cello or viola da gamba and basso continuo)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/telemann_trio_sonata_a-major_1_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/telemann_trio_sonata_a-major_2_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/telemann_trio_sonata_a-major_3_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/telemann_trio_sonata_a-major_4_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Three-Four Suite arranged for two slide trumpets and two trombones",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=12/telemann_three-four_suite_1_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=12/telemann_three-four_suite_2_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=12/telemann_three-four_suite_3_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "12 Fantasie per clavicembalo (TWV 33)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/telemann_fantasie_per_cembalo_1_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/telemann_fantasie_per_cembalo_2_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/telemann_fantasie_per_cembalo_3_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/telemann_fantasie_per_cembalo_4_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/telemann_fantasie_per_cembalo_5_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/telemann_fantasie_per_cembalo_6_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/telemann_fantasie_per_cembalo_7_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/telemann_fantasie_per_cembalo_8_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/telemann_fantasie_per_cembalo_9_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/telemann_fantasie_per_cembalo_10_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/telemann_fantasie_per_cembalo_11_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/telemann_fantasie_per_cembalo_12_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gigue � lAngloise in G major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=telemann_gigue_angloise_(c)werths.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concerto in D major for four violins",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 4.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/TelemannGP/Concerto_a_4_D/Concerto_a_4_D-lys/Concerto_a_4_D_Vl1.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concerto in G major for four violins",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 4.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/TelemannGP/Concerto_a_4_G/Concerto_a_4_G-lys/Concerto_a_4_G_Vl1.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonatas for two recorders",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/TelemannGP/Sonata_1/Sonata_1.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata in C major for four violins",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 4.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/TelemannGP/Sonata_a_4_C/Sonata_a_4_C-lys/Sonata_a_IV_C_Vl1.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

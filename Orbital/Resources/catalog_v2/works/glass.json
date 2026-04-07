@@ -1,0 +1,645 @@
+{
+  "works": [
+    {
+      "title": "Music with Changing Parts",
+      "qid": "Q3328521"
+    },
+    {
+      "title": "Satyagraha",
+      "qid": "Q3057300"
+    },
+    {
+      "title": "String Quartet No. 2",
+      "qid": "Q2990314"
+    },
+    {
+      "title": "The Juniper Tree",
+      "qid": "Q3521453"
+    },
+    {
+      "title": "The Canyon",
+      "qid": "Q3520196"
+    },
+    {
+      "title": "Days and Nights in Rocinha",
+      "qid": "Q2196473"
+    },
+    {
+      "title": "1000 Airplanes on the Roof",
+      "qid": "Q1117683"
+    },
+    {
+      "title": "A Brief History of Time",
+      "qid": "Q1962105"
+    },
+    {
+      "title": "A Broken Sole",
+      "qid": "Q4655658"
+    },
+    {
+      "title": "A Descent into the Maelstrom",
+      "qid": "Q54995288"
+    },
+    {
+      "title": "A Tree Is Best Measured When It Is Down",
+      "qid": "Q54995297"
+    },
+    {
+      "title": "Aguas da Amazonia",
+      "qid": "Q2827317"
+    },
+    {
+      "title": "Akhnaten",
+      "qid": "Q417738"
+    },
+    {
+      "title": "Anima Mundi",
+      "qid": "Q1962402"
+    },
+    {
+      "title": "Animals in Love",
+      "qid": "Q3230571"
+    },
+    {
+      "title": "Appomattox",
+      "qid": "Q2858869"
+    },
+    {
+      "title": "Astral City: A Spiritual Journey",
+      "qid": "Q2086595"
+    },
+    {
+      "title": "Bent",
+      "qid": "Q697393"
+    },
+    {
+      "title": "Book of Longing",
+      "qid": "Q2910448"
+    },
+    {
+      "title": "Candyman",
+      "qid": "Q1033108",
+      "instruments": [
+        "Piano",
+        "Ukulele"
+      ],
+      "year_composed": 1992
+    },
+    {
+      "title": "Candyman: Farewell to the Flesh",
+      "qid": "Q1033094"
+    },
+    {
+      "title": "Cassandra's Dream",
+      "qid": "Q833530"
+    },
+    {
+      "title": "Cassandra's Dream",
+      "qid": "Q5049220"
+    },
+    {
+      "title": "Cello Concerto No. 1",
+      "qid": "Q5058301"
+    },
+    {
+      "title": "Cenere",
+      "qid": "Q3664385"
+    },
+    {
+      "title": "Compassion in Exile: The Life of the 14th Dalai Lama",
+      "qid": "Q2223667"
+    },
+    {
+      "title": "Concerto Fantasy for Two Timpanists and Orchestra",
+      "qid": "Q5158553"
+    },
+    {
+      "title": "Concerto Grosso",
+      "qid": "Q2357188"
+    },
+    {
+      "title": "Desarrollo humano",
+      "qid": "Q3024253"
+    },
+    {
+      "title": "Disparaît, v",
+      "qid": "Q17514214"
+    },
+    {
+      "title": "Dracula",
+      "qid": "Q3038545"
+    },
+    {
+      "title": "Dracula",
+      "qid": "Q279378"
+    },
+    {
+      "title": "Dracula",
+      "qid": "Q1102110"
+    },
+    {
+      "title": "Einstein on the Beach",
+      "qid": "Q2291287"
+    },
+    {
+      "title": "Elena",
+      "qid": "Q678643"
+    },
+    {
+      "title": "Etude No. 1",
+      "qid": "Q135431257"
+    },
+    {
+      "title": "Etude No. 10",
+      "qid": "Q135431267"
+    },
+    {
+      "title": "Etude No. 11",
+      "qid": "Q135431268"
+    },
+    {
+      "title": "Etude No. 12",
+      "qid": "Q135431269"
+    },
+    {
+      "title": "Etude No. 13",
+      "qid": "Q135431270"
+    },
+    {
+      "title": "Etude No. 14",
+      "qid": "Q135431271"
+    },
+    {
+      "title": "Etude No. 15",
+      "qid": "Q135431272"
+    },
+    {
+      "title": "Etude No. 16",
+      "qid": "Q135431273"
+    },
+    {
+      "title": "Etude No. 17",
+      "qid": "Q135431274"
+    },
+    {
+      "title": "Etude No. 18",
+      "qid": "Q135431275"
+    },
+    {
+      "title": "Etude No. 19",
+      "qid": "Q135431276"
+    },
+    {
+      "title": "Etude No. 2",
+      "qid": "Q135431258"
+    },
+    {
+      "title": "Etude No. 20",
+      "qid": "Q135431277"
+    },
+    {
+      "title": "Etude No. 3",
+      "qid": "Q135431259"
+    },
+    {
+      "title": "Etude No. 4",
+      "qid": "Q135431260"
+    },
+    {
+      "title": "Etude No. 5",
+      "qid": "Q135431261"
+    },
+    {
+      "title": "Etude No. 6",
+      "qid": "Q135431263"
+    },
+    {
+      "title": "Etude No. 7",
+      "qid": "Q135431264"
+    },
+    {
+      "title": "Etude No. 8",
+      "qid": "Q135431265"
+    },
+    {
+      "title": "Etude No. 9",
+      "qid": "Q135431266"
+    },
+    {
+      "title": "Fantastic Four",
+      "qid": "Q16795448"
+    },
+    {
+      "title": "Galileo Galilei",
+      "qid": "Q3094742"
+    },
+    {
+      "title": "Glass Pieces",
+      "qid": "Q5567073"
+    },
+    {
+      "title": "Glassworks",
+      "qid": "Q1133622"
+    },
+    {
+      "title": "Going Upriver",
+      "qid": "Q1534422"
+    },
+    {
+      "title": "Hamburger Hill",
+      "qid": "Q585203"
+    },
+    {
+      "title": "Harpsichord Concerto",
+      "qid": "Q5663672"
+    },
+    {
+      "title": "Hydrogen Jukebox",
+      "qid": "Q3143733"
+    },
+    {
+      "title": "Icarus at the edge of time",
+      "qid": "Q5985107"
+    },
+    {
+      "title": "In Creases",
+      "qid": "Q104866491"
+    },
+    {
+      "title": "In the Penal Colony",
+      "qid": "Q3149746"
+    },
+    {
+      "title": "Inquiring Nuns",
+      "qid": "Q6036862"
+    },
+    {
+      "title": "Itaipu",
+      "qid": "Q1432864"
+    },
+    {
+      "title": "Jane",
+      "qid": "Q43153330"
+    },
+    {
+      "title": "Jenipapo (composition)",
+      "qid": "Q2506425"
+    },
+    {
+      "title": "Jiro Dreams of Sushi",
+      "qid": "Q1279290"
+    },
+    {
+      "title": "Karenina & I",
+      "qid": "Q112670102"
+    },
+    {
+      "title": "Kepler",
+      "qid": "Q3195392"
+    },
+    {
+      "title": "Koyaanisqatsi",
+      "qid": "Q1127828"
+    },
+    {
+      "title": "Kundun",
+      "qid": "Q944291"
+    },
+    {
+      "title": "La Belle et la Bête",
+      "qid": "Q3206620"
+    },
+    {
+      "title": "La Moustache",
+      "qid": "Q71920"
+    },
+    {
+      "title": "Les Enfants terribles",
+      "qid": "Q3232408"
+    },
+    {
+      "title": "Leviathan",
+      "qid": "Q15972383"
+    },
+    {
+      "title": "Merci la vie",
+      "qid": "Q1406108"
+    },
+    {
+      "title": "Mindwalk",
+      "qid": "Q1962203"
+    },
+    {
+      "title": "Mishima: A Life in Four Chapters",
+      "qid": "Q1740171"
+    },
+    {
+      "title": "Mishima: A Life in Four Chapters (soundtrack)",
+      "qid": "Q3316323"
+    },
+    {
+      "title": "Monsters of Grace",
+      "qid": "Q2201977"
+    },
+    {
+      "title": "Mr. Nice",
+      "qid": "Q1250780"
+    },
+    {
+      "title": "Music in Fifths",
+      "qid": "Q2397383"
+    },
+    {
+      "title": "Music in Twelve Parts",
+      "qid": "Q3328517"
+    },
+    {
+      "title": "Naqoyqatsi",
+      "qid": "Q281853"
+    },
+    {
+      "title": "Neverwas",
+      "qid": "Q1982253"
+    },
+    {
+      "title": "No Reservations",
+      "qid": "Q761548"
+    },
+    {
+      "title": "North Star",
+      "qid": "Q3344172"
+    },
+    {
+      "title": "North Star: Mark di Suvero",
+      "qid": "Q20874651"
+    },
+    {
+      "title": "Notes on a Scandal",
+      "qid": "Q3344476"
+    },
+    {
+      "title": "Notes on a Scandal",
+      "qid": "Q756849"
+    },
+    {
+      "title": "O Apóstolo",
+      "qid": "Q3783013"
+    },
+    {
+      "title": "Once Within a Time",
+      "qid": "Q123071040"
+    },
+    {
+      "title": "Orphée",
+      "qid": "Q3356654"
+    },
+    {
+      "title": "Passages",
+      "qid": "Q7142488"
+    },
+    {
+      "title": "Piano Concerto No. 2",
+      "qid": "Q7190102"
+    },
+    {
+      "title": "Portrait Trilogy",
+      "qid": "Q34315912"
+    },
+    {
+      "title": "Powaqqatsi",
+      "qid": "Q541727"
+    },
+    {
+      "title": "Quartett",
+      "qid": "Q117067832"
+    },
+    {
+      "title": "Roving Mars",
+      "qid": "Q4217155"
+    },
+    {
+      "title": "Samurai Marathon",
+      "qid": "Q65266357"
+    },
+    {
+      "title": "Satyagraha 2008 production at the Met",
+      "qid": "Q104651704"
+    },
+    {
+      "title": "Secret Window",
+      "qid": "Q472165"
+    },
+    {
+      "title": "Solo Piano",
+      "qid": "Q7558477"
+    },
+    {
+      "title": "Songs from Liquid Days",
+      "qid": "Q7561443"
+    },
+    {
+      "title": "Songs from the Trilogy",
+      "qid": "Q3490392"
+    },
+    {
+      "title": "String Quartet No. 4 (Glass)",
+      "qid": "Q29580437"
+    },
+    {
+      "title": "Symphony No. 1",
+      "qid": "Q3507645"
+    },
+    {
+      "title": "Symphony No. 10",
+      "qid": "Q17639635"
+    },
+    {
+      "title": "Symphony No. 11",
+      "qid": "Q28860786"
+    },
+    {
+      "title": "Symphony No. 12",
+      "qid": "Q48817850"
+    },
+    {
+      "title": "Symphony No. 13",
+      "qid": "Q137187402"
+    },
+    {
+      "title": "Symphony No. 15",
+      "qid": "Q138542607"
+    },
+    {
+      "title": "Symphony No. 2",
+      "qid": "Q3507723"
+    },
+    {
+      "title": "Symphony No. 3",
+      "qid": "Q3507765"
+    },
+    {
+      "title": "Symphony No. 4",
+      "qid": "Q2248782"
+    },
+    {
+      "title": "Symphony No. 5",
+      "qid": "Q7661584"
+    },
+    {
+      "title": "Symphony No. 6",
+      "qid": "Q7661598"
+    },
+    {
+      "title": "Symphony No. 7",
+      "qid": "Q2152891"
+    },
+    {
+      "title": "Symphony No. 8",
+      "qid": "Q7661618"
+    },
+    {
+      "title": "Symphony No. 9",
+      "qid": "Q7661627"
+    },
+    {
+      "title": "Taking Lives",
+      "qid": "Q1480747"
+    },
+    {
+      "title": "The Baroness and the Pig",
+      "qid": "Q97738039"
+    },
+    {
+      "title": "The Civil Wars: A Tree Is Best Measured When It Is Down",
+      "qid": "Q3520176"
+    },
+    {
+      "title": "The Concerto Project",
+      "qid": "Q7727283"
+    },
+    {
+      "title": "The Crucible",
+      "qid": "Q23008768"
+    },
+    {
+      "title": "The Fall of the House of Usher",
+      "qid": "Q3520831"
+    },
+    {
+      "title": "The Fog of War",
+      "qid": "Q466846"
+    },
+    {
+      "title": "The Hours",
+      "qid": "Q157044"
+    },
+    {
+      "title": "The Hours",
+      "qid": "Q980427"
+    },
+    {
+      "title": "The Illusionist",
+      "qid": "Q645735"
+    },
+    {
+      "title": "The Light",
+      "qid": "Q3521577"
+    },
+    {
+      "title": "The Lost",
+      "qid": "Q3521654"
+    },
+    {
+      "title": "The Making of the Representative for Planet 8",
+      "qid": "Q3521735"
+    },
+    {
+      "title": "The Perfect American",
+      "qid": "Q3522206"
+    },
+    {
+      "title": "The Photographer",
+      "qid": "Q3522225"
+    },
+    {
+      "title": "The Pigeon Tunnel",
+      "qid": "Q122109560"
+    },
+    {
+      "title": "The Secret Agent",
+      "qid": "Q2975672"
+    },
+    {
+      "title": "The Sound of a Voice",
+      "qid": "Q3522787"
+    },
+    {
+      "title": "The Thin Blue Line",
+      "qid": "Q162997"
+    },
+    {
+      "title": "The Trial",
+      "qid": "Q30611737"
+    },
+    {
+      "title": "The Truman Show",
+      "qid": "Q214801"
+    },
+    {
+      "title": "The Voyage",
+      "qid": "Q3523251"
+    },
+    {
+      "title": "They Were There",
+      "qid": "Q21869917"
+    },
+    {
+      "title": "Tirol Concerto for Piano and Orchestra",
+      "qid": "Q7809261"
+    },
+    {
+      "title": "Transcendent Man",
+      "qid": "Q12129690"
+    },
+    {
+      "title": "Two Pages",
+      "qid": "Q3542608"
+    },
+    {
+      "title": "Undertow",
+      "qid": "Q571309"
+    },
+    {
+      "title": "Violin Concerto",
+      "qid": "Q7933342"
+    },
+    {
+      "title": "Violin Concerto No. 1",
+      "qid": "Q2991888"
+    },
+    {
+      "title": "Violin Concerto No. 2",
+      "qid": "Q7933351"
+    },
+    {
+      "title": "Visitors",
+      "qid": "Q15052361"
+    },
+    {
+      "title": "Waiting for the Barbarians",
+      "qid": "Q2390578"
+    },
+    {
+      "title": "White Raven",
+      "qid": "Q3567782"
+    },
+    {
+      "title": "Wichita Vortex Sutra",
+      "qid": "Q3567906"
+    },
+    {
+      "title": "Yes",
+      "qid": "Q742391"
+    }
+  ]
+}

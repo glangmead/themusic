@@ -1,0 +1,477 @@
+{
+  "works": [
+    {
+      "title": "Il borgomastro di Saardam",
+      "qid": "Q471226"
+    },
+    {
+      "title": "Il giovedì grasso, o Il nuovo Pourceaugnac",
+      "qid": "Q465270"
+    },
+    {
+      "title": "Anna Bolena",
+      "qid": "Q559848"
+    },
+    {
+      "title": "Gianni di Parigi",
+      "qid": "Q846285"
+    },
+    {
+      "title": "La romanziera e l'uomo nero",
+      "qid": "Q781142"
+    },
+    {
+      "title": "Niso e Violetta",
+      "qid": "Q108950904"
+    },
+    {
+      "title": "Requiem",
+      "qid": "Q11777543"
+    },
+    {
+      "title": "Adelia",
+      "qid": "Q503582"
+    },
+    {
+      "title": "Don Pasquale",
+      "qid": "Q723941"
+    },
+    {
+      "title": "Ah! mes amis, quel jour de fête!",
+      "qid": "Q54974683"
+    },
+    {
+      "title": "Ah! quando in regio ta lamo",
+      "qid": "Q54974888"
+    },
+    {
+      "title": "Ah! un foco insolito = A! nwyd anarferol : Don Pasquale",
+      "qid": "Q78526547"
+    },
+    {
+      "title": "Alahor in Granata",
+      "qid": "Q517060"
+    },
+    {
+      "title": "Alfredo il Grande",
+      "qid": "Q1039890"
+    },
+    {
+      "title": "Alina, regina di Golconda",
+      "qid": "Q648981"
+    },
+    {
+      "title": "Aria Camoens : Don Sebastino",
+      "qid": "Q78526580"
+    },
+    {
+      "title": "Ave Maria",
+      "qid": "Q109242513"
+    },
+    {
+      "title": "Belisario",
+      "qid": "Q792443"
+    },
+    {
+      "title": "Betly, o sia La capanna svizzera",
+      "qid": "Q794233"
+    },
+    {
+      "title": "Buondelmonte",
+      "qid": "Q3647137"
+    },
+    {
+      "title": "Caterina Cornaro",
+      "qid": "Q859034"
+    },
+    {
+      "title": "Chiara e Serafina",
+      "qid": "Q753250"
+    },
+    {
+      "title": "Ciascum lo dice = Pobun a ddywed : La Figlia del reggimento",
+      "qid": "Q78647773"
+    },
+    {
+      "title": "Dalinda",
+      "qid": "Q125429266"
+    },
+    {
+      "title": "Dom Sébastien",
+      "qid": "Q846809"
+    },
+    {
+      "title": "Don Gregorio",
+      "qid": "Q5292706"
+    },
+    {
+      "title": "Don Sebastiano",
+      "qid": "Q109001798"
+    },
+    {
+      "title": "Elisabetta",
+      "qid": "Q109242083"
+    },
+    {
+      "title": "Elvida",
+      "qid": "Q989156"
+    },
+    {
+      "title": "Emilia di Liverpool",
+      "qid": "Q426071"
+    },
+    {
+      "title": "Enrico di Borgogna",
+      "qid": "Q263045"
+    },
+    {
+      "title": "Everyone knows it",
+      "qid": "Q54974670"
+    },
+    {
+      "title": "Fair as the fairest angel",
+      "qid": "Q54974588"
+    },
+    {
+      "title": "Fausta",
+      "qid": "Q755445"
+    },
+    {
+      "title": "Francesca di Foix",
+      "qid": "Q749217"
+    },
+    {
+      "title": "Gabriella di Vergy",
+      "qid": "Q914134"
+    },
+    {
+      "title": "Gemma di Vergy",
+      "qid": "Q913934"
+    },
+    {
+      "title": "Gianni di Calais",
+      "qid": "Q539410"
+    },
+    {
+      "title": "Gli esiliati in Siberia",
+      "qid": "Q109002181"
+    },
+    {
+      "title": "How is it good at night",
+      "qid": "Q54974598"
+    },
+    {
+      "title": "I pazzi per progetto",
+      "qid": "Q756048"
+    },
+    {
+      "title": "I shall go, no more returning",
+      "qid": "Q54974597"
+    },
+    {
+      "title": "Il Pigmalione",
+      "qid": "Q1064667"
+    },
+    {
+      "title": "Il campanello",
+      "qid": "Q464664"
+    },
+    {
+      "title": "Il castello di Kenilworth",
+      "qid": "Q637613"
+    },
+    {
+      "title": "Il diluvio universale",
+      "qid": "Q786494"
+    },
+    {
+      "title": "Il dolce suono",
+      "qid": "Q5809685"
+    },
+    {
+      "title": "Il falegname di Livonia",
+      "qid": "Q69155"
+    },
+    {
+      "title": "Il fortunato inganno",
+      "qid": "Q585313"
+    },
+    {
+      "title": "Il furioso all'isola di San Domingo",
+      "qid": "Q461182"
+    },
+    {
+      "title": "Il mio destin dipende",
+      "qid": "Q54974631"
+    },
+    {
+      "title": "Il paria",
+      "qid": "Q470876"
+    },
+    {
+      "title": "Il pesceballo",
+      "qid": "Q5996760"
+    },
+    {
+      "title": "Il segreto per esser felici = M [sic] ddatgelaf gyfrinach fy nghalon : Lucrezia Borgia",
+      "qid": "Q78526926"
+    },
+    {
+      "title": "Imelda de' Lambertazzi",
+      "qid": "Q846289"
+    },
+    {
+      "title": "In morte di M. F. Malibran de Beriot",
+      "qid": "Q109241582"
+    },
+    {
+      "title": "Io morrò! Suonata è l'ora",
+      "qid": "Q54974627"
+    },
+    {
+      "title": "L'ajo nell'imbarazzo",
+      "qid": "Q463726"
+    },
+    {
+      "title": "L'ange de Nisida",
+      "qid": "Q3818584"
+    },
+    {
+      "title": "L'assedio di Calais",
+      "qid": "Q846737"
+    },
+    {
+      "title": "L'elisir d'amore",
+      "qid": "Q332536"
+    },
+    {
+      "title": "L'esule di Roma",
+      "qid": "Q471164"
+    },
+    {
+      "title": "La Fille du régiment",
+      "qid": "Q729568",
+      "key": "E♭ major",
+      "instruments": [
+        "Piccolo",
+        "Flute",
+        "Oboe",
+        "Clarinet",
+        "Bassoon",
+        "Horn in F",
+        "Trumpet",
+        "Trombone",
+        "Bass Trombone",
+        "Timpani",
+        "1st Violins",
+        "2nd Violins",
+        "Violas",
+        "Tonio",
+        "Violoncellos",
+        "Contrabasses"
+      ],
+      "year_composed": 1840
+    },
+    {
+      "title": "La favorite",
+      "qid": "Q467394"
+    },
+    {
+      "title": "La lettera anonima",
+      "qid": "Q845656"
+    },
+    {
+      "title": "La zingara",
+      "qid": "Q464514"
+    },
+    {
+      "title": "Le convenienze ed inconvenienze teatrali",
+      "qid": "Q681820"
+    },
+    {
+      "title": "Le duc d'Albe",
+      "qid": "Q576230"
+    },
+    {
+      "title": "Le nozze in villa",
+      "qid": "Q753323"
+    },
+    {
+      "title": "Les martyrs",
+      "qid": "Q17020379"
+    },
+    {
+      "title": "Linda di Chamounix",
+      "qid": "Q669382"
+    },
+    {
+      "title": "Lucia di Lammermoor",
+      "qid": "Q244209"
+    },
+    {
+      "title": "Lucia di Lammermoor",
+      "qid": "Q3838492"
+    },
+    {
+      "title": "Lucia di Lammermoor",
+      "qid": "Q16672885"
+    },
+    {
+      "title": "Lucie de Lammermoor",
+      "qid": "Q3265312"
+    },
+    {
+      "title": "Lucrezia Borgia",
+      "qid": "Q685501"
+    },
+    {
+      "title": "L’ira di Achille",
+      "qid": "Q136770158"
+    },
+    {
+      "title": "Maria Padilla",
+      "qid": "Q756150"
+    },
+    {
+      "title": "Maria Stuarda",
+      "qid": "Q377685"
+    },
+    {
+      "title": "Maria de Rudenz",
+      "qid": "Q729921"
+    },
+    {
+      "title": "Maria di Rohan",
+      "qid": "Q732789"
+    },
+    {
+      "title": "Marino Faliero",
+      "qid": "Q914165"
+    },
+    {
+      "title": "Martha",
+      "qid": "Q473359"
+    },
+    {
+      "title": "Mona Lisa",
+      "qid": "Q55441228"
+    },
+    {
+      "title": "O luce di quest'anima = Fy heulwen loyw ydwyt ti : Linda di Chamounix",
+      "qid": "Q78527073"
+    },
+    {
+      "title": "Oh you are the radiance of my soul",
+      "qid": "Q54974725"
+    },
+    {
+      "title": "Olivo e Pasquale",
+      "qid": "Q1040611"
+    },
+    {
+      "title": "Otto mesi in due ore",
+      "qid": "Q690606"
+    },
+    {
+      "title": "Parisina",
+      "qid": "Q652926"
+    },
+    {
+      "title": "Pia de' Tolomei",
+      "qid": "Q109242164"
+    },
+    {
+      "title": "Pia de' Tolomei",
+      "qid": "Q974534"
+    },
+    {
+      "title": "Poliuto",
+      "qid": "Q240295"
+    },
+    {
+      "title": "Quanto è bella",
+      "qid": "Q11274662"
+    },
+    {
+      "title": "Quel guardo il cavaliere = Gwanodd ei threm y marchog : Don Pasquale",
+      "qid": "Q78648266"
+    },
+    {
+      "title": "Rita",
+      "qid": "Q838597"
+    },
+    {
+      "title": "Roberto Devereux",
+      "qid": "Q672708"
+    },
+    {
+      "title": "Rosmonda d'Inghilterra",
+      "qid": "Q769645"
+    },
+    {
+      "title": "Rosmunda d'Inghilterra",
+      "qid": "Q109242628"
+    },
+    {
+      "title": "Sancia di Castiglia",
+      "qid": "Q847087"
+    },
+    {
+      "title": "Sono stato io",
+      "qid": "Q3209623"
+    },
+    {
+      "title": "Spirto gentil = Ysbryd ein serch : La Favorita",
+      "qid": "Q78648309"
+    },
+    {
+      "title": "That glance, it pierced the knight's heart...I also know the magic virtue",
+      "qid": "Q54974594"
+    },
+    {
+      "title": "The night, deep and dark, reigned in the silence",
+      "qid": "Q54974744"
+    },
+    {
+      "title": "This Wine of Love",
+      "qid": "Q3818953"
+    },
+    {
+      "title": "Torquato Tasso",
+      "qid": "Q520950"
+    },
+    {
+      "title": "Tranquillo ei posa!",
+      "qid": "Q78648383"
+    },
+    {
+      "title": "Tudor Queens Trilogy",
+      "qid": "Q2278129"
+    },
+    {
+      "title": "Ugo, conte di Parigi",
+      "qid": "Q755439"
+    },
+    {
+      "title": "Una follia",
+      "qid": "Q845828"
+    },
+    {
+      "title": "Una furtima [sic] lagrima = Y deigryn",
+      "qid": "Q78527329"
+    },
+    {
+      "title": "Una furtiva lagrima",
+      "qid": "Q2060389",
+      "key": "C major",
+      "instruments": [
+        "Flute",
+        "B♭ Clarinet"
+      ]
+    },
+    {
+      "title": "Zoraida di Granata",
+      "qid": "Q911022"
+    }
+  ]
+}

@@ -7,21 +7,42 @@ import SwiftUI
 
 struct ComposerDetailView: View {
   @Environment(ClassicsCatalogLibrary.self) private var catalog
-  let composer: ComposerEntry
+  @Environment(MIDIDownloadLedger.self) private var ledger
+  let composer: CatalogComposer
 
   var body: some View {
-    let workGroups = catalog.cachedWorkGroups(for: composer.slug)
+    let works = catalog.cachedWorks(for: composer.slug)
+    let worksWithMidi = works.filter { !($0.sources?.isEmpty ?? true) }
+    let worksWithoutMidi = works.filter { $0.sources?.isEmpty ?? true }
+
     List {
       Section {
         ComposerHeaderView(composer: composer)
       }
-      ForEach(workGroups) { group in
-        Section(group.displayTitle) {
-          ForEach(group.renditions) { rendition in
+
+      if !worksWithMidi.isEmpty {
+        Section("Works with MIDI (\(worksWithMidi.count))") {
+          ForEach(worksWithMidi) { work in
             NavigationLink {
-              RenditionDetailView(composer: composer, rendition: rendition)
+              WorkDetailView(composer: composer, work: work)
             } label: {
-              RenditionRow(rendition: rendition)
+              WorkRow(work: work)
+            }
+          }
+        }
+      }
+
+      if !worksWithoutMidi.isEmpty {
+        Section("Other Works (\(worksWithoutMidi.count))") {
+          ForEach(worksWithoutMidi) { work in
+            VStack(alignment: .leading, spacing: 2) {
+              Text(work.title)
+                .lineLimit(2)
+              if let label = work.catalogLabel {
+                Text(label)
+                  .font(.caption)
+                  .foregroundStyle(.secondary)
+              }
             }
           }
         }
@@ -30,15 +51,15 @@ struct ComposerDetailView: View {
     .navigationTitle(composer.name)
     .navigationBarTitleDisplayMode(.inline)
     .task {
-      await catalog.loadWorkGroupsIfNeeded(for: composer)
+      await catalog.loadWorksIfNeeded(for: composer)
     }
   }
 }
 
 // MARK: - ComposerHeaderView
 
-private struct ComposerHeaderView: View {
-  let composer: ComposerEntry
+struct ComposerHeaderView: View {
+  let composer: CatalogComposer
 
   var body: some View {
     VStack(spacing: 12) {
@@ -64,46 +85,50 @@ private struct ComposerHeaderView: View {
   }
 }
 
-// MARK: - RenditionRow
+// MARK: - WorkRow
 
-private struct RenditionRow: View {
-  let rendition: PlaybackRendition
+private struct WorkRow: View {
+  @Environment(MIDIDownloadLedger.self) private var ledger
+  let work: CatalogWork
+
+  private var downloadedCount: Int {
+    work.allMidiUrls.filter { ledger.isDownloaded($0) }.count
+  }
 
   var body: some View {
     VStack(alignment: .leading, spacing: 2) {
-      Text(rendition.title)
+      Text(work.title)
         .lineLimit(2)
       HStack(spacing: 8) {
-        if let key = rendition.key {
+        if let label = work.catalogLabel {
+          Text(label)
+            .font(.caption)
+            .foregroundStyle(.secondary)
+        }
+        if let key = work.key {
           Text(key)
             .font(.caption)
             .foregroundStyle(.secondary)
         }
-        if let dur = rendition.pdmx?.durationSeconds {
-          Text(formatDuration(dur))
+        let total = work.allMidiUrls.count
+        if total > 0 {
+          Text("\(total) MIDI")
             .font(.caption)
             .foregroundStyle(.secondary)
         }
-        if let bpm = rendition.tempoBpm {
-          Text("\(bpm) BPM")
+        if downloadedCount > 0 {
+          Label("\(downloadedCount)", systemImage: "checkmark.circle.fill")
             .font(.caption)
-            .foregroundStyle(.secondary)
+            .foregroundStyle(.green)
         }
       }
     }
-  }
-
-  private func formatDuration(_ seconds: Double) -> String {
-    let total = Int(seconds)
-    let m = total / 60
-    let s = total % 60
-    return String(format: "%d:%02d", m, s)
   }
 }
 
 #Preview {
   NavigationStack {
-    ComposerDetailView(composer: ComposerEntry(
+    ComposerDetailView(composer: CatalogComposer(
       slug: "bach",
       qid: "Q1339",
       name: "Johann Sebastian Bach",
@@ -112,12 +137,15 @@ private struct RenditionRow: View {
       portraitUrl: nil,
       wikipediaUrl: nil,
       wikipediaExtract: "A prolific Baroque composer.",
-      pageviewsYearly: 1_000_000,
-      appleClassicalUrl: nil
+      appleClassicalUrl: nil,
+      era: "Baroque",
+      nationality: "DEU"
     ))
   }
   .environment(ClassicsCatalogLibrary())
   .environment(SpatialAudioEngine())
   .environment(SongLibrary())
   .environment(ResourceManager())
+  .environment(MIDIDownloadManager(ledger: MIDIDownloadLedger(baseDirectory: .temporaryDirectory)))
+  .environment(MIDIDownloadLedger(baseDirectory: .temporaryDirectory))
 }

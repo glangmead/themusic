@@ -1,0 +1,1252 @@
+{
+  "works": [
+    {
+      "title": "Sonata-Fantaisie in G-sharp minor",
+      "qid": "Q17027470",
+      "key": "G-sharp minor"
+    },
+    {
+      "title": "Piano Sonata in E-flat minor",
+      "qid": "Q20631831",
+      "key": "E-flat minor"
+    },
+    {
+      "title": "Piano Sonata No. 1",
+      "qid": "Q389653",
+      "key": "F minor"
+    },
+    {
+      "title": "Piano Concerto",
+      "qid": "Q1399065",
+      "key": "F-sharp minor"
+    },
+    {
+      "title": "Piano Sonata No. 2",
+      "qid": "Q1627188",
+      "key": "G-sharp minor"
+    },
+    {
+      "title": "Piano Sonata No. 3",
+      "qid": "Q1321264",
+      "key": "F-sharp minor"
+    },
+    {
+      "title": "24 Preludes, Op. 11",
+      "qid": "Q217297",
+      "catalog_numbers": {
+        "Op": "11"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/prelude_11_1_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/prelude_11_5_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/prelude_11_10_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/prelude_11_14_(c)lefeldt.mid"
+          ]
+        },
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/ScriabinA/O11/Scriabin_prelude_op11no1/Scriabin_prelude_op11no1.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Symphony No. 1",
+      "qid": "Q163600",
+      "key": "E major"
+    },
+    {
+      "title": "Fantaisie in B minor",
+      "qid": "Q11484163",
+      "key": "B minor"
+    },
+    {
+      "title": "Piano Sonata No. 4",
+      "qid": "Q1746040",
+      "key": "F-sharp major"
+    },
+    {
+      "title": "Poème satanique",
+      "qid": "Q137002898",
+      "key": "C major"
+    },
+    {
+      "title": "Two Poems, Op. 32",
+      "qid": "Q3024896",
+      "catalog_numbers": {
+        "Op": "32"
+      }
+    },
+    {
+      "title": "Piano Sonata No. 5",
+      "qid": "Q279574",
+      "catalog_numbers": {
+        "Op": "53"
+      },
+      "key": "F♯ major",
+      "instruments": [
+        "鋼琴"
+      ],
+      "year_composed": 1907,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/sonate_5_53_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Prometheus: The Poem of Fire",
+      "qid": "Q1733265"
+    },
+    {
+      "title": "The Poem of Ecstasy",
+      "qid": "Q1810096"
+    },
+    {
+      "title": "Piano Sonata No. 7",
+      "qid": "Q3490176",
+      "key": "atonality"
+    },
+    {
+      "title": "Piano Sonata No. 6",
+      "qid": "Q7190160",
+      "catalog_numbers": {
+        "Op": "62"
+      },
+      "key": "atonality",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1911
+    },
+    {
+      "title": "Piano Sonata No. 8",
+      "qid": "Q11331285",
+      "key": "atonality"
+    },
+    {
+      "title": "Piano Sonata No. 9",
+      "qid": "Q2031786"
+    },
+    {
+      "title": "2 Preludes, Op. 67",
+      "qid": "Q3024899",
+      "catalog_numbers": {
+        "Op": "67"
+      }
+    },
+    {
+      "title": "Piano Sonata No. 10",
+      "qid": "Q6962276",
+      "key": "atonality"
+    },
+    {
+      "title": "Vers la flamme",
+      "qid": "Q2610891",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/vers_la_flamme_72_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Aelita",
+      "qid": "Q380803"
+    },
+    {
+      "title": "A Man Before His Time",
+      "qid": "Q18676992"
+    },
+    {
+      "title": "Frankenstein: Day of the Beast",
+      "qid": "Q5490677"
+    },
+    {
+      "title": "Moonlight People",
+      "qid": "Q77892609"
+    },
+    {
+      "title": "10 Mazurkas",
+      "qid": "Q3032542"
+    },
+    {
+      "title": "12 Études, Op. 8",
+      "qid": "Q3038232",
+      "catalog_numbers": {
+        "Op": "8"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/etude_56_4_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/etude_65_1_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/etude_65_2_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/etude_65_3_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "2 Impromptus, Op. 10",
+      "qid": "Q3024882",
+      "catalog_numbers": {
+        "Op": "10"
+      }
+    },
+    {
+      "title": "2 Impromptus, Op. 12",
+      "qid": "Q3024884",
+      "catalog_numbers": {
+        "Op": "12"
+      }
+    },
+    {
+      "title": "2 Impromptus, Op. 14",
+      "qid": "Q3024886",
+      "catalog_numbers": {
+        "Op": "14"
+      }
+    },
+    {
+      "title": "2 Mazurkas, Op. 40",
+      "qid": "Q3024890",
+      "catalog_numbers": {
+        "Op": "40"
+      }
+    },
+    {
+      "title": "2 Preludes, Op. 27",
+      "qid": "Q3024897",
+      "catalog_numbers": {
+        "Op": "27"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/prelude_27_1_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3 Preludes, Op. 35",
+      "qid": "Q3539939",
+      "catalog_numbers": {
+        "Op": "35"
+      }
+    },
+    {
+      "title": "4 Preludes, Op. 22",
+      "qid": "Q3413454",
+      "catalog_numbers": {
+        "Op": "22"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/prelude_22_1_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "4 Preludes, Op. 31",
+      "qid": "Q3413456",
+      "catalog_numbers": {
+        "Op": "31"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/prelude_31_3_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "4 Preludes, Op. 33",
+      "qid": "Q3413455",
+      "catalog_numbers": {
+        "Op": "33"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/prelude_33_2_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/prelude_33_3_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "4 Preludes, Op. 37",
+      "qid": "Q3413457",
+      "catalog_numbers": {
+        "Op": "37"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/prelude_37_1_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "4 Preludes, Op. 39",
+      "qid": "Q3413460",
+      "catalog_numbers": {
+        "Op": "39"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/prelude_39_3_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "4 Preludes, Op. 48",
+      "qid": "Q3413459",
+      "catalog_numbers": {
+        "Op": "48"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/prelude_48_3_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "5 Preludes op. 15",
+      "qid": "Q2972849",
+      "catalog_numbers": {
+        "Op": "15"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/prelude_15_2_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "5 Preludes op. 16",
+      "qid": "Q2972848",
+      "catalog_numbers": {
+        "Op": "16"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/prelude_16_4_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "5 Preludes, Op. 74",
+      "qid": "Q2972903",
+      "catalog_numbers": {
+        "Op": "74"
+      }
+    },
+    {
+      "title": "6 Préludes, Op. 13",
+      "qid": "Q3485602",
+      "catalog_numbers": {
+        "Op": "13"
+      }
+    },
+    {
+      "title": "7 Préludes, Op. 17",
+      "qid": "Q3478901",
+      "catalog_numbers": {
+        "Op": "17"
+      }
+    },
+    {
+      "title": "8 Études, Op. 42",
+      "qid": "Q3142918",
+      "catalog_numbers": {
+        "Op": "42"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/etude_42_1_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/etude_42_4_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/etude_42_5_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/etude_42_1_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/etude_42_2_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/etude_42_3_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/etude_42_4_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/etude_42_5_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/etude_42_6_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/etude_42_7_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/etude_42_8_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Deux Danses",
+      "qid": "Q15990895"
+    },
+    {
+      "title": "Mysterium",
+      "qid": "Q3224861"
+    },
+    {
+      "title": "Nine Mazurkas",
+      "qid": "Q3338599"
+    },
+    {
+      "title": "Nocturne in A-flat",
+      "qid": "Q7046536",
+      "key": "A-flat major",
+      "instruments": [
+        "Piano"
+      ]
+    },
+    {
+      "title": "Prelude Op. 59 No. 2",
+      "qid": "Q7240069",
+      "catalog_numbers": {
+        "Op": "59"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/prelude_56_1_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/piece_59_2_(c)lefeldt.mid"
+          ]
+        },
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/ScriabinA/O59/prelude/prelude.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Prelude in A minor, Op. 51, No. 2",
+      "qid": "Q7240077",
+      "catalog_numbers": {
+        "Op": "51"
+      },
+      "key": "A minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/prelude_51_2_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Prelude in C major, Op. 11, No. 1",
+      "qid": "Q7240082",
+      "catalog_numbers": {
+        "Op": "11/1"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Prelude in C-sharp minor, Op. 11, No. 10",
+      "qid": "Q7240081",
+      "catalog_numbers": {
+        "Op": "11/10"
+      },
+      "key": "C-sharp minor"
+    },
+    {
+      "title": "Prelude in E major, Op. 11, No. 9",
+      "qid": "Q7240092",
+      "catalog_numbers": {
+        "Op": "11/9"
+      },
+      "key": "E major"
+    },
+    {
+      "title": "Prelude in E minor, Op. 11, No. 4",
+      "qid": "Q7240093",
+      "catalog_numbers": {
+        "Op": "11/4"
+      },
+      "key": "E minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=scriabin-op11_no04.krn&l=users/craig/classical/scriabin/op11&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=scriabin-op11_no15.krn&l=users/craig/classical/scriabin/op11&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Prelude in F major, Op. 49, No. 2",
+      "qid": "Q7240095",
+      "catalog_numbers": {
+        "Op": "49"
+      },
+      "key": "F major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/etude_49_1_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Prelude, Op. 74, No. 2",
+      "qid": "Q7240057",
+      "catalog_numbers": {
+        "Op": "74"
+      }
+    },
+    {
+      "title": "Prélude et Nocturne for Piano",
+      "qid": "Q15990970"
+    },
+    {
+      "title": "Rêverie",
+      "qid": "Q7386173",
+      "key": "E minor"
+    },
+    {
+      "title": "Skryabiniana",
+      "qid": "Q4422640"
+    },
+    {
+      "title": "Symphony No. 2",
+      "qid": "Q210572",
+      "key": "C minor"
+    },
+    {
+      "title": "Symphony No. 3",
+      "qid": "Q223538",
+      "key": "C minor"
+    },
+    {
+      "title": "Three Pieces, Op. 2",
+      "qid": "Q3540017",
+      "catalog_numbers": {
+        "Op": "2"
+      }
+    },
+    {
+      "title": "Two Poems, Op. 44",
+      "qid": "Q3024892",
+      "catalog_numbers": {
+        "Op": "44"
+      }
+    },
+    {
+      "title": "Two Poems, Op. 63",
+      "qid": "Q3024893",
+      "catalog_numbers": {
+        "Op": "63"
+      }
+    },
+    {
+      "title": "Two Poems, Op. 69",
+      "qid": "Q3024894",
+      "catalog_numbers": {
+        "Op": "69"
+      }
+    },
+    {
+      "title": "Two Poems, Op. 71",
+      "qid": "Q3024895",
+      "catalog_numbers": {
+        "Op": "71"
+      }
+    },
+    {
+      "title": "piano sonatas by Alexander Scriabin",
+      "qid": "Q13933068"
+    },
+    {
+      "title": "Étude in C-sharp minor, Op. 2, No. 1",
+      "qid": "Q8078515",
+      "catalog_numbers": {
+        "Op": "2"
+      },
+      "key": "C-sharp minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/etude_2_1_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/etude_2_1_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Étude in D-sharp minor, Op. 8, No. 12",
+      "qid": "Q3592579",
+      "catalog_numbers": {
+        "Op": "8"
+      },
+      "key": "D-sharp minor",
+      "instruments": [
+        "鋼琴"
+      ],
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=scriabin-op08_no01.krn&l=users/craig/classical/scriabin/op08&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=scriabin-op08_no02.krn&l=users/craig/classical/scriabin/op08&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=scriabin-op08_no03.krn&l=users/craig/classical/scriabin/op08&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=scriabin-op08_no04.krn&l=users/craig/classical/scriabin/op08&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=scriabin-op08_no05.krn&l=users/craig/classical/scriabin/op08&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=scriabin-op08_no06.krn&l=users/craig/classical/scriabin/op08&format=midi"
+          ]
+        },
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/etude_8_12_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/etude_8_12_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Études",
+      "qid": "Q1372031"
+    },
+    {
+      "title": "1. Etude in C sharp major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/etude_8_1_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "2. Etude in f sharp minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/etude_8_2_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "11. Etude in b flat minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/etude_8_11_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3. Etude in b minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/etude_8_3_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "4. Etude in B major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/etude_8_4_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "5. Etude in E major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/etude_8_5_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "6. Etude in A major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/etude_8_6_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "7. Etude in b flat minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/etude_8_7_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "8. Etude in A flat major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/etude_8_8_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "9. Etude in g sharp minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/etude_8_9_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "10. Etude in D flat major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/etude_8_10_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "1. Mazurka in b minor, Op. 3 No. 1",
+      "catalog_numbers": {
+        "Op": "3/1"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/mazurka_3_1_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "2. Mazurka in f sharp minor, Op. 3 No. 2",
+      "catalog_numbers": {
+        "Op": "3/2"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/mazurka_3_2_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3. Mazurka in g minor, Op. 3 No. 3",
+      "catalog_numbers": {
+        "Op": "3/3"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/mazurka_3_3_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "4. Mazurka in E major, Op. 3 No. 4",
+      "catalog_numbers": {
+        "Op": "3/4"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/mazurka_3_4_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "5. Mazurka in d sharp minor, Op. 3 No. 5",
+      "catalog_numbers": {
+        "Op": "3/5"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/mazurka_3_5_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "6. Mazurka in c sharp minor, Op. 3 No. 6",
+      "catalog_numbers": {
+        "Op": "3/6"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/mazurka_3_6_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "7. Mazurka in e minor, Op. 3 No. 7",
+      "catalog_numbers": {
+        "Op": "3/7"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/mazurka_3_7_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "8. Mazurka in b flat minor, Op. 3 No. 8",
+      "catalog_numbers": {
+        "Op": "3/8"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/mazurka_3_8_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "9. Mazurka in g sharp minor, Op. 3 No. 9",
+      "catalog_numbers": {
+        "Op": "3/9"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/mazurka_3_9_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "10. Mazurka in e flat minor, Op. 3 No. 10",
+      "catalog_numbers": {
+        "Op": "3/10"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/mazurka_3_10_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "I. Feuillet d'album, Andante piacevole",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/morceaux_45_1_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "II. Po�me fantasque, Presto",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/morceaux_45_2_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "III. Pr�lude, Andante",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/morceaux_45_3_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "I. Po�me, Lento",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/morceaux_52_1_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "II. Enigme, Etrange, capricieusement",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/morceaux_52_2_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "III. Po�me, Pas vite",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/morceaux_52_3_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Po�me tragique Op. 34 (1903)",
+      "catalog_numbers": {
+        "Op": "34"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/poeme_tragique_34_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Po�me satanique Op. 36 (1903)",
+      "catalog_numbers": {
+        "Op": "36"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/poeme_satanique_36_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "I. Po�me",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/piece_59_1_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Po�me-Nocturne Op. 61 (1911-12)",
+      "catalog_numbers": {
+        "Op": "61"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/poeme-nocturne_61_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonate No.  4 in F sharp major, Op.  30",
+      "catalog_numbers": {
+        "Op": "30"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/sonate_4_30_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonate No. 7, Op. 64 (1911-12)",
+      "catalog_numbers": {
+        "Op": "64"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=scriabin/sonate_7_64_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Préludes opus 16 - 1.",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 2.5",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/ScriabinA/O16/scriabine-op16-no1/scriabine-op16-no1.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Préludes opus 16 - 2.",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 2.5",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/ScriabinA/O16/scriabine-op16-no2/scriabine-op16-no2.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Préludes opus 16 - 3.",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 2.5",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/ScriabinA/O16/scriabine-op16-no3/scriabine-op16-no3.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Préludes opus 16 - 4.",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 2.5",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/ScriabinA/O16/scriabine-op16-no4/scriabine-op16-no4-lys/scriabine-op16-no4-mid.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Préludes opus 16 - 5.",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 2.5",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/ScriabinA/O16/scriabine-op16-no5/scriabine-op16-no5.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Etude",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/ScriabinA/O2/scriabin_etude_2_1/scriabin_etude_2_1.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

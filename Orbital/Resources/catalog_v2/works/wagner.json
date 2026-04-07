@@ -1,0 +1,659 @@
+{
+  "works": [
+    {
+      "title": "Die Hochzeit",
+      "qid": "Q1213477"
+    },
+    {
+      "title": "Die Feen",
+      "qid": "Q477656"
+    },
+    {
+      "title": "Rienzi",
+      "qid": "Q689441"
+    },
+    {
+      "title": "Arrival at the Black Swans",
+      "qid": "Q557486"
+    },
+    {
+      "title": "Kaisermarsch",
+      "qid": "Q16988570"
+    },
+    {
+      "title": "Byeway",
+      "qid": "Q104896306"
+    },
+    {
+      "title": "Almighty Father",
+      "qid": "Q54989233"
+    },
+    {
+      "title": "An Webers Grabe",
+      "qid": "Q101424826"
+    },
+    {
+      "title": "Bridal Chorus",
+      "qid": "Q1476098"
+    },
+    {
+      "title": "Centennial march",
+      "qid": "Q101424839",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/wagner_tannhauser_march_1474_r_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/wagner_tannhauser_march_5394_s_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Columbus Overture",
+      "qid": "Q101424960"
+    },
+    {
+      "title": "Confession",
+      "qid": "Q5159981"
+    },
+    {
+      "title": "Das Liebesmahl der Apostel",
+      "qid": "Q1169644"
+    },
+    {
+      "title": "Das Liebesverbot",
+      "qid": "Q174392"
+    },
+    {
+      "title": "Das Rheingold",
+      "qid": "Q327717",
+      "key": "G major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1852
+    },
+    {
+      "title": "Der Ring an einem Abend",
+      "qid": "Q107976754"
+    },
+    {
+      "title": "Der Ring des Nibelungen",
+      "qid": "Q190237",
+      "key": "G♭ major",
+      "instruments": [
+        "2.u.3.",
+        "ENGLISCHES HORN.",
+        "2.u.3. (B.)",
+        "3.u.4.",
+        "3.",
+        "2 Bass. (F.)",
+        "2.u.3. (Es.)",
+        "PAUKEN."
+      ],
+      "year_composed": 1848
+    },
+    {
+      "title": "Die Deutsche Wochenschau",
+      "qid": "Q248596"
+    },
+    {
+      "title": "Die Freiheit Rom's",
+      "qid": "Q54989235"
+    },
+    {
+      "title": "Die Laune des Verliebten",
+      "qid": "Q41738484"
+    },
+    {
+      "title": "Die Meistersinger von Nürnberg",
+      "qid": "Q465540",
+      "instruments": [
+        "kl.Fl.",
+        "gr.Fl.I.",
+        "gr.Fl.II.",
+        "Hob.I.",
+        "Hob.II.",
+        "Cl.1.",
+        "Cl.2.",
+        "Hr.1 in F.",
+        "Hr.2 in F.",
+        "Hr.3 u.4 in F.",
+        "Hr.3 u.4 in C.",
+        "Fag.",
+        "Trp. in F.",
+        "Trp. in C.",
+        "Bsst.",
+        "Pk. C.G.",
+        "Trgl.",
+        "Becken.",
+        "Br."
+      ],
+      "year_composed": 1845
+    },
+    {
+      "title": "Die Walküre",
+      "qid": "Q324319"
+    },
+    {
+      "title": "Détective",
+      "qid": "Q979231"
+    },
+    {
+      "title": "Einsam in trübem [sic] Tagen = Drwy ddyddiau'r dwys ofalon (Breuddwyd Elsa) : Lohengrin",
+      "qid": "Q78647882"
+    },
+    {
+      "title": "Elegy in A-flat major",
+      "qid": "Q101425149",
+      "key": "A♭ Major",
+      "instruments": [
+        "Piano"
+      ]
+    },
+    {
+      "title": "Escape to Nowhere",
+      "qid": "Q3057871"
+    },
+    {
+      "title": "Family Tree",
+      "qid": "Q3202242"
+    },
+    {
+      "title": "Farewell, Siegmund, hero most blest",
+      "qid": "Q54989155"
+    },
+    {
+      "title": "Faust Overture",
+      "qid": "Q955581",
+      "key": "F major",
+      "instruments": [
+        "Kleine Flote.",
+        "2 grosse Floten.",
+        "2 Hoboen.",
+        "2 Clarinetten in B.",
+        "1.,2.,",
+        "2 Horner in F.",
+        "2 Horner in D.",
+        "2 Trompetten in F.",
+        "Basstuba.",
+        "Pauken in D.A.",
+        "Violine I.",
+        "Violine II.",
+        "Bratsche.",
+        "Violoncell.",
+        "Contrabass."
+      ]
+    },
+    {
+      "title": "Festgesang: 'Der Tag erscheint'",
+      "qid": "Q101424834"
+    },
+    {
+      "title": "Gerechter Gott = O gyfiawn Dduw : Rienzi",
+      "qid": "Q78647944"
+    },
+    {
+      "title": "Good Friday Music (from Parsifal)",
+      "qid": "Q138318203"
+    },
+    {
+      "title": "Grail Narration",
+      "qid": "Q1478847"
+    },
+    {
+      "title": "Grand Sonata in A major",
+      "qid": "Q101425067"
+    },
+    {
+      "title": "Gretchen at the spinning wheel",
+      "qid": "Q114204263"
+    },
+    {
+      "title": "Götterdämmerung",
+      "qid": "Q272029",
+      "key": "F major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1874
+    },
+    {
+      "title": "Hardware Wars",
+      "qid": "Q15052161"
+    },
+    {
+      "title": "Huldigungsmarsch",
+      "qid": "Q101424837"
+    },
+    {
+      "title": "In Danger and Deep Distress, the Middleway Spells Certain Death",
+      "qid": "Q1660620"
+    },
+    {
+      "title": "In Memoriam Yakov Kreizberg",
+      "qid": "Q86520095"
+    },
+    {
+      "title": "Kinderkatechismus",
+      "qid": "Q131470953"
+    },
+    {
+      "title": "L'Ennui",
+      "qid": "Q3203141"
+    },
+    {
+      "title": "La Complainte du Hollandais",
+      "qid": "Q3207671"
+    },
+    {
+      "title": "Lessons of Darkness",
+      "qid": "Q2527167"
+    },
+    {
+      "title": "Liebestod",
+      "qid": "Q645250",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/wagner_tristan_isolde_isolde-s_liebestodt_188_r_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lohengrin",
+      "qid": "Q23085",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/wagner-liszt_100285a_tannhauser_overture_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/wagner-liszt_50557a_tannhauser_overture_(c)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/wagner-liszt_festival_and_bridal_song_from_lohengrin_(c)clements.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lohengrin",
+      "qid": "Q3836469",
+      "instruments": [
+        "Soprano",
+        "Alto",
+        "Tenor",
+        "Bass",
+        "Piano"
+      ]
+    },
+    {
+      "title": "Lohengrin - Act I",
+      "qid": "Q60627740"
+    },
+    {
+      "title": "Lohengrin - Act II",
+      "qid": "Q60627783"
+    },
+    {
+      "title": "Lohengrin - Act III",
+      "qid": "Q60627825"
+    },
+    {
+      "title": "Lohengrin - Prelude to Act III",
+      "qid": "Q60628006"
+    },
+    {
+      "title": "Lohengrin - Vorspiel",
+      "qid": "Q60627697"
+    },
+    {
+      "title": "Lonely, in troubled days",
+      "qid": "Q54989185"
+    },
+    {
+      "title": "Love in the Afternoon",
+      "qid": "Q630855"
+    },
+    {
+      "title": "Ludwig II: Glanz und Ende eines Königs",
+      "qid": "Q324524"
+    },
+    {
+      "title": "Ludwig: Requiem for a Virgin King",
+      "qid": "Q6699165"
+    },
+    {
+      "title": "Magic Fire",
+      "qid": "Q976002",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/wagner_59963a_magic_fire_scene_(die_walkuere)_(c)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Meeting Venus",
+      "qid": "Q148383"
+    },
+    {
+      "title": "Melancholia",
+      "qid": "Q165699"
+    },
+    {
+      "title": "Melodramma",
+      "qid": "Q3854283"
+    },
+    {
+      "title": "Moloch",
+      "qid": "Q604954"
+    },
+    {
+      "title": "My father promised me a sword",
+      "qid": "Q54989164"
+    },
+    {
+      "title": "Männerlist grösser als Frauenlist",
+      "qid": "Q1996297"
+    },
+    {
+      "title": "Once More, with Feeling!",
+      "qid": "Q2605605"
+    },
+    {
+      "title": "Overture from Die Meistersinger von Nürnberg",
+      "qid": "Q138319557"
+    },
+    {
+      "title": "Parsifal",
+      "qid": "Q220340",
+      "key": "D♭ major",
+      "instruments": [
+        "FLOTEN.",
+        "3 HOBOEN.",
+        "3 CLARINETTEN. (in B)",
+        "ENGLISCHES HORN.",
+        "BASS CLARINETTEN. (B)",
+        "3 FAGOTT.",
+        "CONTRAFAGOTT.",
+        "3 POSAUNE.",
+        "BASS TUBA.",
+        "PAUKEN.",
+        "BRATSCHEN."
+      ],
+      "year_composed": 1877
+    },
+    {
+      "title": "Parsifal",
+      "qid": "Q3896511"
+    },
+    {
+      "title": "Parsifal",
+      "qid": "Q57511337",
+      "key": "F major",
+      "instruments": [
+        "Kundry",
+        "Parsifal",
+        "Klingsor",
+        "Piano"
+      ]
+    },
+    {
+      "title": "Patriotism",
+      "qid": "Q8874808"
+    },
+    {
+      "title": "Polonia",
+      "qid": "Q19895213"
+    },
+    {
+      "title": "Ponto a Ponto",
+      "qid": "Q10351536"
+    },
+    {
+      "title": "Ride of the Valkyries",
+      "qid": "Q1464243",
+      "key": "D major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1851
+    },
+    {
+      "title": "Siegfried",
+      "qid": "Q333146",
+      "key": "E♭ major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1850
+    },
+    {
+      "title": "Siegfried Idyll",
+      "qid": "Q2117942"
+    },
+    {
+      "title": "Siegfrieds Tod",
+      "qid": "Q3483409"
+    },
+    {
+      "title": "Sing Faster: The Stagehands' Ring Cycle",
+      "qid": "Q24577958"
+    },
+    {
+      "title": "Swastika",
+      "qid": "Q66384894"
+    },
+    {
+      "title": "Symphony in C major",
+      "qid": "Q2659761"
+    },
+    {
+      "title": "Symphony in E major",
+      "qid": "Q101424763",
+      "instruments": [
+        "Flutes",
+        "Oboes",
+        "Clarinets in B♭",
+        "Bassoons",
+        "Horns in F",
+        "Trompette en Do",
+        "Timpani",
+        "Violins I",
+        "Violins II",
+        "Violas",
+        "Violoncellos",
+        "Contrabasses"
+      ]
+    },
+    {
+      "title": "Tannhäuser",
+      "qid": "Q560619",
+      "key": "B major",
+      "instruments": [
+        "Horn 1 in F",
+        "Horn 2 in F",
+        "Horn 3 in F",
+        "Horn 4 in F"
+      ],
+      "year_composed": 1850,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=wagner-liszt_tannhauser_entry_guests_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "That Obscure Object of Desire",
+      "qid": "Q1138798"
+    },
+    {
+      "title": "The Flying Dutchman",
+      "qid": "Q114640",
+      "key": "F major",
+      "instruments": [
+        "Piccolo.",
+        "Flauti I.II.",
+        "Oboi I.II.",
+        "Clarinetti I.II in B (A♭).",
+        "Corno ingelese.",
+        "Corni I.II in F (Fa).",
+        "Corni III.IV in D (Re).",
+        "Fagotti I.II.",
+        "Trombe I.II in F (Fa).",
+        "Tromboni I.II.III.",
+        "Tuba.",
+        "Timpani in D u.A (Re La).",
+        "Arpa.",
+        "Viola.",
+        "Violoncello.",
+        "Contrabasso."
+      ],
+      "year_composed": 1850
+    },
+    {
+      "title": "The Flying Dutchman Overture",
+      "qid": "Q138499231"
+    },
+    {
+      "title": "The time has come and seven years have again elapsed",
+      "qid": "Q54989061"
+    },
+    {
+      "title": "Thou art the spring",
+      "qid": "Q54989163"
+    },
+    {
+      "title": "To an Evening Star",
+      "qid": "Q7811203"
+    },
+    {
+      "title": "Trauermusik",
+      "qid": "Q101424813"
+    },
+    {
+      "title": "Tristan chord",
+      "qid": "Q1139339",
+      "key": "A major",
+      "instruments": [
+        "Flûte",
+        "Hautbois",
+        "Clarinettes en La",
+        "Cors anglais",
+        "Cors en Fa",
+        "Cors en Mi",
+        "Bassons I",
+        "Bassons II",
+        "Clarinette Basse en La",
+        "Trompette en Fa",
+        "Trombones",
+        "Tuba Sous-Contrebasse",
+        "Timbales",
+        "Violons I",
+        "Violons II",
+        "Altos",
+        "Violoncelles",
+        "Contrebasses"
+      ]
+    },
+    {
+      "title": "Tristan und Isolde",
+      "qid": "Q1324254",
+      "key": "D major",
+      "instruments": [
+        "Tristan",
+        "Kurwenal",
+        "Piano"
+      ],
+      "year_composed": 1857
+    },
+    {
+      "title": "Un Chien Andalou",
+      "qid": "Q190575"
+    },
+    {
+      "title": "Venusberg",
+      "qid": "Q56510784"
+    },
+    {
+      "title": "Wesendonck Lieder",
+      "qid": "Q1541783"
+    },
+    {
+      "title": "What's Opera, Doc?",
+      "qid": "Q2635222"
+    },
+    {
+      "title": "White Tiger",
+      "qid": "Q2990368"
+    },
+    {
+      "title": "Winifred Wagner und die Geschichte des Hauses Wahnfried von 1914-1975",
+      "qid": "Q27832311"
+    },
+    {
+      "title": "Wuthering Heights",
+      "qid": "Q2656419"
+    },
+    {
+      "title": "Züricher Vielliebchen-Walzer",
+      "qid": "Q2605556"
+    },
+    {
+      "title": "Concert Paraphrase (by Rybner)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/wagner_58857a_die_meistersinger_concert_paraphrase_(c)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Einzug in die Gralsburg, Act 3 (c. 1877-81)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=wagner_parsifal_act3_einzug_in_die_gralsburg_(c)fallen.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Prize Song (transcription by Schott)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/wagner_917w_prize_song_(nc)smythe.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

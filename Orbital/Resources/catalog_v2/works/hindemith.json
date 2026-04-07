@@ -1,0 +1,429 @@
+{
+  "works": [
+    {
+      "title": "String Quartet No. 4",
+      "qid": "Q3413845"
+    },
+    {
+      "title": "Overture of 'The Flying Dutchman' as played at sight by a bad spa orchestra at the well at 7 in the morning",
+      "qid": "Q736496"
+    },
+    {
+      "title": "Konzertmusik, Op. 41",
+      "qid": "Q733434"
+    },
+    {
+      "title": "Kammermusik No. 5, op. 36 no. 4",
+      "qid": "Q74201978"
+    },
+    {
+      "title": "Neues vom Tage",
+      "qid": "Q822985"
+    },
+    {
+      "title": "Konzertmusik for Brass and String Orchestra",
+      "qid": "Q3198808"
+    },
+    {
+      "title": "Symphony: Mathis der Maler",
+      "qid": "Q3299003",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=hindemith/mathis_der_maler_1_(c)siu.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=hindemith/mathis_der_maler_2_(c)siu.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=hindemith/mathis_der_maler_3_(c)siu.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Piano Sonata No. 2",
+      "qid": "Q55629966"
+    },
+    {
+      "title": "Singet leise",
+      "qid": "Q106043613"
+    },
+    {
+      "title": "Quartet for clarinet, violin, cello and piano",
+      "qid": "Q3413717"
+    },
+    {
+      "title": "Ludus Tonalis",
+      "qid": "Q1420025"
+    },
+    {
+      "title": "Symphonic Metamorphosis on Themes by Carl Maria von Weber",
+      "qid": "Q3068189",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=hindemith/metamorphoses_1_(c)siu.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=hindemith/metamorphoses_2_(c)siu.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=hindemith/metamorphoses_3_(c)siu.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=hindemith/metamorphoses_4_(c)siu.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Hérodiade",
+      "qid": "Q21998538"
+    },
+    {
+      "title": "The Long Christmas Dinner",
+      "qid": "Q7748181"
+    },
+    {
+      "title": "3 Pieces for Cello and Piano, op. 8",
+      "qid": "Q136852624"
+    },
+    {
+      "title": "Abendständchen",
+      "qid": "Q106039726"
+    },
+    {
+      "title": "Acht Stücke für Flöte allein",
+      "qid": "Q12300494"
+    },
+    {
+      "title": "Bassoon Sonata",
+      "qid": "Q119016118"
+    },
+    {
+      "title": "Blasseptett",
+      "qid": "Q3479073"
+    },
+    {
+      "title": "Cardillac",
+      "qid": "Q618009"
+    },
+    {
+      "title": "Clarinet Concerto",
+      "qid": "Q5126982"
+    },
+    {
+      "title": "Clarinet Sonata",
+      "qid": "Q119700582"
+    },
+    {
+      "title": "Concerto for Cello and Orchestra",
+      "qid": "Q20077965"
+    },
+    {
+      "title": "Das Marienleben",
+      "qid": "Q1169721"
+    },
+    {
+      "title": "Das Nusch-Nuschi",
+      "qid": "Q5226432"
+    },
+    {
+      "title": "Der Schwanendreher",
+      "qid": "Q864573"
+    },
+    {
+      "title": "Die Harmonie der Welt",
+      "qid": "Q952616"
+    },
+    {
+      "title": "Die Harmonie der Welt Symphony",
+      "qid": "Q3027323"
+    },
+    {
+      "title": "Dr. M",
+      "qid": "Q1169101"
+    },
+    {
+      "title": "Duet",
+      "qid": "Q137187362"
+    },
+    {
+      "title": "English Horn Sonata",
+      "qid": "Q119042335"
+    },
+    {
+      "title": "Flute Sonata",
+      "qid": "Q42405234"
+    },
+    {
+      "title": "Ghosts Before Breakfast",
+      "qid": "Q3104970"
+    },
+    {
+      "title": "Harp Sonata",
+      "qid": "Q119495735"
+    },
+    {
+      "title": "Hin und zurück",
+      "qid": "Q3135744"
+    },
+    {
+      "title": "Histoire(s) du cinéma",
+      "qid": "Q2533567"
+    },
+    {
+      "title": "Horn Concerto (Hindemith)",
+      "qid": "Q28497915"
+    },
+    {
+      "title": "Horn Sonata",
+      "qid": "Q119441405"
+    },
+    {
+      "title": "Im Kampf mit dem Berge",
+      "qid": "Q15227192"
+    },
+    {
+      "title": "In einer Nacht",
+      "qid": "Q3149691"
+    },
+    {
+      "title": "Julia Fischer at the BBC Proms",
+      "qid": "Q86523961"
+    },
+    {
+      "title": "Kammermusik",
+      "qid": "Q963679",
+      "instruments": [
+        "Flute",
+        "Oboe",
+        "E♭ clarinet",
+        "B♭ clarinet",
+        "Bass clarinet",
+        "Bassoon 1",
+        "Bassoon 2",
+        "Contrabassoon",
+        "Horn in F",
+        "C trumpet 1",
+        "C trumpet 2",
+        "Trombone",
+        "Tuba",
+        "Viola",
+        "4 violoncello",
+        "4 contrabasses"
+      ],
+      "year_composed": 1922
+    },
+    {
+      "title": "Kammermusik No. 1, op. 24 no. 1",
+      "qid": "Q109642710"
+    },
+    {
+      "title": "Kammermusik No. 2, op. 36 no. 1",
+      "qid": "Q109642731"
+    },
+    {
+      "title": "Kammermusik No. 3, op. 36 no. 2",
+      "qid": "Q109729263"
+    },
+    {
+      "title": "Kammermusik No. 4, op. 36 no. 3",
+      "qid": "Q109729422"
+    },
+    {
+      "title": "Kammermusik No. 6, op. 46 no. 1",
+      "qid": "Q109729452"
+    },
+    {
+      "title": "Kammermusik No. 7, op. 46 no. 2",
+      "qid": "Q109729467"
+    },
+    {
+      "title": "Kleine Kammermusik, Op. 24, No. 2",
+      "qid": "Q28497638"
+    },
+    {
+      "title": "Mathis der Maler",
+      "qid": "Q508290"
+    },
+    {
+      "title": "Minimax",
+      "qid": "Q97166841"
+    },
+    {
+      "title": "Mörder, Hoffnung der Frauen",
+      "qid": "Q6950358"
+    },
+    {
+      "title": "Nobilissima Visione",
+      "qid": "Q3342523"
+    },
+    {
+      "title": "Oboe Sonata",
+      "qid": "Q119575218"
+    },
+    {
+      "title": "Piano Sonata No. 1",
+      "qid": "Q18663730"
+    },
+    {
+      "title": "Sancta Susanna",
+      "qid": "Q3072314"
+    },
+    {
+      "title": "Sonata for Four Horns",
+      "qid": "Q119718701"
+    },
+    {
+      "title": "Sonata for Solo Viola No. 2",
+      "qid": "Q137177378"
+    },
+    {
+      "title": "Sonata in E-flat major for Alto Horn and Piano",
+      "qid": "Q3490180",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=hindemith/sonata_for_organ_1_(c)borsari.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "String Quartet No. 1",
+      "qid": "Q3413793"
+    },
+    {
+      "title": "String Quartet No. 2",
+      "qid": "Q3413816"
+    },
+    {
+      "title": "String Quartet No. 3",
+      "qid": "Q3413834"
+    },
+    {
+      "title": "String Quartet No. 5",
+      "qid": "Q3413850"
+    },
+    {
+      "title": "String Quartet No. 6",
+      "qid": "Q3413851"
+    },
+    {
+      "title": "String Quartet No. 7",
+      "qid": "Q15990923"
+    },
+    {
+      "title": "String Trio No. 2",
+      "qid": "Q3539401"
+    },
+    {
+      "title": "String Trio, Op. 34",
+      "qid": "Q3539408"
+    },
+    {
+      "title": "Suite \"1922\"",
+      "qid": "Q3503209"
+    },
+    {
+      "title": "Symphonia Serena",
+      "qid": "Q3507587"
+    },
+    {
+      "title": "Symphony in B-flat for Band",
+      "qid": "Q3467686"
+    },
+    {
+      "title": "The Flight across the Ocean",
+      "qid": "Q444076"
+    },
+    {
+      "title": "The Four Temperaments",
+      "qid": "Q56458418"
+    },
+    {
+      "title": "Trauermusik",
+      "qid": "Q427522"
+    },
+    {
+      "title": "Triadic Ballet",
+      "qid": "Q318793"
+    },
+    {
+      "title": "Trombone Sonata",
+      "qid": "Q119458032"
+    },
+    {
+      "title": "Trumpet Sonata",
+      "qid": "Q119443618"
+    },
+    {
+      "title": "Tuba Sonata",
+      "qid": "Q119458371"
+    },
+    {
+      "title": "Tuttifäntchen",
+      "qid": "Q17063373"
+    },
+    {
+      "title": "Viola Sonata No. 4",
+      "qid": "Q7933041"
+    },
+    {
+      "title": "Violin Sonata No. 2 (Hindemith)",
+      "qid": "Q65246666"
+    },
+    {
+      "title": "When Lilacs Last in the Dooryard Bloom'd",
+      "qid": "Q3567675"
+    },
+    {
+      "title": "Wir bauen eine Stadt",
+      "qid": "Q110038665",
+      "instruments": [
+        "Flute",
+        "Orff Alto Glockenspiel",
+        "Vibraphone"
+      ],
+      "year_composed": 1930
+    },
+    {
+      "title": "Ragtime (Well-Tempered) for piano four hands [from the c minor Fugue from Bach's Well-Tempered Klavier I] (1921)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=hindemith/ragtime_(c)siu.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kleine Klaviermusik, Leichte F�nfstonst�cke f�r Klavier (1929)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/hindemith_kleine_klaviermusik_1_(c)simonetto.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/hindemith_kleine_klaviermusik_2_(c)simonetto.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/hindemith_kleine_klaviermusik_3_(c)simonetto.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/hindemith_kleine_klaviermusik_4_(c)simonetto.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/hindemith_kleine_klaviermusik_5_(c)simonetto.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/hindemith_kleine_klaviermusik_6_(c)simonetto.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/hindemith_kleine_klaviermusik_7_(c)simonetto.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/hindemith_kleine_klaviermusik_8_(c)simonetto.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/hindemith_kleine_klaviermusik_9_(c)simonetto.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/hindemith_kleine_klaviermusik_10_(c)simonetto.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/hindemith_kleine_klaviermusik_11_(c)simonetto.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/hindemith_kleine_klaviermusik_12_(c)simonetto.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

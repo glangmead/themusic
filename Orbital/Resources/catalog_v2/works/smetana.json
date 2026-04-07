@@ -1,0 +1,142 @@
+{
+  "works": [
+    {
+      "title": "Piano Trio in G Minor",
+      "qid": "Q11331293"
+    },
+    {
+      "title": "On the Seashore",
+      "qid": "Q451461"
+    },
+    {
+      "title": "Libuše",
+      "qid": "Q600572"
+    },
+    {
+      "title": "Viola",
+      "qid": "Q3489036"
+    },
+    {
+      "title": "Dreams",
+      "qid": "Q2392083"
+    },
+    {
+      "title": "From Bohemian Woods and Fields",
+      "qid": "Q10857024"
+    },
+    {
+      "title": "Šárka",
+      "qid": "Q10508471"
+    },
+    {
+      "title": "String Quartet No. 1",
+      "qid": "Q3141125"
+    },
+    {
+      "title": "Blaník",
+      "qid": "Q11158707"
+    },
+    {
+      "title": "The Devil's Wall",
+      "qid": "Q1216736"
+    },
+    {
+      "title": "String Quartet No. 2",
+      "qid": "Q7623929"
+    },
+    {
+      "title": "Bagatelles and Impromptus",
+      "qid": "Q2878995"
+    },
+    {
+      "title": "Czech dances",
+      "qid": "Q3015682"
+    },
+    {
+      "title": "Dalibor",
+      "qid": "Q1157925"
+    },
+    {
+      "title": "Dalibor",
+      "qid": "Q5210950"
+    },
+    {
+      "title": "Hakon Jarl",
+      "qid": "Q18160838"
+    },
+    {
+      "title": "Má vlast",
+      "qid": "Q1044709"
+    },
+    {
+      "title": "Prodaná nevěsta",
+      "qid": "Q7247579"
+    },
+    {
+      "title": "Sitkovetsky Piano Trio plays Dvořák, Smetana & Suk",
+      "qid": "Q98590117"
+    },
+    {
+      "title": "Six Character Pieces",
+      "qid": "Q3485655"
+    },
+    {
+      "title": "Sketches I",
+      "qid": "Q3058637"
+    },
+    {
+      "title": "Sketches II",
+      "qid": "Q3058640"
+    },
+    {
+      "title": "The Bartered Bride",
+      "qid": "Q907745",
+      "key": "G major",
+      "instruments": [
+        "Klavír"
+      ],
+      "year_composed": 1866
+    },
+    {
+      "title": "The Brandenburgers in Bohemia",
+      "qid": "Q1211710"
+    },
+    {
+      "title": "The Don Juans",
+      "qid": "Q11821482"
+    },
+    {
+      "title": "The Kiss",
+      "qid": "Q1195062"
+    },
+    {
+      "title": "The Secret",
+      "qid": "Q1167948"
+    },
+    {
+      "title": "The Two Widows",
+      "qid": "Q232134"
+    },
+    {
+      "title": "Three Album Leaves",
+      "qid": "Q3071022"
+    },
+    {
+      "title": "Tábor",
+      "qid": "Q12060102"
+    },
+    {
+      "title": "Vltava",
+      "qid": "Q3820990",
+      "key": "G major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1874
+    },
+    {
+      "title": "Vyšehrad",
+      "qid": "Q11949366"
+    }
+  ]
+}

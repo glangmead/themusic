@@ -1,0 +1,4291 @@
+{
+  "works": [
+    {
+      "title": "Pieśni, Op. posth. 74",
+      "qid": "Q7210085"
+    },
+    {
+      "title": "Polonaises, Op. posth. [71]",
+      "qid": "Q15457502"
+    },
+    {
+      "title": "Trois nouvelles études",
+      "qid": "Q147580"
+    },
+    {
+      "title": "Waltzes, Op. Posth. 70",
+      "qid": "Q7966847"
+    },
+    {
+      "title": "Waltzes, Op. posth. 69",
+      "qid": "Q16747421"
+    },
+    {
+      "title": "Étude No.1 from Trois nouvelles études",
+      "qid": "Q9255656",
+      "key": "F minor"
+    },
+    {
+      "title": "Étude No.2 from Trois nouvelles études",
+      "qid": "Q9255658",
+      "key": "A-flat major"
+    },
+    {
+      "title": "Étude No.3 from Trois nouvelles études",
+      "qid": "Q16741308",
+      "key": "D-flat major"
+    },
+    {
+      "title": "Études, Op. 10",
+      "qid": "Q9255660",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/etudes_10_(c)hisamori.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/etudes_25_(c)hisamori.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Military march",
+      "qid": "Q11770508"
+    },
+    {
+      "title": "Polonaise in B-flat major, B.3",
+      "qid": "Q16142845",
+      "key": "B-flat major"
+    },
+    {
+      "title": "Polonaise in G minor, B.1",
+      "qid": "Q16142739",
+      "key": "G minor"
+    },
+    {
+      "title": "Variations",
+      "qid": "Q136407804",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/la_ci_darem_la_mano_(c)halstead.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "2 Mazurkas, B. 16",
+      "qid": "Q130076745"
+    },
+    {
+      "title": "Introduction and Polonaise brillante in C major, Op. 3",
+      "qid": "Q1114066",
+      "key": "C major"
+    },
+    {
+      "title": "Mazurka in B-flat major",
+      "qid": "Q130229573",
+      "key": "B-flat major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_7_1_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_17_1_(c)lubetsky.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka in B-flat minor, KK Anh. Ib",
+      "qid": "Q134416662",
+      "key": "B-flat minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_24_4_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/mazurka_24_4_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka in D major, B.4, KK Anh. Ia/1",
+      "qid": "Q134414231",
+      "key": "D major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_33_2_(c)lubetsky.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka in G major",
+      "qid": "Q130148840",
+      "key": "G major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_50_1_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_67_1_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_68_1_(c)lubetsky.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Piano Sonata No. 1 in C minor, Op. 4",
+      "qid": "Q1746036",
+      "key": "C minor"
+    },
+    {
+      "title": "Piano Trio",
+      "qid": "Q6143523",
+      "key": "G minor"
+    },
+    {
+      "title": "Polonaise in A-flat major, B.5",
+      "qid": "Q16142859",
+      "key": "A-flat major"
+    },
+    {
+      "title": "Mazurka in A minor, B. 8",
+      "qid": "Q133571832",
+      "key": "A minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_7_2_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_17_4_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_41_2_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_59_1_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_67_4_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_68_4_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_a-minor_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/mazurka_7_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/mazurka_17_4_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/mazurka_59_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/mazurka_67_4_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/mazurka_68_2_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka in A minor, op. 7 no. 2a",
+      "qid": "Q133279673",
+      "key": "A minor"
+    },
+    {
+      "title": "Mazurka in A-flat major, B. 7",
+      "qid": "Q133448949",
+      "key": "A-flat major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_7_4_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_17_3_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_24_3_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_41_4_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_50_2_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/mazurka_59_2_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_59_2_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/mazurka_17_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/mazurka_24_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/mazurka_50_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/mazurka_59_2_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Polonaise in G-sharp minor, B.6",
+      "qid": "Q16142873",
+      "key": "G-sharp minor"
+    },
+    {
+      "title": "Variations for flute and piano in E major",
+      "qid": "Q129511462",
+      "key": "E major"
+    },
+    {
+      "title": "Variations in E major on the air \"Der Schweizerbub\"",
+      "qid": "Q11322493",
+      "key": "E major"
+    },
+    {
+      "title": "Waltz in C major, KK Vb/8",
+      "qid": "Q135068942",
+      "key": "C major"
+    },
+    {
+      "title": "Rondo in C minor, op. 1",
+      "qid": "Q727987",
+      "key": "C minor"
+    },
+    {
+      "title": "Polonaise in B-flat minor, B.13",
+      "qid": "Q16142881",
+      "key": "B-flat minor"
+    },
+    {
+      "title": "Variations in F major, KK Vb/2",
+      "qid": "Q136455358",
+      "key": "F major"
+    },
+    {
+      "title": "Waltz in C major, KK Vb/3",
+      "qid": "Q135105139",
+      "key": "C major"
+    },
+    {
+      "title": "Écossaise No. 1, Op. posth. 72, No. 3/a",
+      "qid": "Q16765416",
+      "key": "D major"
+    },
+    {
+      "title": "Écossaise No. 2, Op. posth. 72, No. 3/b",
+      "qid": "Q16765417",
+      "key": "G major"
+    },
+    {
+      "title": "Écossaise No. 3, Op. posth. 72, No. 3/c",
+      "qid": "Q16765418",
+      "key": "D-flat major"
+    },
+    {
+      "title": "Three Écossaises, Op. posth. 72, No. 3",
+      "qid": "Q11289887"
+    },
+    {
+      "title": "Variations sur un air national de Moore, B.12a",
+      "qid": "Q16766039",
+      "key": "D major"
+    },
+    {
+      "title": "Andante dolente in B-flat minor, KK Vb/1",
+      "qid": "Q136407816",
+      "key": "B-flat minor"
+    },
+    {
+      "title": "Contredanse in G-flat major, B. 17",
+      "qid": "Q5785161",
+      "key": "G-flat major"
+    },
+    {
+      "title": "Ecossaise in E-flat major, KK Ve/3",
+      "qid": "Q136433010",
+      "key": "E-flat major"
+    },
+    {
+      "title": "Ecossaise, KK Vb/9",
+      "qid": "Q136407833",
+      "key": "B-flat minor"
+    },
+    {
+      "title": "Mazurka in A minor, op. 68 no. 2",
+      "qid": "Q121747721",
+      "key": "A minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka68-2.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        },
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_a-minor_posthum_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/mazurka_posth_50_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurkas, Op. 68",
+      "qid": "Q16739812"
+    },
+    {
+      "title": "Polonaise, Op. posth. [71], No. 1 in D minor",
+      "qid": "Q16746794",
+      "key": "D minor"
+    },
+    {
+      "title": "Polonaise, Op. posth. [71], No. 3 in F minor",
+      "qid": "Q16746798",
+      "key": "F minor"
+    },
+    {
+      "title": "Rondo à la mazur in F major, Op. 5",
+      "qid": "Q3941124",
+      "key": "F major"
+    },
+    {
+      "title": "Variations in B-flat major on \"Là ci darem la mano\", op. 2",
+      "qid": "Q1113953",
+      "key": "B-flat major"
+    },
+    {
+      "title": "Waltz in A-flat major, KK Vb/4",
+      "qid": "Q135105158",
+      "key": "A-flat major"
+    },
+    {
+      "title": "Funeral March in C minor, Op. posth. 72, No. 2",
+      "qid": "Q16739778",
+      "key": "C minor"
+    },
+    {
+      "title": "Waltz No. 17 in E-flat major, Op. posth.",
+      "qid": "Q16747520",
+      "catalog_numbers": {
+        "D": "4"
+      },
+      "key": "E-flat major"
+    },
+    {
+      "title": "Fantasy on Polish Airs in A major, op. 13",
+      "qid": "Q9257964",
+      "key": "A major"
+    },
+    {
+      "title": "Polonaise, Op. posth. [71], No. 2 in B-flat major",
+      "qid": "Q16746796",
+      "key": "B-flat major"
+    },
+    {
+      "title": "Rondo in C major, Op. 73a",
+      "qid": "Q135441099",
+      "key": "C major"
+    },
+    {
+      "title": "Rondo in C major, Op. posth. 73",
+      "qid": "Q11350830",
+      "key": "C major"
+    },
+    {
+      "title": "Rondo à la Krakowiak in F major, op. 14",
+      "qid": "Q4384879",
+      "key": "F major"
+    },
+    {
+      "title": "Waltz in D minor, KK Vb/6",
+      "qid": "Q135105166",
+      "key": "D minor"
+    },
+    {
+      "title": "Concerto for Piano and Orchestra no. 2 in F minor, op. 21",
+      "qid": "Q210210",
+      "key": "F minor"
+    },
+    {
+      "title": "Jakież kwiaty",
+      "qid": "Q136606315",
+      "key": "G major"
+    },
+    {
+      "title": "Mazurka in C major, op. 68 no. 1",
+      "qid": "Q121747047",
+      "key": "C major",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka68-1.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        },
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_7_5_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_24_2_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_33_3_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_56_2_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_67_3_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_68_3_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/mazurka_67_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/mazurka_68_1_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka in D major, B. 31",
+      "qid": "Q130273101",
+      "key": "D major"
+    },
+    {
+      "title": "Mazurka in F major, op. 68 no. 3",
+      "qid": "Q122587046",
+      "key": "F major",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka68-3.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nocturne No. 19 in E minor, Op. posth. 72, No. 1",
+      "qid": "Q11431260",
+      "key": "E minor"
+    },
+    {
+      "title": "Polonaise in G-flat major, B. 36",
+      "qid": "Q16142892",
+      "key": "G-flat major"
+    },
+    {
+      "title": "Waltz in A-flat major, KK Vb/5",
+      "qid": "Q135105179",
+      "key": "A-flat major"
+    },
+    {
+      "title": "Waltz in E-flat major, KK Vb/7",
+      "qid": "Q135105186",
+      "key": "E-flat major"
+    },
+    {
+      "title": "Étude Op. 10, No. 9",
+      "qid": "Q147211",
+      "key": "F minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=etude10-09.krn&l=users/craig/classical/chopin/etude&format=midi"
+          ]
+        },
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/etude_nouvelles_1_(c)unknown.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gdzie lubi",
+      "qid": "Q17583604",
+      "key": "A major"
+    },
+    {
+      "title": "Variations in A major \"Souvenir de Paganini\"",
+      "qid": "Q3492379",
+      "key": "A major"
+    },
+    {
+      "title": "Waltz No. 10 in B minor, Op. posth. 69, No. 2",
+      "qid": "Q7966838",
+      "key": "B minor"
+    },
+    {
+      "title": "Waltz No. 15 in E major, Op. posth.",
+      "qid": "Q7966840",
+      "key": "E major"
+    },
+    {
+      "title": "Étude Op. 10, No. 10",
+      "qid": "Q147227",
+      "catalog_numbers": {
+        "Op": "10/10"
+      },
+      "key": "A-flat major",
+      "instruments": [
+        "鋼琴"
+      ],
+      "year_composed": 1829
+    },
+    {
+      "title": "Étude Op. 10, No. 11",
+      "qid": "Q147244",
+      "catalog_numbers": {
+        "Op": "10/11"
+      },
+      "key": "E-flat major",
+      "instruments": [
+        "鋼琴"
+      ],
+      "year_composed": 1829
+    },
+    {
+      "title": "Étude Op. 10, No. 8",
+      "qid": "Q147166",
+      "catalog_numbers": {
+        "Op": "10/8"
+      },
+      "key": "D-flat major",
+      "instruments": [
+        "鋼琴"
+      ],
+      "year_composed": 1829
+    },
+    {
+      "title": "Życzenie",
+      "qid": "Q9397723",
+      "key": "G major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/chopin-liszt_chant_polonaise_op_74_1_325_r_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Waltz No. 13 in D-flat major, Op. 70, No. 3",
+      "qid": "Q16746852",
+      "key": "D-flat major"
+    },
+    {
+      "title": "24 Preludes op. 28",
+      "qid": "Q325646"
+    },
+    {
+      "title": "Andante spianato",
+      "qid": "Q123574667",
+      "key": "G major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/70383a_andante_spianato_&amp;_polonaise_brillante_op_22_e_flat_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/andante_polacca_22_(c)finley.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_andante_spianato_22a_(c)lubetsky.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Andante spianato et grande polonaise brillante",
+      "qid": "Q2846074",
+      "key": "E-flat major"
+    },
+    {
+      "title": "Concerto for Piano and Orchestra no. 1 in E minor, op. 11",
+      "qid": "Q162884",
+      "key": "E minor"
+    },
+    {
+      "title": "Czary",
+      "qid": "Q17583611",
+      "key": "D minor"
+    },
+    {
+      "title": "Grande polonaise brillante",
+      "qid": "Q123587323",
+      "key": "E-flat major"
+    },
+    {
+      "title": "Mazurka Op. 33 nr. 1",
+      "qid": "Q28501421",
+      "key": "G-sharp minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka33-1.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka Op. 33 nr. 2",
+      "qid": "Q28790898",
+      "key": "D major",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka33-2.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka Op. 33 nr. 3",
+      "qid": "Q28790902",
+      "key": "C major",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka33-3.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka Op. 33 nr. 4",
+      "qid": "Q28790911",
+      "key": "B minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka33-4.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka no. 1 in F-sharp minor, op. 6 no. 1",
+      "qid": "Q17586672",
+      "key": "F-sharp minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka06-1.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        },
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_6_1_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/67461a_mazurka_59_3_(c)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_59_3_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/mazurka_41_1_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka no. 10 in B-flat major, op. 17 no. 1",
+      "qid": "Q17586714",
+      "key": "B-flat major",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka17-1.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka no. 11 in E minor, op. 17 no. 2",
+      "qid": "Q17586716",
+      "key": "E minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka17-2.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        },
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_17_2_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/mazurka_17_2_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka no. 2 in C-sharp minor, op. 6 no. 2",
+      "qid": "Q17586673",
+      "key": "C-sharp minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka06-2.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        },
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_6_2_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_30_4_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_41_1_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_50_3_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_63_3_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/mazurka_63_3_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/mazurka_6_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/mazurka_50_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/mazurka_63_3_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka no. 3 in E major, op. 6 no. 3",
+      "qid": "Q17586674",
+      "key": "E major",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka06-3.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        },
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_6_3_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_56_1_(c)lubetsky.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka no. 5 in B-flat major, op. 7 no. 1",
+      "qid": "Q17586682",
+      "key": "B-flat major",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka07-1.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka no. 6 in A minor, op. 7 no. 2",
+      "qid": "Q17586684",
+      "key": "A minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka07-2.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka no. 7 in F minor, op. 7 no. 3",
+      "qid": "Q17586685",
+      "key": "F minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka07-3.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        },
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_7_3_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_63_2_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/mazurka_41_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/mazurka_63_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/mazurka_67_2_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka no. 8 in A-flat major, op. 7 no. 4",
+      "qid": "Q17586686",
+      "key": "A-flat major",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka07-4.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka no. 9 in C major, op. 7 no. 5",
+      "qid": "Q17586688",
+      "key": "C major",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka07-5.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurkas, Op. 17",
+      "qid": "Q3070647"
+    },
+    {
+      "title": "Mazurkas, Op. 30",
+      "qid": "Q6799054"
+    },
+    {
+      "title": "Mazurkas, Op. 33",
+      "qid": "Q6149400"
+    },
+    {
+      "title": "Mazurkas, Op. 6",
+      "qid": "Q6150184"
+    },
+    {
+      "title": "Mazurkas, Op. 7",
+      "qid": "Q6799062"
+    },
+    {
+      "title": "Nocturne No. 2 in E-flat major, Op. 9, No. 2",
+      "qid": "Q16739831",
+      "catalog_numbers": {
+        "Op": "9/2"
+      },
+      "key": "E-flat major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/nocturne_9_2_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/nocturne_55_2_(c)unknown.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nocturne No. 3 in B major, Op. 9, No. 3",
+      "qid": "Q16142781",
+      "catalog_numbers": {
+        "Op": "9/3"
+      },
+      "key": "B major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/nocturne_9_3_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/64833a_nocturne_op_32_no_1_b_major_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/nocturne_op_32_no_1_70088_d_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/nocturne_32_1_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/nocturne_62_1_(c)finley.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/nocturne_62_1_(c)inoue.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nocturne No. 4 in F major, Op. 15, No. 1",
+      "qid": "Q1060858",
+      "key": "F major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/nocturne_15_1_(c)finley.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/nocturne_15_1_(c)unknown.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nocturne No. 5 in F-sharp major, Op. 15, No. 2",
+      "qid": "Q3878967",
+      "key": "F-sharp major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/50654a_nocturne_op_15_no_2_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/nocturne_15_2_(c)unknown.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nocturne No. 9 in B major, Op. 32, No. 1",
+      "qid": "Q16740894",
+      "key": "B major"
+    },
+    {
+      "title": "Nocturne No.10 in A-flat major, Op.32, No.2",
+      "qid": "Q11431255",
+      "key": "A-flat major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/nocturne_32_2_(c)unknown.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nocturnes, Op. 15",
+      "qid": "Q1632466"
+    },
+    {
+      "title": "Nocturnes, Op. 37",
+      "qid": "Q7046555"
+    },
+    {
+      "title": "Polonaise in C minor, Op. 40, No. 2",
+      "qid": "Q16766403",
+      "key": "C minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/polonaise_40_2_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Polonaises, Op. 40",
+      "qid": "Q3087780"
+    },
+    {
+      "title": "Poseł",
+      "qid": "Q17583608",
+      "key": "D major"
+    },
+    {
+      "title": "Precz z moich oczu",
+      "qid": "Q17583616",
+      "key": "F minor"
+    },
+    {
+      "title": "Prelude no. 13 in F-sharp major, Op. 28",
+      "qid": "Q16739713",
+      "key": "F-sharp major"
+    },
+    {
+      "title": "Prelude no. 14 in E-flat minor, Op. 28",
+      "qid": "Q16739714",
+      "key": "E-flat minor"
+    },
+    {
+      "title": "Prelude no. 16 in B-flat minor, Op. 28",
+      "qid": "Q7240055",
+      "key": "B-flat minor"
+    },
+    {
+      "title": "Prelude no. 19 in E-flat major, Op. 28",
+      "qid": "Q16739717",
+      "key": "E-flat major"
+    },
+    {
+      "title": "Prelude no. 21 in B-flat major, Op. 28",
+      "qid": "Q16739718",
+      "key": "B-flat major"
+    },
+    {
+      "title": "Prelude no. 22 in G minor, Op. 28",
+      "qid": "Q16739719",
+      "key": "G minor"
+    },
+    {
+      "title": "Prelude no. 23 in F major, Op. 28,",
+      "qid": "Q16739720",
+      "key": "F major"
+    },
+    {
+      "title": "Prélude No. 20 in C minor, Op. 28",
+      "qid": "Q3910271",
+      "key": "C minor"
+    },
+    {
+      "title": "Prélude no. 10 in C-sharp minor, op. 28",
+      "qid": "Q16739706",
+      "key": "C-sharp minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_prelude_45_(c)lubetsky.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Prélude no. 11 in B major, op. 28",
+      "qid": "Q16739707",
+      "key": "B major"
+    },
+    {
+      "title": "Prélude no. 12 in G-sharp minor, op. 28",
+      "qid": "Q16739711",
+      "key": "G-sharp minor"
+    },
+    {
+      "title": "Prélude no. 3 in G major, op. 28",
+      "qid": "Q3910272",
+      "key": "G major"
+    },
+    {
+      "title": "Prélude no. 5 in D major, op. 28",
+      "qid": "Q16739696",
+      "key": "D major"
+    },
+    {
+      "title": "Prélude no. 6 in B minor, op. 28",
+      "qid": "Q3910273",
+      "key": "B minor"
+    },
+    {
+      "title": "Prélude no. 8 in F-sharp minor, op. 28",
+      "qid": "Q16739700",
+      "key": "F-sharp minor"
+    },
+    {
+      "title": "Prélude no. 9 in E major, op. 28",
+      "qid": "Q16739703",
+      "key": "E major"
+    },
+    {
+      "title": "Waltz No. 16 in A-flat major, Op. posth.",
+      "qid": "Q16747456",
+      "key": "A-flat major"
+    },
+    {
+      "title": "Wojak",
+      "qid": "Q17583606",
+      "key": "A-flat major"
+    },
+    {
+      "title": "Étude Op. 25, No. 10",
+      "qid": "Q147519",
+      "key": "B minor"
+    },
+    {
+      "title": "Étude Op. 25, No. 4",
+      "qid": "Q147383",
+      "key": "A minor"
+    },
+    {
+      "title": "Étude Op. 25, No. 5",
+      "qid": "Q147424",
+      "key": "E minor"
+    },
+    {
+      "title": "Étude Op. 25, No. 6",
+      "qid": "Q147445",
+      "key": "G-sharp minor"
+    },
+    {
+      "title": "Étude Op. 25, No. 8",
+      "qid": "Q147474",
+      "key": "D-flat major"
+    },
+    {
+      "title": "Étude Op. 25, No. 9",
+      "qid": "Q147508",
+      "key": "G-flat major"
+    },
+    {
+      "title": "Études, Op. 25",
+      "qid": "Q16741233"
+    },
+    {
+      "title": "Nocturne No. 20 in C-sharp minor, Op. posth.",
+      "qid": "Q7046547",
+      "key": "C-sharp minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/nocturne_27_1_(c)inoue.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/nocturne_c_sharp_minor_(c)inoue.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Prelude no. 18 in F minor, Op. 28",
+      "qid": "Q16739716",
+      "catalog_numbers": {
+        "Op": "28"
+      },
+      "key": "F minor",
+      "instruments": [
+        "鋼琴"
+      ],
+      "year_composed": 1830
+    },
+    {
+      "title": "Prelude no. 24 in D minor, Op. 28",
+      "qid": "Q16739721",
+      "catalog_numbers": {
+        "Op": "28"
+      },
+      "key": "F major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1830
+    },
+    {
+      "title": "Waltz No. 14 in E minor, Op. posth.",
+      "qid": "Q4008431",
+      "key": "E minor"
+    },
+    {
+      "title": "Étude Op. 10, No. 1",
+      "qid": "Q146977",
+      "catalog_numbers": {
+        "Op": "10/1"
+      },
+      "key": "C major",
+      "instruments": [
+        "鋼琴"
+      ],
+      "year_composed": 1830
+    },
+    {
+      "title": "Étude Op. 10, No. 2",
+      "qid": "Q147005",
+      "catalog_numbers": {
+        "Op": "10/2"
+      },
+      "key": "F minor",
+      "instruments": [
+        "鋼琴"
+      ],
+      "year_composed": 1830,
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=etude10-02.krn&l=users/craig/classical/chopin/etude&format=midi"
+          ]
+        },
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/ChopinFF/O10/10-02-i/10-02-i.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Étude Op. 10, No. 5",
+      "qid": "Q147098",
+      "catalog_numbers": {
+        "Op": "10/5"
+      },
+      "key": "E minor",
+      "instruments": [
+        "鋼琴"
+      ],
+      "year_composed": 1830
+    },
+    {
+      "title": "Étude Op. 10, No. 6",
+      "qid": "Q147119",
+      "catalog_numbers": {
+        "Op": "10/6"
+      },
+      "key": "E-flat minor",
+      "instruments": [
+        "鋼琴"
+      ],
+      "year_composed": 1830,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/etude_in_e_flat_minor_7287-2_d_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Hulanka",
+      "qid": "Q17583518",
+      "key": "E-flat major"
+    },
+    {
+      "title": "Grand Duo concertant in E major, B. 70",
+      "qid": "Q5594520",
+      "key": "E major"
+    },
+    {
+      "title": "Narzeczony",
+      "qid": "Q17583607",
+      "key": "C minor"
+    },
+    {
+      "title": "Piosnka litewska",
+      "qid": "Q17583614",
+      "key": "F major"
+    },
+    {
+      "title": "Polonaise, KK Vc/1",
+      "qid": "Q134838171"
+    },
+    {
+      "title": "Ballade No. 1 in G minor, Op. 23",
+      "qid": "Q2038498",
+      "catalog_numbers": {
+        "Op": "23"
+      },
+      "key": "G Minor",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1831
+    },
+    {
+      "title": "Smutna rzeka",
+      "qid": "Q17583517",
+      "key": "F-sharp minor"
+    },
+    {
+      "title": "Waltz No. 3 in A minor, Op. 34 No. 2",
+      "qid": "Q16747406",
+      "key": "A minor",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1831
+    },
+    {
+      "title": "Étude Op. 10, No. 12",
+      "qid": "Q147265",
+      "catalog_numbers": {
+        "Op": "10/12"
+      },
+      "key": "C minor",
+      "instruments": [
+        "鋼琴"
+      ],
+      "year_composed": 1831
+    },
+    {
+      "title": "Mazurka in D major, B.71",
+      "qid": "Q130405981",
+      "key": "D major"
+    },
+    {
+      "title": "Mazurka no. 4 in E-flat minor, op. 6 no. 4",
+      "qid": "Q17586676",
+      "key": "E-flat minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka06-4.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka, KK Vc/2",
+      "qid": "Q134399852"
+    },
+    {
+      "title": "Nocturnes, Op. 9",
+      "qid": "Q1140459",
+      "catalog_numbers": {
+        "Op": "9"
+      },
+      "key": "B-flat minor"
+    },
+    {
+      "title": "Polonaise, KK Vc/3",
+      "qid": "Q134838253"
+    },
+    {
+      "title": "Rondo in E-flat major op. 16",
+      "qid": "Q7365575",
+      "key": "E-flat major"
+    },
+    {
+      "title": "Étude Op. 10, No. 7",
+      "qid": "Q147146",
+      "catalog_numbers": {
+        "Op": "10/7"
+      },
+      "key": "C-sharp minor",
+      "instruments": [
+        "鋼琴"
+      ],
+      "year_composed": 1832
+    },
+    {
+      "title": "Mazurka in B-flat major, B.73",
+      "qid": "Q130418845",
+      "key": "B-flat major"
+    },
+    {
+      "title": "Étude Op. 10, No. 4",
+      "qid": "Q147076",
+      "catalog_numbers": {
+        "Op": "10/4"
+      },
+      "key": "C-sharp minor",
+      "instruments": [
+        "鋼琴"
+      ],
+      "year_composed": 1832,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/sgambati_and_chopin_68543a_gavotte_op_14_&amp;_etude_op_10_no_4_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/etude_10_4_(c)finley.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Étude Op. 10, No. 3",
+      "qid": "Q147031",
+      "catalog_numbers": {
+        "Op": "10/3"
+      },
+      "key": "F major",
+      "instruments": [
+        "鋼琴"
+      ],
+      "year_composed": 1832,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/etude_op_10_no_3_6524_d_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/etude_10_3_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/etude_10_3_(c)unknown.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka, KK Ve/7",
+      "qid": "Q134399905"
+    },
+    {
+      "title": "Bolero",
+      "qid": "Q2909545",
+      "key": "A minor"
+    },
+    {
+      "title": "Grande valse brillante in E-flat major",
+      "qid": "Q2918877",
+      "key": "E-flat major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/7259d_valse_op_18_no_1_in_eb_major_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka in C major, B.82",
+      "qid": "Q130468745",
+      "key": "C major"
+    },
+    {
+      "title": "Mazurka no. 12 in A-flat major, op. 17 no. 3",
+      "qid": "Q17586717",
+      "key": "A-flat major",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka17-3.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka no. 13 in A minor, op. 17 no. 4",
+      "qid": "Q17586720",
+      "key": "A minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka17-4.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka no. 14 in G minor, op. 24 no. 1",
+      "qid": "Q17586932",
+      "key": "G minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka24-1.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        },
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_24_1_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_67_2_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_68_2_(c)lubetsky.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka no. 15 in C major, op. 24 no. 2",
+      "qid": "Q17586934",
+      "key": "C major",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka24-2.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka no. 16 in A-flat major, op. 24 no. 3",
+      "qid": "Q17586936",
+      "key": "A-flat major",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka24-3.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka no. 17 in B-flat minor, op. 24 no. 4",
+      "qid": "Q17586939",
+      "key": "B-flat minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka24-4.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurkas, Op. 24",
+      "qid": "Q11340333"
+    },
+    {
+      "title": "Nocturne No. 6 in G minor, Op. 15, No. 3",
+      "qid": "Q16738512",
+      "key": "G minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/nocturne_15_3_(c)unknown.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Variations brillantes, Op.12",
+      "qid": "Q11620141",
+      "key": "B-flat major"
+    },
+    {
+      "title": "Waltz No. 11 in G-flat major, Op. 70, No. 1",
+      "qid": "Q16746850",
+      "key": "G-flat major"
+    },
+    {
+      "title": "Cantabile in B-flat major, B.84",
+      "qid": "Q16765357",
+      "key": "B-flat major"
+    },
+    {
+      "title": "Polonaise, Op. 26, No. 2 in E-flat minor",
+      "qid": "Q16766398",
+      "key": "E-flat minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/polonaise_26_2_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Prelude [No. 26] \"Presto con leggierezza\" in A-flat major",
+      "qid": "Q16746778",
+      "key": "A-flat major"
+    },
+    {
+      "title": "Étude Op. 25, No. 11",
+      "qid": "Q147543",
+      "key": "A minor"
+    },
+    {
+      "title": "Mazurka in A-flat major, B. 85",
+      "qid": "Q123207809",
+      "key": "A-flat major"
+    },
+    {
+      "title": "Mazurka in B-flat major, KK Ve/4",
+      "qid": "Q134399917",
+      "key": "B-flat major"
+    },
+    {
+      "title": "Mazurka in C major, op. 67 no. 3",
+      "qid": "Q122599142",
+      "key": "C major",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka67-3.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka in G major, op. 67 no. 1",
+      "qid": "Q122590278",
+      "key": "G major",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka67-1.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurkas, Op. 67",
+      "qid": "Q6799060"
+    },
+    {
+      "title": "Nocturne No. 7 in C-sharp minor, Op. 27, No. 1",
+      "qid": "Q16142805",
+      "key": "C-sharp minor"
+    },
+    {
+      "title": "Nocturne No. 8 in D-flat major, Op. 27, No. 2",
+      "qid": "Q16740882",
+      "key": "D-flat major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/nocturne_27_2_(c)inoue.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/nocturne_op_27_2_668_r_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nocturnes, Op. 27",
+      "qid": "Q1057403",
+      "key": "C-sharp minor"
+    },
+    {
+      "title": "Polonaise, Op. 26, No. 1 in C-sharp minor",
+      "qid": "Q11339374",
+      "key": "C-sharp minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/polonaise_26_1_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Polonaises, Op. 26",
+      "qid": "Q3071076",
+      "key": "C-sharp minor"
+    },
+    {
+      "title": "Scherzo No. 1 in B Minor, Op. 20",
+      "qid": "Q1636510",
+      "catalog_numbers": {
+        "Op": "20"
+      },
+      "key": "B minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/scherzo_20_(c)galimberti.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fantaisie-impromptu in C-sharp minor, op. 66",
+      "qid": "Q147619",
+      "catalog_numbers": {
+        "Op": "66"
+      },
+      "key": "C-sharp minor",
+      "instruments": [
+        "鋼琴"
+      ],
+      "year_composed": 1835
+    },
+    {
+      "title": "Waltz No. 2 in A-flat major, Op. 34 No. 1",
+      "qid": "Q16747405",
+      "key": "A-flat major"
+    },
+    {
+      "title": "Waltz No. 9 in A-flat major, Op. posth. 69, No. 1",
+      "qid": "Q4008434",
+      "key": "A-flat major"
+    },
+    {
+      "title": "Pierścień",
+      "qid": "Q17583612",
+      "key": "E-flat major"
+    },
+    {
+      "title": "Prelude no. 17 in A-flat major, Op. 28",
+      "qid": "Q16739715",
+      "key": "A-flat major"
+    },
+    {
+      "title": "Prélude no. 7 in A major, op. 28",
+      "qid": "Q3910274",
+      "key": "A major"
+    },
+    {
+      "title": "Étude Op. 25, No. 12",
+      "qid": "Q147563",
+      "key": "C minor"
+    },
+    {
+      "title": "Étude Op. 25, No. 3",
+      "qid": "Q147363",
+      "key": "F major"
+    },
+    {
+      "title": "Étude Op. 25, No. 7",
+      "qid": "Q147458",
+      "key": "C-sharp minor"
+    },
+    {
+      "title": "Śpiew z mogiły",
+      "qid": "Q17583613",
+      "key": "E-flat minor"
+    },
+    {
+      "title": "Étude Op. 25, No. 2",
+      "qid": "Q147343",
+      "key": "F minor"
+    },
+    {
+      "title": "Étude Op. 25, No. 1",
+      "qid": "Q147324",
+      "key": "A-flat major"
+    },
+    {
+      "title": "Impromptu no. 1 in A-flat major, op. 29",
+      "qid": "Q9008175",
+      "key": "A-flat major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/3562w_impromptu_a_flat_major_op_29_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka no. 18 in C minor, op. 30 no. 1",
+      "qid": "Q17586941",
+      "key": "C minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka30-1.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        },
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_30_1_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_56_3_(c)lubetsky.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka no. 19 in B minor, op. 30 no. 2",
+      "qid": "Q17586943",
+      "key": "B minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka30-2.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        },
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_30_2_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_33_4_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/mazurka_33_4_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/mazurka_30_2_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka no. 20 in D-flat major, op. 30 no. 3",
+      "qid": "Q17586946",
+      "key": "D-flat major",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka30-3.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        },
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_30_3_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/mazurka_30_3_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka no. 21 in C-sharp minor, op. 30 no. 4",
+      "qid": "Q17586948",
+      "key": "C-sharp minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka30-4.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Moja pieszczotka",
+      "qid": "Q17583618",
+      "key": "G-flat major"
+    },
+    {
+      "title": "Nocturnes, Op. 32",
+      "qid": "Q900847",
+      "key": "A-flat major"
+    },
+    {
+      "title": "Scherzo no. 2 in B-flat minor, op. 31",
+      "qid": "Q3267212",
+      "key": "B-flat minor"
+    },
+    {
+      "title": "Hexameron",
+      "qid": "Q1168783",
+      "catalog_numbers": {
+        "S": "392"
+      }
+    },
+    {
+      "title": "Hexaméron, S. 392: VIIIa. Variation VI. Largo",
+      "qid": "Q16766022",
+      "key": "E major"
+    },
+    {
+      "title": "Largo in E-flat major, B.109",
+      "qid": "Q16766007",
+      "key": "E-flat major"
+    },
+    {
+      "title": "Marche funèbre",
+      "qid": "Q116431346",
+      "key": "B-flat minor"
+    },
+    {
+      "title": "Mazurka op. 41 nr. 2",
+      "qid": "Q28843839",
+      "key": "B major",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka41-2.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nocturne No. 11 in G minor, Op. 37, No. 1",
+      "qid": "Q11431256",
+      "key": "G minor"
+    },
+    {
+      "title": "Polonaise Op. 40 No. 1 in A major",
+      "qid": "Q11637459",
+      "key": "A major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/57296a_polonaise_op_40_no_1_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/polonaise_40_1_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Prelude no. 15 in D-flat major, Op. 28",
+      "qid": "Q1148572",
+      "key": "D-flat major"
+    },
+    {
+      "title": "Prélude no. 2 in A minor, op. 28",
+      "qid": "Q16739694",
+      "key": "A minor"
+    },
+    {
+      "title": "Waltzes, Op. 34",
+      "qid": "Q7966844"
+    },
+    {
+      "title": "Andantino, B.117",
+      "qid": "Q16764414",
+      "key": "G minor"
+    },
+    {
+      "title": "Prélude no. 4 in E minor, op. 28",
+      "qid": "Q7240056",
+      "catalog_numbers": {
+        "Op": "28"
+      },
+      "key": "G major",
+      "year_composed": 1838
+    },
+    {
+      "title": "Waltz No. 4 in F major, Op. 34 No. 3",
+      "qid": "Q16747407",
+      "key": "F major"
+    },
+    {
+      "title": "Wiosna",
+      "qid": "Q6168011",
+      "key": "G minor"
+    },
+    {
+      "title": "Mazurkas, Op. 41",
+      "qid": "Q6799056"
+    },
+    {
+      "title": "Ballade No. 2 in F major, Op. 38",
+      "qid": "Q1785955",
+      "key": "F major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/ballade_38_(c)galimberti.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Impromptu no. 2 in F-sharp major, op. 36",
+      "qid": "Q6007782",
+      "key": "F-sharp major"
+    },
+    {
+      "title": "Mazurka op. 41 no. 1",
+      "qid": "Q28843575",
+      "key": "E minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka41-1.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        },
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_6_4_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_33_1_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_41_3_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_mazurkas_63_1_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/mazurka_7_1_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka op. 41 nr. 3",
+      "qid": "Q28843922",
+      "key": "A-flat major",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka41-3.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka op. 41 nr. 4",
+      "qid": "Q28843935",
+      "key": "C-sharp minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka41-4.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nocturne No. 12 in G major, Op. 37, No. 2",
+      "qid": "Q16739817",
+      "key": "G major"
+    },
+    {
+      "title": "Prélude no. 1 in C major, op. 28",
+      "qid": "Q16739689",
+      "key": "C major"
+    },
+    {
+      "title": "Scherzo no. 3 in C-sharp minor, op. 39",
+      "qid": "Q3274388",
+      "key": "C-sharp minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/51116a_scherzo_3_39_(c)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/scherzo_39_(c)unknown.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Canon in F minor",
+      "qid": "Q16765180",
+      "key": "F minor"
+    },
+    {
+      "title": "Piano Sonata No. 2 in B-flat minor, Op. 35",
+      "qid": "Q284448",
+      "key": "B♭ Minor",
+      "year_composed": 1839,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/sonate_35_(hisamori).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ballade No. 3 in A-flat major, Op. 47",
+      "qid": "Q2424993",
+      "key": "A-flat major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/51126a_ballade_op_47_no_3_a_flat_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/ballade_third_op_47_1249_r_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/1249w_ballad_a-flat_major_op_47_(c)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_ballade_3_(c)lubetsky.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Barcarole",
+      "qid": "Q807908",
+      "key": "F-sharp major"
+    },
+    {
+      "title": "Dumka",
+      "qid": "Q113519249",
+      "key": "A minor"
+    },
+    {
+      "title": "Mazurka in A minor, B.140",
+      "qid": "Q131181026",
+      "key": "A minor"
+    },
+    {
+      "title": "Mazurka in A-flat major, op. 50 no. 2",
+      "qid": "Q126188927",
+      "key": "A-flat major",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka50-2.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka in C-sharp minor, op. 50 no. 3",
+      "qid": "Q126197746",
+      "key": "C-sharp minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka50-3.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka in G major, op. 50 no. 1",
+      "qid": "Q126173812",
+      "key": "G major",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka50-1.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurkas, Op. 50",
+      "qid": "Q6799055"
+    },
+    {
+      "title": "Polonaise-Fantaisie",
+      "qid": "Q3132823",
+      "key": "A-flat major"
+    },
+    {
+      "title": "Waltzes, Op. 64",
+      "qid": "Q16742080"
+    },
+    {
+      "title": "Waltz No. 18 in E-flat major, Op. posth., \"Sostenuto\"",
+      "qid": "Q11315130",
+      "key": "E-flat major"
+    },
+    {
+      "title": "Waltz No. 5 in A-flat major, Op. 42",
+      "qid": "Q7966834",
+      "key": "A-flat major"
+    },
+    {
+      "title": "Mazurka in A minor, B.134",
+      "qid": "Q131155865",
+      "key": "A minor"
+    },
+    {
+      "title": "Nocturne No. 13 in C minor, Op. 48, No. 1",
+      "qid": "Q11431257",
+      "key": "C minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/nocturne_48_1_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/nocturne_c_minor_(c)inoue.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nocturne No. 14 in F-sharp minor, Op. 48, No. 2",
+      "qid": "Q16740897",
+      "key": "F-sharp minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/nocturne_48_2_(c)unknown.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nocturnes, Op. 48",
+      "qid": "Q7046559"
+    },
+    {
+      "title": "Prelude [No. 25] in C-sharp minor, Op. 45",
+      "qid": "Q15841142",
+      "key": "C-sharp minor"
+    },
+    {
+      "title": "Śliczny chłopiec",
+      "qid": "Q17583609",
+      "key": "D major"
+    },
+    {
+      "title": "Allegro de concert, Op. 46",
+      "qid": "Q4731420",
+      "key": "A major"
+    },
+    {
+      "title": "Fantaisie in F minor",
+      "qid": "Q3066529",
+      "catalog_numbers": {
+        "Op": "66"
+      },
+      "key": "E major",
+      "instruments": [
+        "Klavier"
+      ],
+      "year_composed": 1841,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/fantasie_impromptu_op_66_6058_d_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/chopin_fantaisie-impromptu_66_(c)krerksakul.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fugue in A minor, B. 144",
+      "qid": "Q5870792",
+      "key": "A minor",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1841
+    },
+    {
+      "title": "Polonaise in F-sharp minor",
+      "qid": "Q1506063",
+      "key": "F-sharp minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/polonaise_op_44_669_r_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/polonaise_44_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tarantelle in A-flat major, Op. 43",
+      "qid": "Q6149758",
+      "key": "A-flat major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/tarantelle_43_(c)finley.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Waltz No. 12 in F minor, Op. 70, No. 2",
+      "qid": "Q16142757",
+      "key": "F minor"
+    },
+    {
+      "title": "Ballade No. 4 in F minor, Op. 52",
+      "qid": "Q4467040",
+      "key": "F minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=ballade52.krn&l=users/craig/classical/chopin/ballade&format=midi"
+          ]
+        },
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_ballade_4_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/ballade_52_(c)galimberti.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Impromptu no. 3 in G-flat major, Op. 51",
+      "qid": "Q6007784",
+      "key": "G-flat major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/impromptu_51_(c)finley.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Scherzo no. 4 in E major, op. 54",
+      "qid": "Q4379929",
+      "key": "E major"
+    },
+    {
+      "title": "Polonaise in A-flat major \"Heroic\", Op. 53",
+      "qid": "Q3178652",
+      "key": "A-flat major"
+    },
+    {
+      "title": "Mazurka in B major, op. 56 no. 1",
+      "qid": "Q123707399",
+      "key": "B major",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka56-1.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka in C major, op. 56 no. 2",
+      "qid": "Q123707492",
+      "key": "C major",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka56-2.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka in C minor, op. 56 no. 3",
+      "qid": "Q123707618",
+      "key": "C minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka56-3.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurkas, Op. 56",
+      "qid": "Q6799057"
+    },
+    {
+      "title": "Nocturne No. 15 in F minor, Op. 55, No. 1",
+      "qid": "Q11431258",
+      "key": "F minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/58486a_nocturne_op_55_no_1_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/nocturne_55_1_(c)unknown.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nocturne No. 16 in E-flat major, Op. 55, No. 2",
+      "qid": "Q16739823",
+      "key": "E-flat major"
+    },
+    {
+      "title": "Nocturnes, Op. 55",
+      "qid": "Q7046558",
+      "key": "F minor"
+    },
+    {
+      "title": "Moderato in E major (Album Leaf)",
+      "qid": "Q5861431",
+      "key": "E major"
+    },
+    {
+      "title": "Waltz No. 19 in A Minor, Op. posth.",
+      "qid": "Q7966835",
+      "key": "A minor"
+    },
+    {
+      "title": "Berceuse",
+      "qid": "Q2896940",
+      "key": "D-flat major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/3123a_berceuse_(c)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/berceuse_57_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_berceuse_57_(c)lubetsky.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Piano Sonata No. 3 in B minor, Op. 58",
+      "qid": "Q1746043",
+      "key": "B minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/sonata_58_1_(c)finley.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/sonata_58_2_(c)finley.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/sonata_58_3_(c)finley.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/sonata_58_4_(c)finley.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/sonate_58_1_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/sonate_58_2_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/sonate_58_3_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/sonate_58_4_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/sonate_58_(hisamori).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Andantino in D minor, KK Anh. Ia/3",
+      "qid": "Q136454912",
+      "key": "D minor"
+    },
+    {
+      "title": "Dwojaki koniec",
+      "qid": "Q17583610",
+      "key": "D minor"
+    },
+    {
+      "title": "Mazurka in A minor, op. 59 no. 1",
+      "qid": "Q123853325",
+      "key": "A minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka59-1.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka in A-flat major, op. 59 no. 2",
+      "qid": "Q123853624",
+      "key": "A-flat major",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka59-2.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka in F-sharp minor, op. 59 no. 3",
+      "qid": "Q123853848",
+      "key": "F-sharp minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka59-3.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurkas, Op. 59",
+      "qid": "Q6799059"
+    },
+    {
+      "title": "Nie ma czego trzeba",
+      "qid": "Q17583605",
+      "key": "A minor"
+    },
+    {
+      "title": "Prélude in F major, KK Anh. Ia/2",
+      "qid": "Q136454892",
+      "key": "F major"
+    },
+    {
+      "title": "2 Bourrées",
+      "qid": "Q5732877"
+    },
+    {
+      "title": "Mazurka in A minor, op. 67 no. 4",
+      "qid": "Q122599324",
+      "key": "A minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka67-4.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka in B major, op. 63 no. 1",
+      "qid": "Q123471300",
+      "key": "B major",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka63-1.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka in C-sharp minor, op. 63 no. 3",
+      "qid": "Q123471756",
+      "key": "C-sharp minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka63-3.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka in F minor, op. 63 no. 2",
+      "qid": "Q123471641",
+      "key": "F minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka63-2.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka, KK Vc/4",
+      "qid": "Q134399940"
+    },
+    {
+      "title": "Mazurkas, Op. 63",
+      "qid": "Q6799058"
+    },
+    {
+      "title": "Nocturne No. 17 in B major, Op. 62, No. 1",
+      "qid": "Q11431259",
+      "key": "B major"
+    },
+    {
+      "title": "Nocturne No. 18 in E major, Op. 62, No. 2",
+      "qid": "Q16739827",
+      "key": "E major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/nocturne_62_2_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/53627a_nocturne_op_62_no_2_e_major_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nocturnes, Op. 62",
+      "qid": "Q7046561"
+    },
+    {
+      "title": "Bourrée No. 1",
+      "qid": "Q16765125",
+      "key": "G major"
+    },
+    {
+      "title": "Bourrée No. 2",
+      "qid": "Q16765124",
+      "key": "A major"
+    },
+    {
+      "title": "Cello Sonata (Chopin)",
+      "qid": "Q2616121",
+      "key": "G minor"
+    },
+    {
+      "title": "Galop A-flat major \"Marquis\", Opus. posth.",
+      "qid": "Q16765973",
+      "key": "A-flat major"
+    },
+    {
+      "title": "Melodia",
+      "qid": "Q17583617",
+      "key": "G major"
+    },
+    {
+      "title": "Nocturne No. 21 in C minor, Op. posth.",
+      "qid": "Q11431261",
+      "key": "C minor"
+    },
+    {
+      "title": "Waltz No. 6 in D-flat major, Op. 64, No. 1",
+      "qid": "Q1527943",
+      "catalog_numbers": {
+        "Op": "64"
+      },
+      "key": "D♭ major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1847,
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=waltz64-1.krn&l=users/craig/classical/chopin/waltz&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Waltz No. 7 in C-sharp minor, Op. 64, No. 2",
+      "qid": "Q5255031",
+      "key": "C-sharp minor"
+    },
+    {
+      "title": "Waltz No. 8 in A flat major, Op. 64, No. 3",
+      "qid": "Q16142717",
+      "key": "A-flat major"
+    },
+    {
+      "title": "Waltz in B major, KK Va/3",
+      "qid": "Q135185258",
+      "key": "B major"
+    },
+    {
+      "title": "Mazurka in F minor, Op. 68, No. 4",
+      "qid": "Q11340339",
+      "key": "F minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka68-4.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka in G minor, op. 67 no. 2",
+      "qid": "Q122593250",
+      "key": "G minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka67-2.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Berceuse",
+      "qid": "Q112325009"
+    },
+    {
+      "title": "Etude op. 10, no. 5, Ges-Dur",
+      "qid": "Q112325010",
+      "catalog_numbers": {
+        "Op": "10/5"
+      }
+    },
+    {
+      "title": "Nocturne H-Dur op. 32",
+      "qid": "Q112325001"
+    },
+    {
+      "title": "Nocturne op. 15, no. 2, Fis-Dur",
+      "qid": "Q112325000"
+    },
+    {
+      "title": "Nocturne op. 37, no. 2, G major",
+      "qid": "Q112325006",
+      "catalog_numbers": {
+        "Op": "37"
+      },
+      "key": "F-sharp major",
+      "instruments": [
+        "鋼琴"
+      ],
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/nocturne_37_1_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/nocturne_37_2_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/nocturne_op_37_2_1255_r_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Polonaise op. 53, A flat",
+      "qid": "Q112325008"
+    },
+    {
+      "title": "Etude E-Dur, op. 10, no. 3",
+      "qid": "Q112325020",
+      "key": "E♭ major",
+      "instruments": [
+        "Piano"
+      ]
+    },
+    {
+      "title": "Nocturne Des-Dur, op. 27, no. 2",
+      "qid": "Q112325013"
+    },
+    {
+      "title": "Polonaise op. 44, fis-Moll",
+      "qid": "Q112325023"
+    },
+    {
+      "title": "Etudes op. 25. N. 1 ; N. 2 ; N. 3",
+      "qid": "Q106377671",
+      "catalog_numbers": {
+        "Op": "25"
+      },
+      "key": "A♭ major",
+      "instruments": [
+        "Piano"
+      ],
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/62621a_revolutionary_etude_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/etude_25_1_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/69521a_etude_(aeolian_harp)_op_25_no_1_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/etude_op_25_1_336_r_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/etude_25_6_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/etude_25_7_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/etude_25_9_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/etude_25_11_(c)finley.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/etude_in_c_minor_7287-1_d_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/etude_25_12_(c)unknown.mid"
+          ]
+        },
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/ChopinFF/O25/chopin-op-25-01/chopin-op-25-01.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Prélude op. 28, no. 20, c-Moll",
+      "qid": "Q112756647",
+      "key": "C Minor",
+      "instruments": [
+        "Piano"
+      ],
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-preludes/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=prelude28-20.krn&l=users/craig/classical/chopin/prelude&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nocturne F sharp, op. 15, no. 2",
+      "qid": "Q112756652"
+    },
+    {
+      "title": "Préludes, op. 28, no. 1, C major, op. 28, no. 21, B flat",
+      "qid": "Q112756654",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-preludes/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=prelude28-01.krn&l=users/craig/classical/chopin/prelude&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Etude Ges Dur, op. 10, no. 5",
+      "qid": "Q112756674",
+      "catalog_numbers": {
+        "Op": "10/5"
+      },
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=etude10-05.krn&l=users/craig/classical/chopin/etude&format=midi"
+          ]
+        },
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/55502a_etude_(black_keys)_op_10_no_5_g_flat_major_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Etude op. 10, no. 12 (Revolutions-Etude)",
+      "qid": "Q112756673",
+      "catalog_numbers": {
+        "Op": "10/12"
+      },
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=etude10-04.krn&l=users/craig/classical/chopin/etude&format=midi"
+          ]
+        },
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/51873a_etude_op_10_no_12_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Prelude op. 28, no. 18, F minor",
+      "qid": "Q112756676",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-preludes/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=prelude28-18.krn&l=users/craig/classical/chopin/prelude&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nocturne op. 9, no. 1, B-flat minor",
+      "qid": "Q112756678",
+      "catalog_numbers": {
+        "Op": "9/1"
+      }
+    },
+    {
+      "title": "Disque 957",
+      "qid": "Q2429947"
+    },
+    {
+      "title": "The Reluctant Sadist",
+      "qid": "Q12319173"
+    },
+    {
+      "title": "A Winter in Mallorca",
+      "qid": "Q101578422"
+    },
+    {
+      "title": "Warsaw Melody",
+      "qid": "Q18117364"
+    },
+    {
+      "title": "Tristana",
+      "qid": "Q1321880"
+    },
+    {
+      "title": "Don't",
+      "qid": "Q5291415"
+    },
+    {
+      "title": "The Margin",
+      "qid": "Q1232753"
+    },
+    {
+      "title": "The Turning Point",
+      "qid": "Q451558"
+    },
+    {
+      "title": "Antyki",
+      "qid": "Q9158115"
+    },
+    {
+      "title": "Autumn Sonata",
+      "qid": "Q322572"
+    },
+    {
+      "title": "Sciopèn",
+      "qid": "Q3952382"
+    },
+    {
+      "title": "Lemon Incest",
+      "qid": "Q3101524"
+    },
+    {
+      "title": "Postmästarfrun från Hörby",
+      "qid": "Q10638118"
+    },
+    {
+      "title": "Impromptu",
+      "qid": "Q2118505"
+    },
+    {
+      "title": "La note bleue",
+      "qid": "Q2358852"
+    },
+    {
+      "title": "In The Name of Love",
+      "qid": "Q52837312"
+    },
+    {
+      "title": "Niki de Saint Phalle",
+      "qid": "Q1990244"
+    },
+    {
+      "title": "Burevestnik",
+      "qid": "Q4099521"
+    },
+    {
+      "title": "Pola Negri: Life Is a Dream in Cinema",
+      "qid": "Q7208837"
+    },
+    {
+      "title": "Eternal Sonata",
+      "qid": "Q1338867"
+    },
+    {
+      "title": "The Strange Case of Angelica",
+      "qid": "Q3205507"
+    },
+    {
+      "title": "The Flying Machine",
+      "qid": "Q7734606"
+    },
+    {
+      "title": "Baby sa jakies inne",
+      "qid": "Q9163830"
+    },
+    {
+      "title": "Il Notturno di Chopin",
+      "qid": "Q20005574"
+    },
+    {
+      "title": "Love Is Strange",
+      "qid": "Q15656073"
+    },
+    {
+      "title": "Kapo in Jerusalem",
+      "qid": "Q52835976"
+    },
+    {
+      "title": "Love Affair(s)",
+      "qid": "Q98745126"
+    },
+    {
+      "title": "Waltz in A minor",
+      "qid": "Q130731165",
+      "key": "A minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=waltz150.krn&l=users/craig/classical/chopin/waltz&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "A Month in the Country",
+      "qid": "Q4658348"
+    },
+    {
+      "title": "Allegretto and Mazurka",
+      "qid": "Q131282330"
+    },
+    {
+      "title": "Allegretto in F-sharp major",
+      "qid": "Q131308660",
+      "key": "F-sharp major"
+    },
+    {
+      "title": "Allegretto, KK VIIb/7",
+      "qid": "Q131290249",
+      "key": "A major"
+    },
+    {
+      "title": "Ballade op. 23, G minor",
+      "qid": "Q112325005",
+      "catalog_numbers": {
+        "Op": "23"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/50047a_ballade_op_23_g_minor_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/ballade_op_23_no_1_a_(nc)smythe.mid"
+          ]
+        },
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 4.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/ChopinFF/O23/chopin-op23-ballade-1/chopin-op23-ballade-1-lys/chopin-op23-ballade-1.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ballade op. 47, A flat major",
+      "qid": "Q112325024"
+    },
+    {
+      "title": "Ballades",
+      "qid": "Q6541319"
+    },
+    {
+      "title": "Chamber Music by Chopin",
+      "qid": "Q16766346"
+    },
+    {
+      "title": "Chopin",
+      "qid": "Q65218301"
+    },
+    {
+      "title": "Dances at a Gathering",
+      "qid": "Q5215410"
+    },
+    {
+      "title": "Dumka na Wygnaniu",
+      "qid": "Q136786784"
+    },
+    {
+      "title": "Etude op. 25, no. 9, G flat",
+      "qid": "Q112325022"
+    },
+    {
+      "title": "Funeral Marches",
+      "qid": "Q5392215"
+    },
+    {
+      "title": "Impromptus",
+      "qid": "Q3149502"
+    },
+    {
+      "title": "In the Night",
+      "qid": "Q15868010"
+    },
+    {
+      "title": "La Dame aux camélias",
+      "qid": "Q130382568"
+    },
+    {
+      "title": "Lady of the Camellias",
+      "qid": "Q11541007"
+    },
+    {
+      "title": "Les Sylphides",
+      "qid": "Q1630831"
+    },
+    {
+      "title": "March in B minor, KK Vd/2",
+      "qid": "Q136432998",
+      "key": "B minor"
+    },
+    {
+      "title": "March in F minor, KK Vd/3",
+      "qid": "Q136433001",
+      "key": "F minor"
+    },
+    {
+      "title": "March, KK Vd/1",
+      "qid": "Q136432993"
+    },
+    {
+      "title": "Mazurka in D major, KK Ve/5",
+      "qid": "Q134378641",
+      "key": "D major"
+    },
+    {
+      "title": "Mazurka, KK VIIb/8",
+      "qid": "Q131301678",
+      "key": "D minor"
+    },
+    {
+      "title": "Mazurka, KK Ve/6",
+      "qid": "Q134414196"
+    },
+    {
+      "title": "Mazurka, KK Ve/8",
+      "qid": "Q134399952"
+    },
+    {
+      "title": "Mazurkas",
+      "qid": "Q3131015"
+    },
+    {
+      "title": "Mazurkas, Op. posth.",
+      "qid": "Q20875234"
+    },
+    {
+      "title": "Miscellaneous compositions by Chopin",
+      "qid": "Q16763476"
+    },
+    {
+      "title": "Nijinsky",
+      "qid": "Q64398251"
+    },
+    {
+      "title": "Nocturne No. 1 in B-flat minor, Op. 9, No. 1",
+      "qid": "Q16142728",
+      "catalog_numbers": {
+        "Op": "9/1"
+      },
+      "key": "D♭ major",
+      "instruments": [
+        "Piano"
+      ],
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/nocturne_op_9_1_2979_r_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/nocturne_9_1_(c)unknown.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nocturne op. 55, no. 2, E flat major",
+      "qid": "Q112324997"
+    },
+    {
+      "title": "Nocturnes",
+      "qid": "Q769763"
+    },
+    {
+      "title": "O wiem, że Polska",
+      "qid": "Q136786842"
+    },
+    {
+      "title": "Other Dances",
+      "qid": "Q7108587"
+    },
+    {
+      "title": "Piano Concerto No. 3",
+      "qid": "Q19895140",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/concerto_11_1_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/concerto_11_2_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/concerto_11_3_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/concerto_2_21_1_(c)finley.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/concerto_2_21_2_(c)finley.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/concerto_2_21_3_(c)finley.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=33/chopin_concerto_2_piano-4-hands_1_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Piano Sonatas",
+      "qid": "Q16746813"
+    },
+    {
+      "title": "Pieśni pielgrzyma polskiego",
+      "qid": "Q136827791"
+    },
+    {
+      "title": "Polonaises",
+      "qid": "Q3492430"
+    },
+    {
+      "title": "Polonaises, Op. posth.",
+      "qid": "Q16746722"
+    },
+    {
+      "title": "Prelude [No. 27] in E-flat minor \"Devil's Trill\"",
+      "qid": "Q16746781",
+      "key": "E-flat minor"
+    },
+    {
+      "title": "Prelude op. 28, Nr. 15, D flat",
+      "qid": "Q112756667",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-preludes/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=prelude28-15.krn&l=users/craig/classical/chopin/prelude&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Preludes",
+      "qid": "Q10353577",
+      "catalog_numbers": {
+        "Op": "28"
+      },
+      "key": "G major",
+      "instruments": [
+        "Piano"
+      ],
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-preludes/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=prelude28-02.krn&l=users/craig/classical/chopin/prelude&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=prelude28-03.krn&l=users/craig/classical/chopin/prelude&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=prelude28-04.krn&l=users/craig/classical/chopin/prelude&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=prelude28-05.krn&l=users/craig/classical/chopin/prelude&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=prelude28-06.krn&l=users/craig/classical/chopin/prelude&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=prelude28-07.krn&l=users/craig/classical/chopin/prelude&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=prelude28-08.krn&l=users/craig/classical/chopin/prelude&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=prelude28-09.krn&l=users/craig/classical/chopin/prelude&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=prelude28-10.krn&l=users/craig/classical/chopin/prelude&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=prelude28-11.krn&l=users/craig/classical/chopin/prelude&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=prelude28-12.krn&l=users/craig/classical/chopin/prelude&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=prelude28-13.krn&l=users/craig/classical/chopin/prelude&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=prelude28-14.krn&l=users/craig/classical/chopin/prelude&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=prelude28-16.krn&l=users/craig/classical/chopin/prelude&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=prelude28-17.krn&l=users/craig/classical/chopin/prelude&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=prelude28-19.krn&l=users/craig/classical/chopin/prelude&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=prelude28-21.krn&l=users/craig/classical/chopin/prelude&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=prelude28-22.krn&l=users/craig/classical/chopin/prelude&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=prelude28-23.krn&l=users/craig/classical/chopin/prelude&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=prelude28-24.krn&l=users/craig/classical/chopin/prelude&format=midi"
+          ]
+        },
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_preludes_(complete)_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/65601a_preludes_op_28_no_1_3_8_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/64133a_3_chopin_preludes_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/prelude_28_1_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/prelude_28_8_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/prelude_28_11_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/prelude_28_15_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/prelude_28_16_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/prelude_28_23_(c)unknown.mid"
+          ]
+        },
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 4.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/ChopinFF/O28/Chop-28-1/Chop-28-1.mid",
+            "https://www.mutopiaproject.org/ftp/ChopinFF/O28/Chop-28-10/Chop-28-10.mid",
+            "https://www.mutopiaproject.org/ftp/ChopinFF/O28/Chop-28-11/Chop-28-11.mid",
+            "https://www.mutopiaproject.org/ftp/ChopinFF/O28/Chop-28-12/Chop-28-12.mid",
+            "https://www.mutopiaproject.org/ftp/ChopinFF/O28/Chop-28-13/Chop-28-13.mid",
+            "https://www.mutopiaproject.org/ftp/ChopinFF/O28/Chop-28-14/Chop-28-14.mid",
+            "https://www.mutopiaproject.org/ftp/ChopinFF/O28/Chop-28-15/Chop-28-15-lys/header.mid",
+            "https://www.mutopiaproject.org/ftp/ChopinFF/O28/Chop-28-16/Chop-28-16.mid",
+            "https://www.mutopiaproject.org/ftp/ChopinFF/O28/Chop-28-17/Chop-28-17-lys/Chop-28-17.mid",
+            "https://www.mutopiaproject.org/ftp/ChopinFF/O28/Chop-28-18/Chop-28-18.mid",
+            "https://www.mutopiaproject.org/ftp/ChopinFF/O28/Chop-28-19/Chop-28-19.mid",
+            "https://www.mutopiaproject.org/ftp/ChopinFF/O28/Chop-28-2/Chop-28-2.mid",
+            "https://www.mutopiaproject.org/ftp/ChopinFF/O28/Chop-28-20/Chop-28-20.mid",
+            "https://www.mutopiaproject.org/ftp/ChopinFF/O28/Chop-28-21/Chop-28-21.mid",
+            "https://www.mutopiaproject.org/ftp/ChopinFF/O28/Chop-28-22/Chop-28-22.mid",
+            "https://www.mutopiaproject.org/ftp/ChopinFF/O28/Chop-28-23/Chop-28-23.mid",
+            "https://www.mutopiaproject.org/ftp/ChopinFF/O28/Chop-28-24/Chop-28-24.mid",
+            "https://www.mutopiaproject.org/ftp/ChopinFF/O28/Chop-28-3/Chop-28-3.mid",
+            "https://www.mutopiaproject.org/ftp/ChopinFF/O28/Chop-28-4/Chop-28-4.mid",
+            "https://www.mutopiaproject.org/ftp/ChopinFF/O28/Chop-28-5/Chop-28-5.mid",
+            "https://www.mutopiaproject.org/ftp/ChopinFF/O28/Chop-28-6/Chop-28-6-lys/header.mid",
+            "https://www.mutopiaproject.org/ftp/ChopinFF/O28/Chop-28-7/Chop-28-7-lys/header.mid",
+            "https://www.mutopiaproject.org/ftp/ChopinFF/O28/Chop-28-8/Chop-28-8.mid",
+            "https://www.mutopiaproject.org/ftp/ChopinFF/O28/Chop-28-9/Chop-28-9.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pytasz się, czemu",
+      "qid": "Q136786826"
+    },
+    {
+      "title": "Płótno",
+      "qid": "Q136726957"
+    },
+    {
+      "title": "Płótno",
+      "qid": "Q136731533"
+    },
+    {
+      "title": "Rondos",
+      "qid": "Q6111967"
+    },
+    {
+      "title": "Scherzo E-Dur, op. 54",
+      "qid": "Q112325027"
+    },
+    {
+      "title": "Scherzos",
+      "qid": "Q6532501"
+    },
+    {
+      "title": "Sonata for piano four hands, KK Vc/5",
+      "qid": "Q136470770"
+    },
+    {
+      "title": "Song, KK Vc/10",
+      "qid": "Q136727435"
+    },
+    {
+      "title": "Song, KK Vd/6",
+      "qid": "Q136731509"
+    },
+    {
+      "title": "Song, KK Vd/6",
+      "qid": "Q136731777"
+    },
+    {
+      "title": "Song, KK Vd/8",
+      "qid": "Q136731568"
+    },
+    {
+      "title": "Tam na błoniu",
+      "qid": "Q136786802"
+    },
+    {
+      "title": "The Concert",
+      "qid": "Q7727279"
+    },
+    {
+      "title": "Trzeci maj",
+      "qid": "Q136786813"
+    },
+    {
+      "title": "Valse op. 64, no. 2, cis-Moll",
+      "qid": "Q112756651"
+    },
+    {
+      "title": "Variations for Flute and Piano in E major",
+      "qid": "Q136669251"
+    },
+    {
+      "title": "Waltz op. 64, no. 2, C-sharp minor",
+      "qid": "Q112325017",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=waltz64-2.krn&l=users/craig/classical/chopin/waltz&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Waltz, KK Ve/10",
+      "qid": "Q135185225"
+    },
+    {
+      "title": "Waltz, KK Ve/11",
+      "qid": "Q135185246"
+    },
+    {
+      "title": "Waltz, KK Ve/12",
+      "qid": "Q135185251"
+    },
+    {
+      "title": "Waltzes",
+      "qid": "Q686808",
+      "catalog_numbers": {
+        "Op": "64"
+      },
+      "key": "D♭ major",
+      "instruments": [
+        "Piano"
+      ],
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/7205w_waltz_d_flat_major_64_1_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/67220d_minute_waltz_(c)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/valse_in_d_flat_67220_d_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/chopin_valse_64_1_(c)simonetto.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/54954a_waltz_op_64_no_2_c_sharp_minor_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/valse_64_2_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/waltz_op_64_no_3_68909_d_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/valse_64_1_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/valse_64_2_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/valse_64_3_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Works for Piano and Orchestra",
+      "qid": "Q16766317"
+    },
+    {
+      "title": "piano roll with Ballade F-Dur, op. 38",
+      "qid": "Q111659696"
+    },
+    {
+      "title": "Études",
+      "qid": "Q146917"
+    },
+    {
+      "title": "Mazurka 50 in A Minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka-50.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka 51 in A Minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka-51.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka 52 in C Major",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://github.com/craigsapp/chopin-mazurkas/blob/main/LICENSE.txt",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=mazurka-52.krn&l=users/craig/classical/chopin/mazurka&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nocturne in E Minor, Op. 72, No. 1",
+      "catalog_numbers": {
+        "Op": "72/1"
+      },
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=nocturne72-1.krn&l=users/craig/classical/chopin/nocturne&format=midi"
+          ]
+        },
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/nocturne_72_1_(c)unknown.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Scherzo in B-flat Minor",
+      "catalog_numbers": {
+        "Op": "31"
+      },
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=scherzo2.krn&l=users/craig/classical/chopin/scherzo&format=midi"
+          ]
+        },
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/55447a_scherzo_op_31_b_flat_minor_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/64713a_scherzo_op_31_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_scherzo_2_31_(c)lubetsky.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Waltz in B Minor, Op. 69, No. 2",
+      "catalog_numbers": {
+        "Op": "69/2"
+      },
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=waltz69-2.krn&l=users/craig/classical/chopin/waltz&format=midi"
+          ]
+        },
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/valse_69_2_(c)dery.mid"
+          ]
+        },
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/ChopinFF/O69/w10-h-moll-cfi/w10-h-moll-cfi.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Barcarolle in f sharp minor, Op. 60",
+      "catalog_numbers": {
+        "Op": "60"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/barcarolle_60_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/barcarolle_60_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fantasie in f minor, Op. 49",
+      "catalog_numbers": {
+        "Op": "49"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_fantasie_49_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/fantasie_49_(c)galimberti.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Polonaise in A flat major, Op. 53 Eroic",
+      "catalog_numbers": {
+        "Op": "53"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/56336a_polonaise_op_53_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/6550d_heroic_polonaise_(c)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/polacca_53_(c)finley.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Polonaise-Fantasie in A flat major, Op. 61",
+      "catalog_numbers": {
+        "Op": "61"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/chopin_polonaise-fantasie_61_(c)lubetsky.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/polonaise_fantasie_(c)galimberti.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Polonaise in d minor, Op. 71 No. 1 (posth.)",
+      "catalog_numbers": {
+        "Op": "71/1"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/polonaise_posth_71_1_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Polonaise in D flat major, Op. 71 No. 2 (posth.)",
+      "catalog_numbers": {
+        "Op": "71/2"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/polonaise_posth_71_2_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Polonaise in f minor, Op. 71 No. 3 (posth.)",
+      "catalog_numbers": {
+        "Op": "71/3"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/polonaise_posth_71_3_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Polonaise in g minor (posth.)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/polonaise_posth_g-_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Polonaise in B flat major (posth.)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/polonaise_posth_Bb_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Polonaise in A flat major (posth.)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/polonaise_posth_Ab_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Polonaise in g sharp minor (posth.)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/polonaise_posth_gs-_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Polonaise in b flat minor (posth.)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/polonaise_posth_bb-_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Polonaise in G flat major (posth.)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/polonaise_posth_Gb_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Marcia funebre from Sonata No. 2 in b flat minor, Op. 35",
+      "catalog_numbers": {
+        "Op": "35"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/50396a_funeral_march_op_35_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Allegro maestoso (I mov.) from Sonata No. 3 in b minor, Op. 58",
+      "catalog_numbers": {
+        "Op": "58"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/61843a_sonata_op_58_b_minor_i_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/65193a_sonata_op_58_b_minor_iii_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Valse brillante in A flat major, Op. 34 No. 1",
+      "catalog_numbers": {
+        "Op": "34/1"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/52645a_valse_brillante_op_34_no_1_a_flat_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Valse in a minor, Op. 34 No. 2 *",
+      "catalog_numbers": {
+        "Op": "34/2"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/valse_34_2_(c)unknown.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Valse in A flat major, Op. 42",
+      "catalog_numbers": {
+        "Op": "42"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/chopin_valse_42_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Valse in G flat major, Op. 70 No. 1",
+      "catalog_numbers": {
+        "Op": "70/1"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/60261a_waltz_op_70_no_1_g_flat_major_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/chopin_valse_70_1_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Valse in f minor, Op. 70 No. 2 �",
+      "catalog_numbers": {
+        "Op": "70/2"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/57223a_waltz_op_70_no_2_f_minor_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/chopin_valse_70_2_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Valse in D flat major, Op. 70 No. 3 *",
+      "catalog_numbers": {
+        "Op": "70/3"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/chopin_valse_70_3_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Valse in e minor[, Op. 72 No. 2] (posth.)",
+      "catalog_numbers": {
+        "Op": "72/2"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/54944a_waltz_(posthumous)_e_minor_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/chopin_valse_posth_e_minor_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Valse in E major (posth.) *",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/chopin_valse_posth_e_major_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Valse in E flat major (posth.) *",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/chopin_valse_posth_e_flat_major_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Valse in E flat major, op .18",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/valse_18_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Valse in F major, Op. 34 No. 3",
+      "catalog_numbers": {
+        "Op": "34/3"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/valse_34_3_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Valse in A flat major, Op. 69 No. 1 Adi�u (posth.)",
+      "catalog_numbers": {
+        "Op": "69/1"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/valse_69_1_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Valse in E major (posth.)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/valse_posth_E_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Valse in A flat major (posth.)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/valse_posth_Ab_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Valse in E flat major (posth.)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=chopin/valse_posth_Eb_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fugue in a minor (1841, posth.)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/chopin_fugue_posth_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chant in F sharp major, Op. 74 No. 5 Mes joies *",
+      "catalog_numbers": {
+        "Op": "74/5"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/chopin-liszt_64051a_chant_polonaise_74_5_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/chopin-liszt_50574a_mes_joies_(c)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Trois Nouvelles Etudes, No. 1 F Minor",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/ChopinFF/B130/TroisNouvellesEtudes_Chopin_n1/TroisNouvellesEtudes_Chopin_n1.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Prelude",
+      "catalog_numbers": {
+        "Op": "45"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/ChopinFF/O45/chopin_prelude_op45/chopin_prelude_op45.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ballade number 4",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/ChopinFF/O52/ballade-4/ballade-4-lys/ballade-4.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fantaisie-Impromptu",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/ChopinFF/O66/chopin_fantaisie-impromptu/chopin_fantaisie-impromptu.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nocturne No. 3",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 4.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/ChopinFF/O9/chopin_nocturne_op9_n3/chopin_nocturne_op9_n3.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

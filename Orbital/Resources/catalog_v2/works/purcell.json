@@ -1,0 +1,265 @@
+{
+  "works": [
+    {
+      "title": "Lillibullero",
+      "qid": "Q1434350"
+    },
+    {
+      "title": "Dido and Aeneas",
+      "qid": "Q746646"
+    },
+    {
+      "title": "The Comical History of Don Quixote",
+      "qid": "Q7726949"
+    },
+    {
+      "title": "I attempt from Love's sickness to fly",
+      "qid": "Q3385644"
+    },
+    {
+      "title": "There was an old woman tossed up in a basket",
+      "qid": "Q99283314"
+    },
+    {
+      "title": "For the Healing of the Nations",
+      "qid": "Q124851751"
+    },
+    {
+      "title": "The Enchanted Island",
+      "qid": "Q2342350"
+    },
+    {
+      "title": "Abdelazer Suite",
+      "qid": "Q307836"
+    },
+    {
+      "title": "Ah Belinda!",
+      "qid": "Q54986339"
+    },
+    {
+      "title": "Born in '45",
+      "qid": "Q1540387"
+    },
+    {
+      "title": "Come away, fellow sailors",
+      "qid": "Q54986351"
+    },
+    {
+      "title": "Dido and Aeneas",
+      "qid": "Q124606578",
+      "key": "B♭ major",
+      "instruments": [
+        "Soprano",
+        "Violin",
+        "Viola",
+        "Harpsichord"
+      ],
+      "year_composed": 1689
+    },
+    {
+      "title": "Dido's Lament",
+      "qid": "Q3376991",
+      "key": "B♭ major",
+      "instruments": [
+        "Flute",
+        "B♭ Clarinet"
+      ]
+    },
+    {
+      "title": "Dioclesian",
+      "qid": "Q5279082"
+    },
+    {
+      "title": "Down Among the Dead Men",
+      "qid": "Q22043356"
+    },
+    {
+      "title": "Dream",
+      "qid": "Q56459463"
+    },
+    {
+      "title": "Fairest Isle",
+      "qid": "Q124968070"
+    },
+    {
+      "title": "Fairy Queens (2013-2014)",
+      "qid": "Q57509545"
+    },
+    {
+      "title": "Familystrip",
+      "qid": "Q96657986"
+    },
+    {
+      "title": "Hail, bright Cecilia",
+      "qid": "Q2933000"
+    },
+    {
+      "title": "Haste, haste to town",
+      "qid": "Q54986322"
+    },
+    {
+      "title": "I attempt from love's sickness to fly",
+      "qid": "Q54986358",
+      "key": "A major",
+      "instruments": [
+        "Treble",
+        "Tenor",
+        "Bass"
+      ]
+    },
+    {
+      "title": "King Arthur",
+      "qid": "Q1428601"
+    },
+    {
+      "title": "Kramer vs. Kramer",
+      "qid": "Q193577"
+    },
+    {
+      "title": "Music for a While",
+      "qid": "Q3328504",
+      "key": "b major",
+      "instruments": [
+        "Alto",
+        "Harpsichord"
+      ],
+      "year_composed": 1692
+    },
+    {
+      "title": "O solitude",
+      "qid": "Q20746583"
+    },
+    {
+      "title": "Oft she visits this lov'd moutain",
+      "qid": "Q54986348"
+    },
+    {
+      "title": "Orpheus Britannicus",
+      "qid": "Q7103980"
+    },
+    {
+      "title": "Our next motion",
+      "qid": "Q54986317"
+    },
+    {
+      "title": "Pursue thy conquest, love",
+      "qid": "Q54986328"
+    },
+    {
+      "title": "Raise, raise the voice",
+      "qid": "Q2091709"
+    },
+    {
+      "title": "Rejoice in the Lord alway",
+      "qid": "Q117471705"
+    },
+    {
+      "title": "Shake the cloud from off your brow",
+      "qid": "Q54986332"
+    },
+    {
+      "title": "Shakespeareiane",
+      "qid": "Q19800806"
+    },
+    {
+      "title": "Thanks to these lonesome vales",
+      "qid": "Q54986336"
+    },
+    {
+      "title": "The Fairy-Queen",
+      "qid": "Q2743188",
+      "catalog_numbers": {
+        "Z": "629"
+      },
+      "key": "D major",
+      "instruments": [
+        "Soprano",
+        "Alto",
+        "Ténor",
+        "Basse",
+        "Piano"
+      ]
+    },
+    {
+      "title": "The Indian Queen",
+      "qid": "Q3521380"
+    },
+    {
+      "title": "The Moor's Pavane",
+      "qid": "Q16684206"
+    },
+    {
+      "title": "The Moving Statue",
+      "qid": "Q60448591"
+    },
+    {
+      "title": "Thou knowest, Lord, the secrets of our hearts",
+      "qid": "Q47006439",
+      "key": "B♭ major",
+      "instruments": [
+        "Soprano",
+        "Alto",
+        "Tenor",
+        "Bass"
+      ]
+    },
+    {
+      "title": "WALSALL",
+      "qid": "Q125993810"
+    },
+    {
+      "title": "Welcome to all the pleasures",
+      "qid": "Q2522109"
+    },
+    {
+      "title": "Westminster Abbey",
+      "qid": "Q109769681"
+    },
+    {
+      "title": "What Power art thou?",
+      "qid": "Q125506519",
+      "key": "E♭ major",
+      "instruments": [
+        "Violine I/II",
+        "Bratsche",
+        "Bass",
+        "Basso continuo",
+        "Cembalo"
+      ]
+    },
+    {
+      "title": "Who can from joy refrain?",
+      "qid": "Q47006593"
+    },
+    {
+      "title": "Yorkshire Feast Song",
+      "qid": "Q2299206"
+    },
+    {
+      "title": "Jehova, quam multi sunt hostes mei",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/PurcellH/Z135/JehovaQuamMulti/JehovaQuamMulti-lys/JehovaQuamMulti_Score.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "What power art thou (King Arthur)",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/PurcellH/Z628/WhatPowerArtThou/WhatPowerArtThou.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

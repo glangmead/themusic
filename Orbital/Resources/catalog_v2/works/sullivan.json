@@ -1,0 +1,375 @@
+{
+  "works": [
+    {
+      "title": "A British Tar",
+      "qid": "Q96288593"
+    },
+    {
+      "title": "A More Humane Mikado",
+      "qid": "Q54988072"
+    },
+    {
+      "title": "A Wand'ring Minstrel, I",
+      "qid": "Q54988087"
+    },
+    {
+      "title": "A many years ago",
+      "qid": "Q54988044"
+    },
+    {
+      "title": "ANGEL VOICES (Sullivan)",
+      "qid": "Q127059085"
+    },
+    {
+      "title": "Alone and Yet Alive",
+      "qid": "Q54988075"
+    },
+    {
+      "title": "As Some Day It May Happen",
+      "qid": "Q54988061"
+    },
+    {
+      "title": "As some day it may happen",
+      "qid": "Q15947960"
+    },
+    {
+      "title": "Cello Concerto",
+      "qid": "Q5058298"
+    },
+    {
+      "title": "Dick Deadeye, or Duty Done",
+      "qid": "Q5272821"
+    },
+    {
+      "title": "Fair moon, to thee I sing",
+      "qid": "Q54988035"
+    },
+    {
+      "title": "Festival Te Deum",
+      "qid": "Q17113314"
+    },
+    {
+      "title": "H.M.S. Pinafore",
+      "qid": "Q1197244",
+      "key": "E♭ major",
+      "instruments": [
+        "Flutes",
+        "Piccolo",
+        "Oboe",
+        "B♭ Clarinets",
+        "Bassoon",
+        "Horns in F",
+        "B♭ Cornets",
+        "Trombones",
+        "Percussion",
+        "Crash Cymbal",
+        "Bass Drum",
+        "Triangle",
+        "Violin I",
+        "Violin II",
+        "Viola",
+        "Violoncello",
+        "Contrabass"
+      ],
+      "year_composed": 1878
+    },
+    {
+      "title": "HANFORD (Sullivan)",
+      "qid": "Q127048448"
+    },
+    {
+      "title": "HOMELAND (Sullivan)",
+      "qid": "Q127049476"
+    },
+    {
+      "title": "Haddon Hall",
+      "qid": "Q5637693"
+    },
+    {
+      "title": "Hail, Hail, the Gang's All Here",
+      "qid": "Q5639165"
+    },
+    {
+      "title": "Henry VIII",
+      "qid": "Q137557535"
+    },
+    {
+      "title": "Hollywood Pinafore",
+      "qid": "Q5882870"
+    },
+    {
+      "title": "I am the Captain of the Pinafore",
+      "qid": "Q54988038"
+    },
+    {
+      "title": "I know a youth",
+      "qid": "Q60320097"
+    },
+    {
+      "title": "I'm called Little Buttercup",
+      "qid": "Q54988048"
+    },
+    {
+      "title": "Iolanthe",
+      "qid": "Q3154075",
+      "key": "G major",
+      "instruments": [
+        "Flöte I",
+        "Flöte II",
+        "Oboe",
+        "Klarinette I in A",
+        "Klarinette II in A",
+        "Fagott",
+        "Horn I in F",
+        "Horn II in F",
+        "Trompete I in C",
+        "Trompete II in C",
+        "Posaune",
+        "Pauke",
+        "Triangel",
+        "Violine I",
+        "Violine II",
+        "Viola",
+        "Violoncello",
+        "Kontrabass"
+      ],
+      "year_composed": 1850
+    },
+    {
+      "title": "Ivanhoe",
+      "qid": "Q1591428"
+    },
+    {
+      "title": "L'Île Enchantée",
+      "qid": "Q6456037"
+    },
+    {
+      "title": "LUX EOI",
+      "qid": "Q127046569"
+    },
+    {
+      "title": "Macbeth",
+      "qid": "Q137400107"
+    },
+    {
+      "title": "Memphis Bound!",
+      "qid": "Q48742772"
+    },
+    {
+      "title": "Onward, Christian Soldiers",
+      "qid": "Q500337",
+      "key": "D major",
+      "instruments": [
+        "Choir",
+        "Piano",
+        "Acoustic Guitar",
+        "Bass Guitar",
+        "Drumset"
+      ]
+    },
+    {
+      "title": "Our Great Mikado, Virtuous Man",
+      "qid": "Q54988065"
+    },
+    {
+      "title": "Patience",
+      "qid": "Q3897647"
+    },
+    {
+      "title": "Princess Ida",
+      "qid": "Q1091101"
+    },
+    {
+      "title": "Ruddigore",
+      "qid": "Q1091683"
+    },
+    {
+      "title": "Sorry her lot",
+      "qid": "Q54988051"
+    },
+    {
+      "title": "St. Gertrude",
+      "qid": "Q20745619"
+    },
+    {
+      "title": "St. Kevin",
+      "qid": "Q116059757"
+    },
+    {
+      "title": "Symphony in E",
+      "qid": "Q7661671"
+    },
+    {
+      "title": "Te Deum Laudamus",
+      "qid": "Q7690792"
+    },
+    {
+      "title": "The Beauty Stone",
+      "qid": "Q7716195"
+    },
+    {
+      "title": "The Black Mikado",
+      "qid": "Q7718388"
+    },
+    {
+      "title": "The Contrabandista",
+      "qid": "Q7727486"
+    },
+    {
+      "title": "The Emerald Isle",
+      "qid": "Q7731876"
+    },
+    {
+      "title": "The Golden Legend",
+      "qid": "Q7737071"
+    },
+    {
+      "title": "The Gondoliers",
+      "qid": "Q3987314"
+    },
+    {
+      "title": "The Grand Duke",
+      "qid": "Q3987345"
+    },
+    {
+      "title": "The Lost Chord",
+      "qid": "Q3521660",
+      "key": "F major",
+      "instruments": [
+        "Voice",
+        "Piano"
+      ],
+      "year_composed": 1877
+    },
+    {
+      "title": "The Merchant of Venice",
+      "qid": "Q137292013"
+    },
+    {
+      "title": "The Merry Wives of Windsor",
+      "qid": "Q137519458"
+    },
+    {
+      "title": "The Mikado",
+      "qid": "Q1195818"
+    },
+    {
+      "title": "The Mikado",
+      "qid": "Q7751395"
+    },
+    {
+      "title": "The Mikado",
+      "qid": "Q18152710"
+    },
+    {
+      "title": "The Pirates of Penzance",
+      "qid": "Q1215463",
+      "key": "B♭ major",
+      "instruments": [
+        "Flute 1",
+        "Flute 2",
+        "Oboe",
+        "B♭ Clarinet",
+        "Bassoon",
+        "Horn in D",
+        "B♭ Trumpet",
+        "Trombone",
+        "Violins 1",
+        "Violins 2",
+        "Violas",
+        "Ruth",
+        "Frederic",
+        "Violoncellos",
+        "Contrabasses"
+      ],
+      "year_composed": 1850
+    },
+    {
+      "title": "The Pirates of Penzance",
+      "qid": "Q1754164",
+      "key": "E♭ major",
+      "instruments": [
+        "Flute 1",
+        "Flute 2",
+        "Oboe 1",
+        "B♭ Clarinet 1",
+        "B♭ Clarinet 2",
+        "Bassoon 1",
+        "Horn in E♭",
+        "B♭ Cornet 1",
+        "B♭ Cornet 2",
+        "Trombone 1",
+        "Trombone 2",
+        "Timpani",
+        "Snare Drum",
+        "Bass Drum",
+        "Cymbal",
+        "Maj Gen",
+        "Chorus SA",
+        "Chorus TB",
+        "Violins 1"
+      ]
+    },
+    {
+      "title": "The Rose of Persia",
+      "qid": "Q7761563"
+    },
+    {
+      "title": "The Sorcerer",
+      "qid": "Q3989381"
+    },
+    {
+      "title": "The Sun, Whose Rays Are All Ablaze",
+      "qid": "Q54988082"
+    },
+    {
+      "title": "The Window",
+      "qid": "Q7775096"
+    },
+    {
+      "title": "The Yeomen of the Guard",
+      "qid": "Q499778"
+    },
+    {
+      "title": "The hours creep on apace",
+      "qid": "Q54988053"
+    },
+    {
+      "title": "The nightingale…A Maiden fair to see",
+      "qid": "Q54988056"
+    },
+    {
+      "title": "Thespis",
+      "qid": "Q972539"
+    },
+    {
+      "title": "Three Little Maids From School Are We",
+      "qid": "Q123235761"
+    },
+    {
+      "title": "Trial by Jury",
+      "qid": "Q250903"
+    },
+    {
+      "title": "When I was a lad",
+      "qid": "Q54988041"
+    },
+    {
+      "title": "When Maiden Loves, She Sits And Sighs",
+      "qid": "Q60322732"
+    },
+    {
+      "title": "I've found a Friend",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SullivanA/Constance_28_2/Constance_28_2.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

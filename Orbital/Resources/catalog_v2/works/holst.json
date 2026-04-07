@@ -1,0 +1,226 @@
+{
+  "works": [
+    {
+      "title": "Sita",
+      "qid": "Q95742683"
+    },
+    {
+      "title": "Brook Green Suite",
+      "qid": "Q4974339"
+    },
+    {
+      "title": "2 Songs without Words",
+      "qid": "Q78156574",
+      "key": "D major",
+      "instruments": [
+        "Viola",
+        "Piano"
+      ],
+      "year_composed": 1922
+    },
+    {
+      "title": "A Choral Fantasia",
+      "qid": "Q5104943"
+    },
+    {
+      "title": "A Fugal Concerto",
+      "qid": "Q126325725"
+    },
+    {
+      "title": "A Fugal Overture",
+      "qid": "Q125372044"
+    },
+    {
+      "title": "A Moorside Suite",
+      "qid": "Q17232094"
+    },
+    {
+      "title": "At the Boar's Head",
+      "qid": "Q4812466"
+    },
+    {
+      "title": "Cranham",
+      "qid": "Q116059587"
+    },
+    {
+      "title": "Double Concerto",
+      "qid": "Q123454259"
+    },
+    {
+      "title": "Egdon Heath",
+      "qid": "Q19872942"
+    },
+    {
+      "title": "First Choral Symphony",
+      "qid": "Q3507597"
+    },
+    {
+      "title": "First Suite in E-flat for Military Band",
+      "qid": "Q4324726",
+      "catalog_numbers": {
+        "Op": "28"
+      },
+      "key": "E♭ major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1909
+    },
+    {
+      "title": "From glory to glory advancing, we prais thee, o Lord",
+      "qid": "Q90162559"
+    },
+    {
+      "title": "Hammersmith",
+      "qid": "Q116550385"
+    },
+    {
+      "title": "Hymns from the Rig Veda",
+      "qid": "Q135838446"
+    },
+    {
+      "title": "I Vow to Thee, My Country",
+      "qid": "Q1198881"
+    },
+    {
+      "title": "In the Bleak Midwinter",
+      "qid": "Q3797415",
+      "key": "A major",
+      "instruments": [
+        "Guitarra clásica"
+      ]
+    },
+    {
+      "title": "Indra",
+      "qid": "Q135650090",
+      "key": "Eb major",
+      "instruments": [
+        "Tenor",
+        "Bass",
+        "Piano"
+      ]
+    },
+    {
+      "title": "Japanese Suite",
+      "qid": "Q15876934"
+    },
+    {
+      "title": "Lansdown Castle",
+      "qid": "Q137258643"
+    },
+    {
+      "title": "Lyric Movement",
+      "qid": "Q124367102"
+    },
+    {
+      "title": "Mr Shilkret's Maggot",
+      "qid": "Q136085360"
+    },
+    {
+      "title": "Quatermass II",
+      "qid": "Q1248825"
+    },
+    {
+      "title": "Savitri",
+      "qid": "Q3474583"
+    },
+    {
+      "title": "Second Suite in F for Military Band",
+      "qid": "Q2641380",
+      "catalog_numbers": {
+        "Op": "28"
+      },
+      "key": "F major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1911
+    },
+    {
+      "title": "St Paul's Suite",
+      "qid": "Q2615181"
+    },
+    {
+      "title": "Suites for Military Band",
+      "qid": "Q20812719"
+    },
+    {
+      "title": "Thaxted",
+      "qid": "Q7711508",
+      "instruments": [
+        "Voice",
+        "Tenor Trombone",
+        "Bass Trombone",
+        "Organ"
+      ]
+    },
+    {
+      "title": "The Bells",
+      "qid": "Q7716445"
+    },
+    {
+      "title": "The Cloud Messenger",
+      "qid": "Q95833404"
+    },
+    {
+      "title": "The Cloud Messenger",
+      "qid": "Q135959294"
+    },
+    {
+      "title": "The Perfect Fool",
+      "qid": "Q3290124"
+    },
+    {
+      "title": "The Planets",
+      "qid": "Q303508",
+      "catalog_numbers": {
+        "Op": "32"
+      },
+      "key": "G major",
+      "instruments": [
+        "Violin",
+        "Violoncello",
+        "Contrabass",
+        "Piano"
+      ]
+    },
+    {
+      "title": "This Have I Done for My True Love",
+      "qid": "Q113625001"
+    },
+    {
+      "title": "Two Eastern Pictures",
+      "qid": "Q136196578"
+    },
+    {
+      "title": "World in Union",
+      "qid": "Q4387499"
+    },
+    {
+      "title": "Terzetto",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/HolstGT/H158/terzetto/terzetto-lys/header.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cranham (hymntune)",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/HolstGT/cranham/cranham.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

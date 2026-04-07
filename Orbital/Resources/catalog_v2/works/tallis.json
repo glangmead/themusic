@@ -1,0 +1,244 @@
+{
+  "works": [
+    {
+      "title": "Absterge Domine",
+      "qid": "Q126390676"
+    },
+    {
+      "title": "Alleluya",
+      "qid": "Q126390695"
+    },
+    {
+      "title": "Audivi vocem",
+      "qid": "Q126390703",
+      "key": "F major",
+      "instruments": [
+        "Soprano",
+        "Alto",
+        "Tenor",
+        "Bass"
+      ]
+    },
+    {
+      "title": "Ave Dei Patris",
+      "qid": "Q126391802"
+    },
+    {
+      "title": "Ave Rosa sine spinis",
+      "qid": "Q126391817",
+      "key": "F major",
+      "instruments": [
+        "Triplex",
+        "Medius",
+        "Contratenor",
+        "Tenor",
+        "Bassus"
+      ]
+    },
+    {
+      "title": "Benedictus",
+      "qid": "Q126391828"
+    },
+    {
+      "title": "Candidi facti sunt",
+      "qid": "Q126391873"
+    },
+    {
+      "title": "Christ Rising Again",
+      "qid": "Q126391886"
+    },
+    {
+      "title": "Derelinquit impius",
+      "qid": "Q126392074"
+    },
+    {
+      "title": "Domine Deus",
+      "qid": "Q126392132"
+    },
+    {
+      "title": "Domine quis habitabit",
+      "qid": "Q126392153"
+    },
+    {
+      "title": "Dorian Service",
+      "qid": "Q126392233"
+    },
+    {
+      "title": "Dum transisset Sabbatum",
+      "qid": "Q126392213"
+    },
+    {
+      "title": "Et exspecto resurrectionem mortuorum",
+      "qid": "Q126392348"
+    },
+    {
+      "title": "Euge caeli porta",
+      "qid": "Q126393465"
+    },
+    {
+      "title": "FIRST MODE MELODY",
+      "qid": "Q126077131"
+    },
+    {
+      "title": "Gaude gloriosa Dei Mater",
+      "qid": "Q126393522"
+    },
+    {
+      "title": "Gloria Patri",
+      "qid": "Q126393579",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/tallis_gloria_patri_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Go with Us, Lord",
+      "qid": "Q120064797"
+    },
+    {
+      "title": "God Grant with Grace",
+      "qid": "Q126393621",
+      "key": "G major",
+      "instruments": [
+        "Meane",
+        "Tenor",
+        "Bass"
+      ]
+    },
+    {
+      "title": "If Ye Love Me",
+      "qid": "Q25449088"
+    },
+    {
+      "title": "Lamentations of Jeremiah the Prophet",
+      "qid": "Q135741968"
+    },
+    {
+      "title": "Missa Puer natus est nobis",
+      "qid": "Q135960289"
+    },
+    {
+      "title": "O nata lux",
+      "qid": "Q136353630"
+    },
+    {
+      "title": "SECOND MODE MELODY",
+      "qid": "Q125993399"
+    },
+    {
+      "title": "Spem in alium",
+      "qid": "Q1583387",
+      "instruments": [
+        "Soprano 1",
+        "Alto 1",
+        "Tenor 1",
+        "Baritone 1",
+        "Bass 1",
+        "Soprano 2",
+        "Alto 2",
+        "Tenor 2",
+        "Baritone 2",
+        "Bass 2",
+        "Soprano 3",
+        "Alto 3",
+        "Tenor 3",
+        "Baritone 3",
+        "Bass 3",
+        "Soprano 4",
+        "Alto 4",
+        "Tenor 4",
+        "Baritone 4",
+        "Bass 4",
+        "Soprano 5",
+        "Alto 5",
+        "Tenor 5",
+        "Baritone 5",
+        "Bass 5",
+        "Soprano 6"
+      ],
+      "year_composed": 1570
+    },
+    {
+      "title": "Tallis' Canon",
+      "qid": "Q109542890"
+    },
+    {
+      "title": "Tallis' Ordinal",
+      "qid": "Q109542909"
+    },
+    {
+      "title": "Third Mode Melody",
+      "qid": "Q109542894"
+    },
+    {
+      "title": "Tunes for Archbishop Parker's Psalter",
+      "qid": "Q7852956"
+    },
+    {
+      "title": "VENI CREATOR (Tallis)",
+      "qid": "Q127033380"
+    },
+    {
+      "title": "Zea",
+      "qid": "Q61946984"
+    },
+    {
+      "title": "In nomine *",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=tallis_in_nomine_(cooke).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "When shall my sorrowful sighing slack",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=tallis_when_shall_my_sorrowful_sighing_slack_(cooke).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "I am Lucis orto sidere",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=tallis_i_am_lucis_orto_sidere_(cooke).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "O nata lux de lumine",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/TallisT/tallis/tallis-lys/tallis.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

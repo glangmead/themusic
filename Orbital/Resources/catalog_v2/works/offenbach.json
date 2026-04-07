@@ -1,0 +1,472 @@
+{
+  "works": [
+    {
+      "title": "Luc et Lucette",
+      "qid": "Q26885488"
+    },
+    {
+      "title": "Ba-ta-clan",
+      "qid": "Q797421"
+    },
+    {
+      "title": "Le rêve d'une nuit d'été",
+      "qid": "Q21704597"
+    },
+    {
+      "title": "Le violoneux",
+      "qid": "Q1130637"
+    },
+    {
+      "title": "Oyayaye ou la reine des îles",
+      "qid": "Q21704579"
+    },
+    {
+      "title": "Paimpol et Périnette",
+      "qid": "Q21704584"
+    },
+    {
+      "title": "Une nuit blanche",
+      "qid": "Q21685623"
+    },
+    {
+      "title": "La bonne d'enfant",
+      "qid": "Q6465991"
+    },
+    {
+      "title": "La rose de Saint-Flour",
+      "qid": "Q1153606"
+    },
+    {
+      "title": "Le 66",
+      "qid": "Q6506507"
+    },
+    {
+      "title": "Le financier et le savetier",
+      "qid": "Q6508019"
+    },
+    {
+      "title": "Tromb-al-ca-zar, ou Les criminels dramatiques",
+      "qid": "Q7845310"
+    },
+    {
+      "title": "Dragonette",
+      "qid": "Q22074657"
+    },
+    {
+      "title": "Les Deux Pêcheurs",
+      "qid": "Q19210390"
+    },
+    {
+      "title": "Apothicaire et perruquier",
+      "qid": "Q16961754"
+    },
+    {
+      "title": "Il signor Fagotto",
+      "qid": "Q5996788"
+    },
+    {
+      "title": "La permission de dix heures",
+      "qid": "Q6466318"
+    },
+    {
+      "title": "Mademoiselle Moucheron",
+      "qid": "Q22662632"
+    },
+    {
+      "title": "Pomme d'api",
+      "qid": "Q2084345"
+    },
+    {
+      "title": "The Tales of Hoffmann",
+      "qid": "Q335012"
+    },
+    {
+      "title": "Bagatelle",
+      "qid": "Q4841471"
+    },
+    {
+      "title": "La boulangère a des écus",
+      "qid": "Q3214013"
+    },
+    {
+      "title": "Tarte à la crème",
+      "qid": "Q22814044"
+    },
+    {
+      "title": "Apachentanz",
+      "qid": "Q15264367"
+    },
+    {
+      "title": "Barba-blu",
+      "qid": "Q109241654"
+    },
+    {
+      "title": "Barbe-bleue",
+      "qid": "Q373076"
+    },
+    {
+      "title": "Barcarolle from The Tales of Hoffmann (Jacques Offenbach)",
+      "qid": "Q130814658"
+    },
+    {
+      "title": "Barkouf",
+      "qid": "Q15973467"
+    },
+    {
+      "title": "Belle Lurette",
+      "qid": "Q15973596"
+    },
+    {
+      "title": "Belle nuit, ô nuit d'amour",
+      "qid": "Q4883726"
+    },
+    {
+      "title": "Bluebeard",
+      "qid": "Q77049422"
+    },
+    {
+      "title": "Boule-de-Neige",
+      "qid": "Q15990882"
+    },
+    {
+      "title": "Croquefer, ou Le dernier des paladins",
+      "qid": "Q1154655"
+    },
+    {
+      "title": "Daphnis et Chloé",
+      "qid": "Q5221748"
+    },
+    {
+      "title": "Die Rheinnixen",
+      "qid": "Q1215785"
+    },
+    {
+      "title": "Die schöne Lurette",
+      "qid": "Q3460940"
+    },
+    {
+      "title": "Fantasio",
+      "qid": "Q624420"
+    },
+    {
+      "title": "Fortunios Lied",
+      "qid": "Q47427097"
+    },
+    {
+      "title": "Gaîté parisienne",
+      "qid": "Q5529246"
+    },
+    {
+      "title": "Geneviève de Brabant",
+      "qid": "Q3100706"
+    },
+    {
+      "title": "I briganti",
+      "qid": "Q109244494"
+    },
+    {
+      "title": "Il matrimonio alle lanterne",
+      "qid": "Q109242048"
+    },
+    {
+      "title": "Infernal Galop",
+      "qid": "Q85853280"
+    },
+    {
+      "title": "Jacqueline",
+      "qid": "Q89359402"
+    },
+    {
+      "title": "Jeanne qui pleure et Jean qui rit",
+      "qid": "Q56249363"
+    },
+    {
+      "title": "L'Amour chanteur",
+      "qid": "Q84053438"
+    },
+    {
+      "title": "L'alcôve",
+      "qid": "Q48732087"
+    },
+    {
+      "title": "L'île de Tulipatan",
+      "qid": "Q1213628"
+    },
+    {
+      "title": "La Belle Hélène",
+      "qid": "Q57254039"
+    },
+    {
+      "title": "La Belle Hélène",
+      "qid": "Q1219408"
+    },
+    {
+      "title": "La Diva",
+      "qid": "Q19183104"
+    },
+    {
+      "title": "La Fille du tambour-major",
+      "qid": "Q123248071"
+    },
+    {
+      "title": "La Grande-Duchesse de Gérolstein",
+      "qid": "Q1213194"
+    },
+    {
+      "title": "La Haine",
+      "qid": "Q3209769"
+    },
+    {
+      "title": "La Périchole",
+      "qid": "Q730336"
+    },
+    {
+      "title": "La Valse de Paris",
+      "qid": "Q3213450"
+    },
+    {
+      "title": "La chanson de Fortunio",
+      "qid": "Q1439127",
+      "instruments": [
+        "Voice",
+        "Piano"
+      ],
+      "year_composed": 1850
+    },
+    {
+      "title": "La chatte métamorphosée en femme",
+      "qid": "Q1219777"
+    },
+    {
+      "title": "La créole",
+      "qid": "Q1214025"
+    },
+    {
+      "title": "La fanciulla d'Elisondo",
+      "qid": "Q109242049"
+    },
+    {
+      "title": "La fille du tambour-major",
+      "qid": "Q3208918"
+    },
+    {
+      "title": "La jolie parfumeuse",
+      "qid": "Q8012193"
+    },
+    {
+      "title": "La vie parisienne",
+      "qid": "Q1807287"
+    },
+    {
+      "title": "Le Mariage aux lanternes",
+      "qid": "Q123248920"
+    },
+    {
+      "title": "Le Roman comique",
+      "qid": "Q15990979"
+    },
+    {
+      "title": "Le château à Toto",
+      "qid": "Q2445865"
+    },
+    {
+      "title": "Le docteur Ox",
+      "qid": "Q3222378"
+    },
+    {
+      "title": "Le georgiane",
+      "qid": "Q109242133"
+    },
+    {
+      "title": "Le mariage aux lanternes",
+      "qid": "Q1217158"
+    },
+    {
+      "title": "Le papillon",
+      "qid": "Q1478507"
+    },
+    {
+      "title": "Le pont des soupirs",
+      "qid": "Q1743483"
+    },
+    {
+      "title": "Le roi Carotte",
+      "qid": "Q3226515"
+    },
+    {
+      "title": "Le voyage dans la lune",
+      "qid": "Q3228259"
+    },
+    {
+      "title": "Les Géorgiennes",
+      "qid": "Q15990916"
+    },
+    {
+      "title": "Les Vivandières de la Grande Armée",
+      "qid": "Q84761744"
+    },
+    {
+      "title": "Les bavards",
+      "qid": "Q8012080"
+    },
+    {
+      "title": "Les brigands",
+      "qid": "Q763758"
+    },
+    {
+      "title": "Les deux aveugles",
+      "qid": "Q739021"
+    },
+    {
+      "title": "Lischen et Fritzchen",
+      "qid": "Q1337202"
+    },
+    {
+      "title": "Ludwig",
+      "qid": "Q700765"
+    },
+    {
+      "title": "M. Choufleuri restera chez lui le . . .",
+      "qid": "Q3065867"
+    },
+    {
+      "title": "Madame Favart",
+      "qid": "Q1883161"
+    },
+    {
+      "title": "Madame l'archiduc",
+      "qid": "Q8012209"
+    },
+    {
+      "title": "Maître Péronilla",
+      "qid": "Q6799145"
+    },
+    {
+      "title": "Mesdames de la Halle",
+      "qid": "Q6821179"
+    },
+    {
+      "title": "Monsieur et Madame Denis",
+      "qid": "Q47433418"
+    },
+    {
+      "title": "Monsieur et Madame Denis",
+      "qid": "Q6902587"
+    },
+    {
+      "title": "Mrs. Butterfly",
+      "qid": "Q84033963"
+    },
+    {
+      "title": "Orpheus in der Unterwelt",
+      "qid": "Q27646544"
+    },
+    {
+      "title": "Orpheus in the Underworld",
+      "qid": "Q1137065"
+    },
+    {
+      "title": "Orpheus in the Underworld",
+      "qid": "Q1778577"
+    },
+    {
+      "title": "Orphée aux Enfers",
+      "qid": "Q57316083",
+      "instruments": [
+        "Flauto"
+      ]
+    },
+    {
+      "title": "Pierrette et Jacquot",
+      "qid": "Q7192559"
+    },
+    {
+      "title": "Pépito",
+      "qid": "Q123597010"
+    },
+    {
+      "title": "Pépito",
+      "qid": "Q3926120"
+    },
+    {
+      "title": "Ritter Blaubart (Barbe-Bleue)",
+      "qid": "Q47012245"
+    },
+    {
+      "title": "Robinson Crusoé",
+      "qid": "Q123244490"
+    },
+    {
+      "title": "Robinson Crusoé",
+      "qid": "Q3106365"
+    },
+    {
+      "title": "Sköna Helena",
+      "qid": "Q115253205"
+    },
+    {
+      "title": "Sköna Helena",
+      "qid": "Q10671240"
+    },
+    {
+      "title": "Tales of Hoffmann",
+      "qid": "Q3786218"
+    },
+    {
+      "title": "The Game of Love",
+      "qid": "Q16897875"
+    },
+    {
+      "title": "The Gay Parisian",
+      "qid": "Q2411542"
+    },
+    {
+      "title": "The Happiest Girl in the World",
+      "qid": "Q7738782"
+    },
+    {
+      "title": "The Hotel New Hampshire",
+      "qid": "Q1630995"
+    },
+    {
+      "title": "The Princess of Trébizonde",
+      "qid": "Q3211940"
+    },
+    {
+      "title": "The Tales of Hoffmann",
+      "qid": "Q2249349"
+    },
+    {
+      "title": "Thérèse",
+      "qid": "Q2298877"
+    },
+    {
+      "title": "Un mari à la porte",
+      "qid": "Q1304417"
+    },
+    {
+      "title": "Un postillon en gage",
+      "qid": "Q30068631"
+    },
+    {
+      "title": "Une demoiselle en loterie",
+      "qid": "Q7884111"
+    },
+    {
+      "title": "Vent du soir",
+      "qid": "Q15991011"
+    },
+    {
+      "title": "Vert-Vert",
+      "qid": "Q3556194"
+    },
+    {
+      "title": "Whittington",
+      "qid": "Q3567820"
+    },
+    {
+      "title": "[In the roles of languorous lovers]",
+      "qid": "Q54985873"
+    }
+  ]
+}

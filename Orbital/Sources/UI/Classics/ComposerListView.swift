@@ -7,7 +7,7 @@ import SwiftUI
 
 struct ComposerListView: View {
   @Environment(ClassicsCatalogLibrary.self) private var catalog
-  @Binding var selectedComposerID: ComposerEntry.ID?
+  @Binding var selectedComposerID: CatalogComposer.ID?
 
   var body: some View {
     @Bindable var catalog = catalog
@@ -41,7 +41,8 @@ struct ComposerListView: View {
 
 struct ComposerRow: View {
   @Environment(ClassicsCatalogLibrary.self) private var catalog
-  let composer: ComposerEntry
+  @Environment(MIDIDownloadLedger.self) private var ledger
+  let composer: CatalogComposer
   @ScaledMetric(relativeTo: .headline) private var imageSize: CGFloat = 50
 
   var body: some View {
@@ -64,12 +65,21 @@ struct ComposerRow: View {
               .foregroundStyle(.secondary)
           }
           if let counts = catalog.counts(for: composer.slug) {
-            Text("·")
+            Text("\u{00B7}")
               .font(.caption)
               .foregroundStyle(.secondary)
-            Text("\(counts.playableGroups) works · \(counts.totalRenditions) renditions")
+            Text("\(counts.worksWithMidi) works")
               .font(.caption)
               .foregroundStyle(.secondary)
+          }
+          let dlCount = ledger.downloadCount(for: composer.slug)
+          if dlCount > 0 {
+            Text("\u{00B7}")
+              .font(.caption)
+              .foregroundStyle(.secondary)
+            Text("\(dlCount) downloaded")
+              .font(.caption)
+              .foregroundStyle(.green)
           }
         }
       }
@@ -85,4 +95,6 @@ struct ComposerRow: View {
   .environment(SpatialAudioEngine())
   .environment(SongLibrary())
   .environment(ResourceManager())
+  .environment(MIDIDownloadManager(ledger: MIDIDownloadLedger(baseDirectory: .temporaryDirectory)))
+  .environment(MIDIDownloadLedger(baseDirectory: .temporaryDirectory))
 }

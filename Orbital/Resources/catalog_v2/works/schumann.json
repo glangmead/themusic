@@ -1,0 +1,1663 @@
+{
+  "works": [
+    {
+      "title": "Toccata",
+      "qid": "Q1646954",
+      "key": "C major"
+    },
+    {
+      "title": "Variations on the Name \"Abegg\"",
+      "qid": "Q318293",
+      "key": "F major"
+    },
+    {
+      "title": "Papillons",
+      "qid": "Q761567"
+    },
+    {
+      "title": "6 Intermezzi",
+      "qid": "Q3153199"
+    },
+    {
+      "title": "Barn Jesus i en krybbe lå",
+      "qid": "Q11960227"
+    },
+    {
+      "title": "Carnaval",
+      "qid": "Q1043926",
+      "key": "A♭ major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1834,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/carnaval_1-8_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/carnaval_9_(c)finley.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Piano Sonata No. 1",
+      "qid": "Q3490133",
+      "key": "F-sharp minor"
+    },
+    {
+      "title": "Fantasie in C",
+      "qid": "Q1395862",
+      "key": "C major"
+    },
+    {
+      "title": "Fantasiestücke, Op. 12",
+      "qid": "Q776368",
+      "catalog_numbers": {
+        "Op": "12"
+      }
+    },
+    {
+      "title": "Arabeske in C major",
+      "qid": "Q623826",
+      "key": "C major"
+    },
+    {
+      "title": "Novelletten",
+      "qid": "Q771607",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/schumann_6921d_novellete_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kinderszenen",
+      "qid": "Q1569982",
+      "key": "G major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1838
+    },
+    {
+      "title": "Kreisleriana",
+      "qid": "Q741180",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/schumann_68311a_kreisleriana_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Träumerei",
+      "qid": "Q2804011",
+      "key": "F major",
+      "instruments": [
+        "Klavier"
+      ],
+      "year_composed": 1838
+    },
+    {
+      "title": "Blumenstück",
+      "qid": "Q4930736",
+      "key": "D-flat major"
+    },
+    {
+      "title": "Faschingsschwank aus Wien",
+      "qid": "Q1397324"
+    },
+    {
+      "title": "Humoreske",
+      "qid": "Q1637202",
+      "key": "B-flat major"
+    },
+    {
+      "title": "In der Fremde",
+      "qid": "Q108874761"
+    },
+    {
+      "title": "Liederkreis, Op. 39",
+      "qid": "Q1469612",
+      "catalog_numbers": {
+        "Op": "39"
+      }
+    },
+    {
+      "title": "Mondnacht",
+      "qid": "Q108846778"
+    },
+    {
+      "title": "Romances and ballads, op. 49",
+      "qid": "Q136996328",
+      "catalog_numbers": {
+        "Op": "49"
+      }
+    },
+    {
+      "title": "Talismane",
+      "qid": "Q114245464"
+    },
+    {
+      "title": "Zwielicht",
+      "qid": "Q108866541"
+    },
+    {
+      "title": "Canonbury",
+      "qid": "Q114051800"
+    },
+    {
+      "title": "Dichterliebe",
+      "qid": "Q1209545",
+      "key": "G♭ major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1840
+    },
+    {
+      "title": "Liederkreis, Op. 24",
+      "qid": "Q6544099",
+      "catalog_numbers": {
+        "Op": "24"
+      },
+      "key": "G major",
+      "instruments": [
+        "Voice",
+        "Piano"
+      ],
+      "year_composed": 1840
+    },
+    {
+      "title": "Myrthen",
+      "qid": "Q1699144"
+    },
+    {
+      "title": "12 Gedichte aus Friedrich Rückert’s ‘Liebesfrühling’",
+      "qid": "Q125506948"
+    },
+    {
+      "title": "Piano Concerto",
+      "qid": "Q999104",
+      "key": "A minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/piano_concerto_1_1_(c)finley.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Overture, Scherzo and Finale",
+      "qid": "Q290275"
+    },
+    {
+      "title": "Piano Quartet",
+      "qid": "Q7190135",
+      "key": "E-flat major"
+    },
+    {
+      "title": "Piano Quintet",
+      "qid": "Q1620665",
+      "key": "E-flat major"
+    },
+    {
+      "title": "Paradise and the Peri",
+      "qid": "Q1170035"
+    },
+    {
+      "title": "Albumblätter",
+      "qid": "Q96371706",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/impromptu_124_9_(c)fallen.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Symphony No. 2",
+      "qid": "Q210568",
+      "key": "C major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/symphony_2_3_(c)pajares.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/symphony_4_1_(c)cvikl.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/symphony_4_3_(c)cvikl.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/symphony_4_4_(c)cvikl.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Piano Trio No. 2",
+      "qid": "Q3539371",
+      "key": "F major"
+    },
+    {
+      "title": "Piano Trio No. 1",
+      "qid": "Q3539370",
+      "key": "D minor"
+    },
+    {
+      "title": "Album for the Young",
+      "qid": "Q580760",
+      "catalog_numbers": {
+        "Op": "68"
+      },
+      "key": "F major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1848
+    },
+    {
+      "title": "Manfred",
+      "qid": "Q6748474"
+    },
+    {
+      "title": "Die wandelnde Glocke",
+      "qid": "Q115793140"
+    },
+    {
+      "title": "Fantasy Pieces for Clarinet and Piano",
+      "qid": "Q5434322"
+    },
+    {
+      "title": "Five Pieces in Folk Style",
+      "qid": "Q116392211"
+    },
+    {
+      "title": "Introduction and Allegro appassionato",
+      "qid": "Q55614582",
+      "key": "G major"
+    },
+    {
+      "title": "Lied Lynceus des Türmers",
+      "qid": "Q114267746",
+      "key": "B-flat major"
+    },
+    {
+      "title": "Mignon",
+      "qid": "Q114133526"
+    },
+    {
+      "title": "Three Romances for Oboe and Piano",
+      "qid": "Q1257134",
+      "key": "A major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/schumann_romanzen_94_1_(c)harfesoft.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/schumann_romanzen_94_2_(c)harfesoft.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/schumann_romanzen_94_3_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Adagio and Allegro",
+      "qid": "Q11283743",
+      "key": "A-flat major"
+    },
+    {
+      "title": "Symphony No. 3",
+      "qid": "Q223540",
+      "key": "E-flat major"
+    },
+    {
+      "title": "Der Einsiedler",
+      "qid": "Q108866896"
+    },
+    {
+      "title": "Genoveva",
+      "qid": "Q957377"
+    },
+    {
+      "title": "Schumann",
+      "qid": "Q114064036",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/schumann_and_schubert_70313a_romance_moment_musical_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Herman and Dorothea",
+      "qid": "Q113939115"
+    },
+    {
+      "title": "Märchenbilder",
+      "qid": "Q494872"
+    },
+    {
+      "title": "Der Rose Pilgerfahrt",
+      "qid": "Q4443382"
+    },
+    {
+      "title": "Julius Caesar overture",
+      "qid": "Q18160850",
+      "key": "F minor"
+    },
+    {
+      "title": "Piano Trio No. 3",
+      "qid": "Q3539375",
+      "key": "G minor"
+    },
+    {
+      "title": "Nachtlied",
+      "qid": "Q134613749"
+    },
+    {
+      "title": "Violin Sonata No. 1 in A Minor, Op. 105",
+      "qid": "Q3073254",
+      "catalog_numbers": {
+        "Op": "105"
+      },
+      "key": "A minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/schumann_sonata_for_violin_piano_105_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gesänge der Frühe",
+      "qid": "Q5553745"
+    },
+    {
+      "title": "Märchenerzählungen (Schumann)",
+      "qid": "Q1957384",
+      "key": "B-flat major"
+    },
+    {
+      "title": "Violin Concerto",
+      "qid": "Q1501118",
+      "catalog_numbers": {
+        "WoO": "23"
+      },
+      "key": "D minor"
+    },
+    {
+      "title": "Symphony No. 4",
+      "qid": "Q231263",
+      "key": "D minor"
+    },
+    {
+      "title": "Violin Sonata No. 2 (Schumann)",
+      "qid": "Q3490220",
+      "key": "D minor"
+    },
+    {
+      "title": "Cello Concerto",
+      "qid": "Q2636117",
+      "key": "A minor"
+    },
+    {
+      "title": "Neujahrslied",
+      "qid": "Q134613731"
+    },
+    {
+      "title": "Liederkreis Op. 39 – Zwölf Gesänge nach Joseph von Eichendorff",
+      "qid": "Q111474598",
+      "catalog_numbers": {
+        "Op": "39"
+      }
+    },
+    {
+      "title": "Sämtliche Lieder für eine Singstimme mit Klavierbegleitung von Robert Schuman",
+      "qid": "Q111474476"
+    },
+    {
+      "title": "Fantasia op. 17, C-major",
+      "qid": "Q116155094",
+      "catalog_numbers": {
+        "Op": "17"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/fantasie_17_1_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/fantasie_17_2_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/fantasie_17_3_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Toccata C major, op. 7",
+      "qid": "Q112756670",
+      "catalog_numbers": {
+        "Op": "7"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/toccata_7_(c)siu.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Union Maid",
+      "qid": "Q17040212"
+    },
+    {
+      "title": "Violin Sonata No. 3",
+      "qid": "Q115896514"
+    },
+    {
+      "title": "Made in U.S.A",
+      "qid": "Q1647641"
+    },
+    {
+      "title": "Symphony in G minor",
+      "qid": "Q11318849",
+      "key": "G minor"
+    },
+    {
+      "title": "Spring Symphony",
+      "qid": "Q878258"
+    },
+    {
+      "title": "Carnaval",
+      "qid": "Q4215498"
+    },
+    {
+      "title": "Tables of Content",
+      "qid": "Q15710971"
+    },
+    {
+      "title": "El vent de l'illa",
+      "qid": "Q89793552"
+    },
+    {
+      "title": "The 15 Year Old Girl",
+      "qid": "Q3208863"
+    },
+    {
+      "title": "El día que nací yo",
+      "qid": "Q5824815"
+    },
+    {
+      "title": "Er, der Herrlichste von allen = Ef, yr haelaf oll o ddynion",
+      "qid": "Q78526812"
+    },
+    {
+      "title": "Colonel Chabert",
+      "qid": "Q1211134"
+    },
+    {
+      "title": "Belshazzar = Gwledd Belsasar",
+      "qid": "Q79267473"
+    },
+    {
+      "title": "Barenboim Celibidache",
+      "qid": "Q116026525"
+    },
+    {
+      "title": "Po sezonie",
+      "qid": "Q11819895"
+    },
+    {
+      "title": "All Is Forgiven",
+      "qid": "Q3535716"
+    },
+    {
+      "title": "Geliebte Clara",
+      "qid": "Q1499682"
+    },
+    {
+      "title": "2nd sonata, op. 22, no. 2, G minor",
+      "qid": "Q112756664",
+      "catalog_numbers": {
+        "Op": "22"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/sonate_22_1_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/sonate_22_2_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/sonate_22_3_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/sonate_22_4_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Andante and Variations, Op. 46",
+      "qid": "Q17192594",
+      "catalog_numbers": {
+        "Op": "46"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/andante_and_variations_op_46_(c)halstead.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Beiden Grenadiere",
+      "qid": "Q136996370",
+      "key": "G minor"
+    },
+    {
+      "title": "Bunte Blätter",
+      "qid": "Q30681063"
+    },
+    {
+      "title": "Carnaval",
+      "qid": "Q5043820"
+    },
+    {
+      "title": "Carnaval",
+      "qid": "Q56458420"
+    },
+    {
+      "title": "Concert Piece for four Horns and Orchestra",
+      "qid": "Q11187907",
+      "key": "F major"
+    },
+    {
+      "title": "Davidsbündlertänze",
+      "qid": "Q668821"
+    },
+    {
+      "title": "Der Handschuh",
+      "qid": "Q121356671"
+    },
+    {
+      "title": "Drei Fantasiestücke",
+      "qid": "Q11484158"
+    },
+    {
+      "title": "Drei Gedichte nach Emanuel Geibel für mehrstimmigen Chor und Klavier",
+      "qid": "Q110044416"
+    },
+    {
+      "title": "Eight Polonaises",
+      "qid": "Q340817"
+    },
+    {
+      "title": "Erster Verlust Op. 68, No. 16",
+      "qid": "Q136066171",
+      "catalog_numbers": {
+        "Op": "68"
+      }
+    },
+    {
+      "title": "F-A-E Sonata",
+      "qid": "Q2270897",
+      "key": "A minor"
+    },
+    {
+      "title": "Fantasiestücke, Op. 88",
+      "qid": "Q115896515",
+      "catalog_numbers": {
+        "Op": "88"
+      }
+    },
+    {
+      "title": "Frauen-Liebe und Leben",
+      "qid": "Q635095"
+    },
+    {
+      "title": "Gedichte aus Liebesfrühling op.37",
+      "qid": "Q111264688",
+      "catalog_numbers": {
+        "Op": "37"
+      }
+    },
+    {
+      "title": "Gesänge op. 141. Talismane",
+      "qid": "Q114245530",
+      "catalog_numbers": {
+        "Op": "141"
+      }
+    },
+    {
+      "title": "Kinderscenen",
+      "qid": "Q112756665"
+    },
+    {
+      "title": "Lieder, Gesänge und Requiem. Die Lieder Mignons, des Harfners und Philinens. Nur wer die Sehnsucht kennt",
+      "qid": "Q114436555"
+    },
+    {
+      "title": "Missa Sacra",
+      "qid": "Q3307009",
+      "key": "C minor"
+    },
+    {
+      "title": "Nachtstück, Op. 23, No. 4",
+      "qid": "Q136101527",
+      "catalog_numbers": {
+        "Op": "23"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Nachtstücke",
+      "qid": "Q6957221"
+    },
+    {
+      "title": "Nijinsky",
+      "qid": "Q64398251"
+    },
+    {
+      "title": "Papillons",
+      "qid": "Q28480156"
+    },
+    {
+      "title": "Piano Sonata No. 2",
+      "qid": "Q3490145",
+      "key": "G minor"
+    },
+    {
+      "title": "Piano Sonata No. 3",
+      "qid": "Q11331284",
+      "key": "F minor"
+    },
+    {
+      "title": "Requiem für Mignon, Op.98b",
+      "qid": "Q11342414",
+      "catalog_numbers": {
+        "Op": "98b"
+      }
+    },
+    {
+      "title": "Requiem, Op. 148 (Schumann)",
+      "qid": "Q11946486",
+      "catalog_numbers": {
+        "Op": "148"
+      },
+      "key": "D minor"
+    },
+    {
+      "title": "Robert Schumann's Davidsbündlertänze",
+      "qid": "Q7349637"
+    },
+    {
+      "title": "Robert Schumann: Träumerei from Kinderszenen, Op. 15",
+      "qid": "Q130544844",
+      "catalog_numbers": {
+        "Op": "15"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/schumann_scenes_from_childhood_15_1_(nc)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/schumann_scenes_from_childhood_15_3_(nc)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/schumann_scenes_from_childhood_15_4_(nc)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/schumann_scenes_from_childhood_15_6_(nc)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/schumann_scenes_from_childhood_15_7_(nc)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/kinderszenen_15_7_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/schumann_scenes_from_childhood_15_8_(nc)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/schumann_scenes_from_childhood_15_9_(nc)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/schumann_scenes_from_childhood_15_12_(nc)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/schumann_scenes_from_childhood_15_13_(nc)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/schumann_kinderszenen_15_1_(c)harfesoft.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/schumann_kinderszenen_15_2_(c)harfesoft.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/schumann_kinderszenen_15_3_(c)harfesoft.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/schumann_kinderszenen_15_4_(c)harfesoft.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/schumann_kinderszenen_15_5_(c)harfesoft.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/schumann_kinderszenen_15_6_(c)harfesoft.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/schumann_kinderszenen_15_7_(c)harfesoft.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/schumann_kinderszenen_15_8_(c)harfesoft.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/schumann_kinderszenen_15_9_(c)harfesoft.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/schumann_kinderszenen_15_10_(c)harfesoft.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/schumann_kinderszenen_15_11_(c)harfesoft.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/schumann_kinderszenen_15_12_(c)harfesoft.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/schumann_kinderszenen_15_13_(c)harfesoft.mid"
+          ]
+        },
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SchumannR/O15/SchumannOp15No02/SchumannOp15No02.mid",
+            "https://www.mutopiaproject.org/ftp/SchumannR/O15/SchumannOp15No03/SchumannOp15No03.mid",
+            "https://www.mutopiaproject.org/ftp/SchumannR/O15/SchumannOp15No04/SchumannOp15No04.mid",
+            "https://www.mutopiaproject.org/ftp/SchumannR/O15/SchumannOp15No06/SchumannOp15No06.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sechs Gedichte und Requiem",
+      "qid": "Q119840727"
+    },
+    {
+      "title": "So lasst mich scheinen",
+      "qid": "Q114245746"
+    },
+    {
+      "title": "String Quartet No.3, Op.41 No.3",
+      "qid": "Q29839127",
+      "catalog_numbers": {
+        "Op": "41"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/schumann_string_quartet_41_1_(c)harfesoft.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/schumann_string_quartet_41_2_(c)harfesoft.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/schumann_string_quartet_41_3_(c)harfesoft.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/schumann_piano_string_quartet_47_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "String Quartets",
+      "qid": "Q3413882"
+    },
+    {
+      "title": "Symphonic Studies",
+      "qid": "Q374316",
+      "key": "C-sharp minor"
+    },
+    {
+      "title": "Symphony No. 1",
+      "qid": "Q163594",
+      "key": "B-flat major"
+    },
+    {
+      "title": "Szenen aus Goethes Faust",
+      "qid": "Q3476599"
+    },
+    {
+      "title": "The Happy Farmer",
+      "qid": "Q33860638",
+      "catalog_numbers": {
+        "Op": "68"
+      },
+      "key": "F major",
+      "instruments": [
+        "Piano"
+      ],
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=op68no01-chord.krn&l=users/craig/classical/schumann/op68&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=op68no01.krn&l=users/craig/classical/schumann/op68&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=op68no10-chord.krn&l=users/craig/classical/schumann/op68&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=op68no10.krn&l=users/craig/classical/schumann/op68&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Variations on an Original Theme, WoO 24",
+      "qid": "Q1339833",
+      "catalog_numbers": {
+        "WoO": "24"
+      },
+      "key": "E-flat major"
+    },
+    {
+      "title": "Waldszenen",
+      "qid": "Q3565331"
+    },
+    {
+      "title": "Zigeunerleben",
+      "qid": "Q11556728"
+    },
+    {
+      "title": "Études After Paganini Caprices",
+      "qid": "Q3485663"
+    },
+    {
+      "title": "Andante un poco maestoso. Allegro molto vivace",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/symphony_1_1_(c)kirschbaum.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Larghetto",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/symphony_1_2_(c)kirschbaum.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Scherzo. Molto vivace",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/symphony_1_3_(c)kirschbaum.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Allegro animato e grazioso",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/symphony_1_4_(c)kirschbaum.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "2-3. Intermezzo - Allegro Vivace",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/piano_concerto_1_2-3_(c)finley.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata for violin and piano in d minor, Op. 121 (1851)",
+      "catalog_numbers": {
+        "Op": "121"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/schumann_sonata_for_violin_piano_121_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Trio for violin, cello and piano in d minor, Op. 63 (1847)",
+      "catalog_numbers": {
+        "Op": "63"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/schumann_trio_for_violin_cello_piano_63_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Piano string quintet in E flat major, Op. 44 (1842)",
+      "catalog_numbers": {
+        "Op": "44"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/schumann_piano_string_quintet_44_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concertst�ck oder Intro and Allegro Appassionato, Op. 92 (1849)",
+      "catalog_numbers": {
+        "Op": "92"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=1/schumann_intro_allegro_appassionato_92_(c)kirschbaum.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "M�rchenbilder for viola und piano, Op. 113",
+      "catalog_numbers": {
+        "Op": "113"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/schumann_maerchenbilder_for_violina_113_1_(c)harfesoft.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/schumann_maerchenbilder_for_violina_113_2_(c)harfesoft.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/schumann_maerchenbilder_for_violina_113_3_(c)harfesoft.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/schumann_maerchenbilder_for_violina_113_4_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Papillon Op. 2 No. 1, Widmung *",
+      "catalog_numbers": {
+        "Op": "2/1"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/schumann_45185s_dedication_in_a_flat_(widmung)_op_2_1_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/schumann_60279s_widmung_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Papillon Op. 2 No. 7-12 **",
+      "catalog_numbers": {
+        "Op": "2/7"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/schumann_10247s_papillion_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Symphonische Et�den (�tudes en forme de Variations / �tudes Symphoniques), Op. 13 (1834, rev. 1852) *",
+      "catalog_numbers": {
+        "Op": "13"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/symphonische_etuden_13_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Part I � MIDI | Part II",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/symphonic_etude_13a_(c)hisamori.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Arabesque, Op. 18",
+      "catalog_numbers": {
+        "Op": "18"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/schumann_56166a_arabesque_op_18_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/arabesque_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "1. So rasch wie m�glich",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/schumann_61163a_sonata_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Presto Op. posth., Passionato (1835)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/presto_posth_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "I. Mehr langsam, oft zur�ckhaltend",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/nachtstucke_23_1_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "II. Markiert und lebhaft",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/nachtstucke_23_2_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "III. Mit gro�er Lebhaftigkeit",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/nachtstucke_23_3_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "IV. Einfach",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/nachtstucke_23_4_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "4 Fugues, Op. 72 (1845)",
+      "catalog_numbers": {
+        "Op": "72"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/fugue_72_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/fugue_72_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/fugue_72_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/fugue_72_4_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Klavierst�cke in Fughettenform, Op. 126",
+      "catalog_numbers": {
+        "Op": "126"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/fugue_126_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/fugue_126_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/fugue_126_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/fugue_126_4_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/fugue_126_5_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/fugue_126_6_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/fugue_126_7_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/schumann_klavierstucke_in_fughettenform_126a_(simonetto).mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/schumann_klavierstucke_in_fughettenform_126b_(simonetto).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Evening Song (transcription by Raff)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/schumann-raff_3063w_evening_song_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Bilder aus Osten (Pictures from the East), Op. 66",
+      "catalog_numbers": {
+        "Op": "66"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/bilder_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/bilder_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/bilder_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/bilder_4_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/bilder_5_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/bilder_6_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Study in canon form",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schumann/etude_en_forme_de_canon_(c)luquet.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Feuilles d'album",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 2.5",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SchumannR/O124/16-berceuse/16-berceuse-lys/16-berceuse-midi.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kinderscenen - Von fremden Ländern und Menschen",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SchumannR/O15/SchumannOp15No01/SchumannOp15No01.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kinderscenen - Glückes genug",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SchumannR/O15/SchumannOp15No05/SchumannOp15No05.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kinderscenen - Traümerei",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SchumannR/O15/SchumannOp15No07/SchumannOp15No07.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Freisinn",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SchumannR/O25/02_Freisinn/02_Freisinn.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Du bist wie eine Blume",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SchumannR/O25/blume/blume.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Widmung",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SchumannR/O25/schumann-widmung/schumann-widmung.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Widmung (low voice)",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SchumannR/O25/schumann-widmung-low/schumann-widmung-low.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Romanzen",
+      "catalog_numbers": {
+        "Op": "28/2"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SchumannR/O28/romanze-op28-2/romanze-op28-2-lys/schumann-romanze-op28-2-a4.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ich grolle nicht",
+      "catalog_numbers": {
+        "Op": "48/7"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SchumannR/O48/Ich_grolle_nicht/Ich_grolle_nicht.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ich will meine Seele tauchen",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SchumannR/O48/Ich_will_meine_Seele_tauchen/Ich_will_meine_Seele_tauchen.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Album pour la jeunesse - 1.Mélodie",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 2.5",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SchumannR/O68/schumann-op68-01-melodie/schumann-op68-01-melodie.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Album pour la jeunesse - 2.Marche militaire",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 2.5",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SchumannR/O68/schumann-op68-02-marche-militaire/schumann-op68-02-marche-militaire.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Album pour la jeunesse - 3.Chanson fredonnée",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SchumannR/O68/schumann-op68-03-chanson-fredonnee/schumann-op68-03-chanson-fredonnee.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Album pour la jeunesse - 4.Un choral",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 2.5",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SchumannR/O68/schumann-op68-04-choral/schumann-op68-04-choral.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Album pour la jeunesse - 5.Petite pièce",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 2.5",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SchumannR/O68/schumann-op68-05-petite-piece/schumann-op68-05-petite-piece.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Album pour la jeunesse - 6.Pauvre orpheline",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 2.5",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SchumannR/O68/schumann-op68-06-pauvre-orpheline/schumann-op68-06-pauvre-orpheline.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Album pour la jeunesse - 7.Chanson du chasseur",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SchumannR/O68/schumann-op68-07-chanson-du-chasseur/schumann-op68-07-chanson-du-chasseur.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Album pour la jeunesse - 8.Le cavalier sauvage",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 2.5",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SchumannR/O68/schumann-op68-08-cavalier-sauvage/schumann-op68-08-cavalier-sauvage.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Album pour la jeunesse - 9.Chanson populaire",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 2.5",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SchumannR/O68/schumann-op68-09-chanson-populaire/schumann-op68-09-chanson-populaire.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Album pour la jeunesse - 10.Le gai laboureur",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 2.5",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SchumannR/O68/schumann-op68-10-gai-laboureur/schumann-op68-10-gai-laboureur.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Album pour la jeunesse - 11.Sicilienne",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 2.5",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SchumannR/O68/schumann-op68-11-sicilienne/schumann-op68-11-sicilienne.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Album pour la jeunesse - 12.Le Père Fouettard",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 2.5",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SchumannR/O68/schumann-op68-12-Pere-Fouettard/schumann-op68-12-Pere-Fouettard.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Album pour la jeunesse - 14.Petite Etude",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 2.5",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SchumannR/O68/schumann-op68-14-petite-etude/schumann-op68-14-petite-etude.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Album pour la jeunesse - 16.Premier chagrin",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 2.5",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SchumannR/O68/schumann-op68-16-premier-chagrin/schumann-op68-16-premier-chagrin.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Album pour la jeunesse - 18.Chant des moissonneurs",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 2.5",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SchumannR/O68/schumann-op68-18-moissonneurs/schumann-op68-18-moissonneurs.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Album pour la jeunesse - 25.Echos du Théâtre",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 2.5",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SchumannR/O68/schumann-op68-25-theater/schumann-op68-25-theater.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Album pour la jeunesse - 26. * * * * *",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 2.5",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SchumannR/O68/schumann-op68-26-sans-titre/schumann-op68-26-sans-titre.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Album pour la jeunesse - 32.Sheherazade",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 2.5",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SchumannR/O68/schumann-op68-32-sheherazade/schumann-op68-32-sheherazade-lys/schumann-op68-32-sheherazade-mid.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Album pour la jeunesse - 36.Chant de marins italiens",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 2.5",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SchumannR/O68/schumann-op68-36-chant-de-marins-italiens/schumann-op68-36-chant-de-marins-italiens.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

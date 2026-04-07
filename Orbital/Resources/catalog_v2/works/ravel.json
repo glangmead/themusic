@@ -1,0 +1,812 @@
+{
+  "works": [
+    {
+      "title": "Sérénade grotesque",
+      "qid": "Q11300846"
+    },
+    {
+      "title": "Oiseaux tristes",
+      "qid": "Q30125978",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/ravel_selections_menuette_oiseaux_tristes_a_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Miroirs",
+      "qid": "Q770354",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=ravel_miroirs_1_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=ravel_miroirs_2_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=ravel_miroirs_3_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=ravel_miroirs_4_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=ravel_miroirs_5_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "L'heure espagnole",
+      "qid": "Q593319"
+    },
+    {
+      "title": "Vocalise-étude en forme de habanera",
+      "qid": "Q105543333",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=ravel_piece_en_forme_de_habanera_(c)bachovich.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Prélude",
+      "qid": "Q11397102",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy-ravel_prelude_apres_midi_faune_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Deux mélodies hébraïques",
+      "qid": "Q105550985"
+    },
+    {
+      "title": "Frontispice",
+      "qid": "Q95789248"
+    },
+    {
+      "title": "L'enfant et les sortilèges",
+      "qid": "Q267467"
+    },
+    {
+      "title": "Le Tombeau de Couperin",
+      "qid": "Q30116719",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=ravel_tombeau_de_couperin_1_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=ravel_tombeau_de_couperin_2_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=ravel_tombeau_de_couperin_3_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=ravel_tombeau_de_couperin_4_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=ravel_tombeau_de_couperin_5_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=ravel_tombeau_de_couperin_6_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "La valse",
+      "qid": "Q776559",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=ravel_la_valse_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "La Valse",
+      "qid": "Q35684629"
+    },
+    {
+      "title": "La Valse",
+      "qid": "Q35684650"
+    },
+    {
+      "title": "Sonata for Violin and Cello",
+      "qid": "Q672811"
+    },
+    {
+      "title": "Chansons madécasses",
+      "qid": "Q15526916"
+    },
+    {
+      "title": "Fanfare pour l'Éventail de Jeanne",
+      "qid": "Q125345240"
+    },
+    {
+      "title": "Boléro",
+      "qid": "Q30134849",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/ravel_71043a_bolero_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=33/ravel_bolero_for_two_pianos_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/ravel_bolero_(c)unknown.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Boléro",
+      "qid": "Q30134850"
+    },
+    {
+      "title": "Piano Concerto for the Left Hand",
+      "qid": "Q1190499"
+    },
+    {
+      "title": "Don Quichotte à Dulcinée",
+      "qid": "Q3035889"
+    },
+    {
+      "title": "The Bewitched Child",
+      "qid": "Q30763173"
+    },
+    {
+      "title": "A Letter to Freddy Buache",
+      "qid": "Q4657707"
+    },
+    {
+      "title": "Alborada del Gracioso",
+      "qid": "Q119412866"
+    },
+    {
+      "title": "Alborada del gracioso",
+      "qid": "Q2831938"
+    },
+    {
+      "title": "Ballade de la reine morte d'aimer",
+      "qid": "Q112144205"
+    },
+    {
+      "title": "Ballerina",
+      "qid": "Q3641709"
+    },
+    {
+      "title": "Berceuse sur le nom de Gabriel Fauré",
+      "qid": "Q99018960",
+      "key": "G major",
+      "instruments": [
+        "Violin",
+        "Piano"
+      ],
+      "year_composed": 1922
+    },
+    {
+      "title": "Bolero",
+      "qid": "Q63301959",
+      "instruments": [
+        "Violino"
+      ]
+    },
+    {
+      "title": "Bolero17",
+      "qid": "Q112265196"
+    },
+    {
+      "title": "Boléro",
+      "qid": "Q327331"
+    },
+    {
+      "title": "Calla Lily",
+      "qid": "Q21775683"
+    },
+    {
+      "title": "Chanson du rouet",
+      "qid": "Q125243383"
+    },
+    {
+      "title": "Chants populaires",
+      "qid": "Q110280729"
+    },
+    {
+      "title": "Daphnis and Chloé",
+      "qid": "Q130753911"
+    },
+    {
+      "title": "Daphnis et Chloé",
+      "qid": "Q1201123",
+      "key": "A major",
+      "instruments": [
+        "1 Petite Flûte",
+        "2 Flûtes",
+        "1 Flûte en Sol",
+        "2 Hautbois",
+        "1 Cor Anglais",
+        "1 Petite Clarinette en Mi♭",
+        "2 Clarinettes en La",
+        "1 Clarinette Basse en Si♭",
+        "3 Bassons",
+        "Bassoon",
+        "1 Contre-Basson",
+        "Horn in F",
+        "C Trumpet",
+        "Tenor Trombone",
+        "Bass Trombone",
+        "Tuba",
+        "Timpani",
+        "Concert Bass Drum",
+        "1er Harpe",
+        "2de Harpe",
+        "Sopranos",
+        "Contraltos",
+        "Ténors",
+        "Basses"
+      ],
+      "year_composed": 1912
+    },
+    {
+      "title": "Duo Sessions",
+      "qid": "Q86525124"
+    },
+    {
+      "title": "Enormous",
+      "qid": "Q94768194"
+    },
+    {
+      "title": "Flammes",
+      "qid": "Q3073317"
+    },
+    {
+      "title": "Forlane",
+      "qid": "Q30118363"
+    },
+    {
+      "title": "Forlane",
+      "qid": "Q30118437"
+    },
+    {
+      "title": "Fugue",
+      "qid": "Q30118361"
+    },
+    {
+      "title": "Gaspard de la nuit",
+      "qid": "Q1008459",
+      "key": "C♯ major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1908
+    },
+    {
+      "title": "Histoires naturelles",
+      "qid": "Q3138293"
+    },
+    {
+      "title": "Hommage à Gabriel Fauré",
+      "qid": "Q55597233"
+    },
+    {
+      "title": "Hommage à Joseph Haydn",
+      "qid": "Q88202361"
+    },
+    {
+      "title": "In G Major",
+      "qid": "Q6009494"
+    },
+    {
+      "title": "Introduction and Allegro",
+      "qid": "Q3153718"
+    },
+    {
+      "title": "Jeux d'eau",
+      "qid": "Q1684076",
+      "key": "E major",
+      "instruments": [
+        "鋼琴"
+      ],
+      "year_composed": 1901,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=ravel_little_pieces_3_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "L'éventail de Jeanne",
+      "qid": "Q6456048"
+    },
+    {
+      "title": "La Fin du jour",
+      "qid": "Q18209065"
+    },
+    {
+      "title": "La Parade",
+      "qid": "Q124876184"
+    },
+    {
+      "title": "La Valse",
+      "qid": "Q110818557"
+    },
+    {
+      "title": "La vallée des cloches",
+      "qid": "Q30125995"
+    },
+    {
+      "title": "Le Batteur Du Boléro",
+      "qid": "Q943096"
+    },
+    {
+      "title": "Le Gibet",
+      "qid": "Q29884860"
+    },
+    {
+      "title": "Le tombeau de Couperin",
+      "qid": "Q1819366",
+      "key": "G major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1917
+    },
+    {
+      "title": "Le tombeau de Couperin",
+      "qid": "Q6508136"
+    },
+    {
+      "title": "Les Uns et les Autres",
+      "qid": "Q136696490"
+    },
+    {
+      "title": "Lonlon",
+      "qid": "Q84951105"
+    },
+    {
+      "title": "Ma Mère L'Oye (Mother Goose)",
+      "qid": "Q119164146"
+    },
+    {
+      "title": "Ma mère l'oye",
+      "qid": "Q174524",
+      "instruments": [
+        "Piano 1",
+        "Piano 2"
+      ],
+      "year_composed": 1910
+    },
+    {
+      "title": "Ma mère l'oye",
+      "qid": "Q51099969",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1910
+    },
+    {
+      "title": "Menuet",
+      "qid": "Q30118366",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=ravel_little_pieces_1_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=ravel_little_pieces_5_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/ravel_selections_menuette_oiseaux_tristes_a_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=ravel_minuet_tombeau_couperin_[orch]_(c)pajares.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=ravel_menuet_tombeau_de_couperin_(c)bachovich.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Menuet",
+      "qid": "Q30118440"
+    },
+    {
+      "title": "Menuet antique",
+      "qid": "Q3142780"
+    },
+    {
+      "title": "Menuet sur le nom d'Haydn",
+      "qid": "Q6817676",
+      "key": "G major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1909
+    },
+    {
+      "title": "Moment Musical",
+      "qid": "Q72790261"
+    },
+    {
+      "title": "Mother Goose",
+      "qid": "Q6917346"
+    },
+    {
+      "title": "Mélodies populaires grecques",
+      "qid": "Q39075281",
+      "key": "A♭ major",
+      "instruments": [
+        "Chant",
+        "Piano"
+      ],
+      "year_composed": 1906
+    },
+    {
+      "title": "Noctuelles",
+      "qid": "Q30125973"
+    },
+    {
+      "title": "Noël des jouets",
+      "qid": "Q105549196"
+    },
+    {
+      "title": "Ondine",
+      "qid": "Q29884858"
+    },
+    {
+      "title": "Pavane pour une infante défunte",
+      "qid": "Q2271923",
+      "key": "G major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1899,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=ravel_little_pieces_2_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Piano Concerto",
+      "qid": "Q954815",
+      "key": "E major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1931
+    },
+    {
+      "title": "Piano Trio",
+      "qid": "Q3539334"
+    },
+    {
+      "title": "Prélude",
+      "qid": "Q30118359"
+    },
+    {
+      "title": "Prélude",
+      "qid": "Q30118436"
+    },
+    {
+      "title": "Rapsodie espagnole",
+      "qid": "Q3083343",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/ravel_rapsodie_espagnole_1_prelude_a_la_nuit_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/ravel_rapsodie_espagnole_2_malaguena_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/ravel_rapsodie_espagnole_3_habanera_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=ravel_espagnole_4_feria_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Rigaudon",
+      "qid": "Q30118365"
+    },
+    {
+      "title": "Rigaudon",
+      "qid": "Q30118439"
+    },
+    {
+      "title": "Ronsard à son âme",
+      "qid": "Q105575621"
+    },
+    {
+      "title": "Sainte",
+      "qid": "Q105533460"
+    },
+    {
+      "title": "Scarbo",
+      "qid": "Q29884861"
+    },
+    {
+      "title": "Sheherazade",
+      "qid": "Q18460544"
+    },
+    {
+      "title": "Shéhérazade",
+      "qid": "Q1476590"
+    },
+    {
+      "title": "Si morne !",
+      "qid": "Q125245680"
+    },
+    {
+      "title": "Sites auriculaires",
+      "qid": "Q100261170"
+    },
+    {
+      "title": "Sonatine",
+      "qid": "Q1779888",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=ravel_sonatine_(c)halstead.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=ravel_little_pieces_4_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "String Quartet",
+      "qid": "Q1635257",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/ravel_string_quartet_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Beautiful Risk",
+      "qid": "Q16839553"
+    },
+    {
+      "title": "The Witch",
+      "qid": "Q7775273"
+    },
+    {
+      "title": "Toccata",
+      "qid": "Q30118368"
+    },
+    {
+      "title": "Tombeau de Claude Debussy",
+      "qid": "Q14752515"
+    },
+    {
+      "title": "Tomcat",
+      "qid": "Q22905774"
+    },
+    {
+      "title": "Tout est lumière",
+      "qid": "Q133461751"
+    },
+    {
+      "title": "Trois Chansons (Ravel)",
+      "qid": "Q12162372"
+    },
+    {
+      "title": "Trois poèmes de Mallarmé",
+      "qid": "Q3540039"
+    },
+    {
+      "title": "Tzigane",
+      "qid": "Q1968288"
+    },
+    {
+      "title": "Un grand sommeil noir",
+      "qid": "Q125221632"
+    },
+    {
+      "title": "Une barque sur l'océan",
+      "qid": "Q30125986"
+    },
+    {
+      "title": "Valses nobles et sentimentales",
+      "qid": "Q3083404",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=ravel_valse_nobles_sentimentales_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Violin Sonata No. 1",
+      "qid": "Q115802671"
+    },
+    {
+      "title": "Violin Sonata No. 2",
+      "qid": "Q264268"
+    },
+    {
+      "title": "Voyage to the Edge of the World",
+      "qid": "Q11825513"
+    },
+    {
+      "title": "Zeppelin",
+      "qid": "Q17416730"
+    },
+    {
+      "title": "À la manière d'Emmanuel Chabrier",
+      "qid": "Q100272136",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=ravel_little_pieces_7_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "À la manière de Borodine",
+      "qid": "Q100268421"
+    },
+    {
+      "title": "À la manière de...",
+      "qid": "Q137921500"
+    },
+    {
+      "title": "6. � la mani�re de Borodin (1913)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=ravel_little_pieces_6_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "8. Pr�lude (1913)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=ravel_little_pieces_8_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pavane de la Belle au bois dormant",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=ravel_ma_mere_l_oye_1_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Petit Poucet",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=ravel_ma_mere_l_oye_2_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Laideronnette, Imp�ratrice des Pagodes",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=ravel_ma_mere_l_oye_3_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Les entretiens de la Belle et la Bete",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=ravel_ma_mere_l_oye_4_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Le jardin f�erique",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=ravel_ma_mere_l_oye_5_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pictures at an Exhibition / Quadri di un'esposizione for orchestra (by Mussorgsky)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=mussorgskij_pictures_et_exhibition_1_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=mussorgskij_pictures_et_exhibition_2_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=mussorgskij_pictures_et_exhibition_3_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=mussorgskij_pictures_et_exhibition_4_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=mussorgskij_pictures_et_exhibition_5_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=mussorgskij_pictures_et_exhibition_6_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=mussorgskij_pictures_et_exhibition_7_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=mussorgskij_pictures_et_exhibition_8_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=mussorgskij_pictures_et_exhibition_9_(c)galimberti.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pavane for a Sleeping Beauty, arranged for guitar",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=ravel_pavane_sleeping_beauty_(c)bachovich.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,513 @@
+{
+  "works": [
+    {
+      "title": "Benedictus",
+      "qid": "Q4887363",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=17/lasso_missa_octavi_toni_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Confirma hoc Deus",
+      "qid": "Q124358714"
+    },
+    {
+      "title": "En passant par la Lorraine",
+      "qid": "Q3053591"
+    },
+    {
+      "title": "Lagrime di San Pietro",
+      "qid": "Q3826117",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=17/lasso_lagrime_di_san_pietro_1_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=17/lasso_lagrime_di_san_pietro_2_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=17/lasso_lagrime_di_san_pietro_3_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=17/lasso_lagrime_di_san_pietro_4_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27l/lasso_lagrime_di_san_pietro_nessun_fedel_trovai_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lumen ad revelationem, LV Anh.74",
+      "qid": "Q125356103"
+    },
+    {
+      "title": "Martha",
+      "qid": "Q473359"
+    },
+    {
+      "title": "Miserere mei Deus",
+      "qid": "Q124316031"
+    },
+    {
+      "title": "Missa super Beatus qui intelligit",
+      "qid": "Q124314668"
+    },
+    {
+      "title": "Missa super Or sus à coup",
+      "qid": "Q124314863"
+    },
+    {
+      "title": "Mon cœur se recommande à vous",
+      "qid": "Q130342287",
+      "key": "F major",
+      "instruments": [
+        "S1",
+        "S2",
+        "A",
+        "T",
+        "B"
+      ],
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=3/lasso_mon_coeur_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/lasso_mon_coeur_se_recommande_a_vous_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Psalmi Davidis poenitentiales",
+      "qid": "Q124310419"
+    },
+    {
+      "title": "Quia vidisti me Thoma credidisti, LV 150",
+      "qid": "Q125352513"
+    },
+    {
+      "title": "Regina coeli",
+      "qid": "Q124315956"
+    },
+    {
+      "title": "Salve Regina misericordiae",
+      "qid": "Q124316002"
+    },
+    {
+      "title": "Missa octo vocum ad imitationem Bell Amfitrit altera for double choir SATB + SATB",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=3/lasso_missa_bell_amfitrit_altera_1_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=3/lasso_missa_bell_amfitrit_altera_2_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=3/lasso_missa_bell_amfitrit_altera_3_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=3/lasso_missa_bell_amfitrit_altera_4_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=3/lasso_missa_bell_amfitrit_altera_5_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Bicina ex VII Psalmis Poenitentialibus, two-part vocal compositions",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=3/lasso_bicina_vocal_compositions_1_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=3/lasso_bicina_vocal_compositions_2_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=lasso_expandi_manus_(mccloskey).mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=3/lasso_bicina_vocal_compositions_4_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=lasso_intellectum_tibi_(mccloskey).mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=3/lasso_bicina_vocal_compositions_5_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=3/lasso_bicina_vocal_compositions_6_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=3/lasso_bicina_vocal_compositions_7_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=3/lasso_bicina_vocal_compositions_8_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=lasso_discendite_a_me_(mccloskey).mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=3/lasso_bicina_vocal_compositions_9_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=3/lasso_bicina_vocal_compositions_10_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=3/lasso_bicina_vocal_compositions_11_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=3/lasso_bicina_vocal_compositions_12_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=3/lasso_bicina_vocal_compositions_13_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=3/lasso_bicina_vocal_compositions_14_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=3/lasso_bicina_vocal_compositions_15_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Liber motettarum trium vocum for vocalists and instruments (1575)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=27l/lasso_liber_motettarum_trium_vocis_25_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27l/lasso_liber_motettarum_trium_vocis_26_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27l/lasso_liber_motettarum_trium_vocis_27_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27l/lasso_liber_motettarum_trium_vocis_28_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27l/lasso_liber_motettarum_trium_vocis_29_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27l/lasso_liber_motettarum_trium_vocis_30_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27l/lasso_liber_motettarum_trium_vocis_33_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27l/lasso_liber_motettarum_trium_vocis_34_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27l/lasso_liber_motettarum_trium_vocis_39_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27l/lasso_liber_motettarum_trium_vocis_44_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27l/lasso_liber_motettarum_trium_vocis_45_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Prophetiae Sibyllarum (...chromatico more singulari confectae) for vocalists SATB (M�nchen 1600)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/lasso_prophetiae_sibyllarum_chromatico_(c)cipoo.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27l/lasso_prophetiae_siblyllarum_1_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/lasso_prophetiae_sibyllarum_1_(c)cipoo.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27l/lasso_prophetiae_siblyllarum_2_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/lasso_prophetiae_sibyllarum_2_(c)cipoo.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27l/lasso_prophetiae_siblyllarum_3_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/lasso_prophetiae_sibyllarum_3_(c)cipoo.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27l/lasso_prophetiae_siblyllarum_4_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27l/lasso_prophetiae_siblyllarum_5_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27l/lasso_prophetiae_siblyllarum_6_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27l/lasso_prophetiae_siblyllarum_7_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27l/lasso_prophetiae_siblyllarum_8_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27l/lasso_prophetiae_siblyllarum_9_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27l/lasso_prophetiae_siblyllarum_10_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27l/lasso_prophetiae_siblyllarum_11_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27l/lasso_prophetiae_siblyllarum_12_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27l/lasso_prophetiae_siblyllarum_13_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Beatus vir",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=lasso_beatus_vir_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Beatus homo",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=lasso_beatus_homo_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Oculus non vidit",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=lasso_oculus_non_vidit_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Domine fac mecum misericordia tuum from Sacrae cantiones quattuor vocum, Motet for vocalists SATB (1585)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=27l/lasso_domine_fac_mecum_misericordia_tuum_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Magnificat Octavi Toni for choir SATB and chant",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=3/lasso_magnificat_octavi_toni_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Jubilate Deo, omnis terra Psalm 66, arranged for 4 recorders AATB or ATTB",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=3/lasso_jubilate_deo_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Exaudi, Deus, orationem meam",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=27l/lasso_exaudi_deus_orationem_meam_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Adoramus te Christe",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/lasso_adoramus_te_christe_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Adoramus te Christe *",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=27l/lasso_adoramus_te_christe_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Afflictus sum",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/lasso_afflictus_sum_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Caligaverunt oculi mai",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/lasso_caligaverunt_oculi_mai_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Convertere te Domine",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/lasso_convertere_te_domine_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cor meum",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/lasso_cor_meum_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Dixi confitebor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/lasso_dixi_confitebor_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Eripe me",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/lasso_eripe_me_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Et ipse redimet",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/lasso_et_ipse_redimet_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Hodie apparuit",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/lasso_hodie_apparuit_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Matona mia cara",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=3/lasso_matona_mia_cara_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Matona mia cara *",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/lasso_matona_mia_cara_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Matona mia cara **",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=27l/lasso_matona_mia_cara_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Oi chel mio largo pianto �",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=ancient/lassus_oi_ch_el_mio_largo_pianto_(c)clark.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "O occhi, manza mia *",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/lasso_o_occhi_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Wohl kommt der Mai �",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=ancient/lassus_wohl_kommt_der_mai_(c)clark.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sibylla Samia",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/LassusOd/samia/samia-lys/samia-a4.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

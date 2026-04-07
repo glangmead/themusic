@@ -1,0 +1,551 @@
+{
+  "works": [
+    {
+      "title": "Tancredi",
+      "qid": "Q911443"
+    },
+    {
+      "title": "La Cenerentola",
+      "qid": "Q176700"
+    },
+    {
+      "title": "La gazza ladra",
+      "qid": "Q472318",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/rossini_la_gazza_ladra_classicaland_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/rossini_la_gazza_ladra_arr-weiss_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "La donna del lago",
+      "qid": "Q220699"
+    },
+    {
+      "title": "La riconoscenza",
+      "qid": "Q109241927"
+    },
+    {
+      "title": "Tutto cangia, il ciel s'abbella",
+      "qid": "Q64006697"
+    },
+    {
+      "title": "La Danza",
+      "qid": "Q1232797"
+    },
+    {
+      "title": "Tantum ergo",
+      "qid": "Q109241656"
+    },
+    {
+      "title": "Petite messe solennelle",
+      "qid": "Q2033442"
+    },
+    {
+      "title": "Adelaide di Borgogna",
+      "qid": "Q503447"
+    },
+    {
+      "title": "Adelaide di Borgogna (Rossini)",
+      "qid": "Q55044535"
+    },
+    {
+      "title": "Adina",
+      "qid": "Q504102"
+    },
+    {
+      "title": "After such beating of the heart, such torment",
+      "qid": "Q54987078"
+    },
+    {
+      "title": "Armida",
+      "qid": "Q777578"
+    },
+    {
+      "title": "Aureliano in Palmira",
+      "qid": "Q781525"
+    },
+    {
+      "title": "Bel raggio lusinghier",
+      "qid": "Q54987042"
+    },
+    {
+      "title": "Bianca e Faliero",
+      "qid": "Q109241473"
+    },
+    {
+      "title": "Bianca e Falliero, o sia Il consiglio di tre",
+      "qid": "Q794524"
+    },
+    {
+      "title": "Calumny is a little breeze",
+      "qid": "Q3214024"
+    },
+    {
+      "title": "Ciro in Babilonia",
+      "qid": "Q935308"
+    },
+    {
+      "title": "Cruel fate! Tyrannical Cupid!",
+      "qid": "Q54986944"
+    },
+    {
+      "title": "Cycle Rossini",
+      "qid": "Q57166722"
+    },
+    {
+      "title": "Demetrio e Polibio",
+      "qid": "Q932131"
+    },
+    {
+      "title": "Duet for Cello and Double Bass",
+      "qid": "Q11317819"
+    },
+    {
+      "title": "Duetto buffo di due gatti",
+      "qid": "Q936825"
+    },
+    {
+      "title": "Ecco, ridente in cielo",
+      "qid": "Q5332294"
+    },
+    {
+      "title": "Eduardo e Cristina",
+      "qid": "Q898577"
+    },
+    {
+      "title": "Elisabetta, regina d'Inghilterra",
+      "qid": "Q261831"
+    },
+    {
+      "title": "Ermione",
+      "qid": "Q936702"
+    },
+    {
+      "title": "Finale: March of the Swiss Soldiers",
+      "qid": "Q66837953"
+    },
+    {
+      "title": "Giovanna d'Arco",
+      "qid": "Q3766223"
+    },
+    {
+      "title": "Guglielmo Tell",
+      "qid": "Q3779026",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/rossini_6232d_william_tell_overture_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rossini-liszt_guglielmo_tell_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/rossini_953w_william_tell_overture_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/rossini_60103a_william_tell_overture_(part_1)_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Half a Life",
+      "qid": "Q3326144"
+    },
+    {
+      "title": "Il Barbiere di Siviglia – Almaviva, o sia l’inutile precauzione",
+      "qid": "Q57337333"
+    },
+    {
+      "title": "Il pesceballo",
+      "qid": "Q5996760"
+    },
+    {
+      "title": "Il signor Bruschino",
+      "qid": "Q850314"
+    },
+    {
+      "title": "Il turco in Italia",
+      "qid": "Q477643"
+    },
+    {
+      "title": "Il vero omaggio",
+      "qid": "Q60977554"
+    },
+    {
+      "title": "Il viaggio a Reims",
+      "qid": "Q470983"
+    },
+    {
+      "title": "Introduction, thème et variations",
+      "qid": "Q111781537"
+    },
+    {
+      "title": "Ivanhoé",
+      "qid": "Q1442168"
+    },
+    {
+      "title": "L'Italiana in Algeri",
+      "qid": "Q57167071",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rossini_italiana_algeri_symphony_(c)pajares.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "L'amour à l'épreuve",
+      "qid": "Q50882976"
+    },
+    {
+      "title": "L'equivoco stravagante",
+      "qid": "Q936667"
+    },
+    {
+      "title": "L'inganno felice",
+      "qid": "Q1051191"
+    },
+    {
+      "title": "L'italiana in Algeri",
+      "qid": "Q589932"
+    },
+    {
+      "title": "L'occasione fa il ladro",
+      "qid": "Q651596"
+    },
+    {
+      "title": "L'île des pirates",
+      "qid": "Q130775641"
+    },
+    {
+      "title": "La Boutique fantasque",
+      "qid": "Q2420510"
+    },
+    {
+      "title": "La Cenerentola (1999–2000)",
+      "qid": "Q57507765"
+    },
+    {
+      "title": "La calunnia e un venticello = Sibrwd enllib sy' fel awelig : o Il Barberiere di Siviglia",
+      "qid": "Q78648058"
+    },
+    {
+      "title": "La cambiale di matrimonio",
+      "qid": "Q264154"
+    },
+    {
+      "title": "La cenerentola (New Zealand Opera, 2015)",
+      "qid": "Q107568848"
+    },
+    {
+      "title": "La gazza ladra",
+      "qid": "Q1799267"
+    },
+    {
+      "title": "La gazzetta",
+      "qid": "Q509761"
+    },
+    {
+      "title": "La pastorella delle Alpi = Bugeiles yr Alpau : cân o'r Tirol",
+      "qid": "Q78526947"
+    },
+    {
+      "title": "La pietra del paragone",
+      "qid": "Q471573"
+    },
+    {
+      "title": "La promessa = Yr adduned : Serate musicali",
+      "qid": "Q78526952"
+    },
+    {
+      "title": "La santa alleanza",
+      "qid": "Q132555465"
+    },
+    {
+      "title": "La scala di seta",
+      "qid": "Q471330"
+    },
+    {
+      "title": "Largo al factotum",
+      "qid": "Q2349959"
+    },
+    {
+      "title": "Largo al factotum della citta = Fi ydyw gŵr prysuraf y wlad : Il Barbiere di Siviglia",
+      "qid": "Q78648066"
+    },
+    {
+      "title": "Le comte Ory",
+      "qid": "Q734560"
+    },
+    {
+      "title": "Le siège de Corinthe",
+      "qid": "Q669125"
+    },
+    {
+      "title": "Like a bee on April days",
+      "qid": "Q54986704"
+    },
+    {
+      "title": "Là del ciel nell'arcano profondo",
+      "qid": "Q54986708"
+    },
+    {
+      "title": "Maometto II",
+      "qid": "Q1417349"
+    },
+    {
+      "title": "Matilde di Shabran",
+      "qid": "Q1077931"
+    },
+    {
+      "title": "Messa di Gloria",
+      "qid": "Q6821727"
+    },
+    {
+      "title": "Mi lagnero tacendo = Yma dan chwerw dynged : allan o \"Soirées musicales\"",
+      "qid": "Q78648148"
+    },
+    {
+      "title": "Mosè in Egitto",
+      "qid": "Q583156"
+    },
+    {
+      "title": "Moïse et Pharaon",
+      "qid": "Q1152497"
+    },
+    {
+      "title": "Nacqui all'affanno, al pianto...Non più mesta",
+      "qid": "Q54986727"
+    },
+    {
+      "title": "Ne m'abandonne point... Asile héreditaire",
+      "qid": "Q54986640"
+    },
+    {
+      "title": "Non più mesta = Rhof y gorau : Cavatina = Canig : allan o \"La Cenerentola\"",
+      "qid": "Q78527036"
+    },
+    {
+      "title": "Otello",
+      "qid": "Q925332"
+    },
+    {
+      "title": "Overture from La Cenerentola",
+      "qid": "Q138328331"
+    },
+    {
+      "title": "Pas de légumes",
+      "qid": "Q7141510"
+    },
+    {
+      "title": "Preulde: Dawn",
+      "qid": "Q66836565"
+    },
+    {
+      "title": "Pro peccatis = Dros bechodau : Stabat Mater",
+      "qid": "Q78527138"
+    },
+    {
+      "title": "Pro peccatis = Ein pechodau ni a ddygodd : Stabat Mater",
+      "qid": "Q78527140"
+    },
+    {
+      "title": "Pulcinella",
+      "qid": "Q2117770"
+    },
+    {
+      "title": "Péchés de vieillesse",
+      "qid": "Q7264650"
+    },
+    {
+      "title": "Ranz des Vaches",
+      "qid": "Q66837321"
+    },
+    {
+      "title": "Ricciardo e Zoraide",
+      "qid": "Q898892"
+    },
+    {
+      "title": "Robert Bruce",
+      "qid": "Q2781904"
+    },
+    {
+      "title": "Rossini",
+      "qid": "Q3941641"
+    },
+    {
+      "title": "Rossini! Rossini!",
+      "qid": "Q3941640"
+    },
+    {
+      "title": "Rossiniazata",
+      "qid": "Q57933682"
+    },
+    {
+      "title": "Semiramide",
+      "qid": "Q900744",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/rossini_52787a_semiramide_overture_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sigismondo",
+      "qid": "Q1038427"
+    },
+    {
+      "title": "Six string sonatas",
+      "qid": "Q105985803"
+    },
+    {
+      "title": "Soirées musicales",
+      "qid": "Q3964130"
+    },
+    {
+      "title": "Stabat Mater",
+      "qid": "Q778788"
+    },
+    {
+      "title": "Storm",
+      "qid": "Q66837108"
+    },
+    {
+      "title": "The Barber of Seville",
+      "qid": "Q208659",
+      "key": "G major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1816
+    },
+    {
+      "title": "The Barber of Seville",
+      "qid": "Q3285542"
+    },
+    {
+      "title": "The Barber of Seville",
+      "qid": "Q3793082"
+    },
+    {
+      "title": "The Barber of Seville",
+      "qid": "Q25208343"
+    },
+    {
+      "title": "The Guest",
+      "qid": "Q3819713"
+    },
+    {
+      "title": "The Tin",
+      "qid": "Q15270679"
+    },
+    {
+      "title": "The sweetest hope",
+      "qid": "Q54987048"
+    },
+    {
+      "title": "Torvaldo e Dorliska",
+      "qid": "Q1050791"
+    },
+    {
+      "title": "Ugo, re d'Italia",
+      "qid": "Q1832117"
+    },
+    {
+      "title": "Una voce poco fa",
+      "qid": "Q50392878"
+    },
+    {
+      "title": "Una voce poco fa = Melys lais yn seinio sydd : Il Barbiere di Siviglia",
+      "qid": "Q78527335"
+    },
+    {
+      "title": "Una voce poco fa = Melys lais yn seinio sydd : Il barbiere di Siviglia",
+      "qid": "Q78527333"
+    },
+    {
+      "title": "WARNER (Rossini)",
+      "qid": "Q127032029"
+    },
+    {
+      "title": "William Tell",
+      "qid": "Q729659",
+      "key": "G major",
+      "instruments": [
+        "Piccolo",
+        "Flute",
+        "2 Oboes",
+        "English Horn",
+        "2 A Clarinets",
+        "2 Bassoons",
+        "2 Horns in G",
+        "2 Horns in E",
+        "E Trumpet",
+        "2 Trombones",
+        "Bass Trombone",
+        "Timpani",
+        "Triangle",
+        "Cymbal",
+        "Bass Drum",
+        "Violins I",
+        "Violins II",
+        "Violas",
+        "Violoncello Soli",
+        "Violoncellos",
+        "Contrabasses"
+      ],
+      "year_composed": 1828
+    },
+    {
+      "title": "William Tell Overture",
+      "qid": "Q55830366",
+      "key": "E major",
+      "instruments": [
+        "Piano"
+      ]
+    },
+    {
+      "title": "William Tell Overture",
+      "qid": "Q6046246"
+    },
+    {
+      "title": "Yes, I swear I will find her",
+      "qid": "Q54986736"
+    },
+    {
+      "title": "Zelmira",
+      "qid": "Q1050075"
+    },
+    {
+      "title": "[Intendant, Reggitor?]",
+      "qid": "Q54986715"
+    },
+    {
+      "title": "Eduardo e Cristina, ouverture",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/RossiniG/Eduardo_e_Cristina/Eduardo_e_Cristina-lys/Mutopia-Header.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

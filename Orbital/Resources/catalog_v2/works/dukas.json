@@ -1,0 +1,111 @@
+{
+  "works": [
+    {
+      "title": "Piano Sonata",
+      "qid": "Q7190147"
+    },
+    {
+      "title": "Sonnet de Ronsard",
+      "qid": "Q122916432"
+    },
+    {
+      "title": "The Sorcerer's Apprentice",
+      "qid": "Q3202209"
+    },
+    {
+      "title": "Ariane et Barbe-bleue",
+      "qid": "Q655858"
+    },
+    {
+      "title": "Fanfare pour précéder La Péri",
+      "qid": "Q125392286"
+    },
+    {
+      "title": "Fantasia",
+      "qid": "Q943192"
+    },
+    {
+      "title": "Fantasia 2000",
+      "qid": "Q30937"
+    },
+    {
+      "title": "Frédégonde",
+      "qid": "Q3089520"
+    },
+    {
+      "title": "Hommage à Joseph Haydn",
+      "qid": "Q88202361"
+    },
+    {
+      "title": "La Plainte au loin du faune",
+      "qid": "Q42194331"
+    },
+    {
+      "title": "La Péri",
+      "qid": "Q3212076"
+    },
+    {
+      "title": "Longing for the Moment",
+      "qid": "Q866001"
+    },
+    {
+      "title": "Polyeucte",
+      "qid": "Q11339322"
+    },
+    {
+      "title": "Prélude élégiaque",
+      "qid": "Q99521205"
+    },
+    {
+      "title": "Symphony in C",
+      "qid": "Q608522"
+    },
+    {
+      "title": "The Sorcerer's Apprentice",
+      "qid": "Q1066882",
+      "key": "E♭ major",
+      "instruments": [
+        "Bassoon"
+      ],
+      "year_composed": 1890
+    },
+    {
+      "title": "The Sorcerer's Apprentice",
+      "qid": "Q7765318",
+      "key": "A♭ major",
+      "instruments": [
+        "Flauta piccolo",
+        "2 Flautas",
+        "2 Oboes",
+        "2 Clarinetes en Si♭",
+        "Clarinete bajo",
+        "1y2 Fagotes",
+        "3 Fagot",
+        "Contrafagot",
+        "1y2 Trompas en Fa",
+        "Trompa en Fa",
+        "3y4 Trompas en Fa",
+        "2 Trompetas en Ut",
+        "2 Cornetas en Si♭",
+        "3 Trombones",
+        "Arpa",
+        "Glockenspiel",
+        "Bombo",
+        "Címbalos",
+        "Triángulo"
+      ]
+    },
+    {
+      "title": "Tombeau de Claude Debussy",
+      "qid": "Q14752515"
+    },
+    {
+      "title": "Variations, Interlude and Finale on a Theme by Rameau",
+      "qid": "Q3554772"
+    },
+    {
+      "title": "Villanelle",
+      "qid": "Q99583644"
+    }
+  ]
+}

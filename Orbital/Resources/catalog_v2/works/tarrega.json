@@ -1,0 +1,71 @@
+{
+  "works": [
+    {
+      "title": "Capricho árabe",
+      "qid": "Q5036244"
+    },
+    {
+      "title": "Estudio en forma de minueto",
+      "qid": "Q18160371",
+      "key": "A major",
+      "instruments": [
+        "Classical Guitar"
+      ]
+    },
+    {
+      "title": "Gran vals",
+      "qid": "Q107551156",
+      "key": "D major",
+      "instruments": [
+        "Classical Guitar"
+      ],
+      "year_composed": 1902
+    },
+    {
+      "title": "Lágrima",
+      "qid": "Q18209075"
+    },
+    {
+      "title": "Oremus",
+      "qid": "Q7101533",
+      "key": "F major",
+      "instruments": [
+        "Classical Guitar"
+      ]
+    },
+    {
+      "title": "Recuerdos de la Alhambra",
+      "qid": "Q651729",
+      "key": "A major",
+      "instruments": [
+        "Klassieke gitaar"
+      ]
+    },
+    {
+      "title": "Adelita",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/TarregaF/adelita/adelita.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Capricho Árabe",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 4.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/TarregaF/capricho-arabe/capricho-arabe.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

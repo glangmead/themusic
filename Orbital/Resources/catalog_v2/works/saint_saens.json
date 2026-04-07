@@ -1,0 +1,1105 @@
+{
+  "works": [
+    {
+      "title": "Symphony in A Major",
+      "qid": "Q2288901"
+    },
+    {
+      "title": "Symphony No. 1",
+      "qid": "Q163579",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/organ_symphony_(c)pollen.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Symphony No. 2",
+      "qid": "Q210558"
+    },
+    {
+      "title": "Piano Concerto No. 2",
+      "qid": "Q176902",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/saint-saens_5953d_concerto_op_22_g_minor_1_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Romance in D-flat major, Op 37",
+      "qid": "Q106806533"
+    },
+    {
+      "title": "Cello Sonata No. 1",
+      "qid": "Q17231874"
+    },
+    {
+      "title": "Piano Concerto No. 4",
+      "qid": "Q230792"
+    },
+    {
+      "title": "Piano Quartet in B♭ major",
+      "qid": "Q3413731"
+    },
+    {
+      "title": "Samson and Delilah",
+      "qid": "Q753152"
+    },
+    {
+      "title": "König Harald Harfagar",
+      "qid": "Q136206951"
+    },
+    {
+      "title": "Septet in E-flat major, Op. 65",
+      "qid": "Q11353718"
+    },
+    {
+      "title": "Suite algérienne",
+      "qid": "Q17192151"
+    },
+    {
+      "title": "Violin Sonata No. 1",
+      "qid": "Q3490266"
+    },
+    {
+      "title": "The Carnival of the Animals",
+      "qid": "Q941724",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/carnival_animals_1_(c)pajares.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/carnival_animals_2_(c)pajares.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/carnival_animals_3_(c)pajares.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/carnival_animals_4_(c)pajares.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/carnival_animals_5_(c)pajares.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/carnival_animals_6_(c)pajares.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/carnival_animals_7_(c)pajares.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/carnival_animals_8_(c)pajares.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/carnival_animals_9_(c)pajares.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/carnival_animals_10_(c)pajares.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/carnival_animals_11_(c)pajares.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/carnival_animals_12_(c)pajares.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/carnival_animals_13_(c)pajares.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/carnival_animals_14_(c)pajares.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Caprice sur des airs danois et russes",
+      "qid": "Q104705937"
+    },
+    {
+      "title": "Feuillet d'album Op. 81",
+      "qid": "Q136142986",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/album_72_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/album_72_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/album_72_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/album_72_4_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/album_72_5_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/album_72_6_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Havanaise",
+      "qid": "Q383461"
+    },
+    {
+      "title": "The Dying Swan",
+      "qid": "Q1334530"
+    },
+    {
+      "title": "Les barbares",
+      "qid": "Q3230951"
+    },
+    {
+      "title": "Feuillet d'album Op. 169",
+      "qid": "Q136190818"
+    },
+    {
+      "title": "Oboe Sonata in D major",
+      "qid": "Q3490252"
+    },
+    {
+      "title": "Clarinet Sonata (Saint-Saëns)",
+      "qid": "Q1999134"
+    },
+    {
+      "title": "6 Etudes, Op. 111",
+      "qid": "Q111473779"
+    },
+    {
+      "title": "Africa",
+      "qid": "Q118874110",
+      "key": "B♭ major",
+      "instruments": [
+        "Flute",
+        "B♭ Clarinet 1",
+        "B♭ Clarinet 2",
+        "Bass Clarinet",
+        "Alto Saxophone",
+        "Tenor Saxophone",
+        "Baritone Saxophone",
+        "B♭ Trumpet 1",
+        "B♭ Trumpet 2 &amp;amp; 3",
+        "Horn in F",
+        "Low Brass 2 TC",
+        "Low brass 1",
+        "Low brass 2 BC",
+        "Tuba"
+      ],
+      "year_composed": 1891
+    },
+    {
+      "title": "Allegro appassionato",
+      "qid": "Q1876747",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/allegro_appassionato_70_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ascanio",
+      "qid": "Q2866351"
+    },
+    {
+      "title": "Barcarolle in F major",
+      "qid": "Q18159645"
+    },
+    {
+      "title": "Bassoon Sonata",
+      "qid": "Q17231937"
+    },
+    {
+      "title": "Berceuse Op.105",
+      "qid": "Q136219461"
+    },
+    {
+      "title": "Carnival of the Animals",
+      "qid": "Q5044132",
+      "instruments": [
+        "Flute",
+        "Glockenspiel",
+        "Piano",
+        "Violin",
+        "Viola",
+        "Violoncello"
+      ]
+    },
+    {
+      "title": "Cavatine",
+      "qid": "Q122500060"
+    },
+    {
+      "title": "Cello Concerto No. 1",
+      "qid": "Q2991925"
+    },
+    {
+      "title": "Cello Concerto No. 2",
+      "qid": "Q2991920"
+    },
+    {
+      "title": "Cello Sonata No. 2",
+      "qid": "Q17231876"
+    },
+    {
+      "title": "Cyprès et lauriers",
+      "qid": "Q5200556"
+    },
+    {
+      "title": "Danse Macabre - Low Strings Finale",
+      "qid": "Q54913620"
+    },
+    {
+      "title": "Danse macabre",
+      "qid": "Q1164860",
+      "catalog_numbers": {
+        "Op": "40"
+      },
+      "key": "B♭ major",
+      "instruments": [
+        "Piccolo",
+        "Flute 1,2",
+        "Oboe 1,2",
+        "Clarinet 1,2 in B♭",
+        "Bassoon 1,2",
+        "Horn 1,2 in G",
+        "Horn 3,4 in D",
+        "Trumpet 1,2 in D",
+        "Trombone 1,2",
+        "Trombone 3 and Tuba",
+        "Xylophone",
+        "Timpani",
+        "Triangle",
+        "Cymbal",
+        "Bass Drum",
+        "Harp",
+        "Solo Violin",
+        "Violin 1",
+        "Violin 2",
+        "Viola",
+        "Violoncello"
+      ],
+      "year_composed": 1874,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/danse_macabre_40_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=29/saint-saens_danse_macabre_40_(c)costermans.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/saint-saens_83306s_danse_macabre_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/saint-saens_54767a_danse_macabre_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Days of Heaven",
+      "qid": "Q127766379"
+    },
+    {
+      "title": "Duettino",
+      "qid": "Q136202770",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=19/saint-saens_duettino_11_(c)soltau.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Déjanire",
+      "qid": "Q3043289"
+    },
+    {
+      "title": "Effi Briest",
+      "qid": "Q470657"
+    },
+    {
+      "title": "Etudes",
+      "qid": "Q17232205",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/etudes_52-1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/etudes_52-2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/etudes_52-3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/etudes_52-4_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/etudes_52-5_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/etudes_52-6_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/saint-saens_60813a_etude_in_waltz_form_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/saint_saens_etudes_111_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/saint_saens_etudes_111_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/saint_saens_etudes_111_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/saint_saens_etudes_111_4_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/saint_saens_etudes_111_5_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/saint_saens_etudes_111_6_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/etudes_135-01_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/etudes_135-02_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/etudes_135-03_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/etudes_135-04_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/etudes_135-05_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/etudes_135-06_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fantaisie for Violin and Harp",
+      "qid": "Q125866442"
+    },
+    {
+      "title": "Fantasia 2000",
+      "qid": "Q30937"
+    },
+    {
+      "title": "Frédégonde",
+      "qid": "Q3089520"
+    },
+    {
+      "title": "Henry VIII",
+      "qid": "Q3133124"
+    },
+    {
+      "title": "Hélène",
+      "qid": "Q661265"
+    },
+    {
+      "title": "Introduction and Rondo Capriccioso",
+      "qid": "Q1279714"
+    },
+    {
+      "title": "Javotte (ballet)",
+      "qid": "Q127510953"
+    },
+    {
+      "title": "Jonathan Creek",
+      "qid": "Q282518"
+    },
+    {
+      "title": "L'ancêtre",
+      "qid": "Q3201966"
+    },
+    {
+      "title": "La jeunesse d'Hercule",
+      "qid": "Q11336604"
+    },
+    {
+      "title": "La princesse jaune",
+      "qid": "Q2717528"
+    },
+    {
+      "title": "Le Déluge",
+      "qid": "Q6506880"
+    },
+    {
+      "title": "Le Rouet d'Omphale",
+      "qid": "Q3226674"
+    },
+    {
+      "title": "Le cygne",
+      "qid": "Q13360782",
+      "key": "G major",
+      "instruments": [
+        "Violoncello",
+        "Piano"
+      ]
+    },
+    {
+      "title": "Le timbre d'argent",
+      "qid": "Q961875"
+    },
+    {
+      "title": "Les noces de Prométhée",
+      "qid": "Q3828896"
+    },
+    {
+      "title": "Love at the Top",
+      "qid": "Q1171747"
+    },
+    {
+      "title": "Love! come help my weakness",
+      "qid": "Q54987553"
+    },
+    {
+      "title": "Lumière!",
+      "qid": "Q26899296"
+    },
+    {
+      "title": "Mon cœur s'ouvre à ta voix",
+      "qid": "Q3113022"
+    },
+    {
+      "title": "Morceau de concert, Op.94 (Saint-Saëns)",
+      "qid": "Q17232049",
+      "instruments": [
+        "Horn"
+      ]
+    },
+    {
+      "title": "Oratorio de Noël",
+      "qid": "Q2028338"
+    },
+    {
+      "title": "Orient et Occident",
+      "qid": "Q123299857"
+    },
+    {
+      "title": "Phaéton",
+      "qid": "Q11331943"
+    },
+    {
+      "title": "Phryné",
+      "qid": "Q2884924"
+    },
+    {
+      "title": "Piano Concerto No. 1",
+      "qid": "Q162918",
+      "key": "B♭ major",
+      "instruments": [
+        "Piano"
+      ]
+    },
+    {
+      "title": "Piano Concerto No. 3",
+      "qid": "Q223334"
+    },
+    {
+      "title": "Piano Concerto No. 5",
+      "qid": "Q239698"
+    },
+    {
+      "title": "Piano Quartet in E major",
+      "qid": "Q18163159"
+    },
+    {
+      "title": "Piano Quintet",
+      "qid": "Q56303966"
+    },
+    {
+      "title": "Piano Trio No. 1",
+      "qid": "Q3539368"
+    },
+    {
+      "title": "Piano Trio No. 2",
+      "qid": "Q3539369"
+    },
+    {
+      "title": "Proserpine",
+      "qid": "Q3407686"
+    },
+    {
+      "title": "Requiem",
+      "qid": "Q2145477"
+    },
+    {
+      "title": "Serenade in E-flat major",
+      "qid": "Q18163714"
+    },
+    {
+      "title": "Sonatas for wind instruments (Saint-Saëns)",
+      "qid": "Q28973303"
+    },
+    {
+      "title": "Spring begins",
+      "qid": "Q54987554"
+    },
+    {
+      "title": "String Quartet No. 1",
+      "qid": "Q3413796"
+    },
+    {
+      "title": "String Quartet No. 2",
+      "qid": "Q3413818"
+    },
+    {
+      "title": "Suite for Cello and Piano",
+      "qid": "Q608472"
+    },
+    {
+      "title": "Symphony No. 3",
+      "qid": "Q223533"
+    },
+    {
+      "title": "Symphony in F major",
+      "qid": "Q3507609",
+      "key": "E major",
+      "instruments": [
+        "Piano I",
+        "Piano II"
+      ],
+      "year_composed": 1856
+    },
+    {
+      "title": "The Assassination of the Duke of Guise",
+      "qid": "Q1212230"
+    },
+    {
+      "title": "The Carnival of the Animals, Finale",
+      "qid": "Q28943933"
+    },
+    {
+      "title": "The Lion's Royal March",
+      "qid": "Q30728425"
+    },
+    {
+      "title": "The Promised Land",
+      "qid": "Q30611742"
+    },
+    {
+      "title": "Violin Concerto No. 1 (Saint-Saëns)",
+      "qid": "Q2991895"
+    },
+    {
+      "title": "Violin Concerto No. 2",
+      "qid": "Q2991906"
+    },
+    {
+      "title": "Violin Concerto No. 3",
+      "qid": "Q1141036"
+    },
+    {
+      "title": "Violin Sonata No. 2",
+      "qid": "Q11351834"
+    },
+    {
+      "title": "Wedding Cake",
+      "qid": "Q122596907",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/wedding_76_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Étienne Marcel",
+      "qid": "Q3592267"
+    },
+    {
+      "title": "1-2. Andante sostenuto - Allegro scherzando",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/saint-saens_53717a_concerto_op_22_g_minor_1-2_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[2. Allegro scherzando]",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/saint-saens_53995a_concerto_op_22_g_minor_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3. Presto",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/saint-saens_54066a_concerto_op_22_g_minor_3_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata for violin and piano in d minor, Op. 75",
+      "catalog_numbers": {
+        "Op": "75"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/saint-saens_violin_piano_75_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata for violin and piano in E flat major, Op. 102",
+      "catalog_numbers": {
+        "Op": "102"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/saint-saens_violin_piano_102_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Septet for trumpet, string quintet and piano, Op. 65",
+      "catalog_numbers": {
+        "Op": "65"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/septet_65_1_(c)siu.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/septet_65_2_(c)siu.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/septet_65_3_(c)siu.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/septet_65_4_(c)siu.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka in g minor, Op. 21",
+      "catalog_numbers": {
+        "Op": "21"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/saint_saens_mazurka_21_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka in g minor, Op. 24",
+      "catalog_numbers": {
+        "Op": "24"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/saint_saens_mazurka_24_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka in b minor, Op. 66",
+      "catalog_numbers": {
+        "Op": "66"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/saint_saens_mazurka_66_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Menuet, Op. 56",
+      "catalog_numbers": {
+        "Op": "56"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/saint_saens_menuet_56_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Rhapsodie d'Auvergne, Op. 73",
+      "catalog_numbers": {
+        "Op": "73"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/rhapsodie_73_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Souvenir d'Italie, Op. 80",
+      "catalog_numbers": {
+        "Op": "80"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/saint_saens_souvenir_80_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pas redoublie (piano 4-hands), Op. 86",
+      "catalog_numbers": {
+        "Op": "86"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/saint_saens_pas_redoublie_86_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Valse Canariote, Op. 88",
+      "catalog_numbers": {
+        "Op": "88"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/saint_saens_canariote_88_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Theme varie Op. 97",
+      "catalog_numbers": {
+        "Op": "97"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/theme_varie_97_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Valse mignonne, Op. 104",
+      "catalog_numbers": {
+        "Op": "104"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/valse_mignonne_104_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Valse nonchalante in D flat major, Op. 110",
+      "catalog_numbers": {
+        "Op": "110"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/saint_saens_valse_nonchalante_110_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Valse langoureuse in E major, Op. 120",
+      "catalog_numbers": {
+        "Op": "120"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/valse_langoureuse_120_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Valse gaie, Op. 139",
+      "catalog_numbers": {
+        "Op": "139"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/valse_gaie_139_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fugues [6], Op. 161",
+      "catalog_numbers": {
+        "Op": "161"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/saint_saens_fugues_161_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/saint_saens_fugues_161_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/saint_saens_fugues_161_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/saint_saens_fugues_161_4_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/saint_saens_fugues_161_5_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/saint_saens_fugues_161_6_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "MIDI •\n\t\t\tRomance without words (with no opus ?)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/saint_saens_romance_without_words_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Rhapsodie for organ, from three Rhapsodies on Breton Melodies, Op. 7",
+      "catalog_numbers": {
+        "Op": "7"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/rhapsodie_7_1_(c)mccoy.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/rhapsodie_7_2_(c)mccoy.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/rhapsodie_7_3_(c)mccoy.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Prelude and Fugue in E major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/praeludium_99_1_(c)mccoy.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Prelude and Fugue in B major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/praeludium_99_2_(c)mccoy.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Prelude and Fugue in E flat major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/praeludium_99_3_(c)mccoy.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Prelude and Fugue in d minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/praeludium_109_1_(c)mccoy.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Prelude and Fugue in G major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/praeludium_109_2_(c)mccoy.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Prelude and Fugue in C major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=saint-saens/praeludium_109_3_(c)mccoy.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Il bacio (The swan), transcription by Arditi",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/new/arditi_60648d_the_swan_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "My heart at thy sweet voice, from Sampson and Delilah",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/saint-saens_102908d_my_heart_at_thy_dear_voice_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "My heart at thy sweet voice, from Sampson and Delilah*",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/saint-saens_sampson_delilah_my_heart_sweet_voice_2260r_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tollite hostias for mixed choir and piano",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/saint-saens_tollite_hostias_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ave verum",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/saint-saens_ave_verum_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Eroica Variations Transcription (part I), Op. 35a (by L. van Beethoven)",
+      "catalog_numbers": {
+        "Op": "35"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=beethoven-saint-saens_variations_35_1_(siu).mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=beethoven-saint-saens_variations_35_2_(siu).mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/saint_saens_variations_35_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Morceau de Concert pour cor",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/Saint-SaensC/O94/morceau-de-concert/morceau-de-concert.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

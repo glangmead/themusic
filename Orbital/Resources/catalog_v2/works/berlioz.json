@@ -1,0 +1,288 @@
+{
+  "works": [
+    {
+      "title": "Messe solennelle",
+      "qid": "Q2022751"
+    },
+    {
+      "title": "La mort de Cléopâtre",
+      "qid": "Q51675209"
+    },
+    {
+      "title": "Symphonie fantastique",
+      "qid": "Q462313",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=berlioz_symphonie_fantastique_1_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=berlioz_symphonie_fantastique_2_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=berlioz_symphonie_fantastique_3_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=berlioz_symphonie_fantastique_4_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=berlioz_symphonie_fantastique_5_(c)galimberti.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Feuillets d'album",
+      "qid": "Q109037784"
+    },
+    {
+      "title": "Harold en Italie",
+      "qid": "Q976789"
+    },
+    {
+      "title": "Les champs",
+      "qid": "Q125516214"
+    },
+    {
+      "title": "Benvenuto Cellini",
+      "qid": "Q277846"
+    },
+    {
+      "title": "Aubade",
+      "qid": "Q122974391"
+    },
+    {
+      "title": "Grande symphonie funèbre et triomphale",
+      "qid": "Q2634994"
+    },
+    {
+      "title": "Rêverie et Caprice",
+      "qid": "Q11431407"
+    },
+    {
+      "title": "Il carnevale romano",
+      "qid": "Q109002053"
+    },
+    {
+      "title": "La damnation de Faust",
+      "qid": "Q1144992"
+    },
+    {
+      "title": "Zaïde",
+      "qid": "Q109046767"
+    },
+    {
+      "title": "Tristia",
+      "qid": "Q3539678"
+    },
+    {
+      "title": "Autrefois, un roi de Thulé",
+      "qid": "Q54971658"
+    },
+    {
+      "title": "Berlioz symphony in A minor",
+      "qid": "Q109045336"
+    },
+    {
+      "title": "Béatrice et Bénédict",
+      "qid": "Q791661"
+    },
+    {
+      "title": "Chant sacré",
+      "qid": "Q2956238"
+    },
+    {
+      "title": "Dear Tyrians",
+      "qid": "Q54971708"
+    },
+    {
+      "title": "I trojani in Cartagine",
+      "qid": "Q109242142"
+    },
+    {
+      "title": "L'enfance du Christ",
+      "qid": "Q1516577",
+      "catalog_numbers": {
+        "Op": "25"
+      },
+      "key": "E major",
+      "instruments": [
+        "Oboe",
+        "Soprano",
+        "Alto",
+        "Tenor",
+        "Bass"
+      ],
+      "year_composed": 1850
+    },
+    {
+      "title": "La Captive",
+      "qid": "Q109310778"
+    },
+    {
+      "title": "La Dame aux Camélias",
+      "qid": "Q133519397"
+    },
+    {
+      "title": "La Grande Vadrouille",
+      "qid": "Q487789"
+    },
+    {
+      "title": "La Symphonie fantastique",
+      "qid": "Q7886273"
+    },
+    {
+      "title": "Late Flowers",
+      "qid": "Q4503566"
+    },
+    {
+      "title": "Le Chant des chemins de fer",
+      "qid": "Q28495575"
+    },
+    {
+      "title": "Le Corsaire",
+      "qid": "Q15975613"
+    },
+    {
+      "title": "Le Roi Lear",
+      "qid": "Q90698615"
+    },
+    {
+      "title": "Le Spectre de la rose",
+      "qid": "Q109735662"
+    },
+    {
+      "title": "Le carnaval romain",
+      "qid": "Q403368"
+    },
+    {
+      "title": "Les Francs-juges",
+      "qid": "Q285689"
+    },
+    {
+      "title": "Les Nuits d'Été",
+      "qid": "Q3051034"
+    },
+    {
+      "title": "Les Troyens",
+      "qid": "Q472325"
+    },
+    {
+      "title": "Liefdesscène",
+      "qid": "Q56459330"
+    },
+    {
+      "title": "Lélio",
+      "qid": "Q3270347"
+    },
+    {
+      "title": "Orphée et Eurydice",
+      "qid": "Q51162713"
+    },
+    {
+      "title": "Overtures by Hector Berlioz",
+      "qid": "Q15975607"
+    },
+    {
+      "title": "Prix de Rome cantatas",
+      "qid": "Q501388"
+    },
+    {
+      "title": "Prologue des Troyens à Carthage",
+      "qid": "Q109043374"
+    },
+    {
+      "title": "Requiem",
+      "qid": "Q1495114"
+    },
+    {
+      "title": "Roméo et Juliette",
+      "qid": "Q2450718"
+    },
+    {
+      "title": "Te Deum",
+      "qid": "Q821235"
+    },
+    {
+      "title": "Vox populi",
+      "qid": "Q109046570"
+    },
+    {
+      "title": "Waverley",
+      "qid": "Q91000603"
+    },
+    {
+      "title": "Romeo seul - Tristesse - Bruits lointains de Concert et de Bal",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=34/berlioz_romeo-et-juliette_part-2_1_(c)laffay.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Grande f�te chez Capulet",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=34/berlioz_romeo-et-juliette_part-2_2_(c)laffay.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Hymne des Marseillais (Marseillaise), H. 81a (1830) [by Claude Joseph Rouget de Lisle]",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=34/berlioz_la_marseillaise_(c)laffay.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Hymne pour l��l�vation in D major (1844)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=berlioz_pieces_for_harmonium_1_(c)blondel.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "S�r�nade agreste � la Madone sur le th�me des pifferari romains in E flat major (1844)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=berlioz_pieces_for_harmonium_2_(c)blondel.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Toccata in C major (1844)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=berlioz_pieces_for_harmonium_3_(c)blondel.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

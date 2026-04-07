@@ -1,0 +1,1742 @@
+{
+  "works": [
+    {
+      "title": "Invocation",
+      "qid": "Q130244252"
+    },
+    {
+      "title": "Le Gladiateur",
+      "qid": "Q130717779"
+    },
+    {
+      "title": "Apparition",
+      "qid": "Q106998701"
+    },
+    {
+      "title": "L'enfant prodigue",
+      "qid": "Q19205924"
+    },
+    {
+      "title": "Le Printemps",
+      "qid": "Q130711641"
+    },
+    {
+      "title": "Ariettes oubliées",
+      "qid": "Q4790520"
+    },
+    {
+      "title": "Fantaisie for piano and orchestra",
+      "qid": "Q14613445"
+    },
+    {
+      "title": "Prélude à l'après-midi d'un faune",
+      "qid": "Q1471875"
+    },
+    {
+      "title": "Proses lyriques",
+      "qid": "Q122932584"
+    },
+    {
+      "title": "Nocturnes",
+      "qid": "Q2454977",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/debussy-ravel_nocturnes_1_nuages_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/debussy-ravel_nocturnes_2_fetes_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/debussy-ravel_nocturnes_3_sirenes_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pelléas et Mélisande",
+      "qid": "Q368019"
+    },
+    {
+      "title": "Le diable dans le beffroi",
+      "qid": "Q3609505"
+    },
+    {
+      "title": "Danse sacrée et Danse profane",
+      "qid": "Q11590768"
+    },
+    {
+      "title": "Images 1st series",
+      "qid": "Q29158512"
+    },
+    {
+      "title": "Masques",
+      "qid": "Q3297374"
+    },
+    {
+      "title": "Préludes pour piano Deuxième livre",
+      "qid": "Q29168244"
+    },
+    {
+      "title": "Préludes pour piano Premier livre",
+      "qid": "Q29168243"
+    },
+    {
+      "title": "Images pour orchestre",
+      "qid": "Q665871"
+    },
+    {
+      "title": "Images 2nd series",
+      "qid": "Q29158520"
+    },
+    {
+      "title": "Trois Chansons",
+      "qid": "Q65081324"
+    },
+    {
+      "title": "Jimbo’s lullaby",
+      "qid": "Q4228845"
+    },
+    {
+      "title": "Première rhapsodie",
+      "qid": "Q4179132"
+    },
+    {
+      "title": "Danseuses de Delphes",
+      "qid": "Q28496953",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_1_1_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_1_1_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Des pas sur la neige",
+      "qid": "Q5263580",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_1_6_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_1_6_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_1_6_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ce qu'a vu le vent d'ouest",
+      "qid": "Q5055679",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_1_7_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_1_7_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Les sons et les parfums tournent dans l'air du soir",
+      "qid": "Q29177520",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_1_4_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_1_4_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "La danse de Puck",
+      "qid": "Q29177547",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_1_11_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_1_11_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "D'un cahier d'esquisses",
+      "qid": "Q110455402",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/d-un_cahier_d-esquisses_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Minstrels",
+      "qid": "Q29177559",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_1_12_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_1_12_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Syrinx",
+      "qid": "Q2533703"
+    },
+    {
+      "title": "Trois poèmes de Stéphane Mallarmé",
+      "qid": "Q15991009"
+    },
+    {
+      "title": "Cello Sonata",
+      "qid": "Q2747188"
+    },
+    {
+      "title": "En blanc et noir",
+      "qid": "Q3053508"
+    },
+    {
+      "title": "Sonata for flute, viola and harp",
+      "qid": "Q2628153"
+    },
+    {
+      "title": "Violin Sonata",
+      "qid": "Q2719749"
+    },
+    {
+      "title": "Afternoon of a Faun",
+      "qid": "Q1637772"
+    },
+    {
+      "title": "Afternoon of a Faun",
+      "qid": "Q4690789"
+    },
+    {
+      "title": "Aimons-nous et dormons",
+      "qid": "Q107008068"
+    },
+    {
+      "title": "Allegro non troppo",
+      "qid": "Q2000923"
+    },
+    {
+      "title": "Andante cantabile",
+      "qid": "Q107041286"
+    },
+    {
+      "title": "Antique Epigraphs",
+      "qid": "Q4775164"
+    },
+    {
+      "title": "Arabesque",
+      "qid": "Q56459214",
+      "key": "E major",
+      "instruments": [
+        "Flûte",
+        "Violoncelle",
+        "Piano"
+      ],
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-i/debussy_63503a_arabesque_2_e_major_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/arabesque_1_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/arabesque_2_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/arabesque_1_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/arabesque_2_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Barcarolle",
+      "qid": "Q123050526"
+    },
+    {
+      "title": "Beau soir",
+      "qid": "Q2737834",
+      "key": "E major",
+      "instruments": [
+        "FLUTE",
+        "PIANO"
+      ],
+      "year_composed": 1891
+    },
+    {
+      "title": "Berceuse",
+      "qid": "Q123054169"
+    },
+    {
+      "title": "Berceuse héroïque",
+      "qid": "Q120159924"
+    },
+    {
+      "title": "Brouillards",
+      "qid": "Q4975860",
+      "instruments": [
+        "Grand Piano"
+      ],
+      "year_composed": 1913,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_2_1_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_2_1_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Brugge",
+      "qid": "Q17428058"
+    },
+    {
+      "title": "Bruyères",
+      "qid": "Q29217392",
+      "key": "A♭ major",
+      "instruments": [
+        "Grand Piano"
+      ],
+      "year_composed": 1913
+    },
+    {
+      "title": "Camille Claudel",
+      "qid": "Q1029155"
+    },
+    {
+      "title": "Canope",
+      "qid": "Q29217437",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_2_10_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_2_10_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Caprice",
+      "qid": "Q107003230"
+    },
+    {
+      "title": "Chanson espagnole",
+      "qid": "Q122977802"
+    },
+    {
+      "title": "Children's Corner",
+      "qid": "Q847300",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/childrens_corner_1_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/childrens_corner_2_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/childrens_corner_3_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/childrens_corner_4_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/childrens_corner_5_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/childrens_corner_6_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/childrens_corner_1_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/childrens_corner_2_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/childrens_corner_3_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/childrens_corner_4_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/childrens_corner_5_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/childrens_corner_6_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Children's corner",
+      "qid": "Q111692616",
+      "instruments": [
+        "PIANO"
+      ],
+      "year_composed": 1913
+    },
+    {
+      "title": "Cinq poèmes de Charles Baudelaire",
+      "qid": "Q23021858"
+    },
+    {
+      "title": "Clair de lune",
+      "qid": "Q123165866",
+      "key": "A major",
+      "instruments": [
+        "E♭ Clarinet",
+        "1st Cl",
+        "2nd Cl",
+        "3rd Cl",
+        "Bass Cl",
+        "Alto Clarinet",
+        "Contra-alto Clarinet",
+        "Contrabass Clarinet"
+      ],
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_2_7_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_2_7_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-i/debussy_52305a_clair_de_lune_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Clair de lune",
+      "qid": "Q29117946",
+      "key": "A major",
+      "instruments": [
+        "Viola",
+        "Piano"
+      ]
+    },
+    {
+      "title": "Claude Debussy: Images 2nd Series",
+      "qid": "Q137768100"
+    },
+    {
+      "title": "Cloches à travers les feuilles",
+      "qid": "Q29159967"
+    },
+    {
+      "title": "Dans le jardin",
+      "qid": "Q123055105"
+    },
+    {
+      "title": "Danse profane",
+      "qid": "Q25468153"
+    },
+    {
+      "title": "Danse sacrée",
+      "qid": "Q51880960"
+    },
+    {
+      "title": "De l'aube à midi sur la mer",
+      "qid": "Q104602449",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/debussy_la_mer_1_rev_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/debussy_la_mer_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/debussy_la_mer_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/la_mer_1_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Deux arabesques",
+      "qid": "Q1206599",
+      "key": "E major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1890
+    },
+    {
+      "title": "Dialogue du vent et de la mer",
+      "qid": "Q104602604",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/la_mer_3_(c)galimberti.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Doctor Gradus ad Parnassum",
+      "qid": "Q29099924",
+      "instruments": [
+        "PIANO"
+      ]
+    },
+    {
+      "title": "Estampes",
+      "qid": "Q2572020",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/estampes_1_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/estampes_2_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/estampes_3_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=1/debussy_estampes_1_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=1/debussy_estampes_2_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=1/debussy_estampes_3_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/estampes_1_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/estampes_2_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/estampes_3_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Et la lune descend sur le temple qui fut",
+      "qid": "Q29159973"
+    },
+    {
+      "title": "Fantoches",
+      "qid": "Q123166208"
+    },
+    {
+      "title": "Feuilles mortes",
+      "qid": "Q29217350",
+      "key": "E major",
+      "instruments": [
+        "Grand Piano"
+      ],
+      "year_composed": 1910,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_2_2_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_2_2_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Feux d'artifice",
+      "qid": "Q29217458",
+      "key": "F major",
+      "instruments": [
+        "Grand Piano"
+      ],
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_2_12_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_2_12_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fleur des blés",
+      "qid": "Q122943329"
+    },
+    {
+      "title": "Fêtes galantes (Debussy)",
+      "qid": "Q15990914"
+    },
+    {
+      "title": "Giant Shoe-Factory",
+      "qid": "Q11235869"
+    },
+    {
+      "title": "Golliwogg's Cakewalk",
+      "qid": "Q29097968"
+    },
+    {
+      "title": "Général Lavine – excentrique",
+      "qid": "Q29217406",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_2_6_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_2_6_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Hommage à Haydn",
+      "qid": "Q99519762",
+      "key": "G major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1910
+    },
+    {
+      "title": "Hommage à Joseph Haydn",
+      "qid": "Q88202361"
+    },
+    {
+      "title": "Hommage à Rameau",
+      "qid": "Q29158530",
+      "key": "B major",
+      "instruments": [
+        "Piano"
+      ]
+    },
+    {
+      "title": "Hommage à S. Pickwick Esq. P.P.M.P.C.",
+      "qid": "Q5890931",
+      "key": "F major",
+      "instruments": [
+        "Grand Piano"
+      ],
+      "year_composed": 1913,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_2_9_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_2_9_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Images",
+      "qid": "Q1132712",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-i/debussy_66363a_hommage_a_rameau_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/images_1_1_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/images_1_2_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/images_1_3_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/images_1_1_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/images_1_2_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/images_1_3_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/images_1_1_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/images_1_2_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/images_1_3_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/images_2_1_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/images_2_2_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/images_2_3_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/images_2_1_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/images_2_2_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/images_2_3_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/images_oubliee_1_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/images_oubliee_2_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/images_oubliee_3_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Images",
+      "qid": "Q6002359"
+    },
+    {
+      "title": "Images oubliées",
+      "qid": "Q120091770"
+    },
+    {
+      "title": "In Memoriam Yakov Kreizberg",
+      "qid": "Q86520095"
+    },
+    {
+      "title": "Jardins sous la pluie",
+      "qid": "Q29106247"
+    },
+    {
+      "title": "Jeux",
+      "qid": "Q2381161",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/la_mer_2_(c)galimberti.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Jeux de vagues",
+      "qid": "Q104602582"
+    },
+    {
+      "title": "Khamma",
+      "qid": "Q2160065"
+    },
+    {
+      "title": "L'isle joyeuse",
+      "qid": "Q1759475"
+    },
+    {
+      "title": "La Belle au bois dormant",
+      "qid": "Q123050713"
+    },
+    {
+      "title": "La Cambrure",
+      "qid": "Q6461488"
+    },
+    {
+      "title": "La Damoiselle élue",
+      "qid": "Q24938126"
+    },
+    {
+      "title": "La Puerta del Vino",
+      "qid": "Q29217362",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_2_3_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_2_3_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "La boîte à joujoux",
+      "qid": "Q3206849"
+    },
+    {
+      "title": "La cathédrale engloutie",
+      "qid": "Q6466022",
+      "key": "E major",
+      "instruments": [
+        "鋼琴"
+      ],
+      "year_composed": 1908,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_1_10_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_1_10_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_1_10_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "La chute de la maison Usher",
+      "qid": "Q369659"
+    },
+    {
+      "title": "La fille aux cheveux de lin",
+      "qid": "Q6466152",
+      "key": "G♭ major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1910,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_1_8_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_1_8_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_1_8_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "La mer",
+      "qid": "Q1057812",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/la_mer_1_(c)galimberti.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "La plus que lente",
+      "qid": "Q6466330",
+      "key": "G♭ major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1910,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/la_plus_que_lente_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "La soirée dans Grenade",
+      "qid": "Q29106235"
+    },
+    {
+      "title": "La sérénade interrompue",
+      "qid": "Q6466452",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_1_9_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_1_9_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "La terrasse des audiences du clair de lune",
+      "qid": "Q29217416",
+      "key": "F♯ major",
+      "instruments": [
+        "Grand Piano"
+      ]
+    },
+    {
+      "title": "Le Printemps",
+      "qid": "Q130708763",
+      "key": "E major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1882
+    },
+    {
+      "title": "Le martyre de Saint Sébastien",
+      "qid": "Q1514166"
+    },
+    {
+      "title": "Le vent dans la plaine",
+      "qid": "Q29177506",
+      "key": "G♭ major",
+      "instruments": [
+        "Grand Piano"
+      ],
+      "year_composed": 1910,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_1_3_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_1_3_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Les Baisers",
+      "qid": "Q107010723"
+    },
+    {
+      "title": "Les Elfes",
+      "qid": "Q123021580"
+    },
+    {
+      "title": "Les Papillons",
+      "qid": "Q122983091"
+    },
+    {
+      "title": "Les collines d'Anacapri",
+      "qid": "Q29177532",
+      "key": "B major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1909,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_1_5_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_1_5_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Les fées sont d'exquises danseuses",
+      "qid": "Q29217378",
+      "key": "D♭ major",
+      "instruments": [
+        "Grand Piano"
+      ],
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_2_4_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_2_4_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Les tierces alternées",
+      "qid": "Q29217449"
+    },
+    {
+      "title": "Lindaraja",
+      "qid": "Q11348655"
+    },
+    {
+      "title": "Love Affair(s)",
+      "qid": "Q98745126"
+    },
+    {
+      "title": "Madrid",
+      "qid": "Q107001117"
+    },
+    {
+      "title": "Maestro",
+      "qid": "Q109350493"
+    },
+    {
+      "title": "Maintenant que le père de Pelléas est sauvé",
+      "qid": "Q54974443"
+    },
+    {
+      "title": "Marche écossaise, sur un thème populaire",
+      "qid": "Q11311621",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/marche_ecossaise_piano-4hands_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka",
+      "qid": "Q120033152"
+    },
+    {
+      "title": "Menuet",
+      "qid": "Q29117940",
+      "key": "E♭ major",
+      "instruments": [
+        "Piano"
+      ]
+    },
+    {
+      "title": "Mouvement",
+      "qid": "Q29158540",
+      "key": "D major",
+      "instruments": [
+        "Piano"
+      ]
+    },
+    {
+      "title": "Musique",
+      "qid": "Q122974535"
+    },
+    {
+      "title": "Nachteiland",
+      "qid": "Q56459412"
+    },
+    {
+      "title": "No. 5 the Film",
+      "qid": "Q1156010"
+    },
+    {
+      "title": "Nocturne (Debussy)",
+      "qid": "Q6044282",
+      "key": "D♭ major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1892
+    },
+    {
+      "title": "Nocturne et Scherzo",
+      "qid": "Q123115069"
+    },
+    {
+      "title": "Northless",
+      "qid": "Q6045126"
+    },
+    {
+      "title": "Nostalghia",
+      "qid": "Q1138968"
+    },
+    {
+      "title": "Nuit d'étoiles",
+      "qid": "Q107001372"
+    },
+    {
+      "title": "Ondine",
+      "qid": "Q29217428",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_2_8_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_2_8_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pagodes",
+      "qid": "Q29106224"
+    },
+    {
+      "title": "Passepied",
+      "qid": "Q29117951"
+    },
+    {
+      "title": "Pelléas et Mélisande : [programme] : lyric drama in 5 acts",
+      "qid": "Q82713294"
+    },
+    {
+      "title": "Petite Suite",
+      "qid": "Q1853293",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/petite_suite_1_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/petite_suite_2_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/petite_suite_3_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/petite_suite_4_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/petite_suite_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/petite_suite_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/petite_suite_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/petite_suite_4_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/petite_suite_1_(c)gray.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/petite_suite_2_(c)gray.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/petite_suite_3_(c)gray.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/petite_suite_4_(c)gray.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Petite pièce",
+      "qid": "Q111754658",
+      "key": "A major",
+      "instruments": [
+        "PIANO"
+      ],
+      "year_composed": 1910
+    },
+    {
+      "title": "Piano Trio",
+      "qid": "Q17001543"
+    },
+    {
+      "title": "Pierrot",
+      "qid": "Q122960217"
+    },
+    {
+      "title": "Poissons d'or",
+      "qid": "Q29159981"
+    },
+    {
+      "title": "Poissons d'or",
+      "qid": "Q112756669"
+    },
+    {
+      "title": "Portrait of Jennie",
+      "qid": "Q1687008"
+    },
+    {
+      "title": "Pour le piano",
+      "qid": "Q7235697",
+      "key": "E major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1894,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/pour_le_piano_1_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/pour_le_piano_2_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/pour_le_piano_3_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/pour_le_piano_1_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/pour_le_piano_2_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/pour_le_piano_3_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/pour_le_piano_1_bachovich.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/pour_le_piano_2_bachovich.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/pour_le_piano_3_bachovich.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/pour_le_piano_1b_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/pour_le_piano_2b_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/pour_le_piano_3b_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Première Suite d'Orchestre",
+      "qid": "Q61654598"
+    },
+    {
+      "title": "Printemps",
+      "qid": "Q7245285",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/images_orchestre_5_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Printemps",
+      "qid": "Q11513319",
+      "key": "D major",
+      "instruments": [
+        "Voice",
+        "Piano"
+      ],
+      "year_composed": 1887
+    },
+    {
+      "title": "Prélude",
+      "qid": "Q29117932",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-i/debussy_7075w_afternoon_of_a_faun_2ii_(1914)_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-i/debussy_56027a_afternoon_of_a_fawn_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy-ravel_prelude_apres_midi_faune_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Prélude",
+      "qid": "Q29168222"
+    },
+    {
+      "title": "Préludes",
+      "qid": "Q512715",
+      "key": "A major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1912
+    },
+    {
+      "title": "Red Lights",
+      "qid": "Q953545"
+    },
+    {
+      "title": "Reflets dans l'eau",
+      "qid": "Q7307341"
+    },
+    {
+      "title": "Regret",
+      "qid": "Q122975644"
+    },
+    {
+      "title": "Rhapsodie pour orchestre et saxophone",
+      "qid": "Q42958595"
+    },
+    {
+      "title": "Rodrigue et Chimène",
+      "qid": "Q3891952"
+    },
+    {
+      "title": "Romance (FL 65)",
+      "qid": "Q122971964"
+    },
+    {
+      "title": "Rondeau",
+      "qid": "Q122978496"
+    },
+    {
+      "title": "Rondel chinois",
+      "qid": "Q109043491"
+    },
+    {
+      "title": "Rêverie",
+      "qid": "Q1851122",
+      "key": "F major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1891,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/reverie_(c)galimberti.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Rêverie",
+      "qid": "Q107002913"
+    },
+    {
+      "title": "Sarabande",
+      "qid": "Q29168224"
+    },
+    {
+      "title": "Sarabande and Danse",
+      "qid": "Q7421918"
+    },
+    {
+      "title": "Sarabande and Danse",
+      "qid": "Q7421919"
+    },
+    {
+      "title": "Serenade for the Doll",
+      "qid": "Q29099933"
+    },
+    {
+      "title": "Six sonatas for various instruments",
+      "qid": "Q3485662"
+    },
+    {
+      "title": "Six épigraphes antiques",
+      "qid": "Q3589146",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/epigraphes_antiques_1_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/epigraphes_antiques_2_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/epigraphes_antiques_3_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/epigraphes_antiques_4_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/epigraphes_antiques_5_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/epigraphes_antiques_6_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Souhait",
+      "qid": "Q122979196"
+    },
+    {
+      "title": "String Quartet",
+      "qid": "Q1346508",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/debussy_string_quartet_10_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Suite bergamasque",
+      "qid": "Q1367599",
+      "key": "F major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1905,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/suite_bergamasque_1_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/suite_bergamasque_2_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/suite_bergamasque_3_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/suite_bergamasque_4_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/suite_bergamasque_1_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/suite_bergamasque_2_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/suite_bergamasque_3_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/suite_bergamasque_4_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/suite_bergamasque_1_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/suite_bergamasque_2_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/suite_bergamasque_3_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/suite_bergamasque_4_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Symphonie en si mineur",
+      "qid": "Q107010620"
+    },
+    {
+      "title": "Sérénade",
+      "qid": "Q123010385"
+    },
+    {
+      "title": "Tarentelle styrienne",
+      "qid": "Q120000102"
+    },
+    {
+      "title": "The Little Shepherd",
+      "qid": "Q29099954",
+      "key": "A major",
+      "instruments": [
+        "Piano"
+      ]
+    },
+    {
+      "title": "The Peacock Feather",
+      "qid": "Q1215386"
+    },
+    {
+      "title": "The Secret Heart",
+      "qid": "Q768223"
+    },
+    {
+      "title": "The Snow is Dancing",
+      "qid": "Q29099944"
+    },
+    {
+      "title": "The Submerged Cathedral",
+      "qid": "Q57934196"
+    },
+    {
+      "title": "The little Nigar",
+      "qid": "Q3286447"
+    },
+    {
+      "title": "Three Songs of Bilitis",
+      "qid": "Q15991008"
+    },
+    {
+      "title": "Toccata",
+      "qid": "Q29168226"
+    },
+    {
+      "title": "Tragédie",
+      "qid": "Q107043269"
+    },
+    {
+      "title": "Trois Chansons de France",
+      "qid": "Q123057605"
+    },
+    {
+      "title": "Valse romantique",
+      "qid": "Q7912619",
+      "key": "A♭ major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1890
+    },
+    {
+      "title": "Villancico para los niños que ya no tienen hogar",
+      "qid": "Q3879159"
+    },
+    {
+      "title": "Voiles",
+      "qid": "Q2530460",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_1_2_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_1_2_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "pour les accords",
+      "qid": "Q29257187"
+    },
+    {
+      "title": "pour les agréments",
+      "qid": "Q29257153"
+    },
+    {
+      "title": "pour les arpèges composés",
+      "qid": "Q29257179"
+    },
+    {
+      "title": "pour les degrés chromatiques",
+      "qid": "Q29257143"
+    },
+    {
+      "title": "pour les huit doigts",
+      "qid": "Q29257135"
+    },
+    {
+      "title": "pour les notes répétées",
+      "qid": "Q29257159"
+    },
+    {
+      "title": "pour les octaves",
+      "qid": "Q29257125"
+    },
+    {
+      "title": "pour les quartes",
+      "qid": "Q29257106"
+    },
+    {
+      "title": "pour les sixtes",
+      "qid": "Q29257116"
+    },
+    {
+      "title": "pour les sonorités opposées",
+      "qid": "Q29257168"
+    },
+    {
+      "title": "pour les tierces",
+      "qid": "Q29257098"
+    },
+    {
+      "title": "pour les “cinq doigts”, d'après Monsieur Czerny",
+      "qid": "Q29257089"
+    },
+    {
+      "title": "Églogue",
+      "qid": "Q123022865"
+    },
+    {
+      "title": "Études",
+      "qid": "Q1188389"
+    },
+    {
+      "title": "1. Nuages",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/nocturnes_1_(c)siu.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "2. F�tes",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/nocturnes_2_(c)siu.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3. Sir�nes*",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/nocturnes_3_(c)ames.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata for cello and piano",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/debussy_sonata_for_cello_and_piano_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata for violin and piano",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/debussy_sonata_for_violin_and_piano_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Trio for violin, cello and piano (Premier Trio en Sole)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/debussy_trio_for_violin_cello_piano_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Suite: Childrens Corner [complete]",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/childrens_corner_(c)galimberti.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "12 �tude for piano dedicated to the memory of Fr�d�ric Chopin (1915)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/etude_01_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/etude_02_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/etude_03_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/etude_04_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/etude_05_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/etude_06_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/etude_07_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/etude_08_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/etude_09_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/etude_10_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/etude_11_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/etude_12_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/etude_01_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/etude_02_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/etude_03_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/etude_04_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/etude_05_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/etude_06_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/etude_07_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/etude_08_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/etude_09_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/etude_10_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/etude_11_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/etude_12_(c)galimberti.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "I. Gigues",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/images_orchestre_1_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "II. Iberia:",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/images_orchestre_2_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/images_orchestre_3_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/images_orchestre_4_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pr�lude V - (... Bruy�res)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_2_5_(c)galimberti.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pr�lude XI - (... Les tierces altern�es)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/preludes_2_11_(c)galimberti.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Little pieces",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/little_pieces_1_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/little_pieces_2_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/little_pieces_3_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/little_pieces_4_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Le Petit Negre",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=debussy/petit_negre_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Prélude 4: Les sons et les parfums tournent dans l'air du soir",
+      "catalog_numbers": {
+        "D": "125",
+        "L": "117"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 4.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/DebussyC/L117/L117-prel-4/L117-prel-4-lys/debussy-L117-prel-4.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Première Arabesque",
+      "catalog_numbers": {
+        "L": "66"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/DebussyC/L66/debussy_Arabesque_1/debussy_Arabesque_1.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Suite Bergamasque: Clair de Lune",
+      "catalog_numbers": {
+        "L": "75"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/DebussyC/L75/debussy_Ste_Bergamesq_Clair/debussy_Ste_Bergamesq_Clair.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

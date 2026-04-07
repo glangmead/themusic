@@ -1,0 +1,480 @@
+{
+  "works": [
+    {
+      "title": "Kossuth",
+      "qid": "Q427943"
+    },
+    {
+      "title": "Fourteen Bagatelles",
+      "qid": "Q790972"
+    },
+    {
+      "title": "String Quartet No. 1",
+      "qid": "Q790997"
+    },
+    {
+      "title": "Four Old Hungarian Folk Songs",
+      "qid": "Q25468192"
+    },
+    {
+      "title": "Two Romanian Folk Dances",
+      "qid": "Q790974",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=bartok_roumanian_folk_dances_1_(c)pajares.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=bartok_roumanian_folk_dances_2_(c)pajares.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=bartok_roumanian_folk_dances_3_(c)pajares.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=bartok_roumanian_folk_dances_4_(c)pajares.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=bartok_roumanian_folk_dances_5_(c)pajares.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=bartok_roumanian_folk_dances_6_(c)pajares.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Allegro barbaro",
+      "qid": "Q264315",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=bartok_allegro_barbaro_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Bluebeard's Castle",
+      "qid": "Q249749"
+    },
+    {
+      "title": "Four Pieces for Orchestra",
+      "qid": "Q1220451"
+    },
+    {
+      "title": "Sonatina (Bartók)",
+      "qid": "Q579499"
+    },
+    {
+      "title": "Suite, Op. 14",
+      "qid": "Q7635557",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/bartok_suite_14_(c)nimura.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "String Quartet No. 2",
+      "qid": "Q714785"
+    },
+    {
+      "title": "Fifteen Hungarian Peasant Songs",
+      "qid": "Q1321869"
+    },
+    {
+      "title": "Improvisations on Hungarian Peasant Songs",
+      "qid": "Q1096673"
+    },
+    {
+      "title": "Dance Suite",
+      "qid": "Q715033"
+    },
+    {
+      "title": "Piano Concerto No. 1",
+      "qid": "Q162855"
+    },
+    {
+      "title": "Piano Sonata",
+      "qid": "Q716057"
+    },
+    {
+      "title": "String Quartet No. 3",
+      "qid": "Q791001"
+    },
+    {
+      "title": "Rhapsody No. 1",
+      "qid": "Q790991"
+    },
+    {
+      "title": "Rhapsody No. 2",
+      "qid": "Q790996"
+    },
+    {
+      "title": "Hungarian Pictures",
+      "qid": "Q612109"
+    },
+    {
+      "title": "Piano Concerto No. 2",
+      "qid": "Q210195"
+    },
+    {
+      "title": "String Quartet No. 5",
+      "qid": "Q791020"
+    },
+    {
+      "title": "Violin Concerto No. 2",
+      "qid": "Q790999"
+    },
+    {
+      "title": "Divertimento for String Orchestra",
+      "qid": "Q631285"
+    },
+    {
+      "title": "Sonata for Solo Violin",
+      "qid": "Q427401"
+    },
+    {
+      "title": "Piano Concerto No. 3",
+      "qid": "Q223329"
+    },
+    {
+      "title": "Viola Concerto",
+      "qid": "Q790989"
+    },
+    {
+      "title": "44 Duos for Two Violins",
+      "qid": "Q790982"
+    },
+    {
+      "title": "Buciumeana",
+      "qid": "Q107328723"
+    },
+    {
+      "title": "Cantata Profana",
+      "qid": "Q830876"
+    },
+    {
+      "title": "Concerto for Orchestra",
+      "qid": "Q118859394"
+    },
+    {
+      "title": "Concerto for Orchestra",
+      "qid": "Q791000"
+    },
+    {
+      "title": "Contrasts",
+      "qid": "Q714793"
+    },
+    {
+      "title": "De Wonderbare Mandarijn",
+      "qid": "Q57933681"
+    },
+    {
+      "title": "Don Giovanni",
+      "qid": "Q3713525"
+    },
+    {
+      "title": "Eight Hungarian Folksongs",
+      "qid": "Q91906296"
+    },
+    {
+      "title": "For Children",
+      "qid": "Q714970"
+    },
+    {
+      "title": "Four Dirges",
+      "qid": "Q790980"
+    },
+    {
+      "title": "Four Orchestral Pieces, op. 12, Sz. 51",
+      "qid": "Q108907625"
+    },
+    {
+      "title": "Four Piano Pieces",
+      "qid": "Q791006"
+    },
+    {
+      "title": "Herzog Blaubarts Burg",
+      "qid": "Q5745244"
+    },
+    {
+      "title": "Homage to Paderewski",
+      "qid": "Q16844512"
+    },
+    {
+      "title": "Hungarian folksongs for voice and piano",
+      "qid": "Q17011544"
+    },
+    {
+      "title": "Island of the Dead",
+      "qid": "Q4338865"
+    },
+    {
+      "title": "Lassú tánc",
+      "qid": "Q1128177"
+    },
+    {
+      "title": "Magyar népdalok BB43",
+      "qid": "Q25458608"
+    },
+    {
+      "title": "Maruntel",
+      "qid": "Q107328730"
+    },
+    {
+      "title": "Medea",
+      "qid": "Q130753865"
+    },
+    {
+      "title": "Mikrokosmos",
+      "qid": "Q661639",
+      "instruments": [
+        "Piano",
+        "Stampfen",
+        "Klavier"
+      ]
+    },
+    {
+      "title": "Monsieur René Magritte",
+      "qid": "Q3860986"
+    },
+    {
+      "title": "Music for Strings, Percussion and Celesta",
+      "qid": "Q1047743",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=bartok_music_string_celesta_2_(c)siu.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=bartok_music_string_celesta_4_(c)siu.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Night music",
+      "qid": "Q7033632"
+    },
+    {
+      "title": "Nine Little Pieces",
+      "qid": "Q1108484"
+    },
+    {
+      "title": "Not Reconciled",
+      "qid": "Q7062183"
+    },
+    {
+      "title": "Out of Doors",
+      "qid": "Q716195"
+    },
+    {
+      "title": "Palo y hueso",
+      "qid": "Q7128549"
+    },
+    {
+      "title": "Petite Suite",
+      "qid": "Q7178413"
+    },
+    {
+      "title": "Piano Quintet in C major",
+      "qid": "Q136555446"
+    },
+    {
+      "title": "Rhapsody op. 1 by Béla Bartók",
+      "qid": "Q791007"
+    },
+    {
+      "title": "Romanian Christmas Carols",
+      "qid": "Q7362535",
+      "key": "D major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1915
+    },
+    {
+      "title": "Romanian Folk Dances",
+      "qid": "Q791013",
+      "catalog_numbers": {
+        "Sz": "68"
+      },
+      "key": "D major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1915
+    },
+    {
+      "title": "Simon, the Magician",
+      "qid": "Q1288695"
+    },
+    {
+      "title": "Slovakian Dance",
+      "qid": "Q7541667"
+    },
+    {
+      "title": "Sonata for Two Pianos and Percussion",
+      "qid": "Q831870"
+    },
+    {
+      "title": "String Quartet No. 4",
+      "qid": "Q791002"
+    },
+    {
+      "title": "String Quartet No. 6",
+      "qid": "Q791019"
+    },
+    {
+      "title": "String quartets by Béla Bartók",
+      "qid": "Q124683918"
+    },
+    {
+      "title": "Suite paysanne hongroise",
+      "qid": "Q7635578"
+    },
+    {
+      "title": "Szőllősy index",
+      "qid": "Q1676654"
+    },
+    {
+      "title": "Ten Easy Pieces",
+      "qid": "Q790968"
+    },
+    {
+      "title": "The Barbarian",
+      "qid": "Q15114210"
+    },
+    {
+      "title": "The Miraculous Mandarin",
+      "qid": "Q464708"
+    },
+    {
+      "title": "The Woman in Blue",
+      "qid": "Q3208723"
+    },
+    {
+      "title": "The Wooden Prince",
+      "qid": "Q465752"
+    },
+    {
+      "title": "Three Burlesques",
+      "qid": "Q790973"
+    },
+    {
+      "title": "Three Hungarian Folktunes",
+      "qid": "Q790976"
+    },
+    {
+      "title": "Three Rondos on Slovak Folk Tunes",
+      "qid": "Q790975"
+    },
+    {
+      "title": "Tombeau de Claude Debussy",
+      "qid": "Q14752515"
+    },
+    {
+      "title": "Transylvanian Dances",
+      "qid": "Q790983"
+    },
+    {
+      "title": "Triptych",
+      "qid": "Q16958200"
+    },
+    {
+      "title": "Twenty Hungarian Folksongs",
+      "qid": "Q1057896"
+    },
+    {
+      "title": "Village Scenes",
+      "qid": "Q790985"
+    },
+    {
+      "title": "Violin Concerto No. 1",
+      "qid": "Q714799"
+    },
+    {
+      "title": "Sonata for piano (1926)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=bartok_piano_sonata_1_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=bartok_piano_sonata_2_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=bartok_piano_sonata_3_(c)unknown.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Danses Populaires Roumaines (1915)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=bartok_dances_populaires_roumaines_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonatine (1915)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=bartok_sonatine_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Vol. 5 No. 126: Change of Time; No. 128: Peasant Dance; No. 138: Bagpipe",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=bartok_mikrokosmos_selection_1_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Vol. 6 No. 146: Ostinato; No. 148-153: Six Dances in Bulgarian Rhythm",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=bartok_mikrokosmos_selection_2_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Romanian Folk Dance No.2 - Peasant Costume",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/BartokB/rom_folk_dance_1_bartok/rom_folk_dance_1_bartok.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

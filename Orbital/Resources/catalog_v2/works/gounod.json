@@ -1,0 +1,234 @@
+{
+  "works": [
+    {
+      "title": "La reine de Saba",
+      "qid": "Q1314372"
+    },
+    {
+      "title": "Roméo et Juliete",
+      "qid": "Q918714"
+    },
+    {
+      "title": "Funeral March of a Marionette",
+      "qid": "Q5996065"
+    },
+    {
+      "title": "Ah, arise, o sun!",
+      "qid": "Q54975732"
+    },
+    {
+      "title": "Ah, leve-toi, soleil! = Tyrd, cwyd yn awr, o haul! : Romeo et Juliette",
+      "qid": "Q78647618"
+    },
+    {
+      "title": "Air des bijoux",
+      "qid": "Q2828247"
+    },
+    {
+      "title": "Alfred Hitchcock Presents",
+      "qid": "Q1247206"
+    },
+    {
+      "title": "Ave Maria",
+      "qid": "Q790310",
+      "key": "G major",
+      "instruments": [
+        "B♭ Trumpet",
+        "Soprano",
+        "Alto",
+        "Baritone",
+        "Bass",
+        "Violoncello",
+        "Pipe Organ"
+      ]
+    },
+    {
+      "title": "Beyond Good and Evil",
+      "qid": "Q3546269"
+    },
+    {
+      "title": "Cinq-Mars",
+      "qid": "Q5121075"
+    },
+    {
+      "title": "D'un cœur qui t'aime",
+      "qid": "Q133321699"
+    },
+    {
+      "title": "Faites-lui mes âveux",
+      "qid": "Q54975563"
+    },
+    {
+      "title": "Faust",
+      "qid": "Q745951"
+    },
+    {
+      "title": "Faust",
+      "qid": "Q2593047"
+    },
+    {
+      "title": "Faust",
+      "qid": "Q16711258"
+    },
+    {
+      "title": "Faust Suite",
+      "qid": "Q138330468"
+    },
+    {
+      "title": "Gallia",
+      "qid": "Q3094809"
+    },
+    {
+      "title": "I greet you, home chaste and pure",
+      "qid": "Q54975581"
+    },
+    {
+      "title": "Inno e Marcia Pontificale",
+      "qid": "Q190226"
+    },
+    {
+      "title": "Je veux vivre dans ce rêve",
+      "qid": "Q54975729"
+    },
+    {
+      "title": "Juliet's waltz song = Cân waltz Juliet : Romeao & Juliet",
+      "qid": "Q78526941"
+    },
+    {
+      "title": "Jésus de Nazareth",
+      "qid": "Q136047221"
+    },
+    {
+      "title": "La Casa de los millones",
+      "qid": "Q6461576"
+    },
+    {
+      "title": "La colombe",
+      "qid": "Q4890037"
+    },
+    {
+      "title": "La nonne sanglante",
+      "qid": "Q3211103"
+    },
+    {
+      "title": "La rédemption",
+      "qid": "Q56274887"
+    },
+    {
+      "title": "Le médecin malgré lui",
+      "qid": "Q464080"
+    },
+    {
+      "title": "Le tribut de Zamora",
+      "qid": "Q6508140"
+    },
+    {
+      "title": "Le veau d'or est toujours debout",
+      "qid": "Q4247497"
+    },
+    {
+      "title": "Les Sept Paroles de Notre Seigneur Jésus-Christ sur la Croix",
+      "qid": "Q56274898"
+    },
+    {
+      "title": "Lux Prima",
+      "qid": "Q111094338"
+    },
+    {
+      "title": "Mass No.2 in G major",
+      "qid": "Q126856475"
+    },
+    {
+      "title": "Maître Pierre",
+      "qid": "Q6799146"
+    },
+    {
+      "title": "Messe aux Cathédrales",
+      "qid": "Q16885284"
+    },
+    {
+      "title": "Messe brève no. 7",
+      "qid": "Q112247082"
+    },
+    {
+      "title": "Mireille",
+      "qid": "Q843042"
+    },
+    {
+      "title": "Mirella",
+      "qid": "Q109242139"
+    },
+    {
+      "title": "Mors et vita",
+      "qid": "Q56274891"
+    },
+    {
+      "title": "Petite Symphonie",
+      "qid": "Q3377385"
+    },
+    {
+      "title": "Philémon et Baucis",
+      "qid": "Q1234960"
+    },
+    {
+      "title": "Polyeucte",
+      "qid": "Q7226316"
+    },
+    {
+      "title": "Que fais-tu, blanche tourterelle",
+      "qid": "Q54975718"
+    },
+    {
+      "title": "Requiem, CG80",
+      "qid": "Q115181737"
+    },
+    {
+      "title": "Rhowch i mi nerth : [o] Irene",
+      "qid": "Q79266753"
+    },
+    {
+      "title": "Romeo and Juliet",
+      "qid": "Q7363126"
+    },
+    {
+      "title": "Salut! demeure chaste et pure = Hawddamor, breswyl pur, bendigaid! : Faust",
+      "qid": "Q78527171"
+    },
+    {
+      "title": "Sapho",
+      "qid": "Q264671"
+    },
+    {
+      "title": "Serenade",
+      "qid": "Q78527189"
+    },
+    {
+      "title": "St. Cecilia Mass",
+      "qid": "Q1591813"
+    },
+    {
+      "title": "Sérénade",
+      "qid": "Q124621888"
+    },
+    {
+      "title": "The Don Juans",
+      "qid": "Q11821482"
+    },
+    {
+      "title": "The Little Colonel",
+      "qid": "Q3795146"
+    },
+    {
+      "title": "The jewel song",
+      "qid": "Q78527260"
+    },
+    {
+      "title": "Tobie",
+      "qid": "Q56274896"
+    },
+    {
+      "title": "Walpurgisnacht Ballet",
+      "qid": "Q7963743"
+    }
+  ]
+}

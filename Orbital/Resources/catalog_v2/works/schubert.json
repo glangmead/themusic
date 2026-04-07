@@ -1,0 +1,3411 @@
+{
+  "works": [
+    {
+      "title": "Fantasy in G major",
+      "qid": "Q135441589",
+      "key": "G major"
+    },
+    {
+      "title": "String Quartet No. 1 in G Minor, D. 18",
+      "qid": "Q3927138",
+      "catalog_numbers": {
+        "D": "18"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Des Mädchens Klage, D 6",
+      "qid": "Q135450161",
+      "key": "D minor"
+    },
+    {
+      "title": "Leichenphantasie",
+      "qid": "Q135455709",
+      "key": "D minor"
+    },
+    {
+      "title": "Overture, D 8A",
+      "qid": "Q135471114",
+      "key": "C minor"
+    },
+    {
+      "title": "String Quartet No. 7",
+      "qid": "Q19896255",
+      "key": "D major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/strings_12-1_(c)onclassical.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/strings_14-1_(c)onclassical.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/strings_14-2_(c)onclassical.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/strings_14-3_(c)onclassical.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/strings_14-4_(c)onclassical.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/strings_15-1_(c)onclassical.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/strings_15-2_(c)onclassical.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/strings_15-3_(c)onclassical.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/strings_15-4_(c)onclassical.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Symphony D 2B",
+      "qid": "Q16820670",
+      "key": "D major"
+    },
+    {
+      "title": "Hagars Klage",
+      "qid": "Q135447237",
+      "key": "C minor"
+    },
+    {
+      "title": "Overture in C minor, D.8",
+      "qid": "Q135468273",
+      "key": "C minor"
+    },
+    {
+      "title": "Fantasy, D 9",
+      "qid": "Q135475845",
+      "key": "G minor"
+    },
+    {
+      "title": "Der Vatermörder",
+      "qid": "Q135476247",
+      "key": "C minor"
+    },
+    {
+      "title": "Der Spiegelritter",
+      "qid": "Q135491451"
+    },
+    {
+      "title": "Der Teufel als Hydraulicus",
+      "qid": "Q135441971",
+      "key": "D major"
+    },
+    {
+      "title": "Fugue, D. 13",
+      "qid": "Q135503752",
+      "catalog_numbers": {
+        "D": "13"
+      },
+      "key": "D minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/fugue_952_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Klaglied",
+      "qid": "Q135537208",
+      "key": "G minor"
+    },
+    {
+      "title": "Overture, D 12",
+      "qid": "Q135491810",
+      "catalog_numbers": {
+        "D": "12"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Sonatensatz, D 28",
+      "qid": "Q28001483",
+      "catalog_numbers": {
+        "D": "28"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "String Quartet No. 2",
+      "qid": "Q19972135",
+      "key": "C major"
+    },
+    {
+      "title": "Der Taucher",
+      "qid": "Q131625812",
+      "key": "A minor"
+    },
+    {
+      "title": "Des Teufels Lustschloss",
+      "qid": "Q1200474"
+    },
+    {
+      "title": "String Quartet No. 3",
+      "qid": "Q3413781",
+      "key": "B-flat major"
+    },
+    {
+      "title": "String Quartet No. 5",
+      "qid": "Q19896249",
+      "key": "B-flat major"
+    },
+    {
+      "title": "String Quartet No. 6",
+      "qid": "Q19896251",
+      "key": "D major"
+    },
+    {
+      "title": "String Quartet No. 4 in C Major, D. 46",
+      "qid": "Q19896246",
+      "catalog_numbers": {
+        "D": "46"
+      }
+    },
+    {
+      "title": "Lützow's Wild Hunt",
+      "qid": "Q55807761"
+    },
+    {
+      "title": "Majestätsche Sonnenrosse",
+      "qid": "Q135962187",
+      "key": "C major"
+    },
+    {
+      "title": "Trinklied D. 75",
+      "qid": "Q135962922",
+      "catalog_numbers": {
+        "D": "75"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "String Quartet No. 10 in E-flat Major, D. 87",
+      "qid": "Q3413770",
+      "catalog_numbers": {
+        "D": "87"
+      },
+      "key": "E-flat major",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=quartet10-1.krn&l=users/craig/classical/schubert/quartet&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=quartet10-2.krn&l=users/craig/classical/schubert/quartet&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=quartet10-3.krn&l=users/craig/classical/schubert/quartet&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=quartet10-4.krn&l=users/craig/classical/schubert/quartet&format=midi"
+          ]
+        },
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/strings_10-1_(c)onclassical.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/strings_10-2_(c)onclassical.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/strings_10-3_(c)onclassical.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/strings_10-4_(c)onclassical.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mass No. 1",
+      "qid": "Q1924043",
+      "key": "D major"
+    },
+    {
+      "title": "Quartettsatz, D. 103",
+      "qid": "Q17102746",
+      "catalog_numbers": {
+        "D": "103"
+      },
+      "key": "C minor"
+    },
+    {
+      "title": "String Quartet No. 8 in B-flat Major, D. 112",
+      "qid": "Q19896257",
+      "catalog_numbers": {
+        "D": "112"
+      }
+    },
+    {
+      "title": "Gretchen am Spinnrade",
+      "qid": "Q674477",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/gretchen_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nachtgesang, D 119",
+      "qid": "Q117046184",
+      "catalog_numbers": {
+        "D": "119"
+      },
+      "key": "A-flat major"
+    },
+    {
+      "title": "Schäfers Klagelied",
+      "qid": "Q11608654",
+      "catalog_numbers": {
+        "D": "121"
+      },
+      "key": "G major",
+      "instruments": [
+        "Voice",
+        "Piano"
+      ],
+      "year_composed": 1814
+    },
+    {
+      "title": "An den Mond, D 296",
+      "qid": "Q114300648",
+      "catalog_numbers": {
+        "D": "296"
+      },
+      "key": "A-flat major"
+    },
+    {
+      "title": "Claudine von Villa Bella, D. 239",
+      "qid": "Q114743946",
+      "catalog_numbers": {
+        "D": "239"
+      }
+    },
+    {
+      "title": "Der Rattenfänger",
+      "qid": "Q11679001",
+      "key": "G major"
+    },
+    {
+      "title": "Mass No. 3",
+      "qid": "Q1924048",
+      "key": "B-flat major"
+    },
+    {
+      "title": "Sehnsucht, D 310",
+      "qid": "Q114436641",
+      "catalog_numbers": {
+        "D": "310"
+      }
+    },
+    {
+      "title": "Erlkönig",
+      "qid": "Q1134417",
+      "key": "B♭ major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1815
+    },
+    {
+      "title": "Mignon",
+      "qid": "Q114134209"
+    },
+    {
+      "title": "Der Sänger",
+      "qid": "Q115183445",
+      "key": "D major"
+    },
+    {
+      "title": "Piano Sonata in E major, D. 157",
+      "qid": "Q6143201",
+      "catalog_numbers": {
+        "D": "157"
+      },
+      "key": "E major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/schubert_sonata_157_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/schubert_sonata_157_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/schubert_sonata_157_3_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nähe des Geliebten",
+      "qid": "Q117156126",
+      "key": "B-flat minor"
+    },
+    {
+      "title": "Mass No. 2",
+      "qid": "Q866713",
+      "key": "G major"
+    },
+    {
+      "title": "String Quartet No. 9 in G Minor, D. 173",
+      "qid": "Q19896260",
+      "catalog_numbers": {
+        "D": "173"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Stabat Mater in G minor",
+      "qid": "Q7595705",
+      "key": "G minor"
+    },
+    {
+      "title": "Ratlose Liebe (1815)",
+      "qid": "Q130332682",
+      "key": "E major"
+    },
+    {
+      "title": "Symphony No. 3",
+      "qid": "Q223534",
+      "key": "D major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=30/schubert_symphony_2_125_3_(c)sargent.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/symphony_4_1_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/symphony_4_2_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/symphony_4_3_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/symphony_4_4_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/symphony_5_1_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/symphony_5_2_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/symphony_5_3_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/symphony_5_4_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/symphony_6_1_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/symphony_6_2_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/symphony_6_3_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/symphony_6_4_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/symphony_9_1_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/symphony_9_2_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/symphony_9_3_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/symphony_9_4_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/symphony_10_1_(c)prengel.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/symphony_10_2_(c)prengel.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/symphony_10_3_(c)prengel.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/schubert_60923a_unfinished_symphony_no_8_b_minor_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Die Liebe",
+      "qid": "Q114207428",
+      "key": "B-flat major"
+    },
+    {
+      "title": "Meeres Stille, D 215A",
+      "qid": "Q116974586",
+      "catalog_numbers": {
+        "D": "215A"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Meeres Stille, D 216",
+      "qid": "Q116974621",
+      "catalog_numbers": {
+        "D": "216"
+      },
+      "key": "C major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/meeresstille_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Der Fischer",
+      "qid": "Q115169092",
+      "key": "B-flat major"
+    },
+    {
+      "title": "Der Gott und die Bajadere",
+      "qid": "Q115169713",
+      "key": "E-flat major"
+    },
+    {
+      "title": "Der Schatzgräber",
+      "qid": "Q114592794",
+      "key": "G minor"
+    },
+    {
+      "title": "Piano Sonata in C major, D. 279",
+      "qid": "Q7190167",
+      "catalog_numbers": {
+        "D": "279"
+      },
+      "key": "C major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/schubert_sonata_279_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/schubert_sonata_279_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/schubert_sonata_279_3_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Adagio and Rondo concertante in F major, D 487",
+      "qid": "Q18163655",
+      "catalog_numbers": {
+        "D": "487"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Der König in Thule",
+      "qid": "Q109020199"
+    },
+    {
+      "title": "Die Bürgschaft",
+      "qid": "Q1211849"
+    },
+    {
+      "title": "Piano Sonata in E major, D. 459",
+      "qid": "Q7190172",
+      "catalog_numbers": {
+        "D": "459"
+      },
+      "key": "E major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_459_(c)hisamori.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_pieces_459_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_pieces_459_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_pieces_459_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_pieces_459_4_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_pieces_459_5_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "String Quartet No. 11 in E Major, D. 353",
+      "qid": "Q19896269",
+      "catalog_numbers": {
+        "D": "353"
+      },
+      "key": "E major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/strings_11-1_(c)onclassical.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/strings_11-2_(c)onclassical.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/strings_11-3_(c)onclassical.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/strings_11-4_(c)onclassical.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Symphony No. 4",
+      "qid": "Q231264",
+      "key": "C minor"
+    },
+    {
+      "title": "To coachman Chronos",
+      "qid": "Q114643884"
+    },
+    {
+      "title": "Wer nie sein Brot mit Tränen aß",
+      "qid": "Q114268520"
+    },
+    {
+      "title": "Litanie auf das Fest Allerseelen",
+      "qid": "Q137524380"
+    },
+    {
+      "title": "Sehnsucht, D 481",
+      "qid": "Q114436575",
+      "catalog_numbers": {
+        "D": "481"
+      },
+      "key": "E major",
+      "instruments": [
+        "T1",
+        "T2",
+        "B1",
+        "B2"
+      ],
+      "year_composed": 1816
+    },
+    {
+      "title": "Symphony No. 5",
+      "qid": "Q240289",
+      "key": "B-flat major"
+    },
+    {
+      "title": "Stabat Mater in F minor",
+      "qid": "Q7595703",
+      "key": "F minor"
+    },
+    {
+      "title": "Violin Sonata No. 1 in D major",
+      "qid": "Q60795785",
+      "key": "D major"
+    },
+    {
+      "title": "Violin Sonata No. 2 in A minor",
+      "qid": "Q130304804",
+      "key": "A minor"
+    },
+    {
+      "title": "Der Herbstabend",
+      "qid": "Q60835592",
+      "key": "F minor"
+    },
+    {
+      "title": "Violin Sonata No. 3 in G minor",
+      "qid": "Q130304833",
+      "key": "G minor"
+    },
+    {
+      "title": "Seligkeit",
+      "qid": "Q11613181",
+      "key": "E major"
+    },
+    {
+      "title": "Rondo in A major for Violin and Strings, D 438",
+      "qid": "Q18163658",
+      "catalog_numbers": {
+        "D": "438"
+      },
+      "key": "A major"
+    },
+    {
+      "title": "Prometheus Cantata",
+      "qid": "Q2112758",
+      "key": "A minor"
+    },
+    {
+      "title": "Am Tage Aller Seelen",
+      "qid": "Q11353946",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/tage_aller_seelen_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gesang der Geister über den Wassern, D 484",
+      "qid": "Q116859811",
+      "catalog_numbers": {
+        "D": "484"
+      }
+    },
+    {
+      "title": "Magnificat",
+      "qid": "Q17010782",
+      "key": "C major"
+    },
+    {
+      "title": "Wiegenlied, D. 498",
+      "qid": "Q7998912",
+      "catalog_numbers": {
+        "D": "498"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SchubertF/D498/schubert_wiegen_lied/schubert_wiegen_lied.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Didone Abbandonata",
+      "qid": "Q105195045",
+      "catalog_numbers": {
+        "D": "510"
+      },
+      "key": "E-flat major"
+    },
+    {
+      "title": "Auf dem See",
+      "qid": "Q11563196"
+    },
+    {
+      "title": "Ganymed",
+      "qid": "Q11296115",
+      "key": "A-flat major"
+    },
+    {
+      "title": "Gesang der Geister über den Wassern, D 538",
+      "qid": "Q116859924",
+      "catalog_numbers": {
+        "D": "538"
+      },
+      "key": "A major"
+    },
+    {
+      "title": "Gretchen im Zwinger",
+      "qid": "Q114613446",
+      "key": "B-flat minor"
+    },
+    {
+      "title": "Liebhaber in allen Gestalten",
+      "qid": "Q60835597",
+      "key": "A major"
+    },
+    {
+      "title": "Mahomets Gesang, D 549",
+      "qid": "Q113077558",
+      "catalog_numbers": {
+        "D": "549"
+      }
+    },
+    {
+      "title": "Die Forelle",
+      "qid": "Q630565",
+      "key": "D-flat major",
+      "year_composed": 1817,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/forelle_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Der Tod und das Mädchen",
+      "qid": "Q581306",
+      "catalog_numbers": {
+        "D": "531"
+      },
+      "key": "F major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1817
+    },
+    {
+      "title": "Piano Sonata in A minor, D. 537",
+      "qid": "Q7190163",
+      "catalog_numbers": {
+        "D": "537"
+      },
+      "key": "A minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_164_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_164_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_164_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_537_(c)hisamori.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "An die Musik",
+      "qid": "Q2187379",
+      "key": "D major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1817
+    },
+    {
+      "title": "Piano Sonata in A-flat major, D. 557",
+      "qid": "Q7190162",
+      "catalog_numbers": {
+        "D": "557"
+      },
+      "key": "A-flat major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_sonata_557_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_sonata_557_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_sonata_557_3_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Piano Sonata in D-flat major D. 567",
+      "qid": "Q18163164",
+      "catalog_numbers": {
+        "D": "567"
+      }
+    },
+    {
+      "title": "Piano Sonata in E minor, D. 566",
+      "qid": "Q7190176",
+      "catalog_numbers": {
+        "D": "566"
+      },
+      "key": "E minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_sonata_566_unique-movt_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lied im Freien",
+      "qid": "Q134087452",
+      "key": "F major"
+    },
+    {
+      "title": "Piano Sonata in F-sharp minor, D. 571",
+      "qid": "Q7190179",
+      "catalog_numbers": {
+        "D": "571"
+      },
+      "key": "F-sharp minor"
+    },
+    {
+      "title": "13 Variations on a theme by Anselm Hüttenbrenner",
+      "qid": "Q119791671",
+      "catalog_numbers": {
+        "D": "576"
+      },
+      "key": "A minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=d0576-00.krn&l=users/craig/classical/schubert/piano/d0576&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=d0576-01.krn&l=users/craig/classical/schubert/piano/d0576&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=d0576-02.krn&l=users/craig/classical/schubert/piano/d0576&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=d0576-03.krn&l=users/craig/classical/schubert/piano/d0576&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=d0576-04.krn&l=users/craig/classical/schubert/piano/d0576&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=d0576-05.krn&l=users/craig/classical/schubert/piano/d0576&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=d0576-06.krn&l=users/craig/classical/schubert/piano/d0576&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=d0576-07.krn&l=users/craig/classical/schubert/piano/d0576&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=d0576-08.krn&l=users/craig/classical/schubert/piano/d0576&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=d0576-09.krn&l=users/craig/classical/schubert/piano/d0576&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=d0576-10.krn&l=users/craig/classical/schubert/piano/d0576&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=d0576-11.krn&l=users/craig/classical/schubert/piano/d0576&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=d0576-12.krn&l=users/craig/classical/schubert/piano/d0576&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=d0576-13.krn&l=users/craig/classical/schubert/piano/d0576&format=midi"
+          ]
+        },
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_13_variations_huttenbrenner_576_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata for Violin and Piano in A Major D. 574, \"Duo\"",
+      "qid": "Q3490268",
+      "catalog_numbers": {
+        "D": "574"
+      },
+      "key": "A major"
+    },
+    {
+      "title": "Gruppe aus dem Tartarus, D 583",
+      "qid": "Q11316414",
+      "catalog_numbers": {
+        "D": "583"
+      }
+    },
+    {
+      "title": "Symphony No. 6",
+      "qid": "Q246533",
+      "key": "C major"
+    },
+    {
+      "title": "2 Scherzos",
+      "qid": "Q11187445"
+    },
+    {
+      "title": "Sonata in B-flat major for piano four-hands, D 617",
+      "qid": "Q48835466",
+      "catalog_numbers": {
+        "D": "617"
+      },
+      "key": "B-flat major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=19/schubert_sonata_617_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=19/schubert_sonata_617_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=19/schubert_sonata_617_3_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Piano Sonata in C major, D. 613",
+      "qid": "Q16155936",
+      "catalog_numbers": {
+        "D": "613"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Symphony, D. 615",
+      "qid": "Q16155239",
+      "catalog_numbers": {
+        "D": "615"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Piano Sonata in F minor, D. 625",
+      "qid": "Q7190182",
+      "catalog_numbers": {
+        "D": "625"
+      },
+      "key": "F minor"
+    },
+    {
+      "title": "Prometheus",
+      "qid": "Q7249721",
+      "key": "G minor"
+    },
+    {
+      "title": "Die Zwillingsbrüder",
+      "qid": "Q1217815"
+    },
+    {
+      "title": "Piano Sonata in C-sharp minor, D. 655",
+      "qid": "Q7190164",
+      "catalog_numbers": {
+        "D": "655"
+      },
+      "key": "C-sharp minor"
+    },
+    {
+      "title": "Gesang der Geister über den Wassern, D 714",
+      "qid": "Q116859839",
+      "catalog_numbers": {
+        "D": "714"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Lazarus",
+      "qid": "Q194011"
+    },
+    {
+      "title": "Sakontala",
+      "qid": "Q12354813"
+    },
+    {
+      "title": "Six moments musicaux",
+      "qid": "Q1257344",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/moments_musicaux_94_1_(c)hisamori.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/moments_musicaux_94_1_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/moments_musicaux_94_2_(c)hisamori.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/moments_musicaux_94_2_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/moments_musicaux_94_3_(c)hisamori.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/moments_musicaux_94_3_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/moments_musicaux_94_4_(c)hisamori.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/moments_musicaux_94_4_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/moments_musicaux_94_5_(c)hisamori.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/moments_musicaux_94_5_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/moments_musicaux_94_6_(c)hisamori.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/moments_musicaux_94_6_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Symphony, D. 708a",
+      "qid": "Q16155244",
+      "catalog_numbers": {
+        "D": "759"
+      },
+      "key": "D major",
+      "instruments": [
+        "Flauti.",
+        "Oboi.",
+        "Clarinetti in A.",
+        "Fagotti.",
+        "Corni in D.",
+        "Trombe in E.",
+        "Timpani in H.Fis.",
+        "Violino I.",
+        "Violino II.",
+        "Viola.",
+        "Violoncello.",
+        "Basso."
+      ],
+      "year_composed": 1820
+    },
+    {
+      "title": "Gesang der Geister über den Wassern, D 705",
+      "qid": "Q116859709",
+      "catalog_numbers": {
+        "D": "705"
+      },
+      "key": "C-sharp minor"
+    },
+    {
+      "title": "Quartettsatz",
+      "qid": "Q3413020",
+      "key": "C minor"
+    },
+    {
+      "title": "Mahomets Gesang, D 721",
+      "qid": "Q113077695",
+      "catalog_numbers": {
+        "D": "721"
+      }
+    },
+    {
+      "title": "Grenzen der Menschheit",
+      "qid": "Q116969451",
+      "key": "E major"
+    },
+    {
+      "title": "Mignon I, D 726",
+      "qid": "Q114245637",
+      "catalog_numbers": {
+        "D": "726"
+      },
+      "key": "B minor"
+    },
+    {
+      "title": "Rastlose Liebe (1821)",
+      "qid": "Q130332709",
+      "key": "D major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/rastlose_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Symphony No. 7",
+      "qid": "Q1885751",
+      "key": "E major"
+    },
+    {
+      "title": "Alfonso und Estrella",
+      "qid": "Q2032667"
+    },
+    {
+      "title": "Der Zwerg",
+      "qid": "Q5261251",
+      "key": "A minor"
+    },
+    {
+      "title": "Fierrabras",
+      "qid": "Q201295",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/schubert_overture_fierrabras_798_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Heliopolis II",
+      "qid": "Q11336612"
+    },
+    {
+      "title": "Mass No. 5",
+      "qid": "Q1146131",
+      "key": "A-flat major"
+    },
+    {
+      "title": "Nachtviolen",
+      "qid": "Q31842134",
+      "key": "C major"
+    },
+    {
+      "title": "Symphony No. 8",
+      "qid": "Q651383",
+      "key": "B minor"
+    },
+    {
+      "title": "Sei mir gegrüsst",
+      "qid": "Q136759719"
+    },
+    {
+      "title": "Der Musensohn",
+      "qid": "Q56097441"
+    },
+    {
+      "title": "Die Verschworenen",
+      "qid": "Q750057"
+    },
+    {
+      "title": "Du bist die Ruh'",
+      "qid": "Q24964408",
+      "key": "E-flat major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/ruh_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nacht und Träume",
+      "qid": "Q6957204",
+      "key": "B major"
+    },
+    {
+      "title": "Piano Sonata in E minor, D. 769A",
+      "qid": "Q50841813",
+      "catalog_numbers": {
+        "D": "769A"
+      },
+      "key": "E minor"
+    },
+    {
+      "title": "Ungeduld",
+      "qid": "Q2296248",
+      "key": "A major"
+    },
+    {
+      "title": "Valses Sentimentales",
+      "qid": "Q7912624",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/valses_sentimentales_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Auf dem Wasser zu singen",
+      "qid": "Q4820311",
+      "key": "A♭ major",
+      "instruments": [
+        "Flute",
+        "Piano"
+      ],
+      "year_composed": 1823,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/wasser_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Wandrers Nachtlied II",
+      "qid": "Q121327815",
+      "catalog_numbers": {
+        "D": "768"
+      },
+      "key": "B♭ major",
+      "instruments": [
+        "Voice",
+        "Piano"
+      ],
+      "year_composed": 1823
+    },
+    {
+      "title": "Piano Sonata in A minor, D. 784",
+      "qid": "Q3490126",
+      "catalog_numbers": {
+        "D": "784"
+      },
+      "key": "A minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_143_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_143_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_143_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_784_(c)hisamori.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Die schöne Müllerin",
+      "qid": "Q765966"
+    },
+    {
+      "title": "String Quartet No. 13",
+      "qid": "Q2331223",
+      "key": "A minor"
+    },
+    {
+      "title": "Introduction and variations for flute and piano on Trockne Blumen",
+      "qid": "Q28497909"
+    },
+    {
+      "title": "Rosamunde",
+      "qid": "Q2166612",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/schubert-fischoff_189w_ballet_from_rosamunde_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/schubert-godowsky_67841a_rosamunde_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Octet",
+      "qid": "Q118442",
+      "key": "F major"
+    },
+    {
+      "title": "Death and the Maiden",
+      "qid": "Q605107",
+      "key": "D minor"
+    },
+    {
+      "title": "Sonata in C major for piano four-hands, D 812",
+      "qid": "Q5594517",
+      "catalog_numbers": {
+        "D": "812"
+      },
+      "key": "C major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_sonata_812_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_sonata_812_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_sonata_812_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_sonata_812_4_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Arpeggione Sonata",
+      "qid": "Q2915782",
+      "key": "A minor"
+    },
+    {
+      "title": "Der Einsame",
+      "qid": "Q123575540",
+      "key": "G major"
+    },
+    {
+      "title": "Ellen's Gesang n°I",
+      "qid": "Q85853150",
+      "key": "D-flat major"
+    },
+    {
+      "title": "Ellens dritter Gesang",
+      "qid": "Q1331995",
+      "key": "B-flat major"
+    },
+    {
+      "title": "Im Abendrot",
+      "qid": "Q11430229",
+      "key": "A-flat major"
+    },
+    {
+      "title": "Piano Sonata in D major, D. 850",
+      "qid": "Q1748274",
+      "catalog_numbers": {
+        "D": "850"
+      },
+      "key": "D major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_53_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_53_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_53_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_53_4_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "An Silvia",
+      "qid": "Q11308433",
+      "key": "A major"
+    },
+    {
+      "title": "Das Zügenglöcklein",
+      "qid": "Q123582627",
+      "key": "A-flat major"
+    },
+    {
+      "title": "Der Wanderer an den Mond",
+      "qid": "Q123477389",
+      "key": "G minor"
+    },
+    {
+      "title": "Lied der Mignon, Op. 62 No. 2",
+      "qid": "Q114245659",
+      "catalog_numbers": {
+        "Op": "62/2"
+      },
+      "key": "E minor"
+    },
+    {
+      "title": "Lied der Mignon, Op. 62 No. 3",
+      "qid": "Q114245792",
+      "catalog_numbers": {
+        "Op": "62/3"
+      }
+    },
+    {
+      "title": "Piano Sonata in E-flat major, D. 568",
+      "qid": "Q1746042",
+      "catalog_numbers": {
+        "D": "568"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_122_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_122_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_122_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_122_4_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_568_(c)hisamori.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Rondo in B minor for violin and piano, D 895",
+      "qid": "Q19895550",
+      "catalog_numbers": {
+        "D": "895"
+      },
+      "key": "B minor"
+    },
+    {
+      "title": "Ständchen",
+      "qid": "Q10757660",
+      "key": "C major",
+      "instruments": [
+        "Horn in F",
+        "Piano"
+      ],
+      "year_composed": 1826
+    },
+    {
+      "title": "Im Frühling",
+      "qid": "Q6001803",
+      "key": "G major",
+      "instruments": [
+        "Tenor 1",
+        "T2",
+        "B1",
+        "B2"
+      ],
+      "year_composed": 1826
+    },
+    {
+      "title": "Piano Sonata in G major, D. 894",
+      "qid": "Q3490130",
+      "catalog_numbers": {
+        "D": "894"
+      },
+      "key": "G major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_894_1_(c)bucknall.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_894_2_(c)bucknall.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_894_3_(c)bucknall.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_894_4_(c)bucknall.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Deutsche Messe",
+      "qid": "Q1203556",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=masses/schubert_deutsche_mass_for_ttb_or_ssa_(c)hoessl.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Auf dem Flusse",
+      "qid": "Q110567535",
+      "key": "E minor"
+    },
+    {
+      "title": "Das Wirtshaus",
+      "qid": "Q111142340",
+      "key": "F major"
+    },
+    {
+      "title": "Der Leiermann",
+      "qid": "Q111232917",
+      "key": "A minor"
+    },
+    {
+      "title": "Der Wegweiser",
+      "qid": "Q111100085"
+    },
+    {
+      "title": "Der greise Kopf",
+      "qid": "Q110609585",
+      "key": "C minor"
+    },
+    {
+      "title": "Der stürmische Morgen",
+      "qid": "Q110619331",
+      "key": "D minor"
+    },
+    {
+      "title": "Die Krähe",
+      "qid": "Q110618380",
+      "key": "C minor"
+    },
+    {
+      "title": "Die Nebensonnen",
+      "qid": "Q111232820",
+      "key": "A major"
+    },
+    {
+      "title": "Die Post",
+      "qid": "Q110609470",
+      "key": "E-flat major"
+    },
+    {
+      "title": "Die Wetterfahne",
+      "qid": "Q110553597",
+      "key": "A minor"
+    },
+    {
+      "title": "Einsamkeit",
+      "qid": "Q110594706",
+      "key": "D minor"
+    },
+    {
+      "title": "Erstarrung",
+      "qid": "Q110554969",
+      "key": "C minor"
+    },
+    {
+      "title": "Gefrorne Tränen",
+      "qid": "Q110554627",
+      "key": "F minor"
+    },
+    {
+      "title": "Im Dorfe",
+      "qid": "Q110619204",
+      "key": "D major"
+    },
+    {
+      "title": "Irrlicht",
+      "qid": "Q110567840",
+      "key": "B minor"
+    },
+    {
+      "title": "Letzte Hoffnung",
+      "qid": "Q110618528",
+      "key": "E-flat major"
+    },
+    {
+      "title": "Mut!",
+      "qid": "Q111164123",
+      "key": "G minor"
+    },
+    {
+      "title": "Rast",
+      "qid": "Q110570682",
+      "key": "D minor"
+    },
+    {
+      "title": "Rückblick",
+      "qid": "Q110567710",
+      "key": "G minor"
+    },
+    {
+      "title": "Täuschung",
+      "qid": "Q111099876",
+      "key": "A major"
+    },
+    {
+      "title": "Wasserflut",
+      "qid": "Q110559102",
+      "key": "E minor"
+    },
+    {
+      "title": "Winterreise",
+      "qid": "Q611529",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/winterreise_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/winterreise_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/winterreise_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/winterreise_4_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/winterreise_5_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/winterreise_6_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/winterreise_7_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/winterreise_8-9_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/winterreise_10_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/winterreise_11-12_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Der Lindenbaum",
+      "qid": "Q110555396",
+      "key": "E major",
+      "instruments": [
+        "Voice",
+        "Piano"
+      ],
+      "year_composed": 1827
+    },
+    {
+      "title": "Gute Nacht",
+      "qid": "Q110553262",
+      "key": "D minor",
+      "instruments": [
+        "Voice",
+        "Piano"
+      ],
+      "year_composed": 1827
+    },
+    {
+      "title": "Valses Nobles",
+      "qid": "Q129676350",
+      "catalog_numbers": {
+        "D": "969"
+      },
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1827
+    },
+    {
+      "title": "Frühlingstraum",
+      "qid": "Q109038003",
+      "key": "A major"
+    },
+    {
+      "title": "Jägers Liebeslied",
+      "qid": "Q1714890"
+    },
+    {
+      "title": "Allegretto in C minor, D. 915",
+      "qid": "Q111937942",
+      "catalog_numbers": {
+        "D": "915"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_allegretto_915_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Der Graf von Gleichen",
+      "qid": "Q28228314"
+    },
+    {
+      "title": "Ständchen, D 920",
+      "qid": "Q30608102",
+      "catalog_numbers": {
+        "D": "920"
+      },
+      "key": "F major",
+      "instruments": [
+        "Grand Piano"
+      ],
+      "year_composed": 1827
+    },
+    {
+      "title": "Auf dem Strom",
+      "qid": "Q21899268",
+      "key": "E major"
+    },
+    {
+      "title": "Mass No. 6",
+      "qid": "Q1924059",
+      "key": "E-flat major"
+    },
+    {
+      "title": "Notturno",
+      "qid": "Q7063774",
+      "key": "E-flat major"
+    },
+    {
+      "title": "Sonata in A major, D. 959",
+      "qid": "Q15975838",
+      "catalog_numbers": {
+        "D": "959"
+      },
+      "key": "A major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_959_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_959_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_959_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_959_4_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_959_1_(c)bucknall.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_959_2_(c)bucknall.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_959_3_(c)bucknall.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_959_4_(c)bucknall.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata in C minor, D. 958",
+      "qid": "Q15975837",
+      "catalog_numbers": {
+        "D": "958"
+      },
+      "key": "C minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_958_1_(c)bucknall.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_958_2_(c)bucknall.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_958_3_(c)bucknall.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_958_4_(c)bucknall.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "String Quintet",
+      "qid": "Q1779432",
+      "key": "C major"
+    },
+    {
+      "title": "Symphony No. 9",
+      "qid": "Q511538",
+      "key": "C major"
+    },
+    {
+      "title": "Fantasia in F minor",
+      "qid": "Q3066517",
+      "key": "F minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/fantasia_103_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/fantasia_103_(c)bakels.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Die Männer sind méchant!",
+      "qid": "Q121363243"
+    },
+    {
+      "title": "Herbst",
+      "qid": "Q11594775",
+      "key": "E minor"
+    },
+    {
+      "title": "Der Doppelgänger",
+      "qid": "Q5261141",
+      "key": "B minor"
+    },
+    {
+      "title": "The Shepherd on the Rock",
+      "qid": "Q1194344",
+      "key": "B-flat major"
+    },
+    {
+      "title": "Piano Sonata in A major, D. 664",
+      "qid": "Q3490124",
+      "catalog_numbers": {
+        "D": "664"
+      },
+      "key": "A major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_120_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_120_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_120_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_664_(c)hisamori.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Trout Quintet",
+      "qid": "Q1349941",
+      "key": "A major"
+    },
+    {
+      "title": "Violin Sonatas, Op. 137",
+      "qid": "Q85813273",
+      "catalog_numbers": {
+        "Op": "137"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/schubert_sonatinas_for_violin_137_1_(c)harfesoft.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/schubert_sonatinas_for_violin_137_2_(c)harfesoft.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/schubert_sonatinas_for_violin_137_3_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata in B-flat major, D. 960",
+      "qid": "Q15975840",
+      "catalog_numbers": {
+        "D": "960"
+      },
+      "key": "B-flat major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_960_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_960_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_960_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_960_4_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_960_1_(c)bucknall.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_960_2_(c)bucknall.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_960_3_(c)bucknall.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_960_4_(c)bucknall.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Adrast",
+      "qid": "Q366677"
+    },
+    {
+      "title": "Der vierjährige Posten",
+      "qid": "Q660049"
+    },
+    {
+      "title": "Die Freunde von Salamanka",
+      "qid": "Q28041896"
+    },
+    {
+      "title": "Fantasie in C major",
+      "qid": "Q24899576",
+      "key": "C major"
+    },
+    {
+      "title": "The Little House on the Hill",
+      "qid": "Q59275291"
+    },
+    {
+      "title": "Group 16 Intermediate Division T. C. L. Exams",
+      "qid": "Q134350027"
+    },
+    {
+      "title": "Erlkönig",
+      "qid": "Q112325011",
+      "catalog_numbers": {
+        "D": "328"
+      },
+      "key": "B♭ major",
+      "instruments": [
+        "Voice",
+        "Piano"
+      ],
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert-liszt_erlkonig_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/schubert_the_erl_king_1260_r_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Schubertiana",
+      "qid": "Q21645753"
+    },
+    {
+      "title": "The House of Three Girls",
+      "qid": "Q20743903"
+    },
+    {
+      "title": "Fantasia",
+      "qid": "Q943192"
+    },
+    {
+      "title": "I slagbjörnens spår",
+      "qid": "Q18290889"
+    },
+    {
+      "title": "Flowers and Trees",
+      "qid": "Q1458430"
+    },
+    {
+      "title": "Night on Bald Mountain/Ave Maria",
+      "qid": "Q3549661"
+    },
+    {
+      "title": "Franz Schubert: Famous Tunes",
+      "qid": "Q137358633"
+    },
+    {
+      "title": "Ave Maria",
+      "qid": "Q4055597"
+    },
+    {
+      "title": "Habla, mudita",
+      "qid": "Q5636911"
+    },
+    {
+      "title": "El desencanto",
+      "qid": "Q5352406"
+    },
+    {
+      "title": "Wohin? = I ble?",
+      "qid": "Q78527351"
+    },
+    {
+      "title": "Der Schüler Gerber",
+      "qid": "Q1196821"
+    },
+    {
+      "title": "Fünf letzte Tage",
+      "qid": "Q1481810"
+    },
+    {
+      "title": "Amen",
+      "qid": "Q110315222"
+    },
+    {
+      "title": "Death in a French Garden",
+      "qid": "Q1405431"
+    },
+    {
+      "title": "Three Men and a Cradle",
+      "qid": "Q1257118"
+    },
+    {
+      "title": "Mit meinen heißen Tränen",
+      "qid": "Q1939389"
+    },
+    {
+      "title": "Au revoir les enfants",
+      "qid": "Q187276"
+    },
+    {
+      "title": "Crimes and Misdemeanors",
+      "qid": "Q181555"
+    },
+    {
+      "title": "Nocturne Indien",
+      "qid": "Q2058511"
+    },
+    {
+      "title": "Too Beautiful for You",
+      "qid": "Q227474"
+    },
+    {
+      "title": "Am Feierabend = Wedi gwaith y dydd",
+      "qid": "Q78526552"
+    },
+    {
+      "title": "An den Mond = Cân i'r lloer",
+      "qid": "Q78647647"
+    },
+    {
+      "title": "An die Leier = I'r delyn",
+      "qid": "Q78647649"
+    },
+    {
+      "title": "Du bist die Ruh = Ti ydyw hedd",
+      "qid": "Q78526806"
+    },
+    {
+      "title": "Eisteddfod Genedlaethol Bro Delyn 1990 [sic] : unawd i fechgyn dan 19 oed Ständchen = Nosgan serch",
+      "qid": "Q78647884"
+    },
+    {
+      "title": "Erlkönig = Brenin yr hud",
+      "qid": "Q78647900"
+    },
+    {
+      "title": "Frühingstraum [sic] = Breuddwyd am wanwyn (allan o'r cylch \"Die Winterresie [sic]\" - Y daith aeafol)",
+      "qid": "Q78647932"
+    },
+    {
+      "title": "Gretchen am Spinnrade = Gretchen wrth y droëll nyddu",
+      "qid": "Q78526864"
+    },
+    {
+      "title": "Alive",
+      "qid": "Q332798"
+    },
+    {
+      "title": "Colonel Chabert",
+      "qid": "Q1211134"
+    },
+    {
+      "title": "Cystadleuaeth unawd contralto : Ave Maria : cyfieithiad Cymraeg gan Syr Thomas Parry",
+      "qid": "Q78526749"
+    },
+    {
+      "title": "Der Gondelfahrer = Serenâd y Gondolêr",
+      "qid": "Q78393905"
+    },
+    {
+      "title": "Ungeduld = Y diamynedd",
+      "qid": "Q78648451"
+    },
+    {
+      "title": "Winterreise",
+      "qid": "Q12010746",
+      "key": "A major",
+      "instruments": [
+        "Ének",
+        "Zongora"
+      ]
+    },
+    {
+      "title": "In the Presence of a Clown",
+      "qid": "Q638848"
+    },
+    {
+      "title": "Human Resources",
+      "qid": "Q2254393"
+    },
+    {
+      "title": "Le Monsieur, le Vampire et Renée Marcelle",
+      "qid": "Q6507304"
+    },
+    {
+      "title": "Amour",
+      "qid": "Q637820"
+    },
+    {
+      "title": "Ein Geschenk der Götter",
+      "qid": "Q19644634"
+    },
+    {
+      "title": "Am Brunnen vor dem Tore",
+      "qid": "Q451214",
+      "key": "F major"
+    },
+    {
+      "title": "Amen",
+      "qid": "Q110293701"
+    },
+    {
+      "title": "Ave Maria",
+      "qid": "Q113551455",
+      "catalog_numbers": {
+        "D": "839"
+      },
+      "key": "B♭ major",
+      "instruments": [
+        "Piano"
+      ],
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/ave_maria_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ave Maria",
+      "qid": "Q28109084",
+      "key": "D major",
+      "instruments": [
+        "Tenor Saxophone",
+        "Alto Saxophone"
+      ]
+    },
+    {
+      "title": "Ballet from \"Rosamunde\"",
+      "qid": "Q137393123"
+    },
+    {
+      "title": "Blossom Time",
+      "qid": "Q130220966"
+    },
+    {
+      "title": "Das Dreimäderlhaus",
+      "qid": "Q832620"
+    },
+    {
+      "title": "Die Zauberharfe",
+      "qid": "Q1217690"
+    },
+    {
+      "title": "Drei Klavierstücke, D. 946",
+      "qid": "Q6455891",
+      "catalog_numbers": {
+        "D": "946"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/impromptu_946_1_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_pieces_946_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/impromptu_946_2_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_pieces_946_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/impromptu_946_3_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_pieces_946_3_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Erster Verlust, D 226",
+      "qid": "Q136086970",
+      "catalog_numbers": {
+        "D": "226"
+      }
+    },
+    {
+      "title": "Four Impromptus, D. 899 (Op. 90)",
+      "qid": "Q6455950",
+      "catalog_numbers": {
+        "Op": "90",
+        "D": "899"
+      },
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=op90-03.krn&l=users/craig/classical/schubert/piano/op90&format=midi"
+          ]
+        },
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/impromptu_90_1_(c)hisamori.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/impromptu_90_1_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/impromptu_90_2_(c)hisamori.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/impromptu_90_2_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/impromptu_90_3_(c)hisamori.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/impromptu_90_3_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/impromptu_90_4_(c)hisamori.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/impromptu_90_4_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/schubert_50015a_impromptu_op_90_no_3_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Four Impromptus, D. 935 (Op. posth. 142)",
+      "qid": "Q6455928",
+      "catalog_numbers": {
+        "D": "935"
+      }
+    },
+    {
+      "title": "Heidenröslein",
+      "qid": "Q700157",
+      "catalog_numbers": {
+        "D": "257"
+      }
+    },
+    {
+      "title": "Hymnus an den heiligen Geist",
+      "qid": "Q47527644"
+    },
+    {
+      "title": "Impromptu D 935 No. 2",
+      "qid": "Q137361008",
+      "catalog_numbers": {
+        "Op": "142",
+        "D": "935"
+      },
+      "key": "A♭ major",
+      "instruments": [
+        "Piano"
+      ],
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/impromptu_142_1_(c)hisamori.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/impromptu_142_1_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/impromptu_142_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/impromptu_142_2_(c)hisamori.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/impromptu_142_2_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/impromptu_142_3_(c)hisamori.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/impromptu_142_3_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/impromptu_142_4_(c)hisamori.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/impromptu_142_4_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/impromptu_142_4_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/schubert_impromptu_op_142_2_222_r_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Impromptus",
+      "qid": "Q4861173"
+    },
+    {
+      "title": "Lachen und Weinen",
+      "qid": "Q6468336",
+      "key": "A-flat major"
+    },
+    {
+      "title": "Lilac Time",
+      "qid": "Q130221901"
+    },
+    {
+      "title": "Mass No. 4 (Schubert)",
+      "qid": "Q1924051",
+      "key": "C major"
+    },
+    {
+      "title": "May B",
+      "qid": "Q24950519"
+    },
+    {
+      "title": "Memorial Acclamation",
+      "qid": "Q115796425"
+    },
+    {
+      "title": "Mignon",
+      "qid": "Q19894333"
+    },
+    {
+      "title": "Moment musical No. 3",
+      "qid": "Q137393510"
+    },
+    {
+      "title": "Neue Schubert-Ausgabe",
+      "qid": "Q1781370"
+    },
+    {
+      "title": "Nostalgie",
+      "qid": "Q57933992"
+    },
+    {
+      "title": "Overture from Rosamunde",
+      "qid": "Q138328579"
+    },
+    {
+      "title": "Piano Sonata in A minor, D. 845",
+      "qid": "Q2743631",
+      "catalog_numbers": {
+        "D": "845"
+      },
+      "key": "A minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_42_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_42_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_42_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_42_4_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_42_(c)hisamori.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Piano Sonata in B major, D. 575",
+      "qid": "Q7190168",
+      "catalog_numbers": {
+        "D": "575"
+      },
+      "key": "B major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_147_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_147_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_147_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_147_4_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Piano Sonata in C major, D. 840",
+      "qid": "Q3490127",
+      "catalog_numbers": {
+        "D": "840"
+      },
+      "key": "C major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/sonata_840_(c)hisamori.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Piano Trio No. 1",
+      "qid": "Q3108957",
+      "key": "B-flat major"
+    },
+    {
+      "title": "Piano Trio No. 2",
+      "qid": "Q1660217",
+      "key": "E♭ major",
+      "instruments": [
+        "Piano"
+      ]
+    },
+    {
+      "title": "Rastlose Liebe",
+      "qid": "Q7295275"
+    },
+    {
+      "title": "Sanctus",
+      "qid": "Q115796437"
+    },
+    {
+      "title": "Scherzo D 593 No. 1",
+      "qid": "Q134350015",
+      "catalog_numbers": {
+        "D": "593"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_scherzos_593_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_scherzos_593_2_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Schubert's compositions for violin and piano",
+      "qid": "Q45398725"
+    },
+    {
+      "title": "Schubert's last sonatas",
+      "qid": "Q1509328",
+      "key": "A major"
+    },
+    {
+      "title": "Schubert's sonatas and fantasies for piano",
+      "qid": "Q18163659"
+    },
+    {
+      "title": "Schubert's song cycles",
+      "qid": "Q19891975"
+    },
+    {
+      "title": "Schwanengesang",
+      "qid": "Q1635249",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/schubert_55915a_serenade_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Serenade",
+      "qid": "Q137393201"
+    },
+    {
+      "title": "String Quartet No. 15",
+      "qid": "Q3413774",
+      "key": "G major"
+    },
+    {
+      "title": "String Trios",
+      "qid": "Q17025627",
+      "key": "B-flat major"
+    },
+    {
+      "title": "String quartets by Franz Schubert",
+      "qid": "Q105395240"
+    },
+    {
+      "title": "Symphony No. 1",
+      "qid": "Q163587",
+      "key": "D major"
+    },
+    {
+      "title": "Symphony No. 10",
+      "qid": "Q3507632",
+      "key": "D major"
+    },
+    {
+      "title": "Symphony No. 2",
+      "qid": "Q210566",
+      "key": "B-flat major"
+    },
+    {
+      "title": "The Erl King",
+      "qid": "Q112325012"
+    },
+    {
+      "title": "Three Marches Militaires",
+      "qid": "Q6131406",
+      "key": "G major"
+    },
+    {
+      "title": "Three Marches Militaires, No. 1",
+      "qid": "Q105700805",
+      "catalog_numbers": {
+        "D": "733"
+      },
+      "key": "D major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/march_military_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/march_military_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/march_military_3_(c)yogore.mid"
+          ]
+        },
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SchubertF/D733/SchubertF-D733-1-TroisMarches/SchubertF-D733-1-TroisMarches.mid",
+            "https://www.mutopiaproject.org/ftp/SchubertF/D733/SchubertF-D733-2-TroisMarches/SchubertF-D733-2-TroisMarches.mid",
+            "https://www.mutopiaproject.org/ftp/SchubertF/D733/SchubertF-D733-3-TroisMarches/SchubertF-D733-3-TroisMarches.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Wanderer Fantasy",
+      "qid": "Q732784",
+      "key": "C major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_wanderer_760_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_wanderer_760_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_wanderer_760_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_wanderer_760_4_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Wanderer-Fantasie",
+      "qid": "Q112756683"
+    },
+    {
+      "title": "Écossaises, D 421 (Schubert)",
+      "qid": "Q55638289",
+      "catalog_numbers": {
+        "D": "421"
+      }
+    },
+    {
+      "title": "Önskelistan",
+      "qid": "Q131520711"
+    },
+    {
+      "title": "String Quartet D 804, mvmt. 2",
+      "catalog_numbers": {
+        "D": "804"
+      },
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=SchubertQd804ii.krn&l=users/craig/classical/schubert/quartet&format=midi"
+          ]
+        },
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/strings_13-1_(c)onclassical.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/strings_13-2_(c)onclassical.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/strings_13-3_(c)onclassical.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/strings_13-4_(c)onclassical.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Moment Musicaux in C major, Op. 94 No. 1 (1823)",
+      "catalog_numbers": {
+        "Op": "94/1"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/schubert_61063a_moment_musical_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ten Variations in F Major, D 156",
+      "catalog_numbers": {
+        "D": "156"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_10_variations_in_f-major_156_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Variations on a Waltz by Diabelli, D 718",
+      "catalog_numbers": {
+        "D": "718"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_variations_diabelli_718_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Andante in C major, D 29",
+      "catalog_numbers": {
+        "D": "29"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_andante_29_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "First Waltzes [36 Dances], Op. 9 [D 365]",
+      "catalog_numbers": {
+        "Op": "9",
+        "D": "365"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/waltzes_365_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Adagio and Rondo in E major, D 506 Op. 145",
+      "catalog_numbers": {
+        "Op": "145",
+        "D": "506"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_adagio_506_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Adagio in E major, D 612",
+      "catalog_numbers": {
+        "D": "612"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_adagio_612_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Piano Piece in A major, D 604",
+      "catalog_numbers": {
+        "D": "604"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_piece_604_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "March in E major, D 606",
+      "catalog_numbers": {
+        "D": "606"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/march_606_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_march_606_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "German Dances and Waltzes",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/schubert_63343a_german_dances_and_waltzes_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Soirees de Vienne, No. 6 (transcription by Liszt)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/schubert-liszt_65213a_soirees_de_vienne_no_6_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Divertissement a la hongroise, Op. 54",
+      "catalog_numbers": {
+        "Op": "54"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/hongroise_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/hongroise_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/hongroise_3_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Divertissement in e minor on French Themes, Op. 63 No. 1 [D 823]",
+      "catalog_numbers": {
+        "Op": "63/1",
+        "D": "823"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_divertissement_823_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fantasie in G major, D 1",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_fantasie_[d]1_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fantasie in g minor, D 9",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_fantasie_[d]9_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Military Marches Heroiques, Op. 27 [D 602]",
+      "catalog_numbers": {
+        "Op": "27",
+        "D": "602"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/schubert_marches_27_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/march_heroiques_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/march_heroiques_3_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Six grandes Marches, Op. 40 [D 819]",
+      "catalog_numbers": {
+        "Op": "40",
+        "D": "819"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/schubert_marches_40_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/grand_marches_40_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/grand_marches_40_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/grand_marches_40_4_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/grand_marches_40_5_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/grand_marches_40_6_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Military March Op. 51 No. 1 (transcr. by Tausig) *",
+      "catalog_numbers": {
+        "Op": "51/1"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/schubert-tausig_2471w_military_march_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/schubert-tausig_51325a_marche_militaire_(c)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/schubert-tausig_70963a_march_militaire_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/schubert_military_march_op_51_1_1471_r_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Grand funeral March on the death of Alexander I, Op. 55 [D 859]",
+      "catalog_numbers": {
+        "Op": "55",
+        "D": "859"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/grand_funeral_march_55_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Grand March Heroique for the coronation of Nicolas I of Russia, Op. 66 [D 885]",
+      "catalog_numbers": {
+        "Op": "66",
+        "D": "885"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/grand_march_66_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Childrens March [D 928]",
+      "catalog_numbers": {
+        "D": "928"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/childrens_march_928_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Two Marches, Op. 121 [D 968b]",
+      "catalog_numbers": {
+        "Op": "121",
+        "D": "968"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/marches_121_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/marches_121_2_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Overture in D major, D 592",
+      "catalog_numbers": {
+        "D": "592"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_overture_592_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Overture in C major, D 597",
+      "catalog_numbers": {
+        "D": "597"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_overture_597_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Overture in g minor, D 668",
+      "catalog_numbers": {
+        "D": "668"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_overture_668_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Overture in f minor, D 675",
+      "catalog_numbers": {
+        "D": "675"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/schubert_overture_675_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Polonaises Op. 75 [D 599]",
+      "catalog_numbers": {
+        "Op": "75",
+        "D": "599"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_polonaises_599_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_polonaises_599_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_polonaises_599_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_polonaises_599_4_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Polonaises, Op. 61 [D 824]",
+      "catalog_numbers": {
+        "Op": "61",
+        "D": "824"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_polonaises_824_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_polonaises_824_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_polonaises_824_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_polonaises_824_4_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_polonaises_824_5_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_polonaises_824_6_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Rondo in D major Notre amitie est invariable, Op. 138 [D 608]",
+      "catalog_numbers": {
+        "Op": "138",
+        "D": "608"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/rondo_138_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Rondo in A major, Op. 107 [D 951]",
+      "catalog_numbers": {
+        "Op": "107",
+        "D": "951"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/rondo_107_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fantasy in c minor (Grand Sonata), D 48",
+      "catalog_numbers": {
+        "D": "48"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/schubert_fantasy_grand_sonata_48_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/schubert_fantasy_grand_sonata_48_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/schubert_fantasy_grand_sonata_48_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/schubert_fantasy_grand_sonata_48_4_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Variations on a French Song, Op. 10 [D 624]",
+      "catalog_numbers": {
+        "Op": "10",
+        "D": "624"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=19/schubert_variations_624_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Variations on an Original Theme, Op. 35 [D 813]",
+      "catalog_numbers": {
+        "Op": "35",
+        "D": "813"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=19/schubert_variations_813_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Variations on a Theme from Herold's Marie, Op. 82 No. 1 [D 908]",
+      "catalog_numbers": {
+        "Op": "82/1",
+        "D": "908"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=19/schubert_variations_908_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "4 Landler, D 814",
+      "catalog_numbers": {
+        "D": "814"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/schubert_landler_814_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lebenssturme, Op. 144 [D 947]",
+      "catalog_numbers": {
+        "Op": "144",
+        "D": "947"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/lebenssturme_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata for viola and piano in a minor, D 821 (posth.) (Arpeggione)",
+      "catalog_numbers": {
+        "D": "821"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/schubert_sonata_for_viola_arpeggione_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Trio for violin, cello and piano in B flat major, Op. 99",
+      "catalog_numbers": {
+        "Op": "99"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/schubert_trio_for_violin_cello_piano_99_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "1-2. I part (1-2� tempo)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/schubert_trio_for_violin_cello_piano_100_1-2_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3-4. II part (3-4� tempo)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/schubert_trio_for_violin_cello_piano_100_3-4_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Rondeau brillant for violin and piano in b minor, Op. 70",
+      "catalog_numbers": {
+        "Op": "70"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/schubert_rondo_brillante_70_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Der Hirt auf dem Felsen for voice, clarinet and piano accompaniment, Op. 129 [D 965] (posth.)",
+      "catalog_numbers": {
+        "Op": "129",
+        "D": "965"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/hirt_auf_dem_felsen_129_1_(c)bakels.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/hirt_auf_dem_felsen_129_2_(c)bakels.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Adagio D 897 (1827)",
+      "catalog_numbers": {
+        "D": "897"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/adagio_897_(c)ko-edwards.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Die Gestirne [D 444]",
+      "catalog_numbers": {
+        "D": "444"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/gestirne_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Der Wanderer, Op. 4 No. 1 [D 493]",
+      "catalog_numbers": {
+        "Op": "4/1",
+        "D": "493"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/wanderer_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Himmelsfunken [D 651]",
+      "catalog_numbers": {
+        "D": "651"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/himmelsfunken_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fruhlingsglaube [D 686]",
+      "catalog_numbers": {
+        "D": "686"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/fruhlingsglaube_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lob der Thranen, Op. 13 No. 2 [D 711]",
+      "catalog_numbers": {
+        "Op": "13/2",
+        "D": "711"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/lob_thranen_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Die Rose, Op. 73 [D 745]",
+      "catalog_numbers": {
+        "Op": "73",
+        "D": "745"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/rose_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Die junge Nonne, Op. 43 no.1 [D 828]",
+      "catalog_numbers": {
+        "Op": "43",
+        "D": "828"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/nonne_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "St�ndchen von Shakespeare [D 889]",
+      "catalog_numbers": {
+        "D": "889"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/standchen_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Hymne [D ?]",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert/hymne_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sey Mir Gegrusst Op. 20 No. 1 [D 741] by Franz Schubert",
+      "catalog_numbers": {
+        "Op": "20/1",
+        "D": "741"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=schubert-liszt_gegrusst_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Schumann: Romance (?) + Schubert: Moment Musicaux in f minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/schumann_and_schubert_70313a_romance_moment_musical_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ungarische Melodie",
+      "catalog_numbers": {
+        "D": "817"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SchubertF/D817/Ungarische/Ungarische.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "An Sylvia (Who is Sylvia)",
+      "catalog_numbers": {
+        "D": "891"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SchubertF/D891/AnSylvia/AnSylvia.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

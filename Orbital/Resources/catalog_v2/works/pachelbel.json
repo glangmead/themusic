@@ -1,0 +1,1076 @@
+{
+  "works": [
+    {
+      "title": "Begin the Beguine",
+      "qid": "Q1352930"
+    },
+    {
+      "title": "C'è bisogno di un piccolo aiuto",
+      "qid": "Q123293276"
+    },
+    {
+      "title": "Canon and Gigue in D",
+      "qid": "Q689519",
+      "key": "D major",
+      "instruments": [
+        "Violin"
+      ],
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=4/pachelbel_canon_and_gigue_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=pachelbel/canon_(faucher).mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=pachelbel/canon_(arranged)[unknown].mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=4/pachelbel_canon_in_d_(4-hands-piano)_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chaconne in D minor",
+      "qid": "Q5066120"
+    },
+    {
+      "title": "Chaconne in F minor",
+      "qid": "Q5066124"
+    },
+    {
+      "title": "Erster Theil etlicher Choräle",
+      "qid": "Q5395870"
+    },
+    {
+      "title": "Hexachordum Apollinis",
+      "qid": "Q5748692",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=4/pachelbel_hexachordum_apollinis_1_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=4/pachelbel_hexachordum_apollinis_2_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=4/pachelbel_hexachordum_apollinis_3_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=4/pachelbel_hexachordum_apollinis_4_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=4/pachelbel_hexachordum_apollinis_5_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=4/pachelbel_hexachordum_apollinis_6_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Musicalische Ergötzung",
+      "qid": "Q17060032"
+    },
+    {
+      "title": "Musicalische Sterbens-Gedancken",
+      "qid": "Q6942575"
+    },
+    {
+      "title": "Nun danket alle Gott",
+      "qid": "Q133808978"
+    },
+    {
+      "title": "Quelques larmes de pluie",
+      "qid": "Q88316257"
+    },
+    {
+      "title": "Rain and Tears",
+      "qid": "Q1867079"
+    },
+    {
+      "title": "Singet dem Herrn ein neues Lied",
+      "qid": "Q133564206",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=4/pachelbel_singet_dm_herrn_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tröste, tröste uns, Gott",
+      "qid": "Q133825865",
+      "key": "B♭ major",
+      "instruments": [
+        "Klavier"
+      ]
+    },
+    {
+      "title": "Was Gott tut, das ist wohlgetan",
+      "qid": "Q2250001"
+    },
+    {
+      "title": "Was Gott tut, das ist wohlgetan",
+      "qid": "Q106809422"
+    },
+    {
+      "title": "1a. Magnificat primi toni [d] - Part I (Fugues 1-12)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/pachelbel_magnificat_1a_all_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "1b. Magnificat primi toni [d] - Part II (Fugues 13-23)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/pachelbel_magnificat_1b_all_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "2. Magnificat secundi toni [g]",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/pachelbel_magnificat_2_all_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3. Magnificat tertii toni [G]",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/pachelbel_magnificat_3_all_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "4. Magnificat quarti toni [e]",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/pachelbel_magnificat_4_all_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "5. Magnificat quinti toni [F]",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/pachelbel_magnificat_5_all_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "6. Magnificat sexti toni [F]",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/pachelbel_magnificat_6_all_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "7. Magnificat septimi toni [c]",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/pachelbel_magnificat_7_all_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "8. Magnificat octavi toni [G]",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/pachelbel_magnificat_8_all_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "1. Toccata in C major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/pachelbel_toccata_1_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "2. Toccata in d minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/pachelbel_toccata_2_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3. Toccata in D major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/pachelbel_toccata_3_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "4. Toccata in C major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/pachelbel_toccata_4_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "5. Toccata in C major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/pachelbel_toccata_5_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Prelude and Fugue in e minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=pachelbel/prelude_fugue_e_minor_(luquet).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Toccata and Fugue in B flat major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=pachelbel/toccata_fugue_B_flat_major_(luquet).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "1. Prelude in d minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/pachelbel_prelude_1_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "2. Prelude in E flat major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/pachelbel_prelude_2_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3. Prelude in G major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/pachelbel_prelude_3_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "4. Prelude in g minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/pachelbel_prelude_4_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "5. Prelude in A major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/pachelbel_prelude_5_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "6. Prelude in a minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/pachelbel_prelude_6_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "7. Prelude in d minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/pachelbel_prelude_7_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "1. Fugue in C major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=pachelbel/fugue_01_(luquet).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "2. Fugue in C major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=pachelbel/fugue_02_(luquet).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3. Fugue in C major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=pachelbel/fugue_03_(luquet).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3. Fugue in C major *",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=pachelbel/fugue_03_(c)gray.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "4. Fugue in C major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=pachelbel/fugue_04_(luquet).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "5. Fugue in C major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=pachelbel/fugue_05_(luquet).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "6. Fugue in C major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=pachelbel/fugue_06_(luquet).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "7. Fugue in C major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=pachelbel/fugue_07_(luquet).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "8. Fugue in C major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=pachelbel/fugue_08_(luquet).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "9. Fugue in C major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=pachelbel/fugue_09_(luquet).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "10. Fugue in c minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=pachelbel/fugue_10_(luquet).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "11. Fugue in D major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=pachelbel/fugue_11_(luquet).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "12. Fugue in F major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=pachelbel/fugue_12_(luquet).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "13. Fugue in G major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=pachelbel/fugue_13_(luquet).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "14. Fugue in C major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=pachelbel/fugue_14_(luquet).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "15. Fugue in g minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=pachelbel/fugue_15_(luquet).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "16. Fugue in a minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=pachelbel/fugue_16_(luquet).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "17. Fugue in a minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=pachelbel/fugue_17_(luquet).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "18. Fugue in d minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=pachelbel/fugue_18_(luquet).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "19. Fugue in G major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=pachelbel/fugue_19_(luquet).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "1. Ricercare in f sharp minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=pachelbel/ricercare_f_sharp_minor_(luquet).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "2. Ricercare in C major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=pachelbel/ricercare_C_major_(luquet).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3. Ricercare in c minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=pachelbel/ricercare_c_minor_(luquet).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ach Gott vom Himmel, sieh darein",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/pachelbel_choral_1_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ach Herr, mich armen S�nder",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/pachelbel_choral_3_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gelobet seist du, Jesu Christ",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=4/pachelbel_organ-recorders_chorales_1_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Wenn wir in h�chsten N�ten sein",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=4/pachelbel_organ-recorders_chorales_2_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "In dich Ich hab gehoffet",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=4/pachelbel_organ-recorders_chorales_4_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Vom Himmel hoch da komm ich her",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=4/pachelbel_organ-recorders_chorales_5_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Vater unser im Himmelreich",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=4/pachelbel_organ-recorders_chorales_6_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Allein Gott in der Hoh sei Ehr'",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=4/pachelbel_organ-recorders_chorales_7_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Durch Adams Fall ist ganz verderbt",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=4/pachelbel_organ-recorders_chorales_8_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nun komm' der Heiden Heiland",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=pachelbel/nun_komm_der_heiden_heiland_(fenske).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chorale Variations, Alle Menschen m�ssen sterben",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=pachelbel/chorale_variations_(c)mccoy.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "An Wasserfl�ssen Babylon",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=pachelbel/an_wasserflussen_babylon_(c)mccoy.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Von Himmel hoch",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=pachelbel/von_himmel_hoch_(c)mccoy.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Allein Gott",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=pachelbel/allein_gott_(c)mccoy.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Komm Gott Sch�pfer",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=pachelbel/komm_gott_schoepfer_(c)mccoy.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nun lob mein Seel",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=pachelbel/nun_lob_mein_seel_(c)mccoy.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "O Lamm Gottes",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=pachelbel/o_lamm_gottes_(c)mccoy.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ciacona F major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=pachelbel/ciacona_(c)mccoy.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ciacona in f minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=pachelbel/ciacona_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Aria Sebaldina",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=pachelbel/aria_sebaldina_(c)mccoy.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "1/4-comma Meantone scale [Pietro Aaron's temperament] (1523)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/pachelbel_magnificat_fugues_2_8_[m4-t]_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "1/3-comma Meantone scale [Salinas]",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/pachelbel_magnificat_fugues_2_8_[m3-t]_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Andreas Werckmeister's temperament III [the most famous one] (1681)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/pachelbel_magnificat_fugues_2_8_[w-t]_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kirnberger's well temperament [also called Kirnberger III]",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/pachelbel_magnificat_fugues_2_8_[k-t]_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Canon in D",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/PachelbelJ/CanonInD/CanonInD.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ein feste Burg ist unser Gott",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/PachelbelJ/EinFesteBurg/EinFesteBurg.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gigue",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution 4.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/PachelbelJ/PachelbelGigue/PachelbelGigue-lys/score.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fugues on the Magnificat III. 7.",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 4.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/PachelbelJ/fugue-3-7/fugue-3-7.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

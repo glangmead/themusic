@@ -1,0 +1,63 @@
+{
+  "works": [
+    {
+      "title": "Ancidetemi pur grevi martiri",
+      "qid": "Q116266676"
+    },
+    {
+      "title": "Ave Maria",
+      "qid": "Q124315826"
+    },
+    {
+      "title": "Deh dimm'Amor se l'alma di costei",
+      "qid": "Q116266675"
+    },
+    {
+      "title": "Il bianco e dolce cigno",
+      "qid": "Q116266674",
+      "key": "G major",
+      "instruments": [
+        "Soprano",
+        "Alto",
+        "Tenor",
+        "Bass"
+      ]
+    },
+    {
+      "title": "Il ciel che rado virtù tanta mostra",
+      "qid": "Q116266671"
+    },
+    {
+      "title": "Io son talvolta, donna, per morire",
+      "qid": "Q116266660"
+    },
+    {
+      "title": "Io vorrei pur fuggir crudel amore",
+      "qid": "Q116266669"
+    },
+    {
+      "title": "Non ch’io non voglio mai altro pensiero",
+      "qid": "Q116266667"
+    },
+    {
+      "title": "O felic'occhi miei",
+      "qid": "Q116266673"
+    },
+    {
+      "title": "Occhi miei lassi, mentre ch'io vi giro",
+      "qid": "Q116266672"
+    },
+    {
+      "title": "Quand'io pens'al martire",
+      "qid": "Q116266677"
+    },
+    {
+      "title": "Ver’inferno è ’l mio petto",
+      "qid": "Q116266668"
+    },
+    {
+      "title": "Voi ve n'andate al cielo",
+      "qid": "Q116266670"
+    }
+  ]
+}

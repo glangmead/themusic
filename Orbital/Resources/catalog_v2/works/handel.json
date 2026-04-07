@@ -1,0 +1,4999 @@
+{
+  "works": [
+    {
+      "title": "Hero and Leander",
+      "qid": "Q5395241"
+    },
+    {
+      "title": "Oboe Concerto No. 3",
+      "qid": "Q7075241"
+    },
+    {
+      "title": "Dixit Dominus",
+      "qid": "Q1231760"
+    },
+    {
+      "title": "Agrippina",
+      "qid": "Q397041"
+    },
+    {
+      "title": "Berenice",
+      "qid": "Q381427"
+    },
+    {
+      "title": "Oboe Concerto No. 1",
+      "qid": "Q2991791"
+    },
+    {
+      "title": "Oboe Sonata in C minor",
+      "qid": "Q7075244"
+    },
+    {
+      "title": "Oboe Sonata in F major",
+      "qid": "Q7075245"
+    },
+    {
+      "title": "Ode for the Birthday of Queen Anne",
+      "qid": "Q1503335"
+    },
+    {
+      "title": "Silla",
+      "qid": "Q1630580"
+    },
+    {
+      "title": "Acis and Galatea",
+      "qid": "Q341482"
+    },
+    {
+      "title": "Violin sonata in G minor",
+      "qid": "Q7933392"
+    },
+    {
+      "title": "Orlando",
+      "qid": "Q946701"
+    },
+    {
+      "title": "Ariodante",
+      "qid": "Q662514"
+    },
+    {
+      "title": "Alcina",
+      "qid": "Q275627"
+    },
+    {
+      "title": "Sing Unto God/Anthem for the Wedding of Frederick, Prince of Wales",
+      "qid": "Q16931606",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_judas_maccabaeus_58_(c)withcomb.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Saul",
+      "qid": "Q1754238"
+    },
+    {
+      "title": "Ode for St. Cecilia's Day",
+      "qid": "Q1502546"
+    },
+    {
+      "title": "Dettingen Te Deum",
+      "qid": "Q832119"
+    },
+    {
+      "title": "Joshua",
+      "qid": "Q380646"
+    },
+    {
+      "title": "Alceste",
+      "qid": "Q581678"
+    },
+    {
+      "title": "Theodora",
+      "qid": "Q1419033"
+    },
+    {
+      "title": "Violin sonata in D major",
+      "qid": "Q7933388"
+    },
+    {
+      "title": "Agrippina condotta a morire or Dunque sarà pur vero",
+      "qid": "Q17020274"
+    },
+    {
+      "title": "Germanico",
+      "qid": "Q1514155"
+    },
+    {
+      "title": "UEFA Champions League Anthem",
+      "qid": "Q1453101"
+    },
+    {
+      "title": "A moment of contentment",
+      "qid": "Q54976378"
+    },
+    {
+      "title": "Aci, Galatea e Polifemo",
+      "qid": "Q1626977",
+      "key": "B♭ major",
+      "instruments": [
+        "Violin 1",
+        "Violin 2",
+        "Viola",
+        "Polifemo",
+        "Violoncello"
+      ],
+      "year_composed": 1708
+    },
+    {
+      "title": "Acis and Galatea",
+      "qid": "Q134387837"
+    },
+    {
+      "title": "Acis and Galatea",
+      "qid": "Q136379369"
+    },
+    {
+      "title": "Admeto",
+      "qid": "Q358693"
+    },
+    {
+      "title": "Agrippina",
+      "qid": "Q57507098"
+    },
+    {
+      "title": "Agrippina (2002-2003)",
+      "qid": "Q57510712"
+    },
+    {
+      "title": "Agrippina (2012 Vladikavkaz production)",
+      "qid": "Q113548033"
+    },
+    {
+      "title": "Agrippina (2016-2017)",
+      "qid": "Q57503963"
+    },
+    {
+      "title": "Ah! mio cor",
+      "qid": "Q54976316"
+    },
+    {
+      "title": "Alessandro",
+      "qid": "Q2143584"
+    },
+    {
+      "title": "Alessandro Severo",
+      "qid": "Q1799481"
+    },
+    {
+      "title": "Alexander Balus",
+      "qid": "Q2641788"
+    },
+    {
+      "title": "Alexander's Feast",
+      "qid": "Q1167136"
+    },
+    {
+      "title": "Allor ch'io forte avrò orno di palme il trono",
+      "qid": "Q54979514"
+    },
+    {
+      "title": "Almira",
+      "qid": "Q1547158"
+    },
+    {
+      "title": "Amadigi di Gaula",
+      "qid": "Q452022"
+    },
+    {
+      "title": "Angeli",
+      "qid": "Q20728124"
+    },
+    {
+      "title": "Antioch",
+      "qid": "Q60463566"
+    },
+    {
+      "title": "Arbace",
+      "qid": "Q15783830"
+    },
+    {
+      "title": "Arianna in Creta",
+      "qid": "Q381849"
+    },
+    {
+      "title": "Ariodante : [programme] : opera in three acts",
+      "qid": "Q82712560"
+    },
+    {
+      "title": "Arminio",
+      "qid": "Q688562"
+    },
+    {
+      "title": "As Pants the Hart",
+      "qid": "Q4802943"
+    },
+    {
+      "title": "As When the Dove",
+      "qid": "Q54975951"
+    },
+    {
+      "title": "As the little butterfly turns to the light",
+      "qid": "Q54981293"
+    },
+    {
+      "title": "Atalanta",
+      "qid": "Q381411"
+    },
+    {
+      "title": "Athalia",
+      "qid": "Q754682"
+    },
+    {
+      "title": "Aure soavi e lieti",
+      "qid": "Q4822163"
+    },
+    {
+      "title": "Awake, Saturnia",
+      "qid": "Q54982605"
+    },
+    {
+      "title": "Awake, Saturnia",
+      "qid": "Q78526591"
+    },
+    {
+      "title": "Beecham-Handel suites",
+      "qid": "Q55605127"
+    },
+    {
+      "title": "Bel piacere e godere fido amor",
+      "qid": "Q54976180"
+    },
+    {
+      "title": "Bella pur nel mio diletto",
+      "qid": "Q54976186"
+    },
+    {
+      "title": "Beloved forests, joyous shadows",
+      "qid": "Q54977961"
+    },
+    {
+      "title": "Belshazzar",
+      "qid": "Q816183"
+    },
+    {
+      "title": "Bring serenity to your mien",
+      "qid": "Q54982890"
+    },
+    {
+      "title": "Brockes Passion",
+      "qid": "Q4972784"
+    },
+    {
+      "title": "But when you’ll come back",
+      "qid": "Q54976328"
+    },
+    {
+      "title": "Buď tobě sláva, jenž jsi z mrtvých vstal",
+      "qid": "Q62619930"
+    },
+    {
+      "title": "Caio Fabbricio",
+      "qid": "Q15793302"
+    },
+    {
+      "title": "Cannons",
+      "qid": "Q113644750"
+    },
+    {
+      "title": "Catone",
+      "qid": "Q5758859"
+    },
+    {
+      "title": "Cease to Beauty to be Suing",
+      "qid": "Q54975933"
+    },
+    {
+      "title": "Chandos Anthem No. 1",
+      "qid": "Q16826264"
+    },
+    {
+      "title": "Chandos Anthem No. 2",
+      "qid": "Q51920813"
+    },
+    {
+      "title": "Chandos Anthems",
+      "qid": "Q2956000"
+    },
+    {
+      "title": "Christmas",
+      "qid": "Q116059576"
+    },
+    {
+      "title": "Clori, Tirsi e Fileno",
+      "qid": "Q3656015"
+    },
+    {
+      "title": "Col peso del tuo amor",
+      "qid": "Q54976191"
+    },
+    {
+      "title": "Col raggio placido della speranza",
+      "qid": "Q54976088"
+    },
+    {
+      "title": "Coll'ardor del tuo bel cor",
+      "qid": "Q54976156"
+    },
+    {
+      "title": "Collection of piano pieces, unidentified",
+      "qid": "Q130351783"
+    },
+    {
+      "title": "Comfort Ye My People",
+      "qid": "Q133262504"
+    },
+    {
+      "title": "Comus",
+      "qid": "Q5157864"
+    },
+    {
+      "title": "Con l'ali di costanza = Ehedeg yn ei afiaith : Arodiante",
+      "qid": "Q78647788"
+    },
+    {
+      "title": "Con rauco mormorio piangono",
+      "qid": "Q54982124"
+    },
+    {
+      "title": "Con saggio tuo consiglio",
+      "qid": "Q54976165"
+    },
+    {
+      "title": "Concerti Grossi, Op. 3",
+      "qid": "Q16827668"
+    },
+    {
+      "title": "Concerti grossi, Op. 6",
+      "qid": "Q5158540"
+    },
+    {
+      "title": "Concerto Grosso in B flat major, Op. 3, No. 1",
+      "qid": "Q2991744",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_7_1_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_7_2_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_7_3_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_7_4_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_7_5_(c)withcomb.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concerto Grosso in B flat major, Op. 3, No. 2",
+      "qid": "Q2991748"
+    },
+    {
+      "title": "Concerto Grosso in F major, Op. 3, No. 4",
+      "qid": "Q2991751",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_2_1_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_2_2_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_2_3_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_2_4_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_9_1_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_9_2_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_9_3_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_9_4_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_9_5_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_9_6_(c)withcomb.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concerto Grosso in G major, Op. 3, No. 3",
+      "qid": "Q2991749",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_1_1_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_1_2_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_1_3_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_1_4_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_1_5_(c)withcomb.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Consider, Fond Shepherd",
+      "qid": "Q54975961"
+    },
+    {
+      "title": "Coronato il crin d'alloro",
+      "qid": "Q54976105"
+    },
+    {
+      "title": "Dalla guerra amorosa",
+      "qid": "Q5211136"
+    },
+    {
+      "title": "De' miei scherni per far le vendette",
+      "qid": "Q54982156"
+    },
+    {
+      "title": "Deborah",
+      "qid": "Q3020847"
+    },
+    {
+      "title": "Deeper and deeper still",
+      "qid": "Q78526775"
+    },
+    {
+      "title": "Deidamia",
+      "qid": "Q1183179"
+    },
+    {
+      "title": "Del bell'idolo mio",
+      "qid": "Q5253030"
+    },
+    {
+      "title": "Der beglückte Florindo",
+      "qid": "Q3074343"
+    },
+    {
+      "title": "Di Cupido impiego i vanni",
+      "qid": "Q54982114"
+    },
+    {
+      "title": "Didone abbandonata",
+      "qid": "Q18620415"
+    },
+    {
+      "title": "Die Architekten",
+      "qid": "Q1211089"
+    },
+    {
+      "title": "Die verwandelte Daphne",
+      "qid": "Q1165483"
+    },
+    {
+      "title": "Dove sei? amato bene! vieni",
+      "qid": "Q54982138",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_rodelinda_dove_sei_amato_(c)whitcomb.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Droop not, young lover",
+      "qid": "Q78526801"
+    },
+    {
+      "title": "Droop not, young lover",
+      "qid": "Q78526803"
+    },
+    {
+      "title": "Empio, \"You are a wicked monster,\" I shall say",
+      "qid": "Q54979268"
+    },
+    {
+      "title": "Esther",
+      "qid": "Q174707"
+    },
+    {
+      "title": "Ezio",
+      "qid": "Q531564"
+    },
+    {
+      "title": "Faramondo",
+      "qid": "Q381419"
+    },
+    {
+      "title": "Fatemi, oh cieli, almen (Zenobia)",
+      "qid": "Q54981516"
+    },
+    {
+      "title": "Flavio",
+      "qid": "Q1143982"
+    },
+    {
+      "title": "Floridante",
+      "qid": "Q1430104"
+    },
+    {
+      "title": "Flute sonata in A minor HWV 374",
+      "qid": "Q5462956"
+    },
+    {
+      "title": "Flute sonata in B minor HWV 367b",
+      "qid": "Q5462959"
+    },
+    {
+      "title": "Flute sonata in B minor HWV 376",
+      "qid": "Q5462957"
+    },
+    {
+      "title": "Flute sonata in D major HWV 378",
+      "qid": "Q5462958"
+    },
+    {
+      "title": "Flute sonata in E minor HWV 359b",
+      "qid": "Q5462960"
+    },
+    {
+      "title": "Flute sonata in E minor HWV 375",
+      "qid": "Q5462962"
+    },
+    {
+      "title": "Flute sonata in E minor HWV 379",
+      "qid": "Q5462961"
+    },
+    {
+      "title": "Flute sonata in G major HWV 363b",
+      "qid": "Q5462963"
+    },
+    {
+      "title": "Foundling Hospital Anthem",
+      "qid": "Q36649452"
+    },
+    {
+      "title": "From Scourging Rebellion",
+      "qid": "Q132181306"
+    },
+    {
+      "title": "Frà tempeste funeste a quest'alma",
+      "qid": "Q54982176"
+    },
+    {
+      "title": "Funny Games",
+      "qid": "Q696928"
+    },
+    {
+      "title": "Furiously blows the wind",
+      "qid": "Q54981210"
+    },
+    {
+      "title": "Fà quanto vuoi, li scherni tuoi",
+      "qid": "Q54976205"
+    },
+    {
+      "title": "German arias",
+      "qid": "Q107494010"
+    },
+    {
+      "title": "Gideon",
+      "qid": "Q5559547"
+    },
+    {
+      "title": "Gigue from the Suite in G minor HWV 452",
+      "qid": "Q130465143",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-432_1_ouverture_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-432_2_andante_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-432_3_allegro_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-432_4_sarabande_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-432_5_gigue_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-432_6_passacallie_(c)yamada.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Giove in Argo",
+      "qid": "Q1411441"
+    },
+    {
+      "title": "Giuda Maccabeo",
+      "qid": "Q109244107"
+    },
+    {
+      "title": "Giulio Cesare in Egitto",
+      "qid": "Q875563",
+      "key": "D major",
+      "instruments": [
+        "Cornelia",
+        "Sesto",
+        "Harp",
+        "Harpsichord",
+        "Violoncello"
+      ],
+      "year_composed": 1724
+    },
+    {
+      "title": "Giustino",
+      "qid": "Q953502"
+    },
+    {
+      "title": "Già l’ebro mio ciglio",
+      "qid": "Q54980268"
+    },
+    {
+      "title": "Gloria",
+      "qid": "Q5571300"
+    },
+    {
+      "title": "Gloria in excelsis Deo",
+      "qid": "Q1883948"
+    },
+    {
+      "title": "Green meadows",
+      "qid": "Q54976309"
+    },
+    {
+      "title": "Hallelujah Chorus",
+      "qid": "Q31837673"
+    },
+    {
+      "title": "Hallelujah!",
+      "qid": "Q5642852"
+    },
+    {
+      "title": "Hallische Händel-Ausgabe",
+      "qid": "Q1571754"
+    },
+    {
+      "title": "Handel flute sonatas",
+      "qid": "Q5647376"
+    },
+    {
+      "title": "Handel's lost Hamburg operas",
+      "qid": "Q21998525"
+    },
+    {
+      "title": "Harpsichord Suite No. 1",
+      "qid": "Q50868714"
+    },
+    {
+      "title": "Heart, Thou Seat of Soft Delight",
+      "qid": "Q54975941"
+    },
+    {
+      "title": "Heavenly Handel – Arias and Duets",
+      "qid": "Q5694875"
+    },
+    {
+      "title": "Hercules",
+      "qid": "Q380642"
+    },
+    {
+      "title": "His hideous love provokes my rage",
+      "qid": "Q78648007"
+    },
+    {
+      "title": "Ho un non sò che nel cor",
+      "qid": "Q54976133"
+    },
+    {
+      "title": "Hush Ye Pretty Warbling Choir",
+      "qid": "Q54975944"
+    },
+    {
+      "title": "I adore you, eyes",
+      "qid": "Q54979374"
+    },
+    {
+      "title": "Il pastor fido",
+      "qid": "Q1658249",
+      "key": "A major",
+      "instruments": [
+        "Oboe",
+        "Bassoon",
+        "Violin",
+        "Viola",
+        "Harpsichord",
+        "Contrabass"
+      ]
+    },
+    {
+      "title": "Il trionfo del Tempo e del Disinganno",
+      "qid": "Q105123899"
+    },
+    {
+      "title": "Il trionfo del Tempo e della Verità",
+      "qid": "Q105151872"
+    },
+    {
+      "title": "Imeneo",
+      "qid": "Q1659804"
+    },
+    {
+      "title": "Impertinence",
+      "qid": "Q3149424"
+    },
+    {
+      "title": "Io di Roma il Giove sono",
+      "qid": "Q54976079"
+    },
+    {
+      "title": "Israel in Egypt",
+      "qid": "Q1674646"
+    },
+    {
+      "title": "Jephtha",
+      "qid": "Q1002304"
+    },
+    {
+      "title": "Johannes-Passion",
+      "qid": "Q15635083"
+    },
+    {
+      "title": "Joseph and his Brethren",
+      "qid": "Q6288174"
+    },
+    {
+      "title": "Joy to the World! the Lord Is Come",
+      "qid": "Q58200190",
+      "key": "D major",
+      "instruments": [
+        "Soprano",
+        "Alto",
+        "Tenor",
+        "Bass"
+      ]
+    },
+    {
+      "title": "Joy to the World! the Lord Is Come",
+      "qid": "Q58200216"
+    },
+    {
+      "title": "Joy to the World! the Lord Is Come",
+      "qid": "Q58200269",
+      "key": "D major",
+      "instruments": [
+        "B♭ Trumpet",
+        "Horn in F",
+        "Tenor Trombone",
+        "Tuba",
+        "Alto Saxophone 1",
+        "Alto Saxophone 2",
+        "Tenor Saxophone"
+      ]
+    },
+    {
+      "title": "Judas Maccabaeus",
+      "qid": "Q993971",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_judas_maccabaeus_0_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_judas_maccabaeus_1_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_judas_maccabaeus_3_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_judas_maccabaeus_4_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_judas_maccabaeus_6_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_judas_maccabaeus_7_(c)withcomb.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Judas Maccabeus",
+      "qid": "Q113681355"
+    },
+    {
+      "title": "Keyboard suite in B-flat major (HWV 434)",
+      "qid": "Q56025115"
+    },
+    {
+      "title": "Keyboard suite in D minor (HWV 437)",
+      "qid": "Q42587523",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-428_1_prelude_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-428_2_allegro_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-428_3_allemande_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-428_4_courante_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-428_5_air_and_variations_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-428_6_presto_(c)yamada.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Keyboard suite in E major (HWV 430)",
+      "qid": "Q99395706",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-430_1_prelude_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-430_2_allemande_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-430_3_courante_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-430_4_air_and_variations_(c)yamada.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Keyboard suite in G major (HWV 435)",
+      "qid": "Q56025154"
+    },
+    {
+      "title": "L'Allegro, il Penseroso ed il Moderato",
+      "qid": "Q1419454"
+    },
+    {
+      "title": "La Resurrezione",
+      "qid": "Q121432687"
+    },
+    {
+      "title": "La mia sorte fortunata = Da yw ffawd a thra ryfeddol : Agrippina",
+      "qid": "Q78648063"
+    },
+    {
+      "title": "La resurrezione",
+      "qid": "Q1696593"
+    },
+    {
+      "title": "Lady J",
+      "qid": "Q56276944"
+    },
+    {
+      "title": "Lascia ch'io pianga",
+      "qid": "Q3359421",
+      "key": "G major",
+      "instruments": [
+        "Flute",
+        "Piano"
+      ],
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_rinaldo_lascia_ch-io_pianga_(c)whitcomb.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Les Gentilhommes",
+      "qid": "Q6529525"
+    },
+    {
+      "title": "Lotario",
+      "qid": "Q643799"
+    },
+    {
+      "title": "Love Sounds the Alarm",
+      "qid": "Q54975956"
+    },
+    {
+      "title": "Love commands me, honor invites",
+      "qid": "Q54979165"
+    },
+    {
+      "title": "Love in Bath",
+      "qid": "Q6691790"
+    },
+    {
+      "title": "Love in Her Eyes Sits Playing",
+      "qid": "Q54975955"
+    },
+    {
+      "title": "Love in her eyes sits playing = Serch yn ei threm a chwery : o \"Acis a Galatea\"",
+      "qid": "Q78526976"
+    },
+    {
+      "title": "Lucio Papirio dittatore",
+      "qid": "Q15832844"
+    },
+    {
+      "title": "Lusinghiera mia speranza",
+      "qid": "Q54976113"
+    },
+    {
+      "title": "L’Elpidia, ovvero Li rivali generosi",
+      "qid": "Q15867010"
+    },
+    {
+      "title": "Messiah",
+      "qid": "Q207732",
+      "key": "E♭ major",
+      "instruments": [
+        "Violin",
+        "Viola",
+        "Cello",
+        "Violone",
+        "Organ",
+        "Harpsichord"
+      ],
+      "year_composed": 1741,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_01_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_02_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_03_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_04_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_05_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_06_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_07_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_08_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_09_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_10_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_11_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_12_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_13_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_14_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_15_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_16_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_17_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_18_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_19_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_20_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_21_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_22_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_23_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_24_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_25_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_26_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_27_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_28_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_29_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_30_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_31_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_32_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_33_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_34_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_35_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_36_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_37_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_38_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_39_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_40_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_41_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_42_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_43_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_44_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_45_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_46_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_47_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_48_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_49_(c)unknown.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Messiah",
+      "qid": "Q19363688"
+    },
+    {
+      "title": "Messiah Part I",
+      "qid": "Q6821963"
+    },
+    {
+      "title": "Messiah Part II",
+      "qid": "Q6821965"
+    },
+    {
+      "title": "Messiah Part III",
+      "qid": "Q6821966"
+    },
+    {
+      "title": "Mio caro bene = Fy nghalon gafodd hedd : Rodelinda",
+      "qid": "Q78527012",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_rodelinda_mio_caro_bene_(c)whitcomb.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Motivsuche",
+      "qid": "Q21685047"
+    },
+    {
+      "title": "Music for the Royal Fireworks",
+      "qid": "Q1147529",
+      "key": "D major",
+      "instruments": [
+        "C Trumpet",
+        "Horn in C",
+        "Timpani",
+        "Violins",
+        "Oboe",
+        "Violas",
+        "Violoncellos",
+        "Contrabasses",
+        "Bassoon",
+        "Contrabassoon",
+        "Cymbal"
+      ],
+      "year_composed": 1749,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/royal_fireworks_suite_1_(c)pollen.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/royal_fireworks_suite_2_(c)pollen.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/royal_fireworks_suite_3_(c)pollen.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/royal_fireworks_suite_4_(c)pollen.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Muzio Scevola",
+      "qid": "Q1658228"
+    },
+    {
+      "title": "My betrothed, my beloved",
+      "qid": "Q54982055"
+    },
+    {
+      "title": "My father! Ah! methinks I see",
+      "qid": "Q54979636"
+    },
+    {
+      "title": "My soul",
+      "qid": "Q54978949"
+    },
+    {
+      "title": "My tears remain",
+      "qid": "Q54976334"
+    },
+    {
+      "title": "Nabal",
+      "qid": "Q6956730"
+    },
+    {
+      "title": "Nero",
+      "qid": "Q1767158"
+    },
+    {
+      "title": "Neun Deutsche Arien",
+      "qid": "Q1980954"
+    },
+    {
+      "title": "Nisi Dominus",
+      "qid": "Q3656030"
+    },
+    {
+      "title": "Non hò cor che per armarti",
+      "qid": "Q54976139"
+    },
+    {
+      "title": "Non pensi quell' altera di vincermi",
+      "qid": "Q54982245"
+    },
+    {
+      "title": "Nulla sperar da me",
+      "qid": "Q54976140"
+    },
+    {
+      "title": "O Ruddier Than the Cherry!",
+      "qid": "Q54975937"
+    },
+    {
+      "title": "O grant it, Heav'n ; So shall the lute and harp awake = O Arglwydd da ; O boed i'r liwt a'r tant ddeffroi : Judas Maccabeus",
+      "qid": "Q78527071"
+    },
+    {
+      "title": "O ye who hear my laments",
+      "qid": "Q54976131"
+    },
+    {
+      "title": "Oboe Concerto No. 2",
+      "qid": "Q7075240"
+    },
+    {
+      "title": "Occasional Oratorio",
+      "qid": "Q482475"
+    },
+    {
+      "title": "Ogni vento ch'al porto lo spinga",
+      "qid": "Q54976143"
+    },
+    {
+      "title": "Oh! didst thou know the pains of absent love",
+      "qid": "Q54975948"
+    },
+    {
+      "title": "Ombra mai fu",
+      "qid": "Q2458851",
+      "key": "F major",
+      "instruments": [
+        "Soprano",
+        "B♭ Clarinet",
+        "Horn in F",
+        "Piano"
+      ],
+      "year_composed": 1738
+    },
+    {
+      "title": "Ombre, piante, urne funeste!",
+      "qid": "Q54982213"
+    },
+    {
+      "title": "Oreste",
+      "qid": "Q940341"
+    },
+    {
+      "title": "Organ concertos, Op.4",
+      "qid": "Q3686072"
+    },
+    {
+      "title": "Organ concertos, Op.7",
+      "qid": "Q3686074"
+    },
+    {
+      "title": "Ormisda",
+      "qid": "Q15837731"
+    },
+    {
+      "title": "Ottone",
+      "qid": "Q381399"
+    },
+    {
+      "title": "Overture from Suite D major (HWV 349)",
+      "qid": "Q130356319",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_0_1_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pale shadows, I know, you hear me",
+      "qid": "Q54976342"
+    },
+    {
+      "title": "Parnasso in Festa",
+      "qid": "Q16932049"
+    },
+    {
+      "title": "Partenope",
+      "qid": "Q954048"
+    },
+    {
+      "title": "Pastorello d'un povero armento pur dorme contento",
+      "qid": "Q54982252"
+    },
+    {
+      "title": "Pensieri, voi mi tormentate",
+      "qid": "Q54976147"
+    },
+    {
+      "title": "Piangero mia sorte ria = Cwyno wnaf am ergyd creulon : Iŵl Cesar",
+      "qid": "Q78527107"
+    },
+    {
+      "title": "Piangerò la sorte mia",
+      "qid": "Q54979346",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_3_3_2_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pifa",
+      "qid": "Q1748119"
+    },
+    {
+      "title": "Poi che pria di morire, mi beo, pupille care",
+      "qid": "Q54978728"
+    },
+    {
+      "title": "Poro",
+      "qid": "Q1756834"
+    },
+    {
+      "title": "Praise for harmony",
+      "qid": "Q6961082"
+    },
+    {
+      "title": "Pur ch'io ti stringa al sen",
+      "qid": "Q54976116"
+    },
+    {
+      "title": "Pur ritorno a rimirarvi",
+      "qid": "Q54976081"
+    },
+    {
+      "title": "Quanto più fiera tempesta freme",
+      "qid": "Q54982166"
+    },
+    {
+      "title": "RAI intermission",
+      "qid": "Q3800648"
+    },
+    {
+      "title": "Radamisto",
+      "qid": "Q1713359"
+    },
+    {
+      "title": "Recorder Sonata in C major, HWV 365",
+      "qid": "Q7302897"
+    },
+    {
+      "title": "Recorder sonata in A minor",
+      "qid": "Q17015133"
+    },
+    {
+      "title": "Recorder sonata in D minor",
+      "qid": "Q7302905"
+    },
+    {
+      "title": "Recorder sonata in F major",
+      "qid": "Q7302906"
+    },
+    {
+      "title": "Recorder sonata in G minor",
+      "qid": "Q7302907"
+    },
+    {
+      "title": "Rejoice greatly",
+      "qid": "Q78527150"
+    },
+    {
+      "title": "Rejoice greatly, o daughter of Zion",
+      "qid": "Q15842110"
+    },
+    {
+      "title": "Riccardo Primo",
+      "qid": "Q381391"
+    },
+    {
+      "title": "Rinaldo",
+      "qid": "Q767249"
+    },
+    {
+      "title": "Rodelinda",
+      "qid": "Q641095"
+    },
+    {
+      "title": "Rodrigo",
+      "qid": "Q1576427"
+    },
+    {
+      "title": "Rückenwind",
+      "qid": "Q2203198"
+    },
+    {
+      "title": "SOLOMON",
+      "qid": "Q126077340"
+    },
+    {
+      "title": "Salve Regina",
+      "qid": "Q3946263"
+    },
+    {
+      "title": "Samson",
+      "qid": "Q1263593",
+      "catalog_numbers": {
+        "HWV": "57"
+      },
+      "key": "G major",
+      "instruments": [
+        "Violins 1",
+        "Violins 2",
+        "Samson",
+        "Harpsichord",
+        "Cello",
+        "Violoncellos",
+        "CBass"
+      ],
+      "year_composed": 1741
+    },
+    {
+      "title": "Sarabande of keyboard suite in D minor (HWV 437)",
+      "qid": "Q55370309"
+    },
+    {
+      "title": "Say, my dear, how much I love you",
+      "qid": "Q54976323"
+    },
+    {
+      "title": "Scipione",
+      "qid": "Q1633345"
+    },
+    {
+      "title": "Se fiera belva ha cinto frà le catene",
+      "qid": "Q54982143"
+    },
+    {
+      "title": "Se giunge un dispetto",
+      "qid": "Q54976217"
+    },
+    {
+      "title": "See the conqu'ring hero comes!",
+      "qid": "Q42887925",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_judas_maccabaeus_56_(c)withcomb.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Semele",
+      "qid": "Q1284403"
+    },
+    {
+      "title": "Semele (New Zealand Opera 2020)",
+      "qid": "Q107585584"
+    },
+    {
+      "title": "Semiramide riconosciuta",
+      "qid": "Q5855068"
+    },
+    {
+      "title": "Semiramide riconosciuta",
+      "qid": "Q6124845"
+    },
+    {
+      "title": "Serse",
+      "qid": "Q1069133"
+    },
+    {
+      "title": "Shepherd! What Art Thou Pursuing?",
+      "qid": "Q54975965"
+    },
+    {
+      "title": "Silete venti",
+      "qid": "Q97293150"
+    },
+    {
+      "title": "Siroe",
+      "qid": "Q1719887"
+    },
+    {
+      "title": "Solomon",
+      "qid": "Q1123627"
+    },
+    {
+      "title": "Sonata in G major",
+      "qid": "Q7560838"
+    },
+    {
+      "title": "Sono i colpi della sorte per un alma",
+      "qid": "Q54982181"
+    },
+    {
+      "title": "Sosarme",
+      "qid": "Q1419474"
+    },
+    {
+      "title": "Spererò, poichè mel dice",
+      "qid": "Q54976100"
+    },
+    {
+      "title": "Spietati, io vi giurai",
+      "qid": "Q54982233"
+    },
+    {
+      "title": "Stand Round my Brave Boys",
+      "qid": "Q125470312"
+    },
+    {
+      "title": "Suite G minor HWV 452",
+      "qid": "Q130386792"
+    },
+    {
+      "title": "Suites de pièces Vol. 2",
+      "qid": "Q3503326",
+      "catalog_numbers": {
+        "HWV": "434",
+        "Op": "2"
+      },
+      "key": "B♭ major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1733,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-434_1_prelude_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-434_2_sonata_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-434_3_aria_con_variazioni_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-434_4_minuet_(c)yamada.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Susanna",
+      "qid": "Q2369038"
+    },
+    {
+      "title": "Svegliatevi nel core",
+      "qid": "Q4050446",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_1_4_4_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sweetest flattery",
+      "qid": "Q54976553"
+    },
+    {
+      "title": "Sù! all'armi grida Nemesi",
+      "qid": "Q54982338"
+    },
+    {
+      "title": "Tacerò, pur chè fedele",
+      "qid": "Q54976121"
+    },
+    {
+      "title": "Tamerlano",
+      "qid": "Q2164275"
+    },
+    {
+      "title": "Te Deum in B-flat major",
+      "qid": "Q1061752"
+    },
+    {
+      "title": "Te Deum in D major, \"Queen Caroline\"",
+      "qid": "Q16934129"
+    },
+    {
+      "title": "Terpsicore",
+      "qid": "Q25259056"
+    },
+    {
+      "title": "Teseo",
+      "qid": "Q1419652"
+    },
+    {
+      "title": "That wicked, treacherous wretch",
+      "qid": "Q54979324"
+    },
+    {
+      "title": "The Alchemist",
+      "qid": "Q6550124"
+    },
+    {
+      "title": "The Choice of Hercules",
+      "qid": "Q2410243"
+    },
+    {
+      "title": "The City Tramp",
+      "qid": "Q878673"
+    },
+    {
+      "title": "The Conscript",
+      "qid": "Q2946853"
+    },
+    {
+      "title": "The Cuckoo and the Nightingale",
+      "qid": "Q97585953",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_organ_concerto_7_7_1_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_organ_concerto_7_7_2_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_organ_concerto_7_7_3_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_organ_concerto_7_7_4_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_organ_concerto_7_7_5_(c)withcomb.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Death of Empedocles",
+      "qid": "Q47417342"
+    },
+    {
+      "title": "The Enchanted Island",
+      "qid": "Q2342350"
+    },
+    {
+      "title": "The Great Mr. Handel",
+      "qid": "Q16934347"
+    },
+    {
+      "title": "The Harmonious Blacksmith",
+      "qid": "Q3793888",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel-oguri_harmonious_balcksmith_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Moving Statue",
+      "qid": "Q60448591"
+    },
+    {
+      "title": "The Triumph of Time and Truth",
+      "qid": "Q62348"
+    },
+    {
+      "title": "The Ways of Zion Do Mourn / Funeral Anthem for Queen Caroline",
+      "qid": "Q7773964"
+    },
+    {
+      "title": "The enemy said",
+      "qid": "Q78527257"
+    },
+    {
+      "title": "The hissing of the snakes of Alecto",
+      "qid": "Q54981982"
+    },
+    {
+      "title": "The story of Esther",
+      "qid": "Q134444761"
+    },
+    {
+      "title": "The sweet affection flatters me",
+      "qid": "Q54976280"
+    },
+    {
+      "title": "The trumpet shall sound",
+      "qid": "Q91872352"
+    },
+    {
+      "title": "Thine Be the Glory",
+      "qid": "Q10503480",
+      "key": "D major",
+      "instruments": [
+        "Piano",
+        "Tuba",
+        "B♭ Clarinet"
+      ]
+    },
+    {
+      "title": "Thus saith the Lord",
+      "qid": "Q78527305"
+    },
+    {
+      "title": "Ti vo' giusta e non pietosa",
+      "qid": "Q54976124"
+    },
+    {
+      "title": "Tochter Zion, freue dich",
+      "qid": "Q42887781"
+    },
+    {
+      "title": "Tolomeo",
+      "qid": "Q1419468",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_1_3_1_0_(nc)chrysander.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_1_5_1_0_(nc)chrysander.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_1_6_1_0_(nc)chrysander.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_1_6_2_0_(nc)chrysander.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_1_9_1_0_(nc)chrysander.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_1_10_1_0_(nc)chrysander.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_2_4_1_0_(nc)chrysander.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_2_4_3_0_(nc)chrysander.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_2_4_4_0_(nc)chrysander.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_2_9_2_0_(nc)chrysander.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_2_10_1_0_(nc)chrysander.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_3_2_2_0_(nc)chrysander.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_3_2_2_1_(nc)chrysander.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_3_4_3_0_(nc)chrysander.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_3_8_1_0_(nc)chrysander.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_3_9_1_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tornami a vagheggiar",
+      "qid": "Q54976356"
+    },
+    {
+      "title": "Tornami a vaghieggiar = Tyred a'th dremiau gwâr : Alcina",
+      "qid": "Q78648379"
+    },
+    {
+      "title": "Tra le fiamme (Il consiglio)",
+      "qid": "Q7831047"
+    },
+    {
+      "title": "Troppo sofferse già questo mio petto (Zenobia)",
+      "qid": "Q54981539"
+    },
+    {
+      "title": "Truro",
+      "qid": "Q113644970"
+    },
+    {
+      "title": "Tuo ben è'l trono, io non",
+      "qid": "Q54976229"
+    },
+    {
+      "title": "Un zeffiro spirò, che serenò quest' alma",
+      "qid": "Q54982186"
+    },
+    {
+      "title": "Un' alma innamorata",
+      "qid": "Q7881886"
+    },
+    {
+      "title": "Utrecht Te Deum and Jubilate",
+      "qid": "Q821389"
+    },
+    {
+      "title": "V'accendano le tede i raggi delle stelle",
+      "qid": "Q54976097"
+    },
+    {
+      "title": "Va tacito e nascosto",
+      "qid": "Q26708402",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_1_9_2_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Vaghe fonti, che mormorando",
+      "qid": "Q54976128"
+    },
+    {
+      "title": "Venceslao",
+      "qid": "Q15852526"
+    },
+    {
+      "title": "Vieni, oh cara",
+      "qid": "Q54976084"
+    },
+    {
+      "title": "Violin sonata in A major",
+      "qid": "Q7933384"
+    },
+    {
+      "title": "Violin sonata in A major",
+      "qid": "Q7933387"
+    },
+    {
+      "title": "Violin sonata in D minor",
+      "qid": "Q7933389"
+    },
+    {
+      "title": "Violin sonata in E major",
+      "qid": "Q7933391"
+    },
+    {
+      "title": "Violin sonata in F major",
+      "qid": "Q7933390"
+    },
+    {
+      "title": "Violin sonata in G minor",
+      "qid": "Q7933393"
+    },
+    {
+      "title": "Volo pronto, e lieto il core",
+      "qid": "Q54976104"
+    },
+    {
+      "title": "Water Drops on Burning Rocks",
+      "qid": "Q284103"
+    },
+    {
+      "title": "Water Music",
+      "qid": "Q278596",
+      "key": "D minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/water_music_1_(c)pollen.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/water_music_2_(c)pollen.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/water_music_3_(c)pollen.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/water_music_4_(c)pollen.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/water_music_5_(c)pollen.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/water_music_6_(c)pollen.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_water_music_suite_1_1_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_water_music_suite_1_2_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_water_music_suite_1_3_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_water_music_suite_1_4_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_water_music_suite_1_5_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_water_music_suite_1_6_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_water_music_suite_1_7_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_water_music_suite_1_8_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_water_music_suite_1_9_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_water_music_suite_1_10_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_water_music_suite_1_11_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Wedding anthem for Princess Anne",
+      "qid": "Q17034875"
+    },
+    {
+      "title": "Where Shall I seek the Charming Fair?",
+      "qid": "Q54975959"
+    },
+    {
+      "title": "Where'er you walk",
+      "qid": "Q4019415"
+    },
+    {
+      "title": "Winds, storms, lend your wings",
+      "qid": "Q54982077"
+    },
+    {
+      "title": "Would You Gain the Tender Creature",
+      "qid": "Q54975967"
+    },
+    {
+      "title": "XV Handel solo sonatas",
+      "qid": "Q8042564"
+    },
+    {
+      "title": "Ye sacred priests",
+      "qid": "Q78648524"
+    },
+    {
+      "title": "Yes, even in chains",
+      "qid": "Q54978021"
+    },
+    {
+      "title": "ZERAH",
+      "qid": "Q127030740"
+    },
+    {
+      "title": "Zadok the Priest",
+      "qid": "Q656769",
+      "key": "D major",
+      "instruments": [
+        "Soprano I",
+        "Soprano II",
+        "Alto I",
+        "Alto II",
+        "Tenor",
+        "Bass I",
+        "Bass II",
+        "Trumpet I. II.",
+        "Trumpet III",
+        "Timpani",
+        "Oboe I. II.",
+        "Bassoon I. II.",
+        "Violins I",
+        "Violins II",
+        "Violins III",
+        "Violas",
+        "Violoncellos",
+        "Contrabasses",
+        "Continuo"
+      ],
+      "year_composed": 1727
+    },
+    {
+      "title": "Zion's Daughter",
+      "qid": "Q1398799"
+    },
+    {
+      "title": "Zweier Augen Majestät",
+      "qid": "Q54976687"
+    },
+    {
+      "title": "Zürne was bin",
+      "qid": "Q54976990"
+    },
+    {
+      "title": "È un foco quel d'amore",
+      "qid": "Q54976198"
+    },
+    {
+      "title": "Overture: Allegro",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_0_2_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Scena I",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_1_1_1_0_(nc)chrysander.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_1_1_2_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Recitativo: Curio, Cesare venne, e vide e vinse (Cesare, Curio)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_1_1_3_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Recitativo: Questa e Cornelia (Cesare, Curio, Cornelia, Sesto)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_1_2_1_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3. Aria: Empio, diro, tu sei (Cesare)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_1_3_2_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Recitativo: Gia torna in se (Curio, Sesto, Cornelia)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_1_4_1_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "4. Aria: Priva son dogni conforto (Cornelia)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_1_4_2_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Recitativo: Vani sono i lamenti (Sesto)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_1_4_3_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Aria. Lombra del genitore (Sesto)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_1_4_4_1_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "6. Aria: Non disperar, chi sa? (Cleopatra)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_1_5_2_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Scene VII",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_1_7_1_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Recitativo: Qui nobile donzella (Curio, Cesare, Cleopatra)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_1_7_2_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "9. Aria: Non e si vago e bello (Cesare)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_1_7_3_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Recitativo: Cleopatra, vincesti (Nireno, Cleopatra)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_1_7_4_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "10. Aria: Tutto puo donna vezzosa (Cleopatra)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_1_7_5_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Recitativo: Ferma Cleopatra (Nireno, Cleopatra)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_1_7_6_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Scena VIII",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_1_8_1_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Recitativo:Ma che! Vile e negletta (Cornelia, Cleopatra, Sesto, Nireno)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_1_8_2_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "12. Aria: Cara speme, questo core (Sesto)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_1_8_3_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[12. Aria: ritornello finale]",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_1_8_3_1_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Recitativo: Vegli pure il Germano (Cleopatra)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_1_8_4_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "13. Aria. Tu la mia stella sei (Sesto)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_1_8_5_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Recitativo: Cornelia, in quei tuoi lumi (Achilla, Cornelia, Sesto)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_1_11_1_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "15. Aria: Tu sei il cor di questo core (Achilla)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_1_11_2_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Recitativo: Madre! / Mia vita! / Addio ... (Sesto, Cornelia)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_1_11_3_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "16. Duetto: Son nata a lagrimar / Son nato a sospirar (Cornelia, Sesto)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_1_11_4_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Recitativo: Eseguisti, o Niren, quanto timposi? (Cleopatra, Nireno)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_2_1_1_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Recitativo: Da Cleopatra apprenda (Nirreno, Cesare)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_2_2_1_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sinfonia",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_2_2_2_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Recitativo: Cieli, e qual dalle sfere (Cesare, Nireno)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_2_2_3_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Recitativo: Giulio, che miri? (Cesare)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_2_2_5_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "17. Aria: Vadoro, pupille (Cleopatra)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_2_2_6_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Recitativo: Non ha in cielo il Tonante (Cesare, Cleopatra)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_2_2_7_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[17.] Da capo. Aria. Vadoro, pupille (Cleopatra)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_2_2_6_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Recitativo: Vola, vola, mio cor, al dolce incanto (Cesare, Nireno)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_2_2_8_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "18. Aria: Se in fiorito ameno prato (Cesare)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_2_2_9_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Scene III",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_2_3_1_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Recitativo: Bella, non lagrimare! (Achilla, Cornelia)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_2_3_2_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "20. Aria: Se a menon sei crudele (Achilla)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_2_4_2_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Recitativo: Su, che si tarda? (Cornelia, Sesto)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_2_5_1_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Recitativo: Cornelia, infauste nove (Nireno, Cornelia, Sesto)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_2_6_1_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "22. Aria: Cessa omai di sospirare! (Cornelia)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_2_6_2_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Recitativo: Figlio non e chi vendicar non cura (Sesto)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_2_6_3_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "23. Aria: Langue offeso mai riposa (Sesto)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_2_6_4_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Recitativo: Esser qu� deve in breve lidol mio (Cesare, Cleopatra)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_2_7_1_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "24. Aria: Venere bella (Cleopatra)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_2_7_2_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Recitativo: Che veggio, o numi? (Cesare, Cleopatra)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_2_7_3_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Recitativo: Cesare, sei tradito (Curio, Cesare, Cleopatra)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_2_8_1_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "25. Aria e Coro: Al lampo dellarmi (Cesare, Congiurati)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_2_8_2_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mora Cesare, mora! (Cesare, Congiurati)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_2_8_3_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "26. Accompagnato: Che sento? Oh dio! Morra Cleopatra ancora (Cleopatra)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_2_8_4_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "27. Aria: Se pieta di me non senti (Cleopatra)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_2_8_5_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Scena IX",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_2_9_1_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Recitativo: Ecco in tutto perduta la speme di vendetta (Sesto, Cornelia)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_2_11_1_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "29. Aria: Laure che spira (Sesto)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_2_11_2_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Recitativo: In tal modi si premia il mio lungo servir (Achilla)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_3_1_1_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "30. Aria: Dal fulgor di questa spada (Achilla)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_3_1_2_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Recitativo: E pur cosi in un giorno (Cleopatra)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_3_3_1_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ma poi morta dogni intorno (Cleopatra)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_3_3_2_1_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Scena IV",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_3_4_1_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Aria: Aure, deh, per pieta (Cesare)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_3_4_2_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Recitativo: Lascia questo sigillo! (Cesare, Sesto)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_3_5_1_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "34. Aria: Quel torrente che cade dal monte (Cesare)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_3_5_2_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Recitativo: Tutto lice sperar, Cesare vive (Sesto, Nireno)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_3_6_1_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "35. Aria: La giustizia ha gia sullarco (Sesto)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_3_6_2_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Scena VII",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_3_7_1_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Accompagnato: Voi, che mie fide ancelle un tempo foste (Cleopatra)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_3_7_2_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Recitativo: Forzai lingresso a tua salvezza, o cara! (Cesare, Cleopatra)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_3_7_3_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "37. Aria: Da tempeste il legno infranto (Cleopatra)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_3_7_4_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "38. Aria: Non ha piu che temere (Cornelia)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_3_9_2_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Recitativo: Qui Curio vincitor, qui tuo lEgitto (Nireno, Cesare, Sesto, Cornelia, Cleopatra)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_3_10_2_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "39. Duetto: Caro! / Bella! Piu amabile belta (Cleopatra, Cesare)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_3_10_3_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Recitativo: Goda pur or lEgitto (Cesare)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_3_10_4_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "40. Coro e Duetto: Ritorni omai nel nostro core - Un bel contento il sen gia si prepara (Egyptians, Cleopatra, Cesare)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=15/handel_giulio_cesare_3_10_5_0_(nc)chrysander.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cara Sposa",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_rinaldo_cara_sposa_(c)whitcomb.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "March",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_scipione_march_(c)whitcomb.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Se Fiera, Aria",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_tolomeo_se_fiera_(c)whitcomb.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Vivi tiranno",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_tolomeo_vivi_tiranno_(c)whitcomb.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Largo",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_xerxes_largo_(c)whitcomb.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "50-51. Duet O death, where is thy sting - But thanks be to God",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_50_(c)unknown.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "52. Aria If God be for us",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_52_(c)unknown.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "53. Chorus Worthly is the Lamb",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/messiah_53_(c)unknown.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "9-10. Arm, arm ye brave! We come in bright array",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_judas_maccabaeus_9-10_(c)withcomb.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "15. Come, ever-smiling liberty (aria)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_judas_maccabaeus_15_(c)withcomb.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "18. Come, ever-smiling liberty (duet)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_judas_maccabaeus_18_(c)withcomb.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "30. Zion now her head shall raise",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_judas_maccabaeus_30_(c)withcomb.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "38-39. Ah! Wretched, wretched Israel!",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_judas_maccabaeus_38-39_(c)withcomb.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "60. With honour let desert be crowned",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_judas_maccabaeus_60_(c)withcomb.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concerto No. 1 in B flat major, HWV 312",
+      "catalog_numbers": {
+        "HWV": "312"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_concerto_3_1_1_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_concerto_3_1_2_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_concerto_3_1_3_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concerto No. 2 in B flat major, HWV 313",
+      "catalog_numbers": {
+        "HWV": "313"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_concerto_3_2_1_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_concerto_3_2_2_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_concerto_3_2_3_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_concerto_3_2_4_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_concerto_3_2_5_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concerto No. 3 in G major, HWV 314",
+      "catalog_numbers": {
+        "HWV": "314"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_concerto_3_3_1_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "2-3. Adagio, Allegro",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_concerto_3_3_2-3_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concerto No. 4 in F major, HWV 315",
+      "catalog_numbers": {
+        "HWV": "315"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_concerto_3_4_1_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_concerto_3_4_2_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_concerto_3_4_3_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_concerto_3_4_4_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concerto No. 5 in d minor, HWV 316",
+      "catalog_numbers": {
+        "HWV": "316"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_concerto_3_5_1_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_concerto_3_5_2_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_concerto_3_5_3_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_concerto_3_5_4_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_concerto_3_5_5_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concerto No. 6 in D major / d minor, HWV 317",
+      "catalog_numbers": {
+        "HWV": "317"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_concerto_3_6_1_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_concerto_3_6_2_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concerto Grosso in e minor, Op. 6 No. 3, HWV 321",
+      "catalog_numbers": {
+        "Op": "6/3",
+        "HWV": "321"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_3_1_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_3_2_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_3_3_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_3_4_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_3_5_(c)withcomb.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concerto Grosso in a minor, Op. 6 No. 4, HWV 322",
+      "catalog_numbers": {
+        "Op": "6/4",
+        "HWV": "322"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_4_1_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_4_2_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_4_3_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_4_4_(c)withcomb.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concerto Grosso in D major, Op. 6 No. 5, HWV 323",
+      "catalog_numbers": {
+        "Op": "6/5",
+        "HWV": "323"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_5_6_(c)withcomb.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concerto Grosso in g minor, Op. 6 No. 6, HWV 324",
+      "catalog_numbers": {
+        "Op": "6/6",
+        "HWV": "324"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_6_1_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_6_2_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_6_3_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_6_4_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_6_5_(c)withcomb.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concerto Grosso in c minor, Op. 6 No. 8, HWV 326",
+      "catalog_numbers": {
+        "Op": "6/8",
+        "HWV": "326"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_8_1_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_8_2_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_8_3_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_8_4_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_8_5_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_8_6_(c)withcomb.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concerto Grosso in d minor, Op. 6 No. 10, HWV 328",
+      "catalog_numbers": {
+        "Op": "6/10",
+        "HWV": "328"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_10_1_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_10_2_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_10_3_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_10_4_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_10_5_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_10_6_(c)withcomb.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concerto Grosso in A major, Op. 6 No. 11, HWV 329",
+      "catalog_numbers": {
+        "Op": "6/11",
+        "HWV": "329"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_11_1_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_11_2_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_11_3_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_11_4_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_11_5_(c)withcomb.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concerto Grosso in b minor, Op. 6 No. 12, HWV 330",
+      "catalog_numbers": {
+        "Op": "6/12",
+        "HWV": "330"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_12_2_(c)withcomb.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_concerto_grosso_6_12_3_(c)withcomb.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concerto in B flat major, Op. 4 No. 2, HWV 290",
+      "catalog_numbers": {
+        "Op": "4/2",
+        "HWV": "290"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_organ_concerto_4_2_1_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_organ_concerto_4_2_2_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_organ_concerto_4_2_3_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_organ_concerto_4_2_4_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concerto in g minor, Op. 4 No. 3, HWV 291",
+      "catalog_numbers": {
+        "Op": "4/3",
+        "HWV": "291"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_organ_concerto_4_3_1_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_organ_concerto_4_3_2_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_organ_concerto_4_3_3_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_organ_concerto_4_3_4_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concerto in F major, Op. 4 No. 5, HWV 293",
+      "catalog_numbers": {
+        "Op": "4/5",
+        "HWV": "293"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_organ_concerto_4_5_1_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_organ_concerto_4_5_2_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_organ_concerto_4_5_3_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_organ_concerto_4_5_4_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concerto in B flat major, Op. 4 No. 6, HWV294",
+      "catalog_numbers": {
+        "Op": "4/6",
+        "HWV": "294"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_organ_concerto_4_6_1_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_organ_concerto_4_6_2_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_organ_concerto_4_6_3_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concerto in B flat major, Op. 7 No. 1, HWV 306 *",
+      "catalog_numbers": {
+        "Op": "7/1",
+        "HWV": "306"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/concertos_7_1_(c)mccoy.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concerto in A major, Op. 7 No. 2, HWV 307 *",
+      "catalog_numbers": {
+        "Op": "7/2",
+        "HWV": "307"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/concertos_7_2_(c)mccoy.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concerto in B flat major, Op. 7 No. 6, HWV 311",
+      "catalog_numbers": {
+        "Op": "7/6",
+        "HWV": "311"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=8/handel_organ_concerto_7_6_complete_(c)withcomb.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concerto for oboe and orchestra in B flat major No. 1, HWV 301 (1740)",
+      "catalog_numbers": {
+        "HWV": "301"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/concerto_oboe_1-1_(wittenburg).mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/concerto_oboe_1-2_(wittenburg).mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/concerto_oboe_1-3_(wittenburg).mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/concerto_oboe_1-4_(wittenburg).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "1. Sonata for violin and klavier in A major, HWV 361 (also Op. 1 No. 3) (1725-26)",
+      "catalog_numbers": {
+        "Op": "1/3",
+        "HWV": "361"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/handel_sonata_for_violin_361_(c)harfesoft.mid"
+          ]
+        },
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 2.5",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/HandelGF/HWV361/hwv361/hwv361-lys/HWV361-header.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "2. Sonata for violin and klavier in g minor, HWV 368 (also Op. 1 No. 10) (1732) *",
+      "catalog_numbers": {
+        "Op": "1/10",
+        "HWV": "368"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/handel_sonata_for_violin_368_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3. Sonata for violin and klavier in F major, HWV 370 (also Op. 1 No. 12) (1732) *",
+      "catalog_numbers": {
+        "Op": "1/12",
+        "HWV": "370"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/handel_sonata_for_violin_370_(c)harfesoft.mid"
+          ]
+        },
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 2.5",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/HandelGF/HWV370/hwv370/hwv370-lys/HWV370-header.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "4. Sonata for violin and klavier in D major, HWV 371 (also Op. 1 No. 13) (1732) �",
+      "catalog_numbers": {
+        "Op": "1/13",
+        "HWV": "371"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/handel_sonata_for_violin_371_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "5. Sonata for violin and klavier in A major, HWV 372 (also Op. 1 No. 14) (1732) �",
+      "catalog_numbers": {
+        "Op": "1/14",
+        "HWV": "372"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/handel_sonata_for_violin_372_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "6. Sonata for violin and klavier in E major, HWV 373 (also Op. 1 No. 15) (1732) �",
+      "catalog_numbers": {
+        "Op": "1/15",
+        "HWV": "373"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/handel_sonata_for_violin_373_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata for recorder and harpsichord in g minor, HWV 360 (also Op. 1 No. 2) (1725-26)",
+      "catalog_numbers": {
+        "Op": "1/2",
+        "HWV": "360"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/recorder_sonata_g_minor_(c)reid.mid"
+          ]
+        },
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/HandelGF/HWV360/Sonata/Sonata-lys/Sonata.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Suite No. 1 in A major, HWV 426",
+      "catalog_numbers": {
+        "HWV": "426"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-426-1_prelude_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-426_2_allemande_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-426_3_courante_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-426_4_gigue_(c)yamada.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Suite No. 2 in F major, HWV 427",
+      "catalog_numbers": {
+        "HWV": "427"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-427_1_adagio_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-427_2_allegro_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-427_3_adagio_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-427_4_allegro_(c)yamada.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Suite No. 4 in e minor, HWV 429",
+      "catalog_numbers": {
+        "HWV": "429"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-429_1_allegro_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-429_2_allemande_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-429_3_courante_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-429_4_sarabande_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-429_5_gigue_(c)yamada.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Suite No. 6 in f sharp minor, HWV 431",
+      "catalog_numbers": {
+        "HWV": "431"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-431_1_prelude_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-431_2_largo_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-431_3_allegro_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-431_4_gigue(presto)_(c)yamada.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Suite No. 8 in f minor, HWV 433",
+      "catalog_numbers": {
+        "HWV": "433"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-433_1_prelude_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-433_2_allegro_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-433_3_allemande_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-433_4_courante_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-433_5_gigue_(c)yamada.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chacone [with 21 Variations] (� MIDI | Variant)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-435_chacone_with_21_variations_(c)yamada.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Suite No. 11 in d minor, HWV 436 (1721-6)",
+      "catalog_numbers": {
+        "HWV": "436"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-436_1_allemande_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-436_2_allegro_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-436_3_air_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-436_4_gigue_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-436_5_menuetto_and_variations_(c)yamada.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Suite No. 12 in d minor, HWV 437 (1703-6)",
+      "catalog_numbers": {
+        "HWV": "437"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-437_1_allmand_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-437_2_corrant_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-437_3_saraband_and_variations_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-437_4_jigg_(c)yamada.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Suite No. 13 in e minor, HWV 438 (1710-17)",
+      "catalog_numbers": {
+        "HWV": "438"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-438_1_allmand_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-438_2_saraband_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-438_3_jigg_(c)yamada.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Suite No. 14 in g minor, HWV 439 (1703-6)",
+      "catalog_numbers": {
+        "HWV": "439"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-439_1_allmand_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-439_2_corrant_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-439_3_jigg_(c)yamada.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Suite No. 15 in B flat major, HWV 440 (1703-06, rev. 1717-18)",
+      "catalog_numbers": {
+        "HWV": "440"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-440_1_allmand_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-440_2_corrant_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-440_3_saraband_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-440_4_jigg_(c)yamada.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Suite No. 16 in G major, HWV 441 (1703-6)",
+      "catalog_numbers": {
+        "HWV": "441"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-441_1_allemande_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-441_2_allegro_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-441_3_corante_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-441_4_aria_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-441_5_menuetto_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-441_6_gavotta_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-441_7_double_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-441_8_gigue_(c)yamada.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Suite No. 17 in G major, HWV 442 (1703-6)",
+      "catalog_numbers": {
+        "HWV": "442"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-442_1_preludio_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-442_2_ciacona_with_62_variations_(c)yamada.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Suite No. 18 in C major, HWV 443 (ca. 1700-3)",
+      "catalog_numbers": {
+        "HWV": "443"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-443_1_praeludium_und_fuge_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-443_2_allemande_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-443_3_courante_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-443_4_sarabande_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-443_5_double_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-443_6_gigue_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-443_7_chaconne_with_26_variations_(c)yamada.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Partita No. 19 in c minor, HWV 444 (ca. 1705-6)",
+      "catalog_numbers": {
+        "HWV": "444"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-444_1_prelude_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-444_2_allemande_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-444_3_courante_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-444_4_gavotte_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-444_5_menuet_(c)yamada.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Suite No. 20 in c minor, HWV 445 (1705-6)",
+      "catalog_numbers": {
+        "HWV": "445"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-445_1_prelude_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-445_2_allemande_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-445_3_courante_(c)yamada.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Suite No. 22 in d minor, HWV 447 (1738-9)",
+      "catalog_numbers": {
+        "HWV": "447"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-447_1_allemande_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-447_2_courante_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-447_3_sarabande_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-447_4_gigue_(c)yamada.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Suite No. 23 in d minor, HWV 448 (ca. 1705-6)",
+      "catalog_numbers": {
+        "HWV": "448"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-448_1_ouverture_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-448_2_allemande_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-448_3_courante_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-448_4_sarabande_i_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-448_5_sarabande_ii_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-448_6_chaconne_with_10_variations_(c)yamada.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Suite No. 24 in d minor, HWV 449 (ca. 1705)",
+      "catalog_numbers": {
+        "HWV": "449"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-449_1_prelude_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-449_2_allemande_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-449_3_courante_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-449_4_sarabande_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-449_5_aria_con_variazioni_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-449_6_gigue_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-449_7_menuet_(c)yamada.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Partita No. 25 in G major, HWV 450 (ca. 1700-5)",
+      "catalog_numbers": {
+        "HWV": "450"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-450_1_preludio_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-450_2_allemande_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-450_3_courante_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-450_4_sarabande_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-450_5_gigue_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-450_6_menuet_(c)yamada.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Suite No. 27 in g minor, HWV 452 (1738-9)",
+      "catalog_numbers": {
+        "HWV": "452"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-452_1_allemande_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-452_2_courante_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-452_3_sarabande_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/handel_hwv-452_4_gigue_(c)yamada.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Suite No. 28 in g minor, HWV 453 (ca. 1705-6)",
+      "catalog_numbers": {
+        "HWV": "453"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-453_1_ouverture_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-453_2_entree_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-453_3_chaconne_(c)yamada.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Partita No. 29 in A major, HWV 454 (ca. 1703-6)",
+      "catalog_numbers": {
+        "HWV": "454"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-454_1_allemande_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-454_2_courante_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-454_3_sarabande_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-454_4_gigue_(c)yamada.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Air in g minor, HWV 466 [two manual] (ca. 1710-20)",
+      "catalog_numbers": {
+        "HWV": "466"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-466_air_(c)yamada.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Air in B flat major, HWV 470 [two manual] (ca. 1710-20)",
+      "catalog_numbers": {
+        "HWV": "470"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-470_air_(c)yamada.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Capriccio in F major, HWV 481 (ca. 1703-6)",
+      "catalog_numbers": {
+        "HWV": "481"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-481_capriccio_(c)yamada.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Capriccio in g minor, HWV 483 (ca. 1720-1)",
+      "catalog_numbers": {
+        "HWV": "483"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-483_capriccio_(c)yamada.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chaconne [with 49 Variations] in C major, HWV 484 (ca. 1700-5)",
+      "catalog_numbers": {
+        "HWV": "484"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-484_chaconne_with_49_variations_(c)yamada.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chaconne in F major, HWV 485 [two manual] (� MIDI | Variant) (ca. 1705)",
+      "catalog_numbers": {
+        "HWV": "485"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-485_chaconne_(c)yamada.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chaconne in g minor, HWV 486 (ca. 1708) (� MIDI | Variant)",
+      "catalog_numbers": {
+        "HWV": "486"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-486_chaconne_(c)yamada.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concerto in G major, HWV 487 (ca. 1710-20)",
+      "catalog_numbers": {
+        "HWV": "487"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-487_1_allegro_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-487_2_andante_(c)yamada.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Prelude and Capriccio in G major, HWV 571 (ca. 1703-6)",
+      "catalog_numbers": {
+        "HWV": "571"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-571_1_prelude_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-571_2_capriccio_(c)yamada.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Prelude and Allegro in a minor, HWV 576 (ca. 1705-6)",
+      "catalog_numbers": {
+        "HWV": "576"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-576_1_prelude_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-576_2_allegro_(c)yamada.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Preludio ed Allegro [Sonata] in g minor, HWV 574 (ca. 1705)",
+      "catalog_numbers": {
+        "HWV": "574"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-574_preludio_ed_allegro_(c)yamada.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata [Fantasia] in C major, HWV 577 (ca. 1703-5)",
+      "catalog_numbers": {
+        "HWV": "577"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-577_sonata_(c)yamada.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata in C major, HWV 578 [clock organ] (ca. 1750)",
+      "catalog_numbers": {
+        "HWV": "578"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-578_1_sonata(allegro)_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-578_2_trio(larghetto)_(c)yamada.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-578_3_gavotte(non_troppo_presto)_(c)yamada.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata [Fantasia] in G major, HWV 579 [two manual] (ca. 1707-10?)",
+      "catalog_numbers": {
+        "HWV": "579"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-579_sonata_(c)yamada.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata (larghetto) in g minor, HWV 580 (ca. 1707-10?)",
+      "catalog_numbers": {
+        "HWV": "580"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-580_sonata(larghetto)-(adagio)_(c)yamada.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonatina in d minor, HWV 581 (ca. 1705)",
+      "catalog_numbers": {
+        "HWV": "581"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-581_sonatina_(c)yamada.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonatina in G major ['Fuga'], HWV 582 (ca. 1721-2)",
+      "catalog_numbers": {
+        "HWV": "582"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-582_sonatina_(c)yamada.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonatina (A tempo giusto) in g minor, HWV 583 (ca. 1721-2)",
+      "catalog_numbers": {
+        "HWV": "583"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-583_sonatina(a_tempo_giusto)_(c)yamada.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonatina in a minor, doubtful, HWV 584 (ca. 1706-8)",
+      "catalog_numbers": {
+        "HWV": "584"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-584_sonatina_(c)yamada.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonatina in B flat major, HWV 585 (ca. 1721-2)",
+      "catalog_numbers": {
+        "HWV": "585"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/handel_hwv-585_sonatina_(c)yamada.mid"
+          ]
+        },
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/HandelGF/HWV585/sonatina-in-b-flat-major/sonatina-in-b-flat-major.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Six Fugues or Voluntarys for the Organ or Harpsichord, HWV 605-610 (c. 1711-18)",
+      "catalog_numbers": {
+        "HWV": "605"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/fugue_1_[unknown].mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/fugue_2_[unknown].mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/fugue_3_[unknown].mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/fugue_4_[unknown].mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/fugue_5_[unknown].mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/fugue_6_[unknown].mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=handel/fugue_6_[G_83]_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "7 Kleine Fugen for organ and harpsichord (Fugue 1-6 have no catalog numbers, Fugue 7 in F major is HWV 611)",
+      "catalog_numbers": {
+        "HWV": "611"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=27h/handel_7_kleine_fugen_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Largo, piano transcription",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-i/handel_63853a_largo_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Largo, piano transcription *",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-i/handel_76w_largo_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ouvertüre",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/HandelGF/Aylesford/01-overture/01-overture.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Entrée",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/HandelGF/Aylesford/02-entree/02-entree.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gavotte",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/HandelGF/Aylesford/03-gavotte/03-gavotte.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Toccata",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/HandelGF/Aylesford/04-toccata/04-toccata.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fuga",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/HandelGF/Aylesford/05-fuga/05-fuga.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concerto",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/HandelGF/Aylesford/07-concerto/07-concerto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Preludio",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/HandelGF/Aylesford/08-preludio/08-preludio.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Menuet I",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/HandelGF/Aylesford/09-menueti/09-menueti.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Menuet II (Trio)",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/HandelGF/Aylesford/10-menuetii/10-menuetii.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Allegro",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/HandelGF/Aylesford/11-allegro/11-allegro.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Menuet",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/HandelGF/Aylesford/12-menuet/12-menuet.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Air",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/HandelGF/Aylesford/13-air/13-air.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Allemande",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/HandelGF/Aylesford/17-allemande/17-allemande.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Passepied (et Menuet)",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/HandelGF/Aylesford/18-passepied/18-passepied.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Menuet (Trio)",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/HandelGF/Aylesford/19-menuet/19-menuet.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonatina",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/HandelGF/Aylesford/20-sonatina/20-sonatina.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "La Réjouissance des Feux d'Artifice Royaux (Royal Fireworks)",
+      "catalog_numbers": {
+        "HWV": "351"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/HandelGF/BWV351/LaRej/LaRej.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "La vendetta e un cibo , Aria from Silla",
+      "catalog_numbers": {
+        "HWV": "10"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/HandelGF/HWV10/LaVendettaEUnCibo/LaVendettaEUnCibo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Giulio Cesare",
+      "catalog_numbers": {
+        "HWV": "17"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/HandelGF/HWV17/giulio-cesare/giulio-cesare-lys/giulio-cesare-header.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Agitato da fiere tempeste , Aria from Riccardo primo",
+      "catalog_numbers": {
+        "HWV": "19"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/HandelGF/HWV19/AgitatoDaFiereTempeste/AgitatoDaFiereTempeste.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tanti strali, Duetto XII",
+      "catalog_numbers": {
+        "HWV": "197"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/HandelGF/HWV197/HWV197/HWV197-lys/HWV197.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nine German Arias",
+      "catalog_numbers": {
+        "HWV": "202"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/HandelGF/HWV202/NineGermanArias/NineGermanArias-lys/NineGermanArias_Score.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "No! Risolvo abbandonar , Aria from Alessandro",
+      "catalog_numbers": {
+        "HWV": "21"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/HandelGF/HWV21/NoRisolvoAbbandonar/NoRisolvoAbbandonar.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "La gloria sola , Aria from Admeto",
+      "catalog_numbers": {
+        "HWV": "22"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/HandelGF/HWV22/LaGloriaSola/LaGloriaSola.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Non pensi quell'altera , Aria from Lotario",
+      "catalog_numbers": {
+        "HWV": "26"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/HandelGF/HWV26/NonPensiQuellAltera/NonPensiQuellAltera.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gavotta from Atalanta",
+      "catalog_numbers": {
+        "HWV": "35"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/HandelGF/HWV35/Gavotta/Gavotta.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata VII, from Op. 1",
+      "catalog_numbers": {
+        "HWV": "365"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/HandelGF/HWV365/Sonata/Sonata-lys/Sonata.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata XI, from Op. 1",
+      "catalog_numbers": {
+        "HWV": "369"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/HandelGF/HWV369/Sonata/Sonata-lys/Sonata.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Corri, vola, a' tuoi trofei , Aria from Giustino",
+      "catalog_numbers": {
+        "HWV": "37"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/HandelGF/HWV37/CorriVolaATuoiTrofei/CorriVolaATuoiTrofei.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sol la brama di vendetta , Aria from Faramondo",
+      "catalog_numbers": {
+        "HWV": "39"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/HandelGF/HWV39/Sol_la_brama/Sol_la_brama.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Signor, Signor, lasciate far a me (Serse)",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/HandelGF/HWV40/SignorSignorLasciateFarAMe/SignorSignorLasciateFarAMe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Se potessero i sospir' miei , Aria from Imeneo",
+      "catalog_numbers": {
+        "HWV": "41"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/HandelGF/HWV41/Se_potessero/Se_potessero.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Al tardar della vendetta , Aria from Deidamia",
+      "catalog_numbers": {
+        "HWV": "42"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/HandelGF/HWV42/AlTardarDellaVendetta/AlTardarDellaVendetta.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ecco il sol , Aria from La Resurrezione",
+      "catalog_numbers": {
+        "HWV": "47"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/HandelGF/HWV47/Ecco_il_sol/Ecco_il_sol.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cara sposa, amanta cara , Aria from Rinaldo",
+      "catalog_numbers": {
+        "HWV": "7"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/HandelGF/HWV7/CaraSposa/CaraSposa.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fra l'ombre e gl'orrori , Aria from Aci, Galatea e Polifemo",
+      "catalog_numbers": {
+        "HWV": "72"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/HandelGF/HWV72/Fra_l_ombre/Fra_l_ombre.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gloria in Excelsis Deo",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/HandelGF/HWVdeest/GloriaInExcelsisDeo/GloriaInExcelsisDeo-lys/GloriaInExcelsisDeo_Score.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Antioch (hymntune)",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/HandelGF/antioch/antioch.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Hallelujah Chorus from Messiah",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/HandelGF/hallelujah/hallelujah-lys/header.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,805 @@
+{
+  "works": [
+    {
+      "title": "A Breeze from Alabama",
+      "qid": "Q19020190"
+    },
+    {
+      "title": "A Guest of Honor",
+      "qid": "Q4657191"
+    },
+    {
+      "title": "Antoinette",
+      "qid": "Q28870161"
+    },
+    {
+      "title": "Augustan Club Waltz",
+      "qid": "Q28365219"
+    },
+    {
+      "title": "Bethena",
+      "qid": "Q3639116"
+    },
+    {
+      "title": "Binks’ Waltz",
+      "qid": "Q28807544"
+    },
+    {
+      "title": "Buster's Dog to the Rescue",
+      "qid": "Q4425719"
+    },
+    {
+      "title": "Cleopha",
+      "qid": "Q28464426"
+    },
+    {
+      "title": "Combination March",
+      "qid": "Q28171003"
+    },
+    {
+      "title": "Country Club",
+      "qid": "Q28943246",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/joplin_country_club_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Elite Syncopations",
+      "qid": "Q5361956"
+    },
+    {
+      "title": "Elite Syncopations",
+      "qid": "Q17105160"
+    },
+    {
+      "title": "Eugenia",
+      "qid": "Q28864214"
+    },
+    {
+      "title": "Euphonic Sounds",
+      "qid": "Q28973584",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/joplin/euphonic_sounds_(1909)_s_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Felicity Rag",
+      "qid": "Q29453606"
+    },
+    {
+      "title": "Fig Leaf Rag",
+      "qid": "Q29917496",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/joplin/9497s_scott_rags_(fig_leaf_sensation)_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/joplin_fig_leaf_rag_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gladiolus Rag",
+      "qid": "Q19048820",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/joplin/12623s_gladiolus_rag_(1911)_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Harmony Club Waltz",
+      "qid": "Q28198430"
+    },
+    {
+      "title": "Heliotrope Bouquet",
+      "qid": "Q5706049"
+    },
+    {
+      "title": "Kismet Rag",
+      "qid": "Q19087651"
+    },
+    {
+      "title": "Leola",
+      "qid": "Q28804177"
+    },
+    {
+      "title": "Lily Queen",
+      "qid": "Q19099330"
+    },
+    {
+      "title": "Magnetic Rag",
+      "qid": "Q3843309",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/joplin/217003aa_magnetic_rag_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/joplin/196s_magnetic_rag_(1914)_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/joplin/magnetic_rag_s_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Maple Leaf Rag",
+      "qid": "Q277463",
+      "key": "A♭ major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1897,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/joplin/9725s_maple_leaf_rag_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/joplin_maple_leaf_rag_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Maple Leaf Rag",
+      "qid": "Q110699057",
+      "key": "A♭ major",
+      "instruments": [
+        "Piano"
+      ]
+    },
+    {
+      "title": "March Majestic",
+      "qid": "Q28472296"
+    },
+    {
+      "title": "Original Rags",
+      "qid": "Q7102574",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/joplin_original_rags_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Palm Leaf Rag",
+      "qid": "Q28549584"
+    },
+    {
+      "title": "Paragon Rag",
+      "qid": "Q28974064"
+    },
+    {
+      "title": "Peacherine Rag",
+      "qid": "Q11331774",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/joplin_peacherine_rag_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pine Apple Rag",
+      "qid": "Q11328696",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/joplin/156s_pineapple_rag_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/joplin/524s_pineapple_rag_(1908)_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pleasant Moments",
+      "qid": "Q28942744"
+    },
+    {
+      "title": "Princeton: A Search for Answers",
+      "qid": "Q7244927"
+    },
+    {
+      "title": "Reflection Rag",
+      "qid": "Q29034078"
+    },
+    {
+      "title": "Rose Leaf Rag",
+      "qid": "Q30116491"
+    },
+    {
+      "title": "School of Ragtime – 6 Exercises for Piano",
+      "qid": "Q29535043"
+    },
+    {
+      "title": "School of Ragtime, Exercise No. 1",
+      "qid": "Q29540464"
+    },
+    {
+      "title": "School of Ragtime, Exercise No. 2",
+      "qid": "Q29540770"
+    },
+    {
+      "title": "School of Ragtime, Exercise No. 3",
+      "qid": "Q29540915"
+    },
+    {
+      "title": "School of Ragtime, Exercise No. 4",
+      "qid": "Q29541025"
+    },
+    {
+      "title": "School of Ragtime, Exercise No. 5",
+      "qid": "Q29541088"
+    },
+    {
+      "title": "School of Ragtime, Exercise No. 6",
+      "qid": "Q29541175"
+    },
+    {
+      "title": "Scott Joplin",
+      "qid": "Q12127336"
+    },
+    {
+      "title": "Scott Joplin’s New Rag",
+      "qid": "Q29003610",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/ragtime/scott_1169s_new_era_rag_(1919)_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Searchlight Rag",
+      "qid": "Q7441737"
+    },
+    {
+      "title": "Silver Swan Rag",
+      "qid": "Q7516448",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/joplin/silver_swan_rag_s_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Solace",
+      "qid": "Q11315379",
+      "key": "F major",
+      "instruments": [
+        "Piano"
+      ]
+    },
+    {
+      "title": "Solace",
+      "qid": "Q28940825"
+    },
+    {
+      "title": "Something Doing",
+      "qid": "Q29045761",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/joplin/197s_something_doin'_(1903)_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/joplin/something_doin'_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/joplin/217003ba_something_doin_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Stoptime Rag",
+      "qid": "Q29002267",
+      "key": "C major",
+      "year_composed": 1910
+    },
+    {
+      "title": "Sugar Cane",
+      "qid": "Q28924092"
+    },
+    {
+      "title": "Sunflower Slow Drag",
+      "qid": "Q7640039"
+    },
+    {
+      "title": "Swipesy Cakewalk",
+      "qid": "Q7658801",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/joplin_swipesy_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Cascades",
+      "qid": "Q28572869",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/joplin/cascades_a_rag_(1904)_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/joplin/cascades_rag_1006_s_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/joplin_cascades_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Chrysanthemum",
+      "qid": "Q11299178"
+    },
+    {
+      "title": "The Crush Collision March",
+      "qid": "Q28158040"
+    },
+    {
+      "title": "The Easy Winners",
+      "qid": "Q7731468",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/joplin/pineapple_rag_-_easy_winners_3010_d_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Entertainer",
+      "qid": "Q1890794",
+      "key": "F major",
+      "instruments": [
+        "Grand Piano"
+      ],
+      "year_composed": 1902,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/joplin/entertainer_518_s_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/joplin_entertainer_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Favorite",
+      "qid": "Q28555635"
+    },
+    {
+      "title": "The Gay Shoe Clerk",
+      "qid": "Q4516415"
+    },
+    {
+      "title": "The Nonpareil",
+      "qid": "Q28912883"
+    },
+    {
+      "title": "The Ragtime Dance",
+      "qid": "Q7759282"
+    },
+    {
+      "title": "The Rose-bud March",
+      "qid": "Q28803595"
+    },
+    {
+      "title": "The Strenuous Life",
+      "qid": "Q11312467"
+    },
+    {
+      "title": "The Sycamore",
+      "qid": "Q28556315"
+    },
+    {
+      "title": "Treemonisha",
+      "qid": "Q775812"
+    },
+    {
+      "title": "Wall Street Rag",
+      "qid": "Q28939629"
+    },
+    {
+      "title": "Weeping Willow",
+      "qid": "Q7979589",
+      "key": "G major",
+      "year_composed": 1903,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/joplin/weeping_willow_rag_198_s_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/joplin/weeping_willow_rag_(1911)_s_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/joplin/weeping_willow_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Dill pickles, Ragtime",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/new/johnson_90615s_dill_pickles_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Grace and beauty (1909)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/joplin/grace_&amp;_beauty_(1909)_s_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Old miss rag (1916)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/joplin/old_miss_rag_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Medley: Entertainer, Joplins new rag",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/joplin/9857s_scott_rags_(entertainer_and_new_rag)_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Rag-Time dance",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/joplin_ragtime_dance_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Joe Lamb's old rag (1907)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/ragtime/lamb_461s_joe_lambs_old_rag_(1907)_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Patricia rag (1916)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/ragtime/lamb_patricia_rag_(1916)_s_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The bee-hive rag (1959)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/ragtime/lamb_the_bee-hive_rag_0079_s_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Black bottom stomp (1919)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/ragtime/morton_9900s_black_bottom_stomp_(1919)_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Grandpas spells (1926)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/ragtime/morton_grandpa's_spells_(1926)_s_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Jelly Roll blues (1924)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/ragtime/morton_jelly_roll_blues_(1924)_s_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "London blues (1924)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/ragtime/morton_london_blues_(1924)_s_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mr. Jelly Lord (1923) �",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/ragtime/morton_mr_jelly_lord_1008_s_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mr. Jelly lord (1924)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/ragtime/morton_159s_mr_jelly_lord_(1924)_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Perfect rag + Frog-i-more rag (?)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/ragtime/morton_28-38s_perfect_rag_frog_i-more_rag_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "King Porter stomp (1924)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/ragtime/morton_9595s_king_porter_stomp_(1924)_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Milenberg joys (1925)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/ragtime/morton_3269s_milenberg_joys_(1925)_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Climax rag (1914) *",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/ragtime/scott_1168s_climax_rag_(1914)_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Hilarity rag (1910)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/ragtime/scott_64542s_hilarity_rag_(1910)_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Honeymoon rag (1916)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/ragtime/scott_403s_honeymoon_rag_(1916)_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Frog legs rag (1910)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/ragtime/scott_9762s_frog_legs_rag_(1907)_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pineapple Rag",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/JoplinS/PineappleRag/PineappleRag.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "A Breeze From Alabama",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/JoplinS/a-breeze-from-alabama/a-breeze-from-alabama.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Search-Light Rag",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/JoplinS/search/search.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sun Flower Slow Drag",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/JoplinS/sun-flower-slow-drag/sun-flower-slow-drag.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

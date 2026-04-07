@@ -1,0 +1,57 @@
+{
+  "works": [
+    {
+      "title": "Tamara",
+      "qid": "Q3514649"
+    },
+    {
+      "title": "Symphony No. 1",
+      "qid": "Q3507637"
+    },
+    {
+      "title": "Capriccio (Balakirev)",
+      "qid": "Q113834039"
+    },
+    {
+      "title": "Grand Fantasy on Russian Folksongs",
+      "qid": "Q116297803"
+    },
+    {
+      "title": "Islamey",
+      "qid": "Q1192074"
+    },
+    {
+      "title": "Piano Concerto No. 1",
+      "qid": "Q3686148"
+    },
+    {
+      "title": "Piano Concerto No. 2",
+      "qid": "Q3686151"
+    },
+    {
+      "title": "Piano Sonata No. 1",
+      "qid": "Q115957276"
+    },
+    {
+      "title": "Piano Sonata No. 2",
+      "qid": "Q3490071"
+    },
+    {
+      "title": "Symphony No. 2",
+      "qid": "Q3507704"
+    },
+    {
+      "title": "Thamar",
+      "qid": "Q19921403"
+    },
+    {
+      "title": "Toccata",
+      "qid": "Q111152235",
+      "key": "E major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1902
+    }
+  ]
+}

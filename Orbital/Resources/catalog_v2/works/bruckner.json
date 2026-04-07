@@ -1,0 +1,737 @@
+{
+  "works": [
+    {
+      "title": "Rondo in C minor",
+      "qid": "Q18121432"
+    },
+    {
+      "title": "Study Symphony",
+      "qid": "Q1831363"
+    },
+    {
+      "title": "Mass No. 2",
+      "qid": "Q1316554"
+    },
+    {
+      "title": "String Quintet (Bruckner)",
+      "qid": "Q1723173"
+    },
+    {
+      "title": "Symphony No. 4",
+      "qid": "Q231162",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=bruckner_symphony_4_1_(c)bakels.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=bruckner_symphony_4_2_(c)bakels.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=bruckner_symphony_4_3_(c)bakels.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=bruckner_symphony_4_4_(c)bakels.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=bruckner_symphony_7_1_(c)pajares.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=bruckner_symphony_8_1_(c)bakels.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=bruckner_symphony_8_2_(c)bakels.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=bruckner_symphony_8_3_(c)bakels.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=bruckner_symphony_8_4_(c)bakels.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ecce sacerdos magnus",
+      "qid": "Q18066978"
+    },
+    {
+      "title": "Symphony No. 9",
+      "qid": "Q275815"
+    },
+    {
+      "title": "Helgoland",
+      "qid": "Q324459"
+    },
+    {
+      "title": "Abendklänge, WAB 110",
+      "qid": "Q21998317"
+    },
+    {
+      "title": "Abendzauber, WAB 57",
+      "qid": "Q21998319"
+    },
+    {
+      "title": "Afferentur regi",
+      "qid": "Q18159549",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/bruckner_afferentur_regi_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Am Grabe, WAB 2",
+      "qid": "Q85516384"
+    },
+    {
+      "title": "An dem Feste, WAB 59",
+      "qid": "Q21998345"
+    },
+    {
+      "title": "Anton Bruckner：Symphony No.8 Munich Philharmonic Orchestra Hans Knappertsbusch conducting",
+      "qid": "Q131341298"
+    },
+    {
+      "title": "Arneth Cantata, WAB 61",
+      "qid": "Q18612615"
+    },
+    {
+      "title": "Asperges me, WAB 4",
+      "qid": "Q18640112"
+    },
+    {
+      "title": "Ave Maria",
+      "qid": "Q18205381",
+      "key": "F major",
+      "instruments": [
+        "Soprano",
+        "Alto",
+        "Tenor",
+        "Bass"
+      ],
+      "year_composed": 1861,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/bruckner_ave_maria_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ave Maria, WAB 5",
+      "qid": "Q18205291",
+      "key": "F major",
+      "instruments": [
+        "T11",
+        "T12",
+        "B11",
+        "B12",
+        "T21",
+        "T22",
+        "B21",
+        "B22"
+      ],
+      "year_composed": 1856
+    },
+    {
+      "title": "Ave Maria, WAB 7",
+      "qid": "Q18205293"
+    },
+    {
+      "title": "Ave Regina caelorum, WAB 8",
+      "qid": "Q18663611"
+    },
+    {
+      "title": "Bruckner's early Masses",
+      "qid": "Q18159835"
+    },
+    {
+      "title": "Cantatas",
+      "qid": "Q21998290"
+    },
+    {
+      "title": "Christus factus est, WAB 10",
+      "qid": "Q18347542"
+    },
+    {
+      "title": "Christus factus est, WAB 11",
+      "qid": "Q18347544",
+      "key": "F major",
+      "instruments": [
+        "Soprano",
+        "Alto",
+        "Tenor",
+        "Bass"
+      ],
+      "year_composed": 1884
+    },
+    {
+      "title": "Das Lied vom deutschen Vaterland, WAB 78",
+      "qid": "Q21998599"
+    },
+    {
+      "title": "Das edle Herz, WAB 65",
+      "qid": "Q21998476"
+    },
+    {
+      "title": "Das edle Herz, WAB 66",
+      "qid": "Q21998477"
+    },
+    {
+      "title": "Das hohe Lied, WAB 74",
+      "qid": "Q21998541"
+    },
+    {
+      "title": "Der Abendhimmel, WAB 55",
+      "qid": "Q21998313",
+      "key": "Ab major",
+      "instruments": [
+        "Tenor I",
+        "Tenor II",
+        "Bass I",
+        "Bass II"
+      ]
+    },
+    {
+      "title": "Der Abendhimmel, WAB 56",
+      "qid": "Q21998315"
+    },
+    {
+      "title": "Der Lehrerstand, WAB 77",
+      "qid": "Q21998593"
+    },
+    {
+      "title": "Der Mondabend",
+      "qid": "Q21998456"
+    },
+    {
+      "title": "Der deutsche Gesang, WAB 63",
+      "qid": "Q21998458"
+    },
+    {
+      "title": "Des Dankes Wort sei mir vergönnt, WAB 62",
+      "qid": "Q21998446"
+    },
+    {
+      "title": "Die Geburt, WAB 69",
+      "qid": "Q21998518"
+    },
+    {
+      "title": "Dir, Herr, dir will ich mich ergeben",
+      "qid": "Q18663627",
+      "key": "A major",
+      "instruments": [
+        "Sopran",
+        "Alt",
+        "Tenor",
+        "Bass"
+      ]
+    },
+    {
+      "title": "Du bist wie eine Blume, WAB 64",
+      "qid": "Q21998470"
+    },
+    {
+      "title": "Entsagen, WAB 14",
+      "qid": "Q18612436"
+    },
+    {
+      "title": "Festgesang, WAB 15",
+      "qid": "Q18663638"
+    },
+    {
+      "title": "Festive Cantata",
+      "qid": "Q571895"
+    },
+    {
+      "title": "Four Orchestral Pieces",
+      "qid": "Q5475414"
+    },
+    {
+      "title": "Four Tantum ergo, WAB 41",
+      "qid": "Q18663644"
+    },
+    {
+      "title": "Frühlingslied, WAB 68",
+      "qid": "Q21998513"
+    },
+    {
+      "title": "Germanenzug",
+      "qid": "Q5551889"
+    },
+    {
+      "title": "Herbstkummer, WAB 72",
+      "qid": "Q21998534"
+    },
+    {
+      "title": "Herbstlied, WAB 73",
+      "qid": "Q21998536"
+    },
+    {
+      "title": "Herz Jesu-Lied",
+      "qid": "Q18663651"
+    },
+    {
+      "title": "Iam lucis orto sidere",
+      "qid": "Q18663658",
+      "key": "G major",
+      "instruments": [
+        "Soprano",
+        "Alto",
+        "Tenor",
+        "Bass"
+      ],
+      "year_composed": 1868
+    },
+    {
+      "title": "Im April, WAB 75",
+      "qid": "Q21998554"
+    },
+    {
+      "title": "In jener letzten der Nächte",
+      "qid": "Q18663660",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=17/bruckner_in_jener_letzten_der_naechte_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Intermezzo in D minor",
+      "qid": "Q18161473"
+    },
+    {
+      "title": "Inveni David, WAB 19",
+      "qid": "Q18663661"
+    },
+    {
+      "title": "It Happened Here",
+      "qid": "Q129548"
+    },
+    {
+      "title": "Johan",
+      "qid": "Q63498428"
+    },
+    {
+      "title": "Kronstorfer Messe",
+      "qid": "Q18207005"
+    },
+    {
+      "title": "Laßt Jubeltöne laut erklingen",
+      "qid": "Q18663670"
+    },
+    {
+      "title": "Libera me, WAB 21",
+      "qid": "Q18663674"
+    },
+    {
+      "title": "Libera me, WAB 22",
+      "qid": "Q18663676"
+    },
+    {
+      "title": "Locus iste",
+      "qid": "Q1124334",
+      "key": "C major",
+      "instruments": [
+        "Soprano",
+        "Alto",
+        "Tenore",
+        "Basso"
+      ],
+      "year_composed": 1869,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/bruckner_gradual_locus_iste_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Magnificat",
+      "qid": "Q6731722"
+    },
+    {
+      "title": "Mass No. 1",
+      "qid": "Q1924064"
+    },
+    {
+      "title": "Mass No. 3",
+      "qid": "Q1472748"
+    },
+    {
+      "title": "Mayer Cantata, WAB 60",
+      "qid": "Q18663695"
+    },
+    {
+      "title": "Mein Herz und deine Stimme, WAB 79",
+      "qid": "Q21998640"
+    },
+    {
+      "title": "Messe für den Gründonnerstag",
+      "qid": "Q18162357"
+    },
+    {
+      "title": "Military march",
+      "qid": "Q18663699"
+    },
+    {
+      "title": "Missa solemnis",
+      "qid": "Q16952732"
+    },
+    {
+      "title": "Mitternacht, WAB 80",
+      "qid": "Q24963354"
+    },
+    {
+      "title": "Motets",
+      "qid": "Q18391244"
+    },
+    {
+      "title": "Nachruf, WAB 81",
+      "qid": "Q24085003"
+    },
+    {
+      "title": "O Du liebes Jesu-Kind",
+      "qid": "Q18663704"
+    },
+    {
+      "title": "Ode",
+      "qid": "Q57934077"
+    },
+    {
+      "title": "Orchestral pieces (Bruckner)",
+      "qid": "Q11334836"
+    },
+    {
+      "title": "Os justi",
+      "qid": "Q18663712",
+      "key": "Lydian mode",
+      "instruments": [
+        "Soprano",
+        "Alto",
+        "Tenor",
+        "Bass"
+      ],
+      "year_composed": 1879
+    },
+    {
+      "title": "Overture in G minor",
+      "qid": "Q7114051"
+    },
+    {
+      "title": "Pange lingua, WAB 31",
+      "qid": "Q18663719",
+      "key": "C major",
+      "instruments": [
+        "S",
+        "A",
+        "T",
+        "B"
+      ]
+    },
+    {
+      "title": "Pange lingua, WAB 33",
+      "qid": "Q18663721",
+      "key": "E minor",
+      "instruments": [
+        "Soprano",
+        "Alto",
+        "Tenor",
+        "Bass"
+      ]
+    },
+    {
+      "title": "Psalm 112",
+      "qid": "Q7253919"
+    },
+    {
+      "title": "Psalm 114",
+      "qid": "Q7253921"
+    },
+    {
+      "title": "Psalm 146",
+      "qid": "Q7253926"
+    },
+    {
+      "title": "Psalm 150 (Bruckner)",
+      "qid": "Q7253928"
+    },
+    {
+      "title": "Psalm 22",
+      "qid": "Q7253929"
+    },
+    {
+      "title": "Psalms",
+      "qid": "Q21998296"
+    },
+    {
+      "title": "Requiem",
+      "qid": "Q1369413",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/bruckner_mass_requiem_1_(c)cipoo.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/bruckner_mass_requiem_2_(c)cipoo.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/bruckner_mass_requiem_3_(c)cipoo.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/bruckner_mass_requiem_4_(c)cipoo.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/bruckner_mass_requiem_5_(c)cipoo.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/bruckner_mass_requiem_6_(c)cipoo.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/bruckner_mass_requiem_7_(c)cipoo.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/bruckner_mass_requiem_8_(c)cipoo.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/bruckner_mass_requiem_9_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Salvum fac populum tuum, WAB 40",
+      "qid": "Q18663751"
+    },
+    {
+      "title": "Senso",
+      "qid": "Q649600"
+    },
+    {
+      "title": "Sternschnuppen, WAB 85",
+      "qid": "Q24963364"
+    },
+    {
+      "title": "String Quartet",
+      "qid": "Q17025620",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/bruckner_string_quartet_c-minor_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ständchen, WAB 84",
+      "qid": "Q24963355"
+    },
+    {
+      "title": "Symphonic Prelude",
+      "qid": "Q18413315"
+    },
+    {
+      "title": "Symphony No. 1",
+      "qid": "Q163524"
+    },
+    {
+      "title": "Symphony No. 2",
+      "qid": "Q210483"
+    },
+    {
+      "title": "Symphony No. 3",
+      "qid": "Q223510"
+    },
+    {
+      "title": "Symphony No. 5",
+      "qid": "Q240200"
+    },
+    {
+      "title": "Symphony No. 6",
+      "qid": "Q246450"
+    },
+    {
+      "title": "Symphony No. 7",
+      "qid": "Q260988"
+    },
+    {
+      "title": "Symphony No. 8",
+      "qid": "Q270798"
+    },
+    {
+      "title": "Symphony in D minor",
+      "qid": "Q1990679",
+      "key": "E♭ major",
+      "instruments": [
+        "Trombone",
+        "Tuba"
+      ]
+    },
+    {
+      "title": "Sängerbund, WAB 82",
+      "qid": "Q24963377"
+    },
+    {
+      "title": "Tantum ergo, WAB 32",
+      "qid": "Q18663773"
+    },
+    {
+      "title": "Tantum ergo, WAB 42",
+      "qid": "Q18663775"
+    },
+    {
+      "title": "Tantum ergo, WAB 43",
+      "qid": "Q18663777"
+    },
+    {
+      "title": "Tantum ergo, WAB 44",
+      "qid": "Q18663779"
+    },
+    {
+      "title": "Te Deum",
+      "qid": "Q1387966"
+    },
+    {
+      "title": "Tota pulchra es",
+      "qid": "Q18164523",
+      "key": "A minor",
+      "instruments": [
+        "Soprano",
+        "Alto",
+        "Tenor",
+        "Bass"
+      ]
+    },
+    {
+      "title": "Trauungschor, WAB 49",
+      "qid": "Q18663796"
+    },
+    {
+      "title": "Träumen und Wachen, WAB 87",
+      "qid": "Q24963378"
+    },
+    {
+      "title": "Two Aequali",
+      "qid": "Q18589250"
+    },
+    {
+      "title": "Two Asperges me, WAB 3",
+      "qid": "Q19898094"
+    },
+    {
+      "title": "Two Totenlieder",
+      "qid": "Q18589175"
+    },
+    {
+      "title": "Um Mitternacht, WAB 89",
+      "qid": "Q24963329"
+    },
+    {
+      "title": "Um Mitternacht, WAB 90",
+      "qid": "Q24963350"
+    },
+    {
+      "title": "Vaterlandslied, WAB 92",
+      "qid": "Q24963387"
+    },
+    {
+      "title": "Vaterländisch Weinlied, WAB 91",
+      "qid": "Q24963390"
+    },
+    {
+      "title": "Veni Creator Spiritus, WAB 50",
+      "qid": "Q18663803"
+    },
+    {
+      "title": "Vergißmeinnicht, WAB 93",
+      "qid": "Q18663805"
+    },
+    {
+      "title": "Vexilla regis",
+      "qid": "Q18164675",
+      "key": "A minor",
+      "instruments": [
+        "Soprano",
+        "Alto",
+        "Tenor",
+        "Bass"
+      ]
+    },
+    {
+      "title": "Virga Jesse",
+      "qid": "Q18164683"
+    },
+    {
+      "title": "Volkslied, WAB 94",
+      "qid": "Q24963307"
+    },
+    {
+      "title": "Vor Arneths Grab, WAB 53",
+      "qid": "Q18663807"
+    },
+    {
+      "title": "Weltliche Chorwerke",
+      "qid": "Q18640030"
+    },
+    {
+      "title": "Wie bist du, Frühling, gut und treu, WAB 58",
+      "qid": "Q24963442"
+    },
+    {
+      "title": "Windhaager Messe",
+      "qid": "Q1778554"
+    },
+    {
+      "title": "Zur Vermählungsfeier, WAB 54",
+      "qid": "Q24085002"
+    },
+    {
+      "title": "(1st part) � MIDI | (2nd part)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=bruckner_te_deum_(c)unknown.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Quintet for 2 violins, 2 violas and cello in F major (1876)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/bruckner_quintet_for_violins_violas_cello_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Dextera Domini for choir",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=12/bruckner_dextera_domini_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Perger Präludium",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 4.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/BrucknerA/WAB129/perger/perger.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

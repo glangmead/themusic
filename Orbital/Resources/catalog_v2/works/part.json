@@ -1,0 +1,565 @@
+{
+  "works": [
+    {
+      "title": "Perpetuum mobile, Op. 10",
+      "qid": "Q3375554"
+    },
+    {
+      "title": "Es sang vor Iangen Jahren",
+      "qid": "Q3057618"
+    },
+    {
+      "title": "Te Deum",
+      "qid": "Q3516657"
+    },
+    {
+      "title": "Magnificat",
+      "qid": "Q769460"
+    },
+    {
+      "title": "Nunc dimittis",
+      "qid": "Q3346395"
+    },
+    {
+      "title": "Adam's Lament",
+      "qid": "Q2823909"
+    },
+    {
+      "title": "Silhouette",
+      "qid": "Q3483854"
+    },
+    {
+      "title": "7 Magnificat-Antiphonen",
+      "qid": "Q3483383"
+    },
+    {
+      "title": "Adam's Passion",
+      "qid": "Q21511431"
+    },
+    {
+      "title": "After the Rain Pas de Deux",
+      "qid": "Q119412837"
+    },
+    {
+      "title": "Alleluia-Tropus",
+      "qid": "Q2837845"
+    },
+    {
+      "title": "An den Wassern zu Babel saßen wir und weinten",
+      "qid": "Q2844938"
+    },
+    {
+      "title": "And I Heard a Voice...",
+      "qid": "Q60835016"
+    },
+    {
+      "title": "And One of the Pharisees ...",
+      "qid": "Q2846029"
+    },
+    {
+      "title": "Annum per annum",
+      "qid": "Q2851805"
+    },
+    {
+      "title": "Anthem of St. John the Baptist",
+      "qid": "Q2852728"
+    },
+    {
+      "title": "Arbos",
+      "qid": "Q2859726"
+    },
+    {
+      "title": "Beatitudines",
+      "qid": "Q61109197"
+    },
+    {
+      "title": "Beatus Petronius",
+      "qid": "Q2893031"
+    },
+    {
+      "title": "Berliner Messe",
+      "qid": "Q2897278"
+    },
+    {
+      "title": "Bogoroditse Djevo",
+      "qid": "Q2908713"
+    },
+    {
+      "title": "Cameraman Kops in Mushroomland",
+      "qid": "Q1553019"
+    },
+    {
+      "title": "Cantate Domino canticum novum",
+      "qid": "Q2936560"
+    },
+    {
+      "title": "Cantique des degrés",
+      "qid": "Q2936621"
+    },
+    {
+      "title": "Cantus in Memoriam Benjamin Britten",
+      "qid": "Q1033914"
+    },
+    {
+      "title": "Cecilia, vergine romana",
+      "qid": "Q2943706"
+    },
+    {
+      "title": "Collage sur B-A-C-H",
+      "qid": "Q2982720"
+    },
+    {
+      "title": "Como cierva sedienta",
+      "qid": "Q2989724"
+    },
+    {
+      "title": "Concerto piccolo über B-A-C-H",
+      "qid": "Q2991758"
+    },
+    {
+      "title": "Credo",
+      "qid": "Q3002421"
+    },
+    {
+      "title": "Da Pacem",
+      "qid": "Q61111134"
+    },
+    {
+      "title": "Da pacem Domine",
+      "qid": "Q3011545"
+    },
+    {
+      "title": "Darf ich ...",
+      "qid": "Q3016056"
+    },
+    {
+      "title": "De profundis",
+      "qid": "Q2412967"
+    },
+    {
+      "title": "Diagrams",
+      "qid": "Q3025891"
+    },
+    {
+      "title": "Diamonds for the Dictatorship of the Proletariat",
+      "qid": "Q4096524"
+    },
+    {
+      "title": "Dopo la vittoria",
+      "qid": "Q3036927"
+    },
+    {
+      "title": "Eesti hällilaul",
+      "qid": "Q15943306"
+    },
+    {
+      "title": "Festina lente",
+      "qid": "Q3069822"
+    },
+    {
+      "title": "Four Easy Dances",
+      "qid": "Q3557996"
+    },
+    {
+      "title": "Fratres",
+      "qid": "Q3086716"
+    },
+    {
+      "title": "Für Alina",
+      "qid": "Q3092981"
+    },
+    {
+      "title": "Für Anna Maria",
+      "qid": "Q3092977"
+    },
+    {
+      "title": "Für Lennart in memoriam",
+      "qid": "Q1934839"
+    },
+    {
+      "title": "Gerry",
+      "qid": "Q1514846"
+    },
+    {
+      "title": "Gravitation: Variation in Time and Space",
+      "qid": "Q24807343"
+    },
+    {
+      "title": "Grüningers Fall",
+      "qid": "Q19502444"
+    },
+    {
+      "title": "Habitare fratres in unum",
+      "qid": "Q3125362"
+    },
+    {
+      "title": "Heaven",
+      "qid": "Q705887"
+    },
+    {
+      "title": "Hymn to a Great City",
+      "qid": "Q3144035"
+    },
+    {
+      "title": "I Am the True Vine",
+      "qid": "Q3147051"
+    },
+    {
+      "title": "In Praise of Love",
+      "qid": "Q3032174"
+    },
+    {
+      "title": "In principio",
+      "qid": "Q966185"
+    },
+    {
+      "title": "In spe",
+      "qid": "Q3149702"
+    },
+    {
+      "title": "Inquest of Pilot Pirx",
+      "qid": "Q2369914"
+    },
+    {
+      "title": "Is it far?",
+      "qid": "Q27056944"
+    },
+    {
+      "title": "Japón",
+      "qid": "Q1072282"
+    },
+    {
+      "title": "Kanon Pokajanen",
+      "qid": "Q3192715"
+    },
+    {
+      "title": "Khodorkovsky",
+      "qid": "Q1193254"
+    },
+    {
+      "title": "Kleine Litanei",
+      "qid": "Q42888996"
+    },
+    {
+      "title": "Königsberg express",
+      "qid": "Q18291604"
+    },
+    {
+      "title": "L'abbé Agathon",
+      "qid": "Q3201364"
+    },
+    {
+      "title": "La Sindone",
+      "qid": "Q3212834"
+    },
+    {
+      "title": "Lamentate",
+      "qid": "Q3216713"
+    },
+    {
+      "title": "Laul armastatule",
+      "qid": "Q3218628"
+    },
+    {
+      "title": "Les Amants du Pont-Neuf",
+      "qid": "Q1214555"
+    },
+    {
+      "title": "Litany",
+      "qid": "Q3256529"
+    },
+    {
+      "title": "Little Lili",
+      "qid": "Q2081164"
+    },
+    {
+      "title": "Littlemore Tractus",
+      "qid": "Q3256735"
+    },
+    {
+      "title": "Liturgy",
+      "qid": "Q6653381"
+    },
+    {
+      "title": "Maailma samm",
+      "qid": "Q3273666"
+    },
+    {
+      "title": "Meie aed",
+      "qid": "Q3304594"
+    },
+    {
+      "title": "Mein Weg",
+      "qid": "Q3304710"
+    },
+    {
+      "title": "Miserere",
+      "qid": "Q3316301"
+    },
+    {
+      "title": "Missa brevis",
+      "qid": "Q3316668"
+    },
+    {
+      "title": "Missa syllabica",
+      "qid": "Q3316672"
+    },
+    {
+      "title": "Morning Star",
+      "qid": "Q3324259"
+    },
+    {
+      "title": "Most Holy Mother of God",
+      "qid": "Q3324964"
+    },
+    {
+      "title": "Mozart-Adagio",
+      "qid": "Q3327034"
+    },
+    {
+      "title": "Musica syllabica",
+      "qid": "Q2397799"
+    },
+    {
+      "title": "My Heart's in the Highlands",
+      "qid": "Q3331186"
+    },
+    {
+      "title": "Nekroloog",
+      "qid": "Q3337890"
+    },
+    {
+      "title": "Orient & Occident",
+      "qid": "Q3356282"
+    },
+    {
+      "title": "Pari intervallo",
+      "qid": "Q3365062",
+      "key": "G♭ major",
+      "instruments": [
+        "Pipe Organ"
+      ],
+      "year_composed": 1976
+    },
+    {
+      "title": "Partita",
+      "qid": "Q3366955"
+    },
+    {
+      "title": "Passacaglia",
+      "qid": "Q3367810"
+    },
+    {
+      "title": "Passio Domini Nostri Jesu Christi secundum Joannem",
+      "qid": "Q3368364"
+    },
+    {
+      "title": "Peace upon You",
+      "qid": "Q3373804"
+    },
+    {
+      "title": "Pro et contra",
+      "qid": "Q3406193"
+    },
+    {
+      "title": "Promised Land",
+      "qid": "Q7249788"
+    },
+    {
+      "title": "Psalom",
+      "qid": "Q3409400"
+    },
+    {
+      "title": "Quintettino",
+      "qid": "Q3414641"
+    },
+    {
+      "title": "Rachel River",
+      "qid": "Q7279374"
+    },
+    {
+      "title": "Rozhdyestvyenskaya kolïbyelnaya",
+      "qid": "Q15910307"
+    },
+    {
+      "title": "Salve Regina",
+      "qid": "Q3470412"
+    },
+    {
+      "title": "Sarah Was Ninety Years Old",
+      "qid": "Q3473433"
+    },
+    {
+      "title": "Scala cromatica",
+      "qid": "Q3474921"
+    },
+    {
+      "title": "Sei gelobt, du Baum",
+      "qid": "Q3477778"
+    },
+    {
+      "title": "Sequentia",
+      "qid": "Q109044257"
+    },
+    {
+      "title": "Silouans Song",
+      "qid": "Q3483932"
+    },
+    {
+      "title": "Solfedžo",
+      "qid": "Q3489370"
+    },
+    {
+      "title": "Sonatines",
+      "qid": "Q3490286"
+    },
+    {
+      "title": "Sounds and Silence",
+      "qid": "Q1311666"
+    },
+    {
+      "title": "Spiegel im Spiegel",
+      "qid": "Q517901"
+    },
+    {
+      "title": "Stabat Mater",
+      "qid": "Q3495370"
+    },
+    {
+      "title": "Statuit ei Dominus",
+      "qid": "Q3497635"
+    },
+    {
+      "title": "Summa",
+      "qid": "Q3503633"
+    },
+    {
+      "title": "Symphony No. 1",
+      "qid": "Q2310014"
+    },
+    {
+      "title": "Symphony No. 2",
+      "qid": "Q3507728"
+    },
+    {
+      "title": "Symphony No. 3",
+      "qid": "Q3507773"
+    },
+    {
+      "title": "Symphony No. 4",
+      "qid": "Q3314173"
+    },
+    {
+      "title": "Tabula rasa",
+      "qid": "Q3513555"
+    },
+    {
+      "title": "Te Deum (Arvo Pärt)",
+      "qid": "Q42196287"
+    },
+    {
+      "title": "The Banishment",
+      "qid": "Q512070"
+    },
+    {
+      "title": "The Beatitudes",
+      "qid": "Q3519900"
+    },
+    {
+      "title": "The Deer's Cry",
+      "qid": "Q3520554"
+    },
+    {
+      "title": "The Letter",
+      "qid": "Q7746987"
+    },
+    {
+      "title": "The Man Who Waited",
+      "qid": "Q59619244"
+    },
+    {
+      "title": "The Very Best of Arvo Pärt",
+      "qid": "Q65262623"
+    },
+    {
+      "title": "The Woman with the Alabaster Box",
+      "qid": "Q3523421"
+    },
+    {
+      "title": "These Words…",
+      "qid": "Q3523925"
+    },
+    {
+      "title": "Time to Leave",
+      "qid": "Q913953"
+    },
+    {
+      "title": "Times and Winds",
+      "qid": "Q2920518"
+    },
+    {
+      "title": "Tribute to Caesar",
+      "qid": "Q3538947"
+    },
+    {
+      "title": "Triodion",
+      "qid": "Q3539451"
+    },
+    {
+      "title": "Trisagion",
+      "qid": "Q632784"
+    },
+    {
+      "title": "Trivium",
+      "qid": "Q3539753"
+    },
+    {
+      "title": "Ukuaru waltz",
+      "qid": "Q105186159"
+    },
+    {
+      "title": "Variationen zur Gesundung von Arinuschka",
+      "qid": "Q3554767"
+    },
+    {
+      "title": "Vater unser",
+      "qid": "Q3555018"
+    },
+    {
+      "title": "Veni creator",
+      "qid": "Q3555510"
+    },
+    {
+      "title": "Viis laulu lastele",
+      "qid": "Q3558233"
+    },
+    {
+      "title": "Virgencita",
+      "qid": "Q3560595"
+    },
+    {
+      "title": "Von Angesicht zu Angesicht",
+      "qid": "Q3563066"
+    },
+    {
+      "title": "Wallfahrtslied",
+      "qid": "Q3565494"
+    },
+    {
+      "title": "Wenn Bach Bienen gezüchtet hätte ...",
+      "qid": "Q3567272"
+    },
+    {
+      "title": "Which Was the Son of ...",
+      "qid": "Q3567731"
+    },
+    {
+      "title": "Zwei Beter",
+      "qid": "Q3576336"
+    },
+    {
+      "title": "Zwei slawische Psalmen",
+      "qid": "Q3576337"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 //  ClassicsCatalogTests.swift
 //  OrbitalTests
 //
-//  Tests for ClassicsCatalog Codable types and ClassicsCatalogLibrary data loading.
+//  Tests for catalog v2 Codable types and ClassicsCatalogLibrary data loading.
 //
 
 import Testing
@@ -12,127 +12,126 @@ import Foundation
 @Suite("ClassicsCatalogTests")
 struct ClassicsCatalogTests {
 
-  // MARK: - ComposerEntry
+  // MARK: - CatalogComposer
 
-  @Test("ComposerEntry decodes from JSON")
-  func composerEntryDecodes() throws {
+  @Test("CatalogComposer decodes from JSON")
+  func composerDecodes() throws {
     let json = """
     [{"slug":"bach","qid":"Q1339","name":"Johann Sebastian Bach",
-      "birth":"1685-03-21","death":"1750-07-28","pageviews_yearly":500000}]
+      "birth":"1685-03-21","death":"1750-07-28","era":"Baroque"}]
     """
-    let composers = try JSONDecoder().decode([ComposerEntry].self, from: Data(json.utf8))
+    let composers = try JSONDecoder().decode([CatalogComposer].self, from: Data(json.utf8))
     #expect(composers.count == 1)
     #expect(composers[0].slug == "bach")
     #expect(composers[0].name == "Johann Sebastian Bach")
     #expect(composers[0].birthYear == 1685)
     #expect(composers[0].deathYear == 1750)
-    #expect(composers[0].pageviewsYearly == 500_000)
   }
 
-  @Test("ComposerEntry lifespan formatting")
+  @Test("CatalogComposer lifespan formatting")
   func composerLifespan() throws {
-    let both = ComposerEntry(slug: "bach", qid: "Q1339", name: "Bach",
+    let both = CatalogComposer(slug: "bach", qid: "Q1339", name: "Bach",
       birth: "1685-03-21", death: "1750-07-28",
       portraitUrl: nil, wikipediaUrl: nil, wikipediaExtract: nil,
-      pageviewsYearly: nil, appleClassicalUrl: nil)
+      appleClassicalUrl: nil, era: nil, nationality: nil)
     #expect(both.lifespan == "1685 – 1750")
 
-    let birthOnly = ComposerEntry(slug: "x", qid: "Q1", name: "X",
+    let birthOnly = CatalogComposer(slug: "x", qid: "Q1", name: "X",
       birth: "1900-01-01", death: nil,
       portraitUrl: nil, wikipediaUrl: nil, wikipediaExtract: nil,
-      pageviewsYearly: nil, appleClassicalUrl: nil)
+      appleClassicalUrl: nil, era: nil, nationality: nil)
     #expect(birthOnly.lifespan == "b. 1900")
 
-    let neither = ComposerEntry(slug: "x", qid: "Q1", name: "X",
+    let neither = CatalogComposer(slug: "x", qid: "Q1", name: "X",
       birth: nil, death: nil,
       portraitUrl: nil, wikipediaUrl: nil, wikipediaExtract: nil,
-      pageviewsYearly: nil, appleClassicalUrl: nil)
+      appleClassicalUrl: nil, era: nil, nationality: nil)
     #expect(neither.lifespan == "")
   }
 
-  @Test("ComposerEntry lastName extraction")
+  @Test("CatalogComposer lastName extraction")
   func composerLastName() throws {
-    let bach = ComposerEntry(slug: "bach", qid: "Q1339", name: "Johann Sebastian Bach",
+    let bach = CatalogComposer(slug: "bach", qid: "Q1339", name: "Johann Sebastian Bach",
       birth: nil, death: nil,
       portraitUrl: nil, wikipediaUrl: nil, wikipediaExtract: nil,
-      pageviewsYearly: nil, appleClassicalUrl: nil)
+      appleClassicalUrl: nil, era: nil, nationality: nil)
     #expect(bach.lastName == "Bach")
   }
 
-  @Test("ComposerEntry handles zeroed dates gracefully")
-  func composerZeroedDate() throws {
-    // Some entries have "1455-00-00" which has year 1455 but month/day 0
+  // MARK: - CatalogWork
+
+  @Test("CatalogWork decodes from JSON")
+  func workDecodes() throws {
     let json = """
-    [{"slug":"des_prez","qid":"Q143100","name":"Josquin des Prez","birth":"1455-00-00"}]
+    {"title":"Toccata and Fugue in D minor, BWV 565","qid":"Q392734",
+     "catalog_numbers":{"BWV":"565"},"key":"D Minor",
+     "sources":[{"origin":"kern.ccarh.org","license":"CC BY-NC-SA 4.0",
+                  "midi_urls":["https://kern.humdrum.org/test.mid"]}]}
     """
-    let composers = try JSONDecoder().decode([ComposerEntry].self, from: Data(json.utf8))
-    #expect(composers[0].birthYear == 1455)
+    let work = try JSONDecoder().decode(CatalogWork.self, from: Data(json.utf8))
+    #expect(work.title == "Toccata and Fugue in D minor, BWV 565")
+    #expect(work.qid == "Q392734")
+    #expect(work.catalogNumbers?["BWV"] == "565")
+    #expect(work.catalogLabel == "BWV 565")
+    #expect(work.sources?.count == 1)
+    #expect(work.allMidiUrls.count == 1)
+    #expect(work.hasDirectDownload == true)
   }
 
-  // MARK: - PlaybackRendition
-
-  @Test("PlaybackRendition decodes from JSON")
-  func renditionDecodes() throws {
+  @Test("CatalogWork without sources")
+  func workWithoutSources() throws {
     let json = """
-    {"title":"Sinfonia in E major BWV 792","midi":"midi/BWV_792_Sinfonia_VI.mid",
-     "wikidata_id":"Q111804166","display_title":"15 Sinfonias",
-     "key":"E major","tempo_bpm":184,"n_measures":41,
-     "apple_music_classical_search_url":"https://classical.music.apple.com/us/search?q=Bach"}
+    {"title":"Some work"}
     """
-    let rendition = try JSONDecoder().decode(PlaybackRendition.self, from: Data(json.utf8))
-    #expect(rendition.title == "Sinfonia in E major BWV 792")
-    #expect(rendition.wikidataId == "Q111804166")
-    #expect(rendition.displayTitle == "15 Sinfonias")
-    #expect(rendition.tempoBpm == 184)
-    #expect(rendition.key == "E major")
+    let work = try JSONDecoder().decode(CatalogWork.self, from: Data(json.utf8))
+    #expect(work.sources == nil)
+    #expect(work.allMidiUrls.isEmpty)
+    #expect(work.hasDirectDownload == false)
   }
 
-  // MARK: - ComposerPlaybackCatalog
+  // MARK: - MIDISource
 
-  @Test("ComposerPlaybackCatalog decodes from JSON")
-  func playbackCatalogDecodes() throws {
-    let json = """
-    {"composer_name":"Johann Sebastian Bach","slug":"bach","era":"Baroque",
-     "works":[
-       {"title":"Sinfonia in E major BWV 792","midi":"midi/BWV_792.mid",
-        "wikidata_id":"Q111804166","display_title":"15 Sinfonias"}
-     ]}
-    """
-    let catalog = try JSONDecoder().decode(ComposerPlaybackCatalog.self, from: Data(json.utf8))
-    #expect(catalog.slug == "bach")
-    #expect(catalog.composerName == "Johann Sebastian Bach")
-    #expect(catalog.works.count == 1)
-    #expect(catalog.works[0].wikidataId == "Q111804166")
+  @Test("MIDISource requiresWebView for kunstderfuge")
+  func midiSourceRequiresWebView() throws {
+    let kdf = MIDISource(origin: "kunstderfuge.com", license: "personal use",
+      licenseUrl: nil, midiUrls: ["https://example.com/test.mid"])
+    #expect(kdf.requiresWebView == true)
+
+    let kern = MIDISource(origin: "kern.ccarh.org", license: "CC",
+      licenseUrl: nil, midiUrls: ["https://example.com/test.mid"])
+    #expect(kern.requiresWebView == false)
+  }
+
+  // MARK: - MIDIDownloadManager filename extraction
+
+  @Test("Filename extraction from Mutopia URL (path ends in .mid)")
+  func filenameFromMutopiaURL() {
+    let filename = MIDIDownloadManager.localFilename(
+      from: "https://www.mutopiaproject.org/ftp/BachJS/BWV565/ToccataFugue/ToccataFugue.mid",
+      existingIn: .temporaryDirectory.appending(path: "nonexistent_dir_\(UUID())")
+    )
+    #expect(filename == "ToccataFugue.mid")
+  }
+
+  @Test("Filename extraction from kern URL (file query param)")
+  func filenameFromKernURL() {
+    let filename = MIDIDownloadManager.localFilename(
+      from: "https://kern.humdrum.org/cgi-bin/ksdata?file=partita1-6.krn&l=users/craig/classical/bach/violin&format=midi",
+      existingIn: .temporaryDirectory.appending(path: "nonexistent_dir_\(UUID())")
+    )
+    #expect(filename == "partita1-6.mid")
+  }
+
+  @Test("Filename extraction from kdf URL (file query param with path)")
+  func filenameFromKdfURL() {
+    let filename = MIDIDownloadManager.localFilename(
+      from: "https://www.kunstderfuge.com/-/midi.asp?file=bach/organ_major_works_bwv-565_(c)unknown1.mid",
+      existingIn: .temporaryDirectory.appending(path: "nonexistent_dir_\(UUID())")
+    )
+    #expect(filename == "organ_major_works_bwv-565_(c)unknown1.mid")
   }
 
   // MARK: - ClassicsCatalogLibrary sorting
-
-  @Test("sortedComposers by pageviews descending")
-  @MainActor func sortedByPageviewsDescending() {
-    let lib = ClassicsCatalogLibrary()
-    // Inject test data directly
-    let entry1 = ComposerEntry(slug: "a", qid: "Q1", name: "Alpha", birth: "1600-01-01", death: nil,
-      portraitUrl: nil, wikipediaUrl: nil, wikipediaExtract: nil,
-      pageviewsYearly: 100, appleClassicalUrl: nil)
-    let entry2 = ComposerEntry(slug: "b", qid: "Q2", name: "Beta", birth: "1700-01-01", death: nil,
-      portraitUrl: nil, wikipediaUrl: nil, wikipediaExtract: nil,
-      pageviewsYearly: 500, appleClassicalUrl: nil)
-    let entry3 = ComposerEntry(slug: "c", qid: "Q3", name: "Gamma", birth: "1800-01-01", death: nil,
-      portraitUrl: nil, wikipediaUrl: nil, wikipediaExtract: nil,
-      pageviewsYearly: 250, appleClassicalUrl: nil)
-
-    // Use the sort logic directly
-    lib.sortOrder = .pageviews
-    lib.sortAscending = false
-
-    let sorted = [entry1, entry2, entry3].sorted { a, b in
-      let asc = (a.pageviewsYearly ?? 0) < (b.pageviewsYearly ?? 0)
-      return lib.sortAscending ? asc : !asc
-    }
-    #expect(sorted[0].slug == "b") // 500
-    #expect(sorted[1].slug == "c") // 250
-    #expect(sorted[2].slug == "a") // 100
-  }
 
   @Test("sortedComposers by lastName ascending")
   @MainActor func sortedByLastName() {
@@ -141,15 +140,15 @@ struct ClassicsCatalogTests {
     lib.sortAscending = true
 
     let entries = [
-      ComposerEntry(slug: "c", qid: "Q3", name: "Johann Chopin",
+      CatalogComposer(slug: "c", qid: "Q3", name: "Johann Chopin",
         birth: nil, death: nil, portraitUrl: nil, wikipediaUrl: nil, wikipediaExtract: nil,
-        pageviewsYearly: nil, appleClassicalUrl: nil),
-      ComposerEntry(slug: "a", qid: "Q1", name: "Johann Sebastian Bach",
+        appleClassicalUrl: nil, era: nil, nationality: nil),
+      CatalogComposer(slug: "a", qid: "Q1", name: "Johann Sebastian Bach",
         birth: nil, death: nil, portraitUrl: nil, wikipediaUrl: nil, wikipediaExtract: nil,
-        pageviewsYearly: nil, appleClassicalUrl: nil),
-      ComposerEntry(slug: "m", qid: "Q2", name: "Wolfgang Mozart",
+        appleClassicalUrl: nil, era: nil, nationality: nil),
+      CatalogComposer(slug: "m", qid: "Q2", name: "Wolfgang Mozart",
         birth: nil, death: nil, portraitUrl: nil, wikipediaUrl: nil, wikipediaExtract: nil,
-        pageviewsYearly: nil, appleClassicalUrl: nil)
+        appleClassicalUrl: nil, era: nil, nationality: nil)
     ]
 
     let sorted = entries.sorted { a, b in
@@ -161,83 +160,34 @@ struct ClassicsCatalogTests {
     #expect(sorted[2].slug == "m") // Mozart
   }
 
-  // MARK: - WorkGroup grouping
-
-  @Test("computeWorkGroups groups renditions by wikidata_id")
-  func workGroupsGroupByWikidataId() throws {
-    // Build a minimal ComposerPlaybackCatalog in memory and verify grouping logic
-    let json = """
-    {"composer_name":"Test Composer","slug":"test","works":[
-      {"title":"Prelude in C","midi":"midi/a.mid","wikidata_id":"Q100","display_title":"Preludes"},
-      {"title":"Prelude in D","midi":"midi/b.mid","wikidata_id":"Q100","display_title":"Preludes"},
-      {"title":"Fugue in G","midi":"midi/c.mid","wikidata_id":"Q200","display_title":"Fugues"}
-    ]}
-    """
-    let catalog = try JSONDecoder().decode(ComposerPlaybackCatalog.self, from: Data(json.utf8))
-
-    // Group manually using the same logic as computeWorkGroups
-    var groups: [String: [PlaybackRendition]] = [:]
-    var groupOrder: [String] = []
-    for rendition in catalog.works where rendition.midi != nil {
-      let key = rendition.wikidataId ?? "ungrouped/\(rendition.midi!)"
-      if groups[key] == nil { groups[key] = []; groupOrder.append(key) }
-      groups[key]!.append(rendition)
-    }
-    let workGroups = groupOrder.compactMap { key -> Orbital.WorkGroup? in
-      guard let renditions = groups[key], !renditions.isEmpty else { return nil }
-      return Orbital.WorkGroup(
-        wikidataId: key,
-        displayTitle: renditions.first?.displayTitle ?? key,
-        workEntry: nil,
-        renditions: renditions
-      )
-    }
-
-    #expect(workGroups.count == 2)
-    let preludesGroup = workGroups.first { $0.wikidataId == "Q100" }
-    #expect(preludesGroup?.renditions.count == 2)
-    #expect(preludesGroup?.displayTitle == "Preludes")
-    let fuguesGroup = workGroups.first { $0.wikidataId == "Q200" }
-    #expect(fuguesGroup?.renditions.count == 1)
-  }
-
   // MARK: - Disk-based catalog validation
 
-  /// Decodes every catalog_playback/[slug]/index.json that exists on disk and
-  /// asserts it parses without error, has non-empty works, and at least one
-  /// work with a non-nil MIDI path. This catches null-midi regressions and
-  /// type mismatches in any composer's JSON file.
-  @Test("All composer playback catalogs decode without error")
-  func allPlaybackCatalogsDecodeWithoutError() throws {
+  @Test("All catalog_v2 works files decode without error")
+  func allWorksFilesDecodeWithoutError() throws {
     let resourcesURL = URL(filePath: #filePath)
       .deletingLastPathComponent() // OrbitalTests/
       .deletingLastPathComponent() // Orbital/
       .appendingPathComponent("Resources")
 
-    // Load master composers list
-    let composersURL = resourcesURL.appendingPathComponent("catalog/composers.json")
+    let composersURL = resourcesURL.appendingPathComponent("catalog_v2/composers.json")
     let composersData = try Data(contentsOf: composersURL)
-    let composers = try JSONDecoder().decode([ComposerEntry].self, from: composersData)
+    let composers = try JSONDecoder().decode([CatalogComposer].self, from: composersData)
     #expect(!composers.isEmpty, "composers.json is empty")
 
     var testedCount = 0
     var failures: [String] = []
 
     for composer in composers {
-      let indexURL = resourcesURL
-        .appendingPathComponent("catalog_playback")
-        .appendingPathComponent(composer.slug)
-        .appendingPathComponent("index.json")
-      guard FileManager.default.fileExists(atPath: indexURL.path) else { continue }
+      let worksURL = resourcesURL
+        .appendingPathComponent("catalog_v2/works")
+        .appendingPathComponent("\(composer.slug).json")
+      guard FileManager.default.fileExists(atPath: worksURL.path) else { continue }
 
       do {
-        let data = try Data(contentsOf: indexURL)
-        let catalog = try JSONDecoder().decode(ComposerPlaybackCatalog.self, from: data)
-        let playableCount = catalog.works.filter { $0.midi != nil }.count
-        if catalog.works.isEmpty {
+        let data = try Data(contentsOf: worksURL)
+        let file = try JSONDecoder().decode(ComposerWorksFile.self, from: data)
+        if file.works.isEmpty {
           failures.append("\(composer.slug): works array is empty")
-        } else if playableCount == 0 {
-          failures.append("\(composer.slug): \(catalog.works.count) works but none have a midi path")
         }
         testedCount += 1
       } catch {
@@ -245,7 +195,7 @@ struct ClassicsCatalogTests {
       }
     }
 
-    #expect(testedCount > 0, "No catalog_playback index files found — check Resources path")
+    #expect(testedCount > 0, "No catalog_v2 works files found — check Resources path")
     #expect(failures.isEmpty, "Catalog failures:\n\(failures.joined(separator: "\n"))")
   }
 }

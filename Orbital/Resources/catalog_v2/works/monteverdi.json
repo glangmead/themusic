@@ -1,0 +1,580 @@
+{
+  "works": [
+    {
+      "title": "Terzo libro dei Madrigali",
+      "qid": "Q15990956",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=17/monteverdi_libri_dei_madrigali_3_9_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Alas, if you love so much",
+      "qid": "Q6049375",
+      "catalog_numbers": {
+        "SV": "85"
+      }
+    },
+    {
+      "title": "Madrigals for five voices, Book 4, SV. 75",
+      "qid": "Q3413638"
+    },
+    {
+      "title": "L'Orfeo",
+      "qid": "Q724008",
+      "catalog_numbers": {
+        "SV": "318"
+      }
+    },
+    {
+      "title": "Vespro della Beata Vergine",
+      "qid": "Q1898052",
+      "catalog_numbers": {
+        "SV": "206"
+      }
+    },
+    {
+      "title": "Tirsi e Clori",
+      "qid": "Q63949696",
+      "key": "D minor",
+      "instruments": [
+        "MusicXML Part"
+      ],
+      "year_composed": 1616
+    },
+    {
+      "title": "Se i languidi miei sguardi",
+      "qid": "Q99954357"
+    },
+    {
+      "title": "Il ballo delle ingrate",
+      "qid": "Q5996683",
+      "key": "F major",
+      "instruments": [
+        "Amore",
+        "Venere",
+        "Plutone",
+        "Viola"
+      ],
+      "year_composed": 1638
+    },
+    {
+      "title": "Madrigals of War and Love",
+      "qid": "Q42192535"
+    },
+    {
+      "title": "Pur ti miro, pur ti godo",
+      "qid": "Q2534234",
+      "key": "G major",
+      "instruments": [
+        "Poppea",
+        "Nerome",
+        "basso"
+      ],
+      "year_composed": 1642
+    },
+    {
+      "title": "Mouchette",
+      "qid": "Q522032"
+    },
+    {
+      "title": "The Condemned Women Dance",
+      "qid": "Q3793044"
+    },
+    {
+      "title": "Lost Homeland",
+      "qid": "Q3506269"
+    },
+    {
+      "title": "Orfeo",
+      "qid": "Q3885600"
+    },
+    {
+      "title": "Stattkus-Verzeichnis",
+      "qid": "Q1730878"
+    },
+    {
+      "title": "Gang of Four",
+      "qid": "Q25468"
+    },
+    {
+      "title": "Jan Lebenstein - Dziennik samotnika",
+      "qid": "Q3806908"
+    },
+    {
+      "title": "The Full Monteverdi",
+      "qid": "Q7735425"
+    },
+    {
+      "title": "Il combattimento di Tancredi e Clorinda",
+      "qid": "Q2541435"
+    },
+    {
+      "title": "Il lamento di Arianna",
+      "qid": "Q109244005"
+    },
+    {
+      "title": "Il ritorno d'Ulisse",
+      "qid": "Q57510778"
+    },
+    {
+      "title": "Il ritorno d'Ulisse in patria",
+      "qid": "Q907047",
+      "catalog_numbers": {
+        "SV": "325"
+      }
+    },
+    {
+      "title": "L'Arianna",
+      "qid": "Q1880621",
+      "catalog_numbers": {
+        "SV": "291"
+      }
+    },
+    {
+      "title": "L'incoronazione di Poppea",
+      "qid": "Q615522",
+      "catalog_numbers": {
+        "SV": "308"
+      },
+      "key": "G major",
+      "instruments": [
+        "Poppea",
+        "Nerone"
+      ]
+    },
+    {
+      "title": "Lamento d'Arianna",
+      "qid": "Q47008942",
+      "catalog_numbers": {
+        "SV": "22"
+      },
+      "key": "A♭ major",
+      "instruments": [
+        "Soprano",
+        "Piano"
+      ],
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=17/monteverdi_libri_dei_madrigali_6_1a_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lamento della Ninfa",
+      "qid": "Q136350158",
+      "instruments": [
+        "Soprano",
+        "Ténor",
+        "Basse",
+        "Harpe"
+      ]
+    },
+    {
+      "title": "Mass for 4 Voices, SV 190",
+      "qid": "Q15976718"
+    },
+    {
+      "title": "Selva morale e spirituale",
+      "qid": "Q1785042"
+    },
+    {
+      "title": "Sestina, Lagrime d'amante al sepolcro dell'amata",
+      "qid": "Q15990985"
+    },
+    {
+      "title": "lost operas by Claudio Monteverdi",
+      "qid": "Q3354589"
+    },
+    {
+      "title": "Felle amaro me potavit populus",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=coppini01.krn&l=users/craig/classical/monteverdi/contrafacta&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Qui pependit in cruce Deus meus",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=coppini03.krn&l=users/craig/classical/monteverdi/contrafacta&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pulchrae sunt genae tuae",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=coppini04.krn&l=users/craig/classical/monteverdi/contrafacta&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Stabat Virgo Maria",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=coppini05.krn&l=users/craig/classical/monteverdi/contrafacta&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Spernit Deus cor durum",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=coppini06.krn&l=users/craig/classical/monteverdi/contrafacta&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sancta Maria",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=coppini08.krn&l=users/craig/classical/monteverdi/contrafacta&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Maria quid ploras",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=coppini09.krn&l=users/craig/classical/monteverdi/contrafacta&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Te Jesu Christe",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=coppini10.krn&l=users/craig/classical/monteverdi/contrafacta&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ure me",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=coppini17.krn&l=users/craig/classical/monteverdi/contrafacta&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gloria tua",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=coppini18.krn&l=users/craig/classical/monteverdi/contrafacta&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Viues in corde",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=coppini20.krn&l=users/craig/classical/monteverdi/contrafacta&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Primo Libro de Madrigali (1587)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=17/monteverdi_libri_dei_madrigali_1_5_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=17/monteverdi_libri_dei_madrigali_1_10_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Secondo Libro de Madrigali (1590)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=17/monteverdi_libri_dei_madrigali_2_16_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Quarto Libro de Madrigali (1603)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=17/monteverdi_libri_dei_madrigali_4_12_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=17/monteverdi_libri_dei_madrigali_4_13_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Scherzi musicali a due e tre voci (1632)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=17/monteverdi_scherzi_a_due_voci_9_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Madrigali guerrieri et amorosi con alcun opuscoli (1638)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=3/monteverdi_gira_il_nemico_insidioso_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Il mio martir...",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/monteverdi_il_mio_martir_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Si come crescon",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/monteverdi_si_come_crescono_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Son questi i crespi crini",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/monteverdi_son_questi_i_crespi_crini_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lauda Jerusalem Dominum",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=3/monteverdi_lauda_jerusalem_dominum_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Duo Seraphim",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/MonteverdiC/Duo_Seraphim/Duo_Seraphim.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Laudate Dominum, Motet for Soprano or Tenor",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/MonteverdiC/Laudate_Dominum/Laudate_Dominum.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "O come sei gentile, Madrigale a 2 Soprani",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/MonteverdiC/O_come_sei_gentile/O_come_sei_gentile.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "T'amo mia vita",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/MonteverdiC/SV105/T_Amo_Mia_Vita/T_Amo_Mia_Vita.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Et resurrexit",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/MonteverdiC/SV260/Et_resurrexit/Et_resurrexit.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Beatus vir",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/MonteverdiC/SV268/Beatus_vir_primo/Beatus_vir_primo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ecce sacrum paratum convivium",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/MonteverdiC/SV299/Ecce_sacrum_paratum_convivium/Ecce_sacrum_paratum_convivium.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "O tu ch'innanzi morte (L'Orfeo)",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/MonteverdiC/SV318/OTuChInnanziMorte/OTuChInnanziMorte.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Salve Regina",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/MonteverdiC/SV327/Salve_Regina/Salve_Regina.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

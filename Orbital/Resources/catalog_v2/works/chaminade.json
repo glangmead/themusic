@@ -1,0 +1,68 @@
+{
+  "works": [
+    {
+      "title": "Feuillets d'album",
+      "qid": "Q137464336"
+    },
+    {
+      "title": "Feuilles d'automne",
+      "qid": "Q136906422"
+    },
+    {
+      "title": "Gavotte, piano, op. 162",
+      "qid": "Q136905279"
+    },
+    {
+      "title": "Arabesque, piano, no. 1, op. 61, G minor",
+      "qid": "Q137464278"
+    },
+    {
+      "title": "Automne",
+      "qid": "Q136906570"
+    },
+    {
+      "title": "Flute Concertino",
+      "qid": "Q2991728",
+      "key": "D major",
+      "instruments": [
+        "1 Flute",
+        "2 Oboes",
+        "2 Clarinets in B♭",
+        "2 Bassoons",
+        "Horns 1,2 in F",
+        "Horns 3,4 in F",
+        "Trombone 1,2",
+        "Trombone 3",
+        "Tuba",
+        "Timpani",
+        "Harp",
+        "Flute Solo",
+        "Violins I",
+        "Violins II",
+        "Violas",
+        "Violoncellos",
+        "Contrabasses"
+      ]
+    },
+    {
+      "title": "Les Amazones",
+      "qid": "Q112964471"
+    },
+    {
+      "title": "Marche américaine",
+      "qid": "Q136907098"
+    },
+    {
+      "title": "Sylvains",
+      "qid": "Q136907284"
+    },
+    {
+      "title": "Valse brillante, no. 3",
+      "qid": "Q137002870"
+    },
+    {
+      "title": "Études de concert, op. 35",
+      "qid": "Q136906503"
+    }
+  ]
+}

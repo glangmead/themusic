@@ -1,0 +1,965 @@
+{
+  "works": [
+    {
+      "title": "Poetic Tone Pictures",
+      "qid": "Q14136691"
+    },
+    {
+      "title": "Vier Lieder für Altstimme und Pianoforte",
+      "qid": "Q54943444"
+    },
+    {
+      "title": "Vier Stücke für das Pianoforte",
+      "qid": "Q4594648"
+    },
+    {
+      "title": "Piano Sonata",
+      "qid": "Q3490117",
+      "key": "E minor"
+    },
+    {
+      "title": "Humoresker",
+      "qid": "Q5058680"
+    },
+    {
+      "title": "In Autumn",
+      "qid": "Q6009021",
+      "key": "D minor"
+    },
+    {
+      "title": "Funeral March in Memory of Rikard Nordraak",
+      "qid": "Q4845508"
+    },
+    {
+      "title": "Peer Gynt",
+      "qid": "Q208094",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=27g/grieg_peer_gynt_1_anitras_dans_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-i/grieg_6522d_peer_gynt_suite_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-i/grieg_83302s_peer_gynt_suite_1_46_(c)keymer.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-i/grieg_70133a_peer_gynt_morning_mood_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-i/grieg_70143a_peer_gynt_suite_46_suite_2_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-i/grieg_peer_gynt_suite_1_46_3-4_1480_r_(c)mcclelland.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=grieg_peer_gynt_n_1_op_46_(hisamori).mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-i/grieg_86002S_peer_gynt_suite_2_55_(c)keymer.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-i/grieg_89504S_peer_gynt_suite_2_55_(c)keymer.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=grieg_peer_gynt_n_2_op_55_(hisamori).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Romanser",
+      "qid": "Q114195264"
+    },
+    {
+      "title": "25 Norwegian Folk Songs and Dances",
+      "qid": "Q3560104"
+    },
+    {
+      "title": "Scenes of Country Life",
+      "qid": "Q13636770"
+    },
+    {
+      "title": "Fire dikt fra Fiskerjenten",
+      "qid": "Q114755100"
+    },
+    {
+      "title": "Landkjenning",
+      "qid": "Q47520050"
+    },
+    {
+      "title": "Piano Concerto",
+      "qid": "Q44261",
+      "key": "A minor",
+      "instruments": [
+        "Flutes",
+        "Oboes",
+        "B♭ Clarinets",
+        "Bassoons",
+        "2 E♭ Horns",
+        "Piano",
+        "Violins 1",
+        "Violins 2",
+        "Violas",
+        "Violoncellos",
+        "Contrabasses"
+      ],
+      "year_composed": 1872,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-i/grieg_51027a_concerto_16_1_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-i/grieg_60723a_concerto_16_2_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-i/grieg_60733a_concerto_16_3_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=grieg_piano_concerto_54_(c)unknown.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Peer Gynt",
+      "qid": "Q14912776"
+    },
+    {
+      "title": "Peer Gynt Suites",
+      "qid": "Q3920286"
+    },
+    {
+      "title": "Solveig's Song",
+      "qid": "Q286945"
+    },
+    {
+      "title": "Anitra's Dance",
+      "qid": "Q16166590",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1875,
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=op46-3.krn&l=users/craig/classical/grieg/op46&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "In the Hall of the Mountain King",
+      "qid": "Q956115",
+      "key": "E♭ major",
+      "instruments": [
+        "Accordion",
+        "Alto Saxophone",
+        "Piano"
+      ],
+      "year_composed": 1875,
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=op46-4.krn&l=users/craig/classical/grieg/op46&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Morning Mood",
+      "qid": "Q2412053",
+      "key": "E major",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=op46-1.krn&l=users/craig/classical/grieg/op46&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ballade in the Form of Variations",
+      "qid": "Q4851353",
+      "key": "G minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=grieg_piece_65_5_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fem dikt av John Paulsen",
+      "qid": "Q117288411"
+    },
+    {
+      "title": "Album for Male Voices",
+      "qid": "Q13428942"
+    },
+    {
+      "title": "Album leaves",
+      "qid": "Q13636236"
+    },
+    {
+      "title": "Improvisations on Two Norwegian Folk Songs",
+      "qid": "Q5193815"
+    },
+    {
+      "title": "Norwegian Dances",
+      "qid": "Q126734773"
+    },
+    {
+      "title": "Two Elegiac Melodies",
+      "qid": "Q28960943",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=grieg_piece_47_3_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cello Sonata",
+      "qid": "Q4243094",
+      "key": "A minor"
+    },
+    {
+      "title": "Holberg-kantate",
+      "qid": "Q13727404"
+    },
+    {
+      "title": "Holberg Suite",
+      "qid": "Q777583",
+      "key": "B♭ major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1884
+    },
+    {
+      "title": "6 Norwegian Mountain Melodies",
+      "qid": "Q14326812"
+    },
+    {
+      "title": "Sechs Lieder",
+      "qid": "Q115169668"
+    },
+    {
+      "title": "Ave maris stella",
+      "qid": "Q13432390",
+      "key": "G major",
+      "instruments": [
+        "Soprano",
+        "Alto",
+        "Tenor",
+        "Bass"
+      ],
+      "year_composed": 1893
+    },
+    {
+      "title": "Digte af Vilhelm Krag",
+      "qid": "Q114839764"
+    },
+    {
+      "title": "Romanser (ældre og nyere)",
+      "qid": "Q114839754"
+    },
+    {
+      "title": "Haugtussa",
+      "qid": "Q5682503"
+    },
+    {
+      "title": "Syv barnlige sange",
+      "qid": "Q14438713"
+    },
+    {
+      "title": "Wedding Day at Troldhaugen",
+      "qid": "Q1661622",
+      "key": "D major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-i/grieg_56854a_wedding_day_at_troidhaugen_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "19 Norwegian Folk Songs",
+      "qid": "Q3032521"
+    },
+    {
+      "title": "Slåtter",
+      "qid": "Q14361294"
+    },
+    {
+      "title": "Stemninger",
+      "qid": "Q5105226"
+    },
+    {
+      "title": "4 Psalms after Old Norwegian Church Melodies",
+      "qid": "Q13636243"
+    },
+    {
+      "title": "M",
+      "qid": "Q127021",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=erotic-poem.krn&l=users/craig/classical/grieg/op43&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=native-country.krn&l=users/craig/classical/grieg/op43&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nightshade",
+      "qid": "Q1962852"
+    },
+    {
+      "title": "Shadow Man",
+      "qid": "Q7460549"
+    },
+    {
+      "title": "The Gnomes and the Mountain King",
+      "qid": "Q4140798"
+    },
+    {
+      "title": "Hvileløse hjerte",
+      "qid": "Q122960171"
+    },
+    {
+      "title": "The Stork",
+      "qid": "Q18121667"
+    },
+    {
+      "title": "Listener",
+      "qid": "Q4424116"
+    },
+    {
+      "title": "Scoop",
+      "qid": "Q682002"
+    },
+    {
+      "title": "Peer Gynt",
+      "qid": "Q2067101"
+    },
+    {
+      "title": "Slåtter op.72 & The Knut Dahle Slåtter",
+      "qid": "Q56404570",
+      "catalog_numbers": {
+        "Op": "72"
+      }
+    },
+    {
+      "title": "Fitna",
+      "qid": "Q245063"
+    },
+    {
+      "title": "4 Romances",
+      "qid": "Q55080877"
+    },
+    {
+      "title": "6 Poems",
+      "qid": "Q54957827"
+    },
+    {
+      "title": "Hjertets Melodier",
+      "qid": "Q54960017"
+    },
+    {
+      "title": "Holbergsuite",
+      "qid": "Q57934214"
+    },
+    {
+      "title": "Jeg elsker Dig!",
+      "qid": "Q10539863",
+      "key": "G major"
+    },
+    {
+      "title": "Lyric Pieces",
+      "qid": "Q2304758",
+      "catalog_numbers": {
+        "Op": "12"
+      },
+      "key": "E♭ major",
+      "instruments": [
+        "Piano"
+      ],
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=grieg_piece_12_1_(c)oguri.mid"
+          ]
+        },
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 4.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/GriegE/O12/No03_Albumblatt/No03_Albumblatt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lyric Suite",
+      "qid": "Q6709992"
+    },
+    {
+      "title": "March of the Trolls",
+      "qid": "Q66643930",
+      "key": "D minor"
+    },
+    {
+      "title": "Peer Gynt",
+      "qid": "Q47434670",
+      "key": "A major",
+      "instruments": [
+        "Anna",
+        "Accordion",
+        "Alto Saxophone",
+        "Piano"
+      ]
+    },
+    {
+      "title": "Romances and Ballades",
+      "qid": "Q55004265"
+    },
+    {
+      "title": "Sigurd Jorsalfar",
+      "qid": "Q3483737"
+    },
+    {
+      "title": "Song of Norway",
+      "qid": "Q72047"
+    },
+    {
+      "title": "Strange Music",
+      "qid": "Q96041828"
+    },
+    {
+      "title": "String Quartet No. 1",
+      "qid": "Q745514",
+      "key": "G minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/grieg_string_quartet_27_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Symphonic Dances",
+      "qid": "Q3015689"
+    },
+    {
+      "title": "Symphony No. 1 in C minor",
+      "qid": "Q11374065"
+    },
+    {
+      "title": "To brune Øjne",
+      "qid": "Q136721083",
+      "key": "G major"
+    },
+    {
+      "title": "Violin Sonata No. 1 in F Major, Op. 8",
+      "qid": "Q3490221",
+      "catalog_numbers": {
+        "Op": "8"
+      },
+      "key": "F major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/grieg_sonata_for_violin_8_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Violin Sonata No. 2",
+      "qid": "Q5978989",
+      "key": "G major"
+    },
+    {
+      "title": "Violin Sonata No. 3",
+      "qid": "Q6127146",
+      "key": "C minor"
+    },
+    {
+      "title": "Violin Sonatas",
+      "qid": "Q54412929",
+      "key": "G major"
+    },
+    {
+      "title": "Wir Deutschen",
+      "qid": "Q2585379"
+    },
+    {
+      "title": "Butterfly",
+      "catalog_numbers": {
+        "Op": "43/1"
+      },
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=butterfly.krn&l=users/craig/classical/grieg/op43&format=midi"
+          ]
+        },
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=grieg_piece_43_1_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Little Bird",
+      "catalog_numbers": {
+        "Op": "43/4"
+      },
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=little-bird.krn&l=users/craig/classical/grieg/op43&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Solitary traveller",
+      "catalog_numbers": {
+        "Op": "43/2"
+      },
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=solitary-traveller.krn&l=users/craig/classical/grieg/op43&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "To Spring",
+      "catalog_numbers": {
+        "Op": "43/6"
+      },
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=to-spring.krn&l=users/craig/classical/grieg/op43&format=midi"
+          ]
+        },
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=grieg_piece_43_6_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-i/grieg_68711a_to_spring_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-i/grieg_55513a_to_spring_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "2-3. Adagio - Allegro moderato molto e marcato [different roll]",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-i/grieg_51467a_concerto_16_2-3_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata for violin and piano in G major, Op. 13",
+      "catalog_numbers": {
+        "Op": "13"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/grieg_sonata_for_violin_13_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata for violin and piano in e minor, Op. 45",
+      "catalog_numbers": {
+        "Op": "45"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/grieg_sonata_for_violin_45_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonate for piano in e minor, Op. 7 [complete]",
+      "catalog_numbers": {
+        "Op": "7"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=grieg_sonata_in_e_minor_op_7_(hisamori).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ballade in g minor Op. 24",
+      "catalog_numbers": {
+        "Op": "24"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=grieg_ballade_in_g_minor_op_24_(hisamori).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Norwegische Tanze, Op. 35",
+      "catalog_numbers": {
+        "Op": "35"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=grieg_norwegische_tanze_op_35_(hisamori).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Suite im alten Stil Aus Holberg Zeit, Op. 40",
+      "catalog_numbers": {
+        "Op": "40"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=grieg_aus_holberger_zeit_op_40_(hisamori).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "9. Berceuse, Op. 38 No. 1",
+      "catalog_numbers": {
+        "Op": "38/1"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=grieg_piece_38_1_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "24. Album leaf, Op. 47 No. 2",
+      "catalog_numbers": {
+        "Op": "47/2"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=grieg_piece_47_2_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "33. Notturno, Op. 54 No. 4",
+      "catalog_numbers": {
+        "Op": "54/4"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=grieg_piece_54_4_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "41. Home sickness, Op. 57 No. 6",
+      "catalog_numbers": {
+        "Op": "57/6"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=grieg_piece_57_6_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "49. Peasant's song, Op. 65 No. 2",
+      "catalog_numbers": {
+        "Op": "65/2"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=grieg_piece_65_2_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "56. At your feet, Op. 68 No. 3",
+      "catalog_numbers": {
+        "Op": "68/3"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=grieg_piece_68_3_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "66. Remembrances, Op. 71 No. 7",
+      "catalog_numbers": {
+        "Op": "71/7"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=grieg_piece_71_7_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Last spring [Letzer Fr�hling], Op. 34 No. 2 *",
+      "catalog_numbers": {
+        "Op": "34/2"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-i/grieg_83406s_letzer_fruhling_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata No. 16 in C major KV 545 (original date 1788), arranged for two pianos {+}",
+      "catalog_numbers": {
+        "KV": "545"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=33/mozart-grieg_sonata_c-major_2-pianos_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=33/mozart-grieg_sonata_c-major_2-pianos_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=33/mozart-grieg_sonata_c-major_2-pianos_3_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "2. Last Spring",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=grieg_elegiac_melodies_34_2_(c)pajares.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ases Tod",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/GriegE/O46/02-lamortdase/02-lamortdase.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Aase's Death from Peer Gynt Suite I",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/GriegE/O46/02-lamortdase-strings/02-lamortdase-strings-lys/header.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Anitra's Dance (Tanz) from Peer Gynt Suite I",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/GriegE/O46/03-anitrasdance/03-anitrasdance-lys/header.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ich liebe dich",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/GriegE/O5/grieg-ich-liebe-dich/grieg-ich-liebe-dich.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Troldtog (March of the Dwarfs)",
+      "catalog_numbers": {
+        "Op": "54/3"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/GriegE/O54/Troldtog/Troldtog.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Hjemkomst",
+      "catalog_numbers": {
+        "Op": "58/1"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/GriegE/O58/Hjemkomst/Hjemkomst.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Wedding-day at Troldhaugen",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/GriegE/O65/troldhaugen/troldhaugen.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

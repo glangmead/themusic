@@ -1,0 +1,126 @@
+{
+  "works": [
+    {
+      "title": "Iris",
+      "qid": "Q474647"
+    },
+    {
+      "title": "Nerone",
+      "qid": "Q733538"
+    },
+    {
+      "title": "A Giacomo Leopardi",
+      "qid": "Q109244501"
+    },
+    {
+      "title": "Alla gioja",
+      "qid": "Q109244450"
+    },
+    {
+      "title": "Amica",
+      "qid": "Q305422"
+    },
+    {
+      "title": "Cavalleria rusticana",
+      "qid": "Q221806",
+      "key": "F major",
+      "instruments": [
+        "Piano"
+      ]
+    },
+    {
+      "title": "Cavalleria rusticana",
+      "qid": "Q3663918"
+    },
+    {
+      "title": "Cavalleria rusticana",
+      "qid": "Q3663919",
+      "key": "B♭ major",
+      "instruments": [
+        "A Clarinet",
+        "Organ",
+        "Harp",
+        "Violin",
+        "Violins 2",
+        "Violas",
+        "Violoncellos"
+      ]
+    },
+    {
+      "title": "Guglielmo Ratcliff",
+      "qid": "Q578781"
+    },
+    {
+      "title": "I Rantzau",
+      "qid": "Q460755"
+    },
+    {
+      "title": "Il piccolo Marat",
+      "qid": "Q467605"
+    },
+    {
+      "title": "Isabeau",
+      "qid": "Q932030"
+    },
+    {
+      "title": "Just a few flowers",
+      "qid": "Q54983683"
+    },
+    {
+      "title": "L'amico Fritz",
+      "qid": "Q578706"
+    },
+    {
+      "title": "Le maschere",
+      "qid": "Q238785"
+    },
+    {
+      "title": "Lodoletta",
+      "qid": "Q751851"
+    },
+    {
+      "title": "Parisina",
+      "qid": "Q778652"
+    },
+    {
+      "title": "Pinotta",
+      "qid": "Q751845"
+    },
+    {
+      "title": "Raging Bull",
+      "qid": "Q220780"
+    },
+    {
+      "title": "Rapsodia satanica",
+      "qid": "Q3930287"
+    },
+    {
+      "title": "Silvano",
+      "qid": "Q908276"
+    },
+    {
+      "title": "Sì",
+      "qid": "Q17033979"
+    },
+    {
+      "title": "Tonight or Never",
+      "qid": "Q3927729"
+    },
+    {
+      "title": "Tu ch'odi lo mio grido",
+      "qid": "Q54983665"
+    },
+    {
+      "title": "Vistilia, scene dei tempi di Tiberio",
+      "qid": "Q111337372"
+    },
+    {
+      "title": "You know, mamma",
+      "qid": "Q54983630"
+    },
+    {
+      "title": "Zanetto",
+      "qid": "Q751863"
+    }
+  ]
+}

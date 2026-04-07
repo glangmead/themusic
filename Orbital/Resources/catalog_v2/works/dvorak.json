@@ -1,0 +1,1047 @@
+{
+  "works": [
+    {
+      "title": "Symphony No. 1",
+      "qid": "Q163532",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/symphony_4_1_(c)cvikl.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/symphony_4_2_(c)cvikl.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/symphony_4_3_(c)cvikl.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/symphony_4_4_(c)cvikl.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/symphony_5_3_(c)cvikl.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/symphony_7_1_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/symphony_7_2_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/symphony_7_3_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/symphony_7_4_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/symphony_9_1_(c)cvikl.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/symphony_9_2_(c)cvikl.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/symphony_9_3_(c)cvikl.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/symphony_9_4_(c)cvikl.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Alfred",
+      "qid": "Q3499250"
+    },
+    {
+      "title": "King and Charcoal Burner",
+      "qid": "Q6412175"
+    },
+    {
+      "title": "The Stubborn Lovers",
+      "qid": "Q7767095"
+    },
+    {
+      "title": "Piano Trio No. 1",
+      "qid": "Q11331296"
+    },
+    {
+      "title": "String Quintet No. 2",
+      "qid": "Q126243"
+    },
+    {
+      "title": "Vanda",
+      "qid": "Q2547832"
+    },
+    {
+      "title": "Piano Concerto",
+      "qid": "Q383974",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/dvorak_piano_concerto_33_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/dvorak_piano_concerto_33_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/dvorak_piano_concerto_33_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=26/dvorak_concerto_2-pianos_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=26/dvorak_concerto_2-pianos_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=26/dvorak_concerto_2-pianos_3_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Piano Trio No. 2",
+      "qid": "Q48847621"
+    },
+    {
+      "title": "The Cunning Peasant",
+      "qid": "Q7484737"
+    },
+    {
+      "title": "Romance in F minor",
+      "qid": "Q19895537"
+    },
+    {
+      "title": "Serenade for Wind Instruments",
+      "qid": "Q3511385"
+    },
+    {
+      "title": "String Quartet No. 10",
+      "qid": "Q1949980",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/dvorak_string_quartet_51_(c)harfesoft.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/dvorak_string_quartet_61_(c)harfesoft.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/dvorak_string_quartet_96_(c)harfesoft.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/dvorak_string_quartet_105_(c)harfesoft.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/piano_quintet_81_1_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/piano_quintet_81_2_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/piano_quintet_81_3_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/piano_quintet_81_4_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Polonaise in E-flat major, B.100",
+      "qid": "Q125356176"
+    },
+    {
+      "title": "Cigánské melodie",
+      "qid": "Q12764130"
+    },
+    {
+      "title": "Sonata for Violin and Piano",
+      "qid": "Q33129816",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/dvorak_sonata_for_violin_57_(c)harfesoft.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/dvorak_sonata_for_violin_100_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "String Quartet No. 9",
+      "qid": "Q1977856"
+    },
+    {
+      "title": "The Jacobin",
+      "qid": "Q1194594"
+    },
+    {
+      "title": "Dimitrij",
+      "qid": "Q5277544"
+    },
+    {
+      "title": "Piano Trio No. 3",
+      "qid": "Q104329884"
+    },
+    {
+      "title": "Scherzo capriccioso",
+      "qid": "Q18396824"
+    },
+    {
+      "title": "Symphony No. 7",
+      "qid": "Q261040"
+    },
+    {
+      "title": "Saint Ludmila, Op. 71, B. 144",
+      "qid": "Q7401743"
+    },
+    {
+      "title": "Terzetto in C major",
+      "qid": "Q2406039"
+    },
+    {
+      "title": "Piano Quartet No. 2",
+      "qid": "Q104369236"
+    },
+    {
+      "title": "Requiem",
+      "qid": "Q205756"
+    },
+    {
+      "title": "In Nature's Realm",
+      "qid": "Q6010241"
+    },
+    {
+      "title": "Carnival Overture",
+      "qid": "Q5044098",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/karneval_op_92_(c)cvikl.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Te Deum",
+      "qid": "Q2398152"
+    },
+    {
+      "title": "String Quartet No. 12",
+      "qid": "Q172092"
+    },
+    {
+      "title": "String Quintet No. 3",
+      "qid": "Q499070"
+    },
+    {
+      "title": "Suite in A major",
+      "qid": "Q3503261"
+    },
+    {
+      "title": "American Suite",
+      "qid": "Q3503234"
+    },
+    {
+      "title": "String Quartet No. 14",
+      "qid": "Q2140836"
+    },
+    {
+      "title": "The Wild Dove",
+      "qid": "Q540216"
+    },
+    {
+      "title": "The Devil and Kate",
+      "qid": "Q1216733"
+    },
+    {
+      "title": "Rusalka",
+      "qid": "Q831255"
+    },
+    {
+      "title": "Armida",
+      "qid": "Q3312234"
+    },
+    {
+      "title": "12 Silhouettes",
+      "qid": "Q3038227"
+    },
+    {
+      "title": "2 Pieces",
+      "qid": "Q135209748"
+    },
+    {
+      "title": "A Hero's Song",
+      "qid": "Q4657289"
+    },
+    {
+      "title": "A Single Girl",
+      "qid": "Q3208935"
+    },
+    {
+      "title": "Bagatelles, Op. 47",
+      "qid": "Q96372972"
+    },
+    {
+      "title": "Ballade",
+      "qid": "Q104382520"
+    },
+    {
+      "title": "Biblical Songs, Op. 99",
+      "qid": "Q11145498"
+    },
+    {
+      "title": "Bruch & Dvořák: Violin Concertos",
+      "qid": "Q86521849"
+    },
+    {
+      "title": "Cello Concerto",
+      "qid": "Q1053081"
+    },
+    {
+      "title": "Cello Concerto in A major",
+      "qid": "Q2882314"
+    },
+    {
+      "title": "Cypresses quartet",
+      "qid": "Q2084761"
+    },
+    {
+      "title": "Cypřiše",
+      "qid": "Q12764286"
+    },
+    {
+      "title": "Czech Suite",
+      "qid": "Q2414230",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/czech_suite_op_39_1_(c)cvikl.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/czech_suite_op_39_2_(c)cvikl.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/czech_suite_op_39_3_(c)cvikl.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/czech_suite_op_39_4_(c)cvikl.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/czech_suite_op_39_5_(c)cvikl.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Erben cycle by Antonín Dvořák",
+      "qid": "Q2162735"
+    },
+    {
+      "title": "Goin' Home",
+      "qid": "Q138508490"
+    },
+    {
+      "title": "Humoresques, Op. 101",
+      "qid": "Q2622524",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/humoresque_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/humoresque_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/humoresque_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/humoresque_4_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/humoresque_5_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/humoresque_6_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/humoresque_7_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/humoresque_8_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Hussite Overture",
+      "qid": "Q28402025"
+    },
+    {
+      "title": "In Memoriam Yakov Kreizberg",
+      "qid": "Q86520095"
+    },
+    {
+      "title": "Julia Fischer at the BBC Proms",
+      "qid": "Q86523961"
+    },
+    {
+      "title": "Legends",
+      "qid": "Q3032592",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/dvorak_legend_59_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/dvorak_legend_59_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/dvorak_legend_59_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/dvorak_legend_59_4_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/dvorak_legend_59_5_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/dvorak_legend_59_6_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/dvorak_legend_59_7_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/dvorak_legend_59_8_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/dvorak_legend_59_9_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/dvorak_legend_59_10_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mass in D major",
+      "qid": "Q21098801"
+    },
+    {
+      "title": "Moravian Duets",
+      "qid": "Q6909348"
+    },
+    {
+      "title": "Moravské dvojspevy",
+      "qid": "Q12771953"
+    },
+    {
+      "title": "My Home",
+      "qid": "Q6945677"
+    },
+    {
+      "title": "Nocturne in B",
+      "qid": "Q19894788"
+    },
+    {
+      "title": "Othello",
+      "qid": "Q7108559"
+    },
+    {
+      "title": "Peacock",
+      "qid": "Q22977904"
+    },
+    {
+      "title": "Piano Quartet No. 1",
+      "qid": "Q104369235"
+    },
+    {
+      "title": "Piano Quintet No. 2",
+      "qid": "Q210227"
+    },
+    {
+      "title": "Piano Quintet No.1, Op.5",
+      "qid": "Q162922"
+    },
+    {
+      "title": "Piano Trio No. 4",
+      "qid": "Q1305653"
+    },
+    {
+      "title": "Pisen Rusalky o Mesicku = Rusalka's song to the moon = Cân Rusalka i'r lleuad",
+      "qid": "Q78527119"
+    },
+    {
+      "title": "Poetic Tone Poems",
+      "qid": "Q3538364",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/dvorak_poetic_85_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/dvorak_poetic_85_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/poetic_tone_pictures_85_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/dvorak_poetic_85_4_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/poetic_tone_pictures_85_5_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/dvorak_poetic_85_6_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/dvorak_poetic_85_7_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/poetic_tone_pictures_85_8_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/poetic_tone_pictures_85_9_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/dvorak_poetic_85_10_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/dvorak_poetic_85_11_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/dvorak_poetic_85_12_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/dvorak_poetic_85_13_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Quartet movement in F major",
+      "qid": "Q7269349"
+    },
+    {
+      "title": "Quartet movement in F major, B.40a",
+      "qid": "Q21188988"
+    },
+    {
+      "title": "Romantic Pieces",
+      "qid": "Q7362809"
+    },
+    {
+      "title": "Rusalka",
+      "qid": "Q116620788"
+    },
+    {
+      "title": "Scottish Dances",
+      "qid": "Q132853339",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=20/dvorak_scottish_dances_41_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Serenade for Strings",
+      "qid": "Q1758561",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/strings_serenade_1_(c)pajares.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/strings_serenade_2_(c)pajares.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/strings_serenade_3_(c)pajares.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/strings_serenade_4_(c)pajares.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/strings_serenade_5_(c)pajares.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Silent Woods",
+      "qid": "Q3960511"
+    },
+    {
+      "title": "Sitkovetsky Piano Trio plays Dvořák, Smetana & Suk",
+      "qid": "Q98590117"
+    },
+    {
+      "title": "Slavonic Dances",
+      "qid": "Q1468901",
+      "key": "A major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1886,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/dvorak_slavonic_72_1_4-hands_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/dvorak_slavonic_72_2_4-hands_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/dvorak_slavonic_72_3_4-hands_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/dvorak_slavonic_72_4_4-hands_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/dvorak_slavonic_72_5_4-hands_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/dvorak_slavonic_72_6_4-hands_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/dvorak_slavonic_72_7_4-hands_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/dvorak_slavonic_72_8_4-hands_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Slavonic Dances, Op. 46",
+      "qid": "Q92586586",
+      "catalog_numbers": {
+        "Op": "46"
+      },
+      "key": "B♭ major",
+      "instruments": [
+        "Piccolo",
+        "Flute 1",
+        "Flute 2",
+        "Oboe 1",
+        "Oboe 2",
+        "Bassoon 1",
+        "Bassoon 2",
+        "B♭ Clarinet 1",
+        "B♭ Clarinet 2",
+        "B♭ Clarinet 3",
+        "Bass Clarinet",
+        "Alto Saxophone 1",
+        "Alto Saxophone 2",
+        "Tenor Saxophone",
+        "Baritone Saxophone",
+        "B♭ Trumpet 1",
+        "B♭ Trumpet 2",
+        "F Horn 1 &amp;amp; 2",
+        "F Horn 3 &amp;amp; 4"
+      ],
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/slavonic_dance_46_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/slavonic_dance_46_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/slavonic_dance_46_4_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/slavonic_dance_46_6_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=26/dvorak-hilkemeijer_slavonic_dance_46_8_(c)hilkemeijer.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/dvorak_slavonic_46_1_4-hands_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/dvorak_slavonic_46_2_4-hands_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/dvorak_slavonic_46_3_4-hands_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/dvorak_slavonic_46_4_4-hands_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/dvorak_slavonic_46_5_4-hands_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/dvorak_slavonic_46_6_4-hands_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/dvorak_slavonic_46_7_4-hands_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/dvorak_slavonic_46_8_4-hands_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/dvorak_slavonic_dances_46_1_(c)kirschbaum.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/dvorak_slavonic_dances_46_2_(c)kirschbaum.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/dvorak_slavonic_dances_46_3_(c)kirschbaum.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/dvorak_slavonic_dances_46_4_(c)kirschbaum.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/dvorak_slavonic_dances_46_5_(c)kirschbaum.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/dvorak_slavonic_dances_46_6_(c)kirschbaum.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/dvorak_slavonic_dances_46_7_(c)kirschbaum.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/dvorak_slavonic_dances_46_8_(c)kirschbaum.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Song to the Moon",
+      "qid": "Q118391033",
+      "key": "G major"
+    },
+    {
+      "title": "Songs My Mother Taught Me",
+      "qid": "Q7561359"
+    },
+    {
+      "title": "Stabat Mater",
+      "qid": "Q2299142"
+    },
+    {
+      "title": "String Quartet No. 1",
+      "qid": "Q2580485"
+    },
+    {
+      "title": "String Quartet No. 11",
+      "qid": "Q920831"
+    },
+    {
+      "title": "String Quartet No. 13",
+      "qid": "Q2614872"
+    },
+    {
+      "title": "String Quartet No. 2",
+      "qid": "Q2359368"
+    },
+    {
+      "title": "String Quartet No. 3",
+      "qid": "Q14406495"
+    },
+    {
+      "title": "String Quartet No. 4",
+      "qid": "Q5031046"
+    },
+    {
+      "title": "String Quartet No. 5",
+      "qid": "Q2037168"
+    },
+    {
+      "title": "String Quartet No. 6",
+      "qid": "Q2261339"
+    },
+    {
+      "title": "String Quartet No. 7",
+      "qid": "Q2286611"
+    },
+    {
+      "title": "String Quartet No. 8",
+      "qid": "Q2117669"
+    },
+    {
+      "title": "String Quintet No. 1",
+      "qid": "Q104353531"
+    },
+    {
+      "title": "String Sextet",
+      "qid": "Q497162"
+    },
+    {
+      "title": "String quartets by Antonín Dvořák",
+      "qid": "Q1946275"
+    },
+    {
+      "title": "Symphonic Variations",
+      "qid": "Q7661427",
+      "key": "D major",
+      "instruments": [
+        "Flute",
+        "Flute 2",
+        "Oboes",
+        "C Clarinet",
+        "B♭ Clarinet",
+        "Bassoons",
+        "Horns in F",
+        "F Trumpet",
+        "Trombone",
+        "Bass Trombone",
+        "Timpani",
+        "Triangle",
+        "Violins I",
+        "Violins II",
+        "Violas",
+        "Violoncellos",
+        "Contrabasses"
+      ],
+      "year_composed": 1877
+    },
+    {
+      "title": "Symphony No. 2",
+      "qid": "Q210504"
+    },
+    {
+      "title": "Symphony No. 3",
+      "qid": "Q223516"
+    },
+    {
+      "title": "Symphony No. 4",
+      "qid": "Q231191"
+    },
+    {
+      "title": "Symphony No. 5",
+      "qid": "Q240202"
+    },
+    {
+      "title": "Symphony No. 6",
+      "qid": "Q246464"
+    },
+    {
+      "title": "Symphony No. 7 in D Minor, Op. 70, B. 141: I. Allegro Maestoso",
+      "qid": "Q81999278"
+    },
+    {
+      "title": "Symphony No. 7 in D Minor, Op. 70, B. 141: II. Poco Adagio",
+      "qid": "Q82001599"
+    },
+    {
+      "title": "Symphony No. 7 in D Minor, Op. 70, B. 141: III. Scherzo. Vivace (Poco Meno Mosso)",
+      "qid": "Q82002946"
+    },
+    {
+      "title": "Symphony No. 7 in D Minor, Op. 70, B. 141: IV. Finale. Allegro",
+      "qid": "Q82004062"
+    },
+    {
+      "title": "Symphony No. 8",
+      "qid": "Q270816"
+    },
+    {
+      "title": "Symphony No. 9",
+      "qid": "Q11985"
+    },
+    {
+      "title": "The Demon's Daughter",
+      "qid": "Q1197383"
+    },
+    {
+      "title": "The Don Juans",
+      "qid": "Q11821482"
+    },
+    {
+      "title": "The Golden Spinning Wheel",
+      "qid": "Q1171239"
+    },
+    {
+      "title": "The Noon Witch",
+      "qid": "Q1114713"
+    },
+    {
+      "title": "The Patoquet",
+      "qid": "Q1197658"
+    },
+    {
+      "title": "The Spectre's Bride",
+      "qid": "Q23008906"
+    },
+    {
+      "title": "The Water Goblin",
+      "qid": "Q1197908"
+    },
+    {
+      "title": "Tragic Overture",
+      "qid": "Q7832642"
+    },
+    {
+      "title": "Tri novogrécke básne",
+      "qid": "Q16518831"
+    },
+    {
+      "title": "Trio In F Minor, Op. 65 / Trio In D Minor, Op. 32",
+      "qid": "Q109046191"
+    },
+    {
+      "title": "Two little Pearls",
+      "qid": "Q135209834"
+    },
+    {
+      "title": "Violin Concerto",
+      "qid": "Q25609"
+    },
+    {
+      "title": "Violin Sonatina",
+      "qid": "Q2300887"
+    },
+    {
+      "title": "Ze Šumavy",
+      "qid": "Q137161695"
+    },
+    {
+      "title": "Šesť piesní z Rukopisu královédvorského",
+      "qid": "Q12781597"
+    },
+    {
+      "title": "Štyri piesne",
+      "qid": "Q12781843"
+    },
+    {
+      "title": "[Variations from 1 to 19]",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/symphonic_variations_1-19_(c)siu.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[Variations from 20 to 27]",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/symphonic_variations_20-27_(c)siu.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Romanticke kusy pro housle a klavir / Romantische St�cke for violin and piano, Op. 75 (1887)",
+      "catalog_numbers": {
+        "Op": "75"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/dvorak_romanische_stucke_75_1_(c)harfesoft.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/dvorak_romanische_stucke_75_2_(c)harfesoft.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/dvorak_romanische_stucke_75_3_(c)harfesoft.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/dvorak_romanische_stucke_75_4_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Trio in e minor for piano, violin and cello, Op. 90 (B 166, S 112) \"Dumky\" (1891)",
+      "catalog_numbers": {
+        "Op": "90"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/dvorak_trio_4_dumky_1-2_(c)edwards.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/dvorak_trio_4_dumky_3_(c)edwards.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/dvorak_trio_4_dumky_4_(c)edwards.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/dvorak_trio_4_dumky_5_(c)edwards.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/dvorak_trio_4_dumky_6_(c)edwards.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/dvorak_trio_for_violin_cello_piano_90_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "1-2. [Allegro ma non tanto - Dumka, Andante con moto]",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/dvorak_quintet_for_string_quartet_and_piano_81_1-2_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3-4. [Scherzo, Molto vivace - Finale Allegro]",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/dvorak_quintet_for_string_quartet_and_piano_81_3-4_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Silhouetty / Silhouettes, Op. 8 (1872)",
+      "catalog_numbers": {
+        "Op": "8"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/silhouettes_01_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/silhouettes_02_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/silhouettes_03_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/silhouettes_04_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/silhouettes_05_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/silhouettes_06_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/silhouettes_07_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/silhouettes_08_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/silhouettes_09_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/silhouettes_10_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/silhouettes_11_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/silhouettes_12_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Dumka, Op. 35 (1876)",
+      "catalog_numbers": {
+        "Op": "35"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=20/dvorak_dumka_35_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tema con Variazioni, Op. 36 (1876)",
+      "catalog_numbers": {
+        "Op": "36"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/theme_and_variations_36_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ceska suita: Polka in d minor, Op. 39, No. 2 (1879)",
+      "catalog_numbers": {
+        "Op": "39"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=20/dvorak_polka_39_2_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Furianty / Furiants in D major, Op. 42 No. 1 (1878)",
+      "catalog_numbers": {
+        "Op": "42/1"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=dvorak/furiant_42_1_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Klavirni skladby / Piano Pieces, Op. 52 (1880)",
+      "catalog_numbers": {
+        "Op": "52"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=20/dvorak_piano_pieces_52_1_impromptu_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=20/dvorak_piano_pieces_52_2_intermezzo_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=20/dvorak_piano_pieces_52_3_gigue_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=20/dvorak_piano_pieces_52_4_eclogue_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=20/dvorak_piano_pieces_52_5_allegro_molto_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=20/dvorak_piano_pieces_52_6_tempo_di_marcia_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Valciky / Waltzes, Op. 54 (1880)",
+      "catalog_numbers": {
+        "Op": "54"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/dvorak_waltzes_54_1_a_maj_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/dvorak_waltzes_54_2_a_min_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/dvorak_waltzes_54_3_e_maj_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/dvorak_waltzes_54_4_db_maj_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/dvorak_waltzes_54_5_g_min_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/dvorak_waltzes_54_6_f_maj_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/dvorak_waltzes_54_7_d_min_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/dvorak_waltzes_54_8_eb_maj_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Humoresque in G flat major, Op. 101 No. 7",
+      "catalog_numbers": {
+        "Op": "101/7"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-i/dvorak_55623a_humoresque_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-i/dvorak_6855w_humoresque_7_g-flat_major_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ave Maria, Op. 19b (1877)",
+      "catalog_numbers": {
+        "Op": "19"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=masses/dvorak_ave_maria_(c)hoessl.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Als die alte Mutter",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/DvorakA/O55/dvorak-als-die-alte-mutter/dvorak-als-die-alte-mutter.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

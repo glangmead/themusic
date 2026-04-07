@@ -1,0 +1,1177 @@
+{
+  "works": [
+    {
+      "title": "Man lebt nur einmal!",
+      "qid": "Q6746380"
+    },
+    {
+      "title": "Furioso Polka, Op. 260",
+      "qid": "Q3754811"
+    },
+    {
+      "title": "Dolci pianti",
+      "qid": "Q97844129"
+    },
+    {
+      "title": "Persischer",
+      "qid": "Q1426986"
+    },
+    {
+      "title": "Feuerfest!",
+      "qid": "Q11650744"
+    },
+    {
+      "title": "Freuet Euch des Lebens",
+      "qid": "Q3753130"
+    },
+    {
+      "title": "Die Fledermaus",
+      "qid": "Q464930"
+    },
+    {
+      "title": "The Gypsy Baron",
+      "qid": "Q464511",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/strauss_gypsy_baron_overture_(c)edwards.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Wiener Blut",
+      "qid": "Q1931598",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/strauss_6752d_wiener_blut_waltz_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "'S gibt nur a Kaiserstadt, 's gibt nur a Wien!",
+      "qid": "Q3596260"
+    },
+    {
+      "title": "2001: A Space Odyssey",
+      "qid": "Q103474"
+    },
+    {
+      "title": "A Night in Venice",
+      "qid": "Q1475658"
+    },
+    {
+      "title": "A Night in Venice",
+      "qid": "Q56276936"
+    },
+    {
+      "title": "A Tale of 2 Cities",
+      "qid": "Q4659946"
+    },
+    {
+      "title": "Abschied von St. Petersburg",
+      "qid": "Q4669675"
+    },
+    {
+      "title": "Abschieds-Rufe",
+      "qid": "Q3603816"
+    },
+    {
+      "title": "Accelerationen",
+      "qid": "Q3604070"
+    },
+    {
+      "title": "Adele's Laughing Song",
+      "qid": "Q28407694"
+    },
+    {
+      "title": "Albion-Polka",
+      "qid": "Q3608795"
+    },
+    {
+      "title": "Alexandrine-Polka",
+      "qid": "Q63637470"
+    },
+    {
+      "title": "Amazonen-Polka",
+      "qid": "Q63348061"
+    },
+    {
+      "title": "An der schönen blauen Donau",
+      "qid": "Q112325003"
+    },
+    {
+      "title": "Annen-Polka",
+      "qid": "Q3617967"
+    },
+    {
+      "title": "Annina",
+      "qid": "Q64209811"
+    },
+    {
+      "title": "Aschenbrödel",
+      "qid": "Q722394"
+    },
+    {
+      "title": "Auf der Jagd",
+      "qid": "Q974440"
+    },
+    {
+      "title": "Auf zum Tanze!",
+      "qid": "Q3629521"
+    },
+    {
+      "title": "Auf’s Korn",
+      "qid": "Q3629520"
+    },
+    {
+      "title": "Aurora-Polka",
+      "qid": "Q63529253"
+    },
+    {
+      "title": "Aus den Bergen",
+      "qid": "Q4822701"
+    },
+    {
+      "title": "Banditen-Galopp",
+      "qid": "Q3634095"
+    },
+    {
+      "title": "Bauern-Polka",
+      "qid": "Q3636941"
+    },
+    {
+      "title": "Bei uns Z'haus",
+      "qid": "Q3637497"
+    },
+    {
+      "title": "Bitte schön!",
+      "qid": "Q3640501"
+    },
+    {
+      "title": "Blindekuh",
+      "qid": "Q4926686"
+    },
+    {
+      "title": "Bluette",
+      "qid": "Q63878899"
+    },
+    {
+      "title": "Blumenfest-Polka",
+      "qid": "Q63410005"
+    },
+    {
+      "title": "Bonbon-Polka",
+      "qid": "Q63705512"
+    },
+    {
+      "title": "Boudu Saved from Drowning",
+      "qid": "Q1989547"
+    },
+    {
+      "title": "Bürgersinn",
+      "qid": "Q5005306"
+    },
+    {
+      "title": "Cagliostro in Wien",
+      "qid": "Q1025735"
+    },
+    {
+      "title": "Cagliostro-Walzer",
+      "qid": "Q3649790"
+    },
+    {
+      "title": "Carnevalsbilder",
+      "qid": "Q5044017"
+    },
+    {
+      "title": "Caroussel-Marsch",
+      "qid": "Q64441245"
+    },
+    {
+      "title": "Casanova",
+      "qid": "Q60577853"
+    },
+    {
+      "title": "Champagner-Polka",
+      "qid": "Q507849"
+    },
+    {
+      "title": "Das Spitzentuch der Königin",
+      "qid": "Q428893"
+    },
+    {
+      "title": "Debut-Quadrille",
+      "qid": "Q5248654"
+    },
+    {
+      "title": "Demolirer",
+      "qid": "Q954208"
+    },
+    {
+      "title": "Der Karneval in Rom",
+      "qid": "Q1734123"
+    },
+    {
+      "title": "Der Kobold",
+      "qid": "Q3705777"
+    },
+    {
+      "title": "Der lustige Krieg",
+      "qid": "Q1199437"
+    },
+    {
+      "title": "Die Bajadere",
+      "qid": "Q3707041"
+    },
+    {
+      "title": "Die Extravaganten",
+      "qid": "Q62889333"
+    },
+    {
+      "title": "Die Fledermaus",
+      "qid": "Q204673"
+    },
+    {
+      "title": "Die Fledermaus",
+      "qid": "Q1212466"
+    },
+    {
+      "title": "Die Fledermaus",
+      "qid": "Q3707054"
+    },
+    {
+      "title": "Die Fledermaus",
+      "qid": "Q4260282"
+    },
+    {
+      "title": "Die Fledermaus",
+      "qid": "Q51709116"
+    },
+    {
+      "title": "Die Fledermaus",
+      "qid": "Q86850350"
+    },
+    {
+      "title": "Die Göttin der Vernunft",
+      "qid": "Q11573550"
+    },
+    {
+      "title": "Die Oesterreicher",
+      "qid": "Q62075627"
+    },
+    {
+      "title": "Die Publicisten",
+      "qid": "Q3707083"
+    },
+    {
+      "title": "Die Tauben von San Marco (Doves of San Marco)",
+      "qid": "Q64209808"
+    },
+    {
+      "title": "Die Tänzerin Fanny Elßler",
+      "qid": "Q1216929"
+    },
+    {
+      "title": "Die jungen Wiener",
+      "qid": "Q1218673"
+    },
+    {
+      "title": "Diplomaten-Polka",
+      "qid": "Q3708888"
+    },
+    {
+      "title": "Dividenden",
+      "qid": "Q5284045"
+    },
+    {
+      "title": "Donauweibchen",
+      "qid": "Q3713807"
+    },
+    {
+      "title": "Du und du",
+      "qid": "Q3715613"
+    },
+    {
+      "title": "Egyptischer Marsch",
+      "qid": "Q1113545"
+    },
+    {
+      "title": "Ein Herz, ein Sinn!",
+      "qid": "Q5349578"
+    },
+    {
+      "title": "Eine Nacht in Venedig",
+      "qid": "Q1306554"
+    },
+    {
+      "title": "Electro-magnetische-Polka",
+      "qid": "Q63410003"
+    },
+    {
+      "title": "Electrofor-Polka",
+      "qid": "Q63943955"
+    },
+    {
+      "title": "Elisen-Polka",
+      "qid": "Q63479672"
+    },
+    {
+      "title": "Entweder - oder",
+      "qid": "Q64167164"
+    },
+    {
+      "title": "Es war so wunderschön",
+      "qid": "Q3732736"
+    },
+    {
+      "title": "Etwas Kleines",
+      "qid": "Q63637457"
+    },
+    {
+      "title": "Explosions-Polka",
+      "qid": "Q3736079"
+    },
+    {
+      "title": "Farewell to America",
+      "qid": "Q5435050"
+    },
+    {
+      "title": "Faschings-Lieder",
+      "qid": "Q1379584"
+    },
+    {
+      "title": "Fata Morgana",
+      "qid": "Q3740044"
+    },
+    {
+      "title": "Feenmärchen waltz",
+      "qid": "Q5441453"
+    },
+    {
+      "title": "Fest-Marsch",
+      "qid": "Q3743867"
+    },
+    {
+      "title": "Figaro-Polka",
+      "qid": "Q5447685"
+    },
+    {
+      "title": "Fledermaus-Quadrille, Op.363",
+      "qid": "Q3746557"
+    },
+    {
+      "title": "Flugschriften",
+      "qid": "Q3746822"
+    },
+    {
+      "title": "Freikugeln",
+      "qid": "Q3752996"
+    },
+    {
+      "title": "Frisch Heran!",
+      "qid": "Q3753344"
+    },
+    {
+      "title": "Frisch gewagt",
+      "qid": "Q64797253"
+    },
+    {
+      "title": "Frohsinns-Spenden",
+      "qid": "Q5505323"
+    },
+    {
+      "title": "From home",
+      "qid": "Q64006131"
+    },
+    {
+      "title": "Frühlingsstimmen",
+      "qid": "Q1472158"
+    },
+    {
+      "title": "Fürstin Ninetta",
+      "qid": "Q3755509"
+    },
+    {
+      "title": "Gartenlaube Waltz",
+      "qid": "Q5524321"
+    },
+    {
+      "title": "Gavotte der Königin",
+      "qid": "Q64781811"
+    },
+    {
+      "title": "Gedankenflug",
+      "qid": "Q63030666"
+    },
+    {
+      "title": "Glossen",
+      "qid": "Q5571902"
+    },
+    {
+      "title": "Graduation Ball",
+      "qid": "Q5592085"
+    },
+    {
+      "title": "Grillenbanner",
+      "qid": "Q5609166"
+    },
+    {
+      "title": "Gross-Wien",
+      "qid": "Q3777192"
+    },
+    {
+      "title": "Gunstwerber",
+      "qid": "Q1554860"
+    },
+    {
+      "title": "Haute volée-Polka",
+      "qid": "Q3783686"
+    },
+    {
+      "title": "Hell und voll",
+      "qid": "Q5706862"
+    },
+    {
+      "title": "Hellenen-Polka",
+      "qid": "Q63674673"
+    },
+    {
+      "title": "Herzenskönigin",
+      "qid": "Q64227000"
+    },
+    {
+      "title": "Herzenslust",
+      "qid": "Q5745186"
+    },
+    {
+      "title": "Hesperus polka",
+      "qid": "Q63859162"
+    },
+    {
+      "title": "Hofball-Tänze",
+      "qid": "Q63155133"
+    },
+    {
+      "title": "Hopser-Polka",
+      "qid": "Q63360258"
+    },
+    {
+      "title": "Idyllen",
+      "qid": "Q5989921"
+    },
+    {
+      "title": "Illustrationen",
+      "qid": "Q3796484"
+    },
+    {
+      "title": "Im Krapfenwald'l",
+      "qid": "Q3796536"
+    },
+    {
+      "title": "Im Sturmschritt",
+      "qid": "Q3796538"
+    },
+    {
+      "title": "Immer heiterer",
+      "qid": "Q3796683"
+    },
+    {
+      "title": "In Memoriam Yakov Kreizberg",
+      "qid": "Q86520095"
+    },
+    {
+      "title": "Indigo und die vierzig Räuber",
+      "qid": "Q4175587"
+    },
+    {
+      "title": "Indigo-Marsch",
+      "qid": "Q3798268"
+    },
+    {
+      "title": "Jabuka",
+      "qid": "Q3805499"
+    },
+    {
+      "title": "Jugend-Träume",
+      "qid": "Q1711210"
+    },
+    {
+      "title": "Kaiser Franz Joseph-Marsch",
+      "qid": "Q64415504"
+    },
+    {
+      "title": "Kaiser-Franz-Joseph-I.-Rettungs-Jubel-Marsch",
+      "qid": "Q3812507"
+    },
+    {
+      "title": "Kaiser-Jubiläum-Jubelwalzer",
+      "qid": "Q3812505"
+    },
+    {
+      "title": "Kaiser-Walzer",
+      "qid": "Q1721565"
+    },
+    {
+      "title": "Karnevalsbotschafter",
+      "qid": "Q6372942"
+    },
+    {
+      "title": "Klange aus der Walachei",
+      "qid": "Q6419686"
+    },
+    {
+      "title": "Klangfiguren",
+      "qid": "Q6419687"
+    },
+    {
+      "title": "Klänge der Heimat",
+      "qid": "Q28407692"
+    },
+    {
+      "title": "Kreuzfidel! (very happy!)",
+      "qid": "Q3816982"
+    },
+    {
+      "title": "Kuss-Walzer",
+      "qid": "Q3817539"
+    },
+    {
+      "title": "Künstler-Quadrille",
+      "qid": "Q64666693"
+    },
+    {
+      "title": "Künstlerleben",
+      "qid": "Q2335305",
+      "catalog_numbers": {
+        "Op": "316"
+      },
+      "key": "G major",
+      "instruments": [
+        "Flute",
+        "Piccolo",
+        "2 Oboes",
+        "C Clarinet",
+        "2 Bassoons",
+        "III, IV",
+        "2 Trumpets in F",
+        "Bass Trombone",
+        "Piccolo Snare Drum",
+        "Bass Drum and Cymbal"
+      ],
+      "year_composed": 1867
+    },
+    {
+      "title": "L'Africaine Quadrille",
+      "qid": "Q64706599"
+    },
+    {
+      "title": "Lagunen-Walzer",
+      "qid": "Q6473051"
+    },
+    {
+      "title": "Lava-Ströme",
+      "qid": "Q6502160"
+    },
+    {
+      "title": "Le beau Monde",
+      "qid": "Q6507953"
+    },
+    {
+      "title": "Leichtes Blut",
+      "qid": "Q3829999"
+    },
+    {
+      "title": "Leitartikel",
+      "qid": "Q6520336"
+    },
+    {
+      "title": "Liebeslieder",
+      "qid": "Q3832102"
+    },
+    {
+      "title": "Lieder-Quadrille",
+      "qid": "Q64732259"
+    },
+    {
+      "title": "Lob der Frauen",
+      "qid": "Q6663526"
+    },
+    {
+      "title": "Louischen",
+      "qid": "Q64006127"
+    },
+    {
+      "title": "Lucifer-Polka",
+      "qid": "Q3838754"
+    },
+    {
+      "title": "L’Enfantillage-Polka",
+      "qid": "Q63674669"
+    },
+    {
+      "title": "Marie Taglioni-Polka",
+      "qid": "Q3847884"
+    },
+    {
+      "title": "Mayerling",
+      "qid": "Q2607724"
+    },
+    {
+      "title": "Mephistos Höllenrufe",
+      "qid": "Q3854792"
+    },
+    {
+      "title": "Morgenblätter",
+      "qid": "Q955343"
+    },
+    {
+      "title": "Motoren",
+      "qid": "Q63115290"
+    },
+    {
+      "title": "Muthig Voran",
+      "qid": "Q64226997"
+    },
+    {
+      "title": "Myrthenblüthen",
+      "qid": "Q3869150"
+    },
+    {
+      "title": "Märchen aus dem Orient",
+      "qid": "Q3845751"
+    },
+    {
+      "title": "Nachtfalter",
+      "qid": "Q3869803"
+    },
+    {
+      "title": "Napoleon-Marsch",
+      "qid": "Q3870239"
+    },
+    {
+      "title": "Neu Wien",
+      "qid": "Q972246"
+    },
+    {
+      "title": "Neue Melodien-Quadrille",
+      "qid": "Q64732228"
+    },
+    {
+      "title": "Neue Pizzicato Polka",
+      "qid": "Q7001558"
+    },
+    {
+      "title": "Niko-Polka",
+      "qid": "Q63754586"
+    },
+    {
+      "title": "Nocturnal Butterfly",
+      "qid": "Q1117112"
+    },
+    {
+      "title": "Nordseebilder",
+      "qid": "Q3878407"
+    },
+    {
+      "title": "Novellen",
+      "qid": "Q7064581"
+    },
+    {
+      "title": "Nur fort",
+      "qid": "Q64136094"
+    },
+    {
+      "title": "O schöner Mai!",
+      "qid": "Q3880339"
+    },
+    {
+      "title": "Oh... Rosalinda!!",
+      "qid": "Q3429874"
+    },
+    {
+      "title": "Orpheus-Quadrille",
+      "qid": "Q64710959"
+    },
+    {
+      "title": "Ouvertüre: Blindekuh",
+      "qid": "Q98497361"
+    },
+    {
+      "title": "Ouvertüre: Cagliostro in Wien",
+      "qid": "Q98163028"
+    },
+    {
+      "title": "Ouvertüre: Das Spitzentuch der Königin",
+      "qid": "Q98545443"
+    },
+    {
+      "title": "Ouvertüre: Der Karneval in Rom",
+      "qid": "Q98073998"
+    },
+    {
+      "title": "Ouvertüre: Der Zigeunerbaron",
+      "qid": "Q98713749"
+    },
+    {
+      "title": "Ouvertüre: Der lustige Krieg",
+      "qid": "Q98593386"
+    },
+    {
+      "title": "Ouvertüre: Die Fledermaus",
+      "qid": "Q98109772"
+    },
+    {
+      "title": "Ouvertüre: Die Göttin der Vernunft",
+      "qid": "Q98929410"
+    },
+    {
+      "title": "Ouvertüre: Eine Nacht in Venedig",
+      "qid": "Q98637340"
+    },
+    {
+      "title": "Ouvertüre: Indigo und die 40 Räuber",
+      "qid": "Q98094514"
+    },
+    {
+      "title": "Ouvertüre: Prinz Methusalem",
+      "qid": "Q98405067"
+    },
+    {
+      "title": "Ouvertüre: Simplicius",
+      "qid": "Q98768339"
+    },
+    {
+      "title": "Ouvertüre: Waldmeister",
+      "qid": "Q98907676"
+    },
+    {
+      "title": "Par force!",
+      "qid": "Q63965661"
+    },
+    {
+      "title": "Paradise Found",
+      "qid": "Q7134271"
+    },
+    {
+      "title": "Paroxysmen",
+      "qid": "Q7139593"
+    },
+    {
+      "title": "Patronessen-Polka",
+      "qid": "Q63922124"
+    },
+    {
+      "title": "Pepita-Polka",
+      "qid": "Q63438548"
+    },
+    {
+      "title": "Perpetuum mobile",
+      "qid": "Q2071699"
+    },
+    {
+      "title": "Pesther Czárdás",
+      "qid": "Q64821411"
+    },
+    {
+      "title": "Phänomene",
+      "qid": "Q7189850"
+    },
+    {
+      "title": "Phönix-Schwingen",
+      "qid": "Q784617"
+    },
+    {
+      "title": "Pizzicato-Polka",
+      "qid": "Q667373"
+    },
+    {
+      "title": "Postillon D'Amour",
+      "qid": "Q7234330"
+    },
+    {
+      "title": "Prinz Methusalem",
+      "qid": "Q1469499"
+    },
+    {
+      "title": "Process-Polka",
+      "qid": "Q3922356"
+    },
+    {
+      "title": "Promotionen",
+      "qid": "Q7249888"
+    },
+    {
+      "title": "Rasch in der That",
+      "qid": "Q3930368"
+    },
+    {
+      "title": "Rathausball-Tänze",
+      "qid": "Q3930470"
+    },
+    {
+      "title": "Rauschende Melodien",
+      "qid": "Q7296244"
+    },
+    {
+      "title": "Reitermarsch",
+      "qid": "Q64541993"
+    },
+    {
+      "title": "Rhadamantus-Klänge",
+      "qid": "Q7320031"
+    },
+    {
+      "title": "Ritter Pázmán",
+      "qid": "Q2632179"
+    },
+    {
+      "title": "Rosen aus dem Süden",
+      "qid": "Q2335785"
+    },
+    {
+      "title": "Russische Marsch-Fantasie",
+      "qid": "Q3942922"
+    },
+    {
+      "title": "Russischer Marsch",
+      "qid": "Q3942921"
+    },
+    {
+      "title": "Satanella-Polka",
+      "qid": "Q63432824"
+    },
+    {
+      "title": "Schallwellen",
+      "qid": "Q62587748"
+    },
+    {
+      "title": "Schatz-Walzer",
+      "qid": "Q3951860"
+    },
+    {
+      "title": "Scherz-Polka",
+      "qid": "Q63381020"
+    },
+    {
+      "title": "Schützen-Quadrille",
+      "qid": "Q64768313"
+    },
+    {
+      "title": "Secunden-Polka",
+      "qid": "Q63869305"
+    },
+    {
+      "title": "Seid umschlungen, Millionen!",
+      "qid": "Q7446617"
+    },
+    {
+      "title": "Sentenzen",
+      "qid": "Q63075435"
+    },
+    {
+      "title": "Serail-Tänze",
+      "qid": "Q1502539"
+    },
+    {
+      "title": "Simplicius",
+      "qid": "Q7520934"
+    },
+    {
+      "title": "Sinngedichte",
+      "qid": "Q1501861"
+    },
+    {
+      "title": "So ängstlich sind wir nicht",
+      "qid": "Q3963172"
+    },
+    {
+      "title": "Spiel ich die Unschuld vom Lande",
+      "qid": "Q54987826"
+    },
+    {
+      "title": "Spleen-Polka",
+      "qid": "Q63637464"
+    },
+    {
+      "title": "Sträußchen",
+      "qid": "Q7625989"
+    },
+    {
+      "title": "Studenten-Polka",
+      "qid": "Q63869308"
+    },
+    {
+      "title": "Studentenlust",
+      "qid": "Q7627910"
+    },
+    {
+      "title": "Stürmisch in Lieb’ und Tanz",
+      "qid": "Q3976367"
+    },
+    {
+      "title": "Szaffi",
+      "qid": "Q521082"
+    },
+    {
+      "title": "Tales from the Vienna Woods",
+      "qid": "Q1483969"
+    },
+    {
+      "title": "Tausend und eine Nacht",
+      "qid": "Q3981571"
+    },
+    {
+      "title": "The Beautiful Danube",
+      "qid": "Q18616613"
+    },
+    {
+      "title": "The Blue Danube",
+      "qid": "Q482621",
+      "catalog_numbers": {
+        "Op": "314"
+      },
+      "key": "D major",
+      "instruments": [
+        "Flute"
+      ],
+      "year_composed": 1866,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/strauss_2049s_blue_danube_waltz_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/strauss_52327a_blue_danube_waltz_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/strauss_6984d_blue_danube_waltz_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/strauss-evler_6006d_blue_danube_arabesques_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/strauss-evler_67563a_blue_danube_arabesques_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=strauss-j_blue-danube_(c)halstead.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Eternal Waltz",
+      "qid": "Q7732571"
+    },
+    {
+      "title": "The Great Waltz",
+      "qid": "Q1198853"
+    },
+    {
+      "title": "The Gypsy Baron",
+      "qid": "Q17321161"
+    },
+    {
+      "title": "The Gypsy Baron",
+      "qid": "Q17321162"
+    },
+    {
+      "title": "The Man From The Other Side",
+      "qid": "Q18292205"
+    },
+    {
+      "title": "The Strauss Fantasy",
+      "qid": "Q22336736"
+    },
+    {
+      "title": "Trau, schau, wem!",
+      "qid": "Q3997968"
+    },
+    {
+      "title": "Traumbild 1",
+      "qid": "Q64841078"
+    },
+    {
+      "title": "Traumbild 1 & 2",
+      "qid": "Q24869416"
+    },
+    {
+      "title": "Traumbild 2",
+      "qid": "Q64841079"
+    },
+    {
+      "title": "Trifolien",
+      "qid": "Q63344091"
+    },
+    {
+      "title": "Tritsch-Tratsch-Polka",
+      "qid": "Q697018"
+    },
+    {
+      "title": "Un ballo in maschera",
+      "qid": "Q64732249"
+    },
+    {
+      "title": "Unter Donner und Blitz",
+      "qid": "Q11660233"
+    },
+    {
+      "title": "Vaterländischer-Marsch",
+      "qid": "Q64576234"
+    },
+    {
+      "title": "Veilchen",
+      "qid": "Q89419464"
+    },
+    {
+      "title": "Vergnügungszug",
+      "qid": "Q4009982"
+    },
+    {
+      "title": "Vienna Waltzes",
+      "qid": "Q7928358"
+    },
+    {
+      "title": "Voices of Spring",
+      "qid": "Q16258520"
+    },
+    {
+      "title": "Volkssänger",
+      "qid": "Q62518924"
+    },
+    {
+      "title": "Vom Donaustrande",
+      "qid": "Q4016417"
+    },
+    {
+      "title": "Waldine",
+      "qid": "Q7961519"
+    },
+    {
+      "title": "Waldmeister",
+      "qid": "Q7961534"
+    },
+    {
+      "title": "Waltz Time",
+      "qid": "Q3545646"
+    },
+    {
+      "title": "Wein, Weib und Gesang",
+      "qid": "Q4018795"
+    },
+    {
+      "title": "Wenn du ein herzig Liebchen hast",
+      "qid": "Q99054911"
+    },
+    {
+      "title": "Wiener Blut",
+      "qid": "Q2568856"
+    },
+    {
+      "title": "Wiener Blut",
+      "qid": "Q9232118"
+    },
+    {
+      "title": "Wiener Bonbons",
+      "qid": "Q4019700"
+    },
+    {
+      "title": "Wiener Frauen",
+      "qid": "Q4019699"
+    },
+    {
+      "title": "Wilde Rosen",
+      "qid": "Q62087518"
+    },
+    {
+      "title": "Wildfeuer",
+      "qid": "Q63974080"
+    },
+    {
+      "title": "Wo die Zitronen blühen",
+      "qid": "Q648368"
+    },
+    {
+      "title": "Wo uns’re Fahne weht",
+      "qid": "Q11495834"
+    },
+    {
+      "title": "Zigeunerin-Quadrille",
+      "qid": "Q64605234"
+    },
+    {
+      "title": "le désir romance",
+      "qid": "Q97961560"
+    },
+    {
+      "title": "Éljen a Magyar!",
+      "qid": "Q4025383"
+    },
+    {
+      "title": "Sounds from Vienna (by Schutt)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/strauss-schutt_55306a_sounds_from_the_vienna_woods_waltz_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sounds from Vienna (by Schutt) *",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/strauss-schutt_73748d_sounds_from_the_vienna_woods_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Artists life Waltz �",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/strauss_53467a_artist's_life_waltz_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Der Rosenkavalier Waltzes ��",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/strauss_66306d_der_rosenkavalier_waltzes_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Radio Medley of Strauss Waltzes ^",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/strauss_55387s_charlie_kunz_radio_medley_of_strauss_waltzes_(nc)smythe.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

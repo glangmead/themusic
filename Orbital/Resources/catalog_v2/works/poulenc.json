@@ -1,0 +1,384 @@
+{
+  "works": [
+    {
+      "title": "Piano Suite",
+      "qid": "Q7190183"
+    },
+    {
+      "title": "Sonata for Horn, Trumpet, and Trombone",
+      "qid": "Q771591"
+    },
+    {
+      "title": "Chansons gaillardes",
+      "qid": "Q2956192"
+    },
+    {
+      "title": "Trio for Oboe, Bassoon and Piano",
+      "qid": "Q3539355"
+    },
+    {
+      "title": "Concerto for Two Pianos and Orchestra",
+      "qid": "Q1783676"
+    },
+    {
+      "title": "Fiançailles pour rire",
+      "qid": "Q3071103"
+    },
+    {
+      "title": "Les Chemins de l'amour",
+      "qid": "Q15990889"
+    },
+    {
+      "title": "Exultate Deo",
+      "qid": "Q130065873"
+    },
+    {
+      "title": "Figure humaine",
+      "qid": "Q3071699"
+    },
+    {
+      "title": "Les mamelles de Tirésias",
+      "qid": "Q4692200"
+    },
+    {
+      "title": "Four small prayers of St. Françis of Assisi",
+      "qid": "Q15427496"
+    },
+    {
+      "title": "Sonate pour violoncelle et piano",
+      "qid": "Q2406184"
+    },
+    {
+      "title": "Flute Sonata",
+      "qid": "Q1967091"
+    },
+    {
+      "title": "La voix humaine",
+      "qid": "Q36084"
+    },
+    {
+      "title": "La Courte Paille",
+      "qid": "Q15990892"
+    },
+    {
+      "title": "Oboe Sonata",
+      "qid": "Q1489755"
+    },
+    {
+      "title": "Clarinet Sonata",
+      "qid": "Q2004783"
+    },
+    {
+      "title": "4 Motets pour le temps de Noël",
+      "qid": "Q129829785"
+    },
+    {
+      "title": "Acheron",
+      "qid": "Q119163225"
+    },
+    {
+      "title": "Aubade",
+      "qid": "Q2870538"
+    },
+    {
+      "title": "Ave verum corpus",
+      "qid": "Q130265253"
+    },
+    {
+      "title": "Banalités",
+      "qid": "Q15973422",
+      "key": "A major",
+      "instruments": [
+        "Chant",
+        "Piano"
+      ]
+    },
+    {
+      "title": "Chanson à boire",
+      "qid": "Q2956173"
+    },
+    {
+      "title": "Concert champêtre",
+      "qid": "Q1123897"
+    },
+    {
+      "title": "Deux poèmes de Guillaume Apollinaire",
+      "qid": "Q137800820"
+    },
+    {
+      "title": "Dialogues of the Carmelites",
+      "qid": "Q1208527"
+    },
+    {
+      "title": "Dix improvisations",
+      "qid": "Q137324804"
+    },
+    {
+      "title": "Gloria",
+      "qid": "Q4039507"
+    },
+    {
+      "title": "Huit Chansons françaises",
+      "qid": "Q130280905"
+    },
+    {
+      "title": "Huit nocturnes",
+      "qid": "Q137271521"
+    },
+    {
+      "title": "Improvisations",
+      "qid": "Q3797020"
+    },
+    {
+      "title": "L'Album des Six",
+      "qid": "Q129380"
+    },
+    {
+      "title": "L'éventail de Jeanne",
+      "qid": "Q6456048"
+    },
+    {
+      "title": "La Dame de Monte-Carlo",
+      "qid": "Q29071327"
+    },
+    {
+      "title": "La guirlande de Campra",
+      "qid": "Q6466183"
+    },
+    {
+      "title": "Laudes de Saint Antoine de Padoue",
+      "qid": "Q126942627"
+    },
+    {
+      "title": "Le Voyage en Amérique",
+      "qid": "Q2424673"
+    },
+    {
+      "title": "Le bestiaire",
+      "qid": "Q137719525"
+    },
+    {
+      "title": "Les Animaux modèles",
+      "qid": "Q3230579"
+    },
+    {
+      "title": "Les Biches",
+      "qid": "Q119164003"
+    },
+    {
+      "title": "Les Soirées de Nazelles",
+      "qid": "Q3488974"
+    },
+    {
+      "title": "Les biches",
+      "qid": "Q1773642"
+    },
+    {
+      "title": "Les mariés de la tour Eiffel",
+      "qid": "Q2480913"
+    },
+    {
+      "title": "Litanies à la Vierge Noire",
+      "qid": "Q28864841"
+    },
+    {
+      "title": "Love Affair(s)",
+      "qid": "Q98745126"
+    },
+    {
+      "title": "Mass in G Major",
+      "qid": "Q28222102"
+    },
+    {
+      "title": "Organ Concerto",
+      "qid": "Q1634841"
+    },
+    {
+      "title": "Piano Concerto",
+      "qid": "Q1746013"
+    },
+    {
+      "title": "Quatre motets pour un temps de pénitence",
+      "qid": "Q28401330"
+    },
+    {
+      "title": "Rapsodie nègre",
+      "qid": "Q3419712"
+    },
+    {
+      "title": "Sade",
+      "qid": "Q3461110"
+    },
+    {
+      "title": "Salve Regina",
+      "qid": "Q130224810"
+    },
+    {
+      "title": "Sept Chansons",
+      "qid": "Q129845387"
+    },
+    {
+      "title": "Sextet",
+      "qid": "Q1995465",
+      "key": "C major",
+      "instruments": [
+        "Flute",
+        "Oboe",
+        "B♭ Clarinet",
+        "Bassoon",
+        "Horn in F",
+        "Piano"
+      ]
+    },
+    {
+      "title": "Sinfonietta",
+      "qid": "Q3484920"
+    },
+    {
+      "title": "Sleeping Beauty",
+      "qid": "Q70183919"
+    },
+    {
+      "title": "Sonata for Piano four-hands",
+      "qid": "Q116199781"
+    },
+    {
+      "title": "Sonata for Two Pianos",
+      "qid": "Q3490090"
+    },
+    {
+      "title": "Sonata for clarinet and bassoon",
+      "qid": "Q3490083"
+    },
+    {
+      "title": "Sonata for two clarinets",
+      "qid": "Q3490089"
+    },
+    {
+      "title": "Stabat Mater",
+      "qid": "Q614820"
+    },
+    {
+      "title": "Suite française",
+      "qid": "Q3503275"
+    },
+    {
+      "title": "Sécheresses",
+      "qid": "Q25397190"
+    },
+    {
+      "title": "Tel jour, telle nuit",
+      "qid": "Q137785147"
+    },
+    {
+      "title": "The Duchess of Langeais",
+      "qid": "Q3208390"
+    },
+    {
+      "title": "The Human Voice (New Zealand Opera 2020)",
+      "qid": "Q107640168"
+    },
+    {
+      "title": "The Masquers",
+      "qid": "Q130753921"
+    },
+    {
+      "title": "The Story of Babar",
+      "qid": "Q3203514"
+    },
+    {
+      "title": "Thème varié",
+      "qid": "Q117921098"
+    },
+    {
+      "title": "Traveling Light",
+      "qid": "Q16654544"
+    },
+    {
+      "title": "Trois mouvements perpétuels",
+      "qid": "Q3326873",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/poulenc_mouvements_perpetuel_(c)siu.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Un soir de neige",
+      "qid": "Q130219802",
+      "key": "G major",
+      "instruments": [
+        "Sopranos",
+        "Altos",
+        "Tenors",
+        "Basses"
+      ]
+    },
+    {
+      "title": "Variations sur le nom de Marguerite Long",
+      "qid": "Q24965548"
+    },
+    {
+      "title": "Villanelle",
+      "qid": "Q3559043"
+    },
+    {
+      "title": "Violin Sonata",
+      "qid": "Q3490193"
+    },
+    {
+      "title": "Élégie pour cor et piano",
+      "qid": "Q3588084"
+    },
+    {
+      "title": "Concert for organ, string orchestra and timpani",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=poulenc_organ_concerto_(c)vanzetten-siu.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Motets pour le temps de No�l",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/poulenc_motets_pour_le_temp_de_noel_1_(c)siu.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/poulenc_motets_pour_le_temp_de_noel_2_(c)siu.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/poulenc_motets_pour_le_temp_de_noel_3_(c)siu.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/poulenc_motets_pour_le_temp_de_noel_4_(c)siu.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Motets pour un temps de p�nitence",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=poulenc_motets_1_(c)siu.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=poulenc_motets_2_(c)siu.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=poulenc_motets_3_(c)siu.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=poulenc_motets_4_(c)siu.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

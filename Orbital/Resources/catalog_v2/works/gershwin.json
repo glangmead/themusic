@@ -1,0 +1,717 @@
+{
+  "works": [
+    {
+      "title": "The Man I Love",
+      "qid": "Q1828805",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-i/gershwin_209613a_the_man_i_love_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concerto in F",
+      "qid": "Q1317658",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/gershwin_concerto_in_f_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/gershwin_concerto_in_f_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/gershwin_concerto_in_f_3_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Three Preludes",
+      "qid": "Q392498"
+    },
+    {
+      "title": "An American in Paris",
+      "qid": "Q853997",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/gershwin_american_in_paris_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/gershwin_american_in_paris_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/gershwin_american_in_paris_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/gershwin_american_in_paris_4_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Let 'Em Eat Cake",
+      "qid": "Q163220"
+    },
+    {
+      "title": "Lorelei",
+      "qid": "Q6680320"
+    },
+    {
+      "title": "Porgy and Bess",
+      "qid": "Q740920",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/gershwin_bess_you_is_my_woman_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Rhapsody in Blue",
+      "qid": "Q111470737",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=gershwin_rhapsody_in_blue_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "'S Wonderful",
+      "qid": "Q2156594"
+    },
+    {
+      "title": "'The Half of It, Dearie' Blues",
+      "qid": "Q4540533"
+    },
+    {
+      "title": "(I've Got) Beginner's Luck",
+      "qid": "Q4544785"
+    },
+    {
+      "title": "A Damsel in Distress",
+      "qid": "Q55602988"
+    },
+    {
+      "title": "A Damsel in Distress",
+      "qid": "Q1304532"
+    },
+    {
+      "title": "A Dangerous Maid",
+      "qid": "Q4656239"
+    },
+    {
+      "title": "A Foggy Day",
+      "qid": "Q300410"
+    },
+    {
+      "title": "A Red-headed Woman",
+      "qid": "Q54975136"
+    },
+    {
+      "title": "American Rhapsody",
+      "qid": "Q119412933"
+    },
+    {
+      "title": "An American in Paris",
+      "qid": "Q21480307"
+    },
+    {
+      "title": "An American in Paris",
+      "qid": "Q4749781"
+    },
+    {
+      "title": "Aren't You Kind Of Glad We Did?",
+      "qid": "Q4788808"
+    },
+    {
+      "title": "Bess, You Is My Woman Now",
+      "qid": "Q4896356"
+    },
+    {
+      "title": "Bess, o where's my Bess!",
+      "qid": "Q54975146"
+    },
+    {
+      "title": "Bidin' My Time",
+      "qid": "Q4904172"
+    },
+    {
+      "title": "Blah Blah Blah",
+      "qid": "Q16385151"
+    },
+    {
+      "title": "Blue Monday",
+      "qid": "Q4929437"
+    },
+    {
+      "title": "Boy Wanted",
+      "qid": "Q4952141"
+    },
+    {
+      "title": "Boy! What Love Has Done To Me!",
+      "qid": "Q4952024"
+    },
+    {
+      "title": "But Not for Me",
+      "qid": "Q4352751"
+    },
+    {
+      "title": "Buzzard keep on flyin'",
+      "qid": "Q54975148"
+    },
+    {
+      "title": "By Strauss",
+      "qid": "Q5003822"
+    },
+    {
+      "title": "Catfish Row",
+      "qid": "Q5051988"
+    },
+    {
+      "title": "Clap Yo' Hands",
+      "qid": "Q5125848"
+    },
+    {
+      "title": "Crazy for You",
+      "qid": "Q1475152"
+    },
+    {
+      "title": "Cuban Overture",
+      "qid": "Q2462136"
+    },
+    {
+      "title": "Cybill",
+      "qid": "Q899746"
+    },
+    {
+      "title": "Delicious",
+      "qid": "Q2472295"
+    },
+    {
+      "title": "Do It Again",
+      "qid": "Q5286054"
+    },
+    {
+      "title": "Do What You Do",
+      "qid": "Q56196078"
+    },
+    {
+      "title": "Do, Do, Do",
+      "qid": "Q25379160"
+    },
+    {
+      "title": "Ella Fitzgerald Sings the George and Ira Gershwin Songbook",
+      "qid": "Q988911"
+    },
+    {
+      "title": "Embraceable You",
+      "qid": "Q753607"
+    },
+    {
+      "title": "Fantasia 2000",
+      "qid": "Q30937"
+    },
+    {
+      "title": "Fascinating Rhythm",
+      "qid": "Q5436654"
+    },
+    {
+      "title": "For You, for Me, for Evermore",
+      "qid": "Q16385725"
+    },
+    {
+      "title": "French Ballet Class",
+      "qid": "Q5501683"
+    },
+    {
+      "title": "Funny Face",
+      "qid": "Q639390"
+    },
+    {
+      "title": "Funny Face",
+      "qid": "Q5509363"
+    },
+    {
+      "title": "George White's Scandals of 1922",
+      "qid": "Q105728809"
+    },
+    {
+      "title": "Gershwin Piano Concerto",
+      "qid": "Q5553128",
+      "key": "D♭ major",
+      "instruments": [
+        "Piano I",
+        "Piano II"
+      ]
+    },
+    {
+      "title": "Girl Crazy",
+      "qid": "Q15743033"
+    },
+    {
+      "title": "Girl Crazy",
+      "qid": "Q1526747"
+    },
+    {
+      "title": "He Loves and She Loves",
+      "qid": "Q5688862"
+    },
+    {
+      "title": "Highlights from \"Porgy and Bess\"",
+      "qid": "Q5759498"
+    },
+    {
+      "title": "Hoctor's Ballet",
+      "qid": "Q16995623"
+    },
+    {
+      "title": "How Long Has This Been Going On?",
+      "qid": "Q2655464"
+    },
+    {
+      "title": "I Can't Be Bothered Now",
+      "qid": "Q5976366"
+    },
+    {
+      "title": "I Got Plenty o' Nuttin",
+      "qid": "Q1655159",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/gershwin_i_got_plenty_o_nuttin_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "I Got Rhythm",
+      "qid": "Q60926",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1930
+    },
+    {
+      "title": "I Loves You, Porgy",
+      "qid": "Q5978350"
+    },
+    {
+      "title": "I Was Doing All Right",
+      "qid": "Q5979648"
+    },
+    {
+      "title": "I've Got a Crush on You",
+      "qid": "Q5967276"
+    },
+    {
+      "title": "Introducing The Canadian Piano Trio",
+      "qid": "Q109047359"
+    },
+    {
+      "title": "Isn't It a Pity?",
+      "qid": "Q6085134"
+    },
+    {
+      "title": "It Ain't Necessarily So",
+      "qid": "Q2920365"
+    },
+    {
+      "title": "Just Another Rhumba",
+      "qid": "Q6315782"
+    },
+    {
+      "title": "La La Lucille",
+      "qid": "Q6463318"
+    },
+    {
+      "title": "Lady Be Good",
+      "qid": "Q601646"
+    },
+    {
+      "title": "Lady, Be Good!",
+      "qid": "Q842761"
+    },
+    {
+      "title": "Let's Call the Whole Thing Off",
+      "qid": "Q3367331"
+    },
+    {
+      "title": "Let's Kiss and Make Up",
+      "qid": "Q6532470"
+    },
+    {
+      "title": "Lill-Klas",
+      "qid": "Q112770609"
+    },
+    {
+      "title": "Listen to Yo' Daddy Warn You (A Woman is a Sometime Thing)",
+      "qid": "Q54975140"
+    },
+    {
+      "title": "Liza (All the Clouds'll Roll Away)",
+      "qid": "Q6660358"
+    },
+    {
+      "title": "Longwave",
+      "qid": "Q15731572"
+    },
+    {
+      "title": "Looking for a Boy",
+      "qid": "Q6675404"
+    },
+    {
+      "title": "Love Is Here to Stay",
+      "qid": "Q6690727"
+    },
+    {
+      "title": "Love Walked In",
+      "qid": "Q96626815"
+    },
+    {
+      "title": "Love Walked In",
+      "qid": "Q6691484"
+    },
+    {
+      "title": "Love is Sweeping the Country",
+      "qid": "Q6691896"
+    },
+    {
+      "title": "Lullaby",
+      "qid": "Q11447879"
+    },
+    {
+      "title": "Manhattan",
+      "qid": "Q731310"
+    },
+    {
+      "title": "Maybe",
+      "qid": "Q96895543"
+    },
+    {
+      "title": "My Cousin in Milwaukee",
+      "qid": "Q16387186"
+    },
+    {
+      "title": "My Man's Gone Now",
+      "qid": "Q6946001"
+    },
+    {
+      "title": "My One and Only",
+      "qid": "Q1956428"
+    },
+    {
+      "title": "My One and Only",
+      "qid": "Q6946197"
+    },
+    {
+      "title": "Nice Work If You Can Get It",
+      "qid": "Q1611944"
+    },
+    {
+      "title": "Nice Work If You Can Get It",
+      "qid": "Q7024697"
+    },
+    {
+      "title": "Of Thee I Sing",
+      "qid": "Q469604"
+    },
+    {
+      "title": "Of Thee I Sing",
+      "qid": "Q7078807"
+    },
+    {
+      "title": "Oh, I'm a goin' out (It take a long pull to get there)",
+      "qid": "Q54975143"
+    },
+    {
+      "title": "Oh, Kay!",
+      "qid": "Q1517784"
+    },
+    {
+      "title": "Oh, Lady Be Good!",
+      "qid": "Q1131715"
+    },
+    {
+      "title": "Oh, So Nice!",
+      "qid": "Q7080384"
+    },
+    {
+      "title": "Pardon My English",
+      "qid": "Q2052100"
+    },
+    {
+      "title": "Porgy and Bess",
+      "qid": "Q374526"
+    },
+    {
+      "title": "Primrose",
+      "qid": "Q7243661"
+    },
+    {
+      "title": "Rhapsody in Blue",
+      "qid": "Q28162258",
+      "key": "B♭ major",
+      "instruments": [
+        "Melodica"
+      ]
+    },
+    {
+      "title": "Rhapsody in Blue",
+      "qid": "Q338442"
+    },
+    {
+      "title": "Rhapsody in Blue",
+      "qid": "Q722599"
+    },
+    {
+      "title": "Rhapsody in Bogota",
+      "qid": "Q6107700"
+    },
+    {
+      "title": "Rosalie",
+      "qid": "Q17029981"
+    },
+    {
+      "title": "Sam and Delilah",
+      "qid": "Q7408378"
+    },
+    {
+      "title": "Second Rhapsody",
+      "qid": "Q3477015"
+    },
+    {
+      "title": "Shall We Dance",
+      "qid": "Q1576105"
+    },
+    {
+      "title": "Short Story (Gershwin)",
+      "qid": "Q16901035"
+    },
+    {
+      "title": "Show Girl",
+      "qid": "Q17093026"
+    },
+    {
+      "title": "Slap That Bass",
+      "qid": "Q7538695"
+    },
+    {
+      "title": "Somebody Loves Me",
+      "qid": "Q7559565",
+      "key": "B♭ major",
+      "instruments": [
+        "Flute",
+        "B♭ Clarinet"
+      ]
+    },
+    {
+      "title": "Somebody from Somewhere",
+      "qid": "Q7559587"
+    },
+    {
+      "title": "Someone to Watch Over Me",
+      "qid": "Q4325320",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-i/gershwin_9122s_someone_to_watch_over_me_(c)keymer.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Song of the Flame",
+      "qid": "Q472916"
+    },
+    {
+      "title": "Soon",
+      "qid": "Q7562677"
+    },
+    {
+      "title": "Stairway to Paradise",
+      "qid": "Q19605762"
+    },
+    {
+      "title": "Stiff Upper Lip",
+      "qid": "Q7616399"
+    },
+    {
+      "title": "Strike Up the Band",
+      "qid": "Q7623799"
+    },
+    {
+      "title": "Strike Up the Band",
+      "qid": "Q7623800"
+    },
+    {
+      "title": "Summertime",
+      "qid": "Q844046",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/gershwin_summertime_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Swanee",
+      "qid": "Q870481",
+      "instruments": [
+        "P1"
+      ],
+      "year_composed": 1919,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-i/gershwin_swanee_1649_d_(c)schenk.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tell Me More",
+      "qid": "Q106413042"
+    },
+    {
+      "title": "That Certain Feeling",
+      "qid": "Q7711148"
+    },
+    {
+      "title": "The Anatomy of Gag",
+      "qid": "Q9150766"
+    },
+    {
+      "title": "The Goldwyn Follies",
+      "qid": "Q1336035"
+    },
+    {
+      "title": "The Life and Death of 9413: a Hollywood Extra",
+      "qid": "Q2348757"
+    },
+    {
+      "title": "The Real American Folk Song",
+      "qid": "Q7759554"
+    },
+    {
+      "title": "There's a Boat Dat's Leavin' Soon for New York",
+      "qid": "Q54975157"
+    },
+    {
+      "title": "They All Laughed",
+      "qid": "Q17031970"
+    },
+    {
+      "title": "They Can't Take That Away from Me",
+      "qid": "Q1407640",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-i/gershwin_9696s_you_can't_take_that_away_from_me_(c)hurney.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Things Are Looking Up",
+      "qid": "Q7784353"
+    },
+    {
+      "title": "Three Preludes",
+      "qid": "Q7797703"
+    },
+    {
+      "title": "Tip-Toes",
+      "qid": "Q3529261"
+    },
+    {
+      "title": "Tra-la-la",
+      "qid": "Q19898059"
+    },
+    {
+      "title": "Treasure Girl",
+      "qid": "Q16985756"
+    },
+    {
+      "title": "Treat Me Rough",
+      "qid": "Q7836849"
+    },
+    {
+      "title": "Variations on \"I Got Rhythm\"",
+      "qid": "Q3554792"
+    },
+    {
+      "title": "Walking the Dog",
+      "qid": "Q7962517"
+    },
+    {
+      "title": "What You Want Wid Bess?",
+      "qid": "Q54975155"
+    },
+    {
+      "title": "Who Cares?",
+      "qid": "Q7997179"
+    },
+    {
+      "title": "Who Cares?",
+      "qid": "Q7997182"
+    },
+    {
+      "title": "You've Got What Gets Me",
+      "qid": "Q16917328"
+    },
+    {
+      "title": "Rialto Ripples (pl. 1916) *",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-i/gershwin_rialto_ripples_(1916)_s_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Rialto Ripples",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/GershwinG/rialto_ripples/rialto_ripples-lys/rialto_ripples-music.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

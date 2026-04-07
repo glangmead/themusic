@@ -15,6 +15,11 @@ struct OrbitalApp: App {
   @State private var songLibrary = SongLibrary()
   @State private var resourceManager = ResourceManager()
   @State private var classicsCatalog = ClassicsCatalogLibrary()
+  // Ledger starts with a placeholder; reassigned after ResourceManager resolves iCloud.
+  @State private var midiLedger = MIDIDownloadLedger(
+    baseDirectory: URL.documentsDirectory.appending(path: "midi_downloads")
+  )
+  @State private var midiDownloadManager: MIDIDownloadManager?
   @Environment(\.scenePhase) private var scenePhase
 
   init() {
@@ -46,12 +51,25 @@ struct OrbitalApp: App {
         .environment(songLibrary)
         .environment(resourceManager)
         .environment(classicsCatalog)
+        .environment(midiLedger)
+        .environment(midiDownloadManager ?? MIDIDownloadManager(ledger: midiLedger))
         .task {
           WavetableLibrary.loadAllCuratedTables()
           await resourceManager.setup()
           PatternStorage.resourceBaseURL = resourceManager.resourceBaseURL
           songLibrary.loadSongs(from: resourceManager.resourceBaseURL)
           classicsCatalog.load()
+          // Point the ledger at the same base directory ResourceManager resolved
+          // (iCloud Documents or local fallback), not the app sandbox.
+          if let baseURL = resourceManager.resourceBaseURL {
+            let downloadsDir = baseURL.appending(path: "midi_downloads")
+            midiLedger = MIDIDownloadLedger(baseDirectory: downloadsDir)
+          }
+          try? FileManager.default.createDirectory(
+            at: midiLedger.baseDirectory, withIntermediateDirectories: true
+          )
+          midiLedger.load()
+          midiDownloadManager = MIDIDownloadManager(ledger: midiLedger)
         }
         .onReceive(NotificationCenter.default.publisher(for: UIApplication.willTerminateNotification)) { _ in
           engine.fadeOutAndStop()

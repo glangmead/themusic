@@ -1,0 +1,57 @@
+{
+  "works": [
+    {
+      "title": "Alt-Wiener Tanzweisen",
+      "qid": "Q4735910"
+    },
+    {
+      "title": "Apple Blossoms",
+      "qid": "Q53358741"
+    },
+    {
+      "title": "Apple Blossoms",
+      "qid": "Q116846101"
+    },
+    {
+      "title": "Liebesfreud",
+      "qid": "Q15925191"
+    },
+    {
+      "title": "Liebesleid",
+      "qid": "Q11493317",
+      "key": "F major",
+      "instruments": [
+        "Part_1"
+      ]
+    },
+    {
+      "title": "Praeludium and Allegro",
+      "qid": "Q60792440"
+    },
+    {
+      "title": "Rhapsody",
+      "qid": "Q106652339"
+    },
+    {
+      "title": "Schön Rosmarin",
+      "qid": "Q15925186",
+      "key": "G major",
+      "instruments": [
+        "Violin",
+        "Guitar"
+      ]
+    },
+    {
+      "title": "Sissy",
+      "qid": "Q2290300"
+    },
+    {
+      "title": "Tambourin Chinois",
+      "qid": "Q121851484"
+    },
+    {
+      "title": "The King Steps Out",
+      "qid": "Q3705961"
+    }
+  ]
+}

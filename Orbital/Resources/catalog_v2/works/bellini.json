@@ -1,0 +1,128 @@
+{
+  "works": [
+    {
+      "title": "La straniera",
+      "qid": "Q785347"
+    },
+    {
+      "title": "I Capuleti e i Montecchi",
+      "qid": "Q1071307"
+    },
+    {
+      "title": "Norma",
+      "qid": "Q320353"
+    },
+    {
+      "title": "Le souvenir présent céleste",
+      "qid": "Q3829091"
+    },
+    {
+      "title": "A Lady's Morals",
+      "qid": "Q1657514"
+    },
+    {
+      "title": "Adelson e Salvini",
+      "qid": "Q503632"
+    },
+    {
+      "title": "Ah, non credia mirarti = Prin y disgwyliwn weled : La Sonnambula",
+      "qid": "Q78647621"
+    },
+    {
+      "title": "Beatrice di Tenda",
+      "qid": "Q791658"
+    },
+    {
+      "title": "Bianca e Fernando",
+      "qid": "Q794532"
+    },
+    {
+      "title": "Callas Forever",
+      "qid": "Q302403"
+    },
+    {
+      "title": "Casta Diva",
+      "qid": "Q1107815",
+      "key": "F major",
+      "instruments": [
+        "Violin I",
+        "Violin II",
+        "Viola",
+        "Violoncello"
+      ],
+      "year_composed": 1831
+    },
+    {
+      "title": "Casta Diva",
+      "qid": "Q3662036"
+    },
+    {
+      "title": "Composizioni da Camera",
+      "qid": "Q5156813"
+    },
+    {
+      "title": "Here his soft voice called me",
+      "qid": "Q54971199"
+    },
+    {
+      "title": "Hexameron",
+      "qid": "Q1168783"
+    },
+    {
+      "title": "I puritani",
+      "qid": "Q470886"
+    },
+    {
+      "title": "Il pesceballo",
+      "qid": "Q5996760"
+    },
+    {
+      "title": "Il pirata",
+      "qid": "Q467292"
+    },
+    {
+      "title": "Jenny Lind",
+      "qid": "Q3807911"
+    },
+    {
+      "title": "La sonnambula",
+      "qid": "Q753123"
+    },
+    {
+      "title": "Laugh, Pagliacci",
+      "qid": "Q3791102"
+    },
+    {
+      "title": "Meco all'altar di Venere",
+      "qid": "Q6804832"
+    },
+    {
+      "title": "Oboe Concerto in E-flat major",
+      "qid": "Q13727041"
+    },
+    {
+      "title": "Oh, I didn't believe to see you",
+      "qid": "Q54971332"
+    },
+    {
+      "title": "Son vergin vezzosa",
+      "qid": "Q54971212"
+    },
+    {
+      "title": "The Way Out",
+      "qid": "Q19954850"
+    },
+    {
+      "title": "Vaga luna, che inargenti",
+      "qid": "Q7908419"
+    },
+    {
+      "title": "Vi ravviso, o luoghi ameni = Braf eich gweled, ardaloedd mebyd",
+      "qid": "Q78527339"
+    },
+    {
+      "title": "Zaira",
+      "qid": "Q144419"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "works": [
+    {
+      "title": "Banditenstreiche",
+      "qid": "Q269041"
+    },
+    {
+      "title": "Boccaccio",
+      "qid": "Q888981"
+    },
+    {
+      "title": "Boccaccio",
+      "qid": "Q3641481"
+    },
+    {
+      "title": "Boccace",
+      "qid": "Q107306710"
+    },
+    {
+      "title": "Des Matrosen Heimkehr",
+      "qid": "Q30642839"
+    },
+    {
+      "title": "Die afrikareise",
+      "qid": "Q109244379"
+    },
+    {
+      "title": "Die schöne Galathee",
+      "qid": "Q1219385"
+    },
+    {
+      "title": "Donna Juanita",
+      "qid": "Q1241763"
+    },
+    {
+      "title": "Fatinitza",
+      "qid": "Q1246717"
+    },
+    {
+      "title": "Flotte Bursche",
+      "qid": "Q1430241"
+    },
+    {
+      "title": "Franz Schubert",
+      "qid": "Q1448973"
+    },
+    {
+      "title": "Leichte Kavallerie",
+      "qid": "Q1814636"
+    },
+    {
+      "title": "Lohengelb, oder Die Jungfrau von Dragant (Tragant)",
+      "qid": "Q1868163"
+    },
+    {
+      "title": "Morning, Noon and Night in Vienna",
+      "qid": "Q119040949"
+    },
+    {
+      "title": "Pique Dame",
+      "qid": "Q1805270"
+    },
+    {
+      "title": "Poet and Peasant",
+      "qid": "Q61756538",
+      "key": "D major",
+      "instruments": [
+        "Flute",
+        "Oboe",
+        "B♭ Clarinet",
+        "Horn in F",
+        "Bassoon"
+      ],
+      "year_composed": 1846
+    },
+    {
+      "title": "Requiem in D minor",
+      "qid": "Q4392828"
+    },
+    {
+      "title": "Rote Rosen",
+      "qid": "Q131920859"
+    },
+    {
+      "title": "Zehn Mädchen und kein Mann",
+      "qid": "Q182891"
+    }
+  ]
+}

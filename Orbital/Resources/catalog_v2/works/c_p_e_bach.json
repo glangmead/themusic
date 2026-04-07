@@ -1,0 +1,101 @@
+{
+  "works": [
+    {
+      "title": "Sonata in A minor for Solo Flute, Wq. 132",
+      "qid": "Q66730133"
+    },
+    {
+      "title": "Concerto for Harpsichord, 2 Violins, Viola and Basso Continuo in D minor",
+      "qid": "Q60983522"
+    },
+    {
+      "title": "Magnificat",
+      "qid": "Q15833350"
+    },
+    {
+      "title": "Cello Concerto in A Major",
+      "qid": "Q2098563"
+    },
+    {
+      "title": "Cello Concerto in B-flat major",
+      "qid": "Q2080831"
+    },
+    {
+      "title": "Celloconcert in a klein",
+      "qid": "Q2666262"
+    },
+    {
+      "title": "Die Auferstehung und Himmelfahrt Jesu",
+      "qid": "Q1211115"
+    },
+    {
+      "title": "Die Israeliten in der Wüste",
+      "qid": "Q5274379"
+    },
+    {
+      "title": "Gellert Odes and Songs",
+      "qid": "Q21998519"
+    },
+    {
+      "title": "Gellert's Sacred Odes & Lieder (Wq 195)",
+      "qid": "Q112074565"
+    },
+    {
+      "title": "Heilig",
+      "qid": "Q15965142"
+    },
+    {
+      "title": "Klopstocks Morgengesang am Schöpfungsfeste",
+      "qid": "Q19778310"
+    },
+    {
+      "title": "La Caroline",
+      "qid": "Q6461556"
+    },
+    {
+      "title": "Notebook for Anna Magdalena Bach",
+      "qid": "Q1341631",
+      "key": "B♭ major",
+      "instruments": [
+        "Piano"
+      ]
+    },
+    {
+      "title": "Solfeggietto",
+      "qid": "Q7557714"
+    },
+    {
+      "title": "Solfeggietto (Carl Philipp Emmanuel Bach)",
+      "qid": "Q132127019"
+    },
+    {
+      "title": "Sonata in A minor for Solo Flute, Wq. 132",
+      "qid": "Q28497842"
+    },
+    {
+      "title": "Suite No. 3",
+      "qid": "Q55827272"
+    },
+    {
+      "title": "Suite No. 3 - Ouverture",
+      "qid": "Q55827721"
+    },
+    {
+      "title": "The Passions of C.P.E. Bach",
+      "qid": "Q7756288"
+    },
+    {
+      "title": "Sonata in a minor for solo flute",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 2.5",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/BachCPE/Wq132/Sonata_solo_flute_a_min-fl/Sonata_solo_flute_a_min-fl.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

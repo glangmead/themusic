@@ -1,0 +1,675 @@
+{
+  "works": [
+    {
+      "title": "Don Procopio",
+      "qid": "Q370473"
+    },
+    {
+      "title": "The Pearl Fishers",
+      "qid": "Q56159"
+    },
+    {
+      "title": "Djamileh",
+      "qid": "Q912017"
+    },
+    {
+      "title": "Arlesiana",
+      "qid": "Q109244784"
+    },
+    {
+      "title": "Ave Maria",
+      "qid": "Q790309"
+    },
+    {
+      "title": "Carmen",
+      "qid": "Q185968",
+      "key": "A major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1875
+    },
+    {
+      "title": "Carmen",
+      "qid": "Q429043"
+    },
+    {
+      "title": "Carmen",
+      "qid": "Q531363"
+    },
+    {
+      "title": "Carmen",
+      "qid": "Q1056376"
+    },
+    {
+      "title": "Carmen",
+      "qid": "Q10443149"
+    },
+    {
+      "title": "Carmen",
+      "qid": "Q19819236"
+    },
+    {
+      "title": "Carmen Jones",
+      "qid": "Q1043659"
+    },
+    {
+      "title": "Carmen Jones",
+      "qid": "Q13424336"
+    },
+    {
+      "title": "Carmen Suite No.1",
+      "qid": "Q20735256"
+    },
+    {
+      "title": "Carmen Suite No.2",
+      "qid": "Q20735257"
+    },
+    {
+      "title": "Carmen Suites (Bizet/Guiraud)",
+      "qid": "Q5043593"
+    },
+    {
+      "title": "Carmen on Ice",
+      "qid": "Q1043749"
+    },
+    {
+      "title": "Chucha-3",
+      "qid": "Q4518373"
+    },
+    {
+      "title": "Clovis et Clotilde",
+      "qid": "Q31073171"
+    },
+    {
+      "title": "Habanera",
+      "qid": "Q692648",
+      "key": "F major",
+      "instruments": [
+        "Flute",
+        "Oboe",
+        "A Clarinet",
+        "Bassoon",
+        "Horn in D",
+        "Horn in C",
+        "A Trumpet",
+        "Timpani",
+        "Triangle",
+        "Tom Toms",
+        "Violin",
+        "Viola",
+        "Carmen",
+        "Soprano",
+        "Tenor",
+        "Bass",
+        "Violoncello",
+        "Contrabass"
+      ],
+      "year_composed": 1873,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=29/bizet_carmen_act-1_05_habanera_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Half a Life",
+      "qid": "Q3326144"
+    },
+    {
+      "title": "In vain in order to avoid harsh remarks",
+      "qid": "Q54971936"
+    },
+    {
+      "title": "Ivan IV",
+      "qid": "Q6096443"
+    },
+    {
+      "title": "Je dis que rien ne m'epouvante",
+      "qid": "Q54971985"
+    },
+    {
+      "title": "Je dis que rien ne m'epouvante = Hawdd dweud nad oes dim byd i'w ofni : Carmen",
+      "qid": "Q78526934"
+    },
+    {
+      "title": "Jeux d'enfants",
+      "qid": "Q1647640"
+    },
+    {
+      "title": "L'Arlésienne",
+      "qid": "Q1850215"
+    },
+    {
+      "title": "L'Arlésienne",
+      "qid": "Q3202311"
+    },
+    {
+      "title": "L'Arlésienne",
+      "qid": "Q131733441"
+    },
+    {
+      "title": "La jolie fille de Perth",
+      "qid": "Q471784",
+      "key": "F major",
+      "instruments": [
+        "Ténor",
+        "Piano"
+      ],
+      "year_composed": 1850
+    },
+    {
+      "title": "La maison du docteur",
+      "qid": "Q6466230"
+    },
+    {
+      "title": "Lady J",
+      "qid": "Q56276944"
+    },
+    {
+      "title": "Le docteur Miracle",
+      "qid": "Q3028007"
+    },
+    {
+      "title": "Malbrough s'en va-t-en guerre",
+      "qid": "Q114812388"
+    },
+    {
+      "title": "Match Point",
+      "qid": "Q733677"
+    },
+    {
+      "title": "Near the ramparts of Seville",
+      "qid": "Q54971973"
+    },
+    {
+      "title": "Noé",
+      "qid": "Q1475053"
+    },
+    {
+      "title": "Patrie",
+      "qid": "Q11588507"
+    },
+    {
+      "title": "Pres des remparts de Seville = Draw ger y mur yn Sevilla : Carmen",
+      "qid": "Q78527128"
+    },
+    {
+      "title": "Roma Symphony",
+      "qid": "Q613406"
+    },
+    {
+      "title": "Salome",
+      "qid": "Q3945702"
+    },
+    {
+      "title": "Symphony in C",
+      "qid": "Q2288944",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=bizet_symphony_c_1_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=bizet_symphony_c_2_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=bizet_symphony_c_3_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=bizet_symphony_c_4_(c)lucarelli.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Symphony in C",
+      "qid": "Q3082680"
+    },
+    {
+      "title": "Te Deum",
+      "qid": "Q1423437"
+    },
+    {
+      "title": "The Car Man",
+      "qid": "Q3520202"
+    },
+    {
+      "title": "The Cry",
+      "qid": "Q7728299"
+    },
+    {
+      "title": "The Pearl Fishers' Duet",
+      "qid": "Q56156"
+    },
+    {
+      "title": "The Steadfast Tin Soldier",
+      "qid": "Q7766425"
+    },
+    {
+      "title": "The Tragedy of Carmen",
+      "qid": "Q3426380"
+    },
+    {
+      "title": "The flower that you tossed to me",
+      "qid": "Q54971986"
+    },
+    {
+      "title": "Toreador Song",
+      "qid": "Q6150784"
+    },
+    {
+      "title": "U-Carmen eKhayelitsha",
+      "qid": "Q2141815"
+    },
+    {
+      "title": "Variations chromatiques de concert",
+      "qid": "Q4501551"
+    },
+    {
+      "title": "L'Arl�sienne, suite 1 (1872), 2. Minuetto",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=bizet_arlesienne_1_minuetto_(c)pajares.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "L'Arl�sienne, suite 2 (1875), 3. Minuetto",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=bizet_arlesienne_2_minuetto_(c)pajares.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Jeux denfants (Childrens Games), piano 4-hands",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=bizet_jeux_01_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=bizet_jeux_02_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=bizet_jeux_03_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=bizet_jeux_04_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=bizet_jeux_05_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=bizet_jeux_06_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=bizet_jeux_07_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=bizet_jeux_08_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=bizet_jeux_09_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=bizet_jeux_10_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=bizet_jeux_11_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=bizet_jeux_12_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Act I",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=29/bizet_carmen_act-1_01_vorspiel_(c)yogorel.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=29/bizet_carmen_act-1_02_szene_und_chor_(c)yogorel.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=29/bizet_carmen_act-1_03_chor_der_strassenjungen_(c)yogorel.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3a. Recitativ",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=29/bizet_carmen_act-1_03a_recitativ_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "4. Chor der Zigarettenarbeiterinnen",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=29/bizet_carmen_act-1_04_chor_der_zigarettenarbeiterinnen_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "6. Szene",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=29/bizet_carmen_act-1_06_szene_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "6a. Recitativ",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=30/bizet_carmen_act-1_06a_recitativ_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "7. Duett",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=30/bizet_carmen_act-1_07_duett_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "7a. Recitativ",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=30/bizet_carmen_act-1_07a_recitativ_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "8. Chor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=30/bizet_carmen_act-1_08_chor_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "9. Lied und Recitativ {+}",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=33/bizet_carmen_act-1_09_lied_und_recitativ_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "10. Seguidilla und Duett {+}",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=33/bizet_carmen_act-1_10_seguidilla_und_duett_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "11. Finale {+}",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=33/bizet_carmen_act-1_11_finale_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "11a. Zwischenspiel",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=33/bizet_carmen_act-1_11a_zwischenspiel_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "12. Zigeunerlied {+}",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=33/bizet_carmen_act-2_12_zigeunerlied_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "12a. Recitativ {+}",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=33/bizet_carmen_act-2_12a_recitativ_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "13. Chor {+}",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=33/bizet_carmen_act-2_13_chor_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "14. Strophenlied {+}",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=33/bizet_carmen_act-2_14_strophenlied_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "14a. Recitativ {+}",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=33/bizet_carmen_act-2_14a_recitativ_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "14b. Escamillos Abgang {+}",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=33/bizet_carmen_act-2_14b_escamillos_abgang_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "14c. Recitativ {+}",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=33/bizet_carmen_act-2_14c_recitativ_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "15. Quintett {+}",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=33/bizet_carmen_act-2_15_quintett_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "15a. Recitativ {+}",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=33/bizet_carmen_act-2_15a_recitativ_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "16. Lied {+}",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=33/bizet_carmen_act-2_16_lied_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "16a. Recitativ {+}",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=33/bizet_carmen_act-2_16a_recitativ_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "17. Duett {+}",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=33/bizet_carmen_act-2_17_duett_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "18. Finale {+}",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=33/bizet_carmen_act-2_18_finale_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "18a. Zwischenspiel {+}",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=33/bizet_carmen_act-2_18a_zwischenspiel_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Carmen - Prelude",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 2.5",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/BizetG/prelude/prelude.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

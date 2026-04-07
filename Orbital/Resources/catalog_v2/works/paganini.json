@@ -1,0 +1,290 @@
+{
+  "works": [
+    {
+      "title": "24 Caprices for Solo Violin",
+      "qid": "Q1209178",
+      "catalog_numbers": {
+        "Op": "10"
+      },
+      "key": "A major",
+      "instruments": [
+        "Violin"
+      ],
+      "year_composed": 1817
+    },
+    {
+      "title": "43 Ghiribizzi (phantasies)",
+      "qid": "Q128603109"
+    },
+    {
+      "title": "Caprice No. 1 in E major",
+      "qid": "Q108717213",
+      "catalog_numbers": {
+        "Op": "10/1"
+      },
+      "key": "E Major",
+      "instruments": [
+        "Violin"
+      ]
+    },
+    {
+      "title": "Caprice No. 10 in G minor",
+      "qid": "Q108732271",
+      "catalog_numbers": {
+        "Op": "10/10"
+      },
+      "key": "G Minor",
+      "instruments": [
+        "Violin"
+      ]
+    },
+    {
+      "title": "Caprice No. 11 in A-flat major",
+      "qid": "Q108732793"
+    },
+    {
+      "title": "Caprice No. 11 in C major",
+      "qid": "Q108732735",
+      "catalog_numbers": {
+        "Op": "10/11"
+      },
+      "key": "C Major",
+      "instruments": [
+        "Violin"
+      ]
+    },
+    {
+      "title": "Caprice No. 13 in B-flat major",
+      "qid": "Q5036242",
+      "catalog_numbers": {
+        "Op": "10/13"
+      },
+      "key": "B-Flat Major",
+      "instruments": [
+        "Violin"
+      ]
+    },
+    {
+      "title": "Caprice No. 14 in E-flat major",
+      "qid": "Q108734265",
+      "catalog_numbers": {
+        "Op": "10/14"
+      },
+      "key": "E-Flat Major",
+      "instruments": [
+        "Violin"
+      ]
+    },
+    {
+      "title": "Caprice No. 15 in E minor",
+      "qid": "Q108734320",
+      "catalog_numbers": {
+        "Op": "10/15"
+      },
+      "key": "E Minor",
+      "instruments": [
+        "Violin"
+      ]
+    },
+    {
+      "title": "Caprice No. 16 in G minor",
+      "qid": "Q5036240",
+      "catalog_numbers": {
+        "Op": "10/16"
+      },
+      "key": "G Minor",
+      "instruments": [
+        "Violin"
+      ]
+    },
+    {
+      "title": "Caprice No. 2 in B minor",
+      "qid": "Q108717489",
+      "catalog_numbers": {
+        "Op": "10/2"
+      },
+      "key": "B Minor",
+      "instruments": [
+        "Violin"
+      ]
+    },
+    {
+      "title": "Caprice No. 24 in A minor",
+      "qid": "Q3506288"
+    },
+    {
+      "title": "Caprice No. 3 in E minor",
+      "qid": "Q108717588",
+      "catalog_numbers": {
+        "Op": "10/3"
+      },
+      "key": "E Minor",
+      "instruments": [
+        "Violin"
+      ]
+    },
+    {
+      "title": "Caprice No. 4 in C minor",
+      "qid": "Q108717740",
+      "catalog_numbers": {
+        "Op": "10/4"
+      },
+      "key": "C Minor",
+      "instruments": [
+        "Violin"
+      ]
+    },
+    {
+      "title": "Caprice No. 5 in A minor",
+      "qid": "Q3649758",
+      "catalog_numbers": {
+        "Op": "10/5"
+      },
+      "key": "A Minor",
+      "instruments": [
+        "Violin"
+      ]
+    },
+    {
+      "title": "Caprice No. 6 in G minor",
+      "qid": "Q108721890",
+      "catalog_numbers": {
+        "Op": "10/6"
+      },
+      "key": "G Minor",
+      "instruments": [
+        "Violin"
+      ]
+    },
+    {
+      "title": "Caprice No. 7 in A minor",
+      "qid": "Q108732092",
+      "catalog_numbers": {
+        "Op": "10/7"
+      },
+      "key": "A Minor",
+      "instruments": [
+        "Violin"
+      ]
+    },
+    {
+      "title": "Caprice No. 8 in E-flat major",
+      "qid": "Q108732143",
+      "catalog_numbers": {
+        "Op": "10/8"
+      },
+      "key": "E-Flat Major",
+      "instruments": [
+        "Violin"
+      ]
+    },
+    {
+      "title": "Caprice No. 9 in E major",
+      "qid": "Q108732248",
+      "catalog_numbers": {
+        "Op": "10/9"
+      },
+      "key": "E Major",
+      "instruments": [
+        "Violin"
+      ]
+    },
+    {
+      "title": "Inno patriottico",
+      "qid": "Q107264037"
+    },
+    {
+      "title": "Mosè-fantasia",
+      "qid": "Q3324724"
+    },
+    {
+      "title": "Sonata per la Grand Viola",
+      "qid": "Q3788538"
+    },
+    {
+      "title": "Violin Concerto No. 1",
+      "qid": "Q2991903"
+    },
+    {
+      "title": "Violin Concerto No. 3",
+      "qid": "Q3788854"
+    },
+    {
+      "title": "Violin Concerto No. 4",
+      "qid": "Q7933360"
+    },
+    {
+      "title": "Violin Concerto No. 5",
+      "qid": "Q3788626"
+    },
+    {
+      "title": "Violin Concerto n 2 of Niccolò Paganini",
+      "qid": "Q2991911"
+    },
+    {
+      "title": "24 Caprices for Solo Violin: 01",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/PaganiniN/O1/Caprice_1/Caprice_1-lys/Caprice_1.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "24 Caprices for Solo Violin: 02",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/PaganiniN/O1/Caprice_2/Caprice_2-lys/Caprice_2.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "24 Caprices for Solo Violin: 23",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 4.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/PaganiniN/O1/Caprice_23/Caprice_23.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "24 Caprices for Solo Violin: 24",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 4.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/PaganiniN/O1/Caprice_24/Caprice_24.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "24 Caprices for Solo Violin: 03",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/PaganiniN/O1/Caprice_3/Caprice_3-lys/Caprice_3.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

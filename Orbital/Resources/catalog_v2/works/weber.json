@@ -1,0 +1,233 @@
+{
+  "works": [
+    {
+      "title": "Rübezahl",
+      "qid": "Q109244041"
+    },
+    {
+      "title": "6 sonates progressives",
+      "qid": "Q107740802"
+    },
+    {
+      "title": "Variations on a theme from the opera \"Silvana\"",
+      "qid": "Q114774013"
+    },
+    {
+      "title": "Sonata for Piano no. 2 in A-flat major, op. 39",
+      "qid": "Q107723570"
+    },
+    {
+      "title": "Concertino for Horn and Orchestra",
+      "qid": "Q5158544"
+    },
+    {
+      "title": "Grand Duo Concertant",
+      "qid": "Q19893002"
+    },
+    {
+      "title": "Der Freischütz",
+      "qid": "Q156435"
+    },
+    {
+      "title": "Jubel Ouverture",
+      "qid": "Q109244042"
+    },
+    {
+      "title": "Invitation to the Dance",
+      "qid": "Q557467"
+    },
+    {
+      "title": "Trio for Piano, Flute and Cello",
+      "qid": "Q29592308"
+    },
+    {
+      "title": "Konzertstück in F minor",
+      "qid": "Q2654296"
+    },
+    {
+      "title": "Abu Hassan",
+      "qid": "Q240932"
+    },
+    {
+      "title": "Bassoon Concerto",
+      "qid": "Q4868192"
+    },
+    {
+      "title": "Clarinet Concerto No. 1",
+      "qid": "Q4179212"
+    },
+    {
+      "title": "Clarinet Concerto No. 1 in F Minor, Op. 73: I. Allegro",
+      "qid": "Q81975580"
+    },
+    {
+      "title": "Clarinet Concerto No. 1 in F Minor, Op. 73: II. Adagio ma non troppo",
+      "qid": "Q81976109"
+    },
+    {
+      "title": "Clarinet Concerto No. 1 in F Minor, Op. 73: III. Rondo. Allegretto",
+      "qid": "Q81979930"
+    },
+    {
+      "title": "Clarinet Concerto No. 2",
+      "qid": "Q5126988"
+    },
+    {
+      "title": "Clarinet Quintet",
+      "qid": "Q11871949"
+    },
+    {
+      "title": "Concertino for Clarinet",
+      "qid": "Q21998424"
+    },
+    {
+      "title": "Der Freischütz",
+      "qid": "Q106695969",
+      "instruments": [
+        "Sopran",
+        "Alt",
+        "Piano"
+      ]
+    },
+    {
+      "title": "Der Freischütz (Staatstheater Mainz, 2021)",
+      "qid": "Q115269745"
+    },
+    {
+      "title": "Der Freischütz. Ouverture (Carl Maria von Weber)",
+      "qid": "Q132731985"
+    },
+    {
+      "title": "Die Macht der Liebe und des Weins",
+      "qid": "Q10266176"
+    },
+    {
+      "title": "Die drei Pintos",
+      "qid": "Q323838"
+    },
+    {
+      "title": "Euriante",
+      "qid": "Q109001494"
+    },
+    {
+      "title": "Euryanthe",
+      "qid": "Q707737"
+    },
+    {
+      "title": "Grande Polonaise",
+      "qid": "Q107723522"
+    },
+    {
+      "title": "I fain would hide",
+      "qid": "Q54989369"
+    },
+    {
+      "title": "If a slim young man comes along",
+      "qid": "Q54989360"
+    },
+    {
+      "title": "JEWETT (Weber)",
+      "qid": "Q127047495"
+    },
+    {
+      "title": "Le Spectre de la Rose",
+      "qid": "Q1529152"
+    },
+    {
+      "title": "Mayerling",
+      "qid": "Q2607724"
+    },
+    {
+      "title": "Missa sancta, no. 1",
+      "qid": "Q1938928"
+    },
+    {
+      "title": "Momento capriccioso in B-flat major, op. 12",
+      "qid": "Q107723297"
+    },
+    {
+      "title": "Oberon",
+      "qid": "Q690835"
+    },
+    {
+      "title": "Peter Schmoll und seine Nachbarn",
+      "qid": "Q834193"
+    },
+    {
+      "title": "Piano Concerto No. 1",
+      "qid": "Q11331308"
+    },
+    {
+      "title": "Piano Concerto No. 2",
+      "qid": "Q11331316"
+    },
+    {
+      "title": "Piano Quartet in B-flat major, J.76",
+      "qid": "Q107723485"
+    },
+    {
+      "title": "Piano Sonata No.1",
+      "qid": "Q109044789"
+    },
+    {
+      "title": "Piano Sonata No.3",
+      "qid": "Q19708590"
+    },
+    {
+      "title": "Piano Sonata No.4",
+      "qid": "Q120200792"
+    },
+    {
+      "title": "Polacca brillante",
+      "qid": "Q107732457"
+    },
+    {
+      "title": "Preciosa",
+      "qid": "Q1240094"
+    },
+    {
+      "title": "Romance",
+      "qid": "Q123120385"
+    },
+    {
+      "title": "Seymour",
+      "qid": "Q59286050"
+    },
+    {
+      "title": "Silvana",
+      "qid": "Q834218"
+    },
+    {
+      "title": "Softly Now the Light of Day",
+      "qid": "Q58102460"
+    },
+    {
+      "title": "Softly Now the Light of Day",
+      "qid": "Q58102556"
+    },
+    {
+      "title": "Softly Now the Light of Day",
+      "qid": "Q58102655"
+    },
+    {
+      "title": "Symphony No. 1",
+      "qid": "Q11374093"
+    },
+    {
+      "title": "Symphony No. 2",
+      "qid": "Q11374109"
+    },
+    {
+      "title": "Variations on \"Schöne Minka\"",
+      "qid": "Q138448682"
+    },
+    {
+      "title": "Vyzvání k tanci",
+      "qid": "Q130725461"
+    },
+    {
+      "title": "WILMOT (Weber)",
+      "qid": "Q127032738"
+    }
+  ]
+}

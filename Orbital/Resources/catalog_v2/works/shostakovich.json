@@ -1,0 +1,1238 @@
+{
+  "works": [
+    {
+      "title": "Three Fantastic Dances",
+      "qid": "Q153477"
+    },
+    {
+      "title": "Piano Trio No. 1",
+      "qid": "Q3539337"
+    },
+    {
+      "title": "Symphony No. 2",
+      "qid": "Q210567"
+    },
+    {
+      "title": "The Bedbug",
+      "qid": "Q377536"
+    },
+    {
+      "title": "The Nose",
+      "qid": "Q2367888"
+    },
+    {
+      "title": "Symphony No. 3",
+      "qid": "Q223536"
+    },
+    {
+      "title": "The Golden Age",
+      "qid": "Q2507171"
+    },
+    {
+      "title": "The Bolt",
+      "qid": "Q2070036"
+    },
+    {
+      "title": "Two Pieces for string quartet",
+      "qid": "Q130246851"
+    },
+    {
+      "title": "Lady Macbeth of the Mtsensk District",
+      "qid": "Q48614"
+    },
+    {
+      "title": "Orango",
+      "qid": "Q7099831"
+    },
+    {
+      "title": "The Big Lightning",
+      "qid": "Q19876686"
+    },
+    {
+      "title": "Piano Concerto No. 1",
+      "qid": "Q2526940"
+    },
+    {
+      "title": "Cello Sonata",
+      "qid": "Q2312425"
+    },
+    {
+      "title": "Suite for Jazz Orchestra No. 1",
+      "qid": "Q1685790"
+    },
+    {
+      "title": "Five Fragments",
+      "qid": "Q105081940"
+    },
+    {
+      "title": "Girl Friends",
+      "qid": "Q949217"
+    },
+    {
+      "title": "The Limpid Stream",
+      "qid": "Q4410493"
+    },
+    {
+      "title": "Symphony No. 4",
+      "qid": "Q231253"
+    },
+    {
+      "title": "The Tale of the Priest and of His Workman Balda",
+      "qid": "Q7767996"
+    },
+    {
+      "title": "String Quartet No. 1",
+      "qid": "Q2563540",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/string_quartet_49_1_(c)bachovich.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/string_quartet_49_2_(c)bachovich.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/string_quartet_49_3_(c)bachovich.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/string_quartet_49_4_(c)bachovich.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/string_quartet_73_1_(c)bachovich.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/string_quartet_73_2_(c)bachovich.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/string_quartet_73_3_(c)bachovich.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/string_quartet_73_4_(c)bachovich.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/string_quartet_73_5_(c)bachovich.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Suite for Jazz Orchestra No. 2",
+      "qid": "Q692535"
+    },
+    {
+      "title": "Symphony No. 6",
+      "qid": "Q246530"
+    },
+    {
+      "title": "Piano Quintet",
+      "qid": "Q2563912"
+    },
+    {
+      "title": "Symphony No. 7",
+      "qid": "Q261140"
+    },
+    {
+      "title": "The Gamblers",
+      "qid": "Q527357"
+    },
+    {
+      "title": "Piano Sonata No. 2",
+      "qid": "Q3490151"
+    },
+    {
+      "title": "Symphony No. 8",
+      "qid": "Q270892"
+    },
+    {
+      "title": "Piano Trio No. 2",
+      "qid": "Q3539338"
+    },
+    {
+      "title": "String Quartet No. 2",
+      "qid": "Q2563817"
+    },
+    {
+      "title": "Symphony No. 9",
+      "qid": "Q275872"
+    },
+    {
+      "title": "String Quartet No. 3",
+      "qid": "Q2014870"
+    },
+    {
+      "title": "Antiformalist Rayok",
+      "qid": "Q4067153"
+    },
+    {
+      "title": "From Jewish Folk Poetry",
+      "qid": "Q5505451"
+    },
+    {
+      "title": "Violin Concerto No. 1",
+      "qid": "Q2991905"
+    },
+    {
+      "title": "Song of the Forests",
+      "qid": "Q2411249"
+    },
+    {
+      "title": "String Quartet No. 4",
+      "qid": "Q1893007"
+    },
+    {
+      "title": "The Pioneers Plant the Forests",
+      "qid": "Q11331376"
+    },
+    {
+      "title": "Four Songs to Verses of Dolmatovsky",
+      "qid": "Q60492353"
+    },
+    {
+      "title": "The Motherland Hears",
+      "qid": "Q29017193"
+    },
+    {
+      "title": "24 Preludes and Fugues",
+      "qid": "Q742772"
+    },
+    {
+      "title": "String Quartet No. 5",
+      "qid": "Q2563804"
+    },
+    {
+      "title": "Festive Overture",
+      "qid": "Q1992009"
+    },
+    {
+      "title": "String Quartet No. 6",
+      "qid": "Q2563784"
+    },
+    {
+      "title": "Symphony No. 11",
+      "qid": "Q169965"
+    },
+    {
+      "title": "Cello Concerto No. 1",
+      "qid": "Q162004"
+    },
+    {
+      "title": "String Quartet No. 7",
+      "qid": "Q372530"
+    },
+    {
+      "title": "Symphony No. 12",
+      "qid": "Q172080"
+    },
+    {
+      "title": "Symphony No. 13",
+      "qid": "Q175557"
+    },
+    {
+      "title": "String Quartet No. 10",
+      "qid": "Q2668589"
+    },
+    {
+      "title": "String Quartet No. 9",
+      "qid": "Q2487732"
+    },
+    {
+      "title": "Cello Concerto No. 2",
+      "qid": "Q2748723"
+    },
+    {
+      "title": "String Quartet No. 11",
+      "qid": "Q2249378"
+    },
+    {
+      "title": "October",
+      "qid": "Q17214408"
+    },
+    {
+      "title": "Seven Songs on Poems by Alexander Blok",
+      "qid": "Q7457456"
+    },
+    {
+      "title": "Violin Concerto No. 2",
+      "qid": "Q2525229"
+    },
+    {
+      "title": "String Quartet No. 12",
+      "qid": "Q2563793"
+    },
+    {
+      "title": "Symphony No. 14",
+      "qid": "Q188073"
+    },
+    {
+      "title": "String Quartet No. 13",
+      "qid": "Q2047892"
+    },
+    {
+      "title": "March of the Soviet Militia",
+      "qid": "Q115678912"
+    },
+    {
+      "title": "Symphony No. 15",
+      "qid": "Q112765"
+    },
+    {
+      "title": "String Quartet No. 14",
+      "qid": "Q2563547"
+    },
+    {
+      "title": "String Quartet No. 15",
+      "qid": "Q2050990"
+    },
+    {
+      "title": "Viola Sonata",
+      "qid": "Q3490081"
+    },
+    {
+      "title": "Dmitry Shostakovich: Sonata for Viola",
+      "qid": "Q116779413"
+    },
+    {
+      "title": "24 Preludes",
+      "qid": "Q3560133"
+    },
+    {
+      "title": "5 fragments for orchestra",
+      "qid": "Q1978846"
+    },
+    {
+      "title": "ABF-Memories",
+      "qid": "Q46346062"
+    },
+    {
+      "title": "Alone",
+      "qid": "Q651553"
+    },
+    {
+      "title": "Aphorisms",
+      "qid": "Q2858244"
+    },
+    {
+      "title": "Battleship Potemkin",
+      "qid": "Q152350"
+    },
+    {
+      "title": "Belinsky",
+      "qid": "Q4081961"
+    },
+    {
+      "title": "Caterina Ismàilova",
+      "qid": "Q109002423"
+    },
+    {
+      "title": "Cherry Town",
+      "qid": "Q4514789"
+    },
+    {
+      "title": "Children's Notebook",
+      "qid": "Q195170"
+    },
+    {
+      "title": "Clownery",
+      "qid": "Q4224124"
+    },
+    {
+      "title": "Concerto",
+      "qid": "Q18208702"
+    },
+    {
+      "title": "Concerto DSCH",
+      "qid": "Q5158552"
+    },
+    {
+      "title": "Counterplan",
+      "qid": "Q4127714"
+    },
+    {
+      "title": "Crime and Punishment",
+      "qid": "Q2657630"
+    },
+    {
+      "title": "DSCH motif",
+      "qid": "Q972176"
+    },
+    {
+      "title": "Dances of the Toys",
+      "qid": "Q4451341",
+      "key": "D major",
+      "instruments": [
+        "Piano"
+      ]
+    },
+    {
+      "title": "Encounter at the Elbe",
+      "qid": "Q1975020"
+    },
+    {
+      "title": "Enthusiasm",
+      "qid": "Q4532119"
+    },
+    {
+      "title": "Eyes Wide Shut",
+      "qid": "Q209481"
+    },
+    {
+      "title": "Fantasia 2000",
+      "qid": "Q30937"
+    },
+    {
+      "title": "Five Days, Five Nights",
+      "qid": "Q442853"
+    },
+    {
+      "title": "Five Preludes",
+      "qid": "Q11188024"
+    },
+    {
+      "title": "Four Verses of Captain Lebyadkin",
+      "qid": "Q118905853"
+    },
+    {
+      "title": "Friends",
+      "qid": "Q4168915"
+    },
+    {
+      "title": "Gloria Victoria",
+      "qid": "Q15312783"
+    },
+    {
+      "title": "Gogoliad",
+      "qid": "Q123684961"
+    },
+    {
+      "title": "Golden Mountains",
+      "qid": "Q5579675"
+    },
+    {
+      "title": "Hamlet",
+      "qid": "Q2481391"
+    },
+    {
+      "title": "Hamlet",
+      "qid": "Q3126472"
+    },
+    {
+      "title": "Hamlet",
+      "qid": "Q18634947"
+    },
+    {
+      "title": "Heers, Britannia!",
+      "qid": "Q2448982"
+    },
+    {
+      "title": "Introducing The Canadian Piano Trio",
+      "qid": "Q109047359"
+    },
+    {
+      "title": "Japón",
+      "qid": "Q1072282"
+    },
+    {
+      "title": "Kalinovski Square",
+      "qid": "Q15052399"
+    },
+    {
+      "title": "Katerina Izmailova",
+      "qid": "Q4217296"
+    },
+    {
+      "title": "Katyusha Maslova",
+      "qid": "Q118904952"
+    },
+    {
+      "title": "King Lear",
+      "qid": "Q2406650"
+    },
+    {
+      "title": "King Lear",
+      "qid": "Q123604389"
+    },
+    {
+      "title": "Love and Hate",
+      "qid": "Q18432385"
+    },
+    {
+      "title": "Mata Hari",
+      "qid": "Q1908016"
+    },
+    {
+      "title": "Mercurial Manoeuvres",
+      "qid": "Q6818534"
+    },
+    {
+      "title": "Messengers of Eternity",
+      "qid": "Q59188718"
+    },
+    {
+      "title": "Michurin",
+      "qid": "Q1964422"
+    },
+    {
+      "title": "Moscow, Cheryomushki",
+      "qid": "Q5236699"
+    },
+    {
+      "title": "Nijinsky",
+      "qid": "Q64398251"
+    },
+    {
+      "title": "Novorossiysk Chimes",
+      "qid": "Q4325158",
+      "instruments": [
+        "B Trumpet",
+        "Horn",
+        "Trombone",
+        "Euphonium",
+        "BaccidentalFlat Tuba",
+        "Glockenspiel",
+        "Timpani",
+        "Triangle",
+        "Snare Drum",
+        "Cymbal",
+        "Crash Cymbal"
+      ],
+      "year_composed": 1960
+    },
+    {
+      "title": "October: Ten Days That Shook the World",
+      "qid": "Q1156836"
+    },
+    {
+      "title": "On Thursday and Never Again",
+      "qid": "Q4101838"
+    },
+    {
+      "title": "Overture on Russian and Kirghiz Folk Themes",
+      "qid": "Q11350263"
+    },
+    {
+      "title": "Piano Concerto No. 2",
+      "qid": "Q210226"
+    },
+    {
+      "title": "Piano Concerto No. 2",
+      "qid": "Q19544197"
+    },
+    {
+      "title": "Pirogov",
+      "qid": "Q4363366"
+    },
+    {
+      "title": "Quartet Movement in E-flat major",
+      "qid": "Q17065925"
+    },
+    {
+      "title": "Scherzo in F-sharp minor",
+      "qid": "Q112672864",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/piano_quintet_57_2_(c)bachovich.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Simple People",
+      "qid": "Q4381600"
+    },
+    {
+      "title": "Six Poems by Marina Tsvetayeva",
+      "qid": "Q11341147"
+    },
+    {
+      "title": "Small Concerto for Two Pianos in A Minor Op. 94",
+      "qid": "Q11187491"
+    },
+    {
+      "title": "Sofiya Perovskaya",
+      "qid": "Q7553776"
+    },
+    {
+      "title": "String Quartet No. 16",
+      "qid": "Q130284020"
+    },
+    {
+      "title": "String Quartet No. 8",
+      "qid": "Q1965644"
+    },
+    {
+      "title": "Suite for Variety Orchestra No. 1",
+      "qid": "Q747768"
+    },
+    {
+      "title": "Suite on Finnish Themes",
+      "qid": "Q7635577"
+    },
+    {
+      "title": "Suite on Verses of Michelangelo Buonarroti",
+      "qid": "Q7635576"
+    },
+    {
+      "title": "Suites (Shostakovich)",
+      "qid": "Q52157794"
+    },
+    {
+      "title": "Symphony No. 1",
+      "qid": "Q163588"
+    },
+    {
+      "title": "Symphony No. 10",
+      "qid": "Q164652"
+    },
+    {
+      "title": "Symphony No. 5",
+      "qid": "Q240279"
+    },
+    {
+      "title": "Testimony",
+      "qid": "Q3519100"
+    },
+    {
+      "title": "The Condemned of Altona",
+      "qid": "Q1406083"
+    },
+    {
+      "title": "The Defense of Volotchayevsk",
+      "qid": "Q4124053"
+    },
+    {
+      "title": "The Execution of Stepan Razin",
+      "qid": "Q3819060"
+    },
+    {
+      "title": "The Fall of Berlin",
+      "qid": "Q2587854"
+    },
+    {
+      "title": "The First Echelon",
+      "qid": "Q4349915"
+    },
+    {
+      "title": "The Gadfly",
+      "qid": "Q1995073",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/shostakovitch_gadfly_97a_2_(c)siu.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/shostakovitch_gadfly_97a_3_(c)siu.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/shostakovitch_gadfly_97a_5_(c)siu.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/shostakovitch_gadfly_97a_6_(c)siu.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/shostakovitch_gadfly_97a_8_(c)siu.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Gadfly Suite",
+      "qid": "Q7735591"
+    },
+    {
+      "title": "The Great Citizen",
+      "qid": "Q4106580"
+    },
+    {
+      "title": "The Lady and the Hooligan",
+      "qid": "Q4078892"
+    },
+    {
+      "title": "The Man with the Gun",
+      "qid": "Q4508597"
+    },
+    {
+      "title": "The New Babylon",
+      "qid": "Q3211125"
+    },
+    {
+      "title": "The Return of Maxim",
+      "qid": "Q4114650"
+    },
+    {
+      "title": "The Song of the Counterplan",
+      "qid": "Q55517381"
+    },
+    {
+      "title": "The Song of the Rivers",
+      "qid": "Q1169655"
+    },
+    {
+      "title": "The Sun Shines over Our Motherland",
+      "qid": "Q24077724"
+    },
+    {
+      "title": "The Twelve Chairs",
+      "qid": "Q4028658"
+    },
+    {
+      "title": "The Twelve Chairs",
+      "qid": "Q19876726"
+    },
+    {
+      "title": "The Unforgettable Year 1919",
+      "qid": "Q1976428"
+    },
+    {
+      "title": "The Unforgettable Year 1919",
+      "qid": "Q48848205"
+    },
+    {
+      "title": "The Vyborg Side",
+      "qid": "Q4128545"
+    },
+    {
+      "title": "The War Symphonies: Shostakovich Against Stalin",
+      "qid": "Q18393939"
+    },
+    {
+      "title": "The Young Guard",
+      "qid": "Q1976498"
+    },
+    {
+      "title": "The Youth of Maxim",
+      "qid": "Q388339"
+    },
+    {
+      "title": "Toutes peines confondues",
+      "qid": "Q3535879"
+    },
+    {
+      "title": "Triple Agent",
+      "qid": "Q1970972"
+    },
+    {
+      "title": "Two Pieces, for string octet",
+      "qid": "Q106746376",
+      "key": "F major",
+      "instruments": [
+        "Violin I",
+        "Violin II",
+        "Violin III",
+        "Violin IV",
+        "Viola I",
+        "Viola II",
+        "Violoncello I",
+        "Violoncello II"
+      ],
+      "year_composed": 1925
+    },
+    {
+      "title": "Violin Sonata",
+      "qid": "Q3490189"
+    },
+    {
+      "title": "Waltz No. 2",
+      "qid": "Q21774078",
+      "key": "E♭ major",
+      "instruments": [
+        "Flute",
+        "English Horn",
+        "Horn in F",
+        "Bassoon"
+      ]
+    },
+    {
+      "title": "Year as Long as Life",
+      "qid": "Q4141085"
+    },
+    {
+      "title": "Zoya",
+      "qid": "Q8074696"
+    },
+    {
+      "title": "� MIDI | Prelude and Fugue No. 1 in C major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/preludes_and_fugues_87_01a_(c)marques.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "� MIDI | Prelude and Fugue No. 2 in a minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/preludes_and_fugues_87_02a_(c)marques.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "� MIDI | Prelude and Fugue No. 3 in G major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/preludes_and_fugues_87_03a_(c)marques.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "� MIDI | Prelude and Fugue No. 4 in e minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/preludes_and_fugues_87_04a_(c)marques.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "� MIDI | Prelude and Fugue No. 5 in D major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/preludes_and_fugues_87_05a_(c)marques.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "� MIDI | Prelude and Fugue No. 6 in b minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/preludes_and_fugues_87_06a_(c)marques.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "� MIDI | Prelude and Fugue No. 7 in A major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/preludes_and_fugues_87_07a_(c)marques.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "� MIDI | Prelude and Fugue No. 8 in f sharp minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/preludes_and_fugues_87_08a_(c)marques.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "� MIDI | Prelude and Fugue No. 9 in E major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/preludes_and_fugues_87_09a_(c)marques.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "� MIDI | Prelude and Fugue No. 10 in c sharp minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/preludes_and_fugues_87_10a_(c)marques.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "� MIDI | Prelude and Fugue No. 11 in B major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/preludes_and_fugues_87_11a_(c)marques.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "� MIDI | Prelude and Fugue No. 12 in g sharp minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/preludes_and_fugues_87_12a_(c)marques.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "� MIDI | Prelude and Fugue No. 13 in F sharp major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/preludes_and_fugues_87_13a_(c)marques.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "� MIDI | Prelude and Fugue No. 14 in e flat minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/preludes_and_fugues_87_14a_(c)marques.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "� MIDI | Prelude and Fugue No. 15 in D flat major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/preludes_and_fugues_87_15a_(c)marques.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "� MIDI | Prelude and Fugue No. 16 in b flat minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/preludes_and_fugues_87_16a_(c)marques.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "� MIDI | Prelude and Fugue No. 17 in A flat major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/preludes_and_fugues_87_17a_(c)marques.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "� MIDI | Prelude and Fugue No. 18 in f minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/preludes_and_fugues_87_18a_(c)marques.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "� MIDI | Prelude and Fugue No. 19 in E flat major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/preludes_and_fugues_87_19a_(c)marques.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "� MIDI | Prelude and Fugue No. 20 in c minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/preludes_and_fugues_87_20a_(c)marques.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "� MIDI | Prelude and Fugue No. 21 in B flat major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/preludes_and_fugues_87_21a_(c)marques.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "� MIDI | Prelude and Fugue No. 22 in g minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/preludes_and_fugues_87_22a_(c)marques.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "� MIDI | Prelude and Fugue No. 23 in F major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/preludes_and_fugues_87_23a_(c)marques.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "� MIDI | Prelude and Fugue No. 24 in d minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/preludes_and_fugues_87_24a_(c)marques.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fugue No. 4 in e minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/preludes_and_fugues_87_04b-A_(c)marques.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fugue No. 6 in b minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/preludes_and_fugues_87_06b-A_(c)marques.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fugue No. 11 in B major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/preludes_and_fugues_87_11b-A_(c)marques.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fugue No. 12 in g sharp minor [for jazz ensemble]",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/preludes_and_fugues_87_12b-A_(c)marques.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fugue No. 13 in F sharp major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/preludes_and_fugues_87_13b-A_(c)marques.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fugue No. 14 in e flat minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/preludes_and_fugues_87_14b-A_(c)marques.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Prelude No. 16 in b flat minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/preludes_and_fugues_87_16a-A_(c)marques.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Prelude No. 22 in g minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/preludes_and_fugues_87_22a-A_(c)marques.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fugue No. 22 in g minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/preludes_and_fugues_87_22b-A_(c)marques.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "1a. Prelude",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/piano_quintet_57_1a_(c)bachovich.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "1b. Fugue",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/piano_quintet_57_1b_(c)bachovich.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3. Intermezzo",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/piano_quintet_57_3_(c)bachovich.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "4. Finale",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/piano_quintet_57_4_(c)bachovich.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concert for piano No. 2 in F, Op. 102",
+      "catalog_numbers": {
+        "Op": "102"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/klavierkonzer_2_1_(c)marques.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/klavierkonzer_2_2_(c)marques.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=shostakovich/klavierkonzer_2_3_(c)marques.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

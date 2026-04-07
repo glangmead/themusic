@@ -1,0 +1,228 @@
+{
+  "works": [
+    {
+      "title": "Revelge",
+      "qid": "Q31838902"
+    },
+    {
+      "title": "Symphony No. 6",
+      "qid": "Q246487",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=mahler_symphony_1_1_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=mahler_symphony_1_2_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=mahler_symphony_1_3_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=mahler_symphony_1_4_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/mahler_symphony_1_1_(c)boot.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/mahler_symphony_1_2_(c)boot.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/mahler_symphony_1_3_(c)boot.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/mahler_symphony_1_4_(c)boot.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=mahler_symphony_4_1_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=mahler_symphony_4_2_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=mahler_symphony_4_3_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=mahler_symphony_4_4_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=20/mahler_symphony_9_1_(c)boot.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=20/mahler_symphony_9_2_(c)boot.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=20/mahler_symphony_9_3_(c)boot.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=20/mahler_symphony_9_4_(c)boot.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Symphony No. 8",
+      "qid": "Q270853"
+    },
+    {
+      "title": "Blanche Neige",
+      "qid": "Q2906004"
+    },
+    {
+      "title": "Das Lied von der Erde",
+      "qid": "Q846646"
+    },
+    {
+      "title": "Das klagende Lied",
+      "qid": "Q1171386"
+    },
+    {
+      "title": "Death in Venice",
+      "qid": "Q742308"
+    },
+    {
+      "title": "Des Antonius von Padua Fischpredigt",
+      "qid": "Q29784287"
+    },
+    {
+      "title": "Des Knaben Wunderhorn",
+      "qid": "Q165209"
+    },
+    {
+      "title": "Dracula: Pages from a Virgin's Diary",
+      "qid": "Q5304682"
+    },
+    {
+      "title": "Ging heute morgen übers Feld",
+      "qid": "Q116667859"
+    },
+    {
+      "title": "Hitler: A Film from Germany",
+      "qid": "Q828806"
+    },
+    {
+      "title": "Husbands and Wives",
+      "qid": "Q740143"
+    },
+    {
+      "title": "Karl May",
+      "qid": "Q1732325"
+    },
+    {
+      "title": "Kindertotenlieder",
+      "qid": "Q589396",
+      "key": "F major",
+      "instruments": [
+        "2 Flöten",
+        "Oboe",
+        "2 Klarinetten in B",
+        "Baßklarinette in B",
+        "2 Fagotten",
+        "Horn in F (I)",
+        "Horn in F (II)",
+        "Glockenspiel",
+        "Harfe",
+        "Singstimme",
+        "Violinen I",
+        "Violinen II",
+        "Violen",
+        "Violoncelli",
+        "Kontrabässe"
+      ],
+      "year_composed": 1905
+    },
+    {
+      "title": "Lieder eines fahrenden Gesellen",
+      "qid": "Q678753"
+    },
+    {
+      "title": "Lieder und Gesänge",
+      "qid": "Q6544088"
+    },
+    {
+      "title": "Mahler",
+      "qid": "Q1813473"
+    },
+    {
+      "title": "Mahler on the Couch",
+      "qid": "Q1388280"
+    },
+    {
+      "title": "Piano Quartet",
+      "qid": "Q7190133"
+    },
+    {
+      "title": "Rückert-Lieder",
+      "qid": "Q2032459"
+    },
+    {
+      "title": "Symphony No. 1",
+      "qid": "Q163553"
+    },
+    {
+      "title": "Symphony No. 10",
+      "qid": "Q164634"
+    },
+    {
+      "title": "Symphony No. 2",
+      "qid": "Q210549"
+    },
+    {
+      "title": "Symphony No. 3",
+      "qid": "Q223525"
+    },
+    {
+      "title": "Symphony No. 4",
+      "qid": "Q231216"
+    },
+    {
+      "title": "Symphony No. 5",
+      "qid": "Q240240"
+    },
+    {
+      "title": "Symphony No. 7",
+      "qid": "Q261074"
+    },
+    {
+      "title": "Symphony No. 9",
+      "qid": "Q275858"
+    },
+    {
+      "title": "The Catalyst",
+      "qid": "Q3906170"
+    },
+    {
+      "title": "The Honeymoon Killers",
+      "qid": "Q1626875"
+    },
+    {
+      "title": "Wooden Staircase",
+      "qid": "Q8032598"
+    },
+    {
+      "title": "Symphonie No. 3 in d minor (1898)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/mahler_symphony_3_1_(c)boot.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/mahler_symphony_3_2_(c)boot.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/mahler_symphony_3_3_(c)boot.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/mahler_symphony_3_4_(c)boot.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/mahler_symphony_3_5_(c)boot.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/mahler_symphony_3_6_(c)boot.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Symphonie No. 5 (1901-3. Revision: 1904, 1905, 1906, 1907, 1910-11)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/mahler_symphony_5_1_(c)boot.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/mahler_symphony_5_2_(c)boot.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/mahler_symphony_5_3_(c)boot.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/mahler_symphony_5_4_(c)boot.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/mahler_symphony_5_5_(c)boot.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Symphonie No. 10 (1910, Deryck Cooke version)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/mahler_symphony_10_1_(c)boot.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/mahler_symphony_10_2_(c)boot.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/mahler_symphony_10_3_(c)boot.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/mahler_symphony_10_4_(c)boot.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/mahler_symphony_10_5_(c)boot.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

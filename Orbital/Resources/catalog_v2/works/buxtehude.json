@@ -1,0 +1,1280 @@
+{
+  "works": [
+    {
+      "title": "Membra Jesu Nostri",
+      "qid": "Q307225",
+      "catalog_numbers": {
+        "BuxWV": "75"
+      }
+    },
+    {
+      "title": "Das jüngste Gericht",
+      "qid": "Q109827367"
+    },
+    {
+      "title": "Der Herr ist mit mir",
+      "qid": "Q932247",
+      "catalog_numbers": {
+        "BuxWV": "15"
+      },
+      "key": "E♭ major",
+      "instruments": [
+        "Violin",
+        "Violoncello",
+        "Soprano",
+        "Alto",
+        "Tenor",
+        "Bass",
+        "Pipe Organ"
+      ]
+    },
+    {
+      "title": "Die Natur, oder Eigenschaft der Planeten",
+      "qid": "Q16549562",
+      "catalog_numbers": {
+        "BuxWV": "251"
+      }
+    },
+    {
+      "title": "Herr, wenn ich nur dich hab",
+      "qid": "Q3134329",
+      "catalog_numbers": {
+        "BuxWV": "38"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=2/buxtehude_herr_wenn_ich_nur_dich_hab_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Herzlich lieb hab ich dich, o Herr",
+      "qid": "Q3134690",
+      "catalog_numbers": {
+        "BuxWV": "41"
+      }
+    },
+    {
+      "title": "In dulci jubilo",
+      "qid": "Q131382632",
+      "key": "G major"
+    },
+    {
+      "title": "Mit Fried und Freud",
+      "qid": "Q3197718",
+      "catalog_numbers": {
+        "BuxWV": "76"
+      }
+    },
+    {
+      "title": "Mit Fried und Freud",
+      "qid": "Q3317040",
+      "catalog_numbers": {
+        "BuxWV": "76"
+      }
+    },
+    {
+      "title": "Passacaglia in D minor",
+      "qid": "Q2310616",
+      "catalog_numbers": {
+        "BuxWV": "161"
+      },
+      "key": "D Minor",
+      "instruments": [
+        "Organ"
+      ],
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/major_organ_works_buxwv-161_(c)mccoy.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/major_organ_works_buxwv-161_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Death of Empedocles",
+      "qid": "Q47417342"
+    },
+    {
+      "title": "Wie schön leuchtet der Morgenstern",
+      "qid": "Q4019691",
+      "catalog_numbers": {
+        "BuxWV": "223"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/chorale-preludes_buxwv-223_(c)mccoy.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata in F Major, Op. 1, No. 1",
+      "catalog_numbers": {
+        "BuxWV": "252",
+        "Op": "1/1"
+      },
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=op1-1-1.krn&l=users/craig/classical/buxtehude/op1&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=op1-1-2.krn&l=users/craig/classical/buxtehude/op1&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=op1-1-3.krn&l=users/craig/classical/buxtehude/op1&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=op1-1-4.krn&l=users/craig/classical/buxtehude/op1&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=op1-1-5.krn&l=users/craig/classical/buxtehude/op1&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=op1-1-6.krn&l=users/craig/classical/buxtehude/op1&format=midi"
+          ]
+        },
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=2/buxtehude_sonatas_opus_1_1_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=2/buxtehude_sonatas_opus_1_2_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=2/buxtehude_sonatas_opus_1_3_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=2/buxtehude_sonatas_opus_1_4_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=2/buxtehude_sonatas_opus_1_5_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=2/buxtehude_sonatas_opus_1_6_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=2/buxtehude_sonatas_opus_1_7_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata in G Major, Op. 1, No. 2",
+      "catalog_numbers": {
+        "BuxWV": "253",
+        "Op": "1/2"
+      },
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=op1-2-1.krn&l=users/craig/classical/buxtehude/op1&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=op1-2-2.krn&l=users/craig/classical/buxtehude/op1&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=op1-2-3.krn&l=users/craig/classical/buxtehude/op1&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=op1-2-4.krn&l=users/craig/classical/buxtehude/op1&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=op1-2-5.krn&l=users/craig/classical/buxtehude/op1&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=op1-2-6.krn&l=users/craig/classical/buxtehude/op1&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata in A Minor, Op. 1, No. 3",
+      "catalog_numbers": {
+        "BuxWV": "254",
+        "Op": "1/3"
+      },
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=op1-3-1.krn&l=users/craig/classical/buxtehude/op1&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=op1-3-2.krn&l=users/craig/classical/buxtehude/op1&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=op1-3-3.krn&l=users/craig/classical/buxtehude/op1&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=op1-3-4.krn&l=users/craig/classical/buxtehude/op1&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=op1-3-5.krn&l=users/craig/classical/buxtehude/op1&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=op1-3-6.krn&l=users/craig/classical/buxtehude/op1&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata in B-flat Major, Op. 1, No. 4",
+      "catalog_numbers": {
+        "BuxWV": "255",
+        "Op": "1/4"
+      },
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=op1-4-1.krn&l=users/craig/classical/buxtehude/op1&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=op1-4-2.krn&l=users/craig/classical/buxtehude/op1&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=op1-4-3.krn&l=users/craig/classical/buxtehude/op1&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Praeludium [and Fugue] in C major, BuxWV 136",
+      "catalog_numbers": {
+        "BuxWV": "136"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/major_organ_works_buxwv-136_(c)maclean.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Praeludium [Fuga et Chaconne] in C major, BuxWV 137 *",
+      "catalog_numbers": {
+        "BuxWV": "137"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/major_organ_works_buxwv-137_(c)mccoy.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/major_organ_works_buxwv-137_(fenske).mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/major_organ_works_buxwv-137_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Praeludium [and Fugue] in D major, BuxWV 139 *",
+      "catalog_numbers": {
+        "BuxWV": "139"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/major_organ_works_buxwv-139_(c)mccoy.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/major_organ_works_buxwv-139_(luquet).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Praeludium [and Fugue] in d minor, BuxWV 140",
+      "catalog_numbers": {
+        "BuxWV": "140"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/major_organ_works_buxwv-140_(c)maclean.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Praeludium [and Fugue] in E major, BuxWV 141",
+      "catalog_numbers": {
+        "BuxWV": "141"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/major_organ_works_buxwv-141_(c)maclean.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Praeludium [and Fugue] in e minor, BuxWV 142",
+      "catalog_numbers": {
+        "BuxWV": "142"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/major_organ_works_buxwv-142_(c)maclean.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Praeludium [and Fugue] in e minor, BuxWV 143 **",
+      "catalog_numbers": {
+        "BuxWV": "143"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/major_organ_works_buxwv-143_(mccloskey).mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/major_organ_works_buxwv-143_(unknown).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Praeludium [and Fugue] in F major, BuxWV 144 **",
+      "catalog_numbers": {
+        "BuxWV": "144"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/major_organ_works_buxwv-144_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Praeludium [and Fugue] in F major, BuxWV 145 *",
+      "catalog_numbers": {
+        "BuxWV": "145"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/major_organ_works_buxwv-145_(c)mccoy.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/major_organ_works_buxwv-145_(c)maclean.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Praeludium [and Fugue] in f sharp minor, BuxWV 146",
+      "catalog_numbers": {
+        "BuxWV": "146"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/major_organ_works_buxwv-146_(c)maclean.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Praeludium [and Fugue] in G major, BuxWV 147",
+      "catalog_numbers": {
+        "BuxWV": "147"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/major_organ_works_buxwv-147_(c)maclean.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Praeludium [and Fugue] in g minor, BuxWV 148",
+      "catalog_numbers": {
+        "BuxWV": "148"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/major_organ_works_buxwv-148_(c)maclean.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Praeludium [and Fugue] in g minor, BuxWV 149",
+      "catalog_numbers": {
+        "BuxWV": "149"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/major_organ_works_buxwv-149_(c)maclean.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Praeludium [and Fugue] in g minor, BuxWV 150",
+      "catalog_numbers": {
+        "BuxWV": "150"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/major_organ_works_buxwv-150_(c)maclean.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Praeludium [and Fugue] in A major, BuxWV 151 (doubtfull)",
+      "catalog_numbers": {
+        "BuxWV": "151"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/major_organ_works_buxwv-151_(c)maclean.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Praeludium [and Fugue] in a phrygian mode a, BuxWV 152",
+      "catalog_numbers": {
+        "BuxWV": "152"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/major_organ_works_buxwv-152_(c)maclean.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Praeludium [and Fugue] in a minor, BuxWV 153",
+      "catalog_numbers": {
+        "BuxWV": "153"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/major_organ_works_buxwv-153_(c)maclean.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Praeludium [incompleted] in B (flat) major, BuxWV 154",
+      "catalog_numbers": {
+        "BuxWV": "154"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/major_organ_works_buxwv-154_(c)maclean.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Preambulum [and Fugue] in a minor, BuxWV 158",
+      "catalog_numbers": {
+        "BuxWV": "158"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/major_organ_works_buxwv-158_(c)maclean.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Toccata in d minor, BuxWV 155",
+      "catalog_numbers": {
+        "BuxWV": "155"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/major_organ_works_buxwv-155_(c)maclean.mid"
+          ]
+        },
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/BuxtehudeD/Wx155/BuxWv155/BuxWv155.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Toccata [and Fugue] in F major, BuxWV 156",
+      "catalog_numbers": {
+        "BuxWV": "156"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/major_organ_works_buxwv-156_(c)maclean.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/major_organ_works_buxwv-156_(c)mccoy.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Toccata [and Fugue] in F major, BuxWV 157 *",
+      "catalog_numbers": {
+        "BuxWV": "157"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/major_organ_works_buxwv-157_(c)mccoy.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/major_organ_works_buxwv-157_(fenske).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Toccata [plus Fugues] in G major [manualiter], BuxWV 164",
+      "catalog_numbers": {
+        "BuxWV": "164"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/major_organ_works_buxwv-164_(c)maclean.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ciacona in c minor, BuxWV 159",
+      "catalog_numbers": {
+        "BuxWV": "159"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/major_organ_works_buxwv-159_(c)maclean.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ciacona in e minor, BuxWV 160",
+      "catalog_numbers": {
+        "BuxWV": "160"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/major_organ_works_buxwv-160_(c)maclean.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Canzonetta in G major [manualiter], BuxWV 171",
+      "catalog_numbers": {
+        "BuxWV": "171"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/major_organ_works_buxwv-171_(c)mccoy.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fuga in C major [manualiter], BuxWV 174",
+      "catalog_numbers": {
+        "BuxWV": "174"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/major_organ_works_buxwv-174_(cooke).mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/buxtehude_buxwv-174_(simonetto).mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/major_organ_works_buxwv-174_(c)mccoy.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ach Gott und Herr, BuxWV 177",
+      "catalog_numbers": {
+        "BuxWV": "177"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/chorale-preludes_buxwv-177_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ach Herr, mich armen S�nder (= Ach Haupt voll Blut und Wunden), BuxWV 178",
+      "catalog_numbers": {
+        "BuxWV": "178"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/chorale-preludes_buxwv-178_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Christ unser Herr zum Jordan kam, BuxWV 180",
+      "catalog_numbers": {
+        "BuxWV": "180"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/chorale-preludes_buxwv-180_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Durch Adams Fall ist ganz verderbt, BuxWV 183",
+      "catalog_numbers": {
+        "BuxWV": "183"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/chorale-preludes_buxwv-183_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ein feste Burg ist unser Gott, BuxWV 184",
+      "catalog_numbers": {
+        "BuxWV": "184"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/chorale-preludes_buxwv-184_(mccloskey).mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/chorale-preludes_buxwv-184_(c)mccoy.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Erhalt uns, Herr, bei deinem Wort, BuxWV 185",
+      "catalog_numbers": {
+        "BuxWV": "185"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/chorale-preludes_buxwv-185_(mccloskey).mid"
+          ]
+        },
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/BuxtehudeD/Wv185/BuxWv185/BuxWv185.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Es ist das Heil uns kommen her, BuxWV 186",
+      "catalog_numbers": {
+        "BuxWV": "186"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/chorale-preludes_buxwv-186_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Es spricht der Unweisen Mund wohl, BuxWV 187",
+      "catalog_numbers": {
+        "BuxWV": "187"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/chorale-preludes_buxwv-187_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gelobet seist du, Jesu Christ, BuxWV 188",
+      "catalog_numbers": {
+        "BuxWV": "188"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/chorale-preludes_buxwv-188_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gelobet seist du, Jesu Christ, BuxWV 189",
+      "catalog_numbers": {
+        "BuxWV": "189"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/chorale-preludes_buxwv-189_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Jesus Christus, unser Heiland, BuxWV 198",
+      "catalog_numbers": {
+        "BuxWV": "198"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/chorale-preludes_buxwv-198_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Komm, heiliger Geist, Herre Gott, BuxWV 199",
+      "catalog_numbers": {
+        "BuxWV": "199"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/chorale-preludes_buxwv-199_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Komm, heiliger Geist, Herre Gott, BuxWV 200",
+      "catalog_numbers": {
+        "BuxWV": "200"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/chorale-preludes_buxwv-200_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lobt Gott, ihr Christen, allzugleich, BuxWV 202",
+      "catalog_numbers": {
+        "BuxWV": "202"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/chorale-preludes_buxwv-202_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mensch, wilt du leben seliglich, BuxWV 206",
+      "catalog_numbers": {
+        "BuxWV": "206"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/chorale-preludes_buxwv-206_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nun komm, der heiden Heiland, BuxWV 211",
+      "catalog_numbers": {
+        "BuxWV": "211"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/chorale-preludes_buxwv-211_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Puer natus in Bethlehem, BuxWV 217",
+      "catalog_numbers": {
+        "BuxWV": "217"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/chorale-preludes_buxwv-217_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Te Deum laudamus, BuxWV 218",
+      "catalog_numbers": {
+        "BuxWV": "218"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/chorale-preludes_buxwv-218_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Von Gott will ich nicht lassen, BuxWV 220",
+      "catalog_numbers": {
+        "BuxWV": "220"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/chorale-preludes_buxwv-220_(mccloskey).mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/chorale-preludes_buxwv-220_(c)mccoy.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Von Gott will ich nicht lassen, BuxWV 221",
+      "catalog_numbers": {
+        "BuxWV": "221"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/chorale-preludes_buxwv-221_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Waer' Gott nicht mit uns diese Zeit, BuxWV 222",
+      "catalog_numbers": {
+        "BuxWV": "222"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/chorale-preludes_buxwv-222_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Wir danken dir, Herr Jesu Christ, BuxWV 224",
+      "catalog_numbers": {
+        "BuxWV": "224"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/chorale-preludes_buxwv-224_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Magnificat noni toni for organ, BuxWV 205",
+      "catalog_numbers": {
+        "BuxWV": "205"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=27ab/buxtehude_magnificat_noni_toni_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "VII Sonate � due, Violino &amp; Viola da gamba, con Cembalo Opera Secunda, for violin, viola da gamba and harpsichord, BuxWV 259-265 (Hamburg 1696)",
+      "catalog_numbers": {
+        "BuxWV": "259"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=27ab/buxtehude_sonatas_for_strings_ii_1_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27ab/buxtehude_sonatas_for_strings_ii_2_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27ab/buxtehude_sonatas_for_strings_ii_3_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27ab/buxtehude_sonatas_for_strings_ii_4_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27ab/buxtehude_sonatas_for_strings_ii_5_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27ab/buxtehude_sonatas_for_strings_ii_6_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27ab/buxtehude_sonatas_for_strings_ii_7_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sicut Moses, Cantata (BuxWV 97) for solo soprano, violins, viola da gamba and basso continuo",
+      "catalog_numbers": {
+        "BuxWV": "97"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=2/buxtehude_sicut_moses_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Dies' sind die heil'gen zehn Gebot'",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/chorales_dies_sind_die_heiligen_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gelobet seist du, Jesu Christ",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/chorales_gelobet_seist_du_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lobt Gott, ihr Christen, allzugleich",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/chorales_lobt_gott_ihr_christen_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Meine Seele erhebt den Herren",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/chorales_meine_seele_erhebt_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "O Mensch, bewein' dein Suende gross",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/chorales_o_mensch_bewein_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Verleih' uns Frieden gnaediglich",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/chorales_verleih_uns_frieden_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Wachet auf, ruft uns die Stimme",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/chorales_wachet_auf_ruft_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Waer' Gott nicht mit uns diese Zeit",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/chorales_waer_gott_nicht_mit_uns_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Wo soll' ich fliehen hin?",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/chorales_wo_soll_ich_fliehen_hin_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Wenn wir in hoechsten Noeten sein",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=buxtehude/chorales_wenn_wir_in_hoechsten_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Membra Jesu nostri",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/BuxtehudeD/MembraJesuNostri/MembraJesuNostri-lys/MembraJesuNostri_score.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nun bitten wir den heiligen Geist",
+      "catalog_numbers": {
+        "BuxWV": "208"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/BuxtehudeD/Wv208/buxtehude_Wv208_nun_bitten_wir/buxtehude_Wv208_nun_bitten_wir.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Alles was ihr tut",
+      "catalog_numbers": {
+        "BuxWV": "4"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/BuxtehudeD/Wv4/BuxWV4_AllesWasIhrTut/BuxWV4_AllesWasIhrTut-lys/BuxWV4_score.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ciaconna: Laudate pueri Dominum",
+      "catalog_numbers": {
+        "BuxWV": "69"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/BuxtehudeD/Wv69/BuxWV69/BuxWV69-lys/BuxWV69_parts.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

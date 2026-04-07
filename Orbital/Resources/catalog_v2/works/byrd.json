@@ -1,0 +1,1493 @@
+{
+  "works": [
+    {
+      "title": "Mass for Five Voices",
+      "qid": "Q116549857"
+    },
+    {
+      "title": "Mass for Four Voices",
+      "qid": "Q6784039",
+      "key": "Ab major",
+      "instruments": [
+        "Sopran",
+        "Alt",
+        "Tenor",
+        "Bas"
+      ]
+    },
+    {
+      "title": "My Ladye Nevells Booke",
+      "qid": "Q3331204"
+    },
+    {
+      "title": "Songs of sundrie natures",
+      "qid": "Q42195767"
+    },
+    {
+      "title": "The Battell",
+      "qid": "Q137705054",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/virginal_program_music_72_(c)sankey.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/virginal_program_music_73_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Carman's Whistle",
+      "qid": "Q125355892"
+    },
+    {
+      "title": "Ye Sacred Muses",
+      "qid": "Q2599928"
+    },
+    {
+      "title": "Miserere in 2 parts (Clarifica me, Pater, MB47)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/liturgical_works_01_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Miserere in 3 parts (FW176 MB48)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/liturgical_works_02_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Miserere in 4 parts (FW177 MB49)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/liturgical_works_03_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gloria tibi Trinitas (MB50)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/liturgical_works_04_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "In Nomine (MB51)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/liturgical_works_05_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Miserere (MB66)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/liturgical_works_06_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Miserere (MB67)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/liturgical_works_07_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Salvator Mundi (MB68)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/liturgical_works_08_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Salvator Mundi (MB69)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/liturgical_works_09_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pavana and Galiardo Sr.Wm.Petre (NE39+40 PA1+2+3 MB1+3)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/pavans_and_galliards_10_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Passinge Mesures Pavian and Galliarde (NE24+25 FW56+57 MB2)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/pavans_and_galliards_11_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pavana and Galliarda (FW165+166 MB4)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/pavans_and_galliards_12_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pavana Delight and Galiarda (FW277+278 MB5)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/pavans_and_galliards_13_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pavana and Galiarda (NE14+15 FW252+253 MB14)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/pavans_and_galliards_14_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pavana and Galiardo The Earle of Salisbury (PA6+7 MB15a+b)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/pavans_and_galliards_15_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pavan and Galliard (MB16)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/pavans_and_galliards_16_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pavan and Galliard (MB23)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/pavans_and_galliards_17_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pavana and Galiarda (NE10+11 FW167+168 MB29)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/pavans_and_galliards_18_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pavana and Galiarda (NE16+17 MB30)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/pavans_and_galliards_19_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pavana and Galiarda (NE18+19 MB31)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/pavans_and_galliards_20_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pavana and Galiarda (NE20+21 MB32)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/pavans_and_galliards_21_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pavan and Galliard (MB33)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/pavans_and_galliards_22_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pavana and Galiarda (FW254+255 MB52)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/pavans_and_galliards_23_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pavana Lachrym�, 'John Dowland, sett foorth by William Byrd' and Galiarda (FW121+122 MB54+55)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/pavans_and_galliards_24_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Bray's Pavana and Galiarda (FW91+92 MB59)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/pavans_and_galliards_25_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ph.Tregian's Pavana and Galiarda (FW93+94 MB60)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/pavans_and_galliards_26_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Echo Pavan and Galliard (MB114)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/pavans_and_galliards_27_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Quadran Paven and Galiard (FW133+134 MB70)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/pavans_and_galliards_28_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pavana and Galiarda (NE12+13 FW257+258 MB71)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/pavans_and_galliards_29_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pavan and Galliard (MB72)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/pavans_and_galliards_30_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pavan and Galliard (MB73)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/pavans_and_galliards_31_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pavan and Galliard (MB76+77)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/pavans_and_galliards_32_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pavian (NE23 MB17)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/pavans_and_galliards_33_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pavan: 2 Parts in One (NE22 FW275 MB74)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/pavans_and_galliards_34_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lady Montegle's Paven (FW294 MB75)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/pavans_and_galliards_35_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Galiardo Secundo Mris Marye Brownlo (PA8 MB15c)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/pavans_and_galliards_36_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Galliards Gygge (NE7 MB18)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/pavans_and_galliards_37_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Galiardo Mris Marye Brownlo (PA5 MB34)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/pavans_and_galliards_38_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Galliard (FW164 MB53)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/pavans_and_galliards_39_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Galliarda (FW174)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/pavans_and_galliards_40_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Queenes Alman (FW172 MB10)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/virginal_dances_41_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Alman (FW163 MB11)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/virginal_dances_42_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Alman (FW63 MB44)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/virginal_dances_43_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Monsiers Alman (NE38 FW61+62 MB87+88)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/virginal_dances_44_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Alman (FW156 MB89)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/virginal_dances_45_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Coranto (FW218 MB21) The three themes of this piece occur together in a lute manuscript of 1590",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/virginal_dances_46_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Coranto (FW241 MB45)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/virginal_dances_47_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gigg (FW181 MB22)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/virginal_dances_48_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Hornpipe (MB39)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/virginal_dances_49_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sellingers Rownde (NE37 FW64 MB84)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/virginal_dances_50_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "La Volta (FW159 MB90), theme by Thomas Morley",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/virginal_dances_51_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "La Volta (FW155 MB91)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/virginal_dances_52_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ground (MB9)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/virginal_grounds_53_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Hughe Ashtons Grownde (NE35 FW60 MB20)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/virginal_grounds_54_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Second Grownde (NE30 MB42)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/virginal_grounds_55_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ground (MB43)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/virginal_grounds_56_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "My Ladye Nevels Grownde (NE1 MB57)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/virginal_grounds_57_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ground (MB86)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/virginal_grounds_58_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pr�ludium (PA4 FW24 MB24)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/preludes_and_fantasias_59_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fantasia (FW100+52 MB12+13)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/preludes_and_fantasias_60_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fantasia (NE36 FW103 MB25)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/preludes_and_fantasias_61_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fancie (NE41 MB46)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/preludes_and_fantasias_62_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fantasia on a Fugue (FW261 MB62)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/preludes_and_fantasias_63_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fantasia (FW8 MB63)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/preludes_and_fantasias_64_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ut, re, mi for Two (MB58)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/preludes_and_fantasias_65_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ut, re, mi, fa, sol, la (NE9 FW101 MB64)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/preludes_and_fantasias_66_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ut, mi, re (FW102 MB65)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/preludes_and_fantasias_67_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "A Verse (MB28) a simple two-part work",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/preludes_and_fantasias_68_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lesson of Voluntarie (NE29 MB26)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/preludes_and_fantasias_69_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Voluntarie (NE42, MB27 in part)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/preludes_and_fantasias_70_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Voluntarie: for my ladye nevell (NE26 MB61)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/preludes_and_fantasias_71_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fortune (FW65 MB6)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/popular_tunes_74_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lord Willobies Welcome Home (NE33 FW160 MB7)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/popular_tunes_75_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Walsingham (NE31 FW68 MB8) an old folk tune",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/popular_tunes_76_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Qui Passe: for my ladye nevell (NE2 MB19)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/popular_tunes_77_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Callino Casturame (FW158 MB35)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/popular_tunes_78_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Carmans Whistle (NE34 FW58 MB36)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/popular_tunes_79_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Wolsey's Wilde (FW157 MB37)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/popular_tunes_80_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Bells of Osney (FW69 MB38)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/popular_tunes_81_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Huntes upp (NE8 FW59/276 MB40/41) displaying the various gaits of horses",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/popular_tunes_82_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "All in a Garden Green (NE32 FW104 MB56)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/popular_tunes_83_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Ghost (FW162 MB78)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/popular_tunes_84_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Go from my Window (MB79)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/popular_tunes_85_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gipseis Round (FW216 MB80)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/popular_tunes_86_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "John come kisse me now (FW10 MB81)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/popular_tunes_87_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Maydens Song (NE28 FW126 MB82)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/popular_tunes_88_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "O Mistris Myne (FW66 MB83)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/popular_tunes_89_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Woods soe Wylde (NE27 FW67 MB85)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/popular_tunes_90_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Barelye Breake (NE6 MB92) a medley",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/popular_tunes_91_(c)sankey.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ave verum corpus **",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=2/byrd_ave_verum_corpus_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Dies sanctificatus *",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/byrd_dies_sanctificatus_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lumen ad revelationem gentium *",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/byrd_lumen_ad_revelationem_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "O Lord how vain",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=ancient/byrd_o_lord_how_vain_(c)miles.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ne irascaris Domine �",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=2/byrd_ne_irascaris_domine_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Terra tremuit *",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/byrd_terra_tremuit_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Victimae paschali",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=ancient/byrd_victimae_paschali_(c)miles.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "A Galliards gygge",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/virginal_pieces_1_(nc)werths.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "All in a garden grine",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/virginal_pieces_7_(nc)werths.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Barelye breake",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/virginal_pieces_3_(nc)werths.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Barelye breake *",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=ancient/byrd_barley_break_(nc)werths.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Firste Galliarde to the firste Pavian",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/virginal_pieces_5_(nc)werths.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Firste Pavian",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/virginal_pieces_4_(nc)werths.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Hey, ho! to the greenwood �",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=ancient/byrd_hei_ho_to_the_greenwood_(c)clark.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The leaves be green for 5 instruments **",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=2/byrd_the_leaves_de_green_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lord Salisbury's paviane",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/virginal_pieces_11_(nc)werths.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lord Willobies welcome home",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/virginal_pieces_8_(nc)werths.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Qui Passe: for my ladye Nevell",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/virginal_pieces_2_(nc)werths.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pavan To The Earl Of Salisbury for 5 instruments ��",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=2/byrd_pavan_to_the_earl_of_salisbury_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sellingers rownde",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/virginal_pieces_10_(nc)werths.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "A Voluntarie for my Ladye Nevell",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/virginal_pieces_9_(nc)werths.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Will yow walke the woods soe wylde",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=byrd/virginal_pieces_6_(nc)werths.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

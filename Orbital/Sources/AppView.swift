@@ -216,7 +216,7 @@ private struct RegularAppLayout: View {
       }
     }
     .navigationTitle("Composers")
-    .navigationDestination(for: ComposerEntry.ID.self) { composerID in
+    .navigationDestination(for: CatalogComposer.ID.self) { composerID in
       if let composer = catalog.sortedComposers.first(where: { $0.id == composerID }) {
         ComposerDetailView(composer: composer)
       }
@@ -447,9 +447,12 @@ private struct EventLogSheet: View {
 }
 
 #Preview {
+  let ledger = MIDIDownloadLedger(baseDirectory: .temporaryDirectory)
   AppView()
     .environment(SpatialAudioEngine())
     .environment(SongLibrary())
     .environment(ResourceManager())
     .environment(ClassicsCatalogLibrary())
+    .environment(ledger)
+    .environment(MIDIDownloadManager(ledger: ledger))
 }

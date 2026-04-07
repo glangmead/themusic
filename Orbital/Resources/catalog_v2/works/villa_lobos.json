@@ -1,0 +1,353 @@
+{
+  "works": [
+    {
+      "title": "Chôros No. 3",
+      "qid": "Q2178306"
+    },
+    {
+      "title": "Chôros No. 4",
+      "qid": "Q2683640"
+    },
+    {
+      "title": "Rudepoêma",
+      "qid": "Q2488651"
+    },
+    {
+      "title": "Quinteto em forma de chôros",
+      "qid": "Q25218354"
+    },
+    {
+      "title": "O Papagaio do Moleque",
+      "qid": "Q26709880"
+    },
+    {
+      "title": "A Floresta do Amazonas",
+      "qid": "Q9557263"
+    },
+    {
+      "title": "A prole do bebe",
+      "qid": "Q30589603"
+    },
+    {
+      "title": "Bachianas Brasileiras",
+      "qid": "Q769353",
+      "key": "D major",
+      "instruments": [
+        "Solo Violin",
+        "Violin I",
+        "Violin II",
+        "Viola",
+        "Violoncello",
+        "Contrabass"
+      ]
+    },
+    {
+      "title": "Bachianas Brasileiras No. 2",
+      "qid": "Q42187171"
+    },
+    {
+      "title": "Bachianas Brasileiras No. 5",
+      "qid": "Q2878306"
+    },
+    {
+      "title": "Caixinha de boas festas",
+      "qid": "Q109242480"
+    },
+    {
+      "title": "Canções de Cordialidade",
+      "qid": "Q2329824"
+    },
+    {
+      "title": "Cello Concerto No. 1",
+      "qid": "Q5058302"
+    },
+    {
+      "title": "Cello Concerto No. 2",
+      "qid": "Q5058304"
+    },
+    {
+      "title": "Chôros",
+      "qid": "Q952596"
+    },
+    {
+      "title": "Chôros No. 1",
+      "qid": "Q1828307"
+    },
+    {
+      "title": "Chôros No. 10",
+      "qid": "Q2473364"
+    },
+    {
+      "title": "Chôros No. 11",
+      "qid": "Q2662156"
+    },
+    {
+      "title": "Chôros No. 12",
+      "qid": "Q2216920"
+    },
+    {
+      "title": "Chôros No. 13",
+      "qid": "Q2568833"
+    },
+    {
+      "title": "Chôros No. 14",
+      "qid": "Q3072928"
+    },
+    {
+      "title": "Chôros No. 2",
+      "qid": "Q3069491"
+    },
+    {
+      "title": "Chôros No. 5",
+      "qid": "Q2902019"
+    },
+    {
+      "title": "Chôros No. 6",
+      "qid": "Q2048516"
+    },
+    {
+      "title": "Chôros No. 7",
+      "qid": "Q2162187"
+    },
+    {
+      "title": "Chôros No. 8",
+      "qid": "Q2279876"
+    },
+    {
+      "title": "Chôros No. 9",
+      "qid": "Q1969803"
+    },
+    {
+      "title": "Chôros bis",
+      "qid": "Q2302072"
+    },
+    {
+      "title": "Guia Prático",
+      "qid": "Q10292683"
+    },
+    {
+      "title": "Guitar Concerto",
+      "qid": "Q11298112"
+    },
+    {
+      "title": "Introdução aos Chôros",
+      "qid": "Q2794389"
+    },
+    {
+      "title": "Magdalena: a Musical Adventure",
+      "qid": "Q6729845"
+    },
+    {
+      "title": "Nonet",
+      "qid": "Q28452337"
+    },
+    {
+      "title": "O Descobrimento do Brasil",
+      "qid": "Q10338996"
+    },
+    {
+      "title": "Piano Concerto No. 1",
+      "qid": "Q11331315"
+    },
+    {
+      "title": "Prelude No. 2",
+      "qid": "Q30678314"
+    },
+    {
+      "title": "Prelude No. 3",
+      "qid": "Q30678310"
+    },
+    {
+      "title": "Prelude No. 4",
+      "qid": "Q7240068"
+    },
+    {
+      "title": "Prelude No. 5",
+      "qid": "Q30678313"
+    },
+    {
+      "title": "Prelude No.1",
+      "qid": "Q7240066"
+    },
+    {
+      "title": "String Quartet No. 1",
+      "qid": "Q3193434"
+    },
+    {
+      "title": "String Quartet No. 10",
+      "qid": "Q1887103"
+    },
+    {
+      "title": "String Quartet No. 11",
+      "qid": "Q2627636"
+    },
+    {
+      "title": "String Quartet No. 12",
+      "qid": "Q2042325"
+    },
+    {
+      "title": "String Quartet No. 13",
+      "qid": "Q2598475"
+    },
+    {
+      "title": "String Quartet No. 14",
+      "qid": "Q1807563"
+    },
+    {
+      "title": "String Quartet No. 15",
+      "qid": "Q2657973"
+    },
+    {
+      "title": "String Quartet No. 16",
+      "qid": "Q2479151"
+    },
+    {
+      "title": "String Quartet No. 17",
+      "qid": "Q2421495"
+    },
+    {
+      "title": "String Quartet No. 2",
+      "qid": "Q2170075"
+    },
+    {
+      "title": "String Quartet No. 3",
+      "qid": "Q1871872"
+    },
+    {
+      "title": "String Quartet No. 4",
+      "qid": "Q2119036"
+    },
+    {
+      "title": "String Quartet No. 5",
+      "qid": "Q2013944"
+    },
+    {
+      "title": "String Quartet No. 6",
+      "qid": "Q2746187"
+    },
+    {
+      "title": "String Quartet No. 7",
+      "qid": "Q2485858"
+    },
+    {
+      "title": "String Quartet No. 8",
+      "qid": "Q2459255"
+    },
+    {
+      "title": "String Quartet No. 9",
+      "qid": "Q2669321"
+    },
+    {
+      "title": "Symphony No. 1",
+      "qid": "Q25218411"
+    },
+    {
+      "title": "Symphony No. 10",
+      "qid": "Q3030543"
+    },
+    {
+      "title": "Symphony No. 11",
+      "qid": "Q25218439"
+    },
+    {
+      "title": "Symphony No. 12",
+      "qid": "Q25218435"
+    },
+    {
+      "title": "Symphony No. 2",
+      "qid": "Q2147309"
+    },
+    {
+      "title": "Symphony No. 3",
+      "qid": "Q25218419"
+    },
+    {
+      "title": "Symphony No. 4",
+      "qid": "Q25218418"
+    },
+    {
+      "title": "Symphony No. 5",
+      "qid": "Q14427052"
+    },
+    {
+      "title": "Symphony No. 6",
+      "qid": "Q25218425"
+    },
+    {
+      "title": "Symphony No. 7",
+      "qid": "Q25218427"
+    },
+    {
+      "title": "Symphony No. 8",
+      "qid": "Q25218428"
+    },
+    {
+      "title": "Symphony No. 9",
+      "qid": "Q25218433"
+    },
+    {
+      "title": "Tarantela",
+      "qid": "Q26710926"
+    },
+    {
+      "title": "The Little Train of Caipira",
+      "qid": "Q7747740"
+    },
+    {
+      "title": "Uirapuru",
+      "qid": "Q2525762"
+    },
+    {
+      "title": "Yerma",
+      "qid": "Q8012907"
+    },
+    {
+      "title": "Étude No. 1",
+      "qid": "Q8078511"
+    },
+    {
+      "title": "Étude No. 10",
+      "qid": "Q48814155"
+    },
+    {
+      "title": "Étude No. 11",
+      "qid": "Q48814041"
+    },
+    {
+      "title": "Étude No. 12",
+      "qid": "Q48813964"
+    },
+    {
+      "title": "Étude No. 2",
+      "qid": "Q48813943"
+    },
+    {
+      "title": "Étude No. 3",
+      "qid": "Q48813946"
+    },
+    {
+      "title": "Étude No. 4",
+      "qid": "Q48813950"
+    },
+    {
+      "title": "Étude No. 5",
+      "qid": "Q48813960"
+    },
+    {
+      "title": "Étude No. 6",
+      "qid": "Q48814196"
+    },
+    {
+      "title": "Étude No. 7",
+      "qid": "Q48814198"
+    },
+    {
+      "title": "Étude No. 8",
+      "qid": "Q48814200"
+    },
+    {
+      "title": "Étude No. 9",
+      "qid": "Q48814040"
+    }
+  ]
+}

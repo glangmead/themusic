@@ -1,0 +1,603 @@
+{
+  "works": [
+    {
+      "title": "Bamboula",
+      "qid": "Q4853446",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=19/gottschalk_bamboula_2_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Le Mancenillier",
+      "qid": "Q6507186",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=1/gottschalk_le-mancenillier_11_(c)ungar.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=19/gottschalk_mancenillier_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Souvenir de Porto Rico",
+      "qid": "Q7571530",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=20/gottschalk_souvenir_de_portorico_31_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cakewalk",
+      "qid": "Q134591981"
+    },
+    {
+      "title": "Grande Tarantelle",
+      "qid": "Q3115034"
+    },
+    {
+      "title": "Great Galloping Gottschalk",
+      "qid": "Q5599226"
+    },
+    {
+      "title": "Holy Ghost! with Light Divine",
+      "qid": "Q58199622"
+    },
+    {
+      "title": "Holy Ghost! with Light Divine",
+      "qid": "Q58199649"
+    },
+    {
+      "title": "Holy Ghost! with Light Divine",
+      "qid": "Q58199702"
+    },
+    {
+      "title": "La Savane",
+      "qid": "Q6465190",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=19/gottschalk_savane_3_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Le Bananier",
+      "qid": "Q6506518",
+      "key": "E♭ major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1846,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=19/gottschalk_bananier_5_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=1/gottschalk_le-bananier_5_(c)ungar.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Symphony No. 1",
+      "qid": "Q21872999"
+    },
+    {
+      "title": "Tarantella",
+      "qid": "Q7685453"
+    },
+    {
+      "title": "The Banjo",
+      "qid": "Q7715548"
+    },
+    {
+      "title": "La Jota Aragonesa, Caprice Espagnol, Op. 14",
+      "catalog_numbers": {
+        "Op": "14"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=19/gottschalk_jota_aragonesa_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Le Banjo, esquisse am�ricaine for piano, Op. 15",
+      "catalog_numbers": {
+        "Op": "15"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=20/gottschalk_banjo_15_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Last Hope, Religious Meditation, Op. 16",
+      "catalog_numbers": {
+        "Op": "16"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=20/gottschalk_last_hope_16_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Marche de Nuit, Op. 17",
+      "catalog_numbers": {
+        "Op": "17"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=20/gottschalk_marche_nuit_17_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "La Scintilla, Mazurka Sentimentale, Op. 20",
+      "catalog_numbers": {
+        "Op": "20"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=19/gottschalk_scintilla_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Souvenirs d'Andalousie, Caprice de Concert, Op. 22",
+      "catalog_numbers": {
+        "Op": "22"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=19/gottschalk_souvenirs_andalousie_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sospiro, Valse Poetique, Op. 24",
+      "catalog_numbers": {
+        "Op": "24"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=20/gottschalk_sospiro_24_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ricordati, Nocturne-Meditation-Romance, Op. 26",
+      "catalog_numbers": {
+        "Op": "26"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=20/gottschalk_ricordati_nocturne_26_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Minuit a Seville, Caprice, Op. 30",
+      "catalog_numbers": {
+        "Op": "30"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=20/gottschalk_minuit_seville_30_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Danza, Op. 33",
+      "catalog_numbers": {
+        "Op": "33"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=20/gottschalk_danza_33_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ojos Criollos, Danse Cubaine - Caprice Brillant, Op. 37",
+      "catalog_numbers": {
+        "Op": "37"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=20/gottschalk_ojos_criollos_37_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Manchega, Etude de Concert, Op. 38",
+      "catalog_numbers": {
+        "Op": "38"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=20/gottschalk_manchega_38_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Souvenir de la Havane, Grande Caprice de Concert, Op. 39",
+      "catalog_numbers": {
+        "Op": "39"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=20/gottschalk_souvenir_de_la_havane_39_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Printemps d'Amour, Mazurka, Caprice de Concert, Op. 40",
+      "catalog_numbers": {
+        "Op": "40"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=20/gottschalk_printemps_amour_40_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "O Ma Charmante, Epargnez Moi!, Caprice, Op. 44",
+      "catalog_numbers": {
+        "Op": "44"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=20/gottschalk_o_ma_charmante_epargnez_moi_44_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Suis Moi!, Caprice, Op. 45",
+      "catalog_numbers": {
+        "Op": "45"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=20/gottschalk_suis_moi_45_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Berceuse, Cradle Song, Op. 47",
+      "catalog_numbers": {
+        "Op": "47"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=20/gottschalk_berceuse_47_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Union, Concert Paraphrase on National Airs, Op. 48",
+      "catalog_numbers": {
+        "Op": "48"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=20/gottschalk_union_48_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "La Columbe, Petite Polka, Op. 49",
+      "catalog_numbers": {
+        "Op": "49"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=20/gottschalk_la_columbe_49_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Home, Sweet Home, Caprice, after Bishop, Op. 51",
+      "catalog_numbers": {
+        "Op": "51"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=20/gottschalk_home_sweet_home_51_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "La Gallina, Danse Cubaine, Op. 53",
+      "catalog_numbers": {
+        "Op": "53"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=20/gottschalk_la_gallina_53_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Grand Scherzo, Op. 57",
+      "catalog_numbers": {
+        "Op": "57"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=20/gottschalk_grand_scherzo_57_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pasquinade, Caprice, Op. 59",
+      "catalog_numbers": {
+        "Op": "59"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=20/gottschalk_pasquinade_59_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Morte!, Lamentation, Op. 60",
+      "catalog_numbers": {
+        "Op": "60"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=20/gottschalk_morte_60_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/gottschalk_morte_(c)edwards.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ses Yeux, Polka de Concert, Op. 66",
+      "catalog_numbers": {
+        "Op": "66"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=20/gottschalk_ses_yeux_66_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "El Cocoye, Grand Caprice Cubain, Op. 80 {+}",
+      "catalog_numbers": {
+        "Op": "80"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=29/gottschalk_el_cocoye_80_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ballade no.6, Op. 85",
+      "catalog_numbers": {
+        "Op": "85"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=20/gottschalk_ballade_6_85_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tournament Galop (no opus number)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=20/gottschalk_tournament_galop_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Dying Poet, Meditation (without opus number), RO 75",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=20/gottschalk_dying_poet_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Dying Poet, Meditation (without opus number), RO 75 *",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-i/gottschalk_01405s_dying_poet_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "William Tell Overture",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=31/gottschalk_rossini_william_tell_4_hands_part-1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=31/gottschalk_rossini_william_tell_4_hands_part-2_(c)yogore.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

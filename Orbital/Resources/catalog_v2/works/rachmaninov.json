@@ -1,0 +1,620 @@
+{
+  "works": [
+    {
+      "title": "Scherzo in D minor",
+      "qid": "Q5971215",
+      "key": "D minor"
+    },
+    {
+      "title": "Piano Concerto No. 1",
+      "qid": "Q162915",
+      "key": "F-sharp minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/rachmaninoff_piano_concerto_1_1_(c)finley.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/rachmaninoff_piano_concerto_1_2_(c)finley.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/rachmaninoff_piano_concerto_1_3_(c)finley.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rachmaninov_concerto_2_1_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rachmaninov_concerto_2_2_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rachmaninov_concerto_2_3_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rachmaninov_concerto_3_1_(c)finley.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Prince Rostislav",
+      "qid": "Q2663071",
+      "key": "D minor"
+    },
+    {
+      "title": "Russian Rhapsody",
+      "qid": "Q7382111",
+      "key": "E minor"
+    },
+    {
+      "title": "Youth Symphony",
+      "qid": "Q3267323",
+      "key": "D minor"
+    },
+    {
+      "title": "Aleko",
+      "qid": "Q927503"
+    },
+    {
+      "title": "Prelude in C-sharp minor",
+      "qid": "Q2115452",
+      "key": "C-sharp minor"
+    },
+    {
+      "title": "Morceaux de salon",
+      "qid": "Q104806251"
+    },
+    {
+      "title": "Suite No. 1",
+      "qid": "Q2311096"
+    },
+    {
+      "title": "The Rock",
+      "qid": "Q1193362"
+    },
+    {
+      "title": "Caprice bohémien",
+      "qid": "Q2069022"
+    },
+    {
+      "title": "Symphony No. 1",
+      "qid": "Q163575",
+      "key": "D minor"
+    },
+    {
+      "title": "Six moments musicaux",
+      "qid": "Q2748308"
+    },
+    {
+      "title": "Cello Sonata",
+      "qid": "Q2631105",
+      "key": "G minor"
+    },
+    {
+      "title": "Spring",
+      "qid": "Q1472082"
+    },
+    {
+      "title": "Variations on a Theme of Chopin",
+      "qid": "Q1521210",
+      "key": "C minor"
+    },
+    {
+      "title": "Francesca da Rimini",
+      "qid": "Q2418863"
+    },
+    {
+      "title": "Preludes, Op. 23",
+      "qid": "Q169102"
+    },
+    {
+      "title": "Polka Italienne",
+      "qid": "Q3395303",
+      "key": "E-flat major"
+    },
+    {
+      "title": "Piano Sonata No. 1",
+      "qid": "Q3490137",
+      "key": "D minor"
+    },
+    {
+      "title": "Symphony No. 2",
+      "qid": "Q210557",
+      "key": "E minor"
+    },
+    {
+      "title": "The Isle of the Dead",
+      "qid": "Q629711"
+    },
+    {
+      "title": "Piano Concerto No. 3",
+      "qid": "Q223337",
+      "key": "D minor"
+    },
+    {
+      "title": "13 Preludes, Op. 32",
+      "qid": "Q186871"
+    },
+    {
+      "title": "Liturgy of St. John Chrysostom, Op. 31",
+      "qid": "Q2382610"
+    },
+    {
+      "title": "Études-Tableaux, Op. 33",
+      "qid": "Q51237378"
+    },
+    {
+      "title": "Vocalise",
+      "qid": "Q2465725",
+      "key": "C-sharp minor"
+    },
+    {
+      "title": "The Bells",
+      "qid": "Q2658250"
+    },
+    {
+      "title": "All-Night Vigil",
+      "qid": "Q969684"
+    },
+    {
+      "title": "Piano Concerto No. 1 (revised version)",
+      "qid": "Q117334951",
+      "key": "F-sharp minor"
+    },
+    {
+      "title": "Piano Concerto No. 4",
+      "qid": "Q230787",
+      "key": "G minor"
+    },
+    {
+      "title": "Piano Concerto No. 4 (original version, reduction for two pianos)",
+      "qid": "Q117336307"
+    },
+    {
+      "title": "Rhapsody on a Theme of Paganini",
+      "qid": "Q1330443",
+      "key": "A minor"
+    },
+    {
+      "title": "Symphony No. 3",
+      "qid": "Q223528",
+      "key": "A minor"
+    },
+    {
+      "title": "Symphonic Dances",
+      "qid": "Q2092679"
+    },
+    {
+      "title": "Piano Concerto No. 4 (revised version)",
+      "qid": "Q117335904",
+      "key": "G minor"
+    },
+    {
+      "title": "Brief Encounter",
+      "qid": "Q814296"
+    },
+    {
+      "title": "Stories About Lenin",
+      "qid": "Q4390425"
+    },
+    {
+      "title": "All by Myself",
+      "qid": "Q2320274"
+    },
+    {
+      "title": "The Elder Son",
+      "qid": "Q4440870"
+    },
+    {
+      "title": "La Soufrière",
+      "qid": "Q2897051"
+    },
+    {
+      "title": "Somewhere in Time",
+      "qid": "Q134309255"
+    },
+    {
+      "title": "Aux enfants = Mam wrth ei phlant",
+      "qid": "Q78927744"
+    },
+    {
+      "title": "Podsudimyy",
+      "qid": "Q4368379"
+    },
+    {
+      "title": "Bursa",
+      "qid": "Q48953551"
+    },
+    {
+      "title": "Harry and Harriet",
+      "qid": "Q1306357"
+    },
+    {
+      "title": "Singapore Sling",
+      "qid": "Q3484941"
+    },
+    {
+      "title": "Der Kongress der Pinguine",
+      "qid": "Q5261173"
+    },
+    {
+      "title": "The Miserly Knight",
+      "qid": "Q572359"
+    },
+    {
+      "title": "Burevestnik",
+      "qid": "Q4099521"
+    },
+    {
+      "title": "Garçon stupide",
+      "qid": "Q3098674"
+    },
+    {
+      "title": "Romance",
+      "qid": "Q64524597"
+    },
+    {
+      "title": "2 Pieces for Cello and Piano, op. 2",
+      "qid": "Q4155643"
+    },
+    {
+      "title": "Balebaṭish un demoḳratish",
+      "qid": "Q98447335"
+    },
+    {
+      "title": "Bogoroditse Devo",
+      "qid": "Q136956052"
+    },
+    {
+      "title": "Gladiatoren",
+      "qid": "Q57934021"
+    },
+    {
+      "title": "I Think of You",
+      "qid": "Q96245120"
+    },
+    {
+      "title": "Miscellaneous solo piano compositions",
+      "qid": "Q2990675"
+    },
+    {
+      "title": "Monna Vanna",
+      "qid": "Q2032217"
+    },
+    {
+      "title": "Morceaux de fantaisie",
+      "qid": "Q386896"
+    },
+    {
+      "title": "Morceaux de salon",
+      "qid": "Q3063543"
+    },
+    {
+      "title": "Piano Concerto No. 2",
+      "qid": "Q210224",
+      "key": "C minor"
+    },
+    {
+      "title": "Piano Sonata No. 2",
+      "qid": "Q2444773",
+      "key": "B-flat minor"
+    },
+    {
+      "title": "Piano sonatas",
+      "qid": "Q13933413"
+    },
+    {
+      "title": "Prelude",
+      "qid": "Q11397101",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-i/rachmaninov_3033w_prelude_d_minor_25_3_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-i/rachmaninov_57525a_prelude_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Prelude in A-flat major",
+      "qid": "Q7240078",
+      "key": "A-flat major"
+    },
+    {
+      "title": "Prelude in B-flat major",
+      "qid": "Q7240079",
+      "key": "B-flat major"
+    },
+    {
+      "title": "Prelude in C minor",
+      "qid": "Q7240084",
+      "key": "C minor"
+    },
+    {
+      "title": "Prelude in D major",
+      "qid": "Q7240085",
+      "key": "D major"
+    },
+    {
+      "title": "Prelude in D minor",
+      "qid": "Q7240087",
+      "key": "D minor"
+    },
+    {
+      "title": "Prelude in E-flat major",
+      "qid": "Q7240088",
+      "key": "E-flat major"
+    },
+    {
+      "title": "Prelude in E-flat minor",
+      "qid": "Q7240089",
+      "key": "E-flat minor"
+    },
+    {
+      "title": "Prelude in F-sharp minor",
+      "qid": "Q7240094",
+      "key": "F-sharp minor"
+    },
+    {
+      "title": "Prelude in G minor",
+      "qid": "Q3408999",
+      "key": "G minor"
+    },
+    {
+      "title": "Prelude in G-flat major",
+      "qid": "Q7240096",
+      "key": "G-flat major"
+    },
+    {
+      "title": "Preludes",
+      "qid": "Q7240108"
+    },
+    {
+      "title": "Pyrrique",
+      "qid": "Q57646378"
+    },
+    {
+      "title": "Rhapsody",
+      "qid": "Q16932031",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-i/rachmaninov_40093a_rhapsody_on_a_theme_by_paganini_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Salammbô",
+      "qid": "Q7403598"
+    },
+    {
+      "title": "Sergei Rachmaninoff recordings",
+      "qid": "Q25138329"
+    },
+    {
+      "title": "String Quartets",
+      "qid": "Q3413877"
+    },
+    {
+      "title": "Suite No. 2",
+      "qid": "Q2702922"
+    },
+    {
+      "title": "Three Russian Songs, Op. 41",
+      "qid": "Q3539929"
+    },
+    {
+      "title": "Trio élégiaque No. 1",
+      "qid": "Q7843106",
+      "key": "G minor"
+    },
+    {
+      "title": "Trio élégiaque No. 2",
+      "qid": "Q3539410",
+      "key": "D minor"
+    },
+    {
+      "title": "Variations on a Theme of Corelli",
+      "qid": "Q155132",
+      "key": "D minor"
+    },
+    {
+      "title": "Young Gypsy's Romance",
+      "qid": "Q54986371"
+    },
+    {
+      "title": "Zakouski",
+      "qid": "Q8065140"
+    },
+    {
+      "title": "Études-Tableaux",
+      "qid": "Q200086"
+    },
+    {
+      "title": "Études-Tableaux, Op. 39",
+      "qid": "Q18124674"
+    },
+    {
+      "title": "Études-Tableaux, Op. 39, No. 5",
+      "qid": "Q97380455"
+    },
+    {
+      "title": "2-3. Intermezzo (Adagio), attacca: Finale (alla breve)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rachmaninov_concerto_3_2-3_(c)finley.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Variations 1 - 6",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/rachmaninoff_rhapsody_on_a_theme_by_paganini_1-6_(c)siu.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Variations 7 - 10",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/rachmaninoff_rhapsody_on_a_theme_by_paganini_7-10_(c)siu.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Variations 11 - 15",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/rachmaninoff_rhapsody_on_a_theme_by_paganini_11-15_(c)siu.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Variations 16 - 18",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/rachmaninoff_rhapsody_on_a_theme_by_paganini_16-18_(c)siu.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Variations 18 - 24",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/rachmaninoff_rhapsody_on_a_theme_by_paganini_18-24_(c)siu.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cinq Morceaux de fantasie, Op. 3",
+      "catalog_numbers": {
+        "Op": "3"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-i/rachmaninov_69253a_elegie_op_3_no_1_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-i/rachmaninov_elegie_op_3_no_1_a_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-i/rachmaninov_55903a_prelude_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-i/rachmaninov_prelude_in_cminor_op_3_no_2_5804_d_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Barcarolle, Op. 10 No. 3",
+      "catalog_numbers": {
+        "Op": "10/3"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rachmaninoff_barcarolle_10_3_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Italian Polka",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rachmaninov_italian_polka_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Liebesfreud (by Kreisler)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-i/kreisler_66143a_liebesfreud_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sleeping beauty waltz for piano 4-hands (by Tchaikowsky)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=tchaikovsky-rachmaninov_sleeping_waltz_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The flight of the bumble bee, by\n\t\t\tRimskij-Korsakov",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/rimsky-kosakov_70301a_flight_of_the_bumble_bee_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Prelude Op. 23, No. 1",
+      "catalog_numbers": {
+        "Op": "23"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 4.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/RachmaninoffS/O23/rach-prelude23-01/rach-prelude23-01.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

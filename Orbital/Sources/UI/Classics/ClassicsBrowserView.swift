@@ -7,7 +7,7 @@ import SwiftUI
 
 struct ClassicsBrowserView: View {
   @Environment(ClassicsCatalogLibrary.self) private var catalog
-  @State private var selectedComposerID: ComposerEntry.ID?
+  @State private var selectedComposerID: CatalogComposer.ID?
 
   var body: some View {
     NavigationStack {
@@ -27,4 +27,6 @@ struct ClassicsBrowserView: View {
     .environment(SpatialAudioEngine())
     .environment(SongLibrary())
     .environment(ResourceManager())
+    .environment(MIDIDownloadManager(ledger: MIDIDownloadLedger(baseDirectory: .temporaryDirectory)))
+    .environment(MIDIDownloadLedger(baseDirectory: .temporaryDirectory))
 }

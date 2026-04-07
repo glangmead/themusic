@@ -1,0 +1,2794 @@
+{
+  "works": [
+    {
+      "title": "Les Fâcheux",
+      "qid": "Q3232857"
+    },
+    {
+      "title": "Marriage by Compulsion",
+      "qid": "Q3224315"
+    },
+    {
+      "title": "L'Amour médecin",
+      "qid": "Q2044613"
+    },
+    {
+      "title": "Pastorale comique",
+      "qid": "Q4229750"
+    },
+    {
+      "title": "Le Sicilien ou l'Amour peintre",
+      "qid": "Q3227160"
+    },
+    {
+      "title": "George Dandin ou le Mari confondu",
+      "qid": "Q919540"
+    },
+    {
+      "title": "Monsieur de Pourceaugnac",
+      "qid": "Q2456214"
+    },
+    {
+      "title": "Les amants magnifiques",
+      "qid": "Q3230474"
+    },
+    {
+      "title": "Psyché",
+      "qid": "Q3410202"
+    },
+    {
+      "title": "Acis et Galatée",
+      "qid": "Q341496"
+    },
+    {
+      "title": "Armide",
+      "qid": "Q1361941"
+    },
+    {
+      "title": "Achille et Polixene, Entrée de Pastres Troyens (Act III, Scene IX)",
+      "qid": "Q106829375"
+    },
+    {
+      "title": "Achille et Polixene, Entrée de Pastres Troyens (Act III, Scene IX)",
+      "qid": "Q106829376"
+    },
+    {
+      "title": "Achille et Polixene, Hautbois",
+      "qid": "Q106829373"
+    },
+    {
+      "title": "Achille et Polixene, Passacaille",
+      "qid": "Q106830075"
+    },
+    {
+      "title": "Achille et Polyxène",
+      "qid": "Q3775997"
+    },
+    {
+      "title": "Acis et Galatée",
+      "qid": "Q106830238",
+      "key": "F major",
+      "instruments": [
+        "Soprano",
+        "Alto",
+        "Tenor",
+        "Bass",
+        "Piano"
+      ]
+    },
+    {
+      "title": "Acis et Galatée, Chaconne",
+      "qid": "Q106829649"
+    },
+    {
+      "title": "Acis et Galatée, Chaconne",
+      "qid": "Q106829697"
+    },
+    {
+      "title": "Acis et Galatée, Chaconne",
+      "qid": "Q106830031"
+    },
+    {
+      "title": "Acis et Galatée, Chaconne",
+      "qid": "Q106830042"
+    },
+    {
+      "title": "Acis et Galatée, Chaconne",
+      "qid": "Q106829763"
+    },
+    {
+      "title": "Acis et Galatée, Chaconne",
+      "qid": "Q106829876"
+    },
+    {
+      "title": "Acis et Galatée, Chaconne",
+      "qid": "Q106830085"
+    },
+    {
+      "title": "Acis et Galatée, Chaconne",
+      "qid": "Q106830123"
+    },
+    {
+      "title": "Acis et Galatée, Chaconne",
+      "qid": "Q106830132"
+    },
+    {
+      "title": "Acis et Galatée, Chaconne",
+      "qid": "Q106830230"
+    },
+    {
+      "title": "Acis et Galatée, Chaconne",
+      "qid": "Q106829372"
+    },
+    {
+      "title": "Acis et Galatée, Passacaille",
+      "qid": "Q106829613"
+    },
+    {
+      "title": "Acis et Galatée, Rigaudon",
+      "qid": "Q106829699"
+    },
+    {
+      "title": "Acis et Galatée, Rigaudon",
+      "qid": "Q106830077"
+    },
+    {
+      "title": "Acis et Galatée, Rigaudon",
+      "qid": "Q106829768"
+    },
+    {
+      "title": "Acis et Galatée, Rigaudon",
+      "qid": "Q106829769"
+    },
+    {
+      "title": "Acis et Galatée, Rigaudon",
+      "qid": "Q106829778"
+    },
+    {
+      "title": "Acis et Galatée, Rigaudon",
+      "qid": "Q106829779"
+    },
+    {
+      "title": "Acis et Galatée, Rigaudon",
+      "qid": "Q106829783"
+    },
+    {
+      "title": "Acis et Galatée, Rigaudon",
+      "qid": "Q106829784"
+    },
+    {
+      "title": "Acis et Galatée, Rigaudon",
+      "qid": "Q106829473"
+    },
+    {
+      "title": "Acis et Galatée, Rigaudon",
+      "qid": "Q106830120"
+    },
+    {
+      "title": "Acis et Galatée, Rigaudon",
+      "qid": "Q106830121"
+    },
+    {
+      "title": "Acis et Galatée, Rigaudon",
+      "qid": "Q106830125"
+    },
+    {
+      "title": "Acis et Galatée, Rigaudon",
+      "qid": "Q106830237"
+    },
+    {
+      "title": "Acis et Galatée, Rigaudon",
+      "qid": "Q106830271"
+    },
+    {
+      "title": "Acis et Galatée, Rigaudon",
+      "qid": "Q106830272"
+    },
+    {
+      "title": "Air",
+      "qid": "Q29208532"
+    },
+    {
+      "title": "Alceste",
+      "qid": "Q109242690"
+    },
+    {
+      "title": "Alceste",
+      "qid": "Q2019911"
+    },
+    {
+      "title": "Alceste, Air Alcide",
+      "qid": "Q106830092"
+    },
+    {
+      "title": "Alceste, Gigue",
+      "qid": "Q106829466"
+    },
+    {
+      "title": "Alceste, Jeunes cœurs",
+      "qid": "Q106829752"
+    },
+    {
+      "title": "Alceste, La descente de la Gloire",
+      "qid": "Q106829718"
+    },
+    {
+      "title": "Alceste, Loure",
+      "qid": "Q106829359"
+    },
+    {
+      "title": "Alceste, Menuet",
+      "qid": "Q106829657"
+    },
+    {
+      "title": "Alceste, Menuet",
+      "qid": "Q106829750"
+    },
+    {
+      "title": "Alceste, Ouverture",
+      "qid": "Q106829717"
+    },
+    {
+      "title": "Alceste, Ouverture",
+      "qid": "Q106829544"
+    },
+    {
+      "title": "Alceste, Ouverture",
+      "qid": "Q106830221"
+    },
+    {
+      "title": "Alceste, Premier Air pour les Pastres",
+      "qid": "Q106829759"
+    },
+    {
+      "title": "Alceste, Quel cœur sauvage (Menuet)",
+      "qid": "Q106829658"
+    },
+    {
+      "title": "Alceste, Quel cœur sauvage (Menuet)",
+      "qid": "Q106829578"
+    },
+    {
+      "title": "Alcide",
+      "qid": "Q106830036"
+    },
+    {
+      "title": "Alcide, Air de trompette",
+      "qid": "Q106830035"
+    },
+    {
+      "title": "Amadis",
+      "qid": "Q2840837"
+    },
+    {
+      "title": "Amadis, Chaconne",
+      "qid": "Q106830063"
+    },
+    {
+      "title": "Amadis, Chaconne",
+      "qid": "Q106830236"
+    },
+    {
+      "title": "Amadis, Cœurs accablez (Menuet)",
+      "qid": "Q106829882"
+    },
+    {
+      "title": "Amadis, Cœurs accablez (Menuet)",
+      "qid": "Q106830153"
+    },
+    {
+      "title": "Amadis, Gigue",
+      "qid": "Q106830162"
+    },
+    {
+      "title": "Amadis, Marche",
+      "qid": "Q106830161"
+    },
+    {
+      "title": "Amadis, Menuet",
+      "qid": "Q106830155"
+    },
+    {
+      "title": "Amadis, Ouverture",
+      "qid": "Q106829799"
+    },
+    {
+      "title": "Amadis, Ouverture",
+      "qid": "Q106830151"
+    },
+    {
+      "title": "Amadis, Prelude, Bois épais",
+      "qid": "Q106830159"
+    },
+    {
+      "title": "Amadis, Premier Air",
+      "qid": "Q106829340"
+    },
+    {
+      "title": "Amadis, Prélude, Amour que veux-tu de moi?",
+      "qid": "Q106830157"
+    },
+    {
+      "title": "Amadis, Second Air",
+      "qid": "Q106830154"
+    },
+    {
+      "title": "Amadis, Suivons l’amour (Menuet)",
+      "qid": "Q106829650"
+    },
+    {
+      "title": "Amadis, Suivons l’amour (Menuet)",
+      "qid": "Q106829654"
+    },
+    {
+      "title": "Amadis, Suivons l’amour (Menuet)",
+      "qid": "Q106829770"
+    },
+    {
+      "title": "Amadis, Suivons l’amour (Menuet)",
+      "qid": "Q106829787"
+    },
+    {
+      "title": "Amadis, Suivons l’amour (Menuet)",
+      "qid": "Q106829840"
+    },
+    {
+      "title": "Amadis, Suivons l’amour (Menuet)",
+      "qid": "Q106829573"
+    },
+    {
+      "title": "Amadis, Suivons l’amour (Menuet)",
+      "qid": "Q106830152"
+    },
+    {
+      "title": "Amadis, Vous ne devez plus attendre",
+      "qid": "Q106829765"
+    },
+    {
+      "title": "Amadis, Vous ne devez plus attendre",
+      "qid": "Q106829838"
+    },
+    {
+      "title": "Amadis, Vous ne devez plus attendre",
+      "qid": "Q106829609"
+    },
+    {
+      "title": "Amadis, Vous ne devez plus attendre",
+      "qid": "Q106830110"
+    },
+    {
+      "title": "Amadis, Vous ne devez plus attendre",
+      "qid": "Q106830158"
+    },
+    {
+      "title": "Amadis, Vous ne devez plus attendre",
+      "qid": "Q106830241"
+    },
+    {
+      "title": "Amadis, Vous ne devez plus attendre",
+      "qid": "Q106829367"
+    },
+    {
+      "title": "Amadis, Vous ne devez plus attendre (air)",
+      "qid": "Q106830175"
+    },
+    {
+      "title": "Armide, Entrée",
+      "qid": "Q106830195"
+    },
+    {
+      "title": "Armide, Entrée de la Gloire",
+      "qid": "Q106829626"
+    },
+    {
+      "title": "Armide, Gavotte",
+      "qid": "Q106830197"
+    },
+    {
+      "title": "Armide, Les plaisirs",
+      "qid": "Q106830200"
+    },
+    {
+      "title": "Armide, Menuet",
+      "qid": "Q106829656"
+    },
+    {
+      "title": "Armide, Menuet",
+      "qid": "Q106830196"
+    },
+    {
+      "title": "Armide, Menuet",
+      "qid": "Q106829352"
+    },
+    {
+      "title": "Armide, Menuet",
+      "qid": "Q106829371"
+    },
+    {
+      "title": "Armide, Ouverture",
+      "qid": "Q106830194"
+    },
+    {
+      "title": "Armide, Passacaille",
+      "qid": "Q106829624"
+    },
+    {
+      "title": "Armide, Passacaille",
+      "qid": "Q106829672"
+    },
+    {
+      "title": "Armide, Passacaille",
+      "qid": "Q106829695"
+    },
+    {
+      "title": "Armide, Passacaille",
+      "qid": "Q106830057"
+    },
+    {
+      "title": "Armide, Passacaille",
+      "qid": "Q106829760"
+    },
+    {
+      "title": "Armide, Passacaille",
+      "qid": "Q106829607"
+    },
+    {
+      "title": "Armide, Passacaille",
+      "qid": "Q106829339"
+    },
+    {
+      "title": "Armide, Rondeau",
+      "qid": "Q106829350"
+    },
+    {
+      "title": "Armide, Rondeau",
+      "qid": "Q106829378"
+    },
+    {
+      "title": "Armide, Second Air, Sourdines",
+      "qid": "Q106829625"
+    },
+    {
+      "title": "Armide, Second Air, Sourdines",
+      "qid": "Q106829692"
+    },
+    {
+      "title": "Armide, Second Air, Sourdines",
+      "qid": "Q106830046"
+    },
+    {
+      "title": "Armide, Second Air, Sourdines",
+      "qid": "Q106830078"
+    },
+    {
+      "title": "Armide, Second Air, Sourdines",
+      "qid": "Q106830082"
+    },
+    {
+      "title": "Armide, Second Air, Sourdines",
+      "qid": "Q106829761"
+    },
+    {
+      "title": "Armide, Second Air, Sourdines",
+      "qid": "Q106829583"
+    },
+    {
+      "title": "Armide, Second Air, Sourdines",
+      "qid": "Q106829588"
+    },
+    {
+      "title": "Armide, Second Air, Sourdines",
+      "qid": "Q106830244"
+    },
+    {
+      "title": "Armide, Second Air, Sourdines",
+      "qid": "Q106830267"
+    },
+    {
+      "title": "Atys",
+      "qid": "Q2870199"
+    },
+    {
+      "title": "Atys, Chaconne",
+      "qid": "Q106829617"
+    },
+    {
+      "title": "Atys, Chaconne",
+      "qid": "Q106830052"
+    },
+    {
+      "title": "Atys, Chaconne",
+      "qid": "Q106829468"
+    },
+    {
+      "title": "Atys, Chaconne",
+      "qid": "Q106829341"
+    },
+    {
+      "title": "Atys, Chaconne",
+      "qid": "Q106829381"
+    },
+    {
+      "title": "Atys, Gavotte",
+      "qid": "Q106829619"
+    },
+    {
+      "title": "Atys, Gavotte",
+      "qid": "Q106829705"
+    },
+    {
+      "title": "Atys, Gavotte",
+      "qid": "Q106829385"
+    },
+    {
+      "title": "Atys, La beauté (Gavotte)",
+      "qid": "Q106829800"
+    },
+    {
+      "title": "Atys, La beauté (Gavotte)",
+      "qid": "Q106829862"
+    },
+    {
+      "title": "Atys, La beauté (Gavotte)",
+      "qid": "Q106829888"
+    },
+    {
+      "title": "Atys, La beauté (Gavotte)",
+      "qid": "Q106829480"
+    },
+    {
+      "title": "Atys, La beauté (Gavotte)",
+      "qid": "Q106829576"
+    },
+    {
+      "title": "Atys, La beauté (Gavotte)",
+      "qid": "Q106830108"
+    },
+    {
+      "title": "Atys, La beauté (Gavotte)",
+      "qid": "Q106829465"
+    },
+    {
+      "title": "Atys, La descente de Cybelle",
+      "qid": "Q106830114"
+    },
+    {
+      "title": "Atys, La descente de Cybelle",
+      "qid": "Q106830115"
+    },
+    {
+      "title": "Atys, La descente de Cybelle",
+      "qid": "Q106829467"
+    },
+    {
+      "title": "Atys, Les Songes agréables",
+      "qid": "Q106829616"
+    },
+    {
+      "title": "Atys, Les Songes agréables",
+      "qid": "Q106829693"
+    },
+    {
+      "title": "Atys, Les Songes agréables",
+      "qid": "Q106829749"
+    },
+    {
+      "title": "Atys, Les Songes agréables",
+      "qid": "Q106830051"
+    },
+    {
+      "title": "Atys, Les Songes agréables",
+      "qid": "Q106830222"
+    },
+    {
+      "title": "Atys, Les Songes agréables",
+      "qid": "Q106830246"
+    },
+    {
+      "title": "Atys, Les Songes agréables",
+      "qid": "Q106829370"
+    },
+    {
+      "title": "Atys, Les Songes agréables",
+      "qid": "Q106829383"
+    },
+    {
+      "title": "Atys, Les Songes funestes",
+      "qid": "Q106829642"
+    },
+    {
+      "title": "Atys, Les Songes funestes",
+      "qid": "Q106829360"
+    },
+    {
+      "title": "Atys, Les plaisirs à ses yeux",
+      "qid": "Q106829719"
+    },
+    {
+      "title": "Atys, Menuet",
+      "qid": "Q106829577"
+    },
+    {
+      "title": "Atys, Menuet d’Atys’",
+      "qid": "Q106830247"
+    },
+    {
+      "title": "Atys, Ouverture",
+      "qid": "Q106830070"
+    },
+    {
+      "title": "Atys, Ouverture",
+      "qid": "Q106829543"
+    },
+    {
+      "title": "Atys, Ouverture",
+      "qid": "Q106829364"
+    },
+    {
+      "title": "Atys, Quand le peril est agréable",
+      "qid": "Q106829858"
+    },
+    {
+      "title": "Atys, Quand le peril est agréable",
+      "qid": "Q106829860"
+    },
+    {
+      "title": "Atys, Que devant vous",
+      "qid": "Q106829568"
+    },
+    {
+      "title": "Atys, Que devant vous",
+      "qid": "Q106829384"
+    },
+    {
+      "title": "Atys, Second Air",
+      "qid": "Q106829643"
+    },
+    {
+      "title": "Atys, Second Air",
+      "qid": "Q106829708"
+    },
+    {
+      "title": "Atys, Second Air",
+      "qid": "Q106830032"
+    },
+    {
+      "title": "Atys, Second Air",
+      "qid": "Q106830223"
+    },
+    {
+      "title": "Atys, Second Air",
+      "qid": "Q106829344"
+    },
+    {
+      "title": "Atys, Second Air",
+      "qid": "Q106829361"
+    },
+    {
+      "title": "Ballet Royal de la Nuit",
+      "qid": "Q17000349"
+    },
+    {
+      "title": "Ballet d'Alcidiane",
+      "qid": "Q5717310"
+    },
+    {
+      "title": "Ballet de Flore, Bourrée",
+      "qid": "Q106829495"
+    },
+    {
+      "title": "Ballet de Flore, Courante",
+      "qid": "Q106829494"
+    },
+    {
+      "title": "Ballet de Flore, Marche",
+      "qid": "Q106829501"
+    },
+    {
+      "title": "Ballet de Flore, Menuet",
+      "qid": "Q106829652"
+    },
+    {
+      "title": "Ballet de Flore, Menuet",
+      "qid": "Q106829490"
+    },
+    {
+      "title": "Ballet de Flore, Menuet",
+      "qid": "Q106829493"
+    },
+    {
+      "title": "Ballet de Flore, Menuet",
+      "qid": "Q106830090"
+    },
+    {
+      "title": "Ballet de Flore, Menuet",
+      "qid": "Q106830101"
+    },
+    {
+      "title": "Ballet de Flore, Menuet",
+      "qid": "Q106830113"
+    },
+    {
+      "title": "Ballet de Flore, Menuet",
+      "qid": "Q106830254"
+    },
+    {
+      "title": "Ballet de Flore, Ouverture",
+      "qid": "Q106830058"
+    },
+    {
+      "title": "Ballet de Flore, Ouverture",
+      "qid": "Q106830083"
+    },
+    {
+      "title": "Ballet de Flore, le Marié et la mariée",
+      "qid": "Q106829674"
+    },
+    {
+      "title": "Ballet de Flore, le Marié et la mariée",
+      "qid": "Q106830073"
+    },
+    {
+      "title": "Ballet de Flore, le Marié et la mariée",
+      "qid": "Q106829558"
+    },
+    {
+      "title": "Ballet de Flore, le Marié et la mariée",
+      "qid": "Q106830086"
+    },
+    {
+      "title": "Ballet de la Naissance de Venus, Dieu des enfers (Sarabande)",
+      "qid": "Q106829688"
+    },
+    {
+      "title": "Ballet de la Naissance de Venus, Dieu des enfers (Sarabande)",
+      "qid": "Q106829909"
+    },
+    {
+      "title": "Ballet de la Naissance de Venus, Dieu des enfers (Sarabande)",
+      "qid": "Q106830265"
+    },
+    {
+      "title": "Ballet de la Naissance de Venus, Les Ombres",
+      "qid": "Q106830060"
+    },
+    {
+      "title": "Ballet de la Raillerie, Bourrée pour les mêmes",
+      "qid": "Q106829938"
+    },
+    {
+      "title": "Ballet de la Raillerie, Entrée",
+      "qid": "Q106829950"
+    },
+    {
+      "title": "Ballet de la Raillerie, Entrée, les Sçavans et les Ignorans",
+      "qid": "Q106830104"
+    },
+    {
+      "title": "Ballet de la Raillerie, Ouverture",
+      "qid": "Q106829921"
+    },
+    {
+      "title": "Ballet de la Raillerie, Ritournelle",
+      "qid": "Q106829952"
+    },
+    {
+      "title": "Ballet de la Raillerie, Ritournelle",
+      "qid": "Q106829923"
+    },
+    {
+      "title": "Ballet de la Raillerie, Rondeau pour les Adroits et Maladroits",
+      "qid": "Q106829936"
+    },
+    {
+      "title": "Ballet de la Raillerie, Sarabande",
+      "qid": "Q106830002"
+    },
+    {
+      "title": "Ballet de la Revente des Habits, Symphonie, la Revente des Habits",
+      "qid": "Q106829946"
+    },
+    {
+      "title": "Ballet de l’Amour malade, Air pour Jean Doucet et son frère",
+      "qid": "Q106830229"
+    },
+    {
+      "title": "Ballet de l’Amour malade, Air pour Scaramouche",
+      "qid": "Q106829579"
+    },
+    {
+      "title": "Ballet de l’Amour malade, Gavotte pour le Marié et la Mariée",
+      "qid": "Q106829934"
+    },
+    {
+      "title": "Ballet de l’Amour malade, Gavotte pour les Parents de la Mariée",
+      "qid": "Q106829944"
+    },
+    {
+      "title": "Ballet de l’Amour malade, Ouverture",
+      "qid": "Q106829366"
+    },
+    {
+      "title": "Ballet de l’Amour malade, Sarabande pour le Pere et la Mere du Mariée",
+      "qid": "Q106829948"
+    },
+    {
+      "title": "Ballet de l’Amour malade, Second Air pour les Parents de la Mariée",
+      "qid": "Q106829894"
+    },
+    {
+      "title": "Ballet de l’Impatience, Chaconne",
+      "qid": "Q106829895"
+    },
+    {
+      "title": "Ballet de l’Impatience, Entrée ‘Bel Iris’",
+      "qid": "Q106829651"
+    },
+    {
+      "title": "Ballet de l’Impatience, Entrée ‘Bel Iris’",
+      "qid": "Q106829721"
+    },
+    {
+      "title": "Ballet de l’Impatience, Entrée ‘Bel Iris’",
+      "qid": "Q106829971"
+    },
+    {
+      "title": "Ballet de l’Impatience, Entrée ‘Bel Iris’",
+      "qid": "Q106829554"
+    },
+    {
+      "title": "Ballet de l’Impatience, Entrée ‘Bel Iris’",
+      "qid": "Q106830089"
+    },
+    {
+      "title": "Ballet de l’Impatience, Entrée ‘Bel Iris’",
+      "qid": "Q106830100"
+    },
+    {
+      "title": "Ballet de l’Impatience, Entrée ‘Bel Iris’",
+      "qid": "Q106830102"
+    },
+    {
+      "title": "Ballet de l’Impatience, Entrée ‘Bel Iris’",
+      "qid": "Q106830103"
+    },
+    {
+      "title": "Ballet de l’Impatience, Entrée ‘Bel Iris’",
+      "qid": "Q106830107"
+    },
+    {
+      "title": "Ballet de l’Impatience, Les Suisses",
+      "qid": "Q106829489"
+    },
+    {
+      "title": "Ballet de l’Impatience, Ritournelle",
+      "qid": "Q106829955"
+    },
+    {
+      "title": "Ballet des Arts, Entrée, Concert des Amazones",
+      "qid": "Q106829915"
+    },
+    {
+      "title": "Ballet des Arts, Ritournelle",
+      "qid": "Q106829992"
+    },
+    {
+      "title": "Ballet des Arts, Ritournelle",
+      "qid": "Q106829913"
+    },
+    {
+      "title": "Ballet des Muses",
+      "qid": "Q106829484"
+    },
+    {
+      "title": "Ballet des Muses, Chaconne",
+      "qid": "Q106829863"
+    },
+    {
+      "title": "Ballet des Muses, Chaconne",
+      "qid": "Q106830225"
+    },
+    {
+      "title": "Ballet des Muses, Chaconne",
+      "qid": "Q106830245"
+    },
+    {
+      "title": "Ballet des Muses, Chaconne (Act II, Scene 2)",
+      "qid": "Q106829644"
+    },
+    {
+      "title": "Ballet des Muses, Entrée (Gavotte)",
+      "qid": "Q106829483"
+    },
+    {
+      "title": "Ballet des Muses, Entrée (Gavotte)",
+      "qid": "Q106830263"
+    },
+    {
+      "title": "Ballet des Muses, Entrée (Menuet)",
+      "qid": "Q106829485"
+    },
+    {
+      "title": "Ballet des Muses, Entrée (Menuet)",
+      "qid": "Q106830264"
+    },
+    {
+      "title": "Ballet des Muses, Menuet",
+      "qid": "Q106829497"
+    },
+    {
+      "title": "Ballet des Saisons, Entrée",
+      "qid": "Q106829928"
+    },
+    {
+      "title": "Ballet des Saisons, Entrée, six Faunes",
+      "qid": "Q106829966"
+    },
+    {
+      "title": "Ballet des Saisons, Gavotte",
+      "qid": "Q106829969"
+    },
+    {
+      "title": "Ballet des Saisons, Ouverture",
+      "qid": "Q106829968"
+    },
+    {
+      "title": "Ballet des Saisons, Ritournelle",
+      "qid": "Q106829892"
+    },
+    {
+      "title": "Ballet des plaisirs, Entrée (Le Marié et la mariée)",
+      "qid": "Q106829623"
+    },
+    {
+      "title": "Ballet des plaisirs, Entrée (Le Marié et la mariée)",
+      "qid": "Q106829700"
+    },
+    {
+      "title": "Ballet des plaisirs, Entrée (Le Marié et la mariée)",
+      "qid": "Q106829982"
+    },
+    {
+      "title": "Ballet des plaisirs, Entrée (Le Marié et la mariée)",
+      "qid": "Q106829797"
+    },
+    {
+      "title": "Ballet des plaisirs, Entrée (Le Marié et la mariée)",
+      "qid": "Q106829581"
+    },
+    {
+      "title": "Ballet des plaisirs, Entrée (Le Marié et la mariée)",
+      "qid": "Q106830124"
+    },
+    {
+      "title": "Ballet des plaisirs, Entrée (Le Marié et la mariée)",
+      "qid": "Q106830127"
+    },
+    {
+      "title": "Ballet des plaisirs, Entrée (Le Marié et la mariée)",
+      "qid": "Q106830252"
+    },
+    {
+      "title": "Ballet des plaisirs, Entrée (Le Marié et la mariée)",
+      "qid": "Q106830269"
+    },
+    {
+      "title": "Ballet des plaisirs, Entrée (Le Marié et la mariée)",
+      "qid": "Q106830275"
+    },
+    {
+      "title": "Ballet des plaisirs, Entrée (Le Marié et la mariée)",
+      "qid": "Q106829374"
+    },
+    {
+      "title": "Ballet d’Alcidiane, Chaconne des Maures",
+      "qid": "Q106829954"
+    },
+    {
+      "title": "Ballet d’Alcidiane, Entrée, la Victoire",
+      "qid": "Q106829991"
+    },
+    {
+      "title": "Ballet d’Alcidiane, Entrée, trois Bergers et autant de Bergeres de cette heureuse Contrée, Rondeau",
+      "qid": "Q106829940"
+    },
+    {
+      "title": "Ballet d’Alcidiane, Entrée, un Combat de plaisir",
+      "qid": "Q106829984"
+    },
+    {
+      "title": "Ballet d’Alcidiane, Entrée, un Combat de plaisir",
+      "qid": "Q106829486"
+    },
+    {
+      "title": "Ballet d’Alcidiane, La Charge",
+      "qid": "Q106829988"
+    },
+    {
+      "title": "Ballet d’Alcidiane, Le Combat",
+      "qid": "Q106829990"
+    },
+    {
+      "title": "Ballet d’Alcidiane, L’Attaque du fort",
+      "qid": "Q106829989"
+    },
+    {
+      "title": "Ballet d’Alcidiane, L’Exercice des Mousquetaires",
+      "qid": "Q106829985"
+    },
+    {
+      "title": "Ballet d’Alcidiane, Marche françoise",
+      "qid": "Q106829986"
+    },
+    {
+      "title": "Ballet d’Alcidiane, Marche italienne",
+      "qid": "Q106829930"
+    },
+    {
+      "title": "Ballet d’Alcidiane, Ouverture",
+      "qid": "Q106829891"
+    },
+    {
+      "title": "Ballet d’Alcidiane, Petite Chaconne",
+      "qid": "Q106830001"
+    },
+    {
+      "title": "Ballet d’Alcidiane, Ritournelle",
+      "qid": "Q106829932"
+    },
+    {
+      "title": "Bellerophon",
+      "qid": "Q106829540"
+    },
+    {
+      "title": "Bellerophon, Bourrée",
+      "qid": "Q106829358"
+    },
+    {
+      "title": "Bellerophon, Faisons cesser nos allarmes",
+      "qid": "Q106829571"
+    },
+    {
+      "title": "Bellerophon, Gigue",
+      "qid": "Q106830030"
+    },
+    {
+      "title": "Bellerophon, Le malheur (Gavotte)",
+      "qid": "Q106830207"
+    },
+    {
+      "title": "Bellerophon, Les Amazones",
+      "qid": "Q106829542"
+    },
+    {
+      "title": "Bellerophon, Menuet",
+      "qid": "Q106829518"
+    },
+    {
+      "title": "Bellerophon, Ouverture",
+      "qid": "Q106829640"
+    },
+    {
+      "title": "Bellerophon, Ouverture",
+      "qid": "Q106829710"
+    },
+    {
+      "title": "Bellerophon, Ouverture",
+      "qid": "Q106830062"
+    },
+    {
+      "title": "Bellerophon, Ouverture",
+      "qid": "Q106830080"
+    },
+    {
+      "title": "Bellerophon, Ouverture",
+      "qid": "Q106829475"
+    },
+    {
+      "title": "Bellerophon, Ouverture",
+      "qid": "Q106829541"
+    },
+    {
+      "title": "Bellerophon, Ouverture",
+      "qid": "Q106829552"
+    },
+    {
+      "title": "Bellerophon, Ouverture",
+      "qid": "Q106830098"
+    },
+    {
+      "title": "Bellerophon, Ouverture",
+      "qid": "Q106830204"
+    },
+    {
+      "title": "Bellerophon, Second Air",
+      "qid": "Q106829346"
+    },
+    {
+      "title": "Bellerophon, Trompettes",
+      "qid": "Q106829647"
+    },
+    {
+      "title": "Bellerophon, Trompettes",
+      "qid": "Q106829582"
+    },
+    {
+      "title": "Bellerophon, Trompettes",
+      "qid": "Q106829587"
+    },
+    {
+      "title": "Bellerophon, Trompettes",
+      "qid": "Q106830205"
+    },
+    {
+      "title": "Bellerophon, Trompettes",
+      "qid": "Q106830206"
+    },
+    {
+      "title": "Bellérophon",
+      "qid": "Q2895007"
+    },
+    {
+      "title": "Branles de 1665, Bourrée",
+      "qid": "Q106829959"
+    },
+    {
+      "title": "Branles de 1665, Gavotte",
+      "qid": "Q106829961"
+    },
+    {
+      "title": "Branles de 1665, Sarabande des branles",
+      "qid": "Q106829958"
+    },
+    {
+      "title": "Cadmus et Hermione",
+      "qid": "Q1025301"
+    },
+    {
+      "title": "Cadmus et Hermione, Air",
+      "qid": "Q106829756"
+    },
+    {
+      "title": "Cadmus et Hermione, Air des vents, les furies",
+      "qid": "Q106829638"
+    },
+    {
+      "title": "Cadmus et Hermione, Amants, aimez vos chaînes",
+      "qid": "Q106829757"
+    },
+    {
+      "title": "Cadmus et Hermione, Heureux qui peut plaire",
+      "qid": "Q106829758"
+    },
+    {
+      "title": "Cadmus et Hermione, Marche des Sacrificateurs",
+      "qid": "Q106829635"
+    },
+    {
+      "title": "Cadmus et Hermione, Marche des Sacrificateurs",
+      "qid": "Q106829775"
+    },
+    {
+      "title": "Cadmus et Hermione, Marche des Sacrificateurs",
+      "qid": "Q106829584"
+    },
+    {
+      "title": "Cadmus et Hermione, Marche des Sacrificateurs",
+      "qid": "Q106829349"
+    },
+    {
+      "title": "Cadmus et Hermione, Menuet",
+      "qid": "Q106829751"
+    },
+    {
+      "title": "Cadmus et Hermione, Ouverture",
+      "qid": "Q106829679"
+    },
+    {
+      "title": "Cadmus et Hermione, Suivons, suivons l’amour",
+      "qid": "Q106830112"
+    },
+    {
+      "title": "Entr’actes d’Œdipé, Ouverture",
+      "qid": "Q106829363"
+    },
+    {
+      "title": "Hercule amoureux, Concert de Venus et des Plaisirs",
+      "qid": "Q106829963"
+    },
+    {
+      "title": "Hercule amoureux, Concert de guitares",
+      "qid": "Q106829901"
+    },
+    {
+      "title": "Hercule amoureux, Entrée",
+      "qid": "Q106829976"
+    },
+    {
+      "title": "Hercule amoureux, Entrée",
+      "qid": "Q106830262"
+    },
+    {
+      "title": "Hercule amoureux, Entrée, le Sommeil et les Songes",
+      "qid": "Q106829972"
+    },
+    {
+      "title": "Hercule amoureux, Entrée, les Zephirs",
+      "qid": "Q106829977"
+    },
+    {
+      "title": "Hercule amoureux, Entrée, les tempêtes et les foudres",
+      "qid": "Q106829965"
+    },
+    {
+      "title": "Hercule amoureux, Ouverture",
+      "qid": "Q106829362"
+    },
+    {
+      "title": "Hercule amoureux, Rondeau",
+      "qid": "Q106829904"
+    },
+    {
+      "title": "Hercule amoureux, Rondeau",
+      "qid": "Q106829482"
+    },
+    {
+      "title": "Idylle sur la Paix, Chantons Bergers",
+      "qid": "Q106830190"
+    },
+    {
+      "title": "Isis",
+      "qid": "Q106829715"
+    },
+    {
+      "title": "Isis",
+      "qid": "Q3084062"
+    },
+    {
+      "title": "Isis, Aimez, profitez",
+      "qid": "Q106830095"
+    },
+    {
+      "title": "Isis, Air [pour les trompettes]",
+      "qid": "Q106829634"
+    },
+    {
+      "title": "Isis, Air [pour les trompettes]",
+      "qid": "Q106829712"
+    },
+    {
+      "title": "Isis, Air [pour les trompettes]",
+      "qid": "Q106829848"
+    },
+    {
+      "title": "Isis, Air [pour les trompettes]",
+      "qid": "Q106829580"
+    },
+    {
+      "title": "Isis, Air [pour les trompettes]",
+      "qid": "Q106830117"
+    },
+    {
+      "title": "Isis, Air [pour les trompettes]",
+      "qid": "Q106830119"
+    },
+    {
+      "title": "Isis, Air [pour les trompettes]",
+      "qid": "Q106830270"
+    },
+    {
+      "title": "Isis, Gavotte (Marche)",
+      "qid": "Q106829725"
+    },
+    {
+      "title": "Isis, Jupiter vient sur la terre",
+      "qid": "Q106830202"
+    },
+    {
+      "title": "Isis, Les Plaisirs les plus doux",
+      "qid": "Q106830093"
+    },
+    {
+      "title": "Isis, Ouverture",
+      "qid": "Q106829614"
+    },
+    {
+      "title": "Isis, Ouverture",
+      "qid": "Q106829707"
+    },
+    {
+      "title": "Isis, Ouverture",
+      "qid": "Q106829711"
+    },
+    {
+      "title": "Isis, Ouverture",
+      "qid": "Q106829746"
+    },
+    {
+      "title": "Isis, Ouverture",
+      "qid": "Q106830047"
+    },
+    {
+      "title": "Isis, Ouverture",
+      "qid": "Q106830076"
+    },
+    {
+      "title": "Isis, Ouverture",
+      "qid": "Q106829766"
+    },
+    {
+      "title": "Isis, Ouverture",
+      "qid": "Q106829798"
+    },
+    {
+      "title": "Isis, Ouverture",
+      "qid": "Q106829832"
+    },
+    {
+      "title": "Isis, Ouverture",
+      "qid": "Q106830203"
+    },
+    {
+      "title": "Isis, Ouverture",
+      "qid": "Q106830233"
+    },
+    {
+      "title": "Isis, Ouverture",
+      "qid": "Q106829365"
+    },
+    {
+      "title": "Isis, Premier Air pour les Muses",
+      "qid": "Q106830050"
+    },
+    {
+      "title": "Isis, Premier Air pour les Muses",
+      "qid": "Q106829834"
+    },
+    {
+      "title": "Isis, Premier Air pour les Muses",
+      "qid": "Q106830126"
+    },
+    {
+      "title": "Isis, Premier Air pour les Muses",
+      "qid": "Q106830198"
+    },
+    {
+      "title": "Isis, Prélude des Muses",
+      "qid": "Q106829645"
+    },
+    {
+      "title": "Isis, Que ces lieux ont d’attraits",
+      "qid": "Q106829842"
+    },
+    {
+      "title": "Isis, Que ces lieux ont d’attraits",
+      "qid": "Q106829572"
+    },
+    {
+      "title": "Isis, Que ces lieux ont d’attraits",
+      "qid": "Q106830096"
+    },
+    {
+      "title": "Isis, Rondeau",
+      "qid": "Q106829868"
+    },
+    {
+      "title": "Isis, Second Air (Bourrée)",
+      "qid": "Q106829836"
+    },
+    {
+      "title": "Isis, Second Air (Menuet)",
+      "qid": "Q106829716"
+    },
+    {
+      "title": "Isis, Second Air (Menuet)",
+      "qid": "Q106830256"
+    },
+    {
+      "title": "Isis, Second Air (Menuet)",
+      "qid": "Q106829386"
+    },
+    {
+      "title": "Isis, Second et dernier Air",
+      "qid": "Q106829870"
+    },
+    {
+      "title": "Isis, Troisiéme Air (Menuet)",
+      "qid": "Q106829713"
+    },
+    {
+      "title": "Jubilate Deo omnis terra",
+      "qid": "Q107429853"
+    },
+    {
+      "title": "L'Hercule amoureux, LWV 17",
+      "qid": "Q125355292"
+    },
+    {
+      "title": "La Grotte de Versailles, Air des echos",
+      "qid": "Q106829620"
+    },
+    {
+      "title": "La Grotte de Versailles, Air des echos",
+      "qid": "Q106829889"
+    },
+    {
+      "title": "La Grotte de Versailles, Ouverture",
+      "qid": "Q106829646"
+    },
+    {
+      "title": "La Grotte de Versailles, Ouverture",
+      "qid": "Q106830034"
+    },
+    {
+      "title": "La Grotte de Versailles, Ouverture",
+      "qid": "Q106829762"
+    },
+    {
+      "title": "La Grotte de Versailles, Ouverture",
+      "qid": "Q106829767"
+    },
+    {
+      "title": "La Grotte de Versailles, Ouverture",
+      "qid": "Q106829796"
+    },
+    {
+      "title": "La Grotte de Versailles, Ouverture",
+      "qid": "Q106830228"
+    },
+    {
+      "title": "La Grotte de Versailles, Ouverture",
+      "qid": "Q106830250"
+    },
+    {
+      "title": "La Grotte de Versailles, Ouverture",
+      "qid": "Q106829022"
+    },
+    {
+      "title": "La Grotte de Versailles, Ritournelle ‘Goutons bien’",
+      "qid": "Q106829561"
+    },
+    {
+      "title": "Le Bourgeois Gentilhomme, Air des Espagnols (Sarabande)",
+      "qid": "Q106830074"
+    },
+    {
+      "title": "Le Bourgeois Gentilhomme, Air des Espagnols (Sarabande)",
+      "qid": "Q106830087"
+    },
+    {
+      "title": "Le Bourgeois Gentilhomme, Air des Espagnols (Sarabande)",
+      "qid": "Q106830258"
+    },
+    {
+      "title": "Le Bourgeois Gentilhomme, Chaconne",
+      "qid": "Q106829706"
+    },
+    {
+      "title": "Le Bourgeois Gentilhomme, Chaconne",
+      "qid": "Q106830071"
+    },
+    {
+      "title": "Le Bourgeois Gentilhomme, Chaconne",
+      "qid": "Q106829764"
+    },
+    {
+      "title": "Le Bourgeois Gentilhomme, Chaconne",
+      "qid": "Q106829589"
+    },
+    {
+      "title": "Le Bourgeois Gentilhomme, Chaconne",
+      "qid": "Q106830130"
+    },
+    {
+      "title": "Le Bourgeois Gentilhomme, Chaconne",
+      "qid": "Q106829377"
+    },
+    {
+      "title": "Le Bourgeois Gentilhomme, Chaconne",
+      "qid": "Q106829380"
+    },
+    {
+      "title": "Le Bourgeois Gentilhomme, Menuet",
+      "qid": "Q106829506"
+    },
+    {
+      "title": "Le Bourgeois Gentilhomme, Menuet",
+      "qid": "Q106829507"
+    },
+    {
+      "title": "Le Bourgeois Gentilhomme, Ouverture",
+      "qid": "Q106829615"
+    },
+    {
+      "title": "Le Bourgeois Gentilhomme, Ouverture",
+      "qid": "Q106830201"
+    },
+    {
+      "title": "Le Bourgeois gentilhomme",
+      "qid": "Q1054372",
+      "key": "F major",
+      "instruments": [
+        "Violin",
+        "Viola",
+        "Violoncello"
+      ],
+      "year_composed": 1670
+    },
+    {
+      "title": "Le Carnaval, Mascarade, Ballet",
+      "qid": "Q106829496"
+    },
+    {
+      "title": "Le Carnaval, Mascarade, Bourrée",
+      "qid": "Q106829491"
+    },
+    {
+      "title": "Le Carnaval, Mascarade, Canaries",
+      "qid": "Q106829560"
+    },
+    {
+      "title": "Le Carnaval, Mascarade, Entrée, les Maîtres à dancer",
+      "qid": "Q106829559"
+    },
+    {
+      "title": "Le Carnaval, Mascarade, Ouverture",
+      "qid": "Q106829691"
+    },
+    {
+      "title": "Le Carnaval, Mascarade, Ouverture",
+      "qid": "Q106829726"
+    },
+    {
+      "title": "Le Carnaval, Mascarade, Ouverture",
+      "qid": "Q106829874"
+    },
+    {
+      "title": "Le Divertissement de Chambord, Les Combattants",
+      "qid": "Q106829504"
+    },
+    {
+      "title": "Le Divertissement de Chambord, Les Maîtres à danser",
+      "qid": "Q106829503"
+    },
+    {
+      "title": "Le Divertissement royal (Les Amants magnifiques), Air de Neptune",
+      "qid": "Q106829500"
+    },
+    {
+      "title": "Le Divertissement royal (Les Amants magnifiques), Air de Neptune",
+      "qid": "Q106829556"
+    },
+    {
+      "title": "Le Divertissement royal (Les Amants magnifiques), Jouissons des plaisirs",
+      "qid": "Q106829505"
+    },
+    {
+      "title": "Le Divertissement royal (Les Amants magnifiques), Les Hommes et femmes armés",
+      "qid": "Q106829502"
+    },
+    {
+      "title": "Le Divertissement royal (Les Amants magnifiques), Les Pêcheurs de corail",
+      "qid": "Q106829555"
+    },
+    {
+      "title": "Le Divertissement royal (Les Amants magnifiques), Les Pêcheurs de corail (air)",
+      "qid": "Q106829499"
+    },
+    {
+      "title": "Le Divertissement royal (Les Amants magnifiques), Les Suivants de Neptune",
+      "qid": "Q106829557"
+    },
+    {
+      "title": "Le Divertissement royal (Les Amants magnifiques), Menuet",
+      "qid": "Q106829498"
+    },
+    {
+      "title": "Le Grand Divertissement Royal de Versailles, Les Mariniers",
+      "qid": "Q106829487"
+    },
+    {
+      "title": "Le Grand Divertissement Royal de Versailles, Menuet (flutes)",
+      "qid": "Q106829488"
+    },
+    {
+      "title": "Le Mariage forcé, Second Air pour les mesmes",
+      "qid": "Q106829995"
+    },
+    {
+      "title": "Le Roi danse",
+      "qid": "Q669232"
+    },
+    {
+      "title": "Le Temple de la Paix, Canaries",
+      "qid": "Q106829673"
+    },
+    {
+      "title": "Le Temple de la Paix, Canaries",
+      "qid": "Q106829553"
+    },
+    {
+      "title": "Le Temple de la Paix, Canaries",
+      "qid": "Q106830185"
+    },
+    {
+      "title": "Le Temple de la Paix, Charmant repos",
+      "qid": "Q106830192"
+    },
+    {
+      "title": "Le Temple de la Paix, Entrée de Bergers et Bergères",
+      "qid": "Q106830180"
+    },
+    {
+      "title": "Le Temple de la Paix, Entrée des Basques",
+      "qid": "Q106829636"
+    },
+    {
+      "title": "Le Temple de la Paix, Entrée des Basques",
+      "qid": "Q106830129"
+    },
+    {
+      "title": "Le Temple de la Paix, Entrée des Basques",
+      "qid": "Q106829379"
+    },
+    {
+      "title": "Le Temple de la Paix, Gigue",
+      "qid": "Q106830179"
+    },
+    {
+      "title": "Le Temple de la Paix, La paix revient",
+      "qid": "Q106830182"
+    },
+    {
+      "title": "Le Temple de la Paix, Menuet",
+      "qid": "Q106829575"
+    },
+    {
+      "title": "Le Temple de la Paix, Menuet",
+      "qid": "Q106830178"
+    },
+    {
+      "title": "Le Temple de la Paix, Menuet",
+      "qid": "Q106830187"
+    },
+    {
+      "title": "Le Temple de la Paix, On conteroit",
+      "qid": "Q106830183"
+    },
+    {
+      "title": "Le Temple de la Paix, Ouverture",
+      "qid": "Q106829629"
+    },
+    {
+      "title": "Le Temple de la Paix, Ouverture",
+      "qid": "Q106829562"
+    },
+    {
+      "title": "Le Temple de la Paix, Ouverture",
+      "qid": "Q106830193"
+    },
+    {
+      "title": "Le Temple de la Paix, Passepied",
+      "qid": "Q106829675"
+    },
+    {
+      "title": "Le Temple de la Paix, Passepied",
+      "qid": "Q106830186"
+    },
+    {
+      "title": "Le Temple de la Paix, Preparons nous",
+      "qid": "Q106830045"
+    },
+    {
+      "title": "Le Temple de la Paix, Preparons nous",
+      "qid": "Q106830176"
+    },
+    {
+      "title": "Le Temple de la Paix, Sans crainte",
+      "qid": "Q106830191"
+    },
+    {
+      "title": "Le Temple de la Paix, Suivons l’aimable paix",
+      "qid": "Q106830188"
+    },
+    {
+      "title": "Le Temple de la Paix, Suivons l’aimable paix",
+      "qid": "Q106830189"
+    },
+    {
+      "title": "Le Temple de la Paix, [Prologue:] La Gloire luy suffit",
+      "qid": "Q106830177"
+    },
+    {
+      "title": "Le Triomphe de l'Amour",
+      "qid": "Q108705551"
+    },
+    {
+      "title": "Le Triomphe de l’Amour, Borée et des quatre Vents",
+      "qid": "Q106829547"
+    },
+    {
+      "title": "Le Triomphe de l’Amour, Bourrée",
+      "qid": "Q106829551"
+    },
+    {
+      "title": "Le Triomphe de l’Amour, Bourrée",
+      "qid": "Q106829345"
+    },
+    {
+      "title": "Le Triomphe de l’Amour, Chaconne",
+      "qid": "Q106830039"
+    },
+    {
+      "title": "Le Triomphe de l’Amour, Deux Marins",
+      "qid": "Q106829549"
+    },
+    {
+      "title": "Le Triomphe de l’Amour, Deuxiesme Air",
+      "qid": "Q106830056"
+    },
+    {
+      "title": "Le Triomphe de l’Amour, Deuxiesme Air pour Endimion",
+      "qid": "Q106830054"
+    },
+    {
+      "title": "Le Triomphe de l’Amour, Deuxiesme Menuet",
+      "qid": "Q106830218"
+    },
+    {
+      "title": "Le Triomphe de l’Amour, Deuxiesme Menuet",
+      "qid": "Q106829347"
+    },
+    {
+      "title": "Le Triomphe de l’Amour, Entrée d’Apollon",
+      "qid": "Q106829618"
+    },
+    {
+      "title": "Le Triomphe de l’Amour, Entrée d’Apollon",
+      "qid": "Q106829694"
+    },
+    {
+      "title": "Le Triomphe de l’Amour, Entrée d’Apollon",
+      "qid": "Q106829702"
+    },
+    {
+      "title": "Le Triomphe de l’Amour, Entrée d’Apollon",
+      "qid": "Q106830048"
+    },
+    {
+      "title": "Le Triomphe de l’Amour, Entrée d’Apollon",
+      "qid": "Q106829886"
+    },
+    {
+      "title": "Le Triomphe de l’Amour, Entrée d’Apollon",
+      "qid": "Q106829585"
+    },
+    {
+      "title": "Le Triomphe de l’Amour, Entrée d’Apollon",
+      "qid": "Q106830088"
+    },
+    {
+      "title": "Le Triomphe de l’Amour, Entrée d’Apollon",
+      "qid": "Q106830105"
+    },
+    {
+      "title": "Le Triomphe de l’Amour, Entrée d’Apollon",
+      "qid": "Q106830111"
+    },
+    {
+      "title": "Le Triomphe de l’Amour, Entrée d’Apollon",
+      "qid": "Q106830215"
+    },
+    {
+      "title": "Le Triomphe de l’Amour, Entrée d’Apollon",
+      "qid": "Q106830234"
+    },
+    {
+      "title": "Le Triomphe de l’Amour, Gavotte",
+      "qid": "Q106830053"
+    },
+    {
+      "title": "Le Triomphe de l’Amour, Gavotte",
+      "qid": "Q106829548"
+    },
+    {
+      "title": "Le Triomphe de l’Amour, Gavotte",
+      "qid": "Q106830220"
+    },
+    {
+      "title": "Le Triomphe de l’Amour, Mars et des Amours",
+      "qid": "Q106829550"
+    },
+    {
+      "title": "Le Triomphe de l’Amour, Ouverture",
+      "qid": "Q106829641"
+    },
+    {
+      "title": "Le Triomphe de l’Amour, Ouverture",
+      "qid": "Q106830066"
+    },
+    {
+      "title": "Le Triomphe de l’Amour, Ouverture",
+      "qid": "Q106829476"
+    },
+    {
+      "title": "Le Triomphe de l’Amour, Ouverture",
+      "qid": "Q106829545"
+    },
+    {
+      "title": "Le Triomphe de l’Amour, Ouverture",
+      "qid": "Q106830210"
+    },
+    {
+      "title": "Le Triomphe de l’Amour, Premier Air pour la Jeunesse",
+      "qid": "Q106830055"
+    },
+    {
+      "title": "Le Triomphe de l’Amour, Premier Air pour la Jeunesse",
+      "qid": "Q106830257"
+    },
+    {
+      "title": "Le Triomphe de l’Amour, Premier Entrée des Graces",
+      "qid": "Q106829478"
+    },
+    {
+      "title": "Le Triomphe de l’Amour, Tranquiles cœurs",
+      "qid": "Q106830217"
+    },
+    {
+      "title": "Le Triomphe de l’Amour, Tranquiles cœurs",
+      "qid": "Q106829382"
+    },
+    {
+      "title": "Les Amours deguisés, Entrée",
+      "qid": "Q106829996"
+    },
+    {
+      "title": "Les Amours deguisés, Entrée",
+      "qid": "Q106829911"
+    },
+    {
+      "title": "Les Amours deguisés, Quatrième air, Bourrée",
+      "qid": "Q106829998"
+    },
+    {
+      "title": "Les Amours deguisés, Second Air, Sarabande",
+      "qid": "Q106829997"
+    },
+    {
+      "title": "Les Plaisirs de l’Ile enchantée, Premier air pour les valets de chiens endormis",
+      "qid": "Q106829999"
+    },
+    {
+      "title": "Les Plaisirs de l’Ile enchantée, Ritournelle",
+      "qid": "Q106829917"
+    },
+    {
+      "title": "Les Plaisirs de l’Ile enchantée, Rondeau",
+      "qid": "Q106829701"
+    },
+    {
+      "title": "Les Plaisirs de l’Ile enchantée, Rondeau",
+      "qid": "Q106829983"
+    },
+    {
+      "title": "Les Plaisirs de l’Ile enchantée, Second air des valet de chiens",
+      "qid": "Q106830000"
+    },
+    {
+      "title": "Les fêtes de l'Amour et de Bacchus",
+      "qid": "Q136688937"
+    },
+    {
+      "title": "Louis, the Child King",
+      "qid": "Q690525"
+    },
+    {
+      "title": "Miscellaneous Instrumental Pieces",
+      "qid": "Q106829677"
+    },
+    {
+      "title": "Miscellaneous Instrumental Pieces",
+      "qid": "Q106829686"
+    },
+    {
+      "title": "Miscellaneous Instrumental Pieces",
+      "qid": "Q106830040"
+    },
+    {
+      "title": "Miscellaneous Instrumental Pieces",
+      "qid": "Q106829897"
+    },
+    {
+      "title": "Miscellaneous Instrumental Pieces",
+      "qid": "Q106829546"
+    },
+    {
+      "title": "Miscellaneous Instrumental Pieces",
+      "qid": "Q106830232"
+    },
+    {
+      "title": "Miscellaneous Instrumental Pieces, Air",
+      "qid": "Q106829919"
+    },
+    {
+      "title": "Miscellaneous Instrumental Pieces, Allemande",
+      "qid": "Q106829980"
+    },
+    {
+      "title": "Miscellaneous Instrumental Pieces, Allemande des fragments de M. Lully",
+      "qid": "Q106829610"
+    },
+    {
+      "title": "Miscellaneous Instrumental Pieces, Allemande des fragments de M. Lully",
+      "qid": "Q106829845"
+    },
+    {
+      "title": "Miscellaneous Instrumental Pieces, Allemande des fragments de M. Lully",
+      "qid": "Q106829564"
+    },
+    {
+      "title": "Miscellaneous Instrumental Pieces, Courante",
+      "qid": "Q106829684"
+    },
+    {
+      "title": "Miscellaneous Instrumental Pieces, Courante",
+      "qid": "Q106829747"
+    },
+    {
+      "title": "Miscellaneous Instrumental Pieces, Courante",
+      "qid": "Q106829748"
+    },
+    {
+      "title": "Miscellaneous Instrumental Pieces, Courante",
+      "qid": "Q106829975"
+    },
+    {
+      "title": "Miscellaneous Instrumental Pieces, Courante",
+      "qid": "Q106829993"
+    },
+    {
+      "title": "Miscellaneous Instrumental Pieces, Courante",
+      "qid": "Q106829586"
+    },
+    {
+      "title": "Miscellaneous Instrumental Pieces, Courante",
+      "qid": "Q106829606"
+    },
+    {
+      "title": "Miscellaneous Instrumental Pieces, Courante",
+      "qid": "Q106830226"
+    },
+    {
+      "title": "Miscellaneous Instrumental Pieces, Courante",
+      "qid": "Q106830231"
+    },
+    {
+      "title": "Miscellaneous Instrumental Pieces, Gigue",
+      "qid": "Q106829689"
+    },
+    {
+      "title": "Miscellaneous Instrumental Pieces, Marche des fanatiques",
+      "qid": "Q106829793"
+    },
+    {
+      "title": "Miscellaneous Instrumental Pieces, Passepied",
+      "qid": "Q106830239"
+    },
+    {
+      "title": "Noce de Village, Airs pour Madame la Dauphine, Menuet",
+      "qid": "Q106829570"
+    },
+    {
+      "title": "Noce de Village, Airs pour Madame la Dauphine, Pavane",
+      "qid": "Q106829981"
+    },
+    {
+      "title": "Persée",
+      "qid": "Q3376129"
+    },
+    {
+      "title": "Persée, Air pour les hautbois",
+      "qid": "Q106830212"
+    },
+    {
+      "title": "Persée, Air pour les hautbois",
+      "qid": "Q106830249"
+    },
+    {
+      "title": "Persée, Air pour les hautbois",
+      "qid": "Q106829387"
+    },
+    {
+      "title": "Persée, Gigue",
+      "qid": "Q106829676"
+    },
+    {
+      "title": "Persée, Gigue",
+      "qid": "Q106830214"
+    },
+    {
+      "title": "Persée, Les Sacrificateurs",
+      "qid": "Q106830248"
+    },
+    {
+      "title": "Persée, Menuet",
+      "qid": "Q106829567"
+    },
+    {
+      "title": "Persée, Menuet",
+      "qid": "Q106830128"
+    },
+    {
+      "title": "Persée, Ouverture",
+      "qid": "Q106829627"
+    },
+    {
+      "title": "Persée, Ouverture",
+      "qid": "Q106830059"
+    },
+    {
+      "title": "Persée, Ouverture",
+      "qid": "Q106830213"
+    },
+    {
+      "title": "Persée, Passacaille",
+      "qid": "Q106829628"
+    },
+    {
+      "title": "Persée, Passacaille",
+      "qid": "Q106830211"
+    },
+    {
+      "title": "Persée, Passacaille",
+      "qid": "Q106829356"
+    },
+    {
+      "title": "Persée, Rondeau (Menuet)",
+      "qid": "Q106829655"
+    },
+    {
+      "title": "Phaéton, Air (Entrée)",
+      "qid": "Q106829353"
+    },
+    {
+      "title": "Phaéton, Bourrée",
+      "qid": "Q106829348"
+    },
+    {
+      "title": "Phaéton, Bourrée",
+      "qid": "Q106829351"
+    },
+    {
+      "title": "Phaéton, Chaconne",
+      "qid": "Q106829622"
+    },
+    {
+      "title": "Phaéton, Chaconne",
+      "qid": "Q106829683"
+    },
+    {
+      "title": "Phaéton, Chaconne",
+      "qid": "Q106830037"
+    },
+    {
+      "title": "Phaéton, Chaconne",
+      "qid": "Q106830072"
+    },
+    {
+      "title": "Phaéton, Chaconne",
+      "qid": "Q106829771"
+    },
+    {
+      "title": "Phaéton, Chaconne",
+      "qid": "Q106829786"
+    },
+    {
+      "title": "Phaéton, Chaconne",
+      "qid": "Q106829852"
+    },
+    {
+      "title": "Phaéton, Chaconne",
+      "qid": "Q106829879"
+    },
+    {
+      "title": "Phaéton, Chaconne",
+      "qid": "Q106829565"
+    },
+    {
+      "title": "Phaéton, Chaconne",
+      "qid": "Q106830149"
+    },
+    {
+      "title": "Phaéton, Chaconne",
+      "qid": "Q106829357"
+    },
+    {
+      "title": "Phaéton, Cherchons la paix",
+      "qid": "Q106829698"
+    },
+    {
+      "title": "Phaéton, Cherchons la paix",
+      "qid": "Q106830146"
+    },
+    {
+      "title": "Phaéton, Cherchons la paix",
+      "qid": "Q106829369"
+    },
+    {
+      "title": "Phaéton, Dans ce palais",
+      "qid": "Q106829704"
+    },
+    {
+      "title": "Phaéton, Dans ce palais",
+      "qid": "Q106830145"
+    },
+    {
+      "title": "Phaéton, Dans ces lieux",
+      "qid": "Q106830148"
+    },
+    {
+      "title": "Phaéton, Le Printemps",
+      "qid": "Q106830043"
+    },
+    {
+      "title": "Phaéton, Le Printemps",
+      "qid": "Q106830219"
+    },
+    {
+      "title": "Phaéton, Le plaisir (Gavotte)",
+      "qid": "Q106830143"
+    },
+    {
+      "title": "Phaéton, Le plaisir (Gavotte)",
+      "qid": "Q106830144"
+    },
+    {
+      "title": "Phaéton, Menuet",
+      "qid": "Q106830147"
+    },
+    {
+      "title": "Phaéton, Ouverture",
+      "qid": "Q106829637"
+    },
+    {
+      "title": "Phaéton, Ouverture",
+      "qid": "Q106829471"
+    },
+    {
+      "title": "Phaéton, Ouverture",
+      "qid": "Q106830140"
+    },
+    {
+      "title": "Phaéton, Ouverture",
+      "qid": "Q106829355"
+    },
+    {
+      "title": "Phaéton, Plaisirs, venez (Bourrée)",
+      "qid": "Q106830150"
+    },
+    {
+      "title": "Phaéton, Que l’incertitude",
+      "qid": "Q106830160"
+    },
+    {
+      "title": "Phaéton, Rondeau (Gavotte)",
+      "qid": "Q106829469"
+    },
+    {
+      "title": "Phaéton, Rondeau (Gavotte)",
+      "qid": "Q106829569"
+    },
+    {
+      "title": "Phaéton, Rondeau (Gavotte)",
+      "qid": "Q106830141"
+    },
+    {
+      "title": "Phaéton, Rondeau (Gavotte)",
+      "qid": "Q106830142"
+    },
+    {
+      "title": "Phaéton, Rondeau (Gavotte)",
+      "qid": "Q106829354"
+    },
+    {
+      "title": "Phaéton, Rondeau (Menuet)",
+      "qid": "Q106829563"
+    },
+    {
+      "title": "Phaéton, Second Air",
+      "qid": "Q106829703"
+    },
+    {
+      "title": "Phaéton, Second Air",
+      "qid": "Q106830216"
+    },
+    {
+      "title": "Phaéton, Second Air",
+      "qid": "Q106829342"
+    },
+    {
+      "title": "Phaéton, Vous ne devez plus attendre",
+      "qid": "Q106829470"
+    },
+    {
+      "title": "Phaëton",
+      "qid": "Q1633296"
+    },
+    {
+      "title": "Pickpocket",
+      "qid": "Q664726"
+    },
+    {
+      "title": "Plaude Laetare Gallia",
+      "qid": "Q16220813"
+    },
+    {
+      "title": "Première Marche des Mousquetaires, Première Marche",
+      "qid": "Q106829785"
+    },
+    {
+      "title": "Première Marche des Mousquetaires, Première Marche",
+      "qid": "Q106829925"
+    },
+    {
+      "title": "Proserpine",
+      "qid": "Q2745696"
+    },
+    {
+      "title": "Proserpine, Air pour les trompettes",
+      "qid": "Q106829792"
+    },
+    {
+      "title": "Proserpine, Air pour les trompettes",
+      "qid": "Q106829884"
+    },
+    {
+      "title": "Proserpine, Air pour les trompettes",
+      "qid": "Q106830268"
+    },
+    {
+      "title": "Proserpine, Belles fleurs",
+      "qid": "Q106830209"
+    },
+    {
+      "title": "Proserpine, La Discorde",
+      "qid": "Q106829621"
+    },
+    {
+      "title": "Proserpine, La Discorde",
+      "qid": "Q106830081"
+    },
+    {
+      "title": "Proserpine, Menuet",
+      "qid": "Q106830243"
+    },
+    {
+      "title": "Proserpine, Ouverture",
+      "qid": "Q106829696"
+    },
+    {
+      "title": "Proserpine, Ouverture",
+      "qid": "Q106829517"
+    },
+    {
+      "title": "Proserpine, Ouverture",
+      "qid": "Q106830208"
+    },
+    {
+      "title": "Proserpine, Second Air",
+      "qid": "Q106829678"
+    },
+    {
+      "title": "Psyché",
+      "qid": "Q3099033"
+    },
+    {
+      "title": "Psyché, Aimable jeunesse",
+      "qid": "Q106829510"
+    },
+    {
+      "title": "Psyché, Dernier Air",
+      "qid": "Q106829516"
+    },
+    {
+      "title": "Psyché, Entrée (Gavotte)",
+      "qid": "Q106829511"
+    },
+    {
+      "title": "Psyché, Entrée (Gavotte)",
+      "qid": "Q106830235"
+    },
+    {
+      "title": "Psyché, Les Bacchanales",
+      "qid": "Q106829513"
+    },
+    {
+      "title": "Psyché, Menuet",
+      "qid": "Q106829978"
+    },
+    {
+      "title": "Psyché, Menuet",
+      "qid": "Q106829508"
+    },
+    {
+      "title": "Psyché, Menuet",
+      "qid": "Q106829509"
+    },
+    {
+      "title": "Psyché, Ouverture",
+      "qid": "Q106829639"
+    },
+    {
+      "title": "Psyché, Ouverture",
+      "qid": "Q106830041"
+    },
+    {
+      "title": "Psyché, Prélude",
+      "qid": "Q106829788"
+    },
+    {
+      "title": "Psyché, Prélude",
+      "qid": "Q106829608"
+    },
+    {
+      "title": "Psyché, Second Air",
+      "qid": "Q106829514"
+    },
+    {
+      "title": "Psyché, Trompettes",
+      "qid": "Q106829831"
+    },
+    {
+      "title": "Psyché, Trompettes",
+      "qid": "Q106829481"
+    },
+    {
+      "title": "Psyché, Trompettes",
+      "qid": "Q106829515"
+    },
+    {
+      "title": "Psyché, Trompettes",
+      "qid": "Q106830253"
+    },
+    {
+      "title": "Psyché, Trompettes",
+      "qid": "Q106830266"
+    },
+    {
+      "title": "Roland",
+      "qid": "Q3439921"
+    },
+    {
+      "title": "Roland, Air",
+      "qid": "Q106830065"
+    },
+    {
+      "title": "Roland, C’est l’amour",
+      "qid": "Q106829474"
+    },
+    {
+      "title": "Roland, C’est l’amour",
+      "qid": "Q106829566"
+    },
+    {
+      "title": "Roland, C’est l’amour",
+      "qid": "Q106830106"
+    },
+    {
+      "title": "Roland, C’est l’amour",
+      "qid": "Q106830164"
+    },
+    {
+      "title": "Roland, Deux Amantes contentes",
+      "qid": "Q106830174"
+    },
+    {
+      "title": "Roland, Gavotte",
+      "qid": "Q106830165"
+    },
+    {
+      "title": "Roland, Gavotte",
+      "qid": "Q106830167"
+    },
+    {
+      "title": "Roland, Gigue",
+      "qid": "Q106830166"
+    },
+    {
+      "title": "Roland, Le Marié (Marche)",
+      "qid": "Q106830169"
+    },
+    {
+      "title": "Roland, Marche",
+      "qid": "Q106830064"
+    },
+    {
+      "title": "Roland, Menuet",
+      "qid": "Q106829772"
+    },
+    {
+      "title": "Roland, Menuet",
+      "qid": "Q106829855"
+    },
+    {
+      "title": "Roland, Menuet",
+      "qid": "Q106830116"
+    },
+    {
+      "title": "Roland, Menuet",
+      "qid": "Q106830170"
+    },
+    {
+      "title": "Roland, Menuet",
+      "qid": "Q106830172"
+    },
+    {
+      "title": "Roland, Menuet",
+      "qid": "Q106830173"
+    },
+    {
+      "title": "Roland, Menuet",
+      "qid": "Q106829368"
+    },
+    {
+      "title": "Roland, Ouverture",
+      "qid": "Q106829611"
+    },
+    {
+      "title": "Roland, Ouverture",
+      "qid": "Q106830061"
+    },
+    {
+      "title": "Roland, Ouverture",
+      "qid": "Q106830163"
+    },
+    {
+      "title": "Roland, Roland",
+      "qid": "Q106829994"
+    },
+    {
+      "title": "Roland, Second Menuet",
+      "qid": "Q106829472"
+    },
+    {
+      "title": "Roland, Second Menuet",
+      "qid": "Q106830171"
+    },
+    {
+      "title": "Roland, Symphonie (Ritournelle)",
+      "qid": "Q106829680"
+    },
+    {
+      "title": "Rondeau",
+      "qid": "Q29208286"
+    },
+    {
+      "title": "Rufst du, mein Vaterland",
+      "qid": "Q670343"
+    },
+    {
+      "title": "Te Deum",
+      "qid": "Q1547583"
+    },
+    {
+      "title": "The Online Thematic Catalogue of Lully Keyboard Arrangements",
+      "qid": "Q106828565"
+    },
+    {
+      "title": "The Would-Be Noble",
+      "qid": "Q63542553"
+    },
+    {
+      "title": "The Would-Be Noble",
+      "qid": "Q63546465"
+    },
+    {
+      "title": "The Would-Be Noble",
+      "qid": "Q64596822"
+    },
+    {
+      "title": "The Would-Be Noble",
+      "qid": "Q64596827"
+    },
+    {
+      "title": "Thésée",
+      "qid": "Q3098992"
+    },
+    {
+      "title": "Thésée, Aimons, aimons",
+      "qid": "Q106830242"
+    },
+    {
+      "title": "Thésée, Descente de Mars",
+      "qid": "Q106829866"
+    },
+    {
+      "title": "Thésée, Entrée des Combattants",
+      "qid": "Q106829633"
+    },
+    {
+      "title": "Thésée, La Marche",
+      "qid": "Q106829632"
+    },
+    {
+      "title": "Thésée, La Marche",
+      "qid": "Q106829720"
+    },
+    {
+      "title": "Thésée, La Marche",
+      "qid": "Q106829774"
+    },
+    {
+      "title": "Thésée, La Marche",
+      "qid": "Q106829782"
+    },
+    {
+      "title": "Thésée, La Marche",
+      "qid": "Q106829850"
+    },
+    {
+      "title": "Thésée, La Marche",
+      "qid": "Q106830261"
+    },
+    {
+      "title": "Thésée, Les Démons",
+      "qid": "Q106829723"
+    },
+    {
+      "title": "Thésée, Les Démons",
+      "qid": "Q106830068"
+    },
+    {
+      "title": "Thésée, Les Démons",
+      "qid": "Q106830084"
+    },
+    {
+      "title": "Thésée, L’amour plaist",
+      "qid": "Q106830255"
+    },
+    {
+      "title": "Thésée, Prélude",
+      "qid": "Q106830067"
+    },
+    {
+      "title": "Thésée, Ritournelle",
+      "qid": "Q106829631"
+    },
+    {
+      "title": "Thésée, Ritournelle",
+      "qid": "Q106830079"
+    },
+    {
+      "title": "Thésée, Ritournelle",
+      "qid": "Q106829781"
+    },
+    {
+      "title": "Thésée, Ritournelle",
+      "qid": "Q106829791"
+    },
+    {
+      "title": "Thésée, Ritournelle",
+      "qid": "Q106830260"
+    },
+    {
+      "title": "Thésée, Second Air",
+      "qid": "Q106829724"
+    },
+    {
+      "title": "Thésée, Second Air",
+      "qid": "Q106830038"
+    },
+    {
+      "title": "Thésée, Second Air",
+      "qid": "Q106830069"
+    },
+    {
+      "title": "Thésée, Trompettes",
+      "qid": "Q106829630"
+    },
+    {
+      "title": "Thésée, Trompettes",
+      "qid": "Q106830033"
+    },
+    {
+      "title": "Thésée, Trompettes",
+      "qid": "Q106829773"
+    },
+    {
+      "title": "Thésée, Trompettes",
+      "qid": "Q106829780"
+    },
+    {
+      "title": "Thésée, Trompettes",
+      "qid": "Q106829790"
+    },
+    {
+      "title": "Thésée, Trompettes",
+      "qid": "Q106829846"
+    },
+    {
+      "title": "Thésée, Trompettes",
+      "qid": "Q106830259"
+    },
+    {
+      "title": "Trios de la Chambre du Roi, Dans nos bois",
+      "qid": "Q106829682"
+    },
+    {
+      "title": "Trios de la Chambre du Roi, Dans nos bois",
+      "qid": "Q106829754"
+    },
+    {
+      "title": "Trios de la Chambre du Roi, Dans nos bois",
+      "qid": "Q106829755"
+    },
+    {
+      "title": "Trios de la Chambre du Roi, Dans nos bois",
+      "qid": "Q106829872"
+    },
+    {
+      "title": "Trios de la Chambre du Roi, Dans nos bois",
+      "qid": "Q106829574"
+    },
+    {
+      "title": "Trios de la Chambre du Roi, Dans nos bois",
+      "qid": "Q106830091"
+    },
+    {
+      "title": "Trios de la Chambre du Roi, Dans nos bois",
+      "qid": "Q106830097"
+    },
+    {
+      "title": "Trios de la Chambre du Roi, Dans nos bois",
+      "qid": "Q106830109"
+    },
+    {
+      "title": "Trios de la Chambre du Roi, Dans nos bois",
+      "qid": "Q106830131"
+    },
+    {
+      "title": "Trios de la Chambre du Roi, Dans nos bois",
+      "qid": "Q106830240"
+    },
+    {
+      "title": "Trios de la Chambre du Roi, La Jeune Iris",
+      "qid": "Q106829690"
+    },
+    {
+      "title": "Trios de la Chambre du Roi, La Jeune Iris",
+      "qid": "Q106830274"
+    },
+    {
+      "title": "Trios de la Chambre du Roi, Menuet",
+      "qid": "Q106830044"
+    },
+    {
+      "title": "Trios de la Chambre du Roi, Où estes-vous allé",
+      "qid": "Q106829899"
+    },
+    {
+      "title": "Trios de la Chambre du Roi, Ritournelle de Junon",
+      "qid": "Q106829907"
+    },
+    {
+      "title": "Trios de la Chambre du Roi, Sarabande",
+      "qid": "Q106829908"
+    },
+    {
+      "title": "Xerxes, Entrée, les Basques",
+      "qid": "Q106829722"
+    },
+    {
+      "title": "Xerxes, Entrée, les Basques",
+      "qid": "Q106829973"
+    },
+    {
+      "title": "Xerxes, Rondeau",
+      "qid": "Q106829974"
+    },
+    {
+      "title": "Zéphire et Flore",
+      "qid": "Q106830122"
+    },
+    {
+      "title": "Zéphire et Flore, Echo",
+      "qid": "Q106830029"
+    },
+    {
+      "title": "not in LWV",
+      "qid": "Q106829789"
+    },
+    {
+      "title": "Le ballet de la revente des habits du ballet et comédie",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution 2.5",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/LullyJB/LWV05/lwv05/lwv05-lys/lully/lwv05-header.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ballet de l'amour malade",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution 2.5",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/LullyJB/LWV08/lwv08/lwv08-lys/lully/lwv08-header.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Les Plaisirs de l'Île Enchantée",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/LullyJB/LWV22/LWV22LesPlaisirsDeLIleEnchantee/LWV22LesPlaisirsDeLIleEnchantee-lys/header.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Le Bourgeois Gentilhomme",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution 2.5",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/LullyJB/LWV43/lwv43/lwv43-lys/lwv43-header.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Phaéton",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/LullyJB/LWV61/LWV61Phaeton/LWV61Phaeton-lys/LWV61Phaeton-header.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Acte II, Scene III from Armide",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/LullyJB/LWV71/Armide/Armide-lys/score.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Salve Regina",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/LullyJB/LWV77/Lully-Salve_Regina/Lully-Salve_Regina.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

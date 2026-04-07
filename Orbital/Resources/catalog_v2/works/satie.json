@@ -1,0 +1,888 @@
+{
+  "works": [
+    {
+      "title": "Danses gothiques",
+      "qid": "Q3015673"
+    },
+    {
+      "title": "Pièces froides",
+      "qid": "Q24963453"
+    },
+    {
+      "title": "Verset laïque et somptueux",
+      "qid": "Q108325566"
+    },
+    {
+      "title": "Passacaille",
+      "qid": "Q133805286"
+    },
+    {
+      "title": "Nouvelles Pièces froides",
+      "qid": "Q134436164"
+    },
+    {
+      "title": "Trois poèmes d'amour",
+      "qid": "Q24041395"
+    },
+    {
+      "title": "Quatre petites mélodies",
+      "qid": "Q60788394"
+    },
+    {
+      "title": "Community Terrors",
+      "qid": "Q115918859"
+    },
+    {
+      "title": "Allegro",
+      "qid": "Q21998337",
+      "key": "G major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1884
+    },
+    {
+      "title": "Aperçus désagréables",
+      "qid": "Q105203305"
+    },
+    {
+      "title": "Avant-dernières pensées",
+      "qid": "Q2873281"
+    },
+    {
+      "title": "Chapitres tournés en tous sens",
+      "qid": "Q105104213"
+    },
+    {
+      "title": "Choses vues à droite et à gauche",
+      "qid": "Q19892225",
+      "instruments": [
+        "Violin",
+        "Grand Piano"
+      ],
+      "year_composed": 1914
+    },
+    {
+      "title": "Cinq grimaces pour Le songe d'une nuit d'été",
+      "qid": "Q21998406"
+    },
+    {
+      "title": "Croquis et agaceries d'un gros bonhomme en bois",
+      "qid": "Q105104726"
+    },
+    {
+      "title": "Dancing in the Dark",
+      "qid": "Q5215539"
+    },
+    {
+      "title": "Elisa, vida mía",
+      "qid": "Q59612"
+    },
+    {
+      "title": "Embryons desséchés",
+      "qid": "Q5370249"
+    },
+    {
+      "title": "En habit de cheval",
+      "qid": "Q21998480"
+    },
+    {
+      "title": "Enfantillages pittoresques",
+      "qid": "Q10484120",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1914
+    },
+    {
+      "title": "Entr'acte",
+      "qid": "Q1345290"
+    },
+    {
+      "title": "Fantaisie-Valse",
+      "qid": "Q125867472",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=satie/fantaisie_valse_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fête donnée par des Chevaliers Normands en l'honneur d'une jeune demoiselle",
+      "qid": "Q107995099"
+    },
+    {
+      "title": "Geneviève de Brabant",
+      "qid": "Q107564676"
+    },
+    {
+      "title": "Gnossienne #1",
+      "qid": "Q110184793",
+      "key": "A♭ major",
+      "instruments": [
+        "Piano"
+      ]
+    },
+    {
+      "title": "Gnossienne #2",
+      "qid": "Q110184872"
+    },
+    {
+      "title": "Gnossienne #3",
+      "qid": "Q110184980",
+      "instruments": [
+        "Piano"
+      ]
+    },
+    {
+      "title": "Gnossienne #4",
+      "qid": "Q110185002",
+      "instruments": [
+        "Flûte",
+        "Clarinette",
+        "Trompette",
+        "Alto",
+        "Ténor",
+        "Baryton",
+        "Trombone",
+        "P",
+        "Basse",
+        "Batterie"
+      ]
+    },
+    {
+      "title": "Gnossienne #5",
+      "qid": "Q110185045"
+    },
+    {
+      "title": "Gnossienne #6",
+      "qid": "Q110185062",
+      "instruments": [
+        "Flûte",
+        "Clarinette",
+        "Trompette",
+        "Alto",
+        "Ténor",
+        "Baryton",
+        "Trombone",
+        "Piano",
+        "Guitare acoustique",
+        "B",
+        "Batterie"
+      ]
+    },
+    {
+      "title": "Gnossienne #7",
+      "qid": "Q110185097"
+    },
+    {
+      "title": "Gnossiennes",
+      "qid": "Q2602501"
+    },
+    {
+      "title": "Gymnopédie No. 1",
+      "qid": "Q66457334",
+      "key": "C major",
+      "instruments": [
+        "Piano"
+      ]
+    },
+    {
+      "title": "Gymnopédie No. 2",
+      "qid": "Q66458114"
+    },
+    {
+      "title": "Gymnopédie No. 3",
+      "qid": "Q66458255"
+    },
+    {
+      "title": "Gymnopédies",
+      "qid": "Q1190965"
+    },
+    {
+      "title": "Heures séculaires et instantanées",
+      "qid": "Q105160634"
+    },
+    {
+      "title": "Jack in the Box",
+      "qid": "Q3157358"
+    },
+    {
+      "title": "Jack in the Box",
+      "qid": "Q3157359"
+    },
+    {
+      "title": "Je te veux",
+      "qid": "Q3163591",
+      "key": "G major",
+      "instruments": [
+        "Violoncello"
+      ],
+      "year_composed": 1902,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=satie/je_te_veux_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "La Diva de l'Empire",
+      "qid": "Q18204974"
+    },
+    {
+      "title": "La belle excentrique",
+      "qid": "Q16721855"
+    },
+    {
+      "title": "Le Bœuf Angora",
+      "qid": "Q108415657"
+    },
+    {
+      "title": "Le Fils des étoiles",
+      "qid": "Q24965399",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1896
+    },
+    {
+      "title": "Le Piccadilly",
+      "qid": "Q11331395"
+    },
+    {
+      "title": "Le piège de Méduse",
+      "qid": "Q6508083"
+    },
+    {
+      "title": "Le poisson rêveur",
+      "qid": "Q108649637"
+    },
+    {
+      "title": "Les Pantins dansent",
+      "qid": "Q108085282"
+    },
+    {
+      "title": "Les trois valses distinguées du précieux dégoûté",
+      "qid": "Q105047107"
+    },
+    {
+      "title": "Love Affair(s)",
+      "qid": "Q98745126"
+    },
+    {
+      "title": "Ludions",
+      "qid": "Q19894105"
+    },
+    {
+      "title": "Menus propos enfantins",
+      "qid": "Q105133643"
+    },
+    {
+      "title": "Mercure",
+      "qid": "Q19894298"
+    },
+    {
+      "title": "Messe des pauvres",
+      "qid": "Q21998643"
+    },
+    {
+      "title": "Nocturnes",
+      "qid": "Q18354056"
+    },
+    {
+      "title": "Ogives",
+      "qid": "Q7080076"
+    },
+    {
+      "title": "Parade",
+      "qid": "Q2051330"
+    },
+    {
+      "title": "Parade (Ballets Russes, 1917)",
+      "qid": "Q122916444"
+    },
+    {
+      "title": "Peccadilles importunes",
+      "qid": "Q105134879"
+    },
+    {
+      "title": "Petite ouverture à danser",
+      "qid": "Q108325451"
+    },
+    {
+      "title": "Poudre d'or",
+      "qid": "Q49139233"
+    },
+    {
+      "title": "Premier Menuet",
+      "qid": "Q18209459"
+    },
+    {
+      "title": "Première pensée Rose+Croix",
+      "qid": "Q133858883"
+    },
+    {
+      "title": "Prélude d'Eginhard",
+      "qid": "Q24901070"
+    },
+    {
+      "title": "Prélude de la porte héroïque du ciel",
+      "qid": "Q24963394"
+    },
+    {
+      "title": "Prélude en tapisserie",
+      "qid": "Q105713791"
+    },
+    {
+      "title": "Préludes du Nazaréen",
+      "qid": "Q134308120"
+    },
+    {
+      "title": "Relâche",
+      "qid": "Q3424451"
+    },
+    {
+      "title": "Sarabandes",
+      "qid": "Q28154242"
+    },
+    {
+      "title": "Satrio",
+      "qid": "Q57933675"
+    },
+    {
+      "title": "Skierri: Land of the Dwarf Birches",
+      "qid": "Q15233484"
+    },
+    {
+      "title": "Socrate",
+      "qid": "Q3028841",
+      "instruments": [
+        "CHANT",
+        "PIANO"
+      ],
+      "year_composed": 1918
+    },
+    {
+      "title": "Sonatine bureaucratique",
+      "qid": "Q7560849",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=satie/sonatine_burocratique_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonnerie pour réveiller le bon gros roi des singes",
+      "qid": "Q105517363"
+    },
+    {
+      "title": "Sonneries de la Rose+Croix",
+      "qid": "Q7561954"
+    },
+    {
+      "title": "Sports et divertissements",
+      "qid": "Q3494173"
+    },
+    {
+      "title": "The Adventures of Picasso",
+      "qid": "Q1047872"
+    },
+    {
+      "title": "The Fire Within",
+      "qid": "Q2053405"
+    },
+    {
+      "title": "The Immortal Story",
+      "qid": "Q3549563"
+    },
+    {
+      "title": "The Inheritors",
+      "qid": "Q1216237"
+    },
+    {
+      "title": "Tombeau de Claude Debussy",
+      "qid": "Q14752515"
+    },
+    {
+      "title": "Trois Gnossiennes",
+      "qid": "Q111974610"
+    },
+    {
+      "title": "Trois Mélodies",
+      "qid": "Q60788404"
+    },
+    {
+      "title": "Trois morceaux en forme de poire",
+      "qid": "Q3540015",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1911
+    },
+    {
+      "title": "Trois petites pièces montées",
+      "qid": "Q19898073"
+    },
+    {
+      "title": "Valse-ballet",
+      "qid": "Q125868877",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=satie/valse_ballet_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Veritables Preludes flasques (pour un chien)",
+      "qid": "Q11571136"
+    },
+    {
+      "title": "Vexations",
+      "qid": "Q2060108"
+    },
+    {
+      "title": "Vieux sequins et vieilles cuirasses",
+      "qid": "Q105105636"
+    },
+    {
+      "title": "1. \n\t\t\t---",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=satie/sarabande_1_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "2. \n\t\t\t---",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=satie/sarabande_2_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3. \n\t\t\t---",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=satie/sarabande_3_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "1. Lent et douloureux",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=satie/gymnopedie_1_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "2. Lent et triste",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=satie/gymnopedie_2_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3. Lent et grave",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=satie/gymnopedie_3_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "1. Lent",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=satie/gnossienne_1_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "2. (Avec �tonnement)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=satie/gnossienne_2_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3. Lent",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=satie/gnossienne_3_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "2. Mod�r�",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=satie/gnossienne_5_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3. Avec conviction et avec une tristesse rigoureuse",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=satie/gnossienne_6_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Embryons desch�ss�s (1913)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=satie/embryons_1_(c)bachovich.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=satie/embryons_2_(c)bachovich.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=satie/embryons_3_(c)bachovich.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pr�lude du 1er acte: \"La Vocation\"",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=satie/preludes_du_fils_des_etoiles_1_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pr�lude du 2e acte: \"L'initiation\"",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=satie/preludes_du_fils_des_etoiles_2_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pr�lude du 3e acte: \"L'incantation\"",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=satie/preludes_du_fils_des_etoiles_3_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mani�re de \n\t\t\tcommencement",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=satie/morceaux_en_forme_de_poire_1_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Prolongement du m�me",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=satie/morceaux_en_forme_de_poire_2_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "En plus",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=satie/morceaux_en_forme_de_poire_6_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Redite",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=satie/morceaux_en_forme_de_poire_7_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Aper�us D�sagr�ables (1908-12)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/satie_apercus_desagreable_1_(c)simonetto.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/satie_apercus_desagreable_2_(c)simonetto.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/satie_apercus_desagreable_3_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "1-2. Choral: Grave, attacca: Fugue Litanique: Soigneusement et avec lenteur",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/satie_en_habit_de_cheval_1-2_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3-4. Autre Choral: non Lent, Fugue de Papier: Assez mod�r�",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/satie_en_habit_de_cheval_3-4_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Celle qui parle trop",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 4.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SatieE/Chapitres/Celle/Celle.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Le porteur de grosses pierres",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 4.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SatieE/Chapitres/Le_porteur/Le_porteur.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Regrets des Enfermés (Janas et Latude)",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 4.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SatieE/Chapitres/Regrets/Regrets.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Danse maigre",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 4.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SatieE/Croquis/Danse/Danse-lys/Danse.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Españaña",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 4.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SatieE/Croquis/Espanana/Espanana.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tyrolienne turque",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 4.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SatieE/Croquis/Tyrolienne/Tyrolienne.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gnossienne No. 1",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 4.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SatieE/Gnossienne/no_1/no_1.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sa Taille",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 4.0 International",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SatieE/Trois_Valses/Sa_Taille/Sa_Taille.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ses Jambes",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 4.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SatieE/Trois_Valses/Ses_Jambes/Ses_Jambes.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Son Binocle",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 4.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SatieE/Trois_Valses/Son_Binocle/Son_Binocle-lys/Son_Binocle.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

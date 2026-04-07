@@ -1,0 +1,476 @@
+{
+  "works": [
+    {
+      "title": "Adieu mes amours on m'atent",
+      "qid": "Q114891210"
+    },
+    {
+      "title": "Ave Maria ... Virgo serena",
+      "qid": "Q16949660",
+      "instruments": [
+        "Sopraan",
+        "Alt",
+        "Tenor",
+        "Bas"
+      ],
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=desprez_ave_maria_(c)unknown.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/desprez_ave_maria_(c)cipoo.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=12/pres-des_canzona_ave_maria_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Belle pour l'amour de vous",
+      "qid": "Q116250742"
+    },
+    {
+      "title": "Bergerette savoyene",
+      "qid": "Q116250816"
+    },
+    {
+      "title": "Cela sans plus et puis hola",
+      "qid": "Q116250912"
+    },
+    {
+      "title": "Comment peult haver joye",
+      "qid": "Q116250743"
+    },
+    {
+      "title": "Congratulamini mihi omnes",
+      "qid": "Q135653804"
+    },
+    {
+      "title": "Cum sancto spiritu",
+      "qid": "Q135653812"
+    },
+    {
+      "title": "Des biens d'amours quiconques les despart",
+      "qid": "Q116250819"
+    },
+    {
+      "title": "Domini est terra",
+      "qid": "Q128270954"
+    },
+    {
+      "title": "Entre ye suis en gran pensier",
+      "qid": "Q116215576"
+    },
+    {
+      "title": "Et trop penser",
+      "qid": "Q116246615"
+    },
+    {
+      "title": "Fortuna d'um gran tempo",
+      "qid": "Q116250732"
+    },
+    {
+      "title": "Hellas madame",
+      "qid": "Q116247281"
+    },
+    {
+      "title": "In illo tempore Maria Magdalena",
+      "qid": "Q135653910"
+    },
+    {
+      "title": "In pace in idipsum",
+      "qid": "Q114436671"
+    },
+    {
+      "title": "In pace in idipsum dormiam et requiescam",
+      "qid": "Q116250896"
+    },
+    {
+      "title": "In te Domine speravi, non confundar",
+      "qid": "Q116250734"
+    },
+    {
+      "title": "J'ay bien nouri sept ans ung joly gay",
+      "qid": "Q114888256"
+    },
+    {
+      "title": "Je suis si trescourte",
+      "qid": "Q116250741"
+    },
+    {
+      "title": "Liber generationis Jesu Christi",
+      "qid": "Q116250817"
+    },
+    {
+      "title": "Mille Regretz",
+      "qid": "Q686307",
+      "instruments": [
+        "Soprano",
+        "Alto",
+        "Tenor",
+        "Bass"
+      ],
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=4/pres-des_mille_regretz_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/desprez_mille_regrets_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Miserere",
+      "qid": "Q17025792"
+    },
+    {
+      "title": "Missa \"L'homme armé\" super voces musicales",
+      "qid": "Q3859205"
+    },
+    {
+      "title": "Missa Gaudeamus",
+      "qid": "Q16850889"
+    },
+    {
+      "title": "Missa L'homme armé sexti toni",
+      "qid": "Q3859203"
+    },
+    {
+      "title": "Missa La sol fa re mi",
+      "qid": "Q6878148"
+    },
+    {
+      "title": "Missa Pange lingua",
+      "qid": "Q3859201",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=4/pres-des_missa_pange_lingua_1_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=4/pres-des_missa_pange_lingua_2_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Missa de Beata Virgine",
+      "qid": "Q3859200"
+    },
+    {
+      "title": "Missa sine nomine",
+      "qid": "Q3859207"
+    },
+    {
+      "title": "Missus est Gabriel angelus",
+      "qid": "Q116215873"
+    },
+    {
+      "title": "Nymphes des bois",
+      "qid": "Q1982391",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=4/pres-des_nymphes_des_bois_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "O bone et dulcis domine",
+      "qid": "Q116215885"
+    },
+    {
+      "title": "Osculetur me osculo oris sui quia meliora (= Ecce video caelos apertos 19.2)",
+      "qid": "Q135653973"
+    },
+    {
+      "title": "Paratum cor meum",
+      "qid": "Q116215798"
+    },
+    {
+      "title": "Plus millem regretem",
+      "qid": "Q116215767"
+    },
+    {
+      "title": "Que vous madame/Da pacem",
+      "qid": "Q116250735"
+    },
+    {
+      "title": "Qui habitat",
+      "qid": "Q133278284"
+    },
+    {
+      "title": "Scaramella va alla guerra",
+      "qid": "Q114890408",
+      "key": "F major",
+      "instruments": [
+        "Soprano",
+        "Alto",
+        "Tenor",
+        "Bass"
+      ]
+    },
+    {
+      "title": "Se jay perdiu mon amy",
+      "qid": "Q116215624"
+    },
+    {
+      "title": "Tu solus qui facis mirabilia",
+      "qid": "Q116250733"
+    },
+    {
+      "title": "Tua est potentia tuum regnum Dominus",
+      "qid": "Q135654082"
+    },
+    {
+      "title": "Une musque de buscaye",
+      "qid": "Q116250740"
+    },
+    {
+      "title": "Victime paschali laudes",
+      "qid": "Q116250745"
+    },
+    {
+      "title": "Vivray-je tousjours en telle paine",
+      "qid": "Q135654093"
+    },
+    {
+      "title": "Vultum tuum",
+      "qid": "Q135654106"
+    },
+    {
+      "title": "Missa Da pacem",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/desprez_missa_da_pacem_1_(c)cipoo.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/desprez_missa_da_pacem_2_(c)cipoo.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/desprez_missa_da_pacem_6_(c)cipoo.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/desprez_missa_da_pacem_7_(c)cipoo.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/desprez_missa_da_pacem_8_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kyrie from the Missa de Pacem",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=desprez_kyrie_missa_de_pacem_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Absalon, fili mi *",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=4/pres-des_absalon_fili_mi_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ave vera Virginitas",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=desprez_ave_vera_virginitas_(c)unknown.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ave verum **",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/desprez_ave_verum_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "In flagellis **",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/desprez_in_flagellis_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "O Domine Jesu Christe **",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/desprez_o_domine_jesu_christe_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Vox regis *",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=desprez_vox_regis_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "La Bernardina",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=4/pres-des_la_bernardina_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "El grillo � buon cantore ***",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/desprez_el_grillo_e_buon_cantore_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "En l'ombre d'un buissonnet ***",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/desprez_en_l'ombre_d'un_buissonnet_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Entr� je suis en grant pens�e (In mijnen zin)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=17/pres-des_entre_je_suis_en_gran_pensee_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Les fantazies de Joskin *",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=4/pres-des_les_fantazies_de_joskin_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Quant peulx haver joye ���",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=desprez_quant_peulx_haver_joye_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Recordans de mia signora",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=4/pres-des_recordans_de_mia_signora_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "La Spagne �",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=4/pres-des_la_spagne_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Vive le Roy! ��",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=ancient/des-prez_vive_le_roy_(c)clark.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

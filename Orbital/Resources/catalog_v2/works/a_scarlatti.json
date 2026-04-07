@@ -1,0 +1,295 @@
+{
+  "works": [
+    {
+      "title": "La Giuditta",
+      "qid": "Q5963576"
+    },
+    {
+      "title": "Tu es Petrus",
+      "qid": "Q56312244"
+    },
+    {
+      "title": "Dixit Dominus I",
+      "qid": "Q56312095"
+    },
+    {
+      "title": "Abramo, il tuo sembiante",
+      "qid": "Q5655317"
+    },
+    {
+      "title": "Ad Dominum dum tribularer",
+      "qid": "Q125355968"
+    },
+    {
+      "title": "Agar et Ismaele esiliati",
+      "qid": "Q5659650"
+    },
+    {
+      "title": "Alessandro Scarlatti",
+      "qid": "Q63860043"
+    },
+    {
+      "title": "Arminio",
+      "qid": "Q56308451"
+    },
+    {
+      "title": "Cambise",
+      "qid": "Q48997177"
+    },
+    {
+      "title": "Carlo re d'Allemagna",
+      "qid": "Q56308608"
+    },
+    {
+      "title": "Clori e Mirtillo",
+      "qid": "Q60832182"
+    },
+    {
+      "title": "Colonel Chabert",
+      "qid": "Q1211134"
+    },
+    {
+      "title": "Comodo Antonino",
+      "qid": "Q137839044"
+    },
+    {
+      "title": "Concerti grossi, string orchestra",
+      "qid": "Q56311228"
+    },
+    {
+      "title": "Cor mio deh non languire",
+      "qid": "Q124316713"
+    },
+    {
+      "title": "Curd Cheese",
+      "qid": "Q839019"
+    },
+    {
+      "title": "Davidis pugna et victoria",
+      "qid": "Q5800471"
+    },
+    {
+      "title": "Dixit Dominus",
+      "qid": "Q56311919"
+    },
+    {
+      "title": "Dixit Dominus II",
+      "qid": "Q56312021"
+    },
+    {
+      "title": "Dixit Dominus IV",
+      "qid": "Q56311956"
+    },
+    {
+      "title": "Dixit Dominus, III",
+      "qid": "Q56312058"
+    },
+    {
+      "title": "Erminia",
+      "qid": "Q56314095"
+    },
+    {
+      "title": "Exultate Deo",
+      "qid": "Q125356121",
+      "key": "C major",
+      "instruments": [
+        "Sopran",
+        "Alt",
+        "Tenor",
+        "Bass"
+      ]
+    },
+    {
+      "title": "Gli equivoci in amore",
+      "qid": "Q137839293"
+    },
+    {
+      "title": "Gli equivoci nel sembiante",
+      "qid": "Q5880848"
+    },
+    {
+      "title": "Griselda",
+      "qid": "Q1547049"
+    },
+    {
+      "title": "Humanità e Lucifero",
+      "qid": "Q5904813"
+    },
+    {
+      "title": "Il Dolore di Maria Vergine",
+      "qid": "Q5913823"
+    },
+    {
+      "title": "Il Pompeo",
+      "qid": "Q5996606"
+    },
+    {
+      "title": "Il Sedecia",
+      "qid": "Q5913835"
+    },
+    {
+      "title": "Il martirio di Santa Cecilia",
+      "qid": "Q55855474"
+    },
+    {
+      "title": "Il prigioniero fortunato",
+      "qid": "Q56308548"
+    },
+    {
+      "title": "Il primo omicidio",
+      "qid": "Q56308811"
+    },
+    {
+      "title": "Il trionfo dell'onore",
+      "qid": "Q2296392"
+    },
+    {
+      "title": "L'Arianna",
+      "qid": "Q60832338"
+    },
+    {
+      "title": "L'Assunzione della Beata Vergine",
+      "qid": "Q109380280"
+    },
+    {
+      "title": "L'Eraclea",
+      "qid": "Q56310826"
+    },
+    {
+      "title": "L'Orfeo – Dall'oscura magion dell'arsa Dite",
+      "qid": "Q60832292"
+    },
+    {
+      "title": "L'honestà negli amori",
+      "qid": "Q6455944"
+    },
+    {
+      "title": "La Colpa, Il Pentimento, la Grazia",
+      "qid": "Q5962951"
+    },
+    {
+      "title": "La Giuditta",
+      "qid": "Q5963573"
+    },
+    {
+      "title": "La Maddalena penitente",
+      "qid": "Q5964152"
+    },
+    {
+      "title": "La Rosmene, o vero L'infedeltà fedele",
+      "qid": "Q137839372"
+    },
+    {
+      "title": "La Santissima Annunziata",
+      "qid": "Q5965204"
+    },
+    {
+      "title": "La Santissima Trinità",
+      "qid": "Q5965207"
+    },
+    {
+      "title": "La caduta de' decemviri",
+      "qid": "Q56308558"
+    },
+    {
+      "title": "La concettione della Beata Vergine",
+      "qid": "Q5966282"
+    },
+    {
+      "title": "Laodicea e Berenice",
+      "qid": "Q137839219"
+    },
+    {
+      "title": "Marco Attilio Regolo",
+      "qid": "Q137176356"
+    },
+    {
+      "title": "Messa di Santa Cecilia",
+      "qid": "Q56007558"
+    },
+    {
+      "title": "Mitridate Eupatore",
+      "qid": "Q6882558"
+    },
+    {
+      "title": "Notte ch'in carro d'ombre",
+      "qid": "Q56314595"
+    },
+    {
+      "title": "O morte",
+      "qid": "Q21014157"
+    },
+    {
+      "title": "Passio Domino Nostri Jesu Christi Secundum Johannes",
+      "qid": "Q56308655"
+    },
+    {
+      "title": "Quella pace gradita",
+      "qid": "Q60832280"
+    },
+    {
+      "title": "S. Francesco di Paola oratorio for music performed by the devotees of this Saint in the Church of the Illustrious Community of Urbino, consecrated to him; Dedicated to the Illustrious Signor Gio: Bernardino Peroli most worthy confaloniere",
+      "qid": "Q130271938"
+    },
+    {
+      "title": "Salve Regina",
+      "qid": "Q56312169"
+    },
+    {
+      "title": "Salve Regina",
+      "qid": "Q56312171"
+    },
+    {
+      "title": "Salve Regina",
+      "qid": "Q56312179"
+    },
+    {
+      "title": "Salve Regina",
+      "qid": "Q56312215"
+    },
+    {
+      "title": "Salve Regina",
+      "qid": "Q56312273"
+    },
+    {
+      "title": "San Casimiro, Rè di Polonia",
+      "qid": "Q6118537"
+    },
+    {
+      "title": "San Filippo Neri",
+      "qid": "Q55949624"
+    },
+    {
+      "title": "Sedecia re' di Gerusalemme: Alindo Scirtoniano oratorio set to music by Signor Alessandro Scarlatti. Dedicated to the eminent and most reverend lord Signor Cardinal Sebastiano Antonio Tanari legate of Urbino",
+      "qid": "Q130271779"
+    },
+    {
+      "title": "Sinfonie di concerto grosso",
+      "qid": "Q56311065"
+    },
+    {
+      "title": "Stabat Mater",
+      "qid": "Q3495360"
+    },
+    {
+      "title": "Telemaco",
+      "qid": "Q1393328"
+    },
+    {
+      "title": "Tiberio imperatore d'Oriente",
+      "qid": "Q137839469"
+    },
+    {
+      "title": "Tigrane",
+      "qid": "Q7801694"
+    },
+    {
+      "title": "Tito Sempronio Gracco",
+      "qid": "Q137215986"
+    },
+    {
+      "title": "Turno Aricino",
+      "qid": "Q137839529"
+    }
+  ]
+}

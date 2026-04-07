@@ -1,0 +1,618 @@
+{
+  "works": [
+    {
+      "title": "The Giant",
+      "qid": "Q7736360"
+    },
+    {
+      "title": "Na pustynnikh ostrovakh",
+      "qid": "Q24936832"
+    },
+    {
+      "title": "Undina",
+      "qid": "Q25392849"
+    },
+    {
+      "title": "Piano Sonata No. 1",
+      "qid": "Q745980"
+    },
+    {
+      "title": "Piano Sonata No. 2",
+      "qid": "Q2611334"
+    },
+    {
+      "title": "Toccata",
+      "qid": "Q908855",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/prokofiev_toccata_11_(c)winitzki.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Piano Sonata No. 4",
+      "qid": "Q3132828"
+    },
+    {
+      "title": "Overture on Hebrew Themes",
+      "qid": "Q2740744"
+    },
+    {
+      "title": "The Love for Three Oranges",
+      "qid": "Q907735"
+    },
+    {
+      "title": "Chout",
+      "qid": "Q2964614"
+    },
+    {
+      "title": "Piano Concerto No. 3",
+      "qid": "Q223333"
+    },
+    {
+      "title": "Quintet in G minor",
+      "qid": "Q3414595"
+    },
+    {
+      "title": "The Fiery Angel",
+      "qid": "Q2372929"
+    },
+    {
+      "title": "Sonata for Two Violins",
+      "qid": "Q3490093"
+    },
+    {
+      "title": "Music for Children",
+      "qid": "Q3328800"
+    },
+    {
+      "title": "Romeo and Juliet",
+      "qid": "Q911487"
+    },
+    {
+      "title": "Eugene Onegin",
+      "qid": "Q3060075"
+    },
+    {
+      "title": "Cello Concerto",
+      "qid": "Q2990276"
+    },
+    {
+      "title": "Semyon Kotko",
+      "qid": "Q3132581"
+    },
+    {
+      "title": "String Quartet No. 2",
+      "qid": "Q3413829"
+    },
+    {
+      "title": "War and Peace",
+      "qid": "Q785515"
+    },
+    {
+      "title": "Flute Sonata",
+      "qid": "Q2293104"
+    },
+    {
+      "title": "Piano Sonata No. 9",
+      "qid": "Q2452810"
+    },
+    {
+      "title": "Sonata for Solo Violin",
+      "qid": "Q3490223"
+    },
+    {
+      "title": "Cello Concertino",
+      "qid": "Q2991736"
+    },
+    {
+      "title": "Symphony No. 7",
+      "qid": "Q261098"
+    },
+    {
+      "title": "I Believe in Father Christmas",
+      "qid": "Q1840239"
+    },
+    {
+      "title": "Alexander Nevsky",
+      "qid": "Q118976"
+    },
+    {
+      "title": "Alexander Nevsky",
+      "qid": "Q2541462"
+    },
+    {
+      "title": "Alexander Nevsky, op 78 : [programme]",
+      "qid": "Q82712404",
+      "catalog_numbers": {
+        "Op": "78"
+      }
+    },
+    {
+      "title": "Anna Karenina",
+      "qid": "Q84147"
+    },
+    {
+      "title": "Arise, Russian people!",
+      "qid": "Q4127674"
+    },
+    {
+      "title": "Betrothal in a Monastery",
+      "qid": "Q2629201"
+    },
+    {
+      "title": "Bibigon",
+      "qid": "Q18236548"
+    },
+    {
+      "title": "Boris Godunov",
+      "qid": "Q2910945"
+    },
+    {
+      "title": "Caligula",
+      "qid": "Q217685"
+    },
+    {
+      "title": "Cantata for the 20th Anniversary of the October Revolution",
+      "qid": "Q3655689"
+    },
+    {
+      "title": "Cello Sonata",
+      "qid": "Q3490235"
+    },
+    {
+      "title": "Cinderella",
+      "qid": "Q4193716"
+    },
+    {
+      "title": "Cinderella",
+      "qid": "Q5120428"
+    },
+    {
+      "title": "Divertissement (Prokofiev)",
+      "qid": "Q108367766"
+    },
+    {
+      "title": "Flourish, Mighty Land",
+      "qid": "Q5462025"
+    },
+    {
+      "title": "Four Etudes for Piano",
+      "qid": "Q11884157"
+    },
+    {
+      "title": "Four Pieces for Piano, Op. 3",
+      "qid": "Q3413506",
+      "catalog_numbers": {
+        "Op": "3"
+      }
+    },
+    {
+      "title": "Four Pieces for Piano, Op. 32",
+      "qid": "Q3413499",
+      "catalog_numbers": {
+        "Op": "32"
+      }
+    },
+    {
+      "title": "Four Pieces for Piano, Op. 4 (Prokofiev)",
+      "qid": "Q2204797",
+      "catalog_numbers": {
+        "Op": "4"
+      }
+    },
+    {
+      "title": "Hamlet",
+      "qid": "Q3126474"
+    },
+    {
+      "title": "Happiness Waltz",
+      "qid": "Q138499351"
+    },
+    {
+      "title": "Ivan the Terrible",
+      "qid": "Q4195586"
+    },
+    {
+      "title": "Ivan the Terrible",
+      "qid": "Q4195589"
+    },
+    {
+      "title": "Ivan the Terrible",
+      "qid": "Q20051329"
+    },
+    {
+      "title": "Ivan the Terrible",
+      "qid": "Q116973616"
+    },
+    {
+      "title": "Ivan the Terrible. Part I",
+      "qid": "Q1542476"
+    },
+    {
+      "title": "Ivan the Terrible. Part II",
+      "qid": "Q1436866"
+    },
+    {
+      "title": "Ivan the Terrible. Part III",
+      "qid": "Q3804793"
+    },
+    {
+      "title": "Je suis le seigneur du château",
+      "qid": "Q3163537"
+    },
+    {
+      "title": "Jeu",
+      "qid": "Q6189256"
+    },
+    {
+      "title": "Khan Buzay",
+      "qid": "Q25384214"
+    },
+    {
+      "title": "Kotovsky (film)",
+      "qid": "Q4236251"
+    },
+    {
+      "title": "Le Trapèze",
+      "qid": "Q57392226"
+    },
+    {
+      "title": "Le pas d'acier",
+      "qid": "Q2435952"
+    },
+    {
+      "title": "Lermontov (1943 film)",
+      "qid": "Q15270708"
+    },
+    {
+      "title": "Lieutenant Kijé",
+      "qid": "Q1112886"
+    },
+    {
+      "title": "Lieutenant Kijé",
+      "qid": "Q1821685"
+    },
+    {
+      "title": "Love and Death",
+      "qid": "Q1218888"
+    },
+    {
+      "title": "Maddalena",
+      "qid": "Q3275476"
+    },
+    {
+      "title": "March from 'Love for Three Oranges'",
+      "qid": "Q2114145"
+    },
+    {
+      "title": "Montagues and Capulets",
+      "qid": "Q6904168"
+    },
+    {
+      "title": "On Guard for Peace",
+      "qid": "Q115519789"
+    },
+    {
+      "title": "On the Dnieper",
+      "qid": "Q7091333"
+    },
+    {
+      "title": "Partisans in the Steppes of Ukraine",
+      "qid": "Q28664539"
+    },
+    {
+      "title": "Pensées",
+      "qid": "Q3374866"
+    },
+    {
+      "title": "Peter and the Wolf",
+      "qid": "Q677403"
+    },
+    {
+      "title": "Peter and the Wolf",
+      "qid": "Q1576209"
+    },
+    {
+      "title": "Peter and the Wolf",
+      "qid": "Q3387812"
+    },
+    {
+      "title": "Peter und der Wolf",
+      "qid": "Q106696425"
+    },
+    {
+      "title": "Piano Concerto No. 1",
+      "qid": "Q162911"
+    },
+    {
+      "title": "Piano Concerto No. 2",
+      "qid": "Q210219"
+    },
+    {
+      "title": "Piano Concerto No. 4",
+      "qid": "Q230785"
+    },
+    {
+      "title": "Piano Concerto No. 5",
+      "qid": "Q239689"
+    },
+    {
+      "title": "Piano Concerto No. 6",
+      "qid": "Q2468854"
+    },
+    {
+      "title": "Piano Sonata No. 10",
+      "qid": "Q7190150"
+    },
+    {
+      "title": "Piano Sonata No. 3 in A Minor, Op. 28",
+      "qid": "Q2446873",
+      "catalog_numbers": {
+        "Op": "28"
+      }
+    },
+    {
+      "title": "Piano Sonata No. 5",
+      "qid": "Q1864706"
+    },
+    {
+      "title": "Piano Sonata No. 6",
+      "qid": "Q2955960"
+    },
+    {
+      "title": "Piano Sonata No. 7",
+      "qid": "Q2431843"
+    },
+    {
+      "title": "Piano Sonata No. 8",
+      "qid": "Q2587212"
+    },
+    {
+      "title": "Pushkin Waltzes",
+      "qid": "Q3110046"
+    },
+    {
+      "title": "Romeo + Juliet",
+      "qid": "Q7363069"
+    },
+    {
+      "title": "Romeo and Juliet",
+      "qid": "Q7363131"
+    },
+    {
+      "title": "Russian Violin Concertos",
+      "qid": "Q86236828"
+    },
+    {
+      "title": "Russian Violin Concertos",
+      "qid": "Q104518885"
+    },
+    {
+      "title": "Sarcasms",
+      "qid": "Q3473529"
+    },
+    {
+      "title": "Scythian Suite",
+      "qid": "Q578262"
+    },
+    {
+      "title": "Semyon Kotko",
+      "qid": "Q15990983"
+    },
+    {
+      "title": "Seven, They Are Seven",
+      "qid": "Q7457136"
+    },
+    {
+      "title": "Sinfonietta",
+      "qid": "Q7522545"
+    },
+    {
+      "title": "Sonata for Solo Cello in C-sharp Minor",
+      "qid": "Q49000546"
+    },
+    {
+      "title": "Songs of Our Days",
+      "qid": "Q7561565"
+    },
+    {
+      "title": "Strike",
+      "qid": "Q151177"
+    },
+    {
+      "title": "String Quartet No. 1",
+      "qid": "Q3068986"
+    },
+    {
+      "title": "Suite from Zoluška",
+      "qid": "Q138499339"
+    },
+    {
+      "title": "Symphonic Song",
+      "qid": "Q7661424"
+    },
+    {
+      "title": "Symphony No. 1",
+      "qid": "Q163571"
+    },
+    {
+      "title": "Symphony No. 2",
+      "qid": "Q210556"
+    },
+    {
+      "title": "Symphony No. 3",
+      "qid": "Q223529"
+    },
+    {
+      "title": "Symphony No. 4",
+      "qid": "Q200613"
+    },
+    {
+      "title": "Symphony No. 5",
+      "qid": "Q240271"
+    },
+    {
+      "title": "Symphony No. 6",
+      "qid": "Q246511"
+    },
+    {
+      "title": "Symphony-Concerto",
+      "qid": "Q1814596"
+    },
+    {
+      "title": "Tales of an Old Grandmother",
+      "qid": "Q47146333"
+    },
+    {
+      "title": "Ten Pieces for Piano",
+      "qid": "Q3032591"
+    },
+    {
+      "title": "The Gambler",
+      "qid": "Q1197011"
+    },
+    {
+      "title": "The Glass Slipper",
+      "qid": "Q4501868"
+    },
+    {
+      "title": "The Prodigal Son",
+      "qid": "Q3222845"
+    },
+    {
+      "title": "The Queen of Spades",
+      "qid": "Q25217693"
+    },
+    {
+      "title": "The Rock Peter and the Wolf",
+      "qid": "Q7761260"
+    },
+    {
+      "title": "The Story of a Real Man",
+      "qid": "Q1212967"
+    },
+    {
+      "title": "The Tale of the Stone Flower",
+      "qid": "Q2667531"
+    },
+    {
+      "title": "The Ugly Duckling",
+      "qid": "Q3228128"
+    },
+    {
+      "title": "The Year 1941",
+      "qid": "Q16259675"
+    },
+    {
+      "title": "Three Pieces, Op. 59",
+      "qid": "Q3540034",
+      "catalog_numbers": {
+        "Op": "59"
+      }
+    },
+    {
+      "title": "Three Pieces, Op. 96",
+      "qid": "Q16912506",
+      "catalog_numbers": {
+        "Op": "96"
+      }
+    },
+    {
+      "title": "Trapeze",
+      "qid": "Q7835564"
+    },
+    {
+      "title": "Troïka",
+      "qid": "Q110248785"
+    },
+    {
+      "title": "Troїka",
+      "qid": "Q72324681"
+    },
+    {
+      "title": "Violin Concerto No. 1",
+      "qid": "Q2410502"
+    },
+    {
+      "title": "Violin Concerto No. 2",
+      "qid": "Q2991907"
+    },
+    {
+      "title": "Violin Sonata No. 1 in F Minor, Op. 80",
+      "qid": "Q2457349",
+      "catalog_numbers": {
+        "Op": "80"
+      }
+    },
+    {
+      "title": "Violin Sonata No. 2",
+      "qid": "Q2352641"
+    },
+    {
+      "title": "Visions fugitives",
+      "qid": "Q1340297",
+      "catalog_numbers": {
+        "Op": "22"
+      },
+      "key": "D♭ major",
+      "instruments": [
+        "Piano"
+      ],
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=1/prokofiev_vision_fugitives_22_(c)ungar.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Waltz Suite",
+      "qid": "Q7966827"
+    },
+    {
+      "title": "Winstanley",
+      "qid": "Q8026000"
+    },
+    {
+      "title": "Winter Bonfire",
+      "qid": "Q11395186"
+    },
+    {
+      "title": "Zdravitsa",
+      "qid": "Q8067992"
+    },
+    {
+      "title": "Zoluška",
+      "qid": "Q144545"
+    },
+    {
+      "title": "Sonata No. 2 in d minor, Op. 14 (1912)",
+      "catalog_numbers": {
+        "Op": "14"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=1/prokofiev_sonata_2_14_1_(c)ungar.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=1/prokofiev_sonata_2_14_2_(c)ungar.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=1/prokofiev_sonata_2_14_3_(c)ungar.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=1/prokofiev_sonata_2_14_4_(c)ungar.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

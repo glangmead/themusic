@@ -1,0 +1,188 @@
+{
+  "works": [
+    {
+      "title": "Venetian Night",
+      "qid": "Q107263649"
+    },
+    {
+      "title": "A Life for the Tsar",
+      "qid": "Q94737"
+    },
+    {
+      "title": "The Night Review",
+      "qid": "Q11583019"
+    },
+    {
+      "title": "Waltz-Fantasia",
+      "qid": "Q4103091"
+    },
+    {
+      "title": "Gulf of Finland",
+      "qid": "Q112976708"
+    },
+    {
+      "title": "A Life for the Tsar",
+      "qid": "Q119165600"
+    },
+    {
+      "title": "A farewell to St. Petersburg",
+      "qid": "Q19916067"
+    },
+    {
+      "title": "Grazioso",
+      "qid": "Q5598495"
+    },
+    {
+      "title": "Kamarinskaya",
+      "qid": "Q42191796"
+    },
+    {
+      "title": "Margarite's Song",
+      "qid": "Q112976712"
+    },
+    {
+      "title": "Mother and Son",
+      "qid": "Q2290357"
+    },
+    {
+      "title": "Patrioticheskaya Pesnya",
+      "qid": "Q2058180"
+    },
+    {
+      "title": "Ruslan and Ludmila",
+      "qid": "Q18222154"
+    },
+    {
+      "title": "Ruslan and Lyudmila",
+      "qid": "Q522408",
+      "key": "D major",
+      "instruments": [
+        "Flute",
+        "Oboe",
+        "A Clarinet",
+        "Bassoon",
+        "Contrabassoon",
+        "Horn in A",
+        "Horn in D",
+        "D Trumpet",
+        "Alto Trombone",
+        "Tenor Trombone",
+        "Bass Trombone",
+        "Timpani (D. A. G.)",
+        "Violins (I)",
+        "Violins (II)",
+        "Violas",
+        "Violoncellos",
+        "Contrabasses"
+      ],
+      "year_composed": 1842
+    },
+    {
+      "title": "Slavsya",
+      "qid": "Q16698479"
+    },
+    {
+      "title": "Sonata in D minor",
+      "qid": "Q2310581"
+    },
+    {
+      "title": "String Quartet in D major",
+      "qid": "Q3413766"
+    },
+    {
+      "title": "String Quartet in F major",
+      "qid": "Q3413764"
+    },
+    {
+      "title": "Travel song",
+      "qid": "Q107588365"
+    },
+    {
+      "title": "Trio Pathétique",
+      "qid": "Q3539325"
+    },
+    {
+      "title": "Lalouette (The lark)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-i/glinka_5697d_l'alouette_(the_lark)_(c)chapman.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fugue in E flat major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/glinka_fuge_in_E-flat_major_(cc)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fugue in a minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/glinka_fuge_in_a_minor_(cc)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fugue in D major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/glinka_fuge_in_D_major_(cc)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "6 little Fugues for piano (1833-34?)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/glinka_6a_fugen_(c)simonetto.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/glinka_6b_fugen_(c)simonetto.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/glinka_6c_fugen_(c)simonetto.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/glinka_6d_fugen_(c)simonetto.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/glinka_6e_fugen_(c)simonetto.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/glinka_6f_fugen_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Russian Polka in d minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=glinka_russian_polka_(nc)werths.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

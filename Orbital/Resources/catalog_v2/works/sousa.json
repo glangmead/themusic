@@ -1,0 +1,430 @@
+{
+  "works": [
+    {
+      "title": "Transit of Venus March",
+      "qid": "Q7834374",
+      "key": "G major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1883,
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=venus-transit.krn&l=users/craig/classical/sousa&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Gladiator March",
+      "qid": "Q7736679",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=gladiator.krn&l=users/craig/classical/sousa&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Thunderer",
+      "qid": "Q7769177"
+    },
+    {
+      "title": "High School Cadets",
+      "qid": "Q5756459"
+    },
+    {
+      "title": "Manhattan Beach",
+      "qid": "Q6749234"
+    },
+    {
+      "title": "The Liberty Bell",
+      "qid": "Q2225377",
+      "key": "G major",
+      "year_composed": 1893,
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=liberty-bell.krn&l=users/craig/classical/sousa&format=midi"
+          ]
+        },
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/sousa_2040s_liberty_bell_march_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/sousa_33388s_the_liberty_bell_march_(1893)_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "King Cotton",
+      "qid": "Q6411366",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=kingcotton.krn&l=users/craig/classical/sousa&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "El Capitan",
+      "qid": "Q83671526",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=el-capitan.krn&l=users/craig/classical/sousa&format=midi"
+          ]
+        },
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/sousa_march_medley_95612_s_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Stars and Stripes Forever",
+      "qid": "Q1144182",
+      "key": "E-flat major"
+    },
+    {
+      "title": "Hands Across the Sea",
+      "qid": "Q5647569",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=hands-sea.krn&l=users/craig/classical/sousa&format=midi"
+          ]
+        },
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/sousa_33006s_the_march_king_(ca-1920)_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Semper Fidelis",
+      "qid": "Q7449774",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/sousa_253s_march_king_medley_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Fairest of the Fair",
+      "qid": "Q7733102",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/sousa_1659s_the_fairest_of_the_fair_march_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Liberty Loan March",
+      "qid": "Q21998597"
+    },
+    {
+      "title": "U.S. Field Artillery",
+      "qid": "Q401888"
+    },
+    {
+      "title": "The Gallant Seventh",
+      "qid": "Q7735628"
+    },
+    {
+      "title": "Minnesota March",
+      "qid": "Q6868356"
+    },
+    {
+      "title": "New Mexico March",
+      "qid": "Q123252903"
+    },
+    {
+      "title": "Kansas Wildcats",
+      "qid": "Q16851584"
+    },
+    {
+      "title": "First Family",
+      "qid": "Q1341058"
+    },
+    {
+      "title": "Boy Scouts of America",
+      "qid": "Q110772712"
+    },
+    {
+      "title": "Chris and the Wonderful Lamp",
+      "qid": "Q5108568"
+    },
+    {
+      "title": "Désirée",
+      "qid": "Q5320267"
+    },
+    {
+      "title": "El Capitan",
+      "qid": "Q5350925"
+    },
+    {
+      "title": "Histeria!",
+      "qid": "Q3493339"
+    },
+    {
+      "title": "Nobles of the Mystic Shrine",
+      "qid": "Q110720778"
+    },
+    {
+      "title": "Solid Men to the Front",
+      "qid": "Q137380164"
+    },
+    {
+      "title": "Stars and Stripes",
+      "qid": "Q56458413",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/sousa_1168s_star_and_stripes_march_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Teddy & Alice",
+      "qid": "Q7693963"
+    },
+    {
+      "title": "The American Maid",
+      "qid": "Q136450777"
+    },
+    {
+      "title": "The Black Horse Troop",
+      "qid": "Q125867330"
+    },
+    {
+      "title": "The Dauntless Battalion",
+      "qid": "Q115820663"
+    },
+    {
+      "title": "The Golden Age of Ballooning",
+      "qid": "Q1573598"
+    },
+    {
+      "title": "The Royal Welch Fusiliers",
+      "qid": "Q25218117"
+    },
+    {
+      "title": "The Washington Post",
+      "qid": "Q2524763",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/sousa_89845s_washington_post_march_(1890)_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/sousa_53834a_washington_post_march_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Invincible Eagle March",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=invincible-eagle.krn&l=users/craig/classical/sousa&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Hail to the Spirit of Liberty",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=spirit-liberty.krn&l=users/craig/classical/sousa&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Stars and Strips Forever March",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=stars-stripes.krn&l=users/craig/classical/sousa&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Washington Post March",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=washington-post.krn&l=users/craig/classical/sousa&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The bridge elect",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/sousa_09143s_the_bride_elect_march_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sabre and Spurs March (March of the American Cavalry)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/sousa_1665s_sabre_and_spurs_march_(1918)_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The charlatan March",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/sousa_30098s_the_charlatan_march_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Manhatten March �",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/sousa_30099s_manhatten_march_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Hands across the Sea",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SousaJP/HandsacrosstheSea/HandsacrosstheSea.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Gladiator",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SousaJP/TheGladiator/TheGladiator.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Invincible Eagle",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SousaJP/TheInvincibleEagle/TheInvincibleEagle.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Liberty Bell March",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/SousaJP/TheLibertyBell/TheLibertyBell.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

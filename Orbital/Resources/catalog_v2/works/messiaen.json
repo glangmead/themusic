@@ -1,0 +1,279 @@
+{
+  "works": [
+    {
+      "title": "Preludes for piano",
+      "qid": "Q3142919"
+    },
+    {
+      "title": "Poèmes pour Mi",
+      "qid": "Q179362"
+    },
+    {
+      "title": "O sacrum convivium!",
+      "qid": "Q96397044"
+    },
+    {
+      "title": "Chants de Terre et de Ciel",
+      "qid": "Q2956425"
+    },
+    {
+      "title": "Le merle noir",
+      "qid": "Q300906"
+    },
+    {
+      "title": "Oiseaux exotiques",
+      "qid": "Q3349968"
+    },
+    {
+      "title": "La Transfiguration de Notre Seigneur Jésus-Christ",
+      "qid": "Q3213247"
+    },
+    {
+      "title": "Des Canyons aux étoiles...",
+      "qid": "Q3024076"
+    },
+    {
+      "title": "Bruno Reidal, Confession of a Murderer",
+      "qid": "Q107515879"
+    },
+    {
+      "title": "Cantéyodjayâ",
+      "qid": "Q2936894"
+    },
+    {
+      "title": "Catalogue d'oiseaux",
+      "qid": "Q2941632"
+    },
+    {
+      "title": "Couleurs de la Cité céleste",
+      "qid": "Q2998795"
+    },
+    {
+      "title": "Et exspecto resurrectionem mortuorum",
+      "qid": "Q3059136"
+    },
+    {
+      "title": "Fête des belles eaux",
+      "qid": "Q17004449"
+    },
+    {
+      "title": "L'Ascension",
+      "qid": "Q3202426"
+    },
+    {
+      "title": "L'ascension",
+      "qid": "Q3202428"
+    },
+    {
+      "title": "La Dame de Shalott",
+      "qid": "Q3822007"
+    },
+    {
+      "title": "La Fauvette des jardins",
+      "qid": "Q3208656"
+    },
+    {
+      "title": "La Nativité du Seigneur",
+      "qid": "Q911776"
+    },
+    {
+      "title": "Le Banquet Céleste",
+      "qid": "Q1809716"
+    },
+    {
+      "title": "Les Corps Glorieux",
+      "qid": "Q1820491",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=messiaen_les_corps_glorieux_1_(winitzki).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Les Offrandes oubliées",
+      "qid": "Q3234322"
+    },
+    {
+      "title": "Livre d'orgue",
+      "qid": "Q3257231"
+    },
+    {
+      "title": "Livre du Saint-Sacrement",
+      "qid": "Q3224028"
+    },
+    {
+      "title": "Messe de la Pentecôte",
+      "qid": "Q3307005"
+    },
+    {
+      "title": "Méditations sur le Mystère de la Sainte Trinité",
+      "qid": "Q3332678"
+    },
+    {
+      "title": "Petites esquisses d'oiseaux",
+      "qid": "Q3377461"
+    },
+    {
+      "title": "Quatre Études de rythme",
+      "qid": "Q3413527"
+    },
+    {
+      "title": "Quatuor pour la fin du temps",
+      "qid": "Q1683795",
+      "key": "E major",
+      "instruments": [
+        "Violino"
+      ],
+      "year_composed": 1941
+    },
+    {
+      "title": "Réveil des oiseaux",
+      "qid": "Q3458217"
+    },
+    {
+      "title": "Saint François d'Assise",
+      "qid": "Q2605813"
+    },
+    {
+      "title": "Sept haïkaï",
+      "qid": "Q3478915"
+    },
+    {
+      "title": "Thème et variations",
+      "qid": "Q775508"
+    },
+    {
+      "title": "Trois Petites Liturgies de la Présence Divine",
+      "qid": "Q3540024"
+    },
+    {
+      "title": "Turangalîla-Symphonie",
+      "qid": "Q1471867"
+    },
+    {
+      "title": "Um Adeus Português",
+      "qid": "Q1305640"
+    },
+    {
+      "title": "Vingt Regards sur l'enfant-Jésus",
+      "qid": "Q1365071"
+    },
+    {
+      "title": "Visions de l'Amen",
+      "qid": "Q3561058"
+    },
+    {
+      "title": "Éclairs sur l'au-delà...",
+      "qid": "Q273423"
+    },
+    {
+      "title": "Le banquet c�leste (1926)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=messiaen_le_banquet_celeste_(winitzki).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Apparition de lEglise �ternelle (Vision of the Eternal Church) (1931)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=messiaen_apparition_de_eglise_eternelle_(winitzki).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Part I: Of life on earth, with all its fruitless agitation",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=messiaen_diptyque_part_I_(winitzki).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Part II: Of Paradise",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=messiaen_diptyque_part_II_(winitzki).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Part VI: Les Anges *",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=messiaen_la_nativite_du_seigneur_6_(winitzki).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Part VI: Les Anges",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=messiaen_la_nativite_du_seigneur_6_(c)mccoy.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Part VIII: Les Mages",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=messiaen_la_nativite_du_seigneur_8_(c)mccoy.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Part VII: Le Myst�re de la Sainte Trinit�",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=messiaen_les_corps_glorieux_7_(winitzki).mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

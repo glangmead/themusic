@@ -1,0 +1,632 @@
+{
+  "works": [
+    {
+      "title": "Two Pieces for Piano",
+      "qid": "Q134938307"
+    },
+    {
+      "title": "Trio for Piano, Clarinet, and Violin",
+      "qid": "Q112624700"
+    },
+    {
+      "title": "Piano Concerto",
+      "qid": "Q2689121"
+    },
+    {
+      "title": "Masquerade",
+      "qid": "Q2896795"
+    },
+    {
+      "title": "Sabre Dance",
+      "qid": "Q1442972"
+    },
+    {
+      "title": "Festive Poem",
+      "qid": "Q111846055"
+    },
+    {
+      "title": "Piano Sonata",
+      "qid": "Q111659769"
+    },
+    {
+      "title": "Masquerade",
+      "qid": "Q4283835"
+    },
+    {
+      "title": "2001: A Space Odyssey",
+      "qid": "Q103474"
+    },
+    {
+      "title": "About Him or How He Did Not Fear the Bear",
+      "qid": "Q61642192"
+    },
+    {
+      "title": "Adagio from Gayane",
+      "qid": "Q62057343"
+    },
+    {
+      "title": "Adagio from Spartacus",
+      "qid": "Q134941150"
+    },
+    {
+      "title": "Admiral Ushakov",
+      "qid": "Q4057877"
+    },
+    {
+      "title": "Admiral Ushakov",
+      "qid": "Q134933062"
+    },
+    {
+      "title": "Adventures of Ivan",
+      "qid": "Q134933055"
+    },
+    {
+      "title": "Aegina's Dance",
+      "qid": "Q134941447"
+    },
+    {
+      "title": "Album for Children",
+      "qid": "Q134933137"
+    },
+    {
+      "title": "Album for Children No. 1",
+      "qid": "Q134933128"
+    },
+    {
+      "title": "Album for Children No. 2",
+      "qid": "Q134933131"
+    },
+    {
+      "title": "Anthem of the Armenian Soviet Socialist Republic",
+      "qid": "Q45636"
+    },
+    {
+      "title": "Armenian Film-Concert",
+      "qid": "Q20507951"
+    },
+    {
+      "title": "Attack from the Sea",
+      "qid": "Q4232603"
+    },
+    {
+      "title": "Attack from the Sea",
+      "qid": "Q134935300"
+    },
+    {
+      "title": "Ballad About the Motherland",
+      "qid": "Q111659767"
+    },
+    {
+      "title": "Berceuse",
+      "qid": "Q134933099"
+    },
+    {
+      "title": "Bonfire of Immortality",
+      "qid": "Q108748284"
+    },
+    {
+      "title": "Caligula",
+      "qid": "Q217685"
+    },
+    {
+      "title": "Cello Concerto",
+      "qid": "Q5058295"
+    },
+    {
+      "title": "Concert Rhapsody for Cello and Orchestra",
+      "qid": "Q134934663"
+    },
+    {
+      "title": "Concert Rhapsody for Piano and Orchestra",
+      "qid": "Q2329278"
+    },
+    {
+      "title": "Concerto Rhapsody for Violin and Orchestra",
+      "qid": "Q1942760"
+    },
+    {
+      "title": "Cradle Song",
+      "qid": "Q134934277"
+    },
+    {
+      "title": "Dance",
+      "qid": "Q134938780"
+    },
+    {
+      "title": "Dance Suite",
+      "qid": "Q111659960"
+    },
+    {
+      "title": "Dance for Piano",
+      "qid": "Q134933117"
+    },
+    {
+      "title": "Dance for Violin and Piano (1925)",
+      "qid": "Q134933110"
+    },
+    {
+      "title": "Dance for Violin and Piano (1926)",
+      "qid": "Q134933113"
+    },
+    {
+      "title": "Dance of an Egyptian Girl",
+      "qid": "Q134941491"
+    },
+    {
+      "title": "Dance of the Gaditanae",
+      "qid": "Q134941560"
+    },
+    {
+      "title": "Dance of the Nymphs",
+      "qid": "Q134941624"
+    },
+    {
+      "title": "Devastated Home",
+      "qid": "Q134939585"
+    },
+    {
+      "title": "Double Fugue",
+      "qid": "Q134933144"
+    },
+    {
+      "title": "Dream for Cello and Piano",
+      "qid": "Q134939764"
+    },
+    {
+      "title": "Duel",
+      "qid": "Q4368545"
+    },
+    {
+      "title": "Elegy",
+      "qid": "Q134933212"
+    },
+    {
+      "title": "Fairy-tales from Faraway Countries",
+      "qid": "Q134935853"
+    },
+    {
+      "title": "Flute Concerto",
+      "qid": "Q111659771"
+    },
+    {
+      "title": "Fugue",
+      "qid": "Q134939703"
+    },
+    {
+      "title": "Gayane",
+      "qid": "Q134937535"
+    },
+    {
+      "title": "Gayane",
+      "qid": "Q539437"
+    },
+    {
+      "title": "Girl No. 217",
+      "qid": "Q2071987"
+    },
+    {
+      "title": "Great Mourning",
+      "qid": "Q23900067"
+    },
+    {
+      "title": "Guard's March",
+      "qid": "Q134958058"
+    },
+    {
+      "title": "Happiness",
+      "qid": "Q134940221"
+    },
+    {
+      "title": "In Memoriam Yakov Kreizberg",
+      "qid": "Q86520095"
+    },
+    {
+      "title": "In Memory of the Heroes",
+      "qid": "Q134934111"
+    },
+    {
+      "title": "Khatabala",
+      "qid": "Q134934196"
+    },
+    {
+      "title": "King Lear",
+      "qid": "Q134935420"
+    },
+    {
+      "title": "Lermontov",
+      "qid": "Q134935572"
+    },
+    {
+      "title": "Lermontov Suite",
+      "qid": "Q111659775"
+    },
+    {
+      "title": "Lezginka",
+      "qid": "Q134958376"
+    },
+    {
+      "title": "Light over Russia",
+      "qid": "Q21148923"
+    },
+    {
+      "title": "Macbeth",
+      "qid": "Q134935665"
+    },
+    {
+      "title": "March of Komsomol Seamen",
+      "qid": "Q134934350"
+    },
+    {
+      "title": "March of Zangezur",
+      "qid": "Q111659958"
+    },
+    {
+      "title": "March of the Soviet Militia",
+      "qid": "Q134935984"
+    },
+    {
+      "title": "Masquerade",
+      "qid": "Q18635027",
+      "instruments": [
+        "Viola",
+        "Piano"
+      ]
+    },
+    {
+      "title": "Military March No. 1",
+      "qid": "Q134939047"
+    },
+    {
+      "title": "Military March No. 2",
+      "qid": "Q134939060"
+    },
+    {
+      "title": "My Motherland",
+      "qid": "Q134958456"
+    },
+    {
+      "title": "Nocturne from Masquerade",
+      "qid": "Q134936508"
+    },
+    {
+      "title": "O My Garden",
+      "qid": "Q134940133"
+    },
+    {
+      "title": "Ode to Joy",
+      "qid": "Q111659959"
+    },
+    {
+      "title": "Ode to the Memory of Vladimir Ilyich Lenin",
+      "qid": "Q111659778"
+    },
+    {
+      "title": "Off to School Tomorrow",
+      "qid": "Q134958506"
+    },
+    {
+      "title": "Oriental Dentist",
+      "qid": "Q134958492"
+    },
+    {
+      "title": "Othello",
+      "qid": "Q134936712"
+    },
+    {
+      "title": "Othello",
+      "qid": "Q2250645"
+    },
+    {
+      "title": "Pepo",
+      "qid": "Q134937832"
+    },
+    {
+      "title": "Pepo",
+      "qid": "Q2064122"
+    },
+    {
+      "title": "Piano Sonata (1976 version)",
+      "qid": "Q134940675"
+    },
+    {
+      "title": "Piano Sonatina",
+      "qid": "Q111659770"
+    },
+    {
+      "title": "Piece for Cello and Piano",
+      "qid": "Q134938539"
+    },
+    {
+      "title": "Poem (1925)",
+      "qid": "Q134939209"
+    },
+    {
+      "title": "Poem (1926)",
+      "qid": "Q134939315"
+    },
+    {
+      "title": "Poem (1927)",
+      "qid": "Q134939192"
+    },
+    {
+      "title": "Poem to Stalin",
+      "qid": "Q111659768"
+    },
+    {
+      "title": "Prelude for Guitar",
+      "qid": "Q134939520"
+    },
+    {
+      "title": "Russian Fantasy",
+      "qid": "Q111659776"
+    },
+    {
+      "title": "Russian Violin Concertos",
+      "qid": "Q86236828"
+    },
+    {
+      "title": "Russian Violin Concertos",
+      "qid": "Q104518885"
+    },
+    {
+      "title": "Salavat Yulayev",
+      "qid": "Q7403723"
+    },
+    {
+      "title": "Saltanat",
+      "qid": "Q13172700"
+    },
+    {
+      "title": "Salutatory Overture",
+      "qid": "Q113877451"
+    },
+    {
+      "title": "Scene and Dance with Crotala",
+      "qid": "Q134941663"
+    },
+    {
+      "title": "Secret Mission",
+      "qid": "Q4413295"
+    },
+    {
+      "title": "Seven Recitatives and Fugues",
+      "qid": "Q134939663"
+    },
+    {
+      "title": "Solemn Fanfares",
+      "qid": "Q134958424"
+    },
+    {
+      "title": "Solemn Poem",
+      "qid": "Q134958426"
+    },
+    {
+      "title": "Sonata for Violin and Piano",
+      "qid": "Q134940530"
+    },
+    {
+      "title": "Sonata-Fantasia for Cello",
+      "qid": "Q134940377"
+    },
+    {
+      "title": "Sonata-Monologue for Violin",
+      "qid": "Q134940432"
+    },
+    {
+      "title": "Sonata-Song for Viola",
+      "qid": "Q134940478"
+    },
+    {
+      "title": "Song of Komsomol Miners",
+      "qid": "Q134934423"
+    },
+    {
+      "title": "Song of the Black Sea Navy",
+      "qid": "Q134938124"
+    },
+    {
+      "title": "Song-Poem for Violin and Piano",
+      "qid": "Q134937988"
+    },
+    {
+      "title": "Spartacus",
+      "qid": "Q2016644"
+    },
+    {
+      "title": "Spartacus",
+      "qid": "Q16389836"
+    },
+    {
+      "title": "Spartacus",
+      "qid": "Q111659773"
+    },
+    {
+      "title": "Spartacus (2016-2017)",
+      "qid": "Q57508150"
+    },
+    {
+      "title": "Spring Yerevan",
+      "qid": "Q134933907"
+    },
+    {
+      "title": "Suite for Viola and Piano",
+      "qid": "Q134958063"
+    },
+    {
+      "title": "Suite from Gayane No. 1",
+      "qid": "Q62057311"
+    },
+    {
+      "title": "Suite from Gayane No. 2",
+      "qid": "Q134933356"
+    },
+    {
+      "title": "Suite from Gayane No. 3",
+      "qid": "Q134933365"
+    },
+    {
+      "title": "Suite from King Lear",
+      "qid": "Q134935507"
+    },
+    {
+      "title": "Suite from Macbeth",
+      "qid": "Q134935750"
+    },
+    {
+      "title": "Suite from Masquerade",
+      "qid": "Q134936176"
+    },
+    {
+      "title": "Suite from Othello",
+      "qid": "Q134936858"
+    },
+    {
+      "title": "Suite from Spartacus No. 1",
+      "qid": "Q134941234"
+    },
+    {
+      "title": "Suite from Spartacus No. 2",
+      "qid": "Q134941239"
+    },
+    {
+      "title": "Suite from Spartacus No. 3",
+      "qid": "Q134941243"
+    },
+    {
+      "title": "Suite from Spartacus No. 4",
+      "qid": "Q134941249"
+    },
+    {
+      "title": "Suite from The Valencian Widow",
+      "qid": "Q111659961"
+    },
+    {
+      "title": "Suites from Gayane",
+      "qid": "Q134933471"
+    },
+    {
+      "title": "Suites from Spartacus",
+      "qid": "Q134941219"
+    },
+    {
+      "title": "Symphonic Pictures from the Ballet Spartacus",
+      "qid": "Q134958069"
+    },
+    {
+      "title": "Symphony No. 1",
+      "qid": "Q3507649"
+    },
+    {
+      "title": "Symphony No. 2",
+      "qid": "Q210488"
+    },
+    {
+      "title": "Symphony No. 3",
+      "qid": "Q3507769"
+    },
+    {
+      "title": "The Battle of Stalingrad",
+      "qid": "Q134958029"
+    },
+    {
+      "title": "The Battle of Stalingrad",
+      "qid": "Q4439207"
+    },
+    {
+      "title": "The Battle of Stalingrad Suite",
+      "qid": "Q134958048"
+    },
+    {
+      "title": "The Garden",
+      "qid": "Q134940031"
+    },
+    {
+      "title": "The Garden",
+      "qid": "Q134940081"
+    },
+    {
+      "title": "The Onedin Line",
+      "qid": "Q748615"
+    },
+    {
+      "title": "The Russian Question",
+      "qid": "Q4400743"
+    },
+    {
+      "title": "The Valencian Widow",
+      "qid": "Q134958476"
+    },
+    {
+      "title": "They Have a Motherland",
+      "qid": "Q134958448"
+    },
+    {
+      "title": "They Have a Motherland",
+      "qid": "Q4468255"
+    },
+    {
+      "title": "Three Concert Arias",
+      "qid": "Q111659962"
+    },
+    {
+      "title": "Three Pieces for Two Pianos",
+      "qid": "Q134938336"
+    },
+    {
+      "title": "To the Heroes of the Patriotic War",
+      "qid": "Q134934004"
+    },
+    {
+      "title": "Toccata",
+      "qid": "Q7811958"
+    },
+    {
+      "title": "Two Pieces for Harp",
+      "qid": "Q134938615"
+    },
+    {
+      "title": "Two Pieces on Themes from Armenian Folk Songs",
+      "qid": "Q134933148"
+    },
+    {
+      "title": "Two Pieces on Themes from Uzbek Folk Songs",
+      "qid": "Q134933150"
+    },
+    {
+      "title": "Uncle Baghdasar",
+      "qid": "Q134933141"
+    },
+    {
+      "title": "Uzun Dara",
+      "qid": "Q134937646"
+    },
+    {
+      "title": "Violin Concerto",
+      "qid": "Q2282646"
+    },
+    {
+      "title": "Vladimir Ilich Lenin",
+      "qid": "Q4113048"
+    },
+    {
+      "title": "Vocalise for Piano",
+      "qid": "Q134958488"
+    },
+    {
+      "title": "Waiting for You",
+      "qid": "Q134958509"
+    },
+    {
+      "title": "Waltz-Caprice",
+      "qid": "Q134938772"
+    },
+    {
+      "title": "Zangezur",
+      "qid": "Q134958496"
+    },
+    {
+      "title": "Zangezur",
+      "qid": "Q2559432"
+    }
+  ]
+}

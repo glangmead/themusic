@@ -1,0 +1,35 @@
+{
+  "works": [
+    {
+      "title": "Bist du bei mir",
+      "qid": "Q2904769",
+      "instruments": [
+        "Clarinet in Eb",
+        "Clarinet in Bb 1",
+        "Clarinet in Bb 2",
+        "Clarinet in Bb 3",
+        "Bass Clarinet",
+        "Alto Sax 1",
+        "Alto Sax. 2",
+        "Tenor Saxophone",
+        "Baritone Saxophone",
+        "Horn in F 1-2",
+        "Horn in F 3-4",
+        "Trumpet 1",
+        "Trumpet 2",
+        "Trumpet 3",
+        "Trombone 1",
+        "Trombone 2",
+        "Bass Trombone",
+        "Euphonium Bb",
+        "Tuba",
+        "Timpani",
+        "Glockenspiel"
+      ]
+    },
+    {
+      "title": "Deutsche Messe",
+      "qid": "Q114566020"
+    }
+  ]
+}

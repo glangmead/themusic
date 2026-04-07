@@ -1,0 +1,782 @@
+{
+  "works": [
+    {
+      "title": "Star Tours",
+      "qid": "Q2251688"
+    },
+    {
+      "title": "Indiana Jones Adventure",
+      "qid": "Q3150108"
+    },
+    {
+      "title": "1941",
+      "qid": "Q207482"
+    },
+    {
+      "title": "A Guide for the Married Man",
+      "qid": "Q847422"
+    },
+    {
+      "title": "A.I. Artificial Intelligence",
+      "qid": "Q221113"
+    },
+    {
+      "title": "Across the Stars",
+      "qid": "Q65148385"
+    },
+    {
+      "title": "Air and Simple Gifts",
+      "qid": "Q4698284"
+    },
+    {
+      "title": "Alcoa Premiere",
+      "qid": "Q1248059"
+    },
+    {
+      "title": "All the Money in the World",
+      "qid": "Q30321629"
+    },
+    {
+      "title": "Always",
+      "qid": "Q449743"
+    },
+    {
+      "title": "American Journey",
+      "qid": "Q19872214"
+    },
+    {
+      "title": "Amistad",
+      "qid": "Q472361",
+      "key": "D major",
+      "instruments": [
+        "B♭ Cornet"
+      ],
+      "year_composed": 1997
+    },
+    {
+      "title": "Angela's Ashes",
+      "qid": "Q1211143"
+    },
+    {
+      "title": "Bachelor Flat",
+      "qid": "Q4838754"
+    },
+    {
+      "title": "Battle of the Heroes",
+      "qid": "Q4872929"
+    },
+    {
+      "title": "Because They're Young",
+      "qid": "Q4878486"
+    },
+    {
+      "title": "Black Sunday",
+      "qid": "Q1298893"
+    },
+    {
+      "title": "Bob Hope Presents the Chrysler Theatre",
+      "qid": "Q1565710"
+    },
+    {
+      "title": "Born on the Fourth of July",
+      "qid": "Q471159"
+    },
+    {
+      "title": "Catch Me If You Can",
+      "qid": "Q208108"
+    },
+    {
+      "title": "Cinderella Liberty",
+      "qid": "Q1404916"
+    },
+    {
+      "title": "Classic Creatures: Return of the Jedi",
+      "qid": "Q5128131"
+    },
+    {
+      "title": "Close Encounters of the Third Kind",
+      "qid": "Q320588"
+    },
+    {
+      "title": "Concerto for Cello and Orchestra",
+      "qid": "Q68029248"
+    },
+    {
+      "title": "Concerto for Oboe and Orchestra",
+      "qid": "Q15991016"
+    },
+    {
+      "title": "Concerto for violon n° 1 by John Williams",
+      "qid": "Q2991889"
+    },
+    {
+      "title": "Conrack",
+      "qid": "Q3280335"
+    },
+    {
+      "title": "Daddy's Gone A-Hunting",
+      "qid": "Q3206847"
+    },
+    {
+      "title": "Daddy-O",
+      "qid": "Q2251313"
+    },
+    {
+      "title": "Dear Basketball",
+      "qid": "Q47486990"
+    },
+    {
+      "title": "Diamond Head",
+      "qid": "Q1138626"
+    },
+    {
+      "title": "Disclosure Day",
+      "qid": "Q126683577"
+    },
+    {
+      "title": "Dr. Dolittle: Tail to the Chief",
+      "qid": "Q2735673"
+    },
+    {
+      "title": "Dracula",
+      "qid": "Q568123"
+    },
+    {
+      "title": "Duality",
+      "qid": "Q5310259"
+    },
+    {
+      "title": "Duel of the Fates",
+      "qid": "Q5312193"
+    },
+    {
+      "title": "E.T. the Extra-Terrestrial",
+      "qid": "Q11621"
+    },
+    {
+      "title": "E.T.: A Holiday Reunion",
+      "qid": "Q96203212"
+    },
+    {
+      "title": "Earthquake",
+      "qid": "Q500280"
+    },
+    {
+      "title": "Empire of Dreams",
+      "qid": "Q5374194"
+    },
+    {
+      "title": "Empire of the Sun",
+      "qid": "Q271281"
+    },
+    {
+      "title": "Family Plot",
+      "qid": "Q47296"
+    },
+    {
+      "title": "Far and Away",
+      "qid": "Q839341"
+    },
+    {
+      "title": "Fiddler on the Roof",
+      "qid": "Q934036"
+    },
+    {
+      "title": "Fitzwilly",
+      "qid": "Q3825436"
+    },
+    {
+      "title": "Gidget Goes to Rome",
+      "qid": "Q5559694"
+    },
+    {
+      "title": "Great Performances",
+      "qid": "Q5599745"
+    },
+    {
+      "title": "Harry Potter",
+      "qid": "Q216930"
+    },
+    {
+      "title": "Harry Potter and the Chamber of Secrets",
+      "qid": "Q102244"
+    },
+    {
+      "title": "Harry Potter and the Philosopher's Stone",
+      "qid": "Q102438"
+    },
+    {
+      "title": "Harry Potter and the Prisoner of Azkaban",
+      "qid": "Q102448"
+    },
+    {
+      "title": "Heartbeeps",
+      "qid": "Q2317367"
+    },
+    {
+      "title": "Hedwig's Theme",
+      "qid": "Q3129339"
+    },
+    {
+      "title": "Heidi",
+      "qid": "Q5698794"
+    },
+    {
+      "title": "Home Alone",
+      "qid": "Q105031"
+    },
+    {
+      "title": "Home Alone 2: Lost in New York",
+      "qid": "Q221202"
+    },
+    {
+      "title": "Hook",
+      "qid": "Q646389"
+    },
+    {
+      "title": "Horn Concerto",
+      "qid": "Q5903904"
+    },
+    {
+      "title": "How to Steal a Million",
+      "qid": "Q658847"
+    },
+    {
+      "title": "Hymn to the Fallen",
+      "qid": "Q130246565"
+    },
+    {
+      "title": "I Passed for White",
+      "qid": "Q5978709"
+    },
+    {
+      "title": "Images",
+      "qid": "Q2259762"
+    },
+    {
+      "title": "Indiana Jones",
+      "qid": "Q98018448"
+    },
+    {
+      "title": "Indiana Jones and the Dial of Destiny",
+      "qid": "Q24278982"
+    },
+    {
+      "title": "Indiana Jones and the Kingdom of the Crystal Skull",
+      "qid": "Q182373"
+    },
+    {
+      "title": "Indiana Jones and the Last Crusade",
+      "qid": "Q185658"
+    },
+    {
+      "title": "Indiana Jones and the Temple of Doom",
+      "qid": "Q179215"
+    },
+    {
+      "title": "JFK",
+      "qid": "Q741823"
+    },
+    {
+      "title": "Jane Eyre",
+      "qid": "Q1611248"
+    },
+    {
+      "title": "Jaws",
+      "qid": "Q189505"
+    },
+    {
+      "title": "Jaws 2",
+      "qid": "Q1199834"
+    },
+    {
+      "title": "Jaws 2",
+      "qid": "Q126726896"
+    },
+    {
+      "title": "John Goldfarb, Please Come Home!",
+      "qid": "Q2080652"
+    },
+    {
+      "title": "Jurassic Park",
+      "qid": "Q167726",
+      "key": "G major",
+      "instruments": [
+        "B♭ Trumpet",
+        "Horn in F",
+        "Trombone"
+      ],
+      "year_composed": 1993
+    },
+    {
+      "title": "Jurassic Park",
+      "qid": "Q2336369"
+    },
+    {
+      "title": "Jurassic Park",
+      "qid": "Q3811376"
+    },
+    {
+      "title": "Jurassic Park 3D",
+      "qid": "Q18276472"
+    },
+    {
+      "title": "Kraft Suspense Theatre",
+      "qid": "Q3128559"
+    },
+    {
+      "title": "Laugh It Up, Fuzzball: The Family Guy Trilogy",
+      "qid": "Q10858522"
+    },
+    {
+      "title": "Lego Star Wars III: The Clone Wars",
+      "qid": "Q55228"
+    },
+    {
+      "title": "Lego Star Wars: Droid Tales",
+      "qid": "Q19605592"
+    },
+    {
+      "title": "Lego Star Wars: The Force Awakens",
+      "qid": "Q22570384"
+    },
+    {
+      "title": "Lego Star Wars: The Yoda Chronicles",
+      "qid": "Q6518523"
+    },
+    {
+      "title": "Liberty Fanfare",
+      "qid": "Q6541709"
+    },
+    {
+      "title": "Lincoln",
+      "qid": "Q32433"
+    },
+    {
+      "title": "Lost in Space",
+      "qid": "Q536137"
+    },
+    {
+      "title": "Meet the Press",
+      "qid": "Q1543066"
+    },
+    {
+      "title": "Memoirs of a Geisha",
+      "qid": "Q45839"
+    },
+    {
+      "title": "Midway",
+      "qid": "Q1708667"
+    },
+    {
+      "title": "Minority Report",
+      "qid": "Q244604"
+    },
+    {
+      "title": "Monsignor",
+      "qid": "Q1615696"
+    },
+    {
+      "title": "Munich",
+      "qid": "Q152456"
+    },
+    {
+      "title": "NBC News at Sunrise",
+      "qid": "Q6952780"
+    },
+    {
+      "title": "NBC Nightly News",
+      "qid": "Q594503"
+    },
+    {
+      "title": "NBC Nightly News Weekend Edition",
+      "qid": "Q111700347"
+    },
+    {
+      "title": "NBC Sunday Night Football",
+      "qid": "Q6952794"
+    },
+    {
+      "title": "Nice to Be Around",
+      "qid": "Q124352153"
+    },
+    {
+      "title": "Nixon",
+      "qid": "Q839042"
+    },
+    {
+      "title": "None But the Brave",
+      "qid": "Q1195274"
+    },
+    {
+      "title": "Not with My Wife, You Don't!",
+      "qid": "Q846987"
+    },
+    {
+      "title": "Olympic Fanfare and Theme",
+      "qid": "Q112052379"
+    },
+    {
+      "title": "Paranormal Activity: The Marked Ones",
+      "qid": "Q15120318"
+    },
+    {
+      "title": "Penelope",
+      "qid": "Q3036314"
+    },
+    {
+      "title": "Pete 'n' Tillie",
+      "qid": "Q3376986"
+    },
+    {
+      "title": "Presumed Innocent",
+      "qid": "Q777629"
+    },
+    {
+      "title": "Raiders March",
+      "qid": "Q66123846"
+    },
+    {
+      "title": "Raiders of the Lost Ark",
+      "qid": "Q174284"
+    },
+    {
+      "title": "Raiders of the Lost Ark: The Adaptation",
+      "qid": "Q6098296"
+    },
+    {
+      "title": "Return of the Ewok",
+      "qid": "Q7317215"
+    },
+    {
+      "title": "Rosewood",
+      "qid": "Q3442609"
+    },
+    {
+      "title": "SP FX: The Empire Strikes Back",
+      "qid": "Q7392707"
+    },
+    {
+      "title": "Sabrina",
+      "qid": "Q900708"
+    },
+    {
+      "title": "Saving Private Ryan",
+      "qid": "Q165817"
+    },
+    {
+      "title": "Schindler's List",
+      "qid": "Q483941"
+    },
+    {
+      "title": "Schindler's List",
+      "qid": "Q1137740",
+      "key": "B♭ major",
+      "instruments": [
+        "Violon",
+        "Piano"
+      ],
+      "year_composed": 1994
+    },
+    {
+      "title": "Sergeant Ryker",
+      "qid": "Q946471"
+    },
+    {
+      "title": "Seven Years in Tibet",
+      "qid": "Q844883"
+    },
+    {
+      "title": "Sleepers",
+      "qid": "Q1145732"
+    },
+    {
+      "title": "Solo: A Star Wars Story",
+      "qid": "Q27038847"
+    },
+    {
+      "title": "Somewhere in My Memory",
+      "qid": "Q83641042"
+    },
+    {
+      "title": "Soundings",
+      "qid": "Q21161599"
+    },
+    {
+      "title": "SpaceCamp",
+      "qid": "Q1631607"
+    },
+    {
+      "title": "Stanley & Iris",
+      "qid": "Q1547262"
+    },
+    {
+      "title": "Star Tours",
+      "qid": "Q121543369"
+    },
+    {
+      "title": "Star Wars",
+      "qid": "Q2715371"
+    },
+    {
+      "title": "Star Wars Trilogy Arcade",
+      "qid": "Q55248"
+    },
+    {
+      "title": "Star Wars original trilogy",
+      "qid": "Q25540859"
+    },
+    {
+      "title": "Star Wars prequel trilogy",
+      "qid": "Q25540924"
+    },
+    {
+      "title": "Star Wars sequel trilogy",
+      "qid": "Q6586871"
+    },
+    {
+      "title": "Star Wars: Episode I – The Phantom Menace",
+      "qid": "Q165713"
+    },
+    {
+      "title": "Star Wars: Episode II – Attack of the Clones",
+      "qid": "Q181069"
+    },
+    {
+      "title": "Star Wars: Episode III – Revenge of the Sith",
+      "qid": "Q42051"
+    },
+    {
+      "title": "Star Wars: Episode IV – A New Hope",
+      "qid": "Q17738"
+    },
+    {
+      "title": "Star Wars: Episode IX – The Rise of Skywalker",
+      "qid": "Q20977110"
+    },
+    {
+      "title": "Star Wars: Episode V – The Empire Strikes Back",
+      "qid": "Q181795"
+    },
+    {
+      "title": "Star Wars: Episode VI – Return of the Jedi",
+      "qid": "Q181803"
+    },
+    {
+      "title": "Star Wars: Episode VII – The Force Awakens",
+      "qid": "Q6074"
+    },
+    {
+      "title": "Star Wars: Episode VIII – The Last Jedi",
+      "qid": "Q18486021"
+    },
+    {
+      "title": "Star Wars: Masters of Teräs Käsi",
+      "qid": "Q55257"
+    },
+    {
+      "title": "Star Wars: The Emperor's New Clones",
+      "qid": "Q12741297"
+    },
+    {
+      "title": "Star Wars: The Skywalker Saga",
+      "qid": "Q64729658"
+    },
+    {
+      "title": "Stepmom",
+      "qid": "Q267018"
+    },
+    {
+      "title": "Superman",
+      "qid": "Q213053"
+    },
+    {
+      "title": "Superman II",
+      "qid": "Q135418605"
+    },
+    {
+      "title": "Superman II: The Richard Donner Cut",
+      "qid": "Q1292541"
+    },
+    {
+      "title": "Superman IV: The Quest for Peace",
+      "qid": "Q135440525"
+    },
+    {
+      "title": "TV total Turmspringen",
+      "qid": "Q2386074"
+    },
+    {
+      "title": "The Accidental Tourist",
+      "qid": "Q248289"
+    },
+    {
+      "title": "The Adventures of Tintin: The Secret of the Unicorn",
+      "qid": "Q980041"
+    },
+    {
+      "title": "The BFG",
+      "qid": "Q19689203"
+    },
+    {
+      "title": "The Book Thief",
+      "qid": "Q14511981"
+    },
+    {
+      "title": "The Cowboys",
+      "qid": "Q1211921"
+    },
+    {
+      "title": "The Damned United",
+      "qid": "Q1153505"
+    },
+    {
+      "title": "The Eiger Sanction",
+      "qid": "Q602522"
+    },
+    {
+      "title": "The Fabelmans",
+      "qid": "Q107710009"
+    },
+    {
+      "title": "The Five Sacred Trees",
+      "qid": "Q3520906"
+    },
+    {
+      "title": "The Fury",
+      "qid": "Q626851"
+    },
+    {
+      "title": "The Imperial March",
+      "qid": "Q2061833"
+    },
+    {
+      "title": "The Kidnapping of Edgardo Mortara",
+      "qid": "Q123392428"
+    },
+    {
+      "title": "The Killers",
+      "qid": "Q1197463"
+    },
+    {
+      "title": "The Long Goodbye",
+      "qid": "Q1197489"
+    },
+    {
+      "title": "The Lost World: Jurassic Park",
+      "qid": "Q200873"
+    },
+    {
+      "title": "The Making of Star Wars",
+      "qid": "Q7749716"
+    },
+    {
+      "title": "The Man Who Loved Cat Dancing",
+      "qid": "Q16252919"
+    },
+    {
+      "title": "The Mission",
+      "qid": "Q7751754"
+    },
+    {
+      "title": "The Missouri Breaks",
+      "qid": "Q1263880"
+    },
+    {
+      "title": "The Paper Chase",
+      "qid": "Q185053"
+    },
+    {
+      "title": "The Patriot",
+      "qid": "Q646633"
+    },
+    {
+      "title": "The Plainsman",
+      "qid": "Q7757358"
+    },
+    {
+      "title": "The Poseidon Adventure",
+      "qid": "Q874496"
+    },
+    {
+      "title": "The Post",
+      "qid": "Q30203425"
+    },
+    {
+      "title": "The Rare Breed",
+      "qid": "Q634325"
+    },
+    {
+      "title": "The Reivers",
+      "qid": "Q1193731"
+    },
+    {
+      "title": "The River",
+      "qid": "Q1771288"
+    },
+    {
+      "title": "The Secret Ways",
+      "qid": "Q1328227"
+    },
+    {
+      "title": "The Sugarland Express",
+      "qid": "Q432526"
+    },
+    {
+      "title": "The Terminal",
+      "qid": "Q318766"
+    },
+    {
+      "title": "The Time Tunnel",
+      "qid": "Q596962"
+    },
+    {
+      "title": "The Towering Inferno",
+      "qid": "Q372959"
+    },
+    {
+      "title": "The Triangle",
+      "qid": "Q1431506"
+    },
+    {
+      "title": "The Witches of Eastwick",
+      "qid": "Q785087"
+    },
+    {
+      "title": "Theme from Close Encounters of the Third Kind",
+      "qid": "Q30590368"
+    },
+    {
+      "title": "Theme from Superman (Main Title)",
+      "qid": "Q110651445"
+    },
+    {
+      "title": "Tom Sawyer",
+      "qid": "Q635380"
+    },
+    {
+      "title": "Violin Concerto No. 2",
+      "qid": "Q120210058"
+    },
+    {
+      "title": "Wagon Train",
+      "qid": "Q772909"
+    },
+    {
+      "title": "War Horse",
+      "qid": "Q218589"
+    },
+    {
+      "title": "War of the Worlds",
+      "qid": "Q202028"
+    },
+    {
+      "title": "Weekend Today",
+      "qid": "Q7979443"
+    },
+    {
+      "title": "wok racing",
+      "qid": "Q92290"
+    }
+  ]
+}

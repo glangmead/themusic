@@ -1,0 +1,1898 @@
+{
+  "works": [
+    {
+      "title": "Lenore",
+      "qid": "Q108134170"
+    },
+    {
+      "title": "Au bord d'une source",
+      "qid": "Q4818988"
+    },
+    {
+      "title": "Hexameron",
+      "qid": "Q1168783"
+    },
+    {
+      "title": "Réminiscences de Don Juan",
+      "qid": "Q7386135"
+    },
+    {
+      "title": "Hungarian Rhapsody No. 8",
+      "qid": "Q16947594",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/liszt/57037a_rhapsodie_hongroise_no_2_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/liszt/6888w_hungarian_rhapsody_2_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/liszt/1010d_hungarian_rhapsody_no_2_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/liszt/hungarian_rhapsodie_2_757_r_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=20/liszt_rhapsodie_hungroise_6_(c)laviano.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=liszt/hungarian_rhapsody_6_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/liszt/1112w_hungarian_rhapsody_8_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/liszt/53396a_hungarian_rhapsody_no_8_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/liszt/5962d_hungarian_rhapsody_no_8_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=liszt/hungarian_rhapsody_8_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/liszt/30083a_hungarian_rhapsody_9_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/liszt/60663a_hungarian_rhapsody_no_10_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/liszt/hungarian_rhapsodie_10_324_r_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/liszt/1033w_hungarian_rhapsody_12_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/liszt/58087a_hungarian_rhapsody_no_12_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/liszt/50107a_hungarian_rhapsody_no_12_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=20/liszt_rhapsodie_hungroise_16_(c)laviano.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/liszt_hungarian_rhapsody_17_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Hungarian Roidy No. 2",
+      "qid": "Q3040118"
+    },
+    {
+      "title": "Three Concert Études",
+      "qid": "Q591072",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/liszt/51364a_dance_of_the_gnomes_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=26/liszt_two_concert_etudes_1_gnomenreigen_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=26/liszt_two_concert_etudes_2_waldesrauschen_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Totentanz",
+      "qid": "Q1033222",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=20/liszt_totentanz_216_(c)laviano.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=26/liszt_totentanz_paraphrase_on_dies_irae_S-525_(c)laviano.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Héroïde funèbre",
+      "qid": "Q548624"
+    },
+    {
+      "title": "Polonaise, piano, no. 2, E major",
+      "qid": "Q136906778"
+    },
+    {
+      "title": "Transcendental Étude No. 10",
+      "qid": "Q2680931",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=20/liszt_etude_trascendante_1_preludio_(c)laviano.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/liszt/63703a_etude_transcendante_(mazeppe)_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/liszt/56277a_ricordanza_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Transcendental Étude No. 11",
+      "qid": "Q2680902"
+    },
+    {
+      "title": "Transcendental Étude No. 12",
+      "qid": "Q15091013"
+    },
+    {
+      "title": "Transcendental Étude No. 2",
+      "qid": "Q2680992"
+    },
+    {
+      "title": "Transcendental Étude No. 3",
+      "qid": "Q2680988"
+    },
+    {
+      "title": "Transcendental Étude No. 4",
+      "qid": "Q8843614"
+    },
+    {
+      "title": "Transcendental Étude No. 5",
+      "qid": "Q1779313"
+    },
+    {
+      "title": "Transcendental Étude No. 6",
+      "qid": "Q2680928"
+    },
+    {
+      "title": "Transcendental Étude No. 7",
+      "qid": "Q2680985"
+    },
+    {
+      "title": "Transcendental Étude No. 8",
+      "qid": "Q2680922"
+    },
+    {
+      "title": "Transcendental Étude No. 9",
+      "qid": "Q2680887"
+    },
+    {
+      "title": "Tasso: lamento e trionfo",
+      "qid": "Q375009"
+    },
+    {
+      "title": "Die Ideale",
+      "qid": "Q785335"
+    },
+    {
+      "title": "Hamlet",
+      "qid": "Q597388"
+    },
+    {
+      "title": "Loreley, piano (1861)",
+      "qid": "Q136906963"
+    },
+    {
+      "title": "Piano Concerto No. 2",
+      "qid": "Q210212",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=liszt/piano_concerto_1_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/liszt/100775a_concerto_1_e_flat_major_1st_2nd_3rd_mvmt_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/liszt_concerto_2_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/liszt_concerto_2_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/liszt_concerto_2_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/liszt_concerto_2_4_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/liszt_concerto_2_5_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/liszt_piano_concerto_3_125_(c)laviano.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Two Concert Études",
+      "qid": "Q755485"
+    },
+    {
+      "title": "Via crucis",
+      "qid": "Q369137"
+    },
+    {
+      "title": "From the cradle to the grave",
+      "qid": "Q464366"
+    },
+    {
+      "title": "Unstern!",
+      "qid": "Q2496955"
+    },
+    {
+      "title": "Bagatelle sans tonalité",
+      "qid": "Q916127",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=17/liszt_bagatelle_sans_tonalite_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Historische Ungarische Bildnisse",
+      "qid": "Q116818816"
+    },
+    {
+      "title": "Mephisto Waltzes",
+      "qid": "Q920193"
+    },
+    {
+      "title": "10th Hungarian rhapsody",
+      "qid": "Q112325016"
+    },
+    {
+      "title": "12th hungarian rhapsody (as played by Liszt)",
+      "qid": "Q112325026"
+    },
+    {
+      "title": "2nd Hungarian rhapsody",
+      "qid": "Q112325025"
+    },
+    {
+      "title": "6th Hungarian rhapsody",
+      "qid": "Q112325007"
+    },
+    {
+      "title": "Années de pèlerinage",
+      "qid": "Q567462",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/liszt_annees_de_pelerinage_premiere_suisse_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/liszt_annees_de_pelerinage_premiere_suisse_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/liszt_annees_de_pelerinage_premiere_suisse_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/liszt_annees_de_pelerinage_premiere_suisse_4_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/liszt/80368s_the_pilgimage_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/liszt_annees_de_pelerinage_premiere_suisse_5_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/liszt_annees_de_pelerinage_premiere_suisse_6_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/liszt_annees_de_pelerinage_premiere_suisse_7_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/liszt_annees_de_pelerinage_premiere_suisse_8_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/liszt_annees_de_pelerinage_premiere_suisse_9_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/liszt_annees_de_pelerinage_deuxieme_italie_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/liszt_annees_de_pelerinage_deuxieme_italie_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/liszt_annees_de_pelerinage_deuxieme_italie_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/liszt_annees_de_pelerinage_deuxieme_italie_4_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/liszt_annees_de_pelerinage_deuxieme_italie_5_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/liszt_annees_de_pelerinage_deuxieme_italie_6_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/liszt_annees_de_pelerinage_deuxieme_italie_7_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/liszt_venezia_e_napoli_1_gondoliera_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/liszt_venezia_e_napoli_2_canzone_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/liszt_venezia_e_napoli_3_tarantella_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/liszt/6541w_tarantella_part-ii_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/liszt_annees_de_pelerinage_troisieme_anne_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/liszt_annees_de_pelerinage_troisieme_anne_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/liszt_annees_de_pelerinage_troisieme_anne_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/liszt_annees_de_pelerinage_troisieme_anne_4_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/liszt_annees_de_pelerinage_troisieme_anne_5_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/liszt_annees_de_pelerinage_troisieme_anne_6_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/liszt_annees_de_pelerinage_troisieme_anne_7_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Au lac de Wallenstadt",
+      "qid": "Q63254220"
+    },
+    {
+      "title": "Ballade No. 1",
+      "qid": "Q1484171",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/liszt/63253a_ballade_no_3_d_flat_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ballade No. 2",
+      "qid": "Q1488546"
+    },
+    {
+      "title": "Beethoven Symphonies",
+      "qid": "Q791971"
+    },
+    {
+      "title": "Ce qu'on entend sur la montagne",
+      "qid": "Q695547"
+    },
+    {
+      "title": "Christus",
+      "qid": "Q911731"
+    },
+    {
+      "title": "Concerto pathétique",
+      "qid": "Q2991761"
+    },
+    {
+      "title": "Consolations",
+      "qid": "Q1426274",
+      "key": "E major",
+      "year_composed": 1850,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=liszt/consolation_1_(c)halstead.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=liszt/consolation_2_(c)halstead.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=liszt/consolation_3_(c)halstead.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=liszt/consolation_4_(c)halstead.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=liszt/consolation_5_(c)halstead.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=liszt/consolation_6_(c)halstead.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Csárdás",
+      "qid": "Q875415"
+    },
+    {
+      "title": "Dante Sonata",
+      "qid": "Q765803"
+    },
+    {
+      "title": "Dante Symphony",
+      "qid": "Q901873"
+    },
+    {
+      "title": "Dem Andenken Petőfis",
+      "qid": "Q5254981"
+    },
+    {
+      "title": "Der traurige Mönch",
+      "qid": "Q99954395"
+    },
+    {
+      "title": "Deux légendes",
+      "qid": "Q232064"
+    },
+    {
+      "title": "Die Deutsche Wochenschau",
+      "qid": "Q248596"
+    },
+    {
+      "title": "Don Sanche",
+      "qid": "Q908548"
+    },
+    {
+      "title": "Eyes Wide Shut",
+      "qid": "Q209481"
+    },
+    {
+      "title": "Fantasy and Fugue on the Theme B-A-C-H",
+      "qid": "Q754371"
+    },
+    {
+      "title": "Fantasy and Fugue on the chorale Ad nos ad salutarem undam",
+      "qid": "Q3066521"
+    },
+    {
+      "title": "Faust Symphony",
+      "qid": "Q580201"
+    },
+    {
+      "title": "Festklänge",
+      "qid": "Q258840"
+    },
+    {
+      "title": "Franz Liszt's treatments of the works of other composers",
+      "qid": "Q5492885"
+    },
+    {
+      "title": "Funérailles",
+      "qid": "Q754711",
+      "catalog_numbers": {
+        "S": "173"
+      },
+      "key": "F♯ major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1849
+    },
+    {
+      "title": "Glanes de Woronince",
+      "qid": "Q5566622"
+    },
+    {
+      "title": "Gondoliera",
+      "qid": "Q3209428"
+    },
+    {
+      "title": "Grand galop chromatique",
+      "qid": "Q3114681",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=20/liszt_grand_galop_chromatique_(c)laviano.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Grande étude de perfectionnement",
+      "qid": "Q5595377"
+    },
+    {
+      "title": "Grandes études",
+      "qid": "Q3038218",
+      "key": "A minor",
+      "instruments": [
+        "鋼琴"
+      ]
+    },
+    {
+      "title": "Grandes études de Paganini",
+      "qid": "Q1040663",
+      "catalog_numbers": {
+        "S": "141"
+      },
+      "key": "B major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1851
+    },
+    {
+      "title": "Grosses Konzertsolo",
+      "qid": "Q11437597"
+    },
+    {
+      "title": "Harmonies poétiques et religieuses",
+      "qid": "Q3065135",
+      "key": "E major",
+      "instruments": [
+        "Piano"
+      ],
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/liszt/benediction_of_god_in_solitude_6636_d_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/liszt_harmonies_poetiques_03_benediction_de_dieu_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Hungaria",
+      "qid": "Q1056444",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=26/liszt_hungarian_fantasia_for_orchestra_(c)laviano.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Hungarian Coronation Mass",
+      "qid": "Q1162390"
+    },
+    {
+      "title": "Hungarian Fantasy",
+      "qid": "Q250217",
+      "catalog_numbers": {
+        "S": "123"
+      },
+      "key": "G major",
+      "instruments": [
+        "Piano I",
+        "Piano II"
+      ]
+    },
+    {
+      "title": "Hungarian Rhapsodies",
+      "qid": "Q922805"
+    },
+    {
+      "title": "Hungarian Rhapsody No. 1",
+      "qid": "Q5840361"
+    },
+    {
+      "title": "Hungarian Rhapsody No. 10",
+      "qid": "Q16155289",
+      "key": "E major",
+      "instruments": [
+        "鋼琴"
+      ]
+    },
+    {
+      "title": "Hungarian Rhapsody No. 11",
+      "qid": "Q5942800"
+    },
+    {
+      "title": "Hungarian Rhapsody No. 12",
+      "qid": "Q5942802"
+    },
+    {
+      "title": "Hungarian Rhapsody No. 13",
+      "qid": "Q16956927"
+    },
+    {
+      "title": "Hungarian Rhapsody No. 14",
+      "qid": "Q5942807"
+    },
+    {
+      "title": "Hungarian Rhapsody No. 15",
+      "qid": "Q5942809"
+    },
+    {
+      "title": "Hungarian Rhapsody No. 16",
+      "qid": "Q5942812"
+    },
+    {
+      "title": "Hungarian Rhapsody No. 17",
+      "qid": "Q5942815"
+    },
+    {
+      "title": "Hungarian Rhapsody No. 18",
+      "qid": "Q5942819",
+      "catalog_numbers": {
+        "S": "244"
+      },
+      "key": "E major",
+      "instruments": [
+        "Piano"
+      ]
+    },
+    {
+      "title": "Hungarian Rhapsody No. 19",
+      "qid": "Q376605",
+      "key": "D-flat major",
+      "instruments": [
+        "鋼琴"
+      ]
+    },
+    {
+      "title": "Hungarian Rhapsody No. 3",
+      "qid": "Q5942822"
+    },
+    {
+      "title": "Hungarian Rhapsody No. 4",
+      "qid": "Q16938276"
+    },
+    {
+      "title": "Hungarian Rhapsody No. 5",
+      "qid": "Q5942826"
+    },
+    {
+      "title": "Hungarian Rhapsody No. 6",
+      "qid": "Q16155232",
+      "key": "D♭ major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1847
+    },
+    {
+      "title": "Hungarian Rhapsody No. 7",
+      "qid": "Q5942829"
+    },
+    {
+      "title": "Hungarian Rhapsody No. 9",
+      "qid": "Q5942833"
+    },
+    {
+      "title": "Hunnenschlacht",
+      "qid": "Q692637"
+    },
+    {
+      "title": "I. Ungarische Rhapsodie",
+      "qid": "Q112756645"
+    },
+    {
+      "title": "Il Penseroso",
+      "qid": "Q63368552"
+    },
+    {
+      "title": "La campanella",
+      "qid": "Q1144746",
+      "key": "C major",
+      "instruments": [
+        "Saw Synthesiser",
+        "Piano",
+        "Square Synthesiser",
+        "Harpsichord",
+        "Percussion Synthesiser"
+      ]
+    },
+    {
+      "title": "La lugubre gondola",
+      "qid": "Q1030009"
+    },
+    {
+      "title": "Late works of Franz Liszt",
+      "qid": "Q16154644"
+    },
+    {
+      "title": "Le mal du pays",
+      "qid": "Q63453736"
+    },
+    {
+      "title": "Les Cloches de Genève",
+      "qid": "Q3231600"
+    },
+    {
+      "title": "Les préludes",
+      "qid": "Q663761"
+    },
+    {
+      "title": "Liebestraum No. 3",
+      "qid": "Q17562451",
+      "key": "A-flat major",
+      "instruments": [
+        "鋼琴"
+      ]
+    },
+    {
+      "title": "Liebesträume",
+      "qid": "Q1065305",
+      "catalog_numbers": {
+        "S": "541"
+      },
+      "key": "A♭ major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1850
+    },
+    {
+      "title": "Liszt's symphonic poems",
+      "qid": "Q3321005"
+    },
+    {
+      "title": "Mayerling",
+      "qid": "Q6797084"
+    },
+    {
+      "title": "Mazeppa",
+      "qid": "Q911706"
+    },
+    {
+      "title": "Mephisto Polka",
+      "qid": "Q6817808"
+    },
+    {
+      "title": "Mignon's song",
+      "qid": "Q114129480"
+    },
+    {
+      "title": "Nuages gris",
+      "qid": "Q916109",
+      "key": "B♭ major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1881
+    },
+    {
+      "title": "O lieb, so lang du lieben kannst",
+      "qid": "Q922997",
+      "catalog_numbers": {
+        "S": "298"
+      },
+      "key": "A♭ major",
+      "instruments": [
+        "Voice",
+        "Piano"
+      ]
+    },
+    {
+      "title": "Once More, with Feeling!",
+      "qid": "Q2605605"
+    },
+    {
+      "title": "Orage",
+      "qid": "Q74250551"
+    },
+    {
+      "title": "Orpheus",
+      "qid": "Q280294"
+    },
+    {
+      "title": "Piano Concerto No. 1",
+      "qid": "Q162893",
+      "key": "E♭ major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1856
+    },
+    {
+      "title": "Piano Concerto No. 3",
+      "qid": "Q932649"
+    },
+    {
+      "title": "Piano Sonata in B Minor",
+      "qid": "Q1031890"
+    },
+    {
+      "title": "Prometheus",
+      "qid": "Q524450"
+    },
+    {
+      "title": "Rakoczy-Marsch",
+      "qid": "Q112325019"
+    },
+    {
+      "title": "Requiem",
+      "qid": "Q1248513"
+    },
+    {
+      "title": "Rhapsodie espagnole",
+      "qid": "Q2375476"
+    },
+    {
+      "title": "Ricordanza",
+      "qid": "Q112324998"
+    },
+    {
+      "title": "Romance S.169",
+      "qid": "Q30693529"
+    },
+    {
+      "title": "Rondeau fantastique sur un thème espagnol \"La Contrabandista\", S.252",
+      "qid": "Q7365532"
+    },
+    {
+      "title": "Réminiscences de Norma",
+      "qid": "Q11256296"
+    },
+    {
+      "title": "Sardanapale",
+      "qid": "Q7423662"
+    },
+    {
+      "title": "Sinfonía erótica",
+      "qid": "Q1712241"
+    },
+    {
+      "title": "Slavimo Slavno Slaveni!",
+      "qid": "Q7539388"
+    },
+    {
+      "title": "Sonetto 47 del Petrarca",
+      "qid": "Q64785143"
+    },
+    {
+      "title": "Sposalizio",
+      "qid": "Q7580019"
+    },
+    {
+      "title": "Tarantellas from Naples",
+      "qid": "Q3515663"
+    },
+    {
+      "title": "The Cat Concerto",
+      "qid": "Q887569"
+    },
+    {
+      "title": "Transcendental Étude No. 1",
+      "qid": "Q2680998",
+      "key": "C minor",
+      "instruments": [
+        "鋼琴"
+      ],
+      "year_composed": 1851
+    },
+    {
+      "title": "Transcendental Études",
+      "qid": "Q291011",
+      "catalog_numbers": {
+        "S": "139"
+      },
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1852
+    },
+    {
+      "title": "V. Hungarian rhapsody (Heroide elegique)",
+      "qid": "Q116155093"
+    },
+    {
+      "title": "Vallée d'Obermann",
+      "qid": "Q3553967"
+    },
+    {
+      "title": "Variation on a Waltz by Diabelli",
+      "qid": "Q3554774",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=liszt/diabelli_variations_(c)halstead.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Variations on Weinen, Klagen, Sorgen, Zagen",
+      "qid": "Q1461654",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=bach-liszt_weinen_klagen_soergen_zagen_(c)hisamori.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Venezia e Napoli",
+      "qid": "Q2512870",
+      "key": "A major",
+      "instruments": [
+        "Piano"
+      ]
+    },
+    {
+      "title": "Weihnachtsbaum",
+      "qid": "Q17035139",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=liszt/christmas_tree_suite_1_(c)halstead.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=liszt/christmas_tree_suite_2_(c)halstead.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=liszt/christmas_tree_suite_3_(c)halstead.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=liszt/christmas_tree_suite_4_(c)halstead.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=liszt/christmas_tree_suite_5_(c)halstead.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=liszt/christmas_tree_suite_6_(c)halstead.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=liszt/christmas_tree_suite_7_(c)halstead.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=liszt/christmas_tree_suite_8_(c)halstead.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=liszt/christmas_tree_suite_9_(c)halstead.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=liszt/christmas_tree_suite_10_(c)halstead.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=liszt/christmas_tree_suite_11_(c)halstead.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=liszt/christmas_tree_suite_12_(c)halstead.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Wilde Jagd Etude",
+      "qid": "Q112756686"
+    },
+    {
+      "title": "X Ung. Rhapsodie",
+      "qid": "Q112325004"
+    },
+    {
+      "title": "X. Rhapsodie",
+      "qid": "Q112325146"
+    },
+    {
+      "title": "XII Rhapsodie",
+      "qid": "Q112324999"
+    },
+    {
+      "title": "Zwei Episoden aus Lenaus Faust",
+      "qid": "Q1124283"
+    },
+    {
+      "title": "the four elements",
+      "qid": "Q18663741"
+    },
+    {
+      "title": "Études en douze exercices",
+      "qid": "Q3592606",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/liszt_etude_12_exercices_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/liszt_etude_12_exercices_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/liszt_etude_12_exercices_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/liszt_etude_12_exercices_4_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/liszt_etude_12_exercices_5_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/liszt_etude_12_exercices_6_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/liszt_etude_12_exercices_7_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/liszt_etude_12_exercices_8_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/liszt_etude_12_exercices_9_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/liszt_etude_12_exercices_10_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/liszt_etude_12_exercices_11_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/liszt_etude_12_exercices_12_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concerto for piano and string instruments in e minor, S 121, LW H1, Mal�diction",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=26/liszt_piano_concerto_e-major_malediction_S-121_(c)laviano.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "1-2. Allegro maestoso, attacca: Quasi Adagio",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=liszt/piano_concerto_1_1-2_(c)finley.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3. Allegretto vivace",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=liszt/piano_concerto_1_3_(c)finley.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "4. Allegro marziale animato. Presto",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=liszt/piano_concerto_1_4_(c)finley.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concerto for piano and orchestra No. 2 in A major, S 125, LW H6 (1839-1840, 1861)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=26/liszt_piano_concerto_a-major_S-125_(c)laviano.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Douze grandes �tudes [second version, 12 pieces], S 137 (1837)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=29/liszt_grand_etudes_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=29/liszt_grand_etudes_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=29/liszt_grand_etudes_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=29/liszt_grand_etudes_4_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=29/liszt_grand_etudes_5_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=29/liszt_grand_etudes_6_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "�tudes d'ex�cution transcendante d'apr�s Paganini, S 140/141 (1838, 1851)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/liszt/paganini-etude_3_la_campanella_444_r_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-i/paganini-liszt_54296a_la_campanella_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=20/liszt_paganini-etude_campanella_(c)laviano.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Trois �tudes de concert, S 144 (1848?)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=26/liszt_trois_etudes_de_concert_1_il_lamento_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/liszt/51164a_etude_de_concert_no_2_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=26/liszt_trois_etudes_de_concert_2_la_leggierezza_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/liszt/etude_in_d-flat_no_3_31958_d_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/liszt/68013a_etude_in_d_flat_(un_sospiro)_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/liszt/grand_etude_de_concert_a_sigh_3_569_r_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/liszt/61033a_etude_in_d_flat_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=26/liszt_trois_etudes_de_concert_3_un_sospiro_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3.10.  Improvisata sur le Ranz des vaches",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/liszt_paraphrases_10_1_improvisata_sur_les_ranz_de_vaches_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3.11. Un soir dans les montagnes - Nocturne pastorale",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/liszt_paraphrases_10_2_nocturne_pastorale_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3.12. Rondeau sur le Ranz des chevres",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/liszt_paraphrases_10_3_ranz_de_chevres_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Deux L�gendes, S 175 (1862-63)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/liszt_legendes_1_st-francois_predication_oiseaux_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata in b minor, S 178, R 21 (1852-53)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=liszt/sonata_b_(c)finley.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata in b minor, S 178, R 21 * (1852-53)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=liszt/sonate_b_(c)hisamori.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Liebestr�ume. Drei Notturnos, S 541 (ca. 1850)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/liszt/02685s_liebestraume_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/liszt/nocturne_op_3_415_r_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/liszt/50425a_liebestraum_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/liszt/68653a_liebestraume_no_3_a_flat_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=liszt/liebestraume_3_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Grande valse di bravura [first version of S214/1] 'Le bal de Berne', S 209 (1835)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/liszt_grande_valse_6_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Valse-Impromptu, S 213(a?) (1850, 1880?)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/liszt_valse_impromptu_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Die Lorelie (Heine), S 273 (1841)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/liszt/1302w_loreley_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Die Lorelie (Heine), S 273 (1841) *",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/liszt/62523a_the_loreley_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Grande paraphrase sur la marche de Giuseppe Donizetti composee pour sa majeste le Sultan Abdul Medjid-Khan, S 403 (1847-48)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-i/donizetti_59303a_lucia_di_lammermoor_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Rigoletto, Paraphrase de Concert, S 434 (1859)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/verdi-liszt_50676a_rigoletto_paraphrase_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Zwei (2) St�cke aus Tannh�user und Lohengrin, S 445 (1852)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/wagner-liszt_100285a_tannhauser_overture_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/wagner-liszt_50557a_tannhauser_overture_(c)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/wagner-liszt_festival_and_bridal_song_from_lohengrin_(c)clements.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "� MIDI • Pilgerchor from Wagner's Tannh�user, S 676 (1860)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=wagner-liszt_tannhauser_entry_guests_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Praludien und Fugen in a minor (ex BWV 543)",
+      "catalog_numbers": {
+        "BWV": "543"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=bach-liszt_praeludium_543_(c)pepperdine.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Praludien und Fugen in b minor (ex BWV 544)",
+      "catalog_numbers": {
+        "BWV": "544"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=bach-liszt_praeludium_544_(c)pepperdine.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Praludien und Fugen in C major (ex BWV 545)",
+      "catalog_numbers": {
+        "BWV": "545"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=bach-liszt_praeludium_545_(c)pepperdine.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Praludien und Fugen in c minor (ex BWV 546)",
+      "catalog_numbers": {
+        "BWV": "546"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=bach-liszt_praeludium_546_(c)pepperdine.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Praludien und Fugen in C major (ex BWV 547)",
+      "catalog_numbers": {
+        "BWV": "547"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=bach-liszt_praeludium_547_(c)pepperdine.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Praludien und Fugen in e minor (ex BWV 548)",
+      "catalog_numbers": {
+        "BWV": "548"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=bach-liszt_praeludium_548_(c)pepperdine.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Symphony No. 1 in C major (Op. 21), S 464 (1863-64, ex 1799-1800)",
+      "catalog_numbers": {
+        "Op": "21"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=beethoven_liszt_symphony_1_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=beethoven_liszt_symphony_1_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/beethoven_liszt_symphony_1_3_rev_2007_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=beethoven_liszt_symphony_1_4_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Symphony No. 2 in D major (Op. 36), S 464 (1863-64, ex 1801-02)",
+      "catalog_numbers": {
+        "Op": "36"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=beethoven_liszt_symphony_2_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=beethoven_liszt_symphony_2_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=beethoven_liszt_symphony_2_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=beethoven_liszt_symphony_2_4_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Symphony No. 3 in E flat major (Op. 55), S 464, 'Eroica' (1863-64, ex 1803-04)",
+      "catalog_numbers": {
+        "Op": "55"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/liszt_beethoven_symphony_3_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/liszt_beethoven_symphony_3_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/liszt_beethoven_symphony_3_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/liszt_beethoven_symphony_3_4_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Symphony No. 4 in B flat major (Op. 60), S 464 (1863-64, ex 1806)",
+      "catalog_numbers": {
+        "Op": "60"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=beethoven_liszt_symphony_4_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=beethoven_liszt_symphony_4_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=beethoven_liszt_symphony_4_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=beethoven_liszt_symphony_4_4_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Symphony No. 5 in c minor (Op. 67), S 464 (1863-64, ex 1804-08)",
+      "catalog_numbers": {
+        "Op": "67"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/liszt_beethoven_symphony_5_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/liszt_beethoven_symphony_5_2_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3-4. Scherzo Allegro, Allegro",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/liszt_beethoven_symphony_5_3-4_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Symphony No. 6 in F major (Op. 68), S 464 (1863-64, ex 1806-08)",
+      "catalog_numbers": {
+        "Op": "68"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/liszt_beethoven_symphony_6_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/liszt_beethoven_symphony_6_2_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3-4-5. Merry Meeting of Country Folk. Thunderstrom. Tempest. Song of the Shepherds",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/liszt_beethoven_symphony_6_3-4-5_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Poco sostenuto",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=26/liszt_beethoven_symphony_7_1_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "2. Allegretto",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=26/liszt_beethoven_symphony_7_2_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3. Presto",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=26/liszt_beethoven_symphony_7_3_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "4. Allegro con brio",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=26/liszt_beethoven_symphony_7_4_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Symphony No. 8 in F major (Op. 93), S 464 (1863-64, ex 1812)",
+      "catalog_numbers": {
+        "Op": "93"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=26/liszt_beethoven_symphony_8_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=26/liszt_beethoven_symphony_8_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=26/liszt_beethoven_symphony_8_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=26/liszt_beethoven_symphony_8_4_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Allegro ma non troppo, un poco maestoso",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/liszt_beethoven_symphony_9_1_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Molto vivace",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/liszt_beethoven_symphony_9_2_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Adagio molto e cantabile",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/liszt_beethoven_symphony_9_3_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Presto - O Freunde, nicht diese T�ne!",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/liszt_beethoven_symphony_9_4_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chant in G major, Op. 74 No. 1, Zyczenie",
+      "catalog_numbers": {
+        "Op": "74/1"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/chopin-liszt_chant_polonaise_op_74_1_325_r_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chant in F sharp major, Op. 74 No. 5, Mes joies *",
+      "catalog_numbers": {
+        "Op": "74/5"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/chopin-liszt_64051a_chant_polonaise_74_5_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/chopin/chopin-liszt_50574a_mes_joies_(c)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Hochzeitsmarsch und Elfenreigen aus dem Sommernachtstraum (A Midsummer Night's Dream), S 410 (1847-50)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=mendellsohn-liszt_wedding_march_(c)halstead.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sieben Lieder (from Opp. 19, 34, 47) S 547 (1840)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/mendelssohn/mendelssohn-liszt_882w_on_wings_of_song_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/mendelssohn/mendelssohn-liszt_63515a_on_the_wings_of_song_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=mendelssohn_liszt_on_wings_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ouverture de l'op�ra Guillaume Tell, S 552 (1838)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/rossini_6232d_william_tell_overture_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ouverture de l'op�ra Guillaume Tell, S 552 (1838) *",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rossini-liszt_guglielmo_tell_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Danse macabre, Op. 40, S. 555 (1876)",
+      "catalog_numbers": {
+        "Op": "40"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/saint-saens_83306s_danse_macabre_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=34/liszt-saintsaens_lieder_555_12_(nc)ozaki.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Wandererfantasie (Grosse Fantasie), S. 565a (ca. 1868)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/liszt_schubert_fantasia_15_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/liszt_schubert_fantasia_15_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/liszt_schubert_fantasia_15_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/liszt_schubert_fantasia_15_4_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "12 Lieder von Schubert, S. 558, No. 4",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=34/liszt-schubert_lieder_558_4_(c)unknown.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Marche de R�k�czy, S 608 (ex 117) (1870 [ex 1865])",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=17/liszt_marche_de_rakoczy_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ad nos, ad salutarem undam, Fantasy and Fugue (F. Busoni's arrangement of Liszts arrangement of the 1st act Anabaptist hymn from Meyerbeers Le Prophete)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=liszt-busoni_ad_nos_ad_salutarem_undam_(c)pepperdine.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Benedictus",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=liszt/hungarian_mass_benedictus_(c)blondel.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Offertorium",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=liszt/hungarian_mass_offertorium_(c)blondel.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Hosannah!",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=liszt/hungarian_mass_hosanna_(c)blondel.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ave Maria, S 20 (1846, 1848)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=masses/pieces/liszt_ave_maria_(c)hoessl.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pater noster, S 21 (1860)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=masses/pieces/liszt_pater_noster_(c)hoessl.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "O salutaris hostia, S 40 (1869?)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=masses/pieces/liszt_oh_salutaris_hostia_(c)hoessl.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tantum ergo, S 42 (1822)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=masses/pieces/liszt_tantum_ergo_(c)hoessl.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ave Verum corpus, S 44 (1871) *",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/liszt_ave_verum_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Consolation, S.172 No.1",
+      "catalog_numbers": {
+        "S": "172"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/LisztF/S.172/liszt-consolation-no1/liszt-consolation-no1.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Second Ballade",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/LisztF/ballade/ballade.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

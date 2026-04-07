@@ -1,0 +1,371 @@
+{
+  "works": [
+    {
+      "title": "Le Villi",
+      "qid": "Q845606"
+    },
+    {
+      "title": "Edgar",
+      "qid": "Q1351"
+    },
+    {
+      "title": "Manon Lescaut",
+      "qid": "Q459341"
+    },
+    {
+      "title": "Terra e Mare",
+      "qid": "Q106681775"
+    },
+    {
+      "title": "La bohème",
+      "qid": "Q188621"
+    },
+    {
+      "title": "Tosca",
+      "qid": "Q192941"
+    },
+    {
+      "title": "Madama Butterfly",
+      "qid": "Q19005"
+    },
+    {
+      "title": "La fanciulla del West",
+      "qid": "Q460319"
+    },
+    {
+      "title": "Il trittico",
+      "qid": "Q899738"
+    },
+    {
+      "title": "Turandot",
+      "qid": "Q207990"
+    },
+    {
+      "title": "Addio, fiorito asil",
+      "qid": "Q54986250"
+    },
+    {
+      "title": "Alone, lost, abandoned",
+      "qid": "Q54986272"
+    },
+    {
+      "title": "Amore o grillo",
+      "qid": "Q54986255"
+    },
+    {
+      "title": "Avanti, Urania! = Ymlaen Wrania!",
+      "qid": "Q78647671"
+    },
+    {
+      "title": "Breuddwyd Doretta : adroddgan Magda : [o La rondine] = Il sogno di Doretta",
+      "qid": "Q78647711"
+    },
+    {
+      "title": "Ch'ella mi creda",
+      "qid": "Q5065873",
+      "key": "G♭ major",
+      "instruments": [
+        "Canto",
+        "Pianoforte"
+      ]
+    },
+    {
+      "title": "Che gelida manina",
+      "qid": "Q2961881"
+    },
+    {
+      "title": "Chi il bel sogno di Doretta?",
+      "qid": "Q54986207"
+    },
+    {
+      "title": "Crisantemi",
+      "qid": "Q109392321",
+      "key": "E major",
+      "instruments": [
+        "Violin I",
+        "Violin II",
+        "Viola",
+        "Violoncello"
+      ],
+      "year_composed": 1890
+    },
+    {
+      "title": "Daw rhyw wawrddydd hyfryd = Un bel di",
+      "qid": "Q78526764"
+    },
+    {
+      "title": "Dear old coat",
+      "qid": "Q3555160"
+    },
+    {
+      "title": "Donde lieta usci",
+      "qid": "Q54986178"
+    },
+    {
+      "title": "Donna non vidi mai",
+      "qid": "Q5296506"
+    },
+    {
+      "title": "Dovunque al mondo",
+      "qid": "Q54986257"
+    },
+    {
+      "title": "E lucevan le stelle",
+      "qid": "Q1276668",
+      "key": "D major",
+      "instruments": [
+        "Flute 1 &amp;amp; 2",
+        "Flute 3",
+        "Oboe",
+        "English Horn",
+        "A Clarinet 1",
+        "A Clarinet 2",
+        "A Bass Clarinet",
+        "Bassoon",
+        "Contrabassoon",
+        "F Horn 1",
+        "F Horn 2",
+        "Trombone",
+        "Timpani",
+        "Percussion"
+      ]
+    },
+    {
+      "title": "Falling Star",
+      "qid": "Q98378016"
+    },
+    {
+      "title": "Farewell, my sweet love!",
+      "qid": "Q54986145"
+    },
+    {
+      "title": "Floria Tosca",
+      "qid": "Q19800997"
+    },
+    {
+      "title": "Gianni Schicchi",
+      "qid": "Q727868"
+    },
+    {
+      "title": "I Spit on Your Grave",
+      "qid": "Q1537077"
+    },
+    {
+      "title": "If I were tiny like you",
+      "qid": "Q54986233"
+    },
+    {
+      "title": "Il tabarro",
+      "qid": "Q468235"
+    },
+    {
+      "title": "In questa reggia",
+      "qid": "Q6011637"
+    },
+    {
+      "title": "Inno a Roma",
+      "qid": "Q19131931"
+    },
+    {
+      "title": "La Bohème",
+      "qid": "Q830240"
+    },
+    {
+      "title": "La Bohème",
+      "qid": "Q3821473"
+    },
+    {
+      "title": "La Bohème",
+      "qid": "Q6461273"
+    },
+    {
+      "title": "La Lupa",
+      "qid": "Q108950443"
+    },
+    {
+      "title": "La Vie de Bohème",
+      "qid": "Q3213615"
+    },
+    {
+      "title": "La bohème",
+      "qid": "Q6465985"
+    },
+    {
+      "title": "La rondine",
+      "qid": "Q845556"
+    },
+    {
+      "title": "Madam Butterfly",
+      "qid": "Q65090172"
+    },
+    {
+      "title": "Madame Butterfly",
+      "qid": "Q3275248"
+    },
+    {
+      "title": "Madame Butterfly",
+      "qid": "Q19619063"
+    },
+    {
+      "title": "Madame Butterfly",
+      "qid": "Q19857468"
+    },
+    {
+      "title": "Madame Butterfly",
+      "qid": "Q25209679"
+    },
+    {
+      "title": "Mentìa l'avviso",
+      "qid": "Q3854771"
+    },
+    {
+      "title": "Messa",
+      "qid": "Q109001785"
+    },
+    {
+      "title": "Messa a quattro voci con orchestra",
+      "qid": "Q2735190"
+    },
+    {
+      "title": "Mi chiamano Mimi = Fe'm gelwir Mimi : La Bohéme",
+      "qid": "Q78648133"
+    },
+    {
+      "title": "My lord, listen!",
+      "qid": "Q54986308"
+    },
+    {
+      "title": "Nessun dorma",
+      "qid": "Q815342",
+      "key": "G major",
+      "instruments": [
+        "Piccolo",
+        "Flute",
+        "Oboe 1",
+        "Oboe 2",
+        "English Horn",
+        "Clarinet",
+        "Bass Clarinet",
+        "Bassoon 1",
+        "Bassoon 2",
+        "Contrabassoon",
+        "Horn in F 1",
+        "Horn in F 2",
+        "Horn in F 3",
+        "Horn in F 4",
+        "F Trumpet 1",
+        "F Trumpet 2",
+        "F Trumpet 3",
+        "Trombone 1",
+        "Trombone 2",
+        "Trombone 3",
+        "Bass Trombone"
+      ]
+    },
+    {
+      "title": "Non piangere, Liù",
+      "qid": "Q7049138"
+    },
+    {
+      "title": "O fy maban : o Suor Angelica = Senza mamma",
+      "qid": "Q78527067"
+    },
+    {
+      "title": "O mio babbino caro",
+      "qid": "Q782097",
+      "key": "Ab major"
+    },
+    {
+      "title": "O mio babbino caro = O gwrando Dadi annwyl : Gianni Schicchi",
+      "qid": "Q78527077"
+    },
+    {
+      "title": "Pefriai sêr y ffurfafen : [o] Tosca = E lucevan le stelle",
+      "qid": "Q78648217"
+    },
+    {
+      "title": "Preludio sinfonico",
+      "qid": "Q3910276"
+    },
+    {
+      "title": "Quando me'n vo'",
+      "qid": "Q3412947"
+    },
+    {
+      "title": "Recondita armonia",
+      "qid": "Q2701182"
+    },
+    {
+      "title": "Requiem",
+      "qid": "Q122922832"
+    },
+    {
+      "title": "Return to the happy days",
+      "qid": "Q3993873"
+    },
+    {
+      "title": "Serenade",
+      "qid": "Q1057548"
+    },
+    {
+      "title": "Sole e amore",
+      "qid": "Q3964268"
+    },
+    {
+      "title": "Spira sul mare (Entrata di Butterfly)",
+      "qid": "Q54986242"
+    },
+    {
+      "title": "Suor Angelica",
+      "qid": "Q769394"
+    },
+    {
+      "title": "Sì, mi chiamano Mimi",
+      "qid": "Q3307834"
+    },
+    {
+      "title": "The Dream of Butterfly",
+      "qid": "Q3795867"
+    },
+    {
+      "title": "The Long and Short of It",
+      "qid": "Q2601212"
+    },
+    {
+      "title": "Tosca",
+      "qid": "Q348210"
+    },
+    {
+      "title": "Tosca",
+      "qid": "Q3995853"
+    },
+    {
+      "title": "Tosca",
+      "qid": "Q3995854"
+    },
+    {
+      "title": "Tosca's Kiss",
+      "qid": "Q869871"
+    },
+    {
+      "title": "Tu che di gel sei cinta",
+      "qid": "Q15950095"
+    },
+    {
+      "title": "Tu, tu piccolo Iddio",
+      "qid": "Q54986247"
+    },
+    {
+      "title": "Vexilla regis",
+      "qid": "Q4010537"
+    },
+    {
+      "title": "Vissi d'arte",
+      "qid": "Q1501528"
+    },
+    {
+      "title": "Vissi d'arte, vissi d'amore",
+      "qid": "Q61686336"
+    }
+  ]
+}

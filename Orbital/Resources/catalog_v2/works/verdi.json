@@ -1,0 +1,830 @@
+{
+  "works": [
+    {
+      "title": "Sei Romanze",
+      "qid": "Q99214036"
+    },
+    {
+      "title": "Un giorno di regno",
+      "qid": "Q470932"
+    },
+    {
+      "title": "Ernani",
+      "qid": "Q211279"
+    },
+    {
+      "title": "Giovanna d'Arco",
+      "qid": "Q757134"
+    },
+    {
+      "title": "Sei romanze",
+      "qid": "Q108950908"
+    },
+    {
+      "title": "Attila",
+      "qid": "Q211460"
+    },
+    {
+      "title": "Aroldo",
+      "qid": "Q697950"
+    },
+    {
+      "title": "La forza del destino",
+      "qid": "Q212451"
+    },
+    {
+      "title": "Don Carlos",
+      "qid": "Q179110"
+    },
+    {
+      "title": "Messa per Rossini",
+      "qid": "Q1423582"
+    },
+    {
+      "title": "Aida",
+      "qid": "Q171277",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/verdi_52004a_aida_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/verdi_56774a_celeste_aida_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Aida Sinfonia",
+      "qid": "Q108948437"
+    },
+    {
+      "title": "String Quartet in E minor",
+      "qid": "Q1568939",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/verdi_string_quartet_e-minor_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Otello",
+      "qid": "Q172324"
+    },
+    {
+      "title": "Falstaff",
+      "qid": "Q318455"
+    },
+    {
+      "title": "Quattro Pezzi Sacri",
+      "qid": "Q1416456"
+    },
+    {
+      "title": "Ad una stella",
+      "qid": "Q125517215"
+    },
+    {
+      "title": "Addio del passato",
+      "qid": "Q54988677"
+    },
+    {
+      "title": "Ah wicked souls of hell",
+      "qid": "Q54988631"
+    },
+    {
+      "title": "Ah! viens démon, esprit du mal",
+      "qid": "Q54988610"
+    },
+    {
+      "title": "Aida",
+      "qid": "Q640054"
+    },
+    {
+      "title": "Aida",
+      "qid": "Q4696622"
+    },
+    {
+      "title": "Alzira",
+      "qid": "Q450801"
+    },
+    {
+      "title": "Anch'io dischiuso un giorno... Salgo già del trono aurato",
+      "qid": "Q54988741"
+    },
+    {
+      "title": "Anvil Chorus",
+      "qid": "Q4777980"
+    },
+    {
+      "title": "Aria",
+      "qid": "Q654154"
+    },
+    {
+      "title": "As my soul seemed to swell",
+      "qid": "Q54988355"
+    },
+    {
+      "title": "At times my thought flies free from its prison",
+      "qid": "Q54988568"
+    },
+    {
+      "title": "Ave Maria",
+      "qid": "Q16268142",
+      "key": "F major",
+      "instruments": [
+        "Soprano",
+        "Alto",
+        "Tenor",
+        "Bass"
+      ]
+    },
+    {
+      "title": "Ballo della Regina",
+      "qid": "Q4851817"
+    },
+    {
+      "title": "Bella figlia dell’amore",
+      "qid": "Q18205433"
+    },
+    {
+      "title": "Beyond Love",
+      "qid": "Q3881946"
+    },
+    {
+      "title": "Brindisi",
+      "qid": "Q125526317"
+    },
+    {
+      "title": "Caro nome = Enw wnaeth i galon merch : Rigoletto",
+      "qid": "Q78526640"
+    },
+    {
+      "title": "Caro nome che il mio cor",
+      "qid": "Q25405129"
+    },
+    {
+      "title": "Celeste Aida",
+      "qid": "Q2401650"
+    },
+    {
+      "title": "Che mai vegg'io! Infin che un brando vindice = Ai rhith yw'r cyfan? Rhith yw'r cyfan : Ernani",
+      "qid": "Q78526674"
+    },
+    {
+      "title": "Condotta ell'era in ceppi = Fe'i rhwymwyd a'i llusgo'n greulon : Il Trovatore",
+      "qid": "Q78526701"
+    },
+    {
+      "title": "Cortigiani, vil razza dannata",
+      "qid": "Q54988777"
+    },
+    {
+      "title": "Credo = Credaf : Otello",
+      "qid": "Q78526704"
+    },
+    {
+      "title": "Cry of freedom",
+      "qid": "Q20196025"
+    },
+    {
+      "title": "D'Egitto là su i lidi...Come notte a sol fulgente",
+      "qid": "Q54988734"
+    },
+    {
+      "title": "Deh, pietoso, oh Addolorata",
+      "qid": "Q99214380"
+    },
+    {
+      "title": "Di miei bollenti spiriti = Angerdd a nwyd ieuenctid ffôl : La Traviata",
+      "qid": "Q78647841"
+    },
+    {
+      "title": "Di quella pira",
+      "qid": "Q3706452"
+    },
+    {
+      "title": "Dio di Giuda... O prodi miei, seguitemi",
+      "qid": "Q54988732"
+    },
+    {
+      "title": "Don Carlo",
+      "qid": "Q106819411"
+    },
+    {
+      "title": "Empire",
+      "qid": "Q3796845"
+    },
+    {
+      "title": "Ernani",
+      "qid": "Q5392608"
+    },
+    {
+      "title": "Ernani, Ernani rescue me",
+      "qid": "Q54988417"
+    },
+    {
+      "title": "Giuseppe Verdi",
+      "qid": "Q1768473"
+    },
+    {
+      "title": "Gustavo III",
+      "qid": "Q5621423"
+    },
+    {
+      "title": "Hail Mary!",
+      "qid": "Q54988512"
+    },
+    {
+      "title": "How the shade falls from heaven",
+      "qid": "Q54988714"
+    },
+    {
+      "title": "Hymn of the Nations",
+      "qid": "Q1640657"
+    },
+    {
+      "title": "I Lombardi alla prima crociata",
+      "qid": "Q468625"
+    },
+    {
+      "title": "I believe in a cruel God",
+      "qid": "Q54988758"
+    },
+    {
+      "title": "I due Foscari",
+      "qid": "Q468112"
+    },
+    {
+      "title": "I masnadieri",
+      "qid": "Q466338"
+    },
+    {
+      "title": "I vespri siciliani",
+      "qid": "Q17082432"
+    },
+    {
+      "title": "Il corsaro",
+      "qid": "Q467289"
+    },
+    {
+      "title": "Il lacerato spirito",
+      "qid": "Q78526923"
+    },
+    {
+      "title": "Il tramonto",
+      "qid": "Q125517147"
+    },
+    {
+      "title": "Il trovatore",
+      "qid": "Q203470",
+      "key": "G major",
+      "instruments": [
+        "S",
+        "A",
+        "T",
+        "B",
+        "g"
+      ],
+      "year_composed": 1850
+    },
+    {
+      "title": "In solitaria stanza",
+      "qid": "Q99214334"
+    },
+    {
+      "title": "Inno delle Nazioni",
+      "qid": "Q736576"
+    },
+    {
+      "title": "Is it dream or reality?",
+      "qid": "Q54988434"
+    },
+    {
+      "title": "It was not a dream",
+      "qid": "Q54988510"
+    },
+    {
+      "title": "Je chante avec toi Liberté",
+      "qid": "Q3163402"
+    },
+    {
+      "title": "Je veux encore entendre",
+      "qid": "Q54988627"
+    },
+    {
+      "title": "Just a Sigh",
+      "qid": "Q3227564"
+    },
+    {
+      "title": "Jérusalem",
+      "qid": "Q914332"
+    },
+    {
+      "title": "King of the abyss, make haste",
+      "qid": "Q54988874"
+    },
+    {
+      "title": "L'inno delle nazioni",
+      "qid": "Q109002117"
+    },
+    {
+      "title": "La Traviata",
+      "qid": "Q1056912",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/verdi_51417a_la_traviata_potpourri_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "La battaglia di Legnano",
+      "qid": "Q468546"
+    },
+    {
+      "title": "La donna è mobile",
+      "qid": "Q1469717",
+      "key": "G major"
+    },
+    {
+      "title": "La forza del destino",
+      "qid": "Q55712988"
+    },
+    {
+      "title": "La luce langue = Gwywa'r goleuni : Macbeth",
+      "qid": "Q78648061"
+    },
+    {
+      "title": "La traviata",
+      "qid": "Q186162",
+      "key": "D major",
+      "instruments": [
+        "Tromba in Si♭",
+        "Corno in Fa",
+        "Bombardino",
+        "Tuba in Si♭"
+      ],
+      "year_composed": 1852
+    },
+    {
+      "title": "La traviata",
+      "qid": "Q3214220",
+      "key": "B♭ major",
+      "instruments": [
+        "Tenor",
+        "Bass",
+        "Piano"
+      ]
+    },
+    {
+      "title": "La zingara",
+      "qid": "Q125517156"
+    },
+    {
+      "title": "Laudi alla Vergine Maria",
+      "qid": "Q16268468"
+    },
+    {
+      "title": "Le Trouvère",
+      "qid": "Q2836444"
+    },
+    {
+      "title": "Les vêpres siciliennes",
+      "qid": "Q471645"
+    },
+    {
+      "title": "Liber scriptus = Gwelir llyfr ysgrifenedig : Requiem",
+      "qid": "Q78526961"
+    },
+    {
+      "title": "Libera me, Domine",
+      "qid": "Q60139304"
+    },
+    {
+      "title": "Libiamo ne' lieti calici",
+      "qid": "Q2603520",
+      "key": "B♭ major",
+      "instruments": [
+        "Sopran",
+        "Alt",
+        "Tenor",
+        "Bass"
+      ]
+    },
+    {
+      "title": "Lo spazzacamino",
+      "qid": "Q125517252"
+    },
+    {
+      "title": "Love Me, Alfredo!",
+      "qid": "Q77901176"
+    },
+    {
+      "title": "Luisa Miller",
+      "qid": "Q545265"
+    },
+    {
+      "title": "Ma se m'è forza perderti",
+      "qid": "Q54988912"
+    },
+    {
+      "title": "Macbeth",
+      "qid": "Q320363"
+    },
+    {
+      "title": "Macbeth",
+      "qid": "Q3274113"
+    },
+    {
+      "title": "Madre, pietosa Vergine = Forwyn drugarog, ddwyfol fam : la forza del destino",
+      "qid": "Q79267485"
+    },
+    {
+      "title": "Messa da Requiem",
+      "qid": "Q1356210",
+      "key": "F major",
+      "instruments": [
+        "Flute 1",
+        "Flute 2",
+        "Piccolo",
+        "Oboe 1",
+        "Oboe 2",
+        "B♭ Clarinet 1",
+        "B♭ Clarinet 2",
+        "Bassoon 1",
+        "Bassoon 2",
+        "Bassoon 3",
+        "Bassoon 4",
+        "Horn in F 1",
+        "Horn in F 2",
+        "Horn in C 3",
+        "Horn in C 4",
+        "C Trumpet 1",
+        "C Trumpet 2",
+        "C Trumpet 3",
+        "C Trumpet 4",
+        "Trombone 1",
+        "Trombone 2",
+        "Trombone 3"
+      ],
+      "year_composed": 1874
+    },
+    {
+      "title": "Messa da Requiem von Giuseppe Verdi",
+      "qid": "Q3115273"
+    },
+    {
+      "title": "Mona Lisa",
+      "qid": "Q55441228"
+    },
+    {
+      "title": "More, Elisa, lo stanco poeta",
+      "qid": "Q99214320"
+    },
+    {
+      "title": "Morro, ma prima in grazia = Gwae fi, yn awr ar farw : un ballo in maschera",
+      "qid": "Q78648156"
+    },
+    {
+      "title": "Mother, merciful Virgin",
+      "qid": "Q54988666"
+    },
+    {
+      "title": "Nabucco",
+      "qid": "Q202230",
+      "key": "F major",
+      "instruments": [
+        "Flute",
+        "Piano"
+      ],
+      "year_composed": 1841,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=34/verdi_nabucco_coro-di-schiavi-ebrei_(c)laffay.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nell'orror di notte oscura",
+      "qid": "Q99214349"
+    },
+    {
+      "title": "Non t'accostare all'urna",
+      "qid": "Q99214306"
+    },
+    {
+      "title": "Nora Helmer",
+      "qid": "Q3343449"
+    },
+    {
+      "title": "O dischius'è il firmamento",
+      "qid": "Q54988740"
+    },
+    {
+      "title": "O don fatale = O rodd alaethus : Don Carlo",
+      "qid": "Q78527061"
+    },
+    {
+      "title": "O father, is your image not imprinted on the fleeting clouds?",
+      "qid": "Q54988368"
+    },
+    {
+      "title": "O terrible gift",
+      "qid": "Q54988391"
+    },
+    {
+      "title": "Oberto, conte di San Bonifacio",
+      "qid": "Q636873"
+    },
+    {
+      "title": "Oh my homeland",
+      "qid": "Q54988314"
+    },
+    {
+      "title": "Oh! cruel fortune!",
+      "qid": "Q54988410"
+    },
+    {
+      "title": "Oh! de' verd'anni miei = O! fy mlynyddoedd gleision : Ernani",
+      "qid": "Q78648188"
+    },
+    {
+      "title": "Otello",
+      "qid": "Q15270897"
+    },
+    {
+      "title": "Otello",
+      "qid": "Q16683907"
+    },
+    {
+      "title": "Otello",
+      "qid": "Q3887056"
+    },
+    {
+      "title": "Othello",
+      "qid": "Q19297737"
+    },
+    {
+      "title": "Parmi veder le lagrime = Dagrau 'welaf yn llifo'n awr : Rigoletto",
+      "qid": "Q78648212"
+    },
+    {
+      "title": "Pater noster",
+      "qid": "Q27106474"
+    },
+    {
+      "title": "Peace, O mighty Father, give me peace!",
+      "qid": "Q54988670"
+    },
+    {
+      "title": "Per me giunto e il di supremo = Dyma ddiwrnod ac awr fy nhynged",
+      "qid": "Q78527097"
+    },
+    {
+      "title": "Perduta ho la pace",
+      "qid": "Q99214373"
+    },
+    {
+      "title": "Piazza Garibaldi",
+      "qid": "Q20005685"
+    },
+    {
+      "title": "Pieta, rispetto, onore = Trugaredd, parch a breiniau : Macbeth",
+      "qid": "Q78648220"
+    },
+    {
+      "title": "Questa o quella",
+      "qid": "Q3414268"
+    },
+    {
+      "title": "Re Lear",
+      "qid": "Q3421522"
+    },
+    {
+      "title": "Rigoletto",
+      "qid": "Q19800856",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/verdi_51477a_rigoletto_potpourri_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/verdi-liszt_50676a_rigoletto_paraphrase_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Rigoletto",
+      "qid": "Q19800903"
+    },
+    {
+      "title": "Rigoletto",
+      "qid": "Q189234",
+      "key": "E major",
+      "instruments": [
+        "Violin I",
+        "Violin II",
+        "Viola",
+        "Violoncello",
+        "Piano"
+      ],
+      "year_composed": 1850
+    },
+    {
+      "title": "Ritorna vincitor!",
+      "qid": "Q54988317"
+    },
+    {
+      "title": "Saper vorreste di che si veste = Fe garech wybod pa fasg sy'n briod : Un ballo in maschera",
+      "qid": "Q78527177"
+    },
+    {
+      "title": "Say if you are faithful",
+      "qid": "Q54988905"
+    },
+    {
+      "title": "Serenade",
+      "qid": "Q1057548"
+    },
+    {
+      "title": "She never loved me",
+      "qid": "Q54988389"
+    },
+    {
+      "title": "Shrieks the pyre!",
+      "qid": "Q54988594"
+    },
+    {
+      "title": "Simon Boccanegra",
+      "qid": "Q548161"
+    },
+    {
+      "title": "Stabat Mater",
+      "qid": "Q3967650"
+    },
+    {
+      "title": "Stiffelio",
+      "qid": "Q371584"
+    },
+    {
+      "title": "Stride la vampa = Gwridog y fflamau : Il Travatore",
+      "qid": "Q78648316"
+    },
+    {
+      "title": "Suona la tromba",
+      "qid": "Q7641857"
+    },
+    {
+      "title": "Te Deum (Giuseppe Verdi)",
+      "qid": "Q16268819"
+    },
+    {
+      "title": "The Bitter Tears of Petra von Kant",
+      "qid": "Q689300"
+    },
+    {
+      "title": "The Don Juans",
+      "qid": "Q11821482"
+    },
+    {
+      "title": "The Expulsion from Paradise",
+      "qid": "Q1217247"
+    },
+    {
+      "title": "The Force of Destiny",
+      "qid": "Q25209669"
+    },
+    {
+      "title": "The King's Jester",
+      "qid": "Q3795499"
+    },
+    {
+      "title": "The Lady of the Camellias",
+      "qid": "Q3824198"
+    },
+    {
+      "title": "The Power of Feelings",
+      "qid": "Q1214661"
+    },
+    {
+      "title": "The Troubadour",
+      "qid": "Q3148551"
+    },
+    {
+      "title": "The flashing of her smile",
+      "qid": "Q54988586"
+    },
+    {
+      "title": "The night was still and quiet",
+      "qid": "Q54988600"
+    },
+    {
+      "title": "The sea and soil of Provence",
+      "qid": "Q54988673"
+    },
+    {
+      "title": "The world seemed to smile",
+      "qid": "Q54988582"
+    },
+    {
+      "title": "Thou beneath whose almighty glance all men rejoice or weep",
+      "qid": "Q54988487"
+    },
+    {
+      "title": "Tu che le vanità",
+      "qid": "Q54988395"
+    },
+    {
+      "title": "Tu sul labbro",
+      "qid": "Q54988736"
+    },
+    {
+      "title": "Un ballo in maschera",
+      "qid": "Q221757"
+    },
+    {
+      "title": "Un di, felice, eterea",
+      "qid": "Q4052360"
+    },
+    {
+      "title": "Va, pensiero",
+      "qid": "Q1352178"
+    },
+    {
+      "title": "Verdi",
+      "qid": "Q1995633"
+    },
+    {
+      "title": "Verdi",
+      "qid": "Q3771609"
+    },
+    {
+      "title": "Victoria",
+      "qid": "Q7926527"
+    },
+    {
+      "title": "We Believed",
+      "qid": "Q3089485"
+    },
+    {
+      "title": "When at eventide, in the tranquil glimmer of a starry sky",
+      "qid": "Q54988707"
+    },
+    {
+      "title": "You were the one who stained her soul",
+      "qid": "Q54988867"
+    },
+    {
+      "title": "Young Toscanini",
+      "qid": "Q1227508"
+    },
+    {
+      "title": "popular trilogy",
+      "qid": "Q16268846"
+    },
+    {
+      "title": "Requiem (from the) for choir and orchestra (premi�re, 1874)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=verdi_requiem_2_dies_irae_(c)siu(16).mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=verdi_requiem_4_sanctus_(c)siu(16).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "La Traviata - Preludio",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/VerdiG/Traviata_Preludio/Traviata_Preludio.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

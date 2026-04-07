@@ -1,0 +1,84 @@
+{
+  "works": [
+    {
+      "title": "Pagliacci",
+      "qid": "Q248644"
+    },
+    {
+      "title": "Zingari",
+      "qid": "Q8012683"
+    },
+    {
+      "title": "Are You There?",
+      "qid": "Q4788478"
+    },
+    {
+      "title": "Chatterton",
+      "qid": "Q2065855"
+    },
+    {
+      "title": "Der Roland von Berlin",
+      "qid": "Q3705783"
+    },
+    {
+      "title": "Edipo re",
+      "qid": "Q1053009"
+    },
+    {
+      "title": "God bless you!",
+      "qid": "Q54983454"
+    },
+    {
+      "title": "I Medici",
+      "qid": "Q2555421"
+    },
+    {
+      "title": "La bohème",
+      "qid": "Q984983"
+    },
+    {
+      "title": "La bohème",
+      "qid": "Q109244102"
+    },
+    {
+      "title": "Laugh! Cool Clown",
+      "qid": "Q56711723"
+    },
+    {
+      "title": "Mameli",
+      "qid": "Q109244211"
+    },
+    {
+      "title": "Pagliacci",
+      "qid": "Q539721"
+    },
+    {
+      "title": "Pagliacci",
+      "qid": "Q3888952"
+    },
+    {
+      "title": "Pagliacci",
+      "qid": "Q3888955"
+    },
+    {
+      "title": "Stridono lassù",
+      "qid": "Q54983474"
+    },
+    {
+      "title": "Vesti la giubba",
+      "qid": "Q645543",
+      "key": "G major",
+      "instruments": [
+        "Voice"
+      ]
+    },
+    {
+      "title": "You're Breaking My Heart",
+      "qid": "Q17060232"
+    },
+    {
+      "title": "Zazà",
+      "qid": "Q167914"
+    }
+  ]
+}

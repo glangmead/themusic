@@ -1,0 +1,298 @@
+{
+  "works": [
+    {
+      "title": "Contrabajeando",
+      "qid": "Q118320398"
+    },
+    {
+      "title": "Fuga y misterio",
+      "qid": "Q105888460"
+    },
+    {
+      "title": "Tango-Études",
+      "qid": "Q110494895"
+    },
+    {
+      "title": "A Intrusa",
+      "qid": "Q9557722"
+    },
+    {
+      "title": "Adiós Nonino",
+      "qid": "Q2158791"
+    },
+    {
+      "title": "All Nudity Shall Be Punished",
+      "qid": "Q4729195"
+    },
+    {
+      "title": "Armaguedon",
+      "qid": "Q2861710"
+    },
+    {
+      "title": "Balada para un loco",
+      "qid": "Q5717004"
+    },
+    {
+      "title": "Bella Donna",
+      "qid": "Q4883351"
+    },
+    {
+      "title": "Brief Heaven",
+      "qid": "Q4967020"
+    },
+    {
+      "title": "Bólidos de acero",
+      "qid": "Q720800"
+    },
+    {
+      "title": "Close your eyes and listen",
+      "qid": "Q118208124"
+    },
+    {
+      "title": "Con gusto a rabia",
+      "qid": "Q5780691"
+    },
+    {
+      "title": "Concierto para quinteto",
+      "qid": "Q105897793"
+    },
+    {
+      "title": "Contrabajissimo",
+      "qid": "Q106089455"
+    },
+    {
+      "title": "Cuarteles de invierno",
+      "qid": "Q5793232"
+    },
+    {
+      "title": "Double concerto for guitar and bandoneon",
+      "qid": "Q115931483"
+    },
+    {
+      "title": "Eight seasons",
+      "qid": "Q57509010"
+    },
+    {
+      "title": "El Cielo en las manos",
+      "qid": "Q3837862"
+    },
+    {
+      "title": "El Crack",
+      "qid": "Q5351080"
+    },
+    {
+      "title": "El Infierno tan temido",
+      "qid": "Q624841"
+    },
+    {
+      "title": "El Tango",
+      "qid": "Q110910886"
+    },
+    {
+      "title": "Estaciones Porteñas",
+      "qid": "Q5400014"
+    },
+    {
+      "title": "Extraña ternura",
+      "qid": "Q5422286"
+    },
+    {
+      "title": "Five Tango Sensations",
+      "qid": "Q5456163"
+    },
+    {
+      "title": "Gigolo and Gigolette",
+      "qid": "Q15545302"
+    },
+    {
+      "title": "Henry IV",
+      "qid": "Q3725834"
+    },
+    {
+      "title": "Histoire du Tango",
+      "qid": "Q5773096"
+    },
+    {
+      "title": "It's Raining on Santiago",
+      "qid": "Q3148534"
+    },
+    {
+      "title": "La Camorra",
+      "qid": "Q3821565"
+    },
+    {
+      "title": "La Fiaca",
+      "qid": "Q18709339"
+    },
+    {
+      "title": "La boutique",
+      "qid": "Q17274753"
+    },
+    {
+      "title": "La fin del mundo",
+      "qid": "Q16588216"
+    },
+    {
+      "title": "La resistencia",
+      "qid": "Q6464842"
+    },
+    {
+      "title": "Las Locas del conventillo",
+      "qid": "Q6492280"
+    },
+    {
+      "title": "Las furias",
+      "qid": "Q6492214"
+    },
+    {
+      "title": "Le Grand Tango",
+      "qid": "Q42190553"
+    },
+    {
+      "title": "Le Pont du Nord",
+      "qid": "Q25503"
+    },
+    {
+      "title": "Libertango",
+      "qid": "Q1073405",
+      "instruments": [
+        "Cello1",
+        "Cello2"
+      ],
+      "year_composed": 1974
+    },
+    {
+      "title": "Los que verán a Dios",
+      "qid": "Q6683443"
+    },
+    {
+      "title": "Lumière",
+      "qid": "Q3267342"
+    },
+    {
+      "title": "Marta Ferrari",
+      "qid": "Q6774115"
+    },
+    {
+      "title": "María de Buenos Aires",
+      "qid": "Q1422674"
+    },
+    {
+      "title": "Milonga del Ángel",
+      "qid": "Q6860419"
+    },
+    {
+      "title": "Oblivion",
+      "qid": "Q25394475",
+      "key": "E♭ major",
+      "instruments": [
+        "Violoncello",
+        "Fagotto",
+        "Piano"
+      ],
+      "year_composed": 1982
+    },
+    {
+      "title": "Paula cautiva",
+      "qid": "Q5409937"
+    },
+    {
+      "title": "Quinto año nacional",
+      "qid": "Q7272465"
+    },
+    {
+      "title": "Río Sena",
+      "qid": "Q65557131"
+    },
+    {
+      "title": "S.V.P.",
+      "qid": "Q65557962"
+    },
+    {
+      "title": "Stella Maris",
+      "qid": "Q11307865"
+    },
+    {
+      "title": "Suite Punta del Este",
+      "qid": "Q7635565"
+    },
+    {
+      "title": "Suite Troileana",
+      "qid": "Q106249199"
+    },
+    {
+      "title": "Suite del Ángel",
+      "qid": "Q100982656"
+    },
+    {
+      "title": "Sur",
+      "qid": "Q2276282"
+    },
+    {
+      "title": "Sábado a la noche, cine",
+      "qid": "Q16637181"
+    },
+    {
+      "title": "Tango Fiesta",
+      "qid": "Q57698463"
+    },
+    {
+      "title": "Tango Suite",
+      "qid": "Q112869287"
+    },
+    {
+      "title": "Tango ballet",
+      "qid": "Q116498152"
+    },
+    {
+      "title": "Tangos, the Exile of Gardel",
+      "qid": "Q518485"
+    },
+    {
+      "title": "The Bitter Stems",
+      "qid": "Q5981219"
+    },
+    {
+      "title": "The Lion with the White Beard",
+      "qid": "Q4256173"
+    },
+    {
+      "title": "To Return",
+      "qid": "Q21003748"
+    },
+    {
+      "title": "Tristezas de un doble A",
+      "qid": "Q123906715"
+    },
+    {
+      "title": "Una Viuda difícil",
+      "qid": "Q7882173"
+    },
+    {
+      "title": "Violencia en la ciudad",
+      "qid": "Q7933154"
+    },
+    {
+      "title": "Vuelvo al Sur",
+      "qid": "Q4016601",
+      "key": "B♭ major",
+      "instruments": [
+        "Гармоника",
+        "Фортепиано"
+      ],
+      "year_composed": 1988
+    },
+    {
+      "title": "What's Autumn?",
+      "qid": "Q12156008"
+    },
+    {
+      "title": "When the City Awakes",
+      "qid": "Q15965530"
+    },
+    {
+      "title": "With Life and Soul",
+      "qid": "Q8028005"
+    }
+  ]
+}

@@ -1,0 +1,369 @@
+{
+  "works": [
+    {
+      "title": "Fancy Free",
+      "qid": "Q1395476"
+    },
+    {
+      "title": "New York, New York",
+      "qid": "Q7012944"
+    },
+    {
+      "title": "Serenade after Plato's \"Symposium\"",
+      "qid": "Q7453159"
+    },
+    {
+      "title": "Bridal Suite",
+      "qid": "Q110917610"
+    },
+    {
+      "title": "Halil",
+      "qid": "Q5642296"
+    },
+    {
+      "title": "1600 Pennsylvania Avenue",
+      "qid": "Q4551092"
+    },
+    {
+      "title": "1600 Pennsylvania Avenue",
+      "qid": "Q54992235"
+    },
+    {
+      "title": "A Boy Like That",
+      "qid": "Q3298707"
+    },
+    {
+      "title": "A Musical Toast",
+      "qid": "Q134600661"
+    },
+    {
+      "title": "A Party with Betty Comden and Adolph Green",
+      "qid": "Q4658713"
+    },
+    {
+      "title": "A Quiet Place",
+      "qid": "Q4659122"
+    },
+    {
+      "title": "America",
+      "qid": "Q4742729",
+      "key": "C major",
+      "instruments": [
+        "MusicXML Part",
+        "Piano"
+      ],
+      "year_composed": 1957
+    },
+    {
+      "title": "CBS Music",
+      "qid": "Q125700974"
+    },
+    {
+      "title": "Candide",
+      "qid": "Q1033015"
+    },
+    {
+      "title": "Chichester Psalms",
+      "qid": "Q1042113"
+    },
+    {
+      "title": "Chichester Psalms",
+      "qid": "Q5096010"
+    },
+    {
+      "title": "Cool",
+      "qid": "Q5167245"
+    },
+    {
+      "title": "Dance Suite",
+      "qid": "Q5215205"
+    },
+    {
+      "title": "Dear Boy",
+      "qid": "Q54971778"
+    },
+    {
+      "title": "Divertimento for Orchestra",
+      "qid": "Q1230598"
+    },
+    {
+      "title": "Dybbuk",
+      "qid": "Q13479303"
+    },
+    {
+      "title": "Eldorado",
+      "qid": "Q54971819"
+    },
+    {
+      "title": "Elegy for Mippy",
+      "qid": "Q76409557"
+    },
+    {
+      "title": "Four Anniversaries for the Piano",
+      "qid": "Q3079977"
+    },
+    {
+      "title": "Glitter and be Gay",
+      "qid": "Q54971812"
+    },
+    {
+      "title": "Hashkiveinu",
+      "qid": "Q5679049"
+    },
+    {
+      "title": "I Feel Pretty",
+      "qid": "Q17011940"
+    },
+    {
+      "title": "I Have a Love",
+      "qid": "Q79160427"
+    },
+    {
+      "title": "I am easily assimilated",
+      "qid": "Q54971793"
+    },
+    {
+      "title": "I was standing in a garden",
+      "qid": "Q54971869"
+    },
+    {
+      "title": "It Must be Me",
+      "qid": "Q54971822"
+    },
+    {
+      "title": "It Must be So",
+      "qid": "Q54971823"
+    },
+    {
+      "title": "La Bonne Cuisine: Four Recipes for Voice and Piano",
+      "qid": "Q106298561"
+    },
+    {
+      "title": "Lonely Town",
+      "qid": "Q96240343"
+    },
+    {
+      "title": "Lonely Town",
+      "qid": "Q106253948"
+    },
+    {
+      "title": "Maestro",
+      "qid": "Q111907282"
+    },
+    {
+      "title": "Maria",
+      "qid": "Q3847081"
+    },
+    {
+      "title": "Mass",
+      "qid": "Q1907308"
+    },
+    {
+      "title": "Missa Brevis",
+      "qid": "Q6878138"
+    },
+    {
+      "title": "Mommy, are you here?",
+      "qid": "Q54971767"
+    },
+    {
+      "title": "My Love",
+      "qid": "Q54971836"
+    },
+    {
+      "title": "Ohio",
+      "qid": "Q7080727"
+    },
+    {
+      "title": "On the Town",
+      "qid": "Q32011"
+    },
+    {
+      "title": "On the Town",
+      "qid": "Q15694166"
+    },
+    {
+      "title": "On the Town",
+      "qid": "Q54992239"
+    },
+    {
+      "title": "On the Waterfront",
+      "qid": "Q211372"
+    },
+    {
+      "title": "One Hand, One Heart",
+      "qid": "Q48770373"
+    },
+    {
+      "title": "Opening Prayer",
+      "qid": "Q56278021"
+    },
+    {
+      "title": "Peter Pan",
+      "qid": "Q7176280"
+    },
+    {
+      "title": "Piano Trio",
+      "qid": "Q3539333"
+    },
+    {
+      "title": "Prelude, Fugue, and Riffs",
+      "qid": "Q7240053"
+    },
+    {
+      "title": "Slava! A Political Overture",
+      "qid": "Q7539092"
+    },
+    {
+      "title": "So Pretty",
+      "qid": "Q22043307"
+    },
+    {
+      "title": "Something to Dance About",
+      "qid": "Q119160977"
+    },
+    {
+      "title": "Something's Coming",
+      "qid": "Q17036527",
+      "key": "D major",
+      "instruments": [
+        "Flute 1",
+        "Flute 2",
+        "Flute 3",
+        "Clarinet 1",
+        "Clarinet 2",
+        "Clarinet 3",
+        "Bass Clarinet",
+        "Bassoon",
+        "F Horn 1",
+        "F Horn 2",
+        "Trumpet 1",
+        "Trumpet 2",
+        "Trumpet 3",
+        "Trombone 1",
+        "Trombone 2",
+        "Piano",
+        "Celesta",
+        "Guitar",
+        "Drumset"
+      ],
+      "year_composed": 1957
+    },
+    {
+      "title": "Somewhere",
+      "qid": "Q2231931",
+      "key": "C major",
+      "instruments": [
+        "Part I",
+        "Part II",
+        "Piano"
+      ],
+      "year_composed": 1956
+    },
+    {
+      "title": "Sonata for Clarinet and Piano",
+      "qid": "Q3490084"
+    },
+    {
+      "title": "Songfest: A Cycle of American Poems for Six Singers and Orchestra",
+      "qid": "Q7561254"
+    },
+    {
+      "title": "Symphonic Dances from West Side Story",
+      "qid": "Q96633213"
+    },
+    {
+      "title": "Symphonic Dances from West Side Story",
+      "qid": "Q122212475"
+    },
+    {
+      "title": "Symphony No. 1",
+      "qid": "Q163499"
+    },
+    {
+      "title": "Symphony No. 2",
+      "qid": "Q210455"
+    },
+    {
+      "title": "Symphony No. 3",
+      "qid": "Q223491"
+    },
+    {
+      "title": "The Lark",
+      "qid": "Q1686043"
+    },
+    {
+      "title": "The Race to Urga",
+      "qid": "Q7759181"
+    },
+    {
+      "title": "There's a law",
+      "qid": "Q54971856"
+    },
+    {
+      "title": "Tonight",
+      "qid": "Q2776421"
+    },
+    {
+      "title": "Tonight Quintet",
+      "qid": "Q7821459"
+    },
+    {
+      "title": "Trouble in Tahiti",
+      "qid": "Q377876"
+    },
+    {
+      "title": "West Side Story",
+      "qid": "Q273704"
+    },
+    {
+      "title": "West Side Story",
+      "qid": "Q669010"
+    },
+    {
+      "title": "West Side Story",
+      "qid": "Q54992258"
+    },
+    {
+      "title": "West Side Story",
+      "qid": "Q63643994",
+      "key": "B major",
+      "instruments": [
+        "Clarinette en Si♭ solo",
+        "Clarinette Basse solo",
+        "Clarinette en Si♭1",
+        "Clarinette en Si♭2",
+        "Clarinette en Si♭3",
+        "Clarinette Basse"
+      ]
+    },
+    {
+      "title": "West Side Story Suite",
+      "qid": "Q7986530"
+    },
+    {
+      "title": "West Side Story – Original English Cast",
+      "qid": "Q104052934"
+    },
+    {
+      "title": "What a movie!",
+      "qid": "Q54971874"
+    },
+    {
+      "title": "Wonderful Town",
+      "qid": "Q2306874"
+    },
+    {
+      "title": "Wonderful Town",
+      "qid": "Q54992274"
+    },
+    {
+      "title": "Young people, old voices (2002-2003)",
+      "qid": "Q57508854"
+    },
+    {
+      "title": "Young people, old voices (2006-2007)",
+      "qid": "Q57504162"
+    }
+  ]
+}

@@ -3,8 +3,8 @@
 //  Orbital
 //
 //  Observable data manager for the classical music catalog.
-//  Loads composers from bundle, lazily loads per-composer work groups
-//  off the main thread, and caches results.
+//  Loads composers and works from the catalog_v2 bundle data,
+//  lazily loads per-composer works off the main thread, and caches results.
 //
 
 import Foundation
@@ -15,25 +15,24 @@ class ClassicsCatalogLibrary {
   // MARK: - Sort
 
   enum SortOrder: String, CaseIterable, Identifiable {
-    case pageviews = "Wikipedia Views"
     case lastName  = "Last Name"
     case birthYear = "Birth Year"
     var id: String { rawValue }
   }
 
-  var sortOrder: SortOrder = .pageviews { didSet { recomputeSorted() } }
-  var sortAscending: Bool = false { didSet { recomputeSorted() } }
+  var sortOrder: SortOrder = .lastName { didSet { recomputeSorted() } }
+  var sortAscending: Bool = true { didSet { recomputeSorted() } }
 
   // MARK: - Data
 
-  private(set) var composers: [ComposerEntry] = []
-  private(set) var sortedComposers: [ComposerEntry] = []
-  private var workGroupsCache: [String: [WorkGroup]] = [:]
+  private(set) var composers: [CatalogComposer] = []
+  private(set) var sortedComposers: [CatalogComposer] = []
+  private var worksCache: [String: [CatalogWork]] = [:]
   private var composerCountsCache: [String: ComposerCounts] = [:]
 
-  struct ComposerCounts {
-    let playableGroups: Int   // distinct wikidata works with playable MIDI
-    let totalRenditions: Int  // total individual MIDI files
+  struct ComposerCounts: Sendable {
+    let totalWorks: Int
+    let worksWithMidi: Int
   }
 
   // MARK: - Derived
@@ -42,8 +41,6 @@ class ClassicsCatalogLibrary {
     sortedComposers = composers.sorted { a, b in
       let asc: Bool
       switch sortOrder {
-      case .pageviews:
-        asc = (a.pageviewsYearly ?? 0) < (b.pageviewsYearly ?? 0)
       case .lastName:
         asc = a.lastName.localizedCaseInsensitiveCompare(b.lastName) == .orderedAscending
       case .birthYear:
@@ -56,7 +53,9 @@ class ClassicsCatalogLibrary {
   // MARK: - Loading
 
   func load() {
-    composers = Bundle.main.decode([ComposerEntry].self, from: "composers.json", subdirectory: "catalog")
+    composers = Bundle.main.decode(
+      [CatalogComposer].self, from: "composers.json", subdirectory: "catalog_v2"
+    )
     recomputeSorted()
   }
 
@@ -64,101 +63,58 @@ class ClassicsCatalogLibrary {
     composerCountsCache[slug]
   }
 
-  /// Preload work groups for all composers, updating counts incrementally.
-  /// Safe to call repeatedly; no-op if already loaded.
+  /// Preload works for all composers, updating counts incrementally.
   func preloadAllWorkGroups() async {
-    let slugs = composers.map(\.slug).filter { workGroupsCache[$0] == nil }
+    let slugs = composers.map(\.slug).filter { worksCache[$0] == nil }
     guard !slugs.isEmpty else { return }
 
     for slug in slugs {
-      let groups = await Task.detached(priority: .userInitiated) {
-        ClassicsCatalogLibrary.computeWorkGroups(composerSlug: slug)
+      let works = await Task.detached(priority: .userInitiated) {
+        ClassicsCatalogLibrary.loadWorksFromBundle(composerSlug: slug)
       }.value
-      workGroupsCache[slug] = groups
+      worksCache[slug] = works
       composerCountsCache[slug] = ComposerCounts(
-        playableGroups: groups.count,
-        totalRenditions: groups.reduce(0) { $0 + $1.renditions.count }
+        totalWorks: works.count,
+        worksWithMidi: works.filter { !($0.sources?.isEmpty ?? true) }.count
       )
     }
   }
 
-  /// Load and cache work groups for a composer. Safe to call repeatedly; no-op if already cached.
-  func loadWorkGroupsIfNeeded(for composer: ComposerEntry) async {
+  /// Load and cache works for a composer. No-op if already cached.
+  func loadWorksIfNeeded(for composer: CatalogComposer) async {
     let slug = composer.slug
-    guard workGroupsCache[slug] == nil else { return }
+    guard worksCache[slug] == nil else { return }
 
-    let groups = await Task.detached(priority: .userInitiated) {
-      ClassicsCatalogLibrary.computeWorkGroups(composerSlug: slug)
+    let works = await Task.detached(priority: .userInitiated) {
+      ClassicsCatalogLibrary.loadWorksFromBundle(composerSlug: slug)
     }.value
 
-    workGroupsCache[slug] = groups
+    worksCache[slug] = works
     composerCountsCache[slug] = ComposerCounts(
-      playableGroups: groups.count,
-      totalRenditions: groups.reduce(0) { $0 + $1.renditions.count }
+      totalWorks: works.count,
+      worksWithMidi: works.filter { !($0.sources?.isEmpty ?? true) }.count
     )
   }
 
-  func cachedWorkGroups(for slug: String) -> [WorkGroup] {
-    workGroupsCache[slug] ?? []
+  func cachedWorks(for slug: String) -> [CatalogWork] {
+    worksCache[slug] ?? []
   }
 
   // MARK: - Bundle I/O (nonisolated — runs off main actor via Task.detached)
 
-  nonisolated static func computeWorkGroups(composerSlug: String) -> [WorkGroup] {
-    // Load the playback catalog (required — composer must have playable MIDI)
-    let playbackSubdir = "catalog_playback/\(composerSlug)"
-    guard let playbackURL = Bundle.main.url(forResource: "index", withExtension: "json", subdirectory: playbackSubdir) else {
-      print("[ClassicsCatalog] catalog_playback/\(composerSlug)/index.json not found in bundle")
+  nonisolated static func loadWorksFromBundle(composerSlug: String) -> [CatalogWork] {
+    guard let url = Bundle.main.url(
+      forResource: composerSlug, withExtension: "json", subdirectory: "catalog_v2/works"
+    ) else {
       return []
     }
-    guard let data = try? Data(contentsOf: playbackURL) else {
-      print("[ClassicsCatalog] Could not read data at \(playbackURL.path)")
+    guard let data = try? Data(contentsOf: url) else {
       return []
     }
-    let playbackCatalog: ComposerPlaybackCatalog
-    do {
-      playbackCatalog = try JSONDecoder().decode(ComposerPlaybackCatalog.self, from: data)
-    } catch {
-      print("[ClassicsCatalog] Decode error for \(composerSlug): \(error)")
+    let decoder = JSONDecoder()
+    guard let file = try? decoder.decode(ComposerWorksFile.self, from: data) else {
       return []
     }
-
-    // Load the works catalog (optional — enriches sections with work metadata)
-    var worksByQid: [String: WorkEntry] = [:]
-    if let worksURL = Bundle.main.url(forResource: composerSlug, withExtension: "json", subdirectory: "catalog/works"),
-    let worksData = try? Data(contentsOf: worksURL),
-    let worksCatalog = try? JSONDecoder().decode(ComposerWorksCatalog.self, from: worksData) {
-      for work in worksCatalog.works {
-        worksByQid[work.qid] = work
-      }
-    }
-
-    // Group renditions by wikidata_id, preserving order of first appearance.
-    // Skip renditions with no MIDI file (null midi in JSON).
-    var groups: [String: [PlaybackRendition]] = [:]
-    var groupOrder: [String] = []
-    for rendition in playbackCatalog.works where rendition.midi != nil {
-      let key = rendition.wikidataId ?? "ungrouped/\(rendition.midi!)"
-      if groups[key] == nil {
-        groups[key] = []
-        groupOrder.append(key)
-      }
-      groups[key]!.append(rendition)
-    }
-
-    return groupOrder.compactMap { key in
-      guard let renditions = groups[key], !renditions.isEmpty else { return nil }
-      let workEntry = renditions.first?.wikidataId.flatMap { worksByQid[$0] }
-      let displayTitle = renditions.first?.displayTitle
-        ?? renditions.first?.wikidataTitle
-        ?? renditions.first?.title
-        ?? key
-      return WorkGroup(
-        wikidataId: key,
-        displayTitle: displayTitle,
-        workEntry: workEntry,
-        renditions: renditions
-      )
-    }
+    return file.works
   }
 }

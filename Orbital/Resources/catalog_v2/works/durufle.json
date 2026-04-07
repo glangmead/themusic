@@ -1,0 +1,22 @@
+{
+  "works": [
+    {
+      "title": "Requiem",
+      "qid": "Q1510137"
+    },
+    {
+      "title": "Notre Père",
+      "qid": "Q11495836",
+      "key": "F major",
+      "instruments": [
+        "Alto",
+        "Bass"
+      ],
+      "year_composed": 1977
+    },
+    {
+      "title": "Quatre Motets sur des thèmes grégoriens",
+      "qid": "Q41095843"
+    }
+  ]
+}

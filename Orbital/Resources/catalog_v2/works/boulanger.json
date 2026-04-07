@@ -1,0 +1,157 @@
+{
+  "works": [
+    {
+      "title": "Pièce",
+      "qid": "Q131143505"
+    },
+    {
+      "title": "Nocturne",
+      "qid": "Q131153202"
+    },
+    {
+      "title": "Prélude en ré bémol",
+      "qid": "Q131144720"
+    },
+    {
+      "title": "Prélude en si",
+      "qid": "Q131144170"
+    },
+    {
+      "title": "Reflets",
+      "qid": "Q131105759"
+    },
+    {
+      "title": "Sous-bois",
+      "qid": "Q131107967"
+    },
+    {
+      "title": "La Source",
+      "qid": "Q131137115"
+    },
+    {
+      "title": "Le Retour",
+      "qid": "Q131106973"
+    },
+    {
+      "title": "Pendant la tempête",
+      "qid": "Q131138323"
+    },
+    {
+      "title": "D'un jardin clair",
+      "qid": "Q131156182"
+    },
+    {
+      "title": "Du fond de l'abîme",
+      "qid": "Q26211239"
+    },
+    {
+      "title": "Dans l'immense tristesse",
+      "qid": "Q131084999"
+    },
+    {
+      "title": "Attente",
+      "qid": "Q131098519"
+    },
+    {
+      "title": "Clairières dans le ciel",
+      "qid": "Q48746845"
+    },
+    {
+      "title": "Cortège",
+      "qid": "Q131153245",
+      "key": "B major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1914
+    },
+    {
+      "title": "D'un matin de printemps",
+      "qid": "Q28493541"
+    },
+    {
+      "title": "D'un soir triste",
+      "qid": "Q130974686"
+    },
+    {
+      "title": "D'un vieux jardin",
+      "qid": "Q131154988",
+      "key": "E major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1914
+    },
+    {
+      "title": "Faust et Hélène",
+      "qid": "Q20724596"
+    },
+    {
+      "title": "Hymne au soleil",
+      "qid": "Q130873257"
+    },
+    {
+      "title": "Les Sirènes",
+      "qid": "Q130914166"
+    },
+    {
+      "title": "Marche gaie",
+      "qid": "Q131177790"
+    },
+    {
+      "title": "Pie Jesu",
+      "qid": "Q28496705",
+      "key": "B♭ major",
+      "instruments": [
+        "Chant",
+        "Violin I",
+        "Violin II",
+        "Viola",
+        "Violoncello",
+        "Harp",
+        "Organ"
+      ]
+    },
+    {
+      "title": "Pour les funérailles d'un soldat",
+      "qid": "Q28493567"
+    },
+    {
+      "title": "Psaume 24",
+      "qid": "Q122413727"
+    },
+    {
+      "title": "Renouveau",
+      "qid": "Q130970022"
+    },
+    {
+      "title": "Soir sur la plaine",
+      "qid": "Q116867251",
+      "key": "B major",
+      "instruments": [
+        "Soprano I",
+        "Soprano II",
+        "Alto I",
+        "Alto II",
+        "Tenor I",
+        "Tenor II",
+        "Bass I",
+        "Bass II",
+        "Piano"
+      ],
+      "year_composed": 1913
+    },
+    {
+      "title": "Soleils de septembre",
+      "qid": "Q131108932"
+    },
+    {
+      "title": "Theme et Variations",
+      "qid": "Q28496693"
+    },
+    {
+      "title": "Vieille prière bouddhique",
+      "qid": "Q28493566"
+    }
+  ]
+}

@@ -1,0 +1,636 @@
+{
+  "works": [
+    {
+      "title": "En Saga",
+      "qid": "Q912857"
+    },
+    {
+      "title": "Kullervo",
+      "qid": "Q933311"
+    },
+    {
+      "title": "Karelia Suite",
+      "qid": "Q1299710"
+    },
+    {
+      "title": "Piano sonata in F major, Op. 12",
+      "qid": "Q18379265"
+    },
+    {
+      "title": "The Swan of Tuonela",
+      "qid": "Q2237270"
+    },
+    {
+      "title": "Lemminkäinen Suite",
+      "qid": "Q1549809"
+    },
+    {
+      "title": "Pelléas et Mélisande",
+      "qid": "Q1848709"
+    },
+    {
+      "title": "The Wood Nymph",
+      "qid": "Q27981037"
+    },
+    {
+      "title": "Jungfrun i tornet",
+      "qid": "Q6312740"
+    },
+    {
+      "title": "Sången om korsspindeln",
+      "qid": "Q42904251"
+    },
+    {
+      "title": "Symphony No. 1",
+      "qid": "Q163596",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=sibelius_symphony_2_1_(c)gilbert.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=sibelius_symphony_2_2_(c)gilbert.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Romance, op. 24, no. 9",
+      "qid": "Q136905169",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/sibelius_5842d_romance_op_24_9_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Origin of Fire",
+      "qid": "Q7755348"
+    },
+    {
+      "title": "Kuolema",
+      "qid": "Q3200500"
+    },
+    {
+      "title": "Violin Concerto",
+      "qid": "Q1468572"
+    },
+    {
+      "title": "Cassazione",
+      "qid": "Q21998392"
+    },
+    {
+      "title": "Kyllikki",
+      "qid": "Q18209057"
+    },
+    {
+      "title": "Belshazzar's Feast",
+      "qid": "Q4884679"
+    },
+    {
+      "title": "Pohjola's Daughter",
+      "qid": "Q4354192"
+    },
+    {
+      "title": "Six Songs, Op. 50",
+      "qid": "Q125030488"
+    },
+    {
+      "title": "Vapautettu kuningatar",
+      "qid": "Q24963891"
+    },
+    {
+      "title": "Symphony No. 3",
+      "qid": "Q223539"
+    },
+    {
+      "title": "Nightride and Sunrise",
+      "qid": "Q2963055"
+    },
+    {
+      "title": "Svanevit",
+      "qid": "Q11580557"
+    },
+    {
+      "title": "String Quartet in D minor",
+      "qid": "Q3047130"
+    },
+    {
+      "title": "Symphony No. 4",
+      "qid": "Q3961741"
+    },
+    {
+      "title": "Rakastava",
+      "qid": "Q2396341"
+    },
+    {
+      "title": "The Bells of Kallio Church",
+      "qid": "Q122144258"
+    },
+    {
+      "title": "Luonnotar",
+      "qid": "Q1877563"
+    },
+    {
+      "title": "The Bard",
+      "qid": "Q1127388"
+    },
+    {
+      "title": "Two Serenades",
+      "qid": "Q123018786"
+    },
+    {
+      "title": "The Oceanides",
+      "qid": "Q300916"
+    },
+    {
+      "title": "Six Humoresques",
+      "qid": "Q117312732"
+    },
+    {
+      "title": "Oma maa",
+      "qid": "Q23035509"
+    },
+    {
+      "title": "Symphony No. 6",
+      "qid": "Q246546"
+    },
+    {
+      "title": "Symphony No. 7",
+      "qid": "Q261122"
+    },
+    {
+      "title": "Tapiola",
+      "qid": "Q1856873"
+    },
+    {
+      "title": "3 Sonatinas",
+      "qid": "Q123374327"
+    },
+    {
+      "title": "Academic cantatas",
+      "qid": "Q23133125"
+    },
+    {
+      "title": "Andante Festivo",
+      "qid": "Q3275057"
+    },
+    {
+      "title": "Arioso",
+      "qid": "Q124740005"
+    },
+    {
+      "title": "Cantata for the Coronation of Nicholas II",
+      "qid": "Q123692419"
+    },
+    {
+      "title": "Cantata for the University Graduation Ceremonies of 1894",
+      "qid": "Q123677470"
+    },
+    {
+      "title": "Compositions for brass septet by Jean Sibelius",
+      "qid": "Q124485983"
+    },
+    {
+      "title": "Danses champêtre",
+      "qid": "Q136756570"
+    },
+    {
+      "title": "Erämaan turvissa",
+      "qid": "Q11858545"
+    },
+    {
+      "title": "Finlandia",
+      "qid": "Q644152",
+      "key": "A♭ major",
+      "instruments": [
+        "2 Flutes",
+        "2 Oboes",
+        "2 Clarinets in B♭",
+        "2 Bassoons",
+        "Horns in F",
+        "Trumpets in F",
+        "Trombones",
+        "Tuba",
+        "Timpani in A, E♭",
+        "Percussion",
+        "First Violins",
+        "Second Violins",
+        "Violas",
+        "Violoncellos",
+        "Contrabasses"
+      ],
+      "year_composed": 1900
+    },
+    {
+      "title": "Finlandia",
+      "qid": "Q113587358"
+    },
+    {
+      "title": "Finlandia Hymn",
+      "qid": "Q17004659"
+    },
+    {
+      "title": "Five Christmas songs",
+      "qid": "Q5455856"
+    },
+    {
+      "title": "Five Esquisses",
+      "qid": "Q124289550"
+    },
+    {
+      "title": "Five Pieces, Op. 75",
+      "qid": "Q124323180"
+    },
+    {
+      "title": "Five Pieces, Op. 85",
+      "qid": "Q124323162"
+    },
+    {
+      "title": "Five Songs, Op. 37",
+      "qid": "Q124842682"
+    },
+    {
+      "title": "Five Songs, Op. 38",
+      "qid": "Q124842685"
+    },
+    {
+      "title": "For the Honour of the Creator",
+      "qid": "Q88408867"
+    },
+    {
+      "title": "Four Pieces, Op. 115",
+      "qid": "Q136756574"
+    },
+    {
+      "title": "Gebo and the Shadow",
+      "qid": "Q3100038"
+    },
+    {
+      "title": "Giv mig ej glans, ej guld, ej prakt",
+      "qid": "Q3374513"
+    },
+    {
+      "title": "Hymn",
+      "qid": "Q124735260"
+    },
+    {
+      "title": "Hymn of the Earth",
+      "qid": "Q121775464"
+    },
+    {
+      "title": "Höstkväll",
+      "qid": "Q130318023"
+    },
+    {
+      "title": "Impromptu",
+      "qid": "Q123501522"
+    },
+    {
+      "title": "In Memoriam",
+      "qid": "Q21998556"
+    },
+    {
+      "title": "Islossningen i Ule älv",
+      "qid": "Q21998564"
+    },
+    {
+      "title": "Islossningen i Ule älv",
+      "qid": "Q31897710"
+    },
+    {
+      "title": "Jean Sibelius: Songs",
+      "qid": "Q11866282"
+    },
+    {
+      "title": "Jedermann",
+      "qid": "Q18359218"
+    },
+    {
+      "title": "Jäger March",
+      "qid": "Q3811741"
+    },
+    {
+      "title": "King Christian II Suite",
+      "qid": "Q6411321"
+    },
+    {
+      "title": "Kunniamarssi 1929",
+      "qid": "Q11873468"
+    },
+    {
+      "title": "Land of the Rising Sun",
+      "qid": "Q1036517"
+    },
+    {
+      "title": "Lasse liten",
+      "qid": "Q10554725"
+    },
+    {
+      "title": "Malinconia",
+      "qid": "Q124333985"
+    },
+    {
+      "title": "Marjatta",
+      "qid": "Q123739246"
+    },
+    {
+      "title": "Novellette",
+      "qid": "Q136756649"
+    },
+    {
+      "title": "Overture in A minor",
+      "qid": "Q123501416"
+    },
+    {
+      "title": "Overture in E major and Ballet Scene",
+      "qid": "Q125314970"
+    },
+    {
+      "title": "Pan and Echo",
+      "qid": "Q22678645"
+    },
+    {
+      "title": "Piano Quintet in G minor",
+      "qid": "Q124353136"
+    },
+    {
+      "title": "Piano Trio in A minor",
+      "qid": "Q124362353"
+    },
+    {
+      "title": "Piano Trio in C major",
+      "qid": "Q124362456"
+    },
+    {
+      "title": "Piano Trio in D major",
+      "qid": "Q124362349"
+    },
+    {
+      "title": "Scaramouche",
+      "qid": "Q23714541"
+    },
+    {
+      "title": "Scènes historiques I",
+      "qid": "Q136746517"
+    },
+    {
+      "title": "Scènes historiques II",
+      "qid": "Q136746532"
+    },
+    {
+      "title": "Serenad",
+      "qid": "Q125202468"
+    },
+    {
+      "title": "Seven Songs, Op. 17",
+      "qid": "Q7457449"
+    },
+    {
+      "title": "Sibelius",
+      "qid": "Q11893320"
+    },
+    {
+      "title": "Six Impromptus",
+      "qid": "Q124296492"
+    },
+    {
+      "title": "Six Partsongs",
+      "qid": "Q124735161"
+    },
+    {
+      "title": "Six Runeberg Songs",
+      "qid": "Q125101762"
+    },
+    {
+      "title": "Snöfrid",
+      "qid": "Q28233854"
+    },
+    {
+      "title": "Song of the Athenians (Sibelius)",
+      "qid": "Q126598541"
+    },
+    {
+      "title": "Song of the Earth",
+      "qid": "Q123583641"
+    },
+    {
+      "title": "Songs for Mixed Chorus from the 1897 Promotional Cantata",
+      "qid": "Q123677442"
+    },
+    {
+      "title": "Spring Song",
+      "qid": "Q7580676"
+    },
+    {
+      "title": "String Quartet in A minor",
+      "qid": "Q124344915"
+    },
+    {
+      "title": "String Quartet in B-flat major",
+      "qid": "Q124344946"
+    },
+    {
+      "title": "String Quartet in B-flat major",
+      "qid": "Q2187125"
+    },
+    {
+      "title": "String Quartet in E-flat major",
+      "qid": "Q124344786"
+    },
+    {
+      "title": "Suite caractéristique",
+      "qid": "Q124255487"
+    },
+    {
+      "title": "Suite champêtre",
+      "qid": "Q124255571"
+    },
+    {
+      "title": "Suite for Violin and String Orchestra",
+      "qid": "Q123363096"
+    },
+    {
+      "title": "Suite mignonne",
+      "qid": "Q124255581"
+    },
+    {
+      "title": "Symphonies of Jean Sibelius",
+      "qid": "Q7222495"
+    },
+    {
+      "title": "Symphony No. 2",
+      "qid": "Q210577"
+    },
+    {
+      "title": "Symphony No. 5",
+      "qid": "Q240296"
+    },
+    {
+      "title": "Symphony No. 8",
+      "qid": "Q2872542"
+    },
+    {
+      "title": "Ten Pieces, Op. 24",
+      "qid": "Q124338978"
+    },
+    {
+      "title": "The Dryad",
+      "qid": "Q25217348"
+    },
+    {
+      "title": "The Language of the Birds",
+      "qid": "Q124153677"
+    },
+    {
+      "title": "The Rapids-Rider's Brides",
+      "qid": "Q123700096"
+    },
+    {
+      "title": "The Raven (Sibelius)",
+      "qid": "Q123608862"
+    },
+    {
+      "title": "The Tempest",
+      "qid": "Q3328659"
+    },
+    {
+      "title": "This Week",
+      "qid": "Q7786365"
+    },
+    {
+      "title": "Three Pieces, Op. 116",
+      "qid": "Q136756575"
+    },
+    {
+      "title": "Three Sonatinas",
+      "qid": "Q124289537"
+    },
+    {
+      "title": "Till havs",
+      "qid": "Q10697912"
+    },
+    {
+      "title": "Two Rondinos",
+      "qid": "Q124289501"
+    },
+    {
+      "title": "Two Serious Melodies",
+      "qid": "Q123384317"
+    },
+    {
+      "title": "Two Songs, Op. 35",
+      "qid": "Q125101746"
+    },
+    {
+      "title": "Valse Triste",
+      "qid": "Q7912618",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=sibelius_kuolema_44_valse_triste_(c)pajares.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/sibelius_51675a_valse_triste_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Valse triste",
+      "qid": "Q952481"
+    },
+    {
+      "title": "Veneen luominen",
+      "qid": "Q7919672"
+    },
+    {
+      "title": "Violin Sonatina",
+      "qid": "Q124362613"
+    },
+    {
+      "title": "Väinämöinen's Song",
+      "qid": "Q121811708"
+    },
+    {
+      "title": "Väinö's Song",
+      "qid": "Q28471749"
+    },
+    {
+      "title": "Water Droplets",
+      "qid": "Q118905786"
+    },
+    {
+      "title": "compositions for organ by Jean Sibelius",
+      "qid": "Q136687183"
+    },
+    {
+      "title": "Ödlan (Sibelius)",
+      "qid": "Q26236169"
+    },
+    {
+      "title": "Alla marcia",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/sibelius_karelia_suite_alla_marcia_(c)siu.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Intermezzo",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=13/sibelius_karelia_intermezzo_(c)siu.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3-4. Vivacissimo - Finale: Allegro moderato",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=sibelius_symphony_2_3-4_(c)gilbert.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Violin Concert in d minor, Op. 47 (1903), reduction for violin and piano",
+      "catalog_numbers": {
+        "Op": "47"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=1/sibelius_violin-concerto_1_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=1/sibelius_violin-concerto_2_(c)galimberti.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=1/sibelius_violin-concerto_3_(c)galimberti.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

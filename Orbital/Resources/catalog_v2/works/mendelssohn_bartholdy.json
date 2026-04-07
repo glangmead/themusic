@@ -1,0 +1,1502 @@
+{
+  "works": [
+    {
+      "title": "Die beiden Neffen",
+      "qid": "Q5274471"
+    },
+    {
+      "title": "Concerto for Piano, Violin and Strings",
+      "qid": "Q21998430"
+    },
+    {
+      "title": "Violin Sonata in F minor",
+      "qid": "Q3490181"
+    },
+    {
+      "title": "Clarinet Sonata",
+      "qid": "Q3490082"
+    },
+    {
+      "title": "Piano Sextet",
+      "qid": "Q7190143"
+    },
+    {
+      "title": "Symphony No. 1",
+      "qid": "Q163555",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=mendelssohn_symphony_3_1_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=mendelssohn_symphony_3_2_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=mendelssohn_symphony_3_3_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=mendelssohn_symphony_3_4_(c)lucarelli.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concerto for Two Pianos and Orchestra in A-flat major",
+      "qid": "Q2159797"
+    },
+    {
+      "title": "Octet in E-flat Major",
+      "qid": "Q3349011"
+    },
+    {
+      "title": "A Midsummer Night's Dream",
+      "qid": "Q1305214",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=mendellsohn-liszt_wedding_march_(c)halstead.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/mendelssohn/midsummer_night-s_dream_88881_s_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "String Quartet No. 2",
+      "qid": "Q3413722",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/mendelssohn_string_quartet_12_(c)harfesoft.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/mendelssohn_string_quartet_80_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Calm Sea and Prosperous Voyage",
+      "qid": "Q496763"
+    },
+    {
+      "title": "Die Heimkehr aus der Fremde",
+      "qid": "Q1213333"
+    },
+    {
+      "title": "Die erste Walpurgisnacht",
+      "qid": "Q1218198"
+    },
+    {
+      "title": "Piano Concerto No. 1",
+      "qid": "Q162898"
+    },
+    {
+      "title": "Concert Piece in F minor for clarinet, basset-horn, and piano",
+      "qid": "Q162934"
+    },
+    {
+      "title": "Symphony No. 4",
+      "qid": "Q231213"
+    },
+    {
+      "title": "Lord, have mercy upon us",
+      "qid": "Q62009605"
+    },
+    {
+      "title": "On Wings of Song",
+      "qid": "Q48835523",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=mendelssohn_liszt_on_wings_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/mendelssohn/mendelssohn-heller_3278a_on_wings_of_song_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Piano Concerto No. 2",
+      "qid": "Q210213"
+    },
+    {
+      "title": "Overture, op. 24",
+      "qid": "Q105427326",
+      "catalog_numbers": {
+        "Op": "24"
+      }
+    },
+    {
+      "title": "Psalm 42",
+      "qid": "Q1192046"
+    },
+    {
+      "title": "String Quartet No. 3",
+      "qid": "Q6502965"
+    },
+    {
+      "title": "Violin Sonata in F major",
+      "qid": "Q2412736"
+    },
+    {
+      "title": "Cello Sonata No. 1",
+      "qid": "Q3490242"
+    },
+    {
+      "title": "Ruy Blas, Op. 95",
+      "qid": "Q1563625",
+      "catalog_numbers": {
+        "Op": "95"
+      }
+    },
+    {
+      "title": "Wanderlied, op. 57 no. 6",
+      "qid": "Q108752374",
+      "catalog_numbers": {
+        "Op": "57"
+      }
+    },
+    {
+      "title": "Variations sérieuses",
+      "qid": "Q1478502"
+    },
+    {
+      "title": "A Midsummer Night's Dream",
+      "qid": "Q42192954"
+    },
+    {
+      "title": "Cello Sonata No. 2",
+      "qid": "Q3490244"
+    },
+    {
+      "title": "Jauchzet dem Herrn, alle Welt",
+      "qid": "Q62024018"
+    },
+    {
+      "title": "Violin Concerto in E minor",
+      "qid": "Q1054060"
+    },
+    {
+      "title": "Piano Trio No. 2",
+      "qid": "Q210232"
+    },
+    {
+      "title": "String Quartet No. 6",
+      "qid": "Q3413720"
+    },
+    {
+      "title": "5 Symphonien",
+      "qid": "Q105582078"
+    },
+    {
+      "title": "A Midsummer Night's Dream",
+      "qid": "Q133570430"
+    },
+    {
+      "title": "A Midsummer Night's Dream",
+      "qid": "Q1305191"
+    },
+    {
+      "title": "A Midsummer Night's Dream",
+      "qid": "Q2819816"
+    },
+    {
+      "title": "A Midsummer Night's Sex Comedy",
+      "qid": "Q1306629"
+    },
+    {
+      "title": "A Midsummer Night’s Dream",
+      "qid": "Q96607294"
+    },
+    {
+      "title": "Abschied vom Wald",
+      "qid": "Q108744761",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/mendelssohn_abschied_vom_walde_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ad vesperas Dominicæ XXI post Trinitatis, Responsorium et Hymnus",
+      "qid": "Q1335215"
+    },
+    {
+      "title": "Andante e Allegro Brillant, Four Hands, Op. 92",
+      "qid": "Q85741585",
+      "catalog_numbers": {
+        "Op": "92"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=19/mendelssohn_allegro_brillant_92_(c)soltau.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Andante op. 38 no. 4",
+      "qid": "Q136773491",
+      "catalog_numbers": {
+        "Op": "38"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=mendelssohn_andante_and_variations_83a_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Antigone",
+      "qid": "Q21998347"
+    },
+    {
+      "title": "Assai tranquillo",
+      "qid": "Q28457905"
+    },
+    {
+      "title": "Athalia",
+      "qid": "Q19259756"
+    },
+    {
+      "title": "Break of Day",
+      "qid": "Q3211043"
+    },
+    {
+      "title": "Capriccio Brillant",
+      "qid": "Q105081984"
+    },
+    {
+      "title": "Children's pieces",
+      "qid": "Q3485592"
+    },
+    {
+      "title": "Christus",
+      "qid": "Q448035",
+      "instruments": [
+        "Soprano",
+        "Alto",
+        "Tenor",
+        "Bass",
+        "Piano"
+      ]
+    },
+    {
+      "title": "Concert Piece No. 2 in D minor for clarinet, basset-horn, and piano",
+      "qid": "Q110527666"
+    },
+    {
+      "title": "Concerto for Two Pianos and Orchestra in E major",
+      "qid": "Q2159788"
+    },
+    {
+      "title": "Concerto for Violin and Strings",
+      "qid": "Q5158583"
+    },
+    {
+      "title": "Consolation",
+      "qid": "Q58055921"
+    },
+    {
+      "title": "Das Märchen von der schönen Melusine",
+      "qid": "Q1169927"
+    },
+    {
+      "title": "Denn er hat seinen Engeln befohlen über dir",
+      "qid": "Q65075390",
+      "key": "G major",
+      "instruments": [
+        "S1",
+        "S2",
+        "A1",
+        "A2",
+        "T1",
+        "T2",
+        "B1",
+        "B2"
+      ],
+      "year_composed": 1844
+    },
+    {
+      "title": "Die Hochzeit des Camacho",
+      "qid": "Q5274377"
+    },
+    {
+      "title": "Die beiden Pädagogen",
+      "qid": "Q49139324"
+    },
+    {
+      "title": "Elijah",
+      "qid": "Q1329006",
+      "catalog_numbers": {
+        "Op": "70"
+      },
+      "instruments": [
+        "Alto",
+        "Piano"
+      ],
+      "year_composed": 1846
+    },
+    {
+      "title": "Fantasie, Op. 28",
+      "qid": "Q121188367",
+      "catalog_numbers": {
+        "Op": "28"
+      }
+    },
+    {
+      "title": "Festgesang an die Künstler",
+      "qid": "Q1408479"
+    },
+    {
+      "title": "Four Pieces for String Quartet",
+      "qid": "Q3413511"
+    },
+    {
+      "title": "Gutenberg cantata",
+      "qid": "Q918770"
+    },
+    {
+      "title": "Hark the Herald Angels Sing",
+      "qid": "Q96313146",
+      "key": "G major",
+      "instruments": [
+        "Soprano",
+        "Alto",
+        "Tenor",
+        "Bass"
+      ]
+    },
+    {
+      "title": "Hark the Herald Angels Sing",
+      "qid": "Q96313768"
+    },
+    {
+      "title": "Hark the Herald Angels Sing",
+      "qid": "Q96314780"
+    },
+    {
+      "title": "Hark! The Herald Angels Sing",
+      "qid": "Q1585437"
+    },
+    {
+      "title": "Hark! the Herald Angels Sing",
+      "qid": "Q58201475"
+    },
+    {
+      "title": "Hark! the Herald Angels Sing",
+      "qid": "Q58201551"
+    },
+    {
+      "title": "Hear My Prayer",
+      "qid": "Q5691565"
+    },
+    {
+      "title": "Herr, durch die ganze Welt ist deine Macht",
+      "qid": "Q133030851"
+    },
+    {
+      "title": "Lieder ohne Worte, op. 102",
+      "qid": "Q136905173",
+      "catalog_numbers": {
+        "Op": "102"
+      },
+      "key": "E major",
+      "instruments": [
+        "Piano"
+      ]
+    },
+    {
+      "title": "Lieder ohne Worte, op. 102, Nr. 4",
+      "qid": "Q136905613",
+      "catalog_numbers": {
+        "Op": "102"
+      }
+    },
+    {
+      "title": "Lieder ohne Worte, op. 19b",
+      "qid": "Q136905142",
+      "catalog_numbers": {
+        "Op": "19b"
+      }
+    },
+    {
+      "title": "Lieder ohne Worte, op. 30",
+      "qid": "Q136905153",
+      "catalog_numbers": {
+        "Op": "30"
+      }
+    },
+    {
+      "title": "Lieder ohne Worte, op. 38",
+      "qid": "Q136905157",
+      "catalog_numbers": {
+        "Op": "38"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/mendelssohn/56175a_duet_op_38_no_18_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lieder ohne Worte, op. 53",
+      "qid": "Q136905161",
+      "catalog_numbers": {
+        "Op": "53"
+      }
+    },
+    {
+      "title": "Lieder ohne Worte, op. 62",
+      "qid": "Q136905162",
+      "catalog_numbers": {
+        "Op": "62"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=mendelssohn_song_62_5_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/mendelssohn/51422a_spring_song_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/mendelssohn/61851a_songs_without_words_(spring_song)_(1923)_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=mendelssohn_spring_song_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lieder ohne Worte, op. 67",
+      "qid": "Q136905165",
+      "catalog_numbers": {
+        "Op": "67"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/mendelssohn/59661a_songs_without_words_(spinning_song)_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/mendelssohn/spinning_song_op_67_4_39_r_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lieder ohne Worte, op. 85",
+      "qid": "Q136905168",
+      "catalog_numbers": {
+        "Op": "85"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/Mendelssohn-BartholdyF/O85/LiederOhneWorte_-_Op85_No1/LiederOhneWorte_-_Op85_No1.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mendelssohn",
+      "qid": "Q96313748",
+      "catalog_numbers": {
+        "Op": "41"
+      },
+      "key": "Bb major",
+      "instruments": [
+        "Sopran",
+        "Alt",
+        "Tenor",
+        "Bass"
+      ]
+    },
+    {
+      "title": "Moods of the Sea",
+      "qid": "Q6907161"
+    },
+    {
+      "title": "O Täler weit",
+      "qid": "Q108751614"
+    },
+    {
+      "title": "Oedipus at Colonus",
+      "qid": "Q3719205"
+    },
+    {
+      "title": "Organ Sonatas, Op. 65",
+      "qid": "Q7101763",
+      "catalog_numbers": {
+        "Op": "65"
+      }
+    },
+    {
+      "title": "Our Country",
+      "qid": "Q59589697"
+    },
+    {
+      "title": "Piano Concerto in A minor",
+      "qid": "Q11331271"
+    },
+    {
+      "title": "Piano Quartet No. 1",
+      "qid": "Q3413704"
+    },
+    {
+      "title": "Piano Quartet No. 2",
+      "qid": "Q3413705"
+    },
+    {
+      "title": "Piano Quartet No. 3",
+      "qid": "Q3413706"
+    },
+    {
+      "title": "Piano Trio No. 1",
+      "qid": "Q3539350"
+    },
+    {
+      "title": "Piano Trio in C minor",
+      "qid": "Q23041563"
+    },
+    {
+      "title": "Preludes and Fugues, Op. 35",
+      "qid": "Q121188292",
+      "catalog_numbers": {
+        "Op": "35"
+      }
+    },
+    {
+      "title": "Rondo brillant",
+      "qid": "Q137388514"
+    },
+    {
+      "title": "Rondo capriccioso",
+      "qid": "Q97311359",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/mendelssohn/55545a_rondo_capriccioso_op_14_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Scotch Symphony",
+      "qid": "Q113549371"
+    },
+    {
+      "title": "Sechs Lieder, Op. 59",
+      "qid": "Q104851012",
+      "catalog_numbers": {
+        "Op": "59"
+      }
+    },
+    {
+      "title": "Seven Character Pieces",
+      "qid": "Q3478929"
+    },
+    {
+      "title": "Songs Without Words",
+      "qid": "Q732949",
+      "catalog_numbers": {
+        "Op": "30"
+      },
+      "key": "E♭ major",
+      "instruments": [
+        "ピアノ"
+      ],
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=mendelssohn_song_30_6_(c)oguri.mid"
+          ]
+        },
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/Mendelssohn-BartholdyF/O30/LiederOhneWorte_-_Op30_No6/LiederOhneWorte_-_Op30_No6.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "St. Paul",
+      "qid": "Q1429593"
+    },
+    {
+      "title": "Still, Still with Thee",
+      "qid": "Q58055226"
+    },
+    {
+      "title": "Still, Still with Thee",
+      "qid": "Q58055354"
+    },
+    {
+      "title": "Still, Still with Thee",
+      "qid": "Q58055553"
+    },
+    {
+      "title": "String Quartet No. 1",
+      "qid": "Q3413716"
+    },
+    {
+      "title": "String Quartet No. 4",
+      "qid": "Q7623940"
+    },
+    {
+      "title": "String Quartet No. 5",
+      "qid": "Q3413866"
+    },
+    {
+      "title": "String Quartet in E-flat major",
+      "qid": "Q3413769"
+    },
+    {
+      "title": "String Quintet No. 1",
+      "qid": "Q3414603"
+    },
+    {
+      "title": "String Quintet No. 2",
+      "qid": "Q3414604"
+    },
+    {
+      "title": "String symphonies",
+      "qid": "Q3918133"
+    },
+    {
+      "title": "Symphony No. 2",
+      "qid": "Q210536"
+    },
+    {
+      "title": "Symphony No. 3",
+      "qid": "Q223524"
+    },
+    {
+      "title": "Symphony No. 4 in a Major \"Italian\", Op. 90: I. Allegro Vivace",
+      "qid": "Q83622575",
+      "catalog_numbers": {
+        "Op": "90"
+      }
+    },
+    {
+      "title": "Symphony No. 4 in a Major \"Italian\", Op. 90: II. Andante Con Moto",
+      "qid": "Q83623178",
+      "catalog_numbers": {
+        "Op": "90"
+      }
+    },
+    {
+      "title": "Symphony No. 4 in a Major \"Italian\", Op. 90: III. Con Moto",
+      "qid": "Q83623517",
+      "catalog_numbers": {
+        "Op": "90"
+      }
+    },
+    {
+      "title": "Symphony No. 4 in a Major \"Italian\", Op. 90: IV. Saltarello (Presto)",
+      "qid": "Q83623784",
+      "catalog_numbers": {
+        "Op": "90"
+      }
+    },
+    {
+      "title": "Symphony No. 5",
+      "qid": "Q240223"
+    },
+    {
+      "title": "The Dream",
+      "qid": "Q12104282"
+    },
+    {
+      "title": "The First Walpurgis Night (Mendelssohn)",
+      "qid": "Q134546653"
+    },
+    {
+      "title": "The Hebrides",
+      "qid": "Q946777"
+    },
+    {
+      "title": "The Indian Girl’s Lament",
+      "qid": "Q59253909"
+    },
+    {
+      "title": "The Story of Sin",
+      "qid": "Q464430"
+    },
+    {
+      "title": "The Visitors II: The Corridors of Time",
+      "qid": "Q280063"
+    },
+    {
+      "title": "Three Fantasies or Cappriccios",
+      "qid": "Q3539978"
+    },
+    {
+      "title": "Three motets",
+      "qid": "Q109806108"
+    },
+    {
+      "title": "Tomcat",
+      "qid": "Q22905774"
+    },
+    {
+      "title": "Verleih uns Frieden",
+      "qid": "Q85812975"
+    },
+    {
+      "title": "Viola Sonata",
+      "qid": "Q54080"
+    },
+    {
+      "title": "Violin Sonata in F major (Mendelssohn)",
+      "qid": "Q2375280"
+    },
+    {
+      "title": "Vom Himmel hoch (Mendelssohn)",
+      "qid": "Q2533018"
+    },
+    {
+      "title": "WILSON (Mendelssohn)",
+      "qid": "Q127032743"
+    },
+    {
+      "title": "Waldeinsamkeit",
+      "qid": "Q59289310"
+    },
+    {
+      "title": "Wedding March",
+      "qid": "Q2635267",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=mendelssohn_midsummer_10_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=mendelssohn_midsummer_13_(c)lucarelli.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ouverture Op. 21",
+      "catalog_numbers": {
+        "Op": "21"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=mendelssohn_midsummer_01_(c)lucarelli.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "1. Scherzo, after Act I",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=mendelssohn_midsummer_02_(c)lucarelli.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "2. Over Hill, over dale, melodram and march of elfs of act II",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=mendelssohn_midsummer_03_(c)lucarelli.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3. Ye spotted snakes, melodram and lied with chorus, acte II",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=mendelssohn_midsummer_04_(c)lucarelli.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "4. The spell, melodram of act II",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=mendelssohn_midsummer_05_(c)lucarelli.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "5. Entr'acte",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=mendelssohn_midsummer_06_(c)lucarelli.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "6. What hempen homespuns, melodram de l'act III",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=mendelssohn_midsummer_07_(c)lucarelli.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "7. Nocturne of act III",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=mendelssohn_midsummer_08_(c)lucarelli.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "8. Oberon undoes the spells, melodram of act IV",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=mendelssohn_midsummer_09_(c)lucarelli.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "10. Fanfare and funereal march, act V",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=mendelssohn_midsummer_11_(c)lucarelli.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "11. Bergomask, a dance of clowns",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=mendelssohn_midsummer_12_(c)lucarelli.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "13. Finale Trough the house, act V",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=mendelssohn_midsummer_14_(c)lucarelli.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata for violin and piano in f minor, Op. 4",
+      "catalog_numbers": {
+        "Op": "4"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/mendelssohn_sonata_for_violin_and_piano_4_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Trio for flute, cello and piano in d minor, Op. 49",
+      "catalog_numbers": {
+        "Op": "49"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/mendelssohn_trio_for_flute_cello_piano_49_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Venetianisches Gondellied, Op. 19 No. 6 (1830) �",
+      "catalog_numbers": {
+        "Op": "19/6"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=mendelssohn_song_19_6_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[Lost illusions] in f sharp minor (?)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/mendelssohn/66388d_lost_illusions_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Scherzo in b minor Op. 16 No. 2 (1829)",
+      "catalog_numbers": {
+        "Op": "16/2"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/mendelssohn/60371a_scherzo_op_16_no_2_(nc)smythe.mid"
+          ]
+        },
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/Mendelssohn-BartholdyF/O16/mendelssohn-scherzo-eminor/mendelssohn-scherzo-eminor.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "1a. Praeludium in e minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/mendelssohn_praeludien_und_fugen_35_1a_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "1b. Fuga in e minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/mendelssohn_praeludien_und_fugen_35_1b_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "2a. Praeludium in D major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/mendelssohn_praeludien_und_fugen_35_2a_praeludium_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "2b. Fuga in D major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/mendelssohn_praeludien_und_fugen_35_2b_fuga_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3a. Praeludium in h minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/mendelssohn_praeludien_und_fugen_35_3a_praeludium_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3b. Fuga in h minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/mendelssohn_praeludien_und_fugen_35_3b_fuga_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "4a. Praeludium in A flat major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/mendelssohn_praeludien_und_fugen_35_4a_praeludium_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "4b. Fuga in A flat major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/mendelssohn_praeludien_und_fugen_35_4b_fuga_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "5a. Praeludium in f minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/mendelssohn_praeludien_und_fugen_35_5a_praeludium_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "5b. Fuga in f minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/mendelssohn_praeludien_und_fugen_35_5b_fuga_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "6a. Praeludium in B flat major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/mendelssohn_praeludien_und_fugen_35_6a_praeludium_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "6b. Fuga in B flat major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/mendelssohn_praeludien_und_fugen_35_6b_fuga_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Variations s�rieuses, for piano in d minor, Op. 54 (1841)",
+      "catalog_numbers": {
+        "Op": "54"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/mendelssohn_variations_serieuses_54_(c)lubetsky.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kinderst�cke [6] for piano Op. 72 (1842, 1847)",
+      "catalog_numbers": {
+        "Op": "72"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=17/mendelssohn_kinderstuecke_72_1_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=17/mendelssohn_kinderstuecke_72_2_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sieben Lieder S 547",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/mendelssohn/mendelssohn-liszt_882w_on_wings_of_song_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/mendelssohn/mendelssohn-liszt_63515a_on_the_wings_of_song_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[O rest in the Lord] (transcr. by ?) **",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/mendelssohn/103968d_o_rest_in_the_lord_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fugue  in d minor (1822)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=mendelssohn_fugue_in_d_minor_(c)unknown.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Prelude and Fugue in c minor, Op. 37 No. 1 (1837)",
+      "catalog_numbers": {
+        "Op": "37/1"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=mendelssohn_prelude_and_fugue_c_(c)unknown.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Engelsterzett",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=masses/pieces/mendelssohn_engelsterzett_for_ssa_(c)hoessl.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Wirf dein Anliegen auf den Herrn *",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=3/mendelssohn-fe-bartholdy_wirf_dein_anliegen_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lied Ohne Worte - Opus 102 No. 3",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/Mendelssohn-BartholdyF/O102/SongWW_opus102no3/SongWW_opus102no3.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Vespergesang",
+      "catalog_numbers": {
+        "Op": "121"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 4.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/Mendelssohn-BartholdyF/O121/op121/op121-lys/op121.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Inquiétude",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/Mendelssohn-BartholdyF/O19/5.Inquietude/5.Inquietude.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lieder ohne Worte: Venetianisches Gondellied, Op.19 No.6",
+      "catalog_numbers": {
+        "Op": "19"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/Mendelssohn-BartholdyF/O19/Lieder-ohne-Worte-Venetianisches-Gondellied-Op19-No6/Lieder-ohne-Worte-Venetianisches-Gondellied-Op19-No6.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Praeludium und Fuge c-Moll",
+      "catalog_numbers": {
+        "Op": "37"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/Mendelssohn-BartholdyF/O37/nr1/nr1.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Es ist bestimmt in Gottes Rat",
+      "catalog_numbers": {
+        "Op": "47"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution 4.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/Mendelssohn-BartholdyF/O47/EsistbestimmtinGottesRatM/EsistbestimmtinGottesRatM.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lied Ohne Worte - Opus 53 No. 5 - Volkslied",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/Mendelssohn-BartholdyF/O53/SongWW_opus53no5/SongWW_opus53no5.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ein Sommernachtstraum - No.5",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/Mendelssohn-BartholdyF/O61/Sommernachtstraum/Sommernachtstraum-lys/sntheader.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "MARCHE NUPTIALE (Wedding march)",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 4.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/Mendelssohn-BartholdyF/O61/Sommernachtstraum-wedding-march/Sommernachtstraum-wedding-march.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Final de la sixième sonate",
+      "catalog_numbers": {
+        "S": "65"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/Mendelssohn-BartholdyF/O65/Mendelssohn_op65_6/Mendelssohn_op65_6.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Consolation (Mendelssohn) (hymntune)",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/Mendelssohn-BartholdyF/consolation_mendelssohn/consolation_mendelssohn.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mendelssohn (hymntune)",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/Mendelssohn-BartholdyF/mendelssohn/mendelssohn.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

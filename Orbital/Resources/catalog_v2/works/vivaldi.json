@@ -1,0 +1,6548 @@
+{
+  "works": [
+    {
+      "title": "Sonata for 2 violins and continuo in D minor  (RV 63) \"Follia\"",
+      "qid": "Q80137275",
+      "catalog_numbers": {
+        "RV": "63"
+      },
+      "key": "D minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op01n12.krn&l=musedata/vivaldi/op01&format=midi"
+          ]
+        },
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/vivaldi_trio_sonata_la_follia_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Twelve Trio Sonatas, Op. 1",
+      "qid": "Q3964693"
+    },
+    {
+      "title": "Twelve Trio Sonatas, Op. 1 (1705)",
+      "qid": "Q115239499"
+    },
+    {
+      "title": "Twelve Violin Sonatas, Op. 2",
+      "qid": "Q962003"
+    },
+    {
+      "title": "Twelve Violin Sonatas, Op. 2 (1709)",
+      "qid": "Q115239793"
+    },
+    {
+      "title": "Concerto No. 3 in F major, Op. 8, RV 293",
+      "qid": "Q47008556",
+      "catalog_numbers": {
+        "RV": "293"
+      },
+      "key": "F major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=vivaldi_4_stagioni_autunno_1_(c)pollen.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=vivaldi_4_stagioni_autunno_2_(c)pollen.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=vivaldi_4_stagioni_autunno_3_(c)pollen.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concerto No. 1 in E major, Op. 8, RV 269",
+      "qid": "Q47008342",
+      "catalog_numbers": {
+        "Op": "8"
+      },
+      "key": "F major",
+      "year_composed": 1710,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=vivaldi_4_stagioni_primavera_1_(c)pollen.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=vivaldi_4_stagioni_primavera_2_(c)pollen.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=vivaldi_4_stagioni_primavera_3_(c)pollen.mid"
+          ]
+        },
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/VivaldiA/O8/autumn/autumn-lys/autumn-header.mid",
+            "https://www.mutopiaproject.org/ftp/VivaldiA/O8/spring/spring-lys/spring-header.mid",
+            "https://www.mutopiaproject.org/ftp/VivaldiA/O8/summer/summer-lys/summer-header.mid",
+            "https://www.mutopiaproject.org/ftp/VivaldiA/O8/winter/winter-lys/winter-header.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concerto No. 2 in G minor, Op. 8, RV 315",
+      "qid": "Q47008540",
+      "catalog_numbers": {
+        "RV": "315"
+      },
+      "key": "G minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=vivaldi_4_stagioni_estate_1_(c)pollen.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=vivaldi_4_stagioni_estate_2_(c)pollen.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=vivaldi_4_stagioni_estate_3_(c)pollen.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concerto No. 4 in F minor, Op. 8, RV 297",
+      "qid": "Q47008571",
+      "catalog_numbers": {
+        "RV": "297"
+      },
+      "key": "F minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=vivaldi_4_stagioni_inverno_1_(c)pollen.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=vivaldi_4_stagioni_inverno_2_(c)pollen.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=vivaldi_4_stagioni_inverno_3_(c)pollen.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "L'estro armonico, Op. 3",
+      "qid": "Q1521015",
+      "catalog_numbers": {
+        "Op": "3"
+      },
+      "key": "F major",
+      "instruments": [
+        "Violin Concertante",
+        "Violin I di Ripieno",
+        "Violin II",
+        "Viola",
+        "Violoncello Concertante",
+        "Violoncello Ultimo"
+      ],
+      "year_composed": 1711
+    },
+    {
+      "title": "L'estro armonico, Op. 3 (1711)",
+      "qid": "Q115484842"
+    },
+    {
+      "title": "La stravaganza, Op. 4",
+      "qid": "Q1130458"
+    },
+    {
+      "title": "Six Violin Concertos, Op. 6",
+      "qid": "Q3954597"
+    },
+    {
+      "title": "Credo",
+      "qid": "Q5183805",
+      "catalog_numbers": {
+        "RV": "591"
+      },
+      "key": "E minor"
+    },
+    {
+      "title": "Gloria in D Major",
+      "qid": "Q2261005",
+      "catalog_numbers": {
+        "RV": "589"
+      },
+      "key": "D major",
+      "instruments": [
+        "Soprano",
+        "Alto",
+        "Tenor",
+        "Bass",
+        "Clavicordo"
+      ],
+      "year_composed": 1713
+    },
+    {
+      "title": "Concerto in C major (RV 559)",
+      "qid": "Q65061012",
+      "catalog_numbers": {
+        "RV": "559"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Six Violin Sonatas, Op. 5",
+      "qid": "Q3954633"
+    },
+    {
+      "title": "La stravaganza, Op. 4 (1716)",
+      "qid": "Q115485194"
+    },
+    {
+      "title": "Six Violin Sonatas, Op. 5 (1716)",
+      "qid": "Q115506668"
+    },
+    {
+      "title": "Six Violin Concertos, Op. 6 (1719)",
+      "qid": "Q115562936"
+    },
+    {
+      "title": "Concerto for Two Trumpets",
+      "qid": "Q113331360",
+      "catalog_numbers": {
+        "RV": "537"
+      },
+      "key": "C major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=17/vivaldi_concerto_for_two_trumpets_1_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=17/vivaldi_concerto_for_two_trumpets_2_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=17/vivaldi_concerto_for_two_trumpets_3_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Twelve Concertos, Op. 7",
+      "qid": "Q1780312"
+    },
+    {
+      "title": "Twelve Concertos, Op. 7 (1720)",
+      "qid": "Q115562995"
+    },
+    {
+      "title": "Il cimento dell'armonia e dell'inventione, Op. 8",
+      "qid": "Q2620450"
+    },
+    {
+      "title": "Il cimento dell'armonia e dell'inventione, Op. 8 (1725)",
+      "qid": "Q115563298"
+    },
+    {
+      "title": "The Four Seasons",
+      "qid": "Q12016"
+    },
+    {
+      "title": "La Cetra, Op. 9",
+      "qid": "Q1172526"
+    },
+    {
+      "title": "Farnace",
+      "qid": "Q1396937",
+      "catalog_numbers": {
+        "RV": "711"
+      }
+    },
+    {
+      "title": "La Cetra, Op. 9 (1727)",
+      "qid": "Q115563378"
+    },
+    {
+      "title": "Orlando furioso",
+      "qid": "Q241950",
+      "catalog_numbers": {
+        "RV": "728"
+      }
+    },
+    {
+      "title": "Flute concerto in F major (RV 433) “La tempesta di mare”",
+      "qid": "Q109641370",
+      "catalog_numbers": {
+        "RV": "433"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Six Flute Concertos, Op. 10",
+      "qid": "Q1780305"
+    },
+    {
+      "title": "Six Violin Concertos, Op. 12",
+      "qid": "Q3954593"
+    },
+    {
+      "title": "Six Flute Concertos, Op. 10 (1729)",
+      "qid": "Q115563433"
+    },
+    {
+      "title": "Cello Sonatas",
+      "qid": "Q3964696"
+    },
+    {
+      "title": "Argippo",
+      "qid": "Q3823046",
+      "catalog_numbers": {
+        "RV": "697"
+      }
+    },
+    {
+      "title": "Armida al campo d'Egitto",
+      "qid": "Q2862257",
+      "catalog_numbers": {
+        "Op": "208",
+        "RV": "699"
+      }
+    },
+    {
+      "title": "Arsilda, regina di Ponto",
+      "qid": "Q2541671",
+      "catalog_numbers": {
+        "Op": "206",
+        "RV": "700"
+      }
+    },
+    {
+      "title": "Bajazet",
+      "qid": "Q2299902",
+      "catalog_numbers": {
+        "RV": "703"
+      },
+      "key": "G major",
+      "instruments": [
+        "Soprano",
+        "Piano"
+      ]
+    },
+    {
+      "title": "Dorilla in Tempe",
+      "qid": "Q2542150",
+      "catalog_numbers": {
+        "RV": "709"
+      }
+    },
+    {
+      "title": "Ercole su'l Termodonte",
+      "qid": "Q2541686",
+      "catalog_numbers": {
+        "RV": "710"
+      }
+    },
+    {
+      "title": "Giustino",
+      "qid": "Q2639298",
+      "catalog_numbers": {
+        "RV": "717"
+      }
+    },
+    {
+      "title": "Griselda",
+      "qid": "Q1028221",
+      "catalog_numbers": {
+        "RV": "718"
+      }
+    },
+    {
+      "title": "Il Teuzzone",
+      "qid": "Q430250",
+      "catalog_numbers": {
+        "RV": "736"
+      }
+    },
+    {
+      "title": "L'Olimpiade",
+      "qid": "Q785528",
+      "catalog_numbers": {
+        "RV": "725"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/VivaldiA/rv725/DelDestin/DelDestin.mid",
+            "https://www.mutopiaproject.org/ftp/VivaldiA/rv725/MentreDormi/MentreDormi.mid",
+            "https://www.mutopiaproject.org/ftp/VivaldiA/rv725/SiamNavi/SiamNavi.mid",
+            "https://www.mutopiaproject.org/ftp/VivaldiA/rv725/StaPiangendo/StaPiangendo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "L'incoronazione di Dario",
+      "qid": "Q902040",
+      "catalog_numbers": {
+        "RV": "719"
+      }
+    },
+    {
+      "title": "La Silvia",
+      "qid": "Q2284321",
+      "catalog_numbers": {
+        "RV": "734"
+      }
+    },
+    {
+      "title": "La costanza trionfante degl'amori e de gl'odii",
+      "qid": "Q1445956",
+      "catalog_numbers": {
+        "Op": "205",
+        "RV": "706"
+      }
+    },
+    {
+      "title": "La fida ninfa",
+      "qid": "Q2557494",
+      "catalog_numbers": {
+        "RV": "714"
+      }
+    },
+    {
+      "title": "La verità in cimento",
+      "qid": "Q2725548",
+      "catalog_numbers": {
+        "RV": "739"
+      }
+    },
+    {
+      "title": "Motezuma",
+      "qid": "Q1949643",
+      "catalog_numbers": {
+        "RV": "723"
+      }
+    },
+    {
+      "title": "Nerone fatto Cesare",
+      "qid": "Q4993595",
+      "catalog_numbers": {
+        "RV": "724"
+      }
+    },
+    {
+      "title": "Orlando finto pazzo",
+      "qid": "Q771982",
+      "catalog_numbers": {
+        "RV": "727"
+      }
+    },
+    {
+      "title": "Ottone in villa",
+      "qid": "Q923031",
+      "catalog_numbers": {
+        "RV": "729"
+      }
+    },
+    {
+      "title": "Scanderbeg",
+      "qid": "Q2617108",
+      "catalog_numbers": {
+        "RV": "732"
+      }
+    },
+    {
+      "title": "Tieteberga",
+      "qid": "Q7801148",
+      "catalog_numbers": {
+        "RV": "737"
+      }
+    },
+    {
+      "title": "Tito Manlio",
+      "qid": "Q5231794",
+      "catalog_numbers": {
+        "RV": "738"
+      }
+    },
+    {
+      "title": "The Golden Coach",
+      "qid": "Q2250323"
+    },
+    {
+      "title": "Eaux d'artifice",
+      "qid": "Q1839217"
+    },
+    {
+      "title": "Mamma Roma",
+      "qid": "Q641668"
+    },
+    {
+      "title": "Prisioneros de una noche",
+      "qid": "Q7245653"
+    },
+    {
+      "title": "The Cat in the Bag",
+      "qid": "Q3221103"
+    },
+    {
+      "title": "The Secret Formula",
+      "qid": "Q19516217"
+    },
+    {
+      "title": "The Wild Child",
+      "qid": "Q477707"
+    },
+    {
+      "title": "Robinson Crusoe",
+      "qid": "Q4180234"
+    },
+    {
+      "title": "Evrydiki BA 2O37",
+      "qid": "Q18639614"
+    },
+    {
+      "title": "The Princess and the Pea",
+      "qid": "Q13360042"
+    },
+    {
+      "title": "Violet",
+      "qid": "Q7933205"
+    },
+    {
+      "title": "Kramer vs. Kramer",
+      "qid": "Q193577"
+    },
+    {
+      "title": "Rouge midi",
+      "qid": "Q3443185"
+    },
+    {
+      "title": "Tomorrow Was the War",
+      "qid": "Q426418"
+    },
+    {
+      "title": "Vivaldi",
+      "qid": "Q3561428"
+    },
+    {
+      "title": "Przypadek Pekosinskiego",
+      "qid": "Q11830142"
+    },
+    {
+      "title": "Wait For Me",
+      "qid": "Q4178559"
+    },
+    {
+      "title": "A Question of Taste",
+      "qid": "Q1406074"
+    },
+    {
+      "title": "Paths",
+      "qid": "Q115919389"
+    },
+    {
+      "title": "El Aura",
+      "qid": "Q2389686"
+    },
+    {
+      "title": "Vivaldi, a Prince in Venice",
+      "qid": "Q2857490"
+    },
+    {
+      "title": "And Peace on Earth",
+      "qid": "Q3733633"
+    },
+    {
+      "title": "The Enchanted Island",
+      "qid": "Q2342350"
+    },
+    {
+      "title": "Just a Sigh",
+      "qid": "Q3227564"
+    },
+    {
+      "title": "Lady J",
+      "qid": "Q56276944"
+    },
+    {
+      "title": "Christmas concert 2023: music school „Johann Friedrich Fasch“ Zerbst",
+      "qid": "Q123953911"
+    },
+    {
+      "title": "All'ombra d'un bel faggio (RV 649)",
+      "qid": "Q129671226",
+      "catalog_numbers": {
+        "RV": "649"
+      }
+    },
+    {
+      "title": "All'or che lo sguardo (RV 650)",
+      "qid": "Q129671229",
+      "catalog_numbers": {
+        "RV": "650"
+      }
+    },
+    {
+      "title": "Alla caccia, alla caccia (RV 670)",
+      "qid": "Q129671290",
+      "catalog_numbers": {
+        "RV": "670"
+      }
+    },
+    {
+      "title": "Allegro",
+      "qid": "Q120113688",
+      "key": "F major"
+    },
+    {
+      "title": "Alvilda, regina d'Goti",
+      "qid": "Q117837976"
+    },
+    {
+      "title": "Amor hai vinto (RV 651)",
+      "qid": "Q129671231",
+      "catalog_numbers": {
+        "RV": "651"
+      }
+    },
+    {
+      "title": "Aristide",
+      "qid": "Q119791828"
+    },
+    {
+      "title": "Atenaide",
+      "qid": "Q1157102",
+      "catalog_numbers": {
+        "Op": "228",
+        "RV": "702"
+      }
+    },
+    {
+      "title": "Aure voi piu non siete (RV 652)",
+      "qid": "Q129671233",
+      "catalog_numbers": {
+        "RV": "652"
+      }
+    },
+    {
+      "title": "Bassoon concerto in A minor (RV 497)",
+      "qid": "Q122417411",
+      "catalog_numbers": {
+        "RV": "497"
+      },
+      "key": "A minor"
+    },
+    {
+      "title": "Bassoon concerto in A minor (RV 498)",
+      "qid": "Q122417413",
+      "catalog_numbers": {
+        "RV": "498"
+      },
+      "key": "A minor"
+    },
+    {
+      "title": "Bassoon concerto in A minor (RV 499)",
+      "qid": "Q122417415",
+      "catalog_numbers": {
+        "RV": "499"
+      },
+      "key": "A minor"
+    },
+    {
+      "title": "Bassoon concerto in A minor (RV 500)",
+      "qid": "Q122417417",
+      "catalog_numbers": {
+        "RV": "500"
+      },
+      "key": "A minor"
+    },
+    {
+      "title": "Bassoon concerto in B-flat major (RV 501) \"La notte\"",
+      "qid": "Q122417418",
+      "catalog_numbers": {
+        "RV": "501"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Bassoon concerto in B-flat major (RV 502)",
+      "qid": "Q122417422",
+      "catalog_numbers": {
+        "RV": "502"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Bassoon concerto in B-flat major (RV 503)",
+      "qid": "Q122417444",
+      "catalog_numbers": {
+        "RV": "503"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Bassoon concerto in B-flat major (RV 504)",
+      "qid": "Q122417446",
+      "catalog_numbers": {
+        "RV": "504"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Bassoon concerto in C major (RV 466)",
+      "qid": "Q122417343",
+      "catalog_numbers": {
+        "RV": "466"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Bassoon concerto in C major (RV 467)",
+      "qid": "Q122417350",
+      "catalog_numbers": {
+        "RV": "467"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Bassoon concerto in C major (RV 468)",
+      "qid": "Q122417352",
+      "catalog_numbers": {
+        "RV": "468"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Bassoon concerto in C major (RV 469)",
+      "qid": "Q122417354",
+      "catalog_numbers": {
+        "RV": "469"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Bassoon concerto in C major (RV 470)",
+      "qid": "Q122417355",
+      "catalog_numbers": {
+        "RV": "470"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Bassoon concerto in C major (RV 471)",
+      "qid": "Q122417357",
+      "catalog_numbers": {
+        "RV": "471"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Bassoon concerto in C major (RV 472)",
+      "qid": "Q122417359",
+      "catalog_numbers": {
+        "RV": "472"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Bassoon concerto in C major (RV 473)",
+      "qid": "Q122417361",
+      "catalog_numbers": {
+        "RV": "473"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Bassoon concerto in C major (RV 474)",
+      "qid": "Q122417362",
+      "catalog_numbers": {
+        "RV": "474"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Bassoon concerto in C major (RV 475)",
+      "qid": "Q122417364",
+      "catalog_numbers": {
+        "RV": "475"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Bassoon concerto in C major (RV 476)",
+      "qid": "Q122417371",
+      "catalog_numbers": {
+        "RV": "476"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Bassoon concerto in C major (RV 477)",
+      "qid": "Q122417372",
+      "catalog_numbers": {
+        "RV": "477"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Bassoon concerto in C major (RV 478)",
+      "qid": "Q122417375",
+      "catalog_numbers": {
+        "RV": "478"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Bassoon concerto in C major (RV 479)",
+      "qid": "Q122417377",
+      "catalog_numbers": {
+        "RV": "479"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Bassoon concerto in C minor (RV 480)",
+      "qid": "Q122417378",
+      "catalog_numbers": {
+        "RV": "480"
+      },
+      "key": "C minor"
+    },
+    {
+      "title": "Bassoon concerto in D minor (RV 481)",
+      "qid": "Q122417380",
+      "catalog_numbers": {
+        "RV": "481"
+      },
+      "key": "D minor"
+    },
+    {
+      "title": "Bassoon concerto in D minor (RV 482)",
+      "qid": "Q122417381",
+      "catalog_numbers": {
+        "RV": "482"
+      },
+      "key": "D minor"
+    },
+    {
+      "title": "Bassoon concerto in E minor (RV 484)",
+      "qid": "Q122417383",
+      "catalog_numbers": {
+        "RV": "484"
+      },
+      "key": "E minor"
+    },
+    {
+      "title": "Bassoon concerto in E-flat major (RV 483)",
+      "qid": "Q122417382",
+      "catalog_numbers": {
+        "RV": "483"
+      },
+      "key": "E-flat major"
+    },
+    {
+      "title": "Bassoon concerto in F major (RV 485)",
+      "qid": "Q122417386",
+      "catalog_numbers": {
+        "RV": "485"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Bassoon concerto in F major (RV 486)",
+      "qid": "Q122417387",
+      "catalog_numbers": {
+        "RV": "486"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Bassoon concerto in F major (RV 487)",
+      "qid": "Q122417388",
+      "catalog_numbers": {
+        "RV": "487"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Bassoon concerto in F major (RV 488)",
+      "qid": "Q122417389",
+      "catalog_numbers": {
+        "RV": "488"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Bassoon concerto in F major (RV 489)",
+      "qid": "Q122417390",
+      "catalog_numbers": {
+        "RV": "489"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Bassoon concerto in F major (RV 490)",
+      "qid": "Q122417391",
+      "catalog_numbers": {
+        "RV": "490"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Bassoon concerto in F major (RV 491)",
+      "qid": "Q122417392",
+      "catalog_numbers": {
+        "RV": "491"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Bassoon concerto in G major (RV 492)",
+      "qid": "Q122417393",
+      "catalog_numbers": {
+        "RV": "492"
+      },
+      "key": "G major"
+    },
+    {
+      "title": "Bassoon concerto in G major (RV 493)",
+      "qid": "Q122417394",
+      "catalog_numbers": {
+        "RV": "493"
+      },
+      "key": "G major"
+    },
+    {
+      "title": "Bassoon concerto in G major (RV 494)",
+      "qid": "Q122417406",
+      "catalog_numbers": {
+        "RV": "494"
+      },
+      "key": "G major"
+    },
+    {
+      "title": "Bassoon concerto in G minor (RV 495)",
+      "qid": "Q122417408",
+      "catalog_numbers": {
+        "RV": "495"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Bassoon concerto in G minor (RV 496)",
+      "qid": "Q122417410",
+      "catalog_numbers": {
+        "RV": "496"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Beatus (RV 599)",
+      "qid": "Q127831783",
+      "catalog_numbers": {
+        "RV": "599"
+      }
+    },
+    {
+      "title": "Beatus vir",
+      "qid": "Q48800511"
+    },
+    {
+      "title": "Beatus vir in B major (RV 598)",
+      "qid": "Q127831770",
+      "catalog_numbers": {
+        "RV": "598"
+      },
+      "key": "B major"
+    },
+    {
+      "title": "Beatus vir in C major (RV 597)",
+      "qid": "Q127831768",
+      "catalog_numbers": {
+        "RV": "597"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Canta in prato, ride in monte",
+      "qid": "Q65211244",
+      "catalog_numbers": {
+        "RV": "623"
+      },
+      "key": "A major"
+    },
+    {
+      "title": "Carae rosae, respirate",
+      "qid": "Q65209536",
+      "catalog_numbers": {
+        "RV": "624"
+      },
+      "key": "G major"
+    },
+    {
+      "title": "Care selve amici prati (RV 671)",
+      "qid": "Q129671292",
+      "catalog_numbers": {
+        "RV": "671"
+      }
+    },
+    {
+      "title": "Catone in Utica",
+      "qid": "Q1133994",
+      "catalog_numbers": {
+        "Op": "239",
+        "RV": "705"
+      }
+    },
+    {
+      "title": "Cello concerto in A minor (RV 418)",
+      "qid": "Q124151841",
+      "catalog_numbers": {
+        "RV": "418"
+      },
+      "key": "A minor"
+    },
+    {
+      "title": "Cello concerto in A minor (RV 419)",
+      "qid": "Q124151842",
+      "catalog_numbers": {
+        "RV": "419"
+      },
+      "key": "A minor"
+    },
+    {
+      "title": "Cello concerto in A minor (RV 420)",
+      "qid": "Q124151843",
+      "catalog_numbers": {
+        "RV": "420"
+      },
+      "key": "A minor"
+    },
+    {
+      "title": "Cello concerto in A minor (RV 421)",
+      "qid": "Q124151844",
+      "catalog_numbers": {
+        "RV": "421"
+      },
+      "key": "A minor"
+    },
+    {
+      "title": "Cello concerto in A minor (RV 422)",
+      "qid": "Q124151845",
+      "catalog_numbers": {
+        "RV": "422"
+      },
+      "key": "A minor"
+    },
+    {
+      "title": "Cello concerto in B minor (RV 424)",
+      "qid": "Q124151848",
+      "catalog_numbers": {
+        "RV": "424"
+      },
+      "key": "B minor"
+    },
+    {
+      "title": "Cello concerto in B-flat major (RV 423)",
+      "qid": "Q124151846",
+      "catalog_numbers": {
+        "RV": "423"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Cello concerto in C major (RV 398)",
+      "qid": "Q124151821",
+      "catalog_numbers": {
+        "RV": "398"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Cello concerto in C major (RV 399)",
+      "qid": "Q124151822",
+      "catalog_numbers": {
+        "RV": "399"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Cello concerto in C major (RV 400)",
+      "qid": "Q124151823",
+      "catalog_numbers": {
+        "RV": "400"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Cello concerto in C minor (RV 401)",
+      "qid": "Q124151824",
+      "catalog_numbers": {
+        "RV": "401"
+      },
+      "key": "C minor"
+    },
+    {
+      "title": "Cello concerto in C minor (RV 402)",
+      "qid": "Q124151825",
+      "catalog_numbers": {
+        "RV": "402"
+      },
+      "key": "C minor"
+    },
+    {
+      "title": "Cello concerto in D major (RV 403)",
+      "qid": "Q124151826",
+      "catalog_numbers": {
+        "RV": "403"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Cello concerto in D minor (RV 405)",
+      "qid": "Q124151828",
+      "catalog_numbers": {
+        "RV": "405"
+      },
+      "key": "D minor"
+    },
+    {
+      "title": "Cello concerto in D minor (RV 406)",
+      "qid": "Q124151829",
+      "catalog_numbers": {
+        "RV": "406"
+      },
+      "key": "D minor"
+    },
+    {
+      "title": "Cello concerto in D minor (RV 407)",
+      "qid": "Q124151830",
+      "catalog_numbers": {
+        "RV": "407"
+      },
+      "key": "D minor"
+    },
+    {
+      "title": "Cello concerto in E minor (RV 409)",
+      "qid": "Q124151832",
+      "catalog_numbers": {
+        "RV": "409"
+      },
+      "key": "E minor"
+    },
+    {
+      "title": "Cello concerto in E-flat major (RV 408)",
+      "qid": "Q124151831",
+      "catalog_numbers": {
+        "RV": "408"
+      },
+      "key": "E-flat major"
+    },
+    {
+      "title": "Cello concerto in F major (RV 410)",
+      "qid": "Q124151833",
+      "catalog_numbers": {
+        "RV": "410"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Cello concerto in F major (RV 411)",
+      "qid": "Q124151834",
+      "catalog_numbers": {
+        "RV": "411"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Cello concerto in F major (RV 412)",
+      "qid": "Q124151835",
+      "catalog_numbers": {
+        "RV": "412"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Cello concerto in G major (RV 413)",
+      "qid": "Q124151836",
+      "catalog_numbers": {
+        "RV": "413"
+      },
+      "key": "G major"
+    },
+    {
+      "title": "Cello concerto in G major (RV 414)",
+      "qid": "Q118151584",
+      "catalog_numbers": {
+        "RV": "414"
+      },
+      "key": "G major"
+    },
+    {
+      "title": "Cello concerto in G minor (RV 416)",
+      "qid": "Q124151838",
+      "catalog_numbers": {
+        "RV": "416"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Cello concerto in G minor (RV 417)",
+      "qid": "Q124151840",
+      "catalog_numbers": {
+        "RV": "417"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Cello sonata in A minor (RV 43)",
+      "qid": "Q2469242",
+      "catalog_numbers": {
+        "RV": "43"
+      },
+      "key": "A minor"
+    },
+    {
+      "title": "Cello sonata in A minor (RV 44)",
+      "qid": "Q2723832",
+      "catalog_numbers": {
+        "RV": "44"
+      },
+      "key": "A Minor",
+      "instruments": [
+        "Cello",
+        "Continuo"
+      ]
+    },
+    {
+      "title": "Cello sonata in B-flat major (RV 45)",
+      "qid": "Q2445816",
+      "catalog_numbers": {
+        "RV": "45"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Cello sonata in B-flat major (RV 47)",
+      "qid": "Q2692520",
+      "catalog_numbers": {
+        "RV": "47"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Cello sonata in D minor (RV 38)",
+      "qid": "Q2130964",
+      "catalog_numbers": {
+        "RV": "38"
+      },
+      "key": "D minor"
+    },
+    {
+      "title": "Cello sonata in E minor (RV 40)",
+      "qid": "Q2058727",
+      "catalog_numbers": {
+        "RV": "40"
+      },
+      "key": "E minor"
+    },
+    {
+      "title": "Cello sonata in E-flat major (RV 39)",
+      "qid": "Q1893902",
+      "catalog_numbers": {
+        "RV": "39"
+      },
+      "key": "E-flat major"
+    },
+    {
+      "title": "Cello sonata in F major (RV 41)",
+      "qid": "Q14365654",
+      "catalog_numbers": {
+        "RV": "41"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Cello sonata in G minor (RV 42)",
+      "qid": "Q2512268",
+      "catalog_numbers": {
+        "RV": "42"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Clarae stellae, scintillate",
+      "qid": "Q56751013",
+      "catalog_numbers": {
+        "RV": "625"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Concerto 2 violin, cello, and basso continuo in G minor (RV 106a)",
+      "qid": "Q122417257",
+      "catalog_numbers": {
+        "RV": "106"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Concerto for 2 cellos in G minor (RV 531)",
+      "qid": "Q124151851",
+      "catalog_numbers": {
+        "RV": "531"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Concerto for 2 flutes in C major (RV 533)",
+      "qid": "Q124151853",
+      "catalog_numbers": {
+        "RV": "533"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Concerto for 2 horns in F major (RV 538)",
+      "qid": "Q124151863",
+      "catalog_numbers": {
+        "RV": "538"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Concerto for 2 horns in F major (RV 539)",
+      "qid": "Q124151864",
+      "catalog_numbers": {
+        "RV": "539"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Concerto for 2 mandolins in G major (RV 532)",
+      "qid": "Q124151852",
+      "catalog_numbers": {
+        "RV": "532"
+      },
+      "key": "G Major",
+      "instruments": [
+        "Mandolin",
+        "Violin",
+        "Viola"
+      ],
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/vivaldi_andante_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concerto for 2 oboes and 2 clarinets in C major (RV 560)",
+      "qid": "Q124151879",
+      "catalog_numbers": {
+        "RV": "560"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Concerto for 2 oboes and 2 violins in C major (RV 557)",
+      "qid": "Q124151877",
+      "catalog_numbers": {
+        "RV": "557"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Concerto for 2 oboes in A minor (RV 536)",
+      "qid": "Q124151862",
+      "catalog_numbers": {
+        "RV": "536"
+      },
+      "key": "A minor"
+    },
+    {
+      "title": "Concerto for 2 oboes in C major (RV 534)",
+      "qid": "Q124151855",
+      "catalog_numbers": {
+        "RV": "534"
+      },
+      "key": "C major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=17/vivaldi_concerto_in_c_major_1_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=17/vivaldi_concerto_in_c_major_2_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=17/vivaldi_concerto_in_c_major_3_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concerto for 2 oboes in D minor (RV 535)",
+      "qid": "Q124151856",
+      "catalog_numbers": {
+        "RV": "535"
+      },
+      "key": "D minor"
+    },
+    {
+      "title": "Concerto for 2 violins and cello in D minor (RV 565)",
+      "qid": "Q117244696",
+      "catalog_numbers": {
+        "RV": "565"
+      },
+      "key": "D minor"
+    },
+    {
+      "title": "Concerto for 2 violins and cello in G minor (RV 578)",
+      "qid": "Q117244698",
+      "catalog_numbers": {
+        "RV": "578"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Concerto for 2 violins in A major (RV 519)",
+      "qid": "Q117024900",
+      "catalog_numbers": {
+        "RV": "519"
+      },
+      "key": "A major"
+    },
+    {
+      "title": "Concerto for 2 violins in A major (RV 520)",
+      "qid": "Q117024901",
+      "catalog_numbers": {
+        "RV": "520"
+      },
+      "key": "A major"
+    },
+    {
+      "title": "Concerto for 2 violins in A major (RV 521)",
+      "qid": "Q117024902",
+      "catalog_numbers": {
+        "RV": "521"
+      },
+      "key": "A major"
+    },
+    {
+      "title": "Concerto for 2 violins in A minor (RV 522)",
+      "qid": "Q117024903",
+      "catalog_numbers": {
+        "RV": "522"
+      },
+      "key": "A minor"
+    },
+    {
+      "title": "Concerto for 2 violins in A minor (RV 523)",
+      "qid": "Q117024904",
+      "catalog_numbers": {
+        "RV": "523"
+      },
+      "key": "A minor"
+    },
+    {
+      "title": "Concerto for 2 violins in B-flat major (E-flat major) (RV 529)",
+      "qid": "Q117235871",
+      "catalog_numbers": {
+        "RV": "529"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Concerto for 2 violins in B-flat major (RV 524)",
+      "qid": "Q117024905",
+      "catalog_numbers": {
+        "RV": "524"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Concerto for 2 violins in B-flat major (RV 525)",
+      "qid": "Q117024906",
+      "catalog_numbers": {
+        "RV": "525"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Concerto for 2 violins in B-flat major (RV 526)",
+      "qid": "Q117235867",
+      "catalog_numbers": {
+        "RV": "526"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Concerto for 2 violins in B-flat major (RV 527)",
+      "qid": "Q117235869",
+      "catalog_numbers": {
+        "RV": "527"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Concerto for 2 violins in B-flat major (RV 530)",
+      "qid": "Q117235872",
+      "catalog_numbers": {
+        "RV": "530"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Concerto for 2 violins in B-flat major (RV 764)",
+      "qid": "Q117235885",
+      "catalog_numbers": {
+        "RV": "764"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Concerto for 2 violins in C major (RV 505)",
+      "qid": "Q116546854",
+      "catalog_numbers": {
+        "RV": "505"
+      },
+      "key": "F major",
+      "instruments": [
+        "Violín I solo",
+        "Violín II solo",
+        "Violín I",
+        "Violín II",
+        "Viola",
+        "Violonchelo",
+        "Contrabajo",
+        "Piano"
+      ]
+    },
+    {
+      "title": "Concerto for 2 violins in C major (RV 506)",
+      "qid": "Q116546855",
+      "catalog_numbers": {
+        "RV": "506"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Concerto for 2 violins in C major (RV 507)",
+      "qid": "Q116546856",
+      "catalog_numbers": {
+        "RV": "507"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Concerto for 2 violins in C major (RV 508)",
+      "qid": "Q116546857",
+      "catalog_numbers": {
+        "RV": "508"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Concerto for 2 violins in C minor (RV 509)",
+      "qid": "Q116546858",
+      "catalog_numbers": {
+        "RV": "509"
+      },
+      "key": "C minor"
+    },
+    {
+      "title": "Concerto for 2 violins in C minor (RV 510)",
+      "qid": "Q116546859",
+      "catalog_numbers": {
+        "RV": "510"
+      },
+      "key": "C minor"
+    },
+    {
+      "title": "Concerto for 2 violins in D major (RV 511)",
+      "qid": "Q116546860",
+      "catalog_numbers": {
+        "RV": "511"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Concerto for 2 violins in D major (RV 512)",
+      "qid": "Q116546861",
+      "catalog_numbers": {
+        "RV": "512"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Concerto for 2 violins in D major (RV 513)",
+      "qid": "Q117024892",
+      "catalog_numbers": {
+        "RV": "513"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Concerto for 2 violins in D minor (RV 514)",
+      "qid": "Q117024893",
+      "catalog_numbers": {
+        "RV": "514"
+      },
+      "key": "D Minor",
+      "instruments": [
+        "Violin I",
+        "Violin II",
+        "Violins I",
+        "Violins II",
+        "Viola",
+        "Basso Continuo",
+        "Contrabass",
+        "Harpsichord"
+      ]
+    },
+    {
+      "title": "Concerto for 2 violins in E-flat major (RV 515)",
+      "qid": "Q117024894",
+      "catalog_numbers": {
+        "RV": "515"
+      },
+      "key": "E-flat major"
+    },
+    {
+      "title": "Concerto for 2 violins in F major (RV 765)",
+      "qid": "Q117024909",
+      "catalog_numbers": {
+        "RV": "765"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Concerto for 2 violins in G major (RV 516)",
+      "qid": "Q117024895",
+      "catalog_numbers": {
+        "RV": "516"
+      },
+      "key": "G major"
+    },
+    {
+      "title": "Concerto for 2 violins in G minor (RV 517)",
+      "qid": "Q117024896",
+      "catalog_numbers": {
+        "RV": "517"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Concerto for 3 violins in F major (RV 551)",
+      "qid": "Q116546864",
+      "catalog_numbers": {
+        "RV": "551"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Concerto for 3 violins, bassoon (cello?), and continuo in G minor (RV 104a) \"La Notte\"",
+      "qid": "Q122417251",
+      "catalog_numbers": {
+        "RV": "104"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Concerto for 3 violins, cello, and continuo in D major (RV 90b) \"Il Gardellino\"",
+      "qid": "Q117024855",
+      "catalog_numbers": {
+        "RV": "90"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Concerto for 3 violins, cello, and continuo in D major (RV 95a) \"La Pastorella\"",
+      "qid": "Q122417243",
+      "catalog_numbers": {
+        "RV": "95"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Concerto for 4 violins and cello in B minor (RV 580)",
+      "qid": "Q117244699",
+      "catalog_numbers": {
+        "Op": "3",
+        "RV": "580"
+      },
+      "key": "D major",
+      "instruments": [
+        "Violin",
+        "Viola",
+        "Violoncello",
+        "Contrabass"
+      ]
+    },
+    {
+      "title": "Concerto for 4 violins and cello in F major (RV 567)",
+      "qid": "Q117244697",
+      "catalog_numbers": {
+        "RV": "567"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Concerto for 4 violins in A major (RV 552)",
+      "qid": "Q116546865",
+      "catalog_numbers": {
+        "RV": "552"
+      },
+      "key": "A major"
+    },
+    {
+      "title": "Concerto for 4 violins in B-flat major (RV 549)",
+      "qid": "Q116546866",
+      "catalog_numbers": {
+        "RV": "553"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Concerto for 4 violins in D major (RV 549)",
+      "qid": "Q116546862",
+      "catalog_numbers": {
+        "RV": "549"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Concerto for 4 violins in E minor (RV 550)",
+      "qid": "Q116546863",
+      "catalog_numbers": {
+        "RV": "550"
+      },
+      "key": "E minor"
+    },
+    {
+      "title": "Concerto for Two Cellos, RV 531",
+      "qid": "Q3246520"
+    },
+    {
+      "title": "Concerto for flute, 2 violins, and continuo in G major (RV Anh 103)",
+      "qid": "Q122417248",
+      "catalog_numbers": {
+        "RV": "102"
+      },
+      "key": "G major"
+    },
+    {
+      "title": "Concerto for flute, 2 violins, bassoon, and continuo in G minor (RV 104) \"La Notte\"",
+      "qid": "Q118151582",
+      "catalog_numbers": {
+        "RV": "104"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Concerto for flute, oboe, violin, bassoon, and continuo in C major (RV 88)",
+      "qid": "Q114796533",
+      "catalog_numbers": {
+        "RV": "88"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Concerto for flute, oboe, violin, bassoon, and continuo in D major (RV 90) \"Il Gardellino\"",
+      "qid": "Q117024854",
+      "catalog_numbers": {
+        "RV": "90"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Concerto for flute, oboe, violin, bassoon, and continuo in F major (RV 98) \"La tempesta di mare\"",
+      "qid": "Q118151639",
+      "catalog_numbers": {
+        "RV": "98"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Concerto for flute, oboe, violin, bassoon, and continuo in F major (RV 99)",
+      "qid": "Q122417246",
+      "catalog_numbers": {
+        "RV": "99"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Concerto for flute, oboe, violin, bassoon, and continuo in G minor (RV 107)",
+      "qid": "Q122417259",
+      "catalog_numbers": {
+        "RV": "107"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Concerto for flute, strings, and continuo in D major (RV 429)",
+      "qid": "Q118151586",
+      "catalog_numbers": {
+        "RV": "429"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Concerto for flute, violin, and continuo in D major (Anh. 102)",
+      "qid": "Q117024853",
+      "key": "D major"
+    },
+    {
+      "title": "Concerto for flute, violin, and continuo in D major (RV 84)",
+      "qid": "Q114785133",
+      "catalog_numbers": {
+        "RV": "84"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Concerto for flute, violin, bassoon, and basso continuo in G minor (RV 106)",
+      "qid": "Q122417255",
+      "catalog_numbers": {
+        "RV": "106"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Concerto for flute, violin, bassoon, and continuo in D major (RV 91)",
+      "qid": "Q118151637",
+      "catalog_numbers": {
+        "RV": "91"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Concerto for flute, violin, bassoon, and continuo in D minor (RV 96)",
+      "qid": "Q122417244",
+      "catalog_numbers": {
+        "RV": "96"
+      },
+      "key": "D minor"
+    },
+    {
+      "title": "Concerto for flute, violin, bassoon, and continuo in F major (RV 100)",
+      "qid": "Q122417247",
+      "catalog_numbers": {
+        "RV": "100"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Concerto for harpsichord in A major (RV 780)",
+      "qid": "Q124151882",
+      "catalog_numbers": {
+        "RV": "780"
+      },
+      "key": "A major"
+    },
+    {
+      "title": "Concerto for lute, 2 violins, and continuo in D major (RV 93)",
+      "qid": "Q18162218",
+      "catalog_numbers": {
+        "RV": "93"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Concerto for oboe and bassoon in G major (RV 545)",
+      "qid": "Q124151869",
+      "catalog_numbers": {
+        "RV": "545"
+      },
+      "key": "G major"
+    },
+    {
+      "title": "Concerto for oboe and violin in B flat major (RV 548)",
+      "qid": "Q124151873",
+      "catalog_numbers": {
+        "RV": "548"
+      },
+      "key": "B-flat major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=17/vivaldi_concerto_in_b-flat_major_1_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=17/vivaldi_concerto_in_b-flat_major_2_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=17/vivaldi_concerto_in_b-flat_major_3_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concerto for oboe and violin in F major (RV 543)",
+      "qid": "Q124151867",
+      "catalog_numbers": {
+        "RV": "543"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Concerto for oboe, violin, and organ (or violin) in C major (RV 554)",
+      "qid": "Q124258596",
+      "catalog_numbers": {
+        "RV": "554"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Concerto for recorder, 2 violins, and continuo in A minor (RV 108)",
+      "qid": "Q122417261",
+      "catalog_numbers": {
+        "RV": "108"
+      },
+      "key": "A minor"
+    },
+    {
+      "title": "Concerto for recorder, oboe, 2 violins, and continuo in C major (RV 87)",
+      "qid": "Q114796532",
+      "catalog_numbers": {
+        "RV": "87"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Concerto for recorder, oboe, bassoon in G minor (RV 103)",
+      "qid": "Q122417250",
+      "catalog_numbers": {
+        "RV": "103"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Concerto for recorder, oboe, violin, bassoon, and continuo in D major (RV 90a) \"Il Gardellino\"",
+      "qid": "Q118151636",
+      "catalog_numbers": {
+        "RV": "90"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Concerto for recorder, oboe, violin, bassoon, and continuo in D major (RV 94)",
+      "qid": "Q122417241",
+      "catalog_numbers": {
+        "RV": "94"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Concerto for recorder, oboe, violin, bassoon, and continuo in D major (RV 95) \"La Pastorella\"",
+      "qid": "Q122417242",
+      "catalog_numbers": {
+        "RV": "95"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Concerto for recorder, oboe, violin, bassoon, and continuo in G major (RV 101)",
+      "qid": "Q118151581",
+      "catalog_numbers": {
+        "RV": "101"
+      },
+      "key": "G major"
+    },
+    {
+      "title": "Concerto for recorder, oboe, violin, bassoon, and continuo in G minor (RV 105)",
+      "qid": "Q122417254",
+      "catalog_numbers": {
+        "RV": "105"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Concerto for recorder, violin, bassoon, and continuo in D major (RV 92)",
+      "qid": "Q122417239",
+      "catalog_numbers": {
+        "RV": "92"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Concerto for recorder, violin, cello, and continuo in D major (RV 92a)",
+      "qid": "Q122417240",
+      "catalog_numbers": {
+        "RV": "92"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Concerto for scordatura violin with 2 string orchestras in B-flat major (RV 583)",
+      "qid": "Q117235875",
+      "catalog_numbers": {
+        "RV": "583"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Concerto for strings and continuo in C major (RV 109)",
+      "qid": "Q118151583",
+      "catalog_numbers": {
+        "RV": "109"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Concerto for strings and continuo in C major (RV 110)",
+      "qid": "Q122417263",
+      "catalog_numbers": {
+        "RV": "110"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Concerto for strings and continuo in C major (RV 111)",
+      "qid": "Q122417274",
+      "catalog_numbers": {
+        "RV": "111"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Concerto for strings and continuo in C major (RV 111a)",
+      "qid": "Q122417275",
+      "catalog_numbers": {
+        "RV": "111"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Concerto for strings and continuo in C major (RV 112)",
+      "qid": "Q122417277",
+      "catalog_numbers": {
+        "RV": "112"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Concerto for strings and continuo in C major (RV 113)",
+      "qid": "Q122417279",
+      "catalog_numbers": {
+        "RV": "113"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Concerto for strings and continuo in C major (RV 114)",
+      "qid": "Q122417280",
+      "catalog_numbers": {
+        "RV": "114"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Concerto for strings and continuo in C major (RV 115)",
+      "qid": "Q122417282",
+      "catalog_numbers": {
+        "RV": "115"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Concerto for strings and continuo in C major (RV 116)",
+      "qid": "Q122417284",
+      "catalog_numbers": {
+        "RV": "116"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Concerto for strings and continuo in C major (RV 117)",
+      "qid": "Q122417288",
+      "catalog_numbers": {
+        "RV": "117"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Concerto for strings and continuo in C minor (RV 118)",
+      "qid": "Q122417289",
+      "catalog_numbers": {
+        "RV": "118"
+      },
+      "key": "C minor"
+    },
+    {
+      "title": "Concerto for strings and continuo in C minor (RV 119)",
+      "qid": "Q122417302",
+      "catalog_numbers": {
+        "RV": "119"
+      },
+      "key": "C minor"
+    },
+    {
+      "title": "Concerto for strings and continuo in C minor (RV 120)",
+      "qid": "Q122417303",
+      "catalog_numbers": {
+        "RV": "120"
+      },
+      "key": "C minor"
+    },
+    {
+      "title": "Concerto for strings and continuo in D major (RV 121)",
+      "qid": "Q122417304",
+      "catalog_numbers": {
+        "RV": "121"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Concerto for strings and continuo in D major (RV 122)",
+      "qid": "Q122417305",
+      "catalog_numbers": {
+        "RV": "122"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Concerto for strings and continuo in D major (RV 123)",
+      "qid": "Q122417306",
+      "catalog_numbers": {
+        "RV": "123"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Concerto for strings and continuo in D major (RV 124)",
+      "qid": "Q122417307",
+      "catalog_numbers": {
+        "RV": "124"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Concerto for strings in A major (RV 158)",
+      "qid": "Q125696409",
+      "catalog_numbers": {
+        "RV": "158"
+      },
+      "key": "A major"
+    },
+    {
+      "title": "Concerto for strings in A major (RV 159)",
+      "qid": "Q125696410",
+      "catalog_numbers": {
+        "RV": "159"
+      },
+      "key": "A major"
+    },
+    {
+      "title": "Concerto for strings in A major (RV 160)",
+      "qid": "Q125696411",
+      "catalog_numbers": {
+        "RV": "160"
+      },
+      "key": "A major"
+    },
+    {
+      "title": "Concerto for strings in A major (RV 161)",
+      "qid": "Q125696412",
+      "catalog_numbers": {
+        "RV": "161"
+      },
+      "key": "A minor"
+    },
+    {
+      "title": "Concerto for strings in B-flat major (RV 163) \"Conca\"",
+      "qid": "Q125696415",
+      "catalog_numbers": {
+        "RV": "163"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Concerto for strings in B-flat major (RV 164)",
+      "qid": "Q125696417",
+      "catalog_numbers": {
+        "RV": "164"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Concerto for strings in B-flat major (RV 165)",
+      "qid": "Q125696418",
+      "catalog_numbers": {
+        "RV": "165"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Concerto for strings in B-flat major (RV 166)",
+      "qid": "Q125696422",
+      "catalog_numbers": {
+        "RV": "166"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Concerto for strings in B-flat major (RV 167)",
+      "qid": "Q125696423",
+      "catalog_numbers": {
+        "RV": "167"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Concerto for strings in D major (RV 126)",
+      "qid": "Q125696646",
+      "key": "D major"
+    },
+    {
+      "title": "Concerto for strings in D minor (RV 127)",
+      "qid": "Q125696363",
+      "catalog_numbers": {
+        "RV": "127"
+      },
+      "key": "D minor"
+    },
+    {
+      "title": "Concerto for strings in D minor (RV 128)",
+      "qid": "Q125696365",
+      "catalog_numbers": {
+        "RV": "128"
+      },
+      "key": "D minor",
+      "instruments": [
+        "Violin I",
+        "Violin II",
+        "Viola",
+        "Basso",
+        "Contrabass"
+      ]
+    },
+    {
+      "title": "Concerto for strings in D minor (RV 129) \"Madrigalesco\"",
+      "qid": "Q125696366",
+      "catalog_numbers": {
+        "RV": "129"
+      },
+      "key": "D Minor",
+      "instruments": [
+        "Violins I",
+        "Violins II",
+        "Viola",
+        "Basso Continuo",
+        "Contrabass",
+        "Organ"
+      ]
+    },
+    {
+      "title": "Concerto for strings in E minor (RV 133)",
+      "qid": "Q125696372",
+      "catalog_numbers": {
+        "RV": "133"
+      },
+      "key": "E minor"
+    },
+    {
+      "title": "Concerto for strings in E minor (RV 134)",
+      "qid": "Q125696373",
+      "catalog_numbers": {
+        "RV": "134"
+      },
+      "key": "E minor"
+    },
+    {
+      "title": "Concerto for strings in E-flat major (RV 130) \"Al Santo Sepolcro\"",
+      "qid": "Q125696368",
+      "catalog_numbers": {
+        "RV": "130"
+      },
+      "key": "E-flat major"
+    },
+    {
+      "title": "Concerto for strings in F major (RV 135)",
+      "qid": "Q125696375",
+      "catalog_numbers": {
+        "RV": "135"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Concerto for strings in F major (RV 136)",
+      "qid": "Q125696377",
+      "catalog_numbers": {
+        "RV": "136"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Concerto for strings in F major (RV 137)",
+      "qid": "Q125696378",
+      "catalog_numbers": {
+        "RV": "137"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Concerto for strings in F major (RV 138)",
+      "qid": "Q125696384",
+      "catalog_numbers": {
+        "RV": "138"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Concerto for strings in F major (RV 139)",
+      "qid": "Q124151820",
+      "catalog_numbers": {
+        "RV": "139"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Concerto for strings in F major (RV 140)",
+      "qid": "Q125696385",
+      "catalog_numbers": {
+        "RV": "140"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Concerto for strings in F major (RV 141)",
+      "qid": "Q125696386",
+      "catalog_numbers": {
+        "RV": "141"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Concerto for strings in F major (RV 142)",
+      "qid": "Q125696388",
+      "catalog_numbers": {
+        "RV": "142"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Concerto for strings in F minor (RV 143)",
+      "qid": "Q125696389",
+      "catalog_numbers": {
+        "RV": "143"
+      },
+      "key": "F minor"
+    },
+    {
+      "title": "Concerto for strings in G major (RV 145)",
+      "qid": "Q125696391",
+      "catalog_numbers": {
+        "RV": "145"
+      },
+      "key": "G major"
+    },
+    {
+      "title": "Concerto for strings in G major (RV 146)",
+      "qid": "Q125696392",
+      "catalog_numbers": {
+        "RV": "146"
+      },
+      "key": "G major"
+    },
+    {
+      "title": "Concerto for strings in G major (RV 150)",
+      "qid": "Q125696398",
+      "catalog_numbers": {
+        "RV": "150"
+      },
+      "key": "G major"
+    },
+    {
+      "title": "Concerto for strings in G major (RV 151) \"Alla rustica\"",
+      "qid": "Q125696399",
+      "catalog_numbers": {
+        "RV": "151"
+      },
+      "key": "G major"
+    },
+    {
+      "title": "Concerto for strings in G minor (RV 152)",
+      "qid": "Q125696401",
+      "catalog_numbers": {
+        "RV": "152"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Concerto for strings in G minor (RV 153)",
+      "qid": "Q125696402",
+      "catalog_numbers": {
+        "RV": "153"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Concerto for strings in G minor (RV 154)",
+      "qid": "Q125696403",
+      "catalog_numbers": {
+        "RV": "154"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Concerto for strings in G minor (RV 155)",
+      "qid": "Q125696404",
+      "catalog_numbers": {
+        "RV": "155"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Concerto for strings in G minor (RV 156)",
+      "qid": "Q125696405",
+      "catalog_numbers": {
+        "RV": "156"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Concerto for strings in G minor (RV 157)",
+      "qid": "Q125696407",
+      "catalog_numbers": {
+        "RV": "157"
+      },
+      "key": "G Minor",
+      "instruments": [
+        "Violins",
+        "Violins I",
+        "Violins II",
+        "Viola",
+        "Basso Continuo",
+        "Contrabass",
+        "Harpsichord"
+      ]
+    },
+    {
+      "title": "Concerto for viola d'amore, 2 horns, 2 oboes, bassoon, and continuo in F major (RV 97)",
+      "qid": "Q122417245",
+      "catalog_numbers": {
+        "RV": "97"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Concerto for viola d'amore, lute, strings and continuo in D minor (RV 540)",
+      "qid": "Q114870573",
+      "catalog_numbers": {
+        "RV": "540"
+      },
+      "key": "D minor"
+    },
+    {
+      "title": "Concerto for violin and 2 cellos in C major (RV 561)",
+      "qid": "Q124151880",
+      "catalog_numbers": {
+        "RV": "561"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Concerto for violin and cello in A major (RV 546) \"All'Inglese\"",
+      "qid": "Q124151870",
+      "catalog_numbers": {
+        "RV": "546"
+      },
+      "key": "A major"
+    },
+    {
+      "title": "Concerto for violin and cello in B flat major (RV 547)",
+      "qid": "Q124151872",
+      "catalog_numbers": {
+        "RV": "547"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Concerto for violin and cello in F major (RV 544) \"Il mondo al roverscio\"",
+      "qid": "Q124151868",
+      "catalog_numbers": {
+        "RV": "544"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Concerto for violin and organ in D minor (RV 541)",
+      "qid": "Q124151865",
+      "catalog_numbers": {
+        "RV": "541"
+      },
+      "key": "D minor"
+    },
+    {
+      "title": "Concerto for violin and organ in F major (RV 542)",
+      "qid": "Q124151866",
+      "catalog_numbers": {
+        "RV": "542"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Concerto for violin and organ in F major (RV 767)",
+      "qid": "Q117024910",
+      "catalog_numbers": {
+        "RV": "767"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Concerto for violin with 2 string orchestras in C major \"Per la Santissima Assontione di Maria Vergine\" (RV 581)",
+      "qid": "Q114870574",
+      "catalog_numbers": {
+        "RV": "581"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Concerto for violin with 2 string orchestras in D major \"Per la Santissima Assontione di Maria Vergine\" (RV 582)",
+      "qid": "Q117235874",
+      "catalog_numbers": {
+        "RV": "582"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Concerto for violin, cello, and organ (or violin) in C major (RV 554a)",
+      "qid": "Q124151874",
+      "catalog_numbers": {
+        "RV": "554"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Concerto in C major (RV 555)",
+      "qid": "Q124151875",
+      "catalog_numbers": {
+        "RV": "555"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Concerto in C major (RV 556) \"Per la Solennità di S. Lorenzo\"",
+      "qid": "Q124151876",
+      "catalog_numbers": {
+        "RV": "556"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Concerto in C major (RV 558)",
+      "qid": "Q105063302",
+      "catalog_numbers": {
+        "RV": "558"
+      },
+      "key": "G major",
+      "instruments": [
+        "Mandolin",
+        "Violin I",
+        "Violin II",
+        "Violoncello",
+        "Harpsichord"
+      ]
+    },
+    {
+      "title": "Concerto in D Major \"Il Gardellino\"",
+      "qid": "Q11267163",
+      "catalog_numbers": {
+        "RV": "428"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Concerto in F major (RV 572) \"Il Proteo o il Mondo al Rovverscio\"",
+      "qid": "Q124151881",
+      "catalog_numbers": {
+        "RV": "572"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Confitebor tibi Domine in B major (RV 789)",
+      "qid": "Q127831796",
+      "catalog_numbers": {
+        "RV": "789"
+      }
+    },
+    {
+      "title": "Confitebor tibi Domine in C major (RV 596)",
+      "qid": "Q127831766",
+      "catalog_numbers": {
+        "RV": "596"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Credo in G major",
+      "qid": "Q127831814",
+      "catalog_numbers": {
+        "RV": "797"
+      }
+    },
+    {
+      "title": "Credo in G major (RV 592)",
+      "qid": "Q127831761",
+      "catalog_numbers": {
+        "RV": "592"
+      },
+      "key": "G major"
+    },
+    {
+      "title": "Cunegonda",
+      "qid": "Q117815694",
+      "catalog_numbers": {
+        "RV": "707"
+      }
+    },
+    {
+      "title": "Del suo natio rigore (RV 653)",
+      "qid": "Q129671235",
+      "catalog_numbers": {
+        "RV": "653"
+      }
+    },
+    {
+      "title": "Deus tuorum militum (RV 612)",
+      "qid": "Q131862181",
+      "catalog_numbers": {
+        "RV": "612"
+      }
+    },
+    {
+      "title": "Dixit Dominus (Vivaldi)",
+      "qid": "Q60025875"
+    },
+    {
+      "title": "Dixit Dominus in D major (RV 594)",
+      "qid": "Q127831763",
+      "catalog_numbers": {
+        "RV": "594"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Dixit Dominus in D major (RV 595)",
+      "qid": "Q127831764",
+      "catalog_numbers": {
+        "RV": "595"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Dixit Dominus in D major (RV 807)",
+      "qid": "Q127831816",
+      "catalog_numbers": {
+        "RV": "807"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Domine ad adiuvandum me festina",
+      "qid": "Q65211257",
+      "catalog_numbers": {
+        "RV": "593"
+      },
+      "key": "G major"
+    },
+    {
+      "title": "Eight seasons",
+      "qid": "Q57509010"
+    },
+    {
+      "title": "Elvira, Elvira anima mea (RV 654)",
+      "qid": "Q129671237",
+      "catalog_numbers": {
+        "RV": "654"
+      }
+    },
+    {
+      "title": "Era la notte (RV 655)",
+      "qid": "Q129671238",
+      "catalog_numbers": {
+        "RV": "655"
+      }
+    },
+    {
+      "title": "Feraspe",
+      "qid": "Q117815360"
+    },
+    {
+      "title": "Filippo, re di Macedonia",
+      "qid": "Q120255058",
+      "catalog_numbers": {
+        "RV": "715"
+      }
+    },
+    {
+      "title": "Filli di gioia (RV 672)",
+      "qid": "Q129671294",
+      "catalog_numbers": {
+        "RV": "672"
+      }
+    },
+    {
+      "title": "Flute concerto in A minor (RV 440)",
+      "qid": "Q118151594",
+      "catalog_numbers": {
+        "RV": "440"
+      },
+      "key": "A minor"
+    },
+    {
+      "title": "Flute concerto in D major (RV 427)",
+      "qid": "Q118151585",
+      "catalog_numbers": {
+        "RV": "427"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Flute concerto in E minor (RV 430)",
+      "qid": "Q124151849",
+      "catalog_numbers": {
+        "RV": "430"
+      },
+      "key": "E minor"
+    },
+    {
+      "title": "Flute concerto in E minor (RV 431)",
+      "qid": "Q118151587",
+      "catalog_numbers": {
+        "RV": "431"
+      },
+      "key": "E minor"
+    },
+    {
+      "title": "Flute concerto in E minor (RV 432)",
+      "qid": "Q118151588",
+      "catalog_numbers": {
+        "RV": "432"
+      },
+      "key": "E minor"
+    },
+    {
+      "title": "Flute concerto in F major (RV 434)",
+      "qid": "Q118151589",
+      "catalog_numbers": {
+        "RV": "434"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Flute concerto in G major (RV 435)",
+      "qid": "Q118151590",
+      "catalog_numbers": {
+        "RV": "435"
+      },
+      "key": "G major"
+    },
+    {
+      "title": "Flute concerto in G major (RV 436)",
+      "qid": "Q118151591",
+      "catalog_numbers": {
+        "RV": "436"
+      },
+      "key": "G major"
+    },
+    {
+      "title": "Flute concerto in G major (RV 437)",
+      "qid": "Q118151592",
+      "catalog_numbers": {
+        "RV": "437"
+      },
+      "key": "G major"
+    },
+    {
+      "title": "Flute concerto in G major (RV 438)",
+      "qid": "Q118151593",
+      "catalog_numbers": {
+        "RV": "438"
+      },
+      "key": "G major"
+    },
+    {
+      "title": "Flute concerto in G minor (RV 439) \"La notte\"",
+      "qid": "Q11431132",
+      "catalog_numbers": {
+        "RV": "439"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Fonti di pianto piangete (RV 656)",
+      "qid": "Q129671240",
+      "catalog_numbers": {
+        "RV": "656"
+      }
+    },
+    {
+      "title": "Gaude Mater Ecclesia (RV 613)",
+      "qid": "Q131862182",
+      "catalog_numbers": {
+        "RV": "613"
+      }
+    },
+    {
+      "title": "Geme l'onda che parte (RV 657)",
+      "qid": "Q129671242",
+      "catalog_numbers": {
+        "RV": "657"
+      }
+    },
+    {
+      "title": "Ginevra, principessa di Scozia",
+      "qid": "Q118496206",
+      "catalog_numbers": {
+        "RV": "716"
+      }
+    },
+    {
+      "title": "Gloria in D major (RV 588)",
+      "qid": "Q127831758",
+      "catalog_numbers": {
+        "RV": "588"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Gloria in D major (RV 590)",
+      "qid": "Q127831759",
+      "catalog_numbers": {
+        "RV": "590"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Il Gran Mogul",
+      "qid": "Q3148461",
+      "catalog_numbers": {
+        "RV": "431"
+      },
+      "key": "D minor"
+    },
+    {
+      "title": "Il Tigrane",
+      "qid": "Q13055107",
+      "catalog_numbers": {
+        "RV": "740"
+      }
+    },
+    {
+      "title": "Il povero mio cor (RV 658)",
+      "qid": "Q129671256",
+      "catalog_numbers": {
+        "RV": "658"
+      }
+    },
+    {
+      "title": "In exitu Israel (RV 604)",
+      "qid": "Q127831793",
+      "catalog_numbers": {
+        "RV": "604"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "In furore iustissimae irae",
+      "qid": "Q56696536",
+      "catalog_numbers": {
+        "RV": "626"
+      },
+      "key": "C minor"
+    },
+    {
+      "title": "In turbato mare irato",
+      "qid": "Q65209707"
+    },
+    {
+      "title": "Indarno cerca la tortorella (RV 659)",
+      "qid": "Q129671258",
+      "catalog_numbers": {
+        "RV": "659"
+      }
+    },
+    {
+      "title": "Ingrata Lidia hai vinto (RV 673)",
+      "qid": "Q129671295",
+      "catalog_numbers": {
+        "RV": "673"
+      }
+    },
+    {
+      "title": "Introduzioni",
+      "qid": "Q6058994"
+    },
+    {
+      "title": "Invicti, bellate",
+      "qid": "Q65209722",
+      "catalog_numbers": {
+        "RV": "628"
+      },
+      "key": "G major"
+    },
+    {
+      "title": "Ipermestra",
+      "qid": "Q3801512",
+      "catalog_numbers": {
+        "RV": "722"
+      }
+    },
+    {
+      "title": "Juditha triumphans",
+      "qid": "Q1370159",
+      "catalog_numbers": {
+        "RV": "644"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/vivaldi_agitata_infidu_flata_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kyrie in G minor (RV 587)",
+      "qid": "Q6452499",
+      "catalog_numbers": {
+        "RV": "587"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "L'Adelaide",
+      "qid": "Q3817877",
+      "catalog_numbers": {
+        "RV": "695"
+      }
+    },
+    {
+      "title": "L'inganno trionfante in amore",
+      "qid": "Q120752774",
+      "catalog_numbers": {
+        "RV": "721"
+      }
+    },
+    {
+      "title": "L'oracolo in Messenia",
+      "qid": "Q6455974",
+      "catalog_numbers": {
+        "RV": "726"
+      }
+    },
+    {
+      "title": "La Candace, o siano Li veri amici",
+      "qid": "Q3820693",
+      "catalog_numbers": {
+        "Op": "211",
+        "RV": "704"
+      }
+    },
+    {
+      "title": "La Senna festeggiante",
+      "qid": "Q3821169",
+      "catalog_numbers": {
+        "RV": "693"
+      }
+    },
+    {
+      "title": "La farfalletta s'aggira (RV 660)",
+      "qid": "Q129671260",
+      "catalog_numbers": {
+        "RV": "660"
+      }
+    },
+    {
+      "title": "La fede tradita e vendicata",
+      "qid": "Q63523267",
+      "catalog_numbers": {
+        "RV": "712"
+      }
+    },
+    {
+      "title": "Largo",
+      "qid": "Q120114266",
+      "key": "D minor"
+    },
+    {
+      "title": "Lauda Jerusalem (RV 609)",
+      "qid": "Q65211274",
+      "catalog_numbers": {
+        "RV": "609"
+      },
+      "key": "E minor"
+    },
+    {
+      "title": "Laudate Dominum (RV 606)",
+      "qid": "Q127831795",
+      "catalog_numbers": {
+        "RV": "606"
+      }
+    },
+    {
+      "title": "Laudate pueri (RV 600)",
+      "qid": "Q127831785",
+      "catalog_numbers": {
+        "RV": "600"
+      },
+      "key": "C minor"
+    },
+    {
+      "title": "Laudate pueri (RV 601)",
+      "qid": "Q127831787",
+      "catalog_numbers": {
+        "RV": "601"
+      },
+      "key": "G major"
+    },
+    {
+      "title": "Laudate pueri (RV 602)",
+      "qid": "Q127831788",
+      "catalog_numbers": {
+        "RV": "602"
+      },
+      "key": "A major"
+    },
+    {
+      "title": "Laudate pueri (RV 602a)",
+      "qid": "Q127831790",
+      "catalog_numbers": {
+        "RV": "602"
+      },
+      "key": "A major"
+    },
+    {
+      "title": "Laudate pueri (RV 603)",
+      "qid": "Q127831792",
+      "catalog_numbers": {
+        "RV": "603"
+      },
+      "key": "A major"
+    },
+    {
+      "title": "Longe mala, umbrae, terrores",
+      "qid": "Q65209769",
+      "catalog_numbers": {
+        "RV": "629"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Magnificat",
+      "qid": "Q3843327",
+      "catalog_numbers": {
+        "RV": "611"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Magnificat in G minor (RV 610)",
+      "qid": "Q131862178",
+      "catalog_numbers": {
+        "RV": "610"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Magnificat in G minor (RV 610a)",
+      "qid": "Q131862179",
+      "catalog_numbers": {
+        "RV": "610"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Magnificat in G minor (RV 610b)",
+      "qid": "Q131862180",
+      "catalog_numbers": {
+        "RV": "610"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Manchester Sonatas",
+      "qid": "Q107967581"
+    },
+    {
+      "title": "Mandolin concerto in C major (RV 425)",
+      "qid": "Q6748139",
+      "catalog_numbers": {
+        "RV": "425"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Marie-Didace",
+      "qid": "Q3291748"
+    },
+    {
+      "title": "Mio cor, povero cor",
+      "qid": "Q3858637",
+      "catalog_numbers": {
+        "RV": "690"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/VivaldiA/rv690/DellAlmaSuperba/DellAlmaSuperba.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nel partir da te mio caro (RV 661)",
+      "qid": "Q129671262",
+      "catalog_numbers": {
+        "RV": "661"
+      }
+    },
+    {
+      "title": "Nisi Dominus (RV 608)",
+      "qid": "Q56692275",
+      "catalog_numbers": {
+        "RV": "608"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Nulla in mundo pax sincera",
+      "qid": "Q1862454",
+      "catalog_numbers": {
+        "RV": "630"
+      },
+      "key": "E major"
+    },
+    {
+      "title": "O qui coeli terraeque serenitas",
+      "qid": "Q65211287",
+      "catalog_numbers": {
+        "RV": "631"
+      },
+      "key": "E-flat major"
+    },
+    {
+      "title": "Oboe concerto in A minor (RV 461)",
+      "qid": "Q122417334",
+      "catalog_numbers": {
+        "RV": "461"
+      },
+      "key": "A minor"
+    },
+    {
+      "title": "Oboe concerto in A minor (RV 462)",
+      "qid": "Q122417335",
+      "catalog_numbers": {
+        "RV": "462"
+      },
+      "key": "A minor"
+    },
+    {
+      "title": "Oboe concerto in A minor (RV 463)",
+      "qid": "Q122417338",
+      "catalog_numbers": {
+        "RV": "463"
+      },
+      "key": "A minor"
+    },
+    {
+      "title": "Oboe concerto in B-flat major (RV 465)",
+      "qid": "Q122417342",
+      "catalog_numbers": {
+        "RV": "465"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Oboe concerto in C major (RV 446)",
+      "qid": "Q118151597",
+      "catalog_numbers": {
+        "RV": "446"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Oboe concerto in C major (RV 447)",
+      "qid": "Q118151598",
+      "catalog_numbers": {
+        "RV": "447"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Oboe concerto in C major (RV 448)",
+      "qid": "Q118151599",
+      "catalog_numbers": {
+        "RV": "448"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Oboe concerto in C major (RV 449)",
+      "qid": "Q118151600",
+      "catalog_numbers": {
+        "RV": "449"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Oboe concerto in C major (RV 450)",
+      "qid": "Q118151601",
+      "catalog_numbers": {
+        "RV": "450"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Oboe concerto in C major (RV 451)",
+      "qid": "Q118151602",
+      "catalog_numbers": {
+        "RV": "451"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Oboe concerto in C major (RV 452)",
+      "qid": "Q118151604",
+      "catalog_numbers": {
+        "RV": "452"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Oboe concerto in D major (RV 453)",
+      "qid": "Q118151605",
+      "catalog_numbers": {
+        "RV": "453"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Oboe concerto in D minor (RV 454)",
+      "qid": "Q118151606",
+      "catalog_numbers": {
+        "RV": "454"
+      },
+      "key": "D minor"
+    },
+    {
+      "title": "Oboe concerto in F major (RV 455)",
+      "qid": "Q118151607",
+      "catalog_numbers": {
+        "RV": "455"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Oboe concerto in F major (RV 456)",
+      "qid": "Q118151608",
+      "catalog_numbers": {
+        "RV": "456"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Oboe concerto in F major (RV 457)",
+      "qid": "Q118151610",
+      "catalog_numbers": {
+        "RV": "457"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Oboe concerto in G minor (RV 460)",
+      "qid": "Q122417332",
+      "catalog_numbers": {
+        "RV": "460"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Opus Vivaldi",
+      "qid": "Q57934068"
+    },
+    {
+      "title": "Orlando furioso",
+      "qid": "Q7103217",
+      "catalog_numbers": {
+        "RV": "819"
+      }
+    },
+    {
+      "title": "Par che tardo (RV 662)",
+      "qid": "Q129671264",
+      "catalog_numbers": {
+        "RV": "662"
+      }
+    },
+    {
+      "title": "Perfidissimo cor! (RV 674)",
+      "qid": "Q129671297",
+      "catalog_numbers": {
+        "RV": "674"
+      }
+    },
+    {
+      "title": "Piango, gemo, sospiro (RV 675)",
+      "qid": "Q129671299",
+      "catalog_numbers": {
+        "RV": "675"
+      }
+    },
+    {
+      "title": "Pianti, sospiri (RV 676)",
+      "qid": "Q129671312",
+      "catalog_numbers": {
+        "RV": "676"
+      }
+    },
+    {
+      "title": "Presto",
+      "qid": "Q120114719",
+      "key": "F major"
+    },
+    {
+      "title": "Qual per ignoto (RV 677)",
+      "qid": "Q129671314",
+      "catalog_numbers": {
+        "RV": "677"
+      }
+    },
+    {
+      "title": "Quel usignolo",
+      "qid": "Q54988944"
+    },
+    {
+      "title": "Recorder concerto in C minor (RV 441)",
+      "qid": "Q118151595",
+      "catalog_numbers": {
+        "RV": "441"
+      },
+      "key": "C minor"
+    },
+    {
+      "title": "Recorder concerto in F major (RV 442)",
+      "qid": "Q118151596",
+      "catalog_numbers": {
+        "RV": "442"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Regina coeli (RV 615)",
+      "qid": "Q131862184",
+      "catalog_numbers": {
+        "RV": "615"
+      }
+    },
+    {
+      "title": "Rosilena ed Oronta",
+      "qid": "Q10364635",
+      "catalog_numbers": {
+        "RV": "730"
+      }
+    },
+    {
+      "title": "Rosmira",
+      "qid": "Q3941553",
+      "catalog_numbers": {
+        "RV": "731"
+      }
+    },
+    {
+      "title": "Salve Regina",
+      "qid": "Q65211290",
+      "catalog_numbers": {
+        "RV": "616"
+      },
+      "key": "C minor"
+    },
+    {
+      "title": "Salve Regina (RV 617)",
+      "qid": "Q131862185",
+      "catalog_numbers": {
+        "RV": "617"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Salve Regina (RV 618)",
+      "qid": "Q131862186",
+      "catalog_numbers": {
+        "RV": "618"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Salve Regina (RV 619)",
+      "qid": "Q131862188",
+      "catalog_numbers": {
+        "RV": "619"
+      }
+    },
+    {
+      "title": "Salve Regina (RV 804)",
+      "qid": "Q131862191",
+      "catalog_numbers": {
+        "RV": "804"
+      }
+    },
+    {
+      "title": "Sanctorum meritis (RV 620)",
+      "qid": "Q131862189",
+      "catalog_numbers": {
+        "RV": "620"
+      }
+    },
+    {
+      "title": "Scherza di fronda (RV 663)",
+      "qid": "Q129671266",
+      "catalog_numbers": {
+        "RV": "663"
+      }
+    },
+    {
+      "title": "Seben vivono senz'alma (RV 664)",
+      "qid": "Q129671267",
+      "catalog_numbers": {
+        "RV": "664"
+      }
+    },
+    {
+      "title": "Semiramide",
+      "qid": "Q3955083",
+      "catalog_numbers": {
+        "RV": "733"
+      }
+    },
+    {
+      "title": "Si levi dal pensier (RV 665)",
+      "qid": "Q129671270",
+      "catalog_numbers": {
+        "RV": "665"
+      }
+    },
+    {
+      "title": "Si si luce adorate (RV 666)",
+      "qid": "Q129671272",
+      "catalog_numbers": {
+        "RV": "666"
+      }
+    },
+    {
+      "title": "Sinfonia in B minor (RV 168)",
+      "qid": "Q125696425",
+      "catalog_numbers": {
+        "RV": "168"
+      },
+      "key": "B minor"
+    },
+    {
+      "title": "Sinfonia in B minor (RV 169) \"Al Santo Sepolcro\"",
+      "qid": "Q125696427",
+      "catalog_numbers": {
+        "RV": "169"
+      },
+      "key": "B minor"
+    },
+    {
+      "title": "Sinfonia in B-flat major (RV 162)",
+      "qid": "Q125696414",
+      "catalog_numbers": {
+        "RV": "162"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Sinfonia in D major (RV 125)",
+      "qid": "Q125696538",
+      "catalog_numbers": {
+        "RV": "125"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Sinfonia in E major (RV 131)",
+      "qid": "Q125696369",
+      "catalog_numbers": {
+        "RV": "131"
+      },
+      "key": "E major"
+    },
+    {
+      "title": "Sinfonia in G major (RV 147)",
+      "qid": "Q125696393",
+      "catalog_numbers": {
+        "RV": "147"
+      },
+      "key": "G major"
+    },
+    {
+      "title": "Sinfonia in G major (RV 149)",
+      "qid": "Q125696397",
+      "catalog_numbers": {
+        "RV": "149"
+      },
+      "key": "G major"
+    },
+    {
+      "title": "Sinfonia in G major (RV Anh. 68)",
+      "qid": "Q125696396",
+      "key": "G major"
+    },
+    {
+      "title": "Siroe, re di Persia",
+      "qid": "Q65205246",
+      "catalog_numbers": {
+        "RV": "735"
+      }
+    },
+    {
+      "title": "Six Concertos, Op. 11",
+      "qid": "Q3954596"
+    },
+    {
+      "title": "Sonata for 2 oboes and continuo in G minor (RV 81)",
+      "qid": "Q118151635",
+      "catalog_numbers": {
+        "RV": "81"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Sonata for 2 violins and continuo in A major (RV 75)",
+      "qid": "Q118151630",
+      "catalog_numbers": {
+        "RV": "75"
+      },
+      "key": "A major",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op01n09m01.krn&l=musedata/vivaldi/op01&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op01n09m02.krn&l=musedata/vivaldi/op01&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op01n09m03.krn&l=musedata/vivaldi/op01&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op01n09m04.krn&l=musedata/vivaldi/op01&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata for 2 violins and continuo in B minor (RV 79)",
+      "qid": "Q118151633",
+      "catalog_numbers": {
+        "RV": "79"
+      },
+      "key": "B minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op01n11m01.krn&l=musedata/vivaldi/op01&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op01n11m02.krn&l=musedata/vivaldi/op01&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op01n11m03.krn&l=musedata/vivaldi/op01&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op01n11m04.krn&l=musedata/vivaldi/op01&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata for 2 violins and continuo in B-flat major (RV 76)",
+      "qid": "Q118151631",
+      "catalog_numbers": {
+        "RV": "76"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Sonata for 2 violins and continuo in B-flat major (RV 78)",
+      "qid": "Q118151632",
+      "catalog_numbers": {
+        "RV": "78"
+      },
+      "key": "B-flat major",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op01n10m01.krn&l=musedata/vivaldi/op01&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op01n10m02.krn&l=musedata/vivaldi/op01&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op01n10m03.krn&l=musedata/vivaldi/op01&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata for 2 violins and continuo in C major (RV 60)",
+      "qid": "Q118151619",
+      "catalog_numbers": {
+        "RV": "60"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Sonata for 2 violins and continuo in C major (RV 61)",
+      "qid": "Q118151620",
+      "catalog_numbers": {
+        "RV": "61"
+      },
+      "key": "C major",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op01n03m01.krn&l=musedata/vivaldi/op01&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op01n03m02.krn&l=musedata/vivaldi/op01&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op01n03m03.krn&l=musedata/vivaldi/op01&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op01n03m04.krn&l=musedata/vivaldi/op01&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata for 2 violins and continuo in D major (RV 62)",
+      "qid": "Q118151621",
+      "catalog_numbers": {
+        "RV": "62"
+      },
+      "key": "D major",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op01n06m01.krn&l=musedata/vivaldi/op01&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op01n06m02.krn&l=musedata/vivaldi/op01&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op01n06m03.krn&l=musedata/vivaldi/op01&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op01n06m04.krn&l=musedata/vivaldi/op01&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata for 2 violins and continuo in D minor (RV 64)",
+      "qid": "Q118151622",
+      "catalog_numbers": {
+        "RV": "64"
+      },
+      "key": "D minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op01n08m01.krn&l=musedata/vivaldi/op01&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op01n08m02.krn&l=musedata/vivaldi/op01&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op01n08m03.krn&l=musedata/vivaldi/op01&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op01n08m04.krn&l=musedata/vivaldi/op01&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata for 2 violins and continuo in E major (RV 66)",
+      "qid": "Q118151624",
+      "catalog_numbers": {
+        "RV": "66"
+      },
+      "key": "E major",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op01n04m01.krn&l=musedata/vivaldi/op01&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op01n04m02.krn&l=musedata/vivaldi/op01&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op01n04m03.krn&l=musedata/vivaldi/op01&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op01n04m04.krn&l=musedata/vivaldi/op01&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op01n04m05.krn&l=musedata/vivaldi/op01&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata for 2 violins and continuo in E minor (RV 67)",
+      "qid": "Q118151625",
+      "catalog_numbers": {
+        "RV": "67"
+      },
+      "key": "E minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op01n02m01.krn&l=musedata/vivaldi/op01&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op01n02m02.krn&l=musedata/vivaldi/op01&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op01n02m03.krn&l=musedata/vivaldi/op01&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op01n02m04.krn&l=musedata/vivaldi/op01&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata for 2 violins and continuo in E-flat major (RV 65)",
+      "qid": "Q118151623",
+      "catalog_numbers": {
+        "RV": "65"
+      },
+      "key": "E-flat major"
+    },
+    {
+      "title": "Sonata for 2 violins and continuo in F major (RV 69)",
+      "qid": "Q118151626",
+      "catalog_numbers": {
+        "RV": "69"
+      },
+      "key": "F major",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op01n05m01.krn&l=musedata/vivaldi/op01&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op01n05m02.krn&l=musedata/vivaldi/op01&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op01n05m03.krn&l=musedata/vivaldi/op01&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op01n05m04.krn&l=musedata/vivaldi/op01&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata for 2 violins and continuo in G minor (RV 72)",
+      "qid": "Q118151627",
+      "catalog_numbers": {
+        "RV": "72"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Sonata for 2 violins and continuo in G minor (RV 73)",
+      "qid": "Q118151628",
+      "catalog_numbers": {
+        "RV": "73"
+      },
+      "key": "G minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op01n01m01.krn&l=musedata/vivaldi/op01&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op01n01m02.krn&l=musedata/vivaldi/op01&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op01n01m03.krn&l=musedata/vivaldi/op01&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op01n01m04.krn&l=musedata/vivaldi/op01&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op01n01m05.krn&l=musedata/vivaldi/op01&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op01n07m01.krn&l=musedata/vivaldi/op01&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op01n07m02.krn&l=musedata/vivaldi/op01&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op01n07m03.krn&l=musedata/vivaldi/op01&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op01n07m04.krn&l=musedata/vivaldi/op01&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata for 2 violins and continuo in G minor (RV 74)",
+      "qid": "Q118151629",
+      "catalog_numbers": {
+        "RV": "74"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Sonata for 2 violins in B-flat major (RV 77)",
+      "qid": "Q117024852",
+      "catalog_numbers": {
+        "RV": "77"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Sonata for 2 violins in F major (RV 68)",
+      "qid": "Q117024848",
+      "catalog_numbers": {
+        "RV": "68"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Sonata for 2 violins in F major (RV 70)",
+      "qid": "Q117024850",
+      "catalog_numbers": {
+        "RV": "70"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Sonata for 2 violins in G major (RV 71)",
+      "qid": "Q117024851",
+      "catalog_numbers": {
+        "RV": "71"
+      },
+      "key": "G major"
+    },
+    {
+      "title": "Sonata for cello and continuo in B-flat major (RV 46)",
+      "qid": "Q14365661",
+      "catalog_numbers": {
+        "RV": "46"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Sonata for flute and continuo in C major (RV 48)",
+      "qid": "Q118151613",
+      "catalog_numbers": {
+        "RV": "48"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Sonata for flute and continuo in G minor (RV 51)",
+      "qid": "Q118151616",
+      "catalog_numbers": {
+        "RV": "51"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Sonata for oboe and continuo in C minor (RV 53)",
+      "qid": "Q118151618",
+      "catalog_numbers": {
+        "RV": "53"
+      },
+      "key": "C minor"
+    },
+    {
+      "title": "Sonata for recorder and continuo in F major (RV 52)",
+      "qid": "Q118151617",
+      "catalog_numbers": {
+        "RV": "52"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Sonata for recorder, bassoon, and continuo in A minor (RV 86)",
+      "qid": "Q114796531",
+      "catalog_numbers": {
+        "RV": "86"
+      },
+      "key": "A minor"
+    },
+    {
+      "title": "Sonata for violin and continuo in A major (RV 29)",
+      "qid": "Q115566170",
+      "catalog_numbers": {
+        "RV": "29"
+      },
+      "key": "A major"
+    },
+    {
+      "title": "Sonata for violin and continuo in A major (RV 30)",
+      "qid": "Q115566171",
+      "catalog_numbers": {
+        "RV": "30"
+      },
+      "key": "A major"
+    },
+    {
+      "title": "Sonata for violin and continuo in A major (RV 31)",
+      "qid": "Q115566172",
+      "catalog_numbers": {
+        "RV": "31"
+      },
+      "key": "A major",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op02n02m01.krn&l=musedata/vivaldi/op02&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op02n02m02.krn&l=musedata/vivaldi/op02&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op02n02m03.krn&l=musedata/vivaldi/op02&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata for violin and continuo in A minor (RV 32)",
+      "qid": "Q115566173",
+      "catalog_numbers": {
+        "RV": "32"
+      },
+      "key": "A minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op02n12m01.krn&l=musedata/vivaldi/op02&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op02n12m02.krn&l=musedata/vivaldi/op02&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op02n12m03.krn&l=musedata/vivaldi/op02&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op02n12m04.krn&l=musedata/vivaldi/op02&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata for violin and continuo in B minor (RV 35)",
+      "qid": "Q115566176",
+      "catalog_numbers": {
+        "RV": "35"
+      },
+      "key": "B minor"
+    },
+    {
+      "title": "Sonata for violin and continuo in B minor (RV 35a)",
+      "qid": "Q115566177",
+      "catalog_numbers": {
+        "RV": "35"
+      },
+      "key": "B minor"
+    },
+    {
+      "title": "Sonata for violin and continuo in B minor (RV 36)",
+      "qid": "Q115566178",
+      "catalog_numbers": {
+        "RV": "36"
+      },
+      "key": "B minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op02n05m01.krn&l=musedata/vivaldi/op02&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op02n05m02.krn&l=musedata/vivaldi/op02&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op02n05m03.krn&l=musedata/vivaldi/op02&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata for violin and continuo in B minor (RV 37)",
+      "qid": "Q115566179",
+      "catalog_numbers": {
+        "RV": "37"
+      },
+      "key": "B minor"
+    },
+    {
+      "title": "Sonata for violin and continuo in B-flat major (RV 33)",
+      "qid": "Q115566174",
+      "catalog_numbers": {
+        "RV": "33"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Sonata for violin and continuo in B-flat major (RV 34)",
+      "qid": "Q115566175",
+      "catalog_numbers": {
+        "RV": "34"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Sonata for violin and continuo in C major (RV 1)",
+      "qid": "Q114601197",
+      "catalog_numbers": {
+        "RV": "1"
+      },
+      "key": "C major",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op02n06m01.krn&l=musedata/vivaldi/op02&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op02n06m02.krn&l=musedata/vivaldi/op02&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op02n06m03.krn&l=musedata/vivaldi/op02&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata for violin and continuo in C major (RV 2)",
+      "qid": "Q114601198",
+      "catalog_numbers": {
+        "RV": "2"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Sonata for violin and continuo in C major (RV 3)",
+      "qid": "Q114601199",
+      "catalog_numbers": {
+        "RV": "3"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Sonata for violin and continuo in C major (RV 4)",
+      "qid": "Q114601200",
+      "catalog_numbers": {
+        "RV": "4"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Sonata for violin and continuo in C major (RV 754)",
+      "qid": "Q114870576",
+      "catalog_numbers": {
+        "RV": "754"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Sonata for violin and continuo in C minor (RV 5)",
+      "qid": "Q114601201",
+      "catalog_numbers": {
+        "RV": "5"
+      },
+      "key": "C minor"
+    },
+    {
+      "title": "Sonata for violin and continuo in C minor (RV 6)",
+      "qid": "Q114601202",
+      "catalog_numbers": {
+        "RV": "6"
+      },
+      "key": "C minor"
+    },
+    {
+      "title": "Sonata for violin and continuo in C minor (RV 7)",
+      "qid": "Q114601203",
+      "catalog_numbers": {
+        "RV": "7"
+      },
+      "key": "C minor"
+    },
+    {
+      "title": "Sonata for violin and continuo in C minor (RV 7a)",
+      "qid": "Q114601204",
+      "catalog_numbers": {
+        "RV": "7"
+      },
+      "key": "C minor"
+    },
+    {
+      "title": "Sonata for violin and continuo in C minor (RV 8)",
+      "qid": "Q114601205",
+      "catalog_numbers": {
+        "RV": "8"
+      },
+      "key": "C minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op02n07m01.krn&l=musedata/vivaldi/op02&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op02n07m02.krn&l=musedata/vivaldi/op02&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op02n07m03.krn&l=musedata/vivaldi/op02&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata for violin and continuo in D major (RV 10)",
+      "qid": "Q114870474",
+      "catalog_numbers": {
+        "RV": "10"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Sonata for violin and continuo in D major (RV 11)",
+      "qid": "Q114870475",
+      "catalog_numbers": {
+        "RV": "11"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Sonata for violin and continuo in D major (RV 9)",
+      "qid": "Q114601207",
+      "catalog_numbers": {
+        "RV": "9"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Sonata for violin and continuo in D minor (RV 12)",
+      "qid": "Q114870476",
+      "catalog_numbers": {
+        "RV": "12"
+      },
+      "key": "D minor"
+    },
+    {
+      "title": "Sonata for violin and continuo in D minor (RV 14)",
+      "qid": "Q114870477",
+      "catalog_numbers": {
+        "RV": "14"
+      },
+      "key": "D minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op02n03m01.krn&l=musedata/vivaldi/op02&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op02n03m02.krn&l=musedata/vivaldi/op02&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op02n03m03.krn&l=musedata/vivaldi/op02&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op02n03m04.krn&l=musedata/vivaldi/op02&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata for violin and continuo in D minor (RV 15)",
+      "qid": "Q114870478",
+      "catalog_numbers": {
+        "RV": "15"
+      },
+      "key": "D minor"
+    },
+    {
+      "title": "Sonata for violin and continuo in D minor (RV Anh. 97)",
+      "qid": "Q115769219",
+      "key": "D minor"
+    },
+    {
+      "title": "Sonata for violin and continuo in E minor (RV 16)",
+      "qid": "Q114870479",
+      "catalog_numbers": {
+        "RV": "16"
+      },
+      "key": "E minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op02n09m01.krn&l=musedata/vivaldi/op02&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op02n09m02.krn&l=musedata/vivaldi/op02&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op02n09m03.krn&l=musedata/vivaldi/op02&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op02n09m04.krn&l=musedata/vivaldi/op02&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata for violin and continuo in E minor (RV 17)",
+      "qid": "Q114870481",
+      "catalog_numbers": {
+        "RV": "17"
+      },
+      "key": "E minor"
+    },
+    {
+      "title": "Sonata for violin and continuo in E minor (RV 17a)",
+      "qid": "Q114870482",
+      "catalog_numbers": {
+        "RV": "17"
+      },
+      "key": "E minor"
+    },
+    {
+      "title": "Sonata for violin and continuo in F major (RV 18)",
+      "qid": "Q114870483",
+      "catalog_numbers": {
+        "RV": "18"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Sonata for violin and continuo in F major (RV 19)",
+      "qid": "Q114870485",
+      "catalog_numbers": {
+        "RV": "19"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Sonata for violin and continuo in F major (RV 20)",
+      "qid": "Q114870486",
+      "catalog_numbers": {
+        "RV": "20"
+      },
+      "key": "F major",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op02n04m01.krn&l=musedata/vivaldi/op02&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op02n04m02.krn&l=musedata/vivaldi/op02&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op02n04m03.krn&l=musedata/vivaldi/op02&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op02n04m04.krn&l=musedata/vivaldi/op02&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata for violin and continuo in F minor (RV 21)",
+      "qid": "Q114870487",
+      "catalog_numbers": {
+        "RV": "21"
+      },
+      "key": "F minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op02n10m01.krn&l=musedata/vivaldi/op02&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op02n10m02.krn&l=musedata/vivaldi/op02&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op02n10m03.krn&l=musedata/vivaldi/op02&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op02n11m01.krn&l=musedata/vivaldi/op02&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op02n11m02.krn&l=musedata/vivaldi/op02&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op02n11m03.krn&l=musedata/vivaldi/op02&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata for violin and continuo in G major (RV 22)",
+      "qid": "Q114870488",
+      "catalog_numbers": {
+        "RV": "22"
+      },
+      "key": "G major"
+    },
+    {
+      "title": "Sonata for violin and continuo in G major (RV 23)",
+      "qid": "Q114870489",
+      "catalog_numbers": {
+        "RV": "23"
+      },
+      "key": "G major",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op02n08m01.krn&l=musedata/vivaldi/op02&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op02n08m02.krn&l=musedata/vivaldi/op02&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op02n08m03.krn&l=musedata/vivaldi/op02&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata for violin and continuo in G major (RV 25)",
+      "qid": "Q115566166",
+      "catalog_numbers": {
+        "RV": "25"
+      },
+      "key": "G major"
+    },
+    {
+      "title": "Sonata for violin and continuo in G minor (RV 26)",
+      "qid": "Q115566167",
+      "catalog_numbers": {
+        "RV": "26"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Sonata for violin and continuo in G minor (RV 27)",
+      "qid": "Q115566168",
+      "catalog_numbers": {
+        "RV": "27"
+      },
+      "key": "G minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op02n01m01.krn&l=musedata/vivaldi/op02&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op02n01m02.krn&l=musedata/vivaldi/op02&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op02n01m03.krn&l=musedata/vivaldi/op02&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=vivaldi-op02n01m04.krn&l=musedata/vivaldi/op02&format=midi"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata for violin and continuo in G minor (RV 28)",
+      "qid": "Q115566169",
+      "catalog_numbers": {
+        "RV": "28"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Sonata for violin and continuo in G minor (RV 757)",
+      "qid": "Q117024907",
+      "catalog_numbers": {
+        "RV": "757"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Sonata for violin, cello, and continuo in C minor (RV 83)",
+      "qid": "Q114442061",
+      "catalog_numbers": {
+        "RV": "83"
+      },
+      "key": "C minor"
+    },
+    {
+      "title": "Sonata for violin, cello, and continuo in G major (RV 820)",
+      "qid": "Q114870581",
+      "catalog_numbers": {
+        "RV": "820"
+      },
+      "key": "G major"
+    },
+    {
+      "title": "Sorge vermiglia in ciel (RV 667)",
+      "qid": "Q129671285",
+      "catalog_numbers": {
+        "RV": "667"
+      }
+    },
+    {
+      "title": "Sovente il sole",
+      "qid": "Q86734864"
+    },
+    {
+      "title": "Stabat Mater",
+      "qid": "Q3495373",
+      "catalog_numbers": {
+        "RV": "621"
+      },
+      "key": "F minor",
+      "instruments": [
+        "Contralto",
+        "Violin 1",
+        "Violin 2",
+        "Viola",
+        "Violoncello",
+        "Contrabass",
+        "Organ"
+      ]
+    },
+    {
+      "title": "T'intendo si mio cor (RV 668)",
+      "qid": "Q129671286",
+      "catalog_numbers": {
+        "RV": "668"
+      }
+    },
+    {
+      "title": "Te Deum (RV 622)",
+      "qid": "Q131862190",
+      "catalog_numbers": {
+        "RV": "622"
+      }
+    },
+    {
+      "title": "Tra l'erbe, i zeffiri (RV 669)",
+      "qid": "Q129671288",
+      "catalog_numbers": {
+        "RV": "669"
+      }
+    },
+    {
+      "title": "Trio for violin, lute, and continuo in C major (RV 82)",
+      "qid": "Q114442060",
+      "catalog_numbers": {
+        "RV": "82"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Trio for violin, lute, and continuo in G minor (RV 85)",
+      "qid": "Q114785134",
+      "catalog_numbers": {
+        "RV": "85"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Vestro principi divino",
+      "qid": "Q65209978",
+      "catalog_numbers": {
+        "RV": "633"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Viola d'amore concerto in A minor (RV 396)",
+      "qid": "Q122417328",
+      "catalog_numbers": {
+        "RV": "396"
+      },
+      "key": "A major"
+    },
+    {
+      "title": "Viola d'amore concerto in A minor (RV 397)",
+      "qid": "Q122417330",
+      "catalog_numbers": {
+        "RV": "397"
+      },
+      "key": "A minor"
+    },
+    {
+      "title": "Viola d'amore concerto in D major (RV 392)",
+      "qid": "Q122417308",
+      "catalog_numbers": {
+        "RV": "392"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Viola d'amore concerto in D minor (RV 393)",
+      "qid": "Q122417310",
+      "catalog_numbers": {
+        "RV": "393"
+      },
+      "key": "D minor"
+    },
+    {
+      "title": "Viola d'amore concerto in D minor (RV 394)",
+      "qid": "Q122417311",
+      "catalog_numbers": {
+        "RV": "394"
+      },
+      "key": "D minor"
+    },
+    {
+      "title": "Viola d'amore concerto in D minor (RV 395)",
+      "qid": "Q122417313",
+      "catalog_numbers": {
+        "RV": "395"
+      },
+      "key": "D minor"
+    },
+    {
+      "title": "Violin Concerto in A major (RV 339)",
+      "qid": "Q116050338",
+      "catalog_numbers": {
+        "RV": "339"
+      },
+      "key": "A major"
+    },
+    {
+      "title": "Violin Concerto in A major (RV 340)",
+      "qid": "Q116050340",
+      "catalog_numbers": {
+        "RV": "340"
+      },
+      "key": "A major"
+    },
+    {
+      "title": "Violin Concerto in A major (RV 341)",
+      "qid": "Q116050342",
+      "catalog_numbers": {
+        "RV": "341"
+      },
+      "key": "A major"
+    },
+    {
+      "title": "Violin Concerto in A major (RV 343)",
+      "qid": "Q116050346",
+      "catalog_numbers": {
+        "RV": "343"
+      },
+      "key": "A major"
+    },
+    {
+      "title": "Violin Concerto in A major (RV 344)",
+      "qid": "Q116050347",
+      "catalog_numbers": {
+        "RV": "344"
+      },
+      "key": "A major"
+    },
+    {
+      "title": "Violin Concerto in A major (RV 351)",
+      "qid": "Q116050386",
+      "catalog_numbers": {
+        "RV": "351"
+      },
+      "key": "A major"
+    },
+    {
+      "title": "Violin concerto in A major (RV 335) \"The Cuckow\"",
+      "qid": "Q116050328",
+      "catalog_numbers": {
+        "RV": "335"
+      },
+      "key": "A major"
+    },
+    {
+      "title": "Violin concerto in A major (RV 336)",
+      "qid": "Q116050332",
+      "catalog_numbers": {
+        "RV": "336"
+      },
+      "key": "A major"
+    },
+    {
+      "title": "Violin concerto in A major (RV 337)",
+      "qid": "Q116050335",
+      "catalog_numbers": {
+        "RV": "337"
+      },
+      "key": "A major"
+    },
+    {
+      "title": "Violin concerto in A major (RV 342)",
+      "qid": "Q116050344",
+      "catalog_numbers": {
+        "RV": "342"
+      },
+      "key": "A major"
+    },
+    {
+      "title": "Violin concerto in A major (RV 345)",
+      "qid": "Q116050349",
+      "catalog_numbers": {
+        "RV": "345"
+      },
+      "key": "A major"
+    },
+    {
+      "title": "Violin concerto in A major (RV 346)",
+      "qid": "Q116050350",
+      "catalog_numbers": {
+        "RV": "346"
+      },
+      "key": "A major"
+    },
+    {
+      "title": "Violin concerto in A major (RV 347)",
+      "qid": "Q116050352",
+      "catalog_numbers": {
+        "RV": "347"
+      },
+      "key": "A major"
+    },
+    {
+      "title": "Violin concerto in A major (RV 348)",
+      "qid": "Q116050354",
+      "catalog_numbers": {
+        "RV": "348"
+      },
+      "key": "A major"
+    },
+    {
+      "title": "Violin concerto in A major (RV 349)",
+      "qid": "Q116050819",
+      "catalog_numbers": {
+        "RV": "349"
+      },
+      "key": "A major"
+    },
+    {
+      "title": "Violin concerto in A major (RV 350)",
+      "qid": "Q116050384",
+      "catalog_numbers": {
+        "RV": "350"
+      },
+      "key": "A major"
+    },
+    {
+      "title": "Violin concerto in A major (RV 352)",
+      "qid": "Q116050388",
+      "catalog_numbers": {
+        "RV": "352"
+      },
+      "key": "A major"
+    },
+    {
+      "title": "Violin concerto in A major (RV 353)",
+      "qid": "Q116050389",
+      "catalog_numbers": {
+        "RV": "353"
+      },
+      "key": "A major"
+    },
+    {
+      "title": "Violin concerto in A major (RV 763) \"L'Ottavina\"",
+      "qid": "Q117024908",
+      "catalog_numbers": {
+        "RV": "763"
+      },
+      "key": "A major"
+    },
+    {
+      "title": "Violin concerto in A major (RV 768)",
+      "qid": "Q117024911",
+      "catalog_numbers": {
+        "RV": "768"
+      },
+      "key": "A major"
+    },
+    {
+      "title": "Violin concerto in A major (RV 792)",
+      "qid": "Q117235890",
+      "catalog_numbers": {
+        "RV": "792"
+      }
+    },
+    {
+      "title": "Violin concerto in A minor (RV 354)",
+      "qid": "Q116050391",
+      "catalog_numbers": {
+        "RV": "354"
+      },
+      "key": "A minor"
+    },
+    {
+      "title": "Violin concerto in A minor (RV 356)",
+      "qid": "Q116050394",
+      "catalog_numbers": {
+        "RV": "356"
+      },
+      "key": "A minor",
+      "instruments": [
+        "Violino"
+      ]
+    },
+    {
+      "title": "Violin concerto in A minor (RV 357)",
+      "qid": "Q116050395",
+      "catalog_numbers": {
+        "RV": "357"
+      },
+      "key": "A minor"
+    },
+    {
+      "title": "Violin concerto in A minor (RV 358)",
+      "qid": "Q116050397",
+      "catalog_numbers": {
+        "RV": "358"
+      },
+      "key": "A minor"
+    },
+    {
+      "title": "Violin concerto in A minor (RV Anh. 107)",
+      "qid": "Q116050392",
+      "catalog_numbers": {
+        "RV": "355"
+      },
+      "key": "A minor"
+    },
+    {
+      "title": "Violin concerto in B minor (RV 384)",
+      "qid": "Q117024884",
+      "catalog_numbers": {
+        "RV": "384"
+      },
+      "key": "B minor"
+    },
+    {
+      "title": "Violin concerto in B minor (RV 386)",
+      "qid": "Q117024886",
+      "catalog_numbers": {
+        "RV": "386"
+      },
+      "key": "B minor"
+    },
+    {
+      "title": "Violin concerto in B minor (RV 387)",
+      "qid": "Q117024887",
+      "catalog_numbers": {
+        "RV": "387"
+      },
+      "key": "B minor"
+    },
+    {
+      "title": "Violin concerto in B minor (RV 388)",
+      "qid": "Q117024888",
+      "catalog_numbers": {
+        "RV": "388"
+      },
+      "key": "B minor"
+    },
+    {
+      "title": "Violin concerto in B minor (RV 389)",
+      "qid": "Q117024889",
+      "catalog_numbers": {
+        "RV": "389"
+      },
+      "key": "B minor"
+    },
+    {
+      "title": "Violin concerto in B minor (RV 390)",
+      "qid": "Q117024890",
+      "catalog_numbers": {
+        "RV": "390"
+      },
+      "key": "B minor"
+    },
+    {
+      "title": "Violin concerto in B minor (RV 391)",
+      "qid": "Q117024891",
+      "catalog_numbers": {
+        "RV": "391"
+      },
+      "key": "B minor"
+    },
+    {
+      "title": "Violin concerto in B-flat major (RV 359)",
+      "qid": "Q116050400",
+      "catalog_numbers": {
+        "RV": "359"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Violin concerto in B-flat major (RV 360)",
+      "qid": "Q116050401",
+      "catalog_numbers": {
+        "RV": "360"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Violin concerto in B-flat major (RV 361)",
+      "qid": "Q116050403",
+      "catalog_numbers": {
+        "RV": "361"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Violin concerto in B-flat major (RV 362) \"La Caccia\"",
+      "qid": "Q116050409",
+      "catalog_numbers": {
+        "RV": "362"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Violin concerto in B-flat major (RV 363) \"Il Cornetto da Posta\"",
+      "qid": "Q117024856",
+      "catalog_numbers": {
+        "RV": "363"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Violin concerto in B-flat major (RV 364)",
+      "qid": "Q117024857",
+      "catalog_numbers": {
+        "RV": "364"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Violin concerto in B-flat major (RV 364a)",
+      "qid": "Q117024859",
+      "catalog_numbers": {
+        "RV": "364"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Violin concerto in B-flat major (RV 365)",
+      "qid": "Q117024860",
+      "catalog_numbers": {
+        "RV": "365"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Violin concerto in B-flat major (RV 366) \"Il Carbonelli\"",
+      "qid": "Q117024861",
+      "catalog_numbers": {
+        "RV": "366"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Violin concerto in B-flat major (RV 367)",
+      "qid": "Q117024862",
+      "catalog_numbers": {
+        "RV": "367"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Violin concerto in B-flat major (RV 368)",
+      "qid": "Q117024863",
+      "catalog_numbers": {
+        "RV": "368"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Violin concerto in B-flat major (RV 369)",
+      "qid": "Q117024864",
+      "catalog_numbers": {
+        "RV": "369"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Violin concerto in B-flat major (RV 370)",
+      "qid": "Q117024865",
+      "catalog_numbers": {
+        "RV": "370"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Violin concerto in B-flat major (RV 371)",
+      "qid": "Q117024866",
+      "catalog_numbers": {
+        "RV": "371"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Violin concerto in B-flat major (RV 372)",
+      "qid": "Q117024867",
+      "catalog_numbers": {
+        "RV": "372"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Violin concerto in B-flat major (RV 372a)",
+      "qid": "Q117024868",
+      "catalog_numbers": {
+        "RV": "372"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Violin concerto in B-flat major (RV 373)",
+      "qid": "Q117024869",
+      "catalog_numbers": {
+        "RV": "373"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Violin concerto in B-flat major (RV 374)",
+      "qid": "Q117024870",
+      "catalog_numbers": {
+        "RV": "374"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Violin concerto in B-flat major (RV 375)",
+      "qid": "Q117024871",
+      "catalog_numbers": {
+        "RV": "375"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Violin concerto in B-flat major (RV 376)",
+      "qid": "Q117024872",
+      "catalog_numbers": {
+        "RV": "376"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Violin concerto in B-flat major (RV 377)",
+      "qid": "Q117024873",
+      "catalog_numbers": {
+        "RV": "377"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Violin concerto in B-flat major (RV 378)",
+      "qid": "Q117024874",
+      "catalog_numbers": {
+        "RV": "378"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Violin concerto in B-flat major (RV 379)",
+      "qid": "Q117024875",
+      "catalog_numbers": {
+        "RV": "379"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Violin concerto in B-flat major (RV 380)",
+      "qid": "Q117024876",
+      "catalog_numbers": {
+        "RV": "380"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Violin concerto in B-flat major (RV 381)",
+      "qid": "Q117024878",
+      "catalog_numbers": {
+        "RV": "381"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Violin concerto in B-flat major (RV 382)",
+      "qid": "Q117024879",
+      "catalog_numbers": {
+        "RV": "382"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Violin concerto in B-flat major (RV 383)",
+      "qid": "Q117024880",
+      "catalog_numbers": {
+        "RV": "383"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Violin concerto in B-flat major (RV 383a)",
+      "qid": "Q117024882",
+      "catalog_numbers": {
+        "RV": "383"
+      },
+      "key": "B-flat major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/vivaldi_concerto_la_stravaganza_4_1_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/vivaldi_concerto_la_stravaganza_4_2_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/vivaldi_concerto_la_stravaganza_4_3_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Violin concerto in C major (?) (RV 193)",
+      "qid": "Q114870519",
+      "catalog_numbers": {
+        "RV": "193"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Violin concerto in C major (RV 170)",
+      "qid": "Q114870490",
+      "catalog_numbers": {
+        "RV": "170"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Violin concerto in C major (RV 171)",
+      "qid": "Q114870491",
+      "catalog_numbers": {
+        "RV": "171"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Violin concerto in C major (RV 172)",
+      "qid": "Q114870492",
+      "catalog_numbers": {
+        "RV": "172"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Violin concerto in C major (RV 173)",
+      "qid": "Q114870493",
+      "catalog_numbers": {
+        "RV": "173"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Violin concerto in C major (RV 174)",
+      "qid": "Q114870495",
+      "catalog_numbers": {
+        "RV": "174"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Violin concerto in C major (RV 175)",
+      "qid": "Q114870496",
+      "catalog_numbers": {
+        "RV": "175"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Violin concerto in C major (RV 176)",
+      "qid": "Q114870497",
+      "catalog_numbers": {
+        "RV": "176"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Violin concerto in C major (RV 177)",
+      "qid": "Q114870498",
+      "catalog_numbers": {
+        "RV": "177"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Violin concerto in C major (RV 178)",
+      "qid": "Q114870499",
+      "catalog_numbers": {
+        "RV": "178"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Violin concerto in C major (RV 179)",
+      "qid": "Q114870500",
+      "catalog_numbers": {
+        "RV": "179"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Violin concerto in C major (RV 179a)",
+      "qid": "Q114870501",
+      "catalog_numbers": {
+        "RV": "179"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Violin concerto in C major (RV 180) \"Il Piacere\"",
+      "qid": "Q114870502",
+      "catalog_numbers": {
+        "RV": "180"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Violin concerto in C major (RV 181)",
+      "qid": "Q114870503",
+      "catalog_numbers": {
+        "RV": "181"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Violin concerto in C major (RV 181a)",
+      "qid": "Q114870505",
+      "catalog_numbers": {
+        "RV": "181"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Violin concerto in C major (RV 182)",
+      "qid": "Q114870506",
+      "catalog_numbers": {
+        "RV": "182"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Violin concerto in C major (RV 183)",
+      "qid": "Q114870507",
+      "catalog_numbers": {
+        "RV": "183"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Violin concerto in C major (RV 184)",
+      "qid": "Q114870508",
+      "catalog_numbers": {
+        "RV": "184"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Violin concerto in C major (RV 185)",
+      "qid": "Q114870509",
+      "catalog_numbers": {
+        "RV": "185"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Violin concerto in C major (RV 186)",
+      "qid": "Q114870510",
+      "catalog_numbers": {
+        "RV": "186"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Violin concerto in C major (RV 187)",
+      "qid": "Q114870511",
+      "catalog_numbers": {
+        "RV": "187"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Violin concerto in C major (RV 188)",
+      "qid": "Q114870512",
+      "catalog_numbers": {
+        "RV": "188"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Violin concerto in C major (RV 189)",
+      "qid": "Q114870513",
+      "catalog_numbers": {
+        "RV": "189"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Violin concerto in C major (RV 190)",
+      "qid": "Q114870515",
+      "catalog_numbers": {
+        "RV": "190"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Violin concerto in C major (RV 191)",
+      "qid": "Q114870516",
+      "catalog_numbers": {
+        "RV": "191"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Violin concerto in C major (RV 192)",
+      "qid": "Q114870517",
+      "catalog_numbers": {
+        "RV": "192"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Violin concerto in C major (RV 192a)",
+      "qid": "Q114870518",
+      "catalog_numbers": {
+        "RV": "192"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Violin concerto in C major (RV 194)",
+      "qid": "Q114870520",
+      "catalog_numbers": {
+        "RV": "194"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Violin concerto in C major (RV 195)",
+      "qid": "Q114870521",
+      "catalog_numbers": {
+        "RV": "195"
+      },
+      "key": "C major"
+    },
+    {
+      "title": "Violin concerto in C minor (RV 196)",
+      "qid": "Q114870523",
+      "catalog_numbers": {
+        "RV": "196"
+      },
+      "key": "C minor"
+    },
+    {
+      "title": "Violin concerto in C minor (RV 197)",
+      "qid": "Q114870524",
+      "catalog_numbers": {
+        "RV": "197"
+      },
+      "key": "C minor"
+    },
+    {
+      "title": "Violin concerto in C minor (RV 198)",
+      "qid": "Q114870525",
+      "catalog_numbers": {
+        "RV": "198"
+      },
+      "key": "C minor"
+    },
+    {
+      "title": "Violin concerto in C minor (RV 198a)",
+      "qid": "Q114870526",
+      "catalog_numbers": {
+        "RV": "198"
+      },
+      "key": "C minor"
+    },
+    {
+      "title": "Violin concerto in C minor (RV 199) \"Il Sospetto\"",
+      "qid": "Q114870528",
+      "catalog_numbers": {
+        "RV": "199"
+      },
+      "key": "C minor"
+    },
+    {
+      "title": "Violin concerto in C minor (RV 200)",
+      "qid": "Q114870529",
+      "catalog_numbers": {
+        "RV": "200"
+      },
+      "key": "C minor"
+    },
+    {
+      "title": "Violin concerto in C minor (RV 201)",
+      "qid": "Q114870530",
+      "catalog_numbers": {
+        "RV": "201"
+      },
+      "key": "C minor"
+    },
+    {
+      "title": "Violin concerto in C minor (RV 202)",
+      "qid": "Q114870531",
+      "catalog_numbers": {
+        "RV": "202"
+      },
+      "key": "C minor"
+    },
+    {
+      "title": "Violin concerto in C minor (RV 761) \"Amato bene\"",
+      "qid": "Q114870577",
+      "catalog_numbers": {
+        "RV": "761"
+      },
+      "key": "C minor"
+    },
+    {
+      "title": "Violin concerto in C minor (RV 771)",
+      "qid": "Q114870579",
+      "catalog_numbers": {
+        "RV": "771"
+      },
+      "key": "C minor"
+    },
+    {
+      "title": "Violin concerto in D major (RV 203)",
+      "qid": "Q114870532",
+      "catalog_numbers": {
+        "RV": "203"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Violin concerto in D major (RV 204)",
+      "qid": "Q114870533",
+      "catalog_numbers": {
+        "RV": "204"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Violin concerto in D major (RV 205)",
+      "qid": "Q114870534",
+      "catalog_numbers": {
+        "RV": "205"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Violin concerto in D major (RV 206)",
+      "qid": "Q114870536",
+      "catalog_numbers": {
+        "RV": "206"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Violin concerto in D major (RV 207)",
+      "qid": "Q114870537",
+      "catalog_numbers": {
+        "RV": "207"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Violin concerto in D major (RV 208) \"Grosso Mogul\"",
+      "qid": "Q11343069",
+      "catalog_numbers": {
+        "RV": "208"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Violin concerto in D major (RV 208a)",
+      "qid": "Q114870538",
+      "catalog_numbers": {
+        "RV": "208"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Violin concerto in D major (RV 209)",
+      "qid": "Q114870539",
+      "catalog_numbers": {
+        "RV": "209"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Violin concerto in D major (RV 210)",
+      "qid": "Q114870540",
+      "catalog_numbers": {
+        "RV": "210"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Violin concerto in D major (RV 211)",
+      "qid": "Q114870541",
+      "catalog_numbers": {
+        "RV": "211"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Violin concerto in D major (RV 212) \"Per la Solennità della S. Lingua di S. Antonio in Padua\"",
+      "qid": "Q114870542",
+      "catalog_numbers": {
+        "RV": "212"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Violin concerto in D major (RV 212a)",
+      "qid": "Q114870543",
+      "catalog_numbers": {
+        "RV": "212"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Violin concerto in D major (RV 213)",
+      "qid": "Q114870544",
+      "catalog_numbers": {
+        "RV": "213"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Violin concerto in D major (RV 213a)",
+      "qid": "Q114870547",
+      "catalog_numbers": {
+        "RV": "213"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Violin concerto in D major (RV 214)",
+      "qid": "Q114870548",
+      "catalog_numbers": {
+        "RV": "214"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Violin concerto in D major (RV 215)",
+      "qid": "Q114870549",
+      "catalog_numbers": {
+        "RV": "215"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Violin concerto in D major (RV 216)",
+      "qid": "Q114870550",
+      "catalog_numbers": {
+        "RV": "216"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Violin concerto in D major (RV 217)",
+      "qid": "Q114870551",
+      "catalog_numbers": {
+        "RV": "217"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Violin concerto in D major (RV 218)",
+      "qid": "Q114870552",
+      "catalog_numbers": {
+        "RV": "218"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Violin concerto in D major (RV 219)",
+      "qid": "Q114870553",
+      "catalog_numbers": {
+        "RV": "219"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Violin concerto in D major (RV 220)",
+      "qid": "Q114870554",
+      "catalog_numbers": {
+        "RV": "220"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Violin concerto in D major (RV 221)",
+      "qid": "Q114870555",
+      "catalog_numbers": {
+        "RV": "221"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Violin concerto in D major (RV 222)",
+      "qid": "Q114870557",
+      "catalog_numbers": {
+        "RV": "222"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Violin concerto in D major (RV 223)",
+      "qid": "Q117235866",
+      "catalog_numbers": {
+        "RV": "223"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Violin concerto in D major (RV 224)",
+      "qid": "Q114870558",
+      "catalog_numbers": {
+        "RV": "224"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Violin concerto in D major (RV 224a)",
+      "qid": "Q114870559",
+      "catalog_numbers": {
+        "RV": "224"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Violin concerto in D major (RV 225)",
+      "qid": "Q114870561",
+      "catalog_numbers": {
+        "RV": "225"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Violin concerto in D major (RV 226)",
+      "qid": "Q114870562",
+      "catalog_numbers": {
+        "RV": "226"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Violin concerto in D major (RV 227)",
+      "qid": "Q114870563",
+      "catalog_numbers": {
+        "RV": "227"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Violin concerto in D major (RV 228)",
+      "qid": "Q114870564",
+      "catalog_numbers": {
+        "RV": "228"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Violin concerto in D major (RV 229)",
+      "qid": "Q114870565",
+      "catalog_numbers": {
+        "RV": "229"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Violin concerto in D major (RV 230)",
+      "qid": "Q114870566",
+      "catalog_numbers": {
+        "RV": "230"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Violin concerto in D major (RV 231)",
+      "qid": "Q114870568",
+      "catalog_numbers": {
+        "RV": "231"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Violin concerto in D major (RV 232)",
+      "qid": "Q114870569",
+      "catalog_numbers": {
+        "RV": "232"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Violin concerto in D major (RV 233)",
+      "qid": "Q114870570",
+      "catalog_numbers": {
+        "RV": "233"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Violin concerto in D major (RV 234) \"L'inquietudine\"",
+      "qid": "Q114870571",
+      "catalog_numbers": {
+        "RV": "234"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Violin concerto in D major (RV 752)",
+      "qid": "Q114870575",
+      "catalog_numbers": {
+        "RV": "752"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Violin concerto in D major (RV 772)",
+      "qid": "Q114870580",
+      "catalog_numbers": {
+        "RV": "772"
+      },
+      "key": "D major"
+    },
+    {
+      "title": "Violin concerto in D minor (RV 235)",
+      "qid": "Q114870572",
+      "catalog_numbers": {
+        "RV": "235"
+      },
+      "key": "D minor"
+    },
+    {
+      "title": "Violin concerto in D minor (RV 236)",
+      "qid": "Q115651042",
+      "catalog_numbers": {
+        "RV": "236"
+      },
+      "key": "D minor"
+    },
+    {
+      "title": "Violin concerto in D minor (RV 237)",
+      "qid": "Q115651044",
+      "catalog_numbers": {
+        "RV": "237"
+      },
+      "key": "D minor"
+    },
+    {
+      "title": "Violin concerto in D minor (RV 238)",
+      "qid": "Q115651045",
+      "catalog_numbers": {
+        "RV": "238"
+      },
+      "key": "D minor"
+    },
+    {
+      "title": "Violin concerto in D minor (RV 239)",
+      "qid": "Q115651046",
+      "catalog_numbers": {
+        "RV": "239"
+      },
+      "key": "D minor"
+    },
+    {
+      "title": "Violin concerto in D minor (RV 240)",
+      "qid": "Q115651047",
+      "catalog_numbers": {
+        "RV": "240"
+      },
+      "key": "D minor"
+    },
+    {
+      "title": "Violin concerto in D minor (RV 241)",
+      "qid": "Q115651048",
+      "catalog_numbers": {
+        "RV": "241"
+      },
+      "key": "D minor"
+    },
+    {
+      "title": "Violin concerto in D minor (RV 242) \"Per Pisendel\"",
+      "qid": "Q115651049",
+      "catalog_numbers": {
+        "RV": "242"
+      },
+      "key": "D Minor",
+      "instruments": [
+        "Solo Violin",
+        "Violin",
+        "Violins I",
+        "Violins II",
+        "Viola",
+        "Basso Continuo",
+        "Contrabass",
+        "Harpsichord",
+        "Organ"
+      ]
+    },
+    {
+      "title": "Violin concerto in D minor (RV 243)",
+      "qid": "Q115651050",
+      "catalog_numbers": {
+        "RV": "243"
+      },
+      "key": "D minor"
+    },
+    {
+      "title": "Violin concerto in D minor (RV 244)",
+      "qid": "Q115651051",
+      "catalog_numbers": {
+        "RV": "244"
+      },
+      "key": "D minor"
+    },
+    {
+      "title": "Violin concerto in D minor (RV 245)",
+      "qid": "Q115651056",
+      "catalog_numbers": {
+        "RV": "245"
+      },
+      "key": "D minor"
+    },
+    {
+      "title": "Violin concerto in D minor (RV 246)",
+      "qid": "Q115651057",
+      "catalog_numbers": {
+        "RV": "246"
+      },
+      "key": "D minor"
+    },
+    {
+      "title": "Violin concerto in D minor (RV 247)",
+      "qid": "Q115651058",
+      "catalog_numbers": {
+        "RV": "247"
+      },
+      "key": "D minor"
+    },
+    {
+      "title": "Violin concerto in D minor (RV 248)",
+      "qid": "Q115651060",
+      "catalog_numbers": {
+        "RV": "248"
+      },
+      "key": "D minor",
+      "instruments": [
+        "Violín"
+      ]
+    },
+    {
+      "title": "Violin concerto in D minor (RV 249)",
+      "qid": "Q115651061",
+      "catalog_numbers": {
+        "RV": "249"
+      },
+      "key": "D minor"
+    },
+    {
+      "title": "Violin concerto in D minor (RV 769)",
+      "qid": "Q117235886",
+      "catalog_numbers": {
+        "RV": "769"
+      },
+      "key": "D minor"
+    },
+    {
+      "title": "Violin concerto in D minor (RV 770)",
+      "qid": "Q117235887",
+      "catalog_numbers": {
+        "RV": "770"
+      },
+      "key": "D minor"
+    },
+    {
+      "title": "Violin concerto in D minor (RV 813)",
+      "qid": "Q117235893",
+      "catalog_numbers": {
+        "RV": "813"
+      },
+      "key": "D minor"
+    },
+    {
+      "title": "Violin concerto in E major (RV 263)",
+      "qid": "Q115651079",
+      "catalog_numbers": {
+        "RV": "263"
+      },
+      "key": "E major"
+    },
+    {
+      "title": "Violin concerto in E major (RV 263a)",
+      "qid": "Q115651081",
+      "catalog_numbers": {
+        "RV": "263"
+      },
+      "key": "E major"
+    },
+    {
+      "title": "Violin concerto in E major (RV 264)",
+      "qid": "Q115651083",
+      "catalog_numbers": {
+        "RV": "264"
+      },
+      "key": "E major"
+    },
+    {
+      "title": "Violin concerto in E major (RV 265)",
+      "qid": "Q115651085",
+      "catalog_numbers": {
+        "RV": "265"
+      },
+      "key": "E major"
+    },
+    {
+      "title": "Violin concerto in E major (RV 266)",
+      "qid": "Q115651087",
+      "catalog_numbers": {
+        "RV": "266"
+      },
+      "key": "E major"
+    },
+    {
+      "title": "Violin concerto in E major (RV 267)",
+      "qid": "Q115651089",
+      "catalog_numbers": {
+        "RV": "267"
+      },
+      "key": "E major"
+    },
+    {
+      "title": "Violin concerto in E major (RV 267a)",
+      "qid": "Q115651092",
+      "catalog_numbers": {
+        "RV": "267"
+      },
+      "key": "E major"
+    },
+    {
+      "title": "Violin concerto in E major (RV 268)",
+      "qid": "Q115651094",
+      "catalog_numbers": {
+        "RV": "268"
+      },
+      "key": "E major"
+    },
+    {
+      "title": "Violin concerto in E major (RV 270) \"Il Riposo\"",
+      "qid": "Q115775987",
+      "catalog_numbers": {
+        "RV": "270"
+      },
+      "key": "E major"
+    },
+    {
+      "title": "Violin concerto in E major (RV 270a)",
+      "qid": "Q115775988",
+      "catalog_numbers": {
+        "RV": "270"
+      },
+      "key": "E major"
+    },
+    {
+      "title": "Violin concerto in E major (RV 271) \"L'Amoroso\"",
+      "qid": "Q115775989",
+      "catalog_numbers": {
+        "RV": "271"
+      },
+      "key": "E major"
+    },
+    {
+      "title": "Violin concerto in E major (RV 762)",
+      "qid": "Q117235876",
+      "catalog_numbers": {
+        "RV": "762"
+      },
+      "key": "E major"
+    },
+    {
+      "title": "Violin concerto in E minor (RV 273)",
+      "qid": "Q115775991",
+      "catalog_numbers": {
+        "RV": "273"
+      },
+      "key": "E minor"
+    },
+    {
+      "title": "Violin concerto in E minor (RV 275)",
+      "qid": "Q115775994",
+      "catalog_numbers": {
+        "RV": "275"
+      },
+      "key": "E minor"
+    },
+    {
+      "title": "Violin concerto in E minor (RV 275a)",
+      "qid": "Q115775995",
+      "catalog_numbers": {
+        "RV": "275"
+      },
+      "key": "E minor"
+    },
+    {
+      "title": "Violin concerto in E minor (RV 276)",
+      "qid": "Q115775996",
+      "catalog_numbers": {
+        "RV": "276"
+      },
+      "key": "E minor"
+    },
+    {
+      "title": "Violin concerto in E minor (RV 277) \"Il Favorito\"",
+      "qid": "Q115775999",
+      "catalog_numbers": {
+        "RV": "277"
+      },
+      "key": "E minor"
+    },
+    {
+      "title": "Violin concerto in E minor (RV 278)",
+      "qid": "Q115776000",
+      "catalog_numbers": {
+        "RV": "278"
+      },
+      "key": "E minor"
+    },
+    {
+      "title": "Violin concerto in E minor (RV 279)",
+      "qid": "Q115776001",
+      "catalog_numbers": {
+        "RV": "279"
+      },
+      "key": "G♭ major",
+      "instruments": [
+        "Violín",
+        "Viola",
+        "Violonchelo"
+      ]
+    },
+    {
+      "title": "Violin concerto in E minor (RV 280)",
+      "qid": "Q115776002",
+      "catalog_numbers": {
+        "RV": "280"
+      },
+      "key": "E minor"
+    },
+    {
+      "title": "Violin concerto in E minor (RV 281)",
+      "qid": "Q115776003",
+      "catalog_numbers": {
+        "RV": "281"
+      },
+      "key": "E minor"
+    },
+    {
+      "title": "Violin concerto in E minor (RV Anh. 106)",
+      "qid": "Q115775993",
+      "key": "E minor"
+    },
+    {
+      "title": "Violin concerto in E minor (RV Anh. 64a)",
+      "qid": "Q115775990",
+      "key": "E minor"
+    },
+    {
+      "title": "Violin concerto in E-flat major (RV 250)",
+      "qid": "Q115651062",
+      "catalog_numbers": {
+        "RV": "250"
+      },
+      "key": "E-flat major"
+    },
+    {
+      "title": "Violin concerto in E-flat major (RV 251)",
+      "qid": "Q115651063",
+      "catalog_numbers": {
+        "RV": "251"
+      },
+      "key": "E-flat major"
+    },
+    {
+      "title": "Violin concerto in E-flat major (RV 252)",
+      "qid": "Q115651064",
+      "catalog_numbers": {
+        "RV": "252"
+      },
+      "key": "E-flat major"
+    },
+    {
+      "title": "Violin concerto in E-flat major (RV 253) \"La Tempesta di Mare\"",
+      "qid": "Q9356646",
+      "catalog_numbers": {
+        "RV": "253"
+      },
+      "key": "E-flat major"
+    },
+    {
+      "title": "Violin concerto in E-flat major (RV 254)",
+      "qid": "Q115651066",
+      "catalog_numbers": {
+        "RV": "254"
+      },
+      "key": "E-flat major"
+    },
+    {
+      "title": "Violin concerto in E-flat major (RV 255)",
+      "qid": "Q115651067",
+      "catalog_numbers": {
+        "RV": "255"
+      },
+      "key": "E-flat major"
+    },
+    {
+      "title": "Violin concerto in E-flat major (RV 256) \"Il Ritiro\"",
+      "qid": "Q115651068",
+      "catalog_numbers": {
+        "RV": "256"
+      },
+      "key": "E-flat major"
+    },
+    {
+      "title": "Violin concerto in E-flat major (RV 257)",
+      "qid": "Q115651069",
+      "catalog_numbers": {
+        "RV": "257"
+      },
+      "key": "E-flat major"
+    },
+    {
+      "title": "Violin concerto in E-flat major (RV 258)",
+      "qid": "Q115651070",
+      "catalog_numbers": {
+        "RV": "258"
+      },
+      "key": "E-flat major"
+    },
+    {
+      "title": "Violin concerto in E-flat major (RV 259)",
+      "qid": "Q115651071",
+      "catalog_numbers": {
+        "RV": "259"
+      },
+      "key": "E-flat major"
+    },
+    {
+      "title": "Violin concerto in E-flat major (RV 260)",
+      "qid": "Q115651072",
+      "catalog_numbers": {
+        "RV": "260"
+      },
+      "key": "E-flat major"
+    },
+    {
+      "title": "Violin concerto in E-flat major (RV 261)",
+      "qid": "Q115651073",
+      "catalog_numbers": {
+        "RV": "261"
+      },
+      "key": "E-flat major"
+    },
+    {
+      "title": "Violin concerto in E-flat major (RV 262)",
+      "qid": "Q115651074",
+      "catalog_numbers": {
+        "RV": "262"
+      },
+      "key": "E-flat major"
+    },
+    {
+      "title": "Violin concerto in F major (RV 282)",
+      "qid": "Q115776004",
+      "catalog_numbers": {
+        "RV": "282"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Violin concerto in F major (RV 283)",
+      "qid": "Q115776006",
+      "catalog_numbers": {
+        "RV": "283"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Violin concerto in F major (RV 284)",
+      "qid": "Q115776007",
+      "catalog_numbers": {
+        "RV": "284"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Violin concerto in F major (RV 285)",
+      "qid": "Q115776008",
+      "catalog_numbers": {
+        "RV": "285"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Violin concerto in F major (RV 285a)",
+      "qid": "Q115776010",
+      "catalog_numbers": {
+        "RV": "285"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Violin concerto in F major (RV 286) \"Per la Solennità di S. Lorenzo\"",
+      "qid": "Q115776011",
+      "catalog_numbers": {
+        "RV": "286"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Violin concerto in F major (RV 287)",
+      "qid": "Q115776012",
+      "catalog_numbers": {
+        "RV": "287"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Violin concerto in F major (RV 288)",
+      "qid": "Q115776013",
+      "catalog_numbers": {
+        "RV": "288"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Violin concerto in F major (RV 289)",
+      "qid": "Q115776014",
+      "catalog_numbers": {
+        "RV": "289"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Violin concerto in F major (RV 290)",
+      "qid": "Q115776015",
+      "catalog_numbers": {
+        "RV": "290"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Violin concerto in F major (RV 291)",
+      "qid": "Q115776017",
+      "catalog_numbers": {
+        "RV": "291"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Violin concerto in F major (RV 292)",
+      "qid": "Q115776018",
+      "catalog_numbers": {
+        "RV": "292"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Violin concerto in F major (RV 294) \"Il Ritiro\"",
+      "qid": "Q115776019",
+      "catalog_numbers": {
+        "RV": "294"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Violin concerto in F major (RV 294a) \"Il Ritiro\"",
+      "qid": "Q115776021",
+      "catalog_numbers": {
+        "RV": "294"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Violin concerto in F major (RV 295)",
+      "qid": "Q115776022",
+      "catalog_numbers": {
+        "RV": "295"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Violin concerto in F major (RV 296)",
+      "qid": "Q115776023",
+      "catalog_numbers": {
+        "RV": "296"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Violin concerto in F major (RV 773)",
+      "qid": "Q117235888",
+      "catalog_numbers": {
+        "RV": "773"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Violin concerto in F major (RV 794)",
+      "qid": "Q117235892",
+      "catalog_numbers": {
+        "RV": "794"
+      },
+      "key": "F major"
+    },
+    {
+      "title": "Violin concerto in G major (RV 298)",
+      "qid": "Q115776024",
+      "catalog_numbers": {
+        "RV": "298"
+      },
+      "key": "G major"
+    },
+    {
+      "title": "Violin concerto in G major (RV 299)",
+      "qid": "Q116050255",
+      "catalog_numbers": {
+        "RV": "299"
+      },
+      "key": "G major"
+    },
+    {
+      "title": "Violin concerto in G major (RV 300)",
+      "qid": "Q116050257",
+      "catalog_numbers": {
+        "RV": "300"
+      },
+      "key": "G major"
+    },
+    {
+      "title": "Violin concerto in G major (RV 301)",
+      "qid": "Q116050259",
+      "catalog_numbers": {
+        "RV": "301"
+      },
+      "key": "G major"
+    },
+    {
+      "title": "Violin concerto in G major (RV 302)",
+      "qid": "Q116050260",
+      "catalog_numbers": {
+        "RV": "302"
+      },
+      "key": "G major"
+    },
+    {
+      "title": "Violin concerto in G major (RV 303)",
+      "qid": "Q116050262",
+      "catalog_numbers": {
+        "RV": "303"
+      },
+      "key": "G major"
+    },
+    {
+      "title": "Violin concerto in G major (RV 304)",
+      "qid": "Q116050263",
+      "catalog_numbers": {
+        "RV": "304"
+      },
+      "key": "G major"
+    },
+    {
+      "title": "Violin concerto in G major (RV 305)",
+      "qid": "Q116050265",
+      "catalog_numbers": {
+        "RV": "305"
+      },
+      "key": "G major"
+    },
+    {
+      "title": "Violin concerto in G major (RV 306)",
+      "qid": "Q116050266",
+      "catalog_numbers": {
+        "RV": "306"
+      },
+      "key": "G major"
+    },
+    {
+      "title": "Violin concerto in G major (RV 307)",
+      "qid": "Q116050268",
+      "catalog_numbers": {
+        "RV": "307"
+      },
+      "key": "G major"
+    },
+    {
+      "title": "Violin concerto in G major (RV 308)",
+      "qid": "Q116050270",
+      "catalog_numbers": {
+        "RV": "308"
+      },
+      "key": "G major"
+    },
+    {
+      "title": "Violin concerto in G major (RV 309) \"Il Mare Tempestoso\"",
+      "qid": "Q116050272",
+      "catalog_numbers": {
+        "RV": "309"
+      },
+      "key": "G major"
+    },
+    {
+      "title": "Violin concerto in G major (RV 310)",
+      "qid": "Q116050274",
+      "catalog_numbers": {
+        "RV": "310"
+      },
+      "key": "G Major",
+      "instruments": [
+        "Violin",
+        "Viola",
+        "Violoncello",
+        "D Violone"
+      ]
+    },
+    {
+      "title": "Violin concerto in G major (RV 311)",
+      "qid": "Q116050276",
+      "catalog_numbers": {
+        "RV": "311"
+      },
+      "key": "G major"
+    },
+    {
+      "title": "Violin concerto in G major (RV 312)",
+      "qid": "Q116050277",
+      "catalog_numbers": {
+        "RV": "312"
+      },
+      "key": "G major"
+    },
+    {
+      "title": "Violin concerto in G major (RV 313)",
+      "qid": "Q116050279",
+      "catalog_numbers": {
+        "RV": "313"
+      },
+      "key": "G major"
+    },
+    {
+      "title": "Violin concerto in G major (RV 314)",
+      "qid": "Q116050280",
+      "catalog_numbers": {
+        "RV": "314"
+      },
+      "key": "G major"
+    },
+    {
+      "title": "Violin concerto in G major (RV 314a)",
+      "qid": "Q116050282",
+      "catalog_numbers": {
+        "RV": "314"
+      },
+      "key": "G major"
+    },
+    {
+      "title": "Violin concerto in G minor (RV 316)",
+      "qid": "Q116050283",
+      "catalog_numbers": {
+        "RV": "316"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Violin concerto in G minor (RV 316a)",
+      "qid": "Q116050287",
+      "catalog_numbers": {
+        "RV": "316"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Violin concerto in G minor (RV 317)",
+      "qid": "Q116050295",
+      "catalog_numbers": {
+        "RV": "317"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Violin concerto in G minor (RV 318)",
+      "qid": "Q116050298",
+      "catalog_numbers": {
+        "RV": "318"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Violin concerto in G minor (RV 319)",
+      "qid": "Q116050299",
+      "catalog_numbers": {
+        "RV": "319"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Violin concerto in G minor (RV 320)",
+      "qid": "Q116050301",
+      "catalog_numbers": {
+        "RV": "320"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Violin concerto in G minor (RV 321)",
+      "qid": "Q116050302",
+      "catalog_numbers": {
+        "RV": "321"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Violin concerto in G minor (RV 322)",
+      "qid": "Q116050304",
+      "catalog_numbers": {
+        "RV": "322"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Violin concerto in G minor (RV 323)",
+      "qid": "Q116050305",
+      "catalog_numbers": {
+        "RV": "323"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Violin concerto in G minor (RV 324)",
+      "qid": "Q116050306",
+      "catalog_numbers": {
+        "RV": "324"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Violin concerto in G minor (RV 325)",
+      "qid": "Q116050309",
+      "catalog_numbers": {
+        "RV": "325"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Violin concerto in G minor (RV 326)",
+      "qid": "Q116050312",
+      "catalog_numbers": {
+        "RV": "326"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Violin concerto in G minor (RV 327)",
+      "qid": "Q116050314",
+      "catalog_numbers": {
+        "RV": "327"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Violin concerto in G minor (RV 328)",
+      "qid": "Q116050315",
+      "catalog_numbers": {
+        "RV": "328"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Violin concerto in G minor (RV 329)",
+      "qid": "Q116050317",
+      "catalog_numbers": {
+        "RV": "329"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Violin concerto in G minor (RV 330)",
+      "qid": "Q116050318",
+      "catalog_numbers": {
+        "RV": "330"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Violin concerto in G minor (RV 331)",
+      "qid": "Q116050320",
+      "catalog_numbers": {
+        "RV": "331"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Violin concerto in G minor (RV 332)",
+      "qid": "Q116050321",
+      "catalog_numbers": {
+        "RV": "332"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Violin concerto in G minor (RV 333)",
+      "qid": "Q116050322",
+      "catalog_numbers": {
+        "RV": "333"
+      },
+      "key": "G minor",
+      "instruments": [
+        "Violín",
+        "Viola",
+        "Violonchelo",
+        "Contrabajo"
+      ]
+    },
+    {
+      "title": "Violin concerto in G minor (RV 334)",
+      "qid": "Q116050324",
+      "catalog_numbers": {
+        "RV": "334"
+      },
+      "key": "G minor"
+    },
+    {
+      "title": "Vos aurae per montes",
+      "qid": "Q65209979",
+      "catalog_numbers": {
+        "RV": "634"
+      },
+      "key": "A major"
+    },
+    {
+      "title": "Within the Golden Hour",
+      "qid": "Q97323449"
+    },
+    {
+      "title": "Sonata for flute and continuo No. 1 in C major, Op. 13, Il pastor Fido",
+      "catalog_numbers": {
+        "Op": "13"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=vivaldi_pastor_fido_sonata_1_(nc)werths.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Domine Deus for soprano and organ or piano",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/vivaldi_domine_deus_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concerto in D Minor for Viola d'amore and Lute",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/VivaldiA/rv540/rv540-lys/header.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

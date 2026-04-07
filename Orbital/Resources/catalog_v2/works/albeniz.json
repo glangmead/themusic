@@ -1,0 +1,487 @@
+{
+  "works": [
+    {
+      "title": "Suite española",
+      "qid": "Q1404701"
+    },
+    {
+      "title": "Pavana-capricho",
+      "qid": "Q137466007"
+    },
+    {
+      "title": "Piano Concerto No. 1",
+      "qid": "Q118188050"
+    },
+    {
+      "title": "Célèbre sérénade espagnole",
+      "qid": "Q137471925"
+    },
+    {
+      "title": "Suite española II",
+      "qid": "Q6135357"
+    },
+    {
+      "title": "Pepita Jiménez",
+      "qid": "Q4890386"
+    },
+    {
+      "title": "Iberia",
+      "qid": "Q2610275",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=albeniz/iberia_bk1_1_evocacion_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=albeniz/iberia_bk1_2_el_puerto_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=albeniz/iberia_bk1_3_el_corpus_en_sevilla_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=albeniz/iberia_bk2_1_rondena_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=albeniz/iberia_bk2_2_almeria_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=albeniz/iberia_bk2_3_triana_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=albeniz/iberia_bk3_1_el_albaicin_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-i/albeniz_6204d_el_albaicin_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=albeniz/iberia_bk3_2_el_polo_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=albeniz/iberia_bk3_3_lavapies_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=albeniz/iberia_bk4_1_malaga_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=albeniz/iberia_bk4_2_jerez_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=albeniz/iberia_bk4_3_eritana_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Albéniz",
+      "qid": "Q618481"
+    },
+    {
+      "title": "Asturias",
+      "qid": "Q2365208"
+    },
+    {
+      "title": "Cataluña",
+      "qid": "Q5051356",
+      "instruments": [
+        "Classical Guitar"
+      ]
+    },
+    {
+      "title": "Chants d'Espagne",
+      "qid": "Q2956422",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=albeniz/espagne_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Currito of the Cross",
+      "qid": "Q19571380"
+    },
+    {
+      "title": "Cádiz",
+      "qid": "Q5016509",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=albeniz/cadiz_gaditana_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Córdoba",
+      "qid": "Q5202716"
+    },
+    {
+      "title": "España",
+      "qid": "Q1994134"
+    },
+    {
+      "title": "Granada",
+      "qid": "Q5594083"
+    },
+    {
+      "title": "Henry Clifford",
+      "qid": "Q4892013"
+    },
+    {
+      "title": "La Vega",
+      "qid": "Q30598400"
+    },
+    {
+      "title": "Mallorca",
+      "qid": "Q6744257",
+      "key": "F major",
+      "instruments": [
+        "Classical Guitar"
+      ],
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=albeniz/mallorca_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Merlin",
+      "qid": "Q4889213"
+    },
+    {
+      "title": "Oriental",
+      "qid": "Q25202974",
+      "key": "F major",
+      "instruments": [
+        "Classical Guitar"
+      ]
+    },
+    {
+      "title": "Rapsodia española",
+      "qid": "Q19918498"
+    },
+    {
+      "title": "Rapsodia española",
+      "qid": "Q137466006"
+    },
+    {
+      "title": "Rumores de la Caleta",
+      "qid": "Q7379351",
+      "instruments": [
+        "Classical Guitar"
+      ]
+    },
+    {
+      "title": "Sevilla",
+      "qid": "Q7458044"
+    },
+    {
+      "title": "Tango Espagnol",
+      "qid": "Q18631543"
+    },
+    {
+      "title": "Tango in D",
+      "qid": "Q7683112",
+      "key": "A major",
+      "instruments": [
+        "Classical Guitar"
+      ]
+    },
+    {
+      "title": "Torre Bermeja",
+      "qid": "Q7826950",
+      "key": "D major",
+      "instruments": [
+        "Classical Guitar"
+      ]
+    },
+    {
+      "title": "Barcarolle Catalane Op. 23 (1884)",
+      "catalog_numbers": {
+        "Op": "23"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=albeniz/barcarolle_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Seis peque�os valses Op. 25 (1884)",
+      "catalog_numbers": {
+        "Op": "25"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/albeniz_six_waltzes_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/albeniz_six_waltzes_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/albeniz_six_waltzes_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/albeniz_six_waltzes_4_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/albeniz_six_waltzes_5_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/albeniz_six_waltzes_6_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Deseo, Estudio de Concierto, Op. 40",
+      "catalog_numbers": {
+        "Op": "40"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=29/albeniz_deseo_estudio_de_concierto_40_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Suite espa�ola No. 1 Op. 47 (1886)",
+      "catalog_numbers": {
+        "Op": "47"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=albeniz/granada_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/albeniz_suite_espanola_47_02_cataluna_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=albeniz/sevilla_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=albeniz/cadiz_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=albeniz/prelude_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/albeniz_suite_espanola_47_06_aragon_fantasia_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=albeniz/seguidillas_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/albeniz_suite_espanola_47_08_cuba_notturno_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Estudio-Impromptu Op. 56 (1886)",
+      "catalog_numbers": {
+        "Op": "56"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/albeniz_estudio_impromptu_56_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Siete Estudios, Op. 65 (1886) {+}",
+      "catalog_numbers": {
+        "Op": "65"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=33/albeniz_siete_estudios_65_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=33/albeniz_siete_estudios_65_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=33/albeniz_siete_estudios_65_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=33/albeniz_siete_estudios_65_4_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=33/albeniz_siete_estudios_65_5_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=33/albeniz_siete_estudios_65_6_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=33/albeniz_siete_estudios_65_7_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Rapsodia Cubana, Op. 66 (1886)",
+      "catalog_numbers": {
+        "Op": "66"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/albeniz_rapsodia_cubana_66_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata  No. 3 in A, Op. 68 (1886)",
+      "catalog_numbers": {
+        "Op": "68"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=albeniz/sonata_68_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=albeniz/sonata_68_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=albeniz/sonata_68_3_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata No. 4 Op. 72 (1887)",
+      "catalog_numbers": {
+        "Op": "72"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/albeniz_sonata_4_72_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/albeniz_sonata_4_72_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/albeniz_sonata_4_72_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/albeniz_sonata_4_72_4_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata No. 5 Op. 82 (1888[?])",
+      "catalog_numbers": {
+        "Op": "82"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/albeniz_sonata_82_5_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/albeniz_sonata_82_5_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/albeniz_sonata_82_5_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=28/albeniz_sonata_82_5_4_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Doce piezas caracter�sticas, Op. 92 (1888)",
+      "catalog_numbers": {
+        "Op": "92"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=albeniz/zambra_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=albeniz/torre_bermeja_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Espa�a, Op. 165 (1892)",
+      "catalog_numbers": {
+        "Op": "165"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/albeniz_espana_165_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/albeniz_espana_165_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/albeniz_espana_165_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/albeniz_espana_165_4_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/albeniz_espana_165_5_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=9/albeniz_espana_165_6_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chant d'Espagne (Songs of Spain), Op. 232 (1892)",
+      "catalog_numbers": {
+        "Op": "232"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=albeniz/prelude_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=albeniz/orientale_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=albeniz/palmera_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=albeniz/cordoba_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=albeniz/seguidillas_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-i/albeniz_seguidillas_op_232_no_5_0237_d_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Arabe (?)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=albeniz/arabe_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Navarra (1909) *",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=albeniz/navarra_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "[Autumne Waltz] (?)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=albeniz/autumne_waltz_(c)halstead.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tango (transcribed by Leopold W. Godowsky)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=albeniz-godowsky_tango_(c)yogore.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "works": [
+    {
+      "title": "La serva padrona",
+      "qid": "Q378237"
+    },
+    {
+      "title": "Stabat Mater",
+      "qid": "Q109001799"
+    },
+    {
+      "title": "12 trio sonatas",
+      "qid": "Q124336365"
+    },
+    {
+      "title": "Adriano in Siria",
+      "qid": "Q2825085"
+    },
+    {
+      "title": "Dieu vomit les tièdes",
+      "qid": "Q3027599"
+    },
+    {
+      "title": "Dogville",
+      "qid": "Q327681"
+    },
+    {
+      "title": "Il Flaminio",
+      "qid": "Q24437428"
+    },
+    {
+      "title": "Il prigionier superbo",
+      "qid": "Q5996772"
+    },
+    {
+      "title": "La Salustia",
+      "qid": "Q26218315"
+    },
+    {
+      "title": "La contadina astuta",
+      "qid": "Q26990214"
+    },
+    {
+      "title": "La conversione e morte di San Guglielmo",
+      "qid": "Q27921847"
+    },
+    {
+      "title": "Lo frate 'nnamorato",
+      "qid": "Q2258825"
+    },
+    {
+      "title": "L’olimpiade",
+      "qid": "Q21205064"
+    },
+    {
+      "title": "Nerina e Nibbio",
+      "qid": "Q27146775"
+    },
+    {
+      "title": "Nina",
+      "qid": "Q78527031"
+    },
+    {
+      "title": "Pergolesi",
+      "qid": "Q3899842"
+    },
+    {
+      "title": "Se tu m'ami, se sospiri = Os wyt ti'n glaf, os wyt ti'n wylo",
+      "qid": "Q78527194"
+    },
+    {
+      "title": "Stabat Mater",
+      "qid": "Q643347",
+      "key": "A♭ major",
+      "instruments": [
+        "Soprano",
+        "Contralto",
+        "Organo a canne"
+      ],
+      "year_composed": 1736
+    },
+    {
+      "title": "Glory to God in the highest",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 4.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/PergolesiGB/glorytogod/glorytogod.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

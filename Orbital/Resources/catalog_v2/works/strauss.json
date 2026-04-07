@@ -1,0 +1,550 @@
+{
+  "works": [
+    {
+      "title": "Schneiderpolka",
+      "qid": "Q136062782"
+    },
+    {
+      "title": "Weihnachtslied",
+      "qid": "Q136063908"
+    },
+    {
+      "title": "Einkehr",
+      "qid": "Q136085967"
+    },
+    {
+      "title": "Winterreise",
+      "qid": "Q136086026"
+    },
+    {
+      "title": "Cello Sonata",
+      "qid": "Q3490236"
+    },
+    {
+      "title": "Don Juan",
+      "qid": "Q475060"
+    },
+    {
+      "title": "Sonata for piano in B minor, Op. 5",
+      "qid": "Q19896012"
+    },
+    {
+      "title": "Violin Concerto",
+      "qid": "Q73586"
+    },
+    {
+      "title": "8 Gedichte aus \"Letzte Blätter\"",
+      "qid": "Q113552010"
+    },
+    {
+      "title": "Violin Sonata",
+      "qid": "Q3490199"
+    },
+    {
+      "title": "Macbeth",
+      "qid": "Q1165009"
+    },
+    {
+      "title": "Burleske",
+      "qid": "Q2599224"
+    },
+    {
+      "title": "4 Lieder",
+      "qid": "Q111439201"
+    },
+    {
+      "title": "Till Eulenspiegel's Merry Pranks",
+      "qid": "Q740088"
+    },
+    {
+      "title": "A Hero's Life",
+      "qid": "Q1304650"
+    },
+    {
+      "title": "Enoch Arden",
+      "qid": "Q5379268"
+    },
+    {
+      "title": "Befreit",
+      "qid": "Q23010225"
+    },
+    {
+      "title": "Der Arbeitsmann",
+      "qid": "Q23022403"
+    },
+    {
+      "title": "Fünf Lieder, Op. 39",
+      "qid": "Q113551567"
+    },
+    {
+      "title": "Junghexenlied",
+      "qid": "Q113551694"
+    },
+    {
+      "title": "Lied an meinen Sohn",
+      "qid": "Q113551768"
+    },
+    {
+      "title": "Symphonia Domestica",
+      "qid": "Q846689"
+    },
+    {
+      "title": "Der Rosenkavalier",
+      "qid": "Q471240"
+    },
+    {
+      "title": "An Alpine Symphony",
+      "qid": "Q304423"
+    },
+    {
+      "title": "Josephslegende",
+      "qid": "Q6288488"
+    },
+    {
+      "title": "Schlagobers",
+      "qid": "Q7431669"
+    },
+    {
+      "title": "Arabella",
+      "qid": "Q390779"
+    },
+    {
+      "title": "Daphne",
+      "qid": "Q1165496"
+    },
+    {
+      "title": "Horn Concerto No. 2",
+      "qid": "Q30607786"
+    },
+    {
+      "title": "Oboe Concerto",
+      "qid": "Q675198"
+    },
+    {
+      "title": "Metamorphosen",
+      "qid": "Q616412"
+    },
+    {
+      "title": "Malven",
+      "qid": "Q11256771"
+    },
+    {
+      "title": "2001: A Space Odyssey",
+      "qid": "Q103474"
+    },
+    {
+      "title": "5 Lieder, Op. 48",
+      "qid": "Q114830353"
+    },
+    {
+      "title": "5 Lieder, Op.47",
+      "qid": "Q110536425"
+    },
+    {
+      "title": "6 Lieder, Op. 56",
+      "qid": "Q113555563"
+    },
+    {
+      "title": "Abraham's Valley",
+      "qid": "Q123259"
+    },
+    {
+      "title": "Allerseelen",
+      "qid": "Q25217592"
+    },
+    {
+      "title": "Allerseelen = Gŵyl yr eneidiau",
+      "qid": "Q78647631"
+    },
+    {
+      "title": "Also sprach Zarathustra",
+      "qid": "Q35720"
+    },
+    {
+      "title": "Ariadne auf Naxos",
+      "qid": "Q654633"
+    },
+    {
+      "title": "Arianna a Nasso",
+      "qid": "Q109244777"
+    },
+    {
+      "title": "Aus Italien",
+      "qid": "Q630996"
+    },
+    {
+      "title": "Aus den Liedern der Trauer",
+      "qid": "Q113532167"
+    },
+    {
+      "title": "Barkarole",
+      "qid": "Q113532228"
+    },
+    {
+      "title": "Be my friend once more",
+      "qid": "Q54987848"
+    },
+    {
+      "title": "Befreit = Rhyddhâd",
+      "qid": "Q78647682"
+    },
+    {
+      "title": "Besinnung",
+      "qid": "Q136086972"
+    },
+    {
+      "title": "Burleske",
+      "qid": "Q119163973"
+    },
+    {
+      "title": "Capriccio",
+      "qid": "Q1034949"
+    },
+    {
+      "title": "Catch-22",
+      "qid": "Q1050533"
+    },
+    {
+      "title": "Cäcilie",
+      "qid": "Q5202426",
+      "catalog_numbers": {
+        "Op": "27"
+      },
+      "key": "E major",
+      "instruments": [
+        "Piano"
+      ]
+    },
+    {
+      "title": "Das Geheimnis",
+      "qid": "Q113532097"
+    },
+    {
+      "title": "Death and Transfiguration",
+      "qid": "Q2298455"
+    },
+    {
+      "title": "Der Rosenkavalier",
+      "qid": "Q479044",
+      "key": "E major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1925
+    },
+    {
+      "title": "Des Dichters Abendgang",
+      "qid": "Q23022095"
+    },
+    {
+      "title": "Des Esels Schatten",
+      "qid": "Q18411306"
+    },
+    {
+      "title": "Die Donau",
+      "qid": "Q28685572"
+    },
+    {
+      "title": "Die Frau ohne Schatten",
+      "qid": "Q75210928"
+    },
+    {
+      "title": "Die Frau ohne Schatten",
+      "qid": "Q1143019",
+      "key": "E major",
+      "instruments": [
+        "Der Kaiser",
+        "Piano"
+      ]
+    },
+    {
+      "title": "Die Göttin im Putzzimmer",
+      "qid": "Q1213242"
+    },
+    {
+      "title": "Die Liebe der Danae",
+      "qid": "Q453528"
+    },
+    {
+      "title": "Die Nacht",
+      "qid": "Q25217586"
+    },
+    {
+      "title": "Die Tageszeiten",
+      "qid": "Q23765005"
+    },
+    {
+      "title": "Die heil'gen drei Kön'ge aus Morgenland",
+      "qid": "Q136464654"
+    },
+    {
+      "title": "Die schweigsame Frau",
+      "qid": "Q1219379"
+    },
+    {
+      "title": "Die ägyptische Helena",
+      "qid": "Q1220040"
+    },
+    {
+      "title": "Divertimento",
+      "qid": "Q3032239"
+    },
+    {
+      "title": "Don Quixote",
+      "qid": "Q606635"
+    },
+    {
+      "title": "Drei Lieder",
+      "qid": "Q136089299"
+    },
+    {
+      "title": "Duet concertino for clarinet and bassoon",
+      "qid": "Q3037502"
+    },
+    {
+      "title": "Elektra",
+      "qid": "Q731927"
+    },
+    {
+      "title": "Elektra : [programme] : tragedy in one act",
+      "qid": "Q82712798"
+    },
+    {
+      "title": "Elettra",
+      "qid": "Q109244478"
+    },
+    {
+      "title": "Festliches Präludium",
+      "qid": "Q11588576"
+    },
+    {
+      "title": "Feuersnot",
+      "qid": "Q661754"
+    },
+    {
+      "title": "Four Last Songs",
+      "qid": "Q1482285"
+    },
+    {
+      "title": "Freundliche Vision",
+      "qid": "Q48848776"
+    },
+    {
+      "title": "Friedenstag",
+      "qid": "Q2703846"
+    },
+    {
+      "title": "Frühlingsfeier",
+      "qid": "Q28154536"
+    },
+    {
+      "title": "Fünf Lieder, Op. 15",
+      "qid": "Q113555695"
+    },
+    {
+      "title": "Fünf Lieder, Op. 32",
+      "qid": "Q136089207"
+    },
+    {
+      "title": "Für funfzehn Pfennige; V, pf; TrV 186/2; op.36,2",
+      "qid": "Q106988474"
+    },
+    {
+      "title": "Guntram",
+      "qid": "Q1555028"
+    },
+    {
+      "title": "Heimliche Aufforderung",
+      "qid": "Q5699614",
+      "catalog_numbers": {
+        "Op": "27"
+      },
+      "key": "B♭ major",
+      "instruments": [
+        "gesang",
+        "Piano"
+      ]
+    },
+    {
+      "title": "Horn Concerto No 1",
+      "qid": "Q20025382",
+      "key": "E♭ major",
+      "instruments": [
+        "Solo Horn"
+      ],
+      "year_composed": 1883
+    },
+    {
+      "title": "Horn Concerto No. 1 in E-flat Major",
+      "qid": "Q42191185"
+    },
+    {
+      "title": "Horn Concertos (Strauss)",
+      "qid": "Q2698550"
+    },
+    {
+      "title": "Ich trage meine Minne = Trysoraf fi fy nghariad : Op. 32, rhif 1",
+      "qid": "Q78648031"
+    },
+    {
+      "title": "Intermezzo",
+      "qid": "Q1474467"
+    },
+    {
+      "title": "Japanese Festival Music",
+      "qid": "Q2160583"
+    },
+    {
+      "title": "Krämerspiegel",
+      "qid": "Q17181148"
+    },
+    {
+      "title": "Le bourgeois gentilhomme",
+      "qid": "Q6507958"
+    },
+    {
+      "title": "Leises Lied",
+      "qid": "Q113551580"
+    },
+    {
+      "title": "Morgen!",
+      "qid": "Q6912014",
+      "catalog_numbers": {
+        "Op": "27"
+      },
+      "key": "G major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1894
+    },
+    {
+      "title": "Nur Mut!",
+      "qid": "Q113532205"
+    },
+    {
+      "title": "Olympische Hymne",
+      "qid": "Q7089199"
+    },
+    {
+      "title": "Panathenäenzug",
+      "qid": "Q3361926"
+    },
+    {
+      "title": "Piano Quartet in C minor",
+      "qid": "Q3413732"
+    },
+    {
+      "title": "Richard-Strauss-Werkverzeichnis",
+      "qid": "Q26160369"
+    },
+    {
+      "title": "Rosenkavalier Suite",
+      "qid": "Q28699558"
+    },
+    {
+      "title": "Ruhe, meine Seele!",
+      "qid": "Q7378656",
+      "catalog_numbers": {
+        "Op": "27"
+      },
+      "key": "C major",
+      "instruments": [
+        "Gesang",
+        "Piano"
+      ]
+    },
+    {
+      "title": "Salome",
+      "qid": "Q723407"
+    },
+    {
+      "title": "Salome [programme] : music drama in one act",
+      "qid": "Q82713399"
+    },
+    {
+      "title": "Salomé : [programme] : music drama in one act",
+      "qid": "Q82713395"
+    },
+    {
+      "title": "Sechs Lieder von Adolf Friedrich Graf von Schack",
+      "qid": "Q113531904"
+    },
+    {
+      "title": "Sehnsucht; V, pf; G-Dur; TrV 174/2; op.32,2",
+      "qid": "Q106988471"
+    },
+    {
+      "title": "Seitdem dein Aug' in meines schaute",
+      "qid": "Q113532030"
+    },
+    {
+      "title": "Serenade",
+      "qid": "Q11185304"
+    },
+    {
+      "title": "Sonaten; vl, pf; Es-Dur; TrV 151; op. 18",
+      "qid": "Q106988473"
+    },
+    {
+      "title": "Sonatina No 2 in E-flat major (Fröhliche Werkstatt) for 16 wind instruments",
+      "qid": "Q3490276"
+    },
+    {
+      "title": "Sonatina no. 1 in F major “From the Workshop of an Invalid”",
+      "qid": "Q3490277"
+    },
+    {
+      "title": "Ständchen",
+      "qid": "Q17231853"
+    },
+    {
+      "title": "Suite in B-flat major, Op. 4",
+      "qid": "Q17231728"
+    },
+    {
+      "title": "Symphonic Fantasy from \"Die Frau ohne Schatten\"",
+      "qid": "Q136301727"
+    },
+    {
+      "title": "Symphony No. 1",
+      "qid": "Q18457712"
+    },
+    {
+      "title": "Symphony No. 2",
+      "qid": "Q7661535"
+    },
+    {
+      "title": "Tanzsuite aus Klavierstücken von François Couperin",
+      "qid": "Q18393255"
+    },
+    {
+      "title": "Tone poems",
+      "qid": "Q7820860"
+    },
+    {
+      "title": "Traum durch die Dämmerung",
+      "qid": "Q18014874"
+    },
+    {
+      "title": "Wandrers Sturmlied",
+      "qid": "Q136304870"
+    },
+    {
+      "title": "Wiener Philharmoniker Fanfare",
+      "qid": "Q118875853"
+    },
+    {
+      "title": "Winternacht",
+      "qid": "Q28154540"
+    },
+    {
+      "title": "With my breast armed with severity",
+      "qid": "Q54987907"
+    },
+    {
+      "title": "Zueignung",
+      "qid": "Q22043393"
+    }
+  ]
+}

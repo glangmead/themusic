@@ -1,0 +1,237 @@
+{
+  "works": [
+    {
+      "title": "String Quartet No. 1",
+      "qid": "Q20644489"
+    },
+    {
+      "title": "String Quartet No. 2",
+      "qid": "Q20644488"
+    },
+    {
+      "title": "The Book of the Hanging Gardens",
+      "qid": "Q5637728"
+    },
+    {
+      "title": "Erwartung",
+      "qid": "Q1362653"
+    },
+    {
+      "title": "Five Pieces for Orchestra",
+      "qid": "Q2972911"
+    },
+    {
+      "title": "Gurre-Lieder",
+      "qid": "Q1555250"
+    },
+    {
+      "title": "Sechs kleine Klavierstücke",
+      "qid": "Q1136753",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/schoenberg_sechs_klavierstucke_19_1_(c)simonetto.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/schoenberg_sechs_klavierstucke_19_2_(c)simonetto.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/schoenberg_sechs_klavierstucke_19_3_(c)simonetto.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/schoenberg_sechs_klavierstucke_19_4_(c)simonetto.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/schoenberg_sechs_klavierstucke_19_5_(c)simonetto.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/schoenberg_sechs_klavierstucke_19_6_(c)simonetto.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Herzgewächse",
+      "qid": "Q9003301"
+    },
+    {
+      "title": "Four Orchestral Songs",
+      "qid": "Q8565096"
+    },
+    {
+      "title": "Suite for Piano",
+      "qid": "Q3503219"
+    },
+    {
+      "title": "Wind Quintet",
+      "qid": "Q1893688"
+    },
+    {
+      "title": "String Quartet No.3, Op.30",
+      "qid": "Q2676106"
+    },
+    {
+      "title": "Variations for Orchestra",
+      "qid": "Q3554790"
+    },
+    {
+      "title": "Begleitungsmusik zu einer Lichtspielscene",
+      "qid": "Q117247904"
+    },
+    {
+      "title": "Chamber Symphony No. 2",
+      "qid": "Q210179"
+    },
+    {
+      "title": "Piano Concerto",
+      "qid": "Q2991806"
+    },
+    {
+      "title": "Phantasy for Violin and Piano",
+      "qid": "Q2269974"
+    },
+    {
+      "title": "6 Lieder",
+      "qid": "Q101336649"
+    },
+    {
+      "title": "A Survivor from Warsaw",
+      "qid": "Q664500"
+    },
+    {
+      "title": "Arnold Schönberg complete edition",
+      "qid": "Q2800185"
+    },
+    {
+      "title": "Chamber Symphony No. 1",
+      "qid": "Q162828"
+    },
+    {
+      "title": "Concerto for String Quartet and Orchestra",
+      "qid": "Q5158577"
+    },
+    {
+      "title": "Concerto pour violoncelle",
+      "qid": "Q2423145"
+    },
+    {
+      "title": "De Dood van Orfeus",
+      "qid": "Q57934105"
+    },
+    {
+      "title": "Die Jakobsleiter",
+      "qid": "Q450791"
+    },
+    {
+      "title": "Die glückliche Hand",
+      "qid": "Q3027349"
+    },
+    {
+      "title": "Drei Klavierstücke",
+      "qid": "Q3540033"
+    },
+    {
+      "title": "Erwartung/Verklärte Nacht",
+      "qid": "Q57500669"
+    },
+    {
+      "title": "Five Pieces for Piano",
+      "qid": "Q2972899"
+    },
+    {
+      "title": "Genesis Suite",
+      "qid": "Q1502070"
+    },
+    {
+      "title": "Moses und Aron",
+      "qid": "Q1661920"
+    },
+    {
+      "title": "Moses und Aron",
+      "qid": "Q6916024"
+    },
+    {
+      "title": "Ode to Napoleon Buonaparte",
+      "qid": "Q12797747"
+    },
+    {
+      "title": "Pelleas und Melisande",
+      "qid": "Q2325830"
+    },
+    {
+      "title": "Pierrot Lunaire",
+      "qid": "Q965040"
+    },
+    {
+      "title": "Pierrot Lunaire",
+      "qid": "Q17066004"
+    },
+    {
+      "title": "Putting Things Straight",
+      "qid": "Q28813453"
+    },
+    {
+      "title": "Schoenberg Variations",
+      "qid": "Q119164405"
+    },
+    {
+      "title": "Sechs Orchesterlieder",
+      "qid": "Q2217381"
+    },
+    {
+      "title": "Serenade",
+      "qid": "Q3479154"
+    },
+    {
+      "title": "Sommermud",
+      "qid": "Q42195746"
+    },
+    {
+      "title": "String Quartet No.4, Op.37",
+      "qid": "Q2411315"
+    },
+    {
+      "title": "String Trio, Op.45",
+      "qid": "Q2746030"
+    },
+    {
+      "title": "String quartets",
+      "qid": "Q3413874"
+    },
+    {
+      "title": "Verklärte Nacht",
+      "qid": "Q534032"
+    },
+    {
+      "title": "Vier Lieder",
+      "qid": "Q101333830"
+    },
+    {
+      "title": "Violin Concerto",
+      "qid": "Q2803810"
+    },
+    {
+      "title": "Von heute auf morgen",
+      "qid": "Q1994720"
+    },
+    {
+      "title": "Zwei Gesänge, Op. 1",
+      "qid": "Q101335316"
+    },
+    {
+      "title": "Zwei Klavierstücke",
+      "qid": "Q18164945"
+    },
+    {
+      "title": "Drei Klavierst�cke, Op. 11",
+      "catalog_numbers": {
+        "Op": "11"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/schoenberg_drei_klavierstucke_11_1_(c)simonetto.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/schoenberg_drei_klavierstucke_11_2_(c)simonetto.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=me/schoenberg_drei_klavierstucke_11_3_(c)simonetto.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

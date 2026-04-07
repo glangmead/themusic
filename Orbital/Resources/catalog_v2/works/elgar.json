@@ -1,0 +1,591 @@
+{
+  "works": [
+    {
+      "title": "The Language of Flowers",
+      "qid": "Q7745458"
+    },
+    {
+      "title": "Through the Long Days",
+      "qid": "Q17021973"
+    },
+    {
+      "title": "Is she not passing fair?",
+      "qid": "Q6075635"
+    },
+    {
+      "title": "As I laye a-thynkynge",
+      "qid": "Q4802891"
+    },
+    {
+      "title": "A Song of Autumn",
+      "qid": "Q4659696"
+    },
+    {
+      "title": "Sursum Corda",
+      "qid": "Q7646946"
+    },
+    {
+      "title": "A Song of Flight",
+      "qid": "Q4659697"
+    },
+    {
+      "title": "After",
+      "qid": "Q4690443"
+    },
+    {
+      "title": "From the Bavarian Highlands",
+      "qid": "Q5505606"
+    },
+    {
+      "title": "Love alone will stay",
+      "qid": "Q6691587"
+    },
+    {
+      "title": "Dry those fair, those crystal eyes",
+      "qid": "Q5309609"
+    },
+    {
+      "title": "Sea Pictures",
+      "qid": "Q3176988"
+    },
+    {
+      "title": "Always and Everywhere",
+      "qid": "Q4738462"
+    },
+    {
+      "title": "Come, Gentle Night!",
+      "qid": "Q5151027"
+    },
+    {
+      "title": "Incidental Music and Funeral March from Grania and Diarmid",
+      "qid": "Q125525961"
+    },
+    {
+      "title": "Speak, Music!",
+      "qid": "Q17019898"
+    },
+    {
+      "title": "The Kingdom",
+      "qid": "Q3233992"
+    },
+    {
+      "title": "Speak, my Heart!",
+      "qid": "Q7574178"
+    },
+    {
+      "title": "Introduction and Allegro",
+      "qid": "Q2737431"
+    },
+    {
+      "title": "Pleading",
+      "qid": "Q7203752"
+    },
+    {
+      "title": "Oh, soft was the song",
+      "qid": "Q7080393"
+    },
+    {
+      "title": "Twilight",
+      "qid": "Q7857959"
+    },
+    {
+      "title": "The Music Makers",
+      "qid": "Q3521942"
+    },
+    {
+      "title": "Arabian Serenade",
+      "qid": "Q4783385"
+    },
+    {
+      "title": "Sospiri",
+      "qid": "Q7563915"
+    },
+    {
+      "title": "The Chariots of the Lord",
+      "qid": "Q7722167"
+    },
+    {
+      "title": "Fight for Right",
+      "qid": "Q5447787"
+    },
+    {
+      "title": "Violin Sonata",
+      "qid": "Q3490122"
+    },
+    {
+      "title": "XTC",
+      "qid": "Q8042496"
+    },
+    {
+      "title": "A Child Asleep",
+      "qid": "Q4655847"
+    },
+    {
+      "title": "A Song of Union",
+      "qid": "Q4659702"
+    },
+    {
+      "title": "A War Song",
+      "qid": "Q4660549"
+    },
+    {
+      "title": "Big Steamers",
+      "qid": "Q4906463"
+    },
+    {
+      "title": "Canto Popolare",
+      "qid": "Q5033849"
+    },
+    {
+      "title": "Carillon",
+      "qid": "Q2938785"
+    },
+    {
+      "title": "Carissima",
+      "qid": "Q5039698"
+    },
+    {
+      "title": "Cello Concerto",
+      "qid": "Q2487481"
+    },
+    {
+      "title": "Chanson de Matin",
+      "qid": "Q2956142"
+    },
+    {
+      "title": "Chanson de Nuit",
+      "qid": "Q2956144"
+    },
+    {
+      "title": "Cockaigne",
+      "qid": "Q1105233"
+    },
+    {
+      "title": "Concert Allegro",
+      "qid": "Q5158486"
+    },
+    {
+      "title": "Coronation Ode",
+      "qid": "Q5172221"
+    },
+    {
+      "title": "Diarmuid and Grania",
+      "qid": "Q5271938"
+    },
+    {
+      "title": "Dream Children",
+      "qid": "Q5306328"
+    },
+    {
+      "title": "Duett for trombone and double bass",
+      "qid": "Q955698"
+    },
+    {
+      "title": "Enigma Variations",
+      "qid": "Q934028",
+      "catalog_numbers": {
+        "Op": "36"
+      },
+      "key": "G major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1899
+    },
+    {
+      "title": "Falstaff",
+      "qid": "Q3064822"
+    },
+    {
+      "title": "Fantasia 2000",
+      "qid": "Q30937"
+    },
+    {
+      "title": "Follow the Colours",
+      "qid": "Q5464745"
+    },
+    {
+      "title": "Froissart Overture",
+      "qid": "Q674666"
+    },
+    {
+      "title": "Good Morrow",
+      "qid": "Q5582803"
+    },
+    {
+      "title": "Idylle",
+      "qid": "Q5989913"
+    },
+    {
+      "title": "Imperial March",
+      "qid": "Q6006749"
+    },
+    {
+      "title": "In Haven",
+      "qid": "Q16994812"
+    },
+    {
+      "title": "In Moonlight",
+      "qid": "Q6010022"
+    },
+    {
+      "title": "In the Dawn",
+      "qid": "Q6012049"
+    },
+    {
+      "title": "In the South",
+      "qid": "Q3149748"
+    },
+    {
+      "title": "Inside the Bar",
+      "qid": "Q6037918"
+    },
+    {
+      "title": "It isnae me",
+      "qid": "Q6092223"
+    },
+    {
+      "title": "Kite Kite Atashin'chi",
+      "qid": "Q11523668"
+    },
+    {
+      "title": "La Capricieuse",
+      "qid": "Q136289163"
+    },
+    {
+      "title": "Land of Hope and Glory",
+      "qid": "Q182268"
+    },
+    {
+      "title": "Le drapeau belge",
+      "qid": "Q16974158"
+    },
+    {
+      "title": "Like to the Damask Rose",
+      "qid": "Q6547265"
+    },
+    {
+      "title": "Merchant Adventurers",
+      "qid": "Q6818360"
+    },
+    {
+      "title": "Nimrod",
+      "qid": "Q33325138",
+      "catalog_numbers": {
+        "Op": "36"
+      },
+      "key": "E♭ major",
+      "instruments": [
+        "Piano"
+      ]
+    },
+    {
+      "title": "Nursery Suite",
+      "qid": "Q945091"
+    },
+    {
+      "title": "Organ Sonata",
+      "qid": "Q3490107"
+    },
+    {
+      "title": "Overture in D minor",
+      "qid": "Q7114057"
+    },
+    {
+      "title": "Pageant of Empire",
+      "qid": "Q7124303"
+    },
+    {
+      "title": "Piano Quintet",
+      "qid": "Q3414607"
+    },
+    {
+      "title": "Polonia",
+      "qid": "Q7225930"
+    },
+    {
+      "title": "Pomp and Circumstance March in D Major, Op. 39, No. 1",
+      "qid": "Q42194446",
+      "key": "D major",
+      "instruments": [
+        "Piano"
+      ]
+    },
+    {
+      "title": "Pomp and Circumstance Marches",
+      "qid": "Q1141118",
+      "catalog_numbers": {
+        "Op": "39"
+      },
+      "key": "G major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1904
+    },
+    {
+      "title": "Pomp and Circumstance – Marches 1, 2, 3 and 4",
+      "qid": "Q28943934"
+    },
+    {
+      "title": "Powick Asylum Music",
+      "qid": "Q17014338"
+    },
+    {
+      "title": "Quand nos bourgeons se rouvriront",
+      "qid": "Q7268837"
+    },
+    {
+      "title": "Queen Alexandra's Memorial Ode",
+      "qid": "Q7270172"
+    },
+    {
+      "title": "Queen Mary's Song",
+      "qid": "Q7270453"
+    },
+    {
+      "title": "Romance for bassoon",
+      "qid": "Q3440998"
+    },
+    {
+      "title": "Romance for violin",
+      "qid": "Q3441000"
+    },
+    {
+      "title": "Rondel",
+      "qid": "Q7365537"
+    },
+    {
+      "title": "Roundel: The little eyes that never knew Light",
+      "qid": "Q7371237"
+    },
+    {
+      "title": "Sabbath Morning at Sea",
+      "qid": "Q125526036"
+    },
+    {
+      "title": "Sailing Westward",
+      "qid": "Q7400203"
+    },
+    {
+      "title": "Salut d'Amour",
+      "qid": "Q2673530",
+      "key": "C major",
+      "instruments": [
+        "B♭ Clarinet",
+        "Violin",
+        "Piano"
+      ]
+    },
+    {
+      "title": "Scenes from the Saga of King Olaf",
+      "qid": "Q109535613"
+    },
+    {
+      "title": "Sea Slumber Song",
+      "qid": "Q7440004"
+    },
+    {
+      "title": "Serenade for Strings",
+      "qid": "Q3070666"
+    },
+    {
+      "title": "Seven Lieder of Edward Elgar",
+      "qid": "Q3478924"
+    },
+    {
+      "title": "Sevillana",
+      "qid": "Q7458049"
+    },
+    {
+      "title": "Shakespeare's Kingdom",
+      "qid": "Q7462767"
+    },
+    {
+      "title": "Soliloquy",
+      "qid": "Q66488852"
+    },
+    {
+      "title": "String Quartet",
+      "qid": "Q3413762"
+    },
+    {
+      "title": "Submarines",
+      "qid": "Q115472876"
+    },
+    {
+      "title": "Symphony No. 1",
+      "qid": "Q163535"
+    },
+    {
+      "title": "Symphony No. 2",
+      "qid": "Q210513"
+    },
+    {
+      "title": "Symphony No. 3",
+      "qid": "Q7661549"
+    },
+    {
+      "title": "The Apostles",
+      "qid": "Q3068632"
+    },
+    {
+      "title": "The Black Knight",
+      "qid": "Q7718359"
+    },
+    {
+      "title": "The Blue Mountains",
+      "qid": "Q7718804"
+    },
+    {
+      "title": "The Bottomless Bag",
+      "qid": "Q47081778"
+    },
+    {
+      "title": "The Crown of India",
+      "qid": "Q7728227"
+    },
+    {
+      "title": "The Dream of Gerontius",
+      "qid": "Q2065731"
+    },
+    {
+      "title": "The Fringes of the Fleet",
+      "qid": "Q115472790"
+    },
+    {
+      "title": "The Globalist",
+      "qid": "Q26964671"
+    },
+    {
+      "title": "The Heart of Canada",
+      "qid": "Q16964012"
+    },
+    {
+      "title": "The Immortal Legions",
+      "qid": "Q7741487"
+    },
+    {
+      "title": "The Islands",
+      "qid": "Q7742716"
+    },
+    {
+      "title": "The King's Way",
+      "qid": "Q7744486"
+    },
+    {
+      "title": "The Light of Life",
+      "qid": "Q24898688"
+    },
+    {
+      "title": "The Lowestoft Boat",
+      "qid": "Q7749119"
+    },
+    {
+      "title": "The Pipes of Pan",
+      "qid": "Q7757243"
+    },
+    {
+      "title": "The Poet's Life",
+      "qid": "Q7757567"
+    },
+    {
+      "title": "The River",
+      "qid": "Q7760975"
+    },
+    {
+      "title": "The Sanguine Fan",
+      "qid": "Q3522596"
+    },
+    {
+      "title": "The Severn Suite",
+      "qid": "Q11314849"
+    },
+    {
+      "title": "The Shepherd's Song",
+      "qid": "Q7763771",
+      "key": "F major",
+      "instruments": [
+        "Voice",
+        "Piano"
+      ],
+      "year_composed": 1892
+    },
+    {
+      "title": "The Spirit of England",
+      "qid": "Q18612573"
+    },
+    {
+      "title": "The Starlight Express",
+      "qid": "Q426496"
+    },
+    {
+      "title": "The Sweepers",
+      "qid": "Q7767622"
+    },
+    {
+      "title": "The Swimmer",
+      "qid": "Q125526079"
+    },
+    {
+      "title": "The Torch",
+      "qid": "Q7769613"
+    },
+    {
+      "title": "The Wand of Youth",
+      "qid": "Q3068380"
+    },
+    {
+      "title": "The Wind at Dawn",
+      "qid": "Q925525"
+    },
+    {
+      "title": "There are seven that pull the thread",
+      "qid": "Q7782810"
+    },
+    {
+      "title": "Three Bavarian Dances",
+      "qid": "Q3539970"
+    },
+    {
+      "title": "Une voix dans le désert",
+      "qid": "Q7884125"
+    },
+    {
+      "title": "Violin Concerto",
+      "qid": "Q2991885"
+    },
+    {
+      "title": "Was it some Golden Star?",
+      "qid": "Q7971301"
+    },
+    {
+      "title": "Weary wind of the West",
+      "qid": "Q78648438"
+    },
+    {
+      "title": "Where Corals Lie",
+      "qid": "Q125526066"
+    },
+    {
+      "title": "Where corals lie",
+      "qid": "Q78527343"
+    },
+    {
+      "title": "There is Sweet Music",
+      "catalog_numbers": {
+        "Op": "53/1"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/ElgarE/there-is-sweet-music/there-is-sweet-music-lys/mutopia-header.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

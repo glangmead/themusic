@@ -1,0 +1,47 @@
+{
+  "works": [
+    {
+      "title": "Alcide",
+      "qid": "Q16826934"
+    },
+    {
+      "title": "Alcyone",
+      "qid": "Q4713396"
+    },
+    {
+      "title": "Ariane et Bacchus",
+      "qid": "Q16833642"
+    },
+    {
+      "title": "Deuxième livre de pièces de viole",
+      "qid": "Q15990897"
+    },
+    {
+      "title": "Portrait of an Abdominal Operation",
+      "qid": "Q2399775"
+    },
+    {
+      "title": "Sonnerie de Ste-Geneviève du Mont-de-Paris",
+      "qid": "Q3490496",
+      "key": "F major",
+      "instruments": [
+        "Violon",
+        "Viole",
+        "Clavecin"
+      ],
+      "year_composed": 1723
+    },
+    {
+      "title": "Suitte d'un Goût Étranger",
+      "qid": "Q7635595"
+    },
+    {
+      "title": "Sémélé",
+      "qid": "Q7666039"
+    },
+    {
+      "title": "Tombeau pour M. de Sainte-Colombe",
+      "qid": "Q3531172"
+    }
+  ]
+}

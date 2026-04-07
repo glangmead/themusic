@@ -1,0 +1,323 @@
+{
+  "works": [
+    {
+      "title": "The Berlin Requiem",
+      "qid": "Q25206538"
+    },
+    {
+      "title": "The Threepenny Opera",
+      "qid": "Q212495"
+    },
+    {
+      "title": "Die Bürgschaft",
+      "qid": "Q1211850"
+    },
+    {
+      "title": "Down in the Valley",
+      "qid": "Q5302976"
+    },
+    {
+      "title": "A Kurt Weill Cabaret",
+      "qid": "Q4657604"
+    },
+    {
+      "title": "Alabama Song",
+      "qid": "Q1633771"
+    },
+    {
+      "title": "And where is the one who will mourn me",
+      "qid": "Q54989406"
+    },
+    {
+      "title": "Ballad of the Soldiers Wife",
+      "qid": "Q2717558"
+    },
+    {
+      "title": "Big Mole",
+      "qid": "Q54989432"
+    },
+    {
+      "title": "Der Jasager",
+      "qid": "Q1194602"
+    },
+    {
+      "title": "Der Protagonist",
+      "qid": "Q363824"
+    },
+    {
+      "title": "Der Silbersee",
+      "qid": "Q847229"
+    },
+    {
+      "title": "Der Zar lässt sich photographieren",
+      "qid": "Q651505"
+    },
+    {
+      "title": "Die Moritat von Mackie Messer",
+      "qid": "Q1214889",
+      "key": "C major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1928
+    },
+    {
+      "title": "Dieu vomit les tièdes",
+      "qid": "Q3027599"
+    },
+    {
+      "title": "Dreigroschenoper",
+      "qid": "Q1211998"
+    },
+    {
+      "title": "Dreigroschenoper",
+      "qid": "Q1723865"
+    },
+    {
+      "title": "Halbwelt Kultur",
+      "qid": "Q16983100"
+    },
+    {
+      "title": "Happy End",
+      "qid": "Q1584256"
+    },
+    {
+      "title": "I’m a Stranger Here Myself",
+      "qid": "Q1676214"
+    },
+    {
+      "title": "J'attends un navire",
+      "qid": "Q65079529"
+    },
+    {
+      "title": "Johnny Johnson",
+      "qid": "Q6266982"
+    },
+    {
+      "title": "Klopslied",
+      "qid": "Q15823886"
+    },
+    {
+      "title": "Knickerbocker Holiday",
+      "qid": "Q1236039"
+    },
+    {
+      "title": "La Chanson de Bilbao",
+      "qid": "Q109310782"
+    },
+    {
+      "title": "La veglia dei lestofanti (The Beggars' Opera – Die Drei-Groschen-Oper)",
+      "qid": "Q57157117"
+    },
+    {
+      "title": "La veglia dei lestofanti (The Beggars' Opera – Die Drei-Groschen-Oper)",
+      "qid": "Q57158116"
+    },
+    {
+      "title": "Lady in the Dark",
+      "qid": "Q1424307"
+    },
+    {
+      "title": "Let things be like they always was",
+      "qid": "Q54989441"
+    },
+    {
+      "title": "Lonely House",
+      "qid": "Q54989450"
+    },
+    {
+      "title": "Lost in the Stars",
+      "qid": "Q1338894"
+    },
+    {
+      "title": "Lost in the Stars",
+      "qid": "Q15046239"
+    },
+    {
+      "title": "Lost in the Stars",
+      "qid": "Q54989411"
+    },
+    {
+      "title": "Love Life",
+      "qid": "Q6690960"
+    },
+    {
+      "title": "LoveMusik",
+      "qid": "Q6690180"
+    },
+    {
+      "title": "Mack the Knife",
+      "qid": "Q3274701"
+    },
+    {
+      "title": "Mack the Knife",
+      "qid": "Q51801270"
+    },
+    {
+      "title": "Mahagonny-Songspiel",
+      "qid": "Q6732814"
+    },
+    {
+      "title": "My Ship",
+      "qid": "Q6946373"
+    },
+    {
+      "title": "O Tixo, Tixo, Help Me",
+      "qid": "Q54989416"
+    },
+    {
+      "title": "Oh, don't you see that lonesome dove",
+      "qid": "Q54989402"
+    },
+    {
+      "title": "One Touch of Venus",
+      "qid": "Q1403471"
+    },
+    {
+      "title": "One Touch of Venus",
+      "qid": "Q3548422"
+    },
+    {
+      "title": "Pirate Jenny",
+      "qid": "Q86984853"
+    },
+    {
+      "title": "Pulitzer Prize Playhouse",
+      "qid": "Q3925498"
+    },
+    {
+      "title": "Rise and Fall of the City of Mahagonny",
+      "qid": "Q760054"
+    },
+    {
+      "title": "Royal Palace",
+      "qid": "Q33645787"
+    },
+    {
+      "title": "Seeräuberjenny",
+      "qid": "Q7197803"
+    },
+    {
+      "title": "September Song",
+      "qid": "Q7452233"
+    },
+    {
+      "title": "Shadows and Fog",
+      "qid": "Q910523"
+    },
+    {
+      "title": "Somehow I never could believe",
+      "qid": "Q54989445"
+    },
+    {
+      "title": "Speak Low",
+      "qid": "Q1799926",
+      "key": "D major",
+      "instruments": [
+        "S",
+        "A",
+        "T",
+        "B",
+        "Piano",
+        "Basse électrique",
+        "Batterie"
+      ],
+      "year_composed": 1943
+    },
+    {
+      "title": "Stay Well",
+      "qid": "Q54989434"
+    },
+    {
+      "title": "Street Scene",
+      "qid": "Q2355342"
+    },
+    {
+      "title": "Symphony No. 2",
+      "qid": "Q25393517"
+    },
+    {
+      "title": "Tchaikovsky",
+      "qid": "Q7690616"
+    },
+    {
+      "title": "The Eternal Road",
+      "qid": "Q1197934"
+    },
+    {
+      "title": "The Firebrand of Florence",
+      "qid": "Q7734032"
+    },
+    {
+      "title": "The Flight across the Ocean",
+      "qid": "Q444076"
+    },
+    {
+      "title": "The Little Gray House",
+      "qid": "Q54989419"
+    },
+    {
+      "title": "The Saga of Jenny",
+      "qid": "Q7762022"
+    },
+    {
+      "title": "The Seven Deadly Sins",
+      "qid": "Q533623"
+    },
+    {
+      "title": "The Threepenny Opera",
+      "qid": "Q693798"
+    },
+    {
+      "title": "The Threepenny Opera",
+      "qid": "Q47419180"
+    },
+    {
+      "title": "The Wild Justice",
+      "qid": "Q54989439"
+    },
+    {
+      "title": "Thousands of Miles",
+      "qid": "Q54989424"
+    },
+    {
+      "title": "Trouble Man",
+      "qid": "Q54989437"
+    },
+    {
+      "title": "What Keeps Mankind Alive?",
+      "qid": "Q17036588"
+    },
+    {
+      "title": "What good would the moon be?",
+      "qid": "Q54989447"
+    },
+    {
+      "title": "Who'll Buy?",
+      "qid": "Q54989428"
+    },
+    {
+      "title": "You and Me",
+      "qid": "Q2362272"
+    },
+    {
+      "title": "Youkali",
+      "qid": "Q15093538",
+      "key": "F major",
+      "instruments": [
+        "Soprano",
+        "Alto",
+        "Bass"
+      ],
+      "year_composed": 1935
+    },
+    {
+      "title": "Zaubernacht",
+      "qid": "Q6171025"
+    },
+    {
+      "title": "symphonies by Kurt Weill",
+      "qid": "Q3507896"
+    }
+  ]
+}

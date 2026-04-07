@@ -1,0 +1,374 @@
+{
+  "works": [
+    {
+      "title": "A la bataglia",
+      "qid": "Q116266606",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=3/isaac_a_la_bataglia_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "A la battaglia",
+      "qid": "Q116266680"
+    },
+    {
+      "title": "Arnie des",
+      "qid": "Q116266625"
+    },
+    {
+      "title": "Choralis Constantinus",
+      "qid": "Q5104956"
+    },
+    {
+      "title": "Corri Fortuna",
+      "qid": "Q116266644"
+    },
+    {
+      "title": "Des biens d'amours quiconques les despart",
+      "qid": "Q116450313"
+    },
+    {
+      "title": "Donna, di dentro/Fortuna d’un gran tempo",
+      "qid": "Q114891213"
+    },
+    {
+      "title": "Et je boi d'autant",
+      "qid": "Q114890741"
+    },
+    {
+      "title": "Fammi una gratia amore",
+      "qid": "Q116266713"
+    },
+    {
+      "title": "Filles vous avés mal gardé",
+      "qid": "Q116266617"
+    },
+    {
+      "title": "Fortuna desperata iniqua e maledecta",
+      "qid": "Q116266756"
+    },
+    {
+      "title": "Helas",
+      "qid": "Q116418797"
+    },
+    {
+      "title": "Helas que pourra devenir mon cueur",
+      "qid": "Q114890953"
+    },
+    {
+      "title": "Helogerons",
+      "qid": "Q116266628"
+    },
+    {
+      "title": "Hor'è di maggio",
+      "qid": "Q116266681"
+    },
+    {
+      "title": "Hé logeron nous",
+      "qid": "Q114890958"
+    },
+    {
+      "title": "INNSBRUCK",
+      "qid": "Q126077433",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=ancient/isaac_innsbruck_ich_muss_dich_lassen_(c)clark.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Innsbruck, ich muss dich lassen",
+      "qid": "Q2780105",
+      "key": "Bb major",
+      "instruments": [
+        "P1",
+        "P2",
+        "P3",
+        "P4"
+      ]
+    },
+    {
+      "title": "J'ay prins amors",
+      "qid": "Q116266651"
+    },
+    {
+      "title": "J'ay pris amours à ma devise",
+      "qid": "Q114891193"
+    },
+    {
+      "title": "Je ne puis vivre à mon ayse",
+      "qid": "Q114890820"
+    },
+    {
+      "title": "La Martinella",
+      "qid": "Q116266742"
+    },
+    {
+      "title": "La più vaga et più bella",
+      "qid": "Q116266715"
+    },
+    {
+      "title": "Lasso quel ch’altri fugge",
+      "qid": "Q116266706"
+    },
+    {
+      "title": "Le serviteur hault guerdonné",
+      "qid": "Q114890382"
+    },
+    {
+      "title": "Lembien d'amours",
+      "qid": "Q114888207"
+    },
+    {
+      "title": "Les bien amore / Omnis labor habet finem",
+      "qid": "Q116266598"
+    },
+    {
+      "title": "Lieto et contento amore",
+      "qid": "Q116266711"
+    },
+    {
+      "title": "Maudit soit cil qui trouva jaulosie",
+      "qid": "Q114891214"
+    },
+    {
+      "title": "Missa Quant j'ay au cueur. Benedictus",
+      "qid": "Q114891191"
+    },
+    {
+      "title": "Mon pere m'a doné mari",
+      "qid": "Q114890956"
+    },
+    {
+      "title": "My my",
+      "qid": "Q114890442"
+    },
+    {
+      "title": "Nun ruhen alle Wälder",
+      "qid": "Q11618143"
+    },
+    {
+      "title": "Nè più bella di queste",
+      "qid": "Q116266702"
+    },
+    {
+      "title": "Or mauldist soyt il qui en ment",
+      "qid": "Q116266618"
+    },
+    {
+      "title": "Palle, palle",
+      "qid": "Q116266661"
+    },
+    {
+      "title": "Prophetarum maxime",
+      "qid": "Q116215791"
+    },
+    {
+      "title": "Questo mostrarsi adirata",
+      "qid": "Q116266461"
+    },
+    {
+      "title": "S., re fa mi re fa",
+      "qid": "Q114890740"
+    },
+    {
+      "title": "S., re mi re do si do",
+      "qid": "Q114890761"
+    },
+    {
+      "title": "S., re re sol la si",
+      "qid": "Q114890387"
+    },
+    {
+      "title": "S., sol fa sol la sol",
+      "qid": "Q114890900"
+    },
+    {
+      "title": "Salve Regina. Ad te clamamus",
+      "qid": "Q114890388"
+    },
+    {
+      "title": "Sempre giro piangendo",
+      "qid": "Q116266641"
+    },
+    {
+      "title": "Textless composition",
+      "qid": "Q114890437"
+    },
+    {
+      "title": "Textless composition",
+      "qid": "Q116268179"
+    },
+    {
+      "title": "Un dì lieto già mai",
+      "qid": "Q116266458"
+    },
+    {
+      "title": "Virgo prudentissima",
+      "qid": "Q1000277"
+    },
+    {
+      "title": "Vostre amour",
+      "qid": "Q114890439"
+    },
+    {
+      "title": "[La mora: donna gentile]",
+      "qid": "Q114890444"
+    },
+    {
+      "title": "Kyrie, Christe, Kyrie",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=isaac_carminum_kyrie_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gloria in excelsis Deo",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=isaac_carminum_gloria_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Credo in unum Deo",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=isaac_carminum_credo_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sanctus, Benedictus",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=isaac_carminum_sanctus_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Agnus dei",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=isaac_carminum_agnus_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gro� Leid mu� ich tragen *",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=ancient/isaac_gross_leid_muss_ich_tragen_(c)clark.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "La my",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=ancient/isaac_la_my_(c)clark.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "La Morra for instruments ATB",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=3/isaac_la_morra_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "In meinem sinn (In mijnen sin) 61 bars version",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=27i/isaac_in_meinem_sinn_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "La la h� h� for 4 instruments",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=27i/isaac_la_la_hoe_hoe_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Carmen in Fa for instruments SATB or ATTB",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=3/isaac_carmen_in_fa_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

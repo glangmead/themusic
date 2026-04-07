@@ -1,0 +1,117 @@
+{
+  "works": [
+    {
+      "title": "Clarinet Quintet",
+      "qid": "Q115121487"
+    },
+    {
+      "title": "L'Africaine",
+      "qid": "Q784719"
+    },
+    {
+      "title": "Le prophète",
+      "qid": "Q263297"
+    },
+    {
+      "title": "Ah! mon fils, sois béni",
+      "qid": "Q54984606"
+    },
+    {
+      "title": "Ballet of the Nuns",
+      "qid": "Q12859899"
+    },
+    {
+      "title": "Das Brandenburger Tor",
+      "qid": "Q3016697"
+    },
+    {
+      "title": "Dinorah",
+      "qid": "Q470739"
+    },
+    {
+      "title": "Ein Feldlager in Schlesien",
+      "qid": "Q115999"
+    },
+    {
+      "title": "Emma di Resburgo",
+      "qid": "Q3052498"
+    },
+    {
+      "title": "Gli amori di Teolinda",
+      "qid": "Q66501628"
+    },
+    {
+      "title": "Gli anglicani",
+      "qid": "Q55064604"
+    },
+    {
+      "title": "Il crociato in Egitto",
+      "qid": "Q467399"
+    },
+    {
+      "title": "Jephtas Gelübde",
+      "qid": "Q3064383"
+    },
+    {
+      "title": "L'esule di Granata",
+      "qid": "Q3065357"
+    },
+    {
+      "title": "L'étoile du nord",
+      "qid": "Q904066"
+    },
+    {
+      "title": "La stella del nord",
+      "qid": "Q109242612"
+    },
+    {
+      "title": "Les Huguenots",
+      "qid": "Q466848",
+      "key": "F major",
+      "instruments": [
+        "Bass Clarinet"
+      ],
+      "year_composed": 1832
+    },
+    {
+      "title": "Les Patineurs",
+      "qid": "Q6529842"
+    },
+    {
+      "title": "Les Patineurs",
+      "qid": "Q56458409"
+    },
+    {
+      "title": "Margherita d'Anjou",
+      "qid": "Q770746"
+    },
+    {
+      "title": "Nobles seigneurs, salut!",
+      "qid": "Q54984645"
+    },
+    {
+      "title": "Piff, paff",
+      "qid": "Q54984620"
+    },
+    {
+      "title": "Robert le diable",
+      "qid": "Q1071310"
+    },
+    {
+      "title": "Romilda e Costanza",
+      "qid": "Q3441226"
+    },
+    {
+      "title": "Semiramide riconosciuta",
+      "qid": "Q3478440"
+    },
+    {
+      "title": "Struensee",
+      "qid": "Q109242144"
+    },
+    {
+      "title": "Vielka",
+      "qid": "Q15991014"
+    }
+  ]
+}

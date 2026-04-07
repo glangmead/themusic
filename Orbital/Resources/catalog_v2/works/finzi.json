@@ -1,0 +1,49 @@
+{
+  "works": [
+    {
+      "title": "At a lunar eclipse",
+      "qid": "Q2566652"
+    },
+    {
+      "title": "Cello Concerto",
+      "qid": "Q2992279"
+    },
+    {
+      "title": "Clarinet Concerto",
+      "qid": "Q135765875"
+    },
+    {
+      "title": "Dies Natalis",
+      "qid": "Q5274997"
+    },
+    {
+      "title": "Earth and Air and Rain",
+      "qid": "Q19872860"
+    },
+    {
+      "title": "Intimations of Immortality",
+      "qid": "Q6057659"
+    },
+    {
+      "title": "Let Us Garlands Bring",
+      "qid": "Q19875091",
+      "catalog_numbers": {
+        "Op": "18"
+      },
+      "key": "F major",
+      "instruments": [
+        "Voice",
+        "Piano"
+      ],
+      "year_composed": 1929
+    },
+    {
+      "title": "Lo, the full, final sacrifice",
+      "qid": "Q6663025"
+    },
+    {
+      "title": "Requiem da camera",
+      "qid": "Q2067796"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "works": [
+    {
+      "title": "Carmen Fantasy",
+      "qid": "Q3066537"
+    },
+    {
+      "title": "Introduction et Tarantelle",
+      "qid": "Q98805468"
+    },
+    {
+      "title": "Sarasate",
+      "qid": "Q86522541"
+    },
+    {
+      "title": "Spanish Dances",
+      "qid": "Q21660477"
+    },
+    {
+      "title": "Zigeunerweisen",
+      "qid": "Q4388472",
+      "key": "E♭ major",
+      "instruments": [
+        "Flauta",
+        "Oboe",
+        "Clarinete en Si♭",
+        "Fagot",
+        "Trompa en Fa",
+        "Trompeta en Fa",
+        "Violín",
+        "Violines",
+        "Viola",
+        "Violonchelo",
+        "Contrabajo"
+      ]
+    }
+  ]
+}

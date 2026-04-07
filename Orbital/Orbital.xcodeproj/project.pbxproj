@@ -30,8 +30,7 @@
 		9BD1B7002E8B08D000C718F1 /* Tonic in Frameworks */ = {isa = PBXBuildFile; productRef = 9BD1B6FF2E8B08D000C718F1 /* Tonic */; };
 		9BDF96F12F48FB39006E614F /* Keyboard in Frameworks */ = {isa = PBXBuildFile; productRef = 9BDF96F02F48FB39006E614F /* Keyboard */; };
 		9BF85B192F5B19DD0020D781 /* samples in Resources */ = {isa = PBXBuildFile; fileRef = 9BF85B182F5B19D90020D781 /* samples */; };
-		9BF85C232F5B19F30020D781 /* catalog in Resources */ = {isa = PBXBuildFile; fileRef = 9BF85C222F5B19EB0020D781 /* catalog */; };
-		9BF870A72F5B1A060020D781 /* catalog_playback in Resources */ = {isa = PBXBuildFile; fileRef = 9BF870A62F5B1A020020D781 /* catalog_playback */; };
+		9BF85C232F5B19F30020D781 /* catalog_v2 in Resources */ = {isa = PBXBuildFile; fileRef = 9BF85C222F5B19EB0020D781 /* catalog_v2 */; };
 		DFBD9951213F20500B823AFB /* AVFAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9D0216F1C218610E8A1E8E8 /* AVFAudio.framework */; };
 		F8337F47156AD77FF619C35F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FAAA31B3A4333E0DB8DCE40 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
@@ -72,8 +71,7 @@
 		9BCED9102F1FD0A30029ED1B /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		9BCED98F2F246B150029ED1B /* Orbital.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = Orbital.icon; sourceTree = "<group>"; };
 		9BF85B182F5B19D90020D781 /* samples */ = {isa = PBXFileReference; lastKnownFileType = folder; path = samples; sourceTree = "<group>"; };
-		9BF85C222F5B19EB0020D781 /* catalog */ = {isa = PBXFileReference; lastKnownFileType = folder; path = catalog; sourceTree = "<group>"; };
-		9BF870A62F5B1A020020D781 /* catalog_playback */ = {isa = PBXFileReference; lastKnownFileType = folder; path = catalog_playback; sourceTree = "<group>"; };
+		9BF85C222F5B19EB0020D781 /* catalog_v2 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = catalog_v2; sourceTree = "<group>"; };
 		9BFFD9802E7DABD200E7CB55 /* Orbital.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Orbital.entitlements; sourceTree = "<group>"; };
 		C9D0216F1C218610E8A1E8E8 /* AVFAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFAudio.framework; path = System/Library/Frameworks/AVFAudio.framework; sourceTree = SDKROOT; };
 		CC70A99AE6E5F83E5B667F92 /* orbital-play */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "orbital-play"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,8 +83,10 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				AppView.swift,
-				Models/ClassicsCatalog.swift,
+				Models/CatalogV2Models.swift,
 				Models/ClassicsCatalogLibrary.swift,
+				Models/MIDIDownloadLedger.swift,
+				Models/MIDIDownloadManager.swift,
 				Models/PatternStorage.swift,
 				Models/PresetStorage.swift,
 				Models/ResourceManager.swift,
@@ -238,8 +238,7 @@
 				9BB2CD372F44E1CD0019A2D4 /* patterns */,
 				9BB2CD352F44E1C60019A2D4 /* presets */,
 				9BF85B182F5B19D90020D781 /* samples */,
-				9BF85C222F5B19EB0020D781 /* catalog */,
-				9BF870A62F5B1A020020D781 /* catalog_playback */,
+				9BF85C222F5B19EB0020D781 /* catalog_v2 */,
 				883C8244A11D6BCC1626DE29 /* sharc_instruments.json */,
 			);
 			path = Resources;
@@ -442,8 +441,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75CE5C4AE2E97DEC4786B61D /* sharc_instruments.json in Resources */,
-				9BF870A72F5B1A060020D781 /* catalog_playback in Resources */,
-				9BF85C232F5B19F30020D781 /* catalog in Resources */,
+				9BF85C232F5B19F30020D781 /* catalog_v2 in Resources */,
 				9BF85B192F5B19DD0020D781 /* samples in Resources */,
 				9B00F9D92F42402E0008058E /* AGENTS.md in Resources */,
 				9BCED9902F246B150029ED1B /* Orbital.icon in Resources */,

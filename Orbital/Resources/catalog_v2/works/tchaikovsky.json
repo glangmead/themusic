@@ -1,0 +1,2674 @@
+{
+  "works": [
+    {
+      "title": "Piano Sonata in C-sharp minor",
+      "qid": "Q4428774"
+    },
+    {
+      "title": "Symphony No. 1",
+      "qid": "Q163606",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/tchaikovsky_symphony_4_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/tchaikovsky_symphony_4_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/tchaikovsky_symphony_4_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/tchaikovsky_symphony_4_4_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/tchaikovsky_symphony_5_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/tchaikovsky_symphony_5_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/tchaikovsky_symphony_5_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/tchaikovsky_symphony_5_4_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/tchaikovsky_symphony_6_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/tchaikovsky_symphony_6_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/tchaikovsky_symphony_6_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/tchaikovsky_symphony_6_4_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "None but the Lonely Heart (Tchaikovsky)",
+      "qid": "Q4490983"
+    },
+    {
+      "title": "Undina",
+      "qid": "Q2669410"
+    },
+    {
+      "title": "Humoresque",
+      "qid": "Q136905554"
+    },
+    {
+      "title": "Morceaux, op. 10",
+      "qid": "Q136905422",
+      "catalog_numbers": {
+        "Op": "10"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/tchaikovsky_six_pieces_on_one_theme_21_1_prelude_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=tchaikovsky_fugue_21-02_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/tchaikovsky_six_pieces_on_one_theme_21_3_impromptu_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/tchaikovsky_six_pieces_on_one_theme_21_4_marche_funebre_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/tchaikovsky_six_pieces_on_one_theme_21_5_mazurque_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/tchaikovsky_six_pieces_on_one_theme_21_6_scherzo_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Snow Maiden",
+      "qid": "Q3487218"
+    },
+    {
+      "title": "Piano Concerto No. 1",
+      "qid": "Q162935",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=35/tchaikovsky_concerto_2_1_(c)tadokoro.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=tchaikovsky_piano_concerto_1_incipit_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_concerto_1_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_concerto_1_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_concerto_1_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/tchaikovsky_concerto_2_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/tchaikovsky_concerto_2_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/tchaikovsky_concerto_2_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=26/tchaikovsky_concerto_3_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Francesca da Rimini",
+      "qid": "Q658957"
+    },
+    {
+      "title": "Marche Slave",
+      "qid": "Q922953"
+    },
+    {
+      "title": "Variations on a Rococo Theme",
+      "qid": "Q921258"
+    },
+    {
+      "title": "Eugene Onegin",
+      "qid": "Q50956"
+    },
+    {
+      "title": "Symphony No. 4",
+      "qid": "Q231282"
+    },
+    {
+      "title": "Souvenir d’un lieu cher, Op. 42",
+      "qid": "Q3492389",
+      "catalog_numbers": {
+        "Op": "42"
+      }
+    },
+    {
+      "title": "Piano Sonata in G major",
+      "qid": "Q3115026"
+    },
+    {
+      "title": "1812 Overture",
+      "qid": "Q212776"
+    },
+    {
+      "title": "Capriccio italien",
+      "qid": "Q376375"
+    },
+    {
+      "title": "Serenade for Strings",
+      "qid": "Q1141964",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/tchaikovsky_serenade_for_strings_48_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/tchaikovsky_serenade_for_strings_48_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/tchaikovsky_serenade_for_strings_48_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/tchaikovsky_serenade_for_strings_48_4_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazeppa",
+      "qid": "Q1081440"
+    },
+    {
+      "title": "Concert Fantasia",
+      "qid": "Q2502296"
+    },
+    {
+      "title": "Elegy for String Orchestra",
+      "qid": "Q125355600"
+    },
+    {
+      "title": "Hamlet (overture-fantasia)",
+      "qid": "Q50871988"
+    },
+    {
+      "title": "Symphony No. 5",
+      "qid": "Q240314"
+    },
+    {
+      "title": "Souvenir de Florence",
+      "qid": "Q591094"
+    },
+    {
+      "title": "Iolanta",
+      "qid": "Q1043372"
+    },
+    {
+      "title": "The Nutcracker",
+      "qid": "Q193705",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_nutcracker_act-1_0_overture_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_nutcracker_act-1_1_scene_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_nutcracker_act-1_2_march_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_nutcracker_act-1_3_petit_galop_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_nutcracker_act-1_4_scene_dansante_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_nutcracker_act-1_5_scene_et_danse_gross_vater_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_nutcracker_act-1_6_scene_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_nutcracker_act-1_7_scene_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nutcracker Suite",
+      "qid": "Q12859231",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=1/tchaikovsky_nutcracker_suite_overture_71a_1_(c)kirschbaum.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=1/tchaikovsky_nutcracker_suite_march_71a_2_(c)kirschbaum.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=1/tchaikovsky_nutcracker_suite_sugarplum_71a_3_(c)kirschbaum.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=1/tchaikovsky_nutcracker_suite_russian_71a_4_(c)kirschbaum.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=1/tchaikovsky_nutcracker_suite_arabian_71a_5_(c)kirschbaum.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=1/tchaikovsky_nutcracker_suite_chinese_71a_6_(c)kirschbaum.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=1/tchaikovsky_nutcracker_suite_mirlitons_71a_7_(c)kirschbaum.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=1/tchaikovsky_nutcracker_suite_flowers_71a_8_(c)kirschbaum.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/tchajkowsky_69603a_nutcracker_1_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/tchajkowsky_69613a_nutcracker_2mvt_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/tchajkowsky_69623a_nutcracker_3_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Symphony No. 6",
+      "qid": "Q246589"
+    },
+    {
+      "title": "Fantasia",
+      "qid": "Q943192"
+    },
+    {
+      "title": "Winter Dreams",
+      "qid": "Q18210208"
+    },
+    {
+      "title": "Odette and Siegfried's First Dance for Solo Violin",
+      "qid": "Q107170298"
+    },
+    {
+      "title": "Swans at the Shore for Solo Violin",
+      "qid": "Q107170243"
+    },
+    {
+      "title": "12 Pieces, Op. 40",
+      "qid": "Q3038226",
+      "catalog_numbers": {
+        "Op": "40"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=tchaikovsky_seasons_1_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=tchaikovsky_seasons_2_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=tchaikovsky_seasons_3_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=tchaikovsky_seasons_4_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=tchaikovsky_seasons_5_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=tchaikovsky_seasons_6_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=tchaikovsky_seasons_7_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=tchaikovsky_seasons_8_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=tchaikovsky_seasons_9_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=tchaikovsky_seasons_10_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=tchaikovsky_seasons_11_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=tchaikovsky_seasons_12_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=26/tchaikovsky_12_morceaux_40_01_etude_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=26/tchaikovsky_12_morceaux_40_02_chanson_triste_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=26/tchaikovsky_12_morceaux_40_03_marche_funebre_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=26/tchaikovsky_12_morceaux_40_04_mazurka_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=26/tchaikovsky_12_morceaux_40_05_mazurka_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=26/tchaikovsky_12_morceaux_40_06_romance_san_paroles_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=26/tchaikovsky_12_morceaux_40_07_au_village_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=26/tchaikovsky_12_morceaux_40_08_valse_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=26/tchaikovsky_12_morceaux_40_09_valse_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=26/tchaikovsky_12_morceaux_40_10_danse_russe_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=26/tchaikovsky_12_morceaux_40_11_scherzo_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=26/tchaikovsky_12_morceaux_40_12_reverie_interrompue_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "18 Pieces, for piano",
+      "qid": "Q3032512"
+    },
+    {
+      "title": "6 Pieces, for piano",
+      "qid": "Q59001401"
+    },
+    {
+      "title": "A Stravinsky Montage and Porcelain Dialogues",
+      "qid": "Q133804082"
+    },
+    {
+      "title": "Adagio",
+      "qid": "Q57648537",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/tchajkowsky_58337a_symphony_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-1_8a_pas_dact-ion_adagio_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-3_28b_adagio_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "All-Night Vigil",
+      "qid": "Q16002554"
+    },
+    {
+      "title": "Allegretto in E major",
+      "qid": "Q125352457"
+    },
+    {
+      "title": "Allegro Brillante",
+      "qid": "Q96371802"
+    },
+    {
+      "title": "Allegro brillante",
+      "qid": "Q2648233"
+    },
+    {
+      "title": "Anastasia",
+      "qid": "Q18216799"
+    },
+    {
+      "title": "Andante and Finale",
+      "qid": "Q489987",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=tchaikovsky_swan_lake_09_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-0_4_finale_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-1_9_finale_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-2_20_finale_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_swan_lake_act-1_9_finale_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Andante cantabile",
+      "qid": "Q57715666",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/tchajkowsky_59292a_andante_cantabile_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Andantino",
+      "qid": "Q4753590"
+    },
+    {
+      "title": "Anna Karenina",
+      "qid": "Q4066530"
+    },
+    {
+      "title": "Au village",
+      "qid": "Q85233670"
+    },
+    {
+      "title": "Aveu passionné",
+      "qid": "Q2874248"
+    },
+    {
+      "title": "Barbie in the Nutcracker",
+      "qid": "Q25733"
+    },
+    {
+      "title": "Barenboim Celibidache",
+      "qid": "Q116026525"
+    },
+    {
+      "title": "Cello Concerto",
+      "qid": "Q5058299"
+    },
+    {
+      "title": "Chanson triste",
+      "qid": "Q85231671",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/tchajkowsky_52093a_chanson_triste_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chant sans paroles",
+      "qid": "Q85233247"
+    },
+    {
+      "title": "Cherevichki",
+      "qid": "Q4512619"
+    },
+    {
+      "title": "Cherevichki",
+      "qid": "Q464787"
+    },
+    {
+      "title": "Children’s Album",
+      "qid": "Q1141678",
+      "catalog_numbers": {
+        "Op": "39"
+      },
+      "key": "G major",
+      "instruments": [
+        "Piano"
+      ],
+      "year_composed": 1878,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=29/tchaikovsky_album_for_the_young_39_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=29/tchaikovsky_album_for_the_young_39_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=29/tchaikovsky_album_for_the_young_39_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=29/tchaikovsky_album_for_the_young_39_4_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=29/tchaikovsky_album_for_the_young_39_5_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=29/tchaikovsky_album_for_the_young_39_6_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=29/tchaikovsky_album_for_the_young_39_7_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=29/tchaikovsky_album_for_the_young_39_8_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=29/tchaikovsky_album_for_the_young_39_9_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=33/tchaikovsky_album_for_the_young_39_10_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=33/tchaikovsky_album_for_the_young_39_11_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=33/tchaikovsky_album_for_the_young_39_12_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=33/tchaikovsky_album_for_the_young_39_13_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=33/tchaikovsky_album_for_the_young_39_14_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=33/tchaikovsky_album_for_the_young_39_15_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=33/tchaikovsky_album_for_the_young_39_16_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=33/tchaikovsky_album_for_the_young_39_17_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=33/tchaikovsky_album_for_the_young_39_18_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=33/tchaikovsky_album_for_the_young_39_19_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=33/tchaikovsky_album_for_the_young_39_20_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=33/tchaikovsky_album_for_the_young_39_21_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=33/tchaikovsky_album_for_the_young_39_22_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=33/tchaikovsky_album_for_the_young_39_23_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=33/tchaikovsky_album_for_the_young_39_24_(c)yogore.mid"
+          ]
+        },
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/TchaikovskyPI/O39/05MarchOfTheWoodenSoldiers/05MarchOfTheWoodenSoldiers.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Dance of the Sugar Plum Fairy",
+      "qid": "Q10264139",
+      "key": "E major",
+      "instruments": [
+        "Alto Saxophone",
+        "Violoncello"
+      ]
+    },
+    {
+      "title": "Danse des petits cygnes",
+      "qid": "Q5221033",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_swan_lake_act-2_13a_danses_des_cygnes_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_swan_lake_act-2_13c_danse_des_cygnes_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Danse russe",
+      "qid": "Q85287385",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=tchaikovsky_swan_lake_20b_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_swan_lake_supplement_2_danse_russe_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "De Notenkraker",
+      "qid": "Q56458423"
+    },
+    {
+      "title": "Destiny",
+      "qid": "Q3234957"
+    },
+    {
+      "title": "Dumka",
+      "qid": "Q48780343"
+    },
+    {
+      "title": "Etude",
+      "qid": "Q85107771"
+    },
+    {
+      "title": "Eugene Onegin",
+      "qid": "Q50961"
+    },
+    {
+      "title": "Fatum",
+      "qid": "Q1114910"
+    },
+    {
+      "title": "Festival Coronation March",
+      "qid": "Q5445701"
+    },
+    {
+      "title": "Festival Overture on the Danish National Anthem",
+      "qid": "Q3358703"
+    },
+    {
+      "title": "Finale. Allegro giusto",
+      "qid": "Q57715796"
+    },
+    {
+      "title": "Fitna",
+      "qid": "Q245063"
+    },
+    {
+      "title": "Fuete",
+      "qid": "Q4493784"
+    },
+    {
+      "title": "Granddaughter of Ice",
+      "qid": "Q282535"
+    },
+    {
+      "title": "Hamlet",
+      "qid": "Q65567035"
+    },
+    {
+      "title": "Hamlet",
+      "qid": "Q692249"
+    },
+    {
+      "title": "Hamlet (incidental music)",
+      "qid": "Q50872559"
+    },
+    {
+      "title": "In Memoriam Yakov Kreizberg",
+      "qid": "Q86520095"
+    },
+    {
+      "title": "Iolanta",
+      "qid": "Q4202698"
+    },
+    {
+      "title": "Jewels",
+      "qid": "Q3178483"
+    },
+    {
+      "title": "Jubilee",
+      "qid": "Q4533497"
+    },
+    {
+      "title": "Kero Pack",
+      "qid": "Q10314225"
+    },
+    {
+      "title": "Kuda, kuda vï udalilis",
+      "qid": "Q54988140"
+    },
+    {
+      "title": "La Patisserie enchantée",
+      "qid": "Q57391962"
+    },
+    {
+      "title": "Le Concert",
+      "qid": "Q1169399"
+    },
+    {
+      "title": "Legenda Op. 54 no.  5",
+      "qid": "Q136065493",
+      "catalog_numbers": {
+        "Op": "54"
+      }
+    },
+    {
+      "title": "Life symphony",
+      "qid": "Q114839232"
+    },
+    {
+      "title": "Liturgy of St. John Chrysostom",
+      "qid": "Q6653390"
+    },
+    {
+      "title": "Manfred Symphony",
+      "qid": "Q1752809"
+    },
+    {
+      "title": "Marche funèbre",
+      "qid": "Q85232346"
+    },
+    {
+      "title": "Mayerling",
+      "qid": "Q2607724"
+    },
+    {
+      "title": "Mazurka",
+      "qid": "Q85232127",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=tchaikovsky_swan_lake_23_(c)lucarelli.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mazurka",
+      "qid": "Q85232875"
+    },
+    {
+      "title": "Meditation",
+      "qid": "Q11881935"
+    },
+    {
+      "title": "Merveilleuse",
+      "qid": "Q57646728"
+    },
+    {
+      "title": "Mi a'th garaf, Olga = Arioso lenski : Eugene Onegin",
+      "qid": "Q79266739"
+    },
+    {
+      "title": "Moderato e semplice",
+      "qid": "Q57715614"
+    },
+    {
+      "title": "Moscow",
+      "qid": "Q6915450"
+    },
+    {
+      "title": "Mozartiana",
+      "qid": "Q6927925"
+    },
+    {
+      "title": "Neb ond y sawl a ŵyr = Nur wer die Sehnsucht kennt : (None but the lonely heart)",
+      "qid": "Q79266740"
+    },
+    {
+      "title": "None but the Lonely Heart",
+      "qid": "Q96057126"
+    },
+    {
+      "title": "Nut Rocker",
+      "qid": "Q7070396"
+    },
+    {
+      "title": "Nutcracker Fantasy",
+      "qid": "Q3346509"
+    },
+    {
+      "title": "Nutcracker March",
+      "qid": "Q110111329"
+    },
+    {
+      "title": "Nutcracker Suite",
+      "qid": "Q2941221"
+    },
+    {
+      "title": "On the Isle of May",
+      "qid": "Q57716233"
+    },
+    {
+      "title": "Onegin",
+      "qid": "Q2024146"
+    },
+    {
+      "title": "Orchestral Suite No. 1",
+      "qid": "Q3503277"
+    },
+    {
+      "title": "Orchestral Suite No. 2",
+      "qid": "Q3503284"
+    },
+    {
+      "title": "Orchestral Suite No. 3",
+      "qid": "Q3503282"
+    },
+    {
+      "title": "Orchestral Suite No. 4 ''Mozartiana''",
+      "qid": "Q2377044"
+    },
+    {
+      "title": "Overture in F major",
+      "qid": "Q3358694"
+    },
+    {
+      "title": "Pezzo capriccioso",
+      "qid": "Q3377882"
+    },
+    {
+      "title": "Piano Concerto No. 2",
+      "qid": "Q210230"
+    },
+    {
+      "title": "Piano Concerto No. 3",
+      "qid": "Q223338"
+    },
+    {
+      "title": "Piano Pieces",
+      "qid": "Q7190131"
+    },
+    {
+      "title": "Piano Trio",
+      "qid": "Q3539366"
+    },
+    {
+      "title": "Porcelain Dialogues",
+      "qid": "Q134606651"
+    },
+    {
+      "title": "Quartet Movement in B-flat major",
+      "qid": "Q3413767"
+    },
+    {
+      "title": "Rococo Variations",
+      "qid": "Q7356063"
+    },
+    {
+      "title": "Romance in F minor",
+      "qid": "Q3440999",
+      "key": "C♭ major",
+      "instruments": [
+        "Soprano",
+        "Piano"
+      ],
+      "year_composed": 1868
+    },
+    {
+      "title": "Romeo and Juliet",
+      "qid": "Q763716",
+      "key": "A major",
+      "instruments": [
+        "Piccolo",
+        "Flute",
+        "Oboe",
+        "A Clarinet",
+        "English Horn",
+        "Bassoon",
+        "Horn in F",
+        "C Trumpet",
+        "Trombone",
+        "Tuba",
+        "Timpani",
+        "Cymbal",
+        "Bass Drum",
+        "Harp",
+        "Violin I",
+        "Violin II",
+        "Viola",
+        "Violoncello",
+        "Contrabass"
+      ],
+      "year_composed": 1880
+    },
+    {
+      "title": "Rêverie interrompue",
+      "qid": "Q85287967"
+    },
+    {
+      "title": "Scherzo",
+      "qid": "Q85287669"
+    },
+    {
+      "title": "Scherzo à la russe",
+      "qid": "Q7431217"
+    },
+    {
+      "title": "Scherzo. Allegro non tanto e con fuoco",
+      "qid": "Q57715740"
+    },
+    {
+      "title": "Seasons",
+      "qid": "Q21148885",
+      "key": "A♭ major",
+      "instruments": [
+        "Piano"
+      ]
+    },
+    {
+      "title": "Sensuela",
+      "qid": "Q11892950"
+    },
+    {
+      "title": "Serenade",
+      "qid": "Q4417566"
+    },
+    {
+      "title": "Serenade",
+      "qid": "Q56458419"
+    },
+    {
+      "title": "Shakespeareiane",
+      "qid": "Q19800806"
+    },
+    {
+      "title": "Six Romances, Opus 38",
+      "qid": "Q30602731"
+    },
+    {
+      "title": "Six morceaux pour piano (Tchaïkovski, op. 19)",
+      "qid": "Q110162804",
+      "catalog_numbers": {
+        "Op": "19"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/tchaikovsky_six_pieces_19_1_reveries_du_soir_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/tchaikovsky_six_pieces_19_2_scherzo_humoristique_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/tchaikovsky_six_pieces_19_3_feuillet_dalbum_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/tchaikovsky_six_pieces_19_4_nocturne_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/tchaikovsky_six_pieces_19_5_capriccioso_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=25/tchaikovsky_six_pieces_19_6_thema_und_variationen_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sixteen Songs for Children",
+      "qid": "Q50871057"
+    },
+    {
+      "title": "Souvenir de Hapsal",
+      "qid": "Q3492380"
+    },
+    {
+      "title": "Spring Melodies",
+      "qid": "Q21636911"
+    },
+    {
+      "title": "Stars of the Russian Ballet",
+      "qid": "Q3233787"
+    },
+    {
+      "title": "String Quartet No. 1",
+      "qid": "Q2612039",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/tchajkowski_string_quartet_11_(c)harfesoft.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/tchajkowski_string_quartet_22_(c)harfesoft.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/tchajkowski_string_quartet_30_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "String Quartet No. 2",
+      "qid": "Q2612044"
+    },
+    {
+      "title": "String Quartet No. 3",
+      "qid": "Q2612052"
+    },
+    {
+      "title": "Sugar Rum Cherry",
+      "qid": "Q65149921"
+    },
+    {
+      "title": "Swan Lake",
+      "qid": "Q7653459",
+      "catalog_numbers": {
+        "Op": "20"
+      },
+      "key": "E♭ major",
+      "instruments": [
+        "Piccolo",
+        "Flute 1",
+        "Flute 2",
+        "Oboe 1",
+        "Oboe 2",
+        "Bassoon 1",
+        "Bassoon 2",
+        "B♭ Clarinet 1",
+        "B♭ Clarinet 2",
+        "Bass Clarinet",
+        "Alto Saxophone 1 &amp;amp; 2",
+        "Alto Saxophone 3 &amp;amp; 4",
+        "Tenor Saxophone 1 &amp;amp; 2",
+        "Baritone Saxophone 1 &amp;amp; 2",
+        "B♭ Trumpet 1",
+        "B♭ Trumpet 2",
+        "F Horn 1 &amp;amp; 2",
+        "F Horn 3 &amp;amp; 4",
+        "Trombone 1",
+        "Trombone 2",
+        "Euphonium",
+        "Tuba"
+      ],
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=tchaikovsky_swan_lake_01_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=tchaikovsky_swan_lake_02_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=tchaikovsky_swan_lake_03_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=tchaikovsky_swan_lake_04_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=tchaikovsky_swan_lake_05_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=tchaikovsky_swan_lake_06_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=tchaikovsky_swan_lake_10_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=tchaikovsky_swan_lake_11_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=tchaikovsky_swan_lake_12_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=tchaikovsky_swan_lake_13_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=tchaikovsky_swan_lake_14_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=tchaikovsky_swan_lake_15_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=tchaikovsky_swan_lake_16_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=tchaikovsky_swan_lake_17_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=tchaikovsky_swan_lake_18_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=tchaikovsky_swan_lake_19_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=tchaikovsky_swan_lake_25_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=tchaikovsky_swan_lake_26_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=tchaikovsky_swan_lake_27_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_swan_lake_act-1_1_intro_et_scene_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_swan_lake_act-1_2_valse_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_swan_lake_act-1_3_scene_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_swan_lake_act-2_10_scene_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_swan_lake_act-2_11_scene_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_swan_lake_act-2_12_scene_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_swan_lake_act-3_15_allegro_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_swan_lake_act-3_16_danses_du_corps_de_ballet_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_swan_lake_act-3_17_scene_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_swan_lake_act-3_18_scene_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_swan_lake_act-3_19_pas_de_six_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_swan_lake_act-3_20_danse_hongroise_czardas_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_swan_lake_act-3_21_danse_espagnole_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_swan_lake_act-3_22_danse_napolitaine_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_swan_lake_act-3_23_mazurka_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_swan_lake_act-3_24_scene_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_swan_lake_act-4_25_entract-e_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_swan_lake_act-4_26_scene_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_swan_lake_act-4_27_danses_des_petits_cygnes_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_swan_lake_act-4_28_scene_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_swan_lake_act-4_29_scene_finale_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Swan Lake",
+      "qid": "Q15270700"
+    },
+    {
+      "title": "Swan Lake",
+      "qid": "Q27118282"
+    },
+    {
+      "title": "Swan Lake",
+      "qid": "Q199786"
+    },
+    {
+      "title": "Swan Lake",
+      "qid": "Q1093555",
+      "key": "D major",
+      "instruments": [
+        "Violoncello",
+        "Piano"
+      ]
+    },
+    {
+      "title": "Swan Lake (Martins)",
+      "qid": "Q119163481"
+    },
+    {
+      "title": "Symphony No. 1",
+      "qid": "Q7661508"
+    },
+    {
+      "title": "Symphony No. 2",
+      "qid": "Q210585"
+    },
+    {
+      "title": "Symphony No. 3",
+      "qid": "Q223544"
+    },
+    {
+      "title": "Symphony in E-flat",
+      "qid": "Q2795834"
+    },
+    {
+      "title": "Sérénade mélancolique",
+      "qid": "Q3511386"
+    },
+    {
+      "title": "The Bigmoon Nights",
+      "qid": "Q4327733"
+    },
+    {
+      "title": "The Enchantress",
+      "qid": "Q477837"
+    },
+    {
+      "title": "The Maid of Orleans",
+      "qid": "Q785557"
+    },
+    {
+      "title": "The Nutcracker",
+      "qid": "Q4528663"
+    },
+    {
+      "title": "The Nutcracker",
+      "qid": "Q4528662"
+    },
+    {
+      "title": "The Nutcracker pas de deux",
+      "qid": "Q12859936"
+    },
+    {
+      "title": "The Oprichnik",
+      "qid": "Q2415134"
+    },
+    {
+      "title": "The Queen of Spades",
+      "qid": "Q4362601"
+    },
+    {
+      "title": "The Queen of Spades",
+      "qid": "Q221047"
+    },
+    {
+      "title": "The Seasons",
+      "qid": "Q2914902"
+    },
+    {
+      "title": "The Sleeping Beauty",
+      "qid": "Q15545348",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-0_1_prologue_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-0_2_scene_dansante_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-1_5_scene_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-1_6_valse_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-1_7_scene_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-2_10_entract-e_et_scene_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-2_11_colin_maillard_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-2_12_scene_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-3_21_marche_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-3_22_polacca_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=tchaikovsky-rachmaninov_sleeping_waltz_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Sleeping Beauty",
+      "qid": "Q838051"
+    },
+    {
+      "title": "The Sleeping Beauty, op. 66a",
+      "qid": "Q110931368",
+      "catalog_numbers": {
+        "Op": "66a"
+      },
+      "key": "B♭ major",
+      "instruments": [
+        "Piano"
+      ]
+    },
+    {
+      "title": "The Slutcracker",
+      "qid": "Q16955698"
+    },
+    {
+      "title": "The Storm",
+      "qid": "Q2897075"
+    },
+    {
+      "title": "The Tempest",
+      "qid": "Q2916081"
+    },
+    {
+      "title": "The Voyevoda",
+      "qid": "Q2618565"
+    },
+    {
+      "title": "The Voyevoda",
+      "qid": "Q3228320"
+    },
+    {
+      "title": "The Young Lovers",
+      "qid": "Q3416446"
+    },
+    {
+      "title": "Theme and Variations",
+      "qid": "Q7781218"
+    },
+    {
+      "title": "Tom and Jerry: A Nutcracker Tale",
+      "qid": "Q3282900"
+    },
+    {
+      "title": "Trepak",
+      "qid": "Q2094365",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_nutcracker_act-2_12d_trepak_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tschaikovsky Pas de Deux",
+      "qid": "Q7849454"
+    },
+    {
+      "title": "Tschaikovsky Piano Concerto No. 2",
+      "qid": "Q7849452"
+    },
+    {
+      "title": "Tschaikovsky Suite No. 2",
+      "qid": "Q119163977"
+    },
+    {
+      "title": "Tschaikovsky Suite No. 3",
+      "qid": "Q7849455"
+    },
+    {
+      "title": "Ugly Duckling",
+      "qid": "Q3228130"
+    },
+    {
+      "title": "Undine 74",
+      "qid": "Q47158632"
+    },
+    {
+      "title": "Vakula the Smith",
+      "qid": "Q630941"
+    },
+    {
+      "title": "Valley of Shadows",
+      "qid": "Q18210105"
+    },
+    {
+      "title": "Valse",
+      "qid": "Q85234612",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_nutcracker_act-2_13_valse_des_fleurs_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_nutcracker_act-2_15_valse_finale_apotheose_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_swan_lake_act-1_5c_valse_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Valse",
+      "qid": "Q85234997"
+    },
+    {
+      "title": "Valse-Scherzo",
+      "qid": "Q3554141"
+    },
+    {
+      "title": "Vesti Nedeli",
+      "qid": "Q4109599"
+    },
+    {
+      "title": "Violin Concerto",
+      "qid": "Q372907",
+      "catalog_numbers": {
+        "Op": "35"
+      },
+      "key": "D major",
+      "instruments": [
+        "Flauto I",
+        "Flauto II",
+        "Oboe I",
+        "Oboe II",
+        "Clarinetto in A I",
+        "Clarinetto in A II",
+        "Clarinetto in B I",
+        "Clarinetto in B II",
+        "Fagotto I",
+        "Fagotto II",
+        "Corno in F I",
+        "Corno in F II",
+        "Corno in F III",
+        "Corno in F IV",
+        "Tromba in D I",
+        "Tromba in D II",
+        "Timpani in A,D",
+        "Violino solo",
+        "Violini I",
+        "Violini II",
+        "Viole",
+        "Violoncelli",
+        "Contrabassi"
+      ],
+      "year_composed": 1878,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/tchajkowskij_concerto_for_violin_35_1_(c)fisher.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Waltz of the Flowers",
+      "qid": "Q12860108",
+      "key": "E♭ major",
+      "instruments": [
+        "Flauta Transversal",
+        "Violino",
+        "Clarinete em B♭"
+      ]
+    },
+    {
+      "title": "Waltz of the Snowflakes",
+      "qid": "Q137410885",
+      "key": "G major",
+      "instruments": [
+        "Flute",
+        "Piccolo",
+        "Oboe",
+        "English Horn",
+        "Clarinet",
+        "Bass Clarinet",
+        "Bassoon",
+        "Horn in F",
+        "Trumpet",
+        "Trombone",
+        "Tuba",
+        "Timpani",
+        "Triangle",
+        "Crash Cymbal",
+        "Glockenspiel",
+        "Harp",
+        "Voice",
+        "Violins",
+        "Violas",
+        "Violoncellos",
+        "Contrabasses"
+      ]
+    },
+    {
+      "title": "7-8. Sujet + Danse des coupes",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=tchaikovsky_swan_lake_07-08_(c)lucarelli.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "19b. Pas de deux",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=tchaikovsky_swan_lake_19b_(c)lucarelli.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "20. Danse hongroise (Czardas)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=tchaikovsky_swan_lake_20_(c)lucarelli.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "21. Danse espagnole",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=tchaikovsky_swan_lake_21_(c)lucarelli.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "22. Danse napolitaine",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=tchaikovsky_swan_lake_22_(c)lucarelli.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "24. Sc�ne",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=tchaikovsky_swan_lake_24_(c)lucarelli.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "28-29. Sc�ne + Sc�ne finale",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=tchaikovsky_swan_lake_28-29_(c)lucarelli.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "2-3. Canzonetta (Andante), Finale (Allegro vivacissimo)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/tchajkowskij_concerto_for_violin_35_2-3_(c)fisher.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "� MIDI \n\t\t\t\t\t| 2. Andante non troppo",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=35/tchaikovsky_concerto_2_2_(c)tadokoro.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3. Allegro con fuoco",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=35/tchaikovsky_concerto_2_3_(c)tadokoro.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "1-2. I part (1-2� tempo)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/tchajkowski_trio_for_violin_cello_piano_50_1-2_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3-4. II part (3-4� tempo)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/tchajkowski_trio_for_violin_cello_piano_50_3-4_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Song without words, Op. 2 No. 3 �",
+      "catalog_numbers": {
+        "Op": "2/3"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/tchajkowsky_song_without_words_op_2_3_223_r_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Danse characteristique *",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/tchajkowsky_danse_characteristique_6244_d_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3. Allegro molto vivace",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/tchajkowsky_58347a_symphonie_pathetique_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concerto in B flat major (piano solo)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/tchajkowsky_58417a_concerto_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "8,9. Scene et Danse des Flocons",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_nutcracker_act-1_89_scene_et_valse_des_flocons_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "10-11. Scene",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_nutcracker_act-2_10_11_scene_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "12a. Divertissement - Le chocolat",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_nutcracker_act-2_12a_divertissement_le_chocolat_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "12b. Le cafe",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_nutcracker_act-2_12b_le_cafe_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "12c. Le the",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_nutcracker_act-2_12c_le_the_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "12e. Danse des mirlitons",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_nutcracker_act-2_12e_danse_des_mirlitons_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "12f. La Mere Gigogne et les polichinelles",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_nutcracker_act-2_12f_la_mere_gigogne_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "14. Pas des deux",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_nutcracker_act-2_14_pas_des_deux_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "14b. Pour le danseur",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_nutcracker_act-2_14b_pour_le_danseur_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "14c. Pour la danseuse",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_nutcracker_act-2_14c_pour_la_danseuse_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "14d. Coda",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_nutcracker_act-2_14d_coda_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3a. Pas de Six",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-0_3a_pas_de_six_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3b. Candite",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-0_3b_candite_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3c. Coulante Fleur de Farine",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-0_3c_coulante_fleur_de_farine_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3d. Miettes Qui Tombent",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-0_3d_miettes_qui_tombent_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3e. Canari Que Chante",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-0_3e_canari_qui_chante_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3f. Violente",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-0_3f_violente_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3g. La Fee de Lilas",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-0_3g_la_fee_des_lilas_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3h. Coda",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-0_3h_coda_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "8b. Danse des Demoiselles",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-1_8b_danse_des_demoiselles_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "8c. Pages",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-1_8c_pages_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "8d. Variation d'Aurore",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-1_8d_variation_daurore_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "8e. Coda",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-1_8e_coda_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "12a. Danse des Duchesses",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-2_12a_danse_des_duchesses_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "12b. Danse des Baronnes",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-2_12b_danse_des_baronnes_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "12c. Danse des Comtesses",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-2_12c_danse_des_comtesses_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "12d. Danse des Marquises",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-2_12d_danse_des_marquises_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "13a. Farandole et Scene",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-2_13a_farandole_scene_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "13b. Danse",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-2_13b_danse_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "14. Scene",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-2_14_scene_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "15a. Pas d'Action",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-2_15a_pas_dact-ion_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "15b. Variation d'Aurore",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-2_15b_variation_daurore_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "15c. Coda",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-2_15c_coda_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "16. Scene",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-2_16_scene_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "17. Panorama",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-2_17_panorama_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "18. Entracte",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-2_18_entract-e_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "19. Le Sommeil et Scene",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-2_19_le_sommeil_et_scene_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "23a. Pas de Quatre",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-3_23a_pas_de_quatre_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "23b. La Fee Or",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-3_23b_la_fee_or_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "23c. La Fee Argent",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-3_23c_la_fee_argent_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "23d. La Fee Saphir",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-3_23d_la_fee_saphir_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "23e. La Fee Diamant",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-3_23e_la_fee_diamant_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "23f. Coda",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-3_23f_coda_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "24. Pas de Caractere",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-3_24_pas_de_caract-ere_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "25a. Pas de Quatre",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-3_25a_pas_de_quatre_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "25b. Cendrillon et Fortune",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-3_25b_cendrillon_et_fortune_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "25c. L'oiseau Bleu",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-3_25c_loiseau_bleu_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "25d. Coda",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-3_25d_coda_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "26a. Pas de Caractere",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-3_26a_pas_de_caract-ere_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "26b. Cendrillon et Prince Fortune",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-3_26b_cendrillon_et_prince_fortune_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "27. Pas Berrichon",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-3_27_pas_berrichon_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "28a. Pas de Deux",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-3_28a_pas_de_deux_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "28c. Desire",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-3_28c_desire_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "28d. Aurore",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-3_28d_aurore_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "28e. Coda",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-3_28e_coda_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "29. Sarabande",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-3_29_sarabande_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "30a. Finale",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-3_30a_finale_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "30b. Apotheose",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_sleeping_beauty_act-3_30b_apotheose_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "4a. Pas de Trois",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_swan_lake_act-1_4a_pas_de_trois_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "4b. Andante",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_swan_lake_act-1_4b_andante_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "4c. Allegro",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_swan_lake_act-1_4c_allegro_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "4d. Moderato",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_swan_lake_act-1_4d_moderato_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "4e. Allegro",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_swan_lake_act-1_4e_allegro_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "4f. Coda",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_swan_lake_act-1_4f_coda_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "5a. Pas de Deux",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_swan_lake_act-1_5a_pas_de_deux_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "5b. Andante",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_swan_lake_act-1_5b_andante_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "5d. Coda",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_swan_lake_act-1_5d_coda_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "6. Pas d'Action",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_swan_lake_act-1_6_pas_dact-ion_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "7. Sujet",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_swan_lake_act-1_7_sujet_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "8. Danse des Coupes",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_swan_lake_act-1_8_danse_des_coupes_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "13b. Odette Solo",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_swan_lake_act-2_13b_odette_solo_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "13d. Allegro moderato",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_swan_lake_act-2_13d_allegro_moderato_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "13e. Pas d'Action",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_swan_lake_act-2_13e_pas_dact-ion_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "13f. Tout le Monde Danse",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_swan_lake_act-2_13f_tout_le_monde_danse_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "13g. Coda",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_swan_lake_act-2_13g_coda_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "1a. Pas de deux introduction",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_swan_lake_supplement_1a_pas_de_deux_intro_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "1b. Var ii",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_swan_lake_supplement_1b_var_ii_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "1c. Coda",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=23/tchaikovsky_swan_lake_supplement_1c_coda_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nutcracker, potpourri (transcr. by Grainger)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/tchajkowsky_308d_nutcracker_selections_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Paraphrase on Eugene Oneguine (by Pabst)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/tchajkowsky-pabst_60873a_eugene_oneguine_concert_paraphrase_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Paraphrase on Tchaikovsky's Flower Waltz (transcr. by Grainger)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=tchaikovsky-grainger_flower_waltz_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tchajkowsky Melodies",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-ii/tchajkowsky_70193s_tschaikowsky_melodies_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Choruses # 8 &amp; 9 preface: Simbol very: Veruju (Credo: I believe), Posle Simbola very: Svjat (After the Credo: Holy)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/tchaikowski_choruses_from_chrysostomos_lithurgy_8-9_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Choruses # 10, 11, 13 &amp; 14 preface: Tebe poem (To Thee We Sing,We Praise Thee Eternally), Dostojno est' (Dignified it is to Praise Thee), \n\t\t\t\t\tMolitva Gospodnja (The Lord's Prayer), Chvalite Gospoda (Praise the Lord)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=5/tchaikowski_choruses_from_chrysostomos_lithurgy_10-11-13-14_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The crown of roses",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/tchajkowsky_the_crown_of_roses_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Seasons: August",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/TchaikovskyPI/O37/Tschaikowsky-op37.8/Tschaikowsky-op37.8.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Morning Prayer",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/TchaikovskyPI/O39/01MorningPrayer/01MorningPrayer.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Old French Song",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/TchaikovskyPI/O39/16OldFrenchSong/16OldFrenchSong.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Doumka",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/TchaikovskyPI/O59/dumka/dumka.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Napolitan Dance (Swan Lake)",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/TchaikovskyPI/dansenapolitaine/dansenapolitaine.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,880 @@
+{
+  "works": [
+    {
+      "title": "Stabat Mater",
+      "qid": "Q11894350"
+    },
+    {
+      "title": "Missa Papae Marcelli",
+      "qid": "Q2717291",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=palestrina_missa_papa_marcelli_1_(c)austin.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=palestrina_missa_papa_marcelli_2_(c)austin.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=palestrina_missa_papa_marcelli_3_(c)austin.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=palestrina_missa_papa_marcelli_4_(c)austin.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=palestrina_missa_papa_marcelli_5_(c)austin.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Accepit Jesus",
+      "qid": "Q136996280"
+    },
+    {
+      "title": "Ad Dominum cum tribularer",
+      "qid": "Q136996334"
+    },
+    {
+      "title": "Ad te levavi (PdPWV Mot178)",
+      "qid": "Q136996425"
+    },
+    {
+      "title": "Ad te levavi (PdPWV Mot322)",
+      "qid": "Q136996485"
+    },
+    {
+      "title": "Adjuro vos filiae",
+      "qid": "Q136996385"
+    },
+    {
+      "title": "Adoramus te Christe",
+      "qid": "Q124310108",
+      "instruments": [
+        "Tenor 1",
+        "Tenor 2",
+        "Baritone",
+        "Bass"
+      ],
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/palestrina_adoramus_te_christe_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Aegypte noli flere",
+      "qid": "Q136996507"
+    },
+    {
+      "title": "Alla riva del Tebro",
+      "qid": "Q124310195"
+    },
+    {
+      "title": "Alleluja. Tulerunt Dominum",
+      "qid": "Q136996530"
+    },
+    {
+      "title": "Alma Redemptoris Mater (PdPWV Mot185)",
+      "qid": "Q136996578"
+    },
+    {
+      "title": "Alma Redemptoris Mater (PdPWV Mot286)",
+      "qid": "Q136996641"
+    },
+    {
+      "title": "Alma Redemptoris Mater (PdPWV Mot311)",
+      "qid": "Q136996670"
+    },
+    {
+      "title": "Angelus Domini (PdPWV Mot096)",
+      "qid": "Q136996744"
+    },
+    {
+      "title": "Apparuit caro",
+      "qid": "Q136996777"
+    },
+    {
+      "title": "Apparuit gratia",
+      "qid": "Q136996804"
+    },
+    {
+      "title": "Ardens est",
+      "qid": "Q136997725"
+    },
+    {
+      "title": "Ascendens Christus",
+      "qid": "Q136998258"
+    },
+    {
+      "title": "Ascendo ad Patrem",
+      "qid": "Q136998912"
+    },
+    {
+      "title": "Asperges me",
+      "qid": "Q137000028"
+    },
+    {
+      "title": "Ave Maria (PdPWV Mot093)",
+      "qid": "Q137002273",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/palestrina_ave_maria_(paribus_vocibus_i)_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ave Regina coelorum (PdPWV Mot122)",
+      "qid": "Q137005494"
+    },
+    {
+      "title": "Ave Regina coelorum (PdPWV Mot169)",
+      "qid": "Q137005991"
+    },
+    {
+      "title": "Ave Trinitatis sacrarium",
+      "qid": "Q137006018"
+    },
+    {
+      "title": "Ave mundi spes",
+      "qid": "Q137004653"
+    },
+    {
+      "title": "Beata Barbara",
+      "qid": "Q137006028"
+    },
+    {
+      "title": "Beata es (PdPWV Dub012)",
+      "qid": "Q137007658"
+    },
+    {
+      "title": "Beata es (PdPWV Mot284)",
+      "qid": "Q137008461"
+    },
+    {
+      "title": "Beatae Mariae Magdalenae",
+      "qid": "Q137006830"
+    },
+    {
+      "title": "Beati omnes",
+      "qid": "Q137015809"
+    },
+    {
+      "title": "Beatus Laurentius (PdPWV Mot018)",
+      "qid": "Q137017777"
+    },
+    {
+      "title": "Beatus Laurentius (PdPWV Mot049)",
+      "qid": "Q137020429"
+    },
+    {
+      "title": "Beatus vir qui suffert",
+      "qid": "Q137022854"
+    },
+    {
+      "title": "Benedicta sit",
+      "qid": "Q137023915"
+    },
+    {
+      "title": "Canite tuba",
+      "qid": "Q137027526"
+    },
+    {
+      "title": "Cantabo Domino",
+      "qid": "Q137033903"
+    },
+    {
+      "title": "Cantantibus organis",
+      "qid": "Q137033863"
+    },
+    {
+      "title": "Caput eius aurum (PdPWV Mot144)",
+      "qid": "Q137037740"
+    },
+    {
+      "title": "Caro mea",
+      "qid": "Q137040850"
+    },
+    {
+      "title": "Caro mea (PdPWV Dub013)",
+      "qid": "Q137040961"
+    },
+    {
+      "title": "Fratres ego enim accepi",
+      "qid": "Q124310060"
+    },
+    {
+      "title": "Missa Aeterna Christi munera",
+      "qid": "Q124309967",
+      "key": "F major",
+      "instruments": [
+        "SOPRANO",
+        "ALTO",
+        "TENOR",
+        "TENOR 1",
+        "TENOR 2",
+        "BASS"
+      ],
+      "year_composed": 1590,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/palestrina_missa_aeterna_christi_munera_1_(c)cipoo.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/palestrina_missa_aeterna_christi_munera_2_(c)cipoo.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/palestrina_missa_aeterna_christi_munera_4_(c)cipoo.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=palestrina_kyrie_missa_aeterna_christi_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Missa Hodie Christus natus est",
+      "qid": "Q124316823",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/palestrina_hodie_christus_natus_est_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Missa ad fugam",
+      "qid": "Q124310249"
+    },
+    {
+      "title": "Missa pro defunctis",
+      "qid": "Q124310282"
+    },
+    {
+      "title": "Palestrina - principles of music",
+      "qid": "Q2047753"
+    },
+    {
+      "title": "Pleni sunt coeli",
+      "qid": "Q124310170"
+    },
+    {
+      "title": "Popule meus",
+      "qid": "Q124310762"
+    },
+    {
+      "title": "Ricercari sopra li tuoni",
+      "qid": "Q124310868"
+    },
+    {
+      "title": "Sicut cervus",
+      "qid": "Q65080500",
+      "key": "G major",
+      "instruments": [
+        "Soprano",
+        "Alto",
+        "Tenor",
+        "Bass"
+      ],
+      "year_composed": 1584,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=palestrina_sicut_cervus_(mccloskey).mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=ancient/palestrina_sicut_cervus_(c)miles.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/palestrina_sicut_cervus_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tota Pulchra es amica mea",
+      "qid": "Q130356429"
+    },
+    {
+      "title": "Tu es Petrus",
+      "qid": "Q25215432",
+      "key": "F major",
+      "instruments": [
+        "CANTUS I",
+        "CANTUS II",
+        "ALTUS",
+        "TENOR",
+        "BARITONUS",
+        "BASSUS"
+      ]
+    },
+    {
+      "title": "Ut, re, mi, fa, sol, la",
+      "qid": "Q76833052"
+    },
+    {
+      "title": "Victory",
+      "qid": "Q116059796"
+    },
+    {
+      "title": "Vidi turbam magnam",
+      "qid": "Q124358851"
+    },
+    {
+      "title": "Kyrie",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=17/palestrina_missa_papae_marcelli_1_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gloria",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=17/palestrina_missa_papae_marcelli_2_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Credo",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=17/palestrina_missa_papae_marcelli_3_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sanctus - Hosanna",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=17/palestrina_missa_papae_marcelli_4_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Benedictus",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=17/palestrina_missa_papae_marcelli_5_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Agnus dei 1",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=17/palestrina_missa_papae_marcelli_6_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Agnus dei 2",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=17/palestrina_missa_papae_marcelli_7_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "6a. Agnus dei (1)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=palestrina_missa_papa_marcelli_6_(c)austin.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "6b. Agnus dei (2)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=palestrina_missa_papa_marcelli_7_(c)austin.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Missa Sanctorum Meritis for choir a capella",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=palestrina_meritis_missa_kyrie_(mccloskey).mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=palestrina_meritis_missa_gloria_(mccloskey).mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=palestrina_meritis_missa_credo_(mccloskey).mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=palestrina_meritis_missa_sanctus_(mccloskey).mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=palestrina_meritis_missa_agnus_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "4b. Benedictus",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/palestrina_missa_aeterna_christi_munera_4b_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "5. Agnus Dei I",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/palestrina_missa_aeterna_christi_munera_5_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "6. Agnus Dei II",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/palestrina_missa_aeterna_christi_munera_6_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gloria from the Missa Gabriel Archangeli",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=palestrina_gloria_II_missa_gabriel_arch.(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Crucifixus from Missa Assumpta est Maria *",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=4/palestrina_missa_assumpta_crucifixus_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Anima mea turbata est valde",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=palestrina_anima_mea_turbata_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Confitemini Domino ^",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/palestrina_confitemini_domino_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Crux Fidelis **",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=17/palestrina_choral_crux_fidelis_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Dies sanctificatus",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=palestrina_dies_sanctificatus_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gloriosi Principes ^",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/palestrina_gloriosi_principes_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "In diebus illis",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=palestrina_in_diebus_illis_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Innocentes ^",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/palestrina_innocentes_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Jesu dulcis memoria ^",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/palestrina_jesu_dulcis_memoria_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Jesu! Rex admirabilis �",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=12/palestrina_jesu_rex_admirabilis_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Jesu rex admirabilis",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/palestrina_jesu_rex_admirabilis_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "O admirabile commercium *",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=ancient/palestrina_o_admirabile_commercium_(c)miles.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "O beata et gloriosa Trinitas *",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=ancient/palestrina_o_beata_et_gloriosa_trinitas_(c)miles.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "O bone Jesu ��",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=17/palestrina_choral_o_bone_jesu_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pie Jesu Domine **",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=17/palestrina_choral_pie_jesu_domine_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sitivit anima mea",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=palestrina_sitivit_anima_mea_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sitivit anima mea ^",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/palestrina_sitivit_anima_mea_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Super flumina Babilonis ^",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/palestrina_super_flumina_babilonis_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tantum ergo ^",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/palestrina_tantum_ergo_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Veni sposa...",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=palestrina_veni_sposa_(mccloskey).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ahi, che quest'occhi miei",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/palestrina_ahi_che_quest'occhi_miei_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Da cos� dotta man",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/palestrina_da_cos�_dotta_man_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "I vaghi fiori",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/palestrina_i_vaghi_fiori_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pose un gran foco nel mio petto amore",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/palestrina_pose_un_gran_foco_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Vedrassi prima",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/palestrina_vedrassi_prima_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Canzona (Dies sanctificatus)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=12/palestrina_canzona_dies_sanctificatus_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Canzona (Haec Dies)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=12/palestrina_canzona_haec_dies_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Canzona (Surge Illuminare)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=17/palestrina_canzona_surge_illuminare_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

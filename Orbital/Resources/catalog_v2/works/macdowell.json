@@ -1,0 +1,45 @@
+{
+  "works": [
+    {
+      "title": "Piano Concerto No. 1",
+      "qid": "Q111911973"
+    },
+    {
+      "title": "Piano Concerto No. 2 in D minor",
+      "qid": "Q2314238"
+    },
+    {
+      "title": "4 Stücke, Op. 24",
+      "qid": "Q125356062"
+    },
+    {
+      "title": "Märzwind",
+      "qid": "Q136998951"
+    },
+    {
+      "title": "Zwölf Virtuosen-Etüden, Op. 46",
+      "qid": "Q136998213"
+    },
+    {
+      "title": "Woodland Sketches",
+      "qid": "Q107104272"
+    },
+    {
+      "title": "Indian Suite",
+      "qid": "Q2166643"
+    },
+    {
+      "title": "To a Wild Rose",
+      "qid": "Q25217393",
+      "key": "G major",
+      "instruments": [
+        "Violin"
+      ],
+      "year_composed": 1896
+    },
+    {
+      "title": "Woodland Sketches",
+      "qid": "Q8032883"
+    }
+  ]
+}

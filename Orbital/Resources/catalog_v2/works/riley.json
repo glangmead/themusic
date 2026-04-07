@@ -1,0 +1,49 @@
+{
+  "works": [
+    {
+      "title": "A Rainbow in Curved Air",
+      "qid": "Q2819874"
+    },
+    {
+      "title": "At the Royal Majestic",
+      "qid": "Q28401557"
+    },
+    {
+      "title": "Chanting the Light of Foresight",
+      "qid": "Q5072680"
+    },
+    {
+      "title": "Hochelaga, Land of Souls",
+      "qid": "Q39048922"
+    },
+    {
+      "title": "In C",
+      "qid": "Q1500990",
+      "key": "C major",
+      "instruments": [
+        "Flute"
+      ],
+      "year_composed": 1964
+    },
+    {
+      "title": "Keyboard Study No. 2",
+      "qid": "Q3195862"
+    },
+    {
+      "title": "Keyboard Study no. 1",
+      "qid": "Q3195860"
+    },
+    {
+      "title": "Lifespan",
+      "qid": "Q6545469"
+    },
+    {
+      "title": "No Man's Land",
+      "qid": "Q3342426"
+    },
+    {
+      "title": "Sun Rings",
+      "qid": "Q7638477"
+    }
+  ]
+}

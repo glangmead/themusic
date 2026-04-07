@@ -1,0 +1,805 @@
+{
+  "works": [
+    {
+      "title": "2 Mélodies, Op.46",
+      "qid": "Q125253307"
+    },
+    {
+      "title": "Clair de lune",
+      "qid": "Q730599"
+    },
+    {
+      "title": "Shylock Suite, Op. 57",
+      "qid": "Q105826038"
+    },
+    {
+      "title": "Romance",
+      "qid": "Q132355834",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-i/faure_romance_sans_paroles_a_(c)hamer.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "La bonne chanson",
+      "qid": "Q3206741"
+    },
+    {
+      "title": "Dolly",
+      "qid": "Q3033966",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/dolly_suite_3_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/dolly_suite_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/dolly_suite_3_(c)halstead.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Theme and Variations",
+      "qid": "Q3526245"
+    },
+    {
+      "title": "Pelléas et Mélisande",
+      "qid": "Q2705084"
+    },
+    {
+      "title": "Cello Sonata No. 1 (Fauré)",
+      "qid": "Q3490238"
+    },
+    {
+      "title": "Violin Sonata No. 2 (Fauré)",
+      "qid": "Q3490217"
+    },
+    {
+      "title": "Mirages",
+      "qid": "Q6872609"
+    },
+    {
+      "title": "L'horizon chimérique",
+      "qid": "Q6455946"
+    },
+    {
+      "title": "Piano Trio",
+      "qid": "Q3539360"
+    },
+    {
+      "title": "13 nocturnes",
+      "qid": "Q3342622"
+    },
+    {
+      "title": "2 Duets, Op.10",
+      "qid": "Q126110916"
+    },
+    {
+      "title": "A Sunday in the Country",
+      "qid": "Q1305215"
+    },
+    {
+      "title": "Ballade Op. 19",
+      "qid": "Q2881091"
+    },
+    {
+      "title": "Barcarolles",
+      "qid": "Q2884271",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/barcarolle_26_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/barcarolle_26_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/barcarolle_41_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/barcarolle_42_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/barcarolle_44_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/barcarolle_66_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/barcarolle_70_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/barcarolle_90_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/barcarolle_96_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/barcarolle_101_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/barcarolle_104_2_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/barcarolle_105_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/barcarolle_105b_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/barcarolle_116_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Berceuse, Op. 16",
+      "qid": "Q55605233",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/dolly_suite_1_(c)oguri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/dolly_suite_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/dolly_suite_1_(c)halstead.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Blodyn a daflwyd = Fleur jetée",
+      "qid": "Q78647707"
+    },
+    {
+      "title": "Cantique de Jean Racine",
+      "qid": "Q2653917",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=29/faure_cantique_jean_racine_(c)gray-capoverde.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cello Sonata No. 2 (Fauré)",
+      "qid": "Q3490240"
+    },
+    {
+      "title": "Chant funéraire",
+      "qid": "Q124744981"
+    },
+    {
+      "title": "Cinq mélodies \"de Venise\"",
+      "qid": "Q5121074",
+      "catalog_numbers": {
+        "Op": "58"
+      },
+      "key": "G♭ major",
+      "instruments": [
+        "Voix",
+        "Piano"
+      ]
+    },
+    {
+      "title": "Cân i'r Hydref",
+      "qid": "Q78647723"
+    },
+    {
+      "title": "Dear Mother",
+      "qid": "Q105480282"
+    },
+    {
+      "title": "Fantaisie",
+      "qid": "Q105825996"
+    },
+    {
+      "title": "Fantaisie in G for piano and orchestra",
+      "qid": "Q3066525"
+    },
+    {
+      "title": "Huit pièces brèves",
+      "qid": "Q3389559"
+    },
+    {
+      "title": "Impromptu No.6, Op.86",
+      "qid": "Q124767360",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/impromptu_1_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/impromptu_2_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/impromptu_3_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/impromptu_4_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/impromptu_5_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Impromptus (Fauré)",
+      "qid": "Q3149501"
+    },
+    {
+      "title": "Isabel",
+      "qid": "Q20890091"
+    },
+    {
+      "title": "Iâr fach yr haf a'r blodeuyn = Le papillon et la fleur",
+      "qid": "Q78648027"
+    },
+    {
+      "title": "Jewels",
+      "qid": "Q3178483"
+    },
+    {
+      "title": "La chanson d'Ève",
+      "qid": "Q6466034"
+    },
+    {
+      "title": "Le jardin clos",
+      "qid": "Q6508041"
+    },
+    {
+      "title": "Lumiere! The Adventure Continues",
+      "qid": "Q133827024"
+    },
+    {
+      "title": "Madrigal (Fauré)",
+      "qid": "Q55621700"
+    },
+    {
+      "title": "Madrigal : Op. 57 rhif. 2",
+      "qid": "Q78526982"
+    },
+    {
+      "title": "Mai",
+      "qid": "Q78648116"
+    },
+    {
+      "title": "Masques et bergamasques",
+      "qid": "Q3297391"
+    },
+    {
+      "title": "Messe des pêcheurs de Villerville",
+      "qid": "Q3307015"
+    },
+    {
+      "title": "Mewn gweddi = En prière",
+      "qid": "Q78527002"
+    },
+    {
+      "title": "Nell",
+      "qid": "Q78648175"
+    },
+    {
+      "title": "Nine Preludes",
+      "qid": "Q3408998"
+    },
+    {
+      "title": "Nocturne No. 3",
+      "qid": "Q24894331",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/nocturne_1_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/nocturne_2_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/nocturne_3_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/nocturne_4_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/nocturne_5_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/nocturne_6_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/nocturne_7_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/nocturne_8_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/nocturne_9_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/nocturne_10_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/nocturne_11_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/nocturne_12_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/nocturne_13_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Paperhouse",
+      "qid": "Q134980596"
+    },
+    {
+      "title": "Papillon",
+      "qid": "Q124767578"
+    },
+    {
+      "title": "Pavane, Op. 50",
+      "qid": "Q923138",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=2/faure_pavane_50_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pelleas and Melisande",
+      "qid": "Q91805490"
+    },
+    {
+      "title": "Piano Quartet No. 1",
+      "qid": "Q3413736"
+    },
+    {
+      "title": "Piano Quartet No. 2",
+      "qid": "Q3413739"
+    },
+    {
+      "title": "Piano Quintet No. 1",
+      "qid": "Q3414615"
+    },
+    {
+      "title": "Piano Quintet No. 2",
+      "qid": "Q3414621"
+    },
+    {
+      "title": "Pie Jesu = Ddwyfol Iesu : Requiem",
+      "qid": "Q78527110"
+    },
+    {
+      "title": "Poème d'un jour",
+      "qid": "Q24833344"
+    },
+    {
+      "title": "Prométhée",
+      "qid": "Q1091750"
+    },
+    {
+      "title": "Pénélope",
+      "qid": "Q2259941"
+    },
+    {
+      "title": "Requiem",
+      "qid": "Q1811459",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/requiem_1_(c)siu.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/requiem_2_(c)siu.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/requiem_3_(c)siu.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/requiem_4_(c)siu.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/requiem_5_(c)siu.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/requiem_6_(c)siu.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/requiem_7_(c)siu.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Romances sans paroles",
+      "qid": "Q120669081"
+    },
+    {
+      "title": "Sicilienne",
+      "qid": "Q7507514",
+      "key": "B♭ major",
+      "instruments": [
+        "Clarinette en Si♭",
+        "Trompette",
+        "Flûte",
+        "Clarinette",
+        "Alto",
+        "Ténor",
+        "Baryton",
+        "Trombone",
+        "Trombone Bb",
+        "Guitare",
+        "Guitare acoustique",
+        "Basse",
+        "Batterie"
+      ],
+      "year_composed": 1898
+    },
+    {
+      "title": "String Quartet",
+      "qid": "Q3413749"
+    },
+    {
+      "title": "Sérénade, Op. 98",
+      "qid": "Q131376059"
+    },
+    {
+      "title": "Thérèse",
+      "qid": "Q2298877"
+    },
+    {
+      "title": "Tous les maux d'amour",
+      "qid": "Q16035400"
+    },
+    {
+      "title": "Trois mélodies, Op.7",
+      "qid": "Q7845073"
+    },
+    {
+      "title": "Valses-caprices",
+      "qid": "Q3554153",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/valse_caprice_1_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/valse_caprice_2_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/valse_caprice_3_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/valse_caprice_4_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Violin Concerto in D minor",
+      "qid": "Q105816289"
+    },
+    {
+      "title": "Violin Sonata No. 1",
+      "qid": "Q3490210"
+    },
+    {
+      "title": "piano music of Gabriel Fauré",
+      "qid": "Q3328751"
+    },
+    {
+      "title": "Élégie",
+      "qid": "Q2746359"
+    },
+    {
+      "title": "Pi�ces br�ves pour piano Op. 84",
+      "catalog_numbers": {
+        "Op": "84"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=27f/faure_pieces_breves_84_3_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27f/faure_pieces_breves_84_5_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Preludes Op. 103 [9] (1910)",
+      "catalog_numbers": {
+        "Op": "103"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/prelude_103_1_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/prelude_103_2_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/prelude_103_3_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/prelude_103_4_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/prelude_103_5_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/prelude_103_6_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/prelude_103_7_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/prelude_103_8_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/prelude_103_9_(c)dery.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Th�me et Variations Op. 73 (1895)",
+      "catalog_numbers": {
+        "Op": "73"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/theme_et_variationen_73_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mi-a-ou",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/dolly_suite_2_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kitty Valse",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/dolly_suite_4_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tendresse",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/dolly_suite_5_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Le Pas Espagnole",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=faure/dolly_suite_6_(c)oguri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ave verum",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=21/faure_ave_verum_(c)cipoo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata [No. 1] for violin and piano in A major, Op. 13",
+      "catalog_numbers": {
+        "Op": "13"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/faure_sonata_for_violin_13_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Deux m�lodies for vocal solo and piano, Op. 2",
+      "catalog_numbers": {
+        "Op": "2"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=27f/faure_deux_melodies_2_1_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27f/faure_deux_melodies_2_2_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Deux m�lodies for vocal solo and piano, Op. 4",
+      "catalog_numbers": {
+        "Op": "4"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=27f/faure_deux_melodies_4_1_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27f/faure_deux_melodies_4_2_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Trois m�lodies for vocal solo and piano Op. 6",
+      "catalog_numbers": {
+        "Op": "6"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=27f/faure_trois_melodies_6_1_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27f/faure_trois_melodies_6_2_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27f/faure_trois_melodies_6_3_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Trois m�lodies for vocal solo and piano Op. 7 (1878)",
+      "catalog_numbers": {
+        "Op": "7"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=27f/faure_trois_melodies_7_1_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27f/faure_trois_melodies_7_2_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27f/faure_trois_melodies_7_3_(c)icking-archive.mid"
+          ]
+        },
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/FaureG/O7/apres/apres.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Trois m�lodies Op. 18",
+      "catalog_numbers": {
+        "Op": "18"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=27f/faure_trois_melodies_18_1_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27f/faure_trois_melodies_18_2_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27f/faure_trois_melodies_18_3_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Trois m�lodies Op. 23",
+      "catalog_numbers": {
+        "Op": "23"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=27f/faure_trois_melodies_23_1_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27f/faure_trois_melodies_23_2_(c)icking-archive.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=27f/faure_trois_melodies_23_3_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Quatre m�lodies Op. 39",
+      "catalog_numbers": {
+        "Op": "39"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=27f/faure_trois_melodies_39_2_(c)icking-archive.mid"
+          ]
+        },
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/FaureG/O39/aurore/aurore.mid",
+            "https://www.mutopiaproject.org/ftp/FaureG/O39/fleur_jetee/fleur_jetee.mid",
+            "https://www.mutopiaproject.org/ftp/FaureG/O39/le_pays_des_reves/le_pays_des_reves.mid",
+            "https://www.mutopiaproject.org/ftp/FaureG/O39/les_roses_d_ispahan/les_roses_d_ispahan.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Deux m�lodies Op. 46",
+      "catalog_numbers": {
+        "Op": "46"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=27f/faure_trois_melodies_46_2_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lydia arranged for choir SATB, Daniel Taupin in memoriam, by Christian Mondrup",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=2/faure_lydia_(c)icking-archive.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Les Djinns",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/FaureG/O12/djinns/djinns.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Les matelots",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/FaureG/O2/matelots/matelots.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pavane",
+      "catalog_numbers": {
+        "Op": "50"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution-ShareAlike 4.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/FaureG/O50/GF_pavane50/GF_pavane50-lys/GF_pavane50.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}

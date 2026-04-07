@@ -1,0 +1,67 @@
+{
+  "works": [
+    {
+      "title": "Füllest wieder Busch und Thal",
+      "qid": "Q114324221"
+    },
+    {
+      "title": "Der Fischer",
+      "qid": "Q115168707"
+    },
+    {
+      "title": "Das Jahr",
+      "qid": "Q56304566"
+    },
+    {
+      "title": "Piano Trio",
+      "qid": "Q48969126"
+    },
+    {
+      "title": "6 Lieder, Op. 7",
+      "qid": "Q111659774",
+      "key": "F major",
+      "instruments": [
+        "Soprano",
+        "Alto",
+        "Tenor",
+        "Bass"
+      ]
+    },
+    {
+      "title": "6 Lieder, Op. 9",
+      "qid": "Q111659772"
+    },
+    {
+      "title": "Easter Sonata",
+      "qid": "Q30594711"
+    },
+    {
+      "title": "Frühzeitiger Frühling",
+      "qid": "Q114135263"
+    },
+    {
+      "title": "Fünf Lieder, Op. 10",
+      "qid": "Q111659779"
+    },
+    {
+      "title": "Il Saltarello Romano",
+      "qid": "Q15819932"
+    },
+    {
+      "title": "Overture in C",
+      "qid": "Q138317231"
+    },
+    {
+      "title": "Sechs Lieder, Op.1",
+      "qid": "Q110527358"
+    },
+    {
+      "title": "Vas Lieder für das Pianoforte (Fanny Mendelssohn)",
+      "qid": "Q56408585"
+    },
+    {
+      "title": "Women Composers",
+      "qid": "Q56757637"
+    }
+  ]
+}

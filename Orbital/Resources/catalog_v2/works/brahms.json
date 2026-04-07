@@ -1,0 +1,1524 @@
+{
+  "works": [
+    {
+      "title": "In der Fremde",
+      "qid": "Q108874748"
+    },
+    {
+      "title": "Mondnacht",
+      "qid": "Q108846765",
+      "catalog_numbers": {
+        "WoO": "21"
+      }
+    },
+    {
+      "title": "Piano Sonata No. 1",
+      "qid": "Q3043401",
+      "key": "C major",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=op01-2.krn&l=users/craig/classical/brahms/op01&format=midi"
+          ]
+        },
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/piano_sonata_1_(hisamori).mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/piano_sonata_2_(hisamori).mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/piano_sonata_3_(hisamori).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Variations on a Theme by Robert Schumann",
+      "qid": "Q18413493",
+      "catalog_numbers": {
+        "Op": "9"
+      },
+      "key": "F-sharp minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/variations_9_(hisamori).mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/variations_23_(pepperdine).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Geistliches Lied",
+      "qid": "Q108293451",
+      "catalog_numbers": {
+        "Op": "30"
+      },
+      "key": "E♭ major",
+      "instruments": [
+        "S",
+        "A",
+        "T",
+        "B",
+        "Orgue"
+      ],
+      "year_composed": 1856
+    },
+    {
+      "title": "Variations on an Original Theme, Op. 21 No. 1",
+      "qid": "Q136312254",
+      "catalog_numbers": {
+        "Op": "21"
+      },
+      "key": "D minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/variations_21_1_(hisamori).mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/variations_21_2_(hisamori).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Begräbnisgesang",
+      "qid": "Q123382587",
+      "catalog_numbers": {
+        "Op": "13"
+      }
+    },
+    {
+      "title": "Abendständchen",
+      "qid": "Q106039802"
+    },
+    {
+      "title": "String Sextet No. 1",
+      "qid": "Q2482582",
+      "key": "B-flat major"
+    },
+    {
+      "title": "Gesänge, Chor, op. 42",
+      "qid": "Q106039991",
+      "catalog_numbers": {
+        "Op": "42"
+      }
+    },
+    {
+      "title": "Piano Quartet No. 2",
+      "qid": "Q691140",
+      "key": "A major"
+    },
+    {
+      "title": "Variations and Fugue on a Theme by Handel",
+      "qid": "Q3554787",
+      "key": "B-flat major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/variations_24_(hisamori).mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/variations_24_(wolfe).mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms-karageanes_variations_handel_24_(c)karageanes.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Variations on a Theme of Paganini",
+      "qid": "Q1479539",
+      "key": "A minor"
+    },
+    {
+      "title": "Rinaldo",
+      "qid": "Q7334559"
+    },
+    {
+      "title": "Sixteen Waltzes, Op. 39",
+      "qid": "Q3477975",
+      "catalog_numbers": {
+        "Op": "39"
+      },
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=op39-01.krn&l=users/craig/classical/brahms/op39&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=op39-02-chord.krn&l=users/craig/classical/brahms/op39&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=op39-02.krn&l=users/craig/classical/brahms/op39&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=op39-08-chord.krn&l=users/craig/classical/brahms/op39&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=op39-08.krn&l=users/craig/classical/brahms/op39&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=op39-09.krn&l=users/craig/classical/brahms/op39&format=midi"
+          ]
+        },
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/waltzes_39_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/waltzes_39_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/waltzes_39_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/waltzes_39_4_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/waltzes_39_5_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/waltzes_39_6_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/waltzes_39_7_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/waltzes_39_8_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/waltzes_39_9_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/waltzes_39_10_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/waltzes_39_11_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/waltzes_39_12_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/waltzes_39_13_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/waltzes_39_14_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/waltzes_39_15_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/waltzes_39_16_(c)yogore.mid"
+          ]
+        },
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/BrahmsJ/O39/waltz-op39-10/waltz-op39-10.mid",
+            "https://www.mutopiaproject.org/ftp/BrahmsJ/O39/waltz-op39-15/waltz-op39-15.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Horn Trio",
+      "qid": "Q2613456",
+      "key": "E-flat major"
+    },
+    {
+      "title": "A German Requiem",
+      "qid": "Q756299",
+      "catalog_numbers": {
+        "Op": "45"
+      },
+      "key": "B♭ major",
+      "instruments": [
+        "Soprano",
+        "Alto",
+        "Tenor",
+        "Bass",
+        "Flute",
+        "Oboe",
+        "B♭ Clarinet",
+        "Bassoon",
+        "Horn in B♭",
+        "Horn in F",
+        "B♭ Trumpet",
+        "Trombone",
+        "Tuba",
+        "Timpani",
+        "Violins I",
+        "Violins II",
+        "Violas",
+        "Violoncellos",
+        "Contrabasses"
+      ],
+      "year_composed": 1868,
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/ein_deutsch_requeim_45_1_(c)petri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/ein_deutsch_requeim_45_2_(c)petri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/ein_deutsch_requeim_45_3_(c)petri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/ein_deutsch_requeim_45_4_(c)petri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/ein_deutsch_requeim_45_5_(c)petri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/ein_deutsch_requeim_45_6_(c)petri.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/ein_deutsch_requeim_45_7_(c)petri.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Wiegenlied, Op. 49, No. 4",
+      "qid": "Q1557135",
+      "catalog_numbers": {
+        "Op": "49"
+      },
+      "instruments": [
+        "Voice",
+        "Piano"
+      ],
+      "year_composed": 1868,
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/BrahmsJ/O49/Wiegenlied/Wiegenlied-lys/Wiegenlied.mid",
+            "https://www.mutopiaproject.org/ftp/BrahmsJ/O49/Wiegenlied/Wiegenlied-lys/Wiegenlied_piano_SATB.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Alto Rhapsody",
+      "qid": "Q432984"
+    },
+    {
+      "title": "Schicksalslied",
+      "qid": "Q1041951"
+    },
+    {
+      "title": "Variations on a Theme by Haydn, Op. 56a",
+      "qid": "Q1358378",
+      "catalog_numbers": {
+        "Op": "56a"
+      },
+      "key": "B-flat major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/variations_haydn_56a_(bakels).mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/variations_haydn_56b_(bakels).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fünf Ophelia-Lieder",
+      "qid": "Q110527286"
+    },
+    {
+      "title": "String Quartet No. 3",
+      "qid": "Q900170",
+      "key": "B-flat major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/brahms_string_quartet_67_(c)harfesoft.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/brahms_quintet_for_clarinet_string_quartet_115_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Symphony No. 2",
+      "qid": "Q210469",
+      "key": "D major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/symphony_2_1_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/symphony_2_2_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/symphony_2_3_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/symphony_2_4_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/symphony_3_1_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/symphony_3_2_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/symphony_3_3_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/symphony_3_4_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/symphony_1_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/symphony_1_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/symphony_1_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/symphony_1_4_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/symphony_2_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/symphony_2_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/symphony_2_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/symphony_2_4_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/symphony_3_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/symphony_3_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/symphony_3_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/symphony_3_4_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/symphony_4_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/symphony_4_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/symphony_4_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/symphony_4_4_(c)yogore.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Violin Concerto",
+      "qid": "Q1156068",
+      "key": "D major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/violin_concert_1_(c)unknown.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Feldeinsamkeit",
+      "qid": "Q30931316"
+    },
+    {
+      "title": "Nänie",
+      "qid": "Q442416"
+    },
+    {
+      "title": "Tragic Overture",
+      "qid": "Q1366627",
+      "key": "D minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/ouverture_81_(c)lucarelli.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Academic Festival Overture",
+      "qid": "Q414694",
+      "key": "C minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/ouverture_80_(c)lucarelli.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gesang der Parzen",
+      "qid": "Q5553557"
+    },
+    {
+      "title": "Piano Trio No. 2",
+      "qid": "Q13479732",
+      "key": "C major"
+    },
+    {
+      "title": "Two Songs for Alto Voice, Viola and Piano, op. 91",
+      "qid": "Q5813732",
+      "catalog_numbers": {
+        "Op": "91"
+      }
+    },
+    {
+      "title": "Violin Sonata No. 2",
+      "qid": "Q3490207",
+      "key": "A major"
+    },
+    {
+      "title": "Fest- und Gedenksprüche",
+      "qid": "Q30643101"
+    },
+    {
+      "title": "Violin Sonata No. 3",
+      "qid": "Q3490213",
+      "key": "D minor"
+    },
+    {
+      "title": "String Quintet No. 2",
+      "qid": "Q3414637",
+      "key": "G major"
+    },
+    {
+      "title": "Clarinet Quintet",
+      "qid": "Q3098064",
+      "key": "B minor"
+    },
+    {
+      "title": "Three Intermezzi for piano, Op. 117",
+      "qid": "Q1257047",
+      "catalog_numbers": {
+        "Op": "117"
+      }
+    },
+    {
+      "title": "Clarinet Sonatas",
+      "qid": "Q3490257",
+      "key": "F minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/brahms_clarinet_sonata_120_1_(c)harfesoft.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/brahms_clarinet_sonata_120_2_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata for Clarinet and Piano no. 2 in E-flat major",
+      "qid": "Q125516437",
+      "key": "E-flat major"
+    },
+    {
+      "title": "Vier ernste Gesänge",
+      "qid": "Q2523482"
+    },
+    {
+      "title": "Emma",
+      "qid": "Q926070"
+    },
+    {
+      "title": "Golden Boy",
+      "qid": "Q1381081"
+    },
+    {
+      "title": "Puertos de ensueño",
+      "qid": "Q6092572"
+    },
+    {
+      "title": "Song of Love",
+      "qid": "Q1095259"
+    },
+    {
+      "title": "Twice Upon a Time",
+      "qid": "Q3414488"
+    },
+    {
+      "title": "The Lovers",
+      "qid": "Q1214543"
+    },
+    {
+      "title": "The L-Shaped Room",
+      "qid": "Q1171366"
+    },
+    {
+      "title": "Man with the Transplanted Brain",
+      "qid": "Q15990789"
+    },
+    {
+      "title": "Partita na instrument drewniany",
+      "qid": "Q11813099"
+    },
+    {
+      "title": "Death in a French Garden",
+      "qid": "Q1405431"
+    },
+    {
+      "title": "Fünf Lieder, Op. 105",
+      "qid": "Q5769416",
+      "catalog_numbers": {
+        "Op": "105"
+      },
+      "key": "E♭ major",
+      "instruments": [
+        "Voice",
+        "Flute",
+        "B♭ Clarinet",
+        "Alto Saxophone",
+        "Horn in F",
+        "Piano"
+      ]
+    },
+    {
+      "title": "Serch-gân ofer = Vergebliches Ständchen",
+      "qid": "Q79266757"
+    },
+    {
+      "title": "Mae nodau hen alawon = Wie Melodien zieht es mir",
+      "qid": "Q79267487"
+    },
+    {
+      "title": "Rhodianna wnaethom = Wir wandelten",
+      "qid": "Q79266750"
+    },
+    {
+      "title": "O liebliche Wangen = O ruddiau serchusol",
+      "qid": "Q78648194"
+    },
+    {
+      "title": "O wüsst' ich doch den Weg zurück = O na chawn hyd i'r ffordd yn ôl",
+      "qid": "Q78648204"
+    },
+    {
+      "title": "Feldeinsamkeit = Unigedd y maes",
+      "qid": "Q78526823"
+    },
+    {
+      "title": "Stein",
+      "qid": "Q2339492"
+    },
+    {
+      "title": "So willst du des Armen = A fynni di dosturio",
+      "qid": "Q78648307"
+    },
+    {
+      "title": "The Fatalist",
+      "qid": "Q10339136"
+    },
+    {
+      "title": "Geliebte Clara",
+      "qid": "Q1499682"
+    },
+    {
+      "title": "Johannes Brahms Cycle",
+      "qid": "Q86525036"
+    },
+    {
+      "title": "Conduct! Every Move Counts!",
+      "qid": "Q21712236"
+    },
+    {
+      "title": "6 Gesänge, op. 3",
+      "qid": "Q111474299",
+      "catalog_numbers": {
+        "Op": "3"
+      }
+    },
+    {
+      "title": "Ballades, Op. 10",
+      "qid": "Q2881134",
+      "catalog_numbers": {
+        "Op": "10"
+      },
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=ballad10-1.krn&l=users/craig/classical/brahms/op10&format=midi"
+          ]
+        },
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/ballade_10_1_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/ballade_10_2_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/ballade_10_3_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/ballade_10_4_(c)dery.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/brahms/66753a_ballade_10_2_d_major_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Brahms/Handel",
+      "qid": "Q16205022"
+    },
+    {
+      "title": "Brahms–Schoenberg Quartet",
+      "qid": "Q4955629"
+    },
+    {
+      "title": "Cello Sonata No. 1",
+      "qid": "Q3132924",
+      "key": "E minor"
+    },
+    {
+      "title": "Cello Sonata No. 2",
+      "qid": "Q3490239",
+      "key": "F major"
+    },
+    {
+      "title": "Clarinet Trio",
+      "qid": "Q3539354",
+      "key": "E major",
+      "instruments": [
+        "B♭ Clarinet",
+        "Violin",
+        "Piano"
+      ]
+    },
+    {
+      "title": "Die Blümelein sie schlafen",
+      "qid": "Q52458002"
+    },
+    {
+      "title": "Die Mainacht",
+      "qid": "Q30931309"
+    },
+    {
+      "title": "Double Concerto",
+      "qid": "Q848915",
+      "key": "A minor"
+    },
+    {
+      "title": "Eight Pieces for piano",
+      "qid": "Q3197768"
+    },
+    {
+      "title": "Eleven Chorale Preludes",
+      "qid": "Q5359758",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/brahms_chorales_2_(c)diodati.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/brahms_chorales_5_(c)diodati.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/brahms_chorales_6_(c)diodati.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/brahms_chorales_7_(c)diodati.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/brahms_chorales_8_(c)diodati.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/brahms_chorales_9_(c)diodati.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "F-A-E Sonata",
+      "qid": "Q2270897",
+      "key": "A minor"
+    },
+    {
+      "title": "Fantasies, Op. 116",
+      "qid": "Q105200121",
+      "catalog_numbers": {
+        "Op": "116"
+      }
+    },
+    {
+      "title": "Four Pieces for Piano, Op. 119",
+      "qid": "Q3069011",
+      "catalog_numbers": {
+        "Op": "119"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/klavierstucke_119_1_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/klavierstucke_119_2_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/klavierstucke_119_3_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/klavierstucke_119_4_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fünf Gesänge, Op.104",
+      "qid": "Q5511742",
+      "catalog_numbers": {
+        "Op": "104"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution 3.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/BrahmsJ/O104/nachtwache1/nachtwache1.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Hungarian Dance No. 5",
+      "qid": "Q66686679",
+      "key": "G Minor",
+      "instruments": [
+        "Piano"
+      ]
+    },
+    {
+      "title": "Hungarian Dance No. 6",
+      "qid": "Q71405773",
+      "key": "D-flat major"
+    },
+    {
+      "title": "Hungarian Dances",
+      "qid": "Q1065126",
+      "catalog_numbers": {
+        "WoO": "1"
+      },
+      "key": "B♭ major",
+      "instruments": [
+        "Violin",
+        "Piano"
+      ],
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/hungarian_dance_1_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/hungarian_dance_2_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/hungarian_dance_3_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/hungarian_dance_4_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/hungarian_dance_5_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/hungarian_dance_6_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/hungarian_dance_7_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/hungarian_dance_8_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/hungarian_dance_9_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/hungarian_dance_10_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/hungarian_dance_11_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/hungarian_dance_12_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/hungarian_dance_13_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/hungarian_dance_14_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/hungarian_dance_15_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/hungarian_dance_16_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/hungarian_dance_17_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/hungarian_dance_18_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/hungarian_dance_19_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/hungarian_dance_20_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/hungarian_dance_21_(c)yogore.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/brahms/5814d_hungarian_dance_5_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/brahms/65651a_hungarian_dance_5_[ii]_(nc)smythe.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/brahms/6839w_hungarian_dance_9_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "In the Blue",
+      "qid": "Q130753923"
+    },
+    {
+      "title": "Liebeslieder Waltzes",
+      "qid": "Q42192261"
+    },
+    {
+      "title": "Liebeslieder Walzer",
+      "qid": "Q16960645"
+    },
+    {
+      "title": "Liebeslieder Walzer, Op. 52",
+      "qid": "Q1693027",
+      "catalog_numbers": {
+        "Op": "52"
+      }
+    },
+    {
+      "title": "Neue Liebeslieder",
+      "qid": "Q17021219"
+    },
+    {
+      "title": "Piano Concerto No. 1",
+      "qid": "Q162876",
+      "key": "D minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/concerto_15_1_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/concerto_15_2_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/concerto_15_3_(c)lucarelli.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/piano_concerto_1_piano_4-hands_1_(pepperdine).mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/piano_concerto_1_piano_4-hands_2_(pepperdine).mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/piano_concerto_1_piano_4-hands_3_(pepperdine).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Piano Concerto No. 2",
+      "qid": "Q210208",
+      "key": "B-flat major"
+    },
+    {
+      "title": "Piano Quartet No. 1",
+      "qid": "Q3132812",
+      "key": "G minor"
+    },
+    {
+      "title": "Piano Quartet No. 3",
+      "qid": "Q3413740",
+      "key": "C minor"
+    },
+    {
+      "title": "Piano Quintet",
+      "qid": "Q2719356",
+      "key": "F minor"
+    },
+    {
+      "title": "Piano Sonata No. 2",
+      "qid": "Q3068533",
+      "key": "F-sharp minor"
+    },
+    {
+      "title": "Piano Sonata No. 3",
+      "qid": "Q1538097",
+      "key": "F minor"
+    },
+    {
+      "title": "Piano Trio No. 1",
+      "qid": "Q3132817",
+      "key": "B major"
+    },
+    {
+      "title": "Piano Trio No. 3",
+      "qid": "Q3539367",
+      "key": "C minor"
+    },
+    {
+      "title": "Piano Trio No. 4",
+      "qid": "Q7190188",
+      "key": "A major"
+    },
+    {
+      "title": "Rhapsodies, Op. 79",
+      "qid": "Q2917435",
+      "catalog_numbers": {
+        "Op": "79"
+      },
+      "key": "G minor",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=16/brahms_rhapsody_79_1_(c)lubetsky.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Scherzo Op. 4",
+      "qid": "Q2406618",
+      "catalog_numbers": {
+        "Op": "4"
+      },
+      "key": "E-flat minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=scherzo.krn&l=users/craig/classical/brahms/op04&format=midi"
+          ]
+        },
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/scherzo_4_(c)hisamori.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Serenade No. 1",
+      "qid": "Q18195760",
+      "key": "D major"
+    },
+    {
+      "title": "Serenade nr. 2",
+      "qid": "Q16830251",
+      "key": "A major"
+    },
+    {
+      "title": "Serenades",
+      "qid": "Q163460",
+      "key": "D major"
+    },
+    {
+      "title": "Six Pieces for Piano, Op. 118",
+      "qid": "Q3485664",
+      "catalog_numbers": {
+        "Op": "118"
+      },
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/BrahmsJ/O118/intermezzo/intermezzo.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata for Clarinet and Piano no. 1 in F minor",
+      "qid": "Q125516421"
+    },
+    {
+      "title": "String Quartet No. 1",
+      "qid": "Q51572026",
+      "key": "C minor"
+    },
+    {
+      "title": "String Quartet No. 2",
+      "qid": "Q3413833",
+      "key": "A minor"
+    },
+    {
+      "title": "String Quintet No. 1",
+      "qid": "Q3414636",
+      "key": "F major"
+    },
+    {
+      "title": "String Sextet No. 2",
+      "qid": "Q2482539",
+      "key": "G major"
+    },
+    {
+      "title": "Symfonie",
+      "qid": "Q57933916"
+    },
+    {
+      "title": "Symphony No. 1",
+      "qid": "Q163512",
+      "key": "C minor"
+    },
+    {
+      "title": "Symphony No. 3",
+      "qid": "Q223502",
+      "key": "F major"
+    },
+    {
+      "title": "Symphony No. 4",
+      "qid": "Q231144",
+      "key": "E minor"
+    },
+    {
+      "title": "Triumphlied",
+      "qid": "Q1481210"
+    },
+    {
+      "title": "Two Motets, Op. 74",
+      "qid": "Q18180909",
+      "catalog_numbers": {
+        "Op": "74"
+      }
+    },
+    {
+      "title": "Two String Quartets, Op. 51",
+      "qid": "Q900725",
+      "catalog_numbers": {
+        "Op": "51"
+      },
+      "key": "C minor",
+      "sources": [
+        {
+          "origin": "kern.ccarh.org",
+          "license": "CC BY-NC-SA 4.0",
+          "license_url": "https://wiki.ccarh.org/wiki/MuseData#Copyright_and_licensing",
+          "midi_urls": [
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=brahms51-1-2.krn&l=users/craig/classical/brahms/op51&format=midi",
+            "https://kern.humdrum.org/cgi-bin/ksdata?file=brahms51-1-3.krn&l=users/craig/classical/brahms/op51&format=midi"
+          ]
+        },
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/brahms_string_quartet_51_1_(c)harfesoft.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/brahms_string_quartet_51_2_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Variations on a Theme by Haydn, Op. 56b",
+      "qid": "Q42197152",
+      "catalog_numbers": {
+        "Op": "56b"
+      },
+      "key": "B-flat major"
+    },
+    {
+      "title": "Vier Gesänge, op. 43",
+      "qid": "Q110044187",
+      "catalog_numbers": {
+        "Op": "43"
+      }
+    },
+    {
+      "title": "Violin Sonata No. 1 in G Major, Op. 78",
+      "qid": "Q3490205",
+      "catalog_numbers": {
+        "Op": "78"
+      },
+      "key": "G major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/brahms_violin_sonata_78_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Von ewiger Liebe",
+      "qid": "Q11550399"
+    },
+    {
+      "title": "Zigeunerlieder",
+      "qid": "Q199399"
+    },
+    {
+      "title": "Thema. Chorale St. Antoni. Andante",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/variations_haydn_56a_1t_(bakels).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Variation I. Poco pi� animato",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/variations_haydn_56a_1_(bakels).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Variation II. Pi� vivace",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/variations_haydn_56a_2_(bakels).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Variation III. Con moto",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/variations_haydn_56a_3_(bakels).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Variation IV. Andante con moto",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/variations_haydn_56a_4_(bakels).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Variation V. Vivace",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/variations_haydn_56a_5_(bakels).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Variation VI. Vivace",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/variations_haydn_56a_6_(bakels).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Variation VII. Grazioso",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/variations_haydn_56a_7_(bakels).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Variation VIII. Presto non troppo",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/variations_haydn_56a_8_(bakels).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Finale. Andante",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/variations_haydn_56a_9_(bakels).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sextet for 2 violins, 2 violas and 2 cellos in G major, Op. 36",
+      "catalog_numbers": {
+        "Op": "36"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/brahms_sextet_for_strings_36_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata for violin and piano in A major, Op. 100 (1886)",
+      "catalog_numbers": {
+        "Op": "100"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/brahms_violin_sonata_100_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata for violin and piano in d minor, Op. 108 (1889)",
+      "catalog_numbers": {
+        "Op": "108"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/brahms_violin_sonata_108_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata for cello and piano in e minor, Op. 38 (1862-65)",
+      "catalog_numbers": {
+        "Op": "38"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/brahms_cello_sonata_38_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonata for cello and piano in F major, Op. 99 (1886)",
+      "catalog_numbers": {
+        "Op": "99"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/brahms_cello_sonata_99_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Trio for violin, horn and piano in E flat major, Op. 40 (1865)",
+      "catalog_numbers": {
+        "Op": "40"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/brahms_trio_for_violin_horn_piano_40_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Trio for clarinet, cello and piano in a minor, Op. 114 (1891)",
+      "catalog_numbers": {
+        "Op": "114"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=24/brahms_trio_for_clarinet_cello_piano_114_(c)harfesoft.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Quintet with clarinet in D major, Op. 115 (1891)",
+      "catalog_numbers": {
+        "Op": "115"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/clarinet_quintett_115_1_bakels.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/clarinet_quintett_115_2_bakels.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/clarinet_quintett_115_3_bakels.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/clarinet_quintett_115_4_bakels.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Bearbeitung f�r Klavier vierh�ndig",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/sonate_2-pianos_34b_1_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/sonate_2-pianos_34b_2_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/sonate_2-pianos_34b_3_(c)lefeldt.mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/sonate_2-pianos_34b_4_(c)lefeldt.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Capriccio in b minor, Op. 76 No. 2 (1878) *",
+      "catalog_numbers": {
+        "Op": "76/2"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/brahms/capriccio_in_b-minor_76_2_6596_d_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Waltzes: No. 2 in E major, No. 15 in A major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/brahms/31239d_waltzes_39_2-15_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Waltzes: No. 1 in B major, No. 2 in E major, No. 14 in a minor, No. 16 in d minor, No. 13 in C major",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/brahms/66153a_waltzes_39_1-2-14-16-13_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Waltzes: No. 5 in E major, No. 6 in C sharp major, No. 15 in A major *",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/brahms/61313a_waltzes_39_5-6-15_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Variations Op. 35a, 1st book (1863)",
+      "catalog_numbers": {
+        "Op": "35"
+      },
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/variations_35_1_(pepperdine).mid",
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/variations_35_2_(pepperdine).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gavotte (composed by Gluck)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=rolls/classical-i/gluck-brahms_57564a_gavotte_(nc)smythe.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Prelude and Fugue in g minor (1880)",
+      "sources": [
+        {
+          "origin": "kunstderfuge.com",
+          "license": "personal use only",
+          "license_url": "https://www.kunstderfuge.com/notes.htm",
+          "midi_urls": [
+            "https://www.kunstderfuge.com/-/midi.asp?file=brahms/prelude_and_fugue_g_minor_(borsari).mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "In stiller Nacht",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Creative Commons Attribution 4.0",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/BrahmsJ/InstillerNacht/InstillerNacht.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cancion de Cuna",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/BrahmsJ/LullabyBrahms-C/LullabyBrahms-C.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Vals no. 3",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/BrahmsJ/O39/brahms-vals3/brahms-vals3.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Vals no. 9",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/BrahmsJ/O39/brahms-vals9/brahms-vals9.mid"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sapphische Ode",
+      "sources": [
+        {
+          "origin": "mutopiaproject.org",
+          "license": "Public Domain",
+          "license_url": "https://www.mutopiaproject.org/legal.html",
+          "midi_urls": [
+            "https://www.mutopiaproject.org/ftp/BrahmsJ/O94/brahms-sapphische-ode/brahms-sapphische-ode.mid"
+          ]
+        }
+      ]
+    }
+  ]
+}
