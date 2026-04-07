@@ -10,6 +10,18 @@
 import Foundation
 import Tonic
 
+// MARK: - Errors
+
+enum PatternCompileError: LocalizedError {
+  case midiFileNotFound(String)
+
+  var errorDescription: String? {
+    switch self {
+    case .midiFileNotFound(let filename): "MIDI file not found: \(filename)"
+    }
+  }
+}
+
 // MARK: - ModulatorSyntax
 
 /// A parameter modulator: targets a named constant in the preset and drives it with an arrow.
@@ -38,6 +50,10 @@ struct MidiTracksSyntax: Codable {
   let filename: String
   let loop: Bool?
   let bpm: Double?
+  /// Maximum silence (seconds) between notes. Gaps exceeding this are
+  /// compressed so dead air never lasts longer than this value.
+  /// nil disables compression (preserves original timing).
+  let maxSilence: Double?
   let tracks: [MidiTrackEntry]
 }
 
@@ -121,11 +137,20 @@ struct PatternSyntax: Codable {
     resourceBaseURL: URL? = nil
   ) async throws -> CompileResult {
     guard let url = NoteGeneratorSyntax.midiFileURL(filename: midi.filename, resourceBaseURL: resourceBaseURL) else {
-      fatalError("MIDI file not found: \(midi.filename)")
+      throw PatternCompileError.midiFileNotFound(midi.filename)
     }
 
     let loopVal = midi.loop ?? true
-    let allSeqs = MidiEventSequence.allTracks(url: url, loop: loopVal, bpmOverride: midi.bpm)
+    let rawSeqs = MidiEventSequence.allTracks(url: url, loop: loopVal, bpmOverride: midi.bpm)
+
+    let allSeqs: [(trackIndex: Int, trackName: String, sequence: MidiEventSequence)]
+    if let maxSilence = midi.maxSilence {
+      let rawSequences = rawSeqs.map(\.sequence)
+      let compressed = MidiEventSequence.compressingSilencesGlobally(rawSequences, maxSilence: CoreFloat(maxSilence))
+      allSeqs = zip(rawSeqs, compressed).map { ($0.0.trackIndex, $0.0.trackName, $0.1) }
+    } else {
+      allSeqs = rawSeqs
+    }
 
     var musicTracks: [MusicPattern.Track] = []
     var trackInfos: [TrackInfo] = []

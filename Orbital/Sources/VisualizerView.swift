@@ -258,20 +258,16 @@ struct VisualizerView: View {
         }
       }
     }
-    .onAppear {
-      let h = getOrCreateHolder()
-      holder = h
-      h.loadPageIfNeeded(presetName: lastPreset, speed: lastSpeed)
-      h.installTapIfNeeded()
-      h.setSpeed(lastSpeed)
-    }
     .onChange(of: isPresented) {
-      guard let holder else { return }
       if isPresented {
-        holder.installTapIfNeeded()
+        let h = getOrCreateHolder()
+        holder = h
+        h.loadPageIfNeeded(presetName: lastPreset, speed: lastSpeed)
+        h.installTapIfNeeded()
+        h.setSpeed(lastSpeed)
       } else {
-        holder.removeTap()
-        holder.stopCycling()
+        holder?.removeTap()
+        holder?.stopCycling()
       }
     }
     .onKeyPress(.escape) {

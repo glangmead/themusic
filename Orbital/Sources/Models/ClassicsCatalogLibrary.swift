@@ -8,6 +8,9 @@
 //
 
 import Foundation
+import OSLog
+
+private let logger = Logger(subsystem: "com.langmead.Orbital", category: "ClassicsCatalog")
 
 @MainActor @Observable
 class ClassicsCatalogLibrary {
@@ -57,21 +60,35 @@ class ClassicsCatalogLibrary {
       [CatalogComposer].self, from: "composers.json", subdirectory: "catalog_v2"
     )
     recomputeSorted()
+    logger.notice("Loaded \(self.composers.count) composers")
   }
 
   func counts(for slug: String) -> ComposerCounts? {
     composerCountsCache[slug]
   }
 
-  /// Preload works for all composers, updating counts incrementally.
+  /// Preload works for all composers. Loads all files off the main actor
+  /// in a single detached task, then applies results in one batch to
+  /// minimize @Observable churn.
   func preloadAllWorkGroups() async {
+    // Wait for load() to populate composers — the .task that calls load()
+    // and the .task that calls this method run concurrently.
+    while composers.isEmpty {
+      try? await Task.sleep(for: .milliseconds(50))
+    }
     let slugs = composers.map(\.slug).filter { worksCache[$0] == nil }
+    logger.notice("preloadAllWorkGroups: \(slugs.count) composers to load")
     guard !slugs.isEmpty else { return }
 
-    for slug in slugs {
-      let works = await Task.detached(priority: .userInitiated) {
-        ClassicsCatalogLibrary.loadWorksFromBundle(composerSlug: slug)
-      }.value
+    // Load all files off the main actor in one batch.
+    let results = await Task.detached(priority: .utility) {
+      slugs.map { slug in
+        (slug, ClassicsCatalogLibrary.loadWorksFromBundle(composerSlug: slug))
+      }
+    }.value
+
+    // Single batch update — one @Observable notification instead of 131.
+    for (slug, works) in results {
       worksCache[slug] = works
       composerCountsCache[slug] = ComposerCounts(
         totalWorks: works.count,
@@ -83,6 +100,7 @@ class ClassicsCatalogLibrary {
   /// Load and cache works for a composer. No-op if already cached.
   func loadWorksIfNeeded(for composer: CatalogComposer) async {
     let slug = composer.slug
+    logger.notice("loadWorksIfNeeded: slug=\(slug) cached=\(self.worksCache[slug] != nil)")
     guard worksCache[slug] == nil else { return }
 
     let works = await Task.detached(priority: .userInitiated) {
@@ -106,15 +124,20 @@ class ClassicsCatalogLibrary {
     guard let url = Bundle.main.url(
       forResource: composerSlug, withExtension: "json", subdirectory: "catalog_v2/works"
     ) else {
+      logger.error("No bundle URL for \(composerSlug).json")
       return []
     }
     guard let data = try? Data(contentsOf: url) else {
+      logger.error("Failed to read data from \(url.path)")
       return []
     }
-    let decoder = JSONDecoder()
-    guard let file = try? decoder.decode(ComposerWorksFile.self, from: data) else {
+    do {
+      let file = try JSONDecoder().decode(ComposerWorksFile.self, from: data)
+      logger.notice("Loaded \(file.works.count) works for \(composerSlug)")
+      return file.works
+    } catch {
+      logger.error("Failed to decode \(composerSlug): \(error.localizedDescription)")
       return []
     }
-    return file.works
   }
 }

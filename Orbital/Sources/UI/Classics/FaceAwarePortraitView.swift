@@ -39,6 +39,72 @@ private final class PortraitImageCache: @unchecked Sendable {
   }
 }
 
+// MARK: - Portrait loader (deduplication + off-pool face detection)
+
+/// Coordinates portrait downloads and face detection across all
+/// `FaceAwarePortraitView` instances.  Deduplicates concurrent requests
+/// for the same URL and runs Vision's blocking `perform()` on a GCD
+/// queue so it cannot starve Swift's cooperative thread pool.
+private actor PortraitLoader {
+  static let shared = PortraitLoader()
+
+  private var inFlight: [URL: Task<PortraitImageCache.Entry?, Never>] = [:]
+
+  func load(url: URL) async -> PortraitImageCache.Entry? {
+    if let cached = PortraitImageCache.shared.get(url) {
+      return cached
+    }
+    if let existing = inFlight[url] {
+      return await existing.value
+    }
+    let task = Task<PortraitImageCache.Entry?, Never> {
+      await Self.fetchAndDetect(url: url)
+    }
+    inFlight[url] = task
+    let result = await task.value
+    inFlight.removeValue(forKey: url)
+    return result
+  }
+
+  private static func fetchAndDetect(url: URL) async -> PortraitImageCache.Entry? {
+    let data: Data
+    do {
+      let (d, response) = try await URLSession.shared.data(from: url)
+      if let http = response as? HTTPURLResponse, http.statusCode != 200 {
+        print("[Portrait] HTTP \(http.statusCode) for \(url.absoluteString)")
+        return nil
+      }
+      data = d
+    } catch {
+      print("[Portrait] Network error for \(url.absoluteString): \(error.localizedDescription)")
+      return nil
+    }
+    guard let image = UIImage(data: data) else {
+      print("[Portrait] Could not decode image (\(data.count) bytes) from \(url.absoluteString)")
+      return nil
+    }
+    let faceY = await detectFaceCenterOffPool(in: image)
+    let entry = PortraitImageCache.Entry(image: image, faceFractionY: faceY)
+    PortraitImageCache.shared.set(entry, for: url)
+    return entry
+  }
+
+  /// Runs Vision's synchronous `perform()` on a GCD queue so it does not
+  /// block any thread in Swift's cooperative pool.
+  private static func detectFaceCenterOffPool(in image: UIImage) async -> CGFloat? {
+    guard let cgImage = image.cgImage else { return nil }
+    return await withCheckedContinuation { continuation in
+      DispatchQueue.global(qos: .utility).async {
+        let request = VNDetectFaceRectanglesRequest()
+        let handler = VNImageRequestHandler(cgImage: cgImage, options: [:])
+        try? handler.perform([request])
+        let faceY = request.results?.first.map { CGFloat(1.0 - $0.boundingBox.midY) }
+        continuation.resume(returning: faceY)
+      }
+    }
+  }
+}
+
 struct FaceAwarePortraitView: View {
   let url: URL
   var frameHeight: CGFloat = 250
@@ -82,51 +148,9 @@ struct FaceAwarePortraitView: View {
   // MARK: - Loading & detection
 
   private func loadAndDetect() async {
-    // Check cache first
-    if let cached = PortraitImageCache.shared.get(url) {
-      uiImage = cached.image
-      faceFractionY = cached.faceFractionY
-      return
-    }
-
-    // Detach the download so SwiftUI task cancellation doesn't abort it
-    guard let entry = await Task.detached(
-      priority: .userInitiated,
-      operation: { [url] () -> PortraitImageCache.Entry? in
-        let data: Data
-        do {
-          let (d, response) = try await URLSession.shared.data(from: url)
-          if let http = response as? HTTPURLResponse, http.statusCode != 200 {
-            print("[Portrait] HTTP \(http.statusCode) for \(url.absoluteString)")
-            return nil
-          }
-          data = d
-        } catch {
-          print("[Portrait] Network error for \(url.absoluteString): \(error.localizedDescription)")
-          return nil
-        }
-        guard let image = UIImage(data: data) else {
-          print("[Portrait] Could not decode image (\(data.count) bytes) from \(url.absoluteString)")
-          return nil
-        }
-        let faceY = FaceAwarePortraitView.detectFaceCenterYSync(in: image)
-        let entry = PortraitImageCache.Entry(image: image, faceFractionY: faceY)
-        PortraitImageCache.shared.set(entry, for: url)
-        return entry
-      }
-    ).value else { return }
-
+    guard let entry = await PortraitLoader.shared.load(url: url) else { return }
     uiImage = entry.image
     faceFractionY = entry.faceFractionY
-  }
-
-  private nonisolated static func detectFaceCenterYSync(in image: UIImage) -> CGFloat? {
-    guard let cgImage = image.cgImage else { return nil }
-    let request = VNDetectFaceRectanglesRequest()
-    let handler = VNImageRequestHandler(cgImage: cgImage, options: [:])
-    try? handler.perform([request])
-    guard let face = request.results?.first else { return nil }
-    return CGFloat(1.0 - face.boundingBox.midY)
   }
 }
 

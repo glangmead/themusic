@@ -81,7 +81,7 @@ final class MIDIDownloadLedger {
   // MARK: - Persistence
 
   func load() {
-    guard FileManager.default.fileExists(atPath: fileURL.path()) else {
+    guard FileManager.default.fileExists(atPath: fileURL.path(percentEncoded: false)) else {
       logger.info("No ledger file found, starting fresh")
       return
     }

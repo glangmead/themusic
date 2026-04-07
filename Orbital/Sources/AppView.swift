@@ -130,9 +130,6 @@ private struct RegularAppLayout: View {
       }
     }
     .task {
-      await catalog.preloadAllWorkGroups()
-    }
-    .task {
       loadPresets()
     }
     .safeAreaInset(edge: .bottom) {

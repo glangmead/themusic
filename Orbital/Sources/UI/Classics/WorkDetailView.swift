@@ -16,7 +16,12 @@ struct WorkDetailView: View {
   let composer: CatalogComposer
   let work: CatalogWork
 
-  @State private var bpm: Double = 120
+  // Slider drives a log-scaled value; bpm = exp(logBpm).
+  // This stretches the low end so fine adjustments around 2–20 BPM are easy.
+  private static let minBpm = 0.1
+  private static let maxBpm = 240.0
+  @State private var logBpm: Double = log(15)
+  private var bpm: Double { exp(logBpm) }
   @State private var currentDocument: SongDocument?
   @State private var webViewItem: IdentifiableURL?
   @State private var downloadError: String?
@@ -66,11 +71,11 @@ struct WorkDetailView: View {
         Section("Playback") {
           LabeledContent("BPM") {
             HStack {
-              Slider(value: $bpm, in: 1...240, step: 1)
+              Slider(value: $logBpm, in: log(Self.minBpm)...log(Self.maxBpm))
                 .disabled(isPlaying)
-              Text(Int(bpm), format: .number)
+              Text(bpm, format: .number.precision(.fractionLength(bpm < 10 ? 1 : 0)))
                 .monospacedDigit()
-                .frame(width: 36, alignment: .trailing)
+                .frame(width: 44, alignment: .trailing)
             }
           }
 
@@ -153,37 +158,34 @@ struct WorkDetailView: View {
 
         if isDownloaded {
           // Play button for this specific file
-          Button {
+          Button("Play", systemImage: "play.circle.fill") {
             handlePlayButton(sourceUrl: urlString)
-          } label: {
-            Image(systemName: "play.circle.fill")
-              .font(.title2)
-              .foregroundStyle(.green)
           }
+          .labelStyle(.iconOnly)
+          .font(.title2)
+          .foregroundStyle(.green)
           .buttonStyle(.plain)
         } else if isDownloading {
           ProgressView()
         } else if source.requiresWebView {
           // WebView download (kdf)
-          Button {
+          Button("Open in browser", systemImage: "arrow.up.right.square") {
             if let url = URL(string: urlString) {
               webViewItem = IdentifiableURL(url: url)
             }
-          } label: {
-            Image(systemName: "arrow.up.right.square")
-              .font(.title3)
           }
+          .labelStyle(.iconOnly)
+          .font(.title3)
           .buttonStyle(.plain)
         } else {
           // Direct download
-          Button {
+          Button("Download", systemImage: "arrow.down.circle") {
             Task {
               await directDownload(urlString: urlString)
             }
-          } label: {
-            Image(systemName: "arrow.down.circle")
-              .font(.title3)
           }
+          .labelStyle(.iconOnly)
+          .font(.title3)
           .buttonStyle(.plain)
         }
       }
@@ -217,7 +219,7 @@ struct WorkDetailView: View {
     let relativePath = localURL.lastPathComponent
     let composerPath = "\(composer.slug)/\(relativePath)"
     let tracks = [MidiTrackEntry(presetFilename: nil, numVoices: 4, modulators: nil)]
-    let midiSpec = MidiTracksSyntax(filename: composerPath, loop: false, bpm: bpm, tracks: tracks)
+    let midiSpec = MidiTracksSyntax(filename: composerPath, loop: false, bpm: bpm, maxSilence: 2.0, tracks: tracks)
     let pattern = PatternSyntax(name: work.title, midiTracks: midiSpec)
     let doc = SongDocument(
       patternSyntax: pattern,

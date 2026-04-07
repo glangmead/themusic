@@ -146,12 +146,16 @@ struct MIDIWebView: UIViewRepresentable {
 
       let filename = destURL.lastPathComponent
       let relativePath = "\(composerSlug)/\(filename)"
-      let sourceUrl = pendingSourceUrl ?? sourceUrlString
+      // Always use the original catalog URL as the ledger key so that
+      // isDownloaded() matches the URLs stored in the catalog data.
+      // pendingSourceUrl may differ due to server redirects (e.g. kdf
+      // redirects midi.asp → mid.files).
+      let catalogUrl = sourceUrlString
 
       Task { @MainActor in
-        ledger.record(sourceUrl: sourceUrl, composerSlug: composerSlug, localPath: relativePath)
-        logger.info("WebView download complete: \(relativePath)")
-        onDownloadComplete(sourceUrl)
+        ledger.record(sourceUrl: catalogUrl, composerSlug: composerSlug, localPath: relativePath)
+        logger.info("WebView download complete: \(relativePath) (catalog: \(catalogUrl))")
+        onDownloadComplete(catalogUrl)
       }
     }
 

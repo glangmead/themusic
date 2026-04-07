@@ -131,6 +131,57 @@ struct ClassicsCatalogTests {
     #expect(filename == "organ_major_works_bwv-565_(c)unknown1.mid")
   }
 
+  // MARK: - MidiEventSequence global gap compression
+
+  @Test("Global gap compression trims silence across synchronized tracks")
+  func globalGapCompression() {
+    // Track 1: note at t=0 (1s), silence 9s, note at t=10 (1s)
+    let track1 = MidiEventSequence(
+      chords: [[MidiNote(note: 60, velocity: 100)], [MidiNote(note: 64, velocity: 100)]],
+      sustains: [1.0, 1.0],
+      gaps: [10.0, 1.0],
+      program: nil
+    )
+    // Track 2: note at t=0 (1s), silence 9s, note at t=10 (1s)
+    // Same timing — the global silence from t=1 to t=10 (9s) should compress.
+    let track2 = MidiEventSequence(
+      chords: [[MidiNote(note: 67, velocity: 100)], [MidiNote(note: 72, velocity: 100)]],
+      sustains: [1.0, 1.0],
+      gaps: [10.0, 1.0],
+      program: nil
+    )
+    let compressed = MidiEventSequence.compressingSilencesGlobally([track1, track2], maxSilence: 2.0)
+    // 9s silence → clamped to 2s → gap = 1 + 2 = 3 for both tracks
+    #expect(compressed[0].gaps[0] == 3.0)
+    #expect(compressed[1].gaps[0] == 3.0)
+    // Final gaps unchanged
+    #expect(compressed[0].gaps[1] == 1.0)
+    #expect(compressed[1].gaps[1] == 1.0)
+  }
+
+  @Test("Global compression preserves silence when another track is sounding")
+  func globalCompressionPreservesOverlap() {
+    // Track 1: note at t=0 (1s), gap=10 → silence from t=1 to t=10
+    let track1 = MidiEventSequence(
+      chords: [[MidiNote(note: 60, velocity: 100)], [MidiNote(note: 64, velocity: 100)]],
+      sustains: [1.0, 1.0],
+      gaps: [10.0, 1.0],
+      program: nil
+    )
+    // Track 2: note at t=0 (8s sustain) → sounding until t=8
+    // Global silence is only t=8 to t=10 (2s), which is at threshold.
+    let track2 = MidiEventSequence(
+      chords: [[MidiNote(note: 48, velocity: 100)]],
+      sustains: [8.0],
+      gaps: [8.0],
+      program: nil
+    )
+    let compressed = MidiEventSequence.compressingSilencesGlobally([track1, track2], maxSilence: 2.0)
+    // 2s global silence = threshold exactly → no compression
+    #expect(compressed[0].gaps[0] == 10.0)
+    #expect(compressed[1].gaps[0] == 8.0)
+  }
+
   // MARK: - ClassicsCatalogLibrary sorting
 
   @Test("sortedComposers by lastName ascending")

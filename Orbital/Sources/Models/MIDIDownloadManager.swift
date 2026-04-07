@@ -60,7 +60,7 @@ final class MIDIDownloadManager {
     }
 
     // Move to final location (overwrite if exists)
-    if FileManager.default.fileExists(atPath: destURL.path()) {
+    if FileManager.default.fileExists(atPath: destURL.path(percentEncoded: false)) {
       try FileManager.default.removeItem(at: destURL)
     }
     try FileManager.default.moveItem(at: tempURL, to: destURL)
@@ -107,7 +107,7 @@ final class MIDIDownloadManager {
     // Handle collisions
     var candidate = base
     var counter = 2
-    while FileManager.default.fileExists(atPath: directory.appending(path: candidate).path()) {
+    while FileManager.default.fileExists(atPath: directory.appending(path: candidate).path(percentEncoded: false)) {
       let stemPart = String(base.dropLast(4))
       candidate = "\(stemPart)_\(counter).mid"
       counter += 1

@@ -51,6 +51,7 @@ struct MidiTracksFormView: View {
       filename: midi.filename,
       loop: midi.loop,
       bpm: bpm,
+      maxSilence: midi.maxSilence,
       tracks: midi.tracks
     )
     playbackState.replaceMidiPattern(updated)
