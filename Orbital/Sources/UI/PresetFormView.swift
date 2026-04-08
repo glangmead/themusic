@@ -276,11 +276,11 @@ private struct PresetFormContent: View {
       )
       let newSpec = PresetSyntax(
         name: synth.presetSpec.name,
-        arrow: nil,
+        arrow: synth.presetSpec.arrow,
         samplerFilenames: nil,
         samplerProgram: nil,
         samplerBank: nil,
-        library: nil,
+        library: synth.presetSpec.library,
         rose: synth.presetSpec.rose,
         effects: synth.presetSpec.effects,
         padTemplate: nil,

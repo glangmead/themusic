@@ -11,9 +11,11 @@ import Foundation
 enum PADSynthWavetableCompiler {
   /// Reference pitch for wavetable generation (middle C).
   /// The phase accumulator handles actual pitch tracking.
-  private static let referencePitch: CoreFloat = 261.63
+  static let referencePitch: CoreFloat = 261.63
 
-  /// Generate a WavetableLibrary-compatible table (2048 samples) from PADsynth params.
+  /// Generate the full PADsynth wavetable (262 144 samples, power-of-2).
+  /// Keeping the full table preserves the long, evolving texture that
+  /// makes PADsynth sound smooth rather than buzzy.
   static func generateTable(params: PADSynthSyntax) -> [CoreFloat] {
     let sharcHarmonics = PADSynthEngine.resolveSharcHarmonics(
       instrumentId: params.selectedInstrument,
@@ -29,23 +31,9 @@ enum PADSynthWavetableCompiler {
       envelopeCoefficients: params.envelopeCoefficients,
       sharcHarmonics: sharcHarmonics
     )
-    let fullTable = PADSynthEngine.generateWavetableStatic(
+    return PADSynthEngine.generateWavetableStatic(
       fundamentalHz: referencePitch,
       params: snapshot
     )
-    return downsampleToLibrarySize(fullTable)
-  }
-
-  /// Downsample a large PADsynth wavetable to WavetableLibrary.tableSize (2048).
-  private static func downsampleToLibrarySize(_ source: [CoreFloat]) -> [CoreFloat] {
-    let targetSize = WavetableLibrary.tableSize
-    guard source.count > targetSize else { return source }
-    let ratio = CoreFloat(source.count) / CoreFloat(targetSize)
-    var result = [CoreFloat](repeating: 0, count: targetSize)
-    for i in 0..<targetSize {
-      let srcIndex = Int(CoreFloat(i) * ratio)
-      result[i] = source[min(srcIndex, source.count - 1)]
-    }
-    return result
   }
 }

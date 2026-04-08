@@ -13,7 +13,6 @@ extension AVAudioSourceNode {
   static func withSource(source: AudioGate, sampleRate: Double) -> AVAudioSourceNode {
     var timeBuffer = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
     var valBuffer = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
-
     // The AVAudioSourceNode initializer takes a 'render block' – a closure
     // that the audio engine calls repeatedly to request audio samples.
     let node = AVAudioSourceNode { (isSilence, timestamp, frameCount, audioBufferList) -> OSStatus in

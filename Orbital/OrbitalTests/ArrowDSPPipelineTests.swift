@@ -395,6 +395,102 @@ struct ADSREnvelopeTests {
     _ = env.env(0.2)
     #expect(finished, "finishCallbacks should have fired after release completes")
   }
+
+  // MARK: - Zero-duration edge cases (division-by-zero guards)
+
+  @Test("Zero release time produces no NaN and fires callbacks")
+  func zeroRelease() {
+    var finished = false
+    let adsr = ADSR(envelope: EnvelopeData(
+      attackTime: 0.01, decayTime: 0.01, sustainLevel: 1.0, releaseTime: 0, scale: 1.0
+    ))
+    adsr.finishCallbacks.append { finished = true }
+
+    adsr.noteOn(MidiNote(note: 60, velocity: 127))
+    _ = adsr.env(100.0)
+    _ = adsr.env(100.02) // through attack+decay to sustain
+    let sustained = adsr.env(100.5)
+    #expect(sustained > 0.9, "Should sustain near 1.0")
+
+    adsr.noteOff(MidiNote(note: 60, velocity: 0))
+    let atRelease = adsr.env(200.0) // timeOrigin resets
+    #expect(!atRelease.isNaN, "Zero release must not produce NaN")
+    // Second sample after noteOff triggers close
+    let afterRelease = adsr.env(200.001)
+    #expect(afterRelease == 0, "Should close immediately")
+    #expect(adsr.state == .closed)
+    #expect(finished, "Callbacks should fire with zero release")
+  }
+
+  @Test("Zero attack time jumps to scale immediately")
+  func zeroAttack() {
+    let adsr = ADSR(envelope: EnvelopeData(
+      attackTime: 0, decayTime: 0.5, sustainLevel: 0.5, releaseTime: 0.5, scale: 1.0
+    ))
+    adsr.noteOn(MidiNote(note: 60, velocity: 127))
+    let val = adsr.env(100.0)
+    #expect(!val.isNaN, "Zero attack must not produce NaN")
+    #expect(abs(val - 1.0) < 0.01, "Should jump to scale, got \(val)")
+  }
+
+  @Test("Zero decay time jumps to sustain immediately")
+  func zeroDecay() {
+    let adsr = ADSR(envelope: EnvelopeData(
+      attackTime: 0, decayTime: 0, sustainLevel: 0.6, releaseTime: 0.5, scale: 1.0
+    ))
+    adsr.noteOn(MidiNote(note: 60, velocity: 127))
+    _ = adsr.env(100.0)
+    // Past the zero-width attack and decay phases
+    let val = adsr.env(100.001)
+    #expect(!val.isNaN, "Zero decay must not produce NaN")
+    #expect(abs(val - 0.6) < 0.05, "Should reach sustain, got \(val)")
+  }
+
+  @Test("All-zero envelope produces sound then silences without NaN")
+  func allZeroDurations() {
+    var finished = false
+    let adsr = ADSR(envelope: EnvelopeData(
+      attackTime: 0, decayTime: 0, sustainLevel: 0.7, releaseTime: 0, scale: 1.0
+    ))
+    adsr.finishCallbacks.append { finished = true }
+
+    adsr.noteOn(MidiNote(note: 60, velocity: 127))
+    let attack = adsr.env(100.0)
+    #expect(!attack.isNaN)
+    let sustain = adsr.env(100.5)
+    #expect(!sustain.isNaN)
+    #expect(abs(sustain - 0.7) < 0.05, "Should sustain at 0.7, got \(sustain)")
+
+    adsr.noteOff(MidiNote(note: 60, velocity: 0))
+    let release = adsr.env(200.0)
+    #expect(!release.isNaN, "Zero release must not produce NaN")
+    _ = adsr.env(200.001)
+    #expect(adsr.state == .closed)
+    #expect(finished)
+  }
+
+  @Test("Zero release followed by new noteOn still produces sound")
+  func zeroReleaseRetrigger() {
+    let adsr = ADSR(envelope: EnvelopeData(
+      attackTime: 0.1, decayTime: 0.1, sustainLevel: 0.8, releaseTime: 0, scale: 1.0
+    ))
+
+    // First note cycle
+    adsr.noteOn(MidiNote(note: 60, velocity: 127))
+    _ = adsr.env(100.0)
+    _ = adsr.env(100.3) // into sustain
+    adsr.noteOff(MidiNote(note: 60, velocity: 0))
+    _ = adsr.env(200.0) // release starts
+    _ = adsr.env(200.001) // closes
+    #expect(adsr.state == .closed)
+
+    // Second note should attack normally
+    adsr.noteOn(MidiNote(note: 62, velocity: 100))
+    let reattack = adsr.env(300.0)
+    #expect(!reattack.isNaN, "Re-attack must not produce NaN")
+    let ramping = adsr.env(300.05)
+    #expect(ramping > 0, "Should ramp up on second note, got \(ramping)")
+  }
 }
 
 // MARK: - 4. Preset JSON Decoding and ArrowSyntax Compilation

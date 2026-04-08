@@ -15,13 +15,65 @@
     "delayWetDryMix": 20
   },
   "padSynth": {
-    "baseShape": "1/n²",
+    "baseShape": "1/n\u00b2",
     "tilt": 0.0,
-    "bandwidthCents": 80.0,
-    "bwScale": 1.2,
+    "bandwidthCents": 50.0,
+    "bwScale": 1.0,
     "profileShape": "Gaussian",
     "stretch": 1.15,
     "selectedInstrument": null,
     "envelopeCoefficients": null
+  },
+  "arrow": {
+    "compose": [
+      { "prod": [
+        { "const": { "name": "overallAmp", "val": 1.0 } },
+        { "compose": [
+          { "prod": [
+            { "const": { "name": "freq", "val": 300 } },
+            { "constOctave": { "name": "osc1Octave", "val": 0 } },
+            { "constCent": { "name": "osc1CentDetune", "val": 0 } },
+            { "identity": {} }
+          ]},
+          { "padSynthWavetable": {
+            "name": "osc1",
+            "params": {
+              "baseShape": "1/n\u00b2",
+              "tilt": 0.0,
+              "bandwidthCents": 50.0,
+              "bwScale": 1.0,
+              "profileShape": "Gaussian",
+              "stretch": 1.15,
+              "selectedInstrument": null,
+              "envelopeCoefficients": null
+            },
+            "width": { "const": { "name": "osc1Width", "val": 1 } }
+          }}
+        ]},
+        { "envelope": {
+          "name": "ampEnv",
+          "attack": 0.5,
+          "decay": 1.0,
+          "sustain": 0.8,
+          "release": 1.5,
+          "scale": 1
+        }}
+      ]},
+      { "lowPassFilter": {
+        "name": "filter",
+        "cutoff": { "prod": [
+          { "const": { "name": "cutoff", "val": 12000 } },
+          { "envelope": {
+            "name": "filterEnv",
+            "attack": 0.1,
+            "decay": 0.8,
+            "sustain": 1.0,
+            "release": 1.0,
+            "scale": 1
+          }}
+        ]},
+        "resonance": { "const": { "name": "resonance", "val": 0.5 } }
+      }}
+    ]
   }
 }

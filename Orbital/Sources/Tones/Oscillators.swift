@@ -325,14 +325,20 @@ final class WavetableOscillator: Arrow11, WidthHaver {
   private let table: ContiguousArray<CoreFloat>
   private let tableSizeF: CoreFloat
   private let tableMask: Int
+  /// Number of fundamental cycles contained in the table. Single-cycle
+  /// wavetables use 1.0 (the default). PADsynth tables store many cycles
+  /// (e.g. tableSize * fundamentalHz / sampleRate ≈ 1554) so the phase
+  /// accumulator must advance proportionally slower.
+  private let invCyclesPerTable: CoreFloat
   private var widthOutputs = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
   private var scratch = [CoreFloat](repeating: 0, count: MAX_BUFFER_SIZE)
   var widthArr: Arrow11
 
-  init(table: [CoreFloat], widthArr: Arrow11 = ArrowConst(value: 1.0)) {
+  init(table: [CoreFloat], widthArr: Arrow11 = ArrowConst(value: 1.0), cyclesPerTable: CoreFloat = 1.0) {
     self.table = ContiguousArray(table)
     self.tableSizeF = CoreFloat(table.count)
     self.tableMask = table.count - 1
+    self.invCyclesPerTable = 1.0 / max(cyclesPerTable, 1e-12)
     self.widthArr = widthArr
     super.init()
   }
@@ -348,6 +354,7 @@ final class WavetableOscillator: Arrow11, WidthHaver {
     let n = inputs.count
     let sizeF = tableSizeF
     let mask = tableMask
+    let invCycles = invCyclesPerTable
     table.withUnsafeBufferPointer { tblBuf in
       scratch.withUnsafeBufferPointer { scratchBuf in
         outputs.withUnsafeMutableBufferPointer { outBuf in
@@ -357,7 +364,8 @@ final class WavetableOscillator: Arrow11, WidthHaver {
                   let outBase = outBuf.baseAddress,
                   let widthBase = widthBuf.baseAddress else { return }
             for i in 0..<n {
-              let phase = scratchBase[i] - floor(scratchBase[i])  // 0..1
+              let raw = scratchBase[i] * invCycles
+              let phase = raw - floor(raw)  // 0..1
               let w = widthBase[i]
               let scaledPhase = w > 1e-9 ? phase / w : 0.0
               if scaledPhase >= 1.0 {

@@ -26,6 +26,7 @@ struct PADSynthSyntaxTests {
   }
 
   @Test func decodePadSynthPresetJSON() throws {
+    // PADsynth presets require an explicit arrow for the full DSP chain.
     let json = """
     {
       "name": "PADsynth Bell",
@@ -40,6 +41,35 @@ struct PADSynthSyntaxTests {
         "bandwidthCents": 80.0, "bwScale": 1.2,
         "profileShape": "Gaussian", "stretch": 1.15,
         "selectedInstrument": null, "envelopeCoefficients": null
+      },
+      "arrow": {
+        "compose": [
+          { "prod": [
+            { "const": { "name": "overallAmp", "val": 1.0 } },
+            { "compose": [
+              { "prod": [
+                { "const": { "name": "freq", "val": 300 } },
+                { "identity": {} }
+              ]},
+              { "padSynthWavetable": {
+                "name": "osc1",
+                "params": {
+                  "baseShape": "1/n²", "tilt": 0.0,
+                  "bandwidthCents": 80.0, "bwScale": 1.2,
+                  "profileShape": "Gaussian", "stretch": 1.15,
+                  "selectedInstrument": null, "envelopeCoefficients": null
+                },
+                "width": { "const": { "name": "osc1Width", "val": 1 } }
+              }}
+            ]},
+            { "envelope": { "name": "ampEnv", "attack": 0.5, "decay": 1.0, "sustain": 0.8, "release": 1.5, "scale": 1 } }
+          ]},
+          { "lowPassFilter": {
+            "name": "filter",
+            "cutoff": { "const": { "name": "cutoff", "val": 8000 } },
+            "resonance": { "const": { "name": "resonance", "val": 0.5 } }
+          }}
+        ]
       }
     }
     """
@@ -49,7 +79,7 @@ struct PADSynthSyntaxTests {
     #expect(spec.padSynth != nil)
     #expect(spec.padSynth?.stretch == 1.15)
     #expect(spec.padSynth?.baseShape == .oneOverNSquared)
-    #expect(spec.arrow == nil)
+    #expect(spec.arrow != nil)
     #expect(spec.padTemplate == nil)
   }
 

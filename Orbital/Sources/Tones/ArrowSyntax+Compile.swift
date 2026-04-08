@@ -223,7 +223,10 @@ extension ArrowSyntax {
     case .padSynthWavetable(let name, let params, let width):
       let table = PADSynthWavetableCompiler.generateTable(params: params)
       let compiledWidth = width.compile(library: library)
-      let osc = WavetableOscillator(table: table, widthArr: compiledWidth.wrappedArrow)
+      // The PADsynth table contains many fundamental cycles (tableSize * refPitch / sampleRate).
+      // WavetableOscillator must scale the phase rate accordingly.
+      let cyclesPerTable = CoreFloat(table.count) * PADSynthWavetableCompiler.referencePitch / PADSynthEngine.sampleRate
+      let osc = WavetableOscillator(table: table, widthArr: compiledWidth.wrappedArrow, cyclesPerTable: cyclesPerTable)
       let result = ArrowWithHandles(osc)
       result.namedWavetableOscs[name] = [osc]
       return result.withMergeDictsFromArrow(compiledWidth)
@@ -234,6 +237,17 @@ extension ArrowSyntax {
       let handleArr = ArrowWithHandles(crusher).withMergeDictsFromArrow(amountArrow)
       handleArr.namedBitCrushers[name] = [crusher]
       return handleArr
+    }
+  }
+
+  /// Replace the `PADSynthSyntax` in every `.padSynthWavetable` node with
+  /// `newParams`, preserving the rest of the tree structure.
+  func replacingPadSynthParams(_ newParams: PADSynthSyntax) -> ArrowSyntax {
+    switch self {
+    case .padSynthWavetable(let name, _, let width):
+      return .padSynthWavetable(name: name, params: newParams, width: width)
+    default:
+      return mapChildren { $0.replacingPadSynthParams(newParams) }
     }
   }
 

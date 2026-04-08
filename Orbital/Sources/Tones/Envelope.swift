@@ -92,25 +92,35 @@ class ADSR: Arrow11, NoteHandler {
   }
 
   func setFunctionsFromEnvelopeSpecs() {
+    let attackT = self.env.attackTime
+    let decayT = self.env.decayTime
+    let releaseT = self.env.releaseTime
     attackEnv = PiecewiseFunc<CoreFloat>(ifuncs: [
       IntervalFunc<CoreFloat>(
-        interval: Interval<CoreFloat>(start: 0, end: self.env.attackTime),
-        f: { self.valueAtAttack + ((self.env.scale - self.valueAtAttack) * $0 / self.env.attackTime) }
+        interval: Interval<CoreFloat>(start: 0, end: attackT),
+        f: {
+          guard attackT > 0 else { return self.env.scale }
+          return self.valueAtAttack + ((self.env.scale - self.valueAtAttack) * $0 / attackT)
+        }
       ),
       IntervalFunc<CoreFloat>(
-        interval: Interval<CoreFloat>(start: self.env.attackTime, end: self.env.attackTime + self.env.decayTime),
-        f: { self.env.scale * ( ((self.env.sustainLevel - 1.0)/self.env.decayTime) * ($0 - self.env.attackTime) + 1.0 ) }
+        interval: Interval<CoreFloat>(start: attackT, end: attackT + decayT),
+        f: {
+          guard decayT > 0 else { return self.env.scale * self.env.sustainLevel }
+          return self.env.scale * (((self.env.sustainLevel - 1.0) / decayT) * ($0 - attackT) + 1.0)
+        }
       ),
       IntervalFunc<CoreFloat>(
-        interval: Interval<CoreFloat>(start: self.env.attackTime + self.env.decayTime, end: nil),
+        interval: Interval<CoreFloat>(start: attackT + decayT, end: nil),
         f: {_ in self.env.scale * self.env.sustainLevel}
       )
     ])
     releaseEnv = PiecewiseFunc<CoreFloat>(ifuncs: [
       IntervalFunc<CoreFloat>(
-        interval: Interval<CoreFloat>(start: 0, end: self.env.releaseTime),
+        interval: Interval<CoreFloat>(start: 0, end: releaseT),
         f: {
-          self.valueAtRelease + ($0 * -1.0 * (self.valueAtRelease / self.env.releaseTime))
+          guard releaseT > 0 else { return 0 }
+          return self.valueAtRelease + ($0 * -1.0 * (self.valueAtRelease / releaseT))
         })
     ])
   }

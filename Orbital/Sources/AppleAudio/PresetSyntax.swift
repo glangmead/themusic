@@ -52,11 +52,16 @@ struct PresetSyntax: Codable {
   func compile(numVoices: Int = 12, initEffects: Bool = true, resourceBaseURL: URL? = nil) -> Preset {
     let resolvedArrow: ArrowSyntax?
     if let arrow {
-      resolvedArrow = arrow
+      // When padSynth params are present, inject them into any
+      // padSynthWavetable nodes so the top-level padSynth field
+      // stays the single source of truth for PADsynth parameters.
+      if let padSynth {
+        resolvedArrow = arrow.replacingPadSynthParams(padSynth)
+      } else {
+        resolvedArrow = arrow
+      }
     } else if let padTemplate {
       resolvedArrow = PadTemplateCompiler.compile(padTemplate)
-    } else if let padSynth {
-      resolvedArrow = Self.defaultPadSynthArrow(padSynth)
     } else {
       resolvedArrow = nil
     }
@@ -85,39 +90,4 @@ struct PresetSyntax: Codable {
     return preset
   }
 
-  /// Build a default Arrow graph for a PADsynth preset:
-  /// wavetable oscillator -> amp envelope -> filter.
-  private static func defaultPadSynthArrow(_ params: PADSynthSyntax) -> ArrowSyntax {
-    .compose(arrows: [
-      .prod(of: [
-        .const(name: "overallAmp", val: 1.0),
-        .compose(arrows: [
-          .prod(of: [
-            .const(name: "freq", val: 300),
-            .constOctave(name: "osc1Octave", val: 0),
-            .constCent(name: "osc1CentDetune", val: 0),
-            .identity
-          ]),
-          .padSynthWavetable(
-            name: "osc1",
-            params: params,
-            width: .const(name: "osc1Width", val: 1)
-          )
-        ]),
-        .envelope(
-          name: "ampEnv",
-          attack: 0.5,
-          decay: 1.0,
-          sustain: 0.8,
-          release: 1.5,
-          scale: 1
-        )
-      ]),
-      .lowPassFilter(
-        name: "filter",
-        cutoff: .const(name: "cutoff", val: 8000),
-        resonance: .const(name: "resonance", val: 0.5)
-      )
-    ])
-  }
 }

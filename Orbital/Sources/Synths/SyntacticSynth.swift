@@ -53,6 +53,10 @@ class SyntacticSynth {
 
   var hasPadSynth: Bool { presetSpec.padSynth != nil }
 
+  /// Saved arrow parameter values across rebuilds (set in loadPreset, consumed in buildHandlerAndReadValues).
+  private var savedArrowFloats: [String: CoreFloat]?
+  private var savedArrowShapes: [String: BasicOscillator.OscShape]?
+
   // FX params
   var distortionAvailable: Bool {
     presets.first?.distortionAvailable ?? false
@@ -120,6 +124,9 @@ class SyntacticSynth {
   }
 
   func loadPreset(_ presetSpec: PresetSyntax) {
+    // Snapshot arrow parameter values BEFORE cleanup destroys the handler.
+    savedArrowFloats = arrowHandler?.floatValues
+    savedArrowShapes = arrowHandler?.shapeValues
     cleanup()
     self.presetSpec = presetSpec
     setupGeneration += 1
@@ -195,9 +202,17 @@ class SyntacticSynth {
     } else {
       nil
     }
+    // When saving, sync the arrow's padSynthWavetable params so the
+    // JSON is self-consistent (even though compile() would inject them).
+    let savedArrow: ArrowSyntax?
+    if let arrow = presetSpec.arrow, let ps = padSynth {
+      savedArrow = arrow.replacingPadSynthParams(ps)
+    } else {
+      savedArrow = presetSpec.arrow
+    }
     return PresetSyntax(
       name: name,
-      arrow: presetSpec.arrow,
+      arrow: savedArrow,
       samplerFilenames: presetSpec.samplerFilenames,
       samplerProgram: presetSpec.samplerProgram,
       samplerBank: presetSpec.samplerBank,
@@ -216,6 +231,19 @@ class SyntacticSynth {
       if let handles = spatialPreset?.handles {
         handler.attachHandles(handles)
       }
+      // Restore user-tweaked values saved before the rebuild (see loadPreset).
+      if let floats = savedArrowFloats {
+        for (id, value) in floats {
+          handler.setFloat(id, to: value)
+        }
+      }
+      if let shapes = savedArrowShapes {
+        for (id, shape) in shapes {
+          handler.setShape(id, to: shape)
+        }
+      }
+      savedArrowFloats = nil
+      savedArrowShapes = nil
       arrowHandler = handler
     } else {
       arrowHandler = nil
