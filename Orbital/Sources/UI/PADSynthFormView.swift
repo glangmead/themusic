@@ -148,15 +148,15 @@ private struct PADSynthControlsView: View {
           .onChange(of: engine.baseShape) { onParameterChange() }
         }
 
-        LabeledSlider(value: $engine.tilt, label: "Tilt", range: -2.0...2.0, step: 0.1)
+        SliderWithField(value: $engine.tilt, label: "Tilt", range: -2.0...2.0, step: 0.1)
           .onChange(of: engine.tilt) { onParameterChange() }
       }
 
       Section("Bandwidth") {
-        LabeledSlider(value: $engine.bandwidthCents, label: "Bandwidth (cents)", range: 1...200, step: 1)
+        SliderWithField(value: $engine.bandwidthCents, label: "Bandwidth (cents)", range: 1...200, step: 1)
           .onChange(of: engine.bandwidthCents) { onParameterChange() }
 
-        LabeledSlider(value: $engine.bwScale, label: "BW scale", range: 0.5...2.0, step: 0.05)
+        SliderWithField(value: $engine.bwScale, label: "BW scale", range: 0.5...2.0, step: 0.05)
           .onChange(of: engine.bwScale) { onParameterChange() }
 
         Picker("Profile", selection: $engine.profileShape) {
@@ -178,7 +178,7 @@ private struct PADSynthControlsView: View {
           onParameterChange()
         }
 
-        LabeledSlider(value: $engine.stretch, label: "Stretch", range: 0.9...1.5, step: 0.01)
+        SliderWithField(value: $engine.stretch, label: "Stretch", range: 0.9...1.5, step: 0.01)
           .onChange(of: engine.stretch) { onParameterChange() }
       }
     }

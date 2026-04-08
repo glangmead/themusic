@@ -356,11 +356,11 @@ private struct PadTemplateFormContent: View {
           }
           oscSliderRow(label: "Oscillator 1", index: $sliders.osc1Index)
           oscSliderRow(label: "Oscillator 2", index: $sliders.osc2Index)
-          LabeledSlider(value: $sliders.smooth, label: "Smooth", range: 0...1)
-          LabeledSlider(value: $sliders.bite, label: "Bite", range: 0...1)
-          LabeledSlider(value: $sliders.motion, label: "Motion", range: 0...1)
-          LabeledSlider(value: $sliders.width, label: "Width", range: 0...1)
-          LabeledSlider(value: $sliders.grit, label: "Grit", range: 0...1)
+          SliderWithField(value: $sliders.smooth, label: "Smooth", range: 0...1)
+          SliderWithField(value: $sliders.bite, label: "Bite", range: 0...1)
+          SliderWithField(value: $sliders.motion, label: "Motion", range: 0...1)
+          SliderWithField(value: $sliders.width, label: "Width", range: 0...1)
+          SliderWithField(value: $sliders.grit, label: "Grit", range: 0...1)
         }
 
         Section("Effects") {
@@ -369,12 +369,12 @@ private struct PadTemplateFormContent: View {
               Text(option.name)
             }
           }
-          LabeledSlider(value: $synth.reverbMix, label: "Reverb Wet/Dry", range: 0...100)
+          SliderWithField(value: $synth.reverbMix, label: "Reverb Wet/Dry", range: 0...100)
           if synth.delayAvailable {
-            LabeledSlider(value: $synth.delayTime, label: "Delay Time", range: 0...30)
-            LabeledSlider(value: $synth.delayFeedback, label: "Delay Feedback", range: 0...30)
-            LabeledSlider(value: $synth.delayWetDryMix, label: "Delay Wet/Dry", range: 0...100)
-            LabeledSlider(value: $synth.delayLowPassCutoff, label: "Delay LowPass", range: 0...1000)
+            SliderWithField(value: $synth.delayTime, label: "Delay Time", range: 0...30)
+            SliderWithField(value: $synth.delayFeedback, label: "Delay Feedback", range: 0...30)
+            SliderWithField(value: $synth.delayWetDryMix, label: "Delay Wet/Dry", range: 0...100)
+            SliderWithField(value: $synth.delayLowPassCutoff, label: "Delay LowPass", range: 0...1000)
           }
         }
       }

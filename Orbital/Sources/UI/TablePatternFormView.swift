@@ -118,8 +118,8 @@ struct TablePatternFormView: View {
       }
 
       if emitter.wrappedValue.needsArgs {
-        SliderWithField(label: "Min", value: emitter.arg1, range: -100...1000)
-        SliderWithField(label: "Max", value: emitter.arg2, range: -100...1000)
+        SliderWithField(value: emitter.arg1, label: "Min", range: -100...1000)
+        SliderWithField(value: emitter.arg2, label: "Max", range: -100...1000)
       }
 
       if emitter.wrappedValue.needsCandidates {

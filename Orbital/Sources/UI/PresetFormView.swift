@@ -154,12 +154,12 @@ private struct PresetFormContent: View {
               Text(option.name)
             }
           }
-          LabeledSlider(value: $synth.reverbMix, label: "Reverb Wet/Dry", range: 0...100)
+          SliderWithField(value: $synth.reverbMix, label: "Reverb Wet/Dry", range: 0...100)
           if synth.delayAvailable {
-            LabeledSlider(value: $synth.delayTime, label: "Delay Time", range: 0...30)
-            LabeledSlider(value: $synth.delayFeedback, label: "Delay Feedback", range: 0...30)
-            LabeledSlider(value: $synth.delayWetDryMix, label: "Delay Wet/Dry", range: 0...100)
-            LabeledSlider(value: $synth.delayLowPassCutoff, label: "Delay LowPass", range: 0...1000)
+            SliderWithField(value: $synth.delayTime, label: "Delay Time", range: 0...30)
+            SliderWithField(value: $synth.delayFeedback, label: "Delay Feedback", range: 0...30)
+            SliderWithField(value: $synth.delayWetDryMix, label: "Delay Wet/Dry", range: 0...100)
+            SliderWithField(value: $synth.delayLowPassCutoff, label: "Delay LowPass", range: 0...1000)
           }
         }
 
@@ -172,7 +172,7 @@ private struct PresetFormContent: View {
                 }
               }
             }
-            LabeledSlider(
+            SliderWithField(
               value: $synth.padSynthTilt,
               label: "Tilt",
               range: -2.0...2.0,
@@ -181,13 +181,13 @@ private struct PresetFormContent: View {
           }
 
           Section("Bandwidth") {
-            LabeledSlider(
+            SliderWithField(
               value: $synth.padSynthBandwidthCents,
               label: "Bandwidth (cents)",
               range: 1...200,
               step: 1
             )
-            LabeledSlider(
+            SliderWithField(
               value: $synth.padSynthBwScale,
               label: "BW scale",
               range: 0.5...2.0,
@@ -201,7 +201,7 @@ private struct PresetFormContent: View {
           }
 
           Section("Overtones") {
-            LabeledSlider(
+            SliderWithField(
               value: $synth.padSynthStretch,
               label: "Stretch",
               range: 0.9...1.5,
@@ -291,39 +291,6 @@ private struct PresetFormContent: View {
   }
 }
 
-// MARK: - LabeledSlider
-
-/// A slider with a label and current value display, for use in Forms.
-struct LabeledSlider: View {
-  @Binding var value: CoreFloat
-  let label: String
-  let range: ClosedRange<CoreFloat>
-  var step: CoreFloat?
-
-  var body: some View {
-    VStack(alignment: .leading, spacing: 4) {
-      HStack {
-        Text(label)
-        Spacer()
-        Text(formattedValue)
-          .foregroundStyle(.secondary)
-          .monospacedDigit()
-      }
-      if let step = step {
-        Slider(value: $value, in: range, step: step)
-      } else {
-        Slider(value: $value, in: range)
-      }
-    }
-  }
-
-  private var formattedValue: String {
-    if let step = step, step >= 1 {
-      return String(format: "%.0f", value)
-    }
-    return String(format: "%.3f", value)
-  }
-}
 // MARK: - ArrowParamRow
 
 #Preview {
@@ -339,7 +306,7 @@ struct LabeledSlider: View {
 }
 
 /// A single row in the dynamic arrow parameter form. Renders a Picker for osc
-/// shapes and a LabeledSlider for everything else.
+/// shapes and a SliderWithField for everything else.
 private struct ArrowParamRow: View {
   let descriptor: ArrowParamDescriptor
   let handler: ArrowHandler
@@ -353,7 +320,7 @@ private struct ArrowParamRow: View {
         }
       }
     default:
-      LabeledSlider(
+      SliderWithField(
         value: handler.floatBinding(for: descriptor.id),
         label: descriptor.displayName,
         range: descriptor.suggestedRange,

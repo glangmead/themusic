@@ -16,12 +16,9 @@ struct WorkDetailView: View {
   let composer: CatalogComposer
   let work: CatalogWork
 
-  // Slider drives a log-scaled value; bpm = exp(logBpm).
-  // This stretches the low end so fine adjustments around 2–20 BPM are easy.
-  private static let minBpm = 0.1
-  private static let maxBpm = 240.0
-  @State private var logBpm: Double = log(15)
-  private var bpm: Double { exp(logBpm) }
+  private static let minBpm: CoreFloat = 0.1
+  private static let maxBpm: CoreFloat = 240.0
+  @State private var bpm: CoreFloat = 15
   @State private var currentDocument: SongDocument?
   @State private var webViewItem: IdentifiableURL?
   @State private var downloadError: String?
@@ -69,15 +66,13 @@ struct WorkDetailView: View {
       let downloadedUrls = work.allMidiUrls.filter { ledger.isDownloaded($0) }
       if !downloadedUrls.isEmpty {
         Section("Playback") {
-          LabeledContent("BPM") {
-            HStack {
-              Slider(value: $logBpm, in: log(Self.minBpm)...log(Self.maxBpm))
-                .disabled(isPlaying)
-              Text(bpm, format: .number.precision(.fractionLength(bpm < 10 ? 1 : 0)))
-                .monospacedDigit()
-                .frame(width: 44, alignment: .trailing)
-            }
-          }
+          SliderWithField(
+            value: $bpm,
+            label: "BPM",
+            range: Self.minBpm...Self.maxBpm,
+            logarithmic: true
+          )
+          .disabled(isPlaying)
 
           // Play button for the first downloaded file
           if let firstUrl = downloadedUrls.first {

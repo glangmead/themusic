@@ -69,15 +69,15 @@ private struct RoseSliders: View {
   @State private var leaves: CoreFloat = 0
 
   var body: some View {
-    LabeledSlider(value: $amp, label: "Amplitude", range: 0...20)
+    SliderWithField(value: $amp, label: "Amplitude", range: 0...20)
       .onChange(of: amp) { _, newValue in
         spatialPreset.presets.forEach { $0.positionLFO?.amp.val = newValue }
       }
-    LabeledSlider(value: $freq, label: "Frequency", range: 0...30)
+    SliderWithField(value: $freq, label: "Frequency", range: 0...30)
       .onChange(of: freq) { _, newValue in
         spatialPreset.presets.forEach { $0.positionLFO?.freq.val = newValue }
       }
-    LabeledSlider(value: $leaves, label: "Leaves", range: 0...30)
+    SliderWithField(value: $leaves, label: "Leaves", range: 0...30)
       .onChange(of: leaves) { _, newValue in
         spatialPreset.presets.forEach { $0.positionLFO?.leafFactor.val = newValue }
       }

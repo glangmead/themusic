@@ -172,7 +172,7 @@ private struct ConstEditorRow: View {
 
   var body: some View {
     if let desc = handler.descriptorMap(for: name) {
-      LabeledSlider(
+      SliderWithField(
         value: handler.floatBinding(for: name),
         label: label ?? desc.displayName,
         range: desc.suggestedRange,
@@ -190,10 +190,10 @@ private struct EnvelopeEditorRow: View {
   let handler: ArrowHandler
 
   var body: some View {
-    LabeledSlider(value: handler.floatBinding(for: "\(name).attack"), label: "Attack", range: 0...5)
-    LabeledSlider(value: handler.floatBinding(for: "\(name).decay"), label: "Decay", range: 0...5)
-    LabeledSlider(value: handler.floatBinding(for: "\(name).sustain"), label: "Sustain", range: 0...1)
-    LabeledSlider(value: handler.floatBinding(for: "\(name).release"), label: "Release", range: 0...5)
+    SliderWithField(value: handler.floatBinding(for: "\(name).attack"), label: "Attack", range: 0...5)
+    SliderWithField(value: handler.floatBinding(for: "\(name).decay"), label: "Decay", range: 0...5)
+    SliderWithField(value: handler.floatBinding(for: "\(name).sustain"), label: "Sustain", range: 0...1)
+    SliderWithField(value: handler.floatBinding(for: "\(name).release"), label: "Release", range: 0...5)
   }
 }
 
@@ -219,8 +219,8 @@ private struct ChoruserEditorRow: View {
   let handler: ArrowHandler
 
   var body: some View {
-    LabeledSlider(value: handler.floatBinding(for: "\(name).centRadius"), label: "\(name) Cents", range: 0...30, step: 1)
-    LabeledSlider(value: handler.floatBinding(for: "\(name).numVoices"), label: "\(name) Voices", range: 1...12, step: 1)
+    SliderWithField(value: handler.floatBinding(for: "\(name).centRadius"), label: "\(name) Cents", range: 0...30, step: 1)
+    SliderWithField(value: handler.floatBinding(for: "\(name).numVoices"), label: "\(name) Voices", range: 1...12, step: 1)
   }
 }
 

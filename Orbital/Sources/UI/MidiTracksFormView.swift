@@ -21,7 +21,7 @@ struct MidiTracksFormView: View {
   var body: some View {
     Form {
       Section("Playback") {
-        SliderWithField(label: "BPM", value: $bpm, range: 0.1...300)
+        SliderWithField(value: $bpm, label: "BPM", range: 0.1...300)
       }
     }
     .navigationTitle(midi.filename.components(separatedBy: "/").last ?? midi.filename)

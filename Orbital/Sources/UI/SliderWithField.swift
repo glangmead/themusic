@@ -8,12 +8,32 @@ import SwiftUI
 /// A slider paired with an editable text field. Adapts decimal precision
 /// to show meaningful digits even for very small values (e.g. 0.00002).
 struct SliderWithField: View {
-  let label: String
   @Binding var value: CoreFloat
+  let label: String
   let range: ClosedRange<CoreFloat>
+  var step: CoreFloat?
+  var logarithmic: Bool = false
 
   @State private var textValue = ""
   @FocusState private var isEditing: Bool
+
+  /// Internal slider position: linear in [0,1] when logarithmic, else the value itself.
+  private var sliderBinding: Binding<CoreFloat> {
+    if logarithmic {
+      let lo = log(max(range.lowerBound, 1e-10))
+      let hi = log(max(range.upperBound, 1e-10))
+      return Binding(
+        get: { (log(max(value, 1e-10)) - lo) / (hi - lo) },
+        set: { value = exp(lo + $0 * (hi - lo)).clamped(to: range) }
+      )
+    } else {
+      return $value
+    }
+  }
+
+  private var sliderRange: ClosedRange<CoreFloat> {
+    logarithmic ? 0...1 : range
+  }
 
   var body: some View {
     VStack(alignment: .leading, spacing: 4) {
@@ -32,12 +52,17 @@ struct SliderWithField: View {
             if !focused { applyText() }
           }
       }
-      Slider(value: $value, in: range)
-        .onChange(of: value) { _, newValue in
-          if !isEditing {
-            textValue = Self.formatAdaptive(newValue)
+      if let step, !logarithmic {
+        Slider(value: sliderBinding, in: sliderRange, step: step)
+          .onChange(of: value) { _, newValue in
+            if !isEditing { textValue = Self.formatAdaptive(newValue) }
           }
-        }
+      } else {
+        Slider(value: sliderBinding, in: sliderRange)
+          .onChange(of: value) { _, newValue in
+            if !isEditing { textValue = Self.formatAdaptive(newValue) }
+          }
+      }
     }
     .onAppear { textValue = Self.formatAdaptive(value) }
   }
