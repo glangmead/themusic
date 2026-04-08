@@ -15,6 +15,20 @@ enum PresetStorage {
     return docs.appendingPathComponent("presets", isDirectory: true)
   }
 
+  /// Save a preset to the iCloud presets directory.
+  @MainActor static func save(_ spec: PresetSyntax, filename: String) -> Bool {
+    let url = presetsDir.appending(path: filename)
+    let encoder = JSONEncoder()
+    encoder.outputFormatting = [.prettyPrinted, .sortedKeys]
+    guard let data = try? encoder.encode(spec) else { return false }
+    do {
+      try data.write(to: url)
+      return true
+    } catch {
+      return false
+    }
+  }
+
   /// Duplicate a preset file with versioned naming.
   /// "foo.json" -> "foo_v2.json", "foo_v2.json" -> "foo_v3.json", etc.
   /// Returns the new filename, or nil on failure.

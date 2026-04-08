@@ -81,6 +81,7 @@ private struct PresetFormContent: View {
     model: "Orbital",
     manufacturer: "Orbital"
   )
+  @State private var padSynthRebuildTask: Task<Void, Never>?
 
   /// The note handler the keyboard uses: prefer the live spatial preset
   /// from the song track when available, fall back to the synth's own.
@@ -162,6 +163,62 @@ private struct PresetFormContent: View {
           }
         }
 
+        if synth.hasPadSynth {
+          Section("Harmonics") {
+            if synth.padSynthSelectedInstrument == nil {
+              Picker("Base shape", selection: $synth.padSynthBaseShape) {
+                ForEach(PADBaseShape.allCases) { shape in
+                  Text(shape.rawValue).tag(shape)
+                }
+              }
+            }
+            LabeledSlider(
+              value: $synth.padSynthTilt,
+              label: "Tilt",
+              range: -2.0...2.0,
+              step: 0.1
+            )
+          }
+
+          Section("Bandwidth") {
+            LabeledSlider(
+              value: $synth.padSynthBandwidthCents,
+              label: "Bandwidth (cents)",
+              range: 1...200,
+              step: 1
+            )
+            LabeledSlider(
+              value: $synth.padSynthBwScale,
+              label: "BW scale",
+              range: 0.5...2.0,
+              step: 0.05
+            )
+            Picker("Profile", selection: $synth.padSynthProfileShape) {
+              ForEach(PADProfileShape.allCases) { profile in
+                Text(profile.rawValue).tag(profile)
+              }
+            }
+          }
+
+          Section("Overtones") {
+            LabeledSlider(
+              value: $synth.padSynthStretch,
+              label: "Stretch",
+              range: 0.9...1.5,
+              step: 0.01
+            )
+          }
+
+          Section("Instrument") {
+            Picker("Timbre source", selection: $synth.padSynthSelectedInstrument) {
+              Text("Custom").tag(String?.none)
+              ForEach(SharcDatabase.shared.instruments) { inst in
+                Text(inst.displayName).tag(Optional(inst.id))
+              }
+            }
+          }
+        }
+
         if let handler = synth.arrowHandler {
           ForEach(handler.groupedDescriptors(), id: \.0) { title, descs in
             Section(title) {
@@ -181,6 +238,13 @@ private struct PresetFormContent: View {
     }
     .onAppear { setupMIDI() }
     .navigationTitle(presetSpec.name)
+    .onChange(of: synth.padSynthBaseShape) { rebuildPadSynth() }
+    .onChange(of: synth.padSynthTilt) { rebuildPadSynth() }
+    .onChange(of: synth.padSynthBandwidthCents) { rebuildPadSynth() }
+    .onChange(of: synth.padSynthBwScale) { rebuildPadSynth() }
+    .onChange(of: synth.padSynthProfileShape) { rebuildPadSynth() }
+    .onChange(of: synth.padSynthStretch) { rebuildPadSynth() }
+    .onChange(of: synth.padSynthSelectedInstrument) { rebuildPadSynth() }
     .toolbar {
       if let playbackState {
         ToolbarItemGroup {
@@ -191,6 +255,38 @@ private struct PresetFormContent: View {
           }
         }
       }
+    }
+  }
+
+  private func rebuildPadSynth() {
+    guard synth.hasPadSynth else { return }
+    padSynthRebuildTask?.cancel()
+    padSynthRebuildTask = Task {
+      try? await Task.sleep(for: .milliseconds(300))
+      guard !Task.isCancelled else { return }
+      let newPadSynth = PADSynthSyntax(
+        baseShape: synth.padSynthBaseShape,
+        tilt: synth.padSynthTilt,
+        bandwidthCents: synth.padSynthBandwidthCents,
+        bwScale: synth.padSynthBwScale,
+        profileShape: synth.padSynthProfileShape,
+        stretch: synth.padSynthStretch,
+        selectedInstrument: synth.padSynthSelectedInstrument,
+        envelopeCoefficients: synth.presetSpec.padSynth?.envelopeCoefficients
+      )
+      let newSpec = PresetSyntax(
+        name: synth.presetSpec.name,
+        arrow: nil,
+        samplerFilenames: nil,
+        samplerProgram: nil,
+        samplerBank: nil,
+        library: nil,
+        rose: synth.presetSpec.rose,
+        effects: synth.presetSpec.effects,
+        padTemplate: nil,
+        padSynth: newPadSynth
+      )
+      synth.loadPreset(newSpec)
     }
   }
 }

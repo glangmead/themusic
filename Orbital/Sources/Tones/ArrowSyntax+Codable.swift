@@ -20,7 +20,7 @@ extension ArrowSyntax: Codable {
     case rand, exponentialRand, line
     case reciprocalConst, reciprocal
     case eventNote, eventVelocity
-    case libraryArrow, emitterValue, quickExpression, osc, wavetable, bitCrusher
+    case libraryArrow, emitterValue, quickExpression, osc, wavetable, padSynthWavetable, bitCrusher
   }
 
   // Payloads for multi-field cases
@@ -36,6 +36,7 @@ extension ArrowSyntax: Codable {
   private struct OscPayload: Codable, Equatable { let name: String; let shape: BasicOscillator.OscShape; let width: ArrowSyntax }
   private struct WavetablePayload: Codable, Equatable { let name: String; let tableName: String; let width: ArrowSyntax }
   private struct BitCrusherPayload: Codable, Equatable { let name: String; let amount: ArrowSyntax }
+  private struct PadSynthWavetablePayload: Codable, Equatable { let name: String; let params: PADSynthSyntax; let width: ArrowSyntax }
   private struct NameOnly: Codable, Equatable { let name: String }
 
   // swiftlint:disable:next cyclomatic_complexity function_body_length
@@ -115,6 +116,9 @@ extension ArrowSyntax: Codable {
     } else if container.contains(.wavetable) {
       let p = try container.decode(WavetablePayload.self, forKey: .wavetable)
       self = .wavetable(name: p.name, tableName: p.tableName, width: p.width)
+    } else if container.contains(.padSynthWavetable) {
+      let p = try container.decode(PadSynthWavetablePayload.self, forKey: .padSynthWavetable)
+      self = .padSynthWavetable(name: p.name, params: p.params, width: p.width)
     } else if container.contains(.bitCrusher) {
       let p = try container.decode(BitCrusherPayload.self, forKey: .bitCrusher)
       self = .bitCrusher(name: p.name, amount: p.amount)
@@ -181,6 +185,8 @@ extension ArrowSyntax: Codable {
       try container.encode(OscPayload(name: name, shape: shape, width: width), forKey: .osc)
     case .wavetable(let name, let tableName, let width):
       try container.encode(WavetablePayload(name: name, tableName: tableName, width: width), forKey: .wavetable)
+    case .padSynthWavetable(let name, let params, let width):
+      try container.encode(PadSynthWavetablePayload(name: name, params: params, width: width), forKey: .padSynthWavetable)
     case .bitCrusher(let name, let amount):
       try container.encode(BitCrusherPayload(name: name, amount: amount), forKey: .bitCrusher)
     }

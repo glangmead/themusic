@@ -42,6 +42,17 @@ class SyntacticSynth {
   // (so that neither rebuildSynth nor the Randomize button need special timing infrastructure).
   private var hasSetupEffectsOnce = false
 
+  // PADsynth parameters (only active when presetSpec.padSynth != nil)
+  var padSynthBaseShape: PADBaseShape = .oneOverNSquared
+  var padSynthTilt: CoreFloat = 0.0
+  var padSynthBandwidthCents: CoreFloat = 50.0
+  var padSynthBwScale: CoreFloat = 1.0
+  var padSynthProfileShape: PADProfileShape = .gaussian
+  var padSynthStretch: CoreFloat = 1.0
+  var padSynthSelectedInstrument: String?
+
+  var hasPadSynth: Bool { presetSpec.padSynth != nil }
+
   // FX params
   var distortionAvailable: Bool {
     presets.first?.distortionAvailable ?? false
@@ -154,6 +165,50 @@ class SyntacticSynth {
     buildHandlerAndReadValues()
   }
 
+  /// Snapshot the current synth state back into a serializable PresetSyntax.
+  func currentPresetSyntax(name: String) -> PresetSyntax {
+    let effects = EffectsSyntax(
+      reverbPreset: CoreFloat(reverbPreset.rawValue),
+      reverbWetDryMix: reverbMix,
+      delayTime: delayTime,
+      delayFeedback: delayFeedback,
+      delayLowPassCutoff: delayLowPassCutoff,
+      delayWetDryMix: delayWetDryMix
+    )
+    let rose = RoseSyntax(
+      amp: roseAmp,
+      leafFactor: roseLeaves,
+      freq: roseFreq,
+      phase: presetSpec.rose.phase
+    )
+    let padSynth: PADSynthSyntax? = if hasPadSynth {
+      PADSynthSyntax(
+        baseShape: padSynthBaseShape,
+        tilt: padSynthTilt,
+        bandwidthCents: padSynthBandwidthCents,
+        bwScale: padSynthBwScale,
+        profileShape: padSynthProfileShape,
+        stretch: padSynthStretch,
+        selectedInstrument: padSynthSelectedInstrument,
+        envelopeCoefficients: presetSpec.padSynth?.envelopeCoefficients
+      )
+    } else {
+      nil
+    }
+    return PresetSyntax(
+      name: name,
+      arrow: presetSpec.arrow,
+      samplerFilenames: presetSpec.samplerFilenames,
+      samplerProgram: presetSpec.samplerProgram,
+      samplerBank: presetSpec.samplerBank,
+      library: presetSpec.library,
+      rose: rose,
+      effects: effects,
+      padTemplate: presetSpec.padTemplate,
+      padSynth: padSynth
+    )
+  }
+
   private func buildHandlerAndReadValues() {
     // Build ArrowHandler from the syntax tree + aggregated handles
     if let arrowSyntax = presetSpec.arrow {
@@ -189,5 +244,15 @@ class SyntacticSynth {
     distortionPreset = first.getDistortionPreset()
     distortionPreGain = first.getDistortionPreGain()
     distortionWetDryMix = first.getDistortionWetDryMix()
+
+    if let ps = presetSpec.padSynth {
+      padSynthBaseShape = ps.baseShape
+      padSynthTilt = ps.tilt
+      padSynthBandwidthCents = ps.bandwidthCents
+      padSynthBwScale = ps.bwScale
+      padSynthProfileShape = ps.profileShape
+      padSynthStretch = ps.stretch
+      padSynthSelectedInstrument = ps.selectedInstrument
+    }
   }
 }

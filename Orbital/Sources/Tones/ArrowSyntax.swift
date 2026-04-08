@@ -39,6 +39,7 @@ enum ArrowSyntax: Equatable {
 
   indirect case osc(name: String, shape: BasicOscillator.OscShape, width: ArrowSyntax)
   indirect case wavetable(name: String, tableName: String, width: ArrowSyntax)
+  indirect case padSynthWavetable(name: String, params: PADSynthSyntax, width: ArrowSyntax)
   indirect case bitCrusher(name: String, amount: ArrowSyntax)
 }
 

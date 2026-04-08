@@ -220,6 +220,14 @@ extension ArrowSyntax {
       arr.namedWavetableOscs[name] = [osc]
       return arr
 
+    case .padSynthWavetable(let name, let params, let width):
+      let table = PADSynthWavetableCompiler.generateTable(params: params)
+      let compiledWidth = width.compile(library: library)
+      let osc = WavetableOscillator(table: table, widthArr: compiledWidth.wrappedArrow)
+      let result = ArrowWithHandles(osc)
+      result.namedWavetableOscs[name] = [osc]
+      return result.withMergeDictsFromArrow(compiledWidth)
+
     case .bitCrusher(let name, let amount):
       let amountArrow = amount.compile()
       let crusher = BitCrusher(amountArr: amountArrow)
@@ -256,6 +264,8 @@ extension ArrowSyntax {
       return .osc(name: name, shape: shape, width: transform(width))
     case .wavetable(let name, let tableName, let width):
       return .wavetable(name: name, tableName: tableName, width: transform(width))
+    case .padSynthWavetable(let name, let params, let width):
+      return .padSynthWavetable(name: name, params: params, width: transform(width))
     case .bitCrusher(let name, let amount):
       return .bitCrusher(name: name, amount: transform(amount))
     case .reciprocal(let inner):

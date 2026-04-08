@@ -7,7 +7,7 @@ import Foundation
 
 // MARK: - Parameter Types
 
-enum PADBaseShape: String, CaseIterable, Identifiable {
+enum PADBaseShape: String, CaseIterable, Identifiable, Codable {
   case oneOverN = "1/n"
   case oneOverSqrtN = "1/√n"
   case oddHarmonics = "Odd harmonics"
@@ -28,7 +28,7 @@ enum PADBaseShape: String, CaseIterable, Identifiable {
   }
 }
 
-enum PADProfileShape: String, CaseIterable, Identifiable {
+enum PADProfileShape: String, CaseIterable, Identifiable, Codable {
   case gaussian = "Gaussian"
   case flat = "Flat"
   case detuned = "Detuned"

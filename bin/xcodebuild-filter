@@ -1,0 +1,182 @@
+#!/bin/bash
+
+# xcodebuild-filter - Simplify xcodebuild output
+# Usage: xcodebuild [args] | ./bin/xcodebuild-filter [--errors-only]
+
+# Configuration
+ERRORS_ONLY=false
+
+# Parse arguments
+for arg in "$@"; do
+    case $arg in
+        --errors-only)
+            ERRORS_ONLY=true
+            shift
+            ;;
+        *)
+            ;;
+    esac
+done
+
+# Color codes
+RED='\033[0;31m'
+YELLOW='\033[0;33m'
+GREEN='\033[0;32m'
+BLUE='\033[0;34m'
+NC='\033[0m' # No Color
+
+# Counters
+error_count=0
+warning_count=0
+current_phase=""
+files_compiled=0
+total_files=0
+build_failed=false
+
+# Buffer for errors and warnings
+errors=()
+warnings=()
+
+# Function to print phase progress
+print_phase() {
+    local phase="$1"
+    if [[ "$phase" != "$current_phase" ]]; then
+        current_phase="$phase"
+        echo -e "${BLUE}  ▸ ${phase}${NC}"
+    fi
+}
+
+# Function to extract file count from CompileSwift output
+extract_file_count() {
+    local line="$1"
+    if [[ "$line" =~ \(([0-9]+)\ of\ ([0-9]+)\) ]]; then
+        files_compiled="${BASH_REMATCH[1]}"
+        total_files="${BASH_REMATCH[2]}"
+    fi
+}
+
+# Print header
+echo -e "${BLUE}🔨 Building...${NC}"
+
+# Process input line by line
+while IFS= read -r line; do
+    # Check for build failure
+    if [[ "$line" =~ "BUILD FAILED" ]] || [[ "$line" =~ "FAILED" ]]; then
+        build_failed=true
+    fi
+    
+    # Handle errors - only match compiler error formats, not "error:" in code snippets
+    # Match format: /path/to/file.swift:108:46: error: message
+    if [[ "$line" =~ ([^:]+):([0-9]+):([0-9]+):\ error:\ (.+) ]]; then
+        # Extract file path and line number from compiler error format
+        file="${BASH_REMATCH[1]}"
+        line_num="${BASH_REMATCH[2]}"
+        col_num="${BASH_REMATCH[3]}"
+        message="${BASH_REMATCH[4]}"
+        
+        # Get just the filename
+        filename=$(basename "$file")
+        
+        error_msg="  ${RED}❌ Error${NC}: ${message} ${RED}${filename}:${line_num}${NC}"
+        echo -e "$error_msg"
+        errors+=("$error_msg")
+        ((error_count++))
+    # Also match lines that START with "error:" (using ^ anchor)
+    # This avoids matching Swift code like "StopError: LocalizedError"
+    elif [[ "$line" =~ ^error:\ (.+) ]] || [[ "$line" =~ ^Error:\ (.+) ]]; then
+        echo -e "  ${RED}❌ Error${NC}: $line"
+        errors+=("$line")
+        ((error_count++))
+    fi
+    
+    # Handle warnings (only if not --errors-only)
+    if [[ "$ERRORS_ONLY" == "false" ]] && ([[ "$line" =~ warning: ]] || [[ "$line" =~ Warning: ]]); then
+        # Extract file path and line number
+        if [[ "$line" =~ ([^:]+):([0-9]+):([0-9]+):\ warning:\ (.+) ]]; then
+            file="${BASH_REMATCH[1]}"
+            line_num="${BASH_REMATCH[2]}"
+            col_num="${BASH_REMATCH[3]}"
+            message="${BASH_REMATCH[4]}"
+            
+            # Get just the filename
+            filename=$(basename "$file")
+            
+            warning_msg="  ${YELLOW}⚠️  Warning${NC}: ${message} ${YELLOW}${filename}:${line_num}${NC}"
+            echo -e "$warning_msg"
+            warnings+=("$warning_msg")
+            ((warning_count++))
+        else
+            # Fallback for other warning formats
+            echo -e "  ${YELLOW}⚠️  Warning${NC}: $line"
+            warnings+=("$line")
+            ((warning_count++))
+        fi
+    
+    # Handle build phases
+    elif [[ "$line" =~ "CompileSwift normal" ]]; then
+        extract_file_count "$line"
+        if [[ $total_files -gt 0 ]]; then
+            print_phase "Compiling Swift files ($files_compiled/$total_files)"
+        else
+            print_phase "Compiling Swift files"
+        fi
+    
+    elif [[ "$line" =~ "CompileC normal" ]]; then
+        print_phase "Compiling C/Objective-C files"
+    
+    elif [[ "$line" =~ "Ld normal" ]] || [[ "$line" =~ "Ld /" ]]; then
+        print_phase "Linking"
+    
+    elif [[ "$line" =~ "CodeSign" ]]; then
+        print_phase "Code signing"
+    
+    elif [[ "$line" =~ "ProcessInfoPlistFile" ]]; then
+        print_phase "Processing Info.plist"
+    
+    elif [[ "$line" =~ "CopySwiftLibs" ]]; then
+        print_phase "Copying Swift libraries"
+    
+    elif [[ "$line" =~ "Touch" ]] && [[ "$line" =~ ".app" ]]; then
+        print_phase "Finalizing app bundle"
+    
+    elif [[ "$line" =~ "BUILD SUCCEEDED" ]]; then
+        echo -e "${GREEN}  ✓ Build succeeded${NC}"
+    
+    elif [[ "$line" =~ "Test Suite" ]] && [[ "$line" =~ "started" ]]; then
+        suite_name=$(echo "$line" | grep -o "'[^']*'" | sed "s/'//g")
+        print_phase "Testing: $suite_name"
+    
+    elif [[ "$line" =~ "Test Suite" ]] && [[ "$line" =~ "passed" ]]; then
+        echo -e "${GREEN}  ✓ Tests passed${NC}"
+    
+    elif [[ "$line" =~ "Test Suite" ]] && [[ "$line" =~ "failed" ]]; then
+        echo -e "${RED}  ✗ Tests failed${NC}"
+    fi
+done
+
+# Print summary
+echo ""
+if [[ $build_failed == true ]]; then
+    echo -e "${RED}Build Failed:${NC}"
+else
+    echo -e "${GREEN}Build Complete:${NC}"
+fi
+
+if [[ $error_count -gt 0 ]]; then
+    echo -e "  ${RED}${error_count} error$([ $error_count -ne 1 ] && echo "s")${NC}"
+fi
+
+if [[ $warning_count -gt 0 ]] && [[ "$ERRORS_ONLY" == "false" ]]; then
+    echo -e "  ${YELLOW}${warning_count} warning$([ $warning_count -ne 1 ] && echo "s")${NC}"
+fi
+
+if [[ $error_count -eq 0 ]] && [[ $warning_count -eq 0 ]]; then
+    echo -e "  ${GREEN}No issues found${NC}"
+fi
+
+# Exit with appropriate code
+if [[ $build_failed == true ]] || [[ $error_count -gt 0 ]]; then
+    exit 1
+else
+    exit 0
+fi

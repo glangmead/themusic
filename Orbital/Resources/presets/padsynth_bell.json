@@ -1,0 +1,27 @@
+{
+  "name": "PADsynth Bell",
+  "rose": {
+    "freq": 0.2,
+    "leafFactor": 3,
+    "phase": 0,
+    "amp": 4
+  },
+  "effects": {
+    "reverbPreset": 4,
+    "reverbWetDryMix": 50,
+    "delayTime": 0.3,
+    "delayFeedback": 15,
+    "delayLowPassCutoff": 5000,
+    "delayWetDryMix": 20
+  },
+  "padSynth": {
+    "baseShape": "1/n²",
+    "tilt": 0.0,
+    "bandwidthCents": 80.0,
+    "bwScale": 1.2,
+    "profileShape": "Gaussian",
+    "stretch": 1.15,
+    "selectedInstrument": null,
+    "envelopeCoefficients": null
+  }
+}

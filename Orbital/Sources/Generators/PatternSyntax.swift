@@ -303,7 +303,8 @@ func makeRandomPadPreset(gmProgram: Int? = nil, characteristicDuration: CoreFloa
     rose: RoseSyntax(amp: 0, leafFactor: 3, freq: 0.2, phase: 0),
     effects: EffectsSyntax(reverbPreset: 4, reverbWetDryMix: 100,
                            delayTime: 0, delayFeedback: 0, delayLowPassCutoff: 0, delayWetDryMix: 0),
-    padTemplate: template
+    padTemplate: template,
+    padSynth: nil
   )
 }
 

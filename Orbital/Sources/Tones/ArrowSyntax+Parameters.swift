@@ -138,6 +138,9 @@ extension ArrowSyntax {
     case .wavetable(_, _, let width):
       width.collectDescriptors(into: &descriptors, seenIds: &seenIds)
 
+    case .padSynthWavetable(_, _, let width):
+      width.collectDescriptors(into: &descriptors, seenIds: &seenIds)
+
     case .choruser(let name, _, let centRadius, let numVoices):
       let group = Self.choruserGroupName(for: name)
       if seenIds.insert("\(name).centRadius").inserted {

@@ -1,0 +1,113 @@
+#!/usr/bin/env python3
+"""Parse xctrace time-profile XML and produce top-down and inverted call trees.
+
+Usage:
+  bin/parse-time-profile /tmp/time-profile.xml
+
+To generate the XML:
+  xcrun xctrace record --template 'Time Profiler' --time-limit 60s \
+    --output /tmp/app.trace --launch -- /path/to/binary
+  xcrun xctrace export --input /tmp/app.trace \
+    --xpath '/trace-toc/run/data/table[@schema="time-profile"]' \
+    --output /tmp/time-profile.xml
+"""
+import xml.etree.ElementTree as ET
+import sys
+from collections import defaultdict
+
+if len(sys.argv) < 2:
+    print("Usage: parse-time-profile <time-profile.xml>")
+    sys.exit(1)
+
+tree = ET.parse(sys.argv[1])
+root = tree.getroot()
+
+# Collect all frames (name -> id, id -> name)
+frame_names = {}
+for elem in root.iter('frame'):
+    fid = elem.get('id') or elem.get('ref')
+    name = elem.get('name', '')
+    if name and fid:
+        frame_names[fid] = name
+
+# Parse all backtrace stacks
+stacks = []
+for row in root.iter('row'):
+    bt = row.find('backtrace')
+    if bt is None:
+        continue
+    weight_elem = row.find('weight')
+    weight = 1
+    if weight_elem is not None:
+        try:
+            weight = int(weight_elem.text or '1000000') // 1000000
+        except (ValueError, TypeError):
+            weight = 1
+
+    frames = []
+    for frame in bt:
+        fid = frame.get('id') or frame.get('ref')
+        name = frame.get('name', '')
+        if name:
+            frame_names[fid] = name
+        elif fid in frame_names:
+            name = frame_names[fid]
+        else:
+            name = frame.get('addr', '???')
+        frames.append(name)
+    if frames:
+        stacks.append((frames, weight))
+
+print(f"Total samples: {len(stacks)}")
+total_weight = sum(w for _, w in stacks)
+print(f"Total weight: {total_weight} ms\n")
+
+# === INVERTED (bottom-up) call tree: self time per function ===
+self_time = defaultdict(int)
+inclusive_time = defaultdict(int)
+
+for frames, weight in stacks:
+    if frames:
+        self_time[frames[0]] += weight
+    seen = set()
+    for f in frames:
+        if f not in seen:
+            inclusive_time[f] += weight
+            seen.add(f)
+
+print("=" * 80)
+print("INVERTED CALL TREE (bottom-up) -- Self Time")
+print("=" * 80)
+sorted_self = sorted(self_time.items(), key=lambda x: -x[1])
+for name, weight in sorted_self[:40]:
+    pct = 100.0 * weight / total_weight if total_weight else 0
+    print(f"  {pct:5.1f}%  {weight:6d} ms  {name}")
+
+print()
+print("=" * 80)
+print("INCLUSIVE TIME (top-down) -- Total time including callees")
+print("=" * 80)
+sorted_inc = sorted(inclusive_time.items(), key=lambda x: -x[1])
+for name, weight in sorted_inc[:40]:
+    pct = 100.0 * weight / total_weight if total_weight else 0
+    print(f"  {pct:5.1f}%  {weight:6d} ms  {name}")
+
+# === Hot paths: most common 2-frame pairs ===
+print()
+print("=" * 80)
+print("HOT PATHS -- Most common 2-frame pairs (caller -> callee)")
+print("=" * 80)
+pairs = defaultdict(int)
+for frames, weight in stacks:
+    for i in range(len(frames) - 1):
+        pair = (frames[i], frames[i + 1])
+        pairs[pair] += weight
+
+sorted_pairs = sorted(pairs.items(), key=lambda x: -x[1])
+for (callee, caller), weight in sorted_pairs[:30]:
+    pct = 100.0 * weight / total_weight if total_weight else 0
+    short_callee = callee[:60]
+    short_caller = caller[:60]
+    print(f"  {pct:5.1f}%  {weight:6d} ms  {short_callee}")
+    print(f"                       <- {short_caller}")
+    print()

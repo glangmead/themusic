@@ -190,7 +190,8 @@ struct PadTemplateFormView: View {
         delayLowPassCutoff: 0,
         delayWetDryMix: 0
       ),
-      padTemplate: template
+      padTemplate: template,
+      padSynth: nil
     )
   }
 

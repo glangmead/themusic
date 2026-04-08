@@ -34,6 +34,7 @@ struct PresetSyntax: Codable {
   let rose: RoseSyntax
   let effects: EffectsSyntax
   let padTemplate: PadTemplateSyntax? // high-level template; compiled to arrow on first use when arrow is absent
+  let padSynth: PADSynthSyntax? // PADsynth algorithm params; compiled to per-note wavetables
 
   /// Build the resolved [String: ArrowSyntax] dictionary from the library
   /// array, resolving forward references in order.
@@ -49,7 +50,16 @@ struct PresetSyntax: Codable {
   }
 
   func compile(numVoices: Int = 12, initEffects: Bool = true, resourceBaseURL: URL? = nil) -> Preset {
-    let resolvedArrow = arrow ?? padTemplate.map { PadTemplateCompiler.compile($0) }
+    let resolvedArrow: ArrowSyntax?
+    if let arrow {
+      resolvedArrow = arrow
+    } else if let padTemplate {
+      resolvedArrow = PadTemplateCompiler.compile(padTemplate)
+    } else if let padSynth {
+      resolvedArrow = Self.defaultPadSynthArrow(padSynth)
+    } else {
+      resolvedArrow = nil
+    }
     let preset: Preset
     if let arrowSyntax = resolvedArrow {
       preset = Preset(arrowSyntax: arrowSyntax, library: resolvedLibrary(), numVoices: numVoices, initEffects: initEffects)
@@ -73,5 +83,41 @@ struct PresetSyntax: Codable {
       phase: rose.phase
     )
     return preset
+  }
+
+  /// Build a default Arrow graph for a PADsynth preset:
+  /// wavetable oscillator -> amp envelope -> filter.
+  private static func defaultPadSynthArrow(_ params: PADSynthSyntax) -> ArrowSyntax {
+    .compose(arrows: [
+      .prod(of: [
+        .const(name: "overallAmp", val: 1.0),
+        .compose(arrows: [
+          .prod(of: [
+            .const(name: "freq", val: 300),
+            .constOctave(name: "osc1Octave", val: 0),
+            .constCent(name: "osc1CentDetune", val: 0),
+            .identity
+          ]),
+          .padSynthWavetable(
+            name: "osc1",
+            params: params,
+            width: .const(name: "osc1Width", val: 1)
+          )
+        ]),
+        .envelope(
+          name: "ampEnv",
+          attack: 0.5,
+          decay: 1.0,
+          sustain: 0.8,
+          release: 1.5,
+          scale: 1
+        )
+      ]),
+      .lowPassFilter(
+        name: "filter",
+        cutoff: .const(name: "cutoff", val: 8000),
+        resonance: .const(name: "resonance", val: 0.5)
+      )
+    ])
   }
 }

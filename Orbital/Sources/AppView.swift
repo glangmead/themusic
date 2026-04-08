@@ -49,10 +49,7 @@ private struct CompactAppLayout: View {
         PresetLibraryView()
       }
       Tab("Sound design", systemImage: "slider.horizontal.3") {
-        PadTemplateFormView()
-      }
-      Tab("Sound design 2", systemImage: "waveform.path.ecg") {
-        PADSynthFormView()
+        SoundDesignView()
       }
     }
     .task {
@@ -85,7 +82,6 @@ enum SidebarCategory: String, CaseIterable, Identifiable {
   case create = "Create"
   case soundLibrary = "Sound Library"
   case soundDesign = "Sound Design"
-  case soundDesign2 = "Sound Design 2"
 
   var id: String { rawValue }
 
@@ -96,7 +92,6 @@ enum SidebarCategory: String, CaseIterable, Identifiable {
     case .create: "wand.and.stars"
     case .soundLibrary: "pianokeys"
     case .soundDesign: "slider.horizontal.3"
-    case .soundDesign2: "waveform.path.ecg"
     }
   }
 }
@@ -170,9 +165,7 @@ private struct RegularAppLayout: View {
         }
       }
     case .soundDesign:
-      PadTemplateFormView()
-    case .soundDesign2:
-      PADSynthFormView()
+      SoundDesignView()
     case nil:
       ContentUnavailableView("Select a Category", systemImage: "sidebar.left", description: Text("Choose a category from the sidebar."))
     }
