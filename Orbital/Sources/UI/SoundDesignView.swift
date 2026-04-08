@@ -12,6 +12,7 @@ struct SoundDesignView: View {
   @State private var selectedPreset: PresetRef?
   @State private var synth: SyntacticSynth?
   @State private var isShowingSaveDialog = false
+  @State private var isShowingOverwriteConfirmation = false
   @State private var savePresetName = ""
 
   var body: some View {
@@ -43,9 +44,19 @@ struct SoundDesignView: View {
           .alert("Save Preset", isPresented: $isShowingSaveDialog) {
             TextField("Preset name", text: $savePresetName)
             Button("Cancel", role: .cancel) {}
-            Button("Save") { saveCurrentPreset() }
+            Button("Save") { attemptSave() }
           } message: {
             Text("Enter a name for the preset.")
+          }
+          .confirmationDialog(
+            "A preset with this filename already exists.",
+            isPresented: $isShowingOverwriteConfirmation,
+            titleVisibility: .visible
+          ) {
+            Button("Overwrite", role: .destructive) { saveCurrentPreset() }
+            Button("Cancel", role: .cancel) {}
+          } message: {
+            Text("Do you want to replace the existing preset?")
           }
       } else if presets.isEmpty {
         ProgressView()
@@ -92,13 +103,23 @@ struct SoundDesignView: View {
     synth = SyntacticSynth(engine: engine, presetSpec: ref.spec)
   }
 
+  private func filenameForPresetName(_ name: String) -> String {
+    name.replacing(" ", with: "_").lowercased().appending(".json")
+  }
+
+  private func attemptSave() {
+    let filename = filenameForPresetName(savePresetName)
+    if PresetStorage.exists(filename: filename) {
+      isShowingOverwriteConfirmation = true
+    } else {
+      saveCurrentPreset()
+    }
+  }
+
   private func saveCurrentPreset() {
     guard let synth, !savePresetName.isEmpty else { return }
     let spec = synth.currentPresetSyntax(name: savePresetName)
-    let filename = savePresetName
-      .replacing(" ", with: "_")
-      .lowercased()
-      .appending(".json")
+    let filename = filenameForPresetName(savePresetName)
     if PresetStorage.save(spec, filename: filename) {
       loadPresets()
       selectPreset(named: filename)

@@ -251,6 +251,76 @@ extension ArrowSyntax {
     }
   }
 
+  /// Return a copy of this tree with parameter values updated from the given
+  /// dictionaries. Keys match the IDs produced by `parameterDescriptors()`.
+  func applyingParameterValues(
+    floats: [String: CoreFloat],
+    shapes: [String: BasicOscillator.OscShape]
+  ) -> ArrowSyntax {
+    switch self {
+    case .const(let name, let val):
+      return .const(name: name, val: floats[name] ?? val)
+    case .constOctave(let name, let val):
+      return .constOctave(name: name, val: floats[name] ?? val)
+    case .constCent(let name, let val):
+      return .constCent(name: name, val: floats[name] ?? val)
+    case .reciprocalConst(let name, let val):
+      return .reciprocalConst(name: name, val: floats[name] ?? val)
+    case .envelope(let name, let attack, let decay, let sustain, let release, let scale):
+      return .envelope(
+        name: name,
+        attack: floats["\(name).attack"] ?? attack,
+        decay: floats["\(name).decay"] ?? decay,
+        sustain: floats["\(name).sustain"] ?? sustain,
+        release: floats["\(name).release"] ?? release,
+        scale: scale
+      )
+    case .osc(let name, let shape, let width):
+      let newShape = shapes["\(name).shape"] ?? shape
+      return .osc(name: name, shape: newShape, width: width.applyingParameterValues(floats: floats, shapes: shapes))
+    case .choruser(let name, let valueToChorus, let centRadius, let numVoices):
+      return .choruser(
+        name: name,
+        valueToChorus: valueToChorus,
+        chorusCentRadius: Int(floats["\(name).centRadius"] ?? CoreFloat(centRadius)),
+        chorusNumVoices: Int(floats["\(name).numVoices"] ?? CoreFloat(numVoices))
+      )
+    default:
+      return mapChildren { $0.applyingParameterValues(floats: floats, shapes: shapes) }
+    }
+  }
+
+  /// Return the `PADSynthSyntax` from the first `.padSynthWavetable` node
+  /// found in this tree, or nil if none exists.
+  func extractPadSynthParams() -> PADSynthSyntax? {
+    switch self {
+    case .padSynthWavetable(_, let params, _):
+      return params
+    case .prod(let arrows), .compose(let arrows), .sum(let arrows):
+      for arrow in arrows {
+        if let found = arrow.extractPadSynthParams() { return found }
+      }
+      return nil
+    case .crossfade(let arrows, _, let mixPoint), .crossfadeEqPow(let arrows, _, let mixPoint):
+      for arrow in arrows {
+        if let found = arrow.extractPadSynthParams() { return found }
+      }
+      return mixPoint.extractPadSynthParams()
+    case .lowPassFilter(_, let cutoff, let resonance):
+      return cutoff.extractPadSynthParams() ?? resonance.extractPadSynthParams()
+    case .combFilter(_, let frequency, let feedback):
+      return frequency.extractPadSynthParams() ?? feedback.extractPadSynthParams()
+    case .osc(_, _, let width), .wavetable(_, _, let width):
+      return width.extractPadSynthParams()
+    case .bitCrusher(_, let amount):
+      return amount.extractPadSynthParams()
+    case .reciprocal(let inner):
+      return inner.extractPadSynthParams()
+    default:
+      return nil
+    }
+  }
+
   /// Replace every `.libraryArrow` reference with its definition from the
   /// library dictionary. The dictionary values should already be resolved
   /// (no remaining `.libraryArrow` nodes), which is guaranteed when the

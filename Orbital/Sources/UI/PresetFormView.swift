@@ -272,7 +272,7 @@ private struct PresetFormContent: View {
         profileShape: synth.padSynthProfileShape,
         stretch: synth.padSynthStretch,
         selectedInstrument: synth.padSynthSelectedInstrument,
-        envelopeCoefficients: synth.presetSpec.padSynth?.envelopeCoefficients
+        envelopeCoefficients: synth.presetSpec.effectivePadSynth?.envelopeCoefficients
       )
       let newSpec = PresetSyntax(
         name: synth.presetSpec.name,

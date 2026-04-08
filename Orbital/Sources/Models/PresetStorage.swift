@@ -15,6 +15,11 @@ enum PresetStorage {
     return docs.appendingPathComponent("presets", isDirectory: true)
   }
 
+  /// Whether a preset file already exists in the presets directory.
+  @MainActor static func exists(filename: String) -> Bool {
+    FileManager.default.fileExists(atPath: presetsDir.appending(path: filename).path)
+  }
+
   /// Save a preset to the iCloud presets directory.
   @MainActor static func save(_ spec: PresetSyntax, filename: String) -> Bool {
     let url = presetsDir.appending(path: filename)

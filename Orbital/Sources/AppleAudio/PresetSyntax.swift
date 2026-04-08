@@ -36,6 +36,12 @@ struct PresetSyntax: Codable {
   let padTemplate: PadTemplateSyntax? // high-level template; compiled to arrow on first use when arrow is absent
   let padSynth: PADSynthSyntax? // PADsynth algorithm params; compiled to per-note wavetables
 
+  /// The effective PADsynth parameters: prefers the explicit `padSynth` field,
+  /// falls back to extracting from the first `padSynthWavetable` node in the arrow tree.
+  var effectivePadSynth: PADSynthSyntax? {
+    padSynth ?? arrow?.extractPadSynthParams()
+  }
+
   /// Build the resolved [String: ArrowSyntax] dictionary from the library
   /// array, resolving forward references in order.
   func resolvedLibrary() -> [String: ArrowSyntax] {

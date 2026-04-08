@@ -51,7 +51,7 @@ class SyntacticSynth {
   var padSynthStretch: CoreFloat = 1.0
   var padSynthSelectedInstrument: String?
 
-  var hasPadSynth: Bool { presetSpec.padSynth != nil }
+  var hasPadSynth: Bool { presetSpec.effectivePadSynth != nil }
 
   /// Saved arrow parameter values across rebuilds (set in loadPreset, consumed in buildHandlerAndReadValues).
   private var savedArrowFloats: [String: CoreFloat]?
@@ -124,14 +124,15 @@ class SyntacticSynth {
   }
 
   func loadPreset(_ presetSpec: PresetSyntax) {
-    // Snapshot arrow parameter values BEFORE cleanup destroys the handler.
+    // Snapshot arrow parameter values BEFORE setup replaces the handler.
     savedArrowFloats = arrowHandler?.floatValues
     savedArrowShapes = arrowHandler?.shapeValues
-    cleanup()
+    // Don't call cleanup() here — keep old spatialPreset/arrowHandler alive
+    // so the view doesn't flicker. setup() swaps atomically when the new
+    // preset is ready.
     self.presetSpec = presetSpec
     setupGeneration += 1
     Task { await setup(presetSpec: presetSpec, generation: setupGeneration) }
-    reloadCount += 1
   }
 
   /// Attach to an existing SpatialPreset (e.g. from a song track) so that
@@ -197,18 +198,23 @@ class SyntacticSynth {
         profileShape: padSynthProfileShape,
         stretch: padSynthStretch,
         selectedInstrument: padSynthSelectedInstrument,
-        envelopeCoefficients: presetSpec.padSynth?.envelopeCoefficients
+        envelopeCoefficients: presetSpec.effectivePadSynth?.envelopeCoefficients
       )
     } else {
       nil
     }
-    // When saving, sync the arrow's padSynthWavetable params so the
-    // JSON is self-consistent (even though compile() would inject them).
-    let savedArrow: ArrowSyntax?
-    if let arrow = presetSpec.arrow, let ps = padSynth {
+    // Write current parameter values back into the arrow tree so saved
+    // JSON reflects slider changes (filter cutoff, envelope times, etc.).
+    var savedArrow = presetSpec.arrow
+    if let arrow = savedArrow, let handler = arrowHandler {
+      savedArrow = arrow.applyingParameterValues(
+        floats: handler.floatValues,
+        shapes: handler.shapeValues
+      )
+    }
+    // Sync padSynthWavetable params so the JSON is self-consistent.
+    if let arrow = savedArrow, let ps = padSynth {
       savedArrow = arrow.replacingPadSynthParams(ps)
-    } else {
-      savedArrow = presetSpec.arrow
     }
     return PresetSyntax(
       name: name,
@@ -273,7 +279,7 @@ class SyntacticSynth {
     distortionPreGain = first.getDistortionPreGain()
     distortionWetDryMix = first.getDistortionWetDryMix()
 
-    if let ps = presetSpec.padSynth {
+    if let ps = presetSpec.effectivePadSynth {
       padSynthBaseShape = ps.baseShape
       padSynthTilt = ps.tilt
       padSynthBandwidthCents = ps.bandwidthCents

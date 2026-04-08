@@ -14,16 +14,6 @@
     "delayLowPassCutoff": 5000,
     "delayWetDryMix": 20
   },
-  "padSynth": {
-    "baseShape": "1/n\u00b2",
-    "tilt": 0.0,
-    "bandwidthCents": 50.0,
-    "bwScale": 1.0,
-    "profileShape": "Gaussian",
-    "stretch": 1.15,
-    "selectedInstrument": null,
-    "envelopeCoefficients": null
-  },
   "arrow": {
     "compose": [
       { "prod": [
@@ -52,27 +42,30 @@
         ]},
         { "envelope": {
           "name": "ampEnv",
-          "attack": 0.5,
+          "attack": 0.1,
           "decay": 1.0,
-          "sustain": 0.8,
-          "release": 1.5,
+          "sustain": 1.0,
+          "release": 0.1,
           "scale": 1
         }}
       ]},
       { "lowPassFilter": {
         "name": "filter",
-        "cutoff": { "prod": [
-          { "const": { "name": "cutoff", "val": 12000 } },
-          { "envelope": {
-            "name": "filterEnv",
-            "attack": 0.1,
-            "decay": 0.8,
-            "sustain": 1.0,
-            "release": 1.0,
-            "scale": 1
-          }}
+        "cutoff": { "sum": [
+          { "const": { "name": "cutoffLow", "val": 200 } },
+          { "prod": [
+            { "const": { "name": "cutoff", "val": 11800 } },
+            { "envelope": {
+              "name": "filterEnv",
+              "attack": 0.1,
+              "decay": 0.3,
+              "sustain": 1.0,
+              "release": 0.1,
+              "scale": 1
+            }}
+          ]}
         ]},
-        "resonance": { "const": { "name": "resonance", "val": 0.5 } }
+        "resonance": { "const": { "name": "resonance", "val": 1.6 } }
       }}
     ]
   }
