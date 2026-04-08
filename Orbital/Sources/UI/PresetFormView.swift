@@ -148,84 +148,18 @@ private struct PresetFormContent: View {
       .frame(height: 120)
 
       Form {
-        Section("Effects") {
-          Picker("Reverb Preset", selection: $synth.reverbPreset) {
-            ForEach(AVAudioUnitReverbPreset.allCases, id: \.self) { option in
-              Text(option.name)
-            }
-          }
-          SliderWithField(value: $synth.reverbMix, label: "Reverb Wet/Dry", range: 0...100)
-          if synth.delayAvailable {
-            SliderWithField(value: $synth.delayTime, label: "Delay Time", range: 0...30)
-            SliderWithField(value: $synth.delayFeedback, label: "Delay Feedback", range: 0...30)
-            SliderWithField(value: $synth.delayWetDryMix, label: "Delay Wet/Dry", range: 0...100)
-            SliderWithField(value: $synth.delayLowPassCutoff, label: "Delay LowPass", range: 0...1000)
-          }
-        }
+        EffectsFormGroup(synth: synth)
 
         if synth.hasPadSynth {
-          Section("Harmonics") {
-            if synth.padSynthSelectedInstrument == nil {
-              Picker("Base shape", selection: $synth.padSynthBaseShape) {
-                ForEach(PADBaseShape.allCases) { shape in
-                  Text(shape.rawValue).tag(shape)
-                }
-              }
-            }
-            SliderWithField(
-              value: $synth.padSynthTilt,
-              label: "Tilt",
-              range: -2.0...2.0,
-              step: 0.1
-            )
-          }
-
-          Section("Bandwidth") {
-            SliderWithField(
-              value: $synth.padSynthBandwidthCents,
-              label: "Bandwidth (cents)",
-              range: 1...200,
-              step: 1
-            )
-            SliderWithField(
-              value: $synth.padSynthBwScale,
-              label: "BW scale",
-              range: 0.5...2.0,
-              step: 0.05
-            )
-            Picker("Profile", selection: $synth.padSynthProfileShape) {
-              ForEach(PADProfileShape.allCases) { profile in
-                Text(profile.rawValue).tag(profile)
-              }
-            }
-          }
-
-          Section("Overtones") {
-            SliderWithField(
-              value: $synth.padSynthStretch,
-              label: "Stretch",
-              range: 0.9...1.5,
-              step: 0.01
-            )
-          }
-
-          Section("Instrument") {
-            Picker("Timbre source", selection: $synth.padSynthSelectedInstrument) {
-              Text("Custom").tag(String?.none)
-              ForEach(SharcDatabase.shared.instruments) { inst in
-                Text(inst.displayName).tag(Optional(inst.id))
-              }
-            }
-          }
+          HarmonicsFormGroup(synth: synth)
+          BandwidthFormGroup(synth: synth)
+          OvertoneFormGroup(synth: synth)
+          InstrumentFormGroup(synth: synth)
         }
 
         if let handler = synth.arrowHandler {
           ForEach(handler.groupedDescriptors(), id: \.0) { title, descs in
-            Section(title) {
-              ForEach(descs) { desc in
-                ArrowParamRow(descriptor: desc, handler: handler)
-              }
-            }
+            ArrowParamFormGroup(title: title, descriptors: descs, handler: handler)
           }
         }
 
@@ -235,6 +169,7 @@ private struct PresetFormContent: View {
           }
         }
       }
+      .controlSize(.small)
     }
     .onAppear { setupMIDI() }
     .navigationTitle(presetSpec.name)
@@ -291,8 +226,6 @@ private struct PresetFormContent: View {
   }
 }
 
-// MARK: - ArrowParamRow
-
 #Preview {
   let presetSpec = Bundle.main.decode(
     PresetSyntax.self,
@@ -303,29 +236,4 @@ private struct PresetFormContent: View {
     PresetFormView(presetSpec: presetSpec)
   }
   .environment(SpatialAudioEngine())
-}
-
-/// A single row in the dynamic arrow parameter form. Renders a Picker for osc
-/// shapes and a SliderWithField for everything else.
-private struct ArrowParamRow: View {
-  let descriptor: ArrowParamDescriptor
-  let handler: ArrowHandler
-
-  var body: some View {
-    switch descriptor.kind {
-    case .oscShape:
-      Picker(descriptor.displayName, selection: handler.shapeBinding(for: descriptor.id)) {
-        ForEach(BasicOscillator.OscShape.allCases, id: \.self) { option in
-          Text(String(describing: option))
-        }
-      }
-    default:
-      SliderWithField(
-        value: handler.floatBinding(for: descriptor.id),
-        label: descriptor.displayName,
-        range: descriptor.suggestedRange,
-        step: descriptor.stepSize
-      )
-    }
-  }
 }
