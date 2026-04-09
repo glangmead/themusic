@@ -9,7 +9,9 @@ import Foundation
 import MediaPlayer
 
 struct SongRef: Identifiable, Equatable, Sendable {
-  let id = UUID()
+  /// Stable identity derived from the pattern filename so NSMetadataQuery updates
+  /// don't invalidate navigation selections.
+  var id: String { patternFileName }
   /// Optional subtitle shown in the playback accessory (e.g. composer name when playing from Classics).
   let subtitle: String?
   let patternFileName: String // e.g. "score/The Beatles – Yesterday.json"
@@ -100,6 +102,9 @@ class SongLibrary {
 
     guard let results = metadataQuery?.results as? [NSMetadataItem] else { return }
 
+    // NSMetadataQuery can return duplicate items during live updates.
+    // Deduplicate by patternFileName.
+    var seen = Set<String>()
     songs = results.compactMap { item -> SongRef? in
       guard let url = item.value(forAttribute: NSMetadataItemURLKey) as? URL,
             url.pathExtension == "json"
@@ -108,13 +113,15 @@ class SongLibrary {
       guard Self.validSubdirs.contains(subdir) else { return nil }
       let parentDir = url.deletingLastPathComponent().deletingLastPathComponent().lastPathComponent
       guard parentDir == "patterns" else { return nil }
-      return SongRef(patternFileName: "\(subdir)/\(url.lastPathComponent)")
+      let filename = "\(subdir)/\(url.lastPathComponent)"
+      guard seen.insert(filename).inserted else { return nil }
+      return SongRef(patternFileName: filename)
     }
     .sorted { $0.name.localizedCaseInsensitiveCompare($1.name) == .orderedAscending }
   }
 
   /// Playback states keyed by SongRef.id, created lazily by SongCells.
-  var playbackStates: [UUID: SongDocument] = [:]
+  var playbackStates: [String: SongDocument] = [:]
 
   /// Manages lock screen / Control Center Now Playing info and remote commands.
   private var _nowPlayingManager: NowPlayingManager?

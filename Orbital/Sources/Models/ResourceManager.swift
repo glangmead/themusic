@@ -45,13 +45,15 @@ class ResourceManager {
       )
     }
 
+    // Migrate old-named files before copying bundle resources so that
+    // copyBundleResources sees the new names and skips them.
+    migrateOldPatternFilenames(in: baseURL)
+
     copyBundleResources(to: baseURL, subdirectory: "patterns/midi", extensions: ["json", "mid"])
     copyBundleResources(to: baseURL, subdirectory: "patterns/score", extensions: ["json"])
     copyBundleResources(to: baseURL, subdirectory: "patterns/table", extensions: ["json"])
     copyBundleResources(to: baseURL, subdirectory: "presets", extensions: ["json"])
     // samples/ left empty — user can add their own via Files.app
-
-    migrateOldPatternFilenames(in: baseURL)
 
     resourceBaseURL = baseURL
     isReady = true
@@ -87,10 +89,13 @@ class ResourceManager {
     for (old, new) in renames {
       let oldURL = patternsDir.appendingPathComponent(old)
       let newURL = patternsDir.appendingPathComponent(new)
-      guard fm.fileExists(atPath: oldURL.path),
-            !fm.fileExists(atPath: newURL.path)
-      else { continue }
-      try? fm.moveItem(at: oldURL, to: newURL)
+      guard fm.fileExists(atPath: oldURL.path) else { continue }
+      if fm.fileExists(atPath: newURL.path) {
+        // Both exist (e.g. from a prior launch) — delete the old copy.
+        try? fm.removeItem(at: oldURL)
+      } else {
+        try? fm.moveItem(at: oldURL, to: newURL)
+      }
     }
   }
 
