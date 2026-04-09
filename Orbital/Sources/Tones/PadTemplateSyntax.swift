@@ -13,6 +13,7 @@ import Foundation
 enum PadOscKind: String, Codable {
   case standard
   case wavetable
+  case padSynth
 }
 
 struct PadOscDescriptor: Codable {
@@ -21,6 +22,8 @@ struct PadOscDescriptor: Codable {
   let shape: BasicOscillator.OscShape?
   /// Wavetable kind only — built-in table name or curated_wavetables filename (without path).
   let file: String?
+  /// padSynth kind only — PADsynth algorithm parameters (SHARC instrument, bandwidth, etc.).
+  let padSynthParams: PADSynthSyntax?
   /// Detuning in cents, e.g. -7, 0, 7. Defaults to 0 when absent.
   let detuneCents: CoreFloat?
   /// Octave offset, e.g. 0, -1. Defaults to 0 when absent.

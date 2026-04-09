@@ -110,7 +110,7 @@ class Preset: NoteHandler {
   // effect enums
   var reverbPreset: AVAudioUnitReverbPreset = .smallRoom {
     didSet {
-      reverbNode?.loadFactoryPreset(reverbPreset)
+      reverbNode?.loadFactoryPresetReliably(reverbPreset)
     }
   }
   var distortionPreset: AVAudioUnitDistortionPreset = .defaultValue

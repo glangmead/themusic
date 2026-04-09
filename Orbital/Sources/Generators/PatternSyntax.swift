@@ -210,6 +210,25 @@ private struct GMPadProfile {
   let vibratoWeight: Double  // probability of enabling vibrato (0–1)
 }
 
+private func gmPadProfileName(for program: Int?) -> String {
+  guard let program else { return "default" }
+  switch program {
+  case 0...7:   return "piano"
+  case 8...15:  return "chromPerc"
+  case 16...23: return "organ"
+  case 24...31: return "guitar"
+  case 32...39: return "bass"
+  case 40...47: return "strings"
+  case 48...55: return "ensemble"
+  case 56...63: return "brass"
+  case 64...71: return "reed"
+  case 72...79: return "pipe"
+  case 80...87: return "synthLead"
+  case 88...95: return "synthPad"
+  default:      return "default"
+  }
+}
+
 private func gmPadProfile(for program: Int?) -> GMPadProfile {
   guard let program else { return .default }
   switch program {
@@ -232,33 +251,162 @@ private func gmPadProfile(for program: Int?) -> GMPadProfile {
 private extension GMPadProfile {
   // Slower attack = higher smooth value (smooth drives lerp(0.5, 8.0, smooth) for ampAttack)
   // swiftlint:disable line_length comma
-  static let `default` = GMPadProfile(shapes: [.sine, .triangle, .sawtooth, .square], wavetableNames: ["fm_bell", "fm_electric", "fm_metallic", "fm_shallow", "fm_deep", "bright", "warm", "organ", "hollow"], smoothRange: 0.2...0.8,  filterCutoffRange: 60...140,  gritRange: 0.0...0.2,  vibratoWeight: 0.4)
-  static let piano     = GMPadProfile(shapes: [.triangle, .square],                   wavetableNames: ["fm_electric", "fm_shallow", "bright", "warm"],                                                         smoothRange: 0.15...0.45, filterCutoffRange: 80...200,  gritRange: 0.0...0.15, vibratoWeight: 0.1)
-  static let chromPerc = GMPadProfile(shapes: [.sine, .triangle],                     wavetableNames: ["fm_bell", "fm_metallic", "bright"],                                                                    smoothRange: 0.2...0.5,   filterCutoffRange: 100...300, gritRange: 0.0...0.08, vibratoWeight: 0.0)
-  static let organ     = GMPadProfile(shapes: [.square, .sawtooth],                   wavetableNames: ["organ", "hollow", "bright"],                                                                           smoothRange: 0.0...0.25,  filterCutoffRange: 60...150,  gritRange: 0.0...0.1,  vibratoWeight: 0.5)
-  static let guitar    = GMPadProfile(shapes: [.triangle, .sawtooth],                 wavetableNames: ["fm_shallow", "warm", "bright"],                                                                        smoothRange: 0.15...0.45, filterCutoffRange: 60...150,  gritRange: 0.0...0.2,  vibratoWeight: 0.25)
-  static let bass      = GMPadProfile(shapes: [.sawtooth, .square],                   wavetableNames: ["fm_deep", "warm"],                                                                                    smoothRange: 0.1...0.35,  filterCutoffRange: 40...100,  gritRange: 0.0...0.2,  vibratoWeight: 0.1)
-  static let strings   = GMPadProfile(shapes: [.sawtooth, .triangle],                 wavetableNames: ["warm", "hollow", "fm_shallow"],                                                                        smoothRange: 0.4...0.85,  filterCutoffRange: 60...140,  gritRange: 0.0...0.08, vibratoWeight: 0.75)
-  static let ensemble  = GMPadProfile(shapes: [.triangle, .sine],                     wavetableNames: ["warm", "hollow", "bright"],                                                                            smoothRange: 0.5...0.9,   filterCutoffRange: 55...120,  gritRange: 0.0...0.05, vibratoWeight: 0.6)
-  static let brass     = GMPadProfile(shapes: [.sawtooth, .square],                   wavetableNames: ["bright", "fm_deep", "fm_metallic"],                                                                    smoothRange: 0.2...0.55,  filterCutoffRange: 80...200,  gritRange: 0.0...0.2,  vibratoWeight: 0.3)
-  static let reed      = GMPadProfile(shapes: [.square, .triangle],                   wavetableNames: ["hollow", "warm", "fm_shallow"],                                                                        smoothRange: 0.2...0.5,   filterCutoffRange: 70...180,  gritRange: 0.0...0.1,  vibratoWeight: 0.35)
-  static let pipe      = GMPadProfile(shapes: [.sine, .triangle],                     wavetableNames: ["hollow", "fm_shallow", "bright"],                                                                      smoothRange: 0.2...0.5,   filterCutoffRange: 80...200,  gritRange: 0.0...0.05, vibratoWeight: 0.3)
-  static let synthLead = GMPadProfile(shapes: [.sine, .triangle, .sawtooth, .square], wavetableNames: ["fm_bell", "fm_electric", "fm_metallic", "fm_shallow", "fm_deep", "bright", "hollow"],                 smoothRange: 0.1...0.5,   filterCutoffRange: 60...200,  gritRange: 0.0...0.3,  vibratoWeight: 0.4)
-  static let synthPad  = GMPadProfile(shapes: [.sine, .triangle],                     wavetableNames: ["warm", "hollow", "fm_shallow", "fm_deep", "fm_bell"],                                                 smoothRange: 0.6...1.0,   filterCutoffRange: 50...110,  gritRange: 0.0...0.05, vibratoWeight: 0.6)
+  static let `default` = GMPadProfile(shapes: [.sine, .triangle, .sawtooth, .square], wavetableNames: ["fm_bell", "fm_electric", "fm_metallic", "fm_shallow", "fm_deep", "bright", "warm", "organ", "hollow"], smoothRange: 0.2...0.8,  filterCutoffRange: 60...140,  gritRange: 0.0...0.0,  vibratoWeight: 0.4)
+  static let piano     = GMPadProfile(shapes: [.triangle, .square],                   wavetableNames: ["fm_electric", "fm_shallow", "bright", "warm"],                                                         smoothRange: 0.15...0.45, filterCutoffRange: 80...200,  gritRange: 0.0...0.0,  vibratoWeight: 0.1)
+  static let chromPerc = GMPadProfile(shapes: [.sine, .triangle],                     wavetableNames: ["fm_bell", "fm_metallic", "bright"],                                                                    smoothRange: 0.2...0.5,   filterCutoffRange: 100...300, gritRange: 0.0...0.0,  vibratoWeight: 0.0)
+  static let organ     = GMPadProfile(shapes: [.square, .sawtooth],                   wavetableNames: ["organ", "hollow", "bright"],                                                                           smoothRange: 0.0...0.25,  filterCutoffRange: 60...150,  gritRange: 0.0...0.0,  vibratoWeight: 0.5)
+  static let guitar    = GMPadProfile(shapes: [.triangle, .sawtooth],                 wavetableNames: ["fm_shallow", "warm", "bright"],                                                                        smoothRange: 0.15...0.45, filterCutoffRange: 60...150,  gritRange: 0.0...0.0,  vibratoWeight: 0.25)
+  static let bass      = GMPadProfile(shapes: [.sawtooth, .square],                   wavetableNames: ["fm_deep", "warm"],                                                                                    smoothRange: 0.1...0.35,  filterCutoffRange: 40...100,  gritRange: 0.0...0.0,  vibratoWeight: 0.1)
+  static let strings   = GMPadProfile(shapes: [.sawtooth, .triangle],                 wavetableNames: ["warm", "hollow", "fm_shallow"],                                                                        smoothRange: 0.4...0.85,  filterCutoffRange: 60...140,  gritRange: 0.0...0.0,  vibratoWeight: 0.75)
+  static let ensemble  = GMPadProfile(shapes: [.triangle, .sine],                     wavetableNames: ["warm", "hollow", "bright"],                                                                            smoothRange: 0.5...0.9,   filterCutoffRange: 55...120,  gritRange: 0.0...0.0,  vibratoWeight: 0.6)
+  static let brass     = GMPadProfile(shapes: [.sawtooth, .square],                   wavetableNames: ["bright", "fm_deep", "fm_metallic"],                                                                    smoothRange: 0.2...0.55,  filterCutoffRange: 80...200,  gritRange: 0.0...0.0,  vibratoWeight: 0.3)
+  static let reed      = GMPadProfile(shapes: [.square, .triangle],                   wavetableNames: ["hollow", "warm", "fm_shallow"],                                                                        smoothRange: 0.2...0.5,   filterCutoffRange: 70...180,  gritRange: 0.0...0.0,  vibratoWeight: 0.35)
+  static let pipe      = GMPadProfile(shapes: [.sine, .triangle],                     wavetableNames: ["hollow", "fm_shallow", "bright"],                                                                      smoothRange: 0.2...0.5,   filterCutoffRange: 80...200,  gritRange: 0.0...0.0,  vibratoWeight: 0.3)
+  static let synthLead = GMPadProfile(shapes: [.sine, .triangle, .sawtooth, .square], wavetableNames: ["fm_bell", "fm_electric", "fm_metallic", "fm_shallow", "fm_deep", "bright", "hollow"],                 smoothRange: 0.1...0.5,   filterCutoffRange: 60...200,  gritRange: 0.0...0.0,  vibratoWeight: 0.4)
+  static let synthPad  = GMPadProfile(shapes: [.sine, .triangle],                     wavetableNames: ["warm", "hollow", "fm_shallow", "fm_deep", "fm_bell"],                                                 smoothRange: 0.6...1.0,   filterCutoffRange: 50...110,  gritRange: 0.0...0.0,  vibratoWeight: 0.6)
   // swiftlint:enable line_length comma
 }
 
-/// Picks a random oscillator descriptor appropriate for the given profile.
-/// 50% chance of a standard shape from the profile; 50% chance of a wavetable (profile built-ins
-/// + any curated tables pre-loaded into WavetableLibrary.userTables).
-private func randomOscDescriptor(profile: GMPadProfile, octave: CoreFloat) -> PadOscDescriptor {
-  let wavetablePool = profile.wavetableNames + WavetableLibrary.curatedTableNames
-  if !wavetablePool.isEmpty && Bool.random() {
-    return PadOscDescriptor(kind: .wavetable, shape: nil, file: wavetablePool.randomElement()!,
-                            detuneCents: .random(in: -12...12), octave: octave)
+// MARK: - GM → SHARC instrument mapping
+
+// swiftlint:disable colon
+private let gmSharcInstruments: [ClosedRange<Int>: [String]] = [
+  0...7:   ["amy_piano_steinway"],
+  8...15:  ["amy_piano_steinway"],
+  16...23: ["amy_piano_steinway"],
+  24...31: ["amy_piano_steinway"],
+  32...39: ["CB", "CB_martele", "CB_muted", "contrabassoon"],
+  40...47: ["violin_vibrato", "violin_martele", "viola_vibrato", "viola_martele",
+            "cello_vibrato", "cello_martele", "CB", "violinensemb"],
+  48...55: ["violinensemb", "vowel_aah", "vowel_ah", "vowel_ooh", "vowel_ee"],
+  56...63: ["French_horn", "French_horn_muted", "C_trumpet", "C_trumpet_muted",
+            "Bach_trumpet", "trombone", "trombone_muted", "tuba", "alto_trombone", "bass_trombone"],
+  64...71: ["Bb_clarinet", "bass_clarinet", "Eb_clarinet", "contrabass_clarinet",
+            "oboe", "English_horn", "bassoon", "contrabassoon"],
+  72...79: ["flute_vibrato", "altoflute_vibrato", "bassflute_vibrato", "piccolo",
+            "oboe", "English_horn"],
+  80...87: ["Bb_clarinet", "C_trumpet", "violin_vibrato", "flute_vibrato"],
+  88...95: ["violin_vibrato", "cello_vibrato", "flute_vibrato", "French_horn",
+            "vowel_aah", "vowel_ooh"]
+]
+// swiftlint:enable colon
+
+/// All SHARC instrument IDs, used when no GM program is specified.
+private let allSharcInstruments: [String] = SharcDatabase.shared.instruments.map(\.id)
+
+/// Picks a random SHARC instrument ID appropriate for the given GM program.
+private func randomSharcInstrument(for gmProgram: Int?) -> String {
+  if let gm = gmProgram {
+    for (range, instruments) in gmSharcInstruments where range.contains(gm) {
+      return instruments.randomElement()!
+    }
   }
-  return PadOscDescriptor(kind: .standard, shape: profile.shapes.randomElement()!, file: nil,
+  return allSharcInstruments.randomElement()!
+}
+
+/// Builds a padSynth oscillator descriptor with a SHARC instrument and default PADsynth params.
+private func randomPadSynthOscDescriptor(gmProgram: Int?, octave: CoreFloat) -> PadOscDescriptor {
+  let instrument = randomSharcInstrument(for: gmProgram)
+  let params = PADSynthSyntax(
+    baseShape: .oneOverNSquared, tilt: 0, bandwidthCents: 50, bwScale: 1,
+    profileShape: .gaussian, stretch: 1, selectedInstrument: instrument, envelopeCoefficients: nil
+  )
+  return PadOscDescriptor(kind: .padSynth, shape: nil, file: nil, padSynthParams: params,
                           detuneCents: .random(in: -12...12), octave: octave)
+}
+
+/// Picks a random basic oscillator descriptor from the profile's standard shapes.
+private func randomOscDescriptor(profile: GMPadProfile, octave: CoreFloat) -> PadOscDescriptor {
+  return PadOscDescriptor(kind: .standard, shape: profile.shapes.randomElement()!, file: nil,
+                          padSynthParams: nil, detuneCents: .random(in: -12...12), octave: octave)
+}
+
+/// Returns a comparable identity for an oscillator: kind + shape or file name.
+/// Two oscillators with the same identity sound redundant regardless of detune/octave.
+private func oscIdentity(_ osc: PadOscDescriptor) -> String {
+  switch osc.kind {
+  case .standard:  return "std:\(osc.shape.map { "\($0)" } ?? "sine")"
+  case .wavetable: return "wt:\(osc.file ?? "")"
+  case .padSynth:  return "pad:\(osc.padSynthParams?.selectedInstrument ?? "formula")"
+  }
+}
+
+private let auditionCounter = PersistentCounter(key: "randomPadAuditionCounter")
+
+private final class PersistentCounter: Sendable {
+  private let key: String
+  private let lock = NSLock()
+  init(key: String) { self.key = key }
+  func next() -> Int {
+    lock.lock()
+    defer { lock.unlock() }
+    let current = UserDefaults.standard.integer(forKey: key)
+    let next = current + 1
+    UserDefaults.standard.set(next, forKey: key)
+    return next
+  }
+}
+
+private func saveRandomPadAudition(_ preset: PresetSyntax) -> (Int, String) {
+  let n = auditionCounter.next()
+  let filename = "random_audition_\(n).json"
+  // Compile the padTemplate into an arrow so the JSON contains the full DSP graph
+  // (including the filter chain), matching the format of hand-authored presets.
+  let resolvedArrow: ArrowSyntax? = preset.padTemplate.map { PadTemplateCompiler.compile($0) }
+  let resolved = PresetSyntax(
+    name: "Random Audition \(n)",
+    arrow: resolvedArrow ?? preset.arrow,
+    samplerFilenames: preset.samplerFilenames,
+    samplerProgram: preset.samplerProgram,
+    samplerBank: preset.samplerBank,
+    library: preset.library,
+    rose: preset.rose,
+    effects: preset.effects,
+    padTemplate: nil,
+    padSynth: preset.padSynth
+  )
+  Task { @MainActor in
+    if PresetStorage.save(resolved, filename: filename) {
+      print("  Saved audition preset: \(filename)")
+    } else {
+      print("  Failed to save audition preset: \(filename)")
+    }
+  }
+  return (n, filename)
+}
+
+private func printRandomPadDiagnostic(gmProgram: Int?, characteristicDuration: CoreFloat?,
+                                      template: PadTemplateSyntax, sliders: PadSliders) {
+  func oscDesc(_ osc: PadOscDescriptor) -> String {
+    switch osc.kind {
+    case .standard:
+      let shape = osc.shape.map { "\($0)" } ?? "sine"
+      return "\(shape) oct=\(osc.octave ?? 0) detune=\(osc.detuneCents ?? 0)¢"
+    case .wavetable:
+      return "wt(\(osc.file ?? "?")) oct=\(osc.octave ?? 0) detune=\(osc.detuneCents ?? 0)¢"
+    case .padSynth:
+      let inst = osc.padSynthParams?.selectedInstrument ?? "formula"
+      return "padSynth(\(inst)) oct=\(osc.octave ?? 0) detune=\(osc.detuneCents ?? 0)¢"
+    }
+  }
+  let profileName = gmPadProfileName(for: gmProgram)
+  let gmStr = gmProgram.map { "\($0)" } ?? "nil"
+  let durStr = characteristicDuration.map { String(format: "%.2f s", $0) } ?? "nil"
+  let atkStr = template.ampAttack.map { String(format: "%.3f", $0) } ?? "slider"
+  let relStr = template.ampRelease.map { String(format: "%.3f", $0) } ?? "slider"
+  print("""
+    ┌─ Random Pad ──────────────────────────────
+    │ profile: \(profileName)  (GM \(gmStr), duration \(durStr))
+    │ osc1: \(oscDesc(template.oscillators[0]))
+    │ osc2: \(oscDesc(template.oscillators[1]))
+    │ crossfade: \(template.crossfade)
+    │ vibrato: \(template.vibratoEnabled ? "on" : "off")  depth=\(template.vibratoDepth)
+    │ sliders: smooth=\(sliders.smooth)  bite=\(sliders.bite)  motion=\(sliders.motion)  width=\(sliders.width)  grit=\(sliders.grit)
+    │ amp env: atk=\(atkStr)  dec=\(template.ampDecay)  sus=\(template.ampSustain)  rel=\(relStr)
+    │ filt env: atk=\(template.filterEnvAttack)  dec=\(template.filterEnvDecay)  sus=\(template.filterEnvSustain)  rel=\(template.filterEnvRelease)
+    │ filt cutoff low: \(template.filterCutoffLow) Hz
+    └───────────────────────────────────────────
+    """)
 }
 
 /// Generates a fresh random pad preset, constrained to the timbre space of the given GM program.
@@ -280,7 +428,7 @@ func makeRandomPadPreset(gmProgram: Int? = nil, characteristicDuration: CoreFloa
   let template = PadTemplateSyntax(
     name: "Random Pad",
     oscillators: [
-      randomOscDescriptor(profile: profile, octave: 0),
+      randomPadSynthOscDescriptor(gmProgram: gmProgram, octave: 0),
       randomOscDescriptor(profile: profile, octave: [-1, 0, 1].randomElement()!)
     ],
     crossfade: [.noiseSmoothStep, .lfo].randomElement()!,
@@ -297,14 +445,21 @@ func makeRandomPadPreset(gmProgram: Int? = nil, characteristicDuration: CoreFloa
     filterCutoffLow: .random(in: profile.filterCutoffRange),
     mood: .custom, sliders: sliders
   )
-  return PresetSyntax(
+  printRandomPadDiagnostic(gmProgram: gmProgram, characteristicDuration: characteristicDuration,
+                           template: template, sliders: sliders)
+  let effects = EffectsSyntax(reverbPreset: 8, reverbWetDryMix: 50,
+                              delayTime: 0, delayFeedback: 0, delayLowPassCutoff: 0, delayWetDryMix: 0)
+  let rose = RoseSyntax(amp: 0, leafFactor: 3, freq: 0.2, phase: 0)
+  let preset = PresetSyntax(
     name: "Random Pad",
     arrow: nil, samplerFilenames: nil, samplerProgram: nil, samplerBank: nil, library: nil,
-    rose: RoseSyntax(amp: 0, leafFactor: 3, freq: 0.2, phase: 0),
-    effects: EffectsSyntax(reverbPreset: 4, reverbWetDryMix: 100,
-                           delayTime: 0, delayFeedback: 0, delayLowPassCutoff: 0, delayWetDryMix: 0),
-    padTemplate: template,
-    padSynth: nil
+    rose: rose, effects: effects, padTemplate: template, padSynth: nil
+  )
+  let (auditionNum, _) = saveRandomPadAudition(preset)
+  return PresetSyntax(
+    name: "Random Audition \(auditionNum)",
+    arrow: nil, samplerFilenames: nil, samplerProgram: nil, samplerBank: nil, library: nil,
+    rose: rose, effects: effects, padTemplate: template, padSynth: nil
   )
 }
 

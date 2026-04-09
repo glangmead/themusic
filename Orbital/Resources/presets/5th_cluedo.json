@@ -1,7 +1,7 @@
 {
  "name"   : "5th Cluedo",
  "rose"   : {"freq": 0.05, "leafFactor": 3, "phase": 3.14, "amp": 6},
- "effects": {"reverbPreset": 1, "delayTime": 0, "delayLowPassCutoff": 100000, "delayFeedback": 0, "reverbWetDryMix": 50, "delayWetDryMix": 0},
+ "effects": {"reverbPreset": 8, "delayTime": 0, "delayLowPassCutoff": 100000, "delayFeedback": 0, "reverbWetDryMix": 100, "delayWetDryMix": 0},
  "arrow"  : {
   "compose": [
     {

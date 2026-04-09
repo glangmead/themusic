@@ -120,7 +120,7 @@ struct PadTemplateCompilerTests {
     crossfade: PadCrossfadeKind = .noiseSmoothStep
   ) -> PadTemplateSyntax {
     let oscs: [PadOscDescriptor] = (0..<oscCount).map { i in
-      PadOscDescriptor(kind: .standard, shape: .sine, file: nil, detuneCents: CoreFloat(i * 7 - 7), octave: 0)
+      PadOscDescriptor(kind: .standard, shape: .sine, file: nil, padSynthParams: nil, detuneCents: CoreFloat(i * 7 - 7), octave: 0)
     }
     return PadTemplateSyntax(
       name: "Test Pad",

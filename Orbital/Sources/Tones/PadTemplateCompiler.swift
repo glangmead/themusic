@@ -80,7 +80,7 @@ enum PadTemplateCompiler {
     let slowBase      = lerp(0.05, 1.0, s.motion)
     let vibratoRate   = t.vibratoRate    ?? lerp(1.0, 6.0, s.motion)
     let crossfadeRate = t.crossfadeRate  ?? slowBase
-    let cutoffMult    = t.filterCutoffMultiplier ?? lerp(2.0, 12.0, s.bite)
+    let cutoffMult    = t.filterCutoffMultiplier ?? lerp(2.0, 4.0, s.bite)
     let resonance     = t.filterResonance        ?? lerp(0.3, 1.5, s.grit)
     let ampAttack     = t.ampAttack  ?? lerp(0.5, 8.0, s.smooth)
     let ampRelease    = t.ampRelease ?? lerp(0.5, 8.0, s.smooth)
@@ -153,6 +153,12 @@ enum PadTemplateCompiler {
       return .osc(name: "osc\(n)", shape: desc.shape ?? .sine, width: .const(name: "osc\(n)Width", val: 1))
     case .wavetable:
       return .wavetable(name: "osc\(n)", tableName: desc.file ?? "fm_bell", width: .const(name: "osc\(n)Width", val: 1))
+    case .padSynth:
+      let params = desc.padSynthParams ?? PADSynthSyntax(
+        baseShape: .oneOverNSquared, tilt: 0, bandwidthCents: 50, bwScale: 1,
+        profileShape: .gaussian, stretch: 1, selectedInstrument: nil, envelopeCoefficients: nil
+      )
+      return .padSynthWavetable(name: "osc\(n)", params: params, width: .const(name: "osc\(n)Width", val: 1))
     }
   }
 

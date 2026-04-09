@@ -199,14 +199,14 @@ struct PadTemplateFormView: View {
 
   private static func oscDescriptor(index: Int, detuneCents: CoreFloat, octave: CoreFloat, choices: [OscChoice]) -> PadOscDescriptor {
     guard !choices.isEmpty else {
-      return PadOscDescriptor(kind: .standard, shape: .sine, file: nil, detuneCents: detuneCents, octave: octave)
+      return PadOscDescriptor(kind: .standard, shape: .sine, file: nil, padSynthParams: nil, detuneCents: detuneCents, octave: octave)
     }
     let clamped = min(max(0, index), choices.count - 1)
     switch choices[clamped] {
     case .standard(let shape):
-      return PadOscDescriptor(kind: .standard, shape: shape, file: nil, detuneCents: detuneCents, octave: octave)
+      return PadOscDescriptor(kind: .standard, shape: shape, file: nil, padSynthParams: nil, detuneCents: detuneCents, octave: octave)
     case .wavetable(let filename):
-      return PadOscDescriptor(kind: .wavetable, shape: nil, file: filename, detuneCents: detuneCents, octave: octave)
+      return PadOscDescriptor(kind: .wavetable, shape: nil, file: filename, padSynthParams: nil, detuneCents: detuneCents, octave: octave)
     }
   }
 }
