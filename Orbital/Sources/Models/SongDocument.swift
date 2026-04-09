@@ -96,16 +96,16 @@ class SongDocument {
   /// Init for the standalone Create tab — pre-seeds a generator pattern so
   /// loadTracks() skips file loading and compiles directly from the spec.
   init(generatorPattern: GeneratorSyntax, engine: SpatialAudioEngine) {
-    self.song = SongRef(name: "Create", patternFileName: "")
+    self.song = SongRef(patternFileName: PatternFilename.filename(from: "Create"))
     self.engine = engine
     self.resourceBaseURL = nil
-    patternSpec = PatternSyntax(name: "Create", generatorTracks: generatorPattern)
+    patternSpec = PatternSyntax(generatorTracks: generatorPattern)
   }
 
   /// Init for the Classics browser — pre-seeds a PatternSyntax built from catalog data.
   /// loadTracks() skips JSON file loading and compiles directly from the spec.
-  init(patternSyntax: PatternSyntax, name: String, subtitle: String? = nil, engine: SpatialAudioEngine, resourceBaseURL: URL? = nil) {
-    self.song = SongRef(name: name, subtitle: subtitle, patternFileName: "")
+  init(patternSyntax: PatternSyntax, displayName: String, subtitle: String? = nil, engine: SpatialAudioEngine, resourceBaseURL: URL? = nil) {
+    self.song = SongRef(subtitle: subtitle, patternFileName: PatternFilename.filename(from: displayName))
     self.engine = engine
     self.resourceBaseURL = resourceBaseURL
     self.patternSpec = patternSyntax
@@ -291,13 +291,7 @@ class SongDocument {
 
   /// Replace the table pattern definition. Takes effect on next play().
   func replaceTablePattern(_ newTable: TablePatternSyntax) {
-    guard let spec = patternSpec else { return }
-    patternSpec = PatternSyntax(
-      name: spec.name,
-      midiTracks: nil,
-      tableTracks: newTable,
-      scoreTracks: nil
-    )
+    patternSpec = PatternSyntax(tableTracks: newTable)
     runtime = nil
   }
 
@@ -310,8 +304,7 @@ class SongDocument {
 
   /// Replace the MIDI tracks definition. Takes effect on next play().
   func replaceMidiPattern(_ newMidi: MidiTracksSyntax) {
-    guard let spec = patternSpec else { return }
-    patternSpec = PatternSyntax(name: spec.name, midiTracks: newMidi)
+    patternSpec = PatternSyntax(midiTracks: newMidi)
     runtime = nil
   }
 
@@ -324,14 +317,7 @@ class SongDocument {
 
   /// Replace the generator definition and hot-reload. Takes effect on next play().
   func replaceGeneratorPattern(_ newGen: GeneratorSyntax) {
-    guard let spec = patternSpec else { return }
-    patternSpec = PatternSyntax(
-      name: spec.name,
-      midiTracks: nil,
-      tableTracks: nil,
-      scoreTracks: nil,
-      generatorTracks: newGen
-    )
+    patternSpec = PatternSyntax(generatorTracks: newGen)
     runtime = nil
   }
 }

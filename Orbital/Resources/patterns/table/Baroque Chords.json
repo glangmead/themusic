@@ -1,0 +1,104 @@
+{
+  "tableTracks": {
+    "emitters": [
+      {
+        "candidates": [
+          "2",
+          "2",
+          "3",
+          "3",
+          "3",
+          "4",
+          "4"
+        ],
+        "function": "random",
+        "name": "octaves",
+        "outputType": "octave"
+      },
+      {
+        "arg1": 0.3,
+        "arg2": 0.6,
+        "function": "exponentialRandFloat",
+        "name": "overallAmpVal",
+        "outputType": "float"
+      },
+      {
+        "arg1": -5,
+        "arg2": 5,
+        "function": "randFloat",
+        "name": "detuneVal",
+        "outputType": "float"
+      },
+      {
+        "arg1": 3,
+        "arg2": 8,
+        "function": "randFloat",
+        "name": "sustain",
+        "outputType": "float"
+      },
+      {
+        "arg1": 4,
+        "arg2": 10,
+        "function": "randFloat",
+        "name": "gap",
+        "outputType": "float"
+      }
+    ],
+    "hierarchy": {
+      "chord": {
+        "degrees": [
+          0,
+          2,
+          4
+        ],
+        "inversion": 0
+      },
+      "root": "C",
+      "scale": "major"
+    },
+    "hierarchyModulators": [
+      {
+        "fireIntervalEmitter": "gap",
+        "level": "chord",
+        "n": 1,
+        "name": "chordShifter",
+        "operation": "markovChord"
+      }
+    ],
+    "name": "Baroque Chords",
+    "noteMaterials": [
+      {
+        "name": "chords",
+        "octaveEmitter": "octaves",
+        "type": "hierarchyChord",
+        "voicing": "spread"
+      }
+    ],
+    "presetModulators": [
+      {
+        "floatEmitter": "overallAmpVal",
+        "name": "ampMod",
+        "targetHandle": "overallAmp"
+      },
+      {
+        "floatEmitter": "detuneVal",
+        "name": "detuneMod",
+        "targetHandle": "overallCentDetune"
+      }
+    ],
+    "tracks": [
+      {
+        "gapEmitter": "gap",
+        "name": "Baroque Chords",
+        "noteMaterial": "chords",
+        "numVoices": 20,
+        "presetFilename": "warm_analog_pad",
+        "presetModulatorNames": [
+          "ampMod",
+          "detuneMod"
+        ],
+        "sustainEmitter": "sustain"
+      }
+    ]
+  }
+}

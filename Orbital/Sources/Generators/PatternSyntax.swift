@@ -66,20 +66,17 @@ struct MidiTracksSyntax: Codable {
 /// - `scoreTracks`: score-based absolute-beat sequencing
 /// - `generatorTracks`: high-level generator params compiled to scoreTracks at runtime
 struct PatternSyntax: Codable {
-  let name: String
   let midiTracks: MidiTracksSyntax?
   let tableTracks: TablePatternSyntax?
   let scoreTracks: ScorePatternSyntax?
   let generatorTracks: GeneratorSyntax?
 
   init(
-    name: String,
     midiTracks: MidiTracksSyntax? = nil,
     tableTracks: TablePatternSyntax? = nil,
     scoreTracks: ScorePatternSyntax? = nil,
     generatorTracks: GeneratorSyntax? = nil
   ) {
-    self.name = name
     self.midiTracks = midiTracks
     self.tableTracks = tableTracks
     self.scoreTracks = scoreTracks
@@ -105,7 +102,7 @@ struct PatternSyntax: Codable {
       let score = GeneratorEngine.generate(gen)
       return try await ScorePatternCompiler.compile(score, engine: engine, clock: clock, resourceBaseURL: resourceBaseURL)
     } else {
-      fatalError("PatternSyntax '\(name)' has no tracks")
+      fatalError("PatternSyntax has no tracks")
     }
   }
 

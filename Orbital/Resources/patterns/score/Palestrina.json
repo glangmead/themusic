@@ -1,13 +1,6 @@
 {
-  "name": "Palestrina",
   "scoreTracks": {
     "bpm": 72,
-    "totalBeats": 180,
-    "loop": true,
-    "key": {
-      "root": "F",
-      "scale": "major"
-    },
     "chordEvents": [
       {
         "beat": 0,
@@ -737,540 +730,546 @@
         "roman": "I"
       }
     ],
+    "key": {
+      "root": "F",
+      "scale": "major"
+    },
+    "loop": true,
+    "totalBeats": 180,
     "tracks": [
       {
         "name": "Chords",
-        "presetFilename": "warm_analog_pad",
-        "numVoices": 6,
-        "octave": 3,
-        "voicing": "open",
-        "sustainFraction": 0.85,
         "notes": [
           {
-            "type": "currentChord",
-            "durationBeats": 4
+            "durationBeats": 4,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 0.5
+            "durationBeats": 0.5,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 0.5
+            "durationBeats": 0.5,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 2
+            "durationBeats": 2,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 2
+            "durationBeats": 2,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 0.5
+            "durationBeats": 0.5,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 0.5
+            "durationBeats": 0.5,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 2
+            "durationBeats": 2,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 2
+            "durationBeats": 2,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 4
+            "durationBeats": 4,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 2
+            "durationBeats": 2,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 2
+            "durationBeats": 2,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 2
+            "durationBeats": 2,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 2
+            "durationBeats": 2,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 2
+            "durationBeats": 2,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 2
+            "durationBeats": 2,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 2
+            "durationBeats": 2,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 2
+            "durationBeats": 2,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 2
+            "durationBeats": 2,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 2
+            "durationBeats": 2,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 2
+            "durationBeats": 2,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 2
+            "durationBeats": 2,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 2
+            "durationBeats": 2,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 2
+            "durationBeats": 2,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 3
+            "durationBeats": 3,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 3
+            "durationBeats": 3,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 2
+            "durationBeats": 2,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 4
+            "durationBeats": 4,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 2
+            "durationBeats": 2,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 0.5
+            "durationBeats": 0.5,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 0.5
+            "durationBeats": 0.5,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 2
+            "durationBeats": 2,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 0.5
+            "durationBeats": 0.5,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 0.5
+            "durationBeats": 0.5,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 3
+            "durationBeats": 3,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 0.5
+            "durationBeats": 0.5,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 0.5
+            "durationBeats": 0.5,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 2
+            "durationBeats": 2,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 2
+            "durationBeats": 2,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 0.5
+            "durationBeats": 0.5,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 0.5
+            "durationBeats": 0.5,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 3
+            "durationBeats": 3,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1.5
+            "durationBeats": 1.5,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 0.5
+            "durationBeats": 0.5,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 2
+            "durationBeats": 2,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 2
+            "durationBeats": 2,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 0.5
+            "durationBeats": 0.5,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 0.5
+            "durationBeats": 0.5,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 2
+            "durationBeats": 2,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 4
+            "durationBeats": 4,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 3
+            "durationBeats": 3,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 0.5
+            "durationBeats": 0.5,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 0.5
+            "durationBeats": 0.5,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 2
+            "durationBeats": 2,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 4
+            "durationBeats": 4,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 2
+            "durationBeats": 2,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 1
+            "durationBeats": 1,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 2
+            "durationBeats": 2,
+            "type": "currentChord"
           },
           {
-            "type": "currentChord",
-            "durationBeats": 4
+            "durationBeats": 4,
+            "type": "currentChord"
           }
-        ]
+        ],
+        "numVoices": 6,
+        "octave": 3,
+        "presetFilename": "randomPad",
+        "sustainFraction": 0.85,
+        "voicing": "open"
       }
     ]
   }

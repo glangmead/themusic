@@ -1,0 +1,17 @@
+{
+  "midiTracks": {
+    "bpm": 10,
+    "filename": "patterns/midi/scriabin_12_etudes_op8.mid",
+    "loop": true,
+    "tracks": [
+      {
+        "numVoices": 12,
+        "presetFilename": "randomPad"
+      },
+      {
+        "numVoices": 12,
+        "presetFilename": "randomPad"
+      }
+    ]
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "scoreTracks": {
+    "bpm": 90,
+    "chordEvents": [
+      {
+        "beat": 0,
+        "degrees": [
+          0,
+          2,
+          4
+        ],
+        "inversion": 0,
+        "op": "setChord"
+      },
+      {
+        "beat": 4,
+        "n": 3,
+        "op": "T"
+      },
+      {
+        "beat": 8,
+        "n": 1,
+        "op": "T"
+      },
+      {
+        "beat": 12,
+        "degrees": [
+          0,
+          2,
+          4
+        ],
+        "inversion": 0,
+        "op": "setChord"
+      }
+    ],
+    "key": {
+      "root": "C",
+      "scale": "major"
+    },
+    "loop": true,
+    "totalBeats": 16,
+    "tracks": [
+      {
+        "name": "Pad",
+        "notes": [
+          {
+            "durationBeats": 4,
+            "type": "currentChord"
+          },
+          {
+            "durationBeats": 4,
+            "type": "currentChord"
+          },
+          {
+            "durationBeats": 4,
+            "type": "currentChord"
+          },
+          {
+            "durationBeats": 4,
+            "type": "currentChord"
+          }
+        ],
+        "numVoices": 8,
+        "octave": 3,
+        "presetFilename": "randomPad",
+        "sustainFraction": 0.95,
+        "voicing": "open"
+      },
+      {
+        "name": "Melody",
+        "notes": [
+          {
+            "durationBeats": 1,
+            "index": 2,
+            "type": "chordTone"
+          },
+          {
+            "durationBeats": 1,
+            "index": 1,
+            "type": "chordTone"
+          },
+          {
+            "durationBeats": 1,
+            "index": 0,
+            "type": "chordTone"
+          },
+          {
+            "durationBeats": 1,
+            "index": 1,
+            "type": "chordTone"
+          },
+          {
+            "durationBeats": 2,
+            "index": 2,
+            "type": "chordTone"
+          },
+          {
+            "durationBeats": 2,
+            "type": "hold"
+          },
+          {
+            "durationBeats": 1,
+            "index": 2,
+            "type": "chordTone"
+          },
+          {
+            "durationBeats": 1,
+            "index": 1,
+            "type": "chordTone"
+          },
+          {
+            "durationBeats": 1,
+            "index": 0,
+            "type": "chordTone"
+          },
+          {
+            "durationBeats": 1,
+            "type": "rest"
+          },
+          {
+            "degree": 4,
+            "durationBeats": 2,
+            "type": "scaleDegree"
+          },
+          {
+            "degree": 3,
+            "durationBeats": 1,
+            "type": "scaleDegree"
+          },
+          {
+            "degree": 2,
+            "durationBeats": 1,
+            "type": "scaleDegree"
+          }
+        ],
+        "numVoices": 4,
+        "octave": 4,
+        "presetFilename": "randomPad",
+        "sustainFraction": 0.8,
+        "voicing": "closed"
+      }
+    ]
+  }
+}

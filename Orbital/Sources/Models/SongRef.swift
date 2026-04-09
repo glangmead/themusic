@@ -8,49 +8,109 @@
 import Foundation
 import MediaPlayer
 
-struct SongRef: Identifiable, Equatable {
+struct SongRef: Identifiable, Equatable, Sendable {
   let id = UUID()
-  let name: String
   /// Optional subtitle shown in the playback accessory (e.g. composer name when playing from Classics).
   let subtitle: String?
-  let patternFileName: String // e.g. "aurora_arpeggio.json"
+  let patternFileName: String // e.g. "score/The Beatles – Yesterday.json"
 
-  init(name: String, subtitle: String? = nil, patternFileName: String) {
-    self.name = name
+  /// Display name derived from the filename.
+  var name: String {
+    PatternFilename.displayName(from: URL(filePath: patternFileName).lastPathComponent)
+  }
+
+  init(subtitle: String? = nil, patternFileName: String) {
     self.subtitle = subtitle
     self.patternFileName = patternFileName
   }
-}
-
-/// Lightweight struct for decoding just the pattern name from a JSON file.
-private struct PatternNameOnly: Decodable {
-  let name: String
 }
 
 @MainActor @Observable
 class SongLibrary {
   var songs: [SongRef] = []
 
-  /// Populate the song list by enumerating pattern JSON files in the given directory.
-  func loadSongs(from baseURL: URL?) {
+  private var metadataQuery: NSMetadataQuery?
+  private var isUsingICloud = false
+  private var localBaseURL: URL?
+
+  // MARK: - Song discovery
+
+  /// Start monitoring the iCloud Documents container (or fall back to a local scan).
+  func startMonitoring(baseURL: URL?, isICloud: Bool) {
+    if isICloud {
+      isUsingICloud = true
+      startMetadataQuery()
+    } else {
+      localBaseURL = baseURL
+      loadSongsFromLocal(baseURL: baseURL)
+    }
+  }
+
+  /// Local-only fallback: single directory scan, no JSON reads.
+  private func loadSongsFromLocal(baseURL: URL?) {
     guard let baseURL else { return }
-    let patternsDir = baseURL.appendingPathComponent("patterns")
+    let patternsDir = baseURL.appending(path: "patterns")
     var allFiles: [URL] = []
     for subdir in ["midi", "score", "table"] {
-      let dir = patternsDir.appendingPathComponent(subdir)
-      let files = (try? FileManager.default.contentsOfDirectory(at: dir, includingPropertiesForKeys: nil)) ?? []
+      let dir = patternsDir.appending(path: subdir)
+      let files = (try? FileManager.default.contentsOfDirectory(
+        at: dir, includingPropertiesForKeys: nil
+      )) ?? []
       allFiles += files
     }
     songs = allFiles
       .filter { $0.pathExtension == "json" }
-      .compactMap { url -> SongRef? in
-        guard let data = try? Data(contentsOf: url),
-              let nameOnly = try? JSONDecoder().decode(PatternNameOnly.self, from: data)
-        else { return nil }
+      .map { url in
         let subdir = url.deletingLastPathComponent().lastPathComponent
-        return SongRef(name: nameOnly.name, patternFileName: "\(subdir)/\(url.lastPathComponent)")
+        return SongRef(patternFileName: "\(subdir)/\(url.lastPathComponent)")
       }
       .sorted { $0.name.localizedCaseInsensitiveCompare($1.name) == .orderedAscending }
+  }
+
+  private func startMetadataQuery() {
+    let query = NSMetadataQuery()
+    query.searchScopes = [NSMetadataQueryUbiquitousDocumentsScope]
+    query.predicate = NSPredicate(format: "%K LIKE '*.json'", NSMetadataItemFSNameKey)
+
+    NotificationCenter.default.addObserver(
+      forName: .NSMetadataQueryDidFinishGathering,
+      object: query,
+      queue: .main
+    ) { [weak self] _ in
+      MainActor.assumeIsolated { self?.handleQueryResults() }
+    }
+
+    NotificationCenter.default.addObserver(
+      forName: .NSMetadataQueryDidUpdate,
+      object: query,
+      queue: .main
+    ) { [weak self] _ in
+      MainActor.assumeIsolated { self?.handleQueryResults() }
+    }
+
+    query.start()
+    metadataQuery = query
+  }
+
+  private static let validSubdirs: Set<String> = ["midi", "score", "table"]
+
+  private func handleQueryResults() {
+    metadataQuery?.disableUpdates()
+    defer { metadataQuery?.enableUpdates() }
+
+    guard let results = metadataQuery?.results as? [NSMetadataItem] else { return }
+
+    songs = results.compactMap { item -> SongRef? in
+      guard let url = item.value(forAttribute: NSMetadataItemURLKey) as? URL,
+            url.pathExtension == "json"
+      else { return nil }
+      let subdir = url.deletingLastPathComponent().lastPathComponent
+      guard Self.validSubdirs.contains(subdir) else { return nil }
+      let parentDir = url.deletingLastPathComponent().deletingLastPathComponent().lastPathComponent
+      guard parentDir == "patterns" else { return nil }
+      return SongRef(patternFileName: "\(subdir)/\(url.lastPathComponent)")
+    }
+    .sorted { $0.name.localizedCaseInsensitiveCompare($1.name) == .orderedAscending }
   }
 
   /// Playback states keyed by SongRef.id, created lazily by SongCells.
@@ -170,7 +230,9 @@ class SongLibrary {
 
   func duplicateSong(_ song: SongRef, resourceBaseURL: URL?) {
     guard PatternStorage.duplicate(filename: song.patternFileName) != nil else { return }
-    loadSongs(from: resourceBaseURL)
+    if !isUsingICloud {
+      loadSongsFromLocal(baseURL: resourceBaseURL ?? localBaseURL)
+    }
   }
 }
 

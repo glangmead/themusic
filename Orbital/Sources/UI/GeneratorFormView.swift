@@ -214,7 +214,7 @@ struct GeneratorFormView: View {
 // MARK: - Preview
 
 #Preview {
-  let song = SongRef(name: "Generator Preview", patternFileName: "table/aurora_arpeggio.json")
+  let song = SongRef(patternFileName: "table/Aurora Arpeggio.json")
   let doc = SongDocument(song: song)
   NavigationStack {
     GeneratorFormView(params: GeneratorSyntax())

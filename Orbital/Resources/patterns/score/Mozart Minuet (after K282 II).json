@@ -1,0 +1,159 @@
+{
+  "scoreTracks": {
+    "bpm": 72,
+    "chordEvents": [
+      {
+        "beat": 0,
+        "degrees": [
+          0,
+          2,
+          4
+        ],
+        "inversion": 0,
+        "op": "setChord"
+      },
+      {
+        "beat": 6,
+        "degrees": [
+          4,
+          6,
+          8
+        ],
+        "inversion": 0,
+        "op": "setChord"
+      },
+      {
+        "beat": 12,
+        "degrees": [
+          0,
+          2,
+          4
+        ],
+        "inversion": 0,
+        "op": "setChord"
+      },
+      {
+        "beat": 18,
+        "degrees": [
+          4,
+          6,
+          8
+        ],
+        "inversion": 0,
+        "op": "setChord"
+      }
+    ],
+    "key": {
+      "root": "Bb",
+      "scale": "major"
+    },
+    "loop": true,
+    "totalBeats": 24,
+    "tracks": [
+      {
+        "name": "Left Hand",
+        "notes": [
+          {
+            "durationBeats": 3,
+            "type": "currentChord"
+          },
+          {
+            "durationBeats": 3,
+            "type": "currentChord"
+          },
+          {
+            "durationBeats": 3,
+            "type": "currentChord"
+          },
+          {
+            "durationBeats": 3,
+            "type": "currentChord"
+          },
+          {
+            "durationBeats": 3,
+            "type": "currentChord"
+          },
+          {
+            "durationBeats": 3,
+            "type": "currentChord"
+          },
+          {
+            "durationBeats": 3,
+            "type": "currentChord"
+          },
+          {
+            "durationBeats": 3,
+            "type": "currentChord"
+          }
+        ],
+        "numVoices": 6,
+        "octave": 3,
+        "presetFilename": "randomPad",
+        "sustainFraction": 0.75,
+        "voicing": "closed"
+      },
+      {
+        "name": "Right Hand",
+        "notes": [
+          {
+            "durationBeats": 3,
+            "note": "D5",
+            "type": "absolute"
+          },
+          {
+            "durationBeats": 1,
+            "note": "C5",
+            "type": "absolute"
+          },
+          {
+            "durationBeats": 2,
+            "note": "Eb5",
+            "type": "absolute"
+          },
+          {
+            "durationBeats": 2,
+            "note": "Bb4",
+            "type": "absolute"
+          },
+          {
+            "durationBeats": 4,
+            "type": "hold"
+          },
+          {
+            "durationBeats": 4,
+            "type": "rest"
+          },
+          {
+            "durationBeats": 3,
+            "note": "F5",
+            "type": "absolute"
+          },
+          {
+            "durationBeats": 1,
+            "note": "Eb5",
+            "type": "absolute"
+          },
+          {
+            "durationBeats": 2,
+            "note": "D5",
+            "type": "absolute"
+          },
+          {
+            "durationBeats": 2,
+            "note": "C5",
+            "type": "absolute"
+          },
+          {
+            "durationBeats": 4,
+            "type": "hold"
+          }
+        ],
+        "numVoices": 4,
+        "octave": 4,
+        "presetFilename": "randomPad",
+        "sustainFraction": 0.85,
+        "voicing": "closed"
+      }
+    ]
+  }
+}

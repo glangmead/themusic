@@ -68,10 +68,7 @@ struct SongCell: View {
   let engine = SpatialAudioEngine()
   let library = SongLibrary()
   let resourceManager = ResourceManager()
-  let song = SongRef(
-    name: "Aurora Borealis",
-    patternFileName: "table/aurora_arpeggio.json"
-  )
+  let song = SongRef(patternFileName: "table/Aurora Arpeggio.json")
   library.songs = [song]
   _ = library.playbackState(for: song, engine: engine)
   return NavigationStack {

@@ -1,0 +1,76 @@
+{
+  "tableTracks": {
+    "emitters": [
+      {
+        "candidates": [
+          "0",
+          "2",
+          "4"
+        ],
+        "function": "cyclic",
+        "name": "degreePicker",
+        "outputType": "int"
+      },
+      {
+        "candidates": [
+          "4"
+        ],
+        "function": "cyclic",
+        "name": "octaves",
+        "outputType": "octave"
+      },
+      {
+        "arg1": 0.8,
+        "arg2": 0.8,
+        "function": "randFloat",
+        "name": "sustain",
+        "outputType": "float"
+      },
+      {
+        "candidates": [
+          "1.0",
+          "1.0",
+          "1.0",
+          "2.0"
+        ],
+        "function": "cyclic",
+        "name": "gap",
+        "outputType": "float"
+      }
+    ],
+    "hierarchy": {
+      "chord": {
+        "degrees": [
+          0,
+          2,
+          4
+        ],
+        "inversion": 0
+      },
+      "root": "C",
+      "scale": "major"
+    },
+    "name": "Minimal Pulse",
+    "noteMaterials": [
+      {
+        "degreeEmitter": "degreePicker",
+        "level": "scale",
+        "name": "pulse",
+        "octaveEmitter": "octaves",
+        "type": "hierarchyMelody"
+      }
+    ],
+    "presetModulators": [],
+    "tracks": [
+      {
+        "gapEmitter": "gap",
+        "name": "Minimal Pulse",
+        "noteMaterial": "pulse",
+        "numVoices": 12,
+        "presetFilename": "sine",
+        "presetModulatorNames": [],
+        "sustainEmitter": "sustain"
+      }
+    ]
+  }
+}

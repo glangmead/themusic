@@ -81,7 +81,7 @@ struct OrbitalPlay: AsyncParsableCommand {
         // Apply --bpm override to midiTracks if provided
         if let bpm = bpmOverride, let midi = patternSpec.midiTracks {
             let updated = MidiTracksSyntax(filename: midi.filename, loop: midi.loop, bpm: bpm, maxSilence: midi.maxSilence, tracks: midi.tracks)
-            patternSpec = PatternSyntax(name: patternSpec.name, midiTracks: updated)
+            patternSpec = PatternSyntax(midiTracks: updated)
         }
 
         let spatialEnabled = !noSpatial

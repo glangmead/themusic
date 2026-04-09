@@ -215,10 +215,10 @@ struct WorkDetailView: View {
     let composerPath = "\(composer.slug)/\(relativePath)"
     let tracks = [MidiTrackEntry(presetFilename: nil, numVoices: 4, modulators: nil)]
     let midiSpec = MidiTracksSyntax(filename: composerPath, loop: false, bpm: bpm, maxSilence: 2.0, tracks: tracks)
-    let pattern = PatternSyntax(name: work.title, midiTracks: midiSpec)
+    let pattern = PatternSyntax(midiTracks: midiSpec)
     let doc = SongDocument(
       patternSyntax: pattern,
-      name: work.title,
+      displayName: work.title,
       subtitle: composer.name,
       engine: engine,
       resourceBaseURL: ledger.baseDirectory

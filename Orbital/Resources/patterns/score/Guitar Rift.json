@@ -1,0 +1,95 @@
+{
+  "scoreTracks": {
+    "bpm": 40,
+    "chordEvents": [
+      {
+        "beat": 0,
+        "inversion": 0,
+        "op": "setRoman",
+        "roman": "I"
+      },
+      {
+        "beat": 6,
+        "inversion": 0,
+        "op": "setRoman",
+        "roman": "bVII"
+      }
+    ],
+    "key": {
+      "root": "C",
+      "scale": "major"
+    },
+    "loop": true,
+    "totalBeats": 12,
+    "tracks": [
+      {
+        "name": "Pad",
+        "notes": [
+          {
+            "durationBeats": 6,
+            "type": "currentChord"
+          },
+          {
+            "durationBeats": 6,
+            "type": "currentChord"
+          }
+        ],
+        "numVoices": 8,
+        "octave": 2,
+        "presetFilename": "randomPad",
+        "sustainFraction": 0.95,
+        "voicing": "open"
+      },
+      {
+        "name": "Melody",
+        "notes": [
+          {
+            "durationBeats": 1,
+            "index": 0,
+            "type": "chordTone"
+          },
+          {
+            "durationBeats": 1,
+            "index": 2,
+            "type": "chordTone"
+          },
+          {
+            "durationBeats": 1,
+            "index": -1,
+            "type": "chordTone"
+          },
+          {
+            "durationBeats": 3,
+            "index": 1,
+            "type": "chordTone"
+          },
+          {
+            "durationBeats": 1,
+            "index": -2,
+            "type": "chordTone"
+          },
+          {
+            "durationBeats": 1,
+            "index": 0,
+            "type": "chordTone"
+          },
+          {
+            "durationBeats": 1,
+            "index": -3,
+            "type": "chordTone"
+          },
+          {
+            "durationBeats": 3,
+            "index": -1,
+            "type": "chordTone"
+          }
+        ],
+        "numVoices": 4,
+        "octave": 4,
+        "presetFilename": "airports_piano_comb",
+        "sustainFraction": 0.5,
+        "voicing": "closed"
+      }
+    ]
+  }
+}

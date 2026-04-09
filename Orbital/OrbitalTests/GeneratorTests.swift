@@ -314,14 +314,13 @@ struct GeneratorSyntaxCodableTests {
     @Test("PatternSyntax with generatorTracks round-trips through JSON")
     func patternSyntaxWithGeneratorTracksRoundTrips() throws {
         let gen = GeneratorSyntax(motion: .shuttle, chordType: .triad, texture: .pad, randomSeed: 1)
-        let pattern = PatternSyntax(name: "TestGen", generatorTracks: gen)
+        let pattern = PatternSyntax(generatorTracks: gen)
 
         let encoder = JSONEncoder()
         let decoder = JSONDecoder()
         let data = try encoder.encode(pattern)
         let decoded = try decoder.decode(PatternSyntax.self, from: data)
 
-        #expect(decoded.name == "TestGen")
         #expect(decoded.generatorTracks == gen)
         #expect(decoded.midiTracks == nil)
         #expect(decoded.tableTracks == nil)
@@ -333,7 +332,7 @@ struct GeneratorSyntaxCodableTests {
         let gen = GeneratorSyntax(
             motion: .fourChords, chordType: .triad, texture: .satb, randomSeed: 42
         )
-        let pattern = PatternSyntax(name: "GenTest", generatorTracks: gen)
+        let pattern = PatternSyntax(generatorTracks: gen)
 
         let trackInfos = pattern.compileTrackInfoOnly()
         // SATB = 4 tracks

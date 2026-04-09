@@ -144,10 +144,7 @@ struct SongSettingsView: View {
 }
 
 #Preview {
-  let song = SongRef(
-    name: "Aurora Borealis",
-    patternFileName: "table/aurora_arpeggio.json"
-  )
+  let song = SongRef(patternFileName: "table/Aurora Arpeggio.json")
   let playbackState = SongDocument(song: song)
   NavigationStack {
     SongSettingsView(song: song)

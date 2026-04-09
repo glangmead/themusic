@@ -440,13 +440,8 @@ struct TablePatternFormView: View {
   private func savePattern() {
     applyChanges()
     let table = buildTableSyntax()
-    let filename = patternName.lowercased().replacingOccurrences(of: " ", with: "_") + ".json"
-    let patternSyntax = PatternSyntax(
-      name: patternName,
-      midiTracks: nil,
-      tableTracks: table,
-      scoreTracks: nil
-    )
+    let filename = PatternFilename.filename(from: patternName)
+    let patternSyntax = PatternSyntax(tableTracks: table)
     PatternStorage.save(patternSyntax, filename: filename)
   }
 }
@@ -454,7 +449,7 @@ struct TablePatternFormView: View {
 #Preview {
   let pattern = Bundle.main.decode(
     PatternSyntax.self,
-    from: "table/table_aurora.json",
+    from: "table/Table Aurora.json",
     subdirectory: "patterns"
   )
   let table = pattern.tableTracks!
@@ -463,7 +458,7 @@ struct TablePatternFormView: View {
   }
   .environment(
     SongDocument(
-      song: SongRef(name: "Aurora Borealis", patternFileName: "table/table_aurora.json")
+      song: SongRef(patternFileName: "table/Table Aurora.json")
     )
   )
   .environment(ResourceManager())

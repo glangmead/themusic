@@ -1,0 +1,276 @@
+{
+  "tableTracks": {
+    "emitters": [
+      {
+        "fragments": [
+          [
+            5,
+            7,
+            4,
+            2,
+            0,
+            12,
+            7,
+            5,
+            7,
+            4,
+            2,
+            0
+          ],
+          [
+            5,
+            7,
+            4,
+            2,
+            0,
+            12,
+            4,
+            7,
+            5,
+            0
+          ],
+          [
+            -5,
+            2,
+            0,
+            4,
+            7,
+            12,
+            5,
+            2,
+            7,
+            4,
+            0,
+            7,
+            2,
+            5,
+            5,
+            2,
+            4,
+            0
+          ],
+          [
+            7,
+            7,
+            2,
+            4,
+            4,
+            4,
+            2,
+            0,
+            7,
+            0,
+            0
+          ]
+        ],
+        "function": "fragmentPool",
+        "name": "melodyDegreePicker",
+        "outputType": "int"
+      },
+      {
+        "candidates": [
+          "3"
+        ],
+        "function": "random",
+        "name": "melodyOctaves",
+        "outputType": "octave"
+      },
+      {
+        "arg1": 0.1,
+        "arg2": 0.1,
+        "function": "randFloat",
+        "name": "melodySustain",
+        "outputType": "float"
+      },
+      {
+        "arg1": 1.0,
+        "arg2": 3.0,
+        "function": "exponentialRandFloat",
+        "name": "melodyGap",
+        "outputType": "float"
+      },
+      {
+        "arg1": 20,
+        "arg2": 40,
+        "function": "randFloat",
+        "name": "chordTimer",
+        "outputType": "float"
+      },
+      {
+        "candidates": [
+          "3",
+          "3",
+          "4",
+          "4"
+        ],
+        "function": "random",
+        "name": "chordOctaves",
+        "outputType": "octave"
+      },
+      {
+        "arg1": 8,
+        "arg2": 15,
+        "function": "randFloat",
+        "name": "chordSustain",
+        "outputType": "float"
+      },
+      {
+        "arg1": 2,
+        "arg2": 8,
+        "function": "randFloat",
+        "name": "chordGap",
+        "outputType": "float"
+      },
+      {
+        "candidates": [
+          "0"
+        ],
+        "function": "cyclic",
+        "name": "bassDegreePicker",
+        "outputType": "int"
+      },
+      {
+        "candidates": [
+          "2",
+          "2",
+          "2",
+          "3"
+        ],
+        "function": "random",
+        "name": "bassOctaves",
+        "outputType": "octave"
+      },
+      {
+        "arg1": 10,
+        "arg2": 20,
+        "function": "randFloat",
+        "name": "bassSustain",
+        "outputType": "float"
+      },
+      {
+        "arg1": 3,
+        "arg2": 10,
+        "function": "randFloat",
+        "name": "bassGap",
+        "outputType": "float"
+      },
+      {
+        "arg1": 0.3,
+        "arg2": 0.7,
+        "function": "exponentialRandFloat",
+        "name": "melodyAmpVal",
+        "outputType": "float"
+      },
+      {
+        "arg1": 0.01,
+        "arg2": 0.02,
+        "function": "exponentialRandFloat",
+        "name": "chordAmpVal",
+        "outputType": "float"
+      },
+      {
+        "arg1": 0.4,
+        "arg2": 0.5,
+        "function": "exponentialRandFloat",
+        "name": "bassAmpVal",
+        "outputType": "float"
+      }
+    ],
+    "hierarchy": {
+      "chord": {
+        "degrees": [
+          0,
+          4,
+          7
+        ],
+        "inversion": 0
+      },
+      "root": "A",
+      "scale": "chromatic"
+    },
+    "hierarchyModulators": [
+      {
+        "fireIntervalEmitter": "chordTimer",
+        "level": "chord",
+        "n": 1,
+        "name": "chordDrifter",
+        "operation": "T"
+      }
+    ],
+    "name": "Airports",
+    "noteMaterials": [
+      {
+        "degreeEmitter": "melodyDegreePicker",
+        "level": "scale",
+        "name": "melody",
+        "octaveEmitter": "melodyOctaves",
+        "type": "hierarchyMelody"
+      },
+      {
+        "name": "chords",
+        "octaveEmitter": "chordOctaves",
+        "type": "hierarchyChord",
+        "voicing": "open"
+      },
+      {
+        "degreeEmitter": "bassDegreePicker",
+        "level": "chord",
+        "name": "bassNotes",
+        "octaveEmitter": "bassOctaves",
+        "type": "hierarchyMelody"
+      }
+    ],
+    "presetModulators": [
+      {
+        "floatEmitter": "melodyAmpVal",
+        "name": "melodyAmpMod",
+        "targetHandle": "overallAmp"
+      },
+      {
+        "floatEmitter": "chordAmpVal",
+        "name": "chordAmpMod",
+        "targetHandle": "overallAmp"
+      },
+      {
+        "floatEmitter": "bassAmpVal",
+        "name": "bassAmpMod",
+        "targetHandle": "overallAmp"
+      }
+    ],
+    "tracks": [
+      {
+        "gapEmitter": "melodyGap",
+        "name": "Piano",
+        "noteMaterial": "melody",
+        "numVoices": 6,
+        "presetFilename": "airports_piano_mix",
+        "presetModulatorNames": [
+          "melodyAmpMod"
+        ],
+        "sustainEmitter": "melodySustain"
+      },
+      {
+        "gapEmitter": "chordGap",
+        "name": "Chords",
+        "noteMaterial": "chords",
+        "numVoices": 6,
+        "presetFilename": "warm_analog_pad",
+        "presetModulatorNames": [
+          "chordAmpMod"
+        ],
+        "sustainEmitter": "chordSustain"
+      },
+      {
+        "gapEmitter": "bassGap",
+        "name": "Bass",
+        "noteMaterial": "bassNotes",
+        "numVoices": 3,
+        "presetFilename": "warm_analog_pad",
+        "presetModulatorNames": [
+          "bassAmpMod"
+        ],
+        "sustainEmitter": "bassSustain"
+      }
+    ]
+  }
+}

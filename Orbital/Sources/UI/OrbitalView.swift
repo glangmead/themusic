@@ -81,14 +81,8 @@ struct OrbitalView: View {
   let library = SongLibrary()
   let resourceManager = ResourceManager()
   library.songs = [
-    SongRef(
-      name: "Aurora Borealis",
-      patternFileName: "table/aurora_arpeggio.json"
-    ),
-    SongRef(
-      name: "Baroque Chords",
-      patternFileName: "table/baroque_chords.json"
-    )
+    SongRef(patternFileName: "table/Aurora Arpeggio.json"),
+    SongRef(patternFileName: "table/Baroque Chords.json")
   ]
   resourceManager.isReady = true
   for song in library.songs {

@@ -1355,3 +1355,124 @@ struct ChordLabelStreamTests {
         #expect(labelAfter == "V7")
     }
 }
+
+// MARK: - Guitar Rift MIDI Dump
+
+/// Helper: MIDI number → note name (e.g. 60 → "C4").
+private func midiNoteName(_ midi: UInt8) -> String {
+  let names = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"]
+  let octave = Int(midi) / 12 - 1
+  let name = names[Int(midi) % 12]
+  return "\(name)\(octave)"
+}
+
+/// Build the ScorePatternSyntax matching guitar_rift.json.
+private func guitarRiftScore() -> ScorePatternSyntax {
+  ScorePatternSyntax(
+    bpm: 40,
+    totalBeats: 12,
+    loop: true,
+    key: ScoreKeySyntax(root: "C", scale: "major"),
+    chordEvents: [
+      ChordEventSyntax(beat: 0, op: "setRoman", roman: "I"),
+      ChordEventSyntax(beat: 6, op: "setRoman", roman: "bVII")
+    ],
+    tracks: [
+      ScoreTrackSyntax(
+        name: "Pad",
+        presetFilename: "randomPad",
+        numVoices: 8,
+        octave: 1,
+        voicing: .open,
+        sustainFraction: 0.95,
+        notes: [
+          ScoreNoteSyntax(type: .currentChord, durationBeats: 6,
+                          index: nil, degree: nil, midi: nil, note: nil,
+                          octave: nil, voicing: nil, velocity: nil),
+          ScoreNoteSyntax(type: .currentChord, durationBeats: 6,
+                          index: nil, degree: nil, midi: nil, note: nil,
+                          octave: nil, voicing: nil, velocity: nil)
+        ]
+      ),
+      ScoreTrackSyntax(
+        name: "Melody",
+        presetFilename: "randomPad",
+        numVoices: 4,
+        octave: 3,
+        voicing: .closed,
+        sustainFraction: 0.5,
+        notes: [
+          ScoreNoteSyntax(type: .chordTone, durationBeats: 1,
+                          index: 0, degree: nil, midi: nil, note: nil,
+                          octave: nil, voicing: nil, velocity: nil),
+          ScoreNoteSyntax(type: .chordTone, durationBeats: 1,
+                          index: 2, degree: nil, midi: nil, note: nil,
+                          octave: nil, voicing: nil, velocity: nil),
+          ScoreNoteSyntax(type: .chordTone, durationBeats: 1,
+                          index: -1, degree: nil, midi: nil, note: nil,
+                          octave: nil, voicing: nil, velocity: nil),
+          ScoreNoteSyntax(type: .chordTone, durationBeats: 3,
+                          index: 1, degree: nil, midi: nil, note: nil,
+                          octave: nil, voicing: nil, velocity: nil),
+          ScoreNoteSyntax(type: .chordTone, durationBeats: 1,
+                          index: -2, degree: nil, midi: nil, note: nil,
+                          octave: nil, voicing: nil, velocity: nil),
+          ScoreNoteSyntax(type: .chordTone, durationBeats: 1,
+                          index: 0, degree: nil, midi: nil, note: nil,
+                          octave: nil, voicing: nil, velocity: nil),
+          ScoreNoteSyntax(type: .chordTone, durationBeats: 1,
+                          index: -3, degree: nil, midi: nil, note: nil,
+                          octave: nil, voicing: nil, velocity: nil),
+          ScoreNoteSyntax(type: .chordTone, durationBeats: 3,
+                          index: -1, degree: nil, midi: nil, note: nil,
+                          octave: nil, voicing: nil, velocity: nil)
+        ]
+      )
+    ]
+  )
+}
+
+@Suite("Guitar Rift MIDI Resolution", .serialized)
+struct GuitarRiftMidiTests {
+
+  @Test("guitar_rift.json resolves all tracks to expected MIDI notes")
+  func guitarRiftMidi() throws {
+    let score = guitarRiftScore()
+
+    let timeline = ScorePatternCompiler.buildTimeline(score)
+    let secondsPerBeat = 60.0 / score.bpm
+
+    for track in score.tracks {
+      let (chords, _, _) = ScorePatternCompiler.compileTrack(
+        track,
+        timeline: timeline,
+        secondsPerBeat: secondsPerBeat,
+        loop: score.loop ?? true
+      )
+
+      var description = "Track \"\(track.name)\" (octave \(track.octave)):"
+      for (i, chord) in chords.enumerated() {
+        let noteStr = chord.map { "\(midiNoteName($0.note))(\($0.note))" }.joined(separator: " ")
+        description += "\n  [\(i)] \(noteStr)"
+      }
+      print(description)
+
+      // Verify notes land in the expected octave range.
+      // Track octave N should produce notes roughly in MIDI range [12*(N+1), 12*(N+2)+12].
+      let expectedLow = UInt8(12 * (track.octave + 1))
+      let expectedHigh = UInt8(min(127, 12 * (track.octave + 3)))
+      for (i, chord) in chords.enumerated() {
+        for midiNote in chord {
+          #expect(
+            midiNote.note >= expectedLow && midiNote.note <= expectedHigh,
+            """
+            Track "\(track.name)" note [\(i)] \(midiNoteName(midiNote.note))(\(midiNote.note)) \
+            outside expected range \(midiNoteName(expectedLow))-\(midiNoteName(expectedHigh)) \
+            for octave \(track.octave)
+            """
+          )
+        }
+      }
+    }
+  }
+}

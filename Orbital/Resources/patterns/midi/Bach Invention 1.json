@@ -1,0 +1,16 @@
+{
+  "midiTracks": {
+    "filename": "patterns/midi/BachInvention1.mid",
+    "loop": true,
+    "tracks": [
+      {
+        "numVoices": 12,
+        "presetFilename": "airports_piano_comb"
+      },
+      {
+        "numVoices": 12,
+        "presetFilename": "airports_pulse"
+      }
+    ]
+  }
+}

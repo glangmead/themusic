@@ -1,0 +1,174 @@
+{
+  "scoreTracks": {
+    "bpm": 80,
+    "chordEvents": [
+      {
+        "beat": 0,
+        "degrees": [
+          0,
+          2,
+          4
+        ],
+        "inversion": 0,
+        "op": "setChord"
+      },
+      {
+        "beat": 4,
+        "n": 3,
+        "op": "T"
+      },
+      {
+        "beat": 8,
+        "n": 1,
+        "op": "T"
+      },
+      {
+        "beat": 12,
+        "degrees": [
+          4,
+          6,
+          8
+        ],
+        "inversion": 0,
+        "op": "setChord"
+      }
+    ],
+    "key": {
+      "root": "D",
+      "scale": "minor"
+    },
+    "loop": true,
+    "totalBeats": 16,
+    "tracks": [
+      {
+        "name": "Bass",
+        "notes": [
+          {
+            "durationBeats": 2,
+            "index": 0,
+            "type": "chordTone"
+          },
+          {
+            "durationBeats": 2,
+            "index": 2,
+            "type": "chordTone"
+          },
+          {
+            "durationBeats": 2,
+            "index": 0,
+            "type": "chordTone"
+          },
+          {
+            "durationBeats": 2,
+            "index": 1,
+            "type": "chordTone"
+          },
+          {
+            "durationBeats": 2,
+            "index": 0,
+            "type": "chordTone"
+          },
+          {
+            "durationBeats": 2,
+            "index": 2,
+            "type": "chordTone"
+          },
+          {
+            "durationBeats": 2,
+            "index": 0,
+            "type": "chordTone"
+          },
+          {
+            "durationBeats": 2,
+            "index": 1,
+            "type": "chordTone"
+          }
+        ],
+        "numVoices": 4,
+        "octave": 2,
+        "presetFilename": "randomPad",
+        "sustainFraction": 0.95,
+        "voicing": "closed"
+      },
+      {
+        "name": "Soprano",
+        "notes": [
+          {
+            "degree": 4,
+            "durationBeats": 1,
+            "type": "scaleDegree"
+          },
+          {
+            "degree": 5,
+            "durationBeats": 1,
+            "type": "scaleDegree"
+          },
+          {
+            "degree": 4,
+            "durationBeats": 1,
+            "type": "scaleDegree"
+          },
+          {
+            "degree": 3,
+            "durationBeats": 1,
+            "type": "scaleDegree"
+          },
+          {
+            "degree": 5,
+            "durationBeats": 1,
+            "type": "scaleDegree"
+          },
+          {
+            "degree": 4,
+            "durationBeats": 1,
+            "type": "scaleDegree"
+          },
+          {
+            "degree": 3,
+            "durationBeats": 1,
+            "type": "scaleDegree"
+          },
+          {
+            "degree": 2,
+            "durationBeats": 1,
+            "type": "scaleDegree"
+          },
+          {
+            "degree": 6,
+            "durationBeats": 1,
+            "type": "scaleDegree"
+          },
+          {
+            "degree": 5,
+            "durationBeats": 1,
+            "type": "scaleDegree"
+          },
+          {
+            "degree": 4,
+            "durationBeats": 1,
+            "type": "scaleDegree"
+          },
+          {
+            "degree": 3,
+            "durationBeats": 1,
+            "type": "scaleDegree"
+          },
+          {
+            "degree": 4,
+            "durationBeats": 2,
+            "type": "scaleDegree"
+          },
+          {
+            "durationBeats": 2,
+            "type": "hold"
+          }
+        ],
+        "numVoices": 4,
+        "octave": 4,
+        "presetFilename": "randomPad",
+        "sustainFraction": 0.95,
+        "voicing": "closed"
+      }
+    ]
+  }
+}

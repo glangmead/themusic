@@ -57,7 +57,10 @@ struct OrbitalApp: App {
           WavetableLibrary.loadAllCuratedTables()
           await resourceManager.setup()
           PatternStorage.resourceBaseURL = resourceManager.resourceBaseURL
-          songLibrary.loadSongs(from: resourceManager.resourceBaseURL)
+          songLibrary.startMonitoring(
+            baseURL: resourceManager.resourceBaseURL,
+            isICloud: resourceManager.isUsingICloud
+          )
           classicsCatalog.load()
           // Point the ledger at the same base directory ResourceManager resolved
           // (iCloud Documents or local fallback), not the app sandbox.
