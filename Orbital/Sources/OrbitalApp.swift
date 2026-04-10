@@ -71,7 +71,7 @@ struct OrbitalApp: App {
           try? FileManager.default.createDirectory(
             at: midiLedger.baseDirectory, withIntermediateDirectories: true
           )
-          midiLedger.load()
+          await midiLedger.load()
           midiDownloadManager = MIDIDownloadManager(ledger: midiLedger)
         }
         .onReceive(NotificationCenter.default.publisher(for: UIApplication.willTerminateNotification)) { _ in

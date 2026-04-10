@@ -33,6 +33,10 @@ final class MIDIDownloadLedger {
   /// Maps source URL string to its ledger entry.
   private(set) var entries: [String: MIDILedgerEntry] = [:]
 
+  /// True while `load()` is reading the ledger file from disk (and, for iCloud,
+  /// possibly downloading it). Drives tab-level loading indicators.
+  private(set) var isLoading = false
+
   private var fileURL: URL {
     baseDirectory.appending(path: "ledger.json")
   }
@@ -80,21 +84,47 @@ final class MIDIDownloadLedger {
 
   // MARK: - Persistence
 
-  func load() {
-    guard FileManager.default.fileExists(atPath: fileURL.path(percentEncoded: false)) else {
-      logger.info("No ledger file found, starting fresh")
-      return
-    }
-    do {
-      let data = try Data(contentsOf: fileURL)
-      let decoder = JSONDecoder()
-      decoder.dateDecodingStrategy = .iso8601
-      let entryList = try decoder.decode([MIDILedgerEntry].self, from: data)
-      entries = Dictionary(uniqueKeysWithValues: entryList.map { ($0.sourceUrl, $0) })
-      logger.info("Loaded \(entryList.count) ledger entries")
-    } catch {
-      logger.error("Failed to load ledger: \(error.localizedDescription)")
-    }
+  /// Loads the ledger off the main thread using `NSFileCoordinator` so that
+  /// iCloud can bring the file local before we read it. Safe to call on the
+  /// main actor — the blocking read happens in a detached task.
+  func load() async {
+    let url = fileURL
+    isLoading = true
+    defer { isLoading = false }
+
+    let loaded = await Task.detached(priority: .userInitiated) { () -> [MIDILedgerEntry]? in
+      let fm = FileManager.default
+      guard fm.fileExists(atPath: url.path(percentEncoded: false)) else {
+        logger.info("No ledger file found, starting fresh")
+        return nil
+      }
+
+      // Hint iCloud to bring the file local before we coordinate a read.
+      // No-op (and harmless error) for non-ubiquitous files.
+      try? fm.startDownloadingUbiquitousItem(at: url)
+
+      let coordinator = NSFileCoordinator()
+      var coordError: NSError?
+      var result: [MIDILedgerEntry]?
+      coordinator.coordinate(readingItemAt: url, options: [], error: &coordError) { coordinatedURL in
+        do {
+          let data = try Data(contentsOf: coordinatedURL)
+          let decoder = JSONDecoder()
+          decoder.dateDecodingStrategy = .iso8601
+          result = try decoder.decode([MIDILedgerEntry].self, from: data)
+        } catch {
+          logger.error("Failed to read/decode ledger: \(error.localizedDescription)")
+        }
+      }
+      if let coordError {
+        logger.error("File coordination failed: \(coordError.localizedDescription)")
+      }
+      return result
+    }.value
+
+    guard let loaded else { return }
+    entries = Dictionary(uniqueKeysWithValues: loaded.map { ($0.sourceUrl, $0) })
+    logger.info("Loaded \(loaded.count) ledger entries")
   }
 
   private func save() {

@@ -4,8 +4,9 @@
     {
       "layers" : [
         {
-          "image-name" : "ribbon_plot 9.svg",
-          "name" : "ribbon_plot 9",
+          "glass" : false,
+          "image-name" : "ribbon_plot 2.svg",
+          "name" : "ribbon_plot 2",
           "position" : {
             "scale" : 1.6,
             "translation-in-points" : [

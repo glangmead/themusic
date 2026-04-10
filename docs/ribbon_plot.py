@@ -93,8 +93,8 @@ order = np.argsort(depths)[::-1]
 quads = [quads[i] for i in order]
 fog = fog[order]
 
-# Base ribbon color (grass green)
-ribbon_color = np.array([0.35, 0.75, 0.25])
+# Base ribbon color — Apple systemGreen (#34C759)
+ribbon_color = np.array([52, 199, 89]) / 255.0
 
 # Face color: ribbon_color * fog, fading toward black
 face_colors = [(*(ribbon_color * f),) for f in fog]

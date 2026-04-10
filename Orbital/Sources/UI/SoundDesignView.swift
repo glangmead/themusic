@@ -14,6 +14,12 @@ struct SoundDesignView: View {
   @State private var isShowingSaveDialog = false
   @State private var isShowingOverwriteConfirmation = false
   @State private var savePresetName = ""
+  @State private var isLoadingPresets = false
+
+  /// Optional external loading flag the parent can observe (e.g. to show a
+  /// spinner next to the Sound Design row in a sidebar). Mirrors
+  /// `isLoadingPresets` while loads are in-flight.
+  var externalIsLoading: Binding<Bool>?
 
   var body: some View {
     NavigationStack {
@@ -58,8 +64,8 @@ struct SoundDesignView: View {
           } message: {
             Text("Do you want to replace the existing preset?")
           }
-      } else if presets.isEmpty {
-        ProgressView()
+      } else if isLoadingPresets {
+        ProgressView("Loading presets…")
       } else {
         ContentUnavailableView(
           "No Preset Selected",
@@ -67,30 +73,24 @@ struct SoundDesignView: View {
         )
       }
     }
-    .task {
-      loadPresets()
+    .task(id: resourceManager.resourceBaseURL) {
+      await loadPresets()
       if selectedPreset == nil, let first = presets.first {
         selectPreset(ref: first)
       }
     }
   }
 
-  private func loadPresets() {
+  private func loadPresets() async {
     guard let base = resourceManager.resourceBaseURL else { return }
     let presetsDir = base.appending(path: "presets")
-    let urls = (try? FileManager.default.contentsOfDirectory(
-      at: presetsDir,
-      includingPropertiesForKeys: nil
-    ).filter { $0.pathExtension == "json" }) ?? []
-    presets = urls.compactMap { url -> PresetRef? in
-      let fileName = url.lastPathComponent
-      guard let data = try? Data(contentsOf: url),
-            let spec = try? JSONDecoder().decode(PresetSyntax.self, from: data)
-      else { return nil }
-      return PresetRef(fileName: fileName, spec: spec)
-    }.sorted {
-      $0.spec.name.localizedCaseInsensitiveCompare($1.spec.name) == .orderedAscending
+    isLoadingPresets = true
+    externalIsLoading?.wrappedValue = true
+    defer {
+      isLoadingPresets = false
+      externalIsLoading?.wrappedValue = false
     }
+    presets = await loadPresetsFromDirectory(presetsDir)
   }
 
   private func selectPreset(named fileName: String) {
@@ -121,8 +121,10 @@ struct SoundDesignView: View {
     let spec = synth.currentPresetSyntax(name: savePresetName)
     let filename = filenameForPresetName(savePresetName)
     if PresetStorage.save(spec, filename: filename) {
-      loadPresets()
-      selectPreset(named: filename)
+      Task {
+        await loadPresets()
+        selectPreset(named: filename)
+      }
     }
   }
 }

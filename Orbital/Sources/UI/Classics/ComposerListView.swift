@@ -7,6 +7,7 @@ import SwiftUI
 
 struct ComposerListView: View {
   @Environment(ClassicsCatalogLibrary.self) private var catalog
+  @Environment(MIDIDownloadLedger.self) private var ledger
   @Binding var selectedComposerID: CatalogComposer.ID?
 
   var body: some View {
@@ -20,6 +21,18 @@ struct ComposerListView: View {
     }
     .navigationTitle("Composers")
     .toolbar {
+      if ledger.isLoading {
+        ToolbarItem(placement: .topBarLeading) {
+          HStack(spacing: 6) {
+            ProgressView()
+              .controlSize(.small)
+            Text("Loading downloads…")
+              .font(.caption)
+              .foregroundStyle(.secondary)
+          }
+          .accessibilityLabel("Loading download history")
+        }
+      }
       ToolbarItem(placement: .topBarTrailing) {
         Menu {
           Picker("Sort by", selection: $catalog.sortOrder) {

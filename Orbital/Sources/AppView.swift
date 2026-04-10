@@ -24,6 +24,7 @@ struct AppView: View {
 private struct CompactAppLayout: View {
   @Environment(SpatialAudioEngine.self) private var engine
   @Environment(SongLibrary.self) private var library
+  @Environment(MIDIDownloadLedger.self) private var midiLedger
   @State private var isShowingVisualizer = false
   @State private var createDocument: SongDocument?
 
@@ -32,8 +33,18 @@ private struct CompactAppLayout: View {
       Tab("Songs", systemImage: "music.note.list") {
         OrbitalView()
       }
-      Tab("Classics", systemImage: "building.columns") {
+      Tab {
         ClassicsBrowserView()
+      } label: {
+        Label {
+          Text("Classics")
+        } icon: {
+          if midiLedger.isLoading {
+            ProgressView()
+          } else {
+            Image(systemName: "building.columns")
+          }
+        }
       }
       Tab("Create", systemImage: "wand.and.stars") {
         NavigationStack {
@@ -101,19 +112,31 @@ private struct RegularAppLayout: View {
   @Environment(SongLibrary.self) private var library
   @Environment(ResourceManager.self) private var resourceManager
   @Environment(ClassicsCatalogLibrary.self) private var catalog
+  @Environment(MIDIDownloadLedger.self) private var midiLedger
   @State private var selectedCategory: SidebarCategory? = .songs
   @State private var isShowingVisualizer = false
   @State private var createDocument: SongDocument?
   @State private var presets: [PresetRef] = []
+  @State private var isLoadingPresets = false
+  @State private var isLoadingSoundDesignPresets = false
 
   var body: some View {
     NavigationSplitView {
       List(SidebarCategory.allCases, selection: $selectedCategory) { category in
-        Label(category.rawValue, systemImage: category.systemImage)
-          .tag(category)
-          .accessibilityIdentifier("sidebar-\(category.rawValue)")
-          .accessibilityLabel(category.rawValue)
-          .accessibilityAddTraits(.isButton)
+        HStack {
+          Label(category.rawValue, systemImage: category.systemImage)
+          if (category == .classics && midiLedger.isLoading)
+            || (category == .soundLibrary && isLoadingPresets)
+            || (category == .soundDesign && isLoadingSoundDesignPresets) {
+            Spacer()
+            ProgressView()
+              .controlSize(.small)
+          }
+        }
+        .tag(category)
+        .accessibilityIdentifier("sidebar-\(category.rawValue)")
+        .accessibilityLabel(category.rawValue)
+        .accessibilityAddTraits(.isButton)
       }
       .navigationTitle("Orbital")
     } detail: {
@@ -124,8 +147,8 @@ private struct RegularAppLayout: View {
         createDocument = SongDocument(generatorPattern: GeneratorSyntax(), engine: engine)
       }
     }
-    .task {
-      loadPresets()
+    .task(id: resourceManager.resourceBaseURL) {
+      await loadPresets()
     }
     .safeAreaInset(edge: .bottom) {
       if library.anySongPlaying || createDocument?.isPlaying == true || createDocument?.isLoading == true {
@@ -165,7 +188,7 @@ private struct RegularAppLayout: View {
         }
       }
     case .soundDesign:
-      SoundDesignView()
+      SoundDesignView(externalIsLoading: $isLoadingSoundDesignPresets)
     case nil:
       ContentUnavailableView("Select a Category", systemImage: "sidebar.left", description: Text("Choose a category from the sidebar."))
     }
@@ -239,9 +262,22 @@ private struct RegularAppLayout: View {
             Label("Wavetable Browser", systemImage: "waveform")
           }
         }
-        ForEach(presets) { preset in
-          NavigationLink(value: preset.fileName) {
-            Text(preset.spec.name)
+        if isLoadingPresets && presets.isEmpty {
+          Section {
+            HStack(spacing: 8) {
+              ProgressView()
+                .controlSize(.small)
+              Text("Loading presets…")
+                .foregroundStyle(.secondary)
+            }
+            .accessibilityElement(children: .combine)
+            .accessibilityLabel("Loading presets")
+          }
+        } else {
+          ForEach(presets) { preset in
+            NavigationLink(value: preset.fileName) {
+              Text(preset.spec.name)
+            }
           }
         }
       }
@@ -257,20 +293,12 @@ private struct RegularAppLayout: View {
     }
   }
 
-  private func loadPresets() {
+  private func loadPresets() async {
     guard let base = resourceManager.resourceBaseURL else { return }
     let presetsDir = base.appendingPathComponent("presets")
-    let urls = (try? FileManager.default.contentsOfDirectory(
-      at: presetsDir,
-      includingPropertiesForKeys: nil
-    ).filter { $0.pathExtension == "json" }) ?? []
-    presets = urls.compactMap { url -> PresetRef? in
-      let fileName = url.lastPathComponent
-      guard let data = try? Data(contentsOf: url),
-            let spec = try? JSONDecoder().decode(PresetSyntax.self, from: data)
-      else { return nil }
-      return PresetRef(fileName: fileName, spec: spec)
-    }.sorted { $0.spec.name.localizedCaseInsensitiveCompare($1.spec.name) == .orderedAscending }
+    isLoadingPresets = true
+    defer { isLoadingPresets = false }
+    presets = await loadPresetsFromDirectory(presetsDir)
   }
 }
 

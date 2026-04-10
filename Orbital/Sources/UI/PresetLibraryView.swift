@@ -12,6 +12,41 @@ struct PresetRef: Identifiable {
   let spec: PresetSyntax
 }
 
+/// Loads preset JSONs from `presetsDir` off the main thread using
+/// `NSFileCoordinator` so iCloud can bring files local before reading.
+/// Returns an array sorted by the preset `name` field.
+func loadPresetsFromDirectory(_ presetsDir: URL) async -> [PresetRef] {
+  let fileData: [(String, Data)] = await Task.detached(priority: .userInitiated) {
+    let fm = FileManager.default
+    let urls = (try? fm.contentsOfDirectory(
+      at: presetsDir,
+      includingPropertiesForKeys: nil
+    ).filter { $0.pathExtension == "json" }) ?? []
+
+    for url in urls {
+      try? fm.startDownloadingUbiquitousItem(at: url)
+    }
+
+    let coordinator = NSFileCoordinator()
+    var results: [(String, Data)] = []
+    for url in urls {
+      var coordError: NSError?
+      coordinator.coordinate(readingItemAt: url, options: [], error: &coordError) { coordinatedURL in
+        if let data = try? Data(contentsOf: coordinatedURL) {
+          results.append((url.lastPathComponent, data))
+        }
+      }
+    }
+    return results
+  }.value
+
+  let decoder = JSONDecoder()
+  return fileData.compactMap { fileName, data -> PresetRef? in
+    guard let spec = try? decoder.decode(PresetSyntax.self, from: data) else { return nil }
+    return PresetRef(fileName: fileName, spec: spec)
+  }.sorted { $0.spec.name.localizedCaseInsensitiveCompare($1.spec.name) == .orderedAscending }
+}
+
 struct PresetLibraryView: View {
   @Environment(ResourceManager.self) private var resourceManager
   @State private var presets: [PresetRef] = []

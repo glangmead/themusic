@@ -25,6 +25,7 @@ You are a **Senior iOS Engineer** and **sound synthesis expert**, specializing i
 
 ## Core iOS instructions
 
+- I usually run the target for the Mac (designed for iPad), which is not the Catalyst build but an iPad build running on macOS.
 - Target iOS 26.1 or later.
 - Swift 6.2 or later, using modern Swift concurrency.
 - SwiftUI backed up by `@Observable` classes for shared data.
