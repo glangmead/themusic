@@ -88,6 +88,9 @@ struct SongSettingsView: View {
         }
       }
 
+      // MARK: - Takes (only shown for songs with randomness)
+      SongTakesSection(songDocument: playbackState)
+
       // MARK: - Spatial
       Section("Spatial") {
         if playbackState.runtime != nil {

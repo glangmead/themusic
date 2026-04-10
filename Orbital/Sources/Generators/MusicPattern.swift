@@ -63,6 +63,17 @@ actor MusicPattern {
   var timeOrigin: Double
   var isPaused: Bool = false
 
+  /// Optional song seed for shareable, deterministic playback. When non-nil,
+  /// each track and each hierarchy modulator runs inside its own
+  /// `SongRNG.$box.withValue(...)` scope, so runtime iterators
+  /// (RandomIterator, CyclicShuffledIterator, FragmentPoolIterator,
+  /// FloatSampler, etc.) draw from a per-track sub-seeded PRNG.
+  ///
+  /// Per-task isolation prevents the SongRNGBox from racing across the
+  /// concurrent TaskGroup tracks. When nil, draws fall back to the inherited
+  /// (default = system) RNG, matching pre-seed behavior.
+  private let songSeed: UInt64?
+
   /// Hierarchy modulators that fire on independent timers.
   private let hierarchyModulators: [CompiledHierarchyModulator]
 
@@ -95,7 +106,8 @@ actor MusicPattern {
     secondsPerBeat: Double = 0,
     totalBeats: Double = 0,
     loop: Bool = false,
-    clock: any Clock<Duration> = ContinuousClock()
+    clock: any Clock<Duration> = ContinuousClock(),
+    songSeed: UInt64? = nil
   ) {
     self.tracks = tracks
     self.hierarchyModulators = hierarchyModulators
@@ -105,6 +117,7 @@ actor MusicPattern {
     self.chordLabelSecondsPerBeat = secondsPerBeat
     self.chordLabelTotalBeats = totalBeats
     self.chordLabelLoop = loop
+    self.songSeed = songSeed
 
     let (clStream, clContinuation) = AsyncStream<String>.makeStream()
     self.chordLabelStream = clStream
@@ -156,20 +169,48 @@ actor MusicPattern {
     )
   }
 
+  /// Derive a deterministic per-task sub-seed from the song seed and a label.
+  /// Used to give each track / hierarchy modulator / chord-label loop its own
+  /// PRNG stream that doesn't race with sibling tasks.
+  private func subSeed(label: String) -> UInt64 {
+    guard let songSeed else { return 0 }
+    var splitter = SplitMix64(seed: songSeed ^ fnv1a64(label))
+    return splitter.next()
+  }
+
   /// Play all tracks concurrently. Each track runs its own event loop.
   /// Hierarchy modulators also run as concurrent tasks.
   /// Cancelling the calling task propagates to all child tasks.
+  ///
+  /// When `songSeed` is non-nil, each child task installs its own
+  /// SongRNG.box via `withValue` so concurrent draws don't race on a shared
+  /// box and so playback is deterministic across runs of the same seed.
   func play() async {
     timeOrigin = Date.now.timeIntervalSince1970
+    let seed = songSeed
     await withTaskGroup(of: Void.self) { group in
       for trackIndex in tracks.indices {
+        let trackSeed = self.subSeed(label: "track[\(trackIndex)]")
         group.addTask { [self] in
-          await self.playTrack(trackIndex)
+          if seed != nil {
+            await SongRNG.$box.withValue(SongRNGBox(SplitMix64(seed: trackSeed))) {
+              await self.playTrack(trackIndex)
+            }
+          } else {
+            await self.playTrack(trackIndex)
+          }
         }
       }
-      for mod in hierarchyModulators {
+      for (i, mod) in hierarchyModulators.enumerated() {
+        let modSeed = self.subSeed(label: "hierarchyModulator[\(i)]")
         group.addTask {
-          await self.runHierarchyModulator(mod)
+          if seed != nil {
+            await SongRNG.$box.withValue(SongRNGBox(SplitMix64(seed: modSeed))) {
+              await self.runHierarchyModulator(mod)
+            }
+          } else {
+            await self.runHierarchyModulator(mod)
+          }
         }
       }
       // Chord label emission runs as a separate timer loop rather than being

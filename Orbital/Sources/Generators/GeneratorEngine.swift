@@ -40,7 +40,7 @@ struct GeneratorEngine {
 
   /// Convert a GeneratorSyntax into a fully specified ScorePatternSyntax.
   static func generate(_ params: GeneratorSyntax) -> ScorePatternSyntax {
-    let seed = params.randomSeed ?? Int.random(in: 0...Int.max)
+    let seed = params.randomSeed ?? SongRNG.int(in: 0...Int.max)
     var rng = SeededRNG(seed: seed)
 
     let chordDegrees = params.chordType.degrees

@@ -30,6 +30,10 @@ struct SongRef: Identifiable, Equatable, Sendable {
 @MainActor @Observable
 class SongLibrary {
   var songs: [SongRef] = []
+  /// Optional shared takes registry. Set by the app at startup so that every
+  /// SongDocument created via `playbackState(for:)` is wired up to record
+  /// plays. Nil disables the takes feature.
+  var takesStore: TakesStore?
 
   private var metadataQuery: NSMetadataQuery?
   private var isUsingICloud = false
@@ -163,7 +167,12 @@ class SongLibrary {
 
   func playbackState(for song: SongRef, engine: SpatialAudioEngine, resourceBaseURL: URL? = nil) -> SongDocument {
     if let existing = playbackStates[song.id] { return existing }
-    let state = SongDocument(song: song, engine: engine, resourceBaseURL: resourceBaseURL)
+    let state = SongDocument(
+      song: song,
+      engine: engine,
+      resourceBaseURL: resourceBaseURL,
+      takesStore: takesStore
+    )
     playbackStates[song.id] = state
     return state
   }

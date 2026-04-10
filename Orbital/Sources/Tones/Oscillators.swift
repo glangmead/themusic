@@ -237,7 +237,8 @@ final class NoiseSmoothStep: Arrow11 {
   var min: CoreFloat
   var max: CoreFloat
 
-  // The two random samples we're currently interpolating between
+  // The two random samples we're currently interpolating between.
+  // Primed by `applyRandomSeed`, NOT by `init`. Until reset, both are zero.
   private var lastSample: CoreFloat
   private var nextSample: CoreFloat
 
@@ -247,6 +248,23 @@ final class NoiseSmoothStep: Arrow11 {
 
   // Pre-computed smoothstep lookup table for one full segment
   private var smoothstepLUT: [CoreFloat] = []
+
+  /// Per-node PRNG seeded by ArrowSeedMap via applyRandomSeed.
+  /// Lock-free, owned by the render thread once playback starts.
+  private var prng = Xorshift128Plus(seed: 0)
+
+  override var consumesRandomness: Bool { true }
+  override var pathSegment: String { "NoiseSmoothStep" }
+
+  /// Reseeds the PRNG and re-primes lastSample/nextSample. Does NOT rebuild
+  /// the LUT — that's the sample-rate lifecycle, orthogonal.
+  override func applyRandomSeed(seedMap: [ObjectIdentifier: UInt64]) {
+    guard let seed = seedMap[ObjectIdentifier(self)] else { return }
+    prng = Xorshift128Plus(seed: seed)
+    lastSample = prng.nextFloat(in: min...max)
+    nextSample = prng.nextFloat(in: min...max)
+    sampleCounter = 0
+  }
 
   override func setSampleRateRecursive(rate: CoreFloat) {
     super.setSampleRateRecursive(rate: rate)
@@ -274,8 +292,11 @@ final class NoiseSmoothStep: Arrow11 {
     self.noiseFreq = noiseFreq
     self.min = min
     self.max = max
-    self.lastSample = CoreFloat.random(in: min...max)
-    self.nextSample = CoreFloat.random(in: min...max)
+    // lastSample/nextSample stay at zero until applyRandomSeed primes them.
+    // Untreated NoiseSmoothStep instances (no seed map) will output zeros
+    // until reset; this matches the determinism contract.
+    self.lastSample = 0
+    self.nextSample = 0
     super.init()
     rebuildLUT()
   }
@@ -302,7 +323,7 @@ final class NoiseSmoothStep: Arrow11 {
           if counter >= segmentSize {
             counter = 0
             last = next
-            next = CoreFloat.random(in: min...max)
+            next = prng.nextFloat(in: min...max)
           }
         }
 

@@ -32,6 +32,20 @@ struct PlaybackAccessoryView: View {
               .lineLimit(1)
               .transition(.opacity)
           }
+          // Seed line: visible while playing a randomized song. Tap to copy.
+          if let seed = state?.currentSeedString, state?.hasRandomness == true {
+            Button {
+              UIPasteboard.general.string = seed
+            } label: {
+              Text("seed \(seed)")
+                .font(.caption.monospaced())
+                .foregroundStyle(.secondary)
+                .lineLimit(1)
+            }
+            .buttonStyle(.plain)
+            .accessibilityLabel("Seed " + seed.map(String.init).joined(separator: " "))
+            .accessibilityHint("Double-tap to copy seed to clipboard")
+          }
         }
         .animation(.easeInOut(duration: 0.2), value: state?.song.subtitle ?? state?.currentChordLabel)
 

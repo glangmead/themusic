@@ -79,7 +79,7 @@ struct RandomIterator<C: Collection>: IteratorProtocol {
     self.collection = collection
   }
   mutating func next() -> C.Element? {
-    collection.randomElement()
+    SongRNG.pick(collection)
   }
 }
 
@@ -96,7 +96,7 @@ struct CyclicShuffledIterator<C: Collection>: IteratorProtocol {
     if let next = cycledElementIterator.next() {
       return next
     } else {
-      self.cycledElements = cycledElements.shuffled()
+      self.cycledElements = SongRNG.shuffled(cycledElements)
       self.cycledElementIterator = cycledElements.makeIterator()
       return cycledElementIterator.next()
     }

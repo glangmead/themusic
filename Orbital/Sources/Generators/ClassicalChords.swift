@@ -118,7 +118,7 @@ extension ChordInScale {
     /// Weighted random draw using exponential variates.
     static func weightedDraw<A>(items: [(A, CoreFloat)]) -> A? {
       func exp2<B>(_ item: (B, CoreFloat)) -> (B, CoreFloat) {
-        (item.0, -1.0 * log(CoreFloat.random(in: 0...1)) / item.1)
+        (item.0, -1.0 * log(SongRNG.float(in: 0...1)) / item.1)
       }
       return items.map({ exp2($0) }).min(by: { $0.1 < $1.1 })?.0
     }

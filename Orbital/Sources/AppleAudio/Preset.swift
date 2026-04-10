@@ -66,6 +66,41 @@ class Preset: NoteHandler {
     audioGate?.isOpen = false
   }
 
+  /// True if any voice in this preset's compiled Arrow graph contains a
+  /// random-consuming node (ArrowRandom, NoiseSmoothStep, ArrowExponentialRandom).
+  /// Used by SongDocument to decide whether to surface the seed UI.
+  /// Always false for sampler-based presets (no Arrow graph).
+  var hasArrowRandomness: Bool {
+    voices.contains { Self.containsRandomConsumer($0.wrappedArrow) }
+  }
+
+  private static func containsRandomConsumer(_ node: Arrow11) -> Bool {
+    if node.consumesRandomness { return true }
+    if let inner = node.innerArr, containsRandomConsumer(inner) { return true }
+    for child in node.innerArrs where containsRandomConsumer(child) {
+      return true
+    }
+    return false
+  }
+
+  /// Apply per-node random seeds derived from the given song seed to every
+  /// voice's Arrow graph. No-op for sampler-based presets.
+  ///
+  /// CONCURRENCY CONTRACT: this MUST be called on the main actor while the
+  /// audio engine is stopped (or before its first start). The render thread
+  /// reads the per-node Xorshift128Plus state we mutate here; visibility
+  /// relies on the implicit happens-before established by `engine.start()`
+  /// and on the main actor's exclusive ownership of these objects between
+  /// resets. Calling this on a running engine is a data race that the
+  /// compiler cannot catch — the Arrow nodes are not Sendable-checked
+  /// because they predate strict-concurrency adoption.
+  func resetRandomSeeds(songSeed: UInt64) {
+    for voice in voices {
+      let map = ArrowSeedMap.build(root: voice.wrappedArrow, songSeed: songSeed)
+      voice.wrappedArrow.resetRandomRecursive(seedMap: map)
+    }
+  }
+
   /// Resolve the envelope key for gate lifecycle management.
   /// Prefers "ampEnv" exactly, then any key containing "ampenv" case-insensitively,
   /// then falls back to an arbitrary envelope key.

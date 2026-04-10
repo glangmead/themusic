@@ -80,7 +80,8 @@ enum TablePatternCompiler {
     _ table: TablePatternSyntax,
     engine: SpatialAudioEngine,
     clock: any Clock<Duration> = ContinuousClock(),
-    resourceBaseURL: URL? = nil
+    resourceBaseURL: URL? = nil,
+    songSeed: UInt64? = nil
   ) async throws -> PatternSyntax.CompileResult {
     // 1. Build and validate the emitter dependency graph
     let sortedEmitterNames = try topologicalSort(table.emitters)
@@ -171,7 +172,8 @@ enum TablePatternCompiler {
       spatialPresets.append(sp)
     }
 
-    let pattern = MusicPattern(tracks: musicTracks, hierarchyModulators: compiledHierarchyMods, clock: clock)
+    let pattern = MusicPattern(tracks: musicTracks, hierarchyModulators: compiledHierarchyMods,
+                               clock: clock, songSeed: songSeed)
     return PatternSyntax.CompileResult(pattern: pattern, trackInfos: trackInfos, spatialPresets: spatialPresets)
   }
 

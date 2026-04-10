@@ -32,6 +32,7 @@ class SongDocument {
   let song: SongRef
   let engine: SpatialAudioEngine?
   let resourceBaseURL: URL?
+  let takesStore: TakesStore?
 
   private(set) var phase: PlaybackPhase = .idle
   /// Set when loading fails; shown as an alert to the user.
@@ -39,6 +40,38 @@ class SongDocument {
   private var playbackTask: Task<Void, Never>?
   private var annotationTask: Task<Void, Never>?
   private var chordLabelTask: Task<Void, Never>?
+
+  // MARK: - Shareable song seed lifecycle
+
+  /// The 64-bit seed in effect for the currently loaded compiled state.
+  /// Set on every play() (either decoded from `pendingSeedString` or freshly
+  /// generated). Cleared on stop().
+  private(set) var currentSeed: UInt64?
+
+  /// Crockford base32 encoding of currentSeed for display/copy/paste UI.
+  var currentSeedString: String? { currentSeed.map(SeedCodec.encode) }
+
+  /// True iff this song has any randomness consumers (random pad,
+  /// generator pattern, ArrowRandom, NoiseSmoothStep, etc.).
+  /// Drives whether the seed UI is shown.
+  /// Computed after compile in play().
+  private(set) var hasRandomness: Bool = false
+
+  /// In-flight take entry id for the active play, if any.
+  private var currentTakeEntryID: UUID?
+  /// Wall-clock anchor for the most recent resume; nil while paused or stopped.
+  private var lastResumeAnchor: Date?
+  /// Cumulative played seconds across pause/resume cycles within one play session.
+  private var accumulatedPlayedSeconds: Double = 0
+
+  /// Seed string supplied by the UI for the next play. Cleared after consumption.
+  private var pendingSeedString: String?
+
+  /// UI calls this before `play()` to request a specific take. Pass nil to
+  /// roll a fresh seed on the next play.
+  func setPendingSeed(_ seedString: String?) {
+    self.pendingSeedString = seedString
+  }
 
   // MARK: - Event log
 
@@ -79,10 +112,11 @@ class SongDocument {
     return runtime.spatialPresets[trackId]
   }
 
-  init(song: SongRef, engine: SpatialAudioEngine, resourceBaseURL: URL? = nil) {
+  init(song: SongRef, engine: SpatialAudioEngine, resourceBaseURL: URL? = nil, takesStore: TakesStore? = nil) {
     self.song = song
     self.engine = engine
     self.resourceBaseURL = resourceBaseURL
+    self.takesStore = takesStore
   }
 
   /// UI-only init: loads track info (patterns, presets, spatial data) without an audio engine.
@@ -91,23 +125,27 @@ class SongDocument {
     self.song = song
     self.engine = nil
     self.resourceBaseURL = nil
+    self.takesStore = nil
   }
 
   /// Init for the standalone Create tab — pre-seeds a generator pattern so
   /// loadTracks() skips file loading and compiles directly from the spec.
-  init(generatorPattern: GeneratorSyntax, engine: SpatialAudioEngine) {
+  init(generatorPattern: GeneratorSyntax, engine: SpatialAudioEngine, takesStore: TakesStore? = nil) {
     self.song = SongRef(patternFileName: PatternFilename.filename(from: "Create"))
     self.engine = engine
     self.resourceBaseURL = nil
+    self.takesStore = takesStore
     patternSpec = PatternSyntax(generatorTracks: generatorPattern)
   }
 
   /// Init for the Classics browser — pre-seeds a PatternSyntax built from catalog data.
   /// loadTracks() skips JSON file loading and compiles directly from the spec.
-  init(patternSyntax: PatternSyntax, displayName: String, subtitle: String? = nil, engine: SpatialAudioEngine, resourceBaseURL: URL? = nil) {
+  init(patternSyntax: PatternSyntax, displayName: String, subtitle: String? = nil,
+       engine: SpatialAudioEngine, resourceBaseURL: URL? = nil, takesStore: TakesStore? = nil) {
     self.song = SongRef(subtitle: subtitle, patternFileName: PatternFilename.filename(from: displayName))
     self.engine = engine
     self.resourceBaseURL = resourceBaseURL
+    self.takesStore = takesStore
     self.patternSpec = patternSyntax
   }
 
@@ -148,7 +186,7 @@ class SongDocument {
     )
 
     if let engine {
-      let result = try await spec.compile(engine: engine, resourceBaseURL: resourceBaseURL)
+      let result = try await spec.compile(engine: engine, resourceBaseURL: resourceBaseURL, songSeed: currentSeed)
       runtime = RuntimeSong(
         compiledPattern: result.pattern,
         spatialPresets: result.spatialPresets
@@ -165,7 +203,7 @@ class SongDocument {
   /// Recompile from the stored in-memory spec (preserves user edits).
   private func recompileFromSpec() async throws {
     guard let engine, let spec = patternSpec else { return }
-    let result = try await spec.compile(engine: engine, resourceBaseURL: resourceBaseURL)
+    let result = try await spec.compile(engine: engine, resourceBaseURL: resourceBaseURL, songSeed: currentSeed)
     runtime = RuntimeSong(
       compiledPattern: result.pattern,
       spatialPresets: result.spatialPresets
@@ -182,6 +220,18 @@ class SongDocument {
   func play() {
     guard phase == .idle, let engine else { return }
 
+    // Force a recompile under the seed scope. Without this, a previously
+    // populated runtime would short-circuit loadTracks() and the per-node
+    // PRNG seeds would never apply.
+    teardownRuntime()
+
+    let seedString = pendingSeedString
+    pendingSeedString = nil
+    let seed: UInt64 = seedString.flatMap(SeedCodec.decode) ?? SeedCodec.random()
+    currentSeed = seed
+    accumulatedPlayedSeconds = 0
+    currentTakeEntryID = nil
+
     loadError = nil
     phase = .loading
     eventLog = []
@@ -190,7 +240,17 @@ class SongDocument {
     playbackTask = Task {
       do {
         try await engine.withQuiescedGraph {
-          try await self.loadTracks()
+          try await SongRNG.$box.withValue(SongRNGBox(SplitMix64(seed: seed))) {
+            try await self.loadTracks()
+            // Apply per-node random seeds to every voice graph in every spatial preset.
+            if let runtime = self.runtime {
+              for sp in runtime.spatialPresets {
+                sp.resetRandomSeeds(songSeed: seed)
+              }
+            }
+            // Detect randomness presence for UI gating.
+            self.hasRandomness = self.computeHasRandomness()
+          }
         }
       } catch {
         self.teardownRuntime()
@@ -200,6 +260,12 @@ class SongDocument {
       }
 
       phase = .playing
+
+      // Record the take in the registry, if there's randomness to record.
+      if hasRandomness, let store = takesStore {
+        currentTakeEntryID = store.recordStart(songId: song.id, seed: SeedCodec.encode(seed))
+        lastResumeAnchor = Date()
+      }
 
       // Subscribe to annotation streams for the event log.
       if let pattern = runtime?.compiledPattern {
@@ -235,6 +301,13 @@ class SongDocument {
 
   func pause() {
     guard phase == .playing else { return }
+    if let anchor = lastResumeAnchor {
+      accumulatedPlayedSeconds += Date().timeIntervalSince(anchor)
+      lastResumeAnchor = nil
+    }
+    if let id = currentTakeEntryID, let store = takesStore {
+      store.updatePlayedSeconds(id: id, accumulatedPlayedSeconds)
+    }
     if let pattern = runtime?.compiledPattern {
       Task { await pattern.setPaused(true) }
     }
@@ -243,10 +316,22 @@ class SongDocument {
 
   func resume() {
     guard phase == .paused else { return }
+    lastResumeAnchor = Date()
     if let pattern = runtime?.compiledPattern {
       Task { await pattern.setPaused(false) }
     }
     phase = .playing
+  }
+
+  /// True if anything about this song's playback could vary from one play to
+  /// the next: either the pattern uses runtime random emitters/iterators
+  /// (table patterns with random functions, generator patterns), or any
+  /// SpatialPreset has Arrow-level randomness (random pad, NoiseSmoothStep,
+  /// ArrowRandom, etc.).
+  private func computeHasRandomness() -> Bool {
+    if patternSpec?.hasRuntimeRandomness == true { return true }
+    guard let runtime else { return false }
+    return runtime.spatialPresets.contains { $0.hasArrowRandomness }
   }
 
   /// Replace the preset for a given track, reloading its audio nodes in place.
@@ -257,6 +342,18 @@ class SongDocument {
   }
 
   func stop() {
+    if let anchor = lastResumeAnchor {
+      accumulatedPlayedSeconds += Date().timeIntervalSince(anchor)
+      lastResumeAnchor = nil
+    }
+    if let id = currentTakeEntryID, let store = takesStore {
+      store.recordStop(id: id, playedSeconds: accumulatedPlayedSeconds)
+    }
+    currentTakeEntryID = nil
+    accumulatedPlayedSeconds = 0
+    currentSeed = nil
+    hasRandomness = false
+
     playbackTask?.cancel()
     playbackTask = nil
     annotationTask?.cancel()

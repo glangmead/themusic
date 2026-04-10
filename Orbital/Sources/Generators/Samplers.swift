@@ -14,7 +14,7 @@ struct ListSampler<Element>: Sequence, IteratorProtocol {
     self.items = items
   }
   func next() -> Element? {
-    items.randomElement()
+    SongRNG.pick(items)
   }
 }
 
@@ -28,9 +28,11 @@ struct ScaleSampler: Sequence, IteratorProtocol {
   }
 
   func next() -> [MidiNote]? {
+    guard let interval = SongRNG.pick(scale.intervals),
+          let shifted = Note.A.shiftUp(interval) else { return nil }
     return [MidiNote(
-      note: MidiValue(Note.A.shiftUp(scale.intervals.randomElement()!)!.noteNumber),
-      velocity: (50...127).randomElement()!
+      note: MidiValue(shifted.noteNumber),
+      velocity: MidiValue(SongRNG.int(in: 50...127))
     )]
   }
 }
@@ -58,9 +60,9 @@ struct FloatSampler: Sequence, IteratorProtocol {
   func next() -> CoreFloat? {
     switch distribution {
     case .uniform:
-      return CoreFloat.random(in: min...max)
+      return SongRNG.float(in: min...max)
     case .exponential:
-      let u = CoreFloat.random(in: CoreFloat.ulpOfOne...1)
+      let u = SongRNG.float(in: CoreFloat.ulpOfOne...1)
       let raw = -log(u) / lambda
       return clamp(min + raw, min: min, max: max)
     }
@@ -75,7 +77,7 @@ struct IntSampler: Sequence, IteratorProtocol {
   let max: Int
 
   func next() -> Int? {
-    Int.random(in: min...max)
+    SongRNG.int(in: min...max)
   }
 }
 
@@ -102,6 +104,6 @@ struct MutableFloatSampler: Sequence, IteratorProtocol {
     let lo = minParam.val
     let hi = maxParam.val
     guard hi > lo else { return lo }
-    return CoreFloat.random(in: lo...hi)
+    return SongRNG.float(in: lo...hi)
   }
 }

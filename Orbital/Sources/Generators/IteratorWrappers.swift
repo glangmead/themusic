@@ -79,14 +79,14 @@ struct FragmentPoolIterator: Sequence, IteratorProtocol {
 
   init(fragments: [[Int]]) {
     self.fragments = fragments
-    self.currentIndex = fragments.isEmpty ? 0 : Int.random(in: 0..<fragments.count)
+    self.currentIndex = fragments.isEmpty ? 0 : SongRNG.intExclusive(in: 0..<fragments.count)
   }
 
   mutating func next() -> Int? {
     guard !fragments.isEmpty else { return nil }
     let fragment = fragments[currentIndex]
     if position >= fragment.count {
-      currentIndex = Int.random(in: 0..<fragments.count)
+      currentIndex = SongRNG.intExclusive(in: 0..<fragments.count)
       position = 0
     }
     let value = fragments[currentIndex][position]

@@ -21,6 +21,7 @@ struct OrbitalApp: App {
   )
   @State private var midiDownloadManager: MIDIDownloadManager?
   @State private var presetLibrary = PresetLibrary()
+  @State private var takesStore = TakesStore(documentsURL: URL.documentsDirectory)
   @Environment(\.scenePhase) private var scenePhase
 
   init() {
@@ -55,7 +56,11 @@ struct OrbitalApp: App {
         .environment(midiLedger)
         .environment(midiDownloadManager ?? MIDIDownloadManager(ledger: midiLedger))
         .environment(presetLibrary)
+        .environment(takesStore)
         .task {
+          // Wire the takes store into the song library so every SongDocument
+          // it creates is registered for play tracking.
+          songLibrary.takesStore = takesStore
           WavetableLibrary.loadAllCuratedTables()
           await resourceManager.setup()
           PatternStorage.resourceBaseURL = resourceManager.resourceBaseURL

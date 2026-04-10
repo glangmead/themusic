@@ -37,6 +37,11 @@ class ArrowWithHandles: Arrow11 {
     super.setSampleRateRecursive(rate: rate)
   }
 
+  override func resetRandomRecursive(seedMap: [ObjectIdentifier: UInt64]) {
+    wrappedArrow.resetRandomRecursive(seedMap: seedMap)
+    super.resetRandomRecursive(seedMap: seedMap)
+  }
+
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
     wrappedArrowUnsafe._withUnsafeGuaranteedRef { $0.process(inputs: inputs, outputs: &outputs) }
   }

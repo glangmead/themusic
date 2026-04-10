@@ -28,7 +28,8 @@ enum ScorePatternCompiler {
         _ score: ScorePatternSyntax,
         engine: SpatialAudioEngine,
         clock: any Clock<Duration> = ContinuousClock(),
-        resourceBaseURL: URL? = nil
+        resourceBaseURL: URL? = nil,
+        songSeed: UInt64? = nil
     ) async throws -> PatternSyntax.CompileResult {
         let loopVal = score.loop ?? true
         let secondsPerBeat = 60.0 / score.bpm
@@ -83,7 +84,8 @@ enum ScorePatternCompiler {
             secondsPerBeat: secondsPerBeat,
             totalBeats: score.totalBeats,
             loop: loopVal,
-            clock: clock
+            clock: clock,
+            songSeed: songSeed
         )
         return PatternSyntax.CompileResult(
             pattern: pattern,

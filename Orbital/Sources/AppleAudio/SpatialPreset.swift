@@ -51,6 +51,22 @@ class SpatialPreset: NoteHandler {
     return holder
   }
 
+  /// True if any inner Preset's voices contain random-consuming Arrow nodes,
+  /// or if the originating PresetSyntax was constructed from a padTemplate
+  /// (random pads have render-thread randomness even after compile).
+  var hasArrowRandomness: Bool {
+    if presetSpec.padTemplate != nil { return true }
+    return presets.contains { $0.hasArrowRandomness }
+  }
+
+  /// Apply per-node random seeds to every preset's voice graphs.
+  /// Call on the main actor before engine.start().
+  func resetRandomSeeds(songSeed: UInt64) {
+    for preset in presets {
+      preset.resetRandomSeeds(songSeed: songSeed)
+    }
+  }
+
   init(presetSpec: PresetSyntax, engine: SpatialAudioEngine, numVoices: Int = 12, resourceBaseURL: URL? = nil) async throws {
     self.presetSpec = presetSpec
     self.engine = engine

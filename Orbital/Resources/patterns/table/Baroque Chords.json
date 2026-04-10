@@ -92,7 +92,7 @@
         "name": "Baroque Chords",
         "noteMaterial": "chords",
         "numVoices": 20,
-        "presetFilename": "warm_analog_pad",
+        "presetFilename": "randomPad",
         "presetModulatorNames": [
           "ampMod",
           "detuneMod"

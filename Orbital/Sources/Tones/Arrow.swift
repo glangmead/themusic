@@ -18,6 +18,44 @@ class Arrow11 {
     innerArr?.setSampleRateRecursive(rate: rate)
     innerArrs.forEach({$0.setSampleRateRecursive(rate: rate)})
   }
+
+  // MARK: - Per-node random reset (shareable song seeds)
+  //
+  // Random-consuming Arrow nodes (ArrowRandom, NoiseSmoothStep,
+  // ArrowExponentialRandom) own their own Xorshift128Plus state. The walker in
+  // ArrowSeedMap.build assigns each consumer a stable per-node sub-seed
+  // derived from the song seed and the node's structural path. This method
+  // walks the graph (mirror of setSampleRateRecursive) so each consumer can
+  // look itself up by ObjectIdentifier in the seedMap and reseed.
+  //
+  // Called from the main actor on a stopped engine, before engine.start().
+  // Per-node state is then mutated only by the render thread that owns the
+  // node, lock-free.
+  func resetRandomRecursive(seedMap: [ObjectIdentifier: UInt64]) {
+    applyRandomSeed(seedMap: seedMap)
+    innerArr?.resetRandomRecursive(seedMap: seedMap)
+    innerArrs.forEach { $0.resetRandomRecursive(seedMap: seedMap) }
+  }
+
+  /// Override in random-consuming subclasses to reseed internal PRNG state
+  /// from the seed map. Default is a no-op.
+  func applyRandomSeed(seedMap: [ObjectIdentifier: UInt64]) {}
+
+  /// Stable identifier for this node's role in the structural path used by
+  /// ArrowSeedMap.build. Defaults to the type name. Override only if a single
+  /// type plays multiple roles whose seeds should differ.
+  var pathSegment: String { String(describing: type(of: self)) }
+
+  /// True if this node draws from a per-node PRNG via `applyRandomSeed`.
+  /// The walker uses this to decide whether to assign a seed-map entry.
+  var consumesRandomness: Bool { false }
+
+  /// Reference fields beyond `innerArr`/`innerArrs` that participate in
+  /// random reset (e.g. `ArrowCrossfade.mixPointArr`). The walker visits
+  /// these AFTER `innerArr`/`innerArrs`, with a labeled path segment per
+  /// entry. Default is empty.
+  var extraRandomChildren: [(label: String, node: Arrow11)] { [] }
+
   // these are arrows with which we can compose (arr/arrs run first, then this arrow)
   var innerArr: Arrow11? {
     didSet {
@@ -196,6 +234,18 @@ final class ArrowExponentialRandom: Arrow11 {
   var max: CoreFloat
   /// Rate parameter: λ = -ln(0.05) / (max - min) ≈ 3 / (max - min)
   private var lambda: CoreFloat
+  /// Per-node PRNG seeded by ArrowSeedMap via applyRandomSeed.
+  /// Lock-free, owned by the render thread once playback starts.
+  private var prng = Xorshift128Plus(seed: 0)
+
+  override var consumesRandomness: Bool { true }
+  override var pathSegment: String { "ArrowExponentialRandom" }
+
+  override func applyRandomSeed(seedMap: [ObjectIdentifier: UInt64]) {
+    if let seed = seedMap[ObjectIdentifier(self)] {
+      prng = Xorshift128Plus(seed: seed)
+    }
+  }
 
   init(min: CoreFloat, max: CoreFloat) {
     self.min = Swift.min(min, max)
@@ -207,17 +257,20 @@ final class ArrowExponentialRandom: Arrow11 {
 
   /// Inverse-transform sample: x = -ln(U) / λ, shifted and clamped to [min, max].
   override func of(_ t: CoreFloat) -> CoreFloat {
-    let u = CoreFloat.random(in: CoreFloat.ulpOfOne...1)  // avoid ln(0)
+    let u = prng.nextFloat(in: CoreFloat.ulpOfOne...1)  // avoid ln(0)
     let raw = -log(u) / lambda
-    let result = clamp(min + raw, min: min, max: max)
-    return result
+    return clamp(min + raw, min: min, max: max)
   }
 
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
-    for i in 0..<inputs.count {
-      let u = CoreFloat.random(in: CoreFloat.ulpOfOne...1)
-      let raw = -log(u) / lambda
-      outputs[i] = clamp(min + raw, min: min, max: max)
+    outputs.withUnsafeMutableBufferPointer { buf in
+      guard let base = buf.baseAddress else { return }
+      let lo = min, hi = max, lam = lambda
+      for i in 0..<inputs.count {
+        let u = prng.nextFloat(in: CoreFloat.ulpOfOne...1)
+        let raw = -log(u) / lam
+        base[i] = clamp(lo + raw, min: lo, max: hi)
+      }
     }
   }
 }
@@ -241,6 +294,15 @@ final class ArrowCrossfade: Arrow11 {
   override func setSampleRateRecursive(rate: CoreFloat) {
     mixPointArr.setSampleRateRecursive(rate: rate)
     super.setSampleRateRecursive(rate: rate)
+  }
+
+  override func resetRandomRecursive(seedMap: [ObjectIdentifier: UInt64]) {
+    mixPointArr.resetRandomRecursive(seedMap: seedMap)
+    super.resetRandomRecursive(seedMap: seedMap)
+  }
+
+  override var extraRandomChildren: [(label: String, node: Arrow11)] {
+    [("mixPoint", mixPointArr)]
   }
 
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
@@ -280,6 +342,15 @@ final class ArrowEqualPowerCrossfade: Arrow11 {
     super.setSampleRateRecursive(rate: rate)
   }
 
+  override func resetRandomRecursive(seedMap: [ObjectIdentifier: UInt64]) {
+    mixPointArr.resetRandomRecursive(seedMap: seedMap)
+    super.resetRandomRecursive(seedMap: seedMap)
+  }
+
+  override var extraRandomChildren: [(label: String, node: Arrow11)] {
+    [("mixPoint", mixPointArr)]
+  }
+
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
     mixPointArr.process(inputs: inputs, outputs: &mixPoints)
     // run all the arrows
@@ -302,19 +373,35 @@ final class ArrowEqualPowerCrossfade: Arrow11 {
 final class ArrowRandom: Arrow11 {
   var min: CoreFloat
   var max: CoreFloat
+  /// Per-node PRNG seeded by ArrowSeedMap via applyRandomSeed.
+  /// Lock-free, owned by the render thread once playback starts.
+  private var prng = Xorshift128Plus(seed: 0)
+
+  override var consumesRandomness: Bool { true }
+  override var pathSegment: String { "ArrowRandom" }
+
+  override func applyRandomSeed(seedMap: [ObjectIdentifier: UInt64]) {
+    if let seed = seedMap[ObjectIdentifier(self)] {
+      prng = Xorshift128Plus(seed: seed)
+    }
+  }
+
   init(min: CoreFloat, max: CoreFloat) {
     self.min = min
     self.max = max
     super.init()
   }
   override func of(_ t: CoreFloat) -> CoreFloat {
-    CoreFloat.random(in: min...max)
+    prng.nextFloat(in: min...max)
   }
 
   override func process(inputs: [CoreFloat], outputs: inout [CoreFloat]) {
-    // Default implementation: loop
-    for i in 0..<inputs.count {
-      outputs[i] = CoreFloat.random(in: min...max)
+    outputs.withUnsafeMutableBufferPointer { buf in
+      guard let base = buf.baseAddress else { return }
+      let lo = min, hi = max
+      for i in 0..<inputs.count {
+        base[i] = prng.nextFloat(in: lo...hi)
+      }
     }
   }
 }

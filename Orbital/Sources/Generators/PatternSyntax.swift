@@ -90,17 +90,50 @@ struct PatternSyntax: Codable {
     let spatialPresets: [SpatialPreset]
   }
 
+  /// True if this pattern uses *runtime* randomness in its note/chord/timing
+  /// generation (independent of any random pad presets). Drives the Takes UI
+  /// gating in SongDocument.computeHasRandomness().
+  ///
+  /// - Generator patterns: always true (the generator engine itself uses RNG).
+  /// - Table patterns: true if any emitter uses a random function
+  ///   (`randFloat`, `exponentialRandFloat`, `randInt`, `shuffle`, `random`,
+  ///   `fragmentPool`).
+  /// - Score patterns: false (note data is fully specified).
+  /// - MIDI patterns: false (MIDI events are fully specified).
+  var hasRuntimeRandomness: Bool {
+    if generatorTracks != nil { return true }
+    if let table = tableTracks {
+      for row in table.emitters {
+        switch row.function {
+        case .randFloat, .exponentialRandFloat, .randInt,
+             .shuffle, .random, .fragmentPool:
+          return true
+        case .cyclic, .sum, .reciprocal, .indexPicker:
+          continue
+        }
+      }
+    }
+    return false
+  }
+
   /// Compile all tracks into a single MusicPattern.
-  func compile(engine: SpatialAudioEngine, clock: any Clock<Duration> = ContinuousClock(), resourceBaseURL: URL? = nil) async throws -> CompileResult {
+  /// `songSeed` is propagated into the resulting MusicPattern so its play()
+  /// loop can install per-track sub-seeded RNG boxes for shareable seeds.
+  func compile(engine: SpatialAudioEngine, clock: any Clock<Duration> = ContinuousClock(),
+               resourceBaseURL: URL? = nil, songSeed: UInt64? = nil) async throws -> CompileResult {
     if let midi = midiTracks {
-      return try await compileMidiTracks(midi, engine: engine, clock: clock, resourceBaseURL: resourceBaseURL)
+      return try await compileMidiTracks(midi, engine: engine, clock: clock,
+                                         resourceBaseURL: resourceBaseURL, songSeed: songSeed)
     } else if let table = tableTracks {
-      return try await TablePatternCompiler.compile(table, engine: engine, clock: clock, resourceBaseURL: resourceBaseURL)
+      return try await TablePatternCompiler.compile(table, engine: engine, clock: clock,
+                                                    resourceBaseURL: resourceBaseURL, songSeed: songSeed)
     } else if let score = scoreTracks {
-      return try await ScorePatternCompiler.compile(score, engine: engine, clock: clock, resourceBaseURL: resourceBaseURL)
+      return try await ScorePatternCompiler.compile(score, engine: engine, clock: clock,
+                                                    resourceBaseURL: resourceBaseURL, songSeed: songSeed)
     } else if let gen = generatorTracks {
       let score = GeneratorEngine.generate(gen)
-      return try await ScorePatternCompiler.compile(score, engine: engine, clock: clock, resourceBaseURL: resourceBaseURL)
+      return try await ScorePatternCompiler.compile(score, engine: engine, clock: clock,
+                                                    resourceBaseURL: resourceBaseURL, songSeed: songSeed)
     } else {
       fatalError("PatternSyntax has no tracks")
     }
@@ -131,7 +164,8 @@ struct PatternSyntax: Codable {
     _ midi: MidiTracksSyntax,
     engine: SpatialAudioEngine,
     clock: any Clock<Duration>,
-    resourceBaseURL: URL? = nil
+    resourceBaseURL: URL? = nil,
+    songSeed: UInt64? = nil
   ) async throws -> CompileResult {
     guard let url = NoteGeneratorSyntax.midiFileURL(filename: midi.filename, resourceBaseURL: resourceBaseURL) else {
       throw PatternCompileError.midiFileNotFound(midi.filename)
@@ -181,7 +215,7 @@ struct PatternSyntax: Codable {
       spatialPresets.append(sp)
     }
 
-    let pattern = MusicPattern(tracks: musicTracks, clock: clock)
+    let pattern = MusicPattern(tracks: musicTracks, clock: clock, songSeed: songSeed)
     return CompileResult(pattern: pattern, trackInfos: trackInfos, spatialPresets: spatialPresets)
   }
 
@@ -295,10 +329,10 @@ private let allSharcInstruments: [String] = SharcDatabase.shared.instruments.map
 private func randomSharcInstrument(for gmProgram: Int?) -> String {
   if let gm = gmProgram {
     for (range, instruments) in gmSharcInstruments where range.contains(gm) {
-      return instruments.randomElement()!
+      return SongRNG.pick(instruments) ?? instruments[0]
     }
   }
-  return allSharcInstruments.randomElement()!
+  return SongRNG.pick(allSharcInstruments) ?? allSharcInstruments[0]
 }
 
 /// Builds a padSynth oscillator descriptor with a SHARC instrument and default PADsynth params.
@@ -309,13 +343,13 @@ private func randomPadSynthOscDescriptor(gmProgram: Int?, octave: CoreFloat) -> 
     profileShape: .gaussian, stretch: 1, selectedInstrument: instrument, envelopeCoefficients: nil
   )
   return PadOscDescriptor(kind: .padSynth, shape: nil, file: nil, padSynthParams: params,
-                          detuneCents: .random(in: -12...12), octave: octave)
+                          detuneCents: SongRNG.float(in: -12...12), octave: octave)
 }
 
 /// Picks a random basic oscillator descriptor from the profile's standard shapes.
 private func randomOscDescriptor(profile: GMPadProfile, octave: CoreFloat) -> PadOscDescriptor {
-  return PadOscDescriptor(kind: .standard, shape: profile.shapes.randomElement()!, file: nil,
-                          padSynthParams: nil, detuneCents: .random(in: -12...12), octave: octave)
+  return PadOscDescriptor(kind: .standard, shape: SongRNG.pick(profile.shapes) ?? .sine, file: nil,
+                          padSynthParams: nil, detuneCents: SongRNG.float(in: -12...12), octave: octave)
 }
 
 /// Returns a comparable identity for an oscillator: kind + shape or file name.
@@ -414,21 +448,22 @@ private func printRandomPadDiagnostic(gmProgram: Int?, characteristicDuration: C
 func makeRandomPadPreset(gmProgram: Int? = nil, characteristicDuration: CoreFloat? = nil) -> PresetSyntax {
   let profile = gmPadProfile(for: gmProgram)
   let sliders = PadSliders(
-    smooth: .random(in: profile.smoothRange),
-    bite: .random(in: 0...1),
+    smooth: SongRNG.float(in: profile.smoothRange),
+    bite: SongRNG.float(in: 0...1),
     motion: 0,
-    width: .random(in: 0...1),
-    grit: .random(in: profile.gritRange)
+    width: SongRNG.float(in: 0...1),
+    grit: SongRNG.float(in: profile.gritRange)
   )
   // Derive amp envelope from median note duration when available.
   // attack ≈ 20% of median sustain (50 ms – 4 s); release ≈ 30% (100 ms – 5 s).
   let ampAttack: CoreFloat? = characteristicDuration.map { clamp($0 * 0.2, min: 0.05, max: 4.0) }
   let ampRelease: CoreFloat? = characteristicDuration.map { clamp($0 * 0.3, min: 0.10, max: 5.0) }
+  let osc2Octave: CoreFloat = SongRNG.pick([-1, 0, 1] as [CoreFloat]) ?? 0
   let template = PadTemplateSyntax(
     name: "Random Pad",
     oscillators: [
       randomPadSynthOscDescriptor(gmProgram: gmProgram, octave: 0),
-      randomOscDescriptor(profile: profile, octave: [-1, 0, 1].randomElement()!)
+      randomOscDescriptor(profile: profile, octave: osc2Octave)
     ],
     crossfade: .lfo,
     crossfadeRate: FloatSampler(min: 0.01, max: 0.1, dist: .exponential).next()!,
@@ -438,31 +473,26 @@ func makeRandomPadPreset(gmProgram: Int? = nil, characteristicDuration: CoreFloa
     ampAttack: ampAttack, ampDecay: 0.1, ampSustain: 1.0, ampRelease: ampRelease,
     filterCutoffMultiplier: nil, filterResonance: nil,
     filterLFORate: FloatSampler(min: 0.02, max: 0.2, dist: .exponential).next()!,
-    filterEnvAttack: .random(in: 0.02...0.2),
-    filterEnvDecay: .random(in: 0.2...0.8),
-    filterEnvSustain: .random(in: 0.5...0.95),
-    filterEnvRelease: .random(in: 0.2...0.8),
-    filterCutoffLow: .random(in: profile.filterCutoffRange),
+    filterEnvAttack: SongRNG.float(in: 0.02...0.2),
+    filterEnvDecay: SongRNG.float(in: 0.2...0.8),
+    filterEnvSustain: SongRNG.float(in: 0.5...0.95),
+    filterEnvRelease: SongRNG.float(in: 0.2...0.8),
+    filterCutoffLow: SongRNG.float(in: profile.filterCutoffRange),
     mood: .custom, sliders: sliders
   )
   let effects = EffectsSyntax(reverbPreset: 8, reverbWetDryMix: 50,
                               delayTime: 0, delayFeedback: 0, delayLowPassCutoff: 0, delayWetDryMix: 0)
+  let leafFactorPick: Int = SongRNG.pick([2, 3, 5, 7]) ?? 3
   let rose = RoseSyntax(
     amp: FloatSampler(min: 0.5, max: 5.0, dist: .exponential).next()!,
-    leafFactor: CoreFloat([2, 3, 5, 7].randomElement()!),
+    leafFactor: CoreFloat(leafFactorPick),
     freq: FloatSampler(min: 0.01, max: 0.1, dist: .exponential).next()!,
-    phase: .random(in: 0...(CoreFloat.pi * 2))
+    phase: SongRNG.float(in: 0...(CoreFloat.pi * 2))
   )
   printRandomPadDiagnostic(gmProgram: gmProgram, characteristicDuration: characteristicDuration,
                            template: template, sliders: sliders, rose: rose)
-  let preset = PresetSyntax(
-    name: "Random Pad",
-    arrow: nil, samplerFilenames: nil, samplerProgram: nil, samplerBank: nil, library: nil,
-    rose: rose, effects: effects, padTemplate: template, padSynth: nil
-  )
-  let (auditionNum, _) = saveRandomPadAudition(preset)
   return PresetSyntax(
-    name: "Random Audition \(auditionNum)",
+    name: "Random Pad",
     arrow: nil, samplerFilenames: nil, samplerProgram: nil, samplerBank: nil, library: nil,
     rose: rose, effects: effects, padTemplate: template, padSynth: nil
   )
