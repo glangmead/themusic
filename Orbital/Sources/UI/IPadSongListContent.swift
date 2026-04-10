@@ -12,25 +12,28 @@ struct IPadSongListContent: View {
   @Environment(ResourceManager.self) private var resourceManager
   @State private var songToDelete: SongRef?
   @State private var isShowingDeleteConfirmation = false
+  @State private var editingSongID: SongRef.ID?
 
   var body: some View {
     List {
       ForEach(library.songs) { song in
-        NavigationLink(value: song.id) {
-          SongCell(song: song)
-        }
-        .swipeActions(edge: .trailing, allowsFullSwipe: false) {
-          Button("Delete", systemImage: "trash", role: .destructive) {
-            songToDelete = song
+        SongCell(song: song)
+          .swipeActions(edge: .trailing, allowsFullSwipe: false) {
+            Button("Delete", systemImage: "trash", role: .destructive) {
+              songToDelete = song
+            }
+            .tint(.red)
+            Button("Edit", systemImage: "pencil") {
+              editingSongID = song.id
+            }
+            .tint(.gray)
           }
-          .tint(.red)
-        }
-        .swipeActions(edge: .leading, allowsFullSwipe: true) {
-          Button("Duplicate", systemImage: "doc.on.doc") {
-            library.duplicateSong(song, resourceBaseURL: resourceManager.resourceBaseURL)
+          .swipeActions(edge: .leading, allowsFullSwipe: true) {
+            Button("Duplicate", systemImage: "doc.on.doc") {
+              library.duplicateSong(song, resourceBaseURL: resourceManager.resourceBaseURL)
+            }
+            .tint(.blue)
           }
-          .tint(.blue)
-        }
       }
     }
     .confirmationDialog(
@@ -49,7 +52,7 @@ struct IPadSongListContent: View {
     .onChange(of: songToDelete) {
       isShowingDeleteConfirmation = songToDelete != nil
     }
-    .navigationDestination(for: SongRef.ID.self) { songID in
+    .navigationDestination(item: $editingSongID) { songID in
       if let song = library.songs.first(where: { $0.id == songID }) {
         let state = library.playbackState(for: song, engine: engine, resourceBaseURL: resourceManager.resourceBaseURL)
         SongSettingsView(song: song)

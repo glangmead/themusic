@@ -11,7 +11,7 @@ struct OrbitalView: View {
   @Environment(SpatialAudioEngine.self) private var engine
   @Environment(SongLibrary.self) private var library
   @Environment(ResourceManager.self) private var resourceManager
-  @State private var selectedSongID: SongRef.ID?
+  @State private var editingSongID: SongRef.ID?
   @State private var songToDelete: SongRef?
   @State private var isShowingDeleteConfirmation = false
 
@@ -19,23 +19,22 @@ struct OrbitalView: View {
     NavigationStack {
       Group {
         if resourceManager.isReady {
-          List(selection: $selectedSongID) {
+          List {
             ForEach(library.songs) { song in
               SongCell(song: song)
-                .tag(song.id)
                 .swipeActions(edge: .trailing, allowsFullSwipe: false) {
-                  Button(role: .destructive) {
+                  Button("Delete", systemImage: "trash", role: .destructive) {
                     songToDelete = song
-                  } label: {
-                    Label("Delete", systemImage: "trash")
                   }
                   .tint(.red)
+                  Button("Edit", systemImage: "pencil") {
+                    editingSongID = song.id
+                  }
+                  .tint(.gray)
                 }
                 .swipeActions(edge: .leading, allowsFullSwipe: true) {
-                  Button {
+                  Button("Duplicate", systemImage: "doc.on.doc") {
                     library.duplicateSong(song, resourceBaseURL: resourceManager.resourceBaseURL)
-                  } label: {
-                    Label("Duplicate", systemImage: "doc.on.doc")
                   }
                   .tint(.blue)
                 }
@@ -48,9 +47,6 @@ struct OrbitalView: View {
           ) {
             Button("Delete", role: .destructive) {
               if let song = songToDelete {
-                if selectedSongID == song.id {
-                  selectedSongID = nil
-                }
                 library.deleteSong(song)
               }
             }
@@ -65,7 +61,7 @@ struct OrbitalView: View {
         }
       }
       .navigationTitle("Songs")
-      .navigationDestination(item: $selectedSongID) { songID in
+      .navigationDestination(item: $editingSongID) { songID in
         if let song = library.songs.first(where: { $0.id == songID }) {
           let state = library.playbackState(for: song, engine: engine, resourceBaseURL: resourceManager.resourceBaseURL)
           SongSettingsView(song: song)

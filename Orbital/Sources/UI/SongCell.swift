@@ -14,6 +14,7 @@ struct SongCell: View {
   let song: SongRef
 
   @State private var playbackState: SongDocument?
+  @State private var metadata: PatternMetadata?
   @State private var isShowingLoadError = false
 
   private var isPlaying: Bool { playbackState?.isPlaying == true }
@@ -21,36 +22,34 @@ struct SongCell: View {
   private var isLoading: Bool { playbackState?.isLoading == true }
 
   var body: some View {
-    HStack {
-      Button {
-        library.play(song, engine: engine, resourceBaseURL: resourceManager.resourceBaseURL)
-      } label: {
+    Button(action: togglePlayback) {
+      HStack {
+        VStack(alignment: .leading, spacing: 2) {
+          Text(song.name)
+            .foregroundStyle(.primary)
+          Text(metadata?.subtitle ?? " ")
+            .font(.caption)
+            .foregroundStyle(.secondary)
+        }
+
+        Spacer()
+
         if isLoading {
           ProgressView()
-            .frame(width: 24, height: 24)
-        } else {
-          Image(systemName: isPlaying && !isPaused ? "pause.fill" : "play.fill")
-            .foregroundStyle(isPlaying ? .primary : .secondary)
+            .controlSize(.small)
+            .accessibilityHidden(true)
+        } else if isPlaying && !isPaused {
+          Image(systemName: "waveform")
+            .foregroundStyle(.secondary)
+            .imageScale(.small)
+            .accessibilityHidden(true)
         }
       }
-      .buttonStyle(.borderless)
-      .accessibilityLabel(isPlaying && !isPaused ? "Pause" : "Play")
-
-      Text(song.name)
-
-      Spacer()
-
-      if isPlaying {
-        Image(systemName: "waveform")
-          .foregroundStyle(.secondary)
-          .imageScale(.small)
-      }
+      .contentShape(.rect)
     }
-    .task {
-      if playbackState == nil {
-        playbackState = library.playbackState(for: song, engine: engine, resourceBaseURL: resourceManager.resourceBaseURL)
-      }
-    }
+    .buttonStyle(.plain)
+    .accessibilityHint(accessibilityHintText)
+    .task(loadCellState)
     .onChange(of: playbackState?.loadError) {
       isShowingLoadError = playbackState?.loadError != nil
     }
@@ -60,6 +59,25 @@ struct SongCell: View {
       if let error = playbackState?.loadError {
         Text(error)
       }
+    }
+  }
+
+  private var accessibilityHintText: String {
+    if isLoading { return "Loading" }
+    return isPlaying && !isPaused ? "Pauses playback" : "Plays this song"
+  }
+
+  private func togglePlayback() {
+    library.play(song, engine: engine, resourceBaseURL: resourceManager.resourceBaseURL)
+  }
+
+  @Sendable
+  private func loadCellState() async {
+    if playbackState == nil {
+      playbackState = library.playbackState(for: song, engine: engine, resourceBaseURL: resourceManager.resourceBaseURL)
+    }
+    if metadata == nil {
+      metadata = await library.metadata(for: song, resourceBaseURL: resourceManager.resourceBaseURL)
     }
   }
 }

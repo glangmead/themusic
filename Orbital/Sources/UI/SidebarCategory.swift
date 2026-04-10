@@ -8,7 +8,7 @@ import Foundation
 enum SidebarCategory: String, CaseIterable, Identifiable {
   case songs = "Songs"
   case classics = "Classics"
-  case create = "Create"
+  case create = "Mood"
   case soundLibrary = "Sound Library"
   case soundDesign = "Sound Design"
 

@@ -26,7 +26,7 @@ struct CompactAppLayout: View {
       } label: {
         LoadingTabLabel(text: "Classics", systemImage: "building.columns", isLoading: midiLedger.isLoading)
       }
-      Tab("Create", systemImage: "wand.and.stars") {
+      Tab("Mood", systemImage: "wand.and.stars") {
         IPadCreateView(createDocument: createDocument)
       }
       Tab {

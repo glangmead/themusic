@@ -123,6 +123,32 @@ class SongLibrary {
   /// Playback states keyed by SongRef.id, created lazily by SongCells.
   var playbackStates: [String: SongDocument] = [:]
 
+  /// Cached pattern metadata keyed by SongRef.id, populated lazily by SongCell.
+  private var metadataCache: [String: PatternMetadata] = [:]
+
+  /// Returns cached metadata or decodes the pattern JSON (off the main actor) on first request.
+  /// Returns nil only if the file can't be decoded.
+  func metadata(for song: SongRef, resourceBaseURL: URL?) async -> PatternMetadata? {
+    if let cached = metadataCache[song.id] { return cached }
+    let filename = song.patternFileName
+    let extracted = await Task.detached(priority: .userInitiated) { () -> PatternMetadata? in
+      let resolvedURL: URL?
+      if let base = resourceBaseURL {
+        resolvedURL = base.appending(path: "patterns").appending(path: filename)
+      } else {
+        let stem = (filename as NSString).deletingPathExtension
+        resolvedURL = Bundle.main.url(forResource: stem, withExtension: "json", subdirectory: "patterns")
+      }
+      guard let url = resolvedURL,
+            let data = try? Data(contentsOf: url),
+            let spec = try? JSONDecoder().decode(PatternSyntax.self, from: data)
+      else { return nil }
+      return PatternMetadata.extract(from: spec, resourceBaseURL: resourceBaseURL)
+    }.value
+    if let extracted { metadataCache[song.id] = extracted }
+    return extracted
+  }
+
   /// Manages lock screen / Control Center Now Playing info and remote commands.
   private var _nowPlayingManager: NowPlayingManager?
   var nowPlayingManager: NowPlayingManager {
@@ -231,6 +257,7 @@ class SongLibrary {
       nowPlayingManager.songStopped()
     }
     playbackStates[song.id] = nil
+    metadataCache.removeValue(forKey: song.id)
     songs.removeAll { $0.id == song.id }
     PatternStorage.delete(filename: song.patternFileName)
   }
