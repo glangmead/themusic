@@ -373,7 +373,7 @@ private func saveRandomPadAudition(_ preset: PresetSyntax) -> (Int, String) {
 }
 
 private func printRandomPadDiagnostic(gmProgram: Int?, characteristicDuration: CoreFloat?,
-                                      template: PadTemplateSyntax, sliders: PadSliders) {
+                                      template: PadTemplateSyntax, sliders: PadSliders, rose: RoseSyntax) {
   func oscDesc(_ osc: PadOscDescriptor) -> String {
     switch osc.kind {
     case .standard:
@@ -396,12 +396,14 @@ private func printRandomPadDiagnostic(gmProgram: Int?, characteristicDuration: C
     │ profile: \(profileName)  (GM \(gmStr), duration \(durStr))
     │ osc1: \(oscDesc(template.oscillators[0]))
     │ osc2: \(oscDesc(template.oscillators[1]))
-    │ crossfade: \(template.crossfade)
+    │ crossfade: \(template.crossfade)  rate=\(template.crossfadeRate.map { String(format: "%.4f", $0) } ?? "slider") Hz
     │ vibrato: \(template.vibratoEnabled ? "on" : "off")  depth=\(template.vibratoDepth)
+    │ filter LFO: \(template.filterLFORate.map { String(format: "%.4f", $0) } ?? "off") Hz
     │ sliders: smooth=\(sliders.smooth)  bite=\(sliders.bite)  motion=\(sliders.motion)  width=\(sliders.width)  grit=\(sliders.grit)
     │ amp env: atk=\(atkStr)  dec=\(template.ampDecay)  sus=\(template.ampSustain)  rel=\(relStr)
     │ filt env: atk=\(template.filterEnvAttack)  dec=\(template.filterEnvDecay)  sus=\(template.filterEnvSustain)  rel=\(template.filterEnvRelease)
     │ filt cutoff low: \(template.filterCutoffLow) Hz
+    │ rose: amp=\(String(format: "%.2f", rose.amp))  freq=\(String(format: "%.4f", rose.freq)) Hz  k=\(Int(rose.leafFactor))
     └───────────────────────────────────────────
     """)
 }
@@ -414,7 +416,7 @@ func makeRandomPadPreset(gmProgram: Int? = nil, characteristicDuration: CoreFloa
   let sliders = PadSliders(
     smooth: .random(in: profile.smoothRange),
     bite: .random(in: 0...1),
-    motion: .random(in: 0...1),
+    motion: 0,
     width: .random(in: 0...1),
     grit: .random(in: profile.gritRange)
   )
@@ -428,13 +430,14 @@ func makeRandomPadPreset(gmProgram: Int? = nil, characteristicDuration: CoreFloa
       randomPadSynthOscDescriptor(gmProgram: gmProgram, octave: 0),
       randomOscDescriptor(profile: profile, octave: [-1, 0, 1].randomElement()!)
     ],
-    crossfade: [.noiseSmoothStep, .lfo].randomElement()!,
-    crossfadeRate: nil,
-    vibratoEnabled: Double.random(in: 0...1) < profile.vibratoWeight,
-    vibratoRate: nil,
-    vibratoDepth: .random(in: 0.0001...0.001),
+    crossfade: .lfo,
+    crossfadeRate: FloatSampler(min: 0.01, max: 0.1, dist: .exponential).next()!,
+    vibratoEnabled: true,
+    vibratoRate: FloatSampler(min: 1.0, max: 6.0, dist: .exponential).next()!,
+    vibratoDepth: FloatSampler(min: 0.0001, max: 0.001, dist: .exponential).next()!,
     ampAttack: ampAttack, ampDecay: 0.1, ampSustain: 1.0, ampRelease: ampRelease,
-    filterCutoffMultiplier: nil, filterResonance: nil, filterLFORate: nil,
+    filterCutoffMultiplier: nil, filterResonance: nil,
+    filterLFORate: FloatSampler(min: 0.02, max: 0.2, dist: .exponential).next()!,
     filterEnvAttack: .random(in: 0.02...0.2),
     filterEnvDecay: .random(in: 0.2...0.8),
     filterEnvSustain: .random(in: 0.5...0.95),
@@ -442,11 +445,16 @@ func makeRandomPadPreset(gmProgram: Int? = nil, characteristicDuration: CoreFloa
     filterCutoffLow: .random(in: profile.filterCutoffRange),
     mood: .custom, sliders: sliders
   )
-  printRandomPadDiagnostic(gmProgram: gmProgram, characteristicDuration: characteristicDuration,
-                           template: template, sliders: sliders)
   let effects = EffectsSyntax(reverbPreset: 8, reverbWetDryMix: 50,
                               delayTime: 0, delayFeedback: 0, delayLowPassCutoff: 0, delayWetDryMix: 0)
-  let rose = RoseSyntax(amp: 0, leafFactor: 3, freq: 0.2, phase: 0)
+  let rose = RoseSyntax(
+    amp: FloatSampler(min: 0.5, max: 5.0, dist: .exponential).next()!,
+    leafFactor: CoreFloat([2, 3, 5, 7].randomElement()!),
+    freq: FloatSampler(min: 0.01, max: 0.1, dist: .exponential).next()!,
+    phase: .random(in: 0...(CoreFloat.pi * 2))
+  )
+  printRandomPadDiagnostic(gmProgram: gmProgram, characteristicDuration: characteristicDuration,
+                           template: template, sliders: sliders, rose: rose)
   let preset = PresetSyntax(
     name: "Random Pad",
     arrow: nil, samplerFilenames: nil, samplerProgram: nil, samplerBank: nil, library: nil,
