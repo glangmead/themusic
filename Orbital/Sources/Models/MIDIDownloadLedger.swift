@@ -86,45 +86,47 @@ final class MIDIDownloadLedger {
 
   /// Loads the ledger off the main thread using `NSFileCoordinator` so that
   /// iCloud can bring the file local before we read it. Safe to call on the
-  /// main actor — the blocking read happens in a detached task.
+  /// main actor — the blocking IO runs in a `nonisolated` helper.
   func load() async {
     let url = fileURL
     isLoading = true
     defer { isLoading = false }
-
-    let loaded = await Task.detached(priority: .userInitiated) { () -> [MIDILedgerEntry]? in
-      let fm = FileManager.default
-      guard fm.fileExists(atPath: url.path(percentEncoded: false)) else {
-        logger.info("No ledger file found, starting fresh")
-        return nil
-      }
-
-      // Hint iCloud to bring the file local before we coordinate a read.
-      // No-op (and harmless error) for non-ubiquitous files.
-      try? fm.startDownloadingUbiquitousItem(at: url)
-
-      let coordinator = NSFileCoordinator()
-      var coordError: NSError?
-      var result: [MIDILedgerEntry]?
-      coordinator.coordinate(readingItemAt: url, options: [], error: &coordError) { coordinatedURL in
-        do {
-          let data = try Data(contentsOf: coordinatedURL)
-          let decoder = JSONDecoder()
-          decoder.dateDecodingStrategy = .iso8601
-          result = try decoder.decode([MIDILedgerEntry].self, from: data)
-        } catch {
-          logger.error("Failed to read/decode ledger: \(error.localizedDescription)")
-        }
-      }
-      if let coordError {
-        logger.error("File coordination failed: \(coordError.localizedDescription)")
-      }
-      return result
-    }.value
-
+    let loaded = await Self.readLedgerFile(at: url)
     guard let loaded else { return }
     entries = Dictionary(uniqueKeysWithValues: loaded.map { ($0.sourceUrl, $0) })
     logger.info("Loaded \(loaded.count) ledger entries")
+  }
+
+  /// Synchronous worker invoked from a `nonisolated` async context, which
+  /// guarantees it runs on the cooperative pool rather than the main actor.
+  nonisolated private static func readLedgerFile(at url: URL) async -> [MIDILedgerEntry]? {
+    let fm = FileManager.default
+    guard fm.fileExists(atPath: url.path(percentEncoded: false)) else {
+      logger.info("No ledger file found, starting fresh")
+      return nil
+    }
+
+    // Hint iCloud to bring the file local before we coordinate a read.
+    // No-op (and harmless error) for non-ubiquitous files.
+    try? fm.startDownloadingUbiquitousItem(at: url)
+
+    let coordinator = NSFileCoordinator()
+    var coordError: NSError?
+    var result: [MIDILedgerEntry]?
+    coordinator.coordinate(readingItemAt: url, options: [], error: &coordError) { coordinatedURL in
+      do {
+        let data = try Data(contentsOf: coordinatedURL)
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .iso8601
+        result = try decoder.decode([MIDILedgerEntry].self, from: data)
+      } catch {
+        logger.error("Failed to read/decode ledger: \(error.localizedDescription)")
+      }
+    }
+    if let coordError {
+      logger.error("File coordination failed: \(coordError.localizedDescription)")
+    }
+    return result
   }
 
   private func save() {

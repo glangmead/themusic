@@ -20,6 +20,7 @@ struct OrbitalApp: App {
     baseDirectory: URL.documentsDirectory.appending(path: "midi_downloads")
   )
   @State private var midiDownloadManager: MIDIDownloadManager?
+  @State private var presetLibrary = PresetLibrary()
   @Environment(\.scenePhase) private var scenePhase
 
   init() {
@@ -53,6 +54,7 @@ struct OrbitalApp: App {
         .environment(classicsCatalog)
         .environment(midiLedger)
         .environment(midiDownloadManager ?? MIDIDownloadManager(ledger: midiLedger))
+        .environment(presetLibrary)
         .task {
           WavetableLibrary.loadAllCuratedTables()
           await resourceManager.setup()
@@ -73,6 +75,9 @@ struct OrbitalApp: App {
           )
           await midiLedger.load()
           midiDownloadManager = MIDIDownloadManager(ledger: midiLedger)
+          if let baseURL = resourceManager.resourceBaseURL {
+            await presetLibrary.load(from: baseURL.appending(path: "presets"))
+          }
         }
         .onReceive(NotificationCenter.default.publisher(for: UIApplication.willTerminateNotification)) { _ in
           engine.fadeOutAndStop()

@@ -8,18 +8,17 @@ import SwiftUI
 struct SoundDesignView: View {
   @Environment(SpatialAudioEngine.self) private var engine
   @Environment(ResourceManager.self) private var resourceManager
-  @State private var presets: [PresetRef] = []
-  @State private var selectedPreset: PresetRef?
+  @Environment(PresetLibrary.self) private var library
+  @State private var selectedPresetFileName: String?
   @State private var synth: SyntacticSynth?
   @State private var isShowingSaveDialog = false
   @State private var isShowingOverwriteConfirmation = false
   @State private var savePresetName = ""
-  @State private var isLoadingPresets = false
 
-  /// Optional external loading flag the parent can observe (e.g. to show a
-  /// spinner next to the Sound Design row in a sidebar). Mirrors
-  /// `isLoadingPresets` while loads are in-flight.
-  var externalIsLoading: Binding<Bool>?
+  private var selectedPreset: PresetRef? {
+    guard let selectedPresetFileName else { return nil }
+    return library.presets.first { $0.fileName == selectedPresetFileName }
+  }
 
   var body: some View {
     NavigationStack {
@@ -28,29 +27,21 @@ struct SoundDesignView: View {
           .id(selectedPreset.fileName)
           .toolbar {
             ToolbarItem(placement: .topBarLeading) {
-              Picker("Preset", selection: Binding(
-                get: { selectedPreset.fileName },
-                set: { newFileName in selectPreset(named: newFileName) }
-              )) {
-                ForEach(presets) { preset in
-                  Text(preset.spec.name).tag(preset.fileName)
+              Picker("Preset", selection: $selectedPresetFileName) {
+                ForEach(library.presets) { preset in
+                  Text(preset.spec.name).tag(Optional(preset.fileName))
                 }
               }
             }
             ToolbarItem(placement: .topBarTrailing) {
-              Button {
-                savePresetName = selectedPreset.spec.name
-                isShowingSaveDialog = true
-              } label: {
-                Image(systemName: "square.and.arrow.down")
-              }
-              .accessibilityLabel("Save preset") // [VERIFY]
+              Button("Save preset", systemImage: "square.and.arrow.down", action: showSaveDialog)
+                .labelStyle(.iconOnly)
             }
           }
           .alert("Save Preset", isPresented: $isShowingSaveDialog) {
             TextField("Preset name", text: $savePresetName)
             Button("Cancel", role: .cancel) {}
-            Button("Save") { attemptSave() }
+            Button("Save", action: attemptSave)
           } message: {
             Text("Enter a name for the preset.")
           }
@@ -59,12 +50,12 @@ struct SoundDesignView: View {
             isPresented: $isShowingOverwriteConfirmation,
             titleVisibility: .visible
           ) {
-            Button("Overwrite", role: .destructive) { saveCurrentPreset() }
+            Button("Overwrite", role: .destructive, action: saveCurrentPreset)
             Button("Cancel", role: .cancel) {}
           } message: {
             Text("Do you want to replace the existing preset?")
           }
-      } else if isLoadingPresets {
+      } else if library.isLoading {
         ProgressView("Loading presets…")
       } else {
         ContentUnavailableView(
@@ -73,34 +64,27 @@ struct SoundDesignView: View {
         )
       }
     }
-    .task(id: resourceManager.resourceBaseURL) {
-      await loadPresets()
-      if selectedPreset == nil, let first = presets.first {
-        selectPreset(ref: first)
+    .onChange(of: selectedPresetFileName) { _, _ in
+      rebuildSynth()
+    }
+    .onChange(of: library.presets, initial: true) { _, _ in
+      if selectedPresetFileName == nil, let first = library.presets.first {
+        selectedPresetFileName = first.fileName
       }
     }
   }
 
-  private func loadPresets() async {
-    guard let base = resourceManager.resourceBaseURL else { return }
-    let presetsDir = base.appending(path: "presets")
-    isLoadingPresets = true
-    externalIsLoading?.wrappedValue = true
-    defer {
-      isLoadingPresets = false
-      externalIsLoading?.wrappedValue = false
+  private func rebuildSynth() {
+    guard let selectedPreset else {
+      synth = nil
+      return
     }
-    presets = await loadPresetsFromDirectory(presetsDir)
+    synth = SyntacticSynth(engine: engine, presetSpec: selectedPreset.spec)
   }
 
-  private func selectPreset(named fileName: String) {
-    guard let ref = presets.first(where: { $0.fileName == fileName }) else { return }
-    selectPreset(ref: ref)
-  }
-
-  private func selectPreset(ref: PresetRef) {
-    selectedPreset = ref
-    synth = SyntacticSynth(engine: engine, presetSpec: ref.spec)
+  private func showSaveDialog() {
+    savePresetName = selectedPreset?.spec.name ?? ""
+    isShowingSaveDialog = true
   }
 
   private func filenameForPresetName(_ name: String) -> String {
@@ -120,11 +104,11 @@ struct SoundDesignView: View {
     guard let synth, !savePresetName.isEmpty else { return }
     let spec = synth.currentPresetSyntax(name: savePresetName)
     let filename = filenameForPresetName(savePresetName)
-    if PresetStorage.save(spec, filename: filename) {
-      Task {
-        await loadPresets()
-        selectPreset(named: filename)
-      }
+    guard PresetStorage.save(spec, filename: filename) else { return }
+    guard let base = resourceManager.resourceBaseURL else { return }
+    Task {
+      await library.load(from: base.appending(path: "presets"))
+      selectedPresetFileName = filename
     }
   }
 }
