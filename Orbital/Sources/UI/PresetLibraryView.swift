@@ -17,11 +17,14 @@ struct PresetRef: Identifiable, Equatable {
 }
 
 /// Loads preset JSONs from `presetsDir` using `NSFileCoordinator` so iCloud
-/// can bring files local before reading. The function is `nonisolated` and
-/// `async`, so when awaited from MainActor it runs on the cooperative pool.
+/// can bring files local before reading. Runs the synchronous coordinated
+/// reads inside `Task.detached` to guarantee they're off the main actor
+/// (nonisolated async would inherit the caller's actor under Swift 5 mode).
 /// Returns an array sorted by the preset `name` field.
 func loadPresetsFromDirectory(_ presetsDir: URL) async -> [PresetRef] {
-  let fileData = readPresetFilesSynchronously(in: presetsDir)
+  let fileData = await Task.detached(priority: .userInitiated) {
+    readPresetFilesSynchronously(in: presetsDir)
+  }.value
   let decoder = JSONDecoder()
   return fileData.compactMap { fileName, data -> PresetRef? in
     guard let spec = try? decoder.decode(PresetSyntax.self, from: data) else { return nil }
@@ -30,7 +33,9 @@ func loadPresetsFromDirectory(_ presetsDir: URL) async -> [PresetRef] {
 }
 
 /// Synchronous worker that does the blocking iCloud-coordinated reads.
-/// Always invoked from a nonisolated async context, never on the main actor.
+/// Must only be invoked from a detached task so the synchronous
+/// NSFileCoordinator call can't block the main thread (which would deadlock
+/// with iCloud's out-of-process coordination callbacks).
 private func readPresetFilesSynchronously(in presetsDir: URL) -> [(String, Data)] {
   let fm = FileManager.default
   let urls = (try? fm.contentsOfDirectory(
