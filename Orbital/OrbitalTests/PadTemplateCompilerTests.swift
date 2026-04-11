@@ -35,10 +35,12 @@ struct PadTemplateCompilerTests {
     let custom = PadSliders(smooth: 0.1, bite: 0.9, motion: 0.5, width: 0.2, grit: 0.8)
     let t = makeTemplate(mood: .cosmic, sliders: custom)
     let arrow = PadTemplateCompiler.compile(t)
-    // Verify the arrow has a lowPassFilter — the cutoff multiplier should reflect bite=0.9
-    // lerp(2.0, 12.0, 0.9) = 11.0
+    // Verify the arrow has a lowPassFilter — the cutoff multiplier should reflect bite=0.9.
+    // PadTemplateCompiler maps cutoffMultiplier via lerp(2.0, 4.0, bite) — the upper
+    // bound was tightened from 12.0 to 4.0 in commit 606da1d to keep filter sweeps
+    // out of harsh-frequency territory. lerp(2.0, 4.0, 0.9) = 3.8.
     let filterCutoff = extractCutoffMultiplier(from: arrow)
-    #expect(abs((filterCutoff ?? 0) - 11.0) < 0.01)
+    #expect(abs((filterCutoff ?? 0) - 3.8) < 0.01)
   }
 
   @Test("Cosmic mood produces expected amp attack (≈6.5)")

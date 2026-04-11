@@ -10,6 +10,11 @@
 //  - Codable round-trips for ScorePatternSyntax types
 //
 
+// swiftlint:disable file_length
+// This suite is the canonical home for ScorePattern tests across many features
+// (timeline, resolver, hold merging, codable, guitar_rift integration). Splitting
+// would scatter related cases that share fixture builders defined at file scope.
+
 import Testing
 import Foundation
 import Tonic
@@ -1438,9 +1443,30 @@ struct GuitarRiftMidiTests {
   @Test("guitar_rift.json resolves all tracks to expected MIDI notes")
   func guitarRiftMidi() throws {
     let score = guitarRiftScore()
-
     let timeline = ScorePatternCompiler.buildTimeline(score)
     let secondsPerBeat = 60.0 / score.bpm
+
+    // Expected resolved chords per track. The Pad track holds two chord events
+    // (currentChord at I in C major, then bVII = Bb major) under .open voicing,
+    // which spreads triad tones across roughly 1.5 octaves above the base.
+    // The Melody track holds eight chordTone notes under .closed voicing; the
+    // negative indices (-1, -2, -3) reach into the chord octave below the base.
+    let expectedByTrack: [String: [[UInt8]]] = [
+      "Pad": [
+        [24, 28, 43],   // I  (C major):  C1, E1, G2
+        [34, 38, 53]    // bVII (Bb major): Bb1, D2, F3
+      ],
+      "Melody": [
+        [48],           // I  index 0  → C3 (root, oct 3)
+        [55],           // I  index 2  → G3 (5th, oct 3)
+        [43],           // I  index -1 → G2 (top of triad one octave down)
+        [52],           // I  index 1  → E3 (3rd, oct 3)
+        [50],           // bVII index -2 → D3 (closed voicing of bVII at oct 2)
+        [58],           // bVII index 0  → Bb3 (root, oct 3)
+        [46],           // bVII index -3 → Bb2 (root one octave down)
+        [53]            // bVII index -1 → F3 (closed voicing 5th, oct 2)
+      ]
+    ]
 
     for track in score.tracks {
       let (chords, _, _) = ScorePatternCompiler.compileTrack(
@@ -1457,21 +1483,14 @@ struct GuitarRiftMidiTests {
       }
       print(description)
 
-      // Verify notes land in the expected octave range.
-      // Track octave N should produce notes roughly in MIDI range [12*(N+1), 12*(N+2)+12].
-      let expectedLow = UInt8(12 * (track.octave + 1))
-      let expectedHigh = UInt8(min(127, 12 * (track.octave + 3)))
-      for (i, chord) in chords.enumerated() {
-        for midiNote in chord {
-          #expect(
-            midiNote.note >= expectedLow && midiNote.note <= expectedHigh,
-            """
-            Track "\(track.name)" note [\(i)] \(midiNoteName(midiNote.note))(\(midiNote.note)) \
-            outside expected range \(midiNoteName(expectedLow))-\(midiNoteName(expectedHigh)) \
-            for octave \(track.octave)
-            """
-          )
-        }
+      let expected = try #require(expectedByTrack[track.name],
+                                  "no expected notes recorded for track \"\(track.name)\"")
+      #expect(chords.count == expected.count,
+              "track \"\(track.name)\" produced \(chords.count) chord slots, expected \(expected.count)")
+      for (i, chord) in chords.enumerated() where i < expected.count {
+        let actual = chord.map(\.note)
+        #expect(actual == expected[i],
+                "track \"\(track.name)\" slot [\(i)] = \(actual), expected \(expected[i])")
       }
     }
   }

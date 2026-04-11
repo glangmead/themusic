@@ -24,7 +24,11 @@ struct PADSynthWavetableArrowTests {
 
   @Test func generatesNonEmptyWavetable() throws {
     let table = PADSynthWavetableCompiler.generateTable(params: defaultParams())
-    #expect(table.count == WavetableLibrary.tableSize)
+    // PADSynth tables are intentionally much longer than basic-oscillator wavetables —
+    // PADSynthEngine.wavetableSize (262_144) vs WavetableLibrary.tableSize (2_048).
+    // The long table is required by the PADsynth algorithm so the per-bin random phases
+    // produce a perceivable bandwidth-spread tone instead of pitched aliasing.
+    #expect(table.count == PADSynthEngine.wavetableSize)
     let hasNonZero = table.contains { abs($0) > 1e-10 }
     #expect(hasNonZero)
   }

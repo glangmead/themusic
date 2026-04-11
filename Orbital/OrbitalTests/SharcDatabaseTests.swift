@@ -9,10 +9,20 @@ import Testing
 @Suite("SharcDatabase", .serialized)
 struct SharcDatabaseTests {
 
-  @Test("Database loads all 39 instruments")
+  @Test("Database loads instruments and contains known SHARC entries")
   func loadsAllInstruments() {
     let db = SharcDatabase.shared
-    #expect(db.instruments.count == 47)
+    // The SHARC instrument list grows over time as new analyses are imported.
+    // Don't pin an exact count here — assert a sane lower bound and verify a
+    // handful of well-known instruments are present.
+    #expect(db.instruments.count >= 47, "expected at least 47 instruments, got \(db.instruments.count)")
+    let knownIDs: Set<String> = [
+      "oboe", "violin_vibrato", "cello_vibrato", "French_horn",
+      "Bb_clarinet", "flute_vibrato", "trombone", "tuba"
+    ]
+    let actualIDs = Set(db.instruments.map(\.id))
+    let missing = knownIDs.subtracting(actualIDs)
+    #expect(missing.isEmpty, "missing known SHARC instruments: \(missing.sorted())")
   }
 
   @Test("Each instrument has at least one note")

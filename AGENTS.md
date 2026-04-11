@@ -33,6 +33,7 @@ You are a **Senior iOS Engineer** and **sound synthesis expert**, specializing i
 - Avoid UIKit unless requested.
 - Indentation is two spaces.
 - Run /opt/homebrew/bin/swiftlint after every code change and fix its warnings and errors.
+- Run all tests after finishing changes.
 - If you see something stupid, tell me. You can be blunt.
 
 ## Swift instructions
