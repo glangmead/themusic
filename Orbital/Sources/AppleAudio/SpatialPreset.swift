@@ -31,6 +31,11 @@ class SpatialPreset: NoteHandler {
   private var spatialLedger: VoiceLedger?
   private var _cachedHandles: ArrowWithHandles?
 
+  // Single position-pump task per SpatialPreset (replaces the previous
+  // per-Preset task; one task drives all 12 spatial slots).
+  // Lives only while playback is active so it doesn't run during compile().
+  private var positionPumpTask: Task<Void, Never>?
+
   var globalOffset: Int = 0 {
     didSet {
       for preset in presets { preset.globalOffset = globalOffset }
@@ -143,6 +148,7 @@ class SpatialPreset: NoteHandler {
   /// Detach audio nodes from the engine but keep the Preset objects
   /// (and their positionLFO values) alive for UI access.
   func detachNodes() {
+    stopPositionPump()
     if let engine {
       for preset in presets {
         preset.detachAppleNodes(from: engine)
@@ -155,6 +161,36 @@ class SpatialPreset: NoteHandler {
     detachNodes()
     presets.removeAll()
     _cachedHandles = nil
+  }
+
+  /// Start the single per-SpatialPreset position pump. The pump loops at the
+  /// throttle rate, calling `setPosition` on every internal Preset; idle slots
+  /// (no active note) short-circuit cheaply inside `setPosition`. Marked
+  /// `.medium` priority deliberately to throttle CPU/thermal load from the
+  /// HRTF recompute that each `mixerNode.position =` triggers; the audio
+  /// render thread runs at real-time priority and is unaffected by this.
+  /// Detached so structured-concurrency priority escalation can't lift it.
+  func startPositionPump() {
+    stopPositionPump()
+    let presetsRef = presets
+    positionPumpTask = Task.detached(priority: .medium) {
+      while !Task.isCancelled {
+        do {
+          try await Task.sleep(for: .milliseconds(25))
+        } catch {
+          return
+        }
+        let now = Date.now.timeIntervalSince1970
+        for preset in presetsRef {
+          preset.setPosition(CoreFloat(now - preset.timeOrigin))
+        }
+      }
+    }
+  }
+
+  func stopPositionPump() {
+    positionPumpTask?.cancel()
+    positionPumpTask = nil
   }
 
   func reload(presetSpec: PresetSyntax? = nil) {

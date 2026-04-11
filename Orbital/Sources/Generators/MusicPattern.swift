@@ -188,6 +188,12 @@ actor MusicPattern {
   func play() async {
     timeOrigin = Date.now.timeIntervalSince1970
     let seed = songSeed
+    // Spatial position pumps live only while playback is active. Starting
+    // them here (instead of during compile) keeps a User-initiated test's
+    // await chain free of Default-QoS background work, avoiding spurious
+    // priority-inversion warnings from the Thread Performance Checker.
+    for track in tracks { track.spatialPreset.startPositionPump() }
+    defer { for track in tracks { track.spatialPreset.stopPositionPump() } }
     await withTaskGroup(of: Void.self) { group in
       for trackIndex in tracks.indices {
         let trackSeed = self.subSeed(label: "track[\(trackIndex)]")

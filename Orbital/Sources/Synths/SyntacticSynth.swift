@@ -170,6 +170,9 @@ class SyntacticSynth {
     }
     spatialPreset?.cleanup()
     spatialPreset = newPreset
+    // Live preview: drive spatial motion for as long as this synth's preset is loaded.
+    // (MusicPattern.play() handles the same job for pattern playback.)
+    newPreset?.startPositionPump()
     buildHandlerAndReadValues()
   }
 

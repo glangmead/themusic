@@ -37,7 +37,6 @@ class Preset: NoteHandler {
   // movement of the mixerNode in the environment node (see SpatialAudioEngine)
   var positionLFO: Rose?
   var timeOrigin: Double = 0
-  private var positionTask: Task<(), Error>?
 
   // FX nodes: members whose params we can expose
   private var reverbNode: AVAudioUnitReverb?
@@ -205,9 +204,10 @@ class Preset: NoteHandler {
 
   private var lastTimeWeSetPosition: CoreFloat = 0.0
 
-  // setting position is expensive, so limit how often
-  // at 0.1 this makes my phone hot
-  private let setPositionMinWaitTimeSecs: CoreFloat = 0.01
+  // setting position is expensive (HRTF recompute in AVAudioEnvironmentNode),
+  // so we throttle. 25 ms = 40 Hz, which is well above human spatial perception
+  // resolution and keeps the device cool.
+  private let setPositionMinWaitTimeSecs: CoreFloat = 0.025
 
   /// Create a polyphonic Arrow-based Preset with N independent voice copies.
   init(arrowSyntax: ArrowSyntax, library: [String: ArrowSyntax] = [:], numVoices: Int = 12, initEffects: Bool = true) {
@@ -343,10 +343,6 @@ class Preset: NoteHandler {
     self.timeOrigin = Date.now.timeIntervalSince1970
   }
 
-  deinit {
-    positionTask?.cancel()
-  }
-
   func setPosition(_ t: CoreFloat) {
     if t > 1 { // fixes some race on startup
       if positionLFO != nil && (audioGate?.isOpen ?? (activeNoteCount > 0)) { // Always open for sampler
@@ -399,33 +395,10 @@ class Preset: NoteHandler {
       engine.connect(nodes[i], to: nodes[i+1], format: nil) // having mono when the "to:" is reverb failed on my iPhone
     }
 
-    positionTask?.cancel()
-    positionTask = Task.detached(priority: .medium) { [weak self] in
-      while let self = self, !Task.isCancelled {
-        // If we are detached, kill the task
-        guard let engine = self.mixerNode!.engine else {
-          break
-        }
-
-        if engine.isRunning {
-          do {
-            try await Task.sleep(for: .seconds(0.01))
-            self.setPosition(CoreFloat(Date.now.timeIntervalSince1970 - self.timeOrigin))
-          } catch {
-            break
-          }
-        } else {
-          // Engine attached but not running (starting up or paused).
-          try? await Task.sleep(for: .seconds(0.2))
-        }
-      }
-    }
-
     return mixerNode
   }
 
   func detachAppleNodes(from engine: SpatialAudioEngine) {
-    positionTask?.cancel()
     let allNodes: [AVAudioNode?] = [sourceNode, sampler?.node, distortionNode, delayNode, reverbNode, mixerNode]
     let nodes = allNodes.compactMap { $0 }
     engine.detach(nodes)

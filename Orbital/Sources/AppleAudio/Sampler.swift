@@ -26,8 +26,10 @@ class Sampler {
   }
 
   /// Loads the instrument into the sampler node. Throws on failure.
-  /// Runs the actual file I/O on a background thread so the main thread
-  /// remains responsive (important for large SoundFont files).
+  /// Marked `@concurrent` so the file I/O runs off the caller's actor on the
+  /// concurrent pool, while still inheriting the caller's priority (so a
+  /// user-initiated caller doesn't get demoted to Default QoS).
+  @concurrent
   func loadInstrument() async throws {
     let urls = fileNames.compactMap { fileName in
       resolveResourceURL(name: fileName, ext: "wav", resourceBaseURL: resourceBaseURL) ??
@@ -35,23 +37,12 @@ class Sampler {
       resolveResourceURL(name: fileName, ext: "aif", resourceBaseURL: resourceBaseURL)
     }
 
-    // Capture node locally so we can use it from a nonisolated context.
-    let samplerNode = node
-    let program = program
-    let bank = bank
-
     if !urls.isEmpty {
-      try await Task.detached {
-        try samplerNode.loadAudioFiles(at: urls)
-      }.value
+      try node.loadAudioFiles(at: urls)
     } else if let fileName = fileNames.first, let url = resolveResourceURL(name: fileName, ext: "exs", resourceBaseURL: resourceBaseURL) {
-      try await Task.detached {
-        try samplerNode.loadInstrument(at: url)
-      }.value
+      try node.loadInstrument(at: url)
     } else if let fileName = fileNames.first, let url = resolveResourceURL(name: fileName, ext: "sf2", resourceBaseURL: resourceBaseURL) {
-      try await Task.detached {
-        try samplerNode.loadSoundBankInstrument(at: url, program: program, bankMSB: bank, bankLSB: 0)
-      }.value
+      try node.loadSoundBankInstrument(at: url, program: program, bankMSB: bank, bankLSB: 0)
     } else {
       throw SamplerError.fileNotFound(fileNames)
     }
