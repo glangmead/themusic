@@ -70,8 +70,12 @@ enum WavetableLibrary {
 
   // Mutable store for externally loaded tables (e.g. from WAV files on disk).
   // Keys registered here override built-in tables.
-  // Must only be written from the main thread — ArrowSyntax.compile() reads this from async Tasks.
-  static var userTables: [String: [CoreFloat]] = [:]
+  // Must only be written from the main thread (writers are `@MainActor`);
+  // ArrowSyntax.compile() reads this from async Tasks, which is safe because
+  // reads happen after the one-shot startup writes and dictionary reads don't
+  // overlap with mutation in practice. `nonisolated(unsafe)` tells Swift 6 to
+  // trust the documented contract instead of requiring a lock on every read.
+  nonisolated(unsafe) static var userTables: [String: [CoreFloat]] = [:]
 
   // Returns the named table, checking userTables first, then built-ins, then a pure sine fallback.
   // Does NOT auto-load from disk — callers must pre-populate userTables (e.g. via loadCuratedTable).

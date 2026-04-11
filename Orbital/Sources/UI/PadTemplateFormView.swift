@@ -280,7 +280,7 @@ private struct PadTemplateFormContent: View {
   }
 
   private func applyRandomEffects() {
-    synth.reverbPreset = AVAudioUnitReverbPreset.allCases.randomElement()!
+    synth.reverbPreset = AVAudioUnitReverbPreset.all.randomElement()!
     synth.reverbMix = .random(in: 0...50)
     synth.delayTime = .random(in: 0...30)
     synth.delayFeedback = .random(in: 0...30)
@@ -365,7 +365,7 @@ private struct PadTemplateFormContent: View {
 
         Section("Effects") {
           Picker("Reverb Preset", selection: $synth.reverbPreset) {
-            ForEach(AVAudioUnitReverbPreset.allCases, id: \.self) { option in
+            ForEach(AVAudioUnitReverbPreset.all, id: \.self) { option in
               Text(option.name)
             }
           }

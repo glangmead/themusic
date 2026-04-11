@@ -28,3 +28,13 @@ extension AVAudioUnitReverb {
     }
   }
 }
+
+extension AVAudioUnitReverbPreset {
+  // Apple synthesizes `allCases` on this NS_ENUM, but in Swift 6 the static
+  // stored array isn't considered concurrency-safe. Use this `let` instead.
+  static let all: [AVAudioUnitReverbPreset] = [
+    .smallRoom, .mediumRoom, .largeRoom, .mediumHall, .largeHall,
+    .plate, .mediumChamber, .largeChamber, .cathedral, .largeRoom2,
+    .mediumHall2, .mediumHall3, .largeHall2
+  ]
+}

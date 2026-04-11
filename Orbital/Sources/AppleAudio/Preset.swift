@@ -16,7 +16,13 @@ import Overture
 // See PresetSyntax.swift for the Codable template types.
 
 @Observable
-class Preset: NoteHandler {
+// `@unchecked Sendable`: Preset is a long-lived audio node container. All
+// mutation of its stored properties happens on the main actor (SwiftUI
+// editors) or inside its own setup()/reload() paths that run on the
+// compile task. Render-time callbacks read the arrow graphs from the audio
+// thread; the graph's scratch buffers are guarded by the AudioGate pattern,
+// not Swift's Sendable machinery.
+class Preset: NoteHandler, @unchecked Sendable {
   var name: String = "Noname"
   let numVoices: Int
 
@@ -119,18 +125,22 @@ class Preset: NoteHandler {
         env.startCallback = { [weak self] in
           self?.activate()
         }
-        env.finishCallbacks.append { [weak self] in
-          if let self = self {
-            let allClosed = ampEnvs.allSatisfy { $0.state == .closed }
-            if allClosed {
-              // Delay gate close to avoid race with incoming noteOn during fast trills.
-              // If a new noteOn arrives within 50ms, envelopes won't be .closed anymore.
-              DispatchQueue.main.asyncAfter(deadline: .now() + 0.05) { [weak self] in
-                guard let self = self else { return }
-                let stillAllClosed = ampEnvs.allSatisfy { $0.state == .closed }
-                if stillAllClosed {
-                  self.deactivate()
-                }
+        // The delayed gate-close re-looks up the envelopes via `self.sound`
+        // instead of capturing the local `ampEnvs` array, so the Task closure
+        // doesn't have to smuggle non-Sendable `[ADSR]` across actor domains.
+        env.finishCallbacks.append { [weak self, key] in
+          guard let self else { return }
+          let allClosed = ampEnvs.allSatisfy { $0.state == .closed }
+          if allClosed {
+            // Delay gate close to avoid race with incoming noteOn during fast trills.
+            // If a new noteOn arrives within 50ms, envelopes won't be .closed anymore.
+            Task { @MainActor [weak self, key] in
+              try? await Task.sleep(for: .milliseconds(50))
+              guard let self else { return }
+              guard let envs = self.sound?.namedADSREnvelopes[key] else { return }
+              let stillAllClosed = envs.allSatisfy { $0.state == .closed }
+              if stillAllClosed {
+                self.deactivate()
               }
             }
           }

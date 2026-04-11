@@ -270,19 +270,24 @@ class SongDocument {
       // Subscribe to annotation streams for the event log.
       if let pattern = runtime?.compiledPattern {
         let streams = await pattern.getAnnotationStreams()
-        annotationTask = Task {
-          await withTaskGroup(of: Void.self) { group in
-            for stream in streams {
-              group.addTask { @MainActor in
-                for await annotation in stream {
-                  self.eventLog.append(annotation)
-                  if self.eventLog.count > Self.maxLogEntries {
-                    self.eventLog.removeFirst(self.eventLog.count - Self.maxLogEntries)
-                  }
-                }
+        // Spawn a plain fire-and-forget Task per stream instead of wrapping
+        // them in `withTaskGroup`. The task-group + `@MainActor in` closure
+        // pattern trips a Swift 6 region-based isolation checker bug. Each
+        // child task is stored so `stop()` can cancel it individually.
+        var childTasks: [Task<Void, Never>] = []
+        for stream in streams {
+          let task = Task { @MainActor in
+            for await annotation in stream {
+              self.eventLog.append(annotation)
+              if self.eventLog.count > Self.maxLogEntries {
+                self.eventLog.removeFirst(self.eventLog.count - Self.maxLogEntries)
               }
             }
           }
+          childTasks.append(task)
+        }
+        annotationTask = Task { @MainActor in
+          for t in childTasks { await t.value }
         }
 
         // Chord label stream gets its own task so it's observed directly by SwiftUI

@@ -24,7 +24,11 @@ struct EffectsSyntax: Codable {
   let delayWetDryMix: CoreFloat
 }
 
-struct PresetSyntax: Codable {
+// `@unchecked Sendable`: same argument as PatternSyntax — an immutable
+// Codable value type whose nested syntax types are all immutable. Asserted
+// at this aggregate boundary to avoid cascading Sendable through every
+// small syntax struct.
+struct PresetSyntax: Codable, @unchecked Sendable {
   let name: String
   let arrow: ArrowSyntax? // a sound synthesized in code, to be attached to an AVAudioSourceNode; mutually exclusive with a sample
   let samplerFilenames: [String]? // a sound from an audio file(s) in our bundle; mutually exclusive with an arrow

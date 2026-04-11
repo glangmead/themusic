@@ -516,7 +516,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				PRODUCT_NAME = "orbital-play";
 				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Release;
 		};
@@ -583,6 +583,7 @@
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
@@ -645,6 +646,7 @@
 				SDKROOT = iphoneos;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 6.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -684,7 +686,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_ENFORCE_EXCLUSIVE_ACCESS = "debug-only";
 				SWIFT_UPCOMING_FEATURE_INTERNAL_IMPORTS_BY_DEFAULT = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -723,7 +725,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_ENFORCE_EXCLUSIVE_ACCESS = "debug-only";
 				SWIFT_UPCOMING_FEATURE_INTERNAL_IMPORTS_BY_DEFAULT = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -741,7 +743,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.langmead.ProgressionPlayerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Orbital.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Orbital";
 			};
@@ -760,7 +762,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.langmead.ProgressionPlayerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Orbital.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Orbital";
 			};
@@ -773,7 +775,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				PRODUCT_NAME = "orbital-play";
 				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
@@ -788,7 +790,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.langmead.OrbitalCLITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Release;
 		};
@@ -803,7 +805,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.langmead.OrbitalCLITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};

@@ -10,7 +10,13 @@
 
 import Foundation
 
-enum ArrowSyntax: Equatable {
+// `@unchecked Sendable`: ArrowSyntax is an immutable value-type DSL for the
+// DSP graph. All case payloads are structurally immutable (String, Double,
+// Int, nested ArrowSyntax). Swift 6 can't infer Sendable automatically
+// because the nested `BasicOscillator.OscShape` and `PADSynthSyntax` types
+// aren't individually marked; we assert the promise here to avoid cascading
+// Sendable through every small value type the tone layer uses.
+enum ArrowSyntax: Equatable, @unchecked Sendable {
   case const(name: String, val: CoreFloat)
   case constOctave(name: String, val: CoreFloat)
   case constCent(name: String, val: CoreFloat)

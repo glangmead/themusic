@@ -1256,19 +1256,22 @@ struct ChordLabelStreamTests {
             loop: loop
         )
         let stream = await pattern.getChordLabelStream()
-        var received: [String] = []
-        await withTaskGroup(of: Void.self) { group in
-            group.addTask {
-                await pattern.play()
-                await pattern.cleanup()  // closes the stream
+        // `async let` scopes keep each mutable collection local to its own
+        // task, avoiding a shared `var received` capture that Swift 6's
+        // strict concurrency would reject as a non-Sendable cross-task send.
+        async let playedThenCleaned: Void = {
+            await pattern.play()
+            await pattern.cleanup()  // closes the stream
+        }()
+        async let collected: [String] = {
+            var collected: [String] = []
+            for await label in stream {
+                collected.append(label)
             }
-            group.addTask {
-                for await label in stream {
-                    received.append(label)
-                }
-            }
-        }
-        return received
+            return collected
+        }()
+        _ = await playedThenCleaned
+        return await collected
     }
 
     @Test("stream emits labels in beat order for non-looping pattern")

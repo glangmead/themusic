@@ -13,7 +13,7 @@ struct EffectsFormGroup: View {
   var body: some View {
     DisclosureGroup(isExpanded: $isExpanded) {
       Picker("Reverb Preset", selection: $synth.reverbPreset) {
-        ForEach(AVAudioUnitReverbPreset.allCases, id: \.self) { option in
+        ForEach(AVAudioUnitReverbPreset.all, id: \.self) { option in
           Text(option.name)
         }
       }

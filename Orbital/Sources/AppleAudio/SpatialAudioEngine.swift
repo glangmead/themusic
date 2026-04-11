@@ -10,7 +10,13 @@ import Observation
 import os
 
 @Observable
-class SpatialAudioEngine {
+// `@unchecked Sendable`: SpatialAudioEngine is a long-lived, shared audio
+// graph wrapper. Its stored properties are either immutable after start()
+// or synchronized via OSAllocatedUnfairLock / AVAudioEngine's own internal
+// locking. Compile/playback code legitimately passes the engine reference
+// across isolation domains (e.g. @MainActor compile to nonisolated async
+// SpatialPreset init) without mutating shared state concurrently.
+class SpatialAudioEngine: @unchecked Sendable {
   let audioEngine = AVAudioEngine()
   let envNode = AVAudioEnvironmentNode()
   let stereo: AVAudioFormat
@@ -149,10 +155,10 @@ class SpatialAudioEngine {
   /// Client-provided callback; set before calling `start()` or at any time.
   /// Called on the audio-render thread with interleaved samples.
   /// The tap is installed once at engine start to avoid audio glitches.
-  private let tapCallback = OSAllocatedUnfairLock<(([Float]) -> Void)?>(initialState: nil)
+  private let tapCallback = OSAllocatedUnfairLock<(@Sendable ([Float]) -> Void)?>(initialState: nil)
   private var tapInstalled = false
 
-  func setTapCallback(_ block: (([Float]) -> Void)?) {
+  func setTapCallback(_ block: (@Sendable ([Float]) -> Void)?) {
     tapCallback.withLock { $0 = block }
   }
 
@@ -217,7 +223,13 @@ class SpatialAudioEngine {
   /// Stop the engine, run a graph-mutating closure, then restart.
   /// Ensures the render thread isn't pulling audio while nodes are
   /// being attached or detached.
-  func withQuiescedGraph(_ mutate: () async throws -> Void) async throws {
+  ///
+  /// `mutate` is `@MainActor` because every caller is main-actor-isolated
+  /// and needs to touch its own main-isolated state (runtime, hasRandomness).
+  /// Invoking an `@MainActor` closure from this nonisolated method hops
+  /// onto main for the duration of the callback, which is the semantics we
+  /// already rely on.
+  func withQuiescedGraph(_ mutate: @MainActor () async throws -> Void) async throws {
     audioEngine.stop()
     do {
       try await mutate()

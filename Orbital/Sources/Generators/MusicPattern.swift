@@ -24,7 +24,14 @@ enum CompiledHierarchyOperation {
 // MARK: - CompiledHierarchyModulator
 
 /// A compiled hierarchy modulator: fires on a timer and applies a typed operation to the shared hierarchy.
-final class CompiledHierarchyModulator {
+///
+/// `@unchecked Sendable`: each instance is handed off exactly once from the
+/// `compile` path to `MusicPattern` and then exclusively mutated by the
+/// single task that runs `runHierarchyModulator(_:)`. No two tasks mutate the
+/// same instance concurrently. Swift 6's region analysis can't see this
+/// ownership transfer because the contained iterator/operation types are
+/// non-Sendable existentials.
+final class CompiledHierarchyModulator: @unchecked Sendable {
   let hierarchy: PitchHierarchy
   var operation: CompiledHierarchyOperation
   var intervalEmitter: any IteratorProtocol<CoreFloat>
@@ -46,7 +53,16 @@ final class CompiledHierarchyModulator {
 /// note generator, timing, and modulators, and runs concurrently.
 actor MusicPattern {
   /// State for a single track within the pattern.
-  struct Track {
+  ///
+  /// `@unchecked Sendable`: a Track is built once by `compile` and immediately
+  /// handed to `MusicPattern`, which owns it for the remainder of its life.
+  /// The `SpatialPreset` reference is also held by `CompileResult.spatialPresets`
+  /// (read by `@MainActor SongDocument`), but the two handles never mutate the
+  /// same fields concurrently — UI code mutates SpatialPreset state on main,
+  /// the actor mutates Track-level iterators on its own executor. Swift 6's
+  /// region analysis can't prove this because Track contains non-Sendable
+  /// protocol existentials (`any IteratorProtocol<...>`).
+  struct Track: @unchecked Sendable {
     let spatialPreset: SpatialPreset
     let modulators: [String: Arrow11]
     var notes: any IteratorProtocol<[MidiNote]>
@@ -292,8 +308,12 @@ actor MusicPattern {
           annotationContinuations[trackIndex].yield(annotation)
         }
 
-        group.addTask {
-          try? await event.play()
+        // Explicit capture list takes a value copy of the mutable `event`
+        // so the Sendable child-task closure doesn't share the outer
+        // function's mutable binding.
+        group.addTask { [event] in
+          var local = event
+          try? await local.play()
         }
         do {
           try await clock.sleep(for: .seconds(TimeInterval(event.gap)))

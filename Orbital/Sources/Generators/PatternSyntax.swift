@@ -65,7 +65,13 @@ struct MidiTracksSyntax: Codable {
 /// - `tableTracks`: generative table with stochastic emitters
 /// - `scoreTracks`: score-based absolute-beat sequencing
 /// - `generatorTracks`: high-level generator params compiled to scoreTracks at runtime
-struct PatternSyntax: Codable {
+///
+/// `@unchecked Sendable`: PatternSyntax and its constituent *Syntax types are
+/// immutable Codable value types (all fields are `let`). They are safely
+/// shared across isolation domains (main actor UI → nonisolated compile).
+/// The underlying structs aren't marked Sendable individually to avoid a
+/// cascade through every syntax type; we assert the promise at this boundary.
+struct PatternSyntax: Codable, @unchecked Sendable {
   let midiTracks: MidiTracksSyntax?
   let tableTracks: TablePatternSyntax?
   let scoreTracks: ScorePatternSyntax?
@@ -193,7 +199,12 @@ struct PatternSyntax: Codable {
     let isFallbackMode = !midi.tracks.isEmpty && allSeqs.count > midi.tracks.count
     for (i, entry) in allSeqs.enumerated() {
       let trackEntry = i < midi.tracks.count ? midi.tracks[i] : midi.tracks[0]
-      let presetSpec = resolvePresetSpec(filename: trackEntry.presetFilename, gmProgram: entry.sequence.program, characteristicDuration: entry.sequence.medianSustain(), resourceBaseURL: resourceBaseURL)
+      let presetSpec = resolvePresetSpec(
+        filename: trackEntry.presetFilename,
+        gmProgram: entry.sequence.program,
+        characteristicDuration: entry.sequence.medianSustain(),
+        resourceBaseURL: resourceBaseURL
+      )
       let voices = isFallbackMode ? 2 : (trackEntry.numVoices ?? 12)
       let sp = try await SpatialPreset(presetSpec: presetSpec, engine: engine, numVoices: voices, resourceBaseURL: resourceBaseURL)
 

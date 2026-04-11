@@ -65,7 +65,13 @@ struct EventAnnotation: Sendable, Identifiable {
 }
 
 // a musical utterance to play at one point in time, a set of simultaneous noteOns
-struct MusicEvent {
+//
+// `@unchecked Sendable`: each MusicEvent is built inside `MusicPattern.playTrack`,
+// immediately handed off to a child task via `group.addTask { event.play() }`,
+// and never touched by the parent task again. The non-Sendable contents
+// (NoteHandler, Arrow11 modulators, any Clock<Duration>) are only accessed
+// inside `event.play()` on the single task that owns the value.
+struct MusicEvent: @unchecked Sendable {
   let noteHandler: NoteHandler
   let notes: [MidiNote]
   let sustain: CoreFloat // time between noteOn and noteOff in seconds

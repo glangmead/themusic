@@ -19,8 +19,16 @@ import AVFAudio
 /// ledger assigns each note to a different Preset (different spatial position).
 /// For Sampler-based presets: each Preset wraps an AVAudioUnitSampler which is
 /// inherently polyphonic.
+///
+/// `@unchecked Sendable`: SpatialPreset is an `@Observable` class that owns
+/// AVAudioEngine nodes, a VoiceLedger, and a pool of Presets. All mutating
+/// access happens from the main actor (`SongDocument`, SwiftUI form views),
+/// while playback reads go through its own `NoteHandler` methods which are
+/// serialized by the sequencer's task. The position-pump `Task.detached`
+/// only mutates AVAudioMixerNode positions, which is internally synchronized
+/// by AVFoundation.
 @Observable
-class SpatialPreset: NoteHandler {
+class SpatialPreset: NoteHandler, @unchecked Sendable {
   private(set) var presetSpec: PresetSyntax
   let engine: SpatialAudioEngine?
   let numVoices: Int
