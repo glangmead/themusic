@@ -97,10 +97,13 @@ struct PadTemplateCompilerTests {
 
   @Test("pad_cosmic.json decodes and compiles successfully")
   func cosmicJsonRoundtrip() throws {
-    let url = Bundle(for: BundleToken.self).url(forResource: "pad_cosmic", withExtension: "json")
-      ?? bundlePresetsURL(named: "pad_cosmic")
-    guard let url else {
-      // Not fatal in CI where bundle layout may differ; skip gracefully.
+    // Loaded from the host app bundle: pad_cosmic.json is an actual app preset
+    // shipped under Resources/presets/ and is bundled as part of that folder
+    // reference in the Orbital target.
+    guard let url = Bundle.main.url(
+      forResource: "pad_cosmic", withExtension: "json", subdirectory: "presets"
+    ) else {
+      Issue.record("pad_cosmic.json not found in host app bundle under presets/")
       return
     }
     let data = try Data(contentsOf: url)
@@ -183,16 +186,4 @@ struct PadTemplateCompilerTests {
     }
   }
 
-  private func bundlePresetsURL(named name: String) -> URL? {
-    let candidates = [
-      URL(fileURLWithPath: #file)
-        .deletingLastPathComponent()
-        .deletingLastPathComponent()
-        .appendingPathComponent("Resources/presets/\(name).json")
-    ]
-    return candidates.first { FileManager.default.fileExists(atPath: $0.path) }
-  }
 }
-
-// Used to locate the test bundle.
-private final class BundleToken {}

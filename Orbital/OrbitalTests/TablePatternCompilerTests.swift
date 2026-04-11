@@ -688,12 +688,12 @@ struct ArrowModulatorTests {
     #expect(compiled.namedEmitterValues["b"]?.count == 1)
   }
 
-  /// Load a fixture file from OrbitalTests/Fixtures/.
-  private func loadFixturePattern(_ filename: String, filePath: String = #filePath) throws -> PatternSyntax {
-    let testsDir = URL(fileURLWithPath: filePath).deletingLastPathComponent()
-    let url = testsDir.appendingPathComponent("Fixtures").appendingPathComponent(filename)
-    guard FileManager.default.fileExists(atPath: url.path) else {
-      throw FixtureLoadError.fileNotFound("Fixture not found: \(url.path)")
+  /// Load a fixture file from the test bundle.
+  private func loadFixturePattern(_ filename: String) throws -> PatternSyntax {
+    let stem = (filename as NSString).deletingPathExtension
+    let ext = (filename as NSString).pathExtension
+    guard let url = Bundle(for: TestBundleAnchor.self).url(forResource: stem, withExtension: ext) else {
+      throw FixtureLoadError.fileNotFound("Fixture not found in test bundle: \(filename)")
     }
     let data = try Data(contentsOf: url)
     return try JSONDecoder().decode(PatternSyntax.self, from: data)

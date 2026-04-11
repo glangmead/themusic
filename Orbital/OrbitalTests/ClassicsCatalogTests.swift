@@ -215,12 +215,15 @@ struct ClassicsCatalogTests {
 
   @Test("All catalog_v2 works files decode without error")
   func allWorksFilesDecodeWithoutError() throws {
-    let resourcesURL = URL(filePath: #filePath)
-      .deletingLastPathComponent() // OrbitalTests/
-      .deletingLastPathComponent() // Orbital/
-      .appendingPathComponent("Resources")
-
-    let composersURL = resourcesURL.appendingPathComponent("catalog_v2/composers.json")
+    // Load from the host app bundle. catalog_v2 is added as a folder reference
+    // in the Orbital target's Resources build phase, so it preserves its
+    // composers.json + works/[slug].json layout inside the bundle.
+    guard let composersURL = Bundle.main.url(
+      forResource: "composers", withExtension: "json", subdirectory: "catalog_v2"
+    ) else {
+      Issue.record("composers.json not found in host app bundle under catalog_v2/")
+      return
+    }
     let composersData = try Data(contentsOf: composersURL)
     let composers = try JSONDecoder().decode([CatalogComposer].self, from: composersData)
     #expect(!composers.isEmpty, "composers.json is empty")
@@ -229,10 +232,9 @@ struct ClassicsCatalogTests {
     var failures: [String] = []
 
     for composer in composers {
-      let worksURL = resourcesURL
-        .appendingPathComponent("catalog_v2/works")
-        .appendingPathComponent("\(composer.slug).json")
-      guard FileManager.default.fileExists(atPath: worksURL.path) else { continue }
+      guard let worksURL = Bundle.main.url(
+        forResource: composer.slug, withExtension: "json", subdirectory: "catalog_v2/works"
+      ) else { continue }
 
       do {
         let data = try Data(contentsOf: worksURL)
@@ -246,7 +248,7 @@ struct ClassicsCatalogTests {
       }
     }
 
-    #expect(testedCount > 0, "No catalog_v2 works files found — check Resources path")
+    #expect(testedCount > 0, "No catalog_v2 works files found in app bundle")
     #expect(failures.isEmpty, "Catalog failures:\n\(failures.joined(separator: "\n"))")
   }
 }

@@ -82,24 +82,33 @@ func zeroCrossings(_ buffer: [CoreFloat]) -> Int {
   return count
 }
 
-/// Loads a PresetSyntax from a JSON file in the OrbitalTests/Fixtures directory.
-func loadPresetSyntax(_ filename: String, filePath: String = #filePath) throws -> PresetSyntax {
-  let testsDir = URL(fileURLWithPath: filePath).deletingLastPathComponent()
-  let url = testsDir.appendingPathComponent("Fixtures").appendingPathComponent(filename)
-  guard FileManager.default.fileExists(atPath: url.path) else {
-    throw PresetLoadError.fileNotFound("Fixture not found: \(url.path)")
+/// Anchor class used to resolve `Bundle(for:)` to the OrbitalTests bundle.
+/// The OrbitalTests target runs in the iOS App Sandbox (Designed for iPad on macOS),
+/// which denies reads outside the sandbox container — so source-tree fixture loading
+/// via `#filePath` does not work. Fixtures must be bundled into the test target
+/// (see Orbital.xcodeproj/project.pbxproj — synchronized folder includes
+/// OrbitalTests/Fixtures/*.json) and loaded via `Bundle(for:)`.
+final class TestBundleAnchor {}
+
+private func testBundleURL(filename: String) throws -> URL {
+  let stem = (filename as NSString).deletingPathExtension
+  let ext = (filename as NSString).pathExtension
+  guard let url = Bundle(for: TestBundleAnchor.self).url(forResource: stem, withExtension: ext) else {
+    throw PresetLoadError.fileNotFound("Fixture not found in test bundle: \(filename)")
   }
+  return url
+}
+
+/// Loads a PresetSyntax from a JSON fixture bundled with the test target.
+func loadPresetSyntax(_ filename: String) throws -> PresetSyntax {
+  let url = try testBundleURL(filename: filename)
   let data = try Data(contentsOf: url)
   return try JSONDecoder().decode(PresetSyntax.self, from: data)
 }
 
-/// Load a frozen preset fixture from OrbitalTests/Fixtures/.
-func loadFixturePreset(_ filename: String, filePath: String = #filePath) throws -> PresetSyntax {
-  let testsDir = URL(fileURLWithPath: filePath).deletingLastPathComponent()
-  let url = testsDir.appendingPathComponent("Fixtures").appendingPathComponent(filename)
-  guard FileManager.default.fileExists(atPath: url.path) else {
-    throw PresetLoadError.fileNotFound("Fixture not found: \(url.path)")
-  }
+/// Load a frozen preset fixture bundled with the test target.
+func loadFixturePreset(_ filename: String) throws -> PresetSyntax {
+  let url = try testBundleURL(filename: filename)
   let data = try Data(contentsOf: url)
   return try JSONDecoder().decode(PresetSyntax.self, from: data)
 }

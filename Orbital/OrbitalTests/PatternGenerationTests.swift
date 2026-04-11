@@ -464,11 +464,14 @@ struct MusicPatternEventGenerationTests {
 @Suite("Multi-track MIDI Parsing", .serialized)
 struct MultiTrackMidiParsingTests {
 
-  /// Locate the BachInvention1.mid file in the OrbitalTests/Fixtures directory.
-  private func bachURL(filePath: String = #filePath) throws -> URL {
-    let testsDir = URL(fileURLWithPath: filePath).deletingLastPathComponent()
-    let url = testsDir.appendingPathComponent("Fixtures").appendingPathComponent("BachInvention1.mid")
-    guard FileManager.default.fileExists(atPath: url.path) else {
+  /// Locate the BachInvention1.mid file inside the host app bundle.
+  /// The OrbitalTests target runs in the iOS App Sandbox (Designed for iPad on macOS),
+  /// so reads from the source tree are denied. The fixture is bundled with the host app
+  /// under `patterns/midi/`, which is reachable via `Bundle.main`.
+  private func bachURL() throws -> URL {
+    guard let url = Bundle.main.url(
+      forResource: "BachInvention1", withExtension: "mid", subdirectory: "patterns/midi"
+    ) else {
       throw MidiTestError.fileNotFound
     }
     return url

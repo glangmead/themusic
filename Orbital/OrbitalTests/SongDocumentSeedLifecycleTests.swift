@@ -20,16 +20,12 @@ import Foundation
 @MainActor
 struct SongDocumentSeedLifecycleTests {
   private func loadFixturePattern(_ name: String) throws -> PatternSyntax {
-    let url = Bundle(for: BundleAnchor.self).url(forResource: name, withExtension: "json", subdirectory: "Fixtures")
-      ?? URL(fileURLWithPath: #filePath)
-        .deletingLastPathComponent()
-        .appending(path: "Fixtures")
-        .appending(path: "\(name).json")
+    guard let url = Bundle(for: TestBundleAnchor.self).url(forResource: name, withExtension: "json") else {
+      throw CocoaError(.fileNoSuchFile)
+    }
     let data = try Data(contentsOf: url)
     return try JSONDecoder().decode(PatternSyntax.self, from: data)
   }
-
-  private final class BundleAnchor {}
 
   /// Construct a fresh SongDocument bound to a tmp-dir TakesStore.
   private func makeDoc(pattern: PatternSyntax) -> (SongDocument, TakesStore) {
