@@ -66,12 +66,7 @@ struct MidiTracksSyntax: Codable {
 /// - `scoreTracks`: score-based absolute-beat sequencing
 /// - `generatorTracks`: high-level generator params compiled to scoreTracks at runtime
 ///
-/// `@unchecked Sendable`: PatternSyntax and its constituent *Syntax types are
-/// immutable Codable value types (all fields are `let`). They are safely
-/// shared across isolation domains (main actor UI → nonisolated compile).
-/// The underlying structs aren't marked Sendable individually to avoid a
-/// cascade through every syntax type; we assert the promise at this boundary.
-struct PatternSyntax: Codable, @unchecked Sendable {
+struct PatternSyntax: Codable, Sendable {
   let midiTracks: MidiTracksSyntax?
   let tableTracks: TablePatternSyntax?
   let scoreTracks: ScorePatternSyntax?
