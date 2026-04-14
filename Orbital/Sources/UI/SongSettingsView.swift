@@ -36,7 +36,7 @@ struct SongSettingsView: View {
           } label: {
             VStack(alignment: .leading, spacing: 4) {
               Text("Generator")
-              Text("\(gen.motion.displayName) · \(gen.scaleType.displayName) · \(gen.texture.displayName)")
+              Text("\(gen.motion.displayName) · \(gen.scaleType.displayName) · \(gen.chordType.displayName) · \(gen.oUCHMode.displayName)")
                 .font(.caption)
                 .foregroundStyle(.secondary)
             }

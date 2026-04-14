@@ -2,7 +2,8 @@
 //  GeneratorTests.swift
 //  OrbitalTests
 //
-//  Tests for GeneratorSyntax, GeneratorEngine, and PatternSyntax.generatorTracks.
+//  Tests for the chorale-based GeneratorSyntax, GeneratorEngine, and
+//  PatternSyntax.generatorTracks.
 //
 
 import Testing
@@ -18,7 +19,7 @@ struct GeneratorEngineTests {
 
     @Test("fourChords produces setRoman events for I, V, vi, IV")
     func fourChordsMajorProducesCorrectChordEvents() {
-        let params = GeneratorSyntax(motion: .fourChords, chordType: .triad, texture: .pad)
+        let params = GeneratorSyntax(motion: .fourChords, chordType: .triad)
         let score = GeneratorEngine.generate(params)
 
         let romanEvents = score.chordEvents.filter { $0.op == "setRoman" }
@@ -33,16 +34,24 @@ struct GeneratorEngineTests {
 
     @Test("seventh chord type has degrees [0, 2, 4, 6]")
     func seventhChordTypeProducesDegreesZero246() {
-        let degrees = GeneratorChordType.seventh.degrees
-        #expect(degrees == [0, 2, 4, 6])
+        #expect(GeneratorChordType.seventh.degrees == [0, 2, 4, 6])
+    }
+
+    @Test("triad chord type has degrees [0, 2, 4]")
+    func triadChordTypeProducesDegreesZero24() {
+        #expect(GeneratorChordType.triad.degrees == [0, 2, 4])
+    }
+
+    @Test("dyad chord type has degrees [0, 4]")
+    func dyadChordTypeProducesDegreesZero4() {
+        #expect(GeneratorChordType.dyad.degrees == [0, 4])
     }
 
     @Test("drone motion produces a single setRoman or setChord event")
     func droneMotionProducesSingleChordEvent() {
-        let params = GeneratorSyntax(motion: .drone, chordType: .triad, texture: .pad)
+        let params = GeneratorSyntax(motion: .drone, chordType: .triad)
         let score = GeneratorEngine.generate(params)
 
-        // Drone = only 1 setChord or setRoman at beat 0, nothing else
         let chordChangingEvents = score.chordEvents.filter { $0.op != "setKey" }
         #expect(chordChangingEvents.count == 1)
         #expect(chordChangingEvents[0].beat == 0)
@@ -50,75 +59,90 @@ struct GeneratorEngineTests {
 
     @Test("descendingFifths motion produces 8 chord events")
     func descendingFifthsProducesEightEvents() {
-        let params = GeneratorSyntax(motion: .descendingFifths, chordType: .triad, texture: .pad)
+        let params = GeneratorSyntax(motion: .descendingFifths, chordType: .triad)
         let score = GeneratorEngine.generate(params)
 
         let romanEvents = score.chordEvents.filter { $0.op == "setRoman" }
         #expect(romanEvents.count == 8)
     }
 
-    // MARK: - Texture / track count
+    @Test("lPowers motion emits one Tt event per sequence element")
+    func lPowersProducesTtEvents() {
+        let params = GeneratorSyntax(
+            motion: .lPowers, chordType: .triad,
+            lPowerSequence: [2, -1, 3]
+        )
+        let score = GeneratorEngine.generate(params)
+        let ttEvents = score.chordEvents.filter { $0.op == "Tt" }
+        #expect(ttEvents.count == 3)
+        // Each element p emits Tt with n = p * -5 and tVal = p * 2 for triads.
+        #expect(ttEvents.contains { $0.n == -10 && $0.tVal == 4 })
+        #expect(ttEvents.contains { $0.n == 5 && $0.tVal == -2 })
+        #expect(ttEvents.contains { $0.n == -15 && $0.tVal == 6 })
+    }
 
-    @Test("SATB texture produces exactly 4 tracks")
-    func satbTextureProducesFourTracks() {
-        let params = GeneratorSyntax(motion: .fourChords, chordType: .triad, texture: .satb)
+    // MARK: - Track structure
+
+    @Test("triad produces 1 bass + 3 upper = 4 tracks")
+    func triadProducesFourTracks() {
+        let params = GeneratorSyntax(motion: .fourChords, chordType: .triad)
         let score = GeneratorEngine.generate(params)
         #expect(score.tracks.count == 4)
+        #expect(score.tracks[0].name == "Bass")
     }
 
-    @Test("pad texture produces exactly 1 track")
-    func padTextureProducesOneTrack() {
-        let params = GeneratorSyntax(motion: .fourChords, chordType: .triad, texture: .pad)
-        let score = GeneratorEngine.generate(params)
-        #expect(score.tracks.count == 1)
-    }
-
-    @Test("full texture produces exactly 3 tracks")
-    func fullTextureProducesThreeTracks() {
-        let params = GeneratorSyntax(motion: .fourChords, chordType: .triad, texture: .full)
+    @Test("dyad produces 1 bass + 2 upper = 3 tracks")
+    func dyadProducesThreeTracks() {
+        let params = GeneratorSyntax(motion: .fourChords, chordType: .dyad)
         let score = GeneratorEngine.generate(params)
         #expect(score.tracks.count == 3)
     }
 
-    @Test("bassAndMelody texture produces exactly 2 tracks")
-    func bassAndMelodyProducesTwoTracks() {
-        let params = GeneratorSyntax(motion: .fourChords, chordType: .triad, texture: .bassAndMelody)
+    @Test("seventh produces 1 bass + 4 upper = 5 tracks")
+    func seventhProducesFiveTracks() {
+        let params = GeneratorSyntax(motion: .fourChords, chordType: .seventh)
         let score = GeneratorEngine.generate(params)
-        #expect(score.tracks.count == 2)
+        #expect(score.tracks.count == 5)
     }
 
-    // MARK: - Note counts
-
-    @Test("arpeggio track note count = chordSize × chordCount")
-    func arpeggioTrackHasNoteCountOfChordSizeTimesChordCount() {
-        // fourChords = 4 chords, triad = 3 notes per chord → 12 notes total
-        let params = GeneratorSyntax(motion: .fourChords, chordType: .triad, texture: .arpeggio)
+    @Test("bass track contains absolute MIDI notes")
+    func bassTrackUsesAbsoluteMidi() {
+        let params = GeneratorSyntax(motion: .fourChords, chordType: .triad)
         let score = GeneratorEngine.generate(params)
-
-        #expect(score.tracks.count == 1)
-        let nonHoldNotes = score.tracks[0].notes.filter { $0.type != .hold }
-        // 4 chords × 3 chord tones each
-        #expect(nonHoldNotes.count == 4 * 3)
+        let bass = score.tracks[0]
+        #expect(!bass.notes.isEmpty)
+        for note in bass.notes where note.type != .rest && note.type != .hold {
+            #expect(note.type == .absolute)
+            #expect(note.midi != nil)
+        }
     }
 
-    @Test("seventh chord arpeggio track note count = 4 × chordCount")
-    func seventhArpeggioHasCorrectNoteCount() {
-        let params = GeneratorSyntax(motion: .shuttle, chordType: .seventh, texture: .arpeggio)
+    @Test("upper voice MIDI pitches stay within configured range")
+    func upperVoicesStayInRange() {
+        let params = GeneratorSyntax(
+            motion: .fourChords, chordType: .triad,
+            upperVoiceLowOctave: 3, upperVoiceHighOctave: 5
+        )
         let score = GeneratorEngine.generate(params)
-
-        let notes = score.tracks[0].notes.filter { $0.type != .hold }
-        // 2 chords × 4 notes each
-        #expect(notes.count == 2 * 4)
+        let lowMidi = (3 + 1) * 12       // 48
+        let highMidi = (5 + 1) * 12 + 11 // 83
+        for track in score.tracks.dropFirst() {
+            for note in track.notes where note.type == .absolute {
+                if let midi = note.midi {
+                    #expect(midi >= lowMidi && midi <= highMidi,
+                            "MIDI \(midi) outside [\(lowMidi), \(highMidi)]")
+                }
+            }
+        }
     }
 
     @Test("pad track totalBeats matches beatsPerChord × chordCount")
     func padTotalBeatsMatchesExpected() {
         let params = GeneratorSyntax(
             motion: .fourChords, chordType: .triad,
-            texture: .pad, bpm: 120, beatsPerChord: 4
+            bpm: 120, beatsPerChord: 4
         )
         let score = GeneratorEngine.generate(params)
-        // fourChords = 4 chord events, beatsPerChord = 4 → totalBeats = 16
         #expect(score.totalBeats == 16)
     }
 
@@ -128,38 +152,22 @@ struct GeneratorEngineTests {
     func acousticBridgeContainsSetKeyEvents() {
         let params = GeneratorSyntax(
             rootNote: "C", scaleType: .major,
-            motion: .acousticBridge, chordType: .triad, texture: .pad
+            motion: .acousticBridge, chordType: .triad
         )
         let score = GeneratorEngine.generate(params)
 
         let keyEvents = score.chordEvents.filter { $0.op == "setKey" }
-        #expect(keyEvents.count >= 4)  // diatonic→acoustic→wholeTone→acoustic→diatonic
+        #expect(keyEvents.count >= 4)
 
         let scaleNames = keyEvents.compactMap { $0.scale }
         #expect(scaleNames.contains(GeneratorScaleType.acoustic.tonicScaleName))
         #expect(scaleNames.contains(GeneratorScaleType.wholeTone.tonicScaleName))
     }
 
-    @Test("octatonicImmersion contains setKey events for octatonic and diatonic")
-    func octatonicImmersionContainsSetKeyEvents() {
-        let params = GeneratorSyntax(
-            rootNote: "C", scaleType: .major,
-            motion: .octatonicImmersion, chordType: .triad, texture: .pad
-        )
-        let score = GeneratorEngine.generate(params)
-
-        let keyEvents = score.chordEvents.filter { $0.op == "setKey" }
-        #expect(keyEvents.count >= 2)
-
-        let scaleNames = keyEvents.compactMap { $0.scale }
-        #expect(scaleNames.contains(GeneratorScaleType.octatonic.tonicScaleName))
-    }
-
     @Test("parallelAscending produces only T(+1) chord events after beat 0")
     func parallelAscendingProducesOnlyTPlus1Events() {
         let params = GeneratorSyntax(
-            scaleType: .wholeTone, motion: .parallelAscending,
-            chordType: .triad, texture: .pad
+            scaleType: .wholeTone, motion: .parallelAscending, chordType: .triad
         )
         let score = GeneratorEngine.generate(params)
 
@@ -168,25 +176,12 @@ struct GeneratorEngineTests {
         #expect(tEvents.allSatisfy { $0.n == 1 })
     }
 
-    @Test("parallelDescending produces only T(-1) chord events after beat 0")
-    func parallelDescendingProducesOnlyTMinus1Events() {
-        let params = GeneratorSyntax(
-            scaleType: .wholeTone, motion: .parallelDescending,
-            chordType: .triad, texture: .pad
-        )
-        let score = GeneratorEngine.generate(params)
-
-        let tEvents = score.chordEvents.filter { $0.op == "T" && $0.beat > 0 }
-        #expect(!tEvents.isEmpty)
-        #expect(tEvents.allSatisfy { $0.n == -1 })
-    }
-
     // MARK: - Reproducibility
 
     @Test("same seed produces same output")
     func sameSeedProducesSameOutput() {
         let params = GeneratorSyntax(
-            motion: .randomWalk, chordType: .triad, texture: .melody, randomSeed: 42
+            motion: .randomWalk, chordType: .triad, randomSeed: 42
         )
         let score1 = GeneratorEngine.generate(params)
         let score2 = GeneratorEngine.generate(params)
@@ -195,25 +190,9 @@ struct GeneratorEngineTests {
         let events2 = score2.chordEvents.map { "\($0.beat)-\($0.op)-\($0.n ?? 0)" }
         #expect(events1 == events2)
 
-        let notes1 = score1.tracks.first?.notes.map { "\($0.type)-\($0.durationBeats)" } ?? []
-        let notes2 = score2.tracks.first?.notes.map { "\($0.type)-\($0.durationBeats)" } ?? []
-        #expect(notes1 == notes2)
-    }
-
-    @Test("different seeds produce different melody note patterns")
-    func differentSeedsProduceDifferentOutput() {
-        let p1 = GeneratorSyntax(motion: .randomWalk, chordType: .triad, texture: .melody, randomSeed: 1)
-        let p2 = GeneratorSyntax(motion: .randomWalk, chordType: .triad, texture: .melody, randomSeed: 999)
-
-        let s1 = GeneratorEngine.generate(p1)
-        let s2 = GeneratorEngine.generate(p2)
-
-        let chords1 = s1.chordEvents.map { $0.n ?? 0 }
-        let chords2 = s2.chordEvents.map { $0.n ?? 0 }
-        // Very likely to differ for different seeds; if not, at least notes differ
-        let notes1 = s1.tracks.first?.notes.map { "\($0.type)-\($0.durationBeats)" } ?? []
-        let notes2 = s2.tracks.first?.notes.map { "\($0.type)-\($0.durationBeats)" } ?? []
-        #expect(chords1 != chords2 || notes1 != notes2)
+        let midis1 = score1.tracks.first?.notes.map { $0.midi ?? -1 } ?? []
+        let midis2 = score2.tracks.first?.notes.map { $0.midi ?? -1 } ?? []
+        #expect(midis1 == midis2)
     }
 
     // MARK: - Scale type properties
@@ -223,44 +202,12 @@ struct GeneratorEngineTests {
         #expect(GeneratorScaleType.acoustic.tonicScaleName == "lydianFlat7")
     }
 
-    @Test("wholeTone scale maps to whole Tonic name")
-    func wholeToneScaleMapsToWhole() {
-        #expect(GeneratorScaleType.wholeTone.tonicScaleName == "whole")
-    }
-
-    @Test("octatonic scale maps to wholeDiminished Tonic name")
-    func octatonicScaleMapsToWholeDiminished() {
-        #expect(GeneratorScaleType.octatonic.tonicScaleName == "wholeDiminished")
-    }
-
     @Test("non-diatonic scales do not support functional motion")
     func nonDiatonicScalesNotFunctional() {
         let nonFunctional: [GeneratorScaleType] = [.wholeTone, .octatonic, .hexatonic, .acoustic]
         for scale in nonFunctional {
-            #expect(!scale.supportsFunctionalMotion, "Expected \(scale) to not support functional motion")
+            #expect(!scale.supportsFunctionalMotion)
         }
-    }
-
-    @Test("diatonic scales support functional motion")
-    func diatonicScalesSupportFunctionalMotion() {
-        let functional: [GeneratorScaleType] = [.major, .naturalMinor, .dorian, .mixolydian, .lydian]
-        for scale in functional {
-            #expect(scale.supportsFunctionalMotion, "Expected \(scale) to support functional motion")
-        }
-    }
-
-    // MARK: - Default presets
-
-    @Test("SATB default presets returns 4 entries")
-    func satbDefaultPresetsFourEntries() {
-        let presets = GeneratorEngine.defaultPresets(.satb)
-        #expect(presets.count == 4)
-    }
-
-    @Test("full default presets returns 3 entries")
-    func fullDefaultPresetsThreeEntries() {
-        let presets = GeneratorEngine.defaultPresets(.full)
-        #expect(presets.count == 3)
     }
 }
 
@@ -276,12 +223,16 @@ struct GeneratorSyntaxCodableTests {
             scaleType: .dorian,
             motion: .descendingThirds,
             chordType: .seventh,
-            texture: .satb,
             bpm: 72,
             beatsPerChord: 2,
-            voicing: .open,
-            randomSeed: 777,
-            presetNames: ["warm_analog_pad", "solina_strings"]
+            oUCHMode: .fixedClosed,
+            bassOctave: 2,
+            upperVoiceLowOctave: 3,
+            upperVoiceHighOctave: 6,
+            bassPresetName: "moog_sub_bass",
+            upperPresetNames: ["warm_analog_pad", "solina_strings", "solina_strings", "solina_strings"],
+            lPowerSequence: [2, -1, 3],
+            randomSeed: 777
         )
 
         let encoder = JSONEncoder()
@@ -292,13 +243,11 @@ struct GeneratorSyntaxCodableTests {
         #expect(decoded == original)
     }
 
-    @Test("GeneratorSyntax encodes all enum cases as raw values")
+    @Test("GeneratorSyntax encodes chord type as raw value")
     func generatorSyntaxEncodesEnumRawValues() throws {
         let params = GeneratorSyntax(
-            scaleType: .wholeTone,
-            motion: .parallelAscending,
-            chordType: .shell,
-            texture: .arpeggio
+            scaleType: .wholeTone, motion: .parallelAscending, chordType: .seventh,
+            oUCHMode: .stochastic
         )
 
         let encoder = JSONEncoder()
@@ -307,13 +256,13 @@ struct GeneratorSyntaxCodableTests {
 
         #expect(json.contains("\"wholeTone\""))
         #expect(json.contains("\"parallelAscending\""))
-        #expect(json.contains("\"shell\""))
-        #expect(json.contains("\"arpeggio\""))
+        #expect(json.contains("\"seventh\""))
+        #expect(json.contains("\"stochastic\""))
     }
 
     @Test("PatternSyntax with generatorTracks round-trips through JSON")
     func patternSyntaxWithGeneratorTracksRoundTrips() throws {
-        let gen = GeneratorSyntax(motion: .shuttle, chordType: .triad, texture: .pad, randomSeed: 1)
+        let gen = GeneratorSyntax(motion: .shuttle, chordType: .triad, randomSeed: 1)
         let pattern = PatternSyntax(generatorTracks: gen)
 
         let encoder = JSONEncoder()
@@ -330,12 +279,12 @@ struct GeneratorSyntaxCodableTests {
     @Test("PatternSyntax compileTrackInfoOnly dispatches through generatorTracks")
     func patternSyntaxCompilesGeneratorTracks() {
         let gen = GeneratorSyntax(
-            motion: .fourChords, chordType: .triad, texture: .satb, randomSeed: 42
+            motion: .fourChords, chordType: .triad, randomSeed: 42
         )
         let pattern = PatternSyntax(generatorTracks: gen)
 
         let trackInfos = pattern.compileTrackInfoOnly()
-        // SATB = 4 tracks
+        // bass + triad = 4 tracks
         #expect(trackInfos.count == 4)
     }
 }

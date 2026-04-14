@@ -2,16 +2,21 @@
 //  GeneratorSyntax.swift
 //  Orbital
 //
-//  Codable parameter types for the high-level pattern generator.
-//  GeneratorSyntax is the persisted format; GeneratorEngine.generate()
-//  converts it to a ScorePatternSyntax at compile time.
+//  Codable parameter types for the chorale-based high-level pattern generator.
+//  GeneratorSyntax is the persisted format; GeneratorEngine.generate() converts
+//  it to a ScorePatternSyntax at compile time.
+//
+//  The generator produces bass + N upper voices (N = 2, 3, or 4 depending on
+//  chord type). Voice leading follows Tymoczko's chorale model: chord progression
+//  as L-powers on the diatonic spiral, upper-voice spacing via the OUCH state
+//  machine (for triads) or solver-driven (for dyads and sevenths).
 //
 
 import Foundation
 
 // MARK: - GeneratorMotion
 
-/// The harmonic motion strategy: how the chord changes over time.
+/// The harmonic motion strategy: how the chord root changes over time.
 enum GeneratorMotion: String, Codable, CaseIterable {
   // Functional (diatonic, chord-level T/setRoman operations):
   case drone               // Static — no chord changes
@@ -36,6 +41,9 @@ enum GeneratorMotion: String, Codable, CaseIterable {
   case acousticBridge      // diatonic → acoustic → whole-tone → acoustic → diatonic
   case octatonicImmersion  // diatonic → octatonic → diatonic
 
+  // Spiral path: explicit sequence of L-powers (uses lPowerSequence).
+  case lPowers
+
   var displayName: String {
     switch self {
     case .drone:              return "Drone"
@@ -53,63 +61,39 @@ enum GeneratorMotion: String, Codable, CaseIterable {
     case .parallelRandom:     return "Parallel Random"
     case .acousticBridge:     return "Acoustic Bridge"
     case .octatonicImmersion: return "Octatonic Immersion"
+    case .lPowers:            return "L-Power Sequence"
     }
   }
 }
 
 // MARK: - GeneratorChordType
 
-/// The intervallic structure of the chord built on each scale degree.
+/// The size of the chord being voiced. Determines the total number of Presets:
+/// bass + chordSize upper voices = chordSize + 1 total.
 enum GeneratorChordType: String, Codable, CaseIterable {
-  case triad      // [0, 2, 4]        — three-note chord
-  case seventh    // [0, 2, 4, 6]     — four-note seventh chord
-  case ninth      // [0, 2, 4, 6, 8]  — five-note ninth chord
-  case shell      // [0, 2, 6]        — jazz shell: root + third + seventh
-  case powerChord // [0, 4]           — root + fifth, no third
+  case dyad     // [0, 4]       — bass + 2 upper voices
+  case triad    // [0, 2, 4]    — bass + 3 upper voices (OUCH applies)
+  case seventh  // [0, 2, 4, 6] — bass + 4 upper voices
 
   var displayName: String {
     switch self {
-    case .triad:      return "Triad"
-    case .seventh:    return "7th Chord"
-    case .ninth:      return "9th Chord"
-    case .shell:      return "Shell (root+3rd+7th)"
-    case .powerChord: return "Power Chord"
+    case .dyad:    return "Dyad (bass + 2)"
+    case .triad:   return "Triad (bass + 3)"
+    case .seventh: return "7th Chord (bass + 4)"
     }
   }
 
-  /// Scale degrees for the chord (relative to the chord root = degree 0).
+  /// Scale degrees for the chord, relative to the chord root.
   var degrees: [Int] {
     switch self {
-    case .triad:      return [0, 2, 4]
-    case .seventh:    return [0, 2, 4, 6]
-    case .ninth:      return [0, 2, 4, 6, 8]
-    case .shell:      return [0, 2, 6]
-    case .powerChord: return [0, 4]
+    case .dyad:    return [0, 4]
+    case .triad:   return [0, 2, 4]
+    case .seventh: return [0, 2, 4, 6]
     }
   }
-}
 
-// MARK: - GeneratorTexture
-
-/// The vertical/rhythmic texture of the output tracks.
-enum GeneratorTexture: String, Codable, CaseIterable {
-  case pad           // 1 track: all chord voices simultaneous (currentChord)
-  case arpeggio      // 1 track: chord tones in rising sequence
-  case melody        // 1 track: single melodic line through chord tones (seeded)
-  case satb          // 4 tracks: bass, tenor, alto, soprano — each one voice
-  case bassAndMelody // 2 tracks: bass + melody
-  case full          // 3 tracks: bass + pad + melody
-
-  var displayName: String {
-    switch self {
-    case .pad:           return "Pad (chord)"
-    case .arpeggio:      return "Arpeggio"
-    case .melody:        return "Melody"
-    case .satb:          return "SATB (4 voices)"
-    case .bassAndMelody: return "Bass + Melody"
-    case .full:          return "Full (bass+pad+melody)"
-    }
-  }
+  /// Number of upper-voice Presets (and therefore the chord-tone count).
+  var upperVoiceCount: Int { degrees.count }
 }
 
 // MARK: - GeneratorScaleType
@@ -184,44 +168,54 @@ enum GeneratorScaleType: String, Codable, CaseIterable {
 
 // MARK: - GeneratorSyntax
 
-/// Top-level Codable specification for the high-level pattern generator.
+/// Top-level Codable specification for the chorale-based generator.
 /// Persisted in the `generatorTracks` field of PatternSyntax.
-/// At compile time, GeneratorEngine.generate() converts this to a ScorePatternSyntax.
+/// At compile time, GeneratorEngine.generate() converts this to ScorePatternSyntax.
 struct GeneratorSyntax: Codable, Equatable {
-  let rootNote: String            // "C", "Bb", "F#", …
-  let scaleType: GeneratorScaleType
-  let motion: GeneratorMotion
-  let chordType: GeneratorChordType
-  let texture: GeneratorTexture
-  let bpm: Double
-  let beatsPerChord: Double       // rate knob: 1–16
-  let voicing: VoicingStyle?      // nil → engine picks sensible default per texture
-  let randomSeed: Int?            // nil → pick new seed at generation time
-  // Instrument preset filenames per logical role [pad/bass/melody/upperVoices…].
-  // nil → engine uses defaults per texture.
-  let presetNames: [String]?
+  var rootNote: String                 // "C", "Bb", "F#", …
+  var scaleType: GeneratorScaleType
+  var motion: GeneratorMotion
+  var chordType: GeneratorChordType
+  var bpm: Double
+  var beatsPerChord: Double            // rate knob: 1–16
+  var oUCHMode: OUCHSelector           // upper-voice spacing strategy (triads only)
+  var bassOctave: Int                  // bass preset's base octave
+  var upperVoiceLowOctave: Int         // lower bound for upper-voice MIDI range
+  var upperVoiceHighOctave: Int        // upper bound for upper-voice MIDI range
+  var bassPresetName: String?          // nil → default
+  var upperPresetNames: [String]?      // nil → defaults; count should match chord size
+  var lPowerSequence: [Int]?           // used when motion == .lPowers
+  var randomSeed: Int?                 // nil → pick new seed at generation time
 
   init(
     rootNote: String = "C",
     scaleType: GeneratorScaleType = .major,
     motion: GeneratorMotion = .fourChords,
     chordType: GeneratorChordType = .triad,
-    texture: GeneratorTexture = .pad,
     bpm: Double = 90,
     beatsPerChord: Double = 4,
-    voicing: VoicingStyle? = nil,
-    randomSeed: Int? = nil,
-    presetNames: [String]? = nil
+    oUCHMode: OUCHSelector = .stochastic,
+    bassOctave: Int = 2,
+    upperVoiceLowOctave: Int = 3,
+    upperVoiceHighOctave: Int = 5,
+    bassPresetName: String? = nil,
+    upperPresetNames: [String]? = nil,
+    lPowerSequence: [Int]? = nil,
+    randomSeed: Int? = nil
   ) {
     self.rootNote = rootNote
     self.scaleType = scaleType
     self.motion = motion
     self.chordType = chordType
-    self.texture = texture
     self.bpm = bpm
     self.beatsPerChord = beatsPerChord
-    self.voicing = voicing
+    self.oUCHMode = oUCHMode
+    self.bassOctave = bassOctave
+    self.upperVoiceLowOctave = upperVoiceLowOctave
+    self.upperVoiceHighOctave = upperVoiceHighOctave
+    self.bassPresetName = bassPresetName
+    self.upperPresetNames = upperPresetNames
+    self.lPowerSequence = lPowerSequence
     self.randomSeed = randomSeed
-    self.presetNames = presetNames
   }
 }

@@ -2,11 +2,17 @@
 //  GeneratorEngine.swift
 //  Orbital
 //
-//  Converts a GeneratorSyntax into a ScorePatternSyntax.
-//  This is a pure function: same params + same seed → same pattern.
+//  Converts a GeneratorSyntax into a ScorePatternSyntax using Tymoczko's
+//  chorale model: L-power progressions on the diatonic spiral, OUCH-driven
+//  upper-voice spacing, constraint-based voice-leading solver.
+//
+//  Output: ScorePatternSyntax with one bass track + N upper-voice tracks
+//  (N = 2/3/4 matching chord type). Each note in each track is an absolute
+//  MIDI pitch — the voicer has already committed to concrete voicings.
 //
 
 import Foundation
+import Tonic
 
 // MARK: - Seeded RNG
 
@@ -44,11 +50,16 @@ struct GeneratorEngine {
     var rng = SeededRNG(seed: seed)
 
     let chordDegrees = params.chordType.degrees
-    let chordCount = motionChordCount(params.motion, scaleSize: scaleSize(params.scaleType))
+    let chordCount = motionChordCount(params.motion, params: params)
     let totalBeats = params.beatsPerChord * Double(chordCount)
 
-    let chordEvents = buildChordEvents(params, chordDegrees: chordDegrees, chordCount: chordCount, rng: &rng)
-    let tracks = buildTracks(params, chordCount: chordCount, totalBeats: totalBeats, rng: &rng)
+    let chordEvents = buildChordEvents(
+      params, chordDegrees: chordDegrees, chordCount: chordCount, rng: &rng
+    )
+    let tracks = buildTracks(
+      params, chordEvents: chordEvents, chordCount: chordCount,
+      totalBeats: totalBeats, rng: &rng
+    )
 
     return ScorePatternSyntax(
       bpm: params.bpm,
@@ -77,43 +88,38 @@ struct GeneratorEngine {
 
     switch params.motion {
 
-    // --- Functional diatonic progressions (use setRoman for labeled chords) ---
-
     case .drone:
-      break // Only the opening setChord needed
+      break
 
     case .shuttle:
       let romans = isMinorScale(params.scaleType) ? ["i", "V"] : ["I", "V"]
-      appendRomanSequence(romans, bpc: bpc, startBeat: 0, to: &events, openingDegrees: chordDegrees)
+      appendRomanSequence(romans, bpc: bpc, startBeat: 0, to: &events)
 
     case .plagal:
       let romans = isMinorScale(params.scaleType) ? ["i", "iv"] : ["I", "IV"]
-      appendRomanSequence(romans, bpc: bpc, startBeat: 0, to: &events, openingDegrees: chordDegrees)
+      appendRomanSequence(romans, bpc: bpc, startBeat: 0, to: &events)
 
     case .fourChords:
       let romans = isMinorScale(params.scaleType) ? ["i", "VII", "III", "VII"] : ["I", "V", "vi", "IV"]
-      appendRomanSequence(romans, bpc: bpc, startBeat: 0, to: &events, openingDegrees: chordDegrees)
+      appendRomanSequence(romans, bpc: bpc, startBeat: 0, to: &events)
 
     case .oneLoop:
       let romans = isMinorScale(params.scaleType) ? ["i", "VII", "iv"] : ["I", "V", "IV"]
-      appendRomanSequence(romans, bpc: bpc, startBeat: 0, to: &events, openingDegrees: chordDegrees)
+      appendRomanSequence(romans, bpc: bpc, startBeat: 0, to: &events)
 
     case .twoLoop:
-      // Uses bVII and bVI which parseRomanNumeral already handles (confirmed in guitar_rift.json)
       let romans = isMinorScale(params.scaleType) ? ["i", "VII", "VI", "iv"] : ["I", "bVII", "bVI", "IV"]
-      appendRomanSequence(romans, bpc: bpc, startBeat: 0, to: &events, openingDegrees: chordDegrees)
+      appendRomanSequence(romans, bpc: bpc, startBeat: 0, to: &events)
 
     case .descendingThirds:
       let romans = isMinorScale(params.scaleType) ? ["i", "VI", "iv", "ii"] : ["I", "vi", "IV", "ii"]
-      appendRomanSequence(romans, bpc: bpc, startBeat: 0, to: &events, openingDegrees: chordDegrees)
+      appendRomanSequence(romans, bpc: bpc, startBeat: 0, to: &events)
 
     case .descendingFifths:
       let romans = isMinorScale(params.scaleType)
         ? ["i", "iv", "VII", "III", "VI", "ii", "V", "i"]
         : ["I", "IV", "vii", "iii", "vi", "ii", "V", "I"]
-      appendRomanSequence(romans, bpc: bpc, startBeat: 0, to: &events, openingDegrees: chordDegrees)
-
-    // --- Stochastic ---
+      appendRomanSequence(romans, bpc: bpc, startBeat: 0, to: &events)
 
     case .randomWalk:
       var beat = bpc
@@ -129,8 +135,6 @@ struct GeneratorEngine {
         events.append(ChordEventSyntax(beat: beat, op: "T", n: -1))
         beat += bpc
       }
-
-    // --- Parallel motion within scale (Debussy) ---
 
     case .parallelAscending:
       var beat = bpc
@@ -154,11 +158,7 @@ struct GeneratorEngine {
         beat += bpc
       }
 
-    // --- Macro-level scale navigation (Debussy) ---
-
     case .acousticBridge:
-      // Structure: diatonic(4) → acoustic(4) → whole-tone(4) → acoustic(4) → diatonic(4)
-      // totalBeats = bpc × 20, chordCount = 20
       let diatonicKey = params.rootNote
       let diatonicScale = params.scaleType.tonicScaleName
       let acousticScale = GeneratorScaleType.acoustic.tonicScaleName
@@ -168,206 +168,186 @@ struct GeneratorEngine {
       appendKeyShift(at: bpc * 8, root: diatonicKey, scale: wholeToneScale, to: &events)
       appendKeyShift(at: bpc * 12, root: diatonicKey, scale: acousticScale, to: &events)
       appendKeyShift(at: bpc * 16, root: diatonicKey, scale: diatonicScale, to: &events)
-      // Add ascending T steps within each section for motion
       for i in 1..<chordCount {
         events.append(ChordEventSyntax(beat: bpc * Double(i), op: "T", n: 1))
       }
 
     case .octatonicImmersion:
-      // Structure: diatonic(4) → octatonic(8) → diatonic(4) = 16 chords
       let diatonicKey = params.rootNote
       let diatonicScale = params.scaleType.tonicScaleName
       let octatonicScale = GeneratorScaleType.octatonic.tonicScaleName
 
       appendKeyShift(at: bpc * 4, root: diatonicKey, scale: octatonicScale, to: &events)
       appendKeyShift(at: bpc * 12, root: diatonicKey, scale: diatonicScale, to: &events)
-      // T steps within each section
       for i in 1..<chordCount {
         events.append(ChordEventSyntax(beat: bpc * Double(i), op: "T", n: 1))
       }
+
+    case .lPowers:
+      // Each element of the sequence is one composite L^n applied at one beat position.
+      // L^n = T(n·bigT)·t(n·littleT) since T and t commute and act additively.
+      let (bigT, littleT) = lFormula(chordSize: chordDegrees.count)
+      let sequence = params.lPowerSequence ?? [1]
+      var beat = bpc
+      for power in sequence where power != 0 {
+        events.append(ChordEventSyntax(beat: beat, op: "Tt", n: power * bigT, tVal: power * littleT))
+        beat += bpc
+      }
     }
 
-    // Sort by beat so HarmonyTimeline.state(at:) works correctly
     return events.sorted { $0.beat < $1.beat }
   }
 
   // MARK: - Tracks
 
+  // swiftlint:disable:next function_body_length
   private static func buildTracks(
     _ params: GeneratorSyntax,
+    chordEvents: [ChordEventSyntax],
     chordCount: Int,
     totalBeats: Double,
     rng: inout SeededRNG
   ) -> [ScoreTrackSyntax] {
     let bpc = params.beatsPerChord
     let chordSize = params.chordType.degrees.count
-    let presets = resolvedPresets(params)
-    let voicing = params.voicing ?? defaultVoicing(params.texture)
 
-    switch params.texture {
-
-    case .pad:
-      return [padTrack(name: "Pad", preset: presets[0], bpc: bpc,
-                       chordCount: chordCount, octave: 3, voicing: voicing)]
-
-    case .arpeggio:
-      return [arpeggioTrack(name: "Arpeggio", preset: presets[0], bpc: bpc,
-                            chordCount: chordCount, chordSize: chordSize, octave: 4)]
-
-    case .melody:
-      return [melodyTrack(name: "Melody", preset: presets[0], bpc: bpc,
-                          chordCount: chordCount, chordSize: chordSize, octave: 4, rng: &rng)]
-
-    case .satb:
-      return satbTracks(presets: presets, bpc: bpc, chordCount: chordCount,
-                        chordSize: chordSize, rng: &rng)
-
-    case .bassAndMelody:
-      return [
-        bassTrack(preset: presets[0], bpc: bpc, chordCount: chordCount, octave: 2),
-        melodyTrack(name: "Melody", preset: presets[1], bpc: bpc,
-                    chordCount: chordCount, chordSize: chordSize, octave: 4, rng: &rng)
-      ]
-
-    case .full:
-      return [
-        bassTrack(preset: presets[0], bpc: bpc, chordCount: chordCount, octave: 2),
-        padTrack(name: "Pad", preset: presets[1], bpc: bpc,
-                 chordCount: chordCount, octave: 3, voicing: voicing),
-        melodyTrack(name: "Melody", preset: presets[2], bpc: bpc,
-                    chordCount: chordCount, chordSize: chordSize, octave: 5, rng: &rng)
-      ]
-    }
-  }
-
-  // MARK: - Track builders
-
-  // swiftlint:disable:next function_parameter_count
-  private static func padTrack(
-    name: String, preset: String, bpc: Double,
-    chordCount: Int, octave: Int, voicing: VoicingStyle
-  ) -> ScoreTrackSyntax {
-    let notes = (0..<chordCount).map { _ in
-      ScoreNoteSyntax(type: .currentChord, durationBeats: bpc)
-    }
-    return ScoreTrackSyntax(
-      name: name, presetFilename: preset, numVoices: 8,
-      octave: octave, voicing: voicing, sustainFraction: 0.95, notes: notes
+    // Build harmony timeline to query (key, chord) at each beat.
+    let initialKey = resolveKey(root: params.rootNote, scale: params.scaleType.tonicScaleName)
+    let timelineEvents = chordEvents.map { HarmonyTimeline.Event(beat: $0.beat, op: $0) }
+    let timeline = HarmonyTimeline(
+      totalBeats: totalBeats,
+      initialKey: initialKey,
+      events: timelineEvents
     )
-  }
 
-  // swiftlint:disable:next function_parameter_count
-  private static func arpeggioTrack(
-    name: String, preset: String, bpc: Double,
-    chordCount: Int, chordSize: Int, octave: Int
-  ) -> ScoreTrackSyntax {
-    let noteDuration = bpc / Double(chordSize)
-    var notes: [ScoreNoteSyntax] = []
-    for _ in 0..<chordCount {
-      for idx in 0..<chordSize {
-        notes.append(ScoreNoteSyntax(type: .chordTone, durationBeats: noteDuration, index: idx))
+    let lowMidi = (params.upperVoiceLowOctave + 1) * 12
+    let highMidi = (params.upperVoiceHighOctave + 1) * 12 + 11
+    var constraints = VoicingConstraints.default
+    constraints.upperVoiceRange = lowMidi...highMidi
+    let voicer = ChoraleVoicer(constraints: constraints)
+
+    var ouchState = OUCHState(current: initialOUCH(params.oUCHMode))
+    var previousUpper: [Int] = []
+    var previousBass: Int = 0
+
+    var bassMidis: [Int] = []
+    var upperMidis: [[Int]] = Array(repeating: [], count: chordSize)
+
+    for i in 0..<chordCount {
+      let beat = bpc * Double(i)
+      let (key, chord) = timeline.state(at: beat, loop: false)
+      let hierarchy = PitchHierarchy(key: key, chord: chord)
+
+      let bassMidi = computeBassMidi(hierarchy: hierarchy, octave: params.bassOctave)
+      let chordPCs = chordPitchClasses(hierarchy: hierarchy)
+      let scaleRootPC = Int(key.root.canonicalNote.noteNumber) % 12
+
+      let target: OUCHConfiguration? = (chordSize == 3)
+        ? ouchState.step(using: &rng, selector: params.oUCHMode)
+        : nil
+
+      let newUpper = voicer.voice(
+        previousUpper: previousUpper,
+        previousBass: previousBass,
+        nextChordPCs: chordPCs,
+        nextBass: bassMidi,
+        upperVoiceCount: chordSize,
+        targetConfiguration: target,
+        scaleRootPC: scaleRootPC
+      )
+
+      bassMidis.append(bassMidi)
+      for (idx, pitch) in newUpper.enumerated() where idx < chordSize {
+        upperMidis[idx].append(pitch)
       }
+      previousUpper = newUpper
+      previousBass = bassMidi
     }
-    return ScoreTrackSyntax(
-      name: name, presetFilename: preset, numVoices: 4,
-      octave: octave, voicing: .closed, sustainFraction: 0.7, notes: notes
-    )
-  }
 
-  // swiftlint:disable:next function_parameter_count
-  private static func melodyTrack(
-    name: String, preset: String, bpc: Double,
-    chordCount: Int, chordSize: Int, octave: Int, rng: inout SeededRNG
-  ) -> ScoreTrackSyntax {
-    var notes: [ScoreNoteSyntax] = []
-    for _ in 0..<chordCount {
-      // Simple melodic cell: top → mid → bottom → mid, with hold on beat 3
-      let top = chordSize - 1
-      let mid = chordSize / 2
-      notes.append(ScoreNoteSyntax(type: .chordTone, durationBeats: bpc * 0.25, index: top))
-      notes.append(ScoreNoteSyntax(type: .chordTone, durationBeats: bpc * 0.25, index: mid))
-      notes.append(ScoreNoteSyntax(type: .chordTone, durationBeats: bpc * 0.25, index: 0))
-      // Seeded variation: sometimes hold, sometimes restart from top
-      if rng.nextBool() {
-        notes.append(ScoreNoteSyntax(type: .hold, durationBeats: bpc * 0.25))
-      } else {
-        notes.append(ScoreNoteSyntax(type: .chordTone, durationBeats: bpc * 0.25, index: mid))
+    // Assemble tracks.
+    let bassPreset = params.bassPresetName ?? defaultBassPreset()
+    let upperPresets = resolvedUpperPresets(params, chordSize: chordSize)
+    let upperNames = upperVoiceNames(chordSize)
+
+    var tracks: [ScoreTrackSyntax] = []
+    let bassNotes = bassMidis.map {
+      ScoreNoteSyntax(type: .absolute, durationBeats: bpc, midi: $0)
+    }
+    tracks.append(ScoreTrackSyntax(
+      name: "Bass",
+      presetFilename: bassPreset,
+      numVoices: 2,
+      octave: params.bassOctave,
+      voicing: .closed,
+      sustainFraction: 0.9,
+      notes: bassNotes
+    ))
+
+    for (i, name) in upperNames.enumerated() {
+      let preset = i < upperPresets.count ? upperPresets[i] : defaultUpperPreset()
+      let notes = upperMidis[i].map {
+        ScoreNoteSyntax(type: .absolute, durationBeats: bpc, midi: $0)
       }
+      tracks.append(ScoreTrackSyntax(
+        name: name,
+        presetFilename: preset,
+        numVoices: 2,
+        octave: params.upperVoiceLowOctave,
+        voicing: .closed,
+        sustainFraction: 0.85,
+        notes: notes
+      ))
     }
-    return ScoreTrackSyntax(
-      name: name, presetFilename: preset, numVoices: 4,
-      octave: octave, voicing: .closed, sustainFraction: 0.8, notes: notes
-    )
-  }
-
-  private static func bassTrack(
-    preset: String, bpc: Double, chordCount: Int, octave: Int
-  ) -> ScoreTrackSyntax {
-    let notes = (0..<chordCount).map { _ in
-      ScoreNoteSyntax(type: .chordTone, durationBeats: bpc, index: 0)
-    }
-    return ScoreTrackSyntax(
-      name: "Bass", presetFilename: preset, numVoices: 2,
-      octave: octave, voicing: .closed, sustainFraction: 0.85, notes: notes
-    )
-  }
-
-  private static func satbTracks(
-    presets: [String], bpc: Double, chordCount: Int,
-    chordSize: Int, rng: inout SeededRNG
-  ) -> [ScoreTrackSyntax] {
-    // For triads (size 3): Bass=0, Tenor=2 (fifth), Alto=1 (third), Soprano=0+octave
-    // For 7th chords (size 4): Bass=0, Tenor=1, Alto=2, Soprano=3
-    // Bass
-    let bassNotes = (0..<chordCount).map { _ in
-      ScoreNoteSyntax(type: .chordTone, durationBeats: bpc, index: 0)
-    }
-    // Tenor: fifth for triads, second note for 7th chords
-    let tenorIdx = chordSize == 3 ? 2 : 1
-    let tenorNotes = (0..<chordCount).map { _ in
-      ScoreNoteSyntax(type: .chordTone, durationBeats: bpc, index: tenorIdx)
-    }
-    // Alto: third for triads, second-to-top for larger chords
-    let altoIdx = chordSize >= 4 ? 2 : 1
-    let altoNotes = (0..<chordCount).map { _ in
-      ScoreNoteSyntax(type: .chordTone, durationBeats: bpc, index: altoIdx)
-    }
-    // Soprano: top voice, with seeded melodic variation
-    var sopranoNotes: [ScoreNoteSyntax] = []
-    let topIdx = chordSize - 1
-    for _ in 0..<chordCount {
-      sopranoNotes.append(ScoreNoteSyntax(type: .chordTone, durationBeats: bpc * 0.5, index: topIdx))
-      if rng.nextBool() {
-        sopranoNotes.append(ScoreNoteSyntax(type: .hold, durationBeats: bpc * 0.5))
-      } else {
-        sopranoNotes.append(ScoreNoteSyntax(type: .chordTone, durationBeats: bpc * 0.5, index: topIdx - 1 < 0 ? 0 : topIdx - 1))
-      }
-    }
-
-    let bassPreset  = presets.count > 0 ? presets[0] : defaultPresets(.satb)[0]
-    let tenorPreset = presets.count > 1 ? presets[1] : defaultPresets(.satb)[1]
-    let altoPreset  = presets.count > 2 ? presets[2] : defaultPresets(.satb)[2]
-    let sopPreset   = presets.count > 3 ? presets[3] : defaultPresets(.satb)[3]
-
-    return [
-      ScoreTrackSyntax(name: "Bass", presetFilename: bassPreset, numVoices: 2, octave: 2, voicing: .closed, sustainFraction: 0.9, notes: bassNotes),
-      ScoreTrackSyntax(name: "Tenor", presetFilename: tenorPreset, numVoices: 2, octave: 3, voicing: .closed, sustainFraction: 0.85, notes: tenorNotes),
-      ScoreTrackSyntax(name: "Alto", presetFilename: altoPreset, numVoices: 2, octave: 4, voicing: .closed, sustainFraction: 0.85, notes: altoNotes),
-      ScoreTrackSyntax(name: "Soprano", presetFilename: sopPreset, numVoices: 2, octave: 5, voicing: .closed, sustainFraction: 0.8, notes: sopranoNotes)
-    ]
+    return tracks
   }
 
   // MARK: - Helpers
 
-  /// Append a sequence of setRoman chord events, replacing the initial setChord.
+  /// Compute pitch classes directly from chord degrees + scale — octave-independent,
+  /// so immune to degree-drift under repeated L-power application.
+  private static func chordPitchClasses(hierarchy: PitchHierarchy) -> [Int] {
+    let intervals = hierarchy.key.scale.intervals
+    let scaleSize = intervals.count
+    guard scaleSize > 0 else { return [] }
+    let rootPC = Int(hierarchy.key.root.canonicalNote.noteNumber) % 12
+    return hierarchy.chord.degrees.map { degree in
+      let normDegree = ((degree % scaleSize) + scaleSize) % scaleSize
+      let semitones = intervals[normDegree].semitones
+      return ((rootPC + semitones) % 12 + 12) % 12
+    }
+  }
+
+  /// Compute bass MIDI from the voiced bass degree + octave, normalizing the
+  /// degree mod scaleSize so drift doesn't push resolution out of MIDI range.
+  private static func computeBassMidi(hierarchy: PitchHierarchy, octave: Int) -> Int {
+    guard let bassDegree = hierarchy.chord.voicedDegrees.first else {
+      return (octave + 1) * 12
+    }
+    let intervals = hierarchy.key.scale.intervals
+    let scaleSize = intervals.count
+    guard scaleSize > 0 else { return (octave + 1) * 12 }
+    let rootPC = Int(hierarchy.key.root.canonicalNote.noteNumber) % 12
+    let normDegree = ((bassDegree % scaleSize) + scaleSize) % scaleSize
+    let semitones = intervals[normDegree].semitones
+    let midi = rootPC + (octave + 1) * 12 + semitones
+    return max(0, min(127, midi))
+  }
+
+  private static func resolveKey(root: String, scale: String) -> Key {
+    let noteClass = NoteGeneratorSyntax.resolveNoteClass(root)
+    let scaleValue = NoteGeneratorSyntax.resolveScale(scale)
+    return Key(root: noteClass, scale: scaleValue)
+  }
+
   private static func appendRomanSequence(
     _ romans: [String], bpc: Double, startBeat: Double,
-    to events: inout [ChordEventSyntax], openingDegrees: [Int]
+    to events: inout [ChordEventSyntax]
   ) {
-    // Replace the setChord at beat 0 with a setRoman for the first chord
     events.removeAll { $0.beat == 0 }
     for (i, roman) in romans.enumerated() {
-      events.append(ChordEventSyntax(beat: startBeat + bpc * Double(i), op: "setRoman", roman: roman))
+      events.append(ChordEventSyntax(
+        beat: startBeat + bpc * Double(i), op: "setRoman", roman: roman
+      ))
     }
   }
 
@@ -375,19 +355,45 @@ struct GeneratorEngine {
     events.append(ChordEventSyntax(beat: beat, op: "setKey", root: root, scale: scale))
   }
 
-  /// How many distinct chord events does this motion produce?
-  private static func motionChordCount(_ motion: GeneratorMotion, scaleSize: Int) -> Int {
+  /// The (T, t) components of the basic voice leading L for a given chord size.
+  private static func lFormula(chordSize: Int) -> (Int, Int) {
+    switch chordSize {
+    case 2: return (-4, 1)
+    case 3: return (-5, 2)
+    case 4: return (-2, 1)
+    default: return (1, 0)
+    }
+  }
+
+  private static func initialOUCH(_ selector: OUCHSelector) -> OUCHConfiguration {
+    switch selector {
+    case .fixedClosed:   return .closed
+    case .fixedOpen:     return .open
+    case .fixedHalfOpen: return .halfOpen
+    case .fixedUnusual:  return .unusualDoubleInterval
+    case .stochastic:    return .closed
+    }
+  }
+
+  /// How many chord events this motion produces.
+  private static func motionChordCount(_ motion: GeneratorMotion, params: GeneratorSyntax) -> Int {
     switch motion {
-    case .drone:              return 4   // 4 repeats of the same chord
+    case .drone:              return 4
     case .shuttle, .plagal:   return 2
     case .fourChords, .twoLoop, .descendingThirds: return 4
     case .oneLoop:            return 3
     case .descendingFifths:   return 8
     case .randomWalk:         return 8
-    case .shepardDescent:     return scaleSize  // one full scale rotation
-    case .parallelAscending, .parallelDescending, .parallelRandom: return scaleSize
-    case .acousticBridge:     return 20  // 4 sections × 5 chords each
-    case .octatonicImmersion: return 16  // diatonic(4) + octatonic(8) + diatonic(4)
+    case .shepardDescent:     return scaleSize(params.scaleType)
+    case .parallelAscending, .parallelDescending, .parallelRandom:
+      return scaleSize(params.scaleType)
+    case .acousticBridge:     return 20
+    case .octatonicImmersion: return 16
+    case .lPowers:
+      // One chord per non-zero element, plus the opening chord.
+      let seq = params.lPowerSequence ?? [1]
+      let nonZero = seq.filter { $0 != 0 }.count
+      return max(1, nonZero + 1)
     }
   }
 
@@ -408,27 +414,20 @@ struct GeneratorEngine {
     }
   }
 
-  private static func defaultVoicing(_ texture: GeneratorTexture) -> VoicingStyle {
-    switch texture {
-    case .pad, .full:    return .open
-    case .satb:          return .closed
-    default:             return .closed
+  private static func upperVoiceNames(_ chordSize: Int) -> [String] {
+    switch chordSize {
+    case 2: return ["Tenor", "Soprano"]
+    case 3: return ["Tenor", "Alto", "Soprano"]
+    case 4: return ["Tenor", "Alto", "Mezzo", "Soprano"]
+    default: return (0..<chordSize).map { "Voice \($0)" }
     }
   }
 
-  static func defaultPresets(_ texture: GeneratorTexture) -> [String] {
-    switch texture {
-    case .pad:           return ["warm_analog_pad"]
-    case .arpeggio:      return ["organ_baroque_positive"]
-    case .melody:        return ["organ_baroque_positive"]
-    case .bassAndMelody: return ["moog_sub_bass", "organ_baroque_positive"]
-    case .full:          return ["moog_sub_bass", "warm_analog_pad", "organ_baroque_positive"]
-    case .satb:          return ["moog_sub_bass", "solina_strings", "solina_strings", "solina_strings"]
-    }
-  }
+  static func defaultBassPreset() -> String { "moog_sub_bass" }
+  static func defaultUpperPreset() -> String { "solina_strings" }
 
-  private static func resolvedPresets(_ params: GeneratorSyntax) -> [String] {
-    if let names = params.presetNames, !names.isEmpty { return names }
-    return defaultPresets(params.texture)
+  private static func resolvedUpperPresets(_ params: GeneratorSyntax, chordSize: Int) -> [String] {
+    if let names = params.upperPresetNames, !names.isEmpty { return names }
+    return Array(repeating: defaultUpperPreset(), count: chordSize)
   }
 }

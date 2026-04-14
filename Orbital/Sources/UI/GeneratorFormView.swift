@@ -2,8 +2,9 @@
 //  GeneratorFormView.swift
 //  Orbital
 //
-//  High-level generator controls that produce a ScorePatternSyntax on the fly.
-//  Changes take effect immediately (hot-reload via SongDocument.replaceGeneratorPattern).
+//  Chorale-based generator controls. Produces a ScorePatternSyntax via
+//  GeneratorEngine.generate(); changes take effect immediately via
+//  SongDocument.replaceGeneratorPattern.
 //
 
 import SwiftUI
@@ -17,10 +18,13 @@ struct GeneratorFormView: View {
   @State private var scaleType: GeneratorScaleType
   @State private var motion: GeneratorMotion
   @State private var chordType: GeneratorChordType
-  @State private var texture: GeneratorTexture
   @State private var bpm: Double
   @State private var beatsPerChord: Double
-  @State private var voicing: VoicingStyle?
+  @State private var oUCHMode: OUCHSelector
+  @State private var bassOctave: Int
+  @State private var upperVoiceLowOctave: Int
+  @State private var upperVoiceHighOctave: Int
+  @State private var lPowerSequenceText: String
   @State private var randomSeed: Int
   @State private var seedLocked: Bool
 
@@ -31,19 +35,24 @@ struct GeneratorFormView: View {
     _scaleType = State(initialValue: params.scaleType)
     _motion = State(initialValue: params.motion)
     _chordType = State(initialValue: params.chordType)
-    _texture = State(initialValue: params.texture)
     _bpm = State(initialValue: params.bpm)
     _beatsPerChord = State(initialValue: params.beatsPerChord)
-    _voicing = State(initialValue: params.voicing)
+    _oUCHMode = State(initialValue: params.oUCHMode)
+    _bassOctave = State(initialValue: params.bassOctave)
+    _upperVoiceLowOctave = State(initialValue: params.upperVoiceLowOctave)
+    _upperVoiceHighOctave = State(initialValue: params.upperVoiceHighOctave)
+    let sequence = params.lPowerSequence ?? []
+    _lPowerSequenceText = State(initialValue: sequence.map(String.init).joined(separator: ","))
     _randomSeed = State(initialValue: params.randomSeed ?? Int.random(in: 0...Int.max))
     _seedLocked = State(initialValue: params.randomSeed != nil)
   }
 
   var body: some View {
     Form {
-      keyAndScaleSection
-      harmonicMotionSection
-      textureSection
+      tonalitySection
+      progressionSection
+      voicingSection
+      rangeSection
       timingSection
       randomizationSection
     }
@@ -67,16 +76,19 @@ struct GeneratorFormView: View {
     .onChange(of: scaleType) { _, _ in applyIfLive() }
     .onChange(of: motion) { _, _ in applyIfLive() }
     .onChange(of: chordType) { _, _ in applyIfLive() }
-    .onChange(of: texture) { _, _ in applyIfLive() }
     .onChange(of: bpm) { _, _ in applyIfLive() }
     .onChange(of: beatsPerChord) { _, _ in applyIfLive() }
-    .onChange(of: voicing) { _, _ in applyIfLive() }
+    .onChange(of: oUCHMode) { _, _ in applyIfLive() }
+    .onChange(of: bassOctave) { _, _ in applyIfLive() }
+    .onChange(of: upperVoiceLowOctave) { _, _ in applyIfLive() }
+    .onChange(of: upperVoiceHighOctave) { _, _ in applyIfLive() }
+    .onChange(of: lPowerSequenceText) { _, _ in applyIfLive() }
   }
 
   // MARK: - Sections
 
-  private var keyAndScaleSection: some View {
-    Section("Key & Scale") {
+  private var tonalitySection: some View {
+    Section("Tonality") {
       Picker("Root", selection: $rootNote) {
         ForEach(Self.rootNotes, id: \.self) { note in
           Text(note).tag(note)
@@ -90,8 +102,13 @@ struct GeneratorFormView: View {
     }
   }
 
-  private var harmonicMotionSection: some View {
-    Section("Harmonic Motion") {
+  private var progressionSection: some View {
+    Section("Progression") {
+      Picker("Chord Type", selection: $chordType) {
+        ForEach(GeneratorChordType.allCases, id: \.self) { ct in
+          Text(ct.displayName).tag(ct)
+        }
+      }
       Picker("Motion", selection: $motion) {
         ForEach(GeneratorMotion.allCases, id: \.self) { m in
           Text(m.displayName).tag(m)
@@ -102,10 +119,9 @@ struct GeneratorFormView: View {
           .font(.caption)
           .foregroundStyle(.orange)
       }
-      Picker("Chord Type", selection: $chordType) {
-        ForEach(GeneratorChordType.allCases, id: \.self) { ct in
-          Text(ct.displayName).tag(ct)
-        }
+      if motion == .lPowers {
+        TextField("L-power sequence (comma-separated)", text: $lPowerSequenceText)
+          .textFieldStyle(.roundedBorder)
       }
       VStack(alignment: .leading, spacing: 2) {
         Text("Beats per Chord: \(Int(beatsPerChord))")
@@ -116,19 +132,26 @@ struct GeneratorFormView: View {
     }
   }
 
-  private var textureSection: some View {
-    Section("Texture & Voicing") {
-      Picker("Texture", selection: $texture) {
-        ForEach(GeneratorTexture.allCases, id: \.self) { t in
-          Text(t.displayName).tag(t)
+  private var voicingSection: some View {
+    Section("Voicing") {
+      Picker("Upper-voice spacing", selection: $oUCHMode) {
+        ForEach(OUCHSelector.allCases, id: \.self) { mode in
+          Text(mode.displayName).tag(mode)
         }
       }
-      Picker("Voicing", selection: $voicing) {
-        Text("Auto").tag(nil as VoicingStyle?)
-        ForEach(VoicingStyle.allCases, id: \.self) { v in
-          Text(voicingDisplayName(v)).tag(Optional(v))
-        }
+      if chordType != .triad && oUCHMode != .stochastic {
+        Text("OUCH spacing only applies to triads. Dyads and sevenths use the solver directly.")
+          .font(.caption)
+          .foregroundStyle(.secondary)
       }
+    }
+  }
+
+  private var rangeSection: some View {
+    Section("Voice Range") {
+      Stepper("Bass octave: \(bassOctave)", value: $bassOctave, in: 0...4)
+      Stepper("Upper range low: \(upperVoiceLowOctave)", value: $upperVoiceLowOctave, in: 2...5)
+      Stepper("Upper range high: \(upperVoiceHighOctave)", value: $upperVoiceHighOctave, in: 3...7)
     }
   }
 
@@ -162,16 +185,27 @@ struct GeneratorFormView: View {
 
   // MARK: - Apply
 
+  private func parseLPowerSequence() -> [Int]? {
+    let trimmed = lPowerSequenceText.trimmingCharacters(in: .whitespaces)
+    if trimmed.isEmpty { return nil }
+    let parts = trimmed.split(separator: ",").map { $0.trimmingCharacters(in: .whitespaces) }
+    let values = parts.compactMap { Int($0) }
+    return values.isEmpty ? nil : values
+  }
+
   private func currentParams() -> GeneratorSyntax {
     GeneratorSyntax(
       rootNote: rootNote,
       scaleType: scaleType,
       motion: motion,
       chordType: chordType,
-      texture: texture,
       bpm: bpm,
       beatsPerChord: beatsPerChord,
-      voicing: voicing,
+      oUCHMode: oUCHMode,
+      bassOctave: bassOctave,
+      upperVoiceLowOctave: upperVoiceLowOctave,
+      upperVoiceHighOctave: upperVoiceHighOctave,
+      lPowerSequence: parseLPowerSequence(),
       randomSeed: seedLocked ? randomSeed : nil
     )
   }
@@ -180,9 +214,12 @@ struct GeneratorFormView: View {
     playbackState.replaceGeneratorPattern(currentParams())
   }
 
+  /// Called from onChange handlers. Always propagates the form state into
+  /// SongDocument so the NEXT play() picks it up. If playback is live, also
+  /// restart so the edit takes effect immediately.
   private func applyIfLive() {
+    apply()
     if playbackState.isPlaying {
-      apply()
       playbackState.restart()
     }
   }
@@ -196,17 +233,6 @@ struct GeneratorFormView: View {
       return true
     default:
       return false
-    }
-  }
-
-  private func voicingDisplayName(_ v: VoicingStyle) -> String {
-    switch v {
-    case .closed:    return "Closed"
-    case .open:      return "Open"
-    case .dropTwo:   return "Drop-2"
-    case .spread:    return "Spread"
-    case .shell:     return "Shell"
-    case .fifthsOnly: return "Fifths Only"
     }
   }
 }

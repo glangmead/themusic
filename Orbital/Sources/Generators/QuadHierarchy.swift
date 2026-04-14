@@ -57,6 +57,29 @@ struct ChordInScale {
   mutating func t(_ n: Int) {
     inversion += n
   }
+
+  /// Apply the Tymoczko basic voice leading L to the nth power.
+  /// L is the composition T·t that moves exactly one voice by one scale step,
+  /// tracing the diatonic spiral for an n-note chord.
+  ///   Dyad   (|degrees|=2): L = T(-4)t(1)
+  ///   Triad  (|degrees|=3): L = T(-5)t(2)
+  ///   Seventh(|degrees|=4): L = T(-2)t(1)
+  /// For other sizes, falls back to T(1) — still a valid-but-noncanonical step.
+  mutating func applyLPower(_ power: Int) {
+    let (bigT, littleT): (Int, Int)
+    switch degrees.count {
+    case 2: (bigT, littleT) = (-4, 1)
+    case 3: (bigT, littleT) = (-5, 2)
+    case 4: (bigT, littleT) = (-2, 1)
+    default: (bigT, littleT) = (1, 0)
+    }
+    let steps = abs(power)
+    let sign = power >= 0 ? 1 : -1
+    for _ in 0..<steps {
+      T(sign * bigT)
+      t(sign * littleT)
+    }
+  }
 }
 
 // MARK: Melody note as a query against the hierarchy
