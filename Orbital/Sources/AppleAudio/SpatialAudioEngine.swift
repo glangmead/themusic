@@ -192,9 +192,14 @@ class SpatialAudioEngine: @unchecked Sendable {
 
       // envNode.listenerVectorOrientation = AVAudio3DVectorOrientation(forward: AVAudio3DVector(x: 0.0, y: -1.0, z: 1.0), up: AVAudio3DVector(x: 0.0, y: 0.0, z: 1.0))
 
-      envNode.outputVolume = staticBaseGain()
+      // Start silent; the gain pump (started at the end of this method)
+      // will ramp envNode.outputVolume to its correct value on its first
+      // tick, honoring any active duck. Writing staticBaseGain() here would
+      // cause a jump from a ducked 0 up to 1 and back, producing a click
+      // at the moment the engine restarts mid-duck.
+      envNode.outputVolume = 0
     } else {
-      audioEngine.mainMixerNode.outputVolume = staticBaseGain()
+      audioEngine.mainMixerNode.outputVolume = 0
     }
 
     // Ensure the tail (envNode/mainMixer → [limiter?] → output) is wired with

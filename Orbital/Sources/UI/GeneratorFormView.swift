@@ -13,6 +13,7 @@ import SwiftUI
 
 struct GeneratorFormView: View {
   @Environment(SongDocument.self) private var playbackState
+  @Environment(SongLibrary.self) private var library
 
   @State private var rootNote: String
   @State private var scaleType: GeneratorScaleType
@@ -28,6 +29,12 @@ struct GeneratorFormView: View {
   @State private var randomSeed: Int
   @State private var seedLocked: Bool
   @State private var melody: GeneratorMelody
+
+  /// Debounced restart. Slider drags fire onChange 50+ times per second; we
+  /// don't want each tick to spawn its own stop/play cycle. Each new tick
+  /// cancels the pending task and schedules a fresh delay, so dragging
+  /// collapses to a single restart after the user stops moving.
+  @State private var pendingRestart: Task<Void, Never>?
 
   private static let rootNotes = ["C", "C#", "Db", "D", "Eb", "E", "F", "F#", "Gb", "G", "Ab", "A", "Bb", "B"]
 
@@ -63,7 +70,10 @@ struct GeneratorFormView: View {
     .toolbar {
       ToolbarItemGroup {
         Button {
-          playbackState.togglePlayback()
+          // Route through the library so the playback accessory bar's
+          // Play/Pause/Stop buttons (which target library.currentPlaybackState)
+          // act on this document.
+          library.play(document: playbackState)
         } label: {
           Image(systemName: playbackState.isPlaying && !playbackState.isPaused ? "pause.fill" : "play.fill")
         }
@@ -224,7 +234,23 @@ struct GeneratorFormView: View {
   private func applyIfLive() {
     apply()
     if playbackState.isPlaying {
-      playbackState.restart()
+      pendingRestart?.cancel()
+      pendingRestart = Task { @MainActor in
+        try? await Task.sleep(for: .milliseconds(250))
+        if Task.isCancelled { return }
+        // Duck the master bus to 0 and give the gain pump time to apply it
+        // (25 ms tick + ~15 ms AVAudioEnvironmentNode internal ramp) before
+        // restart() hard-stops and restarts the engine. Hold long enough
+        // to cover the full stop + graph rebuild + start sequence — if the
+        // duck expires mid-rebuild the pump writes full gain back to envNode
+        // before the new engine has produced its first silent buffer, which
+        // clicks on engine.start(). 1.2 s hold + 0.4 s fade is safe for the
+        // generator pattern rebuild path.
+        playbackState.engine?.duck(hold: 1.2, total: 1.6)
+        try? await Task.sleep(for: .milliseconds(80))
+        if Task.isCancelled { return }
+        playbackState.restart()
+      }
     }
   }
 
