@@ -390,7 +390,7 @@ func makeRandomPadPreset(gmProgram: Int? = nil, characteristicDuration: CoreFloa
   let roseAmp: CoreFloat =
     constraints.forbidsSpatialMotion
       ? 0
-      : FloatSampler(min: 0.5, max: 5.0, dist: .exponential).next()!
+      : FloatSampler(min: 4, max: 8, dist: .exponential).next()!
   let rose = RoseSyntax(
     amp: roseAmp,
     leafFactor: CoreFloat(leafFactorPick),

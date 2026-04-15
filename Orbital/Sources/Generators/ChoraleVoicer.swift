@@ -252,12 +252,20 @@ struct ChoraleVoicer {
   // MARK: - Cost
 
   private func motionCost(previous: [Int], next: [Int]) -> Double {
+    let center = (constraints.upperVoiceRange.lowerBound + constraints.upperVoiceRange.upperBound) / 2
+    // Quadratic pull toward range center keeps the chord from drifting endlessly
+    // upward (or downward) under repeated T or TT shifts. Small drifts are nearly
+    // free; large drifts get expensive enough that the voicer prefers to wrap
+    // a voice down an octave instead of marching past the range boundary.
+    let centroid = next.reduce(0, +) / next.count
+    let drift = centroid - center
+    let centroidPenalty = Double(drift * drift) * 0.5
+
     guard previous.count == next.count else {
       // First-chord initialization: pick smallest span from the range center.
-      let center = (constraints.upperVoiceRange.lowerBound + constraints.upperVoiceRange.upperBound) / 2
-      return Double(next.map { abs($0 - center) }.reduce(0, +))
+      return Double(next.map { abs($0 - center) }.reduce(0, +)) + centroidPenalty
     }
-    var cost = 0.0
+    var cost = centroidPenalty
     for (pv, nv) in zip(previous, next) {
       let leap = abs(nv - pv)
       cost += Double(leap)

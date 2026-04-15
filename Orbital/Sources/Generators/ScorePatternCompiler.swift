@@ -48,7 +48,7 @@ enum ScorePatternCompiler {
         var spatialPresets: [SpatialPreset] = []
 
         for (i, trackSyntax) in score.tracks.enumerated() {
-            let presetSpec = resolvePresetSpec(filename: trackSyntax.presetFilename, resourceBaseURL: resourceBaseURL)
+            let presetSpec = resolvePresetSpec(filename: trackSyntax.presetFilename, gmProgram: trackSyntax.gmProgram, resourceBaseURL: resourceBaseURL)
             let voices = trackSyntax.numVoices ?? 12
             let sp = try await SpatialPreset(
                 presetSpec: presetSpec,
@@ -100,7 +100,7 @@ enum ScorePatternCompiler {
         resourceBaseURL: URL? = nil
     ) -> [TrackInfo] {
         score.tracks.enumerated().map { (i, trackSyntax) in
-            let presetSpec = resolvePresetSpec(filename: trackSyntax.presetFilename, resourceBaseURL: resourceBaseURL)
+            let presetSpec = resolvePresetSpec(filename: trackSyntax.presetFilename, gmProgram: trackSyntax.gmProgram, resourceBaseURL: resourceBaseURL)
             return TrackInfo(id: i, patternName: trackSyntax.name, presetSpec: presetSpec)
         }
     }

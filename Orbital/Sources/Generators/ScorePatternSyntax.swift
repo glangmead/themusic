@@ -188,6 +188,12 @@ struct ScoreTrackSyntax: Codable {
     /// Sustain seconds = durationBeats * (60/bpm) * sustainFraction.
     let sustainFraction: Double?
 
+    /// GM program (0–127) for random-pad preset generation. When presetFilename
+    /// is nil or "randomPad", this picks the GMPadProfile (e.g. 32–39 = bass,
+    /// 40–47 = strings) which carries hard timbral constraints like noDetune
+    /// and subOctaveSine for the bass family.
+    let gmProgram: Int?
+
     /// The ordered sequence of notes for this track.
     /// Total durationBeats across all notes should equal totalBeats for clean looping.
     let notes: [ScoreNoteSyntax]
@@ -199,6 +205,7 @@ struct ScoreTrackSyntax: Codable {
         octave: Int,
         voicing: VoicingStyle? = nil,
         sustainFraction: Double? = nil,
+        gmProgram: Int? = nil,
         notes: [ScoreNoteSyntax]
     ) {
         self.name = name
@@ -207,6 +214,7 @@ struct ScoreTrackSyntax: Codable {
         self.octave = octave
         self.voicing = voicing
         self.sustainFraction = sustainFraction
+        self.gmProgram = gmProgram
         self.notes = notes
     }
 }

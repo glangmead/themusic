@@ -183,14 +183,21 @@ struct GeneratorEngine {
         events.append(ChordEventSyntax(beat: bpc * Double(i), op: "T", n: 1))
       }
 
-    case .lPowers:
-      // Each element of the sequence is one composite L^n applied at one beat position.
-      // L^n = T(n·bigT)·t(n·littleT) since T and t commute and act additively.
-      let (bigT, littleT) = lFormula(chordSize: chordDegrees.count)
-      let sequence = params.lPowerSequence ?? [1]
+    case .tPowers:
+      // Each element is one T(n) — n scale steps, applied cumulatively.
+      let sequence = params.tPowerSequence ?? [1]
       var beat = bpc
       for power in sequence where power != 0 {
-        events.append(ChordEventSyntax(beat: beat, op: "Tt", n: power * bigT, tVal: power * littleT))
+        events.append(ChordEventSyntax(beat: beat, op: "T", n: power))
+        beat += bpc
+      }
+
+    case .ttPowers:
+      // Each element is one TT(n) — n semitones, applied cumulatively.
+      let sequence = params.ttPowerSequence ?? [2]
+      var beat = bpc
+      for power in sequence where power != 0 {
+        events.append(ChordEventSyntax(beat: beat, op: "TT", n: power))
         beat += bpc
       }
     }
@@ -226,7 +233,7 @@ struct GeneratorEngine {
     constraints.upperVoiceRange = lowMidi...highMidi
     let voicer = ChoraleVoicer(constraints: constraints)
 
-    var ouchState = OUCHState(current: initialOUCH(params.oUCHMode))
+    var ouchState = OUCHState(current: .closed)
     var previousUpper: [Int] = []
     var previousBass: Int = 0
 
@@ -242,9 +249,7 @@ struct GeneratorEngine {
       let chordPCs = chordPitchClasses(hierarchy: hierarchy)
       let scaleRootPC = Int(key.root.canonicalNote.noteNumber) % 12
 
-      let target: OUCHConfiguration? = (chordSize == 3)
-        ? ouchState.step(using: &rng, selector: params.oUCHMode)
-        : nil
+      let target: OUCHConfiguration? = (chordSize == 3) ? ouchState.step(using: &rng) : nil
 
       let newUpper = voicer.voice(
         previousUpper: previousUpper,
@@ -264,9 +269,9 @@ struct GeneratorEngine {
       previousBass = bassMidi
     }
 
-    // Assemble tracks.
-    let bassPreset = params.bassPresetName ?? defaultBassPreset()
-    let upperPresets = resolvedUpperPresets(params, chordSize: chordSize)
+    // Assemble tracks. nil presetFilename → random pad with GM-driven constraints.
+    let bassPreset = params.bassPresetName              // nil → random pad
+    let upperPresets = params.upperPresetNames          // nil → random pads
     let upperNames = upperVoiceNames(chordSize)
 
     var tracks: [ScoreTrackSyntax] = []
@@ -280,11 +285,12 @@ struct GeneratorEngine {
       octave: params.bassOctave,
       voicing: .closed,
       sustainFraction: 0.9,
+      gmProgram: bassGmProgram,                          // 33 = electric bass
       notes: bassNotes
     ))
 
     for (i, name) in upperNames.enumerated() {
-      let preset = i < upperPresets.count ? upperPresets[i] : defaultUpperPreset()
+      let preset = (upperPresets != nil && i < upperPresets!.count) ? upperPresets![i] : nil
       let notes = upperMidis[i].map {
         ScoreNoteSyntax(type: .absolute, durationBeats: bpc, midi: $0)
       }
@@ -295,32 +301,46 @@ struct GeneratorEngine {
         octave: params.upperVoiceLowOctave,
         voicing: .closed,
         sustainFraction: 0.85,
+        gmProgram: upperVoiceGmProgram,                  // 89 = warm pad
         notes: notes
       ))
     }
     return tracks
   }
 
+  // GM program defaults: bass family (32–39) carries noDetune/subOctaveSine
+  // constraints; synth pad family (88–95) gets slow attacks and soft filters.
+  private static let bassGmProgram = 33                  // Electric Bass (finger)
+  private static let upperVoiceGmProgram = 89            // Warm Pad
+
   // MARK: - Helpers
 
-  /// Compute pitch classes directly from chord degrees + scale — octave-independent,
-  /// so immune to degree-drift under repeated L-power application.
+  /// Compute pitch classes directly from chord degrees + scale + chromatic
+  /// perturbations. Octave-independent and immune to degree drift.
   private static func chordPitchClasses(hierarchy: PitchHierarchy) -> [Int] {
     let intervals = hierarchy.key.scale.intervals
     let scaleSize = intervals.count
     guard scaleSize > 0 else { return [] }
     let rootPC = Int(hierarchy.key.root.canonicalNote.noteNumber) % 12
-    return hierarchy.chord.degrees.map { degree in
+    let perturbs = hierarchy.chord.perturbations
+    return hierarchy.chord.degrees.enumerated().map { idx, degree in
       let normDegree = ((degree % scaleSize) + scaleSize) % scaleSize
       let semitones = intervals[normDegree].semitones
-      return ((rootPC + semitones) % 12 + 12) % 12
+      var pc = rootPC + semitones
+      if let perturbs, idx < perturbs.count, case .chromatic(let delta) = perturbs[idx] {
+        pc += delta
+      }
+      return ((pc % 12) + 12) % 12
     }
   }
 
-  /// Compute bass MIDI from the voiced bass degree + octave, normalizing the
-  /// degree mod scaleSize so drift doesn't push resolution out of MIDI range.
+  /// Compute bass MIDI from the chord's abstract root (degrees[0]) and the
+  /// configured bass octave. We compute the *pitch class* — accounting for the
+  /// scale interval and any chromatic perturbation — then place it inside the
+  /// bass octave. Without the mod-12 step, repeated TT(n) shifts would push
+  /// the bass MIDI value upward indefinitely.
   private static func computeBassMidi(hierarchy: PitchHierarchy, octave: Int) -> Int {
-    guard let bassDegree = hierarchy.chord.voicedDegrees.first else {
+    guard let bassDegree = hierarchy.chord.degrees.first else {
       return (octave + 1) * 12
     }
     let intervals = hierarchy.key.scale.intervals
@@ -329,7 +349,13 @@ struct GeneratorEngine {
     let rootPC = Int(hierarchy.key.root.canonicalNote.noteNumber) % 12
     let normDegree = ((bassDegree % scaleSize) + scaleSize) % scaleSize
     let semitones = intervals[normDegree].semitones
-    let midi = rootPC + (octave + 1) * 12 + semitones
+    var pc = rootPC + semitones
+    if let perturbs = hierarchy.chord.perturbations, let first = perturbs.first,
+       case .chromatic(let delta) = first {
+      pc += delta
+    }
+    pc = ((pc % 12) + 12) % 12
+    let midi = (octave + 1) * 12 + pc
     return max(0, min(127, midi))
   }
 
@@ -355,26 +381,6 @@ struct GeneratorEngine {
     events.append(ChordEventSyntax(beat: beat, op: "setKey", root: root, scale: scale))
   }
 
-  /// The (T, t) components of the basic voice leading L for a given chord size.
-  private static func lFormula(chordSize: Int) -> (Int, Int) {
-    switch chordSize {
-    case 2: return (-4, 1)
-    case 3: return (-5, 2)
-    case 4: return (-2, 1)
-    default: return (1, 0)
-    }
-  }
-
-  private static func initialOUCH(_ selector: OUCHSelector) -> OUCHConfiguration {
-    switch selector {
-    case .fixedClosed:   return .closed
-    case .fixedOpen:     return .open
-    case .fixedHalfOpen: return .halfOpen
-    case .fixedUnusual:  return .unusualDoubleInterval
-    case .stochastic:    return .closed
-    }
-  }
-
   /// How many chord events this motion produces.
   private static func motionChordCount(_ motion: GeneratorMotion, params: GeneratorSyntax) -> Int {
     switch motion {
@@ -389,9 +395,12 @@ struct GeneratorEngine {
       return scaleSize(params.scaleType)
     case .acousticBridge:     return 20
     case .octatonicImmersion: return 16
-    case .lPowers:
-      // One chord per non-zero element, plus the opening chord.
-      let seq = params.lPowerSequence ?? [1]
+    case .tPowers:
+      let seq = params.tPowerSequence ?? [1]
+      let nonZero = seq.filter { $0 != 0 }.count
+      return max(1, nonZero + 1)
+    case .ttPowers:
+      let seq = params.ttPowerSequence ?? [2]
       let nonZero = seq.filter { $0 != 0 }.count
       return max(1, nonZero + 1)
     }
@@ -423,11 +432,4 @@ struct GeneratorEngine {
     }
   }
 
-  static func defaultBassPreset() -> String { "moog_sub_bass" }
-  static func defaultUpperPreset() -> String { "solina_strings" }
-
-  private static func resolvedUpperPresets(_ params: GeneratorSyntax, chordSize: Int) -> [String] {
-    if let names = params.upperPresetNames, !names.isEmpty { return names }
-    return Array(repeating: defaultUpperPreset(), count: chordSize)
-  }
 }

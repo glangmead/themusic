@@ -41,8 +41,10 @@ enum GeneratorMotion: String, Codable, CaseIterable {
   case acousticBridge      // diatonic → acoustic → whole-tone → acoustic → diatonic
   case octatonicImmersion  // diatonic → octatonic → diatonic
 
-  // Spiral path: explicit sequence of L-powers (uses lPowerSequence).
-  case lPowers
+  // Explicit sequence of T-powers (scale-step transpositions; uses tPowerSequence).
+  case tPowers
+  // Explicit sequence of TT-powers (chromatic-semitone transpositions; uses ttPowerSequence).
+  case ttPowers
 
   var displayName: String {
     switch self {
@@ -61,7 +63,8 @@ enum GeneratorMotion: String, Codable, CaseIterable {
     case .parallelRandom:     return "Parallel Random"
     case .acousticBridge:     return "Acoustic Bridge"
     case .octatonicImmersion: return "Octatonic Immersion"
-    case .lPowers:            return "L-Power Sequence"
+    case .tPowers:            return "T-Power Sequence (scale steps)"
+    case .ttPowers:           return "TT-Power Sequence (semitones)"
     }
   }
 }
@@ -178,13 +181,13 @@ struct GeneratorSyntax: Codable, Equatable {
   var chordType: GeneratorChordType
   var bpm: Double
   var beatsPerChord: Double            // rate knob: 1–16
-  var oUCHMode: OUCHSelector           // upper-voice spacing strategy (triads only)
   var bassOctave: Int                  // bass preset's base octave
   var upperVoiceLowOctave: Int         // lower bound for upper-voice MIDI range
   var upperVoiceHighOctave: Int        // upper bound for upper-voice MIDI range
-  var bassPresetName: String?          // nil → default
-  var upperPresetNames: [String]?      // nil → defaults; count should match chord size
-  var lPowerSequence: [Int]?           // used when motion == .lPowers
+  var bassPresetName: String?          // nil → random pad
+  var upperPresetNames: [String]?      // nil → random pads; count should match chord size
+  var tPowerSequence: [Int]?           // used when motion == .tPowers
+  var ttPowerSequence: [Int]?          // used when motion == .ttPowers
   var randomSeed: Int?                 // nil → pick new seed at generation time
 
   init(
@@ -192,15 +195,15 @@ struct GeneratorSyntax: Codable, Equatable {
     scaleType: GeneratorScaleType = .major,
     motion: GeneratorMotion = .fourChords,
     chordType: GeneratorChordType = .triad,
-    bpm: Double = 90,
+    bpm: Double = 10,
     beatsPerChord: Double = 4,
-    oUCHMode: OUCHSelector = .stochastic,
     bassOctave: Int = 2,
     upperVoiceLowOctave: Int = 3,
     upperVoiceHighOctave: Int = 5,
     bassPresetName: String? = nil,
     upperPresetNames: [String]? = nil,
-    lPowerSequence: [Int]? = nil,
+    tPowerSequence: [Int]? = nil,
+    ttPowerSequence: [Int]? = nil,
     randomSeed: Int? = nil
   ) {
     self.rootNote = rootNote
@@ -209,13 +212,13 @@ struct GeneratorSyntax: Codable, Equatable {
     self.chordType = chordType
     self.bpm = bpm
     self.beatsPerChord = beatsPerChord
-    self.oUCHMode = oUCHMode
     self.bassOctave = bassOctave
     self.upperVoiceLowOctave = upperVoiceLowOctave
     self.upperVoiceHighOctave = upperVoiceHighOctave
     self.bassPresetName = bassPresetName
     self.upperPresetNames = upperPresetNames
-    self.lPowerSequence = lPowerSequence
+    self.tPowerSequence = tPowerSequence
+    self.ttPowerSequence = ttPowerSequence
     self.randomSeed = randomSeed
   }
 }

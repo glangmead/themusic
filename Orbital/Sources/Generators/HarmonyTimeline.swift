@@ -86,6 +86,9 @@ struct HarmonyTimeline {
         case "T":
             if let n = event.n { chord.T(n) }
 
+        case "TT":
+            if let n = event.n { chord.TT(n) }
+
         case "t":
             if let n = event.n { chord.t(n) }
 

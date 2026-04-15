@@ -20,11 +20,11 @@ struct GeneratorFormView: View {
   @State private var chordType: GeneratorChordType
   @State private var bpm: Double
   @State private var beatsPerChord: Double
-  @State private var oUCHMode: OUCHSelector
   @State private var bassOctave: Int
   @State private var upperVoiceLowOctave: Int
   @State private var upperVoiceHighOctave: Int
-  @State private var lPowerSequenceText: String
+  @State private var tPowerSequenceText: String
+  @State private var ttPowerSequenceText: String
   @State private var randomSeed: Int
   @State private var seedLocked: Bool
 
@@ -37,12 +37,13 @@ struct GeneratorFormView: View {
     _chordType = State(initialValue: params.chordType)
     _bpm = State(initialValue: params.bpm)
     _beatsPerChord = State(initialValue: params.beatsPerChord)
-    _oUCHMode = State(initialValue: params.oUCHMode)
     _bassOctave = State(initialValue: params.bassOctave)
     _upperVoiceLowOctave = State(initialValue: params.upperVoiceLowOctave)
     _upperVoiceHighOctave = State(initialValue: params.upperVoiceHighOctave)
-    let sequence = params.lPowerSequence ?? []
-    _lPowerSequenceText = State(initialValue: sequence.map(String.init).joined(separator: ","))
+    let tSequence = params.tPowerSequence ?? []
+    _tPowerSequenceText = State(initialValue: tSequence.map(String.init).joined(separator: ","))
+    let ttSequence = params.ttPowerSequence ?? []
+    _ttPowerSequenceText = State(initialValue: ttSequence.map(String.init).joined(separator: ","))
     _randomSeed = State(initialValue: params.randomSeed ?? Int.random(in: 0...Int.max))
     _seedLocked = State(initialValue: params.randomSeed != nil)
   }
@@ -51,7 +52,6 @@ struct GeneratorFormView: View {
     Form {
       tonalitySection
       progressionSection
-      voicingSection
       rangeSection
       timingSection
       randomizationSection
@@ -78,11 +78,11 @@ struct GeneratorFormView: View {
     .onChange(of: chordType) { _, _ in applyIfLive() }
     .onChange(of: bpm) { _, _ in applyIfLive() }
     .onChange(of: beatsPerChord) { _, _ in applyIfLive() }
-    .onChange(of: oUCHMode) { _, _ in applyIfLive() }
     .onChange(of: bassOctave) { _, _ in applyIfLive() }
     .onChange(of: upperVoiceLowOctave) { _, _ in applyIfLive() }
     .onChange(of: upperVoiceHighOctave) { _, _ in applyIfLive() }
-    .onChange(of: lPowerSequenceText) { _, _ in applyIfLive() }
+    .onChange(of: tPowerSequenceText) { _, _ in applyIfLive() }
+    .onChange(of: ttPowerSequenceText) { _, _ in applyIfLive() }
   }
 
   // MARK: - Sections
@@ -119,8 +119,12 @@ struct GeneratorFormView: View {
           .font(.caption)
           .foregroundStyle(.orange)
       }
-      if motion == .lPowers {
-        TextField("L-power sequence (comma-separated)", text: $lPowerSequenceText)
+      if motion == .tPowers {
+        TextField("T-power sequence (scale steps, comma-separated)", text: $tPowerSequenceText)
+          .textFieldStyle(.roundedBorder)
+      }
+      if motion == .ttPowers {
+        TextField("TT-power sequence (semitones, comma-separated)", text: $ttPowerSequenceText)
           .textFieldStyle(.roundedBorder)
       }
       VStack(alignment: .leading, spacing: 2) {
@@ -128,21 +132,6 @@ struct GeneratorFormView: View {
           .font(.caption)
           .foregroundStyle(.secondary)
         Slider(value: $beatsPerChord, in: 1...16, step: 1)
-      }
-    }
-  }
-
-  private var voicingSection: some View {
-    Section("Voicing") {
-      Picker("Upper-voice spacing", selection: $oUCHMode) {
-        ForEach(OUCHSelector.allCases, id: \.self) { mode in
-          Text(mode.displayName).tag(mode)
-        }
-      }
-      if chordType != .triad && oUCHMode != .stochastic {
-        Text("OUCH spacing only applies to triads. Dyads and sevenths use the solver directly.")
-          .font(.caption)
-          .foregroundStyle(.secondary)
       }
     }
   }
@@ -158,10 +147,10 @@ struct GeneratorFormView: View {
   private var timingSection: some View {
     Section("Timing") {
       VStack(alignment: .leading, spacing: 2) {
-        Text("BPM: \(Int(bpm))")
+        Text("BPM: \(bpm)")
           .font(.caption)
           .foregroundStyle(.secondary)
-        Slider(value: $bpm, in: 40...200, step: 1)
+        Slider(value: $bpm, in: 0.1...200, step: 0.1)
       }
     }
   }
@@ -185,8 +174,8 @@ struct GeneratorFormView: View {
 
   // MARK: - Apply
 
-  private func parseLPowerSequence() -> [Int]? {
-    let trimmed = lPowerSequenceText.trimmingCharacters(in: .whitespaces)
+  private static func parsePowerSequence(_ text: String) -> [Int]? {
+    let trimmed = text.trimmingCharacters(in: .whitespaces)
     if trimmed.isEmpty { return nil }
     let parts = trimmed.split(separator: ",").map { $0.trimmingCharacters(in: .whitespaces) }
     let values = parts.compactMap { Int($0) }
@@ -201,11 +190,11 @@ struct GeneratorFormView: View {
       chordType: chordType,
       bpm: bpm,
       beatsPerChord: beatsPerChord,
-      oUCHMode: oUCHMode,
       bassOctave: bassOctave,
       upperVoiceLowOctave: upperVoiceLowOctave,
       upperVoiceHighOctave: upperVoiceHighOctave,
-      lPowerSequence: parseLPowerSequence(),
+      tPowerSequence: Self.parsePowerSequence(tPowerSequenceText),
+      ttPowerSequence: Self.parsePowerSequence(ttPowerSequenceText),
       randomSeed: seedLocked ? randomSeed : nil
     )
   }

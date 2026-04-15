@@ -66,19 +66,85 @@ struct GeneratorEngineTests {
         #expect(romanEvents.count == 8)
     }
 
-    @Test("lPowers motion emits one Tt event per sequence element")
-    func lPowersProducesTtEvents() {
+    @Test("tPowers motion emits one T event per sequence element with the given n")
+    func tPowersProducesTEvents() {
         let params = GeneratorSyntax(
-            motion: .lPowers, chordType: .triad,
-            lPowerSequence: [2, -1, 3]
+            motion: .tPowers, chordType: .triad,
+            tPowerSequence: [2, -1, 3]
         )
         let score = GeneratorEngine.generate(params)
-        let ttEvents = score.chordEvents.filter { $0.op == "Tt" }
+        let tEvents = score.chordEvents.filter { $0.op == "T" && $0.beat > 0 }
+        #expect(tEvents.count == 3)
+        #expect(tEvents.map { $0.n } == [2, -1, 3])
+    }
+
+    @Test("ttPowers motion emits one TT event per sequence element with the given n")
+    func ttPowersProducesTTEvents() {
+        let params = GeneratorSyntax(
+            motion: .ttPowers, chordType: .triad,
+            ttPowerSequence: [2, -3, 1]
+        )
+        let score = GeneratorEngine.generate(params)
+        let ttEvents = score.chordEvents.filter { $0.op == "TT" && $0.beat > 0 }
         #expect(ttEvents.count == 3)
-        // Each element p emits Tt with n = p * -5 and tVal = p * 2 for triads.
-        #expect(ttEvents.contains { $0.n == -10 && $0.tVal == 4 })
-        #expect(ttEvents.contains { $0.n == 5 && $0.tVal == -2 })
-        #expect(ttEvents.contains { $0.n == -15 && $0.tVal == 6 })
+        #expect(ttEvents.map { $0.n } == [2, -3, 1])
+    }
+
+    @Test("Repeated TT(7) keeps bass and upper voices within their configured ranges")
+    func repeatedTTSevenStaysInRange() {
+        let bassOctave = 2
+        let upperLow = 3
+        let upperHigh = 5
+        let params = GeneratorSyntax(
+            rootNote: "C", scaleType: .major,
+            motion: .ttPowers, chordType: .triad,
+            bassOctave: bassOctave,
+            upperVoiceLowOctave: upperLow,
+            upperVoiceHighOctave: upperHigh,
+            ttPowerSequence: [7, 7, 7, 7, 7],
+            randomSeed: 42
+        )
+        let score = GeneratorEngine.generate(params)
+
+        let bassMin = (bassOctave + 1) * 12          // C2 = 36
+        let bassMax = (bassOctave + 1) * 12 + 11     // B2 = 47
+        let upperMin = (upperLow + 1) * 12           // C3 = 48
+        let upperMax = (upperHigh + 1) * 12 + 11     // B5 = 83
+
+        let bass = score.tracks[0]
+        for note in bass.notes where note.type == .absolute {
+            if let midi = note.midi {
+                #expect(midi >= bassMin && midi <= bassMax,
+                        "Bass MIDI \(midi) outside [\(bassMin), \(bassMax)] — drift detected")
+            }
+        }
+        for track in score.tracks.dropFirst() {
+            for note in track.notes where note.type == .absolute {
+                if let midi = note.midi {
+                    #expect(midi >= upperMin && midi <= upperMax,
+                            "Upper voice MIDI \(midi) outside [\(upperMin), \(upperMax)]")
+                }
+            }
+        }
+
+        // Centroid check: the upper-voice centroid should stay within an
+        // octave of the range center across all chords.
+        let center = (upperMin + upperMax) / 2
+        for i in 0..<bass.notes.count {
+            var sum = 0
+            var count = 0
+            for track in score.tracks.dropFirst() {
+                if i < track.notes.count, let midi = track.notes[i].midi {
+                    sum += midi
+                    count += 1
+                }
+            }
+            if count > 0 {
+                let centroid = sum / count
+                #expect(abs(centroid - center) <= 12,
+                        "Centroid \(centroid) at chord \(i) drifted more than an octave from center \(center)")
+            }
+        }
     }
 
     // MARK: - Track structure
@@ -225,13 +291,13 @@ struct GeneratorSyntaxCodableTests {
             chordType: .seventh,
             bpm: 72,
             beatsPerChord: 2,
-            oUCHMode: .fixedClosed,
             bassOctave: 2,
             upperVoiceLowOctave: 3,
             upperVoiceHighOctave: 6,
             bassPresetName: "moog_sub_bass",
             upperPresetNames: ["warm_analog_pad", "solina_strings", "solina_strings", "solina_strings"],
-            lPowerSequence: [2, -1, 3],
+            tPowerSequence: [2, -1, 3],
+            ttPowerSequence: [7, -5, 2],
             randomSeed: 777
         )
 
@@ -246,8 +312,7 @@ struct GeneratorSyntaxCodableTests {
     @Test("GeneratorSyntax encodes chord type as raw value")
     func generatorSyntaxEncodesEnumRawValues() throws {
         let params = GeneratorSyntax(
-            scaleType: .wholeTone, motion: .parallelAscending, chordType: .seventh,
-            oUCHMode: .stochastic
+            scaleType: .wholeTone, motion: .parallelAscending, chordType: .seventh
         )
 
         let encoder = JSONEncoder()
@@ -257,7 +322,6 @@ struct GeneratorSyntaxCodableTests {
         #expect(json.contains("\"wholeTone\""))
         #expect(json.contains("\"parallelAscending\""))
         #expect(json.contains("\"seventh\""))
-        #expect(json.contains("\"stochastic\""))
     }
 
     @Test("PatternSyntax with generatorTracks round-trips through JSON")

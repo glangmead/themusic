@@ -39,27 +39,6 @@ enum OUCHConfiguration: String, Codable, CaseIterable {
   }
 }
 
-// MARK: - OUCHSelector
-
-/// User-facing selection: pin to one configuration, or let the state machine walk.
-enum OUCHSelector: String, Codable, CaseIterable {
-  case fixedClosed
-  case fixedOpen
-  case fixedHalfOpen
-  case fixedUnusual
-  case stochastic
-
-  var displayName: String {
-    switch self {
-    case .fixedClosed:   return "Always Closed"
-    case .fixedOpen:     return "Always Open"
-    case .fixedHalfOpen: return "Always Half-Open"
-    case .fixedUnusual:  return "Always Unusual"
-    case .stochastic:    return "Stochastic (Bach-like)"
-    }
-  }
-}
-
 // MARK: - OUCHState
 
 /// Stateful OUCH configuration walker. Holds the current configuration and
@@ -100,19 +79,9 @@ struct OUCHState {
     ]
   ]
 
-  /// Step the state by sampling from the transition table (stochastic) or
-  /// jumping to the fixed target.
-  mutating func step(using rng: inout SeededRNG, selector: OUCHSelector) -> OUCHConfiguration {
-    switch selector {
-    case .fixedClosed:   current = .closed
-    case .fixedOpen:     current = .open
-    case .fixedHalfOpen: current = .halfOpen
-    case .fixedUnusual:
-      // Alternate between the two unusual configurations deterministically.
-      current = (current == .unusualDoubleInterval) ? .unusualOpenOctave : .unusualDoubleInterval
-    case .stochastic:
-      current = sampleNext(from: current, using: &rng)
-    }
+  /// Step the state by sampling the next configuration from the Bach transition table.
+  mutating func step(using rng: inout SeededRNG) -> OUCHConfiguration {
+    current = sampleNext(from: current, using: &rng)
     return current
   }
 

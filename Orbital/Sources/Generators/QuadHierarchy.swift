@@ -58,6 +58,31 @@ struct ChordInScale {
     inversion += n
   }
 
+  /// TT: chromatic transposition. Shift each chord tone by n semitones.
+  /// Realized by adding n to each degree's chromatic perturbation, leaving
+  /// the abstract scale degrees alone. Perturbations stack additively.
+  /// e.g. on (C, E, G) in C major, TT(1) → (C♯, F, A♭) = D♭ major.
+  mutating func TT(_ n: Int) {
+    guard !degrees.isEmpty else { return }
+    var existing = perturbations ?? Array(repeating: Perturbation.none, count: degrees.count)
+    while existing.count < degrees.count { existing.append(.none) }
+    for i in 0..<degrees.count {
+      switch existing[i] {
+      case .none:
+        existing[i] = .chromatic(n)
+      case .chromatic(let m):
+        existing[i] = .chromatic(m + n)
+      case .scaleDegree:
+        // Scale-degree perturbations are categorically different from chromatic.
+        // Leave them in place; future TT/T operations may layer behavior we
+        // can't capture in a single Perturbation case. (Not currently used by
+        // the generator path.)
+        break
+      }
+    }
+    perturbations = existing
+  }
+
   /// Apply the Tymoczko basic voice leading L to the nth power.
   /// L is the composition T·t that moves exactly one voice by one scale step,
   /// tracing the diatonic spiral for an n-note chord.
@@ -188,6 +213,18 @@ class PitchHierarchy {
       }
     case .chord:
       chord.T(n)
+    }
+  }
+
+  /// TT: chromatic transposition. At .scale, identical to T(at: .scale) — both
+  /// shift the key root by n semitones. At .chord, calls chord.TT(n) which
+  /// adds n semitones to each chord tone via per-degree chromatic perturbations.
+  func TT(_ n: Int, at level: HierarchyLevel) {
+    switch level {
+    case .scale:
+      T(n, at: .scale)  // .scale-level T already operates in semitones
+    case .chord:
+      chord.TT(n)
     }
   }
 

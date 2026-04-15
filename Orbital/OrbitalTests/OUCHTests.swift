@@ -71,24 +71,14 @@ struct OUCHStateMachineTests {
         #expect(sorted.first?.0 == .closed)
     }
 
-    @Test("Fixed selectors pin the configuration regardless of RNG")
-    func fixedSelectorsPin() {
-        var rng = SeededRNG(seed: 12345)
-        var state = OUCHState(current: .halfOpen)
-
-        #expect(state.step(using: &rng, selector: .fixedClosed) == .closed)
-        #expect(state.step(using: &rng, selector: .fixedOpen) == .open)
-        #expect(state.step(using: &rng, selector: .fixedHalfOpen) == .halfOpen)
-    }
-
-    @Test("Stochastic selector produces varied configurations over many samples")
+    @Test("step produces varied configurations over many samples")
     func stochasticSamplesVary() {
         var rng = SeededRNG(seed: 7)
         var state = OUCHState(current: .closed)
 
         var seen: Set<OUCHConfiguration> = []
         for _ in 0..<200 {
-            let next = state.step(using: &rng, selector: .stochastic)
+            let next = state.step(using: &rng)
             seen.insert(next)
         }
         // Should hit at least closed and one other over 200 samples.
@@ -96,15 +86,15 @@ struct OUCHStateMachineTests {
         #expect(seen.count >= 2)
     }
 
-    @Test("Stochastic selector is deterministic for a given seed")
+    @Test("step is deterministic for a given seed")
     func stochasticDeterministic() {
         var rng1 = SeededRNG(seed: 42)
         var rng2 = SeededRNG(seed: 42)
         var s1 = OUCHState(current: .closed)
         var s2 = OUCHState(current: .closed)
         for _ in 0..<50 {
-            let a = s1.step(using: &rng1, selector: .stochastic)
-            let b = s2.step(using: &rng2, selector: .stochastic)
+            let a = s1.step(using: &rng1)
+            let b = s2.step(using: &rng2)
             #expect(a == b)
         }
     }
