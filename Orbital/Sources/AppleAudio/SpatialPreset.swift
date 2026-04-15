@@ -140,6 +140,20 @@ class SpatialPreset: NoteHandler, @unchecked Sendable {
     }
 
     engine.connectToEnvNode(avNodes)
+    engine.register(self)
+  }
+
+  /// Number of currently-sounding voices. For Arrow-based presets this is the
+  /// open AudioGate count; for sampler-based slots we fall back to
+  /// activeNoteCount since samplers don't have a gate.
+  var openGateCount: Int {
+    presets.reduce(0) { count, preset in
+      if let gate = preset.audioGate {
+        return count + (gate.isOpen ? 1 : 0)
+      } else {
+        return count + (preset.activeNoteCount > 0 ? 1 : 0)
+      }
+    }
   }
 
   /// Build Preset objects for UI display only — no audio nodes, no engine connection.
@@ -157,6 +171,7 @@ class SpatialPreset: NoteHandler, @unchecked Sendable {
   /// (and their positionLFO values) alive for UI access.
   func detachNodes() {
     stopPositionPump()
+    engine?.unregister(self)
     if let engine {
       for preset in presets {
         preset.detachAppleNodes(from: engine)

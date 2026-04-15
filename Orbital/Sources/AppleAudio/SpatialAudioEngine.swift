@@ -6,6 +6,7 @@
 //
 
 import AVFAudio
+import AudioToolbox
 import Observation
 import os
 
@@ -23,6 +24,21 @@ class SpatialAudioEngine: @unchecked Sendable {
   let mono: AVAudioFormat
 
   let spatialEnabled: Bool
+
+  /// AVAudioUnitEffect wrapping a DynamicsProcessor, installed at start() as
+  /// the last node before outputNode when AudioSafety.tailLimiterEnabled.
+  /// nil when the limiter isn't installed. Detached on stop()/restart().
+  private var tailLimiterNode: AVAudioUnitEffect?
+
+  /// Weak-ref registry of SpatialPresets so the dynamic-gain tick can ask
+  /// each one for its open-gate count. See register(_:)/unregister(_:).
+  private struct SpatialPresetRef { weak var ref: SpatialPreset? }
+  private let registryLock = OSAllocatedUnfairLock<[SpatialPresetRef]>(initialState: [])
+
+  /// Detached task that reads the open-gate count and writes
+  /// envNode.outputVolume. Runs only while the engine is started and
+  /// AudioSafetyRuntime.dynamicGainEnabled is true.
+  private var gainPumpTask: Task<Void, Never>?
 
   init(spatialEnabled: Bool = true) {
     self.spatialEnabled = spatialEnabled
@@ -61,13 +77,97 @@ class SpatialAudioEngine: @unchecked Sendable {
         node.sourceMode = .spatializeIfMono
         audioEngine.connect(node, to: envNode, format: mono)
       }
-      audioEngine.connect(envNode, to: audioEngine.outputNode, format: stereo)
+      // Tail (envNode → [limiter?] → outputNode) is wired once in start().
     } else {
       // Non-spatial: connect directly to mainMixerNode for flat stereo.
+      // mainMixerNode → outputNode is auto-wired by AVAudioEngine; tail
+      // limiter is currently only inserted in the spatial path.
       for node in nodes {
         audioEngine.connect(node, to: audioEngine.mainMixerNode, format: stereo)
       }
     }
+  }
+
+  // MARK: - SpatialPreset registry (for dynamic-gain tick)
+
+  func register(_ sp: SpatialPreset) {
+    registryLock.withLock { refs in
+      refs.removeAll { $0.ref == nil }
+      refs.append(SpatialPresetRef(ref: sp))
+    }
+  }
+
+  func unregister(_ sp: SpatialPreset) {
+    registryLock.withLock { refs in
+      refs.removeAll { $0.ref == nil || $0.ref === sp }
+    }
+  }
+
+  private func openGateCount() -> Int {
+    registryLock.withLock { refs in
+      refs.reduce(into: 0) { count, wr in
+        guard let sp = wr.ref else { return }
+        count += sp.openGateCount
+      }
+    }
+  }
+
+  // MARK: - Tail safety chain
+
+  /// Wire the tail chain envNode → [limiter?] → outputNode once per engine
+  /// start. Non-spatial mode relies on AVAudioEngine's implicit
+  /// mainMixerNode → outputNode connection and skips the limiter entirely.
+  ///
+  /// Detaching a live limiter requires first disconnecting both of its ends,
+  /// otherwise AVFoundation raises `!nodeMixerConns.empty() &&
+  /// !hasDirectConnToIONode`. Callers guarantee this runs only while the
+  /// engine is stopped.
+  private func wireTailIfNeeded() {
+    guard spatialEnabled else { return }
+
+    if let old = tailLimiterNode {
+      audioEngine.disconnectNodeOutput(old)
+      audioEngine.disconnectNodeInput(old)
+      audioEngine.detach(old)
+      tailLimiterNode = nil
+    }
+    audioEngine.disconnectNodeOutput(envNode)
+
+    if AudioSafetyRuntime.tailLimiterEnabled {
+      let limiter = Self.makeDynamicsProcessor(thresholdDB: AudioSafetyRuntime.tailLimiterThresholdDB)
+      audioEngine.attach(limiter)
+      audioEngine.connect(envNode, to: limiter, format: stereo)
+      audioEngine.connect(limiter, to: audioEngine.outputNode, format: stereo)
+      tailLimiterNode = limiter
+    } else {
+      audioEngine.connect(envNode, to: audioEngine.outputNode, format: stereo)
+    }
+  }
+
+  private static func makeDynamicsProcessor(thresholdDB: Float) -> AVAudioUnitEffect {
+    var desc = AudioComponentDescription()
+    desc.componentType = kAudioUnitType_Effect
+    desc.componentSubType = kAudioUnitSubType_DynamicsProcessor
+    desc.componentManufacturer = kAudioUnitManufacturer_Apple
+    desc.componentFlags = 0
+    desc.componentFlagsMask = 0
+    let unit = AVAudioUnitEffect(audioComponentDescription: desc)
+
+    // Brick-wall configuration: threshold near 0 dBFS, no makeup gain, fast
+    // attack, short release. headRoom defines the knee above threshold.
+    if let tree = unit.auAudioUnit.parameterTree {
+      for p in tree.allParameters {
+        switch p.address {
+        case AUParameterAddress(kDynamicsProcessorParam_Threshold):   p.value = thresholdDB
+        case AUParameterAddress(kDynamicsProcessorParam_HeadRoom):    p.value = 5.0
+        case AUParameterAddress(kDynamicsProcessorParam_OverallGain): p.value = 0.0
+        case AUParameterAddress(kDynamicsProcessorParam_AttackTime):  p.value = 0.002
+        case AUParameterAddress(kDynamicsProcessorParam_ReleaseTime): p.value = 0.050
+        default: break
+        }
+      }
+    }
+    return unit
   }
 
   func start() throws {
@@ -84,12 +184,15 @@ class SpatialAudioEngine: @unchecked Sendable {
 
       // envNode.listenerVectorOrientation = AVAudio3DVectorOrientation(forward: AVAudio3DVector(x: 0.0, y: -1.0, z: 1.0), up: AVAudio3DVector(x: 0.0, y: 0.0, z: 1.0))
 
-      // Multiple simultaneous voices sum without normalization, so reduce master output
-      // to match typical app loudness levels.
-      envNode.outputVolume = 0.25
+      envNode.outputVolume = staticBaseGain()
     } else {
-      audioEngine.mainMixerNode.outputVolume = 0.25
+      audioEngine.mainMixerNode.outputVolume = staticBaseGain()
     }
+
+    // Ensure the tail (envNode/mainMixer → [limiter?] → output) is wired with
+    // the current AudioSafety.tailLimiterEnabled value. Limiter insertion
+    // takes effect at this point only (next-start policy).
+    wireTailIfNeeded()
 
     // Prevent the engine from auto-stopping when the app is backgrounded
     // or during brief silence. Required for background audio to continue.
@@ -150,6 +253,56 @@ class SpatialAudioEngine: @unchecked Sendable {
     // Install the audio tap once up-front so that opening the visualizer
     // later doesn't cause a glitch by reconfiguring the live audio graph.
     if spatialEnabled { installTapOnce() }
+
+    startGainPump()
+  }
+
+  /// Detached 25 ms tick that adjusts the master volume based on how many
+  /// AudioGates are currently open across all registered SpatialPresets:
+  ///   gain = (master? ? staticAttenuation : 1) * base / max(1, N)^exp
+  /// Disabled: volume stays at whatever staticBaseGain() set at start().
+  private func startGainPump() {
+    stopGainPump()
+    gainPumpTask = Task.detached(priority: .medium) { [weak self] in
+      while !Task.isCancelled {
+        do {
+          try await Task.sleep(for: .milliseconds(25))
+        } catch {
+          return
+        }
+        guard let self else { return }
+        guard AudioSafetyRuntime.dynamicGainEnabled else {
+          // Keep base gain fresh even when dynamic is off, so toggling
+          // AudioSafety.staticAttenuation during playback is reflected.
+          let base = self.staticBaseGain()
+          if self.spatialEnabled {
+            self.envNode.outputVolume = base
+          } else {
+            self.audioEngine.mainMixerNode.outputVolume = base
+          }
+          continue
+        }
+        let n = max(1, self.openGateCount())
+        let exp = AudioSafetyRuntime.dynamicGainExponent
+        let dyn = AudioSafetyRuntime.dynamicGainBase / powf(Float(n), exp)
+        let gain = self.staticBaseGain() * dyn
+        if self.spatialEnabled {
+          self.envNode.outputVolume = gain
+        } else {
+          self.audioEngine.mainMixerNode.outputVolume = gain
+        }
+      }
+    }
+  }
+
+  private func stopGainPump() {
+    gainPumpTask?.cancel()
+    gainPumpTask = nil
+  }
+
+  /// Static component of the master gain (before dynamic per-voice scaling).
+  private func staticBaseGain() -> Float {
+    AudioSafetyRuntime.staticAttenuationEnabled ? AudioSafetyRuntime.staticAttenuation : 1.0
   }
 
   /// Client-provided callback; set before calling `start()` or at any time.
@@ -243,6 +396,7 @@ class SpatialAudioEngine: @unchecked Sendable {
   }
 
   func stop() {
+    stopGainPump()
     audioEngine.stop()
   }
 

@@ -73,6 +73,22 @@ extension AVAudioSourceNode {
         // Please leave this commented print statement here for easy diagnostics
         // print("min/mean/max: \(vDSP.minimum(valBuffer))/\(vDSP.mean(valBuffer))/\(vDSP.maximum(valBuffer))")
 
+        // Last-line-of-defense scrub: clip to [-1, 1] and zero any non-finite
+        // samples before they reach the output. Gated by AudioSafety so it
+        // can be disabled during investigation. Bool read is a single
+        // word-sized load; the worst-case stale read is one buffer.
+        if AudioSafetyRuntime.renderScrubEnabled {
+          var lo: CoreFloat = -1
+          var hi: CoreFloat = 1
+          vDSP_vclipD(valBuffer, 1, &lo, &hi, &valBuffer, 1, vDSP_Length(count))
+          valBuffer.withUnsafeMutableBufferPointer { buf in
+            guard let base = buf.baseAddress else { return }
+            for i in 0..<count where !base[i].isFinite {
+              base[i] = 0
+            }
+          }
+        }
+
         let outputPtr = data.assumingMemoryBound(to: Float.self)
         var outputBuffer = UnsafeMutableBufferPointer(start: outputPtr, count: count)
 
