@@ -545,7 +545,7 @@ struct ScorePatternCodableTests {
     func noteTypeRawValues() throws {
         let encoder = JSONEncoder()
         let decoder = JSONDecoder()
-        for t in [ScoreNoteType.rest, .hold, .currentChord, .chordTone, .scaleDegree, .absolute] {
+        for t in [ScoreNoteType.rest, .hold, .currentChord, .chordTone, .scaleDegree, .absolute, .absoluteChord] {
             let data = try encoder.encode(t)
             let decoded = try decoder.decode(ScoreNoteType.self, from: data)
             #expect(decoded == t)

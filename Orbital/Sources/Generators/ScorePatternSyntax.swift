@@ -116,6 +116,7 @@ enum ScoreNoteType: String, Codable, Equatable {
     case chordTone      // Single pitch: chord tone by index (wraps at chord size)
     case scaleDegree    // Single pitch: scale degree by number
     case absolute       // Single pitch: explicit MIDI number or note name ("Bb4")
+    case absoluteChord  // Chord of explicit MIDI numbers (one attack, many pitches)
 }
 
 // MARK: - Score Note Syntax
@@ -137,6 +138,9 @@ struct ScoreNoteSyntax: Codable, Equatable {
     let midi: Int?          // MIDI note number 0–127
     let note: String?       // Note name + octave, e.g. "C4", "Bb3", "F#5"
 
+    // For "absoluteChord": an array of MIDI numbers emitted as one chord.
+    let midis: [Int]?
+
     // For "chordTone", "scaleDegree", "absolute": override the track's base octave.
     let octave: Int?
 
@@ -153,6 +157,7 @@ struct ScoreNoteSyntax: Codable, Equatable {
         degree: Int? = nil,
         midi: Int? = nil,
         note: String? = nil,
+        midis: [Int]? = nil,
         octave: Int? = nil,
         voicing: VoicingStyle? = nil,
         velocity: Int? = nil
@@ -163,6 +168,7 @@ struct ScoreNoteSyntax: Codable, Equatable {
         self.degree = degree
         self.midi = midi
         self.note = note
+        self.midis = midis
         self.octave = octave
         self.voicing = voicing
         self.velocity = velocity

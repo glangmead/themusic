@@ -271,8 +271,7 @@ struct GeneratorEngine {
 
     // Assemble tracks. nil presetFilename → random pad with GM-driven constraints.
     let bassPreset = params.bassPresetName              // nil → random pad
-    let upperPresets = params.upperPresetNames          // nil → random pads
-    let upperNames = upperVoiceNames(chordSize)
+    let upperPreset = params.upperPresetNames?.first    // single shared preset across upper voices
 
     var tracks: [ScoreTrackSyntax] = []
     let bassNotes = bassMidis.map {
@@ -284,27 +283,32 @@ struct GeneratorEngine {
       numVoices: 2,
       octave: params.bassOctave,
       voicing: .closed,
-      sustainFraction: 0.9,
+      sustainFraction: 1.0,
       gmProgram: bassGmProgram,                          // 33 = electric bass
       notes: bassNotes
     ))
 
-    for (i, name) in upperNames.enumerated() {
-      let preset = (upperPresets != nil && i < upperPresets!.count) ? upperPresets![i] : nil
-      let notes = upperMidis[i].map {
-        ScoreNoteSyntax(type: .absolute, durationBeats: bpc, midi: $0)
-      }
-      tracks.append(ScoreTrackSyntax(
-        name: name,
-        presetFilename: preset,
-        numVoices: 2,
-        octave: params.upperVoiceLowOctave,
-        voicing: .closed,
-        sustainFraction: 0.85,
-        gmProgram: upperVoiceGmProgram,                  // 89 = warm pad
-        notes: notes
+    // One upper-voice track: all chord tones share the same preset/instrument
+    // but fan out across spatial slots via SpatialPreset's per-note voice ledger.
+    var upperNotes: [ScoreNoteSyntax] = []
+    for i in 0..<chordCount {
+      let midis = (0..<chordSize).map { upperMidis[$0][i] }
+      upperNotes.append(ScoreNoteSyntax(
+        type: .absoluteChord,
+        durationBeats: bpc,
+        midis: midis
       ))
     }
+    tracks.append(ScoreTrackSyntax(
+      name: "Upper Voices",
+      presetFilename: upperPreset,
+      numVoices: nil,                                    // default 12 spatial slots
+      octave: params.upperVoiceLowOctave,
+      voicing: .closed,
+      sustainFraction: 1.0,
+      gmProgram: upperVoiceGmProgram,                    // 89 = warm pad
+      notes: upperNotes
+    ))
     return tracks
   }
 
@@ -420,15 +424,6 @@ struct GeneratorEngine {
     switch type {
     case .naturalMinor, .harmonicMinor, .dorian, .phrygian: return true
     default: return false
-    }
-  }
-
-  private static func upperVoiceNames(_ chordSize: Int) -> [String] {
-    switch chordSize {
-    case 2: return ["Tenor", "Soprano"]
-    case 3: return ["Tenor", "Alto", "Soprano"]
-    case 4: return ["Tenor", "Alto", "Mezzo", "Soprano"]
-    default: return (0..<chordSize).map { "Voice \($0)" }
     }
   }
 

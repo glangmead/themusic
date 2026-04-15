@@ -78,7 +78,7 @@ class SpatialAudioEngine: @unchecked Sendable {
       envNode.distanceAttenuationParameters.referenceDistance = 5.0
       envNode.distanceAttenuationParameters.maximumDistance = 50.0
       // envNode.distanceAttenuationParameters.rolloffFactor = 2.0
-      envNode.reverbParameters.enable = true
+      envNode.reverbParameters.enable = false
       envNode.reverbParameters.level = 60
       envNode.reverbParameters.loadFactoryReverbPreset(.largeHall)
 

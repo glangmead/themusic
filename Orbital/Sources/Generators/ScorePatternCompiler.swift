@@ -48,7 +48,19 @@ enum ScorePatternCompiler {
         var spatialPresets: [SpatialPreset] = []
 
         for (i, trackSyntax) in score.tracks.enumerated() {
-            let presetSpec = resolvePresetSpec(filename: trackSyntax.presetFilename, gmProgram: trackSyntax.gmProgram, resourceBaseURL: resourceBaseURL)
+            let (chords, sustains, gaps) = compileTrack(
+                trackSyntax,
+                timeline: timeline,
+                secondsPerBeat: secondsPerBeat,
+                loop: loopVal
+            )
+            let characteristicDuration = medianSustain(sustains)
+            let presetSpec = resolvePresetSpec(
+                filename: trackSyntax.presetFilename,
+                gmProgram: trackSyntax.gmProgram,
+                characteristicDuration: characteristicDuration,
+                resourceBaseURL: resourceBaseURL
+            )
             let voices = trackSyntax.numVoices ?? 12
             let sp = try await SpatialPreset(
                 presetSpec: presetSpec,
@@ -57,12 +69,6 @@ enum ScorePatternCompiler {
                 resourceBaseURL: resourceBaseURL
             )
 
-            let (chords, sustains, gaps) = compileTrack(
-                trackSyntax,
-                timeline: timeline,
-                secondsPerBeat: secondsPerBeat,
-                loop: loopVal
-            )
             let iters = makeIterators(chords: chords, sustains: sustains, gaps: gaps, loop: loopVal)
 
             musicTracks.append(MusicPattern.Track(
@@ -99,10 +105,32 @@ enum ScorePatternCompiler {
         _ score: ScorePatternSyntax,
         resourceBaseURL: URL? = nil
     ) -> [TrackInfo] {
-        score.tracks.enumerated().map { (i, trackSyntax) in
-            let presetSpec = resolvePresetSpec(filename: trackSyntax.presetFilename, gmProgram: trackSyntax.gmProgram, resourceBaseURL: resourceBaseURL)
+        let secondsPerBeat = 60.0 / score.bpm
+        let timeline = buildTimeline(score)
+        let loopVal = score.loop ?? true
+        return score.tracks.enumerated().map { (i, trackSyntax) in
+            let (_, sustains, _) = compileTrack(
+                trackSyntax, timeline: timeline,
+                secondsPerBeat: secondsPerBeat, loop: loopVal
+            )
+            let presetSpec = resolvePresetSpec(
+                filename: trackSyntax.presetFilename,
+                gmProgram: trackSyntax.gmProgram,
+                characteristicDuration: medianSustain(sustains),
+                resourceBaseURL: resourceBaseURL
+            )
             return TrackInfo(id: i, patternName: trackSyntax.name, presetSpec: presetSpec)
         }
+    }
+
+    /// Median of nonzero sustains, in seconds. nil when the track has no sounding notes.
+    private static func medianSustain(_ sustains: [CoreFloat]) -> CoreFloat? {
+        let active = sustains.filter { $0 > 0 }.sorted()
+        guard !active.isEmpty else { return nil }
+        let mid = active.count / 2
+        return active.count.isMultiple(of: 2)
+            ? (active[mid - 1] + active[mid]) / 2
+            : active[mid]
     }
 
     // MARK: - Timeline Construction
@@ -250,6 +278,13 @@ enum ScorePatternCompiler {
                 return [MidiNote(note: midi, velocity: velocity)]
             }
             return []
+
+        case .absoluteChord:
+            guard let midis = spec.midis else { return [] }
+            return midis.compactMap { midiVal in
+                guard midiVal >= 0 && midiVal <= 127 else { return nil }
+                return MidiNote(note: UInt8(midiVal), velocity: velocity)
+            }
         }
     }
 

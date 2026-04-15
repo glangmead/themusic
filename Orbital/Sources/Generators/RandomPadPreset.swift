@@ -126,7 +126,6 @@ private extension GMPadProfile {
       .noFilterLFO,
       .noCrossfadeLFO,
       .noSpatialMotion,
-      .ampAttackCeiling(0.030),
       .filterCutoffMaxMultiplier(16.0)
     ]
   )
@@ -394,7 +393,7 @@ func makeRandomPadPreset(gmProgram: Int? = nil, characteristicDuration: CoreFloa
   let rose = RoseSyntax(
     amp: roseAmp,
     leafFactor: CoreFloat(leafFactorPick),
-    freq: FloatSampler(min: 0.01, max: 0.1, dist: .exponential).next()!,
+    freq: FloatSampler(min: 0.1, max: 0.2, dist: .exponential).next()!,
     phase: SongRNG.float(in: 0...(CoreFloat.pi * 2))
   )
   printRandomPadDiagnostic(gmProgram: gmProgram, characteristicDuration: characteristicDuration,

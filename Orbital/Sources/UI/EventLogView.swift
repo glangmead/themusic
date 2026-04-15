@@ -61,6 +61,10 @@ private struct EventLogRowView: View {
         .font(.caption)
         .foregroundStyle(.secondary)
 
+      Text("[\(annotation.notes.map({String($0.note)}).joined(separator: ","))]")
+        .font(.caption)
+        .foregroundStyle(.secondary)
+
       Spacer()
 
       HStack(spacing: 4) {

@@ -118,29 +118,21 @@ struct GeneratorEngineTests {
                         "Bass MIDI \(midi) outside [\(bassMin), \(bassMax)] — drift detected")
             }
         }
-        for track in score.tracks.dropFirst() {
-            for note in track.notes where note.type == .absolute {
-                if let midi = note.midi {
-                    #expect(midi >= upperMin && midi <= upperMax,
-                            "Upper voice MIDI \(midi) outside [\(upperMin), \(upperMax)]")
-                }
+        let upper = score.tracks[1]
+        for note in upper.notes where note.type == .absoluteChord {
+            for midi in note.midis ?? [] {
+                #expect(midi >= upperMin && midi <= upperMax,
+                        "Upper voice MIDI \(midi) outside [\(upperMin), \(upperMax)]")
             }
         }
 
         // Centroid check: the upper-voice centroid should stay within an
         // octave of the range center across all chords.
         let center = (upperMin + upperMax) / 2
-        for i in 0..<bass.notes.count {
-            var sum = 0
-            var count = 0
-            for track in score.tracks.dropFirst() {
-                if i < track.notes.count, let midi = track.notes[i].midi {
-                    sum += midi
-                    count += 1
-                }
-            }
-            if count > 0 {
-                let centroid = sum / count
+        for (i, note) in upper.notes.enumerated() where note.type == .absoluteChord {
+            let midis = note.midis ?? []
+            if !midis.isEmpty {
+                let centroid = midis.reduce(0, +) / midis.count
                 #expect(abs(centroid - center) <= 12,
                         "Centroid \(centroid) at chord \(i) drifted more than an octave from center \(center)")
             }
@@ -149,26 +141,31 @@ struct GeneratorEngineTests {
 
     // MARK: - Track structure
 
-    @Test("triad produces 1 bass + 3 upper = 4 tracks")
-    func triadProducesFourTracks() {
+    @Test("triad produces 1 bass + 1 upper = 2 tracks")
+    func triadProducesTwoTracks() {
         let params = GeneratorSyntax(motion: .fourChords, chordType: .triad)
         let score = GeneratorEngine.generate(params)
-        #expect(score.tracks.count == 4)
+        #expect(score.tracks.count == 2)
         #expect(score.tracks[0].name == "Bass")
+        #expect(score.tracks[1].name == "Upper Voices")
     }
 
-    @Test("dyad produces 1 bass + 2 upper = 3 tracks")
-    func dyadProducesThreeTracks() {
+    @Test("dyad also produces 1 bass + 1 upper chord track")
+    func dyadProducesTwoTracks() {
         let params = GeneratorSyntax(motion: .fourChords, chordType: .dyad)
         let score = GeneratorEngine.generate(params)
-        #expect(score.tracks.count == 3)
+        #expect(score.tracks.count == 2)
+        let upper = score.tracks[1]
+        #expect(upper.notes.first?.midis?.count == 2)
     }
 
-    @Test("seventh produces 1 bass + 4 upper = 5 tracks")
-    func seventhProducesFiveTracks() {
+    @Test("seventh also produces 1 bass + 1 upper chord track of size 4")
+    func seventhProducesTwoTracks() {
         let params = GeneratorSyntax(motion: .fourChords, chordType: .seventh)
         let score = GeneratorEngine.generate(params)
-        #expect(score.tracks.count == 5)
+        #expect(score.tracks.count == 2)
+        let upper = score.tracks[1]
+        #expect(upper.notes.first?.midis?.count == 4)
     }
 
     @Test("bass track contains absolute MIDI notes")
@@ -192,12 +189,11 @@ struct GeneratorEngineTests {
         let score = GeneratorEngine.generate(params)
         let lowMidi = (3 + 1) * 12       // 48
         let highMidi = (5 + 1) * 12 + 11 // 83
-        for track in score.tracks.dropFirst() {
-            for note in track.notes where note.type == .absolute {
-                if let midi = note.midi {
-                    #expect(midi >= lowMidi && midi <= highMidi,
-                            "MIDI \(midi) outside [\(lowMidi), \(highMidi)]")
-                }
+        let upper = score.tracks[1]
+        for note in upper.notes where note.type == .absoluteChord {
+            for midi in note.midis ?? [] {
+                #expect(midi >= lowMidi && midi <= highMidi,
+                        "MIDI \(midi) outside [\(lowMidi), \(highMidi)]")
             }
         }
     }
@@ -348,7 +344,7 @@ struct GeneratorSyntaxCodableTests {
         let pattern = PatternSyntax(generatorTracks: gen)
 
         let trackInfos = pattern.compileTrackInfoOnly()
-        // bass + triad = 4 tracks
-        #expect(trackInfos.count == 4)
+        // bass + one upper chord track = 2 tracks
+        #expect(trackInfos.count == 2)
     }
 }
