@@ -40,6 +40,14 @@ class SpatialAudioEngine: @unchecked Sendable {
   /// AudioSafetyRuntime.dynamicGainEnabled is true.
   private var gainPumpTask: Task<Void, Never>?
 
+  /// Absolute start time of the active duck, or nil when not ducking.
+  /// Read/written from the gain pump; writes also come from duck().
+  private let duckStart = OSAllocatedUnfairLock<CFAbsoluteTime?>(initialState: nil)
+  /// How long to hold at zero before the fade begins, and total duck length.
+  private let duckShape = OSAllocatedUnfairLock<(hold: Double, total: Double)>(
+    initialState: (hold: 0.30, total: 1.0)
+  )
+
   init(spatialEnabled: Bool = true) {
     self.spatialEnabled = spatialEnabled
     if spatialEnabled { audioEngine.attach(envNode) }
@@ -271,10 +279,11 @@ class SpatialAudioEngine: @unchecked Sendable {
           return
         }
         guard let self else { return }
+        let duck = self.duckMultiplier()
         guard AudioSafetyRuntime.dynamicGainEnabled else {
           // Keep base gain fresh even when dynamic is off, so toggling
           // AudioSafety.staticAttenuation during playback is reflected.
-          let base = self.staticBaseGain()
+          let base = self.staticBaseGain() * duck
           if self.spatialEnabled {
             self.envNode.outputVolume = base
           } else {
@@ -285,7 +294,7 @@ class SpatialAudioEngine: @unchecked Sendable {
         let n = max(1, self.openGateCount())
         let exp = AudioSafetyRuntime.dynamicGainExponent
         let dyn = AudioSafetyRuntime.dynamicGainBase / powf(Float(n), exp)
-        let gain = self.staticBaseGain() * dyn
+        let gain = self.staticBaseGain() * dyn * duck
         if self.spatialEnabled {
           self.envNode.outputVolume = gain
         } else {
@@ -303,6 +312,31 @@ class SpatialAudioEngine: @unchecked Sendable {
   /// Static component of the master gain (before dynamic per-voice scaling).
   private func staticBaseGain() -> Float {
     AudioSafetyRuntime.staticAttenuationEnabled ? AudioSafetyRuntime.staticAttenuation : 1.0
+  }
+
+  /// Pop-defense: briefly ramp the master output down to zero, hold, then
+  /// fade back in. Shape = hold at 0 for `hold` seconds, linear ramp to 1
+  /// over `total - hold`. Intended for actions known to trigger pops
+  /// (e.g. activating the visualizer). Intentionally short so the
+  /// visualizer's tap still sees signal after startup.
+  func duck(hold: TimeInterval = 0.70, total: TimeInterval = 1.0) {
+    duckShape.withLock { $0 = (hold: hold, total: total) }
+    duckStart.withLock { $0 = CFAbsoluteTimeGetCurrent() }
+  }
+
+  /// Current duck multiplier in [0, 1]. 1.0 when no duck is active.
+  private func duckMultiplier() -> Float {
+    guard let start = duckStart.withLock({ $0 }) else { return 1.0 }
+    let shape = duckShape.withLock { $0 }
+    let now = CFAbsoluteTimeGetCurrent()
+    let elapsed = now - start
+    if elapsed >= shape.total {
+      duckStart.withLock { $0 = nil }
+      return 1.0
+    }
+    if elapsed < shape.hold { return 0.0 }
+    let fadeLen = max(0.001, shape.total - shape.hold)
+    return Float((elapsed - shape.hold) / fadeLen)
   }
 
   /// Client-provided callback; set before calling `start()` or at any time.
