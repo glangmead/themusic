@@ -145,4 +145,59 @@ struct PadTemplateSyntax: Codable {
   let mood: PadMood
   /// When non-null, overrides all mood-derived slider defaults.
   let sliders: PadSliders?
+
+  /// When non-null, overrides the slider-derived chorus cent radius.
+  let chorusCentRadius: Int?
+  /// When non-null, overrides the default chorus voice count (2).
+  let chorusNumVoices: Int?
+
+  init(
+    name: String,
+    oscillators: [PadOscDescriptor],
+    crossfade: PadCrossfadeKind,
+    crossfadeRate: CoreFloat? = nil,
+    vibratoEnabled: Bool,
+    vibratoRate: CoreFloat? = nil,
+    vibratoDepth: CoreFloat,
+    ampAttack: CoreFloat? = nil,
+    ampDecay: CoreFloat,
+    ampSustain: CoreFloat,
+    ampRelease: CoreFloat? = nil,
+    filterCutoffMultiplier: CoreFloat? = nil,
+    filterResonance: CoreFloat? = nil,
+    filterLFORate: CoreFloat? = nil,
+    filterEnvAttack: CoreFloat,
+    filterEnvDecay: CoreFloat,
+    filterEnvSustain: CoreFloat,
+    filterEnvRelease: CoreFloat,
+    filterCutoffLow: CoreFloat,
+    mood: PadMood,
+    sliders: PadSliders? = nil,
+    chorusCentRadius: Int? = nil,
+    chorusNumVoices: Int? = nil
+  ) {
+    self.name = name
+    self.oscillators = oscillators
+    self.crossfade = crossfade
+    self.crossfadeRate = crossfadeRate
+    self.vibratoEnabled = vibratoEnabled
+    self.vibratoRate = vibratoRate
+    self.vibratoDepth = vibratoDepth
+    self.ampAttack = ampAttack
+    self.ampDecay = ampDecay
+    self.ampSustain = ampSustain
+    self.ampRelease = ampRelease
+    self.filterCutoffMultiplier = filterCutoffMultiplier
+    self.filterResonance = filterResonance
+    self.filterLFORate = filterLFORate
+    self.filterEnvAttack = filterEnvAttack
+    self.filterEnvDecay = filterEnvDecay
+    self.filterEnvSustain = filterEnvSustain
+    self.filterEnvRelease = filterEnvRelease
+    self.filterCutoffLow = filterCutoffLow
+    self.mood = mood
+    self.sliders = sliders
+    self.chorusCentRadius = chorusCentRadius
+    self.chorusNumVoices = chorusNumVoices
+  }
 }

@@ -123,10 +123,21 @@ class SyntacticSynth {
     }
   }
 
-  func loadPreset(_ presetSpec: PresetSyntax) {
-    // Snapshot arrow parameter values BEFORE setup replaces the handler.
-    savedArrowFloats = arrowHandler?.floatValues
-    savedArrowShapes = arrowHandler?.shapeValues
+  /// Swap in a new PresetSyntax. When `preserveUserValues` is true (the
+  /// padSynth-rebuild case), the current arrow-param and effects values are
+  /// re-applied to the new preset so user tweaks survive. When false (the
+  /// preset-picker case), the new preset's own values are used verbatim —
+  /// otherwise descriptor-ID collisions (e.g. "ampEnv.attack") smuggle the
+  /// previous preset's envelope into the new one.
+  func loadPreset(_ presetSpec: PresetSyntax, preserveUserValues: Bool = false) {
+    if preserveUserValues {
+      savedArrowFloats = arrowHandler?.floatValues
+      savedArrowShapes = arrowHandler?.shapeValues
+    } else {
+      savedArrowFloats = nil
+      savedArrowShapes = nil
+      hasSetupEffectsOnce = false
+    }
     // Don't call cleanup() here — keep old spatialPreset/arrowHandler alive
     // so the view doesn't flicker. setup() swaps atomically when the new
     // preset is ready.

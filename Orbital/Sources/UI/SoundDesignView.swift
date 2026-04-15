@@ -79,7 +79,15 @@ struct SoundDesignView: View {
       synth = nil
       return
     }
-    synth = SyntacticSynth(engine: engine, presetSpec: selectedPreset.spec)
+    // Reuse the same SyntacticSynth across preset picks: loadPreset rebuilds
+    // the spatial preset and cleans up the old one atomically. Constructing a
+    // fresh synth here would leak the prior SpatialPreset (still attached to
+    // the audio graph) and leave MIDI receivers captured on the old instance.
+    if let synth {
+      synth.loadPreset(selectedPreset.spec)
+    } else {
+      synth = SyntacticSynth(engine: engine, presetSpec: selectedPreset.spec)
+    }
   }
 
   private func showSaveDialog() {

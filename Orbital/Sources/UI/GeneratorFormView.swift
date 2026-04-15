@@ -27,6 +27,7 @@ struct GeneratorFormView: View {
   @State private var ttPowerSequenceText: String
   @State private var randomSeed: Int
   @State private var seedLocked: Bool
+  @State private var melody: GeneratorMelody
 
   private static let rootNotes = ["C", "C#", "Db", "D", "Eb", "E", "F", "F#", "Gb", "G", "Ab", "A", "Bb", "B"]
 
@@ -46,12 +47,14 @@ struct GeneratorFormView: View {
     _ttPowerSequenceText = State(initialValue: ttSequence.map(String.init).joined(separator: ","))
     _randomSeed = State(initialValue: params.randomSeed ?? Int.random(in: 0...Int.max))
     _seedLocked = State(initialValue: params.randomSeed != nil)
+    _melody = State(initialValue: params.melody ?? .none)
   }
 
   var body: some View {
     Form {
       tonalitySection
       progressionSection
+      melodySection
       rangeSection
       timingSection
       randomizationSection
@@ -83,6 +86,7 @@ struct GeneratorFormView: View {
     .onChange(of: upperVoiceHighOctave) { _, _ in applyIfLive() }
     .onChange(of: tPowerSequenceText) { _, _ in applyIfLive() }
     .onChange(of: ttPowerSequenceText) { _, _ in applyIfLive() }
+    .onChange(of: melody) { _, _ in applyIfLive() }
   }
 
   // MARK: - Sections
@@ -132,6 +136,16 @@ struct GeneratorFormView: View {
           .font(.caption)
           .foregroundStyle(.secondary)
         Slider(value: $beatsPerChord, in: 1...16, step: 1)
+      }
+    }
+  }
+
+  private var melodySection: some View {
+    Section("Melody") {
+      Picker("Melody", selection: $melody) {
+        ForEach(GeneratorMelody.allCases, id: \.self) { choice in
+          Text(choice.displayName).tag(choice)
+        }
       }
     }
   }
@@ -195,7 +209,8 @@ struct GeneratorFormView: View {
       upperVoiceHighOctave: upperVoiceHighOctave,
       tPowerSequence: Self.parsePowerSequence(tPowerSequenceText),
       ttPowerSequence: Self.parsePowerSequence(ttPowerSequenceText),
-      randomSeed: seedLocked ? randomSeed : nil
+      randomSeed: seedLocked ? randomSeed : nil,
+      melody: melody == .none ? nil : melody
     )
   }
 

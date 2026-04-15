@@ -200,6 +200,11 @@ struct ScoreTrackSyntax: Codable {
     /// and subOctaveSine for the bass family.
     let gmProgram: Int?
 
+    /// Opts the random-pad generator into the plucked-or-struck constraint
+    /// bundle (fast attack, short decay, narrow chorus, slight padSynth
+    /// stretch). Only meaningful when presetFilename is nil/"randomPad".
+    let pluckedOrStruck: Bool?
+
     /// The ordered sequence of notes for this track.
     /// Total durationBeats across all notes should equal totalBeats for clean looping.
     let notes: [ScoreNoteSyntax]
@@ -212,6 +217,7 @@ struct ScoreTrackSyntax: Codable {
         voicing: VoicingStyle? = nil,
         sustainFraction: Double? = nil,
         gmProgram: Int? = nil,
+        pluckedOrStruck: Bool? = nil,
         notes: [ScoreNoteSyntax]
     ) {
         self.name = name
@@ -221,6 +227,7 @@ struct ScoreTrackSyntax: Codable {
         self.voicing = voicing
         self.sustainFraction = sustainFraction
         self.gmProgram = gmProgram
+        self.pluckedOrStruck = pluckedOrStruck
         self.notes = notes
     }
 }

@@ -236,9 +236,16 @@ struct PatternSyntax: Codable, Sendable {
 
 /// Resolves a preset filename to a PresetSyntax.
 /// nil or "randomPad" → fresh random pad preset; any other string → load from the presets bundle directory.
-func resolvePresetSpec(filename: String?, gmProgram: Int? = nil, characteristicDuration: CoreFloat? = nil, resourceBaseURL: URL?) -> PresetSyntax {
+/// `pluckedOrStruck` opts into the impulse-excited-string constraint bundle for random pads only;
+/// it has no effect when `filename` names a hand-authored preset (which should carry its own envelope).
+func resolvePresetSpec(filename: String?, gmProgram: Int? = nil, characteristicDuration: CoreFloat? = nil,
+                       pluckedOrStruck: Bool = false, resourceBaseURL: URL?) -> PresetSyntax {
   guard let filename, filename != "randomPad" else {
-    return makeRandomPadPreset(gmProgram: gmProgram, characteristicDuration: characteristicDuration)
+    return makeRandomPadPreset(
+      gmProgram: gmProgram,
+      characteristicDuration: characteristicDuration,
+      pluckedOrStruck: pluckedOrStruck
+    )
   }
   return decodeJSON(PresetSyntax.self, from: filename + ".json", subdirectory: "presets", resourceBaseURL: resourceBaseURL)
 }

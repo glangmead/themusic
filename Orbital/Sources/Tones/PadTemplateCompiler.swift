@@ -96,8 +96,8 @@ enum PadTemplateCompiler {
       vibratoRate: vibratoRate,
       crossfadeRate: crossfadeRate,
       filterLFORate: filterLFORate,
-      chorusCentRadius: Int(lerp(0, 30, s.width)),
-      chorusNumVoices: 2,
+      chorusCentRadius: t.chorusCentRadius ?? Int(lerp(0, 30, s.width)),
+      chorusNumVoices: t.chorusNumVoices ?? 2,
       gritAmount: s.grit
     )
   }

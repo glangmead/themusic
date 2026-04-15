@@ -169,6 +169,23 @@ enum GeneratorScaleType: String, Codable, CaseIterable {
   }
 }
 
+// MARK: - GeneratorMelody
+
+/// Optional melodic track layered on top of the bass + upper voices.
+/// `.none` adds no melody track; other cases add one track with a specific
+/// rhythmic/pitch pattern and its own GM program.
+enum GeneratorMelody: String, Codable, CaseIterable {
+  case none
+  case pluckedArpeggio
+
+  var displayName: String {
+    switch self {
+    case .none:            return "None"
+    case .pluckedArpeggio: return "Plucked Arpeggio"
+    }
+  }
+}
+
 // MARK: - GeneratorSyntax
 
 /// Top-level Codable specification for the chorale-based generator.
@@ -189,6 +206,10 @@ struct GeneratorSyntax: Codable, Equatable {
   var tPowerSequence: [Int]?           // used when motion == .tPowers
   var ttPowerSequence: [Int]?          // used when motion == .ttPowers
   var randomSeed: Int?                 // nil → pick new seed at generation time
+  /// Optional melodic layer. nil = no melody track (back-compat for JSONs
+  /// that predate the field). Decoded via auto-synthesis of Codable —
+  /// missing key stays nil because the type is Optional.
+  var melody: GeneratorMelody?
 
   init(
     rootNote: String = "C",
@@ -204,7 +225,8 @@ struct GeneratorSyntax: Codable, Equatable {
     upperPresetNames: [String]? = nil,
     tPowerSequence: [Int]? = nil,
     ttPowerSequence: [Int]? = nil,
-    randomSeed: Int? = nil
+    randomSeed: Int? = nil,
+    melody: GeneratorMelody? = nil
   ) {
     self.rootNote = rootNote
     self.scaleType = scaleType
@@ -220,5 +242,6 @@ struct GeneratorSyntax: Codable, Equatable {
     self.tPowerSequence = tPowerSequence
     self.ttPowerSequence = ttPowerSequence
     self.randomSeed = randomSeed
+    self.melody = melody
   }
 }

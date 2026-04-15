@@ -59,6 +59,7 @@ enum ScorePatternCompiler {
                 filename: trackSyntax.presetFilename,
                 gmProgram: trackSyntax.gmProgram,
                 characteristicDuration: characteristicDuration,
+                pluckedOrStruck: trackSyntax.pluckedOrStruck ?? false,
                 resourceBaseURL: resourceBaseURL
             )
             let voices = trackSyntax.numVoices ?? 12
@@ -117,6 +118,7 @@ enum ScorePatternCompiler {
                 filename: trackSyntax.presetFilename,
                 gmProgram: trackSyntax.gmProgram,
                 characteristicDuration: medianSustain(sustains),
+                pluckedOrStruck: trackSyntax.pluckedOrStruck ?? false,
                 resourceBaseURL: resourceBaseURL
             )
             return TrackInfo(id: i, patternName: trackSyntax.name, presetSpec: presetSpec)

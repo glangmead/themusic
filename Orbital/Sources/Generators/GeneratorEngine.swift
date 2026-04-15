@@ -40,6 +40,7 @@ struct SeededRNG {
 
 // MARK: - GeneratorEngine
 
+// swiftlint:disable:next type_body_length
 struct GeneratorEngine {
 
   // MARK: Public entry point
@@ -93,33 +94,33 @@ struct GeneratorEngine {
 
     case .shuttle:
       let romans = isMinorScale(params.scaleType) ? ["i", "V"] : ["I", "V"]
-      appendRomanSequence(romans, bpc: bpc, startBeat: 0, to: &events)
+      appendRomanSequence(romans, chordType: params.chordType, bpc: bpc, startBeat: 0, to: &events)
 
     case .plagal:
       let romans = isMinorScale(params.scaleType) ? ["i", "iv"] : ["I", "IV"]
-      appendRomanSequence(romans, bpc: bpc, startBeat: 0, to: &events)
+      appendRomanSequence(romans, chordType: params.chordType, bpc: bpc, startBeat: 0, to: &events)
 
     case .fourChords:
       let romans = isMinorScale(params.scaleType) ? ["i", "VII", "III", "VII"] : ["I", "V", "vi", "IV"]
-      appendRomanSequence(romans, bpc: bpc, startBeat: 0, to: &events)
+      appendRomanSequence(romans, chordType: params.chordType, bpc: bpc, startBeat: 0, to: &events)
 
     case .oneLoop:
       let romans = isMinorScale(params.scaleType) ? ["i", "VII", "iv"] : ["I", "V", "IV"]
-      appendRomanSequence(romans, bpc: bpc, startBeat: 0, to: &events)
+      appendRomanSequence(romans, chordType: params.chordType, bpc: bpc, startBeat: 0, to: &events)
 
     case .twoLoop:
       let romans = isMinorScale(params.scaleType) ? ["i", "VII", "VI", "iv"] : ["I", "bVII", "bVI", "IV"]
-      appendRomanSequence(romans, bpc: bpc, startBeat: 0, to: &events)
+      appendRomanSequence(romans, chordType: params.chordType, bpc: bpc, startBeat: 0, to: &events)
 
     case .descendingThirds:
       let romans = isMinorScale(params.scaleType) ? ["i", "VI", "iv", "ii"] : ["I", "vi", "IV", "ii"]
-      appendRomanSequence(romans, bpc: bpc, startBeat: 0, to: &events)
+      appendRomanSequence(romans, chordType: params.chordType, bpc: bpc, startBeat: 0, to: &events)
 
     case .descendingFifths:
       let romans = isMinorScale(params.scaleType)
         ? ["i", "iv", "VII", "III", "VI", "ii", "V", "i"]
         : ["I", "IV", "vii", "iii", "vi", "ii", "V", "I"]
-      appendRomanSequence(romans, bpc: bpc, startBeat: 0, to: &events)
+      appendRomanSequence(romans, chordType: params.chordType, bpc: bpc, startBeat: 0, to: &events)
 
     case .randomWalk:
       var beat = bpc
@@ -309,13 +310,128 @@ struct GeneratorEngine {
       gmProgram: upperVoiceGmProgram,                    // 89 = warm pad
       notes: upperNotes
     ))
+
+    if let melodyTrack = buildMelodyTrack(
+      params, chordSize: chordSize, chordCount: chordCount,
+      timeline: timeline, bpc: bpc
+    ) {
+      tracks.append(melodyTrack)
+    }
     return tracks
   }
 
+  // MARK: - Melody
+
+  /// Build an optional melody track for `params.melody`. Returns nil for
+  /// `.none` or when the melody doesn't apply to the current chord size.
+  private static func buildMelodyTrack(
+    _ params: GeneratorSyntax,
+    chordSize: Int,
+    chordCount: Int,
+    timeline: HarmonyTimeline,
+    bpc: Double
+  ) -> ScoreTrackSyntax? {
+    switch params.melody ?? .none {
+    case .none:
+      return nil
+    case .pluckedArpeggio:
+      return buildPluckedArpeggioTrack(
+        chordSize: chordSize, chordCount: chordCount,
+        timeline: timeline, bpc: bpc
+      )
+    }
+  }
+
+  /// Fractional onset times inside each chord window for the plucked arpeggio,
+  /// keyed by chord size. 2/3/4 chord tones map to 2/3/4 equally or
+  /// user-specified fractional positions summing well inside [0, 1].
+  private static func arpeggioFractions(chordSize: Int) -> [Double] {
+    switch chordSize {
+    case 2: return [0.3, 0.6]
+    case 3: return [0.25, 0.5, 0.75]
+    case 4: return [0.2, 0.4, 0.6, 0.8]
+    default: return []
+    }
+  }
+
+  private static func buildPluckedArpeggioTrack(
+    chordSize: Int, chordCount: Int,
+    timeline: HarmonyTimeline, bpc: Double
+  ) -> ScoreTrackSyntax? {
+    let fractions = arpeggioFractions(chordSize: chordSize)
+    guard !fractions.isEmpty else { return nil }
+
+    let arpeggioOctave = 4
+    var notes: [ScoreNoteSyntax] = []
+
+    for i in 0..<chordCount {
+      let beat = bpc * Double(i)
+      let (key, chord) = timeline.state(at: beat, loop: false)
+      let hierarchy = PitchHierarchy(key: key, chord: chord)
+      let midis = arpeggioMidis(hierarchy: hierarchy, octave: arpeggioOctave)
+      guard !midis.isEmpty else { continue }
+
+      // Initial rest from chord onset to the first arp attack.
+      let firstFraction = fractions[0]
+      if firstFraction > 0 {
+        notes.append(ScoreNoteSyntax(type: .rest, durationBeats: firstFraction * bpc))
+      }
+      // Emit each arp note with onset-to-onset duration equal to the gap to
+      // the next fraction (or to 1.0 for the last note).
+      for (j, fraction) in fractions.enumerated() {
+        let nextFraction: Double = (j + 1 < fractions.count) ? fractions[j + 1] : 1.0
+        let duration = (nextFraction - fraction) * bpc
+        let midi = midis[min(j, midis.count - 1)]
+        notes.append(ScoreNoteSyntax(type: .absolute, durationBeats: duration, midi: midi))
+      }
+    }
+
+    return ScoreTrackSyntax(
+      name: "Arpeggio",
+      presetFilename: nil,                                // → random pad with piano constraints
+      numVoices: 2,
+      octave: arpeggioOctave,
+      voicing: .closed,
+      sustainFraction: 1.0,
+      gmProgram: arpeggioPianoGmProgram,                  // 0 = acoustic grand
+      pluckedOrStruck: true,                              // fast attack, short decay, narrow chorus, slight stretch
+      notes: notes
+    )
+  }
+
+  /// Non-inverted chord-tone MIDI values in the given octave, ascending.
+  /// Octave-bumps any successive pitch that would otherwise fall at or below
+  /// its predecessor, so scale-wrap chord degrees (e.g. T-powers past the
+  /// octave) still produce a monotonic arpeggio.
+  private static func arpeggioMidis(hierarchy: PitchHierarchy, octave: Int) -> [Int] {
+    let intervals = hierarchy.key.scale.intervals
+    let scaleSize = intervals.count
+    guard scaleSize > 0 else { return [] }
+    let rootPC = Int(hierarchy.key.root.canonicalNote.noteNumber) % 12
+    let baseMidi = (octave + 1) * 12
+    let perturbs = hierarchy.chord.perturbations
+    var lastMidi = Int.min
+    var result: [Int] = []
+    for (idx, degree) in hierarchy.chord.degrees.enumerated() {
+      let normDegree = ((degree % scaleSize) + scaleSize) % scaleSize
+      var semitones = intervals[normDegree].semitones
+      if let perturbs, idx < perturbs.count, case .chromatic(let delta) = perturbs[idx] {
+        semitones += delta
+      }
+      var midi = baseMidi + rootPC + semitones
+      while midi <= lastMidi { midi += 12 }
+      lastMidi = midi
+      result.append(max(0, min(127, midi)))
+    }
+    return result
+  }
+
   // GM program defaults: bass family (32–39) carries noDetune/subOctaveSine
-  // constraints; synth pad family (88–95) gets slow attacks and soft filters.
+  // constraints; synth pad family (88–95) gets slow attacks and soft filters;
+  // piano family (0–7) carries the plucked/struck constraint bundle.
   private static let bassGmProgram = 33                  // Electric Bass (finger)
   private static let upperVoiceGmProgram = 89            // Warm Pad
+  private static let arpeggioPianoGmProgram = 0          // Acoustic Grand
 
   // MARK: - Helpers
 
@@ -369,14 +485,27 @@ struct GeneratorEngine {
     return Key(root: noteClass, scale: scaleValue)
   }
 
+  /// Figured-bass suffix that turns a plain Roman numeral into a chord of the
+  /// given size. Empty for triad (the parser's default). "7" for seventh.
+  /// Dyads have no standard figured-bass suffix; left empty until we teach
+  /// the parser about "5" (power-chord) notation.
+  private static func figuredBassSuffix(for chordType: GeneratorChordType) -> String {
+    switch chordType {
+    case .seventh: return "7"
+    case .triad, .dyad: return ""
+    }
+  }
+
   private static func appendRomanSequence(
-    _ romans: [String], bpc: Double, startBeat: Double,
+    _ romans: [String], chordType: GeneratorChordType,
+    bpc: Double, startBeat: Double,
     to events: inout [ChordEventSyntax]
   ) {
     events.removeAll { $0.beat == 0 }
+    let suffix = figuredBassSuffix(for: chordType)
     for (i, roman) in romans.enumerated() {
       events.append(ChordEventSyntax(
-        beat: startBeat + bpc * Double(i), op: "setRoman", roman: roman
+        beat: startBeat + bpc * Double(i), op: "setRoman", roman: roman + suffix
       ))
     }
   }

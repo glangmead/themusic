@@ -221,7 +221,7 @@ private struct PresetFormContent: View {
         padTemplate: nil,
         padSynth: newPadSynth
       )
-      synth.loadPreset(newSpec)
+      synth.loadPreset(newSpec, preserveUserValues: true)
     }
   }
 }

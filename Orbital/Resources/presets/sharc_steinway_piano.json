@@ -1,0 +1,75 @@
+{
+  "name": "SHARC Steinway Piano",
+  "rose": {
+    "freq": 0.05,
+    "leafFactor": 3,
+    "phase": 0,
+    "amp": 0
+  },
+  "effects": {
+    "reverbPreset": 4,
+    "reverbWetDryMix": 20,
+    "delayTime": 0,
+    "delayFeedback": 0,
+    "delayLowPassCutoff": 0,
+    "delayWetDryMix": 0
+  },
+  "arrow": {
+    "compose": [
+      { "prod": [
+        { "const": { "name": "overallAmp", "val": 1.0 } },
+        { "compose": [
+          { "prod": [
+            { "const": { "name": "freq", "val": 300 } },
+            { "constOctave": { "name": "osc1Octave", "val": 0 } },
+            { "constCent": { "name": "osc1CentDetune", "val": 0 } },
+            { "identity": {} }
+          ]},
+          { "padSynthWavetable": {
+            "name": "osc1",
+            "params": {
+              "baseShape": "1/n\u00b2",
+              "tilt": 0.0,
+              "bandwidthCents": 35.0,
+              "bwScale": 1.0,
+              "profileShape": "Gaussian",
+              "stretch": 1.01,
+              "selectedInstrument": "amy_piano_steinway",
+              "envelopeCoefficients": null
+            },
+            "width": { "const": { "name": "osc1Width", "val": 1 } }
+          }},
+          { "choruser": { "name": "osc1Choruser", "valueToChorus": "freq", "chorusCentRadius": 2, "chorusNumVoices": 3} },
+
+        ]},
+        { "envelope": {
+          "name": "ampEnv",
+          "attack": 0.003,
+          "decay": 4.0,
+          "sustain": 0.0,
+          "release": 0.08,
+          "scale": 1
+        }}
+      ]},
+      { "lowPassFilter": {
+        "name": "filter",
+        "cutoff": { "sum": [
+          { "const": { "name": "cutoffLow", "val": 150 } },
+          { "prod": [
+            { "const": { "name": "freq", "val": 300 } },
+            { "const": { "name": "cutoffMultiplier", "val": 12 } },
+            { "envelope": {
+              "name": "filterEnv",
+              "attack": 0.0,
+              "decay": 0.12,
+              "sustain": 0.25,
+              "release": 0.08,
+              "scale": 1
+            }}
+          ]}
+        ]},
+        "resonance": { "const": { "name": "resonance", "val": 0.8 } }
+      }}
+    ]
+  }
+}
