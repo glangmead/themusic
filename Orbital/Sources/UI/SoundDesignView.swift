@@ -34,6 +34,9 @@ struct SoundDesignView: View {
               }
             }
             ToolbarItem(placement: .topBarTrailing) {
+              Button("Random pad", systemImage: "dice", action: loadRandomPad)
+            }
+            ToolbarItem(placement: .topBarTrailing) {
               Button("Save preset", systemImage: "square.and.arrow.down", action: showSaveDialog)
                 .labelStyle(.iconOnly)
             }
@@ -88,6 +91,11 @@ struct SoundDesignView: View {
     } else {
       synth = SyntacticSynth(engine: engine, presetSpec: selectedPreset.spec)
     }
+  }
+
+  private func loadRandomPad() {
+    let spec = makeRandomPadPreset()
+    synth?.loadPreset(spec)
   }
 
   private func showSaveDialog() {

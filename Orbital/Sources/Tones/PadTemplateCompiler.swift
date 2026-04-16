@@ -215,9 +215,9 @@ enum PadTemplateCompiler {
         .const(name: "cutoffMultiplier", val: params.cutoffMultiplier),
         filterEnv,
         .sum(of: [
-          .const(name: "filterLFOShift", val: 0.5),
+          .const(name: "filterLFOShift", val: 0.8),
           .prod(of: [
-            .const(name: "filterLFOScale", val: 0.5),
+            .const(name: "filterLFOScale", val: 0.2),
             .compose(arrows: [
               .prod(of: [.const(name: "filterLFORate", val: lfoRate), .identity]),
               .osc(name: "filterLFO", shape: .sine, width: .const(name: "filterLFOWidth", val: 1))

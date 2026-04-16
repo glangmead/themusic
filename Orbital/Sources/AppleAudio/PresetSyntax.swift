@@ -36,6 +36,13 @@ struct PresetSyntax: Codable, Sendable {
   let padTemplate: PadTemplateSyntax? // high-level template; compiled to arrow on first use when arrow is absent
   let padSynth: PADSynthSyntax? // PADsynth algorithm params; compiled to per-note wavetables
 
+  /// The effective arrow: prefers the explicit `arrow` field, falls back to
+  /// compiling the `padTemplate` into an ArrowSyntax.
+  var effectiveArrow: ArrowSyntax? {
+    if let arrow { return arrow }
+    return padTemplate.map { PadTemplateCompiler.compile($0) }
+  }
+
   /// The effective PADsynth parameters: prefers the explicit `padSynth` field,
   /// falls back to extracting from the first `padSynthWavetable` node in the arrow tree.
   var effectivePadSynth: PADSynthSyntax? {

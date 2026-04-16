@@ -77,7 +77,7 @@ The project has a strict layered architecture. Lower layers must not reference o
 3. **VoiceLedger**: Note-to-voice-index allocator using Set-based availability tracking and queue-based reuse ordering. Used at both the Preset level (polyphony) and SpatialPreset level (spatial routing)
 4. **Preset** (`NoteHandler`): A polyphonic sound source plus effects chain (reverb, delay, distortion, mixer). For Arrow presets: compiles N copies of an `ArrowSyntax`, sums via `ArrowSum`, wraps in `AudioGate`, owns a `VoiceLedger` for voice allocation. For Sampler presets: wraps one `AVAudioUnitSampler` with a 1-voice `VoiceLedger` for note tracking. Exposes merged `handles` from all internal voices. Created from JSON via `PresetSyntax.compile(numVoices:)`
 5. **SpatialPreset** (`NoteHandler`): Spatial audio distributor. Owns N Presets (typically 12), each at a different spatial position. Routes notes to Presets via a spatial-level `VoiceLedger`. Aggregates `handles` from all Presets. `notesOn`/`notesOff` chord API with `independentSpatial` parameter for per-note spatial ownership. For Arrow presets: 12 Presets x 1 voice each. For Sampler presets: 12 Presets x 1 sampler each (one note per spatial position)
-6. **Music Generation**: `Sequencer` (wraps `AVAudioSequencer`, per-track `NoteHandler` routing via `setHandler(_:forTrack:)`), `MusicPattern` (multi-track generative playback using `SpatialPreset`)
+6. **Music Generation**: `GeneratorSyntax` is a high-level song design, selecting how a piece evolves through chords and how the melody is generated. There is randomness available as well as prescribed progressions. `ScorePatternSyntax` is the format that a generator compiles to, and specifies a scale, chord, and melody as a nested hierarchy with operations (events) mutating them dynamically on a grid-based beat-based timeline. This is inspired by the programming language Arca, and the book Tonality by Dmitri Tymoczko, who talks about how chords as small scales moving inside diatonic scales, inside chromatic space. See `QuadHierarchy.swift` and `HierarchyGenerators.swift`. Beneath the Score level is `TablePatternSyntax`, which is a very general method for expressing generative music through the use of functions acting upon (modulating) parameters, including those inside other modulators. 
 
 ## Tests
 
@@ -86,6 +86,8 @@ The project has over 100 unit tests across files in `OrbitalTests/`, using the S
 Tests avoid AVFoundation by using `Preset(arrowSyntax:numVoices:initEffects: false)` and working directly with `ArrowSyntax.compile()`. The `initEffects` parameter (defaults to `true`) skips creation of `AVAudioUnitReverb`/`AVAudioUnitDelay`/`AVAudioMixerNode`. Shared test utilities (`renderArrow`, `rms`, `zeroCrossings`, `loadPresetSyntax`, `makeOscArrow`) live in `ArrowDSPPipelineTests.swift`.
 
 ## Audio performance rules
+
+Don't let me forget that sometimes the clicks and pops I hear, e.g. upon quitting, or tapping some UI elements, happen only while attached to the debugger, and don't reproduce if I run the app outside the debugger. Some clicks and pops do take place outside the debugger, but the debugger adds more.
 
 The render callback in `AVAudioSourceNode+withSource.swift` runs on a real-time audio thread. CPU budget matters — the user actively profiles with Instruments.
 

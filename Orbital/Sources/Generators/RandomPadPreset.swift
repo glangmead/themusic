@@ -338,7 +338,7 @@ private func printRandomPadDiagnostic(gmProgram: Int?, characteristicDuration: C
     │ sliders: smooth=\(sliders.smooth)  bite=\(sliders.bite)  motion=\(sliders.motion)  width=\(sliders.width)  grit=\(sliders.grit)
     │ amp env: atk=\(atkStr)  dec=\(template.ampDecay)  sus=\(template.ampSustain)  rel=\(relStr)
     │ filt env: atk=\(template.filterEnvAttack)  dec=\(template.filterEnvDecay)  sus=\(template.filterEnvSustain)  rel=\(template.filterEnvRelease)
-    │ filt cutoff low: \(template.filterCutoffLow) Hz
+    │ filt cutoff low: \(template.filterCutoffLow) Hz, cutoff = freq * \(template.filterCutoffMultiplier)
     │ rose: amp=\(String(format: "%.2f", rose.amp))  freq=\(String(format: "%.4f", rose.freq)) Hz  k=\(Int(rose.leafFactor))
     └───────────────────────────────────────────
     """)
@@ -436,12 +436,13 @@ func makeRandomPadPreset(gmProgram: Int? = nil, characteristicDuration: CoreFloa
     vibratoDepth: FloatSampler(min: 0.0001, max: 0.001, dist: .exponential).next()!,
     ampAttack: ampAttack, ampDecay: ampDecay,
     ampSustain: constraints.ampSustainValue ?? 1.0, ampRelease: ampRelease,
-    filterCutoffMultiplier: constraints.filterCutoffMaxMultiplier, filterResonance: nil,
+    filterCutoffMultiplier: constraints.filterCutoffMaxMultiplier,
+    filterResonance: 1.7,
     filterLFORate: filterLFORate,
-    filterEnvAttack: SongRNG.float(in: 0.02...0.2),
-    filterEnvDecay: SongRNG.float(in: 0.2...0.8),
+    filterEnvAttack: SongRNG.float(in: 1...4),
+    filterEnvDecay: SongRNG.float(in: 1...4),
     filterEnvSustain: SongRNG.float(in: 0.5...0.95),
-    filterEnvRelease: SongRNG.float(in: 0.2...0.8),
+    filterEnvRelease: SongRNG.float(in: 1...4),
     filterCutoffLow: SongRNG.float(in: profile.filterCutoffRange),
     mood: .custom, sliders: sliders,
     chorusCentRadius: constraints.chorusOverride?.cents,

@@ -219,7 +219,8 @@ class SyntacticSynth {
     }
     // Write current parameter values back into the arrow tree so saved
     // JSON reflects slider changes (filter cutoff, envelope times, etc.).
-    var savedArrow = presetSpec.arrow
+    // effectiveArrow resolves padTemplate → arrow when arrow is nil.
+    var savedArrow = presetSpec.effectiveArrow
     if let arrow = savedArrow, let handler = arrowHandler {
       savedArrow = arrow.applyingParameterValues(
         floats: handler.floatValues,
@@ -245,8 +246,10 @@ class SyntacticSynth {
   }
 
   private func buildHandlerAndReadValues() {
-    // Build ArrowHandler from the syntax tree + aggregated handles
-    if let arrowSyntax = presetSpec.arrow {
+    // Build ArrowHandler from the syntax tree + aggregated handles.
+    // effectiveArrow resolves padTemplate → arrow when arrow is nil,
+    // so pad-template presets (e.g. random pads) get editable parameters.
+    if let arrowSyntax = presetSpec.effectiveArrow {
       let handler = ArrowHandler(syntax: arrowSyntax)
       if let handles = spatialPreset?.handles {
         handler.attachHandles(handles)
