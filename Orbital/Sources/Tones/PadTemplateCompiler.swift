@@ -32,8 +32,7 @@ enum PadTemplateCompiler {
   // MARK: - Public API
 
   static func compile(_ t: PadTemplateSyntax) -> ArrowSyntax {
-    let sliders = resolvedSliders(for: t)
-    let params  = deriveParams(from: t, sliders: sliders)
+    let params = deriveParams(from: t)
     let branches = t.oscillators.enumerated().map { idx, desc in
       buildOscBranch(index: idx, desc: desc, params: params, t: t)
     }
@@ -54,51 +53,22 @@ enum PadTemplateCompiler {
     return .compose(arrows: steps)
   }
 
-  // MARK: - Slider resolution
-
-  private static func resolvedSliders(for t: PadTemplateSyntax) -> PadSliders {
-    if let explicit = t.sliders { return explicit }
-    switch t.mood {
-    case .cosmic:   return .cosmicDefaults
-    case .dark:     return .darkDefaults
-    case .warm:     return .warmDefaults
-    case .ethereal: return .etherealDefaults
-    case .gritty:   return .grittyDefaults
-    case .custom:   return .warmDefaults
-    }
-  }
-
   // MARK: - Parameter derivation
 
-  private static func lerp(_ lo: CoreFloat, _ hi: CoreFloat, _ x: CoreFloat) -> CoreFloat {
-    lo + x * (hi - lo)
-  }
-
-  private static func deriveParams(from t: PadTemplateSyntax, sliders s: PadSliders) -> PadCompiledParams {
-    // Slow modulation base (crossfade, filter LFO): 0.05–1.0 Hz.
-    // Vibrato uses a separate range (1–6 Hz) so they occupy different timescales.
-    let slowBase      = lerp(0.05, 1.0, s.motion)
-    let vibratoRate   = t.vibratoRate    ?? lerp(1.0, 6.0, s.motion)
-    let crossfadeRate = t.crossfadeRate  ?? slowBase
-    let cutoffMult    = t.filterCutoffMultiplier ?? lerp(2.0, 4.0, s.bite)
-    let resonance     = t.filterResonance        ?? lerp(0.3, 1.5, s.grit)
-    let ampAttack     = t.ampAttack  ?? lerp(0.5, 8.0, s.smooth)
-    let ampRelease    = t.ampRelease ?? lerp(0.5, 8.0, s.smooth)
-    // Filter LFO rate at a prime-ratio offset from the slow base so it never locks with crossfade.
-    let filterLFORate = t.filterLFORate.map { $0 > 0 ? $0 : slowBase * 1.37 }
-    return PadCompiledParams(
-      ampAttack: ampAttack,
+  private static func deriveParams(from t: PadTemplateSyntax) -> PadCompiledParams {
+    PadCompiledParams(
+      ampAttack: t.ampAttack,
       ampDecay: t.ampDecay,
       ampSustain: t.ampSustain,
-      ampRelease: ampRelease,
-      cutoffMultiplier: cutoffMult,
-      resonance: resonance,
-      vibratoRate: vibratoRate,
-      crossfadeRate: crossfadeRate,
-      filterLFORate: filterLFORate,
-      chorusCentRadius: t.chorusCentRadius ?? Int(lerp(0, 30, s.width)),
-      chorusNumVoices: t.chorusNumVoices ?? 2,
-      gritAmount: s.grit
+      ampRelease: t.ampRelease,
+      cutoffMultiplier: t.filterCutoffMultiplier,
+      resonance: t.filterResonance,
+      vibratoRate: t.vibratoRate,
+      crossfadeRate: t.crossfadeRate,
+      filterLFORate: t.filterLFORate,
+      chorusCentRadius: t.chorusCentRadius,
+      chorusNumVoices: t.chorusNumVoices,
+      gritAmount: t.gritAmount
     )
   }
 

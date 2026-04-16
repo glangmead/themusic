@@ -86,9 +86,8 @@ private extension Array where Element == PadConstraint {
 private struct GMPadProfile {
   let shapes: [BasicOscillator.OscShape]  // oscillator shapes appropriate for this family
   let wavetableNames: [String]            // built-in WavetableLibrary table names for this family
-  let smoothRange: ClosedRange<CoreFloat>  // controls amp attack/release via lerp(0.5, 8.0, smooth)
+  let ampAttackRange: ClosedRange<CoreFloat>  // amp attack in seconds (fallback when characteristicDuration is nil)
   let filterCutoffRange: ClosedRange<CoreFloat>  // filterCutoffLow: brightness floor
-  let gritRange: ClosedRange<CoreFloat>
   let vibratoWeight: Double  // probability of enabling vibrato (0–1)
   let constraints: [PadConstraint]
 }
@@ -147,24 +146,24 @@ private extension GMPadProfile {
     .padSynthStretch(1.01)
   ]
 
-  // Slower attack = higher smooth value (smooth drives lerp(0.5, 8.0, smooth) for ampAttack)
+  // ampAttackRange: pre-computed seconds (previously derived via lerp(0.5, 8.0, smoothRange)).
+  // Also used for ampRelease when characteristicDuration is nil.
   // swiftlint:disable line_length comma
-  static let `default` = GMPadProfile(shapes: [.sine, .triangle, .sawtooth, .square], wavetableNames: ["fm_bell", "fm_electric", "fm_metallic", "fm_shallow", "fm_deep", "bright", "warm", "organ", "hollow"], smoothRange: 0.2...0.8,  filterCutoffRange: 60...140,  gritRange: 0.0...0.0,  vibratoWeight: 0.4,  constraints: [])
-  static let piano     = GMPadProfile(shapes: [.triangle, .square],                   wavetableNames: ["fm_electric", "fm_shallow", "bright", "warm"],                                                         smoothRange: 0.15...0.45, filterCutoffRange: 80...200,  gritRange: 0.0...0.0,  vibratoWeight: 0.1,  constraints: [])
-  static let chromPerc = GMPadProfile(shapes: [.sine, .triangle],                     wavetableNames: ["fm_bell", "fm_metallic", "bright"],                                                                    smoothRange: 0.2...0.5,   filterCutoffRange: 100...300, gritRange: 0.0...0.0,  vibratoWeight: 0.0,  constraints: [])
-  static let organ     = GMPadProfile(shapes: [.square, .sawtooth],                   wavetableNames: ["organ", "hollow", "bright"],                                                                           smoothRange: 0.0...0.25,  filterCutoffRange: 60...150,  gritRange: 0.0...0.0,  vibratoWeight: 0.5,  constraints: [])
-  static let guitar    = GMPadProfile(shapes: [.triangle, .sawtooth],                 wavetableNames: ["fm_shallow", "warm", "bright"],                                                                        smoothRange: 0.15...0.45, filterCutoffRange: 60...150,  gritRange: 0.0...0.0,  vibratoWeight: 0.25, constraints: [])
+  static let `default` = GMPadProfile(shapes: [.triangle, .sawtooth, .square], wavetableNames: ["fm_bell", "fm_electric", "fm_metallic", "fm_shallow", "fm_deep", "bright", "warm", "organ", "hollow"], ampAttackRange: 2.0...6.5,   filterCutoffRange: 60...140,  vibratoWeight: 0.4,  constraints: [])
+  static let piano     = GMPadProfile(shapes: [.triangle, .square],                   wavetableNames: ["fm_electric", "fm_shallow", "bright", "warm"],                                                         ampAttackRange: 1.625...3.875, filterCutoffRange: 80...200,  vibratoWeight: 0.1,  constraints: [])
+  static let chromPerc = GMPadProfile(shapes: [.sine, .triangle],                     wavetableNames: ["fm_bell", "fm_metallic", "bright"],                                                                    ampAttackRange: 2.0...4.25,  filterCutoffRange: 100...300, vibratoWeight: 0.0,  constraints: [])
+  static let organ     = GMPadProfile(shapes: [.square, .sawtooth],                   wavetableNames: ["organ", "hollow", "bright"],                                                                           ampAttackRange: 0.5...2.375, filterCutoffRange: 60...150,  vibratoWeight: 0.5,  constraints: [])
+  static let guitar    = GMPadProfile(shapes: [.triangle, .sawtooth],                 wavetableNames: ["fm_shallow", "warm", "bright"],                                                                        ampAttackRange: 1.625...3.875, filterCutoffRange: 60...150,  vibratoWeight: 0.25, constraints: [])
   // Note: bass deliberately OMITS pluckedOrStruck. Its SHARC sample pool is
   // bowed contrabass (CB, CB_martele, CB_muted) and contrabassoon — none of
   // which are actually plucked/struck. A 0.5 ms attack on a hammered-bow
-  // sample exposes the raw transient and sounds brittle. The slower
-  // slider-derived attack smooths the bow/reed onset into a usable bass tone.
+  // sample exposes the raw transient and sounds brittle. The profile-derived
+  // attack smooths the bow/reed onset into a usable bass tone.
   static let bass      = GMPadProfile(
     shapes: [.sawtooth, .square],
     wavetableNames: ["fm_deep", "warm"],
-    smoothRange: 0.1...0.35,
+    ampAttackRange: 1.25...3.125,
     filterCutoffRange: 50...80,
-    gritRange: 0.0...0.0,
     vibratoWeight: 0.0,
     constraints: [
       .subOctaveSine,
@@ -172,17 +171,18 @@ private extension GMPadProfile {
       .noVibrato,
       .noFilterLFO,
       .noCrossfadeLFO,
+      .chorus(cents: 0, voices: 1),
       .noSpatialMotion,
       .filterCutoffMaxMultiplier(16.0)
     ]
   )
-  static let strings   = GMPadProfile(shapes: [.sawtooth, .triangle],                 wavetableNames: ["warm", "hollow", "fm_shallow"],                                                                        smoothRange: 0.4...0.85,  filterCutoffRange: 60...140,  gritRange: 0.0...0.0,  vibratoWeight: 0.75, constraints: [])
-  static let ensemble  = GMPadProfile(shapes: [.triangle, .sine],                     wavetableNames: ["warm", "hollow", "bright"],                                                                            smoothRange: 0.5...0.9,   filterCutoffRange: 55...120,  gritRange: 0.0...0.0,  vibratoWeight: 0.6,  constraints: [])
-  static let brass     = GMPadProfile(shapes: [.sawtooth, .square],                   wavetableNames: ["bright", "fm_deep", "fm_metallic"],                                                                    smoothRange: 0.2...0.55,  filterCutoffRange: 80...200,  gritRange: 0.0...0.0,  vibratoWeight: 0.3,  constraints: [])
-  static let reed      = GMPadProfile(shapes: [.square, .triangle],                   wavetableNames: ["hollow", "warm", "fm_shallow"],                                                                        smoothRange: 0.2...0.5,   filterCutoffRange: 70...180,  gritRange: 0.0...0.0,  vibratoWeight: 0.35, constraints: [])
-  static let pipe      = GMPadProfile(shapes: [.sine, .triangle],                     wavetableNames: ["hollow", "fm_shallow", "bright"],                                                                      smoothRange: 0.2...0.5,   filterCutoffRange: 80...200,  gritRange: 0.0...0.0,  vibratoWeight: 0.3,  constraints: [])
-  static let synthLead = GMPadProfile(shapes: [.sine, .triangle, .sawtooth, .square], wavetableNames: ["fm_bell", "fm_electric", "fm_metallic", "fm_shallow", "fm_deep", "bright", "hollow"],                 smoothRange: 0.1...0.5,   filterCutoffRange: 60...200,  gritRange: 0.0...0.0,  vibratoWeight: 0.4,  constraints: [])
-  static let synthPad  = GMPadProfile(shapes: [.sine, .triangle],                     wavetableNames: ["warm", "hollow", "fm_shallow", "fm_deep", "fm_bell"],                                                 smoothRange: 0.6...1.0,   filterCutoffRange: 50...110,  gritRange: 0.0...0.0,  vibratoWeight: 0.6,  constraints: [])
+  static let strings   = GMPadProfile(shapes: [.sawtooth, .triangle],                 wavetableNames: ["warm", "hollow", "fm_shallow"],                                                                        ampAttackRange: 3.5...6.875, filterCutoffRange: 60...140,  vibratoWeight: 0.75, constraints: [])
+  static let ensemble  = GMPadProfile(shapes: [.sawtooth, .square],                     wavetableNames: ["warm", "hollow", "bright"],                                                                            ampAttackRange: 4.25...7.25, filterCutoffRange: 55...120,  vibratoWeight: 0.6,  constraints: [])
+  static let brass     = GMPadProfile(shapes: [.sawtooth],                   wavetableNames: ["bright", "fm_deep", "fm_metallic"],                                                                    ampAttackRange: 2.0...4.625, filterCutoffRange: 80...200,  vibratoWeight: 0.3,  constraints: [])
+  static let reed      = GMPadProfile(shapes: [.square, .triangle],                   wavetableNames: ["hollow", "warm", "fm_shallow"],                                                                        ampAttackRange: 2.0...4.25,  filterCutoffRange: 70...180,  vibratoWeight: 0.35, constraints: [])
+  static let pipe      = GMPadProfile(shapes: [.square, .triangle, .sawtooth],                     wavetableNames: ["hollow", "fm_shallow", "bright"],                                                                      ampAttackRange: 2.0...4.25,  filterCutoffRange: 80...200,  vibratoWeight: 0.3,  constraints: [])
+  static let synthLead = GMPadProfile(shapes: [.triangle, .sawtooth, .square], wavetableNames: ["fm_bell", "fm_electric", "fm_metallic", "fm_shallow", "fm_deep", "bright", "hollow"],                 ampAttackRange: 1.25...4.25, filterCutoffRange: 60...200,  vibratoWeight: 0.4,  constraints: [])
+  static let synthPad  = GMPadProfile(shapes: [.sawtooth, .square ],                     wavetableNames: ["warm", "hollow", "fm_shallow", "fm_deep", "fm_bell"],                                                 ampAttackRange: 5.0...8.0,   filterCutoffRange: 50...110,  vibratoWeight: 0.6,  constraints: [])
   // swiftlint:enable line_length comma
 }
 
@@ -229,7 +229,7 @@ private func randomSharcInstrument(for gmProgram: Int?) -> String {
 /// When `stretchOverride` is non-nil, that value replaces the default stretch=1 (e.g. 1.01
 /// for plucked/struck strings to capture the slight inharmonicity of real strings).
 private func randomPadSynthOscDescriptor(gmProgram: Int?, octave: CoreFloat,
-                                         forbidDetune: Bool = false,
+                                         forbidDetune: Bool = true,
                                          stretchOverride: CoreFloat? = nil) -> PadOscDescriptor {
   let instrument = randomSharcInstrument(for: gmProgram)
   let params = PADSynthSyntax(
@@ -244,9 +244,9 @@ private func randomPadSynthOscDescriptor(gmProgram: Int?, octave: CoreFloat,
 
 /// Picks a random basic oscillator descriptor from the profile's standard shapes.
 private func randomOscDescriptor(profile: GMPadProfile, octave: CoreFloat,
-                                 forbidDetune: Bool = false) -> PadOscDescriptor {
+                                 forbidDetune: Bool = true) -> PadOscDescriptor {
   let detune: CoreFloat = forbidDetune ? 0 : SongRNG.float(in: -12...12)
-  return PadOscDescriptor(kind: .standard, shape: SongRNG.pick(profile.shapes) ?? .sine, file: nil,
+  return PadOscDescriptor(kind: .standard, shape: SongRNG.pick(profile.shapes) ?? .square, file: nil,
                           padSynthParams: nil, detuneCents: detune, octave: octave)
 }
 
@@ -309,7 +309,7 @@ private func saveRandomPadAudition(_ preset: PresetSyntax) -> (Int, String) {
 // MARK: - Diagnostic output
 
 private func printRandomPadDiagnostic(gmProgram: Int?, characteristicDuration: CoreFloat?,
-                                      template: PadTemplateSyntax, sliders: PadSliders, rose: RoseSyntax) {
+                                      template: PadTemplateSyntax, rose: RoseSyntax) {
   func oscDesc(_ osc: PadOscDescriptor) -> String {
     switch osc.kind {
     case .standard:
@@ -325,20 +325,18 @@ private func printRandomPadDiagnostic(gmProgram: Int?, characteristicDuration: C
   let profileName = gmPadProfileName(for: gmProgram)
   let gmStr = gmProgram.map { "\($0)" } ?? "nil"
   let durStr = characteristicDuration.map { String(format: "%.2f s", $0) } ?? "nil"
-  let atkStr = template.ampAttack.map { String(format: "%.3f", $0) } ?? "slider"
-  let relStr = template.ampRelease.map { String(format: "%.3f", $0) } ?? "slider"
   print("""
     ┌─ Random Pad ──────────────────────────────
     │ profile: \(profileName)  (GM \(gmStr), duration \(durStr))
     │ osc1: \(oscDesc(template.oscillators[0]))
     │ osc2: \(oscDesc(template.oscillators[1]))
-    │ crossfade: \(template.crossfade)  rate=\(template.crossfadeRate.map { String(format: "%.4f", $0) } ?? "slider") Hz
+    │ crossfade: \(template.crossfade)  rate=\(String(format: "%.4f", template.crossfadeRate)) Hz
     │ vibrato: \(template.vibratoEnabled ? "on" : "off")  depth=\(template.vibratoDepth)
     │ filter LFO: \(template.filterLFORate.map { String(format: "%.4f", $0) } ?? "off") Hz
-    │ sliders: smooth=\(sliders.smooth)  bite=\(sliders.bite)  motion=\(sliders.motion)  width=\(sliders.width)  grit=\(sliders.grit)
-    │ amp env: atk=\(atkStr)  dec=\(template.ampDecay)  sus=\(template.ampSustain)  rel=\(relStr)
+    │ amp env: atk=\(String(format: "%.3f", template.ampAttack))  dec=\(template.ampDecay)  sus=\(template.ampSustain)  rel=\(String(format: "%.3f", template.ampRelease))
     │ filt env: atk=\(template.filterEnvAttack)  dec=\(template.filterEnvDecay)  sus=\(template.filterEnvSustain)  rel=\(template.filterEnvRelease)
-    │ filt cutoff low: \(template.filterCutoffLow) Hz, cutoff = freq * \(template.filterCutoffMultiplier)
+    │ filt: cutoffLow=\(template.filterCutoffLow) Hz  mult=\(String(format: "%.2f", template.filterCutoffMultiplier))  resonance=\(String(format: "%.2f", template.filterResonance))
+    │ chorus: radius=\(template.chorusCentRadius)¢  voices=\(template.chorusNumVoices)
     │ rose: amp=\(String(format: "%.2f", rose.amp))  freq=\(String(format: "%.4f", rose.freq)) Hz  k=\(Int(rose.leafFactor))
     └───────────────────────────────────────────
     """)
@@ -357,37 +355,32 @@ func makeRandomPadPreset(gmProgram: Int? = nil, characteristicDuration: CoreFloa
   let profile = gmPadProfile(for: gmProgram)
   let constraints: [PadConstraint] =
     pluckedOrStruck ? profile.constraints + GMPadProfile.pluckedOrStruck : profile.constraints
-  let sliders = PadSliders(
-    smooth: SongRNG.float(in: profile.smoothRange),
-    bite: SongRNG.float(in: 0...1),
-    motion: 0,
-    width: SongRNG.float(in: 0...1),
-    grit: SongRNG.float(in: profile.gritRange)
-  )
   // Derive amp envelope from median note duration when available.
   // attack ≈ 20% of median sustain (50 ms – 4 s); release ≈ 30% (100 ms – 5 s).
+  // Falls back to profile's ampAttackRange when no duration is given.
   // .ampAttackCeiling clamps the result for profiles that need a fast edge;
   // .ampAttackValue forces a specific attack outright (e.g. plucked strings).
-  var ampAttack: CoreFloat? = characteristicDuration.map { clamp($0 * 0.2, min: 0.05, max: 4.0) }
+  var ampAttack: CoreFloat = characteristicDuration.map { clamp($0 * 0.2, min: 0.05, max: 4.0) }
+    ?? SongRNG.float(in: profile.ampAttackRange)
   if let ceiling = constraints.ampAttackCeiling {
-    ampAttack = Swift.min(ampAttack ?? ceiling, ceiling)
+    ampAttack = Swift.min(ampAttack, ceiling)
   }
   if let forced = constraints.ampAttackValue {
     ampAttack = forced
   }
-  let ampRelease: CoreFloat? = characteristicDuration.map { clamp($0 * 0.3, min: 0.10, max: 5.0) }
+  let ampRelease: CoreFloat = characteristicDuration.map { clamp($0 * 0.3, min: 0.10, max: 5.0) }
+    ?? SongRNG.float(in: profile.ampAttackRange)
   let ampDecay: CoreFloat = constraints.ampDecayValue ?? 0.1
 
   // Osc 1: padSynth (SHARC). Always present.
-  let osc1 = randomPadSynthOscDescriptor(
+  var osc1 = randomPadSynthOscDescriptor(
     gmProgram: gmProgram,
     octave: 0,
-    forbidDetune: constraints.forbidsDetune,
     stretchOverride: constraints.padSynthStretch
   )
 
   // Osc 2: forced sub-octave sine, or random standard oscillator.
-  let osc2: PadOscDescriptor
+  var osc2: PadOscDescriptor
   if constraints.requiresSubOctaveSine {
     osc2 = PadOscDescriptor(
       kind: .standard, shape: .sine, file: nil, padSynthParams: nil,
@@ -396,20 +389,19 @@ func makeRandomPadPreset(gmProgram: Int? = nil, characteristicDuration: CoreFloa
   } else {
     let osc2Octave: CoreFloat = SongRNG.pick([-1, 0, 1] as [CoreFloat]) ?? 0
     osc2 = randomOscDescriptor(
-      profile: profile, octave: osc2Octave,
-      forbidDetune: constraints.forbidsDetune
+      profile: profile, octave: osc2Octave
     )
   }
 
   // Crossfade: hard-disabled or LFO.
   let crossfade: PadCrossfadeKind
-  let crossfadeRate: CoreFloat?
+  let crossfadeRate: CoreFloat
   if constraints.forbidsCrossfadeLFO {
     crossfade = .static
-    crossfadeRate = nil
+    crossfadeRate = 0
   } else {
     crossfade = .lfo
-    crossfadeRate = FloatSampler(min: 0.01, max: 0.1, dist: .exponential).next()
+    crossfadeRate = FloatSampler(min: 0.01, max: 0.1, dist: .exponential).next()!
   }
 
   // Vibrato: hard-disabled or sampled by vibratoWeight (was previously hardcoded true).
@@ -436,7 +428,7 @@ func makeRandomPadPreset(gmProgram: Int? = nil, characteristicDuration: CoreFloa
     vibratoDepth: FloatSampler(min: 0.0001, max: 0.001, dist: .exponential).next()!,
     ampAttack: ampAttack, ampDecay: ampDecay,
     ampSustain: constraints.ampSustainValue ?? 1.0, ampRelease: ampRelease,
-    filterCutoffMultiplier: constraints.filterCutoffMaxMultiplier,
+    filterCutoffMultiplier: constraints.filterCutoffMaxMultiplier ?? SongRNG.float(in: 2.0...4.0),
     filterResonance: 1.7,
     filterLFORate: filterLFORate,
     filterEnvAttack: SongRNG.float(in: 1...4),
@@ -444,9 +436,8 @@ func makeRandomPadPreset(gmProgram: Int? = nil, characteristicDuration: CoreFloa
     filterEnvSustain: SongRNG.float(in: 0.5...0.95),
     filterEnvRelease: SongRNG.float(in: 1...4),
     filterCutoffLow: SongRNG.float(in: profile.filterCutoffRange),
-    mood: .custom, sliders: sliders,
-    chorusCentRadius: constraints.chorusOverride?.cents,
-    chorusNumVoices: constraints.chorusOverride?.voices
+    chorusCentRadius: constraints.chorusOverride?.cents ?? Int(SongRNG.float(in: 5...30)),
+    chorusNumVoices: constraints.chorusOverride?.voices ?? 5
   )
   let effects = EffectsSyntax(reverbPreset: 8, reverbWetDryMix: 50,
                               delayTime: 0, delayFeedback: 0, delayLowPassCutoff: 0, delayWetDryMix: 0)
@@ -462,7 +453,7 @@ func makeRandomPadPreset(gmProgram: Int? = nil, characteristicDuration: CoreFloa
     phase: SongRNG.float(in: 0...(CoreFloat.pi * 2))
   )
   printRandomPadDiagnostic(gmProgram: gmProgram, characteristicDuration: characteristicDuration,
-                           template: template, sliders: sliders, rose: rose)
+                           template: template, rose: rose)
   return PresetSyntax(
     name: "Random Pad",
     arrow: nil, samplerFilenames: nil, samplerProgram: nil, samplerBank: nil, library: nil,

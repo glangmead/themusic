@@ -39,14 +39,12 @@ struct RandomPadBassConstraintsTests {
 
       // No LFO crossfade.
       #expect(template.crossfade == .static)
-      #expect(template.crossfadeRate == nil)
 
       // No spatial motion.
       #expect(preset.rose.amp == 0)
 
       // Attack ceiling: derived 0.2s, must be clamped to <= 0.030.
-      let atk = try #require(template.ampAttack)
-      #expect(atk <= 0.030)
+      #expect(template.ampAttack <= 0.030)
 
       // Tightened filter cutoff range.
       #expect((50.0...80.0).contains(template.filterCutoffLow))

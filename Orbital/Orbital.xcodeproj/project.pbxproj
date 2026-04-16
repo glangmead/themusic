@@ -103,7 +103,6 @@
 				UI/KnobbyKnob.swift,
 				UI/MidiTracksFormView.swift,
 				UI/OrbitalView.swift,
-				UI/PadTemplateFormView.swift,
 				UI/PresetFormView.swift,
 				UI/PresetLibraryView.swift,
 				UI/PresetPickerView.swift,

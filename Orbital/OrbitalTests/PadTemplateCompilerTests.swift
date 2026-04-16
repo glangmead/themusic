@@ -10,60 +10,17 @@ import Foundation
 @Suite("PadTemplateCompiler")
 struct PadTemplateCompilerTests {
 
-  // MARK: - Slider resolution
-
-  @Test("Mood defaults resolve correctly")
-  func moodDefaults() {
-    let moods: [(PadMood, PadSliders)] = [
-      (.cosmic, .cosmicDefaults),
-      (.dark, .darkDefaults),
-      (.warm, .warmDefaults),
-      (.ethereal, .etherealDefaults),
-      (.gritty, .grittyDefaults)
-    ]
-    for (mood, expected) in moods {
-      let t = makeTemplate(mood: mood, sliders: nil)
-      let arrow = PadTemplateCompiler.compile(t)
-      // Just verify it compiles without crash; detailed param checks are below.
-      _ = arrow
-      #expect(expected.smooth >= 0 && expected.smooth <= 1)
-    }
-  }
-
-  @Test("Explicit sliders override mood")
-  func explicitSlidersOverride() {
-    let custom = PadSliders(smooth: 0.1, bite: 0.9, motion: 0.5, width: 0.2, grit: 0.8)
-    let t = makeTemplate(mood: .cosmic, sliders: custom)
+  @Test("Explicit cutoff multiplier compiles through")
+  func explicitCutoffMultiplier() {
+    let t = makeTemplate(filterCutoffMultiplier: 3.8)
     let arrow = PadTemplateCompiler.compile(t)
-    // Verify the arrow has a lowPassFilter — the cutoff multiplier should reflect bite=0.9.
-    // PadTemplateCompiler maps cutoffMultiplier via lerp(2.0, 4.0, bite) — the upper
-    // bound was tightened from 12.0 to 4.0 in commit 606da1d to keep filter sweeps
-    // out of harsh-frequency territory. lerp(2.0, 4.0, 0.9) = 3.8.
     let filterCutoff = extractCutoffMultiplier(from: arrow)
     #expect(abs((filterCutoff ?? 0) - 3.8) < 0.01)
   }
 
-  @Test("Cosmic mood produces expected amp attack (≈6.5)")
-  func cosmicAmpAttack() {
-    let t = makeTemplate(mood: .cosmic, sliders: nil)
-    let arrow = PadTemplateCompiler.compile(t)
-    // smooth=0.8 → lerp(0.5, 8.0, 0.8) = 6.5
-    let attack = extractAmpEnvAttack(from: arrow)
-    #expect(abs((attack ?? 0) - 6.5) < 0.01)
-  }
-
-  @Test("Explicit ampAttack override wins over slider")
-  func ampAttackOverride() {
-    var t = makeTemplate(mood: .cosmic, sliders: nil)
-    t = PadTemplateSyntax(
-      name: t.name, oscillators: t.oscillators, crossfade: t.crossfade, crossfadeRate: t.crossfadeRate,
-      vibratoEnabled: t.vibratoEnabled, vibratoRate: t.vibratoRate, vibratoDepth: t.vibratoDepth,
-      ampAttack: 1.23, ampDecay: t.ampDecay, ampSustain: t.ampSustain, ampRelease: t.ampRelease,
-      filterCutoffMultiplier: t.filterCutoffMultiplier, filterResonance: t.filterResonance,
-      filterLFORate: t.filterLFORate, filterEnvAttack: t.filterEnvAttack, filterEnvDecay: t.filterEnvDecay,
-      filterEnvSustain: t.filterEnvSustain, filterEnvRelease: t.filterEnvRelease,
-      filterCutoffLow: t.filterCutoffLow, mood: t.mood, sliders: t.sliders
-    )
+  @Test("Explicit amp attack compiles through")
+  func explicitAmpAttack() {
+    let t = makeTemplate(ampAttack: 1.23)
     let arrow = PadTemplateCompiler.compile(t)
     let attack = extractAmpEnvAttack(from: arrow)
     #expect(abs((attack ?? 0) - 1.23) < 0.001)
@@ -71,28 +28,28 @@ struct PadTemplateCompilerTests {
 
   @Test("noiseSmoothStep crossfade with 2 oscs produces crossfadeEqPow")
   func twoOscNoiseCrossfade() {
-    let t = makeTemplate(mood: .cosmic, sliders: nil, oscCount: 2)
+    let t = makeTemplate(oscCount: 2)
     let arrow = PadTemplateCompiler.compile(t)
     #expect(containsCrossfadeEqPow(arrow))
   }
 
   @Test("lfo crossfade with 2 oscs produces crossfadeEqPow")
   func twoOscLfoCrossfade() {
-    let t = makeTemplate(mood: .warm, sliders: nil, oscCount: 2, crossfade: .lfo)
+    let t = makeTemplate(oscCount: 2, crossfade: .lfo)
     let arrow = PadTemplateCompiler.compile(t)
     #expect(containsCrossfadeEqPow(arrow))
   }
 
   @Test("static crossfade with 2 oscs produces sum (no crossfadeEqPow)")
   func twoOscStaticMix() {
-    let t = makeTemplate(mood: .warm, sliders: nil, oscCount: 2, crossfade: .static)
+    let t = makeTemplate(oscCount: 2, crossfade: .static)
     let arrow = PadTemplateCompiler.compile(t)
     #expect(!containsCrossfadeEqPow(arrow))
   }
 
   @Test("Single osc skips crossfade node")
   func singleOscNoCrossfade() {
-    let t = makeTemplate(mood: .warm, sliders: nil, oscCount: 1)
+    let t = makeTemplate(oscCount: 1)
     let arrow = PadTemplateCompiler.compile(t)
     #expect(!containsCrossfadeEqPow(arrow))
   }
@@ -119,10 +76,10 @@ struct PadTemplateCompilerTests {
   // MARK: - Helpers
 
   private func makeTemplate(
-    mood: PadMood,
-    sliders: PadSliders?,
     oscCount: Int = 3,
-    crossfade: PadCrossfadeKind = .noiseSmoothStep
+    crossfade: PadCrossfadeKind = .noiseSmoothStep,
+    ampAttack: CoreFloat = 2.0,
+    filterCutoffMultiplier: CoreFloat = 3.0
   ) -> PadTemplateSyntax {
     let oscs: [PadOscDescriptor] = (0..<oscCount).map { i in
       PadOscDescriptor(kind: .standard, shape: .sine, file: nil, padSynthParams: nil, detuneCents: CoreFloat(i * 7 - 7), octave: 0)
@@ -131,24 +88,23 @@ struct PadTemplateCompilerTests {
       name: "Test Pad",
       oscillators: oscs,
       crossfade: crossfade,
-      crossfadeRate: nil,
+      crossfadeRate: 0.3,
       vibratoEnabled: true,
-      vibratoRate: nil,
+      vibratoRate: 3.0,
       vibratoDepth: 0.00015,
-      ampAttack: nil,
+      ampAttack: ampAttack,
       ampDecay: 2.0,
       ampSustain: 0.9,
-      ampRelease: nil,
-      filterCutoffMultiplier: nil,
-      filterResonance: nil,
-      filterLFORate: nil,
+      ampRelease: 2.0,
+      filterCutoffMultiplier: filterCutoffMultiplier,
+      filterResonance: 0.3,
       filterEnvAttack: 2.0,
       filterEnvDecay: 1.0,
       filterEnvSustain: 0.8,
       filterEnvRelease: 2.0,
       filterCutoffLow: 80,
-      mood: mood,
-      sliders: sliders
+      chorusCentRadius: 15,
+      chorusNumVoices: 2
     )
   }
 

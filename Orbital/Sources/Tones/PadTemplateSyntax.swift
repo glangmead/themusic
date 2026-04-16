@@ -38,67 +38,6 @@ enum PadCrossfadeKind: String, Codable {
   case `static`
 }
 
-// MARK: - Mood
-
-enum PadMood: String, Codable {
-  case cosmic
-  case dark
-  case warm
-  case ethereal
-  case gritty
-  case custom
-}
-
-// MARK: - Abstract Sliders
-
-struct PadSliders: Codable, Equatable {
-  /// Smoothness: controls attack/release and chorus width. 0=sharp/short, 1=silky/long.
-  var smooth: CoreFloat
-  /// Bite: controls filter cutoff multiplier. 0=dark/closed, 1=bright/open.
-  var bite: CoreFloat
-  /// Motion: global modulation base rate. 0=glacial, 1=fast.
-  var motion: CoreFloat
-  /// Width: chorus cent radius and voice count. 0=mono, 1=wide.
-  var width: CoreFloat
-  /// Grit: filter resonance. 0=clean, 1=aggressive.
-  var grit: CoreFloat
-  /// Index into the combined oscillator choice list (standard shapes + curated wavetables) for osc 1.
-  var osc1Index: Int
-  /// Index into the combined oscillator choice list for osc 2.
-  var osc2Index: Int
-
-  // Explicit init so callers can omit osc indices (default to sine/triangle).
-  init(smooth: CoreFloat, bite: CoreFloat, motion: CoreFloat, width: CoreFloat, grit: CoreFloat,
-       osc1Index: Int = 0, osc2Index: Int = 1) {
-    self.smooth = smooth
-    self.bite = bite
-    self.motion = motion
-    self.width = width
-    self.grit = grit
-    self.osc1Index = osc1Index
-    self.osc2Index = osc2Index
-  }
-
-  // Custom decode so existing JSON presets that lack osc indices still load.
-  init(from decoder: Decoder) throws {
-    let c = try decoder.container(keyedBy: CodingKeys.self)
-    smooth = try c.decode(CoreFloat.self, forKey: .smooth)
-    bite = try c.decode(CoreFloat.self, forKey: .bite)
-    motion = try c.decode(CoreFloat.self, forKey: .motion)
-    width = try c.decode(CoreFloat.self, forKey: .width)
-    grit = try c.decode(CoreFloat.self, forKey: .grit)
-    osc1Index = try c.decodeIfPresent(Int.self, forKey: .osc1Index) ?? 0
-    osc2Index = try c.decodeIfPresent(Int.self, forKey: .osc2Index) ?? 1
-  }
-
-  // sine=0, triangle=1, sawtooth=2, square=3 in the combined oscillator choice list.
-  static let cosmicDefaults = PadSliders(smooth: 0.8, bite: 0.2, motion: 0.3, width: 0.7, grit: 0.1, osc1Index: 0, osc2Index: 1)
-  static let darkDefaults = PadSliders(smooth: 0.7, bite: 0.6, motion: 0.2, width: 0.4, grit: 0.4, osc1Index: 2, osc2Index: 3)
-  static let warmDefaults = PadSliders(smooth: 0.6, bite: 0.4, motion: 0.25, width: 0.5, grit: 0.15, osc1Index: 1, osc2Index: 2)
-  static let etherealDefaults = PadSliders(smooth: 0.9, bite: 0.1, motion: 0.4, width: 0.8, grit: 0.05, osc1Index: 0, osc2Index: 0)
-  static let grittyDefaults = PadSliders(smooth: 0.3, bite: 0.8, motion: 0.5, width: 0.3, grit: 0.9, osc1Index: 2, osc2Index: 3)
-}
-
 // MARK: - PadTemplateSyntax
 
 struct PadTemplateSyntax: Codable {
@@ -109,29 +48,27 @@ struct PadTemplateSyntax: Codable {
 
   // Crossfade
   let crossfade: PadCrossfadeKind
-  /// Overrides slider-derived crossfade/noise rate when non-null.
-  let crossfadeRate: CoreFloat?
+  /// Crossfade or noise rate in Hz. Ignored when crossfade is .static.
+  let crossfadeRate: CoreFloat
 
   // Vibrato
   let vibratoEnabled: Bool
-  /// Overrides slider-derived vibrato rate when non-null.
-  let vibratoRate: CoreFloat?
+  /// Vibrato LFO rate in Hz. Ignored when vibratoEnabled is false.
+  let vibratoRate: CoreFloat
   /// Vibrato pitch depth multiplier. Typical range 0.0001–0.001.
   let vibratoDepth: CoreFloat
 
   // Amp envelope
-  /// Overrides slider-derived attack when non-null.
-  let ampAttack: CoreFloat?
+  let ampAttack: CoreFloat
   let ampDecay: CoreFloat
   let ampSustain: CoreFloat
-  /// Overrides slider-derived release when non-null.
-  let ampRelease: CoreFloat?
+  let ampRelease: CoreFloat
 
   // Filter
-  /// Overrides slider-derived cutoff multiplier when non-null.
-  let filterCutoffMultiplier: CoreFloat?
-  /// Overrides slider-derived resonance when non-null.
-  let filterResonance: CoreFloat?
+  /// Multiplier applied to note frequency to set filter cutoff ceiling.
+  let filterCutoffMultiplier: CoreFloat
+  /// Filter resonance (Q). Typical range 0.3–1.5.
+  let filterResonance: CoreFloat
   /// Non-null enables a filter cutoff LFO at this Hz rate.
   let filterLFORate: CoreFloat?
   let filterEnvAttack: CoreFloat
@@ -141,40 +78,63 @@ struct PadTemplateSyntax: Codable {
   /// Low-frequency Hz floor for the filter cutoff sum node.
   let filterCutoffLow: CoreFloat
 
-  // Mood and abstract sliders
-  let mood: PadMood
-  /// When non-null, overrides all mood-derived slider defaults.
-  let sliders: PadSliders?
+  // Chorus
+  let chorusCentRadius: Int
+  let chorusNumVoices: Int
 
-  /// When non-null, overrides the slider-derived chorus cent radius.
-  let chorusCentRadius: Int?
-  /// When non-null, overrides the default chorus voice count (2).
-  let chorusNumVoices: Int?
+  /// Bit crusher amount (0 = bypass). Typical range 0–1.
+  let gritAmount: CoreFloat
+
+  // Custom decoder for backwards compatibility with JSON that has null/missing fields.
+  init(from decoder: Decoder) throws {
+    let c = try decoder.container(keyedBy: CodingKeys.self)
+    name = try c.decode(String.self, forKey: .name)
+    oscillators = try c.decode([PadOscDescriptor].self, forKey: .oscillators)
+    crossfade = try c.decode(PadCrossfadeKind.self, forKey: .crossfade)
+    crossfadeRate = try c.decodeIfPresent(CoreFloat.self, forKey: .crossfadeRate) ?? 0
+    vibratoEnabled = try c.decode(Bool.self, forKey: .vibratoEnabled)
+    vibratoRate = try c.decodeIfPresent(CoreFloat.self, forKey: .vibratoRate) ?? 3.0
+    vibratoDepth = try c.decode(CoreFloat.self, forKey: .vibratoDepth)
+    ampAttack = try c.decodeIfPresent(CoreFloat.self, forKey: .ampAttack) ?? 2.0
+    ampDecay = try c.decode(CoreFloat.self, forKey: .ampDecay)
+    ampSustain = try c.decode(CoreFloat.self, forKey: .ampSustain)
+    ampRelease = try c.decodeIfPresent(CoreFloat.self, forKey: .ampRelease) ?? 2.0
+    filterCutoffMultiplier = try c.decodeIfPresent(CoreFloat.self, forKey: .filterCutoffMultiplier) ?? 3.0
+    filterResonance = try c.decodeIfPresent(CoreFloat.self, forKey: .filterResonance) ?? 0.3
+    filterLFORate = try c.decodeIfPresent(CoreFloat.self, forKey: .filterLFORate)
+    filterEnvAttack = try c.decode(CoreFloat.self, forKey: .filterEnvAttack)
+    filterEnvDecay = try c.decode(CoreFloat.self, forKey: .filterEnvDecay)
+    filterEnvSustain = try c.decode(CoreFloat.self, forKey: .filterEnvSustain)
+    filterEnvRelease = try c.decode(CoreFloat.self, forKey: .filterEnvRelease)
+    filterCutoffLow = try c.decode(CoreFloat.self, forKey: .filterCutoffLow)
+    chorusCentRadius = try c.decodeIfPresent(Int.self, forKey: .chorusCentRadius) ?? 15
+    chorusNumVoices = try c.decodeIfPresent(Int.self, forKey: .chorusNumVoices) ?? 2
+    gritAmount = try c.decodeIfPresent(CoreFloat.self, forKey: .gritAmount) ?? 0
+  }
 
   init(
     name: String,
     oscillators: [PadOscDescriptor],
     crossfade: PadCrossfadeKind,
-    crossfadeRate: CoreFloat? = nil,
+    crossfadeRate: CoreFloat,
     vibratoEnabled: Bool,
-    vibratoRate: CoreFloat? = nil,
+    vibratoRate: CoreFloat,
     vibratoDepth: CoreFloat,
-    ampAttack: CoreFloat? = nil,
+    ampAttack: CoreFloat,
     ampDecay: CoreFloat,
     ampSustain: CoreFloat,
-    ampRelease: CoreFloat? = nil,
-    filterCutoffMultiplier: CoreFloat? = nil,
-    filterResonance: CoreFloat? = nil,
+    ampRelease: CoreFloat,
+    filterCutoffMultiplier: CoreFloat,
+    filterResonance: CoreFloat,
     filterLFORate: CoreFloat? = nil,
     filterEnvAttack: CoreFloat,
     filterEnvDecay: CoreFloat,
     filterEnvSustain: CoreFloat,
     filterEnvRelease: CoreFloat,
     filterCutoffLow: CoreFloat,
-    mood: PadMood,
-    sliders: PadSliders? = nil,
-    chorusCentRadius: Int? = nil,
-    chorusNumVoices: Int? = nil
+    chorusCentRadius: Int,
+    chorusNumVoices: Int,
+    gritAmount: CoreFloat = 0
   ) {
     self.name = name
     self.oscillators = oscillators
@@ -195,9 +155,8 @@ struct PadTemplateSyntax: Codable {
     self.filterEnvSustain = filterEnvSustain
     self.filterEnvRelease = filterEnvRelease
     self.filterCutoffLow = filterCutoffLow
-    self.mood = mood
-    self.sliders = sliders
     self.chorusCentRadius = chorusCentRadius
     self.chorusNumVoices = chorusNumVoices
+    self.gritAmount = gritAmount
   }
 }

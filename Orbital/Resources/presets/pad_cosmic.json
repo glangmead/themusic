@@ -17,23 +17,24 @@
       { "kind": "standard",  "shape": "sineOsc",    "detuneCents":  7, "octave": -1 }
     ],
     "crossfade":     "noiseSmoothStep",
-    "crossfadeRate": null,
+    "crossfadeRate": 0.335,
     "vibratoEnabled": true,
-    "vibratoRate":   null,
+    "vibratoRate":   2.5,
     "vibratoDepth":  0.00015,
-    "ampAttack":     null,
+    "ampAttack":     6.5,
     "ampDecay":      2.0,
     "ampSustain":    0.9,
-    "ampRelease":    null,
-    "filterCutoffMultiplier": null,
-    "filterResonance":        null,
+    "ampRelease":    6.5,
+    "filterCutoffMultiplier": 2.4,
+    "filterResonance":        0.3,
     "filterLFORate":          null,
     "filterEnvAttack":  3.0,
     "filterEnvDecay":   1.5,
     "filterEnvSustain": 0.75,
     "filterEnvRelease": 3.0,
     "filterCutoffLow":  80,
-    "mood": "cosmic",
-    "sliders": null
+    "chorusCentRadius": 21,
+    "chorusNumVoices":  2,
+    "gritAmount":       0
   }
 }
