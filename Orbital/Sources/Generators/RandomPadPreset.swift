@@ -372,10 +372,13 @@ func makeRandomPadPreset(gmProgram: Int? = nil, characteristicDuration: CoreFloa
     ?? SongRNG.float(in: profile.ampAttackRange)
   let ampDecay: CoreFloat = constraints.ampDecayValue ?? 0.1
 
-  // Osc 1: padSynth (SHARC). Always present.
+  // Osc 1: padSynth (SHARC). Always present. Detune is forbidden only when
+  // the profile opts in via .noDetune (e.g. bass); otherwise osc1 gets a
+  // random cent offset so unison layers audibly interact.
   var osc1 = randomPadSynthOscDescriptor(
     gmProgram: gmProgram,
     octave: 0,
+    forbidDetune: constraints.forbidsDetune,
     stretchOverride: constraints.padSynthStretch
   )
 
@@ -428,7 +431,7 @@ func makeRandomPadPreset(gmProgram: Int? = nil, characteristicDuration: CoreFloa
     vibratoDepth: FloatSampler(min: 0.0001, max: 0.001, dist: .exponential).next()!,
     ampAttack: ampAttack, ampDecay: ampDecay,
     ampSustain: constraints.ampSustainValue ?? 1.0, ampRelease: ampRelease,
-    filterCutoffMultiplier: constraints.filterCutoffMaxMultiplier ?? SongRNG.float(in: 2.0...4.0),
+    filterCutoffMultiplier: constraints.filterCutoffMaxMultiplier ?? SongRNG.float(in: 0.9...2.0),
     filterResonance: 1.7,
     filterLFORate: filterLFORate,
     filterEnvAttack: SongRNG.float(in: 1...4),
@@ -436,8 +439,8 @@ func makeRandomPadPreset(gmProgram: Int? = nil, characteristicDuration: CoreFloa
     filterEnvSustain: SongRNG.float(in: 0.5...0.95),
     filterEnvRelease: SongRNG.float(in: 1...4),
     filterCutoffLow: SongRNG.float(in: profile.filterCutoffRange),
-    chorusCentRadius: constraints.chorusOverride?.cents ?? Int(SongRNG.float(in: 5...30)),
-    chorusNumVoices: constraints.chorusOverride?.voices ?? 5
+    chorusCentRadius: constraints.chorusOverride?.cents ?? Int(SongRNG.float(in: 0...5)),
+    chorusNumVoices: constraints.chorusOverride?.voices ?? 2
   )
   let effects = EffectsSyntax(reverbPreset: 8, reverbWetDryMix: 50,
                               delayTime: 0, delayFeedback: 0, delayLowPassCutoff: 0, delayWetDryMix: 0)

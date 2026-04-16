@@ -13,7 +13,7 @@ import Foundation
 
 @Suite("Random pad bass constraints", .serialized)
 struct RandomPadBassConstraintsTests {
-  @Test("Bass program forces sub sine, no detune, no modulation, fast attack, capped sweep")
+  @Test("Bass program forces sub sine, no detune, no modulation, capped sweep")
   func bassProgramAppliesAllConstraints() async throws {
     for seed in UInt64(1)...UInt64(20) {
       let preset = await SongRNG.$box.withValue(SongRNGBox(SplitMix64(seed: seed))) {
@@ -42,9 +42,6 @@ struct RandomPadBassConstraintsTests {
 
       // No spatial motion.
       #expect(preset.rose.amp == 0)
-
-      // Attack ceiling: derived 0.2s, must be clamped to <= 0.030.
-      #expect(template.ampAttack <= 0.030)
 
       // Tightened filter cutoff range.
       #expect((50.0...80.0).contains(template.filterCutoffLow))

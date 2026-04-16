@@ -44,9 +44,11 @@ struct PresetSyntax: Codable, Sendable {
   }
 
   /// The effective PADsynth parameters: prefers the explicit `padSynth` field,
-  /// falls back to extracting from the first `padSynthWavetable` node in the arrow tree.
+  /// falls back to extracting from the first `padSynthWavetable` node in the
+  /// effective arrow tree (which compiles padTemplate when no explicit arrow
+  /// exists, so random pads surface their padSynth params too).
   var effectivePadSynth: PADSynthSyntax? {
-    padSynth ?? arrow?.extractPadSynthParams()
+    padSynth ?? effectiveArrow?.extractPadSynthParams()
   }
 
   /// Build the resolved [String: ArrowSyntax] dictionary from the library

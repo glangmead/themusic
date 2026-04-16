@@ -212,15 +212,15 @@ struct GeneratorSyntax: Codable, Equatable {
   var melody: GeneratorMelody?
 
   init(
-    rootNote: String = "C",
-    scaleType: GeneratorScaleType = .major,
-    motion: GeneratorMotion = .fourChords,
+    rootNote: String = "A",
+    scaleType: GeneratorScaleType = .naturalMinor,
+    motion: GeneratorMotion = .descendingThirds,
     chordType: GeneratorChordType = .triad,
     bpm: Double = 10,
     beatsPerChord: Double = 4,
     bassOctave: Int = 2,
-    upperVoiceLowOctave: Int = 3,
-    upperVoiceHighOctave: Int = 5,
+    upperVoiceLowOctave: Int = 2,
+    upperVoiceHighOctave: Int = 4,
     bassPresetName: String? = nil,
     upperPresetNames: [String]? = nil,
     tPowerSequence: [Int]? = nil,

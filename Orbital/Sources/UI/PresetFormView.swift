@@ -209,9 +209,12 @@ private struct PresetFormContent: View {
         selectedInstrument: synth.padSynthSelectedInstrument,
         envelopeCoefficients: synth.presetSpec.effectivePadSynth?.envelopeCoefficients
       )
+      // Use effectiveArrow so random pads (arrow: nil, padTemplate: non-nil)
+      // compile their template into a concrete arrow on first padSynth edit,
+      // matching how saveRandomPadAudition already collapses template → arrow.
       let newSpec = PresetSyntax(
         name: synth.presetSpec.name,
-        arrow: synth.presetSpec.arrow,
+        arrow: synth.presetSpec.effectiveArrow,
         samplerFilenames: nil,
         samplerProgram: nil,
         samplerBank: nil,
