@@ -19,7 +19,7 @@ struct GeneratorEngineTests {
 
     @Test("fourChords produces setRoman events for I, V, vi, IV")
     func fourChordsMajorProducesCorrectChordEvents() {
-        let params = GeneratorSyntax(motion: .fourChords, chordType: .triad)
+        let params = GeneratorSyntax(scaleType: .major, motion: .fourChords, chordType: .triad)
         let score = GeneratorEngine.generate(params)
 
         let romanEvents = score.chordEvents.filter { $0.op == "setRoman" }
@@ -269,6 +269,46 @@ struct GeneratorEngineTests {
         let nonFunctional: [GeneratorScaleType] = [.wholeTone, .octatonic, .hexatonic, .acoustic]
         for scale in nonFunctional {
             #expect(!scale.supportsFunctionalMotion)
+        }
+    }
+
+    // MARK: - Track velocities
+
+    @Test("each track gets one constant velocity in its hard-coded range, deterministic under fixed seed")
+    func generatorAssignsConstantPerTrackVelocitiesInRange() {
+        let params = GeneratorSyntax(randomSeed: 42, melody: .pluckedArpeggio)
+        let score = GeneratorEngine.generate(params)
+
+        let expected: [(name: String, range: ClosedRange<Int>)] = [
+            ("Bass", 70...85),
+            ("Upper Voices", 50...70),
+            ("Arpeggio", 90...110)
+        ]
+
+        var firstVelocities: [String: Int] = [:]
+
+        for (name, range) in expected {
+            guard let track = score.tracks.first(where: { $0.name == name }) else {
+                Issue.record("missing track \(name)")
+                continue
+            }
+            let velocities = track.notes.compactMap(\.velocity)
+            // Every non-rest note carries the velocity; rests have nil.
+            let uniqueVelocities = Set(velocities)
+            #expect(uniqueVelocities.count == 1, "track \(name) should have one constant velocity")
+            if let v = velocities.first {
+                #expect(range.contains(v), "track \(name) velocity \(v) not in \(range)")
+                firstVelocities[name] = v
+            }
+        }
+
+        // Determinism: regenerating with the same seed reproduces the velocities.
+        let score2 = GeneratorEngine.generate(params)
+        for name in expected.map(\.name) {
+            let t2 = score2.tracks.first(where: { $0.name == name })
+            #expect(t2 != nil)
+            let v2 = t2?.notes.compactMap(\.velocity).first
+            #expect(v2 == firstVelocities[name], "track \(name) velocity not deterministic under fixed seed")
         }
     }
 }

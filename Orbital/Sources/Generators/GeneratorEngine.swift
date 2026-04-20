@@ -274,9 +274,12 @@ struct GeneratorEngine {
     let bassPreset = params.bassPresetName              // nil → random pad
     let upperPreset = params.upperPresetNames?.first    // single shared preset across upper voices
 
+    // Per-track velocity: one draw used for every note on the track.
+    let bassVelocity = rng.nextInt(in: bassVelocityRange)
+
     var tracks: [ScoreTrackSyntax] = []
     let bassNotes = bassMidis.map {
-      ScoreNoteSyntax(type: .absolute, durationBeats: bpc, midi: $0)
+      ScoreNoteSyntax(type: .absolute, durationBeats: bpc, midi: $0, velocity: bassVelocity)
     }
     tracks.append(ScoreTrackSyntax(
       name: "Bass",
@@ -291,13 +294,15 @@ struct GeneratorEngine {
 
     // One upper-voice track: all chord tones share the same preset/instrument
     // but fan out across spatial slots via SpatialPreset's per-note voice ledger.
+    let upperVoicesVelocity = rng.nextInt(in: upperVoiceVelocityRange)
     var upperNotes: [ScoreNoteSyntax] = []
     for i in 0..<chordCount {
       let midis = (0..<chordSize).map { upperMidis[$0][i] }
       upperNotes.append(ScoreNoteSyntax(
         type: .absoluteChord,
         durationBeats: bpc,
-        midis: midis
+        midis: midis,
+        velocity: upperVoicesVelocity
       ))
     }
     tracks.append(ScoreTrackSyntax(
@@ -313,7 +318,7 @@ struct GeneratorEngine {
 
     if let melodyTrack = buildMelodyTrack(
       params, chordSize: chordSize, chordCount: chordCount,
-      timeline: timeline, bpc: bpc
+      timeline: timeline, bpc: bpc, rng: &rng
     ) {
       tracks.append(melodyTrack)
     }
@@ -322,14 +327,16 @@ struct GeneratorEngine {
 
   // MARK: - Melody
 
-  /// Build an optional melody track for `params.melody`. Returns nil for
-  /// `.none` or when the melody doesn't apply to the current chord size.
+  // Build an optional melody track for `params.melody`. Returns nil for
+  // `.none` or when the melody doesn't apply to the current chord size.
+  // swiftlint:disable:next function_parameter_count
   private static func buildMelodyTrack(
     _ params: GeneratorSyntax,
     chordSize: Int,
     chordCount: Int,
     timeline: HarmonyTimeline,
-    bpc: Double
+    bpc: Double,
+    rng: inout SeededRNG
   ) -> ScoreTrackSyntax? {
     switch params.melody ?? .none {
     case .none:
@@ -337,7 +344,7 @@ struct GeneratorEngine {
     case .pluckedArpeggio:
       return buildPluckedArpeggioTrack(
         chordSize: chordSize, chordCount: chordCount,
-        timeline: timeline, bpc: bpc
+        timeline: timeline, bpc: bpc, rng: &rng
       )
     }
   }
@@ -356,12 +363,14 @@ struct GeneratorEngine {
 
   private static func buildPluckedArpeggioTrack(
     chordSize: Int, chordCount: Int,
-    timeline: HarmonyTimeline, bpc: Double
+    timeline: HarmonyTimeline, bpc: Double,
+    rng: inout SeededRNG
   ) -> ScoreTrackSyntax? {
     let fractions = arpeggioFractions(chordSize: chordSize)
     guard !fractions.isEmpty else { return nil }
 
     let arpeggioOctave = 4
+    let melodyVelocity = rng.nextInt(in: melodyVelocityRange)
     var notes: [ScoreNoteSyntax] = []
 
     for i in 0..<chordCount {
@@ -382,7 +391,9 @@ struct GeneratorEngine {
         let nextFraction: Double = (j + 1 < fractions.count) ? fractions[j + 1] : 1.0
         let duration = (nextFraction - fraction) * bpc
         let midi = midis[min(j, midis.count - 1)]
-        notes.append(ScoreNoteSyntax(type: .absolute, durationBeats: duration, midi: midi))
+        notes.append(ScoreNoteSyntax(
+          type: .absolute, durationBeats: duration, midi: midi, velocity: melodyVelocity
+        ))
       }
     }
 
@@ -432,6 +443,12 @@ struct GeneratorEngine {
   private static let bassGmProgram = 33                  // Electric Bass (finger)
   private static let upperVoiceGmProgram = 89            // Warm Pad
   private static let arpeggioPianoGmProgram = 0          // Acoustic Grand
+
+  // Per-track MIDI velocity ranges. Each track draws ONE velocity at
+  // generation time (via SeededRNG.nextInt) and uses it for every note.
+  private static let bassVelocityRange: ClosedRange<Int> = 70...85
+  private static let upperVoiceVelocityRange: ClosedRange<Int> = 50...70
+  private static let melodyVelocityRange: ClosedRange<Int> = 90...110
 
   // MARK: - Helpers
 
