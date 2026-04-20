@@ -32,7 +32,7 @@ struct CompactAppLayout: View {
       Tab {
         SoundDesignView()
       } label: {
-        LoadingTabLabel(text: "Sounds", systemImage: "slider.horizontal.3", isLoading: presetLibrary.isLoading)
+        LoadingTabLabel(text: "Sounds", systemImage: "horn", isLoading: presetLibrary.isLoading)
       }
     }
     .task {
