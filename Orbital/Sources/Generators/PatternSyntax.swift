@@ -46,14 +46,14 @@ struct MidiTrackEntry: Codable {
 
 /// Multi-track MIDI specification. A single MIDI file that auto-expands
 /// into one track per nonempty MIDI track at compile time.
+///
+/// Silence and singleton compression are configured globally via
+/// `AppConfig.shared` (shortenSilencesEnabled / shortenSingletonsEnabled
+/// plus the two max-duration knobs) and applied at compile time.
 struct MidiTracksSyntax: Codable {
   let filename: String
   let loop: Bool?
   let bpm: Double?
-  /// Maximum silence (seconds) between notes. Gaps exceeding this are
-  /// compressed so dead air never lasts longer than this value.
-  /// nil disables compression (preserves original timing).
-  let maxSilence: Double?
   let tracks: [MidiTrackEntry]
 }
 
@@ -175,10 +175,16 @@ struct PatternSyntax: Codable, Sendable {
     let loopVal = midi.loop ?? true
     let rawSeqs = MidiEventSequence.allTracks(url: url, loop: loopVal, bpmOverride: midi.bpm)
 
+    let maxSilence: CoreFloat? = AppConfigRuntime.shortenSilencesEnabled
+      ? CoreFloat(AppConfigRuntime.maxSilenceSeconds) : nil
+    let maxSingleton: CoreFloat? = AppConfigRuntime.shortenSingletonsEnabled
+      ? CoreFloat(AppConfigRuntime.maxSingletonSeconds) : nil
+
     let allSeqs: [(trackIndex: Int, trackName: String, sequence: MidiEventSequence)]
-    if let maxSilence = midi.maxSilence {
+    if maxSilence != nil || maxSingleton != nil {
       let rawSequences = rawSeqs.map(\.sequence)
-      let compressed = MidiEventSequence.compressingSilencesGlobally(rawSequences, maxSilence: CoreFloat(maxSilence))
+      let compressed = MidiEventSequence.compressingQuietSectionsGlobally(
+        rawSequences, maxSilence: maxSilence, maxSingleton: maxSingleton)
       allSeqs = zip(rawSeqs, compressed).map { ($0.0.trackIndex, $0.0.trackName, $0.1) }
     } else {
       allSeqs = rawSeqs

@@ -17,7 +17,7 @@ enum SidebarCategory: String, CaseIterable, Identifiable {
     switch self {
     case .songs: "music.note.list"
     case .classics: "building.columns"
-    case .create: "wand.and.stars"
+    case .create: "list.bullet.indent"
     case .soundDesign: "slider.horizontal.3"
     }
   }

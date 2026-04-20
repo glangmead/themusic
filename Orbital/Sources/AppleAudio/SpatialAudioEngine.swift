@@ -26,7 +26,7 @@ class SpatialAudioEngine: @unchecked Sendable {
   let spatialEnabled: Bool
 
   /// AVAudioUnitEffect wrapping a DynamicsProcessor, installed at start() as
-  /// the last node before outputNode when AudioSafety.tailLimiterEnabled.
+  /// the last node before outputNode when AppConfig.tailLimiterEnabled.
   /// nil when the limiter isn't installed. Detached on stop()/restart().
   private var tailLimiterNode: AVAudioUnitEffect?
 
@@ -37,7 +37,7 @@ class SpatialAudioEngine: @unchecked Sendable {
 
   /// Detached task that reads the open-gate count and writes
   /// envNode.outputVolume. Runs only while the engine is started and
-  /// AudioSafetyRuntime.dynamicGainEnabled is true.
+  /// AppConfigRuntime.dynamicGainEnabled is true.
   private var gainPumpTask: Task<Void, Never>?
 
   /// Absolute start time of the active duck, or nil when not ducking.
@@ -141,8 +141,8 @@ class SpatialAudioEngine: @unchecked Sendable {
     }
     audioEngine.disconnectNodeOutput(envNode)
 
-    if AudioSafetyRuntime.tailLimiterEnabled {
-      let limiter = Self.makeDynamicsProcessor(thresholdDB: AudioSafetyRuntime.tailLimiterThresholdDB)
+    if AppConfigRuntime.tailLimiterEnabled {
+      let limiter = Self.makeDynamicsProcessor(thresholdDB: AppConfigRuntime.tailLimiterThresholdDB)
       audioEngine.attach(limiter)
       audioEngine.connect(envNode, to: limiter, format: stereo)
       audioEngine.connect(limiter, to: audioEngine.outputNode, format: stereo)
@@ -203,7 +203,7 @@ class SpatialAudioEngine: @unchecked Sendable {
     }
 
     // Ensure the tail (envNode/mainMixer → [limiter?] → output) is wired with
-    // the current AudioSafety.tailLimiterEnabled value. Limiter insertion
+    // the current AppConfig.tailLimiterEnabled value. Limiter insertion
     // takes effect at this point only (next-start policy).
     wireTailIfNeeded()
 
@@ -285,9 +285,9 @@ class SpatialAudioEngine: @unchecked Sendable {
         }
         guard let self else { return }
         let duck = self.duckMultiplier()
-        guard AudioSafetyRuntime.dynamicGainEnabled else {
+        guard AppConfigRuntime.dynamicGainEnabled else {
           // Keep base gain fresh even when dynamic is off, so toggling
-          // AudioSafety.staticAttenuation during playback is reflected.
+          // AppConfig.staticAttenuation during playback is reflected.
           let base = self.staticBaseGain() * duck
           if self.spatialEnabled {
             self.envNode.outputVolume = base
@@ -297,8 +297,8 @@ class SpatialAudioEngine: @unchecked Sendable {
           continue
         }
         let n = max(1, self.openGateCount())
-        let exp = AudioSafetyRuntime.dynamicGainExponent
-        let dyn = AudioSafetyRuntime.dynamicGainBase / powf(Float(n), exp)
+        let exp = AppConfigRuntime.dynamicGainExponent
+        let dyn = AppConfigRuntime.dynamicGainBase / powf(Float(n), exp)
         let gain = self.staticBaseGain() * dyn * duck
         if self.spatialEnabled {
           self.envNode.outputVolume = gain
@@ -316,7 +316,7 @@ class SpatialAudioEngine: @unchecked Sendable {
 
   /// Static component of the master gain (before dynamic per-voice scaling).
   private func staticBaseGain() -> Float {
-    AudioSafetyRuntime.staticAttenuationEnabled ? AudioSafetyRuntime.staticAttenuation : 1.0
+    AppConfigRuntime.staticAttenuationEnabled ? AppConfigRuntime.staticAttenuation : 1.0
   }
 
   /// Pop-defense: briefly ramp the master output down to zero, hold, then

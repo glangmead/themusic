@@ -277,16 +277,40 @@ struct MidiEventSequence {
     return MidiEventSequence(chords: chords, sustains: sustains, gaps: gaps, program: track.program)
   }
 
-  /// Compress silences globally across all tracks so they stay synchronized.
-  /// A "global silence" is a time region where no track has a sounding note.
-  /// Only those regions are trimmed; per-track rests that overlap with another
-  /// track's notes are left intact.
-  static func compressingSilencesGlobally(
-    _ sequences: [MidiEventSequence], maxSilence: CoreFloat
+  /// Compress quiet sections globally across all tracks so they stay synchronized.
+  /// Two kinds of quiet section are recognized:
+  ///   - "silence": no chord is sounding in any track (overlap count 0).
+  ///   - "singleton": exactly one chord is sounding across all tracks (overlap 1).
+  /// For each kind, pass a `CoreFloat` max-duration to clamp it, or nil to leave
+  /// that kind of region untouched. When both are nil (or no region exceeds its
+  /// clamp) the sequences are returned unchanged.
+  ///
+  /// Within a trimmed singleton region, the sole sustaining chord has its
+  /// sustain truncated so the timeline stays consistent. Within a trimmed
+  /// silence, nothing is sounding so nothing needs truncating.
+  static func compressingQuietSectionsGlobally(
+    _ sequences: [MidiEventSequence],
+    maxSilence: CoreFloat?,
+    maxSingleton: CoreFloat?
   ) -> [MidiEventSequence] {
     guard !sequences.isEmpty else { return sequences }
+    guard maxSilence != nil || maxSingleton != nil else { return sequences }
 
-    // 1. Build absolute sounding intervals [onset, onset+sustain) for all tracks.
+    let intervals = soundingIntervals(in: sequences)
+    guard !intervals.isEmpty else { return sequences }
+
+    let trimPoints = quietSectionTrimPoints(
+      intervals: intervals, maxSilence: maxSilence, maxSingleton: maxSingleton)
+    guard trimPoints.last?.trimmed ?? 0 > 0 else { return sequences }
+
+    return sequences.map { applyTimeWarp($0, trimPoints: trimPoints) }
+  }
+
+  /// Build sounding intervals [onset, onset+sustain) across all tracks,
+  /// skipping empty chords and zero-sustain events.
+  private static func soundingIntervals(
+    in sequences: [MidiEventSequence]
+  ) -> [(start: CoreFloat, end: CoreFloat)] {
     var intervals: [(start: CoreFloat, end: CoreFloat)] = []
     for seq in sequences {
       var onset: CoreFloat = 0
@@ -297,40 +321,64 @@ struct MidiEventSequence {
         onset += seq.gaps[i]
       }
     }
-    guard !intervals.isEmpty else { return sequences }
+    return intervals
+  }
 
-    // 2. Merge overlapping intervals to find globally-sounding spans.
-    let sorted = intervals.sorted { $0.start < $1.start }
-    var merged: [(start: CoreFloat, end: CoreFloat)] = [sorted[0]]
-    for interval in sorted.dropFirst() {
-      if interval.start <= merged[merged.count - 1].end {
-        merged[merged.count - 1].end = max(merged[merged.count - 1].end, interval.end)
-      } else {
-        merged.append(interval)
-      }
+  /// Sweep-line over onset/end events, clamping silence (overlap 0) and
+  /// singleton (overlap 1) regions that exceed their max. Returns cumulative
+  /// trim breakpoints; each entry says "by this time, `trimmed` seconds have
+  /// been removed from the timeline." The first entry is always (0, 0).
+  private static func quietSectionTrimPoints(
+    intervals: [(start: CoreFloat, end: CoreFloat)],
+    maxSilence: CoreFloat?,
+    maxSingleton: CoreFloat?
+  ) -> [(time: CoreFloat, trimmed: CoreFloat)] {
+    // Tie-break +1 before -1 at the same instant so touching intervals don't
+    // register a zero-length silence.
+    var events: [(time: CoreFloat, delta: Int)] = []
+    events.reserveCapacity(intervals.count * 2)
+    for iv in intervals {
+      events.append((iv.start, +1))
+      events.append((iv.end, -1))
+    }
+    events.sort { left, right in
+      if left.time != right.time { return left.time < right.time }
+      return left.delta > right.delta
     }
 
-    // 3. Find global silences between merged spans and compute trim amounts.
-    //    Each trim entry: (startTime, amountTrimmed) — cumulative.
+    var overlap = 0
     var cumulativeTrim: CoreFloat = 0
     var trimPoints: [(time: CoreFloat, trimmed: CoreFloat)] = [(time: 0, trimmed: 0)]
-    for i in 1..<merged.count {
-      let silenceStart = merged[i - 1].end
-      let silenceEnd = merged[i].start
-      let silenceDuration = silenceEnd - silenceStart
-      if silenceDuration > maxSilence {
-        let excess = silenceDuration - maxSilence
-        cumulativeTrim += excess
-        // The trim takes effect at the end of the silence region
-        trimPoints.append((time: silenceEnd, trimmed: cumulativeTrim))
+
+    var idx = 0
+    while idx < events.count {
+      let regionStart = events[idx].time
+      while idx < events.count && events[idx].time == regionStart {
+        overlap += events[idx].delta
+        idx += 1
+      }
+      guard idx < events.count else { break }
+      let regionEnd = events[idx].time
+      let duration = regionEnd - regionStart
+      guard duration > 0 else { continue }
+
+      let clamp: CoreFloat? = overlap == 0 ? maxSilence : (overlap == 1 ? maxSingleton : nil)
+      if let clamp, duration > clamp {
+        cumulativeTrim += duration - clamp
+        trimPoints.append((time: regionEnd, trimmed: cumulativeTrim))
       }
     }
 
-    guard cumulativeTrim > 0 else { return sequences }
+    return trimPoints
+  }
 
-    // 4. Time-warp function: maps old absolute time to new.
+  /// Apply a cumulative-trim time warp to one sequence: warp onsets and
+  /// end-times, recompute gaps, adjust each sustain to match its warped end.
+  private static func applyTimeWarp(
+    _ seq: MidiEventSequence,
+    trimPoints: [(time: CoreFloat, trimmed: CoreFloat)]
+  ) -> MidiEventSequence {
     func warp(_ t: CoreFloat) -> CoreFloat {
-      // Find the last trim point at or before t
       var trimAtT: CoreFloat = 0
       for point in trimPoints {
         if point.time <= t {
@@ -342,26 +390,34 @@ struct MidiEventSequence {
       return t - trimAtT
     }
 
-    // 5. Apply warp to each track's onset times, then recompute gaps.
-    return sequences.map { seq in
-      var onsets: [CoreFloat] = []
-      var onset: CoreFloat = 0
-      for gap in seq.gaps {
-        onsets.append(onset)
-        onset += gap
-      }
-
-      let warpedOnsets = onsets.map { warp($0) }
-      var newGaps = seq.gaps
-      for i in 0..<(newGaps.count - 1) {
-        newGaps[i] = warpedOnsets[i + 1] - warpedOnsets[i]
-      }
-      // Last gap: preserve original (it's the tail-off after the last note)
-
-      return MidiEventSequence(
-        chords: seq.chords, sustains: seq.sustains, gaps: newGaps, program: seq.program
-      )
+    var onsets: [CoreFloat] = []
+    var onset: CoreFloat = 0
+    for gap in seq.gaps {
+      onsets.append(onset)
+      onset += gap
     }
+    let warpedOnsets = onsets.map { warp($0) }
+
+    var newSustains = seq.sustains
+    for i in seq.sustains.indices {
+      guard !seq.chords[i].isEmpty && seq.sustains[i] > 0 else { continue }
+      let warpedEnd = warp(onsets[i] + seq.sustains[i])
+      newSustains[i] = max(0, warpedEnd - warpedOnsets[i])
+    }
+
+    var newGaps = seq.gaps
+    for i in 0..<(newGaps.count - 1) {
+      newGaps[i] = warpedOnsets[i + 1] - warpedOnsets[i]
+    }
+    // Last gap is the tail-off after the final chord; match its (possibly
+    // shortened) sustain so the total timeline stays consistent.
+    if !newGaps.isEmpty {
+      newGaps[newGaps.count - 1] = newSustains[newSustains.count - 1]
+    }
+
+    return MidiEventSequence(
+      chords: seq.chords, sustains: newSustains, gaps: newGaps, program: seq.program
+    )
   }
 
   /// Returns the median sustain duration in seconds across all non-silent events.

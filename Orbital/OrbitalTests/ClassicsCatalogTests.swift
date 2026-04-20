@@ -131,7 +131,7 @@ struct ClassicsCatalogTests {
     #expect(filename == "organ_major_works_bwv-565_(c)unknown1.mid")
   }
 
-  // MARK: - MidiEventSequence global gap compression
+  // MARK: - MidiEventSequence quiet-section compression
 
   @Test("Global gap compression trims silence across synchronized tracks")
   func globalGapCompression() {
@@ -150,11 +150,12 @@ struct ClassicsCatalogTests {
       gaps: [10.0, 1.0],
       program: nil
     )
-    let compressed = MidiEventSequence.compressingSilencesGlobally([track1, track2], maxSilence: 2.0)
+    let compressed = MidiEventSequence.compressingQuietSectionsGlobally(
+      [track1, track2], maxSilence: 2.0, maxSingleton: nil)
     // 9s silence → clamped to 2s → gap = 1 + 2 = 3 for both tracks
     #expect(compressed[0].gaps[0] == 3.0)
     #expect(compressed[1].gaps[0] == 3.0)
-    // Final gaps unchanged
+    // Final gaps unchanged (last note's sustain was not in a trimmed region)
     #expect(compressed[0].gaps[1] == 1.0)
     #expect(compressed[1].gaps[1] == 1.0)
   }
@@ -176,10 +177,78 @@ struct ClassicsCatalogTests {
       gaps: [8.0],
       program: nil
     )
-    let compressed = MidiEventSequence.compressingSilencesGlobally([track1, track2], maxSilence: 2.0)
+    let compressed = MidiEventSequence.compressingQuietSectionsGlobally(
+      [track1, track2], maxSilence: 2.0, maxSingleton: nil)
     // 2s global silence = threshold exactly → no compression
     #expect(compressed[0].gaps[0] == 10.0)
     #expect(compressed[1].gaps[0] == 8.0)
+  }
+
+  @Test("Singleton compression truncates a lone sustaining note")
+  func singletonCompressionTruncatesSustain() {
+    // Track 1: chord at t=0 sustains 10s, then gap=10. Nothing else sounding.
+    // The entire [0,10] span is a singleton region (duration 10).
+    let track1 = MidiEventSequence(
+      chords: [[MidiNote(note: 60, velocity: 100)]],
+      sustains: [10.0],
+      gaps: [10.0],
+      program: nil
+    )
+    let compressed = MidiEventSequence.compressingQuietSectionsGlobally(
+      [track1], maxSilence: nil, maxSingleton: 5.0)
+    // 10s singleton → clamped to 5s. Sustain truncated to 5; last gap
+    // follows the new sustain.
+    #expect(compressed[0].sustains[0] == 5.0)
+    #expect(compressed[0].gaps[0] == 5.0)
+  }
+
+  @Test("Singleton compression pulls subsequent onsets earlier")
+  func singletonCompressionShiftsSubsequentOnsets() {
+    // Track 1: chord A at t=0 sustains 10s; chord B at t=12 sustains 1s.
+    // Singleton [0,10] duration 10; silence [10,12] duration 2 (no trim
+    // with maxSilence=2); singleton [12,13] duration 1 (no trim).
+    let track1 = MidiEventSequence(
+      chords: [[MidiNote(note: 60, velocity: 100)], [MidiNote(note: 64, velocity: 100)]],
+      sustains: [10.0, 1.0],
+      gaps: [12.0, 1.0],
+      program: nil
+    )
+    let compressed = MidiEventSequence.compressingQuietSectionsGlobally(
+      [track1], maxSilence: 2.0, maxSingleton: 5.0)
+    // First singleton excess = 5. A's sustain 10 → 5 (warp end 10→5).
+    // B's onset 12 → 7, its end 13 → 8. B's sustain stays 1.
+    // First gap = 7 - 0 = 7. Last gap matches B's new sustain = 1.
+    #expect(compressed[0].sustains[0] == 5.0)
+    #expect(compressed[0].sustains[1] == 1.0)
+    #expect(compressed[0].gaps[0] == 7.0)
+    #expect(compressed[0].gaps[1] == 1.0)
+  }
+
+  @Test("Two tracks alternating: only no-overlap regions count for silence")
+  func singletonCompressionCountsOverlapAcrossTracks() {
+    // Track 1: [0, 10] sustain. Track 2: [2, 4] sustain.
+    // Overlap regions: [0,2] singleton (2s), [2,4] double (2s),
+    // [4,10] singleton (6s). No silence anywhere.
+    let track1 = MidiEventSequence(
+      chords: [[MidiNote(note: 60, velocity: 100)]],
+      sustains: [10.0],
+      gaps: [10.0],
+      program: nil
+    )
+    let track2 = MidiEventSequence(
+      chords: [[], [MidiNote(note: 67, velocity: 100)]],
+      sustains: [0, 2.0],
+      gaps: [2.0, 2.0],
+      program: nil
+    )
+    let compressed = MidiEventSequence.compressingQuietSectionsGlobally(
+      [track1, track2], maxSilence: nil, maxSingleton: 3.0)
+    // [4,10] singleton 6s → excess 3. A ends at 10 → warped 7.
+    // A's sustain = 7 - 0 = 7. Last gap for track1 follows new sustain.
+    #expect(compressed[0].sustains[0] == 7.0)
+    #expect(compressed[0].gaps[0] == 7.0)
+    // Track 2 is fully within un-trimmed regions → unchanged.
+    #expect(compressed[1].sustains[1] == 2.0)
   }
 
   // MARK: - ClassicsCatalogLibrary sorting

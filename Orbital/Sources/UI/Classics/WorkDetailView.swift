@@ -214,7 +214,7 @@ struct WorkDetailView: View {
     let relativePath = localURL.lastPathComponent
     let composerPath = "\(composer.slug)/\(relativePath)"
     let tracks = [MidiTrackEntry(presetFilename: nil, numVoices: 4, modulators: nil)]
-    let midiSpec = MidiTracksSyntax(filename: composerPath, loop: false, bpm: bpm, maxSilence: 2.0, tracks: tracks)
+    let midiSpec = MidiTracksSyntax(filename: composerPath, loop: false, bpm: bpm, tracks: tracks)
     let pattern = PatternSyntax(midiTracks: midiSpec)
     let doc = SongDocument(
       patternSyntax: pattern,
