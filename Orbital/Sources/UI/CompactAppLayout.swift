@@ -5,9 +5,9 @@
 
 import SwiftUI
 
-/// iPhone-style layout: bottom `TabView` with five tabs. Reads
+/// iPhone-style layout: bottom `TabView` with four tabs. Reads
 /// `MIDIDownloadLedger` and `PresetLibrary` to show loading indicators on
-/// the Classics, Sound Library, and Sound Design tabs.
+/// the Classics and Sounds tabs.
 struct CompactAppLayout: View {
   @Environment(SpatialAudioEngine.self) private var engine
   @Environment(SongLibrary.self) private var library
@@ -18,7 +18,7 @@ struct CompactAppLayout: View {
 
   var body: some View {
     TabView {
-      Tab("Songs", systemImage: "music.note.list") {
+      Tab("Library", systemImage: "music.note.list") {
         OrbitalView()
       }
       Tab {
@@ -26,18 +26,13 @@ struct CompactAppLayout: View {
       } label: {
         LoadingTabLabel(text: "Classics", systemImage: "building.columns", isLoading: midiLedger.isLoading)
       }
-      Tab("Mood", systemImage: "wand.and.stars") {
+      Tab("Procedures", systemImage: "list.bullet.indent") {
         IPadCreateView(createDocument: createDocument)
-      }
-      Tab {
-        PresetLibraryView()
-      } label: {
-        LoadingTabLabel(text: "Sound library", systemImage: "pianokeys", isLoading: presetLibrary.isLoading)
       }
       Tab {
         SoundDesignView()
       } label: {
-        LoadingTabLabel(text: "Sound design", systemImage: "slider.horizontal.3", isLoading: presetLibrary.isLoading)
+        LoadingTabLabel(text: "Sounds", systemImage: "slider.horizontal.3", isLoading: presetLibrary.isLoading)
       }
     }
     .task {

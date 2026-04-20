@@ -60,7 +60,7 @@ struct OrbitalView: View {
           ProgressView("Loading songs...")
         }
       }
-      .navigationTitle("Songs")
+      .navigationTitle("Library")
       .navigationDestination(item: $editingSongID) { songID in
         if let song = library.songs.first(where: { $0.id == songID }) {
           let state = library.playbackState(for: song, engine: engine, resourceBaseURL: resourceManager.resourceBaseURL)

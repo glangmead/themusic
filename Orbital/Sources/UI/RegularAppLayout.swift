@@ -7,8 +7,8 @@ import SwiftUI
 
 /// iPad / Mac-as-iPad layout: `NavigationSplitView` with a sidebar of
 /// categories. Reads `MIDIDownloadLedger` and `PresetLibrary` so the
-/// Classics, Sound Library, and Sound Design rows can show loading
-/// indicators while their data is being fetched from iCloud.
+/// Classics and Sounds rows can show loading indicators while their
+/// data is being fetched from iCloud.
 struct RegularAppLayout: View {
   @Environment(SpatialAudioEngine.self) private var engine
   @Environment(SongLibrary.self) private var library
@@ -52,7 +52,7 @@ struct RegularAppLayout: View {
   private func isLoading(for category: SidebarCategory) -> Bool {
     switch category {
     case .classics: midiLedger.isLoading
-    case .soundLibrary, .soundDesign: presetLibrary.isLoading
+    case .soundDesign: presetLibrary.isLoading
     default: false
     }
   }

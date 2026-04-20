@@ -9,9 +9,12 @@ struct ComposerDetailView: View {
   @Environment(ClassicsCatalogLibrary.self) private var catalog
   @Environment(MIDIDownloadLedger.self) private var ledger
   let composer: CatalogComposer
+  @State private var searchText = ""
 
   var body: some View {
+    let tokens = ClassicsSearch.tokens(for: searchText)
     let works = catalog.cachedWorks(for: composer.slug)
+      .filter { ClassicsSearch.matches(composer: composer, work: $0, tokens: tokens) }
     let worksWithMidi = works.filter { !($0.sources?.isEmpty ?? true) }
     let worksWithoutMidi = works.filter { $0.sources?.isEmpty ?? true }
 
@@ -50,6 +53,12 @@ struct ComposerDetailView: View {
     }
     .navigationTitle(composer.name)
     .navigationBarTitleDisplayMode(.inline)
+    .searchable(text: $searchText, prompt: "Search works")
+    .overlay {
+      if !searchText.isEmpty && works.isEmpty {
+        ContentUnavailableView.search(text: searchText)
+      }
+    }
     .task {
       await catalog.loadWorksIfNeeded(for: composer)
     }

@@ -16,8 +16,6 @@ struct IPadDetailView: View {
       IPadSongsView()
     case .classics:
       IPadClassicsView()
-    case .soundLibrary:
-      IPadSoundLibraryView()
     case .create:
       IPadCreateView(createDocument: createDocument)
     case .soundDesign:

@@ -128,10 +128,10 @@ class SongDocument {
     self.takesStore = nil
   }
 
-  /// Init for the standalone Create tab — pre-seeds a generator pattern so
+  /// Init for the standalone Procedures tab — pre-seeds a generator pattern so
   /// loadTracks() skips file loading and compiles directly from the spec.
   init(generatorPattern: GeneratorSyntax, engine: SpatialAudioEngine, takesStore: TakesStore? = nil) {
-    self.song = SongRef(patternFileName: PatternFilename.filename(from: "Create"))
+    self.song = SongRef(patternFileName: PatternFilename.filename(from: "Procedure"))
     self.engine = engine
     self.resourceBaseURL = nil
     self.takesStore = takesStore

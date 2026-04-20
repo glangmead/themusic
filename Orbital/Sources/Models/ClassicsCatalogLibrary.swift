@@ -118,6 +118,17 @@ class ClassicsCatalogLibrary {
     worksCache[slug] ?? []
   }
 
+  /// Every cached (composer, work) pair across every preloaded composer.
+  /// Composers appear in `sortedComposers` order; works in their file order.
+  /// Only composers whose works file has been loaded into `worksCache`
+  /// contribute — callers relying on completeness should await
+  /// `preloadAllWorkGroups()` first.
+  func allWorksByComposer() -> [(CatalogComposer, CatalogWork)] {
+    sortedComposers.flatMap { composer in
+      (worksCache[composer.slug] ?? []).map { (composer, $0) }
+    }
+  }
+
   // MARK: - Bundle I/O (nonisolated — runs off main actor via Task.detached)
 
   nonisolated static func loadWorksFromBundle(composerSlug: String) -> [CatalogWork] {

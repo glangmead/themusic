@@ -19,7 +19,7 @@ struct IPadSongsView: View {
           ProgressView("Loading songs…")
         }
       }
-      .navigationTitle("Songs")
+      .navigationTitle("Library")
     }
   }
 }

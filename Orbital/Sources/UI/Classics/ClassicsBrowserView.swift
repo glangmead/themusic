@@ -8,15 +8,23 @@ import SwiftUI
 struct ClassicsBrowserView: View {
   @Environment(ClassicsCatalogLibrary.self) private var catalog
   @State private var selectedComposerID: CatalogComposer.ID?
+  @State private var searchText = ""
 
   var body: some View {
     NavigationStack {
-      ComposerListView(selectedComposerID: $selectedComposerID)
-        .navigationDestination(item: $selectedComposerID) { composerID in
-          if let composer = catalog.sortedComposers.first(where: { $0.id == composerID }) {
-            ComposerDetailView(composer: composer)
-          }
+      Group {
+        if searchText.isEmpty {
+          ComposerListView(selectedComposerID: $selectedComposerID)
+        } else {
+          ClassicsSearchResultsView(query: searchText)
         }
+      }
+      .searchable(text: $searchText, prompt: "Search works")
+      .navigationDestination(item: $selectedComposerID) { composerID in
+        if let composer = catalog.sortedComposers.first(where: { $0.id == composerID }) {
+          ComposerDetailView(composer: composer)
+        }
+      }
     }
   }
 }

@@ -8,10 +8,21 @@ import SwiftUI
 /// iPad Classics detail view: shows the composer list with sort controls.
 struct IPadClassicsView: View {
   @Environment(ClassicsCatalogLibrary.self) private var catalog
+  @State private var searchText = ""
 
   var body: some View {
     NavigationStack {
-      IPadComposerList()
+      Group {
+        if searchText.isEmpty {
+          IPadComposerList()
+        } else {
+          ClassicsSearchResultsView(query: searchText)
+        }
+      }
+      .searchable(text: $searchText, prompt: "Search works")
+      .task {
+        await catalog.preloadAllWorkGroups()
+      }
     }
   }
 }
