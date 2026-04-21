@@ -132,17 +132,34 @@ enum PadTemplateCompiler {
     }
   }
 
-  // MARK: - Full oscillator branch: prod([ oscNMix, compose([ freqChain, oscNode, choruser ]) ])
+  // MARK: - Full oscillator branch: prod([ oscNMix, compose([ freqChain, oscNode, choruser? ]) ])
+
+  /// Chorusing by unison detuning only sounds smooth on harmonically rich
+  /// sources (padSynth spectra, wavetables). Bare analog waveforms beat
+  /// audibly against their own detuned copies, producing artifacts that are
+  /// especially noticeable when summed with a lusher padSynth on the other
+  /// branch. Gate the choruser stage on spectral density.
+  private static func shouldChorus(_ desc: PadOscDescriptor) -> Bool {
+    switch desc.kind {
+    case .padSynth, .wavetable: return true
+    case .standard: return false
+    }
+  }
 
   private static func buildOscBranch(index i: Int, desc: PadOscDescriptor, params: PadCompiledParams, t: PadTemplateSyntax) -> ArrowSyntax {
     let n = i + 1
+    var stages: [ArrowSyntax] = [
+      buildFreqChain(oscIndex: i, desc: desc, params: params, vibratoEnabled: t.vibratoEnabled, vibratoDepth: t.vibratoDepth),
+      buildOscNode(oscIndex: i, desc: desc)
+    ]
+    if shouldChorus(desc) {
+      stages.append(.choruser(name: "osc\(n)Choruser", valueToChorus: "freq",
+                              chorusCentRadius: params.chorusCentRadius,
+                              chorusNumVoices: params.chorusNumVoices))
+    }
     return .prod(of: [
       .const(name: "osc\(n)Mix", val: 1.0),
-      .compose(arrows: [
-        buildFreqChain(oscIndex: i, desc: desc, params: params, vibratoEnabled: t.vibratoEnabled, vibratoDepth: t.vibratoDepth),
-        buildOscNode(oscIndex: i, desc: desc),
-        .choruser(name: "osc\(n)Choruser", valueToChorus: "freq", chorusCentRadius: params.chorusCentRadius, chorusNumVoices: params.chorusNumVoices)
-      ])
+      .compose(arrows: stages)
     ])
   }
 
@@ -159,13 +176,22 @@ enum PadTemplateCompiler {
       ])
       return .crossfadeEqPow(of: branches, name: "oscCrossfade", mixPoint: mixPoint)
     case .lfo:
-      // Sine LFO in [-1,1] → scale to [0, count-1]
+      // Sine LFO in [-1,1] → scaled to [0, count-1].
+      // ArrowSum/ArrowProd do NOT respect innerArr, so they must not be the
+      // terminal stages of a compose — they would drop the upstream sine.
+      // Shape the expression as sum([shift, prod([scale, compose([rate·t, sine])])])
+      // called directly: the compose ends in `osc`, which respects innerArr.
       let scale = CoreFloat(count - 1) / 2.0
-      let mixPoint = ArrowSyntax.compose(arrows: [
-        .prod(of: [.const(name: "crossfadeRate", val: crossfadeRate), .identity]),
-        .osc(name: "crossfadeLFO", shape: .sine, width: .const(name: "crossfadeLFOWidth", val: 1)),
-        .sum(of: [.identity, .const(name: "lfoShift", val: 1.0)]),
-        .prod(of: [.identity, .const(name: "lfoScale", val: scale)])
+      let mixPoint = ArrowSyntax.sum(of: [
+        .const(name: "lfoShift", val: scale),
+        .prod(of: [
+          .const(name: "lfoScale", val: scale),
+          .compose(arrows: [
+            .prod(of: [.const(name: "crossfadeRate", val: crossfadeRate), .identity]),
+            .osc(name: "crossfadeLFO", shape: .sine,
+                 width: .const(name: "crossfadeLFOWidth", val: 1))
+          ])
+        ])
       ])
       return .crossfadeEqPow(of: branches, name: "oscCrossfade", mixPoint: mixPoint)
     case .`static`:

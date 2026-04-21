@@ -398,10 +398,14 @@ func makeRandomPadPreset(gmProgram: Int? = nil, characteristicDuration: CoreFloa
     )
   }
 
-  // Crossfade: hard-disabled or LFO.
+  // Crossfade: globally disabled for random pads while the lush padSynth
+  // oscillator pairs poorly with the random osc2 waveform. The per-profile
+  // `forbidsCrossfadeLFO` branch is preserved below so LFO can be reinstated
+  // by flipping `disableLFOCrossfade` without touching the profile table.
+  let disableLFOCrossfade = true
   let crossfade: PadCrossfadeKind
   let crossfadeRate: CoreFloat
-  if constraints.forbidsCrossfadeLFO {
+  if disableLFOCrossfade || constraints.forbidsCrossfadeLFO {
     crossfade = .static
     crossfadeRate = 0
   } else {
@@ -441,8 +445,13 @@ func makeRandomPadPreset(gmProgram: Int? = nil, characteristicDuration: CoreFloa
     filterEnvSustain: SongRNG.float(in: 0.5...0.95),
     filterEnvRelease: SongRNG.float(in: 1...4),
     filterCutoffLow: SongRNG.float(in: profile.filterCutoffRange),
-    chorusCentRadius: constraints.chorusOverride?.cents ?? Int(SongRNG.float(in: 0...5)),
-    chorusNumVoices: constraints.chorusOverride?.voices ?? 2
+    // Default to no chorus. padSynth spectra already cover chorus's frequency-
+    // domain intent (band-spread harmonics) without the time-domain beating
+    // that a small unison stack produces. Profiles that genuinely want chorus
+    // opt in via .chorus(cents:voices:) — currently just the pluckedOrStruck
+    // melody bundle (cents 5, voices 3).
+    chorusCentRadius: constraints.chorusOverride?.cents ?? 0,
+    chorusNumVoices: constraints.chorusOverride?.voices ?? 1
   )
   let effects = EffectsSyntax(reverbPreset: 8, reverbWetDryMix: 50,
                               delayTime: 0, delayFeedback: 0, delayLowPassCutoff: 0, delayWetDryMix: 0)

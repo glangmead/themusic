@@ -8,6 +8,7 @@
 import Foundation
 
 enum RandomPadProfileChoice: String, CaseIterable, Identifiable {
+  case melody
   case piano
   case chromPerc
   case organ
@@ -26,6 +27,7 @@ enum RandomPadProfileChoice: String, CaseIterable, Identifiable {
 
   var displayName: String {
     switch self {
+    case .melody:    return "Melody"
     case .piano:     return "Piano"
     case .chromPerc: return "Chromatic Perc."
     case .organ:     return "Organ"
@@ -43,8 +45,11 @@ enum RandomPadProfileChoice: String, CaseIterable, Identifiable {
   }
 
   /// Representative GM program for the profile; nil selects the unrestricted `default` profile.
+  /// .melody matches the Generator arpeggio track exactly (GM 0 + pluckedOrStruck),
+  /// so auditioning with this option previews what a rendered melody line will sound like.
   var gmProgram: Int? {
     switch self {
+    case .melody:    return 0
     case .piano:     return 0
     case .chromPerc: return 8
     case .organ:     return 16
@@ -65,8 +70,8 @@ enum RandomPadProfileChoice: String, CaseIterable, Identifiable {
   /// (fast attack, short decay, narrow chorus, slight stretch) on top of its GM constraints.
   var pluckedOrStruck: Bool {
     switch self {
-    case .piano, .chromPerc, .guitar: return true
-    default:                          return false
+    case .melody, .piano, .chromPerc, .guitar: return true
+    default:                                   return false
     }
   }
 }
