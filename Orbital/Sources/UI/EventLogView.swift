@@ -2,7 +2,8 @@
 //  EventLogView.swift
 //  Orbital
 //
-//  Scrolling log of event annotations from the playback engine.
+//  Scrolling log of event annotations from the playback engine. Rendered as a
+//  sequence of rows suitable for placement inside a List or Form Section.
 //
 
 import SwiftUI
@@ -11,24 +12,9 @@ struct EventLogView: View {
   let eventLog: [EventAnnotation]
 
   var body: some View {
-    ScrollViewReader { proxy in
-      ScrollView {
-        LazyVStack(alignment: .leading, spacing: 2) {
-          ForEach(eventLog) { annotation in
-            EventLogRowView(annotation: annotation)
-              .id(annotation.id)
-          }
-        }
-        .padding(.horizontal)
-      }
-      .scrollIndicators(.hidden)
-      .onChange(of: eventLog.count) {
-        if let last = eventLog.last {
-          withAnimation(.easeOut(duration: 0.15)) {
-            proxy.scrollTo(last.id, anchor: .bottom)
-          }
-        }
-      }
+    ForEach(eventLog) { annotation in
+      EventLogRowView(annotation: annotation)
+        .listRowInsets(EdgeInsets(top: 2, leading: 12, bottom: 2, trailing: 12))
     }
   }
 }
@@ -38,7 +24,7 @@ private struct EventLogRowView: View {
 
   var body: some View {
     HStack(alignment: .firstTextBaseline, spacing: 8) {
-      Text(String(format: "%.1f", annotation.timestamp))
+      Text(annotation.timestamp, format: .number.precision(.fractionLength(1)))
         .monospacedDigit()
         .foregroundStyle(.secondary)
         .frame(width: 48, alignment: .trailing)
@@ -53,7 +39,6 @@ private struct EventLogRowView: View {
       if let chord = annotation.chordSymbol {
         Text(chord)
           .bold()
-          .foregroundStyle(Theme.colorHighlight)
           .frame(width: 52, alignment: .leading)
       }
 
@@ -61,15 +46,17 @@ private struct EventLogRowView: View {
         .font(.caption)
         .foregroundStyle(.secondary)
 
-      Text("[\(annotation.notes.map({String($0.note)}).joined(separator: ","))]")
+      Text("[\(annotation.notes.map { String($0.note) }.joined(separator: ","))]")
         .font(.caption)
         .foregroundStyle(.secondary)
 
       Spacer()
 
       HStack(spacing: 4) {
-        Text("s:\(String(format: "%.1f", annotation.sustain))")
-        Text("g:\(String(format: "%.1f", annotation.gap))")
+        Text("s:")
+        Text(annotation.sustain, format: .number.precision(.fractionLength(1)))
+        Text("g:")
+        Text(annotation.gap, format: .number.precision(.fractionLength(1)))
       }
       .font(.caption2)
       .monospacedDigit()

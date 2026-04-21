@@ -14,7 +14,12 @@ struct CompactAppLayout: View {
   @Environment(MIDIDownloadLedger.self) private var midiLedger
   @Environment(PresetLibrary.self) private var presetLibrary
   @State private var isShowingVisualizer = false
+  @State private var isShowingNowPlaying = false
   @State private var createDocument: SongDocument?
+
+  private var playbackState: SongDocument? {
+    library.currentPlaybackState ?? createDocument
+  }
 
   var body: some View {
     TabView {
@@ -43,9 +48,15 @@ struct CompactAppLayout: View {
     .tabBarMinimizeBehavior(.onScrollDown)
     .tabViewBottomAccessory(isEnabled: library.anySongPlaying || createDocument?.isPlaying == true || createDocument?.isLoading == true) {
       PlaybackAccessoryView(
-        state: library.currentPlaybackState ?? createDocument,
-        isShowingVisualizer: $isShowingVisualizer
+        state: playbackState,
+        isShowingVisualizer: $isShowingVisualizer,
+        onTap: { isShowingNowPlaying = true }
       )
+    }
+    .sheet(isPresented: $isShowingNowPlaying) {
+      if let playbackState {
+        NowPlayingSheet(state: playbackState, isShowingVisualizer: $isShowingVisualizer)
+      }
     }
     .overlay {
       VisualizerOverlay(engine: engine, isShowingVisualizer: $isShowingVisualizer)

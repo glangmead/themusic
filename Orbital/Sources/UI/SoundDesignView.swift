@@ -14,6 +14,7 @@ struct SoundDesignView: View {
   @State private var isShowingSaveDialog = false
   @State private var isShowingOverwriteConfirmation = false
   @State private var savePresetName = ""
+  @State private var randomPadProfile: RandomPadProfileChoice = .piano
 
   private var selectedPreset: PresetRef? {
     guard let selectedPresetFileName else { return nil }
@@ -34,7 +35,18 @@ struct SoundDesignView: View {
               }
             }
             ToolbarItem(placement: .topBarTrailing) {
-              Button("Random pad", systemImage: "dice", action: loadRandomPad)
+              Menu {
+                Picker("Random pad profile", selection: $randomPadProfile) {
+                  ForEach(RandomPadProfileChoice.allCases) { choice in
+                    Text(choice.displayName).tag(choice)
+                  }
+                }
+              } label: {
+                Label(randomPadProfile.displayName, systemImage: "dice")
+              } primaryAction: {
+                loadRandomPad()
+              }
+              .labelStyle(.titleAndIcon)
             }
             ToolbarItem(placement: .topBarTrailing) {
               Button("Save preset", systemImage: "square.and.arrow.down", action: showSaveDialog)
@@ -75,6 +87,9 @@ struct SoundDesignView: View {
         selectedPresetFileName = first.fileName
       }
     }
+    .onChange(of: randomPadProfile) { _, _ in
+      loadRandomPad()
+    }
   }
 
   private func rebuildSynth() {
@@ -94,7 +109,10 @@ struct SoundDesignView: View {
   }
 
   private func loadRandomPad() {
-    let spec = makeRandomPadPreset()
+    let spec = makeRandomPadPreset(
+      gmProgram: randomPadProfile.gmProgram,
+      pluckedOrStruck: randomPadProfile.pluckedOrStruck
+    )
     synth?.loadPreset(spec)
   }
 

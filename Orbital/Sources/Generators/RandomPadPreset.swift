@@ -205,8 +205,10 @@ private let gmSharcInstruments: [ClosedRange<Int>: [String]] = [
   72...79: ["flute_vibrato", "altoflute_vibrato", "bassflute_vibrato", "piccolo",
             "oboe", "English_horn"],
   80...87: ["Bb_clarinet", "C_trumpet", "violin_vibrato", "flute_vibrato"],
-  88...95: ["violin_vibrato", "cello_vibrato", "flute_vibrato", "French_horn",
-            "vowel_aah", "vowel_ooh"]
+  88...95: ["violin_vibrato", "cello_vibrato", "French_horn",
+            "vowel_aah", "vowel_ah", "vowel_ee",
+            "French_horn", "French_horn_muted", "C_trumpet", "C_trumpet_muted",
+            "Bach_trumpet", "trombone", "trombone_muted", "tuba", "alto_trombone", "bass_trombone"]
 ]
 // swiftlint:enable colon
 

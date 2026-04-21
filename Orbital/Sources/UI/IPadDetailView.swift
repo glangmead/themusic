@@ -7,11 +7,26 @@ import SwiftUI
 
 /// Dispatches the iPad detail pane based on the selected sidebar category.
 struct IPadDetailView: View {
+  @Environment(SongLibrary.self) private var library
   let selectedCategory: SidebarCategory?
   let createDocument: SongDocument?
+  @Binding var isShowingVisualizer: Bool
 
   var body: some View {
     switch selectedCategory {
+    case .nowPlaying:
+      NavigationStack {
+        if let state = library.currentPlaybackState ?? createDocument {
+          NowPlayingView(state: state, isShowingVisualizer: $isShowingVisualizer)
+            .navigationTitle("Now Playing")
+        } else {
+          ContentUnavailableView(
+            "Nothing Playing",
+            systemImage: "play.circle",
+            description: Text("Start a song from the Library to see it here.")
+          )
+        }
+      }
     case .songs:
       IPadSongsView()
     case .classics:

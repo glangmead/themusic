@@ -10,7 +10,7 @@ struct PlaybackAccessoryView: View {
   @Environment(\.tabViewBottomAccessoryPlacement) private var placement
   let state: SongDocument?
   @Binding var isShowingVisualizer: Bool
-  @State private var isShowingEventLog = false
+  var onTap: () -> Void
 
   var body: some View {
     HStack {
@@ -24,7 +24,6 @@ struct PlaybackAccessoryView: View {
             Text(name)
               .lineLimit(1)
           }
-          // Show subtitle (e.g. composer name from Classics) first; fall back to chord label.
           let secondaryText = state?.song.subtitle ?? state?.currentChordLabel
           if let secondary = secondaryText {
             Text(secondary)
@@ -32,7 +31,6 @@ struct PlaybackAccessoryView: View {
               .lineLimit(1)
               .transition(.opacity)
           }
-          // Seed line: visible while playing a randomized song. Tap to copy.
           if let seed = state?.currentSeedString, state?.hasRandomness == true {
             Button {
               UIPasteboard.general.string = seed
@@ -53,21 +51,16 @@ struct PlaybackAccessoryView: View {
       }
 
       if placement == .inline {
-        AccessoryButtons(isShowingVisualizer: $isShowingVisualizer)
+        TransportControls(isShowingVisualizer: $isShowingVisualizer, style: .compact)
           .buttonStyle(.glass)
       } else {
-        AccessoryButtons(isShowingVisualizer: $isShowingVisualizer)
+        TransportControls(isShowingVisualizer: $isShowingVisualizer, style: .compact)
       }
     }
     .padding(.horizontal)
     .contentShape(.rect)
-    .onTapGesture { isShowingEventLog = true }
+    .onTapGesture { onTap() }
     .accessibilityAddTraits(.isButton)
-    .accessibilityLabel("Show Event Log")
-    .sheet(isPresented: $isShowingEventLog) {
-      if let state {
-        EventLogSheet(state: state)
-      }
-    }
+    .accessibilityLabel("Show Now Playing")
   }
 }
