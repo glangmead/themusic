@@ -392,7 +392,11 @@ func makeRandomPadPreset(gmProgram: Int? = nil, characteristicDuration: CoreFloa
       detuneCents: 0, octave: -1
     )
   } else {
-    let osc2Octave: CoreFloat = SongRNG.pick([-1, 0, 1] as [CoreFloat]) ?? 0
+    // osc2 sits at unison or one octave below osc1's padSynth. +1 excluded:
+    // a basic-osc partial stack riding above the padSynth adds shrill high
+    // harmonics that compete with the lush upper end the padSynth is already
+    // providing.
+    let osc2Octave: CoreFloat = SongRNG.pick([-1, 0] as [CoreFloat]) ?? 0
     osc2 = randomOscDescriptor(
       profile: profile, octave: osc2Octave
     )

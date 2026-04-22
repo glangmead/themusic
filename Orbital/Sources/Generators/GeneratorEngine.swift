@@ -447,8 +447,8 @@ struct GeneratorEngine {
   // Per-track MIDI velocity ranges. Each track draws ONE velocity at
   // generation time (via SeededRNG.nextInt) and uses it for every note.
   private static let bassVelocityRange: ClosedRange<Int> = 70...85
-  private static let upperVoiceVelocityRange: ClosedRange<Int> = 50...70
-  private static let melodyVelocityRange: ClosedRange<Int> = 90...110
+  private static let upperVoiceVelocityRange: ClosedRange<Int> = 30...50
+  private static let melodyVelocityRange: ClosedRange<Int> = 100...127
 
   // MARK: - Helpers
 
