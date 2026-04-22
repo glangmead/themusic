@@ -143,7 +143,8 @@ private extension GMPadProfile {
     .ampDecayValue(0.5),
     .ampSustainValue(0.0),
     .chorus(cents: 5, voices: 3),
-    .padSynthStretch(1.01)
+    .padSynthStretch(1.01),
+    .noSpatialMotion
   ]
 
   // ampAttackRange: pre-computed seconds (previously derived via lerp(0.5, 8.0, smoothRange)).
@@ -444,8 +445,8 @@ func makeRandomPadPreset(gmProgram: Int? = nil, characteristicDuration: CoreFloa
     filterCutoffMultiplier: constraints.filterCutoffMaxMultiplier ?? SongRNG.float(in: 0.9...2.0),
     filterResonance: 1.7,
     filterLFORate: filterLFORate,
-    filterEnvAttack: SongRNG.float(in: 1...4),
-    filterEnvDecay: SongRNG.float(in: 1...4),
+    filterEnvAttack: ampAttack,
+    filterEnvDecay: ampDecay,
     filterEnvSustain: SongRNG.float(in: 0.5...0.95),
     filterEnvRelease: SongRNG.float(in: 1...4),
     filterCutoffLow: SongRNG.float(in: profile.filterCutoffRange),

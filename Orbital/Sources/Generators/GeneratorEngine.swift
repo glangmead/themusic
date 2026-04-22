@@ -383,11 +383,18 @@ struct GeneratorEngine {
     let totalBeats = bpc * Double(chordCount)
     guard totalBeats > 0 else { return nil }
 
+    // One cycle = phrase + inverted phrase = 2 × sum(durations). Compute enough
+    // cycles to cover totalBeats; the pipeline truncates the final step if it
+    // would overshoot, so rounding up is safe.
+    let phraseBeats = durations.reduce(0, +)
+    let cycleBeats = phraseBeats * 2
+    let cycles = cycleBeats > 0 ? Int((totalBeats / cycleBeats).rounded(.up)) : 1
+
     let pipeline = HierarpPipeline(
       generator: ArpGenerator(indices: indices, durations: durations),
       embellishers: [IdentityEmbellisher()],
       transformers: [InvertTransformer()],
-      cycles: 1
+      cycles: cycles
     )
 
     let context = HierarpTimelineContext(timeline: timeline, loop: false)
