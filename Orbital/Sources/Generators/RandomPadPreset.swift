@@ -457,7 +457,7 @@ func makeRandomPadPreset(gmProgram: Int? = nil, characteristicDuration: CoreFloa
     chorusCentRadius: constraints.chorusOverride?.cents ?? 0,
     chorusNumVoices: constraints.chorusOverride?.voices ?? 1
   )
-  let effects = EffectsSyntax(reverbPreset: 8, reverbWetDryMix: 50,
+  let effects = EffectsSyntax(reverbPreset: 8, reverbWetDryMix: 95,
                               delayTime: 0, delayFeedback: 0, delayLowPassCutoff: 0, delayWetDryMix: 0)
   let leafFactorPick: Int = SongRNG.pick([2, 3, 5, 7]) ?? 3
   let roseAmp: CoreFloat =

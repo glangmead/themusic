@@ -346,7 +346,74 @@ struct GeneratorEngine {
         chordSize: chordSize, chordCount: chordCount,
         timeline: timeline, bpc: bpc, rng: &rng
       )
+    case .hierarpGuitarRift:
+      return buildHierarpDemoTrack(
+        name: "Hierarp (Guitar Rift)",
+        indices: [0, 2, -1, 1], durations: [1, 1, 1, 3],
+        chordCount: chordCount, timeline: timeline, bpc: bpc, rng: &rng
+      )
+    case .hierarpDescending:
+      return buildHierarpDemoTrack(
+        name: "Hierarp (Descending)",
+        indices: [0, 3, 2, 1], durations: [1, 1, 1, 1],
+        chordCount: chordCount, timeline: timeline, bpc: bpc, rng: &rng
+      )
+    case .hierarpNeighbor:
+      return buildHierarpDemoTrack(
+        name: "Hierarp (Neighbor)",
+        indices: [0, 2, 1, 0], durations: [1, 1, 1, 1],
+        chordCount: chordCount, timeline: timeline, bpc: bpc, rng: &rng
+      )
     }
+  }
+
+  // MARK: - Hierarp (round-1 test wiring)
+
+  // Round-1 demo pipeline: literal chord-tone phrase, identity embellisher,
+  // one InvertTransformer. cycles=1 with one transformer => original phrase,
+  // then inverted phrase, back-to-back starting at beat 0.
+  // swiftlint:disable:next function_parameter_count
+  private static func buildHierarpDemoTrack(
+    name: String,
+    indices: [Int],
+    durations: [Double],
+    chordCount: Int, timeline: HarmonyTimeline, bpc: Double,
+    rng: inout SeededRNG
+  ) -> ScoreTrackSyntax? {
+    let totalBeats = bpc * Double(chordCount)
+    guard totalBeats > 0 else { return nil }
+
+    let pipeline = HierarpPipeline(
+      generator: ArpGenerator(indices: indices, durations: durations),
+      embellishers: [IdentityEmbellisher()],
+      transformers: [InvertTransformer()],
+      cycles: 1
+    )
+
+    let context = HierarpTimelineContext(timeline: timeline, loop: false)
+    let melodyOctave = 4
+    let velocity = rng.nextInt(in: melodyVelocityRange)
+
+    let notes = pipeline.render(
+      context: context,
+      startBeat: 0,
+      totalBeats: totalBeats,
+      octave: melodyOctave,
+      velocity: velocity
+    )
+    guard !notes.isEmpty else { return nil }
+
+    return ScoreTrackSyntax(
+      name: name,
+      presetFilename: nil,
+      numVoices: 2,
+      octave: melodyOctave,
+      voicing: .closed,
+      sustainFraction: 1.0,
+      gmProgram: arpeggioPianoGmProgram,
+      pluckedOrStruck: true,
+      notes: notes
+    )
   }
 
   /// Fractional onset times inside each chord window for the plucked arpeggio,
@@ -446,8 +513,11 @@ struct GeneratorEngine {
 
   // Per-track MIDI velocity ranges. Each track draws ONE velocity at
   // generation time (via SeededRNG.nextInt) and uses it for every note.
-  private static let bassVelocityRange: ClosedRange<Int> = 70...85
-  private static let upperVoiceVelocityRange: ClosedRange<Int> = 30...50
+  // Velocity scales one voice's amplitude; the upper-voice track sums
+  // 3–4 simultaneous notes, so its ceiling has to sit well under the
+  // melody to keep the single-voice melody audible above the pad sum.
+  private static let bassVelocityRange: ClosedRange<Int> = 55...70
+  private static let upperVoiceVelocityRange: ClosedRange<Int> = 15...25
   private static let melodyVelocityRange: ClosedRange<Int> = 100...127
 
   // MARK: - Helpers

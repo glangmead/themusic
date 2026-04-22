@@ -66,7 +66,7 @@ struct GeneratorFormView: View {
       timingSection
       randomizationSection
     }
-    .navigationTitle("Generator")
+    .navigationTitle("Procedures")
     .toolbar {
       ToolbarItemGroup {
         Button {

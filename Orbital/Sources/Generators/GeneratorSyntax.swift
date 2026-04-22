@@ -177,11 +177,17 @@ enum GeneratorScaleType: String, Codable, CaseIterable {
 enum GeneratorMelody: String, Codable, CaseIterable {
   case none
   case pluckedArpeggio
+  case hierarpGuitarRift
+  case hierarpDescending
+  case hierarpNeighbor
 
   var displayName: String {
     switch self {
-    case .none:            return "None"
-    case .pluckedArpeggio: return "Plucked Arpeggio"
+    case .none:               return "None"
+    case .pluckedArpeggio:    return "Plucked Arpeggio"
+    case .hierarpGuitarRift:  return "Hierarp — Guitar Rift"
+    case .hierarpDescending:  return "Hierarp — Descending"
+    case .hierarpNeighbor:    return "Hierarp — Neighbor"
     }
   }
 }

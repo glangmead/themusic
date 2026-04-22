@@ -37,17 +37,17 @@ extension PatternMetadata {
     if let score = spec.scoreTracks {
       let durationSeconds = score.totalBeats / score.bpm * 60
       return PatternMetadata(
-        kindName: "Generative harmony",
+        kindName: "Procedural harmony",
         bpm: Int(score.bpm.rounded()),
         duration: durationSeconds,
         loops: score.loop ?? true
       )
     }
     if spec.tableTracks != nil {
-      return PatternMetadata(kindName: "Advanced generative", bpm: nil, duration: nil, loops: false)
+      return PatternMetadata(kindName: "Advanced procedural", bpm: nil, duration: nil, loops: false)
     }
     if spec.generatorTracks != nil {
-      return PatternMetadata(kindName: "Generative harmony", bpm: nil, duration: nil, loops: true)
+      return PatternMetadata(kindName: "Procedural harmony", bpm: nil, duration: nil, loops: true)
     }
     return PatternMetadata(kindName: "Unknown", bpm: nil, duration: nil, loops: false)
   }
